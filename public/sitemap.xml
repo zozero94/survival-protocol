@@ -19,4 +19,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol-kappa.vercel.app/protocol-01?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol-kappa.vercel.app/protocol-01?lang=ja"/>
   </url>
+  <url>
+    <loc>https://survival-protocol-kappa.vercel.app/protocol-02</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=ja"/>
+  </url>
 </urlset>

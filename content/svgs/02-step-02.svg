@@ -1,47 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
-  <rect width="400" height="400" fill="#050505"/>
-  <!-- 필드 매뉴얼 외곽 테두리 및 그리드 -->
-  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
-  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-white" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#F5F5F5" />
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E02424" />
+    </marker>
+  </defs>
 
-  <!-- 헤더 메타데이터 스탬프 -->
-  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-02 [FIRE-BOW-DRILL]</text>
-  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 02</text>
+  <!-- Grid borders -->
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
 
-  <!-- 수평 바닥 밑판 -->
-  <rect x="60" y="250" width="280" height="30" fill="#121212" stroke="#E5E5E5" stroke-width="2"/>
+  <!-- Hand Socket Block (Top Pressure Block) -->
+  <path d="M 285 25 L 375 25 L 390 55 L 270 55 Z" fill="#222222" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="330" y="42" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">BEARING BLOCK (손잡이 판)</text>
+
+  <!-- Vertical Force Vector F_down -->
+  <line x1="330" y1="12" x2="330" y2="25" stroke="#E02424" stroke-width="2.5" marker-end="url(#arrow-red)"/>
+  <text x="345" y="18" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">F_DOWN: 12~15 kg (수직 하중)</text>
+
+  <!-- Spindle Axis (Rotating cylinder) -->
+  <rect x="318" y="55" width="24" height="175" fill="#1e1e1e" stroke="#F5F5F5" stroke-width="1.5"/>
   
-  <!-- 수직 스핀들 -->
-  <rect x="193" y="110" width="14" height="140" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="2"/>
-  <ellipse cx="200" cy="100" rx="35" ry="10" fill="#262626" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Bow Cord Looped Around Spindle (1 Turn Loop) -->
+  <!-- Bow Stick -->
+  <path d="M 60 135 C 180 110, 480 110, 600 135" fill="none" stroke="#888888" stroke-width="6" stroke-linecap="square"/>
+  <text x="110" y="120" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="10">BOW STICK (길이 65cm 활대)</text>
 
-  <!-- 활대 (곡선형 물푸레나무 활) -->
-  <path d="M 60 170 Q 200 135 340 170" fill="none" stroke="#E5E5E5" stroke-width="3"/>
-  <!-- 활 시위 (스핀들을 한 바퀴 감은 끈) -->
-  <line x1="60" y1="170" x2="193" y2="180" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="2 2"/>
-  <ellipse cx="200" cy="180" rx="10" ry="5" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="207" y1="180" x2="340" y2="170" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <!-- String with Tension & Single Wrap Loop around Spindle -->
+  <path d="M 60 135 L 318 140" fill="none" stroke="#E5E5E5" stroke-width="2"/>
+  <ellipse cx="330" cy="142" rx="16" ry="6" fill="none" stroke="#E5E5E5" stroke-width="2.5"/>
+  <path d="M 342 144 L 600 135" fill="none" stroke="#E5E5E5" stroke-width="2"/>
 
-  <!-- 수평 왕복 스트로크 양방향 화살표 -->
-  <path d="M 90 145 H 310" stroke="#FFFFFF" stroke-width="2"/>
-  <polygon points="90,140 75,145 90,150" fill="#FFFFFF"/>
-  <polygon points="310,140 325,145 310,150" fill="#FFFFFF"/>
-  <text x="200" y="138" fill="#FFFFFF" font-family="monospace" font-size="10" text-anchor="middle" font-weight="bold">RECIPROCATING BOW MOTION (&gt;400 RPM)</text>
+  <!-- Horizontal Bow Stroke Sawing Arrows -->
+  <line x1="180" y1="160" x2="480" y2="160" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="230" y1="160" x2="190" y2="160" stroke="#E5E5E5" stroke-width="2" marker-end="url(#arrow-white)"/>
+  <line x1="430" y1="160" x2="470" y2="160" stroke="#E5E5E5" stroke-width="2" marker-end="url(#arrow-white)"/>
+  <text x="330" y="175" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">FULL-STROKE RECIPROCATING MOTION (전장 왕복 톱질)</text>
 
-  <!-- 스핀들 고속 회전 인디케이터 화살표 -->
-  <path d="M 180 200 A 25 10 0 1 0 220 200" fill="none" stroke="#E5E5E5" stroke-width="2"/>
-  <polygon points="220,196 226,203 218,206" fill="#E5E5E5"/>
+  <!-- Rotation RPM Velocity Vector -->
+  <path d="M 360 85 A 25 15 0 1 1 360 105" fill="none" stroke="#E02424" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <text x="385" y="98" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ω: 300~400 RPM</text>
 
-  <!-- 접촉면 400°C 마찰열 연기 기둥 표현 -->
-  <path d="M 195 248 Q 185 235 190 220" fill="none" stroke="#A3A3A3" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <path d="M 205 248 Q 215 235 210 220" fill="none" stroke="#A3A3A3" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Hearth Board Base -->
+  <rect x="200" y="230" width="260" height="40" fill="#141414" stroke="#888888" stroke-width="1.5"/>
+  <text x="210" y="254" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="9">HEARTH BOARD</text>
+
+  <!-- Friction Contact Heat & Smoke Generation Point -->
+  <circle cx="330" cy="230" r="5" fill="#E02424"/>
   
-  <!-- 흑색 탄화 분말 집적 (V-Notch 밑) -->
-  <circle cx="200" cy="254" r="5" fill="#FFFFFF"/>
-  <text x="220" y="260" fill="#E5E5E5" font-family="monospace" font-size="9" font-weight="bold">CARBON COAL (400°C+)</text>
+  <!-- Thermal Wave / Heat Glow Ring -->
+  <circle cx="330" cy="230" r="14" fill="none" stroke="#E02424" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="330" cy="230" r="24" fill="none" stroke="#E02424" stroke-width="0.8" stroke-dasharray="1,3"/>
+  
+  <!-- Smoke Stream SVG Paths -->
+  <path d="M 326 225 Q 315 210 322 195 T 310 180" fill="none" stroke="#A3A3A3" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <path d="M 334 225 Q 345 208 338 190 T 350 175" fill="none" stroke="#A3A3A3" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <path d="M 330 220 Q 330 200 325 185" fill="none" stroke="#E5E5E5" stroke-width="1"/>
 
-  <!-- 하단 설명 캡션 -->
-  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
-  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 02: HIGH-FRICTION RECIPROCAL DRILLING</text>
-  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">FULL BOW LENGTH STROKES UNTIL DENSE WHITE SMOKE TURNS PURE BLACK</text>
+  <text x="230" y="210" fill="#CCCCCC" font-family="'JetBrains Mono', monospace" font-size="10">WHITE SMOKE (백색 연기 배출)</text>
+
+  <!-- Technical Specification Box on the right -->
+  <rect x="495" y="215" width="165" height="70" fill="#141414" stroke="#333333" stroke-width="1"/>
+  <text x="505" y="232" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">CRITICAL THRESHOLD:</text>
+  <text x="505" y="248" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="9">발화 온도: 400°C+</text>
+  <text x="505" y="262" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">가압 비율: 초기 30% → 종기 100%</text>
+  <text x="505" y="276" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">스트로크: 활대 전장 100% 사용</text>
 </svg>

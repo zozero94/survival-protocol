@@ -1,46 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
-  <rect width="400" height="400" fill="#050505"/>
-  <!-- 필드 매뉴얼 외곽 테두리 및 그리드 -->
-  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
-  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="diag-hatch" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#333333" stroke-width="1" />
+    </pattern>
+    <marker id="arrow-white" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#F5F5F5" />
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E02424" />
+    </marker>
+  </defs>
 
-  <!-- 헤더 메타데이터 스탬프 -->
-  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-02 [FIRE-BOW-DRILL]</text>
-  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 01</text>
+  <!-- Outer Frame Guideline -->
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
 
-  <!-- 중앙 도면: 마른 참나무 밑판 (Fire Board) -->
-  <rect x="60" y="240" width="280" height="40" fill="#121212" stroke="#E5E5E5" stroke-width="2"/>
-  <line x1="60" y1="260" x2="340" y2="260" stroke="#404040" stroke-width="1" stroke-dasharray="4 2"/>
+  <!-- Bottom Leaf / Dust Catcher -->
+  <path d="M 220 280 C 260 270, 420 270, 460 280 C 470 295, 410 305, 340 305 C 270 305, 210 295, 220 280 Z" 
+        fill="#171717" stroke="#666666" stroke-width="1.2" stroke-dasharray="3,3" />
+  <text x="475" y="292" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">EMBER CATCHER LEAF [엠버 포집판]</text>
 
-  <!-- 45도 V자 노치(홈) 가공 단면 -->
-  <polygon points="185,240 215,240 200,275" fill="#050505" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="200" y1="275" x2="200" y2="285" stroke="#A3A3A3" stroke-width="1.5" stroke-dasharray="2 2"/>
-  <!-- 밑판 밑에 받친 나뭇잎/껍질 패드 -->
-  <path d="M160 285 Q200 295 240 285" fill="none" stroke="#737373" stroke-width="2"/>
-  <text x="245" y="295" fill="#737373" font-family="monospace" font-size="9">[EMBER TRAY]</text>
+  <!-- Hearth Board Base (3D isometric-like profile) -->
+  <path d="M 160 200 L 520 200 L 520 270 L 160 270 Z" fill="#1f1e1e" stroke="#888888" stroke-width="1.5"/>
+  <path d="M 160 270 L 520 270 L 500 285 L 140 285 Z" fill="#141414" stroke="#555555" stroke-width="1"/>
 
-  <!-- 수직 회전축 스핀들 (Spindle) -->
-  <rect x="193" y="100" width="14" height="140" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="2"/>
-  <!-- 상하단 원뿔 가공 -->
-  <polygon points="193,100 207,100 200,88" fill="#E5E5E5" stroke="#FFFFFF" stroke-width="1.5"/>
-  <polygon points="193,240 207,240 200,250" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- V-Notch Cutout in Hearth Board -->
+  <!-- Hole Depression (Depression socket) -->
+  <ellipse cx="340" cy="215" rx="28" ry="14" fill="#0e0e0e" stroke="#E5E5E5" stroke-width="1.5" />
+  <circle cx="340" cy="215" r="8" fill="#2d2d2d" stroke="#888888" stroke-width="1" />
 
-  <!-- 상단 누름목 (Handhold Socket) -->
-  <ellipse cx="200" cy="85" rx="35" ry="12" fill="#262626" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- V-Notch wedge carved to the edge -->
+  <path d="M 340 215 L 315 270 L 365 270 Z" fill="#0e0e0e" stroke="#E02424" stroke-width="2"/>
+  <path d="M 315 270 L 315 285 L 365 285 L 365 270" fill="none" stroke="#E02424" stroke-width="1.5" stroke-dasharray="2,2"/>
 
-  <!-- 45도 V자 각도 인디케이터 -->
-  <path d="M188 230 A 20 20 0 0 1 212 230" fill="none" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <text x="200" y="222" fill="#E5E5E5" font-family="monospace" font-size="10" text-anchor="middle" font-weight="bold">45° V-NOTCH</text>
+  <!-- Angle indicator arc for 45° -->
+  <path d="M 328 245 A 30 30 0 0 1 352 245" fill="none" stroke="#E02424" stroke-width="1.2"/>
+  <text x="340" y="240" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" text-anchor="middle">45° V-NOTCH</text>
 
-  <!-- 부품 라벨링 인출선 -->
-  <line x1="120" y1="95" x2="165" y2="85" stroke="#737373" stroke-width="1"/>
-  <text x="60" y="98" fill="#A3A3A3" font-family="monospace" font-size="10">HAND SOCKET</text>
+  <!-- Spindle Lower Cone (Ghosted Setup Position) -->
+  <path d="M 326 60 L 354 60 L 354 185 L 340 215 L 326 185 Z" fill="#262626" fill-opacity="0.8" stroke="#F5F5F5" stroke-width="1.5"/>
+  <!-- Hatching inside spindle cylinder -->
+  <line x1="333" y1="70" x2="333" y2="180" stroke="#444444" stroke-width="1"/>
+  <line x1="347" y1="70" x2="347" y2="180" stroke="#444444" stroke-width="1"/>
 
-  <line x1="280" y1="160" x2="207" y2="160" stroke="#737373" stroke-width="1"/>
-  <text x="285" y="163" fill="#A3A3A3" font-family="monospace" font-size="10">SPINDLE (Ø2cm)</text>
+  <!-- Dimension: Spindle Diameter 20mm -->
+  <line x1="310" y1="90" x2="326" y2="90" stroke="#888888" stroke-width="1" marker-end="url(#arrow-white)"/>
+  <line x1="370" y1="90" x2="354" y2="90" stroke="#888888" stroke-width="1" marker-end="url(#arrow-white)"/>
+  <text x="380" y="94" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10">Ø 20mm SPINDLE AXIS</text>
 
-  <!-- 하단 설명 캡션 -->
-  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
-  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 01: V-NOTCH ALIGNMENT &amp; SOCKET</text>
-  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">CARVE 45° DRAIN NOTCH BEFORE APPLYING PRESSURE</text>
+  <!-- Notch Penetration Guide (Depth to Center) -->
+  <line x1="240" y1="215" x2="332" y2="215" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="340" cy="215" r="2" fill="#E02424"/>
+  <text x="140" y="218" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="10">NOTCH APEX (판재 중심점까지 침투)</text>
+
+  <!-- Hearth Board Thickness Dimension: 15~20mm -->
+  <line x1="535" y1="200" x2="535" y2="270" stroke="#888888" stroke-width="1"/>
+  <line x1="530" y1="200" x2="540" y2="200" stroke="#888888" stroke-width="1"/>
+  <line x1="530" y1="270" x2="540" y2="270" stroke="#888888" stroke-width="1"/>
+  <text x="548" y="238" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">THICKNESS: 15-20mm</text>
+
+  <!-- Technical Labels & Callouts -->
+  <rect x="25" y="30" width="220" height="42" fill="#141414" stroke="#333333" stroke-width="1"/>
+  <text x="35" y="48" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">CRITICAL SETUP RULE:</text>
+  <text x="35" y="62" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="9">홈(Notch) 꼭짓점은 축 중심과 정확히 접촉</text>
+
+  <!-- Ember chimney accumulation chamber label -->
+  <line x1="340" y1="275" x2="340" y2="315" stroke="#E02424" stroke-width="1"/>
+  <text x="340" y="325" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">CARBON DUST ACCUMULATION ZONE (엠버 집적 구역)</text>
 </svg>
