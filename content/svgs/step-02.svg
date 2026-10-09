@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Vessel Wall -->
-<path d="M45,25 L155,25 L145,150 L115,175 L115,192 L85,192 L85,175 L55,150 Z" stroke-width="2"></path>
-<!-- Layer 1: Gravel Top -->
-<rect fill="#ffffff" fill-opacity="0.1" height="25" stroke="white" stroke-dasharray="2,2" width="96" x="52" y="35"></rect>
-<!-- Layer 2: Sand -->
-<rect height="30" stroke="white" stroke-width="1" width="84" x="58" y="60"></rect>
-<!-- Dots for sand -->
-<line stroke-dasharray="1,4" stroke-width="2" x1="65" x2="135" y1="75" y2="75"></line>
-<line stroke-dasharray="2,3" stroke-width="1.5" x1="68" x2="132" y1="80" y2="80"></line>
-<!-- Layer 3: Crushed Charcoal (Dense) -->
-<rect fill="#ffffff" fill-opacity="0.35" height="38" stroke="white" stroke-width="1.5" width="70" x="65" y="90"></rect>
-<!-- Layer 4: Cloth Plug -->
-<path d="M78,145 L122,145 L110,172 L90,172 Z" fill="#ffffff" stroke="white"></path>
-<!-- Text Callouts -->
-<text fill="white" font-family="monospace" font-size="8" x="160" y="48">자갈 [3cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="77">모래 [5cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="112">활성숯 [6cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="158">면포 마개</text>
-<!-- Connection lines -->
-<line stroke="white" stroke-width="0.75" x1="140" x2="156" y1="46" y2="46"></line>
-<line stroke-white"="" stroke-width="0.75" x1="135" x2="156" y1="75" y2="75"></line>
-<line stroke="white" stroke-width="0.75" x1="128" x2="156" y1="108" y2="108"></line>
-<line stroke="white" stroke-width="0.75" x1="115" x2="156" y1="156" y2="156"></line>
+<svg class="w-full max-w-[320px] h-auto" viewBox="0 0 280 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vessel receiving unfiltered and discarding 1st flush -->
+  <!-- Bucket 1 (Discard - Turbid) -->
+  <rect x="35" y="65" width="70" height="60" stroke="#666" stroke-width="1.2" fill="#141414"></rect>
+  <line x1="35" y1="95" x2="105" y2="95" stroke="#444" stroke-width="1"></line>
+  <path d="M40 100 Q70 105 100 100" stroke="#777" stroke-width="0.75" stroke-dasharray="2 2"></path>
+  <text x="42" y="85" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">[초기 500ml 폐기]</text>
+  <text x="44" y="115" fill="#777" font-family="'JetBrains Mono', monospace" font-size="7">숯 분진 배출구간</text>
+  <line x1="70" y1="40" x2="70" y2="60" stroke="#E02424" stroke-width="1.2" stroke-dasharray="2 2"></line>
+  <path d="M68 55 L70 60 L72 55" stroke="#E02424" stroke-width="1.2"></path>
+
+  <!-- Flow divider symbol -->
+  <text x="125" y="85" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="12">→</text>
+
+  <!-- Bucket 2 (Keep - Clean Pre-filtered) -->
+  <rect x="165" y="65" width="75" height="60" stroke="#FFF" stroke-width="1.5" fill="#181818"></rect>
+  <line x1="165" y1="90" x2="240" y2="90" stroke="#888" stroke-width="1"></line>
+  <!-- Water level indicator -->
+  <line x1="170" y1="105" x2="235" y2="105" stroke="#FFF" stroke-width="0.75" stroke-dasharray="3 2"></line>
+  <line x1="170" y1="115" x2="235" y2="115" stroke="#FFF" stroke-width="0.75" stroke-dasharray="3 2"></line>
+  <text x="175" y="82" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">[본 여과수 집수]</text>
+  <text x="175" y="135" fill="#999" font-family="'JetBrains Mono', monospace" font-size="7">투명도 95% 달성</text>
+  <line x1="202" y1="40" x2="202" y2="60" stroke="#FFFFFF" stroke-width="1.2"></line>
+  <path d="M200 55 L202 60 L204 55" stroke="#FFFFFF" stroke-width="1.2"></path>
+
+  <!-- Drip speed gauge -->
+  <text x="70" y="25" fill="#AAA" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">유속 규격: 1초당 1~2방울 낙하</text>
+  <circle cx="202" cy="22" r="3" fill="#FFF"></circle>
 </svg>

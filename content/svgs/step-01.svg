@@ -1,19 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-linecap="square" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Bottle outline -->
-<rect height="110" stroke-dasharray="2,2" width="90" x="55" y="45"></rect>
-<!-- Cut line indicator -->
-<line stroke="white" stroke-width="2" x1="40" x2="160" y1="50" y2="50"></line>
-<!-- Cut scissor / marker -->
-<text fill="white" font-family="monospace" font-size="9" font-weight="bold" x="50" y="42">절단선 [바닥면 3인치]</text>
-<!-- Bottle inverted body -->
-<path d="M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z" stroke-width="2"></path>
-<!-- Cap pierced holes -->
-<line stroke-width="3" x1="90" x2="110" y1="195" y2="195"></line>
-<line stroke-dasharray="2,2" x1="95" x2="95" y1="198" y2="204"></line>
-<line stroke-dasharray="2,2" x1="100" x2="100" y1="198" y2="204"></line>
-<line stroke-dasharray="2,2" x1="105" x2="105" y1="198" y2="204"></line>
-<!-- Arrow inverted -->
-<path d="M100,15 L100,35 M95,30 L100,35 L105,30" stroke-width="1.5"></path>
-<text fill="white" font-family="monospace" font-size="9" text-anchor="middle" x="100" y="10">역방향 반전 배치</text>
+<svg class="w-full max-w-[320px] h-auto" viewBox="0 0 280 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grid background lines -->
+  <line x1="20" y1="20" x2="260" y2="20" stroke="#222" stroke-width="0.75" stroke-dasharray="2 2"></line>
+  <line x1="20" y1="95" x2="260" y2="95" stroke="#222" stroke-width="0.75" stroke-dasharray="2 2"></line>
+  <line x1="20" y1="170" x2="260" y2="170" stroke="#222" stroke-width="0.75" stroke-dasharray="2 2"></line>
+  <line x1="140" y1="10" x2="140" y2="180" stroke="#222" stroke-width="0.75" stroke-dasharray="2 2"></line>
+
+  <!-- Bottle / Cylinder Cone Outer Contour -->
+  <path d="M70 25 L210 25 L180 145 L155 165 L125 165 L100 145 Z" stroke="#F5F5F5" stroke-width="1.5" fill="#161616"></path>
+
+  <!-- Flow direction arrows on top (Raw water input) -->
+  <path d="M140 8 L140 22 M136 18 L140 22 L144 18" stroke="#FFFFFF" stroke-width="1.2"></path>
+  <text x="148" y="18" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="8">RAW WATER</text>
+
+  <!-- Layer 1: Pebbles (Top) -->
+  <path d="M74 38 L206 38 L197 62 L83 62 Z" fill="#222222" stroke="#444" stroke-width="0.75"></path>
+  <!-- Gravel particles -->
+  <circle cx="100" cy="48" r="4.5" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
+  <circle cx="120" cy="52" r="5" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
+  <circle cx="140" cy="46" r="4" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
+  <circle cx="160" cy="53" r="5.5" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
+  <circle cx="180" cy="47" r="4" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
+  <!-- Text label -->
+  <line x1="206" y1="50" x2="245" y2="50" stroke="#777" stroke-width="0.8"></line>
+  <text x="248" y="53" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">1. 자갈층 (대형 불순물)</text>
+
+  <!-- Layer 2: Fine Sand -->
+  <path d="M83 62 L197 62 L189 95 L91 95 Z" fill="#1b1b1b" stroke="#444" stroke-width="0.75"></path>
+  <!-- Sand stippling lines -->
+  <line x1="100" y1="72" x2="180" y2="72" stroke="#666" stroke-width="0.8" stroke-dasharray="1 3"></line>
+  <line x1="96" y1="80" x2="184" y2="80" stroke="#666" stroke-width="0.8" stroke-dasharray="2 2"></line>
+  <line x1="102" y1="88" x2="178" y2="88" stroke="#666" stroke-width="0.8" stroke-dasharray="1 3"></line>
+  <!-- Text label -->
+  <line x1="75" y1="78" x2="35" y2="78" stroke="#777" stroke-width="0.8"></line>
+  <text x="5" y="81" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">2. 모래층 (미세 침전물)</text>
+
+  <!-- Layer 3: Charcoal Powder -->
+  <path d="M91 95 L189 95 L180 132 L100 132 Z" fill="#080808" stroke="#555" stroke-width="0.75"></path>
+  <!-- Charcoal hatch pattern -->
+  <line x1="105" y1="104" x2="175" y2="104" stroke="#444" stroke-width="1.2"></line>
+  <line x1="108" y1="113" x2="172" y2="113" stroke="#444" stroke-width="1.2"></line>
+  <line x1="112" y1="122" x2="168" y2="122" stroke="#444" stroke-width="1.2"></line>
+  <rect x="128" y="102" width="24" height="20" stroke="#FFF" stroke-width="0.8" fill="none"></rect>
+  <text x="131" y="115" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="bold">CHARCOAL</text>
+  <!-- Text label -->
+  <line x1="185" y1="115" x2="245" y2="115" stroke="#777" stroke-width="0.8"></line>
+  <text x="248" y="118" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">3. 활성 숯 (독소 흡착)</text>
+
+  <!-- Layer 4: Cloth Mesh Base -->
+  <path d="M100 132 L180 132 L165 152 L115 152 Z" fill="#2d2d2d" stroke="#666" stroke-width="0.75"></path>
+  <path d="M110 142 L170 142" stroke="#FFF" stroke-width="1" stroke-dasharray="2 1"></path>
+  <!-- Text label -->
+  <line x1="108" y1="145" x2="35" y2="145" stroke="#777" stroke-width="0.8"></line>
+  <text x="5" y="148" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">4. 섬유망 (필터 지지)</text>
+
+  <!-- Dripping water drops (Clear water output) -->
+  <line x1="140" y1="165" x2="140" y2="178" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="2 2"></line>
+  <circle cx="140" cy="183" r="2.5" fill="#FFFFFF"></circle>
 </svg>
