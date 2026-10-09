@@ -13,58 +13,65 @@
   </defs>
 
   <!-- Outer Frame Guideline -->
-  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4" />
 
-  <!-- Bottom Leaf / Dust Catcher -->
-  <path d="M 220 280 C 260 270, 420 270, 460 280 C 470 295, 410 305, 340 305 C 270 305, 210 295, 220 280 Z" 
+  <!-- Ember Catcher Leaf positioned under the board & notch opening -->
+  <path d="M 180 260 C 240 250, 440 250, 500 260 C 515 285, 430 308, 340 308 C 250 308, 165 285, 180 260 Z" 
         fill="#171717" stroke="#666666" stroke-width="1.2" stroke-dasharray="3,3" />
-  <text x="475" y="292" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">EMBER CATCHER LEAF [엠버 포집판]</text>
+  <text x="480" y="298" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">EMBER CATCHER LEAF [엠버 포집판]</text>
 
-  <!-- Hearth Board Base (3D isometric-like profile) -->
-  <path d="M 160 200 L 520 200 L 520 270 L 160 270 Z" fill="#1f1e1e" stroke="#888888" stroke-width="1.5"/>
-  <path d="M 160 270 L 520 270 L 500 285 L 140 285 Z" fill="#141414" stroke="#555555" stroke-width="1"/>
+  <!-- Hearth Board 3D block (isometric projection) -->
+  <!-- Top Face -->
+  <polygon points="120,180 520,180 480,230 80,230" fill="#1f1e1e" stroke="#888888" stroke-width="1.5" />
+  <!-- Front Face (Thickness profile) -->
+  <polygon points="80,230 480,230 480,265 80,265" fill="#141414" stroke="#888888" stroke-width="1.5" />
+  <!-- Right Side Face -->
+  <polygon points="480,230 520,180 520,215 480,265" fill="#181818" stroke="#666666" stroke-width="1.2" />
 
-  <!-- V-Notch Cutout in Hearth Board -->
-  <!-- Hole Depression (Depression socket) -->
-  <ellipse cx="340" cy="215" rx="28" ry="14" fill="#0e0e0e" stroke="#E5E5E5" stroke-width="1.5" />
-  <circle cx="340" cy="215" r="8" fill="#2d2d2d" stroke="#888888" stroke-width="1" />
+  <!-- Spindle Socket Hole on Top Surface -->
+  <ellipse cx="300" cy="205" rx="26" ry="12" fill="#0d0d0d" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="2,2" />
+  <circle cx="300" cy="205" r="4" fill="#E02424" />
 
-  <!-- V-Notch wedge carved to the edge -->
-  <path d="M 340 215 L 315 270 L 365 270 Z" fill="#0e0e0e" stroke="#E02424" stroke-width="2"/>
-  <path d="M 315 270 L 315 285 L 365 285 L 365 270" fill="none" stroke="#E02424" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <!-- 45-degree V-Notch carved from outer edge inward to socket center -->
+  <!-- Wedge cut into top surface and vertical front face -->
+  <polygon points="300,205 260,230 340,230" fill="#0d0d0d" stroke="#E02424" stroke-width="2" />
+  <!-- Vertical notch slot cut down through front edge -->
+  <polygon points="260,230 340,230 340,265 260,265" fill="#080808" stroke="#E02424" stroke-width="1.5" />
 
-  <!-- Angle indicator arc for 45° -->
-  <path d="M 328 245 A 30 30 0 0 1 352 245" fill="none" stroke="#E02424" stroke-width="1.2"/>
-  <text x="340" y="240" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" text-anchor="middle">45° V-NOTCH</text>
+  <!-- 45° Angle Indicator Arc inside Notch -->
+  <path d="M 285,215 A 20 20 0 0 0 315,215" fill="none" stroke="#E02424" stroke-width="1.2" />
+  <text x="300" y="198" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">45° V-NOTCH (홈의 꼭짓점: 축 중심과 접촉)</text>
 
-  <!-- Spindle Lower Cone (Ghosted Setup Position) -->
-  <path d="M 326 60 L 354 60 L 354 185 L 340 215 L 326 185 Z" fill="#262626" fill-opacity="0.8" stroke="#F5F5F5" stroke-width="1.5"/>
-  <!-- Hatching inside spindle cylinder -->
-  <line x1="333" y1="70" x2="333" y2="180" stroke="#444444" stroke-width="1"/>
-  <line x1="347" y1="70" x2="347" y2="180" stroke="#444444" stroke-width="1"/>
+  <!-- Spindle Axis (Ghosted Shaft entering Socket) -->
+  <path d="M 286,45 L 314,45 L 314,175 L 300,205 L 286,175 Z" fill="#242424" fill-opacity="0.85" stroke="#F5F5F5" stroke-width="1.5" />
+  <line x1="293" y1="55" x2="293" y2="170" stroke="#444444" stroke-width="1" />
+  <line x1="307" y1="55" x2="307" y2="170" stroke="#444444" stroke-width="1" />
 
-  <!-- Dimension: Spindle Diameter 20mm -->
-  <line x1="310" y1="90" x2="326" y2="90" stroke="#888888" stroke-width="1" marker-end="url(#arrow-white)"/>
-  <line x1="370" y1="90" x2="354" y2="90" stroke="#888888" stroke-width="1" marker-end="url(#arrow-white)"/>
-  <text x="380" y="94" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10">Ø 20mm SPINDLE AXIS</text>
-
-  <!-- Notch Penetration Guide (Depth to Center) -->
-  <line x1="240" y1="215" x2="332" y2="215" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/>
-  <circle cx="340" cy="215" r="2" fill="#E02424"/>
-  <text x="140" y="218" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="10">NOTCH APEX (판재 중심점까지 침투)</text>
+  <!-- Spindle Dimension lines (Ø 20mm) -->
+  <line x1="270" y1="75" x2="286" y2="75" stroke="#888888" stroke-width="1" marker-end="url(#arrow-white)" />
+  <line x1="330" y1="75" x2="314" y2="75" stroke="#888888" stroke-width="1" marker-end="url(#arrow-white)" />
+  <text x="340" y="79" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10">Ø 20mm SPINDLE AXIS</text>
 
   <!-- Hearth Board Thickness Dimension: 15~20mm -->
-  <line x1="535" y1="200" x2="535" y2="270" stroke="#888888" stroke-width="1"/>
-  <line x1="530" y1="200" x2="540" y2="200" stroke="#888888" stroke-width="1"/>
-  <line x1="530" y1="270" x2="540" y2="270" stroke="#888888" stroke-width="1"/>
-  <text x="548" y="238" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">THICKNESS: 15-20mm</text>
+  <line x1="65" y1="230" x2="65" y2="265" stroke="#888888" stroke-width="1" />
+  <line x1="60" y1="230" x2="70" y2="230" stroke="#888888" stroke-width="1" />
+  <line x1="60" y1="265" x2="70" y2="265" stroke="#888888" stroke-width="1" />
+  <text x="55" y="251" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="end">THICKNESS: 15~20mm</text>
 
-  <!-- Technical Labels & Callouts -->
-  <rect x="25" y="30" width="220" height="42" fill="#141414" stroke="#333333" stroke-width="1"/>
-  <text x="35" y="48" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">CRITICAL SETUP RULE:</text>
-  <text x="35" y="62" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="9">홈(Notch) 꼭짓점은 축 중심과 정확히 접촉</text>
+  <!-- Hearth Board label -->
+  <text x="130" y="215" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="10">HEARTH BOARD (받침 판재)</text>
 
-  <!-- Ember chimney accumulation chamber label -->
-  <line x1="340" y1="275" x2="340" y2="315" stroke="#E02424" stroke-width="1"/>
-  <text x="340" y="325" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">CARBON DUST ACCUMULATION ZONE (엠버 집적 구역)</text>
+  <!-- Notch Apex / Center Seating Pointer -->
+  <line x1="160" y1="155" x2="295" y2="203" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" marker-end="url(#arrow-white)" />
+  <text x="110" y="150" fill="#CCCCCC" font-family="'JetBrains Mono', monospace" font-size="9">NOTCH APEX (판재 중심점/소켓 중심과 일치)</text>
+
+  <!-- Rule Callout Box -->
+  <rect x="25" y="25" width="245" height="44" fill="#141414" stroke="#333333" stroke-width="1" />
+  <text x="35" y="42" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">CRITICAL SETUP RULE:</text>
+  <text x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">홈(Notch) 꼭짓점은 축 중심과 정확히 접촉</text>
+
+  <!-- Carbon Dust Accumulation Zone (Under Notch Opening) -->
+  <ellipse cx="300" cy="278" rx="35" ry="8" fill="#E02424" fill-opacity="0.2" stroke="#E02424" stroke-width="1" stroke-dasharray="2,2" />
+  <line x1="300" y1="286" x2="300" y2="318" stroke="#E02424" stroke-width="1" />
+  <text x="300" y="328" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">CARBON DUST ACCUMULATION ZONE (엠버 집적 구역)</text>
 </svg>
