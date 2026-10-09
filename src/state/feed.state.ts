@@ -117,6 +117,16 @@ export function getFeedRuntimeScript(): string {
           }
           return;
         }
+
+        // 피드 카드 어디를 클릭/터치해도 상세페이지로 즉시 랜딩
+        var card = e.target.closest('[data-protocol-href]');
+        if (card && !e.target.closest('button')) {
+          var href = card.getAttribute('data-protocol-href');
+          if (href) {
+            window.location.href = href;
+            return;
+          }
+        }
       });
 
       // 초기 실행

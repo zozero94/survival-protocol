@@ -115,6 +115,7 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
     const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko', nextTitle);
     fs.writeFileSync(path.join(publicDir, fileName), html, 'utf-8');
     precacheEntries.push({ url: `/${fileName}`, content: html });
+    precacheEntries.push({ url: `/protocol-${num}`, content: html });
     compiledPages.push(fileName);
   }
   log(`🌐 [3/4 Presentational] 상세 교범 웹 페이지 (${allMasterProtocols.length}개) 컴파일 완료`);

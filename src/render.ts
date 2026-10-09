@@ -186,15 +186,31 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
       }
     });
 
-    // 4. 초기 언어 자동 감지 및 핫스왑 실행 (브라우저 헤더 / URL / 저장값 기반)
-    window.addEventListener('DOMContentLoaded', function() {
-      var initialLang = detectInitialLocale();
-      if (initialLang && initialLang !== '${defaultLocale}') {
-        switchLocale(initialLang);
-      } else {
+    // 4. 초기 언어 자동 감지 및 핫스왑 실행 (FOUC 쉴드 영구 차단 방지 방어 코드 완비)
+    function initLocale() {
+      try {
+        var initialLang = (typeof detectInitialLocale === 'function') ? detectInitialLocale() : '${defaultLocale}';
+        if (initialLang && initialLang !== '${defaultLocale}' && typeof switchLocale === 'function') {
+          switchLocale(initialLang);
+        }
+      } catch (err) {
+        console.error('[i18n] Init error:', err);
+      } finally {
+        // 어떤 예외나 지연이 발생해도 화면이 100% 렌더링되도록 FOUC 쉴드 해제
         document.documentElement.removeAttribute('data-fouc');
       }
-    });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initLocale);
+    } else {
+      initLocale();
+    }
+
+    // 비상 안전 타이머: 150ms 초과 시 강제 해제
+    setTimeout(function() {
+      document.documentElement.removeAttribute('data-fouc');
+    }, 150);
 
     function showToast(msg) {
       var toast = document.getElementById('toast');

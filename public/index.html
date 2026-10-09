@@ -158,7 +158,7 @@
   <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-2 flex-1 pb-16">
     <!-- 피드 카드 컨테이너 (한 페이지당 5개 노출) -->
     <div id="protocol-feed-container" class="flex flex-col gap-3">
-      <article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-01" data-category="WATER">
+      <article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-01" data-protocol-href="/protocol-01" data-category="WATER">
   <!-- 상단 헤더 레일 -->
   <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
     <div class="flex items-center gap-2">
@@ -176,7 +176,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-01.html" class="block focus:outline-none">
+        <a href="/protocol-01" class="block focus:outline-none">
           프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)
         </a>
       </h2>
@@ -191,7 +191,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[분쇄된]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[깨끗한]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[절단된]</span>
     </div>
-    <a href="/protocol-01.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-01" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [교범 열람 →]
     </a>
   </div>
@@ -384,6 +384,16 @@
             updateFeed();
           }
           return;
+        }
+
+        // 피드 카드 어디를 클릭/터치해도 상세페이지로 즉시 랜딩
+        var card = e.target.closest('[data-protocol-href]');
+        if (card && !e.target.closest('button')) {
+          var href = card.getAttribute('data-protocol-href');
+          if (href) {
+            window.location.href = href;
+            return;
+          }
         }
       });
 

@@ -43,10 +43,10 @@ export function renderProtocolCard(protocol: Protocol): string {
     .join('');
 
   const num = protocol.protocolId.replace(/[^0-9]/g, '').padStart(2, '0') || '01';
-  const detailLink = `/protocol-${num}.html`;
+  const detailLink = `/protocol-${num}`;
 
   return `
-<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="${protocol.protocolId}" data-category="${protocol.category}">
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="${protocol.protocolId}" data-protocol-href="${detailLink}" data-category="${protocol.category}">
   <!-- 상단 헤더 레일 -->
   <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
     <div class="flex items-center gap-2">
