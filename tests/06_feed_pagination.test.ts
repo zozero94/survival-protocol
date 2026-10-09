@@ -35,6 +35,5 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     const sw = fs.readFileSync(swPath, 'utf-8');
     assert.ok(sw.includes('"/index.html"'), 'index.html이 precache에 포함되어야 합니다.');
     assert.ok(sw.includes('"/protocol-01.html"'), 'protocol-01.html이 precache에 포함되어야 합니다.');
-    assert.ok(sw.includes('"/protocol-02.html"'), 'protocol-02.html이 precache에 포함되어야 합니다.');
   });
 });

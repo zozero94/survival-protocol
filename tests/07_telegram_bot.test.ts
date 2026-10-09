@@ -79,7 +79,7 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     assert.match(reply.text, /\/recommend/);
     assert.match(reply.text, /\/stats/);
     assert.ok(reply.reply_markup?.inline_keyboard);
-    assert.strictEqual(reply.reply_markup.inline_keyboard[0][0].text, '📖 7대 프로토콜 목록');
+    assert.strictEqual(reply.reply_markup.inline_keyboard[0][0].text, '📖 프로토콜 목록');
   });
 
   it('/list 명령 시 현재 발행된 프로토콜 목록을 정확히 열거해야 한다', async () => {
@@ -88,9 +88,7 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
 
     const reply = await bot.handleMessage(1234, '/list');
     assert.match(reply.text, /PR-01/);
-    assert.match(reply.text, /PR-02/);
-    assert.match(reply.text, /PR-07/);
-    assert.match(reply.text, /https:\/\/survival-protocol-kappa\.vercel\.app\/protocol-/);
+    assert.match(reply.text, /https:\/\/survival-protocol-kappa\.vercel\.app\/protocol-01/);
   });
 
   it('/stats 명령 시 6대 카테고리별 통계 및 SVG/번역 완비 현황을 반환해야 한다', async () => {

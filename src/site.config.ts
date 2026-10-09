@@ -43,5 +43,5 @@ export const SEO_CONFIG = {
 export const EXTERNAL_RUNTIME_ASSETS = {
   tailwindCdn: 'https://cdn.tailwindcss.com',
   googleFontsCss:
-    'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Public+Sans:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap',
+    'https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap',
 } as const;

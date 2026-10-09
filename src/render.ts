@@ -27,7 +27,8 @@ import {
 export function renderCanonicalProtocolPage(
   protocolsMap: Partial<Record<SupportedLocale, Protocol>>,
   svgsMap: Record<string, string> = {},
-  defaultLocale: SupportedLocale = 'ko'
+  defaultLocale: SupportedLocale = 'ko',
+  nextProtocolTitle?: string
 ): string {
   const master = protocolsMap[defaultLocale] || Object.values(protocolsMap)[0];
   if (!master) {
@@ -39,7 +40,7 @@ export function renderCanonicalProtocolPage(
   const checklistHtml = renderChecklist(master.materials);
   const stepCardsHtml = renderStepCards(master.steps, svgsMap);
   const fatalHtml = renderFatalWarning(master.fatalMistake);
-  const actionHtml = renderStickyActionBar('다음: PR-02 마찰열 발화법');
+  const actionHtml = renderStickyActionBar(nextProtocolTitle);
 
   const themeScript = getThemeRuntimeScript();
   const checklistScript = getChecklistRuntimeScript();
@@ -101,32 +102,46 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Public+Sans:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
+          colors: {
+            surface: '#131313',
+            'surface-dim': '#0d0d0d',
+            'surface-card': '#1c1b1b',
+            'surface-container-high': '#262626',
+            'border-tactical': '#333333',
+            'border-light': '#444444',
+            'brand-red': '#E02424',
+            'bone-white': '#F5F5F5',
+            'ash-gray': '#9E9E9E',
+            'dim-gray': '#666666'
+          },
           fontFamily: {
+            title: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Chivo"', '"Noto Sans KR"', '"Noto Sans JP"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
-            sans: ['"Noto Sans KR"', '"Public Sans"', '"Noto Sans JP"', 'sans-serif'],
           }
         }
       }
     }
   </script>
   <style>
-    * { box-sizing: border-box; border-radius: 0px !important; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; border-radius: 0px !important; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+    body { background-color: #131313; color: #F5F5F5; font-family: 'Chivo', 'Noto Sans KR', sans-serif; line-height: 1.7; }
     @media print { .no-print { display: none !important; } body { background: white !important; color: black !important; } }
   </style>
 </head>
-<body class="bg-black text-white dark:bg-black dark:text-white font-sans transition-colors duration-150 min-h-screen selection:bg-white selection:text-black flex flex-col justify-between">
+<body class="bg-[#131313] text-[#F5F5F5] min-h-screen selection:bg-white selection:text-black antialiased flex flex-col justify-between pb-24">
   <div id="offline-banner" class="bg-red-950/90 border-b-2 border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
     ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
   </div>
   ${headerHtml}
 
-  <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-8 md:py-12 flex-1 pb-32">
+  <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-5 space-y-6 flex-1 pb-28">
     ${heroHtml}
     ${checklistHtml}
     ${stepCardsHtml}

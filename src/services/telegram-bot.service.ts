@@ -188,7 +188,7 @@ export class TelegramBotService {
     return {
       inline_keyboard: [
         [
-          { text: '📖 7대 프로토콜 목록', callback_data: 'cb:list' },
+          { text: '📖 프로토콜 목록', callback_data: 'cb:list' },
           { text: '💡 차기 주제 추천', callback_data: 'cb:recommend' },
         ],
         [

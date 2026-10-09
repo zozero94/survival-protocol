@@ -94,7 +94,8 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
   ];
   const compiledPages: string[] = ['index.html'];
 
-  for (const proto of allMasterProtocols) {
+  for (let i = 0; i < allMasterProtocols.length; i++) {
+    const proto = allMasterProtocols[i];
     const num = proto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
     const fileName = `protocol-${num}.html`;
     const pMap: Partial<Record<SupportedLocale, Protocol>> = { ko: proto };
@@ -106,7 +107,12 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
       }
     }
 
-    const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko');
+    const nextProto = allMasterProtocols[(i + 1) % allMasterProtocols.length];
+    const nextTitle = allMasterProtocols.length > 1
+      ? `다음: ${nextProto.protocolId} ${nextProto.title}`
+      : undefined;
+
+    const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko', nextTitle);
     fs.writeFileSync(path.join(publicDir, fileName), html, 'utf-8');
     precacheEntries.push({ url: `/${fileName}`, content: html });
     compiledPages.push(fileName);

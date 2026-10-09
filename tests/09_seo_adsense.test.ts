@@ -16,7 +16,10 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
     assert.ok(sitemap.includes('<urlset'));
     assert.ok(sitemap.includes('https://survival-protocol-kappa.vercel.app/'));
     assert.ok(sitemap.includes('https://survival-protocol-kappa.vercel.app/protocol-01'));
-    assert.ok(sitemap.includes('https://survival-protocol-kappa.vercel.app/protocol-07'));
+    protocols.forEach((p) => {
+      const num = p.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
+      assert.ok(sitemap.includes(`https://survival-protocol-kappa.vercel.app/protocol-${num}`));
+    });
     assert.ok(sitemap.includes('hreflang="ko"'));
     assert.ok(sitemap.includes('hreflang="en"'));
     assert.ok(sitemap.includes('hreflang="ja"'));

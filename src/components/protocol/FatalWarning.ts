@@ -2,32 +2,31 @@ import type { FatalMistake } from '../../types/protocol.types.ts';
 
 /**
  * [Presentational Component]
- * 치명적 실수 반전 경고 박스 컴포넌트
- * 선언적 data-i18n 및 data-proto-fatal 속성 탑재
+ * 치명적 실수 고대비 반전 경고 박스 컴포넌트 (Stitch High-Contrast Hazard Block)
+ * 선언적 data-i18n 및 data-proto-fatal 속성 100% 탑재
  */
 export function renderFatalWarning(fatal: FatalMistake): string {
   return `
-<section class="border-4 border-white dark:border-white p-6 sm:p-8 bg-black dark:bg-black text-white relative overflow-hidden mb-12 shadow-[0_0_0_1px_rgba(255,255,255,0.2)]">
-  <div class="flex items-center gap-2 mb-4">
-    <span id="ui-fatal-header" data-i18n="fatalTitle" class="bg-white text-black font-mono font-black px-2 py-0.5 text-xs tracking-widest animate-pulse">
-      위험 // 치명적 실수 경고
+<section class="border-2 border-[#E02424] bg-[#170a0a] p-5 sm:p-7 relative mb-8">
+  <div class="flex items-center gap-2 mb-2.5 font-mono text-xs">
+    <span id="ui-fatal-header" data-i18n="fatalTitle" class="bg-[#E02424] text-white font-bold px-1.5 py-0.5 tracking-tight uppercase">
+      [치명적 경고 // FATAL ERROR]
     </span>
-    <span data-i18n="mustReadBeforeDrink" class="font-mono text-xs text-neutral-400">음용 전 필독</span>
+    <span data-i18n="mustReadBeforeDrink" class="text-[#ff7b7b] text-[10px] tracking-widest uppercase">VIOLATION CODE: 0X-DEATH</span>
   </div>
-  <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
-    <div class="text-4xl sm:text-5xl select-none font-mono">⚠️</div>
-    <div>
-      <h4 id="fatal-title" data-proto-fatal="title" class="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight mb-3">
-        ${fatal.title}
-      </h4>
-      <p id="fatal-desc" data-proto-fatal="description" class="text-neutral-200 text-sm sm:text-base leading-relaxed font-sans font-medium">
-        ${fatal.description}
-      </p>
+
+  <h3 id="fatal-title" data-proto-fatal="title" class="font-title text-base sm:text-xl font-bold text-white mb-2 leading-snug">
+    ${fatal.title}
+  </h3>
+
+  <div class="space-y-2.5 text-xs sm:text-sm text-[#ddd] leading-relaxed">
+    <p id="fatal-desc" data-proto-fatal="description">
+      ${fatal.description}
+    </p>
+    <div class="border-t border-[#441a1a] pt-3 font-mono text-xs text-[#bbb] flex flex-wrap items-center justify-between gap-2">
+      <span id="fatal-consequence" data-proto-fatal="consequence">${fatal.consequence}</span>
+      <span id="ui-fatal-rule" data-i18n="nonNegotiableRule" class="text-[#ff5555] font-bold">[타협 불가한 절대 수칙]</span>
     </div>
-  </div>
-  <div class="mt-6 pt-4 border-t border-white/20 flex flex-wrap items-center justify-between font-mono text-xs text-neutral-400 gap-2">
-    <span id="fatal-consequence" data-proto-fatal="consequence">${fatal.consequence}</span>
-    <span id="ui-fatal-rule" data-i18n="nonNegotiableRule" class="text-white font-bold tracking-wider">[타협 불가한 절대 수칙]</span>
   </div>
 </section>
   `.trim();
