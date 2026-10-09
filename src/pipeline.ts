@@ -32,20 +32,27 @@ async function runPipeline() {
     allMasterProtocols.push(parsed);
   }
 
-  // PR-01 다국어(en, ja) 매핑 로드
-  const masterProtocol = allMasterProtocols.find((p) => p.protocolId === 'PR-01') || allMasterProtocols[0];
-  const protocolsMap: Partial<Record<SupportedLocale, Protocol>> = { ko: masterProtocol };
+  // 1-2. 다국어 로케일 데이터셋 동적 수집 (content/protocols/locales/*.json)
+  const localesDir = path.join(rootDir, 'content/protocols/locales');
+  const localesCache: Record<string, Partial<Record<SupportedLocale, Protocol>>> = {};
 
-  const enPath = path.join(rootDir, 'content/protocols/locales/01-water-purification.en.json');
-  if (fs.existsSync(enPath)) {
-    protocolsMap.en = JSON.parse(fs.readFileSync(enPath, 'utf-8'));
-  }
-  const jaPath = path.join(rootDir, 'content/protocols/locales/01-water-purification.ja.json');
-  if (fs.existsSync(jaPath)) {
-    protocolsMap.ja = JSON.parse(fs.readFileSync(jaPath, 'utf-8'));
+  if (fs.existsSync(localesDir)) {
+    const localeFiles = fs.readdirSync(localesDir).filter((f) => f.endsWith('.json'));
+    for (const lFile of localeFiles) {
+      const parts = lFile.replace('.json', '').split('.');
+      if (parts.length >= 2) {
+        const lang = parts[parts.length - 1] as SupportedLocale;
+        const baseName = parts.slice(0, -1).join('.');
+        try {
+          const parsed = JSON.parse(fs.readFileSync(path.join(localesDir, lFile), 'utf-8'));
+          if (!localesCache[baseName]) localesCache[baseName] = {};
+          localesCache[baseName][lang] = parsed;
+        } catch (e) {}
+      }
+    }
   }
 
-  console.log(`📂 [1/5 Content Layer] 전체 프로토콜(${allMasterProtocols.length}개) 및 다국어 데이터셋 로드 완료`);
+  console.log(`📂 [1/5 Content Layer] 전체 프로토콜(${allMasterProtocols.length}개) 및 다국어 로케일 캐시 로드 완료`);
 
   // 2. SVG 도면 로드
   const svgsMap: Record<string, string> = {};
@@ -66,7 +73,7 @@ async function runPipeline() {
   fs.writeFileSync(path.join(publicDir, 'index.html'), indexHtml, 'utf-8');
   console.log(`📑 [3/5 Presentational] 메인 인덱스 피드 컴파일 완료 (총 ${allMasterProtocols.length}편, 5개 페이징 탑재): public/index.html`);
 
-  // 3-2. 프로토콜 상세 페이지 전수 컴파일
+  // 3-2. 프로토콜 상세 페이지 전수 컴파일 (다국어 맵 동적 자동 결합)
   const precacheEntries = [
     { url: '/index.html', content: indexHtml },
     { url: '/', content: indexHtml },
@@ -76,10 +83,14 @@ async function runPipeline() {
     const num = proto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
     const fileName = `protocol-${num}.html`;
     const pMap: Partial<Record<SupportedLocale, Protocol>> = { ko: proto };
-    if (proto.protocolId === 'PR-01') {
-      if (protocolsMap.en) pMap.en = protocolsMap.en;
-      if (protocolsMap.ja) pMap.ja = protocolsMap.ja;
+
+    // 프로토콜 넘버링 또는 ID에 일치하는 다국어 번역본 동적 결합
+    for (const [baseKey, langObj] of Object.entries(localesCache)) {
+      if (baseKey.startsWith(num) || baseKey.includes(proto.protocolId.toLowerCase())) {
+        Object.assign(pMap, langObj);
+      }
     }
+
     const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko');
     fs.writeFileSync(path.join(publicDir, fileName), html, 'utf-8');
     precacheEntries.push({ url: `/${fileName}`, content: html });
@@ -112,8 +123,9 @@ async function runPipeline() {
 
 
   // 5. Shorts Service 실행 (OSMU)
+  const targetProtocol = allMasterProtocols.find((p) => p.protocolId === 'PR-01') || allMasterProtocols[0];
   const shortsDir = path.join(rootDir, 'shorts/01-water-purification');
-  const shorts = ShortsService.convertProtocolToShorts(masterProtocol, shortsDir);
+  const shorts = ShortsService.convertProtocolToShorts(targetProtocol, shortsDir);
   console.log(`🎬 [5/5 Service Layer] 45초 유튜브 쇼츠 마스터 대본 생성 완료: shorts/01-water-purification/`);
 
   // 5. 다음 주제 기획 (TopicCurator Service - 자율 성장형 지식 트리 기반)

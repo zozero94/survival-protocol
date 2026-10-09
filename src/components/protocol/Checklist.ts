@@ -33,7 +33,7 @@ export function renderChecklist(materials: Material[]): string {
     ${itemsHtml}
   </div>
   <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-400">
-    <span id="ui-checklist-subtext">대체 여과 차단재: 깨끗한 면 손수건, 건조된 물이끼, 또는 불에 그을린 자작나무 껍질 메쉬</span>
+    <span id="ui-checklist-subtext">현장 대체 수칙: 자연 지형지물 및 주변 가용 임기응변 재료 적극 활용</span>
     <span data-i18n="fieldTested" class="text-white font-bold hidden sm:inline">[야전 검증 완료]</span>
   </div>
 </section>

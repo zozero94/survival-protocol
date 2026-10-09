@@ -37,7 +37,7 @@ export function renderStepCards(steps: ProtocolStep[], svgsMap: Record<string, s
 <div class="mb-8">
   <div class="flex items-center justify-between mb-4">
     <h2 class="font-mono text-sm sm:text-base font-bold uppercase tracking-wider text-white">
-      <span id="ui-procedure-title" data-i18n="procedureTitle">실행 절차 // 수직 낙하식 야전 여과 파이프라인</span>
+      <span id="ui-procedure-title" data-i18n="procedureTitle">실행 절차 // 야전 단계별 행동 지침</span>
     </h2>
     <span class="font-mono text-xs text-neutral-400">1 ~ ${steps.length} <span data-i18n="stepsFlow">단계 진행</span></span>
   </div>
