@@ -1,5 +1,6 @@
 import type { Protocol } from './types/index.ts';
-import { SITE_META, PWA_PATHS } from './site.config.ts';
+import { SITE_META, PWA_PATHS, SEO_CONFIG } from './site.config.ts';
+import { SeoService } from './services/seo.service.ts';
 import {
   renderFeedHeader,
   renderProtocolCard,
@@ -34,8 +35,27 @@ export function renderIndexPage(protocols: Protocol[]): string {
   <title>${SITE_META.name} // [생존 교범 // SURVIVAL PROTOCOL]</title>
   <meta name="description" content="${SITE_META.description}">
   <meta name="theme-color" content="${SITE_META.themeColor}">
+  <link rel="canonical" href="${SITE_META.siteUrl}/">
   <link rel="manifest" href="${PWA_PATHS.manifest}">
   <link rel="icon" type="image/svg+xml" href="${PWA_PATHS.icon}">
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="${SITE_META.name}">
+  <meta property="og:title" content="${SITE_META.name} // SURVIVAL PROTOCOL">
+  <meta property="og:description" content="${SITE_META.description}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${SITE_META.siteUrl}/">
+  <meta property="og:image" content="${SITE_META.siteUrl}${SEO_CONFIG.defaultOgImage}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${SITE_META.name} // SURVIVAL PROTOCOL">
+  <meta name="twitter:description" content="${SITE_META.description}">
+  <meta name="twitter:image" content="${SITE_META.siteUrl}${SEO_CONFIG.defaultOgImage}">
+
+  <!-- Search Engine Verifications -->
+  ${SeoService.renderVerificationMetaTags()}
+
+  <!-- Google AdSense Official Script -->
+  ${SeoService.renderAdsenseHeadScript()}
 
   <style>
     #offline-banner { display: none; }

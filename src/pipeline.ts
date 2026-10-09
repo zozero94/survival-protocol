@@ -6,8 +6,8 @@ import type { Protocol } from './types/index.ts';
 import type { SupportedLocale } from './i18n/locales.ts';
 import { renderCanonicalProtocolPage } from './render.ts';
 import { renderIndexPage } from './render-index.ts';
-import { ShortsService, TopicCuratorService, PwaService } from './services/index.ts';
-import { EXTERNAL_RUNTIME_ASSETS, PWA_PATHS } from './site.config.ts';
+import { ShortsService, TopicCuratorService, PwaService, SeoService } from './services/index.ts';
+import { EXTERNAL_RUNTIME_ASSETS, PWA_PATHS, SITE_META } from './site.config.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -136,6 +136,16 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
   fs.mkdirSync(iconsDir, { recursive: true });
   fs.writeFileSync(path.join(iconsDir, 'icon.svg'), iconSvgCode, 'utf-8');
   log(`📶 [4/4 PWA Service] 1회 방문 오프라인 영구 보존 캐시 구축 완료 (${cacheVersion}, ${precacheUrls.length}개 경로 사전 캐시)`);
+
+  // 5. SEO & Google AdSense 정적 파일 생성 (sitemap.xml, robots.txt, ads.txt)
+  const sitemapXml = SeoService.generateSitemap(allMasterProtocols, SITE_META.siteUrl);
+  const robotsTxt = SeoService.generateRobotsTxt(SITE_META.siteUrl);
+  const adsTxt = SeoService.generateAdsTxt();
+
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf-8');
+  fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt, 'utf-8');
+  fs.writeFileSync(path.join(publicDir, 'ads.txt'), adsTxt, 'utf-8');
+  log(`🔍 [5/5 SEO & AdSense] sitemap.xml, robots.txt, ads.txt 생성 완료`);
 
   return {
     totalProtocols: allMasterProtocols.length,

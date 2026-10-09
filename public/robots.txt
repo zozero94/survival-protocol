@@ -1,0 +1,9 @@
+# [SURVIVAL PROTOCOL // ROBOTS.TXT]
+User-agent: *
+Allow: /
+Allow: /sw.js
+Allow: /manifest.webmanifest
+Allow: /icons/
+
+# Sitemaps
+Sitemap: https://survival-protocol-kappa.vercel.app/sitemap.xml

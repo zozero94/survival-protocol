@@ -1,7 +1,6 @@
 /**
  * [Site Config]
- * 사이트 메타데이터, PWA 경로, 외부 런타임 자원의 단일 진실 공급원(SSOT).
- * render.ts(태그 출력)와 pwa.service.ts(오프라인 사전 캐시)가 동일한 값을 참조한다.
+ * 사이트 메타데이터, PWA 경로, 외부 런타임 자원, SEO 및 애드센스 설정의 단일 진실 공급원(SSOT).
  */
 
 export const SITE_META = {
@@ -11,12 +10,30 @@ export const SITE_META = {
   lang: 'ko',
   themeColor: '#050505',
   backgroundColor: '#050505',
+  siteUrl: (process.env.SITE_URL || 'https://survival-protocol-kappa.vercel.app').replace(/\/$/, ''),
 } as const;
 
 export const PWA_PATHS = {
   serviceWorker: '/sw.js',
   manifest: '/manifest.webmanifest',
   icon: '/icons/icon.svg',
+} as const;
+
+/**
+ * [Google AdSense & Monetization Settings]
+ */
+export const ADSENSE_CONFIG = {
+  clientId: process.env.ADSENSE_CLIENT_ID || '', // 예: ca-pub-1234567890123456
+  adsTxt: process.env.ADSENSE_ADS_TXT || 'google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0',
+} as const;
+
+/**
+ * [Search Engine Optimization & Webmaster Tools]
+ */
+export const SEO_CONFIG = {
+  googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION || '',
+  naverSiteVerification: process.env.NAVER_SITE_VERIFICATION || '',
+  defaultOgImage: '/icons/icon.svg',
 } as const;
 
 /**

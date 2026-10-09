@@ -10,7 +10,8 @@ import {
   renderStepCards,
   renderFatalWarning,
 } from './components/index.ts';
-import { SITE_META, PWA_PATHS } from './site.config.ts';
+import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG } from './site.config.ts';
+import { SeoService } from './services/seo.service.ts';
 import {
   getThemeRuntimeScript,
   getChecklistRuntimeScript,
@@ -51,10 +52,34 @@ export function renderCanonicalProtocolPage(
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title data-proto="title">${SITE_META.shortName} // ${master.title}</title>
-  <meta name="description" content="${SITE_META.description}">
+  <meta name="description" content="${master.summary}">
   <meta name="theme-color" content="${SITE_META.themeColor}">
+  <link rel="canonical" href="${SITE_META.siteUrl}/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}">
   <link rel="manifest" href="${PWA_PATHS.manifest}">
   <link rel="icon" type="image/svg+xml" href="${PWA_PATHS.icon}">
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="${SITE_META.name}">
+  <meta property="og:title" content="${SITE_META.shortName} // ${master.title}">
+  <meta property="og:description" content="${master.summary}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="${SITE_META.siteUrl}/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}">
+  <meta property="og:image" content="${SITE_META.siteUrl}${SEO_CONFIG.defaultOgImage}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${SITE_META.shortName} // ${master.title}">
+  <meta name="twitter:description" content="${master.summary}">
+  <meta name="twitter:image" content="${SITE_META.siteUrl}${SEO_CONFIG.defaultOgImage}">
+
+  <!-- Search Engine Verifications -->
+  ${SeoService.renderVerificationMetaTags()}
+
+  <!-- Google AdSense Official Script -->
+  ${SeoService.renderAdsenseHeadScript()}
+
+  <!-- Schema.org JSON-LD HowTo Structured Data -->
+  <script type="application/ld+json">
+${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
+  </script>
 
   <!-- FOUC(Flash of Untranslated Content) 방지 쉴드 스타일 및 동기 판별 스크립트 -->
   <style id="fouc-shield">
