@@ -1,12 +1,13 @@
 {
   "name": "primitive-survival",
   "version": "1.0.0",
-  "description": "ARCHIVE-0: Primitive Survival Field Manual & YouTube Shorts Pipeline",
+  "description": "[생존 교범 // SURVIVAL PROTOCOL] Primitive Survival Field Manual & Autonomous Pipeline",
   "type": "module",
   "scripts": {
     "dev": "node --experimental-strip-types src/pipeline.ts",
     "generate": "node --experimental-strip-types src/pipeline.ts",
-    "build": "tsc --noEmit",
+    "build": "node --experimental-strip-types src/pipeline.ts",
+    "typecheck": "tsc --noEmit",
     "test": "node --test --experimental-strip-types tests/**/*.test.ts"
   },
   "dependencies": {
