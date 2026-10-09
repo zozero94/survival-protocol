@@ -14,13 +14,8 @@ export function renderHeroSection(protocol: Protocol): string {
   <div class="absolute bottom-0 left-0 w-2.5 h-2.5 border-b-2 border-l-2 border-white"></div>
   <div class="absolute bottom-0 right-0 w-2.5 h-2.5 border-b-2 border-r-2 border-white"></div>
 
-  <!-- Background Watermark -->
-  <div class="absolute -right-4 -bottom-6 font-mono text-7xl font-black text-white/[0.03] pointer-events-none select-none tracking-tighter">
-    ${protocol.protocolId}
-  </div>
-
   <!-- Hero Header Badges -->
-  <div class="flex flex-wrap items-center justify-between gap-2 mb-3.5 font-mono text-xs">
+  <div class="flex items-center justify-between mb-3.5 font-mono text-xs">
     <div class="flex items-center gap-2">
       <span id="proto-threat-badge" data-proto="threatLevelText" class="bg-white text-black font-bold px-1.5 py-0.5 tracking-tight uppercase">
         ${protocol.threatLevelText}
@@ -29,14 +24,14 @@ export function renderHeroSection(protocol: Protocol): string {
         <span id="proto-hero-category" data-proto="category">${protocol.category}</span>
       </span>
     </div>
-    <div class="text-[#888] text-[11px] flex items-center gap-1.5">
-      <span data-i18n="readingTime" class="border border-[#333] px-1.5 py-0.5">열람 소요 시간: 30초</span>
-      <span class="text-[10px] uppercase border border-[#333] px-1 text-[#aaa] hidden sm:inline">SEC LEVEL-A</span>
+    <div class="text-[#888] text-[11px] flex items-center gap-1">
+      <svg class="w-3 h-3 text-[#777]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span data-i18n="readingTime">소요 30초 독해</span>
     </div>
   </div>
 
   <!-- Large Bold Title -->
-  <h1 id="proto-main-title" data-proto="title" class="font-title text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-snug mb-2 uppercase">
+  <h1 id="proto-main-title" data-proto="title" class="font-title text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-snug mb-2 uppercase">
     ${protocol.title}
   </h1>
   <p class="font-mono text-[11px] text-[#888] uppercase tracking-wider mb-3.5">
@@ -57,15 +52,15 @@ export function renderHeroSection(protocol: Protocol): string {
       <span id="proto-time" data-proto="timeRequired" class="text-white font-bold text-xs sm:text-sm">${protocol.timeRequired}</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="successRate" class="block text-[10px] text-[#777] uppercase tracking-tighter">생존율/성공률</span>
+      <span data-i18n="successRate" class="block text-[10px] text-[#777] uppercase tracking-tighter">생존율</span>
       <span id="proto-success" data-proto="successRate" class="text-white font-bold text-xs sm:text-sm">${protocol.successRate}</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="difficulty" class="block text-[10px] text-[#777] uppercase tracking-tighter">기술 난이도</span>
+      <span data-i18n="difficulty" class="block text-[10px] text-[#777] uppercase tracking-tighter">난이도</span>
       <span id="proto-difficulty" data-proto="difficulty" class="text-white font-bold text-xs sm:text-sm">${protocol.difficulty}</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="outputPerHour" class="block text-[10px] text-[#777] uppercase tracking-tighter">시간당 산출량</span>
+      <span data-i18n="outputPerHour" class="block text-[10px] text-[#777] uppercase tracking-tighter">시간당 산출</span>
       <span id="proto-output" data-proto="outputPerHour" class="text-white font-bold text-xs sm:text-sm">${protocol.outputPerHour || '1.5L / h'}</span>
     </div>
   </div>

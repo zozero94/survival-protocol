@@ -12,7 +12,6 @@ export function renderFatalWarning(fatal: FatalMistake): string {
     <span id="ui-fatal-header" data-i18n="fatalTitle" class="bg-[#E02424] text-white font-bold px-1.5 py-0.5 tracking-tight uppercase">
       [치명적 경고 // FATAL ERROR]
     </span>
-    <span data-i18n="mustReadBeforeDrink" class="text-[#ff7b7b] text-[10px] tracking-widest uppercase">VIOLATION CODE: 0X-DEATH</span>
   </div>
 
   <h3 id="fatal-title" data-proto-fatal="title" class="font-title text-base sm:text-xl font-bold text-white mb-2 leading-snug">

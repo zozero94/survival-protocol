@@ -154,7 +154,7 @@
     ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
   </div>
   <header class="sticky top-0 z-40 bg-[#131313]/95 backdrop-blur border-b border-[#2d2d2d] transition-colors">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-xs">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between font-mono text-xs">
     <div class="flex items-center space-x-2">
       <a href="/" class="font-bold text-white tracking-widest hover:text-white/80 transition-colors flex items-center gap-1.5">
         <span class="inline-block w-2 h-2 bg-white"></span>
@@ -168,37 +168,9 @@
       </div>
     </div>
     
-    <div class="flex items-center justify-between sm:justify-end space-x-2.5 text-[11px] text-[#777]">
-      <!-- Multilingual Hot-Swapper (Zero Reload) -->
-      <div class="flex items-center border border-[#333] px-1 py-0.5 bg-[#171717]">
-        
-        <button type="button" data-action="switch-locale" data-locale-btn="ko" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors bg-white text-black">KO</button>
-      
-        <button type="button" data-action="switch-locale" data-locale-btn="en" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors text-[#888] hover:text-white">EN</button>
-      
-        <button type="button" data-action="switch-locale" data-locale-btn="ja" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors text-[#888] hover:text-white">JA</button>
-      
-        <button type="button" data-action="switch-locale" data-locale-btn="es" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors text-[#888] hover:text-white">ES</button>
-      
-        <button type="button" data-action="switch-locale" data-locale-btn="de" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors text-[#888] hover:text-white">DE</button>
-      
-        <button type="button" data-action="switch-locale" data-locale-btn="pt" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors text-[#888] hover:text-white">PT</button>
-      
-        <button type="button" data-action="switch-locale" data-locale-btn="zh-TW" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-colors text-[#888] hover:text-white">ZH</button>
-      
-      </div>
-      
-      <!-- Theme Switcher -->
-      <button type="button" data-action="toggle-theme" class="border border-[#333] px-2 py-0.5 text-[#aaa] hover:text-white hover:border-[#555] transition-colors flex items-center gap-1 font-mono">
-        <span id="mode-icon">◐</span>
-        <span id="mode-label" class="hidden md:inline">야간 전술</span>
-      </button>
-
-      <!-- Network / Offline Indicator -->
-      <div class="flex items-center gap-1 text-[10px] text-emerald-400 font-mono border border-emerald-900/60 bg-emerald-950/20 px-1.5 py-0.5">
-        <span class="inline-block w-1.5 h-1.5 bg-emerald-400 animate-pulse"></span>
-        <span>PWA READY</span>
-      </div>
+    <div class="flex items-center gap-1 text-[10px] text-emerald-400 font-mono border border-emerald-900/60 bg-emerald-950/20 px-2 py-0.5">
+      <span class="inline-block w-1.5 h-1.5 bg-emerald-400 animate-pulse"></span>
+      <span>OFFLINE READY</span>
     </div>
   </div>
 </header>
@@ -211,13 +183,8 @@
   <div class="absolute bottom-0 left-0 w-2.5 h-2.5 border-b-2 border-l-2 border-white"></div>
   <div class="absolute bottom-0 right-0 w-2.5 h-2.5 border-b-2 border-r-2 border-white"></div>
 
-  <!-- Background Watermark -->
-  <div class="absolute -right-4 -bottom-6 font-mono text-7xl font-black text-white/[0.03] pointer-events-none select-none tracking-tighter">
-    PR-01
-  </div>
-
   <!-- Hero Header Badges -->
-  <div class="flex flex-wrap items-center justify-between gap-2 mb-3.5 font-mono text-xs">
+  <div class="flex items-center justify-between mb-3.5 font-mono text-xs">
     <div class="flex items-center gap-2">
       <span id="proto-threat-badge" data-proto="threatLevelText" class="bg-white text-black font-bold px-1.5 py-0.5 tracking-tight uppercase">
         [위험 등급: 치명적(CRITICAL)]
@@ -226,14 +193,14 @@
         <span id="proto-hero-category" data-proto="category">WATER</span>
       </span>
     </div>
-    <div class="text-[#888] text-[11px] flex items-center gap-1.5">
-      <span data-i18n="readingTime" class="border border-[#333] px-1.5 py-0.5">열람 소요 시간: 30초</span>
-      <span class="text-[10px] uppercase border border-[#333] px-1 text-[#aaa] hidden sm:inline">SEC LEVEL-A</span>
+    <div class="text-[#888] text-[11px] flex items-center gap-1">
+      <svg class="w-3 h-3 text-[#777]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span data-i18n="readingTime">소요 30초 독해</span>
     </div>
   </div>
 
   <!-- Large Bold Title -->
-  <h1 id="proto-main-title" data-proto="title" class="font-title text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-snug mb-2 uppercase">
+  <h1 id="proto-main-title" data-proto="title" class="font-title text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-snug mb-2 uppercase">
     프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)
   </h1>
   <p class="font-mono text-[11px] text-[#888] uppercase tracking-wider mb-3.5">
@@ -254,15 +221,15 @@
       <span id="proto-time" data-proto="timeRequired" class="text-white font-bold text-xs sm:text-sm">15분 (15 MINUTES)</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="successRate" class="block text-[10px] text-[#777] uppercase tracking-tighter">생존율/성공률</span>
+      <span data-i18n="successRate" class="block text-[10px] text-[#777] uppercase tracking-tighter">생존율</span>
       <span id="proto-success" data-proto="successRate" class="text-white font-bold text-xs sm:text-sm">99.8% (열탕 살균 후)</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="difficulty" class="block text-[10px] text-[#777] uppercase tracking-tighter">기술 난이도</span>
+      <span data-i18n="difficulty" class="block text-[10px] text-[#777] uppercase tracking-tighter">난이도</span>
       <span id="proto-difficulty" data-proto="difficulty" class="text-white font-bold text-xs sm:text-sm">1등급 (원시 생존 기술)</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="outputPerHour" class="block text-[10px] text-[#777] uppercase tracking-tighter">시간당 산출량</span>
+      <span data-i18n="outputPerHour" class="block text-[10px] text-[#777] uppercase tracking-tighter">시간당 산출</span>
       <span id="proto-output" data-proto="outputPerHour" class="text-white font-bold text-xs sm:text-sm">1.5리터 / 시간</span>
     </div>
   </div>
@@ -314,10 +281,6 @@
       </div>
     </label>
   
-  </div>
-  <div class="mt-4 pt-3 border-t border-[#2a2a2a] flex items-center justify-between text-[11px] font-mono text-[#777]">
-    <span id="ui-checklist-subtext">현장 수칙: 자연 지형지물 및 주변 가용 임기응변 재료 적극 활용</span>
-    <span data-i18n="fieldTested" class="text-white font-bold hidden sm:inline">[야전 검증 완료]</span>
   </div>
 </section>
     <section class="mb-6 space-y-4">
@@ -502,7 +465,6 @@
     <span id="ui-fatal-header" data-i18n="fatalTitle" class="bg-[#E02424] text-white font-bold px-1.5 py-0.5 tracking-tight uppercase">
       [치명적 경고 // FATAL ERROR]
     </span>
-    <span data-i18n="mustReadBeforeDrink" class="text-[#ff7b7b] text-[10px] tracking-widest uppercase">VIOLATION CODE: 0X-DEATH</span>
   </div>
 
   <h3 id="fatal-title" data-proto-fatal="title" class="font-title text-base sm:text-xl font-bold text-white mb-2 leading-snug">

@@ -41,10 +41,6 @@ export function renderChecklist(materials: Material[]): string {
   <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 font-mono text-xs">
     ${itemsHtml}
   </div>
-  <div class="mt-4 pt-3 border-t border-[#2a2a2a] flex items-center justify-between text-[11px] font-mono text-[#777]">
-    <span id="ui-checklist-subtext">현장 수칙: 자연 지형지물 및 주변 가용 임기응변 재료 적극 활용</span>
-    <span data-i18n="fieldTested" class="text-white font-bold hidden sm:inline">[야전 검증 완료]</span>
-  </div>
 </section>
   `.trim();
 }
