@@ -225,8 +225,13 @@ export class TelegramBotService {
           reply_markup: TelegramBotService.getMainKeyboard(),
         };
 
-      case '/list':
-        return { text: this.renderListMessage(), parse_mode: 'HTML' };
+      case '/list': {
+        const res = this.renderListResponse();
+        return { text: res.text, parse_mode: 'HTML', reply_markup: res.reply_markup };
+      }
+
+      case '/view':
+        return { text: this.renderViewMessage(parsed.args), parse_mode: 'HTML', reply_markup: this.getViewKeyboard(parsed.args) };
 
       case '/status':
         return { text: this.renderStatusMessage(), parse_mode: 'HTML' };
@@ -236,6 +241,12 @@ export class TelegramBotService {
 
       case '/recommend':
         return await this.handleRecommendCommand(chatId);
+
+      case '/stitch':
+        return { text: this.handleStitchCommand(parsed.args), parse_mode: 'HTML' };
+
+      case '/archive':
+        return { text: await this.handleArchiveCommand(parsed.args, chatId), parse_mode: 'HTML' };
 
       case '/build':
       case '/deploy':
@@ -273,8 +284,27 @@ export class TelegramBotService {
 
     const data = query.data || '';
     if (data === 'cb:list') {
-      const res = this.renderListMessage();
+      const res = this.renderListResponse();
+      await this.client.sendMessage(chatId, res.text, {
+        parse_mode: 'HTML',
+        reply_markup: res.reply_markup,
+      });
+    } else if (data.startsWith('cb:view:')) {
+      const protoId = data.replace('cb:view:', '');
+      const text = this.renderViewMessage(protoId);
+      await this.client.sendMessage(chatId, text, {
+        parse_mode: 'HTML',
+        reply_markup: this.getViewKeyboard(protoId),
+      });
+    } else if (data.startsWith('cb:arch:')) {
+      const protoId = data.replace('cb:arch:', '');
+      await this.client.sendMessage(chatId, `📦 프로토콜 [${protoId}] 격리 보관 및 배포를 진행합니다...`);
+      const res = await this.handleArchiveCommand(protoId, chatId);
       await this.client.sendMessage(chatId, res, { parse_mode: 'HTML' });
+    } else if (data.startsWith('cb:stitch:')) {
+      const protoId = data.replace('cb:stitch:', '');
+      const text = this.handleStitchCommand(protoId);
+      await this.client.sendMessage(chatId, text, { parse_mode: 'HTML' });
     } else if (data === 'cb:recommend') {
       const res = await this.handleRecommendCommand(chatId);
       await this.client.sendMessage(chatId, res.text, {
@@ -297,15 +327,18 @@ export class TelegramBotService {
   }
 
   private renderHelpMessage(): string {
-    return `⚔️ <b>[생존 교범 // SURVIVAL PROTOCOL] 전술 원격 제어 봇</b>
+    return `⚔️ <b>[생존 교범 // SURVIVAL PROTOCOL] 전술 원격 제어 봇 v2.0</b>
 
 인류 멸망 후 원시 생존 교범을 스마트폰에서 자율 기획·생성·수정·배포하는 통제실입니다.
 
 <b>📌 전술 명령어 목록:</b>
-• 📖 <code>/list</code> - 현재 발행된 7대 프로토콜 목록 및 링크
+• 📖 <code>/list</code> - 현재 발행된 프로토콜 목록 및 1-터치 상세 조회
+• 🔍 <code>/view [PR-NN]</code> - 프로토콜 제원/도면/번역 상태 정밀 감사
 • 💡 <code>/recommend</code> - 지식 트리 기반 차기 유망 프로토콜 1-클릭 추천
+• 🎨 <code>/stitch [주제/ID]</code> - Stitch MCP 화면 생성용 프롬프트 명세서 발급
 • 🚀 <code>/generate [주제]</code> - 신규 프로토콜 자율 생성 (도면+번역+배포)
 • ✏️ <code>/edit [PR-NN] [지침]</code> - 기존 프로토콜 AI 수정 및 재배포
+• 📦 <code>/archive [PR-NN]</code> - 프로토콜을 보관소로 격리 이동 및 재배포
 • 📊 <code>/stats</code> - 6대 도메인, SVG 도면, 번역 통계 대시보드
 • 🔨 <code>/build</code> - 정적 웹 & PWA 즉시 빌드 및 Vercel 배포
 • 📡 <code>/status</code> - 라이브 배포 URL 및 Git HEAD 커밋 확인
@@ -314,10 +347,10 @@ export class TelegramBotService {
 <i>💡 아래 빠른 버튼을 터치하거나 명령어를 직접 입력하십시오.</i>`;
   }
 
-  private renderListMessage(): string {
+  private renderListResponse(): { text: string; reply_markup?: TelegramInlineKeyboard } {
     const protocols = ProtocolGeneratorService.listProtocols();
     if (protocols.length === 0) {
-      return '📭 등록된 생존 프로토콜이 없습니다.';
+      return { text: '📭 등록된 생존 프로토콜이 없습니다.' };
     }
 
     const lines = protocols.map((p) => {
@@ -325,7 +358,123 @@ export class TelegramBotService {
       return `<b>[${p.protocolId}]</b> <code>[${p.category}]</code> ${p.title}\n🔗 <a href="${SITE_META.siteUrl}/protocol-${num}">${SITE_META.siteUrl}/protocol-${num}</a>`;
     });
 
-    return `📑 <b>[생존 교범 라이브 목록]</b> (총 ${protocols.length}편 완전체 가동 중)\n\n` + lines.join('\n\n');
+    const buttons: TelegramInlineButton[][] = [];
+    for (let i = 0; i < protocols.length; i += 2) {
+      const row: TelegramInlineButton[] = [];
+      const p1 = protocols[i];
+      row.push({ text: `🔍 ${p1.protocolId} 상세`, callback_data: `cb:view:${p1.protocolId}` });
+      if (i + 1 < protocols.length) {
+        const p2 = protocols[i + 1];
+        row.push({ text: `🔍 ${p2.protocolId} 상세`, callback_data: `cb:view:${p2.protocolId}` });
+      }
+      buttons.push(row);
+    }
+
+    buttons.push([
+      { text: '💡 차기 주제 추천', callback_data: 'cb:recommend' },
+      { text: '📊 전체 통계', callback_data: 'cb:stats' },
+    ]);
+
+    return {
+      text: `📑 <b>[생존 교범 라이브 목록]</b> (총 ${protocols.length}편 완전체 가동 중)\n\n` + lines.join('\n\n'),
+      reply_markup: { inline_keyboard: buttons },
+    };
+  }
+
+  public renderListMessage(): string {
+    return this.renderListResponse().text;
+  }
+
+  public renderViewMessage(protocolId: string): string {
+    if (!protocolId) {
+      return '⚠️ 조회할 프로토콜 ID를 입력하세요. 예: <code>/view PR-01</code>';
+    }
+
+    const details = ProtocolGeneratorService.getProtocolDetails(protocolId);
+    if (!details) {
+      return `❌ 프로토콜 [${protocolId}]을 찾을 수 없습니다. /list 로 목록을 확인하세요.`;
+    }
+
+    const { data, stepsStatus, locales } = details;
+    const num = data.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
+
+    const stepsText = stepsStatus
+      .map((s) => {
+        const statusIcon = s.exists ? `✓ (${(s.size / 1024).toFixed(1)}KB)` : '⚠️ 누락';
+        return `  • <b>Step ${s.stepNumber}</b>: ${s.title}\n    └ 도면: <code>${s.svgFileName}</code> [${statusIcon}]`;
+      })
+      .join('\n');
+
+    const materialsText = data.materials
+      .map((m, idx) => `  ${idx + 1}. <b>${m.name}</b>: ${m.desc}`)
+      .join('\n');
+
+    return `🛡️ <b>[프로토콜 전술 제원표 // ${data.protocolId}]</b>
+
+<b>제목:</b> ${data.title}
+<b>분과:</b> <code>[${data.category}]</code> | <b>위협도:</b> ${data.threatLevel}
+<b>요약:</b> ${data.summary}
+
+<b>📐 4열 핵심 제원:</b>
+• 소요 시간: <code>${data.timeRequired}</code>
+• 생존율: <code>${data.successRate}</code>
+• 난이도: <code>${data.difficulty}</code>
+• 시간당 산출: <code>${data.outputPerHour || 'N/A'}</code>
+
+<b>🎒 필수 생존 물자 (MATERIALS):</b>
+${materialsText}
+
+<b>📐 3단계 실행 지침 및 벡터 도면:</b>
+${stepsText}
+
+<b>⚠️ 치명적 경고 (FATAL ERROR):</b>
+• <b>${data.fatalMistake.title}</b>
+  └ ${data.fatalMistake.description}
+
+<b>🌐 다국어 번역 상태:</b>
+• 영어 (EN): ${locales.en ? '✓ 완비' : '❌ 누락'}
+• 일본어 (JA): ${locales.ja ? '✓ 완비' : '❌ 누락'}
+
+🔗 <b>라이브:</b> <a href="${SITE_META.siteUrl}/protocol-${num}">${SITE_META.siteUrl}/protocol-${num}</a>`;
+  }
+
+  private getViewKeyboard(protocolId: string): TelegramInlineKeyboard {
+    const cleanId = protocolId.toUpperCase().replace(/\s+/g, '');
+    const num = cleanId.replace(/[^0-9]/g, '').padStart(2, '0');
+    return {
+      inline_keyboard: [
+        [
+          { text: '🌐 웹에서 열기', url: `${SITE_META.siteUrl}/protocol-${num}` },
+          { text: '🎨 Stitch 프롬프트', callback_data: `cb:stitch:${cleanId}` },
+        ],
+        [
+          { text: '📦 보관소로 격리(삭제)', callback_data: `cb:arch:${cleanId}` },
+          { text: '📖 전체 목록으로', callback_data: 'cb:list' },
+        ],
+      ],
+    };
+  }
+
+  private async handleArchiveCommand(protocolId: string, chatId: number | string): Promise<string> {
+    if (!protocolId) {
+      return '⚠️ 보관할 프로토콜 ID를 입력하세요. 예: <code>/archive PR-02</code>';
+    }
+
+    try {
+      const res = await ProtocolGeneratorService.archiveProtocol(protocolId, { triggerDeploy: true });
+      return `✅ <b>[격리 보관 완료]</b>\n${res.message}\n사이트가 재컴파일되어 Vercel에 반영되었습니다.`;
+    } catch (e: any) {
+      return `❌ 보관 처리 실패: ${e.message || String(e)}`;
+    }
+  }
+
+  private handleStitchCommand(topicOrId: string): string {
+    const prompt = ProtocolGeneratorService.generateStitchPrompt(topicOrId || 'PR-03 소나무 송진 상처 치료');
+    return `🎨 <b>[Stitch 생성 프롬프트 명세서]</b>
+
+아래 프롬프트를 복사하여 Stitch MCP 도구에 입력하시면, 정밀 모노라인 벡터 SVG 도면(FIG. 01~03)이 완비된 브루탈리즘 야전 교범 화면이 자동 생성됩니다:
+
+<code>${prompt}</code>`;
   }
 
   private renderStatusMessage(): string {
@@ -334,7 +483,7 @@ export class TelegramBotService {
 
     return `📡 <b>[시스템 및 배포 상태]</b>
 • <b>라이브 URL:</b> <a href="${SITE_META.siteUrl}">${SITE_META.siteUrl}</a>
-• <b>총 프로토콜:</b> ${protocols.length}편 (도면 21종, 번역 14종 완비)
+• <b>총 프로토콜:</b> ${protocols.length}편 (Stitch 벡터 도면 및 번역 완비)
 • <b>최신 커밋:</b> <code>${commit.hash}</code>
 • <b>커밋 메시지:</b> ${commit.message}
 • <b>PWA 오프라인:</b> 활성화 (100% 영구 보존 캐시)`;

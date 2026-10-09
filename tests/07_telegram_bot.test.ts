@@ -127,4 +127,52 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     assert.ok(mockClient.answeredCallbacks.includes('query-12345'));
     assert.ok(mockClient.sentMessages.some((m) => m.text.includes('생존 교범 라이브 목록')));
   });
+
+  it('/view 명령 시 프로토콜 상세 제원, 도면 검증 상태, 인라인 키보드를 반환해야 한다', async () => {
+    const mockClient = new MockTelegramApiClient();
+    const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
+
+    const reply = await bot.handleMessage(1234, '/view PR-01');
+    assert.match(reply.text, /프로토콜 전술 제원표 \/\/ PR-01/);
+    assert.match(reply.text, /4열 핵심 제원/);
+    assert.match(reply.text, /필수 생존 물자/);
+    assert.match(reply.text, /치명적 경고/);
+    assert.match(reply.text, /다국어 번역 상태/);
+    assert.ok(reply.reply_markup?.inline_keyboard);
+    assert.strictEqual(reply.reply_markup.inline_keyboard[0][1].text, '🎨 Stitch 프롬프트');
+  });
+
+  it('/stitch 명령 시 Stitch MCP 입력용 브루탈리즘 테크니컬 프롬프트를 반환해야 한다', async () => {
+    const mockClient = new MockTelegramApiClient();
+    const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
+
+    const reply = await bot.handleMessage(1234, '/stitch PR-02');
+    assert.match(reply.text, /Stitch 생성 프롬프트 명세서/);
+    assert.match(reply.text, /Utilitarian Brutalism/);
+    assert.match(reply.text, /VITAL REQUIREMENT/);
+  });
+
+  it('handleCallbackQuery는 cb:view 및 cb:stitch 버튼 터치를 정확히 라우팅해야 한다', async () => {
+    const mockClient = new MockTelegramApiClient();
+    const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
+
+    await bot.handleCallbackQuery({
+      id: 'cb-view-1',
+      from: { id: 1234, first_name: 'Zero' },
+      message: { message_id: 2, chat: { id: 1234 } },
+      data: 'cb:view:PR-02',
+    });
+
+    assert.ok(mockClient.sentMessages.some((m) => m.text.includes('PR-02') && m.text.includes('보우 드릴')));
+
+    await bot.handleCallbackQuery({
+      id: 'cb-stitch-1',
+      from: { id: 1234, first_name: 'Zero' },
+      message: { message_id: 3, chat: { id: 1234 } },
+      data: 'cb:stitch:PR-02',
+    });
+
+    assert.ok(mockClient.sentMessages.some((m) => m.text.includes('Stitch 생성 프롬프트 명세서')));
+  });
 });
+

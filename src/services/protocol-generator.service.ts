@@ -443,4 +443,110 @@ ${instructions}
       liveUrl,
     };
   }
+
+  /**
+   * 특정 프로토콜의 인프라 상태(도면 실존 여부, 다국어 번역 여부 등) 상세 조회
+   */
+  public static getProtocolDetails(protocolId: string) {
+    const found = this.getProtocolById(protocolId);
+    if (!found) return null;
+
+    const { data, filePath } = found;
+    const svgsDir = path.join(rootDir, 'content/svgs');
+    const localesDir = path.join(rootDir, 'content/protocols/locales');
+    const baseSlug = path.basename(filePath, '.json');
+
+    const stepsStatus = data.steps.map((s) => {
+      const svgPath = path.join(svgsDir, s.svgFileName);
+      const exists = fs.existsSync(svgPath);
+      const size = exists ? fs.statSync(svgPath).size : 0;
+      return {
+        stepNumber: s.stepNumber,
+        title: s.title,
+        svgFileName: s.svgFileName,
+        exists,
+        size,
+      };
+    });
+
+    const hasEn = fs.existsSync(path.join(localesDir, `${baseSlug}.en.json`));
+    const hasJa = fs.existsSync(path.join(localesDir, `${baseSlug}.ja.json`));
+
+    return {
+      data,
+      filePath,
+      baseSlug,
+      stepsStatus,
+      locales: { en: hasEn, ja: hasJa },
+    };
+  }
+
+  /**
+   * 프로토콜을 안전하게 격리 보관소(_archived_shells/)로 이동하고 사이트 재배포
+   */
+  public static async archiveProtocol(
+    protocolId: string,
+    options: { triggerDeploy?: boolean; dryRun?: boolean } = {}
+  ): Promise<{ success: boolean; message: string; protocolId: string }> {
+    const found = this.getProtocolById(protocolId);
+    if (!found) {
+      throw new Error(`프로토콜 [${protocolId}]을 찾을 수 없습니다.`);
+    }
+
+    if (options.dryRun) {
+      return { success: true, message: `[Dry Run] 프로토콜 ${protocolId} 아카이브 시뮬레이션 완료`, protocolId };
+    }
+
+    const archiveDir = path.join(rootDir, 'content/protocols/_archived_shells');
+    fs.mkdirSync(archiveDir, { recursive: true });
+
+    // 1. 마스터 JSON 이동
+    const destJson = path.join(archiveDir, path.basename(found.filePath));
+    fs.renameSync(found.filePath, destJson);
+
+    // 2. 관련 번역 파일 이동
+    const localesDir = path.join(rootDir, 'content/protocols/locales');
+    const baseSlug = path.basename(found.filePath, '.json');
+    const enFile = path.join(localesDir, `${baseSlug}.en.json`);
+    const jaFile = path.join(localesDir, `${baseSlug}.ja.json`);
+    if (fs.existsSync(enFile)) fs.renameSync(enFile, path.join(archiveDir, `${baseSlug}.en.json`));
+    if (fs.existsSync(jaFile)) fs.renameSync(jaFile, path.join(archiveDir, `${baseSlug}.ja.json`));
+
+    // 3. 사이트 재컴파일 & 배포
+    await buildSite({ rootDir, silent: true });
+    if (options.triggerDeploy) {
+      await DeployService.commitAndPush(`chore(protocol): archive ${found.data.protocolId} (${found.data.title})`);
+    }
+
+    return {
+      success: true,
+      message: `프로토콜 [${found.data.protocolId}]이 보관소로 안전하게 격리 이동되었습니다.`,
+      protocolId: found.data.protocolId,
+    };
+  }
+
+  /**
+   * Stitch MCP를 통해 정밀 벡터 도면 화면을 생성하기 위한 최적화 프롬프트 명세서 생성
+   */
+  public static generateStitchPrompt(topicOrId: string): string {
+    let topic = topicOrId.trim();
+    const existing = this.getProtocolById(topic);
+    if (existing) {
+      topic = existing.data.title;
+    }
+
+    return `You are designing a detailed survival protocol screen for '${topic}'.
+Aesthetic: Utilitarian Brutalism, Pure Dark Mode (background #131313, cards #1c1b1b, borders #333333, text #F5F5F5, brand-red #E02424).
+Fonts: Space Grotesk (title), Chivo (body), JetBrains Mono (labels/code).
+Rules:
+- Strict 100% dark mode only. NO theme switcher button, NO language switcher buttons.
+- Header must strictly have: '[■ 생존 교범] / [분과] > [ID]' on left, '[● OFFLINE READY]' on right.
+- Hero Section: 4-corner brackets, title, summary with left white border, 4-column spec strip (소요 시간 | 생존율 | 난이도 | 시간당 산출).
+- Materials: 3 checkbox items with interactive counter '0/3 SECURED'.
+- Procedure: 3 distinct sequential steps.
+- VITAL REQUIREMENT: Each step MUST include an inline, highly detailed technical monoline vector <svg viewBox="0 0 680 340"> schematic blueprint (FIG. 01, FIG. 02, FIG. 03) illustrating dimensions, force vectors, cutaway profiles, and physical mechanics.
+- Fatal Mistake: High-contrast red container [치명적 경고 // FATAL ERROR] detailing death mechanism.
+- Bottom Sticky Bar: [← 목차] | [💾 야전 오프라인 저장] | [다음 →]`;
+  }
 }
+
