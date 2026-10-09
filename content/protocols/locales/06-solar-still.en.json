@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-06",
+  "category": "WATER",
+  "title": "Protocol #06: Solar Still Ground Moisture Distillation (Emergency Water)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[THREAT LEVEL: HIGH]",
+  "summary": "When surface water is depleted in barren terrain, utilize solar radiation and geothermal heat to vaporize groundwater and foliage moisture into pure, 100% pathogen-free distilled drinking water using a Solar Still.",
+  "timeRequired": "3 HOURS (OPERATION)",
+  "successRate": "97.5% (100% Sterile Distillate)",
+  "difficulty": "Tier 1 (Primitive Bushcraft)",
+  "outputPerHour": "~150ml / 2 Hours",
+  "materials": [
+    {
+      "id": "mat-sol-01",
+      "name": "Concave Clay Pot or Shell (COLLECTION POT)",
+      "desc": "Deep, clean receptacle at least 15cm wide to catch dripping condensed droplets."
+    },
+    {
+      "id": "mat-sol-02",
+      "name": "Condensation Sheet or Broad Colocasia Leaves (CONDENSATION SHEET)",
+      "desc": "Airtight membrane covering the pit perimeter to funnel water vapor inward."
+    },
+    {
+      "id": "mat-sol-03",
+      "name": "Smooth Weight Pebble (WEIGHT STONE)",
+      "desc": "Small rock placed at sheet center to create an inverted cone dripping angle."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "1-Meter Conical Pit Excavation & Foliage Lining",
+      "description": "Select damp, sunlit earth and dig a 1m diameter, 50cm deep conical pit. Hollow out a level depression at the bottom center to seat the collection pot.",
+      "actionNote": "> Action: Packing the pit walls with non-toxic green leaves or branches doubles moisture yield via plant transpiration.",
+      "svgFileName": "06-step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Central Pot Seating & Perimeter Soil Seal",
+      "description": "Anchor the collection pot squarely in the center. Drape the condensation sheet loosely over the pit and weight the entire perimeter with damp soil and sand.",
+      "actionNote": "> Science: A hermetic seal prevents vapor escape, elevating internal pit temperatures past 55°C to achieve saturated vapor pressure.",
+      "svgFileName": "06-step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Center Weight Placement & Condensate Drip",
+      "description": "Place a smooth pebble directly above the collection pot to form a downward cone. Water droplets condensing on the underside slide down the slope and drip into the pot.",
+      "actionNote": "> Caution: Maintain at least a 5cm gap between the sheet apex and pot rim so captured water does not wick into the soil.",
+      "svgFileName": "06-step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Adding poisonous foliage to the pit or allowing sheet contact with soil.",
+    "description": "Attempting to increase moisture output by adding toxic weeds volatilizes lethal plant toxins directly into the distilled water. Additionally, loose dirt tumbling into the pot will contaminate the sterile water.",
+    "consequence": "Outcome: Ingestion of volatilized neurotoxins, acute renal failure, and rapid dehydration."
+  }
+}

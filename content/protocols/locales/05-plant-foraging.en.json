@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-05",
+  "category": "FOOD",
+  "title": "Protocol #05: Wild Plant Foraging & Universal Edibility Test",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[THREAT LEVEL: CRITICAL]",
+  "summary": "During wilderness starvation, consuming unidentified flora causes immediate fatality or acute liver necrosis. Execute the rigorous Universal Edibility Test: milky sap rejection, dermal patch, and lip/tongue micro-exposure.",
+  "timeRequired": "8 HOURS (TESTING)",
+  "successRate": "99.1% (Strict Adherence)",
+  "difficulty": "Tier 2 (Primitive Bushcraft)",
+  "outputPerHour": "1 Verified Edible Plant Specimen",
+  "materials": [
+    {
+      "id": "mat-plant-01",
+      "name": "Isolated Single Plant Part (LEAF/STEM/ROOT)",
+      "desc": "Test strictly one anatomical part at a time. Fresh, uncontaminated living tissue."
+    },
+    {
+      "id": "mat-plant-02",
+      "name": "Boiled & Cooled Clean Water (CLEAN WATER)",
+      "desc": "Sterile drinking water for mouth rinses and emergency skin decontaminations."
+    },
+    {
+      "id": "mat-plant-03",
+      "name": "Flat Slate Recording Stone (RECORD STONE)",
+      "desc": "Smooth stone slab to scratch elapsed time intervals (15-minute segments) with flint."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Visual Toxin Screen & Immediate Discard",
+      "description": "Sever the stem. Immediately discard any plant producing milky white sap, bitter almond odor (cyanogenic glycosides), or stinging hairs. Isolate one single part (leaf, stalk, or root).",
+      "actionNote": "> Action: Reject moldy or insect-damaged parts regardless of species; decay toxins are universally dangerous.",
+      "svgFileName": "05-step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Dermal Contact & 15-Minute Monitoring",
+      "description": "Crush a sample and rub the sap onto the sensitive inner forearm. Wait 15 minutes while carefully monitoring for contact dermatitis: redness, itching, burning, or hives.",
+      "actionNote": "> Science: Toxic alkaloids or calcium oxalate raphides provoke immediate mast cell degranulation upon contacting sensitive subdermal tissue.",
+      "svgFileName": "05-step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Lip & Tongue Tip Progressive Exposure",
+      "description": "If skin shows zero reaction, touch a fragment to the outer lower lip for 3 minutes. If clear, place it on the tongue tip for 15 minutes. Do not chew; do not swallow saliva.",
+      "actionNote": "> Caution: If numbness, tingling, or intense bitterness develops, spit immediately, rinse mouth 3x with boiled water, and permanently blacklist the plant.",
+      "svgFileName": "05-step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Assuming plants eaten by birds or wildlife are safe for human consumption.",
+    "description": "Avian and herbivorous gastrointestinal enzymes and hepatic metabolic pathways differ fundamentally from humans. Plants like Oleander, Monkshood, or Water Hemlock are tolerated by specific wildlife but cause lethal human cardiac arrest from a 1g dose.",
+    "consequence": "Outcome: Acute aconitine neurotoxicity, ventricular fibrillation, and death within 2 hours."
+  }
+}

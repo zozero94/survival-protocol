@@ -209,25 +209,40 @@
   <div class="space-y-6">
     <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
       <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-linecap="square" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Bottle outline -->
-<rect height="110" stroke-dasharray="2,2" width="90" x="55" y="45"></rect>
-<!-- Cut line indicator -->
-<line stroke="white" stroke-width="2" x1="40" x2="160" y1="50" y2="50"></line>
-<!-- Cut scissor / marker -->
-<text fill="white" font-family="monospace" font-size="9" font-weight="bold" x="50" y="42">절단선 [바닥면 3인치]</text>
-<!-- Bottle inverted body -->
-<path d="M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z" stroke-width="2"></path>
-<!-- Cap pierced holes -->
-<line stroke-width="3" x1="90" x2="110" y1="195" y2="195"></line>
-<line stroke-dasharray="2,2" x1="95" x2="95" y1="198" y2="204"></line>
-<line stroke-dasharray="2,2" x1="100" x2="100" y1="198" y2="204"></line>
-<line stroke-dasharray="2,2" x1="105" x2="105" y1="198" y2="204"></line>
-<!-- Arrow inverted -->
-<path d="M100,15 L100,35 M95,30 L100,35 L105,30" stroke-width="1.5"></path>
-<text fill="white" font-family="monospace" font-size="9" text-anchor="middle" x="100" y="10">역방향 반전 배치</text>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-05 [EDIBLE-PLANT-TEST]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 01</text>
+
+  <!-- 절단된 식물 줄기 단면 (Cut Stem) -->
+  <rect x="180" y="110" width="40" height="110" fill="#141414" stroke="#FFFFFF" stroke-width="2"/>
+  <ellipse cx="200" cy="110" rx="20" ry="8" fill="#262626" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- 유백색 독성 유즙 방출 (Milky White Sap Drop) -->
+  <path d="M 195 118 Q 190 145 200 155 Q 210 145 205 118 Z" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+  <ellipse cx="200" cy="170" rx="12" ry="16" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.5"/>
+  
+  <!-- 치명적 독성 금지 표식 (Disallowed Cross) -->
+  <circle cx="200" cy="170" r="32" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="177" y1="147" x2="223" y2="193" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="223" y1="147" x2="177" y2="193" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- 배제 판별 텍스트 박스 -->
+  <rect x="50" y="235" width="300" height="60" fill="#0A0A0A" stroke="#404040" stroke-width="1"/>
+  <text x="65" y="255" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="bold">1. MILKY SAP (LATEX ALKALOIDS) ➔ DISCARD</text>
+  <text x="65" y="272" fill="#E5E5E5" font-family="monospace" font-size="10">2. BITTER ALMOND ODOR (CYANIDE) ➔ DISCARD</text>
+  <text x="65" y="287" fill="#A3A3A3" font-family="monospace" font-size="10">3. FINE STINGING HAIRS ➔ DISCARD</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 01: IMMEDIATE VISUAL &amp; OLFACTORY EXCLUSION</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">IMMEDIATELY REJECT ANY SPECIMEN WITH MILKY SAP OR ALMOND SCENT</text>
 </svg>
+
         <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 01</span>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center">
@@ -246,32 +261,45 @@
     </div>
 <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
       <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Vessel Wall -->
-<path d="M45,25 L155,25 L145,150 L115,175 L115,192 L85,192 L85,175 L55,150 Z" stroke-width="2"></path>
-<!-- Layer 1: Gravel Top -->
-<rect fill="#ffffff" fill-opacity="0.1" height="25" stroke="white" stroke-dasharray="2,2" width="96" x="52" y="35"></rect>
-<!-- Layer 2: Sand -->
-<rect height="30" stroke="white" stroke-width="1" width="84" x="58" y="60"></rect>
-<!-- Dots for sand -->
-<line stroke-dasharray="1,4" stroke-width="2" x1="65" x2="135" y1="75" y2="75"></line>
-<line stroke-dasharray="2,3" stroke-width="1.5" x1="68" x2="132" y1="80" y2="80"></line>
-<!-- Layer 3: Crushed Charcoal (Dense) -->
-<rect fill="#ffffff" fill-opacity="0.35" height="38" stroke="white" stroke-width="1.5" width="70" x="65" y="90"></rect>
-<!-- Layer 4: Cloth Plug -->
-<path d="M78,145 L122,145 L110,172 L90,172 Z" fill="#ffffff" stroke="white"></path>
-<!-- Text Callouts -->
-<text fill="white" font-family="monospace" font-size="8" x="160" y="48">자갈 [3cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="77">모래 [5cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="112">활성숯 [6cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="158">면포 마개</text>
-<!-- Connection lines -->
-<line stroke="white" stroke-width="0.75" x1="140" x2="156" y1="46" y2="46"></line>
-<line stroke-white"="" stroke-width="0.75" x1="135" x2="156" y1="75" y2="75"></line>
-<line stroke="white" stroke-width="0.75" x1="128" x2="156" y1="108" y2="108"></line>
-<line stroke="white" stroke-width="0.75" x1="115" x2="156" y1="156" y2="156"></line>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-05 [EDIBLE-PLANT-TEST]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 02</text>
+
+  <!-- 사람 팔 전완부 윤곽선 (Inner Forearm) -->
+  <path d="M 60 160 C 120 155 240 150 340 140 L 340 220 C 240 215 120 220 60 210 Z" fill="#141414" stroke="#E5E5E5" stroke-width="2"/>
+  <text x="90" y="190" fill="#737373" font-family="monospace" font-size="10">INNER FOREARM</text>
+
+  <!-- 식물 즙 도포 테스트 스팟 (Test Patch) -->
+  <circle cx="210" cy="180" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="210" cy="180" r="26" fill="none" stroke="#737373" stroke-width="1" stroke-dasharray="3 3"/>
+  <!-- 즙 도포 화살표 -->
+  <path d="M 210 110 L 210 155" stroke="#FFFFFF" stroke-width="2"/>
+  <polygon points="210,155 205,145 215,145" fill="#FFFFFF"/>
+  <text x="210" y="100" fill="#FFFFFF" font-family="monospace" font-size="9" text-anchor="middle" font-weight="bold">RUB CRUSHED SAP</text>
+
+  <!-- 15분 경과 스톱워치 다이얼 (15 MIN Stopwatch) -->
+  <circle cx="290" cy="180" r="30" fill="#0A0A0A" stroke="#E5E5E5" stroke-width="1.5"/>
+  <line x1="290" y1="180" x2="290" y2="155" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="290" y1="180" x2="315" y2="180" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M 290 155 A 25 25 0 0 1 315 180" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="290" y="225" fill="#FFFFFF" font-family="monospace" font-size="10" text-anchor="middle" font-weight="bold">15 MIN WAIT</text>
+
+  <!-- 이상 반응 감시 체크리스트 -->
+  <rect x="50" y="240" width="300" height="55" fill="#0A0A0A" stroke="#404040" stroke-width="1"/>
+  <text x="65" y="260" fill="#E5E5E5" font-family="monospace" font-size="10">OBSERVE: ERYTHEMA / ITCHING / HIVES</text>
+  <text x="65" y="278" fill="#737373" font-family="monospace" font-size="9">&gt; IF BURNING SENSATION OCCURS ➔ RINSE IMMEDIATELY</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 02: DERMAL CONTACT &amp; 15-MINUTE MONITORING</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">RUB JUICE ON SENSITIVE INNER ARM; WAIT 15 MIN FOR HISTAMINE REACTION</text>
 </svg>
+
         <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 02</span>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center">
@@ -290,25 +318,43 @@
     </div>
 <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
       <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Cloudy Input -->
-<path d="M80,15 C90,25 110,25 120,15" stroke="white" stroke-width="2"></path>
-<line stroke-dasharray="3,3" x1="95" x2="95" y1="28" y2="48"></line>
-<line stroke-dasharray="3,3" x1="105" x2="105" y1="28" y2="48"></line>
-<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="10">유입: 오염된 탁수</text>
-<!-- Inverted Funnel -->
-<polygon points="60,50 140,50 115,115 85,115" stroke="white" stroke-width="2"></polygon>
-<line stroke-dasharray="2,2" x1="70" x2="130" y1="75" y2="75"></line>
-<!-- Drops of clear water -->
-<circle cx="100" cy="132" fill="white" r="2.5"></circle>
-<circle cx="100" cy="144" fill="white" r="2.5"></circle>
-<circle cx="100" cy="156" fill="white" r="2.5"></circle>
-<!-- Collection Basin -->
-<rect height="28" stroke="white" stroke-width="2" width="70" x="65" y="165"></rect>
-<line stroke-dasharray="1,2" stroke-white"="" x1="72" x2="128" y1="180" y2="180"></line>
-<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="178">1차 맑은 여과수</text>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-05 [EDIBLE-PLANT-TEST]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 03</text>
+
+  <!-- 입술 및 혀 측면 프로파일 도해 (Oral Profile) -->
+  <path d="M 120 120 Q 170 120 190 140 Q 210 160 180 180 Q 210 190 190 220 Q 150 230 110 230" fill="none" stroke="#E5E5E5" stroke-width="2"/>
+  <!-- 혀 (Tongue Extended) -->
+  <path d="M 175 175 C 220 170 250 185 240 200 C 220 210 185 200 175 195" fill="#1F1F1F" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="210" y="195" fill="#E5E5E5" font-family="monospace" font-size="9" font-weight="bold">TONGUE TIP</text>
+
+  <!-- 식물 잎 미세 조각 안치 (Specimen Fragment) -->
+  <polygon points="245,185 260,180 255,195 240,195" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="260" y1="160" x2="252" y2="182" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="265" y="155" fill="#FFFFFF" font-family="monospace" font-size="9" font-weight="bold">LEAF PIECE (15 MIN)</text>
+
+  <!-- 침 삼킴 금지 경고 배지 (DO NOT SWALLOW) -->
+  <rect x="220" y="80" width="130" height="40" fill="#121212" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="285" y="98" fill="#FFFFFF" font-family="monospace" font-size="10" text-anchor="middle" font-weight="black">DO NOT SWALLOW</text>
+  <text x="285" y="112" fill="#A3A3A3" font-family="monospace" font-size="8" text-anchor="middle">HOLD SALIVA IN MOUTH</text>
+
+  <!-- 단계별 시간 프로토콜 -->
+  <rect x="50" y="240" width="300" height="55" fill="#0A0A0A" stroke="#404040" stroke-width="1"/>
+  <text x="65" y="258" fill="#E5E5E5" font-family="monospace" font-size="10">STEP A: OUTER LIP CONTACT ➔ 3 MINUTES</text>
+  <text x="65" y="275" fill="#E5E5E5" font-family="monospace" font-size="10">STEP B: TONGUE TIP CONTACT ➔ 15 MINUTES</text>
+  <text x="65" y="290" fill="#737373" font-family="monospace" font-size="8">&gt; IF NUMBNESS OR BITTERNESS ➔ SPIT &amp; RINSE x3</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 03: LIP &amp; TONGUE TIP PROGRESSIVE CHECK</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">NEVER CHEW OR SWALLOW; DETECT NUMBNESS BEFORE ANY INGESTION</text>
 </svg>
+
         <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 03</span>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center">
@@ -381,7 +427,7 @@
 
   <script>
     // 1. 다국어 데이터셋 인메모리 임베딩 (Single Source of Truth)
-    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-05","category":"FOOD","title":"프로토콜 #05: 독초 피하고 안전한 야생 구황식물 구별법","threatLevel":"CRITICAL","threatLevelText":"[위험 등급: 치명적(CRITICAL)]","summary":"식량 고갈 상황에서 미확인 식물 섭취는 즉사 또는 급성 간부전을 초래합니다. 유백색 유즙 배제, 피부 반응, 입술/혀 극소량 접촉으로 이어지는 8단계 유니버설 에디빌리티 테스트(Universal Edibility Test)를 수행합니다.","timeRequired":"8시간 (8 HOURS TESTING)","successRate":"99.1% (규정 엄수 시)","difficulty":"2등급 (원시 생존 기술)","outputPerHour":"안전 식용 식물 1종 판별","materials":[{"id":"mat-plant-01","name":"식별 대상 단일 식물 부위 (잎/줄기/뿌리)","desc":"한 번에 한 부위만 분리하여 시험. 오염되지 않은 신선한 생체 조직."},{"id":"mat-plant-02","name":"끓여서 식힌 정화된 물 (CLEAN DRINKING WATER)","desc":"테스트 중 입안을 헹구거나 이상 반응 시 즉시 세척할 무균 식수."},{"id":"mat-plant-03","name":"기록용 편평한 점토판 또는 차돌 (RECORD STONE)","desc":"각 단계별 반응 경과 시간(15분 단위)을 손톱이나 돌로 새겨 기록."}],"steps":[{"stepNumber":"01","title":"육안 검사 및 즉시 폐기 대상 식별","description":"줄기를 잘랐을 때 우윳빛 하얀 진액이 나오거나, 아몬드/복숭아씨 냄새(청산염), 쐐기털이 있는 개체는 즉시 버립니다. 한 가지 식물의 잎, 줄기, 뿌리 중 딱 한 부위만 골라 분리하십시오.","actionNote":"> 조치 사항: 곰팡이가 피었거나 벌레 먹은 개체는 독성 여부와 무관하게 부패 독소가 있을 수 있으므로 반드시 배제합니다.","svgFileName":"step-01.svg"},{"stepNumber":"02","title":"피부 접촉 및 15분 반응 감시","description":"분리한 식물 즙을 팔꿈치 안쪽이나 손목의 연한 피부에 문지릅니다. 15분 동안 기다리며 발적, 가려움, 따가움, 두드러기 등의 접촉성 피부염 반응이 나타나는지 관찰합니다.","actionNote":"> 과학적 원리: 알칼로이드나 수산염 계열의 유독 성분은 피부 점막 세포와 접촉하는 즉시 히스타민 반응을 유발해 이상 징후를 알립니다.","svgFileName":"step-02.svg"},{"stepNumber":"03","title":"입술 및 혀 접촉 점진적 점검","description":"피부 반응이 없으면 식물 조각을 아랫입술 바깥쪽에 3분간 대고, 이상이 없으면 혀끝에 15분간 올려둡니다. 씹지 말고 침을 삼키지 않은 채 얼얼함이나 쓴맛을 감지하십시오.","actionNote":"> 주의: 혀가 마비되거나 쓴맛/화끈거림이 느껴지면 즉시 뱉고 끓인 물로 3회 이상 입을 헹군 뒤 해당 식물을 영구 폐기하십시오.","svgFileName":"step-03.svg"}],"fatalMistake":{"title":"치명적 착각: 새나 짐승이 뜯어먹은 흔적이 있다고 해서 인간이 먹으면 절대 안 됩니다.","description":"조류와 초식동물은 인간과 소화 효소 및 간 대사 경로가 완전히 다릅니다. 새에게 무해한 협죽도, 투구꽃, 독미나리 열매도 인간이 섭취하면 단 1g만으로 심장마비 및 중추신경 마비를 일으킵니다.","consequence":"미확인 섭취 시 결과: 급성 아코니틴 중독으로 인한 2시간 내 심실세동 및 사망"}}};
+    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-05","category":"FOOD","title":"프로토콜 #05: 독초 피하고 안전한 야생 구황식물 구별법","threatLevel":"CRITICAL","threatLevelText":"[위험 등급: 치명적(CRITICAL)]","summary":"식량 고갈 상황에서 미확인 식물 섭취는 즉사 또는 급성 간부전을 초래합니다. 유백색 유즙 배제, 피부 반응, 입술/혀 극소량 접촉으로 이어지는 8단계 유니버설 에디빌리티 테스트(Universal Edibility Test)를 수행합니다.","timeRequired":"8시간 (8 HOURS TESTING)","successRate":"99.1% (규정 엄수 시)","difficulty":"2등급 (원시 생존 기술)","outputPerHour":"안전 식용 식물 1종 판별","materials":[{"id":"mat-plant-01","name":"식별 대상 단일 식물 부위 (잎/줄기/뿌리)","desc":"한 번에 한 부위만 분리하여 시험. 오염되지 않은 신선한 생체 조직."},{"id":"mat-plant-02","name":"끓여서 식힌 정화된 물 (CLEAN DRINKING WATER)","desc":"테스트 중 입안을 헹구거나 이상 반응 시 즉시 세척할 무균 식수."},{"id":"mat-plant-03","name":"기록용 편평한 점토판 또는 차돌 (RECORD STONE)","desc":"각 단계별 반응 경과 시간(15분 단위)을 손톱이나 돌로 새겨 기록."}],"steps":[{"stepNumber":"01","title":"육안 검사 및 즉시 폐기 대상 식별","description":"줄기를 잘랐을 때 우윳빛 하얀 진액이 나오거나, 아몬드/복숭아씨 냄새(청산염), 쐐기털이 있는 개체는 즉시 버립니다. 한 가지 식물의 잎, 줄기, 뿌리 중 딱 한 부위만 골라 분리하십시오.","actionNote":"> 조치 사항: 곰팡이가 피었거나 벌레 먹은 개체는 독성 여부와 무관하게 부패 독소가 있을 수 있으므로 반드시 배제합니다.","svgFileName":"05-step-01.svg"},{"stepNumber":"02","title":"피부 접촉 및 15분 반응 감시","description":"분리한 식물 즙을 팔꿈치 안쪽이나 손목의 연한 피부에 문지릅니다. 15분 동안 기다리며 발적, 가려움, 따가움, 두드러기 등의 접촉성 피부염 반응이 나타나는지 관찰합니다.","actionNote":"> 과학적 원리: 알칼로이드나 수산염 계열의 유독 성분은 피부 점막 세포와 접촉하는 즉시 히스타민 반응을 유발해 이상 징후를 알립니다.","svgFileName":"05-step-02.svg"},{"stepNumber":"03","title":"입술 및 혀 접촉 점진적 점검","description":"피부 반응이 없으면 식물 조각을 아랫입술 바깥쪽에 3분간 대고, 이상이 없으면 혀끝에 15분간 올려둡니다. 씹지 말고 침을 삼키지 않은 채 얼얼함이나 쓴맛을 감지하십시오.","actionNote":"> 주의: 혀가 마비되거나 쓴맛/화끈거림이 느껴지면 즉시 뱉고 끓인 물로 3회 이상 입을 헹군 뒤 해당 식물을 영구 폐기하십시오.","svgFileName":"05-step-03.svg"}],"fatalMistake":{"title":"치명적 착각: 새나 짐승이 뜯어먹은 흔적이 있다고 해서 인간이 먹으면 절대 안 됩니다.","description":"조류와 초식동물은 인간과 소화 효소 및 간 대사 경로가 완전히 다릅니다. 새에게 무해한 협죽도, 투구꽃, 독미나리 열매도 인간이 섭취하면 단 1g만으로 심장마비 및 중추신경 마비를 일으킵니다.","consequence":"미확인 섭취 시 결과: 급성 아코니틴 중독으로 인한 2시간 내 심실세동 및 사망"}},"en":{"protocolId":"PR-05","category":"FOOD","title":"Protocol #05: Wild Plant Foraging & Universal Edibility Test","threatLevel":"CRITICAL","threatLevelText":"[THREAT LEVEL: CRITICAL]","summary":"During wilderness starvation, consuming unidentified flora causes immediate fatality or acute liver necrosis. Execute the rigorous Universal Edibility Test: milky sap rejection, dermal patch, and lip/tongue micro-exposure.","timeRequired":"8 HOURS (TESTING)","successRate":"99.1% (Strict Adherence)","difficulty":"Tier 2 (Primitive Bushcraft)","outputPerHour":"1 Verified Edible Plant Specimen","materials":[{"id":"mat-plant-01","name":"Isolated Single Plant Part (LEAF/STEM/ROOT)","desc":"Test strictly one anatomical part at a time. Fresh, uncontaminated living tissue."},{"id":"mat-plant-02","name":"Boiled & Cooled Clean Water (CLEAN WATER)","desc":"Sterile drinking water for mouth rinses and emergency skin decontaminations."},{"id":"mat-plant-03","name":"Flat Slate Recording Stone (RECORD STONE)","desc":"Smooth stone slab to scratch elapsed time intervals (15-minute segments) with flint."}],"steps":[{"stepNumber":"01","title":"Visual Toxin Screen & Immediate Discard","description":"Sever the stem. Immediately discard any plant producing milky white sap, bitter almond odor (cyanogenic glycosides), or stinging hairs. Isolate one single part (leaf, stalk, or root).","actionNote":"> Action: Reject moldy or insect-damaged parts regardless of species; decay toxins are universally dangerous.","svgFileName":"05-step-01.svg"},{"stepNumber":"02","title":"Dermal Contact & 15-Minute Monitoring","description":"Crush a sample and rub the sap onto the sensitive inner forearm. Wait 15 minutes while carefully monitoring for contact dermatitis: redness, itching, burning, or hives.","actionNote":"> Science: Toxic alkaloids or calcium oxalate raphides provoke immediate mast cell degranulation upon contacting sensitive subdermal tissue.","svgFileName":"05-step-02.svg"},{"stepNumber":"03","title":"Lip & Tongue Tip Progressive Exposure","description":"If skin shows zero reaction, touch a fragment to the outer lower lip for 3 minutes. If clear, place it on the tongue tip for 15 minutes. Do not chew; do not swallow saliva.","actionNote":"> Caution: If numbness, tingling, or intense bitterness develops, spit immediately, rinse mouth 3x with boiled water, and permanently blacklist the plant.","svgFileName":"05-step-03.svg"}],"fatalMistake":{"title":"Fatal Mistake: Assuming plants eaten by birds or wildlife are safe for human consumption.","description":"Avian and herbivorous gastrointestinal enzymes and hepatic metabolic pathways differ fundamentally from humans. Plants like Oleander, Monkshood, or Water Hemlock are tolerated by specific wildlife but cause lethal human cardiac arrest from a 1g dose.","consequence":"Outcome: Acute aconitine neurotoxicity, ventricular fibrillation, and death within 2 hours."}},"ja":{"protocolId":"PR-05","category":"FOOD","title":"プロトコル #05: 有毒植物を回避する野生可食植物判定法","threatLevel":"CRITICAL","threatLevelText":"[危険等級: 致命的(CRITICAL)]","summary":"食糧枯渇下における未確認植物の摂取は即死または急性肝壊死を招きます。乳白色の樹液排除、皮膚反応、唇および舌先の微量接触からなる厳格な汎用可食性テスト(Universal Edibility Test)を実行します。","timeRequired":"8時間 (8 HOURS TESTING)","successRate":"99.1% (プロトコル厳守時)","difficulty":"第2等級 (原始生存技術)","outputPerHour":"安全な可食植物 1種判別","materials":[{"id":"mat-plant-01","name":"判別対象の単一植物部位 (葉/茎/根)","desc":"一度に1部位のみを分離して試験。汚染されていない新鮮な生体組織。"},{"id":"mat-plant-02","name":"煮沸冷却滅菌水 (CLEAN WATER)","desc":"テスト中の口腔洗浄および異常反応時の緊急皮膚洗浄用無菌飲料水。"},{"id":"mat-plant-03","name":"記録用平坦粘土板または割石 (RECORD STONE)","desc":"各段階の経過時間(15分単位)を石で刻み記録するための石板。"}],"steps":[{"stepNumber":"01","title":"外観検査および即時廃棄対象の識別","description":"茎を切断した際に乳白色の樹液が出るもの、アーモンド/杏仁臭(青酸配糖体)があるもの、細かい刺毛を持つ個体は即座に廃棄します。1つの植物の葉、茎、根のうち1部位のみを選定してください。","actionNote":"> 措置事項: カビが生えた個体や虫食い箇所は、毒性の有無に関わらず腐敗毒素の危険があるため確実に除外します。","svgFileName":"05-step-01.svg"},{"stepNumber":"02","title":"皮膚接触および15分間の反応監視","description":"採取した植物の汁を肘の内側や手首の柔らかい皮膚に擦り込みます。15分間待機し、発赤、掻痒感、刺痛、蕁麻疹などの接触性皮膚炎反応を精密に観察します。","actionNote":"> 科学原理: アルカロイドやシュウ酸塩等の有毒成分は、粘膜細胞と接触するや否やヒスタミン反応を誘発し異常を警告します。","svgFileName":"05-step-02.svg"},{"stepNumber":"03","title":"唇および舌先への段階的接触検査","description":"皮膚反応がなければ、小片を下唇の外側に3分間接触させます。異常がなければ舌先に15分間置きます。絶対に噛んだり唾液を飲み込んだりしないでください。","actionNote":"> 注意: 舌の麻痺、激しい苦味、灼熱感を感じた場合は直ちに吐き出し、煮沸水で3回以上うがいをしてその植物を永久廃棄してください。","svgFileName":"05-step-03.svg"}],"fatalMistake":{"title":"致命的誤謬: 鳥や野生動物が食べているから人間も食べられると思い込むこと。","description":"鳥類や草食動物は人間と消化酵素および肝臓の代謝経路が根本から異なります。鳥が無害に食べるキョウチクトウ、トリカブト、ドクゼリの実も、人間が摂取すればわずか1gで心停止および中枢神経麻痺を引き起こします。","consequence":"未確認摂取時の結果: アコニチン急性中毒による心室細動および2時間以内の死亡"}}};
 
     // 2. State Layer 직렬화 런타임 스크립트 실행
     window.__THEME_CONFIG__ = {"dark":{"label":"야간 전술 모드 [다크]","icon":"◐","bodyBg":"bg-black","bodyText":"text-white"},"light":{"label":"재생지 모드 [라이트]","icon":"☼","bodyBg":"bg-[#f4f3ee]","bodyText":"text-black"}};

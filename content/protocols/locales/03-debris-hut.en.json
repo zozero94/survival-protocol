@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "Protocol #03: Thermal Debris Hut Construction (Body Heat Retention)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[THREAT LEVEL: HIGH]",
+  "summary": "To survive hypothermia in sub-zero wilderness, build a personal Debris Hut with natural branch framing and a 1-meter thick leaf insulation layer to reduce body heat dissipation to zero.",
+  "timeRequired": "90 MINUTES",
+  "successRate": "98.5% (With 1m Leaf Layer)",
+  "difficulty": "Tier 1 (Primitive Bushcraft)",
+  "outputPerHour": "1 Survival Shelter Unit",
+  "materials": [
+    {
+      "id": "mat-shl-01",
+      "name": "Hardwood Ridge Pole (RIDGE POLE)",
+      "desc": "3m length, forearm-thick dry hardwood trunk anchored to a natural fork or stump."
+    },
+    {
+      "id": "mat-shl-02",
+      "name": "Slanted Branch Ribs (RIBS)",
+      "desc": "Dozens of 3~5cm diameter dry branches leaned at 45° along both sides of ridge pole."
+    },
+    {
+      "id": "mat-shl-03",
+      "name": "Dry Leaves & Pine Needles (DEBRIS INSULATION)",
+      "desc": "Massive pile of bone-dry leaves, moss, and needles to cover bedding and shell to a 1m depth."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Ridge Pole Framework & Anchor Mount",
+      "description": "Rest the 3m ridge pole onto a natural fork or rock at approximately 1m height. Kick the base to verify structural load capacity before proceeding.",
+      "actionNote": "> Action: Keep the internal space snug to your body size. Excess air volume cannot be heated by body warmth alone.",
+      "svgFileName": "03-step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Dense 45° Rib Skeleton & Lattice Weave",
+      "description": "Lean sturdy ribs at 45-degree angles spaced 10cm apart along the ridge pole. Weave thinner branches horizontally to form a protective lattice wall.",
+      "actionNote": "> Science: The branch lattice creates a structural retention barrier preventing thousands of leaves from collapsing inward into your sleeping cavity.",
+      "svgFileName": "03-step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "40cm Mattress & 1-Meter Debris Blanket",
+      "description": "Fill the floor with dry leaves at least 40cm thick for ground insulation. Pile leaves over the external ribs until your arm sinks in shoulder-deep (>1m).",
+      "actionNote": "> Caution: Top the outermost layer with shingled evergreen boughs to shed rainwater away from the shelter core.",
+      "svgFileName": "03-step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Sleeping on bare ground without a 40cm bottom insulation layer.",
+    "description": "Cold earth siphons body heat via conductive cooling 4x faster than air. No matter how thick your roof is, ground contact causes fatal hypothermia within hours. Never omit the thick dry bedding.",
+    "consequence": "Outcome: Severe conductive core hypothermia and loss of consciousness within 4 hours."
+  }
+}

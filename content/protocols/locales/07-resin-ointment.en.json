@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-07",
+  "category": "MEDICINE",
+  "title": "Protocol #07: Pine Resin Wound Healing & Natural Hemostatic Salve",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[THREAT LEVEL: CRITICAL]",
+  "summary": "Untreated wilderness lacerations and infected wounds result in fatal sepsis within 48 hours. Formulate a primitive sterile salve utilizing raw pine resin (terpene antimicrobials) and sterile activated charcoal to seal wounds, stop bleeding, and prevent infection.",
+  "timeRequired": "25 MINUTES",
+  "successRate": "98.2% (Sterile Charcoal Blend)",
+  "difficulty": "Tier 1 (Primitive Bushcraft)",
+  "outputPerHour": "50ml Natural Salve",
+  "materials": [
+    {
+      "id": "mat-med-01",
+      "name": "Hardened Pine Resin (PINE RESIN)",
+      "desc": "Clear amber globules exuded from pine trunk scars. Rich in natural antimicrobial terpenes."
+    },
+    {
+      "id": "mat-med-02",
+      "name": "Sterile White Ash & Crushed Charcoal (STERILE CHARCOAL)",
+      "desc": "Ultra-high temp sterile ash and finely pulverized charcoal from hearth core. Adsorbs exudate."
+    },
+    {
+      "id": "mat-med-03",
+      "name": "Boiled Cloth or Birch Bark Bandage (BIRCH BANDAGE)",
+      "desc": "Sterilized cloth strip boiled in rolling water or pliable inner birch bark wrapping."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Resin Harvest & Gentle Indirect Melting",
+      "description": "Scrape hardened resin nodules from pine bark using flint or knife. Place on a concave hearth stone and melt slowly using indirect ember heat, skimming out bark debris with a stick.",
+      "actionNote": "> Action: Pine resin is highly flammable; never place directly over open flames. Melt gently over perimeter coals.",
+      "svgFileName": "07-step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Sterile Charcoal Blend & Salve Compounding",
+      "description": "Blend pulverized sterile charcoal and fine white wood ash into liquid resin at a 3:1 ratio. Stir continuously until it thickens into a pliable black antiseptic wax salve.",
+      "actionNote": "> Science: Terpene acids disrupt microbial cell membranes while porous activated carbon adsorbs bacterial endotoxins, halting anaerobic tetanus and staph proliferation.",
+      "svgFileName": "07-step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Warm Wound Sealing & Birch Bark Dressing",
+      "description": "Thoroughly irrigate the wound with boiled cooled water. Apply a generous layer of warm (approx 40°C) resin salve over the laceration, securing with sterile birch bark or boiled cloth.",
+      "actionNote": "> Caution: Never apply molten hot resin to avoid severe burns. Cool to body-warm temperature before skin application.",
+      "svgFileName": "07-step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Applying resin directly over an uncleaned, dirt-contaminated wound.",
+    "description": "Pine resin forms an absolute waterproof hermetic seal. Sealing anaerobic bacteria or soil pathogens inside a closed wound pocket accelerates lethal necrotizing fasciitis and septicemia. Always irrigate thoroughly with sterile water before sealing.",
+    "consequence": "Outcome: Accelerated anaerobic bacterial bloom and fatal septic shock within 48 hours."
+  }
+}

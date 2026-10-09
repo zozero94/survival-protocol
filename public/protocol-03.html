@@ -209,25 +209,47 @@
   <div class="space-y-6">
     <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
       <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-linecap="square" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Bottle outline -->
-<rect height="110" stroke-dasharray="2,2" width="90" x="55" y="45"></rect>
-<!-- Cut line indicator -->
-<line stroke="white" stroke-width="2" x1="40" x2="160" y1="50" y2="50"></line>
-<!-- Cut scissor / marker -->
-<text fill="white" font-family="monospace" font-size="9" font-weight="bold" x="50" y="42">절단선 [바닥면 3인치]</text>
-<!-- Bottle inverted body -->
-<path d="M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z" stroke-width="2"></path>
-<!-- Cap pierced holes -->
-<line stroke-width="3" x1="90" x2="110" y1="195" y2="195"></line>
-<line stroke-dasharray="2,2" x1="95" x2="95" y1="198" y2="204"></line>
-<line stroke-dasharray="2,2" x1="100" x2="100" y1="198" y2="204"></line>
-<line stroke-dasharray="2,2" x1="105" x2="105" y1="198" y2="204"></line>
-<!-- Arrow inverted -->
-<path d="M100,15 L100,35 M95,30 L100,35 L105,30" stroke-width="1.5"></path>
-<text fill="white" font-family="monospace" font-size="9" text-anchor="middle" x="100" y="10">역방향 반전 배치</text>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-03 [DEBRIS-HUT-SHELTER]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 01</text>
+
+  <!-- 지면 기준선 -->
+  <line x1="40" y1="280" x2="360" y2="280" stroke="#404040" stroke-width="2"/>
+  <line x1="40" y1="285" x2="360" y2="285" stroke="#262626" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <!-- 지지 바위 / 밑동 그루터기 (Fork / Boulder) -->
+  <polygon points="60,280 80,180 120,180 140,280" fill="#141414" stroke="#737373" stroke-width="1.5"/>
+  <text x="100" y="240" fill="#737373" font-family="monospace" font-size="9" text-anchor="middle">STUMP FORK</text>
+
+  <!-- 3m 주 기둥 (Ridge Pole: 지지대 1m 높이에서 지면으로 경사) -->
+  <line x1="100" y1="180" x2="340" y2="280" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="180" x2="340" y2="280" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 치수선: 지지 높이 1m -->
+  <line x1="50" y1="180" x2="50" y2="280" stroke="#E5E5E5" stroke-width="1.5"/>
+  <path d="M47 185 L50 180 L53 185 M47 275 L50 280 L53 275" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
+  <text x="42" y="235" fill="#E5E5E5" font-family="monospace" font-size="10" text-anchor="end" font-weight="bold">1.0m</text>
+
+  <!-- 치수선: 주 기둥 길이 3m -->
+  <line x1="110" y1="165" x2="345" y2="265" stroke="#A3A3A3" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="235" y="205" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold">RIDGE POLE (3.0m)</text>
+
+  <!-- 1인 누운 신체 치수 프로파일 (점선) -->
+  <ellipse cx="220" cy="270" rx="45" ry="8" fill="none" stroke="#525252" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="165" cy="265" r="7" fill="none" stroke="#525252" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <text x="210" y="255" fill="#737373" font-family="monospace" font-size="9">BODY FIT SPACE</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 01: RIDGE POLE &amp; STRUCTURAL ANCHOR</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">SECURE 3m HARDWOOD AT 1m CREST TO MINIMIZE INTERNAL AIR VOLUME</text>
 </svg>
+
         <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 01</span>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center">
@@ -246,32 +268,56 @@
     </div>
 <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
       <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Vessel Wall -->
-<path d="M45,25 L155,25 L145,150 L115,175 L115,192 L85,192 L85,175 L55,150 Z" stroke-width="2"></path>
-<!-- Layer 1: Gravel Top -->
-<rect fill="#ffffff" fill-opacity="0.1" height="25" stroke="white" stroke-dasharray="2,2" width="96" x="52" y="35"></rect>
-<!-- Layer 2: Sand -->
-<rect height="30" stroke="white" stroke-width="1" width="84" x="58" y="60"></rect>
-<!-- Dots for sand -->
-<line stroke-dasharray="1,4" stroke-width="2" x1="65" x2="135" y1="75" y2="75"></line>
-<line stroke-dasharray="2,3" stroke-width="1.5" x1="68" x2="132" y1="80" y2="80"></line>
-<!-- Layer 3: Crushed Charcoal (Dense) -->
-<rect fill="#ffffff" fill-opacity="0.35" height="38" stroke="white" stroke-width="1.5" width="70" x="65" y="90"></rect>
-<!-- Layer 4: Cloth Plug -->
-<path d="M78,145 L122,145 L110,172 L90,172 Z" fill="#ffffff" stroke="white"></path>
-<!-- Text Callouts -->
-<text fill="white" font-family="monospace" font-size="8" x="160" y="48">자갈 [3cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="77">모래 [5cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="112">활성숯 [6cm]</text>
-<text fill="white" font-family="monospace" font-size="8" x="160" y="158">면포 마개</text>
-<!-- Connection lines -->
-<line stroke="white" stroke-width="0.75" x1="140" x2="156" y1="46" y2="46"></line>
-<line stroke-white"="" stroke-width="0.75" x1="135" x2="156" y1="75" y2="75"></line>
-<line stroke="white" stroke-width="0.75" x1="128" x2="156" y1="108" y2="108"></line>
-<line stroke="white" stroke-width="0.75" x1="115" x2="156" y1="156" y2="156"></line>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-03 [DEBRIS-HUT-SHELTER]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 02</text>
+
+  <!-- 지면 기준선 -->
+  <line x1="40" y1="280" x2="360" y2="280" stroke="#404040" stroke-width="2"/>
+
+  <!-- 주 기둥 (중앙) -->
+  <line x1="80" y1="160" x2="320" y2="280" stroke="#E5E5E5" stroke-width="5"/>
+
+  <!-- 좌우 45도 빗살 갈비뼈 잔가지 (Rib Poles) -->
+  <!-- 좌측 날개 -->
+  <line x1="110" y1="175" x2="70" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="140" y1="190" x2="105" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="170" y1="205" x2="140" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="200" y1="220" x2="175" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="230" y1="235" x2="210" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="260" y1="250" x2="245" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="290" y1="265" x2="280" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- 우측 날개 (원근 입체 표현) -->
+  <line x1="110" y1="175" x2="160" y2="280" stroke="#737373" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="140" y1="190" x2="195" y2="280" stroke="#737373" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="170" y1="205" x2="230" y2="280" stroke="#737373" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="200" y1="220" x2="265" y2="280" stroke="#737373" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="230" y1="235" x2="300" y2="280" stroke="#737373" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+  <!-- 가로 엮음 격자망 (Lattice Framework) -->
+  <path d="M 65 250 Q 150 200 235 250" fill="none" stroke="#A3A3A3" stroke-width="1.5"/>
+  <path d="M 75 220 Q 130 185 195 220" fill="none" stroke="#A3A3A3" stroke-width="1.5"/>
+
+  <!-- 45도 각도 호선 인디케이터 -->
+  <path d="M 120 280 A 25 25 0 0 1 135 258" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
+  <text x="145" y="270" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold">45° SLOPE</text>
+
+  <!-- 간격 표시 (10cm Spacing) -->
+  <line x1="70" y1="290" x2="105" y2="290" stroke="#737373" stroke-width="1"/>
+  <text x="87" y="303" fill="#737373" font-family="monospace" font-size="8" text-anchor="middle">&lt; 10cm &gt;</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 02: 45° RIB SKELETON &amp; LATTICE</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">DENSELY PACK RIBS EVERY 10cm TO PREVENT DEBRIS COLLAPSE</text>
 </svg>
+
         <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 02</span>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center">
@@ -290,25 +336,43 @@
     </div>
 <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
       <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
-<!-- Cloudy Input -->
-<path d="M80,15 C90,25 110,25 120,15" stroke="white" stroke-width="2"></path>
-<line stroke-dasharray="3,3" x1="95" x2="95" y1="28" y2="48"></line>
-<line stroke-dasharray="3,3" x1="105" x2="105" y1="28" y2="48"></line>
-<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="10">유입: 오염된 탁수</text>
-<!-- Inverted Funnel -->
-<polygon points="60,50 140,50 115,115 85,115" stroke="white" stroke-width="2"></polygon>
-<line stroke-dasharray="2,2" x1="70" x2="130" y1="75" y2="75"></line>
-<!-- Drops of clear water -->
-<circle cx="100" cy="132" fill="white" r="2.5"></circle>
-<circle cx="100" cy="144" fill="white" r="2.5"></circle>
-<circle cx="100" cy="156" fill="white" r="2.5"></circle>
-<!-- Collection Basin -->
-<rect height="28" stroke="white" stroke-width="2" width="70" x="65" y="165"></rect>
-<line stroke-dasharray="1,2" stroke-white"="" x1="72" x2="128" y1="180" y2="180"></line>
-<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="178">1차 맑은 여과수</text>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-03 [DEBRIS-HUT-SHELTER]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 03</text>
+
+  <!-- 지면 기준선 -->
+  <line x1="40" y1="280" x2="360" y2="280" stroke="#404040" stroke-width="2"/>
+
+  <!-- 1m 외부 낙엽 돔 윤곽선 (Debris Mound) -->
+  <path d="M 50 280 Q 90 90 200 90 Q 310 90 350 280 Z" fill="#141414" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- 내부 골조 단면 (점선) -->
+  <path d="M 100 280 Q 130 180 200 180 Q 270 180 300 280" fill="#050505" stroke="#737373" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- 바닥 40cm 마른 낙엽 단열 매트리스 (Ground Insulation) -->
+  <rect x="105" y="245" width="190" height="35" fill="#262626" stroke="#E5E5E5" stroke-width="1.5"/>
+  <line x1="105" y1="262" x2="295" y2="262" stroke="#525252" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="200" y="267" fill="#E5E5E5" font-family="monospace" font-size="9" text-anchor="middle" font-weight="bold">40cm GROUND BED [LEAVES]</text>
+
+  <!-- 외벽 1m 두께 치수선 -->
+  <line x1="75" y1="180" x2="140" y2="210" stroke="#E5E5E5" stroke-width="1.5"/>
+  <path d="M 78 186 L 75 180 L 82 178 M 133 212 L 140 210 L 137 204" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
+  <text x="100" y="188" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="black">1.0m THICK</text>
+
+  <!-- 외벽 솔잎 비늘 빗물 유도 층 (Thatch / Pine Shingles) -->
+  <path d="M 120 120 L 110 135 M 140 105 L 130 120 M 260 105 L 270 120 M 280 120 L 290 135" stroke="#A3A3A3" stroke-width="1.5"/>
+  <text x="200" y="115" fill="#A3A3A3" font-family="monospace" font-size="9" text-anchor="middle">WATER-SHEDDING PINE THATCH</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 03: 1m DEBRIS MOUND &amp; 40cm BED</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">NEVER SLEEP ON BARE GROUND; PILE LEAVES ARM-DEEP TO SEAL BODY HEAT</text>
 </svg>
+
         <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 03</span>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center">
@@ -381,7 +445,7 @@
 
   <script>
     // 1. 다국어 데이터셋 인메모리 임베딩 (Single Source of Truth)
-    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-03","category":"SHELTER","title":"프로토콜 #03: 나뭇잎과 잔가지로 체온 지키는 은신처 짓기","threatLevel":"HIGH","threatLevelText":"[위험 등급: 고위험(HIGH)]","summary":"야간 야생 저체온증을 방어하기 위해 자연 잔가지와 마른 낙엽 1미터 단열층을 이용해 체온 손실을 0으로 차단하는 데브리 헛(Debris Hut)을 구축합니다.","timeRequired":"90분 (90 MINUTES)","successRate":"98.5% (낙엽 1m 적층 시)","difficulty":"1등급 (원시 생존 기술)","outputPerHour":"1인 생존 거처 1동","materials":[{"id":"mat-shl-01","name":"주 기둥 통나무 (RIDGE POLE)","desc":"길이 3m, 굵기 팔뚝 이상의 단단하고 마른 통나무. 자연 나무 그루터기에 거치."},{"id":"mat-shl-02","name":"빗살 갈비뼈 잔가지 (RIBS)","desc":"주 기둥 양옆으로 45도 각도로 기대어 세울 직경 3~5cm 마른 나뭇가지 수십 개."},{"id":"mat-shl-03","name":"마른 낙엽 & 마른 솔잎 (DEBRIS INSULATION)","desc":"바닥 깔개 및 외벽에 최소 1m 두께로 덮을 대량의 건조한 낙엽, 마른 풀, 물이끼."}],"steps":[{"stepNumber":"01","title":"주 기둥 지지 프레임 거치","description":"3m 길이의 단단한 주 기둥을 자연 바위나 밑동 갈라진 나무에 약 1m 높이로 비스듬히 걸쳐 올립니다. 흔들림이 없도록 발로 차서 하중을 테스트하십시오.","actionNote":"> 조치 사항: 은신처 내부 공간은 누웠을 때 몸에 딱 맞도록 최대한 좁게 설계해야 본인의 체온만으로 내부 공기를 덥힐 수 있습니다.","svgFileName":"step-01.svg"},{"stepNumber":"02","title":"갈비뼈 잔가지 촘촘한 배치","description":"주 기둥 양옆에 45도 각도로 튼튼한 나뭇가지들을 10cm 간격으로 촘촘히 기대어 세웁니다. 그 위에 가로 방향으로 가는 잔가지를 엮어 그물망 구조를 만듭니다.","actionNote":"> 과학적 원리: 잔가지 그물망은 상단에 쏟아부을 낙엽 더미가 내부 침실 공간으로 쏟아져 내리지 않도록 물리적 지지벽 역할을 합니다.","svgFileName":"step-02.svg"},{"stepNumber":"03","title":"바닥 깔개 및 외벽 1m 낙엽 덮기","description":"내부 바닥에 마른 낙엽과 마른 풀을 최소 40cm 두께로 채워 침대를 만듭니다. 외벽 전체에는 팔을 찔러 넣었을 때 어깨까지 들어갈 정도로 낙엽을 1m 이상 덮으십시오.","actionNote":"> 주의: 비가 올 것에 대비해 가장 바깥층에는 솔잎이나 넓은 나뭇가지를 비늘 모양으로 덮어 빗물이 자연스럽게 바깥으로 흘러내리도록 유도합니다.","svgFileName":"step-03.svg"}],"fatalMistake":{"title":"치명적 착각: 바닥 단열재 없이 맨땅에 누우면 외벽이 아무리 두꺼워도 동사합니다.","description":"공기보다 차가운 흙바닥이 전도열을 통해 체온을 4배 이상 빠르게 빼앗아 갑니다. 외벽보다 중요한 것은 바닥에 까는 40cm 이상의 건조한 낙엽/마른 풀 층입니다. 바닥 단열을 결코 생략하지 마십시오.","consequence":"바닥 단열 누락 시 결과: 지열 전도로 인한 심부 저체온증 발생 및 4시간 내 의식 상실"}}};
+    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-03","category":"SHELTER","title":"프로토콜 #03: 나뭇잎과 잔가지로 체온 지키는 은신처 짓기","threatLevel":"HIGH","threatLevelText":"[위험 등급: 고위험(HIGH)]","summary":"야간 야생 저체온증을 방어하기 위해 자연 잔가지와 마른 낙엽 1미터 단열층을 이용해 체온 손실을 0으로 차단하는 데브리 헛(Debris Hut)을 구축합니다.","timeRequired":"90분 (90 MINUTES)","successRate":"98.5% (낙엽 1m 적층 시)","difficulty":"1등급 (원시 생존 기술)","outputPerHour":"1인 생존 거처 1동","materials":[{"id":"mat-shl-01","name":"주 기둥 통나무 (RIDGE POLE)","desc":"길이 3m, 굵기 팔뚝 이상의 단단하고 마른 통나무. 자연 나무 그루터기에 거치."},{"id":"mat-shl-02","name":"빗살 갈비뼈 잔가지 (RIBS)","desc":"주 기둥 양옆으로 45도 각도로 기대어 세울 직경 3~5cm 마른 나뭇가지 수십 개."},{"id":"mat-shl-03","name":"마른 낙엽 & 마른 솔잎 (DEBRIS INSULATION)","desc":"바닥 깔개 및 외벽에 최소 1m 두께로 덮을 대량의 건조한 낙엽, 마른 풀, 물이끼."}],"steps":[{"stepNumber":"01","title":"주 기둥 지지 프레임 거치","description":"3m 길이의 단단한 주 기둥을 자연 바위나 밑동 갈라진 나무에 약 1m 높이로 비스듬히 걸쳐 올립니다. 흔들림이 없도록 발로 차서 하중을 테스트하십시오.","actionNote":"> 조치 사항: 은신처 내부 공간은 누웠을 때 몸에 딱 맞도록 최대한 좁게 설계해야 본인의 체온만으로 내부 공기를 덥힐 수 있습니다.","svgFileName":"03-step-01.svg"},{"stepNumber":"02","title":"갈비뼈 잔가지 촘촘한 배치","description":"주 기둥 양옆에 45도 각도로 튼튼한 나뭇가지들을 10cm 간격으로 촘촘히 기대어 세웁니다. 그 위에 가로 방향으로 가는 잔가지를 엮어 그물망 구조를 만듭니다.","actionNote":"> 과학적 원리: 잔가지 그물망은 상단에 쏟아부을 낙엽 더미가 내부 침실 공간으로 쏟아져 내리지 않도록 물리적 지지벽 역할을 합니다.","svgFileName":"03-step-02.svg"},{"stepNumber":"03","title":"바닥 깔개 및 외벽 1m 낙엽 덮기","description":"내부 바닥에 마른 낙엽과 마른 풀을 최소 40cm 두께로 채워 침대를 만듭니다. 외벽 전체에는 팔을 찔러 넣었을 때 어깨까지 들어갈 정도로 낙엽을 1m 이상 덮으십시오.","actionNote":"> 주의: 비가 올 것에 대비해 가장 바깥층에는 솔잎이나 넓은 나뭇가지를 비늘 모양으로 덮어 빗물이 자연스럽게 바깥으로 흘러내리도록 유도합니다.","svgFileName":"03-step-03.svg"}],"fatalMistake":{"title":"치명적 착각: 바닥 단열재 없이 맨땅에 누우면 외벽이 아무리 두꺼워도 동사합니다.","description":"공기보다 차가운 흙바닥이 전도열을 통해 체온을 4배 이상 빠르게 빼앗아 갑니다. 외벽보다 중요한 것은 바닥에 까는 40cm 이상의 건조한 낙엽/마른 풀 층입니다. 바닥 단열을 결코 생략하지 마십시오.","consequence":"바닥 단열 누락 시 결과: 지열 전도로 인한 심부 저체온증 발생 및 4시간 내 의식 상실"}},"en":{"protocolId":"PR-03","category":"SHELTER","title":"Protocol #03: Thermal Debris Hut Construction (Body Heat Retention)","threatLevel":"HIGH","threatLevelText":"[THREAT LEVEL: HIGH]","summary":"To survive hypothermia in sub-zero wilderness, build a personal Debris Hut with natural branch framing and a 1-meter thick leaf insulation layer to reduce body heat dissipation to zero.","timeRequired":"90 MINUTES","successRate":"98.5% (With 1m Leaf Layer)","difficulty":"Tier 1 (Primitive Bushcraft)","outputPerHour":"1 Survival Shelter Unit","materials":[{"id":"mat-shl-01","name":"Hardwood Ridge Pole (RIDGE POLE)","desc":"3m length, forearm-thick dry hardwood trunk anchored to a natural fork or stump."},{"id":"mat-shl-02","name":"Slanted Branch Ribs (RIBS)","desc":"Dozens of 3~5cm diameter dry branches leaned at 45° along both sides of ridge pole."},{"id":"mat-shl-03","name":"Dry Leaves & Pine Needles (DEBRIS INSULATION)","desc":"Massive pile of bone-dry leaves, moss, and needles to cover bedding and shell to a 1m depth."}],"steps":[{"stepNumber":"01","title":"Ridge Pole Framework & Anchor Mount","description":"Rest the 3m ridge pole onto a natural fork or rock at approximately 1m height. Kick the base to verify structural load capacity before proceeding.","actionNote":"> Action: Keep the internal space snug to your body size. Excess air volume cannot be heated by body warmth alone.","svgFileName":"03-step-01.svg"},{"stepNumber":"02","title":"Dense 45° Rib Skeleton & Lattice Weave","description":"Lean sturdy ribs at 45-degree angles spaced 10cm apart along the ridge pole. Weave thinner branches horizontally to form a protective lattice wall.","actionNote":"> Science: The branch lattice creates a structural retention barrier preventing thousands of leaves from collapsing inward into your sleeping cavity.","svgFileName":"03-step-02.svg"},{"stepNumber":"03","title":"40cm Mattress & 1-Meter Debris Blanket","description":"Fill the floor with dry leaves at least 40cm thick for ground insulation. Pile leaves over the external ribs until your arm sinks in shoulder-deep (>1m).","actionNote":"> Caution: Top the outermost layer with shingled evergreen boughs to shed rainwater away from the shelter core.","svgFileName":"03-step-03.svg"}],"fatalMistake":{"title":"Fatal Mistake: Sleeping on bare ground without a 40cm bottom insulation layer.","description":"Cold earth siphons body heat via conductive cooling 4x faster than air. No matter how thick your roof is, ground contact causes fatal hypothermia within hours. Never omit the thick dry bedding.","consequence":"Outcome: Severe conductive core hypothermia and loss of consciousness within 4 hours."}},"ja":{"protocolId":"PR-03","category":"SHELTER","title":"プロトコル #03: 落ち葉と枝による体温保持シェルター構築 (デブリハット工法)","threatLevel":"HIGH","threatLevelText":"[危険等級: 高危険(HIGH)]","summary":"野外の氷点下環境における低体温症を防ぐため、自然の枝骨組みと厚さ1mの乾燥落ち葉断熱層を利用し、体温喪失を完全に遮断するデブリハット(Debris Hut)を構築します。","timeRequired":"90分 (90 MINUTES)","successRate":"98.5% (落ち葉1m積層時)","difficulty":"第1等級 (原始生存技術)","outputPerHour":"1人用生存シェルター 1棟","materials":[{"id":"mat-shl-01","name":"主柱丸太 (RIDGE POLE)","desc":"長さ3m、前腕以上の太さの頑丈な乾燥丸太。自然の切り株や岩の窪みに固定。"},{"id":"mat-shl-02","name":"傾斜肋骨枝 (RIBS)","desc":"主柱の両側に45度の角度で立てかける直径3〜5cmの乾燥枝数十本。"},{"id":"mat-shl-03","name":"乾燥落ち葉 & 松葉 (DEBRIS INSULATION)","desc":"床の敷物および外壁に最低1mの厚さで被せる大量の乾燥した落ち葉、枯れ草、コケ。"}],"steps":[{"stepNumber":"01","title":"主柱フレームの固定と荷重検査","description":"3mの頑丈な主柱を切り株や岩の割れ目に約1mの高さで斜めに掛けます。揺れがないよう足で蹴って耐荷重を検証してください。","actionNote":"> 措置事項: シェルター内部空間は横たわった時に身体にぴったり密着するよう狭く設計し、自身の体温のみで内部空気を暖められるようにします。","svgFileName":"03-step-01.svg"},{"stepNumber":"02","title":"45度肋骨枝の高密度配置と格子編み","description":"主柱の両脇に45度の角度で頑丈な枝を10cm間隔で密集して立てかけます。その上に横方向の細枝を編み込み、格子網構造を作ります。","actionNote":"> 科学原理: 枝の格子構造は、上部に積み上げる大量の落ち葉が内部の寝室空間へ崩れ落ちるのを防ぐ支持壁の役割を果たします。","svgFileName":"03-step-02.svg"},{"stepNumber":"03","title":"床面40cm断熱敷物および外壁1mの落ち葉積層","description":"内部床面に乾燥落ち葉と枯れ草を最低40cmの厚さで敷き詰めます。外壁全体には腕を差し込んだ際に肩まで届く深さ(1m以上)まで落ち葉を積み上げます。","actionNote":"> 注意: 降雨に備え、最外層には松葉や常緑樹の小枝を瓦状に重ねて雨水を外側へ自然に受け流すようにします。","svgFileName":"03-step-03.svg"}],"fatalMistake":{"title":"致命的誤謬: 床の断熱敷物を省略して地面に直接横たわること。","description":"冷たい土壌は空気の4倍以上の速度で伝導熱により体温を奪い去ります。外壁をどれほど厚くしても、地面に直接触れれば数時間で凍死します。床の40cm乾燥敷物は絶対に省略してはなりません。","consequence":"床断熱省略時の結果: 地熱伝導による重度低体温症の発生および4時間以内の意識喪失"}}};
 
     // 2. State Layer 직렬화 런타임 스크립트 실행
     window.__THEME_CONFIG__ = {"dark":{"label":"야간 전술 모드 [다크]","icon":"◐","bodyBg":"bg-black","bodyText":"text-white"},"light":{"label":"재생지 모드 [라이트]","icon":"☼","bodyBg":"bg-[#f4f3ee]","bodyText":"text-black"}};

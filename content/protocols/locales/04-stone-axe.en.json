@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-04",
+  "category": "TOOLS",
+  "title": "Protocol #04: Primitive Stone Axe Fabrication (Flaked Stone & Kudzu)",
+  "threatLevel": "MODERATE",
+  "threatLevelText": "[THREAT LEVEL: MODERATE]",
+  "summary": "Essential percussion tool for timber felling, perimeter defense, and marrow bone crushing. Flake hard river quartzite into a bifacial cutting bit, seated into a split Y-haft and lashed with boiled kudzu cordage and hot pine pitch cement.",
+  "timeRequired": "45 MINUTES",
+  "successRate": "96.0% (Cured Resin)",
+  "difficulty": "Tier 2 (Primitive Bushcraft)",
+  "outputPerHour": "1 Stone Celt Axe",
+  "materials": [
+    {
+      "id": "mat-axe-01",
+      "name": "Dense River Quartzite (RIVER QUARTZITE)",
+      "desc": "Palm-sized, fine-grained quartzite or basalt cobble. Percussion-flaked with a rounded hammerstone."
+    },
+    {
+      "id": "mat-axe-02",
+      "name": "Forked Oak Handle (HARDWOOD HANDLE)",
+      "desc": "3.5cm diameter, 50cm long green oak limb featuring a natural Y-shaped fork."
+    },
+    {
+      "id": "mat-axe-03",
+      "name": "Boiled Kudzu Cordage & Pine Pitch (FIBER & PINE RESIN)",
+      "desc": "Lye-boiled tough twisted kudzu fibers and hot waterproofing pitch compound mixed with crushed charcoal."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Percussion Flaking for Bifacial Bevel Edge",
+      "description": "Rest the core stone on an anvil stone. Strike the perimeter with a hammerstone at a 70-degree angle to detach sharp flakes, shaping a symmetric cutting bit.",
+      "actionNote": "> Action: Shield your eyes from flint shards. Grind the finished edge wet against sandstone to hone a durable razor bevel.",
+      "svgFileName": "04-step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Y-Fork Mortise Shaping & Blade Seating",
+      "description": "Insert the stone bit into the split oak handle fork. Slightly char the interior wood to burn away high spots and achieve a snug negative cavity fit.",
+      "actionNote": "> Science: A mortised stone-to-wood joint prevents rotational moment during high-velocity impacts, transferring shock directly along the grain.",
+      "svgFileName": "04-step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Figure-8 Lashings & Charcoal Pitch Seal",
+      "description": "Lash the stone and handle in tight figure-8 turns using wet kudzu cordage. Generously coat the binding with heated pine resin and charcoal dust cement.",
+      "actionNote": "> Caution: Wet plant fiber shrinks significantly upon drying, clamping the stone like an iron vise. Allow 30 minutes for pitch to fully cure before swinging.",
+      "svgFileName": "04-step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Using dry twine without wet shrinkage tension or skipping resin cement.",
+    "description": "Impact force during chopping exceeds hundreds of kilograms. Without the immense clamping tension of dried shrinking fibers and pitch cement, the stone bit will detach mid-swing and strike your lower leg.",
+    "consequence": "Outcome: Compound tibial fracture and fatal wilderness hemorrhage."
+  }
+}
