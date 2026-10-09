@@ -3,4 +3,7 @@ export * from './stitch.service.ts';
 export * from './shorts.service.ts';
 export * from './topic-curator.service.ts';
 export * from './pwa.service.ts';
-
+export * from './svg-generator.service.ts';
+export * from './deploy.service.ts';
+export * from './protocol-generator.service.ts';
+export * from './telegram-bot.service.ts';

@@ -7,6 +7,7 @@
     "dev": "node --experimental-strip-types src/pipeline.ts",
     "generate": "node --experimental-strip-types src/pipeline.ts",
     "build": "node --experimental-strip-types src/pipeline.ts",
+    "bot": "node --experimental-strip-types src/bot.ts",
     "typecheck": "tsc --noEmit",
     "test": "node --test --experimental-strip-types tests/**/*.test.ts"
   },

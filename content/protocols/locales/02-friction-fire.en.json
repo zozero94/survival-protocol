@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-02",
+  "category": "FIRE",
+  "title": "Protocol #02: Friction Fire Ignition (Primitive Bow Drill Method)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[THREAT LEVEL: CRITICAL]",
+  "summary": "Hypothermia in the wilderness can be fatal within 3 hours. Utilize high-speed rotational friction from a primitive bow drill combining dried oak heartwood and wild kudzu cordage to harvest live embers.",
+  "timeRequired": "20 MINUTES",
+  "successRate": "94.2% (Dry Timber)",
+  "difficulty": "Tier 1 (Primitive Bushcraft)",
+  "outputPerHour": "3 Embers / Hour",
+  "materials": [
+    {
+      "id": "mat-fire-01",
+      "name": "Dry Oak Fire Board (HEARTH BOARD)",
+      "desc": "Bone-dry 2cm thick softwood or hardwood plank. Carve 45° V-notch to collect high-temperature carbon dust."
+    },
+    {
+      "id": "mat-fire-02",
+      "name": "Straight Willow Spindle (SPINDLE)",
+      "desc": "2cm diameter, 20cm length straight and dense dry branch. Whittle both tips into conic pivots."
+    },
+    {
+      "id": "mat-fire-03",
+      "name": "Curved Ash Bow & Kudzu Cordage (BOW & STRING)",
+      "desc": "Resilient 60cm curved branch strung with twisted and dried wild kudzu fiber cord."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Hearth V-Notch Carving & Spindle Mounting",
+      "description": "Carve a 45-degree V-notch into the hearth board rim. Wrap spindle once in bow string, hold vertically, and apply downward force using handhold socket.",
+      "actionNote": "> Action: Place a dry leaf or bark tray under the notch to prevent hot carbon dust from absorbing soil moisture.",
+      "svgFileName": "02-step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Reciprocal Sawing & Max Friction Heating",
+      "description": "Stroke the bow horizontally with long, rhythmic motions. Gradually accelerate speed under maximum torque until dense black smoke pours out.",
+      "actionNote": "> Science: High-speed rotational friction exceeds 400°C contact temp, igniting carbonized wood powder into a coherent glowing ember.",
+      "svgFileName": "02-step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Tinder Nest Transfer & Gentle Oxygen Ignition",
+      "description": "Gently transfer the glowing ember mass into a dry grass/leaf tinder nest. Blow long, steady exhalations until it bursts into open flame.",
+      "actionNote": "> Caution: Blowing violently will scatter and cool the fragile ember. Expand warmth gradually with deep, rhythmic breaths.",
+      "svgFileName": "02-step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Halting bow motion prematurely upon initial smoke sighting.",
+    "description": "Smoke indicates heating, not a consolidated ember. Stopping before a dense glowing coal forms will cause immediate heat dissipation. Continue drilling at maximum output for 10 seconds after thick smoke emerges until a glowing coal is visible.",
+    "consequence": "Outcome: Physical exhaustion, palm blistering, and night hypothermia."
+  }
+}

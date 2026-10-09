@@ -10,6 +10,7 @@ export async function callGeminiApi(
     systemInstruction?: string;
     temperature?: number;
     responseMimeType?: string;
+    timeoutMs?: number;
   } = {}
 ): Promise<string> {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
@@ -37,7 +38,7 @@ export async function callGeminiApi(
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
-    signal: AbortSignal.timeout(10000),
+    signal: AbortSignal.timeout(options.timeoutMs ?? 30000),
   });
 
   if (!response.ok) {

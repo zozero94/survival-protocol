@@ -1,46 +1,34 @@
-# 📌 다음 생존 프로토콜 기획서: PR-03 - 프로토콜 #03: 소나무 송진으로 상처 치료하는 방법 (천연 지혈 연고)
+# 📌 다음 생존 프로토콜 기획서: PR-08 - 프로토콜 #08: 나뭇가지 세 개로 짐승 잡는 방법 (4자 트리거 낙석 덫)
 
-- **도메인**: 야전 의약 & 생체 위생 > 천연 살리실산 추출 및 송진 항균 연고 (Tier 1)
-- **위급도**: HIGH
-- **결핍 상황**: 열상 및 자상 환부의 급성 세균 감염과 패혈증, 야전 지혈 멸균 처치제 부재
-- **과학 원리**: 송진의 강력한 테르펜계 항균 및 수분 차단 피막 형성 능력과 활성 숯의 독소 흡착력을 결합하여 혐기성 균 침투 차단
+- **도메인**: 수렵 & 단백질 획득 공학 > 중력 낙하식 기계 트랩 (Tier 1)
+- **위급도**: CRITICAL
+- **결핍 상황**: 야생 구황식물만으로는 장기 생존에 필요한 필수 아미노산과 동물성 지방을 보충할 수 없으며, 활과 창을 이용한 직접 사냥은 막대한 칼로리를 소모하고 실패율이 극도로 높다. 최소한의 에너지 투입으로 소형 포유류를 확실하게 포획·즉사시키는 자율 기계식 덫이 절실하다.
+- **과학 원리**: 지렛대 원리와 정지 마찰력의 극한 균형을 이용한다. 세 개의 나무 막대가 숫자 '4' 형태로 서로 맞물려 거대한 판석의 중력을 지탱하다가, 미끼봉에 가해지는 극미한 횡방향 외력(수직 하중 해제)에 의해 3축 결합이 0.05초 만에 연쇄 붕괴하여 질량이 자유 낙하한다.
 - **투입 자연물**:
-  - 흘러내린 소나무 생송진 (Pine Resin)
-  - 모닥불 멸균 미세 숯가루 (Powdered Charcoal)
-  - 깨끗한 조개껍데기 또는 평평한 가열 점토판
-  - 삶아서 건조한 면포 또는 박피한 자작나무 속껍질
+  - 무거운 판석(넓적한 돌)
+  - 단단한 활엽수 잔가지 3개
+  - 미끼(도토리 또는 곤충)
 
 ## 📋 3단계 도면 및 실행 지침
-### [Step 01] 생송진 채취 및 약한 불가 열탕 용융 정제
-- **실행**: 소나무 수피의 송진 덩어리를 채취하여 조개껍데기에 담고, 모닥불 주변의 잔열로 서서히 녹여 나무껍질 부유물을 걸러냅니다.
-- **도면 초점**: 조개껍데기 안에서 맑게 녹아내리는 송진과 나뭇가지 거름망
+### [Step 01] 3개 핵심 부재 가공 (수직 기둥, 대각선 지지대, 수평 미끼봉)
+- **실행**: 손가락 굵기의 단단한 생나무 가지 3개를 준비한다. 1번 수직 기둥(길이 20cm) 상단 끝을 한쪽만 비스듬히 깎는다. 2번 대각 지지대(길이 25cm) 상단에는 판석을 받칠 홈을 파고, 하단에는 1번 기둥 상단과 맞물릴 걸림턱을 깎는다. 3번 수평 미끼봉(길이 30cm) 한쪽 끝에 먹이를 꿰고, 몸통에는 1번 기둥과 2번 지지대 하단이 동시에 걸리는 V자 노치를 정밀하게 파낸다.
+- **도면 초점**: 세 개 나뭇가지의 정밀 결합 홈(노치) 단면도 및 치수 비례 도면
 
-### [Step 02] 멸균 숯가루 1:1 혼합 및 흑색 연고 페이스트 반죽
-- **실행**: 녹은 송진에 미세하게 빻은 숯가루를 1:1 비율로 조금씩 투입하며 나무 주걱으로 빠르게 저어 점성 있는 흑색 연고로 만듭니다.
-- **도면 초점**: 송진 용액에 미세 숯가루를 섞어 흑색 페이스트를 반죽하는 단면도
+### [Step 02] 4자 형태 가결합 및 중력 균형 장전
+- **실행**: 평평하고 단단한 지면에 1번 수직 기둥을 수직으로 세운다. 2번 대각 지지대의 상단 홈에 10~15kg 이상의 평평한 판석 한쪽 모서리를 걸치고 비스듬히 내린다. 3번 수평 미끼봉의 노치를 1번 수직 기둥과 2번 대각 지지대 하단 틈새에 끼워 넣어, 판석의 무게가 3개 부재의 정지 마찰력으로 완벽히 지탱되도록 숫자 '4' 형상으로 잠근다.
+- **도면 초점**: 숫자 4 형태로 맞물려 거대한 판석을 비스듬히 떠받치고 있는 기계적 밸런스 정면도
 
-### [Step 03] 출혈 환부 직접 도포 및 껍질 붕대 완전 밀폐 드레싱
-- **실행**: 피가 멎지 않는 상처 부위에 식힌 연고를 두껍게 바르고, 얇게 저민 자작나무 속껍질로 환부를 덮어 외부 오염물질을 완벽히 차단합니다.
-- **도면 초점**: 상처 부위에 도포된 흑색 연고와 자작나무 껍질 붕대 밀착 체결도
+### [Step 03] 트랩 안정화 및 유도 차단벽 구축
+- **실행**: 미끼봉의 끝이 판석의 정중앙 아래에 위치하도록 조정한 뒤, 돌과 나뭇가지를 이용해 판석의 좌우와 후방을 빽빽하게 막아 진입로를 전면 1개로 제한한다. 설치 완료 후 사용자는 판석 낙하 반경 밖으로 즉시 물러나 진동과 체취를 최소화한다.
+- **도면 초점**: 판석 뒤쪽과 옆면을 나뭇가지로 막아 동물 접근 방향을 미끼봉 전면으로 한정한 입체 조감도
 
 
 ## ⚠️ 치명적 실수 (Fatal Mistake)
-- **흔한 착각**: 불순물과 흙이 묻은 생송진을 가열 정제 없이 상처에 그대로 바른다.
-- **파국적 결과**: 송진 속 이물질과 혐기성 세균이 피부 피하층에 갇혀 급성 봉와직염과 패혈증을 유발
-- **절대 수칙**: 반드시 열로 완전히 녹여 이물질을 걸러내고, 멸균 숯가루와 균일하게 혼합한 뒤 식혀 도포할 것
+- **흔한 착각**: 장전 중 판석 아래로 손을 집어넣거나 노치를 너무 깊게 파서 쉽게 풀리지 않게 만드는 것.
+- **파국적 결과**: 작업 중 손가락 골절 및 압착 절단을 당하거나, 소형 동물이 미끼만 갉아먹고 도주하여 칼로리만 낭비됨.
+- **절대 수칙**: 장전 작업은 반드시 판석 뒤쪽에서 수행하며, 미끼봉 끝을 깃털로 톡 쳐도 0.1초 만에 낙석이 떨어질 정도의 초민감 접촉점을 유지할 것.
 
 ## 🎨 스티치(Stitch) 생성용 마스터 프롬프트
 ```text
-[DESIGN PHILOSOPHY: Strict Minimalist Brutalism, Pure Black & White #000000 and #FFFFFF, 1px crisp borders, sharp corners, monospace stamps]
-Create an ultra-readable responsive survival manual screen for 'PROTOCOL #03: Pine Resin Antiseptic Black Salve'.
-Sections:
-1. Header with [ARCHIVE-0] and Dark/Light toggle.
-2. Hero hook with [THREAT: HIGH].
-3. Checklist for natural items: Pine resin, Powdered charcoal, Clam shell melting dish, Birch bark wrap.
-4. 3-step vertical action cards with 1:1 technical line-art sketch containers:
-   - Step 01: Slow melting and straining raw resin over shell
-   - Step 02: 1:1 blending of resin and sterile charcoal powder
-   - Step 03: Direct application on wound with birch bark hermetic seal
-5. Bold inverted Fatal Mistake warning card ('FATAL: Applying raw dirty resin traps pathogens causing sepsis').
-6. Sticky bottom bar for Save and Share.
+A gritty hyper-realistic survival manual blueprint of primitive Figure-4 Deadfall Trap, showing 3 wooden sticks carved with notches interlocking under a heavy 15kg flat rock, step-by-step cross-section diagrams, charcoal and ochre on bark texture, technical exploded view of the trigger mechanism.
 ```
