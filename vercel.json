@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/protocol/:id", "destination": "/protocol.html?id=:id" }
+  ]
+}

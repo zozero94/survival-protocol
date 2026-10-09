@@ -1,0 +1,57 @@
+{
+  "protocolId": "PR-01",
+  "category": "WATER",
+  "title": "PROTOCOL #01: How to Drink Dirty Water (Wild Charcoal Filter)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[THREAT LEVEL: CRITICAL]",
+  "summary": "Drinking untreated wild water can lead to fatal bacterial dysentery and giardiasis, resulting in death from dehydration within 72 hours. Water must undergo mechanical active charcoal filtration followed by compulsory thermal boiling.",
+  "timeRequired": "15 MINUTES",
+  "successRate": "99.8% (Post-Boiling)",
+  "difficulty": "Tier 1 (Primitive Bushcraft)",
+  "outputPerHour": "1.5 Liters / Hour",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Crushed Hardwood Charcoal",
+      "desc": "Remnants from campfire. Crush to pea-sized bits to chemically adsorb toxins and heavy metals."
+    },
+    {
+      "id": "mat-02",
+      "name": "Clean River Sand & Fine Gravel",
+      "desc": "Rinsed coarse sand and small pebbles to physically trap micro-sediments and debris."
+    },
+    {
+      "id": "mat-03",
+      "name": "Cut Plastic Bottle or Hollow Bamboo Tube",
+      "desc": "Cut bottom off a 2L bottle and invert, or use hollow 3-inch diameter bamboo stalk."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Vessel Preparation & Filter Base Assembly",
+      "description": "Using a sharp survival knife, cut 3 inches (7-8cm) off the bottom of a plastic bottle to form a wide funnel. Invert with spout facing down.",
+      "actionNote": "> Action: Pierce 3 small pinholes in the cap, or tightly pack cotton cloth/sphagnum moss to prevent filtration medium loss.",
+      "svgFileName": "step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Layering the Filter Media (Inverted Pyramid Hierarchy)",
+      "description": "Strictly stack layers in reverse order: Spout cloth plug -> 2.5 inches (6cm) crushed charcoal -> 2 inches (5cm) fine sand -> 1.2 inches (3cm) coarse gravel.",
+      "actionNote": "> Science: Gravel blocks floating leaves, sand captures particulates, and porous activated charcoal adsorbs organic toxins and odors.",
+      "svgFileName": "step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Pouring Turbid Water & Clear Water Collection",
+      "description": "Slowly pour murky water onto the top gravel bed. Gravity will draw water through the column at roughly one steady drop per second into a clean container.",
+      "actionNote": "> Warning: Discard the initial 250ml containing loose charcoal dust. Continue running water until output runs crystal clear.",
+      "svgFileName": "step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL MISTAKE: Never drink filtered water directly without boiling.",
+    "description": "Mechanical charcoal filtration only removes sediments, heavy metals, and odors. Viruses, Giardia cysts, and Cryptosporidium easily pass through. Filtered water MUST be boiled at a rolling boil for at least 1 minute (3 minutes above 6,500 ft elevation) to ensure total survival safety.",
+    "consequence": "Consequence of skipping boil: Acute Cryptosporidiosis infection and lethal dehydration within 96 hours."
+  }
+}

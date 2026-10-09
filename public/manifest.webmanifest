@@ -1,0 +1,19 @@
+{
+  "name": "인류 멸망 후 원시 생존 교범",
+  "short_name": "생존 교범",
+  "description": "현대 도구 없이 자연물과 두 손만으로 살아남는 원시 생존 기술 기록서",
+  "lang": "ko",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

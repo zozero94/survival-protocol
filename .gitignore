@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+node_modules/
+
+
+# Environment & Secrets (CRITICAL)
+.env
+.env.*
+!.env.example
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build & Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log

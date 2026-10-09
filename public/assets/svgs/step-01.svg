@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-linecap="square" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Bottle outline -->
+<rect height="110" stroke-dasharray="2,2" width="90" x="55" y="45"></rect>
+<!-- Cut line indicator -->
+<line stroke="white" stroke-width="2" x1="40" x2="160" y1="50" y2="50"></line>
+<!-- Cut scissor / marker -->
+<text fill="white" font-family="monospace" font-size="9" font-weight="bold" x="50" y="42">절단선 [바닥면 3인치]</text>
+<!-- Bottle inverted body -->
+<path d="M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z" stroke-width="2"></path>
+<!-- Cap pierced holes -->
+<line stroke-width="3" x1="90" x2="110" y1="195" y2="195"></line>
+<line stroke-dasharray="2,2" x1="95" x2="95" y1="198" y2="204"></line>
+<line stroke-dasharray="2,2" x1="100" x2="100" y1="198" y2="204"></line>
+<line stroke-dasharray="2,2" x1="105" x2="105" y1="198" y2="204"></line>
+<!-- Arrow inverted -->
+<path d="M100,15 L100,35 M95,30 L100,35 L105,30" stroke-width="1.5"></path>
+<text fill="white" font-family="monospace" font-size="9" text-anchor="middle" x="100" y="10">역방향 반전 배치</text>
+</svg>

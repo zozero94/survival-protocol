@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html class="dark" lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+  <title>인류 멸망 후 원시 생존 교범 // [생존 교범 // SURVIVAL PROTOCOL]</title>
+  <meta name="description" content="현대 도구 없이 자연물과 두 손만으로 살아남는 원시 생존 기술 기록서">
+  <meta name="theme-color" content="#050505">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+
+  <style>
+    #offline-banner { display: none; }
+    html[data-network="offline"] #offline-banner { display: block !important; }
+    ::-webkit-scrollbar { display: none; }
+    * { border-radius: 0px !important; -webkit-tap-highlight-color: transparent; }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            surface: '#131313',
+            'surface-low': '#1c1b1b',
+            'surface-high': '#2a2a2a',
+          },
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            headline: ['"Space Grotesk"', 'sans-serif'],
+            body: ['Chivo', '"Noto Sans KR"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#131313] text-[#e5e2e1] font-body min-h-screen selection:bg-white selection:text-black flex flex-col justify-between">
+  <!-- 비상 오프라인 모드 감지 배너 -->
+  <div id="offline-banner" class="bg-red-950/90 border-b border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
+    ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
+  </div>
+
+  <!-- 상단 긴급 고정 헤더 레일 -->
+<header class="border-b border-neutral-800 bg-black/90 backdrop-blur-md sticky top-0 z-40 px-4 sm:px-8 py-3">
+  <div class="max-w-5xl mx-auto flex items-center justify-between">
+    <div class="flex flex-col gap-0.5">
+      <div class="flex items-center gap-2">
+        <span class="font-mono text-xs sm:text-sm font-black tracking-widest text-white uppercase">[생존 교범 // SURVIVAL PROTOCOL]</span>
+      </div>
+      <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>로컬 캐시 활성화됨 (인터넷 두절 시 오프라인 열람 가능)</span>
+      </div>
+    </div>
+    <div class="font-mono text-[11px] text-neutral-400 border border-neutral-800 px-2 py-0.5 hidden sm:block">
+      CATALOG: <span class="text-white font-bold">7</span> PROTOCOLS
+    </div>
+  </div>
+</header>
+
+<!-- 메인 선언문 배너 -->
+<section class="max-w-5xl mx-auto w-full px-4 sm:px-8 pt-8 pb-4">
+  <div class="border-b-2 border-white/20 pb-6">
+    <div class="font-mono text-[11px] text-neutral-500 uppercase tracking-widest mb-2">
+      MISSION STATEMENT // CIVILIZATION REBOOT
+    </div>
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-black font-mono tracking-tight text-white uppercase leading-snug">
+      모든 전기가 끊겼을 때,<br class="hidden sm:inline"> 오직 두 손과 이 기록만으로 살아남는다.
+    </h1>
+    <p class="text-neutral-400 text-xs sm:text-sm mt-3 max-w-2xl leading-relaxed">
+      현대 문명이 붕괴된 후, 자연물과 두 손만으로 생명을 유지하기 위한 실전 원시 생존 기술 기록서.
+      한 번 열람한 교범은 브라우저 로컬 저장소에 영구 보존되어 비행기 모드나 통신망 두절 상황에서도 100% 작동합니다.
+    </p>
+  </div>
+</section>
+
+<!-- 7대 퀵 카테고리 필터 칩 레일 (가로 스크롤 완비) -->
+<section class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-3">
+  <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="category-filter">
+    
+    <button type="button"
+      data-action="filter-category"
+      data-category="ALL"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-white text-black font-bold">
+      [전체]
+    </button>
+  
+    <button type="button"
+      data-action="filter-category"
+      data-category="WATER"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800">
+      [식수 확보]
+    </button>
+  
+    <button type="button"
+      data-action="filter-category"
+      data-category="FIRE"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800">
+      [불 피우기]
+    </button>
+  
+    <button type="button"
+      data-action="filter-category"
+      data-category="SHELTER"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800">
+      [은신처]
+    </button>
+  
+    <button type="button"
+      data-action="filter-category"
+      data-category="FOOD"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800">
+      [식량 채집]
+    </button>
+  
+    <button type="button"
+      data-action="filter-category"
+      data-category="TOOLS"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800">
+      [원시 도구]
+    </button>
+  
+    <button type="button"
+      data-action="filter-category"
+      data-category="MEDICINE"
+      class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800">
+      [야전 의약]
+    </button>
+  
+  </div>
+</section>
+
+  <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-2 flex-1 pb-16">
+    <!-- 피드 카드 컨테이너 (한 페이지당 5개 노출) -->
+    <div id="protocol-feed-container" class="flex flex-col gap-3">
+      <article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-01" data-category="WATER">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[식수 확보]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-01</span>
+    </div>
+    <span class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6H34M16 6L18 20L21 34L24 38L27 34L30 20L32 6" stroke-width="1.8"></path><path d="M17.5 11H30.5M19 15H29M20 19H28" stroke-width="1.2" stroke-dasharray="1 2" opacity="0.7"></path><circle cx="21" cy="13" r="1" fill="currentColor"></circle><circle cx="24" cy="14" r="1.2" fill="currentColor"></circle><circle cx="27" cy="12.5" r="0.9" fill="currentColor"></circle><circle cx="23" cy="17" r="1" fill="currentColor"></circle><line x1="18.2" y1="20" x2="29.8" y2="20" stroke-width="1.5"></line><path d="M19.5 24H28.5M20 27H28M20.8 30H27.2" stroke-width="1" opacity="0.8"></path><line x1="21" y1="34" x2="27" y2="34" stroke-width="1.5"></line><circle cx="24" cy="42" r="1.5" fill="currentColor"></circle><path d="M24 40V38" stroke-width="1.5"></path></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-01.html" class="block focus:outline-none">
+          프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        오염된 야생수를 그대로 음용할 경우 세균성 이질 및 편모충증으로 인해 72시간 이내에 사망할 수 있습니다. 기계적 숯 활성 여과 공정으로 부유물을 정화한 후, 반드시 끓이는 열적 살균 단계를 거쳐야 합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[분쇄된]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[깨끗한]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[절단된]</span>
+    </div>
+    <a href="/protocol-01.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-02" data-category="FIRE">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[불 피우기]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-02</span>
+    </div>
+    <span class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12C14 8 28 8 38 18" stroke-width="2.2"></path><path d="M9 12L37 18" stroke-width="1.2" stroke-dasharray="3 1.5"></path><rect x="22" y="8" width="6" height="28" rx="1" stroke-width="1.6"></rect><line x1="25" y1="8" x2="25" y2="36" stroke-width="1" opacity="0.6"></line><path d="M19 6H31V9H19Z" stroke-width="1.5"></path><rect x="12" y="36" width="26" height="6" stroke-width="1.8"></rect><path d="M23 36L25 39L27 36" stroke-width="1.5"></path></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-02.html" class="block focus:outline-none">
+          프로토콜 #02: 나무로 불 지피는 방법 (원시 활비비 발화법)
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        야간 야생에서 저체온증에 노출되면 3시간 이내에 사망할 수 있습니다. 마른 참나무 심재와 질긴 칡 껍질 줄을 결합한 원시 활비비(Bow Drill) 고속 회전 마찰열로 불씨를 유도합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[마른]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[곧은]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[휜]</span>
+    </div>
+    <a href="/protocol-02.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-03" data-category="SHELTER">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[은신처]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-03</span>
+    </div>
+    <span class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6L6 38H42L24 6Z" stroke-width="2"></path><line x1="24" y1="6" x2="24" y2="38" stroke-width="1.5"></line><line x1="15" y1="22" x2="33" y2="22" stroke-width="1.2"></line><path d="M18 38V30H30V38" stroke-width="1.5"></path></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-03.html" class="block focus:outline-none">
+          프로토콜 #03: 나뭇잎과 잔가지로 체온 지키는 은신처 짓기
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        야간 야생 저체온증을 방어하기 위해 자연 잔가지와 마른 낙엽 1미터 단열층을 이용해 체온 손실을 0으로 차단하는 데브리 헛(Debris Hut)을 구축합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[주]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[빗살]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[마른]</span>
+    </div>
+    <a href="/protocol-03.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-04" data-category="TOOLS">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[원시 도구]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-04</span>
+    </div>
+    <span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-0.5 uppercase tracking-widest font-bold">[기초 기술]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38L12 32C15 29 17 30 20 27L26 21C29 18 31 19 34 16L42 8" stroke-width="2.2"></path><path d="M9 41L15 35C18 32 20 33 23 30L29 24C32 21 34 22 37 19L45 11" stroke-width="2.2"></path><line x1="9" y1="35" x2="12" y2="38" stroke-width="1.2"></line><line x1="16" y1="28" x2="19" y2="31" stroke-width="1.2"></line><line x1="23" y1="20" x2="26" y2="23" stroke-width="1.2"></line></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-04.html" class="block focus:outline-none">
+          프로토콜 #04: 깬 돌과 칡덩굴로 원시 도끼 만드는 방법
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        야전 벌목, 방어 및 뼈 파쇄를 위한 원시 타격 도구. 단단한 강돌(규암/현무암)을 타격 박편하여 양날을 세우고, Y자 참나무 손잡이에 삶은 칡 껍질 섬유와 소나무 송진으로 결속합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[타격용]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[Y자]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[삶은]</span>
+    </div>
+    <a href="/protocol-04.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-05" data-category="FOOD">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[식량 채집]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-05</span>
+    </div>
+    <span class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="18" rx="14" ry="4" stroke-width="1.8"></ellipse><path d="M10 18C10 27 15 33 24 33C33 33 38 27 38 18" stroke-width="2"></path><ellipse cx="11" cy="38" rx="5" ry="3" stroke-width="1.6"></ellipse><ellipse cx="24" cy="40" rx="6" ry="3" stroke-width="1.6"></ellipse><ellipse cx="37" cy="38" rx="5" ry="3" stroke-width="1.6"></ellipse></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-05.html" class="block focus:outline-none">
+          프로토콜 #05: 독초 피하고 안전한 야생 구황식물 구별법
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        식량 고갈 상황에서 미확인 식물 섭취는 즉사 또는 급성 간부전을 초래합니다. 유백색 유즙 배제, 피부 반응, 입술/혀 극소량 접촉으로 이어지는 8단계 유니버설 에디빌리티 테스트(Universal Edibility Test)를 수행합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[식별]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[끓여서]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[기록용]</span>
+    </div>
+    <a href="/protocol-05.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-06" data-category="WATER">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[식수 확보]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-06</span>
+    </div>
+    <span class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6H34M16 6L18 20L21 34L24 38L27 34L30 20L32 6" stroke-width="1.8"></path><path d="M17.5 11H30.5M19 15H29M20 19H28" stroke-width="1.2" stroke-dasharray="1 2" opacity="0.7"></path><circle cx="21" cy="13" r="1" fill="currentColor"></circle><circle cx="24" cy="14" r="1.2" fill="currentColor"></circle><circle cx="27" cy="12.5" r="0.9" fill="currentColor"></circle><circle cx="23" cy="17" r="1" fill="currentColor"></circle><line x1="18.2" y1="20" x2="29.8" y2="20" stroke-width="1.5"></line><path d="M19.5 24H28.5M20 27H28M20.8 30H27.2" stroke-width="1" opacity="0.8"></path><line x1="21" y1="34" x2="27" y2="34" stroke-width="1.5"></line><circle cx="24" cy="42" r="1.5" fill="currentColor"></circle><path d="M24 40V38" stroke-width="1.5"></path></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-06.html" class="block focus:outline-none">
+          프로토콜 #06: 땅속 수분과 햇빛으로 비상 식수 증류하는 방법
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        지표수가 완전히 고갈된 불모지에서 지열과 태양열을 이용해 흙과 잎사귀 속의 수분을 증발시킨 뒤 응결시켜 순수 무균 식수를 채취하는 태양열 지하 증류(Solar Still) 기법입니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[수거용]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[투명]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[중심]</span>
+    </div>
+    <a href="/protocol-06.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="PR-07" data-category="MEDICINE">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2">
+      <span class="text-neutral-400 font-bold">[야전 의약]</span>
+      <span class="text-neutral-600">/</span>
+      <span class="text-neutral-500">PR-07</span>
+    </div>
+    <span class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>
+  </div>
+
+  <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
+  <div class="flex gap-3 sm:gap-4 items-start py-1">
+    <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38L18 26L30 14" stroke-width="2.2"></path><path d="M23 27C21 31 21 35 25 39C29 39 30 35 27 31C25 28 24 26 23 27Z" stroke-width="1.6"></path><rect x="30" y="26" width="14" height="14" stroke-width="1.2" stroke-dasharray="2 1.5"></rect><path d="M37 29V37M33 33H41" stroke-width="2"></path></svg>
+    </div>
+    <div class="flex flex-col flex-1 min-w-0">
+      <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
+        <a href="/protocol-07.html" class="block focus:outline-none">
+          프로토콜 #07: 소나무 송진으로 상처 치료하는 방법 (천연 지혈 연고)
+        </a>
+      </h2>
+      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+        야생 열상 및 외상 감염 시 패혈증으로 48시간 내 사망할 수 있습니다. 천연 항균 및 방부 활성을 가진 생 소나무 송진(Pine Resin)과 살균 숯가루를 정제하여 상처를 밀폐하고 지혈하는 원시 연고를 조제합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 하단 메타데이터 스탬프 & 바로가기 -->
+  <div class="pt-2 border-t border-neutral-800 flex items-center justify-between font-mono text-xs">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[굳은]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[완전]</span><span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[삶은]</span>
+    </div>
+    <a href="/protocol-07.html" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+      [교범 열람 →]
+    </a>
+  </div>
+</article>
+    </div>
+
+    <!-- 5개 단위 페이징 바 -->
+    <section id="pagination-nav" class="pt-6 pb-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-neutral-800 font-mono text-xs">
+  <div class="flex items-center gap-1" id="pagination-buttons-bar">
+    <!-- 이전 버튼 -->
+    <button type="button"
+      data-action="goto-page"
+      data-page-target="0"
+      disabled
+      class="px-3 py-1.5 font-mono text-xs transition-none bg-black text-neutral-700 border border-neutral-900 cursor-not-allowed">
+      [←]
+    </button>
+
+    <!-- 페이지 번호 버튼 목록 -->
+    <div id="pagination-pages-container" class="flex items-center gap-1">
+      
+      <button type="button"
+        data-action="goto-page"
+        data-page-target="1"
+        class="px-3 py-1.5 font-mono text-xs transition-none bg-white text-black font-bold border border-white">
+        01
+      </button>
+    
+      <button type="button"
+        data-action="goto-page"
+        data-page-target="2"
+        class="px-3 py-1.5 font-mono text-xs transition-none bg-[#1c1b1b] text-neutral-400 hover:text-white border border-neutral-800">
+        02
+      </button>
+    
+    </div>
+
+    <!-- 다음 버튼 -->
+    <button type="button"
+      data-action="goto-page"
+      data-page-target="2"
+      
+      class="px-3 py-1.5 font-mono text-xs transition-none bg-[#1c1b1b] text-neutral-400 hover:text-white border border-neutral-800">
+      [→]
+    </button>
+  </div>
+
+  <div id="pagination-summary-label" class="text-neutral-500 font-mono text-xs">
+    기록 <span id="pagination-range-label" class="text-neutral-300 font-bold">1 - 5</span> / 총 <span id="pagination-total-items-label" class="text-neutral-300 font-bold">7</span>건
+  </div>
+</section>
+  </main>
+
+  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1) -->
+  <footer class="border-t border-neutral-800 bg-[#0e0e0e] text-neutral-400 py-6 px-4 sm:px-8 font-mono text-xs">
+    <div class="max-w-5xl mx-auto flex flex-col gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 bg-white"></span>
+        <p class="text-white font-bold uppercase tracking-wider">
+          인간 문명 재건을 위한 무료 오픈소스 생존 기록서.
+        </p>
+      </div>
+      <p class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
+        이 웹페이지는 한 번 방문하면 브라우저 로컬 저장소에 영구 보존되어 비행기 모드나 글로벌 통신망 두절 상황에서도 100% 작동합니다.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    window.__THEME_CONFIG__ = {"dark":{"label":"야간 전술 모드 [다크]","icon":"◐","bodyBg":"bg-black","bodyText":"text-white"},"light":{"label":"재생지 모드 [라이트]","icon":"☼","bodyBg":"bg-[#f4f3ee]","bodyText":"text-black"}};
+
+    function applyTheme(isDark) {
+      const html = document.documentElement;
+      const cfg = window.__THEME_CONFIG__[isDark ? 'dark' : 'light'];
+      const other = window.__THEME_CONFIG__[isDark ? 'light' : 'dark'];
+      
+      if (isDark) {
+        html.classList.add('dark');
+      } else {
+        html.classList.remove('dark');
+      }
+
+      document.body.classList.remove(other.bodyBg, other.bodyText);
+      document.body.classList.add(cfg.bodyBg, cfg.bodyText);
+
+      const label = document.getElementById('mode-label');
+      const icon = document.getElementById('mode-icon');
+      if (label) label.innerText = cfg.label;
+      if (icon) icon.innerText = cfg.icon;
+    }
+
+    function toggleTheme() {
+      const isDark = !document.documentElement.classList.contains('dark');
+      applyTheme(isDark);
+      showToast(isDark ? '야간 전술 모드로 전환되었습니다.' : '고대비 재생지 모드로 전환되었습니다.');
+    }
+    (function () {
+      var root = document.documentElement;
+      function syncNetwork() {
+        root.setAttribute('data-network', navigator.onLine ? 'online' : 'offline');
+      }
+      syncNetwork();
+      window.addEventListener('online', syncNetwork);
+      window.addEventListener('offline', syncNetwork);
+
+      if (!('serviceWorker' in navigator)) {
+        root.setAttribute('data-offline-ready', 'unsupported');
+        return;
+      }
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function () { return navigator.serviceWorker.ready; })
+          .then(function () { root.setAttribute('data-offline-ready', 'true'); })
+          .catch(function () { root.setAttribute('data-offline-ready', 'false'); });
+      });
+    })();
+    (function () {
+      var PAGE_SIZE = 5;
+      var currentPage = 1;
+      var currentCategory = 'ALL';
+
+      var allCards = Array.from(document.querySelectorAll('[data-protocol-card]'));
+      var paginationNav = document.getElementById('pagination-nav');
+      var rangeLabel = document.getElementById('pagination-range-label');
+      var totalItemsLabel = document.getElementById('pagination-total-items-label');
+      var pagesContainer = document.getElementById('pagination-pages-container');
+
+      function getFilteredCards() {
+        if (currentCategory === 'ALL') return allCards;
+        return allCards.filter(function (card) {
+          return card.getAttribute('data-category') === currentCategory;
+        });
+      }
+
+      function updateFeed() {
+        var filtered = getFilteredCards();
+        var totalPages = Math.ceil(filtered.length / PAGE_SIZE) || 1;
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (currentPage < 1) currentPage = 1;
+
+        var startIndex = (currentPage - 1) * PAGE_SIZE;
+        var endIndex = startIndex + PAGE_SIZE;
+
+        // 전체 카드 숨김 후 현재 페이지 범위만 표시
+        allCards.forEach(function (card) { card.style.display = 'none'; });
+        filtered.slice(startIndex, endIndex).forEach(function (card) {
+          card.style.display = '';
+        });
+
+        // 범위 레이블 업데이트
+        if (rangeLabel) {
+          var displayStart = filtered.length > 0 ? startIndex + 1 : 0;
+          var displayEnd = Math.min(endIndex, filtered.length);
+          rangeLabel.textContent = displayStart + ' - ' + displayEnd;
+        }
+        if (totalItemsLabel) {
+          totalItemsLabel.textContent = filtered.length;
+        }
+
+        // 페이지 네비게이션 가시성
+        if (paginationNav) {
+          paginationNav.style.display = filtered.length === 0 ? 'none' : '';
+        }
+
+        // 페이지 번호 버튼 재생성 ([01], [02], ...)
+        if (pagesContainer) {
+          pagesContainer.innerHTML = '';
+          for (var i = 1; i <= totalPages; i++) {
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.setAttribute('data-action', 'goto-page');
+            btn.setAttribute('data-page-target', i);
+            var padNum = (i < 10 ? '0' : '') + i;
+            btn.className = 'px-3 py-1.5 font-mono text-xs transition-none ' +
+              (i === currentPage
+                ? 'bg-white text-black font-bold border border-white'
+                : 'bg-[#1c1b1b] text-neutral-400 hover:text-white border border-neutral-800');
+            btn.textContent = padNum;
+            pagesContainer.appendChild(btn);
+          }
+        }
+
+        // 이전/다음 버튼 상태 업데이트
+        var prevBtn = document.querySelector('[data-action="goto-page"][data-page-target="' + (currentPage - 1) + '"]');
+        var nextBtn = document.querySelector('[data-action="goto-page"][data-page-target="' + (currentPage + 1) + '"]');
+        var allPageActionBtns = document.querySelectorAll('[data-action="goto-page"]');
+        allPageActionBtns.forEach(function (btn) {
+          var target = parseInt(btn.getAttribute('data-page-target'), 10);
+          if (target < 1 || target > totalPages) {
+            btn.setAttribute('disabled', 'true');
+            btn.className = 'px-3 py-1.5 font-mono text-xs transition-none bg-black text-neutral-700 border border-neutral-900 cursor-not-allowed';
+          }
+        });
+      }
+
+      // 이벤트 위임 처리
+      document.addEventListener('click', function (e) {
+        var pageBtn = e.target.closest('[data-action="goto-page"]');
+        if (pageBtn && !pageBtn.disabled) {
+          var targetPage = parseInt(pageBtn.getAttribute('data-page-target'), 10);
+          if (!isNaN(targetPage) && targetPage !== currentPage) {
+            currentPage = targetPage;
+            updateFeed();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+          return;
+        }
+
+        var catBtn = e.target.closest('[data-action="filter-category"]');
+        if (catBtn) {
+          var newCat = catBtn.getAttribute('data-category');
+          if (newCat && newCat !== currentCategory) {
+            currentCategory = newCat;
+            currentPage = 1;
+
+            // 7개 칩 스타일 동기화
+            document.querySelectorAll('[data-action="filter-category"]').forEach(function (btn) {
+              var isSel = btn.getAttribute('data-category') === currentCategory;
+              if (isSel) {
+                btn.className = 'px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 bg-white text-black font-bold transition-none';
+              } else {
+                btn.className = 'px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800 transition-none';
+              }
+            });
+
+            updateFeed();
+          }
+          return;
+        }
+      });
+
+      // 초기 실행
+      updateFeed();
+    })();
+  </script>
+</body>
+</html>

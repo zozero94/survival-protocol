@@ -1,0 +1,53 @@
+{
+  "protocolId": "PR-01",
+  "title": "프로토콜 #01: 야생 오염수 정화 및 식수화 지침",
+  "threatLevel": "[위험 등급: 치명적(CRITICAL)]",
+  "summary": "오염된 야생수를 그대로 음용할 경우 세균성 이질 및 편모충증으로 인해 72시간 이내에 사망할 수 있습니다. 기계적 숯 활성 여과 공정으로 부유물을 정화한 후, 반드시 끓이는 열적 살균 단계를 거쳐야 합니다.",
+  "timeRequired": "15분",
+  "successRate": "99.8%",
+  "materials": [
+    {
+      "name": "분쇄된 참나무 숯 (HARDWOOD CHARCOAL)",
+      "desc": "모닥불 잔여 숯. 완두콩 크기로 분쇄하여 독소 및 중금속 흡착."
+    },
+    {
+      "name": "깨끗한 강모래 & 고운 자갈 (SAND & GRAVEL)",
+      "desc": "세척된 강모래와 작은 조약돌. 미세 부유물 및 찌꺼기 물리적 차단."
+    },
+    {
+      "name": "절단된 플라스틱병 또는 대나무 통 (BOTTLE/TUBE)",
+      "desc": "바닥을 잘라낸 2L 플라스틱병을 역방향 배치하거나 직경 8cm 대나무 활용."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "용기 절단 및 필터 베이스 구축",
+      "description": "날카로운 서바이벌 나이프를 이용해 플라스틱병 바닥에서 7~8cm(3인치) 지점을 잘라 넓은 깔때기 형태로 만듭니다. 병목이 아래로 향하도록 뒤집으십시오.",
+      "actionNote": "> 조치 사항: 병뚜껑에 핀으로 구멍 3개를 뚫거나, 면 천 또는 물이끼를 주둥이에 꽉 채워 여과재가 유출되지 않도록 고정합니다.",
+      "svgCode": "<svg class=\"w-full h-full max-w-[170px] stroke-white fill-none\" stroke-linecap=\"square\" stroke-width=\"1.5\" viewBox=\"0 0 200 200\">\n<!-- Bottle outline -->\n<rect height=\"110\" stroke-dasharray=\"2,2\" width=\"90\" x=\"55\" y=\"45\"></rect>\n<!-- Cut line indicator -->\n<line stroke=\"white\" stroke-width=\"2\" x1=\"40\" x2=\"160\" y1=\"50\" y2=\"50\"></line>\n<!-- Cut scissor / marker -->\n<text fill=\"white\" font-family=\"monospace\" font-size=\"9\" font-weight=\"bold\" x=\"50\" y=\"42\">절단선 [바닥면 3인치]</text>\n<!-- Bottle inverted body -->\n<path d=\"M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z\" stroke-width=\"2\"></path>\n<!-- Cap pierced holes -->\n<line stroke-width=\"3\" x1=\"90\" x2=\"110\" y1=\"195\" y2=\"195\"></line>\n<line stroke-dasharray=\"2,2\" x1=\"95\" x2=\"95\" y1=\"198\" y2=\"204\"></line>\n<line stroke-dasharray=\"2,2\" x1=\"100\" x2=\"100\" y1=\"198\" y2=\"204\"></line>\n<line stroke-dasharray=\"2,2\" x1=\"105\" x2=\"105\" y1=\"198\" y2=\"204\"></line>\n<!-- Arrow inverted -->\n<path d=\"M100,15 L100,35 M95,30 L100,35 L105,30\" stroke-width=\"1.5\"></path>\n<text fill=\"white\" font-family=\"monospace\" font-size=\"9\" text-anchor=\"middle\" x=\"100\" y=\"10\">역방향 반전 배치</text>\n</svg>",
+      "svgFileName": "step-01.svg"
+    },
+    {
+      "stepNumber": "02",
+      "title": "여과재 층별 적층 (역피라미드 구조)",
+      "description": "역삼각형 층상 구조로 여과재를 엄격히 적층하십시오: 병목 주둥이 면포 마개 → 6cm 분쇄 숯 → 5cm 고운 모래 → 3cm 굵은 자갈 순서입니다.",
+      "actionNote": "> 과학적 원리: 굵은 자갈은 낙엽과 큰 찌꺼기를 걸러내고, 모래는 미세 혼탁물을 포집하며, 다공성 활성 숯 매트릭스는 화학 물질 및 악취를 화학적으로 흡착합니다.",
+      "svgCode": "<svg class=\"w-full h-full max-w-[170px] stroke-white fill-none\" stroke-width=\"1.5\" viewBox=\"0 0 200 200\">\n<!-- Vessel Wall -->\n<path d=\"M45,25 L155,25 L145,150 L115,175 L115,192 L85,192 L85,175 L55,150 Z\" stroke-width=\"2\"></path>\n<!-- Layer 1: Gravel Top -->\n<rect fill=\"#ffffff\" fill-opacity=\"0.1\" height=\"25\" stroke=\"white\" stroke-dasharray=\"2,2\" width=\"96\" x=\"52\" y=\"35\"></rect>\n<!-- Layer 2: Sand -->\n<rect height=\"30\" stroke=\"white\" stroke-width=\"1\" width=\"84\" x=\"58\" y=\"60\"></rect>\n<!-- Dots for sand -->\n<line stroke-dasharray=\"1,4\" stroke-width=\"2\" x1=\"65\" x2=\"135\" y1=\"75\" y2=\"75\"></line>\n<line stroke-dasharray=\"2,3\" stroke-width=\"1.5\" x1=\"68\" x2=\"132\" y1=\"80\" y2=\"80\"></line>\n<!-- Layer 3: Crushed Charcoal (Dense) -->\n<rect fill=\"#ffffff\" fill-opacity=\"0.35\" height=\"38\" stroke=\"white\" stroke-width=\"1.5\" width=\"70\" x=\"65\" y=\"90\"></rect>\n<!-- Layer 4: Cloth Plug -->\n<path d=\"M78,145 L122,145 L110,172 L90,172 Z\" fill=\"#ffffff\" stroke=\"white\"></path>\n<!-- Text Callouts -->\n<text fill=\"white\" font-family=\"monospace\" font-size=\"8\" x=\"160\" y=\"48\">자갈 [3cm]</text>\n<text fill=\"white\" font-family=\"monospace\" font-size=\"8\" x=\"160\" y=\"77\">모래 [5cm]</text>\n<text fill=\"white\" font-family=\"monospace\" font-size=\"8\" x=\"160\" y=\"112\">활성숯 [6cm]</text>\n<text fill=\"white\" font-family=\"monospace\" font-size=\"8\" x=\"160\" y=\"158\">면포 마개</text>\n<!-- Connection lines -->\n<line stroke=\"white\" stroke-width=\"0.75\" x1=\"140\" x2=\"156\" y1=\"46\" y2=\"46\"></line>\n<line stroke-white\"=\"\" stroke-width=\"0.75\" x1=\"135\" x2=\"156\" y1=\"75\" y2=\"75\"></line>\n<line stroke=\"white\" stroke-width=\"0.75\" x1=\"128\" x2=\"156\" y1=\"108\" y2=\"108\"></line>\n<line stroke=\"white\" stroke-width=\"0.75\" x1=\"115\" x2=\"156\" y1=\"156\" y2=\"156\"></line>\n</svg>",
+      "svgFileName": "step-02.svg"
+    },
+    {
+      "stepNumber": "03",
+      "title": "오염수 주입 및 맑은 여과수 수거",
+      "description": "오염수를 자갈 상단 층에 천천히 붓습니다. 중력 낙하를 통해 초당 약 1방울의 일정한 속도로 깨끗한 수거 용기에 떨어지도록 유도하십시오.",
+      "actionNote": "> 주의: 최초 추출된 약 250ml의 여과수는 미세 숯가루를 함유하고 있으므로 폐기하십시오. 완전히 투명한 물이 나올 때까지 계속 통과시킵니다.",
+      "svgCode": "<svg class=\"w-full h-full max-w-[170px] stroke-white fill-none\" stroke-width=\"1.5\" viewBox=\"0 0 200 200\">\n<!-- Cloudy Input -->\n<path d=\"M80,15 C90,25 110,25 120,15\" stroke=\"white\" stroke-width=\"2\"></path>\n<line stroke-dasharray=\"3,3\" x1=\"95\" x2=\"95\" y1=\"28\" y2=\"48\"></line>\n<line stroke-dasharray=\"3,3\" x1=\"105\" x2=\"105\" y1=\"28\" y2=\"48\"></line>\n<text fill=\"white\" font-family=\"monospace\" font-size=\"8\" text-anchor=\"middle\" x=\"100\" y=\"10\">유입: 오염된 탁수</text>\n<!-- Inverted Funnel -->\n<polygon points=\"60,50 140,50 115,115 85,115\" stroke=\"white\" stroke-width=\"2\"></polygon>\n<line stroke-dasharray=\"2,2\" x1=\"70\" x2=\"130\" y1=\"75\" y2=\"75\"></line>\n<!-- Drops of clear water -->\n<circle cx=\"100\" cy=\"132\" fill=\"white\" r=\"2.5\"></circle>\n<circle cx=\"100\" cy=\"144\" fill=\"white\" r=\"2.5\"></circle>\n<circle cx=\"100\" cy=\"156\" fill=\"white\" r=\"2.5\"></circle>\n<!-- Collection Basin -->\n<rect height=\"28\" stroke=\"white\" stroke-width=\"2\" width=\"70\" x=\"65\" y=\"165\"></rect>\n<line stroke-dasharray=\"1,2\" stroke-white\"=\"\" x1=\"72\" x2=\"128\" y1=\"180\" y2=\"180\"></line>\n<text fill=\"white\" font-family=\"monospace\" font-size=\"8\" text-anchor=\"middle\" x=\"100\" y=\"178\">1차 맑은 여과수</text>\n</svg>",
+      "svgFileName": "step-03.svg"
+    }
+  ],
+  "fatalMistake": {
+    "title": "치명적 착각: 여과된 맑은 물도 즉시 마시면 절대 안 됩니다.",
+    "description": "기계적 숯 여과는 부유물과 중금속, 화학물질만 제거할 뿐 바이러스, 지아르디아 포낭, 크립토스포리디움과 같은 미세 기생충은 그대로 통과합니다. 맑게 걸러진 물을 반드시 최소 1분 이상 완전히 펄펄 끓여야 (해발 2,000m 이상에서는 3분) 단 한 모금이라도 안전하게 마실 수 있습니다.",
+    "consequence": "끓임 생략 시 결과: 급성 크립토스포리디움증 감염 및 96시간 내 탈수 사망"
+  }
+}

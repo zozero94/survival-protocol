@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html class="dark" lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-proto="title">생존 교범 // 프로토콜 #02: 나무로 불 지피는 방법 (원시 활비비 발화법)</title>
+  <meta name="description" content="현대 도구 없이 자연물과 두 손만으로 살아남는 원시 생존 기술 기록서">
+  <meta name="theme-color" content="#050505">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+
+  <!-- FOUC(Flash of Untranslated Content) 방지 쉴드 스타일 및 동기 판별 스크립트 -->
+  <style id="fouc-shield">
+    html[data-fouc="true"] body { opacity: 0 !important; }
+    body { transition: opacity 0.08s ease-in; }
+    #offline-banner { display: none; }
+    html[data-network="offline"] #offline-banner { display: block !important; }
+  </style>
+  <script>
+    (function() {
+      var urlParams = new URLSearchParams(window.location.search);
+  var lang = urlParams.get('lang');
+  if (!lang) {
+    try { lang = localStorage.getItem('archive0_locale'); } catch(e) {}
+  }
+  if (!lang) {
+    var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (nav.startsWith('ja')) lang = 'ja';
+    else if (nav.startsWith('es')) lang = 'es';
+    else if (nav.startsWith('de')) lang = 'de';
+    else if (nav.startsWith('pt')) lang = 'pt';
+    else if (nav.startsWith('zh')) lang = 'zh-TW';
+    else if (nav.startsWith('en')) lang = 'en';
+    else lang = 'ko';
+  }
+      if (lang && lang !== 'ko') {
+        document.documentElement.setAttribute('data-fouc', 'true');
+      }
+      document.documentElement.lang = lang || 'ko';
+    })();
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Public+Sans:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Noto Sans KR"', '"Public Sans"', '"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; border-radius: 0px !important; -webkit-font-smoothing: antialiased; }
+    @media print { .no-print { display: none !important; } body { background: white !important; color: black !important; } }
+  </style>
+</head>
+<body class="bg-black text-white dark:bg-black dark:text-white font-sans transition-colors duration-150 min-h-screen selection:bg-white selection:text-black flex flex-col justify-between">
+  <div id="offline-banner" class="bg-red-950/90 border-b-2 border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
+    ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
+  </div>
+  <header class="border-b-2 border-white dark:border-white bg-black dark:bg-black sticky top-0 z-40 px-4 sm:px-8 py-4 transition-colors">
+  <div class="max-w-5xl mx-auto flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a class="font-mono text-base sm:text-xl font-black tracking-tighter bg-white text-black px-2.5 py-0.5 border border-black hover:invert transition-all" href="/">[생존 교범]</a>
+        <span id="ui-brand-archive" data-i18n="brandArchive" class="font-mono text-xs uppercase tracking-wider text-neutral-400 hidden sm:inline-block border-l border-white/30 pl-3">생존 전술 교범 아카이브</span>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Multilingual Hot-Swapper (Zero Reload) -->
+        <div class="flex items-center border border-white/40 px-1 py-0.5 bg-neutral-950">
+          <span class="text-neutral-400 text-xs px-1 select-none">🌐</span>
+          
+        <button type="button" data-action="switch-locale" data-locale-btn="ko" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all bg-white text-black">KO</button>
+      
+        <button type="button" data-action="switch-locale" data-locale-btn="en" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">EN</button>
+      
+        <button type="button" data-action="switch-locale" data-locale-btn="ja" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">JA</button>
+      
+        <button type="button" data-action="switch-locale" data-locale-btn="es" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">ES</button>
+      
+        <button type="button" data-action="switch-locale" data-locale-btn="de" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">DE</button>
+      
+        <button type="button" data-action="switch-locale" data-locale-btn="pt" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">PT</button>
+      
+        <button type="button" data-action="switch-locale" data-locale-btn="zh-TW" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">ZH</button>
+      
+        </div>
+        <button type="button" data-action="toggle-theme" class="font-mono text-xs border border-white/40 px-2.5 py-1 text-neutral-300 hover:text-white hover:border-white flex items-center gap-1.5 transition-all">
+          <span id="mode-icon">◐</span>
+          <span id="mode-label" class="hidden sm:inline">야간 전술 [다크]</span>
+        </button>
+        <a data-i18n="offlineDb" class="px-2.5 py-1 border border-white bg-white text-black font-mono text-xs font-bold uppercase hover:bg-black hover:text-white transition-all hidden md:inline-block" href="#">오프라인 DB</a>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-white/20 text-xs font-mono">
+      <div class="flex items-center gap-2 text-neutral-400">
+        <a class="text-white hover:underline flex items-center gap-1 font-bold" href="/">
+          <span class="text-neutral-400 font-normal">←</span>
+          <span id="ui-back-index" data-i18n="backToIndex">← 전체 교범 목록</span>
+        </a>
+        <span class="text-white/30">/</span>
+        <span id="proto-header-category" data-proto="category" class="hover:text-white">FIRE</span>
+        <span class="text-white/30">/</span>
+        <span id="proto-header-title" data-proto="title" class="text-white font-semibold">프로토콜 #02: 나무로 불 지피는 방법 (원시 활비비 발화법)</span>
+      </div>
+      <a class="hidden md:inline-flex items-center gap-1 text-[11px] text-neutral-300 hover:text-white hover:underline border border-white/30 px-2 py-0.5" href="/">
+        <span data-i18n="backToIndex">← 전체 교범 목록</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-8 md:py-12 flex-1 pb-32">
+    <section class="border-2 border-white dark:border-white p-5 sm:p-8 mb-8 bg-neutral-950 dark:bg-neutral-950 relative overflow-hidden">
+  <div class="absolute -right-6 -bottom-6 font-mono text-7xl font-black text-white/5 pointer-events-none select-none tracking-tighter">
+    PR-02
+  </div>
+  <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-4 font-mono text-xs">
+    <span id="proto-threat-badge" data-proto="threatLevelText" class="bg-white text-black font-extrabold px-2.5 py-1 tracking-wider uppercase">
+      [위험 등급: 치명적(CRITICAL)]
+    </span>
+    <span class="border border-white/40 px-2 py-1 uppercase text-neutral-400">
+      분류: <span id="proto-hero-category" data-proto="category">FIRE</span>
+    </span>
+    <span data-i18n="readingTime" class="border border-white/40 px-2 py-1 uppercase text-neutral-400">
+      열람 소요 시간: 30초
+    </span>
+  </div>
+  <h1 id="proto-main-title" data-proto="title" class="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight uppercase leading-[1.15] mb-4 text-white">
+    프로토콜 #02: 나무로 불 지피는 방법 (원시 활비비 발화법)
+  </h1>
+  <p id="proto-summary" data-proto="summary" class="text-base sm:text-lg text-neutral-300 font-medium max-w-3xl leading-relaxed border-l-2 border-white pl-4 my-2">
+    야간 야생에서 저체온증에 노출되면 3시간 이내에 사망할 수 있습니다. 마른 참나무 심재와 질긴 칡 껍질 줄을 결합한 원시 활비비(Bow Drill) 고속 회전 마찰열로 불씨를 유도합니다.
+  </p>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-6 mt-6 border-t border-white/20 font-mono text-xs">
+    <div>
+      <div data-i18n="timeRequired" class="text-neutral-500 uppercase text-[10px]">소요 시간</div>
+      <div id="proto-time" data-proto="timeRequired" class="font-bold text-white">20분 (20 MINUTES)</div>
+    </div>
+    <div>
+      <div data-i18n="successRate" class="text-neutral-500 uppercase text-[10px]">생존율/성공률</div>
+      <div id="proto-success" data-proto="successRate" class="font-bold text-white">94.2% (건조 목재 기준)</div>
+    </div>
+    <div>
+      <div data-i18n="difficulty" class="text-neutral-500 uppercase text-[10px]">기술 난이도</div>
+      <div id="proto-difficulty" data-proto="difficulty" class="font-bold text-white">1등급 (원시 생존 기술)</div>
+    </div>
+    <div>
+      <div data-i18n="outputPerHour" class="text-neutral-500 uppercase text-[10px]">시간당 생산량</div>
+      <div id="proto-output" data-proto="outputPerHour" class="font-bold text-white">불씨 3회 / 시간</div>
+    </div>
+  </div>
+</section>
+    <section class="border border-white dark:border-white mb-8 p-5 sm:p-6 bg-black dark:bg-black">
+  <div class="flex items-center justify-between border-b border-white/30 pb-3 mb-4">
+    <h2 class="font-mono text-sm sm:text-base font-bold uppercase tracking-wider flex items-center gap-2">
+      <span class="bg-white text-black px-1.5 py-0.5 text-xs font-mono font-bold">REQ</span>
+      <span id="ui-checklist-title" data-i18n="checklistTitle">필수 확보 물자 체크리스트 (즉시 수집할 것)</span>
+    </h2>
+    <span class="font-mono text-xs text-neutral-400" id="checklist-counter">0/3 확보 완료</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-xs sm:text-sm">
+    
+    <label class="flex items-start gap-3 p-3 border border-white/30 hover:border-white cursor-pointer bg-neutral-900/50 transition-all group">
+      <input type="checkbox" id="mat-fire-01" data-material="mat-fire-01" class="mt-0.5 w-4 h-4 rounded-none accent-white cursor-pointer bg-black border border-white">
+      <div>
+        <div id="mat-name-0" data-proto-item="materials" data-proto-prop="name" data-index="0" class="font-bold text-white group-hover:underline">마른 참나무 밑판 (FIRE BOARD)</div>
+        <div id="mat-desc-0" data-proto-item="materials" data-proto-prop="desc" data-index="0" class="text-[11px] text-neutral-400 mt-0.5">바싹 마른 2cm 두께의 침엽수 또는 활엽수 판목. V자 홈을 파서 흑색 목탄가루를 포집.</div>
+      </div>
+    </label>
+  
+    <label class="flex items-start gap-3 p-3 border border-white/30 hover:border-white cursor-pointer bg-neutral-900/50 transition-all group">
+      <input type="checkbox" id="mat-fire-02" data-material="mat-fire-02" class="mt-0.5 w-4 h-4 rounded-none accent-white cursor-pointer bg-black border border-white">
+      <div>
+        <div id="mat-name-1" data-proto-item="materials" data-proto-prop="name" data-index="1" class="font-bold text-white group-hover:underline">곧은 버드나무 회전축 (SPINDLE)</div>
+        <div id="mat-desc-1" data-proto-item="materials" data-proto-prop="desc" data-index="1" class="text-[11px] text-neutral-400 mt-0.5">직경 2cm, 길이 20cm의 곧고 단단한 마른 나뭇가지. 양 끝을 원뿔형으로 가공.</div>
+      </div>
+    </label>
+  
+    <label class="flex items-start gap-3 p-3 border border-white/30 hover:border-white cursor-pointer bg-neutral-900/50 transition-all group">
+      <input type="checkbox" id="mat-fire-03" data-material="mat-fire-03" class="mt-0.5 w-4 h-4 rounded-none accent-white cursor-pointer bg-black border border-white">
+      <div>
+        <div id="mat-name-2" data-proto-item="materials" data-proto-prop="name" data-index="2" class="font-bold text-white group-hover:underline">휜 물푸레나무 활대 & 칡 껍질 줄 (BOW & STRING)</div>
+        <div id="mat-desc-2" data-proto-item="materials" data-proto-prop="desc" data-index="2" class="text-[11px] text-neutral-400 mt-0.5">탄력 있는 60cm 활대와 꼬아서 건조시킨 질긴 야생 칡 섬유 끈.</div>
+      </div>
+    </label>
+  
+  </div>
+  <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-400">
+    <span id="ui-checklist-subtext">대체 여과 차단재: 깨끗한 면 손수건, 건조된 물이끼, 또는 불에 그을린 자작나무 껍질 메쉬</span>
+    <span data-i18n="fieldTested" class="text-white font-bold hidden sm:inline">[야전 검증 완료]</span>
+  </div>
+</section>
+    <div class="mb-8">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="font-mono text-sm sm:text-base font-bold uppercase tracking-wider text-white">
+      <span id="ui-procedure-title" data-i18n="procedureTitle">실행 절차 // 수직 낙하식 야전 여과 파이프라인</span>
+    </h2>
+    <span class="font-mono text-xs text-neutral-400">1 ~ 3 <span data-i18n="stepsFlow">단계 진행</span></span>
+  </div>
+  <div class="space-y-6">
+    <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-linecap="square" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Bottle outline -->
+<rect height="110" stroke-dasharray="2,2" width="90" x="55" y="45"></rect>
+<!-- Cut line indicator -->
+<line stroke="white" stroke-width="2" x1="40" x2="160" y1="50" y2="50"></line>
+<!-- Cut scissor / marker -->
+<text fill="white" font-family="monospace" font-size="9" font-weight="bold" x="50" y="42">절단선 [바닥면 3인치]</text>
+<!-- Bottle inverted body -->
+<path d="M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z" stroke-width="2"></path>
+<!-- Cap pierced holes -->
+<line stroke-width="3" x1="90" x2="110" y1="195" y2="195"></line>
+<line stroke-dasharray="2,2" x1="95" x2="95" y1="198" y2="204"></line>
+<line stroke-dasharray="2,2" x1="100" x2="100" y1="198" y2="204"></line>
+<line stroke-dasharray="2,2" x1="105" x2="105" y1="198" y2="204"></line>
+<!-- Arrow inverted -->
+<path d="M100,15 L100,35 M95,30 L100,35 L105,30" stroke-width="1.5"></path>
+<text fill="white" font-family="monospace" font-size="9" text-anchor="middle" x="100" y="10">역방향 반전 배치</text>
+</svg>
+        <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 01</span>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-mono font-black text-3xl sm:text-4xl text-white">01</span>
+          <div class="h-4 w-px bg-white/40"></div>
+          <h3 id="step-title-0" data-proto-item="steps" data-proto-prop="title" data-index="0" class="text-lg sm:text-xl font-bold uppercase tracking-tight text-white">밑판 V자 노치 가공 및 스핀들 장착</h3>
+        </div>
+        <p id="step-desc-0" data-proto-item="steps" data-proto-prop="description" data-index="0" class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-3">
+          밑판 가장자리에 45도 각도로 V자 홈을 파냅니다. 스핀들을 활 시위에 한 바퀴 감아 수직으로 세우고 상단 누름목으로 단단히 압박합니다.
+        </p>
+        <p id="step-note-0" data-proto-item="steps" data-proto-prop="actionNote" data-index="0" class="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed bg-neutral-900/60 p-3 border-l-2 border-white">
+          > 조치 사항: 밑판 아래에 마른 나뭇잎이나 껍질을 받쳐 생성된 고온 목탄가루가 땅의 습기를 먹지 않도록 격리하십시오.
+        </p>
+      </div>
+    </div>
+<div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Vessel Wall -->
+<path d="M45,25 L155,25 L145,150 L115,175 L115,192 L85,192 L85,175 L55,150 Z" stroke-width="2"></path>
+<!-- Layer 1: Gravel Top -->
+<rect fill="#ffffff" fill-opacity="0.1" height="25" stroke="white" stroke-dasharray="2,2" width="96" x="52" y="35"></rect>
+<!-- Layer 2: Sand -->
+<rect height="30" stroke="white" stroke-width="1" width="84" x="58" y="60"></rect>
+<!-- Dots for sand -->
+<line stroke-dasharray="1,4" stroke-width="2" x1="65" x2="135" y1="75" y2="75"></line>
+<line stroke-dasharray="2,3" stroke-width="1.5" x1="68" x2="132" y1="80" y2="80"></line>
+<!-- Layer 3: Crushed Charcoal (Dense) -->
+<rect fill="#ffffff" fill-opacity="0.35" height="38" stroke="white" stroke-width="1.5" width="70" x="65" y="90"></rect>
+<!-- Layer 4: Cloth Plug -->
+<path d="M78,145 L122,145 L110,172 L90,172 Z" fill="#ffffff" stroke="white"></path>
+<!-- Text Callouts -->
+<text fill="white" font-family="monospace" font-size="8" x="160" y="48">자갈 [3cm]</text>
+<text fill="white" font-family="monospace" font-size="8" x="160" y="77">모래 [5cm]</text>
+<text fill="white" font-family="monospace" font-size="8" x="160" y="112">활성숯 [6cm]</text>
+<text fill="white" font-family="monospace" font-size="8" x="160" y="158">면포 마개</text>
+<!-- Connection lines -->
+<line stroke="white" stroke-width="0.75" x1="140" x2="156" y1="46" y2="46"></line>
+<line stroke-white"="" stroke-width="0.75" x1="135" x2="156" y1="75" y2="75"></line>
+<line stroke="white" stroke-width="0.75" x1="128" x2="156" y1="108" y2="108"></line>
+<line stroke="white" stroke-width="0.75" x1="115" x2="156" y1="156" y2="156"></line>
+</svg>
+        <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 02</span>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-mono font-black text-3xl sm:text-4xl text-white">02</span>
+          <div class="h-4 w-px bg-white/40"></div>
+          <h3 id="step-title-1" data-proto-item="steps" data-proto-prop="title" data-index="1" class="text-lg sm:text-xl font-bold uppercase tracking-tight text-white">수평 왕복 톱질 및 마찰열 극대화</h3>
+        </div>
+        <p id="step-desc-1" data-proto-item="steps" data-proto-prop="description" data-index="1" class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-3">
+          활대를 지면과 수평으로 길고 일정한 리듬으로 왕복 운동시킵니다. 회전 속도를 서서히 올리며 검은 연기가 짙어질 때까지 최대 회전력을 가합니다.
+        </p>
+        <p id="step-note-1" data-proto-item="steps" data-proto-prop="actionNote" data-index="1" class="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed bg-neutral-900/60 p-3 border-l-2 border-white">
+          > 과학적 원리: 고속 회전 마찰로 접촉면 온도가 400°C를 초과하면 탄화된 목탄 분말이 점화되어 미세 불씨 덩어리(Ember)가 형성됩니다.
+        </p>
+      </div>
+    </div>
+<div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Cloudy Input -->
+<path d="M80,15 C90,25 110,25 120,15" stroke="white" stroke-width="2"></path>
+<line stroke-dasharray="3,3" x1="95" x2="95" y1="28" y2="48"></line>
+<line stroke-dasharray="3,3" x1="105" x2="105" y1="28" y2="48"></line>
+<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="10">유입: 오염된 탁수</text>
+<!-- Inverted Funnel -->
+<polygon points="60,50 140,50 115,115 85,115" stroke="white" stroke-width="2"></polygon>
+<line stroke-dasharray="2,2" x1="70" x2="130" y1="75" y2="75"></line>
+<!-- Drops of clear water -->
+<circle cx="100" cy="132" fill="white" r="2.5"></circle>
+<circle cx="100" cy="144" fill="white" r="2.5"></circle>
+<circle cx="100" cy="156" fill="white" r="2.5"></circle>
+<!-- Collection Basin -->
+<rect height="28" stroke="white" stroke-width="2" width="70" x="65" y="165"></rect>
+<line stroke-dasharray="1,2" stroke-white"="" x1="72" x2="128" y1="180" y2="180"></line>
+<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="178">1차 맑은 여과수</text>
+</svg>
+        <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center"><span data-i18n="figurePrefix">그림</span>: 03</span>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-mono font-black text-3xl sm:text-4xl text-white">03</span>
+          <div class="h-4 w-px bg-white/40"></div>
+          <h3 id="step-title-2" data-proto-item="steps" data-proto-prop="title" data-index="2" class="text-lg sm:text-xl font-bold uppercase tracking-tight text-white">불씨 부싯깃 안치 및 산소 주입 발화</h3>
+        </div>
+        <p id="step-desc-2" data-proto-item="steps" data-proto-prop="description" data-index="2" class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-3">
+          생성된 흑색 불씨를 마른 쑥과 잔 나뭇잎으로 뭉친 부싯깃 새둥지에 조심스럽게 옮깁니다. 길고 부드럽게 입김을 불어 화염을 피워 올리십시오.
+        </p>
+        <p id="step-note-2" data-proto-item="steps" data-proto-prop="actionNote" data-index="2" class="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed bg-neutral-900/60 p-3 border-l-2 border-white">
+          > 주의: 연기가 피어오른다고 급하게 세게 불면 미세 불씨가 흩어져 꺼집니다. 굵고 긴 호흡으로 온도를 점진적으로 올립니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="border-4 border-white dark:border-white p-6 sm:p-8 bg-black dark:bg-black text-white relative overflow-hidden mb-12 shadow-[0_0_0_1px_rgba(255,255,255,0.2)]">
+  <div class="flex items-center gap-2 mb-4">
+    <span id="ui-fatal-header" data-i18n="fatalTitle" class="bg-white text-black font-mono font-black px-2 py-0.5 text-xs tracking-widest animate-pulse">
+      위험 // 치명적 실수 경고
+    </span>
+    <span data-i18n="mustReadBeforeDrink" class="font-mono text-xs text-neutral-400">음용 전 필독</span>
+  </div>
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+    <div class="text-4xl sm:text-5xl select-none font-mono">⚠️</div>
+    <div>
+      <h4 id="fatal-title" data-proto-fatal="title" class="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight mb-3">
+        치명적 착각: 연기가 난다고 즉시 활질을 멈추거나 입김을 거칠게 불면 안 됩니다.
+      </h4>
+      <p id="fatal-desc" data-proto-fatal="description" class="text-neutral-200 text-sm sm:text-base leading-relaxed font-sans font-medium">
+        연기는 단순 가열의 징후일 뿐 불씨 덩어리가 완전히 뭉쳐지기 전에 멈추면 공기 중에서 즉시 식어버립니다. 연기가 짙게 뿜어져 나온 후에도 10초간 전력으로 더 회전시켜 육안으로 붉은 불씨가 보일 때까지 멈추지 마십시오.
+      </p>
+    </div>
+  </div>
+  <div class="mt-6 pt-4 border-t border-white/20 flex flex-wrap items-center justify-between font-mono text-xs text-neutral-400 gap-2">
+    <span id="fatal-consequence" data-proto-fatal="consequence">조기 중단 시 결과: 체력 고갈, 손바닥 물집 파열 및 야간 저체온증 노출</span>
+    <span id="ui-fatal-rule" data-i18n="nonNegotiableRule" class="text-white font-bold tracking-wider">[타협 불가한 절대 수칙]</span>
+  </div>
+</section>
+  </main>
+
+  <aside class="fixed bottom-0 left-0 right-0 z-50 bg-black/95 dark:bg-black/95 border-t-2 border-white backdrop-blur-sm px-4 sm:px-8 py-3 transition-colors">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+    <div class="flex items-center gap-2 w-full md:w-auto justify-between md:justify-start">
+      <a class="font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white/40 text-neutral-300 hover:text-white hover:border-white flex items-center gap-1 transition-all" href="/">
+        <span>←</span> <span id="ui-all-protocols" data-i18n="allProtocols">전체 교범 인덱스</span>
+      </a>
+      <span class="text-white/20 hidden sm:inline">|</span>
+      <a id="ui-next-link" data-proto-action="next-protocol" class="font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white text-white hover:bg-white hover:text-black flex items-center gap-2 transition-all" href="#">
+        <span id="ui-next-text" data-proto="nextProtocolTitle">다음: PR-02 마찰열 발화법</span>
+        <span>→</span>
+       </a>
+    </div>
+    <div class="flex items-center gap-2 w-full md:w-auto">
+      <button type="button" data-action="save-offline" class="flex-1 md:flex-initial font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white bg-white text-black hover:bg-transparent hover:text-white transition-all flex items-center justify-center gap-1.5">
+        <span>💾</span>
+        <span id="ui-btn-save" data-i18n="saveOffline">오프라인 저장 (A4/PDF)</span>
+      </button>
+      <button type="button" data-action="share-protocol" class="flex-1 md:flex-initial font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white/40 bg-black text-neutral-300 hover:text-white hover:border-white transition-all flex items-center justify-center gap-1.5">
+        <span>🔗</span>
+        <span id="ui-btn-share" data-i18n="share">공유</span>
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <div class="fixed top-16 right-4 z-50 bg-white text-black font-mono text-xs font-bold px-4 py-2 border-2 border-black hidden shadow-lg" id="toast"></div>
+
+  <script>
+    // 1. 다국어 데이터셋 인메모리 임베딩 (Single Source of Truth)
+    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-02","category":"FIRE","title":"프로토콜 #02: 나무로 불 지피는 방법 (원시 활비비 발화법)","threatLevel":"CRITICAL","threatLevelText":"[위험 등급: 치명적(CRITICAL)]","summary":"야간 야생에서 저체온증에 노출되면 3시간 이내에 사망할 수 있습니다. 마른 참나무 심재와 질긴 칡 껍질 줄을 결합한 원시 활비비(Bow Drill) 고속 회전 마찰열로 불씨를 유도합니다.","timeRequired":"20분 (20 MINUTES)","successRate":"94.2% (건조 목재 기준)","difficulty":"1등급 (원시 생존 기술)","outputPerHour":"불씨 3회 / 시간","materials":[{"id":"mat-fire-01","name":"마른 참나무 밑판 (FIRE BOARD)","desc":"바싹 마른 2cm 두께의 침엽수 또는 활엽수 판목. V자 홈을 파서 흑색 목탄가루를 포집."},{"id":"mat-fire-02","name":"곧은 버드나무 회전축 (SPINDLE)","desc":"직경 2cm, 길이 20cm의 곧고 단단한 마른 나뭇가지. 양 끝을 원뿔형으로 가공."},{"id":"mat-fire-03","name":"휜 물푸레나무 활대 & 칡 껍질 줄 (BOW & STRING)","desc":"탄력 있는 60cm 활대와 꼬아서 건조시킨 질긴 야생 칡 섬유 끈."}],"steps":[{"stepNumber":"01","title":"밑판 V자 노치 가공 및 스핀들 장착","description":"밑판 가장자리에 45도 각도로 V자 홈을 파냅니다. 스핀들을 활 시위에 한 바퀴 감아 수직으로 세우고 상단 누름목으로 단단히 압박합니다.","actionNote":"> 조치 사항: 밑판 아래에 마른 나뭇잎이나 껍질을 받쳐 생성된 고온 목탄가루가 땅의 습기를 먹지 않도록 격리하십시오.","svgFileName":"step-01.svg"},{"stepNumber":"02","title":"수평 왕복 톱질 및 마찰열 극대화","description":"활대를 지면과 수평으로 길고 일정한 리듬으로 왕복 운동시킵니다. 회전 속도를 서서히 올리며 검은 연기가 짙어질 때까지 최대 회전력을 가합니다.","actionNote":"> 과학적 원리: 고속 회전 마찰로 접촉면 온도가 400°C를 초과하면 탄화된 목탄 분말이 점화되어 미세 불씨 덩어리(Ember)가 형성됩니다.","svgFileName":"step-02.svg"},{"stepNumber":"03","title":"불씨 부싯깃 안치 및 산소 주입 발화","description":"생성된 흑색 불씨를 마른 쑥과 잔 나뭇잎으로 뭉친 부싯깃 새둥지에 조심스럽게 옮깁니다. 길고 부드럽게 입김을 불어 화염을 피워 올리십시오.","actionNote":"> 주의: 연기가 피어오른다고 급하게 세게 불면 미세 불씨가 흩어져 꺼집니다. 굵고 긴 호흡으로 온도를 점진적으로 올립니다.","svgFileName":"step-03.svg"}],"fatalMistake":{"title":"치명적 착각: 연기가 난다고 즉시 활질을 멈추거나 입김을 거칠게 불면 안 됩니다.","description":"연기는 단순 가열의 징후일 뿐 불씨 덩어리가 완전히 뭉쳐지기 전에 멈추면 공기 중에서 즉시 식어버립니다. 연기가 짙게 뿜어져 나온 후에도 10초간 전력으로 더 회전시켜 육안으로 붉은 불씨가 보일 때까지 멈추지 마십시오.","consequence":"조기 중단 시 결과: 체력 고갈, 손바닥 물집 파열 및 야간 저체온증 노출"}}};
+
+    // 2. State Layer 직렬화 런타임 스크립트 실행
+    window.__THEME_CONFIG__ = {"dark":{"label":"야간 전술 모드 [다크]","icon":"◐","bodyBg":"bg-black","bodyText":"text-white"},"light":{"label":"재생지 모드 [라이트]","icon":"☼","bodyBg":"bg-[#f4f3ee]","bodyText":"text-black"}};
+
+    function applyTheme(isDark) {
+      const html = document.documentElement;
+      const cfg = window.__THEME_CONFIG__[isDark ? 'dark' : 'light'];
+      const other = window.__THEME_CONFIG__[isDark ? 'light' : 'dark'];
+      
+      if (isDark) {
+        html.classList.add('dark');
+      } else {
+        html.classList.remove('dark');
+      }
+
+      document.body.classList.remove(other.bodyBg, other.bodyText);
+      document.body.classList.add(cfg.bodyBg, cfg.bodyText);
+
+      const label = document.getElementById('mode-label');
+      const icon = document.getElementById('mode-icon');
+      if (label) label.innerText = cfg.label;
+      if (icon) icon.innerText = cfg.icon;
+    }
+
+    function toggleTheme() {
+      const isDark = !document.documentElement.classList.contains('dark');
+      applyTheme(isDark);
+      showToast(isDark ? '야간 전술 모드로 전환되었습니다.' : '고대비 재생지 모드로 전환되었습니다.');
+    }
+    function updateChecklist() {
+      var checkboxes = document.querySelectorAll('input[type="checkbox"][data-material]');
+      var checked = 0;
+      checkboxes.forEach(function(b) { if (b.checked) checked++; });
+      var counter = document.getElementById('checklist-counter');
+      if (counter) {
+        var lang = document.documentElement.lang || 'ko';
+        var ui = (window.__UI_STRINGS__ && window.__UI_STRINGS__[lang]) || {};
+        var securedLabel = ui.itemsSecured || '확보 완료';
+        counter.innerText = checked + '/' + checkboxes.length + ' ' + securedLabel;
+        if (checked === checkboxes.length && checkboxes.length > 0) {
+          counter.classList.add('text-emerald-400', 'font-bold');
+        } else {
+          counter.classList.remove('text-emerald-400', 'font-bold');
+        }
+      }
+    }
+    window.__SUPPORTED_LOCALES__ = ["ko","en","ja","es","de","pt","zh-TW"];
+    window.__UI_STRINGS__ = {"ko":{"brandArchive":"생존 전술 교범 아카이브","offlineDb":"오프라인 DB","backToIndex":"← 전체 교범 목록","allProtocols":"전체 교범 인덱스","readingTime":"열람 소요 시간: 30초","timeRequired":"소요 시간","successRate":"생존율/성공률","difficulty":"기술 난이도","outputPerHour":"시간당 생산량","checklistTitle":"필수 확보 물자 체크리스트 (즉시 수집할 것)","itemsSecured":"확보 완료","fieldTested":"[야전 검증 완료]","procedureTitle":"실행 절차 // 수직 낙하식 야전 여과 파이프라인","stepsFlow":"단계 진행","fatalTitle":"위험 // 치명적 실수 경고","mustReadBeforeDrink":"음용 전 필독","nonNegotiableRule":"[타협 불가한 절대 수칙]","saveOffline":"오프라인 저장 (A4/PDF)","share":"공유","nextProtocol":"다음:","figurePrefix":"그림","toastCopied":"프로토콜 링크가 클립보드에 복사되었습니다.","toastOfflineSaved":"오프라인 프로토콜이 다운로드됩니다 (A4/PDF).","toastThemeSwitched":"테마가 전환되었습니다."},"en":{"brandArchive":"TACTICAL SURVIVAL ARCHIVE","offlineDb":"OFFLINE DB","backToIndex":"← All Protocols","allProtocols":"Protocol Index","readingTime":"Read Time: 30 sec","timeRequired":"Time Required","successRate":"Survival Rate","difficulty":"Skill Level","outputPerHour":"Output / Hour","checklistTitle":"Essential Materials Checklist (Gather Immediately)","itemsSecured":"Secured","fieldTested":"[FIELD VERIFIED]","procedureTitle":"Execution Protocol // Gravity Filtration Pipeline","stepsFlow":"Steps Flow","fatalTitle":"HAZARD // FATAL MISTAKE WARNING","mustReadBeforeDrink":"MUST READ BEFORE INGESTION","nonNegotiableRule":"[NON-NEGOTIABLE SURVIVAL RULE]","saveOffline":"Save Offline (A4/PDF)","share":"Share","nextProtocol":"Next:","figurePrefix":"FIG","toastCopied":"Protocol link copied to clipboard.","toastOfflineSaved":"Downloading offline manual (A4/PDF).","toastThemeSwitched":"Theme toggled successfully."},"ja":{"brandArchive":"生存戦術教本アーカイブ","offlineDb":"オフラインDB","backToIndex":"← 全教本リスト","allProtocols":"教本インデックス","readingTime":"閲覧所要時間: 30秒","timeRequired":"所要時間","successRate":"生存率/成功率","difficulty":"技術難易度","outputPerHour":"時間あたり生産量","checklistTitle":"必須確保物資チェックリスト (直ちに収集せよ)","itemsSecured":"確保完了","fieldTested":"[実戦検証完了]","procedureTitle":"実行手順 // 重力浸透式野戦ろ過パイプライン","stepsFlow":"ステップ進行","fatalTitle":"危険 // 致命的な過誤警告","mustReadBeforeDrink":"飲用前必読","nonNegotiableRule":"[妥協不可の絶対規則]","saveOffline":"オフライン保存 (A4/PDF)","share":"共有","nextProtocol":"次:","figurePrefix":"図","toastCopied":"プロトコルリンクがクリップボードにコピーされました。","toastOfflineSaved":"オフ라인教本がダウンロードされます (A4/PDF)。","toastThemeSwitched":"テーマが切り替わりました。"},"es":{"brandArchive":"ARCHIVO DE SUPERVIVENCIA TÁCTICA","offlineDb":"BD DESCONECTADA","backToIndex":"← Todos los Protocolos","allProtocols":"Índice General","readingTime":"Lectura: 30 seg","timeRequired":"Tiempo Requerido","successRate":"Tasa de Éxito","difficulty":"Dificultad","outputPerHour":"Producción / Hora","checklistTitle":"Lista de Materiales Esenciales (Recoger de Inmediato)","itemsSecured":"Asegurados","fieldTested":"[PROBADO EN CAMPO]","procedureTitle":"Procedimiento // Filtración por Gravedad","stepsFlow":"Flujo de Pasos","fatalTitle":"PELIGRO // ADVERTENCIA DE ERROR FATAL","mustReadBeforeDrink":"LEER ANTES DE BEBER","nonNegotiableRule":"[REGLA DE SUPERVIVENCIA NO NEGOCIABLE]","saveOffline":"Guardar Offline (PDF)","share":"Compartir","nextProtocol":"Siguiente:","figurePrefix":"FIG","toastCopied":"Enlace copiado al portapapeles.","toastOfflineSaved":"Descargando manual offline (PDF).","toastThemeSwitched":"Tema cambiado."},"de":{"brandArchive":"TAKTIK-ÜBERLEBENSARCHIV","offlineDb":"OFFLINE-DB","backToIndex":"← Alle Protokolle","allProtocols":"Protokoll-Index","readingTime":"Lesezeit: 30 Sek","timeRequired":"Dauer","successRate":"Überlebensrate","difficulty":"Schwierigkeitsgrad","outputPerHour":"Leistung / Stunde","checklistTitle":"Material-Checkliste (Sofort sammeln)","itemsSecured":"Gesichert","fieldTested":"[FELDERPROBT]","procedureTitle":"Ablauf // Schwerkraft-Filtrationspipeline","stepsFlow":"Schritte","fatalTitle":"GEFAHR // TÖDLICHE FEHLERWARNUNG","mustReadBeforeDrink":"VOR DEM TRINKEN LESEN","nonNegotiableRule":"[UNVERHANDELBARE REGEL]","saveOffline":"Offline speichern (PDF)","share":"Teilen","nextProtocol":"Weiter:","figurePrefix":"ABB","toastCopied":"Link in die Zwischenablage kopiert.","toastOfflineSaved":"Offline-Handbuch wird heruntergeladen (PDF).","toastThemeSwitched":"Design umgeschaltet."},"pt":{"brandArchive":"ARQUIVO DE SOBREVIVÊNCIA TÁCTICA","offlineDb":"BD OFFLINE","backToIndex":"← Todos os Protocolos","allProtocols":"Índice Geral","readingTime":"Leitura: 30 seg","timeRequired":"Tempo Necessário","successRate":"Taxa de Sobrevivência","difficulty":"Dificuldade","outputPerHour":"Produção / Hora","checklistTitle":"Checklist de Materiais Essenciais (Coletar Imediatamente)","itemsSecured":"Garantidos","fieldTested":"[TESTADO EM CAMPO]","procedureTitle":"Execução // Filtragem por Gravidade","stepsFlow":"Etapas","fatalTitle":"PERIGO // ALERTA DE ERRO FATAL","mustReadBeforeDrink":"LEIA ANTES DE BEBER","nonNegotiableRule":"[REGRA INEGOCIÁVEL]","saveOffline":"Salvar Offline (PDF)","share":"Compartilhar","nextProtocol":"Próximo:","figurePrefix":"FIG","toastCopied":"Link copiado.","toastOfflineSaved":"Baixando manual offline (PDF).","toastThemeSwitched":"Tema alterado."},"zh-TW":{"brandArchive":"生存戰術手冊檔案庫","offlineDb":"離線數據庫","backToIndex":"← 所有手冊目錄","allProtocols":"手冊總目錄","readingTime":"閱讀時間：30秒","timeRequired":"所需時間","successRate":"生存率/成功率","difficulty":"技術難度","outputPerHour":"每小時產量","checklistTitle":"必備物資清單（立即收集）","itemsSecured":"已確保","fieldTested":"[實戰檢驗完成]","procedureTitle":"執行程序 // 重力滲透式野外過濾","stepsFlow":"步驟進行","fatalTitle":"危險 // 致命錯誤警告","mustReadBeforeDrink":"飲用前必讀","nonNegotiableRule":"[不可妥協的絕對法則]","saveOffline":"離線保存 (A4/PDF)","share":"分享","nextProtocol":"下一篇：","figurePrefix":"圖","toastCopied":"協議連結已複製至剪貼簿。","toastOfflineSaved":"離線手冊下載中 (A4/PDF)。","toastThemeSwitched":"主題已切換。"}};
+
+    /**
+     * W3C 표준 브라우저 헤더 및 환경 감지 (URL -> localStorage -> navigator.language -> 기본값)
+     */
+    function detectInitialLocale() {
+      var urlParams = new URLSearchParams(window.location.search);
+  var lang = urlParams.get('lang');
+  if (!lang) {
+    try { lang = localStorage.getItem('archive0_locale'); } catch(e) {}
+  }
+  if (!lang) {
+    var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (nav.startsWith('ja')) lang = 'ja';
+    else if (nav.startsWith('es')) lang = 'es';
+    else if (nav.startsWith('de')) lang = 'de';
+    else if (nav.startsWith('pt')) lang = 'pt';
+    else if (nav.startsWith('zh')) lang = 'zh-TW';
+    else if (nav.startsWith('en')) lang = 'en';
+    else lang = 'ko';
+  }
+      return (lang && window.__PROTOCOLS__[lang]) ? lang : 'ko';
+    }
+
+    /**
+     * 100% 선언적 범용 데이터 바인딩 0.01초 핫스왑 엔진
+     */
+    function switchLocale(targetLocale) {
+      var proto = window.__PROTOCOLS__[targetLocale];
+      var ui = window.__UI_STRINGS__[targetLocale];
+      if (!proto || !ui) {
+        showToast('해당 언어는 현재 준비 중입니다.');
+        return;
+      }
+
+      document.documentElement.lang = targetLocale;
+      try { localStorage.setItem('archive0_locale', targetLocale); } catch(e) {}
+
+      // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n)
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (ui[key] !== undefined) el.innerText = ui[key];
+      });
+
+      // 2. [선언적 엔진] 프로토콜 단일 필드 자동 매핑 (data-proto)
+      document.querySelectorAll('[data-proto]').forEach(function(el) {
+        var field = el.getAttribute('data-proto');
+        if (proto[field] !== undefined) el.innerText = proto[field];
+      });
+
+      // 3. [선언적 엔진] 배열 반복 아이템 범용 자동 매핑 (data-proto-item, data-proto-prop, data-index)
+      document.querySelectorAll('[data-proto-item]').forEach(function(el) {
+        var itemKey = el.getAttribute('data-proto-item');
+        var prop = el.getAttribute('data-proto-prop');
+        var idx = parseInt(el.getAttribute('data-index'), 10);
+        if (proto[itemKey] && proto[itemKey][idx] && proto[itemKey][idx][prop] !== undefined) {
+          el.innerText = proto[itemKey][idx][prop];
+        }
+      });
+
+      // 4. [선언적 엔진] 치명적 실수(Fatal Mistake) 중첩 객체 자동 매핑 (data-proto-fatal)
+      document.querySelectorAll('[data-proto-fatal]').forEach(function(el) {
+        var prop = el.getAttribute('data-proto-fatal');
+        if (proto.fatalMistake && proto.fatalMistake[prop] !== undefined) {
+          el.innerText = proto.fatalMistake[prop];
+        }
+      });
+
+      // 5. 언어 스위처 UI 버튼 액티브 스타일 동기화
+      document.querySelectorAll('[data-locale-btn]').forEach(function(btn) {
+        var code = btn.getAttribute('data-locale-btn');
+        btn.className = (code === targetLocale)
+          ? 'px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all bg-white text-black'
+          : 'px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white';
+      });
+
+      // 6. 체크리스트 카운터 실시간 재연산
+      if (typeof updateChecklist === 'function') updateChecklist();
+
+      // 7. URL 파라미터 무새로고침 동기화
+      if (window.history && window.history.replaceState) {
+        var newUrl = window.location.pathname + '?lang=' + targetLocale;
+        window.history.replaceState(null, '', newUrl);
+      }
+
+      // 8. FOUC 쉴드 해제 (깜빡임 없이 부드러운 렌더링 확정)
+      document.documentElement.removeAttribute('data-fouc');
+    }
+    (function () {
+      var root = document.documentElement;
+      function syncNetwork() {
+        root.setAttribute('data-network', navigator.onLine ? 'online' : 'offline');
+      }
+      syncNetwork();
+      window.addEventListener('online', syncNetwork);
+      window.addEventListener('offline', syncNetwork);
+
+      if (!('serviceWorker' in navigator)) {
+        root.setAttribute('data-offline-ready', 'unsupported');
+        return;
+      }
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function () { return navigator.serviceWorker.ready; })
+          .then(function () { root.setAttribute('data-offline-ready', 'true'); })
+          .catch(function () { root.setAttribute('data-offline-ready', 'false'); });
+      });
+    })();
+
+    // 3. 선언적 이벤트 위임 (Event Delegation)
+    document.addEventListener('click', function(e) {
+      var target = e.target.closest('[data-action]');
+      if (!target) return;
+      var action = target.getAttribute('data-action');
+
+      if (action === 'switch-locale') {
+        var lang = target.getAttribute('data-locale-btn');
+        switchLocale(lang);
+      } else if (action === 'toggle-theme') {
+        toggleTheme();
+      } else if (action === 'save-offline') {
+        saveOfflineManual();
+      } else if (action === 'share-protocol') {
+        shareProtocol();
+      }
+    });
+
+    document.addEventListener('change', function(e) {
+      if (e.target && e.target.hasAttribute('data-material')) {
+        updateChecklist();
+      }
+    });
+
+    // 4. 초기 언어 자동 감지 및 핫스왑 실행 (브라우저 헤더 / URL / 저장값 기반)
+    window.addEventListener('DOMContentLoaded', function() {
+      var initialLang = detectInitialLocale();
+      if (initialLang && initialLang !== 'ko') {
+        switchLocale(initialLang);
+      } else {
+        document.documentElement.removeAttribute('data-fouc');
+      }
+    });
+
+    function showToast(msg) {
+      var toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.innerText = msg;
+      toast.classList.remove('hidden');
+      setTimeout(function() { toast.classList.add('hidden'); }, 2500);
+    }
+
+    function saveOfflineManual() {
+      showToast('오프라인 프로토콜이 다운로드됩니다 (A4/PDF).');
+      window.print();
+    }
+
+    function shareProtocol() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('프로토콜 링크가 클립보드에 복사되었습니다.');
+      } else {
+        showToast('비상 채널로 프로토콜이 공유되었습니다.');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="dark" lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ARCHIVE-0: プロトコル #01: 野生汚染水の浄化および飲用水化マニュアル</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Public+Sans:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Noto Sans KR"', '"Public Sans"', '"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; border-radius: 0px !important; -webkit-font-smoothing: antialiased; }
+    @media print { .no-print { display: none !important; } body { background: white !important; color: black !important; } }
+  </style>
+</head>
+<body class="bg-black text-white dark:bg-black dark:text-white font-sans transition-colors duration-150 min-h-screen selection:bg-white selection:text-black flex flex-col justify-between">
+  <header class="border-b-2 border-white dark:border-white bg-black dark:bg-black sticky top-0 z-40 px-4 sm:px-8 py-4 transition-colors">
+  <div class="max-w-5xl mx-auto flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a class="font-mono text-xl sm:text-2xl font-black tracking-tighter bg-white text-black px-2.5 py-0.5 border border-black hover:invert transition-all" href="/">[ARCHIVE-0]</a>
+        <span class="font-mono text-xs uppercase tracking-wider text-neutral-400 hidden sm:inline-block border-l border-white/30 pl-3">生存戦術教本アーカイブ</span>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Multilingual Switcher -->
+        <div class="flex items-center border border-white/40 px-1 py-0.5 bg-neutral-950">
+          <span class="text-neutral-400 text-xs px-1 select-none">🌐</span>
+          
+        <a href="/protocol-01.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">KO</a>
+      
+        <a href="/protocol-01.en.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">EN</a>
+      
+        <a href="/protocol-01.ja.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all bg-white text-black">JA</a>
+      
+        <a href="/protocol-01.es.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">ES</a>
+      
+        <a href="/protocol-01.de.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">DE</a>
+      
+        <a href="/protocol-01.pt.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">PT</a>
+      
+        <a href="/protocol-01.zh-tw.html" class="px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white">ZH</a>
+      
+        </div>
+        <button type="button" data-action="toggle-theme" class="font-mono text-xs border border-white/40 px-2.5 py-1 text-neutral-300 hover:text-white hover:border-white flex items-center gap-1.5 transition-all">
+          <span id="mode-icon">◐</span>
+          <span id="mode-label" class="hidden sm:inline">야간 전술 [다크]</span>
+        </button>
+        <a class="px-2.5 py-1 border border-white bg-white text-black font-mono text-xs font-bold uppercase hover:bg-black hover:text-white transition-all hidden md:inline-block" href="#">オフラインDB</a>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-white/20 text-xs font-mono">
+      <div class="flex items-center gap-2 text-neutral-400">
+        <a class="text-white hover:underline flex items-center gap-1 font-bold" href="/"><span class="text-neutral-400 font-normal">←</span> ← 全教本リスト</a>
+        <span class="text-white/30">/</span>
+        <span class="hover:text-white">WATER</span>
+        <span class="text-white/30">/</span>
+        <span class="text-white font-semibold">プロトコル #01: 野生汚染水の浄化および飲用水化マニュアル</span>
+      </div>
+      <a class="hidden md:inline-flex items-center gap-1 text-[11px] text-neutral-300 hover:text-white hover:underline border border-white/30 px-2 py-0.5" href="/">
+        <span>← 全教本リスト</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-8 md:py-12 flex-1 pb-32">
+    <section class="border-2 border-white dark:border-white p-5 sm:p-8 mb-8 bg-neutral-950 dark:bg-neutral-950 relative overflow-hidden">
+  <div class="absolute -right-6 -bottom-6 font-mono text-7xl font-black text-white/5 pointer-events-none select-none tracking-tighter">
+    PR-01
+  </div>
+  <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-4 font-mono text-xs">
+    <span class="bg-white text-black font-extrabold px-2.5 py-1 tracking-wider uppercase">
+      [危険度: 致命的(CRITICAL)]
+    </span>
+    <span class="border border-white/40 px-2 py-1 uppercase text-neutral-400">
+      분류: WATER
+    </span>
+    <span class="border border-white/40 px-2 py-1 uppercase text-neutral-400">
+      열람 소요 시간: 30초
+    </span>
+  </div>
+  <h1 class="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight uppercase leading-[1.15] mb-4 text-white">
+    プロトコル #01: 野生汚染水の浄化および飲用水化マニュアル
+  </h1>
+  <p class="text-base sm:text-lg text-neutral-300 font-medium max-w-3xl leading-relaxed border-l-2 border-white pl-4 my-2">
+    汚染された自然水をそのまま飲用すると、細菌性赤痢やジアルジア症（原虫感染）により72時間以内に脱水死に至る恐れがあります。木炭の多孔質吸着による物理ろ過工程を経て、必ず加熱沸騰による滅菌を行わなければなりません。
+  </p>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-6 mt-6 border-t border-white/20 font-mono text-xs">
+    <div>
+      <div class="text-neutral-500 uppercase text-[10px]">소요 시간</div>
+      <div class="font-bold text-white">15分 (15 MINUTES)</div>
+    </div>
+    <div>
+      <div class="text-neutral-500 uppercase text-[10px]">생존율/성공률</div>
+      <div class="font-bold text-white">99.8% (煮沸滅菌後)</div>
+    </div>
+    <div>
+      <div class="text-neutral-500 uppercase text-[10px]">기술 난이도</div>
+      <div class="font-bold text-white">第1等級 (原始ブッシュクラフト技術)</div>
+    </div>
+    <div>
+      <div class="text-neutral-500 uppercase text-[10px]">시간당 생산량</div>
+      <div class="font-bold text-white">1.5リットル / 時間</div>
+    </div>
+  </div>
+</section>
+    <section class="border border-white dark:border-white mb-8 p-5 sm:p-6 bg-black dark:bg-black">
+  <div class="flex items-center justify-between border-b border-white/30 pb-3 mb-4">
+    <h2 class="font-mono text-sm sm:text-base font-bold uppercase tracking-wider flex items-center gap-2">
+      <span class="bg-white text-black px-1.5 py-0.5 text-xs font-mono font-bold">REQ</span>
+      필수 확보 물자 체크리스트 (즉시 수집할 것)
+    </h2>
+    <span class="font-mono text-xs text-neutral-400" id="checklist-counter">0/3 확보 완료</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-xs sm:text-sm">
+    
+    <label class="flex items-start gap-3 p-3 border border-white/30 hover:border-white cursor-pointer bg-neutral-900/50 transition-all group">
+      <input type="checkbox" id="mat-01" data-material="mat-01" class="mt-0.5 w-4 h-4 rounded-none accent-white cursor-pointer bg-black border border-white">
+      <div>
+        <div class="font-bold text-white group-hover:underline">粉砕した広葉樹の木炭 (HARDWOOD CHARCOAL)</div>
+        <div class="text-[11px] text-neutral-400 mt-0.5">焚き火の残り炭。エンドウ豆大に細かく砕き、毒素や有害物質を吸着させる。</div>
+      </div>
+    </label>
+  
+    <label class="flex items-start gap-3 p-3 border border-white/30 hover:border-white cursor-pointer bg-neutral-900/50 transition-all group">
+      <input type="checkbox" id="mat-02" data-material="mat-02" class="mt-0.5 w-4 h-4 rounded-none accent-white cursor-pointer bg-black border border-white">
+      <div>
+        <div class="font-bold text-white group-hover:underline">清潔な川砂 ＆ 小砂利 (SAND & GRAVEL)</div>
+        <div class="text-[11px] text-neutral-400 mt-0.5">水洗いした川砂と小石。微細な浮遊物や濁りを物理的に遮断する。</div>
+      </div>
+    </label>
+  
+    <label class="flex items-start gap-3 p-3 border border-white/30 hover:border-white cursor-pointer bg-neutral-900/50 transition-all group">
+      <input type="checkbox" id="mat-03" data-material="mat-03" class="mt-0.5 w-4 h-4 rounded-none accent-white cursor-pointer bg-black border border-white">
+      <div>
+        <div class="font-bold text-white group-hover:underline">切断したペットボトルまたは竹筒 (BOTTLE/TUBE)</div>
+        <div class="text-[11px] text-neutral-400 mt-0.5">底を切り抜いた2Lペットボトルを逆さにするか、直径8cm以上の太い竹を活用。</div>
+      </div>
+    </label>
+  
+  </div>
+  <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-400">
+    <span>대체 여과 차단재: 깨끗한 면 손수건, 건조된 물이끼, 또는 불에 그을린 자작나무 껍질 메쉬</span>
+    <span class="text-white font-bold hidden sm:inline">[야전 검증 완료]</span>
+  </div>
+</section>
+    <div class="mb-8">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="font-mono text-sm sm:text-base font-bold uppercase tracking-wider text-white">
+      실행 절차 // 수직 낙하식 야전 여과 파이프라인
+    </h2>
+    <span class="font-mono text-xs text-neutral-400">1단계 ~ 3단계 진행</span>
+  </div>
+  <div class="space-y-6">
+    <div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
+        <svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-linecap="square" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Bottle outline -->
+<rect height="110" stroke-dasharray="2,2" width="90" x="55" y="45"></rect>
+<!-- Cut line indicator -->
+<line stroke="white" stroke-width="2" x1="40" x2="160" y1="50" y2="50"></line>
+<!-- Cut scissor / marker -->
+<text fill="white" font-family="monospace" font-size="9" font-weight="bold" x="50" y="42">절단선 [바닥면 3인치]</text>
+<!-- Bottle inverted body -->
+<path d="M60,65 L140,65 L140,140 Q140,170 115,180 L115,195 L85,195 L85,180 Q60,170 60,140 Z" stroke-width="2"></path>
+<!-- Cap pierced holes -->
+<line stroke-width="3" x1="90" x2="110" y1="195" y2="195"></line>
+<line stroke-dasharray="2,2" x1="95" x2="95" y1="198" y2="204"></line>
+<line stroke-dasharray="2,2" x1="100" x2="100" y1="198" y2="204"></line>
+<line stroke-dasharray="2,2" x1="105" x2="105" y1="198" y2="204"></line>
+<!-- Arrow inverted -->
+<path d="M100,15 L100,35 M95,30 L100,35 L105,30" stroke-width="1.5"></path>
+<text fill="white" font-family="monospace" font-size="9" text-anchor="middle" x="100" y="10">역방향 반전 배치</text>
+</svg>
+        <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center">그림: 容器の切断とろ過ベースの構築</span>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-mono font-black text-3xl sm:text-4xl text-white">01</span>
+          <div class="h-4 w-px bg-white/40"></div>
+          <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-white">容器の切断とろ過ベースの構築</h3>
+        </div>
+        <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-3">
+          サバイバルナイフでペットボトルの底から7〜8cmの箇所を水平に切り、広い漏斗状にします。飲み口を下にして逆さに配置してください。
+        </p>
+        <p class="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed bg-neutral-900/60 p-3 border-l-2 border-white">
+          > 処置事項: キャップにピンで3箇所穴を開けるか、綿布や乾燥したミズゴケを飲み口に固く詰め、ろ過材の流出を防ぎます。
+        </p>
+      </div>
+    </div>
+<div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
+        <svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Vessel Wall -->
+<path d="M45,25 L155,25 L145,150 L115,175 L115,192 L85,192 L85,175 L55,150 Z" stroke-width="2"></path>
+<!-- Layer 1: Gravel Top -->
+<rect fill="#ffffff" fill-opacity="0.1" height="25" stroke="white" stroke-dasharray="2,2" width="96" x="52" y="35"></rect>
+<!-- Layer 2: Sand -->
+<rect height="30" stroke="white" stroke-width="1" width="84" x="58" y="60"></rect>
+<!-- Dots for sand -->
+<line stroke-dasharray="1,4" stroke-width="2" x1="65" x2="135" y1="75" y2="75"></line>
+<line stroke-dasharray="2,3" stroke-width="1.5" x1="68" x2="132" y1="80" y2="80"></line>
+<!-- Layer 3: Crushed Charcoal (Dense) -->
+<rect fill="#ffffff" fill-opacity="0.35" height="38" stroke="white" stroke-width="1.5" width="70" x="65" y="90"></rect>
+<!-- Layer 4: Cloth Plug -->
+<path d="M78,145 L122,145 L110,172 L90,172 Z" fill="#ffffff" stroke="white"></path>
+<!-- Text Callouts -->
+<text fill="white" font-family="monospace" font-size="8" x="160" y="48">자갈 [3cm]</text>
+<text fill="white" font-family="monospace" font-size="8" x="160" y="77">모래 [5cm]</text>
+<text fill="white" font-family="monospace" font-size="8" x="160" y="112">활성숯 [6cm]</text>
+<text fill="white" font-family="monospace" font-size="8" x="160" y="158">면포 마개</text>
+<!-- Connection lines -->
+<line stroke="white" stroke-width="0.75" x1="140" x2="156" y1="46" y2="46"></line>
+<line stroke-white"="" stroke-width="0.75" x1="135" x2="156" y1="75" y2="75"></line>
+<line stroke="white" stroke-width="0.75" x1="128" x2="156" y1="108" y2="108"></line>
+<line stroke="white" stroke-width="0.75" x1="115" x2="156" y1="156" y2="156"></line>
+</svg>
+        <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center">그림: ろ過材の階層充填 (逆ピラミッド構造)</span>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-mono font-black text-3xl sm:text-4xl text-white">02</span>
+          <div class="h-4 w-px bg-white/40"></div>
+          <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-white">ろ過材の階層充填 (逆ピラミッド構造)</h3>
+        </div>
+        <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-3">
+          逆三角形の層状構造で厳密に充填します: 飲み口の綿布プラグ → 粉砕木炭(6cm) → 細かい砂(5cm) → 粗い砂利(3cm)の順序です。
+        </p>
+        <p class="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed bg-neutral-900/60 p-3 border-l-2 border-white">
+          > 科学的根拠: 砂利が枯葉等の粗いゴミを遮断し、砂が泥濁りを捕集し、多孔質活性炭が化学物質や異臭を化学吸着します。
+        </p>
+      </div>
+    </div>
+<div class="border-2 border-white dark:border-white bg-black dark:bg-black p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-4 flex flex-col items-center justify-center border border-white/30 bg-neutral-950 p-4 aspect-square">
+        <svg class="w-full h-full max-w-[170px] stroke-white fill-none" stroke-width="1.5" viewBox="0 0 200 200">
+<!-- Cloudy Input -->
+<path d="M80,15 C90,25 110,25 120,15" stroke="white" stroke-width="2"></path>
+<line stroke-dasharray="3,3" x1="95" x2="95" y1="28" y2="48"></line>
+<line stroke-dasharray="3,3" x1="105" x2="105" y1="28" y2="48"></line>
+<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="10">유입: 오염된 탁수</text>
+<!-- Inverted Funnel -->
+<polygon points="60,50 140,50 115,115 85,115" stroke="white" stroke-width="2"></polygon>
+<line stroke-dasharray="2,2" x1="70" x2="130" y1="75" y2="75"></line>
+<!-- Drops of clear water -->
+<circle cx="100" cy="132" fill="white" r="2.5"></circle>
+<circle cx="100" cy="144" fill="white" r="2.5"></circle>
+<circle cx="100" cy="156" fill="white" r="2.5"></circle>
+<!-- Collection Basin -->
+<rect height="28" stroke="white" stroke-width="2" width="70" x="65" y="165"></rect>
+<line stroke-dasharray="1,2" stroke-white"="" x1="72" x2="128" y1="180" y2="180"></line>
+<text fill="white" font-family="monospace" font-size="8" text-anchor="middle" x="100" y="178">1차 맑은 여과수</text>
+</svg>
+        <span class="font-mono text-[10px] text-neutral-400 mt-2 uppercase tracking-widest text-center">그림: 汚濁水の注入と透明ろ過水の採取</span>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-mono font-black text-3xl sm:text-4xl text-white">03</span>
+          <div class="h-4 w-px bg-white/40"></div>
+          <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-white">汚濁水の注入と透明ろ過水の採取</h3>
+        </div>
+        <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-3">
+          最上部の砂利層に濁水を静かに注ぎます。重力浸透により、毎秒約1滴の安定したペースで清潔な受け皿に滴下させます。
+        </p>
+        <p class="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed bg-neutral-900/60 p-3 border-l-2 border-white">
+          > 注意: 最初に抽出された約250mlのろ過水は微細な炭粉を含むため廃棄してください。完全に透明な水が出るまで通水し続けます。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="border-4 border-white dark:border-white p-6 sm:p-8 bg-black dark:bg-black text-white relative overflow-hidden mb-12 shadow-[0_0_0_1px_rgba(255,255,255,0.2)]">
+  <div class="flex items-center gap-2 mb-4">
+    <span class="bg-white text-black font-mono font-black px-2 py-0.5 text-xs tracking-widest animate-pulse">
+      위험 // 치명적 실수 경고
+    </span>
+    <span class="font-mono text-xs text-neutral-400">음용 전 필독</span>
+  </div>
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+    <div class="text-4xl sm:text-5xl select-none font-mono">⚠️</div>
+    <div>
+      <h4 class="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight mb-3">
+        致命的な過誤: ろ過された透明な水も、絶対にそのまま飲んではいけません。
+      </h4>
+      <p class="text-neutral-200 text-sm sm:text-base leading-relaxed font-sans font-medium">
+        木炭ろ過は浮遊物や化学物質、臭気を取り除くだけで、ウイルスやジアルジア胞嚢、クリプトスポリジウムなどの微小な病原体はそのまま通過します。ろ過された水を必ず最低1分間以上（標高2000m以上では3分）激しく沸騰させて初めて、安全に飲用可能となります。
+      </p>
+    </div>
+  </div>
+  <div class="mt-6 pt-4 border-t border-white/20 flex flex-wrap items-center justify-between font-mono text-xs text-neutral-400 gap-2">
+    <span>煮沸を省略した場合の結末: 急性感染症による激しい下痢および96時間以内の脱水死</span>
+    <span class="text-white font-bold tracking-wider">[타협 불가한 절대 수칙]</span>
+  </div>
+</section>
+  </main>
+
+  <aside class="fixed bottom-0 left-0 right-0 z-50 bg-black/95 dark:bg-black/95 border-t-2 border-white backdrop-blur-sm px-4 sm:px-8 py-3 transition-colors">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+    <div class="flex items-center gap-2 w-full md:w-auto justify-between md:justify-start">
+      <a class="font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white/40 text-neutral-300 hover:text-white hover:border-white flex items-center gap-1 transition-all" href="/">
+        <span>←</span> 전체 교범 인덱스
+      </a>
+      <span class="text-white/20 hidden sm:inline">|</span>
+      <a class="font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white text-white hover:bg-white hover:text-black flex items-center gap-2 transition-all" href="#">
+        <span>다음: 次: PR-02</span>
+        <span>→</span>
+       </a>
+    </div>
+    <div class="flex items-center gap-2 w-full md:w-auto">
+      <button type="button" data-action="save-offline" class="flex-1 md:flex-initial font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white bg-white text-black hover:bg-transparent hover:text-white transition-all flex items-center justify-center gap-1.5">
+        <span>💾</span>
+        <span>오프라인 저장 (A4/PDF)</span>
+      </button>
+      <button type="button" data-action="share-protocol" class="flex-1 md:flex-initial font-mono text-xs font-bold uppercase tracking-wider px-3 py-2 border border-white/40 bg-black text-neutral-300 hover:text-white hover:border-white transition-all flex items-center justify-center gap-1.5">
+        <span>🔗</span>
+        <span>공유</span>
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <div class="fixed top-16 right-4 z-50 bg-white text-black font-mono text-xs font-bold px-4 py-2 border-2 border-black hidden shadow-lg" id="toast"></div>
+
+  <script>
+    // State Layer에서 직렬화된 런타임 스크립트 (Single Source of Truth)
+    window.__THEME_CONFIG__ = {"dark":{"label":"야간 전술 모드 [다크]","icon":"◐","bodyBg":"bg-black","bodyText":"text-white"},"light":{"label":"재생지 모드 [라이트]","icon":"☼","bodyBg":"bg-[#f4f3ee]","bodyText":"text-black"}};
+
+    function applyTheme(isDark) {
+      const html = document.documentElement;
+      const cfg = window.__THEME_CONFIG__[isDark ? 'dark' : 'light'];
+      const other = window.__THEME_CONFIG__[isDark ? 'light' : 'dark'];
+      
+      if (isDark) {
+        html.classList.add('dark');
+      } else {
+        html.classList.remove('dark');
+      }
+
+      document.body.classList.remove(other.bodyBg, other.bodyText);
+      document.body.classList.add(cfg.bodyBg, cfg.bodyText);
+
+      const label = document.getElementById('mode-label');
+      const icon = document.getElementById('mode-icon');
+      if (label) label.innerText = cfg.label;
+      if (icon) icon.innerText = cfg.icon;
+    }
+
+    function toggleTheme() {
+      const isDark = !document.documentElement.classList.contains('dark');
+      applyTheme(isDark);
+      showToast(isDark ? '야간 전술 모드로 전환되었습니다.' : '고대비 재생지 모드로 전환되었습니다.');
+    }
+    function updateChecklist() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"][data-material]');
+      let checked = 0;
+      checkboxes.forEach(b => { if (b.checked) checked++; });
+      const counter = document.getElementById('checklist-counter');
+      if (counter) {
+        counter.innerText = checked + '/' + checkboxes.length + ' 확보 완료';
+        if (checked === checkboxes.length && checkboxes.length > 0) {
+          counter.classList.add('text-emerald-400', 'font-bold');
+        } else {
+          counter.classList.remove('text-emerald-400', 'font-bold');
+        }
+      }
+    }
+
+    // 선언적 이벤트 위임 (Event Delegation)
+    document.addEventListener('click', function(e) {
+      var target = e.target.closest('[data-action]');
+      if (!target) return;
+      var action = target.getAttribute('data-action');
+      if (action === 'toggle-theme') toggleTheme();
+      if (action === 'save-offline') saveOfflineManual();
+      if (action === 'share-protocol') shareProtocol();
+    });
+
+    document.addEventListener('change', function(e) {
+      if (e.target && e.target.hasAttribute('data-material')) {
+        updateChecklist();
+      }
+    });
+
+    function showToast(msg) {
+      var toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.innerText = msg;
+      toast.classList.remove('hidden');
+      setTimeout(function() { toast.classList.add('hidden'); }, 2500);
+    }
+
+    function saveOfflineManual() {
+      showToast('オフ라인教本がダウンロードされます (A4/PDF)。');
+      window.print();
+    }
+
+    function shareProtocol() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('プロトコルリンクがクリップボードにコピーされました。');
+      } else {
+        showToast('Shared protocol link.');
+      }
+    }
+  </script>
+</body>
+</html>

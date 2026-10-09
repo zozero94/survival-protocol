@@ -1,0 +1,22 @@
+{
+  "name": "primitive-survival",
+  "version": "1.0.0",
+  "description": "ARCHIVE-0: Primitive Survival Field Manual & YouTube Shorts Pipeline",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/pipeline.ts",
+    "generate": "node --experimental-strip-types src/pipeline.ts",
+    "build": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types tests/**/*.test.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.18.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
