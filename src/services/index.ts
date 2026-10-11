@@ -8,3 +8,5 @@ export * from './deploy.service.ts';
 export * from './protocol-generator.service.ts';
 export * from './telegram-bot.service.ts';
 export * from './seo.service.ts';
+export * from './webhook-context.service.ts';
+

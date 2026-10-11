@@ -174,5 +174,49 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
 
     assert.ok(mockClient.sentMessages.some((m) => m.text.includes('Stitch 생성 프롬프트 명세서')));
   });
+
+  it('WebhookContextService는 AES-256-GCM으로 런타임 설정을 안전하게 암호화/복호화하고 위변조를 차단해야 한다', async () => {
+    const { WebhookContextService } = await import('../src/services/webhook-context.service.ts');
+    const original = {
+      botToken: '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11',
+      chatId: '7137542168',
+      geminiApiKey: 'AIzaSyTestKey1234567890',
+      githubToken: 'ghp_testGitHubToken987654321',
+    };
+
+    const encrypted = WebhookContextService.encryptContext(original);
+    assert.ok(!encrypted.includes(original.botToken));
+    assert.ok(!encrypted.includes(original.geminiApiKey));
+
+    const decrypted = WebhookContextService.decryptContext(encrypted);
+    assert.deepStrictEqual(decrypted, original);
+
+    // 변조된 토큰은 null을 반환해야 함
+    const tampered = encrypted.slice(0, -4) + 'XXXX';
+    assert.strictEqual(WebhookContextService.decryptContext(tampered), null);
+
+    // Secret Token 생성 검증
+    const secret = WebhookContextService.generateSecretToken(original.botToken);
+    assert.strictEqual(secret.length, 32);
+    assert.match(secret, /^[a-f0-9]{32}$/);
+  });
+
+  it('handleUpdate는 서버리스 웹훅으로 유입된 메시지 및 콜백 업데이트를 모두 처리해야 한다', async () => {
+    const mockClient = new MockTelegramApiClient();
+    const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
+
+    await bot.handleUpdate({
+      update_id: 9001,
+      message: {
+        message_id: 10,
+        chat: { id: 1234, type: 'private' },
+        date: Date.now(),
+        text: '/status',
+      },
+    });
+
+    assert.ok(mockClient.sentMessages.some((m) => m.text.includes('시스템 및 배포 상태')));
+  });
 });
+
 

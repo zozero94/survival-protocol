@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://survival-protocol-kappa.vercel.app/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/?lang=ko"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://survival-protocol-kappa.vercel.app/protocol-01</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/protocol-01?lang=ko"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://survival-protocol-kappa.vercel.app/protocol-02</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=ko"/>

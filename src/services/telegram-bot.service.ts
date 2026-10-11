@@ -4,13 +4,15 @@ import { fileURLToPath } from 'url';
 import { CONFIG } from '../config.ts';
 import { ProtocolGeneratorService } from './protocol-generator.service.ts';
 import { DeployService } from './deploy.service.ts';
-import { TopicCuratorService } from './topic-curator.service.ts';
 import { buildSite } from '../pipeline.ts';
 import { SITE_META } from '../site.config.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname, '../..');
+const defaultRootDir = path.resolve(__dirname, '../..');
+function getRootDir(): string {
+  return process.env.SURVIVAL_ROOT_DIR || defaultRootDir;
+}
 
 export interface TelegramInlineButton {
   text: string;
@@ -67,6 +69,12 @@ export interface ITelegramApiClient {
   ): Promise<{ ok: boolean; result?: any; description?: string }>;
   answerCallbackQuery(callbackQueryId: string, text?: string): Promise<{ ok: boolean }>;
   getUpdates(offset?: number, timeout?: number): Promise<{ ok: boolean; result: TelegramUpdate[]; description?: string }>;
+  setWebhook?(
+    url: string,
+    options?: { secret_token?: string; drop_pending_updates?: boolean }
+  ): Promise<{ ok: boolean; result?: boolean; description?: string }>;
+  deleteWebhook?(dropPendingUpdates?: boolean): Promise<{ ok: boolean; result?: boolean; description?: string }>;
+  getWebhookInfo?(): Promise<{ ok: boolean; result?: any; description?: string }>;
 }
 
 /**
@@ -119,6 +127,28 @@ export class DefaultTelegramApiClient implements ITelegramApiClient {
       timeout,
     });
   }
+
+  public async setWebhook(
+    url: string,
+    options: { secret_token?: string; drop_pending_updates?: boolean } = {}
+  ) {
+    return this.request('setWebhook', {
+      url,
+      secret_token: options.secret_token,
+      drop_pending_updates: options.drop_pending_updates ?? true,
+      allowed_updates: ['message', 'callback_query'],
+    });
+  }
+
+  public async deleteWebhook(dropPendingUpdates: boolean = false) {
+    return this.request('deleteWebhook', {
+      drop_pending_updates: dropPendingUpdates,
+    });
+  }
+
+  public async getWebhookInfo() {
+    return this.request('getWebhookInfo');
+  }
 }
 
 export interface ParsedCommand {
@@ -130,12 +160,13 @@ export interface ParsedCommand {
 /**
  * [Service Layer]
  * 텔레그램 원격 제어 고도화 봇 서비스
- * (인라인 키보드 매트릭스, 차기 주제 1-클릭 추천/생성, 통계 대시보드, 콜백 핸들러 완비)
+ * (클라우드 서버리스 Webhook 및 로컬 Long Polling 이중 모드 완벽 지원)
  */
 export class TelegramBotService {
   private client: ITelegramApiClient;
   private allowedChatId: string;
   private geminiApiKey: string;
+  private githubToken: string;
   private isPolling: boolean = false;
   private lastUpdateId: number = 0;
 
@@ -144,9 +175,11 @@ export class TelegramBotService {
     botToken?: string;
     allowedChatId?: string;
     geminiApiKey?: string;
+    githubToken?: string;
   } = {}) {
     this.allowedChatId = (options.allowedChatId ?? CONFIG.telegram.chatId ?? '').trim();
     this.geminiApiKey = (options.geminiApiKey ?? CONFIG.geminiApiKey ?? '').trim();
+    this.githubToken = (options.githubToken ?? process.env.GITHUB_TOKEN ?? '').trim();
 
     if (options.client) {
       this.client = options.client;
@@ -200,6 +233,28 @@ export class TelegramBotService {
         ],
       ],
     };
+  }
+
+  /**
+   * 단일 TelegramUpdate(메시지 또는 인라인 버튼 콜백) 처리 엔트리포인트
+   * - Vercel Serverless Webhook 핸들러 및 로컬 폴링 데몬에서 공통 호출
+   */
+  public async handleUpdate(update: TelegramUpdate): Promise<void> {
+    if (!update) return;
+
+    // 1. 일반 텍스트 메시지 처리
+    if (update.message && update.message.text) {
+      const reply = await this.handleMessage(update.message.chat.id, update.message.text);
+      await this.client.sendMessage(update.message.chat.id, reply.text, {
+        parse_mode: reply.parse_mode,
+        reply_markup: reply.reply_markup,
+      });
+    }
+
+    // 2. 인라인 버튼 콜백 쿼리 처리
+    if (update.callback_query) {
+      await this.handleCallbackQuery(update.callback_query);
+    }
   }
 
   /**
@@ -327,9 +382,9 @@ export class TelegramBotService {
   }
 
   private renderHelpMessage(): string {
-    return `⚔️ <b>[생존 교범 // SURVIVAL PROTOCOL] 전술 원격 제어 봇 v2.0</b>
+    return `⚔️ <b>[생존 교범 // SURVIVAL PROTOCOL] 전술 원격 제어 봇 v2.0 (Cloud 24/7)</b>
 
-인류 멸망 후 원시 생존 교범을 스마트폰에서 자율 기획·생성·수정·배포하는 통제실입니다.
+인류 멸망 후 원시 생존 교범을 스마트폰에서 24시간 언제 어디서나 자율 기획·생성·수정·배포하는 클라우드 통제실입니다.
 
 <b>📌 전술 명령어 목록:</b>
 • 📖 <code>/list</code> - 현재 발행된 프로토콜 목록 및 1-터치 상세 조회
@@ -341,7 +396,7 @@ export class TelegramBotService {
 • 📦 <code>/archive [PR-NN]</code> - 프로토콜을 보관소로 격리 이동 및 재배포
 • 📊 <code>/stats</code> - 6대 도메인, SVG 도면, 번역 통계 대시보드
 • 🔨 <code>/build</code> - 정적 웹 & PWA 즉시 빌드 및 Vercel 배포
-• 📡 <code>/status</code> - 라이브 배포 URL 및 Git HEAD 커밋 확인
+• 📡 <code>/status</code> - 라이브 배포 URL 및 클라우드 런타임 상태 확인
 • ℹ️ <code>/help</code> - 본 가이드 및 빠른 버튼 메뉴 출력
 
 <i>💡 아래 빠른 버튼을 터치하거나 명령어를 직접 입력하십시오.</i>`;
@@ -461,7 +516,10 @@ ${stepsText}
     }
 
     try {
-      const res = await ProtocolGeneratorService.archiveProtocol(protocolId, { triggerDeploy: true });
+      const res = await ProtocolGeneratorService.archiveProtocol(protocolId, {
+        triggerDeploy: true,
+        githubToken: this.githubToken,
+      });
       return `✅ <b>[격리 보관 완료]</b>\n${res.message}\n사이트가 재컴파일되어 Vercel에 반영되었습니다.`;
     } catch (e: any) {
       return `❌ 보관 처리 실패: ${e.message || String(e)}`;
@@ -480,9 +538,13 @@ ${stepsText}
   private renderStatusMessage(): string {
     const commit = DeployService.getCurrentCommit();
     const protocols = ProtocolGeneratorService.listProtocols();
+    const runtimeMode = process.env.VERCEL === '1'
+      ? '☁️ Vercel Cloud Serverless Webhook (24/7 상시 가동)'
+      : '💻 Local Process / Hybrid Mode';
 
     return `📡 <b>[시스템 및 배포 상태]</b>
 • <b>라이브 URL:</b> <a href="${SITE_META.siteUrl}">${SITE_META.siteUrl}</a>
+• <b>봇 구동 모드:</b> ${runtimeMode}
 • <b>총 프로토콜:</b> ${protocols.length}편 (Stitch 벡터 도면 및 번역 완비)
 • <b>최신 커밋:</b> <code>${commit.hash}</code>
 • <b>커밋 메시지:</b> ${commit.message}
@@ -496,10 +558,10 @@ ${stepsText}
       catCounts[p.category] = (catCounts[p.category] || 0) + 1;
     }
 
-    const svgsDir = path.join(rootDir, 'content/svgs');
+    const svgsDir = path.join(getRootDir(), 'content/svgs');
     const svgCount = fs.existsSync(svgsDir) ? fs.readdirSync(svgsDir).filter((f) => f.endsWith('.svg')).length : 0;
 
-    const localesDir = path.join(rootDir, 'content/protocols/locales');
+    const localesDir = path.join(getRootDir(), 'content/protocols/locales');
     const localeCount = fs.existsSync(localesDir) ? fs.readdirSync(localesDir).filter((f) => f.endsWith('.json')).length : 0;
 
     return `📊 <b>[생존 교범 인프라 통계 대시보드]</b>
@@ -521,7 +583,7 @@ ${stepsText}
   private async handleRecommendCommand(
     chatId: number | string
   ): Promise<{ text: string; parse_mode?: string; reply_markup?: TelegramInlineKeyboard }> {
-    const nextTopicFile = path.join(rootDir, 'NEXT_TOPIC_PROMPT.md');
+    const nextTopicFile = path.join(getRootDir(), 'NEXT_TOPIC_PROMPT.md');
     let title = '4자 트리거 낙석 덫 제작법 (중력 트랩)';
     let domain = '수렵 & 단백질 획득 공학';
     let urgency = 'CRITICAL (Tier 1)';
@@ -561,10 +623,16 @@ ${stepsText}
 
   private async handleDeployCommand(): Promise<string> {
     try {
-      await buildSite({ silent: true });
-      const deploy = await DeployService.commitAndPush('chore: manual rebuild and deploy via telegram bot');
+      const { workDir, isServerless } = ProtocolGeneratorService.prepareWritableWorkspace();
+      await buildSite({ rootDir: workDir, silent: true });
+      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
+      const deploy = await DeployService.commitAndPush('chore: manual rebuild and deploy via telegram bot', {
+        cwd: workDir,
+        githubToken: this.githubToken,
+        files,
+      });
       if (deploy.success) {
-        return `✅ <b>[배포 완료]</b> 최신 빌드가 Vercel에 반영되었습니다!\nCommit: <code>${deploy.commitHash}</code>\nURL: <a href="${SITE_META.siteUrl}">${SITE_META.siteUrl}</a>`;
+        return `✅ <b>[배포 완료]</b> 최신 빌드가 Vercel에 반영되었습니다!\nCommit: <code>${deploy.commitHash || 'clean'}</code>\nURL: <a href="${SITE_META.siteUrl}">${SITE_META.siteUrl}</a>`;
       }
       return `⚠️ 빌드는 완료되었으나 푸시 실패: ${deploy.error}`;
     } catch (e) {
@@ -588,6 +656,7 @@ ${stepsText}
         apiKey: this.geminiApiKey,
         topic: topic || undefined,
         triggerDeploy: true,
+        githubToken: this.githubToken,
       });
 
       return `🎉 <b>[신규 프로토콜 발행 & 배포 성공!]</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
@@ -621,6 +690,7 @@ ${stepsText}
         protocolId,
         instructions,
         triggerDeploy: true,
+        githubToken: this.githubToken,
       });
 
       return `🎉 <b>[프로토콜 수정 & 배포 완료!]</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
@@ -630,7 +700,7 @@ ${stepsText}
   }
 
   /**
-   * 백그라운드 롱 폴링 루프 시작 (메시지 및 콜백 쿼리 동시 처리)
+   * 백그라운드 롱 폴링 루프 시작 (로컬 폴링 모드 시 사용)
    */
   public async startPolling(): Promise<void> {
     this.isPolling = true;
@@ -642,20 +712,7 @@ ${stepsText}
         if (response.ok && Array.isArray(response.result)) {
           for (const update of response.result) {
             this.lastUpdateId = Math.max(this.lastUpdateId, update.update_id);
-
-            // 1. 일반 메시지 처리
-            if (update.message && update.message.text) {
-              const reply = await this.handleMessage(update.message.chat.id, update.message.text);
-              await this.client.sendMessage(update.message.chat.id, reply.text, {
-                parse_mode: reply.parse_mode,
-                reply_markup: reply.reply_markup,
-              });
-            }
-
-            // 2. 인라인 버튼 콜백 쿼리 처리
-            if (update.callback_query) {
-              await this.handleCallbackQuery(update.callback_query);
-            }
+            await this.handleUpdate(update);
           }
         }
       } catch (err: any) {

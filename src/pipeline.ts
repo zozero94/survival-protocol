@@ -154,6 +154,12 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
   fs.writeFileSync(path.join(publicDir, 'ads.txt'), adsTxt, 'utf-8');
   log(`🔍 [5/5 SEO & AdSense] sitemap.xml, robots.txt, ads.txt 생성 완료`);
 
+  // 6. Vercel Cloud Serverless Webhook 번들(dist/) 자동 컴파일 (루트 빌드 시)
+  if (root === defaultRootDir) {
+    const { buildServerlessBundle } = await import('./build-serverless.ts');
+    buildServerlessBundle(root, Boolean(options.silent));
+  }
+
   return {
     totalProtocols: allMasterProtocols.length,
     compiledPages,

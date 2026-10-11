@@ -1,15 +1,19 @@
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { callGeminiApi } from '../gemini-client.ts';
 import { SvgGeneratorService } from './svg-generator.service.ts';
 import { DeployService } from './deploy.service.ts';
 import { buildSite } from '../pipeline.ts';
-import type { Protocol, ProtocolCategory, MaterialItem, ActionStep, FatalMistake } from '../types/index.ts';
+import type { Protocol, ProtocolCategory } from '../types/index.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname, '../..');
+const defaultRootDir = path.resolve(__dirname, '../..');
+function getRootDir(): string {
+  return process.env.SURVIVAL_ROOT_DIR || defaultRootDir;
+}
 
 export interface ProtocolSummary {
   protocolId: string;
@@ -26,6 +30,7 @@ export interface GenerateProtocolOptions {
   category?: ProtocolCategory;
   triggerDeploy?: boolean;
   dryRun?: boolean;
+  githubToken?: string;
 }
 
 export interface EditProtocolOptions {
@@ -36,6 +41,7 @@ export interface EditProtocolOptions {
   regenerateLocales?: boolean;
   triggerDeploy?: boolean;
   dryRun?: boolean;
+  githubToken?: string;
 }
 
 export interface PipelineExecutionResult {
@@ -61,12 +67,38 @@ const FORBIDDEN_MODERN_TERMS = [
 /**
  * [Service Layer]
  * 생존 교범 자동 생성, AI 편집, 도면/번역 합성 및 자동 배포 총괄 서비스
+ * (로컬 환경 및 Vercel 클라우드 서버리스 환경 동시 지원)
  */
 export class ProtocolGeneratorService {
   /**
+   * 쓰기 작업 시 로컬 환경이면 getRootDir(), 서버리스(Read-Only) 환경이면 /tmp 워크스페이스를 준비하여 반환
+   */
+  public static prepareWritableWorkspace(baseRoot: string = getRootDir()): { workDir: string; isServerless: boolean } {
+    if (DeployService.hasLocalGit(baseRoot)) {
+      return { workDir: baseRoot, isServerless: false };
+    }
+
+    const workDir = path.join(os.tmpdir(), 'survival-protocol-workspace');
+    fs.rmSync(workDir, { recursive: true, force: true });
+    fs.mkdirSync(workDir, { recursive: true });
+
+    const srcContent = path.join(baseRoot, 'content');
+    if (fs.existsSync(srcContent)) {
+      fs.cpSync(srcContent, path.join(workDir, 'content'), { recursive: true });
+    }
+
+    const srcPrompt = path.join(baseRoot, 'NEXT_TOPIC_PROMPT.md');
+    if (fs.existsSync(srcPrompt)) {
+      fs.cpSync(srcPrompt, path.join(workDir, 'NEXT_TOPIC_PROMPT.md'));
+    }
+
+    return { workDir, isServerless: true };
+  }
+
+  /**
    * 등록된 모든 프로토콜 목록을 반환
    */
-  public static listProtocols(contentDir: string = path.join(rootDir, 'content/protocols')): ProtocolSummary[] {
+  public static listProtocols(contentDir: string = path.join(getRootDir(), 'content/protocols')): ProtocolSummary[] {
     if (!fs.existsSync(contentDir)) return [];
     const files = fs.readdirSync(contentDir).filter((f) => f.endsWith('.json')).sort();
     const results: ProtocolSummary[] = [];
@@ -91,7 +123,7 @@ export class ProtocolGeneratorService {
   /**
    * 특정 프로토콜 ID로 파일 및 데이터 조회
    */
-  public static getProtocolById(protocolId: string, contentDir: string = path.join(rootDir, 'content/protocols')): { data: Protocol; filePath: string } | null {
+  public static getProtocolById(protocolId: string, contentDir: string = path.join(getRootDir(), 'content/protocols')): { data: Protocol; filePath: string } | null {
     const cleanId = protocolId.toUpperCase().replace(/\s+/g, '');
     const num = cleanId.replace(/[^0-9]/g, '').padStart(2, '0');
     if (!fs.existsSync(contentDir)) return null;
@@ -255,7 +287,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
   public static async generateAndSaveSvgs(
     apiKey: string,
     protocol: Protocol,
-    svgsDir: string = path.join(rootDir, 'content/svgs')
+    svgsDir: string = path.join(getRootDir(), 'content/svgs')
   ): Promise<string[]> {
     fs.mkdirSync(svgsDir, { recursive: true });
     const savedFiles: string[] = [];
@@ -277,10 +309,10 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
   }
 
   /**
-   * 신규 프로토콜 완전 자동 생성 파이프라인
+   * 신규 프로토콜 완전 자동 생성 파이프라인 (로컬 & 서버리스 겸용)
    */
   public static async generateNewProtocol(options: GenerateProtocolOptions): Promise<PipelineExecutionResult> {
-    const { apiKey, triggerDeploy = true, dryRun = false } = options;
+    const { apiKey, triggerDeploy = true, dryRun = false, githubToken } = options;
     const protocols = this.listProtocols();
     const nextNum = protocols.length + 1;
     const nextId = `PR-${String(nextNum).padStart(2, '0')}`;
@@ -300,21 +332,23 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
       };
     }
 
+    const { workDir, isServerless } = this.prepareWritableWorkspace();
+
     // 2. 도면 SVG 생성 및 저장
-    const svgsDir = path.join(rootDir, 'content/svgs');
+    const svgsDir = path.join(workDir, 'content/svgs');
     console.log(`🎨 [SVG 도면 생성] ${protocol.steps.length}개 정밀 벡터 도면 생성 중...`);
     await this.generateAndSaveSvgs(apiKey, protocol, svgsDir);
 
     // 3. 마스터 JSON 저장
     const fileSlug = `${String(nextNum).padStart(2, '0')}-${protocol.title.toLowerCase().replace(/[^a-z0-9가-힣]+/g, '-').replace(/^-|-$/g, '')}.json`;
-    const masterPath = path.join(rootDir, 'content/protocols', fileSlug);
+    const masterPath = path.join(workDir, 'content/protocols', fileSlug);
     fs.writeFileSync(masterPath, JSON.stringify(protocol, null, 2), 'utf-8');
 
     // 4. 다국어(EN, JA) 번역본 생성 및 저장
     try {
       console.log(`🌐 [다국어 생성] 영어 및 일본어 번역본 생성 중...`);
       const { en, ja } = await this.generateTranslations(apiKey, protocol);
-      const localesDir = path.join(rootDir, 'content/protocols/locales');
+      const localesDir = path.join(workDir, 'content/protocols/locales');
       fs.mkdirSync(localesDir, { recursive: true });
       fs.writeFileSync(path.join(localesDir, `${fileSlug.replace('.json', '')}.en.json`), JSON.stringify(en, null, 2), 'utf-8');
       fs.writeFileSync(path.join(localesDir, `${fileSlug.replace('.json', '')}.ja.json`), JSON.stringify(ja, null, 2), 'utf-8');
@@ -324,18 +358,20 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
 
     // 5. 사이트 빌드
     console.log(`🔨 [빌드 파이프라인] 전체 정적 웹 및 PWA 오프라인 캐시 재컴파일...`);
-    await buildSite({ rootDir, silent: false });
+    await buildSite({ rootDir: workDir, silent: isServerless });
 
-    // 6. Git Push & Vercel 배포
+    // 6. Git Push & Vercel 배포 (로컬 또는 GitHub REST API)
     let deployResult;
     if (triggerDeploy) {
       console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);
+      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
       deployResult = await DeployService.commitAndPush(
-        `feat(protocol): autonomous publication of ${nextId} ${protocol.title}`
+        `feat(protocol): autonomous publication of ${nextId} ${protocol.title}`,
+        { cwd: workDir, githubToken, files }
       );
     }
 
-    const liveUrl = `https://survival-protocol-kappa.vercel.app/protocol-${String(nextNum).padStart(2, '0')}.html`;
+    const liveUrl = `https://survival-protocol-kappa.vercel.app/protocol-${String(nextNum).padStart(2, '0')}`;
 
     return {
       success: true,
@@ -347,17 +383,17 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
   }
 
   /**
-   * 기존 프로토콜 AI 수정 파이프라인
+   * 기존 프로토콜 AI 수정 파이프라인 (로컬 & 서버리스 겸용)
    */
   public static async editExistingProtocol(options: EditProtocolOptions): Promise<PipelineExecutionResult> {
-    const { apiKey, protocolId, instructions, regenerateSvgs = false, triggerDeploy = true, dryRun = false } = options;
+    const { apiKey, protocolId, instructions, regenerateSvgs = false, triggerDeploy = true, dryRun = false, githubToken } = options;
 
     const existingInfo = this.getProtocolById(protocolId);
     if (!existingInfo) {
       throw new Error(`프로토콜 '${protocolId}'을(를) 찾을 수 없습니다.`);
     }
 
-    const { data: currentProto, filePath } = existingInfo;
+    const { data: currentProto } = existingInfo;
 
     console.log(`✏️ [프로토콜 수정 시작] ${currentProto.protocolId}: "${instructions}"`);
 
@@ -398,20 +434,24 @@ ${instructions}
       };
     }
 
+    const { workDir, isServerless } = this.prepareWritableWorkspace();
+    const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
+    const filePath = targetInfo.filePath;
+
     // 마스터 파일 갱신
     fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
 
     // SVG 재생성 옵션이 켜져 있는 경우
     if (regenerateSvgs) {
       console.log(`🎨 [SVG 도면 재생성] 도면 재생성 중...`);
-      await this.generateAndSaveSvgs(apiKey, updatedProto);
+      await this.generateAndSaveSvgs(apiKey, updatedProto, path.join(workDir, 'content/svgs'));
     }
 
     // 다국어 번역본 동기화
     try {
       console.log(`🌐 [다국어 동기화] 번역본 재합성...`);
       const { en, ja } = await this.generateTranslations(apiKey, updatedProto);
-      const localesDir = path.join(rootDir, 'content/protocols/locales');
+      const localesDir = path.join(workDir, 'content/protocols/locales');
       const baseName = path.basename(filePath, '.json');
       fs.writeFileSync(path.join(localesDir, `${baseName}.en.json`), JSON.stringify(en, null, 2), 'utf-8');
       fs.writeFileSync(path.join(localesDir, `${baseName}.ja.json`), JSON.stringify(ja, null, 2), 'utf-8');
@@ -421,19 +461,21 @@ ${instructions}
 
     // 사이트 빌드
     console.log(`🔨 [빌드 파이프라인] 사이트 재컴파일...`);
-    await buildSite({ rootDir, silent: false });
+    await buildSite({ rootDir: workDir, silent: isServerless });
 
     // Git Push & Vercel 배포
     let deployResult;
     if (triggerDeploy) {
       console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);
+      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
       deployResult = await DeployService.commitAndPush(
-        `fix(protocol): AI update ${updatedProto.protocolId} per instruction: ${instructions.slice(0, 50)}`
+        `fix(protocol): AI update ${updatedProto.protocolId} per instruction: ${instructions.slice(0, 50)}`,
+        { cwd: workDir, githubToken, files }
       );
     }
 
     const num = updatedProto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
-    const liveUrl = `https://survival-protocol-kappa.vercel.app/protocol-${num}.html`;
+    const liveUrl = `https://survival-protocol-kappa.vercel.app/protocol-${num}`;
 
     return {
       success: true,
@@ -452,8 +494,8 @@ ${instructions}
     if (!found) return null;
 
     const { data, filePath } = found;
-    const svgsDir = path.join(rootDir, 'content/svgs');
-    const localesDir = path.join(rootDir, 'content/protocols/locales');
+    const svgsDir = path.join(getRootDir(), 'content/svgs');
+    const localesDir = path.join(getRootDir(), 'content/protocols/locales');
     const baseSlug = path.basename(filePath, '.json');
 
     const stepsStatus = data.steps.map((s) => {
@@ -486,7 +528,7 @@ ${instructions}
    */
   public static async archiveProtocol(
     protocolId: string,
-    options: { triggerDeploy?: boolean; dryRun?: boolean } = {}
+    options: { triggerDeploy?: boolean; dryRun?: boolean; githubToken?: string } = {}
   ): Promise<{ success: boolean; message: string; protocolId: string }> {
     const found = this.getProtocolById(protocolId);
     if (!found) {
@@ -497,31 +539,47 @@ ${instructions}
       return { success: true, message: `[Dry Run] 프로토콜 ${protocolId} 아카이브 시뮬레이션 완료`, protocolId };
     }
 
-    const archiveDir = path.join(rootDir, 'content/protocols/_archived_shells');
+    const { workDir, isServerless } = this.prepareWritableWorkspace();
+    const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
+    const archiveDir = path.join(workDir, 'content/protocols/_archived_shells');
     fs.mkdirSync(archiveDir, { recursive: true });
 
+    const deletedPaths: string[] = [];
+    const baseFileName = path.basename(targetInfo.filePath);
+    const baseSlug = path.basename(targetInfo.filePath, '.json');
+
     // 1. 마스터 JSON 이동
-    const destJson = path.join(archiveDir, path.basename(found.filePath));
-    fs.renameSync(found.filePath, destJson);
+    const destJson = path.join(archiveDir, baseFileName);
+    fs.renameSync(targetInfo.filePath, destJson);
+    deletedPaths.push(`content/protocols/${baseFileName}`);
 
     // 2. 관련 번역 파일 이동
-    const localesDir = path.join(rootDir, 'content/protocols/locales');
-    const baseSlug = path.basename(found.filePath, '.json');
+    const localesDir = path.join(workDir, 'content/protocols/locales');
     const enFile = path.join(localesDir, `${baseSlug}.en.json`);
     const jaFile = path.join(localesDir, `${baseSlug}.ja.json`);
-    if (fs.existsSync(enFile)) fs.renameSync(enFile, path.join(archiveDir, `${baseSlug}.en.json`));
-    if (fs.existsSync(jaFile)) fs.renameSync(jaFile, path.join(archiveDir, `${baseSlug}.ja.json`));
+    if (fs.existsSync(enFile)) {
+      fs.renameSync(enFile, path.join(archiveDir, `${baseSlug}.en.json`));
+      deletedPaths.push(`content/protocols/locales/${baseSlug}.en.json`);
+    }
+    if (fs.existsSync(jaFile)) {
+      fs.renameSync(jaFile, path.join(archiveDir, `${baseSlug}.ja.json`));
+      deletedPaths.push(`content/protocols/locales/${baseSlug}.ja.json`);
+    }
 
     // 3. 사이트 재컴파일 & 배포
-    await buildSite({ rootDir, silent: true });
+    await buildSite({ rootDir: workDir, silent: true });
     if (options.triggerDeploy) {
-      await DeployService.commitAndPush(`chore(protocol): archive ${found.data.protocolId} (${found.data.title})`);
+      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
+      await DeployService.commitAndPush(
+        `chore(protocol): archive ${targetInfo.data.protocolId} (${targetInfo.data.title})`,
+        { cwd: workDir, githubToken: options.githubToken, files, deletedPaths }
+      );
     }
 
     return {
       success: true,
-      message: `프로토콜 [${found.data.protocolId}]이 보관소로 안전하게 격리 이동되었습니다.`,
-      protocolId: found.data.protocolId,
+      message: `프로토콜 [${targetInfo.data.protocolId}]이 보관소로 안전하게 격리 이동되었습니다.`,
+      protocolId: targetInfo.data.protocolId,
     };
   }
 
@@ -549,4 +607,3 @@ Rules:
 - Bottom Sticky Bar: [← 목차] | [💾 야전 오프라인 저장] | [다음 →]`;
   }
 }
-
