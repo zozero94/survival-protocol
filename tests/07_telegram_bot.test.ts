@@ -103,7 +103,7 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     assert.match(reply.text, /다국어 번역 데이터셋/);
   });
 
-  it('/recommend 명령 시 차기 유망 프로토콜과 1-클릭 생성 인라인 버튼을 반환해야 한다', async () => {
+  it('/recommend 명령 시 차기 유망 프로토콜과 1-클릭 생성 인라인 버튼을 반환해야 한다 (텔레그램 64바이트 제한 준수 필수)', async () => {
     const mockClient = new MockTelegramApiClient();
     const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
 
@@ -111,6 +111,16 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     assert.match(reply.text, /차기 프론티어 프로토콜 추천/);
     assert.ok(reply.reply_markup?.inline_keyboard);
     assert.ok(reply.reply_markup.inline_keyboard[0][0].callback_data?.startsWith('cb:gen:'));
+    for (const row of reply.reply_markup.inline_keyboard) {
+      for (const btn of row) {
+        if (btn.callback_data) {
+          assert.ok(
+            Buffer.byteLength(btn.callback_data, 'utf8') <= 64,
+            `callback_data(${btn.callback_data})는 텔레그램 API 64바이트 제한 이하여야 합니다.`
+          );
+        }
+      }
+    }
   });
 
   it('handleCallbackQuery는 버튼 클릭 이벤트에 대해 텔레그램 응답을 안전하게 처리해야 한다', async () => {

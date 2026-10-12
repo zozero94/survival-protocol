@@ -106,12 +106,37 @@ export class DefaultTelegramApiClient                               {
     text        ,
     options                                                                 = {}
   ) {
-    return this.request('sendMessage', {
+    let sanitizedMarkup = options.reply_markup;
+    if (sanitizedMarkup?.inline_keyboard) {
+      sanitizedMarkup = {
+        inline_keyboard: sanitizedMarkup.inline_keyboard.map((row) =>
+          row.map((btn) => {
+            if (!btn.callback_data) return btn;
+            let cb = btn.callback_data;
+            while (Buffer.byteLength(cb, 'utf8') > 64) {
+              cb = cb.slice(0, -1);
+            }
+            return { ...btn, callback_data: cb };
+          })
+        ),
+      };
+    }
+
+    const res = await this.request('sendMessage', {
       chat_id: chatId,
       text,
       parse_mode: options.parse_mode,
-      reply_markup: options.reply_markup,
+      reply_markup: sanitizedMarkup,
     });
+
+    if (!res?.ok) {
+      // 마크업 또는 HTML 파싱 오류로 거절된 경우 평문으로 안전하게 폴백 전송
+      return this.request('sendMessage', {
+        chat_id: chatId,
+        text: text.replace(/<[^>]+>/g, ''),
+      });
+    }
+    return res;
   }
 
          async answerCallbackQuery(callbackQueryId        , text         ) {
@@ -374,7 +399,20 @@ export class TelegramBotService {
       const res = await this.handleDeployCommand();
       await this.client.sendMessage(chatId, res, { parse_mode: 'HTML' });
     } else if (data.startsWith('cb:gen:')) {
-      const topic = decodeURIComponent(data.replace('cb:gen:', ''));
+      const rawPayload = data.replace('cb:gen:', '');
+      let topic = rawPayload;
+      if (rawPayload.startsWith('rec:')) {
+        const recIdx = Number(rawPayload.replace('rec:', ''));
+        const rec = ProtocolGeneratorService.getRecommendedTopics();
+        const matched = rec.candidates[recIdx] || rec.candidates[0];
+        topic = matched ? matched.title : '데브리 헛(Debris Hut) A프레임 단열 은신처 구축법';
+      } else {
+        try {
+          topic = decodeURIComponent(rawPayload);
+        } catch {
+          topic = rawPayload;
+        }
+      }
       await this.client.sendMessage(chatId, `🚀 추천 주제 [${topic}] 자율 생성을 시작합니다!`);
       const res = await this.handleGenerateCommand(topic, chatId);
       await this.client.sendMessage(chatId, res, { parse_mode: 'HTML' });
@@ -489,9 +527,9 @@ ${stepsText}
 • <b>${data.fatalMistake.title}</b>
   └ ${data.fatalMistake.description}
 
-<b>🌐 다국어 번역 상태:</b>
-• 영어 (EN): ${locales.en ? '✓ 완비' : '❌ 누락'}
-• 일본어 (JA): ${locales.ja ? '✓ 완비' : '❌ 누락'}
+<b>🌐 다국어 번역 상태 (7개국어):</b>
+• EN: ${locales.en ? '✓' : '❌'} | JA: ${locales.ja ? '✓' : '❌'} | ES: ${locales.es ? '✓' : '❌'}
+• DE: ${locales.de ? '✓' : '❌'} | PT: ${locales.pt ? '✓' : '❌'} | ZH-TW: ${locales['zh-TW'] ? '✓' : '❌'}
 
 🔗 <b>라이브:</b> <a href="${SITE_META.siteUrl}/protocol-${num}">${SITE_META.siteUrl}/protocol-${num}</a>`;
   }
@@ -579,47 +617,40 @@ ${stepsText}
 ──────────────────
 <b>📦 총 발행 프로토콜:</b> ${protocols.length}편
 <b>🎨 정밀 테크니컬 벡터 SVG:</b> ${svgCount}종
-<b>🌐 다국어 번역 데이터셋:</b> ${localeCount}종 (KO/EN/JA)
+<b>🌐 다국어 번역 데이터셋:</b> ${localeCount}종 (7개국어: KO/EN/JA/ES/DE/PT/ZH-TW)
 <b>📶 PWA 오프라인 사전 캐시:</b> 가동 중`;
   }
 
           async handleRecommendCommand(
     chatId                 
   )                                                                                        {
-    const nextTopicFile = path.join(getRootDir(), 'NEXT_TOPIC_PROMPT.md');
-    let title = '4자 트리거 낙석 덫 제작법 (중력 트랩)';
-    let domain = '수렵 & 단백질 획득 공학';
-    let urgency = 'CRITICAL (Tier 1)';
+    const { nextId, candidates } = ProtocolGeneratorService.getRecommendedTopics();
 
-    if (fs.existsSync(nextTopicFile)) {
-      const content = fs.readFileSync(nextTopicFile, 'utf-8');
-      const titleMatch = content.match(/다음 생존 프로토콜 기획서:\s*([^\n]+)/);
-      if (titleMatch) title = titleMatch[1];
-      const domainMatch = content.match(/도메인:\s*([^\n]+)/);
-      if (domainMatch) domain = domainMatch[1];
-      const urgencyMatch = content.match(/위급도:\s*([^\n]+)/);
-      if (urgencyMatch) urgency = urgencyMatch[1];
-    }
+    const candidateLines = candidates
+      .map(
+        (c, idx) =>
+          `<b>${idx + 1}. [${c.category}] ${c.title}</b>\n   └ 분과: ${c.domain}\n   └ 위급도: <code>${c.urgency}</code>`
+      )
+      .join('\n\n');
+
+    const buttons                           = candidates.map((c, idx) => [
+      {
+        text: `🚀 후보 ${idx + 1} (${c.category}) 즉시 발행 & 배포`,
+        callback_data: `cb:gen:rec:${idx}`,
+      },
+    ]);
 
     const replyMarkup                         = {
-      inline_keyboard: [
-        [
-          {
-            text: '🚀 이 주제로 즉시 자율 발행 & 배포',
-            callback_data: `cb:gen:${encodeURIComponent(title.slice(0, 30))}`,
-          },
-        ],
-      ],
+      inline_keyboard: buttons,
     };
 
-    const text = `🎯 <b>[차기 프론티어 프로토콜 추천]</b>
+    const text = `🎯 <b>[차기 프론티어 프로토콜 추천 // ${nextId}]</b>
 
-• <b>추천 주제:</b> <code>${title}</code>
-• <b>지식 도메인:</b> ${domain}
-• <b>위급도:</b> ${urgency}
+현재 발행된 프로토콜 현황을 분석하여 아직 개척되지 않은 핵심 생존 분과 상위 3개 주제를 선정했습니다:
 
-지식 트리에 기록된 다음 미개척 프로토콜입니다.
-아래 버튼을 누르시면 <b>고증 검증 ➔ 3단계 SVG 도면 ➔ EN/JA 번역 ➔ Vercel 라이브 배포</b>까지 완전 무인으로 가동됩니다.`;
+${candidateLines}
+
+아래 버튼을 누르시면 <b>고증 검증 ➔ 3단계 SVG 도면(QA 감사) ➔ 7개국어 번역 ➔ Vercel 라이브 배포</b>까지 자동 가동됩니다.`;
 
     return { text, parse_mode: 'HTML', reply_markup: replyMarkup };
   }

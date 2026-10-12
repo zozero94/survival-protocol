@@ -555,16 +555,105 @@ ${instructions}
       };
     });
 
-    const hasEn = fs.existsSync(path.join(localesDir, `${baseSlug}.en.json`));
-    const hasJa = fs.existsSync(path.join(localesDir, `${baseSlug}.ja.json`));
+    const localeCodes = ['en', 'ja', 'es', 'de', 'pt', 'zh-TW']         ;
+    const locales                                                = {
+      en: fs.existsSync(path.join(localesDir, `${baseSlug}.en.json`)),
+      ja: fs.existsSync(path.join(localesDir, `${baseSlug}.ja.json`)),
+      es: fs.existsSync(path.join(localesDir, `${baseSlug}.es.json`)),
+      de: fs.existsSync(path.join(localesDir, `${baseSlug}.de.json`)),
+      pt: fs.existsSync(path.join(localesDir, `${baseSlug}.pt.json`)),
+      'zh-TW': fs.existsSync(path.join(localesDir, `${baseSlug}.zh-TW.json`)),
+    };
 
     return {
       data,
       filePath,
       baseSlug,
       stepsStatus,
-      locales: { en: hasEn, ja: hasJa },
+      locales,
     };
+  }
+
+  /**
+   * 현재 발행된 프로토콜 현황을 분석하여 미개척 카테고리의 차기 유망 프로토콜 후보들을 동적 추천
+   */
+         static getRecommendedTopics()   
+                   
+                       
+                    
+                                 
+                    
+                     
+                      
+       
+    {
+    const published = this.listProtocols();
+    const nextNum = published.length + 1;
+    const nextId = `PR-${String(nextNum).padStart(2, '0')}`;
+    const publishedCategories = new Set(published.map((p) => p.category));
+    const publishedTitles = published.map((p) => p.title);
+
+    const curriculum         
+                                 
+                    
+                     
+                      
+       = [
+      {
+        category: 'SHELTER',
+        title: '데브리 헛(Debris Hut) A프레임 단열 은신처 구축법',
+        domain: '은신처 & 체온 보존 공학 (SHELTER)',
+        urgency: 'CRITICAL (Tier 1 · 저체온증 방어)',
+      },
+      {
+        category: 'TOOLS',
+        title: '흑요석·부싯돌 타격 박리(Flintknapping) 석기 칼날 제작법',
+        domain: '원시 도구 & 절삭 공학 (TOOLS)',
+        urgency: 'HIGH (Tier 1 · 기본 가공 도구 확보)',
+      },
+      {
+        category: 'MEDICINE',
+        title: '소나무 송진·숯분말 천연 방부 연고 및 창상 봉합술',
+        domain: '야전 응급 의약 & 감염 통제 (MEDICINE)',
+        urgency: 'CRITICAL (Tier 1 · 패혈증 차단)',
+      },
+      {
+        category: 'FOOD',
+        title: '4자 트리거(Figure-4) 중력 낙석 트랩 수렵 공학',
+        domain: '수렵 & 단백질 획득 공학 (FOOD)',
+        urgency: 'HIGH (Tier 2 · 무인 수렵 시스템)',
+      },
+      {
+        category: 'TOOLS',
+        title: '식물 내피 섬유 2가닥 역방향 꼬기(Reverse Wrap) 고강도 로프 제작',
+        domain: '원시 섬유 & 결속 공학 (TOOLS)',
+        urgency: 'HIGH (Tier 1 · 구조물 결속재)',
+      },
+      {
+        category: 'WATER',
+        title: '태양열 지면 증류기(Solar Still) 및 식생 증산 수분 포집법',
+        domain: '극한 건조지대 수자원 공학 (WATER)',
+        urgency: 'CRITICAL (Tier 2 · 무수원지 식수 확보)',
+      },
+    ];
+
+    const available = curriculum.filter(
+      (item) => !publishedTitles.some((t) => t.includes(item.title.slice(0, 6)))
+    );
+
+    // 아직 발행되지 않은 카테고리를 최우선 정렬
+    available.sort((a, b) => {
+      const aMissing = publishedCategories.has(a.category) ? 1 : 0;
+      const bMissing = publishedCategories.has(b.category) ? 1 : 0;
+      return aMissing - bMissing;
+    });
+
+    const selected = (available.length > 0 ? available : curriculum).slice(0, 3).map((item, idx) => ({
+      index: idx,
+      ...item,
+    }));
+
+    return { nextId, candidates: selected };
   }
 
   /**
@@ -597,17 +686,14 @@ ${instructions}
     fs.renameSync(targetInfo.filePath, destJson);
     deletedPaths.push(`content/protocols/${baseFileName}`);
 
-    // 2. 관련 번역 파일 이동
+    // 2. 관련 6개국어 번역 파일 이동
     const localesDir = path.join(workDir, 'content/protocols/locales');
-    const enFile = path.join(localesDir, `${baseSlug}.en.json`);
-    const jaFile = path.join(localesDir, `${baseSlug}.ja.json`);
-    if (fs.existsSync(enFile)) {
-      fs.renameSync(enFile, path.join(archiveDir, `${baseSlug}.en.json`));
-      deletedPaths.push(`content/protocols/locales/${baseSlug}.en.json`);
-    }
-    if (fs.existsSync(jaFile)) {
-      fs.renameSync(jaFile, path.join(archiveDir, `${baseSlug}.ja.json`));
-      deletedPaths.push(`content/protocols/locales/${baseSlug}.ja.json`);
+    for (const code of ['en', 'ja', 'es', 'de', 'pt', 'zh-TW']) {
+      const locFile = path.join(localesDir, `${baseSlug}.${code}.json`);
+      if (fs.existsSync(locFile)) {
+        fs.renameSync(locFile, path.join(archiveDir, `${baseSlug}.${code}.json`));
+        deletedPaths.push(`content/protocols/locales/${baseSlug}.${code}.json`);
+      }
     }
 
     // 3. 사이트 재컴파일 & 배포
