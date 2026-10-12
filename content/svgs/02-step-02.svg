@@ -26,7 +26,7 @@
   <!-- Bow Cord Looped Around Spindle (1 Turn Loop) -->
   <!-- Bow Stick -->
   <path d="M 60 135 C 180 110, 480 110, 600 135" fill="none" stroke="#888888" stroke-width="6" stroke-linecap="square"/>
-  <text x="110" y="120" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="10">BOW STICK (길이 65cm 활대)</text>
+  <text x="110" y="102" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="10">BOW STICK (길이 65cm 활대)</text>
 
   <!-- String with Tension & Single Wrap Loop around Spindle -->
   <path d="M 60 135 L 318 140" fill="none" stroke="#E5E5E5" stroke-width="2"/>
@@ -59,7 +59,7 @@
   <path d="M 334 225 Q 345 208 338 190 T 350 175" fill="none" stroke="#A3A3A3" stroke-width="1.5" stroke-dasharray="2,2"/>
   <path d="M 330 220 Q 330 200 325 185" fill="none" stroke="#E5E5E5" stroke-width="1"/>
 
-  <text x="230" y="210" fill="#CCCCCC" font-family="'JetBrains Mono', monospace" font-size="10">WHITE SMOKE (백색 연기 배출)</text>
+  <text x="295" y="210" fill="#CCCCCC" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">WHITE SMOKE (백색 연기 배출)</text>
 
   <!-- Technical Specification Box on the right -->
   <rect x="495" y="215" width="165" height="70" fill="#141414" stroke="#333333" stroke-width="1"/>

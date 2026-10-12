@@ -28,16 +28,27 @@ const validSvg = `<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
 </svg>`;
 
 describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방지 검증]', () => {
-  it('정상 규격의 SVG 도면과 실제 발행된 PR-01, PR-02 도면은 정적 검수를 통과해야 한다', () => {
+  it('정상 규격의 SVG 도면과 실제 발행된 PR-01, PR-02 도면 6종 모두 정적 검수(100점)를 통과해야 한다', () => {
     const report = SvgAuditService.auditSvgStatic(validSvg, sampleContext);
     assert.strictEqual(report.passed, true);
     assert.strictEqual(report.score, 100);
     assert.strictEqual(report.issues.length, 0);
 
-    // 실제 PR-02 교정 도면(02-step-01.svg) 검증
-    const pr02Step1 = fs.readFileSync(path.join(rootDir, 'content/svgs/02-step-01.svg'), 'utf-8');
-    const pr02Report = SvgAuditService.auditSvgStatic(pr02Step1, sampleContext);
-    assert.strictEqual(pr02Report.passed, true, `02-step-01.svg 이슈: ${JSON.stringify(pr02Report.issues)}`);
+    const activeSvgs = [
+      'step-01.svg',
+      'step-02.svg',
+      'step-03.svg',
+      '02-step-01.svg',
+      '02-step-02.svg',
+      '02-step-03.svg',
+    ];
+
+    for (const fileName of activeSvgs) {
+      const svgContent = fs.readFileSync(path.join(rootDir, 'content/svgs', fileName), 'utf-8');
+      const r = SvgAuditService.auditSvgStatic(svgContent, sampleContext);
+      assert.strictEqual(r.passed, true, `${fileName} 검수 실패: ${JSON.stringify(r.issues)}`);
+      assert.strictEqual(r.score, 100, `${fileName} 점수가 100점이 아님: ${r.score}`);
+    }
   });
 
   it('문구끼리 겹치거나(TEXT_OVERLAP), 경계를 벗어나거나(BOUNDARY_CLIP), 깨진 문구(TEXT_CORRUPTION)를 정확히 감지해야 한다', () => {

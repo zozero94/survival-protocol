@@ -22,8 +22,8 @@
   <circle cx="160" cy="53" r="5.5" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
   <circle cx="180" cy="47" r="4" stroke="#FFFFFF" stroke-width="1" fill="none"></circle>
   <!-- Text label -->
-  <line x1="206" y1="50" x2="245" y2="50" stroke="#777" stroke-width="0.8"></line>
-  <text x="248" y="53" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">1. 자갈층 (대형 불순물)</text>
+  <line x1="196" y1="50" x2="202" y2="50" stroke="#777" stroke-width="0.8"></line>
+  <text x="275" y="46" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7" text-anchor="end">1. 자갈층 (대형 불순물)</text>
 
   <!-- Layer 2: Fine Sand -->
   <path d="M83 62 L197 62 L189 95 L91 95 Z" fill="#1b1b1b" stroke="#444" stroke-width="0.75"></path>
@@ -32,8 +32,8 @@
   <line x1="96" y1="80" x2="184" y2="80" stroke="#666" stroke-width="0.8" stroke-dasharray="2 2"></line>
   <line x1="102" y1="88" x2="178" y2="88" stroke="#666" stroke-width="0.8" stroke-dasharray="1 3"></line>
   <!-- Text label -->
-  <line x1="75" y1="78" x2="35" y2="78" stroke="#777" stroke-width="0.8"></line>
-  <text x="5" y="81" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">2. 모래층 (미세 침전물)</text>
+  <line x1="75" y1="78" x2="88" y2="78" stroke="#777" stroke-width="0.8"></line>
+  <text x="5" y="74" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7">2. 모래층 (미세 침전물)</text>
 
   <!-- Layer 3: Charcoal Powder -->
   <path d="M91 95 L189 95 L180 132 L100 132 Z" fill="#080808" stroke="#555" stroke-width="0.75"></path>
@@ -44,8 +44,8 @@
   <rect x="128" y="102" width="24" height="20" stroke="#FFF" stroke-width="0.8" fill="none"></rect>
   <text x="131" y="115" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="bold">CHARCOAL</text>
   <!-- Text label -->
-  <line x1="185" y1="115" x2="245" y2="115" stroke="#777" stroke-width="0.8"></line>
-  <text x="248" y="118" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7.5">3. 활성 숯 (독소 흡착)</text>
+  <line x1="185" y1="115" x2="195" y2="115" stroke="#777" stroke-width="0.8"></line>
+  <text x="275" y="111" fill="#EEEEEE" font-family="'JetBrains Mono', monospace" font-size="7" text-anchor="end">3. 활성 숯 (독소 흡착)</text>
 
   <!-- Layer 4: Cloth Mesh Base -->
   <path d="M100 132 L180 132 L165 152 L115 152 Z" fill="#2d2d2d" stroke="#666" stroke-width="0.75"></path>

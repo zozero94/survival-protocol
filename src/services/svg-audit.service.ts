@@ -231,14 +231,14 @@ export class SvgAuditService {
         }
       }
 
-      // 3-c. viewBox 경계 이탈(Clipping) 검사
-      if (tb.x < 2 || tb.x > vbWidth - 2 || tb.y < tb.fontSize * 0.6 || tb.y > vbHeight - 2) {
+      // 3-c. viewBox 경계 이탈(Clipping) 검사 (글자 폭을 반영한 left/right/top/bottom 전체 바운딩 박스 기준)
+      if (tb.left < 2 || tb.right > vbWidth - 2 || tb.top < 1 || tb.bottom > vbHeight - 2) {
         issues.push({
           category: 'BOUNDARY_CLIP',
           severity: 'CRITICAL',
           element: tb.text,
-          reason: `텍스트 "${tb.text}"의 기준 좌표(x=${tb.x}, y=${tb.y})가 viewBox(0 0 ${vbWidth} ${vbHeight}) 안전 경계를 벗어났습니다.`,
-          fixInstruction: `텍스트 "${tb.text}"의 좌표를 x=[15~${vbWidth - 15}], y=[15~${vbHeight - 10}] 범위 안으로 이동하십시오.`,
+          reason: `텍스트 "${tb.text}"의 바운딩 영역(left=${Math.round(tb.left)}, right=${Math.round(tb.right)}, y=${tb.y})이 viewBox(0 0 ${vbWidth} ${vbHeight}) 경계를 벗어났습니다.`,
+          fixInstruction: `텍스트 "${tb.text}"의 x/y 좌표 또는 text-anchor를 조정하여 [10 ~ ${vbWidth - 10}] 범위 내에 완전히 수용하십시오.`,
         });
       }
     }
@@ -385,36 +385,69 @@ ${svgCode}
     const vbWidth = vbMatch ? parseFloat(vbMatch[3]) : 680;
     const vbHeight = vbMatch ? parseFloat(vbMatch[4]) : 340;
 
-    // 텍스트 좌표 클램핑 및 겹침 자동 이격
-    const placedTextCoords: Array<{ x: number; y: number; fontSize: number }> = [];
+    // 텍스트 좌표 클램핑(text-anchor 및 텍스트 폭 반영) 및 겹침 자동 이격
+    const placedTextBoxes: Array<{ left: number; right: number; y: number; fontSize: number }> = [];
 
     fixed = fixed.replace(/<text\b([^>]*)>([\s\S]*?)<\/text>/gi, (fullMatch, attrs, innerText) => {
       const xMatch = attrs.match(/\bx\s*=\s*["']([-\d.]+)["']/i);
       const yMatch = attrs.match(/\by\s*=\s*["']([-\d.]+)["']/i);
       const fsMatch = attrs.match(/\bfont-size\s*=\s*["']([\d.]+)["']/i);
+      const anchorMatch = attrs.match(/\btext-anchor\s*=\s*["'](start|middle|end)["']/i);
 
       if (!xMatch || !yMatch) return fullMatch;
 
       let x = parseFloat(xMatch[1]);
       let y = parseFloat(yMatch[1]);
       const fontSize = fsMatch ? parseFloat(fsMatch[1]) : 10;
+      const anchor = (anchorMatch ? anchorMatch[1].toLowerCase() : 'start') as 'start' | 'middle' | 'end';
 
-      // 안전 영역으로 좌표 클램핑
-      x = Math.max(8, Math.min(vbWidth - 12, x));
+      const cleanText = innerText.replace(/<[^>]+>/g, '').trim();
+      let estimatedWidth = 0;
+      for (const ch of cleanText) {
+        estimatedWidth += /[\u3131-\uD79D\u3040-\u30FF\u4E00-\u9FAF]/.test(ch)
+          ? fontSize * 0.95
+          : fontSize * 0.58;
+      }
+
+      // text-anchor를 고려하여 좌우 바운딩이 [6, vbWidth - 6] 안에 들어오도록 x 클램핑
+      const margin = 6;
+      if (anchor === 'start') {
+        x = Math.max(margin, Math.min(vbWidth - margin - estimatedWidth, x));
+      } else if (anchor === 'end') {
+        x = Math.max(margin + estimatedWidth, Math.min(vbWidth - margin, x));
+      } else {
+        const half = estimatedWidth / 2;
+        x = Math.max(margin + half, Math.min(vbWidth - margin - half, x));
+      }
+
       y = Math.max(Math.ceil(fontSize), Math.min(vbHeight - 6, y));
 
-      // 이전 텍스트와 X, Y가 겹치면 Y를 아래로 이격
-      for (const prev of placedTextCoords) {
-        if (Math.abs(prev.x - x) < 80 && Math.abs(prev.y - y) < fontSize * 0.85) {
-          y = Math.min(vbHeight - 6, prev.y + Math.ceil(fontSize * 1.35));
+      const getBounds = (cx: number) => {
+        if (anchor === 'middle') return { left: cx - estimatedWidth / 2, right: cx + estimatedWidth / 2 };
+        if (anchor === 'end') return { left: cx - estimatedWidth, right: cx };
+        return { left: cx, right: cx + estimatedWidth };
+      };
+
+      let bounds = getBounds(x);
+
+      // 이전 텍스트와 X, Y가 겹치면 안전 방향으로 Y를 이격 (하단 한계 도달 시 위쪽으로 이격)
+      for (const prev of placedTextBoxes) {
+        const hOverlap = Math.min(prev.right, bounds.right) - Math.max(prev.left, bounds.left);
+        if (hOverlap > 8 && Math.abs(prev.y - y) < fontSize * 0.85) {
+          const stepY = Math.ceil(fontSize * 1.35);
+          if (prev.y + stepY <= vbHeight - 6) {
+            y = prev.y + stepY;
+          } else {
+            y = Math.max(Math.ceil(fontSize), prev.y - stepY);
+          }
         }
       }
 
-      placedTextCoords.push({ x, y, fontSize });
+      placedTextBoxes.push({ left: bounds.left, right: bounds.right, y, fontSize });
 
       const newAttrs = attrs
-        .replace(/\bx\s*=\s*["'][-\d.]+["']/i, `x="${x}"`)
-        .replace(/\by\s*=\s*["'][-\d.]+["']/i, `y="${y}"`);
+        .replace(/\bx\s*=\s*["'][-\d.]+["']/i, `x="${Math.round(x * 10) / 10}"`)
+        .replace(/\by\s*=\s*["'][-\d.]+["']/i, `y="${Math.round(y * 10) / 10}"`);
 
       return `<text${newAttrs}>${innerText}</text>`;
     });
