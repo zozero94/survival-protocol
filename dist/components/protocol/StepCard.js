@@ -8,7 +8,15 @@
 export function renderStepCards(steps                , svgsMap                         = {})         {
   const cardsHtml = steps
     .map((step, idx) => {
-      const svgContent = svgsMap[step.svgFileName] || step.svgCode || '';
+      const rawSvg = svgsMap[step.svgFileName] || step.svgCode || '';
+      let labelCounter = 0;
+      const svgContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
+        const lIdx = labelCounter++;
+        const cleanAttrs = attrs
+          .replace(/\s*data-svg-step\s*=\s*["'][^"']*["']/gi, '')
+          .replace(/\s*data-svg-label\s*=\s*["'][^"']*["']/gi, '');
+        return `<text data-svg-step="${idx}" data-svg-label="${lIdx}"${cleanAttrs}>`;
+      });
       return `
     <article class="border border-[#333] bg-[#1c1b1b] overflow-hidden mb-6">
       <!-- 1. Technical Vector Blueprint Frame (FIG 01~03) -->

@@ -1,0 +1,80 @@
+{
+  "protocolId": "PR-01",
+  "category": "WATER",
+  "title": "PROTOCOLO #01: Purificación de Agua Contaminada (Filtro de Carbón)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
+  "summary": "Beber agua silvestre sin tratar provoca disentería bacteriana y giardiasis letal en menos de 72 horas. El agua debe pasar por filtración mecánica de carbón activado seguida obligatoriamente de ebullición térmica.",
+  "timeRequired": "15 MINUTOS",
+  "successRate": "99.8% (Tras Ebullición)",
+  "difficulty": "Nivel 1 (Supervivencia Básica)",
+  "outputPerHour": "1.5 Litros / Hora",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Carbón de Madera Dura Triturado",
+      "desc": "Brasas frías de hoguera trituradas al tamaño de un guisante para adsorber toxinas y metales."
+    },
+    {
+      "id": "mat-02",
+      "name": "Arena de Río Limpia y Grava Fina",
+      "desc": "Arena lavada y guijarros pequeños para retener sedimentos y partículas en suspensión."
+    },
+    {
+      "id": "mat-03",
+      "name": "Tubo de Bambú Hueco o Cono de Corteza",
+      "desc": "Sección de bambú de 8 cm de diámetro invertida como columna de filtración por gravedad."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Preparación del Recipiente y Base del Filtro",
+      "description": "Prepare un cilindro hueco de bambú o recipiente cónico invertido con abertura inferior estrecha para dirigir el flujo por gravedad.",
+      "actionNote": "> Acción: Coloque un tapón denso de tela de fibra vegetal o musgo esfagno en la boquilla inferior para evitar la fuga del carbón.",
+      "svgFileName": "step-01.svg",
+      "svgLabels": [
+        "AGUA CRUDA",
+        "1. Grava (Residuos)",
+        "2. Arena (Sedimentos)",
+        "CARBÓN",
+        "3. Carbón (Toxinas)",
+        "4. Malla Textil (Base)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Estratificación del Medio Filtrante (Pirámide Invertida)",
+      "description": "Apile las capas en orden inverso estricto desde abajo hacia arriba: malla de fibra → 6 cm de carbón triturado → 5 cm de arena fina → 3 cm de grava gruesa.",
+      "actionNote": "> Ciencia: La grava detiene residuos grandes, la arena atrapa micropartículas y la matriz porosa del carbón adsorbe toxinas químicas.",
+      "svgFileName": "step-02.svg",
+      "svgLabels": [
+        "[DESCARTAR 500ml]",
+        "Purga de Polvo",
+        "→",
+        "[RECOGER AGUA]",
+        "95% Claridad",
+        "Flujo: 1~2 gotas / seg"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Vertido de Agua Turbia y Esterilización por Ebullición",
+      "description": "Vierta el agua turbia lentamente sobre la grava superior. Recoja el agua filtrada a un ritmo constante de 1 a 2 gotas por segundo y hiérvala a 100°C.",
+      "actionNote": "> Advertencia: Descarte los primeros 500 ml con polvo de carbón. Hierva el agua clara durante al menos 3 minutos antes de beber.",
+      "svgFileName": "step-03.svg",
+      "svgLabels": [
+        "100°C Fuego Directo",
+        "100°C",
+        "3 Minutos",
+        "99.9% Letal",
+        "Tiempo Ebullición (MIN)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "ERROR FATAL: Nunca beba el agua filtrada sin hervirla primero.",
+    "description": "La filtración mecánica con carbón elimina sedimentos y químicos, pero los virus, quistes de Giardia y Cryptosporidium atraviesan el filtro. Debe hervir el agua filtrada vigorosamente durante al menos 1 a 3 minutos.",
+    "consequence": "Consecuencia de omitir la ebullición: Infección parasitaria aguda y muerte por deshidratación en 96 horas."
+  }
+}

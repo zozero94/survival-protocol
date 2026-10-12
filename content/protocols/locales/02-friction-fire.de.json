@@ -1,0 +1,94 @@
+{
+  "protocolId": "PR-02",
+  "category": "FIRE",
+  "title": "Protokoll #02: Feuerbohren durch Reibungswärme (Bow Drill)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
+  "summary": "Primitive Pyrotechnik, die durch mechanische Reibung zwischen trockenem Weichholz und einer Bogenspindel über 400°C heiße Glutkohle erzeugt und durch gezielte Sauerstoffzufuhr entzündet.",
+  "timeRequired": "20 MINUTEN",
+  "successRate": "85% (Trockenholz)",
+  "difficulty": "Stufe 2 (Fortgeschrittene Technik)",
+  "outputPerHour": "1 Feuer / 20 Min",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Bogenstab & Pflanzenfasersehne (BOW & STRING)",
+      "desc": "60–70 cm langer, leicht gebogener Hartholzast (Esche/Hasel) und reißfeste Naturfaserschnur."
+    },
+    {
+      "id": "mat-02",
+      "name": "Rotationsspindel (SPINDLE)",
+      "desc": "Gerader Zylinder (Ø 20 mm) aus trockener Zeder oder Weide. Oben abgerundet, unten 45°-Kegel."
+    },
+    {
+      "id": "mat-03",
+      "name": "Feuerbrett mit V-Kerbe & Zundernest (HEARTH & TINDER)",
+      "desc": "15–20 mm dickes Feuerbrett mit 45° V-Kerbe, Glutauffangblatt und trockenem Zundernest."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "45° V-Kerben-Zuschnitt & Spindelzentrierung",
+      "description": "Schnitzen Sie eine präzise 45-Grad-V-Kerbe von der Vorderkante des Feuerbretts exakt bis zum Mittelpunkt der Spindelbohrung. Legen Sie ein trockenes Blatt als Glutauffang darunter.",
+      "actionNote": "> Feldregel: Überschreitet der Kerbenwinkel 60 Grad, entweicht die Wärme und der Zündpunkt von 400°C wird nicht erreicht.",
+      "svgFileName": "02-step-01.svg",
+      "svgLabels": [
+        "GLUTAUFFANGBLATT [RINDENBASIS]",
+        "45° V-KERBE (Spitze am Achszentrum)",
+        "Ø 20mm SPINDELACHSE",
+        "DICKE: 15~20mm",
+        "FEUERBRETT (HEARTH BOARD)",
+        "KERBENSPITZE (Exakt im Bohrlochzentrum)",
+        "KRITISCHE AUFBAUREGEL:",
+        "V-Kerbenspitze muss Achszentrum berühren",
+        "KOHLESTAUB-SAMMELZONE (GLUTBETT)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "90° Vertikaldruck & Vollhub-Hochgeschwindigkeitsrotation",
+      "description": "Fixieren Sie das Feuerbrett mit dem linken Fuß und üben Sie über das Drucklager 12–15 kg Vertikallast aus. Bewegen Sie den Bogen waagerecht über die volle Länge (300–400 RPM), bis dichter weißer Rauch aufsteigt.",
+      "actionNote": "> Feldregel: Nicht beim ersten Rauch stoppen! Mindestens 10–15 kraftvolle Endhübe durchführen, damit der Kohlestaub vollständig verschmilzt.",
+      "svgFileName": "02-step-02.svg",
+      "svgLabels": [
+        "DRUCKLAGER (HANDSTÜCK)",
+        "F_DOWN: 12~15 kg (Vertikallast)",
+        "BOGENSTAB (65cm Hartholz)",
+        "VOLLHUB-PENDELBEWEGUNG (Volle Bogenlänge)",
+        "ω: 300~400 RPM",
+        "FEUERBRETT",
+        "WEISSER RAUCH (Dichter Rauch)",
+        "KRITISCHER SCHWELLENWERT:",
+        "Zündtemp.: 400°C+",
+        "Druck: Start 30% → Ende 100%",
+        "Hub: 100% Bogenlänge nutzen"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Glutkern-Einbettung & Sanfte Belüftungszündung (600°C)",
+      "description": "Lassen Sie den glimmenden Kohlestaub 30 Sekunden lang zu einem festen Glutkern (450°C) reifen. Betten Sie ihn in das Zundernest um, halten Sie es im 45°-Winkel und blasen Sie sanft bis zur Flammenzündung bei 600°C.",
+      "actionNote": "> Feldregel: Zundernest im 45°-Winkel leicht über Augenhöhe halten – der thermische Aufwind verdoppelt die Sauerstoffzufuhr.",
+      "svgFileName": "02-step-03.svg",
+      "svgLabels": [
+        "GLUTKERN (450°C)",
+        "SANFTER KONTINUIERLICHER LUFTSTROM",
+        "FLAMMENZÜNDUNG (Durchzündung)",
+        "45° HALTEWINKEL",
+        "TEMPERATURANSTIEG & ZÜNDMATRIX",
+        "ZEIT (Sek)",
+        "TEMP (°C)",
+        "600°C FLAMMEN-ZÜNDSCHWELLE",
+        "400°C GLIMMPUNKT (KOHLE)",
+        "30s Reifen & Einsetzen (0s)",
+        "Flammenausbruch (15~20s)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Niemals hastig in unfertigen Kohlestaub blasen",
+    "description": "Wer sofort nach dem Bohren stark auf das lose schwarze Pulver bläst, zerstreut die feinen Kohlepartikel im Wind und löscht die Kernwärme augenblicklich.",
+    "consequence": "Ein Scheitern der Feuerzündung bei Kälte beschleunigt das Absinken der Körperkerntemperatur und führt binnen 72 Stunden zum Tod durch Unterkühlung."
+  }
+}

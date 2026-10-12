@@ -265,25 +265,42 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
   }
 
   /**
-   * 다국어 번역본(EN, JA) 자동 생성
+   * 6대 글로벌 타겟 언어(EN, JA, ES, DE, PT, zh-TW) 번역본 및 도면 라벨(svgLabels) 병렬 자동 생성
    */
-  public static async generateTranslations(apiKey: string, master: Protocol): Promise<{ en: Protocol; ja: Protocol }> {
-    const promptEn = `Translate the following primitive survival protocol JSON into English. Maintain all exact JSON keys, IDs, svgFileName, and technical tone. Return JSON only:\n${JSON.stringify(master, null, 2)}`;
-    const promptJa = `Translate the following primitive survival protocol JSON into Japanese (post-apocalyptic technical field manual style). Maintain all exact JSON keys, IDs, svgFileName, and technical tone. Return JSON only:\n${JSON.stringify(master, null, 2)}`;
+  public static async generateTranslations(
+    apiKey: string,
+    master: Protocol
+  ): Promise<Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>> {
+    const localeSpecs: Array<{ code: 'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW'; persona: string }> = [
+      { code: 'en', persona: 'English (US/UK Military Survival & Bushcraft Field Manual style)' },
+      { code: 'ja', persona: 'Japanese (防災・サバイバル戦術教本 style, concise technical terminology)' },
+      { code: 'es', persona: 'Spanish (Español Neutro, Manual Táctico de Supervivencia style)' },
+      { code: 'de', persona: 'German (Präzises Technisches Überlebenshandbuch & Bushcraft style)' },
+      { code: 'pt', persona: 'Portuguese (Português, Manual Tático de Sobrevivência style)' },
+      { code: 'zh-TW', persona: 'Traditional Chinese (繁體中文, 野外求生與防災戰術手冊 style)' },
+    ];
 
-    const [rawEn, rawJa] = await Promise.all([
-      callGeminiApi(apiKey, 'gemini-3.8-flash', promptEn, { responseMimeType: 'application/json', timeoutMs: 30000 }),
-      callGeminiApi(apiKey, 'gemini-3.8-flash', promptJa, { responseMimeType: 'application/json', timeoutMs: 30000 }),
-    ]);
+    const entries = await Promise.all(
+      localeSpecs.map(async ({ code, persona }) => {
+        const prompt = `Translate the following primitive survival protocol JSON into ${persona}.
+Rules:
+1. Maintain all exact JSON keys, protocolId, category, threatLevel, material IDs, stepNumber, and svgFileName.
+2. If "svgLabels" array is present inside each step of "steps", translate every label string in "svgLabels" into concise technical blueprint labels in ${code} while keeping the EXACT same array length and index order. Keep technical units (mm, cm, °C, °, RPM, kg, %) intact.
+3. Return valid JSON only:\n${JSON.stringify(master, null, 2)}`;
 
-    return {
-      en: JSON.parse(rawEn),
-      ja: JSON.parse(rawJa),
-    };
+        const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
+          responseMimeType: 'application/json',
+          timeoutMs: 35000,
+        });
+        return [code, JSON.parse(raw) as Protocol] as const;
+      })
+    );
+
+    return Object.fromEntries(entries) as Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>;
   }
 
   /**
-   * 3단계별 테크니컬 벡터 SVG 도면 자동 생성(추출->검수->재추출->재검수 루프) 및 파일 저장
+   * 3단계별 테크니컬 벡터 SVG 도면 자동 생성(추출->검수->재추출->재검수 루프), svgLabels 추출 및 파일 저장
    */
   public static async generateAndSaveSvgs(
     apiKey: string,
@@ -304,6 +321,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
         { actionNote: step.actionNote }
       );
       fs.writeFileSync(path.join(svgsDir, fileName), svgCode, 'utf-8');
+      step.svgLabels = SvgAuditService.extractSvgTextLabels(svgCode);
       savedFiles.push(fileName);
     }
 
@@ -336,7 +354,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
 
     const { workDir, isServerless } = this.prepareWritableWorkspace();
 
-    // 2. 도면 SVG 생성 및 저장
+    // 2. 도면 SVG 생성 및 저장 (step.svgLabels 자동 추출 포함)
     const svgsDir = path.join(workDir, 'content/svgs');
     console.log(`🎨 [SVG 도면 생성] ${protocol.steps.length}개 정밀 벡터 도면 생성 중...`);
     await this.generateAndSaveSvgs(apiKey, protocol, svgsDir);
@@ -346,14 +364,20 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
     const masterPath = path.join(workDir, 'content/protocols', fileSlug);
     fs.writeFileSync(masterPath, JSON.stringify(protocol, null, 2), 'utf-8');
 
-    // 4. 다국어(EN, JA) 번역본 생성 및 저장
+    // 4. 6대 글로벌 타겟 언어(EN, JA, ES, DE, PT, zh-TW) 번역본 생성 및 저장
     try {
-      console.log(`🌐 [다국어 생성] 영어 및 일본어 번역본 생성 중...`);
-      const { en, ja } = await this.generateTranslations(apiKey, protocol);
+      console.log(`🌐 [다국어 생성] 6개국어(EN, JA, ES, DE, PT, zh-TW) 번역본 및 도면 라벨 생성 중...`);
+      const translations = await this.generateTranslations(apiKey, protocol);
       const localesDir = path.join(workDir, 'content/protocols/locales');
       fs.mkdirSync(localesDir, { recursive: true });
-      fs.writeFileSync(path.join(localesDir, `${fileSlug.replace('.json', '')}.en.json`), JSON.stringify(en, null, 2), 'utf-8');
-      fs.writeFileSync(path.join(localesDir, `${fileSlug.replace('.json', '')}.ja.json`), JSON.stringify(ja, null, 2), 'utf-8');
+      const baseSlug = fileSlug.replace('.json', '');
+      for (const [langCode, localizedProto] of Object.entries(translations)) {
+        fs.writeFileSync(
+          path.join(localesDir, `${baseSlug}.${langCode}.json`),
+          JSON.stringify(localizedProto, null, 2),
+          'utf-8'
+        );
+      }
     } catch (e) {
       console.warn(`[다국어 생성 건너뜀] 번역 중 오류: ${e}`);
     }
@@ -440,23 +464,29 @@ ${instructions}
     const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
     const filePath = targetInfo.filePath;
 
-    // 마스터 파일 갱신
-    fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
-
     // SVG 재생성 옵션이 켜져 있는 경우
     if (regenerateSvgs) {
       console.log(`🎨 [SVG 도면 재생성] 도면 재생성 중...`);
       await this.generateAndSaveSvgs(apiKey, updatedProto, path.join(workDir, 'content/svgs'));
     }
 
-    // 다국어 번역본 동기화
+    // 마스터 파일 갱신 (svgLabels 포함)
+    fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
+
+    // 6대 글로벌 타겟 언어(EN, JA, ES, DE, PT, zh-TW) 번역본 동기화
     try {
-      console.log(`🌐 [다국어 동기화] 번역본 재합성...`);
-      const { en, ja } = await this.generateTranslations(apiKey, updatedProto);
+      console.log(`🌐 [다국어 동기화] 6개국어 번역본 및 도면 라벨 재합성...`);
+      const translations = await this.generateTranslations(apiKey, updatedProto);
       const localesDir = path.join(workDir, 'content/protocols/locales');
+      fs.mkdirSync(localesDir, { recursive: true });
       const baseName = path.basename(filePath, '.json');
-      fs.writeFileSync(path.join(localesDir, `${baseName}.en.json`), JSON.stringify(en, null, 2), 'utf-8');
-      fs.writeFileSync(path.join(localesDir, `${baseName}.ja.json`), JSON.stringify(ja, null, 2), 'utf-8');
+      for (const [langCode, localizedProto] of Object.entries(translations)) {
+        fs.writeFileSync(
+          path.join(localesDir, `${baseName}.${langCode}.json`),
+          JSON.stringify(localizedProto, null, 2),
+          'utf-8'
+        );
+      }
     } catch (e) {
       console.warn(`[다국어 동기화 건너뜀]: ${e}`);
     }

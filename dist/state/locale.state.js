@@ -63,7 +63,21 @@ export function getLocaleRuntimeScript()         {
           }
         });
 
-        // 5. 언어 스위처 UI 버튼 액티브 스타일 동기화
+        // 5. [선언적 엔진] 인라인 벡터 도면(SVG) 내부 <text> 다국어 핫스왑 (data-svg-step, data-svg-label)
+        document.querySelectorAll('text[data-svg-step]').forEach(function(el) {
+          var sIdx = parseInt(el.getAttribute('data-svg-step'), 10);
+          var lIdx = parseInt(el.getAttribute('data-svg-label'), 10);
+          if (
+            proto.steps &&
+            proto.steps[sIdx] &&
+            Array.isArray(proto.steps[sIdx].svgLabels) &&
+            proto.steps[sIdx].svgLabels[lIdx] !== undefined
+          ) {
+            el.textContent = proto.steps[sIdx].svgLabels[lIdx];
+          }
+        });
+
+        // 6. 언어 스위처 UI 버튼 액티브 스타일 동기화
         document.querySelectorAll('[data-locale-btn]').forEach(function(btn) {
           var code = btn.getAttribute('data-locale-btn');
           btn.className = (code === targetLocale)

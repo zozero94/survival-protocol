@@ -1,0 +1,94 @@
+{
+  "protocolId": "PR-02",
+  "category": "FIRE",
+  "title": "Protocolo #02: Fogo por Fricção com Arco e Fuso (Bow Drill)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
+  "summary": "Tecnologia primitiva de ignição que utiliza o atrito mecânico entre madeira macia seca e um fuso rotativo para gerar brasa de carvão acima de 400°C, seguida de oxigenação controlada.",
+  "timeRequired": "20 MINUTOS",
+  "successRate": "85% (Madeira Seca)",
+  "difficulty": "Nível 2 (Habilidade Técnica)",
+  "outputPerHour": "1 Fogo / 20 min",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Arco e Corda de Fibra Natural (BOW & STRING)",
+      "desc": "Galho resistente de 60-70 cm (freixo/aveleira) e corda firme de fibra natural de kudzu."
+    },
+    {
+      "id": "mat-02",
+      "name": "Fuso Rotativo (SPINDLE)",
+      "desc": "Haste cilíndrica reta de cedro ou salgueiro seco (Ø 20 mm). Topo arredondado, ponta inferior a 45°."
+    },
+    {
+      "id": "mat-03",
+      "name": "Prancha Base com Entalhe V e Isca (HEARTH & TINDER)",
+      "desc": "Prancha de 15-20 mm com entalhe em V de 45°, folha coletora de brasa e ninho de fibras secas."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Entalhe em V de 45° e Assentamento do Eixo do Fuso",
+      "description": "Esculpa um entalhe em V de 45 graus da borda frontal da prancha até o centro exato do soquete do fuso. Posicione uma folha seca abaixo da abertura para acumular o pó de carvão quente.",
+      "actionNote": "> Regra de Campo: Se o ângulo do entalhe passar de 60°, o calor se dissipa e o pó nunca atingirá o ponto de ignição de 400°C.",
+      "svgFileName": "02-step-01.svg",
+      "svgLabels": [
+        "FOLHA COLETORA [BASE DE BRASA]",
+        "ENTALHE EM V 45° (Vértice no Centro)",
+        "EIXO FUSO Ø 20mm",
+        "ESPESSURA: 15~20mm",
+        "PRANCHA BASE (HEARTH BOARD)",
+        "VÉRTICE (Alinhado ao Centro do Fuso)",
+        "REGRA CRÍTICA DE MONTAGEM:",
+        "O vértice em V deve tocar o centro do eixo",
+        "ZONA DE ACÚMULO DE PÓ DE CARVÃO (BRASA)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Carga Vertical de 90° e Rotação Recíproca de Curso Total",
+      "description": "Trave a prancha com o pé esquerdo e aplique 12-15 kg de pressão vertical no bloco de apoio. Movimente o arco horizontalmente usando 100% do comprimento a 300-400 RPM até emitir fumaça branca densa.",
+      "actionNote": "> Regra de Campo: Não pare na primeira fumaça. Execute mais 10 a 15 cursos em potência máxima para fundir a brasa no entalhe.",
+      "svgFileName": "02-step-02.svg",
+      "svgLabels": [
+        "BLOCO DE APOIO (SOQUETE MANUAL)",
+        "F_DOWN: 12~15 kg (Carga Vertical)",
+        "ARCO TÁTICO (Galho 65cm)",
+        "MOVIMENTO RECÍPROCO DE CURSO TOTAL",
+        "ω: 300~400 RPM",
+        "PRANCHA BASE",
+        "FUMAÇA BRANCA (Emissão Densa)",
+        "LIMIAR CRÍTICO:",
+        "Temp. Ignição: 400°C+",
+        "Pressão: Início 30% → Final 100%",
+        "Curso: 100% do Arco"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Transplante da Brasa e Sopro Suave de Ignição (600°C)",
+      "description": "Aguarde 30 segundos para o pó fumegante coalescer em uma brasa firme (450°C). Transfira para o centro do ninho de isca, eleve a 45° e sopre de forma suave e contínua até romper em chama a 600°C.",
+      "actionNote": "> Regra de Campo: Segure o ninho a 45° acima da linha dos olhos; a corrente térmica ascendente dobra a oxigenação e afasta a fumaça.",
+      "svgFileName": "02-step-03.svg",
+      "svgLabels": [
+        "NÚCLEO BRASA (450°C)",
+        "SOPRO SUAVE E CONTÍNUO (Fluxo Lento)",
+        "IGNIÇÃO DE CHAMA (Combustão)",
+        "ELEVAÇÃO A 45°",
+        "MATRIZ DE TEMPERATURA E IGNIÇÃO",
+        "TEMPO (s)",
+        "TEMP (°C)",
+        "600°C LIMIAR DE CHAMA ABERTA",
+        "400°C PONTO DE BRASA ATIVA",
+        "30s Coesão e Transplante (0s)",
+        "Ignição Chama (15~20s)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Nunca sopre com força sobre a brasa recém-formada",
+    "description": "Soprar precipitadamente sobre o pó de carvão solto espalhará as partículas incandescentes pelo ar, extinguindo a fonte de calor instantaneamente.",
+    "consequence": "A falha na obtenção de fogo em ambiente frio acelera a queda da temperatura corporal central, levando à morte por hipotermia em 72 horas."
+  }
+}

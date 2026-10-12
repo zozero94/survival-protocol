@@ -1,0 +1,80 @@
+{
+  "protocolId": "PR-01",
+  "category": "WATER",
+  "title": "PROTOCOLO #01: Purificação de Água Selvagem (Filtro de Carvão)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
+  "summary": "Beber água selvagem não tratada causa disenteria bacteriana e giardíase letal em até 72 horas. A água deve passar por filtragem mecânica de carvão ativado seguida obrigatoriamente de fervura térmica.",
+  "timeRequired": "15 MINUTOS",
+  "successRate": "99.8% (Pós-Fervura)",
+  "difficulty": "Nível 1 (Sobrevivência Primitiva)",
+  "outputPerHour": "1.5 Litros / Hora",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Carvão de Madeira Dura Triturado",
+      "desc": "Brasas frias de fogueira trituradas do tamanho de ervilhas para adsorver toxinas."
+    },
+    {
+      "id": "mat-02",
+      "name": "Areia Limpa de Rio e Cascalho Fino",
+      "desc": "Areia lavada e pequenos seixos para retenção física de micropartículas e lodo."
+    },
+    {
+      "id": "mat-03",
+      "name": "Tubo de Bambu Oco ou Cone de Casca",
+      "desc": "Coluna cilíndrica de bambu (Ø 8 cm) posicionada verticalmente para filtragem por gravidade."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Preparação do Recipiente e Base do Filtro",
+      "description": "Prepare o cilindro coletor invertido formando um funil largo no topo e saída estreita na base.",
+      "actionNote": "> Ação: Compacte fibra vegetal trançada ou musgo esfagno no bocal inferior para reter os grãos de carvão.",
+      "svgFileName": "step-01.svg",
+      "svgLabels": [
+        "ÁGUA BRUTA",
+        "1. Cascalho (Detritos)",
+        "2. Areia (Sedimentos)",
+        "CARVÃO",
+        "3. Carvão (Toxinas)",
+        "4. Malha Têxtil (Base)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Camadas do Meio Filtrante (Pirâmide Invertida)",
+      "description": "Empilhe rigorosamente de baixo para cima: malha têxtil → 6 cm de carvão triturado → 5 cm de areia fina → 3 cm de cascalho grosso.",
+      "actionNote": "> Ciência: O cascalho barra detritos maiores, a areia retém sedimentos finos e o carvão poroso adsorve toxinas químicas.",
+      "svgFileName": "step-02.svg",
+      "svgLabels": [
+        "[DESCARTAR 500ml]",
+        "Purga de Pó",
+        "→",
+        "[COLETAR ÁGUA]",
+        "95% Limpeza",
+        "Fluxo: 1~2 gotas / seg"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Filtragem Lenta e Esterilização por Fervura",
+      "description": "Despeje a água bruta lentamente sobre o cascalho (1 a 2 gotas/seg) e submeta a água limpa coletada à fervura direta a 100°C.",
+      "actionNote": "> Atenção: Descarte os primeiros 500 ml escuros com pó de carvão. Ferva a água límpida por 3 minutos contínuos.",
+      "svgFileName": "step-03.svg",
+      "svgLabels": [
+        "100°C Fogo Direto",
+        "100°C",
+        "3 Minutos",
+        "99.9% Estéril",
+        "Tempo Fervura (MIN)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "ERRO FATAL: Nunca beba a água filtrada diretamente sem ferver.",
+    "description": "A filtragem mecânica com carvão remove apenas turbidez e compostos químicos; vírus, cistos de Giardia e Cryptosporidium atravessam o filtro. É obrigatório ferver vigorosamente por pelo menos 1 a 3 minutos.",
+    "consequence": "Consequência ao pular a fervura: Infecção aguda por protozoários e morte por desidratação em 96 horas."
+  }
+}

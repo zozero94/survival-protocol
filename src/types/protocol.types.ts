@@ -14,6 +14,7 @@ export interface ProtocolStep {
   actionNote: string;
   svgFileName: string;
   svgCode?: string;
+  svgLabels?: string[];
 }
 
 export interface FatalMistake {

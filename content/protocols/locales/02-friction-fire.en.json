@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Bow & Vine String (BOW & STRING)",
-      "desc": "Flexible hardwood limb (ash/hazel, 60-70cm) and durable wild kudzu vine cord or paracord"
+      "desc": "Flexible hardwood limb (ash/hazel, 60-70cm) and durable wild kudzu vine cord"
     },
     {
       "id": "mat-02",
@@ -30,23 +30,60 @@
     {
       "stepNumber": "01",
       "title": "V-Notch Carving & Spindle Axis Seating",
-      "description": "Carve a precise 45-degree V-notch from the edge of the hearth board penetrating directly to the axis center. Place a dry ember collector leaf beneath to trap hot carbon dust.",
+      "description": "Carve a precise 45-degree V-notch from the outer edge of the hearth board penetrating directly to the socket center. Place a dry ember collector leaf beneath to trap hot carbon dust.",
       "actionNote": "> Field Rule: If the notch angle exceeds 60 degrees, thermal dissipation will prevent the dust from reaching the 400°C ignition threshold.",
-      "svgFileName": "02-step-01.svg"
+      "svgFileName": "02-step-01.svg",
+      "svgLabels": [
+        "EMBER CATCHER LEAF [DRY BARK/LEAF]",
+        "45° V-NOTCH (Apex Meets Axis Center)",
+        "Ø 20mm SPINDLE AXIS",
+        "THICKNESS: 15~20mm",
+        "HEARTH BOARD (SOFTWOOD)",
+        "NOTCH APEX (Aligned with Socket Center)",
+        "CRITICAL SETUP RULE:",
+        "Notch apex must touch spindle axis center",
+        "CARBON DUST ACCUMULATION ZONE (EMBER BED)"
+      ]
     },
     {
       "stepNumber": "02",
       "title": "90° Downward Load & High-Speed Reciprocating Sawing",
       "description": "Anchor the hearth board firmly with your left foot and apply 12-15kg downward load using the bearing block. Saw the bow horizontally with full-length strokes at 300-400 RPM until dense white smoke bursts.",
       "actionNote": "> Field Rule: Do not stop when smoke first appears. Continue 10-15 full-power acceleration strokes to ensure complete carbonization in the notch.",
-      "svgFileName": "02-step-02.svg"
+      "svgFileName": "02-step-02.svg",
+      "svgLabels": [
+        "BEARING BLOCK (HAND SOCKET)",
+        "F_DOWN: 12~15 kg (Vertical Load)",
+        "BOW STICK (65cm Curved Limb)",
+        "FULL-STROKE RECIPROCATING MOTION (Full Bow Length)",
+        "ω: 300~400 RPM",
+        "HEARTH BOARD",
+        "WHITE SMOKE (Dense Smoke Plume)",
+        "CRITICAL THRESHOLD:",
+        "Ignition Temp: 400°C+",
+        "Load: Start 30% → Final 100%",
+        "Stroke: Use 100% Bow Length"
+      ]
     },
     {
       "stepNumber": "03",
       "title": "Ember Transfusion & Gentle Aeration Ignition",
       "description": "Allow the smoking carbon dust to coalesce into a cohesive coal for 30 seconds. Carefully transfer it into the center of a dry tinder nest, cup at a 45-degree elevation, and supply steady, gentle breaths to ignite flame.",
-      "actionNote": "> Field Rule: Hold the nest at a 45-degree angle slightly above eye level. Rising thermal updrafts double oxygen intake while keeping toxic smoke away from eyes.",
-      "svgFileName": "02-step-03.svg"
+      "actionNote": "> Field Rule: Hold the nest at a 45-degree angle slightly above eye level. Rising thermal updrafts double oxygen intake while keeping smoke away from eyes.",
+      "svgFileName": "02-step-03.svg",
+      "svgLabels": [
+        "EMBER CORE (450°C)",
+        "GENTLE CONTINUOUS BREATH (Steady Low Airflow)",
+        "FLAME IGNITION BURST (Flashover Stage)",
+        "45° ELEVATION CUPPING",
+        "TEMPERATURE RISE & IGNITION MATRIX",
+        "TIME (sec)",
+        "TEMP (°C)",
+        "600°C FLAME IGNITION THRESHOLD",
+        "400°C CARBON SMOLDER POINT",
+        "Coalesce 30s & Transfer (0s)",
+        "Flame Ignition (15~20s)"
+      ]
     }
   ],
   "fatalMistake": {

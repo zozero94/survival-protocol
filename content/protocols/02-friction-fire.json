@@ -32,21 +32,58 @@
       "title": "V자 홈(Notch) 가공 및 스핀들 축 셋업",
       "description": "받침 판재(Hearth board) 가장자리에서 중심부까지 45도 각도로 예리한 V자 절삭 홈을 파냅니다. 스핀들이 회전하며 깎아낸 미세 탄화 목질 분진이 외부로 배출되지 않고 한 지점에 고밀도로 퇴적되어 열기를 보존할 수 있도록 하단에 마른 넓은 나뭇잎이나 가죽 조각을 완벽히 밀착시킵니다.",
       "actionNote": "> 야전 핵심: 홈의 꼭짓점 각도가 60도 이상으로 넓어지면 열이 분산되어 발화점(400°C)에 도달할 수 없습니다. 정확한 45° 쐐기 절삭을 유지하십시오.",
-      "svgFileName": "02-step-01.svg"
+      "svgFileName": "02-step-01.svg",
+      "svgLabels": [
+        "EMBER CATCHER LEAF [엠버 포집판]",
+        "45° V-NOTCH (홈 꼭짓점: 축 중심 접촉)",
+        "Ø 20mm SPINDLE AXIS",
+        "THICKNESS: 15~20mm",
+        "HEARTH BOARD (받침 판재)",
+        "NOTCH APEX (판재 중심점/소켓 중심과 일치)",
+        "CRITICAL SETUP RULE:",
+        "홈(Notch) 꼭짓점은 축 중심과 정확히 접촉",
+        "CARBON DUST ACCUMULATION ZONE (엠버 집적 구역)"
+      ]
     },
     {
       "stepNumber": "02",
       "title": "90도 수직 가압 및 고속 왕복 마찰 회전",
       "description": "왼발로 받침 판재를 단단히 밟고, 손잡이 윤활석으로 스핀들 상단을 90도 수직으로 체중을 실어 누릅니다. 활대를 지면과 수평으로 유지하며 활대 전체 길이를 고르게 사용하는 긴 스트로크로 왕복합니다. 초기 10초간 갈색 가루가 형성된 후, 진하고 짙은 백색 연기가 분출되면 마지막 5초간 가압력과 속도를 극대화하여 마찰열을 400°C 이상으로 급격히 끌어올립니다.",
       "actionNote": "> 야전 핵심: 연기가 난다고 바로 멈추지 마십시오. 연기가 발생한 후 최소 10~15회의 전력 가속 스트로크를 더 진행해야 V홈에 분진 덩어리가 온전히 탄화 융합됩니다.",
-      "svgFileName": "02-step-02.svg"
+      "svgFileName": "02-step-02.svg",
+      "svgLabels": [
+        "BEARING BLOCK (손잡이 판)",
+        "F_DOWN: 12~15 kg (수직 하중)",
+        "BOW STICK (길이 65cm 활대)",
+        "FULL-STROKE RECIPROCATING MOTION (전장 왕복 톱질)",
+        "ω: 300~400 RPM",
+        "HEARTH BOARD",
+        "WHITE SMOKE (백색 연기 배출)",
+        "CRITICAL THRESHOLD:",
+        "발화 온도: 400°C+",
+        "가압 비율: 초기 30% → 종기 100%",
+        "스트로크: 활대 전장 100% 사용"
+      ]
     },
     {
       "stepNumber": "03",
       "title": "탄화 엠버(Ember) 부싯깃 이식 및 부드러운 산소 송풍 발화",
       "description": "판재 하단 엠버 포집판에 모인 흑색 숯 분진 덩어리가 자체적으로 미세한 연기를 내뿜으며 스스로 숨을 쉴 때까지 30초간 대기합니다. 덩어리가 단단히 뭉치면 새둥지 형태로 오목하게 빚은 마른 부싯깃 둥지 중앙에 조심스럽게 옮겨 붓습니다. 둥지를 45도 각도로 들고, 엠버 중심부를 향해 길고 균일한 저속 날숨을 불어넣어 온도를 600°C 이상으로 급상승시켜 화염을 분출시킵니다.",
       "actionNote": "> 야전 핵심: 송풍 시 눈높이보다 약간 높은 45도 각도로 부싯깃을 드십시오. 연기가 눈과 호흡기를 찌르는 것을 방지하며, 상승 기류가 산소 흡입 효율을 2배 증가시킵니다.",
-      "svgFileName": "02-step-03.svg"
+      "svgFileName": "02-step-03.svg",
+      "svgLabels": [
+        "EMBER CORE (450°C)",
+        "GENTLE CONTINUOUS BREATH (균일한 저속 날숨)",
+        "FLAME IGNITION BURST (자연 발화 단계)",
+        "45° ELEVATION CUPPING",
+        "TEMPERATURE RISE & IGNITION MATRIX",
+        "TIME (초)",
+        "TEMP (°C)",
+        "600°C FLAME IGNITION THRESHOLD",
+        "400°C CARBON SMOLDER POINT",
+        "30초 응집 후 이식 (0초)",
+        "화염 점화 (15~20초)"
+      ]
     }
   ],
   "fatalMistake": {

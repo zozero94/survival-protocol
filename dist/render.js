@@ -35,6 +35,33 @@ export function renderCanonicalProtocolPage(
     throw new Error('프로토콜 데이터셋이 비어 있습니다.');
   }
 
+  // 마스터(또는 svgLabels가 비어있는 로케일)의 step.svgLabels를 원본 SVG <text>에서 자동 추출·보강
+  for (const proto of Object.values(protocolsMap)) {
+    if (!proto || !Array.isArray(proto.steps)) continue;
+    for (const step of proto.steps) {
+      if (!Array.isArray(step.svgLabels) || step.svgLabels.length === 0) {
+        const rawSvg = svgsMap[step.svgFileName] || step.svgCode || '';
+        if (rawSvg) {
+          const extracted           = [];
+          const regex = /<text\b[^>]*>([\s\S]*?)<\/text>/gi;
+          let m                        ;
+          while ((m = regex.exec(rawSvg)) !== null) {
+            extracted.push(
+              m[1]
+                .replace(/<[^>]+>/g, '')
+                .replace(/&amp;/g, '&')
+                .replace(/&lt;/g, '<')
+                .replace(/&gt;/g, '>')
+                .replace(/&quot;/g, '"')
+                .trim()
+            );
+          }
+          step.svgLabels = extracted;
+        }
+      }
+    }
+  }
+
   const headerHtml = renderHeader(master.category, master.title, defaultLocale);
   const heroHtml = renderHeroSection(master);
   const checklistHtml = renderChecklist(master.materials);

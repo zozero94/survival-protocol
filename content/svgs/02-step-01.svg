@@ -18,7 +18,7 @@
   <!-- Ember Catcher Leaf positioned under the board & notch opening -->
   <path d="M 180 260 C 240 250, 440 250, 500 260 C 515 285, 430 308, 340 308 C 250 308, 165 285, 180 260 Z" 
         fill="#171717" stroke="#666666" stroke-width="1.2" stroke-dasharray="3,3" />
-  <text x="480" y="298" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">EMBER CATCHER LEAF [엠버 포집판]</text>
+  <text x="665" y="298" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">EMBER CATCHER LEAF [엠버 포집판]</text>
 
   <!-- Hearth Board 3D block (isometric projection) -->
   <!-- Top Face -->

@@ -25,6 +25,6 @@
   <path d="M200 55 L202 60 L204 55" stroke="#FFFFFF" stroke-width="1.2"></path>
 
   <!-- Drip speed gauge -->
-  <text x="70" y="25" fill="#AAA" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">유속 규격: 1초당 1~2방울 낙하</text>
+  <text x="15" y="25" fill="#AAA" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="start">유속 규격: 1초당 1~2방울 낙하</text>
   <circle cx="202" cy="22" r="3" fill="#FFF"></circle>
 </svg>

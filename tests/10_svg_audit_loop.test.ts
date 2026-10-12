@@ -196,4 +196,59 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
     assert.strictEqual(callCount, 1);
     assert.strictEqual(loopResult.terminationReason, 'CIRCUIT_BREAKER_TRIPPED');
   });
+
+  it('[7개국어 도면 핫스왑 & 정적 감사] 7개 지원 언어(ko, en, ja, es, de, pt, zh-TW) 전체에 대해 SVG <text> 라벨 개수 일치 및 경계/충돌 무결성을 100% 통과해야 한다', () => {
+    const locales = ['en', 'ja', 'es', 'de', 'pt', 'zh-TW'];
+    const baseSlugs = ['01-water-purification', '02-friction-fire'];
+    const protocolsDir = path.resolve(__dirname, '../content/protocols');
+    const localesDir = path.resolve(__dirname, '../content/protocols/locales');
+    const svgsDir = path.resolve(__dirname, '../content/svgs');
+
+    for (const slug of baseSlugs) {
+      const koProto = JSON.parse(fs.readFileSync(path.join(protocolsDir, `${slug}.json`), 'utf-8'));
+
+      for (let sIdx = 0; sIdx < koProto.steps.length; sIdx++) {
+        const step = koProto.steps[sIdx];
+        const svgCode = fs.readFileSync(path.join(svgsDir, step.svgFileName), 'utf-8');
+        const extractedLabels = SvgAuditService.extractSvgTextLabels(svgCode);
+
+        assert.ok(Array.isArray(step.svgLabels), `${slug} ko step ${sIdx} svgLabels 누락`);
+        assert.strictEqual(
+          step.svgLabels.length,
+          extractedLabels.length,
+          `${slug} ko step ${sIdx} svgLabels 개수 불일치`
+        );
+
+        // 선언적 바인딩 주입 검증
+        const boundSvg = SvgAuditService.bindSvgDeclarativeLabels(svgCode, sIdx);
+        assert.ok(boundSvg.includes(`data-svg-step="${sIdx}"`), 'data-svg-step 속성 누락');
+        assert.ok(boundSvg.includes(`data-svg-label="${extractedLabels.length - 1}"`), 'data-svg-label 속성 누락');
+
+        const labelsByLocale: Record<string, string[]> = { ko: step.svgLabels };
+
+        for (const lang of locales) {
+          const locFile = path.join(localesDir, `${slug}.${lang}.json`);
+          assert.ok(fs.existsSync(locFile), `다국어 파일 누락: ${locFile}`);
+          const locProto = JSON.parse(fs.readFileSync(locFile, 'utf-8'));
+          const locStep = locProto.steps[sIdx];
+          assert.ok(Array.isArray(locStep.svgLabels), `${slug}.${lang} step ${sIdx} svgLabels 누락`);
+          assert.strictEqual(
+            locStep.svgLabels.length,
+            extractedLabels.length,
+            `${slug}.${lang} step ${sIdx} svgLabels 개수(${locStep.svgLabels.length})가 SVG <text> 개수(${extractedLabels.length})와 다름`
+          );
+          labelsByLocale[lang] = locStep.svgLabels;
+        }
+
+        // 7개국어 전체 라벨을 대입하여 겹침/잘림 정적 감사 수행
+        const multiAudit = SvgAuditService.auditMultilingualLabels(svgCode, labelsByLocale);
+        assert.strictEqual(
+          multiAudit.allPassed,
+          true,
+          `${step.svgFileName} 다국어 정적 감사 실패: ${JSON.stringify(multiAudit.localeReports)}`
+        );
+      }
+    }
+  });
 });
+

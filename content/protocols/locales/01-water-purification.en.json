@@ -32,21 +32,44 @@
       "title": "Vessel Preparation & Filter Base Assembly",
       "description": "Using a sharp survival knife, cut 3 inches (7-8cm) off the bottom of a plastic bottle to form a wide funnel. Invert with spout facing down.",
       "actionNote": "> Action: Pierce 3 small pinholes in the cap, or tightly pack cotton cloth/sphagnum moss to prevent filtration medium loss.",
-      "svgFileName": "step-01.svg"
+      "svgFileName": "step-01.svg",
+      "svgLabels": [
+        "RAW WATER",
+        "1. Gravel (Coarse Debris)",
+        "2. Sand (Fine Sediment)",
+        "CHARCOAL",
+        "3. Charcoal (Toxin Adsorb)",
+        "4. Cloth Mesh (Base Plug)"
+      ]
     },
     {
       "stepNumber": "02",
       "title": "Layering the Filter Media (Inverted Pyramid Hierarchy)",
       "description": "Strictly stack layers in reverse order: Spout cloth plug -> 2.5 inches (6cm) crushed charcoal -> 2 inches (5cm) fine sand -> 1.2 inches (3cm) coarse gravel.",
       "actionNote": "> Science: Gravel blocks floating leaves, sand captures particulates, and porous activated charcoal adsorbs organic toxins and odors.",
-      "svgFileName": "step-02.svg"
+      "svgFileName": "step-02.svg",
+      "svgLabels": [
+        "[DISCARD 500ml]",
+        "Charcoal Dust Flush",
+        "→",
+        "[COLLECT CLEAN]",
+        "95% Clarity Reached",
+        "Flow Rate: 1~2 drops / sec"
+      ]
     },
     {
       "stepNumber": "03",
       "title": "Pouring Turbid Water & Clear Water Collection",
       "description": "Slowly pour murky water onto the top gravel bed. Gravity will draw water through the column at roughly one steady drop per second into a clean container.",
       "actionNote": "> Warning: Discard the initial 250ml containing loose charcoal dust. Continue running water until output runs crystal clear.",
-      "svgFileName": "step-03.svg"
+      "svgFileName": "step-03.svg",
+      "svgLabels": [
+        "100°C Direct Boil",
+        "100°C",
+        "3 Min Hold",
+        "99.9% Sterile",
+        "Rolling Boil Time (MIN)"
+      ]
     }
   ],
   "fatalMistake": {

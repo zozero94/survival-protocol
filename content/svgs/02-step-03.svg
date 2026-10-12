@@ -66,5 +66,5 @@
   <circle cx="570" cy="125" r="4" fill="#E02424"/>
   
   <text x="505" y="202" fill="#FFAA00" font-family="'JetBrains Mono', monospace" font-size="8">30초 응집 후 이식 (0초)</text>
-  <text x="575" y="145" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">화염 점화 (15~20초)</text>
+  <text x="650" y="145" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold" text-anchor="end">화염 점화 (15~20초)</text>
 </svg>

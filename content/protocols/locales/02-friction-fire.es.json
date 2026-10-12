@@ -1,0 +1,94 @@
+{
+  "protocolId": "PR-02",
+  "category": "FIRE",
+  "title": "Protocolo #02: Fuego por Fricción con Arco Táctico (Bow Drill)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
+  "summary": "Técnica pirotécnica primitiva que utiliza la fricción mecánica entre madera blanda seca y un huso giratorio para generar brasas de carbón a más de 400°C, seguida de oxigenación controlada.",
+  "timeRequired": "20 MINUTOS",
+  "successRate": "85% (Madera Seca)",
+  "difficulty": "Nivel 2 (Habilidad Técnica)",
+  "outputPerHour": "1 Fuego / 20 min",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Arco y Cuerda de Fibra Natural (BOW & STRING)",
+      "desc": "Rama firme y flexible de 60-70 cm (fresno/avellano) y cuerda resistente de fibra de kudzu."
+    },
+    {
+      "id": "mat-02",
+      "name": "Huso Giratorio (SPINDLE)",
+      "desc": "Cilindro recto de cedro o sauce seco de Ø 20 mm. Extremo superior romo, punta inferior a 45°."
+    },
+    {
+      "id": "mat-03",
+      "name": "Tabla Base con Muesca V y Yesca (HEARTH & TINDER)",
+      "desc": "Tabla de 15-20 mm con muesca en V de 45°, hoja recolectora y nido de yesca seca."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Tallado de Muesca en V (45°) y Asiento del Huso",
+      "description": "Talle una muesca en V precisa de 45 grados desde el borde exterior de la tabla hasta el centro exacto del eje del huso. Coloque una hoja seca debajo para recoger el polvo de carbón caliente.",
+      "actionNote": "> Regla de Campo: Si el ángulo de la muesca supera los 60°, el calor se dispersa y nunca alcanzará el umbral de ignición de 400°C.",
+      "svgFileName": "02-step-01.svg",
+      "svgLabels": [
+        "HOJA RECOLECTORA [BASE DE BRASA]",
+        "MUESCA EN V 45° (Vértice en Centro)",
+        "EJE HUSO Ø 20mm",
+        "ESPESOR: 15~20mm",
+        "TABLA BASE (HEARTH BOARD)",
+        "VÉRTICE (Alineado al Centro del Huso)",
+        "REGLA CRÍTICA DE AJUSTE:",
+        "El vértice en V debe tocar el centro del eje",
+        "ZONA DE ACUMULACIÓN DE POLVO DE CARBÓN"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Carga Vertical de 90° yRotación Recíproca de Alta Velocidad",
+      "description": "Fije la tabla con el pie izquierdo y aplique 12-15 kg de carga vertical con el bloque de apoyo. Deslice el arco horizontalmente usando el 100% de su longitud a 300-400 RPM hasta que brote humo blanco denso.",
+      "actionNote": "> Regla de Campo: No se detenga al ver el primer humo. Realice 10-15 carreras adicionales a máxima potencia para consolidar la brasa.",
+      "svgFileName": "02-step-02.svg",
+      "svgLabels": [
+        "BLOQUE DE APOYO (SOCKET MANUAL)",
+        "F_DOWN: 12~15 kg (Carga Vertical)",
+        "ARCO TÁCTICO (Rama 65cm)",
+        "MOVIMIENTO RECÍPROCO DE CARRERA COMPLETA",
+        "ω: 300~400 RPM",
+        "TABLA BASE",
+        "HUMO BLANCO (Emisión Densa)",
+        "UMBRAL CRÍTICO:",
+        "Temp. Ignición: 400°C+",
+        "Presión: Inicio 30% → Final 100%",
+        "Carrera: 100% Longitud del Arco"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Trasplante de Brasa y Oxigenación Suave a 45°",
+      "description": "Espere 30 segundos para que el polvo humeante se cohesione en una brasa sólida (450°C). Trasládela al nido de yesca, elévelo a 45° y sople suave y continuamente hasta alcanzar 600°C y encender la llama.",
+      "actionNote": "> Regla de Campo: Sostenga la yesca a 45° por encima del nivel de los ojos para aprovechar la corriente térmica ascendente y evitar el humo.",
+      "svgFileName": "02-step-03.svg",
+      "svgLabels": [
+        "NÚCLEO BRASA (450°C)",
+        "SOPLO SUAVE Y CONTINUO (Flujo Lento)",
+        "IGNICIÓN DE LLAMA (Brote Térmico)",
+        "ELEVACIÓN A 45°",
+        "MATRIZ DE TEMPERATURA E IGNICIÓN",
+        "TIEMPO (s)",
+        "TEMP (°C)",
+        "600°C UMBRAL DE LLAMA ABIERTA",
+        "400°C PUNTO DE BRASA ACTIVA",
+        "30s Cohesión y Traslado (0s)",
+        "Ignición Llama (15~20s)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Nunca sople bruscamente sobre polvo de carbón recién formado",
+    "description": "Soplar con fuerza inmediatamente después de detener la fricción dispersará las partículas de carbón no cohesionadas, apagando el núcleo térmico al instante.",
+    "consequence": "El fallo de ignición en condiciones invernales acelera la pérdida de calor corporal, causando muerte por hipotermia en 72 horas."
+  }
+}

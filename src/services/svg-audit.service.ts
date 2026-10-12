@@ -684,4 +684,77 @@ ${bulletLines.join('\n')}
 - 모든 <text> 라벨이 도형 외곽선이나 다른 텍스트와 절대 겹치지 않도록 최소 14px 이상의 수직/수평 간격을 확보하십시오.
 - 모든 요소가 viewBox="0 0 680 340" 내부 안전 영역(x: 15~665, y: 15~325) 안에 완전히 수용되도록 배치하십시오.`;
   }
+
+  /**
+   * SVG 도면 내부의 모든 <text> 라벨 문자열을 순서대로 추출 (다국어 마스터 라벨 추출용)
+   */
+  public static extractSvgTextLabels(svgCode: string): string[] {
+    const labels: string[] = [];
+    const textRegex = /<text\b[^>]*>([\s\S]*?)<\/text>/gi;
+    let match: RegExpExecArray | null;
+    while ((match = textRegex.exec(svgCode)) !== null) {
+      const cleaned = match[1]
+        .replace(/<[^>]+>/g, '')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .trim();
+      labels.push(cleaned);
+    }
+    return labels;
+  }
+
+  /**
+   * 인라인 SVG의 각 <text> 요소에 선언적 다국어 핫스왑 바인딩 속성(data-svg-step, data-svg-label) 주입
+   */
+  public static bindSvgDeclarativeLabels(svgCode: string, stepIndex: number): string {
+    let labelIdx = 0;
+    return svgCode.replace(/<text\b([^>]*)>/gi, (_full, attrs: string) => {
+      const currentIdx = labelIdx++;
+      const cleanAttrs = attrs
+        .replace(/\s*data-svg-step\s*=\s*["'][^"']*["']/gi, '')
+        .replace(/\s*data-svg-label\s*=\s*["'][^"']*["']/gi, '');
+      return `<text data-svg-step="${stepIndex}" data-svg-label="${currentIdx}"${cleanAttrs}>`;
+    });
+  }
+
+  /**
+   * 주어진 번역 라벨 배열을 SVG <text> 요소에 대입한 SVG 문자열 반환 (다국어 바운딩 박스 시뮬레이션용)
+   */
+  public static applySvgTextLabels(svgCode: string, labels: string[]): string {
+    let idx = 0;
+    return svgCode.replace(/<text\b([^>]*)>([\s\S]*?)<\/text>/gi, (full, attrs: string) => {
+      const replacement = labels[idx++];
+      if (replacement === undefined) return full;
+      const escaped = replacement
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      return `<text${attrs}>${escaped}</text>`;
+    });
+  }
+
+  /**
+   * 다국어(7개국어) 번역 라벨을 각각 SVG에 대입하여 모든 언어에서 경계 잘림/텍스트 겹침이 없는지 정적 감사 수행
+   */
+  public static auditMultilingualLabels(
+    svgCode: string,
+    labelsByLocale: Record<string, string[]>
+  ): { allPassed: boolean; localeReports: Record<string, SvgAuditReport> } {
+    const localeReports: Record<string, SvgAuditReport> = {};
+    let allPassed = true;
+
+    for (const [locale, labels] of Object.entries(labelsByLocale)) {
+      if (!labels || labels.length === 0) continue;
+      const localizedSvg = this.applySvgTextLabels(svgCode, labels);
+      const report = this.auditSvgStatic(localizedSvg);
+      localeReports[locale] = report;
+      if (!report.passed) {
+        allPassed = false;
+      }
+    }
+
+    return { allPassed, localeReports };
+  }
 }

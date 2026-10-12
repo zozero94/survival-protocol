@@ -1,0 +1,80 @@
+{
+  "protocolId": "PR-01",
+  "category": "WATER",
+  "title": "PROTOKOLL #01: Aufbereitung von Wildwasser (Aktivkohle-Filtration)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
+  "summary": "Das Trinken von unbehandeltem Wildwasser führt durch bakterielle Ruhr und Giardiasis innerhalb von 72 Stunden zum Tod. Das Wasser muss mechanisch über Holzkohle gefiltert und anschließend zwingend abgekocht werden.",
+  "timeRequired": "15 MINUTEN",
+  "successRate": "99.8% (Nach Abkochen)",
+  "difficulty": "Stufe 1 (Grundlegende Bushcraft)",
+  "outputPerHour": "1.5 Liter / Stunde",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Zerkleinerte Hartholzkohle",
+      "desc": "Abgekühlte Glutreste aus Hartholz, erbsengroß zerstoßen zur Adsorption von Toxinen."
+    },
+    {
+      "id": "mat-02",
+      "name": "Gereinigter Flusssand & Feinkies",
+      "desc": "Gewaschener Sand und kleine Kieselsteine zur physischen Rückhaltung von Schwebstoffen."
+    },
+    {
+      "id": "mat-03",
+      "name": "Bambusrohr oder Rindentrichter",
+      "desc": "Hohles Bambussegment (Ø 8 cm) als vertikale Schwerkraft-Filtersäule."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Behältervorbereitung & Filterbasis-Aufbau",
+      "description": "Bereiten Sie ein zylindrisches Gefäß mit oberer Einfüllöffnung und verengtem Auslass an der Unterseite vor.",
+      "actionNote": "> Maßnahme: Stopfen Sie Pflanzenfasergewebe oder Torfmoos fest in die untere Öffnung, um das Ausspülen der Kohle zu verhindern.",
+      "svgFileName": "step-01.svg",
+      "svgLabels": [
+        "ROHWASSER",
+        "1. Kies (Grobschmutz)",
+        "2. Sand (Feinsediment)",
+        "KOHLE",
+        "3. Aktivkohle (Toxine)",
+        "4. Textilnetz (Stütze)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schichtung der Filtermedien (Umgekehrte Pyramide)",
+      "description": "Schichten Sie präzise von unten nach oben: Textilnetz → 6 cm zerstoßene Holzkohle → 5 cm Feinsand → 3 cm grober Kies.",
+      "actionNote": "> Prinzip: Kies blockiert Grobschmutz, Sand fängt Trübungen ab und poröse Aktivkohle bindet organische Gifte und Gerüche.",
+      "svgFileName": "step-02.svg",
+      "svgLabels": [
+        "[500ml VERWERFEN]",
+        "Kohlestaub-Spülung",
+        "→",
+        "[AUFFANGEN]",
+        "95% Klarheit",
+        "Durchfluss: 1~2 Tropfen/Sek"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Filtration & Thermische Entkeimung (100°C)",
+      "description": "Gießen Sie Rohwasser langsam auf die Kiesschicht (Durchfluss: 1–2 Tropfen/Sek.) und kochen Sie das klare Filtrat anschließend sprudelnd ab.",
+      "actionNote": "> Warnung: Verwerfen Sie die ersten 500 ml wegen Kohlestaub. Danach mindestens 3 Minuten bei 100°C sprudelnd abkochen.",
+      "svgFileName": "step-03.svg",
+      "svgLabels": [
+        "100°C Direktfeuer",
+        "100°C",
+        "3 Min Halten",
+        "99.9% Steril",
+        "Kochzeit (MIN)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "TÖDLICHER IRRTUM: Gefiltertes klares Wasser niemals ungekocht trinken.",
+    "description": "Mechanische Kohlefiltration entfernt nur Schwebstoffe und Chemikalien. Viren, Giardia-Zysten und Kryptosporidien passieren den Filter ungehindert. Erst 1 bis 3 Minuten sprudelndes Kochen tötet 99.9% aller Erreger ab.",
+    "consequence": "Folge bei Verzicht auf Abkochen: Akute Kryptosporidiose und tödliche Dehydrierung binnen 96 Stunden."
+  }
+}
