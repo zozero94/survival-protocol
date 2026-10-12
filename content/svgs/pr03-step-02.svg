@@ -14,8 +14,8 @@
 
   <!-- Rule Callout Box -->
   <rect x="25" y="24" width="335" height="44" fill="#141414" stroke="#333333" stroke-width="1" />
-  <text x="35" y="41" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">THERMAL CONDUCTION SHIELD [바닥 단열 원칙]:</text>
-  <text x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">지면 열전도 차단: 압축 후 최소 15~20cm 두께 유지</text>
+  <text x="35" y="41" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">바닥 냉기 차단 핵심:</text>
+  <text x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">마른 낙엽을 두껍게 깔아 눌린 뒤에도 20cm 유지</text>
 
   <!-- Ground Baseline -->
   <line x1="60" y1="265" x2="620" y2="265" stroke="#666666" stroke-width="2" />
@@ -32,12 +32,12 @@
   <circle cx="340" cy="88" r="14" fill="#262626" stroke="#E02424" stroke-width="2.5" />
   <circle cx="340" cy="88" r="4" fill="#F5F5F5" />
   <line x1="354" y1="84" x2="430" y2="56" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
-  <text x="436" y="59" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">RIDGEPOLE SPINE (중심 능선목 단면)</text>
+  <text x="436" y="59" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">중심 기둥 나무 (단면)</text>
 
   <!-- Rib Pitch Angle Indicator (45° ~ 60°) -->
   <path d="M 222,265 A 36 36 0 0 0 209,238" fill="none" stroke="#E02424" stroke-width="1.8" />
   <line x1="252" y1="188" x2="175" y2="145" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
-  <text x="35" y="140" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10">RIB LATTICE: 45°~60° (늑골 가지 격자벽)</text>
+  <text x="35" y="140" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10">양옆 나뭇가지: 45°~60° 각도로 촘촘히 세우기</text>
 
   <!-- Interior Floor Mattress: Initial 40cm Mound (Dashed) & Compressed 15~20cm Core (Solid) -->
   <path d="M 215,265 Q 340,175 465,265 Z" fill="#1c1b1b" stroke="#888888" stroke-width="1.2" stroke-dasharray="4,3" />
@@ -48,11 +48,11 @@
 
   <!-- Mattress Dimension Callout on Right -->
   <line x1="470" y1="235" x2="520" y2="205" stroke="#E02424" stroke-width="1.2" marker-end="url(#arrow-red)" />
-  <text x="655" y="200" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="end">MATTRESS: 40cm → 20cm (낙엽 침상)</text>
+  <text x="655" y="200" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="end">낙엽 이불: 40cm → 눌린 뒤 20cm</text>
 
   <!-- Ground Cold Conduction Blocked Vectors (Bottom) -->
   <line x1="270" y1="292" x2="270" y2="270" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
   <line x1="340" y1="292" x2="340" y2="270" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
   <line x1="410" y1="292" x2="410" y2="270" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
-  <text x="340" y="314" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">GROUND COLD CONDUCTION BLOCKED (지면 냉기 차단)</text>
+  <text x="340" y="314" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">땅에서 올라오는 찬 기운 완벽 차단</text>
 </svg>

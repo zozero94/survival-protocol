@@ -1,12 +1,12 @@
 import type { Protocol, ProtocolCategory } from '../../types/protocol.types.ts';
 
 const CATEGORY_LABELS: Record<ProtocolCategory, string> = {
-  WATER: '[식수 확보]',
+  WATER: '[물 구하기]',
   FIRE: '[불 피우기]',
-  SHELTER: '[은신처]',
-  FOOD: '[식량 채집]',
-  TOOLS: '[원시 도구]',
-  MEDICINE: '[야전 의약]',
+  SHELTER: '[움막 짓기]',
+  FOOD: '[식량 구하기]',
+  TOOLS: '[도구 만들기]',
+  MEDICINE: '[응급 처치]',
 };
 
 const DEFAULT_SVGS: Record<ProtocolCategory, string> = {
@@ -29,10 +29,10 @@ export function renderProtocolCard(protocol: Protocol): string {
 
   const threatBadge =
     protocol.threatLevel === 'CRITICAL'
-      ? `<span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>`
+      ? `<span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수 생존]</span>`
       : protocol.threatLevel === 'HIGH'
-      ? `<span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수]</span>`
-      : `<span data-i18n="threat_MODERATE" class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-0.5 uppercase tracking-widest font-bold">[기초 기술]</span>`;
+      ? `<span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>`
+      : `<span data-i18n="threat_MODERATE" class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-0.5 uppercase tracking-widest font-bold">[기초]</span>`;
 
   const materialsHtml = (protocol.materials || [])
     .slice(0, 3)
@@ -80,7 +80,7 @@ export function renderProtocolCard(protocol: Protocol): string {
       ${materialsHtml}
     </div>
     <a href="${detailLink}" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
-      [교범 열람 →]
+      [자세히 보기 →]
     </a>
   </div>
 </article>

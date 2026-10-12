@@ -11,9 +11,9 @@ export interface TopicStep {
 }
 
 export interface FatalMistakeSpec {
-  trap: string;        // 흔한 착각 (예: 연기가 나자마자 입으로 세게 분다)
-  consequence: string; // 파국적 결과 (예: 산소 부족과 침으로 불씨가 꺼지고 저체온증 사망)
-  rule: string;        // 타협 불가 절대 수칙 (예: 부싯깃 둥지에 감싸 부드럽게 스윙)
+  trap: string;        // 흔한 실수 (예: 연기가 나자마자 입으로 세게 분다)
+  consequence: string; // 위험한 결과 (예: 산소 부족과 침으로 불씨가 꺼지고 체온이 떨어짐)
+  rule: string;        // 안전한 해결 방법 (예: 마른 풀 둥지에 감싸 살살 흔들어 바람 주기)
 }
 
 export interface PlannedTopicV2 {

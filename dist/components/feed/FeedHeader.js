@@ -8,12 +8,12 @@
 export function renderFeedHeader(totalCount        )         {
   const categories                                                     = [
     { key: 'ALL', label: '[전체]' },
-    { key: 'WATER', label: '[식수 확보]' },
+    { key: 'WATER', label: '[물 구하기]' },
     { key: 'FIRE', label: '[불 피우기]' },
-    { key: 'SHELTER', label: '[은신처]' },
-    { key: 'FOOD', label: '[식량 채집]' },
-    { key: 'TOOLS', label: '[원시 도구]' },
-    { key: 'MEDICINE', label: '[야전 의약]' },
+    { key: 'SHELTER', label: '[움막 짓기]' },
+    { key: 'FOOD', label: '[식량 구하기]' },
+    { key: 'TOOLS', label: '[도구 만들기]' },
+    { key: 'MEDICINE', label: '[응급 처치]' },
   ];
 
   const categoryTabs = categories
@@ -44,7 +44,7 @@ export function renderFeedHeader(totalCount        )         {
       </div>
       <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400">
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-        <span data-i18n="feedCacheActive">로컬 캐시 활성화됨 (인터넷 두절 시 오프라인 열람 가능)</span>
+        <span data-i18n="feedCacheActive">오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)</span>
       </div>
     </div>
     <div class="font-mono text-[11px] text-neutral-400 border border-neutral-800 px-2 py-0.5 hidden sm:block">
@@ -57,14 +57,14 @@ export function renderFeedHeader(totalCount        )         {
 <section class="max-w-5xl mx-auto w-full px-4 sm:px-8 pt-8 pb-4">
   <div class="border-b-2 border-white/20 pb-6">
     <div class="font-mono text-[11px] text-neutral-500 uppercase tracking-widest mb-2">
-      MISSION STATEMENT // CIVILIZATION REBOOT
+      SURVIVAL GUIDE // FIELD MANUAL
     </div>
     <h1 data-i18n="feedHeroHeadline" class="text-2xl sm:text-3xl md:text-4xl font-black font-mono tracking-tight text-white uppercase leading-snug">
-      모든 전기가 끊겼을 때, 오직 두 손과 이 기록만으로 살아남는다.
+      전기와 도구가 모두 사라졌을 때, 맨손과 자연물만으로 살아남는 법.
     </h1>
     <p data-i18n="feedHeroSubtext" class="text-neutral-400 text-xs sm:text-sm mt-3 max-w-2xl leading-relaxed">
-      현대 문명이 붕괴된 후, 자연물과 두 손만으로 생명을 유지하기 위한 실전 원시 생존 기술 기록서.
-      한 번 열람한 교범은 브라우저 로컬 저장소에 영구 보존되어 비행기 모드나 통신망 두절 상황에서도 100% 작동합니다.
+      주변에서 쉽게 구할 수 있는 나무, 돌, 흙, 낙엽만으로 물과 불, 거처를 만드는 실전 생존 가이드입니다.
+      한 번 열어본 글은 기기에 자동 저장되어 인터넷이나 통신이 끊긴 곳에서도 그대로 볼 수 있습니다.
     </p>
   </div>
 </section>

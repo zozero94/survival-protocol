@@ -53,7 +53,7 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
     assert.strictEqual(parsed['@type'], 'HowTo');
     assert.ok(parsed.name.includes('PR-01'));
     assert.strictEqual(parsed.step.length, 3);
-    assert.strictEqual(parsed.step[0].name, 'Step 01: 용기 절단 및 필터 베이스 구축');
+    assert.strictEqual(parsed.step[0].name, 'Step 01: 나무통 아랫부분을 천이나 이끼로 막기');
     assert.strictEqual(parsed.supply.length, 3);
   });
 

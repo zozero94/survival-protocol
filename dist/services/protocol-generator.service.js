@@ -187,64 +187,68 @@ export class ProtocolGeneratorService {
     category                   
   )                    {
     const prompt = `
-당신은 문명 붕괴 후 인류 재건을 위한 '원시 생존 교범(SURVIVAL PROTOCOL)'의 수석 전술 교관입니다.
-새로운 생존 기술 프로토콜을 작성하십시오.
+당신은 누구나 위급한 상황에서 바로 보고 따라 할 수 있는 '실전 야생 생존 가이드(SURVIVAL PROTOCOL)'의 작성자입니다.
+새로운 생존 기술 가이드를 작성하십시오.
 
 [주제]: ${topic}
 [프로토콜 ID]: ${nextId}
 ${category ? `[카테고리 강제]: ${category}` : ''}
 
-[절대 규칙 - 고증 100% 준수]:
-1. 현대 공산품 일체 배제(라이터, 건전지, 비닐, 알루미늄, 플라스틱 등 금지). 오직 자연물(돌, 나무, 진흙, 칡, 뼈, 동식물 등)만 사용.
-2. 정확히 3단계(Step 01, Step 02, Step 03)로 구성.
-3. 각 단계마다 구체적인 행동 지침과 과학적 메커니즘을 명시.
-4. 치명적 실수(fatalMistake)는 사망이나 심각한 부상으로 이어지는 생존 함정을 강력 경고.
-5. category는 반드시 다음 중 하나여야 합니다: WATER, FIRE, SHELTER, FOOD, TOOLS, MEDICINE.
+[절대 규칙 1 - 쉬운 단어와 직관적인 설명 (가장 중요!)]:
+1. 중학생이나 초보자도 위급 상황에서 한 번 읽고 3초 만에 이해할 수 있는 쉬운 일상 한국어로 작성하십시오.
+2. 어려운 한자어(음용, 적층, 포설, 가설, 풍상측, 비산, 수거, 비등, 함침, 박리 등)를 절대 쓰지 마십시오. 대신 쉬운 말(마시기, 차곡차곡 쌓기, 바닥에 깔기, 세우기, 바람 불어오는 쪽, 날아가다, 모으기, 팔팔 끓이기, 적시기, 떼어내기 등)로 풀어 쓰십시오.
+3. 생소한 외래어/영문 음차 전문용어(스핀들, 엠버, 노치, 데브리 헛, 허스 보드 등)를 그대로 쓰지 말고, 직관적인 우리말(가운데 회전 막대, 불씨 가루, V자 홈, 낙엽 움막, 바닥 받침 나무 등)로 바꾸십시오.
+4. '타협 불가한 절대 수칙', '시전자', '파국적 결과' 같은 오글거리거나 과장된 중2병/군대식 말투를 절대 넣지 마십시오. 담백하고 실용적인 설명체(~합니다, ~하세요)로 작성하십시오.
+
+[절대 규칙 2 - 원시 자연물 고증 100% 준수]:
+1. 현대 공산품 일체 배제(라이터, 건전지, 비닐, 알루미늄, 플라스틱 등 금지). 오직 자연에서 구할 수 있는 재료(돌, 나무, 진흙, 칡덩굴, 낙엽, 숯, 동식물 등)만 사용.
+2. 정확히 3단계(Step 01, Step 02, Step 03)로 구성하고, 각 단계마다 손으로 따라 하기 쉬운 구체적인 방법과 왜 그렇게 해야 하는지 쉬운 원리를 설명하십시오.
+3. category는 반드시 다음 중 하나여야 합니다: WATER, FIRE, SHELTER, FOOD, TOOLS, MEDICINE.
 
 반드시 다음 JSON 스키마 규격으로만 응답하십시오 (마크다운 백틱 제외):
 {
   "protocolId": "${nextId}",
   "category": "FIRE",
-  "title": "프로토콜 #${nextId.replace(/[^0-9]/g, '')}: [구체적 기술 명칭]",
+  "title": "프로토콜 #${nextId.replace(/[^0-9]/g, '')}: [누구나 한눈에 이해할 수 있는 쉬운 기술 제목]",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[위험 등급: 치명적(CRITICAL)]",
-  "summary": "2~3문장의 긴박한 생존 상황 및 해결 요약",
-  "timeRequired": "30분 (30 MINUTES)",
-  "successRate": "88.5% (숙련 기준)",
-  "difficulty": "1등급 (원시 생존 기술)",
-  "outputPerHour": "시간당 획득/제작 수치",
+  "threatLevelText": "[중요도: 필수 생존]",
+  "summary": "2~3문장의 쉽고 명확한 상황 설명 및 해결 방법 요약",
+  "timeRequired": "30분",
+  "successRate": "90% (순서대로 따라 할 경우)",
+  "difficulty": "보통 (초보자 가능)",
+  "outputPerHour": "1회 완성 / 30분",
   "materials": [
-    { "id": "mat-01", "name": "재료 1", "desc": "상세 규격 및 채집 조건" },
-    { "id": "mat-02", "name": "재료 2", "desc": "상세 규격 및 채집 조건" },
-    { "id": "mat-03", "name": "재료 3", "desc": "상세 규격 및 채집 조건" }
+    { "id": "mat-01", "name": "쉬운 재료 이름 1", "desc": "어디서 구하는지, 어떤 크기와 상태여야 하는지 쉬운 설명" },
+    { "id": "mat-02", "name": "쉬운 재료 이름 2", "desc": "어디서 구하는지, 어떤 크기와 상태여야 하는지 쉬운 설명" },
+    { "id": "mat-03", "name": "쉬운 재료 이름 3", "desc": "어디서 구하는지, 어떤 크기와 상태여야 하는지 쉬운 설명" }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "1단계 제목",
-      "description": "구체적인 원시 제작/실행 설명",
-      "actionNote": "> 조치 사항: 필수 주의점 및 과학적 원리",
+      "title": "1단계: 쉬운 행동 중심 제목",
+      "description": "어려운 용어 없이 손으로 따라 하기 쉽게 풀어 쓴 설명",
+      "actionNote": "> 핵심 팁: 꼭 지켜야 할 점과 쉬운 원리 설명",
       "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-01.svg"
     },
     {
       "stepNumber": "02",
-      "title": "2단계 제목",
-      "description": "구체적인 원시 제작/실행 설명",
-      "actionNote": "> 과학적 원리: 물리/화학적 반응 메커니즘",
+      "title": "2단계: 쉬운 행동 중심 제목",
+      "description": "어려운 용어 없이 손으로 따라 하기 쉽게 풀어 쓴 설명",
+      "actionNote": "> 핵심 원리: 왜 이렇게 작동하는지 쉬운 설명",
       "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-02.svg"
     },
     {
       "stepNumber": "03",
-      "title": "3단계 제목",
-      "description": "구체적인 원시 제작/실행 설명",
-      "actionNote": "> 주의: 실패 방지를 위한 결정적 팁",
+      "title": "3단계: 쉬운 행동 중심 제목",
+      "description": "어려운 용어 없이 손으로 따라 하기 쉽게 풀어 쓴 설명",
+      "actionNote": "> 주의할 점: 실패를 막는 실전 팁",
       "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-03.svg"
     }
   ],
   "fatalMistake": {
-    "title": "치명적 착각: [흔한 오해나 치명적 실수]",
-    "description": "왜 이것이 파국을 부르는지 상세 메커니즘 설명",
-    "consequence": "오판 시 결과: [구체적 사망 요인 또는 부상 피해]"
+    "title": "절대 하면 안 되는 실수: [초보자가 가장 흔히 하는 실수]",
+    "description": "왜 이렇게 하면 실패하거나 위험해지는지 알기 쉬운 설명",
+    "consequence": "결과: [실수했을 때 벌어지는 구체적인 위험]"
   }
 }
 `.trim();
@@ -271,12 +275,12 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
     master          
   )                                                                        {
     const localeSpecs                                                                               = [
-      { code: 'en', persona: 'English (US/UK Military Survival & Bushcraft Field Manual style)' },
-      { code: 'ja', persona: 'Japanese (防災・サバイバル戦術教本 style, concise technical terminology)' },
-      { code: 'es', persona: 'Spanish (Español Neutro, Manual Táctico de Supervivencia style)' },
-      { code: 'de', persona: 'German (Präzises Technisches Überlebenshandbuch & Bushcraft style)' },
-      { code: 'pt', persona: 'Portuguese (Português, Manual Tático de Sobrevivência style)' },
-      { code: 'zh-TW', persona: 'Traditional Chinese (繁體中文, 野外求生與防災戰術手冊 style)' },
+      { code: 'en', persona: 'English (Clear, plain, everyday practical survival guide for beginners)' },
+      { code: 'ja', persona: 'Japanese (初心者でも直感的にすぐ理解できる、平易でわかりやすい実用サバイバルガイド)' },
+      { code: 'es', persona: 'Spanish (Español claro, sencillo y práctico, fácil de entender para cualquier persona)' },
+      { code: 'de', persona: 'German (Klare, einfache und leicht verständliche Alltagssprache ohne komplizierten Fachjargon)' },
+      { code: 'pt', persona: 'Portuguese (Português claro, simples e direto, fácil de entender na prática)' },
+      { code: 'zh-TW', persona: 'Traditional Chinese (繁體中文，淺顯易懂、直白實用的日常求生指南，避免生僻術語)' },
     ];
 
     const entries = await Promise.all(
@@ -284,8 +288,9 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
         const prompt = `Translate the following primitive survival protocol JSON into ${persona}.
 Rules:
 1. Maintain all exact JSON keys, protocolId, category, threatLevel, material IDs, stepNumber, and svgFileName.
-2. If "svgLabels" array is present inside each step of "steps", translate every label string in "svgLabels" into concise technical blueprint labels in ${code} while keeping the EXACT same array length and index order. Keep technical units (mm, cm, °C, °, RPM, kg, %) intact.
-3. Return valid JSON only:\n${JSON.stringify(master, null, 2)}`;
+2. Use simple, clear, everyday words that a beginner can understand immediately in an emergency. Avoid overly academic or pretentious military jargon.
+3. If "svgLabels" array is present inside each step of "steps", translate every label string in "svgLabels" into short, clear, easy-to-read labels in ${code} while keeping the EXACT same array length and index order. Keep numbers and units (mm, cm, °C, °, kg, %) intact.
+4. Return valid JSON only:\n${JSON.stringify(master, null, 2)}`;
 
         const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
           responseMimeType: 'application/json',
@@ -423,7 +428,7 @@ Rules:
     console.log(`✏️ [프로토콜 수정 시작] ${currentProto.protocolId}: "${instructions}"`);
 
     const prompt = `
-당신은 원시 생존 교범(SURVIVAL PROTOCOL)의 감수자입니다.
+당신은 실전 야생 생존 가이드(SURVIVAL PROTOCOL)의 편집자입니다.
 기존 프로토콜 JSON을 검토하고 사용자의 지침에 따라 수정하십시오.
 
 [기존 프로토콜 JSON]:
@@ -434,8 +439,8 @@ ${instructions}
 
 [필수 수칙]:
 1. 현대 공산품 일체 배제(고증 100% 원시 자연물 유지).
-2. protocolId(${currentProto.protocolId}) 및 steps 수(3개) 구조 유지.
-3. 지침에 명시된 내용을 정확하게 반영하여 개선.
+2. 어려운 한자어나 전문용어, 오글거리는 표현을 쓰지 말고 누구나 쉽게 이해할 수 있는 일상적인 한국어로 작성할 것.
+3. protocolId(${currentProto.protocolId}) 및 steps 수(3개) 구조 유지.
 4. 반드시 유효한 전체 JSON 코드로만 응답하십시오.
 `.trim();
 
@@ -599,44 +604,49 @@ ${instructions}
        = [
       {
         category: 'SHELTER',
-        title: '데브리 헛(Debris Hut) A프레임 단열 은신처 구축법',
-        domain: '은신처 & 체온 보존 공학 (SHELTER)',
-        urgency: 'CRITICAL (Tier 1 · 저체온증 방어)',
+        title: '불 없이 체온을 지키는 낙엽 움막 만드는 법',
+        domain: '추위 막기 & 움막 짓기 (SHELTER)',
+        urgency: '필수 생존 (저체온증 예방)',
       },
       {
         category: 'TOOLS',
-        title: '흑요석·부싯돌 타격 박리(Flintknapping) 석기 칼날 제작법',
-        domain: '원시 도구 & 절삭 공학 (TOOLS)',
-        urgency: 'HIGH (Tier 1 · 기본 가공 도구 확보)',
+        title: '돌과 돌을 부딪쳐 날카로운 돌칼 만드는 법',
+        domain: '도구 만들기 (TOOLS)',
+        urgency: '중요 (기본 자르기 도구 확보)',
       },
       {
         category: 'MEDICINE',
-        title: '소나무 송진·숯분말 천연 방부 연고 및 창상 봉합술',
-        domain: '야전 응급 의약 & 감염 통제 (MEDICINE)',
-        urgency: 'CRITICAL (Tier 1 · 패혈증 차단)',
+        title: '소나무 송진과 숯가루로 상처 소독·지혈 연고 만드는 법',
+        domain: '응급 처치 & 상처 치료 (MEDICINE)',
+        urgency: '필수 생존 (상처 감염 방지)',
       },
       {
         category: 'FOOD',
-        title: '4자 트리거(Figure-4) 중력 낙석 트랩 수렵 공학',
-        domain: '수렵 & 단백질 획득 공학 (FOOD)',
-        urgency: 'HIGH (Tier 2 · 무인 수렵 시스템)',
+        title: '나뭇가지 3개로 돌멩이 사냥 덫(4자 덫) 놓는 법',
+        domain: '식량 구하기 (FOOD)',
+        urgency: '중요 (힘 안 들이고 사냥하기)',
       },
       {
         category: 'TOOLS',
-        title: '식물 내피 섬유 2가닥 역방향 꼬기(Reverse Wrap) 고강도 로프 제작',
-        domain: '원시 섬유 & 결속 공학 (TOOLS)',
-        urgency: 'HIGH (Tier 1 · 구조물 결속재)',
+        title: '나무껍질과 풀줄기를 꼬아 끊어지지 않는 밧줄 만드는 법',
+        domain: '도구 & 묶기 기술 (TOOLS)',
+        urgency: '중요 (움막·도구 묶기용 끈)',
       },
       {
         category: 'WATER',
-        title: '태양열 지면 증류기(Solar Still) 및 식생 증산 수분 포집법',
-        domain: '극한 건조지대 수자원 공학 (WATER)',
-        urgency: 'CRITICAL (Tier 2 · 무수원지 식수 확보)',
+        title: '물 없는 땅에서 햇빛과 나뭇잎으로 식수 모으는 법',
+        domain: '물 구하기 (WATER)',
+        urgency: '필수 생존 (물 없는 곳에서 수분 확보)',
       },
     ];
 
     const available = curriculum.filter(
-      (item) => !publishedTitles.some((t) => t.includes(item.title.slice(0, 6)))
+      (item) =>
+        !publishedTitles.some(
+          (t) =>
+            t.includes(item.title.slice(0, 6)) ||
+            (item.category === 'SHELTER' && (t.includes('데브리') || t.includes('낙엽 움막')))
+        )
     );
 
     // 아직 발행되지 않은 카테고리를 최우선 정렬

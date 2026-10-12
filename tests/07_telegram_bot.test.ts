@@ -173,7 +173,7 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
       data: 'cb:view:PR-02',
     });
 
-    assert.ok(mockClient.sentMessages.some((m) => m.text.includes('PR-02') && m.text.includes('보우 드릴')));
+    assert.ok(mockClient.sentMessages.some((m) => m.text.includes('PR-02') && (m.text.includes('나뭇가지 마찰') || m.text.includes('활비비'))));
 
     await bot.handleCallbackQuery({
       id: 'cb-stitch-1',

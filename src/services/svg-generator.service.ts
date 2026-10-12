@@ -47,22 +47,23 @@ export class SvgGeneratorService {
         maxAttempts,
         extractFn: async (attempt: number, remediationPrompt?: string) => {
           const basePrompt = `
-당신은 최고 수준의 포스트 아포칼립스 원시 생존 기술 전문 도면 설계자(Technical Illustrator)입니다.
-아래 생존 기술 단계에 대해 브루탈리즘 스타일의 정밀 모노라인 벡터 SVG 도면을 생성하십시오.
+당신은 실전 야생 생존 가이드의 도면 설계자입니다.
+아래 생존 기술 단계에 대해 깔끔하고 직관적인 모노라인 벡터 SVG 도면을 생성하십시오.
 
 [기술 주제]: ${context.topicTitle}
 [단계]: Step ${context.stepNumber} - ${context.stepTitle}
 [상세 지침]: ${context.actionDescription}
-${context.actionNote ? `[야전 핵심]: ${context.actionNote}` : ''}
+${context.actionNote ? `[핵심 팁]: ${context.actionNote}` : ''}
 
-[SVG 디자인 및 기하학 절대 규칙]:
+[SVG 디자인 및 쉬운 라벨 절대 규칙]:
 1. viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg"
 2. 외곽 가이드라인(<rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-dasharray="4,4"/>) 포함
-3. 선 색상: 주로 #F5F5F5, #888888 (선 굵기 stroke-width="1.5" ~ "2"), 핵심 작용점/화살표 강조는 #E02424
-4. 치수선, 회전/진행 방향 화살표, 주요 부품의 물리적 방향이 본문 설명과 100% 일치해야 함
-5. 모든 <text> 라벨은 font-family="'JetBrains Mono', monospace"를 사용하며, 다른 텍스트나 도형 외곽선과 절대 겹치지 않게 최소 16px 이상 수직 이격 배치할 것
-6. 모든 요소는 안전 좌표(x: 15~665, y: 18~325) 내부에 배치하여 잘림(Clipping)을 방지할 것
-7. 오직 <svg ...>...</svg> 태그 코드만 반환하십시오. 마크다운 백틱이나 추가 설명 금지.
+3. 선 색상: 주로 #F5F5F5, #888888 (선 굵기 stroke-width="1.5" ~ "2"), 핵심 포인트/화살표 강조는 #E02424
+4. 치수선, 화살표 방향, 부품의 모양이 본문 설명과 100% 일치해야 함
+5. 모든 <text> 라벨은 어려운 한자어나 긴 영어 전문용어 대신, 초보자도 한눈에 알아볼 수 있는 짧고 쉬운 한국어(예: "중심 기둥 나무 (3m)", "바닥 낙엽 깔기 (40cm)", "가운데 회전 막대")로 작성할 것!
+6. 모든 <text> 라벨은 font-family="'JetBrains Mono', monospace"를 사용하며, 다른 텍스트나 도형 외곽선과 절대 겹치지 않게 최소 18px 이상 수직 이격 배치할 것
+7. 모든 요소는 안전 좌표(x: 15~665, y: 18~325) 내부에 배치하여 잘림(Clipping)을 방지할 것
+8. 오직 <svg ...>...</svg> 태그 코드만 반환하십시오. 마크다운 백틱이나 추가 설명 금지.
 ${
   remediationPrompt
     ? `\n⚠️ [재추출 교정 명령 (${attempt}차 시도) - 이전 도면 결함 반드시 해결]:\n${remediationPrompt}`

@@ -10,7 +10,7 @@ export function renderFatalWarning(fatal: FatalMistake): string {
 <section class="border-2 border-[#E02424] bg-[#170a0a] p-5 sm:p-7 relative mb-8">
   <div class="flex items-center gap-2 mb-2.5 font-mono text-xs">
     <span id="ui-fatal-header" data-i18n="fatalTitle" class="bg-[#E02424] text-white font-bold px-1.5 py-0.5 tracking-tight uppercase">
-      [치명적 경고 // FATAL ERROR]
+      주의 // 절대 하면 안 되는 실수
     </span>
   </div>
 
@@ -22,9 +22,8 @@ export function renderFatalWarning(fatal: FatalMistake): string {
     <p id="fatal-desc" data-proto-fatal="description">
       ${fatal.description}
     </p>
-    <div class="border-t border-[#441a1a] pt-3 font-mono text-xs text-[#bbb] flex flex-wrap items-center justify-between gap-2">
+    <div class="border-t border-[#441a1a] pt-3 font-mono text-xs text-[#ff8888] font-bold">
       <span id="fatal-consequence" data-proto-fatal="consequence">${fatal.consequence}</span>
-      <span id="ui-fatal-rule" data-i18n="nonNegotiableRule" class="text-[#ff5555] font-bold">[타협 불가한 절대 수칙]</span>
     </div>
   </div>
 </section>

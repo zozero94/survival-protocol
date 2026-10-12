@@ -28,7 +28,7 @@ export function renderChecklist(materials: Material[]): string {
     <div class="flex items-center gap-2">
       <span class="inline-block w-2 h-2 bg-white"></span>
       <h2 id="ui-checklist-title" data-i18n="checklistTitle" class="font-bold text-white tracking-wider">
-        필수 생존 물자 점검 (MATERIALS)
+        준비할 재료 체크리스트
       </h2>
     </div>
     <span class="text-[11px] text-white border border-[#444] px-1.5 py-0.5 bg-[#222]" id="checklist-counter">
@@ -36,7 +36,7 @@ export function renderChecklist(materials: Material[]): string {
     </span>
   </div>
   <p id="ui-checklist-desc" data-i18n="checklistDesc" class="text-[11px] text-[#888] mb-3 leading-normal font-sans">
-    야전에서 확보 가능한 천연 대체재입니다. 준비된 요소를 터치하여 수집 상태를 기록하십시오.
+    주변 자연에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.
   </p>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 font-mono text-xs">
     ${itemsHtml}

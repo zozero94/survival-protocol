@@ -130,7 +130,7 @@ export function renderIndexPage(
 <body class="bg-[#131313] text-[#e5e2e1] font-body min-h-screen selection:bg-white selection:text-black flex flex-col justify-between">
   <!-- 비상 오프라인 모드 감지 배너 -->
   <div id="offline-banner" data-i18n="offlineBanner" class="bg-red-950/90 border-b border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
-    ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
+    ⚡ [인터넷 연결 끊김] 저장된 오프라인 화면으로 보는 중입니다
   </div>
 
   ${feedHeaderHtml}
@@ -151,11 +151,11 @@ export function renderIndexPage(
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 bg-white"></span>
         <p data-i18n="footerTitle" class="text-white font-bold uppercase tracking-wider">
-          인간 문명 재건을 위한 무료 오픈소스 생존 기록서.
+          누구나 위급할 때 바로 따라 할 수 있는 실전 야생 생존 가이드.
         </p>
       </div>
       <p data-i18n="footerDesc" class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
-        이 웹페이지는 한 번 방문하면 브라우저 로컬 저장소에 영구 보존되어 비행기 모드나 글로벌 통신망 두절 상황에서도 100% 작동합니다.
+        한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.
       </p>
     </div>
   </footer>

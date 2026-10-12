@@ -230,10 +230,10 @@ ${nextPlan.steps
   )
   .join('\n')}
 
-## ⚠️ 치명적 실수 (Fatal Mistake)
-- **흔한 착각**: ${nextPlan.fatalMistake.trap}
-- **파국적 결과**: ${nextPlan.fatalMistake.consequence}
-- **절대 수칙**: ${nextPlan.fatalMistake.rule}
+## ⚠️ 꼭 피해야 할 실수 (Fatal Mistake)
+- **흔한 실수**: ${nextPlan.fatalMistake.trap}
+- **위험한 결과**: ${nextPlan.fatalMistake.consequence}
+- **핵심 주의사항**: ${nextPlan.fatalMistake.rule}
 
 ## 🎨 스티치(Stitch) 생성용 마스터 프롬프트
 \`\`\`text
