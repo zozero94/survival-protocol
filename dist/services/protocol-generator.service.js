@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { callGeminiApi } from '../gemini-client.js';
 import { SvgGeneratorService } from './svg-generator.service.js';
+import { SvgAuditService } from './svg-audit.service.js';
 import { DeployService } from './deploy.service.js';
 import { buildSite } from '../pipeline.js';
                                                                     
@@ -282,7 +283,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
   }
 
   /**
-   * 3단계별 테크니컬 벡터 SVG 도면 자동 생성 및 파일 저장
+   * 3단계별 테크니컬 벡터 SVG 도면 자동 생성(추출->검수->재추출->재검수 루프) 및 파일 저장
    */
          static async generateAndSaveSvgs(
     apiKey        ,
@@ -299,7 +300,8 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
         protocol.title,
         step.stepNumber,
         step.title,
-        step.description
+        step.description,
+        { actionNote: step.actionNote }
       );
       fs.writeFileSync(path.join(svgsDir, fileName), svgCode, 'utf-8');
       savedFiles.push(fileName);
@@ -502,12 +504,23 @@ ${instructions}
       const svgPath = path.join(svgsDir, s.svgFileName);
       const exists = fs.existsSync(svgPath);
       const size = exists ? fs.statSync(svgPath).size : 0;
+      const svgContent = exists ? fs.readFileSync(svgPath, 'utf-8') : '';
+      const auditReport = exists
+        ? SvgAuditService.auditSvgStatic(svgContent, {
+            topicTitle: data.title,
+            stepNumber: s.stepNumber,
+            stepTitle: s.title,
+            actionDescription: s.description,
+            actionNote: s.actionNote,
+          })
+        : null;
       return {
         stepNumber: s.stepNumber,
         title: s.title,
         svgFileName: s.svgFileName,
         exists,
         size,
+        auditReport,
       };
     });
 

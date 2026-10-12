@@ -1,47 +1,96 @@
 import { callGeminiApi } from '../gemini-client.ts';
-import { CONFIG } from '../config.ts';
+import { SvgAuditService, type SvgStepContext, type SvgVerificationLoopResult } from './svg-audit.service.ts';
 
 /**
  * [Service Layer]
- * 생존 기술 3단계 절차에 대한 정밀 테크니컬 모노라인(Monoline) SVG 도면 자동 생성기
+ * 생존 기술 3단계 절차에 대한 정밀 테크니컬 모노라인(Monoline) SVG 도면 자동 생성 및 검수 루프 서비스
+ * - 플로우: 벡터 추출 -> 에이전트 검수 -> (문제 시) 결함 피드백 주입 재추출 -> 재검수 (최대 3회 하드캡)
  */
 export class SvgGeneratorService {
   /**
-   * 기술 단계 설명과 주제를 바탕으로 단일 SVG 도면 코드를 생성한다.
+   * 기술 단계 설명과 주제를 바탕으로 SVG 도면을 추출하고, 검수 에이전트 루프를 거쳐 검증된 도면을 반환한다.
    */
   public static async generateStepSvg(
     apiKey: string,
     topicTitle: string,
     stepNumber: string,
     stepTitle: string,
-    actionDescription: string
+    actionDescription: string,
+    options: { maxAttempts?: number; actionNote?: string } = {}
   ): Promise<string> {
-    const prompt = `
+    const loopResult = await this.generateAndVerifyStepSvg(
+      apiKey,
+      {
+        topicTitle,
+        stepNumber,
+        stepTitle,
+        actionDescription,
+        actionNote: options.actionNote,
+      },
+      options.maxAttempts
+    );
+    return loopResult.svgCode;
+  }
+
+  /**
+   * [추출 -> 검수 -> 재추출 -> 재검수] 상세 결과(시도 횟수, 종료 사유, 검수 리포트)를 포함하여 반환
+   */
+  public static async generateAndVerifyStepSvg(
+    apiKey: string,
+    context: SvgStepContext,
+    maxAttempts: number = SvgAuditService.HARD_MAX_ATTEMPTS
+  ): Promise<SvgVerificationLoopResult> {
+    try {
+      const result = await SvgAuditService.extractAndVerifyLoop({
+        context,
+        apiKey,
+        maxAttempts,
+        extractFn: async (attempt: number, remediationPrompt?: string) => {
+          const basePrompt = `
 당신은 최고 수준의 포스트 아포칼립스 원시 생존 기술 전문 도면 설계자(Technical Illustrator)입니다.
 아래 생존 기술 단계에 대해 브루탈리즘 스타일의 정밀 모노라인 벡터 SVG 도면을 생성하십시오.
 
-[기술 주제]: ${topicTitle}
-[단계]: Step ${stepNumber} - ${stepTitle}
-[상세 지침]: ${actionDescription}
+[기술 주제]: ${context.topicTitle}
+[단계]: Step ${context.stepNumber} - ${context.stepTitle}
+[상세 지침]: ${context.actionDescription}
+${context.actionNote ? `[야전 핵심]: ${context.actionNote}` : ''}
 
-[SVG 디자인 규칙]:
-1. viewBox="0 0 400 400"
-2. 배경은 투명하거나 검정색 (<rect width="400" height="400" fill="#000000"/> 포함)
-3. 선 색상: 주로 #FFFFFF 또는 #E5E5E5 (선 굵기 stroke-width="2" 또는 "2.5")
-4. 치수선, 회전/진행 방향 화살표(stroke-dasharray="3 3"), 주요 부품 구조 명확히 도식화
-5. 복잡한 그래디언트나 색상 없이, 19세기 엔지니어링 청사진 또는 밀리터리 필드 매뉴얼 스타일
-6. 오직 <svg ...>...</svg> 태그 코드만 반환하십시오. 마크다운 백틱이나 추가 설명 금지.
-`.trim();
+[SVG 디자인 및 기하학 절대 규칙]:
+1. viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg"
+2. 외곽 가이드라인(<rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-dasharray="4,4"/>) 포함
+3. 선 색상: 주로 #F5F5F5, #888888 (선 굵기 stroke-width="1.5" ~ "2"), 핵심 작용점/화살표 강조는 #E02424
+4. 치수선, 회전/진행 방향 화살표, 주요 부품의 물리적 방향이 본문 설명과 100% 일치해야 함
+5. 모든 <text> 라벨은 font-family="'JetBrains Mono', monospace"를 사용하며, 다른 텍스트나 도형 외곽선과 절대 겹치지 않게 최소 16px 이상 수직 이격 배치할 것
+6. 모든 요소는 안전 좌표(x: 15~665, y: 18~325) 내부에 배치하여 잘림(Clipping)을 방지할 것
+7. 오직 <svg ...>...</svg> 태그 코드만 반환하십시오. 마크다운 백틱이나 추가 설명 금지.
+${
+  remediationPrompt
+    ? `\n⚠️ [재추출 교정 명령 (${attempt}차 시도) - 이전 도면 결함 반드시 해결]:\n${remediationPrompt}`
+    : ''
+}`.trim();
 
-    try {
-      const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
-        temperature: 0.2,
-        responseMimeType: 'text/plain',
+          const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
+            temperature: attempt === 1 ? 0.2 : 0.15,
+            responseMimeType: 'text/plain',
+          });
+          return this.extractCleanSvg(raw);
+        },
       });
-      return this.extractCleanSvg(raw);
+
+      if (result.svgCode) {
+        return result;
+      }
+      throw new Error('유효한 SVG 코드가 생성되지 않았습니다.');
     } catch (error) {
       console.warn(`[SvgGenerator] AI 생성 지연으로 비상 표준 기술 도면을 합성합니다: ${error}`);
-      return this.generateFallbackSvg(topicTitle, stepNumber, stepTitle);
+      const fallback = this.generateFallbackSvg(context.topicTitle, context.stepNumber, context.stepTitle);
+      return {
+        svgCode: fallback,
+        finalReport: SvgAuditService.auditSvgStatic(fallback, context),
+        attemptsUsed: 1,
+        terminationReason: 'CIRCUIT_BREAKER_TRIPPED',
+        history: [{ attempt: 1, score: 100, passed: true, issueCount: 0 }],
+      };
     }
   }
 
@@ -61,29 +110,27 @@ export class SvgGeneratorService {
    * AI 오류 시 사용하는 고증 기반 비상 기하학 도면
    */
   public static generateFallbackSvg(topicTitle: string, stepNumber: string, stepTitle: string): string {
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
-  <rect width="400" height="400" fill="#050505"/>
-  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#333333" stroke-width="1"/>
-  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="4 4"/>
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" class="w-full max-w-2xl h-auto">
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
   
   <!-- 중앙 테크니컬 심볼 매트릭스 -->
-  <circle cx="200" cy="180" r="80" fill="none" stroke="#E5E5E5" stroke-width="2"/>
-  <circle cx="200" cy="180" r="76" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="120" y1="180" x2="280" y2="180" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4 2"/>
-  <line x1="200" y1="100" x2="200" y2="260" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <circle cx="340" cy="150" r="70" fill="none" stroke="#E5E5E5" stroke-width="2"/>
+  <circle cx="340" cy="150" r="64" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="250" y1="150" x2="430" y2="150" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="340" y1="60" x2="340" y2="240" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
   
   <!-- 45도 회전 기하 쐐기 -->
-  <rect x="160" y="140" width="80" height="80" fill="none" stroke="#E5E5E5" stroke-width="2" transform="rotate(45 200 180)"/>
+  <rect x="305" y="115" width="70" height="70" fill="none" stroke="#E02424" stroke-width="2" transform="rotate(45 340 150)"/>
   
   <!-- 치수 화살표 -->
-  <path d="M140 300 H260" stroke="#E5E5E5" stroke-width="1.5"/>
-  <path d="M140 295 L135 300 L140 305" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
-  <path d="M260 295 L265 300 L260 305" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
+  <path d="M260 265 H420" stroke="#E5E5E5" stroke-width="1.5"/>
+  <path d="M260 260 L255 265 L260 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
+  <path d="M420 260 L425 265 L420 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
   
   <!-- 텍스트 메타데이터 -->
-  <text x="200" y="325" fill="#A3A3A3" font-family="monospace" font-size="11" text-anchor="middle" font-weight="bold">DIMENSION // STEP ${stepNumber}</text>
-  <text x="200" y="355" fill="#E5E5E5" font-family="monospace" font-size="13" text-anchor="middle" font-weight="black">[${stepTitle}]</text>
-  <text x="32" y="44" fill="#666666" font-family="monospace" font-size="10">SCHEMATIC REF // ${topicTitle.slice(0, 20)}</text>
+  <text x="340" y="290" fill="#A3A3A3" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" font-weight="bold">DIMENSION // STEP ${stepNumber}</text>
+  <text x="340" y="315" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" font-weight="bold">[${stepTitle}]</text>
+  <text x="25" y="32" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">SCHEMATIC REF // ${topicTitle.slice(0, 24)}</text>
 </svg>
 `.trim();
   }

@@ -9,4 +9,6 @@ export * from './protocol-generator.service.js';
 export * from './telegram-bot.service.js';
 export * from './seo.service.js';
 export * from './webhook-context.service.js';
+export * from './svg-audit.service.js';
+
 

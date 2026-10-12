@@ -456,7 +456,10 @@ export class TelegramBotService {
     const stepsText = stepsStatus
       .map((s) => {
         const statusIcon = s.exists ? `✓ (${(s.size / 1024).toFixed(1)}KB)` : '⚠️ 누락';
-        return `  • <b>Step ${s.stepNumber}</b>: ${s.title}\n    └ 도면: <code>${s.svgFileName}</code> [${statusIcon}]`;
+        const qaTag = s.auditReport
+          ? ` | QA ${s.auditReport.score}점 ${s.auditReport.passed ? 'PASS' : 'FAIL'}`
+          : '';
+        return `  • <b>Step ${s.stepNumber}</b>: ${s.title}\n    └ 도면: <code>${s.svgFileName}</code> [${statusIcon}${qaTag}]`;
       })
       .join('\n');
 

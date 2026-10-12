@@ -9,4 +9,6 @@ export * from './protocol-generator.service.ts';
 export * from './telegram-bot.service.ts';
 export * from './seo.service.ts';
 export * from './webhook-context.service.ts';
+export * from './svg-audit.service.ts';
+
 
