@@ -6,4 +6,4 @@ Allow: /manifest.webmanifest
 Allow: /icons/
 
 # Sitemaps
-Sitemap: https://survival-protocol-kappa.vercel.app/sitemap.xml
+Sitemap: https://survival-protocol.com/sitemap.xml

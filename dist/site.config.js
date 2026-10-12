@@ -10,7 +10,7 @@ export const SITE_META = {
   lang: 'ko',
   themeColor: '#050505',
   backgroundColor: '#050505',
-  siteUrl: (process.env.SITE_URL || 'https://survival-protocol-kappa.vercel.app').replace(/\/$/, ''),
+  siteUrl: (process.env.SITE_URL || 'https://survival-protocol.com').replace(/\/$/, ''),
 }         ;
 
 export const PWA_PATHS = {

@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     let ctxParam = req.query?.ctx;
     if (!ctxParam && req.url) {
       try {
-        const parsedUrl = new URL(req.url, 'https://survival-protocol-kappa.vercel.app');
+        const parsedUrl = new URL(req.url, 'https://survival-protocol.com');
         ctxParam = parsedUrl.searchParams.get('ctx') || undefined;
       } catch {}
     }

@@ -9,16 +9,16 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
   it('sitemap.xml은 모든 프로토콜과 다국어 hreflang 속성을 정확히 포함해야 한다', () => {
     const sitemap = SeoService.generateSitemap(
       protocols.map((p) => ProtocolGeneratorService.getProtocolById(p.protocolId)!.data),
-      'https://survival-protocol-kappa.vercel.app'
+      'https://survival-protocol.com'
     );
 
     assert.ok(sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>'));
     assert.ok(sitemap.includes('<urlset'));
-    assert.ok(sitemap.includes('https://survival-protocol-kappa.vercel.app/'));
-    assert.ok(sitemap.includes('https://survival-protocol-kappa.vercel.app/protocol-01'));
+    assert.ok(sitemap.includes('https://survival-protocol.com/'));
+    assert.ok(sitemap.includes('https://survival-protocol.com/protocol-01'));
     protocols.forEach((p) => {
       const num = p.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
-      assert.ok(sitemap.includes(`https://survival-protocol-kappa.vercel.app/protocol-${num}`));
+      assert.ok(sitemap.includes(`https://survival-protocol.com/protocol-${num}`));
     });
     assert.ok(sitemap.includes('hreflang="ko"'));
     assert.ok(sitemap.includes('hreflang="en"'));
@@ -26,10 +26,10 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
   });
 
   it('robots.txt는 모든 봇을 허용하고 사이트맵 경로를 정확히 지시해야 한다', () => {
-    const robots = SeoService.generateRobotsTxt('https://survival-protocol-kappa.vercel.app');
+    const robots = SeoService.generateRobotsTxt('https://survival-protocol.com');
     assert.ok(robots.includes('User-agent: *'));
     assert.ok(robots.includes('Allow: /'));
-    assert.ok(robots.includes('Sitemap: https://survival-protocol-kappa.vercel.app/sitemap.xml'));
+    assert.ok(robots.includes('Sitemap: https://survival-protocol.com/sitemap.xml'));
   });
 
   it('ads.txt는 구글 공식 AdSense 규격 형식을 만족해야 한다', () => {
@@ -41,7 +41,7 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
 
   it('generateJsonLd는 유효한 Schema.org HowTo 스키마를 생성해야 한다', () => {
     const proto1 = ProtocolGeneratorService.getProtocolById('PR-01')!.data;
-    const jsonLdRaw = SeoService.generateJsonLd(proto1, 'https://survival-protocol-kappa.vercel.app');
+    const jsonLdRaw = SeoService.generateJsonLd(proto1, 'https://survival-protocol.com');
     const parsed = JSON.parse(jsonLdRaw);
 
     assert.strictEqual(parsed['@context'], 'https://schema.org');

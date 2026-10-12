@@ -7,6 +7,7 @@ import { SvgGeneratorService } from './svg-generator.service.js';
 import { SvgAuditService } from './svg-audit.service.js';
 import { DeployService } from './deploy.service.js';
 import { buildSite } from '../pipeline.js';
+import { SITE_META } from '../site.config.js';
                                                                     
 
 const __filename = fileURLToPath(import.meta.url);
@@ -397,7 +398,7 @@ Rules:
       );
     }
 
-    const liveUrl = `https://survival-protocol-kappa.vercel.app/protocol-${String(nextNum).padStart(2, '0')}`;
+    const liveUrl = `${SITE_META.siteUrl}/protocol-${String(nextNum).padStart(2, '0')}`;
 
     return {
       success: true,
@@ -507,7 +508,7 @@ ${instructions}
     }
 
     const num = updatedProto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
-    const liveUrl = `https://survival-protocol-kappa.vercel.app/protocol-${num}`;
+    const liveUrl = `${SITE_META.siteUrl}/protocol-${num}`;
 
     return {
       success: true,

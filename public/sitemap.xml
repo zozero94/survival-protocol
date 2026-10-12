@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://survival-protocol-kappa.vercel.app/</loc>
+    <loc>https://survival-protocol.com/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol-kappa.vercel.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol-kappa.vercel.app/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/?lang=ja"/>
   </url>
   <url>
-    <loc>https://survival-protocol-kappa.vercel.app/protocol-01</loc>
+    <loc>https://survival-protocol.com/protocol-01</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/protocol-01?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol-kappa.vercel.app/protocol-01?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol-kappa.vercel.app/protocol-01?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-01?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-01?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-01?lang=ja"/>
   </url>
   <url>
-    <loc>https://survival-protocol-kappa.vercel.app/protocol-02</loc>
+    <loc>https://survival-protocol.com/protocol-02</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol-kappa.vercel.app/protocol-02?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-02?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-02?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-02?lang=ja"/>
   </url>
 </urlset>
