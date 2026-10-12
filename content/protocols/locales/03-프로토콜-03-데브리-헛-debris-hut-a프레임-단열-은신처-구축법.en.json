@@ -1,0 +1,82 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "Protocol #03: Debris Hut A-Frame Thermal Shelter Construction",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[THREAT LEVEL: CRITICAL]",
+  "summary": "Direct exposure to freezing wind and rain causes fatal hypothermia within 3 hours. By geometrically layering dry forest litter and deadwood to trap Dead Air Space, you build a zero-fire survival shelter that maintains core body temperature purely through human metabolic radiant heat (80–100W).",
+  "timeRequired": "90–120 MINUTES",
+  "successRate": "92.4% (with ≥60cm insulation depth)",
+  "difficulty": "Tier 2 (Heavy Primitive Construction)",
+  "outputPerHour": "1 Shelter (≥1.5m³ insulated volume)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Ridge Pole (Primary Spine)",
+      "desc": "1 straight, solid dry hardwood log (length 3.0–3.5m, diameter 10–15cm)"
+    },
+    {
+      "id": "mat-02",
+      "name": "Y-Frame Bipod & Rib Sticks",
+      "desc": "2 Y-forked support poles (length 1.5m, Ø 5–8cm) and 40–50 rib branches (length 1.0–1.5m)"
+    },
+    {
+      "id": "mat-03",
+      "name": "Dry Forest Debris (Thermal Mass)",
+      "desc": "2–3m³ of bone-dry leaves, pine needles, dry ferns, and shredded bark"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Erect A-Frame Bipod & Anchor Ridgepole",
+      "description": "Interlock two Y-forked support sticks at the apex (or lash with wild vine) to form a sturdy bipod, then seat one end of the ridgepole into the fork at 0.8–1.0m height. Anchor the tail end directly into the ground facing into the wind (windward). Size the interior strictly so your body barely crawls inside.",
+      "actionNote": "> FIELD RULE: Excess interior volume prevents metabolic heat from warming the air pocket, resulting in death by hypothermia. Enforce strict coffin clearance—leave only one fist (≤10cm) around your shoulders.",
+      "svgFileName": "pr03-step-01.svg",
+      "svgLabels": [
+        "CRITICAL VOLUME RULE [INTERIOR SPEC]:",
+        "Strict Coffin Spec: max +10cm (1 fist) body clearance",
+        "WINDWARD (Ground Anchor)",
+        "MAIN RIDGEPOLE: 3.0~3.5m (Hardwood Spine)",
+        "Y-BIPOD & VINE LASHING (Apex Joint)",
+        "COFFIN CLEARANCE: +10cm (1 Fist Max Gap)",
+        "HEIGHT: 0.8~1.0m"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Lay Rib Lattice & Pack High-Density Floor Mattress",
+      "description": "Lean rib sticks tightly along both sides of the ridgepole at a 45°–60° angle to form a dense lattice wall that prevents debris from falling through. Immediately pack at least 40cm of bone-dry leaves onto the floor so that even under full body weight it remains 15–20cm thick.",
+      "actionNote": "> PHYSICS PRINCIPLE: Cold ground conducts heat away dozens of times faster than still air. Without a compressed 15–20cm floor mattress, conductive heat loss triggers hypothermia shock rapidly.",
+      "svgFileName": "pr03-step-02.svg",
+      "svgLabels": [
+        "THERMAL CONDUCTION SHIELD [FLOOR INSULATION]:",
+        "Block ground conduction: keep ≥15~20cm compressed bed",
+        "RIDGEPOLE SPINE (Cross-Section)",
+        "RIB LATTICE: 45°~60° (Branch Grid)",
+        "MATTRESS: 40cm → 20cm (Leaf Bed)",
+        "GROUND COLD CONDUCTION BLOCKED"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Shingle 60–90cm Outer Debris & Armor Against Wind",
+      "description": "Cover the rib lattice with fine brush, then pile dry leaves from bottom to top like roof shingles to a thickness of 60–90cm (full arm's length). Lay heavy dead branches over the entire mound to prevent wind stripping, and seal the entrance tightly with a dense leaf plug.",
+      "actionNote": "> CAUTION: Wet debris has zero insulation value and steals body heat via evaporative cooling. Maintain a steep outer slope to shed rain while keeping the inner core bone-dry.",
+      "svgFileName": "pr03-step-03.svg",
+      "svgLabels": [
+        "INSULATION & SEALING [WALL SPEC]:",
+        "60~90cm dry leaf mound + full entrance plug seal",
+        "DEBRIS WALL: 60~90cm (Dry Leaves)",
+        "DEADWOOD ARMOR (Wind-Weight Branches)",
+        "WATER SHEDDING SLOPE (Rain Drain)",
+        "DEAD AIR CORE & PLUG SEAL (Thermal Chamber)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Error: Building an Oversized Cabin & Mixing Wet Debris",
+    "description": "Raising the ceiling for sitting comfort creates a large air pocket that human basal metabolism (80–100W) cannot heat. Furthermore, packing damp leaves into the floor or walls turns the shelter into a conductive evaporative cooler.",
+    "consequence": "Consequence: Combined conductive and convective heat loss drops core body temperature below 30°C during sleep, causing fatal hypothermia."
+  }
+}

@@ -69,11 +69,19 @@ ${
     : ''
 }`.trim();
 
-          const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
-            temperature: attempt === 1 ? 0.2 : 0.15,
-            responseMimeType: 'text/plain',
-          });
-          return this.extractCleanSvg(raw);
+          let lastErr         ;
+          for (let subTry = 1; subTry <= 2; subTry++) {
+            try {
+              const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
+                temperature: attempt === 1 && subTry === 1 ? 0.2 : 0.15,
+                responseMimeType: 'text/plain',
+              });
+              return this.extractCleanSvg(raw);
+            } catch (e) {
+              lastErr = e;
+            }
+          }
+          throw lastErr;
         },
       });
 

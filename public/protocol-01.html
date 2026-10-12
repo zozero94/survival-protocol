@@ -163,7 +163,7 @@
   </div>
   <header class="sticky top-0 z-40 bg-[#131313]/95 backdrop-blur border-b border-[#2d2d2d] transition-colors">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between font-mono text-xs">
-    <div class="flex items-center space-x-2">
+    <div class="flex items-center space-x-2 min-w-0">
       <a href="/" class="font-bold text-white tracking-widest hover:text-white/80 transition-colors flex items-center gap-1.5 shrink-0">
         <span class="inline-block w-2 h-2 bg-white"></span>
         <span data-i18n="brandShort">[생존 교범]</span>
@@ -172,13 +172,8 @@
       <div class="flex items-center gap-1 text-[#888] text-[11px] truncate">
         <span id="proto-header-category" data-proto="category">WATER</span>
         <span>&gt;</span>
-        <span id="proto-header-title" data-proto="title" class="text-neutral-300 font-semibold truncate max-w-[200px] sm:max-w-xs">프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)</span>
+        <span id="proto-header-title" data-proto="title" class="text-neutral-300 font-semibold truncate max-w-[220px] sm:max-w-md">프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)</span>
       </div>
-    </div>
-    
-    <div class="flex items-center gap-1 text-[10px] text-emerald-400 font-mono border border-emerald-900/60 bg-emerald-950/20 px-2 py-0.5">
-      <span class="inline-block w-1.5 h-1.5 bg-emerald-400 animate-pulse"></span>
-      <span>OFFLINE READY</span>
     </div>
   </div>
 </header>
@@ -554,25 +549,13 @@
 
   <aside class="fixed bottom-0 left-0 right-0 z-50 bg-[#101010]/95 backdrop-blur border-t border-[#333] px-3 py-2.5 transition-colors">
   <div class="max-w-4xl mx-auto flex items-center justify-between gap-2 font-mono text-xs">
-    <div class="flex items-center gap-2">
-      <a class="px-3 py-2 bg-[#1f1f1f] text-[#bbb] border border-[#3a3a3a] hover:text-white hover:border-[#666] transition-colors flex items-center gap-1 shrink-0" href="/">
-        <span>←</span> <span id="ui-all-protocols" data-i18n="allProtocols">전체 목차</span>
-      </a>
-      <a id="ui-next-link" data-proto-action="next-protocol" class="py-2 px-3 bg-white text-black font-bold border border-white hover:bg-[#eee] transition-colors flex items-center gap-1 text-[11px] shrink-0" href="/protocol-02">
-        <span id="ui-next-text" data-proto="nextProtocolTitle">다음: PR-02 프로토콜 #02: 보우 드릴 마찰열 발화법</span>
-        <span>→</span>
+    <a data-action="navigate-index" class="px-3 py-2 bg-[#1f1f1f] text-[#bbb] border border-[#3a3a3a] hover:text-white hover:border-[#666] transition-colors flex items-center gap-1 shrink-0" href="/">
+      <span>←</span> <span id="ui-all-protocols" data-i18n="allProtocols">전체 목차</span>
+    </a>
+    <a id="ui-next-link" data-action="navigate-next" data-proto-action="next-protocol" class="py-2 px-3 bg-white text-black font-bold border border-white hover:bg-[#eee] transition-colors flex items-center gap-1.5 text-[11px] truncate max-w-[65%] sm:max-w-md" href="/protocol-02">
+        <span id="ui-next-text" data-proto="nextProtocolTitle" class="truncate">다음: PR-02 프로토콜 #02: 보우 드릴 마찰열 발화법</span>
+        <span class="shrink-0">→</span>
        </a>
-    </div>
-    <div class="flex items-center gap-2">
-      <button type="button" data-action="save-offline" class="py-2 px-3 bg-[#252525] text-white border border-[#444] hover:bg-[#333] hover:border-[#777] active:bg-white active:text-black transition-colors flex items-center gap-1.5 text-[11px]">
-        <span>💾</span>
-        <span id="ui-btn-save" data-i18n="saveOffline">오프라인 저장 (A4/PDF)</span>
-      </button>
-      <button type="button" data-action="share-protocol" class="py-2 px-2.5 bg-[#171717] text-[#888] border border-[#333] hover:text-white hover:border-[#555] transition-colors flex items-center gap-1 text-[11px]">
-        <span>🔗</span>
-        <span id="ui-btn-share" data-i18n="share">공유</span>
-      </button>
-    </div>
   </div>
 </aside>
 

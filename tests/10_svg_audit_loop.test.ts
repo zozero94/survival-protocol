@@ -41,6 +41,9 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       '02-step-01.svg',
       '02-step-02.svg',
       '02-step-03.svg',
+      'pr03-step-01.svg',
+      'pr03-step-02.svg',
+      'pr03-step-03.svg',
     ];
 
     for (const fileName of activeSvgs) {
@@ -199,7 +202,11 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
 
   it('[7개국어 도면 핫스왑 & 정적 감사] 7개 지원 언어(ko, en, ja, es, de, pt, zh-TW) 전체에 대해 SVG <text> 라벨 개수 일치 및 경계/충돌 무결성을 100% 통과해야 한다', () => {
     const locales = ['en', 'ja', 'es', 'de', 'pt', 'zh-TW'];
-    const baseSlugs = ['01-water-purification', '02-friction-fire'];
+    const baseSlugs = [
+      '01-water-purification',
+      '02-friction-fire',
+      '03-프로토콜-03-데브리-헛-debris-hut-a프레임-단열-은신처-구축법',
+    ];
     const protocolsDir = path.resolve(__dirname, '../content/protocols');
     const localesDir = path.resolve(__dirname, '../content/protocols/locales');
     const svgsDir = path.resolve(__dirname, '../content/svgs');

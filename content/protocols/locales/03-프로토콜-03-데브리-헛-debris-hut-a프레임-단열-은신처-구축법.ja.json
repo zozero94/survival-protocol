@@ -1,0 +1,82 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "プロトコル #03: デブリハット(Debris Hut) Aフレーム断熱シェルター構築法",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[危険度: 致命的(CRITICAL)]",
+  "summary": "極寒の風雨に晒されると3時間以内に致命的な低体温症に陥る。乾燥した落ち葉と枯れ木を幾何学的に積層して静止空気層(Dead Air Space)を形成し、火気なしで人体の代謝放射熱(80〜100W)のみで内部温度を生存圏に保つ原始シェルターを構築する。",
+  "timeRequired": "90〜120分 (90-120 MINUTES)",
+  "successRate": "92.4% (断熱厚60cm以上確保時)",
+  "difficulty": "等級2 (高強度原始築造技術)",
+  "outputPerHour": "1棟完成 (有効断熱容積1.5㎥以上)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "棟木・リッジポール(Ridge Pole)",
+      "desc": "長さ3.0〜3.5m、直径10〜15cmの曲がりのない堅고な乾燥広葉樹丸太 1本"
+    },
+    {
+      "id": "mat-02",
+      "name": "Y字支柱および肋木枝(A-Frame & Rib Sticks)",
+      "desc": "長さ1.5m・直径5〜8cmのY字支柱2本、および長さ1.0〜1.5mの肋木用枝40〜50本"
+    },
+    {
+      "id": "mat-03",
+      "name": "乾燥断熱デブリ(Dry Debris)",
+      "desc": "水分を含まない乾燥落葉、松葉、枯れ草、樹皮屑など大量(最低2〜3立方メートル)"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Aフレーム支柱の架設と棟木の固定",
+      "description": "2本のY字支柱を上端で噛み合わせるか蔓で結束して三角支柱を立て、棟木の一端を交差部に乗せる(高さ0.8〜1.0m)。反対側の端は風上側の地面に密着させる。内部空間は身体が辛うじて潜り込める狭さに制限する。",
+      "actionNote": "> 野戦鉄則: 内部容積が広すぎると体温で空気を温められず凍死する。棺(Coffin)のように身体周囲に拳1個分(10cm)の隙間だけを残せ。",
+      "svgFileName": "pr03-step-01.svg",
+      "svgLabels": [
+        "CRITICAL VOLUME RULE [内部容積規格]:",
+        "棺(Coffin)規格厳守: 身体周囲に拳1個(10cm)の余裕のみ",
+        "WINDWARD (風上側地面密着)",
+        "MAIN RIDGEPOLE: 3.0~3.5m (主棟木)",
+        "Y-BIPOD & VINE LASHING (Y字支柱結束)",
+        "COFFIN CLEARANCE: +10cm (拳1個分の隙間制限)",
+        "HEIGHT: 0.8~1.0m"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "肋木フレーム配置と高密度断熱マットレス敷設",
+      "description": "棟木の両側に肋木枝を45〜60度の角度で密に立てかけ、落ち葉が内部に崩れ落ちない格子壁を作る。直ちに床面へ乾いた落ち葉を40cm以上敷き詰め、体重で圧縮されても15〜20cm以上の断熱厚を維持させる。",
+      "actionNote": "> 科学的原理: 土壌の熱伝導率は静止空気の数十倍に達する。床断熱がなければ全لا体温が地面へ奪われ短時間で低体温ショックに陥る。",
+      "svgFileName": "pr03-step-02.svg",
+      "svgLabels": [
+        "THERMAL CONDUCTION SHIELD [床断熱原則]:",
+        "地面熱伝導遮断: 圧縮後も最低15~20cm厚を維持",
+        "RIDGEPOLE SPINE (中心棟木断面)",
+        "RIB LATTICE: 45°~60° (肋木格子壁)",
+        "MATTRESS: 40cm → 20cm (落葉寝床)",
+        "GROUND COLD CONDUCTION BLOCKED (地面冷気遮断)"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "外壁断熱材60〜90cm積層と防風被覆",
+      "description": "骨格の上に小枝を薄く被せた後、乾いた落ち葉を下から上へ鱗状に60〜90cm(腕全体の長さ)の厚さで積み上げる。強風で飛ばないよう重い枯れ枝を外壁全体に被せて荷重をかけ、入口は落ち葉の栓で完全密閉する。",
+      "actionNote": "> 注意: 濡れた落ち葉は断熱効果がなく気化熱で体温を奪う。外壁の傾斜で雨水を流し、内部は完全な乾燥状態を保て。",
+      "svgFileName": "pr03-step-03.svg",
+      "svgLabels": [
+        "INSULATION & SEALING [断熱積層規格]:",
+        "外壁60~90cm乾燥落葉積層 + 入口プラグ完全密閉",
+        "DEBRIS WALL: 60~90cm (落葉断熱層)",
+        "DEADWOOD ARMOR (防風荷重枝)",
+        "WATER SHEDDING SLOPE (排水傾斜)",
+        "DEAD AIR CORE & PLUG SEAL (静止空気層・入口栓)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "致命的誤認: 快適性のための大型空間確保および湿った落ち葉の使用",
+    "description": "座って休めるように天井を高くすると、人間の基礎代謝(約80〜100W)では内部空気を温めきれず体温が急速に奪われる。また湿った落ち葉を混ぜると高い熱容量と気化熱により氷の洞窟のような冷却装置へと変質する。",
+    "consequence": "誤判断時の結末: 睡眠中の伝導・対流複合熱損失により深部体温が30°C以下に急降下し、致命的な低体温症(Hypothermia)で死亡。"
+  }
+}

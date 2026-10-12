@@ -1,0 +1,82 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "協議 #03：落葉屋（Debris Hut）A字型斷熱避難所構築法",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[威脅等級：致命(CRITICAL)]",
+  "summary": "在嚴寒風雨中暴露於野外會在3小時內導致致命失溫。透過幾何堆疊乾燥落葉與枯木形成靜止空氣層（Dead Air Space），無需火源即可僅憑人體代謝輻射熱（80～100W）維持核心體溫。",
+  "timeRequired": "90～120分鐘 (90-120 MINUTES)",
+  "successRate": "92.4% (確保60cm以上斷熱厚度時)",
+  "difficulty": "2級 (高強度原始構築技術)",
+  "outputPerHour": "完成1棟 (有效斷熱體積1.5㎥以上)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "主脊柱木 (Ridge Pole)",
+      "desc": "長3.0～3.5m、直徑10～15cm且筆直堅固的乾燥硬木原木1根"
+    },
+    {
+      "id": "mat-02",
+      "name": "Y型支撐木與肋骨枝條 (A-Frame & Rib Sticks)",
+      "desc": "長1.5m、直徑5～8cm的Y型支撐木2根，以及長1.0～1.5m的肋骨樹枝40～50根"
+    },
+    {
+      "id": "mat-03",
+      "name": "乾燥斷熱殘骸 (Dry Debris)",
+      "desc": "含水量極低的乾落葉、松針、乾草與碎樹皮等大量材料（至少2～3立方公尺）"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "架設A字型主腳與錨定主脊柱木",
+      "description": "將兩根Y型支撐木在頂端交錯咬合或以藤蔓綁紮成三角支架，將主脊柱木一端架於交點（高約0.8～1.0m），另一端緊貼迎風面地面。內部空間必須嚴格限制在僅容身體爬入的窄度。",
+      "actionNote": "> 野戰鐵則：內部體積過大將無法以體溫加熱空氣而凍死。務必遵守棺木規格：身體周圍僅留一個拳頭（≤10cm）的空隙。",
+      "svgFileName": "pr03-step-01.svg",
+      "svgLabels": [
+        "CRITICAL VOLUME RULE [內部體積規格]:",
+        "嚴守棺木規格：身體周圍僅留1個拳頭(10cm)裕度",
+        "WINDWARD (迎風面地面錨定)",
+        "MAIN RIDGEPOLE: 3.0~3.5m (主脊柱木)",
+        "Y-BIPOD & VINE LASHING (Y型支撐綁紮)",
+        "COFFIN CLEARANCE: +10cm (僅限1拳間隙)",
+        "HEIGHT: 0.8~1.0m"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "排列肋骨格柵與鋪設高密度地面斷熱床墊",
+      "description": "在主脊柱木兩側以45～60度角緊密斜靠肋骨樹枝，形成防止落葉坍塌的格柵牆。完成骨架後立即在地面鋪設至少40cm厚的乾落葉，確保躺下受壓後仍維持15～20cm以上的斷熱厚度。",
+      "actionNote": "> 科學原理：冰冷土壤的熱傳導率是靜止空氣的數十倍。若無地面斷熱層，體熱將迅速被大地吸乾並引發失溫休克。",
+      "svgFileName": "pr03-step-02.svg",
+      "svgLabels": [
+        "THERMAL CONDUCTION SHIELD [地面斷熱原則]:",
+        "阻斷地面熱傳導：受壓後仍需維持15~20cm厚度",
+        "RIDGEPOLE SPINE (主脊柱木斷面)",
+        "RIB LATTICE: 45°~60° (肋骨格柵牆)",
+        "MATTRESS: 40cm → 20cm (落葉床墊)",
+        "GROUND COLD CONDUCTION BLOCKED (阻絕地面寒氣)"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "堆疊60～90cm外部斷熱層與防風壓重披覆",
+      "description": "在骨架外覆蓋細枝後，由下往上如魚鱗般堆疊60～90cm（整條手臂長度）厚的乾落葉。最後在外牆覆蓋沉重枯枝防止強風吹散落葉，並以高密度落葉塞封死入口。",
+      "actionNote": "> 注意：潮濕落葉毫無斷熱效果且會透過蒸發奪走體溫。外牆必須維持陡峭斜度以排出雨水，確保內部乾燥。",
+      "svgFileName": "pr03-step-03.svg",
+      "svgLabels": [
+        "INSULATION & SEALING [斷熱堆疊規格]:",
+        "外牆60~90cm乾落葉堆疊 + 入口落葉塞完全密封",
+        "DEBRIS WALL: 60~90cm (落葉斷熱層)",
+        "DEADWOOD ARMOR (防風壓重外枝)",
+        "WATER SHEDDING SLOPE (排水斜面)",
+        "DEAD AIR CORE & PLUG SEAL (靜止空氣層與入口塞)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "致命誤判：為求舒適擴大內部空間與混用潮濕落葉",
+    "description": "為了能坐起而加高天花板會使內部空氣袋過大，人體基礎代謝（80～100W）無法將其加熱。此外，若混入潮濕落葉，水分的高熱容與蒸發熱將使避難所變成冰窖。",
+    "consequence": "誤判後果：睡眠中因傳導與對流複合熱損失，核心體溫驟降至30°C以下，導致致命失溫死亡。"
+  }
+}

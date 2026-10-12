@@ -34,23 +34,13 @@
       "actionNote": "> 조치 사항: 내부 체적이 필요 이상으로 크면 인체 복사열로 내부 공기를 덥히지 못해 얼어 죽는다. 반드시 관(coffin)에 들어간 듯 신체 둘레에 주먹 하나 여유만 남겨라.",
       "svgFileName": "pr03-step-01.svg",
       "svgLabels": [
-        "PROTOCOL #03 // STEP 01: FRAME ASSEMBLY",
-        "DEBRIS HUT RIDGEPOLE & Y-APEX INTERLOCK",
-        "COGNITIVE CLEARANCE: COFFIN SPEC",
-        "WINDWARD (풍상측)",
-        "DIRECT FORCE EMBEDMENT",
-        "GROUND ANCHOR (지면 밀착)",
-        "INTERIOR VOLUME [MAX TOLERANCE: +1 FIST]",
-        "LASHING NODE (결속점)",
-        "Y-CROTCH INTERLOCK",
-        "+ ROOT/VINE BINDING",
-        "0.8 ~ 1.0 M",
-        "APEX ELEVATION",
-        "SHOULDER WIDTH +10CM",
-        "MAIN RIDGEPOLE (능선목)",
-        "PRIMARY LOAD-BEARING SPINE",
-        "ACTION PROTOCOL:",
-        "내부 체적 과다 시 인체 복사열 분산으로 저체온사 유발. 관(COFFIN) 규격 엄수: 신체 둘레 여유 주먹 1개(≤10CM) 제한."
+        "CRITICAL VOLUME RULE [내부 체적 규격]:",
+        "관(Coffin) 규격 엄수: 신체 둘레 주먹 1개(10cm) 여유",
+        "WINDWARD (풍상측 지면 밀착)",
+        "MAIN RIDGEPOLE: 3.0~3.5m (주 능선 기둥목)",
+        "Y-BIPOD & VINE LASHING (Y자 지지목 결속)",
+        "COFFIN CLEARANCE: +10cm (신체 여유 주먹 1개 제한)",
+        "HEIGHT: 0.8~1.0m"
       ]
     },
     {
@@ -60,9 +50,12 @@
       "actionNote": "> 과학적 원리: 토양의 열전도율(Conduction)은 정지 공기의 수십 배에 달한다. 바닥 단열이 없으면 모든 체열이 지면으로 흡수되어 단시간 내 쇼크에 빠진다.",
       "svgFileName": "pr03-step-02.svg",
       "svgLabels": [
-        "DIMENSION // STEP 02",
-        "[늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설]",
-        "SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H"
+        "THERMAL CONDUCTION SHIELD [바닥 단열 원칙]:",
+        "지면 열전도 차단: 압축 후 최소 15~20cm 두께 유지",
+        "RIDGEPOLE SPINE (중심 능선목 단면)",
+        "RIB LATTICE: 45°~60° (늑골 가지 격자벽)",
+        "MATTRESS: 40cm → 20cm (낙엽 침상)",
+        "GROUND COLD CONDUCTION BLOCKED (지면 냉기 차단)"
       ]
     },
     {
@@ -72,9 +65,12 @@
       "actionNote": "> 주의: 젖은 잔해는 단열 효과가 전무하며 오히려 기화열로 체온을 뺏는다. 반드시 외벽 겉면만 빗물을 흘려보내는 경사각을 유지하고 내부는 건조 상태를 유지해야 한다.",
       "svgFileName": "pr03-step-03.svg",
       "svgLabels": [
-        "DIMENSION // STEP 03",
-        "[외부 단열재 적층 및 내풍성 방풍 피복]",
-        "SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H"
+        "INSULATION & SEALING [단열 적층 규격]:",
+        "외벽 60~90cm 마른 낙엽 적층 + 입구 마개 완전 밀폐",
+        "DEBRIS WALL: 60~90cm (낙엽 단열층)",
+        "DEADWOOD ARMOR (방풍 하중 겉가지)",
+        "WATER SHEDDING SLOPE (배수 경사)",
+        "DEAD AIR CORE & PLUG SEAL (정지 공기층 및 입구 마개)"
       ]
     }
   ],

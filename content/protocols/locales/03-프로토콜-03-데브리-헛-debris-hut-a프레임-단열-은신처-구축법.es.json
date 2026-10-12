@@ -1,0 +1,82 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "Protocolo #03: Construcción de Refugio Térmico A-Frame (Debris Hut)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
+  "summary": "La exposición al frío y la lluvia causa hipotermia mortal en 3 horas. Al apilar hojarasca seca y madera muerta para atrapar aire estancado (Dead Air Space), se construye un refugio sin fuego que conserva el calor metabólico humano (80–100W).",
+  "timeRequired": "90–120 MINUTOS",
+  "successRate": "92.4% (con ≥60cm de aislamiento)",
+  "difficulty": "Nivel 2 (Construcción Primitiva Intensiva)",
+  "outputPerHour": "1 Refugio (volumen aislado ≥1.5m³)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Viga Cumbrera (Ridge Pole)",
+      "desc": "1 tronco recto y seco de madera dura (longitud 3.0–3.5m, diámetro 10–15cm)"
+    },
+    {
+      "id": "mat-02",
+      "name": "Soportes en Y y Costillas (Rib Sticks)",
+      "desc": "2 horquillas en Y (1.5m, Ø 5–8cm) y 40–50 ramas laterales (1.0–1.5m)"
+    },
+    {
+      "id": "mat-03",
+      "name": "Hojarasca Seca Aislante (Dry Debris)",
+      "desc": "2–3m³ de hojas secas, agujas de pino, helechos secos y corteza suelta"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Erigir Bípode en A y Anclar Viga Cumbrera",
+      "description": "Entrelace dos horquillas en Y en la cúspide (o átelas con lianas) y apoye un extremo de la viga cumbrera a 0.8–1.0m de altura. Ancle el extremo opuesto en el suelo hacia el viento (barlovento). El interior debe ser tan estrecho que apenas permita entrar arrastrándose.",
+      "actionNote": "> REGLA DE CAMPO: Un volumen excesivo impide calentar el aire con calor corporal. Mantenga espacio de ataúd: solo un puño (≤10cm) alrededor del cuerpo.",
+      "svgFileName": "pr03-step-01.svg",
+      "svgLabels": [
+        "CRITICAL VOLUME RULE [VOLUMEN INTERIOR]:",
+        "Espacio tipo ataúd: máx. +10cm (1 puño) de holgura",
+        "WINDWARD (Anclaje Barlovento)",
+        "MAIN RIDGEPOLE: 3.0~3.5m (Viga Cumbrera)",
+        "Y-BIPOD & VINE LASHING (Unión en Y)",
+        "COFFIN CLEARANCE: +10cm (Holgura 1 Puño)",
+        "HEIGHT: 0.8~1.0m"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Colocar Costillas y Colchón Térmico de Suelo",
+      "description": "Apoye ramas laterales a 45°–60° a ambos lados de la viga para formar una rejilla cerrada. Cubra inmediatamente el suelo con al menos 40cm de hojas secas para que, al comprimirse con el peso corporal, conserve 15–20cm de espesor aislante.",
+      "actionNote": "> PRINCIPIO FÍSICO: La conducción térmica del suelo frío es decenas de veces mayor que la del aire. Sin aislamiento basal, el suelo drena todo el calor corporal.",
+      "svgFileName": "pr03-step-02.svg",
+      "svgLabels": [
+        "THERMAL CONDUCTION SHIELD [AISLAMIENTO BASAL]:",
+        "Bloquear conducción: mantener ≥15~20cm comprimido",
+        "RIDGEPOLE SPINE (Sección Cumbrera)",
+        "RIB LATTICE: 45°~60° (Costillas)",
+        "MATTRESS: 40cm → 20cm (Cama de Hojas)",
+        "GROUND COLD CONDUCTION BLOCKED"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Apilar 60–90cm de Hojarasca y Blindaje Cortavientos",
+      "description": "Cubra la rejilla con ramitas finas y apile hojas secas desde abajo hacia arriba hasta alcanzar 60–90cm de grosor. Coloque ramas pesadas encima para evitar que el viento vuele el aislamiento y selle la entrada con un tapón denso de hojas.",
+      "actionNote": "> PRECAUCIÓN: La hojarasca húmeda no aísla y roba calor por evaporación. Mantenga una pendiente pronunciada para evacuar la lluvia.",
+      "svgFileName": "pr03-step-03.svg",
+      "svgLabels": [
+        "INSULATION & SEALING [ESPEC. DE MURO]:",
+        "Muro de hojas de 60~90cm + tapón de entrada sellado",
+        "DEBRIS WALL: 60~90cm (Capa Aislante)",
+        "DEADWOOD ARMOR (Ramas de Peso)",
+        "WATER SHEDDING SLOPE (Drenaje)",
+        "DEAD AIR CORE & PLUG SEAL (Cámara Sellada)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Mortal: Construir un Interior Amplio y Usar Hojas Húmedas",
+    "description": "Hacer el techo alto para sentarse crea una bolsa de aire demasiado grande para los 80–100W del metabolismo humano. Además, mezclar hojas húmedas convierte el refugio en una cámara frigorífica.",
+    "consequence": "Consecuencia: La pérdida térmica por conducción y convección reduce la temperatura central bajo 30°C durante el sueño, causando muerte por hipotermia."
+  }
+}

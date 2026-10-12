@@ -163,7 +163,7 @@
   </div>
   <header class="sticky top-0 z-40 bg-[#131313]/95 backdrop-blur border-b border-[#2d2d2d] transition-colors">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between font-mono text-xs">
-    <div class="flex items-center space-x-2">
+    <div class="flex items-center space-x-2 min-w-0">
       <a href="/" class="font-bold text-white tracking-widest hover:text-white/80 transition-colors flex items-center gap-1.5 shrink-0">
         <span class="inline-block w-2 h-2 bg-white"></span>
         <span data-i18n="brandShort">[생존 교범]</span>
@@ -172,13 +172,8 @@
       <div class="flex items-center gap-1 text-[#888] text-[11px] truncate">
         <span id="proto-header-category" data-proto="category">SHELTER</span>
         <span>&gt;</span>
-        <span id="proto-header-title" data-proto="title" class="text-neutral-300 font-semibold truncate max-w-[200px] sm:max-w-xs">프로토콜 #03: 데브리 헛(Debris Hut) A프레임 단열 은신처 구축법</span>
+        <span id="proto-header-title" data-proto="title" class="text-neutral-300 font-semibold truncate max-w-[220px] sm:max-w-md">프로토콜 #03: 데브리 헛(Debris Hut) A프레임 단열 은신처 구축법</span>
       </div>
-    </div>
-    
-    <div class="flex items-center gap-1 text-[10px] text-emerald-400 font-mono border border-emerald-900/60 bg-emerald-950/20 px-2 py-0.5">
-      <span class="inline-block w-1.5 h-1.5 bg-emerald-400 animate-pulse"></span>
-      <span>OFFLINE READY</span>
     </div>
   </div>
 </header>
@@ -307,7 +302,68 @@
           <span class="tracking-wider text-[10px] text-[#777]">SCALE 1:1 FIELD GUIDE</span>
         </div>
         <div class="w-full flex items-center justify-center py-3 min-h-[190px] [&>svg]:max-w-[420px] [&>svg]:w-full [&>svg]:h-auto">
-          
+          <?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-white" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#F5F5F5" />
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E02424" />
+    </marker>
+  </defs>
+
+  <!-- Outer Frame Guideline -->
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Rule Callout Box -->
+  <rect x="25" y="24" width="330" height="44" fill="#141414" stroke="#333333" stroke-width="1" />
+  <text data-svg-step="0" data-svg-label="0" x="35" y="41" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">CRITICAL VOLUME RULE [내부 체적 규격]:</text>
+  <text data-svg-step="0" data-svg-label="1" x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">관(Coffin) 규격 엄수: 신체 둘레 주먹 1개(10cm) 여유</text>
+
+  <!-- Ground Baseline -->
+  <line x1="40" y1="265" x2="640" y2="265" stroke="#666666" stroke-width="2" />
+  <line x1="60" y1="273" x2="620" y2="273" stroke="#333333" stroke-width="1" stroke-dasharray="6,4" />
+
+  <!-- Windward Force Vector (Left Side) -->
+  <line x1="45" y1="195" x2="115" y2="195" stroke="#E02424" stroke-width="1.8" marker-end="url(#arrow-red)" />
+  <line x1="45" y1="215" x2="105" y2="215" stroke="#E02424" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#arrow-red)" />
+  <text data-svg-step="0" data-svg-label="2" x="45" y="182" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">WINDWARD (풍상측 지면 밀착)</text>
+
+  <!-- Main Ridgepole (3.0~3.5m Hardwood Spine) from (110, 265) to (490, 115) -->
+  <polygon points="105,265 492,110 498,124 125,265" fill="#262626" stroke="#F5F5F5" stroke-width="2" />
+  <!-- Ground Stake / Anchor at Windward Tail -->
+  <polygon points="102,248 112,248 112,282 102,282" fill="#E02424" stroke="#F5F5F5" stroke-width="1.2" />
+
+  <!-- Ridgepole Label & Leader Line -->
+  <line x1="280" y1="190" x2="250" y2="132" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text data-svg-step="0" data-svg-label="3" x="165" y="124" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">MAIN RIDGEPOLE: 3.0~3.5m (주 능선 기둥목)</text>
+
+  <!-- Y-Frame Bipod Support Sticks at Entrance (Apex at 490, 118) -->
+  <line x1="445" y1="265" x2="508" y2="92" stroke="#CCCCCC" stroke-width="5" />
+  <line x1="535" y1="265" x2="472" y2="92" stroke="#999999" stroke-width="5" />
+  <!-- Vine Lashing Node at Apex -->
+  <circle cx="490" cy="116" r="11" fill="#141414" stroke="#E02424" stroke-width="2" />
+  <line x1="481" y1="112" x2="499" y2="120" stroke="#F5F5F5" stroke-width="1.5" />
+  <line x1="481" y1="120" x2="499" y2="112" stroke="#F5F5F5" stroke-width="1.5" />
+
+  <!-- Lashing Node Label -->
+  <line x1="490" y1="102" x2="490" y2="68" stroke="#E02424" stroke-width="1" stroke-dasharray="2,2" />
+  <text data-svg-step="0" data-svg-label="4" x="490" y="60" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Y-BIPOD &amp; VINE LASHING (Y자 지지목 결속)</text>
+
+  <!-- Interior Prone Body Clearance Envelope (Coffin Spec) -->
+  <path d="M 165,258 L 455,258 L 455,212 L 385,205 L 165,242 Z" fill="#1c1b1b" stroke="#888888" stroke-width="1.2" stroke-dasharray="4,3" />
+  <!-- Clearance Gap Arrows (+10cm Fist Tolerance) -->
+  <line x1="365" y1="172" x2="365" y2="205" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
+  <text data-svg-step="0" data-svg-label="5" x="340" y="298" fill="#CCCCCC" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">COFFIN CLEARANCE: +10cm (신체 여유 주먹 1개 제한)</text>
+
+  <!-- Vertical Elevation Dimension (0.8 ~ 1.0m) on Right -->
+  <line x1="575" y1="116" x2="575" y2="265" stroke="#F5F5F5" stroke-width="1.2" />
+  <line x1="565" y1="116" x2="585" y2="116" stroke="#F5F5F5" stroke-width="1.5" />
+  <line x1="565" y1="265" x2="585" y2="265" stroke="#F5F5F5" stroke-width="1.5" />
+  <text data-svg-step="0" data-svg-label="6" x="655" y="194" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="end">HEIGHT: 0.8~1.0m</text>
+</svg>
+
         </div>
       </div>
 
@@ -343,27 +399,63 @@
           <span class="tracking-wider text-[10px] text-[#777]">SCALE 1:1 FIELD GUIDE</span>
         </div>
         <div class="w-full flex items-center justify-center py-3 min-h-[190px] [&>svg]:max-w-[420px] [&>svg]:w-full [&>svg]:h-auto">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" class="w-full max-w-2xl h-auto">
-  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
-  
-  <!-- 중앙 테크니컬 심볼 매트릭스 -->
-  <circle cx="340" cy="150" r="70" fill="none" stroke="#E5E5E5" stroke-width="2"/>
-  <circle cx="340" cy="150" r="64" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="2,2"/>
-  <line x1="250" y1="150" x2="430" y2="150" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="340" y1="60" x2="340" y2="240" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
-  
-  <!-- 45도 회전 기하 쐐기 -->
-  <rect x="305" y="115" width="70" height="70" fill="none" stroke="#E02424" stroke-width="2" transform="rotate(45 340 150)"/>
-  
-  <!-- 치수 화살표 -->
-  <path d="M260 265 H420" stroke="#E5E5E5" stroke-width="1.5"/>
-  <path d="M260 260 L255 265 L260 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
-  <path d="M420 260 L425 265 L420 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
-  
-  <!-- 텍스트 메타데이터 -->
-  <text data-svg-step="1" data-svg-label="0" x="340" y="290" fill="#A3A3A3" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" font-weight="bold">DIMENSION // STEP 02</text>
-  <text data-svg-step="1" data-svg-label="1" x="340" y="315" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" font-weight="bold">[늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설]</text>
-  <text data-svg-step="1" data-svg-label="2" x="25" y="32" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H</text>
+          <?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-white" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#F5F5F5" />
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E02424" />
+    </marker>
+  </defs>
+
+  <!-- Outer Frame Guideline -->
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Rule Callout Box -->
+  <rect x="25" y="24" width="335" height="44" fill="#141414" stroke="#333333" stroke-width="1" />
+  <text data-svg-step="1" data-svg-label="0" x="35" y="41" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">THERMAL CONDUCTION SHIELD [바닥 단열 원칙]:</text>
+  <text data-svg-step="1" data-svg-label="1" x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">지면 열전도 차단: 압축 후 최소 15~20cm 두께 유지</text>
+
+  <!-- Ground Baseline -->
+  <line x1="60" y1="265" x2="620" y2="265" stroke="#666666" stroke-width="2" />
+
+  <!-- Cross-Section A-Frame Rib Lattice (Center X = 340, Apex Y = 88) -->
+  <!-- Left & Right Rib Poles at 52° Pitch -->
+  <line x1="340" y1="88" x2="185" y2="265" stroke="#F5F5F5" stroke-width="4" />
+  <line x1="340" y1="88" x2="495" y2="265" stroke="#F5F5F5" stroke-width="4" />
+  <!-- Secondary Lattice Branches -->
+  <line x1="295" y1="138" x2="412" y2="170" stroke="#777777" stroke-width="1.5" stroke-dasharray="5,3" />
+  <line x1="255" y1="184" x2="445" y2="208" stroke="#777777" stroke-width="1.5" stroke-dasharray="5,3" />
+
+  <!-- Ridgepole Cross-Section Circle at Apex -->
+  <circle cx="340" cy="88" r="14" fill="#262626" stroke="#E02424" stroke-width="2.5" />
+  <circle cx="340" cy="88" r="4" fill="#F5F5F5" />
+  <line x1="354" y1="84" x2="430" y2="56" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text data-svg-step="1" data-svg-label="2" x="436" y="59" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">RIDGEPOLE SPINE (중심 능선목 단면)</text>
+
+  <!-- Rib Pitch Angle Indicator (45° ~ 60°) -->
+  <path d="M 222,265 A 36 36 0 0 0 209,238" fill="none" stroke="#E02424" stroke-width="1.8" />
+  <line x1="252" y1="188" x2="175" y2="145" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text data-svg-step="1" data-svg-label="3" x="35" y="140" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10">RIB LATTICE: 45°~60° (늑골 가지 격자벽)</text>
+
+  <!-- Interior Floor Mattress: Initial 40cm Mound (Dashed) & Compressed 15~20cm Core (Solid) -->
+  <path d="M 215,265 Q 340,175 465,265 Z" fill="#1c1b1b" stroke="#888888" stroke-width="1.2" stroke-dasharray="4,3" />
+  <rect x="215" y="222" width="250" height="43" fill="#252323" stroke="#E02424" stroke-width="2" />
+  <!-- Texture lines inside mattress -->
+  <line x1="230" y1="236" x2="450" y2="236" stroke="#666666" stroke-width="1" stroke-dasharray="8,4" />
+  <line x1="225" y1="250" x2="455" y2="250" stroke="#666666" stroke-width="1" stroke-dasharray="6,5" />
+
+  <!-- Mattress Dimension Callout on Right -->
+  <line x1="470" y1="235" x2="520" y2="205" stroke="#E02424" stroke-width="1.2" marker-end="url(#arrow-red)" />
+  <text data-svg-step="1" data-svg-label="4" x="655" y="200" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="end">MATTRESS: 40cm → 20cm (낙엽 침상)</text>
+
+  <!-- Ground Cold Conduction Blocked Vectors (Bottom) -->
+  <line x1="270" y1="292" x2="270" y2="270" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
+  <line x1="340" y1="292" x2="340" y2="270" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
+  <line x1="410" y1="292" x2="410" y2="270" stroke="#E02424" stroke-width="1.5" marker-end="url(#arrow-red)" />
+  <text data-svg-step="1" data-svg-label="5" x="340" y="314" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">GROUND COLD CONDUCTION BLOCKED (지면 냉기 차단)</text>
 </svg>
         </div>
       </div>
@@ -400,27 +492,55 @@
           <span class="tracking-wider text-[10px] text-[#777]">SCALE 1:1 FIELD GUIDE</span>
         </div>
         <div class="w-full flex items-center justify-center py-3 min-h-[190px] [&>svg]:max-w-[420px] [&>svg]:w-full [&>svg]:h-auto">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" class="w-full max-w-2xl h-auto">
-  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
-  
-  <!-- 중앙 테크니컬 심볼 매트릭스 -->
-  <circle cx="340" cy="150" r="70" fill="none" stroke="#E5E5E5" stroke-width="2"/>
-  <circle cx="340" cy="150" r="64" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="2,2"/>
-  <line x1="250" y1="150" x2="430" y2="150" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="340" y1="60" x2="340" y2="240" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
-  
-  <!-- 45도 회전 기하 쐐기 -->
-  <rect x="305" y="115" width="70" height="70" fill="none" stroke="#E02424" stroke-width="2" transform="rotate(45 340 150)"/>
-  
-  <!-- 치수 화살표 -->
-  <path d="M260 265 H420" stroke="#E5E5E5" stroke-width="1.5"/>
-  <path d="M260 260 L255 265 L260 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
-  <path d="M420 260 L425 265 L420 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
-  
-  <!-- 텍스트 메타데이터 -->
-  <text data-svg-step="2" data-svg-label="0" x="340" y="290" fill="#A3A3A3" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" font-weight="bold">DIMENSION // STEP 03</text>
-  <text data-svg-step="2" data-svg-label="1" x="340" y="315" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" font-weight="bold">[외부 단열재 적층 및 내풍성 방풍 피복]</text>
-  <text data-svg-step="2" data-svg-label="2" x="25" y="32" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H</text>
+          <?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-white" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#F5F5F5" />
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E02424" />
+    </marker>
+  </defs>
+
+  <!-- Outer Frame Guideline -->
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Rule Callout Box -->
+  <rect x="25" y="24" width="335" height="44" fill="#141414" stroke="#333333" stroke-width="1" />
+  <text data-svg-step="2" data-svg-label="0" x="35" y="41" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">INSULATION &amp; SEALING [단열 적층 규격]:</text>
+  <text data-svg-step="2" data-svg-label="1" x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">외벽 60~90cm 마른 낙엽 적층 + 입구 마개 완전 밀폐</text>
+
+  <!-- Ground Baseline -->
+  <line x1="45" y1="268" x2="635" y2="268" stroke="#666666" stroke-width="2" />
+
+  <!-- Outer Heavy Deadwood Wind-Armor Layer (Outer Mound) -->
+  <path d="M 95,268 Q 340,22 585,268 Z" fill="#191818" stroke="#F5F5F5" stroke-width="2.2" />
+  <!-- Shingled Debris Layer (60~90cm Thickness Zone) -->
+  <path d="M 135,268 Q 340,68 545,268 Z" fill="#222020" stroke="#888888" stroke-width="1.5" stroke-dasharray="6,3" />
+
+  <!-- Inner Rib Core & Dead-Air Thermal Chamber -->
+  <polygon points="340,142 230,268 450,268" fill="#121212" stroke="#E02424" stroke-width="2" />
+  <!-- Entrance Debris Plug / Seal Indicator inside Chamber -->
+  <circle cx="340" cy="222" r="24" fill="#291414" stroke="#E02424" stroke-width="1.8" stroke-dasharray="3,2" />
+  <path d="M 326,222 L 354,222 M 340,208 L 340,236" stroke="#E02424" stroke-width="1.5" />
+
+  <!-- 60~90cm Thickness Dimension Callout (Left Slope) -->
+  <line x1="185" y1="162" x2="255" y2="212" stroke="#E02424" stroke-width="2" marker-end="url(#arrow-red)" />
+  <line x1="185" y1="162" x2="135" y2="128" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text data-svg-step="2" data-svg-label="2" x="30" y="120" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">DEBRIS WALL: 60~90cm (낙엽 단열층)</text>
+
+  <!-- Heavy Deadwood Armor Callout (Right Slope) -->
+  <line x1="455" y1="118" x2="505" y2="75" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text data-svg-step="2" data-svg-label="3" x="655" y="70" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">DEADWOOD ARMOR (방풍 하중 겉가지)</text>
+
+  <!-- Rain / Wind Shedding Vector on Right Slope -->
+  <line x1="505" y1="145" x2="575" y2="215" stroke="#F5F5F5" stroke-width="1.5" marker-end="url(#arrow-white)" />
+  <text data-svg-step="2" data-svg-label="4" x="655" y="142" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="end">WATER SHEDDING SLOPE (배수 경사)</text>
+
+  <!-- Dead Air Space & Entrance Plug Label (Bottom Center) -->
+  <line x1="340" y1="246" x2="340" y2="292" stroke="#E02424" stroke-width="1.2" />
+  <text data-svg-step="2" data-svg-label="5" x="340" y="312" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">DEAD AIR CORE &amp; PLUG SEAL (정지 공기층 및 입구 마개)</text>
 </svg>
         </div>
       </div>
@@ -474,25 +594,13 @@
 
   <aside class="fixed bottom-0 left-0 right-0 z-50 bg-[#101010]/95 backdrop-blur border-t border-[#333] px-3 py-2.5 transition-colors">
   <div class="max-w-4xl mx-auto flex items-center justify-between gap-2 font-mono text-xs">
-    <div class="flex items-center gap-2">
-      <a class="px-3 py-2 bg-[#1f1f1f] text-[#bbb] border border-[#3a3a3a] hover:text-white hover:border-[#666] transition-colors flex items-center gap-1 shrink-0" href="/">
-        <span>←</span> <span id="ui-all-protocols" data-i18n="allProtocols">전체 목차</span>
-      </a>
-      <a id="ui-next-link" data-proto-action="next-protocol" class="py-2 px-3 bg-white text-black font-bold border border-white hover:bg-[#eee] transition-colors flex items-center gap-1 text-[11px] shrink-0" href="/protocol-01">
-        <span id="ui-next-text" data-proto="nextProtocolTitle">다음: PR-01 프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)</span>
-        <span>→</span>
+    <a data-action="navigate-index" class="px-3 py-2 bg-[#1f1f1f] text-[#bbb] border border-[#3a3a3a] hover:text-white hover:border-[#666] transition-colors flex items-center gap-1 shrink-0" href="/">
+      <span>←</span> <span id="ui-all-protocols" data-i18n="allProtocols">전체 목차</span>
+    </a>
+    <a id="ui-next-link" data-action="navigate-next" data-proto-action="next-protocol" class="py-2 px-3 bg-white text-black font-bold border border-white hover:bg-[#eee] transition-colors flex items-center gap-1.5 text-[11px] truncate max-w-[65%] sm:max-w-md" href="/protocol-01">
+        <span id="ui-next-text" data-proto="nextProtocolTitle" class="truncate">다음: PR-01 프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)</span>
+        <span class="shrink-0">→</span>
        </a>
-    </div>
-    <div class="flex items-center gap-2">
-      <button type="button" data-action="save-offline" class="py-2 px-3 bg-[#252525] text-white border border-[#444] hover:bg-[#333] hover:border-[#777] active:bg-white active:text-black transition-colors flex items-center gap-1.5 text-[11px]">
-        <span>💾</span>
-        <span id="ui-btn-save" data-i18n="saveOffline">오프라인 저장 (A4/PDF)</span>
-      </button>
-      <button type="button" data-action="share-protocol" class="py-2 px-2.5 bg-[#171717] text-[#888] border border-[#333] hover:text-white hover:border-[#555] transition-colors flex items-center gap-1 text-[11px]">
-        <span>🔗</span>
-        <span id="ui-btn-share" data-i18n="share">공유</span>
-      </button>
-    </div>
   </div>
 </aside>
 
@@ -500,7 +608,7 @@
 
   <script>
     // 1. 다국어 데이터셋 인메모리 임베딩 (Single Source of Truth)
-    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-03","category":"SHELTER","title":"프로토콜 #03: 데브리 헛(Debris Hut) A프레임 단열 은신처 구축법","threatLevel":"CRITICAL","threatLevelText":"[위험 등급: 치명적(CRITICAL)]","summary":"혹한과 비바람 속에서 노지 노출은 3시간 이내에 치명적인 저체온증을 초래한다. 자연 낙엽과 고사목만을 기하학적으로 배치해 정지 공기층(Dead Air Space)을 형성함으로써, 열원 없이 순수 인체 대사 복사열만으로 내부 온도를 생존선 이상으로 유지하는 원시 은신처를 구축한다.","timeRequired":"90~120분 (90-120 MINUTES)","successRate":"92.4% (단열 두께 60cm 확보 기준)","difficulty":"2등급 (고강도 원시 축조 기술)","outputPerHour":"1동 완공 (유효 단열 부피 1.5㎥ 이상)","materials":[{"id":"mat-01","name":"능선 기둥목(Ridge Pole)","desc":"길이 3.0~3.5m, 직경 10~15cm의 휘어짐이 없고 단단한 마른 활엽수 원목 1개"},{"id":"mat-02","name":"지지목 및 늑골 가지(A-Frame & Rib Sticks)","desc":"길이 1.5m, 직경 5~8cm의 Y자 지지목 2개 및 길이 1~1.5m 늑골용 나뭇가지 40~50개"},{"id":"mat-03","name":"건조 단열 잔해(Dry Debris)","desc":"수분 함량이 적은 마른 낙엽, 마른 솔잎, 건초, 썩은 마른 목재 부스러기 등 대량(최소 2~3세제곱미터)"}],"steps":[{"stepNumber":"01","title":"A프레임 주각 가설 및 능선목 결속","description":"두 개의 Y자형 지지목을 상단에서 맞물려 교차시키거나 칡넝쿨로 결속해 삼각 지지대를 세우고, 능선 기둥목의 한쪽 끝을 교차점에 올린다(높이 약 0.8~1m). 기둥목의 반대쪽 끝은 바람이 불어오는 풍상측 지면에 밀착시킨다. 내부 공간은 시전자의 몸이 겨우 기어들어갈 수 있을 정도로 좁게 설정해야 한다.","actionNote":"> 조치 사항: 내부 체적이 필요 이상으로 크면 인체 복사열로 내부 공기를 덥히지 못해 얼어 죽는다. 반드시 관(coffin)에 들어간 듯 신체 둘레에 주먹 하나 여유만 남겨라.","svgFileName":"pr03-step-01.svg","svgLabels":["PROTOCOL #03 // STEP 01: FRAME ASSEMBLY","DEBRIS HUT RIDGEPOLE & Y-APEX INTERLOCK","COGNITIVE CLEARANCE: COFFIN SPEC","WINDWARD (풍상측)","DIRECT FORCE EMBEDMENT","GROUND ANCHOR (지면 밀착)","INTERIOR VOLUME [MAX TOLERANCE: +1 FIST]","LASHING NODE (결속점)","Y-CROTCH INTERLOCK","+ ROOT/VINE BINDING","0.8 ~ 1.0 M","APEX ELEVATION","SHOULDER WIDTH +10CM","MAIN RIDGEPOLE (능선목)","PRIMARY LOAD-BEARING SPINE","ACTION PROTOCOL:","내부 체적 과다 시 인체 복사열 분산으로 저체온사 유발. 관(COFFIN) 규격 엄수: 신체 둘레 여유 주먹 1개(≤10CM) 제한."]},{"stepNumber":"02","title":"늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설","description":"능선목 양옆에 늑골 가지들을 45~60도 각도로 촘촘하게 빗대어 잔해가 내부로 쏟아지지 않는 격자벽을 형성한다. 골조 완성 즉시 내부 바닥에 바싹 마른 낙엽과 풀을 최소 40cm 이상 두껍게 깔아 침상을 다진다. 누웠을 때 체중에 의해 압축되더라도 15~20cm 이상의 단열 두께가 유지되어야 한다.","actionNote":"> 과학적 원리: 토양의 열전도율(Conduction)은 정지 공기의 수십 배에 달한다. 바닥 단열이 없으면 모든 체열이 지면으로 흡수되어 단시간 내 쇼크에 빠진다.","svgFileName":"pr03-step-02.svg","svgLabels":["DIMENSION // STEP 02","[늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설]","SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H"]},{"stepNumber":"03","title":"외부 단열재 적층 및 내풍성 방풍 피복","description":"골조 외벽에 잔가지 층을 얇게 덮어 잔해 낙하를 막은 뒤, 마른 낙엽과 숲의 부스러기를 하단부터 상단으로 비늘 형태로 최소 60~90cm(팔 길이 전체 수준) 두께로 쌓아 올린다. 마지막으로 돌풍에 마른 잎이 날아가지 않도록 무거운 겉가지들을 외벽 전체에 덮어 하중을 가한다. 입구는 마른 잎을 채운 잎더미 마개로 막아 밀폐한다.","actionNote":"> 주의: 젖은 잔해는 단열 효과가 전무하며 오히려 기화열로 체온을 뺏는다. 반드시 외벽 겉면만 빗물을 흘려보내는 경사각을 유지하고 내부는 건조 상태를 유지해야 한다.","svgFileName":"pr03-step-03.svg","svgLabels":["DIMENSION // STEP 03","[외부 단열재 적층 및 내풍성 방풍 피복]","SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H"]}],"fatalMistake":{"title":"치명적 착각: 주거 편의를 위한 대형 공간 확보 및 젖은 잔해 적층","description":"텐트처럼 편히 앉아 쉬기 위해 내부 천장을 높이고 공간을 넓히면, 인간의 기초대사량(약 80~100W)으로 내부 공기 주머니를 덥히지 못해 체온이 급속 탈취된다. 또한 외벽이나 바닥에 젖은 낙엽을 섞어 적층할 경우 물의 높은 열용량과 기화열로 인해 구조물 전체가 얼음 동굴과 같은 냉각 장치로 변질된다.","consequence":"오판 시 결과: 취침 중 전도 및 대류 복합 열손실로 심부 체온이 30°C 이하로 급강하하여 치명적 저체온증(Hypothermia)으로 사망."},"nextProtocolTitle":"다음: PR-01 프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)"}};
+    window.__PROTOCOLS__ = {"ko":{"protocolId":"PR-03","category":"SHELTER","title":"프로토콜 #03: 데브리 헛(Debris Hut) A프레임 단열 은신처 구축법","threatLevel":"CRITICAL","threatLevelText":"[위험 등급: 치명적(CRITICAL)]","summary":"혹한과 비바람 속에서 노지 노출은 3시간 이내에 치명적인 저체온증을 초래한다. 자연 낙엽과 고사목만을 기하학적으로 배치해 정지 공기층(Dead Air Space)을 형성함으로써, 열원 없이 순수 인체 대사 복사열만으로 내부 온도를 생존선 이상으로 유지하는 원시 은신처를 구축한다.","timeRequired":"90~120분 (90-120 MINUTES)","successRate":"92.4% (단열 두께 60cm 확보 기준)","difficulty":"2등급 (고강도 원시 축조 기술)","outputPerHour":"1동 완공 (유효 단열 부피 1.5㎥ 이상)","materials":[{"id":"mat-01","name":"능선 기둥목(Ridge Pole)","desc":"길이 3.0~3.5m, 직경 10~15cm의 휘어짐이 없고 단단한 마른 활엽수 원목 1개"},{"id":"mat-02","name":"지지목 및 늑골 가지(A-Frame & Rib Sticks)","desc":"길이 1.5m, 직경 5~8cm의 Y자 지지목 2개 및 길이 1~1.5m 늑골용 나뭇가지 40~50개"},{"id":"mat-03","name":"건조 단열 잔해(Dry Debris)","desc":"수분 함량이 적은 마른 낙엽, 마른 솔잎, 건초, 썩은 마른 목재 부스러기 등 대량(최소 2~3세제곱미터)"}],"steps":[{"stepNumber":"01","title":"A프레임 주각 가설 및 능선목 결속","description":"두 개의 Y자형 지지목을 상단에서 맞물려 교차시키거나 칡넝쿨로 결속해 삼각 지지대를 세우고, 능선 기둥목의 한쪽 끝을 교차점에 올린다(높이 약 0.8~1m). 기둥목의 반대쪽 끝은 바람이 불어오는 풍상측 지면에 밀착시킨다. 내부 공간은 시전자의 몸이 겨우 기어들어갈 수 있을 정도로 좁게 설정해야 한다.","actionNote":"> 조치 사항: 내부 체적이 필요 이상으로 크면 인체 복사열로 내부 공기를 덥히지 못해 얼어 죽는다. 반드시 관(coffin)에 들어간 듯 신체 둘레에 주먹 하나 여유만 남겨라.","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [내부 체적 규격]:","관(Coffin) 규격 엄수: 신체 둘레 주먹 1개(10cm) 여유","WINDWARD (풍상측 지면 밀착)","MAIN RIDGEPOLE: 3.0~3.5m (주 능선 기둥목)","Y-BIPOD & VINE LASHING (Y자 지지목 결속)","COFFIN CLEARANCE: +10cm (신체 여유 주먹 1개 제한)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설","description":"능선목 양옆에 늑골 가지들을 45~60도 각도로 촘촘하게 빗대어 잔해가 내부로 쏟아지지 않는 격자벽을 형성한다. 골조 완성 즉시 내부 바닥에 바싹 마른 낙엽과 풀을 최소 40cm 이상 두껍게 깔아 침상을 다진다. 누웠을 때 체중에 의해 압축되더라도 15~20cm 이상의 단열 두께가 유지되어야 한다.","actionNote":"> 과학적 원리: 토양의 열전도율(Conduction)은 정지 공기의 수십 배에 달한다. 바닥 단열이 없으면 모든 체열이 지면으로 흡수되어 단시간 내 쇼크에 빠진다.","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [바닥 단열 원칙]:","지면 열전도 차단: 압축 후 최소 15~20cm 두께 유지","RIDGEPOLE SPINE (중심 능선목 단면)","RIB LATTICE: 45°~60° (늑골 가지 격자벽)","MATTRESS: 40cm → 20cm (낙엽 침상)","GROUND COLD CONDUCTION BLOCKED (지면 냉기 차단)"]},{"stepNumber":"03","title":"외부 단열재 적층 및 내풍성 방풍 피복","description":"골조 외벽에 잔가지 층을 얇게 덮어 잔해 낙하를 막은 뒤, 마른 낙엽과 숲의 부스러기를 하단부터 상단으로 비늘 형태로 최소 60~90cm(팔 길이 전체 수준) 두께로 쌓아 올린다. 마지막으로 돌풍에 마른 잎이 날아가지 않도록 무거운 겉가지들을 외벽 전체에 덮어 하중을 가한다. 입구는 마른 잎을 채운 잎더미 마개로 막아 밀폐한다.","actionNote":"> 주의: 젖은 잔해는 단열 효과가 전무하며 오히려 기화열로 체온을 뺏는다. 반드시 외벽 겉면만 빗물을 흘려보내는 경사각을 유지하고 내부는 건조 상태를 유지해야 한다.","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [단열 적층 규격]:","외벽 60~90cm 마른 낙엽 적층 + 입구 마개 완전 밀폐","DEBRIS WALL: 60~90cm (낙엽 단열층)","DEADWOOD ARMOR (방풍 하중 겉가지)","WATER SHEDDING SLOPE (배수 경사)","DEAD AIR CORE & PLUG SEAL (정지 공기층 및 입구 마개)"]}],"fatalMistake":{"title":"치명적 착각: 주거 편의를 위한 대형 공간 확보 및 젖은 잔해 적층","description":"텐트처럼 편히 앉아 쉬기 위해 내부 천장을 높이고 공간을 넓히면, 인간의 기초대사량(약 80~100W)으로 내부 공기 주머니를 덥히지 못해 체온이 급속 탈취된다. 또한 외벽이나 바닥에 젖은 낙엽을 섞어 적층할 경우 물의 높은 열용량과 기화열로 인해 구조물 전체가 얼음 동굴과 같은 냉각 장치로 변질된다.","consequence":"오판 시 결과: 취침 중 전도 및 대류 복합 열손실로 심부 체온이 30°C 이하로 급강하하여 치명적 저체온증(Hypothermia)으로 사망."},"nextProtocolTitle":"다음: PR-01 프로토콜 #01: 오염된 물 마시는 방법 (야생 숯 여과)"},"de":{"protocolId":"PR-03","category":"SHELTER","title":"Protokoll #03: Laubhütte (Debris Hut) A-Rahmen-Isolationsunterstand","threatLevel":"CRITICAL","threatLevelText":"[GEFAHRENSTUFE: KRITISCH]","summary":"Ungeschützte Kälte- und Nässeexposition führt binnen 3 Stunden zu tödlicher Unterkühlung. Durch geometrisches Schichten von trockenem Laub und Totholz entsteht eine stehende Luftschicht (Dead Air Space), die allein durch 80–100W Körperwärme das Überleben sichert.","timeRequired":"90–120 MINUTEN","successRate":"92.4% (bei ≥60cm Isolationsschicht)","difficulty":"Stufe 2 (Schwerer Primitivbau)","outputPerHour":"1 Unterstand (≥1.5m³ Isolationsvolumen)","materials":[{"id":"mat-01","name":"Firstbalken (Ridge Pole)","desc":"1 gerader, trockener Hartholzstamm (Länge 3.0–3.5m, Ø 10–15cm)"},{"id":"mat-02","name":"Y-Stützgabeln & Rippenäste (Rib Sticks)","desc":"2 Y-Stützen (1.5m, Ø 5–8cm) sowie 40–50 Seitenäste (1.0–1.5m)"},{"id":"mat-03","name":"Trockenes Laub & Waldstreu (Dry Debris)","desc":"2–3m³ knochentrockenes Laub, Kiefernnadeln, trockenes Gras und Rinde"}],"steps":[{"stepNumber":"01","title":"A-Rahmen-Stütze errichten & Firstbalken verankern","description":"Verschränken Sie zwei Y-Gabelhölzer an der Spitze (oder binden Sie diese mit Ranken) und legen Sie den Firstbalken in 0.8–1.0m Höhe auf. Verankern Sie das hintere Ende direkt auf der Windseite im Boden. Der Innenraum darf nur so breit sein, dass Sie knapp hineinkriechen können.","actionNote":"> FELDREGEL: Zu großes Innenvolumen verhindert die Erwärmung durch Körperwärme. Striktes Sargmaß einhalten: maximal eine Faustbreit (≤10cm) Abstand.","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [INNENVOLUMEN]:","Striktes Sargmaß: max. +10cm (1 Faust) Körperabstand","WINDWARD (Windseitiger Anker)","MAIN RIDGEPOLE: 3.0~3.5m (Firstbalken)","Y-BIPOD & VINE LASHING (Y-Stützverbindung)","COFFIN CLEARANCE: +10cm (Max. 1 Faust Spielraum)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"Rippengitter anlegen & Boden-Isoliermatratze verdichten","description":"Lehnen Sie Rippenäste im 45°–60°-Winkel dicht an beide Seiten des Firstbalkens. Schichten Sie sofort mindestens 40cm trockenes Laub auf den Boden, sodass auch unter Körpergewicht 15–20cm Isolierstärke verbleiben.","actionNote":"> PHYSIK-PRINZIP: Kalter Boden leitet Wärme dutzendfach schneller ab als Luft. Ohne 15–20cm Bodenisolierung droht rascher Kälteschock.","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [BODENISOLIERUNG]:","Bodenkälte blockieren: ≥15~20cm komprimierte Matte","RIDGEPOLE SPINE (Firstbalken-Schnitt)","RIB LATTICE: 45°~60° (Rippengitter)","MATTRESS: 40cm → 20cm (Laubmatratze)","GROUND COLD CONDUCTION BLOCKED"]},{"stepNumber":"03","title":"60–90cm Außenisolierung & Sturmsicherung","description":"Decken Sie das Gitter mit Reisig ab und schichten Sie trockenes Laub von unten nach oben 60–90cm (Armlänge) dick auf. Beschweren Sie die Hülle mit schweren Totholzästen gegen Wind und verschließen Sie den Eingang mit einem Laubpfropfen.","actionNote":"> WARNUNG: Nasses Laub isoliert nicht und entzieht Wärme durch Verdunstung. Steile Außenneigung zur Regenabweisung beibehalten.","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [WANDAUFBAU]:","60~90cm trockene Laubschicht + Eingangspfropfen","DEBRIS WALL: 60~90cm (Laubdämmung)","DEADWOOD ARMOR (Windschutz-Äste)","WATER SHEDDING SLOPE (Regenablauf)","DEAD AIR CORE & PLUG SEAL (Thermokammer)"]}],"fatalMistake":{"title":"Tödlicher Fehler: Zu großer Innenraum & feuchtes Laub","description":"Ein hoher Innenraum zum Sitzen kann durch 80–100W menschliche Stoffwechselwärme nicht erwärmt werden. Feuchtes Laub verwandelt den Unterstand zudem in eine tödliche Kühlkammer.","consequence":"Folge: Wärmeverlust durch Leitung und Konvektion senkt die Kerntemperatur im Schlaf unter 30°C – Tod durch Unterkühlung."},"nextProtocolTitle":"Weiter: PR-01 PROTOKOLL #01: Aufbereitung von Wildwasser (Aktivkohle-Filtration)"},"en":{"protocolId":"PR-03","category":"SHELTER","title":"Protocol #03: Debris Hut A-Frame Thermal Shelter Construction","threatLevel":"CRITICAL","threatLevelText":"[THREAT LEVEL: CRITICAL]","summary":"Direct exposure to freezing wind and rain causes fatal hypothermia within 3 hours. By geometrically layering dry forest litter and deadwood to trap Dead Air Space, you build a zero-fire survival shelter that maintains core body temperature purely through human metabolic radiant heat (80–100W).","timeRequired":"90–120 MINUTES","successRate":"92.4% (with ≥60cm insulation depth)","difficulty":"Tier 2 (Heavy Primitive Construction)","outputPerHour":"1 Shelter (≥1.5m³ insulated volume)","materials":[{"id":"mat-01","name":"Ridge Pole (Primary Spine)","desc":"1 straight, solid dry hardwood log (length 3.0–3.5m, diameter 10–15cm)"},{"id":"mat-02","name":"Y-Frame Bipod & Rib Sticks","desc":"2 Y-forked support poles (length 1.5m, Ø 5–8cm) and 40–50 rib branches (length 1.0–1.5m)"},{"id":"mat-03","name":"Dry Forest Debris (Thermal Mass)","desc":"2–3m³ of bone-dry leaves, pine needles, dry ferns, and shredded bark"}],"steps":[{"stepNumber":"01","title":"Erect A-Frame Bipod & Anchor Ridgepole","description":"Interlock two Y-forked support sticks at the apex (or lash with wild vine) to form a sturdy bipod, then seat one end of the ridgepole into the fork at 0.8–1.0m height. Anchor the tail end directly into the ground facing into the wind (windward). Size the interior strictly so your body barely crawls inside.","actionNote":"> FIELD RULE: Excess interior volume prevents metabolic heat from warming the air pocket, resulting in death by hypothermia. Enforce strict coffin clearance—leave only one fist (≤10cm) around your shoulders.","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [INTERIOR SPEC]:","Strict Coffin Spec: max +10cm (1 fist) body clearance","WINDWARD (Ground Anchor)","MAIN RIDGEPOLE: 3.0~3.5m (Hardwood Spine)","Y-BIPOD & VINE LASHING (Apex Joint)","COFFIN CLEARANCE: +10cm (1 Fist Max Gap)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"Lay Rib Lattice & Pack High-Density Floor Mattress","description":"Lean rib sticks tightly along both sides of the ridgepole at a 45°–60° angle to form a dense lattice wall that prevents debris from falling through. Immediately pack at least 40cm of bone-dry leaves onto the floor so that even under full body weight it remains 15–20cm thick.","actionNote":"> PHYSICS PRINCIPLE: Cold ground conducts heat away dozens of times faster than still air. Without a compressed 15–20cm floor mattress, conductive heat loss triggers hypothermia shock rapidly.","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [FLOOR INSULATION]:","Block ground conduction: keep ≥15~20cm compressed bed","RIDGEPOLE SPINE (Cross-Section)","RIB LATTICE: 45°~60° (Branch Grid)","MATTRESS: 40cm → 20cm (Leaf Bed)","GROUND COLD CONDUCTION BLOCKED"]},{"stepNumber":"03","title":"Shingle 60–90cm Outer Debris & Armor Against Wind","description":"Cover the rib lattice with fine brush, then pile dry leaves from bottom to top like roof shingles to a thickness of 60–90cm (full arm's length). Lay heavy dead branches over the entire mound to prevent wind stripping, and seal the entrance tightly with a dense leaf plug.","actionNote":"> CAUTION: Wet debris has zero insulation value and steals body heat via evaporative cooling. Maintain a steep outer slope to shed rain while keeping the inner core bone-dry.","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [WALL SPEC]:","60~90cm dry leaf mound + full entrance plug seal","DEBRIS WALL: 60~90cm (Dry Leaves)","DEADWOOD ARMOR (Wind-Weight Branches)","WATER SHEDDING SLOPE (Rain Drain)","DEAD AIR CORE & PLUG SEAL (Thermal Chamber)"]}],"fatalMistake":{"title":"Fatal Error: Building an Oversized Cabin & Mixing Wet Debris","description":"Raising the ceiling for sitting comfort creates a large air pocket that human basal metabolism (80–100W) cannot heat. Furthermore, packing damp leaves into the floor or walls turns the shelter into a conductive evaporative cooler.","consequence":"Consequence: Combined conductive and convective heat loss drops core body temperature below 30°C during sleep, causing fatal hypothermia."},"nextProtocolTitle":"Next: PR-01 PROTOCOL #01: How to Drink Dirty Water (Wild Charcoal Filter)"},"es":{"protocolId":"PR-03","category":"SHELTER","title":"Protocolo #03: Construcción de Refugio Térmico A-Frame (Debris Hut)","threatLevel":"CRITICAL","threatLevelText":"[NIVEL DE AMENAZA: CRÍTICO]","summary":"La exposición al frío y la lluvia causa hipotermia mortal en 3 horas. Al apilar hojarasca seca y madera muerta para atrapar aire estancado (Dead Air Space), se construye un refugio sin fuego que conserva el calor metabólico humano (80–100W).","timeRequired":"90–120 MINUTOS","successRate":"92.4% (con ≥60cm de aislamiento)","difficulty":"Nivel 2 (Construcción Primitiva Intensiva)","outputPerHour":"1 Refugio (volumen aislado ≥1.5m³)","materials":[{"id":"mat-01","name":"Viga Cumbrera (Ridge Pole)","desc":"1 tronco recto y seco de madera dura (longitud 3.0–3.5m, diámetro 10–15cm)"},{"id":"mat-02","name":"Soportes en Y y Costillas (Rib Sticks)","desc":"2 horquillas en Y (1.5m, Ø 5–8cm) y 40–50 ramas laterales (1.0–1.5m)"},{"id":"mat-03","name":"Hojarasca Seca Aislante (Dry Debris)","desc":"2–3m³ de hojas secas, agujas de pino, helechos secos y corteza suelta"}],"steps":[{"stepNumber":"01","title":"Erigir Bípode en A y Anclar Viga Cumbrera","description":"Entrelace dos horquillas en Y en la cúspide (o átelas con lianas) y apoye un extremo de la viga cumbrera a 0.8–1.0m de altura. Ancle el extremo opuesto en el suelo hacia el viento (barlovento). El interior debe ser tan estrecho que apenas permita entrar arrastrándose.","actionNote":"> REGLA DE CAMPO: Un volumen excesivo impide calentar el aire con calor corporal. Mantenga espacio de ataúd: solo un puño (≤10cm) alrededor del cuerpo.","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [VOLUMEN INTERIOR]:","Espacio tipo ataúd: máx. +10cm (1 puño) de holgura","WINDWARD (Anclaje Barlovento)","MAIN RIDGEPOLE: 3.0~3.5m (Viga Cumbrera)","Y-BIPOD & VINE LASHING (Unión en Y)","COFFIN CLEARANCE: +10cm (Holgura 1 Puño)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"Colocar Costillas y Colchón Térmico de Suelo","description":"Apoye ramas laterales a 45°–60° a ambos lados de la viga para formar una rejilla cerrada. Cubra inmediatamente el suelo con al menos 40cm de hojas secas para que, al comprimirse con el peso corporal, conserve 15–20cm de espesor aislante.","actionNote":"> PRINCIPIO FÍSICO: La conducción térmica del suelo frío es decenas de veces mayor que la del aire. Sin aislamiento basal, el suelo drena todo el calor corporal.","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [AISLAMIENTO BASAL]:","Bloquear conducción: mantener ≥15~20cm comprimido","RIDGEPOLE SPINE (Sección Cumbrera)","RIB LATTICE: 45°~60° (Costillas)","MATTRESS: 40cm → 20cm (Cama de Hojas)","GROUND COLD CONDUCTION BLOCKED"]},{"stepNumber":"03","title":"Apilar 60–90cm de Hojarasca y Blindaje Cortavientos","description":"Cubra la rejilla con ramitas finas y apile hojas secas desde abajo hacia arriba hasta alcanzar 60–90cm de grosor. Coloque ramas pesadas encima para evitar que el viento vuele el aislamiento y selle la entrada con un tapón denso de hojas.","actionNote":"> PRECAUCIÓN: La hojarasca húmeda no aísla y roba calor por evaporación. Mantenga una pendiente pronunciada para evacuar la lluvia.","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [ESPEC. DE MURO]:","Muro de hojas de 60~90cm + tapón de entrada sellado","DEBRIS WALL: 60~90cm (Capa Aislante)","DEADWOOD ARMOR (Ramas de Peso)","WATER SHEDDING SLOPE (Drenaje)","DEAD AIR CORE & PLUG SEAL (Cámara Sellada)"]}],"fatalMistake":{"title":"Error Mortal: Construir un Interior Amplio y Usar Hojas Húmedas","description":"Hacer el techo alto para sentarse crea una bolsa de aire demasiado grande para los 80–100W del metabolismo humano. Además, mezclar hojas húmedas convierte el refugio en una cámara frigorífica.","consequence":"Consecuencia: La pérdida térmica por conducción y convección reduce la temperatura central bajo 30°C durante el sueño, causando muerte por hipotermia."},"nextProtocolTitle":"Siguiente: PR-01 PROTOCOLO #01: Purificación de Agua Contaminada (Filtro de Carbón)"},"ja":{"protocolId":"PR-03","category":"SHELTER","title":"プロトコル #03: デブリハット(Debris Hut) Aフレーム断熱シェルター構築法","threatLevel":"CRITICAL","threatLevelText":"[危険度: 致命的(CRITICAL)]","summary":"極寒の風雨に晒されると3時間以内に致命的な低体温症に陥る。乾燥した落ち葉と枯れ木を幾何学的に積層して静止空気層(Dead Air Space)を形成し、火気なしで人体の代謝放射熱(80〜100W)のみで内部温度を生存圏に保つ原始シェルターを構築する。","timeRequired":"90〜120分 (90-120 MINUTES)","successRate":"92.4% (断熱厚60cm以上確保時)","difficulty":"等級2 (高強度原始築造技術)","outputPerHour":"1棟完成 (有効断熱容積1.5㎥以上)","materials":[{"id":"mat-01","name":"棟木・リッジポール(Ridge Pole)","desc":"長さ3.0〜3.5m、直径10〜15cmの曲がりのない堅고な乾燥広葉樹丸太 1本"},{"id":"mat-02","name":"Y字支柱および肋木枝(A-Frame & Rib Sticks)","desc":"長さ1.5m・直径5〜8cmのY字支柱2本、および長さ1.0〜1.5mの肋木用枝40〜50本"},{"id":"mat-03","name":"乾燥断熱デブリ(Dry Debris)","desc":"水分を含まない乾燥落葉、松葉、枯れ草、樹皮屑など大量(最低2〜3立方メートル)"}],"steps":[{"stepNumber":"01","title":"Aフレーム支柱の架設と棟木の固定","description":"2本のY字支柱を上端で噛み合わせるか蔓で結束して三角支柱を立て、棟木の一端を交差部に乗せる(高さ0.8〜1.0m)。反対側の端は風上側の地面に密着させる。内部空間は身体が辛うじて潜り込める狭さに制限する。","actionNote":"> 野戦鉄則: 内部容積が広すぎると体温で空気を温められず凍死する。棺(Coffin)のように身体周囲に拳1個分(10cm)の隙間だけを残せ。","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [内部容積規格]:","棺(Coffin)規格厳守: 身体周囲に拳1個(10cm)の余裕のみ","WINDWARD (風上側地面密着)","MAIN RIDGEPOLE: 3.0~3.5m (主棟木)","Y-BIPOD & VINE LASHING (Y字支柱結束)","COFFIN CLEARANCE: +10cm (拳1個分の隙間制限)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"肋木フレーム配置と高密度断熱マットレス敷設","description":"棟木の両側に肋木枝を45〜60度の角度で密に立てかけ、落ち葉が内部に崩れ落ちない格子壁を作る。直ちに床面へ乾いた落ち葉を40cm以上敷き詰め、体重で圧縮されても15〜20cm以上の断熱厚を維持させる。","actionNote":"> 科学的原理: 土壌の熱伝導率は静止空気の数十倍に達する。床断熱がなければ全لا体温が地面へ奪われ短時間で低体温ショックに陥る。","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [床断熱原則]:","地面熱伝導遮断: 圧縮後も最低15~20cm厚を維持","RIDGEPOLE SPINE (中心棟木断面)","RIB LATTICE: 45°~60° (肋木格子壁)","MATTRESS: 40cm → 20cm (落葉寝床)","GROUND COLD CONDUCTION BLOCKED (地面冷気遮断)"]},{"stepNumber":"03","title":"外壁断熱材60〜90cm積層と防風被覆","description":"骨格の上に小枝を薄く被せた後、乾いた落ち葉を下から上へ鱗状に60〜90cm(腕全体の長さ)の厚さで積み上げる。強風で飛ばないよう重い枯れ枝を外壁全体に被せて荷重をかけ、入口は落ち葉の栓で完全密閉する。","actionNote":"> 注意: 濡れた落ち葉は断熱効果がなく気化熱で体温を奪う。外壁の傾斜で雨水を流し、内部は完全な乾燥状態を保て。","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [断熱積層規格]:","外壁60~90cm乾燥落葉積層 + 入口プラグ完全密閉","DEBRIS WALL: 60~90cm (落葉断熱層)","DEADWOOD ARMOR (防風荷重枝)","WATER SHEDDING SLOPE (排水傾斜)","DEAD AIR CORE & PLUG SEAL (静止空気層・入口栓)"]}],"fatalMistake":{"title":"致命的誤認: 快適性のための大型空間確保および湿った落ち葉の使用","description":"座って休めるように天井を高くすると、人間の基礎代謝(約80〜100W)では内部空気を温めきれず体温が急速に奪われる。また湿った落ち葉を混ぜると高い熱容量と気化熱により氷の洞窟のような冷却装置へと変質する。","consequence":"誤判断時の結末: 睡眠中の伝導・対流複合熱損失により深部体温が30°C以下に急降下し、致命的な低体温症(Hypothermia)で死亡。"},"nextProtocolTitle":"次: PR-01 プロトコル #01: 泥水を安全に飲む方法 (野生炭ろ過)"},"pt":{"protocolId":"PR-03","category":"SHELTER","title":"Protocolo #03: Construção de Abrigo Térmico A-Frame (Debris Hut)","threatLevel":"CRITICAL","threatLevelText":"[NÍVEL DE AMEAÇA: CRÍTICO]","summary":"A exposição ao frio e à chuva causa hipotermia fatal em até 3 horas. Ao empilhar folhagem seca e galhos mortos para criar uma camada de ar estagnado (Dead Air Space), constrói-se um abrigo sem fogo que preserva o calor metabólico humano (80–100W).","timeRequired":"90–120 MINUTOS","successRate":"92.4% (com ≥60cm de isolamento)","difficulty":"Nível 2 (Construção Primitiva Pesada)","outputPerHour":"1 Abrigo (volume isolado ≥1.5m³)","materials":[{"id":"mat-01","name":"Viga Mestra (Ridge Pole)","desc":"1 tronco reto e seco de madeira dura (comprimento 3.0–3.5m, Ø 10–15cm)"},{"id":"mat-02","name":"Forquilhas em Y e Costelas (Rib Sticks)","desc":"2 apoios em Y (1.5m, Ø 5–8cm) e 40–50 galhos laterais (1.0–1.5m)"},{"id":"mat-03","name":"Folhagem Seca Isolante (Dry Debris)","desc":"2–3m³ de folhas secas, agulhas de pinheiro, capim seco e cascas"}],"steps":[{"stepNumber":"01","title":"Erguer Bipé em A e Ancorar Viga Mestra","description":"Encaixe duas forquilhas em Y no topo (ou amarre com cipó) e apoie uma ponta da viga mestra a 0.8–1.0m de altura. Fixe a outra extremidade no solo contra o vento (barlavento). O espaço interno deve permitir apenas entrar rastejando.","actionNote":"> REGRA DE CAMPO: Volume interno excessivo impede o aquecimento pelo corpo. Mantenha padrão caixão: apenas um punho (≤10cm) de folga.","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [VOLUME INTERNO]:","Padrão caixão: máx. +10cm (1 punho) de folga corporal","WINDWARD (Fixação Barlavento)","MAIN RIDGEPOLE: 3.0~3.5m (Viga Mestra)","Y-BIPOD & VINE LASHING (Amarração em Y)","COFFIN CLEARANCE: +10cm (Folga Máx. 1 Punho)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"Posicionar Costelas e Colchão Isolante de Piso","description":"Apoie galhos laterais a 45°–60° em ambos os lados da viga formando uma grade densa. Forre imediatamente o chão com pelo menos 40cm de folhas secas para manter 15–20cm de espessura mesmo comprimido pelo peso do corpo.","actionNote":"> PRINCÍPIO FÍSICO: A condução térmica do solo frio é dezenas de vezes maior que a do ar. Sem colchão isolante, o solo drena todo o calor vital.","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [ISOLAMENTO DO PISO]:","Bloquear condução do solo: manter ≥15~20cm comprimido","RIDGEPOLE SPINE (Seção da Viga)","RIB LATTICE: 45°~60° (Grade de Galhos)","MATTRESS: 40cm → 20cm (Colchão de Folhas)","GROUND COLD CONDUCTION BLOCKED"]},{"stepNumber":"03","title":"Empilhar 60–90cm de Folhagem e Blindagem Contra Vento","description":"Cubra a grade com gravetos finos e acumule folhas secas de baixo para cima até 60–90cm de espessura. Coloque galhos pesados por fora para conter rajadas de vento e feche a entrada com um tampão denso de folhas.","actionNote":"> ATENÇÃO: Folhagem úmida não isola e rouba calor por evaporação. Mantenha inclinação externa para escoar a chuva.","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [PAREDE TÉRMICA]:","60~90cm de folhas secas + tampão de entrada vedado","DEBRIS WALL: 60~90cm (Camada Isolante)","DEADWOOD ARMOR (Galhos de Contrapeso)","WATER SHEDDING SLOPE (Escoamento)","DEAD AIR CORE & PLUG SEAL (Câmara Vedada)"]}],"fatalMistake":{"title":"Erro Fatal: Construir Espaço Amplo e Usar Folhas Úmidas","description":"Elevar o teto para sentar cria um bolsão de ar que o metabolismo humano (80–100W) não consegue aquecer. Além disso, folhas úmidas transformam o abrigo em uma câmara de resfriamento.","consequence":"Consequência: Perda térmica por condução e convecção reduz a temperatura central abaixo de 30°C durante o sono, causando morte por hipotermia."},"nextProtocolTitle":"Próximo: PR-01 PROTOCOLO #01: Purificação de Água Selvagem (Filtro de Carvão)"},"zh-TW":{"protocolId":"PR-03","category":"SHELTER","title":"協議 #03：落葉屋（Debris Hut）A字型斷熱避難所構築法","threatLevel":"CRITICAL","threatLevelText":"[威脅等級：致命(CRITICAL)]","summary":"在嚴寒風雨中暴露於野外會在3小時內導致致命失溫。透過幾何堆疊乾燥落葉與枯木形成靜止空氣層（Dead Air Space），無需火源即可僅憑人體代謝輻射熱（80～100W）維持核心體溫。","timeRequired":"90～120分鐘 (90-120 MINUTES)","successRate":"92.4% (確保60cm以上斷熱厚度時)","difficulty":"2級 (高強度原始構築技術)","outputPerHour":"完成1棟 (有效斷熱體積1.5㎥以上)","materials":[{"id":"mat-01","name":"主脊柱木 (Ridge Pole)","desc":"長3.0～3.5m、直徑10～15cm且筆直堅固的乾燥硬木原木1根"},{"id":"mat-02","name":"Y型支撐木與肋骨枝條 (A-Frame & Rib Sticks)","desc":"長1.5m、直徑5～8cm的Y型支撐木2根，以及長1.0～1.5m的肋骨樹枝40～50根"},{"id":"mat-03","name":"乾燥斷熱殘骸 (Dry Debris)","desc":"含水量極低的乾落葉、松針、乾草與碎樹皮等大量材料（至少2～3立方公尺）"}],"steps":[{"stepNumber":"01","title":"架設A字型主腳與錨定主脊柱木","description":"將兩根Y型支撐木在頂端交錯咬合或以藤蔓綁紮成三角支架，將主脊柱木一端架於交點（高約0.8～1.0m），另一端緊貼迎風面地面。內部空間必須嚴格限制在僅容身體爬入的窄度。","actionNote":"> 野戰鐵則：內部體積過大將無法以體溫加熱空氣而凍死。務必遵守棺木規格：身體周圍僅留一個拳頭（≤10cm）的空隙。","svgFileName":"pr03-step-01.svg","svgLabels":["CRITICAL VOLUME RULE [內部體積規格]:","嚴守棺木規格：身體周圍僅留1個拳頭(10cm)裕度","WINDWARD (迎風面地面錨定)","MAIN RIDGEPOLE: 3.0~3.5m (主脊柱木)","Y-BIPOD & VINE LASHING (Y型支撐綁紮)","COFFIN CLEARANCE: +10cm (僅限1拳間隙)","HEIGHT: 0.8~1.0m"]},{"stepNumber":"02","title":"排列肋骨格柵與鋪設高密度地面斷熱床墊","description":"在主脊柱木兩側以45～60度角緊密斜靠肋骨樹枝，形成防止落葉坍塌的格柵牆。完成骨架後立即在地面鋪設至少40cm厚的乾落葉，確保躺下受壓後仍維持15～20cm以上的斷熱厚度。","actionNote":"> 科學原理：冰冷土壤的熱傳導率是靜止空氣的數十倍。若無地面斷熱層，體熱將迅速被大地吸乾並引發失溫休克。","svgFileName":"pr03-step-02.svg","svgLabels":["THERMAL CONDUCTION SHIELD [地面斷熱原則]:","阻斷地面熱傳導：受壓後仍需維持15~20cm厚度","RIDGEPOLE SPINE (主脊柱木斷面)","RIB LATTICE: 45°~60° (肋骨格柵牆)","MATTRESS: 40cm → 20cm (落葉床墊)","GROUND COLD CONDUCTION BLOCKED (阻絕地面寒氣)"]},{"stepNumber":"03","title":"堆疊60～90cm外部斷熱層與防風壓重披覆","description":"在骨架外覆蓋細枝後，由下往上如魚鱗般堆疊60～90cm（整條手臂長度）厚的乾落葉。最後在外牆覆蓋沉重枯枝防止強風吹散落葉，並以高密度落葉塞封死入口。","actionNote":"> 注意：潮濕落葉毫無斷熱效果且會透過蒸發奪走體溫。外牆必須維持陡峭斜度以排出雨水，確保內部乾燥。","svgFileName":"pr03-step-03.svg","svgLabels":["INSULATION & SEALING [斷熱堆疊規格]:","外牆60~90cm乾落葉堆疊 + 入口落葉塞完全密封","DEBRIS WALL: 60~90cm (落葉斷熱層)","DEADWOOD ARMOR (防風壓重外枝)","WATER SHEDDING SLOPE (排水斜面)","DEAD AIR CORE & PLUG SEAL (靜止空氣層與入口塞)"]}],"fatalMistake":{"title":"致命誤判：為求舒適擴大內部空間與混用潮濕落葉","description":"為了能坐起而加高天花板會使內部空氣袋過大，人體基礎代謝（80～100W）無法將其加熱。此外，若混入潮濕落葉，水分的高熱容與蒸發熱將使避難所變成冰窖。","consequence":"誤判後果：睡眠中因傳導與對流複合熱損失，核心體溫驟降至30°C以下，導致致命失溫死亡。"},"nextProtocolTitle":"下一篇： PR-01 協議 #01: 野外受污染水源淨化指南 (活性木炭過濾法)"}};
 
     // 2. State Layer 직렬화 런타임 스크립트 실행
     window.__THEME_CONFIG__ = {"dark":{"label":"야간 전술 모드 [다크]","icon":"◐","bodyBg":"bg-black","bodyText":"text-white"},"light":{"label":"재생지 모드 [라이트]","icon":"☼","bodyBg":"bg-[#f4f3ee]","bodyText":"text-black"}};

@@ -80,9 +80,7 @@ export class ProtocolGeneratorService {
       return { workDir: baseRoot, isServerless: false };
     }
 
-    const workDir = path.join(os.tmpdir(), 'survival-protocol-workspace');
-    fs.rmSync(workDir, { recursive: true, force: true });
-    fs.mkdirSync(workDir, { recursive: true });
+    const workDir = fs.mkdtempSync(path.join(os.tmpdir(), 'survival-ws-'));
 
     const srcContent = path.join(baseRoot, 'content');
     if (fs.existsSync(srcContent)) {
@@ -728,12 +726,12 @@ Aesthetic: Utilitarian Brutalism, Pure Dark Mode (background #131313, cards #1c1
 Fonts: Space Grotesk (title), Chivo (body), JetBrains Mono (labels/code).
 Rules:
 - Strict 100% dark mode only. NO theme switcher button, NO language switcher buttons.
-- Header must strictly have: '[■ 생존 교범] / [분과] > [ID]' on left, '[● OFFLINE READY]' on right.
+- Header must strictly have: '[■ 생존 교범] / [분과] > [ID]' on left, no right-side OFFLINE READY badge.
 - Hero Section: 4-corner brackets, title, summary with left white border, 4-column spec strip (소요 시간 | 생존율 | 난이도 | 시간당 산출).
 - Materials: 3 checkbox items with interactive counter '0/3 SECURED'.
 - Procedure: 3 distinct sequential steps.
 - VITAL REQUIREMENT: Each step MUST include an inline, highly detailed technical monoline vector <svg viewBox="0 0 680 340"> schematic blueprint (FIG. 01, FIG. 02, FIG. 03) illustrating dimensions, force vectors, cutaway profiles, and physical mechanics.
 - Fatal Mistake: High-contrast red container [치명적 경고 // FATAL ERROR] detailing death mechanism.
-- Bottom Sticky Bar: [← 목차] | [💾 야전 오프라인 저장] | [다음 →]`;
+- Bottom Sticky Bar: [← 전체 목차] on left | [다음 프로토콜 →] on right (justify-between, NO offline save or share buttons).`;
   }
 }

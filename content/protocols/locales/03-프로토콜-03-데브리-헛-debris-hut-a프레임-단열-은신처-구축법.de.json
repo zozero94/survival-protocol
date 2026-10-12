@@ -1,0 +1,82 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "Protokoll #03: Laubhütte (Debris Hut) A-Rahmen-Isolationsunterstand",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
+  "summary": "Ungeschützte Kälte- und Nässeexposition führt binnen 3 Stunden zu tödlicher Unterkühlung. Durch geometrisches Schichten von trockenem Laub und Totholz entsteht eine stehende Luftschicht (Dead Air Space), die allein durch 80–100W Körperwärme das Überleben sichert.",
+  "timeRequired": "90–120 MINUTEN",
+  "successRate": "92.4% (bei ≥60cm Isolationsschicht)",
+  "difficulty": "Stufe 2 (Schwerer Primitivbau)",
+  "outputPerHour": "1 Unterstand (≥1.5m³ Isolationsvolumen)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Firstbalken (Ridge Pole)",
+      "desc": "1 gerader, trockener Hartholzstamm (Länge 3.0–3.5m, Ø 10–15cm)"
+    },
+    {
+      "id": "mat-02",
+      "name": "Y-Stützgabeln & Rippenäste (Rib Sticks)",
+      "desc": "2 Y-Stützen (1.5m, Ø 5–8cm) sowie 40–50 Seitenäste (1.0–1.5m)"
+    },
+    {
+      "id": "mat-03",
+      "name": "Trockenes Laub & Waldstreu (Dry Debris)",
+      "desc": "2–3m³ knochentrockenes Laub, Kiefernnadeln, trockenes Gras und Rinde"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "A-Rahmen-Stütze errichten & Firstbalken verankern",
+      "description": "Verschränken Sie zwei Y-Gabelhölzer an der Spitze (oder binden Sie diese mit Ranken) und legen Sie den Firstbalken in 0.8–1.0m Höhe auf. Verankern Sie das hintere Ende direkt auf der Windseite im Boden. Der Innenraum darf nur so breit sein, dass Sie knapp hineinkriechen können.",
+      "actionNote": "> FELDREGEL: Zu großes Innenvolumen verhindert die Erwärmung durch Körperwärme. Striktes Sargmaß einhalten: maximal eine Faustbreit (≤10cm) Abstand.",
+      "svgFileName": "pr03-step-01.svg",
+      "svgLabels": [
+        "CRITICAL VOLUME RULE [INNENVOLUMEN]:",
+        "Striktes Sargmaß: max. +10cm (1 Faust) Körperabstand",
+        "WINDWARD (Windseitiger Anker)",
+        "MAIN RIDGEPOLE: 3.0~3.5m (Firstbalken)",
+        "Y-BIPOD & VINE LASHING (Y-Stützverbindung)",
+        "COFFIN CLEARANCE: +10cm (Max. 1 Faust Spielraum)",
+        "HEIGHT: 0.8~1.0m"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Rippengitter anlegen & Boden-Isoliermatratze verdichten",
+      "description": "Lehnen Sie Rippenäste im 45°–60°-Winkel dicht an beide Seiten des Firstbalkens. Schichten Sie sofort mindestens 40cm trockenes Laub auf den Boden, sodass auch unter Körpergewicht 15–20cm Isolierstärke verbleiben.",
+      "actionNote": "> PHYSIK-PRINZIP: Kalter Boden leitet Wärme dutzendfach schneller ab als Luft. Ohne 15–20cm Bodenisolierung droht rascher Kälteschock.",
+      "svgFileName": "pr03-step-02.svg",
+      "svgLabels": [
+        "THERMAL CONDUCTION SHIELD [BODENISOLIERUNG]:",
+        "Bodenkälte blockieren: ≥15~20cm komprimierte Matte",
+        "RIDGEPOLE SPINE (Firstbalken-Schnitt)",
+        "RIB LATTICE: 45°~60° (Rippengitter)",
+        "MATTRESS: 40cm → 20cm (Laubmatratze)",
+        "GROUND COLD CONDUCTION BLOCKED"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "60–90cm Außenisolierung & Sturmsicherung",
+      "description": "Decken Sie das Gitter mit Reisig ab und schichten Sie trockenes Laub von unten nach oben 60–90cm (Armlänge) dick auf. Beschweren Sie die Hülle mit schweren Totholzästen gegen Wind und verschließen Sie den Eingang mit einem Laubpfropfen.",
+      "actionNote": "> WARNUNG: Nasses Laub isoliert nicht und entzieht Wärme durch Verdunstung. Steile Außenneigung zur Regenabweisung beibehalten.",
+      "svgFileName": "pr03-step-03.svg",
+      "svgLabels": [
+        "INSULATION & SEALING [WANDAUFBAU]:",
+        "60~90cm trockene Laubschicht + Eingangspfropfen",
+        "DEBRIS WALL: 60~90cm (Laubdämmung)",
+        "DEADWOOD ARMOR (Windschutz-Äste)",
+        "WATER SHEDDING SLOPE (Regenablauf)",
+        "DEAD AIR CORE & PLUG SEAL (Thermokammer)"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Zu großer Innenraum & feuchtes Laub",
+    "description": "Ein hoher Innenraum zum Sitzen kann durch 80–100W menschliche Stoffwechselwärme nicht erwärmt werden. Feuchtes Laub verwandelt den Unterstand zudem in eine tödliche Kühlkammer.",
+    "consequence": "Folge: Wärmeverlust durch Leitung und Konvektion senkt die Kerntemperatur im Schlaf unter 30°C – Tod durch Unterkühlung."
+  }
+}

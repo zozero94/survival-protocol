@@ -1,6 +1,10 @@
 import { TelegramBotService, WebhookContextService, ProtocolGeneratorService } from '../dist/services/index.js';
 import { ensureContentAvailable } from '../dist/content-bundle.js';
 
+// Telegram 웹훅 중복 재전송(Retry)으로 인한 이중 실행 방지 캐시
+const processedUpdateIds = new Set();
+const MAX_TRACKED_UPDATES = 200;
+
 /**
  * [Vercel Cloud Serverless Function]
  * POST /api/telegram - 24/7 무중단 텔레그램 봇 웹훅 엔드포인트
@@ -67,6 +71,18 @@ export default async function handler(req, res) {
 
     if (!update || typeof update !== 'object') {
       return res.status(200).json({ ok: true, skipped: true });
+    }
+
+    // 4-1. 동일 update_id 중복 실행 원천 차단 (Idempotency Guard)
+    if (typeof update.update_id === 'number') {
+      if (processedUpdateIds.has(update.update_id)) {
+        return res.status(200).json({ ok: true, deduplicated: true });
+      }
+      processedUpdateIds.add(update.update_id);
+      if (processedUpdateIds.size > MAX_TRACKED_UPDATES) {
+        const oldest = processedUpdateIds.values().next().value;
+        if (oldest !== undefined) processedUpdateIds.delete(oldest);
+      }
     }
 
     // 5. 봇 서비스 실행 및 업데이트 처리
