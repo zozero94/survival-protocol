@@ -7,7 +7,8 @@ try {
 /**
  * 구글 공식 REST API 기반 경량 제미나이 클라이언트
  * 외부 무거운 SDK 의존성 없이 순수 Node.js native fetch로 초고속 동작
- * 특정 모델(예: gemini-3.8-flash)이 503 과부하 상태일 때 즉시 가용 플래시 모델로 자동 폴백
+ * 하위 버전 모델로 절대 다운그레이드하지 않고, 지정된 최신 모델(gemini-3.8-flash)만 사용하며
+ * 일시적 503(수요 급증)/429 발생 시 동일 최신 모델로 지수 백오프(Exponential Backoff) 재시도 수행
  */
 export async function callGeminiApi(
   apiKey        ,
@@ -18,11 +19,10 @@ export async function callGeminiApi(
                          
                               
                        
+                        
     = {}
 )                  {
-  const candidates = Array.from(
-    new Set([model, 'gemini-3.5-flash', 'gemini-3.8-flash', 'gemini-3.6-flash'])
-  );
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
   const body      = {
     contents: [
@@ -43,11 +43,11 @@ export async function callGeminiApi(
     };
   }
 
+  const maxAttempts = Math.max(1, Math.min(options.maxRetries ?? 3, 4));
+  const perAttemptTimeout = options.timeoutMs ?? 30000;
   let lastError               = null;
-  const perAttemptTimeout = Math.min(options.timeoutMs ?? 25000, 25000);
 
-  for (const candidateModel of candidates) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${candidateModel}:generateContent?key=${apiKey}`;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -58,9 +58,10 @@ export async function callGeminiApi(
 
       if (!response.ok) {
         const errorText = await response.text();
-        lastError = new Error(`[Gemini API Error ${response.status} (${candidateModel})]: ${errorText}`);
-        // 503(과부하), 429(쿼터), 404(모델 변경) 시 다음 폴백 모델 시도
-        if (response.status === 503 || response.status === 429 || response.status === 404) {
+        lastError = new Error(`[Gemini API Error ${response.status} (${model})]: ${errorText}`);
+        if ((response.status === 503 || response.status === 429) && attempt < maxAttempts) {
+          const delayMs = 800 * Math.pow(2, attempt - 1);
+          await new Promise((res) => setTimeout(res, delayMs));
           continue;
         }
         throw lastError;
@@ -71,19 +72,25 @@ export async function callGeminiApi(
       const text = candidate?.content?.parts?.[0]?.text;
 
       if (!text) {
-        lastError = new Error(`Gemini API(${candidateModel})로부터 유효한 텍스트 응답을 받지 못했습니다.`);
-        continue;
+        throw new Error(`Gemini API(${model})로부터 유효한 텍스트 응답을 받지 못했습니다.`);
       }
 
       return text;
     } catch (err     ) {
       lastError = err instanceof Error ? err : new Error(String(err));
-      if (err?.name === 'TimeoutError' || err?.name === 'AbortError' || String(err).includes('503')) {
+      const isTransient =
+        err?.name === 'TimeoutError' ||
+        err?.name === 'AbortError' ||
+        String(err).includes('503') ||
+        String(err).includes('429');
+      if (isTransient && attempt < maxAttempts) {
+        const delayMs = 800 * Math.pow(2, attempt - 1);
+        await new Promise((res) => setTimeout(res, delayMs));
         continue;
       }
       throw lastError;
     }
   }
 
-  throw lastError || new Error('Gemini API 호출에 실패했습니다.');
+  throw lastError || new Error(`Gemini API(${model}) 호출에 실패했습니다.`);
 }
