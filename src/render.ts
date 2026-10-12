@@ -84,6 +84,7 @@ export function renderCanonicalProtocolPage(
   <meta name="description" content="${master.summary}">
   <meta name="theme-color" content="${SITE_META.themeColor}">
   <link rel="canonical" href="${SITE_META.siteUrl}/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}">
+  ${SeoService.renderHreflangTags(`/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}`)}
   <link rel="manifest" href="${PWA_PATHS.manifest}">
   <link rel="icon" type="image/svg+xml" href="${PWA_PATHS.icon}">
 

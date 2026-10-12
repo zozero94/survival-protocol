@@ -9,6 +9,11 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://survival-protocol.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://survival-protocol.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://survival-protocol.com/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://survival-protocol.com/?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://survival-protocol.com/"/>
   </url>
   <url>
     <loc>https://survival-protocol.com/protocol-01</loc>
@@ -18,6 +23,11 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-01?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-01?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-01?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://survival-protocol.com/protocol-01?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://survival-protocol.com/protocol-01?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://survival-protocol.com/protocol-01?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://survival-protocol.com/protocol-01?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://survival-protocol.com/protocol-01"/>
   </url>
   <url>
     <loc>https://survival-protocol.com/protocol-02</loc>
@@ -27,6 +37,11 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-02?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-02?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-02?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://survival-protocol.com/protocol-02?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://survival-protocol.com/protocol-02?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://survival-protocol.com/protocol-02?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://survival-protocol.com/protocol-02?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://survival-protocol.com/protocol-02"/>
   </url>
   <url>
     <loc>https://survival-protocol.com/protocol-03</loc>
@@ -36,5 +51,10 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-03?lang=ko"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-03?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-03?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://survival-protocol.com/protocol-03?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://survival-protocol.com/protocol-03?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://survival-protocol.com/protocol-03?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://survival-protocol.com/protocol-03?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://survival-protocol.com/protocol-03"/>
   </url>
 </urlset>

@@ -23,6 +23,11 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
     assert.ok(sitemap.includes('hreflang="ko"'));
     assert.ok(sitemap.includes('hreflang="en"'));
     assert.ok(sitemap.includes('hreflang="ja"'));
+    assert.ok(sitemap.includes('hreflang="es"'));
+    assert.ok(sitemap.includes('hreflang="de"'));
+    assert.ok(sitemap.includes('hreflang="pt"'));
+    assert.ok(sitemap.includes('hreflang="zh-TW"'));
+    assert.ok(sitemap.includes('hreflang="x-default"'));
   });
 
   it('robots.txt는 모든 봇을 허용하고 사이트맵 경로를 정확히 지시해야 한다', () => {

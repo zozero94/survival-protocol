@@ -1,5 +1,6 @@
 import type { Protocol } from '../types/index.ts';
 import { SITE_META, ADSENSE_CONFIG, SEO_CONFIG } from '../site.config.ts';
+import { SUPPORTED_LOCALES } from '../i18n/locales.ts';
 
 /**
  * [Service Layer]
@@ -7,10 +8,31 @@ import { SITE_META, ADSENSE_CONFIG, SEO_CONFIG } from '../site.config.ts';
  */
 export class SeoService {
   /**
-   * Google / Naver / Bing 표준 XML 사이트맵 생성 (다국어 hreflang 포함)
+   * 특정 경로에 대한 7개국어 + x-default HTML <link rel="alternate" hreflang="..."> 태그 생성
+   */
+  public static renderHreflangTags(pagePath: string = '/'): string {
+    const cleanPath = pagePath.startsWith('/') ? pagePath : `/${pagePath}`;
+    const fullUrl = `${SITE_META.siteUrl}${cleanPath}`;
+    const links = Object.keys(SUPPORTED_LOCALES).map(
+      (lang) => `<link rel="alternate" hreflang="${lang}" href="${fullUrl}?lang=${lang}">`
+    );
+    links.push(`<link rel="alternate" hreflang="x-default" href="${fullUrl}">`);
+    return links.join('\n  ');
+  }
+
+  /**
+   * Google / Naver / Bing 표준 XML 사이트맵 생성 (7개국어 hreflang + x-default 포함)
    */
   public static generateSitemap(protocols: Protocol[], siteUrl: string = SITE_META.siteUrl): string {
     const today = new Date().toISOString().split('T')[0];
+
+    const buildAlternates = (targetUrl: string) => {
+      const lines = Object.keys(SUPPORTED_LOCALES).map(
+        (lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${targetUrl}?lang=${lang}"/>`
+      );
+      lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${targetUrl}"/>`);
+      return lines.join('\n');
+    };
 
     const entries: string[] = [
       `  <url>
@@ -18,9 +40,7 @@ export class SeoService {
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="${siteUrl}/?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${siteUrl}/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="${siteUrl}/?lang=ja"/>
+${buildAlternates(`${siteUrl}/`)}
   </url>`,
     ];
 
@@ -32,9 +52,7 @@ export class SeoService {
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="${pagePath}?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${pagePath}?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="${pagePath}?lang=ja"/>
+${buildAlternates(pagePath)}
   </url>`);
     }
 

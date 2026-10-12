@@ -62,6 +62,7 @@ export function renderIndexPage(
   <meta name="description" content="${SITE_META.description}">
   <meta name="theme-color" content="${SITE_META.themeColor}">
   <link rel="canonical" href="${SITE_META.siteUrl}/">
+  ${SeoService.renderHreflangTags('/')}
   <link rel="manifest" href="${PWA_PATHS.manifest}">
   <link rel="icon" type="image/svg+xml" href="${PWA_PATHS.icon}">
 

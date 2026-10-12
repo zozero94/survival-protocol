@@ -80,19 +80,21 @@ export const EMBEDDED_CONTENT = ${JSON.stringify(embeddedFiles)};
 
 export function ensureContentAvailable() {
   const defaultProtocolsDir = path.join(projectRoot, 'content/protocols');
-  if (fs.existsSync(defaultProtocolsDir) && fs.readdirSync(defaultProtocolsDir).some(f => f.endsWith('.json'))) {
+  const defaultLocalesDir = path.join(projectRoot, 'content/protocols/locales');
+  if (
+    fs.existsSync(defaultProtocolsDir) &&
+    fs.readdirSync(defaultProtocolsDir).some((f) => f.endsWith('.json')) &&
+    fs.existsSync(defaultLocalesDir) &&
+    fs.readdirSync(defaultLocalesDir).some((f) => f.endsWith('.es.json'))
+  ) {
     return projectRoot;
   }
 
   const fallbackRoot = path.join(os.tmpdir(), 'survival-bundled-root');
-  const markerFile = path.join(fallbackRoot, '.hydrated');
-  if (!fs.existsSync(markerFile)) {
-    for (const [relPath, content] of Object.entries(EMBEDDED_CONTENT)) {
-      const targetPath = path.join(fallbackRoot, relPath);
-      fs.mkdirSync(path.dirname(targetPath), { recursive: true });
-      fs.writeFileSync(targetPath, content, 'utf-8');
-    }
-    fs.writeFileSync(markerFile, String(Date.now()), 'utf-8');
+  for (const [relPath, content] of Object.entries(EMBEDDED_CONTENT)) {
+    const targetPath = path.join(fallbackRoot, relPath);
+    fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+    fs.writeFileSync(targetPath, content, 'utf-8');
   }
   process.env.SURVIVAL_ROOT_DIR = fallbackRoot;
   return fallbackRoot;
