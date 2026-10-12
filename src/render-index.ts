@@ -58,7 +58,7 @@ export function renderIndexPage(
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
-  <title>${SITE_META.name} // [생존 교범 // SURVIVAL PROTOCOL]</title>
+  <title data-i18n="feedHeaderTitle">${SITE_META.name} // [생존 교범 // SURVIVAL PROTOCOL]</title>
   <meta name="description" content="${SITE_META.description}">
   <meta name="theme-color" content="${SITE_META.themeColor}">
   <link rel="canonical" href="${SITE_META.siteUrl}/">

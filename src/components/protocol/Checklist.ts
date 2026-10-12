@@ -35,7 +35,7 @@ export function renderChecklist(materials: Material[]): string {
       0/${materials.length} SECURED
     </span>
   </div>
-  <p class="text-[11px] text-[#888] mb-3 leading-normal font-sans">
+  <p id="ui-checklist-desc" data-i18n="checklistDesc" class="text-[11px] text-[#888] mb-3 leading-normal font-sans">
     야전에서 확보 가능한 천연 대체재입니다. 준비된 요소를 터치하여 수집 상태를 기록하십시오.
   </p>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 font-mono text-xs">

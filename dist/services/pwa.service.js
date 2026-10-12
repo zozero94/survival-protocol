@@ -5,7 +5,7 @@ import { SITE_META, PWA_PATHS } from '../site.config.js';
  * 서비스 워커 로직이 바뀌면 이 값을 올린다. 캐시 버전 해시에 포함되어
  * 콘텐츠가 그대로여도 기존 방문자의 캐시가 새 로직으로 교체된다.
  */
-export const SW_TEMPLATE_REVISION = 1;
+export const SW_TEMPLATE_REVISION = 2;
 
                                 
                                                             
@@ -43,7 +43,7 @@ export class PwaService {
 
   /**
    * 캐시 전략
-   * - 페이지 이동(navigate): 캐시 즉시 응답 + 백그라운드 갱신(stale-while-revalidate).
+   * - 페이지 이동(navigate): 온라인 시 최신 서버 응답 우선(Network-First) + 오프라인 시 로컬 캐시 즉시 폴백.
    *   ?lang= 등 쿼리는 클라이언트 상태이므로 캐시 키에서 제거한다.
    * - 같은 출처 정적 자원: cache-first (버전 해시로 무효화되므로 안전).
    * - 외부 CDN/폰트: stale-while-revalidate, opaque 응답 허용.
@@ -125,15 +125,13 @@ self.addEventListener('fetch', (event) => {
 
   if (request.mode === 'navigate') {
     const key = url.origin + url.pathname;
-    const networkPromise = cachePromise
-      .then((cache) => fetchAndStore(cache, key, request))
-      .catch(() => null);
-    event.waitUntil(networkPromise);
     event.respondWith(cachePromise.then(async (cache) => {
+      try {
+        const fresh = await fetchAndStore(cache, key, request);
+        if (fresh) return fresh;
+      } catch (error) {}
       const cached = await matchNavigation(cache, url);
       if (cached) return cached;
-      const fresh = await networkPromise;
-      if (fresh) return fresh;
       return (await cache.match(toAbsolute(NAVIGATION_FALLBACK))) || offlineResponse();
     }));
     return;

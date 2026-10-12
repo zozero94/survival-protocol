@@ -13,6 +13,7 @@ export interface UiStrings {
   difficulty: string;
   outputPerHour: string;
   checklistTitle: string;
+  checklistDesc: string;
   itemsSecured: string;
   fieldTested: string;
   procedureTitle: string;
@@ -65,6 +66,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: '기술 난이도',
     outputPerHour: '시간당 생산량',
     checklistTitle: '필수 확보 물자 체크리스트 (즉시 수집할 것)',
+    checklistDesc: '야전에서 확보 가능한 천연 대체재입니다. 준비된 요소를 터치하여 수집 상태를 기록하십시오.',
     itemsSecured: '확보 완료',
     fieldTested: '[야전 검증 완료]',
     procedureTitle: '// 실행 절차 표준 (PROCEDURE)',
@@ -116,6 +118,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: 'Skill Level',
     outputPerHour: 'Output / Hour',
     checklistTitle: 'Essential Materials Checklist (Gather Immediately)',
+    checklistDesc: 'Natural field-foraged materials. Tap each item to record your collection status.',
     itemsSecured: 'Secured',
     fieldTested: '[FIELD VERIFIED]',
     procedureTitle: '// EXECUTION PROCEDURE (FIELD MANUAL)',
@@ -167,6 +170,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: '技術難易度',
     outputPerHour: '時間あたり生産量',
     checklistTitle: '必須確保物資チェックリスト (直ちに収集せよ)',
+    checklistDesc: '野戦で確保可能な天然代替資材です。準備できた項目をタップして収集状況を記録してください。',
     itemsSecured: '確保完了',
     fieldTested: '[実戦検証完了]',
     procedureTitle: '// 実行手順標準 (PROCEDURE)',
@@ -218,6 +222,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: 'Dificultad',
     outputPerHour: 'Producción / Hora',
     checklistTitle: 'Lista de Materiales Esenciales (Recoger de Inmediato)',
+    checklistDesc: 'Materiales naturales recolectables en campo. Toque cada elemento para registrar su estado de recolección.',
     itemsSecured: 'Asegurados',
     fieldTested: '[PROBADO EN CAMPO]',
     procedureTitle: '// PROCEDIMIENTO DE EJECUCIÓN (PROCEDURE)',
@@ -269,6 +274,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: 'Schwierigkeitsgrad',
     outputPerHour: 'Leistung / Stunde',
     checklistTitle: 'Material-Checkliste (Sofort sammeln)',
+    checklistDesc: 'Im Feld verfügbare Naturmaterialien. Tippen Sie auf jedes Element, um den Sammelstatus zu protokollieren.',
     itemsSecured: 'Gesichert',
     fieldTested: '[FELDERPROBT]',
     procedureTitle: '// AUSFÜHRUNGSVERFAHREN (PROCEDURE)',
@@ -320,6 +326,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: 'Dificuldade',
     outputPerHour: 'Produção / Hora',
     checklistTitle: 'Checklist de Materiais Esenciais (Coletar Imediatamente)',
+    checklistDesc: 'Materiais naturais disponíveis em campo. Toque em cada item para registrar seu status de coleta.',
     itemsSecured: 'Garantidos',
     fieldTested: '[TESTADO EM CAMPO]',
     procedureTitle: '// PROCEDIMENTO DE EXECUÇÃO (PROCEDURE)',
@@ -371,6 +378,7 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     difficulty: '技術難度',
     outputPerHour: '每小時產量',
     checklistTitle: '必備物資清單（立即收集）',
+    checklistDesc: '野戰環境中可取得的天然替代物資。請點擊已備妥的項目以記錄收集狀態。',
     itemsSecured: '已確保',
     fieldTested: '[實戰檢驗完成]',
     procedureTitle: '// 執行程序標準 (PROCEDURE)',

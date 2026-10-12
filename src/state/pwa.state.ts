@@ -22,9 +22,20 @@ export function getPwaRuntimeScript(): string {
         root.setAttribute('data-offline-ready', 'unsupported');
         return;
       }
+      var hadController = Boolean(navigator.serviceWorker.controller);
+      var refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (hadController && !refreshing) {
+          refreshing = true;
+          window.location.reload();
+        }
+      });
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('${PWA_PATHS.serviceWorker}')
-          .then(function () { return navigator.serviceWorker.ready; })
+        navigator.serviceWorker.register('${PWA_PATHS.serviceWorker}', { updateViaCache: 'none' })
+          .then(function (reg) {
+            try { reg.update(); } catch (e) {}
+            return navigator.serviceWorker.ready;
+          })
           .then(function () { root.setAttribute('data-offline-ready', 'true'); })
           .catch(function () { root.setAttribute('data-offline-ready', 'false'); });
       });
