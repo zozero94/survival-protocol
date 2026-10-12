@@ -39,11 +39,20 @@ export function getLocaleRuntimeScript(): string {
           if (ui[key] !== undefined) el.innerText = ui[key];
         });
 
-        // 2. [선언적 엔진] 프로토콜 단일 필드 자동 매핑 (data-proto)
+        // 2. [선언적 엔진] 프로토콜 단일 필드 자동 매핑 (data-proto) 및 브라우저 탭 <title> 갱신
         document.querySelectorAll('[data-proto]').forEach(function(el) {
           var field = el.getAttribute('data-proto');
-          if (proto[field] !== undefined) el.innerText = proto[field];
+          if (proto[field] !== undefined) {
+            if (el.tagName === 'TITLE') {
+              el.textContent = (ui.brandShort || '[SURVIVAL PROTOCOL]') + ' // ' + proto[field];
+            } else {
+              el.innerText = proto[field];
+            }
+          }
         });
+        if (proto.title) {
+          document.title = (ui.brandShort || '[SURVIVAL PROTOCOL]') + ' // ' + proto.title;
+        }
 
         // 3. [선언적 엔진] 배열 반복 아이템 범용 자동 매핑 (data-proto-item, data-proto-prop, data-index)
         document.querySelectorAll('[data-proto-item]').forEach(function(el) {
@@ -85,10 +94,16 @@ export function getLocaleRuntimeScript(): string {
             : 'px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white';
         });
 
-        // 6. 체크리스트 카운터 실시간 재연산
+        // 7. 체크리스트 카운터 실시간 재연산
         if (typeof updateChecklist === 'function') updateChecklist();
 
-        // 7. URL 파라미터 무새로고침 동기화
+        // 8. 내부 네비게이션 링크(메인 복귀, 다음 프로토콜) 언어 파라미터 동기화
+        document.querySelectorAll('a[href^="/"]').forEach(function(link) {
+          var baseHref = link.getAttribute('href').split('?')[0];
+          link.setAttribute('href', targetLocale === 'ko' ? baseHref : (baseHref + '?lang=' + targetLocale));
+        });
+
+        // 9. URL 파라미터 무새로고침 동기화
         if (window.history && window.history.replaceState) {
           var newUrl = window.location.pathname + '?lang=' + targetLocale;
           window.history.replaceState(null, '', newUrl);

@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { CONFIG } from './config.ts';
 import type { Protocol } from './types/index.ts';
 import type { SupportedLocale } from './i18n/locales.ts';
+import { UI_STRINGS } from './i18n/ui-strings.ts';
 import { renderCanonicalProtocolPage } from './render.ts';
 import { renderIndexPage } from './render-index.ts';
 import { ShortsService, TopicCuratorService, PwaService, SeoService } from './services/index.ts';
@@ -82,8 +83,23 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
   const publicDir = path.join(root, 'public');
   fs.mkdirSync(publicDir, { recursive: true });
 
-  // 3-1. 메인 인덱스 대문 피드 컴파일 (5개 카드 단위 페이징)
-  const indexHtml = renderIndexPage(allMasterProtocols);
+  // 프로토콜별 7개국어 맵 사전 구성 (메인 피드 & 상세 페이지 공통 SSOT)
+  const localesByProtocolId: Record<string, Partial<Record<SupportedLocale, Protocol>>> = {};
+  for (const proto of allMasterProtocols) {
+    const num = proto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
+    const pMap: Partial<Record<SupportedLocale, Protocol>> = { ko: JSON.parse(JSON.stringify(proto)) };
+    for (const [baseKey, langObj] of Object.entries(localesCache)) {
+      if (baseKey.startsWith(num) || baseKey.includes(proto.protocolId.toLowerCase())) {
+        for (const [lKey, lProto] of Object.entries(langObj)) {
+          pMap[lKey as SupportedLocale] = JSON.parse(JSON.stringify(lProto));
+        }
+      }
+    }
+    localesByProtocolId[proto.protocolId] = pMap;
+  }
+
+  // 3-1. 메인 인덱스 대문 피드 컴파일 (5개 카드 단위 페이징 + 7개국어 무새로고침 핫스왑)
+  const indexHtml = renderIndexPage(allMasterProtocols, localesByProtocolId);
   fs.writeFileSync(path.join(publicDir, 'index.html'), indexHtml, 'utf-8');
   log(`📑 [3/4 Presentational] 메인 인덱스 피드 컴파일 완료 (총 ${allMasterProtocols.length}편, 5개 페이징 탑재): public/index.html`);
 
@@ -98,21 +114,25 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
     const proto = allMasterProtocols[i];
     const num = proto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
     const fileName = `protocol-${num}.html`;
-    const pMap: Partial<Record<SupportedLocale, Protocol>> = { ko: proto };
+    const pMap = localesByProtocolId[proto.protocolId] || { ko: proto };
 
-    // 프로토콜 넘버링 또는 ID에 일치하는 다국어 번역본 동적 결합
-    for (const [baseKey, langObj] of Object.entries(localesCache)) {
-      if (baseKey.startsWith(num) || baseKey.includes(proto.protocolId.toLowerCase())) {
-        Object.assign(pMap, langObj);
+    const nextProto = allMasterProtocols[(i + 1) % allMasterProtocols.length];
+    const nextNum = nextProto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
+    const nextHref = `/protocol-${nextNum}`;
+
+    if (allMasterProtocols.length > 1) {
+      const nextMap = localesByProtocolId[nextProto.protocolId] || { ko: nextProto };
+      for (const [langCode, langProto] of Object.entries(pMap)) {
+        if (!langProto) continue;
+        const lang = langCode as SupportedLocale;
+        const localizedNext = nextMap[lang] || nextProto;
+        const nextPrefix = UI_STRINGS[lang]?.nextProtocol || 'Next:';
+        langProto.nextProtocolTitle = `${nextPrefix} ${localizedNext.protocolId} ${localizedNext.title}`;
       }
     }
 
-    const nextProto = allMasterProtocols[(i + 1) % allMasterProtocols.length];
-    const nextTitle = allMasterProtocols.length > 1
-      ? `다음: ${nextProto.protocolId} ${nextProto.title}`
-      : undefined;
-
-    const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko', nextTitle);
+    const nextTitleKo = pMap.ko?.nextProtocolTitle;
+    const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko', nextTitleKo, nextHref);
     fs.writeFileSync(path.join(publicDir, fileName), html, 'utf-8');
     precacheEntries.push({ url: `/${fileName}`, content: html });
     precacheEntries.push({ url: `/protocol-${num}`, content: html });

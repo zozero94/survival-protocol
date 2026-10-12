@@ -1,6 +1,6 @@
 /**
  * [Presentational Component]
- * 5개 단위 페이징(Pagination) 네비게이션 컴포넌트 (Stitch 디자인 1:1 완벽 이식)
+ * 5개 단위 페이징(Pagination) 네비게이션 컴포넌트 (Stitch 디자인 1:1 완벽 이식 + 7개국어 data-i18n 바인딩)
  * [←] [01] [02] [→] 버튼 매트릭스 + "기록 1 - 5 / 총 N건" 메타데이터 레이블
  */
 export function renderPagination(currentPage        , totalPages        , totalItems         = 6)         {
@@ -11,7 +11,7 @@ export function renderPagination(currentPage        , totalPages        , totalI
     <button type="button" class="px-3 py-1.5 bg-white text-black font-bold border border-white">01</button>
   </div>
   <div id="pagination-summary-label" class="text-neutral-500">
-    기록 1 - ${totalItems} / 총 ${totalItems}건
+    <span data-i18n="paginationRecordPrefix">기록</span> <span id="pagination-range-label" class="text-neutral-300 font-bold">1 - ${totalItems}</span> <span data-i18n="paginationTotalPrefix">/ 총</span> <span id="pagination-total-items-label" class="text-neutral-300 font-bold">${totalItems}</span><span data-i18n="paginationTotalSuffix">건</span>
   </div>
 </section>
     `.trim();
@@ -77,7 +77,7 @@ export function renderPagination(currentPage        , totalPages        , totalI
   </div>
 
   <div id="pagination-summary-label" class="text-neutral-500 font-mono text-xs">
-    기록 <span id="pagination-range-label" class="text-neutral-300 font-bold">${startIdx} - ${endIdx}</span> / 총 <span id="pagination-total-items-label" class="text-neutral-300 font-bold">${totalItems}</span>건
+    <span data-i18n="paginationRecordPrefix">기록</span> <span id="pagination-range-label" class="text-neutral-300 font-bold">${startIdx} - ${endIdx}</span> <span data-i18n="paginationTotalPrefix">/ 총</span> <span id="pagination-total-items-label" class="text-neutral-300 font-bold">${totalItems}</span><span data-i18n="paginationTotalSuffix">건</span>
   </div>
 </section>
   `.trim();

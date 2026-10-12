@@ -28,7 +28,8 @@ export function renderCanonicalProtocolPage(
   protocolsMap                                            ,
   svgsMap                         = {},
   defaultLocale                  = 'ko',
-  nextProtocolTitle         
+  nextProtocolTitle         ,
+  nextProtocolHref         = '/'
 )         {
   const master = protocolsMap[defaultLocale] || Object.values(protocolsMap)[0];
   if (!master) {
@@ -67,7 +68,7 @@ export function renderCanonicalProtocolPage(
   const checklistHtml = renderChecklist(master.materials);
   const stepCardsHtml = renderStepCards(master.steps, svgsMap);
   const fatalHtml = renderFatalWarning(master.fatalMistake);
-  const actionHtml = renderStickyActionBar(nextProtocolTitle);
+  const actionHtml = renderStickyActionBar(nextProtocolTitle || master.nextProtocolTitle, nextProtocolHref);
 
   const themeScript = getThemeRuntimeScript();
   const checklistScript = getChecklistRuntimeScript();
@@ -163,7 +164,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   </style>
 </head>
 <body class="bg-[#131313] text-[#F5F5F5] min-h-screen selection:bg-white selection:text-black antialiased flex flex-col justify-between pb-24">
-  <div id="offline-banner" class="bg-red-950/90 border-b-2 border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
+  <div id="offline-banner" data-i18n="offlineBanner" class="bg-red-950/90 border-b-2 border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
     ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
   </div>
   ${headerHtml}
@@ -247,17 +248,24 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
       setTimeout(function() { toast.classList.add('hidden'); }, 2500);
     }
 
+    function getActiveUiStrings() {
+      var activeLang = document.documentElement.lang || '${defaultLocale}';
+      return (window.__UI_STRINGS__ && window.__UI_STRINGS__[activeLang]) || (window.__UI_STRINGS__ && window.__UI_STRINGS__['ko']) || {};
+    }
+
     function saveOfflineManual() {
-      showToast('오프라인 프로토콜이 다운로드됩니다 (A4/PDF).');
+      var ui = getActiveUiStrings();
+      showToast(ui.toastOfflineSaved || 'Downloading offline manual (A4/PDF).');
       window.print();
     }
 
     function shareProtocol() {
+      var ui = getActiveUiStrings();
       if (navigator.clipboard) {
         navigator.clipboard.writeText(window.location.href);
-        showToast('프로토콜 링크가 클립보드에 복사되었습니다.');
+        showToast(ui.toastCopied || 'Protocol link copied to clipboard.');
       } else {
-        showToast('비상 채널로 프로토콜이 공유되었습니다.');
+        showToast(ui.toastCopied || 'Protocol link copied to clipboard.');
       }
     }
   </script>

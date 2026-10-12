@@ -41,4 +41,5 @@ export interface Protocol {
   materials: Material[];
   steps: ProtocolStep[];
   fatalMistake: FatalMistake;
+  nextProtocolTitle?: string;
 }

@@ -3,9 +3,9 @@
  * 하단 고정 액션 바 컴포넌트 (Stitch Tactical Sticky Bottom Bar)
  * 선언적 data-i18n 및 data-action 100% 보존
  */
-export function renderStickyActionBar(nextProtocolTitle?: string): string {
+export function renderStickyActionBar(nextProtocolTitle?: string, nextProtocolHref: string = '/'): string {
   const nextBtn = nextProtocolTitle
-    ? `<a id="ui-next-link" data-proto-action="next-protocol" class="py-2 px-3 bg-white text-black font-bold border border-white hover:bg-[#eee] transition-colors flex items-center gap-1 text-[11px] shrink-0" href="#">
+    ? `<a id="ui-next-link" data-proto-action="next-protocol" class="py-2 px-3 bg-white text-black font-bold border border-white hover:bg-[#eee] transition-colors flex items-center gap-1 text-[11px] shrink-0" href="${nextProtocolHref}">
         <span id="ui-next-text" data-proto="nextProtocolTitle">${nextProtocolTitle}</span>
         <span>→</span>
        </a>`

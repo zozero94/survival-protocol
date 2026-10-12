@@ -20,7 +20,7 @@ const DEFAULT_SVGS: Record<ProtocolCategory, string> = {
 
 /**
  * [Presentational Component]
- * 단일 프로토콜 피드 카드 컴포넌트 (Stitch 디자인 1:1 완벽 이식)
+ * 단일 프로토콜 피드 카드 컴포넌트 (Stitch 디자인 1:1 완벽 이식 + 7개국어 선언적 바인딩)
  * 40×40 정밀 인라인 벡터 도면 + 헤더 레일 + 재료 칩 + 직관적 제목
  */
 export function renderProtocolCard(protocol: Protocol): string {
@@ -29,17 +29,17 @@ export function renderProtocolCard(protocol: Protocol): string {
 
   const threatBadge =
     protocol.threatLevel === 'CRITICAL'
-      ? '<span class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>'
+      ? `<span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[치명적]</span>`
       : protocol.threatLevel === 'HIGH'
-      ? '<span class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수]</span>'
-      : '<span class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-0.5 uppercase tracking-widest font-bold">[기초 기술]</span>';
+      ? `<span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수]</span>`
+      : `<span data-i18n="threat_MODERATE" class="bg-neutral-900 border border-neutral-700 text-neutral-300 px-2 py-0.5 uppercase tracking-widest font-bold">[기초 기술]</span>`;
 
   const materialsHtml = (protocol.materials || [])
     .slice(0, 3)
-    .map(
-      (m) =>
-        `<span class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[${m.name.split(' ')[0]}]</span>`
-    )
+    .map((m, idx) => {
+      const shortChip = m.name.replace(/\s*\(.*?\)\s*/g, '').trim();
+      return `<span data-card-mat="${protocol.protocolId}" data-mat-idx="${idx}" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[${shortChip}]</span>`;
+    })
     .join('');
 
   const num = protocol.protocolId.replace(/[^0-9]/g, '').padStart(2, '0') || '01';
@@ -50,7 +50,7 @@ export function renderProtocolCard(protocol: Protocol): string {
   <!-- 상단 헤더 레일 -->
   <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
     <div class="flex items-center gap-2">
-      <span class="text-neutral-400 font-bold">${categoryLabel}</span>
+      <span data-i18n="cat_${protocol.category}" class="text-neutral-400 font-bold">${categoryLabel}</span>
       <span class="text-neutral-600">/</span>
       <span class="text-neutral-500">${protocol.protocolId}</span>
     </div>
@@ -64,11 +64,11 @@ export function renderProtocolCard(protocol: Protocol): string {
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="${detailLink}" class="block focus:outline-none">
+        <a href="${detailLink}" data-card-title="${protocol.protocolId}" class="block focus:outline-none">
           ${protocol.title}
         </a>
       </h2>
-      <p class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
+      <p data-card-summary="${protocol.protocolId}" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
         ${protocol.summary}
       </p>
     </div>
@@ -79,7 +79,7 @@ export function renderProtocolCard(protocol: Protocol): string {
     <div class="flex items-center gap-1.5 flex-wrap">
       ${materialsHtml}
     </div>
-    <a href="${detailLink}" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="${detailLink}" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [교범 열람 →]
     </a>
   </div>

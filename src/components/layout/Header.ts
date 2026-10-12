@@ -14,9 +14,9 @@ export function renderHeader(
 <header class="sticky top-0 z-40 bg-[#131313]/95 backdrop-blur border-b border-[#2d2d2d] transition-colors">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between font-mono text-xs">
     <div class="flex items-center space-x-2">
-      <a href="/" class="font-bold text-white tracking-widest hover:text-white/80 transition-colors flex items-center gap-1.5">
+      <a href="/" class="font-bold text-white tracking-widest hover:text-white/80 transition-colors flex items-center gap-1.5 shrink-0">
         <span class="inline-block w-2 h-2 bg-white"></span>
-        [생존 교범]
+        <span data-i18n="brandShort">[생존 교범]</span>
       </a>
       <span class="text-[#555] font-normal">/</span>
       <div class="flex items-center gap-1 text-[#888] text-[11px] truncate">

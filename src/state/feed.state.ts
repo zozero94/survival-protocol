@@ -1,19 +1,82 @@
+import { CLIENT_LOCALE_DETECTOR_BODY } from '../i18n/locales.ts';
+import { UI_STRINGS } from '../i18n/ui-strings.ts';
+
 /**
  * [State / ViewModel Layer]
- * 인덱스 피드 페이지의 5개 단위 페이징 및 7대 카테고리 필터링을 제어하는 클라이언트 런타임 스크립트
+ * 인덱스 피드 페이지의 5개 단위 페이징, 7대 카테고리 필터링 및 7개국어 0.01초 무새로고침 핫스왑을 제어하는 클라이언트 런타임 스크립트
  */
 export function getFeedRuntimeScript(): string {
   return `
+    window.__UI_STRINGS__ = ${JSON.stringify(UI_STRINGS)};
+
     (function () {
       var PAGE_SIZE = 5;
       var currentPage = 1;
       var currentCategory = 'ALL';
+      var currentLang = 'ko';
 
       var allCards = Array.from(document.querySelectorAll('[data-protocol-card]'));
       var paginationNav = document.getElementById('pagination-nav');
       var rangeLabel = document.getElementById('pagination-range-label');
       var totalItemsLabel = document.getElementById('pagination-total-items-label');
       var pagesContainer = document.getElementById('pagination-pages-container');
+
+      function detectInitialFeedLocale() {
+        ${CLIENT_LOCALE_DETECTOR_BODY}
+        return (lang && window.__UI_STRINGS__[lang]) ? lang : 'ko';
+      }
+
+      function switchFeedLocale(targetLocale) {
+        try {
+          var ui = window.__UI_STRINGS__[targetLocale];
+          if (!ui) return;
+          currentLang = targetLocale;
+          document.documentElement.lang = targetLocale;
+          try { localStorage.setItem('archive0_locale', targetLocale); } catch(e) {}
+
+          if (ui.feedHeaderTitle) {
+            document.title = ui.feedHeaderTitle;
+          }
+
+          // 1. UI 정적 문자열 전수 핫스왑 (헤더, 선언문, 카테고리 탭, 위험 배지, 열람 버튼, 페이징, 푸터, 오프라인 배너)
+          document.querySelectorAll('[data-i18n]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n');
+            if (ui[key] !== undefined) {
+              el.innerText = ui[key];
+            }
+          });
+
+          // 2. 프로토콜 피드 카드별 다국어 제목, 요약, 준비물 칩 핫스왑
+          var feedMap = (window.__FEED_PROTOCOLS__ && window.__FEED_PROTOCOLS__[targetLocale]) || {};
+          document.querySelectorAll('[data-card-title]').forEach(function (el) {
+            var pid = el.getAttribute('data-card-title');
+            if (feedMap[pid] && feedMap[pid].title) {
+              el.innerText = feedMap[pid].title;
+            }
+          });
+          document.querySelectorAll('[data-card-summary]').forEach(function (el) {
+            var pid = el.getAttribute('data-card-summary');
+            if (feedMap[pid] && feedMap[pid].summary) {
+              el.innerText = feedMap[pid].summary;
+            }
+          });
+          document.querySelectorAll('[data-card-mat]').forEach(function (el) {
+            var pid = el.getAttribute('data-card-mat');
+            var mIdx = parseInt(el.getAttribute('data-mat-idx'), 10);
+            if (feedMap[pid] && Array.isArray(feedMap[pid].materials) && feedMap[pid].materials[mIdx]) {
+              el.innerText = '[' + feedMap[pid].materials[mIdx] + ']';
+            }
+          });
+          document.querySelectorAll('a[href^="/protocol-"]').forEach(function (link) {
+            var baseHref = link.getAttribute('href').split('?')[0];
+            link.setAttribute('href', targetLocale === 'ko' ? baseHref : (baseHref + '?lang=' + targetLocale));
+          });
+        } catch (err) {
+          console.error('[Feed i18n] Switch error:', err);
+        } finally {
+          document.documentElement.removeAttribute('data-fouc');
+        }
+      }
 
       function getFilteredCards() {
         if (currentCategory === 'ALL') return allCards;
@@ -71,8 +134,6 @@ export function getFeedRuntimeScript(): string {
         }
 
         // 이전/다음 버튼 상태 업데이트
-        var prevBtn = document.querySelector('[data-action="goto-page"][data-page-target="' + (currentPage - 1) + '"]');
-        var nextBtn = document.querySelector('[data-action="goto-page"][data-page-target="' + (currentPage + 1) + '"]');
         var allPageActionBtns = document.querySelectorAll('[data-action="goto-page"]');
         allPageActionBtns.forEach(function (btn) {
           var target = parseInt(btn.getAttribute('data-page-target'), 10);
@@ -118,12 +179,13 @@ export function getFeedRuntimeScript(): string {
           return;
         }
 
-        // 피드 카드 어디를 클릭/터치해도 상세페이지로 즉시 랜딩
+        // 피드 카드 어디를 클릭/터치해도 상세페이지로 즉시 랜딩 (현재 언어 유지)
         var card = e.target.closest('[data-protocol-href]');
         if (card && !e.target.closest('button')) {
           var href = card.getAttribute('data-protocol-href');
           if (href) {
-            window.location.href = href;
+            var targetUrl = (currentLang && currentLang !== 'ko') ? (href + '?lang=' + currentLang) : href;
+            window.location.href = targetUrl;
             return;
           }
         }
@@ -131,6 +193,15 @@ export function getFeedRuntimeScript(): string {
 
       // 초기 실행
       updateFeed();
+      var initLang = detectInitialFeedLocale();
+      if (initLang && initLang !== 'ko') {
+        switchFeedLocale(initLang);
+      } else {
+        document.documentElement.removeAttribute('data-fouc');
+      }
+      setTimeout(function () {
+        document.documentElement.removeAttribute('data-fouc');
+      }, 150);
     })();
   `.trim();
 }

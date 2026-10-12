@@ -36,4 +36,19 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     assert.ok(sw.includes('"/index.html"'), 'index.html이 precache에 포함되어야 합니다.');
     assert.ok(sw.includes('"/protocol-01.html"'), 'protocol-01.html이 precache에 포함되어야 합니다.');
   });
+
+  test('메인 index.html과 상세 페이지 상단/하단 제목 영역이 7개국어(ko, en, ja, es, de, pt, zh-TW) 핫스왑 바인딩을 완비해야 한다', () => {
+    const indexHtml = fs.readFileSync(indexPath, 'utf-8');
+    assert.ok(indexHtml.includes('window.__FEED_PROTOCOLS__ ='), '메인 피드에 7개국어 프로토콜 맵이 내장되어야 함');
+    assert.ok(indexHtml.includes('data-i18n="feedHeroHeadline"'), '메인 히어로 헤드라인 다국어 바인딩 필수');
+    assert.ok(indexHtml.includes('data-card-title="PR-01"'), '피드 카드 제목 다국어 바인딩 필수');
+    assert.ok(indexHtml.includes('data-card-summary="PR-01"'), '피드 카드 요약 다국어 바인딩 필수');
+    assert.ok(indexHtml.includes('data-card-mat="PR-01"'), '피드 카드 재료 칩 다국어 바인딩 필수');
+
+    const p01Html = fs.readFileSync(path.join(publicDir, 'protocol-01.html'), 'utf-8');
+    assert.ok(p01Html.includes('data-i18n="brandShort"'), '상세 상단 헤더 브랜드 다국어 바인딩 필수');
+    assert.ok(p01Html.includes('href="/protocol-02"'), '하단 다음 프로토콜 링크가 실제 경로를 가리켜야 함');
+    assert.ok(p01Html.includes('"nextProtocolTitle":"Next: PR-02'), '영어 다음 프로토콜 제목이 내장되어야 함');
+  });
 });
+

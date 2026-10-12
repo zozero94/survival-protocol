@@ -1,4 +1,6 @@
                                                  
+                                                         
+import { CLIENT_LOCALE_DETECTOR_BODY, SUPPORTED_LOCALES } from './i18n/locales.js';
 import { SITE_META, PWA_PATHS, SEO_CONFIG } from './site.config.js';
 import { SeoService } from './services/seo.service.js';
 import {
@@ -14,14 +16,38 @@ import {
 
 /**
  * [Index Page Renderer]
- * 원시 생존 교범 메인 피드 인덱스 페이지 컴파일러 (Stitch 1:1 완벽 이식)
+ * 원시 생존 교범 메인 피드 인덱스 페이지 컴파일러 (Stitch 1:1 완벽 이식 + 7개국어 0.01초 무새로고침 핫스왑)
  * 5개 단위 페이징, 7대 카테고리 필터링, PWA 오프라인 캐시를 지원한다.
  */
-export function renderIndexPage(protocols            )         {
+export function renderIndexPage(
+  protocols            ,
+  localesByProtocolId                                                             = {}
+)         {
   const feedHeaderHtml = renderFeedHeader(protocols.length);
   const cardsHtml = protocols.map((p) => renderProtocolCard(p)).join('\n');
   const totalPages = Math.ceil(protocols.length / 5) || 1;
   const paginationHtml = renderPagination(1, totalPages, protocols.length);
+
+  // 7개국어 피드 카드 경량 데이터 맵 구성
+  const feedProtocolsMap         
+           
+                                                                           
+    = {};
+
+  for (const lang of Object.keys(SUPPORTED_LOCALES)                     ) {
+    feedProtocolsMap[lang] = {};
+    for (const masterProto of protocols) {
+      const pid = masterProto.protocolId;
+      const localized = localesByProtocolId[pid]?.[lang] || masterProto;
+      feedProtocolsMap[lang][pid] = {
+        title: localized.title,
+        summary: localized.summary,
+        materials: (localized.materials || [])
+          .slice(0, 3)
+          .map((m) => m.name.replace(/\s*\(.*?\)\s*/g, '').trim()),
+      };
+    }
+  }
 
   const themeScript = getThemeRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
@@ -57,17 +83,29 @@ export function renderIndexPage(protocols            )         {
   <!-- Google AdSense Official Script -->
   ${SeoService.renderAdsenseHeadScript()}
 
-  <style>
+  <!-- FOUC(Flash of Untranslated Content) 방지 쉴드 및 동기 언어 감지 -->
+  <style id="fouc-shield">
+    html[data-fouc="true"] body { opacity: 0 !important; }
+    body { transition: opacity 0.08s ease-in; }
     #offline-banner { display: none; }
     html[data-network="offline"] #offline-banner { display: block !important; }
     ::-webkit-scrollbar { display: none; }
     * { border-radius: 0px !important; -webkit-tap-highlight-color: transparent; }
   </style>
+  <script>
+    (function() {
+      ${CLIENT_LOCALE_DETECTOR_BODY}
+      if (lang && lang !== 'ko') {
+        document.documentElement.setAttribute('data-fouc', 'true');
+      }
+      document.documentElement.lang = lang || 'ko';
+    })();
+  </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -81,7 +119,7 @@ export function renderIndexPage(protocols            )         {
           fontFamily: {
             mono: ['"JetBrains Mono"', 'monospace'],
             headline: ['"Space Grotesk"', 'sans-serif'],
-            body: ['Chivo', '"Noto Sans KR"', 'sans-serif'],
+            body: ['Chivo', '"Noto Sans KR"', '"Noto Sans JP"', 'sans-serif'],
           }
         }
       }
@@ -90,7 +128,7 @@ export function renderIndexPage(protocols            )         {
 </head>
 <body class="bg-[#131313] text-[#e5e2e1] font-body min-h-screen selection:bg-white selection:text-black flex flex-col justify-between">
   <!-- 비상 오프라인 모드 감지 배너 -->
-  <div id="offline-banner" class="bg-red-950/90 border-b border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
+  <div id="offline-banner" data-i18n="offlineBanner" class="bg-red-950/90 border-b border-red-600 text-red-200 text-center font-mono text-xs py-1.5 px-4 tracking-wider uppercase font-bold sticky top-0 z-50">
     ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
   </div>
 
@@ -106,22 +144,23 @@ export function renderIndexPage(protocols            )         {
     ${paginationHtml}
   </main>
 
-  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1) -->
+  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1 + 7개국어 바인딩) -->
   <footer class="border-t border-neutral-800 bg-[#0e0e0e] text-neutral-400 py-6 px-4 sm:px-8 font-mono text-xs">
     <div class="max-w-5xl mx-auto flex flex-col gap-2">
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 bg-white"></span>
-        <p class="text-white font-bold uppercase tracking-wider">
+        <p data-i18n="footerTitle" class="text-white font-bold uppercase tracking-wider">
           인간 문명 재건을 위한 무료 오픈소스 생존 기록서.
         </p>
       </div>
-      <p class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
+      <p data-i18n="footerDesc" class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
         이 웹페이지는 한 번 방문하면 브라우저 로컬 저장소에 영구 보존되어 비행기 모드나 글로벌 통신망 두절 상황에서도 100% 작동합니다.
       </p>
     </div>
   </footer>
 
   <script>
+    window.__FEED_PROTOCOLS__ = ${JSON.stringify(feedProtocolsMap)};
     ${themeScript}
     ${pwaScript}
     ${feedScript}
