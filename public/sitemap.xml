@@ -28,4 +28,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-02?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-02?lang=ja"/>
   </url>
+  <url>
+    <loc>https://survival-protocol.com/protocol-03</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-03?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-03?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-03?lang=ja"/>
+  </url>
 </urlset>

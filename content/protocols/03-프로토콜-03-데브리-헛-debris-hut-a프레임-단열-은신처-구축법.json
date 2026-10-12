@@ -1,0 +1,86 @@
+{
+  "protocolId": "PR-03",
+  "category": "SHELTER",
+  "title": "프로토콜 #03: 데브리 헛(Debris Hut) A프레임 단열 은신처 구축법",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[위험 등급: 치명적(CRITICAL)]",
+  "summary": "혹한과 비바람 속에서 노지 노출은 3시간 이내에 치명적인 저체온증을 초래한다. 자연 낙엽과 고사목만을 기하학적으로 배치해 정지 공기층(Dead Air Space)을 형성함으로써, 열원 없이 순수 인체 대사 복사열만으로 내부 온도를 생존선 이상으로 유지하는 원시 은신처를 구축한다.",
+  "timeRequired": "90~120분 (90-120 MINUTES)",
+  "successRate": "92.4% (단열 두께 60cm 확보 기준)",
+  "difficulty": "2등급 (고강도 원시 축조 기술)",
+  "outputPerHour": "1동 완공 (유효 단열 부피 1.5㎥ 이상)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "능선 기둥목(Ridge Pole)",
+      "desc": "길이 3.0~3.5m, 직경 10~15cm의 휘어짐이 없고 단단한 마른 활엽수 원목 1개"
+    },
+    {
+      "id": "mat-02",
+      "name": "지지목 및 늑골 가지(A-Frame & Rib Sticks)",
+      "desc": "길이 1.5m, 직경 5~8cm의 Y자 지지목 2개 및 길이 1~1.5m 늑골용 나뭇가지 40~50개"
+    },
+    {
+      "id": "mat-03",
+      "name": "건조 단열 잔해(Dry Debris)",
+      "desc": "수분 함량이 적은 마른 낙엽, 마른 솔잎, 건초, 썩은 마른 목재 부스러기 등 대량(최소 2~3세제곱미터)"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "A프레임 주각 가설 및 능선목 결속",
+      "description": "두 개의 Y자형 지지목을 상단에서 맞물려 교차시키거나 칡넝쿨로 결속해 삼각 지지대를 세우고, 능선 기둥목의 한쪽 끝을 교차점에 올린다(높이 약 0.8~1m). 기둥목의 반대쪽 끝은 바람이 불어오는 풍상측 지면에 밀착시킨다. 내부 공간은 시전자의 몸이 겨우 기어들어갈 수 있을 정도로 좁게 설정해야 한다.",
+      "actionNote": "> 조치 사항: 내부 체적이 필요 이상으로 크면 인체 복사열로 내부 공기를 덥히지 못해 얼어 죽는다. 반드시 관(coffin)에 들어간 듯 신체 둘레에 주먹 하나 여유만 남겨라.",
+      "svgFileName": "pr03-step-01.svg",
+      "svgLabels": [
+        "PROTOCOL #03 // STEP 01: FRAME ASSEMBLY",
+        "DEBRIS HUT RIDGEPOLE & Y-APEX INTERLOCK",
+        "COGNITIVE CLEARANCE: COFFIN SPEC",
+        "WINDWARD (풍상측)",
+        "DIRECT FORCE EMBEDMENT",
+        "GROUND ANCHOR (지면 밀착)",
+        "INTERIOR VOLUME [MAX TOLERANCE: +1 FIST]",
+        "LASHING NODE (결속점)",
+        "Y-CROTCH INTERLOCK",
+        "+ ROOT/VINE BINDING",
+        "0.8 ~ 1.0 M",
+        "APEX ELEVATION",
+        "SHOULDER WIDTH +10CM",
+        "MAIN RIDGEPOLE (능선목)",
+        "PRIMARY LOAD-BEARING SPINE",
+        "ACTION PROTOCOL:",
+        "내부 체적 과다 시 인체 복사열 분산으로 저체온사 유발. 관(COFFIN) 규격 엄수: 신체 둘레 여유 주먹 1개(≤10CM) 제한."
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설",
+      "description": "능선목 양옆에 늑골 가지들을 45~60도 각도로 촘촘하게 빗대어 잔해가 내부로 쏟아지지 않는 격자벽을 형성한다. 골조 완성 즉시 내부 바닥에 바싹 마른 낙엽과 풀을 최소 40cm 이상 두껍게 깔아 침상을 다진다. 누웠을 때 체중에 의해 압축되더라도 15~20cm 이상의 단열 두께가 유지되어야 한다.",
+      "actionNote": "> 과학적 원리: 토양의 열전도율(Conduction)은 정지 공기의 수십 배에 달한다. 바닥 단열이 없으면 모든 체열이 지면으로 흡수되어 단시간 내 쇼크에 빠진다.",
+      "svgFileName": "pr03-step-02.svg",
+      "svgLabels": [
+        "DIMENSION // STEP 02",
+        "[늑골 프레임 배치 및 바닥 고밀도 단열 매트리스 포설]",
+        "SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "외부 단열재 적층 및 내풍성 방풍 피복",
+      "description": "골조 외벽에 잔가지 층을 얇게 덮어 잔해 낙하를 막은 뒤, 마른 낙엽과 숲의 부스러기를 하단부터 상단으로 비늘 형태로 최소 60~90cm(팔 길이 전체 수준) 두께로 쌓아 올린다. 마지막으로 돌풍에 마른 잎이 날아가지 않도록 무거운 겉가지들을 외벽 전체에 덮어 하중을 가한다. 입구는 마른 잎을 채운 잎더미 마개로 막아 밀폐한다.",
+      "actionNote": "> 주의: 젖은 잔해는 단열 효과가 전무하며 오히려 기화열로 체온을 뺏는다. 반드시 외벽 겉면만 빗물을 흘려보내는 경사각을 유지하고 내부는 건조 상태를 유지해야 한다.",
+      "svgFileName": "pr03-step-03.svg",
+      "svgLabels": [
+        "DIMENSION // STEP 03",
+        "[외부 단열재 적층 및 내풍성 방풍 피복]",
+        "SCHEMATIC REF // 프로토콜 #03: 데브리 헛(Debris H"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "치명적 착각: 주거 편의를 위한 대형 공간 확보 및 젖은 잔해 적층",
+    "description": "텐트처럼 편히 앉아 쉬기 위해 내부 천장을 높이고 공간을 넓히면, 인간의 기초대사량(약 80~100W)으로 내부 공기 주머니를 덥히지 못해 체온이 급속 탈취된다. 또한 외벽이나 바닥에 젖은 낙엽을 섞어 적층할 경우 물의 높은 열용량과 기화열로 인해 구조물 전체가 얼음 동굴과 같은 냉각 장치로 변질된다.",
+    "consequence": "오판 시 결과: 취침 중 전도 및 대류 복합 열손실로 심부 체온이 30°C 이하로 급강하하여 치명적 저체온증(Hypothermia)으로 사망."
+  }
+}
