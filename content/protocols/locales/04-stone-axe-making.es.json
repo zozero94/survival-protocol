@@ -1,0 +1,79 @@
+{
+  "protocolId": "PR-04",
+  "category": "TOOLS",
+  "title": "Protocolo #04: Cómo hacer un hacha de piedra con rocas de río y lianas",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[IMPORTANCIA: HERRAMIENTA CLAVE]",
+  "summary": "Con las manos vacías no puedes cortar ramas gruesas para tu refugio o para leña. Aprende a golpear dos piedras duras de río en un ángulo de 45 grados para sacar una hoja afilada y fijarla en un mango de madera con resina de pino y corteza de liana húmeda.",
+  "timeRequired": "60 min",
+  "successRate": "90% (golpeando el borde a 45°)",
+  "difficulty": "Media (Apto para principiantes)",
+  "outputPerHour": "1 hacha de piedra lista",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 piedra dura de río y 1 piedra martillo redonda",
+      "desc": "Una piedra compacta de río (del tamaño de dos puños) que al romperse deje bordes afilados como vidrio, y una piedra redonda y pesada para golpear."
+    },
+    {
+      "id": "mat-02",
+      "name": "Mango de madera dura del largo del antebrazo (roble o fresno)",
+      "desc": "Una rama verde y resistente (40–50cm de largo y 3.5–4cm de grosor) que soporte golpes fuertes sin partirse."
+    },
+    {
+      "id": "mat-03",
+      "name": "Corteza interna de liana remojada y resina de pino",
+      "desc": "Más de 3 metros de corteza interna de liana húmeda (que se encoge y aprieta al secarse) y un puñado de resina de pino seca."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Golpear dos piedras a 45 grados para sacar una hoja afilada",
+      "description": "Apoya bien la piedra grande en el suelo y golpea su borde exterior en un ángulo inclinado de 45 grados con la piedra martillo. Si golpeas el centro en vertical solo romperás la roca, pero al golpear el borde a 45 grados se desprende de una vez una lasca del tamaño de la mano con filo de navaja.",
+      "actionNote": "> Consejo clave: No golpees el centro plano de la piedra. Apunta 1–2cm hacia adentro desde el borde exterior y da un golpe seco y firme.",
+      "svgFileName": "pr04-step-01.svg",
+      "svgLabels": [
+        "1. Piedra martillo redonda",
+        "2. Golpear borde a 45°",
+        "Filo agudo (1-2cm)",
+        "4. Hoja de piedra separada",
+        "3. Piedra base (15-20cm)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Rajar la punta del mango de madera, encajar la hoja y rellenar con resina",
+      "description": "Usa una piedra afilada para abrir unahendidura vertical de 5–7cm en la punta del mango de madera. Ata primero una cuerda justo debajo de la abertura para que la madera no se siga rajando, y mete la parte trasera gruesa de la hoja de piedra. Luego derrite resina de pino al fuego, mézclala con polvo fino de carbón y rellena todos los huecos.",
+      "actionNote": "> Por qué funciona: La resina sola se vuelve frágil como el vidrio al enfriarse. Mezclar un tercio de polvo de carbón crea un pegamento natural súper resistente a los golpes.",
+      "svgFileName": "pr04-step-02.svg",
+      "svgLabels": [
+        "1. Encajar hoja hacia abajo",
+        "Filo delantero",
+        "2. Ranura en madera (5-7cm)",
+        "3. Resina + polvo de carbón",
+        "4. Atar abajo para no rajar",
+        "Grosor del mango: 3.5-4cm"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Atar fuerte en forma de X con liana húmeda y secar a la sombra",
+      "description": "Con la corteza interna de liana bien mojada y flexible, envuelve la hoja de piedra y el mango cruzando en diagonal en forma de X más de 10 vueltas bien tensas. Después enrolla la parte inferior en horizontal, haz un nudo firme y déjalo secar a la sombra. Al secarse, la liana se encoge casi un 30% y aprieta la piedra como si fuera alambre de acero.",
+      "actionNote": "> Precaución: Cuando esté seco, mueve la piedra con fuerza con la mano; no debe moverse ni un milímetro. No la acerques al fuego para secarla rápido o la fibra se quemará y se romperá.",
+      "svgFileName": "pr04-step-03.svg",
+      "svgLabels": [
+        "1. Amarre en X con liana",
+        "2. Filo cortante expuesto",
+        "3. Vueltas inferiores",
+        "4. Encoge 30% al secar",
+        "Listo: Hacha firme de una sola pieza"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error grave: Golpear el centro plano de la roca o atar con lianas secas",
+    "description": "Si golpeas el centro plano de la piedra a 90 grados, no saldrá ningún filo y toda la roca se romperá en grava inútil. Además, si atas con lianas secas o corteza exterior áspera, la cuerda se partirá al primer golpe y la piedra pesada puede salir disparada hacia tu cara o tus ojos.",
+    "consequence": "Resultado: Golpea siempre el borde a 45 grados y ata con fibra interna remojada en agua, secándola a la sombra."
+  }
+}

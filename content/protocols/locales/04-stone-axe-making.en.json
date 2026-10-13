@@ -1,0 +1,79 @@
+{
+  "protocolId": "PR-04",
+  "category": "TOOLS",
+  "title": "Protocol #04: How to Make a Stone Axe with River Stones and Vines",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PRIORITY: CORE TOOL]",
+  "summary": "You cannot chop thick branches for shelter posts or firewood with your bare hands. Here is how to strike two hard river stones together at a 45-degree angle to split off a sharp stone blade, then lock it into a split wooden handle using pine resin and wet vine bark.",
+  "timeRequired": "60 mins",
+  "successRate": "90% (when striking the edge at 45°)",
+  "difficulty": "Medium (Beginner friendly)",
+  "outputPerHour": "1 Stone Axe Completed",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Hard River Stone & 1 Round Hammerstone",
+      "desc": "One dense river stone (about the size of two fists) that breaks with sharp glass-like edges, plus one heavy round stone to hold and strike with."
+    },
+    {
+      "id": "mat-02",
+      "name": "Forearm-Length Hard Wooden Handle (Oak or Ash)",
+      "desc": "One tough green branch (40–50cm long, 3.5–4cm thick) that absorbs heavy impact without snapping."
+    },
+    {
+      "id": "mat-03",
+      "name": "Water-Soaked Vine Inner Bark & Pine Resin",
+      "desc": "At least 3 meters of wet inner vine bark (which shrinks and tightens as it dries) and a handful of hardened pine sap from tree bark."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Strike Stones Together at 45 Degrees to Split Off a Sharp Blade",
+      "description": "Brace the large river stone firmly on the ground, then strike its outer edge at a 45-degree angle using your round hammerstone. Hitting flat in the middle only crushes the rock, but striking the edge at 45 degrees cleanly splits off a palm-sized stone flake with a razor-sharp cutting edge.",
+      "actionNote": "> Key Tip: Do not hit the flat center of the stone. Aim 1–2cm inside the outer rim and strike firmly in one clean motion to split off a long, sharp blade.",
+      "svgFileName": "pr04-step-01.svg",
+      "svgLabels": [
+        "1. Round Hammerstone",
+        "2. Strike Edge at 45°",
+        "Sharp Blade (1-2cm)",
+        "4. Split Stone Axe Blade",
+        "3. Base River Stone (15-20cm)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Split the Top of the Wooden Handle, Wedge the Blade, and Fill with Resin",
+      "description": "Use a sharp stone flake to split the top of your wooden handle 5–7cm down the center. Tie a cord tightly right below the split first so the wood does not crack any further down, then push the thick back end of the stone blade deep into the slot. Melt pine resin over a fire, mix in fine charcoal powder, and pack it into every gap.",
+      "actionNote": "> How It Works: Pure pine resin cools brittle like glass and cracks on impact. Mixing in about one-third crushed charcoal powder turns it into a tough, shock-absorbing natural glue.",
+      "svgFileName": "pr04-step-02.svg",
+      "svgLabels": [
+        "1. Push Blade Down In",
+        "Sharp Cutting Edge",
+        "2. Split Wood Slot (5-7cm)",
+        "3. Melted Resin + Charcoal",
+        "4. Tie Below Split First",
+        "Handle Width: 3.5-4cm"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Wrap Tightly in an X-Pattern with Wet Vine Bark and Dry in the Shade",
+      "description": "Take water-soaked, flexible inner vine bark and wrap it tightly in a diagonal X-pattern across both the stone blade and the wooden handle for more than 10 full turns. Wrap horizontally around the lower neck, tie off the knot, and let it dry in the shade. Wet vine bark shrinks by nearly 30% as it dries, clamping the stone blade like steel wire.",
+      "actionNote": "> Watch Out: Once dry, shake the stone head hard by hand—there must be zero wobble before swinging. Never dry it right next to flames or the vine fibers will scorch and snap.",
+      "svgFileName": "pr04-step-03.svg",
+      "svgLabels": [
+        "1. Wet Vine X-Lashing",
+        "2. Exposed Sharp Edge",
+        "3. Lower Collar Wrap",
+        "4. Shrinks 30% When Dry",
+        "Finished: Solid One-Piece Stone Axe"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Critical Mistake: Striking the Flat Center of the Rock or Binding with Dry Vines",
+    "description": "Smashing the flat center of a stone at 90 degrees shatters the rock into useless gravel instead of forming a sharp edge. Also, tying the blade with dry, brittle vines or rough outer bark will cause the lashing to snap on the first swing, sending a heavy stone blade flying toward your face or eyes.",
+    "consequence": "Result: Always strike the stone edge at 45 degrees for a clean blade, and lash with water-soaked inner bark dried slowly in the shade."
+  }
+}

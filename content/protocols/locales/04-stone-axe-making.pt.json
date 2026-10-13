@@ -1,0 +1,79 @@
+{
+  "protocolId": "PR-04",
+  "category": "TOOLS",
+  "title": "Protocolo #04: Como fazer um machado de pedra com pedras de rio e cipó",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[IMPORTÂNCIA: FERRAMENTA ESSENCIAL]",
+  "summary": "Com as mãos vazias não é possível cortar galhos grossos para abrigo ou lenha. Veja como bater duas pedras duras de rio em um ângulo de 45 graus para tirar uma lâmina afiada e prendê-la em um cabo de madeira com resina de pinheiro e cipó úmido.",
+  "timeRequired": "60 min",
+  "successRate": "90% (batendo na borda a 45°)",
+  "difficulty": "Média (Iniciantes conseguem)",
+  "outputPerHour": "1 machado de pedra pronto",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 pedra dura de rio e 1 pedra redonda de bater",
+      "desc": "Uma pedra firme de rio (do tamanho de dois punhos) que quebre formando bordas afiadas como vidro, e uma pedra redonda e pesada para usar como martelo."
+    },
+    {
+      "id": "mat-02",
+      "name": "Cabo de madeira dura do tamanho do antebraço (carvalho ou freixo)",
+      "desc": "Um galho verde e resistente (40–50cm de comprimento, 3,5–4cm de espessura) que aguente pancadas fortes sem quebrar."
+    },
+    {
+      "id": "mat-03",
+      "name": "Fibra interna de cipó molhada e resina de pinheiro",
+      "desc": "Mais de 3 metros de casca interna de cipó deixada de molho na água (encolhe e aperta ao secar) e um punhado de resina seca de pinheiro."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Bater as pedras a 45 graus para soltar uma lâmina afiada",
+      "description": "Apoie bem a pedra grande no chão e bata na borda dela em um ângulo inclinado de 45 graus usando a pedra redonda. Bater reto no meio só esfarela a rocha, mas bater na quina a 45 graus destaca de uma só vez uma lasca do tamanho da palma da mão com fio de navalha.",
+      "actionNote": "> Dica principal: Não bata no meio plano da pedra. Mire 1–2cm para dentro da borda e dê uma pancada firme e rápida.",
+      "svgFileName": "pr04-step-01.svg",
+      "svgLabels": [
+        "1. Pedra redonda (martelo)",
+        "2. Bater na borda a 45°",
+        "Lâmina afiada (1-2cm)",
+        "4. Lasca de machado solta",
+        "3. Pedra base (15-20cm)"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Rachar a ponta do cabo de madeira, encaixar a lâmina e preencher com resina",
+      "description": "Use uma pedra afiada para abrir uma fenda vertical de 5–7cm no topo do cabo de madeira. Amarre primeiro uma fibra logo abaixo da fenda para a madeira não rachar mais para baixo, e encaixe a parte traseira grossa da lâmina de pedra. Depois, derreta a resina de pinheiro no fogo, misture pó fino de carvão e preencha todos os espaços.",
+      "actionNote": "> Como funciona: A resina pura fica quebradiça como vidro depois que esfria. Misturar um terço de pó de carvão cria uma cola natural super resistente a impactos.",
+      "svgFileName": "pr04-step-02.svg",
+      "svgLabels": [
+        "1. Encaixar lâmina por cima",
+        "Fio de corte frontal",
+        "2. Fenda no cabo (5-7cm)",
+        "3. Resina + pó de carvão",
+        "4. Amarrar embaixo antes",
+        "Espessura do cabo: 3,5-4cm"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Amarrar firme em X com cipó úmido e secar na sombra",
+      "description": "Com a fibra interna do cipó bem molhada e macia, dê mais de 10 voltas bem apertadas cruzando em X sobre a lâmina de pedra e o cabo de madeira. Em seguida, enrole a base na horizontal, dê um nó firme e deixe secar na sombra. O cipó molhado encolhe quase 30% ao secar, prendendo a pedra como se fosse arame de aço.",
+      "actionNote": "> Atenção: Depois de seco, balance a pedra com força usando a mão; ela não pode ter nenhuma folga. Não tente secar perto do fogo para não queimar e romper as fibras.",
+      "svgFileName": "pr04-step-03.svg",
+      "svgLabels": [
+        "1. Amarração em X com cipó",
+        "2. Fio afiado exposto",
+        "3. Voltas horizontais na base",
+        "4. Encolhe 30% ao secar",
+        "Pronto: Machado firme em peça única"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro grave: Bater no meio plano da pedra ou amarrar com cipó seco",
+    "description": "Bater em ângulo reto (90 graus) no centro plano da pedra não cria lâmina e só quebra a pedra em pedregulhos inúteis. Além disso, amarrar com cipó seco ou casca grossa faz a amarração arrebentar na primeira batida, podendo lançar a pedra pesada contra o seu rosto.",
+    "consequence": "Resultado: Bata sempre na borda a 45 graus e amarre com fibra interna molhada, secando na sombra."
+  }
+}
