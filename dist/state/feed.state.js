@@ -32,7 +32,6 @@ export function getFeedRuntimeScript()         {
           if (!ui) return;
           currentLang = targetLocale;
           document.documentElement.lang = targetLocale;
-          try { localStorage.setItem('archive0_locale', targetLocale); } catch(e) {}
 
           if (ui.feedHeaderTitle) {
             document.title = ui.feedHeaderTitle;

@@ -99,14 +99,13 @@
   </style>
   <script>
     (function() {
-      var urlParams = new URLSearchParams(window.location.search);
+      try { localStorage.removeItem('archive0_locale'); } catch(e) {}
+  var urlParams = new URLSearchParams(window.location.search);
   var lang = urlParams.get('lang');
   if (!lang) {
-    try { lang = localStorage.getItem('archive0_locale'); } catch(e) {}
-  }
-  if (!lang) {
     var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (nav.startsWith('ja')) lang = 'ja';
+    if (nav.startsWith('ko')) lang = 'ko';
+    else if (nav.startsWith('ja')) lang = 'ja';
     else if (nav.startsWith('es')) lang = 'es';
     else if (nav.startsWith('de')) lang = 'de';
     else if (nav.startsWith('pt')) lang = 'pt';
@@ -616,14 +615,13 @@
      * W3C 표준 브라우저 헤더 및 환경 감지 (URL -> localStorage -> navigator.language -> 기본값)
      */
     function detectInitialLocale() {
-      var urlParams = new URLSearchParams(window.location.search);
+      try { localStorage.removeItem('archive0_locale'); } catch(e) {}
+  var urlParams = new URLSearchParams(window.location.search);
   var lang = urlParams.get('lang');
   if (!lang) {
-    try { lang = localStorage.getItem('archive0_locale'); } catch(e) {}
-  }
-  if (!lang) {
     var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (nav.startsWith('ja')) lang = 'ja';
+    if (nav.startsWith('ko')) lang = 'ko';
+    else if (nav.startsWith('ja')) lang = 'ja';
     else if (nav.startsWith('es')) lang = 'es';
     else if (nav.startsWith('de')) lang = 'de';
     else if (nav.startsWith('pt')) lang = 'pt';
@@ -647,7 +645,6 @@
         }
 
         document.documentElement.lang = targetLocale;
-        try { localStorage.setItem('archive0_locale', targetLocale); } catch(e) {}
 
         // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n)
         document.querySelectorAll('[data-i18n]').forEach(function(el) {

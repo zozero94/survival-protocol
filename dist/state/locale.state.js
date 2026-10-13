@@ -31,7 +31,6 @@ export function getLocaleRuntimeScript()         {
         }
 
         document.documentElement.lang = targetLocale;
-        try { localStorage.setItem('archive0_locale', targetLocale); } catch(e) {}
 
         // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n)
         document.querySelectorAll('[data-i18n]').forEach(function(el) {
