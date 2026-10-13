@@ -23,8 +23,8 @@ export const PWA_PATHS = {
  * [Google AdSense & Monetization Settings]
  */
 export const ADSENSE_CONFIG = {
-  clientId: process.env.ADSENSE_CLIENT_ID || '', // 예: ca-pub-1234567890123456
-  adsTxt: process.env.ADSENSE_ADS_TXT || 'google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0',
+  clientId: process.env.ADSENSE_CLIENT_ID || 'ca-pub-4169469417741632',
+  adsTxt: process.env.ADSENSE_ADS_TXT || 'google.com, pub-4169469417741632, DIRECT, f08c47fec0942fa0',
 }         ;
 
 /**

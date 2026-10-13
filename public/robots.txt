@@ -1,6 +1,7 @@
 # [SURVIVAL PROTOCOL // ROBOTS.TXT]
 User-agent: *
 Allow: /
+Allow: /ads.txt
 Allow: /sw.js
 Allow: /manifest.webmanifest
 Allow: /icons/

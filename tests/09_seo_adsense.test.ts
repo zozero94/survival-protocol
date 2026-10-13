@@ -39,9 +39,7 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
 
   it('ads.txt는 구글 공식 AdSense 규격 형식을 만족해야 한다', () => {
     const adsTxt = SeoService.generateAdsTxt();
-    assert.ok(adsTxt.includes('google.com'));
-    assert.ok(adsTxt.includes('DIRECT'));
-    assert.ok(adsTxt.includes('f08c47fec0942fa0'));
+    assert.strictEqual(adsTxt.trim(), 'google.com, pub-4169469417741632, DIRECT, f08c47fec0942fa0');
   });
 
   it('generateJsonLd는 유효한 Schema.org HowTo 스키마를 생성해야 한다', () => {
@@ -57,9 +55,9 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
     assert.strictEqual(parsed.supply.length, 3);
   });
 
-  it('renderAdsenseHeadScript는 클라이언트 ID가 주어졌을 때 공식 비동기 스크립트를 반환해야 한다', () => {
-    const tag = SeoService.renderAdsenseHeadScript('ca-pub-1234567890123456');
-    assert.ok(tag.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'));
-    assert.ok(tag.includes('ca-pub-1234567890123456'));
+  it('renderAdsenseHeadScript는 기본 설정된 공식 클라이언트 ID(ca-pub-4169469417741632)와 메타/스크립트 태그를 반환해야 한다', () => {
+    const tag = SeoService.renderAdsenseHeadScript();
+    assert.ok(tag.includes('<meta name="google-adsense-account" content="ca-pub-4169469417741632">'));
+    assert.ok(tag.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4169469417741632'));
   });
 });

@@ -70,6 +70,7 @@ ${entries.join('\n')}
     return `# [SURVIVAL PROTOCOL // ROBOTS.TXT]
 User-agent: *
 Allow: /
+Allow: /ads.txt
 Allow: /sw.js
 Allow: /manifest.webmanifest
 Allow: /icons/
@@ -122,11 +123,11 @@ Sitemap: ${siteUrl}/sitemap.xml
   }
 
   /**
-   * Google AdSense 공식 비동기 스크립트 태그 렌더링
+   * Google AdSense 공식 비동기 스크립트 태그 및 계정 소유권 메타태그 렌더링
    */
   public static renderAdsenseHeadScript(clientId: string = ADSENSE_CONFIG.clientId): string {
     if (!clientId) return '<!-- AdSense: Client ID not configured -->';
-    return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${clientId}" crossorigin="anonymous"></script>`;
+    return `<meta name="google-adsense-account" content="${clientId}">\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${clientId}" crossorigin="anonymous"></script>`;
   }
 
   /**
