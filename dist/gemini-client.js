@@ -20,6 +20,7 @@ export async function callGeminiApi(
                               
                        
                         
+                        
     = {}
 )                  {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
@@ -44,16 +45,22 @@ export async function callGeminiApi(
   }
 
   const maxAttempts = Math.max(1, Math.min(options.maxRetries ?? 3, 4));
-  const perAttemptTimeout = options.timeoutMs ?? 25000;
+  const perAttemptTimeout = options.timeoutMs ?? 30000;
   let lastError               = null;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const remainingBudget = options.deadlineAt ? options.deadlineAt - Date.now() : Infinity;
+    if (remainingBudget <= 1500) {
+      throw lastError || new Error(`Gemini API(${model}) 전체 실행 예산 시간을 초과했습니다.`);
+    }
+    const effectiveTimeout = Math.min(perAttemptTimeout, Math.max(1500, remainingBudget));
+
     try {
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(perAttemptTimeout),
+        signal: AbortSignal.timeout(effectiveTimeout),
       });
 
       if (!response.ok) {
@@ -62,6 +69,10 @@ export async function callGeminiApi(
         if ((response.status === 503 || response.status === 429) && attempt < maxAttempts) {
           const jitter = Math.floor(Math.random() * 700);
           const delayMs = 1200 * Math.pow(2, attempt - 1) + jitter;
+          const afterDelayBudget = options.deadlineAt ? options.deadlineAt - Date.now() - delayMs : Infinity;
+          if (afterDelayBudget < 2000) {
+            throw lastError;
+          }
           await new Promise((res) => setTimeout(res, delayMs));
           continue;
         }
@@ -87,6 +98,10 @@ export async function callGeminiApi(
       if (isTransient && attempt < maxAttempts) {
         const jitter = Math.floor(Math.random() * 700);
         const delayMs = 1200 * Math.pow(2, attempt - 1) + jitter;
+        const afterDelayBudget = options.deadlineAt ? options.deadlineAt - Date.now() - delayMs : Infinity;
+        if (afterDelayBudget < 2000) {
+          throw lastError;
+        }
         await new Promise((res) => setTimeout(res, delayMs));
         continue;
       }

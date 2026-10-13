@@ -33,6 +33,7 @@ export interface GenerateProtocolOptions {
   triggerDeploy?: boolean;
   dryRun?: boolean;
   githubToken?: string;
+  deadlineMs?: number;
   onProgress?: (statusText: string) => Promise<void> | void;
 }
 
@@ -45,6 +46,7 @@ export interface EditProtocolOptions {
   triggerDeploy?: boolean;
   dryRun?: boolean;
   githubToken?: string;
+  deadlineMs?: number;
   onProgress?: (statusText: string) => Promise<void> | void;
 }
 
@@ -52,6 +54,7 @@ export interface PipelineExecutionResult {
   success: boolean;
   protocol?: Protocol;
   message: string;
+  missingLocales?: string[];
   deployResult?: {
     commitHash?: string;
     pushed: boolean;
@@ -59,6 +62,8 @@ export interface PipelineExecutionResult {
   };
   liveUrl?: string;
 }
+
+const TARGET_LOCALE_CODES = ['en', 'ja', 'es', 'de', 'pt', 'zh-TW'] as const;
 
 // 현대 공산품 금지 키워드 목록 (고증 방어)
 const FORBIDDEN_MODERN_TERMS = [
@@ -95,6 +100,28 @@ export class ProtocolGeneratorService {
     }
 
     return { workDir, isServerless: true };
+  }
+
+  /**
+   * 서버리스 임시 워크스페이스(/tmp/survival-ws-*) 정리 헬퍼
+   */
+  public static cleanupWorkspace(workDir: string, isServerless: boolean): void {
+    if (isServerless && workDir && workDir.startsWith(os.tmpdir())) {
+      try {
+        fs.rmSync(workDir, { recursive: true, force: true });
+      } catch {}
+    }
+  }
+
+  /**
+   * 아카이브된 번호가 있더라도 기존 최대 번호 + 1로 안전하게 다음 프로토콜 번호를 채번 (ID 충돌 방지)
+   */
+  public static getNextProtocolNumber(protocols: ProtocolSummary[] = this.listProtocols()): number {
+    const maxNum = protocols.reduce((max, p) => {
+      const n = parseInt(String(p.protocolId || '').replace(/[^0-9]/g, ''), 10);
+      return Number.isFinite(n) && n > max ? n : max;
+    }, 0);
+    return Math.max(protocols.length + 1, maxNum + 1);
   }
 
   /**
@@ -186,7 +213,8 @@ export class ProtocolGeneratorService {
     apiKey: string,
     topic: string,
     nextId: string,
-    category?: ProtocolCategory
+    category?: ProtocolCategory,
+    deadlineAt?: number
   ): Promise<Protocol> {
     const prompt = `
 당신은 누구나 위급한 상황에서 바로 보고 따라 할 수 있는 '실전 야생 생존 가이드(SURVIVAL PROTOCOL)'의 작성자입니다.
@@ -261,22 +289,12 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
     const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
       responseMimeType: 'application/json',
       temperature: 0.2,
-      timeoutMs: 28000,
+      timeoutMs: 45000,
+      deadlineAt,
     });
 
     const parsed: Protocol = JSON.parse(raw);
-    if (Array.isArray(parsed.steps)) {
-      for (const s of parsed.steps) {
-        if (!Array.isArray(s.svgLabels) || s.svgLabels.length === 0) {
-          s.svgLabels = [
-            `STEP ${s.stepNumber} // 핵심 구조`,
-            s.title.slice(0, 26),
-            parsed.materials?.[0]?.name || '자연 재료',
-            `[${parsed.protocolId} 도면]`,
-          ];
-        }
-      }
-    }
+    this.ensurePlannedSvgLabels(parsed);
 
     const validation = this.validateProtocol(parsed);
     if (!validation.valid) {
@@ -286,11 +304,29 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
   }
 
   /**
+   * 각 단계에 svgLabels가 비어 있는 경우 기본 4개 라벨을 보충
+   */
+  private static ensurePlannedSvgLabels(proto: Protocol): void {
+    if (!Array.isArray(proto.steps)) return;
+    for (const s of proto.steps) {
+      if (!Array.isArray(s.svgLabels) || s.svgLabels.length === 0) {
+        s.svgLabels = [
+          `STEP ${s.stepNumber} // 핵심 구조`,
+          s.title.slice(0, 26),
+          proto.materials?.[0]?.name || '자연 재료',
+          `[${proto.protocolId} 도면]`,
+        ];
+      }
+    }
+  }
+
+  /**
    * 6대 글로벌 타겟 언어(EN, JA, ES, DE, PT, zh-TW) 번역본 및 도면 라벨(svgLabels) 병렬 자동 생성
    */
   public static async generateTranslations(
     apiKey: string,
-    master: Protocol
+    master: Protocol,
+    deadlineAt?: number
   ): Promise<Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>> {
     const localeSpecs: Array<{ code: 'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW'; persona: string }> = [
       { code: 'en', persona: 'English (Clear, plain, everyday practical survival guide for beginners)' },
@@ -312,8 +348,9 @@ Rules:
 
         const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
           responseMimeType: 'application/json',
-          timeoutMs: 25000,
+          timeoutMs: 40000,
           maxRetries: 2,
+          deadlineAt,
         });
         return [code, JSON.parse(raw) as Protocol] as const;
       })
@@ -332,28 +369,34 @@ Rules:
   }
 
   /**
-   * 3단계별 테크니컬 벡터 SVG 도면 병렬 자동 생성(Promise.all), svgLabels 추출 및 파일 저장
+   * 3단계별 테크니컬 벡터 SVG 도면 병렬 자동 생성(Promise.all), svgLabels 동기화 및 파일 저장
    */
   public static async generateAndSaveSvgs(
     apiKey: string,
     protocol: Protocol,
-    svgsDir: string = path.join(getRootDir(), 'content/svgs')
+    svgsDir: string = path.join(getRootDir(), 'content/svgs'),
+    deadlineAt?: number
   ): Promise<string[]> {
     fs.mkdirSync(svgsDir, { recursive: true });
+    this.ensurePlannedSvgLabels(protocol);
 
     const savedFiles = await Promise.all(
       protocol.steps.map(async (step) => {
         const fileName = step.svgFileName;
-        const svgCode = await SvgGeneratorService.generateStepSvg(
+        const planned = step.svgLabels && step.svgLabels.length > 0 ? [...step.svgLabels] : undefined;
+        const rawSvgCode = await SvgGeneratorService.generateStepSvg(
           apiKey,
           protocol.title,
           step.stepNumber,
           step.title,
           step.description,
-          { actionNote: step.actionNote, svgLabels: step.svgLabels }
+          { actionNote: step.actionNote, svgLabels: planned, deadlineAt }
         );
-        fs.writeFileSync(path.join(svgsDir, fileName), svgCode, 'utf-8');
-        step.svgLabels = SvgAuditService.extractSvgTextLabels(svgCode);
+        const syncedSvgCode = planned
+          ? SvgAuditService.enforcePlannedSvgLabels(rawSvgCode, planned)
+          : rawSvgCode;
+        fs.writeFileSync(path.join(svgsDir, fileName), syncedSvgCode, 'utf-8');
+        step.svgLabels = SvgAuditService.extractSvgTextLabels(syncedSvgCode);
         return fileName;
       })
     );
@@ -368,7 +411,7 @@ Rules:
     master: Protocol,
     translations: Record<string, Protocol>
   ): void {
-    for (const localized of Object.values(translations)) {
+    for (const [langCode, localized] of Object.entries(translations)) {
       if (!localized || !Array.isArray(localized.steps)) continue;
       for (let i = 0; i < master.steps.length; i++) {
         const masterLabels = master.steps[i]?.svgLabels || [];
@@ -380,7 +423,7 @@ Rules:
         } else if (currentLabels.length < masterLabels.length) {
           while (currentLabels.length < masterLabels.length) {
             const fallbackIdx = currentLabels.length;
-            currentLabels.push(masterLabels[fallbackIdx] || `STEP ${master.steps[i].stepNumber}`);
+            currentLabels.push(`STEP ${master.steps[i].stepNumber} (${langCode.toUpperCase()} #${fallbackIdx + 1})`);
           }
           targetStep.svgLabels = currentLabels;
         }
@@ -395,20 +438,21 @@ Rules:
    * - [Wave 3]: 정적 웹 빌드 및 GitHub/Vercel 자동 배포
    */
   public static async generateNewProtocol(options: GenerateProtocolOptions): Promise<PipelineExecutionResult> {
-    const { apiKey, triggerDeploy = true, dryRun = false, githubToken, onProgress } = options;
+    const { apiKey, triggerDeploy = true, dryRun = false, githubToken, deadlineMs = 260_000, onProgress } = options;
+    const deadlineAt = Date.now() + deadlineMs;
     const protocols = this.listProtocols();
-    const nextNum = protocols.length + 1;
+    const nextNum = this.getNextProtocolNumber(protocols);
     const nextId = `PR-${String(nextNum).padStart(2, '0')}`;
 
     const topic = options.topic || `원시 환경에서의 ${options.category || '도구'} 제작 및 생존 기술`;
 
     console.log(`🚀 [신규 생성 시작] ${nextId}: "${topic}"`);
     await onProgress?.(
-      `⏳ <b>[1/4] 한국어 마스터 본문 설계 중...</b>\n• ID: <code>${nextId}</code>\n• 주제: "${topic}"\n• Gemini 3.8 Flash 고증 검증 진행 중`
+      `⏳ [1/4] 한국어 마스터 본문 설계 중...\n• ID: ${nextId}\n• 주제: "${topic}"\n• Gemini 3.8 Flash 고증 검증 진행 중`
     );
 
     // [Wave 1] 본문 생성 및 고증 검증
-    const protocol = await this.generateProtocolContent(apiKey, topic, nextId, options.category);
+    const protocol = await this.generateProtocolContent(apiKey, topic, nextId, options.category, deadlineAt);
 
     if (dryRun) {
       return {
@@ -419,75 +463,97 @@ Rules:
     }
 
     const { workDir, isServerless } = this.prepareWritableWorkspace();
-    const svgsDir = path.join(workDir, 'content/svgs');
+    try {
+      const svgsDir = path.join(workDir, 'content/svgs');
 
-    await onProgress?.(
-      `🎨 <b>[2/4] 본문 완료! 도면 3종 + 6개국어 동시 병렬 생성 중...</b>\n• 확정 제목: <b>${protocol.title}</b>\n• Step 01~03 벡터 도면(병렬) & 6개국어 번역(병렬) 동시 처리 중`
-    );
-
-    // [Wave 2] 3단계 SVG 도면 생성(병렬) + 6개국어 번역(병렬)을 동시에 실행하여 대기 시간 절반 이상 단축
-    console.log(`⚡ [병렬 Wave 2] 3단계 SVG 도면 + 6개국어 번역 동시 실행 중...`);
-    const [, translations] = await Promise.all([
-      this.generateAndSaveSvgs(apiKey, protocol, svgsDir),
-      this.generateTranslations(apiKey, protocol).catch((e) => {
-        console.warn(`[다국어 생성 건너뜀] 번역 중 오류: ${e}`);
-        return {} as Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>;
-      }),
-    ]);
-
-    // SVG 실제 <text> 라벨 개수와 다국어 svgLabels 배열 길이 100% 정합성 맞춤
-    this.alignTranslatedSvgLabels(protocol, translations);
-
-    // 3. 마스터 JSON 및 다국어 JSON 저장
-    const fileSlug = `${String(nextNum).padStart(2, '0')}-${protocol.title.toLowerCase().replace(/[^a-z0-9가-힣]+/g, '-').replace(/^-|-$/g, '')}.json`;
-    const masterPath = path.join(workDir, 'content/protocols', fileSlug);
-    fs.writeFileSync(masterPath, JSON.stringify(protocol, null, 2), 'utf-8');
-
-    const localesDir = path.join(workDir, 'content/protocols/locales');
-    fs.mkdirSync(localesDir, { recursive: true });
-    const baseSlug = fileSlug.replace('.json', '');
-    for (const [langCode, localizedProto] of Object.entries(translations)) {
-      fs.writeFileSync(
-        path.join(localesDir, `${baseSlug}.${langCode}.json`),
-        JSON.stringify(localizedProto, null, 2),
-        'utf-8'
+      await onProgress?.(
+        `🎨 [2/4] 본문 완료! 도면 3종 + 6개국어 동시 병렬 생성 중...\n• 확정 제목: ${protocol.title}\n• Step 01~03 벡터 도면(병렬) & 6개국어 번역(병렬) 동시 처리 중`
       );
-    }
 
-    await onProgress?.(
-      `🚀 <b>[3/4] 도면 및 다국어 완료! 사이트 빌드 & 배포 중...</b>\n• 제목: <b>${protocol.title}</b>\n• 정적 HTML/PWA 컴파일 및 GitHub/Vercel 푸시 진행 중`
-    );
+      // [Wave 2] 3단계 SVG 도면 생성(병렬) + 6개국어 번역(병렬)을 동시에 실행하여 대기 시간 절반 이상 단축
+      console.log(`⚡ [병렬 Wave 2] 3단계 SVG 도면 + 6개국어 번역 동시 실행 중...`);
+      const [, translations] = await Promise.all([
+        this.generateAndSaveSvgs(apiKey, protocol, svgsDir, deadlineAt),
+        this.generateTranslations(apiKey, protocol, deadlineAt).catch((e) => {
+          console.warn(`[다국어 생성 건너뜀] 번역 중 오류: ${e}`);
+          return {} as Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>;
+        }),
+      ]);
 
-    // [Wave 3] 사이트 빌드 & Git Push
-    console.log(`🔨 [빌드 파이프라인] 전체 정적 웹 및 PWA 오프라인 캐시 재컴파일...`);
-    await buildSite({ rootDir: workDir, silent: isServerless });
+      // SVG 실제 <text> 라벨 개수와 다국어 svgLabels 배열 길이 100% 정합성 맞춤
+      this.alignTranslatedSvgLabels(protocol, translations);
 
-    let deployResult;
-    if (triggerDeploy) {
-      console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);
-      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
-      deployResult = await DeployService.commitAndPush(
-        `feat(protocol): autonomous publication of ${nextId} ${protocol.title}`,
-        { cwd: workDir, githubToken, files }
+      const missingLocales = TARGET_LOCALE_CODES.filter((code) => !translations[code]);
+
+      // 3. 마스터 JSON 및 다국어 JSON 저장
+      const fileSlug = `${String(nextNum).padStart(2, '0')}-${protocol.title.toLowerCase().replace(/[^a-z0-9가-힣]+/g, '-').replace(/^-|-$/g, '')}.json`;
+      const masterPath = path.join(workDir, 'content/protocols', fileSlug);
+      fs.writeFileSync(masterPath, JSON.stringify(protocol, null, 2), 'utf-8');
+
+      const localesDir = path.join(workDir, 'content/protocols/locales');
+      fs.mkdirSync(localesDir, { recursive: true });
+      const baseSlug = fileSlug.replace('.json', '');
+      for (const [langCode, localizedProto] of Object.entries(translations)) {
+        fs.writeFileSync(
+          path.join(localesDir, `${baseSlug}.${langCode}.json`),
+          JSON.stringify(localizedProto, null, 2),
+          'utf-8'
+        );
+      }
+
+      await onProgress?.(
+        `🚀 [3/4] 도면 및 다국어 완료! 사이트 빌드 & 배포 중...\n• 제목: ${protocol.title}\n• 정적 HTML/PWA 컴파일 및 GitHub/Vercel 푸시 진행 중`
       );
+
+      // [Wave 3] 사이트 빌드 & Git Push
+      console.log(`🔨 [빌드 파이프라인] 전체 정적 웹 및 PWA 오프라인 캐시 재컴파일...`);
+      await buildSite({ rootDir: workDir, silent: isServerless });
+
+      let deployResult;
+      if (triggerDeploy) {
+        console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);
+        const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
+        deployResult = await DeployService.commitAndPush(
+          `feat(protocol): autonomous publication of ${nextId} ${protocol.title}`,
+          { cwd: workDir, githubToken, files }
+        );
+        if (!deployResult.success) {
+          throw new Error(`사이트 빌드는 완료되었으나 GitHub 원격 배포에 실패했습니다: ${deployResult.error}`);
+        }
+      }
+
+      const liveUrl = `${SITE_META.siteUrl}/protocol-${String(nextNum).padStart(2, '0')}`;
+
+      return {
+        success: true,
+        protocol,
+        message: `프로토콜 ${nextId} (${protocol.title}) 발행 및 배포 완료!`,
+        missingLocales: missingLocales.length > 0 ? missingLocales : undefined,
+        deployResult,
+        liveUrl,
+      };
+    } finally {
+      this.cleanupWorkspace(workDir, isServerless);
     }
-
-    const liveUrl = `${SITE_META.siteUrl}/protocol-${String(nextNum).padStart(2, '0')}`;
-
-    return {
-      success: true,
-      protocol,
-      message: `프로토콜 ${nextId} (${protocol.title}) 발행 및 배포 완료!`,
-      deployResult,
-      liveUrl,
-    };
   }
 
   /**
    * 기존 프로토콜 AI 수정 파이프라인 (로컬 & 서버리스 겸용)
    */
   public static async editExistingProtocol(options: EditProtocolOptions): Promise<PipelineExecutionResult> {
-    const { apiKey, protocolId, instructions, regenerateSvgs = false, triggerDeploy = true, dryRun = false, githubToken } = options;
+    const {
+      apiKey,
+      protocolId,
+      instructions,
+      regenerateSvgs = false,
+      regenerateLocales = true,
+      triggerDeploy = true,
+      dryRun = false,
+      githubToken,
+      deadlineMs = 260_000,
+      onProgress,
+    } = options;
+    const deadlineAt = Date.now() + deadlineMs;
 
     const existingInfo = this.getProtocolById(protocolId);
     if (!existingInfo) {
@@ -497,6 +563,9 @@ Rules:
     const { data: currentProto } = existingInfo;
 
     console.log(`✏️ [프로토콜 수정 시작] ${currentProto.protocolId}: "${instructions}"`);
+    await onProgress?.(
+      `⏳ [1/3] 프로토콜 ${currentProto.protocolId} 본문 AI 수정 중...\n• 지침: "${instructions}"`
+    );
 
     const prompt = `
 당신은 실전 야생 생존 가이드(SURVIVAL PROTOCOL)의 편집자입니다.
@@ -518,10 +587,12 @@ ${instructions}
     const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
       responseMimeType: 'application/json',
       temperature: 0.2,
-      timeoutMs: 40000,
+      timeoutMs: 45000,
+      deadlineAt,
     });
 
     const updatedProto: Protocol = JSON.parse(raw);
+    this.ensurePlannedSvgLabels(updatedProto);
     const validation = this.validateProtocol(updatedProto);
     if (!validation.valid) {
       throw new Error(`수정된 프로토콜이 유효성 검사를 통과하지 못했습니다:\n${validation.errors.join('\n')}`);
@@ -536,61 +607,88 @@ ${instructions}
     }
 
     const { workDir, isServerless } = this.prepareWritableWorkspace();
-    const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
-    const filePath = targetInfo.filePath;
-
-    // SVG 재생성 옵션이 켜져 있는 경우
-    if (regenerateSvgs) {
-      console.log(`🎨 [SVG 도면 재생성] 도면 재생성 중...`);
-      await this.generateAndSaveSvgs(apiKey, updatedProto, path.join(workDir, 'content/svgs'));
-    }
-
-    // 마스터 파일 갱신 (svgLabels 포함)
-    fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
-
-    // 6대 글로벌 타겟 언어(EN, JA, ES, DE, PT, zh-TW) 번역본 동기화
     try {
-      console.log(`🌐 [다국어 동기화] 6개국어 번역본 및 도면 라벨 재합성...`);
-      const translations = await this.generateTranslations(apiKey, updatedProto);
-      const localesDir = path.join(workDir, 'content/protocols/locales');
-      fs.mkdirSync(localesDir, { recursive: true });
-      const baseName = path.basename(filePath, '.json');
-      for (const [langCode, localizedProto] of Object.entries(translations)) {
-        fs.writeFileSync(
-          path.join(localesDir, `${baseName}.${langCode}.json`),
-          JSON.stringify(localizedProto, null, 2),
-          'utf-8'
-        );
-      }
-    } catch (e) {
-      console.warn(`[다국어 동기화 건너뜀]: ${e}`);
-    }
+      const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
+      const filePath = targetInfo.filePath;
+      const deletedPaths: string[] = [];
 
-    // 사이트 빌드
-    console.log(`🔨 [빌드 파이프라인] 사이트 재컴파일...`);
-    await buildSite({ rootDir: workDir, silent: isServerless });
-
-    // Git Push & Vercel 배포
-    let deployResult;
-    if (triggerDeploy) {
-      console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);
-      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
-      deployResult = await DeployService.commitAndPush(
-        `fix(protocol): AI update ${updatedProto.protocolId} per instruction: ${instructions.slice(0, 50)}`,
-        { cwd: workDir, githubToken, files }
+      await onProgress?.(
+        `🌐 [2/3] 본문 수정 완료! 다국어 번역${regenerateSvgs ? ' 및 SVG 도면' : ''} 병렬 동기화 중...`
       );
+
+      const [, translations] = await Promise.all([
+        regenerateSvgs
+          ? this.generateAndSaveSvgs(apiKey, updatedProto, path.join(workDir, 'content/svgs'), deadlineAt)
+          : Promise.resolve([]),
+        regenerateLocales
+          ? this.generateTranslations(apiKey, updatedProto, deadlineAt).catch((e) => {
+              console.warn(`[다국어 동기화 건너뜀]: ${e}`);
+              return {} as Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>;
+            })
+          : Promise.resolve({} as Record<'en' | 'ja' | 'es' | 'de' | 'pt' | 'zh-TW', Protocol>),
+      ]);
+
+      this.alignTranslatedSvgLabels(updatedProto, translations);
+
+      // 마스터 파일 갱신 (svgLabels 포함)
+      fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
+
+      let missingLocales: string[] = [];
+      if (regenerateLocales) {
+        const localesDir = path.join(workDir, 'content/protocols/locales');
+        fs.mkdirSync(localesDir, { recursive: true });
+        const baseName = path.basename(filePath, '.json');
+
+        for (const langCode of TARGET_LOCALE_CODES) {
+          const locFilePath = path.join(localesDir, `${baseName}.${langCode}.json`);
+          const localizedProto = translations[langCode];
+          if (localizedProto) {
+            fs.writeFileSync(locFilePath, JSON.stringify(localizedProto, null, 2), 'utf-8');
+          } else {
+            missingLocales.push(langCode);
+            // 번역 실패 시 구버전 Stale 파일이 남아 화면 불일치를 일으키지 않도록 제거
+            if (fs.existsSync(locFilePath)) {
+              fs.unlinkSync(locFilePath);
+              deletedPaths.push(`content/protocols/locales/${baseName}.${langCode}.json`);
+            }
+          }
+        }
+      }
+
+      await onProgress?.(`🚀 [3/3] 사이트 재빌드 및 GitHub/Vercel 배포 진행 중...`);
+
+      // 사이트 빌드
+      console.log(`🔨 [빌드 파이프라인] 사이트 재컴파일...`);
+      await buildSite({ rootDir: workDir, silent: isServerless });
+
+      // Git Push & Vercel 배포
+      let deployResult;
+      if (triggerDeploy) {
+        console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);
+        const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
+        deployResult = await DeployService.commitAndPush(
+          `fix(protocol): AI update ${updatedProto.protocolId} per instruction: ${instructions.slice(0, 50)}`,
+          { cwd: workDir, githubToken, files, deletedPaths: deletedPaths.length > 0 ? deletedPaths : undefined }
+        );
+        if (!deployResult.success) {
+          throw new Error(`사이트 빌드는 완료되었으나 GitHub 원격 배포에 실패했습니다: ${deployResult.error}`);
+        }
+      }
+
+      const num = updatedProto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
+      const liveUrl = `${SITE_META.siteUrl}/protocol-${num}`;
+
+      return {
+        success: true,
+        protocol: updatedProto,
+        message: `프로토콜 ${updatedProto.protocolId} 수정 및 재배포 완료!`,
+        missingLocales: missingLocales.length > 0 ? missingLocales : undefined,
+        deployResult,
+        liveUrl,
+      };
+    } finally {
+      this.cleanupWorkspace(workDir, isServerless);
     }
-
-    const num = updatedProto.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
-    const liveUrl = `${SITE_META.siteUrl}/protocol-${num}`;
-
-    return {
-      success: true,
-      protocol: updatedProto,
-      message: `프로토콜 ${updatedProto.protocolId} 수정 및 재배포 완료!`,
-      deployResult,
-      liveUrl,
-    };
   }
 
   /**
@@ -662,7 +760,7 @@ ${instructions}
     }>;
   } {
     const published = this.listProtocols();
-    const nextNum = published.length + 1;
+    const nextNum = this.getNextProtocolNumber(published);
     const nextId = `PR-${String(nextNum).padStart(2, '0')}`;
     const publishedCategories = new Set(published.map((p) => p.category));
     const publishedTitles = published.map((p) => p.title);
@@ -752,44 +850,60 @@ ${instructions}
     }
 
     const { workDir, isServerless } = this.prepareWritableWorkspace();
-    const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
-    const archiveDir = path.join(workDir, 'content/protocols/_archived_shells');
-    fs.mkdirSync(archiveDir, { recursive: true });
+    try {
+      const targetInfo = this.getProtocolById(protocolId, path.join(workDir, 'content/protocols'))!;
+      const archiveDir = path.join(workDir, 'content/protocols/_archived_shells');
+      fs.mkdirSync(archiveDir, { recursive: true });
 
-    const deletedPaths: string[] = [];
-    const baseFileName = path.basename(targetInfo.filePath);
-    const baseSlug = path.basename(targetInfo.filePath, '.json');
+      const deletedPaths: string[] = [];
+      const baseFileName = path.basename(targetInfo.filePath);
+      const baseSlug = path.basename(targetInfo.filePath, '.json');
+      const protoNum = targetInfo.data.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
 
-    // 1. 마스터 JSON 이동
-    const destJson = path.join(archiveDir, baseFileName);
-    fs.renameSync(targetInfo.filePath, destJson);
-    deletedPaths.push(`content/protocols/${baseFileName}`);
+      // 1. 마스터 JSON 이동
+      const destJson = path.join(archiveDir, baseFileName);
+      fs.renameSync(targetInfo.filePath, destJson);
+      deletedPaths.push(`content/protocols/${baseFileName}`);
 
-    // 2. 관련 6개국어 번역 파일 이동
-    const localesDir = path.join(workDir, 'content/protocols/locales');
-    for (const code of ['en', 'ja', 'es', 'de', 'pt', 'zh-TW']) {
-      const locFile = path.join(localesDir, `${baseSlug}.${code}.json`);
-      if (fs.existsSync(locFile)) {
-        fs.renameSync(locFile, path.join(archiveDir, `${baseSlug}.${code}.json`));
-        deletedPaths.push(`content/protocols/locales/${baseSlug}.${code}.json`);
+      // 2. 관련 6개국어 번역 파일 이동
+      const localesDir = path.join(workDir, 'content/protocols/locales');
+      for (const code of TARGET_LOCALE_CODES) {
+        const locFile = path.join(localesDir, `${baseSlug}.${code}.json`);
+        if (fs.existsSync(locFile)) {
+          fs.renameSync(locFile, path.join(archiveDir, `${baseSlug}.${code}.json`));
+          deletedPaths.push(`content/protocols/locales/${baseSlug}.${code}.json`);
+        }
       }
-    }
 
-    // 3. 사이트 재컴파일 & 배포
-    await buildSite({ rootDir: workDir, silent: true });
-    if (options.triggerDeploy) {
-      const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
-      await DeployService.commitAndPush(
-        `chore(protocol): archive ${targetInfo.data.protocolId} (${targetInfo.data.title})`,
-        { cwd: workDir, githubToken: options.githubToken, files, deletedPaths }
-      );
-    }
+      // 2-1. 기존 빌드된 public/protocol-NN.html 좀비 파일 제거
+      const compiledHtmlFile = `protocol-${protoNum}.html`;
+      const compiledHtmlPath = path.join(workDir, 'public', compiledHtmlFile);
+      if (fs.existsSync(compiledHtmlPath)) {
+        fs.unlinkSync(compiledHtmlPath);
+      }
+      deletedPaths.push(`public/${compiledHtmlFile}`);
 
-    return {
-      success: true,
-      message: `프로토콜 [${targetInfo.data.protocolId}]이 보관소로 안전하게 격리 이동되었습니다.`,
-      protocolId: targetInfo.data.protocolId,
-    };
+      // 3. 사이트 재컴파일 & 배포
+      await buildSite({ rootDir: workDir, silent: true });
+      if (options.triggerDeploy) {
+        const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
+        const deployResult = await DeployService.commitAndPush(
+          `chore(protocol): archive ${targetInfo.data.protocolId} (${targetInfo.data.title})`,
+          { cwd: workDir, githubToken: options.githubToken, files, deletedPaths }
+        );
+        if (!deployResult.success) {
+          throw new Error(`사이트 재컴파일은 완료되었으나 GitHub 원격 배포에 실패했습니다: ${deployResult.error}`);
+        }
+      }
+
+      return {
+        success: true,
+        message: `프로토콜 [${targetInfo.data.protocolId}]이 보관소로 안전하게 격리 이동되었습니다.`,
+        protocolId: targetInfo.data.protocolId,
+      };
+    } finally {
+      this.cleanupWorkspace(workDir, isServerless);
+    }
   }
 
   /**

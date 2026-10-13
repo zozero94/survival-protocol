@@ -99,6 +99,7 @@ export class DefaultTelegramApiClient implements ITelegramApiClient {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: body ? JSON.stringify(body) : undefined,
+      signal: AbortSignal.timeout(15000),
     });
     return res.json();
   }
@@ -160,6 +161,9 @@ export class DefaultTelegramApiClient implements ITelegramApiClient {
     });
 
     if (!res?.ok) {
+      if (String(res?.description || '').includes('message is not modified')) {
+        return { ok: true, result: { message_id: messageId } };
+      }
       return this.request('editMessageText', {
         chat_id: chatId,
         message_id: messageId,
@@ -300,10 +304,12 @@ export class TelegramBotService {
     // 1. 일반 텍스트 메시지 처리
     if (update.message && update.message.text) {
       const reply = await this.handleMessage(update.message.chat.id, update.message.text);
-      await this.client.sendMessage(update.message.chat.id, reply.text, {
-        parse_mode: reply.parse_mode,
-        reply_markup: reply.reply_markup,
-      });
+      if (!reply.alreadySent && reply.text) {
+        await this.client.sendMessage(update.message.chat.id, reply.text, {
+          parse_mode: reply.parse_mode,
+          reply_markup: reply.reply_markup,
+        });
+      }
     }
 
     // 2. 인라인 버튼 콜백 쿼리 처리
@@ -318,7 +324,7 @@ export class TelegramBotService {
   public async handleMessage(
     chatId: number | string,
     text: string
-  ): Promise<{ text: string; parse_mode?: string; reply_markup?: TelegramInlineKeyboard }> {
+  ): Promise<{ text: string; parse_mode?: string; reply_markup?: TelegramInlineKeyboard; alreadySent?: boolean }> {
     // 1. 보안 인가 확인
     if (this.allowedChatId && String(chatId) !== this.allowedChatId) {
       return { text: '⛔ [비인가 접근 차단] 승인되지 않은 사용자 ID입니다.' };
@@ -363,11 +369,15 @@ export class TelegramBotService {
         return { text: await this.handleDeployCommand(), parse_mode: 'HTML' };
 
       case '/generate':
-      case '/new':
-        return { text: await this.handleGenerateCommand(parsed.args, chatId), parse_mode: 'HTML' };
+      case '/new': {
+        const genRes = await this.handleGenerateCommand(parsed.args, chatId);
+        return { text: genRes.text, parse_mode: 'HTML', alreadySent: genRes.alreadySent };
+      }
 
-      case '/edit':
-        return { text: await this.handleEditCommand(parsed.args, chatId), parse_mode: 'HTML' };
+      case '/edit': {
+        const editRes = await this.handleEditCommand(parsed.args, chatId);
+        return { text: editRes.text, parse_mode: 'HTML', alreadySent: editRes.alreadySent };
+      }
 
       default:
         return {
@@ -435,7 +445,7 @@ export class TelegramBotService {
         const recIdx = Number(rawPayload.replace('rec:', ''));
         const rec = ProtocolGeneratorService.getRecommendedTopics();
         const matched = rec.candidates[recIdx] || rec.candidates[0];
-        topic = matched ? matched.title : '데브리 헛(Debris Hut) A프레임 단열 은신처 구축법';
+        topic = matched ? matched.title : '불 없이 체온을 지키는 낙엽 움막 만드는 법';
       } else {
         try {
           topic = decodeURIComponent(rawPayload);
@@ -443,9 +453,10 @@ export class TelegramBotService {
           topic = rawPayload;
         }
       }
-      await this.client.sendMessage(chatId, `🚀 추천 주제 [${topic}] 자율 생성을 시작합니다!`);
-      const res = await this.handleGenerateCommand(topic, chatId);
-      await this.client.sendMessage(chatId, res, { parse_mode: 'HTML' });
+      const genRes = await this.handleGenerateCommand(topic, chatId);
+      if (!genRes.alreadySent && genRes.text) {
+        await this.client.sendMessage(chatId, genRes.text, { parse_mode: 'HTML' });
+      }
     }
   }
 
@@ -686,8 +697,8 @@ ${candidateLines}
   }
 
   private async handleDeployCommand(): Promise<string> {
+    const { workDir, isServerless } = ProtocolGeneratorService.prepareWritableWorkspace();
     try {
-      const { workDir, isServerless } = ProtocolGeneratorService.prepareWritableWorkspace();
       await buildSite({ rootDir: workDir, silent: true });
       const files = isServerless ? DeployService.collectWorkspaceFiles(workDir) : undefined;
       const deploy = await DeployService.commitAndPush('chore: manual rebuild and deploy via telegram bot', {
@@ -701,12 +712,17 @@ ${candidateLines}
       return `⚠️ 빌드는 완료되었으나 푸시 실패: ${deploy.error}`;
     } catch (e) {
       return `❌ 빌드 중 오류 발생: ${e}`;
+    } finally {
+      ProtocolGeneratorService.cleanupWorkspace(workDir, isServerless);
     }
   }
 
-  private async handleGenerateCommand(topic: string, chatId: number | string): Promise<string> {
+  private async handleGenerateCommand(
+    topic: string,
+    chatId: number | string
+  ): Promise<{ text: string; alreadySent: boolean }> {
     if (!this.geminiApiKey) {
-      return '❌ GEMINI_API_KEY가 설정되어 있지 않습니다.';
+      return { text: '❌ GEMINI_API_KEY가 설정되어 있지 않습니다.', alreadySent: false };
     }
 
     const initialSent = await this.client.sendMessage(
@@ -715,13 +731,21 @@ ${candidateLines}
       { parse_mode: 'HTML' }
     );
     const progressMsgId: number | undefined = initialSent?.result?.message_id;
+    let skipFirstWaveProgress = true;
 
-    const updateProgress = async (statusText: string) => {
+    const updateProgress = async (statusText: string): Promise<boolean> => {
+      if (skipFirstWaveProgress && statusText.includes('[1/4]')) {
+        skipFirstWaveProgress = false;
+        return false;
+      }
+      skipFirstWaveProgress = false;
       try {
         if (progressMsgId && this.client.editMessageText) {
-          await this.client.editMessageText(chatId, progressMsgId, statusText, { parse_mode: 'HTML' });
+          const editRes = await this.client.editMessageText(chatId, progressMsgId, statusText, { parse_mode: 'HTML' });
+          return Boolean(editRes?.ok);
         }
       } catch {}
+      return false;
     };
 
     try {
@@ -733,34 +757,60 @@ ${candidateLines}
         onProgress: updateProgress,
       });
 
-      const doneMsg = `🎉 <b>[4/4] 신규 프로토콜 발행 & 배포 성공!</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
-      await updateProgress(doneMsg);
-      return doneMsg;
+      const localeWarning = result.missingLocales?.length
+        ? `\n⚠️ <i>일부 언어 번역 생략: ${result.missingLocales.join(', ')}</i>`
+        : '';
+      const doneMsg = `🎉 <b>[4/4] 신규 프로토콜 발행 & 배포 성공!</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}${localeWarning}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      const edited = await updateProgress(doneMsg);
+      return { text: doneMsg, alreadySent: edited };
     } catch (e: any) {
       const errMsg = `❌ <b>프로토콜 생성 중단</b>:\n${e.message || String(e)}`;
-      await updateProgress(errMsg);
-      return errMsg;
+      const edited = await updateProgress(errMsg);
+      return { text: errMsg, alreadySent: edited };
     }
   }
 
-  private async handleEditCommand(args: string, chatId: number | string): Promise<string> {
+  private async handleEditCommand(
+    args: string,
+    chatId: number | string
+  ): Promise<{ text: string; alreadySent: boolean }> {
     if (!this.geminiApiKey) {
-      return '❌ GEMINI_API_KEY가 설정되어 있지 않습니다.';
+      return { text: '❌ GEMINI_API_KEY가 설정되어 있지 않습니다.', alreadySent: false };
     }
 
     const parts = args.trim().split(/\s+/);
     if (parts.length < 2) {
-      return '⚠️ <b>형식 오류!</b> 다음과 같이 입력하세요:\n<code>/edit [PR-NN] [수정할 내용]</code>\n예: <code>/edit PR-01 숯가루 채집 방법을 더 자세히 적어줘</code>';
+      return {
+        text: '⚠️ <b>형식 오류!</b> 다음과 같이 입력하세요:\n<code>/edit [PR-NN] [수정할 내용]</code>\n예: <code>/edit PR-01 숯가루 채집 방법을 더 자세히 적어줘</code>',
+        alreadySent: false,
+      };
     }
 
     const protocolId = parts[0];
     const instructions = parts.slice(1).join(' ');
 
-    await this.client.sendMessage(
+    const initialSent = await this.client.sendMessage(
       chatId,
-      `⚙️ <b>[프로토콜 AI 수정 파이프라인 가동]</b>\n대상: <code>${protocolId}</code>\n수정 지침: "${instructions}"\n- 고증 검증 및 JSON 갱신\n- 다국어 번역 동기화\n- 사이트 재컴파일 & Vercel 배포 진행 중...`,
+      `⚙️ <b>[1/3] 프로토콜 AI 수정 파이프라인 가동</b>\n대상: <code>${protocolId}</code>\n수정 지침: "${instructions}"`,
       { parse_mode: 'HTML' }
     );
+    const progressMsgId: number | undefined = initialSent?.result?.message_id;
+    let skipFirstEditProgress = true;
+
+    const updateProgress = async (statusText: string): Promise<boolean> => {
+      if (skipFirstEditProgress && statusText.includes('[1/3]')) {
+        skipFirstEditProgress = false;
+        return false;
+      }
+      skipFirstEditProgress = false;
+      try {
+        if (progressMsgId && this.client.editMessageText) {
+          const editRes = await this.client.editMessageText(chatId, progressMsgId, statusText, { parse_mode: 'HTML' });
+          return Boolean(editRes?.ok);
+        }
+      } catch {}
+      return false;
+    };
 
     try {
       const result = await ProtocolGeneratorService.editExistingProtocol({
@@ -769,11 +819,19 @@ ${candidateLines}
         instructions,
         triggerDeploy: true,
         githubToken: this.githubToken,
+        onProgress: updateProgress,
       });
 
-      return `🎉 <b>[프로토콜 수정 & 배포 완료!]</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      const localeWarning = result.missingLocales?.length
+        ? `\n⚠️ <i>일부 언어 번역 생략: ${result.missingLocales.join(', ')}</i>`
+        : '';
+      const doneMsg = `🎉 <b>[프로토콜 수정 & 배포 완료!]</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}${localeWarning}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      const edited = await updateProgress(doneMsg);
+      return { text: doneMsg, alreadySent: edited };
     } catch (e: any) {
-      return `❌ 프로토콜 수정 실패:\n${e.message || String(e)}`;
+      const errMsg = `❌ 프로토콜 수정 실패:\n${e.message || String(e)}`;
+      const edited = await updateProgress(errMsg);
+      return { text: errMsg, alreadySent: edited };
     }
   }
 

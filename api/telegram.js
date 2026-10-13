@@ -86,12 +86,24 @@ export default async function handler(req, res) {
     }
 
     // 5. 봇 서비스 실행 및 업데이트 처리
+    // Vercel Fluid Compute (maxDuration: 300s) 환경에서 텔레그램 자체의 60초 웹훅 타임아웃 및 재전송을 원천 방지하기 위해
+    // waitUntil이 지원되면 텔레그램 서버에는 즉시 200 OK를 반환하고 백그라운드에서 최대 300초간 안전하게 실행한다.
     const bot = new TelegramBotService({
       botToken,
       allowedChatId: chatId,
       geminiApiKey,
       githubToken,
     });
+
+    const vercelRequestContext = globalThis[Symbol.for('@vercel/request-context')]?.get?.();
+    if (vercelRequestContext && typeof vercelRequestContext.waitUntil === 'function') {
+      vercelRequestContext.waitUntil(
+        bot.handleUpdate(update).catch((err) => {
+          console.error('❌ [Telegram Background Worker Error]:', err);
+        })
+      );
+      return res.status(200).json({ ok: true, background: true });
+    }
 
     await bot.handleUpdate(update);
 

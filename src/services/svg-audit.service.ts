@@ -736,6 +736,55 @@ ${bulletLines.join('\n')}
   }
 
   /**
+   * Wave 2 병렬 생성 시 SVG 내 <text> 요소의 개수와 문구를 사전에 기획된 plannedLabels 배열과 100% 일치하도록 강제 동기화
+   * - <text>가 더 많으면 초과 태그를 제거
+   * - <text>가 부족하면 안전 좌표에 누락 라벨을 추가한 뒤 정적 충돌 보정(autoFixStaticIssues) 수행
+   */
+  public static enforcePlannedSvgLabels(svgCode: string, plannedLabels?: string[]): string {
+    if (!plannedLabels || plannedLabels.length === 0) {
+      return svgCode;
+    }
+
+    const cleanPlanned = plannedLabels.map((l) => String(l || '').trim()).filter(Boolean);
+    if (cleanPlanned.length === 0) return svgCode;
+
+    let idx = 0;
+    let updated = svgCode.replace(/<text\b([^>]*)>([\s\S]*?)<\/text>/gi, (_full, attrs: string) => {
+      if (idx >= cleanPlanned.length) {
+        return '';
+      }
+      const replacement = cleanPlanned[idx++];
+      const escaped = replacement
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      return `<text${attrs}>${escaped}</text>`;
+    });
+
+    if (idx < cleanPlanned.length) {
+      const fallbackY = [30, 52, 298, 320];
+      const extraNodes: string[] = [];
+      while (idx < cleanPlanned.length) {
+        const label = cleanPlanned[idx];
+        const escaped = label
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        const y = fallbackY[idx] ?? Math.min(322, 30 + idx * 22);
+        const x = idx === 0 ? 24 : 340;
+        const anchor = idx === 0 ? 'start' : 'middle';
+        extraNodes.push(
+          `  <text x="${x}" y="${y}" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="${anchor}">${escaped}</text>`
+        );
+        idx++;
+      }
+      updated = updated.replace(/<\/svg>/i, `${extraNodes.join('\n')}\n</svg>`);
+    }
+
+    return this.autoFixStaticIssues(updated);
+  }
+
+  /**
    * 다국어(7개국어) 번역 라벨을 각각 SVG에 대입하여 모든 언어에서 경계 잘림/텍스트 겹침이 없는지 정적 감사 수행
    */
   public static auditMultilingualLabels(

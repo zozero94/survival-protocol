@@ -141,7 +141,10 @@ export class DeployService {
 
     try {
       // 1. 현재 브랜치 HEAD 참조 조회
-      const refRes = await fetch(`https://api.github.com/repos/${repo}/git/ref/heads/${branch}`, { headers });
+      const refRes = await fetch(`https://api.github.com/repos/${repo}/git/ref/heads/${branch}`, {
+        headers,
+        signal: AbortSignal.timeout(15000),
+      });
       if (!refRes.ok) {
         throw new Error(`GitHub Ref 조회 실패 (${refRes.status}): ${await refRes.text()}`);
       }
@@ -149,7 +152,10 @@ export class DeployService {
       const latestCommitSha: string = refData.object.sha;
 
       // 2. 현재 커밋의 Base Tree SHA 조회
-      const commitRes = await fetch(`https://api.github.com/repos/${repo}/git/commits/${latestCommitSha}`, { headers });
+      const commitRes = await fetch(`https://api.github.com/repos/${repo}/git/commits/${latestCommitSha}`, {
+        headers,
+        signal: AbortSignal.timeout(15000),
+      });
       if (!commitRes.ok) {
         throw new Error(`GitHub Commit 조회 실패 (${commitRes.status}): ${await commitRes.text()}`);
       }
@@ -184,6 +190,7 @@ export class DeployService {
             base_tree: baseTreeSha,
             tree: treeEntries,
           }),
+          signal: AbortSignal.timeout(20000),
         });
         if (!treeRes.ok) {
           throw new Error(`GitHub Tree 생성 실패 (${treeRes.status}): ${await treeRes.text()}`);
@@ -201,6 +208,7 @@ export class DeployService {
           tree: treeSha,
           parents: [latestCommitSha],
         }),
+        signal: AbortSignal.timeout(15000),
       });
       if (!newCommitRes.ok) {
         throw new Error(`GitHub Commit 생성 실패 (${newCommitRes.status}): ${await newCommitRes.text()}`);
@@ -216,6 +224,7 @@ export class DeployService {
           sha: newCommitSha,
           force: false,
         }),
+        signal: AbortSignal.timeout(15000),
       });
       if (!updateRefRes.ok) {
         throw new Error(`GitHub Ref 업데이트 실패 (${updateRefRes.status}): ${await updateRefRes.text()}`);

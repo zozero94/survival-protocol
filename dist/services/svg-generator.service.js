@@ -16,7 +16,13 @@ export class SvgGeneratorService {
     stepNumber        ,
     stepTitle        ,
     actionDescription        ,
-    options                                                                      = {}
+    options   
+                           
+                          
+                           
+                          
+                              
+      = {}
   )                  {
     const loopResult = await this.generateAndVerifyStepSvg(
       apiKey,
@@ -28,7 +34,8 @@ export class SvgGeneratorService {
         actionNote: options.actionNote,
       },
       options.maxAttempts ?? 2,
-      options.svgLabels
+      options.svgLabels,
+      { deadlineAt: options.deadlineAt, useAgentAudit: options.useAgentAudit }
     );
     return loopResult.svgCode;
   }
@@ -40,7 +47,8 @@ export class SvgGeneratorService {
     apiKey        ,
     context                ,
     maxAttempts         = SvgAuditService.HARD_MAX_ATTEMPTS,
-    plannedLabels           
+    plannedLabels           ,
+    runtimeOptions                                                   = {}
   )                                     {
     try {
       const labelConstraint =
@@ -52,11 +60,10 @@ export class SvgGeneratorService {
         context,
         apiKey,
         maxAttempts,
-        // 1ms 결정론적 기하/충돌/고증 정적 감사 + Auto-Fix 엔진을 사용하여 불필요한 2차 LLM 호출 지연 차단
-        auditFn: async (svgCode, ctx) => {
-          const autoFixed = SvgAuditService.autoFixStaticIssues(svgCode);
-          return SvgAuditService.auditSvgStatic(autoFixed, ctx);
-        },
+        // useAgentAudit 옵션 활성화 시 AI 검수 에이전트 실행, 기본은 1ms 결정론적 기하/충돌/고증 정적 감사 사용
+        auditFn: runtimeOptions.useAgentAudit
+          ? undefined
+          : async (svgCode, ctx) => SvgAuditService.auditSvgStatic(svgCode, ctx),
         extractFn: async (attempt        , remediationPrompt         ) => {
           const basePrompt = `
 당신은 실전 야생 생존 가이드의 도면 설계자입니다.
@@ -85,10 +92,14 @@ ${
           const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
             temperature: attempt === 1 ? 0.2 : 0.15,
             responseMimeType: 'text/plain',
-            timeoutMs: 22000,
+            timeoutMs: 35000,
             maxRetries: 2,
+            deadlineAt: runtimeOptions.deadlineAt,
           });
-          return SvgAuditService.autoFixStaticIssues(this.extractCleanSvg(raw));
+          const cleaned = this.extractCleanSvg(raw);
+          return plannedLabels && plannedLabels.length > 0
+            ? SvgAuditService.enforcePlannedSvgLabels(cleaned, plannedLabels)
+            : SvgAuditService.autoFixStaticIssues(cleaned);
         },
       });
 

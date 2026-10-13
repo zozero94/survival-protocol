@@ -7,8 +7,11 @@ import { CONFIG } from './config.js';
 import { UI_STRINGS } from './i18n/ui-strings.js';
 import { renderCanonicalProtocolPage } from './render.js';
 import { renderIndexPage } from './render-index.js';
-import { ShortsService, TopicCuratorService, PwaService, SeoService } from './services/index.js';
-import { EXTERNAL_RUNTIME_ASSETS, PWA_PATHS, SITE_META } from './site.config.js';
+import { ShortsService } from './services/shorts.service.js';
+import { TopicCuratorService } from './services/topic-curator.service.js';
+import { PwaService } from './services/pwa.service.js';
+import { SeoService } from './services/seo.service.js';
+import { EXTERNAL_RUNTIME_ASSETS, SITE_META } from './site.config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -201,8 +204,10 @@ export async function runPipeline() {
   ShortsService.convertProtocolToShorts(firstProto, shortsDir);
   console.log(`🎬 [Shorts Service] 45초 유튜브 쇼츠 마스터 대본 생성 완료: shorts/01-water-purification/`);
 
-  // 6. 다음 주제 기획 (TopicCurator Service - 자율 성장형 지식 트리 기반)
-  if (CONFIG.geminiApiKey) {
+  // 6. 다음 주제 기획 (TopicCurator Service - 명시적 요청 시에만 LLM 호출 수행하여 Vercel 정적 빌드 지연 차단)
+  const shouldPlanNextTopic =
+    process.env.RUN_TOPIC_CURATOR === '1' || process.argv.includes('--plan-next');
+  if (CONFIG.geminiApiKey && shouldPlanNextTopic) {
     console.log('\n🌳 [Topic Curator] 문명 복원 지식 트리 기반 차기 프론티어 주제 기획...');
     const treePath = path.join(defaultRootDir, 'content/knowledge-tree.json');
     try {

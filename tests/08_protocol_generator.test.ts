@@ -107,4 +107,27 @@ describe('⚡ [Suite 8: 프로토콜 자동 생성 & 고증 엔진] 유효성 �
     assert.strictEqual(res.commitHash, 'dry-run-hash-0000000');
     assert.strictEqual(res.pushed, false);
   });
+
+  it('getNextProtocolNumber는 중간 번호가 아카이브되어도 최대 번호 + 1을 반환하여 ID 충돌을 방지해야 한다', () => {
+    const nextNum = ProtocolGeneratorService.getNextProtocolNumber([
+      { protocolId: 'PR-01', category: 'WATER', title: '1', threatLevel: 'HIGH', summary: '', filePath: '' },
+      { protocolId: 'PR-03', category: 'SHELTER', title: '3', threatLevel: 'HIGH', summary: '', filePath: '' },
+    ]);
+    assert.strictEqual(nextNum, 4);
+  });
+
+  it('SvgAuditService.enforcePlannedSvgLabels는 SVG <text> 개수와 문구를 plannedLabels와 100% 일치시켜야 한다', async () => {
+    const { SvgAuditService } = await import('../src/services/svg-audit.service.ts');
+    const planned = ['STEP 01 // 첫째 라벨', '중심 기둥 나무', '바닥 낙엽 40cm', '완성 상태'];
+
+    // 1) <text>가 2개뿐인 SVG -> 4개로 보충되어야 함
+    const fewerSvg = `<svg viewBox="0 0 680 340"><rect x="10" y="10" width="660" height="320"/><text x="30" y="40">임시1</text><text x="30" y="80">임시2</text></svg>`;
+    const synced1 = SvgAuditService.enforcePlannedSvgLabels(fewerSvg, planned);
+    assert.deepStrictEqual(SvgAuditService.extractSvgTextLabels(synced1), planned);
+
+    // 2) <text>가 6개인 SVG -> 4개로 정리되어야 함
+    const moreSvg = `<svg viewBox="0 0 680 340"><text x="20" y="30">1</text><text x="20" y="60">2</text><text x="20" y="90">3</text><text x="20" y="120">4</text><text x="20" y="150">5</text><text x="20" y="180">6</text></svg>`;
+    const synced2 = SvgAuditService.enforcePlannedSvgLabels(moreSvg, planned);
+    assert.deepStrictEqual(SvgAuditService.extractSvgTextLabels(synced2), planned);
+  });
 });
