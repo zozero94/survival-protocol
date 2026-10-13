@@ -16,7 +16,7 @@ export class SvgGeneratorService {
     stepNumber: string,
     stepTitle: string,
     actionDescription: string,
-    options: { maxAttempts?: number; actionNote?: string } = {}
+    options: { maxAttempts?: number; actionNote?: string; svgLabels?: string[] } = {}
   ): Promise<string> {
     const loopResult = await this.generateAndVerifyStepSvg(
       apiKey,
@@ -27,7 +27,8 @@ export class SvgGeneratorService {
         actionDescription,
         actionNote: options.actionNote,
       },
-      options.maxAttempts
+      options.maxAttempts ?? 2,
+      options.svgLabels
     );
     return loopResult.svgCode;
   }
@@ -38,13 +39,24 @@ export class SvgGeneratorService {
   public static async generateAndVerifyStepSvg(
     apiKey: string,
     context: SvgStepContext,
-    maxAttempts: number = SvgAuditService.HARD_MAX_ATTEMPTS
+    maxAttempts: number = SvgAuditService.HARD_MAX_ATTEMPTS,
+    plannedLabels?: string[]
   ): Promise<SvgVerificationLoopResult> {
     try {
+      const labelConstraint =
+        plannedLabels && plannedLabels.length > 0
+          ? `\n5-1. [다국어 핫스왑 정합성 필수]: 도면 내 <text> 태그는 반드시 정확히 ${plannedLabels.length}개만 작성하고, 문구는 다음 배열과 순서대로 일치시키십시오: ${JSON.stringify(plannedLabels)}`
+          : '';
+
       const result = await SvgAuditService.extractAndVerifyLoop({
         context,
         apiKey,
         maxAttempts,
+        // 1ms 결정론적 기하/충돌/고증 정적 감사 + Auto-Fix 엔진을 사용하여 불필요한 2차 LLM 호출 지연 차단
+        auditFn: async (svgCode, ctx) => {
+          const autoFixed = SvgAuditService.autoFixStaticIssues(svgCode);
+          return SvgAuditService.auditSvgStatic(autoFixed, ctx);
+        },
         extractFn: async (attempt: number, remediationPrompt?: string) => {
           const basePrompt = `
 당신은 실전 야생 생존 가이드의 도면 설계자입니다.
@@ -60,7 +72,7 @@ ${context.actionNote ? `[핵심 팁]: ${context.actionNote}` : ''}
 2. 외곽 가이드라인(<rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-dasharray="4,4"/>) 포함
 3. 선 색상: 주로 #F5F5F5, #888888 (선 굵기 stroke-width="1.5" ~ "2"), 핵심 포인트/화살표 강조는 #E02424
 4. 치수선, 화살표 방향, 부품의 모양이 본문 설명과 100% 일치해야 함
-5. 모든 <text> 라벨은 어려운 한자어나 긴 영어 전문용어 대신, 초보자도 한눈에 알아볼 수 있는 짧고 쉬운 한국어(예: "중심 기둥 나무 (3m)", "바닥 낙엽 깔기 (40cm)", "가운데 회전 막대")로 작성할 것!
+5. 모든 <text> 라벨은 어려운 한자어나 긴 영어 전문용어 대신, 초보자도 한눈에 알아볼 수 있는 짧고 쉬운 한국어(예: "중심 기둥 나무 (3m)", "바닥 낙엽 깔기 (40cm)", "가운데 회전 막대")로 작성할 것!${labelConstraint}
 6. 모든 <text> 라벨은 font-family="'JetBrains Mono', monospace"를 사용하며, 다른 텍스트나 도형 외곽선과 절대 겹치지 않게 최소 18px 이상 수직 이격 배치할 것
 7. 모든 요소는 안전 좌표(x: 15~665, y: 18~325) 내부에 배치하여 잘림(Clipping)을 방지할 것
 8. 오직 <svg ...>...</svg> 태그 코드만 반환하십시오. 마크다운 백틱이나 추가 설명 금지.
@@ -70,19 +82,13 @@ ${
     : ''
 }`.trim();
 
-          let lastErr: unknown;
-          for (let subTry = 1; subTry <= 2; subTry++) {
-            try {
-              const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
-                temperature: attempt === 1 && subTry === 1 ? 0.2 : 0.15,
-                responseMimeType: 'text/plain',
-              });
-              return this.extractCleanSvg(raw);
-            } catch (e) {
-              lastErr = e;
-            }
-          }
-          throw lastErr;
+          const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
+            temperature: attempt === 1 ? 0.2 : 0.15,
+            responseMimeType: 'text/plain',
+            timeoutMs: 22000,
+            maxRetries: 2,
+          });
+          return SvgAuditService.autoFixStaticIssues(this.extractCleanSvg(raw));
         },
       });
 
@@ -92,7 +98,7 @@ ${
       throw new Error('유효한 SVG 코드가 생성되지 않았습니다.');
     } catch (error) {
       console.warn(`[SvgGenerator] AI 생성 지연으로 비상 표준 기술 도면을 합성합니다: ${error}`);
-      const fallback = this.generateFallbackSvg(context.topicTitle, context.stepNumber, context.stepTitle);
+      const fallback = this.generateFallbackSvg(context.topicTitle, context.stepNumber, context.stepTitle, plannedLabels);
       return {
         svgCode: fallback,
         finalReport: SvgAuditService.auditSvgStatic(fallback, context),
@@ -118,18 +124,40 @@ ${
   /**
    * AI 오류 시 사용하는 고증 기반 비상 기하학 도면
    */
-  public static generateFallbackSvg(topicTitle: string, stepNumber: string, stepTitle: string): string {
+  public static generateFallbackSvg(
+    topicTitle: string,
+    stepNumber: string,
+    stepTitle: string,
+    plannedLabels?: string[]
+  ): string {
+    const labels =
+      plannedLabels && plannedLabels.length >= 3
+        ? plannedLabels
+        : [`STEP ${stepNumber} // 핵심 구조`, `[${stepTitle}]`, `${topicTitle.slice(0, 24)}`];
+
+    const yPositions = [32, 95, 290, 315];
+    const textNodes = labels
+      .slice(0, 4)
+      .map((lbl, idx) => {
+        const y = yPositions[idx] ?? 32 + idx * 24;
+        const x = idx === 0 ? 25 : 340;
+        const anchor = idx === 0 ? 'start' : 'middle';
+        const fill = idx === 1 ? '#E02424' : '#E5E5E5';
+        return `  <text x="${x}" y="${y}" fill="${fill}" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="${anchor}" font-weight="bold">${lbl.replace(/[<>&]/g, '')}</text>`;
+      })
+      .join('\n');
+
     return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" class="w-full max-w-2xl h-auto">
   <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4"/>
   
   <!-- 중앙 테크니컬 심볼 매트릭스 -->
-  <circle cx="340" cy="150" r="70" fill="none" stroke="#E5E5E5" stroke-width="2"/>
-  <circle cx="340" cy="150" r="64" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="2,2"/>
-  <line x1="250" y1="150" x2="430" y2="150" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="340" y1="60" x2="340" y2="240" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="340" cy="175" r="65" fill="none" stroke="#E5E5E5" stroke-width="2"/>
+  <circle cx="340" cy="175" r="58" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="250" y1="175" x2="430" y2="175" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="340" y1="105" x2="340" y2="245" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4,2"/>
   
   <!-- 45도 회전 기하 쐐기 -->
-  <rect x="305" y="115" width="70" height="70" fill="none" stroke="#E02424" stroke-width="2" transform="rotate(45 340 150)"/>
+  <rect x="308" y="143" width="64" height="64" fill="none" stroke="#E02424" stroke-width="2" transform="rotate(45 340 175)"/>
   
   <!-- 치수 화살표 -->
   <path d="M260 265 H420" stroke="#E5E5E5" stroke-width="1.5"/>
@@ -137,9 +165,7 @@ ${
   <path d="M420 260 L425 265 L420 270" fill="none" stroke="#E5E5E5" stroke-width="1.5"/>
   
   <!-- 텍스트 메타데이터 -->
-  <text x="340" y="290" fill="#A3A3A3" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" font-weight="bold">DIMENSION // STEP ${stepNumber}</text>
-  <text x="340" y="315" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" font-weight="bold">[${stepTitle}]</text>
-  <text x="25" y="32" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="10">SCHEMATIC REF // ${topicTitle.slice(0, 24)}</text>
+${textNodes}
 </svg>
 `.trim();
   }

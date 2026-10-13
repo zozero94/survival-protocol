@@ -67,6 +67,12 @@ function getRootDir()         {
                  
                                                                             
                                                                   
+                   
+                            
+                      
+                 
+                                                                            
+                                                                  
                                                                                         
                                                                                                                           
               
@@ -133,6 +139,30 @@ export class DefaultTelegramApiClient                               {
       // 마크업 또는 HTML 파싱 오류로 거절된 경우 평문으로 안전하게 폴백 전송
       return this.request('sendMessage', {
         chat_id: chatId,
+        text: text.replace(/<[^>]+>/g, ''),
+      });
+    }
+    return res;
+  }
+
+         async editMessageText(
+    chatId                 ,
+    messageId        ,
+    text        ,
+    options                                                                 = {}
+  ) {
+    const res = await this.request('editMessageText', {
+      chat_id: chatId,
+      message_id: messageId,
+      text,
+      parse_mode: options.parse_mode,
+      reply_markup: options.reply_markup,
+    });
+
+    if (!res?.ok) {
+      return this.request('editMessageText', {
+        chat_id: chatId,
+        message_id: messageId,
         text: text.replace(/<[^>]+>/g, ''),
       });
     }
@@ -679,11 +709,20 @@ ${candidateLines}
       return '❌ GEMINI_API_KEY가 설정되어 있지 않습니다.';
     }
 
-    await this.client.sendMessage(
+    const initialSent = await this.client.sendMessage(
       chatId,
-      `⚙️ <b>[프로토콜 생성 파이프라인 가동]</b>\n주제: "<code>${topic || '자율 추천'}</code>"\n- 100% 원시 고증 검증\n- 3단계 정밀 벡터 SVG 도면 생성\n- 다국어(EN, JA) 번역본 합성\n- Git Push & Vercel 배포\n\n잠시만 기다려 주십시오...`,
+      `⏳ <b>[1/4] 프로토콜 생성 파이프라인 가동</b>\n• 주제: "<code>${topic || '자율 추천'}</code>"\n• 현재 단계: 한국어 마스터 본문 및 고증 설계 중...`,
       { parse_mode: 'HTML' }
     );
+    const progressMsgId                     = initialSent?.result?.message_id;
+
+    const updateProgress = async (statusText        ) => {
+      try {
+        if (progressMsgId && this.client.editMessageText) {
+          await this.client.editMessageText(chatId, progressMsgId, statusText, { parse_mode: 'HTML' });
+        }
+      } catch {}
+    };
 
     try {
       const result = await ProtocolGeneratorService.generateNewProtocol({
@@ -691,11 +730,16 @@ ${candidateLines}
         topic: topic || undefined,
         triggerDeploy: true,
         githubToken: this.githubToken,
+        onProgress: updateProgress,
       });
 
-      return `🎉 <b>[신규 프로토콜 발행 & 배포 성공!]</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      const doneMsg = `🎉 <b>[4/4] 신규 프로토콜 발행 & 배포 성공!</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      await updateProgress(doneMsg);
+      return doneMsg;
     } catch (e     ) {
-      return `❌ 프로토콜 생성 실패:\n${e.message || String(e)}`;
+      const errMsg = `❌ <b>프로토콜 생성 중단</b>:\n${e.message || String(e)}`;
+      await updateProgress(errMsg);
+      return errMsg;
     }
   }
 

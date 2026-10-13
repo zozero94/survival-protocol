@@ -33,6 +33,7 @@ function getRootDir()         {
                           
                    
                        
+                                                            
  
 
                                       
@@ -44,6 +45,7 @@ function getRootDir()         {
                           
                    
                        
+                                                            
  
 
                                           
@@ -228,21 +230,24 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
       "title": "1단계: 쉬운 행동 중심 제목",
       "description": "어려운 용어 없이 손으로 따라 하기 쉽게 풀어 쓴 설명",
       "actionNote": "> 핵심 팁: 꼭 지켜야 할 점과 쉬운 원리 설명",
-      "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-01.svg"
+      "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-01.svg",
+      "svgLabels": ["STEP 01 // 핵심 요약", "주요 재료/부품 1", "치수 또는 방향 표시", "동작 결과 요약"]
     },
     {
       "stepNumber": "02",
       "title": "2단계: 쉬운 행동 중심 제목",
       "description": "어려운 용어 없이 손으로 따라 하기 쉽게 풀어 쓴 설명",
       "actionNote": "> 핵심 원리: 왜 이렇게 작동하는지 쉬운 설명",
-      "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-02.svg"
+      "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-02.svg",
+      "svgLabels": ["STEP 02 // 핵심 요약", "주요 재료/부품 2", "치수 또는 방향 표시", "동작 결과 요약"]
     },
     {
       "stepNumber": "03",
       "title": "3단계: 쉬운 행동 중심 제목",
       "description": "어려운 용어 없이 손으로 따라 하기 쉽게 풀어 쓴 설명",
       "actionNote": "> 주의할 점: 실패를 막는 실전 팁",
-      "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-03.svg"
+      "svgFileName": "${nextId.toLowerCase().replace(/[^a-z0-9]/g, '')}-step-03.svg",
+      "svgLabels": ["STEP 03 // 핵심 요약", "주요 재료/부품 3", "치수 또는 방향 표시", "완성 상태 요약"]
     }
   ],
   "fatalMistake": {
@@ -256,10 +261,23 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
     const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
       responseMimeType: 'application/json',
       temperature: 0.2,
-      timeoutMs: 40000,
+      timeoutMs: 28000,
     });
 
     const parsed           = JSON.parse(raw);
+    if (Array.isArray(parsed.steps)) {
+      for (const s of parsed.steps) {
+        if (!Array.isArray(s.svgLabels) || s.svgLabels.length === 0) {
+          s.svgLabels = [
+            `STEP ${s.stepNumber} // 핵심 구조`,
+            s.title.slice(0, 26),
+            parsed.materials?.[0]?.name || '자연 재료',
+            `[${parsed.protocolId} 도면]`,
+          ];
+        }
+      }
+    }
+
     const validation = this.validateProtocol(parsed);
     if (!validation.valid) {
       throw new Error(`생성된 프로토콜이 유효성 검사를 통과하지 못했습니다:\n${validation.errors.join('\n')}`);
@@ -283,7 +301,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
       { code: 'zh-TW', persona: 'Traditional Chinese (繁體中文，淺顯易懂、直白實用的日常求生指南，避免生僻術語)' },
     ];
 
-    const entries = await Promise.all(
+    const settled = await Promise.allSettled(
       localeSpecs.map(async ({ code, persona }) => {
         const prompt = `Translate the following primitive survival protocol JSON into ${persona}.
 Rules:
@@ -294,17 +312,27 @@ Rules:
 
         const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
           responseMimeType: 'application/json',
-          timeoutMs: 35000,
+          timeoutMs: 25000,
+          maxRetries: 2,
         });
         return [code, JSON.parse(raw)            ]         ;
       })
     );
 
+    const entries                                                                         = [];
+    for (const item of settled) {
+      if (item.status === 'fulfilled') {
+        entries.push(item.value);
+      } else {
+        console.warn(`[generateTranslations] 개별 언어 번역 지연/건너뜀: ${item.reason}`);
+      }
+    }
+
     return Object.fromEntries(entries)                                                                ;
   }
 
   /**
-   * 3단계별 테크니컬 벡터 SVG 도면 자동 생성(추출->검수->재추출->재검수 루프), svgLabels 추출 및 파일 저장
+   * 3단계별 테크니컬 벡터 SVG 도면 병렬 자동 생성(Promise.all), svgLabels 추출 및 파일 저장
    */
          static async generateAndSaveSvgs(
     apiKey        ,
@@ -312,31 +340,62 @@ Rules:
     svgsDir         = path.join(getRootDir(), 'content/svgs')
   )                    {
     fs.mkdirSync(svgsDir, { recursive: true });
-    const savedFiles           = [];
 
-    for (const step of protocol.steps) {
-      const fileName = step.svgFileName;
-      const svgCode = await SvgGeneratorService.generateStepSvg(
-        apiKey,
-        protocol.title,
-        step.stepNumber,
-        step.title,
-        step.description,
-        { actionNote: step.actionNote }
-      );
-      fs.writeFileSync(path.join(svgsDir, fileName), svgCode, 'utf-8');
-      step.svgLabels = SvgAuditService.extractSvgTextLabels(svgCode);
-      savedFiles.push(fileName);
-    }
+    const savedFiles = await Promise.all(
+      protocol.steps.map(async (step) => {
+        const fileName = step.svgFileName;
+        const svgCode = await SvgGeneratorService.generateStepSvg(
+          apiKey,
+          protocol.title,
+          step.stepNumber,
+          step.title,
+          step.description,
+          { actionNote: step.actionNote, svgLabels: step.svgLabels }
+        );
+        fs.writeFileSync(path.join(svgsDir, fileName), svgCode, 'utf-8');
+        step.svgLabels = SvgAuditService.extractSvgTextLabels(svgCode);
+        return fileName;
+      })
+    );
 
     return savedFiles;
   }
 
   /**
+   * 병렬 생성된 다국어 번역본의 svgLabels 배열 길이를 실제 생성된 SVG <text> 태그 개수와 100% 일치하도록 정렬
+   */
+          static alignTranslatedSvgLabels(
+    master          ,
+    translations                          
+  )       {
+    for (const localized of Object.values(translations)) {
+      if (!localized || !Array.isArray(localized.steps)) continue;
+      for (let i = 0; i < master.steps.length; i++) {
+        const masterLabels = master.steps[i]?.svgLabels || [];
+        const targetStep = localized.steps[i];
+        if (!targetStep) continue;
+        const currentLabels = Array.isArray(targetStep.svgLabels) ? [...targetStep.svgLabels] : [];
+        if (currentLabels.length > masterLabels.length) {
+          targetStep.svgLabels = currentLabels.slice(0, masterLabels.length);
+        } else if (currentLabels.length < masterLabels.length) {
+          while (currentLabels.length < masterLabels.length) {
+            const fallbackIdx = currentLabels.length;
+            currentLabels.push(masterLabels[fallbackIdx] || `STEP ${master.steps[i].stepNumber}`);
+          }
+          targetStep.svgLabels = currentLabels;
+        }
+      }
+    }
+  }
+
+  /**
    * 신규 프로토콜 완전 자동 생성 파이프라인 (로컬 & 서버리스 겸용)
+   * - [Wave 1]: 한국어 마스터 본문 기획 및 고증 검증
+   * - [Wave 2]: 3단계 SVG 도면(Promise.all) + 6개국어 번역(Promise.all) 완전 동시 병렬 실행
+   * - [Wave 3]: 정적 웹 빌드 및 GitHub/Vercel 자동 배포
    */
          static async generateNewProtocol(options                         )                                   {
-    const { apiKey, triggerDeploy = true, dryRun = false, githubToken } = options;
+    const { apiKey, triggerDeploy = true, dryRun = false, githubToken, onProgress } = options;
     const protocols = this.listProtocols();
     const nextNum = protocols.length + 1;
     const nextId = `PR-${String(nextNum).padStart(2, '0')}`;
@@ -344,8 +403,11 @@ Rules:
     const topic = options.topic || `원시 환경에서의 ${options.category || '도구'} 제작 및 생존 기술`;
 
     console.log(`🚀 [신규 생성 시작] ${nextId}: "${topic}"`);
+    await onProgress?.(
+      `⏳ <b>[1/4] 한국어 마스터 본문 설계 중...</b>\n• ID: <code>${nextId}</code>\n• 주제: "${topic}"\n• Gemini 3.8 Flash 고증 검증 진행 중`
+    );
 
-    // 1. 본문 생성 및 고증 검증
+    // [Wave 1] 본문 생성 및 고증 검증
     const protocol = await this.generateProtocolContent(apiKey, topic, nextId, options.category);
 
     if (dryRun) {
@@ -357,40 +419,49 @@ Rules:
     }
 
     const { workDir, isServerless } = this.prepareWritableWorkspace();
-
-    // 2. 도면 SVG 생성 및 저장 (step.svgLabels 자동 추출 포함)
     const svgsDir = path.join(workDir, 'content/svgs');
-    console.log(`🎨 [SVG 도면 생성] ${protocol.steps.length}개 정밀 벡터 도면 생성 중...`);
-    await this.generateAndSaveSvgs(apiKey, protocol, svgsDir);
 
-    // 3. 마스터 JSON 저장
+    await onProgress?.(
+      `🎨 <b>[2/4] 본문 완료! 도면 3종 + 6개국어 동시 병렬 생성 중...</b>\n• 확정 제목: <b>${protocol.title}</b>\n• Step 01~03 벡터 도면(병렬) & 6개국어 번역(병렬) 동시 처리 중`
+    );
+
+    // [Wave 2] 3단계 SVG 도면 생성(병렬) + 6개국어 번역(병렬)을 동시에 실행하여 대기 시간 절반 이상 단축
+    console.log(`⚡ [병렬 Wave 2] 3단계 SVG 도면 + 6개국어 번역 동시 실행 중...`);
+    const [, translations] = await Promise.all([
+      this.generateAndSaveSvgs(apiKey, protocol, svgsDir),
+      this.generateTranslations(apiKey, protocol).catch((e) => {
+        console.warn(`[다국어 생성 건너뜀] 번역 중 오류: ${e}`);
+        return {}                                                                ;
+      }),
+    ]);
+
+    // SVG 실제 <text> 라벨 개수와 다국어 svgLabels 배열 길이 100% 정합성 맞춤
+    this.alignTranslatedSvgLabels(protocol, translations);
+
+    // 3. 마스터 JSON 및 다국어 JSON 저장
     const fileSlug = `${String(nextNum).padStart(2, '0')}-${protocol.title.toLowerCase().replace(/[^a-z0-9가-힣]+/g, '-').replace(/^-|-$/g, '')}.json`;
     const masterPath = path.join(workDir, 'content/protocols', fileSlug);
     fs.writeFileSync(masterPath, JSON.stringify(protocol, null, 2), 'utf-8');
 
-    // 4. 6대 글로벌 타겟 언어(EN, JA, ES, DE, PT, zh-TW) 번역본 생성 및 저장
-    try {
-      console.log(`🌐 [다국어 생성] 6개국어(EN, JA, ES, DE, PT, zh-TW) 번역본 및 도면 라벨 생성 중...`);
-      const translations = await this.generateTranslations(apiKey, protocol);
-      const localesDir = path.join(workDir, 'content/protocols/locales');
-      fs.mkdirSync(localesDir, { recursive: true });
-      const baseSlug = fileSlug.replace('.json', '');
-      for (const [langCode, localizedProto] of Object.entries(translations)) {
-        fs.writeFileSync(
-          path.join(localesDir, `${baseSlug}.${langCode}.json`),
-          JSON.stringify(localizedProto, null, 2),
-          'utf-8'
-        );
-      }
-    } catch (e) {
-      console.warn(`[다국어 생성 건너뜀] 번역 중 오류: ${e}`);
+    const localesDir = path.join(workDir, 'content/protocols/locales');
+    fs.mkdirSync(localesDir, { recursive: true });
+    const baseSlug = fileSlug.replace('.json', '');
+    for (const [langCode, localizedProto] of Object.entries(translations)) {
+      fs.writeFileSync(
+        path.join(localesDir, `${baseSlug}.${langCode}.json`),
+        JSON.stringify(localizedProto, null, 2),
+        'utf-8'
+      );
     }
 
-    // 5. 사이트 빌드
+    await onProgress?.(
+      `🚀 <b>[3/4] 도면 및 다국어 완료! 사이트 빌드 & 배포 중...</b>\n• 제목: <b>${protocol.title}</b>\n• 정적 HTML/PWA 컴파일 및 GitHub/Vercel 푸시 진행 중`
+    );
+
+    // [Wave 3] 사이트 빌드 & Git Push
     console.log(`🔨 [빌드 파이프라인] 전체 정적 웹 및 PWA 오프라인 캐시 재컴파일...`);
     await buildSite({ rootDir: workDir, silent: isServerless });
 
-    // 6. Git Push & Vercel 배포 (로컬 또는 GitHub REST API)
     let deployResult;
     if (triggerDeploy) {
       console.log(`🚀 [배포] Git 커밋 및 origin/main 푸시...`);

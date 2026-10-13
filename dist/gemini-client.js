@@ -44,7 +44,7 @@ export async function callGeminiApi(
   }
 
   const maxAttempts = Math.max(1, Math.min(options.maxRetries ?? 3, 4));
-  const perAttemptTimeout = options.timeoutMs ?? 30000;
+  const perAttemptTimeout = options.timeoutMs ?? 25000;
   let lastError               = null;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
@@ -60,7 +60,8 @@ export async function callGeminiApi(
         const errorText = await response.text();
         lastError = new Error(`[Gemini API Error ${response.status} (${model})]: ${errorText}`);
         if ((response.status === 503 || response.status === 429) && attempt < maxAttempts) {
-          const delayMs = 800 * Math.pow(2, attempt - 1);
+          const jitter = Math.floor(Math.random() * 700);
+          const delayMs = 1200 * Math.pow(2, attempt - 1) + jitter;
           await new Promise((res) => setTimeout(res, delayMs));
           continue;
         }
@@ -84,7 +85,8 @@ export async function callGeminiApi(
         String(err).includes('503') ||
         String(err).includes('429');
       if (isTransient && attempt < maxAttempts) {
-        const delayMs = 800 * Math.pow(2, attempt - 1);
+        const jitter = Math.floor(Math.random() * 700);
+        const delayMs = 1200 * Math.pow(2, attempt - 1) + jitter;
         await new Promise((res) => setTimeout(res, delayMs));
         continue;
       }
