@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "協議 #02: 弓鑽摩擦生火技術 (Bow Drill)",
+  "title": "弓鑽摩擦生火技術 (Bow Drill)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[威脅等級：致命 (CRITICAL)]",
   "summary": "結合乾燥軟木與弓弦往復機械摩擦，產生400°C以上之高溫碳化木屑火種(Ember)，並透過精準供氧引燃明火的核心原始熱源技術。",

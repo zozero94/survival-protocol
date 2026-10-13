@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Protocolo #02: Fuego por Fricción con Arco Táctico (Bow Drill)",
+  "title": "Fuego por Fricción con Arco Táctico (Bow Drill)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
   "summary": "Técnica pirotécnica primitiva que utiliza la fricción mecánica entre madera blanda seca y un huso giratorio para generar brasas de carbón a más de 400°C, seguida de oxigenación controlada.",

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Protocolo #03: Construção de Abrigo Térmico A-Frame (Debris Hut)",
+  "title": "Construção de Abrigo Térmico A-Frame (Debris Hut)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
   "summary": "A exposição ao frio e à chuva causa hipotermia fatal em até 3 horas. Ao empilhar folhagem seca e galhos mortos para criar uma camada de ar estagnado (Dead Air Space), constrói-se um abrigo sem fogo que preserva o calor metabólico humano (80–100W).",

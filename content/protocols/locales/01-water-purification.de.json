@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "PROTOKOLL #01: Aufbereitung von Wildwasser (Aktivkohle-Filtration)",
+  "title": "Aufbereitung von Wildwasser (Aktivkohle-Filtration)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
   "summary": "Das Trinken von unbehandeltem Wildwasser führt durch bakterielle Ruhr und Giardiasis innerhalb von 72 Stunden zum Tod. Das Wasser muss mechanisch über Holzkohle gefiltert und anschließend zwingend abgekocht werden.",

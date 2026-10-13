@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Protokoll #03: Laubhütte (Debris Hut) A-Rahmen-Isolationsunterstand",
+  "title": "Laubhütte (Debris Hut) A-Rahmen-Isolationsunterstand",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
   "summary": "Ungeschützte Kälte- und Nässeexposition führt binnen 3 Stunden zu tödlicher Unterkühlung. Durch geometrisches Schichten von trockenem Laub und Totholz entsteht eine stehende Luftschicht (Dead Air Space), die allein durch 80–100W Körperwärme das Überleben sichert.",

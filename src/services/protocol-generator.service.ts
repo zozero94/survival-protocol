@@ -239,7 +239,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
 {
   "protocolId": "${nextId}",
   "category": "FIRE",
-  "title": "프로토콜 #${nextId.replace(/[^0-9]/g, '')}: [누구나 한눈에 이해할 수 있는 쉬운 기술 제목]",
+  "title": "[번호(#01, PR-01 등) 표기 없이 누구나 한눈에 이해할 수 있는 쉬운 기술 제목]",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[중요도: 필수 생존]",
   "summary": "2~3문장의 쉽고 명확한 상황 설명 및 해결 방법 요약",
@@ -294,6 +294,11 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
     });
 
     const parsed: Protocol = JSON.parse(raw);
+    if (typeof parsed.title === 'string') {
+      parsed.title = parsed.title
+        .replace(/^(?:프로토콜|생존\s*가이드|Protocol|プロトコル|Protocolo|Protokoll|生存指南|生存協議|協議|指南|PR)[\s#-]*\d+\s*[:：\-]\s*/i, '')
+        .trim();
+    }
     this.ensurePlannedSvgLabels(parsed);
 
     const validation = this.validateProtocol(parsed);

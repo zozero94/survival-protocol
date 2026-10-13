@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "協議 #03：落葉屋（Debris Hut）A字型斷熱避難所構築法",
+  "title": "落葉屋（Debris Hut）A字型斷熱避難所構築法",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[威脅等級：致命(CRITICAL)]",
   "summary": "在嚴寒風雨中暴露於野外會在3小時內導致致命失溫。透過幾何堆疊乾燥落葉與枯木形成靜止空氣層（Dead Air Space），無需火源即可僅憑人體代謝輻射熱（80～100W）維持核心體溫。",

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Protocolo #02: Fogo por Fricção com Arco e Fuso (Bow Drill)",
+  "title": "Fogo por Fricção com Arco e Fuso (Bow Drill)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
   "summary": "Tecnologia primitiva de ignição que utiliza o atrito mecânico entre madeira macia seca e um fuso rotativo para gerar brasa de carvão acima de 400°C, seguida de oxigenação controlada.",

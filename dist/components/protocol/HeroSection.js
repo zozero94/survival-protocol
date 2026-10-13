@@ -31,12 +31,9 @@ export function renderHeroSection(protocol          )         {
   </div>
 
   <!-- Large Bold Title -->
-  <h1 id="proto-main-title" data-proto="title" class="font-title text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-snug mb-2 uppercase">
+  <h1 id="proto-main-title" data-proto="title" class="font-title text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-snug mb-3.5 uppercase">
     ${protocol.title}
   </h1>
-  <p class="font-mono text-[11px] text-[#888] uppercase tracking-wider mb-3.5">
-    FIELD SURVIVAL PROTOCOL // ${protocol.protocolId}
-  </p>
 
   <!-- Clean Summary Paragraph with Left Accent Border -->
   <div class="border-l-2 border-white pl-3.5 py-1 text-xs sm:text-sm text-[#d1d1d1] leading-relaxed mb-4 bg-[#141414]/60">

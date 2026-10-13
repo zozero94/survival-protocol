@@ -130,7 +130,7 @@ export async function buildSite(options                                         
         const lang = langCode                   ;
         const localizedNext = nextMap[lang] || nextProto;
         const nextPrefix = UI_STRINGS[lang]?.nextProtocol || 'Next:';
-        langProto.nextProtocolTitle = `${nextPrefix} ${localizedNext.protocolId} ${localizedNext.title}`;
+        langProto.nextProtocolTitle = `${nextPrefix} ${localizedNext.title}`;
       }
     }
 

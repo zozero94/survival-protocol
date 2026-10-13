@@ -51,8 +51,6 @@ export function renderProtocolCard(protocol: Protocol): string {
   <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
     <div class="flex items-center gap-2">
       <span data-i18n="cat_${protocol.category}" class="text-neutral-400 font-bold">${categoryLabel}</span>
-      <span class="text-neutral-600">/</span>
-      <span class="text-neutral-500">${protocol.protocolId}</span>
     </div>
     ${threatBadge}
   </div>

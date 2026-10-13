@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Protocol #02: Bow Drill Friction Fire Method",
+  "title": "Bow Drill Friction Fire Method",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[THREAT LEVEL: CRITICAL]",
   "summary": "A primitive pyrotechnology protocol using mechanical friction between dry softwood and a bow drill to generate carbon dust embers exceeding 400°C, followed by concentrated aeration to achieve ignition.",

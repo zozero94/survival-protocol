@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Protocolo #03: Construcción de Refugio Térmico A-Frame (Debris Hut)",
+  "title": "Construcción de Refugio Térmico A-Frame (Debris Hut)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
   "summary": "La exposición al frío y la lluvia causa hipotermia mortal en 3 horas. Al apilar hojarasca seca y madera muerta para atrapar aire estancado (Dead Air Space), se construye un refugio sin fuego que conserva el calor metabólico humano (80–100W).",

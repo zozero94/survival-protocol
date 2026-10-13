@@ -5,7 +5,7 @@ import { SITE_META, PWA_PATHS } from '../site.config.js';
  * 서비스 워커 로직이 바뀌면 이 값을 올린다. 캐시 버전 해시에 포함되어
  * 콘텐츠가 그대로여도 기존 방문자의 캐시가 새 로직으로 교체된다.
  */
-export const SW_TEMPLATE_REVISION = 3;
+export const SW_TEMPLATE_REVISION = 4;
 
                                 
                                                             

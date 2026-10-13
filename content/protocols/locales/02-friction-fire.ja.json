@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "プロトコル #02: ボウドリル摩擦発火法",
+  "title": "ボウドリル摩擦発火法",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[危険等級: 致命的(CRITICAL)]",
   "summary": "乾燥した軟木と弓を組み合わせた機械的摩擦熱により、400℃以上の微細炭化粉末(火種)を形成し、集中通気により炎を着火させる原始中核熱源技術。",

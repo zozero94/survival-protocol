@@ -49,7 +49,10 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     assert.ok(p01Html.includes('data-i18n="brandShort"'), '상세 상단 헤더 브랜드 다국어 바인딩 필수');
     assert.ok(p01Html.includes('data-i18n="checklistDesc"'), '상세 체크리스트 설명 문구 다국어 바인딩 필수');
     assert.ok(p01Html.includes('href="/protocol-02"'), '하단 다음 프로토콜 링크가 실제 경로를 가리켜야 함');
-    assert.ok(p01Html.includes('"nextProtocolTitle":"Next: PR-02'), '영어 다음 프로토콜 제목이 내장되어야 함');
+    assert.ok(p01Html.includes('"nextProtocolTitle":"Next: '), '영어 다음 프로토콜 제목이 내장되어야 함');
+    assert.equal(p01Html.includes('"nextProtocolTitle":"Next: PR-02'), false, '다음 프로토콜 제목에 PR-02 번호가 노출되지 않아야 함');
+    assert.equal(indexHtml.includes('>PR-01<'), false, '메인 피드 카드에 PR-01 번호 배지가 노출되지 않아야 함');
+    assert.equal(p01Html.includes('FIELD SURVIVAL PROTOCOL // PR-01'), false, '상세 히어로에 PR-01 번호가 노출되지 않아야 함');
 
     // 모든 빌드된 HTML 페이지에서 다국어 바인딩(data-i18n, data-proto, data-card, data-svg)이 누락된 하드코딩 한글이 0건인지 전수 검사
     for (const fileName of ['index.html', 'protocol-01.html', 'protocol-02.html']) {

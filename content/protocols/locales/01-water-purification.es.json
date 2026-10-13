@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "PROTOCOLO #01: Purificación de Agua Contaminada (Filtro de Carbón)",
+  "title": "Purificación de Agua Contaminada (Filtro de Carbón)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
   "summary": "Beber agua silvestre sin tratar provoca disentería bacteriana y giardiasis letal en menos de 72 horas. El agua debe pasar por filtración mecánica de carbón activado seguida obligatoriamente de ebullición térmica.",

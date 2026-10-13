@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "プロトコル #03: デブリハット(Debris Hut) Aフレーム断熱シェルター構築法",
+  "title": "デブリハット(Debris Hut) Aフレーム断熱シェルター構築法",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[危険度: 致命的(CRITICAL)]",
   "summary": "極寒の風雨に晒されると3時間以内に致命的な低体温症に陥る。乾燥した落ち葉と枯れ木を幾何学的に積層して静止空気層(Dead Air Space)を形成し、火気なしで人体の代謝放射熱(80〜100W)のみで内部温度を生存圏に保つ原始シェルターを構築する。",

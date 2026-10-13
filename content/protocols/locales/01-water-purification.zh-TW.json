@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "協議 #01: 野外受污染水源淨化指南 (活性木炭過濾法)",
+  "title": "野外受污染水源淨化指南 (活性木炭過濾法)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[威脅等級：致命 (CRITICAL)]",
   "summary": "直接飲用未經處理的野外水源會導致細菌性痢疾與梨形鞭毛蟲感染，於72小時內脫水死亡。必須先透過多層木炭物理過濾懸浮雜質，再進行強制高溫沸騰滅菌。",

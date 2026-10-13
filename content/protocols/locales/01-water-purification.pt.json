@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "PROTOCOLO #01: Purificação de Água Selvagem (Filtro de Carvão)",
+  "title": "Purificação de Água Selvagem (Filtro de Carvão)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
   "summary": "Beber água selvagem não tratada causa disenteria bacteriana e giardíase letal em até 72 horas. A água deve passar por filtragem mecânica de carvão ativado seguida obrigatoriamente de fervura térmica.",

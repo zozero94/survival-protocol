@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Protokoll #02: Feuerbohren durch Reibungswärme (Bow Drill)",
+  "title": "Feuerbohren durch Reibungswärme (Bow Drill)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
   "summary": "Primitive Pyrotechnik, die durch mechanische Reibung zwischen trockenem Weichholz und einer Bogenspindel über 400°C heiße Glutkohle erzeugt und durch gezielte Sauerstoffzufuhr entzündet.",
