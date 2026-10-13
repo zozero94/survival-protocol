@@ -1,0 +1,116 @@
+{
+  "protocolId": "PR-05",
+  "category": "TOOLS",
+  "title": "Reißfestes Wildnisseil aus Baumrinde und Ranken drehen",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[ÜBERLEBENSWICHTIG]",
+  "summary": "Eine stabile Schnur ist unverzichtbar für Unterstände, Steinäxte und Feuerbohrer. Ganze grüne Ranken schrumpfen und brechen beim Trocknen; wenn man jedoch die weiße Innenrinde (Bastfaser) abzieht und zwei Stränge gegenläufig zusammendreht, entsteht ein selbstsicherndes Seil, das das Gewicht eines Erwachsenen trägt.",
+  "timeRequired": "40 Min.",
+  "successRate": "95% (Mit Gegendrehung)",
+  "difficulty": "Mittel (Mit bloßen Händen)",
+  "outputPerHour": "5m / 40 Min.",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Lebende Kudzu-Ranken, Linden-, Weiden- oder Brennnesselstängel (10~15 armlange Triebe)",
+      "desc": "Wählen Sie biegsame Triebe, die beim Knicken nicht brechen und unter dem Fingernagel grüne Feuchtigkeit zeigen."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 scharfkantiger Steinabschlag zum Abschaben",
+      "desc": "Zum vorsichtigen Abschaben der spröden braunen Außenrinde, ohne die zähen weißen Innenfasern zu beschädigen."
+    },
+    {
+      "id": "mat-03",
+      "name": "Flacher Unterlegstein und faustgroßer runder Klopfstein",
+      "desc": "Um die eingeweichte Innenrinde sanft weichzuklopfen, bis sie sich in feine, haarähnliche Fasern teilt."
+    },
+    {
+      "id": "mat-04",
+      "name": "Bach- oder Tümpelwasser zum Einweichen",
+      "desc": "Frisch abgezogene Innenrinde 20~30 Minuten wässern, um steifen Pflanzensaft zu lösen und die Fasern geschmeidig zu halten."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Biegsame Stängel wählen, Außenrinde abschaben und weiße Innenfaser abziehen",
+      "description": "Biegen Sie den Stängel zur Hälfte, um zu prüfen, ob er elastisch bleibt. Schaben Sie mit einer Steinkante vorsichtig die raue braune Außenrinde ab, bis die helle, zähe Bastschicht sichtbar wird. Heben Sie das untere Ende mit dem Fingernagel an und ziehen Sie lange Faserbänder vom harten Holzkern ab.",
+      "actionNote": "> Tipp: Abgestorbene, trockene Stängel am Boden haben morsche Fasern, die sofort reißen. Immer frische Triebe nutzen.",
+      "svgFileName": "pr05-step-01.svg",
+      "svgLabels": [
+        "① Raue Außenrinde mit Steinkante abschaben",
+        "② Spröde braune Außenrinde (abschaben & wegwerfen)",
+        "③ Zähe weiße Innenfaser (Hauptmaterial fürs Seil)",
+        "④ Harter Holzkern in der Mitte (entfernen)",
+        "⑤ Biegsamer lebender Stängel bricht nicht"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: 20 Minuten im Bach wässern und mit rundem Stein weichklopfen",
+      "description": "Legen Sie die abgezogenen Rindenstreifen für 20~30 Minuten ins Wasser. Breiten Sie die aufgeweichten Streifen auf einem flachen Flussstein aus und klopfen Sie sie mit einem runden Stein sanft von oben nach unten. Sobald sich feine, weiche Faserbündel lösen, teilen Sie diese in zwei fingerdicke Stränge.",
+      "actionNote": "> Grundprinzip: Zu harte Schläge durchtrennen die Fasern. Sanft drücken und klopfen, damit die Fasern lang bleiben.",
+      "svgFileName": "pr05-step-02.svg",
+      "svgLabels": [
+        "① Innenrinde 20+ Min. im Bachwasser eingeweicht",
+        "② Sanft mit rundem Stein klopfen zum Auffasern",
+        "③ Weiches, haarfein gelöstes Faserbündel",
+        "④ Zwei gleichmäßige, fingerdicke Faserstränge",
+        "⑤ Stabiler flacher Flussstein als Unterlage"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Nach außen zwirbeln und zum Körper kreuzen (Gegendrehung)",
+      "description": "Klemmen Sie die Mitte des Faserbündels zwischen linken Daumen und Zeigefinger, sodass ein oberer und ein unterer Strang entstehen. Drehen Sie den oberen Strang mit der rechten Hand fest vom Körper weg (nach außen) und legen Sie ihn dann über den unteren Strang zu Ihrem Körper hin. Linken Daumen nachsetzen, Kreuzungspunkt festhalten und wiederholen.",
+      "actionNote": "> Grundprinzip: Dreht man beide Stränge in dieselbe Richtung, rollt sich das Seil sofort wieder auf. Die Gegendrehung verriegelt beide Stränge.",
+      "svgFileName": "pr05-step-03.svg",
+      "svgLabels": [
+        "① Oberer Strang: fest vom Körper wegdrehen (↑)",
+        "② Verzahntes Fischgrät-Seilmuster",
+        "③ Kreuzungspunkt mit linkem Daumen & Zeigefinger halten",
+        "④ Gedrehten Strang über unteren zum Körper legen (↓)",
+        "⑤ Selbstsichernde Gegendreh-Verriegelung"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Neue Fasern 10cm überlappen für endlose Seillänge",
+      "description": "Wenn ein Strang auf die letzten 10cm dünner wird, legen Sie ein neues Faserbündel 10cm überlappend direkt daneben. Halten Sie altes Ende und neues Bündel gemeinsam wie einen einzigen Strang und drehen Sie normal weiter. Versetzen Sie die Verbindungsstellen von oberem und unterem Strang um mindestens eine Handspanne (15cm).",
+      "actionNote": "> Achtung: Liegen beide Spleißstellen an derselben Stelle, entsteht ein dicker Knotenpunkt, der unter Zug reißt.",
+      "svgFileName": "pr05-step-04.svg",
+      "svgLabels": [
+        "① Alter Strang wird bei 10cm Restlänge dünner",
+        "② Neues Faserbündel 10cm daneben überlappen",
+        "③ Beide Enden gemeinsam als einen Strang drehen",
+        "④ Glatte Verbindung ohne dicke Schwachstelle",
+        "⑤ Obere & untere Spleißstelle 15cm versetzen"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Schritt 5: Endknoten setzen und am Baumstamm mit Körpergewicht testen",
+      "description": "Nach Erreichen der gewünschten Länge (ab 5m) die letzten 3cm zu einer Schlaufe legen und mit einem festen Überhandknoten sichern. Abstehende Fasern mit einer Steinklinge glätten. Zuletzt das Seil um einen dicken Baumstamm legen und mit vollem Körpergewicht (50kg+) daran ziehen.",
+      "actionNote": "> Praxistest: Knacken Fasern oder rutscht eine Verbindung, diese Stelle sofort mit zusätzlichen Fasern umwickeln.",
+      "svgFileName": "pr05-step-05.svg",
+      "svgLabels": [
+        "① Sicherungsknoten 3cm vor dem Seilende",
+        "② Abstehende Fasern mit Steinklinge säubern",
+        "③ Um Baumstamm legen & mit Körpergewicht (50kg+) ziehen",
+        "④ Fertiges 5mm Wildnisseil (5m Länge)",
+        "⑤ Bereit für Unterstand, Steinaxt & Feuerbohrer"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Ungeschälte grüne Ranken direkt zum Binden verwenden",
+    "description": "Wickelt man ganze grüne Ranken oder Zweige direkt um Unterstand oder Steinaxt, wirkt das nur anfangs fest. Sobald der Pflanzensaft trocknet, schrumpft die Ranke, lockert sich und der holzige Kern bricht bei Belastung sofort durch. Immer nur die abgezogene Innenfaser gegenläufig verdrillen.",
+    "consequence": "Folge: Das Dach des Unterstands bricht nachts ein oder der Steinaxtkopf löst sich beim Schlagen"
+  },
+  "shortsScript": {
+    "hook": "Wie man im Wald ohne Hilfsmittel mit bloßen Händen ein reißfestes Seil dreht.",
+    "body": "Braune Außenrinde von lebenden Ranken abschaben und weiße Innenfaser abziehen. 20 Minuten wässern und mit rundem Stein weichklopfen. Halbieren, oberen Strang vom Körper wegdrehen und zum Körper hin überkreuzen. Neue Fasern 10cm überlappen für endlose Länge.",
+    "outro": "Hält über 50kg Körpergewicht am Baumstamm. Perfekt für Unterstände, Steinäxte und Feuerbohrer."
+  }
+}

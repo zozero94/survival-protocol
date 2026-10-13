@@ -61,7 +61,7 @@ export function renderStepCards(steps: ProtocolStep[], svgsMap: Record<string, s
   return `
 <section class="mb-6 space-y-4">
   <div class="flex items-center justify-between border-b border-[#333] pb-2 font-mono text-xs">
-    <span id="ui-procedure-title" data-i18n="procedureTitle" class="text-white font-bold tracking-wider">// 따라 하기 (3단계 순서)</span>
+    <span id="ui-procedure-title" data-i18n="procedureTitle" class="text-white font-bold tracking-wider">// 순서대로 따라 하기</span>
     <span class="text-[11px] text-[#888]">1 ~ ${steps.length} <span data-i18n="stepsFlow">단계 순서</span></span>
   </div>
   <div>

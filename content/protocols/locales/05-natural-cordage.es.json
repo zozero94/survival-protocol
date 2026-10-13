@@ -1,0 +1,116 @@
+{
+  "protocolId": "PR-05",
+  "category": "TOOLS",
+  "title": "Cómo trenzar cuerda salvaje irrompible con corteza y lianas",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[SUPERVIVENCIA CRÍTICA]",
+  "summary": "Una cuerda resistente es indispensable para atar refugios, fijar hachas de piedra y encender fuego con arco. Atar lianas verdes enteras falla porque encogen y se quiebran al secarse; en cambio, extraer la fibra blanca interna y trenzar dos cabos en sentido inverso crea una soga autobloqueante capaz de soportar el peso de un adulto.",
+  "timeRequired": "40 min",
+  "successRate": "95% (Con trenzado inverso)",
+  "difficulty": "Media (Con las manos)",
+  "outputPerHour": "5m / 40 min",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Lianas vivas de kudzu, tilo, sauce o tallos de ortiga (10~15 tallos del largo del brazo)",
+      "desc": "Elija tallos vivos que se doblen sin romperse y muestren humedad verde al rasparlos con la uña."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 lasca de piedra con borde afilado para raspar",
+      "desc": "Se usa para raspar suavemente la corteza exterior marrón sin cortar las fibras blancas internas."
+    },
+    {
+      "id": "mat-03",
+      "name": "Piedra plana de base y canto rodado del tamaño del puño",
+      "desc": "Para golpear suavemente la corteza interna remojada hasta separarla en hebras suaves como cabellos."
+    },
+    {
+      "id": "mat-04",
+      "name": "Agua de arroyo o charca para remojar",
+      "desc": "Remoje la corteza interna durante 20~30 minutos para ablandar la savia y mantener las fibras flexibles."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Elegir tallos flexibles, raspar la corteza exterior y pelar la fibra blanca interna",
+      "description": "Doble el tallo por la mitad para comprobar que se curva sin partirse. Raspe suavemente la corteza marrón exterior con el borde de una piedra hasta descubrir la capa blanca y fibrosa. Levante el extremo inferior con la uña y tire hacia arriba para desprender tiras largas separándolas del núcleo leñoso.",
+      "actionNote": "> Consejo clave: Los tallos secos caídos en el suelo tienen fibras podridas que se rompen al tensarlas. Use siempre tallos vivos.",
+      "svgFileName": "pr05-step-01.svg",
+      "svgLabels": [
+        "① Raspar corteza exterior con borde de piedra",
+        "② Corteza marrón quebradiza (raspar y tirar)",
+        "③ Fibra interna blanca y firme (material clave)",
+        "④ Núcleo central de madera dura (desechar)",
+        "⑤ Tallo vivo flexible que se dobla sin partirse"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Remojar 20 minutos en el arroyo y machacar con piedra hasta suavizar",
+      "description": "Sumerja las tiras de corteza interna en agua durante 20~30 minutos. Extiéndalas sobre una piedra plana y golpéelas suavemente con una piedra redonda de arriba abajo. Cuando la fibra rígida se separe en hebras finas y suaves como hilos, divídalas en dos manojos iguales del grosor de un dedo.",
+      "actionNote": "> Principio clave: Golpear demasiado fuerte corta las fibras. Presione y machaque con suavidad para conservar hebras largas.",
+      "svgFileName": "pr05-step-02.svg",
+      "svgLabels": [
+        "① Corteza interna remojada 20+ min en agua",
+        "② Golpear suave con piedra redonda para abrir fibras",
+        "③ Manojo de fibras suaves como cabellos",
+        "④ Dos cabos iguales del grosor de un dedo",
+        "⑤ Piedra plana firme apoyada en el suelo"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Retorcer hacia afuera y cruzar hacia el cuerpo (Trenzado Inverso)",
+      "description": "Sujete la mitad del manojo con el pulgar e índice izquierdos y dóblelo para formar un cabo superior y otro inferior. Con la mano derecha, retuerza con fuerza el cabo superior hacia afuera (alejándolo de usted) y luego crúcelo por encima del cabo inferior hacia su cuerpo. Avance el pulgar izquierdo para sujetar el cruce y repita siempre: retorcer hacia afuera y cruzar hacia adentro.",
+      "actionNote": "> Principio clave: Si gira ambos cabos en la misma dirección, la cuerda se deshará sola. El giro opuesto bloquea las tensiones entre sí.",
+      "svgFileName": "pr05-step-03.svg",
+      "svgLabels": [
+        "① Cabo superior: retorcer firme hacia afuera (↑)",
+        "② Trenzado en espiga autobloqueado",
+        "③ Sujetar cruce con pulgar e índice izquierdos",
+        "④ Cruzar cabo superior hacia el cuerpo (↓)",
+        "⑤ Cierre inverso que no se deshace al soltar"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Superponer 10cm de fibra nueva para empalmar longitud infinita",
+      "description": "Cuando a un cabo le queden unos 10cm y se adelgace, coloque un manojo nuevo junto al extremo viejo superponiendo 10cm. Sujete ambos como si fueran un solo cabo y siga retorciendo hacia afuera y cruzando hacia usted. Separe siempre los empalmes del cabo superior e inferior al menos un palmo (15cm).",
+      "actionNote": "> Precaución: Empalmar ambos cabos en el mismo punto crea un bulto débil que se rompe al tirar.",
+      "svgFileName": "pr05-step-04.svg",
+      "svgLabels": [
+        "① Cabo viejo adelgazado con 10cm restantes",
+        "② Colocar fibra nueva al lado (10cm superpuestos)",
+        "③ Retorcer ambos extremos juntos como uno solo",
+        "④ Empalme liso sin bultos ni puntos débiles",
+        "⑤ Desfasar empalmes superior e inferior por 15cm"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Paso 5: Hacer nudo de tope final y probar con el peso del cuerpo en un árbol",
+      "description": "Al alcanzar la longitud deseada (5m o más), doble los últimos 3cm y haga un nudo simple bien apretado para que no se deshilache. Raspe los pelos sueltos con una lasca de piedra. Por último, rodee el tronco de un árbol firme con la cuerda y tire con todo su peso (50kg+) para comprobar que ningún empalme resbale.",
+      "actionNote": "> Verificación: Si oye crujir fibras o nota que un empalme cede, refuerce ese tramo envolviendo más fibra encima.",
+      "svgFileName": "pr05-step-05.svg",
+      "svgLabels": [
+        "① Nudo final de tope a 3cm del extremo",
+        "② Recortar fibras sueltas con lasca de piedra",
+        "③ Rodear árbol y tirar con peso corporal (50kg+)",
+        "④ Cuerda salvaje terminada de 5mm (5m largo)",
+        "⑤ Lista para refugios, hacha de piedra y arco"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Atar lianas verdes enteras sin pelar la corteza",
+    "description": "Atar ramas o lianas enteras directamente al refugio o al hacha parece firme al principio, pero al secarse la savia en pocas horas se encogen, quedan flojas y el centro leñoso se parte como una galleta seca. Siempre pele la corteza y trence solo la fibra interna.",
+    "consequence": "Consecuencia: El techo del refugio se desploma mientras duerme o la hoja del hacha sale despedida causando heridas graves"
+  },
+  "shortsScript": {
+    "hook": "Cómo hacer una cuerda salvaje irrompible con las manos cuando no tienes nada en el bosque.",
+    "body": "Raspa la corteza marrón de una liana viva y saca la fibra blanca interna. Remójala 20 minutos y machácala con una piedra redonda hasta suavizarla. Dóblala, retuerce el cabo superior hacia afuera y crúzalo hacia ti. Superpón 10cm de fibra nueva para alargarla sin límite.",
+    "outro": "Soporta más de 50kg colgada de un árbol. Lista para atar tu refugio o fijar un hacha de piedra."
+  }
+}

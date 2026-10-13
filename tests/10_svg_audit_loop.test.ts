@@ -28,7 +28,7 @@ const validSvg = `<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
 </svg>`;
 
 describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방지 검증]', () => {
-  it('정상 규격의 SVG 도면과 실제 발행된 PR-01~PR-04 도면 12종 모두 정적 검수(100점)를 통과해야 한다', () => {
+  it('정상 규격의 SVG 도면과 실제 발행된 전 가이드 도면 17종 모두 정적 검수(100점)를 통과해야 한다', () => {
     const report = SvgAuditService.auditSvgStatic(validSvg, sampleContext);
     assert.strictEqual(report.passed, true);
     assert.strictEqual(report.score, 100);
@@ -47,6 +47,11 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr04-step-01.svg',
       'pr04-step-02.svg',
       'pr04-step-03.svg',
+      'pr05-step-01.svg',
+      'pr05-step-02.svg',
+      'pr05-step-03.svg',
+      'pr05-step-04.svg',
+      'pr05-step-05.svg',
     ];
 
     for (const fileName of activeSvgs) {

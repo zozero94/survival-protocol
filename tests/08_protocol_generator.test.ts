@@ -60,7 +60,7 @@ describe('⚡ [Suite 8: 프로토콜 자동 생성 & 고증 엔진] 유효성 �
     assert.ok(res.errors.some((e) => e.includes('현대 공산품')));
   });
 
-  it('steps가 3개가 아니거나 필수 필드가 누락되면 유효성 실패해야 한다', () => {
+  it('steps가 3개 미만이거나 필수 필드가 누락되면 유효성 실패해야 하며 3~8단계 가변 구성을 허용해야 한다', () => {
     const invalidProto: Partial<Protocol> = {
       protocolId: 'PR-99',
       title: '미완성 프로토콜',
@@ -71,7 +71,7 @@ describe('⚡ [Suite 8: 프로토콜 자동 생성 & 고증 엔진] 유효성 �
 
     const res = ProtocolGeneratorService.validateProtocol(invalidProto);
     assert.strictEqual(res.valid, false);
-    assert.ok(res.errors.some((e) => e.includes('steps는 정확히 3단계')));
+    assert.ok(res.errors.some((e) => e.includes('steps는 최소 3단계 이상')));
   });
 
   it('getProtocolById는 "PR-01", "01", "pr-01" 등 다양한 식별자를 모두 찾아내야 한다', () => {

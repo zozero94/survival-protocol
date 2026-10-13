@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto max-w-[680px]" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grid & Guide lines -->
+  <rect x="0" y="0" width="680" height="340" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Outer circle (Stem cross section) -->
+  <circle cx="190" cy="175" r="95" fill="#1C1814" stroke="#8B5A2B" stroke-width="5" />
+  <circle cx="190" cy="175" r="82" fill="#242820" stroke="#E5E5E5" stroke-dasharray="3 3" stroke-width="2.5" />
+  <circle cx="190" cy="175" r="45" fill="#151515" stroke="#444444" stroke-width="2" />
+  <circle cx="190" cy="175" r="6" fill="#666666" />
+
+  <!-- Stone scraper tool peeling bark -->
+  <path d="M175,78 L240,48 L228,92 Z" fill="#3A3A3A" stroke="#E5E5E5" stroke-width="2"/>
+  <path d="M195,85 Q235,90 265,70" fill="none" stroke="#E02424" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Bent living vine diagram -->
+  <path d="M350,245 Q430,135 545,195" fill="none" stroke="#10B981" stroke-width="6"/>
+  <circle cx="350" cy="245" r="4" fill="#10B981"/>
+  <circle cx="545" cy="195" r="4" fill="#10B981"/>
+
+  <!-- Peel strand visualization -->
+  <path d="M265,125 C305,105 350,135 395,115" fill="none" stroke="#E5E5E5" stroke-width="5"/>
+  <path d="M275,145 C315,125 360,155 405,135" fill="none" stroke="#8B5A2B" stroke-width="4"/>
+
+  <!-- Callout lines -->
+  <line x1="240" y1="58" x2="295" y2="48" stroke="#E5E5E5" stroke-width="1.2"/>
+  <line x1="265" y1="120" x2="295" y2="95" stroke="#8B5A2B" stroke-width="1.2"/>
+  <line x1="270" y1="165" x2="295" y2="145" stroke="#E5E5E5" stroke-width="1.2"/>
+  <line x1="190" y1="175" x2="295" y2="205" stroke="#888888" stroke-width="1.2"/>
+
+  <!-- 5 Clean, Non-Overlapping Labels -->
+  <text x="300" y="52" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">① 돌 모서리로 거친 겉껍질만 살살 긁어내기</text>
+  <text x="300" y="98" fill="#C49A6C" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">② 잘 부러지는 갈색 겉껍질 (긁어내어 버림)</text>
+  <text x="300" y="148" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">③ 질기고 하얀 속껍질 섬유층 (밧줄 핵심 재료)</text>
+  <text x="300" y="208" fill="#9E9E9E" font-family="'Space Grotesk', sans-serif" font-size="11">④ 가운데 딱딱한 나무 속심 (빼내고 버림)</text>
+  <text x="260" y="295" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">⑤ 구부렸을 때 부러지지 않고 휘어지는 살아있는 줄기</text>
+</svg>

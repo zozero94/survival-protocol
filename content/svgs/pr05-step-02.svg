@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto max-w-[680px]" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="680" height="340" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Water stream / pool zone on left -->
+  <rect x="70" y="80" width="130" height="90" fill="#102528" stroke="#007788" stroke-width="1.5"/>
+  <path d="M75,115 Q135,95 195,115" fill="none" stroke="#00B4D8" stroke-width="2"/>
+  <path d="M75,135 Q135,155 195,135" fill="none" stroke="#00B4D8" stroke-width="2"/>
+  <path d="M90,100 Q120,150 170,110" fill="none" stroke="#E5E5E5" stroke-width="3"/>
+
+  <!-- Flat anvil stone in center -->
+  <polygon points="240,225 450,225 470,265 220,265" fill="#282828" stroke="#666666" stroke-width="2"/>
+
+  <!-- Round hand hammer stone -->
+  <ellipse cx="335" cy="145" rx="36" ry="26" fill="#3D3D3D" stroke="#E5E5E5" stroke-width="2"/>
+  <line x1="335" y1="175" x2="335" y2="210" stroke="#E02424" stroke-width="2.5" stroke-dasharray="3 3"/>
+  <polygon points="330,205 335,218 340,205" fill="#E02424"/>
+
+  <!-- Crushed soft fiber on the stone -->
+  <path d="M270,220 C310,210 350,230 400,220" stroke="#E5E5E5" stroke-width="6"/>
+  <path d="M280,217 C320,223 360,215 395,221" stroke="#9E9E9E" stroke-width="2"/>
+
+  <!-- Two split bundles on right -->
+  <path d="M490,145 Q525,180 575,170" fill="none" stroke="#E5E5E5" stroke-width="4"/>
+  <path d="M490,215 Q525,195 575,225" fill="none" stroke="#E5E5E5" stroke-width="4"/>
+  <circle cx="490" cy="180" r="14" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="2 2"/>
+
+  <!-- 5 Clean, Non-Overlapping Labels -->
+  <text x="70" y="55" fill="#00B4D8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">① 냇물에 20분 이상 담가 부드럽게 불린 속껍질</text>
+  <text x="250" y="98" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">② 둥근 돌로 살살 두드려 섬유 결 쪼개기</text>
+  <text x="380" y="135" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="11">③ 머리카락처럼 부드럽게 풀어진 섬유 다발</text>
+  <text x="380" y="255" fill="#D97706" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">④ 손가락 굵기로 똑같이 나눈 두 가닥</text>
+  <text x="190" y="298" fill="#9E9E9E" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">⑤ 바닥에 흔들리지 않게 받친 평평한 강돌</text>
+</svg>

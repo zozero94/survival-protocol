@@ -1,0 +1,116 @@
+{
+  "protocolId": "PR-05",
+  "category": "TOOLS",
+  "title": "How to Twist Unbreakable Wild Cordage from Bark and Vines",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[CRITICAL SURVIVAL]",
+  "summary": "Strong cordage is essential for lashing shelter frames, hafting stone axes, and spinning a bow drill. Whole raw vines shrink and snap brittlely once dry, but extracting inner bast fibers and reverse-wrapping two strands creates a self-locking rope strong enough to hold adult body weight.",
+  "timeRequired": "40 min",
+  "successRate": "95% (With Reverse Wrap)",
+  "difficulty": "Medium (Bare Hands)",
+  "outputPerHour": "5m / 40 min",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Live Kudzu Vines, Basswood, Willow, or Nettle Stems (10~15 arm-length stalks)",
+      "desc": "Choose live stalks that bend smoothly without snapping and show green moisture when scratched with a fingernail."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Sharp-Edged Stone Flake for Scraping",
+      "desc": "Used to gently scrape off the brittle brown outer bark without cutting into the tough white inner fibers beneath."
+    },
+    {
+      "id": "mat-03",
+      "name": "Flat Anvil Stone and Fist-Sized Round Hammer Stone",
+      "desc": "Used to gently pound soaked inner bark strips until they separate into soft, hair-like fiber strands."
+    },
+    {
+      "id": "mat-04",
+      "name": "Stream or Standing Water for Soaking",
+      "desc": "Soak freshly peeled inner bark for 20~30 minutes to soften stiff sap and keep fibers flexible while twisting."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Select Flexible Stalks, Scrape Outer Bark, and Peel White Inner Bark",
+      "description": "Bend the stalk in half to confirm it flexes without snapping. Hold a stone edge at an angle and lightly scrape away the rough brown outer bark until the pale, tough inner fiber layer appears. Lift the bottom edge with your fingernail and peel long ribbon strips upward away from the woody core.",
+      "actionNote": "> Key Tip: Dead, dry stalks on the ground have rotted fibers that crumble under tension. Always harvest inner bark from live or freshly cut stalks.",
+      "svgFileName": "pr05-step-01.svg",
+      "svgLabels": [
+        "① Scrape off rough outer bark with stone edge",
+        "② Brittle brown outer bark (scrape & discard)",
+        "③ Tough white inner bast fiber (core rope material)",
+        "④ Stiff woody center core (peel off & discard)",
+        "⑤ Flexible live stalk that bends without snapping"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Soak in Water for 20 Minutes and Pound into Soft Hair-Like Fibers",
+      "description": "Submerge the peeled inner bark ribbons in stream water for 20~30 minutes. Lay the softened strips across a flat river stone and tap gently from top to bottom with a round stone. Once the stiff grain breaks down into soft, hair-like strands, divide them evenly into two equal bundles.",
+      "actionNote": "> Core Principle: Striking too hard with a sharp rock severs the fibers. Press and roll gently with a smooth stone to separate long intact strands.",
+      "svgFileName": "pr05-step-02.svg",
+      "svgLabels": [
+        "① Inner bark soaked 20+ min in stream water",
+        "② Gently tap with round stone to split fibers",
+        "③ Softened hair-like fiber bundle",
+        "④ Two equal finger-thick fiber strands",
+        "⑤ Stable flat river stone anvil beneath"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Twist Away and Cross Toward You (Reverse-Wrap Locking Method)",
+      "description": "Pinch the middle of a fiber bundle between your left thumb and forefinger, folding it into an upper and lower strand. With your right hand, twist the upper strand tightly away from your body, then bring that twisted strand over the lower strand toward your body. Move your left thumb forward to pinch the new crossing point and repeat: twist the top strand away, then wrap it toward you.",
+      "actionNote": "> Core Principle: Twisting both strands in the same direction causes the rope to unravel immediately. Twisting away while wrapping toward you locks opposing forces together.",
+      "svgFileName": "pr05-step-03.svg",
+      "svgLabels": [
+        "① Top strand: twist tightly away from body (↑)",
+        "② Interlocked chevron rope pattern",
+        "③ Pinch junction firmly with left thumb & index",
+        "④ Cross twisted top strand over toward body (↓)",
+        "⑤ Self-locking reverse-wrap structure"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Overlap New Fibers by 10cm to Splice Endless Length",
+      "description": "When either strand thins down with about 10cm remaining, lay a fresh fiber bundle alongside the old tail with a 10cm overlap. Hold both together as a single strand and continue twisting away and wrapping toward you. Always stagger splices between the upper and lower strands by at least one hand-span (15cm).",
+      "actionNote": "> Warning: Splicing both strands at the exact same spot creates a weak, bulky lump that snaps under load.",
+      "svgFileName": "pr05-step-04.svg",
+      "svgLabels": [
+        "① Existing strand thinning with 10cm left",
+        "② Lay new fiber bundle alongside (10cm overlap)",
+        "③ Twist overlapped tails together as one strand",
+        "④ Smooth splice without bulky weak lumps",
+        "⑤ Stagger top & bottom splices by 15cm"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Step 5: Tie an End Stopper Knot and Test with Full Body Weight on a Tree",
+      "description": "Once you reach your target length (5m or more), fold the last 3cm into a loop and tie a tight overhand stopper knot. Lightly scrape off loose fuzz along the rope with a stone flake to reduce friction wear. Wrap the finished cordage around a sturdy tree trunk and pull back with your full body weight (50kg+) to verify no splices slip.",
+      "actionNote": "> Field Check: If you hear fibers snapping or see a splice slipping, wrap an extra thin fiber bundle around that section.",
+      "svgFileName": "pr05-step-05.svg",
+      "svgLabels": [
+        "① Overhand stopper knot 3cm from the end",
+        "② Trim loose fuzz cleanly with stone flake",
+        "③ Wrap around tree & pull with body weight (50kg+)",
+        "④ Finished 5mm wild rope (5m length)",
+        "⑤ Ready for shelter lashing, stone axe & bow drill"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Tying Whole Unpeeled Green Vines Directly",
+    "description": "Wrapping whole raw vines or green twigs directly around a shelter frame or stone axe feels tight at first, but within hours the sap dries, the vine shrinks and loosens, and the woody core snaps like a dry cracker under impact. Always strip the outer bark and woody core, and reverse-wrap the inner bast fibers.",
+    "consequence": "Consequence: Shelter roof collapses overnight or stone axe head flies off mid-swing causing severe injury"
+  },
+  "shortsScript": {
+    "hook": "When you have zero rope in the wild, here is how to twist unbreakable cordage with bare hands.",
+    "body": "Scrape the brown outer bark off live kudzu vines and peel out the white inner fibers. Soak for 20 minutes and tap with a round stone until soft. Fold in half, twist the top strand away from you, and cross it over toward you. Overlap new fibers by 10cm to splice endless length.",
+    "outro": "Tested against 50kg of body weight on a tree trunk. Ready for shelters, stone axes, and bow drills."
+  }
+}

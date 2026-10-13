@@ -23,8 +23,11 @@ describe('📦 [Suite 2: 확장성] 전체 발행 프로토콜 데이터 무결�
       assert.ok(content.title, `${file}: title 누락`);
       assert.ok(content.threatLevel, `${file}: threatLevel 누락`);
 
-      // 2. 도면 3단계 필수성
-      assert.equal(content.steps.length, 3, `${file}: 단계(steps)는 반드시 정확히 3개여야 함`);
+      // 2. 도면 단계 필수성 (주제 난이도에 따라 3~8단계 가변 구성)
+      assert.ok(
+        content.steps.length >= 3 && content.steps.length <= 8,
+        `${file}: 단계(steps)는 최소 3개 이상 8개 이하여야 함 (현재: ${content.steps.length})`
+      );
       content.steps.forEach((step: any, idx: number) => {
         assert.ok(step.stepNumber, `${file} [Step ${idx + 1}]: stepNumber 누락`);
         assert.ok(step.title, `${file} [Step ${idx + 1}]: title 누락`);

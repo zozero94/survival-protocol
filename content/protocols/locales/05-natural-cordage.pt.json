@@ -1,0 +1,116 @@
+{
+  "protocolId": "PR-05",
+  "category": "TOOLS",
+  "title": "Como trançar corda selvagem inquebrável com casca de árvore e cipó",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[SOBREVIVÊNCIA CRÍTICA]",
+  "summary": "Uma corda forte é indispensável para amarrar abrigos, fixar machados de pedra e fazer fogo com arco. Cipós verdes inteiros encolhem e quebram ao secar; porém, extrair a fibra branca interna e torcer dois cabos em sentidos opostos cria uma corda autotravante capaz de suportar o peso de um adulto.",
+  "timeRequired": "40 min",
+  "successRate": "95% (Com torção reversa)",
+  "difficulty": "Média (Apenas com as mãos)",
+  "outputPerHour": "5m / 40 min",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Cipós vivos, tília, salgueiro ou caules de urtiga (10~15 hastes do comprimento do braço)",
+      "desc": "Escolha hastes vivas que dobrem sem quebrar e mostrem umidade verde ao raspar com a unha."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 lasca de pedra com borda afiada para raspar",
+      "desc": "Usada para raspar suavemente a casca externa marrom sem cortar as fibras brancas internas."
+    },
+    {
+      "id": "mat-03",
+      "name": "Pedra plana de base e pedra redonda do tamanho do punho",
+      "desc": "Para bater suavemente na casca interna demolhada até soltar fios macios como cabelo."
+    },
+    {
+      "id": "mat-04",
+      "name": "Água de riacho ou poça para demolhar",
+      "desc": "Deixe a casca interna de molho por 20~30 minutos para amolecer a seiva e manter as fibras flexíveis."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Escolher hastes flexíveis, raspar a casca externa e puxar a fibra branca interna",
+      "description": "Dobre a haste ao meio para confirmar que ela curva sem partir. Raspe levemente a casca marrom externa com a quina de uma pedra até revelar a camada branca e resistente de fibra. Levante a ponta inferior com a unha e puxe para cima para destacar fitas longas do miolo lenhoso.",
+      "actionNote": "> Dica essencial: Galhos secos caídos no chão têm fibras apodrecidas que arrebentam ao puxar. Use sempre hastes vivas.",
+      "svgFileName": "pr05-step-01.svg",
+      "svgLabels": [
+        "① Raspar casca externa com quina de pedra",
+        "② Casca marrom quebradiça (raspar e descartar)",
+        "③ Fibra interna branca e forte (material da corda)",
+        "④ Miolo central de madeira dura (descartar)",
+        "⑤ Haste viva flexível que dobra sem quebrar"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Deixar 20 minutos na água e bater com pedra redonda até amaciar",
+      "description": "Mergulhe as fitas de casca interna na água do riacho por 20~30 minutos. Estenda-as sobre uma pedra plana e bata suavemente de cima para baixo com uma pedra redonda. Quando as fibras se soltarem em fios macios como cabelo, divida-as em dois feixes iguais da espessura de um dedo.",
+      "actionNote": "> Princípio básico: Bater com muita força corta as fibras. Pressione e amasse suavemente para preservar fios longos.",
+      "svgFileName": "pr05-step-02.svg",
+      "svgLabels": [
+        "① Casca interna de molho 20+ min no riacho",
+        "② Bater suave com pedra redonda para abrir fibras",
+        "③ Feixe de fibras macias como fios de cabelo",
+        "④ Dois cabos iguais da grossura de um dedo",
+        "⑤ Pedra plana firme apoiada no chão"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Torcer para fora e cruzar para o corpo (Torção Reversa)",
+      "description": "Segure o meio do feixe com o polegar e o indicador esquerdos e dobre ao meio formando um cabo superior e outro inferior. Com a mão direita, torça firmemente o cabo superior para fora (longe do corpo) e depois cruze-o por cima do cabo inferior em direção ao seu corpo. Avance o polegar esquerdo para prender o cruzamento e repita sem parar.",
+      "actionNote": "> Princípio básico: Girar os dois cabos para o mesmo lado faz a corda desenrolar sozinha. A torção oposta trava os cabos entre si.",
+      "svgFileName": "pr05-step-03.svg",
+      "svgLabels": [
+        "① Cabo superior: torcer firme para fora (↑)",
+        "② Padrão de corda travado em escama",
+        "③ Prender cruzamento com polegar e indicador",
+        "④ Cruzar cabo superior sobre o inferior para si (↓)",
+        "⑤ Trava reversa que não desmancha ao soltar"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Sobrepor 10cm de fibra nova para emendar comprimento infinito",
+      "description": "Quando um dos cabos estiver afinando com cerca de 10cm restantes, encoste um feixe novo ao lado da ponta antiga com 10cm de sobreposição. Segure os dois juntos como se fossem um único cabo e continue torcendo para fora e cruzando para dentro. Desencontre as emendas de cima e de baixo em pelo menos um palmo (15cm).",
+      "actionNote": "> Atenção: Fazer as duas emendas no mesmo ponto cria um caroço fraco que arrebenta sob tensão.",
+      "svgFileName": "pr05-step-04.svg",
+      "svgLabels": [
+        "① Cabo antigo afinando com 10cm restantes",
+        "② Encostar fibra nova ao lado (10cm sobrepostos)",
+        "③ Torcer as duas pontas juntas como um cabo só",
+        "④ Emenda lisa sem caroços ou pontos fracos",
+        "⑤ Desencontrar emendas de cima e de baixo em 15cm"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Passo 5: Dar nó de trava na ponta e testar com o peso do corpo em uma árvore",
+      "description": "Ao atingir o comprimento desejado (5m ou mais), dobre os últimos 3cm e dê um nó simples bem apertado para não desfiar. Raspe os fiapos soltos com uma lasca de pedra. Por fim, passe a corda ao redor de um tronco firme e puxe com todo o peso do corpo (50kg+) para garantir que nenhuma emenda escorregue.",
+      "actionNote": "> Teste prático: Se ouvir fibras estalando ou notar deslizamento, enrole mais fibra fina sobre o trecho para reforçar.",
+      "svgFileName": "pr05-step-05.svg",
+      "svgLabels": [
+        "① Nó de trava a 3cm da ponta final",
+        "② Aparar fiapos soltos com lasca de pedra",
+        "③ Passar na árvore e puxar com peso do corpo (50kg+)",
+        "④ Corda selvagem pronta de 5mm (5m compr.)",
+        "⑤ Pronta para abrigo, machado de pedra e arco"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Amarrar cipós verdes inteiros sem descascar",
+    "description": "Enrolar cipós ou galhos verdes inteiros diretamente no abrigo ou no machado parece firme na hora, mas em poucas horas a seiva seca, o cipó encolhe e afrouxa, e o miolo de madeira quebra como biscoito seco no primeiro impacto. Sempre descasque e trance apenas a fibra interna.",
+    "consequence": "Consequência: O teto do abrigo desaba durante o sono ou a lâmina do machado escapa causando ferimentos graves"
+  },
+  "shortsScript": {
+    "hook": "Como fazer uma corda selvagem inquebrável com as mãos quando você não tem nada na mata.",
+    "body": "Raspe a casca marrom de um cipó vivo e puxe a fibra branca interna. Deixe 20 minutos na água e bata com uma pedra redonda até amaciar. Dobre ao meio, torça o cabo de cima para fora e cruze para o seu lado. Sobreponha 10cm de fibra nova para emendar sem limite.",
+    "outro": "Aguenta mais de 50kg presa em uma árvore. Pronta para amarrar abrigos e fixar machados de pedra."
+  }
+}

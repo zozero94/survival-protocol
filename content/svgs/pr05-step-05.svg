@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto max-w-[680px]" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="680" height="340" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Tree trunk on left -->
+  <rect x="95" y="75" width="55" height="205" fill="#221C18" stroke="#665544" stroke-width="3"/>
+  <path d="M95,115 L150,115 M95,175 L150,175 M95,235 L150,235" stroke="#443322" stroke-width="1"/>
+
+  <!-- Rope wrapped around tree trunk -->
+  <ellipse cx="122" cy="155" rx="33" ry="12" fill="none" stroke="#E5E5E5" stroke-width="6"/>
+  <line x1="155" y1="155" x2="425" y2="155" stroke="#E5E5E5" stroke-width="6"/>
+
+  <!-- End eye knot -->
+  <g transform="translate(425, 155)">
+    <circle cx="20" cy="0" r="16" fill="none" stroke="#10B981" stroke-width="5"/>
+    <rect x="0" y="-8" width="12" height="16" fill="#E02424" stroke="#E5E5E5" stroke-width="1"/>
+  </g>
+
+  <!-- Stone scraper trimming loose fuzz -->
+  <polygon points="310,115 350,100 340,130" fill="#444444" stroke="#E5E5E5" stroke-width="1.5"/>
+  <path d="M290,152 L295,140 M305,152 L310,143 M320,152 L325,141" stroke="#9E9E9E" stroke-width="1.5"/>
+
+  <!-- Body weight tension indicator arrow -->
+  <g transform="translate(310, 168)">
+    <line x1="0" y1="10" x2="65" y2="10" stroke="#E02424" stroke-width="3"/>
+    <polygon points="65,5 77,10 65,15" fill="#E02424"/>
+  </g>
+
+  <!-- Practical usage box on right -->
+  <rect x="495" y="105" width="110" height="110" fill="#141414" stroke="#333333" stroke-width="1"/>
+  <line x1="510" y1="135" x2="590" y2="135" stroke="#10B981" stroke-width="2"/>
+  <line x1="510" y1="160" x2="590" y2="160" stroke="#E5E5E5" stroke-width="2"/>
+  <line x1="510" y1="185" x2="590" y2="185" stroke="#D97706" stroke-width="2"/>
+
+  <!-- 5 Clean, Non-Overlapping Top-Level Labels -->
+  <text x="270" y="62" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">① 끝부분 3cm를 접어 묶은 풀림 방지 마감 매듭</text>
+  <text x="175" y="102" fill="#9E9E9E" font-family="'Space Grotesk', sans-serif" font-size="11">② 삐져나온 잔털을 돌날로 깔끔하게 정리</text>
+  <text x="175" y="212" fill="#E02424" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">③ 나무 기둥에 걸고 몸무게(50kg+)를 실어 당겨보기</text>
+  <text x="175" y="255" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">④ 완성된 5mm 굵기 야생 밧줄 (5m 길이)</text>
+  <text x="210" y="298" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">⑤ 움막 기둥 묶기·돌도끼 고정·활비비 줄로 즉시 활용</text>
+</svg>
