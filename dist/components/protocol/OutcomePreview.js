@@ -10,15 +10,20 @@ export function renderOutcomePreview(
   outcome                 ,
   svgsMap                         = {}
 )         {
-  const rawSvg = svgsMap[outcome.svgFileName] || outcome.svgCode || '';
-  let labelCounter = 0;
-  const svgContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
-    const lIdx = labelCounter++;
-    const cleanAttrs = attrs
-      .replace(/\s*data-svg\s*=\s*["'][^"']*["']/gi, '')
-      .replace(/\s*data-svg-outcome-label\s*=\s*["'][^"']*["']/gi, '');
-    return `<text data-svg="outcome" data-svg-outcome-label="${lIdx}"${cleanAttrs}>`;
-  });
+  let visualContent = '';
+  if (outcome.imageFileName) {
+    visualContent = `<img src="/images/${outcome.imageFileName}" alt="${outcome.title}" class="max-w-2xl w-full h-auto rounded border border-[#333] shadow-lg object-cover select-none" loading="lazy" />`;
+  } else {
+    const rawSvg = (outcome.svgFileName && svgsMap[outcome.svgFileName]) || outcome.svgCode || '';
+    let labelCounter = 0;
+    visualContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
+      const lIdx = labelCounter++;
+      const cleanAttrs = attrs
+        .replace(/\s*data-svg\s*=\s*["'][^"']*["']/gi, '')
+        .replace(/\s*data-svg-outcome-label\s*=\s*["'][^"']*["']/gi, '');
+      return `<text data-svg="outcome" data-svg-outcome-label="${lIdx}"${cleanAttrs}>`;
+    });
+  }
 
   return `
 <section class="border border-[#333] bg-[#1c1b1b] p-5 sm:p-7 relative overflow-hidden mb-6">
@@ -51,7 +56,7 @@ export function renderOutcomePreview(
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:24px_24px] opacity-40 pointer-events-none"></div>
 
     <div class="relative z-10 w-full max-w-2xl flex items-center justify-center">
-      ${svgContent}
+      ${visualContent}
     </div>
   </div>
 

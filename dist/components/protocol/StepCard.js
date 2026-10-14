@@ -8,27 +8,32 @@
 export function renderStepCards(steps                , svgsMap                         = {})         {
   const cardsHtml = steps
     .map((step, idx) => {
-      const rawSvg = svgsMap[step.svgFileName] || step.svgCode || '';
-      let labelCounter = 0;
-      const svgContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
-        const lIdx = labelCounter++;
-        const cleanAttrs = attrs
-          .replace(/\s*data-svg-step\s*=\s*["'][^"']*["']/gi, '')
-          .replace(/\s*data-svg-label\s*=\s*["'][^"']*["']/gi, '');
-        return `<text data-svg-step="${idx}" data-svg-label="${lIdx}"${cleanAttrs}>`;
-      });
+      let visualContent = '';
+      if (step.imageFileName) {
+        visualContent = `<img src="/images/${step.imageFileName}" alt="STEP ${step.stepNumber}: ${step.title}" class="max-w-[420px] w-full h-auto rounded border border-[#333] shadow-md object-cover select-none" loading="lazy" />`;
+      } else {
+        const rawSvg = (step.svgFileName && svgsMap[step.svgFileName]) || step.svgCode || '';
+        let labelCounter = 0;
+        visualContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
+          const lIdx = labelCounter++;
+          const cleanAttrs = attrs
+            .replace(/\s*data-svg-step\s*=\s*["'][^"']*["']/gi, '')
+            .replace(/\s*data-svg-label\s*=\s*["'][^"']*["']/gi, '');
+          return `<text data-svg-step="${idx}" data-svg-label="${lIdx}"${cleanAttrs}>`;
+        });
+      }
       return `
     <article class="border border-[#333] bg-[#1c1b1b] overflow-hidden mb-6">
-      <!-- 1. Technical Vector Blueprint Frame (FIG 01~03) -->
+      <!-- 1. Technical Vector Blueprint / Visual Frame (FIG 01~03) -->
       <div class="bg-[#111111] border-b border-[#2d2d2d] p-4 text-white">
         <div class="flex items-center justify-between font-mono text-[10px] text-[#888] mb-2">
           <span class="border border-[#444] px-1.5 py-0.5 text-white bg-black">
-            <span data-i18n="figurePrefix">FIG</span>. ${step.stepNumber} // BLUEPRINT SCHEMATIC
+            <span data-i18n="figurePrefix">FIG</span>. ${step.stepNumber} // ${step.imageFileName ? 'FIELD VISUAL' : 'BLUEPRINT SCHEMATIC'}
           </span>
           <span class="tracking-wider text-[10px] text-[#777]">SCALE 1:1 FIELD GUIDE</span>
         </div>
         <div class="w-full flex items-center justify-center py-3 min-h-[190px] [&>svg]:max-w-[420px] [&>svg]:w-full [&>svg]:h-auto">
-          ${svgContent}
+          ${visualContent}
         </div>
       </div>
 

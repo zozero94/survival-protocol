@@ -12,17 +12,19 @@ export interface ProtocolStep {
   title: string;
   description: string;
   actionNote: string;
-  svgFileName: string;
+  svgFileName?: string;
   svgCode?: string;
   svgLabels?: string[];
+  imageFileName?: string;
 }
 
 export interface ProtocolOutcome {
   title: string;
   description: string;
-  svgFileName: string;
+  svgFileName?: string;
   svgCode?: string;
   svgLabels?: string[];
+  imageFileName?: string;
 }
 
 export interface FatalMistake {

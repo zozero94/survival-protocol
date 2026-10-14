@@ -86,6 +86,22 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
   const publicDir = path.join(root, 'public');
   fs.mkdirSync(publicDir, { recursive: true });
 
+  // 2-2. 이미지 에셋 동기화 (content/images -> public/images)
+  const contentImagesDir = path.join(root, 'content/images');
+  const publicImagesDir = path.join(publicDir, 'images');
+  fs.mkdirSync(publicImagesDir, { recursive: true });
+  let imageCount = 0;
+  if (fs.existsSync(contentImagesDir)) {
+    const imgFiles = fs.readdirSync(contentImagesDir).filter((f) => f.match(/\.(png|jpe?g|webp|gif|svg)$/i));
+    for (const f of imgFiles) {
+      fs.copyFileSync(path.join(contentImagesDir, f), path.join(publicImagesDir, f));
+      imageCount++;
+    }
+  }
+  if (imageCount > 0) {
+    log(`🖼️ [2/4 Content Layer] 이미지 에셋(${imageCount}개) public/images 복사 완료`);
+  }
+
   // 프로토콜별 7개국어 맵 사전 구성 (메인 피드 & 상세 페이지 공통 SSOT)
   const localesByProtocolId: Record<string, Partial<Record<SupportedLocale, Protocol>>> = {};
   for (const proto of allMasterProtocols) {
