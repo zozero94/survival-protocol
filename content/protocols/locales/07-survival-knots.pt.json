@@ -1,0 +1,137 @@
+{
+  "protocolId": "PR-07",
+  "category": "TOOLS",
+  "title": "3 Nós Essenciais de Sobrevivência Que Nunca Soltam e Desatam em 1 Segundo",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[AMARRAÇÃO E ABRIGO ESSENCIAL]",
+  "summary": "Usar o nó errado ao montar um abrigo faz a corda soltar com ventos fortes ou travar feito pedra quando molhada, obrigando a cortá-la. O Nó Lais de Guia (Bowline) suporta toneladas sem escorregar e desata num piscar de olhos, o Nó Esticador (Taut-line Hitch) permite ajustar a tensão das cordas sem desamarrar, e a Amarra Quadrada une dois troncos em cruz com firmeza inabalável sem nenhum prego.",
+  "timeRequired": "15 Minutos (Aprenda uma vez, use para a vida)",
+  "successRate": "98% (Com a fórmula da toca do coelho)",
+  "difficulty": "Fácil (Sequência motora simples)",
+  "outputPerHour": "3 Nós Mestres (Habilidade permanente)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Pedaço de Corda Resistente de 2m+ (Paracord ou corda natural)",
+      "desc": "Corda de fibra natural ou paracord 550 de 6~8mm com boa aderência e tração."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Varas Retas de Madeira Dura (Grossura do antebraço, 40~50cm)",
+      "desc": "Galhos retos de carvalho ou pinho para testar nós e amarras sob carga real."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Fixação Instantânea e Antiderrapante em Postes: Nó de Porco (Clove Hitch)",
+      "description": "Passe a corda ao redor do tronco cruzando sobre a linha principal para formar um X. Dê uma segunda volta e passe a ponta limpa por baixo do cruzamento em X. Puxe ambas as extremidades com força em direções opostas. O nó morde a casca da madeira por atrito, servindo de base para todas as amarras.",
+      "actionNote": "> Dica Prática: Mantenha ambas as voltas paralelas e rentes à madeira sem torções para que o travamento por atrito atue com 100% de firmeza.",
+      "svgFileName": "pr07-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // NÓ DE PORCO DIAGRAMA DE FIXAÇÃO",
+        "① Primeira volta no poste (Cruzamento em X)",
+        "Passa a corda formando o X inicial",
+        "+",
+        "② Segunda volta e passagem sob o cruzamento",
+        "Passa a ponta por baixo da ponte X",
+        "+",
+        "③ Tensão horizontal bilateral (Travado)",
+        "Puxa os dois lados para travar por atrito",
+        "④ Linha de alinhamento paralelo",
+        "Garante que as cordas fiquem assentadas",
+        "⑤ Direção de tração da carga"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: O Rei dos Nós: Lais de Guia (Bowline) pela Fórmula do Coelho",
+      "description": "Faça uma pequena laçada na corda principal (a toca do coelho). Suba a ponta da corda (o coelho) pelo buraco vindo de baixo. Passe-a por trás da corda principal (a árvore) e mergulhe-a de volta para dentro da toca. Segure o coelho e o lado direito da laçada juntos e puxe a corda principal com firmeza.",
+      "actionNote": "> Fórmula do Coelho: [Sai da toca ➔ Dá a volta na árvore ➔ Entra na toca ➔ Puxa forte]. Decore esse ritmo e fará de olhos fechados em 5 segundos.",
+      "svgFileName": "pr07-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // LAIS DE GUIA TRAJETÓRIA DO COELHO",
+        "① Laçada na linha principal (Toca do coelho)",
+        "Pequena volta circular na corda guia",
+        "② Ponta sobe pela laçada (Sai da toca)",
+        "O coelho sai para cima pelo buraco",
+        "③ Volta por trás do tronco (Rodeia a árvore)",
+        "Passa no sentido anti-horário atrás da corda",
+        "④ Reentrada para baixo no buraco (Volta à toca)",
+        "Mergulha direto no buraco original",
+        "⑤ Laço de segurança inamovível pronto",
+        "Mantém o diâmetro fixo sob toneladas de tração"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Desate Instantâneo em 1 Segundo: Quebrando as Costas do Lais de Guia",
+      "description": "Nós comuns travam feito pedra quando molhados sob peso extremo. Gire o Lais de Guia e localize a volta em U (o colar) que abraça a corda principal. Apoie o polegar com firmeza sobre esse colar e empurre-o 90 graus para trás (quebrar as costas). O atrito interno zera imediatamente e a corda desliza solta sem danificar as fibras.",
+      "actionNote": "> Segredo de Desate: Não use as unhas no nó. Apenas empurre o colar traseiro para trás com o polegar; o nó se solta sozinho no mesmo instante.",
+      "svgFileName": "pr07-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // QUEBRANDO AS COSTAS DESATE RÁPIDO",
+        "① Estado após suportar tração extrema",
+        "Estrutura firme após aguentar grande carga",
+        "② Volta em U do colar (Orelhas do coelho)",
+        "Alavanca estrutural que abraça o tronco",
+        "③ Pressão do polegar a 90 graus para trás",
+        "Empurre o colar para trás com o polegar",
+        "④ Zona de colapso instantâneo de atrito",
+        "Tensão interna neutralizada na hora",
+        "⑤ Separação suave da corda em 1 segundo",
+        "Sem faca; corda 100% pronta para reuso"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Regulador Deslizante com Trava Automática: Nó Esticador (Taut-line Hitch)",
+      "description": "Passe a corda pela estaca e volte em direção à barraca. Dê duas voltas firmes por dentro do laço na direção da estaca, abraçando a linha principal. Em seguida, salte para o lado de fora e faça meia-volta de travamento. Empurre o nó com a mão para esticar ou afrouxar a corda; ao soltar, o vento trava as espirais automaticamente.",
+      "actionNote": "> Regra de Enrolamento: [Duas voltas por dentro ➔ Uma volta por fora para travar]. As duas internas freiam por atrito e a externa trava a cunha.",
+      "svgFileName": "pr07-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // NÓ ESTICADOR AJUSTE DE TENSÃO",
+        "① Linha de retorno a partir da estaca",
+        "Corda que contorna a estaca de fixação",
+        "② Duas voltas internas de atrito (Freio)",
+        "Duas espirais que absorvem a tensão",
+        "③ Meia-volta externa de trava (Bloqueio)",
+        "Volta final que impede o deslizamento",
+        "④ Eixo de ajuste manual deslizante",
+        "Deslize com a mão para esticar ou soltar",
+        "⑤ Bloqueio automático por carga de vento",
+        "O vento força as espirais a morderem a corda"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Passo 5: Estrutura Cruzada de Madeira sem Pregos: Amarra Quadrada (Square Lashing)",
+      "description": "Comece com o Nó de Porco no poste vertical. Cruze a madeira horizontal a 90 graus e enrole a corda 3~4 vezes em padrão quadrado alternado: sobre a barra, atrás do poste, sobre a barra, atrás do poste. Depois realize o aperto decisivo (Frapping): enrole 2~3 vezes com todo o peso do corpo entre os dois troncos para esmagar qualquer folga. Finalize com outro Nó de Porco.",
+      "actionNote": "> O Aperto é o Segredo: As voltas de aperto (frapping) entre os troncos garantem 90% da rigidez. Aperte com o peso do corpo até a corda morder a casca da madeira.",
+      "svgFileName": "pr07-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // AMARRA QUADRADA E APERTO ESTRUTURAL",
+        "① Início com Nó de Porco no poste vertical",
+        "Ponto de fixação sólido e imóvel",
+        "② 3~4 voltas perimetrais quadradas",
+        "Abraçando os troncos cruzados em 90 graus",
+        "③ 3 voltas de aperto sob pressão máxima",
+        "Apertando o espaço entre os troncos",
+        "④ Barra transversal de suporte",
+        "Galho horizontal portador de carga",
+        "⑤ Arremate final com Nó de Porco",
+        "Junção estrutural permanente sem pregos"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Deixar a Ponta da Corda para Fora do Laço (Lais de Guia Incompleto)",
+    "description": "Ao finalizar o Lais de Guia, a ponta da corda (o coelho) deve ficar obrigatoriamente dentro da laçada principal. Se a ponta sobrar para o lado de fora, cria-se um nó frágil. No mato, galhos ou mochilas podem enroscar nessa ponta exposta e desfazer o nó sob tração num segundo. Verifique sempre com os dedos se a ponta está protegida dentro do laço.",
+    "consequence": "Consequência: Abertura acidental do nó sob atrito externo, desabando o abrigo ou causando quedas"
+  },
+  "shortsScript": {
+    "hook": "Domine estes 3 nós de sobrevivência e você nunca mais terá problemas com cordas frouxas.",
+    "body": "Primeiro: O Lais de Guia, o rei dos nós. Cavou a toca, o coelho sai, dá a volta na árvore e entra de novo. Aguenta um caminhão sem soltar, mas desata em 1 segundo empurrando o colar traseiro. Segundo: O Nó Esticador. Duas voltas por dentro, uma por fora. Deslize para esticar a barraca; o vento trava na hora. Terceiro: A Amarra Quadrada. Enrole em cruz 3 vezes e aperte com todo o seu peso entre as madeiras. Você faz camas e escadas firmes sem nenhum prego. Nunca deixe a ponta do Lais de Guia para fora: um galho vai desamarrá-lo na hora.",
+    "outro": "Baixe os diagramas vetoriais para visualização offline permanente no link do perfil."
+  }
+}

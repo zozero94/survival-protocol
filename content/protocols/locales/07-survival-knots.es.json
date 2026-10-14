@@ -1,0 +1,137 @@
+{
+  "protocolId": "PR-07",
+  "category": "TOOLS",
+  "title": "3 Nudos Esenciales de Supervivencia Que Jamás Se Sueltan y Se Desatan en 1 Segundo",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ANCLAJE Y REFUGIO ESENCIAL]",
+  "summary": "Usar un nudo incorrecto al levantar un refugio hace que se suelte con vientos fuertes o que se atasque como una roca al mojarse, obligándote a cortar y arruinar tu cuerda. El As de Guía (Bowline) soporta toneladas sin deslizarse y se desata al instante, el Nudo Tensor (Taut-line Hitch) permite ajustar la tensión de vientos sin desatar, y el Amarre Cuadrado une dos troncos en cruz de forma inamovible sin clavos.",
+  "timeRequired": "15 Minutos (Aprende una vez, domina de por vida)",
+  "successRate": "98% (Con la fórmula de la madriguera)",
+  "difficulty": "Fácil (Memoria muscular)",
+  "outputPerHour": "3 Nudos Maestros (Habilidad permanente)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Tramo de Cuerda Resistente de 2m+ (Paracord o cuerda natural)",
+      "desc": "Cuerda de fibra natural o paracord de 6~8mm con alta fricción y resistencia a la tracción."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Varas Rectas de Madera Dura (Grosor de antebrazo, 40~50cm)",
+      "desc": "Ramas firmes de roble o pino para practicar anclajes y amarres en cruz bajo carga."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Anclaje Rápido y Antideslizante a Postes: Ballestrinque (Clove Hitch)",
+      "description": "Pasa la cuerda alrededor del poste cruzando sobre la línea principal para formar una X. Da una segunda vuelta y pasa el chicote limpiamente por debajo del cruce en X. Tira con fuerza de ambos extremos en direcciones opuestas. La cuerda muerde la corteza por fricción, sirviendo de base para todos los amarres de madera.",
+      "actionNote": "> Consejo Pro: Mantén ambas vueltas paralelas y pegadas a la madera sin torsiones para que el bloqueo por fricción trabaje al 100%.",
+      "svgFileName": "pr07-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BALLESTRINQUE DIAGRAMA DE ANCLAJE",
+        "① Primera vuelta al poste (Cruce en X)",
+        "Pasa la cuerda formando la X inicial",
+        "+",
+        "② Segunda vuelta y paso bajo el cruce",
+        "Pasa el chicote por debajo del puente X",
+        "+",
+        "③ Tensión horizontal bilateral (Bloqueo)",
+        "Tira de ambos lados para trabar por fricción",
+        "④ Línea de verificación paralela",
+        "Asegura que las cuerdas queden planas",
+        "⑤ Dirección de tracción de carga"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: El Rey de los Nudos: As de Guía (Bowline) con la Fórmula del Conejo",
+      "description": "Haz un pequeño lazo en la cuerda principal (la madriguera del conejo). Sube el chicote (el conejo) a través del lazo desde abajo. Pásalo por detrás del tronco principal (el árbol) de derecha a izquierda, y mételo derecho de vuelta en la madriguera. Sujeta el conejo y el lazo derecho juntos y tira de la cuerda principal para fijar una gaza indestructible.",
+      "actionNote": "> Mnemotecnia del Conejo: [Sale de la madriguera ➔ Rodea el árbol ➔ Vuelve a la madriguera ➔ Tira fuerte]. Domina este ritmo y lo harás con los ojos cerrados.",
+      "svgFileName": "pr07-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // AS DE GUÍA TRAYECTORIA DEL CONEJO",
+        "① Bucle en línea principal (Madriguera)",
+        "Pequeña vuelta circular en la cuerda",
+        "② Chicote asciende por el bucle (Sale)",
+        "El conejo sale hacia arriba del agujero",
+        "③ Vuelta por detrás del tronco (Rodea)",
+        "Pase en sentido antihorario tras la cuerda",
+        "④ Reingreso hacia abajo en el agujero (Entra)",
+        "Vuelve directo al bucle original",
+        "⑤ Gaza de seguridad inamovible lista",
+        "Mantiene el diámetro fijo bajo toneladas de carga"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Liberación Instantánea en 1 Segundo: Doblar la Espalda del As de Guía",
+      "description": "Los nudos comunes se traban como rocas al mojarse bajo carga pesada. Gira el As de Guía y busca el lazo en forma de U (el collar) que abraza la cuerda principal. Coloca el pulgar sobre este collar y empújalo 90 grados hacia atrás. La fricción interna se desmorona a cero al instante y la cuerda se desliza suelta sin dañar la fibra.",
+      "actionNote": "> Secreto de Desate: No uses las uñas en el nudo. Empuja únicamente el collar trasero hacia atrás con el pulgar para liberarlo al segundo.",
+      "svgFileName": "pr07-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // QUIEBRE DE ESPALDA DESATE RÁPIDO",
+        "① Estado tras soportar tensión extrema",
+        "Estructura firme tras resistir gran peso",
+        "② Bucle en U del collar (Orejas de conejo)",
+        "Palanca estructural que abraza el tronco",
+        "③ Presión de pulgar a 90 grados hacia atrás",
+        "Empuja el collar atrás con la punta del pulgar",
+        "④ Zona de colapso instantáneo de fricción",
+        "Tensión interna neutralizada al segundo",
+        "⑤ Separación fluida de cuerda en 1s",
+        "Sin cortar con cuchillo; cuerda 100% reusable"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Tensor Deslizante Autobloqueante: Nudo Tensor (Taut-line Hitch)",
+      "description": "Pasa la cuerda por la estaca y regresa hacia tu tienda. Da dos vueltas firmes por el interior del lazo hacia la estaca, abrazando la línea principal. Luego cruza hacia afuera y haz un medio nudo de bloqueo. Empuja el nudo con la mano para tensar o aflojar la cuerda; al soltarlo, el viento traba las espiras automáticamente.",
+      "actionNote": "> Secuencia de Vueltas: [Dos vueltas adentro ➔ Una vuelta afuera para trabar]. Las dos internas frenan por fricción y la externa bloquea la cuña.",
+      "svgFileName": "pr07-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // NUDO TENSOR AJUSTE DE TENSIÓN",
+        "① Línea de retorno desde la estaca",
+        "Cuerda que rodea la estaca de suelo",
+        "② Dos espiras internas de fricción (Freno)",
+        "Dos vueltas que absorben la tensión",
+        "③ Medio nudo exterior de cuña (Traba)",
+        "Vuelta final que evita el deslizamiento",
+        "④ Eje de ajuste manual deslizante",
+        "Desliza con la mano para tensar o soltar",
+        "⑤ Bloqueo automático por carga de viento",
+        "El viento obliga a las espiras a morder"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Paso 5: Estructura Cruzada de Madera sin Clavos: Amarre Cuadrado (Square Lashing)",
+      "description": "Inicia con un Ballestrinque en el poste vertical. Cruza el palo horizontal a 90 grados y enrolla la cuerda 3~4 veces en patrón cuadrado alternado: sobre la barra, tras el poste, sobre la barra, tras el poste. Luego ejecuta el paso crucial de apriete (Frapping): enrolla 2~3 veces con todo tu peso entre ambos palos para eliminar cualquier juego. Remata con otro Ballestrinque.",
+      "actionNote": "> El Apriete es la Clave: Las vueltas de apriete (frapping) entre los troncos dan el 90% de la rigidez. Aprieta con todo tu peso hasta que la cuerda muerda la corteza.",
+      "svgFileName": "pr07-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // AMARRE CUADRADO Y APRIETE ESTRUCTURAL",
+        "① Inicio con Ballestrinque en poste vertical",
+        "Punto de anclaje firme e inamovible",
+        "② 3~4 vueltas perimetrales cuadradas",
+        "Abrazando los troncos cruzados a 90 grados",
+        "③ 3 vueltas de apriete a máxima fuerza",
+        "Apretando el espacio entre troncos",
+        "④ Travesaño horizontal de soporte",
+        "Rama transversal portante de carga",
+        "⑤ Remate final con Ballestrinque",
+        "Unión estructural permanente sin clavos"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Dejar el Chicote por Fuera del Lazo (As de Guía de Vaquero Defectuoso)",
+    "description": "Al terminar un As de Guía, el chicote (el conejo) debe quedar prolijamente dentro de la gaza principal. Si el cabo queda hacia afuera, forma un nudo vulnerable. En el monte, ramas o mochilas pueden enganchar ese cabo expuesto y desarmar el nudo bajo tensión en un instante. Verifica siempre al tacto que el extremo quede en el interior de la gaza.",
+    "consequence": "Consecuencia: Autodesarme del nudo bajo fricción con colapso del refugio o caídas graves"
+  },
+  "shortsScript": {
+    "hook": "Domina estos 3 nudos de supervivencia y jamás volverás a sufrir con cuerdas sueltas.",
+    "body": "Primero: El As de Guía, el rey de los nudos. Haces la madriguera, el conejo sale, rodea el árbol y vuelve a entrar. Aguanta un camión sin soltarse, pero se desata en 1 segundo empujando el collar trasero. Segundo: El Nudo Tensor. Dos vueltas por dentro, una por fuera. Deslízalo para tensar la tienda; el viento lo traba automáticamente. Tercero: El Amarre Cuadrado. Envuelve en cruz 3 veces y aprieta con todo tu peso entre los troncos. Tienes refugios y camas firmes sin un solo clavo. Jamás dejes el chicote del As de Guía por fuera: una rama lo desatará al instante.",
+    "outro": "Descarga los diagramas vectoriales para verlos sin conexión desde el enlace del perfil."
+  }
+}

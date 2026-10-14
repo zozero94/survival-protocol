@@ -1,0 +1,38 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="400" fill="#0d0d0d" />
+              <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 03 // BREAKING THE BACK (보울라인 1초 쾌속 해제)</text>
+              <line x1="20" y1="38" x2="380" y2="38" stroke="#1f1f1f" stroke-width="1" />
+
+              <!-- Main Standing Part under heavy tension (Straight White Line) -->
+              <line x1="130" y1="50" x2="130" y2="350" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+              <text x="40" y="90" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="10">① 인장 하중이 해제된 고리 상태</text>
+              <text x="40" y="105" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="8">엄청난 하중을 견뎌낸 단단한 매듭</text>
+
+              <!-- The Collar Loop (U-shaped back collar) -->
+              <!-- Showing it bent backwards at 90 degrees -->
+              <path d="M 130 180 C 180 180 240 170 260 190 C 270 200 270 220 260 230 C 240 250 180 240 130 240" stroke="#E0FE10" stroke-width="6" fill="none" stroke-linecap="round" />
+
+              <!-- Thumb Finger Force Vector (Pusing / Snapping the loop back) -->
+              <!-- Stylized technical thumb outline -->
+              <path d="M 330 170 C 310 170 290 190 280 210 C 290 230 310 250 330 250 Z" fill="#222222" stroke="#E0FE10" stroke-width="2" />
+              <text x="220.5" y="160" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">② U자형 토끼 귀 (Collar Loop)</text>
+              
+              <!-- 90 Degree Force Arrow -->
+              <line x1="310" y1="210" x2="250" y2="210" stroke="#E0FE10" stroke-width="2.5" marker-end="url(#arrow)" />
+              <text x="210" y="174" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="10">기둥줄을 감싸고 있는 핵심 해제 부위</text>
+
+              <!-- Curving back bend indicator -->
+              <path d="M 210 165 C 230 165 245 180 245 200" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="2 2" />
+              <text x="240.4" y="195" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="8">③ 90도 후방 꺾임 압력선 (Push Point)</text>
+
+              <!-- Slack Expansion Gap showing zero friction -->
+              <circle cx="160" cy="210" r="24" fill="none" stroke="#E0FE10" stroke-width="1.5" stroke-dasharray="4 2" />
+              <text x="145" y="280" fill="#aaaaaa" font-family="'JetBrains Mono', monospace" font-size="9">엄지손가락으로 뒤로 툭 젖히기</text>
+
+              <!-- Technical Steps Annotation -->
+              <rect x="25" y="290" width="220" height="58" fill="#141414" stroke="#262626" />
+              <text x="35" y="308" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold">④ 내부 마찰력 0 해제선</text>
+              <text x="35" y="324" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="8">내부 장력이 순간적으로 무력화</text>
+              <text x="35" y="338" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="8">⑤ 1초 스르륵 분리 완료</text>
+              <text x="310.1" y="250" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">칼로 자르지 않고 밧줄 온전 보존</text>
+</svg>
