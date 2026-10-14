@@ -56,6 +56,8 @@
                       
                       
                      
+                        
+                        
  
 
 export const UI_STRINGS                                     = {
@@ -116,6 +118,8 @@ export const UI_STRINGS                                     = {
     sort_latest: '최신순',
     sort_oldest: '오래된순',
     uploadDate: '등록일',
+    createdPrefix: '등록',
+    updatedPrefix: '최종 수정',
   },
   en: {
     brandArchive: 'TACTICAL SURVIVAL ARCHIVE',
@@ -174,6 +178,8 @@ export const UI_STRINGS                                     = {
     sort_latest: 'Latest',
     sort_oldest: 'Oldest',
     uploadDate: 'Date',
+    createdPrefix: 'Created',
+    updatedPrefix: 'Updated',
   },
   ja: {
     brandArchive: '生存戦術教本アーカイブ',
@@ -232,6 +238,8 @@ export const UI_STRINGS                                     = {
     sort_latest: '最新順',
     sort_oldest: '古い順',
     uploadDate: '登録日',
+    createdPrefix: '登録',
+    updatedPrefix: '最終更新',
   },
   es: {
     brandArchive: 'ARCHIVO DE SUPERVIVENCIA TÁCTICA',
@@ -290,6 +298,8 @@ export const UI_STRINGS                                     = {
     sort_latest: 'Más recientes',
     sort_oldest: 'Más antiguos',
     uploadDate: 'Fecha',
+    createdPrefix: 'Publicado',
+    updatedPrefix: 'Actualizado',
   },
   de: {
     brandArchive: 'TAKTIK-ÜBERLEBENSARCHIV',
@@ -348,6 +358,8 @@ export const UI_STRINGS                                     = {
     sort_latest: 'Neueste',
     sort_oldest: 'Älteste',
     uploadDate: 'Datum',
+    createdPrefix: 'Erstellt',
+    updatedPrefix: 'Aktualisiert',
   },
   pt: {
     brandArchive: 'ARQUIVO DE SOBREVIVÊNCIA TÁCTICA',
@@ -406,6 +418,8 @@ export const UI_STRINGS                                     = {
     sort_latest: 'Mais recentes',
     sort_oldest: 'Mais antigos',
     uploadDate: 'Data',
+    createdPrefix: 'Criado',
+    updatedPrefix: 'Atualizado',
   },
   'zh-TW': {
     brandArchive: '生存戰術手冊檔案庫',
@@ -464,5 +478,7 @@ export const UI_STRINGS                                     = {
     sort_latest: '最新發布',
     sort_oldest: '最早發布',
     uploadDate: '發布日期',
+    createdPrefix: '發布',
+    updatedPrefix: '最後更新',
   },
 };

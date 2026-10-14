@@ -46,6 +46,19 @@ export function getLocaleRuntimeScript(): string {
               el.textContent = (ui.brandShort || '[SURVIVAL PROTOCOL]') + ' // ' + proto[field];
             } else if (field === 'createdAt') {
               el.innerText = String(proto[field]).slice(0, 10).replace(/-/g, '.');
+            } else if (field === 'updatedAt') {
+              var ud = new Date(proto[field]);
+              if (!isNaN(ud.getTime())) {
+                var ukst = new Date(ud.getTime() + 9 * 3600000);
+                var uy = ukst.getUTCFullYear();
+                var um = String(ukst.getUTCMonth() + 1).padStart(2, '0');
+                var uday = String(ukst.getUTCDate()).padStart(2, '0');
+                var uhh = String(ukst.getUTCHours()).padStart(2, '0');
+                var umm = String(ukst.getUTCMinutes()).padStart(2, '0');
+                el.innerText = uy + '.' + um + '.' + uday + ' ' + uhh + ':' + umm;
+              } else {
+                el.innerText = proto[field];
+              }
             } else {
               el.innerText = proto[field];
             }

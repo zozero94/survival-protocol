@@ -10,15 +10,36 @@ function formatDate(iso         )         {
   return `${y}.${m}.${day}`;
 }
 
+function formatDateTime(iso         )         {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '';
+  const kst = new Date(d.getTime() + 9 * 3600 * 1000);
+  const y = kst.getUTCFullYear();
+  const m = String(kst.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(kst.getUTCDate()).padStart(2, '0');
+  const hh = String(kst.getUTCHours()).padStart(2, '0');
+  const mm = String(kst.getUTCMinutes()).padStart(2, '0');
+  return `${y}.${m}.${day} ${hh}:${mm}`;
+}
+
 /**
  * [Presentational Component]
  * 생존 프로토콜 상단 히어로 섹션 (Stitch Utilitarian Brutalist Spec Card)
- * 선언적 data-i18n 및 data-proto 속성 100% 탑재 + 업로드 날짜 배지
+ * 선언적 data-i18n 및 data-proto 속성 100% 탑재 + 등록/최종 수정 일시 배지
  */
 export function renderHeroSection(protocol          )         {
   const dateStr = formatDate(protocol.createdAt);
   const dateHtml = dateStr
-    ? `<span class="border border-[#333] text-[#888] px-1.5 py-0.5 text-[11px] font-mono"><span id="proto-date" data-proto="createdAt">${dateStr}</span></span>`
+    ? `<span class="border border-[#333] text-[#888] px-1.5 py-0.5 text-[11px] font-mono"><span data-i18n="createdPrefix">등록</span>: <span id="proto-date" data-proto="createdAt">${dateStr}</span></span>`
+    : '';
+
+  const updatedDateStr = formatDateTime(protocol.updatedAt);
+  const updatedHtml = updatedDateStr
+    ? `<div class="flex items-center gap-1.5 bg-[#141414] text-[#888] border border-[#333] px-2 py-0.5 text-xs font-mono tracking-wider rounded-none">
+      <svg class="w-3 h-3 text-[#777] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span><span data-i18n="updatedPrefix">최종 수정</span>: <span id="proto-updated" data-proto="updatedAt">${updatedDateStr}</span></span>
+    </div>`
     : '';
 
   return `
@@ -29,9 +50,9 @@ export function renderHeroSection(protocol          )         {
   <div class="absolute bottom-0 left-0 w-2.5 h-2.5 border-b-2 border-l-2 border-white"></div>
   <div class="absolute bottom-0 right-0 w-2.5 h-2.5 border-b-2 border-r-2 border-white"></div>
 
-  <!-- Hero Header Badges -->
+  <!-- Hero Header Badges (Stitch Utilitarian Layout: Threat/Category/Created Date on Left, Last Modified on Right) -->
   <div class="flex items-center justify-between mb-3.5 font-mono text-xs flex-wrap gap-2">
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 flex-wrap">
       <span id="proto-threat-badge" data-proto="threatLevelText" class="bg-white text-black font-bold px-1.5 py-0.5 tracking-tight uppercase">
         ${protocol.threatLevelText}
       </span>
@@ -40,10 +61,7 @@ export function renderHeroSection(protocol          )         {
       </span>
       ${dateHtml}
     </div>
-    <div class="text-[#888] text-[11px] flex items-center gap-1">
-      <svg class="w-3 h-3 text-[#777]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      <span data-i18n="readingTime">소요 30초 독해</span>
-    </div>
+    ${updatedHtml}
   </div>
 
   <!-- Large Bold Title -->
@@ -80,3 +98,4 @@ export function renderHeroSection(protocol          )         {
 </section>
   `.trim();
 }
+

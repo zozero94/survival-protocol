@@ -54,4 +54,5 @@ export interface Protocol {
   fatalMistake: FatalMistake;
   nextProtocolTitle?: string;
   createdAt?: string;
+  updatedAt?: string;
 }
