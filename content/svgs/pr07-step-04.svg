@@ -1,77 +1,159 @@
 <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg04" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d0d0d"/>
-      <stop offset="100%" stop-color="#141414"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad04" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090b"/>
+      <stop offset="50%" stop-color="#0f1216"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
     </linearGradient>
-    <linearGradient id="standingRope4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c2883e"/>
-      <stop offset="50%" stop-color="#f5b867"/>
-      <stop offset="100%" stop-color="#946123"/>
+
+    <!-- Manila Standing Rope 3D Tubular Gradient -->
+    <linearGradient id="ropeManila04" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="25%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#fef3c7"/>
+      <stop offset="75%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#451a03"/>
     </linearGradient>
-    <linearGradient id="workingRope4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#15803d"/>
-      <stop offset="50%" stop-color="#4ade80"/>
-      <stop offset="100%" stop-color="#166534"/>
+
+    <!-- Tactical Green Working Rope 3D Gradient -->
+    <linearGradient id="ropeGreen04" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="25%" stop-color="#16a34a"/>
+      <stop offset="50%" stop-color="#bbf7d0"/>
+      <stop offset="75%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#052e16"/>
     </linearGradient>
+
+    <!-- Deep Drop Shadow Filter for Over/Under Crossing -->
+    <filter id="shadowDeep04" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <!-- Twisted Rope Braid Pattern for Manila Rope -->
+    <pattern id="braidManila04" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#451a03" stroke-width="2.5" opacity="0.6"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#fef3c7" stroke-width="1.5" opacity="0.4"/>
+    </pattern>
+
+    <!-- Paracord Texture Pattern for Working End -->
+    <pattern id="braidGreen04" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#052e16" stroke-width="2" opacity="0.7"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#bbf7d0" stroke-width="1.2" opacity="0.5"/>
+    </pattern>
   </defs>
 
-  <!-- Background Canvas -->
-  <rect width="400" height="400" fill="url(#bg04)"/>
-  <rect x="10" y="10" width="380" height="380" fill="none" stroke="#222" stroke-width="1"/>
+  <!-- Canvas Backdrop -->
+  <rect width="400" height="400" fill="url(#bgGrad04)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+
+  <!-- Technical Corner Crosshairs -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
 
   <!-- Blueprint Header -->
-  <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 04 // BOWLINE STEP 4: 토끼굴 재진입</text>
-  <line x1="20" y1="38" x2="380" y2="38" stroke="#262626" stroke-width="1"/>
+  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 04 // BOWLINE STEP 4: 토끼굴 재진입</text>
+  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
 
-  <!-- Back Turn of Working Rope Behind Tree -->
-  <path d="M 210 130 C 210 85 255 75 270 90 C 285 110 240 125 180 125" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 210 130 C 210 85 255 75 270 90 C 285 110 240 125 180 125" stroke="url(#workingRope4)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Background Reference Grid -->
+  <g opacity="0.12" stroke="#4b5563" stroke-width="0.5" stroke-dasharray="2 4">
+    <line x1="60" y1="40" x2="60" y2="340"/>
+    <line x1="200" y1="40" x2="200" y2="340"/>
+    <line x1="340" y1="40" x2="340" y2="340"/>
+    <line x1="20" y1="120" x2="380" y2="120"/>
+    <line x1="20" y1="200" x2="380" y2="200"/>
+    <line x1="20" y1="280" x2="380" y2="280"/>
+  </g>
 
-  <!-- Standing Part of Rope (원줄 나무 - Drawn in Front) -->
-  <path d="M 200 45 L 200 130" stroke="#050505" stroke-width="14" stroke-linecap="round"/>
-  <path d="M 200 45 L 200 130" stroke="url(#standingRope4)" stroke-width="8" stroke-linecap="round"/>
+  <!-- ============================================================== -->
+  <!-- 1. COLLAR LOOP BEHIND (원줄 뒤편을 통과해 나오는 U자 칼라) -->
+  <!-- ============================================================== -->
+  <path d="M 215 145 C 240 115 240 68 195 68 C 155 68 140 100 152 145" 
+        stroke="#000000" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M 215 145 C 240 115 240 68 195 68 C 155 68 140 100 152 145" 
+        stroke="url(#ropeGreen04)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 215 145 C 240 115 240 68 195 68 C 155 68 140 100 152 145" 
+        stroke="url(#braidGreen04)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8"/>
 
-  <!-- Main Hanging Eye Loop -->
-  <path d="M 160 145 C 130 160 110 220 130 280 C 150 320 220 320 250 280 C 270 250 260 210 240 170" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 160 145 C 130 160 110 220 130 280 C 150 320 220 320 250 280 C 270 250 260 210 240 170" stroke="url(#standingRope4)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- ============================================================== -->
+  <!-- 2. STANDING PART (원줄 / 나무) SITTING IN FRONT -->
+  <!-- ============================================================== -->
+  <g filter="url(#shadowDeep04)">
+    <!-- Standing Rope Main Vertical Trunk -->
+    <path d="M 195 42 L 195 120" stroke="#000000" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 195 42 L 195 120" stroke="url(#ropeManila04)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 195 42 L 195 120" stroke="url(#braidManila04)" stroke-width="14" stroke-linecap="round" opacity="0.75"/>
+  </g>
 
-  <!-- The 6-Loop (토끼굴) Ring Structure -->
-  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170" stroke="url(#standingRope4)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Throat Loop (토끼굴 루프 - 6자 루프 구조) -->
+  <path d="M 195 120 C 130 135 125 215 185 225 C 235 230 255 190 230 155 C 210 130 180 122 145 140" 
+        stroke="#000000" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M 195 120 C 130 135 125 215 185 225 C 235 230 255 190 230 155 C 210 130 180 122 145 140" 
+        stroke="url(#ropeManila04)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 195 120 C 130 135 125 215 185 225 C 235 230 255 190 230 155 C 210 130 180 122 145 140" 
+        stroke="url(#braidManila04)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.75"/>
 
-  <!-- First Upward Strand (from Step 2) -->
-  <path d="M 230 250 C 220 210 210 170 210 130" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 230 250 C 220 210 210 170 210 130" stroke="url(#workingRope4)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Lower Main Eye Loop -->
+  <path d="M 185 225 C 185 280 145 325 105 325 C 65 325 40 270 50 210 C 60 160 105 130 145 140" 
+        stroke="#000000" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M 185 225 C 185 280 145 325 105 325 C 65 325 40 270 50 210 C 60 160 105 130 145 140" 
+        stroke="url(#ropeManila04)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 185 225 C 185 280 145 325 105 325 C 65 325 40 270 50 210 C 60 160 105 130 145 140" 
+        stroke="url(#braidManila04)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.75"/>
 
-  <!-- Working End Diving DOWN into the Rabbit Hole (Drawn in Front) -->
-  <path d="M 180 125 C 150 135 155 180 175 220 L 180 250" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 180 125 C 150 135 155 180 175 220 L 180 250" stroke="url(#workingRope4)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- ============================================================== -->
+  <!-- 3. PARALLEL GREEN STRANDS (굴 속으로 재진입하여 나란히 정렬) -->
+  <!-- ============================================================== -->
+  <g filter="url(#shadowDeep04)">
+    <!-- Strand 1: Coming UP out of hole (From step 2) -->
+    <path d="M 172 205 L 172 150" stroke="#000000" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 172 205 L 172 150" stroke="url(#ropeGreen04)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 172 205 L 172 150" stroke="url(#braidGreen04)" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
 
-  <!-- Downward Motion Vector Arrow -->
-  <line x1="162" y1="145" x2="175" y2="215" stroke="#4ade80" stroke-width="2.5"/>
-  <polygon points="178,225 168,212 181,210" fill="#4ade80"/>
+    <!-- Strand 2: Diving DOWN back into hole (From step 4) -->
+    <path d="M 186 145 L 186 215" stroke="#000000" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 186 145 L 186 215" stroke="url(#ropeGreen04)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 186 145 L 186 215" stroke="url(#braidGreen04)" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  </g>
 
-  <!-- Callouts -->
-  <!-- 1. Diving Down Label (Top Left) -->
-  <rect x="25" y="65" width="145" height="42" fill="#181818" stroke="#333" stroke-width="1"/>
-  <text x="35" y="82" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">BACK INTO HOLE</text>
-  <text x="35" y="96" fill="#e0e0e0" font-family="'JetBrains Mono', monospace" font-size="9">위에서 아래로 재진입</text>
+  <!-- Heat-sealed Red End Cap on Working Tip pointing down -->
+  <line x1="181" y1="215" x2="191" y2="215" stroke="#ef4444" stroke-width="4" stroke-linecap="square"/>
 
-  <!-- 2. Parallel Pair in the Loop (Center Right) -->
-  <circle cx="195" cy="235" r="16" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <line x1="211" y1="235" x2="265" y2="235" stroke="#38bdf8" stroke-width="1"/>
-  <text x="275" y="232" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">PARALLEL STRANDS</text>
-  <text x="275" y="245" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">두 가닥이 나란히 정렬</text>
+  <!-- Downward Re-entry Motion Arrow -->
+  <path d="M 186 130 L 186 165" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <polygon points="186,172 181,162 191,162" fill="#ef4444"/>
 
-  <!-- 3. Collar Forming (Top Right) -->
-  <line x1="250" y1="110" x2="310" y2="140" stroke="#f5b867" stroke-width="1"/>
-  <circle cx="250" cy="110" r="2" fill="#f5b867"/>
-  <text x="275" y="152" fill="#f5b867" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">COLLAR LOOP</text>
-  <text x="275" y="165" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">나무를 감싼 뒤통수 고리</text>
+  <!-- Parallel Alignment Bracket -->
+  <path d="M 164 165 L 160 165 L 160 195 L 164 195" fill="none" stroke="#22c55e" stroke-width="1.2"/>
+  <path d="M 194 165 L 198 165 L 198 195 L 194 195" fill="none" stroke="#22c55e" stroke-width="1.2"/>
 
-  <!-- Bottom Instruction Box -->
-  <rect x="20" y="335" width="360" height="45" fill="#141414" stroke="#262626" stroke-width="1"/>
-  <text x="30" y="352" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[4단계 핵심] 토끼가 굴 속으로 다시 쏙 들어감</text>
-  <text x="30" y="368" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">나무를 돌아 나온 끝단을 처음 나왔던 토끼굴에 위에서 아래로 찔러 넣습니다.</text>
+  <!-- ============================================================== -->
+  <!-- 4. CALLOUT LABELS (9대 선언적 바인딩 라벨) -->
+  <!-- ============================================================== -->
+  <!-- Label 2 & 3: Back Into Hole (Top Left) -->
+  <line x1="180" y1="135" x2="90" y2="135" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="180" cy="135" r="2.5" fill="#ef4444"/>
+  <text x="24" y="125" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">BACK INTO HOLE</text>
+  <text x="24" y="138" fill="#fca5a5" font-family="'JetBrains Mono', monospace" font-size="9">위에서 아래로 재진입</text>
+
+  <!-- Label 4 & 5: Parallel Strands (Center Right) -->
+  <line x1="198" y1="180" x2="265" y2="180" stroke="#22c55e" stroke-width="1"/>
+  <circle cx="198" cy="180" r="2.5" fill="#22c55e"/>
+  <text x="275" y="175" fill="#86efac" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">PARALLEL STRANDS</text>
+  <text x="275" y="188" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="9">두 가닥이 나란히 정렬</text>
+
+  <!-- Label 6 & 7: Collar Loop (Top Right) -->
+  <line x1="225" y1="80" x2="265" y2="80" stroke="#f59e0b" stroke-width="1"/>
+  <circle cx="225" cy="80" r="2.5" fill="#f59e0b"/>
+  <text x="275" y="75" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">COLLAR LOOP</text>
+  <text x="275" y="88" fill="#fef3c7" font-family="'JetBrains Mono', monospace" font-size="9">나무를 감싼 뒤통수 고리</text>
+
+  <!-- Bottom Tactical Field Note Strip -->
+  <rect x="18" y="342" width="364" height="40" fill="#111419" stroke="#262d35" stroke-width="1"/>
+  <rect x="18" y="342" width="4" height="40" fill="#22c55e"/>
+  <!-- Label 8 & 9: Summary Instruction -->
+  <text x="32" y="357" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">[4단계 핵심] 토끼가 굴 속으로 다시 쏙 들어감</text>
+  <text x="32" y="371" fill="#9ca3af" font-family="'Chivo', sans-serif" font-size="8.5">나무를 돌아 나온 끝단을 처음 나왔던 토끼굴에 위에서 아래로 찔러 넣습니다.</text>
 </svg>

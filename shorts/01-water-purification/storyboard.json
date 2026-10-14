@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-01",
-  "title": "[쇼츠 45초] 흙탕물을 깨끗한 식수로 바꾸는 법 (숯·모래 정수기)",
+  "title": "[쇼츠 45초] 흙탕물을 맑은 식수로 바꾸는 법 (숯·모래 5중 여과 정수탑과 끓이기)",
   "totalDurationSeconds": 45,
   "aspectRatio": "9:16",
   "scenes": [
@@ -20,18 +20,18 @@
       "endSecond": 10,
       "screenType": "CHECKLIST",
       "visualAsset": "materials-grid.svg",
-      "caption": "필수 재료 3가지: 페트병, 숯, 모래와 자갈",
-      "voiceoverScript": "주변에서 딱 세 가지만 확보하세요. 자른 페트병, 모닥불에서 건진 숯, 그리고 모래와 자갈입니다.",
-      "motionDirection": "Quick horizontal slide-in for 3 item cards"
+      "caption": "필수 재료: 삼각대, 숯, 모래와 자갈",
+      "voiceoverScript": "주변에서 삼각대와 나무껍질 깔때기, 모닥불에서 건진 숯, 그리고 모래와 자갈을 준비하세요.",
+      "motionDirection": "Quick horizontal slide-in for item cards"
     },
     {
       "sceneNumber": 3,
       "startSecond": 10,
       "endSecond": 18,
       "screenType": "STEP_1",
-      "visualAsset": "step-01.svg",
-      "caption": "1단계: 페트병 바닥을 자르고 주둥이를 천으로 밀봉",
-      "voiceoverScript": "먼저 페트병 바닥을 잘라 깔때기 모양을 만들고, 주둥이에 면 천이나 물이끼를 꽉 채워 마개를 만듭니다.",
+      "visualAsset": "pr01-step-01.svg",
+      "caption": "1단계: 삼각대에 여과관을 걸고 바닥을 이끼로 밀봉",
+      "voiceoverScript": "삼각대에 나무껍질 깔때기를 매달고, 주둥이에 물이끼를 꽉 채워 마개를 만듭니다.",
       "motionDirection": "Ken-Burns pan down along the cut line schematic"
     },
     {
@@ -39,7 +39,7 @@
       "startSecond": 18,
       "endSecond": 26,
       "screenType": "STEP_2",
-      "visualAsset": "step-02.svg",
+      "visualAsset": "pr01-step-02.svg",
       "caption": "2단계: [숯 ➔ 모래 ➔ 자갈] 역피라미드 적층",
       "voiceoverScript": "가장 중요한 층별 적층입니다. 맨 아래 숯, 중간에 모래, 맨 위에 자갈을 채워 다층 필터를 완성합니다.",
       "motionDirection": "Bottom-to-top staggered reveal of layers"
@@ -49,7 +49,7 @@
       "startSecond": 26,
       "endSecond": 34,
       "screenType": "STEP_3",
-      "visualAsset": "step-03.svg",
+      "visualAsset": "pr01-step-03.svg",
       "caption": "3단계: 흙탕물을 붓고 맑게 걸러진 물 수거",
       "voiceoverScript": "이제 흙탕물을 부으면 중력에 의해 불순물이 걸러지며 투명한 물이 한 방울씩 떨어집니다.",
       "motionDirection": "Subtle vertical pan tracking the clear water drops"

@@ -1,85 +1,126 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "Purificação de Água Selvagem (Filtro de Carvão)",
+  "title": "Como transformar água barrenta em água potável (Torre de filtragem de 5 camadas com carvão e areia)",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
-  "summary": "Beber água selvagem não tratada causa disenteria bacteriana e giardíase letal em até 72 horas. A água deve passar por filtragem mecânica de carvão ativado seguida obrigatoriamente de fervura térmica.",
-  "timeRequired": "15 MINUTOS",
-  "successRate": "99.8% (Pós-Fervura)",
-  "difficulty": "Nível 1 (Sobrevivência Primitiva)",
-  "outputPerHour": "1.5 Litros / Hora",
+  "threatLevelText": "[SOBREVIVÊNCIA CRÍTICA]",
+  "summary": "Beber água não tratada na natureza provoca disenteria grave e desidratação fatal em até 72 horas. Este protocolo detalha a construção de uma coluna de filtragem primitiva de 5 camadas com carvão, areia fina e cascalho, seguida de fervura obrigatória de 3 minutos para exterminar 99,9% dos patógenos.",
+  "timeRequired": "25 Min (15 min filtragem + 10 min fervura)",
+  "successRate": "99,9% (Necessita fervura posterior)",
+  "difficulty": "Fácil (100% Materiais Naturais)",
+  "outputPerHour": "1,5 a 2,0 Litros / Hora",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Carvão de Madeira Dura Triturado",
-      "desc": "Brasas frias de fogueira trituradas do tamanho de ervilhas para adsorver toxinas."
+      "name": "Carvão vegetal triturado (Dois punhados)",
+      "desc": "Carvão de fogueira triturado em grãos do tamanho de ervilhas (5-8 mm). Absorve toxinas e odores desagradáveis."
     },
     {
       "id": "mat-02",
-      "name": "Areia Limpa de Rio e Cascalho Fino",
-      "desc": "Areia lavada e pequenos seixos para retenção física de micropartículas e lodo."
+      "name": "Areia limpa de rio (Dois punhados)",
+      "desc": "Areia lavada para remover a lama fina. Cria uma barreira física densa contra sedimentos."
     },
     {
       "id": "mat-03",
-      "name": "Tubo de Bambu Oco ou Cone de Casca",
-      "desc": "Coluna cilíndrica de bambu (Ø 8 cm) posicionada verticalmente para filtragem por gravidade."
+      "name": "Cascalho e pedras pequenas (Um punhado)",
+      "desc": "Retém detritos grandes e dispersa o impacto da água para não revolver a areia."
+    },
+    {
+      "id": "mat-04",
+      "name": "Cone de casca de árvore ou bambu oco",
+      "desc": "Recipiente de 30-40 cm afunilado para concentrar a água no bocal inferior."
+    },
+    {
+      "id": "mat-05",
+      "name": "Três galhos de suporte retos (50 cm)",
+      "desc": "Galhos da grossura de um dedo amarrados no topo formando um tripé firme."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Preparação do Recipiente e Base do Filtro",
-      "description": "Prepare o cilindro coletor invertido formando um funil largo no topo e saída estreita na base.",
-      "actionNote": "> Ação: Compacte fibra vegetal trançada ou musgo esfagno no bocal inferior para reter os grãos de carvão.",
-      "svgFileName": "step-01.svg",
+      "title": "Passo 1: Montar o tripé, suspender o cone e vedar a base com musgo",
+      "description": "Amarre três galhos retos no topo formando um tripé estável. Fixe o cone de casca ou bambu verticalmente ao centro. Pressione musgo limpo ou tecido no bocal inferior para conter as camadas filtrantes.",
+      "actionNote": "> Checagem: O plugue deve estar bem firme para que o carvão não vaze.",
+      "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "ÁGUA BRUTA",
-        "1. Cascalho (Detritos)",
-        "2. Areia (Sedimentos)",
-        "CARVÃO",
-        "3. Carvão (Toxinas)",
-        "4. Malha Têxtil (Base)"
+        "FIG. 01 // PURIFICATION STEP 1: TRIPÉ E PLUGUE",
+        "TRIPOD FRAME (TRIPÉ)",
+        "CONE FUNNEL (CONE)",
+        "MOSS PLUG (MUSGO)",
+        "[PASSO 1] AMARRAÇÃO DE TRIPÉ DE 3 PONTOS"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Camadas do Meio Filtrante (Pirâmide Invertida)",
-      "description": "Empilhe rigorosamente de baixo para cima: malha têxtil → 6 cm de carvão triturado → 5 cm de areia fina → 3 cm de cascalho grosso.",
-      "actionNote": "> Ciência: O cascalho barra detritos maiores, a areia retém sedimentos finos e o carvão poroso adsorve toxinas químicas.",
-      "svgFileName": "step-02.svg",
+      "title": "Passo 2: Triturar o carvão em grãos e formar uma camada de 8 cm",
+      "description": "Quebre o carvão em pedaços pequenos (5-8 mm). Despeje sobre o musgo e compacte levemente formando uma camada ativa de 8 cm que reterá impurezas químicas.",
+      "actionNote": "> Granulometria: Evite pó muito fino para não entupir a passagem da água.",
+      "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "[DESCARTAR 500ml]",
-        "Purga de Pó",
-        "→",
-        "[COLETAR ÁGUA]",
-        "95% Limpeza",
-        "Fluxo: 1~2 gotas / seg"
+        "FIG. 02 // PURIFICATION STEP 2: LEITO DE CARVÃO",
+        "CHARCOAL CORE (CARVÃO)",
+        "PORE ABSORPTION (ABSORÇÃO)",
+        "THICKNESS: 8CM (ALTURA)",
+        "[PASSO 2] EMPACOTAR 8CM DE CARVÃO EM GRÃOS"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Filtragem Lenta e Esterilização por Fervura",
-      "description": "Despeje a água bruta lentamente sobre o cascalho (1 a 2 gotas/seg) e submeta a água limpa coletada à fervura direta a 100°C.",
-      "actionNote": "> Atenção: Descarte os primeiros 500 ml escuros com pó de carvão. Ferva a água límpida por 3 minutos contínuos.",
-      "svgFileName": "step-03.svg",
+      "title": "Passo 3: Adicionar areia de rio limpa formando uma camada nivelada de 6 cm",
+      "description": "Lave a areia de rio em água corrente e despeje sobre o carvão até 6 cm de espessura. Nivele a superfície com a ponta dos dedos para um fluxo uniforme.",
+      "actionNote": "> Nivelamento: Uma superfície inclinada cria caminhos preferenciais e reduz a filtragem.",
+      "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "100°C Fogo Direto",
-        "100°C",
-        "3 Minutos",
-        "99.9% Estéril",
-        "Tempo Fervura (MIN)"
+        "FIG. 03 // PURIFICATION STEP 3: CAMADA DE AREIA",
+        "RIVER SAND (AREIA)",
+        "PARTICLE FILTER (BARREIRA)",
+        "THICKNESS: 6CM (ALTURA)",
+        "[PASSO 3] FIXAR CARVÃO E BARRAR LAMA"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Adicionar 4 cm de cascalho, despejar água e descartar as primeiras xícaras",
+      "description": "Coloque 4 cm de pedriscos sobre a areia e uma folha larga por cima. Despeje a água barrenta com cuidado. Descarte as 1-2 primeiras xícaras de água escura antes de recolher a água limpa.",
+      "actionNote": "> Regra de descarte: Deixe o filtro se autolimpar até que a água saia cristalina.",
+      "svgFileName": "pr01-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // PURIFICATION STEP 4: CASCALHO E DESCARTE",
+        "PEBBLE LAYER (CASCALHO)",
+        "FLUSH FIRST CUPS (DESCARTE)",
+        "CLEAR DRIP (GOTA CLARA)",
+        "[PASSO 4] AMORTECER QUEDA E DESCARTAR ÁGUA"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Passo 5: Ferver a água filtrada vigorosamente por pelo menos 3 minutos",
+      "description": "Coloque a água transparente em um vaso de barro sobre as brasas. Mantenha fervura com bolhas vigorosas por pelo menos 3 minutos (5 min em grandes altitudes) para aniquilar 99,9% dos germes.",
+      "actionNote": "> Segurança máxima: Água limpa NÃO é água estéril. A fervura é indispensável.",
+      "svgFileName": "pr01-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // PURIFICATION STEP 5: FERVURA A 100°C",
+        "BOILING 100°C (FERVURA)",
+        "TIME: 3+ MIN (3+ MINUTOS)",
+        "PATHOGEN FREE (99,9% ESTÉRIL)",
+        "[PASSO 5] FERVER VIGOROSAMENTE POR 3+ MIN"
       ]
     }
   ],
   "fatalMistake": {
-    "title": "ERRO FATAL: Nunca beba a água filtrada diretamente sem ferver.",
-    "description": "A filtragem mecânica com carvão remove apenas turbidez e compostos químicos; vírus, cistos de Giardia e Cryptosporidium atravessam o filtro. É obrigatório ferver vigorosamente por pelo menos 1 a 3 minutos.",
-    "consequence": "Consequência ao pular a fervura: Infecção aguda por protozoários e morte por desidratação em 96 horas."
+    "title": "Erro fatal: Beber a água cristalina filtrada sem antes ferver",
+    "description": "Areia e carvão retêm lama e odores, mas cistos de parasitas (Giardia) e vírus passam facilmente pelos poros. Beber sem ferver causa infecções intestinais agudas e desidratação fulminante.",
+    "consequence": "Resultado: Infecção parasitária severa e colapso por desidratação na mata"
+  },
+  "shortsScript": {
+    "hook": "Beber água barrenta sem tratamento pode te matar em 3 dias. Aprenda a filtrar com a natureza!",
+    "body": "Faça uma torre de filtragem de 5 camadas: tripé de madeira, cone de casca e plugue de musgo. Monte 8 cm de carvão, 6 cm de areia e 4 cm de cascalho. Despeje a água e jogue fora a primeira xícara escura. Regra vital: água limpa NÃO é água segura! Ferva vigorosamente por 3 minutos para exterminar 99,9% dos parasitas.",
+    "outro": "Acesse guias de sobrevivência offline sem usar dados no link do perfil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Purificador Primitivo de Carvão e Areia Concluído",
-    "description": "Um cilindro suspenso em tripé com 5 camadas compactadas de carvão, areia e cascalho que clarifica água turva em água potável transparente."
+    "title": "Estrutura completa da torre de purificação natural de 5 camadas",
+    "description": "Coluna de filtragem rústica sustentada por tripé de madeira com carvão, areia e cascalho para obter água transparente e pronta para fervura."
   }
 }

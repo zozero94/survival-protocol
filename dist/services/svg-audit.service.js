@@ -91,22 +91,24 @@ export class SvgAuditService {
    */
          static          AUDITOR_SYSTEM_PROMPT = `
 당신은 '원시 생존 교범(SURVIVAL PROTOCOL)' 파이프라인의 수석 테크니컬 도면 감수관(SVG Blueprint QA Auditor)입니다.
-입력으로 주어지는 [프로토콜 단계 본문(제목, 설명, 야전 핵심)]과 추출된 [SVG 벡터 도면 코드]를 정밀 대조하여 엄격하게 검수하십시오.
+입력으로 주어지는 [프로토콜 단계 본문(제목, 설명, 야전 핵심)]과 추출된 [SVG 벡터 도면 코드]를 대조하여 "초보자가 글을 읽지 않고 도면만 봐도 손으로 즉시 따라 할 수 있는 최상급 퀄리티인지"를 엄격하게 검수하십시오.
 
-[핵심 검수 체크리스트]
-1. 내용 및 물리 기하학 일치성 (Content & Geometry Match):
-   - 본문의 핵심 메커니즘(절삭 방향, 적층 순서, 회전/하중 화살표 방향, 치수 비율, 부품 간 접촉 위치)이 SVG 도형 좌표(points, path d, line x1/y1-x2/y2)와 물리적으로 일치하는지 검증하십시오.
-   - 방향이 반대이거나(예: 안쪽으로 열린 보우드릴 V홈, 거꾸로 된 유속 화살표), 본문에 없는 엉뚱한 도형이 그려진 경우 즉시 FAIL 처리하십시오.
+[5대 절대 감수 기준 (Human-Centered 100-Point Rubric)]
+1. 인간 직관 인지성 (Cognitive Legibility, 25점):
+   - 능동 요소(움직이는 손, 작동 줄 끝단 등)와 수동 요소(원줄, 지지대 등)가 명확한 고대비 색상/선으로 분리되어 줄의 궤적이 0.1초 만에 추적되는가?
+   - 밧줄이나 부품의 상하 교차 지점(OVER / UNDER)에 명확한 그림자(Deep Drop-Shadow) 또는 시각적 마스킹이 들어가 입체적 엮임 관계가 즉시 식별되는가? (단순한 2D 평면 교차는 감점 및 FAIL 대상)
+2. 시각적 완성도 & 재질 리얼리즘 (Material Realism & Fidelity, 25점):
+   - 전선 같은 단순 단색 선(Wireframe)은 즉시 감점.
+   - 실제 밧줄의 3가닥 나선 꼬임 결(Strand Braid Texture), 나무 기둥의 나이테/입체 음영, 3D 원통형 하이라이트/명암 그라디언트가 구현되었는가?
+3. 동작 시퀀스 & 행동 인과성 (Action Flow & Directional Cues, 20점):
+   - 시작점 -> 이동 궤적 -> 관통/진입의 흐름이 고대비 화살표와 인셋 줌(Inset Zoom)으로 명확히 표현되었는가?
+4. 물리 기하학 & 고증 일치성 (Physical Accuracy, 15점):
+   - 매듭/도구의 엮임 구조가 실제 물리학 및 단계 본문 설명과 100% 일치하는가?
+5. 텍스트-도형 레이아웃 무결성 (Anti-Collision & Boundary, 15점):
+   - 텍스트-도형 겹침(TEXT_OVERLAP), viewBox 경계 잘림(BOUNDARY_CLIP), 깨진 글자(TEXT_CORRUPTION)가 0건인가?
 
-2. 텍스트-도형 겹침 및 잘림 검사 (Anti-Collision & Clipping):
-   - 모든 <text> 요소의 (x, y) 좌표, text-anchor, 글자 길이를 계산하여:
-     a) 텍스트와 다른 텍스트가 겹치는지(TEXT_OVERLAP)
-     b) 텍스트가 핵심 도형의 굵은 외곽선이나 화살표 선과 겹쳐 글자가 묻히는지(TEXT_OVERLAP)
-     c) 텍스트나 도형이 viewBox 바깥으로 삐져나가 잘리는지(BOUNDARY_CLIP) 확인하십시오.
-
-3. 문구 무결성 및 적절성 (Text & Label Integrity):
-   - 깨진 글자(), 오탈자, 이중 이스케이프(&amp;amp;), 닫히지 않은 괄호가 없는지 확인하십시오.
-   - 라벨 문구가 해당 단계의 핵심 부품·수치(mm, kg, °C, 각도 등)를 정확히 설명하는지, 현대 공산품 금지어가 섞이지 않았는지 검증하십시오.
+[불합격 및 교정 지침]
+- 종합 점수가 85점 미만이거나, 인간 인지성 또는 재질 리얼리즘에서 심각한 결함(STYLE_VIOLATION, CONTENT_MISMATCH)이 있으면 반드시 passed: false로 판정하고 정밀 교정 프롬프트(remediationPrompt)를 산출하십시오.
 
 [출력 형식 (JSON Only)]
 {
@@ -118,8 +120,8 @@ export class SvgAuditService {
       "category": "CONTENT_MISMATCH" | "TEXT_OVERLAP" | "BOUNDARY_CLIP" | "TEXT_CORRUPTION" | "STYLE_VIOLATION",
       "severity": "CRITICAL" | "WARNING",
       "element": "문제가 된 SVG 요소 또는 텍스트",
-      "reason": "구체적인 결함 원인과 좌표 근거",
-      "fixInstruction": "재추출 시 어떻게 좌표를 이동하거나 도형 방향을 수정해야 하는지 구체적 지시"
+      "reason": "구체적인 결함 원인과 인간 인지성/재질 부족 근거",
+      "fixInstruction": "재추출 시 어떻게 3D 입체 꼬임이나 교차 그림자를 보강해야 하는지 구체적 지시"
     }
   ],
   "remediationPrompt": "Stitch edit_screens 또는 SVG 재생성기에 전달할 정밀 교정 프롬프트"

@@ -1,71 +1,159 @@
 <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg02" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d0d0d"/>
-      <stop offset="100%" stop-color="#141414"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090b"/>
+      <stop offset="50%" stop-color="#0f1216"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
     </linearGradient>
-    <linearGradient id="standingRope2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c2883e"/>
-      <stop offset="50%" stop-color="#f5b867"/>
-      <stop offset="100%" stop-color="#946123"/>
+
+    <!-- Manila Standing Rope 3D Tubular Gradient -->
+    <linearGradient id="ropeManila02" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="25%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#fef3c7"/>
+      <stop offset="75%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#451a03"/>
     </linearGradient>
-    <linearGradient id="workingRope2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#15803d"/>
-      <stop offset="50%" stop-color="#4ade80"/>
-      <stop offset="100%" stop-color="#166534"/>
+
+    <!-- Tactical Green Working Rope 3D Gradient -->
+    <linearGradient id="ropeGreen02" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="25%" stop-color="#16a34a"/>
+      <stop offset="50%" stop-color="#bbf7d0"/>
+      <stop offset="75%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#052e16"/>
     </linearGradient>
+
+    <!-- Deep Drop Shadow Filter for Over/Under Crossing -->
+    <filter id="shadowDeep02" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4.5" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <!-- Twisted Rope Braid Pattern for Manila Rope -->
+    <pattern id="braidManila02" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#451a03" stroke-width="2.5" opacity="0.6"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#fef3c7" stroke-width="1.5" opacity="0.4"/>
+    </pattern>
+
+    <!-- Paracord Texture Pattern for Working End -->
+    <pattern id="braidGreen02" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#052e16" stroke-width="2" opacity="0.7"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#bbf7d0" stroke-width="1.2" opacity="0.5"/>
+    </pattern>
   </defs>
 
-  <!-- Background Canvas -->
-  <rect width="400" height="400" fill="url(#bg02)"/>
-  <rect x="10" y="10" width="380" height="380" fill="none" stroke="#222" stroke-width="1"/>
+  <!-- Canvas Backdrop -->
+  <rect width="400" height="400" fill="url(#bgGrad02)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+
+  <!-- Technical Corner Crosshairs -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
 
   <!-- Blueprint Header -->
-  <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 02 // BOWLINE STEP 2: 토끼굴 상향 탈출</text>
-  <line x1="20" y1="38" x2="380" y2="38" stroke="#262626" stroke-width="1"/>
+  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 02 // BOWLINE STEP 2: 토끼굴 상향 탈출</text>
+  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
 
-  <!-- Standing Part of Rope (원줄) -->
-  <path d="M 200 45 L 200 130" stroke="#050505" stroke-width="14" stroke-linecap="round"/>
-  <path d="M 200 45 L 200 130" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Background Reference Grid -->
+  <g opacity="0.12" stroke="#4b5563" stroke-width="0.5" stroke-dasharray="2 4">
+    <line x1="60" y1="40" x2="60" y2="340"/>
+    <line x1="200" y1="40" x2="200" y2="340"/>
+    <line x1="340" y1="40" x2="340" y2="340"/>
+    <line x1="20" y1="120" x2="380" y2="120"/>
+    <line x1="20" y1="200" x2="380" y2="200"/>
+    <line x1="20" y1="280" x2="380" y2="280"/>
+  </g>
 
-  <!-- Lower Main Loop Hanging Down (큰 메인 고리 형성 부) -->
-  <path d="M 160 145 C 130 160 110 220 130 280 C 150 320 220 320 250 280 C 270 250 260 210 240 170" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 160 145 C 130 160 110 220 130 280 C 150 320 220 320 250 280 C 270 250 260 210 240 170" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- ============================================================== -->
+  <!-- 1. STANDING PART (원줄) & NUMBER 6 THROAT LOOP -->
+  <!-- ============================================================== -->
+  <!-- Top Vertical Standing Line -->
+  <path d="M 200 42 L 200 115" stroke="#000000" stroke-width="18" stroke-linecap="round"/>
+  <path d="M 200 42 L 200 115" stroke="url(#ropeManila02)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 200 42 L 200 115" stroke="url(#braidManila02)" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
 
-  <!-- The 6-Loop (토끼굴) Ring Structure -->
-  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Throat Loop Back Arc (The 6-loop back) -->
+  <path d="M 200 115 C 135 130 130 215 190 225 C 240 230 260 190 235 155 C 215 130 185 122 150 140" 
+        stroke="#000000" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M 200 115 C 135 130 130 215 190 225 C 240 230 260 190 235 155 C 215 130 185 122 150 140" 
+        stroke="url(#ropeManila02)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 200 115 C 135 130 130 215 190 225 C 240 230 260 190 235 155 C 215 130 185 122 150 140" 
+        stroke="url(#braidManila02)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.75"/>
 
-  <!-- Working End (녹색 토끼 줄) Penetrating UPWARDS from underneath the hole -->
-  <!-- Layer under loop entering back-to-front -->
-  <path d="M 250 280 C 240 240 200 220 190 200 L 190 120" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 250 280 C 240 240 200 220 190 200 L 190 120" stroke="url(#workingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- ============================================================== -->
+  <!-- 2. MAIN EYE LOOP (최종 큰 고리가 될 밧줄 하단 루프) -->
+  <!-- ============================================================== -->
+  <!-- Standing rope going down, making the giant eye loop, and coming back up -->
+  <path d="M 190 225 C 190 280 150 325 110 325 C 70 325 45 270 55 210 C 65 160 110 130 150 140" 
+        stroke="#000000" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M 190 225 C 190 280 150 325 110 325 C 70 325 45 270 55 210 C 65 160 110 130 150 140" 
+        stroke="url(#ropeManila02)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 190 225 C 190 280 150 325 110 325 C 70 325 45 270 55 210 C 65 160 110 130 150 140" 
+        stroke="url(#braidManila02)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.75"/>
 
-  <!-- Front Crossing Over Ring Edge -->
-  <path d="M 200 130 C 175 135 160 145 160 145" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <path d="M 200 130 C 175 135 160 145 160 145" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- ============================================================== -->
+  <!-- 3. WORKING END (토끼 줄) - 굴 아래에서 위로 솟구쳐 나오는 상향 관통! -->
+  <!-- ============================================================== -->
+  <!-- First part: Entering underneath the throat hole -->
+  <path d="M 150 140 C 160 150 175 165 185 178" 
+        stroke="#000000" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.6"/>
+        
+  <!-- Emerging Upward through Rabbit Hole with Deep 3D Shadow -->
+  <g filter="url(#shadowDeep02)">
+    <!-- Emerging green tail shooting upward -->
+    <path d="M 185 185 C 195 160 215 110 225 75" 
+          stroke="#000000" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <path d="M 185 185 C 195 160 215 110 225 75" 
+          stroke="url(#ropeGreen02)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M 185 185 C 195 160 215 110 225 75" 
+          stroke="url(#braidGreen02)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.85"/>
+  </g>
 
-  <!-- Upward Motion Vector Arrow (수직 상향 화살표) -->
-  <line x1="190" y1="180" x2="190" y2="105" stroke="#4ade80" stroke-width="2.5"/>
-  <polygon points="190,95 183,110 197,110" fill="#4ade80"/>
+  <!-- Heat-sealed Red End Cap on Working Tip -->
+  <line x1="220" y1="75" x2="230" y2="75" stroke="#ef4444" stroke-width="4" stroke-linecap="square"/>
 
-  <!-- Callouts -->
-  <!-- 1. Upward Exit Label (Top Left) -->
-  <rect x="25" y="70" width="145" height="42" fill="#181818" stroke="#333" stroke-width="1"/>
-  <text x="35" y="87" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">EMERGE FROM HOLE</text>
-  <text x="35" y="101" fill="#e0e0e0" font-family="'JetBrains Mono', monospace" font-size="9">굴 아래에서 위로 탈출</text>
+  <!-- ============================================================== -->
+  <!-- 4. 3D DIRECTIONAL & COGNITIVE CUES (땅속에서 위로 솟구침) -->
+  <!-- ============================================================== -->
+  <!-- The 3D Throat Hole Opening Indicator (Portal ellipse) -->
+  <ellipse cx="185" cy="180" rx="20" ry="14" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="3 2"/>
+  
+  <!-- Giant Upward 3D Vector Arrow (솟구치는 탈출 궤적) -->
+  <path d="M 185 200 C 190 175 200 140 210 100" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="214,92 203,103 218,107" fill="#ef4444"/>
 
-  <!-- 2. Rabbit Head Working Tip (Top Center) -->
-  <circle cx="190" cy="120" r="10" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <text x="210" y="115" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">토끼 머리 15cm</text>
-  <text x="210" y="128" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">충분한 길이 인출</text>
 
-  <!-- 3. Lower Loop Description (Bottom Right) -->
-  <text x="260" y="270" fill="#f5b867" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">MAIN EYE LOOP</text>
-  <text x="260" y="284" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">최종 하중을 받을 큰 고리</text>
 
-  <!-- Bottom Instruction Box -->
-  <rect x="20" y="335" width="360" height="45" fill="#141414" stroke="#262626" stroke-width="1"/>
-  <text x="30" y="352" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[2단계 핵심] 굴 밑바닥에서 위쪽으로 토끼를 쑥 뽑아 올림</text>
-  <text x="30" y="368" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">위에서 아래로 찌르면 매듭이 풀리는 올가미가 되므로 절대 주의하십시오.</text>
+  <!-- 15cm Dimension Bracket for Rabbit Head Slack -->
+  <path d="M 235 75 L 245 75 L 245 155 L 235 155" fill="none" stroke="#f59e0b" stroke-width="1"/>
+  <line x1="245" y1="115" x2="255" y2="115" stroke="#f59e0b" stroke-width="1"/>
+
+  <!-- ============================================================== -->
+  <!-- 5. CALLOUT LABELS (9대 선언적 바인딩 라벨) -->
+  <!-- ============================================================== -->
+  <!-- Label 2 & 3: Emerge from hole (Top Center/Right) -->
+  <line x1="220" y1="85" x2="270" y2="85" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="220" cy="85" r="2.5" fill="#38bdf8"/>
+  <text x="280" y="80" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">EMERGE FROM HOLE</text>
+  <text x="280" y="93" fill="#bae6fd" font-family="'JetBrains Mono', monospace" font-size="9">굴 아래에서 위로 탈출</text>
+
+  <!-- Label 4 & 5: Rabbit Head 15cm Slack (Right Center) -->
+  <text x="260" y="152" fill="#fef3c7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">토끼 머리 15cm</text>
+  <text x="260" y="165" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9">충분한 길이 인출</text>
+
+  <!-- Label 6 & 7: Main Eye Loop (Bottom Left) -->
+  <line x1="60" y1="280" x2="30" y2="280" stroke="#f59e0b" stroke-width="1"/>
+  <circle cx="60" cy="280" r="2.5" fill="#f59e0b"/>
+  <text x="24" y="268" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">MAIN EYE LOOP</text>
+  <text x="24" y="281" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9">최종 하중을 받을 큰 고리</text>
+
+  <!-- Bottom Tactical Field Note Strip -->
+  <rect x="18" y="342" width="364" height="40" fill="#111419" stroke="#262d35" stroke-width="1"/>
+  <rect x="18" y="342" width="4" height="40" fill="#38bdf8"/>
+  <!-- Label 8 & 9: Summary Instruction -->
+  <text x="32" y="357" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">[2단계 핵심] 굴 밑바닥에서 위쪽으로 토끼를 쑥 뽑아 올림</text>
+  <text x="32" y="371" fill="#9ca3af" font-family="'Chivo', sans-serif" font-size="8.5">위에서 아래로 찌르면 매듭이 풀리는 올가미가 되므로 절대 주의하십시오.</text>
 </svg>

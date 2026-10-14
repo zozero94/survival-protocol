@@ -50,9 +50,9 @@ describe('🌐 [Suite 9: SEO & AdSense] 검색엔진 최적화 및 구글 애드
     assert.strictEqual(parsed['@context'], 'https://schema.org');
     assert.strictEqual(parsed['@type'], 'HowTo');
     assert.ok(parsed.name.includes('PR-01'));
-    assert.strictEqual(parsed.step.length, 3);
-    assert.strictEqual(parsed.step[0].name, 'Step 01: 나무통 아랫부분을 천이나 이끼로 막기');
-    assert.strictEqual(parsed.supply.length, 3);
+    assert.strictEqual(parsed.step.length, proto1.steps.length);
+    assert.ok(parsed.step[0].name.includes(proto1.steps[0].title));
+    assert.strictEqual(parsed.supply.length, proto1.materials.length);
   });
 
   it('renderAdsenseHeadScript는 기본 설정된 공식 클라이언트 ID(ca-pub-4169469417741632)와 메타/스크립트 태그를 반환해야 한다', () => {

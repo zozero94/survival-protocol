@@ -1,85 +1,126 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "Purificación de Agua Contaminada (Filtro de Carbón)",
+  "title": "Cómo convertir agua turbia en agua potable (Torre de filtración de carbón y arena de 5 capas)",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
-  "summary": "Beber agua silvestre sin tratar provoca disentería bacteriana y giardiasis letal en menos de 72 horas. El agua debe pasar por filtración mecánica de carbón activado seguida obligatoriamente de ebullición térmica.",
-  "timeRequired": "15 MINUTOS",
-  "successRate": "99.8% (Tras Ebullición)",
-  "difficulty": "Nivel 1 (Supervivencia Básica)",
-  "outputPerHour": "1.5 Litros / Hora",
+  "threatLevelText": "[SUPERVIVENCIA CRÍTICA]",
+  "summary": "Beber agua turbia o estancada sin tratar en la naturaleza provoca disentería severa y deshidratación mortal en 72 horas. Este protocolo detalla la construcción de una columna de filtración primitiva de 5 capas con carbón vegetal, arena fina y grava, seguida de un hervor obligatorio de 3 minutos para eliminar el 99.9% de los patógenos.",
+  "timeRequired": "25 Min (15 min filtrado + 10 min hervor)",
+  "successRate": "99.9% (Requiere hervido posterior)",
+  "difficulty": "Fácil (100% Materiales Primitivos)",
+  "outputPerHour": "1.5 a 2.0 Litros / Hora",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Carbón de Madera Dura Triturado",
-      "desc": "Brasas frías de hoguera trituradas al tamaño de un guisante para adsorber toxinas y metales."
+      "name": "Carbón vegetal triturado (Dos puñados)",
+      "desc": "Restos de madera quemada triturados al tamaño de guisantes (5-8 mm). Sus microporos absorben toxinas y malos olores."
     },
     {
       "id": "mat-02",
-      "name": "Arena de Río Limpia y Grava Fina",
-      "desc": "Arena lavada y guijarros pequeños para retener sedimentos y partículas en suspensión."
+      "name": "Arena limpia de río (Dos puñados)",
+      "desc": "Lavada en el río para eliminar el lodo. Forma una barrera densa contra partículas finas en suspensión."
     },
     {
       "id": "mat-03",
-      "name": "Tubo de Bambú Hueco o Cono de Corteza",
-      "desc": "Sección de bambú de 8 cm de diámetro invertida como columna de filtración por gravedad."
+      "name": "Gravilla y piedras pequeñas (Un puñado)",
+      "desc": "Guijarros limpios que filtran residuos gruesos y distribuyen el flujo de agua sobre la arena."
+    },
+    {
+      "id": "mat-04",
+      "name": "Cono de corteza de abedul o bambú hueco",
+      "desc": "Recipiente cilíndrico o cónico de 30-40 cm que canaliza el agua hacia un pico inferior estrecho."
+    },
+    {
+      "id": "mat-05",
+      "name": "Tres ramas rectas de soporte (50 cm)",
+      "desc": "Ramas del grosor de un dedo atadas en la parte superior formando un trípode estable."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Preparación del Recipiente y Base del Filtro",
-      "description": "Prepare un cilindro hueco de bambú o recipiente cónico invertido con abertura inferior estrecha para dirigir el flujo por gravedad.",
-      "actionNote": "> Acción: Coloque un tapón denso de tela de fibra vegetal o musgo esfagno en la boquilla inferior para evitar la fuga del carbón.",
-      "svgFileName": "step-01.svg",
+      "title": "Paso 1: Montar el trípode, fijar el cono e insertar el tapón de musgo",
+      "description": "Ate tres ramas rectas con lianas para formar un trípode de 3 puntos. Fije verticalmente el cono de corteza o bambú en el centro. Inserte musgo limpio o tela en la boquilla inferior para contener los medios filtrantes.",
+      "actionNote": "> Verificación: Ajuste firmemente el tapón para evitar que el carbón se escape con el agua.",
+      "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "AGUA CRUDA",
-        "1. Grava (Residuos)",
-        "2. Arena (Sedimentos)",
-        "CARBÓN",
-        "3. Carbón (Toxinas)",
-        "4. Malla Textil (Base)"
+        "FIG. 01 // PURIFICATION STEP 1: TRÍPODE Y TAPÓN",
+        "TRIPOD FRAME (TRÍPODE)",
+        "CONE FUNNEL (CONO)",
+        "MOSS PLUG (TAPÓN)",
+        "[PASO 1] MONTAJE DE SOPORTE DE 3 PUNTOS"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Estratificación del Medio Filtrante (Pirámide Invertida)",
-      "description": "Apile las capas en orden inverso estricto desde abajo hacia arriba: malla de fibra → 6 cm de carbón triturado → 5 cm de arena fina → 3 cm de grava gruesa.",
-      "actionNote": "> Ciencia: La grava detiene residuos grandes, la arena atrapa micropartículas y la matriz porosa del carbón adsorbe toxinas químicas.",
-      "svgFileName": "step-02.svg",
+      "title": "Paso 2: Triturar carbón vegetal y empacar una capa activa de 8 cm",
+      "description": "Triture carbón de fogata al tamaño de un guisante (5-8 mm). Viértalo sobre el tapón de musgo y compáctelo suavemente formando una capa de 8 cm que atrapará toxinas y olores.",
+      "actionNote": "> Tamaño: Evite el polvo fino para no taponar el flujo.",
+      "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "[DESCARTAR 500ml]",
-        "Purga de Polvo",
-        "→",
-        "[RECOGER AGUA]",
-        "95% Claridad",
-        "Flujo: 1~2 gotas / seg"
+        "FIG. 02 // PURIFICATION STEP 2: LECHO DE CARBÓN",
+        "CHARCOAL CORE (ACTIVO)",
+        "PORE ABSORPTION (ABSORCIÓN)",
+        "THICKNESS: 8CM (GROSOR)",
+        "[PASO 2] EMPACAR 8CM DE CARBÓN TRITURADO"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Vertido de Agua Turbia y Esterilización por Ebullición",
-      "description": "Vierta el agua turbia lentamente sobre la grava superior. Recoja el agua filtrada a un ritmo constante de 1 a 2 gotas por segundo y hiérvala a 100°C.",
-      "actionNote": "> Advertencia: Descarte los primeros 500 ml con polvo de carbón. Hierva el agua clara durante al menos 3 minutos antes de beber.",
-      "svgFileName": "step-03.svg",
+      "title": "Paso 3: Colocar arena limpia de río formando una capa nivelada de 6 cm",
+      "description": "Lave la arena de río y viértala sobre el carbón hasta alcanzar 6 cm de espesor. Nivele la superficie con los dedos para evitar canalizaciones irregulares de agua.",
+      "actionNote": "> Nivelación: Una capa torcida reduce drásticamente la capacidad de retención de partículas.",
+      "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "100°C Fuego Directo",
-        "100°C",
-        "3 Minutos",
-        "99.9% Letal",
-        "Tiempo Ebullición (MIN)"
+        "FIG. 03 // PURIFICATION STEP 3: CAPA DE ARENA",
+        "RIVER SAND (ARENA)",
+        "PARTICLE FILTER (BARRERA)",
+        "THICKNESS: 6CM (GROSOR)",
+        "[PASO 3] FIJAR CARBÓN Y ATRAPAR LODO"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Añadir 4 cm de grava, verter agua y desechar las primeras tazas",
+      "description": "Coloque 4 cm de grava y una hoja ancha encima como difusor. Vierta el agua turbia lentamente. Deseche siempre las primeras 1-2 tazas con polvo negro antes de recolectar agua transparente.",
+      "actionNote": "> Regla de purga: Deje que el filtro se lave solo hasta que el agua salga completamente cristalina.",
+      "svgFileName": "pr01-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // PURIFICATION STEP 4: GRAVA Y PURGA",
+        "PEBBLE LAYER (GRAVA)",
+        "FLUSH FIRST CUPS (PURGA)",
+        "CLEAR DRIP (GOTEO CLARO)",
+        "[PASO 4] DISIPAR PRESIÓN Y PURGAR 1-2 TAZAS"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Paso 5: Hervir el agua filtrada vigorosamente durante al menos 3 minutos",
+      "description": "Coloque el agua filtrada en una olla de barro sobre las brasas y mantenga un hervor con grandes burbujas durante mínimo 3 minutos (5 min en altura) para exterminar el 99.9% de parásitos y virus.",
+      "actionNote": "> Seguridad vital: El agua transparente NO es agua estéril. El hervor es indispensable.",
+      "svgFileName": "pr01-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // PURIFICATION STEP 5: HERVOR A 100°C",
+        "BOILING 100°C (HERVOR)",
+        "TIME: 3+ MIN (3+ MINUTOS)",
+        "PATHOGEN FREE (99.9% SEGURO)",
+        "[PASO 5] HERVOR ACTIVO POR 3+ MINUTOS"
       ]
     }
   ],
   "fatalMistake": {
-    "title": "ERROR FATAL: Nunca beba el agua filtrada sin hervirla primero.",
-    "description": "La filtración mecánica con carbón elimina sedimentos y químicos, pero los virus, quistes de Giardia y Cryptosporidium atraviesan el filtro. Debe hervir el agua filtrada vigorosamente durante al menos 1 a 3 minutos.",
-    "consequence": "Consecuencia de omitir la ebullición: Infección parasitaria aguda y muerte por deshidratación en 96 horas."
+    "title": "Error fatal: Beber el agua transparente filtrada sin hervirla previamente",
+    "description": "Los filtros de arena y carbón eliminan sedimentos y olores, pero quistes de parásitos microscópicos (Giardia) y virus atraviesan los poros fácilmente. Beberla sin hervir desata infecciones gastrointestinales y deshidratación letal en 24 horas.",
+    "consequence": "Resultado: Infección parasitaria grave y muerte por deshidratación en supervivencia"
+  },
+  "shortsScript": {
+    "hook": "Beber agua turbia en el bosque te matará en 3 días. ¡Aprende a purificarla sin plástico!",
+    "body": "Construye una torre de filtrado de 5 capas: trípode de madera, cono de corteza, tapón de musgo, 8 cm de carbón, 6 cm de arena y 4 cm de grava. Vierte el agua y desecha la primera taza negra. La regla de oro: ¡el agua clara NO es segura! Debes hervirla con grandes burbujas durante 3 minutos para eliminar el 99.9% de los parásitos.",
+    "outro": "Descarga planos de supervivencia offline sin datos móviles en el enlace del perfil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Purificador Primitivo de Carbón y Arena Completado",
-    "description": "Un cilindro suspendido en un trípode con 5 capas compactadas de carbón, arena y grava que clarifica el agua turbia en agua potable transparente."
+    "title": "Estructura completa de la torre de purificación natural de 5 capas",
+    "description": "Sistema de filtración suspendido en trípode con carbón, arena y grava para transformar agua salvaje en agua potable segura."
   }
 }

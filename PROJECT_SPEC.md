@@ -9,7 +9,11 @@
   - 직관적 야전 가독성 ([최종 완성 형태 // TARGET OUTCOME] 16:9 도면 ➔ 준비물 체크리스트 ➔ 3~8단계 가변 행동 지침 ➔ 치명적 실수 반전)
   - 비번호 독립 문서 체계 (화면 UI 상 `PR-XX` 일련번호 전면 배제)
   - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-- **아키텍처**: Content-Driven Layered Component Architecture (9개 스위트 / 62개 단위 테스트 무결성 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (10개 스위트 / 69개 단위 테스트 무결성 통과)
+- **주제 검증 철학**:
+  - 원시 자연물 고증 100% (현대 공산품 일체 배제)
+  - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
+  - 가변 3~6단계 세부 공학 체계 및 16:9 와이드 완성 결과도(Outcome) 기본 탑재
 
 ## 2. 연동 아키텍처 & 데이터 흐름
 ```mermaid
@@ -57,6 +61,7 @@ primitive-survival/
 │   ├── state/                   # [State Layer] SSOT 런타임 스크립트 직렬화 (0.01초 핫스왑)
 │   ├── services/                # [Service Layer] 
 │   │   ├── pwa.service.ts       # 결정론적 Service Worker 캐시 해시 생성
+│   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 바운딩박스/텍스트 충돌 감사기
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
 │   │   ├── protocol-generator.service.ts # 3-Wave 병렬 발행 및 원시 고증 검증기
@@ -64,13 +69,14 @@ primitive-survival/
 │   │   ├── deploy.service.ts    # Git 커밋 & 푸시 자동화
 │   │   ├── seo.service.ts       # 사이트맵, robots.txt, Schema.org 구조화 데이터
 │   │   └── topic-curator.service.ts # 차기 유망 주제 큐레이터
+│   ├── gdrive-sync.ts           # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts                # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts          # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts              # 전체 빌드 파이프라인
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, PWA sw.js, SEO)
-├── tests/                       # [Quality Audit] 9개 테스트 스위트 (62/62 단위 테스트 PASS)
+├── tests/                       # [Quality Audit] 10개 테스트 스위트 (69/69 단위 테스트 PASS)
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
@@ -82,3 +88,10 @@ primitive-survival/
    - 1회 방문 시 전 페이지 HTML, 7개국어 JSON, SVG 벡터 도면 100% 영구 캐시 (`survival-{hash}`).
 3. **무과금 하이브리드 경제성**:
    - AGY 스튜디오(Argon) + Stitch MCP + Google AI Studio 무료 티어로 월 추가 API 과금 0원 유지.
+
+## 5. 전담 자동화 스킬 (Antigravity Skills)
+1. **`publish-protocol` (신규 포스팅 자율 발행 스킬)**:
+   - 기획 ➔ 원시 고증 ➔ 3~6단계 본문 작성 ➔ 3D 벡터 SVG 합성 ➔ 5대 루브릭 QA ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ **마지막 `sync` 스킬 자동 연계 호출**까지 원스톱 완결.
+2. **`sync` (프로젝트 문서 및 클라우드 동기화 스킬)**:
+   - 실제 코드베이스와 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md`, `implementation_plan.md`) 간 괴리 전수 감사 및 구글 드라이브(`1PMHkwQJsR_MSDjf8cYmJcnGp5wpzVnxW`) 원클릭 자동 동기화.
+

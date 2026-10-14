@@ -1,85 +1,126 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "Aufbereitung von Wildwasser (Aktivkohle-Filtration)",
+  "title": "Trübes Schlammwasser in Trinkwasser verwandeln (5-Stufen-Kohle- und Sandfilter)",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
-  "summary": "Das Trinken von unbehandeltem Wildwasser führt durch bakterielle Ruhr und Giardiasis innerhalb von 72 Stunden zum Tod. Das Wasser muss mechanisch über Holzkohle gefiltert und anschließend zwingend abgekocht werden.",
-  "timeRequired": "15 MINUTEN",
-  "successRate": "99.8% (Nach Abkochen)",
-  "difficulty": "Stufe 1 (Grundlegende Bushcraft)",
-  "outputPerHour": "1.5 Liter / Stunde",
+  "threatLevelText": "[KRITISCHES ÜBERLEBEN]",
+  "summary": "Das Trinken von unbehandeltem Wildwasser führt innerhalb von 72 Stunden zu tödlicher Dehydrierung durch Durchfall. Dieses Protokoll beschreibt den Bau eines 5-Stufen-Filters aus Holzkohle, Flusssand und Kies mit obligatorischem 3-minütigem Abkochen gegen 99,9% aller Keime.",
+  "timeRequired": "25 Min. (15 Min. Filtern + 10 Min. Kochen)",
+  "successRate": "99,9% (Nach dem Kochen)",
+  "difficulty": "Einfach (100% Naturmaterialien)",
+  "outputPerHour": "1,5 bis 2,0 Liter / Stunde",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Zerkleinerte Hartholzkohle",
-      "desc": "Abgekühlte Glutreste aus Hartholz, erbsengroß zerstoßen zur Adsorption von Toxinen."
+      "name": "Zerkleinerte Holzkohle (Zwei Handvoll)",
+      "desc": "Holzkohle aus dem Lagerfeuer auf Erbsengröße (5-8 mm) zerkleinert. Bindet gelöste Giftstoffe und Gerüche."
     },
     {
       "id": "mat-02",
-      "name": "Gereinigter Flusssand & Feinkies",
-      "desc": "Gewaschener Sand und kleine Kieselsteine zur physischen Rückhaltung von Schwebstoffen."
+      "name": "Sauberer Flusssand (Zwei Handvoll)",
+      "desc": "Im Fluss gewaschener Sand zur mechanischen Filterung feinster Schwebeteilchen."
     },
     {
       "id": "mat-03",
-      "name": "Bambusrohr oder Rindentrichter",
-      "desc": "Hohles Bambussegment (Ø 8 cm) als vertikale Schwerkraft-Filtersäule."
+      "name": "Kleine Kieselsteine (Eine Handvoll)",
+      "desc": "Fängt groben Schmutz ab und verteilt das Wasser gleichmäßig auf der Sandschicht."
+    },
+    {
+      "id": "mat-04",
+      "name": "Birkenrindentrichter oder Bambusrohr",
+      "desc": "Ein 30-40 cm langer zylindrischer Trichter mit enger Bodenöffnung."
+    },
+    {
+      "id": "mat-05",
+      "name": "Drei Stützäste (50 cm Länge)",
+      "desc": "Fingerdicke Äste, oben zusammengebunden zu einem stabilen Dreibeinstativ."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Behältervorbereitung & Filterbasis-Aufbau",
-      "description": "Bereiten Sie ein zylindrisches Gefäß mit oberer Einfüllöffnung und verengtem Auslass an der Unterseite vor.",
-      "actionNote": "> Maßnahme: Stopfen Sie Pflanzenfasergewebe oder Torfmoos fest in die untere Öffnung, um das Ausspülen der Kohle zu verhindern.",
-      "svgFileName": "step-01.svg",
+      "title": "Schritt 1: Dreibein aufstellen, Trichter befestigen und Moosstopfen einsetzen",
+      "description": "Binden Sie drei fingerdicke Äste oben zu einem Dreibein zusammen. Hängen Sie den Trichter mittig ein und stopfen Sie sauberes Moos fest in die untere Öffnung.",
+      "actionNote": "> Prüfung: Der Stopfen muss fest sitzen, damit keine Kohle austritt.",
+      "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "ROHWASSER",
-        "1. Kies (Grobschmutz)",
-        "2. Sand (Feinsediment)",
-        "KOHLE",
-        "3. Aktivkohle (Toxine)",
-        "4. Textilnetz (Stütze)"
+        "FIG. 01 // PURIFICATION STEP 1: DREIBEIN & STOPFEN",
+        "TRIPOD FRAME (DREIBEIN)",
+        "CONE FUNNEL (TRICHTER)",
+        "MOSS PLUG (MOOSSTOPFEN)",
+        "[SCHRITT 1] STABILES DREIBEIN AUFSTELLEN"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Schichtung der Filtermedien (Umgekehrte Pyramide)",
-      "description": "Schichten Sie präzise von unten nach oben: Textilnetz → 6 cm zerstoßene Holzkohle → 5 cm Feinsand → 3 cm grober Kies.",
-      "actionNote": "> Prinzip: Kies blockiert Grobschmutz, Sand fängt Trübungen ab und poröse Aktivkohle bindet organische Gifte und Gerüche.",
-      "svgFileName": "step-02.svg",
+      "title": "Schritt 2: Holzkohle auf Erbsengröße zerkleinern und 8 cm einfüllen",
+      "description": "Zerkleinern Sie reine Holzkohle auf 5-8 mm Stücke. Füllen Sie 8 cm Kohle über dem Moos ein und drücken Sie sie leicht an. Mikroporen adsorbieren Toxine.",
+      "actionNote": "> Korngröße: Kein feines Pulver verwenden, um Verstopfungen zu vermeiden.",
+      "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "[500ml VERWERFEN]",
-        "Kohlestaub-Spülung",
-        "→",
-        "[AUFFANGEN]",
-        "95% Klarheit",
-        "Durchfluss: 1~2 Tropfen/Sek"
+        "FIG. 02 // PURIFICATION STEP 2: KOHLEFILTERBETT",
+        "CHARCOAL CORE (AKTIVKOHLE)",
+        "PORE ABSORPTION (ADSORPTION)",
+        "THICKNESS: 8CM (DICKE)",
+        "[SCHRITT 2] 8CM KOHLEKOMPONENTE EINFÜLLEN"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Filtration & Thermische Entkeimung (100°C)",
-      "description": "Gießen Sie Rohwasser langsam auf die Kiesschicht (Durchfluss: 1–2 Tropfen/Sek.) und kochen Sie das klare Filtrat anschließend sprudelnd ab.",
-      "actionNote": "> Warnung: Verwerfen Sie die ersten 500 ml wegen Kohlestaub. Danach mindestens 3 Minuten bei 100°C sprudelnd abkochen.",
-      "svgFileName": "step-03.svg",
+      "title": "Schritt 3: Gewaschenen Flusssand in einer ebenen 6 cm Schicht einbringen",
+      "description": "Waschen Sie Flusssand aus und schichten Sie 6 cm Sand über die Kohle. Glätten Sie die Oberfläche gleichmäßig ab, um eine Kanalbildung zu verhindern.",
+      "actionNote": "> Nivellierung: Eine schräge Schicht verringert die Filterleistung drastisch.",
+      "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "100°C Direktfeuer",
-        "100°C",
-        "3 Min Halten",
-        "99.9% Steril",
-        "Kochzeit (MIN)"
+        "FIG. 03 // PURIFICATION STEP 3: FLUSSSANDSCHICHT",
+        "RIVER SAND (SAND)",
+        "PARTICLE FILTER (SCHMUTZSPERRE)",
+        "THICKNESS: 6CM (DICKE)",
+        "[SCHRITT 3] KOHLE FIXIEREN & SCHMUTZ FANGEN"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: 4 cm Kiesel auflegen, Wasser einfüllen und erste Tassen verwerfen",
+      "description": "Legen Sie 4 cm Kieselsteine auf den Sand und ein Blatt als Puffer. Gießen Sie Schlammwasser vorsichtig auf. Verwerfen Sie die ersten 1-2 Tassen Schmutzwasser.",
+      "actionNote": "> Spülregel: Erst klares Wasser sammeln, sobald der Filter durchgespült ist.",
+      "svgFileName": "pr01-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // PURIFICATION STEP 4: KIESEL & SPÜLUNG",
+        "PEBBLE LAYER (KIESEL)",
+        "FLUSH FIRST CUPS (SPÜLEN)",
+        "CLEAR DRIP (KLARER TROPFEN)",
+        "[SCHRITT 4] DRUCK VERTEILEN & ERSTWASSER WEG"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Schritt 5: Gefiltertes Wasser mindestens 3 Minuten sprudelnd kochen",
+      "description": "Bringen Sie das klare Wasser in einem Tontopf über dem Feuer zum Kochen. Halten Sie das sprudelnde Kochen mindestens 3 Minuten lang aufrecht, um Keime abzutöten.",
+      "actionNote": "> Absolute Sicherheit: Klares Wasser ist NICHT keimfrei! Kochen ist zwingend nötig.",
+      "svgFileName": "pr01-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // PURIFICATION STEP 5: 100°C ABKOCHEN",
+        "BOILING 100°C (SPRUDELND)",
+        "TIME: 3+ MIN (3+ MINUTEN)",
+        "PATHOGEN FREE (99,9% STERIL)",
+        "[SCHRITT 5] MINDESTENS 3 MINUTEN KOCHEN"
       ]
     }
   ],
   "fatalMistake": {
-    "title": "TÖDLICHER IRRTUM: Gefiltertes klares Wasser niemals ungekocht trinken.",
-    "description": "Mechanische Kohlefiltration entfernt nur Schwebstoffe und Chemikalien. Viren, Giardia-Zysten und Kryptosporidien passieren den Filter ungehindert. Erst 1 bis 3 Minuten sprudelndes Kochen tötet 99.9% aller Erreger ab.",
-    "consequence": "Folge bei Verzicht auf Abkochen: Akute Kryptosporidiose und tödliche Dehydrierung binnen 96 Stunden."
+    "title": "Tödlicher Fehler: Das klare gefilterte Wasser ungekocht trinken",
+    "description": "Sand und Kohle entfernen Schlamm und Gerüche, aber mikroskopische Parasitenzysten (Giardien) und Viren passieren den Filter ungehindert. Ohne Abkochen droht schwere Ruhr und rasche Dehydrierung.",
+    "consequence": "Folge: Schwere Darminfektion und tödliche Dehydrierung im Überlebensfall"
+  },
+  "shortsScript": {
+    "hook": "Trübes Wildwasser ungekocht zu trinken ist lebensgefährlich. So baust du einen Naturfilter!",
+    "body": "Ein 5-Stufen-Naturfilter: Dreibein binden, Rindentrichter aufhängen, Moos unten einlegen. 8 cm Kohle, 6 cm Sand, 4 cm Kiesel aufschichten. Schlammwasser aufgießen und die erste schwarze Tasse wegschütten. Die goldene Regel: Klares Wasser ist noch nicht sicher! Du musst es mindestens 3 Minuten sprudelnd kochen, um 99,9% der Parasiten abzutöten.",
+    "outro": "Offline-Überlebensbaupläne ohne Mobilfunknetz über den Profillink abrufen."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Vollendeter Schicht-Wasserfilter aus Kohle und Sand",
-    "description": "Ein am Dreibein aufgehängter Zylinder mit 5 verdichteten Filterschichten aus Holzkohle, feinem Sand und Kies, der Schlammwasser in klares Trinkwasser umwandelt."
+    "title": "Fertige 5-Stufen-Naturwasser-Reinigungsanlage",
+    "description": "Am Dreibein aufgehängte Naturfilterkolonne aus Holzkohle, Flusssand und Kieselsteinen zur Bereitstellung keimfrei abkochbaren Wassers."
   }
 }

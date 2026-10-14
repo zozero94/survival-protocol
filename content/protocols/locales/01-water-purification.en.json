@@ -1,85 +1,126 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "How to Drink Dirty Water (Wild Charcoal Filter)",
+  "title": "How to Turn Muddy Water into Clean Drinking Water (5-Layer Charcoal & Sand Filter Tower)",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[THREAT LEVEL: CRITICAL]",
-  "summary": "Drinking untreated wild water can lead to fatal bacterial dysentery and giardiasis, resulting in death from dehydration within 72 hours. Water must undergo mechanical active charcoal filtration followed by compulsory thermal boiling.",
-  "timeRequired": "15 MINUTES",
-  "successRate": "99.8% (Post-Boiling)",
-  "difficulty": "Tier 1 (Primitive Bushcraft)",
-  "outputPerHour": "1.5 Liters / Hour",
+  "threatLevelText": "[CRITICAL SURVIVAL]",
+  "summary": "Drinking stagnant or turbid wilderness water without treatment causes severe diarrhea and dysentery, leading to lethal dehydration within 72 hours. This protocol details constructing a 5-layer primitive filtration column using crushed charcoal, fine sand, and gravel, followed by a mandatory 3-minute rolling boil to eliminate 99.9% of microscopic pathogens.",
+  "timeRequired": "25 Min (15 min filter + 10 min boil)",
+  "successRate": "99.9% (Post-Boiling Required)",
+  "difficulty": "Easy (100% Primitive Materials)",
+  "outputPerHour": "1.5 to 2.0 Liters / Hour",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Crushed Hardwood Charcoal",
-      "desc": "Remnants from campfire. Crush to pea-sized bits to chemically adsorb toxins and heavy metals."
+      "name": "Crushed Hardwood Charcoal (Two handfuls)",
+      "desc": "Remnants of campfire wood, crushed to pea size (5-8mm). Its microporous matrix strongly adsorbs dissolved toxins and foul odors."
     },
     {
       "id": "mat-02",
-      "name": "Clean River Sand & Fine Gravel",
-      "desc": "Rinsed coarse sand and small pebbles to physically trap micro-sediments and debris."
+      "name": "Clean Rinsed River Sand (Two handfuls)",
+      "desc": "Rinsed in river water to remove loose mud. Forms a dense barrier against fine suspended silt."
     },
     {
       "id": "mat-03",
-      "name": "Cut Plastic Bottle or Hollow Bamboo Tube",
-      "desc": "Cut bottom off a 2L bottle and invert, or use hollow 3-inch diameter bamboo stalk."
+      "name": "Small River Pebbles (One handful)",
+      "desc": "Thumbnail-sized clean gravel. Filters coarse debris and buffers water inflow so sand isn't displaced."
+    },
+    {
+      "id": "mat-04",
+      "name": "Birch Bark Cone or Hollow Bamboo Tube",
+      "desc": "A 30-40cm cylindrical or conical container. Funnels filtration media tightly toward a narrow bottom spout."
+    },
+    {
+      "id": "mat-05",
+      "name": "Three Straight Support Branches (50cm)",
+      "desc": "Finger-thick green branches tied at the top to form a freestanding, stable 3-point tripod."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Vessel Preparation & Filter Base Assembly",
-      "description": "Using a sharp survival knife, cut 3 inches (7-8cm) off the bottom of a plastic bottle to form a wide funnel. Invert with spout facing down.",
-      "actionNote": "> Action: Pierce 3 small pinholes in the cap, or tightly pack cotton cloth/sphagnum moss to prevent filtration medium loss.",
-      "svgFileName": "step-01.svg",
+      "title": "Step 1: Lash Tripod Frame, Mount Cone Funnel, and Insert Base Moss Plug",
+      "description": "Lash three straight finger-thick branches together near the top with cordage to build a stable 3-point ground tripod. Suspend the rolled birch bark cone or hollow bamboo stalk vertically at the center. Pack the narrow bottom spout with rinsed sphagnum moss or cotton cloth. This porous base plug supports the entire media weight without allowing charcoal or sand to escape.",
+      "actionNote": "> Checkpoint: Ensure the plug is firmly wedged. A loose plug will blow out under water pressure, dumping black charcoal into your drinking vessel.",
+      "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "RAW WATER",
-        "1. Gravel (Coarse Debris)",
-        "2. Sand (Fine Sediment)",
-        "CHARCOAL",
-        "3. Charcoal (Toxin Adsorb)",
-        "4. Cloth Mesh (Base Plug)"
+        "FIG. 01 // PURIFICATION STEP 1: TRIPOD FRAME",
+        "TRIPOD FRAME (3-POINT)",
+        "CONE FUNNEL (VESSEL)",
+        "MOSS PLUG (BASE)",
+        "[STEP 1] STABLE 3-POINT TRIPOD SETUP"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Layering the Filter Media (Inverted Pyramid Hierarchy)",
-      "description": "Strictly stack layers in reverse order: Spout cloth plug -> 2.5 inches (6cm) crushed charcoal -> 2 inches (5cm) fine sand -> 1.2 inches (3cm) coarse gravel.",
-      "actionNote": "> Science: Gravel blocks floating leaves, sand captures particulates, and porous activated charcoal adsorbs organic toxins and odors.",
-      "svgFileName": "step-02.svg",
+      "title": "Step 2: Crush Campfire Charcoal to Pea Size and Pack an 8cm Active Bed",
+      "description": "Select fully carbonized black charcoal from campfire coals and crush into pea-sized chunks (5-8mm) using a smooth stone. Avoid pulverizing into fine dust, which would clog water percolation. Pour into the funnel over the moss plug and tamp down gently with a stick to form an 8cm deep adsorption bed. Millions of micropores trap chemical toxins and neutralize bad tastes.",
+      "actionNote": "> Grain Rule: Charcoal grains must remain coarser than rice grains. Discard powdered dust to maintain steady percolation speed.",
+      "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "[DISCARD 500ml]",
-        "Charcoal Dust Flush",
-        "→",
-        "[COLLECT CLEAN]",
-        "95% Clarity Reached",
-        "Flow Rate: 1~2 drops / sec"
+        "FIG. 02 // PURIFICATION STEP 2: CHARCOAL CORE",
+        "CHARCOAL CORE (ACTIVE)",
+        "PORE ABSORPTION (TOXINS)",
+        "THICKNESS: 8CM",
+        "[STEP 2] PACK 8CM OF PEA-SIZED CHARCOAL"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Pouring Turbid Water & Clear Water Collection",
-      "description": "Slowly pour murky water onto the top gravel bed. Gravity will draw water through the column at roughly one steady drop per second into a clean container.",
-      "actionNote": "> Warning: Discard the initial 250ml containing loose charcoal dust. Continue running water until output runs crystal clear.",
-      "svgFileName": "step-03.svg",
+      "title": "Step 3: Layer Clean Rinsed River Sand to a Flat 6cm Barrier",
+      "description": "Rinse river sand two to three times in running water to clear organic silt. Slowly pour the clean sand directly over the charcoal bed to a depth of 6cm. Level the top surface gently with your fingertips. The sand layer physically locks the charcoal chunks from floating up while capturing ultra-fine particulates that passed through coarser barriers.",
+      "actionNote": "> Leveling: Keep the sand surface perfectly horizontal. A slanted bed creates a path of least resistance, ruining filter efficiency.",
+      "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "100°C Direct Boil",
-        "100°C",
-        "3 Min Hold",
-        "99.9% Sterile",
-        "Rolling Boil Time (MIN)"
+        "FIG. 03 // PURIFICATION STEP 3: SAND LAYER",
+        "RIVER SAND (FINE)",
+        "PARTICLE FILTER (SILT)",
+        "THICKNESS: 6CM",
+        "[STEP 3] LOCK CHARCOAL AND TRAP SILT"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Add 4cm Pebble Layer, Pour Water, and Flush Initial 1-2 Cups",
+      "description": "Add 4cm of thumbnail-sized pebbles over the sand bed and place a flat leaf or flat pebble on top as a splash buffer. Slowly pour raw turbid water over the buffer. Water will seep through all layers and begin dripping from the bottom spout at 1-2 drops per second. Crucial step: Discard the initial 1-2 cups (300ml), which flush out residual dust, before placing a sterile collection pot.",
+      "actionNote": "> Flush Rule: Never drink the initial flush. Let the filter self-clean until crystal clarity is established.",
+      "svgFileName": "pr01-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // PURIFICATION STEP 4: PEBBLE & FLUSH",
+        "PEBBLE LAYER (BUFFER)",
+        "FLUSH FIRST CUPS (DISCARD)",
+        "CLEAR DRIP (COLLECT)",
+        "[STEP 4] BUFFER WATER & DISCARD FLUSH"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Step 5: Boil Filtered Water for 3+ Minutes to Destroy All Microbes",
+      "description": "Collect the visually transparent water in a clay pot, bamboo boiler, or fire-safe rock bowl and place directly over campfire embers. Heat until continuous rolling bubbles erupt vigorously across the entire surface (reaching 100°C / 212°F). Maintain this rolling boil for at least 3 full minutes (5 minutes at high altitudes). Thermal disinfection is essential to kill viruses and encysted parasites that escape physical filters.",
+      "actionNote": "> Ultimate Safety: Clear water is NOT sterile water! Mechanical filtration plus rolling boil achieves 99.9% biological safety.",
+      "svgFileName": "pr01-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // PURIFICATION STEP 5: 100°C BOIL",
+        "BOILING 100°C (ROLLING)",
+        "TIME: 3+ MIN (TIMER)",
+        "PATHOGEN FREE (99.9%)",
+        "[STEP 5] ROLLING BOIL FOR 3+ MINUTES"
       ]
     }
   ],
   "fatalMistake": {
-    "title": "FATAL MISTAKE: Never drink filtered water directly without boiling.",
-    "description": "Mechanical charcoal filtration only removes sediments, heavy metals, and odors. Viruses, Giardia cysts, and Cryptosporidium easily pass through. Filtered water MUST be boiled at a rolling boil for at least 1 minute (3 minutes above 6,500 ft elevation) to ensure total survival safety.",
-    "consequence": "Consequence of skipping boil: Acute Cryptosporidiosis infection and lethal dehydration within 96 hours."
+    "title": "Fatal Mistake: Drinking Filtered Water Without Compulsory Thermal Boiling",
+    "description": "Charcoal and sand filters remove particulate silt and organic odors, but microscopic cysts (Giardia, Cryptosporidium) and viral pathogens easily pass through primitive pore spaces. Drinking cold clear water directly without boiling causes severe gastroenteritis within 24 hours, inducing fatal dehydration in survival scenarios.",
+    "consequence": "Outcome: Severe waterborne parasitic infection and fatal wilderness dehydration"
+  },
+  "shortsScript": {
+    "hook": "Drinking wild muddy water will kill you in 3 days. Here is how to purify it without plastic!",
+    "body": "Build a 5-layer natural filter tower. Lash a tripod, suspend a birch bark funnel, and plug the bottom with moss. Pack 8cm of crushed charcoal, 6cm of clean river sand, and 4cm of gravel. Pour muddy water over a leaf buffer. Discard the first black cup! The critical rule: clear water is NOT safe water. You must boil it vigorously for at least 3 minutes to destroy 99.9% of deadly parasites.",
+    "outro": "Access full offline survival blueprints with zero cell data via the profile link."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Completed Stratified Charcoal & Sand Water Purifier",
-    "description": "A suspended cylinder packed with 5 distinct layers of charcoal, fine sand, coarse sand, gravel, and fiber filter that clarifies turbid surface water into clear potable water."
+    "title": "Completed 5-Layer Natural Water Purification Tower",
+    "description": "A field-tested primitive filtration column suspended on a timber tripod, layering charcoal, river sand, and pebbles to turn turbid wild water into crystal clear boilable drinking water."
   }
 }
