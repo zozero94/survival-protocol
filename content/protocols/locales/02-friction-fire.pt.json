@@ -92,8 +92,8 @@
     "consequence": "A falha na obtenção de fogo em ambiente frio acelera a queda da temperatura corporal central, levando à morte por hipotermia em 72 horas."
   },
   "outcome": {
-    "title": "Ignição por Fricção com Arco e Brasa Viva",
-    "description": "Uma brasa incandescente a 400°C formada no entalhe em V, transferida para ninho de isca seca e soprada até formar chama aberta.",
-    "svgFileName": "pr02-outcome.svg"
+    "svgFileName": "pr02-outcome.svg",
+    "title": "Ignição por Fricção com Arco e Brasa Concluída",
+    "description": "Uma brasa incandescente a 400°C gerada na ranhura em V, transferida com sucesso para o ninho de mecha seca e soprada até formar chamas vivas."
   }
 }

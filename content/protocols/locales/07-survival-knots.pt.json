@@ -135,8 +135,8 @@
     "outro": "Baixe os diagramas vetoriais para visualização offline permanente no link do perfil."
   },
   "outcome": {
-    "title": "Armação Tática dos 3 Nós de Sobrevivência e Amarração Quadrada",
-    "description": "Sistema de ancoragem com Volta do Fiel, Lais de Guia de soltura rápida, Nó Esticador deslizante e Amarração Quadrada rígida.",
-    "svgFileName": "pr07-outcome.svg"
+    "svgFileName": "pr07-outcome.svg",
+    "title": "Montagem de Campo com os 3 Nós de Sobrevivência Concluída",
+    "description": "Uma amarração prática unindo o fiel para ancoragem rápida, o laço de guia que nunca corre e solta em 1 segundo, o nó esticador ajustável e a amarração quadrada."
   }
 }

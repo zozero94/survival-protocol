@@ -148,8 +148,8 @@
     "outro": "Cocine alimentos y mantenga calor agradable durante toda la noche bajo tormentas."
   },
   "outcome": {
-    "title": "Fogón Primitivo de Piedra y Arcilla Refractaria",
-    "description": "Base de piedra de río en U recubierta con 50mm de arcilla y paja, equipada con hornilla plana y chimenea trasera reteniendo 650°C.",
-    "svgFileName": "pr06-outcome.svg"
+    "svgFileName": "pr06-outcome.svg",
+    "title": "Fogón Primitivo de Piedra y Arcilla Revestida Completado",
+    "description": "Una base de piedra en herradura sellada con 5 cm de arcilla refractaria templada con paja, con una superficie de cocción nivelada y chimenea trasera a 650°C."
   }
 }

@@ -114,8 +114,8 @@
     "outro": "Soporta más de 50kg colgada de un árbol. Lista para atar tu refugio o fijar un hacha de piedra."
   },
   "outcome": {
-    "title": "Rollo de Cuerda Natural Trenzada de 2 Cabos Inversos",
-    "description": "Fibras de corteza interna y enredadera trenzadas en espiral continua de 8mm que soportan más de 90 kgf de tensión.",
-    "svgFileName": "pr05-outcome.svg"
+    "svgFileName": "pr05-outcome.svg",
+    "title": "Rollo de Cuerda Natural de 2 Cabos con Torsión Inversa Completado",
+    "description": "Una bobina de cuerda uniforme de 8 mm trenzada en sentido inverso con fibras de corteza, capaz de resistir más de 90 kgf de carga de tracción."
   }
 }

@@ -148,8 +148,8 @@
     "outro": "Kochen Sie warm und trotzen Sie Regen und stürmischen Winden die ganze Nacht."
   },
   "outcome": {
-    "title": "Lehmverputzter Steinofen & Kochstelle",
-    "description": "U-förmiges Flusssteinfundament mit 50mm Lehm-Stroh-Mörtel, ebener Kochplatte und hinterem Abzugskamin für 650°C Hitzespeicherung.",
-    "svgFileName": "pr06-outcome.svg"
+    "svgFileName": "pr06-outcome.svg",
+    "title": "Vollendeter Stein- und Lehmofen mit Kochöffnung",
+    "description": "Ein hufeisenförmiges Steinfundament, verputzt mit 5 cm strohbasiertem feuerfestem Lehm, mit ebener Stein-Kochplatte und hinterem Abzugskamin für 650°C Hitze."
   }
 }

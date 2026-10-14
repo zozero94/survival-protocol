@@ -80,8 +80,8 @@
     "consequence": "Folge: Wärmeverlust durch Leitung und Konvektion senkt die Kerntemperatur im Schlaf unter 30°C – Tod durch Unterkühlung."
   },
   "outcome": {
-    "title": "A-Rahmen Laubhütte (Thermischer Notunterstand)",
-    "description": "Ein 2,5m Dachfirst mit 45°-Rippen und 1m dicker Laub-Isolationsschicht samt Sturmschutzgitter zur Erhaltung der Körperwärme.",
-    "svgFileName": "pr03-outcome.svg"
+    "svgFileName": "pr03-outcome.svg",
+    "title": "Vollendete A-Rahmen Laub-Notunterkunft (Debris Hut)",
+    "description": "Ein massiver 2,5m Dachfirst und ein 45°-Rippenrahmen, umhüllt von einer 1 Meter dicken Schicht aus trockenem Laub, die Körperwärme ohne Feuer speichert."
   }
 }

@@ -135,8 +135,8 @@
     "outro": "Lade dir die Vektor-Diagramme über den Link im Profil dauerhaft offline auf dein Handy."
   },
   "outcome": {
-    "title": "3 Überlebensknoten Feldabspannung & Kreuzbund",
-    "description": "Kombiniertes Abspannsystem mit Mastwurf-Anker, Palstek-Festschlaufe, Topi-Spannknoten und starrem Kreuzbund.",
-    "svgFileName": "pr07-outcome.svg"
+    "svgFileName": "pr07-outcome.svg",
+    "title": "Vollendete Feldverspannung mit den 3 Überlebensknoten",
+    "description": "Ein praxiserprobtes Rigg, das den Webeleinenstek, den unverrückbaren und in 1 Sekunde lösbaren Palstek, den verschiebbaren Spannerknoten und die Kreuzbund-Laschung vereint."
   }
 }

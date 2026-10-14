@@ -77,8 +77,8 @@
     "consequence": "Ergebnis: Immer die Kante im 45-Grad-Winkel schlagen und eingeweichte Innenrinde im Schatten trocknen lassen."
   },
   "outcome": {
-    "title": "Primitivaxt aus geschlagenem Feuerstein & Rankenbindung",
-    "description": "Bifazial geschlagene Feuersteinklinge im gespaltenen Eichenholzstiel, mit X-Kreuz-Rankenbindung und Pechharzkleber fixiert.",
-    "svgFileName": "pr04-outcome.svg"
+    "svgFileName": "pr04-outcome.svg",
+    "title": "Vollendete primitive Steinaxt mit Ast- und Harzbindung",
+    "description": "Eine beidseitig geschlagene Feuersteinklinge, tief im gespaltenen Eichenstiel verankert, mit X-Kreuz-Lianenbindung verschnürt und mit Kiefernharz versiegelt."
   }
 }

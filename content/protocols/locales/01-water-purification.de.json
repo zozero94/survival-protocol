@@ -78,8 +78,8 @@
     "consequence": "Folge bei Verzicht auf Abkochen: Akute Kryptosporidiose und tödliche Dehydrierung binnen 96 Stunden."
   },
   "outcome": {
-    "title": "5-Stufen Schichtfilter aus Holzkohle und Sand",
-    "description": "Konischer Zylinder mit verdichtetem Kies, Grobsand, Feinsand, Aktivkohle und Faserpfropfen zur Gewinnung von klarem Trinkwasser aus Schlammwasser.",
-    "svgFileName": "pr01-outcome.svg"
+    "svgFileName": "pr01-outcome.svg",
+    "title": "Vollendeter Schicht-Wasserfilter aus Kohle und Sand",
+    "description": "Ein am Dreibein aufgehängter Zylinder mit 5 verdichteten Filterschichten aus Holzkohle, feinem Sand und Kies, der Schlammwasser in klares Trinkwasser umwandelt."
   }
 }

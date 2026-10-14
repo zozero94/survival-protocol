@@ -135,8 +135,8 @@
     "outro": "Descarga los diagramas vectoriales para verlos sin conexión desde el enlace del perfil."
   },
   "outcome": {
-    "title": "Montaje Táctico de 3 Nudos de Supervivencia y Amarre Cuadrado",
-    "description": "Sistema de aparejo con Ballestrinque de anclaje, As de Guía de desenganche rápido, Nudo Tensor deslizante y Amarre Cuadrado transversal.",
-    "svgFileName": "pr07-outcome.svg"
+    "svgFileName": "pr07-outcome.svg",
+    "title": "Aparejo de Campo con los 3 Nudos de Supervivencia Completado",
+    "description": "Un montaje maestro que combina el ballestrinque rápido, el as de guía que no se desliza y se suelta en 1 segundo, el nudo tensor deslizante y el amarre cuadrado."
   }
 }

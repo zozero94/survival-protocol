@@ -148,8 +148,8 @@
     "outro": "Cook your meals and stay warm all night through rain and howling winds."
   },
   "outcome": {
-    "title": "Tempered Clay & Stone Outdoor Hearth",
-    "description": "A U-shaped granite base plastered with 50mm straw-clay refractory mortar, featuring a level stone cooktop and rear draft chimney retaining 650°C heat.",
-    "svgFileName": "pr06-outcome.svg"
+    "svgFileName": "pr06-outcome.svg",
+    "title": "Completed Stone & Tempered Clay Cooking Hearth",
+    "description": "A horseshoe stone base sealed under 5cm of straw-tempered refractory clay plaster, featuring a level stone cooktop and rear chimney flue holding intense 650°C heat."
   }
 }

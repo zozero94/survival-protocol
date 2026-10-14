@@ -92,8 +92,8 @@
     "consequence": "El fallo de ignición en condiciones invernales acelera la pérdida de calor corporal, causando muerte por hipotermia en 72 horas."
   },
   "outcome": {
-    "title": "Encendido por Fricción con Taladro de Arco y Brasa",
-    "description": "Una brasa al rojo vivo a 400°C formada en la muesca en V de 45°, transferida a un nido de yesca seca y soplada hasta obtener llama viva.",
-    "svgFileName": "pr02-outcome.svg"
+    "svgFileName": "pr02-outcome.svg",
+    "title": "Ignición de Brasa por Fricción con Arco Completada",
+    "description": "Una brasa incandescente a 400°C generada en la ranura en V, transferida con éxito al nido de yesca seca y avivada hasta producir una llama viva."
   }
 }

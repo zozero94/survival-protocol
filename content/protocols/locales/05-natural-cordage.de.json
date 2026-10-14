@@ -114,8 +114,8 @@
     "outro": "Hält über 50kg Körpergewicht am Baumstamm. Perfekt für Unterstände, Steinäxte und Feuerbohrer."
   },
   "outcome": {
-    "title": "2-strängige gegenläufig verzwirnte Naturseil-Spule",
-    "description": "Bast- und Schlingpflanzenfasern zu einem gleichmäßigen 8mm Seilbündel verdrillt mit über 90 kgf Bruchlast.",
-    "svgFileName": "pr05-outcome.svg"
+    "svgFileName": "pr05-outcome.svg",
+    "title": "Vollendeter 2-Strang-Naturseilbund mit Gegenverdrallung",
+    "description": "Ein gleichmäßiger 8-mm-Seilbund aus im Uhrzeigersinn gedrehten und gegenläufig verzwirnten Bastfasern, der über 90 kgf Zuglast ohne Aufdröseln standhält."
   }
 }

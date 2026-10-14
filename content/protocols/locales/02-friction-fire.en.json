@@ -92,8 +92,8 @@
     "consequence": "Failure to start a fire in wilderness freezing conditions leads to irreversible hypothermia and death within 72 hours."
   },
   "outcome": {
-    "title": "Bow Drill Friction Ember & Tinder Ignition",
-    "description": "A 400°C glowing cherry ember formed in the 45° hearth notch, transferred to a dry bast fiber tinder nest and fanned into open flame.",
-    "svgFileName": "pr02-outcome.svg"
+    "svgFileName": "pr02-outcome.svg",
+    "title": "Completed Bow Drill Friction Fire & Ember Ignition",
+    "description": "A glowing 400°C charcoal ember generated in the 45° V-notch smoking heavily, transferred safely into a dry tinder nest and fanned into an open flame."
   }
 }

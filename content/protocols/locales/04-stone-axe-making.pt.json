@@ -77,8 +77,8 @@
     "consequence": "Resultado: Bata sempre na borda a 45 graus e amarre com fibra interna molhada, secando na sombra."
   },
   "outcome": {
-    "title": "Machado de Pedra Primitivo com Amarração de Cipó",
-    "description": "Lâmina de sílex bifacial assentada em cabo de carvalho fendido, amarrada em X com cipós e selada com resina de pinho.",
-    "svgFileName": "pr04-outcome.svg"
+    "svgFileName": "pr04-outcome.svg",
+    "title": "Machado Primitivo de Pedra e Cipó Concluído",
+    "description": "Uma lâmina de sílex lascada bifacialmente encaixada em cabo de carvalho fendido, amarrada firmemente em X com cipós e selada com resina de pinho."
   }
 }

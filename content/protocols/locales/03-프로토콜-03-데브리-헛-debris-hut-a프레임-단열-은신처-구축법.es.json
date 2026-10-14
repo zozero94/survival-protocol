@@ -80,8 +80,8 @@
     "consequence": "Consecuencia: La pérdida térmica por conducción y convección reduce la temperatura central bajo 30°C durante el sueño, causando muerte por hipotermia."
   },
   "outcome": {
-    "title": "Refugio de Escombros en Marco A (Aislamiento Térmico)",
-    "description": "Una viga maestra de 2.5m y costillas a 45° cubiertas con 1m de hojas secas y celosía protectora que retiene el calor corporal en frío extremo.",
-    "svgFileName": "pr03-outcome.svg"
+    "svgFileName": "pr03-outcome.svg",
+    "title": "Refugio Térmico Debris Hut en Marco A Completado",
+    "description": "Una viga maestra de 2.5 m y costillas a 45° cubiertas por 1 metro de hojas secas compactadas y ramas, conservando el calor corporal bajo cero sin fuego."
   }
 }

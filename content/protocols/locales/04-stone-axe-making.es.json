@@ -77,8 +77,8 @@
     "consequence": "Resultado: Golpea siempre el borde a 45 grados y ata con fibra interna remojada en agua, secándola a la sombra."
   },
   "outcome": {
-    "title": "Hacha de Piedra Primitiva Atada con Enredaderas",
-    "description": "Hoja de sílex bifacial encajada en mango de roble, asegurada con ligaduras en X de enredadera y sellada con resina de pino y carbón.",
-    "svgFileName": "pr04-outcome.svg"
+    "svgFileName": "pr04-outcome.svg",
+    "title": "Hacha Primitiva de Piedra y Liana Completada",
+    "description": "Una hoja de pedernal tallada bifacialmente incrustada en un mango de roble hendido, atada firmemente en X con lianas y sellada con resina de pino."
   }
 }

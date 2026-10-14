@@ -80,8 +80,8 @@
     "consequence": "Consequência: Perda térmica por condução e convecção reduz a temperatura central abaixo de 30°C durante o sono, causando morte por hipotermia."
   },
   "outcome": {
-    "title": "Abrigo de Detritos em Estrutura A (Isolamento Térmico)",
-    "description": "Viga mestra de 2,5m e costelas a 45° cobertas com 1m de folhas secas e grade protetora para reter calor corporal em frio extremo.",
-    "svgFileName": "pr03-outcome.svg"
+    "svgFileName": "pr03-outcome.svg",
+    "title": "Abrigo Térmico Debris Hut em Estrutura A Concluído",
+    "description": "Uma viga mestra de 2,5m e costelas a 45° cobertas por 1 metro de folhas secas compactadas e galhos, retendo o calor corporal abaixo de zero sem fogo."
   }
 }

@@ -28,7 +28,7 @@ const validSvg = `<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
 </svg>`;
 
 describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방지 검증]', () => {
-  it('정상 규격의 SVG 도면과 실제 발행된 전 가이드 도면 27종 모두 정적 검수(100점)를 통과해야 한다', () => {
+  it('정상 규격의 SVG 도면과 실제 발행된 전 가이드 도면 34종(스텝 27종 + 완성 결과물 7종) 모두 정적 검수(100점)를 통과해야 한다', () => {
     const report = SvgAuditService.auditSvgStatic(validSvg, sampleContext);
     assert.strictEqual(report.passed, true);
     assert.strictEqual(report.score, 100);

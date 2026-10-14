@@ -92,8 +92,8 @@
     "consequence": "Ein Scheitern der Feuerzündung bei Kälte beschleunigt das Absinken der Körperkerntemperatur und führt binnen 72 Stunden zum Tod durch Unterkühlung."
   },
   "outcome": {
-    "title": "Bogenbohrer-Reibungsglut & Zundernest-Entzündung",
-    "description": "Eine 400°C heiße Glut in der 45°-V-Kerbe des Bohrbretts, überführt in ein trockenes Bast-Zundernest und zu offener Flamme angefacht.",
-    "svgFileName": "pr02-outcome.svg"
+    "svgFileName": "pr02-outcome.svg",
+    "title": "Vollendete Bogenbohrer-Reibungszündung mit Glut",
+    "description": "Eine 400°C heiße Holzkohleglut aus der 45°-V-Kerbe, die sicher in das trockene Zundernest überführt und zu einer offenen Flamme entfacht wurde."
   }
 }

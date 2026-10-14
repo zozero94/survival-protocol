@@ -80,8 +80,8 @@
     "consequence": "Consequence: Combined conductive and convective heat loss drops core body temperature below 30°C during sleep, causing fatal hypothermia."
   },
   "outcome": {
-    "title": "A-Frame Debris Hut (Thermal Survival Shelter)",
-    "description": "A 2.5m ridgepole and 45° rib skeletal frame banked with a 1-meter thick dead-air leaf blanket and thatch trellis, maintaining body core heat in sub-zero wilderness.",
-    "svgFileName": "pr03-outcome.svg"
+    "svgFileName": "pr03-outcome.svg",
+    "title": "Completed A-Frame Debris Hut Thermal Shelter",
+    "description": "A 2.5m heavy ridgepole and 45° rib frame blanketed by 1 meter of compressed dry leaves and thatch branches, trapping body heat down to sub-zero temperatures without fire."
   }
 }

@@ -78,8 +78,8 @@
     "consequence": "Consequência ao pular a fervura: Infecção aguda por protozoários e morte por desidratação em 96 horas."
   },
   "outcome": {
-    "title": "Filtro de Água de 5 Camadas de Carvão e Areia",
-    "description": "Cilindro cônico com cascalho compactado, areia grossa, areia fina, carvão ativado e plugue de fibra para produzir água potável cristalina a partir de lama.",
-    "svgFileName": "pr01-outcome.svg"
+    "svgFileName": "pr01-outcome.svg",
+    "title": "Purificador Primitivo de Carvão e Areia Concluído",
+    "description": "Um cilindro suspenso em tripé com 5 camadas compactadas de carvão, areia e cascalho que clarifica água turva em água potável transparente."
   }
 }

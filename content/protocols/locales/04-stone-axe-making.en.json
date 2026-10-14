@@ -77,8 +77,8 @@
     "consequence": "Result: Always strike the stone edge at 45 degrees for a clean blade, and lash with water-soaked inner bark dried slowly in the shade."
   },
   "outcome": {
-    "title": "Chipped Flint & Vine-Bound Primitive Stone Axe",
-    "description": "A bifacial chert axe blade seated in a split oak haft, cross-bound with raw kudzu vines and sealed with pine pitch resin composite for heavy chopping.",
-    "svgFileName": "pr04-outcome.svg"
+    "svgFileName": "pr04-outcome.svg",
+    "title": "Completed Primitive Chipped Stone Axe",
+    "description": "A bifacially flaked flint blade seated deeply into a split oak haft, bound firmly with criss-cross vine lashing and sealed with pine pitch resin composite."
   }
 }

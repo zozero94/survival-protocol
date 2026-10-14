@@ -135,8 +135,8 @@
     "outro": "Save the technical vector blueprints to your device offline from the profile link."
   },
   "outcome": {
-    "title": "3 Survival Knots Field Rigging & Square Lashing",
-    "description": "A unified survival rigging setup combining Clove Hitch post anchoring, Bowline rapid-release loop, Taut-line Hitch tension sliding, and rigid Square Lashing.",
-    "svgFileName": "pr07-outcome.svg"
+    "svgFileName": "pr07-outcome.svg",
+    "title": "Completed 3 Survival Knots Field Rigging Assembly",
+    "description": "A master field assembly combining the 3-second Clove Hitch, the unshakeable 1-second release Bowline loop, the sliding Taut-line Hitch, and Square Lashing."
   }
 }

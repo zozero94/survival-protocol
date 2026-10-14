@@ -78,8 +78,8 @@
     "consequence": "Consecuencia de omitir la ebullición: Infección parasitaria aguda y muerte por deshidratación en 96 horas."
   },
   "outcome": {
-    "title": "Filtro de Agua de 5 Capas de Carbón y Arena",
-    "description": "Un cilindro cónico con capas comprimidas de grava, arena gruesa, arena fina, carbón vegetal y tapón de fibra que produce agua potable transparente a partir de lodo.",
-    "svgFileName": "pr01-outcome.svg"
+    "svgFileName": "pr01-outcome.svg",
+    "title": "Purificador Primitivo de Carbón y Arena Completado",
+    "description": "Un cilindro suspendido en un trípode con 5 capas compactadas de carbón, arena y grava que clarifica el agua turbia en agua potable transparente."
   }
 }

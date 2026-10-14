@@ -78,8 +78,8 @@
     "consequence": "Consequence of skipping boil: Acute Cryptosporidiosis infection and lethal dehydration within 96 hours."
   },
   "outcome": {
-    "title": "5-Tier Stratified Charcoal & Sand Water Filter",
-    "description": "A conical cylinder filled with compressed gravel, coarse sand, fine sand, activated charcoal, and fiber filter, producing crystal-clear potable water from raw muddy runoff.",
-    "svgFileName": "pr01-outcome.svg"
+    "svgFileName": "pr01-outcome.svg",
+    "title": "Completed Stratified Charcoal & Sand Water Purifier",
+    "description": "A suspended cylinder packed with 5 distinct layers of charcoal, fine sand, coarse sand, gravel, and fiber filter that clarifies turbid surface water into clear potable water."
   }
 }
