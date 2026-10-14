@@ -112,6 +112,22 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
     assert.ok(report.remediationPrompt.includes('TEXT_OVERLAP'));
   });
 
+  it('불투명 다각형(바위 등)이 지지대 기둥의 중간을 가로질러 관통하는 기하학적 관통(Piercing) 결함을 정확히 감지해야 한다', () => {
+    const piercingSvg = `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="380" height="380" fill="none"/>
+      <!-- 수직 지지대 기둥 (x=135, y=165 to 310) -->
+      <rect x="135" y="165" width="16" height="145" fill="#78350f"/>
+      <!-- 기둥 뒤에 그려져 몸통 중간(y=220~250)을 가로질러 덮어버리는 불투명 바위 다각형 -->
+      <polygon points="50,220 250,220 250,250 50,250" fill="#475569"/>
+      <text x="135" y="100" font-size="10">PIERCING TEST</text>
+    </svg>`;
+
+    const report = SvgAuditService.auditSvgStatic(piercingSvg, sampleContext);
+    assert.strictEqual(report.passed, false);
+    assert.ok(report.issues.some((i) => i.reason.includes('기하학적 관통(Piercing) 결함')));
+    assert.ok(report.issues.some((i) => i.category === 'CONTENT_MISMATCH'));
+  });
+
   it('[Fail -> Remediation -> Pass] 1차 추출에서 결함 발견 시 교정 프롬프트를 전달하여 2차 재추출에서 통과해야 한다', async () => {
     const receivedPrompts: Array<string | undefined> = [];
 

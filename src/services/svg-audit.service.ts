@@ -269,6 +269,10 @@ export class SvgAuditService {
       }
     }
 
+    // 5. 기하학적 도형 관통/차폐(Shape Piercing / Occlusion) 검사
+    // 기둥/막대 형태의 수직 요소(<rect>) 뒤에 렌더링된 다각형(<polygon>)이 기둥 중간통로를 가로질러 덮어버리는 결함 감지
+    this.detectShapePiercingIssues(svgCode, issues);
+
     // 점수 산정 (CRITICAL 당 -25점, WARNING 당 -5점)
     const criticalCount = issues.filter((i) => i.severity === 'CRITICAL').length;
     const warningCount = issues.filter((i) => i.severity === 'WARNING').length;
@@ -807,5 +811,71 @@ ${bulletLines.join('\n')}
     }
 
     return { allPassed, localeReports };
+  }
+
+  /**
+   * 기하학적 도형 관통/차폐(Shape Piercing / Occlusion) 검사
+   * - 기둥/지지대 형태의 수직 rect 요소 뒤에 렌더링된 다각형 polygon 요소가 기둥의 중간통로를 가로질러 덮어버리는 결함 감지
+   */
+  private static detectShapePiercingIssues(svgCode: string, issues: SvgAuditIssue[]): void {
+    // 1) 기둥/지지대 형태의 수직 rect 추출 (height >= 50, aspect ratio >= 2.5, width <= 40)
+    const rectRegex = /<rect\b([^>]*)\/?>/gi;
+    const rects: Array<{ x: number; y: number; w: number; h: number; index: number }> = [];
+    let m: RegExpExecArray | null;
+    while ((m = rectRegex.exec(svgCode)) !== null) {
+      const attrs = m[1];
+      const x = parseFloat((attrs.match(/\bx=["']([-\d.]+)/i) || [])[1]);
+      const y = parseFloat((attrs.match(/\by=["']([-\d.]+)/i) || [])[1]);
+      const w = parseFloat((attrs.match(/\bwidth=["']([-\d.]+)/i) || [])[1]);
+      const h = parseFloat((attrs.match(/\bheight=["']([-\d.]+)/i) || [])[1]);
+      if (!isNaN(x) && !isNaN(y) && !isNaN(w) && !isNaN(h)) {
+        if (h >= 50 && h / w >= 2.5 && w <= 40) {
+          rects.push({ x, y, w, h, index: m.index });
+        }
+      }
+    }
+
+    if (rects.length === 0) return;
+
+    // 2) rect 뒤에 등장하는 polygon 추출
+    const polyRegex = /<polygon\b([^>]*)\/?>/gi;
+    while ((m = polyRegex.exec(svgCode)) !== null) {
+      const ptsMatch = m[1].match(/\bpoints=["']([^"']+)/i);
+      if (!ptsMatch) continue;
+      const pts = ptsMatch[1].trim().split(/[\s,]+/).map(parseFloat).filter((n) => !isNaN(n));
+      const xs: number[] = [];
+      const ys: number[] = [];
+      for (let i = 0; i < pts.length; i += 2) {
+        xs.push(pts[i]);
+        ys.push(pts[i + 1]);
+      }
+      if (xs.length < 3) continue;
+
+      const pMinX = Math.min(...xs);
+      const pMaxX = Math.max(...xs);
+      const pMinY = Math.min(...ys);
+      const pMaxY = Math.max(...ys);
+      const polyIndex = m.index;
+
+      for (const r of rects) {
+        if (polyIndex > r.index) {
+          // 다각형이 기둥보다 뒤에 그려짐 (z-index 상위)
+          // X축이 기둥을 80% 이상 가로지르는지 확인
+          const xOverlap = Math.min(r.x + r.w, pMaxX) - Math.max(r.x, pMinX);
+          if (xOverlap >= r.w * 0.8) {
+            // Y축 상으로 다각형의 상단/하단이 기둥의 위/아래 끝단을 침범하지 않고 몸통 중간만 잘라먹는지 확인
+            if (pMinY > r.y + 15 && pMaxY < r.y + r.h - 15) {
+              issues.push({
+                category: 'CONTENT_MISMATCH',
+                severity: 'CRITICAL',
+                element: `<polygon points="${ptsMatch[1].slice(0, 30)}...">`,
+                reason: `기하학적 관통(Piercing) 결함: 불투명 다각형 요소가 지지대/기둥(x=${r.x}, y=${r.y}, h=${r.h})의 중간통로를 가로질러 덮음으로써 기둥이 잘리거나 관통된 것처럼 보입니다.`,
+                fixInstruction: `지지대/기둥을 다각형 위에 배치(레이어 순서 변경)하거나, 바위/부품이 기둥 끝단 접촉면에만 맞닿도록 좌표를 분리하십시오.`,
+              });
+            }
+          }
+        }
+      }
+    }
   }
 }
