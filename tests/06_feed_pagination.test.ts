@@ -29,6 +29,16 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     assert.ok(html.includes('data-action="goto-page"'), '페이지 이동 액션이 존재해야 합니다.');
     assert.ok(html.includes('data-action="filter-category"'), '카테고리 필터 액션이 존재해야 합니다.');
     assert.ok(html.includes('data-protocol-card='), '프로토콜 카드들이 렌더링되어 있어야 합니다.');
+    assert.ok(html.includes('id="pagination-prev-btn"'), '이전 페이지 버튼이 존재해야 합니다.');
+    assert.ok(html.includes('id="pagination-next-btn"'), '다음 페이지 버튼이 존재해야 합니다.');
+  });
+
+  test('페이징 런타임 스크립트는 2페이지 진입 시 이전 버튼을 활성화하고 1페이지를 가리켜야 한다', () => {
+    const html = fs.readFileSync(indexPath, 'utf-8');
+    assert.ok(html.includes("prevBtn.setAttribute('data-page-target', prevTarget)"), '이전 버튼의 타겟 페이지를 동적으로 갱신해야 함');
+    assert.ok(html.includes("nextBtn.setAttribute('data-page-target', nextTarget)"), '다음 버튼의 타겟 페이지를 동적으로 갱신해야 함');
+    assert.ok(html.includes("prevBtn.removeAttribute('disabled')"), '1페이지를 벗어났을 때 이전 버튼의 disabled가 해제되어야 함');
+    assert.ok(html.includes("nextBtn.removeAttribute('disabled')"), '마지막 페이지를 벗어났을 때 다음 버튼의 disabled가 해제되어야 함');
   });
 
   test('sw.js에 메인 인덱스와 각 프로토콜 상세 페이지가 사전 캐시 목록에 등재되어야 한다', () => {

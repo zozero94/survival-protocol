@@ -132,15 +132,33 @@ export function getFeedRuntimeScript(): string {
           }
         }
 
-        // 이전/다음 버튼 상태 업데이트
-        var allPageActionBtns = document.querySelectorAll('[data-action="goto-page"]');
-        allPageActionBtns.forEach(function (btn) {
-          var target = parseInt(btn.getAttribute('data-page-target'), 10);
-          if (target < 1 || target > totalPages) {
-            btn.setAttribute('disabled', 'true');
-            btn.className = 'px-3 py-1.5 font-mono text-xs transition-none bg-black text-neutral-700 border border-neutral-900 cursor-not-allowed';
+        // 이전/다음 버튼 상태 및 대상 페이지 동적 업데이트 (2페이지 진입 시 좌측 화살표 정상 활성화)
+        var prevBtn = document.getElementById('pagination-prev-btn');
+        var nextBtn = document.getElementById('pagination-next-btn');
+
+        if (prevBtn) {
+          var prevTarget = currentPage - 1;
+          prevBtn.setAttribute('data-page-target', prevTarget);
+          if (currentPage <= 1) {
+            prevBtn.setAttribute('disabled', 'true');
+            prevBtn.className = 'px-3 py-1.5 font-mono text-xs transition-none bg-black text-neutral-700 border border-neutral-900 cursor-not-allowed';
+          } else {
+            prevBtn.removeAttribute('disabled');
+            prevBtn.className = 'px-3 py-1.5 font-mono text-xs transition-none bg-[#1c1b1b] text-neutral-400 hover:text-white border border-neutral-800';
           }
-        });
+        }
+
+        if (nextBtn) {
+          var nextTarget = currentPage + 1;
+          nextBtn.setAttribute('data-page-target', nextTarget);
+          if (currentPage >= totalPages) {
+            nextBtn.setAttribute('disabled', 'true');
+            nextBtn.className = 'px-3 py-1.5 font-mono text-xs transition-none bg-black text-neutral-700 border border-neutral-900 cursor-not-allowed';
+          } else {
+            nextBtn.removeAttribute('disabled');
+            nextBtn.className = 'px-3 py-1.5 font-mono text-xs transition-none bg-[#1c1b1b] text-neutral-400 hover:text-white border border-neutral-800';
+          }
+        }
       }
 
       // 이벤트 위임 처리

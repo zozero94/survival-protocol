@@ -3,25 +3,13 @@
  * 5개 단위 페이징(Pagination) 네비게이션 컴포넌트 (Stitch 디자인 1:1 완벽 이식 + 7개국어 data-i18n 바인딩)
  * [←] [01] [02] [→] 버튼 매트릭스 + "기록 1 - 5 / 총 N건" 메타데이터 레이블
  */
-export function renderPagination(currentPage        , totalPages        , totalItems         = 6)         {
-  if (totalPages <= 1) {
-    return `
-<section id="pagination-nav" class="pt-6 pb-2 flex items-center justify-between border-t border-neutral-800 font-mono text-xs">
-  <div class="flex items-center gap-1">
-    <button type="button" class="px-3 py-1.5 bg-white text-black font-bold border border-white">01</button>
-  </div>
-  <div id="pagination-summary-label" class="text-neutral-500">
-    <span data-i18n="paginationRecordPrefix">기록</span> <span id="pagination-range-label" class="text-neutral-300 font-bold">1 - ${totalItems}</span> <span data-i18n="paginationTotalPrefix">/ 총</span> <span id="pagination-total-items-label" class="text-neutral-300 font-bold">${totalItems}</span><span data-i18n="paginationTotalSuffix">건</span>
-  </div>
-</section>
-    `.trim();
-  }
-
+export function renderPagination(currentPage        , totalPages        , totalItems         = 7)         {
   const prevDisabled = currentPage <= 1;
   const nextDisabled = currentPage >= totalPages;
 
   const pageButtons           = [];
-  for (let i = 1; i <= totalPages; i++) {
+  const safeTotalPages = Math.max(1, totalPages);
+  for (let i = 1; i <= safeTotalPages; i++) {
     const isCurrent = i === currentPage;
     const padNum = String(i).padStart(2, '0');
     pageButtons.push(`
@@ -38,7 +26,7 @@ export function renderPagination(currentPage        , totalPages        , totalI
     `);
   }
 
-  const startIdx = (currentPage - 1) * 5 + 1;
+  const startIdx = totalItems > 0 ? (currentPage - 1) * 5 + 1 : 0;
   const endIdx = Math.min(currentPage * 5, totalItems);
 
   return `
@@ -46,7 +34,9 @@ export function renderPagination(currentPage        , totalPages        , totalI
   <div class="flex items-center gap-1" id="pagination-buttons-bar">
     <!-- 이전 버튼 -->
     <button type="button"
+      id="pagination-prev-btn"
       data-action="goto-page"
+      data-pagination="prev"
       data-page-target="${currentPage - 1}"
       ${prevDisabled ? 'disabled' : ''}
       class="px-3 py-1.5 font-mono text-xs transition-none ${
@@ -64,7 +54,9 @@ export function renderPagination(currentPage        , totalPages        , totalI
 
     <!-- 다음 버튼 -->
     <button type="button"
+      id="pagination-next-btn"
       data-action="goto-page"
+      data-pagination="next"
       data-page-target="${currentPage + 1}"
       ${nextDisabled ? 'disabled' : ''}
       class="px-3 py-1.5 font-mono text-xs transition-none ${
