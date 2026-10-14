@@ -1,142 +1,134 @@
 {
   "protocolId": "PR-07",
   "category": "TOOLS",
-  "title": "3 Unverzichtbare Überlebensknoten: Hält Extremen Lasten Stand und Löst Sich in 1 Sekunde",
+  "title": "Der 'König der Knoten': Vollständige 5-Schritte-Anleitung für den Palstek (Unlösbar unter Last & in 1 Sekunde lösbar)",
   "threatLevel": "HIGH",
-  "threatLevelText": "[GRUNDLEGENDE BEFESTIGUNG & SCHUTZ]",
-  "summary": "Ein falscher Knoten beim Lagerbau löst sich bei Sturm oder blockiert bei Nässe steinhart, sodass man das Seil zerschneiden muss. Der Palstek (Bowline) hält tonnenschwere Lasten ohne Durchrutschen und lässt sich sofort öffnen; der Topsegelschotstek (Spannknoten) ermöglicht stufenloses Spannen von Zeltleinen; und der Kreuzbund verbindet zwei Rundhölzer ohne Nägel unerschütterlich über Kreuz.",
-  "timeRequired": "15 Minuten (Einmal lernen, lebenslang beherrschen)",
-  "successRate": "98% (Mit der Kaninchenbau-Formel)",
-  "difficulty": "Einfach (Bewegungsablauf einprägen)",
-  "outputPerHour": "3 Meisterknoten (Dauerhafte Fähigkeit)",
+  "threatLevelText": "[LEBENSRETTUNG & SCHWERLAST-FIXIERUNG]",
+  "summary": "Der Palstek (Bowline) gilt weltweit als der unbestrittene 'König der Knoten' für Bergung, Schwerlastzüge und Notunterkünfte. Selbst unter extremer Zugspannung zieht sich seine feste Schlaufe niemals zu oder rutscht durch – Erstickungs- oder Schnittgefahren sind ausgeschlossen. Selbst nach tonnenschwerer Belastung und durchnässt von Schlamm und Regen verklemmt er nie: Durch Umklappen der hinteren Kragenschlaufe mit dem Daumen bricht die Reibungssperre zusammen und der Knoten löst sich in einer einzigen Sekunde. Meistere die zeitlose 'Teich & Baum'-Formel schrittweise mit technischen Vektor-Blaupausen.",
+  "timeRequired": "5 Minuten (Nach 3 Übungszyklen dauerhaft beherrscht)",
+  "successRate": "99% (Bei Befolgung der Kaninchen-Formel)",
+  "difficulty": "Leicht (4-Takt-Formel 'Teich & Baum')",
+  "outputPerHour": "Meisterhafter Palstek (Einzelne feste Schlaufe)",
   "materials": [
     {
       "id": "mat-01",
-      "name": "1 Stabiles Seil ab 2m Länge (Paracord oder Naturseil)",
-      "desc": "6~8mm starkes Naturfaserseil oder Paracord mit hoher Reibung und Zugfestigkeit."
+      "name": "1 langes robustes Seil (2m+ Paracord oder Seil)",
+      "desc": "6~8mm griffiges Seil oder 550er Paracord mit hoher Reißfestigkeit für Knotenübungen und robuste Feldtakelagen."
     },
     {
       "id": "mat-02",
-      "name": "2 Gerade Hartholz-Stangen (Unterarmdick, 40~50cm)",
-      "desc": "Stabile Eichen- oder Kiefernäste zur Belastungsprobe für Knoten und Kreuzbünde."
+      "name": "Übungsstamm oder Griff (Unterarmstarker Ast)",
+      "desc": "Ein 5~7cm dicker Hartholzast zur Belastungsprobe unter echtem Zug."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Schritt 1: Blitzschnelle, Rutschfeste Pfahlverankerung: Der Webeleinstek (Clove Hitch)",
-      "description": "Seil um den Pfahl führen und über die stehende Part kreuzen, sodass ein X entsteht. Den Pfahl ein zweites Mal umrunden und das lose Ende sauber unter der X-Kreuzung durchstecken. Beide Enden kräftig horizontal auseinanderziehen. Der Knoten klemmt sich durch Reibung an der Rinde fest und dient als Basis für alle Holzverbindungen.",
-      "actionNote": "> Profi-Tipp: Achten Sie darauf, dass beide Wicklungen parallel am Holz anliegen, damit die Reibungsklemmung unter Querkraft sofort greift.",
+      "title": "Schritt 1: Das Teich-Auge (Ziffer '6'-Schlaufe) über der stehenden Part formen",
+      "description": "Halte die lange stehende Part (den Stamm) und bilde eine handtellergroße kreisrunde Schlaufe. Der entscheidende Schlüssel hierbei: Das Arbeitsende (das Kaninchen) muss OBERHALB der stehenden Part kreuzen. Von oben betrachtet entsteht eine deutliche Ziffer '6'. Verläuft das Ende unterhalb, versagt der Verriegelungsmechanismus vollständig – stets oben kreuzen!",
+      "actionNote": "> Prüfpunkt: Kontrolliere, dass das Arbeitsende über der stehenden Part liegt und eine 6er-Schlaufe bildet. Diese Öse fängt die Zugkräfte auf.",
       "svgFileName": "pr07-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // WEBELEINSTEK ANKER-SCHEMA",
-        "① Erste Umrundung des Pfahls (X-Kreuzung)",
-        "Seil über das Holz zur X-Bildung führen",
-        "+",
-        "② Zweite Umrundung und unter dem X durchstecken",
-        "Loses Ende unter der X-Brücke durchführen",
-        "+",
-        "③ Beidseitiger horizontaler Zug (Verriegelt)",
-        "Beide Seiten festziehen für Reibungsschluss",
-        "④ Parallele Ausrichtungsprüfung",
-        "Prüfen, dass Seile flach anliegen",
-        "⑤ Zugkraft-Richtungspfeil"
+        "FIG. 01 // PALSTEK SCHRITT 1: TEICH-SCHLAUFE",
+        "STANDING PART",
+        "Stehende Part (Baumstamm)",
+        "RABBIT HOLE (SCHLAUFE)",
+        "6er-förmige Teich-Schlaufe",
+        "WORKING END (KANINCHEN)",
+        "Arbeitsende kreuzt ÜBER stehender Part",
+        "[SCHRITT 1 FOKUS] Arbeitsende über Part zur '6' legen",
+        "Arbeitsende MUSS oben liegen, um die Blockade zu garantieren."
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Schritt 2: Der König der Knoten: Feste Schlaufe per Kaninchenbau-Formel (Palstek)",
-      "description": "In der stehenden Part ein kleines Auge (den Kaninchenbau) legen. Das lose Ende (das Kaninchen) von unten durch das Auge nach oben führen. Hinter dem Stamm des Seils (dem Baum) von rechts nach links herumführen und wieder gerade nach unten in den Bau stecken. Kaninchen und rechte Schlaufenhälfte greifen und die stehende Part festziehen.",
-      "actionNote": "> Kaninchen-Merkformel: [Aus dem Bau heraus ➔ Um den Baum herum ➔ Zurück in den Bau ➔ Festziehen]. In 5 Sekunden blind geknüpft.",
+      "title": "Schritt 2: Das Kaninchen (Arbeitsende) von unten nach oben aus dem Teich auftauchen lassen",
+      "description": "Führe das Arbeitsende (das Kaninchen) von unten nach oben durch die Schlaufe (den Teich). Ziehe mindestens 15~20cm Seilreserve (den Kaninchenkopf) heraus, damit beim späteren Umrunden des Stammes genügend Seil vorhanden ist. Niemals von oben nach unten stechen; dies würde eine unkontrollierte Würgeschlinge erzeugen, die unter Last kollabiert.",
+      "actionNote": "> Richtungsprüfung: Das Seil muss von [Unten ➔ Oben] heraustauchen wie ein Tier aus seinem Erdloch.",
       "svgFileName": "pr07-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // PALSTEK KANINCHENBAU-BAHN",
-        "① Auge in stehender Part (Kaninchenbau)",
-        "Kleine Schlaufe auf der Hauptleine legen",
-        "② Ende steigt durch das Auge (Heraus)",
-        "Kaninchen kommt von unten nach oben",
-        "③ Umrundung hinter dem Stamm (Herum)",
-        "Gegen den Uhrzeigersinn um das Hauptseil",
-        "④ Rückkehr nach unten in den Bau (Hinein)",
-        "Gerade nach unten ins Auge zurückführen",
-        "⑤ Feste Sicherheitsschlaufe fertig",
-        "Hält den Durchmesser unter tonnenschwerer Last"
+        "FIG. 02 // PALSTEK SCHRITT 2: AUFTAUCHEN AUS DEM TEICH",
+        "EMERGE FROM HOLE",
+        "Von unten nach oben auftauchen",
+        "Kaninchenkopf 15cm",
+        "Ausreichend Seillänge herausziehen",
+        "MAIN EYE LOOP",
+        "Haupt-Lastschlaufe",
+        "[SCHRITT 2 FOKUS] Kaninchen von unten aus dem Teich ziehen",
+        "Von oben einzustechen erzeugt eine gefährliche Würgeschlinge; streng vermeiden."
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Schritt 3: Sofortiges Lösen in 1 Sekunde: Das Brechen des Palstek-Rückens",
-      "description": "Gewöhnliche Knoten blockieren bei Nässe unlösbar. Drehen Sie den Palstek um und suchen Sie die U-förmige Schlinge (den Kragen), die das Hauptseil umarmt. Drücken Sie diesen Kragen mit dem Daumen um 90 Grad nach hinten weg (Rücken brechen). Die interne Reibung bricht sofort zusammen und das Seil gleitet ohne Beschädigung auseinander.",
-      "actionNote": "> Löse-Geheimnis: Nicht mit den Fingernägeln am Knoten pulen. Nur den hinteren Kragen mit dem Daumen nach hinten kippen; der Knoten löst sich sofort.",
+      "title": "Schritt 3: Das Kaninchen um die Rückseite des stehenden Baumes führen",
+      "description": "Führe das herausragende Seilende gegen den Uhrzeigersinn um die RÜCKSEITE der stehenden Part (des Baumes). Eine Führung vor dem Stamm zerstört die Geometrie und verhindert die Reibungsverriegelung. Das saubere Umrunden hinter dem Baum erzeugt die charakteristische Kragenschlaufe (Collar Loop), die das 1-Sekunden-Lösen ermöglicht.",
+      "actionNote": "> Rückseiten-Regel: Das Ende muss zwingend hinter der stehenden Part herumlaufen, um den Sperrkragen zu bilden.",
       "svgFileName": "pr07-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // RÜCKEN BRECHEN SCHNELL-LÖSUNG",
-        "① Zustand nach extremer Zugbelastung",
-        "Feste Struktur nach schwerer Lastaufnahme",
-        "② U-förmige Kragenschlinge (Kaninchenohren)",
-        "Struktureller Hebel am Hauptseil",
-        "③ 90-Grad Daumendruck nach hinten (Drücken)",
-        "Kragen mit dem Daumen zurückkippen",
-        "④ Sofortige Null-Reibungs-Zone",
-        "Interne Klemmspannung neutralisiert",
-        "⑤ Sekundenschnelle Seiltrennung",
-        "Ohne Messer; Seil bleibt 100% wiederverwendbar"
+        "FIG. 03 // PALSTEK SCHRITT 3: UM DEN BAUM HERUM",
+        "AROUND THE TREE",
+        "HINTER der stehenden Part herum",
+        "TREE (BAUM / STEHENDE PART)",
+        "Zentrale Drehachse des Kaninchens",
+        "RE-ENTRY READY",
+        "Bereit zum erneuten Eintauchen",
+        "[SCHRITT 3 FOKUS] Kaninchen umrundet die Rückseite des Baumes",
+        "Die Führung hinter dem Stamm erzeugt die 1-Sekunden-Löseschlaufe."
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Schritt 4: Selbsthemmender Schiebeknoten: Topsegelschotstek (Spannknoten)",
-      "description": "Führen Sie das Seil um den Hering zurück zum Zelt. Wickeln Sie das Ende innerhalb der Schlaufe zweimal eng um das Hauptseil in Richtung Hering. Dann nach außen springen und einen einfachen Halbschlag binden. Man kann den Knoten von Hand verschieben, um die Leine zu spannen; bei Windlast blockiert er automatisch.",
-      "actionNote": "> Wickel-Regel: [Zwei Wicklungen innen ➔ Eine Wicklung außen zum Sperren]. Die inneren zwei bremsen, die äußere verriegelt.",
+      "title": "Schritt 4: Das Kaninchen wieder von oben nach unten in den Teich eintauchen lassen",
+      "description": "Führe das Arbeitsende nach dem Umrunden des Baumes wieder in genau dieselbe Teichschlaufe zurück. Die Richtung ist diesmal von oben nach unten (abwärts). Beim Durchtritt legen sich die beiden Seilstränge in der Schlaufe parallel nebeneinander. Damit sind alle Hebelkräfte symmetrisch ausgerichtet.",
+      "actionNote": "> Parallele Stränge: Prüfe, dass beide Seile im Teich sauber parallel liegen, ohne sich zu verdrehen.",
       "svgFileName": "pr07-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // SPANNKNOTEN ZUG-EINSTELLUNG",
-        "① Seil-Rückführung vom Hering",
-        "Seil umrundet den Erdhering",
-        "② Zwei interne Reibungswindungen (Bremse)",
-        "Zwei Wicklungen nehmen Zugkraft auf",
-        "③ Äußerer Halbschlag (Verriegelung)",
-        "Abschlussknoten verhindert Durchrutschen",
-        "④ Manuelle Schiebe-Verstellachse",
-        "Mit der Hand stufenlos spannen/entspannen",
-        "⑤ Automatische Windlast-Blockierung",
-        "Zugkraft verklemmt die Windungen sofort"
+        "FIG. 04 // PALSTEK SCHRITT 4: ZURÜCK IN DEN TEICH",
+        "BACK INTO HOLE",
+        "Von oben nach unten eintauchen",
+        "PARALLEL STRANDS",
+        "Zwei Stränge parallel ausgerichtet",
+        "COLLAR LOOP",
+        "Hintere Kragenschlaufe um den Baum",
+        "[SCHRITT 4 FOKUS] Kaninchen taucht wieder in den Teich ein",
+        "Von oben nach unten durchstecken; Stränge müssen parallel liegen."
       ]
     },
     {
       "stepNumber": "05",
-      "title": "Schritt 5: Nagellose Holzkonstruktion: Der Kreuzbund (Square Lashing)",
-      "description": "Mit Webeleinstek am Vertikalpfahl beginnen. Querstange im 90-Grad-Winkel anlegen und das Seil 3~4 Mal über Kreuz um beide Balken wickeln. Danach folgt der entscheidende Knebelzug (Frapping): Wickeln Sie das Seil 2~3 Mal mit vollem Körpergewicht zwischen den Hölzern hindurch, um jedes Spiel zu ersticken. Mit Webeleinstek sichern.",
-      "actionNote": "> Der Knebelzug ist entscheidend: Die Windungen zwischen den Balken erzeugen 90% der Festigkeit. Mit vollem Gewicht festziehen, bis das Seil in die Rinde beißt.",
+      "title": "Schritt 5: 4-Wege-Blockade festziehen und 1-Sekunden-Schnelllösen meistern",
+      "description": "Greife das Arbeitsende und den rechten Strang der Schlaufe fest mit einer Hand. Mit der anderen Hand ziehst du kräftig an der oberen stehenden Part in Gegenrichtung. Die internen Schlingen pressen sich unverrückbar zusammen (Locking). Die fertige Schlaufe verformt sich selbst unter LKW-Zug nicht. Zum Lösen drückst du die hintere U-förmige Kragenschlaufe mit dem Daumen nach außen ('Rückgrat brechen'): Die Reibung bricht sofort zusammen und der Knoten löst sich in 1 Sekunde ohne Messer.",
+      "actionNote": "> 1-Sekunden-Lösetrick: Niemals mit den Fingernägeln am Knoten pulen! Drücke einfach den Kragen auf der Rückseite mit dem Daumen weg; der Knoten fällt von selbst ab.",
       "svgFileName": "pr07-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // KREUZBUND & KNEBELZUG-STEIFIGKEIT",
-        "① Webeleinstek-Start am Vertikalpfahl",
-        "Unverrückbarer Ausgangs-Ankerpunkt",
-        "② 3~4 quadratische Umfangswicklungen",
-        "Balken im rechten 90-Grad-Winkel umfassen",
-        "③ 3 hochfeste Knebelzüge (Frapping)",
-        "Zwischenraum quetschen für null Spiel",
-        "④ Horizontale Querstangen-Auflage",
-        "Tragfähiger Querast",
-        "⑤ Abschließender Webeleinstek",
-        "Nagellose dauerhafte Strukturverbindung"
+        "FIG. 05 // PALSTEK SCHRITT 5: BLOCKIERUNG & 1-SEK-LÖSEN",
+        "1-SEC QUICK RELEASE",
+        "Kragen-Abknick-Technik",
+        "Mit dem Daumen gegen den Kragen drücken",
+        "PULL STANDING",
+        "Stehende Part kräftig aufwärts ziehen",
+        "GRIP TOGETHER",
+        "Ende und Schlaufe in einer Hand halten",
+        "LOCKED FIXED LOOP",
+        "Schlaufengröße bleibt unter Last konstant",
+        "[SCHRITT 5 FOKUS] Gegensinnig ziehen für 4-Wege-Sperre",
+        "Zum Lösen Daumen auf den hinteren Kragen drücken; öffnet in 1s ohne Schnitt."
       ]
     }
   ],
   "fatalMistake": {
-    "title": "Tödlicher Fehler: Das Seilende außen an der Schlaufe belassen (Fehlhafter Palstek)",
-    "description": "Beim Palstek muss das lose Ende zwingend INNEN in der großen Schlaufe liegen. Zeigt das Ende nach außen, entsteht ein unvollständiger Cowboy-Palstek. Im Dickicht können Äste am hervorstehenden Ende hängenbleiben und den Knoten unter Zug schlagartig aufziehen. Prüfen Sie immer mit den Fingern, ob das Ende innen liegt.",
-    "consequence": "Folge: Selbsttätiges Lösen des Knotens bei Reibung mit Einsturz des Unterstands oder Absturzgefahr"
+    "title": "Fataler Fehler: Arbeitsende außerhalb der Schlaufe ('Cowboy-Palstek'-Fehler)",
+    "description": "Bei einem korrekt geknüpften Standard-Palstek MUSS das Seilende (der Kaninchenschwanz) auf der INNENSEITE der Hauptschlaufe liegen. Zeigt das Ende nach außen, entsteht eine mangelhafte Variante (holländischer Palstek/Cowboy Bowline). Beim Schleppen von Lasten oder Verankern von Planen verfängt sich das außenliegende Ende an Ästen oder Felsen und zieht den Knoten unter Zug schlagartig auf.",
+    "consequence": "Konsequenz: Selbstständiges Öffnen durch Außenreibung, Einsturz des Unterstands und Absturz von Lasten"
   },
   "shortsScript": {
-    "hook": "Beherrsche diese 3 Überlebensknoten, und du wirst nie wieder mit losen Seilen kämpfen.",
-    "body": "Erstens: Der Palstek, König der Knoten. Kaninchenbau formen, Kaninchen kommt heraus, umrundet den Baum und springt zurück. Hält einen LKW, löst sich aber in 1 Sekunde durch Drücken des Rückens. Zweitens: Der Spannknoten. Zwei Wicklungen innen, eine außen. Verschiebe ihn, um Leinen zu spannen; Wind blockiert ihn bombenfest. Drittens: Der Kreuzbund. 3 Mal über Kreuz wickeln und zwischen den Balken mit vollem Gewicht knebeln. Ergibt stabile Betten und Leitern ganz ohne Nägel. Niemals das Seilende des Palsteks nach außen zeigen lassen – Äste ziehen ihn sonst sofort auf.",
-    "outro": "Lade dir die Vektor-Diagramme über den Link im Profil dauerhaft offline auf dein Handy."
+    "hook": "Hält selbst einem LKW-Zug stand und löst sich mit einem Daumendruck in 1 Sekunde: der Palstek.",
+    "body": "Wenn du dir in der Wildnis nur einen Knoten merken kannst, dann diesen! Merke dir die 4 Schritte von Teich und Baum: 1. Eine 6er-Schlaufe über dem Seil legen. 2. Das Kaninchen taucht von unten aus dem Teich auf. 3. Einmal hinten um den großen Baum herum. 4. Von oben wieder zurück in den Teich abtauchen. Beide Seiten gegeneinander strammziehen – bombenfest verriegelt! Selbst bei 500 Kilo zieht sich die Schlaufe nicht zusammen. Zum Öffnen kein Messer nötig: Drücke einfach mit dem Daumen gegen den Kragen auf der Rückseite und er löst sich in 1 Sekunde. Seilende immer innen halten!",
+    "outro": "Lade dir die technischen Vektor-Pläne für die Offline-Nutzung über den Profil-Link herunter."
   },
   "outcome": {
     "svgFileName": "pr07-outcome.svg",
-    "title": "Vollendete Feldverspannung mit den 3 Überlebensknoten",
-    "description": "Ein praxiserprobtes Rigg, das den Webeleinenstek, den unverrückbaren und in 1 Sekunde lösbaren Palstek, den verschiebbaren Spannerknoten und die Kreuzbund-Laschung vereint."
+    "title": "Palstek (König der Knoten) Technische Meisterzeichnung",
+    "description": "Technische Spezifikation des Standard-Palsteks mit starrer Festhalteschlaufe und dem 1-Sekunden-Schnelllösemechanismus durch Abknicken des Kragens."
   }
 }

@@ -1,142 +1,134 @@
 {
   "protocolId": "PR-07",
   "category": "TOOLS",
-  "title": "3 Nudos Esenciales de Supervivencia Que Jamás Se Sueltan y Se Desatan en 1 Segundo",
+  "title": "El 'Rey de los Nudos': Guía Definitiva de 5 Pasos del As de Guía (No se Atasca y se Desata en 1 Segundo)",
   "threatLevel": "HIGH",
-  "threatLevelText": "[ANCLAJE Y REFUGIO ESENCIAL]",
-  "summary": "Usar un nudo incorrecto al levantar un refugio hace que se suelte con vientos fuertes o que se atasque como una roca al mojarse, obligándote a cortar y arruinar tu cuerda. El As de Guía (Bowline) soporta toneladas sin deslizarse y se desata al instante, el Nudo Tensor (Taut-line Hitch) permite ajustar la tensión de vientos sin desatar, y el Amarre Cuadrado une dos troncos en cruz de forma inamovible sin clavos.",
-  "timeRequired": "15 Minutos (Aprende una vez, domina de por vida)",
-  "successRate": "98% (Con la fórmula de la madriguera)",
-  "difficulty": "Fácil (Memoria muscular)",
-  "outputPerHour": "3 Nudos Maestros (Habilidad permanente)",
+  "threatLevelText": "[LÍNEA DE VIDA Y ANCLAJE VITAL]",
+  "summary": "El As de Guía (Bowline) es universalmente reconocido como el indiscutible 'Rey de los Nudos' para arrastre de cargas pesadas, salvamento y amarre de refugios. Sometido a tensiones extremas, su lazo fijo jamás se desliza ni se estrangula, eliminando peligros de asfixia o rotura. Incluso empapado de barro y agua tras soportar cientos de kilos, nunca se atasca: doblando el cuello (bucle collar) posterior con el pulgar, el nudo se deshace limpiamente en un solo segundo. Domina la clásica regla mnemotécnica ('El conejo y el árbol') paso a paso con esquemas vectoriales precisos.",
+  "timeRequired": "5 Minutos (Dominio tras 3 repeticiones)",
+  "successRate": "99% (Siguiendo la secuencia del conejo)",
+  "difficulty": "Fácil (Fórmula mnemotécnica del conejo)",
+  "outputPerHour": "As de Guía Maestro (Lazo Fijo Único)",
   "materials": [
     {
       "id": "mat-01",
-      "name": "1 Tramo de Cuerda Resistente de 2m+ (Paracord o cuerda natural)",
-      "desc": "Cuerda de fibra natural o paracord de 6~8mm con alta fricción y resistencia a la tracción."
+      "name": "1 Tramo de Cuerda Resistente (2m+ paracord o soga)",
+      "desc": "Cuerda de 6~8mm de buen agarre y alta resistencia a la tracción para prácticas y amarres pesados de campamento."
     },
     {
       "id": "mat-02",
-      "name": "2 Varas Rectas de Madera Dura (Grosor de antebrazo, 40~50cm)",
-      "desc": "Ramas firmes de roble o pino para practicar anclajes y amarres en cruz bajo carga."
+      "name": "Poste o Tronco de Práctica (Grosor del antebrazo)",
+      "desc": "Rama o poste de 5~7cm para probar la resistencia del nudo bajo tensión real."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Paso 1: Anclaje Rápido y Antideslizante a Postes: Ballestrinque (Clove Hitch)",
-      "description": "Pasa la cuerda alrededor del poste cruzando sobre la línea principal para formar una X. Da una segunda vuelta y pasa el chicote limpiamente por debajo del cruce en X. Tira con fuerza de ambos extremos en direcciones opuestas. La cuerda muerde la corteza por fricción, sirviendo de base para todos los amarres de madera.",
-      "actionNote": "> Consejo Pro: Mantén ambas vueltas paralelas y pegadas a la madera sin torsiones para que el bloqueo por fricción trabaje al 100%.",
+      "title": "Paso 1: Formar el Ojo del Conejo (Forma de Número 6) sobre la Línea Firme",
+      "description": "Sostén la línea firme (el árbol) y forma un pequeño bucle circular. La regla fundamental es que el extremo de trabajo (el conejo) debe cruzar POR ENCIMA de la línea firme. Visto desde arriba, conforma un número '6' perfecto. Si pasa por debajo, la estructura de bloqueo fallará por completo; asegúrate siempre de que cruce por la superficie superior.",
+      "actionNote": "> Punto Clave: Comprueba que el cabo pase sobre el firme formando un número 6. Este bucle actuará como garganta distribuidora de la fuerza de tensión.",
       "svgFileName": "pr07-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // BALLESTRINQUE DIAGRAMA DE ANCLAJE",
-        "① Primera vuelta al poste (Cruce en X)",
-        "Pasa la cuerda formando la X inicial",
-        "+",
-        "② Segunda vuelta y paso bajo el cruce",
-        "Pasa el chicote por debajo del puente X",
-        "+",
-        "③ Tensión horizontal bilateral (Bloqueo)",
-        "Tira de ambos lados para trabar por fricción",
-        "④ Línea de verificación paralela",
-        "Asegura que las cuerdas queden planas",
-        "⑤ Dirección de tracción de carga"
+        "FIG. 01 // AS DE GUÍA PASO 1: BUCLE EN FORMA DE 6",
+        "STANDING PART",
+        "Línea Firme (Tronco del Árbol)",
+        "RABBIT HOLE (BUCLE)",
+        "Madriguera con forma de 6",
+        "WORKING END (CONEJO)",
+        "Extremo cruza POR ENCIMA del firme",
+        "[CLAVE PASO 1] Montar extremo sobre línea formando bucle '6'",
+        "El cabo activo DEBE quedar encima para asegurar el bloqueo estructural."
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Paso 2: El Rey de los Nudos: As de Guía (Bowline) con la Fórmula del Conejo",
-      "description": "Haz un pequeño lazo en la cuerda principal (la madriguera del conejo). Sube el chicote (el conejo) a través del lazo desde abajo. Pásalo por detrás del tronco principal (el árbol) de derecha a izquierda, y mételo derecho de vuelta en la madriguera. Sujeta el conejo y el lazo derecho juntos y tira de la cuerda principal para fijar una gaza indestructible.",
-      "actionNote": "> Mnemotecnia del Conejo: [Sale de la madriguera ➔ Rodea el árbol ➔ Vuelve a la madriguera ➔ Tira fuerte]. Domina este ritmo y lo harás con los ojos cerrados.",
+      "title": "Paso 2: Sacar al Conejo (Extremo Activo) hacia Arriba por la Madriguera",
+      "description": "Toma el extremo activo (el conejo) e introdúcelo desde abajo hacia arriba a través del bucle. Extrae al menos 15~20cm de holgura (la cabeza del conejo) para tener suficiente longitud al rodear el árbol en el siguiente paso. Jamás introduzcas el cabo de arriba hacia abajo; eso crearía un nudo corredizo inestable que se estrangula peligrosamente bajo tensión.",
+      "actionNote": "> Verificación de Dirección: El conejo debe salir [Abajo ➔ Arriba], emergiendo de la madriguera hacia la superficie.",
       "svgFileName": "pr07-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // AS DE GUÍA TRAYECTORIA DEL CONEJO",
-        "① Bucle en línea principal (Madriguera)",
-        "Pequeña vuelta circular en la cuerda",
-        "② Chicote asciende por el bucle (Sale)",
-        "El conejo sale hacia arriba del agujero",
-        "③ Vuelta por detrás del tronco (Rodea)",
-        "Pase en sentido antihorario tras la cuerda",
-        "④ Reingreso hacia abajo en el agujero (Entra)",
-        "Vuelve directo al bucle original",
-        "⑤ Gaza de seguridad inamovible lista",
-        "Mantiene el diámetro fijo bajo toneladas de carga"
+        "FIG. 02 // AS DE GUÍA PASO 2: SALIDA DE LA MADRIGUERA",
+        "EMERGE FROM HOLE",
+        "Sale desde abajo hacia arriba",
+        "Cabeza del conejo 15cm",
+        "Extraer suficiente cabo libre",
+        "MAIN EYE LOOP",
+        "Bucle principal de carga fija",
+        "[CLAVE PASO 2] Sacar el conejo desde el fondo de la madriguera",
+        "Introducirlo de arriba abajo forma un nudo corredizo defectuoso; evítalo."
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Paso 3: Liberación Instantánea en 1 Segundo: Doblar la Espalda del As de Guía",
-      "description": "Los nudos comunes se traban como rocas al mojarse bajo carga pesada. Gira el As de Guía y busca el lazo en forma de U (el collar) que abraza la cuerda principal. Coloca el pulgar sobre este collar y empújalo 90 grados hacia atrás. La fricción interna se desmorona a cero al instante y la cuerda se desliza suelta sin dañar la fibra.",
-      "actionNote": "> Secreto de Desate: No uses las uñas en el nudo. Empuja únicamente el collar trasero hacia atrás con el pulgar para liberarlo al segundo.",
+      "title": "Paso 3: Rodear con el Conejo la Parte Posterior del Árbol (Línea Firme)",
+      "description": "Lleva el extremo del conejo alrededor de la parte TRASERA de la línea firme vertical en sentido antihorario. Pasar por delante del árbol arruinará la geometría e impedirá el bloqueo por fricción. Rodear la espalda del árbol crea el característico 'bucle collar' que le otorga al As de Guía su capacidad mágica de desatarse en 1 segundo bajo cualquier carga.",
+      "actionNote": "> Regla de Paso Trasero: El conejo debe pasar obligatoriamente por detrás de la línea firme para formar el collarín de desbloqueo rápido.",
       "svgFileName": "pr07-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // QUIEBRE DE ESPALDA DESATE RÁPIDO",
-        "① Estado tras soportar tensión extrema",
-        "Estructura firme tras resistir gran peso",
-        "② Bucle en U del collar (Orejas de conejo)",
-        "Palanca estructural que abraza el tronco",
-        "③ Presión de pulgar a 90 grados hacia atrás",
-        "Empuja el collar atrás con la punta del pulgar",
-        "④ Zona de colapso instantáneo de fricción",
-        "Tensión interna neutralizada al segundo",
-        "⑤ Separación fluida de cuerda en 1s",
-        "Sin cortar con cuchillo; cuerda 100% reusable"
+        "FIG. 03 // AS DE GUÍA PASO 3: RODEANDO EL ÁRBOL",
+        "AROUND THE TREE",
+        "Pasa por DETRÁS de la línea firme",
+        "TREE (ÁRBOL / FIRME)",
+        "Eje central de giro del conejo",
+        "RE-ENTRY READY",
+        "Listo para volver a la madriguera",
+        "[CLAVE PASO 3] El conejo rodea la parte posterior del árbol firme",
+        "Pasar por detrás forma el collarín vital para el desbloqueo instantáneo."
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Paso 4: Tensor Deslizante Autobloqueante: Nudo Tensor (Taut-line Hitch)",
-      "description": "Pasa la cuerda por la estaca y regresa hacia tu tienda. Da dos vueltas firmes por el interior del lazo hacia la estaca, abrazando la línea principal. Luego cruza hacia afuera y haz un medio nudo de bloqueo. Empuja el nudo con la mano para tensar o aflojar la cuerda; al soltarlo, el viento traba las espiras automáticamente.",
-      "actionNote": "> Secuencia de Vueltas: [Dos vueltas adentro ➔ Una vuelta afuera para trabar]. Las dos internas frenan por fricción y la externa bloquea la cuña.",
+      "title": "Paso 4: Zambullir al Conejo de Vuelta en la Madriguera de Arriba hacia Abajo",
+      "description": "Tras rodear el árbol, introduce el extremo del conejo nuevamente dentro de la misma madriguera de la que salió. Esta vez la dirección es de 'arriba hacia abajo' (en sentido inverso al paso 2). Al pasar por la garganta, los dos cabos dentro del bucle deben quedar perfectamente paralelos, distribuyendo la tensión simétricamente.",
+      "actionNote": "> Verificación Paralela: Asegúrate de que los dos cabos dentro de la madriguera descansen paralelos sin cruzarse ni retorcerse.",
       "svgFileName": "pr07-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // NUDO TENSOR AJUSTE DE TENSIÓN",
-        "① Línea de retorno desde la estaca",
-        "Cuerda que rodea la estaca de suelo",
-        "② Dos espiras internas de fricción (Freno)",
-        "Dos vueltas que absorben la tensión",
-        "③ Medio nudo exterior de cuña (Traba)",
-        "Vuelta final que evita el deslizamiento",
-        "④ Eje de ajuste manual deslizante",
-        "Desliza con la mano para tensar o soltar",
-        "⑤ Bloqueo automático por carga de viento",
-        "El viento obliga a las espiras a morder"
+        "FIG. 04 // AS DE GUÍA PASO 4: REGRESO A LA MADRIGUERA",
+        "BACK INTO HOLE",
+        "Entra de nuevo de arriba a abajo",
+        "PARALLEL STRANDS",
+        "Dos cabos alineados en paralelo",
+        "COLLAR LOOP",
+        "Collarín posterior rodeando el árbol",
+        "[CLAVE PASO 4] El conejo se sumerge de vuelta en la madriguera",
+        "Pasar de arriba hacia abajo; los cabos interiores deben quedar paralelos."
       ]
     },
     {
       "stepNumber": "05",
-      "title": "Paso 5: Estructura Cruzada de Madera sin Clavos: Amarre Cuadrado (Square Lashing)",
-      "description": "Inicia con un Ballestrinque en el poste vertical. Cruza el palo horizontal a 90 grados y enrolla la cuerda 3~4 veces en patrón cuadrado alternado: sobre la barra, tras el poste, sobre la barra, tras el poste. Luego ejecuta el paso crucial de apriete (Frapping): enrolla 2~3 veces con todo tu peso entre ambos palos para eliminar cualquier juego. Remata con otro Ballestrinque.",
-      "actionNote": "> El Apriete es la Clave: Las vueltas de apriete (frapping) entre los troncos dan el 90% de la rigidez. Aprieta con todo tu peso hasta que la cuerda muerda la corteza.",
+      "title": "Paso 5: Ajuste de Bloqueo en 4 Direcciones y Liberación Rápida en 1 Segundo",
+      "description": "Sujeta el extremo activo y el lado derecho del lazo con una mano. Con la otra mano, agarra con firmeza la línea firme superior y tira en direcciones opuestas con fuerza. Los bucles internos se comprimen entre sí bloqueando el nudo rígidamente. El lazo resultante jamás encogerá. Para desatarlo, empuja el bucle collar trasero en forma de U con el pulgar hacia afuera ('Quebrar el lomo'): la fricción interna colapsa al instante y el nudo se deshace en 1 segundo sin usar cuchillo.",
+      "actionNote": "> Secreto de Liberación en 1s: ¡Jamás tires del nudo con las uñas! Dobla el bucle collar trasero hacia afuera con el pulgar y se desatará suavemente al instante.",
       "svgFileName": "pr07-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // AMARRE CUADRADO Y APRIETE ESTRUCTURAL",
-        "① Inicio con Ballestrinque en poste vertical",
-        "Punto de anclaje firme e inamovible",
-        "② 3~4 vueltas perimetrales cuadradas",
-        "Abrazando los troncos cruzados a 90 grados",
-        "③ 3 vueltas de apriete a máxima fuerza",
-        "Apretando el espacio entre troncos",
-        "④ Travesaño horizontal de soporte",
-        "Rama transversal portante de carga",
-        "⑤ Remate final con Ballestrinque",
-        "Unión estructural permanente sin clavos"
+        "FIG. 05 // AS DE GUÍA PASO 5: BLOQUEO Y LIBERACIÓN 1S",
+        "1-SEC QUICK RELEASE",
+        "Técnica de quebrar el collarín",
+        "Empujar el collar con el pulgar para liberar",
+        "PULL STANDING",
+        "Tirar del firme firmemente hacia arriba",
+        "GRIP TOGETHER",
+        "Sujetar cabo y lazo con una mano",
+        "LOCKED FIXED LOOP",
+        "Tamaño de lazo invariable bajo carga",
+        "[CLAVE PASO 5] Tirar de lados opuestos para asegurar bloqueo",
+        "Para desatar, empuja el collar trasero con el pulgar; se suelta en 1s sin corte."
       ]
     }
   ],
   "fatalMistake": {
-    "title": "Error Fatal: Dejar el Chicote por Fuera del Lazo (As de Guía de Vaquero Defectuoso)",
-    "description": "Al terminar un As de Guía, el chicote (el conejo) debe quedar prolijamente dentro de la gaza principal. Si el cabo queda hacia afuera, forma un nudo vulnerable. En el monte, ramas o mochilas pueden enganchar ese cabo expuesto y desarmar el nudo bajo tensión en un instante. Verifica siempre al tacto que el extremo quede en el interior de la gaza.",
-    "consequence": "Consecuencia: Autodesarme del nudo bajo fricción con colapso del refugio o caídas graves"
+    "title": "Error Fatal: Dejar el Extremo Activo Fuera del Lazo (Variante Cowboy Defectuosa)",
+    "description": "En un As de Guía estándar bien confeccionado, el cabo final (la cola del conejo) DEBE quedar dentro del lazo principal. Si queda hacia afuera, forma una variante defectuosa (As de Guía Holandés o Cowboy). Al arrastrar troncos o tensar refugios, el cabo exterior se engancha fácilmente con ramas y rocas, desatando el nudo por completo bajo carga.",
+    "consequence": "Consecuencia: Desarme accidental por fricción externa, derrumbe del refugio o caída de cargas pesadas"
   },
   "shortsScript": {
-    "hook": "Domina estos 3 nudos de supervivencia y jamás volverás a sufrir con cuerdas sueltas.",
-    "body": "Primero: El As de Guía, el rey de los nudos. Haces la madriguera, el conejo sale, rodea el árbol y vuelve a entrar. Aguanta un camión sin soltarse, pero se desata en 1 segundo empujando el collar trasero. Segundo: El Nudo Tensor. Dos vueltas por dentro, una por fuera. Deslízalo para tensar la tienda; el viento lo traba automáticamente. Tercero: El Amarre Cuadrado. Envuelve en cruz 3 veces y aprieta con todo tu peso entre los troncos. Tienes refugios y camas firmes sin un solo clavo. Jamás dejes el chicote del As de Guía por fuera: una rama lo desatará al instante.",
-    "outro": "Descarga los diagramas vectoriales para verlos sin conexión desde el enlace del perfil."
+    "hook": "Soporta el tirón de un camión sin deslizarse y se desata en un segundo con el pulgar: el As de Guía.",
+    "body": "Si solo puedes aprender un nudo de supervivencia, es este. Memoriza los 4 pasos del conejo: 1, forma un bucle en número 6. 2, el conejo sale por abajo de la madriguera. 3, rodea el árbol firme por detrás. 4, vuelve a zambullirse en la madriguera de arriba a abajo. Tira de ambos lados y queda trabado a prueba de bombas. El lazo nunca se encoge ni ahorca. Para desatarlo, dobla el collarín trasero con el pulgar y se afloja en 1 segundo sin navaja. Guarda el cabo dentro del lazo para evitar enganches.",
+    "outro": "Descarga las guías técnicas vectoriales para uso offline desde el enlace en el perfil."
   },
   "outcome": {
     "svgFileName": "pr07-outcome.svg",
-    "title": "Aparejo de Campo con los 3 Nudos de Supervivencia Completado",
-    "description": "Un montaje maestro que combina el ballestrinque rápido, el as de guía que no se desliza y se suelta en 1 segundo, el nudo tensor deslizante y el amarre cuadrado."
+    "title": "As de Guía (Rey de los Nudos) - Ficha Maestra",
+    "description": "Especificación técnica del As de Guía que muestra el lazo fijo indeformable y el mecanismo de desbloqueo rápido en 1 segundo (Break the Back)."
   }
 }

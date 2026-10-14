@@ -1,66 +1,72 @@
 <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-              <!-- Background -->
-              <rect width="400" height="400" fill="#0d0d0d" />
-              
-              <!-- Blueprint Title & Spec Header -->
-              <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 01 // CLOVE HITCH (말뚝매듭) 결속 구조도</text>
-              <line x1="20" y1="38" x2="380" y2="38" stroke="#1f1f1f" stroke-width="1" />
+  <defs>
+    <linearGradient id="bg01" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </linearGradient>
+    <linearGradient id="standingRope" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2883e"/>
+      <stop offset="50%" stop-color="#f5b867"/>
+      <stop offset="100%" stop-color="#946123"/>
+    </linearGradient>
+    <linearGradient id="workingRope" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="50%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
 
-              <!-- Post / Timber Log (Vertical) -->
-              <rect x="160" y="60" width="80" height="280" rx="4" fill="#181818" stroke="#333333" stroke-width="1.5" />
-              <!-- Wood texture grain lines -->
-              <line x1="180" y1="60" x2="180" y2="340" stroke="#222222" stroke-width="1" stroke-dasharray="8 6" />
-              <line x1="200" y1="60" x2="200" y2="340" stroke="#242424" stroke-width="1" />
-              <line x1="220" y1="60" x2="220" y2="340" stroke="#222222" stroke-width="1" stroke-dasharray="6 8" />
-              <text x="175" y="80" fill="#555555" font-family="'JetBrains Mono', monospace" font-size="10">① 기둥 1회 권선 (X자 교차선 형성)</text>
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bg01)"/>
+  <rect x="10" y="10" width="380" height="380" fill="none" stroke="#222" stroke-width="1"/>
 
-              <!-- Standing Line (White) from top-left -->
-              <path d="M 90 120 L 160 140" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
-              <text x="60" y="115" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="10">기둥을 감싸며 첫 번째 교차</text>
+  <!-- Blueprint Header -->
+  <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 01 // BOWLINE STEP 1: 토끼굴 고리 형성</text>
+  <line x1="20" y1="38" x2="380" y2="38" stroke="#262626" stroke-width="1"/>
 
-              <!-- Wrap 1 across post: Diagonal down-right (White) -->
-              <path d="M 160 140 L 240 180" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  <!-- Standing Part of Rope (원줄 / 나무 기둥줄) -->
+  <!-- Outline Shadow -->
+  <path d="M 200 45 L 200 130" stroke="#050505" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 200 45 L 200 130" stroke="url(#standingRope)" stroke-width="8" stroke-linecap="round"/>
 
-              <!-- Rope goes behind post (Dashed line) -->
-              <path d="M 240 180 C 270 200 270 220 240 230" stroke="#555555" stroke-width="4" stroke-dasharray="4 4" fill="none" />
-              <path d="M 240 230 L 160 230" stroke="#555555" stroke-width="4" stroke-dasharray="4 4" fill="none" />
+  <!-- The 6-shaped Loop (토끼굴) -->
+  <!-- Loop Back Arc (underneath) -->
+  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170 C 225 140 185 130 160 145" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170 C 225 140 185 130 160 145" stroke="url(#standingRope)" stroke-width="8" stroke-linecap="round" fill="none"/>
 
-              <!-- Wrap 2: Working Rope (Fluorescent #E0FE10) crossing over the first wrap in an X shape -->
-              <path d="M 160 230 L 240 190" stroke="#E0FE10" stroke-width="6" stroke-linecap="round" />
-              
-              <!-- The X Intersection Marker -->
-              <circle cx="200" cy="185" r="14" fill="none" stroke="#E0FE10" stroke-width="1.5" stroke-dasharray="3 2" />
-              <text x="218" y="165" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">+</text>
-              <line x1="208" y1="172" x2="216" y2="166" stroke="#E0FE10" stroke-width="1" />
+  <!-- Working End (작동 줄 - 녹색 토끼 줄) Crossing OVER the Standing Line -->
+  <!-- Crossing Segment with Clean Masking Shadow -->
+  <path d="M 160 145 C 130 160 100 210 110 270 L 115 310" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 160 145 C 130 160 100 210 110 270 L 115 310" stroke="url(#workingRope)" stroke-width="8" stroke-linecap="round" fill="none"/>
 
-              <!-- Working end tucks under the crossing line (Fluorescent Green) -->
-              <path d="M 240 190 C 255 180 255 160 235 150" stroke="#E0FE10" stroke-width="5" stroke-dasharray="3 3" fill="none" />
-              <!-- Passes under the middle wrap and exits downward -->
-              <path d="M 220 160 L 180 210" stroke="#E0FE10" stroke-width="6" stroke-linecap="round" />
-              <path d="M 180 210 L 130 280" stroke="#E0FE10" stroke-width="6" stroke-linecap="round" />
+  <!-- Motion Twist Arrow Showing Clockwise Loop Formation -->
+  <path d="M 175 160 C 160 175 165 205 185 210 C 205 215 220 195 215 175" fill="none" stroke="#E02424" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <polygon points="218,170 210,180 224,180" fill="#E02424"/>
 
-              <!-- Direction Arrow on Working End -->
-              <polygon points="122,292 124,276 138,284" fill="#E0FE10" />
-              <text x="45" y="295" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">② 2회 권선 후 X자 교차선 밑으로 통과</text>
+  <!-- Target Center Marker of the Rabbit Hole -->
+  <circle cx="190" cy="180" r="16" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <circle cx="190" cy="180" r="3" fill="#38bdf8"/>
 
-              <!-- Friction Lock Vectors (Arrows showing pinch compression) -->
-              <g stroke="#E0FE10" stroke-width="1.5">
-                <line x1="190" y1="230" x2="190" y2="200" marker-end="url(#arrow)" />
-                <line x1="210" y1="170" x2="210" y2="195" marker-end="url(#arrow)" />
-              </g>
-              <!-- Arrow Marker Definition -->
-              <defs>
-                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#E0FE10" />
-                </marker>
-              </defs>
+  <!-- Callout Indicators & Labels -->
+  <!-- 1. Standing Line Label (Top Right) -->
+  <line x1="205" y1="80" x2="280" y2="80" stroke="#888" stroke-width="1"/>
+  <circle cx="205" cy="80" r="2" fill="#888"/>
+  <text x="290" y="78" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">STANDING PART</text>
+  <text x="290" y="91" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">원줄 (서 있는 나무)</text>
 
-              <rect x="250" y="270" width="130" height="46" fill="#141414" stroke="#2a2a2a" stroke-width="1" />
-              <text x="234.4" y="308" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold">줄 끝을 교차선 아래 틈새로 밀어 넣기</text>
-              <text x="260" y="304" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="8">+</text>
-              <text x="299.1" y="184" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">③ 양방향 수평 인장 (Locking 완료)</text>
-  <text x="304.6" y="206" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">양쪽으로 당겨 마찰 락(Lock) 체결</text>
-  <text x="339.4" y="228" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">④ 평행선 정렬 점검선</text>
-  <text x="310.1" y="250" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">두 줄이 꼬이지 않고 기둥에 밀착</text>
-  <text x="336.3" y="272" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">⑤ 하중 인장 방향 표시</text>
+  <!-- 2. Rabbit Hole Label (Center Left) -->
+  <line x1="174" y1="180" x2="80" y2="180" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="174" cy="180" r="2" fill="#38bdf8"/>
+  <text x="20" y="177" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">RABBIT HOLE (고리)</text>
+  <text x="20" y="190" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">숫자 6 모양의 토끼굴</text>
+
+  <!-- 3. Over-Cross Rule Label (Lower Right) -->
+  <rect x="180" y="250" width="200" height="42" fill="#181818" stroke="#333" stroke-width="1"/>
+  <text x="190" y="267" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">WORKING END (토끼)</text>
+  <text x="190" y="281" fill="#e0e0e0" font-family="'JetBrains Mono', monospace" font-size="9">작동 끝단이 원줄 '위'로 교차</text>
+
+  <!-- Bottom Instruction Box -->
+  <rect x="20" y="335" width="360" height="45" fill="#141414" stroke="#262626" stroke-width="1"/>
+  <text x="30" y="352" fill="#f5b867" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[1단계 핵심] 원줄 위에 작동 줄을 얹어 6자 루프 형성</text>
+  <text x="30" y="368" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">작동 줄이 반드시 원줄의 위쪽에 위치해야 잠금 구조가 완성됩니다.</text>
 </svg>

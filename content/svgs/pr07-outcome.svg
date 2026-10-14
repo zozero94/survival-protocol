@@ -1,32 +1,32 @@
 <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
   <defs>
-    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGradBowline" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0a0c0f"/>
       <stop offset="100%" stop-color="#12161c"/>
     </linearGradient>
 
-    <!-- Timber Wood Gradients -->
-    <linearGradient id="timberPost" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Timber Anchor Post Gradients -->
+    <linearGradient id="anchorPost" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3d2c1e"/>
       <stop offset="50%" stop-color="#694e36"/>
       <stop offset="100%" stop-color="#2a1e14"/>
     </linearGradient>
 
-    <!-- High-Tension Paracord / Bast Rope -->
-    <linearGradient id="knotRope" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c98a3c"/>
-      <stop offset="50%" stop-color="#ffd285"/>
-      <stop offset="100%" stop-color="#8f5b1e"/>
+    <!-- Rope 3D Tubular Shading -->
+    <linearGradient id="mainRopeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#78350f"/>
     </linearGradient>
-
-    <linearGradient id="tarpFabric" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#243329"/>
-      <stop offset="100%" stop-color="#141d17"/>
+    <linearGradient id="workingTailGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="50%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#14532d"/>
     </linearGradient>
   </defs>
 
   <!-- Technical Canvas Backdrop -->
-  <rect x="0" y="0" width="800" height="450" fill="url(#bgGrad7)"/>
+  <rect x="0" y="0" width="800" height="450" fill="url(#bgGradBowline)"/>
   <rect x="15" y="15" width="770" height="420" fill="none" stroke="#222222" stroke-width="1"/>
 
   <!-- Crosshairs -->
@@ -37,127 +37,107 @@
 
   <!-- Metadata -->
   <text x="35" y="55" fill="#555" font-family="monospace" font-size="10" letter-spacing="1">ARCHIVE // OUTCOME SPECIFICATION</text>
-  <text x="35" y="70" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: 3 SURVIVAL KNOTS FIELD RIGGING [100% SPEC]</text>
-  <text x="765" y="55" fill="#555" font-family="monospace" font-size="10" text-anchor="end">RIGGING STATUS: ANCHORED</text>
+  <text x="35" y="70" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: BOWLINE KNOT (매듭의 왕) [KING OF KNOTS SPEC]</text>
+  <text x="765" y="55" fill="#555" font-family="monospace" font-size="10" text-anchor="end">RELEASE TIME: 1.0 SEC</text>
 
   <!-- Left Spec Box -->
   <g id="specBoxLeft" font-family="monospace" font-size="10">
     <rect x="45" y="100" width="180" height="155" fill="#141414" stroke="#333" stroke-width="1"/>
     <rect x="45" y="100" width="180" height="22" fill="#1f1f1f"/>
-    <text x="55" y="115" fill="#E02424" font-weight="bold">KNOT MECHANICS</text>
-    <text x="55" y="140" fill="#aaa">· POST ANCHOR: CLOVE HITCH</text>
-    <text x="55" y="160" fill="#aaa">· MAIN LOOP: BOWLINE (KING)</text>
-    <text x="55" y="180" fill="#aaa">· QUICK UNTIE: BREAK THE BACK</text>
-    <text x="55" y="200" fill="#aaa">· TENSION ADJ: TAUT-LINE HITCH</text>
-    <text x="55" y="220" fill="#aaa">· CROSS JOINT: SQUARE LASHING</text>
-    <text x="55" y="240" fill="#38bdf8">· SLIPPAGE PROOF: 100% SECURE</text>
+    <text x="55" y="115" fill="#E02424" font-weight="bold">BOWLINE SPECS</text>
+    <text x="55" y="140" fill="#aaa">· KNOT TYPE: FIXED LOOP</text>
+    <text x="55" y="160" fill="#aaa">· SLIPPAGE: ZERO (0%)</text>
+    <text x="55" y="180" fill="#aaa">· STRENGTH EFF: 75% RATING</text>
+    <text x="55" y="200" fill="#aaa">· JAMMING: 100% JAM-PROOF</text>
+    <text x="55" y="220" fill="#aaa">· RELEASE: BREAK THE BACK</text>
+    <text x="55" y="240" fill="#4ade80">· LOAD CAPACITY: 500+ KG</text>
   </g>
 
   <!-- Ground Plane Shadow -->
   <ellipse cx="430" cy="400" rx="230" ry="18" fill="#050608" opacity="0.9"/>
 
-  <!-- Vertical Main Timber Mast (수직 지주목) -->
-  <g id="verticalTimber">
-    <polygon points="360,110 395,110 390,410 355,410" fill="url(#timberPost)" stroke="#1a120b" stroke-width="2"/>
-    <ellipse cx="377" cy="110" rx="17" ry="7" fill="#4d3826" stroke="#261b11" stroke-width="1.5"/>
+  <!-- Anchor Timber Post (Right Anchor) -->
+  <!-- 1. Rope segment passing BEHIND post (Drawn before post) -->
+  <path d="M 440 310 C 470 330 520 330 550 310" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 440 310 C 470 330 520 330 550 310" stroke="url(#mainRopeGold)" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- 2. Timber Post Standing Solid -->
+  <polygon points="480,220 520,220 515,410 475,410" fill="url(#anchorPost)" stroke="#1a120b" stroke-width="2"/>
+  <ellipse cx="500" cy="220" rx="20" ry="8" fill="#4d3826" stroke="#261b11" stroke-width="1.5"/>
+
+  <!-- 3. Rope segment passing IN FRONT OF post (Drawn after post) -->
+  <path d="M 550 310 C 530 270 470 270 440 280" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 550 310 C 530 270 470 270 440 280" stroke="url(#mainRopeGold)" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Main Bowline Knot Rigging Under Tension -->
+  <!-- Standing Line from top anchor -->
+  <path d="M 330 75 L 330 190" stroke="#050505" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 330 75 L 330 190" stroke="url(#mainRopeGold)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- The Nipper Loop Ring (토끼굴) -->
+  <path d="M 330 190 C 290 200 280 240 320 250 C 350 255 365 230 350 205 C 345 195 330 190 330 190" stroke="#050505" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M 330 190 C 290 200 280 240 320 250 C 350 255 365 230 350 205 C 345 195 330 190 330 190" stroke="url(#mainRopeGold)" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Collar Loop (뒤통수 칼라 링) Wrapped Around Standing Line -->
+  <path d="M 325 245 C 310 230 305 195 330 185 C 360 175 375 210 350 245" stroke="#050505" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M 325 245 C 310 230 305 195 330 185 C 360 175 375 210 350 245" stroke="url(#workingTailGreen)" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Working End Tail (Parallel beside eye loop line) -->
+  <path d="M 345 240 L 375 285" stroke="#050505" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 345 240 L 375 285" stroke="url(#workingTailGreen)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Loop Lead Going to Timber Post Anchor -->
+  <path d="M 320 250 C 310 280 370 300 440 310" stroke="#050505" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M 320 250 C 310 280 370 300 440 310" stroke="url(#mainRopeGold)" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M 440 280 C 400 270 365 260 345 240" stroke="#050505" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M 440 280 C 400 270 365 260 345 240" stroke="url(#mainRopeGold)" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Tension Direction Arrows -->
+  <g stroke="#E02424" stroke-width="2.5" fill="none">
+    <line x1="330" y1="130" x2="330" y2="95"/>
+    <polygon points="330,88 323,102 337,102" fill="#E02424"/>
+    <line x1="420" y1="285" x2="455" y2="295"/>
+    <polygon points="462,297 448,290 452,304" fill="#E02424"/>
   </g>
 
-  <!-- Horizontal Cross Timber Spar (수평 가로대) -->
-  <g id="horizontalTimber">
-    <polygon points="260,180 500,180 500,208 260,208" fill="url(#timberPost)" stroke="#1a120b" stroke-width="2"/>
-    <ellipse cx="260" cy="194" rx="7" ry="14" fill="#4d3826" stroke="#261b11" stroke-width="1.5"/>
-    <ellipse cx="500" cy="194" rx="7" ry="14" fill="#362518" stroke="#261b11" stroke-width="1.5"/>
+  <!-- Right Technical Panel: 1-Second Quick Release Mechanism -->
+  <g id="quickReleasePanel">
+    <rect x="565" y="90" width="195" height="180" fill="#141414" stroke="#E02424" stroke-width="1"/>
+    <rect x="565" y="90" width="195" height="24" fill="#241010"/>
+    <text x="575" y="106" fill="#E02424" font-weight="bold">1-SEC BREAK-THE-BACK</text>
+
+    <!-- Finger Action Diagram -->
+    <text x="575" y="132" fill="#ffffff" font-weight="bold">칼라(뒤통수) 꺾기 원리</text>
+    <text x="575" y="148" fill="#aaa">1. 매듭 뒤편 둥근 칼라 고리 확인</text>
+    <text x="575" y="164" fill="#aaa">2. 엄지로 칼라를 바깥쪽으로 젖힘</text>
+    <text x="575" y="180" fill="#aaa">3. 마찰 락 즉시 풀려 1초 만에 해체</text>
+
+    <!-- Mini Vector of the Release Action -->
+    <path d="M 610 230 C 630 205 670 205 690 230" stroke="#fbbf24" stroke-width="6" fill="none"/>
+    <line x1="650" y1="235" x2="650" y2="210" stroke="#4ade80" stroke-width="2.5"/>
+    <polygon points="650,202 643,215 657,215" fill="#4ade80"/>
+    <text x="660" y="222" fill="#4ade80" font-size="9">PUSH UP</text>
+    <text x="575" y="255" fill="#4ade80" font-weight="bold">JAM-PROOF // 칼날 불필요</text>
   </g>
 
-  <!-- Square Lashing Joint (사각 결속 십자 교차) -->
-  <g id="squareLashingJoint">
-    <!-- Wraps around cross timber -->
-    <rect x="350" y="176" width="55" height="36" rx="4" fill="#52391e" stroke="#2e1f0f" stroke-width="1.5"/>
-    <!-- Frapping tight turns between timbers -->
-    <g stroke="url(#knotRope)" stroke-width="4" stroke-linecap="round">
-      <line x1="355" y1="184" x2="400" y2="184"/>
-      <line x1="355" y1="194" x2="400" y2="194"/>
-      <line x1="355" y1="204" x2="400" y2="204"/>
-      <!-- Vertical diagonal locking turns -->
-      <line x1="365" y1="172" x2="365" y2="216"/>
-      <line x1="390" y1="172" x2="390" y2="216"/>
-    </g>
-  </g>
+  <!-- Technical Callouts -->
+  <g id="callouts" font-family="monospace" font-size="10" fill="#cccccc">
+    <!-- Callout 1: Standing Line -->
+    <line x1="330" y1="130" x2="380" y2="130" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="130" r="2" fill="#888"/>
+    <text x="390" y="126" fill="#ffffff" font-weight="bold" text-anchor="start">STANDING PART</text>
+    <text x="390" y="139" fill="#888888" text-anchor="start">하중을 받는 주 원줄</text>
 
-  <!-- Knot 1: Clove Hitch on Horizontal Spar (말뚝매듭) -->
-  <g id="cloveHitchPost">
-    <!-- Rope Coming from left -->
-    <path d="M 240 160 Q 275 180 300 185" fill="none" stroke="url(#knotRope)" stroke-width="5" stroke-linecap="round"/>
-    <!-- Over and Under Turns of Clove Hitch -->
-    <ellipse cx="305" cy="194" rx="10" ry="16" fill="none" stroke="url(#knotRope)" stroke-width="5"/>
-    <line x1="298" y1="182" x2="315" y2="204" stroke="url(#knotRope)" stroke-width="5.5" stroke-linecap="round"/>
-  </g>
+    <!-- Callout 2: Fixed Loop -->
+    <line x1="460" y1="310" x2="460" y2="350" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="460" cy="310" r="2" fill="#38bdf8"/>
+    <text x="460" y="365" fill="#38bdf8" font-weight="bold">FIXED EYE LOOP</text>
+    <text x="460" y="378" fill="#888888">하중에도 줄어들지 않는 고리</text>
 
-  <!-- Knot 2: Bowline Anchor Loop with 1-Sec Release Collar (보울라인 고리) -->
-  <g id="bowlineAssembly">
-    <!-- Anchor Ring / Grommet Eyelet -->
-    <circle cx="460" cy="235" r="14" fill="#222" stroke="#555" stroke-width="3"/>
-    <circle cx="460" cy="235" r="8" fill="#111"/>
-
-    <!-- Bowline Fixed Loop Through Eyelet -->
-    <path d="M 400 194 Q 440 210 455 228 M 465 242 Q 475 260 450 280 Q 425 295 400 270" fill="none" stroke="url(#knotRope)" stroke-width="5" stroke-linecap="round"/>
-    <!-- The Rabbit Hole Nipping Loop (보울라인 교차 루프) -->
-    <ellipse cx="420" cy="265" rx="12" ry="8" fill="none" stroke="url(#knotRope)" stroke-width="5"/>
-    <!-- Rabbit Body (Working End around Standing Part) -->
-    <path d="M 414 260 Q 420 275 428 262 Q 432 250 422 250" fill="none" stroke="url(#knotRope)" stroke-width="5" stroke-linecap="round"/>
-    <!-- Break-the-back collar pivot indication -->
-    <circle cx="420" cy="265" r="2.5" fill="#E02424"/>
-  </g>
-
-  <!-- Knot 3: Taut-line Hitch on Ground Peg Guyline (당김매듭) -->
-  <g id="tautlineAssembly">
-    <!-- Ground Stake Wooden Peg -->
-    <polygon points="510,340 525,335 550,395 535,400" fill="#4d3522" stroke="#261a10" stroke-width="1.8"/>
-
-    <!-- Guyline from Bowline extending to Ground Peg -->
-    <line x1="425" y1="275" x2="475" y2="330" stroke="url(#knotRope)" stroke-width="5"/>
-
-    <!-- Around Peg Loop -->
-    <path d="M 505 365 Q 525 385 538 375 Q 545 360 520 345" fill="none" stroke="url(#knotRope)" stroke-width="4.5"/>
-
-    <!-- Taut-line Hitch Sliding Friction Coil (2 Inside Wraps + 1 Outside Half-Hitch) -->
-    <g transform="translate(470, 320)">
-      <rect x="0" y="0" width="22" height="30" rx="3" fill="#664521" stroke="#3d2812" stroke-width="1"/>
-      <line x1="2" y1="8" x2="20" y2="8" stroke="url(#knotRope)" stroke-width="4"/>
-      <line x1="2" y1="16" x2="20" y2="16" stroke="url(#knotRope)" stroke-width="4"/>
-      <line x1="2" y1="24" x2="20" y2="24" stroke="url(#knotRope)" stroke-width="4"/>
-    </g>
-
-    <!-- Tension Adjust Double Arrow -->
-    <g stroke="#38bdf8" stroke-width="1.5" fill="none">
-      <path d="M 450 310 L 465 328 M 465 328 L 460 320 M 465 328 L 458 330"/>
-    </g>
-  </g>
-
-  <!-- Technical Callouts (Right Side) -->
-  <g id="calloutsRight" font-family="monospace" font-size="10" fill="#cccccc">
-    <!-- Callout 1: Square Lashing -->
-    <line x1="405" y1="190" x2="565" y2="190" stroke="#666" stroke-width="1"/>
-    <circle cx="405" cy="190" r="2" fill="#666"/>
-    <text x="570" y="187" fill="#ffffff" font-weight="bold">SQUARE LASHING (사각 결속)</text>
-    <text x="570" y="200" fill="#888888">십자 기둥을 흔들림 없이 고정하는 프래핑</text>
-
-    <!-- Callout 2: Bowline -->
-    <line x1="465" y1="245" x2="565" y2="245" stroke="#E02424" stroke-width="1"/>
-    <circle cx="465" cy="245" r="2" fill="#E02424"/>
-    <text x="570" y="242" fill="#E02424" font-weight="bold">BOWLINE (매듭의 왕)</text>
-    <text x="570" y="255" fill="#888888">하중을 받아도 줄어들지 않고 1초 만에 해체</text>
-
-    <!-- Callout 3: Taut-line Hitch -->
-    <line x1="495" y1="330" x2="565" y2="330" stroke="#38bdf8" stroke-width="1"/>
-    <circle cx="495" cy="330" r="2" fill="#38bdf8"/>
-    <text x="570" y="327" fill="#38bdf8" font-weight="bold">TAUT-LINE HITCH (당김매듭)</text>
-    <text x="570" y="340" fill="#888888">손으로 밀면 조절되고 당기면 고정되는 슬라이딩</text>
-
-    <!-- Callout 4: Clove Hitch -->
-    <line x1="315" y1="185" x2="565" y2="140" stroke="#666" stroke-width="1"/>
-    <circle cx="315" cy="185" r="2" fill="#666"/>
-    <text x="570" y="137" fill="#ffffff" font-weight="bold">CLOVE HITCH (말뚝매듭)</text>
-    <text x="570" y="150" fill="#888888">기둥에 로프를 3초 만에 즉시 결속하는 시작점</text>
+    <!-- Callout 3: Working Tail -->
+    <line x1="375" y1="280" x2="330" y2="330" stroke="#4ade80" stroke-width="1"/>
+    <circle cx="375" cy="280" r="2" fill="#4ade80"/>
+    <text x="320" y="335" fill="#4ade80" font-weight="bold" text-anchor="end">WORKING END TAIL</text>
+    <text x="320" y="348" fill="#888888" text-anchor="end">고리 안쪽으로 단단히 잠김</text>
   </g>
 </svg>

@@ -1,142 +1,134 @@
 {
   "protocolId": "PR-07",
   "category": "TOOLS",
-  "title": "3 Nós Essenciais de Sobrevivência Que Nunca Soltam e Desatam em 1 Segundo",
+  "title": "O 'Rei dos Nós': Guia Definitivo em 5 Passos do Nó Lais de Guia (Nunca Emperra e Desata em 1 Segundo)",
   "threatLevel": "HIGH",
-  "threatLevelText": "[AMARRAÇÃO E ABRIGO ESSENCIAL]",
-  "summary": "Usar o nó errado ao montar um abrigo faz a corda soltar com ventos fortes ou travar feito pedra quando molhada, obrigando a cortá-la. O Nó Lais de Guia (Bowline) suporta toneladas sem escorregar e desata num piscar de olhos, o Nó Esticador (Taut-line Hitch) permite ajustar a tensão das cordas sem desamarrar, e a Amarra Quadrada une dois troncos em cruz com firmeza inabalável sem nenhum prego.",
-  "timeRequired": "15 Minutos (Aprenda uma vez, use para a vida)",
-  "successRate": "98% (Com a fórmula da toca do coelho)",
-  "difficulty": "Fácil (Sequência motora simples)",
-  "outputPerHour": "3 Nós Mestres (Habilidade permanente)",
+  "threatLevelText": "[LINHA DA VIDA E AMARRAÇÃO VITAL]",
+  "summary": "O Lais de Guia (Bowline) é universalmente consagrado como o 'Rei dos Nós' para resgate, içamento de cargas pesadas e armação de abrigos. Sob extrema tensão, seu laço fixo jamais escorrega ou estrangula, eliminando qualquer perigo de asfixia ou corte da corda. Mesmo após suportar forças brutais e ficar ensopado de lama e chuva, nunca emperra: flexionando a alça do colar traseiro com o polegar, o atrito se desfaz e o nó se solta em um único segundo. Domine a clássica regra mnemônica ('O coelho e a árvore') passo a passo.",
+  "timeRequired": "5 Minutos (Domínio em 3 ciclos de treino)",
+  "successRate": "99% (Seguindo os passos da toca do coelho)",
+  "difficulty": "Fácil (Fórmula em 4 tempos: Coelho e Árvore)",
+  "outputPerHour": "Lais de Guia Mestre (Laço Fixo Único)",
   "materials": [
     {
       "id": "mat-01",
-      "name": "1 Pedaço de Corda Resistente de 2m+ (Paracord ou corda natural)",
-      "desc": "Corda de fibra natural ou paracord 550 de 6~8mm com boa aderência e tração."
+      "name": "1 Pedaço de Corda Resistente (2m+ paracord ou corda)",
+      "desc": "Corda de 6~8mm com boa aderência e alta resistência à tração para treinos de amarração e fixações pesadas em campo."
     },
     {
       "id": "mat-02",
-      "name": "2 Varas Retas de Madeira Dura (Grossura do antebraço, 40~50cm)",
-      "desc": "Galhos retos de carvalho ou pinho para testar nós e amarras sob carga real."
+      "name": "Tronco ou Poste de Treino (Espessura do antebraço)",
+      "desc": "Galho ou haste de 5~7cm para testar a resistência sob tração real."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Passo 1: Fixação Instantânea e Antiderrapante em Postes: Nó de Porco (Clove Hitch)",
-      "description": "Passe a corda ao redor do tronco cruzando sobre a linha principal para formar um X. Dê uma segunda volta e passe a ponta limpa por baixo do cruzamento em X. Puxe ambas as extremidades com força em direções opostas. O nó morde a casca da madeira por atrito, servindo de base para todas as amarras.",
-      "actionNote": "> Dica Prática: Mantenha ambas as voltas paralelas e rentes à madeira sem torções para que o travamento por atrito atue com 100% de firmeza.",
+      "title": "Passo 1: Formar a Toca do Coelho (Laço em Forma de '6') sobre a Linha Firme",
+      "description": "Segure o cabo principal (a linha firme/árvore) e faça um laço circular do tamanho da palma da mão. O segredo fundamental é que a ponta de trabalho (o coelho) deve cruzar POR CIMA da linha firme. Visto de cima, forma um número '6' perfeito. Se passar por baixo, a estrutura de trava falhará completamente; certifique-se de que cruze por cima.",
+      "actionNote": "> Ponto de Verificação: Verifique se o chicote cruza por cima da linha firme formando um '6'. Este laço servirá como garganta distribuidora de força.",
       "svgFileName": "pr07-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // NÓ DE PORCO DIAGRAMA DE FIXAÇÃO",
-        "① Primeira volta no poste (Cruzamento em X)",
-        "Passa a corda formando o X inicial",
-        "+",
-        "② Segunda volta e passagem sob o cruzamento",
-        "Passa a ponta por baixo da ponte X",
-        "+",
-        "③ Tensão horizontal bilateral (Travado)",
-        "Puxa os dois lados para travar por atrito",
-        "④ Linha de alinhamento paralelo",
-        "Garante que as cordas fiquem assentadas",
-        "⑤ Direção de tração da carga"
+        "FIG. 01 // LAIS DE GUIA PASSO 1: TOCA DO COELHO EM '6'",
+        "STANDING PART",
+        "Linha Firme (Tronco da Árvore)",
+        "RABBIT HOLE (LAÇO)",
+        "Toca do coelho em formato de 6",
+        "WORKING END (COELHO)",
+        "Chicote cruza POR CIMA da linha firme",
+        "[FOCO PASSO 1] Apoiar chicote sobre linha formando laço '6'",
+        "O chicote DEVE ficar por cima para garantir o travamento."
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Passo 2: O Rei dos Nós: Lais de Guia (Bowline) pela Fórmula do Coelho",
-      "description": "Faça uma pequena laçada na corda principal (a toca do coelho). Suba a ponta da corda (o coelho) pelo buraco vindo de baixo. Passe-a por trás da corda principal (a árvore) e mergulhe-a de volta para dentro da toca. Segure o coelho e o lado direito da laçada juntos e puxe a corda principal com firmeza.",
-      "actionNote": "> Fórmula do Coelho: [Sai da toca ➔ Dá a volta na árvore ➔ Entra na toca ➔ Puxa forte]. Decore esse ritmo e fará de olhos fechados em 5 segundos.",
+      "title": "Passo 2: Fazer o Coelho (Chicote) Sair de Baixo para Cima pela Toca",
+      "description": "Segure o chicote (o coelho) e passe-o de baixo para cima através da toca que acabou de formar. Puxe pelo menos 15~20cm de folga (a cabeça do coelho) para ter comprimento suficiente ao contornar a árvore no passo seguinte. Nunca empurre de cima para baixo; isso criaria um nó corrediço perigoso que estrangula sob carga.",
+      "actionNote": "> Sentido Correto: O coelho deve emergir de [Baixo ➔ Cima], saindo do fundo da toca para a superfície.",
       "svgFileName": "pr07-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // LAIS DE GUIA TRAJETÓRIA DO COELHO",
-        "① Laçada na linha principal (Toca do coelho)",
-        "Pequena volta circular na corda guia",
-        "② Ponta sobe pela laçada (Sai da toca)",
-        "O coelho sai para cima pelo buraco",
-        "③ Volta por trás do tronco (Rodeia a árvore)",
-        "Passa no sentido anti-horário atrás da corda",
-        "④ Reentrada para baixo no buraco (Volta à toca)",
-        "Mergulha direto no buraco original",
-        "⑤ Laço de segurança inamovível pronto",
-        "Mantém o diâmetro fixo sob toneladas de tração"
+        "FIG. 02 // LAIS DE GUIA PASSO 2: SAÍDA DA TOCA",
+        "EMERGE FROM HOLE",
+        "Emerge do fundo para cima",
+        "Cabeça do coelho 15cm",
+        "Puxar sobra suficiente de cabo",
+        "MAIN EYE LOOP",
+        "Laço principal de sustentação",
+        "[FOCO PASSO 2] Puxar o coelho de baixo para cima pela toca",
+        "Passar de cima para baixo cria um nó corrediço perigoso; evite estritamente."
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Passo 3: Desate Instantâneo em 1 Segundo: Quebrando as Costas do Lais de Guia",
-      "description": "Nós comuns travam feito pedra quando molhados sob peso extremo. Gire o Lais de Guia e localize a volta em U (o colar) que abraça a corda principal. Apoie o polegar com firmeza sobre esse colar e empurre-o 90 graus para trás (quebrar as costas). O atrito interno zera imediatamente e a corda desliza solta sem danificar as fibras.",
-      "actionNote": "> Segredo de Desate: Não use as unhas no nó. Apenas empurre o colar traseiro para trás com o polegar; o nó se solta sozinho no mesmo instante.",
+      "title": "Passo 3: Passar o Coelho por Trás do Tronco da Árvore (Linha Firme)",
+      "description": "Conduza o chicote do coelho em volta da parte DE TRÁS da linha firme vertical no sentido anti-horário. Cruzar pela frente arruína a geometria e impede a trava por fricção. Contornar as costas da árvore cria a alça do colar (Collar Loop) que confere ao nó a capacidade de se soltar em 1 segundo sob qualquer peso.",
+      "actionNote": "> Regra da Passagem Traseira: O coelho deve passar obrigatoriamente por trás da linha firme para criar o colar de liberação rápida.",
       "svgFileName": "pr07-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // QUEBRANDO AS COSTAS DESATE RÁPIDO",
-        "① Estado após suportar tração extrema",
-        "Estrutura firme após aguentar grande carga",
-        "② Volta em U do colar (Orelhas do coelho)",
-        "Alavanca estrutural que abraça o tronco",
-        "③ Pressão do polegar a 90 graus para trás",
-        "Empurre o colar para trás com o polegar",
-        "④ Zona de colapso instantâneo de atrito",
-        "Tensão interna neutralizada na hora",
-        "⑤ Separação suave da corda em 1 segundo",
-        "Sem faca; corda 100% pronta para reuso"
+        "FIG. 03 // LAIS DE GUIA PASSO 3: VOLTA POR TRÁS DA ÁRVORE",
+        "AROUND THE TREE",
+        "Passa por TRÁS da linha firme",
+        "TREE (TRONCO / LINHA FIRME)",
+        "Eixo central de rotação do coelho",
+        "RE-ENTRY READY",
+        "Pronto para retornar à toca",
+        "[FOCO PASSO 3] O coelho contorna as costas da árvore firme",
+        "Passar por trás cria o colar indispensável para a liberação instantânea."
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Passo 4: Regulador Deslizante com Trava Automática: Nó Esticador (Taut-line Hitch)",
-      "description": "Passe a corda pela estaca e volte em direção à barraca. Dê duas voltas firmes por dentro do laço na direção da estaca, abraçando a linha principal. Em seguida, salte para o lado de fora e faça meia-volta de travamento. Empurre o nó com a mão para esticar ou afrouxar a corda; ao soltar, o vento trava as espirais automaticamente.",
-      "actionNote": "> Regra de Enrolamento: [Duas voltas por dentro ➔ Uma volta por fora para travar]. As duas internas freiam por atrito e a externa trava a cunha.",
+      "title": "Passo 4: Mergulhar o Coelho de Volta na Toca de Cima para Baixo",
+      "description": "Após contornar a árvore, empurre a ponta do coelho de volta para dentro da mesma toca de onde ele saiu. A direção desta vez é estritamente de cima para baixo (descendente). Ao atravessar o laço, os dois cabos dentro da toca devem repousar perfeitamente paralelos, equilibrando a tensão.",
+      "actionNote": "> Alinhamento Paralelo: Certifique-se de que os dois cabos dentro da toca fiquem paralelos, sem torções ou cruzamentos.",
       "svgFileName": "pr07-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // NÓ ESTICADOR AJUSTE DE TENSÃO",
-        "① Linha de retorno a partir da estaca",
-        "Corda que contorna a estaca de fixação",
-        "② Duas voltas internas de atrito (Freio)",
-        "Duas espirais que absorvem a tensão",
-        "③ Meia-volta externa de trava (Bloqueio)",
-        "Volta final que impede o deslizamento",
-        "④ Eixo de ajuste manual deslizante",
-        "Deslize com a mão para esticar ou soltar",
-        "⑤ Bloqueio automático por carga de vento",
-        "O vento força as espirais a morderem a corda"
+        "FIG. 04 // LAIS DE GUIA PASSO 4: RETORNO À TOCA",
+        "BACK INTO HOLE",
+        "Entra de cima para baixo na toca",
+        "PARALLEL STRANDS",
+        "Dois cabos alinhados em paralelo",
+        "COLLAR LOOP",
+        "Collar traseiro abraçando a árvore",
+        "[FOCO PASSO 4] O coelho mergulha de volta para dentro da toca",
+        "Inserir de cima para baixo; cabos internos devem ficar paralelos."
       ]
     },
     {
       "stepNumber": "05",
-      "title": "Passo 5: Estrutura Cruzada de Madeira sem Pregos: Amarra Quadrada (Square Lashing)",
-      "description": "Comece com o Nó de Porco no poste vertical. Cruze a madeira horizontal a 90 graus e enrole a corda 3~4 vezes em padrão quadrado alternado: sobre a barra, atrás do poste, sobre a barra, atrás do poste. Depois realize o aperto decisivo (Frapping): enrole 2~3 vezes com todo o peso do corpo entre os dois troncos para esmagar qualquer folga. Finalize com outro Nó de Porco.",
-      "actionNote": "> O Aperto é o Segredo: As voltas de aperto (frapping) entre os troncos garantem 90% da rigidez. Aperte com o peso do corpo até a corda morder a casca da madeira.",
+      "title": "Passo 5: Ajustar a Trava em 4 Direções e Dominar a Liberação em 1 Segundo",
+      "description": "Segure o chicote e a perna direita do laço com uma mão. Com a outra mão, segure firmemente a linha firme superior e puxe em direções opostas com vigor. Os laços internos se comprimem travando o nó de maneira inabalável. O laço formado nunca diminui de tamanho. Para desatar, empurre a alça em U do colar traseiro com o polegar ('Quebrar a espinha'): o atrito colapsa imediatamente e o nó se desfaz em 1 segundo sem faca.",
+      "actionNote": "> Segredo da Liberação em 1s: Nunca puxe com as unhas! Dobre o colar traseiro para fora com o polegar e o nó se soltará suavemente.",
       "svgFileName": "pr07-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // AMARRA QUADRADA E APERTO ESTRUTURAL",
-        "① Início com Nó de Porco no poste vertical",
-        "Ponto de fixação sólido e imóvel",
-        "② 3~4 voltas perimetrais quadradas",
-        "Abraçando os troncos cruzados em 90 graus",
-        "③ 3 voltas de aperto sob pressão máxima",
-        "Apertando o espaço entre os troncos",
-        "④ Barra transversal de suporte",
-        "Galho horizontal portador de carga",
-        "⑤ Arremate final com Nó de Porco",
-        "Junção estrutural permanente sem pregos"
+        "FIG. 05 // LAIS DE GUIA PASSO 5: TRAVA E LIBERAÇÃO EM 1S",
+        "1-SEC QUICK RELEASE",
+        "Técnica de quebrar o colar traseiro",
+        "Empurrar o colar com o polegar para soltar",
+        "PULL STANDING",
+        "Puxar a linha firme com força para cima",
+        "GRIP TOGETHER",
+        "Segurar chicote e laço com uma mão",
+        "LOCKED FIXED LOOP",
+        "Tamanho do laço inalterável sob carga",
+        "[FOCO PASSO 5] Puxar lados opostos para travar em 4 vias",
+        "Para soltar, empurre o colar traseiro com o polegar; desata em 1s sem corte."
       ]
     }
   ],
   "fatalMistake": {
-    "title": "Erro Fatal: Deixar a Ponta da Corda para Fora do Laço (Lais de Guia Incompleto)",
-    "description": "Ao finalizar o Lais de Guia, a ponta da corda (o coelho) deve ficar obrigatoriamente dentro da laçada principal. Se a ponta sobrar para o lado de fora, cria-se um nó frágil. No mato, galhos ou mochilas podem enroscar nessa ponta exposta e desfazer o nó sob tração num segundo. Verifique sempre com os dedos se a ponta está protegida dentro do laço.",
-    "consequence": "Consequência: Abertura acidental do nó sob atrito externo, desabando o abrigo ou causando quedas"
+    "title": "Erro Fatal: Deixar a Ponta da Corda do Lado de Fora do Laço (Variação Cowboy)",
+    "description": "No Lais de Guia padrão bem executado, a ponta final (a cauda do coelho) DEBE ficar do lado de DENTRO do laço principal. Se a ponta ficar exposta para fora, cria-se uma variação defeituosa (Cowboy Bowline). Ao arrastar troncos ou montar abrigos na mata, a ponta externa se prende facilmente em galhos ou pedras, desatando o nó instantaneamente sob tração.",
+    "consequence": "Consequence: Abertura involuntária por atrito externo, colapso de abrigos ou queda de cargas suspensas"
   },
   "shortsScript": {
-    "hook": "Domine estes 3 nós de sobrevivência e você nunca mais terá problemas com cordas frouxas.",
-    "body": "Primeiro: O Lais de Guia, o rei dos nós. Cavou a toca, o coelho sai, dá a volta na árvore e entra de novo. Aguenta um caminhão sem soltar, mas desata em 1 segundo empurrando o colar traseiro. Segundo: O Nó Esticador. Duas voltas por dentro, uma por fora. Deslize para esticar a barraca; o vento trava na hora. Terceiro: A Amarra Quadrada. Enrole em cruz 3 vezes e aperte com todo o seu peso entre as madeiras. Você faz camas e escadas firmes sem nenhum prego. Nunca deixe a ponta do Lais de Guia para fora: um galho vai desamarrá-lo na hora.",
-    "outro": "Baixe os diagramas vetoriais para visualização offline permanente no link do perfil."
+    "hook": "Aguenta o puxão de um caminhão sem escorregar e desata em um segundo com o polegar: o Lais de Guia.",
+    "body": "Se você só puder aprender um nó de sobrevivência, aprenda este. Memorize os 4 passos do coelho: 1, faça uma toca em forma de 6. 2, o coelho sai por baixo da toca. 3, dá uma volta por trás da árvore firme. 4, mergulha de volta na toca de cima para baixo. Puxe os dois lados e o nó trava como pedra. O laço nunca estrangula. Para soltar, dobre o colar traseiro com o polegar e ele desliza solto em 1 segundo sem navalha. Mantenha a ponta dentro do laço para não enroscar em galhos.",
+    "outro": "Baixe os manuais técnicos vetoriais para uso offline pelo link na bio."
   },
   "outcome": {
     "svgFileName": "pr07-outcome.svg",
-    "title": "Montagem de Campo com os 3 Nós de Sobrevivência Concluída",
-    "description": "Uma amarração prática unindo o fiel para ancoragem rápida, o laço de guia que nunca corre e solta em 1 segundo, o nó esticador ajustável e a amarração quadrada."
+    "title": "Lais de Guia (Rei dos Nós) - Prancha Técnica Mestre",
+    "description": "Especificação de engenharia do Lais de Guia padrão demonstrando o laço fixo indeformável e o mecanismo de desate em 1 segundo (Break the Back)."
   }
 }

@@ -1,47 +1,71 @@
 <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="400" fill="#0d0d0d" />
-              <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 02 // BOWLINE (보울라인) 토끼굴 경로 단면도</text>
-              <line x1="20" y1="38" x2="380" y2="38" stroke="#1f1f1f" stroke-width="1" />
+  <defs>
+    <linearGradient id="bg02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </linearGradient>
+    <linearGradient id="standingRope2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2883e"/>
+      <stop offset="50%" stop-color="#f5b867"/>
+      <stop offset="100%" stop-color="#946123"/>
+    </linearGradient>
+    <linearGradient id="workingRope2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="50%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
 
-              <!-- Standing Line (Main Trunk / Standing Part) - Vertical (White) -->
-              <path d="M 180 50 L 180 150" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
-              <text x="195" y="80" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="10">① 기둥줄 토끼굴 고리 (Loop 형성)</text>
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bg02)"/>
+  <rect x="10" y="10" width="380" height="380" fill="none" stroke="#222" stroke-width="1"/>
 
-              <!-- Rabbit Hole (Small Eye Loop on standing line) -->
-              <!-- The Loop turns to form the '6' shape -->
-              <path d="M 180 150 C 180 200 130 190 130 160 C 130 130 180 140 180 190" stroke="#FFFFFF" stroke-width="6" fill="none" />
-              
-              <!-- Callout for Rabbit Hole -->
-              <circle cx="155" cy="165" r="18" fill="none" stroke="#666666" stroke-width="1" stroke-dasharray="3 3" />
-              <text x="45" y="170" fill="#aaaaaa" font-family="'JetBrains Mono', monospace" font-size="10">기둥줄 위에 작은 원형 고리 배치</text>
-              <line x1="125" y1="168" x2="137" y2="166" stroke="#555555" stroke-width="1" />
+  <!-- Blueprint Header -->
+  <text x="20" y="30" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 02 // BOWLINE STEP 2: 토끼굴 상향 탈출</text>
+  <line x1="20" y1="38" x2="380" y2="38" stroke="#262626" stroke-width="1"/>
 
-              <!-- Fixed Target Loop (The bottom big invariant loop) -->
-              <path d="M 180 190 C 180 290 140 350 200 350 C 260 350 240 280 220 220" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" />
-              <text x="169.8" y="375" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">② 토끼(끝줄) 상향 통과선 (Through)</text>
+  <!-- Standing Part of Rope (원줄) -->
+  <path d="M 200 45 L 200 130" stroke="#050505" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 200 45 L 200 130" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round"/>
 
-              <!-- Working Rope Path (Fluorescent #E0FE10) -->
-              <!-- Step A: Comes out of the hole from bottom-up -->
-              <path d="M 220 220 L 155 165" stroke="#E0FE10" stroke-width="5" stroke-linecap="round" />
-              <polygon points="160,160 150,175 168,172" fill="#E0FE10" />
-              <text x="145" y="215" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="9">굴 밑에서 위로 솟아오름</text>
+  <!-- Lower Main Loop Hanging Down (큰 메인 고리 형성 부) -->
+  <path d="M 160 145 C 130 160 110 220 130 280 C 150 320 220 320 250 280 C 270 250 260 210 240 170" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 160 145 C 130 160 110 220 130 280 C 150 320 220 320 250 280 C 270 250 260 210 240 170" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
 
-              <!-- Step B: Goes behind the standing line -->
-              <path d="M 155 165 C 155 120 230 120 220 140" stroke="#E0FE10" stroke-width="5" fill="none" stroke-linecap="round" />
-              <text x="233.5" y="125" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="9">③ 큰 줄기(나무) 배면 선회 (Around)</text>
+  <!-- The 6-Loop (토끼굴) Ring Structure -->
+  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 200 130 C 130 140 130 220 200 230 C 240 235 260 210 240 170" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
 
-              <!-- Step C: Re-enters back down into the hole! -->
-              <path d="M 220 140 L 170 175" stroke="#E0FE10" stroke-width="5" stroke-linecap="round" />
-              
-              <!-- Tail tucked INSIDE the loop -->
-              <path d="M 170 175 L 185 240" stroke="#E0FE10" stroke-width="5" stroke-linecap="round" />
-              <polygon points="187,248 180,234 194,236" fill="#E0FE10" />
-              <text x="195" y="245" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">기둥줄 뒤편을 시계 반대 방향 회전</text>
+  <!-- Working End (녹색 토끼 줄) Penetrating UPWARDS from underneath the hole -->
+  <!-- Layer under loop entering back-to-front -->
+  <path d="M 250 280 C 240 240 200 220 190 200 L 190 120" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 250 280 C 240 240 200 220 190 200 L 190 120" stroke="url(#workingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
 
-              <!-- Legend Box -->
-              <rect x="25" y="275" width="130" height="52" fill="#141414" stroke="#262626" />
-              <text x="35" y="293" fill="#E0FE10" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold">④ 토끼굴 재진입선 (Back Down)</text>
-              <text x="35" y="308" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="8">원래 굴 속으로 아래쪽 진입</text>
-              <text x="35" y="320" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="8">⑤ 완성된 안전 고리 루프</text>
-              <text x="313.3" y="260" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">체중이 실려도 크기가 줄지 않음</text>
+  <!-- Front Crossing Over Ring Edge -->
+  <path d="M 200 130 C 175 135 160 145 160 145" stroke="#050505" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M 200 130 C 175 135 160 145 160 145" stroke="url(#standingRope2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Upward Motion Vector Arrow (수직 상향 화살표) -->
+  <line x1="190" y1="180" x2="190" y2="105" stroke="#4ade80" stroke-width="2.5"/>
+  <polygon points="190,95 183,110 197,110" fill="#4ade80"/>
+
+  <!-- Callouts -->
+  <!-- 1. Upward Exit Label (Top Left) -->
+  <rect x="25" y="70" width="145" height="42" fill="#181818" stroke="#333" stroke-width="1"/>
+  <text x="35" y="87" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">EMERGE FROM HOLE</text>
+  <text x="35" y="101" fill="#e0e0e0" font-family="'JetBrains Mono', monospace" font-size="9">굴 아래에서 위로 탈출</text>
+
+  <!-- 2. Rabbit Head Working Tip (Top Center) -->
+  <circle cx="190" cy="120" r="10" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="210" y="115" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">토끼 머리 15cm</text>
+  <text x="210" y="128" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">충분한 길이 인출</text>
+
+  <!-- 3. Lower Loop Description (Bottom Right) -->
+  <text x="260" y="270" fill="#f5b867" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">MAIN EYE LOOP</text>
+  <text x="260" y="284" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">최종 하중을 받을 큰 고리</text>
+
+  <!-- Bottom Instruction Box -->
+  <rect x="20" y="335" width="360" height="45" fill="#141414" stroke="#262626" stroke-width="1"/>
+  <text x="30" y="352" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[2단계 핵심] 굴 밑바닥에서 위쪽으로 토끼를 쑥 뽑아 올림</text>
+  <text x="30" y="368" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">위에서 아래로 찌르면 매듭이 풀리는 올가미가 되므로 절대 주의하십시오.</text>
 </svg>

@@ -1,142 +1,134 @@
 {
   "protocolId": "PR-07",
   "category": "TOOLS",
-  "title": "3 Essential Survival Knots That Never Slip Under Heavy Load and Untie in One Second",
+  "title": "The 'King of Knots': Complete 5-Step Guide to the Bowline Knot (Jam-Proof & Unties in 1 Second)",
   "threatLevel": "HIGH",
-  "threatLevelText": "[ESSENTIAL RIGGING & SHELTER]",
-  "summary": "Using the wrong knot when pitching a shelter or securing gear either slips loose in gale-force winds or jams into an unbreakable rock when wet, forcing you to ruin your cordage by cutting it. The Bowline holds tons of tension without slipping and unties instantly, the Taut-line Hitch lets you adjust guyline tension effortlessly, and the Square Lashing binds two timber poles into a rock-solid cross frame without nails or hardware.",
-  "timeRequired": "15 Minutes (Practice once, master for life)",
-  "successRate": "98% (Follow the rabbit hole formula)",
-  "difficulty": "Easy (Motor memory sequence)",
-  "outputPerHour": "3 Master Knots (Permanent survival asset)",
+  "threatLevelText": "[LIFELINE & RIGGING ESSENTIAL]",
+  "summary": "The Bowline is globally recognized as the undisputed 'King of Knots' for wilderness hauling, heavy load rigging, and emergency rescue. Under severe tension, its fixed loop never slips or constricts, eliminating any danger of choking or cord damage. Even after taking tremendous strain and being soaked in mud and rain, it never jams: flexing its rear collar loop pops the friction lock and unties the entire knot in a single second. Master the timeless 4-beat mnemonic ('The Rabbit and The Tree') and full-locking sequence step by step.",
+  "timeRequired": "5 Minutes (Master in 3 practice cycles)",
+  "successRate": "99% (Follow rabbit hole steps)",
+  "difficulty": "Easy (4-beat Rabbit & Tree formula)",
+  "outputPerHour": "Mastered Bowline Knot (Single Fixed Loop)",
   "materials": [
     {
       "id": "mat-01",
-      "name": "1 Length of Durable Cordage (2m+ paracord or natural bush rope)",
-      "desc": "Choose 6~8mm high-friction natural vine/bark cordage or 550 paracord with strong tensile strength."
+      "name": "1 Length of Durable Cordage (2m+ paracord or rope)",
+      "desc": "Prepare 6~8mm high-friction cordage or 550 paracord with dependable tensile strength for knot practice and heavy field rigging."
     },
     {
       "id": "mat-02",
-      "name": "2 Straight Hardwood Timber Sticks (forearm thickness, 40~50cm)",
-      "desc": "Sturdy oak or pine branch poles to practice hitches and cross-lashing under real load."
+      "name": "Practice Post or Handle (Forearm-thick branch)",
+      "desc": "A 5~7cm diameter hardwood branch or anchor handle to test the knot under real tensile load."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Step 1: Instant Non-Slip Post Anchor: The Clove Hitch",
-      "description": "Pass the working end around the pole to create an X-crossing over the standing line. Wrap the pole a second time and tuck the working end cleanly beneath the X-intersection. Pull both ends in opposite directions horizontally. The hitch binds onto the wood bark with extreme frictional grip, serving as the universal anchor for all timber lashings.",
-      "actionNote": "> Pro Tip: Keep both wraps parallel and snug against the wood. Avoid twists in the cord so the pressure lock grips instantly under heavy cross-tension.",
+      "title": "Step 1: Form the 'Rabbit Hole' Loop (Number 6 Shape) Over the Standing Line",
+      "description": "Hold the long standing line (the tree) and form a small palm-sized circular loop. The most critical requirement here is that the working end (the rabbit) must cross OVER the standing line. Viewed from above, this forms a clear number '6' geometry. If the working end passes underneath the standing line, the structural lock will fail completely; always ensure it crosses over the top surface.",
+      "actionNote": "> Checkpoint: Verify the working end rests on top of the standing line to form a clean number 6 shape. This loop serves as the anchor throat distributing tensile force.",
       "svgFileName": "pr07-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // CLOVE HITCH BARK LOCK DIAGRAM",
-        "① First wrap around post (Cross line)",
-        "Pass cord over timber to form initial X",
-        "+",
-        "② Second wrap and tuck under crossing",
-        "Thread working end through under the X bridge",
-        "+",
-        "③ Dual horizontal tension pull (Locked)",
-        "Pull opposite sides to cinch friction clamp",
-        "④ Parallel alignment check line",
-        "Ensure ropes lie flush without crossing",
-        "⑤ Direction of bilateral load pull"
+        "FIG. 01 // BOWLINE STEP 1: FORMING THE RABBIT HOLE",
+        "STANDING PART",
+        "Standing Line (Main Tree Trunk)",
+        "RABBIT HOLE (LOOP)",
+        "Number 6 Shaped Throat Loop",
+        "WORKING END (RABBIT)",
+        "Working end crosses OVER standing line",
+        "[STEP 1 KEY] Lay working end over standing line to form '6' loop",
+        "Working end MUST stay on top of the standing line for structural lock."
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Step 2: The King of Knots: Bowline Fixed Loop via the Rabbit Hole Formula",
-      "description": "Form a small counter-clockwise eye (the rabbit hole) in the standing line. Bring the working end (the rabbit) up through the hole from below. Lead it around the back of the standing line (the tree) from right to left, then dive it straight back down through the original hole. Grasp the rabbit end and the right loop strand together and pull the standing line firmly to lock an unyielding loop that never slips.",
-      "actionNote": "> Rabbit Mnemonic: [Up through the hole ➔ Around behind the tree ➔ Back down the hole ➔ Cinch tight]. Master this 4-beat rhythm to tie it blindfolded in 5 seconds.",
+      "title": "Step 2: Emerge the Rabbit (Working End) Upwards Through the Rabbit Hole",
+      "description": "Take the working end (the rabbit) and feed it through the bottom of the rabbit hole, pulling it upwards towards yourself. Pull out at least 15~20cm of slack (the rabbit's head) so you have ample length to circle the tree in the subsequent step without running out of cord. Never push from the top down; doing so creates an unstable slip knot that chokes and fails under tension.",
+      "actionNote": "> Direction Check: The rabbit must pop out from UNDER to OVER [Bottom ➔ Up], like an animal emerging from a subterranean burrow.",
       "svgFileName": "pr07-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // BOWLINE RABBIT HOLE TRAJECTORY",
-        "① Form eye loop in standing line (Rabbit Hole)",
-        "Small circular turn placed on standing part",
-        "② Working end ascends through hole (Up Through)",
-        "Rabbit emerges upwards from below the eye",
-        "③ Turn around behind standing line (Around Tree)",
-        "Counter-clockwise pass behind main trunk",
-        "④ Re-enter downwards into the hole (Back Down)",
-        "Dive straight back into original eye loop",
-        "⑤ Finished unyielding fixed loop",
-        "Maintains fixed diameter under severe tons of load"
+        "FIG. 02 // BOWLINE STEP 2: EMERGING UPWARD FROM HOLE",
+        "EMERGE FROM HOLE",
+        "Escape upward from bottom of hole",
+        "Rabbit Head 15cm",
+        "Extract sufficient tail slack",
+        "MAIN EYE LOOP",
+        "Primary load-bearing safety loop",
+        "[STEP 2 KEY] Pull rabbit upward from bottom of rabbit hole",
+        "Threading top-to-bottom turns it into an accidental slip knot; avoid strictly."
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Step 3: Instant 1-Second Release: Breaking the Back of a Jammed Bowline",
-      "description": "Standard knots jam permanently when wet or subjected to heavy human weight. Turn the bowline to its reverse side to locate the prominent U-shaped bight (the collar loop) hugging the standing line. Place your thumb firmly against this collar and push it backward 90 degrees (break the back). This collapses the internal friction angle, allowing the cord to glide open effortlessly with zero tool damage.",
-      "actionNote": "> Release Secret: Never pick at the knot body with fingernails. Simply push the rear collar backward with your thumb; the entire knot loosens itself instantly.",
+      "title": "Step 3: Route the Rabbit Around the Back of the Standing Tree (Main Line)",
+      "description": "Lead the protruding rabbit tail around the BACK of the vertical standing line (the tree trunk) in a counter-clockwise sweep. Crossing in front of the tree will ruin the geometry and prevent the friction lock from engaging. Wrapping neatly behind the standing tree creates the signature 'Collar Loop' that grants the Bowline its legendary ability to untie in one second under severe load.",
+      "actionNote": "> Rear Wrap Rule: The rabbit must pass behind the standing line. Routing across the front prevents friction locking and breaks knot integrity.",
       "svgFileName": "pr07-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // BREAKING THE BACK QUICK RELEASE",
-        "① Knot under heavy tension release state",
-        "Rock-solid structure after bearing heavy load",
-        "② U-shaped collar loop (Rabbit Ears)",
-        "Structural lever hugging the standing trunk",
-        "③ 90-degree backward thumb leverage (Push)",
-        "Press collar back with thumb tip",
-        "④ Instant zero-friction collapse zone",
-        "Internal gripping tension neutralized",
-        "⑤ 1-second effortless cord separation",
-        "Zero blade damage; cord ready for 100% reuse"
+        "FIG. 03 // BOWLINE STEP 3: ROUTING BEHIND THE TREE",
+        "AROUND THE TREE",
+        "Wrap behind the standing trunk",
+        "TREE (STANDING LINE)",
+        "Central axis for rabbit routing",
+        "RE-ENTRY READY",
+        "Prepared for re-entering hole",
+        "[STEP 3 KEY] Rabbit circles around the back of the standing tree",
+        "Passing strictly behind creates the critical collar loop for instant release."
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Step 4: Self-Locking Tension Slider: The Taut-Line Hitch",
-      "description": "Loop your cord around an anchor stake and lead the working end back toward your shelter. Make two snug coils inside the loop toward the stake, binding firmly around the standing line. Next, jump past the initial coils and tie a single half hitch on the outside. Push the knot bundle by hand to slide and adjust guyline tension; release it and wind gusts cause the coils to wedge shut automatically.",
-      "actionNote": "> Winding Sequence: [Two wraps inside ➔ One wrap outside to lock]. The internal dual wraps create the friction brake, while the outer wrap secures the wedge lock.",
+      "title": "Step 4: Dive the Rabbit Back Down Into the Original Rabbit Hole",
+      "description": "Guide the working end (the rabbit) after circling the tree trunk and push it back down into the exact same rabbit hole it originally emerged from. The direction this time is strictly top-to-bottom (Downwards). As the tail passes through the throat, it lies parallel to the strand that emerged in Step 2. This parallel alignment balances internal clamping forces across the knot.",
+      "actionNote": "> Parallel Strand Check: Ensure both strands inside the rabbit hole lie neatly parallel without crossing or twisting for maximum friction efficiency.",
       "svgFileName": "pr07-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // TAUT-LINE HITCH TENSION SLIDER",
-        "① Anchor peg U-turn line",
-        "Rope wraps around ground stake",
-        "② Dual internal friction coils (Brake)",
-        "Two wraps absorbing load tension",
-        "③ Single outer half hitch (Wedge Lock)",
-        "Final half hitch preventing slippage",
-        "④ Push and slide adjustment axis",
-        "Slide freely by hand to tighten or slacken",
-        "⑤ Automatic load wedge lock",
-        "Wind load forces coils to grip standing line"
+        "FIG. 04 // BOWLINE STEP 4: RE-ENTERING RABBIT HOLE",
+        "BACK INTO HOLE",
+        "Re-enter hole from top to bottom",
+        "PARALLEL STRANDS",
+        "Two strands neatly aligned",
+        "COLLAR LOOP",
+        "Rear collar loop embracing tree",
+        "[STEP 4 KEY] Rabbit dives back down into the rabbit hole",
+        "Push tail down through original hole; strands inside must align parallel."
       ]
     },
     {
       "stepNumber": "05",
-      "title": "Step 5: Zero-Nail Timber Cross Frame: The Square Lashing",
-      "description": "Anchor your cord to the vertical pole with a Clove Hitch. Lay the crossbar perpendicular and wind the cord 3~4 times around both poles in an alternating square pattern: over the horizontal bar, behind the vertical, over the horizontal, behind the vertical. Next, execute the vital 'Frapping': wrap the cord 2~3 times between the two poles, squeezing the wraps with full body weight. Finish with a Clove Hitch on the crossbar for an immovable joint.",
-      "actionNote": "> Frapping is Key: The frapping turns between the timber poles generate 90% of structural rigidity. Squeeze so hard the rope bites into the wood bark to eliminate all sway.",
+      "title": "Step 5: Lock the Knot Under 4-Way Tension and Master the 1-Second Release",
+      "description": "Grip the working tail and the right leg of the eye loop together in one hand. With your other hand, firmly grasp the upper standing part and pull in opposite directions with authoritative force. The internal loops cinch down firmly upon each other, creating an immovable lock. The completed loop will not shrink by even a millimeter under heavy strain. When ready to untie, push the rear U-shaped collar loop backwards with your thumb ('Break the Back'); the internal friction collapses instantly, allowing the knot to fall apart in one second without knife cuts.",
+      "actionNote": "> 1-Second Release Secret: Never pick at the knot with fingernails. Simply identify the U-shaped collar loop behind the knot and snap it backward with your thumb to release instantly.",
       "svgFileName": "pr07-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // SQUARE LASHING & FRAPPING RIGIDITY",
-        "① Initial Clove Hitch anchor on vertical post",
-        "Rock-solid base anchor point",
-        "② 3~4 square perimeter wraps (Wrapping)",
-        "Enclosing cross poles at perpendicular 90 deg",
-        "③ 3 high-tension frapping turns (Frapping)",
-        "Squeezing gap between poles to crush slack",
-        "④ Horizontal crossbar support beam",
-        "Load-bearing transverse branch",
-        "⑤ Final locking Clove Hitch termination",
-        "Nail-free permanent structural joint"
+        "FIG. 05 // BOWLINE STEP 5: LOCKING & 1-SEC RELEASE",
+        "1-SEC QUICK RELEASE",
+        "Break-The-Back collar snap technique",
+        "Push collar loop with thumb for instant release",
+        "PULL STANDING",
+        "Pull standing line firmly upward",
+        "GRIP TOGETHER",
+        "Hold tail and loop leg in one hand",
+        "LOCKED FIXED LOOP",
+        "Constant loop size under heavy load",
+        "[STEP 5 KEY] Pull opposite sides to cinch 4-way lock",
+        "To untie, snap rear collar ring with thumb; slips loose in 1s without blades."
       ]
     }
   ],
   "fatalMistake": {
-    "title": "Fatal Mistake: Tying a Cowboy Bowline with Working End Outside the Loop",
-    "description": "When completing a Bowline, the working end (the rabbit) must finish neatly on the INSIDE of the main loop. If the tail protrudes to the outside, it creates a compromised 'Cowboy Bowline'. In field conditions where gear drags or tree branches rub against the knot, the exposed outside tail easily snags and unzips the entire knot under tension. Always verify by tactile feel that the rope tail rests inside the safety loop.",
-    "consequence": "Consequence: Structural self-release under dynamic friction leading to shelter collapse or fall injuries"
+    "title": "Fatal Mistake: Leaving the Working End Outside the Loop ('Cowboy Bowline' Defect)",
+    "description": "On a properly dressed standard Bowline, the finished tail (working end) MUST sit neatly on the INSIDE of the main loop. If the tail finishes on the outside, it forms an inferior variant (often called the Cowboy Bowline). When hauling gear or pitching shelters in dense woods, an externally exposed tail readily snags on brush, twigs, or rocks, causing the entire knot to unravel catastrophically under load.",
+    "consequence": "Consequence: External snagging causes self-untie, resulting in shelter collapse or heavy load drop hazards"
   },
   "shortsScript": {
-    "hook": "Master these 3 survival knots, and you will never struggle with loose ropes for the rest of your life.",
-    "body": "First: The Bowline, the king of knots. Dig a rabbit hole, rabbit pops out, wraps around the tree, and dives back in. Holds a truck without slipping, but breaks loose in 1 second by pushing the collar back. Second: The Taut-line Hitch. Two wraps inside, one outside. Slide it to adjust guyline tension; wind tension locks it solid. Third: The Square Lashing. Wrap crosswise 3 times, then frap between the timbers with all your weight. You get rock-solid shelters and ladders with zero nails. Never leave the Bowline tail on the outside—brushing branches will unzip it.",
-    "outro": "Save the technical vector blueprints to your device offline from the profile link."
+    "hook": "Holds a pickup truck without slipping, yet unties in one second with a single thumb flick: The King of Knots, Bowline.",
+    "body": "If you can only learn one survival knot, this is it. Memorize the 4-step Rabbit and Tree formula: 1, make a loop over the line to create a number 6 rabbit hole. 2, the rabbit pops out from under the hole. 3, wrap around the back of the tall standing tree. 4, dive right back down into the hole. Pull both sides tight, and it locks solid. Even under 500 kilos, the loop size never shrinks. When done, never reach for a knife—just snap the back collar with your thumb, and it slides loose in one second. Keep the tail inside the loop so branches won't snag it.",
+    "outro": "Download the offline survival vector blueprints via the link in our profile."
   },
   "outcome": {
     "svgFileName": "pr07-outcome.svg",
-    "title": "Completed 3 Survival Knots Field Rigging Assembly",
-    "description": "A master field assembly combining the 3-second Clove Hitch, the unshakeable 1-second release Bowline loop, the sliding Taut-line Hitch, and Square Lashing."
+    "title": "Bowline Knot (King of Knots) Master Blueprint",
+    "description": "Engineering specification for the standard Bowline knot showing the non-collapsing fixed eye loop and the 1-second Break-the-Back quick-release mechanism."
   }
 }
