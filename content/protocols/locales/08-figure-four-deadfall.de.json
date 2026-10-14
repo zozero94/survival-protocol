@@ -44,8 +44,7 @@
         "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
         "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
         "[KEY] Carve crisp square notches that bite firmly"
-      ],
-      "imageFileName": "pr08-step-01.jpg"
+      ]
     },
     {
       "stepNumber": "02",
@@ -59,8 +58,7 @@
         "Strut 2 V-Notch Joint",
         "Locks firmly at 45°",
         "[KEY] Top hinge locks firmly without sliding"
-      ],
-      "imageFileName": "pr08-step-02.jpg"
+      ]
     },
     {
       "stepNumber": "03",
@@ -74,8 +72,7 @@
         "Strut-Bait Stick Rear Joint",
         "Stands alone in Number 4 shape",
         "[KEY] Sticks push against each other to stand"
-      ],
-      "imageFileName": "pr08-step-03.jpg"
+      ]
     },
     {
       "stepNumber": "04",
@@ -89,8 +86,7 @@
         "Bait set on inner tip",
         "Drops rock in 0.1s when touched",
         "[KEY] Hair trigger collapses instantly on touch"
-      ],
-      "imageFileName": "pr08-step-04.jpg"
+      ]
     }
   ],
   "fatalMistake": {
@@ -106,9 +102,8 @@
   "outcome": {
     "svgFileName": "pr08-outcome.svg",
     "title": "Completed Figure-4 Deadfall Trap Full Setup",
-    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it.",
-    "imageFileName": "pr08-outcome.jpg"
+    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it."
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-14T16:50:00+09:00"
+  "updatedAt": "2026-10-14T17:25:00+09:00"
 }
