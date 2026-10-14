@@ -280,7 +280,7 @@ export class TelegramBotService {
     return {
       inline_keyboard: [
         [
-          { text: '📖 프로토콜 목록', callback_data: 'cb:list' },
+          { text: '📖 생존 교범 목록', callback_data: 'cb:list' },
           { text: '💡 차기 주제 추천', callback_data: 'cb:recommend' },
         ],
         [
@@ -466,13 +466,13 @@ export class TelegramBotService {
 인류 멸망 후 원시 생존 교범을 스마트폰에서 24시간 언제 어디서나 자율 기획·생성·수정·배포하는 클라우드 통제실입니다.
 
 <b>📌 전술 명령어 목록:</b>
-• 📖 <code>/list</code> - 현재 발행된 프로토콜 목록 및 1-터치 상세 조회
-• 🔍 <code>/view [PR-NN]</code> - 프로토콜 제원/도면/번역 상태 정밀 감사
-• 💡 <code>/recommend</code> - 지식 트리 기반 차기 유망 프로토콜 1-클릭 추천
-• 🎨 <code>/stitch [주제/ID]</code> - Stitch MCP 화면 생성용 프롬프트 명세서 발급
-• 🚀 <code>/generate [주제]</code> - 신규 프로토콜 자율 생성 (도면+번역+배포)
-• ✏️ <code>/edit [PR-NN] [지침]</code> - 기존 프로토콜 AI 수정 및 재배포
-• 📦 <code>/archive [PR-NN]</code> - 프로토콜을 보관소로 격리 이동 및 재배포
+• 📖 <code>/list</code> - 현재 발행된 생존 교범 목록 및 1-터치 상세 조회
+• 🔍 <code>/view [번호]</code> - 생존 가이드 제원/도면/번역 상태 정밀 감사 (예: <code>/view 01</code>)
+• 💡 <code>/recommend</code> - 지식 트리 기반 차기 유망 주제 1-클릭 추천
+• 🎨 <code>/stitch [주제/번호]</code> - Stitch MCP 화면 생성용 프롬프트 명세서 발급
+• 🚀 <code>/generate [주제]</code> - 신규 생존 가이드 자율 생성 (도면+번역+배포)
+• ✏️ <code>/edit [번호] [지침]</code> - 기존 가이드 AI 수정 및 재배포 (예: <code>/edit 01 숯가루 설명 보강</code>)
+• 📦 <code>/archive [번호]</code> - 가이드를 보관소로 격리 이동 및 재배포
 • 📊 <code>/stats</code> - 6대 도메인, SVG 도면, 번역 통계 대시보드
 • 🔨 <code>/build</code> - 정적 웹 & PWA 즉시 빌드 및 Vercel 배포
 • 📡 <code>/status</code> - 라이브 배포 URL 및 클라우드 런타임 상태 확인
@@ -484,25 +484,20 @@ export class TelegramBotService {
           renderListResponse()                                                          {
     const protocols = ProtocolGeneratorService.listProtocols();
     if (protocols.length === 0) {
-      return { text: '📭 등록된 생존 프로토콜이 없습니다.' };
+      return { text: '📭 등록된 생존 교범이 없습니다.' };
     }
 
     const lines = protocols.map((p) => {
       const num = p.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
-      return `<b>[${p.protocolId}]</b> <code>[${p.category}]</code> ${p.title}\n🔗 <a href="${SITE_META.siteUrl}/protocol-${num}">${SITE_META.siteUrl}/protocol-${num}</a>`;
+      return `<code>[${p.category}]</code> <b>${p.title}</b>\n🔗 <a href="${SITE_META.siteUrl}/protocol-${num}">${SITE_META.siteUrl}/protocol-${num}</a>`;
     });
 
-    const buttons                           = [];
-    for (let i = 0; i < protocols.length; i += 2) {
-      const row                         = [];
-      const p1 = protocols[i];
-      row.push({ text: `🔍 ${p1.protocolId} 상세`, callback_data: `cb:view:${p1.protocolId}` });
-      if (i + 1 < protocols.length) {
-        const p2 = protocols[i + 1];
-        row.push({ text: `🔍 ${p2.protocolId} 상세`, callback_data: `cb:view:${p2.protocolId}` });
-      }
-      buttons.push(row);
-    }
+    const buttons                           = protocols.map((p) => [
+      {
+        text: `📖 [${p.category}] ${p.title.length > 22 ? p.title.slice(0, 22) + '…' : p.title}`,
+        callback_data: `cb:view:${p.protocolId}`,
+      },
+    ]);
 
     buttons.push([
       { text: '💡 차기 주제 추천', callback_data: 'cb:recommend' },
@@ -521,12 +516,12 @@ export class TelegramBotService {
 
          renderViewMessage(protocolId        )         {
     if (!protocolId) {
-      return '⚠️ 조회할 프로토콜 ID를 입력하세요. 예: <code>/view PR-01</code>';
+      return '⚠️ 조회할 가이드 번호를 입력하세요. 예: <code>/view 01</code>';
     }
 
     const details = ProtocolGeneratorService.getProtocolDetails(protocolId);
     if (!details) {
-      return `❌ 프로토콜 [${protocolId}]을 찾을 수 없습니다. /list 로 목록을 확인하세요.`;
+      return `❌ 가이드 [${protocolId}]을 찾을 수 없습니다. /list 로 목록을 확인하세요.`;
     }
 
     const { data, stepsStatus, locales } = details;
@@ -546,7 +541,7 @@ export class TelegramBotService {
       .map((m, idx) => `  ${idx + 1}. <b>${m.name}</b>: ${m.desc}`)
       .join('\n');
 
-    return `🛡️ <b>[프로토콜 전술 제원표 // ${data.protocolId}]</b>
+    return `🛡️ <b>[생존 가이드 전술 제원표 // ${data.title}]</b>
 
 <b>제목:</b> ${data.title}
 <b>분과:</b> <code>[${data.category}]</code> | <b>위협도:</b> ${data.threatLevel}
@@ -594,7 +589,7 @@ ${stepsText}
 
           async handleArchiveCommand(protocolId        , chatId                 )                  {
     if (!protocolId) {
-      return '⚠️ 보관할 프로토콜 ID를 입력하세요. 예: <code>/archive PR-02</code>';
+      return '⚠️ 보관할 가이드 번호나 식별자를 입력하세요. 예: <code>/archive 02</code>';
     }
 
     try {
@@ -609,7 +604,7 @@ ${stepsText}
   }
 
           handleStitchCommand(topicOrId        )         {
-    const prompt = ProtocolGeneratorService.generateStitchPrompt(topicOrId || 'PR-03 소나무 송진 상처 치료');
+    const prompt = ProtocolGeneratorService.generateStitchPrompt(topicOrId || '소나무 송진 상처 치료');
     return `🎨 <b>[Stitch 생성 프롬프트 명세서]</b>
 
 아래 프롬프트를 복사하여 Stitch MCP 도구에 입력하시면, 정밀 모노라인 벡터 SVG 도면(FIG. 01~03)이 완비된 브루탈리즘 야전 교범 화면이 자동 생성됩니다:
@@ -760,11 +755,11 @@ ${candidateLines}
       const localeWarning = result.missingLocales?.length
         ? `\n⚠️ <i>일부 언어 번역 생략: ${result.missingLocales.join(', ')}</i>`
         : '';
-      const doneMsg = `🎉 <b>[4/4] 신규 프로토콜 발행 & 배포 성공!</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}${localeWarning}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      const doneMsg = `🎉 <b>[4/4] 신규 생존 가이드 발행 & 배포 성공!</b>\n\n<b>제목:</b> ${result.protocol?.title}\n<b>카테고리:</b> ${result.protocol?.category}${localeWarning}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
       const edited = await updateProgress(doneMsg);
       return { text: doneMsg, alreadySent: edited };
     } catch (e     ) {
-      const errMsg = `❌ <b>프로토콜 생성 중단</b>:\n${e.message || String(e)}`;
+      const errMsg = `❌ <b>생존 가이드 생성 중단</b>:\n${e.message || String(e)}`;
       const edited = await updateProgress(errMsg);
       return { text: errMsg, alreadySent: edited };
     }
@@ -781,7 +776,7 @@ ${candidateLines}
     const parts = args.trim().split(/\s+/);
     if (parts.length < 2) {
       return {
-        text: '⚠️ <b>형식 오류!</b> 다음과 같이 입력하세요:\n<code>/edit [PR-NN] [수정할 내용]</code>\n예: <code>/edit PR-01 숯가루 채집 방법을 더 자세히 적어줘</code>',
+        text: '⚠️ <b>형식 오류!</b> 다음과 같이 입력하세요:\n<code>/edit [가이드 번호] [수정할 내용]</code>\n예: <code>/edit 01 숯가루 채집 방법을 더 자세히 적어줘</code>',
         alreadySent: false,
       };
     }
@@ -791,7 +786,7 @@ ${candidateLines}
 
     const initialSent = await this.client.sendMessage(
       chatId,
-      `⚙️ <b>[1/3] 프로토콜 AI 수정 파이프라인 가동</b>\n대상: <code>${protocolId}</code>\n수정 지침: "${instructions}"`,
+      `⚙️ <b>[1/3] 생존 가이드 AI 수정 파이프라인 가동</b>\n대상: <code>${protocolId}</code>\n수정 지침: "${instructions}"`,
       { parse_mode: 'HTML' }
     );
     const progressMsgId                     = initialSent?.result?.message_id;
@@ -825,11 +820,11 @@ ${candidateLines}
       const localeWarning = result.missingLocales?.length
         ? `\n⚠️ <i>일부 언어 번역 생략: ${result.missingLocales.join(', ')}</i>`
         : '';
-      const doneMsg = `🎉 <b>[프로토콜 수정 & 배포 완료!]</b>\n\n<b>ID:</b> ${result.protocol?.protocolId}\n<b>제목:</b> ${result.protocol?.title}${localeWarning}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
+      const doneMsg = `🎉 <b>[생존 가이드 수정 & 배포 완료!]</b>\n\n<b>제목:</b> ${result.protocol?.title}${localeWarning}\n\n🌐 <a href="${result.liveUrl}">라이브 페이지 열기</a>`;
       const edited = await updateProgress(doneMsg);
       return { text: doneMsg, alreadySent: edited };
     } catch (e     ) {
-      const errMsg = `❌ 프로토콜 수정 실패:\n${e.message || String(e)}`;
+      const errMsg = `❌ 생존 가이드 수정 실패:\n${e.message || String(e)}`;
       const edited = await updateProgress(errMsg);
       return { text: errMsg, alreadySent: edited };
     }

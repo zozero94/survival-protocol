@@ -79,16 +79,23 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     assert.match(reply.text, /\/recommend/);
     assert.match(reply.text, /\/stats/);
     assert.ok(reply.reply_markup?.inline_keyboard);
-    assert.strictEqual(reply.reply_markup.inline_keyboard[0][0].text, '📖 프로토콜 목록');
+    assert.strictEqual(reply.reply_markup.inline_keyboard[0][0].text, '📖 생존 교범 목록');
   });
 
-  it('/list 명령 시 현재 발행된 프로토콜 목록을 정확히 열거해야 한다', async () => {
+  it('/list 명령 시 현재 발행된 프로토콜 목록을 정확히 열거하고 버튼에 PR 문구가 없어야 한다', async () => {
     const mockClient = new MockTelegramApiClient();
     const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
 
     const reply = await bot.handleMessage(1234, '/list');
-    assert.match(reply.text, /PR-01/);
     assert.match(reply.text, /https:\/\/survival-protocol\.com\/protocol-01/);
+    assert.ok(reply.reply_markup?.inline_keyboard);
+    // 모든 버튼 텍스트에 'PR-' 문구가 없음을 엄격히 검증
+    assert.ok(
+      reply.reply_markup.inline_keyboard.every((row) =>
+        row.every((btn) => !btn.text.includes('PR-') && !btn.text.includes('PR '))
+      ),
+      '버튼 텍스트에 PR 식별자가 포함되어서는 안 됩니다.'
+    );
   });
 
   it('/stats 명령 시 6대 카테고리별 통계 및 SVG/번역 완비 현황을 반환해야 한다', async () => {
@@ -143,7 +150,7 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
 
     const reply = await bot.handleMessage(1234, '/view PR-01');
-    assert.match(reply.text, /프로토콜 전술 제원표 \/\/ PR-01/);
+    assert.match(reply.text, /생존 가이드 전술 제원표/);
     assert.match(reply.text, /4열 핵심 제원/);
     assert.match(reply.text, /필수 생존 물자/);
     assert.match(reply.text, /치명적 경고/);
@@ -173,7 +180,13 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
       data: 'cb:view:PR-02',
     });
 
-    assert.ok(mockClient.sentMessages.some((m) => m.text.includes('PR-02') && (m.text.includes('나뭇가지 마찰') || m.text.includes('활비비'))));
+    assert.ok(
+      mockClient.sentMessages.some(
+        (m) =>
+          m.text.includes('생존 가이드 전술 제원표') &&
+          (m.text.includes('나뭇가지 마찰') || m.text.includes('활비비'))
+      )
+    );
 
     await bot.handleCallbackQuery({
       id: 'cb-stitch-1',
