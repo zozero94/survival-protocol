@@ -16,7 +16,7 @@
 
 ---
 
-## 🧱 6대 생존 공학 분과 및 발행 현황 (총 6편 배포 완료)
+## 🧱 6대 생존 공학 분과 및 발행 현황 (총 7편 배포 완료)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면 | 세부 스텝 도면 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
@@ -26,6 +26,7 @@
 | **TOOLS** | [깬 돌과 칡덩굴로 나무 베는 돌도끼 만드는 법](public/protocol-04.html) | `pr04-outcome.svg` | 3단계 (FIG 01~03) | 7개국어 완비 | ✅ 라이브 |
 | **TOOLS** | [나무껍질과 칡덩굴을 꼬아 끊어지지 않는 야생 밧줄 만드는 법](public/protocol-05.html) | `pr05-outcome.svg` | 5단계 (FIG 01~05) | 7개국어 완비 | ✅ 라이브 |
 | **SHELTER** | [진흙과 돌을 쌓아 비바람을 막고 열기를 가두는 원시 화덕 만드는 법](public/protocol-06.html) | `pr06-outcome.svg` | 5단계 (FIG 01~05) | 7개국어 완비 | ✅ 라이브 |
+| **FOOD** | [나뭇가지 3개와 바위로 짐승 잡는 법 (숫자 4 모양 돌 덫)](public/protocol-08.html) | `pr08-outcome.svg` | 4단계 (FIG 01~04) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -35,9 +36,9 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-06)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-08)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 34종: 스텝 27 + 결과물 7)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 39종: 스텝 31 + 결과물 8)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -65,7 +66,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 10대 테스트 스위트 (69/69 PASS)
+└── tests/                 # [Quality Audit] 10대 테스트 스위트 (70/70 PASS)
 ```
 
 ---
@@ -94,7 +95,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(69개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진)*
+*(70개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진)*
 
 ### 5. 구글 드라이브 클라우드 문서 동기화
 ```bash

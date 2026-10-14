@@ -9,7 +9,7 @@
   - 직관적 야전 가독성 ([최종 완성 형태 // TARGET OUTCOME] 16:9 도면 ➔ 준비물 체크리스트 ➔ 3~8단계 가변 행동 지침 ➔ 치명적 실수 반전)
   - 비번호 독립 문서 체계 (화면 UI 상 `PR-XX` 일련번호 전면 배제)
   - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-- **아키텍처**: Content-Driven Layered Component Architecture (10개 스위트 / 69개 단위 테스트 무결성 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (10개 스위트 / 70개 단위 테스트 무결성 통과)
 - **주제 검증 철학**:
   - 원시 자연물 고증 100% (현대 공산품 일체 배제)
   - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
@@ -76,13 +76,13 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, PWA sw.js, SEO)
-├── tests/                       # [Quality Audit] 10개 테스트 스위트 (69/69 단위 테스트 PASS)
+├── tests/                       # [Quality Audit] 10개 테스트 스위트 (70/70 단위 테스트 PASS)
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 검수 (SvgAuditService)**:
-   - 전 발행 도면(스텝 27종 + 결과물 7종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(스텝 31종 + 결과물 8종, 총 39종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
 2. **PWA 오프라인 생존성**:
    - 1회 방문 시 전 페이지 HTML, 7개국어 JSON, SVG 벡터 도면 100% 영구 캐시 (`survival-{hash}`).

@@ -1,0 +1,107 @@
+{
+  "protocolId": "PR-08",
+  "category": "FOOD",
+  "title": "Cómo cazar presas con 3 ramas y una roca (Trampa de caída en forma de 4)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[CRÍTICO: PROTEÍNA Y ALIMENTO]",
+  "summary": "Perseguir animales en la naturaleza a mano limpia es un derroche catastrófico de calorías que conduce al agotamiento mortal. Al tallar tres ramas secas para formar una estructura autoblocante en forma del número '4' sostenida únicamente por fricción bajo una roca de 10 a 15 kg, construyes una trampa por gravedad que cae en 0,1 segundos cuando la presa toca el cebo.",
+  "timeRequired": "30 minutos (20 min tallado + 10 min calibración)",
+  "successRate": "95% (siguiendo el ajuste fino de muescas)",
+  "difficulty": "Media (tallado preciso y equilibrio de peso)",
+  "outputPerHour": "2 trampas por hora (reutilizable indefinidamente)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3 ramas rectas de madera dura y seca (grosor de un dedo, 25-30 cm)",
+      "desc": "Madera curada de roble que no flexione bajo la carga pesada, talladas en poste vertical, puntal diagonal y varilla del cebo."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 roca plana y pesada (10-15 kg)",
+      "desc": "Debe pesar de 3 a 5 veces la masa corporal del animal objetivo, con base plana para aplastar sin dejar vías de escape."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 lasca afilada de pedernal o cuchillo de piedra",
+      "desc": "Filo primitivo para tallar cuñas biseladas a 45 grados y muescas rectas de agarre seguro."
+    },
+    {
+      "id": "mat-04",
+      "name": "Cebo natural (bayas silvestres, larvas, insectos o semillas)",
+      "desc": "Firmemente ensartado en el extremo afilado interior de la varilla para forzar a la presa a tirar horizontalmente."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Medir las ramas y tallar las muescas de bloqueo a escuadra",
+      "description": "Prepara tres ramas rectas. El poste vertical (20 cm) recibe una cuña plana superior y una muesca cuadrada central. El puntal diagonal (25 cm) lleva una muesca superior y un bisel interior inferior. La varilla del cebo (30 cm) lleva dos muescas para engranar con el poste y el puntal, terminando en punta afilada para el cebo.",
+      "actionNote": "> Clave de tallado: Las esquinas de las muescas deben ser vivas y rectas. Si son redondeadas, patinarán bajo el peso de la roca.",
+      "svgFileName": "pr08-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
+        "POSTE VERTICAL (20 CM)",
+        "PUNTAL DIAGONAL (25 CM)",
+        "VARILLA DE CEBO (30 CM)",
+        "[PASO 1] TALLAR CUÑA A 45° Y MUESCAS A ESCUADRA"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Acoplar la muesca superior del puntal a la cuña del poste vertical",
+      "description": "Coloca el poste vertical sobre suelo firme. Encaja la muesca superior del puntal diagonal sobre la cuña plana del poste en un ángulo exacto de 45 grados. Presiona ligeramente hacia abajo para verificar que la unión pivota firmemente sin deslizarse lateralmente.",
+      "actionNote": "> Comprobación de ángulo: Una inclinación de 40 a 50 grados transmite el peso de la roca de forma óptima hacia la varilla del cebo.",
+      "svgFileName": "pr08-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
+        "CUÑA SUPERIOR (BISEL PLANO)",
+        "MUESCA SUPERIOR (ACOPLE A 45°)",
+        "VECTOR DE GRAVEDAD (PRESIÓN VERTICAL)",
+        "[PASO 2] UNIÓN DE PALANCA SUPERIOR SIN DESLIZAMIENTO"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Ensamblar la varilla del cebo para lograr el armazón de '4' autoestable",
+      "description": "Sostén la varilla del cebo en posición horizontal y engancha su muesca delantera en la ranura media del poste. Luego encaja el extremo inferior del puntal en la muesca trasera de la varilla y suelta despacio: la fuerza de empuje mutuo entre las tres ramas crea una estructura firme en forma de '4' sin usar cuerdas.",
+      "actionNote": "> Prueba de equilibrio: La estructura debe sostenerse sola. Si se desvía, aplana la base del poste vertical.",
+      "svgFileName": "pr08-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
+        "PIVOTE A (ENGRANE POSTE-VARILLA)",
+        "PIVOTE B (ENGRANE PUNTAL-VARILLA)",
+        "TENSIÓN OPUESTA (FUERZA DE RECHAZO MUTUO)",
+        "[PASO 3] ESTRUCTURA EN '4' SOSTENIDA POR FRICCIÓN"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Apoyar la roca de 15 kg y calibrar la sensibilidad de disparo a 0,1s",
+      "description": "Inserta el cebo en la punta afilada interior. Levanta la roca pesada de 10-15 kg con una mano y apóyala con cuidado sobre la parte superior del puntal a 45 grados. Prueba la sensibilidad con una brizna: un toque lateral de 20 gramos sobre el cebo debe provocar el colapso fulminante de la trampa.",
+      "actionNote": "> Advertencia de seguridad: Nunca metas las manos ni los dedos bajo la roca suspendida durante el ajuste del disparador.",
+      "svgFileName": "pr08-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
+        "ROCA PLANA 15KG (APOYADA A 45°)",
+        "PINCHO DE CEBO (POSICIÓN INTERIOR)",
+        "COLAPSO INSTANTÁNEO (CAÍDA EN 0,1S)",
+        "[PASO 4] CALIBRACIÓN SENSIBLE AL MÍNIMO ROCE"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error fatal: Tallar muescas demasiado profundas o usar una roca ligera",
+    "description": "Las muescas excesivamente profundas se traban y no disparan cuando el animal mordisquea el cebo. Una roca liviana solo lastima a la presa, permitiéndole escapar y alertar a todos los animales del entorno.",
+    "consequence": "Consecuencia: Fracaso total, inanición y animales fugitivos en alerta"
+  },
+  "shortsScript": {
+    "hook": "¡Correr tras animales en la selva te matará de hambre! ¡Haz esta trampa de roca de 0,1 segundos!",
+    "body": "Talla tres ramas con muescas precisas para formar un número 4. ¡Sostiene por pura fricción una roca de 15 kg sin una sola cuerda! El secreto: muescas poco profundas. En cuanto una presa toca el cebo, la tensión se quiebra y la roca aplasta en 0,1 segundos.",
+    "outro": "Planos de supervivencia sin conexión a internet en el enlace de la bio."
+  },
+  "outcome": {
+    "svgFileName": "pr08-outcome.svg",
+    "title": "Perspectiva general de la trampa por gravedad en número 4 armada",
+    "description": "Tres ramas de madera dura en equilibrio de tensión sosteniendo una roca plana de 15 kg, diseñada para un colapso instantáneo al menor contacto."
+  }
+}

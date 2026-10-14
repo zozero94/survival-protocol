@@ -28,7 +28,7 @@ const validSvg = `<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
 </svg>`;
 
 describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방지 검증]', () => {
-  it('정상 규격의 SVG 도면과 실제 발행된 전 가이드 도면 34종(스텝 27종 + 완성 결과물 7종) 모두 정적 검수(100점)를 통과해야 한다', () => {
+  it('정상 규격의 SVG 도면과 실제 발행된 전 가이드 도면 39종(스텝 31종 + 완성 결과물 8종) 모두 정적 검수(100점)를 통과해야 한다', () => {
     const report = SvgAuditService.auditSvgStatic(validSvg, sampleContext);
     assert.strictEqual(report.passed, true);
     assert.strictEqual(report.score, 100);
@@ -67,7 +67,11 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr07-step-03.svg',
       'pr07-step-04.svg',
       'pr07-step-05.svg',
-      // 최종 완성 결과물 초고화질 벡터 도면 7종
+      'pr08-step-01.svg',
+      'pr08-step-02.svg',
+      'pr08-step-03.svg',
+      'pr08-step-04.svg',
+      // 최종 완성 결과물 초고화질 벡터 도면 8종
       'pr01-outcome.svg',
       'pr02-outcome.svg',
       'pr03-outcome.svg',
@@ -75,6 +79,7 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr05-outcome.svg',
       'pr06-outcome.svg',
       'pr07-outcome.svg',
+      'pr08-outcome.svg',
     ];
 
     for (const fileName of activeSvgs) {
@@ -237,6 +242,7 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       '01-water-purification',
       '02-friction-fire',
       '03-프로토콜-03-데브리-헛-debris-hut-a프레임-단열-은신처-구축법',
+      '08-figure-four-deadfall',
     ];
     const protocolsDir = path.resolve(__dirname, '../content/protocols');
     const localesDir = path.resolve(__dirname, '../content/protocols/locales');

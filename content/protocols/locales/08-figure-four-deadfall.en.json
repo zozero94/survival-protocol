@@ -1,0 +1,107 @@
+{
+  "protocolId": "PR-08",
+  "category": "FOOD",
+  "title": "How to Trap Wild Game with 3 Sticks and a Boulder (Figure-4 Deadfall Trap)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PROTEIN & FOOD CRITICAL]",
+  "summary": "Chasing animals through the wilderness with bare hands is a catastrophic waste of calories leading to fatal exhaustion. By notching three dry hardwood sticks to form an interlocking numeral '4' frame held together purely by friction and counter-tension under a 10–15kg flat rock, you construct a hair-trigger gravity trap that drops in 0.1 seconds the moment small game touches the bait.",
+  "timeRequired": "30 minutes (20 min carving + 10 min trigger setup)",
+  "successRate": "95% (with proper hair-trigger notch calibration)",
+  "difficulty": "Moderate (precise notch carving & balance)",
+  "outputPerHour": "2 traps per hour (reusable indefinitely)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3 straight dry hardwood sticks (finger-thick, 25-30cm long)",
+      "desc": "Seasoned oak or hickory sticks that will not bend or flex under the heavy deadfall load, carved into the vertical post, diagonal strut, and bait stick."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 flat heavy boulder (10-15kg)",
+      "desc": "Must weigh 3 to 5 times the target prey's body mass, with a broad flat underside that crushes down without leaving escape gaps."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 sharp flint flake or stone knife",
+      "desc": "A primitive cutting edge used to carve clean 90-degree catch ledges and 45-degree chisel wedges on the sticks."
+    },
+    {
+      "id": "mat-04",
+      "name": "Natural bait (wild berries, grubs, insects, or seeds)",
+      "desc": "Firmly impaled onto the pointed inner tip of the bait stick to compel the animal to tug horizontally."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Measure sticks and carve precision interlocking notches",
+      "description": "Select three straight hardwood sticks. The vertical post (20cm) receives a flat chisel tip at the top and a square notch in the middle. The diagonal strut (25cm) gets a mating notch at the top and an inward bevel at the bottom. The horizontal bait stick (30cm) is notched to catch the post and the strut bottom, with its far inner tip whittled to a sharp bait pin.",
+      "actionNote": "> Carving rule: Keep all notch corners razor-sharp and square. Rounded corners will slip out prematurely under the boulder's weight.",
+      "svgFileName": "pr08-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
+        "VERTICAL POST (20CM POST)",
+        "DIAGONAL STRUT (25CM STRUT)",
+        "BAIT STICK (30CM BAIT STICK)",
+        "[STEP 1] CARVE 45° CHISEL TIP & SQUARE CATCH NOTCH"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Mate the diagonal strut top notch onto the vertical post chisel tip",
+      "description": "Stand the vertical post upright on hard, level ground. Seat the diagonal strut's top notch securely over the post's chisel-shaped wedge at a 45-degree angle. Press downward lightly to verify that the joint locks into a stable fulcrum without pivoting or twisting sideways.",
+      "actionNote": "> Angle check: A 40-50 degree strut inclination delivers the optimal mechanical advantage to transfer boulder weight into trigger tension.",
+      "svgFileName": "pr08-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
+        "CHISEL TIP (TOP FLAT CHISEL WEDGE)",
+        "TOP NOTCH (45° NOTCH INTERLOCK)",
+        "GRAVITY VECTOR (DOWNWARD PRESSURE LINE)",
+        "[STEP 2] SECURE TOP LEVER FULCRUM WITHOUT SLIPPING"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Lock the bait stick into both notches to form a self-standing '4'",
+      "description": "Hold the bait stick horizontally. Hook its front catch notch into the vertical post's middle notch, then pull the diagonal strut's lower tip into the bait stick's rear notch. Release slowly: reciprocal counter-thrust among the three sticks locks them into a rigid, self-standing numeral '4' frame without any cordage.",
+      "actionNote": "> Balance test: The frame must stand freely on level earth. If it leans, flatten the base of the vertical post.",
+      "svgFileName": "pr08-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
+        "PIVOT A (POST-BAIT STICK HORIZONTAL NOTCH)",
+        "PIVOT B (STRUT-BAIT STICK REAR NOTCH)",
+        "COUNTER TENSION (RECIPROCAL THRUST FORCE)",
+        "[STEP 3] SELF-SUPPORTING FRAME HELD BY FRICTION"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Rest the 15kg rock on the strut and calibrate hair-trigger sensitivity",
+      "description": "Impale the bait onto the sharp inner end of the horizontal stick. Lift the 10-15kg flat rock with one hand and gently rest its underside on the upper tip of the diagonal strut at a 45-degree tilt. Test the sensitivity with a twig: a 20-gram lateral nudge on the bait stick must trigger an explosive, instantaneous collapse of the rock.",
+      "actionNote": "> Safety caution: Never place hands or fingers beneath the suspended boulder while setting or adjusting the trigger.",
+      "svgFileName": "pr08-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
+        "FLAT ROCK 15KG (LEANED AT 45° ANGLE)",
+        "BAIT PIN (INWARD BAIT POSITIONING)",
+        "INSTANT COLLAPSE (0.1S DROP ON CONTACT)",
+        "[STEP 4] HAIR-TRIGGER SENSITIVITY CALIBRATION"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Carving notches too deep or using an undersized rock",
+    "description": "Deep notches lock too tightly and fail to release when an animal nibbles the bait, stealing your food. An undersized rock merely injures the prey, allowing it to flee and spook other animals in the area.",
+    "consequence": "Consequence: Complete trapping failure, starvation, and alert prey fleeing the zone"
+  },
+  "shortsScript": {
+    "hook": "Running after wild animals in the forest will starve you to death. Build this 0.1s rock trap instead!",
+    "body": "Carve three dry sticks with interlocking notches into the shape of a numeral 4. Under friction alone, it effortlessly supports a 15kg flat boulder without a single knot! The secret? Keep the notches shallow. The moment a rodent or bird nudges the bait, the tension shatters and the rock crushes down in 0.1 seconds!",
+    "outro": "Access 100% offline survival blueprints without data via the link in bio."
+  },
+  "outcome": {
+    "svgFileName": "pr08-outcome.svg",
+    "title": "Completed Figure-4 Deadfall Gravity Trap Perspective",
+    "description": "Three interlocking hardwood sticks standing in equilibrium supporting a 15kg flat slate boulder, engineered for instantaneous collapse upon hair-trigger contact."
+  }
+}

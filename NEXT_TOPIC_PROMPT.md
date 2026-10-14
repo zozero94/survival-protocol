@@ -1,54 +1,61 @@
-# 📌 차기 생존 프로토콜 기획서: PR-08 - 나뭇가지 3개와 바위로 짐승 잡는 법 (숫자 4 모양 돌 덫)
+# 📌 차기 생존 프로토콜 기획서: PR-09 - 흙구덩이 속에서 공기를 막아 나무를 단단한 숯으로 굽는 법 (원시 숯가마 제작법)
 
-- **도메인**: 야생 식량 & 수렵 공학 > 무동력 중력식 낙하 덫 제작 (Tier 1)
-- **위급도**: CRITICAL
-- **결핍 상황**: 야생 식물 채집만으로는 필수 지방과 단백질을 채울 수 없어 급격한 근육 손실과 체력 고갈이 일어납니다. 맨몸으로 동물을 쫓는 것은 지나친 칼로리 낭비이므로, 자는 동안에도 스스로 작동하는 중력식 함정이 반드시 필요합니다.
-- **과학 원리**: 지레의 원리와 아슬아슬한 마찰력의 균형을 이용합니다. 세 개의 나뭇가지를 '숫자 4' 형태로 맞물려 무거운 바위를 지탱하다가, 미끼를 건드리는 미세한 힘(수평 분력)으로 균형이 깨지면 바위의 위치 에너지가 즉시 낙하 충격으로 전환됩니다.
+- **도메인**: 열 & 발화 공학 > 고온 무산소 탄화 및 생존 숯 자급 공학 (Tier 1)
+- **위급도**: HIGH
+- **결핍 상황**: 오픈된 모닥불에 나무를 태우면 산소와 완전 반응하여 하얀 재(Ash)만 남고 유용한 숯을 얻을 수 없습니다. 고열을 유지해 체온을 지키거나(연기 없는 취사), 흙탕물 정수 필터의 핵심 재료로 쓰거나, 부싯깃에 불씨를 옮겨 담기 위해서는 산소를 차단하고 나무의 수분과 휘발 물질만 태워 날리는 무산소 탄화 숯가마가 반드시 필요합니다.
+- **과학 원리**: 열분해(Pyrolysis)와 불완전 연소의 원리를 이용합니다. 구덩이 속 목재에 불을 붙인 뒤 흙과 뗏장으로 공기 유입을 95% 차단하면, 목재가 화염으로 타지 않고 400~500℃의 고온에서 수분과 타르만 연기로 빠져나가며 순수한 탄소 덩어리(고열 숯)로 변합니다.
 - **투입 자연물**:
-  - 손가락 굵기의 단단한 마른 나뭇가지 3개
-  - 넓적하고 무거운 돌 (10~15kg)
-  - 끝을 뾰족하게 다듬을 날카로운 돌 조각
+  - 손목 굵기의 마른 참나무 또는 활엽수 통나무 토막 15~20개 (길이 30~40cm)
+  - 깊이 50cm, 지름 60cm의 원뿔형 흙구덩이
+  - 구덩이를 덮을 나뭇가지 틀과 젖은 점토 흙, 잔디 뗏장
+  - 초기 점화용 마른 잔가지와 낙엽
 
 ---
 
 ## 🖼️ [필수 사전 프리뷰] 16:9 초고화질 완성 결과물 도면 (Target Outcome)
-- **도면 파일명**: `pr08-outcome.svg` (16:9 와이드스크린, 800×450)
-- **도면 내용**: 완성되어 실전에 세팅된 4자 덫과 거치된 15kg 평평한 바위의 전체 입체 투시도. 3대 접점(트리거)에 작용하는 마찰 평형선 및 미세 터치 시의 낙하 분력 방향 화살표, 트리거 제원 패널을 모노라인/입체 셰이딩으로 표현.
+- **도면 파일명**: `pr09-outcome.svg` (16:9 와이드스크린, 800×450)
+- **도면 내용**: 지면에 구축된 원시 지하 숯가마의 입체 단면도. 구덩이 내부에 빽빽하게 수직 적재된 통나무 더미, 상부를 밀폐한 나뭇가지·찰흙·뗏장 덮개, 하단 미세 흡기 구멍과 상단 배기 굴뚝에서 뿜어져 나오는 푸른빛 탄화 연기, 완성된 다공성 참나무 숯 알갱이의 제원 패널을 모노라인/3D 입체 셰이딩으로 표현.
 
 ---
 
-## 📋 3단계 도면 및 실행 지침
+## 📋 4단계 도면 및 실행 지침
 
-### [Step 01] 세 가지 핵심 나뭇가지 다듬기
-- **실행**: 손가락 굵기의 곧은 나뭇가지 세 개를 준비합니다. 첫 번째는 바닥에 세울 '수직 기둥(끝을 끌 모양으로 깎음)', 두 번째는 돌을 받칠 '대각선 버팀대(양 끝에 홈을 팜)', 세 번째는 미끼를 꽂을 '수평 미끼대(기둥과 맞물릴 홈을 팜)'로 돌날을 이용해 깎아냅니다.
-- **도면 파일명**: `pr08-step-01.svg`
-- **도면 초점**: 수직 기둥, 대각선 버팀목, 수평 미끼대의 홈 가공 단면도 및 치수 비례도
+### [Step 01] 50cm 깊이 흙구덩이 파기 및 바닥 초벌 불씨 조성
+- **실행**: 건조하고 단단한 땅을 골라 지름 60cm, 깊이 50cm의 아래로 좁아지는 원뿔형 구덩이를 팝니다. 바닥에 마른 잔가지와 낙엽을 깔고 불을 피워 바닥 흙의 습기를 바짝 말리고 숯을 구울 붉은 숯불 밑천을 만듭니다.
+- **도면 파일명**: `pr09-step-01.svg`
+- **도면 초점**: 원뿔형 굴착 단면 치수(지름 60cm, 깊이 50cm) 및 바닥 초벌 건조 불씨의 입체 투시도
 
-### [Step 02] 숫자 4 모양으로 홈 맞물리기
-- **실행**: 수직 기둥의 윗부분에 대각선 버팀대의 윗홈을 걸칩니다. 이어 수평 미끼대를 기둥의 중간 홈에 대고, 대각선 버팀대의 아랫홈을 미끼대의 끝단 홈에 걸어 세 막대가 서로 밀어내는 힘만으로 자립하는 '숫자 4' 뼈대를 완성합니다.
-- **도면 파일명**: `pr08-step-02.svg`
-- **도면 초점**: 세 막대가 결합되어 '4' 형태를 이루는 마찰 결속 지점의 확대 구조도
+### [Step 02] 손목 굵기 참나무를 틈새 없이 수직으로 빽빽하게 적재하기
+- **실행**: 바닥 불씨 위에 손목 굵기(5~8cm)로 자른 마른 참나무 토막들을 틈새 없이 수직으로 빽빽하게 세워 채웁니다. 나무들 사이에 빈틈이 많으면 산소가 돌아 재가 되어버리므로 빈틈에는 손가락 굵기 가지를 쐐기처럼 찔러 넣어 밀도를 극대화합니다.
+- **도면 파일명**: `pr09-step-02.svg`
+- **도면 초점**: 구덩이 내부를 빈틈없이 가득 채운 수직 통나무 다발의 횡단면 밀집 구조도
 
-### [Step 03] 바위 거치 및 미끼 장착
-- **실행**: 미끼대 안쪽 끝에 열매나 벌레 등 먹이를 꽂은 뒤, 결합된 틀의 대각선 막대 윗부분에 10~15kg의 넓적한 바위를 조심스럽게 기대어 놓습니다. 바위 밑으로 짐승이 머리를 넣고 미끼를 살짝 당기는 즉시 뼈대가 무너지도록 민감도를 점검합니다.
-- **도면 파일명**: `pr08-step-03.svg`
-- **도면 초점**: 기울어진 바위 아래 4자 뼈대와 안쪽 미끼가 세팅된 전체 측면 입체 투시도
+### [Step 03] 나뭇가지 틀을 얹고 젖은 흙과 잔디 뗏장으로 95% 공기 차단하기
+- **실행**: 통나무 더미 윗면에 굵은 나뭇가지들을 격자로 걸치고, 그 위에 넓적한 나뭇잎을 덮은 뒤 젖은 찰흙과 잔디 뗏장을 10cm 두께로 덮어씌웁니다. 가장자리에 손가락 굵기의 흡기 구멍 2개와 중앙에 주먹 크기의 연기 배출 굴뚝 1개만 남기고 완벽히 밀봉합니다.
+- **도면 파일명**: `pr09-step-03.svg`
+- **도면 초점**: 다층 덮개(격자 가지 + 잎 + 뗏장 + 찰흙) 구조와 흡기구/배기 굴뚝의 공기 순환선
+
+### [Step 04] 연기 색상 변화 판별 및 완전 밀폐 냉각 후 숯 수확하기
+- **실행**: 가마 굴뚝에서 뿜어져 나오는 짙은 흰 연기(수분 방출)가 2~3시간 뒤 맑고 옅은 푸른빛 연기(탄화 완료)로 바뀌면, 모든 구멍을 진흙으로 꽉 틀어막아 공기를 100% 차단합니다. 하룻밤 동안 완전히 식힌 뒤 가마를 열면, 은빛 광택이 돌고 쇠 소리가 나는 단단한 고급 숯이 완성됩니다.
+- **도면 파일명**: `pr09-step-04.svg`
+- **도면 초점**: 연기 색상 판별 기준도(White ➔ Blue ➔ Clear) 및 밀폐 냉각 후 완성된 단단한 숯 단면
 
 ---
 
 ## ⚠️ 꼭 피해야 할 실수 (Fatal Mistake)
-- **흔한 실수**: 돌이 너무 가볍거나, 막대 결합 홈을 너무 깊게 파서 뻑뻑하게 만드는 실수
-- **위험한 결과**: 짐승이 미끼를 흔들어도 덫이 떨어지지 않아 밥만 빼앗기거나, 돌에 맞아도 다치기만 한 채 도망쳐 덫의 위치만 노출됨
-- **핵심 주의사항**: 돌 무게는 잡으려는 동물 체중의 3~5배 이상 무거워야 하며, 결합 홈은 걸릴 듯 말 듯 날카롭고 얕게 다듬어 스치기만 해도 0.1초 만에 풀리도록 설치해야 함
+- **흔한 실수**: 아직 열기가 남아있을 때 성급하게 흙 덮개를 열어젖히는 실수
+- **위험한 결과**: 가마 안으로 신선한 공기(산소)가 급격히 빨려 들어가며 백드래프트 현상으로 통나무 전체에 화염이 붙어 순식간에 재로 산화됨
+- **핵심 주의사항**: 겉면 흙을 손으로 만졌을 때 차가울 때까지 최소 6~8시간 이상 밀폐 냉각한 뒤 열어야 함
 
 ---
 
 ## 🎨 스티치(Stitch) 생성용 마스터 프롬프트
 ```text
-A precise field blueprint drawn with charcoal and graphite on aged dark slate, illustrating the Figure-4 Deadfall Trap mechanics.
-- Target Outcome (16:9 Widescreen): Full perspective of the set trap under a 15kg flat rock with tension equilibrium vectors, sensitive trigger points, and quick-collapse mechanism.
-- Step 1: The three wooden triggers with exact notch dimensions (vertical post, diagonal support, horizontal bait stick).
-- Step 2: The exploded mechanical assembly forming the numeral '4' shape under counter-pressure.
-- Step 3: Full field deployment showing the rock leaning at 45 degrees over the bait stick trigger.
-Utilitarian Brutalism style, pure monochrome technical linework, zero text-graphic collision, strict physical accuracy.
+A precise field blueprint drawn with charcoal and graphite on dark slate, illustrating the Pit Charcoal Kiln (Primitive Pyrolysis).
+- Target Outcome (16:9 Widescreen): Full cross-sectional isometric view of an underground pit kiln with vertical timber stack, multi-layer sod/clay seal, air intake vent, and bluish pyrolysis smoke exhaust.
+- Step 1: Cone-shaped pit excavation (60cm diameter, 50cm depth) with pre-drying ember bed.
+- Step 2: Dense vertical stacking of wrist-thick oak logs without air voids.
+- Step 3: Multi-layer anaerobic seal (branch lattice + broad leaves + moist clay + turf sod).
+- Step 4: Smoke color transition chart (thick white to faint blue) and post-cooling harvested metallic charcoal.
+Utilitarian Brutalism style, pure monochrome technical linework, zero text collision, strict physics accuracy.
 ```

@@ -1,0 +1,118 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgP08Out" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="50%" stop-color="#11141a"/>
+      <stop offset="100%" stop-color="#090a0d"/>
+    </linearGradient>
+
+    <!-- Heavy Slate Rock Texture Gradient -->
+    <linearGradient id="slateRock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="30%" stop-color="#64748b"/>
+      <stop offset="65%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Hardwood Stick Gradient -->
+    <linearGradient id="hardwoodOut" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#713f12"/>
+      <stop offset="35%" stop-color="#b45309"/>
+      <stop offset="70%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Deep Drop Shadow -->
+    <filter id="shadowOut" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Background Backdrop & Border -->
+  <rect width="800" height="450" fill="url(#bgP08Out)"/>
+  <rect x="12" y="12" width="776" height="426" fill="none" stroke="#222831" stroke-width="1.5"/>
+
+  <!-- Technical Corner Ticks -->
+  <path d="M 20 32 L 36 32 M 28 24 L 28 40" stroke="#4b5563" stroke-width="1.5"/>
+  <path d="M 780 32 L 764 32 M 772 24 L 772 40" stroke="#4b5563" stroke-width="1.5"/>
+  <path d="M 20 418 L 36 418 M 28 410 L 28 426" stroke="#4b5563" stroke-width="1.5"/>
+  <path d="M 780 418 L 764 418 M 772 410 L 772 426" stroke="#4b5563" stroke-width="1.5"/>
+
+  <!-- Top Technical Header Strip -->
+  <rect x="28" y="24" width="744" height="34" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <rect x="28" y="24" width="4" height="34" fill="#ef4444"/>
+  <text x="44" y="45" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold" letter-spacing="1">TARGET OUTCOME // FIGURE-4 DEADFALL GRAVITY TRAP</text>
+  <text x="756" y="45" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">PR-08 // FULL FIELD ASSEMBLY SPEC</text>
+
+  <!-- Ground Plane Baseline -->
+  <line x1="40" y1="380" x2="760" y2="380" stroke="#334155" stroke-width="2"/>
+  <path d="M 60 385 L 80 400 M 120 385 L 140 400 M 180 385 L 200 400 M 240 385 L 260 400 M 300 385 L 320 400 M 360 385 L 380 400 M 420 385 L 440 400 M 480 385 L 500 400" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- 3D Scene Elements -->
+  <!-- 1. The Numeral 4 Trigger Assembly (Left-Center) -->
+  <g filter="url(#shadowOut)">
+    <!-- Vertical Post: x=210, y=140 to 380 -->
+    <rect x="200" y="140" width="22" height="240" rx="3" fill="url(#hardwoodOut)" stroke="#3b1d03" stroke-width="1.2"/>
+    <polygon points="200,140 211,115 222,140" fill="#fde68a" stroke="#78350f" stroke-width="1"/>
+
+    <!-- Diagonal Strut: from top of post (211, 115) to (370, 275) -->
+    <line x1="211" y1="117" x2="370" y2="280" stroke="#000000" stroke-width="24" stroke-linecap="round"/>
+    <line x1="211" y1="117" x2="370" y2="280" stroke="url(#hardwoodOut)" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Horizontal Bait Stick: x=140 to 470, y=268 to 286 -->
+    <rect x="140" y="268" width="330" height="18" rx="2" fill="url(#hardwoodOut)" stroke="#3b1d03" stroke-width="1.2"/>
+    <!-- Pointed Bait Tip -->
+    <polygon points="470,268 495,277 470,286" fill="#fde68a" stroke="#78350f" stroke-width="1"/>
+
+    <!-- Bait (Wild Berries & Insect) -->
+    <circle cx="465" cy="277" r="9" fill="#ef4444" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="468" cy="274" r="3" fill="#fca5a5"/>
+  </g>
+
+  <!-- 2. The 15kg Heavy Flat Rock Resting Upon Diagonal Strut -->
+  <g filter="url(#shadowOut)">
+    <!-- Rock Polygon: base pivot on left ground (60, 375), top resting at (211, 110), right overhang (520, 210) -->
+    <polygon points="70,370 200,110 225,100 520,215 480,330 280,380" fill="url(#slateRock)" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Rock Shading Fissures & Granite Flecks -->
+    <path d="M 180 160 Q 280 200 420 250" stroke="#1e293b" stroke-width="3" fill="none"/>
+    <path d="M 120 280 Q 220 270 360 320" stroke="#0f172a" stroke-width="2" fill="none"/>
+    <path d="M 230 120 L 310 165 L 450 230" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3 4" fill="none"/>
+  </g>
+
+  <!-- Technical Force & Movement Annotations -->
+  <!-- Gravity Vector Arrow -->
+  <path d="M 330 110 L 330 160 M 322 150 L 330 162 L 338 150" stroke="#ef4444" stroke-width="2.5" fill="none"/>
+  <text x="345" y="140" fill="#ef4444" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold">15KG DOWNWARD FORCE</text>
+
+  <!-- Sensitive Collapse Direction Arc -->
+  <path d="M 460 215 Q 490 270 470 330" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="464,324 470,335 476,324" fill="#f59e0b"/>
+  <text x="350" y="345" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">0.1s INSTANT COLLAPSE</text>
+
+  <!-- Interlock Pivot Indicators -->
+  <circle cx="211" cy="115" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="211" cy="277" r="6" fill="#fbbf24" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="370" cy="277" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- Right Technical Spec Strip Panel -->
+  <rect x="540" y="80" width="232" height="280" rx="3" fill="#0d1117" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="540" y="80" width="232" height="26" fill="#161b22"/>
+  <text x="552" y="97" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">SPECIFICATIONS // FIELD SET</text>
+
+  <text x="552" y="125" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">타겟 사냥감 (TARGET PREY)</text>
+  <text x="552" y="140" fill="#f1f5f9" font-family="'Space Grotesk', sans-serif" font-size="10">야생 쥐, 다람쥐, 산토끼, 소형 조류</text>
+
+  <text x="552" y="170" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">낙하 하중 (DEADFALL LOAD)</text>
+  <text x="552" y="185" fill="#ef4444" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">10~15kg 편평한 화강암/사암 바위</text>
+
+  <text x="552" y="215" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">트리거 민감도 (TRIGGER SENSITIVITY)</text>
+  <text x="552" y="230" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">15~20g 미세 터치 시 0.1초 즉시 붕괴</text>
+
+  <text x="552" y="260" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">자연물 재료 (NATURAL MATERIALS)</text>
+  <text x="552" y="275" fill="#f1f5f9" font-family="'Space Grotesk', sans-serif" font-size="10">마른 참나무 가지 3개 + 돌칼 가공</text>
+
+  <rect x="552" y="300" width="208" height="45" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+  <text x="560" y="318" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">★ 절대 원칙 (GOLDEN RULE)</text>
+  <text x="560" y="333" fill="#e7e5e4" font-family="'Space Grotesk', sans-serif" font-size="8.5">홈은 얕게 파서 스치자마자 떨어지게 하라</text>
+</svg>

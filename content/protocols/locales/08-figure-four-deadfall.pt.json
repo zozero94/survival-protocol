@@ -1,0 +1,107 @@
+{
+  "protocolId": "PR-08",
+  "category": "FOOD",
+  "title": "Como capturar caça com 3 gravetos e uma pedra (Armadilha de queda em 4)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[CRÍTICO: PROTEÍNA E ALIMENTO]",
+  "summary": "Correr atrás de animais na selva com as mãos vazias é um desperdício calórico desastroso que leva à exaustão fatal. Ao entalhar três gravetos secos para formar uma armação em formato de número '4' sustentada apenas por fricção sob uma pedra de 10 a 15 kg, você constrói uma armadilha por gravidade que desaba em 0,1 segundo quando a caça toca a isca.",
+  "timeRequired": "30 minutos (20 min entalhe + 10 min calibração)",
+  "successRate": "95% (seguindo o ajuste fino dos encaixes)",
+  "difficulty": "Média (entalhe de precisão e equilíbrio)",
+  "outputPerHour": "2 armadilhas por hora (reutilizável)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3 gravetos retos de madeira dura seca (espessura de um dedo, 25-30 cm)",
+      "desc": "Madeira curada que não curve sob o peso da pedra, entalhada em haste vertical, escora diagonal e vareta de isca."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 pedra plana e pesada (10-15 kg)",
+      "desc": "Deve pesar de 3 a 5 vezes a massa do animal alvo, com base reta para esmagar sem deixar vãos de fuga."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 lasca de sílex afiada ou lâmina de pedra",
+      "desc": "Instrumento de corte primitivo para entalhar cunhas a 45 graus e travas retangulares precisas."
+    },
+    {
+      "id": "mat-04",
+      "name": "Isca natural (frutas silvestres, larvas, insetos ou sementes)",
+      "desc": "Firmemente espetada na ponta interna da vareta para obrigar a caça a puxar horizontalmente."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Medir os gravetos e entalhar os encaixes em ângulo reto",
+      "description": "Selecione três gravetos retos. A haste vertical (20 cm) recebe uma cunha em forma de formão no topo e um entalhe quadrado no meio. A escora diagonal (25 cm) ganha um entalhe superior e um chanfro inferior. A vareta de isca (30 cm) recebe dois entalhes para travar na haste e na escora, afinando a ponta interna para a isca.",
+      "actionNote": "> Dica de entalhe: Mantenha as bordas dos entalhes retas e vivas. Bordas arredondadas escorregarão sob o peso da pedra.",
+      "svgFileName": "pr08-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
+        "HASTE VERTICAL (20 CM)",
+        "ESCORA DIAGONAL (25 CM)",
+        "VARETA DE ISCA (30 CM)",
+        "[PASSO 1] ENTALHAR CUNHA A 45° E TRAVAS RETAS"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Acoplar o entalhe da escora na cunha da haste vertical",
+      "description": "Apoie a haste vertical em solo plano. Encaixe o entalhe superior da escora diagonal sobre a cunha da haste a um ângulo de 45 graus. Pressione levemente para baixo para conferir se o encaixe forma uma alavanca estável sem girar para os lados.",
+      "actionNote": "> Verificação do ângulo: A inclinação de 40 a 50 graus transmite o peso da pedra de maneira perfeita para a vareta de isca.",
+      "svgFileName": "pr08-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
+        "CUNHA DO TOPO (BISEL EM FORMÃO)",
+        "ENTALHE SUPERIOR (ENGATE A 45°)",
+        "VETOR DE GRAVIDADE (PRESSÃO VERTICAL)",
+        "[PASSO 2] ACOPLAMENTO FIRME DA ALAVANCA SUPERIOR"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Encaixar a vareta de isca e formar a estrutura em '4' autoportante",
+      "description": "Segure a vareta de isca na horizontal. Engate o encaixe frontal na haste vertical e o encaixe traseiro na ponta da escora diagonal. Solte lentamente: a força de empuxo mútuo entre as três peças cria uma armação sólida em formato de '4' sem nenhuma corda.",
+      "actionNote": "> Teste de equilíbrio: A armação deve parar de pé sozinha. Se tombar, apare a base da haste vertical.",
+      "svgFileName": "pr08-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
+        "PIVÔ A (ENCAIXE HASTE-VARETA)",
+        "PIVÔ B (ENCAIXE ESCORA-VARETA)",
+        "TENSÃO OPOSTA (FORÇA DE CONTRA-EMPUXO)",
+        "[PASSO 3] ARMAÇÃO EM '4' SUSTENTADA POR FRICÇÃO"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Apoiar a pedra de 15 kg e regular o gatilho ultrassensível de 0,1s",
+      "description": "Espete a isca na ponta interna da vareta. Levante a pedra pesada de 10-15 kg com uma mão e apoie com cuidado sobre o topo da escora diagonal a 45 graus. Teste a sensibilidade com um graveto fino: um toque lateral de 20 gramas na isca deve provocar a queda instantânea da pedra.",
+      "actionNote": "> Alerta de segurança: Nunca coloque mãos ou dedos sob a pedra erguida durante a regulagem do gatilho.",
+      "svgFileName": "pr08-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
+        "PEDRA PLANA 15KG (INCLINADA A 45°)",
+        "PONTA DA ISCA (POSIÇÃO INTERNA)",
+        "COLAPSO INSTANTÂNEO (QUEDA EM 0,1S)",
+        "[PASSO 4] REGULAGEM DO GATILHO ULTRASSENSÍVEL"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro fatal: Entalhar encaixes muito fundos ou usar pedra muito leve",
+    "description": "Encaixes fundos demais travam a armadilha e não disparam quando a caça morde a isca. Uma pedra leve apenas fere o animal, que foge e alerta todas as outras presas da região.",
+    "consequence": "Consequência: Falha total na caça, fome e presas ariscas espantadas"
+  },
+  "shortsScript": {
+    "hook": "Correr atrás de caça na mata vai te matar de fome! Monte essa armadilha de pedra de 0,1s!",
+    "body": "Entalhe 3 gravetos em formato de número 4: sustenta por pura fricção uma pedra de 15 kg sem nenhuma corda! O segredo é manter os encaixes rasos. Assim que o animal toca a isca, a pedra desaba em 0,1 segundo!",
+    "outro": "Acesse guias de sobrevivência offline sem usar dados no link do perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr08-outcome.svg",
+    "title": "Visão geral da armadilha de gravidade em número 4 armada",
+    "description": "Três gravetos de madeira em equilíbrio sustentando uma pedra plana de 15 kg, projetada para colapso instantâneo ao menor toque."
+  }
+}

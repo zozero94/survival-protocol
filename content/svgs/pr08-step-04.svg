@@ -1,0 +1,86 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgP08S4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090b"/>
+      <stop offset="50%" stop-color="#0e1217"/>
+      <stop offset="100%" stop-color="#080a0d"/>
+    </linearGradient>
+    <linearGradient id="rockGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="35%" stop-color="#475569"/>
+      <stop offset="70%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="woodGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#713f12"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <filter id="shadowP08S4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Background Backdrop -->
+  <rect width="400" height="400" fill="url(#bgP08S4)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+
+  <!-- Technical Corner Crosshairs -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
+
+  <!-- Label 1: Blueprint Header -->
+  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.5">FIG. 04 // ROCK LOAD &amp; SENSITIVE TRIGGER SET</text>
+  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
+
+  <!-- Ground Plane Baseline -->
+  <line x1="20" y1="310" x2="380" y2="310" stroke="#374151" stroke-width="1.5"/>
+
+  <!-- 1. The Numeral 4 Trigger Mechanism (Center-Left) -->
+  <g filter="url(#shadowP08S4)">
+    <!-- Vertical Post -->
+    <rect x="130" y="95" width="16" height="215" rx="2" fill="url(#woodGrad4)" stroke="#451a03" stroke-width="1"/>
+    <!-- Diagonal Strut: (138, 80) down-right to (245, 215) -->
+    <line x1="138" y1="80" x2="245" y2="215" stroke="#000000" stroke-width="18" stroke-linecap="round"/>
+    <line x1="138" y1="80" x2="245" y2="215" stroke="url(#woodGrad4)" stroke-width="14" stroke-linecap="round"/>
+    <!-- Horizontal Bait Stick -->
+    <rect x="90" y="205" width="220" height="13" rx="2" fill="url(#woodGrad4)" stroke="#451a03" stroke-width="1"/>
+    <!-- Bait on Pin (Red Berry / Grub) at x=305, y=211 -->
+    <circle cx="305" cy="211" r="7" fill="#ef4444" stroke="#ffffff" stroke-width="1.2"/>
+    <circle cx="307" cy="209" r="2" fill="#fca5a5"/>
+  </g>
+
+  <!-- 2. The 15kg Flat Rock (Leaning at 45 deg over the trigger) -->
+  <g filter="url(#shadowP08S4)">
+    <!-- Heavy Rock Polygon: Base on ground at left (35, 310), top edge resting on strut at (138, 75), right peak (310, 160) -->
+    <polygon points="40,305 130,75 148,70 330,165 315,280 180,310" fill="url(#rockGrad4)" stroke="#64748b" stroke-width="2"/>
+    <!-- Rock surface texture fissures & contours -->
+    <path d="M 120 110 Q 180 140 280 200" stroke="#1e293b" stroke-width="2" fill="none"/>
+    <path d="M 80 220 Q 150 210 240 260" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+    <path d="M 170 85 L 210 120 L 290 175" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 3" fill="none"/>
+  </g>
+
+  <!-- Instant Collapse Direction Arc & Force Arrows -->
+  <path d="M 230 110 Q 280 150 280 230" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <polygon points="274,225 280,240 286,225" fill="#ef4444"/>
+
+  <!-- Technical Labels 2, 3, 4 -->
+  <!-- Label 2: Flat Rock -->
+  <text x="32" y="65" fill="#e2e8f0" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">FLAT ROCK 15KG (45도 기울여 버팀목 안착)</text>
+  <path d="M 105 70 L 130 73" stroke="#e2e8f0" stroke-width="0.8"/>
+
+  <!-- Label 3: Bait Pin -->
+  <text x="210" y="190" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">BAIT PIN (미끼대 안쪽 끝 미끼 장착)</text>
+  <path d="M 270 195 L 300 208" stroke="#f87171" stroke-width="0.8"/>
+
+  <!-- Label 4: Instant Collapse -->
+  <text x="180" y="270" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">INSTANT COLLAPSE (미세 접촉 시 0.1초 붕괴)</text>
+
+  <!-- Action Highlight Block (Label 5) -->
+  <rect x="24" y="338" width="352" height="38" rx="2" fill="#111827" stroke="#374151" stroke-width="1"/>
+  <rect x="24" y="338" width="4" height="38" fill="#ef4444"/>
+  <!-- Label 5: Step Core Instruction -->
+  <text x="38" y="362" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">[4단계 핵심] 스치기만 해도 바위가 떨어지는 민감도 세팅</text>
+</svg>

@@ -1,0 +1,107 @@
+{
+  "protocolId": "PR-08",
+  "category": "FOOD",
+  "title": "Wildtiere mit 3 Holzstäben und einem Felsblock fangen (Vierer-Schlagfalle)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PROTEIN & NAHRUNG KRITISCH]",
+  "summary": "Tiere mit bloßen Händen zu jagen ist eine verhängnisvolle Kalorienverschwendung und führt zur Erschöpfung. Indem drei trockene Hartholzstäbe mit Kerben zu einem Zahl-4-Rahmen ineinandergreifen und unter Reibungskraft einen 10–15 kg schweren Flachstein stützen, entsteht eine hochempfindliche Schwerkraftfalle, die bei Berührung des Köders in 0,1 Sekunden zuschlägt.",
+  "timeRequired": "30 Minuten (20 Min Schnitzen + 10 Min Ausrichtung)",
+  "successRate": "95% (bei Einhaltung der Auslöser-Kerbung)",
+  "difficulty": "Mittel (präzises Schnitzen & Gleichgewicht)",
+  "outputPerHour": "2 Fallen pro Stunde (dauerhaft wiederverwendbar)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3 fingerdicke, gerade Hartholzstäbe (25-30 cm lang)",
+      "desc": "Trockenes Eichenholz, das sich unter schwerer Steinlast nicht durchbiegt, zugeschnitten als Pfosten, Stütze und Köderstab."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 flacher, schwerer Felsbrocken (10-15 kg)",
+      "desc": "Muss das 3- bis 5-fache des Beutetiergewichts wiegen und eine ebene Unterseite besitzen, die Fluchtlücken ausschließt."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 scharfer Feuerstein-Abschlag oder Steinklinge",
+      "desc": "Primitives Schneidwerkzeug zum Schnitzen exakter 45-Grad-Keile und rechtwinkliger Haltenuten."
+    },
+    {
+      "id": "mat-04",
+      "name": "Natürlicher Köder (Waldbeeren, Larven, Insekten, Samen)",
+      "desc": "Fest auf die innere Spitze des Köderstabs gespießt, um das Tier zum horizontalen Ziehen zu zwingen."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Stäbe abmessen und rechtwinklige Haltekerben schnitzen",
+      "description": "Drei gerade Stäbe auswählen. Der Standpfosten (20 cm) erhält oben eine flache Meißelspitze und mittig eine Querkerbe. Die diagonale Stütze (25 cm) erhält oben eine Passkerbe und unten eine Innenschräge. Der Köderstab (30 cm) wird mit zwei Kerben für Pfosten und Stütze versehen und läuft innen spitz zu.",
+      "actionNote": "> Schnitzregel: Kerbenkanten messerscharf und rechtwinklig halten. Runde Kanten rutschen unter dem Steingewicht ab.",
+      "svgFileName": "pr08-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
+        "STANDPFOSTEN (20 CM PFOSTEN)",
+        "DIAGONALE STÜTZE (25 CM STÜTZE)",
+        "KÖDERSTAB (30 CM KÖDERSTAB)",
+        "[SCHRITT 1] 45°-KEIL UND HALTEKERBEN SCHNITZEN"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Obere Kerbe der Diagonale auf die Pfostenmeißelspitze setzen",
+      "description": "Den Standpfosten auf ebenen Boden stellen. Die Oberkerbe der diagonalen Stütze im 45-Grad-Winkel auf die Meißelspitze des Pfostens setzen. Mit leichtem Handdruck prüfen, ob beide Hölzer ohne seitliches Verdrehen einen stabilen Hebel bilden.",
+      "actionNote": "> Winkelprüfung: Ein Neigungswinkel von 40-50 Grad leitet das Steingewicht optimal in Vorspannung auf den Köderstab.",
+      "svgFileName": "pr08-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
+        "MEISSELSPITZE (OBERER FLACHKEIL)",
+        "OBERKERBE (45°-PASSUNG)",
+        "SCHWERKRAFTVEKTOR (DRUCKLINIE)",
+        "[SCHRITT 2] RUTSCHFESTE HEBELVERBINDUNG SICHERN"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Köderstab einrasten, um freistehenden '4'-Rahmen zu bilden",
+      "description": "Den Köderstab waagerecht halten. Die vordere Kerbe in den Pfosten einhaken, dann das untere Ende der Diagonalen in die hintere Kerbe ziehen und langsam loslassen: Die Gegenspannung verriegelt die drei Hölzer ohne Seil zu einer freistehenden '4'.",
+      "actionNote": "> Gleichgewichtstest: Der Rahmen muss selbstständig stehen. Falls er kippt, Pfostenbasis flach nacharbeiten.",
+      "svgFileName": "pr08-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
+        "DREHPUNKT A (PFOSTEN-KÖDERSTAB)",
+        "DREHPUNKT B (STÜTZE-KÖDERSTAB)",
+        "GEGENSPANNUNG (WECHSELSEITIGER SCHUB)",
+        "[SCHRITT 3] DURCH REIBUNG FREISTEHENDER 4ER-RAHMEN"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: 15-kg-Stein auflegen und 0,1s Auslöser-Empfindlichkeit justieren",
+      "description": "Den Köder auf die innere Spitze spießen. Den 10-15 kg schweren Stein anheben und vorsichtig im 45-Grad-Winkel auf die Diagonale stützen. Die Empfindlichkeit mit einem Zweig testen: Eine 20-Gramm-Berührung am Köder muss den Stein augenblicklich herabfallen lassen.",
+      "actionNote": "> Sicherheitswarnung: Niemals Hände oder Finger unter den schwebenden Stein halten.",
+      "svgFileName": "pr08-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
+        "FLACHSTEIN 15KG (45°-WINKEL)",
+        "KÖDERSPITZE (INNERE KÖDERLAGE)",
+        "SOFORTIGER EINSTURZ (0,1S ABSTURZ)",
+        "[SCHRITT 4] HAARFEINE AUSLÖSER-EINSTELLUNG"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Kerben zu tief schneiden oder zu leichten Stein wählen",
+    "description": "Zu tiefe Kerben klemmen fest und lösen bei Berührung nicht aus. Ein zu leichter Stein verletzt das Beutetier nur, sodass es flieht und Artgenossen im Revier dauerhaft warnt.",
+    "consequence": "Folge: Jagdmisserfolg, Hungertod und gewarntes Wild im gesamten Gebiet"
+  },
+  "shortsScript": {
+    "hook": "Wild hinterherzurennen lässt dich verhungern! Baue diese 0,1s-Steinfalle aus 3 Stöcken!",
+    "body": "Drei Stöcke mit Kerben zur Zahl 4 verbinden: Hält ganz ohne Seile durch reine Reibung einen 15kg-Felsen! Der Clou: Kerben flach halten. Sobald ein Nagetier den Köder berührt, bricht die Spannung und der Fels zermalmt die Beute in 0,1 Sekunden!",
+    "outro": "Offline-Überlebenspläne ohne Internetzugang über den Link im Profil abrufen."
+  },
+  "outcome": {
+    "svgFileName": "pr08-outcome.svg",
+    "title": "Gesamtansicht der scharfgestellten Vierer-Schlagfalle",
+    "description": "Drei Hartholzstäbe im Spannungs-Gleichgewicht stützen einen 15 kg schweren Felsen, konstruiert für augenblicklichen Einsturz bei Berührung."
+  }
+}
