@@ -1,0 +1,150 @@
+{
+  "protocolId": "PR-06",
+  "category": "SHELTER",
+  "title": "Cómo Construir un Fogón Primitivo de Barro y Piedras para Protegerse del Viento y Retener Calor",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[CALOR Y REFUGIO ESENCIAL]",
+  "summary": "Hacer una fogata abierta directamente en el suelo pierde más del 80% del calor con el viento y consume tres veces más leña, mientras que las chispas voladoras representan un grave riesgo de incendio. Al levantar un fogón en cúpula con barro, arena, hierba seca y piedras secas, se crea un refugio térmico resistente al mal tiempo que permite cocinar y conservar calor durante toda la noche.",
+  "timeRequired": "3 Horas",
+  "successRate": "90% (Con Curado Lento)",
+  "difficulty": "Media (Amasado de Barro y Apilado)",
+  "outputPerHour": "1 Fogón Permanente",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Cuencos de Arcilla Roja Pegajosa (excavada en riberas o taludes)",
+      "desc": "Elija tierra densa que se amase como masa de pan sin desmoronarse. Actúa como el aglutinante térmico principal."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Cuenco de Arena Gruesa de Río (arena seca con granos minerales)",
+      "desc": "La arcilla pura se encoge y se agrieta al secar. La arena gruesa proporciona el esqueleto estructural que evita grietas."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 Cuenco de Hierba Seca o Paja Cortada a la Medida de un Dedo",
+      "desc": "Funciona como fibra de refuerzo dentro de la mezcla, impidiendo que las paredes colapsen bajo el calor del fuego."
+    },
+    {
+      "id": "mat-04",
+      "name": "15~20 Piedras Quebradas Completamente Secas (tamaño puño a cabeza)",
+      "desc": "Las piedras de río anegadas explotan con el calor. Utilice únicamente piedras secas recolectadas de lomas soleadas a más de 10 m del agua."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Pisar 2 partes de arcilla, 1 de arena y 1 de hierba seca con agua hasta formar barro maleable",
+      "description": "Vierta sobre tierra plana 2 cuencos de arcilla roja, 1 de arena gruesa y 1 de hierba seca cortada. Agregue pequeñas cantidades de agua mientras pisotea con los talones. Doble la masa por la mitad y pise durante más de 10 minutos hasta poder formar una bola del tamaño de un puño sin fisuras superficiales.",
+      "actionNote": "> Clave del Agua: Demasiada agua hace lodo aguado que se cae; muy poca deja polvo quebradizo. Busque una consistencia firme similar a masa de empanadas.",
+      "svgFileName": "pr06-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CLAY TEMPERING & FIBER MATRIX BLUEPRINT",
+        "① 2 partes de arcilla roja pegajosa",
+        "Materia prima aglutinante base",
+        "+",
+        "② 1 parte de arena gruesa de río",
+        "Evita contracción y agrietamiento",
+        "+",
+        "③ Fibra de hierba seca cortada",
+        "Malla estructural de refuerzo interno",
+        "④ Agregar agua poco a poco y pisar con talones",
+        "Nunca inundar de golpe; doblar y pisar",
+        "⑤ Bola de barro firme terminada",
+        "Moldear en bola sólida tamaño puño",
+        "Superficie exterior sin fisuras"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Disponer piedras secas en herradura (forma de U) sobre suelo seco para la base",
+      "description": "Oriente la boca de alimentación de leña (ancho de una mano, aprox. 20 cm) en dirección opuesta al viento. Coloque piedras secas en forma de U. Extienda en el fondo interior 2~3 cm de arena y grava seca para bloquear la humedad del suelo. Rellene todas las juntas entre piedras con barro firme usando los puños para anclarlas.",
+      "actionNote": "> Dirección del Viento: Colocar la boca de frente al viento provocará llamaradas y chispas hacia su rostro. Apunte siempre en dirección contraria o perpendicular.",
+      "svgFileName": "pr06-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // FOUNDATION LAYOUT & AIR ENTRY SCHEMATIC",
+        "① Boca frontal para leña (20 cm de ancho)",
+        "Ancho óptimo para leña y entrada de aire",
+        "② Piedras secas de anclaje en forma de U",
+        "Perímetro estructural de la base",
+        "③ Mortero de barro grueso en juntas",
+        "Sella fugas de aire entre piedras",
+        "④ Aislante de arena y grava en el fondo",
+        "Barrera térmica contra el suelo frío",
+        "⑤ Boca orientada en contra del viento",
+        "Protege las brasas de ráfagas violentas"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Apilar piedras y barro de forma alternada hasta formar una cúpula a la altura de la rodilla",
+      "description": "Extienda una capa de barro del grosor de una palma (aprox. 5 cm) sobre las piedras base, asiente la siguiente hilera trabando las uniones y vaya inclinándolas hacia adentro hasta alcanzar la altura de la rodilla (aprox. 45 cm). Al terminar, humedezca sus manos en agua y alise la pared interior para crear una curva reflectora continua.",
+      "actionNote": "> Evitar Colapso: Nunca levante paredes altas solo con barro sin núcleo de piedra. Las piedras brindan el esqueleto y el barro retiene la radiación térmica.",
+      "svgFileName": "pr06-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOME CHAMBER CROSS-SECTION & THERMAL CURVATURE",
+        "45cm",
+        "① Corte transversal de piedras y barro",
+        "Piedras trabadas evitan fallas estructurales",
+        "② Pared gruesa de barro (5 cm) aislante",
+        "Masa térmica retiene calor toda la noche",
+        "③ Superficie lisa reflectora de calor",
+        "Alisada con mano húmeda para buen tiro",
+        "④ Cámara de combustión esférica interior",
+        "El calor circula y se concentra arriba",
+        "⑤ Perfil total a la rodilla (45 cm)",
+        "Equilibrio ideal de volumen y cocción"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Abrir un orificio superior para ollas y perforar una chimenea trasera",
+      "description": "Deje una abertura circular de 15~20 cm en la cúspide para asentar ollas de barro o piedras planas de cocción. Incruste tres piedras pequeñas alrededor del borde para dejar 1 cm de separación que permita el paso del aire. En la parte superior trasera, introduzca una rama gruesa en diagonal para abrir el conducto de la chimenea.",
+      "actionNote": "> Principio de Tiro: Sin chimenea trasera, el humo sale por el frente cegando los ojos. El conducto genera un efecto térmico que atrae oxígeno fresco por la base.",
+      "svgFileName": "pr06-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // AIR DRAFT PERSPECTIVE & EXHAUST BLUEPRINT",
+        "① Entrada inferior de aire (oxígeno fresco)",
+        "Aire fresco succionado hacia las brasas",
+        "② Orificio superior plano para cocinar",
+        "Asiento para olla o plancha de piedra",
+        "③ Salida trasera inclinada de chimenea",
+        "Expulsa el humo denso hacia atrás",
+        "④ Vórtice térmico ascendente de calor",
+        "Gira en la cámara calentando la base",
+        "⑤ Salientes espaciadoras para el tiro",
+        "El fuego no se ahoga al colocar la olla"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Paso 5: Curar con fuego suave de ramitas durante 3 horas para endurecer el barro como ladrillo",
+      "description": "Nunca encienda un fuego fuerte inmediato en barro fresco; la ebullición repentina del agua interna reventará las paredes. Encienda una pequeña fogata de ramitas cerca de la boca y manténgala suave durante 3~4 horas. Observe cómo sale vapor blanco mientras el barro cambia de marrón oscuro húmedo a ocre pálido seco. Cuando esté caliente y seco al tacto, el fogón permanente estará listo.",
+      "actionNote": "> Reparar Fisuras: Si aparecen grietas finas durante el secado, frote pasta de barro húmeda con la yema de los dedos para sellarlas de inmediato.",
+      "svgFileName": "pr06-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // CONTROLLED DEHYDRATION & CERAMIC HARDENING",
+        "① Fuego suave de ramitas en la entrada",
+        "Calor moderado permite salida de vapor",
+        "② Penachos de vapor de agua evaporándose",
+        "El agua interna se evapora sin reventar",
+        "③ Transición visual de color",
+        "Marrón oscuro húmedo → ocre pálido seco",
+        "④ Prueba de tacto seco y caliente",
+        "Pared tibia sin humedad pegajosa",
+        "⑤ Pasta de retoque para fisuras finas",
+        "Sellar grietas con pasta de barro fresca"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Usar Piedras Húmedas de Río en Contacto Directo con el Fuego en la Cámara",
+    "description": "Las piedras de río anegadas retienen agua atrapada en microporos internos aunque su superficie parezca seca. Al someterse a fuegos de más de 300°C, el agua atrapada se convierte instantáneamente en vapor a alta presión y estalla como una granada. Esquirlas afiladas salen disparadas hacia el rostro y los ojos, provocando ceguera permanente y graves traumatismos. Use siempre piedras de lomas secas a 10 m del agua y cúbralas con 5 cm de barro grueso.",
+    "consequence": "Consecuencia: La explosión por vapor arroja metralla de piedra provocando ceguera y heridas graves"
+  },
+  "shortsScript": {
+    "hook": "Un fuego abierto en el suelo pierde el 80% de su calor. Así se construye un fogón primitivo resistente a la lluvia.",
+    "body": "Pise 2 partes de arcilla, 1 de arena y 1 de hierba seca con agua hasta lograr una masa firme. Forme una herradura de piedras secas con la boca en contra del viento. Levante una cúpula trabando piedras y barro con un orificio superior y una chimenea trasera. Cure 3 horas con fuego suave para dejarlo duro como ladrillo. Jamás use piedras húmedas de río adentro; estallarán por presión de vapor.",
+    "outro": "Cocine alimentos y mantenga calor agradable durante toda la noche bajo tormentas."
+  }
+}

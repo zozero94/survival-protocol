@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto block" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow-wind" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 8 5 L 0 9 z" fill="#06B6D4" />
+            </marker>
+          </defs>
+
+          <!-- Blueprint Header -->
+          <text x="75" y="40" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">
+            FIG. 02 // FOUNDATION LAYOUT &amp; AIR ENTRY SCHEMATIC
+          </text>
+          <line x1="75" y1="48" x2="605" y2="48" stroke="#222222" stroke-width="1" />
+
+          <!-- Center U-Shape Stone Structure (Top-Down View) -->
+          <g transform="translate(180, 75)">
+            <!-- Base Ground Insulation Bed (모래/자갈층) -->
+            <rect x="0" y="0" width="220" height="190" fill="#121212" stroke="#262626" stroke-width="1" stroke-dasharray="3,3" />
+
+            <!-- U-shaped Mud Bed -->
+            <path d="M 40 170 L 40 50 Q 110 10 180 50 L 180 170" fill="none" stroke="#654321" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+
+            <!-- Stones in U-Shape -->
+            <!-- Left arm stones -->
+            <circle cx="40" cy="160" r="14" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <circle cx="40" cy="120" r="15" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <circle cx="45" cy="80" r="14" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <!-- Curve stones -->
+            <circle cx="70" cy="45" r="15" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <circle cx="110" cy="30" r="16" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <circle cx="150" cy="45" r="15" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <!-- Right arm stones -->
+            <circle cx="175" cy="80" r="14" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <circle cx="180" cy="120" r="15" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+            <circle cx="180" cy="160" r="14" fill="#202020" stroke="#E5E5E5" stroke-width="1.5" />
+
+            <!-- Front Opening (장작 입구 폭 20cm) -->
+            <line x1="56" y1="165" x2="164" y2="165" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,4" />
+            <line x1="56" y1="160" x2="56" y2="170" stroke="#F59E0B" stroke-width="1.5" />
+            <line x1="164" y1="160" x2="164" y2="170" stroke="#F59E0B" stroke-width="1.5" />
+          </g>
+
+          <!-- Label 1: 앞쪽 장작 넣는 입구 (한 뼘 너비 20cm) -->
+          <text x="80" y="290" fill="#F59E0B" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ① 앞쪽 장작 넣는 입구 (한 뼘 너비 20cm)
+          </text>
+          <text x="80" y="308" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            불길 조절과 공기 공급에 알맞은 입구 폭
+          </text>
+
+          <!-- Label 2: U자형으로 둘러앉힌 마른 돌 -->
+          <line x1="180" y1="130" x2="120" y2="100" stroke="#E5E5E5" stroke-width="1" />
+          <text x="75" y="85" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ② U자형 주먹만 한 마른 돌
+          </text>
+          <text x="75" y="103" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            기초를 지탱하는 1차 뼈대
+          </text>
+
+          <!-- Label 3: 돌 틈새를 메운 진흙 반죽 -->
+          <line x1="395" y1="145" x2="450" y2="120" stroke="#D97706" stroke-width="1" />
+          <text x="455" y="115" fill="#D97706" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ③ 틈새를 메운 진흙 반죽
+          </text>
+          <text x="455" y="133" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            돌 사이 공기 누출 완전 차단
+          </text>
+
+          <!-- Label 4: 바닥 모래·자갈 단열층 -->
+          <line x1="290" y1="180" x2="450" y2="190" stroke="#06B6D4" stroke-width="1" />
+          <text x="455" y="185" fill="#06B6D4" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ④ 바닥 마른 모래·자갈 단열층
+          </text>
+          <text x="455" y="203" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            차가운 땅바닥 습기와 냉기 차단
+          </text>
+
+          <!-- Label 5: 바람 불어오는 반대 방향 -->
+          <g transform="translate(420, 245)">
+            <path d="M 0 15 L 45 15" stroke="#06B6D4" stroke-width="1.5" marker-end="url(#arrow-wind)" />
+            <path d="M 5 28 L 50 28" stroke="#06B6D4" stroke-width="1.5" marker-end="url(#arrow-wind)" />
+          </g>
+          <text x="390" y="290" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ⑤ 바람 불어오는 반대쪽으로 입구 배치
+          </text>
+          <text x="390" y="308" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            강풍에 불티가 역류하거나 꺼지지 않도록 보호
+          </text>
+        </svg>

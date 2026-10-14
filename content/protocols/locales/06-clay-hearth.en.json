@@ -1,0 +1,150 @@
+{
+  "protocolId": "PR-06",
+  "category": "SHELTER",
+  "title": "How to Build a Primitive Clay & Stone Hearth to Block Wind and Trap Heat",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ESSENTIAL SHELTER & WARMTH]",
+  "summary": "Building an open campfire on the ground loses over 80% of heat to the wind and burns firewood three times faster, while windborne sparks pose a severe fire hazard. By building a cob dome hearth with clay, sand, dry grass, and dry stones, you create a weatherproof cooking and heating shelter that traps heat and stays warm all night long.",
+  "timeRequired": "3 Hours",
+  "successRate": "90% (With Slow Pre-Cure)",
+  "difficulty": "Medium (Mud Mixing & Stone Stacking)",
+  "outputPerHour": "1 Permanent Hearth",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Bowls of Sticky Red Clay (dug from riverbank or exposed soil banks)",
+      "desc": "Choose dense, cohesive clay that squishes like dough without crumbling. Acts as the primary thermal binder."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Bowl of Coarse Sand or Gritty Soil (dry river sand)",
+      "desc": "Pure clay shrinks and cracks apart when drying. Coarse sand acts as a structural aggregate to prevent cracking."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 Bowl of Dry Grass or Straw Cut to Finger Length",
+      "desc": "Acts as organic reinforcement fiber within the mud mixture, preventing the walls from shattering under intense fire heat."
+    },
+    {
+      "id": "mat-04",
+      "name": "15~20 Bone-Dry Fractured Stones (fist to head size)",
+      "desc": "Waterlogged river stones explode violently under heat. Use only bone-dry stones gathered from sunny ridges at least 10m away from water."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Stomp 2 Parts Clay, 1 Part Sand, and 1 Part Dry Grass with Water into Tough Cob",
+      "description": "Pour 2 bowls of red clay, 1 bowl of coarse sand, and 1 bowl of finger-length dry grass onto flat ground. Add small splashes of water while thoroughly stomping with bare heels. Fold the clay mound in half and stomp repeatedly for 10 minutes until you can roll a fist-sized ball without surface cracks.",
+      "actionNote": "> Key Principle: Too much water makes sloppy mud that slumps; too little leaves crumbly dust. Aim for a stiff, dough-like consistency that holds its shape firmly.",
+      "svgFileName": "pr06-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CLAY TEMPERING & FIBER MATRIX BLUEPRINT",
+        "① 2 parts sticky red clay",
+        "Cohesive binder base material",
+        "+",
+        "② 1 part coarse river sand",
+        "Prevents shrinkage and cracking",
+        "+",
+        "③ Finger-length dry grass fiber",
+        "Reinforcing structural tensile web",
+        "④ Add water gradually and stomp with heels",
+        "Never flood all at once; fold & stomp",
+        "⑤ Finished stiff cob ball",
+        "Roll into a solid fist-sized ball",
+        "Zero cracks on outer surface"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Lay Fist-Sized Dry Stones in a Horseshoe U-Shape to Anchor the Foundation",
+      "description": "Orient the fire mouth opening (one hand-span wide, approx. 20 cm) away from the prevailing wind. Place fist-sized dry stones in a horseshoe U-shape. Lay 2~3 cm of dry sand and gravel inside the floor to block ground moisture and cold. Pack thick cob mud between all stone crevices with your fists to anchor them firmly.",
+      "actionNote": "> Wind Direction: Facing the mouth straight into the wind blows hot embers into your face. Always point the opening downwind or crosswind.",
+      "svgFileName": "pr06-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // FOUNDATION LAYOUT & AIR ENTRY SCHEMATIC",
+        "① Front firewood intake mouth (20 cm wide)",
+        "Optimal width for wood feeding & airflow",
+        "② Horseshoe U-shaped dry anchor stones",
+        "Primary foundation perimeter",
+        "③ Thick cob mortar in stone joints",
+        "Prevents drafts and air leaks",
+        "④ Dry sand & gravel base insulator",
+        "Thermal barrier against cold ground",
+        "⑤ Fire mouth facing away from wind",
+        "Protects ember bed from wind gusts"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Stagger Stones and Cob Layer by Layer into a Knee-High Dome",
+      "description": "Spread a palm-thick layer (approx. 5 cm) of cob over the foundation stones, bed down the next row of stones staggered over the joints, and corbel them slightly inward as you build up to knee height (approx. 45 cm). Once the dome is built, dip your hands in water and smooth the inner clay wall into a slick, continuous curved surface to reflect and circulate heat.",
+      "actionNote": "> Prevent Collapse: Never build pure mud walls high without stone cores. The stones provide the structural skeleton while the thick clay skin traps radiant heat.",
+      "svgFileName": "pr06-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOME CHAMBER CROSS-SECTION & THERMAL CURVATURE",
+        "45cm",
+        "① Staggered stone & cob cross-section",
+        "Interlocking stones prevent structural failure",
+        "② Palm-thick (5 cm) thermal cob wall",
+        "Heavy thermal mass traps heat overnight",
+        "③ Smooth water-burnished heat reflector",
+        "Smoothed by wet hand for smooth draft",
+        "④ Spherical internal combustion chamber",
+        "Heat circulates and concentrates upward",
+        "⑤ Knee-high (45 cm) total profile",
+        "Optimal balance of volume and cooking height"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Cut a Top Cooking Pot Ring and Punch a Rear Exhaust Flue",
+      "description": "Leave a 15~20 cm circular opening at the very top of the dome for resting a clay pot or flat cooking stone. Embed three small stone spacers around the rim to create a 1 cm gap so sitting a pot will not choke the fire. Push a wrist-thick green stick angled through the upper back wall to pierce a chimney flue hole for smoke exhaust.",
+      "actionNote": "> Air Draft Principle: Without a high rear flue, smoke billows out the front wood opening into your eyes. The flue creates a strong thermal chimney effect that draws oxygen vigorously into the base.",
+      "svgFileName": "pr06-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // AIR DRAFT PERSPECTIVE & EXHAUST BLUEPRINT",
+        "① Lower front air intake (oxygen supply)",
+        "Cold fresh air drawn into burning ember bed",
+        "② Flat top circular cooking port",
+        "Seat for stone pan or clay pot",
+        "③ Upper rear angled chimney flue",
+        "Draws acrid smoke cleanly out the back",
+        "④ Updraft thermal vortex airflow",
+        "Vigorous draft heats cooking vessel base",
+        "⑤ Pot spacer nubs for continuous draft",
+        "Air passes freely even with pot seated"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Step 5: Cure with a Low Twig Fire for 3 Hours to Bake the Clay into Brick Hardness",
+      "description": "Never light a raging log fire immediately in fresh wet cob; sudden boiling moisture will blow steam fissures through the walls. Build a tiny fist-sized twig fire near the front mouth and keep it gentle for 3~4 hours. Watch white steam vapor evaporate from the outer walls as the dark wet brown clay shifts to a warm light ochre. Once dry and warm to the touch, your permanent hearth is ready.",
+      "actionNote": "> Repairing Hairline Cracks: If minor hairline cracks appear while drying, smear a fingertip of wet clay paste over them to seal and fuse them instantly.",
+      "svgFileName": "pr06-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // CONTROLLED DEHYDRATION & CERAMIC HARDENING",
+        "① Gentle twig ember fire at mouth",
+        "Gentle heat allows gradual moisture exit",
+        "② Steam vapor plumes venting outward",
+        "Internal water evaporates safely",
+        "③ Color transition milestone",
+        "Dark damp brown → dry pale ochre",
+        "④ Warm & dry touch test",
+        "Wall feels warm without sticky dampness",
+        "⑤ Touch-up paste for hairline cracks",
+        "Seal minor fissures with wet clay paste"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Using Wet River Stones Directly Exposed to Fire Inside the Chamber",
+    "description": "Waterlogged river stones and creek pebbles have moisture trapped inside microscopic pores even if the surface feels dry. When exposed to fires over 300°C, trapped water violently flashes into high-pressure steam and detonates like a grenade. Razor-sharp shrapnel flies outward into your face and eyes, causing blindness and catastrophic lacerations. Always gather dry stones from sunny ridges 10m away from water, and coat them under at least 5 cm of thick cob mud.",
+    "consequence": "Consequence: Steam explosion shrapnel causes permanent blindness and severe trauma"
+  },
+  "shortsScript": {
+    "hook": "An open ground fire loses 80% of its heat. Here is how to build a weatherproof primitive hearth.",
+    "body": "Mix 2 parts sticky clay, 1 part sand, and 1 part dry grass with water and stomp into dough. Lay dry stones in a U-shape facing away from the wind. Stagger stones and thick mud into a knee-high dome with a pot hole on top and a chimney flue out back. Cure with a tiny fire for 3 hours to bake it rock-solid. Never use wet river stones inside; steam pressure will cause them to detonate.",
+    "outro": "Cook your meals and stay warm all night through rain and howling winds."
+  }
+}

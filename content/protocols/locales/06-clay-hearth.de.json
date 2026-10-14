@@ -1,0 +1,150 @@
+{
+  "protocolId": "PR-06",
+  "category": "SHELTER",
+  "title": "Wie man eine primitive Lehmofenfeuerstelle baut, um Wind abzuhalten und Hitze zu speichern",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[LEBENSWICHTIGE WÄRME & UNTERKUNFT]",
+  "summary": "Ein offenes Bodenfeuer verliert über 80% seiner Wärme an den Wind und verbraucht dreimal mehr Brennholz, während umherfliegende Funken eine schwere Brandgefahr darstellen. Durch den Bau eines Kuppelofens aus Lehm, Sand, trockenem Gras und trockenen Steinen entsteht eine wetterfeste Koch- und Wärmestelle, die Hitze speichert und die ganze Nacht über warm hält.",
+  "timeRequired": "3 Stunden",
+  "successRate": "90% (Mit langsamer Vortrocknung)",
+  "difficulty": "Mittel (Lehmkneten & Steinmauern)",
+  "outputPerHour": "1 Dauerhafter Ofen",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Schalen klebriger roter Lehm (an Uferböschungen ausgegraben)",
+      "desc": "Wählen Sie dichten, bindigen Lehm, der sich wie Teig formen lässt, ohne zu zerbröckeln. Dient als thermisches Hauptbindemittel."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Schale grober Flusssand (trockener Sand mit Mineralkörnern)",
+      "desc": "Reiner Lehm schrumpft und reißt beim Trocknen. Grober Sand bildet das tragende Gerüst, das Rissbildung verhindert."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 Schale fingerlang geschnittenes trockenes Gras oder Stroh",
+      "desc": "Wirkt als Faserarmierung in der Lehmmischung und verhindert, dass die Wände unter großer Hitze zerspringen."
+    },
+    {
+      "id": "mat-04",
+      "name": "15~20 staubtrockene Bruchsteine (faust- bis kopf傚groß)",
+      "desc": "Wassergesättigte Flusssteine explodieren bei Hitzeeinwirkung. Verwenden Sie nur trockene Steine von sonnigen Hängen mindestens 10 m vom Wasser entfernt."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: 2 Teile Lehm, 1 Teil Sand und 1 Teil trockenes Gras mit Wasser zu zähem Cob-Mörtel stampfen",
+      "description": "Geben Sie 2 Schalen roten Lehm, 1 Schale groben Sand und 1 Schale fingerlanges trockenes Gras auf ebenen Boden. Geben Sie schrittweise kleine Mengen Wasser hinzu, während Sie das Gemisch mit den Fersen gründlich durchtreten. Falten Sie den Haufen wiederholt um und stampfen Sie mindestens 10 Minuten, bis sich eine faustgroße Kugel ohne Oberflächenrisse formen lässt.",
+      "actionNote": "> Wasser-Faustregel: Zu viel Wasser erzeugt schlammigen Brei, der einsackt; zu wenig hinterlässt bröckeligen Staub. Streben Sie eine zähe, teigartige Konsistenz an.",
+      "svgFileName": "pr06-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CLAY TEMPERING & FIBER MATRIX BLUEPRINT",
+        "① 2 Teile klebriger roter Lehm",
+        "Bindiges mineralisches Grundmaterial",
+        "+",
+        "② 1 Teil grober Flusssand",
+        "Verhindert Schrumpfung und Rissbildung",
+        "+",
+        "③ Fingerlange trockene Grasfasern",
+        "Strukturelle Armierungsmatrix",
+        "④ Wasser schrittweise zugeben und mit Fersen stampfen",
+        "Niemals überschwemmen; falten & durchtreten",
+        "⑤ Fertige zähe Lehmkugel",
+        "Zu fester faustgroßer Kugel formbar",
+        "Keine Risse an der Außenfläche"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Faustgroße trockene Steine hufeisenförmig auf trockenem Boden als Fundament anordnen",
+      "description": "Richten Sie die Brennholzöffnung (eine Handspanne breit, ca. 20 cm) windabgewandt aus. Legen Sie faustgroße trockene Steine hufeisenförmig aus. Bringen Sie im Innenbereich 2~3 cm trockenen Sand und Kies ein, um Bodenfeuchtigkeit und Kälte abzusperren. Verfüllen Sie alle Zwischenräume mit zähem Lehm unter festem Faustdruck.",
+      "actionNote": "> Windrichtung beachten: Wenn die Öffnung im Gegenwind liegt, schlagen Funken ins Gesicht. Richten Sie die Feueröffnung immer windabgewandt oder schräg aus.",
+      "svgFileName": "pr06-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // FOUNDATION LAYOUT & AIR ENTRY SCHEMATIC",
+        "① Vordere Holzbeschickungsöffnung (20 cm breit)",
+        "Optimale Breite für Holz & Luftzufuhr",
+        "② Hufeisenförmige trockene Fundamentsteine",
+        "Tragendes Primärfundament",
+        "③ Dicker Lehmmörtel in Steinfugen",
+        "Dichtet Fugen gegen Nebenluft ab",
+        "④ Trockene Sand- & Kiesschicht am Boden",
+        "Wärmesperre gegen kalten Untergrund",
+        "⑤ Windabgewandte Ausrichtung der Öffnung",
+        "Schützt die Glut vor Windböen"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Steine und Lehm schichtweise versetzt zu einer kniehohen Kuppel aufmauern",
+      "description": "Bringen Sie eine handbreite Lehmschicht (ca. 5 cm) auf das Fundament auf, setzen Sie die nächste Steinreihe im Verband auf und neigen Sie die Wand nach innen, bis eine kniehohe Kuppel (ca. 45 cm) entsteht. Glätten Sie anschließend die Innenwand mit nassen Händen zu einer glatten Reflexionsfläche.",
+      "actionNote": "> Einsturzgefahr vermeiden: Mauern Sie niemals reine Lehmwände ohne Steinkerne hoch. Steine bilden das Skelett, während der Lehm die Wärme speichert.",
+      "svgFileName": "pr06-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOME CHAMBER CROSS-SECTION & THERMAL CURVATURE",
+        "45cm",
+        "① Querschnitt aus Stein & Lehmmörtel",
+        "Verzahnte Steine verhindern Einsturz",
+        "② Handtellerdicke (5 cm) wärmedämmende Lehmwand",
+        "Hohe Speichermasse hält Wärme über Nacht",
+        "③ Glatte wärmereflektierende Innenfläche",
+        "Mit nasser Hand für guten Zug geglättet",
+        "④ Kreisförmige innere Brennkammer",
+        "Hitze zirkuliert und steigt auf",
+        "⑤ Kniehohe Gesamthöhe (45 cm)",
+        "Optimales Verhältnis aus Volumen & Kochhöhe"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Oberen Topfausschnitt anlegen und hinteren Kaminabzug ausstechen",
+      "description": "Lassen Sie am Scheitelpunkt der Kuppel eine 15~20 cm runde Öffnung für Tontöpfe oder Steinplatten frei. Drücken Sie drei kleine Abstandssteine in den Rand, damit 1 cm Luftspalt für den Zug bleibt. Durchstoßen Sie die obere Rückwand schräg mit einem Ast, um einen Kaminabzug für den Rauch anzulegen.",
+      "actionNote": "> Zugluftprinzip: Ohne Kamin drückt der Rauch vorn heraus. Der Kaminabzug erzeugt einen Unterdruck, der Sauerstoff kräftig durch den Fußbereich ansaugt.",
+      "svgFileName": "pr06-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // AIR DRAFT PERSPECTIVE & EXHAUST BLUEPRINT",
+        "① Unterer vorderer Lufteinlass (Sauerstoff)",
+        "Frischluft strömt ins Glutbett",
+        "② Obere flache Kochöffnung",
+        "Sitz für Topf oder Bratstein",
+        "③ Oberer hinterer schräger Kaminabzug",
+        "Zieht beißenden Rauch sauber nach hinten ab",
+        "④ Aufsteigender thermischer Wirbelzug",
+        "Zirkuliert im Raum und erhitzt Topfboden",
+        "⑤ Topfabstandsnoppen für Dauerzug",
+        "Feuer erstickt nicht bei aufgesetztem Topf"
+      ]
+    },
+    {
+      "stepNumber": "05",
+      "title": "Schritt 5: Mit kleinem Zweigfeuer 3 Stunden vortrocknen und steinhart ausbrennen",
+      "description": "Entfachen Sie niemals sofort ein großes Holzfeuer in feuchtem Lehm; siedendes Porenwasser würde die Wände zersprengen. Halten Sie 3~4 Stunden lang ein winziges Zweigfeuer an der Vorderöffnung. Wenn Dampf austritt und der Lehm von feuchtem Dunkelbraun zu hellem Ocker wechselt und sich warm anfühlt, ist der Ofen einsatzbereit.",
+      "actionNote": "> Haarrisse ausbessern: Sollten beim Trocknen feine Haarrisse auftreten, streichen Sie diese einfach mit feuchtem Lehmschlicker mit dem Finger glatt.",
+      "svgFileName": "pr06-step-05.svg",
+      "svgLabels": [
+        "FIG. 05 // CONTROLLED DEHYDRATION & CERAMIC HARDENING",
+        "① Sanftes Zweigglutfeuer an der Öffnung",
+        "Gleichmäßige Wärme lässt Feuchte entweichen",
+        "② Abdampfende Wasserdampfschwaden",
+        "Porenwasser verdampft zerstörungsfrei",
+        "③ Farbwechsel-Prüfpunkt",
+        "Feuchtes Dunkelbraun → trockenes Hellocker",
+        "④ Trocken- & Wärmeprüfung von Hand",
+        "Wand fühlt sich trocken und warm an",
+        "⑤ Ausbesserungsschlicker für Haarrisse",
+        "Risse mit frischem Lehm zuschmieren"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Verwendung nasser Flusssteine direkt im Brennraumfeuer",
+    "description": "Wassergesättigte Flusskiesel schließen selbst bei trockener Oberfläche Feuchtigkeit in mikroskopischen Poren ein. Bei Feuertemperaturen über 300°C wandelt sich dieses Wasser schlagartig in Hochdruckdampf um und detoniert wie eine Granate. Rasiermesserscharfe Splitter fliegen in Gesicht und Augen, was zu Erblindung und schweren Fleischwunden führt. Verwenden Sie nur trockene Steine 10 m abseits von Gewässern und ummanteln Sie diese mit mindestens 5 cm Lehm.",
+    "consequence": "Folge: Dampfexplosionen schleudern messerscharfe Steinsplitter, was zu Erblindung und schweren Verletzungen führt"
+  },
+  "shortsScript": {
+    "hook": "Ein Bodenfeuer verliert 80% seiner Wärme. So baut man einen sturmfesten Naturlehmofen.",
+    "body": "2 Teile Lehm, 1 Teil Sand und 1 Teil trockenes Gras mit Wasser zu zähem Teig stampfen. Trockene Steine hufeisenförmig windabgewandt anordnen. Steine und Lehm versetzt zu einer kniehohen Kuppel mit oberem Topfloch und Kaminabzug aufmauern. 3 Stunden mit kleiner Glut trockenbrennen. Niemals nasse Flusssteine verwenden; Dampfdruck lässt sie detonieren.",
+    "outro": "Kochen Sie warm und trotzen Sie Regen und stürmischen Winden die ganze Nacht."
+  }
+}

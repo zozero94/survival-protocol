@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto block" xmlns="http://www.w3.org/2000/svg">
+          <!-- Blueprint Header -->
+          <text x="75" y="40" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">
+            FIG. 05 // CONTROLLED DEHYDRATION &amp; CERAMIC HARDENING
+          </text>
+          <line x1="75" y1="48" x2="605" y2="48" stroke="#222222" stroke-width="1" />
+
+          <!-- Main Curing Stove Illustration -->
+          <g transform="translate(180, 70)">
+            <!-- Left Side (Dark Wet Clay) transitioning to Right Side (Bright Baked Ocher) -->
+            <path d="M 40 180 C 40 80 80 40 140 40 L 180 40 C 240 40 280 80 280 180 Z" fill="#2A1E14" stroke="#D97706" stroke-width="1.5" />
+            
+            <!-- Baked Ocher Highlight on right half -->
+            <path d="M 160 40 C 220 40 260 80 260 180 L 160 180 Z" fill="#422812" opacity="0.6" />
+
+            <!-- Rising Steam Lines (외벽 수증기) -->
+            <path d="M 80 50 Q 70 30 85 10" stroke="#888888" stroke-width="1.5" stroke-dasharray="3,3" fill="none" />
+            <path d="M 120 45 Q 110 25 125 5" stroke="#888888" stroke-width="1.5" stroke-dasharray="3,3" fill="none" />
+            <path d="M 200 45 Q 190 25 205 5" stroke="#888888" stroke-width="1.5" stroke-dasharray="3,3" fill="none" />
+            <path d="M 240 50 Q 230 30 245 10" stroke="#888888" stroke-width="1.5" stroke-dasharray="3,3" fill="none" />
+
+            <!-- Weak Ember Fire at Entry (작은 불씨) -->
+            <ellipse cx="60" cy="175" rx="20" ry="8" fill="#111111" stroke="#333333" stroke-width="1" />
+            <circle cx="55" cy="173" r="3" fill="#E02424" />
+            <circle cx="65" cy="175" r="4" fill="#F59E0B" />
+            <circle cx="60" cy="170" r="2.5" fill="#E5E5E5" />
+
+            <!-- Small Surface Hairline Cracks being patched -->
+            <line x1="190" y1="90" x2="210" y2="105" stroke="#E5E5E5" stroke-width="1" stroke-dasharray="2,2" />
+            <!-- Patch indicator circle -->
+            <circle cx="200" cy="98" r="8" fill="none" stroke="#10B981" stroke-width="1.5" />
+          </g>
+
+          <!-- Label 1: 입구에 지핀 작은 잔가지 불씨 -->
+          <text x="75" y="270" fill="#F59E0B" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ① 입구 작은 잔가지 불씨 (약한 열기)
+          </text>
+          <text x="75" y="288" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            강한 불 대신 은은한 열기로 시작
+          </text>
+
+          <!-- Label 2: 외벽에서 김(수증기)이 빠져나가는 모습 -->
+          <text x="75" y="90" fill="#AAAAAA" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ② 외벽 수증기 증발선
+          </text>
+          <text x="75" y="108" fill="#666666" font-family="'Space Grotesk', sans-serif" font-size="10">
+            내부 수분이 천천히 기화
+          </text>
+
+          <!-- Label 3: 진흙 색상 변화 -->
+          <text x="440" y="90" fill="#D97706" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ③ 색상 변화 관찰
+          </text>
+          <text x="440" y="108" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            짙은 고동색 → 밝은 황토색
+          </text>
+
+          <!-- Label 4: 손을 댔을 때 따뜻한 열감 -->
+          <text x="440" y="170" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ④ 따뜻한 건조 완료 판정
+          </text>
+          <text x="440" y="188" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            축축함 없이 외벽 전체가 훈훈
+          </text>
+
+          <!-- Label 5: 갈라진 미세 틈을 덧바를 진흙 반죽 여분 -->
+          <text x="390" y="270" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ⑤ 미세 실금 덧바름 보수
+          </text>
+          <text x="390" y="288" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            남은 진흙 반죽으로 틈새 메우기
+          </text>
+        </svg>
