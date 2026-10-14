@@ -53,6 +53,9 @@ export interface UiStrings {
   paginationTotalSuffix: string;
   footerTitle: string;
   footerDesc: string;
+  sort_latest: string;
+  sort_oldest: string;
+  uploadDate: string;
 }
 
 export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
@@ -110,6 +113,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: '누구나 위급할 때 바로 따라 할 수 있는 실전 야생 생존 가이드.',
     footerDesc:
       '한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.',
+    sort_latest: '최신순',
+    sort_oldest: '오래된순',
+    uploadDate: '등록일',
   },
   en: {
     brandArchive: 'TACTICAL SURVIVAL ARCHIVE',
@@ -165,6 +171,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: 'FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.',
     footerDesc:
       'Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.',
+    sort_latest: 'Latest',
+    sort_oldest: 'Oldest',
+    uploadDate: 'Date',
   },
   ja: {
     brandArchive: '生存戦術教本アーカイブ',
@@ -220,6 +229,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: '人類文明再建のための無料オープンソース生存記録書。',
     footerDesc:
       'このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。',
+    sort_latest: '最新順',
+    sort_oldest: '古い順',
+    uploadDate: '登録日',
   },
   es: {
     brandArchive: 'ARCHIVO DE SUPERVIVENCIA TÁCTICA',
@@ -275,6 +287,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: 'ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.',
     footerDesc:
       'Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.',
+    sort_latest: 'Más recientes',
+    sort_oldest: 'Más antiguos',
+    uploadDate: 'Fecha',
   },
   de: {
     brandArchive: 'TAKTIK-ÜBERLEBENSARCHIV',
@@ -330,6 +345,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: 'KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.',
     footerDesc:
       'Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.',
+    sort_latest: 'Neueste',
+    sort_oldest: 'Älteste',
+    uploadDate: 'Datum',
   },
   pt: {
     brandArchive: 'ARQUIVO DE SOBREVIVÊNCIA TÁCTICA',
@@ -385,6 +403,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: 'ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.',
     footerDesc:
       'Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.',
+    sort_latest: 'Mais recentes',
+    sort_oldest: 'Mais antigos',
+    uploadDate: 'Data',
   },
   'zh-TW': {
     brandArchive: '生存戰術手冊檔案庫',
@@ -440,5 +461,8 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     footerTitle: '為重建人類文明而設的免費開源生存檔案庫。',
     footerDesc:
       '本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。',
+    sort_latest: '最新發布',
+    sort_oldest: '最早發布',
+    uploadDate: '發布日期',
   },
 };

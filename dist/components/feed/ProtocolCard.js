@@ -18,10 +18,20 @@ const DEFAULT_SVGS                                   = {
   MEDICINE: `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38L18 26L30 14" stroke-width="2.2"></path><path d="M23 27C21 31 21 35 25 39C29 39 30 35 27 31C25 28 24 26 23 27Z" stroke-width="1.6"></path><rect x="30" y="26" width="14" height="14" stroke-width="1.2" stroke-dasharray="2 1.5"></rect><path d="M37 29V37M33 33H41" stroke-width="2"></path></svg>`,
 };
 
+function formatDate(iso         )         {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '';
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
+  return `${y}.${m}.${day}`;
+}
+
 /**
  * [Presentational Component]
  * 단일 프로토콜 피드 카드 컴포넌트 (Stitch 디자인 1:1 완벽 이식 + 7개국어 선언적 바인딩)
- * 40×40 정밀 인라인 벡터 도면 + 헤더 레일 + 재료 칩 + 직관적 제목
+ * 40×40 정밀 인라인 벡터 도면 + 헤더 레일 + 재료 칩 + 직관적 제목 + 업로드 날짜
  */
 export function renderProtocolCard(protocol          )         {
   const categoryLabel = CATEGORY_LABELS[protocol.category] || `[${protocol.category}]`;
@@ -44,13 +54,18 @@ export function renderProtocolCard(protocol          )         {
 
   const num = protocol.protocolId.replace(/[^0-9]/g, '').padStart(2, '0') || '01';
   const detailLink = `/protocol-${num}`;
+  const dateStr = formatDate(protocol.createdAt);
+  const dateHtml = dateStr
+    ? `<span class="text-neutral-600">/</span><span data-card-date="${protocol.protocolId}" class="text-neutral-500 font-mono text-[11px]">${dateStr}</span>`
+    : '';
 
   return `
-<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="${protocol.protocolId}" data-protocol-href="${detailLink}" data-category="${protocol.category}">
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="${protocol.protocolId}" data-protocol-href="${detailLink}" data-category="${protocol.category}" data-created-at="${protocol.createdAt || ''}">
   <!-- 상단 헤더 레일 -->
   <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
     <div class="flex items-center gap-2">
       <span data-i18n="cat_${protocol.category}" class="text-neutral-400 font-bold">${categoryLabel}</span>
+      ${dateHtml}
     </div>
     ${threatBadge}
   </div>

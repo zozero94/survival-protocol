@@ -44,6 +44,8 @@ export function getLocaleRuntimeScript()         {
           if (proto[field] !== undefined) {
             if (el.tagName === 'TITLE') {
               el.textContent = (ui.brandShort || '[SURVIVAL PROTOCOL]') + ' // ' + proto[field];
+            } else if (field === 'createdAt') {
+              el.innerText = String(proto[field]).slice(0, 10).replace(/-/g, '.');
             } else {
               el.innerText = proto[field];
             }

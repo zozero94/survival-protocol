@@ -47,6 +47,24 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     assert.ok(sw.includes('"/protocol-01.html"'), 'protocol-01.html이 precache에 포함되어야 합니다.');
   });
 
+  test('index.html 내에 최신순 정렬 토글 버튼과 날짜 배지가 탑재되고, 카드가 최신순으로 렌더링되어야 한다', () => {
+    const html = fs.readFileSync(indexPath, 'utf-8');
+    assert.ok(html.includes('data-action="toggle-sort"'), '정렬 토글 버튼이 존재해야 합니다.');
+    assert.ok(html.includes('id="sort-toggle-label"'), '정렬 토글 라벨 요소가 존재해야 합니다.');
+    assert.ok(html.includes('data-i18n="sort_latest"'), '기본 정렬 라벨에 data-i18n="sort_latest"가 있어야 합니다.');
+    assert.ok(html.includes('data-card-date='), '피드 카드에 날짜 배지가 존재해야 합니다.');
+
+    // 카드 순서 검증: PR-08(최신)이 PR-01(초기)보다 먼저 렌더링되어야 함
+    const p08Idx = html.indexOf('data-protocol-card="PR-08"');
+    const p01Idx = html.indexOf('data-protocol-card="PR-01"');
+    assert.ok(p08Idx !== -1 && p01Idx !== -1, 'PR-08 및 PR-01 카드가 존재해야 합니다.');
+    assert.ok(p08Idx < p01Idx, 'PR-08(최신)이 PR-01보다 앞에 위치해야 합니다.');
+
+    // 상세 페이지에 createdAt 날짜 배지가 탑재되어야 함
+    const p08Html = fs.readFileSync(path.join(publicDir, 'protocol-08.html'), 'utf-8');
+    assert.ok(p08Html.includes('data-proto="createdAt"'), '상세 히어로에 data-proto="createdAt" 배지가 존재해야 합니다.');
+  });
+
   test('메인 index.html과 상세 페이지 상단/하단 제목 영역이 7개국어(ko, en, ja, es, de, pt, zh-TW) 핫스왑 바인딩을 완비해야 한다', () => {
     const indexHtml = fs.readFileSync(indexPath, 'utf-8');
     assert.ok(indexHtml.includes('window.__FEED_PROTOCOLS__ ='), '메인 피드에 7개국어 프로토콜 맵이 내장되어야 함');

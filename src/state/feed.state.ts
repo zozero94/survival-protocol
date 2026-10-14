@@ -13,13 +13,34 @@ export function getFeedRuntimeScript(): string {
       var PAGE_SIZE = 5;
       var currentPage = 1;
       var currentCategory = 'ALL';
+      var currentSort = 'latest';
       var currentLang = 'ko';
 
       var allCards = Array.from(document.querySelectorAll('[data-protocol-card]'));
+      var feedContainer = document.getElementById('protocol-feed-container');
       var paginationNav = document.getElementById('pagination-nav');
       var rangeLabel = document.getElementById('pagination-range-label');
       var totalItemsLabel = document.getElementById('pagination-total-items-label');
       var pagesContainer = document.getElementById('pagination-pages-container');
+
+      function sortCards(cards, sortMode) {
+        return cards.slice().sort(function (a, b) {
+          var dateA = a.getAttribute('data-created-at') || '';
+          var dateB = b.getAttribute('data-created-at') || '';
+          var timeA = dateA ? new Date(dateA).getTime() : 0;
+          var timeB = dateB ? new Date(dateB).getTime() : 0;
+          var numA = parseInt((a.getAttribute('data-protocol-card') || '').replace(/\D/g, '') || '0', 10);
+          var numB = parseInt((b.getAttribute('data-protocol-card') || '').replace(/\D/g, '') || '0', 10);
+
+          if (sortMode === 'latest') {
+            if (timeB !== timeA) return timeB - timeA;
+            return numB - numA;
+          } else {
+            if (timeA !== timeB) return timeA - timeB;
+            return numA - numB;
+          }
+        });
+      }
 
       function detectInitialFeedLocale() {
         ${CLIENT_LOCALE_DETECTOR_BODY}
@@ -78,10 +99,13 @@ export function getFeedRuntimeScript(): string {
       }
 
       function getFilteredCards() {
-        if (currentCategory === 'ALL') return allCards;
-        return allCards.filter(function (card) {
-          return card.getAttribute('data-category') === currentCategory;
-        });
+        var filtered = allCards;
+        if (currentCategory !== 'ALL') {
+          filtered = allCards.filter(function (card) {
+            return card.getAttribute('data-category') === currentCategory;
+          });
+        }
+        return sortCards(filtered, currentSort);
       }
 
       function updateFeed() {
@@ -93,10 +117,14 @@ export function getFeedRuntimeScript(): string {
         var startIndex = (currentPage - 1) * PAGE_SIZE;
         var endIndex = startIndex + PAGE_SIZE;
 
-        // 전체 카드 숨김 후 현재 페이지 범위만 표시
+        // 전체 카드 숨김 후 현재 페이지 범위만 표시 및 DOM 재배치
         allCards.forEach(function (card) { card.style.display = 'none'; });
-        filtered.slice(startIndex, endIndex).forEach(function (card) {
+        var pageCards = filtered.slice(startIndex, endIndex);
+        pageCards.forEach(function (card) {
           card.style.display = '';
+          if (feedContainer) {
+            feedContainer.appendChild(card);
+          }
         });
 
         // 범위 레이블 업데이트
@@ -193,6 +221,29 @@ export function getFeedRuntimeScript(): string {
 
             updateFeed();
           }
+          return;
+        }
+
+        var sortBtn = e.target.closest('[data-action="toggle-sort"]');
+        if (sortBtn) {
+          currentSort = currentSort === 'latest' ? 'oldest' : 'latest';
+          sortBtn.setAttribute('data-sort', currentSort);
+
+          var sortLabel = document.getElementById('sort-toggle-label');
+          var sortArrow = document.getElementById('sort-toggle-arrow');
+          var uiStrings = (window.__UI_STRINGS__ && window.__UI_STRINGS__[currentLang]) || (window.__UI_STRINGS__ && window.__UI_STRINGS__['ko']) || {};
+
+          if (sortLabel) {
+            var i18nKey = currentSort === 'latest' ? 'sort_latest' : 'sort_oldest';
+            sortLabel.setAttribute('data-i18n', i18nKey);
+            sortLabel.innerText = uiStrings[i18nKey] || (currentSort === 'latest' ? '최신순' : '오래된순');
+          }
+          if (sortArrow) {
+            sortArrow.innerText = currentSort === 'latest' ? '▼' : '▲';
+          }
+
+          currentPage = 1;
+          updateFeed();
           return;
         }
 

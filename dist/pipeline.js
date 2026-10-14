@@ -101,10 +101,18 @@ export async function buildSite(options                                         
     localesByProtocolId[proto.protocolId] = pMap;
   }
 
-  // 3-1. 메인 인덱스 대문 피드 컴파일 (5개 카드 단위 페이징 + 7개국어 무새로고침 핫스왑)
-  const indexHtml = renderIndexPage(allMasterProtocols, localesByProtocolId);
+  // 3-1. 메인 인덱스 대문 피드 컴파일 (최신순 기본 정렬 + 5개 카드 단위 페이징 + 7개국어 무새로고침 핫스왑)
+  const sortedForFeed = [...allMasterProtocols].sort((a, b) => {
+    const timeA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+    const timeB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+    const numA = parseInt(a.protocolId.replace(/\D/g, '') || '0', 10);
+    const numB = parseInt(b.protocolId.replace(/\D/g, '') || '0', 10);
+    if (timeB !== timeA) return timeB - timeA;
+    return numB - numA;
+  });
+  const indexHtml = renderIndexPage(sortedForFeed, localesByProtocolId);
   fs.writeFileSync(path.join(publicDir, 'index.html'), indexHtml, 'utf-8');
-  log(`📑 [3/4 Presentational] 메인 인덱스 피드 컴파일 완료 (총 ${allMasterProtocols.length}편, 5개 페이징 탑재): public/index.html`);
+  log(`📑 [3/4 Presentational] 메인 인덱스 피드 컴파일 완료 (총 ${allMasterProtocols.length}편, 최신순 정렬, 5개 페이징 탑재): public/index.html`);
 
   // 3-2. 프로토콜 상세 페이지 전수 컴파일 (다국어 맵 동적 자동 결합)
   const precacheEntries = [

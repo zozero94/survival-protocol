@@ -69,10 +69,23 @@ export function renderFeedHeader(totalCount        )         {
   </div>
 </section>
 
-<!-- 7대 퀵 카테고리 필터 칩 레일 (가로 스크롤 완비) -->
+<!-- 7대 퀵 카테고리 필터 칩 레일 + 최신순/오래된순 정렬 토글 -->
 <section class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-3">
-  <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="category-filter">
-    ${categoryTabs}
+  <div class="flex items-center justify-between gap-3 flex-wrap">
+    <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none flex-1 min-w-0" id="category-filter">
+      ${categoryTabs}
+    </div>
+    <div class="flex items-center shrink-0 pb-1">
+      <button type="button"
+        id="sort-toggle-btn"
+        data-action="toggle-sort"
+        data-sort="latest"
+        class="flex items-center gap-1.5 px-3 py-1.5 font-mono text-xs uppercase tracking-wider bg-neutral-900 text-neutral-300 hover:text-white border border-neutral-700 hover:border-neutral-500 cursor-pointer transition-colors">
+        <span class="text-neutral-500 text-[10px]">SORT:</span>
+        <span id="sort-toggle-label" data-i18n="sort_latest">최신순</span>
+        <span id="sort-toggle-arrow" class="text-[10px] text-neutral-400">▼</span>
+      </button>
+    </div>
   </div>
 </section>
   `.trim();

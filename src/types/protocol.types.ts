@@ -51,4 +51,5 @@ export interface Protocol {
   steps: ProtocolStep[];
   fatalMistake: FatalMistake;
   nextProtocolTitle?: string;
+  createdAt?: string;
 }

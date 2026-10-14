@@ -1,11 +1,26 @@
 import type { Protocol } from '../../types/protocol.types.ts';
 
+function formatDate(iso?: string): string {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '';
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
+  return `${y}.${m}.${day}`;
+}
+
 /**
  * [Presentational Component]
  * 생존 프로토콜 상단 히어로 섹션 (Stitch Utilitarian Brutalist Spec Card)
- * 선언적 data-i18n 및 data-proto 속성 100% 탑재
+ * 선언적 data-i18n 및 data-proto 속성 100% 탑재 + 업로드 날짜 배지
  */
 export function renderHeroSection(protocol: Protocol): string {
+  const dateStr = formatDate(protocol.createdAt);
+  const dateHtml = dateStr
+    ? `<span class="border border-[#333] text-[#888] px-1.5 py-0.5 text-[11px] font-mono"><span id="proto-date" data-proto="createdAt">${dateStr}</span></span>`
+    : '';
+
   return `
 <section class="border border-[#333] bg-[#1c1b1b] p-5 sm:p-7 relative overflow-hidden mb-6">
   <!-- Decorative Technical Corner Markers -->
@@ -15,7 +30,7 @@ export function renderHeroSection(protocol: Protocol): string {
   <div class="absolute bottom-0 right-0 w-2.5 h-2.5 border-b-2 border-r-2 border-white"></div>
 
   <!-- Hero Header Badges -->
-  <div class="flex items-center justify-between mb-3.5 font-mono text-xs">
+  <div class="flex items-center justify-between mb-3.5 font-mono text-xs flex-wrap gap-2">
     <div class="flex items-center gap-2">
       <span id="proto-threat-badge" data-proto="threatLevelText" class="bg-white text-black font-bold px-1.5 py-0.5 tracking-tight uppercase">
         ${protocol.threatLevelText}
@@ -23,6 +38,7 @@ export function renderHeroSection(protocol: Protocol): string {
       <span class="border border-[#444] text-[#ccc] px-1.5 py-0.5 text-[11px] uppercase">
         <span id="proto-hero-category" data-proto="category">${protocol.category}</span>
       </span>
+      ${dateHtml}
     </div>
     <div class="text-[#888] text-[11px] flex items-center gap-1">
       <svg class="w-3 h-3 text-[#777]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
