@@ -53,6 +53,6 @@
 ### [42s ~ 45s] Scene 7: OUTRO
 - **도면 에셋**: `archive-logo.svg`
 - **모션 연출**: Center stamp zoom with URL display
-- **화면 자막**: **생존 좌표 저장 ➔ 프로필 링크 [ARCHIVE-0]**
+- **화면 자막**: **생존 좌표 저장 ➔ 프로필 링크 [생존 교범]**
 - **내레이션(TTS)**: "살아남으려면 이 프로토콜을 지금 저장해 두세요."
 

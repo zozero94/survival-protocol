@@ -45,5 +45,5 @@
 
 ### [42s ~ 45s] Scene 7: OUTRO
 - **Asset**: `archive-logo.svg`
-- **Caption**: **Save this Survival Protocol ➔ Link in bio [ARCHIVE-0]**
+- **Caption**: **Save this Survival Protocol ➔ Link in bio [SURVIVAL PROTOCOL]**
 - **TTS Voiceover**: "Save this protocol now before your power goes out."

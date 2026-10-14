@@ -74,7 +74,7 @@ const CURATED_FALLBACK_TOPICS                   = [
     stitchMasterPrompt: `[DESIGN PHILOSOPHY: Strict Minimalist Brutalism, Pure Black & White #000000 and #FFFFFF, 1px crisp borders, sharp corners, monospace stamps]
 Create an ultra-readable responsive survival manual screen for 'PROTOCOL #02: Bow Drill Primitive Fire Ignition'.
 Sections:
-1. Header with [ARCHIVE-0] and Dark/Light toggle.
+1. Header with [SURVIVAL PROTOCOL] and Dark/Light toggle.
 2. Hero hook with [THREAT: CRITICAL].
 3. Checklist for 4 natural items: Dry hardwood hearth board, Carved spindle, Bow branch with cordage, Tinder nest.
 4. 3-step vertical action cards with 1:1 technical line-art sketch containers:
@@ -129,7 +129,7 @@ Sections:
     stitchMasterPrompt: `[DESIGN PHILOSOPHY: Strict Minimalist Brutalism, Pure Black & White #000000 and #FFFFFF, 1px crisp borders, sharp corners, monospace stamps]
 Create an ultra-readable responsive survival manual screen for 'PROTOCOL #03: Pine Resin Antiseptic Black Salve'.
 Sections:
-1. Header with [ARCHIVE-0] and Dark/Light toggle.
+1. Header with [SURVIVAL PROTOCOL] and Dark/Light toggle.
 2. Hero hook with [THREAT: HIGH].
 3. Checklist for natural items: Pine resin, Powdered charcoal, Clam shell melting dish, Birch bark wrap.
 4. 3-step vertical action cards with 1:1 technical line-art sketch containers:
@@ -223,7 +223,7 @@ export class TopicCuratorService {
     const existingTitles = tree.protocols.map((p) => p.title);
     const coveredDomains = Object.values(tree.domains).map((d) => `${d.name} (${d.branches.join(', ')})`);
 
-    const prompt = `당신은 '아카이브-0: 인류 멸망 후 원시 생존 및 문명 재건 매뉴얼'의 최고 기술 고증관입니다.
+    const prompt = `당신은 '생존 교범(SURVIVAL PROTOCOL): 인류 멸망 후 원시 생존 및 문명 재건 매뉴얼'의 최고 기술 고증관입니다.
 현대 문명이 붕괴되고 도구가 전무한 자연 상태에서, 사전에 이 프로토콜을 완벽히 숙지하고 두 손과 현장의 자연물만으로 생존 및 재건을 실행하는 사용자를 위한 다음 생존 프로토콜을 기획하십시오.
 
 [필수 작성 원칙]

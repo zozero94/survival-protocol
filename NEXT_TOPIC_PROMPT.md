@@ -49,7 +49,9 @@
 
 ---
 
-## 🎨 스티치(Stitch) 생성용 마스터 프롬프트
+## 🎨 도면 및 이미지 생성용 마스터 프롬프트
+
+### A. 스티치(Stitch) 벡터 도면용 프롬프트 (publish-protocol)
 ```text
 A precise field blueprint drawn with charcoal and graphite on dark slate, illustrating the Pit Charcoal Kiln (Primitive Pyrolysis).
 - Target Outcome (16:9 Widescreen): Full cross-sectional isometric view of an underground pit kiln with vertical timber stack, multi-layer sod/clay seal, air intake vent, and bluish pyrolysis smoke exhaust.
@@ -58,4 +60,14 @@ A precise field blueprint drawn with charcoal and graphite on dark slate, illust
 - Step 3: Multi-layer anaerobic seal (branch lattice + broad leaves + moist clay + turf sod).
 - Step 4: Smoke color transition chart (thick white to faint blue) and post-cooling harvested metallic charcoal.
 Utilitarian Brutalism style, pure monochrome technical linework, zero text collision, strict physics accuracy.
+```
+
+### B. 제미나이 3D 포토리얼리스틱 실물 이미지용 프롬프트 (publish-protocol-image)
+```text
+Cinematic tactical survival field photograph of an underground primitive pit charcoal kiln (Pyrolysis).
+- Target Outcome (16:9 Widescreen): Twilight woodland setting. Cross-sectional view of an earthen pit kiln with dense oak timber stack sealed under damp clay and sod, faint blue pyrolysis smoke gently billowing from the central clay chimney vent, freshly harvested metallic ring charcoal resting on dark soil in the foreground. Tack-sharp macro detail, studio side-lighting, 8k, authentic textures, NO modern objects, NO text.
+- Step 01: Excavated cone-shaped 50cm pit in dark woodland soil with glowing pre-drying embers at the bottom.
+- Step 02: Dense vertical bundle of wrist-thick oak branch logs tightly packed into the cone pit.
+- Step 03: Lattice branch frame covered with broad leaves and moist clay/sod seal, leaving two small intake holes and central chimney.
+- Step 04: Hermetically sealed cooled pit opened to reveal glossy black, pure carbonized hardwood charcoal chunks.
 ```

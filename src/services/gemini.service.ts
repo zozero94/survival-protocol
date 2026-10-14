@@ -18,7 +18,7 @@ const FALLBACK_TOPIC: PlannedTopic = {
   stitchPrompt: `[DESIGN PHILOSOPHY: Strict Minimalist Brutalism, Pure Black & White #000000 and #FFFFFF, 1px crisp borders, sharp corners, monospace stamps] 
 Create an ultra-readable responsive survival manual screen for 'PROTOCOL #02: Bow Drill Primitive Fire Ignition'.
 Sections:
-1. Header with [ARCHIVE-0] and Dark/Light toggle.
+1. Header with [SURVIVAL PROTOCOL] and Dark/Light toggle.
 2. Hero hook with [THREAT: CRITICAL].
 3. Fast checklist for 3 items (Dry hardwood hearth board, Carved spindle, Bow branch with cordage).
 4. 3-step vertical action cards with 1:1 square technical line-art sketch containers:
@@ -35,7 +35,7 @@ Sections:
  */
 export class GeminiService {
   public static async planNextTopic(apiKey: string, existingTitles: string[] = []): Promise<PlannedTopic> {
-    const prompt = `당신은 '아카이브-0: 인류 멸망 후 원시 생존 매뉴얼'의 수석 전술 기획자입니다.
+    const prompt = `당신은 '생존 교범(SURVIVAL PROTOCOL): 인류 멸망 후 원시 생존 매뉴얼'의 수석 전술 기획자입니다.
 기존에 다룬 주제 목록:
 ${existingTitles.map((t) => `- ${t}`).join('\n')}
 
