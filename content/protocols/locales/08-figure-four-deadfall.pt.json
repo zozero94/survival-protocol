@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "Como capturar caça com 3 gravetos e uma pedra (Armadilha de queda em 4)",
+  "title": "Como capturar animais com 3 gravetos e uma pedra (Armadilha em 4)",
   "threatLevel": "HIGH",
   "threatLevelText": "[CRÍTICO: PROTEÍNA E ALIMENTO]",
-  "summary": "Correr atrás de animais na selva com as mãos vazias é um desperdício calórico desastroso que leva à exaustão fatal. Ao entalhar três gravetos secos para formar uma armação em formato de número '4' sustentada apenas por fricção sob uma pedra de 10 a 15 kg, você constrói uma armadilha por gravidade que desaba em 0,1 segundo quando a caça toca a isca.",
+  "summary": "Perseguir animais selvagens com as mãos vazias esgota rapidamente a sua energia. Entalhando encaixes em três gravetos da grossura de um dedo e montando-os em formato de 'número 4', eles sustentam uma pedra de 15kg sem nenhuma corda. Quando a presa toca a isca, a estrutura desmonta em 0,1 segundo, esmagando a presa.",
   "timeRequired": "30 minutos (20 min entalhe + 10 min calibração)",
   "successRate": "95% (seguindo o ajuste fino dos encaixes)",
   "difficulty": "Média (entalhe de precisão e equilíbrio)",
@@ -34,58 +34,58 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Passo 1: Medir os gravetos e entalhar os encaixes em ângulo reto",
-      "description": "Selecione três gravetos retos. A haste vertical (20 cm) recebe uma cunha em forma de formão no topo e um entalhe quadrado no meio. A escora diagonal (25 cm) ganha um entalhe superior e um chanfro inferior. A vareta de isca (30 cm) recebe dois entalhes para travar na haste e na escora, afinando a ponta interna para a isca.",
-      "actionNote": "> Dica de entalhe: Mantenha as bordas dos entalhes retas e vivas. Bordas arredondadas escorregarão sob o peso da pedra.",
+      "title": "Passo 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
+      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
-        "HASTE VERTICAL (20 CM)",
-        "ESCORA DIAGONAL (25 CM)",
-        "VARETA DE ISCA (30 CM)",
-        "[PASSO 1] ENTALHAR CUNHA A 45° E TRAVAS RETAS"
+        "FIG. 01 // PASSO 01",
+        "POST (Stick 1 - Chisel Tip & Square Notch)",
+        "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
+        "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
+        "[KEY] Carve crisp square notches that bite firmly"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Passo 2: Acoplar o entalhe da escora na cunha da haste vertical",
-      "description": "Apoie a haste vertical em solo plano. Encaixe o entalhe superior da escora diagonal sobre a cunha da haste a um ângulo de 45 graus. Pressione levemente para baixo para conferir se o encaixe forma uma alavanca estável sem girar para os lados.",
-      "actionNote": "> Verificação do ângulo: A inclinação de 40 a 50 graus transmite o peso da pedra de maneira perfeita para a vareta de isca.",
+      "title": "Passo 2: Rest the Diagonal Strut on top of the Vertical Post",
+      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
-        "CUNHA DO TOPO (BISEL EM FORMÃO)",
-        "ENTALHE SUPERIOR (ENGATE A 45°)",
-        "VETOR DE GRAVIDADE (PRESSÃO VERTICAL)",
-        "[PASSO 2] ACOPLAMENTO FIRME DA ALAVANCA SUPERIOR"
+        "FIG. 02 // PASSO 02",
+        "Post 1 Flat Chisel Tip",
+        "Strut 2 V-Notch Joint",
+        "Locks firmly at 45°",
+        "[KEY] Top hinge locks firmly without sliding"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Passo 3: Encaixar a vareta de isca e formar a estrutura em '4' autoportante",
-      "description": "Segure a vareta de isca na horizontal. Engate o encaixe frontal na haste vertical e o encaixe traseiro na ponta da escora diagonal. Solte lentamente: a força de empuxo mútuo entre as três peças cria uma armação sólida em formato de '4' sem nenhuma corda.",
-      "actionNote": "> Teste de equilíbrio: A armação deve parar de pé sozinha. Se tombar, apare a base da haste vertical.",
+      "title": "Passo 3: Insert the Bait Stick to make the 'Number 4' stand alone",
+      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
-        "PIVÔ A (ENCAIXE HASTE-VARETA)",
-        "PIVÔ B (ENCAIXE ESCORA-VARETA)",
-        "TENSÃO OPOSTA (FORÇA DE CONTRA-EMPUXO)",
-        "[PASSO 3] ARMAÇÃO EM '4' SUSTENTADA POR FRICÇÃO"
+        "FIG. 03 // PASSO 03",
+        "Post-Bait Stick Middle Joint",
+        "Strut-Bait Stick Rear Joint",
+        "Stands alone in Number 4 shape",
+        "[KEY] Sticks push against each other to stand"
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Passo 4: Apoiar a pedra de 15 kg e regular o gatilho ultrassensível de 0,1s",
-      "description": "Espete a isca na ponta interna da vareta. Levante a pedra pesada de 10-15 kg com uma mão e apoie com cuidado sobre o topo da escora diagonal a 45 graus. Teste a sensibilidade com um graveto fino: um toque lateral de 20 gramas na isca deve provocar a queda instantânea da pedra.",
-      "actionNote": "> Alerta de segurança: Nunca coloque mãos ou dedos sob a pedra erguida durante a regulagem do gatilho.",
+      "title": "Passo 4: Lean the heavy rock on top & test 0.1-second hair trigger",
+      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
-        "PEDRA PLANA 15KG (INCLINADA A 45°)",
-        "PONTA DA ISCA (POSIÇÃO INTERNA)",
-        "COLAPSO INSTANTÂNEO (QUEDA EM 0,1S)",
-        "[PASSO 4] REGULAGEM DO GATILHO ULTRASSENSÍVEL"
+        "FIG. 04 // PASSO 04",
+        "15kg Flat Rock Loaded",
+        "Bait set on inner tip",
+        "Drops rock in 0.1s when touched",
+        "[KEY] Hair trigger collapses instantly on touch"
       ]
     }
   ],
@@ -101,8 +101,8 @@
   },
   "outcome": {
     "svgFileName": "pr08-outcome.svg",
-    "title": "Visão geral da armadilha de gravidade em número 4 armada",
-    "description": "Três gravetos de madeira em equilíbrio sustentando uma pedra plana de 15 kg, projetada para colapso instantâneo ao menor toque."
+    "title": "Completed Figure-4 Deadfall Trap Full Setup",
+    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it."
   },
   "createdAt": "2026-10-14T15:35:00.000Z"
 }

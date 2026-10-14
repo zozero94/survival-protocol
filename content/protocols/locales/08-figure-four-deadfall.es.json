@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "Cómo cazar presas con 3 ramas y una roca (Trampa de caída en forma de 4)",
+  "title": "Cómo atrapar animales con 3 ramas y una roca (Trampa en Figura de 4)",
   "threatLevel": "HIGH",
   "threatLevelText": "[CRÍTICO: PROTEÍNA Y ALIMENTO]",
-  "summary": "Perseguir animales en la naturaleza a mano limpia es un derroche catastrófico de calorías que conduce al agotamiento mortal. Al tallar tres ramas secas para formar una estructura autoblocante en forma del número '4' sostenida únicamente por fricción bajo una roca de 10 a 15 kg, construyes una trampa por gravedad que cae en 0,1 segundos cuando la presa toca el cebo.",
+  "summary": "Perseguir presas con las manos vacías en la naturaleza causará un agotamiento fatal. Al tallar ranuras en tres ramas del grosor de un dedo y encajarlas en forma de 'número 4', pueden sostener una roca pesada de 15kg sin usar ninguna cuerda. Cuando un animal toca el cebo, la estructura se desarma en 0.1 segundos dejando caer la roca.",
   "timeRequired": "30 minutos (20 min tallado + 10 min calibración)",
   "successRate": "95% (siguiendo el ajuste fino de muescas)",
   "difficulty": "Media (tallado preciso y equilibrio de peso)",
@@ -34,58 +34,58 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Paso 1: Medir las ramas y tallar las muescas de bloqueo a escuadra",
-      "description": "Prepara tres ramas rectas. El poste vertical (20 cm) recibe una cuña plana superior y una muesca cuadrada central. El puntal diagonal (25 cm) lleva una muesca superior y un bisel interior inferior. La varilla del cebo (30 cm) lleva dos muescas para engranar con el poste y el puntal, terminando en punta afilada para el cebo.",
-      "actionNote": "> Clave de tallado: Las esquinas de las muescas deben ser vivas y rectas. Si son redondeadas, patinarán bajo el peso de la roca.",
+      "title": "Paso 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
+      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
-        "POSTE VERTICAL (20 CM)",
-        "PUNTAL DIAGONAL (25 CM)",
-        "VARILLA DE CEBO (30 CM)",
-        "[PASO 1] TALLAR CUÑA A 45° Y MUESCAS A ESCUADRA"
+        "FIG. 01 // PASO 01",
+        "POST (Stick 1 - Chisel Tip & Square Notch)",
+        "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
+        "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
+        "[KEY] Carve crisp square notches that bite firmly"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Paso 2: Acoplar la muesca superior del puntal a la cuña del poste vertical",
-      "description": "Coloca el poste vertical sobre suelo firme. Encaja la muesca superior del puntal diagonal sobre la cuña plana del poste en un ángulo exacto de 45 grados. Presiona ligeramente hacia abajo para verificar que la unión pivota firmemente sin deslizarse lateralmente.",
-      "actionNote": "> Comprobación de ángulo: Una inclinación de 40 a 50 grados transmite el peso de la roca de forma óptima hacia la varilla del cebo.",
+      "title": "Paso 2: Rest the Diagonal Strut on top of the Vertical Post",
+      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
-        "CUÑA SUPERIOR (BISEL PLANO)",
-        "MUESCA SUPERIOR (ACOPLE A 45°)",
-        "VECTOR DE GRAVEDAD (PRESIÓN VERTICAL)",
-        "[PASO 2] UNIÓN DE PALANCA SUPERIOR SIN DESLIZAMIENTO"
+        "FIG. 02 // PASO 02",
+        "Post 1 Flat Chisel Tip",
+        "Strut 2 V-Notch Joint",
+        "Locks firmly at 45°",
+        "[KEY] Top hinge locks firmly without sliding"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Paso 3: Ensamblar la varilla del cebo para lograr el armazón de '4' autoestable",
-      "description": "Sostén la varilla del cebo en posición horizontal y engancha su muesca delantera en la ranura media del poste. Luego encaja el extremo inferior del puntal en la muesca trasera de la varilla y suelta despacio: la fuerza de empuje mutuo entre las tres ramas crea una estructura firme en forma de '4' sin usar cuerdas.",
-      "actionNote": "> Prueba de equilibrio: La estructura debe sostenerse sola. Si se desvía, aplana la base del poste vertical.",
+      "title": "Paso 3: Insert the Bait Stick to make the 'Number 4' stand alone",
+      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
-        "PIVOTE A (ENGRANE POSTE-VARILLA)",
-        "PIVOTE B (ENGRANE PUNTAL-VARILLA)",
-        "TENSIÓN OPUESTA (FUERZA DE RECHAZO MUTUO)",
-        "[PASO 3] ESTRUCTURA EN '4' SOSTENIDA POR FRICCIÓN"
+        "FIG. 03 // PASO 03",
+        "Post-Bait Stick Middle Joint",
+        "Strut-Bait Stick Rear Joint",
+        "Stands alone in Number 4 shape",
+        "[KEY] Sticks push against each other to stand"
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Paso 4: Apoyar la roca de 15 kg y calibrar la sensibilidad de disparo a 0,1s",
-      "description": "Inserta el cebo en la punta afilada interior. Levanta la roca pesada de 10-15 kg con una mano y apóyala con cuidado sobre la parte superior del puntal a 45 grados. Prueba la sensibilidad con una brizna: un toque lateral de 20 gramos sobre el cebo debe provocar el colapso fulminante de la trampa.",
-      "actionNote": "> Advertencia de seguridad: Nunca metas las manos ni los dedos bajo la roca suspendida durante el ajuste del disparador.",
+      "title": "Paso 4: Lean the heavy rock on top & test 0.1-second hair trigger",
+      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
-        "ROCA PLANA 15KG (APOYADA A 45°)",
-        "PINCHO DE CEBO (POSICIÓN INTERIOR)",
-        "COLAPSO INSTANTÁNEO (CAÍDA EN 0,1S)",
-        "[PASO 4] CALIBRACIÓN SENSIBLE AL MÍNIMO ROCE"
+        "FIG. 04 // PASO 04",
+        "15kg Flat Rock Loaded",
+        "Bait set on inner tip",
+        "Drops rock in 0.1s when touched",
+        "[KEY] Hair trigger collapses instantly on touch"
       ]
     }
   ],
@@ -101,8 +101,8 @@
   },
   "outcome": {
     "svgFileName": "pr08-outcome.svg",
-    "title": "Perspectiva general de la trampa por gravedad en número 4 armada",
-    "description": "Tres ramas de madera dura en equilibrio de tensión sosteniendo una roca plana de 15 kg, diseñada para un colapso instantáneo al menor contacto."
+    "title": "Completed Figure-4 Deadfall Trap Full Setup",
+    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it."
   },
   "createdAt": "2026-10-14T15:35:00.000Z"
 }

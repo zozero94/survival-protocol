@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "Wildtiere mit 3 Holzstäben und einem Felsblock fangen (Vierer-Schlagfalle)",
+  "title": "Tiere fangen mit 3 Stöcken und einem Felsbrocken (Vierer-Schlagfalle)",
   "threatLevel": "HIGH",
   "threatLevelText": "[PROTEIN & NAHRUNG KRITISCH]",
-  "summary": "Tiere mit bloßen Händen zu jagen ist eine verhängnisvolle Kalorienverschwendung und führt zur Erschöpfung. Indem drei trockene Hartholzstäbe mit Kerben zu einem Zahl-4-Rahmen ineinandergreifen und unter Reibungskraft einen 10–15 kg schweren Flachstein stützen, entsteht eine hochempfindliche Schwerkraftfalle, die bei Berührung des Köders in 0,1 Sekunden zuschlägt.",
+  "summary": "Tiere mit bloßen Händen zu jagen führt schnell zu lebensgefährlicher Erschöpfung. Wenn man drei fingerdicke Äste mit Kerben versieht und zu einer 'Ziffer 4' zusammensteckt, tragen sie ohne jedes Seil einen 15kg schweren Stein. Berührt ein Beutetier den Köder, löst sich das Gestell in 0,1 Sekunden auf und der Fels fällt herab.",
   "timeRequired": "30 Minuten (20 Min Schnitzen + 10 Min Ausrichtung)",
   "successRate": "95% (bei Einhaltung der Auslöser-Kerbung)",
   "difficulty": "Mittel (präzises Schnitzen & Gleichgewicht)",
@@ -34,58 +34,58 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Schritt 1: Stäbe abmessen und rechtwinklige Haltekerben schnitzen",
-      "description": "Drei gerade Stäbe auswählen. Der Standpfosten (20 cm) erhält oben eine flache Meißelspitze und mittig eine Querkerbe. Die diagonale Stütze (25 cm) erhält oben eine Passkerbe und unten eine Innenschräge. Der Köderstab (30 cm) wird mit zwei Kerben für Pfosten und Stütze versehen und läuft innen spitz zu.",
-      "actionNote": "> Schnitzregel: Kerbenkanten messerscharf und rechtwinklig halten. Runde Kanten rutschen unter dem Steingewicht ab.",
+      "title": "Schritt 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
+      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // COMPONENT SPEC & NOTCH BLUEPRINT",
-        "STANDPFOSTEN (20 CM PFOSTEN)",
-        "DIAGONALE STÜTZE (25 CM STÜTZE)",
-        "KÖDERSTAB (30 CM KÖDERSTAB)",
-        "[SCHRITT 1] 45°-KEIL UND HALTEKERBEN SCHNITZEN"
+        "FIG. 01 // SCHRITT 01",
+        "POST (Stick 1 - Chisel Tip & Square Notch)",
+        "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
+        "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
+        "[KEY] Carve crisp square notches that bite firmly"
       ]
     },
     {
       "stepNumber": "02",
-      "title": "Schritt 2: Obere Kerbe der Diagonale auf die Pfostenmeißelspitze setzen",
-      "description": "Den Standpfosten auf ebenen Boden stellen. Die Oberkerbe der diagonalen Stütze im 45-Grad-Winkel auf die Meißelspitze des Pfostens setzen. Mit leichtem Handdruck prüfen, ob beide Hölzer ohne seitliches Verdrehen einen stabilen Hebel bilden.",
-      "actionNote": "> Winkelprüfung: Ein Neigungswinkel von 40-50 Grad leitet das Steingewicht optimal in Vorspannung auf den Köderstab.",
+      "title": "Schritt 2: Rest the Diagonal Strut on top of the Vertical Post",
+      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // TOP PIVOT INTERLOCK ASSEMBLY",
-        "MEISSELSPITZE (OBERER FLACHKEIL)",
-        "OBERKERBE (45°-PASSUNG)",
-        "SCHWERKRAFTVEKTOR (DRUCKLINIE)",
-        "[SCHRITT 2] RUTSCHFESTE HEBELVERBINDUNG SICHERN"
+        "FIG. 02 // SCHRITT 02",
+        "Post 1 Flat Chisel Tip",
+        "Strut 2 V-Notch Joint",
+        "Locks firmly at 45°",
+        "[KEY] Top hinge locks firmly without sliding"
       ]
     },
     {
       "stepNumber": "03",
-      "title": "Schritt 3: Köderstab einrasten, um freistehenden '4'-Rahmen zu bilden",
-      "description": "Den Köderstab waagerecht halten. Die vordere Kerbe in den Pfosten einhaken, dann das untere Ende der Diagonalen in die hintere Kerbe ziehen und langsam loslassen: Die Gegenspannung verriegelt die drei Hölzer ohne Seil zu einer freistehenden '4'.",
-      "actionNote": "> Gleichgewichtstest: Der Rahmen muss selbstständig stehen. Falls er kippt, Pfostenbasis flach nacharbeiten.",
+      "title": "Schritt 3: Insert the Bait Stick to make the 'Number 4' stand alone",
+      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // 3-POINT TENSION EQUILIBRIUM (NUMERAL 4)",
-        "DREHPUNKT A (PFOSTEN-KÖDERSTAB)",
-        "DREHPUNKT B (STÜTZE-KÖDERSTAB)",
-        "GEGENSPANNUNG (WECHSELSEITIGER SCHUB)",
-        "[SCHRITT 3] DURCH REIBUNG FREISTEHENDER 4ER-RAHMEN"
+        "FIG. 03 // SCHRITT 03",
+        "Post-Bait Stick Middle Joint",
+        "Strut-Bait Stick Rear Joint",
+        "Stands alone in Number 4 shape",
+        "[KEY] Sticks push against each other to stand"
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Schritt 4: 15-kg-Stein auflegen und 0,1s Auslöser-Empfindlichkeit justieren",
-      "description": "Den Köder auf die innere Spitze spießen. Den 10-15 kg schweren Stein anheben und vorsichtig im 45-Grad-Winkel auf die Diagonale stützen. Die Empfindlichkeit mit einem Zweig testen: Eine 20-Gramm-Berührung am Köder muss den Stein augenblicklich herabfallen lassen.",
-      "actionNote": "> Sicherheitswarnung: Niemals Hände oder Finger unter den schwebenden Stein halten.",
+      "title": "Schritt 4: Lean the heavy rock on top & test 0.1-second hair trigger",
+      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // ROCK LOAD & SENSITIVE TRIGGER SET",
-        "FLACHSTEIN 15KG (45°-WINKEL)",
-        "KÖDERSPITZE (INNERE KÖDERLAGE)",
-        "SOFORTIGER EINSTURZ (0,1S ABSTURZ)",
-        "[SCHRITT 4] HAARFEINE AUSLÖSER-EINSTELLUNG"
+        "FIG. 04 // SCHRITT 04",
+        "15kg Flat Rock Loaded",
+        "Bait set on inner tip",
+        "Drops rock in 0.1s when touched",
+        "[KEY] Hair trigger collapses instantly on touch"
       ]
     }
   ],
@@ -101,8 +101,8 @@
   },
   "outcome": {
     "svgFileName": "pr08-outcome.svg",
-    "title": "Gesamtansicht der scharfgestellten Vierer-Schlagfalle",
-    "description": "Drei Hartholzstäbe im Spannungs-Gleichgewicht stützen einen 15 kg schweren Felsen, konstruiert für augenblicklichen Einsturz bei Berührung."
+    "title": "Completed Figure-4 Deadfall Trap Full Setup",
+    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it."
   },
   "createdAt": "2026-10-14T15:35:00.000Z"
 }
