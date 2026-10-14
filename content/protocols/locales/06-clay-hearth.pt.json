@@ -146,5 +146,10 @@
     "hook": "Fogueira no chão perde 80% do calor. Veja como construir um fogão primitivo resistente a temporais.",
     "body": "Pise 2 partes de argila, 1 de areia e 1 de capim seco com água até virar massa firme. Monte pedras secas em U viradas contra o vento. Levante a cúpula alternando pedras e barro com bocal superior e chaminé traseira. Cure por 3 horas com fogo brando até endurecer como tijolo. Nunca use pedras úmidas de rio dentro; a pressão de vapor faz elas detonarem.",
     "outro": "Cozinhe suas refeições e mantenha calor seguro a noite toda sob tempestades."
+  },
+  "outcome": {
+    "title": "Fogão Primitivo de Pedra e Argila Refratária",
+    "description": "Base de pedra de rio em U rebocada com 50mm de argila e palha, com boca plana de cocção e chaminé traseira retendo 650°C.",
+    "svgFileName": "pr06-outcome.svg"
   }
 }

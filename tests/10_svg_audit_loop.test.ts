@@ -62,6 +62,14 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr07-step-03.svg',
       'pr07-step-04.svg',
       'pr07-step-05.svg',
+      // 최종 완성 결과물 초고화질 벡터 도면 7종
+      'pr01-outcome.svg',
+      'pr02-outcome.svg',
+      'pr03-outcome.svg',
+      'pr04-outcome.svg',
+      'pr05-outcome.svg',
+      'pr06-outcome.svg',
+      'pr07-outcome.svg',
     ];
 
     for (const fileName of activeSvgs) {

@@ -90,5 +90,10 @@
     "title": "Never blow rashly on premature uncoalesced embers",
     "description": "Blowing prematurely on loose carbon dust will scatter the delicate ember particles, extinguishing the core heat immediately.",
     "consequence": "Failure to start a fire in wilderness freezing conditions leads to irreversible hypothermia and death within 72 hours."
+  },
+  "outcome": {
+    "title": "Bow Drill Friction Ember & Tinder Ignition",
+    "description": "A 400°C glowing cherry ember formed in the 45° hearth notch, transferred to a dry bast fiber tinder nest and fanned into open flame.",
+    "svgFileName": "pr02-outcome.svg"
   }
 }

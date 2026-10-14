@@ -17,6 +17,14 @@ export interface ProtocolStep {
   svgLabels?: string[];
 }
 
+export interface ProtocolOutcome {
+  title: string;
+  description: string;
+  svgFileName: string;
+  svgCode?: string;
+  svgLabels?: string[];
+}
+
 export interface FatalMistake {
   title: string;
   description: string;
@@ -38,6 +46,7 @@ export interface Protocol {
   successRate: string;
   difficulty: string;
   outputPerHour?: string;
+  outcome?: ProtocolOutcome;
   materials: Material[];
   steps: ProtocolStep[];
   fatalMistake: FatalMistake;

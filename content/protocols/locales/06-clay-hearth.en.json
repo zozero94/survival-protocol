@@ -146,5 +146,10 @@
     "hook": "An open ground fire loses 80% of its heat. Here is how to build a weatherproof primitive hearth.",
     "body": "Mix 2 parts sticky clay, 1 part sand, and 1 part dry grass with water and stomp into dough. Lay dry stones in a U-shape facing away from the wind. Stagger stones and thick mud into a knee-high dome with a pot hole on top and a chimney flue out back. Cure with a tiny fire for 3 hours to bake it rock-solid. Never use wet river stones inside; steam pressure will cause them to detonate.",
     "outro": "Cook your meals and stay warm all night through rain and howling winds."
+  },
+  "outcome": {
+    "title": "Tempered Clay & Stone Outdoor Hearth",
+    "description": "A U-shaped granite base plastered with 50mm straw-clay refractory mortar, featuring a level stone cooktop and rear draft chimney retaining 650°C heat.",
+    "svgFileName": "pr06-outcome.svg"
   }
 }

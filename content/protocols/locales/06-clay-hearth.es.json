@@ -146,5 +146,10 @@
     "hook": "Un fuego abierto en el suelo pierde el 80% de su calor. Así se construye un fogón primitivo resistente a la lluvia.",
     "body": "Pise 2 partes de arcilla, 1 de arena y 1 de hierba seca con agua hasta lograr una masa firme. Forme una herradura de piedras secas con la boca en contra del viento. Levante una cúpula trabando piedras y barro con un orificio superior y una chimenea trasera. Cure 3 horas con fuego suave para dejarlo duro como ladrillo. Jamás use piedras húmedas de río adentro; estallarán por presión de vapor.",
     "outro": "Cocine alimentos y mantenga calor agradable durante toda la noche bajo tormentas."
+  },
+  "outcome": {
+    "title": "Fogón Primitivo de Piedra y Arcilla Refractaria",
+    "description": "Base de piedra de río en U recubierta con 50mm de arcilla y paja, equipada con hornilla plana y chimenea trasera reteniendo 650°C.",
+    "svgFileName": "pr06-outcome.svg"
   }
 }

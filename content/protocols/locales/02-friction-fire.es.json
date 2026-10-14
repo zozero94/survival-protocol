@@ -90,5 +90,10 @@
     "title": "Nunca sople bruscamente sobre polvo de carbón recién formado",
     "description": "Soplar con fuerza inmediatamente después de detener la fricción dispersará las partículas de carbón no cohesionadas, apagando el núcleo térmico al instante.",
     "consequence": "El fallo de ignición en condiciones invernales acelera la pérdida de calor corporal, causando muerte por hipotermia en 72 horas."
+  },
+  "outcome": {
+    "title": "Encendido por Fricción con Taladro de Arco y Brasa",
+    "description": "Una brasa al rojo vivo a 400°C formada en la muesca en V de 45°, transferida a un nido de yesca seca y soplada hasta obtener llama viva.",
+    "svgFileName": "pr02-outcome.svg"
   }
 }

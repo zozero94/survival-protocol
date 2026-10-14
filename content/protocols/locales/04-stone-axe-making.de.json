@@ -75,5 +75,10 @@
     "title": "Häufiger Fehler: Flach in die Steinmitte schlagen oder trockene Ranken nutzen",
     "description": "Wer im 90-Grad-Winkel flach auf die Steinmitte schlägt, erhält keine scharfe Klinge, sondern zertrümmert den Stein zu nutzlosem Kies. Wer trockene, spröde Ranken oder raue Außenrinde verwendet, riskiert, dass die Bindung beim ersten Schlag reißt und die schwere Steinklinge ins Gesicht fliegt.",
     "consequence": "Ergebnis: Immer die Kante im 45-Grad-Winkel schlagen und eingeweichte Innenrinde im Schatten trocknen lassen."
+  },
+  "outcome": {
+    "title": "Primitivaxt aus geschlagenem Feuerstein & Rankenbindung",
+    "description": "Bifazial geschlagene Feuersteinklinge im gespaltenen Eichenholzstiel, mit X-Kreuz-Rankenbindung und Pechharzkleber fixiert.",
+    "svgFileName": "pr04-outcome.svg"
   }
 }

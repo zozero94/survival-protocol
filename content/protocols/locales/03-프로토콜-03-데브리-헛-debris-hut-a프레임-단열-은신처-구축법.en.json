@@ -78,5 +78,10 @@
     "title": "Fatal Error: Building an Oversized Cabin & Mixing Wet Debris",
     "description": "Raising the ceiling for sitting comfort creates a large air pocket that human basal metabolism (80–100W) cannot heat. Furthermore, packing damp leaves into the floor or walls turns the shelter into a conductive evaporative cooler.",
     "consequence": "Consequence: Combined conductive and convective heat loss drops core body temperature below 30°C during sleep, causing fatal hypothermia."
+  },
+  "outcome": {
+    "title": "A-Frame Debris Hut (Thermal Survival Shelter)",
+    "description": "A 2.5m ridgepole and 45° rib skeletal frame banked with a 1-meter thick dead-air leaf blanket and thatch trellis, maintaining body core heat in sub-zero wilderness.",
+    "svgFileName": "pr03-outcome.svg"
   }
 }

@@ -76,5 +76,10 @@
     "title": "FATAL MISTAKE: Never drink filtered water directly without boiling.",
     "description": "Mechanical charcoal filtration only removes sediments, heavy metals, and odors. Viruses, Giardia cysts, and Cryptosporidium easily pass through. Filtered water MUST be boiled at a rolling boil for at least 1 minute (3 minutes above 6,500 ft elevation) to ensure total survival safety.",
     "consequence": "Consequence of skipping boil: Acute Cryptosporidiosis infection and lethal dehydration within 96 hours."
+  },
+  "outcome": {
+    "title": "5-Tier Stratified Charcoal & Sand Water Filter",
+    "description": "A conical cylinder filled with compressed gravel, coarse sand, fine sand, activated charcoal, and fiber filter, producing crystal-clear potable water from raw muddy runoff.",
+    "svgFileName": "pr01-outcome.svg"
   }
 }

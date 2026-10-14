@@ -71,6 +71,14 @@ export function getLocaleRuntimeScript()         {
           }
         });
 
+        // 4-2. [선언적 엔진] 최종 결과물(Outcome) 중첩 객체 자동 매핑 (data-proto-outcome)
+        document.querySelectorAll('[data-proto-outcome]').forEach(function(el) {
+          var prop = el.getAttribute('data-proto-outcome');
+          if (proto.outcome && proto.outcome[prop] !== undefined) {
+            el.innerText = proto.outcome[prop];
+          }
+        });
+
         // 5. [선언적 엔진] 인라인 벡터 도면(SVG) 내부 <text> 다국어 핫스왑 (data-svg-step, data-svg-label)
         document.querySelectorAll('text[data-svg-step]').forEach(function(el) {
           var sIdx = parseInt(el.getAttribute('data-svg-step'), 10);

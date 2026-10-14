@@ -76,5 +76,10 @@
     "title": "TÖDLICHER IRRTUM: Gefiltertes klares Wasser niemals ungekocht trinken.",
     "description": "Mechanische Kohlefiltration entfernt nur Schwebstoffe und Chemikalien. Viren, Giardia-Zysten und Kryptosporidien passieren den Filter ungehindert. Erst 1 bis 3 Minuten sprudelndes Kochen tötet 99.9% aller Erreger ab.",
     "consequence": "Folge bei Verzicht auf Abkochen: Akute Kryptosporidiose und tödliche Dehydrierung binnen 96 Stunden."
+  },
+  "outcome": {
+    "title": "5-Stufen Schichtfilter aus Holzkohle und Sand",
+    "description": "Konischer Zylinder mit verdichtetem Kies, Grobsand, Feinsand, Aktivkohle und Faserpfropfen zur Gewinnung von klarem Trinkwasser aus Schlammwasser.",
+    "svgFileName": "pr01-outcome.svg"
   }
 }

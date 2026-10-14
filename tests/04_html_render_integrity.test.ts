@@ -30,7 +30,17 @@ describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫�
     assert.ok(html.includes('data-proto='), 'data-proto 속성이 존재해야 함');
     assert.ok(html.includes('data-proto-item='), 'data-proto-item 속성이 존재해야 함');
     assert.ok(html.includes('data-proto-fatal='), 'data-proto-fatal 속성이 존재해야 함');
+    assert.ok(html.includes('data-proto-outcome='), 'data-proto-outcome 속성이 존재해야 함');
     assert.ok(html.includes('data-action='), '선언적 이벤트 위임 data-action이 존재해야 함');
+  });
+
+  test('최종 완성 결과물(Outcome Preview) 도면이 필수 준비물 체크리스트 직전에 배치되어야 한다', () => {
+    const html = fs.readFileSync(compiledHtmlPath, 'utf-8');
+    assert.ok(html.includes('ui-outcome-title'), '결과물 미리보기 컴포넌트가 렌더링되어야 함');
+    assert.ok(html.includes('TARGET: 5-TIER STRATIFIED PURIFIER'), '초고화질 결과물 SVG가 인라인 탑재되어야 함');
+    const outcomeIdx = html.indexOf('ui-outcome-title');
+    const checklistIdx = html.indexOf('ui-checklist-title');
+    assert.ok(outcomeIdx > 0 && checklistIdx > 0 && outcomeIdx < checklistIdx, '결과물 이미지가 필수 준비물 체크리스트 위에 위치해야 함');
   });
 
   test('ARCHIVE-0 명칭이 배제되고 PWA 메타 및 오프라인 배너가 탑재되어 있어야 한다', () => {

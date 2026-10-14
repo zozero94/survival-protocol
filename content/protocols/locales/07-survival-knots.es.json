@@ -133,5 +133,10 @@
     "hook": "Domina estos 3 nudos de supervivencia y jamás volverás a sufrir con cuerdas sueltas.",
     "body": "Primero: El As de Guía, el rey de los nudos. Haces la madriguera, el conejo sale, rodea el árbol y vuelve a entrar. Aguanta un camión sin soltarse, pero se desata en 1 segundo empujando el collar trasero. Segundo: El Nudo Tensor. Dos vueltas por dentro, una por fuera. Deslízalo para tensar la tienda; el viento lo traba automáticamente. Tercero: El Amarre Cuadrado. Envuelve en cruz 3 veces y aprieta con todo tu peso entre los troncos. Tienes refugios y camas firmes sin un solo clavo. Jamás dejes el chicote del As de Guía por fuera: una rama lo desatará al instante.",
     "outro": "Descarga los diagramas vectoriales para verlos sin conexión desde el enlace del perfil."
+  },
+  "outcome": {
+    "title": "Montaje Táctico de 3 Nudos de Supervivencia y Amarre Cuadrado",
+    "description": "Sistema de aparejo con Ballestrinque de anclaje, As de Guía de desenganche rápido, Nudo Tensor deslizante y Amarre Cuadrado transversal.",
+    "svgFileName": "pr07-outcome.svg"
   }
 }

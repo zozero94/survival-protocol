@@ -133,5 +133,10 @@
     "hook": "Master these 3 survival knots, and you will never struggle with loose ropes for the rest of your life.",
     "body": "First: The Bowline, the king of knots. Dig a rabbit hole, rabbit pops out, wraps around the tree, and dives back in. Holds a truck without slipping, but breaks loose in 1 second by pushing the collar back. Second: The Taut-line Hitch. Two wraps inside, one outside. Slide it to adjust guyline tension; wind tension locks it solid. Third: The Square Lashing. Wrap crosswise 3 times, then frap between the timbers with all your weight. You get rock-solid shelters and ladders with zero nails. Never leave the Bowline tail on the outside—brushing branches will unzip it.",
     "outro": "Save the technical vector blueprints to your device offline from the profile link."
+  },
+  "outcome": {
+    "title": "3 Survival Knots Field Rigging & Square Lashing",
+    "description": "A unified survival rigging setup combining Clove Hitch post anchoring, Bowline rapid-release loop, Taut-line Hitch tension sliding, and rigid Square Lashing.",
+    "svgFileName": "pr07-outcome.svg"
   }
 }

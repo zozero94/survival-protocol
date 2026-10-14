@@ -112,5 +112,10 @@
     "hook": "When you have zero rope in the wild, here is how to twist unbreakable cordage with bare hands.",
     "body": "Scrape the brown outer bark off live kudzu vines and peel out the white inner fibers. Soak for 20 minutes and tap with a round stone until soft. Fold in half, twist the top strand away from you, and cross it over toward you. Overlap new fibers by 10cm to splice endless length.",
     "outro": "Tested against 50kg of body weight on a tree trunk. Ready for shelters, stone axes, and bow drills."
+  },
+  "outcome": {
+    "title": "2-Ply Reverse-Wrapped Natural Cordage Coil Pack",
+    "description": "Inner bark and kudzu vine fibers counter-twisted into an 8mm uniform rope coil, delivering over 90 kgf tensile breaking strength.",
+    "svgFileName": "pr05-outcome.svg"
   }
 }

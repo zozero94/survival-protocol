@@ -12,6 +12,9 @@ export interface UiStrings {
   successRate: string;
   difficulty: string;
   outputPerHour: string;
+  outcomeTitle: string;
+  outcomeBadge: string;
+  outcomeStandard: string;
   checklistTitle: string;
   checklistDesc: string;
   itemsSecured: string;
@@ -65,6 +68,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: '성공 확률',
     difficulty: '난이도',
     outputPerHour: '결과물',
+    outcomeTitle: '최종 완성 형태',
+    outcomeBadge: '실전 완성 미리보기',
+    outcomeStandard: '완성 검수 기준',
     checklistTitle: '준비할 재료 체크리스트',
     checklistDesc: '주변 자연에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.',
     itemsSecured: '준비 완료',
@@ -117,6 +123,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: 'Survival Rate',
     difficulty: 'Skill Level',
     outputPerHour: 'Output / Hour',
+    outcomeTitle: 'Target Outcome',
+    outcomeBadge: 'Field Result Preview',
+    outcomeStandard: 'Field Inspection Standard',
     checklistTitle: 'Essential Materials Checklist (Gather Immediately)',
     checklistDesc: 'Natural field-foraged materials. Tap each item to record your collection status.',
     itemsSecured: 'Secured',
@@ -169,6 +178,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: '生存率/成功率',
     difficulty: '技術難易度',
     outputPerHour: '時間あたり生産量',
+    outcomeTitle: '最終完成形',
+    outcomeBadge: '実践完成プレビュー',
+    outcomeStandard: '完成検収基準',
     checklistTitle: '必須確保物資チェックリスト (直ちに収集せよ)',
     checklistDesc: '野戦で確保可能な天然代替資材です。準備できた項目をタップして収集状況を記録してください。',
     itemsSecured: '確保完了',
@@ -221,6 +233,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: 'Tasa de Éxito',
     difficulty: 'Dificultad',
     outputPerHour: 'Producción / Hora',
+    outcomeTitle: 'Resultado Final del Objetivo',
+    outcomeBadge: 'Vista Previa del Resultado',
+    outcomeStandard: 'Criterio de Inspección',
     checklistTitle: 'Lista de Materiales Esenciales (Recoger de Inmediato)',
     checklistDesc: 'Materiales naturales recolectables en campo. Toque cada elemento para registrar su estado de recolección.',
     itemsSecured: 'Asegurados',
@@ -273,6 +288,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: 'Überlebensrate',
     difficulty: 'Schwierigkeitsgrad',
     outputPerHour: 'Leistung / Stunde',
+    outcomeTitle: 'Endergebnis & Zielaufbau',
+    outcomeBadge: 'Vorschau des Endergebnisses',
+    outcomeStandard: 'Prüf- und Abnahmekriterien',
     checklistTitle: 'Material-Checkliste (Sofort sammeln)',
     checklistDesc: 'Im Feld verfügbare Naturmaterialien. Tippen Sie auf jedes Element, um den Sammelstatus zu protokollieren.',
     itemsSecured: 'Gesichert',
@@ -325,6 +343,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: 'Taxa de Sobrevivência',
     difficulty: 'Dificuldade',
     outputPerHour: 'Produção / Hora',
+    outcomeTitle: 'Resultado Final do Objetivo',
+    outcomeBadge: 'Prévia do Resultado em Campo',
+    outcomeStandard: 'Critério de Inspeção',
     checklistTitle: 'Checklist de Materiais Esenciais (Coletar Imediatamente)',
     checklistDesc: 'Materiais naturais disponíveis em campo. Toque em cada item para registrar seu status de coleta.',
     itemsSecured: 'Garantidos',
@@ -377,6 +398,9 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     successRate: '生存率/成功率',
     difficulty: '技術難度',
     outputPerHour: '每小時產量',
+    outcomeTitle: '最終完成成果',
+    outcomeBadge: '實戰完成預覽',
+    outcomeStandard: '實戰驗收標準',
     checklistTitle: '必備物資清單（立即收集）',
     checklistDesc: '野戰環境中可取得的天然替代物資。請點擊已備妥的項目以記錄收集狀態。',
     itemsSecured: '已確保',

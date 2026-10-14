@@ -76,5 +76,10 @@
     "title": "ERROR FATAL: Nunca beba el agua filtrada sin hervirla primero.",
     "description": "La filtración mecánica con carbón elimina sedimentos y químicos, pero los virus, quistes de Giardia y Cryptosporidium atraviesan el filtro. Debe hervir el agua filtrada vigorosamente durante al menos 1 a 3 minutos.",
     "consequence": "Consecuencia de omitir la ebullición: Infección parasitaria aguda y muerte por deshidratación en 96 horas."
+  },
+  "outcome": {
+    "title": "Filtro de Agua de 5 Capas de Carbón y Arena",
+    "description": "Un cilindro cónico con capas comprimidas de grava, arena gruesa, arena fina, carbón vegetal y tapón de fibra que produce agua potable transparente a partir de lodo.",
+    "svgFileName": "pr01-outcome.svg"
   }
 }

@@ -90,5 +90,10 @@
     "title": "Nunca sopre com força sobre a brasa recém-formada",
     "description": "Soprar precipitadamente sobre o pó de carvão solto espalhará as partículas incandescentes pelo ar, extinguindo a fonte de calor instantaneamente.",
     "consequence": "A falha na obtenção de fogo em ambiente frio acelera a queda da temperatura corporal central, levando à morte por hipotermia em 72 horas."
+  },
+  "outcome": {
+    "title": "Ignição por Fricção com Arco e Brasa Viva",
+    "description": "Uma brasa incandescente a 400°C formada no entalhe em V, transferida para ninho de isca seca e soprada até formar chama aberta.",
+    "svgFileName": "pr02-outcome.svg"
   }
 }

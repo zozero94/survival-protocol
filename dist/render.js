@@ -6,6 +6,7 @@ import {
   renderHeader,
   renderStickyActionBar,
   renderHeroSection,
+  renderOutcomePreview,
   renderChecklist,
   renderStepCards,
   renderFatalWarning,
@@ -65,6 +66,7 @@ export function renderCanonicalProtocolPage(
 
   const headerHtml = renderHeader(master.category, master.title, defaultLocale);
   const heroHtml = renderHeroSection(master);
+  const outcomeHtml = master.outcome ? renderOutcomePreview(master.outcome, svgsMap) : '';
   const checklistHtml = renderChecklist(master.materials);
   const stepCardsHtml = renderStepCards(master.steps, svgsMap);
   const fatalHtml = renderFatalWarning(master.fatalMistake);
@@ -172,6 +174,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
 
   <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-5 space-y-6 flex-1 pb-28">
     ${heroHtml}
+    ${outcomeHtml}
     ${checklistHtml}
     ${stepCardsHtml}
     ${fatalHtml}

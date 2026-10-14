@@ -112,5 +112,10 @@
     "hook": "Wie man im Wald ohne Hilfsmittel mit bloßen Händen ein reißfestes Seil dreht.",
     "body": "Braune Außenrinde von lebenden Ranken abschaben und weiße Innenfaser abziehen. 20 Minuten wässern und mit rundem Stein weichklopfen. Halbieren, oberen Strang vom Körper wegdrehen und zum Körper hin überkreuzen. Neue Fasern 10cm überlappen für endlose Länge.",
     "outro": "Hält über 50kg Körpergewicht am Baumstamm. Perfekt für Unterstände, Steinäxte und Feuerbohrer."
+  },
+  "outcome": {
+    "title": "2-strängige gegenläufig verzwirnte Naturseil-Spule",
+    "description": "Bast- und Schlingpflanzenfasern zu einem gleichmäßigen 8mm Seilbündel verdrillt mit über 90 kgf Bruchlast.",
+    "svgFileName": "pr05-outcome.svg"
   }
 }

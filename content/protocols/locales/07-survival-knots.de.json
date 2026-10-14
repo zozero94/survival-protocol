@@ -133,5 +133,10 @@
     "hook": "Beherrsche diese 3 Überlebensknoten, und du wirst nie wieder mit losen Seilen kämpfen.",
     "body": "Erstens: Der Palstek, König der Knoten. Kaninchenbau formen, Kaninchen kommt heraus, umrundet den Baum und springt zurück. Hält einen LKW, löst sich aber in 1 Sekunde durch Drücken des Rückens. Zweitens: Der Spannknoten. Zwei Wicklungen innen, eine außen. Verschiebe ihn, um Leinen zu spannen; Wind blockiert ihn bombenfest. Drittens: Der Kreuzbund. 3 Mal über Kreuz wickeln und zwischen den Balken mit vollem Gewicht knebeln. Ergibt stabile Betten und Leitern ganz ohne Nägel. Niemals das Seilende des Palsteks nach außen zeigen lassen – Äste ziehen ihn sonst sofort auf.",
     "outro": "Lade dir die Vektor-Diagramme über den Link im Profil dauerhaft offline auf dein Handy."
+  },
+  "outcome": {
+    "title": "3 Überlebensknoten Feldabspannung & Kreuzbund",
+    "description": "Kombiniertes Abspannsystem mit Mastwurf-Anker, Palstek-Festschlaufe, Topi-Spannknoten und starrem Kreuzbund.",
+    "svgFileName": "pr07-outcome.svg"
   }
 }

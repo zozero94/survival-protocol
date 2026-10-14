@@ -1,0 +1,131 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d0c"/>
+      <stop offset="100%" stop-color="#141814"/>
+    </linearGradient>
+
+    <!-- Natural Cordage Fiber Gradients -->
+    <linearGradient id="cordLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#80623f"/>
+      <stop offset="50%" stop-color="#bda078"/>
+      <stop offset="100%" stop-color="#694d2f"/>
+    </linearGradient>
+    <linearGradient id="cordDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#543e26"/>
+      <stop offset="50%" stop-color="#8a6c47"/>
+      <stop offset="100%" stop-color="#402d1a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Technical Canvas Backdrop -->
+  <rect x="0" y="0" width="800" height="450" fill="url(#bgGrad5)"/>
+  <rect x="15" y="15" width="770" height="420" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Crosshairs -->
+  <path d="M 25 35 L 45 35 M 35 25 L 35 45" stroke="#444" stroke-width="1"/>
+  <path d="M 775 35 L 755 35 M 765 25 L 765 45" stroke="#444" stroke-width="1"/>
+  <path d="M 25 415 L 45 415 M 35 405 L 35 425" stroke="#444" stroke-width="1"/>
+  <path d="M 775 415 L 755 415 M 765 405 L 765 425" stroke="#444" stroke-width="1"/>
+
+  <!-- Title & Top Metrics -->
+  <text x="35" y="55" fill="#555" font-family="monospace" font-size="10" letter-spacing="1">ARCHIVE // OUTCOME SPECIFICATION</text>
+  <text x="35" y="70" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: 2-PLY REVERSE-WRAPPED NATURAL CORDAGE</text>
+  <text x="765" y="55" fill="#555" font-family="monospace" font-size="10" text-anchor="end">TENSILE LOAD: 90+ KGF</text>
+
+  <!-- Left Spec Box -->
+  <g id="specBoxLeft" font-family="monospace" font-size="10">
+    <rect x="45" y="100" width="180" height="155" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="45" y="100" width="180" height="22" fill="#1f1f1f"/>
+    <text x="55" y="115" fill="#E02424" font-weight="bold">CORDAGE METRICS</text>
+    <text x="55" y="140" fill="#aaa">· STRUCTURE: 2-PLY REVERSE</text>
+    <text x="55" y="160" fill="#aaa">· STRAND TWIST: CLOCKWISE</text>
+    <text x="55" y="180" fill="#aaa">· PLY INTERLOCK: COUNTER-CW</text>
+    <text x="55" y="200" fill="#aaa">· SPLICING: 1/3 STAGGERED</text>
+    <text x="55" y="220" fill="#aaa">· DIAMETER: 8.0 MM UNIFORM</text>
+    <text x="55" y="240" fill="#4ade80">· TENSILE BREAK: 92.4 KGF</text>
+  </g>
+
+  <!-- Ground Plane Shadow -->
+  <ellipse cx="430" cy="385" rx="180" ry="18" fill="#060606" opacity="0.9"/>
+
+  <!-- Coiled Rope Bundle (원형 코일 다발) -->
+  <g id="ropeCoil">
+    <!-- Back Loop Turns -->
+    <ellipse cx="400" cy="270" rx="90" ry="60" fill="none" stroke="url(#cordDark)" stroke-width="10"/>
+    <ellipse cx="402" cy="265" rx="85" ry="55" fill="none" stroke="url(#cordLight)" stroke-width="9"/>
+    <ellipse cx="398" cy="260" rx="80" ry="50" fill="none" stroke="url(#cordDark)" stroke-width="9"/>
+
+    <!-- Front Loop Turns -->
+    <ellipse cx="400" cy="275" rx="95" ry="65" fill="none" stroke="url(#cordLight)" stroke-width="10"/>
+    <ellipse cx="405" cy="280" rx="90" ry="60" fill="none" stroke="url(#cordDark)" stroke-width="9"/>
+    <ellipse cx="395" cy="285" rx="85" ry="55" fill="none" stroke="url(#cordLight)" stroke-width="10"/>
+
+    <!-- Center Binding Collar (다발 고정 묶음) -->
+    <rect x="382" y="210" width="36" height="135" rx="6" fill="#4d3722" stroke="#2b1d10" stroke-width="2"/>
+    <!-- Individual Wrap Wrappings Around Center -->
+    <g stroke="url(#cordLight)" stroke-width="5" stroke-linecap="round">
+      <line x1="384" y1="225" x2="416" y2="225"/>
+      <line x1="384" y1="240" x2="416" y2="240"/>
+      <line x1="384" y1="255" x2="416" y2="255"/>
+      <line x1="384" y1="270" x2="416" y2="270"/>
+      <line x1="384" y1="285" x2="416" y2="285"/>
+      <line x1="384" y1="300" x2="416" y2="300"/>
+      <line x1="384" y1="315" x2="416" y2="315"/>
+      <line x1="384" y1="330" x2="416" y2="330"/>
+    </g>
+
+    <!-- Trailing Working End with Figure-8 Stopper Knot -->
+    <path d="M 400 340 Q 370 380 320 375 Q 290 370 270 380" fill="none" stroke="url(#cordLight)" stroke-width="9" stroke-linecap="round"/>
+    <!-- Figure-8 Knot Ball -->
+    <circle cx="270" cy="380" r="10" fill="#735435" stroke="#3b2b1a" stroke-width="2"/>
+    <path d="M 264 374 Q 270 386 276 374" stroke="#d4b483" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Zoom Loupe Window for Micro Reverse-Wrap Detail -->
+  <g id="microDetailWindow" transform="translate(180, 110)">
+    <!-- Lens Circle -->
+    <circle cx="150" cy="50" r="48" fill="#141414" stroke="#444" stroke-width="2"/>
+    <!-- Interior 2-Ply Braid Micro Strands -->
+    <g stroke-width="4.5" stroke-linecap="round">
+      <!-- Strand A (Dark Bast) -->
+      <path d="M 115 35 Q 130 30 145 45 Q 160 60 175 45 Q 190 30 195 40" fill="none" stroke="#694d2f"/>
+      <!-- Strand B (Light Kudzu) -->
+      <path d="M 115 55 Q 130 65 145 45 Q 160 25 175 45 Q 190 65 195 55" fill="none" stroke="#c4a57b"/>
+      <!-- Surface Twisting Hatch Lines -->
+      <line x1="124" y1="38" x2="128" y2="44" stroke="#3d2b18" stroke-width="1.2"/>
+      <line x1="154" y1="48" x2="158" y2="54" stroke="#3d2b18" stroke-width="1.2"/>
+      <line x1="138" y1="48" x2="142" y2="54" stroke="#edd6b6" stroke-width="1.2"/>
+      <line x1="168" y1="38" x2="172" y2="44" stroke="#edd6b6" stroke-width="1.2"/>
+    </g>
+    <!-- Loupe Label -->
+    <text x="150" y="88" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">5X MAGNIFICATION</text>
+  </g>
+
+  <!-- Technical Callouts (Right Side) -->
+  <g id="calloutsRight" font-family="monospace" font-size="10" fill="#cccccc">
+    <!-- Callout 1: Reverse Wrap Mechanics -->
+    <line x1="375" y1="150" x2="565" y2="150" stroke="#E02424" stroke-width="1"/>
+    <circle cx="375" cy="150" r="2" fill="#E02424"/>
+    <text x="570" y="147" fill="#E02424" font-weight="bold">2-PLY REVERSE INTERLOCK</text>
+    <text x="570" y="160" fill="#888888">자체 마찰력으로 당길수록 더 단단히 조임</text>
+
+    <!-- Callout 2: Center Collar -->
+    <line x1="418" y1="250" x2="565" y2="250" stroke="#666" stroke-width="1"/>
+    <circle cx="418" cy="250" r="2" fill="#666"/>
+    <text x="570" y="247" fill="#ffffff" font-weight="bold">EXPEDITION COIL PACK</text>
+    <text x="570" y="260" fill="#888888">엉킴 없이 즉각 풀리는 야전 휴대 권취</text>
+
+    <!-- Callout 3: Tensile Strength -->
+    <line x1="480" y1="310" x2="565" y2="310" stroke="#4ade80" stroke-width="1"/>
+    <circle cx="480" cy="310" r="2" fill="#4ade80"/>
+    <text x="570" y="307" fill="#4ade80" font-weight="bold">TENSILE BREAK: 90+ KGF</text>
+    <text x="570" y="320" fill="#888888">성인 체중 및 쉘터 가이라인 완벽 지지</text>
+
+    <!-- Callout 4: Figure-8 Stopper -->
+    <line x1="280" y1="380" x2="565" y2="380" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="280" cy="380" r="2" fill="#38bdf8"/>
+    <text x="570" y="377" fill="#38bdf8" font-weight="bold">FIGURE-8 STOPPER KNOT</text>
+    <text x="570" y="390" fill="#888888">말단 올 풀림을 영구 방지하는 8자 마감</text>
+  </g>
+</svg>

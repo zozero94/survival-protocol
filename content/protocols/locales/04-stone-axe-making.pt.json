@@ -75,5 +75,10 @@
     "title": "Erro grave: Bater no meio plano da pedra ou amarrar com cipó seco",
     "description": "Bater em ângulo reto (90 graus) no centro plano da pedra não cria lâmina e só quebra a pedra em pedregulhos inúteis. Além disso, amarrar com cipó seco ou casca grossa faz a amarração arrebentar na primeira batida, podendo lançar a pedra pesada contra o seu rosto.",
     "consequence": "Resultado: Bata sempre na borda a 45 graus e amarre com fibra interna molhada, secando na sombra."
+  },
+  "outcome": {
+    "title": "Machado de Pedra Primitivo com Amarração de Cipó",
+    "description": "Lâmina de sílex bifacial assentada em cabo de carvalho fendido, amarrada em X com cipós e selada com resina de pinho.",
+    "svgFileName": "pr04-outcome.svg"
   }
 }

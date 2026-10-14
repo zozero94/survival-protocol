@@ -75,5 +75,10 @@
     "title": "Error grave: Golpear el centro plano de la roca o atar con lianas secas",
     "description": "Si golpeas el centro plano de la piedra a 90 grados, no saldrá ningún filo y toda la roca se romperá en grava inútil. Además, si atas con lianas secas o corteza exterior áspera, la cuerda se partirá al primer golpe y la piedra pesada puede salir disparada hacia tu cara o tus ojos.",
     "consequence": "Resultado: Golpea siempre el borde a 45 grados y ata con fibra interna remojada en agua, secándola a la sombra."
+  },
+  "outcome": {
+    "title": "Hacha de Piedra Primitiva Atada con Enredaderas",
+    "description": "Hoja de sílex bifacial encajada en mango de roble, asegurada con ligaduras en X de enredadera y sellada con resina de pino y carbón.",
+    "svgFileName": "pr04-outcome.svg"
   }
 }

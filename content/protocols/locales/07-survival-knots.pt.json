@@ -133,5 +133,10 @@
     "hook": "Domine estes 3 nós de sobrevivência e você nunca mais terá problemas com cordas frouxas.",
     "body": "Primeiro: O Lais de Guia, o rei dos nós. Cavou a toca, o coelho sai, dá a volta na árvore e entra de novo. Aguenta um caminhão sem soltar, mas desata em 1 segundo empurrando o colar traseiro. Segundo: O Nó Esticador. Duas voltas por dentro, uma por fora. Deslize para esticar a barraca; o vento trava na hora. Terceiro: A Amarra Quadrada. Enrole em cruz 3 vezes e aperte com todo o seu peso entre as madeiras. Você faz camas e escadas firmes sem nenhum prego. Nunca deixe a ponta do Lais de Guia para fora: um galho vai desamarrá-lo na hora.",
     "outro": "Baixe os diagramas vetoriais para visualização offline permanente no link do perfil."
+  },
+  "outcome": {
+    "title": "Armação Tática dos 3 Nós de Sobrevivência e Amarração Quadrada",
+    "description": "Sistema de ancoragem com Volta do Fiel, Lais de Guia de soltura rápida, Nó Esticador deslizante e Amarração Quadrada rígida.",
+    "svgFileName": "pr07-outcome.svg"
   }
 }

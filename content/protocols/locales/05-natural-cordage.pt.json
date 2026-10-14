@@ -112,5 +112,10 @@
     "hook": "Como fazer uma corda selvagem inquebrável com as mãos quando você não tem nada na mata.",
     "body": "Raspe a casca marrom de um cipó vivo e puxe a fibra branca interna. Deixe 20 minutos na água e bata com uma pedra redonda até amaciar. Dobre ao meio, torça o cabo de cima para fora e cruze para o seu lado. Sobreponha 10cm de fibra nova para emendar sem limite.",
     "outro": "Aguenta mais de 50kg presa em uma árvore. Pronta para amarrar abrigos e fixar machados de pedra."
+  },
+  "outcome": {
+    "title": "Rolo de Corda Natural Trançada de 2 Fios Inversos",
+    "description": "Fibras de casca interna e cipó trançadas em espiral contínua de 8mm com resistência à tração superior a 90 kgf.",
+    "svgFileName": "pr05-outcome.svg"
   }
 }

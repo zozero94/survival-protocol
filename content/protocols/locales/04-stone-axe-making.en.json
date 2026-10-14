@@ -75,5 +75,10 @@
     "title": "Critical Mistake: Striking the Flat Center of the Rock or Binding with Dry Vines",
     "description": "Smashing the flat center of a stone at 90 degrees shatters the rock into useless gravel instead of forming a sharp edge. Also, tying the blade with dry, brittle vines or rough outer bark will cause the lashing to snap on the first swing, sending a heavy stone blade flying toward your face or eyes.",
     "consequence": "Result: Always strike the stone edge at 45 degrees for a clean blade, and lash with water-soaked inner bark dried slowly in the shade."
+  },
+  "outcome": {
+    "title": "Chipped Flint & Vine-Bound Primitive Stone Axe",
+    "description": "A bifacial chert axe blade seated in a split oak haft, cross-bound with raw kudzu vines and sealed with pine pitch resin composite for heavy chopping.",
+    "svgFileName": "pr04-outcome.svg"
   }
 }
