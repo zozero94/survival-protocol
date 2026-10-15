@@ -1,3 +1,4 @@
+import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
@@ -7,8 +8,118 @@ import { execSync } from 'child_process';
                     
                      
                       
+                      
                        
  
+
+                                      
+                     
+               
+                      
+                    
+                     
+                   
+                  
+ 
+
+/**
+ * Git 실행 가능 여부 및 .git 작업 트리 존재 여부 확인
+ */
+export function isGitAvailable(rootDir         = process.cwd())          {
+  try {
+    const out = execSync('git rev-parse --is-inside-work-tree', {
+      cwd: rootDir,
+      encoding: 'utf-8',
+      stdio: ['pipe', 'pipe', 'ignore'],
+    }).trim();
+    return out === 'true';
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * 프로토콜의 실질적 콘텐츠(텍스트 본문 + 스텝 SVG 도면 + 실사 이미지 바이너리)를 기반으로
+ * 16자리 SHA-256 콘텐츠 지문(Content Fingerprint)을 계산합니다.
+ * 단순 공백, 린터 포맷팅, 주석 변경 등은 무시하고 실제 생존 지식 내용이 바뀐 경우에만 해시가 변경됩니다.
+ */
+export function computeProtocolContentHash(
+  protocol          ,
+  masterFilePath        ,
+  rootDir         = process.cwd()
+)         {
+  const hash = crypto.createHash('sha256');
+
+  // 1. 핵심 본문 텍스트 (줄바꿈/공백 정규화)
+  hash.update(`id:${protocol.protocolId || ''}`);
+  hash.update(`title:${(protocol.title || '').trim()}`);
+  hash.update(`desc:${(protocol.description || '').trim()}`);
+  hash.update(`summary:${(protocol.summary || '').trim()}`);
+  hash.update(`threat:${protocol.threatLevel || ''}`);
+  hash.update(`category:${protocol.category || ''}`);
+  hash.update(`diff:${protocol.difficulty || ''}`);
+  hash.update(`time:${protocol.timeRequired || ''}`);
+
+  // 2. 필요 자연물 재료
+  if (Array.isArray(protocol.materials)) {
+    for (const m of protocol.materials) {
+      hash.update(`mat:${(m.name || '').trim()}:${(m.amount || '').trim()}:${(m.source || '').trim()}`);
+    }
+  }
+
+  // 3. 단계별 본문 및 SVG 도면 / 이미지
+  if (Array.isArray(protocol.steps)) {
+    for (const s of protocol.steps) {
+      hash.update(`step:${s.stepNumber}:${(s.title || '').trim()}:${(s.description || '').trim()}`);
+      if (s.fatalMistake) {
+        hash.update(`fatal:${(s.fatalMistake.title || '').trim()}:${(s.fatalMistake.description || '').trim()}`);
+      }
+      if (s.svgFileName) {
+        hash.update(`svg:${s.svgFileName}`);
+        const svgPath = path.resolve(rootDir, 'content/svgs', s.svgFileName);
+        if (fs.existsSync(svgPath)) {
+          // SVG 내부 공백 정규화 후 해싱
+          const svgCode = fs.readFileSync(svgPath, 'utf-8').replace(/\s+/g, ' ').trim();
+          hash.update(svgCode);
+        }
+      }
+      if (s.imageFileName) {
+        hash.update(`img:${s.imageFileName}`);
+        const imgPath = path.resolve(rootDir, 'content/images', s.imageFileName);
+        if (fs.existsSync(imgPath)) {
+          // 이미지 바이너리 해싱
+          hash.update(fs.readFileSync(imgPath));
+        }
+      }
+    }
+  }
+
+  // 4. 치명적 실수
+  if (protocol.fatalMistake) {
+    hash.update(`fatal_all:${(protocol.fatalMistake.title || '').trim()}:${(protocol.fatalMistake.description || '').trim()}:${(protocol.fatalMistake.consequence || '').trim()}`);
+  }
+
+  // 5. 최종 완성 결과물 (Outcome)
+  if (protocol.outcome) {
+    hash.update(`outcome:${(protocol.outcome.title || '').trim()}:${(protocol.outcome.description || '').trim()}`);
+    if (protocol.outcome.svgFileName) {
+      hash.update(`outcome_svg:${protocol.outcome.svgFileName}`);
+      const oSvg = path.resolve(rootDir, 'content/svgs', protocol.outcome.svgFileName);
+      if (fs.existsSync(oSvg)) {
+        hash.update(fs.readFileSync(oSvg, 'utf-8').replace(/\s+/g, ' ').trim());
+      }
+    }
+    if (protocol.outcome.imageFileName) {
+      hash.update(`outcome_img:${protocol.outcome.imageFileName}`);
+      const oImg = path.resolve(rootDir, 'content/images', protocol.outcome.imageFileName);
+      if (fs.existsSync(oImg)) {
+        hash.update(fs.readFileSync(oImg));
+      }
+    }
+  }
+
+  return hash.digest('hex').slice(0, 16);
+}
 
 /**
  * 특정 프로토콜과 직결된 모든 에셋(마스터 JSON, 단계별 SVG/이미지, 완성형 도면/이미지, 6개국어 번역본)의
@@ -93,7 +204,7 @@ export function getLatestGitCommitTime(
   relativeFilePaths          ,
   rootDir         = process.cwd()
 )                {
-  if (!relativeFilePaths.length) return null;
+  if (!relativeFilePaths.length || !isGitAvailable(rootDir)) return null;
   try {
     const quoted = relativeFilePaths.map((p) => `"${p.replace(/"/g, '\\"')}"`).join(' ');
     const out = execSync(`git log -1 --format=%cI -- ${quoted}`, {
@@ -110,12 +221,14 @@ export function getLatestGitCommitTime(
 
 /**
  * 로컬 작업 트리(Working Tree)에서 커밋되지 않은 수정사항이 있는 파일의 최신 mtime을 조회합니다.
+ * [보강 가드 1]: Git이 없는 환경(서버리스 배포 등)에서는 체크아웃/복사 시점 오염을 방지하기 위해 반드시 null을 반환합니다.
+ * [보강 가드 2]: 순환 갱신 방지를 위해 마스터 JSON 파일 자체의 수정 여부는 제외하고, 도면/이미지/번역 에셋 변경만 추적합니다.
  */
 export function getUncommittedLatestMtime(
   relativeFilePaths          ,
   rootDir         = process.cwd()
 )                {
-  if (!relativeFilePaths.length) return null;
+  if (!relativeFilePaths.length || !isGitAvailable(rootDir)) return null;
 
   try {
     const quoted = relativeFilePaths.map((p) => `"${p.replace(/"/g, '\\"')}"`).join(' ');
@@ -126,7 +239,6 @@ export function getUncommittedLatestMtime(
     }).trim();
 
     if (statusOut) {
-      // 변경/추가된 파일들의 mtime 중 최댓값
       let maxMs = 0;
       for (const relPath of relativeFilePaths) {
         const absPath = path.resolve(rootDir, relPath);
@@ -138,16 +250,7 @@ export function getUncommittedLatestMtime(
       if (maxMs > 0) return new Date(maxMs).toISOString();
     }
   } catch {
-    // git 명령 실패 시(예: .git 없는 서버리스 등), 실제 파일 mtime 기준 fallback
-    let maxMs = 0;
-    for (const relPath of relativeFilePaths) {
-      const absPath = path.resolve(rootDir, relPath);
-      if (fs.existsSync(absPath)) {
-        const stat = fs.statSync(absPath);
-        if (stat.mtimeMs > maxMs) maxMs = stat.mtimeMs;
-      }
-    }
-    if (maxMs > 0) return new Date(maxMs).toISOString();
+    return null;
   }
 
   return null;
@@ -162,6 +265,7 @@ export function resolveProtocolTimestamps(
   rootDir         = process.cwd()
 )                          {
   const assetPaths = collectProtocolAssetPaths(protocol, masterFilePath, rootDir);
+  const currentHash = computeProtocolContentHash(protocol, masterFilePath, rootDir);
 
   // 1. 등록 일시 (createdAt)
   let createdAt = protocol.createdAt;
@@ -176,23 +280,42 @@ export function resolveProtocolTimestamps(
 
   const createdMs = new Date(createdAt).getTime();
 
-  // 2. 수정 일시 후보군 취합
-  // 후보 A: Git 커밋 이력상의 최신 수정 시점 (프로덕션 SSOT)
+  // 2. [불변성 보장 가드]: 기존 콘텐츠 해시와 현재 해시가 일치하면 실질 내용 변경 없음 -> 기존 updatedAt 100% 보존
+  if (protocol.contentHash && protocol.contentHash === currentHash) {
+    return {
+      createdAt,
+      updatedAt: protocol.updatedAt,
+      isModified: !!protocol.updatedAt,
+      contentHash: currentHash,
+      assetPaths,
+    };
+  }
+
+  // 3. Git 미지원 환경 (Vercel Serverless 등)에서는 JSON에 보존된 정적 값 최우선 신뢰
+  const gitAvailable = isGitAvailable(rootDir);
+  if (!gitAvailable) {
+    return {
+      createdAt,
+      updatedAt: protocol.updatedAt,
+      isModified: !!protocol.updatedAt,
+      contentHash: currentHash,
+      assetPaths,
+    };
+  }
+
+  // 4. 실질적 콘텐츠 변경 감지 시 최신 시점 산출 (Git 환경)
+  // 도면/이미지 등 보조 에셋의 변경 추적
+  const nonJsonAssets = assetPaths.filter((p) => !p.endsWith('.json'));
+  const uncommittedTime = getUncommittedLatestMtime(nonJsonAssets.length > 0 ? nonJsonAssets : assetPaths, rootDir);
   const gitTime = getLatestGitCommitTime(assetPaths, rootDir);
-
-  // 후보 B: 로컬 수정 중인 파일의 mtime (개발 환경 즉시 반영)
-  const uncommittedTime = getUncommittedLatestMtime(assetPaths, rootDir);
-
-  // 후보 C: 프로토콜 JSON 자체에 명시된 updatedAt (수동/서비스 지정값)
   const explicitTime =
     protocol.updatedAt && !isNaN(new Date(protocol.updatedAt).getTime())
       ? protocol.updatedAt
       : null;
 
-  // 가장 최신의 시점 선정
   const candidates                                 = [];
-  if (gitTime) candidates.push({ time: gitTime, ms: new Date(gitTime).getTime() });
   if (uncommittedTime) candidates.push({ time: uncommittedTime, ms: new Date(uncommittedTime).getTime() });
+  if (gitTime) candidates.push({ time: gitTime, ms: new Date(gitTime).getTime() });
   if (explicitTime) candidates.push({ time: explicitTime, ms: new Date(explicitTime).getTime() });
 
   let latestCandidate                                      = null;
@@ -202,13 +325,13 @@ export function resolveProtocolTimestamps(
     }
   }
 
-  // 3. 수정 일시 노출 여부 결정
+  // 5. 수정 일시 노출 여부 결정
   let updatedAt                     = undefined;
   let isModified = false;
 
   if (latestCandidate) {
     const diffMs = latestCandidate.ms - createdMs;
-    // 2분(120,000ms) 이상 차이 나거나 명시적 updatedAt이 존재하면 최종 수정 표시
+    // 2분(120,000ms) 이상 차이 나거나 명시적 updatedAt이 존재하면 최종 수정 활성화
     if (diffMs > 120_000 || explicitTime) {
       updatedAt = latestCandidate.time;
       isModified = true;
@@ -219,6 +342,90 @@ export function resolveProtocolTimestamps(
     createdAt,
     updatedAt,
     isModified,
+    contentHash: currentHash,
     assetPaths,
   };
+}
+
+/**
+ * [영속화 동기화 엔진]
+ * 모든 프로토콜 마스터 JSON 및 다국어 로케일 JSON 파일에
+ * 최신 콘텐츠 해시(contentHash)와 최종 수정 일시(updatedAt)를 물리적으로 동기화하여 파일에 기록합니다.
+ */
+export function syncProtocolTimestamps(options   
+                   
+                       
+  = {})                        {
+  const rootDir = options.rootDir || process.cwd();
+  const writeFiles = options.writeFiles !== false;
+
+  const protocolsDir = path.resolve(rootDir, 'content/protocols');
+  const localesDir = path.resolve(rootDir, 'content/protocols/locales');
+
+  if (!fs.existsSync(protocolsDir)) return [];
+
+  const files = fs.readdirSync(protocolsDir).filter((f) => f.endsWith('.json')).sort();
+  const reports                        = [];
+
+  for (const file of files) {
+    const filePath = path.join(protocolsDir, file);
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    const proto           = JSON.parse(raw);
+    const baseSlug = path.basename(file, '.json');
+
+    const resolved = resolveProtocolTimestamps(proto, filePath, rootDir);
+    const hashChanged = !proto.contentHash || proto.contentHash !== resolved.contentHash;
+    const timeChanged = proto.updatedAt !== resolved.updatedAt;
+
+    let shouldUpdate = hashChanged || timeChanged || !proto.createdAt;
+    let reason = '';
+
+    if (!proto.contentHash) {
+      reason = '최초 콘텐츠 해시 지문 등록';
+      shouldUpdate = true;
+    } else if (proto.contentHash !== resolved.contentHash) {
+      reason = `콘텐츠 실질 변경 감지 (${proto.contentHash} -> ${resolved.contentHash})`;
+      shouldUpdate = true;
+    } else if (timeChanged) {
+      reason = `타임스탬프 동기화 (${proto.updatedAt || '없음'} -> ${resolved.updatedAt || '없음'})`;
+      shouldUpdate = true;
+    }
+
+    if (shouldUpdate && writeFiles) {
+      proto.createdAt = resolved.createdAt;
+      proto.updatedAt = resolved.updatedAt;
+      proto.contentHash = resolved.contentHash;
+
+      fs.writeFileSync(filePath, JSON.stringify(proto, null, 2), 'utf-8');
+
+      // 6개국어 번역 파일에도 동일한 타임스탬프 및 해시 물리적 동기화
+      if (fs.existsSync(localesDir)) {
+        const locFiles = fs
+          .readdirSync(localesDir)
+          .filter((f) => f.startsWith(baseSlug));
+        for (const lf of locFiles) {
+          const locPath = path.join(localesDir, lf);
+          try {
+            const locProto           = JSON.parse(fs.readFileSync(locPath, 'utf-8'));
+            locProto.createdAt = resolved.createdAt;
+            locProto.updatedAt = resolved.updatedAt;
+            locProto.contentHash = resolved.contentHash;
+            fs.writeFileSync(locPath, JSON.stringify(locProto, null, 2), 'utf-8');
+          } catch {}
+        }
+      }
+    }
+
+    reports.push({
+      protocolId: proto.protocolId,
+      file,
+      contentHash: resolved.contentHash,
+      createdAt: resolved.createdAt,
+      updatedAt: resolved.updatedAt,
+      updated: shouldUpdate,
+      reason: reason || '최신 상태 유지 (동기화 완료)',
+    });
+  }
+
+  return reports;
 }

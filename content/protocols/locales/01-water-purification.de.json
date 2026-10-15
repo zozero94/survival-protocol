@@ -123,5 +123,7 @@
     "title": "Fertige 5-Stufen-Naturwasser-Reinigungsanlage",
     "description": "Am Dreibein aufgehängte Naturfilterkolonne aus Holzkohle, Flusssand und Kieselsteinen zur Bereitstellung keimfrei abkochbaren Wassers."
   },
-  "createdAt": "2026-10-09T16:00:00.000Z"
+  "createdAt": "2026-10-09T16:00:00.000Z",
+  "updatedAt": "2026-10-14T15:56:40+09:00",
+  "contentHash": "0a7bf50f086f7bd2"
 }

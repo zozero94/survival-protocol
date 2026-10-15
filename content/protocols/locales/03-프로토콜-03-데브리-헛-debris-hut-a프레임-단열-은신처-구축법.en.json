@@ -84,5 +84,7 @@
     "title": "Completed A-Frame Debris Hut Thermal Shelter",
     "description": "A 2.5m heavy ridgepole and 45° rib frame blanketed by 1 meter of compressed dry leaves and thatch branches, trapping body heat down to sub-zero temperatures without fire."
   },
-  "createdAt": "2026-10-09T16:08:00.000Z"
+  "createdAt": "2026-10-09T16:08:00.000Z",
+  "updatedAt": "2026-10-14T15:56:40+09:00",
+  "contentHash": "8d79b6c163c2c764"
 }

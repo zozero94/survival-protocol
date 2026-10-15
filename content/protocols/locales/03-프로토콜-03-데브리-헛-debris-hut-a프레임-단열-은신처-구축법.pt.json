@@ -84,5 +84,7 @@
     "title": "Abrigo Térmico Debris Hut em Estrutura A Concluído",
     "description": "Uma viga mestra de 2,5m e costelas a 45° cobertas por 1 metro de folhas secas compactadas e galhos, retendo o calor corporal abaixo de zero sem fogo."
   },
-  "createdAt": "2026-10-09T16:08:00.000Z"
+  "createdAt": "2026-10-09T16:08:00.000Z",
+  "updatedAt": "2026-10-14T15:56:40+09:00",
+  "contentHash": "8d79b6c163c2c764"
 }

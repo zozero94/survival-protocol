@@ -55,4 +55,5 @@ export interface Protocol {
   nextProtocolTitle?: string;
   createdAt?: string;
   updatedAt?: string;
+  contentHash?: string;
 }

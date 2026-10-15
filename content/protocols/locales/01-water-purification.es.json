@@ -123,5 +123,7 @@
     "title": "Estructura completa de la torre de purificación natural de 5 capas",
     "description": "Sistema de filtración suspendido en trípode con carbón, arena y grava para transformar agua salvaje en agua potable segura."
   },
-  "createdAt": "2026-10-09T16:00:00.000Z"
+  "createdAt": "2026-10-09T16:00:00.000Z",
+  "updatedAt": "2026-10-14T15:56:40+09:00",
+  "contentHash": "0a7bf50f086f7bd2"
 }

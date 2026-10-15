@@ -118,5 +118,7 @@
     "title": "Vollendeter 2-Strang-Naturseilbund mit Gegenverdrallung",
     "description": "Ein gleichmäßiger 8-mm-Seilbund aus im Uhrzeigersinn gedrehten und gegenläufig verzwirnten Bastfasern, der über 90 kgf Zuglast ohne Aufdröseln standhält."
   },
-  "createdAt": "2026-10-13T13:20:00.000Z"
+  "createdAt": "2026-10-13T13:20:00.000Z",
+  "updatedAt": "2026-10-14T15:56:40+09:00",
+  "contentHash": "745386d4c43ac0ab"
 }
