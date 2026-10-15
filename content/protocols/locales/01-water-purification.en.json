@@ -1,47 +1,52 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "How to Turn Muddy Water into Clean Drinking Water (5-Layer Charcoal & Sand Filter Tower)",
+  "title": "How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand)",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[CRITICAL SURVIVAL]",
-  "summary": "Drinking stagnant or turbid wilderness water without treatment causes severe diarrhea and dysentery, leading to lethal dehydration within 72 hours. This protocol details constructing a 5-layer primitive filtration column using crushed charcoal, fine sand, and gravel, followed by a mandatory 3-minute rolling boil to eliminate 99.9% of microscopic pathogens.",
-  "timeRequired": "25 Min (15 min filter + 10 min boil)",
-  "successRate": "99.9% (Post-Boiling Required)",
-  "difficulty": "Easy (100% Primitive Materials)",
-  "outputPerHour": "1.5 to 2.0 Liters / Hour",
+  "threatLevelText": "[MUST-HAVE SURVIVAL]",
+  "summary": "If you drink dirty muddy water in the wild, you will get very sick with bad stomach cramps and diarrhea, causing dangerous dehydration. By tying three sticks into a tripod, hanging a bark cone, and layering crushed charcoal, sand, and pebbles, dirty brown water turns crystal clear. Then, boil it over a campfire for 3 full minutes with big rolling bubbles to destroy invisible germs, making it completely safe to drink.",
+  "timeRequired": "25 min (15 min filtering + 10 min boiling)",
+  "successRate": "99.9% (When layered in order and boiled for 3+ minutes)",
+  "difficulty": "Easy (Anyone can build it with forest materials)",
+  "outputPerHour": "1.5 to 2.0 liters of clean water per hour",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Crushed Hardwood Charcoal (Two handfuls)",
-      "desc": "Remnants of campfire wood, crushed to pea size (5-8mm). Its microporous matrix strongly adsorbs dissolved toxins and foul odors."
+      "name": "Black oak charcoal from campfire (Two handfuls, pea-sized)",
+      "desc": "Acts like a tiny sponge with millions of holes to soak up bad smells and dirty chemicals. Crush into chunks the size of peas (5-8mm)."
     },
     {
       "id": "mat-02",
-      "name": "Clean Rinsed River Sand (Two handfuls)",
-      "desc": "Rinsed in river water to remove loose mud. Forms a dense barrier against fine suspended silt."
+      "name": "Clean rinsed river sand (Two handfuls)",
+      "desc": "Catches tiny dirt specks that are hard to see. Rinse in clean water first so no muddy dust is mixed in."
     },
     {
       "id": "mat-03",
-      "name": "Small River Pebbles (One handful)",
-      "desc": "Thumbnail-sized clean gravel. Filters coarse debris and buffers water inflow so sand isn't displaced."
+      "name": "Small round pebbles the size of a fingernail (One handful)",
+      "desc": "Catches large leaves and twigs first, and keeps the sand underneath from getting washed away when pouring water."
     },
     {
       "id": "mat-04",
-      "name": "Birch Bark Cone or Hollow Bamboo Tube",
-      "desc": "A 30-40cm cylindrical or conical container. Funnels filtration media tightly toward a narrow bottom spout."
+      "name": "Birch bark cone or hollow bamboo stalk (1 piece)",
+      "desc": "A 30-40cm cone or hollow tube that narrows at the bottom. Holds all filtering materials and funnels drips into your cup."
     },
     {
       "id": "mat-05",
-      "name": "Three Straight Support Branches (50cm)",
-      "desc": "Finger-thick green branches tied at the top to form a freestanding, stable 3-point tripod."
+      "name": "Three straight finger-thick branches (50cm long)",
+      "desc": "Tied together at the top to stand up as a sturdy three-legged tripod. Holds the filter high enough to slip a cup underneath."
+    },
+    {
+      "id": "mat-06",
+      "name": "Clean wet moss or cotton cloth scrap for bottom plug",
+      "desc": "Pushed tightly into the bottom hole so charcoal and sand do not spill out into your clean water."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Step 1: Lash Tripod Frame, Mount Cone Funnel, and Insert Base Moss Plug",
-      "description": "Lash three straight finger-thick branches together near the top with cordage to build a stable 3-point ground tripod. Suspend the rolled birch bark cone or hollow bamboo stalk vertically at the center. Pack the narrow bottom spout with rinsed sphagnum moss or cotton cloth. This porous base plug supports the entire media weight without allowing charcoal or sand to escape.",
-      "actionNote": "> Checkpoint: Ensure the plug is firmly wedged. A loose plug will blow out under water pressure, dumping black charcoal into your drinking vessel.",
+      "title": "Step 1: Set up a 3-stick tripod and hang the cone (Plug bottom hole with moss)",
+      "description": "Gather three finger-thick straight branches, tie their tops tightly with vine or string, and spread the legs to make a sturdy tripod on the ground. Hang your birch bark cone or hollow bamboo tube straight in the middle. Pack clean, washed river moss or a cloth scrap into the narrow bottom spout using your finger. Without this plug, your charcoal and sand will dump right out.",
+      "actionNote": "> Plug Tip: If the plug is too loose, black charcoal dust leaks out. Pack it firmly so it does not pop out when pressed.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
         "FIG. 01 // PURIFICATION STEP 1: TRIPOD FRAME",
@@ -53,9 +58,9 @@
     },
     {
       "stepNumber": "02",
-      "title": "Step 2: Crush Campfire Charcoal to Pea Size and Pack an 8cm Active Bed",
-      "description": "Select fully carbonized black charcoal from campfire coals and crush into pea-sized chunks (5-8mm) using a smooth stone. Avoid pulverizing into fine dust, which would clog water percolation. Pour into the funnel over the moss plug and tamp down gently with a stick to form an 8cm deep adsorption bed. Millions of micropores trap chemical toxins and neutralize bad tastes.",
-      "actionNote": "> Grain Rule: Charcoal grains must remain coarser than rice grains. Discard powdered dust to maintain steady percolation speed.",
+      "title": "Step 2: Crush charcoal to pea size and fill 8cm deep at the bottom",
+      "description": "Find cool, completely black charcoal from your campfire. Place it on a flat stone and tap gently with another stone to break it into pea-sized bits. Do not grind it into fine powder like flour, or water cannot drip through. Pour the charcoal into the cone over the moss plug, and gently tap it down with a stick until it is four finger widths deep (about 8cm). Its tiny sponge holes trap bad smells and dirty chemicals.",
+      "actionNote": "> Grain Rule: Use pieces bigger than rice grains and about pea-sized. Throw away dusty powder that could clog the water path.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
         "FIG. 02 // PURIFICATION STEP 2: CHARCOAL CORE",
@@ -67,9 +72,9 @@
     },
     {
       "stepNumber": "03",
-      "title": "Step 3: Layer Clean Rinsed River Sand to a Flat 6cm Barrier",
-      "description": "Rinse river sand two to three times in running water to clear organic silt. Slowly pour the clean sand directly over the charcoal bed to a depth of 6cm. Level the top surface gently with your fingertips. The sand layer physically locks the charcoal chunks from floating up while capturing ultra-fine particulates that passed through coarser barriers.",
-      "actionNote": "> Leveling: Keep the sand surface perfectly horizontal. A slanted bed creates a path of least resistance, ruining filter efficiency.",
+      "title": "Step 3: Pour 6cm of clean sand over the charcoal and smooth it flat",
+      "description": "Rinse clean sand from the riverbank in water two or three times to wash away muddy silt. Gently pour the rinsed sand over the charcoal until it is three finger widths deep (about 6cm). Tap the top lightly with your palm or a flat rock to make it smooth and level. This sand layer stops charcoal chunks from floating up and catches tiny floating dirt.",
+      "actionNote": "> Leveling Tip: If the sand is slanted, water will rush down the thin side without filtering. Always make the sand bed flat.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
         "FIG. 03 // PURIFICATION STEP 3: SAND LAYER",
@@ -81,9 +86,9 @@
     },
     {
       "stepNumber": "04",
-      "title": "Step 4: Add 4cm Pebble Layer, Pour Water, and Flush Initial 1-2 Cups",
-      "description": "Add 4cm of thumbnail-sized pebbles over the sand bed and place a flat leaf or flat pebble on top as a splash buffer. Slowly pour raw turbid water over the buffer. Water will seep through all layers and begin dripping from the bottom spout at 1-2 drops per second. Crucial step: Discard the initial 1-2 cups (300ml), which flush out residual dust, before placing a sterile collection pot.",
-      "actionNote": "> Flush Rule: Never drink the initial flush. Let the filter self-clean until crystal clarity is established.",
+      "title": "Step 4: Add 4cm of pebbles and pour muddy water (Dump the first 1-2 cups!)",
+      "description": "Place small fingernail-sized pebbles on top of the sand until it is two finger widths deep (about 4cm), and place a wide green leaf gently on top. Now slowly pour dirty muddy water over the leaf. The pebbles and leaf stop the rushing water from making a hole in the sand. Soon, water will drip out the bottom: drip... drip... Important: The first 1-2 cups will be dark with charcoal dust from cleaning the filter. Do NOT drink this! Throw it away, and only collect water once it drips clear.",
+      "actionNote": "> First Flush Rule: The first 1-2 cups clean the inside of the filter. Never drink them. Wait until the water drips crystal clear.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
         "FIG. 04 // PURIFICATION STEP 4: PEBBLE & FLUSH",
@@ -95,9 +100,9 @@
     },
     {
       "stepNumber": "05",
-      "title": "Step 5: Boil Filtered Water for 3+ Minutes to Destroy All Microbes",
-      "description": "Collect the visually transparent water in a clay pot, bamboo boiler, or fire-safe rock bowl and place directly over campfire embers. Heat until continuous rolling bubbles erupt vigorously across the entire surface (reaching 100°C / 212°F). Maintain this rolling boil for at least 3 full minutes (5 minutes at high altitudes). Thermal disinfection is essential to kill viruses and encysted parasites that escape physical filters.",
-      "actionNote": "> Ultimate Safety: Clear water is NOT sterile water! Mechanical filtration plus rolling boil achieves 99.9% biological safety.",
+      "title": "Step 5: Boil the clear water over a fire for 3+ minutes with big rolling bubbles",
+      "description": "Pour your crystal-clear filtered water into a stone bowl, clay pot, or bamboo boiler and set it over the campfire. Once big, fist-sized bubbles start rolling and churning across the whole pot, keep it boiling for at least 3 full minutes (5 minutes high up in the mountains). Even though the water looks clear, tiny invisible germs that make you sick are still alive. Boiling them kills 100% of germs so kids can drink safely.",
+      "actionNote": "> Never Drink Raw: Clear water is NOT clean water! Boiling after filtering is what keeps your belly safe.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
         "FIG. 05 // PURIFICATION STEP 5: 100°C BOIL",
@@ -109,21 +114,21 @@
     }
   ],
   "fatalMistake": {
-    "title": "Fatal Mistake: Drinking Filtered Water Without Compulsory Thermal Boiling",
-    "description": "Charcoal and sand filters remove particulate silt and organic odors, but microscopic cysts (Giardia, Cryptosporidium) and viral pathogens easily pass through primitive pore spaces. Drinking cold clear water directly without boiling causes severe gastroenteritis within 24 hours, inducing fatal dehydration in survival scenarios.",
-    "consequence": "Outcome: Severe waterborne parasitic infection and fatal wilderness dehydration"
+    "title": "Fatal Mistake: Drinking clear filtered water without boiling it first",
+    "description": "Charcoal and sand only catch visible dirt and bad odors. Tiny invisible bacteria and nasty parasites are still swimming in the water. Even if the water looks icy cold and crystal clear, drinking it without boiling can give you terrible stomach cramps and bloody diarrhea within hours, leading to dangerous dehydration in the wild.",
+    "consequence": "Outcome: Severe stomach cramps, diarrhea, and dangerous wilderness dehydration"
   },
   "shortsScript": {
-    "hook": "Drinking wild muddy water will kill you in 3 days. Here is how to purify it without plastic!",
-    "body": "Build a 5-layer natural filter tower. Lash a tripod, suspend a birch bark funnel, and plug the bottom with moss. Pack 8cm of crushed charcoal, 6cm of clean river sand, and 4cm of gravel. Pour muddy water over a leaf buffer. Discard the first black cup! The critical rule: clear water is NOT safe water. You must boil it vigorously for at least 3 minutes to destroy 99.9% of deadly parasites.",
-    "outro": "Access full offline survival blueprints with zero cell data via the profile link."
+    "hook": "Drinking wild muddy water will give you severe diarrhea in 3 days! Here is how to make a natural filter!",
+    "body": "Tie three sticks into a tripod, hang a bark cone, and plug the bottom with moss. Layer 8cm of pea-sized charcoal, 6cm of clean sand, and 4cm of pebbles. Pour muddy water in! Dump the first 2 cups because they clean out charcoal dust. Most important secret: clear water is NOT safe water! You must boil it for 3 full minutes with big rolling bubbles to kill invisible germs!",
+    "outro": "Find full offline survival blueprints with zero cell data via the profile link."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Completed 5-Layer Natural Water Purification Tower",
-    "description": "A field-tested primitive filtration column suspended on a timber tripod, layering charcoal, river sand, and pebbles to turn turbid wild water into crystal clear boilable drinking water."
+    "title": "Completed Natural Charcoal & Sand Water Filter",
+    "description": "A sturdy wilderness filter hanging from a three-branch tripod. Inside, charcoal, clean sand, pebbles, and a moss plug work together to turn murky muddy water into clear, boilable drinking water."
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "146f99ec9014dcbe"
+  "updatedAt": "2026-10-15T14:24:23+09:00",
+  "contentHash": "cf7d15c276ffaa84"
 }

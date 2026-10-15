@@ -1,47 +1,52 @@
 {
   "protocolId": "PR-01",
   "category": "WATER",
-  "title": "Como transformar água barrenta em água potável (Torre de filtragem de 5 camadas com carvão e areia)",
+  "title": "Como transformar água barrenta em água limpa para beber (Filtro natural com carvão e areia)",
   "threatLevel": "CRITICAL",
-  "threatLevelText": "[SOBREVIVÊNCIA CRÍTICA]",
-  "summary": "Beber água não tratada na natureza provoca disenteria grave e desidratação fatal em até 72 horas. Este protocolo detalha a construção de uma coluna de filtragem primitiva de 5 camadas com carvão, areia fina e cascalho, seguida de fervura obrigatória de 3 minutos para exterminar 99,9% dos patógenos.",
-  "timeRequired": "25 Min (15 min filtragem + 10 min fervura)",
-  "successRate": "99,9% (Necessita fervura posterior)",
-  "difficulty": "Fácil (100% Materiais Naturais)",
-  "outputPerHour": "1,5 a 2,0 Litros / Hora",
+  "threatLevelText": "[SOBREVIVÊNCIA VITAL]",
+  "summary": "Se você beber água suja com barro na floresta, terá fortes dores de barriga e diarreia, ficando perigosamente desidratado. Ao amarrar três galhos para formar um tripé, pendurar um cone de casca e colocar em ordem carvão, areia e pedrinhas, a água marrom fica transparente como vidro. Depois, se você ferver a água em uma fogueira por 3 minutos com bolhas grandes borbulhando forte, todos os micróbios invisíveis serão eliminados e você poderá beber sem perigo.",
+  "timeRequired": "25 min (15 min filtrando + 10 min fervendo)",
+  "successRate": "99.9% (Ao colocar as camadas em ordem e ferver por 3+ min)",
+  "difficulty": "Fácil (Qualquer pessoa consegue fazer com materiais da natureza)",
+  "outputPerHour": "1.5 a 2 litros de água limpa por hora",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Carvão vegetal triturado (Dois punhados)",
-      "desc": "Carvão de fogueira triturado em grãos do tamanho de ervilhas (5-8 mm). Absorve toxinas e odores desagradáveis."
+      "name": "Carvão preto de fogueira (Dois punhados, tamanho de ervilha)",
+      "desc": "Funciona como uma esponja cheia de furinhos que suga o mau cheiro e a sujeira. Quebre em pedacinhos do tamanho de uma ervilha (5 a 8 mm)."
     },
     {
       "id": "mat-02",
-      "name": "Areia limpa de rio (Dois punhados)",
-      "desc": "Areia lavada para remover a lama fina. Cria uma barreira física densa contra sedimentos."
+      "name": "Areia fina de rio bem lavada (Dois punhados)",
+      "desc": "Segura a poeira e o pó de terra difíceis de enxergar. Lave antes na água limpa para não misturar lama."
     },
     {
       "id": "mat-03",
-      "name": "Cascalho e pedras pequenas (Um punhado)",
-      "desc": "Retém detritos grandes e dispersa o impacto da água para não revolver a areia."
+      "name": "Pedrinhas redondas do tamanho de uma unha (Um punhado)",
+      "desc": "Seguram folhas e gravetos grandes e evitam que a água despejada faça um buraco na areia de baixo."
     },
     {
       "id": "mat-04",
-      "name": "Cone de casca de árvore ou bambu oco",
-      "desc": "Recipiente de 30-40 cm afunilado para concentrar a água no bocal inferior."
+      "name": "Cone de casca de árvore ou pedaço de bambu oco (1 unidade)",
+      "desc": "Um recipiente de 30 a 40 cm que afunila embaixo. Segura todas as camadas e guia os pingos para dentro do copo."
     },
     {
       "id": "mat-05",
-      "name": "Três galhos de suporte retos (50 cm)",
-      "desc": "Galhos da grossura de um dedo amarrados no topo formando um tripé firme."
+      "name": "Três galhos retos da grossura de um dedo (50 cm de comprimento)",
+      "desc": "Amarrados em cima para formar um tripé firme no chão. Segura o filtro alto o suficiente para caber uma vasilha embaixo."
+    },
+    {
+      "id": "mat-06",
+      "name": "Musgo limpo e úmido ou pedaço de pano para o tampão do fundo",
+      "desc": "Apertado no buraco de baixo para que o carvão e a areia não caiam dentro da água limpa."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Passo 1: Montar o tripé, suspender o cone e vedar a base com musgo",
-      "description": "Amarre três galhos retos no topo formando um tripé estável. Fixe o cone de casca ou bambu verticalmente ao centro. Pressione musgo limpo ou tecido no bocal inferior para conter as camadas filtrantes.",
-      "actionNote": "> Checagem: O plugue deve estar bem firme para que o carvão não vaze.",
+      "title": "Passo 1: Montar o tripé com 3 galhos e pendurar o cone (Tapar o fundo com musgo)",
+      "description": "Junte três galhos retos da grossura de um dedo, amarre o topo com cipó ou barbante e abra as pernas para firmar um tripé firme no chão. Prenda o cone de casca de árvore ou o tubo de bambu bem reto no meio. Empurre musgo limpo e lavado ou um pedaço de pano no bico estreito do fundo usando o dedo. Sem esse tampão, o carvão e a areia cairão direto para fora.",
+      "actionNote": "> Dica do tampão: Se ficar frouxo, sairá pó preto de carvão. Aperte bem para que ele não se solte ao empurrar com o dedo.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
         "FIG. 01 // PURIFICATION STEP 1: TRIPÉ E PLUGUE",
@@ -53,9 +58,9 @@
     },
     {
       "stepNumber": "02",
-      "title": "Passo 2: Triturar o carvão em grãos e formar uma camada de 8 cm",
-      "description": "Quebre o carvão em pedaços pequenos (5-8 mm). Despeje sobre o musgo e compacte levemente formando uma camada ativa de 8 cm que reterá impurezas químicas.",
-      "actionNote": "> Granulometria: Evite pó muito fino para não entupir a passagem da água.",
+      "title": "Passo 2: Quebrar o carvão no tamanho de ervilha e encher 8 cm no fundo",
+      "description": "Escolha pedaços de carvão bem pretos e frios da fogueira. Coloque sobre uma pedra chata e bata com outra pedra até ficarem do tamanho de ervilhas. Não moa até virar pó fino como farinha, senão a água não conseguirá passar. Despeje o carvão sobre o musgo e aperte levemente com uma varinha até atingir a altura de quatro dedos (cerca de 8 cm). Seus buraquinhos vão sugar o cheiro ruim e a sujeira.",
+      "actionNote": "> Regra do tamanho: Use pedaços maiores que grãos de arroz. Jogue fora o pó fino para não entupir o caminho da água.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
         "FIG. 02 // PURIFICATION STEP 2: LEITO DE CARVÃO",
@@ -67,63 +72,63 @@
     },
     {
       "stepNumber": "03",
-      "title": "Passo 3: Adicionar areia de rio limpa formando uma camada nivelada de 6 cm",
-      "description": "Lave a areia de rio em água corrente e despeje sobre o carvão até 6 cm de espessura. Nivele a superfície com a ponta dos dedos para um fluxo uniforme.",
-      "actionNote": "> Nivelamento: Uma superfície inclinada cria caminhos preferenciais e reduz a filtragem.",
+      "title": "Passo 3: Colocar 6 cm de areia limpa sobre o carvão e nivelar bem",
+      "description": "Lave a areia do rio duas ou três vezes na água para tirar a terra solta. Despeje a areia lavada sobre o carvão até cobrir a altura de três dedos (cerca de 6 cm). Bata de leve com a palma da mão ou uma pedra lisa para deixá-la bem reta. A areia impede que os pedaços de carvão boiem e segura a poeira fininha.",
+      "actionNote": "> Nivelar a areia: Se a areia ficar inclinada, a água escorrerá pelo lado mais raso sem filtrar. Deixe a superfície bem plana.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
         "FIG. 03 // PURIFICATION STEP 3: CAMADA DE AREIA",
         "RIVER SAND (AREIA)",
-        "PARTICLE FILTER (BARREIRA)",
+        "PARTICLE FILTER (FILTRAGEM)",
         "THICKNESS: 6CM (ALTURA)",
-        "[PASSO 3] FIXAR CARVÃO E BARRAR LAMA"
+        "[PASSO 3] FIXAR CARVÃO E RETER LIMO"
       ]
     },
     {
       "stepNumber": "04",
-      "title": "Passo 4: Adicionar 4 cm de cascalho, despejar água e descartar as primeiras xícaras",
-      "description": "Coloque 4 cm de pedriscos sobre a areia e uma folha larga por cima. Despeje a água barrenta com cuidado. Descarte as 1-2 primeiras xícaras de água escura antes de recolher a água limpa.",
-      "actionNote": "> Regra de descarte: Deixe o filtro se autolimpar até que a água saia cristalina.",
+      "title": "Passo 4: Pôr 4 cm de pedrinhas e despejar água com barro (Jogue fora os 1-2 primeiros copos!)",
+      "description": "Coloque pedrinhas do tamanho de uma unha sobre a areia até a altura de dois dedos (cerca de 4 cm) e coloque uma folha larga por cima. Despeje devagar a água barrenta sobre a folha. As pedras e a folha impedem que o fluxo de água abra um buraco na areia. Logo a água começará a pingar por baixo: plic... plic... Muito importante: Os primeiros 1 ou 2 copos saem escuros com pó de carvão limpando o filtro. Não beba isso! Jogue fora e só comece a recolher a água quando ela sair transparente.",
+      "actionNote": "> Regra da primeira água: Os primeiros copos limpam o filtro por dentro. Jogue fora até que a água pingue transparente como vidro.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // PURIFICATION STEP 4: CASCALHO E DESCARTE",
-        "PEBBLE LAYER (CASCALHO)",
-        "FLUSH FIRST CUPS (DESCARTE)",
-        "CLEAR DRIP (GOTA CLARA)",
-        "[PASSO 4] AMORTECER QUEDA E DESCARTAR ÁGUA"
+        "FIG. 04 // PURIFICATION STEP 4: SEIXOS E PURGA",
+        "PEBBLE LAYER (SEIXOS)",
+        "FLUSH FIRST CUPS (PURGA)",
+        "CLEAR DRIP (PINGOS)",
+        "[PASSO 4] AMORTECER E DESCARTAR ÁGUA INICIAL"
       ]
     },
     {
       "stepNumber": "05",
-      "title": "Passo 5: Ferver a água filtrada vigorosamente por pelo menos 3 minutos",
-      "description": "Coloque a água transparente em um vaso de barro sobre as brasas. Mantenha fervura com bolhas vigorosas por pelo menos 3 minutos (5 min em grandes altitudes) para aniquilar 99,9% dos germes.",
-      "actionNote": "> Segurança máxima: Água limpa NÃO é água estéril. A fervura é indispensável.",
+      "title": "Passo 5: Ferver a água limpa no fogo por mais de 3 minutos",
+      "description": "Coloque a água transparente filtrada em uma tigela de pedra, barro ou bambu e ponha sobre o fogo. Quando grandes bolhas do tamanho de um punho começarem a borbulhar com força, continue fervendo por pelo menos 3 minutos completos (5 minutos se estiver no alto de montanhas). Mesmo que a água pareça limpa, micróbios invisíveis continuam vivos. Ferver na água bem quente mata 100% deles para que as crianças possam beber com total tranquilidade.",
+      "actionNote": "> Nunca beba sem ferver: Água transparente NÃO significa água segura! Só ferver depois de filtrar protege sua barriga de doenças.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
         "FIG. 05 // PURIFICATION STEP 5: FERVURA A 100°C",
         "BOILING 100°C (FERVURA)",
-        "TIME: 3+ MIN (3+ MINUTOS)",
-        "PATHOGEN FREE (99,9% ESTÉRIL)",
-        "[PASSO 5] FERVER VIGOROSAMENTE POR 3+ MIN"
+        "TIME: 3+ MIN (MINUTOS)",
+        "PATHOGEN FREE (ESTERILIZADO)",
+        "[PASSO 5] FERVER COM FORÇA POR 3+ MINUTOS"
       ]
     }
   ],
   "fatalMistake": {
-    "title": "Erro fatal: Beber a água cristalina filtrada sem antes ferver",
-    "description": "Areia e carvão retêm lama e odores, mas cistos de parasitas (Giardia) e vírus passam facilmente pelos poros. Beber sem ferver causa infecções intestinais agudas e desidratação fulminante.",
-    "consequence": "Resultado: Infecção parasitária severa e colapso por desidratação na mata"
+    "title": "Erro fatal: Beber a água transparente sem ferver no fogo primeiro",
+    "description": "O carvão e a areia tiram apenas o barro visível e o cheiro ruim. Os micróbios e parasitas microscópicos que causam dor forte na barriga e diarreia continuam vivos na água. Mesmo que a água pareça fresca e transparente, bebê-la sem ferver pode causar doenças graves em poucas horas, levando à desidratação perigosa na floresta.",
+    "consequence": "Resultado: Dor forte de barriga, diarreia severa e desidratação perigosa na selva"
   },
   "shortsScript": {
-    "hook": "Beber água barrenta sem tratamento pode te matar em 3 dias. Aprenda a filtrar com a natureza!",
-    "body": "Faça uma torre de filtragem de 5 camadas: tripé de madeira, cone de casca e plugue de musgo. Monte 8 cm de carvão, 6 cm de areia e 4 cm de cascalho. Despeje a água e jogue fora a primeira xícara escura. Regra vital: água limpa NÃO é água segura! Ferva vigorosamente por 3 minutos para exterminar 99,9% dos parasitas.",
-    "outro": "Acesse guias de sobrevivência offline sem usar dados no link do perfil."
+    "hook": "Beber água com barro na selva pode te derrubar em 3 dias! Veja como fazer um filtro com coisas da floresta!",
+    "body": "Faça um tripé de galhos, pendure um cone e feche o fundo com musgo. Coloque 8 cm de carvão quebrado, 6 cm de areia limpa e 4 cm de pedrinhas. Despeje a água barrenta! Jogue fora os 2 primeiros copos que limpam o pó de carvão. O segredo mais importante: água transparente NÃO é água segura! Você precisa ferver no fogo por 3 minutos com bolhas grandes para matar todos os micróbios invisíveis!",
+    "outro": "Acesse os manuais de sobrevivência sem internet no link do meu perfil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Estrutura completa da torre de purificação natural de 5 camadas",
-    "description": "Coluna de filtragem rústica sustentada por tripé de madeira com carvão, areia e cascalho para obter água transparente e pronta para fervura."
+    "title": "Filtro natural de carvão e areia concluído",
+    "description": "Um filtro de sobrevivência montado em um tripé de galhos. No interior, camadas de carvão, areia de rio, pedrinhas e tampão de musgo trabalham juntos para transformar água barrenta em água transparente pronta para ferver e beber."
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "146f99ec9014dcbe"
+  "updatedAt": "2026-10-15T14:24:23+09:00",
+  "contentHash": "cf7d15c276ffaa84"
 }

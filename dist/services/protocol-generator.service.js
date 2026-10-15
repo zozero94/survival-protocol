@@ -9,6 +9,7 @@ import { DeployService } from './deploy.service.js';
 import { buildSite } from '../pipeline.js';
 import { SITE_META } from '../site.config.js';
 import { computeProtocolContentHash } from '../utils/protocol-timestamp.js';
+import { PlainKoreanEditorService } from './plain-korean-editor.service.js';
                                                                     
 
 const __filename = fileURLToPath(import.meta.url);
@@ -201,6 +202,15 @@ export class ProtocolGeneratorService {
       }
     }
 
+    // 초등학생 눈높이 생존 문체(Plain Korean) 전수 검사
+    if (proto.title && proto.summary && proto.materials && proto.steps) {
+      const plainAudit = PlainKoreanEditorService.auditProtocol(proto            );
+      if (plainAudit.grade === 'REJECTED') {
+        const words = plainAudit.issues.map(i => `'${i.word}' -> 추천: '${i.suggestion}'`).join(', ');
+        errors.push(`[눈높이 미달] 초등학생이 이해하기 어려운 난해한 전문 용어가 다수 발견되었습니다: ${words}`);
+      }
+    }
+
     return {
       valid: errors.length === 0,
       errors,
@@ -218,18 +228,24 @@ export class ProtocolGeneratorService {
     deadlineAt         
   )                    {
     const prompt = `
-당신은 누구나 위급한 상황에서 바로 보고 따라 할 수 있는 '실전 야생 생존 가이드(SURVIVAL PROTOCOL)'의 작성자입니다.
+당신은 초등학생(11~13세)도 위급한 상황에서 바로 읽고 혼자서 따라 할 수 있는 '실전 야생 생존 가이드(SURVIVAL PROTOCOL)'의 수석 눈높이 작성자입니다.
 새로운 생존 기술 가이드를 작성하십시오.
 
 [주제]: ${topic}
 [프로토콜 ID]: ${nextId}
 ${category ? `[카테고리 강제]: ${category}` : ''}
 
-[절대 규칙 1 - 쉬운 단어와 직관적인 설명 (가장 중요!)]:
-1. 중학생이나 초보자도 위급 상황에서 한 번 읽고 바로 이해할 수 있는 쉬운 일상 한국어로 작성하십시오.
-2. 어려운 한자어(음용, 적층, 포설, 가설, 풍상측, 비산, 수거, 비등, 함침, 박리 등)를 절대 쓰지 마십시오. 대신 쉬운 말(마시기, 차곡차곡 쌓기, 바닥에 깔기, 세우기, 바람 불어오는 쪽, 날아가다, 모으기, 팔팔 끓이기, 적시기, 떼어내기 등)로 풀어 쓰십시오.
-3. 생소한 외래어/영문 음차 전문용어를 그대로 쓰지 말고 직관적인 우리말로 바꾸십시오.
-4. '타협 불가한 절대 수칙', '시전자', '파국적 결과' 같은 오글거리거나 과장된 중2병/군대식 말투를 절대 넣지 마십시오. 담백하고 실용적인 설명체(~합니다, ~하세요)로 작성하십시오.
+[절대 규칙 1 - 초등학생 눈높이 직관적 설명 (가장 중요!)]:
+1. 초등학교 5~6학년 학생이 스마트폰 화면을 보고 혼자서도 0.5초 만에 뜻을 알아듣고 손으로 따라 할 수 있게 쓰십시오.
+2. 대학 전공 서적이나 학술용어, 어려운 한자어(다공성, 흡착, 비등, 멸균, 플러싱, 수인성 전염병, 열분해, 백드래프트 등)를 절대 쓰지 마십시오!
+   - 다공성 흡착 -> '스펀지 구멍처럼 나쁜 냄새와 찌꺼기를 쏙 빨아들임'
+   - 비등 멸균 -> '큰 거품이 콸콸 솟구치도록 펄펄 끓여서 세균 죽이기'
+   - 플러싱 -> '필터 속 숯가루를 씻어내기 위해 첫 1~2컵 버리기'
+   - 3점 지지 삼각대 -> '나뭇가지 3개를 묶어 세운 삼발이 거치대'
+   - 병원체/기생충 -> '배탈과 설사를 일으키는 눈에 안 보이는 나쁜 벌레'
+3. 신체 감각 척도를 쓰십시오: '콩알 크기', '손가락 한 마디 굵기', '어린이 손목 굵기', '무거운 책가방 무게' 등.
+4. '왜 이렇게 하는지' 이유를 1초 만에 알 수 있게 하십시오.
+5. 1문장 1아이디어로 호흡을 짧게 쪼개어 가독성을 극대화하십시오. 담백하고 친절한 설명체(~합니다, ~하세요)로 작성하십시오.
 
 [절대 규칙 2 - 원시 자연물 고증 및 실전 쓸모 (가변 단계 구성)]:
 1. 현대 공산품 일체 배제(라이터, 건전지, 비닐, 알루미늄, 플라스틱 등 금지). 오직 자연에서 구할 수 있는 재료(돌, 나무, 진흙, 칡덩굴, 낙엽, 숯, 동식물 등)만 사용.

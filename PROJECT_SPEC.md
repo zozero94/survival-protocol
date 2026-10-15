@@ -12,21 +12,26 @@
    - 피드 카드 상단 레일 등록일(`YYYY.MM.DD`) 및 상세 히어로 섹션 최종 수정 시간(`YYYY.MM.DD HH:mm`) 표기
    - 독해 시간("소요 30초 독해") 문구 완전 배제 및 모노스페이스 브루탈리즘 제원 스트립 정밀 배치
    - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-- **아키텍처**: Content-Driven Layered Component Architecture (12개 스위트 / 86개 단위 테스트 무결성 통과)
-- **주제 검증 철학**:
+- **아키텍처**: Content-Driven Layered Component Architecture (13개 스위트 / 90개 단위 테스트 무결성 통과)
+- **주제 검증 및 문체 감수 철학**:
   - 원시 자연물 고증 100% (현대 공산품 일체 배제)
+  - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
+    - 난해한 학술·전문 용어(다공성, 흡착, 비등 멸균, 플러싱 등) 전면 배제 및 일상 친화 구어체 표준화
+    - 숫자에 신체 감각 비유 병기(콩알 크기, 손가락 두~네 마디 높이 등) 및 직관적 이유 즉시 제시
   - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
   - 가변 3~6단계 세부 공학 체계 및 16:9 와이드 완성 결과도(Outcome) 기본 탑재
   - 3D 포토리얼리스틱 실물 이미지 에셋(Image Generator)과 벡터 SVG의 하이브리드 지원
+  - 실질 콘텐츠 SHA-256 지문 기반 타임스탬프 영속화 엔진 (`npm run sync:timestamps`)
 
 ## 2. 연동 아키텍처 & 데이터 흐름
 ```mermaid
 flowchart TD
-    subgraph Tier1["1. 두뇌 & 기획 (AGY Argon + Stitch MCP + Image Generator)"]
+    subgraph Tier1["1. 두뇌 & 기획 (AGY Argon + Stitch MCP + Image Generator + Plain Korean Editor)"]
         A[Antigravity 메인 에이전트<br/>Argon 심층 추론 고증 기획] --> B[Stitch MCP Server<br/>generate_screen_from_text]
         A --> IMG[Image Generator 서브에이전트<br/>3D 포토리얼리스틱 실물 이미지]
+        A --> EDT[plain-korean-editor 서브에이전트<br/>초등학생 눈높이 문체 감수 100점]
         B --> C[인라인 벡터 SVG 도면 추출<br/>3~8단계 스텝 + 16:9 Outcome 도면]
-        C & IMG --> D[Content Layer 저장<br/>JSON + Images + SVGs + 지식 트리]
+        C & IMG & EDT --> D[Content Layer 저장<br/>JSON + Images + SVGs + 지식 트리]
         D --> E[Stitch MCP edit_screens<br/>UI 변경 시 화면 1:1 양방향 동기화]
     end
 
@@ -70,11 +75,14 @@ primitive-survival/
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 바운딩박스/텍스트 충돌 감사기
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
-│   │   ├── protocol-generator.service.ts # 3-Wave 병렬 발행 및 원시 고증 검증기
+│   │   ├── protocol-generator.service.ts # 3-Wave 병렬 발행, 고증 검증 및 눈높이 감수 연동
+│   │   ├── plain-korean-editor.service.ts # 초등학생 눈높이 문체 감수 및 난해어 자동 교정기
 │   │   ├── telegram-bot.service.ts # 텔레그램 봇 인가 제어 및 커맨드 라우터
 │   │   ├── deploy.service.ts    # Git 커밋 & 푸시 자동화
 │   │   ├── seo.service.ts       # 사이트맵, robots.txt, Schema.org 구조화 데이터
 │   │   └── topic-curator.service.ts # 차기 유망 주제 큐레이터
+│   ├── utils/
+│   │   └── protocol-timestamp.ts # Git 커밋 및 실질 콘텐츠 SHA-256 해시 기반 타임스탬프 동기화 유틸
 │   ├── gdrive-sync.ts           # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts                # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts          # 5개 페이징 메인 피드 인덱스 컴파일러
@@ -82,8 +90,8 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, PWA sw.js, SEO, images)
-├── tests/                       # [Quality Audit] 12개 테스트 스위트 (86/86 단위 테스트 100% PASS)
-├── scripts/                     # [CLI Scripts] audit-svg-design.ts 등 전용 검수 스크립트
+├── tests/                       # [Quality Audit] 13개 테스트 스위트 (90/90 단위 테스트 100% PASS)
+├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
@@ -96,16 +104,21 @@ primitive-survival/
    - 기계공학 유클리드 기하학 공차 검증: 상단 힌지 결합 이격 거리 $\le 2.0\text{px}$, 하단 걸림턱 결합 이격 거리 $\le 2.0\text{px}$, 빗장대 지지각 $45^\circ \pm 5^\circ$.
    - 고해상도(1000px) SVG-to-PNG 렌더링 기반 제미나이 멀티모달 비전 정밀 감수 및 자가 치유(Self-Healing) 좌표 교정.
    - 전용 독립 실행 CLI 제공: `npm run audit:svg-design [protocolId]`.
-3. **PWA 오프라인 생존성**:
+3. **초등학생 눈높이 문체 감수 (`PlainKoreanEditorService` & `plain-korean-editor`)**:
+   - 전문/학술어 12종 탐지 및 일상어 자동 치환 (`autoFixKnownJargon`), 루브릭 기반 100점 만점 평가 (`auditProtocol`).
+   - 60점 미만 시 프로토콜 유효성 검사에서 차단 및 재작성 유도.
+4. **타임스탬프 및 콘텐츠 해시 정밀 동기화 (`protocol-timestamp.ts`)**:
+   - 실질 콘텐츠 SHA-256 해시 지문 기반으로 SVG/이미지/텍스트 변경 시에만 `updatedAt`이 갱신되는 멱등성 보장 (`npm run sync:timestamps`).
+5. **PWA 오프라인 생존성**:
    - 1회 방문 시 전 페이지 HTML, 7개국어 JSON, SVG 벡터 도면 및 이미지 100% 영구 캐시 (`survival-{hash}`).
-4. **무과금 하이브리드 경제성**:
+6. **무과금 하이브리드 경제성**:
    - AGY 스튜디오(Argon) + Stitch MCP + Google AI Studio 무료 티어로 월 추가 API 과금 0원 유지.
 
 ## 5. 전담 자동화 스킬 (Antigravity Skills)
 1. **`publish-protocol` (벡터 도면 기반 신규 포스팅 자율 발행 스킬)**:
-   - 기획 ➔ 원시 고증 ➔ 3~6단계 본문 작성 ➔ 3D 벡터 SVG 합성 ➔ 5대 루브릭 QA ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ **마지막 `sync` 스킬 자동 연계 호출**까지 원스톱 완결.
+   - 기획 ➔ 원시 고증 ➔ 초등학생 눈높이 3~6단계 본문 작성 ➔ 3D 벡터 SVG 합성 ➔ 5대 루브릭 QA ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ **마지막 `sync` 스킬 자동 연계 호출**까지 원스톱 완결.
 2. **`publish-protocol-image` (고화질 실물 이미지 기반 신규 포스팅 자율 발행 스킬)**:
-   - 제미나이 고화질 실물 이미지(`image-generator` 서브에이전트) 기반 신규 생존 프로토콜 발행 파이프라인(주제 기획 ➔ 원시 고증 & 쉬운 한글 본문 ➔ 3D 포토리얼리스틱 이미지 생성 ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ `sync` 스킬 자동 연계 호출) 원스톱 완결.
+   - 제미나이 고화질 실물 이미지(`image-generator` 서브에이전트) 기반 신규 생존 프로토콜 발행 파이프라인(주제 기획 ➔ 원시 고증 & 초등학생 눈높이 쉬운 본문 ➔ 3D 포토리얼리스틱 이미지 생성 ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ `sync` 스킬 자동 연계 호출) 원스톱 완결.
 3. **`sync` (프로젝트 문서 및 클라우드 동기화 스킬)**:
    - 실제 코드베이스와 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md`, `implementation_plan.md`) 간 괴리 전수 감사 및 구글 드라이브(`1PMHkwQJsR_MSDjf8cYmJcnGp5wpzVnxW`) 원클릭 자동 동기화.
 

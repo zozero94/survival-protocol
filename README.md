@@ -59,19 +59,22 @@ primitive-survival/
 │   │   ├── svg-design-auditor.service.ts # 기계공학 유클리드 좌표 공차 & 멀티모달 비전 감수기
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
 │   │   ├── protocol-generator.service.ts # AI 자동 발행 & 고증 검증기
+│   │   ├── plain-korean-editor.service.ts # 초등학생 눈높이 문체 감수 & 난해어 자동 교정기
 │   │   ├── telegram-bot.service.ts # 텔레그램 원격 제어 봇
 │   │   ├── deploy.service.ts # Git 커밋 & 푸시 자동화
 │   │   ├── seo.service.ts # sitemap.xml, robots.txt, Schema.org
 │   │   └── topic-curator.service.ts # 지식 트리 연계 차기 주제 큐레이터
+│   ├── utils/
+│   │   └── protocol-timestamp.ts # Git 커밋 및 콘텐츠 해시 기반 타임스탬프 동기화 유틸
 │   ├── gdrive-sync.ts     # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts    # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts        # 엔드투엔드 정적 사이트 컴파일 파이프라인
-├── scripts/               # [CLI Scripts] audit-svg-design.ts (기계공학 축 & 비전 감사)
+├── scripts/               # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, manifest, sitemap, images
-└── tests/                 # [Quality Audit] 12대 테스트 스위트 (86/86 PASS)
+└── tests/                 # [Quality Audit] 13대 테스트 스위트 (90/90 PASS)
 ```
 
 ---
@@ -100,7 +103,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(86개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진)*
+*(90개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 초등학생 눈높이 생존 문체 감수 엔진)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash
@@ -118,8 +121,8 @@ npm run gdrive:sync
 
 ## 🤖 전담 자동화 스킬 (Antigravity Skills)
 
-- **`publish-protocol`**: 신규 생존 가이드 기획부터 3~6단계 본문 작성, 3D 테크니컬 벡터 SVG 도면 합성, 5대 루브릭 QA 검수, 6대 글로벌 언어 현지화, 정적 빌드, 그리고 **마지막 `sync` 스킬 자동 호출**까지 원스톱으로 완결하는 전담 엔드투엔드 발행 스킬.
-- **`publish-protocol-image`**: 제미나이 고화질 실물 이미지(`image-generator` 서브에이전트) 기반 신규 생존 프로토콜 발행 파이프라인(주제 기획 ➔ 원시 고증 & 쉬운 한글 본문 ➔ 3D 포토리얼리스틱 이미지 생성 ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ `sync` 스킬 자동 연계 호출)을 원스톱으로 자율 완결하는 전담 이미지 발행 스킬.
+- **`publish-protocol`**: 신규 생존 가이드 기획부터 초등학생 눈높이 3~6단계 본문 작성, 3D 테크니컬 벡터 SVG 도면 합성, 5대 루브릭 QA 검수, 6대 글로벌 언어 현지화, 정적 빌드, 그리고 **마지막 `sync` 스킬 자동 호출**까지 원스톱으로 완결하는 전담 엔드투엔드 발행 스킬.
+- **`publish-protocol-image`**: 제미나이 고화질 실물 이미지(`image-generator` 서브에이전트) 기반 신규 생존 프로토콜 발행 파이프라인(주제 기획 ➔ 원시 고증 & 초등학생 눈높이 쉬운 본문 ➔ 3D 포토리얼리스틱 이미지 생성 ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ `sync` 스킬 자동 연계 호출)을 원스톱으로 자율 완결하는 전담 이미지 발행 스킬.
 - **`sync`**: 코드베이스 변경 사항과 4대 프로젝트 문서 간의 불일치를 전수 검사하고 구글 드라이브 클라우드로 즉시 동기화하는 감사 스킬.
 
 
