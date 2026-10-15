@@ -491,6 +491,15 @@ Rules:
 
       const missingLocales = TARGET_LOCALE_CODES.filter((code) => !translations[code]);
 
+      if (!protocol.createdAt) {
+        protocol.createdAt = new Date().toISOString();
+      }
+      for (const localizedProto of Object.values(translations)) {
+        if (localizedProto) {
+          localizedProto.createdAt = protocol.createdAt;
+        }
+      }
+
       // 3. 마스터 JSON 및 다국어 JSON 저장
       const fileSlug = `${String(nextNum).padStart(2, '0')}-${protocol.title.toLowerCase().replace(/[^a-z0-9가-힣]+/g, '-').replace(/^-|-$/g, '')}.json`;
       const masterPath = path.join(workDir, 'content/protocols', fileSlug);
@@ -636,7 +645,15 @@ ${instructions}
 
       this.alignTranslatedSvgLabels(updatedProto, translations);
 
-      // 마스터 파일 갱신 (svgLabels 포함)
+      // 최종 수정 일시 자동 갱신 및 다국어 로케일 동기화
+      updatedProto.updatedAt = new Date().toISOString();
+      for (const localizedProto of Object.values(translations)) {
+        if (localizedProto) {
+          localizedProto.updatedAt = updatedProto.updatedAt;
+        }
+      }
+
+      // 마스터 파일 갱신 (svgLabels 및 updatedAt 포함)
       fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
 
       let missingLocales           = [];

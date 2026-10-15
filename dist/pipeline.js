@@ -12,6 +12,7 @@ import { TopicCuratorService } from './services/topic-curator.service.js';
 import { PwaService } from './services/pwa.service.js';
 import { SeoService } from './services/seo.service.js';
 import { EXTERNAL_RUNTIME_ASSETS, SITE_META } from './site.config.js';
+import { resolveProtocolTimestamps } from './utils/protocol-timestamp.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,8 +46,17 @@ export async function buildSite(options                                         
 
   const allMasterProtocols             = [];
   for (const file of protocolFiles) {
-    const raw = fs.readFileSync(path.join(protocolsDir, file), 'utf-8');
+    const filePath = path.join(protocolsDir, file);
+    const raw = fs.readFileSync(filePath, 'utf-8');
     const parsed           = JSON.parse(raw);
+
+    // 타임스탬프(createdAt, updatedAt) 자동 감지 및 결정론적 동기화
+    const timestamps = resolveProtocolTimestamps(parsed, filePath, root);
+    parsed.createdAt = timestamps.createdAt;
+    if (timestamps.updatedAt) {
+      parsed.updatedAt = timestamps.updatedAt;
+    }
+
     allMasterProtocols.push(parsed);
   }
 
@@ -110,7 +120,13 @@ export async function buildSite(options                                         
     for (const [baseKey, langObj] of Object.entries(localesCache)) {
       if (baseKey.startsWith(num) || baseKey.includes(proto.protocolId.toLowerCase())) {
         for (const [lKey, lProto] of Object.entries(langObj)) {
-          pMap[lKey                   ] = JSON.parse(JSON.stringify(lProto));
+          const localizedClone           = JSON.parse(JSON.stringify(lProto));
+          // 마스터와 동일한 등록 및 최종 수정 일시 전파 (다국어 탭 전환 시 시각적 일치 보장)
+          localizedClone.createdAt = proto.createdAt;
+          if (proto.updatedAt) {
+            localizedClone.updatedAt = proto.updatedAt;
+          }
+          pMap[lKey                   ] = localizedClone;
         }
       }
     }

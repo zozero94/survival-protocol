@@ -47,9 +47,10 @@ ${buildAlternates(`${siteUrl}/`)}
     for (const p of protocols) {
       const num = p.protocolId.replace(/[^0-9]/g, '').padStart(2, '0');
       const pagePath = `${siteUrl}/protocol-${num}`;
+      const lastmodDate = (p.updatedAt || p.createdAt || today).slice(0, 10);
       entries.push(`  <url>
     <loc>${pagePath}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmodDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 ${buildAlternates(pagePath)}
