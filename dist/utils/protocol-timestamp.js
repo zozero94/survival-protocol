@@ -22,19 +22,58 @@ import { execSync } from 'child_process';
                   
  
 
+const gitAvailableCache = new Map                 ();
+
 /**
- * Git 실행 가능 여부 및 .git 작업 트리 존재 여부 확인
+ * Git 캐시 초기화 (테스트 격리용)
+ */
+export function clearGitAvailableCache()       {
+  gitAvailableCache.clear();
+}
+
+/**
+ * Git 실행 가능 여부 및 .git 작업 트리 존재 여부 확인 (메모이제이션 적용)
  */
 export function isGitAvailable(rootDir         = process.cwd())          {
+  if (gitAvailableCache.has(rootDir)) {
+    return gitAvailableCache.get(rootDir) ;
+  }
+
+  // 선행 검사: .git 디렉터리 존재 여부 확인
+  const gitDir = path.join(rootDir, '.git');
+  if (!fs.existsSync(gitDir)) {
+    gitAvailableCache.set(rootDir, false);
+    return false;
+  }
+
   try {
     const out = execSync('git rev-parse --is-inside-work-tree', {
       cwd: rootDir,
       encoding: 'utf-8',
       stdio: ['pipe', 'pipe', 'ignore'],
     }).trim();
-    return out === 'true';
+    const available = out === 'true';
+    gitAvailableCache.set(rootDir, available);
+    return available;
   } catch {
+    gitAvailableCache.set(rootDir, false);
     return false;
+  }
+}
+
+/**
+ * 대용량 이미지/파일을 64KB 고정 버퍼 청크 단위로 스트리밍 해싱하여 메모리 힙 스파이크를 방지합니다.
+ */
+function hashFileChunked(hash             , filePath        )       {
+  const fd = fs.openSync(filePath, 'r');
+  try {
+    const buffer = Buffer.alloc(65536);
+    let bytesRead = 0;
+    while ((bytesRead = fs.readSync(fd, buffer, 0, buffer.length, null)) > 0) {
+      hash.update(buffer.subarray(0, bytesRead));
+    }
+  } finally {
+    fs.closeSync(fd);
   }
 }
 
@@ -50,29 +89,31 @@ export function computeProtocolContentHash(
 )         {
   const hash = crypto.createHash('sha256');
 
-  // 1. 핵심 본문 텍스트 (줄바꿈/공백 정규화)
+  // 1. 핵심 본문 메타데이터 (줄바꿈/공백 정규화)
   hash.update(`id:${protocol.protocolId || ''}`);
   hash.update(`title:${(protocol.title || '').trim()}`);
-  hash.update(`desc:${(protocol.description || '').trim()}`);
   hash.update(`summary:${(protocol.summary || '').trim()}`);
   hash.update(`threat:${protocol.threatLevel || ''}`);
+  hash.update(`threatText:${(protocol.threatLevelText || '').trim()}`);
   hash.update(`category:${protocol.category || ''}`);
   hash.update(`diff:${protocol.difficulty || ''}`);
   hash.update(`time:${protocol.timeRequired || ''}`);
+  hash.update(`successRate:${(protocol.successRate || '').trim()}`);
+  hash.update(`outputPerHour:${(protocol.outputPerHour || '').trim()}`);
 
-  // 2. 필요 자연물 재료
+  // 2. 필요 자연물 재료 (실제 인터페이스: id, name, desc)
   if (Array.isArray(protocol.materials)) {
     for (const m of protocol.materials) {
-      hash.update(`mat:${(m.name || '').trim()}:${(m.amount || '').trim()}:${(m.source || '').trim()}`);
+      hash.update(`mat:${m.id || ''}:${(m.name || '').trim()}:${(m.desc || '').trim()}`);
     }
   }
 
   // 3. 단계별 본문 및 SVG 도면 / 이미지
   if (Array.isArray(protocol.steps)) {
     for (const s of protocol.steps) {
-      hash.update(`step:${s.stepNumber}:${(s.title || '').trim()}:${(s.description || '').trim()}`);
-      if (s.fatalMistake) {
-        hash.update(`fatal:${(s.fatalMistake.title || '').trim()}:${(s.fatalMistake.description || '').trim()}`);
+      hash.update(`step:${s.stepNumber}:${(s.title || '').trim()}:${(s.description || '').trim()}:${(s.actionNote || '').trim()}`);
+      if (Array.isArray(s.svgLabels)) {
+        hash.update(`labels:${s.svgLabels.join('|')}`);
       }
       if (s.svgFileName) {
         hash.update(`svg:${s.svgFileName}`);
@@ -87,8 +128,8 @@ export function computeProtocolContentHash(
         hash.update(`img:${s.imageFileName}`);
         const imgPath = path.resolve(rootDir, 'content/images', s.imageFileName);
         if (fs.existsSync(imgPath)) {
-          // 이미지 바이너리 해싱
-          hash.update(fs.readFileSync(imgPath));
+          // 대용량 이미지 64KB 청크 스트리밍 해싱
+          hashFileChunked(hash, imgPath);
         }
       }
     }
@@ -102,6 +143,9 @@ export function computeProtocolContentHash(
   // 5. 최종 완성 결과물 (Outcome)
   if (protocol.outcome) {
     hash.update(`outcome:${(protocol.outcome.title || '').trim()}:${(protocol.outcome.description || '').trim()}`);
+    if (Array.isArray(protocol.outcome.svgLabels)) {
+      hash.update(`outcome_labels:${protocol.outcome.svgLabels.join('|')}`);
+    }
     if (protocol.outcome.svgFileName) {
       hash.update(`outcome_svg:${protocol.outcome.svgFileName}`);
       const oSvg = path.resolve(rootDir, 'content/svgs', protocol.outcome.svgFileName);
@@ -113,9 +157,15 @@ export function computeProtocolContentHash(
       hash.update(`outcome_img:${protocol.outcome.imageFileName}`);
       const oImg = path.resolve(rootDir, 'content/images', protocol.outcome.imageFileName);
       if (fs.existsSync(oImg)) {
-        hash.update(fs.readFileSync(oImg));
+        hashFileChunked(hash, oImg);
       }
     }
+  }
+
+  // 6. 쇼츠 대본
+  const shorts = (protocol                                                                                  ).shortsScript;
+  if (shorts) {
+    hash.update(`shorts:${(shorts.hook || '').trim()}:${(shorts.body || '').trim()}:${(shorts.outro || '').trim()}`);
   }
 
   return hash.digest('hex').slice(0, 16);
@@ -183,7 +233,8 @@ export function collectProtocolAssetPaths(
     try {
       const locFiles = fs
         .readdirSync(localesDir)
-        .filter((f) => f.startsWith(baseSlug) || f.startsWith(num));
+        .filter((f) => (f.startsWith(baseSlug) || f.startsWith(num)) && f.endsWith('.json'))
+        .sort();
       for (const lf of locFiles) {
         const locRel = path.join('content/protocols/locales', lf);
         if (fs.existsSync(path.resolve(rootDir, locRel))) {
@@ -239,12 +290,20 @@ export function getUncommittedLatestMtime(
     }).trim();
 
     if (statusOut) {
+      const dirtyPaths = new Set(
+        statusOut
+          .split('\n')
+          .map((l) => l.slice(3).trim())
+          .filter(Boolean)
+      );
       let maxMs = 0;
       for (const relPath of relativeFilePaths) {
-        const absPath = path.resolve(rootDir, relPath);
-        if (fs.existsSync(absPath)) {
-          const stat = fs.statSync(absPath);
-          if (stat.mtimeMs > maxMs) maxMs = stat.mtimeMs;
+        if (dirtyPaths.has(relPath) || dirtyPaths.has(path.normalize(relPath))) {
+          const absPath = path.resolve(rootDir, relPath);
+          if (fs.existsSync(absPath)) {
+            const stat = fs.statSync(absPath);
+            if (stat.mtimeMs > maxMs) maxMs = stat.mtimeMs;
+          }
         }
       }
       if (maxMs > 0) return new Date(maxMs).toISOString();
@@ -325,11 +384,11 @@ export function resolveProtocolTimestamps(
     }
   }
 
-  // 5. 수정 일시 노출 여부 결정
+  // 5. 수정 일시 노출 여부 결정 (시간 역전 방지 가드: latestCandidate.ms >= createdMs)
   let updatedAt                     = undefined;
   let isModified = false;
 
-  if (latestCandidate) {
+  if (latestCandidate && latestCandidate.ms >= createdMs) {
     const diffMs = latestCandidate.ms - createdMs;
     // 2분(120,000ms) 이상 차이 나거나 명시적 updatedAt이 존재하면 최종 수정 활성화
     if (diffMs > 120_000 || explicitTime) {
@@ -375,7 +434,13 @@ export function syncProtocolTimestamps(options
 
     const resolved = resolveProtocolTimestamps(proto, filePath, rootDir);
     const hashChanged = !proto.contentHash || proto.contentHash !== resolved.contentHash;
-    const timeChanged = proto.updatedAt !== resolved.updatedAt;
+    
+    // 밀리초 정밀 비교로 ISO 표기 차이(Z vs +09:00)에 의한 팬텀 dirty 방지
+    const timeChanged =
+      Boolean(proto.updatedAt) !== Boolean(resolved.updatedAt) ||
+      (proto.updatedAt && resolved.updatedAt
+        ? new Date(proto.updatedAt).getTime() !== new Date(resolved.updatedAt).getTime()
+        : false);
 
     let shouldUpdate = hashChanged || timeChanged || !proto.createdAt;
     let reason = '';
@@ -402,7 +467,8 @@ export function syncProtocolTimestamps(options
       if (fs.existsSync(localesDir)) {
         const locFiles = fs
           .readdirSync(localesDir)
-          .filter((f) => f.startsWith(baseSlug));
+          .filter((f) => f.startsWith(baseSlug) && f.endsWith('.json'))
+          .sort();
         for (const lf of locFiles) {
           const locPath = path.join(localesDir, lf);
           try {

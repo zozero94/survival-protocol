@@ -4,9 +4,10 @@ function formatDate(iso         )         {
   if (!iso) return '';
   const d = new Date(iso);
   if (isNaN(d.getTime())) return '';
-  const y = d.getUTCFullYear();
-  const m = String(d.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(d.getUTCDate()).padStart(2, '0');
+  const kst = new Date(d.getTime() + 9 * 3600 * 1000);
+  const y = kst.getUTCFullYear();
+  const m = String(kst.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(kst.getUTCDate()).padStart(2, '0');
   return `${y}.${m}.${day}`;
 }
 
@@ -30,17 +31,13 @@ function formatDateTime(iso         )         {
  */
 export function renderHeroSection(protocol          )         {
   const dateStr = formatDate(protocol.createdAt);
-  const dateHtml = dateStr
-    ? `<span class="border border-[#333] text-[#888] px-1.5 py-0.5 text-[11px] font-mono"><span data-i18n="createdPrefix">등록</span>: <span id="proto-date" data-proto="createdAt">${dateStr}</span></span>`
-    : '';
+  const dateHtml = `<span class="${dateStr ? '' : 'hidden '}border border-[#333] text-[#888] px-1.5 py-0.5 text-[11px] font-mono"><span data-i18n="createdPrefix">등록</span>: <span id="proto-date" data-proto="createdAt">${dateStr || ''}</span></span>`;
 
   const updatedDateStr = formatDateTime(protocol.updatedAt);
-  const updatedHtml = updatedDateStr
-    ? `<div class="flex items-center gap-1.5 bg-[#141414] text-[#888] border border-[#333] px-2 py-0.5 text-xs font-mono tracking-wider rounded-none">
+  const updatedHtml = `<div id="proto-updated-container" class="${updatedDateStr ? 'flex' : 'hidden'} items-center gap-1.5 bg-[#141414] text-[#888] border border-[#333] px-2 py-0.5 text-xs font-mono tracking-wider rounded-none">
       <svg class="w-3 h-3 text-[#777] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      <span><span data-i18n="updatedPrefix">최종 수정</span>: <span id="proto-updated" data-proto="updatedAt">${updatedDateStr}</span></span>
-    </div>`
-    : '';
+      <span><span data-i18n="updatedPrefix">최종 수정</span>: <span id="proto-updated" data-proto="updatedAt">${updatedDateStr || ''}</span></span>
+    </div>`;
 
   return `
 <section class="border border-[#333] bg-[#1c1b1b] p-5 sm:p-7 relative overflow-hidden mb-6">

@@ -8,6 +8,7 @@ import { SvgAuditService } from './svg-audit.service.ts';
 import { DeployService } from './deploy.service.ts';
 import { buildSite } from '../pipeline.ts';
 import { SITE_META } from '../site.config.ts';
+import { computeProtocolContentHash } from '../utils/protocol-timestamp.ts';
 import type { Protocol, ProtocolCategory } from '../types/index.ts';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -494,15 +495,19 @@ Rules:
       if (!protocol.createdAt) {
         protocol.createdAt = new Date().toISOString();
       }
-      for (const localizedProto of Object.values(translations)) {
-        if (localizedProto) {
-          localizedProto.createdAt = protocol.createdAt;
-        }
-      }
 
       // 3. 마스터 JSON 및 다국어 JSON 저장
       const fileSlug = `${String(nextNum).padStart(2, '0')}-${protocol.title.toLowerCase().replace(/[^a-z0-9가-힣]+/g, '-').replace(/^-|-$/g, '')}.json`;
       const masterPath = path.join(workDir, 'content/protocols', fileSlug);
+      protocol.contentHash = computeProtocolContentHash(protocol, masterPath, workDir);
+
+      for (const localizedProto of Object.values(translations)) {
+        if (localizedProto) {
+          localizedProto.createdAt = protocol.createdAt;
+          localizedProto.contentHash = protocol.contentHash;
+        }
+      }
+
       fs.writeFileSync(masterPath, JSON.stringify(protocol, null, 2), 'utf-8');
 
       const localesDir = path.join(workDir, 'content/protocols/locales');
@@ -645,15 +650,20 @@ ${instructions}
 
       this.alignTranslatedSvgLabels(updatedProto, translations);
 
-      // 최종 수정 일시 자동 갱신 및 다국어 로케일 동기화
+      // 원본 발행일자(createdAt) 100% 보존 및 최종 수정 일시/콘텐츠 해시 동기화
+      updatedProto.createdAt = currentProto.createdAt || new Date().toISOString();
       updatedProto.updatedAt = new Date().toISOString();
+      updatedProto.contentHash = computeProtocolContentHash(updatedProto, filePath, workDir);
+
       for (const localizedProto of Object.values(translations)) {
         if (localizedProto) {
+          localizedProto.createdAt = updatedProto.createdAt;
           localizedProto.updatedAt = updatedProto.updatedAt;
+          localizedProto.contentHash = updatedProto.contentHash;
         }
       }
 
-      // 마스터 파일 갱신 (svgLabels 및 updatedAt 포함)
+      // 마스터 파일 갱신 (svgLabels, createdAt, updatedAt, contentHash 포함)
       fs.writeFileSync(filePath, JSON.stringify(updatedProto, null, 2), 'utf-8');
 
       let missingLocales: string[] = [];

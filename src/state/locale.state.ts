@@ -45,10 +45,20 @@ export function getLocaleRuntimeScript(): string {
             if (el.tagName === 'TITLE') {
               el.textContent = (ui.brandShort || '[SURVIVAL PROTOCOL]') + ' // ' + proto[field];
             } else if (field === 'createdAt') {
-              el.innerText = String(proto[field]).slice(0, 10).replace(/-/g, '.');
+              var cd = new Date(proto[field]);
+              if (!isNaN(cd.getTime())) {
+                var ckst = new Date(cd.getTime() + 9 * 3600000);
+                var cy = ckst.getUTCFullYear();
+                var cm = String(ckst.getUTCMonth() + 1).padStart(2, '0');
+                var cday = String(ckst.getUTCDate()).padStart(2, '0');
+                el.innerText = cy + '.' + cm + '.' + cday;
+              } else {
+                el.innerText = String(proto[field]).slice(0, 10).replace(/-/g, '.');
+              }
             } else if (field === 'updatedAt') {
               var ud = new Date(proto[field]);
-              if (!isNaN(ud.getTime())) {
+              var uContainer = document.getElementById('proto-updated-container');
+              if (proto[field] && !isNaN(ud.getTime())) {
                 var ukst = new Date(ud.getTime() + 9 * 3600000);
                 var uy = ukst.getUTCFullYear();
                 var um = String(ukst.getUTCMonth() + 1).padStart(2, '0');
@@ -56,8 +66,16 @@ export function getLocaleRuntimeScript(): string {
                 var uhh = String(ukst.getUTCHours()).padStart(2, '0');
                 var umm = String(ukst.getUTCMinutes()).padStart(2, '0');
                 el.innerText = uy + '.' + um + '.' + uday + ' ' + uhh + ':' + umm;
+                if (uContainer) {
+                  uContainer.classList.remove('hidden');
+                  uContainer.classList.add('flex');
+                }
               } else {
-                el.innerText = proto[field];
+                el.innerText = '';
+                if (uContainer) {
+                  uContainer.classList.remove('flex');
+                  uContainer.classList.add('hidden');
+                }
               }
             } else {
               el.innerText = proto[field];

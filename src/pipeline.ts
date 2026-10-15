@@ -50,12 +50,13 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
     const raw = fs.readFileSync(filePath, 'utf-8');
     const parsed: Protocol = JSON.parse(raw);
 
-    // 타임스탬프(createdAt, updatedAt) 자동 감지 및 결정론적 동기화
+    // 타임스탬프(createdAt, updatedAt, contentHash) 자동 감지 및 결정론적 동기화
     const timestamps = resolveProtocolTimestamps(parsed, filePath, root);
     parsed.createdAt = timestamps.createdAt;
     if (timestamps.updatedAt) {
       parsed.updatedAt = timestamps.updatedAt;
     }
+    parsed.contentHash = timestamps.contentHash;
 
     allMasterProtocols.push(parsed);
   }
@@ -125,6 +126,9 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
           localizedClone.createdAt = proto.createdAt;
           if (proto.updatedAt) {
             localizedClone.updatedAt = proto.updatedAt;
+          }
+          if (proto.contentHash) {
+            localizedClone.contentHash = proto.contentHash;
           }
           pMap[lKey as SupportedLocale] = localizedClone;
         }
