@@ -7,6 +7,12 @@ export interface Material {
   isGathered?: boolean;
 }
 
+export interface StepDeepDive {
+  badge?: string;
+  title: string;
+  text: string;
+}
+
 export interface ProtocolStep {
   stepNumber: string;
   title: string;
@@ -16,6 +22,7 @@ export interface ProtocolStep {
   svgCode?: string;
   svgLabels?: string[];
   imageFileName?: string;
+  deepDive?: StepDeepDive;
 }
 
 export interface ProtocolOutcome {

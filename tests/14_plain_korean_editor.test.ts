@@ -57,4 +57,14 @@ describe('🧒 [Suite 14: 초등학생 눈높이 생존 문체 감수 엔진]', 
     assert.ok(fixed.includes('첫 1~2컵 버리기'));
     assert.ok(fixed.includes('펄펄 끓여서 세균 죽이기'));
   });
+
+  it('동화풍 유아어(쏙 빨아, 나쁜 벌레, 살포시 등)가 포함되면 테크니컬 라이팅 원칙에 따라 탐지해야 한다', () => {
+    const cuteText = '스펀지 구멍 숯이 나쁜 냄새를 쏙 빨아들이고, 나쁜 벌레를 없애 물을 살포시 붓습니다.';
+    const result = PlainKoreanEditorService.auditText(cuteText);
+
+    assert.strictEqual(result.passed, false);
+    assert.ok(result.issues.some(i => i.word.includes('쏙 빨아')));
+    assert.ok(result.issues.some(i => i.word.includes('나쁜 벌레')));
+    assert.ok(result.issues.some(i => i.word.includes('살포시')));
+  });
 });

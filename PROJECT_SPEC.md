@@ -90,7 +90,7 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, PWA sw.js, SEO, images)
-├── tests/                       # [Quality Audit] 13개 테스트 스위트 (90/90 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 13개 테스트 스위트 (91/91 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
@@ -104,9 +104,10 @@ primitive-survival/
    - 기계공학 유클리드 기하학 공차 검증: 상단 힌지 결합 이격 거리 $\le 2.0\text{px}$, 하단 걸림턱 결합 이격 거리 $\le 2.0\text{px}$, 빗장대 지지각 $45^\circ \pm 5^\circ$.
    - 고해상도(1000px) SVG-to-PNG 렌더링 기반 제미나이 멀티모달 비전 정밀 감수 및 자가 치유(Self-Healing) 좌표 교정.
    - 전용 독립 실행 CLI 제공: `npm run audit:svg-design [protocolId]`.
-3. **초등학생 눈높이 문체 감수 (`PlainKoreanEditorService` & `plain-korean-editor`)**:
-   - 전문/학술어 12종 탐지 및 일상어 자동 치환 (`autoFixKnownJargon`), 루브릭 기반 100점 만점 평가 (`auditProtocol`).
-   - 60점 미만 시 프로토콜 유효성 검사에서 차단 및 재작성 유도.
+3. **전문 테크니컬 라이팅 & 딥다이브 원리 감수 (`PlainKoreanEditorService` & `technical-writing-editor`)**:
+   - 유아어/동화풍 표현(Fluff) 및 난해한 학술 용어(Jargon) 동시 100% 배제.
+   - 1문장 1행동 번호형 액션 체크리스트(`01`, `02`) 및 핵심 수치 하이라이팅(`#fde68a`, `#ffffff`) 규격화.
+   - Stitch 디자인 자문 기반 `TECHNICAL DEEP DIVE // FIELD PRINCIPLE` 박스를 통한 심화 과학 원리 분리 제공.
 4. **타임스탬프 및 콘텐츠 해시 정밀 동기화 (`protocol-timestamp.ts`)**:
    - 실질 콘텐츠 SHA-256 해시 지문 기반으로 SVG/이미지/텍스트 변경 시에만 `updatedAt`이 갱신되는 멱등성 보장 (`npm run sync:timestamps`).
 5. **PWA 오프라인 생존성**:

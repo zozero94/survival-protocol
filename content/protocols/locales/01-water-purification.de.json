@@ -4,49 +4,49 @@
   "title": "Wie man schlammiges Wasser in sauberes Trinkwasser verwandelt (Naturfilter aus Kohle und Sand)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WICHTIGES ÜBERLEBEN]",
-  "summary": "Wenn du in der Wildnis schmutziges Schlammwasser trinkst, bekommst du schwere Bauchschmerzen und Durchfall, was schnell zu gefährlicher Austrocknung führt. Wenn du drei Äste zu einem Dreibein bindest, einen Rindentrichter aufhängst und zerkleinerte Holzkohle, Sand und Kieselsteine nacheinander hineinfüllst, wird braunes Schlammwasser glasklar. Danach musst du das Wasser über einem Lagerfeuer 3 Minuten lang mit großen, kräftig sprudelnden Blasen kochen lassen, damit alle unsichtbaren fiesen Keime sterben und du es gefahrlos trinken kannst.",
-  "timeRequired": "25 Min. (15 Min. Filtern + 10 Min. Kochen)",
-  "successRate": "99.9% (Nach schichtweisem Filtern und 3+ Min. Kochen)",
-  "difficulty": "Einfach (Mit Naturmaterialien für jeden machbar)",
-  "outputPerHour": "1.5 bis 2 Liter sauberes Wasser pro Stunde",
+  "summary": "Unbehandeltes schlammiges Wasser in der Wildnis zu trinken führt zu schweren Magenkrämpfen, Durchfall und lebensgefährlicher Dehydrierung. Durch ein Ast-Dreibein mit Rindentrichter und schichtweisem Aufbau aus Kohle, Sand und Kies wird trübes Wasser glasklar gefiltert. Durch anschließendes sprudelndes Kochen für 3+ Minuten werden mikroskopische Keime vollständig zerstört und das Wasser sicher trinkbar.",
+  "timeRequired": "25 Min. (15 Min. Filtration + 10 Min. Kochen)",
+  "successRate": "99.9% (Nach schichtweiser Filtration und 3+ Min. Kochen)",
+  "difficulty": "Mittel (Ausschließlich aus Naturmaterialien herstellbar)",
+  "outputPerHour": "1.5 bis 2.0 Liter sauberes Wasser pro Stunde",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Schwarze Holzkohle aus dem Lagerfeuer (Zwei Handvoll, erbsengroß)",
-      "desc": "Wirkt wie ein Schwamm mit winzigen Löchern, der schlechte Gerüche und Schadstoffe aufsaugt. Zerbrich die Kohle in Stücke, die so groß wie Erbsen sind (5–8 mm)."
+      "name": "Holzkohle (Zwei Handvoll, erbsengroß)",
+      "desc": "Adsorbiert gelöste Verunreinigungen und Gerüche. Auf Stücke zerkleinern, die größer als Reiskörner und erbsengroß sind (5–8 mm)."
     },
     {
       "id": "mat-02",
-      "name": "Mit Flusswasser sauber gewaschener Sand (Zwei Handvoll)",
-      "desc": "Hält feine Schmutzkörner fest, die man mit dem Auge kaum sieht. Wasche den Sand vorher gut im Fluss, damit kein Lehm daran klebt."
+      "name": "Gewaschener feiner Flusssand (Zwei Handvoll)",
+      "desc": "Hält feine Schlammpartikel zurück. Vor der Verwendung zwei- bis dreimal in fließendem Wasser auswaschen."
     },
     {
       "id": "mat-03",
-      "name": "Kleine runde Kieselsteine in Daumennagelgröße (Eine Handvoll)",
-      "desc": "Fangen grobe Blätter und Schmutz ab und schützen den Sand darunter davor, beim Eingießen von Wasser weggespült zu werden."
+      "name": "Kleine runde Kieselsteine (Eine Handvoll)",
+      "desc": "Daumennagelgroße saubere Steine. Fangen groben Schmutz ab und dämpfen den Wasserstrahl, damit die Sandschicht nicht ausgewaschen wird."
     },
     {
       "id": "mat-04",
-      "name": "Trichter aus Birkenrinde oder hohles Bambusrohr (1 Stück)",
-      "desc": "Ein 30–40 cm langer Behälter, der nach unten schmaler wird. Hält alle Schichten zusammen und leitet die Wassertropfen nach unten."
+      "name": "Birkenrindentrichter oder hohles Bambusrohr (1 Stück)",
+      "desc": "Ein 30–40 cm langer, nach unten schmaler werdender Behälter. Hält die Filterschichten und leitet die Wassertropfen ab."
     },
     {
       "id": "mat-05",
-      "name": "Drei fingerdicke, gerade Äste (50 cm lang)",
-      "desc": "Werden oben zusammengebunden und als stabiles Dreibein aufgestellt. Hält den Trichter hoch genug, damit eine Schale darunter passt."
+      "name": "Drei fingerdicke gerade Äste (50 cm lang)",
+      "desc": "Oben zusammengebunden als stabiles Dreibein. Hält den Trichter hoch genug für ein Auffanggefäß darunter."
     },
     {
       "id": "mat-06",
-      "name": "Sauberes feuchtes Moos oder Stoffrest als Bodenstopfen",
-      "desc": "Wird fest in das untere Loch gedrückt, damit Kohle und Sand nicht unten herausfallen."
+      "name": "Sauberes feuchtes Moos oder Stoffrest",
+      "desc": "Fest in den Auslauf gestopft, um Kohle und Sand abzustützen, ohne dass Partikel ins Auffanggefäß fallen."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Schritt 1: Dreibein aus 3 Ästen aufstellen und Trichter einhängen (Loch mit Moos stopfen)",
-      "description": "Nimm drei fingerdicke, gerade Äste, binde sie oben mit Schnur oder Pflanzenfasern fest zusammen und stelle sie als stabiles Dreibein auf den Boden. Hänge den Birkenrindentrichter oder das Bambusrohr gerade in die Mitte. Drücke nun sauberes, gewaschenes Moos oder ein Stück Stoff mit dem Finger fest in die schmale untere Öffnung. Ohne diesen Stopfen würden Kohle und Sand sofort unten herauspurzeln.",
-      "actionNote": "> Stopfen-Tipp: Ist der Stopfen zu locker, rieselt schwarzer Kohlestaub heraus. Drücke ihn fest hinein, damit er nicht wegrutscht.",
+      "title": "Schritt 1: Dreibein aufstellen und Rindentrichter montieren",
+      "description": "1. **Dreibein montieren**: Drei fingerdicke Äste oben mit Schnur fest zusammenbinden und zu einem stabilen Dreibein aufstellen.\n2. **Trichter aufhängen**: Den Birkenrindentrichter oder das Bambusrohr senkrecht in der Mitte des Dreibeins befestigen.\n3. **Bodenstopfen einsetzen**: Sauberes, feuchtes Moos fest mit dem Finger in die untere Öffnung drücken. Ein lockerer Stopfen führt zum Auslaufen der Filterschichten.",
+      "actionNote": "> Stopfen prüfen: Sitzt der Stopfen zu locker, rieselt Kohlestaub heraus. Drücken Sie ihn fest hinein.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
         "FIG. 01 // PURIFICATION STEP 1: DREIBEIN & STOPFEN",
@@ -58,9 +58,9 @@
     },
     {
       "stepNumber": "02",
-      "title": "Schritt 2: Kohle auf Erbsengröße zerdrücken und 8 cm hoch einfüllen",
-      "description": "Suche kalte, tiefschwarze Holzkohle aus der Feuerstelle heraus. Lege sie auf einen flachen Stein und klopfe sie mit einem anderen Stein vorsichtig in erbsengroße Stücke. Zermahle sie nicht zu Mehl, sonst kann das Wasser nicht hindurchfließen. Schütte die Kohle auf den Moosstopfen und drücke sie mit einem Stöckchen leicht an, bis sie vier Finger breit (etwa 8 cm) hoch ist. Ihre winzigen Poren saugen Gerüche und Giftstoffe auf.",
-      "actionNote": "> Körnungs-Regel: Die Stücke müssen größer als Reiskörner sein. Feinen Staub solltest du wegpusten oder aussieben, damit nichts verstopft.",
+      "title": "Schritt 2: Kohle auf Erbsengröße zerkleinern und 8 cm einfüllen",
+      "description": "1. **Zerkleinern & Sortieren**: Vollständig kalte Holzkohle mit einem Stein vorsichtig in **erbsengroße Stücke (5–8 mm)** klopfen. Mehlfeinen Staub entfernen, der den Wasserdurchfluss verstopfen würde.\n2. **8 cm Kohlebett einfüllen**: Die Kohle über den Moosstopfen schütten und mit einem Stöckchen leicht andrücken, bis eine ebene Schicht von **vier Fingerbreiten (ca. 8 cm)** erreicht ist.",
+      "actionNote": "> Korngröße: Die Stücke müssen größer als Reiskörner sein. Feiner Staub hemmt die Fließgeschwindigkeit.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
         "FIG. 02 // PURIFICATION STEP 2: KOHLEFILTERBETT",
@@ -68,13 +68,18 @@
         "PORE ABSORPTION (ADSORPTION)",
         "THICKNESS: 8CM (DICKE)",
         "[SCHRITT 2] 8CM KOHLEKOMPONENTE EINFÜLLEN"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD SCIENCE",
+        "title": "Wirkungsweise der Kohleadsorption",
+        "text": "Wird Holz unter Sauerstoffmangel erhitzt, bilden sich im Inneren Millionen mikroskopischer Poren. Diese Mikroporen üben starke Van-der-Waals-Kräfte aus, die gelöste organische Toxine und Gerüche an der Kohleoberfläche binden."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Schritt 3: 6 cm sauberen Flusssand über die Kohle füllen und glattstreichen",
-      "description": "Spüle sauberen Flusssand zwei- bis dreimal im Wasser aus, um lehmigen Schmutz zu entfernen. Gieße den gewaschenen Sand vorsichtig auf die Kohleschicht, bis er drei Finger breit (etwa 6 cm) hoch liegt. Klopfe die Oberfläche mit der Handfläche oder einem flachen Stein glatt und waagerecht. Der Sand hält die Kohle am Boden fest und fängt winzige Schmutzteilchen ab.",
-      "actionNote": "> Eben halten: Wenn der Sand schief liegt, läuft das Wasser nur an der dünnen Seite ab, ohne gefiltert zu werden. Mache die Schicht ganz eben.",
+      "title": "Schritt 3: 6 cm sauberen Flusssand über die Kohle füllen und einebnen",
+      "description": "1. **Sand ausspülen**: Feinen Flusssand zwei- bis dreimal im Wasser auswaschen, um gelösten Schlamm zu entfernen.\n2. **6 cm Sandschicht einbringen**: Den gewaschenen Sand langsam über die Kohle gießen, bis eine Schicht von **drei Fingerbreiten (ca. 6 cm)** entsteht.\n3. **Oberfläche glätten**: Die Oberseite mit einem flachen Stein oder der Handfläche eben streichen. Eine schiefe Schicht führt dazu, dass Wasser unvollständig an der dünneren Stelle abfließt.",
+      "actionNote": "> Schicht einebnen: Eine waagerechte Oberfläche gewährleistet eine gleichmäßige Filtration über die gesamte Säule.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
         "FIG. 03 // PURIFICATION STEP 3: SANDSCHICHT",
@@ -86,9 +91,9 @@
     },
     {
       "stepNumber": "04",
-      "title": "Schritt 4: 4 cm Kieselsteine auflegen und Schlammwasser gießen (Erste 1-2 Tassen wegschütten!)",
-      "description": "Lege kleine Kieselsteine zwei Finger breit (etwa 4 cm) auf den Sand und lege ein breites Laubblatt darauf. Gieße nun vorsichtig das braune Schlammwasser über das Blatt. Die Kiesel und das Blatt verhindern, dass der Wasserstrahl ein Loch in den Sand spült. Bald tropft es unten heraus: Tropf... Tropf... Ganz wichtig: Die ersten 1 bis 2 Tassen spülen den schwarzen Kohlestaub aus dem Filter. Trinke das auf keinen Fall! Schütte es weg und sammle das Wasser erst, wenn es glasklar tropft.",
-      "actionNote": "> Erstes Wasser wegschütten: Die ersten Becher reinigen das Innere des Filters. Schütte sie weg, bis das Wasser glasklar ist.",
+      "title": "Schritt 4: 4 cm Kiesel auflegen, Schlammwasser gießen und Erstspülung verwerfen",
+      "description": "1. **4 cm Kieselschicht auflegen**: Daumennagelgroße Steine **zwei Fingerbreit (ca. 4 cm)** auf den Sand legen und mit einem breiten Blatt abdecken.\n2. **Schlammwasser eingießen**: Das Trübwasser langsam über das Blatt gießen. Kiesel und Blatt dämpfen den Strahl und verhindern Aushöhlungen im Sand.\n3. **Erste 1-2 Tassen wegschütten**: Die ersten **1–2 Tassen (ca. 300 ml)** spülen gelösten Kohlestaub aus und **müssen verworfen werden**.\n4. **Klares Wasser auffangen**: Sobald die Tropfen glasklar fallen, ein sauberes Auffanggefäß unterstellen.",
+      "actionNote": "> Erstwasser wegschütten: Die ersten Becher reinigen das Filterinnere. Nicht trinken, bis das Wasser glasklar tropft.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
         "FIG. 04 // PURIFICATION STEP 4: KIESEL & SPÜLEN",
@@ -100,9 +105,9 @@
     },
     {
       "stepNumber": "05",
-      "title": "Schritt 5: Das klare Wasser über dem Feuer mindestens 3 Minuten sprudelnd kochen",
-      "description": "Fülle das gefilterte, glasklare Wasser in eine Steinschale, einen Tontopf oder ein Bambusrohr und stelle es über das Lagerfeuer. Sobald große, faustgroße Blasen kräftig aufsteigen und das Wasser sprudelt, koche es mindestens 3 Minuten lang weiter (im Hochgebirge 5 Minuten). Auch wenn das Wasser sauber aussieht: Unsichtbare Keime und Parasiten leben darin weiter. Erst das heiße Kochen tötet 100% der Keime ab, sodass auch Kinder es sicher trinken können.",
-      "actionNote": "> Auf keinen Fall roh trinken: Klares Wasser ist noch KEIN keimfreies Wasser! Erst das Kochen nach dem Filtern macht es sicher.",
+      "title": "Schritt 5: Das gefilterte klare Wasser 3+ Minuten sprudelnd kochen",
+      "description": "1. **In Kochbehälter füllen**: Das glasklar gefilterte Wasser in einen Steintopf, Tonkessel oder Bambusbehälter füllen und über die Glut stellen.\n2. **3 Minuten sprudelnd kochen**: Sobald große Blasen über die gesamte Oberfläche steigen, das Kochen mindestens **3 Minuten lang (über 1.000 m Höhe 5 Minuten lang)** aufrechterhalten.\n3. **Abkühlen lassen**: Vor dem Trinken vollständig abkühlen lassen.",
+      "actionNote": "> Kochen zwingend erforderlich: Klares Wasser ist KEIN keimfreies Wasser. Erst Filtration und anschließendes Abkochen gewährleisten 99.9% biologische Sicherheit.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
         "FIG. 05 // PURIFICATION STEP 5: 100°C KOCHEN",
@@ -110,25 +115,30 @@
         "TIME: 3+ MIN (MINUTEN)",
         "PATHOGEN FREE (KEIMFREI)",
         "[SCHRITT 5] 3+ MINUTEN SPRUDELND KOCHEN"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD SCIENCE",
+        "title": "Warum selbst klares Wasser abgekocht werden muss",
+        "text": "Kohle- und Sandfilter entfernen sichtbare Schlammpartikel und Gerüche, aber mikroskopische Zysten (Giardien, Kryptosporidien) passieren einfache Poren. Dauerhaftes Kochen bei 100°C denaturiert die Proteine der Krankheitserreger und inaktiviert 99.9% aller Keime."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Tödlicher Fehler: Das klare Wasser trinken, ohne es vorher sprudelnd abzukochen",
-    "description": "Kohle und Sand fangen nur sichtbaren Schlamm und schlechten Geruch ab. Unsichtbare fiese Bakterien und Parasiten, die heftige Bauchschmerzen auslösen, schwimmen weiterhin im Wasser. Selbst wenn das Wasser eiskalt und glasklar aussieht: Wer es ungekocht trinkt, bekommt nach wenigen Stunden schweren Durchfall und bricht in der Wildnis durch Wassermangel zusammen.",
-    "consequence": "Folge: Schwere Darminfektion, extremer Durchfall und lebensgefährliche Austrocknung"
+    "title": "Tödlicher Fehler: Das gefilterte klare Wasser ohne Abkochen zu trinken",
+    "description": "Kohle und Sand fangen nur sichtbaren Schlamm und Geruch ab. Mikroskopische Parasiten und Viren bleiben im Wasser aktiv. Wer ungekochtes Wasser trinkt, erleidet nach wenigen Stunden schwere Magenkrämpfe und Durchfall, was in der Wildnis zu lebensgefährlicher Austrocknung führt.",
+    "consequence": "Folge: Schwere Magen-Darm-Infektion und lebensbedrohliche Dehydrierung"
   },
   "shortsScript": {
-    "hook": "Wildes Schlammwasser zu trinken bringt dich in 3 Tagen um! So baust du einen Naturfilter ohne Plastik!",
-    "body": "Stelle ein Dreibein aus Ästen auf, hänge einen Trichter ein und stopfe unten Moos hinein. Fülle 8 cm Kohle, 6 cm sauberen Sand und 4 cm Kiesel hinein. Gieße das Schlammwasser darauf! Schütte die ersten 2 Becher weg, weil sie Kohlestaub ausspülen. Das wichtigste Geheimnis: Klares Wasser ist noch nicht sicher! Du musst es mindestens 3 Minuten lang sprudelnd kochen, um alle unsichtbaren Keime zu töten!",
+    "hook": "Wildes Schlammwasser zu trinken führt in 3 Tagen zu tödlichem Durchfall! So reinigst du es ohne Plastik!",
+    "body": "Dreibein binden, Rindentrichter aufhängen und Auslauf mit Moos stopfen. 8 cm Kohle, 6 cm Sand und 4 cm Kiesel einfüllen. Schlammwasser darübergießen! Die ersten 2 Becher mit Kohlestaub wegschütten. Wichtigste Regel: Klares Wasser ist noch nicht sicher! Du musst es mindestens 3 Minuten lang sprudelnd kochen, um mikroskopische Erreger zu töten!",
     "outro": "Genaue Offline-Überlebenspläne ohne Internet gibt es über den Link im Profil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
     "title": "Fertiger Naturwasserfilter aus Kohle und Sand",
-    "description": "Ein an einem Dreibein aus Ästen aufgehängter Naturfilter mit Schichten aus Holzkohle, Sand, Kieselsteinen und Moosstopfen, der trübes Schlammwasser in glasklares Wasser verwandelt, das abgekocht werden kann."
+    "description": "An einem Dreibein aufgehängte Filtrationssäule aus Holzkohle, Flusssand, Kieselsteinen und Moosstopfen, die schlammiges Wildwasser in glasklares, abkochbares Trinkwasser verwandelt."
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T14:24:23+09:00",
-  "contentHash": "cf7d15c276ffaa84"
+  "updatedAt": "2026-10-15T15:07:21+09:00",
+  "contentHash": "1b359d82ef52723f"
 }

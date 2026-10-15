@@ -18,6 +18,45 @@ export function getLocaleRuntimeScript(): string {
       return (lang && window.__PROTOCOLS__[lang]) ? lang : 'ko';
     }
 
+    function renderHighlightTermsClient(text) {
+      if (!text) return '';
+      return text.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
+        var isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
+        if (isMetric) {
+          return '<strong class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
+        }
+        return '<strong class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">' + p1 + '</strong>';
+      });
+    }
+
+    function renderStepDescriptionClient(desc) {
+      if (!desc) return '';
+      var lines = desc.split(/\r?\n/).map(function(l) { return l.trim(); }).filter(Boolean);
+      var isNumbered = lines.some(function(l) { return /^(?:\d+[\.\)]|\(\d+\))\s+/.test(l); });
+      if (!isNumbered) {
+        return renderHighlightTermsClient(desc);
+      }
+      var curNum = 1;
+      return lines.map(function(line) {
+        var match = line.match(/^(?:\d+[\.\)]|\(\d+\))\s+(.*)$/);
+        var content = match ? match[1] : line;
+        var numStr = String(curNum++).padStart(2, '0');
+        var actionTitle = '';
+        var actionDetail = content;
+        var tm = content.match(/^\*\*([^*]+)\*\*:\s*(.*)$/);
+        if (tm) {
+          actionTitle = tm[1];
+          actionDetail = tm[2];
+        }
+        return '<div class="bg-[#121212] border border-[#262626] hover:border-[#383838] p-3 sm:p-3.5 flex items-start space-x-3 transition-colors">' +
+          '<span class="text-[#fde68a] font-mono font-bold text-xs bg-[#080808] px-2 py-0.5 border border-[#383838] select-none flex-shrink-0 mt-0.5">' + numStr + '</span>' +
+          '<div class="flex-1 text-xs sm:text-sm leading-relaxed space-y-0.5">' +
+          (actionTitle ? '<div class="text-white font-bold tracking-tight font-sans">' + actionTitle + '</div>' : '') +
+          '<div class="text-[#cfcfcf] font-sans leading-relaxed">' + renderHighlightTermsClient(actionDetail) + '</div>' +
+          '</div></div>';
+      }).join('\n');
+    }
+
     /**
      * 100% 선언적 범용 데이터 바인딩 0.01초 핫스왑 엔진
      */
@@ -92,7 +131,14 @@ export function getLocaleRuntimeScript(): string {
           var prop = el.getAttribute('data-proto-prop');
           var idx = parseInt(el.getAttribute('data-index'), 10);
           if (proto[itemKey] && proto[itemKey][idx] && proto[itemKey][idx][prop] !== undefined) {
-            el.innerText = proto[itemKey][idx][prop];
+            var val = proto[itemKey][idx][prop];
+            if (prop === 'description' && el.id && el.id.startsWith('step-desc-')) {
+              el.innerHTML = renderStepDescriptionClient(val);
+            } else if (prop === 'actionNote' && el.id && el.id.startsWith('step-note-')) {
+              el.innerHTML = renderHighlightTermsClient(val);
+            } else {
+              el.innerText = val;
+            }
           }
         });
 

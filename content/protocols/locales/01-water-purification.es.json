@@ -4,49 +4,49 @@
   "title": "Cómo convertir agua turbia en agua limpia para beber (Filtro natural con carbón y arena)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SUPERVIVENCIA VITAL]",
-  "summary": "Si bebes agua sucia y con barro en la naturaleza, tendrás un fuerte dolor de barriga y diarrea que te deshidratará rápidamente. Si atas tres ramas para formar un trípode, cuelgas un cono de corteza y colocas en orden carbón, arena y piedritas, el agua marrón se volverá cristalina. Luego, si la hierves en una fogata durante 3 minutos con burbujas grandes que salten con fuerza, todos los microbios y bichitos invisibles morirán y podrás beberla con total seguridad.",
+  "summary": "Beber agua turbia no tratada en la naturaleza provoca cólicos severos, diarrea y deshidratación peligrosa. Al montar un trípode de ramas, suspender un cono de corteza y colocar carbón, arena y grava en secuencia, el agua turbia se filtra transparente. Hervir esta agua enérgica y continuamente durante 3+ minutos elimina las bacterias microscópicas, haciéndola segura para beber.",
   "timeRequired": "25 min (15 min filtrado + 10 min hervido)",
-  "successRate": "99.9% (Al colocar las capas en orden y hervir 3+ min)",
-  "difficulty": "Fácil (Cualquiera puede hacerlo con materiales del bosque)",
-  "outputPerHour": "1.5 a 2 litros de agua limpia por hora",
+  "successRate": "99.9% (Al colocar en secuencia y hervir 3+ min)",
+  "difficulty": "Media (Construido únicamente con materiales naturales)",
+  "outputPerHour": "1.5 a 2.0 litros de agua limpia por hora",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Carbón negro de leña de la fogata (Dos puñados, tamaño guisante)",
-      "desc": "Funciona como una esponja con miles de agujeritos que atrapa los malos olores y las toxinas. Rompe el carbón en trocitos del tamaño de un guisante (5-8 mm)."
+      "name": "Carbón vegetal de leña (Dos puñados, tamaño guisante)",
+      "desc": "Absorbe impurezas y malos olores. Triturar en trozos mayores que granos de arroz y del tamaño de un guisante (5-8 mm)."
     },
     {
       "id": "mat-02",
-      "name": "Arena fina de río bien lavada (Dos puñados)",
-      "desc": "Atrapa el polvo y las partículas de barro difíciles de ver. Lávala primero en agua limpia para que no tenga polvo sucio."
+      "name": "Arena fina de río lavada (Dos puñados)",
+      "desc": "Filtra el polvo fino y partículas en suspensión. Lavar dos o tres veces con agua corriente para eliminar lodo antes de usar."
     },
     {
       "id": "mat-03",
-      "name": "Piedritas redondas del tamaño de una uña (Un puñado)",
-      "desc": "Atrapan las hojas y palitos grandes, y evitan que el agua que viertas haga un agujero en la arena de abajo."
+      "name": "Piedritas redondas de río (Un puñado)",
+      "desc": "Piedras limpias del tamaño de una uña. Retienen restos gruesos y amortiguan el flujo de agua para no erosionar la arena."
     },
     {
       "id": "mat-04",
-      "name": "Cono de corteza de abedul o caña de bambú hueca (1 unidad)",
-      "desc": "Un cono o tubo de 30-40 cm de largo que se estrecha abajo. Sostiene todos los materiales y canaliza las gotas hacia tu vaso."
+      "name": "Cono de corteza de abedul o tubo de bambú hueco (1 unidad)",
+      "desc": "Recipiente cilíndrico o cónico de 30-40 cm que se estrecha abajo. Sostiene las capas y canaliza el goteo."
     },
     {
       "id": "mat-05",
       "name": "Tres ramas rectas del grosor de un dedo (50 cm de largo)",
-      "desc": "Se atan arriba para hacer un trípode firme en el suelo. Sostiene el filtro alto para que quepa un vaso debajo."
+      "desc": "Atadas por la parte superior para formar un trípode estable. Sostienen el cono elevado para colocar un vaso debajo."
     },
     {
       "id": "mat-06",
-      "name": "Musgo limpio y húmedo o trozo de tela para tapón inferior",
-      "desc": "Se aprieta en el agujero de abajo para que el carbón y la arena no se caigan dentro del agua limpia."
+      "name": "Musgo limpio húmedo o trozo de tela para tapón",
+      "desc": "Compactado en la boquilla inferior para sostener el carbón y la arena sin que caigan al recipiente limpio."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Paso 1: Montar el trípode con 3 ramas y colgar el cono (Tapar abajo con musgo)",
-      "description": "Junta tres ramas rectas del grosor de un dedo, ata la parte superior con lianas o cuerda y abre las patas para formar un trípode firme en el suelo. Cuelga el cono de corteza o el tubo de bambú bien vertical en el centro. Empuja musgo limpio o un trozo de tela en el orificio estrecho de abajo usando tu dedo. Sin este tapón, el carbón y la arena se caerán al recipiente.",
-      "actionNote": "> Consejo del tapón: Si queda muy suelto, saldrá polvo negro de carbón. Apriétalo bien para que no se salga al empujar.",
+      "title": "Paso 1: Montar el trípode con 3 ramas y fijar el cono",
+      "description": "1. **Ensamblar Trípode**: Junte tres ramas rectas del grosor de un dedo, ate la parte superior con lianas o cuerda y abra las patas formando un soporte firme.\n2. **Suspender Cono**: Monte el cono de corteza o el tubo de bambú en posición vertical en el centro del trípode.\n3. **Insertar Tapón Inferior**: Empuje musgo limpio o un trozo de tela en la boquilla estrecha con el dedo. Un tapón suelto provocará la caída de los materiales filtrantes.",
+      "actionNote": "> Control del tapón: Si queda flojo, saldrá polvo negro de carbón. Asegúrese de que no se mueva al empujar.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
         "FIG. 01 // PURIFICATION STEP 1: TRÍPODE Y TAPÓN",
@@ -58,9 +58,9 @@
     },
     {
       "stepNumber": "02",
-      "title": "Paso 2: Triturar carbón al tamaño de un guisante y llenar 8 cm abajo",
-      "description": "Escoge trozos de carbón completamente negros y fríos de la fogata. Colócalos sobre una piedra plana y golpéalos suavemente con otra piedra hasta que tengan el tamaño de un guisante. No los muelas como harina o el agua no podrá pasar. Vierte el carbón sobre el tapón de musgo y compáctalo suavemente con una ramita hasta alcanzar la altura de cuatro dedos (unos 8 cm). Sus diminutos poros absorberán los malos olores y la suciedad.",
-      "actionNote": "> Regla del tamaño: Usa trozos mayores que granos de arroz. Desecha el polvo fino que pueda bloquear el paso del agua.",
+      "title": "Paso 2: Triturar carbón al tamaño de guisante y llenar 8 cm abajo",
+      "description": "1. **Triturar y Seleccionar**: Tome carbón negro completamente frío de la fogata y golpéelo suavemente con una piedra en **trozos de tamaño guisante (5-8 mm)**. Deseche el polvo fino tipo harina que obstruiría el flujo.\n2. **Empacar Lecho de 8 cm**: Vierta el carbón sobre el tapón de musgo y compáctelo suavemente con una vara formando un lecho nivelado de **cuatro dedos de altura (unos 8 cm)**.",
+      "actionNote": "> Regla de grano: Use trozos mayores que granos de arroz. El polvo fino bloquea el paso del agua.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
         "FIG. 02 // PURIFICATION STEP 2: LECHO DE CARBÓN",
@@ -68,13 +68,18 @@
         "PORE ABSORPTION (ABSORCIÓN)",
         "THICKNESS: 8CM (GROSOR)",
         "[PASO 2] EMPACAR 8CM DE CARBÓN TRITURADO"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD SCIENCE",
+        "title": "Mecanismo de adsorción del carbón",
+        "text": "Cuando la madera se carboniza a alta temperatura sin oxígeno, se generan millones de poros microscópicos. Estos microporos ejercen intensas fuerzas de van der Waals que atrapan toxinas orgánicas disueltas y malos olores en la superficie del carbón."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Paso 3: Colocar 6 cm de arena limpia sobre el carbón y alisarla bien",
-      "description": "Lava arena limpia del río dos o tres veces con agua para quitar el barro flotante. Vierte la arena lavada con cuidado sobre el carbón hasta cubrir la altura de tres dedos (unos 6 cm). Golpea la superficie suavemente con la palma de la mano o una piedra plana para nivelarla. Esta capa de arena evita que los trozos de carbón floten y atrapa las partículas de polvo fino.",
-      "actionNote": "> Nivelación: Si la arena queda inclinada, el agua se irá por el lado fino sin filtrarse bien. Déjala siempre plana.",
+      "title": "Paso 3: Colocar 6 cm de arena limpia sobre el carbón y nivelar",
+      "description": "1. **Lavar Arena**: Enjuague arena fina de río dos o tres veces con agua para eliminar partículas de lodo.\n2. **Colocar Capa de 6 cm**: Vierta lentamente la arena limpia sobre el carbón hasta alcanzar **tres dedos de profundidad (unos 6 cm)**.\n3. **Nivelar Superficie**: Alise suavemente la superficie superior con una piedra plana o la palma. Si la arena está inclinada, el agua se desviará por el lado menos profundo.",
+      "actionNote": "> Lecho horizontal: Mantenga la superficie de arena plana para garantizar una filtración uniforme en toda la columna.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
         "FIG. 03 // PURIFICATION STEP 3: CAPA DE ARENA",
@@ -86,9 +91,9 @@
     },
     {
       "stepNumber": "04",
-      "title": "Paso 4: Poner 4 cm de piedritas y verter agua turbia (¡Tirar las primeras 1-2 tazas!)",
-      "description": "Coloca piedritas del tamaño de una uña sobre la arena hasta la altura de dos dedos (unos 4 cm) y pon una hoja ancha encima. Vierte despacio el agua sucia con barro. Las piedras y la hoja evitan que el chorro haga un agujero en la arena. En poco tiempo, comenzarán a caer gotas por abajo: gota... gota... Muy importante: Las primeras 1 o 2 tazas saldrán oscuras con polvo de carbón que limpia el filtro. ¡No las bebas! Tíralas y empieza a recoger agua cuando salga transparente.",
-      "actionNote": "> Regla del primer lavado: Las primeras tazas limpian el filtro por dentro. Tíralas siempre hasta que el agua gotee transparente.",
+      "title": "Paso 4: Poner 4 cm de grava, verter agua turbia y purgar primeras tazas",
+      "description": "1. **Colocar 4 cm de Grava**: Coloque piedritas sobre la arena hasta **dos dedos de altura (unos 4 cm)** y cubra con una hoja ancha.\n2. **Verter Agua Turbia**: Vierta despacio el agua turbia sobre la hoja. La grava y la hoja amortiguan el flujo y previenen agujeros en la arena.\n3. **Purgar Primeras Tazas**: Las primeras **1-2 tazas (unos 300 ml)** limpian los residuos de carbón y **deben desecharse**.\n4. **Recoger Agua Clara**: Cuando las gotas caigan cristalinas y transparentes, coloque un recipiente limpio debajo.",
+      "actionNote": "> Regla de purga: Nunca beba las primeras 1-2 tazas. Deje que el filtro se autolimpie hasta que el goteo sea cristalino.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
         "FIG. 04 // PURIFICATION STEP 4: GRAVA Y PURGA",
@@ -100,9 +105,9 @@
     },
     {
       "stepNumber": "05",
-      "title": "Paso 5: Hervir el agua limpia al fuego durante más de 3 minutos",
-      "description": "Pon el agua filtrada y transparente en un recipiente de piedra, barro o bambú y colócala sobre las brasas de la fogata. Cuando empiece a hervir con fuerza y salgan burbujas grandes como puños, mantén el hervor durante al menos 3 minutos completos (5 minutos si estás en montañas altas). Aunque el agua se vea cristalina, los microbios invisibles siguen vivos. Al hervirla con fuerza, mueren al 100% y los niños pueden beberla sin peligro.",
-      "actionNote": "> Prohibido beber sin hervir: ¡El agua transparente NO es agua segura! Solo hirviéndola después de filtrarla evitarás enfermarte.",
+      "title": "Paso 5: Hervir el agua limpia durante 3+ minutos continuos",
+      "description": "1. **Transferir al Recipiente**: Vierta el agua filtrada y transparente en una vasija de barro, piedra o bambú sobre las brasas de la fogata.\n2. **Hervido Enérgico Continuo**: Cuando se formen burbujas grandes en toda la superficie, mantenga el hervor durante al menos **3 minutos completos (5 minutos a más de 1.000 m de altitud)**.\n3. **Enfriar y Beber**: Deje enfriar el agua antes de beberla con seguridad.",
+      "actionNote": "> Hervido obligatorio: El agua transparente NO es agua estéril. La filtración física seguida de ebullición térmica garantiza un 99.9% de seguridad biológica.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
         "FIG. 05 // PURIFICATION STEP 5: HERVIDO A 100°C",
@@ -110,25 +115,30 @@
         "TIME: 3+ MIN (MINUTOS)",
         "PATHOGEN FREE (99.9%)",
         "[PASO 5] HERVIR CON FUERZA POR 3+ MINUTOS"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD SCIENCE",
+        "title": "Por qué el agua transparente debe hervirse",
+        "text": "Los filtros de carbón y arena eliminan sedimentos y olores, pero los quistes microscópicos (Giardia, Cryptosporidium) y virus atraviesan los poros. La ebullición continua a 100°C desnaturaliza las proteínas de los patógenos, inactivando el 99.9% de los microorganismos."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Error fatal: Beber el agua transparente sin hervirla al fuego",
-    "description": "El carbón y la arena solo limpian el barro visible y el mal olor. Los microbios y parásitos microscópicos que causan vómitos y diarrea siguen vivos en el agua. Aunque el agua parezca limpia y fresca, beberla sin hervir te provocará fuertes dolores y deshidratación peligrosa en pocas horas.",
-    "consequence": "Consecuencia: Infección grave, diarrea severa y deshidratación mortal en la naturaleza"
+    "title": "Error fatal: Beber el agua filtrada transparente sin hervirla térmicamente",
+    "description": "El carbón y la arena solo retienen el lodo visible y el mal olor. Los parásitos y bacterias microscópicas siguen vivos en el agua. Aunque parezca limpia y fría, beberla sin hervir provoca gastroenteritis severa en pocas horas, causando deshidratación grave en la naturaleza.",
+    "consequence": "Resultado: Infección gastrointestinal severa y deshidratación letal en supervivencia"
   },
   "shortsScript": {
-    "hook": "¡Beber agua con barro en la naturaleza te causará diarrea grave en 3 días! ¡Mira cómo hacer un filtro natural!",
-    "body": "Monta un trípode de ramas, cuelga un cono y tapa el fondo con musgo. Pon 8 cm de carbón partido, 6 cm de arena limpia y 4 cm de piedritas. ¡Vierte el agua con barro! Tira las 2 primeras tazas porque limpian el polvo de carbón. El secreto más importante: ¡agua transparente no significa agua segura! Tienes que hervirla durante 3 minutos completos con burbujas grandes para matar todos los bichitos invisibles.",
-    "outro": "Consigue los esquemas de supervivencia sin internet en el enlace de mi perfil."
+    "hook": "¡Beber agua con lodo en la naturaleza causará diarrea letal en 3 días! ¡Mira cómo purificarla sin plástico!",
+    "body": "Monta un trípode, cuelga un cono y tapa la base con musgo. Coloca 8 cm de carbón partido, 6 cm de arena limpia y 4 cm de piedritas. ¡Vierte el agua turbia! Tira las 2 primeras tazas de lavado con polvo de carbón. Regla crítica: ¡Agua transparente NO significa agua segura! Debes hervirla enérgicamente durante 3+ minutos para destruir microbios invisibles.",
+    "outro": "Consigue los manuales de supervivencia sin internet en el enlace de mi perfil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
     "title": "Filtro natural de carbón y arena terminado",
-    "description": "Estructura completa de filtración colgada de un trípode de ramas con capas de carbón, arena limpia, piedritas y tapón de musgo que convierten el agua marrón en agua cristalina lista para hervir y beber."
+    "description": "Columna de filtración rústica suspendida en un trípode de ramas con capas de carbón, arena limpia, piedritas y tapón de musgo que convierten agua turbia en agua cristalina apta para hervir y beber."
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T14:24:23+09:00",
-  "contentHash": "cf7d15c276ffaa84"
+  "updatedAt": "2026-10-15T15:07:21+09:00",
+  "contentHash": "1b359d82ef52723f"
 }

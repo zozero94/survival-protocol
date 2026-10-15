@@ -22,24 +22,58 @@ export interface PlainKoreanReport {
  * 초등 5~6학년도 0.5초 만에 이해할 수 있는 직관적인 행동 묘사로 검증합니다.
  */
 export class PlainKoreanEditorService {
+  // 유아어 및 동화풍 표현 (테크니컬 라이팅 위반 어휘)
+  public static readonly FLUFF_MAP: Array<{ regex: RegExp; word: string; suggestion: string; reason: string }> = [
+    {
+      regex: /쏙\s*빨아|쏙쏙/g,
+      word: '쏙 빨아들임 / 쏙쏙',
+      suggestion: '흡수함 / 걸러냄',
+      reason: '유아용 의성어·동화풍 표현 대신 간결한 직관적 동작어를 사용해야 합니다.'
+    },
+    {
+      regex: /나쁜\s*벌레/g,
+      word: '나쁜 벌레',
+      suggestion: '미세 세균 / 병원균',
+      reason: '유아어 표현 대신 정확하고 직관적인 단어를 써야 합니다.'
+    },
+    {
+      regex: /살포시/g,
+      word: '살포시',
+      suggestion: '천천히 / 조심스럽게',
+      reason: '불필요한 감성적 미사여구입니다.'
+    },
+    {
+      regex: /꿀꺽꿀꺽/g,
+      word: '꿀꺽꿀꺽',
+      suggestion: '안전하게 마심',
+      reason: '유아용 의태어입니다.'
+    },
+    {
+      regex: /와르르/g,
+      word: '와르르',
+      suggestion: '한꺼번에 쏟아짐',
+      reason: '동화풍 의태어입니다.'
+    }
+  ];
+
   // 난해한 전문 용어 및 권장 일상어 사전
   public static readonly JARGON_MAP: Array<{ regex: RegExp; word: string; suggestion: string; reason: string }> = [
     {
       regex: /다공성|미세\s*기공/g,
       word: '다공성 / 미세 기공',
-      suggestion: '스펀지 구멍처럼 냄새를 쏙 빨아들이는 미세한 구멍',
+      suggestion: '냄새와 오염 물질을 붙잡는 미세 구멍',
       reason: '초등학생이 직관적으로 떠올리기 어려운 물리·화학 전문 용어입니다.'
     },
     {
       regex: /활성탄\s*흡착/g,
       word: '활성탄 흡착',
-      suggestion: '숯이 나쁜 냄새와 찌꺼기를 쏙 빨아들임',
-      reason: '흡착이라는 물리 화학적 개념보다 빨아들인다는 오감 행동어가 적합합니다.'
+      suggestion: '숯이 냄새와 불순물을 흡수하여 걸러냄',
+      reason: '흡착이라는 물리 화학적 개념보다 흡수하여 걸러낸다는 직관적 동작어가 적합합니다.'
     },
     {
       regex: /비등\s*멸균|100℃\s*비등|열\s*멸균/g,
       word: '비등 멸균 / 열 멸균',
-      suggestion: '큰 거품이 콸콸 솟구치도록 펄펄 끓여서 세균 죽이기',
+      suggestion: '큰 거품이 일도록 펄펄 끓여서 세균 죽이기',
       reason: '비등(Boiling), 멸균(Sterilization)은 초등학생에게 난해한 한자 전문어입니다.'
     },
     {
@@ -57,7 +91,7 @@ export class PlainKoreanEditorService {
     {
       regex: /지아디아|크립토스포리디움|병원체|병원균/g,
       word: '지아디아 / 크립토스포리디움 / 병원체',
-      suggestion: '배탈과 설사를 일으키는 눈에 안 보이는 나쁜 벌레(세균)',
+      suggestion: '배탈과 설사를 일으키는 미세 세균',
       reason: '라틴어 기생충 명칭은 공포감만 주고 실질적 대처 행동을 방해합니다.'
     },
     {
@@ -104,7 +138,7 @@ export class PlainKoreanEditorService {
   public static auditText(text: string): { passed: boolean; issues: JargonIssue[] } {
     const issues: JargonIssue[] = [];
 
-    for (const item of this.JARGON_MAP) {
+    for (const item of [...this.JARGON_MAP, ...this.FLUFF_MAP]) {
       if (item.regex.test(text)) {
         // 일치 부분 스니펫 추출
         const match = text.match(item.regex);
