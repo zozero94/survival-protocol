@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Bow Drill Friction Fire Method",
+  "title": "How to Make Fire with Friction (Bow Drill Method)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[THREAT LEVEL: CRITICAL]",
-  "summary": "A primitive pyrotechnology protocol using mechanical friction between dry softwood and a bow drill to generate carbon dust embers exceeding 400°C, followed by concentrated aeration to achieve ignition.",
+  "summary": "A vital primitive survival technique to create fire using dry branches and cordage without matches or lighters. Sawing the bow back and forth rapidly spins the center spindle, generating 400°C glowing coal dust through friction. Transferring this coal into a dry tinder nest and blowing gently ignites an open 600°C flame.",
   "timeRequired": "20 MINUTES",
   "successRate": "85% (Dry Timber)",
   "difficulty": "Tier 2 (Skilled Primitive)",
@@ -12,26 +12,26 @@
   "materials": [
     {
       "id": "mat-01",
-      "name": "Bow & Vine String (BOW & STRING)",
-      "desc": "Flexible hardwood limb (ash/hazel, 60-70cm) and durable wild kudzu vine cord"
+      "name": "Bow Stick & Heavy-Duty Cord",
+      "desc": "A 60-70cm slightly curved sturdy branch lashed with tough wild vine cord or rawhide string to drive the spindle."
     },
     {
       "id": "mat-02",
-      "name": "Rotational Spindle (SPINDLE)",
-      "desc": "Straight 2cm dia x 20cm dry cedar or willow shaft. Blunt top, 45-degree tapered bottom."
+      "name": "Center Spindle Stick (Drill)",
+      "desc": "A thumb-thick (2cm diameter), 25cm long straight bone-dry wooden rod tapered to a pencil point on the lower friction tip."
     },
     {
       "id": "mat-03",
-      "name": "Hearth Board & Tinder Nest (HEARTH & TINDER)",
-      "desc": "15-20mm thick hearth board with 45° V-notch, ember collection leaf, and dry tinder nest"
+      "name": "Hearth Board & Dry Tinder Nest",
+      "desc": "A 1.5-2cm thick flat dry softwood board paired with a bird's-nest bundle of dry grass and reed down to catch the ember."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "V-Notch Carving & Spindle Axis Seating",
-      "description": "Carve a precise 45-degree V-notch from the outer edge of the hearth board penetrating directly to the socket center. Place a dry ember collector leaf beneath to trap hot carbon dust.",
-      "actionNote": "> Field Rule: If the notch angle exceeds 60 degrees, thermal dissipation will prevent the dust from reaching the 400°C ignition threshold.",
+      "title": "Step 1: Carve a 45-degree V-notch in the hearth board",
+      "description": "1. **Spindle Socket Seating**: Press and spin the drill tip **1-1.5cm inward** from the hearth board edge to burn in a small circular depression.\n2. **45-Degree V-Notch Carving**: Use a stone knife to slice a pizza-wedge-shaped **45-degree V-notch** from the board edge directly to the socket center.\n3. **Base Collector Placement**: Tuck a flat, dry wide leaf directly beneath the notch to catch all falling hot carbon dust.",
+      "actionNote": "> Notch Alignment: The apex of the V-notch must touch the exact center of the drill hole. If misaligned, hot wood dust cannot exit and gets trapped around the spindle, preventing ember formation.",
       "svgFileName": "02-step-01.svg",
       "svgLabels": [
         "EMBER CATCHER LEAF [DRY BARK/LEAF]",
@@ -43,13 +43,18 @@
         "CRITICAL SETUP RULE:",
         "Notch apex must touch spindle axis center",
         "CARBON DUST ACCUMULATION ZONE (EMBER BED)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "V-Notch Oxygen Draft & Carbon Dust Coalescence Dynamics",
+        "text": "Inside a round closed socket, lack of airflow suffocates carbonization. The 45-degree wedge notch creates an aerodynamic vent that draws in fresh oxygen while channeling **400°C+ pulverized charcoal** into a dense, self-insulating pile that coalesces into a living ember."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "90° Downward Load & High-Speed Reciprocating Sawing",
-      "description": "Anchor the hearth board firmly with your left foot and apply 12-15kg downward load using the bearing block. Saw the bow horizontally with full-length strokes at 300-400 RPM until dense white smoke bursts.",
-      "actionNote": "> Field Rule: Do not stop when smoke first appears. Continue 10-15 full-power acceleration strokes to ensure complete carbonization in the notch.",
+      "title": "Step 2: Press down with body weight and saw the bow full length",
+      "description": "1. **Single Cord Wrap**: Wrap the bowstring **once completely around** the spindle to maintain tight, non-slip friction.\n2. **12-15kg Downward Pressure**: Step firmly on the hearth board with your left foot and press down on the spindle top with a bearing block using **12-15kg of vertical body weight**.\n3. **Full-Stroke Sawing**: Keep the bow horizontal and saw back and forth using the full length of the stick. Start smooth and steady.\n4. **Smoke Acceleration Burst**: When thick white smoke billows out, accelerate to maximum effort for the **final 5 seconds with 15+ rapid strokes**.",
+      "actionNote": "> Thermal Threshold: Never stop at the first trace of smoke. You must maintain 10-15 powerful acceleration strokes after dense smoke appears to cross the 400°C ignition threshold.",
       "svgFileName": "02-step-02.svg",
       "svgLabels": [
         "BEARING BLOCK (HAND SOCKET)",
@@ -63,13 +68,18 @@
         "Ignition Temp: 400°C+",
         "Load: Start 30% → Final 100%",
         "Stroke: Use 100% Bow Length"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Mechanical Friction Conversion and 400°C Carbonization Limit",
+        "text": "Reciprocating kinetic energy from the bow converts instantaneously into thermal heat at the microscopic contact point. Wood begins charring at **250°C**, but sustained self-heating coals require the contact interface to surpass **400°C** under dense packing."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Ember Transfusion & Gentle Aeration Ignition",
-      "description": "Allow the smoking carbon dust to coalesce into a cohesive coal for 30 seconds. Carefully transfer it into the center of a dry tinder nest, cup at a 45-degree elevation, and supply steady, gentle breaths to ignite flame.",
-      "actionNote": "> Field Rule: Hold the nest at a 45-degree angle slightly above eye level. Rising thermal updrafts double oxygen intake while keeping smoke away from eyes.",
+      "title": "Step 3: Transfer ember into tinder nest and elevate 45 degrees to ignite",
+      "description": "1. **Ember Coalescence Delay**: Stop sawing and let the smoking black dust rest untouched on the base leaf for **30 seconds** until it fuses into a solid glowing coal.\n2. **Tinder Nest Deposition**: Form dry grass into a cup-shaped bird's nest and gently dump the ember block into the core.\n3. **45-Degree Elevation**: Hold the nest at a **45-degree angle** slightly above eye level and blow **long, gentle breaths** directly into the coal.\n4. **Flame Flashover**: Oxygen fans the glow until an open **600°C flame** bursts within **15-20 seconds**; immediately transfer to your prepared campfire kindling.",
+      "actionNote": "> Updraft Angle Rule: Holding the tinder nest at a 45-degree elevation prevents smoke from stinging your eyes while convective updrafts preheat surrounding fibers, doubling ignition reliability.",
       "svgFileName": "02-step-03.svg",
       "svgLabels": [
         "EMBER CORE (450°C)",
@@ -83,13 +93,18 @@
         "400°C CARBON SMOLDER POINT",
         "Coalesce 30s & Transfer (0s)",
         "Flame Ignition (15~20s)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD AERODYNAMICS",
+        "title": "Convective Heat Transfer and 600°C Flame Phase Transition",
+        "text": "The 450°C coal is a solid-state smoldering mass. Supplying a laminar stream of gentle oxygen drives off volatile carbon monoxide and wood gases. As local temperature exceeds **600°C**, gas-phase combustion takes over, erupting into a self-sustaining open flame."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Never blow rashly on premature uncoalesced embers",
-    "description": "Blowing prematurely on loose carbon dust will scatter the delicate ember particles, extinguishing the core heat immediately.",
-    "consequence": "Failure to start a fire in wilderness freezing conditions leads to irreversible hypothermia and death within 72 hours."
+    "title": "Critical Mistake: Blowing rashly on loose, freshly formed ember dust",
+    "description": "Blowing hard on the black dust immediately after stopping will blow the uncoalesced particles away, scattering heat and extinguishing the core instantaneously.",
+    "consequence": "Remedy: When smoke rises from the dust pile, wait 30 seconds for the embers to fuse into a solid glowing coal before transferring to tinder."
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
@@ -97,6 +112,6 @@
     "description": "A glowing 400°C charcoal ember generated in the 45° V-notch smoking heavily, transferred safely into a dry tinder nest and fanned into an open flame."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "07c74b6366705dce"
+  "updatedAt": "2026-10-15T15:45:00+09:00",
+  "contentHash": "006f8f1c7593c632"
 }

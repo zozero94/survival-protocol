@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Feuerbohren durch Reibungswärme (Bow Drill)",
+  "title": "Feuer machen durch Holzreibung (Bogenbohrer-Methode)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
-  "summary": "Primitive Pyrotechnik, die durch mechanische Reibung zwischen trockenem Weichholz und einer Bogenspindel über 400°C heiße Glutkohle erzeugt und durch gezielte Sauerstoffzufuhr entzündet.",
+  "summary": "Eine grundlegende Überlebenstechnik, um mit trockenen Ästen und einer Schnur ohne Streichhölzer oder Feuerzeug Feuer zu machen. Durch das Vor- und Zurückbewegen des Bogens dreht sich die Spindel rasend schnell und erzeugt durch Reibung 400°C heißen glimmenden Kohlestaub. Wird diese Glut in ein trockenes Grasnest gebettet und sanft angeblasen, entflammt ein 600°C heißes offenes Feuer.",
   "timeRequired": "20 MINUTEN",
   "successRate": "85% (Trockenholz)",
   "difficulty": "Stufe 2 (Fortgeschrittene Technik)",
@@ -12,26 +12,26 @@
   "materials": [
     {
       "id": "mat-01",
-      "name": "Bogenstab & Pflanzenfasersehne (BOW & STRING)",
-      "desc": "60–70 cm langer, leicht gebogener Hartholzast (Esche/Hasel) und reißfeste Naturfaserschnur."
+      "name": "Bogenstab und reißfeste Natursehne",
+      "desc": "Ein 60~70cm langer, leicht gebogener stabiler Ast mit einer Schnur aus Baumrinde oder Tierhaut, um die Spindel kraftvoll anzutreiben."
     },
     {
       "id": "mat-02",
-      "name": "Rotationsspindel (SPINDLE)",
-      "desc": "Gerader Zylinder (Ø 20 mm) aus trockener Zeder oder Weide. Oben abgerundet, unten 45°-Kegel."
+      "name": "Mittlere Drehspindel (Bohrstab)",
+      "desc": "Ein daumendicker (ca. 2cm Durchmesser), 25cm langer, gerader und knochentrockener Ast, unten wie ein Bleistift zugespitzt."
     },
     {
       "id": "mat-03",
-      "name": "Feuerbrett mit V-Kerbe & Zundernest (HEARTH & TINDER)",
-      "desc": "15–20 mm dickes Feuerbrett mit 45° V-Kerbe, Glutauffangblatt und trockenem Zundernest."
+      "name": "Bodenfeuerbrett und trockenes Grasnest",
+      "desc": "Ein 1.5~2cm dickes, flaches und trockenes Holzbrett sowie ein vogelnestartiges Bündel aus trockenem Gras und Schilfwolle."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "45° V-Kerben-Zuschnitt & Spindelzentrierung",
-      "description": "Schnitzen Sie eine präzise 45-Grad-V-Kerbe von der Vorderkante des Feuerbretts exakt bis zum Mittelpunkt der Spindelbohrung. Legen Sie ein trockenes Blatt als Glutauffang darunter.",
-      "actionNote": "> Feldregel: Überschreitet der Kerbenwinkel 60 Grad, entweicht die Wärme und der Zündpunkt von 400°C wird nicht erreicht.",
+      "title": "Schritt 1: Eine 45-Grad-V-Kerbe in das Feuerbrett schnitzen",
+      "description": "1. **Ansatzloch eindrehen**: Drücken und drehen Sie die Spindelspitze **1~1.5cm vom Brettrand** entfernt ein, um eine flache Mulde einzubrennen.\n2. **45-Grad-V-Kerbe einschneiden**: Schneiden Sie mit einem Steinmesser eine pizzastückförmige **45-Grad-V-Kerbe** vom Rand bis exakt zur Mitte der Mulde.\n3. **Auffangblatt unterlegen**: Legen Sie ein breites, trockenes Blatt direkt unter die Kerbe, um den herabfallenden heißen Kohlestaub sauber aufzufangen.",
+      "actionNote": "> Kerbengenauigkeit: Die Spitze der V-Kerbe muss exakt die Mitte der Mulde treffen. Weicht sie ab, kann das heiße Pulver nicht austreten, staut sich um den Stab und bildet keine Glut.",
       "svgFileName": "02-step-01.svg",
       "svgLabels": [
         "GLUTAUFFANGBLATT [RINDENBASIS]",
@@ -43,13 +43,18 @@
         "KRITISCHE AUFBAUREGEL:",
         "V-Kerbenspitze muss Achszentrum berühren",
         "KOHLESTAUB-SAMMELZONE (GLUTBETT)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Belüftungs- und Sammeldynamik der keilförmigen V-Kerbe",
+        "text": "In einem geschlossenen Rundloch erstickt der Sauerstoffmangel die Verkohlung. Die 45-Grad-V-Kerbe saugt kontinuierlich frischen Sauerstoff an und sammelt den über **400°C heißen** Kohlestaub an einem Punkt, sodass er zu einem eigenständigen Glutkern verschmilzt."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "90° Vertikaldruck & Vollhub-Hochgeschwindigkeitsrotation",
-      "description": "Fixieren Sie das Feuerbrett mit dem linken Fuß und üben Sie über das Drucklager 12–15 kg Vertikallast aus. Bewegen Sie den Bogen waagerecht über die volle Länge (300–400 RPM), bis dichter weißer Rauch aufsteigt.",
-      "actionNote": "> Feldregel: Nicht beim ersten Rauch stoppen! Mindestens 10–15 kraftvolle Endhübe durchführen, damit der Kohlestaub vollständig verschmilzt.",
+      "title": "Schritt 2: Mit Körpergewicht andrücken und den Bogen lang sägen",
+      "description": "1. **Sehne 1-mal umwickeln**: Wickeln Sie die Bogensehne **1 volle Umdrehung** fest um die Spindel, damit sie nicht rutscht.\n2. **12~15kg Vertikaldruck**: Treten Sie mit dem linken Fuß fest auf das Brett und drücken Sie die Spindelspitze mit dem Handstück mit **12~15kg Körpergewicht** senkrecht nach unten.\n3. **Volle Hublänge sägen**: Halten Sie den Bogen waagerecht und ziehen und schieben Sie ihn über die gesamte Länge gleichmäßig hin und her.\n4. **Endspurt bei dichter Rauchentwicklung**: Sobald dicker weißer Rauch quillt, beschleunigen Sie in den **letzten 5 Sekunden mit 15+ kraftvollen Zügen** auf Höchstgeschwindigkeit.",
+      "actionNote": "> Hitzeschwelle durchbrechen: Hören Sie nicht auf, nur weil etwas Rauch aufsteigt. Erst wenn 10~15 kraftvolle Züge nach dichtem Rauchaustritt durchgezogen werden, erreicht der Staub die 400°C Zündtemperatur.",
       "svgFileName": "02-step-02.svg",
       "svgLabels": [
         "DRUCKLAGER (HANDSTÜCK)",
@@ -63,13 +68,18 @@
         "Zündtemp.: 400°C+",
         "Druck: Start 30% → Ende 100%",
         "Hub: 100% Bogenlänge nutzen"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Umwandlung mechanischer Energie in Reibungswärme bei 400°C",
+        "text": "Die Hin- und Herbewegung des Bogens wandelt sich an der winzigen Kontaktfläche schlagartig in thermische Hitze um. Holz beginnt bei **250°C** zu verkohlen, doch ein sich selbst erhaltender glimmender Glutkern entsteht erst, wenn die Kontaktzone **400°C überschreitet**."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Glutkern-Einbettung & Sanfte Belüftungszündung (600°C)",
-      "description": "Lassen Sie den glimmenden Kohlestaub 30 Sekunden lang zu einem festen Glutkern (450°C) reifen. Betten Sie ihn in das Zundernest um, halten Sie es im 45°-Winkel und blasen Sie sanft bis zur Flammenzündung bei 600°C.",
-      "actionNote": "> Feldregel: Zundernest im 45°-Winkel leicht über Augenhöhe halten – der thermische Aufwind verdoppelt die Sauerstoffzufuhr.",
+      "title": "Schritt 3: Glut ins Zundernest legen, um 45 Grad neigen und anfachen",
+      "description": "1. **Glutkern ruhen lassen**: Halten Sie an und lassen Sie den rauchenden Kohlestaub auf dem Blatt für **30 Sekunden unberührt** ruhen, bis er zu einem festen Glutklumpen zusammenbackt.\n2. **Ins Zundernest betten**: Formen Sie aus trockenem Gras ein schalenförmiges Vogelnest und schütten Sie den Glutkern vorsichtig in die Mitte.\n3. **45-Grad-Neigung**: Halten Sie das Nest im **45-Grad-Winkel** leicht über Augenhöhe und blasen Sie **lang und sanft** direkt in die Glut.\n4. **Flammenausbruch**: Der Sauerstoff facht das Glühen an, bis innerhalb von **15~20 Sekunden eine 600°C heiße Flamme** emporlodert; setzen Sie diese sofort in das vorbereitete Reisigfeuer.",
+      "actionNote": "> Steigungswinkel-Regel: Das Nest um 45 Grad über Augenhöhe zu halten verhindert, dass Rauch in die Augen sticht. Zudem heizt die aufsteigende Konvektionswärme die umgebenden Fasern vor und verdoppelt die Zündwahrscheinlichkeit.",
       "svgFileName": "02-step-03.svg",
       "svgLabels": [
         "GLUTKERN (450°C)",
@@ -83,13 +93,18 @@
         "400°C GLIMMPUNKT (KOHLE)",
         "30s Reifen & Einsetzen (0s)",
         "Flammenausbruch (15~20s)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD AERODYNAMICS",
+        "title": "Konvektiver Wärmeübergang und Phasenübergang zur 600°C Flamme",
+        "text": "Der 450°C Glutkern ist feste glimmende Kohle. Sanft zugeführter Sauerstoff treibt Kohlenmonoxid und brennbare Holzgase aus. Sobald die Temperatur **600°C erreicht**, geht die Glimmverbrennung schlagartig in eine gasförmige offene Flamme über."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Niemals hastig in unfertigen Kohlestaub blasen",
-    "description": "Wer sofort nach dem Bohren stark auf das lose schwarze Pulver bläst, zerstreut die feinen Kohlepartikel im Wind und löscht die Kernwärme augenblicklich.",
-    "consequence": "Ein Scheitern der Feuerzündung bei Kälte beschleunigt das Absinken der Körperkerntemperatur und führt binnen 72 Stunden zum Tod durch Unterkühlung."
+    "title": "Tödlicher Fehler: Hastig und stark in den frisch entstandenen Kohlestaub blasen",
+    "description": "Wer sofort nach dem Bohren heftig auf das lose schwarze Pulver bläst, verweht die noch ungebundenen Kohleteilchen im Wind und löscht die Kernhitze augenblicklich aus.",
+    "consequence": "Gegenmaßnahme: Wenn Rauch aus dem Pulver aufsteigt, berühren Sie es nicht, sondern warten Sie 30 Sekunden, bis es sich zu einem festen Glutkern verdichtet hat."
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
@@ -97,6 +112,6 @@
     "description": "Eine 400°C heiße Holzkohleglut aus der 45°-V-Kerbe, die sicher in das trockene Zundernest überführt und zu einer offenen Flamme entfacht wurde."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "07c74b6366705dce"
+  "updatedAt": "2026-10-15T15:45:00+09:00",
+  "contentHash": "006f8f1c7593c632"
 }

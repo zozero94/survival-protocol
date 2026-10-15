@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Fogo por Fricção com Arco e Fuso (Bow Drill)",
+  "title": "Como Fazer Fogo por Fricção com Galhos (Método do Arco)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
-  "summary": "Tecnologia primitiva de ignição que utiliza o atrito mecânico entre madeira macia seca e um fuso rotativo para gerar brasa de carvão acima de 400°C, seguida de oxigenação controlada.",
+  "summary": "Uma técnica essencial de sobrevivência para fazer fogo usando galhos secos e uma corda sem fósforos ou isqueiro. Ao puxar e empurrar o arco para frente e para trás, o fuso gira em alta velocidade gerando pó de carvão em brasa a 400°C por atrito. Colocando essa brasa em um ninho de palha seca e soprando suavemente, surge uma chama viva a 600°C.",
   "timeRequired": "20 MINUTOS",
   "successRate": "85% (Madeira Seca)",
   "difficulty": "Nível 2 (Habilidade Técnica)",
@@ -12,26 +12,26 @@
   "materials": [
     {
       "id": "mat-01",
-      "name": "Arco e Corda de Fibra Natural (BOW & STRING)",
-      "desc": "Galho resistente de 60-70 cm (freixo/aveleira) e corda firme de fibra natural de kudzu."
+      "name": "Arco e corda natural resistente",
+      "desc": "Galho firme e levemente curvo de 60~70cm com corda de fibras de cipó ou couro para tracionar o fuso com força."
     },
     {
       "id": "mat-02",
-      "name": "Fuso Rotativo (SPINDLE)",
-      "desc": "Haste cilíndrica reta de cedro ou salgueiro seco (Ø 20 mm). Topo arredondado, ponta inferior a 45°."
+      "name": "Fuso giratório central",
+      "desc": "Galho reto e bem seco da grossura do polegar (cerca de 2cm de diâmetro) e 25cm de comprimento. Ponta inferior afiada como lápis."
     },
     {
       "id": "mat-03",
-      "name": "Prancha Base com Entalhe V e Isca (HEARTH & TINDER)",
-      "desc": "Prancha de 15-20 mm com entalhe em V de 45°, folha coletora de brasa e ninho de fibras secas."
+      "name": "Prancha base e ninho de palha seca",
+      "desc": "Prancha de madeira seca e plana de 1.5~2cm de espessura com ninho em forma de taça feito de capim seco para acolher a brasa."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Entalhe em V de 45° e Assentamento do Eixo do Fuso",
-      "description": "Esculpa um entalhe em V de 45 graus da borda frontal da prancha até o centro exato do soquete do fuso. Posicione uma folha seca abaixo da abertura para acumular o pó de carvão quente.",
-      "actionNote": "> Regra de Campo: Se o ângulo do entalhe passar de 60°, o calor se dissipa e o pó nunca atingirá o ponto de ignição de 400°C.",
+      "title": "Passo 1: Esculpir entalhe em V de 45 graus na prancha base",
+      "description": "1. **Fazer depressão inicial**: Pressione e gire a ponta do fuso a **1~1.5cm da borda** da prancha para queimar uma pequena cavidade.\n2. **Cortar entalhe em V de 45 graus**: Com uma faca de pedra, abra um entalhe em V de **45 graus** em formato de fatia de pizza, da borda até o centro da cavidade.\n3. **Posicionar folha coletora**: Coloque uma folha larga e seca logo abaixo do entalhe para recolher todo o pó de carvão quente sem derramar.",
+      "actionNote": "> Alinhamento do entalhe: A ponta do entalhe em V deve tocar exatamente o centro da cavidade. Se desviar, o pó quente não sai, fica preso ao redor do fuso e não forma brasa.",
       "svgFileName": "02-step-01.svg",
       "svgLabels": [
         "FOLHA COLETORA [BASE DE BRASA]",
@@ -43,13 +43,18 @@
         "REGRA CRÍTICA DE MONTAGEM:",
         "O vértice em V deve tocar o centro do eixo",
         "ZONA DE ACÚMULO DE PÓ DE CARVÃO (BRASA)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Dinâmica de aeração e aglomeração de pó de carvão no entalhe em V",
+        "text": "Em um furo redondo fechado, a falta de ar sufoca a queima. O entalhe em V de 45° atua como conduto de ventilação que aspira oxigênio fresco e canaliza o pó a **mais de 400°C** para um ponto compacto, formando uma brasa consolidada."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "Carga Vertical de 90° e Rotação Recíproca de Curso Total",
-      "description": "Trave a prancha com o pé esquerdo e aplique 12-15 kg de pressão vertical no bloco de apoio. Movimente o arco horizontalmente usando 100% do comprimento a 300-400 RPM até emitir fumaça branca densa.",
-      "actionNote": "> Regra de Campo: Não pare na primeira fumaça. Execute mais 10 a 15 cursos em potência máxima para fundir a brasa no entalhe.",
+      "title": "Passo 2: Pressionar com peso do corpo e serrar o arco em curso total",
+      "description": "1. **Dar 1 volta com a corda**: Enrole a corda do arco **1 volta completa** em torno do fuso para obter tração firme sem derrapar.\n2. **Pressão vertical de 12~15kg**: Pise firme na prancha com o pé esquerdo e empurre o topo do fuso com o bloco de apoio usando **12~15kg de peso corporal** vertical.\n3. **Serrar em curso total**: Mantenha o arco na horizontal e empurre-puxe de ponta a ponta com ritmo uniforme em todo o comprimento.\n4. **Arrancada final com fumaça**: Quando fumaça branca densa brotar, acelere ao máximo nos **últimos 5 segundos com mais de 15 passadas rápidas**.",
+      "actionNote": "> Ultrapassagem do limite térmico: Não pare assim que a fumaça surgir. É essencial manter 10~15 passadas vigorosas adicionais após a fumaça densa para atingir o limiar de ignição de 400°C.",
       "svgFileName": "02-step-02.svg",
       "svgLabels": [
         "BLOCO DE APOIO (SOQUETE MANUAL)",
@@ -63,13 +68,18 @@
         "Temp. Ignição: 400°C+",
         "Pressão: Início 30% → Final 100%",
         "Curso: 100% do Arco"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Conversão de energia mecânica em atrito térmico e limite a 400°C",
+        "text": "A energia cinética do vaivém do arco se converte em calor extremo na microárea de atrito. A madeira começa a escurecer a **250°C**, mas para formar uma brasa capaz de sustentar a queima, a zona de contato deve superar obrigatoriamente os **400°C**."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Transplante da Brasa e Sopro Suave de Ignição (600°C)",
-      "description": "Aguarde 30 segundos para o pó fumegante coalescer em uma brasa firme (450°C). Transfira para o centro do ninho de isca, eleve a 45° e sopre de forma suave e contínua até romper em chama a 600°C.",
-      "actionNote": "> Regra de Campo: Segure o ninho a 45° acima da linha dos olhos; a corrente térmica ascendente dobra a oxigenação e afasta a fumaça.",
+      "title": "Passo 3: Passar a brasa para o ninho de isca e soprar a 45 graus para acender",
+      "description": "1. **Aguardar união da brasa**: Pare o arco e deixe o monte de pó preto descansar sobre a folha por **30 segundos** sem tocar, até se aglutinar em uma brasa sólida.\n2. **Acomodar no ninho de isca**: Molde o capim seco em formato de ninho de pássaro e despeje cuidadosamente a brasa no centro.\n3. **Inclinar a 45 graus**: Levante o ninho a um ângulo de **45 graus** um pouco acima dos olhos e sopre de forma **longa e suave** diretamente na brasa.\n4. **Ignição em chama aberta**: O oxigênio aviva a brasa e em **15~20 segundos** irrompe uma forte **chama a 600°C**; transfira imediatamente para a fogueira preparada.",
+      "actionNote": "> Regra de ângulo de elevação: Erguer o ninho a 45° acima dos olhos evita que a fumaça irrite a visão e permite que a corrente de calor ascendente pré-aqueça as fibras da isca, dobrando o sucesso do fogo.",
       "svgFileName": "02-step-03.svg",
       "svgLabels": [
         "NÚCLEO BRASA (450°C)",
@@ -83,13 +93,18 @@
         "400°C PONTO DE BRASA ATIVA",
         "30s Coesão e Transplante (0s)",
         "Ignição Chama (15~20s)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD AERODYNAMICS",
+        "title": "Transferência convectiva de calor e transição de fase para chama a 600°C",
+        "text": "A brasa a 450°C é uma massa sólida incandescente. O fluxo suave de ar libera monóxido de carbono e gases inflamáveis da madeira. Quando a temperatura local atinge **600°C**, a queima passa para a fase gasosa, gerando chamas abertas."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Nunca sopre com força sobre a brasa recém-formada",
-    "description": "Soprar precipitadamente sobre o pó de carvão solto espalhará as partículas incandescentes pelo ar, extinguindo a fonte de calor instantaneamente.",
-    "consequence": "A falha na obtenção de fogo em ambiente frio acelera a queda da temperatura corporal central, levando à morte por hipotermia em 72 horas."
+    "title": "Erro fatal: Soprar forte e com pressa sobre o pó de brasa recém-formado",
+    "description": "Soprar com força logo após parar o arco espalhará as partículas de carvão ainda soltas pelo ar, apagando o núcleo de calor instantaneamente.",
+    "consequence": "Solução: Quando o pó começar a soltar fumaça, não toque nele e aguarde 30 segundos até que se compacte em uma brasa antes de mover para a isca."
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
@@ -97,6 +112,6 @@
     "description": "Uma brasa incandescente a 400°C gerada na ranhura em V, transferida com sucesso para o ninho de mecha seca e soprada até formar chamas vivas."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "07c74b6366705dce"
+  "updatedAt": "2026-10-15T15:45:00+09:00",
+  "contentHash": "006f8f1c7593c632"
 }

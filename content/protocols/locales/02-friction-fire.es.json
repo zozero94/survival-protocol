@@ -1,10 +1,10 @@
 {
   "protocolId": "PR-02",
   "category": "FIRE",
-  "title": "Fuego por Fricción con Arco Táctico (Bow Drill)",
+  "title": "Cómo hacer fuego por fricción con ramas (Método del taladro de arco)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
-  "summary": "Técnica pirotécnica primitiva que utiliza la fricción mecánica entre madera blanda seca y un huso giratorio para generar brasas de carbón a más de 400°C, seguida de oxigenación controlada.",
+  "summary": "Una técnica esencial de supervivencia para encender fuego con ramas secas y cuerda sin fósforos ni encendedor. Al mover el arco hacia adelante y atrás, el huso gira a gran velocidad generando polvo de carbón incandescente a 400°C por fricción. Al colocar esta brasa en un nido de hierba seca y soplar suavemente, brota una gran llama a 600°C.",
   "timeRequired": "20 MINUTOS",
   "successRate": "85% (Madera Seca)",
   "difficulty": "Nivel 2 (Habilidad Técnica)",
@@ -12,26 +12,26 @@
   "materials": [
     {
       "id": "mat-01",
-      "name": "Arco y Cuerda de Fibra Natural (BOW & STRING)",
-      "desc": "Rama firme y flexible de 60-70 cm (fresno/avellano) y cuerda resistente de fibra de kudzu."
+      "name": "Arco y cuerda natural resistente",
+      "desc": "Rama flexible y firme de 60~70cm con cuerda de fibras de enredadera o cuero para accionar el huso con fuerza."
     },
     {
       "id": "mat-02",
-      "name": "Huso Giratorio (SPINDLE)",
-      "desc": "Cilindro recto de cedro o sauce seco de Ø 20 mm. Extremo superior romo, punta inferior a 45°."
+      "name": "Huso giratorio central",
+      "desc": "Rama recta y muy seca del grosor del pulgar (unos 2cm de diámetro) y 25cm de largo. Punta afilada como lápiz."
     },
     {
       "id": "mat-03",
-      "name": "Tabla Base con Muesca V y Yesca (HEARTH & TINDER)",
-      "desc": "Tabla de 15-20 mm con muesca en V de 45°, hoja recolectora y nido de yesca seca."
+      "name": "Tabla base y nido de hierba seca",
+      "desc": "Tabla de madera plana y seca de 1.5~2cm de grosor junto a un nido de hierba seca para recibir y envolver la brasa."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Tallado de Muesca en V (45°) y Asiento del Huso",
-      "description": "Talle una muesca en V precisa de 45 grados desde el borde exterior de la tabla hasta el centro exacto del eje del huso. Coloque una hoja seca debajo para recoger el polvo de carbón caliente.",
-      "actionNote": "> Regla de Campo: Si el ángulo de la muesca supera los 60°, el calor se dispersa y nunca alcanzará el umbral de ignición de 400°C.",
+      "title": "Paso 1: Tallar una muesca en V de 45 grados en la tabla base",
+      "description": "1. **Marcar hueco inicial**: Presione y gire la punta del huso a **1~1.5cm del borde** de la tabla hasta crear una pequeña concavidad.\n2. **Tallar muesca en V de 45 grados**: Con un cuchillo de piedra, talle una ranura en V de **45 grados** en forma de trozo de pizza desde el borde hasta el centro del hueco.\n3. **Colocar hoja recolectora**: Coloque una hoja ancha y seca justo debajo de la muesca para recoger todo el polvo de carbón caliente sin que caiga al suelo.",
+      "actionNote": "> Precisión del corte: La punta de la V debe coincidir exactamente con el centro del hueco. Si se desvía, el polvo caliente no podrá salir, se atascará y no formará brasa.",
       "svgFileName": "02-step-01.svg",
       "svgLabels": [
         "HOJA RECOLECTORA [BASE DE BRASA]",
@@ -43,13 +43,18 @@
         "REGLA CRÍTICA DE AJUSTE:",
         "El vértice en V debe tocar el centro del eje",
         "ZONA DE ACUMULACIÓN DE POLVO DE CARBÓN"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Dinámica de ventilación y acumulación de carbón en la muesca en V",
+        "text": "En un hueco cerrado sin ranura, la falta de aire sofoca la combustión. La muesca en V de 45° actúa como conducto de ventilación que aspira oxígeno fresco y canaliza el polvo de carbón a **más de 400°C** en un punto concentrado para formar una brasa sólida."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "Carga Vertical de 90° yRotación Recíproca de Alta Velocidad",
-      "description": "Fije la tabla con el pie izquierdo y aplique 12-15 kg de carga vertical con el bloque de apoyo. Deslice el arco horizontalmente usando el 100% de su longitud a 300-400 RPM hasta que brote humo blanco denso.",
-      "actionNote": "> Regla de Campo: No se detenga al ver el primer humo. Realice 10-15 carreras adicionales a máxima potencia para consolidar la brasa.",
+      "title": "Paso 2: Presionar con el peso del cuerpo y mover el arco a toda longitud",
+      "description": "1. **Enrollar cuerda 1 vuelta**: Enrolle la cuerda del arco **1 vuelta completa** alrededor del huso para lograr un agarre firme y sin deslizamiento.\n2. **Presión vertical de 12~15kg**: Pise la tabla firmemente con el pie izquierdo y presione la parte superior del huso con un apoyo usando **12~15kg de peso corporal** vertical.\n3. **Movimiento de sierra completo**: Mantenga el arco horizontal y desplácelo de extremo a extremo a lo largo de toda su longitud con ritmo constante.\n4. **Aceleración final al ver humo**: Cuando empiece a brotar humo blanco espeso, aumente la velocidad al máximo durante los **últimos 5 segundos con más de 15 carreras rápidas**.",
+      "actionNote": "> Cruce del umbral térmico: No se detenga solo porque salga un poco de humo. Es indispensable dar 10~15 pasadas potentes adicionales tras la densa humareda para alcanzar los 400°C de ignición.",
       "svgFileName": "02-step-02.svg",
       "svgLabels": [
         "BLOQUE DE APOYO (SOCKET MANUAL)",
@@ -63,13 +68,18 @@
         "Temp. Ignición: 400°C+",
         "Presión: Inicio 30% → Final 100%",
         "Carrera: 100% Longitud del Arco"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Conversión de energía mecánica a calor y límite de carbonización a 400°C",
+        "text": "La energía cinética del arco se transforma en calor extremo en la pequeña superficie de contacto. La madera comienza a carbonizarse a **250°C**, pero para lograr un carbón incandescente autosuficiente, la temperatura de contacto debe superar obligatoriamente los **400°C**."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Trasplante de Brasa y Oxigenación Suave a 45°",
-      "description": "Espere 30 segundos para que el polvo humeante se cohesione en una brasa sólida (450°C). Trasládela al nido de yesca, elévelo a 45° y sople suave y continuamente hasta alcanzar 600°C y encender la llama.",
-      "actionNote": "> Regla de Campo: Sostenga la yesca a 45° por encima del nivel de los ojos para aprovechar la corriente térmica ascendente y evitar el humo.",
+      "title": "Paso 3: Pasar la brasa al nido de yesca y elevar a 45 grados para soplar",
+      "description": "1. **Esperar unión de la brasa**: Detenga el arco y deje reposar el montón de polvo negro sobre la hoja sin tocarlo durante **30 segundos** hasta que se compacte en un carbón ardiente.\n2. **Traslado al nido de yesca**: Forme un nido en forma de taza con hierba seca y vierta cuidadosamente la brasa en el centro.\n3. **Elevación a 45 grados**: Sostenga el nido a un ángulo de **45 grados** ligeramente por encima de los ojos y sople de forma **larga y suave** directamente a la brasa.\n4. **Brote de llama viva**: El oxígeno aviva el brillo y en **15~20 segundos** surge una potente **llama a 600°C**; trasládela de inmediato a su fogata preparada.",
+      "actionNote": "> Regla del ángulo de elevación: Sostener el nido a 45° por encima de los ojos evita que el humo irrite la vista y permite que el calor ascendente precaliente las fibras de yesca, duplicando el éxito de ignición.",
       "svgFileName": "02-step-03.svg",
       "svgLabels": [
         "NÚCLEO BRASA (450°C)",
@@ -83,13 +93,18 @@
         "400°C PUNTO DE BRASA ACTIVA",
         "30s Cohesión y Traslado (0s)",
         "Ignición Llama (15~20s)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD AERODYNAMICS",
+        "title": "Transferencia de calor por convección y transición de fase a llama de 600°C",
+        "text": "La brasa a 450°C es una masa incandescente sólida. Al suministrar un flujo suave de oxígeno, la superficie libera monóxido de carbono y gases combustibles. Cuando la temperatura local alcanza los **600°C**, ocurre una rápida transición a combustión gaseosa formando una llama abierta."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Nunca sople bruscamente sobre polvo de carbón recién formado",
-    "description": "Soplar con fuerza inmediatamente después de detener la fricción dispersará las partículas de carbón no cohesionadas, apagando el núcleo térmico al instante.",
-    "consequence": "El fallo de ignición en condiciones invernales acelera la pérdida de calor corporal, causando muerte por hipotermia en 72 horas."
+    "title": "Error fatal: Soplar fuerte y apresuradamente sobre el polvo recién formado",
+    "description": "Soplar con fuerza inmediatamente después de parar el arco dispersará las partículas de carbón que aún no se han unido, apagando el calor central al instante.",
+    "consequence": "Solución: Cuando el polvo humee, no lo toque y espere 30 segundos a que se compacte en un carbón encendido antes de moverlo a la yesca."
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
@@ -97,6 +112,6 @@
     "description": "Una brasa incandescente a 400°C generada en la ranura en V, transferida con éxito al nido de yesca seca y avivada hasta producir una llama viva."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "07c74b6366705dce"
+  "updatedAt": "2026-10-15T15:45:00+09:00",
+  "contentHash": "006f8f1c7593c632"
 }
