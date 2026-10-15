@@ -102,7 +102,8 @@
   "outcome": {
     "svgFileName": "pr08-outcome.svg",
     "title": "Completed Figure-4 Deadfall Trap Full Setup",
-    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it."
+    "description": "Three finger-thick sticks interlock to support a heavy 15kg rock at an angle, dropping the stone in 0.1 seconds the moment prey touches the bait beneath it.",
+    "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
   "updatedAt": "2026-10-14T17:25:00+09:00"

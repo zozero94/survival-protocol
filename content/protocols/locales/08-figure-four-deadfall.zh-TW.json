@@ -102,7 +102,8 @@
   "outcome": {
     "svgFileName": "pr08-outcome.svg",
     "title": "完成した数字の4型圧殺罠の全景",
-    "description": "3本の枝が絶妙に噛み合って15kgの重い岩を支え、獲物がエサに触れた瞬間に0.1秒で崩れて岩が圧殺する完成形態。"
+    "description": "3本の枝が絶妙に噛み合って15kgの重い岩を支え、獲物がエサに触れた瞬間に0.1秒で崩れて岩が圧殺する完成形態。",
+    "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
   "updatedAt": "2026-10-14T17:25:00+09:00"

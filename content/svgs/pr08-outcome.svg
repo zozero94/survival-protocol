@@ -22,6 +22,13 @@
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
+    <!-- Rock Underside Cavern Shadow Gradient -->
+    <linearGradient id="rockUnderOut" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
     <!-- Hardwood Cylinder 3D Gradient -->
     <linearGradient id="stick3D" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3d210f"/>
@@ -76,17 +83,17 @@
   <ellipse cx="620" cy="368" rx="85" ry="12" fill="#000000" opacity="0.85"/>
 
   <!-- ============================================== -->
-  <!-- 1. HEAVY 15KG SLATE ROCK (45-degree angle, Propped on Strut Tip) -->
+  <!-- 1. HEAVY 15KG SLATE ROCK (3D Propped Canopy Slab) -->
   <!-- ============================================== -->
   <g filter="url(#shadowOut)">
-    <!-- 3D Rear Bevel Facet -->
-    <polygon points="241,107 670,365 685,355 256,97" fill="url(#rockRimOut)" stroke="#334155" stroke-width="1"/>
-    <!-- Main Massive Slate Rock Body (Rests on strut tip at (223,125) down to ground at (580,365)) -->
-    <polygon points="223,125 580,365 670,365 241,107" fill="url(#rockOut)" stroke="#1e293b" stroke-width="2.2"/>
-    <!-- Front Lifted Lip Thickness (Contact point supporting rock weight) -->
-    <polygon points="223,125 241,107 256,97 238,115" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
+    <!-- Underside Cavern Ceiling (Dark shadowed interior beneath the rock) -->
+    <polygon points="223,125 650,195 750,365 240,365" fill="url(#rockUnderOut)" stroke="#0f172a" stroke-width="1.2"/>
+    <!-- Top Face of Heavy Slate Slab (Slanted backward towards ground) -->
+    <polygon points="223,110 250,90 680,150 770,345 750,365 650,180" fill="url(#rockOut)" stroke="#1e293b" stroke-width="2.2"/>
+    <!-- Front Lifted Lip Thickness (Resting cleanly on strut tip at (223,125)) -->
+    <polygon points="223,125 650,195 650,180 223,110" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
     <!-- Rock Surface Geological Cleavage & Fractures -->
-    <path d="M 290 170 L 390 250 L 500 310 M 360 190 L 510 280 M 320 220 L 440 290" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 310 115 L 450 200 L 600 280 M 380 135 L 540 230 M 480 170 L 630 270" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
   <!-- ============================================== -->
@@ -120,21 +127,21 @@
     <circle cx="243" cy="145" r="4.5" fill="#38bdf8" opacity="0.95"/>
     <circle cx="368" cy="270" r="4.5" fill="#38bdf8" opacity="0.95"/>
 
-    <!-- Stick 3: Horizontal Bait Stick (먹이대 - x=195 horizontally through to x=540, y=270 to 286) -->
+    <!-- Stick 3: Horizontal Bait Stick (먹이대 - x=195 horizontally through to x=460, y=270 to 286) -->
     <!-- Extends deeply into the danger zone sheltered beneath the rock -->
-    <path d="M 195 270 L 505 270 L 535 278 L 505 286 L 195 286 Z" fill="url(#stick3D)" stroke="#271408" stroke-width="1.5"/>
+    <path d="M 195 270 L 435 270 L 460 278 L 435 286 L 195 286 Z" fill="url(#stick3D)" stroke="#271408" stroke-width="1.5"/>
     <!-- Catch Ledge on Bait Stick (locked with post at x=230) -->
     <polygon points="228,268 245,268 245,286 228,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
     <!-- Rear Notch on Bait Stick (locked with strut bottom at x=360..376, y=270) -->
     <polygon points="360,270 376,270 368,284" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
 
     <!-- Sharp Bait Pin at Far Right (under the rock) -->
-    <polygon points="505,270 535,278 505,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <polygon points="435,270 460,278 435,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
     <!-- Juicy Red Wild Berries Bait -->
-    <circle cx="530" cy="278" r="7" fill="#ef4444"/>
-    <circle cx="537" cy="273" r="5.5" fill="#dc2626"/>
-    <circle cx="536" cy="283" r="5" fill="#b91c1c"/>
-    <circle cx="530" cy="278" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="450" cy="278" r="7" fill="#ef4444"/>
+    <circle cx="457" cy="273" r="5.5" fill="#dc2626"/>
+    <circle cx="456" cy="283" r="5" fill="#b91c1c"/>
+    <circle cx="450" cy="278" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- ============================================== -->
@@ -159,10 +166,10 @@
   <text x="45" y="155" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">2번 빗장대 (바위를 떠받치는 버팀목)</text>
 
   <!-- 4. Bait Stick 3 Pointer -->
-  <line x1="530" y1="278" x2="570" y2="245" stroke="#ef4444" stroke-width="1.5"/>
-  <circle cx="530" cy="278" r="3.5" fill="#ef4444"/>
-  <rect x="570" y="234" width="175" height="22" fill="#18181b" stroke="#ef4444" stroke-width="1"/>
-  <text x="580" y="249" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">3번 먹이대 (먹이를 꽂아둔 가로 막대)</text>
+  <line x1="450" y1="278" x2="520" y2="245" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="450" cy="278" r="3.5" fill="#ef4444"/>
+  <rect x="520" y="234" width="175" height="22" fill="#18181b" stroke="#ef4444" stroke-width="1"/>
+  <text x="530" y="249" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">3번 먹이대 (먹이를 꽂아둔 가로 막대)</text>
 
   <!-- Bottom Right Summary Callout Box -->
   <rect x="430" y="335" width="335" height="52" fill="#0d1117" stroke="#21262d" stroke-width="1"/>

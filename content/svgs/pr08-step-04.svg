@@ -98,18 +98,19 @@
   <polygon points="282,270 285,277 288,270" fill="#38bdf8"/>
 
   <!-- ============================================== -->
-  <!-- 1. HEAVY 15KG SLATE ROCK (3D Propped Ceiling Slab) -->
+  <!-- 1. HEAVY 15KG SLATE ROCK (3D Propped Canopy Slab) -->
   <!-- ============================================== -->
-  <!-- The massive stone slab rests its back edge on ground (290..365, 310) and is propped up at front lip (138, 77) by Strut -->
+  <!-- The massive stone slab is lifted at front lip (138,77) by the Strut tip, forming a wide open overhead roof. -->
+  <!-- The back edge rests on the ground (150..390, 308). The entire bait stick is sheltered inside the deep cavern. -->
   <g filter="url(#shadowS4)">
-    <!-- 3D Rear Bevel Facet -->
-    <polygon points="154,63 365,310 375,302 166,53" fill="url(#rockRimS4)" stroke="#334155" stroke-width="0.8"/>
-    <!-- Top Face of Heavy Slate Slab -->
-    <polygon points="138,77 325,310 365,310 154,63" fill="url(#rockGradS4)" stroke="#1e293b" stroke-width="1.8"/>
-    <!-- Front Lifted Lip Thickness (Resting cleanly on Strut top notch) -->
-    <polygon points="138,77 154,63 166,53 148,69" fill="#94a3b8" stroke="#475569" stroke-width="0.8"/>
-    <!-- Rock Surface Geological Cleavage Fracture Lines -->
-    <path d="M 190 100 L 235 150 L 305 210 M 245 125 L 325 185 M 205 120 L 265 175" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Underside Cavern Ceiling (Dark shadowed interior beneath the rock) -->
+    <polygon points="138,77 350,125 390,308 150,308" fill="url(#rockUnderGrad)" stroke="#0f172a" stroke-width="1"/>
+    <!-- Top Face of Heavy Slate Slab (Slanted backward towards ground) -->
+    <polygon points="138,65 156,50 370,95 400,290 390,308 350,113" fill="url(#rockGradS4)" stroke="#1e293b" stroke-width="1.8"/>
+    <!-- Front Lifted Lip Thickness (Resting cleanly on Strut top notch at (138,77)) -->
+    <polygon points="138,77 350,125 350,113 138,65" fill="#94a3b8" stroke="#475569" stroke-width="0.8"/>
+    <!-- Top Face Geological Cleavage Lines -->
+    <path d="M 180 62 L 270 140 L 370 220 M 230 75 L 320 160 M 300 95 L 380 190" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
   </g>
 
   <!-- ============================================== -->
@@ -143,24 +144,24 @@
     <circle cx="156" cy="95" r="3.5" fill="#38bdf8" opacity="0.9"/>
     <circle cx="258" cy="196" r="3.5" fill="#38bdf8" opacity="0.9"/>
 
-    <!-- Stick 3: Horizontal Bait Stick (Runs from x=110 across to x=305, y=192 to 208) -->
-    <!-- Extends into the sheltered cavern under the rock, bait clearly inside the fall zone -->
-    <path d="M 110 192 L 285 192 L 305 200 L 285 208 L 110 208 Z" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Stick 3: Horizontal Bait Stick (Runs from x=110 across to x=280, y=192 to 208) -->
+    <!-- Extends deeply into the sheltered cavern under the rock, bait clearly inside the fall zone -->
+    <path d="M 110 192 L 260 192 L 280 200 L 260 208 L 110 208 Z" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
     <!-- Front Ledge on Bait Stick (Locked into Post middle notch) -->
     <polygon points="145,192 157,192 157,208 145,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
     <!-- Rear Catch Notch on Bait Stick (Locked with Strut bottom) -->
     <polygon points="250,192 266,192 258,204" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
     <!-- Pointed Inner Bait Pin under the Rock -->
-    <polygon points="285,192 305,200 285,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
-    <!-- Juicy Red Wild Berries Bait (Positioned under the rock in open air) -->
-    <circle cx="300" cy="200" r="5" fill="#ef4444"/>
-    <circle cx="306" cy="197" r="4" fill="#dc2626"/>
-    <circle cx="300" cy="200" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <polygon points="260,192 280,200 260,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <!-- Juicy Red Wild Berries Bait (Deep inside cavern, 80px away from rock edge) -->
+    <circle cx="275" cy="200" r="5" fill="#ef4444"/>
+    <circle cx="281" cy="197" r="4" fill="#dc2626"/>
+    <circle cx="275" cy="200" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Prey Touch Action Trigger Pointer -->
-  <path d="M 345 175 C 330 175 322 190 312 198" stroke="#ef4444" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <polygon points="310,195 306,203 314,200" fill="#ef4444"/>
+  <path d="M 320 175 C 305 175 297 190 287 198" stroke="#ef4444" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <polygon points="285,195 281,203 289,200" fill="#ef4444"/>
 
   <!-- ============================================== -->
   <!-- TECHNICAL LABELS & POINTERS -->
@@ -172,10 +173,10 @@
   <text x="275" y="69" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">15kg 평평한 바위 안착</text>
 
   <!-- Label 3: Bait Mount (Points directly to berries inside the drop zone) -->
-  <line x1="300" y1="210" x2="300" y2="245" stroke="#f59e0b" stroke-width="1.2"/>
-  <circle cx="300" cy="210" r="3" fill="#f59e0b"/>
-  <rect x="230" y="245" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
-  <text x="300" y="259" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">먹이대 끝 미끼 장착</text>
+  <line x1="275" y1="210" x2="275" y2="245" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="275" cy="210" r="3" fill="#f59e0b"/>
+  <rect x="205" y="245" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="275" y="259" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">먹이대 끝 미끼 장착</text>
 
   <!-- Label 4: Instant Collapse -->
   <line x1="180" y1="210" x2="135" y2="225" stroke="#ef4444" stroke-width="1.2"/>

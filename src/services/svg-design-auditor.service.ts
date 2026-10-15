@@ -148,8 +148,8 @@ export class SvgDesignAuditorService {
         postTopY = peak.y;
       }
 
-      // 빗장대 polygon 찾기 (상단에서 비스듬히 내려와 먹이대 부근에서 끝나는 다각형, 바닥까지 내려가는 바위 제외)
-      const strutPoly = polygons.find(
+      // 빗장대 polygon 찾기 (상단에서 비스듬히 내려와 먹이대 부근으로 가장 깊게 내려오는 다각형)
+      const strutCandidates = polygons.filter(
         (p) =>
           p !== chiselPoly &&
           p.minY <= postTopY + 30 &&
@@ -157,11 +157,18 @@ export class SvgDesignAuditorService {
           p.maxY <= (baitY !== null ? baitY + 35 : 295) &&
           p.maxX > postCenterX
       );
+      const strutPoly = strutCandidates.sort((a, b) => b.maxY - a.maxY)[0];
 
       if (strutPoly) {
         // 빗장대 상단 힌지 결합점 (V홈 꼭짓점 또는 상단 힌지 중심)
         const matingNotchPoly = polygons.find(
-          (p) => p !== chiselPoly && p !== strutPoly && Math.abs(p.minX - postCenterX) <= 25 && Math.abs(p.minY - postTopY) <= 20
+          (p) =>
+            p !== chiselPoly &&
+            p !== strutPoly &&
+            p.maxX - p.minX <= 50 &&
+            p.maxY - p.minY <= 35 &&
+            Math.abs(p.minX - postCenterX) <= 25 &&
+            Math.abs(p.minY - postTopY) <= 20
         );
 
         let strutTopX: number;
