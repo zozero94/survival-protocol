@@ -12,7 +12,7 @@
    - 피드 카드 상단 레일 등록일(`YYYY.MM.DD`) 및 상세 히어로 섹션 최종 수정 시간(`YYYY.MM.DD HH:mm`) 표기
    - 독해 시간("소요 30초 독해") 문구 완전 배제 및 모노스페이스 브루탈리즘 제원 스트립 정밀 배치
    - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-- **아키텍처**: Content-Driven Layered Component Architecture (13개 스위트 / 90개 단위 테스트 무결성 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (13개 스위트 / 91개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
   - 원시 자연물 고증 100% (현대 공산품 일체 배제)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)

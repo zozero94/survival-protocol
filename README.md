@@ -74,7 +74,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, manifest, sitemap, images
-└── tests/                 # [Quality Audit] 13대 테스트 스위트 (90/90 PASS)
+└── tests/                 # [Quality Audit] 13대 테스트 스위트 (91/91 PASS)
 ```
 
 ---

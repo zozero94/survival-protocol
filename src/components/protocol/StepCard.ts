@@ -9,9 +9,9 @@ export function highlightTechnicalTerms(text: string): string {
     // 숫자나 측정 단위(cm, mm, 분, 방울, kg, ℃, 리터, 컵 등)가 포함된 경우 테크니컬 옐로우(#fde68a) 하이라이트
     const isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
     if (isMetric) {
-      return `<strong class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">${p1}</strong>`;
+      return `<strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">${p1}</strong>`;
     }
-    return `<strong class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">${p1}</strong>`;
+    return `<strong data-proto="highlight" class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">${p1}</strong>`;
   });
 }
 
@@ -60,8 +60,8 @@ export function formatStepDescription(description: string, stepIdx: number): str
           ${numStr}
         </span>
         <div class="flex-1 text-xs sm:text-sm leading-relaxed space-y-0.5">
-          ${actionTitle ? `<div class="text-white font-bold tracking-tight font-sans">${actionTitle}</div>` : ''}
-          <div class="text-[#cfcfcf] font-sans leading-relaxed">${highlightTechnicalTerms(actionDetail)}</div>
+          ${actionTitle ? `<div data-proto-item="steps" data-proto-prop="actionTitle" class="text-white font-bold tracking-tight font-sans">${actionTitle}</div>` : ''}
+          <div data-proto-item="steps" data-proto-prop="actionDetail" class="text-[#cfcfcf] font-sans leading-relaxed">${highlightTechnicalTerms(actionDetail)}</div>
         </div>
       </div>
     `.trim();
@@ -115,13 +115,13 @@ export function renderStepCards(steps: ProtocolStep[], svgsMap: Record<string, s
                 TECHNICAL DEEP DIVE // FIELD PRINCIPLE
               </span>
             </div>
-            <span class="text-[10px] text-[#888] bg-[#141414] px-1.5 py-0.5 border border-[#262626]">
+            <span data-proto-item="steps" data-proto-prop="deepDiveBadge" data-index="${idx}" class="text-[10px] text-[#888] bg-[#141414] px-1.5 py-0.5 border border-[#262626]">
               ${step.deepDive.badge || 'FIELD SCIENCE'}
             </span>
           </div>
           <div class="space-y-1 font-sans">
-            <div class="text-white font-bold text-xs sm:text-sm mb-1">${step.deepDive.title}</div>
-            <p class="text-[#a3a3a3] text-xs leading-relaxed font-sans">${highlightTechnicalTerms(step.deepDive.text)}</p>
+            <div data-proto-item="steps" data-proto-prop="deepDiveTitle" data-index="${idx}" class="text-white font-bold text-xs sm:text-sm mb-1">${step.deepDive.title}</div>
+            <p data-proto-item="steps" data-proto-prop="deepDiveText" data-index="${idx}" class="text-[#a3a3a3] text-xs leading-relaxed font-sans">${highlightTechnicalTerms(step.deepDive.text)}</p>
           </div>
         </section>
         `.trim();

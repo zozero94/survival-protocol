@@ -23,9 +23,9 @@ export function getLocaleRuntimeScript(): string {
       return text.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
         var isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
         if (isMetric) {
-          return '<strong class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
+          return '<strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
         }
-        return '<strong class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">' + p1 + '</strong>';
+        return '<strong data-proto="highlight" class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">' + p1 + '</strong>';
       });
     }
 
@@ -51,8 +51,8 @@ export function getLocaleRuntimeScript(): string {
         return '<div class="bg-[#121212] border border-[#262626] hover:border-[#383838] p-3 sm:p-3.5 flex items-start space-x-3 transition-colors">' +
           '<span class="text-[#fde68a] font-mono font-bold text-xs bg-[#080808] px-2 py-0.5 border border-[#383838] select-none flex-shrink-0 mt-0.5">' + numStr + '</span>' +
           '<div class="flex-1 text-xs sm:text-sm leading-relaxed space-y-0.5">' +
-          (actionTitle ? '<div class="text-white font-bold tracking-tight font-sans">' + actionTitle + '</div>' : '') +
-          '<div class="text-[#cfcfcf] font-sans leading-relaxed">' + renderHighlightTermsClient(actionDetail) + '</div>' +
+          (actionTitle ? '<div data-proto-item="steps" data-proto-prop="actionTitle" class="text-white font-bold tracking-tight font-sans">' + actionTitle + '</div>' : '') +
+          '<div data-proto-item="steps" data-proto-prop="actionDetail" class="text-[#cfcfcf] font-sans leading-relaxed">' + renderHighlightTermsClient(actionDetail) + '</div>' +
           '</div></div>';
       }).join('\n');
     }
@@ -130,14 +130,20 @@ export function getLocaleRuntimeScript(): string {
           var itemKey = el.getAttribute('data-proto-item');
           var prop = el.getAttribute('data-proto-prop');
           var idx = parseInt(el.getAttribute('data-index'), 10);
-          if (proto[itemKey] && proto[itemKey][idx] && proto[itemKey][idx][prop] !== undefined) {
-            var val = proto[itemKey][idx][prop];
+          if (proto[itemKey] && proto[itemKey][idx]) {
+            var stepItem = proto[itemKey][idx];
             if (prop === 'description' && el.id && el.id.startsWith('step-desc-')) {
-              el.innerHTML = renderStepDescriptionClient(val);
+              el.innerHTML = renderStepDescriptionClient(stepItem.description);
             } else if (prop === 'actionNote' && el.id && el.id.startsWith('step-note-')) {
-              el.innerHTML = renderHighlightTermsClient(val);
-            } else {
-              el.innerText = val;
+              el.innerHTML = renderHighlightTermsClient(stepItem.actionNote);
+            } else if (prop === 'deepDiveTitle' && stepItem.deepDive) {
+              el.innerText = stepItem.deepDive.title || '';
+            } else if (prop === 'deepDiveBadge' && stepItem.deepDive) {
+              el.innerText = stepItem.deepDive.badge || 'FIELD SCIENCE';
+            } else if (prop === 'deepDiveText' && stepItem.deepDive) {
+              el.innerHTML = renderHighlightTermsClient(stepItem.deepDive.text || '');
+            } else if (stepItem[prop] !== undefined) {
+              el.innerText = stepItem[prop];
             }
           }
         });
