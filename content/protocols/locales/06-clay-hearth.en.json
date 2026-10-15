@@ -35,8 +35,8 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Stomp 2 Parts Clay, 1 Part Sand, and 1 Part Dry Grass with Water into Tough Cob",
-      "description": "Pour 2 bowls of red clay, 1 bowl of coarse sand, and 1 bowl of finger-length dry grass onto flat ground. Add small splashes of water while thoroughly stomping with bare heels. Fold the clay mound in half and stomp repeatedly for 10 minutes until you can roll a fist-sized ball without surface cracks.",
-      "actionNote": "> Key Principle: Too much water makes sloppy mud that slumps; too little leaves crumbly dust. Aim for a stiff, dough-like consistency that holds its shape firmly.",
+      "description": "1. **Golden Proportional Blending**: Dump **2 bowls of sticky red clay**, **1 bowl of coarse sand**, and **1 bowl of finger-length dry grass** onto flat terrain.\n2. **Incremental Water Stomping**: Splash water in small controlled doses, crushing the mixture with bare heels for **at least 10 minutes**.\n3. **Mound Folding and Compression**: Repeatedly fold the clay mound in half and stomp thoroughly to establish an even cohesive matrix.\n4. **Plasticity Verification**: Roll a fist-sized ball of cob in your hand and verify **zero surface hairline cracks** appear under pressure.",
+      "actionNote": "> Moisture Control Principle: Excess water turns cob into a sagging slurry; insufficient water leaves it dry and crumbly. Strive for a stiff, dough-like consistency that holds crisp contours.",
       "svgFileName": "pr06-step-01.svg",
       "svgLabels": [
         "FIG. 01 // CLAY TEMPERING & FIBER MATRIX BLUEPRINT",
@@ -53,13 +53,18 @@
         "⑤ Finished stiff cob ball",
         "Roll into a solid fist-sized ball",
         "Zero cracks on outer surface"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD CERAMICS",
+        "title": "Refractory Tempering and Shrinkage-Resistant Matrix Architecture",
+        "text": "Pure clay shrinks by **10–15%** upon dehydration, causing severe cracking during firing. Blending uncalcined silica sand and organic straw fibers in a **2:1:1 volumetric ratio** creates a thermal aggregate matrix where carbonized fibers leave micro-voids that absorb thermal shock without fracture."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Step 2: Lay Fist-Sized Dry Stones in a Horseshoe U-Shape to Anchor the Foundation",
-      "description": "Orient the fire mouth opening (one hand-span wide, approx. 20 cm) away from the prevailing wind. Place fist-sized dry stones in a horseshoe U-shape. Lay 2~3 cm of dry sand and gravel inside the floor to block ground moisture and cold. Pack thick cob mud between all stone crevices with your fists to anchor them firmly.",
-      "actionNote": "> Wind Direction: Facing the mouth straight into the wind blows hot embers into your face. Always point the opening downwind or crosswind.",
+      "description": "1. **Intake Orientation**: Leave a front feeding mouth opening of **width 20cm** (one hand-span) pointing away from prevailing winds.\n2. **Horseshoe Perimeter Layout**: Arrange fist-sized bone-dry stones in a stable **horseshoe U-shape** around the perimeter.\n3. **Thermal Subfloor Bedding**: Spread dry sand and fine river gravel across the interior floor to a **depth of 2–3cm** to isolate ground frost.\n4. **Crevice Mortar Packing**: Punch stiff cob mud firmly into every gap between anchor stones to eliminate parasitic air drafts.",
+      "actionNote": "> Wind Angle Rule: Facing the fire mouth directly into wind currents forces embers back into your eyes. Always point the mouth downwind or at a shielded cross-angle.",
       "svgFileName": "pr06-step-02.svg",
       "svgLabels": [
         "FIG. 02 // FOUNDATION LAYOUT & AIR ENTRY SCHEMATIC",
@@ -78,8 +83,8 @@
     {
       "stepNumber": "03",
       "title": "Step 3: Stagger Stones and Cob Layer by Layer into a Knee-High Dome",
-      "description": "Spread a palm-thick layer (approx. 5 cm) of cob over the foundation stones, bed down the next row of stones staggered over the joints, and corbel them slightly inward as you build up to knee height (approx. 45 cm). Once the dome is built, dip your hands in water and smooth the inner clay wall into a slick, continuous curved surface to reflect and circulate heat.",
-      "actionNote": "> Prevent Collapse: Never build pure mud walls high without stone cores. The stones provide the structural skeleton while the thick clay skin traps radiant heat.",
+      "description": "1. **Cob Mortar Bedding**: Spread a palm-thick cob bed of **depth approx. 5cm** over the base foundation stones.\n2. **Staggered Corbel Stacking**: Bed the next tier of stones over the joints in a zig-zag pattern, packing clay between all gaps.\n3. **Inward Corbel Dome Raising**: Slant stones inward as layers rise, completing a hemispherical igloo dome of **height approx. 45cm**.\n4. **Burnished Smooth Rendering**: Dip hands in water and burnish the interior chamber into a slick, continuous curved heat reflector.",
+      "actionNote": "> Anti-Collapse Core Law: Pure mud walls slump under their own weight. Always use stone masonry as an interlocking skeleton, encased within a thick envelope of refractory cob.",
       "svgFileName": "pr06-step-03.svg",
       "svgLabels": [
         "FIG. 03 // DOME CHAMBER CROSS-SECTION & THERMAL CURVATURE",
@@ -94,13 +99,18 @@
         "Heat circulates and concentrates upward",
         "⑤ Knee-high (45 cm) total profile",
         "Optimal balance of volume and cooking height"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Hemispherical Dome Radiant Concentration and 650°C Thermal Massing",
+        "text": "The parabolic inner curve acts as an infrared reflector, focusing blackbody radiation onto the central cooking port. The **5cm-thick** high-density cob shell stores sensible heat, sustaining internal combustion temperatures of **300–650°C** for hours after active flames die down."
+      }
     },
     {
       "stepNumber": "04",
       "title": "Step 4: Cut a Top Cooking Pot Ring and Punch a Rear Exhaust Flue",
-      "description": "Leave a 15~20 cm circular opening at the very top of the dome for resting a clay pot or flat cooking stone. Embed three small stone spacers around the rim to create a 1 cm gap so sitting a pot will not choke the fire. Push a wrist-thick green stick angled through the upper back wall to pierce a chimney flue hole for smoke exhaust.",
-      "actionNote": "> Air Draft Principle: Without a high rear flue, smoke billows out the front wood opening into your eyes. The flue creates a strong thermal chimney effect that draws oxygen vigorously into the base.",
+      "description": "1. **Circular Cooking Port Porting**: Carve a circular opening of **diameter 15–20cm** into the top crown for pots and flat stone griddles.\n2. **Tri-Stone Ventilation Spacers**: Embed 3 small stones symmetrically around the rim to maintain a **1cm ventilation standoff gap**.\n3. **Angled Chimney Flue Piercing**: Push a wrist-thick green bough through the upper rear dome to pierce a clean **smoke exhaust flue**.\n4. **Draft Convection Verification**: Inspect the rising airflow channel from the lower wood intake up through the rear flue.",
+      "actionNote": "> Stack Effect Principle: Without an elevated exhaust flue, smoke rolls forward into the cook's face. Placing the flue higher than the intake mouth establishes clean upward draft.",
       "svgFileName": "pr06-step-04.svg",
       "svgLabels": [
         "FIG. 04 // AIR DRAFT PERSPECTIVE & EXHAUST BLUEPRINT",
@@ -114,13 +124,18 @@
         "Vigorous draft heats cooking vessel base",
         "⑤ Pot spacer nubs for continuous draft",
         "Air passes freely even with pot seated"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD AERODYNAMICS",
+        "title": "Chimney Stack Effect and Venturi Air Induction Dynamics",
+        "text": "The vertical displacement and thermal gradient between the intake mouth and elevated rear flue drives a vigorous **chimney stack effect**. Low-density exhaust gases evacuate rapidly, generating negative pressure that continuously draws fresh oxygen into the firebed."
+      }
     },
     {
       "stepNumber": "05",
       "title": "Step 5: Cure with a Low Twig Fire for 3 Hours to Bake the Clay into Brick Hardness",
-      "description": "Never light a raging log fire immediately in fresh wet cob; sudden boiling moisture will blow steam fissures through the walls. Build a tiny fist-sized twig fire near the front mouth and keep it gentle for 3~4 hours. Watch white steam vapor evaporate from the outer walls as the dark wet brown clay shifts to a warm light ochre. Once dry and warm to the touch, your permanent hearth is ready.",
-      "actionNote": "> Repairing Hairline Cracks: If minor hairline cracks appear while drying, smear a fingertip of wet clay paste over them to seal and fuse them instantly.",
+      "description": "1. **Low-Intensity Ignition**: Kindle a small fist-sized ember of dry leaves and twigs near the fire mouth.\n2. **Slow Thermal Dehydration**: Maintain gentle low-temperature drying over **3–4 hours** without roaring flames.\n3. **Chromatic Cure Milestone**: Verify the outer surface shifts from damp dark brown to **warm pale ochre** with steam venting stopping.\n4. **Hairline Fissure Sealing**: Smear remaining thin clay slurry over any developing drying cracks to seal the wall completely.",
+      "actionNote": "> Flash-Firing Warning: Raging fires in wet cob boil internal water instantly, exploding outer walls. Always pre-cure slowly over 3+ hours to bake into solid ceramic stone.",
       "svgFileName": "pr06-step-05.svg",
       "svgLabels": [
         "FIG. 05 // CONTROLLED DEHYDRATION & CERAMIC HARDENING",
@@ -138,21 +153,21 @@
     }
   ],
   "fatalMistake": {
-    "title": "Fatal Mistake: Using Wet River Stones Directly Exposed to Fire Inside the Chamber",
-    "description": "Waterlogged river stones and creek pebbles have moisture trapped inside microscopic pores even if the surface feels dry. When exposed to fires over 300°C, trapped water violently flashes into high-pressure steam and detonates like a grenade. Razor-sharp shrapnel flies outward into your face and eyes, causing blindness and catastrophic lacerations. Always gather dry stones from sunny ridges 10m away from water, and coat them under at least 5 cm of thick cob mud.",
-    "consequence": "Consequence: Steam explosion shrapnel causes permanent blindness and severe trauma"
+    "title": "Fatal Mistake: Building Hearth Fire-Contact Walls with Waterlogged River Rocks",
+    "description": "Stones gathered from riverbeds retain trapped microscopic water inside their pores even when their surface feels dry. Exposing these rocks to direct 300°C+ flames converts trapped water into high-pressure steam, causing the stone to detonate like a hand grenade. Shrapnel can cause blindness and severe facial trauma. Gather stones only from dry sunny ridges 10m away from water, and encase all rock faces in a 5cm layer of refractory cob.",
+    "consequence": "Consequence: Internal steam explosion hurls razor-sharp stone shrapnel causing permanent blindness and deep lacerations"
   },
   "shortsScript": {
-    "hook": "An open ground fire loses 80% of its heat. Here is how to build a weatherproof primitive hearth.",
-    "body": "Mix 2 parts sticky clay, 1 part sand, and 1 part dry grass with water and stomp into dough. Lay dry stones in a U-shape facing away from the wind. Stagger stones and thick mud into a knee-high dome with a pot hole on top and a chimney flue out back. Cure with a tiny fire for 3 hours to bake it rock-solid. Never use wet river stones inside; steam pressure will cause them to detonate.",
-    "outro": "Cook your meals and stay warm all night through rain and howling winds."
+    "hook": "Open campfires lose 80% of heat to the wind. Here is how to build an unbreakable wild clay hearth.",
+    "body": "Stomp 2 parts clay, 1 part sand, and 1 part dry grass into stiff dough. Lay dry stones in a U-shape, build up a knee-high dome, cut a top pot ring, and punch a rear chimney. Cure gently with twigs for 3 hours. Never touch fire directly to wet river stones; trapped moisture detonates rocks like shrapnel.",
+    "outro": "Cooks meals in gale-force winds and traps radiant heat all night long."
   },
   "outcome": {
     "svgFileName": "pr06-outcome.svg",
-    "title": "Completed Stone & Tempered Clay Cooking Hearth",
-    "description": "A horseshoe stone base sealed under 5cm of straw-tempered refractory clay plaster, featuring a level stone cooktop and rear chimney flue holding intense 650°C heat."
+    "title": "Completed Clay-Plastered Stone Hearth",
+    "description": "A stone-core cob dome hearth with smooth clay plaster, top cooking ring, and rear exhaust chimney designed to trap 650°C heat efficiently."
   },
   "createdAt": "2026-10-14T10:15:00.000Z",
-  "contentHash": "92064fb90844ce2f",
-  "updatedAt": "2026-10-15T13:34:19+09:00"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "c7c298b1d914459f"
 }

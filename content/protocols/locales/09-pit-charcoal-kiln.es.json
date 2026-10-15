@@ -40,7 +40,7 @@
     {
       "stepNumber": "01",
       "title": "Paso 1: Excavar el pozo cónico de 50 cm y crear la cama de brasas",
-      "description": "Elija suelo firme y seco. Excave un pozo de 60 cm de diámetro superior y 50 cm de profundidad, reduciéndose a unos 30 cm en el fondo en forma de cono. Encienda un fuego generoso con ramitas secas en el fondo durante al menos 15 minutos para evaporar toda la humedad de las paredes de tierra y formar una buena base de brasas ardientes.",
+      "description": "1. **Excavación del pozo cónico**: Elija suelo firme y seco y excave un pozo de **60cm de boca superior y 50cm de profundidad**.\n2. **Perfilado cónico inferior**: Reduzca las paredes hacia una base de **30cm de diámetro** para concentrar la convección térmica central.\n3. **Secado de humedad residual**: Encienda un fuego vivo con ramas secas durante **más de 15 minutos** para secar las paredes de arcilla por completo.\n4. **Formación de cama de brasas**: Asegúrese de que las llamas abiertas decanten en una gruesa **capa de brasas al rojo vivo** sobre el fondo.",
       "actionNote": "> Consejo de excavación: Si queda humedad en la tierra, la madera se pudrirá y el fuego se apagará. Caliente el fondo hasta secarlo por completo.",
       "svgFileName": "pr09-step-01.svg",
       "svgLabels": [
@@ -49,12 +49,17 @@
         "Profundidad 50cm (base de 30cm)",
         "Brasas base para secar la tierra",
         "[CLAVE] Secar humedad del suelo y crear brasas"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Masa térmica subterránea y retención de calor convectivo",
+        "text": "Los hornos de pozo subterráneos reducen la pérdida de calor al exterior gracias al aislamiento natural de la tierra. Su geometría cónica en V enfoca las corrientes térmicas en el núcleo, manteniendo temperaturas de horneado anaeróbico **superiores a 400°C** durante **más de 3 horas**."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Paso 2: Apilar los leños de roble verticalmente sin dejar huecos",
-      "description": "Sobre las brasas incandescentes del fondo, coloque los leños secos de roble (30-40 cm de largo, 5-8 cm de grosor) en posición vertical como pilares apretados. Los huecos de aire permiten que el oxígeno circule y queme la madera hasta dejar solo cenizas. Inserte ramas delgadas a modo de cuñas en cada resquicio para compactar el interior al máximo.",
+      "description": "1. **Colocación vertical de leños**: Plante leños secos de roble de **longitud 30–40cm y grosor 5–8cm** verticalmente sobre las brasas base.\n2. **Densidad de carga radial**: Apile los leños apretadamente desde el centro hacia los bordes, dejando **prácticamente cero huecos de aire**.\n3. **Acuñado de hendiduras**: Inserte **ramas del grosor de un dedo** a modo de cuñas en las ranuras restantes para eliminar bolsas de oxígeno.\n4. **Inspección de nivel superior**: Verifique que la parte superior de la madera quede **a ras del borde del suelo**.",
       "actionNote": "> Secreto de carga: El interior debe quedar tan denso que casi no haya espacio libre. Cuanta más densidad, más duro y sonoro será el carbón.",
       "svgFileName": "pr09-step-02.svg",
       "svgLabels": [
@@ -63,12 +68,17 @@
         "Ramas finas acuñadas en los huecos",
         "Calor ascendente desde las brasas base",
         "[CLAVE] Minimizar huecos para máxima densidad"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PYROLYSIS",
+        "title": "Apilado denso y mecánica de pirólisis anaeróbica",
+        "text": "Minimizar los huecos de aire agota rápidamente el oxígeno interno y frena la combustión abierta. El intenso calor ambiental evapora la humedad y los alquitranes volátiles, cristalizando una resistente matriz de **carbono amorfo** que produce carbón vegetal de alta densidad."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Paso 3: Colocar el enrejado de ramas y sellar el 95% del aire con barro",
-      "description": "Cruce ramas gruesas en forma de rejilla sobre los troncos verticales y cúbralas con hojas anchas o hierba densa. Aplique encima una capa de 10 cm de barro arcilloso húmedo y tepes de hierba invertidos. Deje dos pequeños respiraderos del grosor de un dedo en la base del lado del viento y una chimenea del tamaño de un puño en el centro, limitando el oxígeno al 5%.",
+      "description": "1. **Estructura en rejilla de ramas**: Tienda ramas gruesas en **patrón cruzado de cuadrícula** sobre los leños para soportar el peso de la cubierta.\n2. **Barrera vegetal de hojas**: Disponga hojas anchas y hierba tupida sobre el enrejado para impedir que la tierra húmeda caiga al interior.\n3. **Capa de 10cm de arcilla y tepes**: Aplique barro húmedo y tepes invertidos con un **grosor de 10cm**, bloqueando el **95% de la entrada de aire**.\n4. **Apertura de tomas y chimenea**: Perfore **dos respiraderos del grosor de un dedo** a nivel del suelo a favor del viento y **una chimenea central del tamaño de un puño**.",
       "actionNote": "> Control de sellado: Si sale humo por grietas en la cúpula de barro, tápelas de inmediato con barro fresco para evitar que prenda fuego abierto.",
       "svgFileName": "pr09-step-03.svg",
       "svgLabels": [
@@ -83,8 +93,8 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Distinguir el color del humo, sellar y enfriar antes de cosechar",
-      "description": "Durante las primeras 1-2 horas, la chimenea emite un humo blanco denso de vapor de agua. Tras 2-3 horas, cuando el humo se vuelva tenue, transparente y azulado, el agua y el alquitrán se habrán disipado por completo: ¡la madera se ha convertido en carbón puro! Selle de inmediato la chimenea y las tomas de aire con bolas de barro. Espere al menos 6 horas hasta que el montículo esté totalmente frío al tacto antes de desenterrar.",
-      "actionNote": "> Peligro de explosión: Si abre el horno mientras está caliente, entrará aire fresco y se producirá una llamarada explosiva que convertirá el carbón en cenizas. Deje enfriar por completo.",
+      "description": "1. **Monitoreo de vapor blanco denso**: Observe el vapor blanco denso que brota de la chimenea durante las primeras **1–2 horas** al evaporarse la humedad interna.\n2. **Detección de humo azul tenue**: Identifique la transición hacia un **humo azul pálido y translúcido** tras **2–3 horas**, indicio de carbonización completa.\n3. **Sellado hermético total con barro**: Tape de inmediato la chimenea y las dos tomas de aire con bolas de barro fresco para **cortar todo flujo de aire**.\n4. **Enfriamiento lento de 6 horas y cosecha**: Deje enfriar el pozo durante **al menos 6 horas** hasta que el suelo esté completamente frío al tacto antes de desenterrar el carbón sonoro.",
+      "actionNote": "> Alerta de explosión por retroceso (Backdraft): Abrir un horno aún caliente provoca una violenta entrada de oxígeno que desencadena una explosión de fuego, reduciendo el carbón a cenizas en segundos. Deje enfriar por completo.",
       "svgFileName": "pr09-step-04.svg",
       "svgLabels": [
         "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
@@ -93,7 +103,12 @@
         "Sellado hermético total y enfriamiento",
         "Cosecha de carbón duro con sonido metálico",
         "[CLAVE] Sellar con humo azul y enfriar del todo"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Prevención de llamarada explosiva y estabilización lenta",
+        "text": "Al completarse la carbonización, la cámara del horno es un reservorio térmico sin oxígeno. Una apertura abrupta aspira aire fresco e inflama los gases calientes (retroceso de llama). Sellar herméticamente y enfriar lentamente durante **más de 6 horas** estabiliza la estructura de carbono sin pérdidas."
+      }
     }
   ],
   "fatalMistake": {
@@ -112,6 +127,6 @@
     "description": "Vista técnica del horno subterráneo cónico operando con restricción de oxígeno al 95%, produciendo carbón vegetal poroso de roble ideal para calor sin humo y purificación de agua."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "06910fe5beeb5301",
-  "updatedAt": "2026-10-15T14:35:53+09:00"
+  "contentHash": "916099d408d4f948",
+  "updatedAt": "2026-10-15T14:41:20+09:00"
 }

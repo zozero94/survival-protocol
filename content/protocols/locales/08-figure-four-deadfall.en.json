@@ -35,7 +35,7 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
-      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "description": "1. **Vertical Post Carving**: Whittle the top of the **20cm vertical post** into a flat screwdriver wedge and cut a crisp square notch across the midsection.\n2. **Diagonal Strut Carving**: Notch a clean 45-degree V-socket into the top of the **25cm diagonal strut** and bevel the bottom foot into a flat chisel edge.\n3. **Horizontal Bait Stick Carving**: Carve a square catch ledge on the **30cm bait stick** to mate with the post, cut a rear notch for the strut foot, and taper the inner tip into a sharp needle point.\n4. **Right-Angle Joint Inspection**: Verify all interlocking ledges form crisp **90-degree square shoulders** rather than rounded bevels.",
       "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
@@ -44,12 +44,17 @@
         "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
         "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
         "[KEY] Carve crisp square notches that bite firmly"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Static Friction Equilibrium and Hair-Trigger Critical Sensitivity",
+        "text": "The three components of the Figure-4 trap maintain mechanical equilibrium via the **coefficient of static friction** of the perpendicular notches. Whittling catch ledges down to an ultra-shallow depth of **2–3mm** drastically reduces the required trigger dislodging force to **under 50g**, delivering extreme sensitivity."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Step 2: Rest the Diagonal Strut on top of the Vertical Post",
-      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "description": "1. **Vertical Base Alignment**: Plant the vertical post upright on firm, flat ground with zero wobble.\n2. **Hinge Joint Engagement**: Mate the top V-socket of the diagonal strut onto the chisel crest of the post at an exact **45-degree incline**.\n3. **Axial Alignment Verification**: Apply light finger pressure from above to ensure the strut remains locked securely along the **vertical post axis**.",
       "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
@@ -58,12 +63,17 @@
         "Strut 2 V-Notch Joint",
         "Locks firmly at 45°",
         "[KEY] Top hinge locks firmly without sliding"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD VECTOR PHYSICS",
+        "title": "45-Degree Angular Support and Compressive-Shear Force Resolution",
+        "text": "Setting the diagonal strut at an exact **45-degree angle** resolves the downward gravitational force of the boulder into balanced vertical compressive load on the post and horizontal tension on the bait stick. This geometry represents the optimal threshold between rock support and instantaneous trigger release."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Step 3: Insert the Bait Stick to make the 'Number 4' stand alone",
-      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "description": "1. **Horizontal Arm Orientation**: Hold the bait stick horizontally parallel to the ground, hooking its front catch ledge into the **central notch of the post**.\n2. **Strut Foot Seat**: Rest the lower beveled foot of the diagonal strut lightly into the **rear notch of the bait stick**.\n3. **Self-Balancing Release**: Slowly withdraw both hands and verify the assembly self-balances under mutual friction in a rigid **numeral 4 silhouette** without cords.",
       "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
@@ -77,7 +87,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Lean the heavy rock on top & test 0.1-second hair trigger",
-      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "description": "1. **Bait Fixation**: Firmly impale bait insects or wild berries onto the sharp interior tip of the horizontal trigger stick.\n2. **Deadfall Slab Seating**: Lift a flat boulder of **weight 10–15kg** and lean its leading edge onto the strut crest at a **40–45 degree tilt**.\n3. **Safety Clearance**: Keep your hands strictly to the side of the stone, never placing fingers beneath the **crush drop zone**.\n4. **0.1-Second Release Verification**: Tap the bait stick gently with a twig to prove the trigger slips and drops the rock in **under 0.1 seconds**.",
       "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
@@ -86,7 +96,12 @@
         "Bait set on inner tip",
         "Drops rock in 0.1s when touched",
         "[KEY] Hair trigger collapses instantly on touch"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD KINEMATICS",
+        "title": "0.1-Second Gravitational Free-Fall and Terminal Impact Force",
+        "text": "Upon trigger release, the boulder free-falls under gravitational acceleration, impacting the ground in **under 0.1 seconds**. A **15kg** deadfall slab delivers instantaneous terminal momentum that crushes target small game before its neuro-muscular auditory response (approx. 0.15–0.2s) can initiate an escape jump."
+      }
     }
   ],
   "fatalMistake": {
@@ -106,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "46ed0acd1b57e2da"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "51e4bec4273ad957"
 }

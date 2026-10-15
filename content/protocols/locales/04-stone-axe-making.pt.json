@@ -30,8 +30,8 @@
     {
       "stepNumber": "01",
       "title": "Bater as pedras a 45 graus para soltar uma lâmina afiada",
-      "description": "Apoie bem a pedra grande no chão e bata na borda dela em um ângulo inclinado de 45 graus usando a pedra redonda. Bater reto no meio só esfarela a rocha, mas bater na quina a 45 graus destaca de uma só vez uma lasca do tamanho da palma da mão com fio de navalha.",
-      "actionNote": "> Dica principal: Não bata no meio plano da pedra. Mire 1–2cm para dentro da borda e dê uma pancada firme e rápida.",
+      "description": "1. **Estabilização da bigorna de pedra**: Apoie firmemente no chão uma pedra de rio de **largura 15–20cm** de forma plana e sem folgas.\n2. **Calibração do ponto de impacto**: Mire com precisão a **1–2cm para dentro** da borda da margem externa.\n3. **Impacto chanfrado a 45 graus**: Desça a pedra redonda com vigor em um ângulo exato de **45 graus** contra a quina.\n4. **Seleção da lasca afiada**: Destaque uma lâmina de pedra do tamanho da palma com fio de navalha e **espessura de 1–2cm**.",
+      "actionNote": "> Regra do ângulo de impacto: Bater a 90 graus no centro plano esmigalha a rocha em cascalho inútil. Bata obrigatoriamente na borda a 45 graus para obter uma lâmina afiadíssima.",
       "svgFileName": "pr04-step-01.svg",
       "svgLabels": [
         "1. Pedra redonda (martelo)",
@@ -39,13 +39,18 @@
         "Lâmina afiada (1-2cm)",
         "4. Lasca de machado solta",
         "3. Pedra base (15-20cm)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD GEOLOGY",
+        "title": "Fratura concoidal e dispersão mecânica de ondas de choque",
+        "text": "O quartzo e o sílex não têm planos de clivagem e partem em padrões ondulados concêntricos na chamada **fratura concoidal**. O golpe a **45 graus** guia a energia de choque ao longo da superfície, desprendendo uma lâmina de corte com **1–2cm** de espessura extremamente afiada."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Rachar a ponta do cabo de madeira, encaixar a lâmina e preencher com resina",
-      "description": "Use uma pedra afiada para abrir uma fenda vertical de 5–7cm no topo do cabo de madeira. Amarre primeiro uma fibra logo abaixo da fenda para a madeira não rachar mais para baixo, e encaixe a parte traseira grossa da lâmina de pedra. Depois, derreta a resina de pinheiro no fogo, misture pó fino de carvão e preencha todos os espaços.",
-      "actionNote": "> Como funciona: A resina pura fica quebradiça como vidro depois que esfria. Misturar um terço de pó de carvão cria uma cola natural super resistente a impactos.",
+      "description": "1. **Amarração de contenção antirrachadura**: Amarre firmemente um cordão **10cm abaixo** da ponta do cabo para bloquear rachaduras descontroladas.\n2. **Corte da fenda longitudinal**: Com uma pedra afiada, abra uma ranhura vertical de **profundidade 5–7cm** no topo do galho.\n3. **Assentamento profundo da lâmina**: Empurre a parte traseira grossa da pedra até o fundo da fenda central.\n4. **Preenchimento com epóxi de resina**: Misture resina de pinheiro derretida com **carvão moído na proporção 1:1** e compacte a mistura em todas as folgas.",
+      "actionNote": "> Regra da mistura composta: A resina pura fica quebradiça como vidro ao esfriar. O pó de carvão vegetal absorve impactos e forma um epóxi natural inquebrável.",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Encaixar lâmina por cima",
@@ -54,13 +59,18 @@
         "3. Resina + pó de carvão",
         "4. Amarrar embaixo antes",
         "Espessura do cabo: 3,5-4cm"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD CHEMISTRY",
+        "title": "Resina terpênica e matriz composta de partículas de carbono",
+        "text": "A resina de pinho contém ácidos diterpênicos que polimerizam no resfriamento, mas são frágeis. A adição de micropartículas de carbono (carvão) bloqueia a propagação de microfissuras, simulando a resistência de **compósitos de carbono e epóxi** modernos."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Amarrar firme em X com cipó úmido e secar na sombra",
-      "description": "Com a fibra interna do cipó bem molhada e macia, dê mais de 10 voltas bem apertadas cruzando em X sobre a lâmina de pedra e o cabo de madeira. Em seguida, enrole a base na horizontal, dê um nó firme e deixe secar na sombra. O cipó molhado encolhe quase 30% ao secar, prendendo a pedra como se fosse arame de aço.",
-      "actionNote": "> Atenção: Depois de seco, balance a pedra com força usando a mão; ela não pode ter nenhuma folga. Não tente secar perto do fogo para não queimar e romper as fibras.",
+      "description": "1. **Hidratação da fibra do líber**: Mergulhe em água a casca interna flexível de cipó para maximizar a elasticidade das fibras.\n2. **Amarração diagonal em X**: Cruze a fibra molhada em X sobre a lâmina e o cabo por **pelo menos 10 voltas bem tensas**.\n3. **Bloqueio do colar inferior**: Enrole o restante da fibra horizontalmente abaixo da junção e aperte com um nó de tração firme.\n4. **Secagem e cura à sombra**: Deixe secar totalmente em local ventilado e à sombra, longe do sol direto, para obter aperto máximo.",
+      "actionNote": "> Princípio de secagem na sombra: Nunca seque perto das chamas da fogueira, pois o calor queima e rompe as fibras. A secagem natural na sombra encolhe o cipó em 30%, travando a lâmina como aço.",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Amarração em X com cipó",
@@ -68,7 +78,12 @@
         "3. Voltas horizontais na base",
         "4. Encolhe 30% ao secar",
         "Pronto: Machado firme em peça única"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Contração por desidratação do líber e tensão radial de aperto",
+        "text": "Fibras vegetais de líber incham quando hidratadas e sofrem uma **contração volumétrica de até 30%** conforme a umidade evapora. A tensão de tração circunferencial gerada integra a pedra e a madeira como um parafuso mecânico."
+      }
     }
   ],
   "fatalMistake": {
@@ -82,6 +97,6 @@
     "description": "Uma lâmina de sílex lascada bifacialmente encaixada em cabo de carvalho fendido, amarrada firmemente em X com cipós e selada com resina de pinho."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "6ccdf224285e93f4"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "1815809587c73dc4"
 }

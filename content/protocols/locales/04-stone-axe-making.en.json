@@ -30,8 +30,8 @@
     {
       "stepNumber": "01",
       "title": "Strike Stones Together at 45 Degrees to Split Off a Sharp Blade",
-      "description": "Brace the large river stone firmly on the ground, then strike its outer edge at a 45-degree angle using your round hammerstone. Hitting flat in the middle only crushes the rock, but striking the edge at 45 degrees cleanly splits off a palm-sized stone flake with a razor-sharp cutting edge.",
-      "actionNote": "> Key Tip: Do not hit the flat center of the stone. Aim 1–2cm inside the outer rim and strike firmly in one clean motion to split off a long, sharp blade.",
+      "description": "1. **Base Anvil Stabilization**: Brace a large river stone of **width 15–20cm** firmly flat on the ground so it cannot wobble.\n2. **Target Impact Calibration**: Aim your strike point precisely at **1–2cm inside** the outer rim edge.\n3. **45-Degree Bevel Strike**: Swing your round hammerstone forcefully down at an exact **45-degree angle** against the outer margin.\n4. **Sharp Flake Selection**: Detach a palm-sized stone blade with a razor-sharp cutting edge and a thickness of **1–2cm**.",
+      "actionNote": "> Striking Angle Rule: Hitting flat in the center at 90 degrees shatters the entire stone into useless pebbles. You must strike the edge at 45 degrees to flake off a razor-sharp blade.",
       "svgFileName": "pr04-step-01.svg",
       "svgLabels": [
         "1. Round Hammerstone",
@@ -39,13 +39,18 @@
         "Sharp Blade (1-2cm)",
         "4. Split Stone Axe Blade",
         "3. Base River Stone (15-20cm)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD GEOLOGY",
+        "title": "Conchoidal Fracture Mechanics and Shockwave Deflection",
+        "text": "Quartzite and cryptocrystalline silica lack cleavage planes and fracture in smooth, wave-like **conchoidal patterns**. Striking at a **45-degree angle** directs kinetic energy along the outer perimeter, spalling off an ultra-sharp cutting edge of **1–2cm** thickness."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Split the Top of the Wooden Handle, Wedge the Blade, and Fill with Resin",
-      "description": "Use a sharp stone flake to split the top of your wooden handle 5–7cm down the center. Tie a cord tightly right below the split first so the wood does not crack any further down, then push the thick back end of the stone blade deep into the slot. Melt pine resin over a fire, mix in fine charcoal powder, and pack it into every gap.",
-      "actionNote": "> How It Works: Pure pine resin cools brittle like glass and cracks on impact. Mixing in about one-third crushed charcoal powder turns it into a tough, shock-absorbing natural glue.",
+      "description": "1. **Anti-Split Collar Binding**: Tie cord tightly **10cm below** the handle top first to prevent uncontrolled splitting down the shaft.\n2. **Longitudinal Notch Carving**: Split the top of the dense hardwood handle vertically to create a notch of **depth 5–7cm**.\n3. **Deep Blade Seating**: Push the thick butt of the stone blade firmly and fully into the carved central slot.\n4. **Charcoal-Resin Matrix Packing**: Melt pine sap and mix with powdered **charcoal in a 1:1 ratio**, packing the molten adhesive into every gap.",
+      "actionNote": "> Composite Mixing Rule: Pure pine resin cools brittle as glass and shatters on impact. Blending fine charcoal powder creates an impact-absorbing natural epoxy that never cracks.",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Push Blade Down In",
@@ -54,13 +59,18 @@
         "3. Melted Resin + Charcoal",
         "4. Tie Below Split First",
         "Handle Width: 3.5-4cm"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD CHEMISTRY",
+        "title": "Terpene Resin and Carbon Particulate Composite Matrix",
+        "text": "Pine sap contains diterpenic acids that polymerize upon cooling but remain highly brittle. Adding microscopic carbon (charcoal) particles arrests crack propagation through micro-bridging, mirroring modern **carbon-epoxy composites** for field durability."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Wrap Tightly in an X-Pattern with Wet Vine Bark and Dry in the Shade",
-      "description": "Take water-soaked, flexible inner vine bark and wrap it tightly in a diagonal X-pattern across both the stone blade and the wooden handle for more than 10 full turns. Wrap horizontally around the lower neck, tie off the knot, and let it dry in the shade. Wet vine bark shrinks by nearly 30% as it dries, clamping the stone blade like steel wire.",
-      "actionNote": "> Watch Out: Once dry, shake the stone head hard by hand—there must be zero wobble before swinging. Never dry it right next to flames or the vine fibers will scorch and snap.",
+      "description": "1. **Bast Fiber Hydration**: Soak flexible inner vine bark in water to maximize cellular elasticity.\n2. **Diagonal X-Lashing**: Criss-cross the wet bark diagonally around both stone blade and wooden haft for **at least 10 firm wraps**.\n3. **Lower Shaft Collar Lock**: Wrap the remaining fiber horizontally around the lower neck and cinch tight with a secure knot.\n4. **Ventilated Shade Cure**: Dry thoroughly in a breezy, shaded location away from direct sun to achieve maximum clamping force.",
+      "actionNote": "> Shade Drying Principle: Never force-dry over campfire flames as heat burns and snaps the delicate plant fibers. Natural air-drying in the shade causes the vine to shrink by 30%, locking the blade like steel wire.",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Wet Vine X-Lashing",
@@ -68,7 +78,12 @@
         "3. Lower Collar Wrap",
         "4. Shrinks 30% When Dry",
         "Finished: Solid One-Piece Stone Axe"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Bast Fiber Desiccation Shrinkage and Radial Clamping Tension",
+        "text": "Bast fibers like kudzu and elm inner bark expand when hydrated and undergo **up to 30% radial contraction** as moisture evaporates. This mechanical shrinkage generates tremendous hoop stress, locking the lithic blade to the haft like an iron bolt."
+      }
     }
   ],
   "fatalMistake": {
@@ -82,6 +97,6 @@
     "description": "A bifacially flaked flint blade seated deeply into a split oak haft, bound firmly with criss-cross vine lashing and sealed with pine pitch resin composite."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "6ccdf224285e93f4"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "1815809587c73dc4"
 }

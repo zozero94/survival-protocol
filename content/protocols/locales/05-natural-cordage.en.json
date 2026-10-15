@@ -35,8 +35,8 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Select Flexible Stalks, Scrape Outer Bark, and Peel White Inner Bark",
-      "description": "Bend the stalk in half to confirm it flexes without snapping. Hold a stone edge at an angle and lightly scrape away the rough brown outer bark until the pale, tough inner fiber layer appears. Lift the bottom edge with your fingernail and peel long ribbon strips upward away from the woody core.",
-      "actionNote": "> Key Tip: Dead, dry stalks on the ground have rotted fibers that crumble under tension. Always harvest inner bark from live or freshly cut stalks.",
+      "description": "1. **Live Stalk Elasticity Verification**: Slowly flex the stalk in half to ensure it bends smoothly past **90 degrees** without breaking.\n2. **Outer Bark Stripping**: Angle a sharp stone edge against the stem to carefully scrape away only the brittle **brown outer bark**.\n3. **Bast Layer Inspection**: Visually verify the moist, gleaming **white inner bast fibers** emerging beneath the scraped surface.\n4. **Woody Core Separation**: Lift the bottom edge with your fingernail and pull upward firmly to **strip the tough ribbon fibers** clean off the rigid woody core.",
+      "actionNote": "> Harvesting Principle: Dead, dry stalks on the ground have rotted fibers that crumble under tension. Always harvest inner bark from live or freshly cut green stalks.",
       "svgFileName": "pr05-step-01.svg",
       "svgLabels": [
         "① Scrape off rough outer bark with stone edge",
@@ -44,13 +44,18 @@
         "③ Tough white inner bast fiber (core rope material)",
         "④ Stiff woody center core (peel off & discard)",
         "⑤ Flexible live stalk that bends without snapping"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Phloem Bast Fiber Tensile Strength and Pectin Separation",
+        "text": "The **phloem bast tissue** located between the outer epidermis and the inner xylem core consists of parallel crystalline cellulose microfibrils, delivering a tensile strength nearly **50% of mild structural steel**. Clean mechanical scraping isolates these continuous load-bearing fibers without shear damage."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Step 2: Soak in Water for 20 Minutes and Pound into Soft Hair-Like Fibers",
-      "description": "Submerge the peeled inner bark ribbons in stream water for 20~30 minutes. Lay the softened strips across a flat river stone and tap gently from top to bottom with a round stone. Once the stiff grain breaks down into soft, hair-like strands, divide them evenly into two equal bundles.",
-      "actionNote": "> Core Principle: Striking too hard with a sharp rock severs the fibers. Press and roll gently with a smooth stone to separate long intact strands.",
+      "description": "1. **Hydration and Pectin Leaching**: Submerge peeled bast ribbons completely in water for **20–30 minutes** to dissolve stiffening tree sap.\n2. **Flat Anvil Placement**: Spread the softened ribbons flat across a wide, stable **river anvil stone**.\n3. **Gentle Hammerstone Milling**: Tap and roll a round stone gently along the length to break down stiff grain into **pliable hair-like filaments**.\n4. **Equal Dual Splitting**: Divide the resulting continuous fiber bundle into **2 equal strands** of identical thickness.",
+      "actionNote": "> Pounding Control: Striking too hard severs the continuous filaments. Roll and press gently with a smooth stone to preserve maximum tensile length.",
       "svgFileName": "pr05-step-02.svg",
       "svgLabels": [
         "① Inner bark soaked 20+ min in stream water",
@@ -63,8 +68,8 @@
     {
       "stepNumber": "03",
       "title": "Step 3: Twist Away and Cross Toward You (Reverse-Wrap Locking Method)",
-      "description": "Pinch the middle of a fiber bundle between your left thumb and forefinger, folding it into an upper and lower strand. With your right hand, twist the upper strand tightly away from your body, then bring that twisted strand over the lower strand toward your body. Move your left thumb forward to pinch the new crossing point and repeat: twist the top strand away, then wrap it toward you.",
-      "actionNote": "> Core Principle: Twisting both strands in the same direction causes the rope to unravel immediately. Twisting away while wrapping toward you locks opposing forces together.",
+      "description": "1. **Bight Pinch Initiation**: Fold the continuous fiber bundle in half, pinching the center loop tightly between your left thumb and forefinger to form **upper and lower plies**.\n2. **Individual Clockwise Twist**: Grip the upper ply with your right hand and twist tightly away from your body (↑) in a **clockwise rotation**.\n3. **Collective Counter-Cross**: Bring the twisted upper ply down over the lower ply toward your body (↓) in a **counter-clockwise crossing movement**.\n4. **Progressive Pinch Advance**: Walk your left thumb forward to pinch the new junction, repeating the **twist-away and wrap-inward cycle** continuously.",
+      "actionNote": "> Reverse-Wrap Locking Law: Twisting both strands in the same direction causes the rope to unravel instantly. Counter-twisting individual plies against the collective braid balances torque and creates a permanent mechanical lock.",
       "svgFileName": "pr05-step-03.svg",
       "svgLabels": [
         "① Top strand: twist tightly away from body (↑)",
@@ -72,13 +77,18 @@
         "③ Pinch junction firmly with left thumb & index",
         "④ Cross twisted top strand over toward body (↓)",
         "⑤ Self-locking reverse-wrap structure"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Torque Equilibrium and Mechanical Self-Locking in Reverse-Wrap Braiding",
+        "text": "By twisting individual plies clockwise (Z-twist) while braiding them counter-clockwise (S-twist), the opposing elastic recovery moments cancel each other out in complete **torque equilibrium**. This friction interlock prevents unraveling even when tension is fully released."
+      }
     },
     {
       "stepNumber": "04",
       "title": "Step 4: Overlap New Fibers by 10cm to Splice Endless Length",
-      "description": "When either strand thins down with about 10cm remaining, lay a fresh fiber bundle alongside the old tail with a 10cm overlap. Hold both together as a single strand and continue twisting away and wrapping toward you. Always stagger splices between the upper and lower strands by at least one hand-span (15cm).",
-      "actionNote": "> Warning: Splicing both strands at the exact same spot creates a weak, bulky lump that snaps under load.",
+      "description": "1. **Splice Window Detection**: Identify when either working strand thins down to its final **10cm tail**.\n2. **Overlap Layering**: Lay the tapered end of a fresh fiber bundle parallel alongside the depleting tail across a **10cm overlap zone**.\n3. **Integrated Dual Ply Wrap**: Pinch both bundles together as a single strand and twist tightly across **3–4 consecutive braid cycles**.\n4. **Staggered Splice Offset**: Offset the splices between upper and lower plies by a **minimum distance of 15cm**.",
+      "actionNote": "> Staggered Splice Rule: Splicing both strands at the same spot creates a swollen lump that shears under heavy tension. Always stagger splices by at least 15cm to preserve continuous tensile strength.",
       "svgFileName": "pr05-step-04.svg",
       "svgLabels": [
         "① Existing strand thinning with 10cm left",
@@ -86,13 +96,18 @@
         "③ Twist overlapped tails together as one strand",
         "④ Smooth splice without bulky weak lumps",
         "⑤ Stagger top & bottom splices by 15cm"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD TENSION",
+        "title": "Staggered Splice Architecture and Interfacial Shear Friction",
+        "text": "Aligning splices in both plies at the same axial point causes sudden cross-sectional discontinuities, creating catastrophic stress concentrations. Offsetting joints by **at least 15cm** transfers tensile load via **interfacial shear friction** to the unbroken parallel ply, preserving 100% of the cord's breaking strength."
+      }
     },
     {
       "stepNumber": "05",
       "title": "Step 5: Tie an End Stopper Knot and Test with Full Body Weight on a Tree",
-      "description": "Once you reach your target length (5m or more), fold the last 3cm into a loop and tie a tight overhand stopper knot. Lightly scrape off loose fuzz along the rope with a stone flake to reduce friction wear. Wrap the finished cordage around a sturdy tree trunk and pull back with your full body weight (50kg+) to verify no splices slip.",
-      "actionNote": "> Field Check: If you hear fibers snapping or see a splice slipping, wrap an extra thin fiber bundle around that section.",
+      "description": "1. **Terminal Stopper Knot**: Upon reaching the target length (5m+), cinch the final **3cm end segment** into a tight overhand stopper knot.\n2. **Lithic Shear Trimming**: Lightly scrape a sharp stone flake along the rope body to trim stray fuzz and maintain a **uniform 5mm diameter**.\n3. **Arboreal Anchor Lashing**: Wrap the finished cordage at least twice around a solid tree trunk thicker than your forearm.\n4. **50kg Tensile Proof-Load**: Grasp the rope firmly with both hands and suspend your **full body weight of 50kg+** to prove splice integrity.",
+      "actionNote": "> Tensile Proof Standard: If you hear fiber snapping sounds or observe splice slippage under load, wrap a thin reinforcing fiber sheath directly over the affected zone.",
       "svgFileName": "pr05-step-05.svg",
       "svgLabels": [
         "① Overhand stopper knot 3cm from the end",
@@ -119,6 +134,6 @@
     "description": "A uniform 8mm braided rope coil made by twisting bast fibers clockwise and counter-wrapping plies, sustaining over 90 kgf tensile load without slipping."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "03d1706e68d38783"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "dca7cf4417941f64"
 }

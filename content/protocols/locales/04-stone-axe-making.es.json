@@ -30,8 +30,8 @@
     {
       "stepNumber": "01",
       "title": "Golpear dos piedras a 45 grados para sacar una hoja afilada",
-      "description": "Apoya bien la piedra grande en el suelo y golpea su borde exterior en un ángulo inclinado de 45 grados con la piedra martillo. Si golpeas el centro en vertical solo romperás la roca, pero al golpear el borde a 45 grados se desprende de una vez una lasca del tamaño de la mano con filo de navaja.",
-      "actionNote": "> Consejo clave: No golpees el centro plano de la piedra. Apunta 1–2cm hacia adentro desde el borde exterior y da un golpe seco y firme.",
+      "description": "1. **Fijación de piedra yunque**: Apoya en el suelo una piedra de río de **ancho 15–20cm** de forma plana para que no se mueva.\n2. **Calibración del punto de impacto**: Apunta con precisión a **1–2cm hacia adentro** del borde exterior de la roca.\n3. **Impacto en bisel a 45 grados**: Descarga la piedra martillo redonda con fuerza en un ángulo exacto de **45 grados** contra el borde.\n4. **Selección de lasca afilada**: Separa una hoja de piedra del tamaño de la palma con filo de navaja y un **grosor de 1–2cm**.",
+      "actionNote": "> Regla de ángulo de impacto: Golpear el centro plano a 90 grados destroza la roca en grava inútil. Golpea obligatoriamente el borde a 45 grados para desprender una hoja ultra afilada.",
       "svgFileName": "pr04-step-01.svg",
       "svgLabels": [
         "1. Piedra martillo redonda",
@@ -39,13 +39,18 @@
         "Filo agudo (1-2cm)",
         "4. Hoja de piedra separada",
         "3. Piedra base (15-20cm)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD GEOLOGY",
+        "title": "Fractura concoidea y mecánica de dispersión de ondas de choque",
+        "text": "La cuarcita y el sílex carecen de planos de exfoliación y se fracturan en ondas suaves según el patrón de **fractura concoidea**. Aplicar el golpe a **45 grados** canaliza la energía hacia el perímetro externo, desprendiendo un filo cortante de **1–2cm** de grosor extremadamente afilado."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Rajar la punta del mango de madera, encajar la hoja y rellenar con resina",
-      "description": "Usa una piedra afilada para abrir unahendidura vertical de 5–7cm en la punta del mango de madera. Ata primero una cuerda justo debajo de la abertura para que la madera no se siga rajando, y mete la parte trasera gruesa de la hoja de piedra. Luego derrite resina de pino al fuego, mézclala con polvo fino de carbón y rellena todos los huecos.",
-      "actionNote": "> Por qué funciona: La resina sola se vuelve frágil como el vidrio al enfriarse. Mezclar un tercio de polvo de carbón crea un pegamento natural súper resistente a los golpes.",
+      "description": "1. **Ligadura de contención inferior**: Ata firmemente con cuerda a **10cm por debajo** de la punta del mango para evitar grietas incontroladas.\n2. **Corte de hendidura longitudinal**: Con una piedra afilada, abre una ranura vertical de **profundidad 5–7cm** en el extremo del mango.\n3. **Inserción profunda de la hoja**: Introduce la base gruesa de la lasca hasta el fondo de la ranura central.\n4. **Relleno con compuesto de resina**: Funde resina de pino mezclada con **polvo de carbón en proporción 1:1**, rellenando cada hueco interno.",
+      "actionNote": "> Regla de mezcla compuesta: La resina pura se vuelve quebradiza como el vidrio al enfriarse. Mezclar polvo fino de carbón vegetal absorbe impactos y crea un epoxi natural irrompible.",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Encajar hoja hacia abajo",
@@ -54,13 +59,18 @@
         "3. Resina + polvo de carbón",
         "4. Atar abajo para no rajar",
         "Grosor del mango: 3.5-4cm"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD CHEMISTRY",
+        "title": "Resina terpénica y matriz compuesta de partículas de carbono",
+        "text": "Los ácidos diterpénicos de la resina de pino polimerizan al enfriarse pero son muy frágiles. Al añadir micropartículas de carbón vegetal, estas detienen la propagación de grietas, emulando la resistencia de los modernos **compuestos de fibra de carbono y epoxi**."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Atar fuerte en forma de X con liana húmeda y secar a la sombra",
-      "description": "Con la corteza interna de liana bien mojada y flexible, envuelve la hoja de piedra y el mango cruzando en diagonal en forma de X más de 10 vueltas bien tensas. Después enrolla la parte inferior en horizontal, haz un nudo firme y déjalo secar a la sombra. Al secarse, la liana se encoge casi un 30% y aprieta la piedra como si fuera alambre de acero.",
-      "actionNote": "> Precaución: Cuando esté seco, mueve la piedra con fuerza con la mano; no debe moverse ni un milímetro. No la acerques al fuego para secarla rápido o la fibra se quemará y se romperá.",
+      "description": "1. **Hidratación de fibra floemática**: Remoja en agua la corteza interna de liana para maximizar su flexibilidad y elasticidad.\n2. **Ligadura diagonal en X**: Cruza la fibra húmeda en diagonal sobre la piedra y el mango durante **al menos 10 vueltas tensas**.\n3. **Bloqueo horizontal del cuello**: Enrolla la fibra sobrante en horizontal bajo la base y remata con un nudo de máxima tracción.\n4. **Curado en sombra ventilada**: Deja secar por completo en un lugar sombreado y aireado lejos del sol directo para maximizar la presión.",
+      "actionNote": "> Principio de secado en sombra: Jamás seques junto a las llamas del fuego, ya que el calor quema y revienta las fibras. El secado natural a la sombra contrae la liana un 30%, aprisionando la hoja como alambre de acero.",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Amarre en X con liana",
@@ -68,7 +78,12 @@
         "3. Vueltas inferiores",
         "4. Encoge 30% al secar",
         "Listo: Hacha firme de una sola pieza"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Contracción por desecación del floema y tensión radial de apriete",
+        "text": "Las fibras del líber (floema) se expanden al absorber agua y experimentan **hasta un 30% de contracción volumétrica** al evaporarse la humedad. Esta fuerza radial genera una tensión mecánica extrema que unifica la piedra y la madera como un perno de acero."
+      }
     }
   ],
   "fatalMistake": {
@@ -82,6 +97,6 @@
     "description": "Una hoja de pedernal tallada bifacialmente incrustada en un mango de roble hendido, atada firmemente en X con lianas y sellada con resina de pino."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "6ccdf224285e93f4"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "1815809587c73dc4"
 }

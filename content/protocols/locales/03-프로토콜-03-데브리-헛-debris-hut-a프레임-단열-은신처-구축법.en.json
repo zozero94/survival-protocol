@@ -1,24 +1,24 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Debris Hut A-Frame Thermal Shelter Construction",
+  "title": "A-Frame Debris Hut Thermal Shelter (Emergency Primitive Bivouac)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[THREAT LEVEL: CRITICAL]",
-  "summary": "Direct exposure to freezing wind and rain causes fatal hypothermia within 3 hours. By geometrically layering dry forest litter and deadwood to trap Dead Air Space, you build a zero-fire survival shelter that maintains core body temperature purely through human metabolic radiant heat (80–100W).",
+  "summary": "Surviving sub-zero wilderness without fire requires trapping your metabolic body heat like a heavy down sleeping bag. By interlocking an A-frame ridgepole spine and banking a 1-meter mound of dry forest leaves, this debris hut maintains internal warmth even in freezing rains and howling gales.",
   "timeRequired": "90–120 MINUTES",
-  "successRate": "92.4% (with ≥60cm insulation depth)",
-  "difficulty": "Tier 2 (Heavy Primitive Construction)",
-  "outputPerHour": "1 Shelter (≥1.5m³ insulated volume)",
+  "successRate": "92% (Leaf Depth ≥ 60cm)",
+  "difficulty": "Tier 1 (Zero Modern Tools)",
+  "outputPerHour": "1 Survival Shelter / 2 Hours",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Ridge Pole (Primary Spine)",
-      "desc": "1 straight, solid dry hardwood log (length 3.0–3.5m, diameter 10–15cm)"
+      "name": "Main Ridgepole (Spine Timber)",
+      "desc": "One straight, sturdy hardwood limb (3.0–3.5m length, 10–15cm diameter) capable of bearing deadweight"
     },
     {
       "id": "mat-02",
-      "name": "Y-Frame Bipod & Rib Sticks",
-      "desc": "2 Y-forked support poles (length 1.5m, Ø 5–8cm) and 40–50 rib branches (length 1.0–1.5m)"
+      "name": "Y-Bipod Fork Sticks & Rib Poles",
+      "desc": "Two 1.5m chest-high Y-forked branch posts and 40–50 arm-length (1–1.5m) rib branches for the wall lattice"
     },
     {
       "id": "mat-03",
@@ -29,9 +29,9 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Erect A-Frame Bipod & Anchor Ridgepole",
-      "description": "Interlock two Y-forked support sticks at the apex (or lash with wild vine) to form a sturdy bipod, then seat one end of the ridgepole into the fork at 0.8–1.0m height. Anchor the tail end directly into the ground facing into the wind (windward). Size the interior strictly so your body barely crawls inside.",
-      "actionNote": "> FIELD RULE: Excess interior volume prevents metabolic heat from warming the air pocket, resulting in death by hypothermia. Enforce strict coffin clearance—leave only one fist (≤10cm) around your shoulders.",
+      "title": "Step 1: Erect A-Frame Bipod and Seat Ridgepole",
+      "description": "1. **Interlock Y-Bipod Posts**: Stand two sturdy Y-forked branches facing each other to create a stable tripod apex **0.8–1.0m above ground**.\n2. **Anchor Ridgepole Spine**: Seat one end of the **3.0–3.5m hardwood ridgepole** securely into the bipod fork and ground the tail end firmly into the windward soil.\n3. **Verify Coffin Sizing**: Ensure the interior width leaves only **one fist of clearance (about 10cm)** around your shoulders when lying down.",
+      "actionNote": "> Volume Minimization Rule: An oversized interior cannot be heated by human body warmth. Keep the interior strictly form-fitting to trap thermal air pockets.",
       "svgFileName": "pr03-step-01.svg",
       "svgLabels": [
         "CRITICAL VOLUME RULE [INTERIOR SPEC]:",
@@ -41,13 +41,18 @@
         "Y-BIPOD & VINE LASHING (Apex Joint)",
         "COFFIN CLEARANCE: +10cm (1 Fist Max Gap)",
         "HEIGHT: 0.8~1.0m"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Interior Volume Minimization & Metabolic Radiative Heat Trapping",
+        "text": "The sole thermal heat source in a non-heated emergency shelter is human basal metabolic radiation (**approx. 100W**). An oversized interior creates a convective sink that exhausts body heat. Sizing the cabin strictly like a coffin eliminates air draft and holds trapped air at a comfortable temperature."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "Lay Rib Lattice & Pack High-Density Floor Mattress",
-      "description": "Lean rib sticks tightly along both sides of the ridgepole at a 45°–60° angle to form a dense lattice wall that prevents debris from falling through. Immediately pack at least 40cm of bone-dry leaves onto the floor so that even under full body weight it remains 15–20cm thick.",
-      "actionNote": "> PHYSICS PRINCIPLE: Cold ground conducts heat away dozens of times faster than still air. Without a compressed 15–20cm floor mattress, conductive heat loss triggers hypothermia shock rapidly.",
+      "title": "Step 2: Lay Rib Poles at 45° and Pack 40cm Dry Leaf Bed",
+      "description": "1. **Lay 45-Degree Rib Lattice**: Lean 40–50 rib sticks against both sides of the spine at a steep **45°–60° angle** like closely spaced ribs.\n2. **Pack 40cm Dry Leaf Mattress**: Pile bone-dry leaves, pine needles, and dry grass over the bare ground to **at least 40cm depth**.\n3. **Verify Compressed Thickness**: Lie down to compress the bed; verify that **at least 20cm of dead-air insulation** remains between your back and the soil.",
+      "actionNote": "> Conductive Heat Shield: Bare frozen soil conducts body heat away 20 times faster than air. A thick dry mattress is even more vital than the roof.",
       "svgFileName": "pr03-step-02.svg",
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [FLOOR INSULATION]:",
@@ -56,13 +61,18 @@
         "RIB LATTICE: 45°~60° (Branch Grid)",
         "MATTRESS: 40cm → 20cm (Leaf Bed)",
         "GROUND COLD CONDUCTION BLOCKED"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Ground Thermal Conduction & Dead Air Space Insulation Mechanics",
+        "text": "Direct contact with cold soil drains core body heat **20 times faster** than still air. Dry leaves contain countless microscopic dead-air pockets with an exceptionally low thermal conductivity of **0.025 W/m·K**, creating an impenetrable barrier against ground frost."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Shingle 60–90cm Outer Debris & Armor Against Wind",
-      "description": "Cover the rib lattice with fine brush, then pile dry leaves from bottom to top like roof shingles to a thickness of 60–90cm (full arm's length). Lay heavy dead branches over the entire mound to prevent wind stripping, and seal the entrance tightly with a dense leaf plug.",
-      "actionNote": "> CAUTION: Wet debris has zero insulation value and steals body heat via evaporative cooling. Maintain a steep outer slope to shed rain while keeping the inner core bone-dry.",
+      "title": "Step 3: Mound 60–90cm Debris Walls and Seal Entrance",
+      "description": "1. **Weave Twig Underlay**: Cover rib poles with fine dry twigs to prevent leaves from falling through into the sleeping space.\n2. **Bank 60–90cm Debris Wall**: Mound dry leaves from the ground up to the ridgepole to a **depth of 60–90cm (full arm's length)**.\n3. **Weight Down with Armor Branches**: Lay heavy dead branches across the mound in a crosshatch pattern to pin down leaves against storm gusts.\n4. **Seal Entrance with Leaf Plug**: Crawl inside feet first and pull a dense bundle of dry leaves into the doorway to block all outside drafts.",
+      "actionNote": "> Bone-Dry Rule: Mixing wet leaves ruins insulation and causes severe evaporative chilling. Use exclusively crisp, dry forest floor debris.",
       "svgFileName": "pr03-step-03.svg",
       "svgLabels": [
         "INSULATION & SEALING [WALL SPEC]:",
@@ -71,7 +81,12 @@
         "DEADWOOD ARMOR (Wind-Weight Branches)",
         "WATER SHEDDING SLOPE (Rain Drain)",
         "DEAD AIR CORE & PLUG SEAL (Thermal Chamber)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD ARCHITECTURE",
+        "title": "Steep Slope Water Shedding & Multi-Layered Natural Shingling",
+        "text": "When dry debris is piled **60cm thick** on a **steep 45° slope**, leaf surface waxes and interlocking multi-layer structures act like roof shingles, forcing rainwater to run down the outside without penetrating the sleeping core."
+      }
     }
   ],
   "fatalMistake": {
@@ -85,6 +100,6 @@
     "description": "A 2.5m heavy ridgepole and 45° rib frame blanketed by 1 meter of compressed dry leaves and thatch branches, trapping body heat down to sub-zero temperatures without fire."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "042045342785ab42"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "5c83ac034006645f"
 }

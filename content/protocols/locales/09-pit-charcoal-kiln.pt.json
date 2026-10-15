@@ -40,7 +40,7 @@
     {
       "stepNumber": "01",
       "title": "Passo 1: Cavar buraco cônico de 50 cm e fazer leito de brasas",
-      "description": "Escolha solo seco e firme. Escave um buraco de 60 cm de diâmetro na superfície e 50 cm de profundidade, afunilando para 30 cm no fundo. Acenda uma fogueira de gravetos secos no fundo por 15 minutos para secar totalmente a umidade da terra e formar uma base de brasas incandescentes.",
+      "description": "1. **Escavação da cova cônica**: Escolha solo seco e firme e escave uma cova de **60cm de largura no topo e 50cm de profundidade**.\n2. **Perfilamento afunilado inferior**: Modele as paredes para uma base cônica de **30cm de diâmetro** para concentrar o calor no núcleo.\n3. **Secagem de umidade residual**: Queime gravetos secos no fundo por **mais de 15 minutos** para secar as paredes de argila por completo.\n4. **Formação de leito de brasas**: Garanta que as chamas abertas assentem numa espessa **camada de brasas incandescentes** no fundo.",
       "actionNote": "> Dica de escavação: Se restar umidade no fundo, a madeira apodrecerá e o fogo se apagará. Aqueça a base até secar completamente.",
       "svgFileName": "pr09-step-01.svg",
       "svgLabels": [
@@ -49,12 +49,17 @@
         "Profundidade 50cm (base de 30cm)",
         "Brasas de fundo para secagem do solo",
         "[CHAVE] Secar umidade da terra e formar brasas"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Massa térmica subterrânea e retenção convectiva de calor",
+        "text": "Fornos subterrâneos reduzem a perda de calor para o ambiente através do isolamento térmico da terra. A geometria cônica em V concentra as correntes de convecção no centro, mantendo o cozimento anaeróbico **acima de 400°C** por **mais de 3 horas**."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Passo 2: Empilhar toras de carvalho verticalmente sem frestas",
-      "description": "Sobre as brasas do fundo, apoie as toras secas de carvalho (30-40 cm de comprimento, 5-8 cm de espessura) em pé, como colunas bem coladas. Frestas largas deixam o oxigênio circular e queimam tudo até virar cinza. Crave galhos finos como cunhas nos vãos para atingir densidade máxima.",
+      "description": "1. **Posicionamento vertical de toras**: Apoie toras secas de carvalho de **30–40cm de comprimento e 5–8cm de espessura** verticalmente sobre as brasas.\n2. **Densidade de carga radial**: Preencha as toras firmemente do centro para fora, deixando **praticamente zero frestas de ar**.\n3. **Cunhagem de vãos com gravetos**: Crave **galhos da grossura de um dedo** como cunhas nas frestas restantes para eliminar bolsas de oxigênio.\n4. **Verificação de nível do topo**: Confira se o topo da carga de madeira está **nivelado com a borda do solo**.",
       "actionNote": "> Segredo de empilhamento: O forno deve ficar tão compacto que quase não haja vazios. Quanto mais denso, mais resistente o carvão.",
       "svgFileName": "pr09-step-02.svg",
       "svgLabels": [
@@ -63,12 +68,17 @@
         "Galhos finos cunhados nos vãos",
         "Calor subindo das brasas da base",
         "[CHAVE] Minimizar vazios para densidade anaeróbica"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PYROLYSIS",
+        "title": "Empilhamento denso e mecânica de pirólise anaeróbica",
+        "text": "Minimizar os vazios de ar consome o oxigênio interno rapidamente e interrompe a queima com chama aberta. O calor intenso evapora a umidade e alcatrões voláteis, consolidando uma matriz cristalina de **carbono amorfo** que forma o carvão vegetal denso."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Passo 3: Assentar grade de galhos e vedar 95% do ar com barro",
-      "description": "Trance galhos grossos sobre as toras em pé e cubra-os com folhas largas ou capim denso. Aplique por cima 10 cm de barro úmido e placas de grama invertidas. Deixe duas aberturas de entrada de ar da grossura de um dedo na base do lado do vento e uma chaminé do tamanho de um punho no topo, permitindo apenas 5% de oxigênio.",
+      "description": "1. **Estrutura em grade de galhos**: Disponha galhos grossos em **padrão quadriculado cruzado** sobre as toras para suportar o peso da cobertura.\n2. **Camada de barreira de folhas**: Espalhe folhas largas e capim denso sobre a grade para impedir que a terra caia no interior do forno.\n3. **Aplicação de 10cm de argila e leivas**: Aplique barro úmido e placas de grama com **10cm de espessura**, bloqueando **95% do fluxo de ar**.\n4. **Abertura de entradas e chaminé**: Abra **duas entradas de ar da grossura de um dedo** no solo a barlavento e **uma chaminé central do tamanho de um punho**.",
       "actionNote": "> Checagem de vedação: Se sair fumaça por rachaduras no barro, tampe-as imediatamente com argila fresca para evitar chamas abertas.",
       "svgFileName": "pr09-step-03.svg",
       "svgLabels": [
@@ -83,8 +93,8 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Monitorar a cor da fumaça, lacrar e resfriar para colher",
-      "description": "Nas primeiras 1 a 2 horas, sai uma fumaça branca densa de vapor de água. Após 2 a 3 horas, quando a fumaça se tornar azul-clara e translúcida, a água e os alcatrões já evaporaram: a madeira virou carvão puro! Vede imediatamente todas as aberturas com bolas de barro. Aguarde pelo menos 6 horas até o solo estar frio ao toque antes de desenterrar.",
-      "actionNote": "> Risco de explosão: Se abrir o forno ainda quente, a entrada repentina de oxigênio causará uma explosão que reduzirá o carvão a cinzas. Deixe esfriar por completo.",
+      "description": "1. **Monitoramento de vapor branco denso**: Observe o vapor branco denso expelido pela chaminé durante as primeiras **1–2 horas** conforme a umidade evapora.\n2. **Identificação de fumaça azul tênue**: Note a transição para uma **fumaça azul clara e translúcida** após **2–3 horas**, indicando carbonização completa.\n3. **Vedação hermética total com barro**: Vede imediatamente a chaminé e as entradas com bolas de argila úmida para **bloquear todo oxigênio**.\n4. **Resfriamento lento de 6 horas e colheita**: Aguarde **ao menos 6 horas** até a terra esfriar totalmente ao toque antes de desenterrar o carvão metálico.",
+      "actionNote": "> Alerta de explosão por refluxo (Backdraft): Abrir o forno ainda quente provoca entrada brusca de oxigênio e detona uma labareda explosiva que queima o carvão em cinzas. Deixe esfriar completamente.",
       "svgFileName": "pr09-step-04.svg",
       "svgLabels": [
         "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
@@ -93,7 +103,12 @@
         "Todas as aberturas lacradas e resfriadas",
         "Carvão vegetal duro com ressonância metálica",
         "[CHAVE] Lacrar na fumaça azul e resfriar total"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Prevenção de labareda explosiva e estabilização térmica",
+        "text": "Ao terminar a carbonização, a câmara está superaquecida e sem oxigênio. Aberturas repentinas puxam ar fresco e inflamam os gases aquecidos (refluxo explosivo). Lacrar hermeticamente e resfriar lentamente por **mais de 6 horas** estabiliza o carbono de alta densidade sem perdas."
+      }
     }
   ],
   "fatalMistake": {
@@ -112,6 +127,6 @@
     "description": "Vista técnica do forno subterrâneo cônico com 95% de restrição de oxigênio, produzindo carvão vegetal poroso de carvalho para calor sem fumaça e filtragem de emergência."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "06910fe5beeb5301",
-  "updatedAt": "2026-10-15T14:35:53+09:00"
+  "contentHash": "916099d408d4f948",
+  "updatedAt": "2026-10-15T14:41:20+09:00"
 }

@@ -35,7 +35,7 @@
     {
       "stepNumber": "01",
       "title": "Passo 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
-      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "description": "1. **Entalhe do poste vertical**: Desbaste a ponta superior do **poste vertical de 20cm** em forma de cunha plana e corte um entalhe quadrado reto no meio.\n2. **Entalhe da escora diagonal**: Abra um entalhe em V a 45 graus no topo da **escora diagonal de 25cm** e bisele a extremidade inferior em cunha plana.\n3. **Entalhe da vareta da isca**: Talle um ressalto na **vareta da isca de 30cm** para encaixar no poste, corte um entalhe traseiro para a escora e aponte a extremidade interna como agulha.\n4. **Inspeção de ângulos retos**: Certifique-se de que todos os encaixes mantenham **ombros retos a 90 graus** em vez de bordas arredondadas.",
       "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
@@ -44,12 +44,17 @@
         "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
         "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
         "[KEY] Carve crisp square notches that bite firmly"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Equilíbrio de atrito estático e sensibilidade de gatilho leve",
+        "text": "Os três componentes da armadilha em 4 sustentam a pedra pelo **coeficiente de atrito estático** dos encaixes perpendiculares. Entalhar os ressaltos com profundidade rasa de **2 a 3mm** reduz a força de desarmamento para **menos de 50g**, garantindo sensibilidade extrema."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Passo 2: Rest the Diagonal Strut on top of the Vertical Post",
-      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "description": "1. **Alinhamento vertical da base**: Firme o poste vertical em solo plano e duro, sem qualquer oscilação.\n2. **Engate da junta superior**: Encaixe o topo em V da escora diagonal na cunha superior do poste a um **ângulo exato de 45 graus**.\n3. **Verificação de alinhamento axial**: Pressione levemente com o dedo de cima para baixo para garantir que a escora não deslize e mantenha o **alinhamento com o eixo do poste**.",
       "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
@@ -58,12 +63,17 @@
         "Strut 2 V-Notch Joint",
         "Locks firmly at 45°",
         "[KEY] Top hinge locks firmly without sliding"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD VECTOR PHYSICS",
+        "title": "Suporte angular a 45 graus e decomposição de forças",
+        "text": "Ao posicionar a escora diagonal a **45 graus**, a gravidade vertical da pedra é decomposta idealmente em compressão no poste e tração na vareta da isca. Essa geometria forma o limiar perfeito entre sustentação de carga e desarme instantâneo."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Passo 3: Insert the Bait Stick to make the 'Number 4' stand alone",
-      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "description": "1. **Encaixe horizontal da isca**: Mantenha a vareta da isca horizontalmente, engatando o ressalto frontal no **entalhe central do poste**.\n2. **Assentamento da base da escora**: Apoie a ponta chanfrada da escora diagonal no **entalhe traseiro da vareta da isca**.\n3. **Verificação de autoequilíbrio**: Retire as mãos lentamente e confirme que as 3 peças se sustentam por atrito mútuo numa rígida **silhueta do número 4** sem cordas.",
       "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
@@ -77,7 +87,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Lean the heavy rock on top & test 0.1-second hair trigger",
-      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "description": "1. **Fixação da isca**: Espete firmemente insetos ou frutas silvestres na ponta interna afiada da vareta da isca.\n2. **Posicionamento da pedra de 10-15kg**: Levante uma pedra achatada de **10 a 15kg** e apoie sua borda na ponta superior da escora a uma **inclinação de 40 a 45 graus**.\n3. **Margem de segurança**: Mantenha as mãos sempre pelas laterais da pedra, nunca colocando os dedos na **zona de queda de esmagamento**.\n4. **Teste de disparo em 0.1 segundo**: Toque suavemente na isca com um graveto para confirmar que o gatilho se solta e derruba a pedra em **menos de 0.1 segundo**.",
       "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
@@ -86,7 +96,12 @@
         "Bait set on inner tip",
         "Drops rock in 0.1s when touched",
         "[KEY] Hair trigger collapses instantly on touch"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD KINEMATICS",
+        "title": "Queda livre gravitacional de 0.1 segundo e impacto terminal",
+        "text": "Assim que o gatilho se solta, a pedra cai sob aceleração gravitacional atingindo o solo em **menos de 0.1 segundo**. Uma laje de **15kg** gera um impulso terminal imediato que neutraliza a presa antes que seu tempo de reação motora (cerca de 0.15 a 0.2s) permita a fuga."
+      }
     }
   ],
   "fatalMistake": {
@@ -106,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "46ed0acd1b57e2da"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "51e4bec4273ad957"
 }

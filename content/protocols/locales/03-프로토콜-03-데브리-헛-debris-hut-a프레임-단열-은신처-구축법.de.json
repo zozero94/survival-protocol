@@ -1,37 +1,37 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Laubhütte (Debris Hut) A-Rahmen-Isolationsunterstand",
+  "title": "Laubhütten-Isolierunterstand ohne Feuer bauen (Debris Hut)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
-  "summary": "Ungeschützte Kälte- und Nässeexposition führt binnen 3 Stunden zu tödlicher Unterkühlung. Durch geometrisches Schichten von trockenem Laub und Totholz entsteht eine stehende Luftschicht (Dead Air Space), die allein durch 80–100W Körperwärme das Überleben sichert.",
+  "summary": "Wer in der Wildnis bei Regen und Kälte ungeschützt die Nacht verbringt, riskiert binnen 3 Stunden eine lebensgefährliche Unterkühlung. Wenn kein Feuer möglich ist, hält eine dicke Schicht aus Ästen und trockenem Laub wie ein Daunenschlafsack die eigene Körperwärme fest und sichert das Überleben.",
   "timeRequired": "90–120 MINUTEN",
-  "successRate": "92.4% (bei ≥60cm Isolationsschicht)",
-  "difficulty": "Stufe 2 (Schwerer Primitivbau)",
-  "outputPerHour": "1 Unterstand (≥1.5m³ Isolationsvolumen)",
+  "successRate": "92% (Laubstärke ≥ 60cm)",
+  "difficulty": "Stufe 1 (Ohne Werkzeug machbar)",
+  "outputPerHour": "1 Isolierunterstand für 1 Person / 2 Std.",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Firstbalken (Ridge Pole)",
-      "desc": "1 gerader, trockener Hartholzstamm (Länge 3.0–3.5m, Ø 10–15cm)"
+      "name": "Zentraler Firstbalken (Langer Stamm)",
+      "desc": "Ein gerader, stabiler Ast (3.0~3.5m lang, 10~15cm stark), der das Gesamtgewicht tragen kann."
     },
     {
       "id": "mat-02",
-      "name": "Y-Stützgabeln & Rippenäste (Rib Sticks)",
-      "desc": "2 Y-Stützen (1.5m, Ø 5–8cm) sowie 40–50 Seitenäste (1.0–1.5m)"
+      "name": "2 Y-Stützhölzer und Rippenäste",
+      "desc": "Zwei brusthohe (1.5m) Gabeläste und 40~50 armlange (1~1.5m) Äste für die seitliche Rippenwand."
     },
     {
       "id": "mat-03",
-      "name": "Trockenes Laub & Waldstreu (Dry Debris)",
-      "desc": "2–3m³ knochentrockenes Laub, Kiefernnadeln, trockenes Gras und Rinde"
+      "name": "Staubtrockenes Laub und Gras (Große Mengen)",
+      "desc": "Völlig feuchtigkeitsfreies Laub, Kiefernnadeln und trockenes Gras in großen Mengen."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "A-Rahmen-Stütze errichten & Firstbalken verankern",
-      "description": "Verschränken Sie zwei Y-Gabelhölzer an der Spitze (oder binden Sie diese mit Ranken) und legen Sie den Firstbalken in 0.8–1.0m Höhe auf. Verankern Sie das hintere Ende direkt auf der Windseite im Boden. Der Innenraum darf nur so breit sein, dass Sie knapp hineinkriechen können.",
-      "actionNote": "> FELDREGEL: Zu großes Innenvolumen verhindert die Erwärmung durch Körperwärme. Striktes Sargmaß einhalten: maximal eine Faustbreit (≤10cm) Abstand.",
+      "title": "Schritt 1: Y-Gabelstützen aufstellen und Firstbalken auflegen",
+      "description": "1. **Y-Stützen verzahnen**: Stellen Sie zwei stabile Y-Gabelhölzer gegenüber auf, um ein Dreibein in **0.8~1.0m Höhe** zu bilden.\n2. **Firstbalken auflegen**: Legen Sie ein Ende des **3.0~3.5m langen Stammes** in die Gabel und verankern Sie das andere Ende fest im Boden gegen den Wind.\n3. **Körpernahes Sargmaß prüfen**: Halten Sie den Innenraum so eng, dass neben den Schultern nur **eine Faustbreite (ca. 10cm Spielraum)** frei bleibt.",
+      "actionNote": "> Volumen-Minimierung: Ist der Raum zu groß, reicht die Körperwärme nicht aus, um die Luft zu erwärmen. Nur ein eng anliegender Raum hält warm wie ein Schlafsack.",
       "svgFileName": "pr03-step-01.svg",
       "svgLabels": [
         "CRITICAL VOLUME RULE [INNENVOLUMEN]:",
@@ -41,13 +41,18 @@
         "Y-BIPOD & VINE LASHING (Y-Stützverbindung)",
         "COFFIN CLEARANCE: +10cm (Max. 1 Faust Spielraum)",
         "HEIGHT: 0.8~1.0m"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Innenvolumen-Minimierung und metabolische Strahlungswärme",
+        "text": "Die einzige Wärmequelle im ungeheizten Notunterstand ist die eigene Körperwärme (**ca. 100W Strahlungsleistung**). Ein zu großer Innenraum führt zu konvektivem Wärmeverlust. Ein passgenaues Sargmaß stoppt Luftströmungen und isoliert die Wärme optimal."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "Rippengitter anlegen & Boden-Isoliermatratze verdichten",
-      "description": "Lehnen Sie Rippenäste im 45°–60°-Winkel dicht an beide Seiten des Firstbalkens. Schichten Sie sofort mindestens 40cm trockenes Laub auf den Boden, sodass auch unter Körpergewicht 15–20cm Isolierstärke verbleiben.",
-      "actionNote": "> PHYSIK-PRINZIP: Kalter Boden leitet Wärme dutzendfach schneller ab als Luft. Ohne 15–20cm Bodenisolierung droht rascher Kälteschock.",
+      "title": "Schritt 2: Rippenäste im 45°-Winkel anlehnen und 40cm Laubmatte packen",
+      "description": "1. **Rippen im 45-Grad-Winkel aufstellen**: Lehnen Sie 40~50 Äste beidseitig im **Winkel von 45°~60°** lückenlos dicht an den Firstbalken.\n2. **40cm Bodenisolierung einbringen**: Füllen Sie den Boden kniehoch mit trockenem Laub (**mindestens 40cm Dicke**).\n3. **Komprimierte Stärke prüfen**: Legen Sie sich hinein; stellen Sie sicher, dass unter Körpergewicht noch **mindestens 20cm komprimierte Isolierschicht** verbleiben.",
+      "actionNote": "> Kälteschutz von unten: Der gefrorene Erdboden leitet Wärme 20-mal schneller ab als Luft. Die Bodenmatte ist wichtiger als das Dach.",
       "svgFileName": "pr03-step-02.svg",
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [BODENISOLIERUNG]:",
@@ -56,13 +61,18 @@
         "RIB LATTICE: 45°~60° (Rippengitter)",
         "MATTRESS: 40cm → 20cm (Laubmatratze)",
         "GROUND COLD CONDUCTION BLOCKED"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Boden-Wärmeleitung und ruhende Luftpolster-Isolierung",
+        "text": "Direkter Bodenkontakt entzieht Körperwärme **20-mal schneller** als ruhende Luft. Trockenes Laub schließt zahllose mikroskopische Luftpolster ein, deren Wärmeleitfähigkeit mit nur **0.025 W/m·K** extrem gering ist und Bodenfrost abwehrt."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "60–90cm Außenisolierung & Sturmsicherung",
-      "description": "Decken Sie das Gitter mit Reisig ab und schichten Sie trockenes Laub von unten nach oben 60–90cm (Armlänge) dick auf. Beschweren Sie die Hülle mit schweren Totholzästen gegen Wind und verschließen Sie den Eingang mit einem Laubpfropfen.",
-      "actionNote": "> WARNUNG: Nasses Laub isoliert nicht und entzieht Wärme durch Verdunstung. Steile Außenneigung zur Regenabweisung beibehalten.",
+      "title": "Schritt 3: 60~90cm Laub aufschichten und Eingang verschließen",
+      "description": "1. **Reisig-Unterlage flechten**: Flechten Sie feine Zweige über die Rippen, damit kein Laub in den Schlafraum rieselt.\n2. **60~90cm dicke Laubwand aufhäufen**: Schichten Sie trockenes Laub von unten bis zum First in **armlanger Dicke (60~90cm)** auf.\n3. **Mit schweren Ästen beschweren**: Legen Sie schwere Äste gitterförmig darüber, damit der Wind das Laub nicht verweht.\n4. **Eingang mit Laubpfropfen dichten**: Kriechen Sie hinein und verschließen Sie den Eingang mit einem dichten Laubballen gegen Kaltluft.",
+      "actionNote": "> Nur trockenes Laub verwenden: Nasses Laub verdunstet Feuchtigkeit und entzieht dem Körper rasch Wärme. Verwenden Sie ausschließlich rascheltrockenes Laub.",
       "svgFileName": "pr03-step-03.svg",
       "svgLabels": [
         "INSULATION & SEALING [WANDAUFBAU]:",
@@ -71,20 +81,25 @@
         "DEADWOOD ARMOR (Windschutz-Äste)",
         "WATER SHEDDING SLOPE (Regenablauf)",
         "DEAD AIR CORE & PLUG SEAL (Thermokammer)"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD ARCHITECTURE",
+        "title": "Steildach-Wasserabführung und natürliche Schindelwirkung",
+        "text": "Wenn Laub auf einer steilen **45-Grad-Neigung** über **60cm dick** aufgeschichtet wird, wirken die wachsartigen Blattoberflächen und die Überlappung wie Dachziegel, die Regenwasser außen ableiten."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Tödlicher Fehler: Zu großer Innenraum & feuchtes Laub",
-    "description": "Ein hoher Innenraum zum Sitzen kann durch 80–100W menschliche Stoffwechselwärme nicht erwärmt werden. Feuchtes Laub verwandelt den Unterstand zudem in eine tödliche Kühlkammer.",
-    "consequence": "Folge: Wärmeverlust durch Leitung und Konvektion senkt die Kerntemperatur im Schlaf unter 30°C – Tod durch Unterkühlung."
+    "title": "Fataler Fehler: Zu große Hütte für Sitzkomfort bauen oder feuchtes Laub nutzen",
+    "description": "Wer die Decke für Sitzkomfort erhöht, erzeugt ein großes Kaltluftvolumen, das die Körperwärme (ca. 100W) nicht heizen kann. Feuchtes Laub verwandelt die Hütte zudem in einen Eiskeller.",
+    "consequence": "Folge: Leitungs- und Konvektionsverluste senken die Körperkerntemperatur im Schlaf unter 30°C und führen zum Kältetod."
   },
   "outcome": {
     "svgFileName": "pr03-outcome.svg",
-    "title": "Vollendete A-Rahmen Laub-Notunterkunft (Debris Hut)",
-    "description": "Ein massiver 2,5m Dachfirst und ein 45°-Rippenrahmen, umhüllt von einer 1 Meter dicken Schicht aus trockenem Laub, die Körperwärme ohne Feuer speichert."
+    "title": "Vollendeter A-Rahmen-Laubhütten-Isolierunterstand",
+    "description": "Ein 2.5m schwerer Firstbalken und ein 45°-Rippenrahmen, bedeckt von 1 Meter komprimiertem trockenem Laub und Schutzästen, die Körperwärme bei Minustemperaturen ohne Feuer halten."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "042045342785ab42"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "5c83ac034006645f"
 }

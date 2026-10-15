@@ -35,8 +35,8 @@
     {
       "stepNumber": "01",
       "title": "Schritt 1: Biegsame Stängel wählen, Außenrinde abschaben und weiße Innenfaser abziehen",
-      "description": "Biegen Sie den Stängel zur Hälfte, um zu prüfen, ob er elastisch bleibt. Schaben Sie mit einer Steinkante vorsichtig die raue braune Außenrinde ab, bis die helle, zähe Bastschicht sichtbar wird. Heben Sie das untere Ende mit dem Fingernagel an und ziehen Sie lange Faserbänder vom harten Holzkern ab.",
-      "actionNote": "> Tipp: Abgestorbene, trockene Stängel am Boden haben morsche Fasern, die sofort reißen. Immer frische Triebe nutzen.",
+      "description": "1. **Trieb-Elastizitätsprüfung**: Biegen Sie den Stängel langsam um **über 90 Grad**, um sicherzustellen, dass er ohne Knick nachgibt.\n2. **Außenrinden-Schabung**: Setzen Sie eine scharfe Steinkante schräg an und schaben Sie nur die spröde **braune Außenrinde** vorsichtig ab.\n3. **Bastschicht-Sichtprüfung**: Vergewissern Sie sich, dass die feucht schimmernden **weißen, zähen Bastfasern** freigelegt sind.\n4. **Holzkern-Trennung**: Heben Sie den Rindenrand mit dem Fingernagel an und ziehen Sie die langen Bastbänder **vom starren Holzkern ab**.",
+      "actionNote": "> Ernte-Grundregel: Abgestorbene, trockene Stängel am Boden haben morsche Fasern, die sofort reißen. Verwenden Sie stets lebende, saftige Triebe.",
       "svgFileName": "pr05-step-01.svg",
       "svgLabels": [
         "① Raue Außenrinde mit Steinkante abschaben",
@@ -44,13 +44,18 @@
         "③ Zähe weiße Innenfaser (Hauptmaterial fürs Seil)",
         "④ Harter Holzkern in der Mitte (entfernen)",
         "⑤ Biegsamer lebender Stängel bricht nicht"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Phloembast-Zugfestigkeit und Pektintrennung",
+        "text": "Das zwischen Außenrinde und Holzkörper liegende **Phloembastgewebe** besteht aus parallel ausgerichteten Cellulose-Mikrofibrillen und erreicht bis zu **50% der Zugfestigkeit von Baustahl**. Das saubere mechanische Abschaben isoliert diese tragenden Fasern ohne Scherbrüche."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Schritt 2: 20 Minuten im Bach wässern und mit rundem Stein weichklopfen",
-      "description": "Legen Sie die abgezogenen Rindenstreifen für 20~30 Minuten ins Wasser. Breiten Sie die aufgeweichten Streifen auf einem flachen Flussstein aus und klopfen Sie sie mit einem runden Stein sanft von oben nach unten. Sobald sich feine, weiche Faserbündel lösen, teilen Sie diese in zwei fingerdicke Stränge.",
-      "actionNote": "> Grundprinzip: Zu harte Schläge durchtrennen die Fasern. Sanft drücken und klopfen, damit die Fasern lang bleiben.",
+      "description": "1. **Wässerung und Pektinausschwemmung**: Tauchen Sie die Rindenbänder für **20 bis 30 Minuten** vollständig in Wasser, um steife Pflanzensäfte zu lösen.\n2. **Flussstein-Amboss-Auflage**: Breiten Sie die geschmeidigen Fasern flach auf einem **wackelfreien, ebenen Flussstein** aus.\n3. **Sanftes Weichklopfen**: Klopfen und rollen Sie einen runden Stein sanft entlang des Strangs, um starre Holzfasern in **feine Faserbündel** aufzuschließen.\n4. **Symmetrische Zweiteilung**: Teilen Sie das Faserbündel in **2 gleich dicke Stränge** mit identischem Durchmesser.",
+      "actionNote": "> Klopfdruck-Kontrolle: Zu harte Schläge zerhacken die Fasern. Rollen und drücken Sie sanft mit einem runden Stein, um lange Stränge zu erhalten.",
       "svgFileName": "pr05-step-02.svg",
       "svgLabels": [
         "① Innenrinde 20+ Min. im Bachwasser eingeweicht",
@@ -63,8 +68,8 @@
     {
       "stepNumber": "03",
       "title": "Schritt 3: Nach außen zwirbeln und zum Körper kreuzen (Gegendrehung)",
-      "description": "Klemmen Sie die Mitte des Faserbündels zwischen linken Daumen und Zeigefinger, sodass ein oberer und ein unterer Strang entstehen. Drehen Sie den oberen Strang mit der rechten Hand fest vom Körper weg (nach außen) und legen Sie ihn dann über den unteren Strang zu Ihrem Körper hin. Linken Daumen nachsetzen, Kreuzungspunkt festhalten und wiederholen.",
-      "actionNote": "> Grundprinzip: Dreht man beide Stränge in dieselbe Richtung, rollt sich das Seil sofort wieder auf. Die Gegendrehung verriegelt beide Stränge.",
+      "description": "1. **Mittenschlaufen-Klemmung**: Knicken Sie das Faserbündel in der Mitte und klemmen Sie die Schlaufe zwischen linkem Daumen und Zeigefinger zu **oberem und unterem Strang**.\n2. **Einzelstrang-Zwirbelung**: Drehen Sie den oberen Strang mit der rechten Hand im **Uhrzeigersinn fest vom Körper weg (↑)** ein.\n3. **Gegenläufiges Überkreuzen**: Führen Sie den verdrillten oberen Strang über den unteren Strang hinweg **gegen den Uhrzeigersinn zum Körper hin (↓)**.\n4. **Fortlaufende Klemmverriegelung**: Setzen Sie den linken Daumen auf den neuen Kreuzungspunkt nach und wiederholen Sie den Zyklus **nach außen zwirbeln und zum Körper kreuzen**.",
+      "actionNote": "> Gegendreh-Gesetz: Dreht man beide Stränge in dieselbe Richtung, rollt sich das Seil sofort auf. Die Gegendrehung der Einzelstränge neutralisiert das Drehmoment dauerhaft.",
       "svgFileName": "pr05-step-03.svg",
       "svgLabels": [
         "① Oberer Strang: fest vom Körper wegdrehen (↑)",
@@ -72,13 +77,18 @@
         "③ Kreuzungspunkt mit linkem Daumen & Zeigefinger halten",
         "④ Gedrehten Strang über unteren zum Körper legen (↓)",
         "⑤ Selbstsichernde Gegendreh-Verriegelung"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Drehmomentausgleich und mechanische Selbsthemmung beim Reverse-Wrap",
+        "text": "Durch das Verdrillen der Einzelstränge im Uhrzeigersinn (Z-Schlag) bei gleichzeitigem Umschlagen gegen den Uhrzeigersinn (S-Schlag) heben sich die rückstellenden Torsionsmomente im **Drehmomentgleichgewicht** auf. Dieser Reibungsschluss verhindert das Aufdröseln selbst ohne Endknoten."
+      }
     },
     {
       "stepNumber": "04",
       "title": "Schritt 4: Neue Fasern 10cm überlappen für endlose Seillänge",
-      "description": "Wenn ein Strang auf die letzten 10cm dünner wird, legen Sie ein neues Faserbündel 10cm überlappend direkt daneben. Halten Sie altes Ende und neues Bündel gemeinsam wie einen einzigen Strang und drehen Sie normal weiter. Versetzen Sie die Verbindungsstellen von oberem und unterem Strang um mindestens eine Handspanne (15cm).",
-      "actionNote": "> Achtung: Liegen beide Spleißstellen an derselben Stelle, entsteht ein dicker Knotenpunkt, der unter Zug reißt.",
+      "description": "1. **Spleißfenster-Erkennung**: Erkennen Sie rechtzeitig, wann ein Strang auf eine Restlänge von **rund 10cm** ausdünnt.\n2. **Faserbündel-Überlappung**: Legen Sie ein frisches Faserbündel parallel an das alte Ende mit **10cm Überlappungslänge** an.\n3. **Gemeinsames Weiterzwirbeln**: Fassen Sie beide Faserenden wie einen einzigen Strang zusammen und führen Sie **3 bis 4 Verdrillungszyklen** durch.\n4. **Versetzte Spleißabstände**: Versetzen Sie die Verbindungen von oberem und unterem Strang um **mindestens 15cm Abstand** zueinander.",
+      "actionNote": "> Spleißversatz-Regel: Liegen beide Spleißstellen am selben Punkt, entsteht eine Schwachstelle, die unter Zug reißt. Versetzen Sie die Spleißpunkte stets um mindestens 15cm.",
       "svgFileName": "pr05-step-04.svg",
       "svgLabels": [
         "① Alter Strang wird bei 10cm Restlänge dünner",
@@ -86,13 +96,18 @@
         "③ Beide Enden gemeinsam als einen Strang drehen",
         "④ Glatte Verbindung ohne dicke Schwachstelle",
         "⑤ Obere & untere Spleißstelle 15cm versetzen"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD TENSION",
+        "title": "Versetzte Spleißarchitektur und Grenzflächen-Schubspannung",
+        "text": "Das Zusammenlegen beider Spleißstellen an einem axialen Punkt erzeugt Querschnittssprünge und Spannungsspitzen unter Last. Ein Versatz um **mindestens 15cm** überträgt die Zugkraft über **Grenzflächen-Schubreibung** auf den parallelen durchgehenden Strang, wodurch die volle Nennfestigkeit erhalten bleibt."
+      }
     },
     {
       "stepNumber": "05",
       "title": "Schritt 5: Endknoten setzen und am Baumstamm mit Körpergewicht testen",
-      "description": "Nach Erreichen der gewünschten Länge (ab 5m) die letzten 3cm zu einer Schlaufe legen und mit einem festen Überhandknoten sichern. Abstehende Fasern mit einer Steinklinge glätten. Zuletzt das Seil um einen dicken Baumstamm legen und mit vollem Körpergewicht (50kg+) daran ziehen.",
-      "actionNote": "> Praxistest: Knacken Fasern oder rutscht eine Verbindung, diese Stelle sofort mit zusätzlichen Fasern umwickeln.",
+      "description": "1. **Endknoten-Abschluss**: Bilden Sie bei Erreichen der Ziellänge (5m+) am Ende bei **3cm Abstand** eine Schlinge und ziehen Sie einen festen Überhandknoten an.\n2. **Klingen-Glättung**: Schaben Sie mit einer scharfen Steinkante abstehende Fasern glatt, um einen **gleichmäßigen Durchmesser von 5mm** zu erzielen.\n3. **Stamm-Verankerung**: Schlingen Sie das fertige Seil mindestens zweimal um einen armdicken, gesunden Baumstamm.\n4. **Zuglasttest mit 50kg**: Greifen Sie das Seil mit beiden Händen und belasten Sie es mit **vollem Körpergewicht von 50kg+**, um den sicheren Halt der Spleiße zu bestätigen.",
+      "actionNote": "> Belastungsprüf-Kriterium: Knacken Fasern oder rutscht eine Verbindung, umwickeln Sie diese Zone sofort mit einer zusätzlichen dünnen Faserlage.",
       "svgFileName": "pr05-step-05.svg",
       "svgLabels": [
         "① Sicherungsknoten 3cm vor dem Seilende",
@@ -119,6 +134,6 @@
     "description": "Ein gleichmäßiger 8-mm-Seilbund aus im Uhrzeigersinn gedrehten und gegenläufig verzwirnten Bastfasern, der über 90 kgf Zuglast ohne Aufdröseln standhält."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "03d1706e68d38783"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "dca7cf4417941f64"
 }

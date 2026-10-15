@@ -1,37 +1,37 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Construção de Abrigo Térmico A-Frame (Debris Hut)",
+  "title": "Como Construir um Abrigo de Folhas Secas para Reter Calor sem Fogo (Debris Hut)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
-  "summary": "A exposição ao frio e à chuva causa hipotermia fatal em até 3 horas. Ao empilhar folhagem seca e galhos mortos para criar uma camada de ar estagnado (Dead Air Space), constrói-se um abrigo sem fogo que preserva o calor metabólico humano (80–100W).",
+  "summary": "Passar a noite ao relento sob chuva e vento frio reduz a temperatura corporal em menos de 3 horas, gerando hipotermia grave. Quando não for possível acender fogo, empilhar galhos e uma grossa camada de folhas secas retém o calor corporal como um saco de dormir espesso para sobreviver à noite.",
   "timeRequired": "90–120 MINUTOS",
-  "successRate": "92.4% (com ≥60cm de isolamento)",
-  "difficulty": "Nível 2 (Construção Primitiva Pesada)",
-  "outputPerHour": "1 Abrigo (volume isolado ≥1.5m³)",
+  "successRate": "92% (Espessura de folhas ≥ 60cm)",
+  "difficulty": "Nível 1 (Sem ferramentas)",
+  "outputPerHour": "1 Abrigo para 1 pessoa / 2 Horas",
   "materials": [
     {
       "id": "mat-01",
-      "name": "Viga Mestra (Ridge Pole)",
-      "desc": "1 tronco reto e seco de madeira dura (comprimento 3.0–3.5m, Ø 10–15cm)"
+      "name": "Viga mestra principal (Tronco longo)",
+      "desc": "Um tronco reto e resistente de 3.0~3.5m de comprimento e 10~15cm de diâmetro capaz de suportar peso."
     },
     {
       "id": "mat-02",
-      "name": "Forquilhas em Y e Costelas (Rib Sticks)",
-      "desc": "2 apoios em Y (1.5m, Ø 5–8cm) e 40–50 galhos laterais (1.0–1.5m)"
+      "name": "2 postes em Y e galhos laterais",
+      "desc": "Duas forquilhas na altura do peito (1.5m) e 40~50 galhos de 1~1.5m para formar as costelas laterais."
     },
     {
       "id": "mat-03",
-      "name": "Folhagem Seca Isolante (Dry Debris)",
-      "desc": "2–3m³ de folhas secas, agulhas de pinheiro, capim seco e cascas"
+      "name": "Folhas secas e capim seco em abundância",
+      "desc": "Folhas secas, acículas de pinheiro e capim sem qualquer umidade em grande volume (dezenas de sacos)."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Erguer Bipé em A e Ancorar Viga Mestra",
-      "description": "Encaixe duas forquilhas em Y no topo (ou amarre com cipó) e apoie uma ponta da viga mestra a 0.8–1.0m de altura. Fixe a outra extremidade no solo contra o vento (barlavento). O espaço interno deve permitir apenas entrar rastejando.",
-      "actionNote": "> REGRA DE CAMPO: Volume interno excessivo impede o aquecimento pelo corpo. Mantenha padrão caixão: apenas um punho (≤10cm) de folga.",
+      "title": "Passo 1: Erguer o bipé em Y e assentar a viga mestra",
+      "description": "1. **Cruzar forquilhas em Y**: Apoie dois galhos em forquilha para formar um bipé com **altura de 0.8~1.0m**.\n2. **Assentar viga mestra**: Coloque uma ponta do tronco de **3.0~3.5m** na forquilha e ancore a outra extremidade firmemente no solo contra o vento.\n3. **Ajustar espaço ao corpo**: Mantenha a largura interna estreita, deixando apenas **um punho de folga (cerca de 10cm)** ao lado dos ombros.",
+      "actionNote": "> Regra do volume mínimo: Se o interior for espaçoso, o calor corporal não consegue aquecer o ar. Mantenha o abrigo justo como um caixão para reter o calor.",
       "svgFileName": "pr03-step-01.svg",
       "svgLabels": [
         "CRITICAL VOLUME RULE [VOLUME INTERNO]:",
@@ -41,13 +41,18 @@
         "Y-BIPOD & VINE LASHING (Amarração em Y)",
         "COFFIN CLEARANCE: +10cm (Folga Máx. 1 Punho)",
         "HEIGHT: 0.8~1.0m"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Minimização de volume interno e autorretenção de calor radiante",
+        "text": "A única fonte térmica neste abrigo de emergência é a radiação metabólica humana (**cerca de 100W**). Um espaço grande dissipa o calor por convecção. Reduzir a câmara ao contorno exato do corpo elimina correntes de ar e cria uma bolsa de ar quente."
+      }
     },
     {
       "stepNumber": "02",
-      "title": "Posicionar Costelas e Colchão Isolante de Piso",
-      "description": "Apoie galhos laterais a 45°–60° em ambos os lados da viga formando uma grade densa. Forre imediatamente o chão com pelo menos 40cm de folhas secas para manter 15–20cm de espessura mesmo comprimido pelo peso do corpo.",
-      "actionNote": "> PRINCÍPIO FÍSICO: A condução térmica do solo frio é dezenas de vezes maior que a do ar. Sem colchão isolante, o solo drena todo o calor vital.",
+      "title": "Passo 2: Apoiar costelas a 45° e colocar colchão de folhas de 40cm",
+      "description": "1. **Dispor costelas a 45 graus**: Apoie 40~50 galhos em ambos os lados da viga em **ângulo de 45°~60°** bem próximos.\n2. **Adicionar colchão de folhas de 40cm**: Forre o solo interior com folhas secas até a altura do joelho (**espessura mínima de 40cm**).\n3. **Verificar espessura comprimida**: Deite-se sobre o leito; confirme que, sob o peso do corpo, restam pelo menos **20cm de colchão isolante** sobre a terra.",
+      "actionNote": "> Escudo contra condução: A terra fria rouba calor 20 vezes mais rápido que o ar. O colchão de folhas no chão é mais importante que o teto.",
       "svgFileName": "pr03-step-02.svg",
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [ISOLAMENTO DO PISO]:",
@@ -56,13 +61,18 @@
         "RIB LATTICE: 45°~60° (Grade de Galhos)",
         "MATTRESS: 40cm → 20cm (Colchão de Folhas)",
         "GROUND COLD CONDUCTION BLOCKED"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Perda por condução do solo e colchão de ar estático",
+        "text": "O contato direto com o solo gelado drena calor **20 vezes mais rápido** que o ar parado. A folhagem seca aprisiona milhares de microbolsas de ar com condutividade de apenas **0.025 W/m·K**, bloqueando totalmente o congelamento vindo do chão."
+      }
     },
     {
       "stepNumber": "03",
-      "title": "Empilhar 60–90cm de Folhagem e Blindagem Contra Vento",
-      "description": "Cubra a grade com gravetos finos e acumule folhas secas de baixo para cima até 60–90cm de espessura. Coloque galhos pesados por fora para conter rajadas de vento e feche a entrada com um tampão denso de folhas.",
-      "actionNote": "> ATENÇÃO: Folhagem úmida não isola e rouba calor por evaporação. Mantenha inclinação externa para escoar a chuva.",
+      "title": "Passo 3: Empilhar 60~90cm de folhas no teto e vedar a entrada",
+      "description": "1. **Entrelaçar base de gravetos**: Coloque gravetos finos sobre as costelas para evitar que as folhas caiam no interior.\n2. **Empilhar 60~90cm de folhas secas**: Acumule folhas secas de baixo até a cumeeira na **espessura de um braço inteiro (60~90cm)**.\n3. **Prender com galhos de contrapeso**: Disponha galhos pesados em grade por cima para evitar que o vento espalhe as folhas.\n4. **Vedar entrada com folhas**: Entre no abrigo e feche a entrada com um fardo denso de folhas secas para bloquear todo vento frio externo.",
+      "actionNote": "> Apenas folhas bem secas: Usar folhas úmidas rouba calor por evaporação e gela o corpo. Use exclusivamente folhagem completamente seca.",
       "svgFileName": "pr03-step-03.svg",
       "svgLabels": [
         "INSULATION & SEALING [PAREDE TÉRMICA]:",
@@ -70,21 +80,26 @@
         "DEBRIS WALL: 60~90cm (Camada Isolante)",
         "DEADWOOD ARMOR (Galhos de Contrapeso)",
         "WATER SHEDDING SLOPE (Escoamento)",
-        "DEAD AIR CORE & PLUG SEAL (Câmara Vedada)"
-      ]
+        "DEAD AIR CORE & PLUG SEAL (Cámara Vedada)"
+      ],
+      "deepDive": {
+        "badge": "FIELD ARCHITECTURE",
+        "title": "Escoamento pluvial em declive acentuado e impermeabilização natural",
+        "text": "Ao empilhar folhas com mais de **60cm de espessura** em uma inclinação íngreme de **45 graus**, a camada cerosa das folhas e a sobreposição agem como telhas, escoando a chuva para fora sem molhar o interior."
+      }
     }
   ],
   "fatalMistake": {
-    "title": "Erro Fatal: Construir Espaço Amplo e Usar Folhas Úmidas",
-    "description": "Elevar o teto para sentar cria um bolsão de ar que o metabolismo humano (80–100W) não consegue aquecer. Além disso, folhas úmidas transformam o abrigo em uma câmara de resfriamento.",
-    "consequence": "Consequência: Perda térmica por condução e convecção reduz a temperatura central abaixo de 30°C durante o sono, causando morte por hipotermia."
+    "title": "Erro fatal: Construir abrigo espaçoso para sentar ou usar folhas úmidas",
+    "description": "Fazer teto alto para ficar sentado cria um bolsão de ar frio que o calor do corpo (cerca de 100W) não consegue aquecer. Além disso, usar folhas úmidas transforma o abrigo em uma câmara fria.",
+    "consequence": "Consequência: A perda combinada por condução e convecção derruba a temperatura corporal abaixo de 30°C durante o sono, causando hipotermia fatal."
   },
   "outcome": {
     "svgFileName": "pr03-outcome.svg",
-    "title": "Abrigo Térmico Debris Hut em Estrutura A Concluído",
-    "description": "Uma viga mestra de 2,5m e costelas a 45° cobertas por 1 metro de folhas secas compactadas e galhos, retendo o calor corporal abaixo de zero sem fogo."
+    "title": "Abrigo Térmico Debris Hut em A Concluído",
+    "description": "Uma viga pesada de 2.5m e armação de costelas a 45° cobertas por 1 metro de folhas secas compactadas e galhos, retendo o calor corporal em temperaturas negativas sem necessidade de fogo."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "042045342785ab42"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "5c83ac034006645f"
 }

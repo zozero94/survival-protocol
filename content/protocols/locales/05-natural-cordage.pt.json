@@ -35,8 +35,8 @@
     {
       "stepNumber": "01",
       "title": "Passo 1: Escolher hastes flexíveis, raspar a casca externa e puxar a fibra branca interna",
-      "description": "Dobre a haste ao meio para confirmar que ela curva sem partir. Raspe levemente a casca marrom externa com a quina de uma pedra até revelar a camada branca e resistente de fibra. Levante a ponta inferior com a unha e puxe para cima para destacar fitas longas do miolo lenhoso.",
-      "actionNote": "> Dica essencial: Galhos secos caídos no chão têm fibras apodrecidas que arrebentam ao puxar. Use sempre hastes vivas.",
+      "description": "1. **Teste de flexibilidade da haste**: Curve a haste lentamente em **mais de 90 graus** para garantir elasticidade sem fraturas.\n2. **Raspagem da casca externa**: Apoie a quina de uma pedra em ângulo para raspar somente a **casca marrom quebradiça**.\n3. **Exposição do líber interno**: Inspecione visualmente o surgimento das **fibras brancas resistentes e úmidas** sob a superfície raspada.\n4. **Separação do miolo lenhoso**: Destaque a ponta com a unha e puxe no sentido do caule para **desprender o miolo duro** e extrair as fitas de fibra.",
+      "actionNote": "> Princípio de colheita: Galhos secos e mortos no chão contêm fibras podres que se rompem sob tração. Colete a casca interna sempre de ramos vivos ou recém-cortados.",
       "svgFileName": "pr05-step-01.svg",
       "svgLabels": [
         "① Raspar casca externa com quina de pedra",
@@ -44,13 +44,18 @@
         "③ Fibra interna branca e forte (material da corda)",
         "④ Miolo central de madeira dura (descartar)",
         "⑤ Haste viva flexível que dobra sem quebrar"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Resistência à tração do floema e separação de pectina",
+        "text": "O **tecido floemático (fibras do líber)** entre a casca externa e o xilema é composto por microfibrilas paralelas de celulose que atingem **50% da resistência à tração do aço macio**. A raspagem mecânica cuidadosa isola essas fibras contínuas sem fissuras por cisalhamento."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Passo 2: Deixar 20 minutos na água e bater com pedra redonda até amaciar",
-      "description": "Mergulhe as fitas de casca interna na água do riacho por 20~30 minutos. Estenda-as sobre uma pedra plana e bata suavemente de cima para baixo com uma pedra redonda. Quando as fibras se soltarem em fios macios como cabelo, divida-as em dois feixes iguais da espessura de um dedo.",
-      "actionNote": "> Princípio básico: Bater com muita força corta as fibras. Pressione e amasse suavemente para preservar fios longos.",
+      "description": "1. **Demolha e lixiviação de pectina**: Mergulhe as fitas de casca em água por **20 a 30 minutos** para dissolver resinas e seiva endurecida.\n2. **Assentamento na bigorna de pedra**: Estenda as tiras amolecidas sobre uma **pedra de rio plana e firme**.\n3. **Amaciamento por percussão**: Bata e role suavemente uma pedra redonda ao longo do comprimento para desfibrar em **filamentos finos e macios**.\n4. **Separação em dois feixes simétricos**: Divida o feixe em **2 pernas iguais** com espessura e densidade idênticas.",
+      "actionNote": "> Força de batida: Golpear com violência corta as fibras longitudinais. Pressione e role suavemente para preservar fios longos e íntegros.",
       "svgFileName": "pr05-step-02.svg",
       "svgLabels": [
         "① Casca interna de molho 20+ min no riacho",
@@ -63,8 +68,8 @@
     {
       "stepNumber": "03",
       "title": "Passo 3: Torcer para fora e cruzar para o corpo (Torção Reversa)",
-      "description": "Segure o meio do feixe com o polegar e o indicador esquerdos e dobre ao meio formando um cabo superior e outro inferior. Com a mão direita, torça firmemente o cabo superior para fora (longe do corpo) e depois cruze-o por cima do cabo inferior em direção ao seu corpo. Avance o polegar esquerdo para prender o cruzamento e repita sem parar.",
-      "actionNote": "> Princípio básico: Girar os dois cabos para o mesmo lado faz a corda desenrolar sozinha. A torção oposta trava os cabos entre si.",
+      "description": "1. **Pinça na dobra central**: Dobre o feixe ao meio prendendo o laço entre polegar e indicador esquerdos para criar **perna superior e inferior**.\n2. **Torção horária individual**: Com a mão direita, torça a perna de cima para fora (↑) em **rotação horária** até tensionar.\n3. **Cruzamento anti-horário de conjunto**: Passe a perna superior torcida por cima da inferior em direção a você (↓) em **movimento anti-horário**.\n4. **Travamento progressivo contínuo**: Desloque o polegar esquerdo segurando o cruzamento e repita a sequência de **torcer para fora e cruzar para dentro**.",
+      "actionNote": "> Lei do autotravamento: Girar as duas pernas na mesma direção desenrola a corda na hora. Torcer cada perna para fora e trançar para dentro equilibra o torque e trava a corda de forma permanente.",
       "svgFileName": "pr05-step-03.svg",
       "svgLabels": [
         "① Cabo superior: torcer firme para fora (↑)",
@@ -72,13 +77,18 @@
         "③ Prender cruzamento com polegar e indicador",
         "④ Cruzar cabo superior sobre o inferior para si (↓)",
         "⑤ Trava reversa que não desmancha ao soltar"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Equilíbrio de torque e autotravamento mecânico na torção reversa",
+        "text": "Ao torcer cada perna no sentido horário (torção Z) enquanto se trançam no sentido anti-horário (torção S), as energias elásticas de torção opostas anulam-se em **equilíbrio de torque**. Este travamento por atrito dispensa nós e impede o desenrolamento mesmo ao soltar a corda."
+      }
     },
     {
       "stepNumber": "04",
       "title": "Passo 4: Sobrepor 10cm de fibra nova para emendar comprimento infinito",
-      "description": "Quando um dos cabos estiver afinando com cerca de 10cm restantes, encoste um feixe novo ao lado da ponta antiga com 10cm de sobreposição. Segure os dois juntos como se fossem um único cabo e continue torcendo para fora e cruzando para dentro. Desencontre as emendas de cima e de baixo em pelo menos um palmo (15cm).",
-      "actionNote": "> Atenção: Fazer as duas emendas no mesmo ponto cria um caroço fraco que arrebenta sob tensão.",
+      "description": "1. **Identificação da zona de emenda**: Localize quando qualquer das pernas afinar até restar uma **ponta de cerca de 10cm**.\n2. **Sobreposição longitudinal**: Posicione a ponta de um feixe novo ao lado do cabo curto em **10cm de contato paralelo**.\n3. **Trançado unificado**: Segure as duas pontas juntas como se fossem uma só e torça por **3 a 4 ciclos consecutivos**.\n4. **Espaçamento defasado de emendas**: Mantenha as emendas da perna superior e inferior separadas por uma **distância mínima de 15cm**.",
+      "actionNote": "> Regra do espaçamento: Fazer as duas emendas no mesmo ponto gera um caroço que se rompe sob tensão. Alterne as emendas com pelo menos 15cm de distância.",
       "svgFileName": "pr05-step-04.svg",
       "svgLabels": [
         "① Cabo antigo afinando com 10cm restantes",
@@ -86,13 +96,18 @@
         "③ Torcer as duas pontas juntas como um cabo só",
         "④ Emenda lisa sem caroços ou pontos fracos",
         "⑤ Desencontrar emendas de cima e de baixo em 15cm"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD TENSION",
+        "title": "Arquitetura de emenda defasada e atrito interfacial de cisalhamento",
+        "text": "Sobrepor emendas em ambas as pernas no mesmo ponto axial gera variações bruscas de seção e rompimento por concentração de tensões. O espaçamento de **pelo menos 15cm** transfere a carga de tração por **atrito interfacial de cisalhamento** para a perna contínua paralela, mantendo 100% da carga de ruptura."
+      }
     },
     {
       "stepNumber": "05",
       "title": "Passo 5: Dar nó de trava na ponta e testar com o peso do corpo em uma árvore",
-      "description": "Ao atingir o comprimento desejado (5m ou mais), dobre os últimos 3cm e dê um nó simples bem apertado para não desfiar. Raspe os fiapos soltos com uma lasca de pedra. Por fim, passe a corda ao redor de um tronco firme e puxe com todo o peso do corpo (50kg+) para garantir que nenhuma emenda escorregue.",
-      "actionNote": "> Teste prático: Se ouvir fibras estalando ou notar deslizamento, enrole mais fibra fina sobre o trecho para reforçar.",
+      "description": "1. **Nó terminal de retenção**: Ao alcançar o comprimento final (5m+), forme um laço a **3cm da ponta** e aperte um nó simples de retenção.\n2. **Aparagem com lasca de pedra**: Raspe suavemente uma lasca de pedra na corda para aparar fiapos até obter **seção uniforme de 5mm**.\n3. **Ancoragem em tronco firme**: Passe a corda duas vezes ao redor de um tronco verde e grosso mais espesso que o antebraço.\n4. **Verificação com carga de 50kg**: Segure a corda com as duas mãos e projete **mais de 50kg de peso corporal** para checar a solidez das emendas.",
+      "actionNote": "> Critério de carga: Se escutar estalos ou notar deslizamento na emenda, enrole uma camada fina de fibra adicional sobre a região afetada.",
       "svgFileName": "pr05-step-05.svg",
       "svgLabels": [
         "① Nó de trava a 3cm da ponta final",
@@ -119,6 +134,6 @@
     "description": "Uma bobina de corda uniforme de 8 mm trançada com fibras de casca interna em torção reversa, suportando mais de 90 kgf de tração sem deslizar."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "03d1706e68d38783"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "dca7cf4417941f64"
 }

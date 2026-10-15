@@ -35,7 +35,7 @@
     {
       "stepNumber": "01",
       "title": "Paso 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
-      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "description": "1. **Tallado del poste vertical**: Desbaste el extremo superior del **poste vertical de 20cm** en forma de cuña plana y talle una muesca cuadrada recta en la sección media.\n2. **Tallado del puntal diagonal**: Talle una muesca en V a 45 grados en el extremo superior del **puntal diagonal de 25cm** y bisele el pie inferior en forma de cuña plana.\n3. **Tallado de la vara del cebo**: Talle un escalón de retención en la **vara del cebo de 30cm** para encajar con el poste, corte una muesca trasera para el pie del puntal y afile la punta interior como aguja.\n4. **Inspección de ángulos rectos**: Verifique que todas las muescas formen **hombros rectos a 90 grados** en lugar de bordes redondeados.",
       "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
@@ -44,12 +44,17 @@
         "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
         "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
         "[KEY] Carve crisp square notches that bite firmly"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Equilibrio de fricción estática y sensibilidad crítica",
+        "text": "Los tres componentes de la trampa en 4 sostienen la carga de la roca mediante el **coeficiente de fricción estática** de las muescas perpendiculares. Tallar los rebordes a una profundidad mínima de **2 a 3mm** reduce la fuerza de disparo a **menos de 50g**, logrando una sensibilidad extrema."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Paso 2: Rest the Diagonal Strut on top of the Vertical Post",
-      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "description": "1. **Alineación vertical de la base**: Plante el poste vertical firme y recto sobre suelo plano sin tambaleos.\n2. **Enganche de la bisagra superior**: Encaje la muesca en V del puntal diagonal sobre la cuña superior del poste a una **inclinación exacta de 45 grados**.\n3. **Verificación de alineación axial**: Aplique una ligera presión descendente con el dedo para confirmar que el puntal no se tuerza y mantenga la **alineación con el eje del poste**.",
       "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
@@ -58,12 +63,17 @@
         "Strut 2 V-Notch Joint",
         "Locks firmly at 45°",
         "[KEY] Top hinge locks firmly without sliding"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD VECTOR PHYSICS",
+        "title": "Soporte angular a 45 grados y resolución de fuerzas",
+        "text": "Al colocar el puntal diagonal a un **ángulo de 45 grados**, la fuerza de gravedad vertical de la roca se resuelve equilibradamente en compresión vertical sobre el poste y tensión horizontal sobre la vara del cebo. Esta geometría marca el umbral óptimo entre soporte estable y disparo instantáneo."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Paso 3: Insert the Bait Stick to make the 'Number 4' stand alone",
-      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "description": "1. **Colocación horizontal del cebo**: Sostenga la vara del cebo horizontalmente, enganchando su escalón frontal en la **muesca central del poste**.\n2. **Asiento del pie del puntal**: Apoye suavemente el pie biselado del puntal diagonal en la **muesca trasera de la vara del cebo**.\n3. **Comprobación de autoequilibrio**: Retire ambas manos lentamente y verifique que el conjunto se sostenga por pura fricción en una rígida **silueta del número 4** sin cuerdas.",
       "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
@@ -77,7 +87,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Lean the heavy rock on top & test 0.1-second hair trigger",
-      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "description": "1. **Fijación del cebo**: Ensarte firmemente insectos o frutos silvestres en la punta interior afilada de la vara del cebo.\n2. **Colocación de la losa de 10-15kg**: Levante una roca plana de **10 a 15kg** y apoye su borde frontal sobre la punta superior del puntal a un **ángulo de 40 a 45 grados**.\n3. **Espacio de seguridad**: Mantenga las manos estrictamente a los lados de la roca, sin colocar jamás los dedos bajo la **zona de caída de aplastamiento**.\n4. **Prueba de disparo en 0.1 segundos**: Toque levemente el cebo con una ramita para comprobar que el gatillo se suelta y deja caer la roca en **menos de 0.1 segundos**.",
       "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
@@ -86,7 +96,12 @@
         "Bait set on inner tip",
         "Drops rock in 0.1s when touched",
         "[KEY] Hair trigger collapses instantly on touch"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD KINEMATICS",
+        "title": "Caída libre gravitacional de 0.1 segundos e impacto terminal",
+        "text": "Al liberarse el gatillo, la roca cae en aceleración gravitacional impactando el suelo en **menos de 0.1 segundos**. Una losa de **15kg** transmite un impulso terminal instantáneo que aplasta a la presa antes de que su tiempo de respuesta neuro-muscular (aprox. 0.15 a 0.2s) le permita iniciar un salto de escape."
+      }
     }
   ],
   "fatalMistake": {
@@ -106,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "46ed0acd1b57e2da"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "51e4bec4273ad957"
 }

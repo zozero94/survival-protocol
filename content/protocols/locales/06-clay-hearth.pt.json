@@ -35,8 +35,8 @@
     {
       "stepNumber": "01",
       "title": "Passo 1: Pisotear 2 partes de argila, 1 de areia e 1 de capim seco com água até formar massa firme",
-      "description": "Despeje no chão plano 2 tigelas de argila vermelha, 1 de areia grossa e 1 de capim seco cortado. Adicione água aos poucos enquanto pisoteia com os calcanhares. Dobre a massa ao meio e pise por mais de 10 minutos até conseguir enrolar uma bola do tamanho de um punho sem rachaduras superficiais.",
-      "actionNote": "> Ponto da Água: Água demais vira lama que escorre; pouca água vira pó quebradiço. Busque uma consistência firme parecida com massa de pão.",
+      "description": "1. **Dosagem proporcional exata**: Despeje sobre solo plano **2 tigelas de argila vermelha**, **1 tigela de areia grossa** e **1 tigela de capim seco** picado.\n2. **Adição gradativa de água**: Adicione água em pequenas borrifadas enquanto pisoteia com os calcanhares por **pelo menos 10 minutos**.\n3. **Dobra e compactação da massa**: Dobre o monte de barro ao meio e volte a pisar repetidamente até formar uma matriz coesa e homogênea.\n4. **Verificação de plasticidade**: Modele uma bola do tamanho de um punho e certifique-se de que **não surgem trincas superficiais** ao apertar.",
+      "actionNote": "> Ponto de umidade ideal: Água em excesso vira lama frouxa que escorre; pouca água gera blocos quebradiços. O ponto correto é firme e maleável como massa de pão.",
       "svgFileName": "pr06-step-01.svg",
       "svgLabels": [
         "FIG. 01 // CLAY TEMPERING & FIBER MATRIX BLUEPRINT",
@@ -53,13 +53,18 @@
         "⑤ Bola de barro firme finalizada",
         "Moldar bola sólida tamanho punho",
         "Superfície externa sem trincas"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD CERAMICS",
+        "title": "Temperagem refratária e matriz antitrincamento por retração",
+        "text": "A argila pura sofre retração linear de **10 a 15%** na secagem, rachando na queima. A adição de areia quartzosa e fibras de capim seco na **proporção volumétrica de 2:1:1** forma um esqueleto onde as fibras carbonizadas criam microporos que dissipam as tensões de dilatação térmica sem fratura."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Passo 2: Dispor pedras secas em ferradura (formato de U) sobre chão seco como base",
-      "description": "Posicione a boca para lenha (largura de um palmo, aprox. 20 cm) contra a direção do vento. Coloque pedras secas em formato de U. Espalhe 2~3 cm de areia e cascalho seco no chão interno para barrar umidade e frio. Preencha todas as frestas com barro firme usando os punhos para travá-las.",
-      "actionNote": "> Sentido do Vento: A boca virada de frente para o vento lança fagulhas no rosto. Aponte sempre na direção contrária ao vento ou na diagonal.",
+      "description": "1. **Orientação da entrada de ar**: Deixe uma boca de alimentação de lenha com **largura de 20cm** voltada contra a direção do vento dominante.\n2. **Alinhamento em ferradura**: Assente pedras secas quebradas em **formato de U contínuo** para estruturar a base.\n3. **Isolamento de fundo**: Espalhe areia seca e cascalho no piso interno com **espessura de 2 a 3cm** para barrar a friagem da terra.\n4. **Preenchimento de juntas**: Introduza argamassa de barro sob pressão em todas as frestas entre pedras para selar fugas de ar.",
+      "actionNote": "> Orientação do vento: A boca voltada para o vento faz as rajadas soprarem fagulhas e fumaça no seu rosto. Aponte sempre a favor do vento ou em ângulo protegido.",
       "svgFileName": "pr06-step-02.svg",
       "svgLabels": [
         "FIG. 02 // FOUNDATION LAYOUT & AIR ENTRY SCHEMATIC",
@@ -78,8 +83,8 @@
     {
       "stepNumber": "03",
       "title": "Passo 3: Empilhar pedras e barro alternadamente formando uma cúpula até a altura do joelho",
-      "description": "Espalhe uma camada de barro da espessura de uma palma (aprox. 5 cm) sobre as pedras da base, assente a próxima fileira travando as juntas e vá inclinando para dentro até a altura do joelho (aprox. 45 cm). Depois de erguer, molhe as mãos na água e alise a parede interna criando uma curva contínua que reflete o calor.",
-      "actionNote": "> Evitar Quedas: Nunca levante paredes altas só de barro sem pedra. As pedras são o esqueleto e o barro espesso retém a radiação térmica.",
+      "description": "1. **Leito de argamassa de barro**: Espalhe sobre as pedras da base uma camada de barro com **cerca de 5cm de espessura** (palmo de mão).\n2. **Assentamento travado em zigue-zague**: Assente a fileira seguinte sobre as juntas inferiores, preenchendo todo o contorno com barro.\n3. **Inclinação em cúpula fechada**: Incline as pedras para dentro gradativamente até atingir **cerca de 45cm de altura**.\n4. **Acabamento e polimento com água**: Umedeça as mãos e alise a parede interna da câmara formando uma curva refletora contínua sem arestas.",
+      "actionNote": "> Regra estrutural: Erguer paredes altas apenas de barro causa desabamento pelo próprio peso. Use as pedras como esqueleto revestido por barro refratário.",
       "svgFileName": "pr06-step-03.svg",
       "svgLabels": [
         "FIG. 03 // DOME CHAMBER CROSS-SECTION & THERMAL CURVATURE",
@@ -94,13 +99,18 @@
         "O calor circula e se concentra no topo",
         "⑤ Perfil total até o joelho (45 cm)",
         "Equilíbrio ideal de volume e altura de cocção"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Concentração radiante em cúpula hemisférica e inércia térmica a 650°C",
+        "text": "A curvatura parabólica interna funciona como refletor infravermelho de corpo negro em direção à boca superior de cocção. A parede espessa de **5cm de espessura** armazena calor sensível em alta densidade, retendo **300 a 650°C** por horas após o término das chamas."
+      }
     },
     {
       "stepNumber": "04",
       "title": "Passo 4: Abrir bocal superior para panela e perfurar chaminé traseira",
-      "description": "Deixe uma abertura redonda de 15~20 cm no topo da cúpula para apoiar panelas ou pedras planas. Crave três pedrinhas na borda para criar uma fresta de 1 cm para o ar passar. Na parte superior traseira, fure com um galho grosso na diagonal abrindo o duto da chaminé para exaustão.",
-      "actionNote": "> Princípio da Tiragem: Sem chaminé, a fumaça sai pela frente ardendo os olhos. O duto traseiro cria um vácuo térmico que puxa oxigênio fresco pela base.",
+      "description": "1. **Abertura superior de cocção**: Modele no topo da cúpula um bocal circular de **diâmetro 15–20cm** para panelas ou pedras de assar.\n2. **Ressaltos de espaçamento**: Crave 3 pedrinhas triangulares na borda para garantir uma **folga de 1cm para tiragem**.\n3. **Furação da chaminé traseira**: Fure a parede posterior superior na diagonal com um galho grosso para criar um **duto de exaustão de fumaça**.\n4. **Inspeção do fluxo térmico**: Confirme que há um canal contínuo de sucção de ar da entrada frontal inferior até a chaminé traseira.",
+      "actionNote": "> Efeito chaminé: Sem exaustão traseira alta, a fumaça sai pela boca frontal cegando o operador. Posicionar a chaminé mais alta garante tiragem limpa.",
       "svgFileName": "pr06-step-04.svg",
       "svgLabels": [
         "FIG. 04 // AIR DRAFT PERSPECTIVE & EXHAUST BLUEPRINT",
@@ -114,13 +124,18 @@
         "Circula na câmara aquecendo a panela",
         "⑤ Ressaltos espaçadores para tiragem",
         "O fogo não apaga com a panela apoiada"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD AERODYNAMICS",
+        "title": "Efeito chaminé e dinâmica de indução Venturi",
+        "text": "A diferença de cota e o gradiente térmico entre a boca frontal inferior e a chaminé traseira elevada acionam um forte **efeito chaminé (Stack Effect)**. A rápida ascensão dos gases quentes gera pressão negativa interna, induzindo ar fresco continuamente ao leito de brasas."
+      }
     },
     {
       "stepNumber": "05",
       "title": "Passo 5: Curar com fogo brando de gravetos por 3 horas para endurecer o barro como tijolo",
-      "description": "Nunca acenda fogo forte imediato em barro úmido; a água fervendo dentro dos poros explodirá as paredes. Acenda uma fogueirinha de gravetos perto da entrada e mantenha brando por 3~4 horas. Observe a fumaça branca de vapor saindo e a cor mudando de marrom escuro úmido para ocre claro seco. Quando estiver quente e seco ao toque, o fogão estará pronto.",
-      "actionNote": "> Reparar Trincas: Se surgirem pequenas rachaduras finas durante a secagem, passe pasta de barro fresca com a ponta dos dedos para vedá-las na hora.",
+      "description": "1. **Acendimento em baixa potência**: Crie um braseiro pequeno de folhas secas e gravetos próximo à boca de alimentação.\n2. **Secagem lenta contínua**: Mantenha calor brando por **3 a 4 horas** consecutivas sem alimentar chamas altas.\n3. **Verificação de cura visual**: Acompanhe a mudança de cor do marrom escuro úmido para um **tom ocre claro e seco**, cessando a saída de vapor.\n4. **Calafetagem de microfissuras**: Aplique uma camada fina de pasta de barro sobre qualquer trinca de secagem para consolidar a vedação.",
+      "actionNote": "> Perigo de queima rápida: Queimar toras grossas logo no início ferve a água interna e explode as paredes. A secagem lenta por mais de 3 horas transforma o barro em cerâmica sólida.",
       "svgFileName": "pr06-step-05.svg",
       "svgLabels": [
         "FIG. 05 // CONTROLLED DEHYDRATION & CERAMIC HARDENING",
@@ -138,21 +153,21 @@
     }
   ],
   "fatalMistake": {
-    "title": "Erro Fatal: Usar Pedras Úmidas de Rio em Contato Direto com o Fogo na Câmara",
-    "description": "Pedras de rio e seixos encharcados retêm água presa em microporos mesmo com a superfície seca. Ao receber fogo acima de 300°C, a água vira vapor de alta pressão instantaneamente e detona como uma granada. Estilhaços pontiagudos voam nos olhos e rosto, causando cegueira permanente e lacerações graves. Use apenas pedras de encostas secas a 10 m da água e cubra-as com 5 cm de barro grosso.",
-    "consequence": "Consequência: A explosão por vapor lança estilhaços afiados causando cegueira e ferimentos graves"
+    "title": "Erro Fatal: Construir paredes de combustão com pedras de rio úmidas",
+    "description": "Pedras coletadas em leitos de rios guardam moléculas de água em seus microporos, mesmo quando secas por fora. Em contato direto com chamas a mais de 300°C, a água ferve instantaneamente sob altíssima pressão, fazendo a pedra explodir como uma granada. Estilhaços cortantes podem atingir olhos e rosto. Colete pedras apenas em encostas secas a mais de 10m da água e revista todas as faces com 5cm de barro refratário.",
+    "consequence": "Consequência: A explosão por vapor de água projeta estilhaços de rocha afiados causando cegueira e queimaduras profundas"
   },
   "shortsScript": {
-    "hook": "Fogueira no chão perde 80% do calor. Veja como construir um fogão primitivo resistente a temporais.",
-    "body": "Pise 2 partes de argila, 1 de areia e 1 de capim seco com água até virar massa firme. Monte pedras secas em U viradas contra o vento. Levante a cúpula alternando pedras e barro com bocal superior e chaminé traseira. Cure por 3 horas com fogo brando até endurecer como tijolo. Nunca use pedras úmidas de rio dentro; a pressão de vapor faz elas detonarem.",
-    "outro": "Cozinhe suas refeições e mantenha calor seguro a noite toda sob tempestades."
+    "hook": "Fogueiras no chão perdem 80% do calor para o vento. Aprenda a fazer um fogão primitivo de barro indestrutível.",
+    "body": "Pise 2 partes de argila, 1 de areia e 1 de palha até formar massa firme. Disponha pedras em U, suba uma cúpula até o joelho, abra o bocal superior e a chaminé traseira. Cure por 3 horas com gravetos. Nunca use pedras de rio úmidas; elas explodem feito estilhaços no fogo.",
+    "outro": "Cozinha em tempestades e retém calor radiante a noite inteira."
   },
   "outcome": {
     "svgFileName": "pr06-outcome.svg",
-    "title": "Fogão Primitivo de Pedra e Argila Revestida Concluído",
-    "description": "Uma base de pedra em U selada com 5 cm de argila refratária temperada com palha, com tampa nivelada para cozimento e chaminé traseira que atinge 650°C."
+    "title": "Fogão de Pedra com Reboco de Barro Finalizado",
+    "description": "Um fogão em cúpula de barro com núcleo de pedras, reboco liso, bocal superior de cocção e chaminé traseira projetado para reter 650°C de calor."
   },
   "createdAt": "2026-10-14T10:15:00.000Z",
-  "contentHash": "92064fb90844ce2f",
-  "updatedAt": "2026-10-15T13:34:19+09:00"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "c7c298b1d914459f"
 }

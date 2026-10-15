@@ -40,7 +40,7 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Dig a 50cm Cone Pit & Establish a Starter Ember Bed",
-      "description": "Select dry, firm woodland ground and excavate a pit 60cm wide at the top and 50cm deep, tapering downward to a 30cm base. Build a brisk fire of dry twigs and leaves at the bottom for at least 15 minutes to completely bake away moisture from the pit walls and create a glowing bed of red-hot coals.",
+      "description": "1. **Excavate Cone-Shaped Pit**: Dig a pit **60cm wide at the top** and **50cm deep** in dry, solid ground away from pooling rainwater.\n2. **Shape Tapered Base**: Taper the pit walls downward to a **30cm base diameter** to concentrate internal thermal convection toward the center.\n3. **Bake Out Residual Moisture**: Build an active fire with dry twigs and dead leaves at the bottom for **over 15 minutes** to dry the clay walls bone-dry.\n4. **Establish Glowing Ember Bed**: Ensure the open flames subside into a thick, **glowing red coal bed** across the entire floor.",
       "actionNote": "> Digging Insight: If residual soil moisture remains in the pit, the wood will steam, rot, and extinguish. Heat the base thoroughly until bone dry.",
       "svgFileName": "pr09-step-01.svg",
       "svgLabels": [
@@ -49,12 +49,17 @@
         "Depth 50cm (Base Diameter 30cm)",
         "Base Pre-Drying Kindling & Ember Bed",
         "[KEY] Fully bake out soil moisture for high heat"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Subterranean Thermal Mass and Convective Heat Retention",
+        "text": "Subterranean pit kilns reduce ambient heat loss through earth insulation. The tapered V-shaped geometry focuses rising convection currents into the kiln core, maintaining steady anaerobic baking temperatures **above 400°C** for **over 3 hours**."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Step 2: Pack Wrist-Thick Oak Billets Vertically with Zero Gaps",
-      "description": "Directly on top of the glowing embers, stand dry oak billets (30-40cm long, 5-8cm thick) vertically like tight pillars. Any large air pockets allow free oxygen to circulate, burning your wood down to white ash. Drive slender finger-thick branches into every crevice like wooden wedges to pack the cavity to maximum density.",
+      "description": "1. **Vertical Timber Placement**: Stand dry hardwood billets of **length 30–40cm and thickness 5–8cm** upright directly onto the base embers.\n2. **Radial Packing Density**: Pack additional oak billets tightly from the center outward, leaving **virtually zero air voids**.\n3. **Crevice Wedge Locking**: Drive **finger-thick branches** into remaining gaps as wooden wedges to eliminate trapped oxygen pockets.\n4. **Level Top Edge Verification**: Inspect the top surface of the timber stack to ensure it sits **flush with the ground rim**.",
       "actionNote": "> Stacking Secret: The kiln chamber must be packed solid with almost no breathing room. Maximum density yields dense, metallic-sounding charcoal.",
       "svgFileName": "pr09-step-02.svg",
       "svgLabels": [
@@ -63,12 +68,17 @@
         "Slender Wedges Filling Every Crevice",
         "Heat Spreading from Bottom Embers",
         "[KEY] Minimize air voids for pure anaerobic density"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD PYROLYSIS",
+        "title": "Dense Stacking and Anaerobic Pyrolysis Mechanics",
+        "text": "Minimizing air gaps causes initial oxygen to deplete rapidly, arresting open-flame combustion. Intense ambient heat drives off bound moisture and volatile wood tars, leaving behind a resilient, crystallized **amorphous carbon** matrix that yields dense lump charcoal."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Step 3: Lay Branch Lattice & Seal 95% Oxygen with Mud and Turf Sod",
-      "description": "Lay thick cross branches across the top of the vertical logs in a grid pattern, then blanket them with broad green leaves or dense grass. Pack a 10cm layer of moist clay and upside-down grass sod over the dome. Poke two finger-thick air intake vents at ground level on the windward side, and leave one fist-sized chimney vent in the center, allowing only 5% oxygen intake.",
+      "description": "1. **Erect Branch Lattice Frame**: Lay thick green poles across the top of the vertical billets in a **criss-cross grid** to bear the ceiling load.\n2. **Layer Leaf Barrier**: Shingle broad leaves and dense grass across the lattice to prevent wet dirt from tumbling into the kiln.\n3. **Apply 10cm Clay and Turf Cap**: Pack moist mud and inverted sod to a **thickness of 10cm**, sealing **95% of incoming airflow**.\n4. **Puncture Intake and Exhaust Vents**: Pierce **two finger-thick intake vents** at ground level on the windward side and **one fist-sized center chimney**.",
       "actionNote": "> Seal Check: If smoke leaks through hairline cracks in the mud mound, immediately slap fresh wet clay over them to stop open flame combustion.",
       "svgFileName": "pr09-step-03.svg",
       "svgLabels": [
@@ -83,8 +93,8 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Monitor Smoke Transition & Hermetically Seal for Cooling",
-      "description": "For the first 1-2 hours, dense white steam billows from the chimney as moisture boils off. After 2-3 hours, when the smoke turns into a faint, translucent blue haze, moisture and tars have escaped—the wood has carbonized into pure charcoal! Instantly seal the chimney and intake vents air-tight with wet clay balls. Wait at least 6 hours until the mound is cold to the touch before opening.",
-      "actionNote": "> Backdraft Warning: Opening a hot kiln rushes fresh oxygen inside, creating a catastrophic backdraft explosion that reduces your charcoal to ash in seconds. Let it cool completely.",
+      "description": "1. **Monitor Dense White Steam**: Observe thick white steam billowing from the chimney during the initial **1–2 hours** as interior moisture boils off.\n2. **Detect Translucent Blue Smoke**: Watch for the smoke transitioning to a **faint translucent blue haze** after **2–3 hours**, signalling complete carbonization.\n3. **100% Hermetic Clay Seal**: Immediately plug the chimney and both intake vents with stiff clay balls to **halt all oxygen transfer**.\n4. **6-Hour Slow Cooling and Harvest**: Allow the kiln to slow-cool for **at least 6 hours** until cold to the touch before gently uncovering metallic-ringing lump charcoal.",
+      "actionNote": "> Kiln Flare-up (Backdraft) Warning: Opening a hot kiln rushes fresh oxygen inside, creating an explosive backdraft fireball that burns your charcoal to ash in seconds. Let the soil turn completely cold to the touch before unearthing.",
       "svgFileName": "pr09-step-04.svg",
       "svgLabels": [
         "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
@@ -93,7 +103,12 @@
         "Hermetically Seal All Vents & Cool Completely",
         "Harvest Metallic-Ringing Dense Hardwood Charcoal",
         "[KEY] Seal on blue smoke & cool fully to touch"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Backdraft Prevention and Slow-Cooling Carbon Stabilization",
+        "text": "Upon carbonization completion, the kiln chamber is an oxygen-depleted thermal reservoir. An abrupt breach draws in fresh air, triggering rapid combustion of superheated wood gases (backdraft). Hermetically capping vents and slow-cooling for **over 6 hours** stabilizes the high-density carbon structure without ash loss."
+      }
     }
   ],
   "fatalMistake": {
@@ -112,6 +127,6 @@
     "description": "Cross-sectional engineering view of the 50cm underground cone kiln operating at 95% oxygen restriction, yielding dense porous hardwood charcoal ideal for smokeless high heat and emergency water filtration."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "06910fe5beeb5301",
-  "updatedAt": "2026-10-15T14:35:53+09:00"
+  "contentHash": "916099d408d4f948",
+  "updatedAt": "2026-10-15T14:41:20+09:00"
 }

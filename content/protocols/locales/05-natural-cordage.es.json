@@ -35,8 +35,8 @@
     {
       "stepNumber": "01",
       "title": "Paso 1: Elegir tallos flexibles, raspar la corteza exterior y pelar la fibra blanca interna",
-      "description": "Doble el tallo por la mitad para comprobar que se curva sin partirse. Raspe suavemente la corteza marrón exterior con el borde de una piedra hasta descubrir la capa blanca y fibrosa. Levante el extremo inferior con la uña y tire hacia arriba para desprender tiras largas separándolas del núcleo leñoso.",
-      "actionNote": "> Consejo clave: Los tallos secos caídos en el suelo tienen fibras podridas que se rompen al tensarlas. Use siempre tallos vivos.",
+      "description": "1. **Comprobación de elasticidad**: Doble el tallo despacio en ángulo de **más de 90 grados** para verificar que no quiebre.\n2. **Raspado de corteza exterior**: Apoye el borde biselado de una piedra para retirar solo la **corteza marrón quebradiza**.\n3. **Inspección de la capa floemática**: Compruebe visualmente la aparición de las **fibras blancas internas y húmedas** bajo la superficie raspada.\n4. **Desprendimiento del núcleo leñoso**: Levante el extremo con la uña y tire longitudinalmente para **separar el núcleo leñoso rígido** de las cintas de fibra.",
+      "actionNote": "> Principio de recolección: Los tallos caídos y secos poseen fibras podridas que se deshacen bajo carga. Extraiga la corteza interna siempre de ramas vivas o recién cortadas.",
       "svgFileName": "pr05-step-01.svg",
       "svgLabels": [
         "① Raspar corteza exterior con borde de piedra",
@@ -44,13 +44,18 @@
         "③ Fibra interna blanca y firme (material clave)",
         "④ Núcleo central de madera dura (desechar)",
         "⑤ Tallo vivo flexible que se dobla sin partirse"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Resistencia a la tracción del floema y separación de pectina",
+        "text": "El **tejido floemático (fibras del líber)** situado entre la corteza exterior y el xilema interno está compuesto por microfibrillas de celulosa paralelas que alcanzan el **50% de la resistencia a la tracción del acero dulce**. El raspado mecánico meticuloso aísla estas fibras portantes sin fracturarlas."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Paso 2: Remojar 20 minutos en el arroyo y machacar con piedra hasta suavizar",
-      "description": "Sumerja las tiras de corteza interna en agua durante 20~30 minutos. Extiéndalas sobre una piedra plana y golpéelas suavemente con una piedra redonda de arriba abajo. Cuando la fibra rígida se separe en hebras finas y suaves como hilos, divídalas en dos manojos iguales del grosor de un dedo.",
-      "actionNote": "> Principio clave: Golpear demasiado fuerte corta las fibras. Presione y machaque con suavidad para conservar hebras largas.",
+      "description": "1. **Hidratación y lixiviación de pectina**: Sumerja las cintas de corteza en agua de **20 a 30 minutos** para ablandar savias y gomas vegetales.\n2. **Disposición en yunque de piedra**: Extienda las fibras hidratadas sobre una **piedra plana de río** perfectamente estable.\n3. **Desfibrado por percusión suave**: Golpee y ruede suavemente un canto rodado a lo largo para separar el grano leñoso en **finos filamentos textiles**.\n4. **División simétrica en dos cabos**: Divida el manojo resultante en **2 cabos iguales** con el mismo diámetro y densidad.",
+      "actionNote": "> Control de impacto: Descargar golpes bruscos secciona las hebras longitudinales. Presione y ruede con suavidad para mantener las fibras íntegras.",
       "svgFileName": "pr05-step-02.svg",
       "svgLabels": [
         "① Corteza interna remojada 20+ min en agua",
@@ -63,8 +68,8 @@
     {
       "stepNumber": "03",
       "title": "Paso 3: Retorcer hacia afuera y cruzar hacia el cuerpo (Trenzado Inverso)",
-      "description": "Sujete la mitad del manojo con el pulgar e índice izquierdos y dóblelo para formar un cabo superior y otro inferior. Con la mano derecha, retuerza con fuerza el cabo superior hacia afuera (alejándolo de usted) y luego crúcelo por encima del cabo inferior hacia su cuerpo. Avance el pulgar izquierdo para sujetar el cruce y repita siempre: retorcer hacia afuera y cruzar hacia adentro.",
-      "actionNote": "> Principio clave: Si gira ambos cabos en la misma dirección, la cuerda se deshará sola. El giro opuesto bloquea las tensiones entre sí.",
+      "description": "1. **Sujeción en lazo central**: Doble el manojo por la mitad aprisionando el pliegue central entre pulgar e índice izquierdos para definir **cabo superior e inferior**.\n2. **Torsión horaria individual**: Con la mano derecha, retuerza el cabo superior hacia afuera (↑) en **sentido horario** hasta que quede tenso.\n3. **Cruce antihorario colectivo**: Pasa el cabo superior ya torsionado sobre el cabo inferior hacia tu cuerpo (↓) en un **movimiento de cruce antihorario**.\n4. **Bloqueo progresivo continuo**: Avanza el pulgar izquierdo sujetando el nuevo nudo de cruce y repite la secuencia de **retorcer afuera y cruzar adentro**.",
+      "actionNote": "> Ley de bloqueo inverso: Girar ambos cabos en la misma dirección desarma la cuerda al instante. Contrarrotar los cabos individuales frente al trenzado equilibra el par torsor y crea un bloqueo permanente.",
       "svgFileName": "pr05-step-03.svg",
       "svgLabels": [
         "① Cabo superior: retorcer firme hacia afuera (↑)",
@@ -72,13 +77,18 @@
         "③ Sujetar cruce con pulgar e índice izquierdos",
         "④ Cruzar cabo superior hacia el cuerpo (↓)",
         "⑤ Cierre inverso que no se deshace al soltar"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Equilibrio de par torsor y bloqueo mecánico del trenzado inverso",
+        "text": "Al retorcer cada cabo en sentido horario (torsión Z) mientras se trenzan juntos en sentido antihorario (torsión S), las fuerzas de recuperación elástica opuestas se neutralizan en un **equilibrio de par torsor**. Este entrelazado por fricción evita que la soga se desenrolle sin necesidad de nudos."
+      }
     },
     {
       "stepNumber": "04",
       "title": "Paso 4: Superponer 10cm de fibra nueva para empalmar longitud infinita",
-      "description": "Cuando a un cabo le queden unos 10cm y se adelgace, coloque un manojo nuevo junto al extremo viejo superponiendo 10cm. Sujete ambos como si fueran un solo cabo y siga retorciendo hacia afuera y cruzando hacia usted. Separe siempre los empalmes del cabo superior e inferior al menos un palmo (15cm).",
-      "actionNote": "> Precaución: Empalmar ambos cabos en el mismo punto crea un bulto débil que se rompe al tirar.",
+      "description": "1. **Detección de zona de empalme**: Identifique cuándo cualquiera de los cabos se agote hasta un remanente de **unos 10cm**.\n2. **Solapamiento longitudinal**: Coloque la punta de un nuevo manojo de fibra paralelo al cabo saliente a lo largo de **10cm de contacto**.\n3. **Torsión de cabo unificado**: Sujete ambos extremos juntos como un solo hilo y retuerza hacia afuera durante **3 a 4 ciclos de trenzado**.\n4. **Desfase axial de empalmes**: Asegúrese de que los empalmes del cabo superior e inferior mantengan una **separación mínima de 15cm**.",
+      "actionNote": "> Regla de empalmes desfasados: Coincidir ambas uniones en el mismo punto genera un engrosamiento que cede al someterlo a tracción. Alterne las uniones con 15cm de margen.",
       "svgFileName": "pr05-step-04.svg",
       "svgLabels": [
         "① Cabo viejo adelgazado con 10cm restantes",
@@ -86,13 +96,18 @@
         "③ Retorcer ambos extremos juntos como uno solo",
         "④ Empalme liso sin bultos ni puntos débiles",
         "⑤ Desfasar empalmes superior e inferior por 15cm"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD TENSION",
+        "title": "Dispersión de empalmes desfasados y transferencia por fricción de cizallamiento",
+        "text": "Concentrar los empalmes de ambos cabos en el mismo punto genera discontinuidades axiales y fracturas por concentración de tensiones. Al desfasar las uniones **al menos 15cm**, la carga se transmite mediante **fricción interfacial de cizallamiento** al cabo continuo paralelo, conservando el 100% de la resistencia."
+      }
     },
     {
       "stepNumber": "05",
       "title": "Paso 5: Hacer nudo de tope final y probar con el peso del cuerpo en un árbol",
-      "description": "Al alcanzar la longitud deseada (5m o más), doble los últimos 3cm y haga un nudo simple bien apretado para que no se deshilache. Raspe los pelos sueltos con una lasca de piedra. Por último, rodee el tronco de un árbol firme con la cuerda y tire con todo su peso (50kg+) para comprobar que ningún empalme resbale.",
-      "actionNote": "> Verificación: Si oye crujir fibras o nota que un empalme cede, refuerce ese tramo envolviendo más fibra encima.",
+      "description": "1. **Nudo terminal de contención**: Al alcanzar la longitud requerida (5m+), forme un lazo a **3cm del extremo** y ciña un nudo simple de tope.\n2. **Afeitado de pelusas**: Pase suavemente una lasca afilada de piedra para eliminar rebabas hasta obtener una **sección uniforme de 5mm**.\n3. **Fijación en tronco de anclaje**: Dé dos vueltas completas con la soga alrededor de un tronco verde más grueso que el antebrazo.\n4. **Prueba de carga con 50kg**: Aférrese con las manos a la soga y descargue **más de 50kg de peso corporal** para verificar la ausencia de deslizamiento.",
+      "actionNote": "> Criterio de prueba de tracción: Si escucha fibras quebrarse o un empalme cede unos milímetros, envuelva una vaina delgada de fibra adicional sobre el sector afectado.",
       "svgFileName": "pr05-step-05.svg",
       "svgLabels": [
         "① Nudo final de tope a 3cm del extremo",
@@ -119,6 +134,6 @@
     "description": "Una bobina de cuerda uniforme de 8 mm trenzada en sentido inverso con fibras de corteza, capaz de resistir más de 90 kgf de carga de tracción."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "03d1706e68d38783"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "dca7cf4417941f64"
 }

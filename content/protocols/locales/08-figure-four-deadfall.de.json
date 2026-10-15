@@ -35,7 +35,7 @@
     {
       "stepNumber": "01",
       "title": "Schritt 1: Carve 3 sticks (Post, Strut, and Bait Stick notches)",
-      "description": "Prepare three finger-thick straight sticks. First, carve the top of the [1. Vertical Post (20cm)] into a flat chisel shape and cut a square notch in the middle. Second, carve a V-notch near the top of the [2. Diagonal Strut (25cm)] to catch the post tip, and bevel the bottom end. Third, carve a catch ledge on the [3. Bait Stick (30cm)] to fit the post notch, cut a rear notch to hold the strut bottom, and whittle the far inner tip into a sharp pencil point for bait.",
+      "description": "1. **Vertikalpfosten schnitzen**: Die Spitze des **20cm-Vertikalpfostens** flach wie einen Schlitzschraubendreher zuspitzen und eine rechtwinklige Nut in die Mitte schneiden.\n2. **Diagonalstrebe schnitzen**: Eine 45-Grad-V-Nut in das obere Ende der **25cm-Diagonalstrebe** kerben und das untere Ende zu einer flachen Kante abschrägen.\n3. **Köderstab schnitzen**: Eine Rastenstufe am **30cm-Köderstab** für den Pfosten schneiden, eine hintere Kerbe für die Strebe einkerben und die innere Spitze nadelspitz schnitzen.\n4. **Rechtwinklige Kerbenkontrolle**: Sicherstellen, dass alle Verriegelungsstufen scharfe **90-Grad-Winkelkanten** statt abgerundeter Kurven aufweisen.",
       "actionNote": "> Carving Tip: If you make the notches rounded, they will slip out. Cut them crisp and square with a sharp knife edge so the sticks bite firmly into each other.",
       "svgFileName": "pr08-step-01.svg",
       "svgLabels": [
@@ -44,12 +44,17 @@
         "STRUT (Stick 2 - Top V-Notch & Bottom Bevel)",
         "BAIT STICK (Stick 3 - Catch Ledge & Pin Tip)",
         "[KEY] Carve crisp square notches that bite firmly"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Statisches Reibungsgleichgewicht und Haarabzug-Empfindlichkeit",
+        "text": "Die drei Komponenten der 4er-Falle halten das Felsgewicht durch den **statischen Reibungskoeffizienten** der rechtwinkligen Kerben. Eine flache Kerbentiefe von nur **2–3mm** senkt die erforderliche Auslösekraft auf **unter 50g**, was maximale Empfindlichkeit garantiert."
+      }
     },
     {
       "stepNumber": "02",
       "title": "Schritt 2: Rest the Diagonal Strut on top of the Vertical Post",
-      "description": "Stand the Vertical Post upright on firm, flat ground. Place the top V-notch of the Diagonal Strut onto the flat chisel tip of the post at roughly a 45-degree angle. Press down gently with your fingers to ensure the two sticks bite into each other without sliding sideways.",
+      "description": "1. **Vertikale Basisausrichtung**: Den Vertikalpfosten auf festem, ebenem Boden absolut wackelfrei aufstellen.\n2. **Obere V-Nut-Kopplung**: Die V-Nut der Diagonalstrebe in einem exakten **45-Grad-Neigungswinkel** auf die flache Spitze des Pfostens setzen.\n3. **Achsausrichtung prüfen**: Mit dem Finger leichten Druck von oben ausüben, um sicherzustellen, dass die Strebe nicht abrutscht und exakt an der **Pfostenachse** anliegt.",
       "actionNote": "> Angle Check: Keep the strut at roughly a 45-degree angle to hold the heavy boulder weight most reliably.",
       "svgFileName": "pr08-step-02.svg",
       "svgLabels": [
@@ -58,12 +63,17 @@
         "Strut 2 V-Notch Joint",
         "Locks firmly at 45°",
         "[KEY] Top hinge locks firmly without sliding"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD VECTOR PHYSICS",
+        "title": "45-Grad-Winkelstützung und Druck-Schub-Kraftzerlegung",
+        "text": "Durch die Neigung der Strebe um **45 Grad** wird die vertikale Schwerkraft des Felsens optimal in vertikale Druckspannung am Pfosten und horizontale Zugspannung am Köderstab aufgeteilt. Diese Geometrie bildet die ideale Schwelle zwischen Stabilität und Sofortauslösung."
+      }
     },
     {
       "stepNumber": "03",
       "title": "Schritt 3: Insert the Bait Stick to make the 'Number 4' stand alone",
-      "description": "Hold the Bait Stick horizontally parallel to the ground. Hook its front catch ledge into the middle notch of the vertical post. Then hook the bottom of the diagonal strut into the rear notch of the bait stick. Slowly release your hands—the three sticks push against each other and stand completely on their own in a perfect 'Number 4' shape without any rope!",
+      "description": "1. **Köderstab horizontal einhängen**: Den Köderstab waagerecht halten und die vordere Raststufe in die **mittlere Pfostennut** einhängen.\n2. **Strebefuß aufsetzen**: Das untere Ende der Diagonalstrebe vorsichtig in die **hintere Kerbe des Köderstabs** einpassen.\n3. **Selbsttragendes Gleichgewicht prüfen**: Die Hände langsam zurückziehen und kontrollieren, ob die drei Hölzer durch reine Reibung in einer steifen **Zahl-4-Silhouette** ohne Schnüre frei stehen.",
       "actionNote": "> Balance Check: When you let go, it must balance solidly without wobbling. If it tilts, flatten the bottom of the vertical post.",
       "svgFileName": "pr08-step-03.svg",
       "svgLabels": [
@@ -77,7 +87,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: Lean the heavy rock on top & test 0.1-second hair trigger",
-      "description": "Firmly impale insects or berries onto the sharp inner tip of the bait stick. Carefully lift a heavy 10-15kg flat rock with one hand and lean it gently at 45 degrees onto the upper part of the diagonal strut. The rock weight presses down, making the trap taut. Test the hair trigger by lightly tapping the bait with a twig—the sticks should collapse instantly in 0.1 seconds, dropping the boulder with a loud thud.",
+      "description": "1. **Köder fixieren**: Insekten oder Beeren fest auf die spitze Innenseite des Köderstabs spießen.\n2. **10–15kg-Felsen anlehnen**: Einen flachen Stein von **10 bis 15kg** anheben und vorsichtig in einem **40–45-Grad-Winkel** an die obere Spitze der Strebe anlehnen.\n3. **Sicherheitsabstand wahren**: Die Hände ausschließlich an den Seiten des Steins halten und niemals Finger unter die **Schlagfallzone** bringen.\n4. **0,1-Sekunden-Auslösetest**: Den Köderstab leicht mit einem Zweig antippen, um zu prüfen, ob die Falle in **unter 0,1 Sekunden** blitzartig zusammenbricht.",
       "actionNote": "> Safety First: Never put your hands or fingers underneath the rock while setting it. Always hold the sides so you are safe if it accidentally falls.",
       "svgFileName": "pr08-step-04.svg",
       "svgLabels": [
@@ -86,7 +96,12 @@
         "Bait set on inner tip",
         "Drops rock in 0.1s when touched",
         "[KEY] Hair trigger collapses instantly on touch"
-      ]
+      ],
+      "deepDive": {
+        "badge": "FIELD KINEMATICS",
+        "title": "0,1-Sekunden-Freifallbeschleunigung und Endaufprallimpuls",
+        "text": "Sobald der Abzug gelöst wird, fällt der Fels durch Erdbeschleunigung in **unter 0,1 Sekunden** zu Boden. Die **15kg** schwere Steinplatte erzeugt einen sofortigen Aufprallimpuls, der die Fluchtreaktion des Beutetiers (Reaktionszeit ca. 0,15–0,2s) vollständig unterbindet."
+      }
     }
   ],
   "fatalMistake": {
@@ -106,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T13:34:19+09:00",
-  "contentHash": "46ed0acd1b57e2da"
+  "updatedAt": "2026-10-15T16:00:00+09:00",
+  "contentHash": "51e4bec4273ad957"
 }
