@@ -1,0 +1,117 @@
+{
+  "protocolId": "PR-09",
+  "category": "FIRE",
+  "title": "How to Make Hardwood Charcoal in an Underground Pit Kiln",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[SMOKELESS FUEL & CARBON FILTER]",
+  "summary": "Burning wood in an open campfire wastes fuel by turning it completely into useless white ash. By digging a 50cm cone-shaped pit, packing hardwood tightly, and sealing it with earth and turf sod to block 95% of incoming oxygen, the timber is pyrolyzed rather than combusted. This produces dense, metallic-ringing lump charcoal that burns smokeless at 500°C, purifies contaminated water, and preserves embers for days.",
+  "timeRequired": "5 hours (1h pit digging & wood packing + 3h pyrolysis + 1h sealed cooling)",
+  "successRate": "90% (strict compliance with anaerobic seal & cooling)",
+  "difficulty": "Moderate (identifying smoke transition phases)",
+  "outputPerHour": "3-5kg premium lump charcoal per batch",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "15-20 wrist-thick dry oak or hardwood billets (30-40cm length)",
+      "desc": "Dense hardwoods such as oak, maple, or hickory that pyrolyze without combusting, yielding long-burning, high-temperature charcoal."
+    },
+    {
+      "id": "mat-02",
+      "name": "Cone-shaped earthen pit (50cm depth, 60cm top diameter)",
+      "desc": "Tapered downward to concentrate internal radiant heat and control anaerobic airflow circulation."
+    },
+    {
+      "id": "mat-03",
+      "name": "Stout branch lattice frame & broad leaves",
+      "desc": "Placed horizontally across the timber stack to support the heavy mud mound and prevent loose soil from caving in."
+    },
+    {
+      "id": "mat-04",
+      "name": "Moist clay mud & grass turf sod (10cm thickness)",
+      "desc": "Forms an airtight thermal blanket over the kiln, restricting oxygen by 95% and baking the wood above 400°C."
+    },
+    {
+      "id": "mat-05",
+      "name": "Dry kindling & starter ember bed",
+      "desc": "Completely bakes out pit wall dampness and ignites the bottom of the packed timber bundle."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Dig a 50cm Cone Pit & Establish a Starter Ember Bed",
+      "description": "Select dry, firm woodland ground and excavate a pit 60cm wide at the top and 50cm deep, tapering downward to a 30cm base. Build a brisk fire of dry twigs and leaves at the bottom for at least 15 minutes to completely bake away moisture from the pit walls and create a glowing bed of red-hot coals.",
+      "actionNote": "> Digging Insight: If residual soil moisture remains in the pit, the wood will steam, rot, and extinguish. Heat the base thoroughly until bone dry.",
+      "svgFileName": "pr09-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PIT EXCAVATION & PRE-DRYING",
+        "Top Opening 60cm Diameter Cone Pit",
+        "Depth 50cm (Base Diameter 30cm)",
+        "Base Pre-Drying Kindling & Ember Bed",
+        "[KEY] Fully bake out soil moisture for high heat"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Pack Wrist-Thick Oak Billets Vertically with Zero Gaps",
+      "description": "Directly on top of the glowing embers, stand dry oak billets (30-40cm long, 5-8cm thick) vertically like tight pillars. Any large air pockets allow free oxygen to circulate, burning your wood down to white ash. Drive slender finger-thick branches into every crevice like wooden wedges to pack the cavity to maximum density.",
+      "actionNote": "> Stacking Secret: The kiln chamber must be packed solid with almost no breathing room. Maximum density yields dense, metallic-sounding charcoal.",
+      "svgFileName": "pr09-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DENSE VERTICAL TIMBER STACK",
+        "Wrist-Thick (5-8cm) Oak Vertical Stack",
+        "Slender Wedges Filling Every Crevice",
+        "Heat Spreading from Bottom Embers",
+        "[KEY] Minimize air voids for pure anaerobic density"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Lay Branch Lattice & Seal 95% Oxygen with Mud and Turf Sod",
+      "description": "Lay thick cross branches across the top of the vertical logs in a grid pattern, then blanket them with broad green leaves or dense grass. Pack a 10cm layer of moist clay and upside-down grass sod over the dome. Poke two finger-thick air intake vents at ground level on the windward side, and leave one fist-sized chimney vent in the center, allowing only 5% oxygen intake.",
+      "actionNote": "> Seal Check: If smoke leaks through hairline cracks in the mud mound, immediately slap fresh wet clay over them to stop open flame combustion.",
+      "svgFileName": "pr09-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // MULTI-LAYER ANAEROBIC SEAL",
+        "Branch Lattice & Leaf Support Layer",
+        "10cm Moist Mud & Turf Sod Blanket",
+        "2 Base Intake Vents (Finger-Thick)",
+        "Center Exhaust Chimney (Fist-Sized)",
+        "[KEY] 95% oxygen starved incomplete combustion"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Monitor Smoke Transition & Hermetically Seal for Cooling",
+      "description": "For the first 1-2 hours, dense white steam billows from the chimney as moisture boils off. After 2-3 hours, when the smoke turns into a faint, translucent blue haze, moisture and tars have escaped—the wood has carbonized into pure charcoal! Instantly seal the chimney and intake vents air-tight with wet clay balls. Wait at least 6 hours until the mound is cold to the touch before opening.",
+      "actionNote": "> Backdraft Warning: Opening a hot kiln rushes fresh oxygen inside, creating a catastrophic backdraft explosion that reduces your charcoal to ash in seconds. Let it cool completely.",
+      "svgFileName": "pr09-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
+        "Phase 1: Dense White Steam (Water Evaporation)",
+        "Phase 2: Faint Blue Haze (Pyrolysis Done)",
+        "Hermetically Seal All Vents & Cool Completely",
+        "Harvest Metallic-Ringing Dense Hardwood Charcoal",
+        "[KEY] Seal on blue smoke & cool fully to touch"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Opening the mound while hot or forgetting to seal the vents",
+    "description": "Cracking open a kiln above 400°C draws in massive volumes of fresh oxygen, creating an explosive backdraft fireball. Leaving vents unsealed when blue smoke appears allows the charcoal to catch fire and burn away into useless ash.",
+    "consequence": "Consequence: Complete loss of your fuel yield and severe burn hazards"
+  },
+  "shortsScript": {
+    "hook": "Burning wood in an open fire leaves only white ash! Here is how to bake metallic charcoal underground!",
+    "body": "Pack oak branches vertically into a 50cm pit and seal it under clay and sod to choke out 95% of oxygen! When thick white steam turns into faint blue smoke after 3 hours, plug every vent with mud. Once cool, you will harvest dense, metallic-sounding charcoal that burns smokeless at 500 degrees!",
+    "outro": "Tap the link in our profile for full offline survival blueprints."
+  },
+  "outcome": {
+    "imageFileName": "pr09-outcome.png",
+    "svgFileName": "pr09-outcome.svg",
+    "title": "Completed Underground Pit Charcoal Kiln & Lump Charcoal Specs",
+    "description": "Cross-sectional engineering view of the 50cm underground cone kiln operating at 95% oxygen restriction, yielding dense porous hardwood charcoal ideal for smokeless high heat and emergency water filtration."
+  },
+  "createdAt": "2026-10-15T05:30:00.000Z",
+  "contentHash": "3c80e0f8743ccff6"
+}

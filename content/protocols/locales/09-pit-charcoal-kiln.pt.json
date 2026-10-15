@@ -1,0 +1,117 @@
+{
+  "protocolId": "PR-09",
+  "category": "FIRE",
+  "title": "Como fazer carvão vegetal denso em trincheira de terra sem oxigênio",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[COMBUSTÍVEL SEM FUMAÇA E FILTRO DE CARBONO]",
+  "summary": "Queimar lenha em fogueira aberta consome a madeira por completo, deixando apenas cinzas brancas inúteis. Ao cavar uma vala cônica de 50 cm, empilhar toras de carvalho verticalmente e vedar tudo com barro e placas de grama para cortar 95% do oxigênio, a madeira passa por pirólise em vez de combustão. Isso produz carvão vegetal maciço de som metálico, que queima a 500 °C sem fumaça e filtra água barrenta.",
+  "timeRequired": "5 horas (1h escavação e carga + 3h pirólise + 1h resfriamento vedado)",
+  "successRate": "90% (cumprindo a vedação anaeróbica e tempo de resfriamento)",
+  "difficulty": "Médio (requer identificar a mudança na cor da fumaça)",
+  "outputPerHour": "3 a 5 kg de carvão vegetal de alta dureza por fornada",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "15-20 toretes secos de carvalho na grossura do punho (30-40 cm de comprimento)",
+      "desc": "Madeiras nobres de alta densidade que se carbonizam sem queimar em chamas abertas, gerando brasas duradouras."
+    },
+    {
+      "id": "mat-02",
+      "name": "Buraco cônico de terra (50 cm de profundidade, 60 cm de boca superior)",
+      "desc": "Escavado com afunilamento para o fundo para concentrar o calor e controlar a circulação de ar."
+    },
+    {
+      "id": "mat-03",
+      "name": "Grade de galhos grossos e folhas largas",
+      "desc": "Estrutura colocada sobre a lenha para sustentar a tampa de argila e evitar deslizamento de terra."
+    },
+    {
+      "id": "mat-04",
+      "name": "Barro argiloso úmido e placas de grama (10 cm de espessura)",
+      "desc": "Camada isolante que veda a vala, bloqueia 95% do oxigênio e assa a madeira a mais de 400 °C."
+    },
+    {
+      "id": "mat-05",
+      "name": "Gravetos secos e leito de brasas inicial",
+      "desc": "Seca completamente a umidade das paredes de terra e acende a base da carga de madeira."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Cavar buraco cônico de 50 cm e fazer leito de brasas",
+      "description": "Escolha solo seco e firme. Escave um buraco de 60 cm de diâmetro na superfície e 50 cm de profundidade, afunilando para 30 cm no fundo. Acenda uma fogueira de gravetos secos no fundo por 15 minutos para secar totalmente a umidade da terra e formar uma base de brasas incandescentes.",
+      "actionNote": "> Dica de escavação: Se restar umidade no fundo, a madeira apodrecerá e o fogo se apagará. Aqueça a base até secar completamente.",
+      "svgFileName": "pr09-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PIT EXCAVATION & PRE-DRYING",
+        "Abertura superior de 60cm poço cônico",
+        "Profundidade 50cm (base de 30cm)",
+        "Brasas de fundo para secagem do solo",
+        "[CHAVE] Secar umidade da terra e formar brasas"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Empilhar toras de carvalho verticalmente sem frestas",
+      "description": "Sobre as brasas do fundo, apoie as toras secas de carvalho (30-40 cm de comprimento, 5-8 cm de espessura) em pé, como colunas bem coladas. Frestas largas deixam o oxigênio circular e queimam tudo até virar cinza. Crave galhos finos como cunhas nos vãos para atingir densidade máxima.",
+      "actionNote": "> Segredo de empilhamento: O forno deve ficar tão compacto que quase não haja vazios. Quanto mais denso, mais resistente o carvão.",
+      "svgFileName": "pr09-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DENSE VERTICAL TIMBER STACK",
+        "Toras de carvalho (5-8cm) em pé",
+        "Galhos finos cunhados nos vãos",
+        "Calor subindo das brasas da base",
+        "[CHAVE] Minimizar vazios para densidade anaeróbica"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Assentar grade de galhos e vedar 95% do ar com barro",
+      "description": "Trance galhos grossos sobre as toras em pé e cubra-os com folhas largas ou capim denso. Aplique por cima 10 cm de barro úmido e placas de grama invertidas. Deixe duas aberturas de entrada de ar da grossura de um dedo na base do lado do vento e uma chaminé do tamanho de um punho no topo, permitindo apenas 5% de oxigênio.",
+      "actionNote": "> Checagem de vedação: Se sair fumaça por rachaduras no barro, tampe-as imediatamente com argila fresca para evitar chamas abertas.",
+      "svgFileName": "pr09-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // MULTI-LAYER ANAEROBIC SEAL",
+        "Grade de galhos e camada de folhas",
+        "Tampa de 10cm de argila e leivas",
+        "2 entradas de ar base (grossura de dedo)",
+        "Chaminé central de exaustão (punho)",
+        "[CHAVE] Combustão incompleta sem 95% de oxigênio"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Monitorar a cor da fumaça, lacrar e resfriar para colher",
+      "description": "Nas primeiras 1 a 2 horas, sai uma fumaça branca densa de vapor de água. Após 2 a 3 horas, quando a fumaça se tornar azul-clara e translúcida, a água e os alcatrões já evaporaram: a madeira virou carvão puro! Vede imediatamente todas as aberturas com bolas de barro. Aguarde pelo menos 6 horas até o solo estar frio ao toque antes de desenterrar.",
+      "actionNote": "> Risco de explosão: Se abrir o forno ainda quente, a entrada repentina de oxigênio causará uma explosão que reduzirá o carvão a cinzas. Deixe esfriar por completo.",
+      "svgFileName": "pr09-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
+        "Fase 1: Fumaça branca densa (vapor)",
+        "Fase 2: Fumaça azul tênue (pirólise pronta)",
+        "Todas as aberturas lacradas e resfriadas",
+        "Carvão vegetal duro com ressonância metálica",
+        "[CHAVE] Lacrar na fumaça azul e resfriar total"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro fatal: Abrir a cova ainda quente ou esquecer de vedar as aberturas",
+    "description": "Destampar o forno acima de 400 °C puxa ar fresco de forma violenta, provocando uma labareda explosiva instantânea. Deixar as saídas abertas com a fumaça azul queimará todo o carvão até virar cinzas.",
+    "consequence": "Consequência: Perda total da produção de carvão e risco severo de queimaduras"
+  },
+  "shortsScript": {
+    "hook": "Fogueira ao ar livre só deixa cinza inútil! Veja como assar carvão de toque metálico debaixo da terra!",
+    "body": "Aperte toras de carvalho em pé num buraco de 50 cm e vede com barro para bloquear 95% do oxigênio! Após 3 horas, a fumaça branca vira azul claro, indicando carvão pronto. Tampe todos os furos com argila e deixe esfriar. Você colherá carvão denso que queima a 500 graus sem fumaça!",
+    "outro": "Acesse os manuais completos de sobrevivência offline no link do perfil."
+  },
+  "outcome": {
+    "imageFileName": "pr09-outcome.png",
+    "svgFileName": "pr09-outcome.svg",
+    "title": "Corte transversal da trincheira de carvão e especificações",
+    "description": "Vista técnica do forno subterrâneo cônico com 95% de restrição de oxigênio, produzindo carvão vegetal poroso de carvalho para calor sem fumaça e filtragem de emergência."
+  },
+  "createdAt": "2026-10-15T05:30:00.000Z",
+  "contentHash": "3c80e0f8743ccff6"
+}

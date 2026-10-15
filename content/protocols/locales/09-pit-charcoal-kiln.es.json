@@ -1,0 +1,117 @@
+{
+  "protocolId": "PR-09",
+  "category": "FIRE",
+  "title": "Cómo hacer carbón vegetal en un horno de pozo subterráneo sin oxígeno",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[COMBUSTIBLE SIN HUMO Y FILTRO DE CARBONO]",
+  "summary": "Quemar leña en una fogata abierta la convierte por completo en ceniza blanca inútil debido al exceso de oxígeno. Al cavar un pozo cónico de 50 cm, apilar troncos de roble apretados verticalmente y sellarlo con barro y tepes de hierba para bloquear el 95% del aire, la madera se piroliza en lugar de arder. Esto genera carbón duro y denso que suena a metal, arde a 500 °C sin humo, purifica agua y conserva ascuas durante días.",
+  "timeRequired": "5 horas (1h excavación y carga + 3h pirólisis + 1h enfriamiento hermético)",
+  "successRate": "90% (cumpliendo el sellado anaeróbico y enfriamiento)",
+  "difficulty": "Media (requiere reconocer el cambio de color del humo)",
+  "outputPerHour": "3 a 5 kg de carbón vegetal duro por hornada",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "15-20 leños secos de roble del grosor de la muñeca (longitud 30-40 cm)",
+      "desc": "Maderas duras de alta densidad que se carbonizan sin consumirse en llamas, produciendo carbón duradero de alto poder calorífico."
+    },
+    {
+      "id": "mat-02",
+      "name": "Pozo cónico de tierra (50 cm de profundidad, 60 cm de diámetro superior)",
+      "desc": "Excavado con conicidad hacia abajo para concentrar el calor radiante y controlar el flujo de aire anaeróbico."
+    },
+    {
+      "id": "mat-03",
+      "name": "Enrejado de ramas gruesas y hojas anchas",
+      "desc": "Estructura colocada sobre los troncos para soportar la cubierta de lodo e impedir que la tierra caiga dentro del horno."
+    },
+    {
+      "id": "mat-04",
+      "name": "Barro arcilloso húmedo y tepes de césped (10 cm de espesor)",
+      "desc": "Capa aislante que sella el pozo, bloquea el 95% del oxígeno y hornea la madera a más de 400 °C."
+    },
+    {
+      "id": "mat-05",
+      "name": "Ramas secas y cama de brasas inicial",
+      "desc": "Seca por completo la humedad del suelo y enciende la base del lote de troncos apilados."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Excavar el pozo cónico de 50 cm y crear la cama de brasas",
+      "description": "Elija suelo firme y seco. Excave un pozo de 60 cm de diámetro superior y 50 cm de profundidad, reduciéndose a unos 30 cm en el fondo en forma de cono. Encienda un fuego generoso con ramitas secas en el fondo durante al menos 15 minutos para evaporar toda la humedad de las paredes de tierra y formar una buena base de brasas ardientes.",
+      "actionNote": "> Consejo de excavación: Si queda humedad en la tierra, la madera se pudrirá y el fuego se apagará. Caliente el fondo hasta secarlo por completo.",
+      "svgFileName": "pr09-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PIT EXCAVATION & PRE-DRYING",
+        "Pozo cónico de 60cm de boca superior",
+        "Profundidad 50cm (base de 30cm)",
+        "Brasas base para secar la tierra",
+        "[CLAVE] Secar humedad del suelo y crear brasas"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Apilar los leños de roble verticalmente sin dejar huecos",
+      "description": "Sobre las brasas incandescentes del fondo, coloque los leños secos de roble (30-40 cm de largo, 5-8 cm de grosor) en posición vertical como pilares apretados. Los huecos de aire permiten que el oxígeno circule y queme la madera hasta dejar solo cenizas. Inserte ramas delgadas a modo de cuñas en cada resquicio para compactar el interior al máximo.",
+      "actionNote": "> Secreto de carga: El interior debe quedar tan denso que casi no haya espacio libre. Cuanta más densidad, más duro y sonoro será el carbón.",
+      "svgFileName": "pr09-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DENSE VERTICAL TIMBER STACK",
+        "Leños de roble (5-8cm) en pila vertical",
+        "Ramas finas acuñadas en los huecos",
+        "Calor ascendente desde las brasas base",
+        "[CLAVE] Minimizar huecos para máxima densidad"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Colocar el enrejado de ramas y sellar el 95% del aire con barro",
+      "description": "Cruce ramas gruesas en forma de rejilla sobre los troncos verticales y cúbralas con hojas anchas o hierba densa. Aplique encima una capa de 10 cm de barro arcilloso húmedo y tepes de hierba invertidos. Deje dos pequeños respiraderos del grosor de un dedo en la base del lado del viento y una chimenea del tamaño de un puño en el centro, limitando el oxígeno al 5%.",
+      "actionNote": "> Control de sellado: Si sale humo por grietas en la cúpula de barro, tápelas de inmediato con barro fresco para evitar que prenda fuego abierto.",
+      "svgFileName": "pr09-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // MULTI-LAYER ANAEROBIC SEAL",
+        "Enrejado de ramas y lecho de hojas",
+        "Cubierta de 10cm de barro y tepes",
+        "2 tomas de aire base (grosor de dedo)",
+        "Chimenea central de tiro (puño)",
+        "[CLAVE] Combustión incompleta sin 95% de oxígeno"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Distinguir el color del humo, sellar y enfriar antes de cosechar",
+      "description": "Durante las primeras 1-2 horas, la chimenea emite un humo blanco denso de vapor de agua. Tras 2-3 horas, cuando el humo se vuelva tenue, transparente y azulado, el agua y el alquitrán se habrán disipado por completo: ¡la madera se ha convertido en carbón puro! Selle de inmediato la chimenea y las tomas de aire con bolas de barro. Espere al menos 6 horas hasta que el montículo esté totalmente frío al tacto antes de desenterrar.",
+      "actionNote": "> Peligro de explosión: Si abre el horno mientras está caliente, entrará aire fresco y se producirá una llamarada explosiva que convertirá el carbón en cenizas. Deje enfriar por completo.",
+      "svgFileName": "pr09-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
+        "Fase 1: Humo blanco denso (vapor de agua)",
+        "Fase 2: Humo azul tenue (pirólisis lista)",
+        "Sellado hermético total y enfriamiento",
+        "Cosecha de carbón duro con sonido metálico",
+        "[CLAVE] Sellar con humo azul y enfriar del todo"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error fatal: Abrir el pozo mientras sigue caliente o no sellar las salidas a tiempo",
+    "description": "Abrir el horno a más de 400 °C provoca una entrada violenta de oxígeno que desata una explosión de fuego instantánea. Dejar los respiraderos abiertos tras la aparición del humo azul quemará todo el carbón hasta volverlo ceniza.",
+    "consequence": "Consecuencia: Pérdida total de la cosecha y riesgo grave de quemaduras"
+  },
+  "shortsScript": {
+    "hook": "¡Quemar leña al aire libre solo deja ceniza blanca! ¡Aprende a fabricar carbón metálico bajo tierra!",
+    "body": "¡Coloca troncos de roble apretados en un pozo de 50 cm y tápalos con barro para bloquear el 95% del aire! Al principio saldrá humo blanco espeso, pero cuando se vuelva azul tenue a las 3 horas, tapa todos los agujeros con lodo. ¡Una vez frío, obtendrás carbón duro con timbre metálico que arde sin humo a 500 grados!",
+    "outro": "Planos completos de supervivencia sin conexión en el enlace de nuestro perfil."
+  },
+  "outcome": {
+    "imageFileName": "pr09-outcome.png",
+    "svgFileName": "pr09-outcome.svg",
+    "title": "Corte transversal del horno de pozo y especificaciones del carbón",
+    "description": "Vista técnica del horno subterráneo cónico operando con restricción de oxígeno al 95%, produciendo carbón vegetal poroso de roble ideal para calor sin humo y purificación de agua."
+  },
+  "createdAt": "2026-10-15T05:30:00.000Z",
+  "contentHash": "3c80e0f8743ccff6"
+}

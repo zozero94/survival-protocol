@@ -1,0 +1,117 @@
+{
+  "protocolId": "PR-09",
+  "category": "FIRE",
+  "title": "Herstellung von Hartholzkohle im anaeroben Erdgrubenmeiler",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[RAUCHFREIER BRENNSTOFF & KOHLEFILTER]",
+  "summary": "Wer Holz im offenen Lagerfeuer verbrennt, verschwendet wertvollen Brennstoff, da es mit Sauerstoff vollständig zu weißer Asche zerfällt. Durch das Ausheben einer 50cm tiefen konischen Erdgrube, dichtes vertikales Schichten von Eichenknüppeln und luftdichtes Versiegeln mit Lehm und Rasensoden wird die Sauerstoffzufuhr um 95% gedrosselt. Das Holz wird pyrolysiert statt verbrannt. Es entsteht dichte, metallisch klingende stückige Holzkohle, die rauchfrei bei 500°C brennt und Trinkwasser filtert.",
+  "timeRequired": "5 Stunden (1h Grube & Bestückung + 3h Pyrolyse + 1h geschlossene Abkühlung)",
+  "successRate": "90% (bei striktem Luftabschluss und vollständiger Abkühlung)",
+  "difficulty": "Mittel (Erkennung der Rauchphasen erforderlich)",
+  "outputPerHour": "3-5kg hochwertige Hartholzkohle pro Brand",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "15-20 armdicke trockene Eichen- oder Hartholzscheite (Länge 30-40cm)",
+      "desc": "Dichtes Hartholz, das unter Sauerstoffmangel pyrolysiert, ohne zu verflammen, und langanhaltende Glut liefert."
+    },
+    {
+      "id": "mat-02",
+      "name": "Konische Erdgrube (50cm Tiefe, 60cm oberer Durchmesser)",
+      "desc": "Nach unten verjüngt ausgehoben, um Strahlungswärme zu bündeln und die anaerobe Zirkulation zu steuern."
+    },
+    {
+      "id": "mat-03",
+      "name": "Stabiles Astgitter & breite Laubblätter",
+      "desc": "Quer über den Holzstapel gelegt, um die schwere Lehmschicht zu stützen und Erdrutsch in die Glut zu verhindern."
+    },
+    {
+      "id": "mat-04",
+      "name": "Feuchter Tonlehm & Rasensoden (10cm Schichtdicke)",
+      "desc": "Wärmedämmende Abdeckung, die 95% des Sauerstoffs abriegelt und das Holz bei über 400°C backt."
+    },
+    {
+      "id": "mat-05",
+      "name": "Trockenes Reisig & Gluttbett zur Vortrocknung",
+      "desc": "Treibt Bodenfeuchtigkeit vollständig aus und zündet die Basis der gestapelten Holzscheite an."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: 50cm Konusgrube ausheben & Vorwärmglut anlegen",
+      "description": "Wählen Sie trockenen, festen Waldboden und heben Sie eine Grube mit 60cm oberem Durchmesser und 50cm Tiefe aus, die sich nach unten auf 30cm verjüngt. Entfachen Sie am Grubenboden mindestens 15 Minuten lang ein kräftiges Reisigfeuer, um Feuchtigkeit aus den Erdwänden vollständig zu verdampfen und ein glühendes Glutbett zu schaffen.",
+      "actionNote": "> Aushub-Praxistipp: Restfeuchte in den Erdwänden führt zu Holzfäulnis und erstickt das Glutbett. Heizen Sie den Grubenboden trocken.",
+      "svgFileName": "pr09-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PIT EXCAVATION & PRE-DRYING",
+        "Obere Grubenöffnung 60cm Konusform",
+        "Tiefe 50cm (Bodendurchmesser 30cm)",
+        "Bodenglut & Reisig zur Vortrocknung",
+        "[KERN] Erdfeuchte austreiben & Glutbett bilden"
+      ]
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Armdicke Eichenscheite vertikal lückenlos stapeln",
+      "description": "Stellen Sie auf die rote Bodenglut trockene Eichenscheite (30-40cm lang, 5-8cm dick) senkrecht wie dichte Säulen auf. Größere Luftlücken lassen Sauerstoff zirkulieren und verbrennen das Holz zu weißer Asche. Schlagen Sie fingerdicke Zweige wie Keile in alle Zwischenräume, um maximale Packungsdichte zu erzielen.",
+      "actionNote": "> Stapel-Geheimnis: Der Meilerraum muss so dicht gefüllt sein, dass kaum Hohlräume verbleiben. Je dichter gepackt, desto härter die Holzkohle.",
+      "svgFileName": "pr09-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DENSE VERTICAL TIMBER STACK",
+        "Eichenscheite (5-8cm) senkrecht gestapelt",
+        "Dünne Keilzweige füllen Zwischenräume",
+        "Aufsteigende Hitze vom Bodenglutbett",
+        "[KERN] Hohlräume minimieren für maximale Dichte"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Astgitter auflegen & 95% Luft mit Lehm und Soden drosseln",
+      "description": "Legen Sie dicke Äste gitterförmig über die Hölzer und bedecken Sie diese mit breiten Blättern oder dichtem Gras. Tragen Sie eine 10cm dicke Schicht aus feuchtem Lehm und umgedrehten Rasensoden auf. Lassen Sie am windzugewandten Bodenrand zwei fingerdicke Zuluftlöcher und in der Mitte einen faustgroßen Kamin offen, um die Sauerstoffzufuhr auf 5% zu beschränken.",
+      "actionNote": "> Dichtheitsprüfung: Tritt Rauch aus Rissen im Lehm aus, verschmieren Sie diese sofort mit feuchtem Lehm, um offenes Aufflammen zu verhindern.",
+      "svgFileName": "pr09-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // MULTI-LAYER ANAEROBIC SEAL",
+        "Astgitter & Blätter-Stützschicht",
+        "10cm Lehm- & Rasensoden-Dämmschicht",
+        "2 Zuluftöffnungen (fingerdick)",
+        "Zentraler Rauchkamin (faustgroß)",
+        "[KERN] Unvollständige Verbrennung bei 95% Luftmangel"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Rauchfarbe bestimmen, hermetisch verschließen & kühlen",
+      "description": "In den ersten 1-2 Stunden entweicht dichter weißer Wasserdampf aus dem Kamin. Geht der Rauch nach 2-3 Stunden in einen feinen, transparenten Blaudunst über, sind Wasser und Teere entwichen – das Holz ist reine Kohle! Verschließen Sie Kamin und Zuluftöffnungen sofort luftdicht mit Lehmkugeln. Warten Sie mindestens 6 Stunden, bis der Hügel handkalt ist, bevor Sie ernten.",
+      "actionNote": "> Verpuffungsgefahr: Öffnet man den Meiler vorzeitig im heißen Zustand, strömt Sauerstoff ein und entfacht eine Stichflamme, die die Kohle verbrennt. Vollständig abkühlen lassen.",
+      "svgFileName": "pr09-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE PHASE & CHARCOAL HARVEST",
+        "Phase 1: Dichter weißer Dampf (Wasser)",
+        "Phase 2: Zarter Blaurauch (Pyrolyse fertig)",
+        "Alle Öffnungen mit Lehm dicht verschlossen",
+        "Metallisch klingende Hartholzkohle ernten",
+        "[KERN] Bei Blaurauch sofort abdichten & abkühlen"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fataler Fehler: Meiler im heißen Zustand öffnen oder Kaminversiegelung versäumen",
+    "description": "Das Freilegen der Grube bei über 400°C führt durch plötzlichen Sauerstoffeinstrom zu einer massiven Verpuffung. Bleiben die Schlitze bei Blaurauch offen, brennt die gesamte Kohle zu Asche ab.",
+    "consequence": "Konsequenz: Totalverlust der gesamten Ausbeute und schwere Brandverletzungen"
+  },
+  "shortsScript": {
+    "hook": "Lagerfeuer hinterlassen nur nutzlose Asche! So brennt man hochwertige Hartholzkohle unter der Erde!",
+    "body": "Schichten Sie Eichenholz senkrecht in eine 50cm Grube und dichten Sie sie mit Lehm ab, um 95% Sauerstoff zu blockieren! Nach 3 Stunden weißem Dampf kündigt feiner Blaurauch fertige Kohle an. Verschließen Sie alle Löcher mit Lehm und lassen Sie ihn erkalten. Sie erhalten dichte Kohle mit Metallklang für 500 Grad Hitze!",
+    "outro": "Offline-Überlebenspläne finden Sie über den Link im Profil."
+  },
+  "outcome": {
+    "imageFileName": "pr09-outcome.png",
+    "svgFileName": "pr09-outcome.svg",
+    "title": "Querschnitt des Erdgrubenmeilers & Holzkohle-Kenndaten",
+    "description": "Technische Schnittdarstellung des anaeroben 50cm Erdmeilers mit 95% Luftdrosselung zur Gewinnung poröser Eichenholzkohle für rauchfreie Hitze und Trinkwasserfilterung."
+  },
+  "createdAt": "2026-10-15T05:30:00.000Z",
+  "contentHash": "3c80e0f8743ccff6"
+}

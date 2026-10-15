@@ -1,0 +1,143 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgS1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080a"/>
+      <stop offset="50%" stop-color="#0e1117"/>
+      <stop offset="100%" stop-color="#060709"/>
+    </linearGradient>
+
+    <!-- Soil Strata Gradient -->
+    <linearGradient id="soilCutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3e2723"/>
+      <stop offset="40%" stop-color="#2d1d18"/>
+      <stop offset="100%" stop-color="#1b120c"/>
+    </linearGradient>
+
+    <!-- Pit Interior Shadow Gradient -->
+    <linearGradient id="pitWallGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#140d07"/>
+      <stop offset="50%" stop-color="#26170d"/>
+      <stop offset="100%" stop-color="#140d07"/>
+    </linearGradient>
+
+    <!-- Ember & Fire Glow Radial Gradient -->
+    <radialGradient id="emberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7a00" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#e63900" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#b31e00" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#140d07" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Hot Charcoal Glow -->
+    <radialGradient id="charcoalRed" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="65%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadowS1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bgS1)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#232830" stroke-width="1.2"/>
+
+  <!-- Technical Corner Ticks -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#475569" stroke-width="1.2"/>
+
+  <!-- Top Header Strip (Label 1) -->
+  <rect x="20" y="16" width="360" height="20" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <rect x="20" y="16" width="3" height="20" fill="#f97316"/>
+  <text x="30" y="30" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" letter-spacing="0.5">FIG. 01 // PIT EXCAVATION &amp; PRE-DRYING</text>
+
+  <!-- Ground Level Line & Soil Cross Section -->
+  <!-- Left Ground Surface -->
+  <path d="M 20 120 L 70 120" stroke="#78716c" stroke-width="2"/>
+  <!-- Right Ground Surface -->
+  <path d="M 330 120 L 380 120" stroke="#78716c" stroke-width="2"/>
+  <!-- Grass Blades on Surface -->
+  <path d="M 28 120 L 32 112 M 45 120 L 48 114 M 345 120 L 348 113 M 365 120 L 369 111" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Surrounding Soil Mass -->
+  <path d="M 20 120 L 70 120 L 130 310 L 20 310 Z" fill="url(#soilCutGrad)" opacity="0.6"/>
+  <path d="M 380 120 L 330 120 L 270 310 L 380 310 Z" fill="url(#soilCutGrad)" opacity="0.6"/>
+
+  <!-- Pit Excavation Cavity (Cone Shape) -->
+  <path d="M 70 120 Q 200 135 330 120 L 270 310 Q 200 315 130 310 Z" fill="url(#pitWallGrad)" stroke="#573824" stroke-width="1.5"/>
+
+  <!-- Pit Top Opening Rim Ellipse Guide -->
+  <ellipse cx="200" cy="120" rx="130" ry="20" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- Dimension Indicator: Top Diameter 60cm (Label 2) -->
+  <g>
+    <line x1="70" y1="88" x2="330" y2="88" stroke="#38bdf8" stroke-width="1.2"/>
+    <path d="M 70 85 L 63 88 L 70 91 Z" fill="#38bdf8"/>
+    <path d="M 330 85 L 337 88 L 330 91 Z" fill="#38bdf8"/>
+    <line x1="70" y1="83" x2="70" y2="115" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <line x1="330" y1="83" x2="330" y2="115" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <rect x="100" y="76" width="200" height="15" fill="#0b1320" rx="3" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="200" y="87" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">상부 지름 60cm 원뿔형 흙구덩이</text>
+  </g>
+
+  <!-- Dimension Indicator: Depth 50cm & Bottom Diameter 30cm (Label 3) -->
+  <g>
+    <!-- Vertical Depth Line on Left -->
+    <line x1="45" y1="120" x2="45" y2="310" stroke="#f59e0b" stroke-width="1.2"/>
+    <path d="M 42 120 L 45 113 L 48 120 Z" fill="#f59e0b"/>
+    <path d="M 42 310 L 45 317 L 48 310 Z" fill="#f59e0b"/>
+    <line x1="40" y1="120" x2="68" y2="120" stroke="#f59e0b" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <line x1="40" y1="310" x2="128" y2="310" stroke="#f59e0b" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <!-- Bottom Rim Guide -->
+    <ellipse cx="200" cy="310" rx="70" ry="10" fill="none" stroke="#d97706" stroke-width="1" stroke-dasharray="3 2"/>
+    <rect x="52" y="205" width="168" height="15" fill="#1c1308" rx="3" stroke="#b45309" stroke-width="1"/>
+    <text x="136" y="216" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">깊이 50cm (바닥 지름 30cm)</text>
+  </g>
+
+  <!-- Bottom Pre-Drying Fire & Embers Bed -->
+  <!-- Fire Glow Backdrop -->
+  <ellipse cx="200" cy="295" rx="80" ry="35" fill="url(#emberGlow)"/>
+
+  <!-- Burning Twigs & Glowing Charcoal Chunks -->
+  <g filter="url(#shadowS1)">
+    <!-- Twigs -->
+    <line x1="145" y1="305" x2="255" y2="295" stroke="#78350f" stroke-width="5" stroke-linecap="round"/>
+    <line x1="155" y1="290" x2="245" y2="308" stroke="#451a03" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="170" y1="310" x2="230" y2="288" stroke="#9a3412" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Glowing Embers -->
+    <circle cx="175" cy="298" r="7" fill="url(#charcoalRed)"/>
+    <circle cx="195" cy="302" r="9" fill="url(#charcoalRed)"/>
+    <circle cx="215" cy="295" r="8" fill="url(#charcoalRed)"/>
+    <circle cx="188" cy="289" r="6" fill="#fde047"/>
+    <circle cx="205" cy="291" r="5" fill="#fef08a"/>
+
+    <!-- Flame Tongues -->
+    <path d="M 180 290 Q 185 270 190 282 Q 195 260 200 285 Q 205 265 212 288 Z" fill="#f97316" opacity="0.85"/>
+    <path d="M 188 288 Q 193 273 197 282 Q 202 271 206 287 Z" fill="#fef08a" opacity="0.95"/>
+  </g>
+
+  <!-- Heat Waves Rising -->
+  <path d="M 185 265 Q 180 245 190 230 Q 200 215 195 195" fill="none" stroke="#fb923c" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+  <path d="M 215 265 Q 220 245 210 230 Q 200 215 205 195" fill="none" stroke="#fb923c" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Label 4: Embers & Pre-Drying Bed -->
+  <g>
+    <path d="M 245 300 L 290 270" stroke="#f97316" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="245" cy="300" r="2.5" fill="#f97316"/>
+    <rect x="180" y="258" width="200" height="15" fill="#1c0f05" rx="3" stroke="#ea580c" stroke-width="1"/>
+    <text x="280" y="269" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">바닥 초벌 건조 잔가지 &amp; 숯불 밑천</text>
+  </g>
+
+  <!-- Bottom Core Insight Briefing Box (Label 5) -->
+  <rect x="20" y="348" width="360" height="26" fill="#111827" rx="4" stroke="#1f2937" stroke-width="1.2"/>
+  <rect x="20" y="348" width="4" height="26" fill="#10b981" rx="1"/>
+  <text x="200" y="364" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">[핵심] 흙 습기 완전 건조 및 고온 불씨 형성</text>
+</svg>

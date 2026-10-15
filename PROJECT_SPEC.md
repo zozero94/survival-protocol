@@ -12,7 +12,7 @@
    - 피드 카드 상단 레일 등록일(`YYYY.MM.DD`) 및 상세 히어로 섹션 최종 수정 시간(`YYYY.MM.DD HH:mm`) 표기
    - 독해 시간("소요 30초 독해") 문구 완전 배제 및 모노스페이스 브루탈리즘 제원 스트립 정밀 배치
    - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-- **아키텍처**: Content-Driven Layered Component Architecture (10개 스위트 / 71개 단위 테스트 무결성 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (12개 스위트 / 86개 단위 테스트 무결성 통과)
 - **주제 검증 철학**:
   - 원시 자연물 고증 100% (현대 공산품 일체 배제)
   - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
@@ -51,10 +51,10 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-08)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-09)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
 │   ├── images/                  # 3D 포토리얼리스틱 실물 이미지 에셋 (pr08-*.jpg)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (59개 SVG 도면)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (64개 SVG 도면)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
@@ -82,14 +82,14 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, PWA sw.js, SEO, images)
-├── tests/                       # [Quality Audit] 12개 테스트 스위트 (77/77 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 12개 테스트 스위트 (86/86 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] audit-svg-design.ts 등 전용 검수 스크립트
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 59종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 64종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:
