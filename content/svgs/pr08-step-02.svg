@@ -52,31 +52,32 @@
 
   <!-- Ground Plane Baseline -->
   <line x1="30" y1="310" x2="370" y2="310" stroke="#334155" stroke-width="1.5"/>
-  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322" stroke="#1e293b" stroke-width="1"/>
+  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322 M 300 312 L 315 322" stroke="#1e293b" stroke-width="1"/>
 
   <!-- ============================================== -->
   <!-- MAIN ASSEMBLY: POST 1 & STRUT 2 TOP INTERLOCK -->
   <!-- ============================================== -->
   <g filter="url(#shadowS2)">
-    <!-- 1. Stick 1: Vertical Post (x=130 to 154, y=140 to 310) -->
-    <rect x="130" y="140" width="24" height="170" rx="3" fill="url(#barkGrad2)" stroke="#271408" stroke-width="1.2"/>
+    <!-- 1. Stick 1: Vertical Post (x=132 to 156, y=135 to 310) -->
+    <rect x="132" y="135" width="24" height="175" rx="3" fill="url(#barkGrad2)" stroke="#271408" stroke-width="1.2"/>
     <!-- Bark Texture Lines -->
-    <line x1="136" y1="180" x2="136" y2="230" stroke="#3d210f" stroke-width="1"/>
-    <line x1="148" y1="200" x2="148" y2="260" stroke="#3d210f" stroke-width="1"/>
+    <line x1="138" y1="180" x2="138" y2="230" stroke="#3d210f" stroke-width="1"/>
+    <line x1="150" y1="200" x2="150" y2="260" stroke="#3d210f" stroke-width="1"/>
 
-    <!-- Post Top Chisel Tip (납작 쐐기 - y=105 to 140) -->
-    <polygon points="130,140 142,105 154,140" fill="url(#cutWood2)" stroke="#78350f" stroke-width="1.2"/>
-    <line x1="142" y1="105" x2="142" y2="140" stroke="#b45309" stroke-width="1" stroke-dasharray="2 1"/>
+    <!-- Post Top Chisel Tip (납작 쐐기 - y=105 to 135, Peak at (144, 105)) -->
+    <polygon points="132,135 144,105 156,135" fill="url(#cutWood2)" stroke="#78350f" stroke-width="1.2"/>
+    <line x1="144" y1="105" x2="144" y2="135" stroke="#b45309" stroke-width="1" stroke-dasharray="2 1"/>
 
-    <!-- 2. Stick 2: Diagonal Strut (Leaning 45 degrees, coming from (310, 290) to (142, 105)) -->
-    <polygon points="125,95 152,118 310,270 286,290" fill="url(#diagBark)" stroke="#271408" stroke-width="1.5"/>
+    <!-- 2. Stick 2: Diagonal Strut (Leaning 45 degrees, coming from (305, 266) to (144, 105)) -->
+    <!-- Direct V-notch cavity physically nesting over Chisel peak (144, 105) -->
+    <polygon points="130,91 144,105 158,91 172,105 315,248 297,266 154,123 144,113 134,123 116,105" fill="url(#diagBark)" stroke="#271408" stroke-width="1.5"/>
 
-    <!-- Strut Top V-Notch (Mating over the post chisel tip) -->
-    <polygon points="135,105 150,118 162,108 147,95" fill="url(#cutWood2)" stroke="#b45309" stroke-width="1.2"/>
+    <!-- Inner Carved V-Notch Face (#fde68a 고대비 하이라이트) -->
+    <polygon points="134,123 144,105 154,123 144,113" fill="url(#cutWood2)" stroke="#b45309" stroke-width="1"/>
 
-    <!-- Contact Pivot Highlight -->
-    <circle cx="142" cy="106" r="4.5" fill="#ef4444" opacity="0.9"/>
-    <circle cx="142" cy="106" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <!-- Contact Pivot Highlight (Mechanical Axis alignment point) -->
+    <circle cx="144" cy="105" r="4.5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="144" cy="105" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Force & Angle Indicators (Graphic Only) -->
@@ -88,22 +89,30 @@
   <g transform="translate(45, 60)">
     <circle cx="45" cy="45" r="40" fill="#090d16" stroke="#38bdf8" stroke-width="1.5"/>
     <circle cx="45" cy="45" r="44" fill="none" stroke="#1e293b" stroke-width="1"/>
-    <!-- Zoom Joint Silhouette -->
+    <!-- Zoom Joint Silhouette: Post Chisel nested in Strut V-Notch -->
     <polygon points="35,65 45,35 55,65" fill="#fde68a" stroke="#78350f" stroke-width="1.5"/>
-    <polygon points="30,30 52,52 68,36 46,14" fill="#854d0e" stroke="#271408" stroke-width="1.5"/>
-    <polygon points="40,40 52,52 60,44 48,32" fill="#fde68a"/>
+    <polygon points="28,28 45,35 62,28 72,38 52,58 45,45 38,58 18,38" fill="#854d0e" stroke="#271408" stroke-width="1.5"/>
+    <polygon points="38,45 45,35 52,45 45,42" fill="#fde68a"/>
     <!-- Lock Check Icon -->
     <path d="M 38 78 L 43 83 L 53 73" stroke="#22c55e" stroke-width="1.8" fill="none"/>
   </g>
 
+  <!-- Technical Label Pointers with Direct Lines to Joint -->
   <!-- Label 2: Post Tip -->
-  <text x="145" y="85" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">1번 세움대 납작 윗머리</text>
+  <line x1="140" y1="102" x2="80" y2="55" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="140" cy="102" r="3" fill="#f59e0b"/>
+  <rect x="25" y="45" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="95" y="59" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">1번 세움대 납작 윗머리</text>
 
-  <!-- Label 3: Strut V-notch -->
-  <text x="250" y="210" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">2번 빗장대 V자 홈 결합</text>
+  <!-- Label 3: Strut V-notch (Points directly to red contact hinge circle) -->
+  <line x1="148" y1="105" x2="220" y2="75" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="148" cy="105" r="3" fill="#f59e0b"/>
+  <rect x="200" y="65" width="150" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="275" y="79" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">2번 빗장대 V자 홈 결합</text>
 
   <!-- Label 4: Angle Mating -->
-  <text x="175" y="175" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">45도 각도로 딱 맞물림</text>
+  <rect x="180" y="165" width="135" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="247" y="179" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">45도 각도로 딱 맞물림</text>
 
   <!-- Bottom Visual Callout Box (Label 5) -->
   <rect x="20" y="325" width="360" height="52" fill="#0d1117" stroke="#21262d" stroke-width="1"/>

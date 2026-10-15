@@ -72,31 +72,30 @@
   <path d="M 60 370 L 80 385 M 120 370 L 140 385 M 180 370 L 200 385 M 240 370 L 260 385 M 300 370 L 320 385 M 360 370 L 380 385 M 420 370 L 440 385 M 480 370 L 500 385 M 540 370 L 560 385 M 600 370 L 620 385 M 660 370 L 680 385" stroke="#1e293b" stroke-width="1.2"/>
 
   <!-- Ground Shadows Beneath Post and Rock Ground Base -->
-  <ellipse cx="248" cy="368" rx="45" ry="8" fill="#000000" opacity="0.8"/>
-  <ellipse cx="600" cy="368" rx="85" ry="12" fill="#000000" opacity="0.85"/>
+  <ellipse cx="243" cy="368" rx="40" ry="8" fill="#000000" opacity="0.8"/>
+  <ellipse cx="620" cy="368" rx="85" ry="12" fill="#000000" opacity="0.85"/>
 
   <!-- ============================================== -->
   <!-- 1. HEAVY 15KG SLATE ROCK (45-degree angle, Propped on Strut Tip) -->
   <!-- ============================================== -->
   <g filter="url(#shadowOut)">
     <!-- 3D Rear Bevel Facet -->
-    <polygon points="305,100 645,345 665,335 325,88" fill="url(#rockRimOut)" stroke="#334155" stroke-width="1"/>
-    <!-- Main Massive Slate Rock Body (Rests on strut tip at (285,120) down to ground at (560,365)) -->
-    <polygon points="285,120 560,365 645,345 305,100" fill="url(#rockOut)" stroke="#1e293b" stroke-width="2.2"/>
+    <polygon points="241,107 670,365 685,355 256,97" fill="url(#rockRimOut)" stroke="#334155" stroke-width="1"/>
+    <!-- Main Massive Slate Rock Body (Rests on strut tip at (223,125) down to ground at (580,365)) -->
+    <polygon points="223,125 580,365 670,365 241,107" fill="url(#rockOut)" stroke="#1e293b" stroke-width="2.2"/>
     <!-- Front Lifted Lip Thickness (Contact point supporting rock weight) -->
-    <polygon points="285,120 305,100 325,88 300,108" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
+    <polygon points="223,125 241,107 256,97 238,115" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
     <!-- Rock Surface Geological Cleavage & Fractures -->
-    <path d="M 340 160 L 420 240 L 510 300 M 410 185 L 530 270 M 370 200 L 470 280" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 290 170 L 390 250 L 500 310 M 360 190 L 510 280 M 320 220 L 440 290" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
   <!-- ============================================== -->
   <!-- 2. FIGURE-4 INTERLOCKING FRAME (In Foreground) -->
   <!-- ============================================== -->
   <g filter="url(#shadowOut)">
-    <!-- Stick 1: Vertical Post (세움대 - x=230 to 256, y=145 to 365) -->
-    <!-- Stands upright on ground, fully clear to the left of the rock -->
+    <!-- Stick 1: Vertical Post (세움대 - x=230 to 256, y=175 to 365) -->
     <rect x="230" y="175" width="26" height="190" rx="3" fill="url(#stick3D)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Post Chisel Top Head (납작 쐐기 - y=145 to 175) -->
+    <!-- Post Chisel Top Head (납작 쐐기 - Peak at (243, 145)) -->
     <polygon points="230,175 243,145 256,175" fill="url(#carvedOut)" stroke="#78350f" stroke-width="1"/>
     <!-- Middle Notch in Post (네모 홈 - y=268 to 286) -->
     <rect x="230" y="268" width="14" height="18" fill="url(#carvedOut)" stroke="#78350f" stroke-width="1"/>
@@ -104,31 +103,38 @@
     <line x1="237" y1="210" x2="237" y2="250" stroke="#271408" stroke-width="1"/>
     <line x1="250" y1="295" x2="250" y2="345" stroke="#271408" stroke-width="1"/>
 
-    <!-- Stick 2: Diagonal Strut (빗장대 - Leans from chisel pivot to rock contact (285,120)) -->
-    <polygon points="278,114 292,126 352,275 336,282" fill="url(#strut3D)" stroke="#271408" stroke-width="1.5"/>
-    <!-- Upper Strut Tip Support Notch (Directly holds up the rock's front underside lip) -->
-    <polygon points="278,114 292,126 285,120" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1.2"/>
-    <!-- Mating Notch over Post Chisel Head -->
-    <polygon points="238,145 252,154 248,140" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
-    <!-- Mechanical Contact Pivot Marker -->
-    <circle cx="285" cy="120" r="5" fill="#ef4444" opacity="0.95"/>
-    <circle cx="285" cy="120" r="9" fill="none" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <!-- Stick 2: Diagonal Strut (Mathematically 45.0°, Top at (243, 145) down to (368, 270)) -->
+    <!-- Extends above post to (223, 125) propping up rock, and bottom lands inside Bait stick rear notch at (368, 270) -->
+    <polygon points="213,115 225,127 243,145 255,133 267,145 378,256 368,272 356,260 233,137 223,125 203,105" fill="url(#strut3D)" stroke="#271408" stroke-width="1.5"/>
 
-    <!-- Stick 3: Horizontal Bait Stick (먹이대 - x=195 horizontally through to x=530, y=272) -->
+    <!-- Upper Strut Tip Support Notch (Props Rock at (223, 125)) -->
+    <polygon points="213,115 225,127 223,125" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1.2"/>
+    <!-- Mating Notch over Post Chisel Head (243, 145) -->
+    <polygon points="233,137 243,145 251,137 243,141" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <!-- Bottom Beveled Tip (Locks into Bait stick rear notch at y=270) -->
+    <polygon points="356,260 368,272 378,256 368,252" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+
+    <!-- Mechanical Contact Pivot Markers -->
+    <circle cx="223" cy="125" r="5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="223" cy="125" r="9" fill="none" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <circle cx="243" cy="145" r="4.5" fill="#38bdf8" opacity="0.95"/>
+    <circle cx="368" cy="270" r="4.5" fill="#38bdf8" opacity="0.95"/>
+
+    <!-- Stick 3: Horizontal Bait Stick (먹이대 - x=195 horizontally through to x=540, y=270 to 286) -->
     <!-- Extends deeply into the danger zone sheltered beneath the rock -->
-    <path d="M 195 270 L 495 270 L 530 278 L 495 286 L 195 286 Z" fill="url(#stick3D)" stroke="#271408" stroke-width="1.5"/>
+    <path d="M 195 270 L 505 270 L 535 278 L 505 286 L 195 286 Z" fill="url(#stick3D)" stroke="#271408" stroke-width="1.5"/>
     <!-- Catch Ledge on Bait Stick (locked with post at x=230) -->
     <polygon points="228,268 245,268 245,286 228,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
-    <!-- Rear Notch on Bait Stick (locked with strut bottom at x=340) -->
-    <polygon points="334,270 352,270 344,284" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <!-- Rear Notch on Bait Stick (locked with strut bottom at x=360..376, y=270) -->
+    <polygon points="360,270 376,270 368,284" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
 
     <!-- Sharp Bait Pin at Far Right (under the rock) -->
-    <polygon points="495,270 530,278 495,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <polygon points="505,270 535,278 505,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
     <!-- Juicy Red Wild Berries Bait -->
-    <circle cx="525" cy="278" r="7" fill="#ef4444"/>
-    <circle cx="532" cy="273" r="5.5" fill="#dc2626"/>
-    <circle cx="531" cy="283" r="5" fill="#b91c1c"/>
-    <circle cx="525" cy="278" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="530" cy="278" r="7" fill="#ef4444"/>
+    <circle cx="537" cy="273" r="5.5" fill="#dc2626"/>
+    <circle cx="536" cy="283" r="5" fill="#b91c1c"/>
+    <circle cx="530" cy="278" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- ============================================== -->
@@ -147,8 +153,8 @@
   <text x="45" y="314" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">1번 세움대 (땅에 똑바로 선 기둥)</text>
 
   <!-- 3. Strut 2 Pointer -->
-  <line x1="285" y1="135" x2="200" y2="150" stroke="#f59e0b" stroke-width="1.5"/>
-  <circle cx="285" cy="135" r="3.5" fill="#f59e0b"/>
+  <line x1="285" y1="185" x2="200" y2="150" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="285" cy="185" r="3.5" fill="#f59e0b"/>
   <rect x="35" y="140" width="165" height="22" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
   <text x="45" y="155" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">2번 빗장대 (바위를 떠받치는 버팀목)</text>
 

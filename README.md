@@ -55,6 +55,7 @@ primitive-survival/
 │   │   ├── pwa.service.ts # 결정론적 Service Worker 캐시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 도면 기하학 충돌 감사기
+│   │   ├── svg-design-auditor.service.ts # 기계공학 유클리드 좌표 공차 & 멀티모달 비전 감수기
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
 │   │   ├── protocol-generator.service.ts # AI 자동 발행 & 고증 검증기
 │   │   ├── telegram-bot.service.ts # 텔레그램 원격 제어 봇
@@ -65,10 +66,11 @@ primitive-survival/
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts    # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts        # 엔드투엔드 정적 사이트 컴파일 파이프라인
+├── scripts/               # [CLI Scripts] audit-svg-design.ts (기계공학 축 & 비전 감사)
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, manifest, sitemap, images
-└── tests/                 # [Quality Audit] 10대 테스트 스위트 (71/71 PASS)
+└── tests/                 # [Quality Audit] 12대 테스트 스위트 (77/77 PASS)
 ```
 
 ---

@@ -350,31 +350,30 @@
   <path d="M 60 370 L 80 385 M 120 370 L 140 385 M 180 370 L 200 385 M 240 370 L 260 385 M 300 370 L 320 385 M 360 370 L 380 385 M 420 370 L 440 385 M 480 370 L 500 385 M 540 370 L 560 385 M 600 370 L 620 385 M 660 370 L 680 385" stroke="#1e293b" stroke-width="1.2"/>
 
   <!-- Ground Shadows Beneath Post and Rock Ground Base -->
-  <ellipse cx="248" cy="368" rx="45" ry="8" fill="#000000" opacity="0.8"/>
-  <ellipse cx="600" cy="368" rx="85" ry="12" fill="#000000" opacity="0.85"/>
+  <ellipse cx="243" cy="368" rx="40" ry="8" fill="#000000" opacity="0.8"/>
+  <ellipse cx="620" cy="368" rx="85" ry="12" fill="#000000" opacity="0.85"/>
 
   <!-- ============================================== -->
   <!-- 1. HEAVY 15KG SLATE ROCK (45-degree angle, Propped on Strut Tip) -->
   <!-- ============================================== -->
   <g filter="url(#shadowOut)">
     <!-- 3D Rear Bevel Facet -->
-    <polygon points="305,100 645,345 665,335 325,88" fill="url(#rockRimOut)" stroke="#334155" stroke-width="1"/>
-    <!-- Main Massive Slate Rock Body (Rests on strut tip at (285,120) down to ground at (560,365)) -->
-    <polygon points="285,120 560,365 645,345 305,100" fill="url(#rockOut)" stroke="#1e293b" stroke-width="2.2"/>
+    <polygon points="241,107 670,365 685,355 256,97" fill="url(#rockRimOut)" stroke="#334155" stroke-width="1"/>
+    <!-- Main Massive Slate Rock Body (Rests on strut tip at (223,125) down to ground at (580,365)) -->
+    <polygon points="223,125 580,365 670,365 241,107" fill="url(#rockOut)" stroke="#1e293b" stroke-width="2.2"/>
     <!-- Front Lifted Lip Thickness (Contact point supporting rock weight) -->
-    <polygon points="285,120 305,100 325,88 300,108" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
+    <polygon points="223,125 241,107 256,97 238,115" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
     <!-- Rock Surface Geological Cleavage & Fractures -->
-    <path d="M 340 160 L 420 240 L 510 300 M 410 185 L 530 270 M 370 200 L 470 280" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 290 170 L 390 250 L 500 310 M 360 190 L 510 280 M 320 220 L 440 290" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
   <!-- ============================================== -->
   <!-- 2. FIGURE-4 INTERLOCKING FRAME (In Foreground) -->
   <!-- ============================================== -->
   <g filter="url(#shadowOut)">
-    <!-- Stick 1: Vertical Post (세움대 - x=230 to 256, y=145 to 365) -->
-    <!-- Stands upright on ground, fully clear to the left of the rock -->
+    <!-- Stick 1: Vertical Post (세움대 - x=230 to 256, y=175 to 365) -->
     <rect x="230" y="175" width="26" height="190" rx="3" fill="url(#stick3D)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Post Chisel Top Head (납작 쐐기 - y=145 to 175) -->
+    <!-- Post Chisel Top Head (납작 쐐기 - Peak at (243, 145)) -->
     <polygon points="230,175 243,145 256,175" fill="url(#carvedOut)" stroke="#78350f" stroke-width="1"/>
     <!-- Middle Notch in Post (네모 홈 - y=268 to 286) -->
     <rect x="230" y="268" width="14" height="18" fill="url(#carvedOut)" stroke="#78350f" stroke-width="1"/>
@@ -382,31 +381,38 @@
     <line x1="237" y1="210" x2="237" y2="250" stroke="#271408" stroke-width="1"/>
     <line x1="250" y1="295" x2="250" y2="345" stroke="#271408" stroke-width="1"/>
 
-    <!-- Stick 2: Diagonal Strut (빗장대 - Leans from chisel pivot to rock contact (285,120)) -->
-    <polygon points="278,114 292,126 352,275 336,282" fill="url(#strut3D)" stroke="#271408" stroke-width="1.5"/>
-    <!-- Upper Strut Tip Support Notch (Directly holds up the rock's front underside lip) -->
-    <polygon points="278,114 292,126 285,120" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1.2"/>
-    <!-- Mating Notch over Post Chisel Head -->
-    <polygon points="238,145 252,154 248,140" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
-    <!-- Mechanical Contact Pivot Marker -->
-    <circle cx="285" cy="120" r="5" fill="#ef4444" opacity="0.95"/>
-    <circle cx="285" cy="120" r="9" fill="none" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <!-- Stick 2: Diagonal Strut (Mathematically 45.0°, Top at (243, 145) down to (368, 270)) -->
+    <!-- Extends above post to (223, 125) propping up rock, and bottom lands inside Bait stick rear notch at (368, 270) -->
+    <polygon points="213,115 225,127 243,145 255,133 267,145 378,256 368,272 356,260 233,137 223,125 203,105" fill="url(#strut3D)" stroke="#271408" stroke-width="1.5"/>
 
-    <!-- Stick 3: Horizontal Bait Stick (먹이대 - x=195 horizontally through to x=530, y=272) -->
+    <!-- Upper Strut Tip Support Notch (Props Rock at (223, 125)) -->
+    <polygon points="213,115 225,127 223,125" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1.2"/>
+    <!-- Mating Notch over Post Chisel Head (243, 145) -->
+    <polygon points="233,137 243,145 251,137 243,141" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <!-- Bottom Beveled Tip (Locks into Bait stick rear notch at y=270) -->
+    <polygon points="356,260 368,272 378,256 368,252" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+
+    <!-- Mechanical Contact Pivot Markers -->
+    <circle cx="223" cy="125" r="5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="223" cy="125" r="9" fill="none" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <circle cx="243" cy="145" r="4.5" fill="#38bdf8" opacity="0.95"/>
+    <circle cx="368" cy="270" r="4.5" fill="#38bdf8" opacity="0.95"/>
+
+    <!-- Stick 3: Horizontal Bait Stick (먹이대 - x=195 horizontally through to x=540, y=270 to 286) -->
     <!-- Extends deeply into the danger zone sheltered beneath the rock -->
-    <path d="M 195 270 L 495 270 L 530 278 L 495 286 L 195 286 Z" fill="url(#stick3D)" stroke="#271408" stroke-width="1.5"/>
+    <path d="M 195 270 L 505 270 L 535 278 L 505 286 L 195 286 Z" fill="url(#stick3D)" stroke="#271408" stroke-width="1.5"/>
     <!-- Catch Ledge on Bait Stick (locked with post at x=230) -->
     <polygon points="228,268 245,268 245,286 228,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
-    <!-- Rear Notch on Bait Stick (locked with strut bottom at x=340) -->
-    <polygon points="334,270 352,270 344,284" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <!-- Rear Notch on Bait Stick (locked with strut bottom at x=360..376, y=270) -->
+    <polygon points="360,270 376,270 368,284" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
 
     <!-- Sharp Bait Pin at Far Right (under the rock) -->
-    <polygon points="495,270 530,278 495,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
+    <polygon points="505,270 535,278 505,286" fill="url(#carvedOut)" stroke="#b45309" stroke-width="1"/>
     <!-- Juicy Red Wild Berries Bait -->
-    <circle cx="525" cy="278" r="7" fill="#ef4444"/>
-    <circle cx="532" cy="273" r="5.5" fill="#dc2626"/>
-    <circle cx="531" cy="283" r="5" fill="#b91c1c"/>
-    <circle cx="525" cy="278" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="530" cy="278" r="7" fill="#ef4444"/>
+    <circle cx="537" cy="273" r="5.5" fill="#dc2626"/>
+    <circle cx="536" cy="283" r="5" fill="#b91c1c"/>
+    <circle cx="530" cy="278" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- ============================================== -->
@@ -425,8 +431,8 @@
   <text data-svg="outcome" data-svg-outcome-label="3" x="45" y="314" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">1번 세움대 (땅에 똑바로 선 기둥)</text>
 
   <!-- 3. Strut 2 Pointer -->
-  <line x1="285" y1="135" x2="200" y2="150" stroke="#f59e0b" stroke-width="1.5"/>
-  <circle cx="285" cy="135" r="3.5" fill="#f59e0b"/>
+  <line x1="285" y1="185" x2="200" y2="150" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="285" cy="185" r="3.5" fill="#f59e0b"/>
   <rect x="35" y="140" width="165" height="22" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
   <text data-svg="outcome" data-svg-outcome-label="4" x="45" y="155" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold">2번 빗장대 (바위를 떠받치는 버팀목)</text>
 
@@ -757,31 +763,32 @@
 
   <!-- Ground Plane Baseline -->
   <line x1="30" y1="310" x2="370" y2="310" stroke="#334155" stroke-width="1.5"/>
-  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322" stroke="#1e293b" stroke-width="1"/>
+  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322 M 300 312 L 315 322" stroke="#1e293b" stroke-width="1"/>
 
   <!-- ============================================== -->
   <!-- MAIN ASSEMBLY: POST 1 & STRUT 2 TOP INTERLOCK -->
   <!-- ============================================== -->
   <g filter="url(#shadowS2)">
-    <!-- 1. Stick 1: Vertical Post (x=130 to 154, y=140 to 310) -->
-    <rect x="130" y="140" width="24" height="170" rx="3" fill="url(#barkGrad2)" stroke="#271408" stroke-width="1.2"/>
+    <!-- 1. Stick 1: Vertical Post (x=132 to 156, y=135 to 310) -->
+    <rect x="132" y="135" width="24" height="175" rx="3" fill="url(#barkGrad2)" stroke="#271408" stroke-width="1.2"/>
     <!-- Bark Texture Lines -->
-    <line x1="136" y1="180" x2="136" y2="230" stroke="#3d210f" stroke-width="1"/>
-    <line x1="148" y1="200" x2="148" y2="260" stroke="#3d210f" stroke-width="1"/>
+    <line x1="138" y1="180" x2="138" y2="230" stroke="#3d210f" stroke-width="1"/>
+    <line x1="150" y1="200" x2="150" y2="260" stroke="#3d210f" stroke-width="1"/>
 
-    <!-- Post Top Chisel Tip (납작 쐐기 - y=105 to 140) -->
-    <polygon points="130,140 142,105 154,140" fill="url(#cutWood2)" stroke="#78350f" stroke-width="1.2"/>
-    <line x1="142" y1="105" x2="142" y2="140" stroke="#b45309" stroke-width="1" stroke-dasharray="2 1"/>
+    <!-- Post Top Chisel Tip (납작 쐐기 - y=105 to 135, Peak at (144, 105)) -->
+    <polygon points="132,135 144,105 156,135" fill="url(#cutWood2)" stroke="#78350f" stroke-width="1.2"/>
+    <line x1="144" y1="105" x2="144" y2="135" stroke="#b45309" stroke-width="1" stroke-dasharray="2 1"/>
 
-    <!-- 2. Stick 2: Diagonal Strut (Leaning 45 degrees, coming from (310, 290) to (142, 105)) -->
-    <polygon points="125,95 152,118 310,270 286,290" fill="url(#diagBark)" stroke="#271408" stroke-width="1.5"/>
+    <!-- 2. Stick 2: Diagonal Strut (Leaning 45 degrees, coming from (305, 266) to (144, 105)) -->
+    <!-- Direct V-notch cavity physically nesting over Chisel peak (144, 105) -->
+    <polygon points="130,91 144,105 158,91 172,105 315,248 297,266 154,123 144,113 134,123 116,105" fill="url(#diagBark)" stroke="#271408" stroke-width="1.5"/>
 
-    <!-- Strut Top V-Notch (Mating over the post chisel tip) -->
-    <polygon points="135,105 150,118 162,108 147,95" fill="url(#cutWood2)" stroke="#b45309" stroke-width="1.2"/>
+    <!-- Inner Carved V-Notch Face (#fde68a 고대비 하이라이트) -->
+    <polygon points="134,123 144,105 154,123 144,113" fill="url(#cutWood2)" stroke="#b45309" stroke-width="1"/>
 
-    <!-- Contact Pivot Highlight -->
-    <circle cx="142" cy="106" r="4.5" fill="#ef4444" opacity="0.9"/>
-    <circle cx="142" cy="106" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <!-- Contact Pivot Highlight (Mechanical Axis alignment point) -->
+    <circle cx="144" cy="105" r="4.5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="144" cy="105" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Force & Angle Indicators (Graphic Only) -->
@@ -793,22 +800,30 @@
   <g transform="translate(45, 60)">
     <circle cx="45" cy="45" r="40" fill="#090d16" stroke="#38bdf8" stroke-width="1.5"/>
     <circle cx="45" cy="45" r="44" fill="none" stroke="#1e293b" stroke-width="1"/>
-    <!-- Zoom Joint Silhouette -->
+    <!-- Zoom Joint Silhouette: Post Chisel nested in Strut V-Notch -->
     <polygon points="35,65 45,35 55,65" fill="#fde68a" stroke="#78350f" stroke-width="1.5"/>
-    <polygon points="30,30 52,52 68,36 46,14" fill="#854d0e" stroke="#271408" stroke-width="1.5"/>
-    <polygon points="40,40 52,52 60,44 48,32" fill="#fde68a"/>
+    <polygon points="28,28 45,35 62,28 72,38 52,58 45,45 38,58 18,38" fill="#854d0e" stroke="#271408" stroke-width="1.5"/>
+    <polygon points="38,45 45,35 52,45 45,42" fill="#fde68a"/>
     <!-- Lock Check Icon -->
     <path d="M 38 78 L 43 83 L 53 73" stroke="#22c55e" stroke-width="1.8" fill="none"/>
   </g>
 
+  <!-- Technical Label Pointers with Direct Lines to Joint -->
   <!-- Label 2: Post Tip -->
-  <text data-svg-step="1" data-svg-label="1" x="145" y="85" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">1번 세움대 납작 윗머리</text>
+  <line x1="140" y1="102" x2="80" y2="55" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="140" cy="102" r="3" fill="#f59e0b"/>
+  <rect x="25" y="45" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text data-svg-step="1" data-svg-label="1" x="95" y="59" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">1번 세움대 납작 윗머리</text>
 
-  <!-- Label 3: Strut V-notch -->
-  <text data-svg-step="1" data-svg-label="2" x="250" y="210" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">2번 빗장대 V자 홈 결합</text>
+  <!-- Label 3: Strut V-notch (Points directly to red contact hinge circle) -->
+  <line x1="148" y1="105" x2="220" y2="75" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="148" cy="105" r="3" fill="#f59e0b"/>
+  <rect x="200" y="65" width="150" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text data-svg-step="1" data-svg-label="2" x="275" y="79" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">2번 빗장대 V자 홈 결합</text>
 
   <!-- Label 4: Angle Mating -->
-  <text data-svg-step="1" data-svg-label="3" x="175" y="175" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">45도 각도로 딱 맞물림</text>
+  <rect x="180" y="165" width="135" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text data-svg-step="1" data-svg-label="3" x="247" y="179" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">45도 각도로 딱 맞물림</text>
 
   <!-- Bottom Visual Callout Box (Label 5) -->
   <rect x="20" y="325" width="360" height="52" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
@@ -913,54 +928,64 @@
 
   <!-- Ground Plane Baseline -->
   <line x1="30" y1="310" x2="370" y2="310" stroke="#334155" stroke-width="1.5"/>
-  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322" stroke="#1e293b" stroke-width="1"/>
+  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322 M 300 312 L 315 322" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Ground Shadows Beneath Post -->
+  <ellipse cx="156" cy="311" rx="28" ry="5" fill="#000000" opacity="0.8"/>
 
   <!-- ============================================== -->
   <!-- FULL NUMERAL 4 ASSEMBLED STANDALONE FRAME -->
   <!-- ============================================== -->
   <g filter="url(#shadowS3)">
-    <!-- 1. Stick 1: Vertical Post (Straight Upright: x=145, y=95 to 310) -->
-    <rect x="145" y="125" width="22" height="185" rx="3" fill="url(#postWoodS3)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Top Chisel Tip -->
-    <polygon points="145,125 156,92 167,125" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
+    <!-- 1. Stick 1: Vertical Post (Straight Upright: x=145 to 167, y=125 to 310) -->
+    <rect x="145" y="125" width="22" height="185" rx="2.5" fill="url(#postWoodS3)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Top Chisel Tip (Peak at (156, 95)) -->
+    <polygon points="145,125 156,95 167,125" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
 
-    <!-- Middle Notch in Post (around y=190 to 206) -->
-    <rect x="145" y="190" width="12" height="16" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
+    <!-- Middle Notch in Post (y=192 to 208) -->
+    <rect x="145" y="192" width="12" height="16" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
+    <!-- Post Bark Lines -->
+    <line x1="150" y1="140" x2="150" y2="185" stroke="#271408" stroke-width="0.8"/>
+    <line x1="162" y1="215" x2="162" y2="290" stroke="#271408" stroke-width="0.8"/>
 
-    <!-- 2. Stick 2: Diagonal Strut (From Top Pivot (156, 92) down to (275, 215)) -->
-    <polygon points="140,84 165,104 275,225 254,242" fill="url(#strutWoodS3)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Top Notch mating over chisel -->
-    <polygon points="147,90 162,102 170,92" fill="url(#notchFlesh)"/>
-    <!-- Bottom Beveled Tip -->
-    <polygon points="254,228 275,225 264,240" fill="url(#notchFlesh)"/>
+    <!-- 2. Stick 2: Diagonal Strut (Mathematically 45.0°, Top at (156, 95) down to (258, 196)) -->
+    <!-- Strut branch body: Width 16px, Top notch nests over chisel (156, 95), Bottom beveled tip nests inside Bait stick rear notch (258, 196) -->
+    <polygon points="144,83 156,95 168,83 178,93 268,183 258,196 248,186 134,73" fill="url(#strutWoodS3)" stroke="#271408" stroke-width="1.2"/>
 
-    <!-- 3. Stick 3: Horizontal Bait Stick (From Post Notch x=110 across to x=340, y=195) -->
+    <!-- Top Mating V-Notch (Nests snugly over chisel peak (156, 95)) -->
+    <polygon points="148,87 156,95 164,87 156,92" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="0.8"/>
+
+    <!-- Bottom Beveled Tip (Locks flush inside Bait stick rear notch at y=192 to 198) -->
+    <polygon points="248,186 258,196 268,183 258,180" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="0.8"/>
+
+    <!-- 3. Stick 3: Horizontal Bait Stick (Runs from x=110 across to x=345, y=192 to 208) -->
     <path d="M 110 192 L 315 192 L 345 200 L 315 208 L 110 208 Z" fill="url(#baitWoodS3)" stroke="#271408" stroke-width="1.2"/>
 
-    <!-- Catch Ledge on Bait Stick -->
-    <polygon points="143,190 157,190 157,208 143,208" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
+    <!-- Catch Ledge on Bait Stick (Locked into Post middle notch at x=145..157) -->
+    <polygon points="145,192 157,192 157,208 145,208" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
 
-    <!-- Rear Notch on Bait Stick -->
-    <polygon points="252,192 268,192 258,206" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
+    <!-- Rear Notch on Bait Stick (Receives Strut bottom tip at x=250..266, y=192..204) -->
+    <polygon points="250,192 266,192 258,204" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
 
     <!-- Sharp Bait Pin at Far Right -->
     <polygon points="315,192 345,200 315,208" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
     <!-- Red Wild Berry Bait -->
-    <circle cx="343" cy="200" r="4" fill="#ef4444"/>
+    <circle cx="343" cy="200" r="4.5" fill="#ef4444"/>
+    <circle cx="343" cy="200" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Key Interlock Joint Markers & Badges -->
   <!-- Joint A: Post & Bait Stick (Label 2) -->
-  <circle cx="150" cy="199" r="6" fill="#ef4444" opacity="0.9"/>
-  <circle cx="150" cy="199" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="150" y1="188" x2="115" y2="155" stroke="#ef4444" stroke-width="1.2"/>
+  <circle cx="151" cy="200" r="5" fill="#ef4444" opacity="0.9"/>
+  <circle cx="151" cy="200" r="9" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="151" y1="190" x2="115" y2="155" stroke="#ef4444" stroke-width="1.2"/>
   <rect x="40" y="138" width="115" height="18" fill="#1c1917" stroke="#ef4444" stroke-width="1"/>
   <text data-svg-step="2" data-svg-label="1" x="97" y="150" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="8.5" text-anchor="middle" font-weight="bold">세움대-먹이대 맞물림 턱</text>
 
   <!-- Joint B: Strut & Bait Stick (Label 3) -->
-  <circle cx="260" cy="206" r="6" fill="#38bdf8" opacity="0.9"/>
-  <circle cx="260" cy="206" r="11" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="260" y1="195" x2="285" y2="155" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="258" cy="196" r="5" fill="#38bdf8" opacity="0.9"/>
+  <circle cx="258" cy="196" r="9" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="258" y1="187" x2="285" y2="155" stroke="#38bdf8" stroke-width="1.2"/>
   <rect x="235" y="138" width="115" height="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
   <text data-svg-step="2" data-svg-label="2" x="292" y="150" fill="#bae6fd" font-family="'Space Grotesk', sans-serif" font-size="8.5" text-anchor="middle" font-weight="bold">빗장대-먹이대 뒷홈 걸림</text>
 
@@ -1026,6 +1051,13 @@
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
+    <!-- Rock Underside Cavern Shadow Gradient -->
+    <linearGradient id="rockUnderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
     <!-- Rock Rim 3D Gradient -->
     <linearGradient id="rockRimS4" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#94a3b8"/>
@@ -1086,100 +1118,106 @@
   <line x1="25" y1="310" x2="375" y2="310" stroke="#334155" stroke-width="1.5"/>
   <path d="M 35 312 L 50 322 M 70 312 L 85 322 M 105 312 L 120 322 M 140 312 L 155 322 M 175 312 L 190 322 M 210 312 L 225 322 M 245 312 L 260 322 M 280 312 L 295 322 M 315 312 L 330 322 M 350 312 L 365 322" stroke="#1e293b" stroke-width="1"/>
 
-  <!-- Ground Contact Shadow beneath Trap & Rock Base -->
-  <ellipse cx="148" cy="311" rx="25" ry="4" fill="#000000" opacity="0.8"/>
-  <ellipse cx="335" cy="311" rx="40" ry="5" fill="#000000" opacity="0.9"/>
+  <!-- Ground Shadows -->
+  <ellipse cx="156" cy="311" rx="28" ry="5" fill="#000000" opacity="0.8"/>
+  <ellipse cx="320" cy="311" rx="45" ry="6" fill="#000000" opacity="0.9"/>
 
   <!-- ============================================== -->
   <!-- 0.1s COLLAPSE MOTION GHOST (Falling Rock Trajectory) -->
   <!-- ============================================== -->
-  <!-- Ghost Rock Dropped Flat on Ground -->
-  <polygon points="160,308 360,308 355,280 165,280" fill="url(#rockGhostS4)" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+  <!-- Ghost Rock Dropped Flat on Ground Crushing Bait Area -->
+  <polygon points="135,308 355,308 350,282 140,282" fill="url(#rockGhostS4)" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
   <!-- Downward Impact Motion Trajectory Arrows -->
-  <path d="M 185 140 L 185 270 M 235 180 L 235 270 M 285 220 L 285 270" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <polygon points="182,270 185,277 188,270" fill="#38bdf8"/>
+  <path d="M 180 120 L 180 270 M 235 135 L 235 270 M 285 145 L 285 270" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <polygon points="177,270 180,277 183,270" fill="#38bdf8"/>
   <polygon points="232,270 235,277 238,270" fill="#38bdf8"/>
   <polygon points="282,270 285,277 288,270" fill="#38bdf8"/>
 
   <!-- ============================================== -->
-  <!-- 1. HEAVY SLATE ROCK (45-deg Angle, Propped on Strut Tip) -->
+  <!-- 1. HEAVY 15KG SLATE ROCK (3D Propped Ceiling Slab) -->
   <!-- ============================================== -->
-  <!-- Slate Rock Body: Underside connects front lip (165,108) down to ground (325,310) -->
+  <!-- The massive stone slab rests its back edge on ground (290..365, 310) and is propped up at front lip (138, 77) by Strut -->
   <g filter="url(#shadowS4)">
     <!-- 3D Rear Bevel Facet -->
-    <polygon points="180,94 365,310 375,302 192,84" fill="url(#rockRimS4)" stroke="#334155" stroke-width="0.8"/>
-    <!-- Top Face of Heavy Slate -->
-    <polygon points="165,108 325,310 365,310 180,94" fill="url(#rockGradS4)" stroke="#1e293b" stroke-width="1.8"/>
-    <!-- Front Lifted Lip Thickness (Where it rests on strut notch) -->
-    <polygon points="165,108 180,94 192,84 175,98" fill="#94a3b8" stroke="#475569" stroke-width="0.8"/>
-    <!-- Rock Geological Surface Cleavage Fracture Lines -->
-    <path d="M 205 135 L 245 190 L 305 240 M 260 170 L 330 220 M 220 160 L 275 225" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
+    <polygon points="154,63 365,310 375,302 166,53" fill="url(#rockRimS4)" stroke="#334155" stroke-width="0.8"/>
+    <!-- Top Face of Heavy Slate Slab -->
+    <polygon points="138,77 325,310 365,310 154,63" fill="url(#rockGradS4)" stroke="#1e293b" stroke-width="1.8"/>
+    <!-- Front Lifted Lip Thickness (Resting cleanly on Strut top notch) -->
+    <polygon points="138,77 154,63 166,53 148,69" fill="#94a3b8" stroke="#475569" stroke-width="0.8"/>
+    <!-- Rock Surface Geological Cleavage Fracture Lines -->
+    <path d="M 190 100 L 235 150 L 305 210 M 245 125 L 325 185 M 205 120 L 265 175" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
   </g>
 
   <!-- ============================================== -->
   <!-- 2. FIGURE-4 STICK TRIGGER MECHANISM (In Foreground) -->
   <!-- ============================================== -->
   <g filter="url(#shadowS4)">
-    <!-- Stick 1: Vertical Post (세움대 - Stands upright at x=138 to 156, y=145 to 310) -->
-    <rect x="138" y="160" width="18" height="150" rx="2.5" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Post Top Chisel Head (납작 쐐기 - y=130 to 160) -->
-    <polygon points="138,160 147,130 156,160" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="1"/>
-    <!-- Post Middle Notch (네모 홈 - y=222 to 238) -->
-    <rect x="138" y="222" width="10" height="16" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="0.8"/>
+    <!-- Stick 1: Vertical Post (세움대 - Stands upright at x=145 to 167, y=125 to 310) -->
+    <rect x="145" y="125" width="22" height="185" rx="2.5" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Post Top Chisel Head (납작 쐐기 - Peak at (156, 95)) -->
+    <polygon points="145,125 156,95 167,125" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="1"/>
+    <!-- Post Middle Notch (네모 홈 - y=192 to 208) -->
+    <rect x="145" y="192" width="12" height="16" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="0.8"/>
     <!-- Post Bark Lines -->
-    <line x1="143" y1="180" x2="143" y2="215" stroke="#271408" stroke-width="0.8"/>
-    <line x1="151" y1="245" x2="151" y2="295" stroke="#271408" stroke-width="0.8"/>
+    <line x1="150" y1="140" x2="150" y2="185" stroke="#271408" stroke-width="0.8"/>
+    <line x1="162" y1="215" x2="162" y2="290" stroke="#271408" stroke-width="0.8"/>
 
-    <!-- Stick 2: Diagonal Strut (빗장대 - Slanted piece propping the rock) -->
-    <!-- Extends from top support notch (165,108) down to bait stick rear joint (195,238) -->
-    <polygon points="160,102 170,114 198,238 186,242" fill="url(#strutBarkS4)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Upper Support Tip Notch (Mates over Post Chisel and props Rock) -->
-    <polygon points="160,102 170,114 165,108" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="1"/>
-    <!-- Mating Notch over Post Chisel -->
-    <polygon points="144,130 154,138 152,126" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
-    <!-- Critical Mechanical Contact Pivot (Rock resting on Strut) -->
-    <circle cx="165" cy="108" r="4" fill="#ef4444" opacity="0.95"/>
-    <circle cx="165" cy="108" r="7.5" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <!-- Stick 2: Diagonal Strut (Mathematically 45.0°, Top at (156, 95) down to (258, 196)) -->
+    <!-- Extends above post to (138, 77) where it directly props up the rock's front underside lip -->
+    <polygon points="128,67 140,79 156,95 168,83 178,93 268,183 258,196 248,186 148,87 138,77 118,57" fill="url(#strutBarkS4)" stroke="#271408" stroke-width="1.2"/>
 
-    <!-- Stick 3: Horizontal Bait Stick (먹이대 - Runs from x=122 through to x=310, y=226) -->
-    <!-- Runs underneath the tilted rock into the danger zone -->
-    <path d="M 122 226 L 290 226 L 315 232 L 290 238 L 122 238 Z" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Upper Support Tip Notch (Props Rock at (138, 77)) -->
+    <polygon points="128,67 140,79 138,77" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="1"/>
+    <!-- Mating Notch over Post Chisel (156, 95) -->
+    <polygon points="148,87 156,95 164,87 156,92" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <!-- Bottom Beveled Tip (Locks into Bait stick rear notch at y=192 to 198) -->
+    <polygon points="248,186 258,196 268,183 258,180" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+
+    <!-- Critical Mechanical Contact Pivots -->
+    <circle cx="138" cy="77" r="4.5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="138" cy="77" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="156" cy="95" r="3.5" fill="#38bdf8" opacity="0.9"/>
+    <circle cx="258" cy="196" r="3.5" fill="#38bdf8" opacity="0.9"/>
+
+    <!-- Stick 3: Horizontal Bait Stick (Runs from x=110 across to x=305, y=192 to 208) -->
+    <!-- Extends into the sheltered cavern under the rock, bait clearly inside the fall zone -->
+    <path d="M 110 192 L 285 192 L 305 200 L 285 208 L 110 208 Z" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
     <!-- Front Ledge on Bait Stick (Locked into Post middle notch) -->
-    <rect x="136" y="224" width="12" height="14" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <polygon points="145,192 157,192 157,208 145,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
     <!-- Rear Catch Notch on Bait Stick (Locked with Strut bottom) -->
-    <polygon points="186,226 198,226 192,238" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <polygon points="250,192 266,192 258,204" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
     <!-- Pointed Inner Bait Pin under the Rock -->
-    <polygon points="290,226 315,232 290,238" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
-    <!-- Juicy Red Wild Berries Bait -->
-    <circle cx="310" cy="232" r="5" fill="#ef4444"/>
-    <circle cx="316" cy="229" r="4" fill="#dc2626"/>
-    <circle cx="310" cy="232" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <polygon points="285,192 305,200 285,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <!-- Juicy Red Wild Berries Bait (Positioned under the rock in open air) -->
+    <circle cx="300" cy="200" r="5" fill="#ef4444"/>
+    <circle cx="306" cy="197" r="4" fill="#dc2626"/>
+    <circle cx="300" cy="200" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Prey Touch Action Trigger Pointer -->
-  <path d="M 350 205 C 335 205 330 220 322 228" stroke="#ef4444" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <polygon points="320,225 316,233 324,230" fill="#ef4444"/>
+  <path d="M 345 175 C 330 175 322 190 312 198" stroke="#ef4444" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <polygon points="310,195 306,203 314,200" fill="#ef4444"/>
 
   <!-- ============================================== -->
   <!-- TECHNICAL LABELS & POINTERS -->
   <!-- ============================================== -->
   <!-- Label 2: Heavy Rock -->
-  <line x1="260" y1="125" x2="280" y2="78" stroke="#38bdf8" stroke-width="1.2"/>
-  <circle cx="260" cy="125" r="3" fill="#38bdf8"/>
-  <rect x="200" y="65" width="150" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-  <text data-svg-step="3" data-svg-label="1" x="275" y="79" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">15kg 평평한 바위 안착</text>
+  <line x1="230" y1="100" x2="270" y2="65" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="230" cy="100" r="3" fill="#38bdf8"/>
+  <rect x="200" y="55" width="150" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text data-svg-step="3" data-svg-label="1" x="275" y="69" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">15kg 평평한 바위 안착</text>
 
-  <!-- Label 3: Bait Mount -->
-  <line x1="312" y1="240" x2="312" y2="260" stroke="#f59e0b" stroke-width="1.2"/>
-  <circle cx="312" cy="240" r="3" fill="#f59e0b"/>
-  <rect x="235" y="260" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
-  <text data-svg-step="3" data-svg-label="2" x="305" y="274" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">먹이대 끝 미끼 장착</text>
+  <!-- Label 3: Bait Mount (Points directly to berries inside the drop zone) -->
+  <line x1="300" y1="210" x2="300" y2="245" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="300" cy="210" r="3" fill="#f59e0b"/>
+  <rect x="230" y="245" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text data-svg-step="3" data-svg-label="2" x="300" y="259" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">먹이대 끝 미끼 장착</text>
 
   <!-- Label 4: Instant Collapse -->
-  <line x1="185" y1="210" x2="135" y2="200" stroke="#ef4444" stroke-width="1.2"/>
-  <circle cx="185" cy="210" r="3" fill="#ef4444"/>
-  <rect x="25" y="190" width="155" height="20" fill="#1c1917" stroke="#ef4444" stroke-width="1"/>
-  <text data-svg-step="3" data-svg-label="3" x="102" y="204" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">톡 건드리면 0.1초 만에 바위 낙하</text>
+  <line x1="180" y1="210" x2="135" y2="225" stroke="#ef4444" stroke-width="1.2"/>
+  <circle cx="180" cy="210" r="3" fill="#ef4444"/>
+  <rect x="25" y="215" width="155" height="20" fill="#1c1917" stroke="#ef4444" stroke-width="1"/>
+  <text data-svg-step="3" data-svg-label="3" x="102" y="229" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">톡 건드리면 0.1초 만에 바위 낙하</text>
 
   <!-- Bottom Visual Callout Box (Label 5) -->
   <rect x="20" y="325" width="360" height="52" fill="#0d1117" stroke="#21262d" stroke-width="1"/>

@@ -21,15 +21,28 @@ export async function callGeminiApi(
     timeoutMs?: number;
     maxRetries?: number;
     deadlineAt?: number;
+    imageBase64?: string;
+    imageMimeType?: string;
   } = {}
 ): Promise<string> {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+  const parts: any[] = [];
+  if (options.imageBase64) {
+    parts.push({
+      inlineData: {
+        mimeType: options.imageMimeType || 'image/png',
+        data: options.imageBase64,
+      },
+    });
+  }
+  parts.push({ text: prompt });
 
   const body: any = {
     contents: [
       {
         role: 'user',
-        parts: [{ text: prompt }],
+        parts,
       },
     ],
     generationConfig: {

@@ -10,6 +10,7 @@ export * from './telegram-bot.service.ts';
 export * from './seo.service.ts';
 export * from './webhook-context.service.ts';
 export * from './svg-audit.service.ts';
+export * from './svg-design-auditor.service.ts';
 export * from './google-drive.service.ts';
 
 

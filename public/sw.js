@@ -1,5 +1,5 @@
 /* 자동 생성 파일 - 직접 수정하지 말 것 (src/services/pwa.service.ts) */
-const CACHE_VERSION = "survival-56da307a3a85";
+const CACHE_VERSION = "survival-3447b7b30107";
 const CACHE_PREFIX = 'survival-';
 const PRECACHE_URLS = ["/index.html","/","/protocol-01.html","/protocol-01","/protocol-02.html","/protocol-02","/protocol-03.html","/protocol-03","/protocol-04.html","/protocol-04","/protocol-05.html","/protocol-05","/protocol-06.html","/protocol-06","/protocol-08.html","/protocol-08"];
 const EXTERNAL_URLS = ["https://cdn.tailwindcss.com","https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"];

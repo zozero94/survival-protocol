@@ -82,7 +82,8 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, PWA sw.js, SEO, images)
-├── tests/                       # [Quality Audit] 10개 테스트 스위트 (71/71 단위 테스트 PASS)
+├── tests/                       # [Quality Audit] 12개 테스트 스위트 (77/77 단위 테스트 100% PASS)
+├── scripts/                     # [CLI Scripts] audit-svg-design.ts 등 전용 검수 스크립트
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
@@ -91,9 +92,13 @@ primitive-survival/
    - 전 발행 도면(총 59종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
-2. **PWA 오프라인 생존성**:
+2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:
+   - 기계공학 유클리드 기하학 공차 검증: 상단 힌지 결합 이격 거리 $\le 2.0\text{px}$, 하단 걸림턱 결합 이격 거리 $\le 2.0\text{px}$, 빗장대 지지각 $45^\circ \pm 5^\circ$.
+   - 고해상도(1000px) SVG-to-PNG 렌더링 기반 제미나이 멀티모달 비전 정밀 감수 및 자가 치유(Self-Healing) 좌표 교정.
+   - 전용 독립 실행 CLI 제공: `npm run audit:svg-design [protocolId]`.
+3. **PWA 오프라인 생존성**:
    - 1회 방문 시 전 페이지 HTML, 7개국어 JSON, SVG 벡터 도면 및 이미지 100% 영구 캐시 (`survival-{hash}`).
-3. **무과금 하이브리드 경제성**:
+4. **무과금 하이브리드 경제성**:
    - AGY 스튜디오(Argon) + Stitch MCP + Google AI Studio 무료 티어로 월 추가 API 과금 0원 유지.
 
 ## 5. 전담 자동화 스킬 (Antigravity Skills)

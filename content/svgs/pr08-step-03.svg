@@ -60,54 +60,64 @@
 
   <!-- Ground Plane Baseline -->
   <line x1="30" y1="310" x2="370" y2="310" stroke="#334155" stroke-width="1.5"/>
-  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322" stroke="#1e293b" stroke-width="1"/>
+  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322 M 300 312 L 315 322" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Ground Shadows Beneath Post -->
+  <ellipse cx="156" cy="311" rx="28" ry="5" fill="#000000" opacity="0.8"/>
 
   <!-- ============================================== -->
   <!-- FULL NUMERAL 4 ASSEMBLED STANDALONE FRAME -->
   <!-- ============================================== -->
   <g filter="url(#shadowS3)">
-    <!-- 1. Stick 1: Vertical Post (Straight Upright: x=145, y=95 to 310) -->
-    <rect x="145" y="125" width="22" height="185" rx="3" fill="url(#postWoodS3)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Top Chisel Tip -->
-    <polygon points="145,125 156,92 167,125" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
+    <!-- 1. Stick 1: Vertical Post (Straight Upright: x=145 to 167, y=125 to 310) -->
+    <rect x="145" y="125" width="22" height="185" rx="2.5" fill="url(#postWoodS3)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Top Chisel Tip (Peak at (156, 95)) -->
+    <polygon points="145,125 156,95 167,125" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
 
-    <!-- Middle Notch in Post (around y=190 to 206) -->
-    <rect x="145" y="190" width="12" height="16" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
+    <!-- Middle Notch in Post (y=192 to 208) -->
+    <rect x="145" y="192" width="12" height="16" fill="url(#notchFlesh)" stroke="#78350f" stroke-width="1"/>
+    <!-- Post Bark Lines -->
+    <line x1="150" y1="140" x2="150" y2="185" stroke="#271408" stroke-width="0.8"/>
+    <line x1="162" y1="215" x2="162" y2="290" stroke="#271408" stroke-width="0.8"/>
 
-    <!-- 2. Stick 2: Diagonal Strut (From Top Pivot (156, 92) down to (275, 215)) -->
-    <polygon points="140,84 165,104 275,225 254,242" fill="url(#strutWoodS3)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Top Notch mating over chisel -->
-    <polygon points="147,90 162,102 170,92" fill="url(#notchFlesh)"/>
-    <!-- Bottom Beveled Tip -->
-    <polygon points="254,228 275,225 264,240" fill="url(#notchFlesh)"/>
+    <!-- 2. Stick 2: Diagonal Strut (Mathematically 45.0°, Top at (156, 95) down to (258, 196)) -->
+    <!-- Strut branch body: Width 16px, Top notch nests over chisel (156, 95), Bottom beveled tip nests inside Bait stick rear notch (258, 196) -->
+    <polygon points="144,83 156,95 168,83 178,93 268,183 258,196 248,186 134,73" fill="url(#strutWoodS3)" stroke="#271408" stroke-width="1.2"/>
 
-    <!-- 3. Stick 3: Horizontal Bait Stick (From Post Notch x=110 across to x=340, y=195) -->
+    <!-- Top Mating V-Notch (Nests snugly over chisel peak (156, 95)) -->
+    <polygon points="148,87 156,95 164,87 156,92" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="0.8"/>
+
+    <!-- Bottom Beveled Tip (Locks flush inside Bait stick rear notch at y=192 to 198) -->
+    <polygon points="248,186 258,196 268,183 258,180" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="0.8"/>
+
+    <!-- 3. Stick 3: Horizontal Bait Stick (Runs from x=110 across to x=345, y=192 to 208) -->
     <path d="M 110 192 L 315 192 L 345 200 L 315 208 L 110 208 Z" fill="url(#baitWoodS3)" stroke="#271408" stroke-width="1.2"/>
 
-    <!-- Catch Ledge on Bait Stick -->
-    <polygon points="143,190 157,190 157,208 143,208" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
+    <!-- Catch Ledge on Bait Stick (Locked into Post middle notch at x=145..157) -->
+    <polygon points="145,192 157,192 157,208 145,208" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
 
-    <!-- Rear Notch on Bait Stick -->
-    <polygon points="252,192 268,192 258,206" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
+    <!-- Rear Notch on Bait Stick (Receives Strut bottom tip at x=250..266, y=192..204) -->
+    <polygon points="250,192 266,192 258,204" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
 
     <!-- Sharp Bait Pin at Far Right -->
     <polygon points="315,192 345,200 315,208" fill="url(#notchFlesh)" stroke="#b45309" stroke-width="1"/>
     <!-- Red Wild Berry Bait -->
-    <circle cx="343" cy="200" r="4" fill="#ef4444"/>
+    <circle cx="343" cy="200" r="4.5" fill="#ef4444"/>
+    <circle cx="343" cy="200" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Key Interlock Joint Markers & Badges -->
   <!-- Joint A: Post & Bait Stick (Label 2) -->
-  <circle cx="150" cy="199" r="6" fill="#ef4444" opacity="0.9"/>
-  <circle cx="150" cy="199" r="11" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="150" y1="188" x2="115" y2="155" stroke="#ef4444" stroke-width="1.2"/>
+  <circle cx="151" cy="200" r="5" fill="#ef4444" opacity="0.9"/>
+  <circle cx="151" cy="200" r="9" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="151" y1="190" x2="115" y2="155" stroke="#ef4444" stroke-width="1.2"/>
   <rect x="40" y="138" width="115" height="18" fill="#1c1917" stroke="#ef4444" stroke-width="1"/>
   <text x="97" y="150" fill="#fca5a5" font-family="'Space Grotesk', sans-serif" font-size="8.5" text-anchor="middle" font-weight="bold">세움대-먹이대 맞물림 턱</text>
 
   <!-- Joint B: Strut & Bait Stick (Label 3) -->
-  <circle cx="260" cy="206" r="6" fill="#38bdf8" opacity="0.9"/>
-  <circle cx="260" cy="206" r="11" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="260" y1="195" x2="285" y2="155" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="258" cy="196" r="5" fill="#38bdf8" opacity="0.9"/>
+  <circle cx="258" cy="196" r="9" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="258" y1="187" x2="285" y2="155" stroke="#38bdf8" stroke-width="1.2"/>
   <rect x="235" y="138" width="115" height="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
   <text x="292" y="150" fill="#bae6fd" font-family="'Space Grotesk', sans-serif" font-size="8.5" text-anchor="middle" font-weight="bold">빗장대-먹이대 뒷홈 걸림</text>
 

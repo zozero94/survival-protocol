@@ -15,6 +15,13 @@
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
+    <!-- Rock Underside Cavern Shadow Gradient -->
+    <linearGradient id="rockUnderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
     <!-- Rock Rim 3D Gradient -->
     <linearGradient id="rockRimS4" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#94a3b8"/>
@@ -75,100 +82,106 @@
   <line x1="25" y1="310" x2="375" y2="310" stroke="#334155" stroke-width="1.5"/>
   <path d="M 35 312 L 50 322 M 70 312 L 85 322 M 105 312 L 120 322 M 140 312 L 155 322 M 175 312 L 190 322 M 210 312 L 225 322 M 245 312 L 260 322 M 280 312 L 295 322 M 315 312 L 330 322 M 350 312 L 365 322" stroke="#1e293b" stroke-width="1"/>
 
-  <!-- Ground Contact Shadow beneath Trap & Rock Base -->
-  <ellipse cx="148" cy="311" rx="25" ry="4" fill="#000000" opacity="0.8"/>
-  <ellipse cx="335" cy="311" rx="40" ry="5" fill="#000000" opacity="0.9"/>
+  <!-- Ground Shadows -->
+  <ellipse cx="156" cy="311" rx="28" ry="5" fill="#000000" opacity="0.8"/>
+  <ellipse cx="320" cy="311" rx="45" ry="6" fill="#000000" opacity="0.9"/>
 
   <!-- ============================================== -->
   <!-- 0.1s COLLAPSE MOTION GHOST (Falling Rock Trajectory) -->
   <!-- ============================================== -->
-  <!-- Ghost Rock Dropped Flat on Ground -->
-  <polygon points="160,308 360,308 355,280 165,280" fill="url(#rockGhostS4)" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+  <!-- Ghost Rock Dropped Flat on Ground Crushing Bait Area -->
+  <polygon points="135,308 355,308 350,282 140,282" fill="url(#rockGhostS4)" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
   <!-- Downward Impact Motion Trajectory Arrows -->
-  <path d="M 185 140 L 185 270 M 235 180 L 235 270 M 285 220 L 285 270" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <polygon points="182,270 185,277 188,270" fill="#38bdf8"/>
+  <path d="M 180 120 L 180 270 M 235 135 L 235 270 M 285 145 L 285 270" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <polygon points="177,270 180,277 183,270" fill="#38bdf8"/>
   <polygon points="232,270 235,277 238,270" fill="#38bdf8"/>
   <polygon points="282,270 285,277 288,270" fill="#38bdf8"/>
 
   <!-- ============================================== -->
-  <!-- 1. HEAVY SLATE ROCK (45-deg Angle, Propped on Strut Tip) -->
+  <!-- 1. HEAVY 15KG SLATE ROCK (3D Propped Ceiling Slab) -->
   <!-- ============================================== -->
-  <!-- Slate Rock Body: Underside connects front lip (165,108) down to ground (325,310) -->
+  <!-- The massive stone slab rests its back edge on ground (290..365, 310) and is propped up at front lip (138, 77) by Strut -->
   <g filter="url(#shadowS4)">
     <!-- 3D Rear Bevel Facet -->
-    <polygon points="180,94 365,310 375,302 192,84" fill="url(#rockRimS4)" stroke="#334155" stroke-width="0.8"/>
-    <!-- Top Face of Heavy Slate -->
-    <polygon points="165,108 325,310 365,310 180,94" fill="url(#rockGradS4)" stroke="#1e293b" stroke-width="1.8"/>
-    <!-- Front Lifted Lip Thickness (Where it rests on strut notch) -->
-    <polygon points="165,108 180,94 192,84 175,98" fill="#94a3b8" stroke="#475569" stroke-width="0.8"/>
-    <!-- Rock Geological Surface Cleavage Fracture Lines -->
-    <path d="M 205 135 L 245 190 L 305 240 M 260 170 L 330 220 M 220 160 L 275 225" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
+    <polygon points="154,63 365,310 375,302 166,53" fill="url(#rockRimS4)" stroke="#334155" stroke-width="0.8"/>
+    <!-- Top Face of Heavy Slate Slab -->
+    <polygon points="138,77 325,310 365,310 154,63" fill="url(#rockGradS4)" stroke="#1e293b" stroke-width="1.8"/>
+    <!-- Front Lifted Lip Thickness (Resting cleanly on Strut top notch) -->
+    <polygon points="138,77 154,63 166,53 148,69" fill="#94a3b8" stroke="#475569" stroke-width="0.8"/>
+    <!-- Rock Surface Geological Cleavage Fracture Lines -->
+    <path d="M 190 100 L 235 150 L 305 210 M 245 125 L 325 185 M 205 120 L 265 175" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
   </g>
 
   <!-- ============================================== -->
   <!-- 2. FIGURE-4 STICK TRIGGER MECHANISM (In Foreground) -->
   <!-- ============================================== -->
   <g filter="url(#shadowS4)">
-    <!-- Stick 1: Vertical Post (세움대 - Stands upright at x=138 to 156, y=145 to 310) -->
-    <rect x="138" y="160" width="18" height="150" rx="2.5" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Post Top Chisel Head (납작 쐐기 - y=130 to 160) -->
-    <polygon points="138,160 147,130 156,160" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="1"/>
-    <!-- Post Middle Notch (네모 홈 - y=222 to 238) -->
-    <rect x="138" y="222" width="10" height="16" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="0.8"/>
+    <!-- Stick 1: Vertical Post (세움대 - Stands upright at x=145 to 167, y=125 to 310) -->
+    <rect x="145" y="125" width="22" height="185" rx="2.5" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Post Top Chisel Head (납작 쐐기 - Peak at (156, 95)) -->
+    <polygon points="145,125 156,95 167,125" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="1"/>
+    <!-- Post Middle Notch (네모 홈 - y=192 to 208) -->
+    <rect x="145" y="192" width="12" height="16" fill="url(#carvedWoodS4)" stroke="#78350f" stroke-width="0.8"/>
     <!-- Post Bark Lines -->
-    <line x1="143" y1="180" x2="143" y2="215" stroke="#271408" stroke-width="0.8"/>
-    <line x1="151" y1="245" x2="151" y2="295" stroke="#271408" stroke-width="0.8"/>
+    <line x1="150" y1="140" x2="150" y2="185" stroke="#271408" stroke-width="0.8"/>
+    <line x1="162" y1="215" x2="162" y2="290" stroke="#271408" stroke-width="0.8"/>
 
-    <!-- Stick 2: Diagonal Strut (빗장대 - Slanted piece propping the rock) -->
-    <!-- Extends from top support notch (165,108) down to bait stick rear joint (195,238) -->
-    <polygon points="160,102 170,114 198,238 186,242" fill="url(#strutBarkS4)" stroke="#271408" stroke-width="1.2"/>
-    <!-- Upper Support Tip Notch (Mates over Post Chisel and props Rock) -->
-    <polygon points="160,102 170,114 165,108" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="1"/>
-    <!-- Mating Notch over Post Chisel -->
-    <polygon points="144,130 154,138 152,126" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
-    <!-- Critical Mechanical Contact Pivot (Rock resting on Strut) -->
-    <circle cx="165" cy="108" r="4" fill="#ef4444" opacity="0.95"/>
-    <circle cx="165" cy="108" r="7.5" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <!-- Stick 2: Diagonal Strut (Mathematically 45.0°, Top at (156, 95) down to (258, 196)) -->
+    <!-- Extends above post to (138, 77) where it directly props up the rock's front underside lip -->
+    <polygon points="128,67 140,79 156,95 168,83 178,93 268,183 258,196 248,186 148,87 138,77 118,57" fill="url(#strutBarkS4)" stroke="#271408" stroke-width="1.2"/>
 
-    <!-- Stick 3: Horizontal Bait Stick (먹이대 - Runs from x=122 through to x=310, y=226) -->
-    <!-- Runs underneath the tilted rock into the danger zone -->
-    <path d="M 122 226 L 290 226 L 315 232 L 290 238 L 122 238 Z" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Upper Support Tip Notch (Props Rock at (138, 77)) -->
+    <polygon points="128,67 140,79 138,77" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="1"/>
+    <!-- Mating Notch over Post Chisel (156, 95) -->
+    <polygon points="148,87 156,95 164,87 156,92" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <!-- Bottom Beveled Tip (Locks into Bait stick rear notch at y=192 to 198) -->
+    <polygon points="248,186 258,196 268,183 258,180" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+
+    <!-- Critical Mechanical Contact Pivots -->
+    <circle cx="138" cy="77" r="4.5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="138" cy="77" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="156" cy="95" r="3.5" fill="#38bdf8" opacity="0.9"/>
+    <circle cx="258" cy="196" r="3.5" fill="#38bdf8" opacity="0.9"/>
+
+    <!-- Stick 3: Horizontal Bait Stick (Runs from x=110 across to x=305, y=192 to 208) -->
+    <!-- Extends into the sheltered cavern under the rock, bait clearly inside the fall zone -->
+    <path d="M 110 192 L 285 192 L 305 200 L 285 208 L 110 208 Z" fill="url(#woodBarkS4)" stroke="#271408" stroke-width="1.2"/>
     <!-- Front Ledge on Bait Stick (Locked into Post middle notch) -->
-    <rect x="136" y="224" width="12" height="14" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <polygon points="145,192 157,192 157,208 145,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
     <!-- Rear Catch Notch on Bait Stick (Locked with Strut bottom) -->
-    <polygon points="186,226 198,226 192,238" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <polygon points="250,192 266,192 258,204" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
     <!-- Pointed Inner Bait Pin under the Rock -->
-    <polygon points="290,226 315,232 290,238" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
-    <!-- Juicy Red Wild Berries Bait -->
-    <circle cx="310" cy="232" r="5" fill="#ef4444"/>
-    <circle cx="316" cy="229" r="4" fill="#dc2626"/>
-    <circle cx="310" cy="232" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <polygon points="285,192 305,200 285,208" fill="url(#carvedWoodS4)" stroke="#b45309" stroke-width="0.8"/>
+    <!-- Juicy Red Wild Berries Bait (Positioned under the rock in open air) -->
+    <circle cx="300" cy="200" r="5" fill="#ef4444"/>
+    <circle cx="306" cy="197" r="4" fill="#dc2626"/>
+    <circle cx="300" cy="200" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
   </g>
 
   <!-- Prey Touch Action Trigger Pointer -->
-  <path d="M 350 205 C 335 205 330 220 322 228" stroke="#ef4444" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <polygon points="320,225 316,233 324,230" fill="#ef4444"/>
+  <path d="M 345 175 C 330 175 322 190 312 198" stroke="#ef4444" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <polygon points="310,195 306,203 314,200" fill="#ef4444"/>
 
   <!-- ============================================== -->
   <!-- TECHNICAL LABELS & POINTERS -->
   <!-- ============================================== -->
   <!-- Label 2: Heavy Rock -->
-  <line x1="260" y1="125" x2="280" y2="78" stroke="#38bdf8" stroke-width="1.2"/>
-  <circle cx="260" cy="125" r="3" fill="#38bdf8"/>
-  <rect x="200" y="65" width="150" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-  <text x="275" y="79" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">15kg 평평한 바위 안착</text>
+  <line x1="230" y1="100" x2="270" y2="65" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="230" cy="100" r="3" fill="#38bdf8"/>
+  <rect x="200" y="55" width="150" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="275" y="69" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">15kg 평평한 바위 안착</text>
 
-  <!-- Label 3: Bait Mount -->
-  <line x1="312" y1="240" x2="312" y2="260" stroke="#f59e0b" stroke-width="1.2"/>
-  <circle cx="312" cy="240" r="3" fill="#f59e0b"/>
-  <rect x="235" y="260" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
-  <text x="305" y="274" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">먹이대 끝 미끼 장착</text>
+  <!-- Label 3: Bait Mount (Points directly to berries inside the drop zone) -->
+  <line x1="300" y1="210" x2="300" y2="245" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="300" cy="210" r="3" fill="#f59e0b"/>
+  <rect x="230" y="245" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="300" y="259" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">먹이대 끝 미끼 장착</text>
 
   <!-- Label 4: Instant Collapse -->
-  <line x1="185" y1="210" x2="135" y2="200" stroke="#ef4444" stroke-width="1.2"/>
-  <circle cx="185" cy="210" r="3" fill="#ef4444"/>
-  <rect x="25" y="190" width="155" height="20" fill="#1c1917" stroke="#ef4444" stroke-width="1"/>
-  <text x="102" y="204" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">톡 건드리면 0.1초 만에 바위 낙하</text>
+  <line x1="180" y1="210" x2="135" y2="225" stroke="#ef4444" stroke-width="1.2"/>
+  <circle cx="180" cy="210" r="3" fill="#ef4444"/>
+  <rect x="25" y="215" width="155" height="20" fill="#1c1917" stroke="#ef4444" stroke-width="1"/>
+  <text x="102" y="229" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">톡 건드리면 0.1초 만에 바위 낙하</text>
 
   <!-- Bottom Visual Callout Box (Label 5) -->
   <rect x="20" y="325" width="360" height="52" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
