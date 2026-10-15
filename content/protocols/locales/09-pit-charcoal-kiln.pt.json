@@ -107,11 +107,11 @@
     "outro": "Acesse os manuais completos de sobrevivência offline no link do perfil."
   },
   "outcome": {
-    "imageFileName": "pr09-outcome.png",
     "svgFileName": "pr09-outcome.svg",
     "title": "Corte transversal da trincheira de carvão e especificações",
     "description": "Vista técnica do forno subterrâneo cônico com 95% de restrição de oxigênio, produzindo carvão vegetal poroso de carvalho para calor sem fumaça e filtragem de emergência."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "3c80e0f8743ccff6"
+  "contentHash": "06910fe5beeb5301",
+  "updatedAt": "2026-10-15T14:35:53+09:00"
 }

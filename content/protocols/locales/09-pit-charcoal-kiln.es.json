@@ -107,11 +107,11 @@
     "outro": "Planos completos de supervivencia sin conexión en el enlace de nuestro perfil."
   },
   "outcome": {
-    "imageFileName": "pr09-outcome.png",
     "svgFileName": "pr09-outcome.svg",
     "title": "Corte transversal del horno de pozo y especificaciones del carbón",
     "description": "Vista técnica del horno subterráneo cónico operando con restricción de oxígeno al 95%, produciendo carbón vegetal poroso de roble ideal para calor sin humo y purificación de agua."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "3c80e0f8743ccff6"
+  "contentHash": "06910fe5beeb5301",
+  "updatedAt": "2026-10-15T14:35:53+09:00"
 }

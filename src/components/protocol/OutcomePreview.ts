@@ -10,19 +10,24 @@ export function renderOutcomePreview(
   outcome: ProtocolOutcome,
   svgsMap: Record<string, string> = {}
 ): string {
+  const rawSvg = (outcome.svgFileName && svgsMap[outcome.svgFileName]) || outcome.svgCode || '';
+  let labelCounter = 0;
+  const processedSvg = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs: string) => {
+    const lIdx = labelCounter++;
+    const cleanAttrs = attrs
+      .replace(/\s*data-svg\s*=\s*["'][^"']*["']/gi, '')
+      .replace(/\s*data-svg-outcome-label\s*=\s*["'][^"']*["']/gi, '');
+    return `<text data-svg="outcome" data-svg-outcome-label="${lIdx}"${cleanAttrs}>`;
+  });
+
   let visualContent = '';
   if (outcome.imageFileName) {
-    visualContent = `<img src="/images/${outcome.imageFileName}" alt="${outcome.title}" class="max-w-2xl w-full h-auto rounded border border-[#333] shadow-lg object-cover select-none" loading="lazy" />`;
+    visualContent = `
+      <img src="/images/${outcome.imageFileName}" alt="${outcome.title}" class="max-w-2xl w-full h-auto rounded border border-[#333] shadow-lg object-cover select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
+      ${processedSvg ? `<div style="display:none;" class="w-full">${processedSvg}</div>` : ''}
+    `.trim();
   } else {
-    const rawSvg = (outcome.svgFileName && svgsMap[outcome.svgFileName]) || outcome.svgCode || '';
-    let labelCounter = 0;
-    visualContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs: string) => {
-      const lIdx = labelCounter++;
-      const cleanAttrs = attrs
-        .replace(/\s*data-svg\s*=\s*["'][^"']*["']/gi, '')
-        .replace(/\s*data-svg-outcome-label\s*=\s*["'][^"']*["']/gi, '');
-      return `<text data-svg="outcome" data-svg-outcome-label="${lIdx}"${cleanAttrs}>`;
-    });
+    visualContent = processedSvg;
   }
 
   return `

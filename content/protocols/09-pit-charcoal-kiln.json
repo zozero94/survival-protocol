@@ -107,11 +107,11 @@
     "outro": "전기 없는 재난 상황에서도 작동하는 원시 생존 도면은 프로필 링크에서 확인하세요."
   },
   "outcome": {
-    "imageFileName": "pr09-outcome.png",
     "svgFileName": "pr09-outcome.svg",
     "title": "완성된 원시 지하 숯가마 단면 및 다공성 숯 제원",
     "description": "50cm 원뿔형 흙구덩이 속에서 공기를 95% 차단한 채 고온으로 구워내어, 연기 없는 고열 연료이자 식수 정화 필터로 사용 가능한 단단한 다공성 참나무 숯의 완성 단면입니다."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "3c80e0f8743ccff6"
+  "contentHash": "06910fe5beeb5301",
+  "updatedAt": "2026-10-15T14:35:53+09:00"
 }

@@ -8,19 +8,24 @@
 export function renderStepCards(steps                , svgsMap                         = {})         {
   const cardsHtml = steps
     .map((step, idx) => {
+      const rawSvg = (step.svgFileName && svgsMap[step.svgFileName]) || step.svgCode || '';
+      let labelCounter = 0;
+      const processedSvg = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
+        const lIdx = labelCounter++;
+        const cleanAttrs = attrs
+          .replace(/\s*data-svg-step\s*=\s*["'][^"']*["']/gi, '')
+          .replace(/\s*data-svg-label\s*=\s*["'][^"']*["']/gi, '');
+        return `<text data-svg-step="${idx}" data-svg-label="${lIdx}"${cleanAttrs}>`;
+      });
+
       let visualContent = '';
       if (step.imageFileName) {
-        visualContent = `<img src="/images/${step.imageFileName}" alt="STEP ${step.stepNumber}: ${step.title}" class="max-w-[420px] w-full h-auto rounded border border-[#333] shadow-md object-cover select-none" loading="lazy" />`;
+        visualContent = `
+          <img src="/images/${step.imageFileName}" alt="STEP ${step.stepNumber}: ${step.title}" class="max-w-[420px] w-full h-auto rounded border border-[#333] shadow-md object-cover select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
+          ${processedSvg ? `<div style="display:none;" class="w-full flex items-center justify-center">${processedSvg}</div>` : ''}
+        `.trim();
       } else {
-        const rawSvg = (step.svgFileName && svgsMap[step.svgFileName]) || step.svgCode || '';
-        let labelCounter = 0;
-        visualContent = rawSvg.replace(/<text\b([^>]*)>/gi, (_full, attrs        ) => {
-          const lIdx = labelCounter++;
-          const cleanAttrs = attrs
-            .replace(/\s*data-svg-step\s*=\s*["'][^"']*["']/gi, '')
-            .replace(/\s*data-svg-label\s*=\s*["'][^"']*["']/gi, '');
-          return `<text data-svg-step="${idx}" data-svg-label="${lIdx}"${cleanAttrs}>`;
-        });
+        visualContent = processedSvg;
       }
       return `
     <article class="border border-[#333] bg-[#1c1b1b] overflow-hidden mb-6">

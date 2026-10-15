@@ -107,11 +107,11 @@
     "outro": "通信が途絶えたオフライン環境でも閲覧できるサバイバル図面はプロフィールのリンクから！"
   },
   "outcome": {
-    "imageFileName": "pr09-outcome.png",
     "svgFileName": "pr09-outcome.svg",
     "title": "完成した原始地下木炭窯の断面及び多孔質木炭の諸元",
     "description": "深さ50cmの円錐形土穴で酸素を95%遮断して高温蒸し焼きにし、無煙高熱燃料や飲料水ろ過フィルターとして使用可能な硬質多孔質ナラ炭の完成断面図です。"
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "3c80e0f8743ccff6"
+  "contentHash": "06910fe5beeb5301",
+  "updatedAt": "2026-10-15T14:35:53+09:00"
 }

@@ -107,11 +107,11 @@
     "outro": "Offline-Überlebenspläne finden Sie über den Link im Profil."
   },
   "outcome": {
-    "imageFileName": "pr09-outcome.png",
     "svgFileName": "pr09-outcome.svg",
     "title": "Querschnitt des Erdgrubenmeilers & Holzkohle-Kenndaten",
     "description": "Technische Schnittdarstellung des anaeroben 50cm Erdmeilers mit 95% Luftdrosselung zur Gewinnung poröser Eichenholzkohle für rauchfreie Hitze und Trinkwasserfilterung."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "3c80e0f8743ccff6"
+  "contentHash": "06910fe5beeb5301",
+  "updatedAt": "2026-10-15T14:35:53+09:00"
 }

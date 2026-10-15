@@ -107,11 +107,11 @@
     "outro": "無網路斷網環境也能離線使用的生存圖鑑，請點擊個人簡介連結查閱！"
   },
   "outcome": {
-    "imageFileName": "pr09-outcome.png",
     "svgFileName": "pr09-outcome.svg",
     "title": "原始地下炭窯剖面及多孔木炭規格",
     "description": "深50公分圓錐形土坑在限制95%空氣下高溫燜烤運作的技術剖面圖，產出可用於無煙高熱與飲用水過濾的緻密多孔橡木炭。"
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "3c80e0f8743ccff6"
+  "contentHash": "06910fe5beeb5301",
+  "updatedAt": "2026-10-15T14:35:53+09:00"
 }
