@@ -35,12 +35,12 @@ Sections:
  */
 export class GeminiService {
   public static async planNextTopic(apiKey: string, existingTitles: string[] = []): Promise<PlannedTopic> {
-    const prompt = `당신은 '생존 교범(SURVIVAL PROTOCOL): 인류 멸망 후 원시 생존 매뉴얼'의 수석 전술 기획자입니다.
+    const prompt = `당신은 '포스트 아포칼립스에서 살아남기 (SURVIVAL PROTOCOL)'의 수석 전술 기획자입니다.
 기존에 다룬 주제 목록:
 ${existingTitles.map((t) => `- ${t}`).join('\n')}
 
-다음 순서로 다룰 가장 후킹하고 실용적인 원시 생존 기술 1개를 기획하세요.
-(예: 마찰 발화법, 쐐기풀/나무껍질로 밧줄 꼬기, 노천 진흙 토기 굽기 등)
+다음 순서로 다룰 가장 후킹하고 실용적인 생존 기술 1개를 기획하세요.
+(자연물 활용 원시 생존 기술 또는 버려진 빈 깡통·안 쓰는 전기선 등 도시 폐자재 업사이클링 생존 기술)
 
 그리고 이 주제를 스티치(Stitch)가 가장 정교한 흑백 도면과 브루탈리즘 UI로 렌더링할 수 있도록 **영문 스티치 프롬프트**를 함께 작성하세요.
 

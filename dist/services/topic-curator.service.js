@@ -223,8 +223,8 @@ export class TopicCuratorService {
     const existingTitles = tree.protocols.map((p) => p.title);
     const coveredDomains = Object.values(tree.domains).map((d) => `${d.name} (${d.branches.join(', ')})`);
 
-    const prompt = `당신은 '생존 교범(SURVIVAL PROTOCOL): 인류 멸망 후 원시 생존 및 문명 재건 매뉴얼'의 최고 기술 고증관입니다.
-현대 문명이 붕괴되고 도구가 전무한 자연 상태에서, 사전에 이 프로토콜을 완벽히 숙지하고 두 손과 현장의 자연물만으로 생존 및 재건을 실행하는 사용자를 위한 다음 생존 프로토콜을 기획하십시오.
+    const prompt = `당신은 '포스트 아포칼립스에서 살아남기 (SURVIVAL PROTOCOL): 실전 생존 및 문명 재건 매뉴얼'의 최고 기술 고증관입니다.
+현대 문명이 붕괴된 포스트 아포칼립스 상황에서, 사전에 이 프로토콜을 완벽히 숙지하고 현장의 자연물이나 버려진 도시 잔해만을 활용해 생존 및 재건을 실행하는 사용자를 위한 다음 생존 프로토콜을 기획하십시오.
 
 [필수 작성 원칙]
 1. 현대 인공물(라이터, 플라스틱, 배터리, 캔 등)은 언급하지 말 것. 오직 돌, 흙, 나무, 식물, 뼈, 물, 불만 사용.

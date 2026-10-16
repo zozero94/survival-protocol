@@ -1,7 +1,7 @@
-# 생존 교범 (SURVIVAL PROTOCOL) : 원시 생존 매뉴얼 웹진 & 유튜브 쇼츠 파이프라인
+# 포스트 아포칼립스에서 살아남기 (SURVIVAL PROTOCOL) : 실전 생존 매뉴얼 웹진 & 유튜브 쇼츠 파이프라인
 
 ## 1. 프로젝트 개요
-- **목적**: 인류 문명 붕괴 시 원시 인류가 생존했던 기술을 흑백 브루탈리즘 야전 교본 스타일로 디지털 아카이빙하고, 이를 45초 유튜브 쇼츠 영상으로 원소스 멀티유즈(OSMU) 자동 확장
+- **목적**: 인류 문명이 멈춘 포스트 아포칼립스 상황에서 야생 자연물(나무·돌·흙) 및 도시에 버려진 잔해(빈 깡통·안 쓰는 전기선 등)를 활용해 살아남는 기술을 흑백 브루탈리즘 야전 교본 스타일로 디지털 아카이빙하고, 이를 45초 유튜브 쇼츠 영상으로 원소스 멀티유즈(OSMU) 자동 확장
 - **글로벌 다국어 지원 (7대 언어)**:
   - `ko` (한국어), `en` (영어), `ja` (일본어), `es` (스페인어), `de` (독일어), `pt` (포르투갈어), `zh-TW` (중국어 번체)
 - **디자인 철학 (Utilitarian Brutalism)**: 
@@ -18,12 +18,14 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 103개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 107개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
-  - 원시 자연물 고증 100% (현대 공산품 일체 배제)
+  - 듀얼 트랙 생존 고증 (Track A: 순수 자연물 원시 공학 / Track B: 포스트 아포칼립스 도시 폐자재 업사이클링 공학)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
     - 난해한 학술·전문 용어(다공성, 흡착, 비등 멸균, 플러싱 등) 전면 배제 및 일상 친화 구어체 표준화
     - 숫자에 신체 감각 비유 병기(콩알 크기, 손가락 두~네 마디 높이 등) 및 직관적 이유 즉시 제시
+  - **4대 심층 포스팅 품질 리뷰 (`PostingReviewService` & `posting-quality-auditor`)**:
+    - ① 야전 안전 & 오남용 Red-Team 심사, ② 자·저울·타이머 없는 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T & HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 대응 현지화 검수
   - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
   - 가변 3~6단계 세부 공학 체계 및 16:9 와이드 완성 결과도(Outcome) 기본 탑재
   - 3D 포토리얼리스틱 실물 이미지 에셋(Image Generator)과 벡터 SVG의 하이브리드 지원
@@ -35,7 +37,7 @@ flowchart TD
     subgraph Tier1["1. 두뇌 & 기획 (AGY Argon + Stitch MCP + Image Generator + Plain Korean Editor)"]
         A[Antigravity 메인 에이전트<br/>Argon 심층 추론 고증 기획] --> B[Stitch MCP Server<br/>generate_screen_from_text]
         A --> IMG[Image Generator 서브에이전트<br/>3D 포토리얼리스틱 실물 이미지]
-        A --> EDT[plain-korean-editor 서브에이전트<br/>초등학생 눈높이 문체 감수 100점]
+        A --> EDT[plain-korean-editor & posting-quality-auditor<br/>테크니컬 라이팅 + 4대 포스팅 품질 심사]
         B --> C[인라인 벡터 SVG 도면 추출<br/>3~8단계 스텝 + 16:9 Outcome 도면]
         C & IMG & EDT --> D[Content Layer 저장<br/>JSON + Images + SVGs + 지식 트리]
         D --> E[Stitch MCP edit_screens<br/>UI 변경 시 화면 1:1 양방향 동기화]
@@ -83,6 +85,7 @@ primitive-survival/
 │   │   └── locale.state.ts      # 7개국어 0.01초 무새로고침 핫스왑 엔진
 │   ├── services/                # [Service Layer] 
 │   │   ├── search.service.ts    # 슬림 인덱스 빌드, Fuse 퍼지 검색, 택티컬 하이라이팅
+│   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
 │   │   ├── pwa.service.ts       # 결정론적 Service Worker 캐시 해시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 바운딩박스/텍스트 충돌 감사기
@@ -105,7 +108,7 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 15개 테스트 스위트 (103/103 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 16개 테스트 스위트 (107/107 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
@@ -119,10 +122,11 @@ primitive-survival/
    - 기계공학 유클리드 기하학 공차 검증: 상단 힌지 결합 이격 거리 $\le 2.0\text{px}$, 하단 걸림턱 결합 이격 거리 $\le 2.0\text{px}$, 빗장대 지지각 $45^\circ \pm 5^\circ$.
    - 고해상도(1000px) SVG-to-PNG 렌더링 기반 제미나이 멀티모달 비전 정밀 감수 및 자가 치유(Self-Healing) 좌표 교정.
    - 전용 독립 실행 CLI 제공: `npm run audit:svg-design [protocolId]`.
-3. **전문 테크니컬 라이팅 & 딥다이브 원리 감수 (`PlainKoreanEditorService` & `technical-writing-editor`)**:
+3. **전문 테크니컬 라이팅 & 4대 심층 포스팅 품질 감수 (`PlainKoreanEditorService` & `PostingReviewService`)**:
    - 유아어/동화풍 표현(Fluff) 및 난해한 학술 용어(Jargon) 동시 100% 배제.
    - 1문장 1행동 번호형 액션 체크리스트(`01`, `02`) 및 핵심 수치 하이라이팅(`#fde68a`, `#ffffff`) 규격화.
    - Stitch 디자인 자문 기반 `TECHNICAL DEEP DIVE // FIELD PRINCIPLE` 박스를 통한 심화 과학 원리 및 야전 식생 실사 식별 스펙 카드(`FieldIdentificationSpec`, `MIL-SPEC-BIO-409`) 통합 제공.
+   - **4대 심층 포스팅 리뷰 통과**: ① 야전 안전 Red-Team 심사, ② 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T & HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 현지화 검수 (`tests/16_posting_review_engine.test.ts`).
 4. **타임스탬프 및 콘텐츠 해시 정밀 동기화 (`protocol-timestamp.ts`)**:
    - 실질 콘텐츠 SHA-256 해시 지문 기반으로 SVG/이미지/텍스트 변경 시에만 `updatedAt`이 갱신되는 멱등성 보장 (`npm run sync:timestamps`).
 5. **클라이언트 인메모리 검색 엔진 무결성 (`search.service.ts`, `search.state.ts`)**:

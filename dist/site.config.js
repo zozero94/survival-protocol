@@ -4,9 +4,9 @@
  */
 
 export const SITE_META = {
-  name: '인류 멸망 후 원시 생존 교범',
+  name: '포스트 아포칼립스에서 살아남기',
   shortName: '생존 교범',
-  description: '현대 도구 없이 자연물과 두 손만으로 살아남는 원시 생존 기술 기록서',
+  description: '문명이 멈춘 세상, 버려진 도시 물품과 자연물만으로 살아남는 실전 생존 기술 기록서',
   lang: 'ko',
   themeColor: '#050505',
   backgroundColor: '#050505',

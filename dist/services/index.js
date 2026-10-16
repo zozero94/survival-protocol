@@ -13,5 +13,4 @@ export * from './svg-audit.service.js';
 export * from './svg-design-auditor.service.js';
 export * from './google-drive.service.js';
 export * from './search.service.js';
-
-
+export * from './posting-review.service.js';

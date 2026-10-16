@@ -1,11 +1,11 @@
-# [생존 교범 // SURVIVAL PROTOCOL]
-> **"모든 전기가 끊겼을 때, 오직 두 손과 이 기록만으로 살아남는다."**  
-> Post-Collapse Primitive Survival Field Manual & Autonomous Knowledge Pipeline
+# [포스트 아포칼립스에서 살아남기 // SURVIVAL PROTOCOL]
+> **"포스트 아포칼립스에서 살아남기"**  
+> Post-Apocalyptic Survival Field Manual & Autonomous Knowledge Pipeline
 
 ---
 
 ## 🧭 프로젝트 개요
-현대 문명이 붕괴되고 글로벌 통신망과 전력망이 영구 단절되었을 때, 라이터나 플라스틱 등 현대 인공물에 일체 의존하지 않고 자연물과 두 손만으로 생명을 유지하기 위한 실전 원시 생존 기술 기록서입니다.
+현대 문명이 멈추고 통신망과 전력망이 단절된 포스트 아포칼립스 상황에서, 주변의 나무·돌·흙 같은 자연물부터 도시에 버려진 빈 깡통·안 쓰는 전기선 등 폐자재까지 활용하여 생명을 유지하기 위한 실전 생존 기술 기록서입니다.
 
 * **완전 오프라인 PWA (Progressive Web App)**: 1회 방문 시 모든 교범 데이터와 스타일이 기기에 사전 캐시되어 비행기 모드 및 통신 두절 시에도 100% 작동
 * **인메모리 초고속 검색 & 초성 탐색 엔진**: `Fuse.js` 기반 0ms 반응 속도, 한글 자음 초성 분해 검색(`ㅅㅅ` -> 식수, `ㅂㅇ` -> 바위, `ㅈㅅㄱ` -> 정수기), 실시간 택티컬 하이라이팅 및 35자 스니펫, `Cmd+K` / `/` 단축키 및 방향키 내비게이션 완비
@@ -57,6 +57,7 @@ primitive-survival/
 │   │   └── protocol/      # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning
 │   ├── services/          # [Service Layer]
 │   │   ├── search.service.ts # Fuse.js 퍼지 검색, 슬림 인덱스 구축, 택티컬 하이라이팅 및 스니펫
+│   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
 │   │   ├── pwa.service.ts # 결정론적 Service Worker 캐시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 도면 기하학 충돌 감사기
@@ -80,7 +81,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 15대 테스트 스위트 (103/103 PASS)
+└── tests/                 # [Quality Audit] 16대 테스트 스위트 (107/107 PASS)
 ```
 
 ---
@@ -109,7 +110,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(103개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성)*
+*(107개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성, 16) 4대 포스팅 품질 심사 엔진)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash
