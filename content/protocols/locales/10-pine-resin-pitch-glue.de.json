@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-10",
+  "category": "MEDICINE",
+  "title": "Kiefernharz zu antiseptischer Salbe und wasserfestem Pechkleber veredeln",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[INFEKTIONSABWEHR & WASSERFESTE WERKZEUGBINDUNG]",
+  "summary": "In der Wildnis kann sich eine unbehandelte Schnittwunde durch Steinsplitter oder Äste rasch infizieren und zu lebensbedrohlicher Sepsis führen. Zudem erfordern Steinbeile und rissige Gefäße ein felsenhartes, wasserfestes Bindemittel für härteste Feldbedingungen. Durch schonendes Schmelzen von Kiefernharz über indirekter Glutwärme und das Abschöpfen von Rindenteilen gewinnt man eine reine antimikrobielle Wundsalbe. Das Einrühren von feinem Holzkohlepulver im Verhältnis **1:1** ergibt einen obsidianharten, wasserdichten Pechklebestift (Pitch Glue).",
+  "timeRequired": "40 Minuten (15 Min. Harzernte + 15 Min. indirektes Schmelzen + 10 Min. Kohlemischung)",
+  "successRate": "95% (strikte indirekte Glutwärme und 1:1 Kohleverhältnis)",
+  "difficulty": "Einfach (Brand- und Verbrennungsgefahr beachten)",
+  "outputPerHour": "30ml reine Antiseptik-Salbe + 2 Pechklebestifte pro Charge",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "100g getrocknete Rohkiefernharz-Brocken von Baumstämmen",
+      "desc": "Spröde, kristalline Bernsteinklumpen. Vollständig ausgehärtete, transparente Knollen enthalten weniger Verunreinigungen und schmelzen zu einer reineren Salbe."
+    },
+    {
+      "id": "mat-02",
+      "name": "Konkave Schiefer-Steinschale oder große Muschelschale",
+      "desc": "Natürlicher hitzebeständiger Tiegel, der offene Flammen abwehrt und sanfte Infrarot-Strahlungswärme der Glut aufnimmt."
+    },
+    {
+      "id": "mat-03",
+      "name": "Zweigkamm-Sieb und saubere Muschelschale",
+      "desc": "Eng stehende Zweigzinken zum schnellen Auskämmen schwimmender Rindenteile sowie eine Muschel zur Aufbewahrung der Salbe."
+    },
+    {
+      "id": "mat-04",
+      "name": "50g fein pulverisiertes Eichenholzkohlepulver",
+      "desc": "Beseitigt die glasartige Sprödigkeit des erkalteten Harzes und wirkt als mikroskopisches Kohlenstoff-Verstärkungsgerüst."
+    },
+    {
+      "id": "mat-05",
+      "name": "Glühendes Hartholzkohlebett und Rührstab",
+      "desc": "Bietet flammenfreie Infrarotwärme zur Verflüssigung des Harzes, ohne flüchtige Terpendämpfe zu entzünden."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Ausgehärtete bernsteinfarbene Harzknollen vom Stamm ernten",
+      "description": "1. **Kristalline Harzknollen aufspüren**: Kiefernstämme oder Astabbrüche nach tropfenförmigen, **ausgehärteten Bernsteinklumpen** absuchen.\n2. **Mit Steinabschlag abschaben**: Mit einer Feuersteinklinge die **oberflächlichen Brocken behutsam abschaben**, ohne die Bastschicht zu verletzen.\n3. **Faustgroße Menge sammeln**: Rund **eine Faust voll (ca. 100g)** sauberes Bernsteinharz auf einem breiten Blatt zusammentragen.\n4. **Grobe Fremdkörper aussortieren**: Lose Erde, Nadeln und grobe Rindenreste vor dem Schmelzen von Hand entfernen.",
+      "actionNote": "> Baum-ID & Sammeltipp: Unterscheiden Sie die **Kiefer** (rötliche Schildkrötenpanzer-Rinde & **paarweise** wachsende Nadeln, für Harz) von der **Eiche** (tiefe vertikale Rindenfurchen, gezackte Blätter & Eicheln, für Holzkohle) anhand der Fototafel unten.",
+      "svgFileName": "pr10-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RAW PINE RESIN HARVESTING",
+        "Erstarrtes Bernsteinharz am Kiefernstamm",
+        "Tangentiales Abschaben mit Steinklinge",
+        "Faustgroße Menge (~100g) selektiert",
+        "[KERN] Ausgehärtete transparente Knollen wählen"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Visuelle Feldbestimmung (Kiefer vs. Eiche) & Terpen-Abwehr",
+        "text": "Kiefern sondern bei Rindenverletzungen terpenreiches Harz ab, um Wunden luftdicht zu verschließen. Eichen liefern extrem dichtes Hartholz für langanhaltende Glut und das Kohlenstoffpulver zur Harzhärtung.",
+        "fieldSpecs": [
+          {
+            "name": "Rotkiefer",
+            "scientificName": "Pinus densiflora",
+            "categoryTag": "Nadelholz(Softwood) / Harz & Kienspan",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "RESIN GLAND: VERIFIED",
+            "traits": [
+              {
+                "label": "RINDE",
+                "value": "Oben rötlich-braun; unten in **dicke, schildkrötenpanzerartige Platten** zerfurcht."
+              },
+              {
+                "label": "BLATT",
+                "value": "Spitze, immergrüne **Nadeln, die stets paarweise zu zweit** (**8–14cm** lang) wachsen."
+              },
+              {
+                "label": "MERKMAL",
+                "value": "Erstarrte **gold-bernsteinfarbene Harztropfen** an Stammwunden sowie holzige **Kiefernzapfen**."
+              }
+            ],
+            "fieldUse": "Wundsalbe, wasserfester Pechkleber (Pitch), Kienspan-Zunder"
+          },
+          {
+            "name": "Eiche",
+            "scientificName": "Quercus",
+            "categoryTag": "Hartholz(Hardwood) / Dichte Holzkohle",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "FISSURE DEPTH: VERIFIED",
+            "traits": [
+              {
+                "label": "RINDE",
+                "value": "Dunkelbraune bis grauschwarze Rinde mit **tiefen, rauen vertikalen Längsfurchen**."
+              },
+              {
+                "label": "BLATT",
+                "value": "Breite Laubblätter mit **deutlich gewellten Lappen oder scharfen Sägezähnen** am Rand."
+              },
+              {
+                "label": "MERKMAL",
+                "value": "Herabgefallene **Eicheln mit schuppigen Hütchen (Fruchtbechern)** am Boden (**100%** sicher)."
+              }
+            ],
+            "fieldUse": "Feines Kohlepulver als Epoxid-Härter, rauchfreie Hochglut, Axtstiele"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Harz in einer Steinschale über Glutrestwärme schmelzen (Kein offenes Feuer)",
+      "description": "1. **Harz in Steinschale häufen**: Die **100g Rohharzbrocken** in die Mitte einer flachen Schieferschale oder Muschel legen.\n2. **10cm neben Glut betten**: Die Schale auf Stützsteinen ca. **10cm neben glühende Kohlen** platzieren, abseits offener Flammen.\n3. **Mit sanfter Strahlungswärme schmelzen**: Das Harz **5 bis 8 Minuten** langsam verflüssigen lassen, ohne dass Flammen emporschlagen.\n4. **Klares Goldsirup-Stadium prüfen**: Sicherstellen, dass sich alle festen Knollen vollständig zu einer **transparenten, blasenwerfenden Flüssigkeit** lösen.",
+      "actionNote": "> Brandgefahr: Harzdämpfe enthalten hochentzündliche Terpene. Die Schale niemals über offenes Lagerfeuer stellen, da Dämpfe explosionsartig verpuffen.",
+      "svgFileName": "pr10-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // GENTLE EMBER MELTING PROCESS",
+        "Geschmolzenes Goldharz in der Steinschale",
+        "10cm neben glühenden Kohlen platziert",
+        "Flammensperre & sanfte Infrarotwärme",
+        "[KERN] 100% Glutwärme verhindert Stichflammen"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHARMACOLOGY",
+        "title": "Bakterizide Wirkung von Alpha-Pinen und Terpen-Derivaten",
+        "text": "Alpha-Pinen und Monoterpene durchdringen bakterielle Lipid-Zellmembranen und blockieren lebenswichtige Stoffwechselenzyme. Schonendes Erwärmen unterhalb des Siedepunkts bewahrt diese wirksamen Inhaltsstoffe vor thermischer Zersetzung."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Rindenteile mit Zweigkamm abschöpfen & reine Wundsalbe abtrennen",
+      "description": "1. **Zweigkamm-Sieb anfertigen**: Zarte Zweigspitzen fächerförmig binden, um einen **feinzahnigen Schöpfkamm** herzustellen.\n2. **Schwimmende Rinde abkämmen**: Den Kamm rasch durch das flüssige Harz ziehen, um **aufschwimmende Rindensplitter und Ruß abzufischen**.\n3. **30ml reine Salbe abtrennen**: **Ein Drittel der geklärten Flüssigkeit (ca. 30ml)** in eine saubere Muschelschale abgießen.\n4. **Im Schatten erkalten lassen**: Die Muschel **10 Minuten** ruhen lassen, bis das Harz zu einem geschmeidigen, klebrigen Antiseptik-Gelee erstarrt.",
+      "actionNote": "> Salbenanwendung: Erstarrt zu festem Balsam. Eine Portion mit der Fingerkuppe erwärmen und auf Schnitte streichen – bildet ein wasser- und keimdichtes Pflaster.",
+      "svgFileName": "pr10-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DEBRIS REMOVAL & OINTMENT EXTRACTION",
+        "Zweigkamm fischt Rindenpartikel ab",
+        "Abtrennung von 30ml reiner Wundsalbe",
+        "10 Minuten Auskühlen in der Muschel",
+        "[KERN] Reine goldene Wundsalbe separat sichern"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Kohlepulver 1:1 einrühren & zum gehärteten Pechklebestift abschrecken",
+      "description": "1. **Kohlepulver einstreuen**: Langsam **50g feines Holzkohlepulver** in das restliche heiße Harz in der Steinschale rieseln lassen.\n2. **Rasch zähkneten**: Mit einem Holzstab **1 bis 2 Minuten** kräftig rühren, bis eine glänzend schwarze, teerartige Masse entsteht.\n3. **Um Astspitze wickeln**: Das Ende eines daumendicken Hartholzastes durch die Masse drehen und **eine dicke, runde Knolle formen**.\n4. **In kaltem Wasser abschrecken**: Die Knolle in kaltes Flusswasser tauchen oder **5 Minuten** an der Luft härten lassen, bis sie obsidianhart wird.",
+      "actionNote": "> Mischungsverhältnis: Reines Harz zerspringt wie Glas. Ein exaktes 1:1-Volumenverhältnis mit Kohlepulver verhindert spröde Brüche bei maximaler Klebkraft.",
+      "svgFileName": "pr10-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
+        "1:1 Eichenholzkohlepulver-Einmischung",
+        "Schnelles Rühren zum zähen Teerbinder",
+        "Ummantelung des Astes & 5 Min. Härtung",
+        "[KERN] Rissfreier wasserdichter Natur-Epoxidstift"
+      ],
+      "deepDive": {
+        "badge": "FIELD MATERIALS",
+        "title": "Beseitigung der Sprödigkeit durch Kohlenstoff-Mikropartikel",
+        "text": "Reines Kolophonium bricht bei Schlagbeanspruchung schlagartig. Die feine Verteilung poröser Kohlenstoffpartikel blockiert das Fortschreiten von Mikrorissen und wandelt sprödes Baumharz in ein extrem schlagzähes, 100% wasserfestes Natur-Epoxid (Pitch Glue) um."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fataler Fehler: Erhitzen des Harzes über lodernden Flammen des Lagerfeuers",
+    "description": "Kiefernharz ist reich an leicht entzündlichen Terpen-Kohlenwasserstoffen. Steht die Schale direkt in offenen Flammen, steigen dichte brennbare Dämpfe auf, die schlagartig verpuffen, das gesamte Harz vernichten und schwerste Verbrennungen an Gesicht und Händen verursachen.",
+    "consequence": "Folge: Totalverlust des Harzes und akute Gefahr schwerer Verbrennungen 2. Grades"
+  },
+  "shortsScript": {
+    "hook": "Eine unbehandelte Wunde in der Wildnis führt binnen Stunden zur Blutvergiftung! So machst du aus Kiefernharz Wundsalbe und Felsenkleber!",
+    "body": "Schabe getrocknete Bernsteinklumpen von Kiefernstämmen ab und lege sie in eine Steinschale! Niemals über offenes Feuer stellen – nutze indirekte Glutwärme gegen Verpuffungen! Fische Rindensplitter mit einem Zweigkamm ab und gieße einen Teil in eine Muschel: fertig ist deine keimdichte Wundsalbe. Rühre in den Rest feines Kohlepulver 1:1 ein und härte es an einem Ast – so entsteht felsenharter Pechkleber, der Steinbeile bombenfest hält und Wasser abweist!",
+    "outro": "Entdecke Offline-Überlebensbaupläne für den Ernstfall über den Link im Profil."
+  },
+  "outcome": {
+    "svgFileName": "pr10-outcome.svg",
+    "title": "Spezifikationen der Kiefernharz-Wundsalbe und des Pechklebers",
+    "description": "Vollständige Spezifikationen der geklärten Wundsalbe in der Muschelschale, des obsidianharten Pechklebestifts am Hartholzast und des wasserdichten Beilbindungs-Schnitts."
+  },
+  "createdAt": "2026-10-16T11:40:00.000Z",
+  "contentHash": "fe0957bc7d74bf51"
+}

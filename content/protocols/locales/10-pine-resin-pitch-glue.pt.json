@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-10",
+  "category": "MEDICINE",
+  "title": "Purificação de resina de pinheiro em pomada antisséptica e cola impermeável",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFESA CONTRA INFECÇÕES E FIXAÇÃO IMPERMEÁVEL]",
+  "summary": "Na selva, um corte não tratado causado por lascas de pedra ou galhos pode infeccionar rapidamente, provocando septicemia e risco de morte. Além disso, machados de pedra e recipientes rachados necessitam de um aglutinante impermeável resistente para o uso rústico. Ao derreter suavemente a resina de pinheiro sobre o calor indireto das brasas e remover os resíduos de casca, obtém-se uma pomada antimicrobiana pura. Misturando a resina restante com pó fino de carvão na proporção de **1:1**, produz-se um bastão de cola de piche (Pitch Glue) duro como pedra.",
+  "timeRequired": "40 minutos (15m coleta + 15m fusão indireta + 10m mistura de carvão)",
+  "successRate": "95% (aquecimento indireto estrito e proporção de carvão 1:1)",
+  "difficulty": "Fácil (cuidado com fogo e queimaduras)",
+  "outputPerHour": "30ml de pomada pura + 2 bastões de cola impermeável por lote",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "100g de pedaços secos de resina bruta colhidos de troncos de pinheiro",
+      "desc": "Nódulos cristalinos cor de âmbar. Pedaços bem endurecidos contêm menos impurezas e derretem em uma pomada clarificada de qualidade superior."
+    },
+    {
+      "id": "mat-02",
+      "name": "Prato de pedra côncava ou concha marinha grande",
+      "desc": "Cadinho natural resistente ao calor que protege contra chamas diretas e absorve a radiação térmica das brasas."
+    },
+    {
+      "id": "mat-03",
+      "name": "Pente escumadeira de gravetos e concha limpa",
+      "desc": "Dentes de gravetos bem juntos para retirar rapidamente cascas flutuantes e uma concha limpa para armazenar a pomada."
+    },
+    {
+      "id": "mat-04",
+      "name": "50g de pó fino de carvão vegetal de carvalho",
+      "desc": "Elimina a fragilidade quebradiça da resina fria, servindo como matriz microscópica de reforço de carbono."
+    },
+    {
+      "id": "mat-05",
+      "name": "Leito de brasas incandescentes e graveto para mexer",
+      "desc": "Fornece calor infravermelho seguro para liquefazer a resina sem inflamar vapores voláteis de terpenos."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Colher nódulos endurecidos de resina de âmbar no tronco do pinheiro",
+      "description": "1. **Identificar nódulos cristalinos**: Procure em troncos de pinheiros depósitos de **resina endurecida em formato de gota**.\n2. **Raspar com lasca de pedra**: Use uma lasca de sílex para **raspar suavemente os nódulos superficiais** sem ferir a casca viva interna.\n3. **Reunir 100g de volume**: Junte aproximadamente **o volume de um punho (cerca de 100g)** de resina limpa sobre uma folha larga.\n4. **Descartar resíduos grossos**: Remova manualmente terra, agulhas secas ou lascas de casca antes de iniciar a fusão.",
+      "actionNote": "> Identificação e Coleta: Distinga o **Pinheiro** (casca avermelhada em placas de casco de tartaruga e agulhas em **pares de 2**, para resina) do **Carvalho** (casca escura com sulcos verticais profundos, folhas serrilhadas e bolotas, para carvão) usando o guia fotográfico abaixo.",
+      "svgFileName": "pr10-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RAW PINE RESIN HARVESTING",
+        "Resina de pinheiro âmbar no tronco",
+        "Raspagem tangencial com lasca de pedra",
+        "Volume de um punho (~100g) coletado",
+        "[CHAVE] Priorizar nódulos duros e transparentes"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Identificação Visual em Campo (Pinheiro vs. Carvalho) e Defesa Terpênica",
+        "text": "Pinheiros secretam resina rica em terpenos quando a casca se rompe para vedar feridas contra bactérias. O carvalho fornece madeira dura e densa que gera brasas intensas e o pó de carvão necessário para endurecer a resina.",
+        "fieldSpecs": [
+          {
+            "name": "Pinheiro",
+            "scientificName": "Pinus densiflora",
+            "categoryTag": "Conífera(Softwood) / Resina e Isca",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "RESIN GLAND: VERIFIED",
+            "traits": [
+              {
+                "label": "CASCA",
+                "value": "Topo avermelhado; base rachada em **placas grossas em formato de casco de tartaruga**."
+              },
+              {
+                "label": "FOLHA",
+                "value": "Agulhas verdes pontiagudas que **crescem sempre em pares de 2** (**8–14cm**)."
+              },
+              {
+                "label": "SINAL",
+                "value": "Gotas endurecidas de **resina âmbar dourada** em fendas do tronco e **pinhas** lenhosas."
+              }
+            ],
+            "fieldUse": "Pomada antisséptica, cola impermeável (Pitch), lenha resinosa"
+          },
+          {
+            "name": "Carvalho",
+            "scientificName": "Quercus",
+            "categoryTag": "Madeira Dura(Hardwood) / Carvão Denso",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "FISSURE DEPTH: VERIFIED",
+            "traits": [
+              {
+                "label": "CASCA",
+                "value": "Superfície marrom-escura a acinzentada com **sulcos verticais profundos e ásperos**."
+              },
+              {
+                "label": "FOLHA",
+                "value": "Folhas largas com **bordas onduladas ou dentes de serra bem definidos**."
+              },
+              {
+                "label": "SINAL",
+                "value": "Presença de **bolotas e chapéus escamosos (cúpulas)** nos galhos ou no chão (**100%** seguro)."
+              }
+            ],
+            "fieldUse": "Pó de carvão endurecedor, carvão sem fumaça de alto calor, cabos de machado"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Derreter a resina em pedra usando calor indireto (sem chamas abertas)",
+      "description": "1. **Colocar resina no prato de pedra**: Empilhe os **100g de resina bruta** no centro de uma pedra ardósia côncava ou concha grande.\n2. **Posicionar a 10cm das brasas**: Apoie o prato sobre pedras a cerca de **10cm ao lado das brasas incandescentes**, evitando fogo aberto.\n3. **Fundir sob radiação suave**: Deixe o calor brando e o infravermelho liquefazerem a resina lentamente durante **5 a 8 minutos**.\n4. **Verificar xarope dourado**: Confirme se os pedaços sólidos se dissolvem totalmente em um **líquido âmbar borbulhante e transparente**.",
+      "actionNote": "> Perigo de incêndio: Os vapores da resina contêm terpenos altamente inflamáveis. Nunca coloque o recipiente sobre chamas abertas de fogueira.",
+      "svgFileName": "pr10-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // GENTLE EMBER MELTING PROCESS",
+        "Resina líquida dourada em pedra côncava",
+        "Posicionada a 10cm ao lado das brasas",
+        "Barreira contra chamas e radiação suave",
+        "[CHAVE] 100% calor de brasas evita ignição"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHARMACOLOGY",
+        "title": "Ação bactericida do alfa-pineno e derivados de terpenos",
+        "text": "O alfa-pineno e monoterpenos rompem as membranas celulares bacterianas, inibindo enzimas vitais. O aquecimento suave abaixo do ponto de fervura mantém esses compostos antimicrobianos intactos sem degradação térmica."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Peneirar resíduos de casca com pente de gravetos e separar a pomada",
+      "description": "1. **Confeccionar pente de gravetos**: Amarre gravetos finos lado a lado formando um **pente escumadeira de dentes finos**.\n2. **Remover impurezas flutuantes**: Passe o pente na resina líquida para **capturar fragmentos de casca e fuligem**.\n3. **Separar 30ml de pomada pura**: Despeje **um terço do líquido dourado purificado (cerca de 30ml)** em uma concha limpa ou pedra lisa.\n4. **Esfriar em temperatura ambiente**: Deixe a concha descansar à sombra por **10 minutos** até engrossar em uma gelatina firme e antisséptica.",
+      "actionNote": "> Aplicação da pomada: Esfria como um gel firme. Aqueça uma porção com a ponta do dedo para aplicar sobre cortes, criando um curativo impermeável e bactericida.",
+      "svgFileName": "pr10-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DEBRIS REMOVAL & OINTMENT EXTRACTION",
+        "Pente de gravetos retirando cascas",
+        "Separação de 30ml de pomada antisséptica",
+        "Resfriamento na concha por 10 minutos",
+        "[CHAVE] Extrair pomada dourada antisséptica pura"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Misturar carvão 1:1 e temperar em bastão sólido de cola de piche",
+      "description": "1. **Adicionar carvão triturado**: Polvilhe aos poucos **50g de carvão de carvalho triturado** na resina quente restante no prato.\n2. **Mexer rápido até engrossar**: Misture vigorosamente com um graveto por **1 a 2 minutos** até formar uma pasta preta brilhante.\n3. **Enrolar na ponta do galho**: Gire a ponta de um galho grosso no piche quente, **moldando uma bola grossa e arredondada**.\n4. **Resfriar em água fria**: Mergulhe a ponta em água fria ou resfrie ao ar por **5 minutos** para endurecer em uma cola dura como obsidiana.",
+      "actionNote": "> Proporção da mistura: Resina pura quebra como vidro. Uma mistura volumétrica estrita de 1:1 com carvão evita quebras mantendo a máxima fixação.",
+      "svgFileName": "pr10-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
+        "Mistura 1:1 com carvão vegetal fino",
+        "Agitação rápida formando pasta viscosa",
+        "Aplicação no galho e têmpera de 5 min",
+        "[CHAVE] Bastão epóxi impermeável sem trincas"
+      ],
+      "deepDive": {
+        "badge": "FIELD MATERIALS",
+        "title": "Superando a fragilidade por meio de micropartículas de carbono",
+        "text": "O breu de pinheiro puro sofre fratura frágil sob impacto. Dispersar micropartículas porosas de carbono (carvão) cria barreiras que barram trincas, transformando resina frágil em um epóxi natural robusto e 100% impermeável (Pitch Glue)."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro fatal: Aquecer a resina diretamente sobre as chamas abertas da fogueira",
+    "description": "A resina de pinheiro é rica em hidrocarbonetos terpênicos voláteis. Aquecer o prato diretamente no fogo libera densos vapores inflamáveis que explodem em labaredas intensas, destruindo toda a resina e causando queimaduras severas nas mãos e no rosto.",
+    "consequence": "Consequência: Perda total da resina e risco severo de queimaduras de segundo grau"
+  },
+  "shortsScript": {
+    "hook": "Um ferimento sem tratamento na mata pode causar infecção fatal em poucas horas! Aprenda a transformar resina de pinheiro em pomada e cola de pedra!",
+    "body": "Raspe a resina âmbar seca dos pinheiros e coloque em um prato de pedra! Nunca aqueça no fogo direto: use o calor indireto das brasas para não explodir! Peneire cascas flutuantes com um pente de gravetos e despeje uma porção em uma concha para virar uma pomada 100% antibacteriana. Misture carvão fino 1:1 no restante para criar um bastão de cola duro como obsidiana que fixa machados e repele água!",
+    "outro": "Descubra plantas e manuais de sobrevivência primitiva offline no link do perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr10-outcome.svg",
+    "title": "Especificações da pomada antisséptica e cola impermeável de resina de pinheiro",
+    "description": "Especificações completas da pomada antimicrobiana em concha marinha, bastão de cola de piche em madeira dura e corte transversal da vedação impermeável no machado."
+  },
+  "createdAt": "2026-10-16T11:40:00.000Z",
+  "contentHash": "fe0957bc7d74bf51"
+}

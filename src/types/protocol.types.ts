@@ -7,10 +7,27 @@ export interface Material {
   isGathered?: boolean;
 }
 
+export interface FieldTrait {
+  label: string;
+  value: string;
+}
+
+export interface FieldIdentificationSpec {
+  name: string;
+  scientificName?: string;
+  categoryTag?: string;
+  imageFileName: string;
+  hudCode?: string;
+  hudStatus?: string;
+  traits: FieldTrait[];
+  fieldUse?: string;
+}
+
 export interface StepDeepDive {
   badge?: string;
   title: string;
   text: string;
+  fieldSpecs?: FieldIdentificationSpec[];
 }
 
 export interface ProtocolStep {

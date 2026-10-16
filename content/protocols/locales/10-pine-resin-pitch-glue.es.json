@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-10",
+  "category": "MEDICINE",
+  "title": "Purificación de resina de pino en ungüento antiséptico y pegamento impermeable",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFENSA CONTRA INFECCIONES Y FIJACIÓN IMPERMEABLE]",
+  "summary": "En la naturaleza, un corte sin tratar con una piedra afilada o rama puede infectarse rápidamente, provocando septicemia y poniendo en riesgo la vida. Asimismo, las cabezas de hachas de piedra y recipientes agrietados requieren un aglutinante impermeable resistente para el uso rudo. Al derretir suavemente la resina de pino con el calor indirecto de las brasas y retirar los restos de corteza, se obtiene un ungüento antimicrobiano puro. Mezclando la resina restante con polvo fino de carbón en proporción **1:1**, se produce una barra de pegamento de brea (Pitch Glue) tan dura como la piedra.",
+  "timeRequired": "40 minutos (15m recolección + 15m fusión indirecta + 10m mezcla de carbón)",
+  "successRate": "95% (fusión indirecta estricta y proporción de carbón 1:1)",
+  "difficulty": "Fácil (precaución con fuego y quemaduras)",
+  "outputPerHour": "30ml de ungüento antiséptico + 2 barras de pegamento impermeable por lote",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "100g de trozos secos de resina de pino recolectados de troncos",
+      "desc": "Nódulos cristalinos de color ámbar. Los trozos bien endurecidos contienen menos impurezas y se derriten en un ungüento clarificado superior."
+    },
+    {
+      "id": "mat-02",
+      "name": "Plato de piedra cóncava o concha marina grande",
+      "desc": "Crisol natural resistente al calor que aísla de las llamas directas y absorbe la radiación térmica de las brasas."
+    },
+    {
+      "id": "mat-03",
+      "name": "Peine espumadera de ramitas y concha marina limpia",
+      "desc": "Dientes de ramitas muy juntos para extraer rápidamente la corteza flotante y una concha limpia para almacenar el ungüento."
+    },
+    {
+      "id": "mat-04",
+      "name": "50g de polvo fino de carbón de roble",
+      "desc": "Elimina la fragilidad quebradiza de la resina fría, actuando como una matriz microscópica de refuerzo de carbono."
+    },
+    {
+      "id": "mat-05",
+      "name": "Lecho de brasas de madera dura y palo para remover",
+      "desc": "Aporta calor radiante infrarrojo seguro para licuar la resina sin inflamar los vapores volátiles de terpenos."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Recolectar nódulos endurecidos de resina de pino en el tronco",
+      "description": "1. **Identificar nódulos cristalinos**: Busque en troncos de pino maduros depósitos de **resina endurecida en forma de gota**.\n2. **Raspar con lasca de piedra**: Use una lasca de pedernal para **raspar suavemente los nódulos superficiales** sin dañar la corteza interior viva.\n3. **Reunir 100g de volumen**: Junte aproximadamente **el volumen de un puño (unos 100g)** de resina limpia sobre una hoja ancha.\n4. **Descartar residuos gruesos**: Retire manualmente hojas secas, tierra o astillas sueltas antes de fundir.",
+      "actionNote": "> Identificación y recolección: Distinga el **Pino** (corteza rojiza tipo caparazón de tortuga y agujas en **pares de 2**, para resina) del **Roble/Encino** (corteza oscura con surcos verticales profundos, hojas dentadas y bellotas, para carbón) con la guía fotográfica inferior.",
+      "svgFileName": "pr10-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RAW PINE RESIN HARVESTING",
+        "Resina de pino ámbar en el tronco",
+        "Raspado tangencial con lasca de piedra",
+        "Volumen de un puño (~100g) recolectado",
+        "[CLAVE] Priorizar nódulos duros y transparentes"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Identificación Visual de Especies (Pino vs. Roble) y Defensa de Terpenos",
+        "text": "Los pinos secretan resina rica en terpenos al dañarse su corteza para sellar heridas y frenar bacterias. El roble es una madera dura y densa que produce brasas duraderas y el polvo de carbón necesario para endurecer la resina.",
+        "fieldSpecs": [
+          {
+            "name": "Pino Rojo",
+            "scientificName": "Pinus densiflora",
+            "categoryTag": "Conífera(Softwood) / Resina y Yesca",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "RESIN GLAND: VERIFIED",
+            "traits": [
+              {
+                "label": "CORTEZA",
+                "value": "Parte superior rojiza; la base se agrieta en **placas gruesas con forma de caparazón de tortuga**."
+              },
+              {
+                "label": "HOJA",
+                "value": "Agujas verdes punzantes que **crecen siempre en pares de 2** (**8–14cm** de largo)."
+              },
+              {
+                "label": "SEÑAL",
+                "value": "Gotas endurecidas de **resina color ámbar dorado** en heridas del tronco y **piñas** leñosas."
+              }
+            ],
+            "fieldUse": "Ungüento antiséptico, pegamento impermeable (Pitch), tea de pino"
+          },
+          {
+            "name": "Roble / Encino",
+            "scientificName": "Quercus",
+            "categoryTag": "Madera Dura(Hardwood) / Carbón Denso",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "FISSURE DEPTH: VERIFIED",
+            "traits": [
+              {
+                "label": "CORTEZA",
+                "value": "Superficie marrón oscuro a grisáceo con **surcos verticales profundos y rugosos**."
+              },
+              {
+                "label": "HOJA",
+                "value": "Hojas anchas con **bordes ondulados o dientes de sierra bien marcados**."
+              },
+              {
+                "label": "SEÑAL",
+                "value": "Presencia de **bellotas y cúpulas escamosas** en las ramas o el suelo (**100%** seguro)."
+              }
+            ],
+            "fieldUse": "Polvo de carbón endurecedor, brasas sin humo de alto calor, mangos de hacha"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Licuar la resina en piedra usando calor indirecto (sin llamas abiertas)",
+      "description": "1. **Colocar resina en plato de piedra**: Apile los **100g de resina cruda** en el centro de un plato de pizarra cóncavo o concha grande.\n2. **Ubicar a 10cm de las brasas**: Apoye el plato sobre piedras soporte a unos **10cm junto a las brasas al rojo vivo**, evitando llamas abiertas.\n3. **Fundir con radiación suave**: Deje que el calor suave y la radiación infrarroja licúen la resina lentamente durante **5 a 8 minutos**.\n4. **Verificar fase de jarabe dorado**: Compruebe que los nódulos sólidos se disuelvan por completo en un **líquido ámbar burbujeante y transparente**.",
+      "actionNote": "> Peligro de incendio: Los vapores de resina contienen terpenos altamente inflamables. Nunca coloque el plato directamente sobre llamas abiertas.",
+      "svgFileName": "pr10-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // GENTLE EMBER MELTING PROCESS",
+        "Resina líquida dorada en plato de piedra",
+        "Ubicada a 10cm junto a las brasas",
+        "Barrera contra llamas y radiación suave",
+        "[CLAVE] 100% calor de brasas para evitar ignición"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHARMACOLOGY",
+        "title": "Acción bactericida del alfa-pineno y derivados de terpenos",
+        "text": "El alfa-pineno y los monoterpenos penetran las membranas lipídicas bacterianas, inhibiendo enzimas metabólicas esenciales. El calentamiento suave por debajo del punto de ebullición preserva estos compuestos activos sin degradación térmica."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Retirar impurezas flotantes con peine de ramitas y aislar el ungüento",
+      "description": "1. **Elaborar peine de ramitas**: Una varias ramitas delgadas en abanico para formar un **peine espumadera de dientes finos**.\n2. **Retirar restos de corteza**: Pase rápidamente el peine por la resina líquida para **atrapar fragmentos de corteza y hollín**.\n3. **Separar 30ml de ungüento puro**: Vierta **un tercio del líquido dorado clarificado (unos 30ml)** en una concha limpia separada o piedra plana.\n4. **Dejar enfriar al ambiente**: Deje reposar la concha a la sombra durante **10 minutos** hasta que espese en una jalea antiséptica firme y gomosa.",
+      "actionNote": "> Aplicación del ungüento: Se endurece como un gel. Entibie una pequeña porción con la yema del dedo para aplicarla sobre cortes, creando una barrera impermeable y antibacteriana.",
+      "svgFileName": "pr10-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DEBRIS REMOVAL & OINTMENT EXTRACTION",
+        "Peine de ramitas extrayendo corteza",
+        "Aislamiento de 30ml de ungüento puro",
+        "Enfriamiento en concha durante 10 minutos",
+        "[CLAVE] Extraer ungüento dorado antiséptico puro"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Mezclar carbón 1:1 y enfriar en barra sólida de pegamento de brea",
+      "description": "1. **Incorporar carbón fino**: Espolvoree lentamente **50g de carbón de roble pulverizado** en la resina caliente restante en el plato.\n2. **Agitación rápida y viscosa**: Remueva enérgicamente con un palo de madera durante **1 a 2 minutos** hasta formar un alquitrán negro brillante.\n3. **Enrollar en punta de palo**: Gire el extremo de una rama gruesa en la brea caliente, **formando una bola redonda y gruesa tipo caramelo**.\n4. **Templar en agua fría**: Sumerja la bola en agua fría de río o enfríe al aire durante **5 minutos** para obtener una barra adhesiva dura como la obsidiana.",
+      "actionNote": "> Proporción de mezcla: La resina pura se rompe como vidrio. Una mezcla volumétrica estricta 1:1 con carbón previene roturas frágiles manteniendo máxima fuerza de adhesión.",
+      "svgFileName": "pr10-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
+        "Mezcla 1:1 con carbón de roble fino",
+        "Agitación rápida formando pasta viscosa",
+        "Recubrimiento en palo y templado de 5 min",
+        "[CLAVE] Barra epóxica impermeable sin grietas"
+      ],
+      "deepDive": {
+        "badge": "FIELD MATERIALS",
+        "title": "Superación de la fragilidad mediante micropartículas de carbono",
+        "text": "La colofonia de pino pura sufre fracturas frágiles catastróficas por impacto. Dispersar micropartículas porosas de carbono (carbón) crea barreras que desvían las grietas, transformando la resina frágil en un epoxi natural resistente y 100% impermeable (Pitch Glue)."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error fatal: Calentar la resina directamente sobre llamas abiertas de fogata",
+    "description": "La resina de pino está saturada de hidrocarburos terpénicos volátiles. Exponer el plato directamente al fuego libera densos vapores inflamables que detonan en una llamarada instantánea, quemando toda la resina y causando graves quemaduras en rostro y manos.",
+    "consequence": "Consecuencia: Pérdida total de la resina y riesgo severo de quemaduras de segundo grado"
+  },
+  "shortsScript": {
+    "hook": "¡Una herida sin tratar en la selva puede infectarse en pocas horas! ¡Aprende a transformar resina de pino en ungüento antibacteriano y pegamento de piedra!",
+    "body": "¡Raspe la resina ámbar seca de los pinos y colóquela en un plato de piedra! No la ponga al fuego directo: ¡use el calor indirecto de las brasas para evitar explosiones! Retire la corteza flotante con un peine de ramitas y vierta una parte en una concha limpia para obtener un ungüento 100% antiséptico. ¡Mezcle carbón fino 1:1 con el resto para crear una barra de pegamento de brea dura como obsidiana que asegura hachas y repele el agua!",
+    "outro": "Descubra planos de supervivencia primitiva sin conexión en el enlace del perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr10-outcome.svg",
+    "title": "Especificaciones del ungüento antiséptico y pegamento impermeable de resina de pino",
+    "description": "Especificaciones del ungüento antimicrobiano en concha marina, barra de pegamento de brea sobre madera dura y sección transversal del sellado impermeable en unión de hacha."
+  },
+  "createdAt": "2026-10-16T11:40:00.000Z",
+  "contentHash": "fe0957bc7d74bf51"
+}

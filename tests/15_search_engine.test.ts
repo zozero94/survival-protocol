@@ -18,19 +18,27 @@ describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js �
   // =========================================================================
   // 1. 한국어 초성 분해 및 텍스트 유틸리티 검증
   // =========================================================================
-  test('extractChosung은 한글 음절을 정확한 자음 초성으로 1:1 분해하고 영문/숫자/공백을 보존해야 한다', () => {
+  test('extractChosung은 한글 음절(NFC/NFD)을 정확한 자음 초성으로 1:1 분해하고 영문/숫자/공백을 보존해야 한다', () => {
     assert.equal(extractChosung('페트병 정수기 3단계'), 'ㅍㅌㅂ ㅈㅅㄱ 3ㄷㄱ');
     assert.equal(extractChosung('바위 덫 Figure-4'), 'ㅂㅇ ㄷ Figure-4');
     assert.equal(extractChosung('참나무 숯가루'), 'ㅊㄴㅁ ㅅㄱㄹ');
     assert.equal(extractChosung(''), '');
     assert.equal(extractChosung('ABC 123!@#'), 'ABC 123!@#');
+
+    // NFD (자소 분리) 호환성 검증
+    const nfdText = '식수 정수'.normalize('NFD');
+    assert.equal(extractChosung(nfdText), 'ㅅㅅ ㅈㅅ');
   });
 
-  test('isPureChosung은 오직 한글 자음과 공백으로만 구성된 검색어를 정확히 감지해야 한다', () => {
+  test('isPureChosung은 오직 한글 자음과 공백으로만 구성된 검색어를 정확히 감지해야 한다 (NFC/NFD 자모 호환)', () => {
     assert.equal(isPureChosung('ㅅㅅ'), true);
     assert.equal(isPureChosung('ㅂㅇ'), true);
     assert.equal(isPureChosung('ㅊㄴㅁ'), true);
     assert.equal(isPureChosung(' ㅍㅌ '), true);
+
+    // NFD 첫가소(U+1100-U+1112) 초성 입력 호환성 검증
+    const nfdChosung = 'ㅅㅅ'.normalize('NFD');
+    assert.equal(isPureChosung(nfdChosung), true);
 
     // 일반 완성형 한글, 영문, 숫자, 혼합 텍스트는 false
     assert.equal(isPureChosung('식수'), false);
@@ -174,6 +182,7 @@ describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js �
     const requiredKeys = [
       'searchBtn',
       'searchPlaceholder',
+      'searchPrompt',
       'searchNoResults',
       'searchShortcutHint',
       'searchBadge',
@@ -193,7 +202,7 @@ describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js �
   // =========================================================================
   // 8. 오프라인 자산 및 PWA 캐시 정합성 검증
   // =========================================================================
-  test('빌드 산출물(public/)에 검색 모달, Fuse 자산 및 sw.js 사전 캐시가 완벽히 탑재되어야 한다', () => {
+  test('빌드 산출물(public/)에 검색 모달, Fuse 자산, search-index.js 및 sw.js 사전 캐시가 완벽히 탑재되어야 한다', () => {
     const publicDir = path.resolve(process.cwd(), 'public');
 
     // 1) fuse.basic.min.js 번들 자산 검증
@@ -202,18 +211,27 @@ describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js �
     const fuseStat = fs.statSync(fuseAssetPath);
     assert.ok(fuseStat.size > 15000, 'Fuse 번들 크기는 15KB 이상이어야 함');
 
-    // 2) index.html 및 protocol-01.html 내 검색 모달 마크업 검증
+    // 2) search-index.js 번들 자산 검증
+    const searchIndexPath = path.join(publicDir, 'assets/search-index.js');
+    assert.ok(fs.existsSync(searchIndexPath), 'public/assets/search-index.js가 존재해야 함');
+    const searchIndexContent = fs.readFileSync(searchIndexPath, 'utf-8');
+    assert.ok(searchIndexContent.includes('window.__SEARCH_DOCS__'), 'search-index.js에 window.__SEARCH_DOCS__가 정의되어야 함');
+
+    // 3) index.html 및 protocol-01.html 내 검색 모달 마크업 및 스크립트 검증
     const indexHtml = fs.readFileSync(path.join(publicDir, 'index.html'), 'utf-8');
     assert.ok(indexHtml.includes('id="search-modal"'), 'index.html에 search-modal이 포함되어야 함');
     assert.ok(indexHtml.includes('data-action="open-search"'), 'index.html에 open-search 트리거가 포함되어야 함');
     assert.ok(indexHtml.includes('/assets/fuse.basic.min.js'), 'index.html에 fuse 스크립트 태그가 포함되어야 함');
+    assert.ok(indexHtml.includes('/assets/search-index.js'), 'index.html에 search-index.js 스크립트 태그가 포함되어야 함');
 
     const protoHtml = fs.readFileSync(path.join(publicDir, 'protocol-01.html'), 'utf-8');
     assert.ok(protoHtml.includes('id="search-modal"'), '상세 페이지에 search-modal이 포함되어야 함');
     assert.ok(protoHtml.includes('data-action="open-search"'), '상세 페이지에 open-search 트리거가 포함되어야 함');
+    assert.ok(protoHtml.includes('/assets/search-index.js'), '상세 페이지에 search-index.js 스크립트 태그가 포함되어야 함');
 
-    // 3) sw.js 사전 캐시 목록에 fuse.basic.min.js 등록 검증
+    // 4) sw.js 사전 캐시 목록에 fuse.basic.min.js 및 search-index.js 등록 검증
     const swJs = fs.readFileSync(path.join(publicDir, 'sw.js'), 'utf-8');
     assert.ok(swJs.includes('/assets/fuse.basic.min.js'), 'sw.js PRECACHE_URLS에 fuse.basic.min.js가 등록되어야 함');
+    assert.ok(swJs.includes('/assets/search-index.js'), 'sw.js PRECACHE_URLS에 search-index.js가 등록되어야 함');
   });
 });

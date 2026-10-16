@@ -175,7 +175,13 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
   const fuseAssetPath = path.join(fuseAssetDir, 'fuse.basic.min.js');
   fs.writeFileSync(fuseAssetPath, fuseBrowserScript, 'utf-8');
   precacheEntries.push({ url: '/assets/fuse.basic.min.js', content: fuseBrowserScript });
-  log(`🔍 [Search Service] 인메모리 검색 엔진 배포 완료: public/assets/fuse.basic.min.js (7개국어 슬림 인덱스 탑재)`);
+
+  // 3-3-1. 7개국어 검색 슬림 인덱스 정적 JS 번들 배포 및 PWA 사전 캐시 등록 (HTML 페이로드 ~276KB 절감)
+  const searchIndexJs = `/* Primitive Survival 100% Offline Search Index (7 Locales) */\nwindow.__SEARCH_DOCS__ = ${JSON.stringify(searchDocsByLocale)};\n`;
+  const searchIndexPath = path.join(fuseAssetDir, 'search-index.js');
+  fs.writeFileSync(searchIndexPath, searchIndexJs, 'utf-8');
+  precacheEntries.push({ url: '/assets/search-index.js', content: searchIndexJs });
+  log(`🔍 [Search Service] 인메모리 검색 엔진 배포 완료: public/assets/fuse.basic.min.js & search-index.js (7개국어 슬림 인덱스 탑재)`);
 
   for (let i = 0; i < allMasterProtocols.length; i++) {
     const proto = allMasterProtocols[i];

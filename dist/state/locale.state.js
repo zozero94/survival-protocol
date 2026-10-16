@@ -57,6 +57,64 @@ export function getLocaleRuntimeScript()         {
       }).join('\n');
     }
 
+    function renderFieldSpecsClient(fieldSpecs) {
+      if (!Array.isArray(fieldSpecs) || fieldSpecs.length === 0) return '';
+      var gridCols = fieldSpecs.length > 1 ? 'md:grid-cols-2' : '';
+      var cards = fieldSpecs.map(function(spec, sIdx) {
+        var dotColor = sIdx % 2 === 0 ? 'bg-[#f59e0b]' : 'bg-[#22c55e]';
+        var traitsHtml = (spec.traits || []).map(function(t) {
+          return '<div class="border border-[#262626] bg-[#0f0f0f] p-2 flex items-start gap-2">' +
+            '<div data-proto="fieldSpec" class="min-w-[68px] text-[10px] font-bold font-mono text-[#fde68a] bg-[#1a1a1a] px-1.5 py-0.5 border border-[#333] text-center shrink-0">' + (t.label || '') + '</div>' +
+            '<div data-proto="fieldSpec" class="text-[11px] sm:text-xs text-[#dedede] leading-snug font-sans">' + renderHighlightTermsClient(t.value || '') + '</div>' +
+            '</div>';
+        }).join('\n');
+
+        var useBlock = spec.fieldUse
+          ? '<div class="mx-2.5 mb-2.5 p-2 bg-[#121212] border border-[#262626] text-[11px] text-[#aaa] font-mono flex items-center justify-between gap-2 flex-wrap">' +
+            '<span class="text-[#fde68a] font-bold shrink-0">[FIELD USE]</span>' +
+            '<span data-proto="fieldSpec" class="text-white font-semibold font-sans text-[11px]">' + spec.fieldUse + '</span>' +
+            '</div>'
+          : '';
+
+        return '<article class="bg-[#0b0b0b] border border-[#333] flex flex-col justify-between">' +
+          '<div>' +
+          '<div class="bg-[#141414] px-3 py-2 border-b border-[#2e2e2e] flex items-center justify-between flex-wrap gap-1">' +
+          '<div class="flex items-center gap-2">' +
+          '<span class="w-2 h-2 ' + dotColor + ' inline-block"></span>' +
+          '<span data-proto="fieldSpec" class="text-white font-bold text-xs sm:text-sm tracking-wide font-sans">' + (spec.name || '') + '</span>' +
+          (spec.scientificName ? '<span class="text-[11px] text-[#fde68a] font-mono font-normal">(' + spec.scientificName + ')</span>' : '') +
+          '</div>' +
+          (spec.categoryTag ? '<span data-proto="fieldSpec" class="text-[10px] bg-[#222] text-[#bbb] px-1.5 py-0.5 border border-[#444] font-mono">' + spec.categoryTag + '</span>' : '') +
+          '</div>' +
+          '<div class="p-2.5 bg-[#080808] border-b border-[#222]">' +
+          '<div class="relative border border-[#383838] aspect-[16/9] w-full bg-black overflow-hidden">' +
+          '<img src="/images/' + spec.imageFileName + '" alt="' + (spec.name || '') + '" class="w-full h-full object-cover contrast-110 select-none" loading="lazy" />' +
+          '<div class="absolute top-1.5 left-1.5 z-10 bg-black/85 text-[9px] font-mono px-1.5 py-0.5 text-[#fde68a] border border-[#444]">' + (spec.hudCode || 'FIG. BIO-ID // MACRO OPTIC') + '</div>' +
+          '<div class="absolute bottom-1.5 right-1.5 z-10 bg-black/85 text-[9px] font-mono px-1.5 py-0.5 text-[#22c55e] border border-[#444]">' + (spec.hudStatus || 'VISUAL ID: VERIFIED') + '</div>' +
+          '<div class="absolute top-1.5 right-2 z-10 text-[10px] text-[#888] font-mono select-none">+</div>' +
+          '<div class="absolute bottom-1.5 left-2 z-10 text-[10px] text-[#888] font-mono select-none">+</div>' +
+          '</div>' +
+          '<div class="flex justify-between items-center text-[9px] text-[#666] mt-1 px-0.5 font-mono">' +
+          '<span>OPTIC: 1.0X TACTICAL MACRO</span>' +
+          '<span>IDENTIFICATION: ≤ 30 SEC</span>' +
+          '</div>' +
+          '</div>' +
+          '<div class="p-2.5 space-y-1.5">' +
+          '<div class="text-[10px] text-[#888] font-bold uppercase tracking-wider mb-1 font-mono">// FIELD IDENTIFICATION SPEC GRID</div>' +
+          traitsHtml +
+          '</div>' +
+          '</div>' +
+          useBlock +
+          '</article>';
+      }).join('\n');
+
+      return '<div class="flex items-center justify-between mb-2.5 font-mono text-[10px] text-[#888]">' +
+        '<span class="bg-[#1f1f1f] text-[#fde68a] border border-[#fde68a]/40 px-2 py-0.5 font-bold tracking-wider uppercase">[FIELD RECON // VISUAL SPECIES ID]</span>' +
+        '<span>MIL-SPEC-BIO-409</span>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 ' + gridCols + ' gap-3.5">' + cards + '</div>';
+    }
+
     /**
      * 100% 선언적 범용 데이터 바인딩 0.01초 핫스왑 엔진
      */
@@ -71,10 +129,14 @@ export function getLocaleRuntimeScript()         {
 
         document.documentElement.lang = targetLocale;
 
-        // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n)
+        // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n & data-i18n-placeholder)
         document.querySelectorAll('[data-i18n]').forEach(function(el) {
           var key = el.getAttribute('data-i18n');
           if (ui[key] !== undefined) el.innerText = ui[key];
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+          var key = el.getAttribute('data-i18n-placeholder');
+          if (ui[key] !== undefined) el.placeholder = ui[key];
         });
 
         // 2. [선언적 엔진] 프로토콜 단일 필드 자동 매핑 (data-proto) 및 브라우저 탭 <title> 갱신
@@ -142,6 +204,8 @@ export function getLocaleRuntimeScript()         {
               el.innerText = stepItem.deepDive.badge || 'FIELD SCIENCE';
             } else if (prop === 'deepDiveText' && stepItem.deepDive) {
               el.innerHTML = renderHighlightTermsClient(stepItem.deepDive.text || '');
+            } else if (prop === 'fieldSpecs' && stepItem.deepDive && Array.isArray(stepItem.deepDive.fieldSpecs)) {
+              el.innerHTML = renderFieldSpecsClient(stepItem.deepDive.fieldSpecs);
             } else if (stepItem[prop] !== undefined) {
               el.innerText = stepItem[prop];
             }

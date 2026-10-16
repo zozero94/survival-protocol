@@ -4,6 +4,7 @@ import path from 'node:path';
                                                            
                                                           
 import { extractChosung, isPureChosung, cleanSearchText } from '../utils/hangul.util.js';
+import { UI_STRINGS } from '../i18n/ui-strings.js';
 
 /**
  * [Data Layer]
@@ -92,14 +93,26 @@ export class SearchService {
 
       const deepDivesList = (p.steps || [])
         .filter((s) => s.deepDive)
-        .map((s) => `${cleanSearchText(s.deepDive?.badge || '')} ${cleanSearchText(s.deepDive?.title || '')} ${cleanSearchText(s.deepDive?.text || '')}`)
+        .map((s) => {
+          const specsText = (s.deepDive?.fieldSpecs || [])
+            .map((fs) => {
+              const traitsStr = (fs.traits || []).map((t) => `${cleanSearchText(t.label)} ${cleanSearchText(t.value)}`).join(' ');
+              return `${cleanSearchText(fs.name)} ${cleanSearchText(fs.scientificName || '')} ${traitsStr} ${cleanSearchText(fs.fieldUse || '')}`;
+            })
+            .join(' ');
+          return `${cleanSearchText(s.deepDive?.badge || '')} ${cleanSearchText(s.deepDive?.title || '')} ${cleanSearchText(s.deepDive?.text || '')} ${specsText}`.trim();
+        })
         .join(' ');
+
+      const ui = UI_STRINGS[locale] || UI_STRINGS.ko;
+      const catKey = (`cat_${p.category}`)                   ;
+      const categoryName = (ui[catKey]          ) || `[${p.category}]`;
 
       const doc                 = {
         id: p.protocolId,
         url,
         category: p.category,
-        categoryName: (p       ).categoryName || `[${p.category}]`,
+        categoryName,
         title: cleanTitle,
         summary: cleanSummary,
         materials: matList,
@@ -206,7 +219,8 @@ export class SearchService {
     text        ,
     rawIndices                             
   )         {
-    if (!text || !rawIndices || rawIndices.length === 0) return text;
+    if (!text) return '';
+    if (!rawIndices || rawIndices.length === 0) return this.escapeHtml(text);
 
     // 인덱스 정렬 및 겹치는 구간 병합
     const sorted = [...rawIndices].sort((a, b) => a[0] - b[0]);
@@ -304,15 +318,23 @@ ${rawCjs}
 
   /**
    * Fuse matches가 없을 때 검색어 직접 부분 문자열 매칭 폴백
+   * HTML 엔티티 파괴를 방지하기 위해 원본 텍스트 매칭 인덱스를 기반으로 슬라이스 후 이스케이프한다.
    */
           static highlightFallback(text        , query        )         {
-    if (!text || !query) return this.escapeHtml(text);
-    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`(${escapedQuery})`, 'gi');
-    return this.escapeHtml(text).replace(
-      regex,
-      '<mark class="bg-[#fde68a]/20 text-[#fde68a] font-bold px-0.5 border-b border-[#fde68a]/60">$1</mark>'
-    );
+    if (!text) return '';
+    if (!query) return this.escapeHtml(text);
+    const lowerText = text.toLowerCase();
+    const lowerQuery = query.toLowerCase();
+    const indices                     = [];
+    let pos = 0;
+    while ((pos = lowerText.indexOf(lowerQuery, pos)) !== -1) {
+      indices.push([pos, pos + query.length - 1]);
+      pos += query.length;
+    }
+    if (indices.length > 0) {
+      return this.highlightText(text, indices);
+    }
+    return this.escapeHtml(text);
   }
 
           static escapeHtml(str        )         {
@@ -320,6 +342,7 @@ ${rawCjs}
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
 }

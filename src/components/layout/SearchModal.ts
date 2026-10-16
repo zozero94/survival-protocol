@@ -12,6 +12,17 @@ export function renderSearchModal(locale: SupportedLocale = 'ko'): string {
   return `
 <!-- SEARCH MODAL (Stitch Dark Tactical Instant Search) -->
 <div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center pt-10 sm:pt-20 px-3 sm:px-4 bg-black/85 backdrop-blur-md hidden transition-all" role="dialog" aria-modal="true" aria-label="Search Protocols">
+  <style>
+    #search-modal-input::-webkit-search-cancel-button,
+    #search-modal-input::-webkit-search-decoration {
+      -webkit-appearance: none;
+      appearance: none;
+      display: none;
+    }
+    #search-modal-results {
+      overscroll-behavior: contain;
+    }
+  </style>
   <div class="bg-[#0e0e0e] border border-neutral-700/80 w-full max-w-2xl shadow-[0_0_50px_rgba(0,0,0,0.9)] flex flex-col max-h-[82vh] overflow-hidden text-neutral-200 font-mono">
     
     <!-- 모달 상단 검색창 바 -->
@@ -25,15 +36,23 @@ export function renderSearchModal(locale: SupportedLocale = 'ko'): string {
         spellcheck="false"
         data-i18n-placeholder="searchPlaceholder"
         placeholder="${ui.searchPlaceholder}"
-        class="flex-1 bg-transparent border-none text-white text-xs sm:text-sm placeholder-neutral-500 focus:outline-none tracking-wide"
+        class="flex-1 bg-transparent border-none text-white text-base sm:text-sm placeholder-neutral-500 focus:outline-none tracking-wide"
       />
       <div class="flex items-center gap-1.5 shrink-0">
         <button
           type="button"
           id="search-clear-btn"
-          class="hidden px-1.5 py-0.5 text-xs text-neutral-500 hover:text-white transition-colors"
+          class="hidden px-1.5 py-0.5 text-xs text-neutral-500 hover:text-white transition-colors cursor-pointer"
           title="Clear">
           ✕
+        </button>
+        <button
+          type="button"
+          data-action="close-search"
+          class="px-2 py-0.5 text-xs text-neutral-400 hover:text-white border border-neutral-800 bg-neutral-900 transition-colors sm:hidden cursor-pointer"
+          aria-label="Close"
+          title="Close">
+          [ESC]
         </button>
         <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] text-neutral-400 bg-neutral-900 border border-neutral-800 uppercase font-mono">
           ESC
@@ -59,8 +78,8 @@ export function renderSearchModal(locale: SupportedLocale = 'ko'): string {
       <!-- 초기 안내 상태 -->
       <div id="search-modal-prompt" class="p-8 text-center text-neutral-500 text-xs">
         <p class="font-bold text-neutral-400 mb-1">// PRIMITIVE SURVIVAL TACTICAL SEARCH</p>
-        <p class="text-[11px] text-neutral-500 leading-relaxed">
-          필요한 생존 기술, 도구, 또는 자음 초성(<span class="text-amber-400 font-mono">ㅅㅅ</span>, <span class="text-amber-400 font-mono">ㅂㅇ</span>, <span class="text-amber-400 font-mono">ㅊㄴㅁ</span>)을 입력하세요.
+        <p data-i18n="searchPrompt" class="text-[11px] text-neutral-500 leading-relaxed">
+          ${ui.searchPrompt}
         </p>
       </div>
 

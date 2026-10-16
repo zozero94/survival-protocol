@@ -18,7 +18,7 @@
 
 ---
 
-## 🧱 6대 생존 공학 분과 및 발행 현황 (총 8편 배포 완료)
+## 🧱 6대 생존 공학 분과 및 발행 현황 (총 9편 배포 완료)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면/이미지 | 세부 스텝 비주얼 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
@@ -30,6 +30,7 @@
 | **SHELTER** | [진흙과 돌을 쌓아 비바람을 막고 열기를 가두는 원시 화덕 만드는 법](public/protocol-06.html) | `pr06-outcome.svg` | 5단계 (FIG 01~05) | 7개국어 완비 | ✅ 라이브 |
 | **FOOD** | [나뭇가지 3개와 바위로 짐승 잡는 법 (숫자 4 모양 돌 덫)](public/protocol-08.html) | `pr08-outcome.jpg` / `.svg` | 4단계 (실물 3D 이미지 4종) | 7개국어 완비 | ✅ 라이브 |
 | **FIRE** | [흙구덩이 속에서 공기를 막아 나무를 단단한 숯으로 굽는 법](public/protocol-09.html) | `pr09-outcome.svg` | 4단계 (FIG 01~04) | 7개국어 완비 | ✅ 라이브 |
+| **MEDICINE** | [소나무 송진을 녹여 굳히는 상처 소독 연고 및 만능 방수 접착제](public/protocol-10.html) | `pr10-outcome.svg` | 4단계 (FIG 01~04 + 식생 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -39,10 +40,10 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-09)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-10)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # 3D 포토리얼리스틱 실물 이미지 에셋 (pr08-*.jpg)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 64종: 스텝 35종 + 결과 9종 + 다국어)
+│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생 식별 에셋 (pr08-*.jpg, id-*.jpg)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 69종: 스텝 39종 + 결과 10종 + 다국어)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -69,6 +70,7 @@ primitive-survival/
 │   │   └── topic-curator.service.ts # 지식 트리 연계 차기 주제 큐레이터
 │   ├── utils/
 │   │   ├── hangul.util.ts # 유니코드 초성 분해(0.0001ms) 및 한글 자음 검색 판별 유틸
+│   │   ├── svg-renderer.ts # 고해상도 SVG-to-PNG 렌더링 유틸
 │   │   └── protocol-timestamp.ts # Git 커밋 및 콘텐츠 해시 기반 타임스탬프 동기화 유틸
 │   ├── gdrive-sync.ts     # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
@@ -77,8 +79,8 @@ primitive-survival/
 ├── scripts/               # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
-├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, fuse.basic.min.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 14대 테스트 스위트 (102/102 PASS)
+├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (103/103 PASS)
 ```
 
 ---
@@ -107,7 +109,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(91개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진)*
+*(103개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash

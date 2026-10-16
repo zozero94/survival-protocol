@@ -1,4 +1,4 @@
-import type { ProtocolStep } from '../../types/protocol.types.ts';
+import type { ProtocolStep, FieldIdentificationSpec } from '../../types/protocol.types.ts';
 
 /**
  * 인라인 볼드(**...**) 및 중요 수치를 테크니컬 하이라이트 HTML로 변환합니다.
@@ -75,6 +75,90 @@ export function formatStepDescription(description: string, stepIdx: number): str
 }
 
 /**
+ * Stitch 디자인 규격(MIL-SPEC-BIO) 기반 야전 수종/자원 육안 식별 스펙 모듈 렌더링
+ */
+export function renderFieldSpecsHtml(fieldSpecs: FieldIdentificationSpec[]): string {
+  const gridCols = fieldSpecs.length > 1 ? 'md:grid-cols-2' : '';
+  const cards = fieldSpecs
+    .map((spec, sIdx) => {
+      const dotColor = sIdx % 2 === 0 ? 'bg-[#f59e0b]' : 'bg-[#22c55e]';
+      const traitsHtml = (spec.traits || [])
+        .map(
+          (t) => `
+            <div class="border border-[#262626] bg-[#0f0f0f] p-2 flex items-start gap-2">
+              <div data-proto="fieldSpec" class="min-w-[68px] text-[10px] font-bold font-mono text-[#fde68a] bg-[#1a1a1a] px-1.5 py-0.5 border border-[#333] text-center shrink-0">
+                ${t.label}
+              </div>
+              <div data-proto="fieldSpec" class="text-[11px] sm:text-xs text-[#dedede] leading-snug font-sans">
+                ${highlightTechnicalTerms(t.value)}
+              </div>
+            </div>
+          `.trim()
+        )
+        .join('\n');
+
+      const useBlock = spec.fieldUse
+        ? `
+        <div class="mx-2.5 mb-2.5 p-2 bg-[#121212] border border-[#262626] text-[11px] text-[#aaa] font-mono flex items-center justify-between gap-2 flex-wrap">
+          <span class="text-[#fde68a] font-bold shrink-0">[FIELD USE]</span>
+          <span data-proto="fieldSpec" class="text-white font-semibold font-sans text-[11px]">${spec.fieldUse}</span>
+        </div>
+        `.trim()
+        : '';
+
+      return `
+        <article class="bg-[#0b0b0b] border border-[#333] flex flex-col justify-between">
+          <div>
+            <div class="bg-[#141414] px-3 py-2 border-b border-[#2e2e2e] flex items-center justify-between flex-wrap gap-1">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 ${dotColor} inline-block"></span>
+                <span data-proto="fieldSpec" class="text-white font-bold text-xs sm:text-sm tracking-wide font-sans">${spec.name}</span>
+                ${spec.scientificName ? `<span class="text-[11px] text-[#fde68a] font-mono font-normal">(${spec.scientificName})</span>` : ''}
+              </div>
+              ${spec.categoryTag ? `<span data-proto="fieldSpec" class="text-[10px] bg-[#222] text-[#bbb] px-1.5 py-0.5 border border-[#444] font-mono">${spec.categoryTag}</span>` : ''}
+            </div>
+
+            <div class="p-2.5 bg-[#080808] border-b border-[#222]">
+              <div class="relative border border-[#383838] aspect-[16/9] w-full bg-black overflow-hidden">
+                <img src="/images/${spec.imageFileName}" alt="${spec.name}" class="w-full h-full object-cover contrast-110 select-none" loading="lazy" />
+                <div class="absolute top-1.5 left-1.5 z-10 bg-black/85 text-[9px] font-mono px-1.5 py-0.5 text-[#fde68a] border border-[#444]">
+                  ${spec.hudCode || 'FIG. BIO-ID // MACRO OPTIC'}
+                </div>
+                <div class="absolute bottom-1.5 right-1.5 z-10 bg-black/85 text-[9px] font-mono px-1.5 py-0.5 text-[#22c55e] border border-[#444]">
+                  ${spec.hudStatus || 'VISUAL ID: VERIFIED'}
+                </div>
+                <div class="absolute top-1.5 right-2 z-10 text-[10px] text-[#888] font-mono select-none">+</div>
+                <div class="absolute bottom-1.5 left-2 z-10 text-[10px] text-[#888] font-mono select-none">+</div>
+              </div>
+              <div class="flex justify-between items-center text-[9px] text-[#666] mt-1 px-0.5 font-mono">
+                <span>OPTIC: 1.0X TACTICAL MACRO</span>
+                <span>IDENTIFICATION: ≤ 30 SEC</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 space-y-1.5">
+              <div class="text-[10px] text-[#888] font-bold uppercase tracking-wider mb-1 font-mono">// FIELD IDENTIFICATION SPEC GRID</div>
+              ${traitsHtml}
+            </div>
+          </div>
+          ${useBlock}
+        </article>
+      `.trim();
+    })
+    .join('\n');
+
+  return `
+    <div class="flex items-center justify-between mb-2.5 font-mono text-[10px] text-[#888]">
+      <span class="bg-[#1f1f1f] text-[#fde68a] border border-[#fde68a]/40 px-2 py-0.5 font-bold tracking-wider uppercase">[FIELD RECON // VISUAL SPECIES ID]</span>
+      <span>MIL-SPEC-BIO-409</span>
+    </div>
+    <div class="grid grid-cols-1 ${gridCols} gap-3.5">
+      ${cards}
+    </div>
+  `.trim();
+}
+
+/**
  * [Presentational Component]
  * 단계별 도면(1:1 SVG Blueprint) 및 실행 지침 카드 컴포넌트 (Stitch Technical Blueprint Card)
  * 선언적 data-proto-item 및 data-i18n 속성 100% 탑재
@@ -102,9 +186,18 @@ export function renderStepCards(steps: ProtocolStep[], svgsMap: Record<string, s
         visualContent = processedSvg;
       }
 
-      // Stitch 자문 기반: TECHNICAL DEEP DIVE // FIELD PRINCIPLE 추가 정보란
+      // Stitch 자문 기반: TECHNICAL DEEP DIVE // FIELD PRINCIPLE 추가 정보란 + 야전 수종/자원 육안 식별 스펙 모듈
       let deepDiveHtml = '';
       if (step.deepDive) {
+        const hasFieldSpecs = Array.isArray(step.deepDive.fieldSpecs) && step.deepDive.fieldSpecs.length > 0;
+        const fieldSpecsBlock = hasFieldSpecs
+          ? `
+          <div id="step-fieldspecs-${idx}" data-proto-item="steps" data-proto-prop="fieldSpecs" data-index="${idx}" class="mt-3.5 pt-3 border-t border-[#262626]">
+            ${renderFieldSpecsHtml(step.deepDive.fieldSpecs!)}
+          </div>
+          `.trim()
+          : '';
+
         deepDiveHtml = `
         <!-- TECHNICAL DEEP DIVE // FIELD PRINCIPLE (Stitch Spec) -->
         <section class="border border-[#383838] bg-[#0a0a0a] p-3.5 sm:p-4 font-mono text-xs mt-3 relative">
@@ -123,6 +216,7 @@ export function renderStepCards(steps: ProtocolStep[], svgsMap: Record<string, s
             <div data-proto-item="steps" data-proto-prop="deepDiveTitle" data-index="${idx}" class="text-white font-bold text-xs sm:text-sm mb-1">${step.deepDive.title}</div>
             <p data-proto-item="steps" data-proto-prop="deepDiveText" data-index="${idx}" class="text-[#a3a3a3] text-xs leading-relaxed font-sans">${highlightTechnicalTerms(step.deepDive.text)}</p>
           </div>
+          ${fieldSpecsBlock}
         </section>
         `.trim();
       }

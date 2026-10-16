@@ -64,6 +64,7 @@
                              
                       
                              
+                       
  
 
 export const UI_STRINGS                                     = {
@@ -132,6 +133,7 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC 닫기 | ↑↓ 탐색 | Enter 이동',
     searchBadge: '100% 오프라인 인메모리 검색',
     searchResultsCount: '개 발견',
+    searchPrompt: '필요한 생존 기술, 도구, 또는 자음 초성(ㅅㅅ, ㅂㅇ, ㅊㄴㅁ)을 입력하세요.',
   },
   en: {
     brandArchive: 'TACTICAL SURVIVAL ARCHIVE',
@@ -198,6 +200,7 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC Close | ↑↓ Navigate | Enter Open',
     searchBadge: '100% OFFLINE IN-MEMORY SEARCH',
     searchResultsCount: 'found',
+    searchPrompt: 'Search survival skills, tools, materials, or keywords (e.g. water, fire, shelter)...',
   },
   ja: {
     brandArchive: '生存戦術教本アーカイブ',
@@ -264,6 +267,7 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC 閉じる | ↑↓ 移動 | Enter 開く',
     searchBadge: '100% オフラインインメモリ検索',
     searchResultsCount: '件発見',
+    searchPrompt: '必要な生存技術、道具、材料、キーワード（ろ過、火起こし等）を入力してください。',
   },
   es: {
     brandArchive: 'ARCHIVO DE SUPERVIVENCIA TÁCTICA',
@@ -330,6 +334,7 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC Cerrar | ↑↓ Navegar | Enter Abrir',
     searchBadge: 'BÚSQUEDA 100% OFFLINE EN MEMORIA',
     searchResultsCount: 'encontrados',
+    searchPrompt: 'Busque habilidades de supervivencia, herramientas o palabras clave (agua, fuego, refugio)...',
   },
   de: {
     brandArchive: 'TAKTIK-ÜBERLEBENSARCHIV',
@@ -396,6 +401,7 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC Schließen | ↑↓ Navigieren | Enter Öffnen',
     searchBadge: '100% OFFLINE-SPEICHERSUCHE',
     searchResultsCount: 'gefunden',
+    searchPrompt: 'Überlebensfähigkeiten, Werkzeuge oder Stichwörter eingeben (z. B. Wasser, Feuer, Schutz)...',
   },
   pt: {
     brandArchive: 'ARQUIVO DE SOBREVIVÊNCIA TÁCTICA',
@@ -462,6 +468,7 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC Fechar | ↑↓ Navegar | Enter Abrir',
     searchBadge: 'BUSCA 100% OFFLINE EM MEMÓRIA',
     searchResultsCount: 'encontrados',
+    searchPrompt: 'Pesquise técnicas de sobrevivência, ferramentas ou palavras-chave (água, fogo, abrigo)...',
   },
   'zh-TW': {
     brandArchive: '生存戰術手冊檔案庫',
@@ -528,5 +535,6 @@ export const UI_STRINGS                                     = {
     searchShortcutHint: 'ESC 關閉 | ↑↓ 移動 | Enter 開啟',
     searchBadge: '100% 離線內存即時搜尋',
     searchResultsCount: '篇查獲',
+    searchPrompt: '請輸入所需的生存技能、工具、材料或關鍵字（如過濾、生火、庇護所）...',
   },
 };

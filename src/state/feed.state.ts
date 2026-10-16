@@ -65,6 +65,12 @@ export function getFeedRuntimeScript(): string {
               el.innerText = ui[key];
             }
           });
+          document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n-placeholder');
+            if (ui[key] !== undefined) {
+              el.placeholder = ui[key];
+            }
+          });
 
           // 2. 프로토콜 피드 카드별 다국어 제목, 요약, 준비물 칩 핫스왑
           var feedMap = (window.__FEED_PROTOCOLS__ && window.__FEED_PROTOCOLS__[targetLocale]) || {};

@@ -8,34 +8,41 @@
  * 키보드 단축키(Cmd+K, /, ESC, 방향키, Enter), Stitch 다크 모달 UI 제어
  */
 export function getSearchRuntimeScript(
-  searchDocsByLocale                                                    
+  searchDocsByLocale                                                     
 )         {
+  const inlineDocsInit = searchDocsByLocale
+    ? `window.__SEARCH_DOCS__ = window.__SEARCH_DOCS__ || ${JSON.stringify(searchDocsByLocale)};`
+    : '';
+
   return `
   (function () {
-    window.__SEARCH_DOCS__ = ${JSON.stringify(searchDocsByLocale)};
+    ${inlineDocsInit}
 
-    var CHOSUNG_LIST = [
-      'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ',
-      'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
-    ];
+    var CONJOINING_TO_COMPAT = {
+      0x1100: 'ㄱ', 0x1101: 'ㄲ', 0x1102: 'ㄴ', 0x1103: 'ㄷ', 0x1104: 'ㄸ',
+      0x1105: 'ㄹ', 0x1106: 'ㅁ', 0x1107: 'ㅂ', 0x1108: 'ㅃ', 0x1109: 'ㅅ',
+      0x110a: 'ㅆ', 0x110b: 'ㅇ', 0x110c: 'ㅈ', 0x110d: 'ㅉ', 0x110e: 'ㅊ',
+      0x110f: 'ㅋ', 0x1110: 'ㅌ', 0x1111: 'ㅍ', 0x1112: 'ㅎ'
+    };
 
-    function extractChosungClient(text) {
-      if (!text) return '';
+    function normalizeHangulQueryClient(query) {
+      if (!query) return '';
+      var nfc = query.normalize ? query.normalize('NFC') : query;
       var res = '';
-      for (var i = 0; i < text.length; i++) {
-        var code = text.charCodeAt(i);
-        if (code >= 0xac00 && code <= 0xd7a3) {
-          res += CHOSUNG_LIST[Math.floor((code - 0xac00) / 588)];
+      for (var i = 0; i < nfc.length; i++) {
+        var code = nfc.charCodeAt(i);
+        if (code >= 0x1100 && code <= 0x1112 && CONJOINING_TO_COMPAT[code]) {
+          res += CONJOINING_TO_COMPAT[code];
         } else {
-          res += text[i];
+          res += nfc[i];
         }
       }
       return res;
     }
 
     function isPureChosungClient(query) {
-      var trimmed = (query || '').trim();
-      return trimmed.length > 0 && /^[ㄱ-ㅎ\\s]+$/.test(trimmed);
+      var norm = normalizeHangulQueryClient(query).trim();
+      return norm.length > 0 && /^[ㄱ-ㅎ\\s]+$/.test(norm);
     }
 
     function escapeHtmlClient(str) {
@@ -44,11 +51,13 @@ export function getSearchRuntimeScript(
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
     }
 
     function highlightTextClient(text, rawIndices) {
-      if (!text || !rawIndices || rawIndices.length === 0) return escapeHtmlClient(text);
+      if (!text) return '';
+      if (!rawIndices || rawIndices.length === 0) return escapeHtmlClient(text);
 
       var sorted = rawIndices.slice().sort(function (a, b) { return a[0] - b[0]; });
       var merged = [sorted[0].slice()];
@@ -123,6 +132,58 @@ export function getSearchRuntimeScript(
     var selectedIndex = -1;
     var currentResults = [];
     var searchDebounceTimer = null;
+    var previousActiveElement = null;
+
+    // 다차원 싱글톤 Fuse 인스턴스 캐시 맵 (lang + '_' + mode)
+    var fuseCache = {};
+
+    function getOrCreateFuse(docs, isChosung, lang) {
+      var cacheKey = (lang || 'ko') + '_' + (isChosung ? 'cho' : 'norm');
+      if (fuseCache[cacheKey]) {
+        return fuseCache[cacheKey];
+      }
+      var FuseConstructor = window.Fuse;
+      if (typeof FuseConstructor !== 'function') return null;
+
+      var options;
+      if (isChosung) {
+        options = {
+          includeMatches: true,
+          includeScore: true,
+          threshold: 0.25,
+          ignoreLocation: true,
+          minMatchCharLength: 1,
+          keys: [
+            { name: 'titleChosung', weight: 0.50 },
+            { name: 'summaryChosung', weight: 0.30 },
+            { name: 'materialsChosung', weight: 0.20 }
+          ]
+        };
+      } else {
+        options = {
+          includeMatches: true,
+          includeScore: true,
+          threshold: 0.35,
+          ignoreLocation: true,
+          minMatchCharLength: 1,
+          keys: [
+            { name: 'title', weight: 0.35 },
+            { name: 'titleChosung', weight: 0.15 },
+            { name: 'summary', weight: 0.20 },
+            { name: 'materials', weight: 0.15 },
+            { name: 'steps', weight: 0.10 },
+            { name: 'deepDives', weight: 0.05 }
+          ]
+        };
+      }
+      try {
+        var instance = new FuseConstructor(docs, options);
+        fuseCache[cacheKey] = instance;
+        return instance;
+      } catch (err) {
+        return null;
+      }
+    }
 
     function getActiveDocs() {
       var lang = document.documentElement.lang || 'ko';
@@ -132,6 +193,7 @@ export function getSearchRuntimeScript(
 
     function openSearchModal() {
       if (!searchModal) return;
+      previousActiveElement = document.activeElement;
       searchModal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
 
@@ -155,6 +217,13 @@ export function getSearchRuntimeScript(
       searchModal.classList.add('hidden');
       document.body.style.overflow = '';
       selectedIndex = -1;
+      if (searchDebounceTimer) {
+        clearTimeout(searchDebounceTimer);
+        searchDebounceTimer = null;
+      }
+      if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
+        try { previousActiveElement.focus(); } catch (e) {}
+      }
     }
 
     function renderResults(results) {
@@ -220,50 +289,22 @@ export function getSearchRuntimeScript(
 
       var docs = getActiveDocs();
       var isChosung = isPureChosungClient(trimmed);
+      var lang = document.documentElement.lang || 'ko';
 
-      // Fuse.js 라이브러리가 로드되어 있는지 확인
-      var FuseConstructor = window.Fuse;
-      if (typeof FuseConstructor === 'function') {
-        var options;
-        if (isChosung) {
-          options = {
-            includeMatches: true,
-            includeScore: true,
-            threshold: 0.25,
-            ignoreLocation: true,
-            minMatchCharLength: 1,
-            keys: [
-              { name: 'titleChosung', weight: 0.50 },
-              { name: 'summaryChosung', weight: 0.30 },
-              { name: 'materialsChosung', weight: 0.20 }
-            ]
-          };
-        } else {
-          options = {
-            includeMatches: true,
-            includeScore: true,
-            threshold: 0.35,
-            ignoreLocation: true,
-            minMatchCharLength: 1,
-            keys: [
-              { name: 'title', weight: 0.35 },
-              { name: 'titleChosung', weight: 0.15 },
-              { name: 'summary', weight: 0.20 },
-              { name: 'materials', weight: 0.15 },
-              { name: 'steps', weight: 0.10 },
-              { name: 'deepDives', weight: 0.05 }
-            ]
-          };
+      var fuse = getOrCreateFuse(docs, isChosung, lang);
+      if (fuse) {
+        var searchHits = [];
+        try {
+          searchHits = fuse.search(trimmed, { limit: 12 });
+        } catch (e) {
+          searchHits = [];
         }
-
-        var fuse = new FuseConstructor(docs, options);
-        var searchHits = fuse.search(trimmed, { limit: 12 });
 
         var mapped = searchHits.map(function (hit) {
           var doc = hit.item;
           var matches = hit.matches || [];
 
-          var titleHighlighted = doc.title;
+          var titleHighlighted = '';
           var titleMatch = matches.find(function (m) {
             return m.key === 'title' || (isChosung && m.key === 'titleChosung');
           });
@@ -271,11 +312,20 @@ export function getSearchRuntimeScript(
           if (titleMatch && titleMatch.indices && titleMatch.indices.length > 0) {
             titleHighlighted = highlightTextClient(doc.title, titleMatch.indices);
           } else {
-            var escaped = trimmed.replace(/[.*+?^$\\{}()|[\\]\\\\]/g, '\\\\$&');
-            titleHighlighted = escapeHtmlClient(doc.title).replace(
-              new RegExp('(' + escaped + ')', 'gi'),
-              '<mark class="bg-[#fde68a]/20 text-[#fde68a] font-bold px-0.5 border-b border-[#fde68a]/60">$1</mark>'
-            );
+            // 원본 텍스트 매칭 인덱스 기반 개별 이스케이프로 HTML 엔티티 파괴 방지
+            var lowerTitle = doc.title.toLowerCase();
+            var lowerTrimmed = trimmed.toLowerCase();
+            var fallbackIndices = [];
+            var pos = 0;
+            while ((pos = lowerTitle.indexOf(lowerTrimmed, pos)) !== -1) {
+              fallbackIndices.push([pos, pos + trimmed.length - 1]);
+              pos += trimmed.length;
+            }
+            if (fallbackIndices.length > 0) {
+              titleHighlighted = highlightTextClient(doc.title, fallbackIndices);
+            } else {
+              titleHighlighted = escapeHtmlClient(doc.title);
+            }
           }
 
           var snippet = '';
@@ -286,13 +336,16 @@ export function getSearchRuntimeScript(
             return m.key === 'materials' || (isChosung && m.key === 'materialsChosung');
           });
           var stepsMatch = matches.find(function (m) { return m.key === 'steps'; });
+          var deepDivesMatch = matches.find(function (m) { return m.key === 'deepDives'; });
 
           if (summaryMatch && summaryMatch.indices && summaryMatch.indices.length > 0) {
             snippet = extractSnippetClient(doc.summary, summaryMatch.indices);
           } else if (materialsMatch && materialsMatch.indices && materialsMatch.indices.length > 0) {
-            snippet = '[재료] ' + extractSnippetClient(doc.materials, materialsMatch.indices);
+            snippet = '[#] ' + extractSnippetClient(doc.materials, materialsMatch.indices);
           } else if (stepsMatch && stepsMatch.indices && stepsMatch.indices.length > 0) {
-            snippet = '[스텝] ' + extractSnippetClient(doc.steps, stepsMatch.indices);
+            snippet = '[STEP] ' + extractSnippetClient(doc.steps, stepsMatch.indices);
+          } else if (deepDivesMatch && deepDivesMatch.indices && deepDivesMatch.indices.length > 0) {
+            snippet = '[NOTE] ' + extractSnippetClient(doc.deepDives, deepDivesMatch.indices);
           } else {
             snippet = doc.summary.length > 80 ? (escapeHtmlClient(doc.summary.slice(0, 80)) + '...') : escapeHtmlClient(doc.summary);
           }
@@ -327,7 +380,7 @@ export function getSearchRuntimeScript(
               categoryName: doc.categoryName,
               title: doc.title,
               titleHighlighted: escapeHtmlClient(doc.title),
-              snippet: doc.summary.slice(0, 80) + '...',
+              snippet: escapeHtmlClient(doc.summary.slice(0, 80)) + '...',
               score: 0.1
             });
           }
@@ -351,14 +404,14 @@ export function getSearchRuntimeScript(
       });
     }
 
-    // 1. 입력 이벤트 처리 (Debounced 80ms)
+    // 1. 입력 이벤트 처리 (Debounced 120ms)
     if (searchInput) {
       searchInput.addEventListener('input', function (e) {
         var val = e.target.value;
         clearTimeout(searchDebounceTimer);
         searchDebounceTimer = setTimeout(function () {
           executeSearch(val);
-        }, 80);
+        }, 120);
       });
     }
 
@@ -376,9 +429,12 @@ export function getSearchRuntimeScript(
     document.addEventListener('keydown', function (e) {
       var isK = e.key === 'k' || e.key === 'K';
       var isSlash = e.key === '/';
-      var isMod = e.metaKey || e.ctrlKey;
+      var isMod = e.metaKey || e.ctrlKey || e.altKey;
 
-      if ((isMod && isK) || (isSlash && document.activeElement !== searchInput && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA')) {
+      var activeEl = document.activeElement;
+      var isInputActive = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.isContentEditable);
+
+      if (((e.metaKey || e.ctrlKey) && isK) || (isSlash && !isMod && !isInputActive)) {
         e.preventDefault();
         if (searchModal && !searchModal.classList.contains('hidden')) {
           closeSearchModal();
@@ -408,13 +464,26 @@ export function getSearchRuntimeScript(
       if (e.key === 'ArrowUp') {
         e.preventDefault();
         if (currentResults.length > 0) {
-          selectedIndex = (selectedIndex - 1 + currentResults.length) % currentResults.length;
+          if (selectedIndex <= 0) {
+            selectedIndex = currentResults.length - 1;
+          } else {
+            selectedIndex--;
+          }
           updateKeyboardSelection();
         }
         return;
       }
 
       if (e.key === 'Enter') {
+        // macOS 한글 IME 조합 중에는 엔터키로 인한 페이지 이동 차단
+        if (e.isComposing || e.keyCode === 229) {
+          return;
+        }
+        if (searchDebounceTimer) {
+          clearTimeout(searchDebounceTimer);
+          searchDebounceTimer = null;
+          executeSearch(searchInput ? searchInput.value : '');
+        }
         if (currentResults.length > 0) {
           e.preventDefault();
           var targetItem = selectedIndex >= 0 ? currentResults[selectedIndex] : currentResults[0];
@@ -425,12 +494,19 @@ export function getSearchRuntimeScript(
       }
     });
 
-    // 3. 모달 외부 클릭 시 닫기 & 트리거 버튼 클릭 시 열기
+    // 3. 모달 외부 클릭 시 닫기 & 트리거 버튼 클릭 시 열기 / 모바일 닫기 버튼
     document.addEventListener('click', function (e) {
-      var trigger = e.target.closest('[data-action="open-search"]');
-      if (trigger) {
+      var openTrigger = e.target.closest('[data-action="open-search"]');
+      if (openTrigger) {
         e.preventDefault();
         openSearchModal();
+        return;
+      }
+
+      var closeTrigger = e.target.closest('[data-action="close-search"]');
+      if (closeTrigger) {
+        e.preventDefault();
+        closeSearchModal();
         return;
       }
 

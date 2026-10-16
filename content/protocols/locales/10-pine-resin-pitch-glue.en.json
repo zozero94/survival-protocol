@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-10",
+  "category": "MEDICINE",
+  "title": "Purifying Pine Resin into Antiseptic Ointment & Waterproof Pitch Glue",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[INFECTION DEFENSE & WATERPROOF TOOL LASHING]",
+  "summary": "In the wilderness, an untreated cut from a stone edge or jagged branch can quickly turn septic, risking systemic poisoning. Furthermore, stone axe heads, bone needles, and split containers require a rock-hard waterproof binder to withstand heavy outdoor use. By gently melting natural pine resin over indirect ember heat and skimming out tree bark debris, you isolate a pure antimicrobial salve that prevents infection. Blending the remaining hot resin with pulverized charcoal in a **1:1** ratio yields a rock-hard, shock-absorbing waterproof pitch glue stick.",
+  "timeRequired": "40 minutes (15m resin harvest + 15m gentle indirect melting + 10m charcoal compounding)",
+  "successRate": "95% (strict indirect heating & 1:1 carbon ratio)",
+  "difficulty": "Easy (fire & burn safety caution)",
+  "outputPerHour": "30ml pure antiseptic salve + 2 solid pitch glue sticks per batch",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "100g dried raw pine resin chunks harvested from pine trunks",
+      "desc": "Brittle, crystalline amber lumps. Fully hardened, translucent nodules contain fewer impurities and melt into superior clarified ointment."
+    },
+    {
+      "id": "mat-02",
+      "name": "Concave river stone dish or large seashell container",
+      "desc": "A natural heat-resistant crucible that buffers direct flame and absorbs indirect radiant heat from glowing coals."
+    },
+    {
+      "id": "mat-03",
+      "name": "Twig comb skimmer & clean seashell collection cup",
+      "desc": "Tightly spaced twig tines to quickly rake out floating bark flakes, plus a dedicated clean shell to store the clarified salve."
+    },
+    {
+      "id": "mat-04",
+      "name": "50g finely pulverized oak charcoal powder",
+      "desc": "Eliminates brittle glass-like fracturing in cooled resin, serving as an interlocking microscopic carbon reinforcement matrix."
+    },
+    {
+      "id": "mat-05",
+      "name": "Glowing hardwood ember bed & hardwood stirring stick",
+      "desc": "Provides flame-free radiant infrared warmth to safely liquefy resin without igniting volatile terpene vapors."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Harvest Hardened Amber Resin Nodules from Pine Tree Trunks",
+      "description": "1. **Identify Crystalline Amber Nodules**: Scan mature pine trunks or broken limbs for tear-shaped, **solid amber resin deposits**.\n2. **Scrape with Stone Flake**: Use a flint flake or flat wood wedge to **gently scrape surface lumps** without cutting into live inner bark.\n3. **Gather 100g Volume**: Collect roughly **one fist-sized volume (approx. 100g)** of relatively clean amber resin onto a broad leaf.\n4. **Discard Loose Debris**: Manually pick out large pieces of loose dirt, dead needles, or dry bark fragments before processing.",
+      "actionNote": "> Tree ID & Harvesting Tip: Distinguish **Pine Trees** (reddish tortoise-shell bark & paired **2-needle** bundles, used for resin) from **Oak Trees** (deep vertical dark fissures, serrated leaves & acorns, used for charcoal powder) using the field photo guide below. Hardened glassy amber lumps yield the purest ointment.",
+      "svgFileName": "pr10-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RAW PINE RESIN HARVESTING",
+        "Hardened Amber Resin on Pine Trunk",
+        "Stone Flake Scraping at Tangent Angle",
+        "Fist-Sized Volume (~100g) Collected",
+        "[KEY] Prioritize hardened translucent nodules"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Visual Field Identification (Pine vs. Oak) & Terpene Defense",
+        "text": "Pine trees secrete terpene-rich resin when their outer bark is ruptured to seal wounds and block pathogens. Oak trees provide dense hardwood that burns into high-heat embers and carbon charcoal powder needed to reinforce brittle resin.",
+        "fieldSpecs": [
+          {
+            "name": "Pine Tree",
+            "scientificName": "Pinus densiflora",
+            "categoryTag": "Softwood / Resin & Tinder",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "RESIN GLAND: VERIFIED",
+            "traits": [
+              {
+                "label": "BARK",
+                "value": "Reddish-brown upper trunk; lower trunk splits into **thick tortoise-shell diamond plates**."
+              },
+              {
+                "label": "LEAF",
+                "value": "Sharp evergreen **needles growing in bundles of 2** (**8–14cm** long) from each sheath."
+              },
+              {
+                "label": "SIGN",
+                "value": "Hardened **golden-amber resin teardrops** on trunk wounds and woody **pine cones**."
+              }
+            ],
+            "fieldUse": "Antiseptic wound salve, waterproof pitch glue, fatwood tinder"
+          },
+          {
+            "name": "Oak Tree",
+            "scientificName": "Quercus",
+            "categoryTag": "Hardwood / Dense Charcoal & Hafts",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "FISSURE DEPTH: VERIFIED",
+            "traits": [
+              {
+                "label": "BARK",
+                "value": "Dark grey-brown surface carved with **deep, rugged vertical grooves and ridges**."
+              },
+              {
+                "label": "LEAF",
+                "value": "Broad deciduous leaves featuring **distinct wavy lobes or sharp sawtooth edges**."
+              },
+              {
+                "label": "SIGN",
+                "value": "Fallen **acorns and scaly cup-shaped caps (cupules)** scattered around the base (**100%** ID)."
+              }
+            ],
+            "fieldUse": "Pulverized carbon hardener for pitch, smokeless high-heat charcoal, axe handles"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Liquefy Resin in a Stone Dish Using Indirect Ember Heat (No Open Flames)",
+      "description": "1. **Place Resin in Stone Dish**: Pile the **100g of raw resin chunks** into the center of a shallow concave slate dish or large sea shell.\n2. **Position 10cm from Coals**: Set the dish on support stones roughly **10cm beside red-hot coals**, completely avoiding open flames.\n3. **Melt Over Gentle Radiance**: Allow gentle conductive and infrared heat to liquefy the resin slowly over **5 to 8 minutes**.\n4. **Observe Golden Syrup Phase**: Verify that the solid nodules dissolve entirely into a **translucent, bubbling golden liquid**.",
+      "actionNote": "> Fire Hazard: Pine resin vapors contain highly flammable volatile terpenes. Never place the dish directly over campfire flames, as vapors will flash-ignite violently.",
+      "svgFileName": "pr10-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // GENTLE EMBER MELTING PROCESS",
+        "Molten Golden Resin in Concave Dish",
+        "Positioned 10cm Beside Glowing Coals",
+        "Flame Barrier & Indirect Radiance",
+        "[KEY] 100% ember heat to prevent flash ignition"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHARMACOLOGY",
+        "title": "Bactericidal Action of Alpha-Pinene and Terpene Derivates",
+        "text": "Alpha-pinene and mono-terpenes penetrate bacterial lipid cell membranes, inhibiting essential metabolic enzymes. Gentle thermal processing below the boiling point preserves these active antimicrobial compounds without thermal degradation."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Rake Out Surface Bark Debris & Isolate Antiseptic Salve",
+      "description": "1. **Craft Twig Comb Skimmer**: Bind a fan of slender hardwood twigs side-by-side to form a **fine-toothed comb skimmer**.\n2. **Skim Floating Impurities**: Rapidly draw the comb across the molten resin surface to **rake out buoyant bark flakes and soot**.\n3. **Separate 30ml Pure Salve**: Scoop **one-third of the clarified golden liquid (approx. 30ml)** into a separate clean shell or flat stone.\n4. **Allow Ambient Cooling**: Let the shell rest in the shade for **10 minutes** until it thickens into a firm, tacky antiseptic amber jelly.",
+      "actionNote": "> Salve Application: The salve cools into a firm gel. Warm a dab with your fingertip to melt it over cuts, creating a waterproof, bacteria-proof natural barrier.",
+      "svgFileName": "pr10-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DEBRIS REMOVAL & OINTMENT EXTRACTION",
+        "Twig Comb Raking Out Bark Debris",
+        "Isolating 30ml Antiseptic Salve Portion",
+        "Ambient Cooling in Shell for 10 Minutes",
+        "[KEY] Extract pure golden antiseptic salve"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Blend 1:1 Charcoal Powder & Quench into a Hardened Pitch Stick",
+      "description": "1. **Add Pulverized Charcoal**: Slowly sprinkle **50g of fine hardwood charcoal powder** into the hot resin remaining in the dish.\n2. **Rapid Viscous Churning**: Vigorously stir with a wooden stick for **1 to 2 minutes** until the mixture turns into glossy black pitch.\n3. **Wrap Around Stick Tip**: Rotate the tip of a thumb-thick hardwood branch through the molten tar, **building a thick, round candy-like bulb**.\n4. **Quench in Cold Water**: Dip the coated bulb into cold river water or cool in air for **5 minutes** to freeze into an obsidian-hard binder stick.",
+      "actionNote": "> Mixing Ratio: Pure resin shatters like glass when struck. A strict 1:1 volumetric blend with charcoal powder prevents brittle failure while preserving maximum bond strength.",
+      "svgFileName": "pr10-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
+        "1:1 Pulverized Oak Charcoal Admixture",
+        "High-Speed Churning into Viscous Tar",
+        "Bulb Wrapped onto Stick & 5-Min Quench",
+        "[KEY] Crack-free waterproof natural epoxy stick"
+      ],
+      "deepDive": {
+        "badge": "FIELD MATERIALS",
+        "title": "Overcoming Brittleness via Carbon Micro-Particle Reinforcement",
+        "text": "Pure rosin undergoes catastrophic brittle fracture under impact. Dispersing porous microscopic carbon (charcoal) throughout the resin matrix creates crack-deflecting barriers, converting fragile pine rosin into a tough, 100% waterproof natural epoxy (Pitch Glue)."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Heating resin directly over active campfire flames",
+    "description": "Pine resin is saturated with highly volatile terpene hydrocarbons. Exposing the melting dish directly to leaping flames releases dense flammable vapors that ignite in an explosive flash fire, consuming your resin and inflicting severe facial and hand burns.",
+    "consequence": "Consequence: Complete loss of resin and high risk of severe second-degree burns"
+  },
+  "shortsScript": {
+    "hook": "An untreated wound in the wild can turn septic within hours! Here is how to turn pine resin into antiseptic salve and rock-hard epoxy!",
+    "body": "Scrape dried amber resin lumps from pine trunks and place them in a concave stone dish. Never heat over open fire—use indirect ember heat so volatile vapors don't explode! Skim floating bark debris with a twig comb and pour a portion into a clean shell to cool into a 100% bacteria-blocking antiseptic salve. Mix fine charcoal powder 1:1 into the rest to create an obsidian-hard pitch glue stick that permanently secures stone axes and repels water!",
+    "outro": "Discover offline primitive survival blueprints for post-collapse resilience at the link in profile."
+  },
+  "outcome": {
+    "svgFileName": "pr10-outcome.svg",
+    "title": "Finished Pine Resin Antiseptic Ointment & Waterproof Pitch Glue Specifications",
+    "description": "Full specifications of clarified golden antimicrobial salve in an oyster shell, rock-hard obsidian pitch glue stick wrapped on hardwood, and axe joint waterproof barrier cross-section."
+  },
+  "createdAt": "2026-10-16T11:40:00.000Z",
+  "contentHash": "fe0957bc7d74bf51"
+}

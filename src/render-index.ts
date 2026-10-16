@@ -63,7 +63,7 @@ export function renderIndexPage(
   const themeScript = getThemeRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
   const feedScript = getFeedRuntimeScript();
-  const searchScript = getSearchRuntimeScript(resolvedSearchDocs);
+  const searchScript = getSearchRuntimeScript();
 
   return `<!DOCTYPE html>
 <html class="dark" lang="ko">
@@ -117,6 +117,7 @@ export function renderIndexPage(
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/assets/fuse.basic.min.js"></script>
+  <script src="/assets/search-index.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">

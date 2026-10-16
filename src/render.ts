@@ -88,7 +88,7 @@ export function renderCanonicalProtocolPage(
   const checklistScript = getChecklistRuntimeScript();
   const localeScript = getLocaleRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
-  const searchScript = getSearchRuntimeScript(resolvedSearchDocs);
+  const searchScript = getSearchRuntimeScript();
 
   return `<!DOCTYPE html>
 <html class="dark" lang="${defaultLocale}">
@@ -145,6 +145,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/assets/fuse.basic.min.js"></script>
+  <script src="/assets/search-index.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
