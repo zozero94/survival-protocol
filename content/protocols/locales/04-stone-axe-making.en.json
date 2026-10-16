@@ -50,7 +50,7 @@
       "stepNumber": "02",
       "title": "Split the Top of the Wooden Handle, Wedge the Blade, and Fill with Resin",
       "description": "1. **Anti-Split Collar Binding**: Tie cord tightly **10cm below** the handle top first to prevent uncontrolled splitting down the shaft.\n2. **Longitudinal Notch Carving**: Split the top of the dense hardwood handle vertically to create a notch of **depth 5–7cm**.\n3. **Deep Blade Seating**: Push the thick butt of the stone blade firmly and fully into the carved central slot.\n4. **Charcoal-Resin Matrix Packing**: Melt pine sap and mix with powdered **charcoal in a 1:1 ratio**, packing the molten adhesive into every gap.",
-      "actionNote": "> Composite Mixing Rule: Pure pine resin cools brittle as glass and shatters on impact. Blending fine charcoal powder creates an impact-absorbing natural epoxy that never cracks.",
+      "actionNote": "> Composite Mixing Rule: Pure pine resin cools brittle as glass and shatters on impact. Blending fine charcoal powder creates an impact-absorbing natural epoxy that never cracks. ([Pine Pitch Glue (PR-10)](/protocol-10.html) / [Oak Charcoal Kiln (PR-09)](/protocol-09.html))",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Push Blade Down In",
@@ -70,7 +70,7 @@
       "stepNumber": "03",
       "title": "Wrap Tightly in an X-Pattern with Wet Vine Bark and Dry in the Shade",
       "description": "1. **Bast Fiber Hydration**: Soak flexible inner vine bark in water to maximize cellular elasticity.\n2. **Diagonal X-Lashing**: Criss-cross the wet bark diagonally around both stone blade and wooden haft for **at least 10 firm wraps**.\n3. **Lower Shaft Collar Lock**: Wrap the remaining fiber horizontally around the lower neck and cinch tight with a secure knot.\n4. **Ventilated Shade Cure**: Dry thoroughly in a breezy, shaded location away from direct sun to achieve maximum clamping force.",
-      "actionNote": "> Shade Drying Principle: Never force-dry over campfire flames as heat burns and snaps the delicate plant fibers. Natural air-drying in the shade causes the vine to shrink by 30%, locking the blade like steel wire.",
+      "actionNote": "> Shade Drying Principle: Never force-dry over campfire flames as heat burns and snaps the delicate plant fibers. Natural air-drying in the shade causes the vine to shrink by 30%, locking the blade like steel wire. ([Wild Cordage (PR-05)](/protocol-05.html))",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Wet Vine X-Lashing",
@@ -97,6 +97,6 @@
     "description": "A bifacially flaked flint blade seated deeply into a split oak haft, bound firmly with criss-cross vine lashing and sealed with pine pitch resin composite."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "1815809587c73dc4"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "1c29ec86b6976738"
 }

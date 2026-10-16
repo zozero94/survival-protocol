@@ -20,7 +20,10 @@ export function getLocaleRuntimeScript(): string {
 
     function renderHighlightTermsClient(text) {
       if (!text) return '';
-      return text.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
+      var withLinks = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_m, label, url) {
+        return '<a data-proto="crosslink" href="' + url + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
+      });
+      return withLinks.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
         var isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
         if (isMetric) {
           return '<strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
@@ -206,6 +209,8 @@ export function getLocaleRuntimeScript(): string {
               el.innerHTML = renderHighlightTermsClient(stepItem.deepDive.text || '');
             } else if (prop === 'fieldSpecs' && stepItem.deepDive && Array.isArray(stepItem.deepDive.fieldSpecs)) {
               el.innerHTML = renderFieldSpecsClient(stepItem.deepDive.fieldSpecs);
+            } else if (itemKey === 'materials' && prop === 'desc') {
+              el.innerHTML = renderHighlightTermsClient(stepItem.desc || '');
             } else if (stepItem[prop] !== undefined) {
               el.innerText = stepItem[prop];
             }

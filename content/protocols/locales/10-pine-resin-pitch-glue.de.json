@@ -41,7 +41,7 @@
       "stepNumber": "01",
       "title": "Schritt 1: Ausgehärtete bernsteinfarbene Harzknollen vom Stamm ernten",
       "description": "1. **Kristalline Harzknollen aufspüren**: Kiefernstämme oder Astabbrüche nach tropfenförmigen, **ausgehärteten Bernsteinklumpen** absuchen.\n2. **Mit Steinabschlag abschaben**: Mit einer Feuersteinklinge die **oberflächlichen Brocken behutsam abschaben**, ohne die Bastschicht zu verletzen.\n3. **Faustgroße Menge sammeln**: Rund **eine Faust voll (ca. 100g)** sauberes Bernsteinharz auf einem breiten Blatt zusammentragen.\n4. **Grobe Fremdkörper aussortieren**: Lose Erde, Nadeln und grobe Rindenreste vor dem Schmelzen von Hand entfernen.",
-      "actionNote": "> Baum-ID & Sammeltipp: Unterscheiden Sie die **Kiefer** (rötliche Schildkrötenpanzer-Rinde & **paarweise** wachsende Nadeln, für Harz) von der **Eiche** (tiefe vertikale Rindenfurchen, gezackte Blätter & Eicheln, für Holzkohle) anhand der Fototafel unten.",
+      "actionNote": "> Baum-ID & Sammeltipp: Unterscheiden Sie die **Kiefer** (rötliche Schildkrötenpanzer-Rinde & **paarweise** wachsende Nadeln, für Harz) von der **Eiche** (tiefe vertikale Rindenfurchen, gezackte Blätter & Eicheln, für Holzkohle) anhand der Fototafel unten. ([Steinaxt (PR-04)](/protocol-04.html) / [Holzkohlenmeiler (PR-09)](/protocol-09.html))",
       "svgFileName": "pr10-step-01.svg",
       "svgLabels": [
         "FIG. 01 // RAW PINE RESIN HARVESTING",
@@ -141,7 +141,7 @@
       "stepNumber": "04",
       "title": "Schritt 4: Kohlepulver 1:1 einrühren & zum gehärteten Pechklebestift abschrecken",
       "description": "1. **Kohlepulver einstreuen**: Langsam **50g feines Holzkohlepulver** in das restliche heiße Harz in der Steinschale rieseln lassen.\n2. **Rasch zähkneten**: Mit einem Holzstab **1 bis 2 Minuten** kräftig rühren, bis eine glänzend schwarze, teerartige Masse entsteht.\n3. **Um Astspitze wickeln**: Das Ende eines daumendicken Hartholzastes durch die Masse drehen und **eine dicke, runde Knolle formen**.\n4. **In kaltem Wasser abschrecken**: Die Knolle in kaltes Flusswasser tauchen oder **5 Minuten** an der Luft härten lassen, bis sie obsidianhart wird.",
-      "actionNote": "> Mischungsverhältnis: Reines Harz zerspringt wie Glas. Ein exaktes 1:1-Volumenverhältnis mit Kohlepulver verhindert spröde Brüche bei maximaler Klebkraft.",
+      "actionNote": "> Mischungsverhältnis: Reines Harz zerspringt wie Glas. Ein exaktes 1:1-Volumenverhältnis mit Kohlepulver verhindert spröde Brüche bei maximaler Klebkraft. ([Steinaxt (PR-04)](/protocol-04.html) / [Wildseil (PR-05)](/protocol-05.html))",
       "svgFileName": "pr10-step-04.svg",
       "svgLabels": [
         "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
@@ -173,5 +173,5 @@
     "description": "Vollständige Spezifikationen der geklärten Wundsalbe in der Muschelschale, des obsidianharten Pechklebestifts am Hartholzast und des wasserdichten Beilbindungs-Schnitts."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "fe0957bc7d74bf51"
+  "contentHash": "db453b0037c7d451"
 }

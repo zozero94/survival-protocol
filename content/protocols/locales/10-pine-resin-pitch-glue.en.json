@@ -41,7 +41,7 @@
       "stepNumber": "01",
       "title": "Step 1: Harvest Hardened Amber Resin Nodules from Pine Tree Trunks",
       "description": "1. **Identify Crystalline Amber Nodules**: Scan mature pine trunks or broken limbs for tear-shaped, **solid amber resin deposits**.\n2. **Scrape with Stone Flake**: Use a flint flake or flat wood wedge to **gently scrape surface lumps** without cutting into live inner bark.\n3. **Gather 100g Volume**: Collect roughly **one fist-sized volume (approx. 100g)** of relatively clean amber resin onto a broad leaf.\n4. **Discard Loose Debris**: Manually pick out large pieces of loose dirt, dead needles, or dry bark fragments before processing.",
-      "actionNote": "> Tree ID & Harvesting Tip: Distinguish **Pine Trees** (reddish tortoise-shell bark & paired **2-needle** bundles, used for resin) from **Oak Trees** (deep vertical dark fissures, serrated leaves & acorns, used for charcoal powder) using the field photo guide below. Hardened glassy amber lumps yield the purest ointment.",
+      "actionNote": "> Tree ID & Harvesting Tip: Distinguish **Pine Trees** (reddish tortoise-shell bark & paired **2-needle** bundles, used for resin) from **Oak Trees** (deep vertical dark fissures, serrated leaves & acorns, used for charcoal powder) using the field photo guide below. Hardened glassy amber lumps yield the purest ointment. ([Stone Axe (PR-04)](/protocol-04.html) / [Oak Charcoal Kiln (PR-09)](/protocol-09.html))",
       "svgFileName": "pr10-step-01.svg",
       "svgLabels": [
         "FIG. 01 // RAW PINE RESIN HARVESTING",
@@ -141,7 +141,7 @@
       "stepNumber": "04",
       "title": "Step 4: Blend 1:1 Charcoal Powder & Quench into a Hardened Pitch Stick",
       "description": "1. **Add Pulverized Charcoal**: Slowly sprinkle **50g of fine hardwood charcoal powder** into the hot resin remaining in the dish.\n2. **Rapid Viscous Churning**: Vigorously stir with a wooden stick for **1 to 2 minutes** until the mixture turns into glossy black pitch.\n3. **Wrap Around Stick Tip**: Rotate the tip of a thumb-thick hardwood branch through the molten tar, **building a thick, round candy-like bulb**.\n4. **Quench in Cold Water**: Dip the coated bulb into cold river water or cool in air for **5 minutes** to freeze into an obsidian-hard binder stick.",
-      "actionNote": "> Mixing Ratio: Pure resin shatters like glass when struck. A strict 1:1 volumetric blend with charcoal powder prevents brittle failure while preserving maximum bond strength.",
+      "actionNote": "> Mixing Ratio: Pure resin shatters like glass when struck. A strict 1:1 volumetric blend with charcoal powder prevents brittle failure while preserving maximum bond strength. ([Stone Axe (PR-04)](/protocol-04.html) / [Wild Cordage (PR-05)](/protocol-05.html))",
       "svgFileName": "pr10-step-04.svg",
       "svgLabels": [
         "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
@@ -173,5 +173,5 @@
     "description": "Full specifications of clarified golden antimicrobial salve in an oyster shell, rock-hard obsidian pitch glue stick wrapped on hardwood, and axe joint waterproof barrier cross-section."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "fe0957bc7d74bf51"
+  "contentHash": "db453b0037c7d451"
 }

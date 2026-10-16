@@ -50,7 +50,7 @@
       "stepNumber": "02",
       "title": "Rajar la punta del mango de madera, encajar la hoja y rellenar con resina",
       "description": "1. **Ligadura de contención inferior**: Ata firmemente con cuerda a **10cm por debajo** de la punta del mango para evitar grietas incontroladas.\n2. **Corte de hendidura longitudinal**: Con una piedra afilada, abre una ranura vertical de **profundidad 5–7cm** en el extremo del mango.\n3. **Inserción profunda de la hoja**: Introduce la base gruesa de la lasca hasta el fondo de la ranura central.\n4. **Relleno con compuesto de resina**: Funde resina de pino mezclada con **polvo de carbón en proporción 1:1**, rellenando cada hueco interno.",
-      "actionNote": "> Regla de mezcla compuesta: La resina pura se vuelve quebradiza como el vidrio al enfriarse. Mezclar polvo fino de carbón vegetal absorbe impactos y crea un epoxi natural irrompible.",
+      "actionNote": "> Regla de mezcla compuesta: La resina pura se vuelve quebradiza como el vidrio al enfriarse. Mezclar polvo fino de carbón vegetal absorbe impactos y crea un epoxi natural irrompible. ([Pegamento de Resina (PR-10)](/protocol-10.html) / [Horno de Carbón (PR-09)](/protocol-09.html))",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Encajar hoja hacia abajo",
@@ -70,7 +70,7 @@
       "stepNumber": "03",
       "title": "Atar fuerte en forma de X con liana húmeda y secar a la sombra",
       "description": "1. **Hidratación de fibra floemática**: Remoja en agua la corteza interna de liana para maximizar su flexibilidad y elasticidad.\n2. **Ligadura diagonal en X**: Cruza la fibra húmeda en diagonal sobre la piedra y el mango durante **al menos 10 vueltas tensas**.\n3. **Bloqueo horizontal del cuello**: Enrolla la fibra sobrante en horizontal bajo la base y remata con un nudo de máxima tracción.\n4. **Curado en sombra ventilada**: Deja secar por completo en un lugar sombreado y aireado lejos del sol directo para maximizar la presión.",
-      "actionNote": "> Principio de secado en sombra: Jamás seques junto a las llamas del fuego, ya que el calor quema y revienta las fibras. El secado natural a la sombra contrae la liana un 30%, aprisionando la hoja como alambre de acero.",
+      "actionNote": "> Principio de secado en sombra: Jamás seques junto a las llamas del fuego, ya que el calor quema y revienta las fibras. El secado natural a la sombra contrae la liana un 30%, aprisionando la hoja como alambre de acero. ([Cuerda Salvaje (PR-05)](/protocol-05.html))",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Amarre en X con liana",
@@ -97,6 +97,6 @@
     "description": "Una hoja de pedernal tallada bifacialmente incrustada en un mango de roble hendido, atada firmemente en X con lianas y sellada con resina de pino."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "1815809587c73dc4"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "1c29ec86b6976738"
 }

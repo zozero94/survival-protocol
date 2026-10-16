@@ -3,16 +3,22 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { PostingReviewService } from '../src/services/posting-review.service.ts';
+import { CrossLinkerService, ContentEnrichmentService } from '../src/services/content-enrichment.service.ts';
 import type { Protocol } from '../src/types/protocol.types.ts';
 
 const PROTOCOLS_DIR = path.resolve(process.cwd(), 'content', 'protocols');
 const LOCALES_DIR = path.join(PROTOCOLS_DIR, 'locales');
+const PUBLIC_DIR = path.resolve(process.cwd(), 'public');
 
-test('Suite 16: PostingReviewService - 4-Pillar Posting Quality Audit (Safety, Field Reproducibility, SEO, Global Eco-Localization)', async (t) => {
+test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentService', async (t) => {
   const masterFiles = fs
     .readdirSync(PROTOCOLS_DIR)
     .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
     .sort();
+
+  const allMasterProtocols: Protocol[] = masterFiles.map(
+    (f) => JSON.parse(fs.readFileSync(path.join(PROTOCOLS_DIR, f), 'utf-8')) as Protocol
+  );
 
   await t.test('16-1: 전 발행 프로토콜(PR-01 ~ PR-10)이 4대 포스팅 품질 심사(Safety, Reproducibility, SEO, Localization)를 100% 통과해야 한다', () => {
     assert.ok(masterFiles.length >= 9, '최소 9개 이상의 활성 마스터 프로토콜이 존재해야 함');
@@ -41,9 +47,7 @@ test('Suite 16: PostingReviewService - 4-Pillar Posting Quality Audit (Safety, F
   });
 
   await t.test('16-2: 현대 정밀 계측기(전자저울, 디지털 온도계, 타이머) 의존 문구가 포함되면 FIELD_REPRODUCIBILITY 감점이 작동해야 한다', () => {
-    const sample = JSON.parse(
-      fs.readFileSync(path.join(PROTOCOLS_DIR, masterFiles[0]!), 'utf-8')
-    ) as Protocol;
+    const sample = allMasterProtocols[0]!;
 
     const contaminated: Protocol = {
       ...sample,
@@ -60,9 +64,7 @@ test('Suite 16: PostingReviewService - 4-Pillar Posting Quality Audit (Safety, F
   });
 
   await t.test('16-3: 번역본에 미번역 한글이 남아있을 경우 GLOBAL_ECO_LOCALIZATION 경고가 즉시 포착되어야 한다', () => {
-    const sample = JSON.parse(
-      fs.readFileSync(path.join(PROTOCOLS_DIR, masterFiles[0]!), 'utf-8')
-    ) as Protocol;
+    const sample = allMasterProtocols[0]!;
 
     const brokenEn: Protocol = {
       ...sample,
@@ -81,4 +83,64 @@ test('Suite 16: PostingReviewService - 4-Pillar Posting Quality Audit (Safety, F
     assert.equal(res.passed, false, '미번역 한글 포함 시 다국어 현지화 심사를 통과하면 안 됨');
     assert.ok(res.warnings.some((w) => w.includes('미번역 한글')), '미번역 한글 경고 메시지가 포함되어야 함');
   });
+
+  await t.test('16-4: CrossLinkerService가 프로토콜 간 체인 링킹(PR-10 ➔ PR-04/PR-09, PR-04 ➔ PR-05/PR-10)을 정확히 검증하고 깨진 링크가 0건이어야 한다', () => {
+    for (const proto of allMasterProtocols) {
+      const audit = CrossLinkerService.auditCrossLinks(proto, allMasterProtocols);
+      assert.equal(
+        audit.passed,
+        true,
+        `[${proto.protocolId}] 인라인 하이퍼링크 무결성 위반: ${audit.validationIssues.map(i => i.message).join(', ')}`
+      );
+    }
+
+    const pr10 = allMasterProtocols.find(p => p.protocolId === 'PR-10')!;
+    const pr10Audit = CrossLinkerService.auditCrossLinks(pr10, allMasterProtocols);
+    assert.ok(
+      pr10Audit.existingLinks.some(l => l.url === '/protocol-04.html'),
+      'PR-10(소나무 송진)은 돌칼/돌도끼 제작(PR-04)으로의 인라인 하이퍼링크를 포함해야 함'
+    );
+    assert.ok(
+      pr10Audit.existingLinks.some(l => l.url === '/protocol-09.html'),
+      'PR-10(소나무 송진)은 참나무 숯가마(PR-09)로의 인라인 하이퍼링크를 포함해야 함'
+    );
+
+    const pr04 = allMasterProtocols.find(p => p.protocolId === 'PR-04')!;
+    const pr04Audit = CrossLinkerService.auditCrossLinks(pr04, allMasterProtocols);
+    assert.ok(
+      pr04Audit.existingLinks.some(l => l.url === '/protocol-05.html'),
+      'PR-04(돌도끼)는 야생 밧줄 제작(PR-05)으로의 인라인 하이퍼링크를 포함해야 함'
+    );
+    assert.ok(
+      pr04Audit.existingLinks.some(l => l.url === '/protocol-10.html'),
+      'PR-04(돌도끼)는 소나무 송진 접착제(PR-10)로의 인라인 하이퍼링크를 포함해야 함'
+    );
+  });
+
+  await t.test('16-5: ContentEnrichmentService가 의미성·쉬운 설명·벡터 밀도·실사 도감(fieldSpecs) 검수를 통과해야 한다', () => {
+    for (const proto of allMasterProtocols) {
+      const report = ContentEnrichmentService.auditProtocolEnrichment(proto, allMasterProtocols);
+      assert.equal(
+        report.passed,
+        true,
+        `[${proto.protocolId}] 콘텐츠 깊이/벡터 밀도 검수 미통과: ${report.meaningfulness.claritySuggestions.join(' / ')}`
+      );
+      assert.ok(report.overallScore >= 85, `[${proto.protocolId}] 종합 보강 점수 85점 이상이어야 함`);
+    }
+  });
+
+  await t.test('16-6: 빌드된 HTML(protocol-10.html, protocol-04.html)에 인라인 하이퍼텍스트 앵커(data-proto="crosslink")가 정상 렌더링되어야 한다', () => {
+    const html10 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-10.html'), 'utf-8');
+    assert.ok(
+      html10.includes('data-proto="crosslink" href="/protocol-04.html"'),
+      'protocol-10.html 본문에 /protocol-04.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+    );
+
+    const html04 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-04.html'), 'utf-8');
+    assert.ok(
+      html04.includes('data-proto="crosslink" href="/protocol-05.html"'),
+      'protocol-04.html 본문에 /protocol-05.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+    );
+  });
 });
+

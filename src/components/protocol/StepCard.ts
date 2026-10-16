@@ -1,11 +1,18 @@
 import type { ProtocolStep, FieldIdentificationSpec } from '../../types/protocol.types.ts';
 
 /**
- * 인라인 볼드(**...**) 및 중요 수치를 테크니컬 하이라이트 HTML로 변환합니다.
+ * 인라인 볼드(**...**), 중요 수치, 및 프로토콜 간 하이퍼텍스트 링크([텍스트](/protocol-XX.html))를
+ * 테크니컬 하이라이트/크로스링크 HTML로 변환합니다.
  */
 export function highlightTechnicalTerms(text: string): string {
-  // 1. **...** 마크다운 볼드 파싱
-  return text.replace(/\*\*(.*?)\*\*/g, (_match, p1) => {
+  if (!text) return '';
+  // 1. [링크 텍스트](/protocol-XX.html) 인라인 하이퍼텍스트 크로스링크 변환
+  const withLinks = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, url) => {
+    return `<a data-proto="crosslink" href="${url}" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">${label} ↗</a>`;
+  });
+
+  // 2. **...** 마크다운 볼드 파싱
+  return withLinks.replace(/\*\*(.*?)\*\*/g, (_match, p1) => {
     // 숫자나 측정 단위(cm, mm, 분, 방울, kg, ℃, 리터, 컵 등)가 포함된 경우 테크니컬 옐로우(#fde68a) 하이라이트
     const isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
     if (isMetric) {

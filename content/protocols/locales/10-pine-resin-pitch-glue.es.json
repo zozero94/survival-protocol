@@ -41,7 +41,7 @@
       "stepNumber": "01",
       "title": "Paso 1: Recolectar nódulos endurecidos de resina de pino en el tronco",
       "description": "1. **Identificar nódulos cristalinos**: Busque en troncos de pino maduros depósitos de **resina endurecida en forma de gota**.\n2. **Raspar con lasca de piedra**: Use una lasca de pedernal para **raspar suavemente los nódulos superficiales** sin dañar la corteza interior viva.\n3. **Reunir 100g de volumen**: Junte aproximadamente **el volumen de un puño (unos 100g)** de resina limpia sobre una hoja ancha.\n4. **Descartar residuos gruesos**: Retire manualmente hojas secas, tierra o astillas sueltas antes de fundir.",
-      "actionNote": "> Identificación y recolección: Distinga el **Pino** (corteza rojiza tipo caparazón de tortuga y agujas en **pares de 2**, para resina) del **Roble/Encino** (corteza oscura con surcos verticales profundos, hojas dentadas y bellotas, para carbón) con la guía fotográfica inferior.",
+      "actionNote": "> Identificación y recolección: Distinga el **Pino** (corteza rojiza tipo caparazón de tortuga y agujas en **pares de 2**, para resina) del **Roble/Encino** (corteza oscura con surcos verticales profundos, hojas dentadas y bellotas, para carbón) con la guía fotográfica inferior. ([Hacha de Piedra (PR-04)](/protocol-04.html) / [Horno de Carbón (PR-09)](/protocol-09.html))",
       "svgFileName": "pr10-step-01.svg",
       "svgLabels": [
         "FIG. 01 // RAW PINE RESIN HARVESTING",
@@ -141,7 +141,7 @@
       "stepNumber": "04",
       "title": "Paso 4: Mezclar carbón 1:1 y enfriar en barra sólida de pegamento de brea",
       "description": "1. **Incorporar carbón fino**: Espolvoree lentamente **50g de carbón de roble pulverizado** en la resina caliente restante en el plato.\n2. **Agitación rápida y viscosa**: Remueva enérgicamente con un palo de madera durante **1 a 2 minutos** hasta formar un alquitrán negro brillante.\n3. **Enrollar en punta de palo**: Gire el extremo de una rama gruesa en la brea caliente, **formando una bola redonda y gruesa tipo caramelo**.\n4. **Templar en agua fría**: Sumerja la bola en agua fría de río o enfríe al aire durante **5 minutos** para obtener una barra adhesiva dura como la obsidiana.",
-      "actionNote": "> Proporción de mezcla: La resina pura se rompe como vidrio. Una mezcla volumétrica estricta 1:1 con carbón previene roturas frágiles manteniendo máxima fuerza de adhesión.",
+      "actionNote": "> Proporción de mezcla: La resina pura se rompe como vidrio. Una mezcla volumétrica estricta 1:1 con carbón previene roturas frágiles manteniendo máxima fuerza de adhesión. ([Hacha de Piedra (PR-04)](/protocol-04.html) / [Cuerda Salvaje (PR-05)](/protocol-05.html))",
       "svgFileName": "pr10-step-04.svg",
       "svgLabels": [
         "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
@@ -173,5 +173,5 @@
     "description": "Especificaciones del ungüento antimicrobiano en concha marina, barra de pegamento de brea sobre madera dura y sección transversal del sellado impermeable en unión de hacha."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "fe0957bc7d74bf51"
+  "contentHash": "db453b0037c7d451"
 }

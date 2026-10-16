@@ -1,4 +1,5 @@
                                                               
+import { highlightTechnicalTerms } from './StepCard.js';
 
 /**
  * [Presentational Component]
@@ -15,7 +16,7 @@ export function renderChecklist(materials            )         {
         <div class="flex justify-between items-center">
           <span id="mat-name-${idx}" data-proto-item="materials" data-proto-prop="name" data-index="${idx}" class="font-bold text-white text-xs sm:text-sm">${m.name}</span>
         </div>
-        <div id="mat-desc-${idx}" data-proto-item="materials" data-proto-prop="desc" data-index="${idx}" class="text-[11px] font-sans text-[#aaa] mt-0.5 leading-relaxed">${m.desc}</div>
+        <div id="mat-desc-${idx}" data-proto-item="materials" data-proto-prop="desc" data-index="${idx}" class="text-[11px] font-sans text-[#aaa] mt-0.5 leading-relaxed">${highlightTechnicalTerms(m.desc)}</div>
       </div>
     </label>
   `

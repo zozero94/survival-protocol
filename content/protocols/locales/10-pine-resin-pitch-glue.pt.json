@@ -41,7 +41,7 @@
       "stepNumber": "01",
       "title": "Passo 1: Colher nódulos endurecidos de resina de âmbar no tronco do pinheiro",
       "description": "1. **Identificar nódulos cristalinos**: Procure em troncos de pinheiros depósitos de **resina endurecida em formato de gota**.\n2. **Raspar com lasca de pedra**: Use uma lasca de sílex para **raspar suavemente os nódulos superficiais** sem ferir a casca viva interna.\n3. **Reunir 100g de volume**: Junte aproximadamente **o volume de um punho (cerca de 100g)** de resina limpa sobre uma folha larga.\n4. **Descartar resíduos grossos**: Remova manualmente terra, agulhas secas ou lascas de casca antes de iniciar a fusão.",
-      "actionNote": "> Identificação e Coleta: Distinga o **Pinheiro** (casca avermelhada em placas de casco de tartaruga e agulhas em **pares de 2**, para resina) do **Carvalho** (casca escura com sulcos verticais profundos, folhas serrilhadas e bolotas, para carvão) usando o guia fotográfico abaixo.",
+      "actionNote": "> Identificação e Coleta: Distinga o **Pinheiro** (casca avermelhada em placas de casco de tartaruga e agulhas em **pares de 2**, para resina) do **Carvalho** (casca escura com sulcos verticais profundos, folhas serrilhadas e bolotas, para carvão) usando o guia fotográfico abaixo. ([Machado de Pedra (PR-04)](/protocol-04.html) / [Forno de Carvão (PR-09)](/protocol-09.html))",
       "svgFileName": "pr10-step-01.svg",
       "svgLabels": [
         "FIG. 01 // RAW PINE RESIN HARVESTING",
@@ -141,7 +141,7 @@
       "stepNumber": "04",
       "title": "Passo 4: Misturar carvão 1:1 e temperar em bastão sólido de cola de piche",
       "description": "1. **Adicionar carvão triturado**: Polvilhe aos poucos **50g de carvão de carvalho triturado** na resina quente restante no prato.\n2. **Mexer rápido até engrossar**: Misture vigorosamente com um graveto por **1 a 2 minutos** até formar uma pasta preta brilhante.\n3. **Enrolar na ponta do galho**: Gire a ponta de um galho grosso no piche quente, **moldando uma bola grossa e arredondada**.\n4. **Resfriar em água fria**: Mergulhe a ponta em água fria ou resfrie ao ar por **5 minutos** para endurecer em uma cola dura como obsidiana.",
-      "actionNote": "> Proporção da mistura: Resina pura quebra como vidro. Uma mistura volumétrica estrita de 1:1 com carvão evita quebras mantendo a máxima fixação.",
+      "actionNote": "> Proporção da mistura: Resina pura quebra como vidro. Uma mistura volumétrica estrita de 1:1 com carvão evita quebras mantendo a máxima fixação. ([Machado de Pedra (PR-04)](/protocol-04.html) / [Corda Selvagem (PR-05)](/protocol-05.html))",
       "svgFileName": "pr10-step-04.svg",
       "svgLabels": [
         "FIG. 04 // CHARCOAL ADMIXTURE & PITCH STICK",
@@ -173,5 +173,5 @@
     "description": "Especificações completas da pomada antimicrobiana em concha marinha, bastão de cola de piche em madeira dura e corte transversal da vedação impermeável no machado."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "fe0957bc7d74bf51"
+  "contentHash": "db453b0037c7d451"
 }

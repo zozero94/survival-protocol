@@ -50,7 +50,7 @@
       "stepNumber": "02",
       "title": "Rachar a ponta do cabo de madeira, encaixar a lâmina e preencher com resina",
       "description": "1. **Amarração de contenção antirrachadura**: Amarre firmemente um cordão **10cm abaixo** da ponta do cabo para bloquear rachaduras descontroladas.\n2. **Corte da fenda longitudinal**: Com uma pedra afiada, abra uma ranhura vertical de **profundidade 5–7cm** no topo do galho.\n3. **Assentamento profundo da lâmina**: Empurre a parte traseira grossa da pedra até o fundo da fenda central.\n4. **Preenchimento com epóxi de resina**: Misture resina de pinheiro derretida com **carvão moído na proporção 1:1** e compacte a mistura em todas as folgas.",
-      "actionNote": "> Regra da mistura composta: A resina pura fica quebradiça como vidro ao esfriar. O pó de carvão vegetal absorve impactos e forma um epóxi natural inquebrável.",
+      "actionNote": "> Regra da mistura composta: A resina pura fica quebradiça como vidro ao esfriar. O pó de carvão vegetal absorve impactos e forma um epóxi natural inquebrável. ([Cola de Resina (PR-10)](/protocol-10.html) / [Forno de Carvão (PR-09)](/protocol-09.html))",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Encaixar lâmina por cima",
@@ -70,7 +70,7 @@
       "stepNumber": "03",
       "title": "Amarrar firme em X com cipó úmido e secar na sombra",
       "description": "1. **Hidratação da fibra do líber**: Mergulhe em água a casca interna flexível de cipó para maximizar a elasticidade das fibras.\n2. **Amarração diagonal em X**: Cruze a fibra molhada em X sobre a lâmina e o cabo por **pelo menos 10 voltas bem tensas**.\n3. **Bloqueio do colar inferior**: Enrole o restante da fibra horizontalmente abaixo da junção e aperte com um nó de tração firme.\n4. **Secagem e cura à sombra**: Deixe secar totalmente em local ventilado e à sombra, longe do sol direto, para obter aperto máximo.",
-      "actionNote": "> Princípio de secagem na sombra: Nunca seque perto das chamas da fogueira, pois o calor queima e rompe as fibras. A secagem natural na sombra encolhe o cipó em 30%, travando a lâmina como aço.",
+      "actionNote": "> Princípio de secagem na sombra: Nunca seque perto das chamas da fogueira, pois o calor queima e rompe as fibras. A secagem natural na sombra encolhe o cipó em 30%, travando a lâmina como aço. ([Corda Selvagem (PR-05)](/protocol-05.html))",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Amarração em X com cipó",
@@ -97,6 +97,6 @@
     "description": "Uma lâmina de sílex lascada bifacialmente encaixada em cabo de carvalho fendido, amarrada firmemente em X com cipós e selada com resina de pinho."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "1815809587c73dc4"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "1c29ec86b6976738"
 }

@@ -77,6 +77,7 @@ export function isPureChosung(query        )          {
 export function cleanSearchText(text        )         {
   if (!text) return '';
   return text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/<[^>]*>/g, ' ')
     .replace(/[#*`_~[\]()]/g, ' ')
     .replace(/\s+/g, ' ')

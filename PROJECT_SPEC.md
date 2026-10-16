@@ -108,7 +108,7 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 16개 테스트 스위트 (107/107 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 16개 테스트 스위트 (110/110 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
@@ -122,11 +122,12 @@ primitive-survival/
    - 기계공학 유클리드 기하학 공차 검증: 상단 힌지 결합 이격 거리 $\le 2.0\text{px}$, 하단 걸림턱 결합 이격 거리 $\le 2.0\text{px}$, 빗장대 지지각 $45^\circ \pm 5^\circ$.
    - 고해상도(1000px) SVG-to-PNG 렌더링 기반 제미나이 멀티모달 비전 정밀 감수 및 자가 치유(Self-Healing) 좌표 교정.
    - 전용 독립 실행 CLI 제공: `npm run audit:svg-design [protocolId]`.
-3. **전문 테크니컬 라이팅 & 4대 심층 포스팅 품질 감수 (`PlainKoreanEditorService` & `PostingReviewService`)**:
+3. **전문 테크니컬 라이팅, 인라인 크로스링킹 & 콘텐츠 심층 보강 감수 (`PlainKoreanEditorService`, `PostingReviewService`, `CrossLinkerService`, `ContentEnrichmentService`)**:
    - 유아어/동화풍 표현(Fluff) 및 난해한 학술 용어(Jargon) 동시 100% 배제.
    - 1문장 1행동 번호형 액션 체크리스트(`01`, `02`) 및 핵심 수치 하이라이팅(`#fde68a`, `#ffffff`) 규격화.
-   - Stitch 디자인 자문 기반 `TECHNICAL DEEP DIVE // FIELD PRINCIPLE` 박스를 통한 심화 과학 원리 및 야전 식생 실사 식별 스펙 카드(`FieldIdentificationSpec`, `MIL-SPEC-BIO-409`) 통합 제공.
-   - **4대 심층 포스팅 리뷰 통과**: ① 야전 안전 Red-Team 심사, ② 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T & HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 현지화 검수 (`tests/16_posting_review_engine.test.ts`).
+   - **문맥 하이퍼텍스트 상호 링킹 (`protocol-cross-linker` / `CrossLinkerService`)**: 본문 및 준비물 설명 도중 연관된 다른 프로토콜(예: 송진 채취 시 `[돌칼이나 돌도끼](/protocol-04.html)`, 경화제 `[참나무 숯가루](/protocol-09.html)`, 돌도끼 결속 시 `[야생 칡덩굴 밧줄](/protocol-05.html)`)을 찾아 인라인 하이퍼텍스트 배지(`↗`)로 즉시 이동 가능하게 연결.
+   - **콘텐츠 깊이·벡터 밀도·실사 도감 보강 감수 (`content-enrichment-auditor` / `ContentEnrichmentService`)**: 내용의 의미성과 쉬운 인과 설명 여부 검수, 스텝별 벡터 도면 밀도 가감(`NEEDS_EXTRA_VECTOR` 추가 요청 vs `OVERDONE_PRUNE_CANDIDATE` 과잉 감축), 그리고 헷갈리는 수종/자재에 대한 실사 도감(`FieldIdentificationSpec`) 보강 판정.
+   - **4대 심층 포스팅 리뷰 통과 (`posting-quality-auditor`)**: ① 야전 안전 Red-Team 심사, ② 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T & HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 현지화 검수 (`tests/16_posting_review_engine.test.ts`).
 4. **타임스탬프 및 콘텐츠 해시 정밀 동기화 (`protocol-timestamp.ts`)**:
    - 실질 콘텐츠 SHA-256 해시 지문 기반으로 SVG/이미지/텍스트 변경 시에만 `updatedAt`이 갱신되는 멱등성 보장 (`npm run sync:timestamps`).
 5. **클라이언트 인메모리 검색 엔진 무결성 (`search.service.ts`, `search.state.ts`)**:

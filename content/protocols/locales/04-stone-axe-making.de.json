@@ -50,7 +50,7 @@
       "stepNumber": "02",
       "title": "Holzstiel oben spalten, Klinge einsetzen und mit Harz füllen",
       "description": "1. **Riss-Stopp-Manschette binden**: Binden Sie **10cm unter** dem Stielende zuerst eine feste Schnur, um unkontrolliertes Aufspalten zu stoppen.\n2. **Längsspalt einschneiden**: Spalten Sie die Spitze des Hartholzstiels mit einem scharfen Stein auf eine **Tiefe von 5–7cm** senkrecht ein.\n3. **Klingenrücken tief einpassen**: Schieben Sie den dicken Rücken der Steinklinge vollständig und fest in den vorbereiteten Spalt.\n4. **Harz-Kohle-Matrix einfüllen**: Mischen Sie geschmolzenes Kiefernharz mit feinem **Holzkohlepulver im Verhältnis 1:1** und verpressen Sie die Masse in alle Hohlräume.",
-      "actionNote": "> Komposit-Mischungsregel: Reines Kiefernharz wird nach dem Abkühlen glashart und spröde. Der Zusatz von Kohlepulver wirkt elastifizierend und erzeugt ein unzerbrechliches Natur-Epoxid.",
+      "actionNote": "> Komposit-Mischungsregel: Reines Kiefernharz wird nach dem Abkühlen glashart und spröde. Der Zusatz von Kohlepulver wirkt elastifizierend und erzeugt ein unzerbrechliches Natur-Epoxid. ([Kiefernharz-Kleber (PR-10)](/protocol-10.html) / [Holzkohlenmeiler (PR-09)](/protocol-09.html))",
       "svgFileName": "pr04-step-02.svg",
       "svgLabels": [
         "1. Klinge von oben einsetzen",
@@ -70,7 +70,7 @@
       "stepNumber": "03",
       "title": "Mit nasser Rankenrinde X-förmig umwickeln und im Schatten trocknen",
       "description": "1. **Bastfaser-Wässerung**: Weichen Sie elastische Ranken-Innenrinde gründlich in Wasser ein, um maximale Faserdehnung zu erzielen.\n2. **Diagonale X-Kreuzwicklung**: Wickeln Sie die nasse Rinde diagonal im X-Muster über Klinge und Stiel für **mindestens 10 straffe Touren**.\n3. **Halsmanschetten-Arretierung**: Wickeln Sie das Faserende horizontal um den Halsansatz und sichern Sie es mit einem Zugknoten.\n4. **Belüftete Schattentrocknung**: Lassen Sie die Axt an einem schattigen, windigen Ort vollständig aushärten, um maximale Schrumpfspannung zu erzielen.",
-      "actionNote": "> Schattentrocknungs-Prinzip: Niemals direkt am Lagerfeuer erhitzen, da Flammenhitze die Fasern versprödet. Bei langsamer Schattentrocknung schrumpft die Ranke um 30% und klemmt die Klinge wie Stahldraht ein.",
+      "actionNote": "> Schattentrocknungs-Prinzip: Niemals direkt am Lagerfeuer erhitzen, da Flammenhitze die Fasern versprödet. Bei langsamer Schattentrocknung schrumpft die Ranke um 30% und klemmt die Klinge wie Stahldraht ein. ([Wildseil (PR-05)](/protocol-05.html))",
       "svgFileName": "pr04-step-03.svg",
       "svgLabels": [
         "1. Nasse Ranke X-Wicklung",
@@ -97,6 +97,6 @@
     "description": "Eine beidseitig geschlagene Feuersteinklinge, tief im gespaltenen Eichenstiel verankert, mit X-Kreuz-Lianenbindung verschnürt und mit Kiefernharz versiegelt."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "1815809587c73dc4"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "1c29ec86b6976738"
 }
