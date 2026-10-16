@@ -1,4 +1,5 @@
 import type { SupportedLocale } from '../../i18n/locales.ts';
+import { renderSearchTriggerButton } from './SearchModal.ts';
 
 /**
  * [Presentational Component]
@@ -12,7 +13,7 @@ export function renderHeader(
 ): string {
   return `
 <header class="sticky top-0 z-40 bg-[#131313]/95 backdrop-blur border-b border-[#2d2d2d] transition-colors">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between font-mono text-xs">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 font-mono text-xs">
     <div class="flex items-center space-x-2 min-w-0">
       <a href="/" class="font-bold text-white tracking-widest hover:text-white/80 transition-colors flex items-center gap-1.5 shrink-0">
         <span class="inline-block w-2 h-2 bg-white"></span>
@@ -22,8 +23,11 @@ export function renderHeader(
       <div class="flex items-center gap-1 text-[#888] text-[11px] truncate">
         <span id="proto-header-category" data-proto="category">${categoryName}</span>
         <span>&gt;</span>
-        <span id="proto-header-title" data-proto="title" class="text-neutral-300 font-semibold truncate max-w-[220px] sm:max-w-md">${protocolTitle}</span>
+        <span id="proto-header-title" data-proto="title" class="text-neutral-300 font-semibold truncate max-w-[180px] sm:max-w-md">${protocolTitle}</span>
       </div>
+    </div>
+    <div class="flex items-center shrink-0">
+      ${renderSearchTriggerButton()}
     </div>
   </div>
 </header>

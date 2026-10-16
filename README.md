@@ -8,6 +8,7 @@
 현대 문명이 붕괴되고 글로벌 통신망과 전력망이 영구 단절되었을 때, 라이터나 플라스틱 등 현대 인공물에 일체 의존하지 않고 자연물과 두 손만으로 생명을 유지하기 위한 실전 원시 생존 기술 기록서입니다.
 
 * **완전 오프라인 PWA (Progressive Web App)**: 1회 방문 시 모든 교범 데이터와 스타일이 기기에 사전 캐시되어 비행기 모드 및 통신 두절 시에도 100% 작동
+* **인메모리 초고속 검색 & 초성 탐색 엔진**: `Fuse.js` 기반 0ms 반응 속도, 한글 자음 초성 분해 검색(`ㅅㅅ` -> 식수, `ㅂㅇ` -> 바위, `ㅈㅅㄱ` -> 정수기), 실시간 택티컬 하이라이팅 및 35자 스니펫, `Cmd+K` / `/` 단축키 및 방향키 내비게이션 완비
 * **7대 글로벌 다국어 지원**: `ko` (한국어), `en` (영어), `ja` (일본어), `es` (스페인어), `de` (독일어), `pt` (포르투갈어), `zh-TW` (중국어 번체) 무새로고침 0.01초 핫스왑
 * **6대 생존 공학 체계**: 식수 확보, 불 피우기, 은신처, 식량 채집, 원시 도구, 야전 의약
 * **5개 단위 페이징 피드 & 최신순 정렬 토글**: 최신 등록 순서 기본 정렬, 최신순 ↔ 오래된순 1-클릭 토글 및 0.01초 무새로고침 페이징
@@ -47,12 +48,14 @@ primitive-survival/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
 │   ├── site.config.ts     # 사이트 메타데이터, PWA 경로, AdSense 설정
 │   ├── i18n/              # [i18n Layer] 7대 언어 사전 및 무상태 판별 엔진
-│   ├── state/             # [State Layer] 페이징, 카테고리 필터, 테마, 선언적 바인딩 스크립트
+│   ├── state/             # [State Layer] 페이징, 카테고리 필터, 검색 런타임, 테마, 선언적 바인딩 스크립트
+│   │   ├── search.state.ts # 인메모리 검색, 초성 탐색 및 키보드 단축키(Cmd+K, /, ESC, 방향키) 런타임
 │   ├── components/        # [Presentational Layer] 순수 UI 컴포넌트 (DOM 무의존)
 │   │   ├── feed/          # FeedHeader, ProtocolCard, Pagination
-│   │   ├── layout/        # Header, StickyActionBar
+│   │   ├── layout/        # Header, StickyActionBar, SearchModal
 │   │   └── protocol/      # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning
 │   ├── services/          # [Service Layer]
+│   │   ├── search.service.ts # Fuse.js 퍼지 검색, 슬림 인덱스 구축, 택티컬 하이라이팅 및 스니펫
 │   │   ├── pwa.service.ts # 결정론적 Service Worker 캐시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 도면 기하학 충돌 감사기
@@ -65,6 +68,7 @@ primitive-survival/
 │   │   ├── seo.service.ts # sitemap.xml, robots.txt, Schema.org
 │   │   └── topic-curator.service.ts # 지식 트리 연계 차기 주제 큐레이터
 │   ├── utils/
+│   │   ├── hangul.util.ts # 유니코드 초성 분해(0.0001ms) 및 한글 자음 검색 판별 유틸
 │   │   └── protocol-timestamp.ts # Git 커밋 및 콘텐츠 해시 기반 타임스탬프 동기화 유틸
 │   ├── gdrive-sync.ts     # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
@@ -73,8 +77,8 @@ primitive-survival/
 ├── scripts/               # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
-├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, manifest, sitemap, images
-└── tests/                 # [Quality Audit] 13대 테스트 스위트 (91/91 PASS)
+├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, fuse.basic.min.js, manifest, sitemap
+└── tests/                 # [Quality Audit] 14대 테스트 스위트 (102/102 PASS)
 ```
 
 ---

@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { CONFIG } from './config.js';
                                                  
                                                          
+import { SUPPORTED_LOCALES } from './i18n/locales.js';
 import { UI_STRINGS } from './i18n/ui-strings.js';
 import { renderCanonicalProtocolPage } from './render.js';
 import { renderIndexPage } from './render-index.js';
@@ -11,6 +12,7 @@ import { ShortsService } from './services/shorts.service.js';
 import { TopicCuratorService } from './services/topic-curator.service.js';
 import { PwaService } from './services/pwa.service.js';
 import { SeoService } from './services/seo.service.js';
+import { SearchService,                     } from './services/search.service.js';
 import { EXTERNAL_RUNTIME_ASSETS, SITE_META } from './site.config.js';
 import { resolveProtocolTimestamps } from './utils/protocol-timestamp.js';
 
@@ -137,6 +139,15 @@ export async function buildSite(options                                         
     localesByProtocolId[proto.protocolId] = pMap;
   }
 
+  // 3-0. 검색 전용 인메모리 슬림 인덱스 구축 (7개국어 전수 자동 구성)
+  const searchDocsByLocale                                            = {}       ;
+  for (const lang of Object.keys(SUPPORTED_LOCALES)                     ) {
+    const protosForLang = allMasterProtocols.map((master) => {
+      return localesByProtocolId[master.protocolId]?.[lang] || master;
+    });
+    searchDocsByLocale[lang] = SearchService.buildSlimIndex(protosForLang, lang);
+  }
+
   // 3-1. 메인 인덱스 대문 피드 컴파일 (최신순 기본 정렬 + 5개 카드 단위 페이징 + 7개국어 무새로고침 핫스왑)
   const sortedForFeed = [...allMasterProtocols].sort((a, b) => {
     const timeA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
@@ -146,7 +157,7 @@ export async function buildSite(options                                         
     if (timeB !== timeA) return timeB - timeA;
     return numB - numA;
   });
-  const indexHtml = renderIndexPage(sortedForFeed, localesByProtocolId);
+  const indexHtml = renderIndexPage(sortedForFeed, localesByProtocolId, searchDocsByLocale);
   fs.writeFileSync(path.join(publicDir, 'index.html'), indexHtml, 'utf-8');
   log(`📑 [3/4 Presentational] 메인 인덱스 피드 컴파일 완료 (총 ${allMasterProtocols.length}편, 최신순 정렬, 5개 페이징 탑재): public/index.html`);
 
@@ -156,6 +167,15 @@ export async function buildSite(options                                         
     { url: '/', content: indexHtml },
   ];
   const compiledPages           = ['index.html'];
+
+  // 3-3. Fuse.js 브라우저 인메모리 검색 엔진 자산 배포 및 PWA 사전 캐시 등록
+  const fuseBrowserScript = SearchService.getBrowserFuseScript();
+  const fuseAssetDir = path.join(publicDir, 'assets');
+  fs.mkdirSync(fuseAssetDir, { recursive: true });
+  const fuseAssetPath = path.join(fuseAssetDir, 'fuse.basic.min.js');
+  fs.writeFileSync(fuseAssetPath, fuseBrowserScript, 'utf-8');
+  precacheEntries.push({ url: '/assets/fuse.basic.min.js', content: fuseBrowserScript });
+  log(`🔍 [Search Service] 인메모리 검색 엔진 배포 완료: public/assets/fuse.basic.min.js (7개국어 슬림 인덱스 탑재)`);
 
   for (let i = 0; i < allMasterProtocols.length; i++) {
     const proto = allMasterProtocols[i];
@@ -179,7 +199,7 @@ export async function buildSite(options                                         
     }
 
     const nextTitleKo = pMap.ko?.nextProtocolTitle;
-    const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko', nextTitleKo, nextHref);
+    const html = renderCanonicalProtocolPage(pMap, svgsMap, 'ko', nextTitleKo, nextHref, searchDocsByLocale);
     fs.writeFileSync(path.join(publicDir, fileName), html, 'utf-8');
     precacheEntries.push({ url: `/${fileName}`, content: html });
     precacheEntries.push({ url: `/protocol-${num}`, content: html });

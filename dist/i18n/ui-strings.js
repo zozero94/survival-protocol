@@ -58,6 +58,12 @@
                      
                         
                         
+                    
+                            
+                          
+                             
+                      
+                             
  
 
 export const UI_STRINGS                                     = {
@@ -120,6 +126,12 @@ export const UI_STRINGS                                     = {
     uploadDate: '등록일',
     createdPrefix: '등록',
     updatedPrefix: '최종 수정',
+    searchBtn: '[검색]',
+    searchPlaceholder: '생존 기술, 재료, 단계 검색... (초성 검색 가능: ㅅㅅ, ㅂㅇ)',
+    searchNoResults: '일치하는 생존 프로토콜이 없습니다',
+    searchShortcutHint: 'ESC 닫기 | ↑↓ 탐색 | Enter 이동',
+    searchBadge: '100% 오프라인 인메모리 검색',
+    searchResultsCount: '개 발견',
   },
   en: {
     brandArchive: 'TACTICAL SURVIVAL ARCHIVE',
@@ -180,6 +192,12 @@ export const UI_STRINGS                                     = {
     uploadDate: 'Date',
     createdPrefix: 'Created',
     updatedPrefix: 'Updated',
+    searchBtn: '[SEARCH]',
+    searchPlaceholder: 'Search protocols, materials, steps... (e.g. water, fire, trap)',
+    searchNoResults: 'No matching survival protocols found',
+    searchShortcutHint: 'ESC Close | ↑↓ Navigate | Enter Open',
+    searchBadge: '100% OFFLINE IN-MEMORY SEARCH',
+    searchResultsCount: 'found',
   },
   ja: {
     brandArchive: '生存戦術教本アーカイブ',
@@ -240,6 +258,12 @@ export const UI_STRINGS                                     = {
     uploadDate: '登録日',
     createdPrefix: '登録',
     updatedPrefix: '最終更新',
+    searchBtn: '[検索]',
+    searchPlaceholder: '生存技術、資材、手順を検索... (例: ろ過, 火起こし, 罠)',
+    searchNoResults: '一致する生存教本が見つかりません',
+    searchShortcutHint: 'ESC 閉じる | ↑↓ 移動 | Enter 開く',
+    searchBadge: '100% オフラインインメモリ検索',
+    searchResultsCount: '件発見',
   },
   es: {
     brandArchive: 'ARCHIVO DE SUPERVIVENCIA TÁCTICA',
@@ -300,6 +324,12 @@ export const UI_STRINGS                                     = {
     uploadDate: 'Fecha',
     createdPrefix: 'Publicado',
     updatedPrefix: 'Actualizado',
+    searchBtn: '[BUSCAR]',
+    searchPlaceholder: 'Buscar protocolos, materiales, pasos... (ej. agua, fuego)',
+    searchNoResults: 'No se encontraron protocolos de supervivencia coincidentes',
+    searchShortcutHint: 'ESC Cerrar | ↑↓ Navegar | Enter Abrir',
+    searchBadge: 'BÚSQUEDA 100% OFFLINE EN MEMORIA',
+    searchResultsCount: 'encontrados',
   },
   de: {
     brandArchive: 'TAKTIK-ÜBERLEBENSARCHIV',
@@ -360,6 +390,12 @@ export const UI_STRINGS                                     = {
     uploadDate: 'Datum',
     createdPrefix: 'Erstellt',
     updatedPrefix: 'Aktualisiert',
+    searchBtn: '[SUCHE]',
+    searchPlaceholder: 'Protokolle, Materialien, Schritte suchen... (z.B. Wasser, Feuer)',
+    searchNoResults: 'Keine passenden Überlebensprotokolle gefunden',
+    searchShortcutHint: 'ESC Schließen | ↑↓ Navigieren | Enter Öffnen',
+    searchBadge: '100% OFFLINE-SPEICHERSUCHE',
+    searchResultsCount: 'gefunden',
   },
   pt: {
     brandArchive: 'ARQUIVO DE SOBREVIVÊNCIA TÁCTICA',
@@ -380,7 +416,7 @@ export const UI_STRINGS                                     = {
     checklistDesc: 'Materiais naturais disponíveis em campo. Toque em cada item para registrar seu status de coleta.',
     itemsSecured: 'Garantidos',
     fieldTested: '[TESTADO EM CAMPO]',
-    procedureTitle: '// PROCEDIMENTO DE EXECUÇÃO (PROCEDURE)',
+    procedureTitle: '// PROCEDIMIENTO DE EXECUÇÃO (PROCEDURE)',
     stepsFlow: 'Etapas',
     fatalTitle: 'PERIGO // ALERTA DE ERRO FATAL',
     mustReadBeforeDrink: 'LEIA ANTES DE EXECUTAR',
@@ -420,6 +456,12 @@ export const UI_STRINGS                                     = {
     uploadDate: 'Data',
     createdPrefix: 'Criado',
     updatedPrefix: 'Atualizado',
+    searchBtn: '[BUSCAR]',
+    searchPlaceholder: 'Pesquisar protocolos, materiais, etapas... (ex: água, fogo)',
+    searchNoResults: 'Nenhum protocolo de sobrevivência encontrado',
+    searchShortcutHint: 'ESC Fechar | ↑↓ Navegar | Enter Abrir',
+    searchBadge: 'BUSCA 100% OFFLINE EM MEMÓRIA',
+    searchResultsCount: 'encontrados',
   },
   'zh-TW': {
     brandArchive: '生存戰術手冊檔案庫',
@@ -480,5 +522,11 @@ export const UI_STRINGS                                     = {
     uploadDate: '發布日期',
     createdPrefix: '發布',
     updatedPrefix: '最後更新',
+    searchBtn: '[搜尋]',
+    searchPlaceholder: '搜尋生存手冊、物資、步驟... (如: 飲水, 生火, 陷阱)',
+    searchNoResults: '查無相符的生存手冊',
+    searchShortcutHint: 'ESC 關閉 | ↑↓ 移動 | Enter 開啟',
+    searchBadge: '100% 離線內存即時搜尋',
+    searchResultsCount: '篇查獲',
   },
 };

@@ -3,5 +3,6 @@ export * from './checklist.state.js';
 export * from './locale.state.js';
 export * from './pwa.state.js';
 export * from './feed.state.js';
+export * from './search.state.js';
 
 

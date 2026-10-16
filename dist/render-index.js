@@ -7,11 +7,14 @@ import {
   renderFeedHeader,
   renderProtocolCard,
   renderPagination,
+  renderSearchModal,
 } from './components/index.js';
+import { SearchService,                     } from './services/search.service.js';
 import {
   getThemeRuntimeScript,
   getPwaRuntimeScript,
   getFeedRuntimeScript,
+  getSearchRuntimeScript,
 } from './state/index.js';
 
 /**
@@ -21,12 +24,20 @@ import {
  */
 export function renderIndexPage(
   protocols            ,
-  localesByProtocolId                                                             = {}
+  localesByProtocolId                                                             = {},
+  searchDocsByLocale                                                     = {}
 )         {
   const feedHeaderHtml = renderFeedHeader(protocols.length);
+  const searchModalHtml = renderSearchModal('ko');
   const cardsHtml = protocols.map((p) => renderProtocolCard(p)).join('\n');
   const totalPages = Math.ceil(protocols.length / 5) || 1;
   const paginationHtml = renderPagination(1, totalPages, protocols.length);
+
+  // 검색 전용 인메모리 슬림 인덱스 준비 (전체 프로토콜 기준)
+  const resolvedSearchDocs = { ...searchDocsByLocale };
+  if (!resolvedSearchDocs.ko || resolvedSearchDocs.ko.length === 0) {
+    resolvedSearchDocs.ko = SearchService.buildSlimIndex(protocols, 'ko');
+  }
 
   // 7개국어 피드 카드 경량 데이터 맵 구성
   const feedProtocolsMap         
@@ -52,6 +63,7 @@ export function renderIndexPage(
   const themeScript = getThemeRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
   const feedScript = getFeedRuntimeScript();
+  const searchScript = getSearchRuntimeScript(resolvedSearchDocs);
 
   return `<!DOCTYPE html>
 <html class="dark" lang="ko">
@@ -104,6 +116,7 @@ export function renderIndexPage(
   </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/fuse.basic.min.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -134,6 +147,7 @@ export function renderIndexPage(
   </div>
 
   ${feedHeaderHtml}
+  ${searchModalHtml}
 
   <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-2 flex-1 pb-16">
     <!-- 피드 카드 컨테이너 (한 페이지당 5개 노출) -->
@@ -165,6 +179,7 @@ export function renderIndexPage(
     ${themeScript}
     ${pwaScript}
     ${feedScript}
+    ${searchScript}
   </script>
 </body>
 </html>`;

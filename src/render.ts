@@ -10,14 +10,17 @@ import {
   renderChecklist,
   renderStepCards,
   renderFatalWarning,
+  renderSearchModal,
 } from './components/index.ts';
 import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG } from './site.config.ts';
 import { SeoService } from './services/seo.service.ts';
+import { SearchService, type SearchDocument } from './services/search.service.ts';
 import {
   getThemeRuntimeScript,
   getChecklistRuntimeScript,
   getLocaleRuntimeScript,
   getPwaRuntimeScript,
+  getSearchRuntimeScript,
 } from './state/index.ts';
 
 /**
@@ -30,7 +33,8 @@ export function renderCanonicalProtocolPage(
   svgsMap: Record<string, string> = {},
   defaultLocale: SupportedLocale = 'ko',
   nextProtocolTitle?: string,
-  nextProtocolHref: string = '/'
+  nextProtocolHref: string = '/',
+  searchDocsByLocale: Partial<Record<SupportedLocale, SearchDocument[]>> = {}
 ): string {
   const master = protocolsMap[defaultLocale] || Object.values(protocolsMap)[0];
   if (!master) {
@@ -42,7 +46,7 @@ export function renderCanonicalProtocolPage(
     if (!proto || !Array.isArray(proto.steps)) continue;
     for (const step of proto.steps) {
       if (!Array.isArray(step.svgLabels) || step.svgLabels.length === 0) {
-        const rawSvg = svgsMap[step.svgFileName] || step.svgCode || '';
+        const rawSvg = (step.svgFileName ? svgsMap[step.svgFileName] : '') || step.svgCode || '';
         if (rawSvg) {
           const extracted: string[] = [];
           const regex = /<text\b[^>]*>([\s\S]*?)<\/text>/gi;
@@ -64,7 +68,15 @@ export function renderCanonicalProtocolPage(
     }
   }
 
+  // 검색 전용 인메모리 슬림 인덱스 준비 (100% 오프라인 지원)
+  const resolvedSearchDocs = { ...searchDocsByLocale };
+  if (!resolvedSearchDocs[defaultLocale] || resolvedSearchDocs[defaultLocale]!.length === 0) {
+    const list = Object.values(protocolsMap).filter(Boolean) as Protocol[];
+    resolvedSearchDocs[defaultLocale] = SearchService.buildSlimIndex(list, defaultLocale);
+  }
+
   const headerHtml = renderHeader(master.category, master.title, defaultLocale);
+  const searchModalHtml = renderSearchModal(defaultLocale);
   const heroHtml = renderHeroSection(master);
   const outcomeHtml = master.outcome ? renderOutcomePreview(master.outcome, svgsMap) : '';
   const checklistHtml = renderChecklist(master.materials);
@@ -76,6 +88,7 @@ export function renderCanonicalProtocolPage(
   const checklistScript = getChecklistRuntimeScript();
   const localeScript = getLocaleRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
+  const searchScript = getSearchRuntimeScript(resolvedSearchDocs);
 
   return `<!DOCTYPE html>
 <html class="dark" lang="${defaultLocale}">
@@ -131,6 +144,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/fuse.basic.min.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -171,6 +185,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     ⚡ [통신 두절 감지] 외부 네트워크 단절 // 로컬 오프라인 캐시 교범으로 작동 중
   </div>
   ${headerHtml}
+  ${searchModalHtml}
 
   <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-5 space-y-6 flex-1 pb-28">
     ${heroHtml}
@@ -193,6 +208,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     ${checklistScript}
     ${localeScript}
     ${pwaScript}
+    ${searchScript}
 
     // 3. 선언적 이벤트 위임 (Event Delegation)
     document.addEventListener('click', function(e) {

@@ -1,5 +1,6 @@
 export * from './layout/Header.js';
 export * from './layout/StickyActionBar.js';
+export * from './layout/SearchModal.js';
 export * from './protocol/HeroSection.js';
 export * from './protocol/OutcomePreview.js';
 export * from './protocol/Checklist.js';

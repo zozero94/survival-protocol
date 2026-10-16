@@ -749,7 +749,9 @@ ${candidateLines}
         topic: topic || undefined,
         triggerDeploy: true,
         githubToken: this.githubToken,
-        onProgress: updateProgress,
+        onProgress: async (msg) => {
+          await updateProgress(msg);
+        },
       });
 
       const localeWarning = result.missingLocales?.length
@@ -814,7 +816,9 @@ ${candidateLines}
         instructions,
         triggerDeploy: true,
         githubToken: this.githubToken,
-        onProgress: updateProgress,
+        onProgress: async (msg) => {
+          await updateProgress(msg);
+        },
       });
 
       const localeWarning = result.missingLocales?.length

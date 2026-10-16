@@ -402,10 +402,11 @@ Rules:
   )                    {
     fs.mkdirSync(svgsDir, { recursive: true });
     this.ensurePlannedSvgLabels(protocol);
+    const padNum = protocol.protocolId.replace(/\D/g, '').padStart(2, '0');
 
     const savedFiles = await Promise.all(
       protocol.steps.map(async (step) => {
-        const fileName = step.svgFileName;
+        const fileName = step.svgFileName || `pr${padNum}-step-${step.stepNumber.padStart(2, '0')}.svg`;
         const planned = step.svgLabels && step.svgLabels.length > 0 ? [...step.svgLabels] : undefined;
         const rawSvgCode = await SvgGeneratorService.generateStepSvg(
           apiKey,
@@ -753,7 +754,7 @@ ${instructions}
     const baseSlug = path.basename(filePath, '.json');
 
     const stepsStatus = data.steps.map((s) => {
-      const svgPath = path.join(svgsDir, s.svgFileName);
+      const svgPath = path.join(svgsDir, s.svgFileName || '');
       const exists = fs.existsSync(svgPath);
       const size = exists ? fs.statSync(svgPath).size : 0;
       const svgContent = exists ? fs.readFileSync(svgPath, 'utf-8') : '';

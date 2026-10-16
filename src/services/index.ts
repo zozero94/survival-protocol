@@ -12,5 +12,6 @@ export * from './webhook-context.service.ts';
 export * from './svg-audit.service.ts';
 export * from './svg-design-auditor.service.ts';
 export * from './google-drive.service.ts';
+export * from './search.service.ts';
 
 

@@ -1,5 +1,6 @@
 export * from './layout/Header.ts';
 export * from './layout/StickyActionBar.ts';
+export * from './layout/SearchModal.ts';
 export * from './protocol/HeroSection.ts';
 export * from './protocol/OutcomePreview.ts';
 export * from './protocol/Checklist.ts';

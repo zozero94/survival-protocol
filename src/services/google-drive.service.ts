@@ -79,7 +79,7 @@ export class GoogleDriveService {
     this.cachedAccessToken = data.access_token;
     const expiresIn = typeof data.expires_in === 'number' ? data.expires_in : 3600;
     this.tokenExpiresAt = now + expiresIn * 1000;
-    return this.cachedAccessToken;
+    return this.cachedAccessToken!;
   }
 
   public async listFiles(folderId: string = this.folderId): Promise<DriveFileInfo[]> {

@@ -1,4 +1,5 @@
 import type { ProtocolCategory } from '../../types/protocol.types.ts';
+import { renderSearchTriggerButton } from '../layout/SearchModal.ts';
 
 /**
  * [Presentational Component]
@@ -37,18 +38,21 @@ export function renderFeedHeader(totalCount: number): string {
   return `
 <!-- 상단 긴급 고정 헤더 레일 -->
 <header class="border-b border-neutral-800 bg-black/90 backdrop-blur-md sticky top-0 z-40 px-4 sm:px-8 py-3">
-  <div class="max-w-5xl mx-auto flex items-center justify-between">
-    <div class="flex flex-col gap-0.5">
+  <div class="max-w-5xl mx-auto flex items-center justify-between gap-3">
+    <div class="flex flex-col gap-0.5 min-w-0">
       <div class="flex items-center gap-2">
-        <span data-i18n="feedHeaderTitle" class="font-mono text-xs sm:text-sm font-black tracking-widest text-white uppercase">[생존 교범 // SURVIVAL PROTOCOL]</span>
+        <span data-i18n="feedHeaderTitle" class="font-mono text-xs sm:text-sm font-black tracking-widest text-white uppercase truncate">[생존 교범 // SURVIVAL PROTOCOL]</span>
       </div>
-      <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-        <span data-i18n="feedCacheActive">오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)</span>
+      <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400 truncate">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+        <span data-i18n="feedCacheActive" class="truncate">오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)</span>
       </div>
     </div>
-    <div class="font-mono text-[11px] text-neutral-400 border border-neutral-800 px-2 py-0.5 hidden sm:block">
-      CATALOG: <span class="text-white font-bold">${totalCount}</span> PROTOCOLS
+    <div class="flex items-center gap-2 shrink-0">
+      ${renderSearchTriggerButton()}
+      <div class="font-mono text-[11px] text-neutral-400 border border-neutral-800 px-2 py-1 hidden md:block">
+        CATALOG: <span class="text-white font-bold">${totalCount}</span> PROTOCOLS
+      </div>
     </div>
   </div>
 </header>
