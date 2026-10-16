@@ -1,0 +1,182 @@
+{
+  "protocolId": "PR-11",
+  "category": "FOOD",
+  "title": "Cómo Tejer una Nasa de Sauce con Embudo Unidireccional para Capturar Peces",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PROTEÍNA PASIVA Y AHORRO DE ENERGÍA]",
+  "summary": "Perseguir peces veloces a mano o con lanza agota tus calorías vitales y falla más del 90% de las veces. Al tejer ramas flexibles de sauce ribereño en una cesta cónica con un embudo invertido unidireccional, los peces siguen el rastro de olor hacia adentro y quedan bloqueados por las puntas elásticas al intentar retroceder. Anclada en la corriente del río, captura peces sola mientras duermes o construyes tu refugio.",
+  "timeRequired": "50 min (10m corte de sauce + 25m tejido de aros y cuerpo + 15m embudo y anclaje en río)",
+  "successRate": "92% (manteniendo boca interior de 3 dedos y orientación aguas arriba)",
+  "difficulty": "Media (precaución con puntas de ramas en los ojos y piedras resbaladizas)",
+  "outputPerHour": "3–8 peces de agua dulce capturados pasivamente por noche",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "40–50 varas verdes flexibles de sauce o avellano (largo de brazo, 70–80cm)",
+      "desc": "Ramas verdes recién cortadas en la orilla con un [Hacha de Piedra o Lasca Afilada](/protocol-04.html), de la mitad del grosor de un meñique (~5mm), que se doblen sin romperse."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 ramas gruesas de sauce o lianas para los aros estructurales",
+      "desc": "Cuatro ramas verdes del grosor de un lápiz (~8–10mm) enrolladas en círculos para sostener la forma cónica de la nasa."
+    },
+    {
+      "id": "mat-03",
+      "name": "Cuerda resistente al agua de corteza interna de kudzu (15m en total)",
+      "desc": "Cordel vegetal trenzado mediante [Cuerda Salvaje de Fibras](/protocol-05.html). Sellar los nudos principales con [Pegamento Impermeable de Resina de Pino](/protocol-10.html) evita que se aflojen bajo el agua."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 piedras de río del tamaño de un puño y 4 estacas de madera del largo del antebrazo",
+      "desc": "Cantos rodados pesados para hundir la nasa en el lecho del río y estacas para fijarla contra la corriente."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 puñado de caracoles de río machacados o lombrices de tierra",
+      "desc": "Cebo natural envuelto en una hoja ancha perforada para liberar olor aguas abajo y atraer peces al interior."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Enrollar Ramas Gruesas en 4 Aros Circulares de Tamaño Gradual",
+      "description": "1. **Probar Elasticidad de las Varas**: Dobla lentamente a mano 4 ramas de sauce del grosor de un lápiz para comprobar que se curvan sin quebrarse.\n2. **Formar 4 Aros Graduales**: Enrolla las ramas en cuatro anillos circulares de **un palmo y medio (25cm de diámetro)**, **un palmo (20cm)**, **dos puños (15cm)** y **un puño (10cm)**.\n3. **Atar Extremos Superpuestos**: Superpón los extremos de cada aro por **dos dedos de ancho (~4cm)** y átalos firmemente con más de 10 vueltas de [Cuerda Salvaje](/protocol-05.html).\n4. **Alinear a Intervalos de 1 Palmo**: Coloca los cuatro aros de mayor a menor separados por **un palmo (~15cm)** para definir el cono.",
+      "actionNote": "> Identificación y Seguridad Ocular: Las ramas secas se parten bruscamente y pueden herir tus manos u ojos. Usa la guía fotográfica inferior para distinguir las **varas vivas de sauce** y el **cebo de caracol de río** ([Hacha de Piedra (PR-04)](/protocol-04.html) / [Cuerda Salvaje (PR-05)](/protocol-05.html)).",
+      "svgFileName": "pr11-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
+        "1. Aro Frontal Grande (1.5 Palmos / 25cm)",
+        "2. Dos Aros Intermedios (20cm y 15cm)",
+        "3. Aro Trasero Pequeño (1 Puño / 10cm)",
+        "4. Amarre con Cuerda (Separación de 15cm)"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Elasticidad del Sauce Ribereño y Pluma Olfativa de Cebos Acuáticos",
+        "text": "El sauce de ribera (Salix) posee fibras largas y alta humedad interna, lo que permite doblarlo en círculos cerrados sin fractura y resiste la putrefacción bajo el agua. Los caracoles acuáticos machacados liberan aminoácidos solubles que viajan con la corriente atrayendo a los peces.",
+        "fieldSpecs": [
+          {
+            "name": "Vara Viva de Sauce",
+            "scientificName": "Salix koreensis / Salix alba",
+            "categoryTag": "Árbol Ribereño / Armazón Elástico",
+            "imageFileName": "id-willow-tree.jpg",
+            "hudCode": "FIG. BIO-11A // MACRO OPTIC",
+            "hudStatus": "FLEX ELASTICITY: VERIFIED",
+            "traits": [
+              {
+                "label": "RAMA/TWIG",
+                "value": "Varas largas verde-amarillentas que **se doblan en forma de U completa sin romperse ni astillarse**."
+              },
+              {
+                "label": "HOJA/LEAF",
+                "value": "Hojas verdes **estrechas en forma de lanza (5–12cm)** con bordes finamente aserrados."
+              },
+              {
+                "label": "SEÑAL/SIGN",
+                "value": "Crece junto a bancos de grava húmeda en ríos; al raspar la corteza desprende un **aroma herbal fresco a salicilato**."
+              }
+            ],
+            "fieldUse": "Tejido de nasas pesqueras, arcos flexibles, infusión analgésica de corteza"
+          },
+          {
+            "name": "Cebo de Caracol de Río y Lombriz",
+            "scientificName": "Semisulcospira / Lumbricina",
+            "categoryTag": "Cebo Acuático / Atrayente Olfativo",
+            "imageFileName": "id-river-snail-bait.jpg",
+            "hudCode": "FIG. BIO-11B // MACRO OPTIC",
+            "hudStatus": "SCENT PLUME: VERIFIED",
+            "traits": [
+              {
+                "label": "CONCHA/SHELL",
+                "value": "Conchas **cónicas en espiral de color oscuro (1.5–3cm)** adheridas bajo piedras musgosas del río."
+              },
+              {
+                "label": "MACHACADO/CRUSH",
+                "value": "Golpea **suavemente la concha con un guijarro** para que los jugos se filtren lentamente durante más de 3 horas."
+              },
+              {
+                "label": "ALTERNATIVA/ALT",
+                "value": "Si no hay caracoles, excava en el barro húmedo de la orilla para obtener **lombrices rojas o saltamontes**."
+              }
+            ],
+            "fieldUse": "Cebo olfativo para nasas, carnada de anzuelo, proteína hervida de emergencia"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Tejer 30–40 Varas Rectas de Sauce a lo Largo para Formar el Cuerpo Cónico",
+      "description": "1. **Distribuir Varillas Longitudinales**: Coloca 30–40 varas rectas de sauce (70–80cm) alrededor de los cuatro aros con una separación de **un dedo de ancho (~1–1.5cm)**.\n2. **Amarrar Cada Cruce**: Usa una cuerda larga de corteza para envolver firmemente cada punto donde una varilla longitudinal cruza un aro circular.\n3. **Mantener la Tensión del Cono**: Junta gradualmente las varillas desde la boca ancha de 25cm hasta el aro trasero de 10cm.\n4. **Cerrar la Cola con Nudo Corredizo**: Reúne las puntas traseras detrás del aro más pequeño y átalas con un **nudo de lazo corredizo** fácil de abrir para sacar los peces.",
+      "actionNote": "> Regla de Separación: Si el espacio entre varillas supera el ancho de un dedo (1.5cm), los peces escaparán por los lados. Teje la rejilla tan tupida que solo entre la punta de tu dedo.",
+      "svgFileName": "pr11-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONICAL WICKER BODY WEAVING",
+        "30-40 Varillas de Sauce (Espacio 1-1.5cm)",
+        "Amarre Cruzado en los 4 Aros Circulares",
+        "Cesta Cónica Hidrodinámica (-70% Arrastre)",
+        "[CLAVE] Nudo Corredizo Trasero de Extracción"
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Reducción del Arrastre Hidrodinámico en Rejillas Cónicas",
+        "text": "Una rejilla longitudinal con separación de 1–1.5cm permite que la corriente fluya libremente, reduciendo la fuerza de arrastre del agua en **más del 70%** mientras retiene cualquier pez de más de **2cm** de ancho."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Construir el Embudo Invertido (Válvula Unidireccional) y Unirlo a la Boca",
+      "description": "1. **Formar el Cono del Embudo**: Reúne **16–20 ramitas delgadas y elásticas de sauce** (largo del antebrazo, ~30–35cm) formando un cono pequeño.\n2. **Ajustar Diámetros de Entrada y Salida**: Abre la boca exterior a **un palmo y medio (25cm)** para encajar en el cuerpo, y estrecha el cuello interior al grosor de **tres dedos juntos (5–6cm)**.\n3. **Dejar Libres las Puntas Interiores**: Deja los últimos **dos dedos (5cm)** de las puntas interiores sin atar para que se abran cuando el pez empuje al entrar y se cierren como espinas si intenta salir.\n4. **Insertar y Coser a la Boca**: Introduce el embudo dentro de la boca ancha del cuerpo principal y cose ambos bordes exteriores con [Cuerda Salvaje](/protocol-05.html).",
+      "actionNote": "> Calibre del Cuello: Si el agujero interior es más grande que tu puño, los peces nadarán hacia afuera. Mantenlo al ancho de tres dedos (5–6cm) para que funcione como válvula antirretorno.",
+      "svgFileName": "pr11-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ONE-WAY INVERTED FUNNEL VALVE",
+        "Borde Exterior Unido a la Boca de 25cm",
+        "Puntas Elásticas Interiores (Cuello 5-6cm)",
+        "Se Abre al Entrar y Bloquea el Retroceso",
+        "[CLAVE] Entrada Unidireccional Sin Escape"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Mecanismo de Válvula Antirretorno por Puntas en Voladizo",
+        "text": "Cuando el pez avanza hacia el interior del cono, su cabeza hidrodinámica separa suavemente las ramitas flexibles. Una vez dentro de la cámara, cualquier intento de retroceder choca contra el anillo de puntas convergentes."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Cargar Piedras de Lastre y Cebo, y Anclar con Estacas en la Corriente",
+      "description": "1. **Introducir Lastre y Bolsa de Cebo**: Abre el nudo trasero, mete **2 piedras del tamaño de un puño** y una hoja perforada con **caracoles machacados y lombrices**, y vuelve a atar la cola.\n2. **Elegir Canal Entre Rocas**: Busca un paso estrecho de agua entre rocas de **profundidad hasta la rodilla (30–50cm)** o junto a plantas acuáticas.\n3. **Orientar la Boca Aguas Arriba**: Hunde la nasa en el fondo con la **boca del embudo mirando aguas arriba (o en diagonal a la corriente)** para que el olor del cebo baje con el agua.\n4. **Fijar con 4 Estacas y Rocas Laterales**: Clava **4 estacas de madera del largo del antebrazo** a ambos lados de la nasa y calza piedras pesadas en los costados para que la corriente nocturna no la arrastre.",
+      "actionNote": "> Recolección y Cocción Segura: Por la mañana, suelta el nudo trasero para vaciar los peces. Cocina siempre el pescado de río completamente sobre un [Fogón Dakota Sin Humo](/protocol-06.html) o [Brasas de Carbón de Roble](/protocol-09.html) para eliminar parásitos.",
+      "svgFileName": "pr11-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
+        "2 Piedras de Lastre y Cebo de Caracol Machacado",
+        "Corriente del Río y Difusión de Olor Aguas Abajo",
+        "4 Estacas de Madera y Rocas de Soporte Lateral",
+        "[CLAVE] Peces Atraídos Aguas Arriba y Atrapados"
+      ],
+      "deepDive": {
+        "badge": "FIELD ECOLOGY",
+        "title": "Reotaxis Positiva y Rastreo Olfativo en Peces de Río",
+        "text": "Los peces de agua dulce muestran **reotaxis positiva**: nadan instintivamente contra la corriente para oxigenar sus branquias y detectar alimento. Al difundirse los aminoácidos del cebo aguas abajo, los peces remontan el rastro directo hacia el embudo."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Lanzar la nasa ligera al agua sin piedras de lastre o comer pescado de río crudo",
+    "description": "La madera de sauce flota; sin piedras pesadas dentro y 4 estacas clavadas en el fondo, la corriente arrastrará y perderá tu nasa en pocos minutos. Además, comer pescado de agua dulce crudo provoca infecciones graves por parásitos hepáticos y bacterias.",
+    "consequence": "Consecuencia: Pérdida total de la trampa en la corriente o infección parasitaria/bacteriana incapacitante"
+  },
+  "shortsScript": {
+    "hook": "¡Deja de gastar energías persiguiendo peces a mano! ¡Haz esta trampa de sauce que atrapa peces mientras duermes!",
+    "body": "Enrolla ramas flexibles de sauce en cuatro aros desde un palmo y medio hasta el tamaño de un puño. Teje 40 varas rectas separadas por el ancho de un dedo para formar un cesto cónico. ¡El secreto es el embudo invertido en la entrada con un cuello de tres dedos! Mete dos piedras y caracoles machacados, y fíjala con estacas en el río.",
+    "outro": "Los peces entran siguiendo el olor y las puntas les impiden salir. ¡Mira el plano completo en el enlace del perfil!"
+  },
+  "outcome": {
+    "svgFileName": "pr11-outcome.svg",
+    "title": "Nasa de Sauce con Embudo Unidireccional Completada y Corte Subacuático",
+    "description": "Sección longitudinal mostrando los 4 aros graduales, cuerpo cónico de varas de sauce a 1cm, embudo antirretorno de 5cm, 2 piedras de lastre, bolsa de cebo de caracol y 4 estacas de fijación en el lecho del río."
+  },
+  "createdAt": "2026-10-16T13:38:00.000Z",
+  "contentHash": "037d4ce0763a3aa2"
+}

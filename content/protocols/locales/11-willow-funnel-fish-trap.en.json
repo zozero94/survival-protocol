@@ -1,0 +1,182 @@
+{
+  "protocolId": "PR-11",
+  "category": "FOOD",
+  "title": "Weaving a One-Way Willow Funnel Fish Trap for Passive Stream Fishing",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PASSIVE PROTEIN HARVEST & CALORIE CONSERVATION]",
+  "summary": "Chasing swift fish by hand or with a wooden spear drains vital calories and fails over 90% of the time. By weaving flexible riverside willow shoots into a conical basket fitted with an inward-narrowing check-valve funnel, fish follow the scent trail inside and are blocked from backing out by converging twig tips. Anchored in a stream riffle, it passively harvests fish while you sleep or build shelter.",
+  "timeRequired": "50 mins (10m willow cutting + 25m frame & rib weaving + 15m funnel lock & stream anchoring)",
+  "successRate": "92% (with 3-finger inner funnel throat & upstream channel alignment)",
+  "difficulty": "Medium (watch for springing twig ends & slippery river stones)",
+  "outputPerHour": "3–8 freshwater fish captured passively overnight per deployment",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "40–50 flexible green willow or hazel shoots (forearm-to-arm length, 70–80cm)",
+      "desc": "Freshly cut shoots about half the thickness of a pinky finger (~5mm) harvested along the riverbank using a [Stone Axe or Sharp Stone Flake](/protocol-04.html). Select live green shoots that bend without snapping."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 thicker willow branches or vines for structural hoop rings",
+      "desc": "Pencil-thick (~8–10mm) green branches coiled into circular hoops to hold the conical body open against water pressure."
+    },
+    {
+      "id": "mat-03",
+      "name": "Water-resistant wild kudzu or inner bark cordage (15m total length)",
+      "desc": "Twisted plant fiber cordage made via [Wild Bast Fiber Cordage](/protocol-05.html). Sealing main hoop knots with [Waterproof Pine Pitch Glue](/protocol-10.html) prevents loosening underwater."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 fist-sized river ballast stones & 4 forearm-length wooden anchor stakes",
+      "desc": "Heavy river cobbles to sink the buoyant wicker trap flat on the riverbed, plus wooden stakes to pin it against rolling in strong current."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 handful of crushed freshwater snails or riverbank earthworms",
+      "desc": "Natural olfactory bait wrapped in a pierced green leaf to release amino-acid scent trails downstream and lure fish inside."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Coil Thick Branches into 4 Graduated Circular Hoop Rings",
+      "description": "1. **Test Green Shoot Flexibility**: Slowly bend 4 pencil-thick willow branches by hand to verify they curve smoothly into a circle without cracking.\n2. **Form 4 Graduated Hoop Sizes**: Coil the branches into four circular rings measuring **1.5 hand-spans (25cm diameter)**, **1 hand-span (20cm)**, **two-fist width (15cm)**, and **one-fist width (10cm)**.\n3. **Lash Overlapping Ends**: Overlap the ends of each ring by **two finger-widths (~4cm)** and bind tightly with 10+ wraps of [Wild Bast Cordage](/protocol-05.html).\n4. **Align at 1-Span Intervals**: Lay the four rings in descending order spaced **one hand-span (~15cm) apart** to establish the conical taper.",
+      "actionNote": "> Material ID & Eye Safety: Brittle dead twigs snap sharply and can injure your hands or eyes. Use the macro field guide below to identify flexible live **Stream Willow** shoots and **Freshwater Snail Bait** ([Stone Axe (PR-04)](/protocol-04.html) / [Wild Cordage (PR-05)](/protocol-05.html)).",
+      "svgFileName": "pr11-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
+        "1. Front Mouth Hoop (1.5 Spans / 25cm Dia)",
+        "2. Two Middle Hoops (20cm & 15cm Dia)",
+        "3. Tail Ring Hoop (1 Fist / 10cm Dia)",
+        "4. Cordage Lashing (15cm Spacing Interval)"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Willow Shoot Flexural Elasticity & Aquatic Bait Scent Plumes",
+        "text": "Riparian willow (Salix) possesses long cellulose fibers and high sap moisture, allowing tight circular bending without fracture and high rot resistance underwater. Crushed freshwater snails release water-soluble amino acids that disperse downstream as a powerful chemotactic lure.",
+        "fieldSpecs": [
+          {
+            "name": "Stream Willow Shoot",
+            "scientificName": "Salix koreensis / Salix alba",
+            "categoryTag": "Riparian Hardwood / High-Flex Trap Frame",
+            "imageFileName": "id-willow-tree.jpg",
+            "hudCode": "FIG. BIO-11A // MACRO OPTIC",
+            "hudStatus": "FLEX ELASTICITY: VERIFIED",
+            "traits": [
+              {
+                "label": "TWIG",
+                "value": "Slender yellowish-green to smooth brown shoots that **bend into a full U-loop without snapping or splintering**."
+              },
+              {
+                "label": "LEAF",
+                "value": "Narrow **lance-shaped green leaves (5–12cm long)** with finely serrated edges and pale undersides."
+              },
+              {
+                "label": "SIGN",
+                "value": "Grows along wet gravel bars and stream edges; scraping the green inner bark releases a **crisp herbal salicylate scent**."
+              }
+            ],
+            "fieldUse": "Conical fish traps, flexible bow-drill bows, willow bark pain-relief infusion"
+          },
+          {
+            "name": "Freshwater Snail & Worm Bait",
+            "scientificName": "Semisulcospira / Lumbricina",
+            "categoryTag": "Aquatic Bait / Chemo-Attractant",
+            "imageFileName": "id-river-snail-bait.jpg",
+            "hudCode": "FIG. BIO-11B // MACRO OPTIC",
+            "hudStatus": "SCENT PLUME: VERIFIED",
+            "traits": [
+              {
+                "label": "SHELL",
+                "value": "Dark **conical spiral shells (1.5–3cm)** clinging to the underside of wet, mossy stream rocks."
+              },
+              {
+                "label": "CRUSH",
+                "value": "Lightly **crack the shell with a pebble** so tissue fluids seep out slowly over 3+ hours in moving water."
+              },
+              {
+                "label": "ALT",
+                "value": "If snails are scarce, dig under damp riverbank leaf litter for **red earthworms or grasshoppers** wrapped in a pierced leaf."
+              }
+            ],
+            "fieldUse": "Fish trap scent bait, gorge hook bait, boiled emergency survival protein"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Weave 30–40 Straight Willow Shoots Longitudinally into a Conical Body",
+      "description": "1. **Space Longitudinal Ribs**: Arrange 30–40 straight arm-length (70–80cm) willow shoots around the outside of the four hoops at **one finger-width (~1–1.5cm) intervals**.\n2. **Cross-Lash Every Intersection**: Weave a long strand of bark cordage tightly around each junction where a longitudinal shoot crosses a circular hoop.\n3. **Taper the Cone Smoothly**: Draw the straight ribs inward gradually from the wide 25cm mouth ring down to the narrow 10cm tail ring.\n4. **Tie Quick-Release Tail Knot**: Gather the protruding shoot tips behind the smallest tail ring and bind them with a **slip-loop knot** that unties easily for fish retrieval.",
+      "actionNote": "> Rib Spacing Rule: If gaps between ribs exceed one finger-width (1.5cm), trapped fish will wriggle out sideways. Keep the lattice tight enough that only your fingertip fits through.",
+      "svgFileName": "pr11-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONICAL WICKER BODY WEAVING",
+        "30-40 Willow Ribs (1-1.5cm Finger Gap)",
+        "Cross-Lashing at All 4 Hoop Junctions",
+        "Streamlined Cone Cuts Water Drag by 70%",
+        "[KEY] Slip-Loop Tail Knot for Easy Emptying"
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Hydrodynamic Drag Reduction Across a Conical Lattice",
+        "text": "A 1–1.5cm longitudinal rib grid allows stream current to pass freely with minimal turbulence, reducing hydrodynamic drag by **over 70%** while physically retaining any freshwater fish wider than **2cm**."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Build the Inward-Narrowing Funnel Valve and Sew into the Mouth",
+      "description": "1. **Assemble Funnel Tines**: Gather **16–20 slender, springy willow twigs** (forearm length, ~30–35cm) into a smaller cone.\n2. **Set Outer & Inner Diameters**: Flare the front opening to **1.5 hand-spans (25cm)** to match the main basket mouth, tapering the inner throat down to **three fingers wide (5–6cm)**.\n3. **Leave Inner Tine Tips Unbound**: Leave the final **two finger-widths (5cm)** of the inner twig tips untied so they flex apart when a fish pushes inward and spring shut behind it.\n4. **Insert & Lash to Basket Mouth**: Push the funnel cone inside the wide front opening of the main body and stitch both outer rims tightly together with [Wild Cordage](/protocol-05.html).",
+      "actionNote": "> Throat Gauge: If the inner funnel opening is wider than your fist, fish will swim back out. Keep the throat at a three-finger bundle width (5–6cm) so the springy tips act as a one-way valve.",
+      "svgFileName": "pr11-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ONE-WAY INVERTED FUNNEL VALVE",
+        "Funnel Outer Rim Lashed to 25cm Mouth",
+        "Flexible Unbound Inner Tips (5-6cm Throat)",
+        "Flexes Open on Entry & Blocks Reversal",
+        "[KEY] One-Way Entry & Zero Reverse Escape"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Elastic Cantilever Check-Valve Geometry",
+        "text": "As a fish swims forward into the narrowing cone, its streamlined head easily deflects the cantilevered willow tips outward. Once inside the holding chamber, any attempt to swim backward catches against the converging sharp twig ends."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Load Ballast Stones & Bait, Then Anchor in a Stream Riffle",
+      "description": "1. **Load Ballast & Bait Pouch**: Untie the tail knot, place **2 fist-sized river stones** and a pierced leaf pouch of **crushed snails & worms** inside, then retie the tail securely.\n2. **Select Riffle Channel**: Locate a knee-deep (**30–50cm**) stream constriction between boulders or along undercut bank vegetation where fish funnel naturally.\n3. **Aim Funnel Into Current**: Submerge the trap on the riverbed with the **funnel mouth facing upstream (or diagonally across the current)** so bait scent washes downstream into approaching fish.\n4. **Pin with 4 Stakes & Side Rocks**: Drive **4 forearm-length wooden stakes** firmly into the riverbed on both sides of the basket and wedge heavy stones against the flanks so strong current cannot roll the trap.",
+      "actionNote": "> Harvest & Cooking Safety: In the morning, pull the tail slip-knot to empty your catch. Always cook freshwater fish thoroughly over a [Dakota Smokeless Fire](/protocol-06.html) or [Oak Charcoal Embers](/protocol-09.html) to eliminate waterborne parasites.",
+      "svgFileName": "pr11-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
+        "2 Internal Ballast Stones & Crushed Snail Bait",
+        "Downstream Scent Plume & Current Direction",
+        "4 Wooden Riverbed Stakes & Side Boulders",
+        "[KEY] Fish Swim Upstream Into Funnel & Lock Inside"
+      ],
+      "deepDive": {
+        "badge": "FIELD ECOLOGY",
+        "title": "Positive Rheotaxis and Olfactory Plume Tracking in Stream Fish",
+        "text": "Freshwater stream fish exhibit **positive rheotaxis**—instinctively orienting head-first into oncoming current to maximize gill oxygenation and intercept drifting food. When crushed snail amino acids drift downstream from an upstream-facing funnel, fish track the scent plume straight into the valve."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Deploying the buoyant wicker trap without internal ballast stones or eating raw freshwater fish",
+    "description": "Willow wood is naturally buoyant; without heavy internal ballast stones and 4 riverbed stakes, stream currents will sweep your trap away within minutes. Furthermore, eating raw freshwater fish exposes you to liver flukes and severe bacterial dysentery.",
+    "consequence": "Consequence: Complete loss of the fish trap in the current or debilitating parasitic/bacterial infection"
+  },
+  "shortsScript": {
+    "hook": "Stop wasting calories chasing fish by hand! Weave this one-way willow funnel trap that catches fish while you sleep!",
+    "body": "Coil green willow branches into four graduated hoops from one-and-a-half hand-spans down to fist size. Lash 40 straight willow shoots across the hoops spaced one finger-width apart. Now build a small inverted cone with a three-finger throat and lash it inside the front mouth! Drop two fist-sized rocks and crushed river snails inside, then stake it in a knee-deep stream channel!",
+    "outro": "Fish follow the scent in through the flexible twig tips and can never swim back out. Check the full blueprint in the profile link!"
+  },
+  "outcome": {
+    "svgFileName": "pr11-outcome.svg",
+    "title": "Completed One-Way Willow Funnel Fish Trap & Submerged Stream Cutaway Spec",
+    "description": "Longitudinal cutaway showing the 4 graduated hoops, 1cm-spaced willow rib cone, inward-converging 5cm check-valve funnel tips, 2 internal ballast cobbles, crushed snail bait pouch, and 4 riverbed anchor stakes holding captured fish."
+  },
+  "createdAt": "2026-10-16T13:38:00.000Z",
+  "contentHash": "037d4ce0763a3aa2"
+}

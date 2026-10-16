@@ -31,6 +31,7 @@
 | **FOOD** | [나뭇가지 3개와 바위로 짐승 잡는 법 (숫자 4 모양 돌 덫)](public/protocol-08.html) | `pr08-outcome.jpg` / `.svg` | 4단계 (실물 3D 이미지 4종) | 7개국어 완비 | ✅ 라이브 |
 | **FIRE** | [흙구덩이 속에서 공기를 막아 나무를 단단한 숯으로 굽는 법](public/protocol-09.html) | `pr09-outcome.svg` | 4단계 (FIG 01~04) | 7개국어 완비 | ✅ 라이브 |
 | **MEDICINE** | [소나무 송진을 녹여 굳히는 상처 소독 연고 및 만능 방수 접착제](public/protocol-10.html) | `pr10-outcome.svg` | 4단계 (FIG 01~04 + 식생 실사 2종) | 7개국어 완비 | ✅ 라이브 |
+| **FOOD** | [버드나무 가지를 엮어 들어간 물고기가 빠져나오지 못하는 원시 깔때기 통발](public/protocol-11.html) | `pr11-outcome.svg` | 4단계 (FIG 01~04 + 식생·미끼 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -40,10 +41,10 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-10)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-11)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
 │   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생 식별 에셋 (pr08-*.jpg, id-*.jpg)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 69종: 스텝 39종 + 결과 10종 + 다국어)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 74종: 스텝 43종 + 결과 11종 + 다국어)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -58,6 +59,7 @@ primitive-survival/
 │   ├── services/          # [Service Layer]
 │   │   ├── search.service.ts # Fuse.js 퍼지 검색, 슬림 인덱스 구축, 택티컬 하이라이팅 및 스니펫
 │   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
+│   │   ├── content-enrichment.service.ts # 문맥 하이퍼텍스트 크로스링커 & 콘텐츠/벡터/실사 보강 감수 엔진
 │   │   ├── pwa.service.ts # 결정론적 Service Worker 캐시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 도면 기하학 충돌 감사기
@@ -81,7 +83,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 16대 테스트 스위트 (110/110 PASS)
+└── tests/                 # [Quality Audit] 16대 테스트 스위트 (111/111 PASS)
 ```
 
 ---
@@ -110,7 +112,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(110개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성, 16) 4대 포스팅 품질 심사 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진)*
+*(111개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성, 16) 4대 포스팅 품질 심사 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash

@@ -1,4 +1,5 @@
-import { Protocol } from '../types/protocol.types.js';
+                                                           
+
 
                                           
                            
@@ -136,6 +137,13 @@ const PROTOCOL_DEPENDENCY_CATALOG                        = [
     defaultLabelKo: '소나무 송진 방수 접착제 및 소독 연고',
     keywords: /(소나무\s*송진|송진\s*접착제|방수\s*접착제|상처\s*소독\s*연고|천연\s*에폭시|pine\s*resin|pitch\s*glue)/i,
     rationale: '돌도끼 결속 방수 코팅과 야생 외상 소독에 필수적인 송진 정제 프로토콜과 연결됩니다.',
+  },
+  {
+    protocolId: 'PR-11',
+    url: '/protocol-11.html',
+    defaultLabelKo: '원시 버드나무 깔때기 통발 어로법',
+    keywords: /(버드나무\s*통발|깔때기\s*통발|어로\s*통발|물고기\s*함정|fish\s*trap|willow\s*funnel)/i,
+    rationale: '수면 중 강물에서 민물고기를 자동으로 포획하는 원시 버드나무 통발 프로토콜과 연결됩니다.',
   },
 ];
 
@@ -363,27 +371,27 @@ export class ContentEnrichmentService {
         .map(l => l.trim())
         .filter(l => /^\d+\./.test(l));
 
-      if (numberedLines.length < 3) {
-        meaningfulScore -= 10;
+      if (numberedLines.length < 2) {
+        meaningfulScore -= 15;
         claritySuggestions.push(
-          `Step ${step.stepNumber}: 행동 절차가 ${numberedLines.length}개로 너무 적습니다. 독자가 빈틈없이 따라 할 수 있도록 3~4개의 구체적 동작으로 보강하세요.`
+          `Step ${step.stepNumber}: 행동 절차가 ${numberedLines.length}개로 너무 적습니다. 독자가 빈틈없이 따라 할 수 있도록 최소 2~4개의 구체적 동작으로 보강하세요.`
         );
       }
 
       // 행동의 이유(목적/원리 연결어)가 전혀 없으면 보강 제안
-      const hasReasonContext = /(위해|도록|막기|방지|야만|하면|되어|원리|덕분에)/.test(
-        `${step.description} ${step.actionNote}`
+      const hasReasonContext = /(위해|도록|막기|방지|야만|하면|되어|원리|덕분에|효과|이유|역할|유지|차단|보호|걸러|사멸|제거|분산|저하|흡수)/.test(
+        `${step.description} ${step.actionNote} ${step.deepDive?.text || ''}`
       );
       if (!hasReasonContext) {
-        meaningfulScore -= 8;
+        meaningfulScore -= 10;
         claritySuggestions.push(
           `Step ${step.stepNumber}: 단순 지시만 있고 '왜 이렇게 해야 하는지' 이유가 부족합니다. 초보자가 원리를 이해하도록 인과 설명을 덧붙이세요.`
         );
       }
 
-      // 너무 긴 단일 문장(220자 초과) 가독성 경고
+      // 너무 긴 단일 문장(240자 초과) 가독성 경고
       for (const line of numberedLines) {
-        if (line.length > 220) {
+        if (line.length > 240) {
           meaningfulScore -= 5;
           claritySuggestions.push(
             `Step ${step.stepNumber}: 한 줄이 ${line.length}자로 너무 깁니다. 핵심 동작과 부연 설명을 나누어 읽기 쉽게 다듬으세요.`

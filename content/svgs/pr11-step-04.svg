@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg04" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#081018"/>
+      <stop offset="100%" stop-color="#0b1924"/>
+    </linearGradient>
+    <linearGradient id="riverRock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="60%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow04" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <pattern id="grid04" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#142636" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg04)"/>
+  <rect width="400" height="400" fill="url(#grid04)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#263545" stroke-width="1"/>
+
+  <!-- Top HUD Header -->
+  <rect x="16" y="14" width="368" height="28" fill="#101720" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // STREAM CHANNEL ANCHORING &amp; BAIT PLUME</text>
+
+  <!-- Stream Water Current Flow Lines (Right to Left: Upstream -> Downstream) -->
+  <g stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.55" fill="none">
+    <path d="M 380 150 C 300 155, 180 155, 25 150"/>
+    <path d="M 380 280 C 300 275, 180 275, 25 280"/>
+  </g>
+
+  <!-- Scent Plume Diffusing Downstream (Amber Dotted Waves) -->
+  <g stroke="#fde68a" stroke-width="1.4" stroke-dasharray="3,4" opacity="0.75" fill="none">
+    <path d="M 215 215 C 160 200, 95 190, 25 182"/>
+    <path d="M 215 215 C 160 215, 95 215, 20 215"/>
+    <path d="M 215 215 C 160 230, 95 240, 25 248"/>
+  </g>
+
+  <!-- Submerged Conical Trap Anchored Between Rocks & 4 Stakes -->
+  <g filter="url(#shadow04)">
+    <!-- Surrounding Stream Channel Boulders -->
+    <ellipse cx="210" cy="132" rx="48" ry="18" fill="url(#riverRock)" stroke="#94a3b8" stroke-width="1"/>
+    <ellipse cx="210" cy="298" rx="52" ry="18" fill="url(#riverRock)" stroke="#94a3b8" stroke-width="1"/>
+
+    <!-- Conical Fish Trap Body (Mouth facing Left/Downstream or Upstream channel) -->
+    <polygon points="115,155 315,192 315,238 115,275" fill="#1e2918" stroke="#849b5c" stroke-width="3"/>
+    <!-- Inner Funnel Valve -->
+    <polyline points="115,160 195,202 195,228 115,270" fill="none" stroke="#fde68a" stroke-width="2.5"/>
+
+    <!-- 2 Internal Ballast Stones & Crushed Snail Bait Leaf Pouch -->
+    <ellipse cx="235" cy="232" rx="16" ry="11" fill="url(#riverRock)" stroke="#cbd5e1" stroke-width="1.2"/>
+    <ellipse cx="272" cy="228" rx="14" ry="10" fill="url(#riverRock)" stroke="#cbd5e1" stroke-width="1.2"/>
+    <!-- Green Bait Pouch -->
+    <circle cx="235" cy="202" r="11" fill="#4d7c0f" stroke="#fde68a" stroke-width="1.5"/>
+
+    <!-- 4 Wooden Anchor Stakes Driven Around Trap -->
+    <g fill="#a16207" stroke="#fde68a" stroke-width="1.2">
+      <rect x="142" y="146" width="7" height="22" rx="2"/>
+      <rect x="265" y="168" width="7" height="22" rx="2"/>
+      <rect x="142" y="262" width="7" height="22" rx="2"/>
+      <rect x="265" y="240" width="7" height="22" rx="2"/>
+    </g>
+
+    <!-- Fish Swimming Upstream Along Scent Plume Into Funnel -->
+    <path d="M 92 215 C 78 205, 55 205, 42 215 C 34 208, 28 206, 26 206 L 30 215 L 26 224 C 28 224, 34 222, 42 215 C 55 225, 78 225, 92 215 Z" fill="#38bdf8" stroke="#f8fafc" stroke-width="1.2"/>
+    <path d="M 96 215 L 138 215" stroke="#fde68a" stroke-width="2.2"/>
+    <polygon points="145,215 135,210 135,220" fill="#fde68a"/>
+  </g>
+
+  <!-- Callouts & Labels -->
+  <!-- Label 2: 2 Ballast stones & snail bait inside -->
+  <line x1="235" y1="202" x2="235" y2="76" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="235" cy="202" r="3" fill="#fde68a"/>
+  <rect x="18" y="52" width="295" height="24" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="1"/>
+  <text x="26" y="68" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">통발 내부 침강용 강돌 2개 &amp; 으깬 다슬기 미끼</text>
+
+  <!-- Label 3: Stream flow & scent diffusion -->
+  <line x1="85" y1="188" x2="125" y2="110" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="85" cy="188" r="3" fill="#38bdf8"/>
+  <rect x="82" y="86" width="300" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="90" y="102" fill="#f8fafc" font-family="sans-serif" font-size="11">상류에서 하류로 흐르는 물살 &amp; 냄새 확산 경로</text>
+
+  <!-- Label 4: 4 Wooden stakes & side boulders -->
+  <line x1="146" y1="274" x2="146" y2="310" stroke="#eab308" stroke-width="1.2"/>
+  <circle cx="146" cy="274" r="3" fill="#eab308"/>
+  <rect x="24" y="310" width="275" height="24" rx="3" fill="#0f172a" stroke="#eab308" stroke-width="1"/>
+  <text x="32" y="326" fill="#fde68a" font-family="sans-serif" font-size="11">나무 말뚝 4개 및 양옆 바위 고정 지지대</text>
+
+  <!-- Label 5: Core Outcome -->
+  <rect x="18" y="344" width="364" height="34" rx="4" fill="#141e28" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="26" y="365" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">[핵심] 냄새를 따라 거슬러 올라와 통발에 갇힌 물고기</text>
+</svg>

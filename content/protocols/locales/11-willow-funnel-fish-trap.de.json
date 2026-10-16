@@ -1,0 +1,182 @@
+{
+  "protocolId": "PR-11",
+  "category": "FOOD",
+  "title": "Flechten einer Einweg-Weidenreuse (Fischreuse) für passiven Fischfang im Fluss",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PASSIVE PROTEINQUELLE & KRAFTERHALT]",
+  "summary": "Schnelle Fische mit bloßen Händen oder einem Holzspeer zu jagen, verbrennt wertvolle Kalorien und scheitert in über 90% der Fälle. Wenn Sie biegsame Weidenruten am Flussufer zu einem konischen Korb mit einem nach innen verengten Rückschlag-Trichter flechten, schwimmen Fische der Duftspur nach hinein und werden beim Umkehrversuch von den elastischen Rutenspitzen blockiert. In einer Flussstromschnelle verankert, fängt die Reuse im Schlaf zuverlässig Fische.",
+  "timeRequired": "50 Min. (10m Weidenruten schneiden + 25m Ringe & Korb flechten + 15m Trichter & Verankerung)",
+  "successRate": "92% (bei 3-Finger-Trichteröffnung & Ausrichtung gegen die Strömung)",
+  "difficulty": "Mittel (Vorsicht vor zurückschnellenden Rutenspitzen & glatten Steinen)",
+  "outputPerHour": "3–8 Süßwasserfische passiv über Nacht pro Einsatz",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "40–50 biegsame grüne Weiden- oder Haselruten (Armlänge, 70–80cm)",
+      "desc": "Frisch am Ufer mit einer [Steinaxt oder scharfen Steinklinge](/protocol-04.html) geschnittene Triebe von halber Kleinfingerdicke (~5mm), die sich biegen lassen, ohne zu brechen."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 dickere Weidenäste oder Ranken für die Stützringe (Reifen)",
+      "desc": "Bleistiftdicke (~8–10mm) grüne Zweige, die zu kreisrunden Ringen gebogen werden, um den Kegelkorb gegen den Wasserdruck offenzuhalten."
+    },
+    {
+      "id": "mat-03",
+      "name": "Wasserfeste Wildkudzu- oder Bastfaserschnur (15m Gesamtlänge)",
+      "desc": "Gedrehte Pflanzenschnur nach [Herstellung von Wildseilen](/protocol-05.html). Das Versiegeln der Hauptknoten mit [Wasserfestem Kiefernharz-Kleber](/protocol-10.html) verhindert ein Lösen unter Wasser."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 faustgroße Flusssteine als Ballast & 4 unterarmlange Holzpflöcke",
+      "desc": "Schwere Flusskiesel, um die schwimmfähige Reuse am Grund zu halten, sowie Holzpflöcke gegen das Wegrollen in der Strömung."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 Handvoll zerdrückte Flussschnecken oder Ufer-Regenwürmer",
+      "desc": "Natürlicher Duftköder in einem durchstochenen Laubblatt, der Aminosäuren stromabwärts verströmt und Fische ins Innere lockt."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Dicke Zweige zu 4 abgestuften Kreisringen (Reifen) biegen",
+      "description": "1. **Biegsamkeit prüfen**: Biegen Sie 4 bleistiftdicke Weidenzweige langsam mit der Hand, um sicherzustellen, dass sie sich geschmeidig runden lassen.\n2. **4 abgestufte Ringgrößen formen**: Biegen Sie die Zweige zu vier Ringen mit **anderthalb Handspannen (25cm Durchmesser)**, **einer Handspanne (20cm)**, **zwei Faustbreiten (15cm)** und **einer Faustbreite (10cm)**.\n3. **Überlappende Enden abbinden**: Legen Sie die Ringenden um **zwei Fingerbreiten (~4cm)** übereinander und umwickeln Sie sie fest mit mindestens 10 Windungen [Wilder Bastschnur](/protocol-05.html).\n4. **Im Abstand von 1 Handspanne ausrichten**: Stellen Sie die vier Ringe der Größe nach im Abstand von **einer Handspanne (~15cm)** hintereinander auf.",
+      "actionNote": "> Materialkennung & Augenschutz: Trockenes Totholz bricht splitternd und kann Augen oder Hände verletzen. Nutzen Sie die Fotokarte unten zur sicheren Unterscheidung von **lebenden Weidenruten** und **Flussschnecken-Ködern** ([Steinaxt (PR-04)](/protocol-04.html) / [Wildseil (PR-05)](/protocol-05.html)).",
+      "svgFileName": "pr11-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
+        "1. Großer Frontring (1.5 Spannen / 25cm)",
+        "2. Zwei Mittelringe (20cm & 15cm Dia)",
+        "3. Kleiner Endring (1 Faust / 10cm Dia)",
+        "4. Bastschnur-Wicklung (15cm Abstand)"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Biegeelastizität der Uferweide & Duftfahnen aquatischer Köder",
+        "text": "Uferweiden (Salix) besitzen lange Zellulosefasern und hohen Saftgehalt, was enges Biegen ohne Bruch sowie hohe Fäulnisresistenz im Wasser ermöglicht. Zerdrückte Flussschnecken setzen wasserlösliche Aminosäuren frei, die mit der Strömung als Lockspur driften.",
+        "fieldSpecs": [
+          {
+            "name": "Lebende Uferweidenrute",
+            "scientificName": "Salix koreensis / Salix alba",
+            "categoryTag": "Ufer-Laubholz / Hochelastischer Rahmen",
+            "imageFileName": "id-willow-tree.jpg",
+            "hudCode": "FIG. BIO-11A // MACRO OPTIC",
+            "hudStatus": "FLEX ELASTICITY: VERIFIED",
+            "traits": [
+              {
+                "label": "ZWEIG/TWIG",
+                "value": "Schlanke gelbgrüne bis glatte braune Ruten, die sich **ohne zu brechen in eine enge U-Schlaufe biegen lassen**."
+              },
+              {
+                "label": "BLATT/LEAF",
+                "value": "Schmale **lanzettförmige grüne Blätter (5–12cm lang)** mit fein gesägtem Rand."
+              },
+              {
+                "label": "MERKMAL/SIGN",
+                "value": "Wächst auf feuchten Kiesbänken am Fluss; beim Ankratzen der Rinde strömt ein **frischer, herber Salicyl-Duft** aus."
+              }
+            ],
+            "fieldUse": "Fischreusen-Geflecht, elastische Bogenstäbe, schmerzstillender Weidenrindentee"
+          },
+          {
+            "name": "Flussschnecken- & Wurmköder",
+            "scientificName": "Semisulcospira / Lumbricina",
+            "categoryTag": "Aquatischer Köder / Duftlockstoff",
+            "imageFileName": "id-river-snail-bait.jpg",
+            "hudCode": "FIG. BIO-11B // MACRO OPTIC",
+            "hudStatus": "SCENT PLUME: VERIFIED",
+            "traits": [
+              {
+                "label": "GEHÄUSE/SHELL",
+                "value": "Dunkle **kegelförmige Spiralschnecken (1.5–3cm)** an der Unterseite bemooster Flusssteine."
+              },
+              {
+                "label": "AUFBRECHEN/CRUSH",
+                "value": "Die Schale mit einem Kiesel **nur leicht anknacken**, damit der Gewebesaft über 3+ Stunden langsam austritt."
+              },
+              {
+                "label": "ERSATZ/ALT",
+                "value": "Alternativ im feuchten Uferschlamm oder unter Laub nach **roten Regenwürmern oder Grashüpfern** graben."
+              }
+            ],
+            "fieldUse": "Lockköder für Fischreusen, Angelköder, abgekochte Notnahrung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: 30–40 gerade Weidenruten längs zum konischen Korpus verflechten",
+      "description": "1. **Längsstreben gleichmäßig anlegen**: Legen Sie 30–40 gerade, armlange (70–80cm) Weidenruten außen um die vier Ringe im Abstand von **einer Fingerbreite (~1–1.5cm)** an.\n2. **Kreuzungspunkte festbinden**: Wickeln Sie eine lange Bastschnur fest um jede Kreuzung, an der eine Längsrute auf einen Kreisring trifft.\n3. **Kegelform spannen**: Ziehen Sie die Längsruten vom weiten 25cm-Frontring zum engen 10cm-Endring gleichmäßig zusammen.\n4. **Hecköffnung mit Schleifenknoten schließen**: Bündeln Sie die überstehenden Rutenspitzen hinter dem kleinsten Ring mit einem **lösbaren Zugknoten** zur späteren Fischentnahme.",
+      "actionNote": "> Strebenabstand: Wenn die Lücken breiter als ein Finger (1.5cm) sind, schlüpfen Fische seitlich heraus. Flechten Sie das Gitter so eng, dass nur Ihre Fingerspitze hindurchpasst.",
+      "svgFileName": "pr11-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONICAL WICKER BODY WEAVING",
+        "30-40 Weiden-Längsstreben (1-1.5cm Spalt)",
+        "Kreuzwicklung an allen 4 Stützringen",
+        "Stromlinien-Kegel (-70% Strömungsdruck)",
+        "[KERN] Lösbarer Zugknoten am Heck zur Entnahme"
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Reduzierung des Strömungswiderstands durch konische Gitter",
+        "text": "Ein Längsgitter mit 1–1.5cm Spaltweite lässt die Flussströmung nahezu ungehindert passieren, reduziert den Strömungsdruck (Drag) um **über 70%** und hält dennoch jeden Fisch ab **2cm** Körperbreite sicher zurück."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Nach innen verengten Einweg-Trichter (Rückschlagventil) einnähen",
+      "description": "1. **Trichterruten bündeln**: Fassen Sie **16–20 dünne, federnde Weidenzweiglein** (Unterarmlänge, ~30–35cm) zu einem kleineren Kegel zusammen.\n2. **Ein- und Ausgangsdurchmesser einstellen**: Weiten Sie den vorderen Rand auf **anderthalb Handspannen (25cm)** passend zum Korbmaul und verengen Sie den inneren Hals auf **drei Fingerbreiten (5–6cm)**.\n3. **Innere Rutenspitzen frei lassen**: Lassen Sie die letzten **zwei Fingerbreiten (5cm)** der inneren Spitzen ungebunden, damit sie sich beim Hineinschwimmen spreizen und beim Rückwärtsversuch wie Dornen sperren.\n4. **In die Korböffnung einsetzen & vernähen**: Schieben Sie den Trichter in die vordere Korböffnung und nähen Sie beide Außenringe mit [Wildseil](/protocol-05.html) lückenlos zusammen.",
+      "actionNote": "> Trichterhals-Maß: Ist die innere Öffnung größer als eine Faust, schwimmen die Fische wieder hinaus. Halten Sie den Durchlass auf drei Fingerbreiten (5–6cm), damit die federnden Spitzen als Einwegventil wirken.",
+      "svgFileName": "pr11-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ONE-WAY INVERTED FUNNEL VALVE",
+        "Trichter-Außenring an 25cm-Maul vernäht",
+        "Federnde innere Rutenspitzen (5-6cm Hals)",
+        "Spreizt beim Eintritt & sperrt Rückweg",
+        "[KERN] Einweg-Eintritt & Null Rückwärtsflucht"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Elastische Kragarm-Rückschlagventil-Geometrie",
+        "text": "Schwimmt ein Fisch vorwärts in den Trichter, drückt sein stromlinienförmiger Kopf die federnden Weidenspitzen leicht auseinander. Im Fangraum angekommen, verfängt sich jeder Rückwärtsversuch an den spitz zusammenlaufenden Rutenenden."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Ballaststeine & Köder einlegen und mit Pflöcken in der Strömung verankern",
+      "description": "1. **Ballast & Köderbeutel laden**: Öffnen Sie den Heckknoten, legen Sie **2 faustgroße Flusssteine** und ein perforiertes Blatt mit **zerdrückten Schnecken & Würmern** hinein und binden Sie das Heck wieder fest zu.\n2. **Strömungsrinne wählen**: Suchen Sie eine knietiefe (**30–50cm**) Engstelle zwischen Flussfelsen oder am Uferbewuchs.\n3. **Trichteröffnung stromaufwärts richten**: Versenken Sie die Reuse so am Grund, dass die **Trichteröffnung stromaufwärts (oder schräg gegen die Strömung)** zeigt, damit der Köderduft stromabwärts zu den Fischen treibt.\n4. **Mit 4 Pflöcken & Steinen sichern**: Schlagen Sie **4 unterarmlange Holzpflöcke** beidseitig tief in das Flussbett und verkeilen Sie schwere Steine an den Flanken gegen das Wegrollen.",
+      "actionNote": "> Entnahme & Garvorschrift: Am Morgen einfach den Heckknoten aufziehen. Süßwasserfische zum Schutz vor Parasiten immer über einem [Rauchfreien Dakota-Erdofen](/protocol-06.html) oder [Eichenholzkohle-Glut](/protocol-09.html) vollständig durchgaren.",
+      "svgFileName": "pr11-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
+        "2 Ballaststeine & Schneckenköder im Inneren",
+        "Strömungsrichtung & Duftspur stromabwärts",
+        "4 Holzpflöcke & seitliche Stützfelsen",
+        "[KERN] Fische folgen Duft stromaufwärts in Reuse"
+      ],
+      "deepDive": {
+        "badge": "FIELD ECOLOGY",
+        "title": "Positive Rheotaxis und Duftspur-Verfolgung bei Flussfischen",
+        "text": "Süßwasserfische zeigen **positive Rheotaxis**: Sie stellen sich instinktiv mit dem Kopf gegen die Strömung, um die Kiemenatmung zu optimieren und abtreibende Nahrung aufzunehmen. Treibt der Schneckenduft aus der Reuse stromabwärts, folgen die Fische der Spur direkt in den Trichter."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Die schwimmfähige Reuse ohne Ballaststeine auslegen oder rohen Süßwasserfisch essen",
+    "description": "Weidenholz schwimmt; ohne schwere Steine im Inneren und 4 verankerte Holzpflöcke reißt die Strömung Ihre Reuse in wenigen Minuten fort. Zudem führt der Verzehr von rohem Süßwasserfisch zu schweren Infektionen durch Leberegel und Bakterien.",
+    "consequence": "Folge: Totalverlust der Fischreuse in der Strömung oder schwere Parasiten-/Bakterieninfektion"
+  },
+  "shortsScript": {
+    "hook": "Verschwenden Sie keine Kraft bei der Fischjagd mit der Hand! Flechten Sie diese Weidenreuse, die im Schlaf Fische fängt!",
+    "body": "Biegen Sie grüne Weidenzweige zu vier abgestuften Ringen von anderthalb Handspannen bis Faustgröße. Binden Sie 40 gerade Weidenruten im Fingerabstand längs darüber. Der Trick ist der nach innen gerichtete Trichter mit drei Finger breitem Durchlass! Zwei Steine und zerdrückte Flussschnecken hineinlegen und im knietiefen Wasser mit Pflöcken sichern!",
+    "outro": "Fische folgen dem Duft durch die federnden Spitzen und kommen nie wieder heraus. Kompletter Bauplan im Profil-Link!"
+  },
+  "outcome": {
+    "svgFileName": "pr11-outcome.svg",
+    "title": "Fertige Einweg-Weidenreuse & Unterwasser-Querschnitt in der Strömungsrinne",
+    "description": "Längsschnitt durch die 4 abgestuften Ringe, das 1cm-Weidengitter, den 5cm-Rückschlagtrichter, 2 Ballaststeine, Schneckenköderbeutel und 4 Bodenpflöcke mit gefangenem Fisch."
+  },
+  "createdAt": "2026-10-16T13:38:00.000Z",
+  "contentHash": "037d4ce0763a3aa2"
+}

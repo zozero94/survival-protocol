@@ -138,6 +138,13 @@ const PROTOCOL_DEPENDENCY_CATALOG: ProtocolTriggerRule[] = [
     keywords: /(소나무\s*송진|송진\s*접착제|방수\s*접착제|상처\s*소독\s*연고|천연\s*에폭시|pine\s*resin|pitch\s*glue)/i,
     rationale: '돌도끼 결속 방수 코팅과 야생 외상 소독에 필수적인 송진 정제 프로토콜과 연결됩니다.',
   },
+  {
+    protocolId: 'PR-11',
+    url: '/protocol-11.html',
+    defaultLabelKo: '원시 버드나무 깔때기 통발 어로법',
+    keywords: /(버드나무\s*통발|깔때기\s*통발|어로\s*통발|물고기\s*함정|fish\s*trap|willow\s*funnel)/i,
+    rationale: '수면 중 강물에서 민물고기를 자동으로 포획하는 원시 버드나무 통발 프로토콜과 연결됩니다.',
+  },
 ];
 
 const INLINE_LINK_REGEX = /\[([^\]]*)\]\(([^)]+)\)/g;

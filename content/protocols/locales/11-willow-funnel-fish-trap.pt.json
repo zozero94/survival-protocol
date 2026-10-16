@@ -1,0 +1,182 @@
+{
+  "protocolId": "PR-11",
+  "category": "FOOD",
+  "title": "Como Trançar um Covo de Salgueiro com Funil Unidirecional para Pesca Passiva",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[PROTEÍNA PASSIVA E ECONOMIA DE ENERGIA]",
+  "summary": "Perseguir peixes rápidos com as mãos ou lança de madeira esgota suas calorias vitais e falha em mais de 90% das tentativas. Ao trançar ramos flexíveis de salgueiro ribeirinho em um cesto cônico com funil invertido unidirecional, os peixes entram seguindo o cheiro da isca e ficam bloqueados pelas pontas elásticas ao tentar voltar. Ancorado na correnteza do rio, captura peixes sozinho enquanto você dorme ou constrói seu abrigo.",
+  "timeRequired": "50 min (10m corte de salgueiro + 25m aros e corpo + 15m funil e fixação no rio)",
+  "successRate": "92% (mantendo abertura interna de 3 dedos e boca voltada rio acima)",
+  "difficulty": "Média (cuidado com pontas de galhos nos olhos e pedras escorregadias)",
+  "outputPerHour": "3–8 peixes de água doce capturados passivamente por noite",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "40–50 varas verdes flexíveis de salgueiro ou aveleira (comprimento de um braço, 70–80cm)",
+      "desc": "Ramos verdes recém-cortados na margem com um [Machado de Pedra ou Lasca Afiada](/protocol-04.html), com metade da grossura de um dedo mínimo (~5mm), que dobrem sem quebrar."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 galhos mais grossos de salgueiro ou cipós para os aros estruturais",
+      "desc": "Quatro ramos verdes da grossura de um lápis (~8–10mm) curvados em círculos para sustentar o formato cônico do covo."
+    },
+    {
+      "id": "mat-03",
+      "name": "Corda resistente à água de entrecasca de kudzu (15m no total)",
+      "desc": "Corda vegetal torcida conforme [Corda Selvagem de Fibras](/protocol-05.html). Selar os nós principais com [Cola Impermeável de Resina de Pinheiro](/protocol-10.html) evita que afrouxem debaixo d'água."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 pedras de rio do tamanho de um punho e 4 estacas de madeira do tamanho do antebraço",
+      "desc": "Pedras pesadas para afundar o covo no leito do rio e estacas para travá-lo contra a correnteza."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 punhado de caramujos de rio esmagados ou minhocas da margem",
+      "desc": "Isca natural envolvida em uma folha larga perfurada para liberar cheiro rio abaixo e atrair peixes para dentro."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Curvar Galhos Grossos em 4 Aros Circulares de Tamanhos Graduais",
+      "description": "1. **Testar Flexibilidade dos Galhos**: Dobre lentamente com as mãos 4 galhos de salgueiro da grossura de um lápis para garantir que curvem sem rachar.\n2. **Formar 4 Aros Graduais**: Enrole os galhos em quatro anéis circulares de **um palmo e meio (25cm de diâmetro)**, **um palmo (20cm)**, **dois punhos (15cm)** e **um punho (10cm)**.\n3. **Amarrar Pontas Sobrepostas**: Sobreponha as pontas de cada aro por **dois dedos de largura (~4cm)** e amarre firmemente com mais de 10 voltas de [Corda Selvagem](/protocol-05.html).\n4. **Alinhar a Intervalos de 1 Palmo**: Posicione os quatro aros do maior para o menor separados por **um palmo (~15cm)** para definir o cone.",
+      "actionNote": "> Identificação e Proteção Ocular: Galhos secos quebram de repente e podem ferir suas mãos ou olhos. Use o guia fotográfico abaixo para identificar **varas vivas de salgueiro** e **isca de caramujo de rio** ([Machado de Pedra (PR-04)](/protocol-04.html) / [Corda Selvagem (PR-05)](/protocol-05.html)).",
+      "svgFileName": "pr11-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
+        "1. Aro Frontal Grande (1.5 Palmos / 25cm)",
+        "2. Dois Aros Médios (20cm e 15cm Dia)",
+        "3. Aro Traseiro Pequeno (1 Punho / 10cm)",
+        "4. Amarração de Corda (Intervalo de 15cm)"
+      ],
+      "deepDive": {
+        "badge": "FIELD BOTANY",
+        "title": "Elasticidade do Salgueiro Ribeirinho e Pluma Olfativa de Iscas Aquáticas",
+        "text": "O salgueiro de margem (Salix) possui fibras longas e alta umidade, permitindo curvá-lo em anéis fechados sem fratura e resistindo ao apodrecimento submerso. Caramujos esmagados liberam aminoácidos solúveis que viajam pela correnteza atraindo peixes.",
+        "fieldSpecs": [
+          {
+            "name": "Vara Viva de Salgueiro",
+            "scientificName": "Salix koreensis / Salix alba",
+            "categoryTag": "Árvore Ribeirinha / Armação Flexível",
+            "imageFileName": "id-willow-tree.jpg",
+            "hudCode": "FIG. BIO-11A // MACRO OPTIC",
+            "hudStatus": "FLEX ELASTICITY: VERIFIED",
+            "traits": [
+              {
+                "label": "RAMO/TWIG",
+                "value": "Varas longas verde-amareladas que **dobram em formato de U completo sem quebrar ou lascar**."
+              },
+              {
+                "label": "FOLHA/LEAF",
+                "value": "Folhas verdes **estreitas em forma de lança (5–12cm)** com bordas finamente serrilhadas."
+              },
+              {
+                "label": "SINAL/SIGN",
+                "value": "Cresce em bancos de cascalho úmido na beira de rios; ao raspar a casca exala um **aroma herbal fresco de salicilato**."
+              }
+            ],
+            "fieldUse": "Trançado de covos de pesca, arcos flexíveis, chá analgésico de casca"
+          },
+          {
+            "name": "Isca de Caramujo de Rio e Minhoca",
+            "scientificName": "Semisulcospira / Lumbricina",
+            "categoryTag": "Isca Aquática / Atrativo Olfativo",
+            "imageFileName": "id-river-snail-bait.jpg",
+            "hudCode": "FIG. BIO-11B // MACRO OPTIC",
+            "hudStatus": "SCENT PLUME: VERIFIED",
+            "traits": [
+              {
+                "label": "CONCHA/SHELL",
+                "value": "Conchas **cônicas em espiral escura (1.5–3cm)** presas embaixo de pedras com musgo no rio."
+              },
+              {
+                "label": "PREPARO/CRUSH",
+                "value": "Quebre **levemente a concha com um seixo** para que o líquido interno se espalhe lentamente por mais de 3 horas."
+              },
+              {
+                "label": "ALTERNATIVA/ALT",
+                "value": "Se não houver caramujos, cave na lama úmida da margem em busca de **minhocas vermelhas ou gafanhotos**."
+              }
+            ],
+            "fieldUse": "Isca olfativa para covo, isca de anzol, proteína cozida de emergência"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Trançar 30–40 Varas Retas de Salgueiro no Comprimento para Formar o Corpo",
+      "description": "1. **Distribuir Varetas Longitudinais**: Posicione 30–40 varas retas de salgueiro (70–80cm) ao redor dos quatro aros com espaçamento de **um dedo de largura (~1–1.5cm)**.\n2. **Amarrar Cada Cruzamento**: Use uma corda longa de entrecasca para dar voltas firmes em cada ponto onde uma vareta cruza um aro circular.\n3. **Manter a Tensão do Cone**: Afine gradualmente as varetas desde a boca larga de 25cm até o aro traseiro de 10cm.\n4. **Fechar a Cauda com Nó Corrediço**: Junte as pontas traseiras atrás do aro menor e amarre com um **nó de laço corrediço** fácil de soltar para retirar os peixes.",
+      "actionNote": "> Regra de Espaçamento: Se a fresta entre as varetas passar da largura de um dedo (1.5cm), os peixes escaparão pelos lados. Trance a grade bem fechada para passar apenas a ponta do dedo.",
+      "svgFileName": "pr11-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONICAL WICKER BODY WEAVING",
+        "30-40 Varetas de Salgueiro (Fresta 1-1.5cm)",
+        "Amarração Cruzada nos 4 Aros Circulares",
+        "Cesto Cônico Hidrodinâmico (-70% Arrasto)",
+        "[CHAVE] Nó Corrediço Traseiro de Retirada"
+      ],
+      "deepDive": {
+        "badge": "FIELD MECHANICS",
+        "title": "Redução do Arrasto Hidrodinâmico em Grades Cônicas",
+        "text": "Uma grade longitudinal com frestas de 1–1.5cm deixa a água passar livremente, reduzindo a força de arrasto da correnteza em **mais de 70%** enquanto retém qualquer peixe com mais de **2cm** de largura."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Construir o Funil Invertido (Válvula Unidirecional) e Costurar na Boca",
+      "description": "1. **Montar o Cone do Funil**: Junte **16–20 raminhos finos e elásticos de salgueiro** (comprimento do antebraço, ~30–35cm) formando um cone menor.\n2. **Definir Diâmetros de Entrada e Saída**: Abra a boca externa em **um palmo e meio (25cm)** para encaixar no corpo, e estreite o pescoço interno para a largura de **três dedos juntos (5–6cm)**.\n3. **Deixar as Pontas Internas Livres**: Deixe os últimos **dois dedos (5cm)** das pontas internas sem amarrar para que abram quando o peixe empurrar para entrar e travem como espinhos se tentar voltar.\n4. **Encaixar e Costurar na Boca**: Empurre o funil para dentro da boca larga do corpo principal e costure as duas bordas externas com [Corda Selvagem](/protocol-05.html).",
+      "actionNote": "> Medida do Pescoço: Se o furo interno for maior que seu punho, os peixes nadarão para fora. Mantenha na largura de três dedos (5–6cm) para funcionar como válvula de retenção.",
+      "svgFileName": "pr11-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ONE-WAY INVERTED FUNNEL VALVE",
+        "Borda Externa Costurada na Boca de 25cm",
+        "Pontas Elásticas Internas (Pescoço 5-6cm)",
+        "Abre na Entrada e Bloqueia o Retorno",
+        "[CHAVE] Entrada Unidirecional Sem Fuga"
+      ],
+      "deepDive": {
+        "badge": "FIELD PHYSICS",
+        "title": "Mecanismo de Válvula de Retenção por Pontas Flexíveis",
+        "text": "Quando o peixe avança para dentro do funil, sua cabeça hidrodinâmica afasta suavemente as pontas flexíveis de salgueiro. Uma vez dentro da câmara, qualquer tentativa de recuar esbarra no anel de pontas convergentes."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Colocar Pedras de Lastro e Isca, e Fixar com Estacas na Correnteza",
+      "description": "1. **Colocar Lastro e Trouxa de Isca**: Abra o nó traseiro, coloque **2 pedras do tamanho de um punho** e uma folha furada com **caramujos esmagados e minhocas**, e amarre a cauda novamente.\n2. **Escolher Canal Entre Pedras**: Procure um canal estreito de água entre pedras com **profundidade até o joelho (30–50cm)** ou junto à vegetação da margem.\n3. **Apontar a Boca Rio Acima**: Afunde o covo no leito com a **boca do funil voltada rio acima (ou na diagonal da correnteza)** para que o cheiro da isca desça com a água.\n4. **Travar com 4 Estacas e Pedras Laterais**: Crave **4 estacas de madeira do tamanho do antebraço** nos dois lados do covo e escore pedras pesadas nas laterais para que a correnteza noturna não o role.",
+      "actionNote": "> Coleta e Cozimento Seguro: Pela manhã, basta puxar o nó traseiro para recolher os peixes. Cozinhe sempre muito bem os peixes de água doce sobre um [Fogão Dakota Sem Fumaça](/protocol-06.html) ou [Brasas de Carvão de Carvalho](/protocol-09.html) para eliminar parasitas.",
+      "svgFileName": "pr11-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
+        "2 Pedras de Lastro e Isca de Caramujo Esmagado",
+        "Correnteza do Rio e Rastro de Cheiro Rio Abaixo",
+        "4 Estacas de Madeira e Pedras de Apoio Lateral",
+        "[CHAVE] Peixes Subindo pelo Cheiro e Capturados"
+      ],
+      "deepDive": {
+        "badge": "FIELD ECOLOGY",
+        "title": "Reotaxia Positiva e Rastreamento Olfativo em Peixes de Rio",
+        "text": "Peixes de água doce apresentam **reotaxia positiva**: nadam instintivamente contra a correnteza para oxigenar as brânquias e interceptar alimento. Quando os aminoácidos da isca descem com a água, os peixes sobem o rastro direto para dentro do funil."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Lançar o covo leve na água sem pedras de lastro ou comer peixe de água doce cru",
+    "description": "A madeira de salgueiro flutua; sem pedras pesadas dentro e 4 estacas cravadas no fundo, a correnteza levará seu covo embora em minutos. Além disso, comer peixe de rio cru causa infecções graves por vermes hepáticos e bactérias.",
+    "consequence": "Consequência: Perda total da armadilha na correnteza ou infecção parasitária/bacteriana grave"
+  },
+  "shortsScript": {
+    "hook": "Pare de gastar energia correndo atrás de peixe com a mão! Faça este covo de salgueiro que pega peixe enquanto você dorme!",
+    "body": "Enrole galhos flexíveis de salgueiro em quatro aros de um palmo e meio até o tamanho de um punho. Amarre 40 varas retas com espaço de um dedo para formar um cesto cônico. O segredo é o funil invertido na entrada com passagem de três dedos! Coloque duas pedras e caramujos esmagados dentro e trave com estacas no rio!",
+    "outro": "Os peixes entram seguindo o cheiro e as pontas impedem a saída. Veja o projeto completo no link do perfil!"
+  },
+  "outcome": {
+    "svgFileName": "pr11-outcome.svg",
+    "title": "Covo de Salgueiro com Funil Unidirecional Completo e Corte Submerso",
+    "description": "Corte longitudinal mostrando os 4 aros graduais, corpo cônico de varas de salgueiro a 1cm, funil antirretorno de 5cm, 2 pedras de lastro, trouxa de isca de caramujo e 4 estacas de fixação no leito do rio."
+  },
+  "createdAt": "2026-10-16T13:38:00.000Z",
+  "contentHash": "037d4ce0763a3aa2"
+}

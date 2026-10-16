@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg01" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0d131a"/>
+    </linearGradient>
+    <linearGradient id="willowBark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#849b5c"/>
+      <stop offset="50%" stop-color="#5c6e3b"/>
+      <stop offset="100%" stop-color="#364222"/>
+    </linearGradient>
+    <linearGradient id="cordageGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="shadow01" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <pattern id="grid01" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#18222d" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg01)"/>
+  <rect width="400" height="400" fill="url(#grid01)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#263545" stroke-width="1"/>
+
+  <!-- Top HUD Header -->
+  <rect x="16" y="14" width="368" height="28" fill="#101720" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)</text>
+
+  <!-- Coaxial Alignment Axis Line -->
+  <line x1="35" y1="215" x2="365" y2="215" stroke="#38bdf8" stroke-width="1" stroke-dasharray="5,4" opacity="0.65"/>
+
+  <!-- Spacing Dimension Markers (15cm intervals) -->
+  <g stroke="#fde68a" stroke-width="1" opacity="0.8">
+    <line x1="88" y1="305" x2="168" y2="305"/>
+    <line x1="88" y1="298" x2="88" y2="312"/>
+    <line x1="168" y1="298" x2="168" y2="312"/>
+    <line x1="168" y1="305" x2="245" y2="305"/>
+    <line x1="245" y1="298" x2="245" y2="312"/>
+    <line x1="245" y1="305" x2="315" y2="305"/>
+    <line x1="315" y1="298" x2="315" y2="312"/>
+  </g>
+
+  <!-- 4 Graduated 3D Elliptical Willow Hoops -->
+  <!-- Hoop 1: 25cm (Largest Front Ring) -->
+  <g filter="url(#shadow01)">
+    <ellipse cx="88" cy="210" rx="34" ry="78" fill="none" stroke="#283319" stroke-width="11"/>
+    <ellipse cx="88" cy="210" rx="34" ry="78" fill="none" stroke="url(#willowBark)" stroke-width="7.5"/>
+    <ellipse cx="86" cy="210" rx="32" ry="76" fill="none" stroke="#b5cc84" stroke-width="1.2" opacity="0.6"/>
+    <!-- Top Overlap Cordage Lashing -->
+    <rect x="76" y="126" width="24" height="12" rx="3" fill="url(#cordageGold)" stroke="#451a03" stroke-width="1"/>
+    <line x1="81" y1="126" x2="81" y2="138" stroke="#451a03" stroke-width="1"/>
+    <line x1="87" y1="126" x2="87" y2="138" stroke="#451a03" stroke-width="1"/>
+    <line x1="93" y1="126" x2="93" y2="138" stroke="#451a03" stroke-width="1"/>
+  </g>
+
+  <!-- Hoop 2: 20cm -->
+  <g filter="url(#shadow01)">
+    <ellipse cx="168" cy="210" rx="28" ry="63" fill="none" stroke="#283319" stroke-width="10"/>
+    <ellipse cx="168" cy="210" rx="28" ry="63" fill="none" stroke="url(#willowBark)" stroke-width="7"/>
+    <ellipse cx="166" cy="210" rx="26" ry="61" fill="none" stroke="#b5cc84" stroke-width="1" opacity="0.55"/>
+    <rect x="157" y="141" width="22" height="11" rx="3" fill="url(#cordageGold)" stroke="#451a03" stroke-width="1"/>
+    <line x1="163" y1="141" x2="163" y2="152" stroke="#451a03" stroke-width="1"/>
+    <line x1="169" y1="141" x2="169" y2="152" stroke="#451a03" stroke-width="1"/>
+  </g>
+
+  <!-- Hoop 3: 15cm -->
+  <g filter="url(#shadow01)">
+    <ellipse cx="245" cy="210" rx="22" ry="48" fill="none" stroke="#283319" stroke-width="9"/>
+    <ellipse cx="245" cy="210" rx="22" ry="48" fill="none" stroke="url(#willowBark)" stroke-width="6.5"/>
+    <ellipse cx="243" cy="210" rx="20" ry="46" fill="none" stroke="#b5cc84" stroke-width="1" opacity="0.5"/>
+    <rect x="235" y="157" width="20" height="10" rx="2.5" fill="url(#cordageGold)" stroke="#451a03" stroke-width="1"/>
+  </g>
+
+  <!-- Hoop 4: 10cm (Smallest Tail Ring) -->
+  <g filter="url(#shadow01)">
+    <ellipse cx="315" cy="210" rx="16" ry="33" fill="none" stroke="#283319" stroke-width="8.5"/>
+    <ellipse cx="315" cy="210" rx="16" ry="33" fill="none" stroke="url(#willowBark)" stroke-width="6"/>
+    <ellipse cx="313" cy="210" rx="14" ry="31" fill="none" stroke="#b5cc84" stroke-width="1" opacity="0.5"/>
+    <rect x="306" y="172" width="18" height="9" rx="2" fill="url(#cordageGold)" stroke="#451a03" stroke-width="1"/>
+  </g>
+
+  <!-- Taper Envelope Dashed Guide Lines -->
+  <line x1="88" y1="132" x2="315" y2="177" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="88" y1="288" x2="315" y2="243" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+  <!-- Callout Lines & Labels -->
+  <!-- Label 2: Hoop 1 (25cm) -->
+  <line x1="88" y1="126" x2="88" y2="75" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="88" cy="126" r="3" fill="#fde68a"/>
+  <rect x="18" y="52" width="250" height="24" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="1"/>
+  <text x="26" y="68" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">① 입구 대형 림 (한 뼘 반 / 직경 25cm)</text>
+
+  <!-- Label 3: Middle Hoops (20cm, 15cm) -->
+  <line x1="206" y1="150" x2="225" y2="108" stroke="#e2e8f0" stroke-width="1.2"/>
+  <circle cx="168" cy="147" r="2.5" fill="#e2e8f0"/>
+  <circle cx="245" cy="162" r="2.5" fill="#e2e8f0"/>
+  <rect x="148" y="86" width="234" height="24" rx="3" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="156" y="102" fill="#f8fafc" font-family="sans-serif" font-size="11">② 중간 림 2개 (직경 20cm · 15cm)</text>
+
+  <!-- Label 4: Small Hoop (10cm) -->
+  <line x1="315" y1="175" x2="315" y2="138" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="315" cy="175" r="3" fill="#38bdf8"/>
+  <rect x="152" y="116" width="230" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="160" y="132" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">③ 꼬리 소형 림 (주먹 폭 / 직경 10cm)</text>
+
+  <!-- Bottom Callout Banner -->
+  <rect x="18" y="344" width="364" height="34" rx="4" fill="#141e28" stroke="#d97706" stroke-width="1.2"/>
+  <text x="32" y="365" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">④ 겹친 끝단 칡 끈 결속 (15cm 간격 배열)</text>
+</svg>
