@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-12",
+  "category": "FIRE",
+  "title": "Twin-Can Double-Wall Wood Gas Stove Using Salvaged Cans, Scrap Wire & Dry Twigs",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[SMOKELESS HIGH-HEAT BOILING & 80% FUEL SAVING]",
+  "summary": "In a post-collapse city or barren wasteland, thick firewood is scarce, and an open campfire sends up black smoke that gives away your position while losing heat to the wind. By nesting two salvaged steel cans of different sizes to form a double-wall chamber and locking them with bare copper or steel core wire stripped from scrap electrical cable, you create a smokeless gasifier stove that burns the rising wood smoke itself. Just two handfuls of finger-thick dry twigs boil 1 liter of water in 8 minutes with zero visible smoke.",
+  "timeRequired": "35 mins (10m coating burn-off + 15m hole punching + 10m nesting & ignition)",
+  "successRate": "95% (when using rigid steel cans & top-down ignition)",
+  "difficulty": "Medium (watch for sharp metal burrs & toxic liner smoke during pre-burn)",
+  "outputPerHour": "20 mins of smokeless 850°C flame from 2 handfuls (200g) of twigs (boils 1.5L water)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Large Outer Steel Can (12–15cm diameter) & 1 Smaller Inner Steel Can (8–10cm diameter)",
+      "desc": "Salvaged corrugated steel cans (large soup or milk-powder tin for the outer body; standard food tin for the inner chamber) leaving a finger-width (1.5–2cm) air gap between walls."
+    },
+    {
+      "id": "mat-02",
+      "name": "50cm Salvaged Electrical Wire (Insulation Stripped)",
+      "desc": "Use a [sharp stone flake blade](/protocol-04.html) to strip the outer jacket from scrap cable, extracting the bare copper or steel core wire (1.5–3mm thick) for heat-proof binding and a pot stand."
+    },
+    {
+      "id": "mat-03",
+      "name": "Pointed Scrap Nail (or Stone Awl) & Hammer Stone",
+      "desc": "Hard pointed salvage spike or stone awl struck with a fist-sized river cobble to punch primary and secondary air-jet holes around the steel cans."
+    },
+    {
+      "id": "mat-04",
+      "name": "Two Handfuls of Thumb-Length Dry Twigs & Pine Resin Tinder",
+      "desc": "Bone-dry hardwood twigs snapped to thumb length for vertical packing, plus [pine resin chunks](/protocol-10.html) and dry bark for top-down ignition."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Select Rigid Steel Cans, Strip Scrap Wire & Pre-Burn Inner Epoxy Coatings",
+      "description": "1. **Select Corrugated Steel Cans**: Choose two rigid steel food cans with horizontal reinforcement ribs that do not flex when squeezed. When the small can is held inside the large can, a **finger-width (1.5–2cm)** gap must remain all around.\n2. **Strip Scrap Electrical Wire**: Slice along the outer insulation of salvaged electrical wire using a [sharp stone flake blade](/protocol-04.html) and pull out **50cm of bare copper or steel core wire**.\n3. **Pre-Burn Inner Epoxy Liner**: Before punching holes, stuff dry leaves and twigs inside both empty cans and **burn them outdoors for 5 minutes** to incinerate the interior BPA epoxy coating and outer paint.\n4. **Verify Matte Grey Surface**: Once acrid smoke stops and the inner steel turns **matte dark grey**, let both cans cool completely in the shade.",
+      "actionNote": "> Coating & Metal Check: Skipping the 5-minute pre-burn contaminates your boiling water with toxic fumes. Thin soda cans melt like paper in high heat—use the field identification photos below to select ribbed steel cans and stripped metal wire.",
+      "svgFileName": "pr12-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // STEEL CAN SELECTION & LINER BURN-OFF",
+        "OUTER STEEL CAN (12-15CM) & INNER CAN",
+        "FINGER-WIDTH (1.5-2CM) DOUBLE-WALL AIR GAP",
+        "5-MIN PRE-BURN REMOVES INNER EPOXY LINER",
+        "[KEY] SELECT HEAVY STEEL CAN & STRIPPED WIRE CORE"
+      ],
+      "deepDive": {
+        "badge": "URBAN SALVAGE",
+        "title": "Tinplate Steel (1,500°C Melting Point) vs Thin Cans & Epoxy Burn-Off Safety",
+        "text": "Tin-coated carbon steel food cans have a melting point near **1,500°C**, easily enduring repeated 800–900°C wood-gas combustion. Thin beverage cans melt at **660°C** and collapse rapidly. Pre-burning the cans in open air carbonizes the internal anti-corrosion BPA epoxy liner so cooking remains clean and non-toxic.",
+        "fieldSpecs": [
+          {
+            "name": "Corrugated Steel Food / Milk Can",
+            "scientificName": "Tin-Coated Corrugated Carbon Steel",
+            "categoryTag": "Urban Metal Salvage / Stove Body",
+            "imageFileName": "id-steel-tin-can.jpg",
+            "hudCode": "FIG. SALV-12A // MACRO OPTIC",
+            "hudStatus": "MELT POINT 1500C: VERIFIED",
+            "traits": [
+              {
+                "label": "RIBS",
+                "value": "Horizontal **raised corrugation beads** around the cylinder wall prevent warping or crushing under hand pressure."
+              },
+              {
+                "label": "RIM",
+                "value": "Thick double-seamed top and bottom rims produce a **solid metallic ring** when tapped with a stone."
+              },
+              {
+                "label": "PREP",
+                "value": "After a 5-minute leaf burn, the glossy inner coating disappears, leaving a **safe matte dark-grey steel wall**."
+              }
+            ],
+            "fieldUse": "Double-wall wood gas stove body, emergency water boiling pot, charcoal tin"
+          },
+          {
+            "name": "Stripped Scrap Wire & Dry Twigs",
+            "scientificName": "Stripped Copper/Steel Core & Dry Hardwood",
+            "categoryTag": "Urban-Nature Hybrid / Fastener & Fuel",
+            "imageFileName": "id-salvage-wire-twigs.jpg",
+            "hudCode": "FIG. SALV-12B // MACRO OPTIC",
+            "hudStatus": "INSULATION STRIPPED: VERIFIED",
+            "traits": [
+              {
+                "label": "CORE",
+                "value": "Bare **solid copper or galvanized steel wire core** (**1.5–3mm** thick) with all outer insulation stripped off."
+              },
+              {
+                "label": "FUEL",
+                "value": "Finger-thick **bone-dry hardwood twigs** snapped to thumb length that break with a crisp snap."
+              },
+              {
+                "label": "TINDER",
+                "value": "Golden **pine resin chunks and dry bark curls** placed at the top of the fuel stack for top-down ignition."
+              }
+            ],
+            "fieldUse": "High-heat double-wall binding, cross-wire pot trivet, smokeless biomass fuel"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Punch Primary Grate & Secondary Wood-Gas Nozzle Holes in the Inner Can",
+      "description": "1. **Brace the Inner Can**: Pack a tight wooden block or damp earth inside the smaller can so the steel wall does not dent while punching.\n2. **Punch Bottom Primary Holes**: Using a pointed nail or stone awl and hammer stone, punch **12–15 pinky-thick (8mm) holes** evenly across the bottom of the small can.\n3. **Punch Upper Secondary Gas Nozzles**: Measure **one finger-joint (1.5cm) below the top rim** of the small can and punch **8–10 thumb-thick (10–12mm) holes** evenly around the circumference.\n4. **Flatten Sharp Metal Burrs**: Tap any jagged inner metal burrs flat against the wall with a stone edge to prevent hand cuts.",
+      "actionNote": "> Role of Upper Nozzles: The 8–10 large holes near the top rim act as gas-burner jets that mix preheated oxygen with rising wood smoke. Make them thumb-thick (10–12mm) for strong secondary flame jets.",
+      "svgFileName": "pr12-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // INNER BURN CHAMBER PERFORATION",
+        "INNER BOTTOM PRIMARY HOLES (8MM X 12-15)",
+        "UPPER SECONDARY GAS NOZZLES (10-12MM X 8-10)",
+        "PUNCH WITH SPIKE & STONE, FLATTEN BURRS",
+        "[KEY] BOTTOM ASH DRAIN & UPPER JET NOZZLES"
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Primary Pyrolysis Grate vs Secondary Gas-Jet Nozzle Sizing",
+        "text": "Small holes in the floor of the inner can supply limited primary air for wood pyrolysis and let fine ash drop out. The larger 10–12mm upper holes inject superheated secondary oxygen directly into rising carbon monoxide and methane vapors, converting thick smoke into clean thermal energy."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Cut the Outer Can Rim, Nest the Inner Chamber & Bind with Stripped Scrap Wire",
+      "description": "1. **Punch Outer Bottom Intake Holes**: Around the side wall of the large outer can, **1.5cm above its floor**, punch **8–10 thumb-thick (12mm) cold-air intake holes**.\n2. **Cut Center Opening in Outer Top**: Chisel out a circular opening in the top lid of the large can so the small inner can slides in tightly up to its top rim.\n3. **Lock Both Cans with Scrap Wire**: Thread the **stripped copper or steel wire** through two pairs of opposing rim holes and twist tightly with a stick so the inner can hangs suspended **2cm above the outer floor**.\n4. **Weave Cross-Wire Pot Trivet**: Bend the remaining thick scrap wire into a **2–3cm raised cross-bar stand (trivet)** across the top rim so a cooking pot does not choke the flame.",
+      "actionNote": "> Exhaust Gap Check: Never rest a flat pot directly flush on the can rim! Without a 2–3cm wire trivet gap for exhaust draft, the secondary flame suffocates immediately and pours out black smoke.",
+      "svgFileName": "pr12-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOUBLE-WALL NESTING & WIRE BINDING",
+        "OUTER LOWER COLD AIR INTAKES (12MM X 8-10)",
+        "INNER CAN SUSPENDED WITH 1.5-2CM WALL GAP",
+        "STRIPPED WIRE RIM LOCK & CROSS POT TRIVET",
+        "[KEY] PREHEATED UPDRAFT CHANNEL COMPLETED"
+      ],
+      "deepDive": {
+        "badge": "STRUCTURAL MECHANICS",
+        "title": "Why Stripped Metal Wire Outperforms Natural Cordage on High-Heat Stoves",
+        "text": "Natural plant cordage chars and snaps above 300°C. Bare copper (melting point **1,085°C**) and carbon steel wire (**1,500°C**) salvaged from urban cables hold the concentric double wall and pot weight securely right inside the 850°C flame zone."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Pack Dry Twigs Vertically, Ignite from the Top Down & Boil Water Smokelessly",
+      "description": "1. **Pack Dry Twigs Vertically**: Snap finger-thick dry hardwood twigs to thumb length and pack them **standing vertically** inside the inner can up to just **below the upper nozzle holes**.\n2. **Top-Down Ignition**: Place dry bark curls and [pine resin tinder](/protocol-10.html) on **top of the vertical twigs** and light from above using an ember from a [Bow Drill Fire](/protocol-02.html).\n3. **Verify Secondary Wood-Gas Jets**: After 2–3 minutes, as the inner wall heats up, watch **bright golden-blue flame jets** shoot inward from the upper 10–12mm holes while visible smoke disappears.\n4. **Boil Water & Harvest Biochar**: Set your pot of [filtered water](/protocol-01.html) on the wire trivet to reach a rolling boil in 7–8 minutes, then smother the remaining red coals with dirt to save [clean charcoal](/protocol-09.html).",
+      "actionNote": "> Why Light from the Top? Lighting from the bottom sends all twigs into smoke at once. Lighting from the top makes the ember zone burn slowly downward like a candle, forcing rising wood smoke right through the upper flame jets.",
+      "svgFileName": "pr12-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TOP-DOWN PYROLYSIS & SECONDARY JETS",
+        "DRY TWIGS PACKED BELOW UPPER NOZZLE HOLES",
+        "TOP-DOWN IGNITION WITH PINE RESIN & BARK",
+        "PREHEATED AIR JETS IGNITE WOOD GAS (SMOKELESS)",
+        "[KEY] 1L WATER BOILED IN 8 MIN WITH TWO HANDFULS"
+      ],
+      "deepDive": {
+        "badge": "COMBUSTION SCIENCE",
+        "title": "Top-Down Lit Updraft (TLUD) Gasification & Biochar Co-Production",
+        "text": "In a TLUD wood-gas stove, the pyrolysis front moves downward through the vertical twigs. Volatile gases released below must pass through the 850°C secondary air-jet ring at the top, burning off 95%+ of smoke particulates and leaving pure carbon char at the bottom."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Cooking in Unburned Epoxy-Lined Cans or Using Thin Beverage Cans",
+    "description": "Food cans are coated inside with anti-rust BPA epoxy resin; cooking without a prior 5-minute open-air burn-off releases toxic fumes into your water and lungs. Furthermore, thin beverage cans melt at 660°C and collapse suddenly under a boiling pot, causing severe scalding burns.",
+    "consequence": "Consequence: Toxic fume inhalation and stove collapse spilling boiling water"
+  },
+  "shortsScript": {
+    "hook": "With just two salvaged tin cans and a handful of twigs, you can build a smokeless jet stove that boils water in 8 minutes!",
+    "body": "First, pick two different-sized steel food cans and burn dry leaves inside for 5 minutes to burn off the toxic inner liner. Punch 8mm air holes in the bottom of the small can and 8 thumb-thick gas nozzles around its top rim. Punch air intakes near the bottom of the large can, nest the small can inside, and lock them with bare wire stripped from scrap cable. Pack dry twigs vertically and light from the top! Hot air rises between the double walls and ignites the smoke itself into a roaring gas-burner flame!",
+    "outro": "Zero smoke means zero detection, and water boils in 8 minutes. Check the full blueprint at the link in bio."
+  },
+  "outcome": {
+    "svgFileName": "pr12-outcome.svg",
+    "title": "Completed Twin-Can Double-Wall Wood Gas Stove (850°C Smokeless Jet Burner)",
+    "description": "Built from two salvaged steel cans and stripped scrap wire, featuring a 1.5–2cm double-wall air preheat channel, lower cold-air intakes, upper secondary oxygen nozzles, a cross-wire pot trivet, and smokeless 850°C wood-gas combustion."
+  },
+  "createdAt": "2026-10-17T10:12:00.000Z",
+  "contentHash": "00b85f08738b5163"
+}

@@ -145,6 +145,13 @@ const PROTOCOL_DEPENDENCY_CATALOG                        = [
     keywords: /(버드나무\s*통발|깔때기\s*통발|어로\s*통발|물고기\s*함정|fish\s*trap|willow\s*funnel)/i,
     rationale: '수면 중 강물에서 민물고기를 자동으로 포획하는 원시 버드나무 통발 프로토콜과 연결됩니다.',
   },
+  {
+    protocolId: 'PR-12',
+    url: '/protocol-12.html',
+    defaultLabelKo: '빈 깡통 이중 연소 우드 가스 스토브',
+    keywords: /(우드\s*가스\s*스토브|깡통\s*스토브|깡통\s*화덕|이중\s*연소\s*화덕|폐전선|wood\s*gas\s*stove|tin\s*can\s*stove)/i,
+    rationale: '도시 폐자재인 빈 깡통 2개와 폐전선으로 연기 없이 물을 끓이는 고화력 이중 연소 스토브 프로토콜과 연결됩니다.',
+  },
 ];
 
 const INLINE_LINK_REGEX = /\[([^\]]*)\]\(([^)]+)\)/g;

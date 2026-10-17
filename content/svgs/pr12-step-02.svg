@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1202" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090b0e"/>
+      <stop offset="100%" stop-color="#0e1318"/>
+    </linearGradient>
+    <linearGradient id="innerSteel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#94a3b8"/>
+      <stop offset="80%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow1202" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.78"/>
+    </filter>
+    <pattern id="grid1202" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#18222d" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg1202)"/>
+  <rect width="400" height="400" fill="url(#grid1202)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#263545" stroke-width="1"/>
+
+  <!-- Top HUD Header -->
+  <rect x="16" y="14" width="368" height="28" fill="#101720" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // INNER BURN CHAMBER PERFORATION</text>
+
+  <!-- Inner Small Can 3D Cutaway Showing Top Secondary Nozzles & Bottom Grate Holes -->
+  <g filter="url(#shadow1202)">
+    <!-- Can Cylinder Body -->
+    <path d="M 115 142 L 115 276 A 75 20 0 0 0 265 276 L 265 142 Z" fill="url(#innerSteel)" stroke="#e2e8f0" stroke-width="1.4"/>
+    <ellipse cx="190" cy="142" rx="75" ry="20" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+
+    <!-- Top Rim Secondary Gas Jet Nozzles (10~12mm x 8~10 holes, 1.5cm below top rim) -->
+    <g fill="#090d12" stroke="#fde68a" stroke-width="1.6">
+      <circle cx="132" cy="168" r="6.5"/>
+      <circle cx="158" cy="173" r="7"/>
+      <circle cx="190" cy="175" r="7.2"/>
+      <circle cx="222" cy="173" r="7"/>
+      <circle cx="248" cy="168" r="6.5"/>
+    </g>
+
+    <!-- Bottom Grate Cutaway View (12~15 Primary Air & Ash Holes, 8mm) -->
+    <ellipse cx="190" cy="276" rx="75" ry="20" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.5"/>
+    <g fill="#090d12" stroke="#38bdf8" stroke-width="1.3">
+      <circle cx="155" cy="272" r="4.5"/>
+      <circle cx="178" cy="270" r="4.5"/>
+      <circle cx="202" cy="270" r="4.5"/>
+      <circle cx="225" cy="272" r="4.5"/>
+      <circle cx="166" cy="280" r="4.5"/>
+      <circle cx="190" cy="281" r="4.5"/>
+      <circle cx="214" cy="280" r="4.5"/>
+      <circle cx="190" cy="263" r="4.5"/>
+    </g>
+
+    <!-- Iron Spike / Nail & Hammerstone Punching Action on Right -->
+    <polygon points="255,168 305,152 308,159 255,171" fill="#cbd5e1" stroke="#0f172a" stroke-width="1"/>
+    <ellipse cx="328" cy="148" rx="22" ry="15" fill="#64748b" stroke="#e2e8f0" stroke-width="1.2"/>
+  </g>
+
+  <!-- Callouts & Labels -->
+  <!-- Label 2: Bottom primary holes (8mm x 12-15) -->
+  <line x1="155" y1="272" x2="85" y2="76" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="155" cy="272" r="3" fill="#38bdf8"/>
+  <rect x="18" y="52" width="320" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="26" y="68" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">내부 소형 깡통 바닥 1차 흡기공 (8mm × 12~15개)</text>
+
+  <!-- Label 3: Top secondary gas nozzles (10-12mm x 8-10) -->
+  <line x1="190" y1="168" x2="190" y2="110" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="190" cy="168" r="3" fill="#fde68a"/>
+  <rect x="35" y="86" width="348" height="24" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="1"/>
+  <text x="43" y="102" fill="#fde68a" font-family="sans-serif" font-size="11">상단 테두리 1.5cm 아래 2차 가스 노즐 (10~12mm × 8~10개)</text>
+
+  <!-- Label 4: Spike & hammerstone punching -->
+  <line x1="305" y1="158" x2="285" y2="310" stroke="#e2e8f0" stroke-width="1.2"/>
+  <circle cx="305" cy="158" r="3" fill="#e2e8f0"/>
+  <rect x="24" y="310" width="310" height="24" rx="3" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="32" y="326" fill="#f8fafc" font-family="sans-serif" font-size="11">고철 못과 망치돌 타공 후 날카로운 단면 평탄화</text>
+
+  <!-- Label 5: Core Summary -->
+  <rect x="18" y="344" width="364" height="34" rx="4" fill="#141e28" stroke="#eab308" stroke-width="1.2"/>
+  <text x="26" y="365" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">[핵심] 하단 재 배출 &amp; 상단 고온 예열 산소 분사구 완성</text>
+</svg>

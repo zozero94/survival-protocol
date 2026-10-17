@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-12",
+  "category": "FIRE",
+  "title": "Fogareiro a Gás de Lenha de Dupla Combustão com 2 Latas Vazias, Fio Desencapado e Gravetos",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[COZIMENTO SEM FUMAÇA DE ALTA TEMPERATURA E 80% ECONOMIA DE LENHA]",
+  "summary": "Em uma cidade colapsada ou terreno ermo é difícil achar lenha grossa, e uma fogueira comum levanta fumaça preta que entrega sua posição enquanto o vento espalha o calor. Ao encaixar duas latas de aço vazias de tamanhos diferentes para formar uma parede dupla e prendê-las com o arame de cobre ou ferro de um fio elétrico desencapado, você cria um fogareiro sem fumaça que queima o próprio gás da madeira. Com apenas dois punhados de gravetos secos você ferve 1 litro de água em 8 minutos sem emitir fumaça.",
+  "timeRequired": "35 min (10m queima de revestimento + 15m furação + 10m montagem e acendimento)",
+  "successRate": "95% (usando latas de aço frisado e acendimento pelo topo)",
+  "difficulty": "Média (cuidado com rebarbas cortantes de metal e fumaça tóxica na queima prévia)",
+  "outputPerHour": "20 min de chama limpa a 850°C com 2 punhados (200g) de gravetos (esteriliza 1,5L de água)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Lata Grande de Aço Externa (12–15cm) e 1 Lata Pequena de Aço Interna (8–10cm)",
+      "desc": "Duas latas rígidas de aço com frisos horizontais que, encaixadas uma dentro da outra, deixem um espaço de um dedo (1,5–2cm) entre as paredes."
+    },
+    {
+      "id": "mat-02",
+      "name": "50cm de Fio Elétrico Descartado (Sem Capa Isolante)",
+      "desc": "Use uma [lasca de pedra afiada ou machado de pedra](/protocol-04.html) para rasgar a capa isolante externa e extrair o arame nu de cobre ou aço (1,5–3mm) para amarrar as latas e fazer a trempe da panela."
+    },
+    {
+      "id": "mat-03",
+      "name": "Prego de Sucata Pontiagudo (ou Furador de Pedra) e Pedra Martelo",
+      "desc": "Pino metálico pontiagudo ou furador de pedra batido com um seixo do tamanho do punho para perfurar os bicos de ar."
+    },
+    {
+      "id": "mat-04",
+      "name": "Dois Punhados de Gravetos Secos do Tamanho do Polegar e Isca de Resina",
+      "desc": "Gravetos secos de madeira dura quebrados no comprimento do polegar para carga vertical, mais [pedacinhos de resina de pinheiro](/protocol-10.html) e casca seca para acendimento pelo topo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Selecionar Latas de Aço, Desencapar o Fio e Queimar o Revestimento Epóxi Interno",
+      "description": "1. **Selecionar Latas de Aço Frisado**: Escolha duas latas rígidas de conserva com anéis horizontais de reforço que não amassem ao apertar. Ao colocar a menor dentro da maior, deve restar uma folga da **largura de um dedo (1,5–2cm)** ao redor.\n2. **Desencapar o Fio Elétrico**: Corte a capa isolante do cabo com uma [lasca de pedra afiada](/protocol-04.html) e retire **50cm de fio metálico nu** de cobre ou aço.\n3. **Queima Prévia de 5 Minutos**: Antes de furar, coloque folhas e gravetos secos dentro das duas latas vazias e **queime ao ar livre por 5 minutos** para carbonizar o verniz epóxi interno e a tinta.\n4. **Confirmar o Aço Cinza Fosco**: Quando o cheiro químico sumir e o interior ficar **cinza-escuro fosco**, deixe esfriar totalmente na sombra.",
+      "actionNote": "> Verificação de Toxicidade e Metal: Pular a queima prévia contamina a água com vapores tóxicos. Latas finas de bebida derretem rápido; veja as fotos reais abaixo para identificar latas de aço frisado e arame desencapado.",
+      "svgFileName": "pr12-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // STEEL CAN SELECTION & LINER BURN-OFF",
+        "LATA EXTERNA (12-15CM) E LATA INTERNA",
+        "FOLGA DE AR DE 1.5-2CM ENTRE AS PAREDES",
+        "QUEIMA DE 5 MIN REMOVE O VERNIZ EPÓXI",
+        "[CHAVE] ESCOLHER LATA DE AÇO E ARAME NU"
+      ],
+      "deepDive": {
+        "badge": "URBAN SALVAGE",
+        "title": "Aço Folha-de-Flandres (Fusão a 1.500°C) e Remoção Térmica de Resina BPA",
+        "text": "As latas de conserva de aço carbono têm ponto de fusão próximo a **1.500°C**, suportando repetidamente os 800–900°C do gás de madeira. Latas de bebida derretem a **660°C**. A queima prévia ao ar livre elimina a película interna de bisfenol (BPA) para um cozimento seguro.",
+        "fieldSpecs": [
+          {
+            "name": "Lata de Aço Frisado de Alta Resistência",
+            "scientificName": "Tin-Coated Corrugated Carbon Steel",
+            "categoryTag": "Sucata Metálica Urbana / Corpo do Fogareiro",
+            "imageFileName": "id-steel-tin-can.jpg",
+            "hudCode": "FIG. SALV-12A // MACRO OPTIC",
+            "hudStatus": "MELT POINT 1500C: VERIFIED",
+            "traits": [
+              {
+                "label": "FRISOS",
+                "value": "Anéis horizontais **em relevo (nervuras)** na parede cilíndrica que impedem que a lata dobre no calor."
+              },
+              {
+                "label": "BORDA",
+                "value": "Bordas superior e inferior com costura dupla grossa que produzem um **som metálico firme** ao bater."
+              },
+              {
+                "label": "QUEIMA",
+                "value": "Após 5 minutos de fogo com folhas, o brilho interno some e resta uma **parede segura de aço cinza fosco**."
+              }
+            ],
+            "fieldUse": "Corpo duplo de fogareiro a gás de lenha, caneca de fervura, pote de carvão"
+          },
+          {
+            "name": "Arame Desencapado e Gravetos Secos",
+            "scientificName": "Stripped Copper/Steel Core & Dry Hardwood",
+            "categoryTag": "Híbrido Urbano-Natural / Amarração e Combustível",
+            "imageFileName": "id-salvage-wire-twigs.jpg",
+            "hudCode": "FIG. SALV-12B // MACRO OPTIC",
+            "hudStatus": "INSULATION STRIPPED: VERIFIED",
+            "traits": [
+              {
+                "label": "NÚCLEO",
+                "value": "Fio sólido **de cobre avermelhado ou aço cinza** (**1,5–3mm** de espessura) totalmente sem capa isolante."
+              },
+              {
+                "label": "LENHA",
+                "value": "Gravetos secos de madeira dura da **grossura de um dedo e comprimento do polegar** que quebram com estalo seco."
+              },
+              {
+                "label": "ISCA",
+                "value": "Pedaços dourados de **resina de pinheiro e casca seca** colocados no topo para acender de cima para baixo."
+              }
+            ],
+            "fieldUse": "Amarração resistente ao fogo, suporte cruzado de panela, biomassa sem fumaça"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Perfurar os Furos Primários e os Bicos Secundários de Gás na Lata Interna",
+      "description": "1. **Apoiar a Lata Pequena**: Preencha o interior da lata pequena com um toco de madeira ou terra firme para não amassar a parede ao bater.\n2. **Perfurar o Fundo Primário**: Com o prego pontiagudo ou furador e a pedra martelo, abra **12–15 furos da grossura do mindinho (8mm)** espalhados pelo fundo da lata pequena.\n3. **Perfurar os Bicos Superiores de Gás**: A **uma falange (1,5cm) abaixo da borda superior** da lata pequena, fure **8–10 buracos da grossura do polegar (10–12mm)** em toda a volta.\n4. **Rebater as Rebarbas Cortantes**: Bata com a quina da pedra nas pontas de metal internas para achatá-las e evitar cortes nas mãos.",
+      "actionNote": "> Função dos Bicos Superiores: Os 8–10 furos grandes perto da borda superior funcionam como bocas de fogão a gás, injetando oxigênio quente na fumaça. Faça-os na grossura do polegar para jatos fortes.",
+      "svgFileName": "pr12-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // INNER BURN CHAMBER PERFORATION",
+        "FUNDO INTERNO: 12-15 FUROS PRIMÁRIOS (8MM)",
+        "TOPO: 8-10 BICOS DE GÁS SECUNDÁRIOS (10-12MM)",
+        "FURAR COM PINO E ACHATAR REBARBAS INTERNAS",
+        "[CHAVE] DRENO DE CINZAS E BICOS DE OXIGÊNIO"
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Proporção entre a Grelha de Pirólise Primária e os Bicos de Combustão Secundária",
+        "text": "Os furos menores do fundo fornecem o ar primário exato para gassificar os gravetos e deixam a cinza cair. Os bicos superiores de 10–12mm injetam ar secundário superaquecido diretamente no monóxido de carbono e metano ascendentes, convertendo fumaça em fogo limpo."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Abrir a Tampa Externa, Encaixar a Câmara Interna e Amarrar com Fio Desencapado",
+      "description": "1. **Furar Entradas Inferiores na Lata Grande**: Ao redor da base da lata externa, **1,5cm acima do fundo**, faça **8–10 furos da grossura do polegar (12mm)** para entrada de ar frio.\n2. **Recortar a Boca Superior Externa**: Corte uma abertura circular na tampa superior da lata grande para que a lata pequena entre justa até a borda.\n3. **Travar Ambas as Latas com Arame**: Passe o **fio nu de cobre ou aço** pelos furos opostos da borda superior e torça firme com um graveto para que a lata interna fique suspensa **2cm acima do fundo externo**.\n4. **Moldar o Suporte Cruzado (Trempe)**: Dobre o restante do arame grosso sobre a boca formando uma **grelha cruzada de 2–3cm de altura** para apoiar a panela sem abafar a chama.",
+      "actionNote": "> Folga de Exaustão Vital: Nunca apoie uma panela direto colada na borda da lata! Sem os 2–3cm de espaço do suporte de arame, a chama apaga na hora e solta fumaça preta.",
+      "svgFileName": "pr12-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOUBLE-WALL NESTING & WIRE BINDING",
+        "LATA EXTERNA: ENTRADAS DE AR FRIO (12MM X 8-10)",
+        "LATA INTERNA SUSPENSA COM CANAL DE 1.5-2CM",
+        "TRAVA DE ARAME NU E SUPORTE CRUZADO DE 2-3CM",
+        "[CHAVE] DUTO DE PRÉ-AQUECIMENTO CONCLUÍDO"
+      ],
+      "deepDive": {
+        "badge": "STRUCTURAL MECHANICS",
+        "title": "Por Que o Fio Metálico Desencapado Supera Cordas Naturais a 850°C",
+        "text": "Fibras vegetais carbonizam e arrebentam acima de 300°C. O núcleo nu de cobre (fusão a **1.085°C**) ou aço (**1.500°C**) retirado de cabos urbanos sustenta com segurança a parede dupla e o peso da água fervendo bem no centro das chamas."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Empilhar Gravetos na Vertical, Acender pelo Topo e Ferver Água Sem Fumaça",
+      "description": "1. **Carga Vertical de Gravetos**: Quebre gravetos secos na grossura de um dedo e comprimento do polegar e arrume-os **em pé na vertical** dentro da lata interna até **logo abaixo dos bicos superiores**.\n2. **Acendimento Invertido (Topo para Baixo)**: Coloque casca seca e [isca de resina de pinheiro](/protocol-10.html) **no topo dos gravetos verticais** e acenda por cima usando uma brasa do [arco de pua](/protocol-02.html).\n3. **Confirmar os Jatos de Gás de Lenha**: Em 2–3 minutos, quando a parede dupla aquecer, **jatos de chama amarelo-azulada** sairão pelos bicos superiores e a fumaça desaparecerá por completo.\n4. **Ferver Água e Colher Biocarvão**: Coloque sua vasilha com [água filtrada](/protocol-01.html) sobre o suporte de arame para ferver em 7–8 minutos; depois, abafe as brasas vermelhas com terra para guardar [carvão vegetal puro](/protocol-09.html).",
+      "actionNote": "> Por que acender por cima?: Se acender por baixo, toda a lenha fumega de uma vez. Acendendo pelo topo como uma vela, a fumaça que sobe de baixo é forçada a atravessar o anel de fogo superior e queima sem deixar rastro.",
+      "svgFileName": "pr12-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TOP-DOWN PYROLYSIS & SECONDARY JETS",
+        "GRAVETOS SECOS EM PÉ ABAIXO DOS BICOS",
+        "IGNIÇÃO PELO TOPO COM RESINA E CASCA SECA",
+        "JATOS DE AR QUEIMAM O GÁS DE LENHA SEM FUMAÇA",
+        "[CHAVE] FERVE 1L EM 8 MIN COM DOIS PUNHADOS"
+      ],
+      "deepDive": {
+        "badge": "COMBUSTION SCIENCE",
+        "title": "Gassificação de Fluxo Ascendente Acesa pelo Topo (TLUD) e Biocarvão",
+        "text": "Num gassificador TLUD, a frente de pirólise desce lentamente pelos gravetos verticais. Os gases voláteis liberados embaixo atravessam o anel superior de oxigênio a 850°C, queimando mais de 95% da fumaça e deixando carvão puro no fundo."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Cozinhar em latas sem queimar antes o revestimento epóxi ou usar latas finas de bebida",
+    "description": "Latas de conserva têm verniz epóxi interno que solta gases tóxicos se não for queimado vazio antes do uso. Além disso, latas finas de refrigerante derretem a 660°C e cedem sob a panela fervendo.",
+    "consequence": "Consequência: Inalação de vapores químicos e queimaduras graves por colapso do fogareiro"
+  },
+  "shortsScript": {
+    "hook": "Com apenas 2 latas vazias e um punhado de gravetos você faz um fogareiro sem fumaça que ferve água em 8 minutos!",
+    "body": "Escolha duas latas de aço de tamanhos diferentes e queime folhas secas dentro por 5 minutos para eliminar o verniz tóxico. Fure o fundo da lata pequena e abra 8 bicos da grossura do polegar perto da borda superior. Faça entradas de ar na base da lata grande, encaixe a pequena dentro e amarre com arame de fio desencapado. Encha com gravetos em pé e acenda por cima para o ar quente queimar a própria fumaça como um fogão a gás!",
+    "outro": "Sem fumaça ninguém descobre sua posição e a água ferve em 8 minutos. Veja o projeto completo no link do perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr12-outcome.svg",
+    "title": "Fogareiro a Gás de Lenha de Dupla Lata Concluído (Queimador Sem Fumaça de 850°C)",
+    "description": "Construído com duas latas de aço descartadas e arame desencapado, com canal de pré-aquecimento de 1,5–2cm, entradas inferiores de ar frio, bicos superiores de oxigênio secundário e suporte cruzado de arame para combustão limpa a 850°C."
+  },
+  "createdAt": "2026-10-17T10:12:00.000Z",
+  "contentHash": "00b85f08738b5163"
+}

@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-12",
+  "category": "FIRE",
+  "title": "Estufa de Gas de Leña de Doble Combustión con 2 Latas Vacías, Cable Pelado y Ramitas",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[COCCIÓN SIN HUMO A ALTA TEMPERATURA Y 80% AHORRO DE LEÑA]",
+  "summary": "En una ciudad colapsada o en terreno baldío es difícil hallar leña gruesa, y encender una fogata común levanta humo negro que delata tu posición además de perder calor con el viento. Al encajar dos latas de acero vacías de distinto tamaño para formar una cámara de doble pared y sujetarlas con el núcleo de cobre o hierro de un cable eléctrico pelado, obtienes un hornillo sin humo que quema el propio gas de la madera. Con solo dos puñados de ramitas secas hierves 1 litro de agua en 8 minutos sin emitir humo.",
+  "timeRequired": "35 min (10m quema de revestimiento + 15m perforación + 10m ensamblaje y encendido)",
+  "successRate": "95% (usando latas de acero estriado y encendido desde arriba)",
+  "difficulty": "Media (cuidado con los bordes cortantes de chapa y el humo del barniz durante la purga)",
+  "outputPerHour": "20 min de llama limpia a 850°C con dos puñados (200g) de ramitas (esteriliza 1.5L de agua)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Lata Grande de Acero Exterior (12–15cm) y 1 Lata Pequeña de Acero Interior (8–10cm)",
+      "desc": "Dos latas rígidas de acero con nervaduras horizontales que, al encajarse una dentro de otra, dejen un espacio de un nudillo (1.5–2cm) entre sus paredes."
+    },
+    {
+      "id": "mat-02",
+      "name": "50cm de Cable Eléctrico Recuperado (Sin Funda Aislante)",
+      "desc": "Use una [laja de piedra afilada o hacha de piedra](/protocol-04.html) para pelar la funda exterior del cable y extraer el alambre desnudo de cobre o acero (1.5–3mm) para fijar las latas y armar el soporte de olla."
+    },
+    {
+      "id": "mat-03",
+      "name": "Clavo de Chatarra Puntiagudo (o Punzón de Piedra) y Piedra Martillo",
+      "desc": "Clavo grueso recuperado o punzón de piedra golpeado con un canto rodado del tamaño del puño para perforar las toberas de aire."
+    },
+    {
+      "id": "mat-04",
+      "name": "Dos Puñados de Ramitas Secas del Largo del Pulgar y Yesca de Resina",
+      "desc": "Ramitas secas de madera dura partidas al tamaño del pulgar para carga vertical, junto con [trozos de resina de pino](/protocol-10.html) y corteza seca para el encendido superior."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Seleccionar Latas de Acero, Pelar el Cable y Quemar el Revestimiento Epoxi Interior",
+      "description": "1. **Seleccionar Latas de Acero Estriado**: Elija dos latas rígidas de conserva con estrías horizontales de refuerzo que no se doblen al apretarlas. Al colocar la pequeña dentro de la grande debe quedar un canal de aire del **ancho de un nudillo (1.5–2cm)** alrededor.\n2. **Pelar el Cable Eléctrico**: Corte longitudinalmente el aislamiento del cable con una [laja de piedra afilada](/protocol-04.html) y extraiga **50cm de alambre metálico desnudo** de cobre o acero.\n3. **Quema Previa de 5 Minutos**: Antes de hacer agujeros, llene ambas latas vacías con hojas y ramitas secas y **quémelas al aire libre durante 5 minutos** para carbonizar el barniz epoxi interior y la pintura.\n4. **Verificar el Acero Gris Mate**: Cuando desaparezca el olor químico y el interior luzca **gris oscuro mate**, deje enfriar las latas a la sombra.",
+      "actionNote": "> Control de Toxicidad y Metal: Omitir la quema previa contamina el agua con vapores tóxicos. Las latas blandas de bebida se derriten rápido; guíese por las fotos reales de abajo para elegir latas de acero estriado y alambre pelado.",
+      "svgFileName": "pr12-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // STEEL CAN SELECTION & LINER BURN-OFF",
+        "LATA EXTERIOR (12-15CM) Y LATA INTERIOR",
+        "CANAL DE AIRE DE 1.5-2CM ENTRE PAREDES",
+        "QUEMA DE 5 MIN ELIMINA EL BARNIZ EPOXI",
+        "[CLAVE] ELEGIR LATA DE ACERO Y ALAMBRE PELADO"
+      ],
+      "deepDive": {
+        "badge": "URBAN SALVAGE",
+        "title": "Acero Estañado (Punto de Fusión 1,500°C) y Eliminación Térmica de Resina BPA",
+        "text": "Las latas de conserva de acero al carbono tienen un punto de fusión cercano a **1,500°C**, soportando sin deformarse los 800–900°C del gas de leña. Las latas de refresco se funden a **660°C**. La quema previa en vacío elimina la película interna de bisfenol (BPA) para cocinar de forma segura.",
+        "fieldSpecs": [
+          {
+            "name": "Lata de Acero Estriado de Alta Resistencia",
+            "scientificName": "Tin-Coated Corrugated Carbon Steel",
+            "categoryTag": "Chatarra Metálica Urbana / Cuerpo del Hornillo",
+            "imageFileName": "id-steel-tin-can.jpg",
+            "hudCode": "FIG. SALV-12A // MACRO OPTIC",
+            "hudStatus": "MELT POINT 1500C: VERIFIED",
+            "traits": [
+              {
+                "label": "ESTRÍAS",
+                "value": "Anillos horizontales **en relieve (nervaduras)** en la pared cilíndrica que impiden que la lata se aplaste con la mano."
+              },
+              {
+                "label": "BORDE",
+                "value": "Bordes superior e inferior doblemente engarzados que emiten un **sonido metálico grave y firme** al golpearlos."
+              },
+              {
+                "label": "PURGA",
+                "value": "Tras 5 minutos de fuego con hojas, desaparece el brillo interior y queda una **pared segura de acero gris mate**."
+              }
+            ],
+            "fieldUse": "Cámara doble de estufa de gas de leña, recipiente para hervir agua, bote de carbón"
+          },
+          {
+            "name": "Alambre Pelado y Ramitas Secas",
+            "scientificName": "Stripped Copper/Steel Core & Dry Hardwood",
+            "categoryTag": "Híbrido Urbano-Natural / Fijación y Combustible",
+            "imageFileName": "id-salvage-wire-twigs.jpg",
+            "hudCode": "FIG. SALV-12B // MACRO OPTIC",
+            "hudStatus": "INSULATION STRIPPED: VERIFIED",
+            "traits": [
+              {
+                "label": "NÚCLEO",
+                "value": "Alambre sólido **de cobre rojizo o acero gris** (**1.5–3mm** de grosor) totalmente libre de funda aislante."
+              },
+              {
+                "label": "LEÑA",
+                "value": "Ramitas secas de madera dura del **grosor de un dedo y largo del pulgar** que se parten con un chasquido seco."
+              },
+              {
+                "label": "YESCA",
+                "value": "Trozos dorados de **resina de pino y virutas de corteza seca** colocados arriba para iniciar el fuego hacia abajo."
+              }
+            ],
+            "fieldUse": "Amarre ignífugo de doble pared, parrilla cruzada para olla, biomasa sin humo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Perforar los Orificios Primarios y las Toberas Secundarias en la Lata Interior",
+      "description": "1. **Calzar la Lata Pequeña**: Rellene el interior de la lata pequeña con un taco de madera o tierra firme para no abollarla al golpear.\n2. **Perforar el Fondo Primario**: Con el clavo puntiagudo o punzón y la piedra martillo, abra **12–15 agujeros del grosor del meñique (8mm)** repartidos por el fondo de la lata pequeña.\n3. **Perforar las Toberas Superiores de Gas**: A **un nudillo (1.5cm) por debajo del borde superior** de la lata pequeña, perfore **8–10 agujeros del grosor del pulgar (10–12mm)** alrededor de toda la circunferencia.\n4. **Aplanar las Rebabas Cortantes**: Golpee con el canto de la piedra las rebabas metálicas internas para aplanarlas y evitar cortes.",
+      "actionNote": "> Función de las Toberas Superiores: Los 8–10 agujeros grandes bajo el borde superior actúan como los quemadores de una cocina de gas, inyectando oxígeno caliente al humo. Hágalos del grosor del pulgar para lograr chorros potentes.",
+      "svgFileName": "pr12-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // INNER BURN CHAMBER PERFORATION",
+        "FONDO INTERIOR: 12-15 AGUJEROS PRIMARIOS (8MM)",
+        "BORDE SUPERIOR: 8-10 TOBERAS DE GAS (10-12MM)",
+        "PERFORAR CON PUNZÓN Y APLANAR REBABAS",
+        "[CLAVE] DRENAJE DE CENIZA Y TOBERAS DE OXÍGENO"
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Diseño de Rejilla de Pirólisis Primaria y Toberas de Combustión Secundaria",
+        "text": "Los orificios pequeños del fondo aportan el aire primario justo para gasificar la madera y dejan caer la ceniza. Las toberas superiores de 10–12mm inyectan aire secundario sobrecalentado directamente sobre el monóxido de carbono y metano ascendentes, transformando el humo en fuego limpio."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Abrir la Tapa Exterior, Encajar la Cámara Interna y Atar con Alambre Pelado",
+      "description": "1. **Perforar Tomas Inferiores en la Lata Grande**: Alrededor de la base de la lata exterior, **1.5cm por encima del suelo**, perfore **8–10 agujeros del grosor del pulgar (12mm)** para la entrada de aire frío.\n2. **Recortar la Boca Superior Exterior**: Cincele una abertura circular en la tapa superior de la lata grande para que la lata pequeña entre ajustada hasta su reborde.\n3. **Fijar Ambas Latas con Alambre**: Pase el **alambre desnudo de cobre o acero** por los agujeros enfrentados del borde superior y retuérzalo con un palo para que la lata interna quede suspendida **2cm por encima del fondo exterior**.\n4. **Armar el Soporte Cruzado (Trébede)**: Doble el resto del alambre grueso sobre la boca formando una **parrilla cruzada de 2–3cm de altura** para apoyar la olla sin ahogar el fuego.",
+      "actionNote": "> Espacio de Escape Vital: ¡Nunca apoye una olla directamente pegada al borde de la lata! Sin esos 2–3cm de separación del soporte de alambre, la llama se ahoga al instante y sale humo negro.",
+      "svgFileName": "pr12-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOUBLE-WALL NESTING & WIRE BINDING",
+        "LATA EXTERIOR: TOMAS INFERIORES (12MM X 8-10)",
+        "LATA INTERNA SUSPENDIDA CON CANAL DE 1.5-2CM",
+        "AMARRE DE ALAMBRE PELADO Y PARRILLA DE 2-3CM",
+        "[CLAVE] CONDUCTO DE PRECALENTAMIENTO COMPLETADO"
+      ],
+      "deepDive": {
+        "badge": "STRUCTURAL MECHANICS",
+        "title": "Por Qué el Alambre Metálico Recuperado Supera a las Cuerdas Vegetales a 850°C",
+        "text": "Las fibras vegetales se carbonizan y rompen por encima de 300°C. El núcleo desnudo de cobre (fusión a **1,085°C**) o acero (**1,500°C**) extraído de cables urbanos sostiene firmemente la doble pared y el peso del agua hirviendo en plena zona de llamas."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Cargar Ramitas en Vertical, Encender desde Arriba y Hervir Agua Sin Humo",
+      "description": "1. **Carga Vertical de Ramitas**: Parta ramitas secas del grosor de un dedo al largo del pulgar y colóquelas **de pie en vertical** dentro de la lata interna hasta **justo debajo de las toberas superiores**.\n2. **Encendido Invertido (Arriba hacia Abajo)**: Coloque corteza seca y [yesca de resina de pino](/protocol-10.html) **encima de las ramitas verticales** y préndalas desde arriba con una brasa de [arco de fricción](/protocol-02.html).\n3. **Verificar los Chorros de Gas de Leña**: En 2–3 minutos, al calentarse la doble pared, verá salir **chorros de llama amarillo-azulada** por las toberas superiores mientras el humo desaparece por completo.\n4. **Hervir Agua y Recoger Biocarbón**: Coloque su recipiente con [agua filtrada](/protocol-01.html) sobre el soporte de alambre para hervir en 7–8 minutos; al terminar, cubra las brasas rojas con tierra para obtener [carbón vegetal limpio](/protocol-09.html).",
+      "actionNote": "> ¿Por qué encender desde arriba?: Si enciende por debajo, toda la madera humea a la vez. Al encender por arriba como una vela, el humo que sube desde abajo tiene que atravesar el anillo de fuego superior y se quema sin dejar rastro.",
+      "svgFileName": "pr12-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TOP-DOWN PYROLYSIS & SECONDARY JETS",
+        "RAMITAS SECAS EN VERTICAL BAJO LAS TOBERAS",
+        "ENCENDIDO SUPERIOR CON RESINA Y CORTEZA",
+        "CHORROS DE AIRE QUEMAN EL GAS DE LEÑA SIN HUMO",
+        "[CLAVE] HIERVE 1L EN 8 MIN CON DOS PUÑADOS"
+      ],
+      "deepDive": {
+        "badge": "COMBUSTION SCIENCE",
+        "title": "Gasificación de Tiro Ascendente Encendida por Arriba (TLUD) y Biocarbón",
+        "text": "En un gasificador TLUD, el frente de pirólisis desciende lentamente por las ramitas verticales. Los gases volátiles liberados abajo atraviesan el anillo superior de chorros de oxígeno a 850°C, quemando más del 95% del humo y dejando carbón puro en la base."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Cocinar en latas sin quemar previamente el revestimiento epoxi o usar latas delgadas de bebida",
+    "description": "Las latas de conserva tienen un recubrimiento interior epoxi antioxidante que desprende gases tóxicos si no se quema en vacío antes de usar. Además, las latas delgadas de refresco se funden a 660°C y colapsan derramando el agua hirviendo.",
+    "consequence": "Consecuencia: Intoxicación por vapores químicos y quemaduras graves por colapso del hornillo"
+  },
+  "shortsScript": {
+    "hook": "¡Con solo 2 latas vacías y un puñado de ramitas puedes fabricar un hornillo sin humo que hierve agua en 8 minutos!",
+    "body": "Primero elige dos latas de acero de distinto tamaño y quema hojas secas dentro durante 5 minutos para eliminar el barniz tóxico. Perfora agujeros en el fondo de la lata pequeña y 8 toberas del grosor del pulgar bajo el borde superior. Abre entradas de aire en la base de la lata grande, encaja la pequeña dentro y átalas con alambre de cable pelado. ¡Llena con ramitas en vertical y enciende desde arriba para que el aire caliente queme el propio humo como un soplete!",
+    "outro": "Sin humo nadie descubre tu posición y el agua hierve en 8 minutos. Mira los planos en el enlace del perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr12-outcome.svg",
+    "title": "Estufa de Gas de Leña de Doble Lata Completada (Quemador Sin Humo de 850°C)",
+    "description": "Construida con dos latas de acero recuperadas y alambre pelado, con canal de precalentamiento de 1.5–2cm, tomas inferiores de aire frío, toberas superiores de oxígeno secundario y soporte cruzado de alambre para combustión limpia a 850°C."
+  },
+  "createdAt": "2026-10-17T10:12:00.000Z",
+  "contentHash": "00b85f08738b5163"
+}

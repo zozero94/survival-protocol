@@ -66,10 +66,10 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-11)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-12, 총 11편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생 식별 에셋 (pr08-*.jpg, id-*.jpg)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (74개 SVG 도면)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 12종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (79개 SVG 도면, 활성 감사 64종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
@@ -109,14 +109,14 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 16개 테스트 스위트 (111/111 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 16개 테스트 스위트 (112/112 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 74종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 79종, 활성 정적 감사 64종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:

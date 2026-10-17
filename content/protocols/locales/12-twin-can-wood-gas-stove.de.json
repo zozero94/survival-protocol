@@ -1,0 +1,177 @@
+{
+  "protocolId": "PR-12",
+  "category": "FIRE",
+  "title": "Doppelwandiger Holzvergaser-Kocher aus 2 leeren Konservendosen, Schrottdraht und Zweigen",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[RAUCHFREIES HOCHTEMPERATUR-KOCHEN & 80% HOLZERSPARNIS]",
+  "summary": "In einer verlassenen Stadt oder im Ödland ist dickes Brennholz knapp, und ein offenes Feuer verrät durch schwarzen Rauch sofort den Standort, während der Wind die Hitze verweht. Steckt man zwei unterschiedlich große Stahlblechdosen ineinander und fixiert sie mit dem blanken Kupfer- oder Stahlkern eines alten Elektrokabels, entsteht ein rauchfreier Holzvergaser-Kocher, der den aufsteigenden Rauch selbst verbrennt. Zwei Handvoll trockener Zweige bringen 1 Liter Wasser in 8 Minuten völlig rauchfrei zum Kochen.",
+  "timeRequired": "35 Min (10m Ausbrennen + 15m Lochen + 10m Zusammenbau & Zünden)",
+  "successRate": "95% (bei Verwendung geriffelter Stahldosen & Zündung von oben)",
+  "difficulty": "Mittel (Vorsicht vor scharfen Blechkanten & giftigem Beschichtungsrauch beim Vorbrand)",
+  "outputPerHour": "20 Min rauchfreie 850°C-Flamme mit 2 Handvoll (200g) Zweigen (kocht 1,5L Wasser ab)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 große äußere Stahldose (12–15cm) & 1 kleinere innere Stahldose (8–10cm)",
+      "desc": "Zwei stabile, geriffelte Stahlblechdosen (große Suppen- oder Milchpulverdose außen, normale Konservendose innen), zwischen denen ein fingerbreiter (1,5–2cm) Luftspalt bleibt."
+    },
+    {
+      "id": "mat-02",
+      "name": "50cm geborgenes Elektrokabel (ohne Isolierung)",
+      "desc": "Schneiden Sie die äußere Isolierung mit einer [scharfen Steinklinge oder Steinaxt](/protocol-04.html) ab und nutzen Sie den blanken Kupfer- oder Stahldrahtkern (1,5–3mm dick) zur feuerfesten Befestigung und als Topfkreuz."
+    },
+    {
+      "id": "mat-03",
+      "name": "Spitzer Schrottnagel (oder Steinahle) und Schlagstein",
+      "desc": "Spitzer Metallstift oder Steinpfriem samt faustgroßem Flussstein zum Einschlagen der Primär- und Sekundärluftdüsen."
+    },
+    {
+      "id": "mat-04",
+      "name": "Zwei Handvoll daumenlanger trockener Zweige & Kiefernharz-Zunder",
+      "desc": "Knochentrockene Laubholzzweige auf Daumenlänge gebrochen zur vertikalen Schichtung sowie [Kiefernharzbrocken](/protocol-10.html) und trockene Rinde für die Zündung von oben."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Stabile Stahldosen wählen, Kabel abisolieren & innere Epoxidschicht ausbrennen",
+      "description": "1. **Geriffelte Stahldosen auswählen**: Wählen Sie zwei feste Konservendosen mit querverlaufenden Verstärkungsrillen, die sich mit der Hand nicht eindrücken lassen. Zwischen Innen- und Außendose muss ringsum **eine Fingerbreite (1,5–2cm)** Luftspalt bleiben.\n2. **Elektrokabel abisolieren**: Ritzen Sie den Mantel eines alten Kabels mit einer [scharfen Steinklinge](/protocol-04.html) längs auf und ziehen Sie **50cm blanken Kupfer- oder Stahldraht** heraus.\n3. **5 Minuten Ausbrennen der Beschichtung**: Füllen Sie vor dem Lochen trockenes Laub und Reisig in beide leeren Dosen und **brennen Sie diese im Freien 5 Minuten lang aus**, um Innenbeschichtung und Farbe restlos zu verkohlen.\n4. **Mattgraue Stahloberfläche prüfen**: Sobald kein beißender Geruch mehr aufsteigt und das Innere **matt dunkelgrau** ist, lassen Sie die Dosen im Schatten abkühlen.",
+      "actionNote": "> Giftgas- & Metall-Check: Ohne vorheriges Ausbrennen gelangen giftige Dämpfe ins Kochwasser. Dünne Getränkedosen schmelzen wie Papier – prüfen Sie anhand der Fotos unten die geriffelten Stahldosen und den blanken Drahtkern.",
+      "svgFileName": "pr12-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // STEEL CAN SELECTION & LINER BURN-OFF",
+        "ÄUSSERE STAHLDOSE (12-15CM) & INNENDOSE",
+        "FINGERBREITER (1.5-2CM) DOPPELWAND-LUFTSPALT",
+        "5 MIN AUSBRENNEN ENTFERNT EPOXIDSCHICHT",
+        "[KERN] STABILE STAHLDOSE & BLANKER DRAHTKERN"
+      ],
+      "deepDive": {
+        "badge": "URBAN SALVAGE",
+        "title": "Weißblech-Stahl (Schmelzpunkt 1.500°C) und thermische Entfernung von BPA-Harz",
+        "text": "Verzinnte Kohlenstoffstahldosen haben einen Schmelzpunkt von rund **1.500°C** und halten der 800–900°C heißen Holzgasflamme dauerhaft stand. Getränkedosen schmelzen bereits bei **660°C**. Das vorherige Ausbrennen im Freien zersetzt die innere BPA-Epoxidschicht vollständig.",
+        "fieldSpecs": [
+          {
+            "name": "Hitzefeste geriffelte Stahl-Konservendose",
+            "scientificName": "Tin-Coated Corrugated Carbon Steel",
+            "categoryTag": "Urbaner Metallschrott / Brennkammerkörper",
+            "imageFileName": "id-steel-tin-can.jpg",
+            "hudCode": "FIG. SALV-12A // MACRO OPTIC",
+            "hudStatus": "MELT POINT 1500C: VERIFIED",
+            "traits": [
+              {
+                "label": "RILLEN",
+                "value": "Umlaufende **quergeprägte Verstärkungsrippen** an der Zylinderwand verhindern ein Verbiegen bei Hitze."
+              },
+              {
+                "label": "RAND",
+                "value": "Dick gefalzte Ober- und Unterkanten erzeugen beim Anschlagen mit einem Stein einen **satten, klaren Metallklang**."
+              },
+              {
+                "label": "VORBRAND",
+                "value": "Nach 5 Minuten Laubfeuer verschwindet der Innenglanz und hinterlässt **sicheren, matt dunkelgrauen Stahl**."
+              }
+            ],
+            "fieldUse": "Doppelwand-Holzvergaser, Notfall-Abkochgefäß, Holzkohlebehälter"
+          },
+          {
+            "name": "Blanker Schrottdraht & trockene Zweige",
+            "scientificName": "Stripped Copper/Steel Core & Dry Hardwood",
+            "categoryTag": "Stadt-Natur-Hybrid / Bindedraht & Brennstoff",
+            "imageFileName": "id-salvage-wire-twigs.jpg",
+            "hudCode": "FIG. SALV-12B // MACRO OPTIC",
+            "hudStatus": "INSULATION STRIPPED: VERIFIED",
+            "traits": [
+              {
+                "label": "ADER",
+                "value": "Mit der Steinklinge komplett abisolierter **massiver Kupfer- oder Stahldraht** (**1,5–3mm** stark)."
+              },
+              {
+                "label": "HOLZ",
+                "value": "Fingerdicke, daumenlange **knochentrockene Laubholzzweige**, die beim Biegen mit hellem Knacken brechen."
+              },
+              {
+                "label": "ZUNDER",
+                "value": "Goldene **Kiefernharzstücke und trockene Rinde** ganz oben auf dem Holzstapel für die Top-Down-Zündung."
+              }
+            ],
+            "fieldUse": "Feuerfeste Doppelwand-Bindung, Kreuz-Topfauflage, rauchfreier Holzgas-Brennstoff"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Primärrost-Löcher und sekundäre Holzgas-Düsen in die Innendose schlagen",
+      "description": "1. **Innendose abstützen**: Stecken Sie ein passendes Holzstück oder feste Erde in die kleine Dose, damit das Blech beim Einschlagen nicht eindellt.\n2. **Untere Primärlöcher einschlagen**: Schlagen Sie mit dem spitzen Nagel oder Steinpfriem und dem Schlagstein **12–15 kleinfingerdicke (8mm) Löcher** gleichmäßig in den Boden der kleinen Dose.\n3. **Obere Sekundär-Gasdüsen einschlagen**: Schlagen Sie **eine Fingerbreite (1,5cm) unterhalb des oberen Randes** ringsum **8–10 daumendicke (10–12mm) Löcher** in die Seitenwand der kleinen Dose.\n4. **Scharfe Blechgrate glätten**: Klopfen Sie nach innen stehende scharfe Metallkanten mit dem Stein flach an die Wand, um Schnittwunden zu vermeiden.",
+      "actionNote": "> Funktion der oberen Düsen: Die 8–10 großen Löcher unter dem oberen Rand wirken wie Gasherd-Düsen, die vorgewärmten Sauerstoff in den Rauch blasen. Machen Sie diese daumendick für starke Flammenstrahlen.",
+      "svgFileName": "pr12-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // INNER BURN CHAMBER PERFORATION",
+        "INNENBODEN: 12-15 PRIMÄRLUFTLÖCHER (8MM)",
+        "OBEN: 8-10 SEKUNDÄR-GASDÜSEN (10-12MM)",
+        "MIT DORN & STEIN LOCHEN, GRATE GLÄTTEN",
+        "[KERN] ASCHEROST UNTEN & GASDÜSEN OBEN FERTIG"
+      ],
+      "deepDive": {
+        "badge": "FIELD THERMODYNAMICS",
+        "title": "Querschnittsverhältnis zwischen Primär-Pyrolyserost und Sekundär-Gasdüsen",
+        "text": "Die kleineren Bodenlöcher liefern begrenzte Primärluft zur Holzvergasung und lassen Asche durchfallen. Die großen 10–12mm-Düsen oben pressen hocherhitzte Sekundärluft direkt in das aufsteigende Kohlenmonoxid und Methan und verbrennen den Rauch vollständig."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Außendose öffnen, Innendose einsetzen & mit blankem Draht fixieren",
+      "description": "1. **Untere Lufteinlässe in die Außendose schlagen**: Schlagen Sie rings um die große Außendose **1,5cm über dem Boden 8–10 daumendicke (12mm) Kaltluftlöcher** ein.\n2. **Obere Öffnung ausschneiden**: Meißeln Sie eine runde Öffnung in den Deckel der großen Dose, sodass die kleine Innendose stramm bis zum oberen Rand hineinpasst.\n3. **Beide Dosen mit Draht verbinden**: Ziehen Sie den **blanken Kupfer- oder Stahldraht** durch gegenüberliegende Randlöcher und verdrillen Sie ihn fest, sodass die Innendose **2cm über dem Außenboden** frei schwebt.\n4. **Kreuz-Topfauflage biegen**: Biegen Sie den restlichen dicken Draht über der Öffnung zu einem **2–3cm hohen Topfkreuz**, damit der Topf die Flamme nicht erstickt.",
+      "actionNote": "> Wichtiger Abgasspalt: Stellen Sie niemals einen Topf direkt flach auf den Dosenrand! Ohne den 2–3cm hohen Drahtabstand erstickt die Sekundärflamme sofort und qualmt schwarz.",
+      "svgFileName": "pr12-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOUBLE-WALL NESTING & WIRE BINDING",
+        "AUSSENDOSE UNTEN: KALTLUFTEINLÄSSE (12MM)",
+        "INNENDOSE MIT 1.5-2CM LUFTSPALT EINGESETZT",
+        "DRAHT-RANDVERBINDUNG & 2-3CM TOPFKREUZ",
+        "[KERN] DOPPELWAND-VORWÄRMKANAL FERTIGGESTELLT"
+      ],
+      "deepDive": {
+        "badge": "STRUCTURAL MECHANICS",
+        "title": "Warum blanker Metalldraht bei 850°C jeder Pflanzenschnur überlegen ist",
+        "text": "Pflanzenschnüre verkohlen und reißen ab 300°C. Blanker Kupferdraht (Schmelzpunkt **1.085°C**) oder Stahldraht (**1.500°C**) aus alten Elektrokabeln hält die Doppelwand und einen vollen Wassertopf mitten in der 850°C-Flammenzone sicher zusammen."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Zweige senkrecht schlichten, von oben entzünden & rauchfrei Wasser kochen",
+      "description": "1. **Zweige senkrecht einstellen**: Brechen Sie trockene Laubholzzweige auf Daumenlänge und stellen Sie diese **senkrecht und dicht an dicht** in die Innendose bis **knapp unter die oberen Düsenlöcher**.\n2. **Zündung von oben nach unten (Top-Down)**: Legen Sie trockene Rinde und [Kiefernharz-Zunder](/protocol-10.html) **oben auf die senkrechten Zweige** und entzünden Sie diese von oben mit Glut vom [Feuerbogen](/protocol-02.html).\n3. **Sekundäre Holzgas-Flammen prüfen**: Nach 2–3 Minuten erhitzt sich die Doppelwand; aus den oberen Düsen schießen **hellgelb-bläuliche Flammenstrahlen** nach innen und der Rauch verschwindet komplett.\n4. **Wasser abkochen & Pflanzenkohle sichern**: Setzen Sie Ihr Gefäß mit [gefiltertem Wasser](/protocol-01.html) auf das Drahtkreuz (kocht in 7–8 Minuten) und löschen Sie danach die rote Restglut mit Erde ab, um [reine Holzkohle](/protocol-09.html) zu gewinnen.",
+      "actionNote": "> Warum von oben anzünden?: Von unten angezündet qualmt das gesamte Holz auf einmal. Von oben brennt die Glut langsam wie eine Kerze nach unten, sodass aller aufsteigende Rauch durch den oberen Flammenring gezogen und restlos verbrannt wird.",
+      "svgFileName": "pr12-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TOP-DOWN PYROLYSIS & SECONDARY JETS",
+        "TROCKENE ZWEIGE SENKRECHT UNTER DEN DÜSEN",
+        "ZÜNDUNG VON OBEN MIT KIEFERNHARZ & RINDE",
+        "HEISSE LUFTSTRAHLEN VERBRENNEN HOLZGAS RAUCHFREI",
+        "[KERN] KOCHT 1L WASSER IN 8 MIN MIT ZWEI HANDVOLL"
+      ],
+      "deepDive": {
+        "badge": "COMBUSTION SCIENCE",
+        "title": "Aufstrom-Holzvergasung mit Kopfzündung (TLUD) und Pflanzenkohle-Gewinnung",
+        "text": "Beim TLUD-Holzvergaser wandert die Pyrolysezone langsam von oben nach unten. Die darunter entstehenden Holzgase müssen zwingend durch den 850°C heißen Sekundärluftring strömen, wodurch über 95% der Rauchpartikel verbrennen und am Boden reine Kohle zurückbleibt."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Kochen in unausgebrannten Epoxid-Dosen oder Verwendung dünner Getränkedosen",
+    "description": "Konservendosen sind innen mit Epoxidharz beschichtet, das ohne vorheriges Ausbrennen giftige Dämpfe ins Wasser abgibt. Zudem schmelzen dünne Getränkedosen bei 660°C und brechen unter dem kochenden Wassertopf zusammen.",
+    "consequence": "Folge: Giftgasinhalation sowie schwere Verbrühungen durch Einsturz des Kochers"
+  },
+  "shortsScript": {
+    "hook": "Mit nur 2 leeren Konservendosen und einer Handvoll Zweige baust du einen rauchfreien Jet-Kocher, der Wasser in 8 Minuten kocht!",
+    "body": "Wähle zwei unterschiedlich große Stahldosen und brenne trockenes Laub darin 5 Minuten lang aus, um die giftige Innenbeschichtung zu entfernen. Schlage Löcher in den Boden der kleinen Dose und 8 daumendicke Düsen unter den oberen Rand. Loche die große Dose unten, stecke die kleine Dose hinein und fixiere sie mit blankem Draht. Fülle trockene Zweige senkrecht ein und zünde sie von oben an – die heiße Luft zwischen den Wänden verbrennt den Rauch selbst wie ein Gasherd!",
+    "outro": "Kein Rauch verrät deinen Standort, und nach 8 Minuten kocht das Wasser. Den Bauplan findest du über den Link im Profil."
+  },
+  "outcome": {
+    "svgFileName": "pr12-outcome.svg",
+    "title": "Fertiger Doppelwand-Holzvergaser-Kocher (Rauchfreier 850°C-Jetbrenner)",
+    "description": "Gebaut aus zwei geborgenen Stahldosen und blankem Draht mit 1,5–2cm Doppelwand-Luftspalt, unteren Kaltlufteinlässen, oberen Sekundärluftdüsen, Draht-Topfkreuz und rauchfreier 850°C-Holzgasverbrennung."
+  },
+  "createdAt": "2026-10-17T10:12:00.000Z",
+  "contentHash": "00b85f08738b5163"
+}
