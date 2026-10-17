@@ -1,5 +1,5 @@
 /* 자동 생성 파일 - 직접 수정하지 말 것 (src/services/pwa.service.ts) */
-const CACHE_VERSION = "survival-67af89dbd636";
+const CACHE_VERSION = "survival-2359779b81ff";
 const CACHE_PREFIX = 'survival-';
 const PRECACHE_URLS = ["/index.html","/","/svgs/pr01-outcome.svg","/svgs/pr02-outcome.svg","/svgs/pr03-outcome.svg","/svgs/pr04-outcome.svg","/svgs/pr05-outcome.svg","/svgs/pr06-outcome.svg","/svgs/pr08-outcome.svg","/svgs/pr09-outcome.svg","/svgs/pr10-outcome.svg","/svgs/pr11-outcome.svg","/svgs/pr12-outcome.svg","/assets/fuse.basic.min.js","/assets/search-index.js","/protocol-01.html","/protocol-01","/protocol-02.html","/protocol-02","/protocol-03.html","/protocol-03","/protocol-04.html","/protocol-04","/protocol-05.html","/protocol-05","/protocol-06.html","/protocol-06","/protocol-08.html","/protocol-08","/protocol-09.html","/protocol-09","/protocol-10.html","/protocol-10","/protocol-11.html","/protocol-11","/protocol-12.html","/protocol-12"];
 const EXTERNAL_URLS = ["https://cdn.tailwindcss.com","https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"];
@@ -84,6 +84,16 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (url.origin === self.location.origin) {
+    if (url.pathname === '/assets/search-index.js') {
+      event.respondWith(cachePromise.then(async (cache) => {
+        try {
+          const fresh = await fetchAndStore(cache, request.url, request);
+          if (fresh) return fresh;
+        } catch (error) {}
+        return (await cache.match(request.url)) || offlineResponse();
+      }));
+      return;
+    }
     event.respondWith(cachePromise.then(async (cache) => {
       const cached = await cache.match(request.url);
       return cached || fetchAndStore(cache, request.url, request);

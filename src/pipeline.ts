@@ -115,11 +115,20 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
     log(`🖼️ [2/4 Content Layer] 이미지 에셋(${imageCount}개) public/images 복사 완료`);
   }
 
-  // 2-3. SVG 도면 정적 에셋 동기화 (content/svgs -> public/svgs, 호버 프리뷰 썸네일 등 정적 서빙 지원)
+  // 2-3. SVG 도면 정적 에셋 동기화 (content/svgs -> public/svgs, 호버 프리뷰 썸네일 <img src> 렌더링용 명시적 width/height 보장)
   const publicSvgsDir = path.join(publicDir, 'svgs');
   fs.mkdirSync(publicSvgsDir, { recursive: true });
   for (const [svgFile, svgContent] of Object.entries(svgsMap)) {
-    fs.writeFileSync(path.join(publicSvgsDir, svgFile), svgContent, 'utf-8');
+    const normalizedSvg = svgContent.replace(/<svg\b([^>]*)>/i, (fullTag, attrs) => {
+      const vbMatch = attrs.match(/viewBox=["']\s*0\s+0\s+(\d+)\s+(\d+)\s*["']/i);
+      if (!vbMatch) return fullTag;
+      const [, w, h] = vbMatch;
+      let cleanAttrs = attrs
+        .replace(/\s+width=["'][^"']*["']/gi, '')
+        .replace(/\s+height=["'][^"']*["']/gi, '');
+      return `<svg${cleanAttrs} width="${w}" height="${h}">`;
+    });
+    fs.writeFileSync(path.join(publicSvgsDir, svgFile), normalizedSvg, 'utf-8');
   }
 
   // 프로토콜별 7개국어 맵 사전 구성 (메인 피드 & 상세 페이지 공통 SSOT)

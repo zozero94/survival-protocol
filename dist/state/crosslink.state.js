@@ -144,7 +144,8 @@ export function getCrosslinkRuntimeScript()         {
         }
         if (dom.titleEl) dom.titleEl.textContent = doc.title || '';
         if (dom.sumEl) dom.sumEl.textContent = doc.summary || '';
-        if (dom.matEl) dom.matEl.textContent = doc.materials ? (labels.matPrefix + doc.materials) : '';
+        var matText = doc.materialsSummary || doc.materials || '';
+        if (dom.matEl) dom.matEl.textContent = matText ? (labels.matPrefix + matText) : '';
         if (dom.ctaEl) dom.ctaEl.textContent = labels.cta;
 
         dom.popover.classList.remove('hidden', 'opacity-0', 'pointer-events-none');

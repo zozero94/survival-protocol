@@ -89,7 +89,10 @@ export class SearchService {
       const cleanTitle = cleanSearchText(p.title);
       const cleanSummary = cleanSearchText(p.summary);
 
-      const matList = (p.materials || []).map((m) => cleanSearchText(m.name)).join(', ');
+      const matList = (p.materials || [])
+        .map((m) => cleanSearchText((m.name || '').replace(/\s*[（(].*?[)）]\s*/g, '')))
+        .filter(Boolean)
+        .join(', ');
       const stepTextList = (p.steps || [])
         .map((s) => `${cleanSearchText(s.title)} ${cleanSearchText(s.description)} ${cleanSearchText(s.actionNote || '')}`)
         .join(' ');

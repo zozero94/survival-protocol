@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import vm from 'node:vm';
 import { PostingReviewService } from '../src/services/posting-review.service.ts';
 import { CrossLinkerService, ContentEnrichmentService } from '../src/services/content-enrichment.service.ts';
 import { SearchService } from '../src/services/search.service.ts';
@@ -168,6 +169,21 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
         html.includes('showPopoverForAnchor') && html.includes('extractProtocolNum'),
         `protocol-${num}.html에 크로스링크 호버 프리뷰 런타임 스크립트가 자동 주입되어야 함`
       );
+
+      // 모든 인라인 <script> 블록의 JS 문법 무결성 검증 (정규식 이스케이프 누락 등 SyntaxError 원천 차단)
+      const scriptRe = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
+      let m: RegExpExecArray | null;
+      let sIdx = 0;
+      while ((m = scriptRe.exec(html)) !== null) {
+        sIdx++;
+        const attrs = m[1] || '';
+        const code = m[2] || '';
+        if (attrs.includes('application/ld+json') || !code.trim()) continue;
+        assert.doesNotThrow(
+          () => new vm.Script(code, { filename: `protocol-${num}.html#script${sIdx}` }),
+          `protocol-${num}.html#script${sIdx} 인라인 스크립트에 JS 문법 오류(SyntaxError)가 없어야 함`
+        );
+      }
     }
 
     const swCode = fs.readFileSync(path.join(PUBLIC_DIR, 'sw.js'), 'utf-8');

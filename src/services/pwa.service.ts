@@ -138,6 +138,16 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (url.origin === self.location.origin) {
+    if (url.pathname === '/assets/search-index.js') {
+      event.respondWith(cachePromise.then(async (cache) => {
+        try {
+          const fresh = await fetchAndStore(cache, request.url, request);
+          if (fresh) return fresh;
+        } catch (error) {}
+        return (await cache.match(request.url)) || offlineResponse();
+      }));
+      return;
+    }
     event.respondWith(cachePromise.then(async (cache) => {
       const cached = await cache.match(request.url);
       return cached || fetchAndStore(cache, request.url, request);

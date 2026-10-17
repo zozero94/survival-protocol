@@ -20,11 +20,11 @@ export function getLocaleRuntimeScript(): string {
 
     function renderHighlightTermsClient(text) {
       if (!text) return '';
-      var withLinks = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_m, label, url) {
+      var withLinks = text.replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g, function(_m, label, url) {
         return '<a data-proto="crosslink" href="' + url + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
       });
-      return withLinks.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
-        var isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
+      return withLinks.replace(/\\*\\*(.*?)\\*\\*/g, function(_m, p1) {
+        var isMetric = /\\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
         if (isMetric) {
           return '<strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
         }
@@ -34,19 +34,19 @@ export function getLocaleRuntimeScript(): string {
 
     function renderStepDescriptionClient(desc) {
       if (!desc) return '';
-      var lines = desc.split(/\r?\n/).map(function(l) { return l.trim(); }).filter(Boolean);
-      var isNumbered = lines.some(function(l) { return /^(?:\d+[\.\)]|\(\d+\))\s+/.test(l); });
+      var lines = desc.split(/\\r?\\n/).map(function(l) { return l.trim(); }).filter(Boolean);
+      var isNumbered = lines.some(function(l) { return /^(?:\\d+[\\.\\)]|\\(\\d+\\))\\s+/.test(l); });
       if (!isNumbered) {
         return renderHighlightTermsClient(desc);
       }
       var curNum = 1;
       return lines.map(function(line) {
-        var match = line.match(/^(?:\d+[\.\)]|\(\d+\))\s+(.*)$/);
+        var match = line.match(/^(?:\\d+[\\.\\)]|\\(\\d+\\))\\s+(.*)$/);
         var content = match ? match[1] : line;
         var numStr = String(curNum++).padStart(2, '0');
         var actionTitle = '';
         var actionDetail = content;
-        var tm = content.match(/^\*\*([^*]+)\*\*:\s*(.*)$/);
+        var tm = content.match(/^\\*\\*([^*]+)\\*\\*:\\s*(.*)$/);
         if (tm) {
           actionTitle = tm[1];
           actionDetail = tm[2];
@@ -57,7 +57,7 @@ export function getLocaleRuntimeScript(): string {
           (actionTitle ? '<div data-proto-item="steps" data-proto-prop="actionTitle" class="text-white font-bold tracking-tight font-sans">' + actionTitle + '</div>' : '') +
           '<div data-proto-item="steps" data-proto-prop="actionDetail" class="text-[#cfcfcf] font-sans leading-relaxed">' + renderHighlightTermsClient(actionDetail) + '</div>' +
           '</div></div>';
-      }).join('\n');
+      }).join('\\n');
     }
 
     function renderFieldSpecsClient(fieldSpecs) {
@@ -70,7 +70,7 @@ export function getLocaleRuntimeScript(): string {
             '<div data-proto="fieldSpec" class="min-w-[68px] text-[10px] font-bold font-mono text-[#fde68a] bg-[#1a1a1a] px-1.5 py-0.5 border border-[#333] text-center shrink-0">' + (t.label || '') + '</div>' +
             '<div data-proto="fieldSpec" class="text-[11px] sm:text-xs text-[#dedede] leading-snug font-sans">' + renderHighlightTermsClient(t.value || '') + '</div>' +
             '</div>';
-        }).join('\n');
+        }).join('\\n');
 
         var useBlock = spec.fieldUse
           ? '<div class="mx-2.5 mb-2.5 p-2 bg-[#121212] border border-[#262626] text-[11px] text-[#aaa] font-mono flex items-center justify-between gap-2 flex-wrap">' +
@@ -109,7 +109,7 @@ export function getLocaleRuntimeScript(): string {
           '</div>' +
           useBlock +
           '</article>';
-      }).join('\n');
+      }).join('\\n');
 
       return '<div class="flex items-center justify-between mb-2.5 font-mono text-[10px] text-[#888]">' +
         '<span class="bg-[#1f1f1f] text-[#fde68a] border border-[#fde68a]/40 px-2 py-0.5 font-bold tracking-wider uppercase">[FIELD RECON // VISUAL SPECIES ID]</span>' +
