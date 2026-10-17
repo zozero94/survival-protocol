@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-06 [SOLAR-STILL-WATER]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 03</text>
+
+  <!-- 웅덩이 단면 -->
+  <path d="M 80 160 Q 140 280 200 280 Q 260 280 320 160" fill="#121212" stroke="#404040" stroke-width="1.5"/>
+
+  <!-- 중앙 수거 토기 (Clay Pot) -->
+  <rect x="180" y="230" width="40" height="40" fill="#262626" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- 모인 순수 증류수 수면 -->
+  <rect x="182" y="250" width="36" height="18" fill="#FFFFFF" fill-opacity="0.8"/>
+  <text x="200" y="263" fill="#000000" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold">PURE H2O</text>
+
+  <!-- 역원뿔 형태로 처진 덮개 시트 (Inverted Cone Sheet) -->
+  <path d="M 70 160 L 200 210 L 330 160" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+
+  <!-- 중앙 중심 추 (Weight Stone) -->
+  <ellipse cx="200" cy="207" rx="14" ry="7" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="200" y="195" fill="#FFFFFF" font-family="monospace" font-size="9" text-anchor="middle" font-weight="bold">STONE WEIGHT</text>
+
+  <!-- 간격 확인 (5cm Clearance) -->
+  <line x1="225" y1="210" x2="225" y2="230" stroke="#E5E5E5" stroke-width="1.5"/>
+  <text x="240" y="222" fill="#E5E5E5" font-family="monospace" font-size="8">&gt; 5cm GAP</text>
+
+  <!-- 시트 하단 수증기 응결 및 낙하 물방울 (Condensation Droplets) -->
+  <circle cx="150" cy="180" r="3" fill="#FFFFFF"/>
+  <circle cx="175" cy="195" r="3.5" fill="#FFFFFF"/>
+  <circle cx="250" cy="180" r="3" fill="#FFFFFF"/>
+  <circle cx="225" cy="195" r="3.5" fill="#FFFFFF"/>
+  
+  <!-- 중앙 낙하 궤적 (Dripping Line) -->
+  <line x1="200" y1="215" x2="200" y2="245" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="2 3"/>
+  <polygon points="200,248 197,242 203,242" fill="#FFFFFF"/>
+  <text x="145" y="228" fill="#E5E5E5" font-family="monospace" font-size="9">STERILE CONDENSATE</text>
+
+  <!-- 태양열 복사 화살표 (Solar Radiation Vectors) -->
+  <line x1="120" y1="80" x2="140" y2="120" stroke="#737373" stroke-width="1.5"/>
+  <line x1="200" y1="70" x2="200" y2="115" stroke="#737373" stroke-width="1.5"/>
+  <line x1="280" y1="80" x2="260" y2="120" stroke="#737373" stroke-width="1.5"/>
+  <text x="200" y="65" fill="#A3A3A3" font-family="monospace" font-size="9" text-anchor="middle">SOLAR THERMAL FLUX</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 03: INVERTED CONE CONDENSATION DRIP</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">STONE DRIVES CONDENSED DROPLETS TO INCLINE PEAK; DRIPS 100% STERILE WATER</text>
+</svg>

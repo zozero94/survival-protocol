@@ -1,0 +1,149 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0c0b"/>
+      <stop offset="100%" stop-color="#17120f"/>
+    </linearGradient>
+
+    <!-- Clay & Terracotta Plaster Gradients -->
+    <linearGradient id="clayPlaster" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8653b"/>
+      <stop offset="40%" stop-color="#8c4e26"/>
+      <stop offset="80%" stop-color="#693717"/>
+      <stop offset="100%" stop-color="#45230c"/>
+    </linearGradient>
+    <linearGradient id="stoneBlock" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="50%" stop-color="#737373"/>
+      <stop offset="100%" stop-color="#3d3d3d"/>
+    </linearGradient>
+
+    <!-- Glowing Firebox Interior -->
+    <radialGradient id="hearthFireGlow" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="80%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#140804"/>
+    </radialGradient>
+
+    <filter id="heatBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Technical Canvas Backdrop -->
+  <rect x="0" y="0" width="800" height="450" fill="url(#bgGrad6)"/>
+  <rect x="15" y="15" width="770" height="420" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Crosshairs -->
+  <path d="M 25 35 L 45 35 M 35 25 L 35 45" stroke="#444" stroke-width="1"/>
+  <path d="M 775 35 L 755 35 M 765 25 L 765 45" stroke="#444" stroke-width="1"/>
+  <path d="M 25 415 L 45 415 M 35 405 L 35 425" stroke="#444" stroke-width="1"/>
+  <path d="M 775 415 L 755 415 M 765 405 L 765 425" stroke="#444" stroke-width="1"/>
+
+  <!-- Metadata -->
+  <text x="35" y="55" fill="#555" font-family="monospace" font-size="10" letter-spacing="1">ARCHIVE // OUTCOME SPECIFICATION</text>
+  <text x="35" y="70" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: STONE &amp; TEMPERED CLAY HEARTH [650°C SPEC]</text>
+  <text x="765" y="55" fill="#555" font-family="monospace" font-size="10" text-anchor="end">MAX TEMP: 650°C</text>
+
+  <!-- Left Spec Box -->
+  <g id="specBoxLeft" font-family="monospace" font-size="10">
+    <rect x="45" y="100" width="180" height="155" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="45" y="100" width="180" height="22" fill="#1f1f1f"/>
+    <text x="55" y="115" fill="#E02424" font-weight="bold">HEARTH METRICS</text>
+    <text x="55" y="140" fill="#aaa">· BASE: U-SHAPE RIVER STONE</text>
+    <text x="55" y="160" fill="#aaa">· CLAY WALL: 50 MM THICK</text>
+    <text x="55" y="180" fill="#aaa">· DRAFT: REAR EXHAUST FLUE</text>
+    <text x="55" y="200" fill="#aaa">· COOKTOP: LEVEL STONE RIM</text>
+    <text x="55" y="220" fill="#aaa">· FUEL EFF: 3X WOOD SAVING</text>
+    <text x="55" y="240" fill="#f97316">· CORE TEMP: 650°C INTENSE</text>
+  </g>
+
+  <!-- Ground Plane Shadow -->
+  <ellipse cx="430" cy="390" rx="220" ry="20" fill="#050302" opacity="0.9"/>
+
+  <!-- Clay & Stone Hearth Structure (3D Perspective) -->
+  <g id="hearth3D">
+    <!-- Foundation River Stones Layer (Base Tier) -->
+    <g id="baseStones">
+      <ellipse cx="290" cy="365" rx="32" ry="18" fill="url(#stoneBlock)" stroke="#222" stroke-width="1.5"/>
+      <ellipse cx="340" cy="375" rx="35" ry="19" fill="url(#stoneBlock)" stroke="#222" stroke-width="1.5"/>
+      <ellipse cx="400" cy="380" rx="38" ry="20" fill="url(#stoneBlock)" stroke="#222" stroke-width="1.5"/>
+      <ellipse cx="460" cy="375" rx="35" ry="19" fill="url(#stoneBlock)" stroke="#222" stroke-width="1.5"/>
+      <ellipse cx="510" cy="365" rx="32" ry="18" fill="url(#stoneBlock)" stroke="#222" stroke-width="1.5"/>
+    </g>
+
+    <!-- Main Terracotta Clay Domed Wall Body -->
+    <path d="M 270 360 C 270 230 330 180 400 180 C 470 180 530 230 530 360 Z" fill="url(#clayPlaster)" stroke="#381907" stroke-width="2"/>
+
+    <!-- Clay Drying Cracks & Straw Binder Texture -->
+    <g stroke="#52240b" stroke-width="1.2" fill="none" opacity="0.7">
+      <path d="M 320 250 Q 335 265 330 285"/>
+      <path d="M 470 240 Q 460 260 475 275"/>
+      <path d="M 360 210 Q 380 220 375 235"/>
+      <path d="M 430 215 Q 420 230 435 245"/>
+    </g>
+
+    <!-- Top Level Cooking Platform Rim (돌판/냄비 얹는 조리구) -->
+    <ellipse cx="400" cy="180" rx="55" ry="18" fill="#4d4d4d" stroke="#262626" stroke-width="2"/>
+    <ellipse cx="400" cy="180" rx="42" ry="13" fill="#171717" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Rear Vertical Chimney Flue (후면 배기 굴뚝) -->
+    <g id="chimneyFlue">
+      <path d="M 465 190 L 485 130 L 515 130 L 505 210 Z" fill="url(#clayPlaster)" stroke="#381907" stroke-width="1.5"/>
+      <ellipse cx="500" cy="130" rx="15" ry="6" fill="#140804" stroke="#381907" stroke-width="1.2"/>
+      <!-- Hot Chimney Exhaust Heat Shimmer -->
+      <path d="M 500 125 Q 492 95 505 75 Q 515 55 500 35" stroke="#f97316" stroke-width="2" fill="none" opacity="0.4" filter="url(#heatBlur)"/>
+      <path d="M 504 125 Q 512 90 498 70" stroke="#fef08a" stroke-width="1.5" fill="none" opacity="0.5" filter="url(#heatBlur)"/>
+    </g>
+
+    <!-- Front Firebox Mouth (연소실 아치 개구부) -->
+    <path d="M 335 365 C 335 250 465 250 465 365 Z" fill="#0d0401" stroke="#260f04" stroke-width="2"/>
+    <!-- Intense Glowing Radiant Embers in Firebox -->
+    <ellipse cx="400" cy="340" rx="60" ry="24" fill="url(#hearthFireGlow)"/>
+
+    <!-- Firewood Logs & Core Flames Inside -->
+    <!-- Charred Log 1 -->
+    <polygon points="350,355 425,325 435,335 360,365" fill="#1c1109" stroke="#080402" stroke-width="1"/>
+    <!-- Charred Log 2 -->
+    <polygon points="445,355 375,325 365,335 435,365" fill="#1c1109" stroke="#080402" stroke-width="1"/>
+    <!-- Active Flame Tongues -->
+    <path d="M 400 345 C 385 330 380 300 400 270 C 405 285 412 290 410 275 C 418 285 425 305 420 330 C 425 320 428 310 424 298 C 432 312 430 335 415 345 Z" fill="#f97316" filter="url(#heatBlur)"/>
+    <ellipse cx="402" cy="335" rx="14" ry="18" fill="#fef08a"/>
+    <ellipse cx="402" cy="335" rx="8" ry="10" fill="#ffffff"/>
+
+    <!-- Inflow Air Draft Direction Arrows (하단 산소 흡입) -->
+    <g stroke="#38bdf8" stroke-width="2" fill="none">
+      <path d="M 300 375 Q 330 365 350 355"/>
+      <path d="M 500 375 Q 470 365 450 355"/>
+    </g>
+  </g>
+
+  <!-- Technical Callouts (Right Side) -->
+  <g id="calloutsRight" font-family="monospace" font-size="10" fill="#cccccc">
+    <!-- Callout 1: Chimney Flue -->
+    <line x1="505" y1="130" x2="565" y2="130" stroke="#f97316" stroke-width="1"/>
+    <circle cx="505" cy="130" r="2" fill="#f97316"/>
+    <text x="570" y="127" fill="#f97316" font-weight="bold">REAR EXHAUST CHIMNEY</text>
+    <text x="570" y="140" fill="#888888">후면 굴뚝 상승 기류로 불완전연소 방지</text>
+
+    <!-- Callout 2: Top Cooktop Rim -->
+    <line x1="455" y1="180" x2="565" y2="180" stroke="#666" stroke-width="1"/>
+    <circle cx="455" cy="180" r="2" fill="#666"/>
+    <text x="570" y="177" fill="#ffffff" font-weight="bold">LEVEL COOKING RIM</text>
+    <text x="570" y="190" fill="#888888">냄비·판석을 안정되게 얹는 직화 가열구</text>
+
+    <!-- Callout 3: 5cm Clay Wall -->
+    <line x1="510" y1="260" x2="565" y2="260" stroke="#E02424" stroke-width="1"/>
+    <circle cx="510" cy="260" r="2" fill="#E02424"/>
+    <text x="570" y="257" fill="#E02424" font-weight="bold">5CM CLAY INSULATION</text>
+    <text x="570" y="270" fill="#888888">볏짚 황토 미장으로 열기를 가두어 650°C 유지</text>
+
+    <!-- Callout 4: Arch Inflow Draft -->
+    <line x1="465" y1="340" x2="565" y2="340" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="465" cy="340" r="2" fill="#38bdf8"/>
+    <text x="570" y="337" fill="#38bdf8" font-weight="bold">INFLOW DRAFT ARCH</text>
+    <text x="570" y="350" fill="#888888">바람을 막고 하단 산소를 흡입하는 아치 입구</text>
+  </g>
+</svg>

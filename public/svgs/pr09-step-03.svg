@@ -1,0 +1,172 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgS3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080a"/>
+      <stop offset="50%" stop-color="#0e1117"/>
+      <stop offset="100%" stop-color="#060709"/>
+    </linearGradient>
+
+    <!-- Clay & Mud Mound Gradient -->
+    <linearGradient id="mudSealGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#543823"/>
+      <stop offset="40%" stop-color="#3b2314"/>
+      <stop offset="100%" stop-color="#241409"/>
+    </linearGradient>
+
+    <!-- Sod / Turf Grass Texture -->
+    <linearGradient id="sodGrassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d4a22"/>
+      <stop offset="50%" stop-color="#3f6212"/>
+      <stop offset="100%" stop-color="#2d4a22"/>
+    </linearGradient>
+
+    <!-- Early White Steam Smoke Radial -->
+    <radialGradient id="whiteSmoke" cx="50%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#f1f5f9" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#cbd5e1" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#94a3b8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#07080a" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadowS3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bgS3)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#232830" stroke-width="1.2"/>
+
+  <!-- Technical Corner Ticks -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#475569" stroke-width="1.2"/>
+
+  <!-- Top Header Strip (Label 1) -->
+  <rect x="20" y="16" width="360" height="20" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <rect x="20" y="16" width="3" height="20" fill="#f97316"/>
+  <text x="30" y="30" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" letter-spacing="0.5">FIG. 03 // MULTI-LAYER ANAEROBIC SEAL</text>
+
+  <!-- Ground Line & Surrounding Earth -->
+  <path d="M 20 185 L 65 185 L 125 325 L 20 325 Z" fill="#20130a" opacity="0.6"/>
+  <path d="M 380 185 L 335 185 L 275 325 L 380 325 Z" fill="#20130a" opacity="0.6"/>
+
+  <!-- Pit Cavity & Smoldering Internal Wood Stack -->
+  <path d="M 65 185 L 125 325 Q 200 330 275 325 L 335 185 Z" fill="#140a04" stroke="#3d210f" stroke-width="1.2"/>
+  <!-- Internal Timber Silhouettes (Dim Smoldering) -->
+  <path d="M 135 320 L 130 190 L 160 190 L 165 320 Z" fill="#2a1608" opacity="0.7"/>
+  <path d="M 175 322 L 175 190 L 205 190 L 205 322 Z" fill="#381d0b" opacity="0.8"/>
+  <path d="M 220 322 L 225 190 L 255 190 L 250 322 Z" fill="#2a1608" opacity="0.7"/>
+  <!-- Internal Ember Glow at bottom -->
+  <ellipse cx="200" cy="320" rx="60" ry="8" fill="#ea580c" opacity="0.4"/>
+
+  <!-- ============================================== -->
+  <!-- MULTI-LAYER SEAL SYSTEM (상부 덮개 구조) -->
+  <!-- ============================================== -->
+
+  <!-- Layer 1: Wood Lattice Frame (격자 나뭇가지틀) -->
+  <g stroke="#854d0e" stroke-width="5" stroke-linecap="round">
+    <!-- Horizontal Crossbars -->
+    <line x1="75" y1="188" x2="325" y2="188"/>
+    <line x1="85" y1="180" x2="315" y2="180"/>
+    <!-- Angled Cross Beams -->
+    <line x1="110" y1="193" x2="160" y2="175"/>
+    <line x1="180" y1="193" x2="230" y2="175"/>
+    <line x1="250" y1="193" x2="300" y2="175"/>
+  </g>
+
+  <!-- Layer 2: Broad Leaves Layer (넓은 나뭇잎 차단층) -->
+  <g fill="#4d7c0f" opacity="0.85">
+    <ellipse cx="105" cy="178" rx="25" ry="7" transform="rotate(-5 105 178)"/>
+    <ellipse cx="145" cy="174" rx="28" ry="8" transform="rotate(3 145 174)"/>
+    <ellipse cx="195" cy="172" rx="30" ry="8"/>
+    <ellipse cx="245" cy="174" rx="28" ry="8" transform="rotate(-3 245 174)"/>
+    <ellipse cx="285" cy="178" rx="25" ry="7" transform="rotate(5 285 178)"/>
+  </g>
+
+  <!-- Layer 3: Thick Mud & Clay Mound with Turf Grass on Top -->
+  <g filter="url(#shadowS3)">
+    <!-- Domed Mud Seal (10cm thick mound) -->
+    <path d="M 50 185 Q 200 120 350 185 Q 200 160 50 185 Z" fill="url(#mudSealGrad)" stroke="#452715" stroke-width="1.5"/>
+
+    <!-- Sod / Turf Grass Layer on the Dome Surface -->
+    <path d="M 55 184 Q 200 122 345 184 Q 200 135 55 184 Z" fill="url(#sodGrassGrad)" opacity="0.9"/>
+    <!-- Grass Fringe along Dome -->
+    <path d="M 75 175 L 77 167 M 105 160 L 108 152 M 140 146 L 142 138 M 255 146 L 257 138 M 290 160 L 292 153 M 325 175 L 327 168" stroke="#86efac" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Chimney Vent (중앙 배기 굴뚝) -->
+  <g filter="url(#shadowS3)">
+    <!-- Chimney Collar (진흙 굴뚝 테두리) -->
+    <path d="M 182 134 L 182 118 Q 200 115 218 118 L 218 134 Z" fill="#3e2314" stroke="#5c381e" stroke-width="1.2"/>
+    <ellipse cx="200" cy="118" rx="18" ry="5" fill="#140a04" stroke="#ea580c" stroke-width="1"/>
+  </g>
+
+  <!-- Billowing White Smoke from Chimney -->
+  <g>
+    <!-- Smoke Puffs -->
+    <circle cx="200" cy="98" r="14" fill="url(#whiteSmoke)"/>
+    <circle cx="212" cy="78" r="20" fill="url(#whiteSmoke)"/>
+    <circle cx="192" cy="60" r="26" fill="url(#whiteSmoke)"/>
+    <circle cx="218" cy="42" r="32" fill="url(#whiteSmoke)"/>
+  </g>
+
+  <!-- Air Intake Vents (하단 흡기 구멍 2개) -->
+  <!-- Left Intake -->
+  <g>
+    <ellipse cx="68" cy="190" rx="5" ry="8" fill="#090502" stroke="#ea580c" stroke-width="1"/>
+    <!-- Air Flow Arrow Inward -->
+    <path d="M 32 190 L 58 190" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <polygon points="63,190 56,187 56,193" fill="#38bdf8"/>
+  </g>
+  <!-- Right Intake -->
+  <g>
+    <ellipse cx="332" cy="190" rx="5" ry="8" fill="#090502" stroke="#ea580c" stroke-width="1"/>
+    <!-- Air Flow Arrow Inward -->
+    <path d="M 368 190 L 342 190" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <polygon points="337,190 344,187 344,193" fill="#38bdf8"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- CALLOUT LABELS (2, 3, 4, 5) -->
+  <!-- ============================================== -->
+
+  <!-- Label 2: Lattice & Leaf Support Layer -->
+  <g>
+    <line x1="110" y1="180" x2="60" y2="235" stroke="#a3e635" stroke-width="1.2"/>
+    <circle cx="110" cy="180" r="2.5" fill="#a3e635"/>
+    <rect x="20" y="235" width="180" height="16" fill="#141f0d" rx="3" stroke="#4d7c0f" stroke-width="1"/>
+    <text x="110" y="247" fill="#bef264" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">격자 가지틀 + 넓은 잎 지지층</text>
+  </g>
+
+  <!-- Label 3: 10cm Mud & Turf Sod Seal -->
+  <g>
+    <line x1="280" y1="150" x2="310" y2="95" stroke="#facc15" stroke-width="1.2"/>
+    <circle cx="280" cy="150" r="2.5" fill="#facc15"/>
+    <rect x="180" y="85" width="200" height="16" fill="#1c1608" rx="3" stroke="#854d0e" stroke-width="1"/>
+    <text x="280" y="97" fill="#fde047" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">10cm 젖은 진흙 &amp; 잔디 뗏장 덮개</text>
+  </g>
+
+  <!-- Label 4: Two Intake Vents (Finger-thick) -->
+  <g>
+    <line x1="68" y1="198" x2="100" y2="280" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="68" cy="198" r="2.5" fill="#38bdf8"/>
+    <rect x="20" y="280" width="195" height="16" fill="#081524" rx="3" stroke="#0284c7" stroke-width="1"/>
+    <text x="117" y="292" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">하단 흡기 구멍 2개 (손가락 굵기)</text>
+  </g>
+
+  <!-- Label 5: Center Chimney Vent -->
+  <g>
+    <line x1="218" y1="125" x2="270" y2="235" stroke="#fb923c" stroke-width="1.2"/>
+    <circle cx="218" cy="125" r="2.5" fill="#fb923c"/>
+    <rect x="210" y="235" width="170" height="16" fill="#1c0f05" rx="3" stroke="#ea580c" stroke-width="1"/>
+    <text x="295" y="247" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">중앙 배기 굴뚝 (주먹 크기)</text>
+  </g>
+
+  <!-- Bottom Core Insight Briefing Box (Label 6) -->
+  <rect x="20" y="348" width="360" height="26" fill="#111827" rx="4" stroke="#1f2937" stroke-width="1.2"/>
+  <rect x="20" y="348" width="4" height="26" fill="#10b981" rx="1"/>
+  <text x="200" y="364" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">[핵심] 산소 95% 차단 불완전 연소 가마 완성</text>
+</svg>

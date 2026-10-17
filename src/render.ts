@@ -11,6 +11,7 @@ import {
   renderStepCards,
   renderFatalWarning,
   renderSearchModal,
+  renderCrosslinkPopover,
 } from './components/index.ts';
 import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG } from './site.config.ts';
 import { SeoService } from './services/seo.service.ts';
@@ -21,6 +22,7 @@ import {
   getLocaleRuntimeScript,
   getPwaRuntimeScript,
   getSearchRuntimeScript,
+  getCrosslinkRuntimeScript,
 } from './state/index.ts';
 
 /**
@@ -77,6 +79,7 @@ export function renderCanonicalProtocolPage(
 
   const headerHtml = renderHeader(master.category, master.title, defaultLocale);
   const searchModalHtml = renderSearchModal(defaultLocale);
+  const crosslinkPopoverHtml = renderCrosslinkPopover();
   const heroHtml = renderHeroSection(master);
   const outcomeHtml = master.outcome ? renderOutcomePreview(master.outcome, svgsMap) : '';
   const checklistHtml = renderChecklist(master.materials);
@@ -89,6 +92,7 @@ export function renderCanonicalProtocolPage(
   const localeScript = getLocaleRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
   const searchScript = getSearchRuntimeScript();
+  const crosslinkScript = getCrosslinkRuntimeScript();
 
   return `<!DOCTYPE html>
 <html class="dark" lang="${defaultLocale}">
@@ -187,6 +191,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   </div>
   ${headerHtml}
   ${searchModalHtml}
+  ${crosslinkPopoverHtml}
 
   <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-5 space-y-6 flex-1 pb-28">
     ${heroHtml}
@@ -210,6 +215,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     ${localeScript}
     ${pwaScript}
     ${searchScript}
+    ${crosslinkScript}
 
     // 3. 선언적 이벤트 위임 (Event Delegation)
     document.addEventListener('click', function(e) {

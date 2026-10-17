@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto block" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow-step1" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 8 5 L 0 9 z" fill="#06B6D4" />
+            </marker>
+          </defs>
+
+          <!-- Blueprint Header -->
+          <text x="75" y="40" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">
+            FIG. 01 // CLAY TEMPERING &amp; FIBER MATRIX BLUEPRINT
+          </text>
+          <line x1="75" y1="48" x2="605" y2="48" stroke="#222222" stroke-width="1" />
+
+          <!-- Material 1: 붉은 찰흙 2바가지 -->
+          <g transform="translate(100, 70)">
+            <ellipse cx="45" cy="45" rx="38" ry="24" fill="#1C1815" stroke="#D97706" stroke-width="1.5" />
+            <path d="M 20 45 Q 45 15 70 45" stroke="#D97706" stroke-width="1" fill="none" stroke-dasharray="2,2" />
+            <circle cx="45" cy="35" r="4" fill="#D97706" />
+          </g>
+          <text x="80" y="155" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ① 붉은 찰흙 2바가지
+          </text>
+          <text x="80" y="175" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            끈끈한 점력의 기본 바탕재
+          </text>
+
+          <!-- Plus Sign 1 -->
+          <text x="210" y="115" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="bold">+</text>
+
+          <!-- Material 2: 굵은 모래 1바가지 -->
+          <g transform="translate(235, 75)">
+            <ellipse cx="40" cy="40" rx="34" ry="20" fill="#151717" stroke="#06B6D4" stroke-width="1.5" />
+            <!-- Sand speckles -->
+            <circle cx="28" cy="38" r="1.5" fill="#06B6D4" />
+            <circle cx="42" cy="32" r="1.5" fill="#06B6D4" />
+            <circle cx="50" cy="42" r="1.5" fill="#06B6D4" />
+            <circle cx="35" cy="45" r="1.5" fill="#06B6D4" />
+          </g>
+          <text x="235" y="155" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ② 굵은 모래 1바가지
+          </text>
+          <text x="235" y="175" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            마를 때 오그라듦 방지
+          </text>
+
+          <!-- Plus Sign 2 -->
+          <text x="350" y="115" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="bold">+</text>
+
+          <!-- Material 3: 잘게 자른 마른 풀잎 -->
+          <g transform="translate(375, 75)">
+            <ellipse cx="40" cy="40" rx="34" ry="20" fill="#141914" stroke="#10B981" stroke-width="1.5" />
+            <!-- Grass fiber lines -->
+            <line x1="25" y1="36" x2="40" y2="44" stroke="#10B981" stroke-width="1.5" />
+            <line x1="38" y1="32" x2="52" y2="40" stroke="#10B981" stroke-width="1.5" />
+            <line x1="30" y1="46" x2="48" y2="42" stroke="#10B981" stroke-width="1.5" />
+          </g>
+          <text x="375" y="155" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ③ 잘게 자른 마른 풀잎
+          </text>
+          <text x="375" y="175" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            뼈대 역할을 하는 보강 섬유
+          </text>
+
+          <!-- Arrow downward to kneading and ball -->
+          <path d="M 290 190 L 290 220" stroke="#06B6D4" stroke-width="1.5" marker-end="url(#arrow-step1)" />
+
+          <!-- Process 4: 물을 조금씩 부어가며 발로 치대기 -->
+          <rect x="80" y="235" width="220" height="65" fill="#141414" stroke="#333333" stroke-width="1" />
+          <text x="95" y="260" fill="#F59E0B" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ④ 물을 조금씩 부어가며 발로 치대기
+          </text>
+          <text x="95" y="282" fill="#AAAAAA" font-family="'Space Grotesk', sans-serif" font-size="10">
+            한 번에 많이 붓지 말고 뒤집으며 밟기
+          </text>
+
+          <!-- Process 5: 차진 반죽 덩어리 판정 -->
+          <g transform="translate(350, 225)">
+            <!-- Clay ball -->
+            <circle cx="65" cy="40" r="32" fill="#1C1815" stroke="#E5E5E5" stroke-width="2" />
+            <!-- Inner smooth contour -->
+            <path d="M 45 40 Q 65 20 85 40" stroke="#888888" stroke-width="1" fill="none" />
+            <circle cx="65" cy="40" r="4" fill="#10B981" />
+          </g>
+          <text x="470" y="255" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ⑤ 차진 반죽 덩어리 완성
+          </text>
+          <text x="470" y="278" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="10">
+            주먹 크기로 둥글게 뭉쳐도
+          </text>
+          <text x="470" y="295" fill="#AAAAAA" font-family="'Space Grotesk', sans-serif" font-size="10">
+            겉면에 실금이 가지 않는 상태
+          </text>
+        </svg>

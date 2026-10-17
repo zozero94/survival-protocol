@@ -1,0 +1,146 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgS1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080a"/>
+      <stop offset="50%" stop-color="#0e1117"/>
+      <stop offset="100%" stop-color="#060709"/>
+    </linearGradient>
+
+    <!-- Pine Bark Texture Gradient -->
+    <linearGradient id="barkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a1810"/>
+      <stop offset="25%" stop-color="#3d2317"/>
+      <stop offset="50%" stop-color="#1f120c"/>
+      <stop offset="75%" stop-color="#4a2b1c"/>
+      <stop offset="100%" stop-color="#2a1810"/>
+    </linearGradient>
+
+    <!-- Golden Amber Resin Gradient -->
+    <radialGradient id="amberResin" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="85%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </radialGradient>
+
+    <!-- Stone Flake Knife Gradient -->
+    <linearGradient id="stoneKnife" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="40%" stop-color="#94a3b8"/>
+      <stop offset="80%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadowS1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bgS1)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#232830" stroke-width="1.2"/>
+
+  <!-- Technical Corner Ticks -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#475569" stroke-width="1.2"/>
+
+  <!-- Top Header Strip (Label 1) -->
+  <rect x="20" y="16" width="360" height="20" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <rect x="20" y="16" width="3" height="20" fill="#f59e0b"/>
+  <text x="30" y="30" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" letter-spacing="0.5">FIG. 01 // RAW PINE RESIN HARVESTING</text>
+
+  <!-- Pine Tree Trunk (Cross-Section & Bark Surface) -->
+  <g>
+    <!-- Trunk Body on Left Side -->
+    <rect x="25" y="55" width="160" height="275" fill="url(#barkGrad)" stroke="#1c120c" stroke-width="1.5"/>
+    
+    <!-- Vertical Bark Fissures & Ridges -->
+    <path d="M 45 55 Q 50 120 42 190 Q 48 260 44 330" stroke="#140a05" stroke-width="3" fill="none"/>
+    <path d="M 75 55 Q 70 130 80 200 Q 72 270 78 330" stroke="#140a05" stroke-width="4" fill="none"/>
+    <path d="M 110 55 Q 118 110 108 180 Q 116 250 112 330" stroke="#140a05" stroke-width="3.5" fill="none"/>
+    <path d="M 145 55 Q 140 125 150 195 Q 142 265 146 330" stroke="#140a05" stroke-width="3" fill="none"/>
+
+    <!-- Bark Plate Highlights -->
+    <path d="M 60 70 L 68 110 L 62 150" stroke="#5a3522" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M 95 90 L 102 140 L 96 180" stroke="#5a3522" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M 130 80 L 138 130 L 132 170" stroke="#5a3522" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Hardened Amber Pine Resin Nodules (Crystalline Clusters) -->
+  <g filter="url(#shadowS1)">
+    <!-- Main Big Teardrop Resin Mass -->
+    <path d="M 115 130 Q 145 140 140 185 Q 135 215 110 225 Q 90 220 95 185 Q 100 145 115 130 Z" fill="url(#amberResin)" stroke="#78350f" stroke-width="1.2"/>
+    <!-- Specular Highlight Curve -->
+    <path d="M 118 140 Q 135 152 132 175" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <circle cx="108" cy="180" r="3" fill="#ffffff" opacity="0.75"/>
+
+    <!-- Smaller Secondary Droplets -->
+    <ellipse cx="145" cy="160" rx="14" ry="20" fill="url(#amberResin)" stroke="#78350f" stroke-width="1"/>
+    <path d="M 148 150 Q 155 158 153 170" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+    <ellipse cx="90" cy="155" rx="12" ry="16" fill="url(#amberResin)" stroke="#78350f" stroke-width="1"/>
+    <ellipse cx="120" cy="240" rx="10" ry="14" fill="url(#amberResin)" stroke="#78350f" stroke-width="0.8"/>
+    <ellipse cx="80" cy="210" rx="8" ry="12" fill="url(#amberResin)" stroke="#78350f" stroke-width="0.8"/>
+  </g>
+
+  <!-- Label 2: Hardened Amber Resin Nodules on Bark -->
+  <g>
+    <line x1="140" y1="175" x2="230" y2="120" stroke="#f59e0b" stroke-width="1.2"/>
+    <circle cx="140" cy="175" r="2.5" fill="#f59e0b"/>
+    <rect x="220" y="108" width="160" height="16" fill="#1c1308" rx="3" stroke="#b45309" stroke-width="1"/>
+    <text x="300" y="120" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold" text-anchor="middle">소나무 줄기에 응고된 호박색 생송진</text>
+  </g>
+
+  <!-- Stone Flake Knife Scraping at Tangent Angle -->
+  <g filter="url(#shadowS1)">
+    <!-- Knife Blade Polygon -->
+    <polygon points="175,190 240,150 255,170 190,210" fill="url(#stoneKnife)" stroke="#334155" stroke-width="1.2"/>
+    <!-- Sharp Beveled Cutting Edge -->
+    <line x1="175" y1="190" x2="190" y2="210" stroke="#f8fafc" stroke-width="2" stroke-linecap="round"/>
+    <!-- Blade Chipping Ridges -->
+    <path d="M 195 180 L 210 195 M 215 165 L 230 185" stroke="#1e293b" stroke-width="1"/>
+    <!-- Tangent Motion Arrow -->
+    <path d="M 215 210 L 182 202" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 182 202 L 190 197 L 189 207 Z" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3: Stone Scraper at Tangent Angle -->
+  <g>
+    <line x1="220" y1="185" x2="220" y2="215" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="220" cy="185" r="2.5" fill="#38bdf8"/>
+    <rect x="180" y="215" width="195" height="16" fill="#0c1726" rx="3" stroke="#0284c7" stroke-width="1"/>
+    <text x="277" y="227" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold" text-anchor="middle">돌칼로 나무껍질 손상 없이 표면 채취</text>
+  </g>
+
+  <!-- Broad Collection Leaf at Bottom Catching Resin -->
+  <g filter="url(#shadowS1)">
+    <!-- Wide Green Forest Leaf -->
+    <path d="M 80 295 Q 160 270 240 285 Q 270 315 220 330 Q 140 335 80 295 Z" fill="#14532d" stroke="#166534" stroke-width="1.5"/>
+    <path d="M 85 295 Q 165 295 240 285" stroke="#22c55e" stroke-width="1" fill="none" opacity="0.6"/>
+    <!-- Falling Resin Chunks into Leaf -->
+    <circle cx="160" cy="275" r="4" fill="url(#amberResin)"/>
+    <circle cx="180" cy="290" r="5" fill="url(#amberResin)"/>
+    <circle cx="150" cy="305" r="6" fill="url(#amberResin)"/>
+    <circle cx="170" cy="308" r="8" fill="url(#amberResin)"/>
+    <circle cx="195" cy="300" r="7" fill="url(#amberResin)"/>
+    <circle cx="215" cy="298" r="5" fill="url(#amberResin)"/>
+  </g>
+
+  <!-- Label 4: Collection Volume Indicator (Fist-Sized ~100g) -->
+  <g>
+    <line x1="175" y1="305" x2="210" y2="265" stroke="#a3e635" stroke-width="1"/>
+    <circle cx="175" cy="305" r="2.5" fill="#a3e635"/>
+    <rect x="180" y="255" width="195" height="16" fill="#14210a" rx="3" stroke="#4d7c0f" stroke-width="1"/>
+    <text x="277" y="267" fill="#bef264" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold" text-anchor="middle">주먹 1개 분량 (약 100g) 선별 확보</text>
+  </g>
+
+  <!-- Bottom Core Insight Briefing Box (Label 5) -->
+  <rect x="20" y="348" width="360" height="26" fill="#111827" rx="4" stroke="#1f2937" stroke-width="1.2"/>
+  <rect x="20" y="348" width="4" height="26" fill="#f59e0b" rx="1"/>
+  <text x="200" y="364" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">[핵심] 바짝 굳은 투명한 덩어리 위주 채취</text>
+</svg>

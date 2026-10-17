@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full max-w-[320px] h-auto" viewBox="0 0 280 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vessel receiving unfiltered and discarding 1st flush -->
+  <!-- Bucket 1 (Discard - Turbid) -->
+  <rect x="35" y="65" width="70" height="60" stroke="#666" stroke-width="1.2" fill="#141414"></rect>
+  <line x1="35" y1="95" x2="105" y2="95" stroke="#444" stroke-width="1"></line>
+  <path d="M40 100 Q70 105 100 100" stroke="#777" stroke-width="0.75" stroke-dasharray="2 2"></path>
+  <text x="42" y="85" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">[첫 1~2컵 버리기]</text>
+  <text x="44" y="115" fill="#777" font-family="'JetBrains Mono', monospace" font-size="7">검은 숯가루 섞인 물</text>
+  <line x1="70" y1="40" x2="70" y2="60" stroke="#E02424" stroke-width="1.2" stroke-dasharray="2 2"></line>
+  <path d="M68 55 L70 60 L72 55" stroke="#E02424" stroke-width="1.2"></path>
+
+  <!-- Flow divider symbol -->
+  <text x="125" y="85" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="12">→</text>
+
+  <!-- Bucket 2 (Keep - Clean Pre-filtered) -->
+  <rect x="165" y="65" width="75" height="60" stroke="#FFF" stroke-width="1.5" fill="#181818"></rect>
+  <line x1="165" y1="90" x2="240" y2="90" stroke="#888" stroke-width="1"></line>
+  <!-- Water level indicator -->
+  <line x1="170" y1="105" x2="235" y2="105" stroke="#FFF" stroke-width="0.75" stroke-dasharray="3 2"></line>
+  <line x1="170" y1="115" x2="235" y2="115" stroke="#FFF" stroke-width="0.75" stroke-dasharray="3 2"></line>
+  <text x="175" y="82" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">[맑은 물 받아 쓰기]</text>
+  <text x="175" y="135" fill="#999" font-family="'JetBrains Mono', monospace" font-size="7">투명해진 깨끗한 물</text>
+  <line x1="202" y1="40" x2="202" y2="60" stroke="#FFFFFF" stroke-width="1.2"></line>
+  <path d="M200 55 L202 60 L204 55" stroke="#FFFFFF" stroke-width="1.2"></path>
+
+  <!-- Drip speed gauge -->
+  <text x="15" y="25" fill="#AAA" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="start">떨어지는 속도: 1초에 1~2방울</text>
+  <circle cx="202" cy="22" r="3" fill="#FFF"></circle>
+</svg>

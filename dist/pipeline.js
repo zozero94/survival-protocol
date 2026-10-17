@@ -115,6 +115,13 @@ export async function buildSite(options                                         
     log(`🖼️ [2/4 Content Layer] 이미지 에셋(${imageCount}개) public/images 복사 완료`);
   }
 
+  // 2-3. SVG 도면 정적 에셋 동기화 (content/svgs -> public/svgs, 호버 프리뷰 썸네일 등 정적 서빙 지원)
+  const publicSvgsDir = path.join(publicDir, 'svgs');
+  fs.mkdirSync(publicSvgsDir, { recursive: true });
+  for (const [svgFile, svgContent] of Object.entries(svgsMap)) {
+    fs.writeFileSync(path.join(publicSvgsDir, svgFile), svgContent, 'utf-8');
+  }
+
   // 프로토콜별 7개국어 맵 사전 구성 (메인 피드 & 상세 페이지 공통 SSOT)
   const localesByProtocolId                                                             = {};
   for (const proto of allMasterProtocols) {
@@ -167,6 +174,19 @@ export async function buildSite(options                                         
     { url: '/', content: indexHtml },
   ];
   const compiledPages           = ['index.html'];
+
+  // 3-2-1. 호버 프리뷰 썸네일용 초경량 SVG 도면 PWA 사전 캐시 등록 (중복 제거 및 8MB+ 대용량 PNG 제외)
+  const precachedThumbUrls = new Set        ();
+  for (const doc of searchDocsByLocale.ko || []) {
+    if (doc.thumbnailUrl && doc.thumbnailUrl.startsWith('/svgs/') && !precachedThumbUrls.has(doc.thumbnailUrl)) {
+      const svgFileName = doc.thumbnailUrl.replace(/^\/svgs\//, '');
+      const svgContent = svgsMap[svgFileName];
+      if (svgContent) {
+        precacheEntries.push({ url: doc.thumbnailUrl, content: svgContent });
+        precachedThumbUrls.add(doc.thumbnailUrl);
+      }
+    }
+  }
 
   // 3-3. Fuse.js 브라우저 인메모리 검색 엔진 자산 배포 및 PWA 사전 캐시 등록
   const fuseBrowserScript = SearchService.getBrowserFuseScript();

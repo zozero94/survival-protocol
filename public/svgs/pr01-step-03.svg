@@ -1,0 +1,91 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradP03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090b"/>
+      <stop offset="50%" stop-color="#0e1217"/>
+      <stop offset="100%" stop-color="#080a0d"/>
+    </linearGradient>
+
+    <!-- River Sand Granular Pattern -->
+    <pattern id="sandTexture" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#785934"/>
+      <circle cx="2" cy="2" r="1.2" fill="#d97706"/>
+      <circle cx="7" cy="7" r="1.4" fill="#fbbf24"/>
+      <circle cx="8" cy="2" r="1" fill="#b45309"/>
+      <circle cx="3" cy="8" r="1.1" fill="#fde68a"/>
+    </pattern>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadowP03" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Background Backdrop -->
+  <rect width="400" height="400" fill="url(#bgGradP03)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+
+  <!-- Technical Corner Crosshairs -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
+
+  <!-- Blueprint Header (Label 1) -->
+  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.5">FIG. 03 // PURIFICATION STEP 3: 미세 모래층 적층</text>
+  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
+
+  <!-- Cutaway Cross Section Funnel Wall -->
+  <polygon points="120,85 240,85 195,295 165,295" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <path d="M 120 85 L 165 295 L 195 295 L 240 85" fill="none" stroke="#374151" stroke-width="3"/>
+
+  <!-- Bottom Moss Plug -->
+  <polygon points="166,275 194,275 190,295 170,295" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+
+  <!-- 1. Lower Layer: Charcoal Bed (Already Placed) -->
+  <polygon points="152,215 208,215 194,275 166,275" fill="#181c22" stroke="#111827" stroke-width="1"/>
+
+  <!-- 2. Mid Layer: River Sand (6cm layer) with Texture and Shading -->
+  <polygon points="138,155 222,155 208,215 152,215" fill="url(#sandTexture)" stroke="#92400e" stroke-width="1.5" filter="url(#shadowP03)"/>
+
+  <!-- Leveling Guide Arrows (수평 다듬기) -->
+  <line x1="145" y1="150" x2="215" y2="150" stroke="#fde68a" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <polygon points="215,150 209,147 209,153" fill="#fde68a"/>
+  <polygon points="145,150 151,147 151,153" fill="#fde68a"/>
+
+  <!-- 6cm Height Dimension Bracket -->
+  <path d="M 230 155 L 240 155 L 240 215 L 230 215" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="240" y1="185" x2="250" y2="185" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Particle Trap Inset Zoom (Right Top) -->
+  <circle cx="310" cy="115" r="32" fill="#0d1117" stroke="#fbbf24" stroke-width="1.5"/>
+  <circle cx="310" cy="115" r="24" fill="#451a03"/>
+  <!-- Sand Grains interlocking -->
+  <circle cx="304" cy="110" r="5" fill="#d97706"/>
+  <circle cx="316" cy="112" r="4.5" fill="#f59e0b"/>
+  <circle cx="309" cy="121" r="5" fill="#b45309"/>
+  <!-- Trapped Silt Dust -->
+  <circle cx="310" cy="114" r="1.8" fill="#78350f"/>
+  <circle cx="306" cy="118" r="1.5" fill="#78350f"/>
+
+  <!-- Technical Callouts -->
+  <!-- Callout 1: River Sand (Label 2) -->
+  <line x1="165" y1="185" x2="115" y2="75" stroke="#9ca3af" stroke-width="1"/>
+  <circle cx="165" cy="185" r="2.5" fill="#f59e0b"/>
+  <text x="24" y="70" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold">RIVER SAND (고운 모래)</text>
+
+  <!-- Callout 2: Particle Filter (Label 3) -->
+  <text x="376" y="70" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="end">PARTICLE FILTER (흙먼지 차단)</text>
+
+  <!-- Callout 3: Thickness 6cm (Label 4) -->
+  <line x1="250" y1="185" x2="295" y2="165" stroke="#f59e0b" stroke-width="1"/>
+  <circle cx="250" cy="185" r="2.5" fill="#f59e0b"/>
+  <text x="376" y="165" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="end">THICKNESS: 6CM (두께)</text>
+
+  <!-- Bottom Tactical Note Strip -->
+  <rect x="18" y="340" width="364" height="34" fill="#111419" stroke="#262d35" stroke-width="1"/>
+  <rect x="18" y="340" width="4" height="34" fill="#f59e0b"/>
+  <!-- Label 5: Step Core Instruction -->
+  <text x="32" y="361" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">[3단계 핵심] 숯을 고정하고 미세 흙먼지 차단</text>
+</svg>

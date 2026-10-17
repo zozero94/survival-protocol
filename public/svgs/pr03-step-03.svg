@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-white" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#F5F5F5" />
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E02424" />
+    </marker>
+  </defs>
+
+  <!-- Outer Frame Guideline -->
+  <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Rule Callout Box -->
+  <rect x="25" y="24" width="335" height="44" fill="#141414" stroke="#333333" stroke-width="1" />
+  <text x="35" y="41" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">지붕 낙엽 쌓기 &amp; 입구 막기:</text>
+  <text x="35" y="58" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="9.5">지붕에 낙엽을 팔 길이(60~90cm)로 쌓고 입구 막기</text>
+
+  <!-- Ground Baseline -->
+  <line x1="45" y1="268" x2="635" y2="268" stroke="#666666" stroke-width="2" />
+
+  <!-- Outer Heavy Deadwood Wind-Armor Layer (Outer Mound) -->
+  <path d="M 95,268 Q 340,22 585,268 Z" fill="#191818" stroke="#F5F5F5" stroke-width="2.2" />
+  <!-- Shingled Debris Layer (60~90cm Thickness Zone) -->
+  <path d="M 135,268 Q 340,68 545,268 Z" fill="#222020" stroke="#888888" stroke-width="1.5" stroke-dasharray="6,3" />
+
+  <!-- Inner Rib Core & Dead-Air Thermal Chamber -->
+  <polygon points="340,142 230,268 450,268" fill="#121212" stroke="#E02424" stroke-width="2" />
+  <!-- Entrance Debris Plug / Seal Indicator inside Chamber -->
+  <circle cx="340" cy="222" r="24" fill="#291414" stroke="#E02424" stroke-width="1.8" stroke-dasharray="3,2" />
+  <path d="M 326,222 L 354,222 M 340,208 L 340,236" stroke="#E02424" stroke-width="1.5" />
+
+  <!-- 60~90cm Thickness Dimension Callout (Left Slope) -->
+  <line x1="185" y1="162" x2="255" y2="212" stroke="#E02424" stroke-width="2" marker-end="url(#arrow-red)" />
+  <line x1="185" y1="162" x2="135" y2="128" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text x="30" y="120" fill="#F5F5F5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">마른 낙엽 벽: 60~90cm 두께</text>
+
+  <!-- Heavy Deadwood Armor Callout (Right Slope) -->
+  <line x1="455" y1="118" x2="505" y2="75" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="2,2" />
+  <text x="655" y="70" fill="#E5E5E5" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">바람에 안 날리게 무거운 가지 덮기</text>
+
+  <!-- Rain / Wind Shedding Vector on Right Slope -->
+  <line x1="505" y1="145" x2="575" y2="215" stroke="#F5F5F5" stroke-width="1.5" marker-end="url(#arrow-white)" />
+  <text x="655" y="142" fill="#AAAAAA" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="end">빗물이 타고 흐르는 경사면</text>
+
+  <!-- Dead Air Space & Entrance Plug Label (Bottom Center) -->
+  <line x1="340" y1="246" x2="340" y2="292" stroke="#E02424" stroke-width="1.2" />
+  <text x="340" y="312" fill="#E02424" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">따뜻한 공기가 갇힌 내부 &amp; 낙엽 마개</text>
+</svg>

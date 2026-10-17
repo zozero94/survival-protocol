@@ -1,0 +1,121 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgS2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080a"/>
+      <stop offset="50%" stop-color="#0e1117"/>
+      <stop offset="100%" stop-color="#060709"/>
+    </linearGradient>
+
+    <!-- Bark Wood Gradient -->
+    <linearGradient id="barkGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="30%" stop-color="#78350f"/>
+      <stop offset="70%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Diagonal Bark Wood Gradient -->
+    <linearGradient id="diagBark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d210f"/>
+      <stop offset="35%" stop-color="#78350f"/>
+      <stop offset="75%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#2d1607"/>
+    </linearGradient>
+
+    <!-- Fresh Cut Inner Wood -->
+    <linearGradient id="cutWood2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="50%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <filter id="shadowS2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bgS2)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#232830" stroke-width="1.2"/>
+
+  <!-- Technical Corner Ticks -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#475569" stroke-width="1.2"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#475569" stroke-width="1.2"/>
+
+  <!-- Top Header Strip (Label 1) -->
+  <rect x="20" y="16" width="360" height="20" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <rect x="20" y="16" width="3" height="20" fill="#3b82f6"/>
+  <text x="30" y="30" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" letter-spacing="0.5">FIG. 02 // TOP NOTCH INTERLOCK</text>
+
+  <!-- Ground Plane Baseline -->
+  <line x1="30" y1="310" x2="370" y2="310" stroke="#334155" stroke-width="1.5"/>
+  <path d="M 50 312 L 65 322 M 100 312 L 115 322 M 150 312 L 165 322 M 200 312 L 215 322 M 250 312 L 265 322 M 300 312 L 315 322" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- ============================================== -->
+  <!-- MAIN ASSEMBLY: POST 1 & STRUT 2 TOP INTERLOCK -->
+  <!-- ============================================== -->
+  <g filter="url(#shadowS2)">
+    <!-- 1. Stick 1: Vertical Post (x=132 to 156, y=135 to 310) -->
+    <rect x="132" y="135" width="24" height="175" rx="3" fill="url(#barkGrad2)" stroke="#271408" stroke-width="1.2"/>
+    <!-- Bark Texture Lines -->
+    <line x1="138" y1="180" x2="138" y2="230" stroke="#3d210f" stroke-width="1"/>
+    <line x1="150" y1="200" x2="150" y2="260" stroke="#3d210f" stroke-width="1"/>
+
+    <!-- Post Top Chisel Tip (납작 쐐기 - y=105 to 135, Peak at (144, 105)) -->
+    <polygon points="132,135 144,105 156,135" fill="url(#cutWood2)" stroke="#78350f" stroke-width="1.2"/>
+    <line x1="144" y1="105" x2="144" y2="135" stroke="#b45309" stroke-width="1" stroke-dasharray="2 1"/>
+
+    <!-- 2. Stick 2: Diagonal Strut (Leaning 45 degrees, coming from (305, 266) to (144, 105)) -->
+    <!-- Direct V-notch cavity physically nesting over Chisel peak (144, 105) -->
+    <polygon points="130,91 144,105 158,91 172,105 315,248 297,266 154,123 144,113 134,123 116,105" fill="url(#diagBark)" stroke="#271408" stroke-width="1.5"/>
+
+    <!-- Inner Carved V-Notch Face (#fde68a 고대비 하이라이트) -->
+    <polygon points="134,123 144,105 154,123 144,113" fill="url(#cutWood2)" stroke="#b45309" stroke-width="1"/>
+
+    <!-- Contact Pivot Highlight (Mechanical Axis alignment point) -->
+    <circle cx="144" cy="105" r="4.5" fill="#ef4444" opacity="0.95"/>
+    <circle cx="144" cy="105" r="8" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- Force & Angle Indicators (Graphic Only) -->
+  <path d="M 225 150 L 165 110" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="160,107 172,111 168,118" fill="#38bdf8"/>
+  <path d="M 175 138 A 35 35 0 0 1 190 162" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 2"/>
+
+  <!-- Technical Magnifier Inspection Ring (Inset Zoom) -->
+  <g transform="translate(45, 60)">
+    <circle cx="45" cy="45" r="40" fill="#090d16" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="45" cy="45" r="44" fill="none" stroke="#1e293b" stroke-width="1"/>
+    <!-- Zoom Joint Silhouette: Post Chisel nested in Strut V-Notch -->
+    <polygon points="35,65 45,35 55,65" fill="#fde68a" stroke="#78350f" stroke-width="1.5"/>
+    <polygon points="28,28 45,35 62,28 72,38 52,58 45,45 38,58 18,38" fill="#854d0e" stroke="#271408" stroke-width="1.5"/>
+    <polygon points="38,45 45,35 52,45 45,42" fill="#fde68a"/>
+    <!-- Lock Check Icon -->
+    <path d="M 38 78 L 43 83 L 53 73" stroke="#22c55e" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Technical Label Pointers with Direct Lines to Joint -->
+  <!-- Label 2: Post Tip -->
+  <line x1="140" y1="102" x2="80" y2="55" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="140" cy="102" r="3" fill="#f59e0b"/>
+  <rect x="25" y="45" width="140" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="95" y="59" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">1번 세움대 납작 윗머리</text>
+
+  <!-- Label 3: Strut V-notch (Points directly to red contact hinge circle) -->
+  <line x1="148" y1="105" x2="220" y2="75" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="148" cy="105" r="3" fill="#f59e0b"/>
+  <rect x="200" y="65" width="150" height="20" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="275" y="79" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">2번 빗장대 V자 홈 결합</text>
+
+  <!-- Label 4: Angle Mating -->
+  <rect x="180" y="165" width="135" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="247" y="179" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">45도 각도로 딱 맞물림</text>
+
+  <!-- Bottom Visual Callout Box (Label 5) -->
+  <rect x="20" y="325" width="360" height="52" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+  <rect x="20" y="325" width="3" height="52" fill="#3b82f6"/>
+  <text x="32" y="355" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">[핵심] 미끄러지지 않고 딱 물리는 상단 결합</text>
+</svg>

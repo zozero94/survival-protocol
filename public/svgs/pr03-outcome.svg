@@ -1,0 +1,144 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f0d"/>
+      <stop offset="100%" stop-color="#141916"/>
+    </linearGradient>
+
+    <!-- Wood Trunk Gradients -->
+    <linearGradient id="ridgepoleWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3f2e1d"/>
+      <stop offset="50%" stop-color="#694f34"/>
+      <stop offset="100%" stop-color="#2a1e12"/>
+    </linearGradient>
+
+    <!-- Dense Leaf Blanket Texture Gradients -->
+    <linearGradient id="leafLayer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#713f12"/>
+      <stop offset="35%" stop-color="#854d0e"/>
+      <stop offset="70%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#4d3800"/>
+    </linearGradient>
+    <radialGradient id="shelterInterior" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="80%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Technical Canvas Backdrop -->
+  <rect x="0" y="0" width="800" height="450" fill="url(#bgGrad3)"/>
+  <rect x="15" y="15" width="770" height="420" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Crosshairs -->
+  <path d="M 25 35 L 45 35 M 35 25 L 35 45" stroke="#444" stroke-width="1"/>
+  <path d="M 775 35 L 755 35 M 765 25 L 765 45" stroke="#444" stroke-width="1"/>
+  <path d="M 25 415 L 45 415 M 35 405 L 35 425" stroke="#444" stroke-width="1"/>
+  <path d="M 775 415 L 755 415 M 765 405 L 765 425" stroke="#444" stroke-width="1"/>
+
+  <!-- Metadata -->
+  <text x="35" y="55" fill="#555" font-family="monospace" font-size="10" letter-spacing="1">ARCHIVE // OUTCOME SPECIFICATION</text>
+  <text x="35" y="70" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: A-FRAME DEBRIS HUT [THERMAL SHELTER]</text>
+  <text x="765" y="55" fill="#555" font-family="monospace" font-size="10" text-anchor="end">DEAD-AIR INSULATION: 1.0M</text>
+
+  <!-- Left Spec Box -->
+  <g id="specBoxLeft" font-family="monospace" font-size="10">
+    <rect x="45" y="100" width="180" height="155" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="45" y="100" width="180" height="22" fill="#1f1f1f"/>
+    <text x="55" y="115" fill="#E02424" font-weight="bold">SHELTER METRICS</text>
+    <text x="55" y="140" fill="#aaa">· RIDGEPOLE: 2.5-3.0 M</text>
+    <text x="55" y="160" fill="#aaa">· ROOF PITCH: 45° SLANT</text>
+    <text x="55" y="180" fill="#aaa">· LEAF THICKNESS: 100 CM</text>
+    <text x="55" y="200" fill="#aaa">· GROUND BEDDING: 50 CM</text>
+    <text x="55" y="220" fill="#aaa">· ENTRANCE: LOW BRAWL FIT</text>
+    <text x="55" y="240" fill="#4ade80">· TEMP RETENTION: +15°C</text>
+  </g>
+
+  <!-- Forest Ground Base -->
+  <polygon points="120,410 680,410 740,360 200,360" fill="#141a13" opacity="0.8"/>
+  <ellipse cx="450" cy="390" rx="240" ry="22" fill="#080c09"/>
+
+  <!-- Debris Hut Main Volume (3D Sloping Dome) -->
+  <g id="debrisHutStructure">
+    <!-- Back End Ground Anchor (Tail) -->
+    <ellipse cx="640" cy="350" rx="40" ry="18" fill="#1a140d"/>
+
+    <!-- Thick 1-Meter Debris Leaf Mound Volume (Roof Shading) -->
+    <path d="M 330 155 C 390 145 520 220 650 345 L 610 380 C 490 385 360 385 240 375 C 230 330 260 200 330 155 Z" fill="url(#leafLayer)" stroke="#3f2305" stroke-width="2"/>
+
+    <!-- Highlighting Leaf Scales / Foliage Tufts -->
+    <g stroke="#a16207" stroke-width="1.2" fill="#854d0e" opacity="0.85">
+      <ellipse cx="370" cy="210" rx="18" ry="10"/>
+      <ellipse cx="410" cy="230" rx="22" ry="12"/>
+      <ellipse cx="460" cy="250" rx="20" ry="11"/>
+      <ellipse cx="510" cy="280" rx="24" ry="13"/>
+      <ellipse cx="560" cy="310" rx="22" ry="12"/>
+      <ellipse cx="350" cy="260" rx="20" ry="11"/>
+      <ellipse cx="390" cy="280" rx="22" ry="12"/>
+      <ellipse cx="440" cy="300" rx="24" ry="14"/>
+      <ellipse cx="490" cy="330" rx="25" ry="13"/>
+      <ellipse cx="310" cy="300" rx="18" ry="10"/>
+      <ellipse cx="350" cy="325" rx="22" ry="12"/>
+      <ellipse cx="400" cy="340" rx="24" ry="13"/>
+    </g>
+
+    <!-- Exterior Weighting Thatch Branches (바람막이 겉가지 격자) -->
+    <g stroke="#452e18" stroke-width="3" stroke-linecap="round">
+      <line x1="335" y1="170" x2="270" y2="365"/>
+      <line x1="380" y1="180" x2="330" y2="370"/>
+      <line x1="435" y1="210" x2="395" y2="375"/>
+      <line x1="490" y1="240" x2="465" y2="380"/>
+      <line x1="550" y1="280" x2="530" y2="380"/>
+      <!-- Cross horizontal sticks -->
+      <line x1="290" y1="280" x2="540" y2="305"/>
+      <line x1="260" y1="330" x2="570" y2="350"/>
+    </g>
+
+    <!-- Front A-Frame Crutch Entrance Structure -->
+    <!-- Left A-Frame Post -->
+    <polygon points="230,370 240,370 338,150 330,150" fill="url(#ridgepoleWood)" stroke="#1a120b" stroke-width="1.5"/>
+    <!-- Right A-Frame Post -->
+    <polygon points="350,370 340,370 330,150 338,150" fill="url(#ridgepoleWood)" stroke="#1a120b" stroke-width="1.5"/>
+    <!-- Apex Notch Crotch -->
+    <ellipse cx="334" cy="150" rx="10" ry="6" fill="#523922" stroke="#261b11" stroke-width="1.5"/>
+
+    <!-- Ridgepole Extending Through Apex to Back Tail -->
+    <polygon points="328,145 342,145 650,345 640,348" fill="url(#ridgepoleWood)" stroke="#261b11" stroke-width="1.5"/>
+
+    <!-- Small Snug Entrance Opening -->
+    <path d="M 260 370 C 260 280 320 280 320 370 Z" fill="url(#shelterInterior)" stroke="#291b10" stroke-width="2"/>
+
+    <!-- Entrance Door Plug (낙엽 차단 마개) Placed Beside Entry -->
+    <g id="doorPlug">
+      <ellipse cx="230" cy="380" rx="26" ry="16" fill="#5c3a14" stroke="#33200b" stroke-width="1.5"/>
+      <path d="M 215 375 Q 230 385 245 375" stroke="#854d0e" stroke-width="1.2" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Technical Callouts (Right Side) -->
+  <g id="calloutsRight" font-family="monospace" font-size="10" fill="#cccccc">
+    <!-- Callout 1: Ridgepole -->
+    <line x1="335" y1="150" x2="565" y2="150" stroke="#666" stroke-width="1"/>
+    <circle cx="335" cy="150" r="2" fill="#666"/>
+    <text x="570" y="147" fill="#ffffff" font-weight="bold">HEAVY RIDGEPOLE (용마루)</text>
+    <text x="570" y="160" fill="#888888">성인 체중을 견디는 굵은 주 기둥 안착</text>
+
+    <!-- Callout 2: Debris Layer -->
+    <line x1="440" y1="240" x2="565" y2="240" stroke="#E02424" stroke-width="1"/>
+    <circle cx="440" cy="240" r="2" fill="#E02424"/>
+    <text x="570" y="237" fill="#E02424" font-weight="bold">1-METER DEBRIS INSULATION</text>
+    <text x="570" y="250" fill="#888888">마른 낙엽 1미터로 영하권 체온 손실 방지</text>
+
+    <!-- Callout 3: Thatch Lattice -->
+    <line x1="510" y1="310" x2="565" y2="310" stroke="#666" stroke-width="1"/>
+    <circle cx="510" cy="310" r="2" fill="#666"/>
+    <text x="570" y="307" fill="#ffffff" font-weight="bold">THATCH TRELLIS (겉가지 격자)</text>
+    <text x="570" y="320" fill="#888888">돌풍에 낙엽이 날리지 않게 상단 누름 고정</text>
+
+    <!-- Callout 4: Snug Entrance & Plug -->
+    <line x1="285" y1="350" x2="565" y2="350" stroke="#4ade80" stroke-width="1"/>
+    <circle cx="285" cy="350" r="2" fill="#4ade80"/>
+    <text x="570" y="347" fill="#4ade80" font-weight="bold">LOW ENTRANCE &amp; DOOR PLUG</text>
+    <text x="570" y="360" fill="#888888">기어 들어갈 크기 + 취침 시 마개 차단</text>
+  </g>
+</svg>

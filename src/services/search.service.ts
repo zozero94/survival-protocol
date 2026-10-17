@@ -17,14 +17,17 @@ export interface SearchDocument {
   url: string;              // "/protocol-01"
   category: string;         // "WATER"
   categoryName: string;     // "[물 구하기]"
-  title: string;            // "오염된 물 100% 정수하는 3단계 페트병 필터"
-  titleChosung?: string;    // "ㅇㅇㄷ ㅁ 100% ㅈㅅㅎㄴ 3ㄷㄱ ㅍㅌㅂ ㅍㅌ"
+  title: string;            // "흙탕물을 깨끗한 식수로 바꾸는 법"
+  titleChosung?: string;    // "ㅎㅌㅁㅇ ㄲㄲㅎ ㅅㅅㄹ ㅂㄲㄴ ㅂ"
   summary: string;          // 요약문
   summaryChosung?: string;  // 요약문 초성
   materials: string;        // "참나무, 고운 모래, 굵은 모래, 숯"
   materialsChosung?: string;// 재료 초성
   steps: string;            // 단계별 제목 및 본문 결합
   deepDives: string;        // 스티치 딥다이브 뱃지 및 과학적 원리
+  thumbnailUrl?: string;    // "/svgs/pr01-outcome.svg" 또는 "/images/pr08-outcome.jpg"
+  timeRequired?: string;    // "30분"
+  successRate?: string;     // "90%"
 }
 
 export interface SearchResultItem {
@@ -108,6 +111,28 @@ export class SearchService {
       const catKey = (`cat_${p.category}`) as keyof typeof ui;
       const categoryName = (ui[catKey] as string) || `[${p.category}]`;
 
+      // 호버 프리뷰 썸네일 경로 추출 (초경량 16:9 Outcome SVG 도면 우선 적용하여 8MB+ PNG 병목 방지)
+      let thumbnailUrl = `/svgs/pr${num}-outcome.svg`;
+      if (p.outcome?.svgFileName) {
+        thumbnailUrl = `/svgs/${p.outcome.svgFileName}`;
+      } else if (p.steps?.[0]?.svgFileName) {
+        thumbnailUrl = `/svgs/${p.steps[0].svgFileName}`;
+      } else if (p.outcome?.imageFileName) {
+        thumbnailUrl = `/images/${p.outcome.imageFileName}`;
+      } else if (p.steps?.[0]?.imageFileName) {
+        thumbnailUrl = `/images/${p.steps[0].imageFileName}`;
+      }
+
+      // 물결표(~) 등 수치 범위를 보존하며 괄호 부연 설명만 제거
+      const shortTime = (p.timeRequired || '')
+        .replace(/<[^>]+>/g, '')
+        .split(/[（(]/)[0]
+        .trim();
+      const shortSuccess = (p.successRate || '')
+        .replace(/<[^>]+>/g, '')
+        .split(/[（(]/)[0]
+        .trim();
+
       const doc: SearchDocument = {
         id: p.protocolId,
         url,
@@ -118,6 +143,9 @@ export class SearchService {
         materials: matList,
         steps: stepTextList,
         deepDives: deepDivesList,
+        thumbnailUrl,
+        timeRequired: shortTime,
+        successRate: shortSuccess,
       };
 
       if (locale === 'ko') {

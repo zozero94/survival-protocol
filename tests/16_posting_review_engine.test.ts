@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { PostingReviewService } from '../src/services/posting-review.service.ts';
 import { CrossLinkerService, ContentEnrichmentService } from '../src/services/content-enrichment.service.ts';
+import { SearchService } from '../src/services/search.service.ts';
 import type { Protocol } from '../src/types/protocol.types.ts';
 
 const PROTOCOLS_DIR = path.resolve(process.cwd(), 'content', 'protocols');
@@ -20,7 +21,7 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     (f) => JSON.parse(fs.readFileSync(path.join(PROTOCOLS_DIR, f), 'utf-8')) as Protocol
   );
 
-  await t.test('16-1: 전 발행 프로토콜(PR-01 ~ PR-10)이 4대 포스팅 품질 심사(Safety, Reproducibility, SEO, Localization)를 100% 통과해야 한다', () => {
+  await t.test('16-1: 전 발행 프로토콜(PR-01 ~ PR-12)이 4대 포스팅 품질 심사(Safety, Reproducibility, SEO, Localization)를 100% 통과해야 한다', () => {
     assert.ok(masterFiles.length >= 9, '최소 9개 이상의 활성 마스터 프로토콜이 존재해야 함');
 
     for (const file of masterFiles) {
@@ -142,5 +143,39 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
       'protocol-04.html 본문에 /protocol-05.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
     );
   });
+
+  await t.test('16-7: 전 프로토콜(PR-01 ~ PR-12)에 모듈형 호버 프리뷰 팝오버(#tactical-crosslink-popover) 및 썸네일 인덱스가 자동 이식되어야 한다', () => {
+    const slimDocs = SearchService.buildSlimIndex(allMasterProtocols, 'ko');
+    for (const doc of slimDocs) {
+      assert.ok(
+        doc.thumbnailUrl && (doc.thumbnailUrl.startsWith('/svgs/pr') || doc.thumbnailUrl.startsWith('/images/pr')),
+        `[${doc.id}] thumbnailUrl이 유효해야 함 (실제: ${doc.thumbnailUrl})`
+      );
+      assert.ok(doc.timeRequired && doc.timeRequired.length > 0, `[${doc.id}] timeRequired가 포함되어야 함`);
+      const assetDiskPath = path.join(PUBLIC_DIR, doc.thumbnailUrl.replace(/^\//, ''));
+      assert.equal(fs.existsSync(assetDiskPath), true, `[${doc.id}] 정적 썸네일 도면(${assetDiskPath})이 public/에 존재해야 함`);
+    }
+
+    for (const proto of allMasterProtocols) {
+      const num = proto.protocolId.replace(/\D/g, '').padStart(2, '0');
+      const htmlPath = path.join(PUBLIC_DIR, `protocol-${num}.html`);
+      const html = fs.readFileSync(htmlPath, 'utf-8');
+      assert.ok(
+        html.includes('id="tactical-crosslink-popover"'),
+        `protocol-${num}.html에 #tactical-crosslink-popover 싱글톤 DOM이 자동 주입되어야 함`
+      );
+      assert.ok(
+        html.includes('showPopoverForAnchor') && html.includes('extractProtocolNum'),
+        `protocol-${num}.html에 크로스링크 호버 프리뷰 런타임 스크립트가 자동 주입되어야 함`
+      );
+    }
+
+    const swCode = fs.readFileSync(path.join(PUBLIC_DIR, 'sw.js'), 'utf-8');
+    assert.ok(
+      swCode.includes('/svgs/pr02-outcome.svg') && swCode.includes('/svgs/pr12-outcome.svg'),
+      'Service Worker(sw.js) 사전 캐시에 호버 프리뷰 썸네일 SVG들이 등록되어야 함'
+    );
+  });
 });
+
 

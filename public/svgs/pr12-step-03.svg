@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1203" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090b0e"/>
+      <stop offset="100%" stop-color="#0e1318"/>
+    </linearGradient>
+    <linearGradient id="outerWall" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow1203" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.78"/>
+    </filter>
+    <pattern id="grid1203" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#18222d" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg1203)"/>
+  <rect width="400" height="400" fill="url(#grid1203)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#263545" stroke-width="1"/>
+
+  <!-- Top HUD Header -->
+  <rect x="16" y="14" width="368" height="28" fill="#101720" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // DOUBLE-WALL COAXIAL ASSEMBLY</text>
+
+  <!-- Cross-Section of Outer Can + Suspended Inner Can + Salvage Wire Pot Stand -->
+  <g filter="url(#shadow1203)">
+    <!-- Outer Large Steel Can Cutaway (x=105 to 295, y=148 to 295) -->
+    <rect x="105" y="148" width="190" height="147" rx="4" fill="url(#outerWall)" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Inner Small Steel Can Suspended Inside (x=133 to 267, y=148 to 260) -->
+    <rect x="133" y="148" width="134" height="112" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="2"/>
+
+    <!-- Bottom 3~4cm Clearance Zone (y=260 to 295) -->
+    <line x1="133" y1="260" x2="267" y2="260" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5,3"/>
+
+    <!-- Outer Can Bottom Side Air Intake Holes (12mm x 8~10 holes) -->
+    <g fill="#090d12" stroke="#38bdf8" stroke-width="1.6">
+      <circle cx="118" cy="280" r="6"/>
+      <circle cx="155" cy="280" r="6"/>
+      <circle cx="200" cy="280" r="6"/>
+      <circle cx="245" cy="280" r="6"/>
+      <circle cx="282" cy="280" r="6"/>
+    </g>
+
+    <!-- Inner Can Upper Secondary Gas Jet Holes -->
+    <g fill="#090d12" stroke="#fde68a" stroke-width="1.5">
+      <circle cx="148" cy="166" r="5"/>
+      <circle cx="174" cy="166" r="5"/>
+      <circle cx="200" cy="166" r="5"/>
+      <circle cx="226" cy="166" r="5"/>
+      <circle cx="252" cy="166" r="5"/>
+    </g>
+
+    <!-- Upward Preheated Air Draft Arrows Inside Annular Gap (Left & Right) -->
+    <path d="M 119 272 L 119 166 L 136 166" fill="none" stroke="#f97316" stroke-width="2"/>
+    <path d="M 281 272 L 281 166 L 264 166" fill="none" stroke="#f97316" stroke-width="2"/>
+
+    <!-- Stripped Salvaged Copper/Steel Wire Rim Binding & Cross Pot-Support Stand Above -->
+    <rect x="126" y="132" width="148" height="14" rx="2" fill="none" stroke="#f59e0b" stroke-width="3"/>
+    <line x1="115" y1="138" x2="285" y2="138" stroke="#fbbf24" stroke-width="2.5"/>
+  </g>
+
+  <!-- Callouts & Labels -->
+  <!-- Label 2: Outer bottom air intakes -->
+  <line x1="118" y1="280" x2="72" y2="76" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="118" cy="280" r="3" fill="#38bdf8"/>
+  <rect x="18" y="52" width="335" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="26" y="68" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">외부 대형 깡통 하단 찬 공기 흡입구 (12mm × 8~10개)</text>
+
+  <!-- Label 3: Coaxial insertion of inner chamber -->
+  <line x1="200" y1="148" x2="225" y2="110" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="200" cy="148" r="3" fill="#fde68a"/>
+  <rect x="65" y="86" width="318" height="24" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="1"/>
+  <text x="73" y="102" fill="#f8fafc" font-family="sans-serif" font-size="11">상단 원형 개방구에 내부 연소실 깡통 수직 삽입</text>
+
+  <!-- Label 4: 3~4cm bottom ash & air plenum clearance -->
+  <line x1="200" y1="260" x2="200" y2="310" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="200" cy="260" r="3" fill="#38bdf8"/>
+  <rect x="24" y="310" width="340" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="32" y="326" fill="#fde68a" font-family="sans-serif" font-size="11">바닥에서 3~4cm 띄워 재 받이 및 공기 분배 공간 확보</text>
+
+  <!-- Label 5: Core Wire Lashing & Pot Stand -->
+  <rect x="18" y="344" width="364" height="34" rx="4" fill="#141e28" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="28" y="365" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">[핵심] 폐전선 철사로 상단 고정 및 냄비 받침대 거치</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#050505"/>
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#262626" stroke-width="1"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#171717" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 헤더 스탬프 -->
+  <text x="32" y="44" fill="#737373" font-family="monospace" font-size="10" font-weight="bold">PROTOCOL // PR-07 [PINE-RESIN-OINTMENT]</text>
+  <text x="368" y="44" fill="#E5E5E5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">STEP 02</text>
+
+  <!-- 조약돌 조제 보울 (Stone Mortar Bowl) -->
+  <ellipse cx="200" cy="180" rx="90" ry="35" fill="#1A1A1A" stroke="#E5E5E5" stroke-width="2"/>
+  <ellipse cx="200" cy="180" rx="75" ry="25" fill="#0F0F0F" stroke="#737373" stroke-width="1"/>
+
+  <!-- 3:1 혼합 비율 인디케이터 (3:1 Ratio) -->
+  <rect x="140" y="80" width="120" height="40" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="200" y="98" fill="#FFFFFF" font-family="monospace" font-size="11" text-anchor="middle" font-weight="black">RATIO 3 : 1</text>
+  <text x="200" y="112" fill="#E5E5E5" font-family="monospace" font-size="8" text-anchor="middle">RESIN (3) + STERILE CHARCOAL (1)</text>
+
+  <!-- 숯가루 살포 투입 궤적 (Charcoal Powder Dusting) -->
+  <circle cx="160" cy="140" r="2.5" fill="#FFFFFF"/>
+  <circle cx="170" cy="148" r="2" fill="#FFFFFF"/>
+  <circle cx="190" cy="142" r="3" fill="#FFFFFF"/>
+  <circle cx="210" cy="145" r="2" fill="#FFFFFF"/>
+  <circle cx="230" cy="140" r="2.5" fill="#FFFFFF"/>
+  <line x1="200" y1="125" x2="200" y2="155" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="2 2"/>
+
+  <!-- 혼합 교반 스틱 (Wooden Stirring Paddle) -->
+  <line x1="260" y1="110" x2="210" y2="185" stroke="#E5E5E5" stroke-width="4" stroke-linecap="round"/>
+  <!-- 회전 교반 화살표 (Vigorous Stirring) -->
+  <path d="M 175 185 A 25 10 0 1 0 225 185" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <polygon points="225,181 231,188 223,191" fill="#FFFFFF"/>
+
+  <!-- 연고 경화 텍스처 박스 -->
+  <rect x="50" y="240" width="300" height="55" fill="#0A0A0A" stroke="#404040" stroke-width="1"/>
+  <text x="65" y="260" fill="#E5E5E5" font-family="monospace" font-size="10">ANTISEPTIC: TERPENES + ACTIVATED CARBON</text>
+  <text x="65" y="278" fill="#737373" font-family="monospace" font-size="9">&gt; BINDS BACTERIA &amp; COATS AGAINST ANAEROBIC TETANUS</text>
+
+  <!-- 하단 캡션 -->
+  <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
+  <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 02: 3:1 STERILE CHARCOAL BLEND &amp; SALVE COMPOUNDING</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">STIR CRUSHED CHARCOAL INTO WARM RESIN UNTIL IT FORMS A PLIABLE BLACK SALVE</text>
+</svg>

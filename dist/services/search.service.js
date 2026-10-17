@@ -17,14 +17,17 @@ import { UI_STRINGS } from '../i18n/ui-strings.js';
                                              
                                       
                                         
-                                                           
-                                                           
+                                                   
+                                                   
                                   
                                      
                                                      
                                     
                                              
                                                    
+                                                                                     
+                                    
+                                    
  
 
                                    
@@ -108,6 +111,28 @@ export class SearchService {
       const catKey = (`cat_${p.category}`)                   ;
       const categoryName = (ui[catKey]          ) || `[${p.category}]`;
 
+      // 호버 프리뷰 썸네일 경로 추출 (초경량 16:9 Outcome SVG 도면 우선 적용하여 8MB+ PNG 병목 방지)
+      let thumbnailUrl = `/svgs/pr${num}-outcome.svg`;
+      if (p.outcome?.svgFileName) {
+        thumbnailUrl = `/svgs/${p.outcome.svgFileName}`;
+      } else if (p.steps?.[0]?.svgFileName) {
+        thumbnailUrl = `/svgs/${p.steps[0].svgFileName}`;
+      } else if (p.outcome?.imageFileName) {
+        thumbnailUrl = `/images/${p.outcome.imageFileName}`;
+      } else if (p.steps?.[0]?.imageFileName) {
+        thumbnailUrl = `/images/${p.steps[0].imageFileName}`;
+      }
+
+      // 물결표(~) 등 수치 범위를 보존하며 괄호 부연 설명만 제거
+      const shortTime = (p.timeRequired || '')
+        .replace(/<[^>]+>/g, '')
+        .split(/[（(]/)[0]
+        .trim();
+      const shortSuccess = (p.successRate || '')
+        .replace(/<[^>]+>/g, '')
+        .split(/[（(]/)[0]
+        .trim();
+
       const doc                 = {
         id: p.protocolId,
         url,
@@ -118,6 +143,9 @@ export class SearchService {
         materials: matList,
         steps: stepTextList,
         deepDives: deepDivesList,
+        thumbnailUrl,
+        timeRequired: shortTime,
+        successRate: shortSuccess,
       };
 
       if (locale === 'ko') {

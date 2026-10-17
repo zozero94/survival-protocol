@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 340" class="w-full h-auto block" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow-draft-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 8 5 L 0 9 z" fill="#06B6D4" />
+            </marker>
+            <marker id="arrow-draft-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 8 5 L 0 9 z" fill="#E02424" />
+            </marker>
+            <marker id="arrow-smoke" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 8 5 L 0 9 z" fill="#888888" />
+            </marker>
+          </defs>
+
+          <!-- Blueprint Header -->
+          <text x="75" y="40" fill="#666666" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">
+            FIG. 04 // AIR DRAFT PERSPECTIVE &amp; EXHAUST BLUEPRINT
+          </text>
+          <line x1="75" y1="48" x2="605" y2="48" stroke="#222222" stroke-width="1" />
+
+          <!-- Perspective Cutaway Chamber -->
+          <g transform="translate(160, 65)">
+            <!-- Outer structure wireframe / body -->
+            <path d="M 30 180 L 30 120 Q 50 40 160 30 L 260 50 Q 320 80 330 180 Z" fill="#151515" stroke="#333333" stroke-width="1" />
+
+            <!-- Flat Top Cooking Rim (냄비 얹는 자리) -->
+            <ellipse cx="160" cy="40" rx="36" ry="12" fill="#202020" stroke="#E5E5E5" stroke-width="2" />
+            <path d="M 124 40 Q 160 52 196 40" stroke="#888888" stroke-width="1" stroke-dasharray="2,2" />
+
+            <!-- Clay Spacer Knobs (틈새 돌기) -->
+            <circle cx="128" cy="38" r="3" fill="#F59E0B" />
+            <circle cx="160" cy="51" r="3" fill="#F59E0B" />
+            <circle cx="192" cy="38" r="3" fill="#F59E0B" />
+
+            <!-- Rear Chimney Flue (뒤편 굴뚝 구멍) -->
+            <ellipse cx="275" cy="55" rx="18" ry="8" fill="#111111" stroke="#888888" stroke-width="1.5" />
+            <path d="M 275 55 Q 290 20 285 5" stroke="#888888" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrow-smoke)" />
+
+            <!-- Front Air/Wood Opening (앞쪽 하부 흡입구) -->
+            <path d="M 30 180 Q 70 120 110 180" fill="#0C0C0C" stroke="#06B6D4" stroke-width="2" />
+
+            <!-- Internal Fire Draft Flow -->
+            <!-- Blue Oxygen entry -->
+            <path d="M 10 165 L 60 160" stroke="#06B6D4" stroke-width="2.5" marker-end="url(#arrow-draft-blue)" />
+            <!-- Red Flame Rising to pot -->
+            <path d="M 80 155 Q 120 110 155 60" stroke="#E02424" stroke-width="2.5" marker-end="url(#arrow-draft-red)" />
+            <!-- Red Heat to rear chimney -->
+            <path d="M 140 100 Q 210 90 265 65" stroke="#E02424" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrow-draft-red)" />
+          </g>
+
+          <!-- Label 1: 앞쪽 하부 공기 흡입구 -->
+          <text x="75" y="260" fill="#06B6D4" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ① 앞쪽 하부 공기 흡입구 (산소 유입)
+          </text>
+          <text x="75" y="278" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            차가운 신선한 공기가 빨려 들어가는 길목
+          </text>
+
+          <!-- Label 2: 윗부분 평평한 조리용 구멍 -->
+          <line x1="320" y1="100" x2="220" y2="70" stroke="#E5E5E5" stroke-width="1" />
+          <text x="75" y="90" fill="#E5E5E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ② 윗부분 평평한 조리용 구멍
+          </text>
+          <text x="75" y="108" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            냄비나 평평한 돌판을 얹는 화구
+          </text>
+
+          <!-- Label 3: 뒤편 상단 굴뚝 구멍 -->
+          <text x="445" y="85" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ③ 뒤편 상단 굴뚝 구멍
+          </text>
+          <text x="445" y="103" fill="#666666" font-family="'Space Grotesk', sans-serif" font-size="10">
+            매운 연기를 뒤로 뽑아내는 배출구
+          </text>
+
+          <!-- Label 4: 붉은 화살표 열기 순환 -->
+          <text x="400" y="185" fill="#E02424" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ④ 솟구치는 열기 순환선
+          </text>
+          <text x="400" y="203" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            연소실 안을 회전하며 냄비 바닥을 달굼
+          </text>
+
+          <!-- Label 5: 냄비를 얹어도 공기가 통하는 틈새 -->
+          <text x="390" y="260" fill="#F59E0B" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold">
+            ⑤ 냄비 받침 통기 틈새 돌기
+          </text>
+          <text x="390" y="278" fill="#888888" font-family="'Space Grotesk', sans-serif" font-size="10">
+            냄비를 얹어도 불길이 막혀 꺼지지 않는 여유 공간
+          </text>
+        </svg>

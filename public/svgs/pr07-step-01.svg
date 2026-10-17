@@ -1,0 +1,179 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad01" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090b"/>
+      <stop offset="50%" stop-color="#0f1216"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
+    </linearGradient>
+
+    <!-- Manila Standing Rope 3D Tubular Gradient -->
+    <linearGradient id="ropeManila" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="25%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#fef3c7"/>
+      <stop offset="75%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Tactical Green Working Rope 3D Gradient -->
+    <linearGradient id="ropeTacticalGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="25%" stop-color="#16a34a"/>
+      <stop offset="50%" stop-color="#bbf7d0"/>
+      <stop offset="75%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#052e16"/>
+    </linearGradient>
+
+    <!-- Deep Drop Shadow Filter for Over/Under Crossing -->
+    <filter id="shadowDeep" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <!-- Twisted Rope Braid Pattern for Manila Rope -->
+    <pattern id="braidManila" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#451a03" stroke-width="2.5" opacity="0.6"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#fef3c7" stroke-width="1.5" opacity="0.4"/>
+    </pattern>
+
+    <!-- Paracord Texture Pattern for Working End -->
+    <pattern id="braidGreen" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#052e16" stroke-width="2" opacity="0.7"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#bbf7d0" stroke-width="1.2" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Technical Canvas Backdrop -->
+  <rect width="400" height="400" fill="url(#bgGrad01)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+
+  <!-- Technical Corner Crosshairs -->
+  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
+  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
+  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
+
+  <!-- Blueprint Header -->
+  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">FIG. 01 // BOWLINE STEP 1: 토끼굴 고리 형성</text>
+  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
+
+  <!-- Background Reference Grid for Scale -->
+  <g opacity="0.12" stroke="#4b5563" stroke-width="0.5" stroke-dasharray="2 4">
+    <line x1="60" y1="40" x2="60" y2="340"/>
+    <line x1="200" y1="40" x2="200" y2="340"/>
+    <line x1="340" y1="40" x2="340" y2="340"/>
+    <line x1="20" y1="120" x2="380" y2="120"/>
+    <line x1="20" y1="200" x2="380" y2="200"/>
+    <line x1="20" y1="280" x2="380" y2="280"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 1. STANDING PART (원줄 / 서 있는 나무) - 수직 황갈색 삼끈 로프 -->
+  <!-- ============================================================== -->
+  <!-- Ground contact shadow -->
+  <ellipse cx="200" cy="335" rx="16" ry="5" fill="#000000" opacity="0.6"/>
+
+  <!-- Standing Rope Segment: Top to Loop Entrance -->
+  <path d="M 200 42 L 200 120" stroke="#000000" stroke-width="18" stroke-linecap="round"/>
+  <path d="M 200 42 L 200 120" stroke="url(#ropeManila)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 200 42 L 200 120" stroke="url(#braidManila)" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Loop Body (토끼굴의 아래쪽 루프 곡선 - 숫자 6의 둥근 배) -->
+  <!-- Deep drop shadow behind loop -->
+  <path d="M 200 120 C 130 135 125 225 190 235 C 245 240 265 195 240 160 C 220 135 185 128 150 145" 
+        stroke="#000000" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Base Manila 3D Tube -->
+  <path d="M 200 120 C 130 135 125 225 190 235 C 245 240 265 195 240 160 C 220 135 185 128 150 145" 
+        stroke="url(#ropeManila)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 200 120 C 130 135 125 225 190 235 C 245 240 265 195 240 160 C 220 135 185 128 150 145" 
+        stroke="url(#braidManila)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.75"/>
+
+  <!-- Standing Part Continuation downwards (수직 원줄의 하단부) -->
+  <path d="M 190 235 L 195 330" stroke="#000000" stroke-width="18" stroke-linecap="round"/>
+  <path d="M 190 235 L 195 330" stroke="url(#ropeManila)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 190 235 L 195 330" stroke="url(#braidManila)" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- ============================================================== -->
+  <!-- 2. WORKING END (작동 줄 - 녹색 토끼 줄) - 원줄 "위(OVER)" 교차! -->
+  <!-- ============================================================== -->
+  <!-- The crossing segment with heavy physical drop shadow to prove OVER crossing -->
+  <g filter="url(#shadowDeep)">
+    <!-- Black cast shadow mask -->
+    <path d="M 150 145 C 135 155 105 195 105 250 L 105 320" 
+          stroke="#000000" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <!-- 3D Tactical Green Tube -->
+    <path d="M 150 145 C 135 155 105 195 105 250 L 105 320" 
+          stroke="url(#ropeTacticalGreen)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M 150 145 C 135 155 105 195 105 250 L 105 320" 
+          stroke="url(#braidGreen)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Heat-sealed Rope End Cap (작동 줄 끝단 마감 테이프 디테일) -->
+  <line x1="100" y1="320" x2="110" y2="320" stroke="#ef4444" stroke-width="4" stroke-linecap="square"/>
+
+  <!-- ============================================================== -->
+  <!-- 3. INSET LOUPE: OVER 교차점 3D 확대경 (인간 인지성 극대화) -->
+  <!-- ============================================================== -->
+  <!-- Inset Loupe Circular Frame at Top Right -->
+  <g transform="translate(300, 110)">
+    <circle cx="0" cy="0" r="32" fill="#0c0e12" stroke="#22c55e" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#222" stroke-width="1"/>
+    
+    <!-- Underneath Manila Rope inside Zoom -->
+    <path d="M -30 6 L 30 -6" stroke="#000000" stroke-width="16" stroke-linecap="round"/>
+    <path d="M -30 6 L 30 -6" stroke="url(#ropeManila)" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- OVER Green Rope with Deep Cast Shadow -->
+    <path d="M -8 -30 L 8 30" stroke="#000000" stroke-width="18" stroke-linecap="round"/>
+    <path d="M -8 -30 L 8 30" stroke="url(#ropeTacticalGreen)" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- "OVER" Visual Indicator inside Loupe -->
+    <rect x="-16" y="-12" width="32" height="6" fill="#14532d" stroke="#22c55e" stroke-width="0.8"/>
+    <polygon points="0,-15 -4,-12 4,-12" fill="#22c55e"/>
+    
+    <!-- Loupe Leader Line connecting to actual crossing -->
+    <path d="M -22 22 L -100 35" stroke="#22c55e" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+    <circle cx="-100" cy="35" r="3" fill="#22c55e"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 4. MOTION & TARGET INDICATORS -->
+  <!-- ============================================================== -->
+  <!-- Number 6 Loop Target Crosshair & Circle -->
+  <circle cx="185" cy="185" r="22" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="185" cy="185" r="3" fill="#38bdf8"/>
+  <path d="M 185 155 L 185 165 M 185 205 L 185 215 M 155 185 L 165 185 M 205 185 L 215 185" stroke="#38bdf8" stroke-width="1"/>
+
+  <!-- Dynamic Loop Twist Arrow (시계 방향 꼬임 가이드) -->
+  <path d="M 230 165 C 245 190 230 220 195 220 C 170 220 155 200 165 175" 
+        fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 2"/>
+  <polygon points="163,168 174,175 166,183" fill="#f59e0b"/>
+
+  <!-- ============================================================== -->
+  <!-- 5. CALLOUT LABELS (9대 선언적 바인딩 라벨) -->
+  <!-- ============================================================== -->
+  <!-- Label 2 & 3: Standing Part (Top Left) -->
+  <line x1="192" y1="75" x2="90" y2="75" stroke="#9ca3af" stroke-width="1"/>
+  <circle cx="192" cy="75" r="2.5" fill="#f59e0b"/>
+  <text x="24" y="70" fill="#fef3c7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">STANDING PART</text>
+  <text x="24" y="83" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9">원줄 (서 있는 나무)</text>
+
+  <!-- Label 4 & 5: Rabbit Hole (Center Left) -->
+  <line x1="163" y1="185" x2="80" y2="185" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="163" cy="185" r="2.5" fill="#38bdf8"/>
+  <text x="24" y="175" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">RABBIT HOLE (고리)</text>
+  <text x="24" y="188" fill="#bae6fd" font-family="'JetBrains Mono', monospace" font-size="9">숫자 6 모양의 토끼굴</text>
+
+  <!-- Label 6 & 7: Working End (Bottom Left) -->
+  <line x1="105" y1="270" x2="50" y2="270" stroke="#22c55e" stroke-width="1"/>
+  <circle cx="105" cy="270" r="2.5" fill="#22c55e"/>
+  <text x="24" y="260" fill="#86efac" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">WORKING END (토끼)</text>
+  <text x="24" y="273" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="9">작동 끝단이 원줄 '위'로 교차</text>
+
+  <!-- Bottom Tactical Field Note Strip -->
+  <rect x="18" y="342" width="364" height="40" fill="#111419" stroke="#262d35" stroke-width="1"/>
+  <rect x="18" y="342" width="4" height="40" fill="#22c55e"/>
+  <!-- Label 8 & 9: Summary Instruction -->
+  <text x="32" y="357" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">[1단계 핵심] 원줄 위에 작동 줄을 얹어 6자 루프 형성</text>
+  <text x="32" y="371" fill="#9ca3af" font-family="'Chivo', sans-serif" font-size="8.5">작동 줄이 반드시 원줄의 위쪽에 위치해야 잠금 구조가 완성됩니다.</text>
+</svg>
