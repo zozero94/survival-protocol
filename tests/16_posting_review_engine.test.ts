@@ -192,6 +192,20 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
       'Service Worker(sw.js) 사전 캐시에 호버 프리뷰 썸네일 SVG들이 등록되어야 함'
     );
   });
+
+  await t.test('16-8: 법무 및 Google 정책 검수(LEGAL_GOOGLE_POLICY)가 위험·유해 금지어 및 폐자재 유독가스 경고 누락을 즉시 탐지해야 한다', () => {
+    const pr12 = allMasterProtocols.find((p) => p.protocolId === 'PR-12')!;
+    const cleanAudit = PostingReviewService.auditLegalGooglePolicy(pr12);
+    assert.strictEqual(cleanAudit.passed, true, 'PR-12는 법무 및 Google 정책 심사를 통과해야 함');
+
+    const badProtocol: Protocol = {
+      ...pr12,
+      summary: '사제 폭탄 제조 및 무단 침입 기술 안내',
+    };
+    const badAudit = PostingReviewService.auditLegalGooglePolicy(badProtocol);
+    assert.strictEqual(badAudit.passed, false, '위험·불법 무기/폭발물 금지어가 포함되면 즉시 불합격 처리되어야 함');
+    assert.ok(badAudit.warnings.some((w) => w.includes('정책 위반 금지어 감지')));
+  });
 });
 
 
