@@ -5,7 +5,7 @@ import { SITE_META, PWA_PATHS } from '../site.config.js';
  * 서비스 워커 로직이 바뀌면 이 값을 올린다. 캐시 버전 해시에 포함되어
  * 콘텐츠가 그대로여도 기존 방문자의 캐시가 새 로직으로 교체된다.
  */
-export const SW_TEMPLATE_REVISION = 5;
+export const SW_TEMPLATE_REVISION = 6;
 
                                 
                                                             
@@ -46,7 +46,8 @@ export class PwaService {
    * - 페이지 이동(navigate): 온라인 시 최신 서버 응답 우선(Network-First) + 오프라인 시 로컬 캐시 즉시 폴백.
    *   ?lang= 등 쿼리는 클라이언트 상태이므로 캐시 키에서 제거한다.
    * - 같은 출처 정적 자원: cache-first (버전 해시로 무효화되므로 안전).
-   * - 외부 CDN/폰트: stale-while-revalidate, opaque 응답 허용.
+   * - 허용된 외부 CDN/폰트(ALLOWED_EXTERNAL_HOSTS): stale-while-revalidate, opaque 응답 허용.
+   * - 그 외 외부 API/텔레메트리(Firebase RTDB, SDK, GA4, AdSense 등): 서비스 워커 가로채기 즉시 바이패스.
    * - 오프라인 + 캐시 미스: navigationFallback 페이지 → 그것도 없으면 최소 안내 문구.
    */
          static buildServiceWorker(options                      )         {
@@ -58,6 +59,7 @@ const CACHE_PREFIX = 'survival-';
 const PRECACHE_URLS = ${JSON.stringify(precacheUrls)};
 const EXTERNAL_URLS = ${JSON.stringify(externalUrls)};
 const NAVIGATION_FALLBACK = ${JSON.stringify(navigationFallback)};
+const ALLOWED_EXTERNAL_HOSTS = ['cdn.tailwindcss.com', 'fonts.googleapis.com', 'fonts.gstatic.com'];
 
 function toAbsolute(path) {
   return new URL(path, self.location.href).href;
@@ -154,6 +156,8 @@ self.addEventListener('fetch', (event) => {
     }));
     return;
   }
+
+  if (!ALLOWED_EXTERNAL_HOSTS.includes(url.hostname)) return;
 
   const networkPromise = cachePromise
     .then((cache) => fetchAndStore(cache, request.url, request))

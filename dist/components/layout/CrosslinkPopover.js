@@ -23,7 +23,7 @@ export function renderCrosslinkPopover()         {
       <a
         id="popover-card-link"
         href="#"
-        class="block text-left no-underline focus:outline-none group"
+        class="block text-left no-underline focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a] group"
       >
         <!-- 1. 상단 텔레메트리 헤더 바 -->
         <div class="bg-[#121212] border-b border-[#262626] px-3 py-1.5 flex items-center justify-between gap-2 font-mono text-[10px]">

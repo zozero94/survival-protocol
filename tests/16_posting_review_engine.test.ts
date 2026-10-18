@@ -206,6 +206,36 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     assert.strictEqual(badAudit.passed, false, '위험·불법 무기/폭발물 금지어가 포함되면 즉시 불합격 처리되어야 함');
     assert.ok(badAudit.warnings.some((w) => w.includes('정책 위반 금지어 감지')));
   });
+
+  await t.test('16-9: Firebase 텔레메트리 어뷰징 방어, AdBlock 장애 격리, PWA 외부 호스트 화이트리스트 및 index.html 인라인 스크립트 무결성이 보장되어야 한다', () => {
+    const indexHtml = fs.readFileSync(path.join(PUBLIC_DIR, 'index.html'), 'utf-8');
+    const scriptRe = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
+    let m: RegExpExecArray | null;
+    let sIdx = 0;
+    while ((m = scriptRe.exec(indexHtml)) !== null) {
+      sIdx++;
+      const attrs = m[1] || '';
+      const code = m[2] || '';
+      if (attrs.includes('application/ld+json') || !code.trim()) continue;
+      assert.doesNotThrow(
+        () => new vm.Script(code, { filename: `index.html#script${sIdx}` }),
+        `index.html#script${sIdx} 인라인 스크립트에 JS 문법 오류(SyntaxError)가 없어야 함`
+      );
+    }
+
+    const html01 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-01.html'), 'utf-8');
+    assert.ok(html01.includes('VALID_PID_RE = /^PR-[0-9]{2,4}$/'), '프로토콜 ID 정규식 화이트리스트 검증이 포함되어야 함');
+    assert.ok(html01.includes('CLICK_COOLDOWN_MS') && html01.includes('MAX_TOGGLES_PER_SESSION'), '좋아요 매크로 클릭 쿨다운 및 세션당 토글 제한이 포함되어야 함');
+    assert.ok(html01.includes('onlyOnce: true'), 'Realtime Database 스냅샷 조회에 onlyOnce: true가 적용되어야 함');
+    assert.ok(html01.includes('<aside class="no-print fixed bottom-0'), 'StickyActionBar에 인쇄 시 숨김(.no-print) 클래스가 포함되어야 함');
+
+    const swCode = fs.readFileSync(path.join(PUBLIC_DIR, 'sw.js'), 'utf-8');
+    assert.ok(
+      swCode.includes('ALLOWED_EXTERNAL_HOSTS') && swCode.includes('if (!ALLOWED_EXTERNAL_HOSTS.includes(url.hostname)) return;'),
+      'Service Worker(sw.js)가 허용된 외부 정적 자산(Tailwind/Google Fonts) 외의 외부 API/Firebase 요청을 가로채지 않아야 함'
+    );
+  });
 });
+
 
 

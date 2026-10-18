@@ -11,7 +11,7 @@ export function renderSearchModal(locale                  = 'ko')         {
 
   return `
 <!-- SEARCH MODAL (Stitch Dark Tactical Instant Search) -->
-<div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center pt-10 sm:pt-20 px-3 sm:px-4 bg-black/85 backdrop-blur-md hidden transition-all" role="dialog" aria-modal="true" aria-label="Search Protocols">
+<div id="search-modal" class="fixed inset-0 z-[60] flex items-start justify-center pt-10 sm:pt-20 px-3 sm:px-4 bg-black/85 backdrop-blur-md hidden transition-all" role="dialog" aria-modal="true" aria-label="Search Protocols">
   <style>
     #search-modal-input::-webkit-search-cancel-button,
     #search-modal-input::-webkit-search-decoration {

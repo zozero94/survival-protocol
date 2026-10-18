@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "protocol_stats": {
+      ".read": true,
+      "$protocolId": {
+        "views": {
+          ".write": "newData.isNumber() && (!data.exists() || newData.val() === data.val() + 1)"
+        },
+        "likes": {
+          ".write": "newData.isNumber() && (!data.exists() || newData.val() === data.val() + 1 || (data.val() > 0 && newData.val() === data.val() - 1))"
+        },
+        "$other": {
+          ".write": false
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import type { Protocol } from './types/index.ts';
 import type { SupportedLocale } from './i18n/locales.ts';
 import { CLIENT_LOCALE_DETECTOR_BODY, SUPPORTED_LOCALES } from './i18n/locales.ts';
-import { SITE_META, PWA_PATHS, SEO_CONFIG } from './site.config.ts';
+import { SITE_META, PWA_PATHS, SEO_CONFIG, EXTERNAL_RUNTIME_ASSETS } from './site.config.ts';
 import { SeoService } from './services/seo.service.ts';
 import {
   renderFeedHeader,
@@ -15,6 +15,7 @@ import {
   getPwaRuntimeScript,
   getFeedRuntimeScript,
   getSearchRuntimeScript,
+  getFirebaseRuntimeScript,
 } from './state/index.ts';
 
 /**
@@ -64,6 +65,7 @@ export function renderIndexPage(
   const pwaScript = getPwaRuntimeScript();
   const feedScript = getFeedRuntimeScript();
   const searchScript = getSearchRuntimeScript();
+  const firebaseScript = getFirebaseRuntimeScript();
 
   return `<!DOCTYPE html>
 <html class="dark" lang="ko">
@@ -115,12 +117,12 @@ export function renderIndexPage(
     })();
   </script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="${EXTERNAL_RUNTIME_ASSETS.tailwindCdn}"></script>
   <script src="/assets/fuse.basic.min.js"></script>
   <script src="/assets/search-index.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="${EXTERNAL_RUNTIME_ASSETS.googleFontsCss}" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -160,7 +162,7 @@ export function renderIndexPage(
     ${paginationHtml}
   </main>
 
-  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1 + 7개국어 바인딩) -->
+  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1 + 7개국어 바인딩 + 안전 면책/익명 통계 고지) -->
   <footer class="border-t border-neutral-800 bg-[#0e0e0e] text-neutral-400 py-6 px-4 sm:px-8 font-mono text-xs">
     <div class="max-w-5xl mx-auto flex flex-col gap-2">
       <div class="flex items-center gap-2">
@@ -172,6 +174,9 @@ export function renderIndexPage(
       <p data-i18n="footerDesc" class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
         한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.
       </p>
+      <p data-i18n="footerLegalNotice" class="text-neutral-600 text-[10px] leading-relaxed max-w-3xl pt-1 border-t border-neutral-900">
+        [안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.
+      </p>
     </div>
   </footer>
 
@@ -181,6 +186,7 @@ export function renderIndexPage(
     ${pwaScript}
     ${feedScript}
     ${searchScript}
+    ${firebaseScript}
   </script>
 </body>
 </html>`;

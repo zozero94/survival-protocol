@@ -2,7 +2,12 @@
 import { SeoService } from './seo.service.js';
 
                                      
-                                                                                                        
+         
+                       
+                             
+                         
+                               
+                            
                   
                 
                    
@@ -18,17 +23,19 @@ import { SeoService } from './seo.service.js';
                                              
                                         
                                               
+                                          
     
                             
  
 
 /**
  * [Domain Service]
- * 포스팅 4대 심층 감수 엔진 (PostingReviewService)
+ * 포스팅 5대 심층 감수 엔진 (PostingReviewService)
  * 1. 🚨 야전 안전 & 오남용 방지 심사 (Safety & Red-Team Review)
  * 2. 📏 야전 무도구 계량 현실성 검증 (Field Reproducibility Audit)
  * 3. 🔍 구글 검색엔진(E-E-A-T) & 검색 의도 적합성 검수 (SEO & Search Intent Audit)
  * 4. 🌍 글로벌 생태계 & 다국어 대응 현지화 검수 (Global Eco-Localization Audit)
+ * 5. ⚖️ 법무 리스크 & Google Publisher/AdSense 정책 준수 (Legal & Google Policy Audit)
  */
 export class PostingReviewService {
   // 야전에서 사용 불가능한 현대 정밀 계측기 금지어
@@ -297,7 +304,85 @@ export class PostingReviewService {
   }
 
   /**
-   * 4대 기둥 통합 포스팅 리뷰 실행
+   * 5. ⚖️ 법무 리스크 & Google Publisher/AdSense 정책 준수 검수 (Legal & Google Policy Audit)
+   */
+         static auditLegalGooglePolicy(protocol          )                     {
+    const checks           = [];
+    const warnings           = [];
+    let score = 100;
+
+    const fullText = [
+      protocol.title,
+      protocol.summary,
+      ...protocol.materials.map((m) => `${m.name} ${m.desc}`),
+      ...protocol.steps.map((s) => `${s.title} ${s.description} ${s.actionNote}`),
+      protocol.fatalMistake?.title || '',
+      protocol.fatalMistake?.description || '',
+      protocol.fatalMistake?.consequence || '',
+    ].join(' ');
+
+    // 1. Google Publisher Policy 위험·불법 무기/폭발물 금지어 검사
+    const policyBannedPatterns = [
+      /폭탄\s*제조/g,
+      /사제\s*폭탄/g,
+      /사제\s*총기/g,
+      /화약\s*제조/g,
+      /뇌관\s*제작/g,
+      /다이너마이트/g,
+      /자물쇠\s*따기/g,
+      /무단\s*침입\s*기술/g,
+    ];
+    for (const pattern of policyBannedPatterns) {
+      if (pattern.test(fullText)) {
+        score -= 50;
+        warnings.push(`Google Publisher/AdSense 정책 위반 금지어 감지: ${pattern.source}`);
+      }
+    }
+    if (warnings.length === 0) {
+      checks.push('Google Publisher/AdSense 위험·불법 무기/폭발물 정책 위반 키워드 0건 확인');
+    }
+
+    const materialsText = protocol.materials.map((m) => `${m.name} ${m.desc}`).join(' ');
+
+    // 2. 도시 폐자재(깡통/전선)를 실제 준비물로 사용하는 프로토콜의 경우 유독 코팅/피복 제거 안전 고지 확인
+    if (/깡통|통조림\s*캔/.test(materialsText)) {
+      if (/코팅|아연|태워|유독/.test(fullText)) {
+        checks.push('폐깡통 활용 시 내부 코팅 소각 및 아연도금 유독가스 안전 고지 확인');
+      } else {
+        score -= 20;
+        warnings.push('폐깡통을 다루나 내부 코팅 제거 또는 유독가스 주의 안내가 누락되었습니다.');
+      }
+    }
+    if (/폐전선|전기선/.test(materialsText)) {
+      if (/피복|벗겨|유독/.test(fullText)) {
+        checks.push('폐전선 활용 시 플라스틱 피복 제거 및 유독 연기 방지 고지 확인');
+      } else {
+        score -= 20;
+        warnings.push('폐전선을 다루나 피복 제거 안전 안내가 누락되었습니다.');
+      }
+    }
+
+    // 3. 의료/응급처치(MEDICINE) 카테고리 YMYL 감염·부작용 경고 확인
+    if (protocol.category === 'MEDICINE') {
+      if (/감염|파상풍|소독|씻어|괴사/.test(fullText)) {
+        checks.push('MEDICINE(YMYL) 프로토콜 2차 감염·파상풍 예방 및 위생 경고 구비 확인');
+      } else {
+        score -= 25;
+        warnings.push('MEDICINE 카테고리이나 2차 감염·파상풍 등 YMYL 안전 경고가 부족합니다.');
+      }
+    }
+
+    return {
+      pillar: 'LEGAL_GOOGLE_POLICY',
+      passed: score >= 80 && warnings.length === 0,
+      score: Math.max(0, score),
+      checks,
+      warnings,
+    };
+  }
+
+  /**
+   * 5대 기둥 통합 포스팅 리뷰 실행
    */
          static auditPostingFull(
     masterProtocol          ,
@@ -307,26 +392,30 @@ export class PostingReviewService {
     const fieldReproducibility = this.auditFieldReproducibility(masterProtocol);
     const seoSearchIntent = this.auditSeoSearchIntent(masterProtocol);
     const globalEcoLocalization = this.auditGlobalEcoLocalization(masterProtocol, localizedVariants);
+    const legalGooglePolicy = this.auditLegalGooglePolicy(masterProtocol);
 
     const totalScore = Math.round(
       (safetyRedTeam.score +
         fieldReproducibility.score +
         seoSearchIntent.score +
-        globalEcoLocalization.score) /
-        4
+        globalEcoLocalization.score +
+        legalGooglePolicy.score) /
+        5
     );
 
     const passed =
       safetyRedTeam.passed &&
       fieldReproducibility.passed &&
       seoSearchIntent.passed &&
-      globalEcoLocalization.passed;
+      globalEcoLocalization.passed &&
+      legalGooglePolicy.passed;
 
     const summaryFeedback = [
       ...safetyRedTeam.warnings.map((w) => `[안전/Red-Team] ${w}`),
       ...fieldReproducibility.warnings.map((w) => `[무도구 재현성] ${w}`),
       ...seoSearchIntent.warnings.map((w) => `[SEO/구조화데이터] ${w}`),
       ...globalEcoLocalization.warnings.map((w) => `[글로벌 현지화] ${w}`),
+      ...legalGooglePolicy.warnings.map((w) => `[법무/구글정책] ${w}`),
     ];
 
     return {
@@ -338,6 +427,7 @@ export class PostingReviewService {
         fieldReproducibility,
         seoSearchIntent,
         globalEcoLocalization,
+        legalGooglePolicy,
       },
       summaryFeedback,
     };

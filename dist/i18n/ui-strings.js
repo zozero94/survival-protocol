@@ -53,6 +53,7 @@
                                 
                       
                      
+                            
                       
                       
                      
@@ -66,6 +67,10 @@
                              
                        
                                    
+                       
+                      
+                          
+                     
                        
  
 
@@ -124,6 +129,8 @@ export const UI_STRINGS                                     = {
     footerTitle: '누구나 위급할 때 바로 따라 할 수 있는 실전 생존 가이드.',
     footerDesc:
       '한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.',
+    footerLegalNotice:
+      '[안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.',
     sort_latest: '최신순',
     sort_oldest: '오래된순',
     uploadDate: '등록일',
@@ -138,6 +145,10 @@ export const UI_STRINGS                                     = {
     searchPrompt: '필요한 생존 기술, 도구, 또는 자음 초성(ㅅㅅ, ㅂㅇ, ㅊㄴㅁ)을 입력하세요.',
     crosslinkMaterialsPrefix: '준비물: ',
     crosslinkCta: '교범 보기 ↗',
+    viewsPrefix: '열람',
+    confirmSurvival: '생존 확인',
+    toastLiked: '생존 기술 유용성을 확인했습니다.',
+    toastUnliked: '생존 확인이 취소되었습니다.',
   },
   en: {
     brandArchive: 'TACTICAL SURVIVAL ARCHIVE',
@@ -193,6 +204,8 @@ export const UI_STRINGS                                     = {
     footerTitle: 'FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.',
     footerDesc:
       'Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.',
+    footerLegalNotice:
+      '[Safety Disclaimer & Privacy Notice] This archive is provided for emergency preparedness and educational purposes. Observe fire, toxicity, and local legal safety regulations during practice. Only anonymized telemetry (GA4/Firebase) and local storage are used without collecting personal data.',
     sort_latest: 'Latest',
     sort_oldest: 'Oldest',
     uploadDate: 'Date',
@@ -207,6 +220,10 @@ export const UI_STRINGS                                     = {
     searchPrompt: 'Search survival skills, tools, materials, or keywords (e.g. water, fire, shelter)...',
     crosslinkMaterialsPrefix: 'Materials: ',
     crosslinkCta: 'OPEN ↗',
+    viewsPrefix: 'VIEWS',
+    confirmSurvival: 'SURVIVAL CONFIRMED',
+    toastLiked: 'Survival protocol validated.',
+    toastUnliked: 'Validation withdrawn.',
   },
   ja: {
     brandArchive: '生存戦術教本アーカイブ',
@@ -262,6 +279,8 @@ export const UI_STRINGS                                     = {
     footerTitle: '人類文明再建のための無料オープンソース生存記録書。',
     footerDesc:
       'このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。',
+    footerLegalNotice:
+      '[安全免責およびプライバシー通知] 本教本は緊急災害対策および教育目的で作成されており、平時の実習では火災・中毒・怪我の安全規則および現地法令を遵守してください。個人を特定しない匿名統計(GA4/Firebase)とローカルストレージのみを使用します。',
     sort_latest: '最新順',
     sort_oldest: '古い順',
     uploadDate: '登録日',
@@ -276,6 +295,10 @@ export const UI_STRINGS                                     = {
     searchPrompt: '必要な生存技術、道具、材料、キーワード（ろ過、火起こし等）を入力してください。',
     crosslinkMaterialsPrefix: '準備物: ',
     crosslinkCta: '詳細 ↗',
+    viewsPrefix: '閲覧',
+    confirmSurvival: '生存確認',
+    toastLiked: '生存技術の有用性を確認しました。',
+    toastUnliked: '生存確認を取り消しました。',
   },
   es: {
     brandArchive: 'ARCHIVO DE SUPERVIVENCIA TÁCTICA',
@@ -331,6 +354,8 @@ export const UI_STRINGS                                     = {
     footerTitle: 'ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.',
     footerDesc:
       'Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.',
+    footerLegalNotice:
+      '[Aviso Legal y de Privacidad] Este archivo tiene fines educativos y de preparación ante emergencias. Respete las normas de seguridad y leyes locales. Solo se utilizan estadísticas anónimas (GA4/Firebase) y almacenamiento local sin recopilar datos personales.',
     sort_latest: 'Más recientes',
     sort_oldest: 'Más antiguos',
     uploadDate: 'Fecha',
@@ -345,6 +370,10 @@ export const UI_STRINGS                                     = {
     searchPrompt: 'Busque habilidades de supervivencia, herramientas o palabras clave (agua, fuego, refugio)...',
     crosslinkMaterialsPrefix: 'Materiales: ',
     crosslinkCta: 'ABRIR ↗',
+    viewsPrefix: 'VISTAS',
+    confirmSurvival: 'CONFIRMAR SUPERVIVENCIA',
+    toastLiked: 'Protocolo de supervivencia validado.',
+    toastUnliked: 'Validación retirada.',
   },
   de: {
     brandArchive: 'TAKTIK-ÜBERLEBENSARCHIV',
@@ -400,6 +429,8 @@ export const UI_STRINGS                                     = {
     footerTitle: 'KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.',
     footerDesc:
       'Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.',
+    footerLegalNotice:
+      '[Sicherheitshinweis & Datenschutz] Dieses Archiv dient der Katastrophenvorsorge und Bildungszwecken. Beachten Sie Sicherheitsvorschriften und lokale Gesetze. Es werden nur anonyme Statistiken (GA4/Firebase) und lokaler Speicher ohne personenbezogene Daten verwendet.',
     sort_latest: 'Neueste',
     sort_oldest: 'Älteste',
     uploadDate: 'Datum',
@@ -414,6 +445,10 @@ export const UI_STRINGS                                     = {
     searchPrompt: 'Überlebensfähigkeiten, Werkzeuge oder Stichwörter eingeben (z. B. Wasser, Feuer, Schutz)...',
     crosslinkMaterialsPrefix: 'Material: ',
     crosslinkCta: 'ÖFFNEN ↗',
+    viewsPrefix: 'AUFRUFE',
+    confirmSurvival: 'ÜBERLEBEN BESTÄTIGT',
+    toastLiked: 'Überlebensprotokoll bestätigt.',
+    toastUnliked: 'Bestätigung zurückgezogen.',
   },
   pt: {
     brandArchive: 'ARQUIVO DE SOBREVIVÊNCIA TÁCTICA',
@@ -469,6 +504,8 @@ export const UI_STRINGS                                     = {
     footerTitle: 'ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.',
     footerDesc:
       'Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.',
+    footerLegalNotice:
+      '[Aviso de Segurança e Privacidade] Este arquivo destina-se à preparação para emergências e fins educativos. Respeite as normas de segurança e leis locais. Apenas estatísticas anônimas (GA4/Firebase) e armazenamento local são usados sem coleta de dados pessoais.',
     sort_latest: 'Mais recentes',
     sort_oldest: 'Mais antigos',
     uploadDate: 'Data',
@@ -483,6 +520,10 @@ export const UI_STRINGS                                     = {
     searchPrompt: 'Pesquise técnicas de sobrevivência, ferramentas ou palavras-chave (água, fogo, abrigo)...',
     crosslinkMaterialsPrefix: 'Materiais: ',
     crosslinkCta: 'ABRIR ↗',
+    viewsPrefix: 'VISUALIZAÇÕES',
+    confirmSurvival: 'CONFIRMAR SOBREVIVÊNCIA',
+    toastLiked: 'Protocolo de sobrevivência validado.',
+    toastUnliked: 'Validação retirada.',
   },
   'zh-TW': {
     brandArchive: '生存戰術手冊檔案庫',
@@ -538,6 +579,8 @@ export const UI_STRINGS                                     = {
     footerTitle: '為重建人類文明而設的免費開源生存檔案庫。',
     footerDesc:
       '本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。',
+    footerLegalNotice:
+      '[安全免責與隱私聲明] 本手冊僅供災難應變與教育目的使用，平時演練請遵守用火、防毒、安全規範與當地法規。本網站僅使用去識別化匿名統計(GA4/Firebase)與本地儲存空間，不收集任何個人資料。',
     sort_latest: '最新發布',
     sort_oldest: '最早發布',
     uploadDate: '發布日期',
@@ -552,5 +595,9 @@ export const UI_STRINGS                                     = {
     searchPrompt: '請輸入所需的生存技能、工具、材料或關鍵字（如過濾、生火、庇護所）...',
     crosslinkMaterialsPrefix: '準備材料: ',
     crosslinkCta: '查看 ↗',
+    viewsPrefix: '瀏覽',
+    confirmSurvival: '確認生存',
+    toastLiked: '已確認生存技術實用性。',
+    toastUnliked: '已取消確認。',
   },
 };

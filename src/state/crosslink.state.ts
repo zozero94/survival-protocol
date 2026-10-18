@@ -123,7 +123,8 @@ export function getCrosslinkRuntimeScript(): string {
         var labels = getCrosslinkLabels(lang);
 
         if (dom.cardLink) {
-          var targetHref = doc.url || (lang === 'ko' ? '/protocol-' + num + '.html' : '/protocol-' + num + '.html?lang=' + encodeURIComponent(lang));
+          var baseHref = (doc.url && /^(\\/|https?:\\/\\/)/i.test(doc.url)) ? doc.url.split('?')[0] : ('/protocol-' + num + '.html');
+          var targetHref = (lang && lang !== 'ko') ? (baseHref + '?lang=' + encodeURIComponent(lang)) : baseHref;
           dom.cardLink.setAttribute('href', targetHref);
         }
         if (dom.catEl) dom.catEl.textContent = doc.categoryName || ('[' + doc.category + ']');

@@ -57,6 +57,10 @@ export function renderHeroSection(protocol          )         {
         <span id="proto-hero-category" data-proto="category">${protocol.category}</span>
       </span>
       ${dateHtml}
+      <span class="border border-[#333] text-[#999] px-1.5 py-0.5 text-[11px] font-mono flex items-center gap-1 rounded-none">
+        <svg class="w-3 h-3 text-[#777] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+        <span data-i18n="viewsPrefix">열람</span>: <span id="proto-views-count" class="text-white font-bold tabular-nums min-w-[20px] inline-block text-right">-</span>
+      </span>
     </div>
     ${updatedHtml}
   </div>

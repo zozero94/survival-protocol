@@ -13,7 +13,7 @@ import {
   renderSearchModal,
   renderCrosslinkPopover,
 } from './components/index.ts';
-import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG } from './site.config.ts';
+import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG, EXTERNAL_RUNTIME_ASSETS } from './site.config.ts';
 import { SeoService } from './services/seo.service.ts';
 import { SearchService, type SearchDocument } from './services/search.service.ts';
 import {
@@ -23,6 +23,7 @@ import {
   getPwaRuntimeScript,
   getSearchRuntimeScript,
   getCrosslinkRuntimeScript,
+  getFirebaseRuntimeScript,
 } from './state/index.ts';
 
 /**
@@ -93,6 +94,7 @@ export function renderCanonicalProtocolPage(
   const pwaScript = getPwaRuntimeScript();
   const searchScript = getSearchRuntimeScript();
   const crosslinkScript = getCrosslinkRuntimeScript();
+  const firebaseScript = getFirebaseRuntimeScript();
 
   return `<!DOCTYPE html>
 <html class="dark" lang="${defaultLocale}">
@@ -147,12 +149,12 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     })();
   </script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="${EXTERNAL_RUNTIME_ASSETS.tailwindCdn}"></script>
   <script src="/assets/fuse.basic.min.js"></script>
   <script src="/assets/search-index.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="${EXTERNAL_RUNTIME_ASSETS.googleFontsCss}" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -203,11 +205,12 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
 
   ${actionHtml}
 
-  <div class="fixed top-16 right-4 z-50 bg-white text-black font-mono text-xs font-bold px-4 py-2 border-2 border-black hidden shadow-lg" id="toast"></div>
+  <div class="fixed top-16 right-4 z-50 bg-white text-black font-mono text-xs font-bold px-4 py-2 border-2 border-black hidden shadow-lg" id="toast" role="status" aria-live="polite"></div>
 
   <script>
     // 1. 다국어 데이터셋 인메모리 임베딩 (Single Source of Truth)
     window.__PROTOCOLS__ = ${JSON.stringify(protocolsMap)};
+    window.__PROTOCOL_ID__ = '${master.protocolId}';
 
     // 2. State Layer 직렬화 런타임 스크립트 실행
     ${themeScript}
@@ -216,6 +219,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     ${pwaScript}
     ${searchScript}
     ${crosslinkScript}
+    ${firebaseScript}
 
     // 3. 선언적 이벤트 위임 (Event Delegation)
     document.addEventListener('click', function(e) {
@@ -270,9 +274,10 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     function showToast(msg) {
       var toast = document.getElementById('toast');
       if (!toast) return;
-      toast.innerText = msg;
+      toast.textContent = msg;
       toast.classList.remove('hidden');
-      setTimeout(function() { toast.classList.add('hidden'); }, 2500);
+      if (window.__toastTimer__) clearTimeout(window.__toastTimer__);
+      window.__toastTimer__ = setTimeout(function() { toast.classList.add('hidden'); }, 2500);
     }
 
     function getActiveUiStrings() {

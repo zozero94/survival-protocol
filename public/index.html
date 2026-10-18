@@ -74,7 +74,7 @@
   <script src="/assets/search-index.js"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -224,7 +224,7 @@
   </div>
 </section>
   <!-- SEARCH MODAL (Stitch Dark Tactical Instant Search) -->
-<div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center pt-10 sm:pt-20 px-3 sm:px-4 bg-black/85 backdrop-blur-md hidden transition-all" role="dialog" aria-modal="true" aria-label="Search Protocols">
+<div id="search-modal" class="fixed inset-0 z-[60] flex items-start justify-center pt-10 sm:pt-20 px-3 sm:px-4 bg-black/85 backdrop-blur-md hidden transition-all" role="dialog" aria-modal="true" aria-label="Search Protocols">
   <style>
     #search-modal-input::-webkit-search-cancel-button,
     #search-modal-input::-webkit-search-decoration {
@@ -330,6 +330,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_FIRE" class="text-neutral-400 font-bold">[불 피우기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-12" class="text-neutral-500 font-mono text-[11px]">2026.10.17</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-12" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-12" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -341,7 +348,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-12" data-card-title="PR-12" class="block focus:outline-none">
+        <a href="/protocol-12" data-card-title="PR-12" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           버려진 빈 깡통 2개와 폐전선·잔가지로 연기 없이 물을 끓이는 이중 연소 우드 가스 스토브 (폐자재 화덕)
         </a>
       </h2>
@@ -356,7 +363,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-12" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[버려진 큰 철제 깡통 1개와 그 안에 들어가는 작은 철제 통조림 깡통 1개]</span><span data-card-mat="PR-12" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[안 쓰는 굵은 폐전선50cm]</span><span data-card-mat="PR-12" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[깡통에 구멍을 뚫을 뾰족한 고철 못과 망치돌]</span>
     </div>
-    <a href="/protocol-12" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-12" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -367,6 +374,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_FOOD" class="text-neutral-400 font-bold">[식량 구하기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-11" class="text-neutral-500 font-mono text-[11px]">2026.10.16</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-11" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-11" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -378,7 +392,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-11" data-card-title="PR-11" class="block focus:outline-none">
+        <a href="/protocol-11" data-card-title="PR-11" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           버드나무 가지를 엮어 들어간 물고기가 빠져나오지 못하는 원시 깔때기 통발 (원시 통발 어로법)
         </a>
       </h2>
@@ -393,7 +407,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-11" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[휘어지는 버드나무 또는 개암나무 생가지 40~50개]</span><span data-card-mat="PR-11" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[원형 테두리 뼈대용 굵은 덩굴 또는 버드나무 가지 4개]</span><span data-card-mat="PR-11" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[물에 강한 야생 칡덩굴 속껍질 끈]</span>
     </div>
-    <a href="/protocol-11" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-11" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -404,6 +418,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_MEDICINE" class="text-neutral-400 font-bold">[응급 처치]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-10" class="text-neutral-500 font-mono text-[11px]">2026.10.16</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-10" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-10" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -415,7 +436,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-10" data-card-title="PR-10" class="block focus:outline-none">
+        <a href="/protocol-10" data-card-title="PR-10" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           소나무 송진을 녹여 굳히는 상처 소독 연고 및 만능 방수 접착제 (원시 송진 정제법)
         </a>
       </h2>
@@ -430,7 +451,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-10" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[노송상처 부위에서 채취한 마른 생송진 덩어리 100g]</span><span data-card-mat="PR-10" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[송진을 녹일 오목한 돌 접시 또는 조개껍데기]</span><span data-card-mat="PR-10" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[나뭇가지 끝을 빗처럼 엮은 거름망과 덜어낼 조개껍데기]</span>
     </div>
-    <a href="/protocol-10" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-10" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -441,6 +462,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_FIRE" class="text-neutral-400 font-bold">[불 피우기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-09" class="text-neutral-500 font-mono text-[11px]">2026.10.15</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-09" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-09" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -452,7 +480,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-09" data-card-title="PR-09" class="block focus:outline-none">
+        <a href="/protocol-09" data-card-title="PR-09" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           흙구덩이 속에서 공기를 막아 나무를 단단한 숯으로 굽는 법 (원시 숯가마 제작법)
         </a>
       </h2>
@@ -467,7 +495,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-09" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[손목 굵기의 마른 참나무 토막 15~20개]</span><span data-card-mat="PR-09" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[깊이 50cm, 지름 60cm 원뿔형 흙구덩이]</span><span data-card-mat="PR-09" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[구덩이를 덮을 굵은 나뭇가지 틀과 넓은 잎]</span>
     </div>
-    <a href="/protocol-09" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-09" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -478,6 +506,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_FOOD" class="text-neutral-400 font-bold">[식량 구하기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-08" class="text-neutral-500 font-mono text-[11px]">2026.10.15</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-08" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-08" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -489,7 +524,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-08" data-card-title="PR-08" class="block focus:outline-none">
+        <a href="/protocol-08" data-card-title="PR-08" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           나뭇가지 3개와 바위로 짐승 잡는 법 (숫자 4 모양 돌 덫)
         </a>
       </h2>
@@ -504,7 +539,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-08" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[손가락 굵기의 단단한 마른 나뭇가지 3개]</span><span data-card-mat="PR-08" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[넓적하고 무거운 바위 1개]</span><span data-card-mat="PR-08" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[홈을 파낼 날카로운 돌날 1개]</span>
     </div>
-    <a href="/protocol-08" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-08" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -515,6 +550,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_SHELTER" class="text-neutral-400 font-bold">[움막 짓기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-06" class="text-neutral-500 font-mono text-[11px]">2026.10.14</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-06" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-06" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -526,7 +568,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-06" data-card-title="PR-06" class="block focus:outline-none">
+        <a href="/protocol-06" data-card-title="PR-06" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           진흙과 돌을 쌓아 비바람을 막고 열기를 가두는 원시 화덕 만드는 법
         </a>
       </h2>
@@ -541,7 +583,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-06" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[점토질 붉은 찰흙 2바가지]</span><span data-card-mat="PR-06" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[굵은 강모래 1바가지]</span><span data-card-mat="PR-06" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[손가락 길이로 자른 마른 풀잎 또는 짚 1바가지]</span>
     </div>
-    <a href="/protocol-06" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-06" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -552,6 +594,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_TOOLS" class="text-neutral-400 font-bold">[도구 만들기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-05" class="text-neutral-500 font-mono text-[11px]">2026.10.13</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-05" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-05" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수 생존]</span>
   </div>
@@ -563,7 +612,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-05" data-card-title="PR-05" class="block focus:outline-none">
+        <a href="/protocol-05" data-card-title="PR-05" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           나무껍질과 칡덩굴을 꼬아 끊어지지 않는 야생 밧줄 만드는 법
         </a>
       </h2>
@@ -578,7 +627,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-05" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[살아있는 칡덩굴 또는 참피나무·버드나무·쐐기풀 줄기]</span><span data-card-mat="PR-05" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[겉껍질을 긁어낼 날카로운 돌조각 1개]</span><span data-card-mat="PR-05" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[섬유를 두드릴 평평한 바닥 돌과 주먹만 한 둥근 돌]</span>
     </div>
-    <a href="/protocol-05" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-05" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -589,6 +638,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_TOOLS" class="text-neutral-400 font-bold">[도구 만들기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-04" class="text-neutral-500 font-mono text-[11px]">2026.10.10</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-04" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-04" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_HIGH" class="bg-amber-950/80 border border-amber-600 text-amber-400 px-2 py-0.5 uppercase tracking-widest font-bold">[중요]</span>
   </div>
@@ -600,7 +656,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-04" data-card-title="PR-04" class="block focus:outline-none">
+        <a href="/protocol-04" data-card-title="PR-04" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           깬 돌과 칡덩굴로 나무 베는 돌도끼 만드는 법
         </a>
       </h2>
@@ -615,7 +671,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-04" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[단단한 강돌 1개와 둥근 망치돌 1개]</span><span data-card-mat="PR-04" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[팔뚝 길이의 단단한 나무 자루]</span><span data-card-mat="PR-04" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[물에 적신 칡덩굴 속껍질과 소나무 송진]</span>
     </div>
-    <a href="/protocol-04" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-04" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -626,6 +682,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_SHELTER" class="text-neutral-400 font-bold">[움막 짓기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-03" class="text-neutral-500 font-mono text-[11px]">2026.10.10</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-03" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-03" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수 생존]</span>
   </div>
@@ -637,7 +700,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-03" data-card-title="PR-03" class="block focus:outline-none">
+        <a href="/protocol-03" data-card-title="PR-03" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           불 없이 체온을 지키는 낙엽 움막 만드는 법 (데브리 헛)
         </a>
       </h2>
@@ -652,7 +715,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-03" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[중심 기둥 나무]</span><span data-card-mat="PR-03" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[Y자 기둥 나무 2개와 양옆에 기댈 나뭇가지들]</span><span data-card-mat="PR-03" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[바싹 마른 낙엽과 마른 풀]</span>
     </div>
-    <a href="/protocol-03" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-03" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -663,6 +726,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_FIRE" class="text-neutral-400 font-bold">[불 피우기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-02" class="text-neutral-500 font-mono text-[11px]">2026.10.10</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-02" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-02" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수 생존]</span>
   </div>
@@ -674,7 +744,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-02" data-card-title="PR-02" class="block focus:outline-none">
+        <a href="/protocol-02" data-card-title="PR-02" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           나뭇가지 마찰로 불 피우는 법 (활비비 불피우기)
         </a>
       </h2>
@@ -689,7 +759,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-02" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[활대와 질긴 천연 끈]</span><span data-card-mat="PR-02" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[가운데 회전 막대]</span><span data-card-mat="PR-02" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[바닥 받침 나무와 마른 풀 뭉치]</span>
     </div>
-    <a href="/protocol-02" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-02" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -700,6 +770,13 @@
     <div class="flex items-center gap-2">
       <span data-i18n="cat_WATER" class="text-neutral-400 font-bold">[물 구하기]</span>
       <span class="text-neutral-600">/</span><span data-card-date="PR-01" class="text-neutral-500 font-mono text-[11px]">2026.10.10</span>
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="PR-01" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="PR-01" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     <span data-i18n="threat_CRITICAL" class="bg-red-950/80 border border-red-600 text-red-400 px-2 py-0.5 uppercase tracking-widest font-bold">[필수 생존]</span>
   </div>
@@ -711,7 +788,7 @@
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="/protocol-01" data-card-title="PR-01" class="block focus:outline-none">
+        <a href="/protocol-01" data-card-title="PR-01" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)
         </a>
       </h2>
@@ -726,7 +803,7 @@
     <div class="flex items-center gap-1.5 flex-wrap">
       <span data-card-mat="PR-01" data-mat-idx="0" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[참나무 숯]</span><span data-card-mat="PR-01" data-mat-idx="1" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[세척한 고운 강모래]</span><span data-card-mat="PR-01" data-mat-idx="2" class="font-mono text-xs text-neutral-300 bg-neutral-900 border border-neutral-800 px-1.5 py-0.5">[작은 둥근 자갈]</span>
     </div>
-    <a href="/protocol-01" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="/protocol-01" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
@@ -791,7 +868,7 @@
 </section>
   </main>
 
-  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1 + 7개국어 바인딩) -->
+  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1 + 7개국어 바인딩 + 안전 면책/익명 통계 고지) -->
   <footer class="border-t border-neutral-800 bg-[#0e0e0e] text-neutral-400 py-6 px-4 sm:px-8 font-mono text-xs">
     <div class="max-w-5xl mx-auto flex flex-col gap-2">
       <div class="flex items-center gap-2">
@@ -802,6 +879,9 @@
       </div>
       <p data-i18n="footerDesc" class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
         한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.
+      </p>
+      <p data-i18n="footerLegalNotice" class="text-neutral-600 text-[10px] leading-relaxed max-w-3xl pt-1 border-t border-neutral-900">
+        [안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.
       </p>
     </div>
   </footer>
@@ -866,7 +946,7 @@
           .catch(function () { root.setAttribute('data-offline-ready', 'false'); });
       });
     })();
-    window.__UI_STRINGS__ = {"ko":{"brandArchive":"생존 기술 가이드","brandShort":"[생존 교범]","offlineDb":"오프라인 저장소","offlineBanner":"⚡ [인터넷 연결 끊김] 저장된 오프라인 화면으로 보는 중입니다","backToIndex":"← 전체 목록","allProtocols":"전체 목록","readingTime":"실전 현장 가이드","timeRequired":"걸리는 시간","successRate":"성공 확률","difficulty":"난이도","outputPerHour":"결과물","outcomeTitle":"최종 완성 형태","outcomeBadge":"실전 완성 미리보기","outcomeStandard":"완성 검수 기준","checklistTitle":"준비할 재료 체크리스트","checklistDesc":"주변 자연물이나 버려진 도시 잔해에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.","itemsSecured":"준비 완료","fieldTested":"[실전 검증 완료]","procedureTitle":"// 순서대로 따라 하기","stepsFlow":"단계 순서","fatalTitle":"주의 // 절대 하면 안 되는 실수","mustReadBeforeDrink":"시작 전 필독","nonNegotiableRule":"","saveOffline":"오프라인 저장 (A4/PDF)","share":"공유","nextProtocol":"다음:","figurePrefix":"그림","toastCopied":"링크가 복사되었습니다.","toastOfflineSaved":"문서를 인쇄/저장합니다 (A4/PDF).","toastThemeSwitched":"테마가 변경되었습니다.","feedHeaderTitle":"[생존 교범 // SURVIVAL PROTOCOL]","feedCacheActive":"오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)","feedHeroHeadline":"포스트 아포칼립스에서 살아남기","feedHeroSubtext":"문명이 멈춘 세상, 주변의 나무·돌·흙 같은 자연물부터 도시에 버려진 빈 깡통·안 쓰는 전기선까지 활용해 물과 불, 도구와 거처를 만드는 실전 생존 가이드입니다. 한 번 열어본 글은 기기에 자동 저장되어 인터넷이 끊긴 곳에서도 그대로 볼 수 있습니다.","cat_ALL":"[전체]","cat_WATER":"[물 구하기]","cat_FIRE":"[불 피우기]","cat_SHELTER":"[움막 짓기]","cat_FOOD":"[식량 구하기]","cat_TOOLS":"[도구 만들기]","cat_MEDICINE":"[응급 처치]","threat_CRITICAL":"[필수 생존]","threat_HIGH":"[중요]","threat_MODERATE":"[기초]","threat_LOW":"[기초]","readProtocolBtn":"[자세히 보기 →]","paginationRecordPrefix":"글","paginationTotalPrefix":"/ 총","paginationTotalSuffix":"개","footerTitle":"누구나 위급할 때 바로 따라 할 수 있는 실전 생존 가이드.","footerDesc":"한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.","sort_latest":"최신순","sort_oldest":"오래된순","uploadDate":"등록일","createdPrefix":"등록","updatedPrefix":"최종 수정","searchBtn":"[검색]","searchPlaceholder":"생존 기술, 재료, 단계 검색... (초성 검색 가능: ㅅㅅ, ㅂㅇ)","searchNoResults":"일치하는 생존 프로토콜이 없습니다","searchShortcutHint":"ESC 닫기 | ↑↓ 탐색 | Enter 이동","searchBadge":"100% 오프라인 인메모리 검색","searchResultsCount":"개 발견","searchPrompt":"필요한 생존 기술, 도구, 또는 자음 초성(ㅅㅅ, ㅂㅇ, ㅊㄴㅁ)을 입력하세요.","crosslinkMaterialsPrefix":"준비물: ","crosslinkCta":"교범 보기 ↗"},"en":{"brandArchive":"TACTICAL SURVIVAL ARCHIVE","brandShort":"[SURVIVAL PROTOCOL]","offlineDb":"OFFLINE DB","offlineBanner":"⚡ [NETWORK DISCONNECTED] Operating on Local Offline Tactical Cache","backToIndex":"← All Protocols","allProtocols":"Protocol Index","readingTime":"Read Time: 30 sec","timeRequired":"Time Required","successRate":"Survival Rate","difficulty":"Skill Level","outputPerHour":"Output / Hour","outcomeTitle":"Target Outcome","outcomeBadge":"Field Result Preview","outcomeStandard":"Field Inspection Standard","checklistTitle":"Essential Materials Checklist (Gather Immediately)","checklistDesc":"Field-foraged natural resources or urban salvage. Tap each item to record your collection status.","itemsSecured":"Secured","fieldTested":"[FIELD VERIFIED]","procedureTitle":"// EXECUTION PROCEDURE (FIELD MANUAL)","stepsFlow":"Steps Flow","fatalTitle":"HAZARD // FATAL MISTAKE WARNING","mustReadBeforeDrink":"MUST READ BEFORE EXECUTION","nonNegotiableRule":"[NON-NEGOTIABLE SURVIVAL RULE]","saveOffline":"Save Offline (A4/PDF)","share":"Share","nextProtocol":"Next:","figurePrefix":"FIG","toastCopied":"Protocol link copied to clipboard.","toastOfflineSaved":"Downloading offline manual (A4/PDF).","toastThemeSwitched":"Theme toggled successfully.","feedHeaderTitle":"[SURVIVAL PROTOCOL // TACTICAL ARCHIVE]","feedCacheActive":"Local Offline Cache Active (100% Operable Without Internet)","feedHeroHeadline":"SURVIVING THE POST-APOCALYPSE","feedHeroSubtext":"A field-verified survival manual for securing water, fire, tools, and shelter using raw natural materials and abandoned urban salvage (tin cans, scrap wire, etc.) after civilization collapse. Permanently cached for 100% offline operation.","cat_ALL":"[ALL]","cat_WATER":"[WATER]","cat_FIRE":"[FIRE]","cat_SHELTER":"[SHELTER]","cat_FOOD":"[FOOD]","cat_TOOLS":"[TOOLS]","cat_MEDICINE":"[MEDICINE]","threat_CRITICAL":"[CRITICAL]","threat_HIGH":"[ESSENTIAL]","threat_MODERATE":"[BASIC SKILL]","threat_LOW":"[BASIC SKILL]","readProtocolBtn":"[OPEN MANUAL →]","paginationRecordPrefix":"RECORDS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","footerTitle":"FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.","footerDesc":"Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.","sort_latest":"Latest","sort_oldest":"Oldest","uploadDate":"Date","createdPrefix":"Created","updatedPrefix":"Updated","searchBtn":"[SEARCH]","searchPlaceholder":"Search protocols, materials, steps... (e.g. water, fire, trap)","searchNoResults":"No matching survival protocols found","searchShortcutHint":"ESC Close | ↑↓ Navigate | Enter Open","searchBadge":"100% OFFLINE IN-MEMORY SEARCH","searchResultsCount":"found","searchPrompt":"Search survival skills, tools, materials, or keywords (e.g. water, fire, shelter)...","crosslinkMaterialsPrefix":"Materials: ","crosslinkCta":"OPEN ↗"},"ja":{"brandArchive":"生存戦術教本アーカイブ","brandShort":"[生存教本]","offlineDb":"オフラインDB","offlineBanner":"⚡ [通信途絶検知] 外部ネットワーク切断 // ローカルオフラインキャッシュ教本で稼働中","backToIndex":"← 全教本リスト","allProtocols":"教本インデックス","readingTime":"閲覧所要時間: 30秒","timeRequired":"所要時間","successRate":"生存率/成功率","difficulty":"技術難易度","outputPerHour":"時間あたり生産量","outcomeTitle":"最終完成形","outcomeBadge":"実践完成プレビュー","outcomeStandard":"完成検収基準","checklistTitle":"必須確保物資チェックリスト (直ちに収集せよ)","checklistDesc":"野戦で確保可能な天然代替資材です。準備できた項目をタップして収集状況を記録してください。","itemsSecured":"確保完了","fieldTested":"[実戦検証完了]","procedureTitle":"// 実行手順標準 (PROCEDURE)","stepsFlow":"ステップ進行","fatalTitle":"危険 // 致命的な過誤警告","mustReadBeforeDrink":"実行前必読","nonNegotiableRule":"[妥協不可の絶対規則]","saveOffline":"オフライン保存 (A4/PDF)","share":"共有","nextProtocol":"次:","figurePrefix":"図","toastCopied":"プロトコルリンクがクリップボードにコピーされました。","toastOfflineSaved":"オフライン教本がダウンロードされます (A4/PDF)。","toastThemeSwitched":"テーマが切り替わりました。","feedHeaderTitle":"[生存教本 // SURVIVAL PROTOCOL]","feedCacheActive":"ローカルキャッシュ有効 (通信途絶時もオフライン閲覧可能)","feedHeroHeadline":"ポスト・アポカリプスで生き残る","feedHeroSubtext":"文明崩壊後の世界で、自然物や都市に放置された空き缶・廃電線などを活用して水、火、道具、シェルターを自作する実践サバイバル記録書。一度閲覧した教本はブラウザに永久保存され、通信途絶下でも100%稼働します。","cat_ALL":"[すべて]","cat_WATER":"[飲料水確保]","cat_FIRE":"[火起こし]","cat_SHELTER":"[シェルター]","cat_FOOD":"[食料採集]","cat_TOOLS":"[原始道具]","cat_MEDICINE":"[野戦医薬]","threat_CRITICAL":"[致命的]","threat_HIGH":"[必須]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[教本を閲覧 →]","paginationRecordPrefix":"記録","paginationTotalPrefix":"/ 全","paginationTotalSuffix":"件","footerTitle":"人類文明再建のための無料オープンソース生存記録書。","footerDesc":"このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。","sort_latest":"最新順","sort_oldest":"古い順","uploadDate":"登録日","createdPrefix":"登録","updatedPrefix":"最終更新","searchBtn":"[検索]","searchPlaceholder":"生存技術、資材、手順を検索... (例: ろ過, 火起こし, 罠)","searchNoResults":"一致する生存教本が見つかりません","searchShortcutHint":"ESC 閉じる | ↑↓ 移動 | Enter 開く","searchBadge":"100% オフラインインメモリ検索","searchResultsCount":"件発見","searchPrompt":"必要な生存技術、道具、材料、キーワード（ろ過、火起こし等）を入力してください。","crosslinkMaterialsPrefix":"準備物: ","crosslinkCta":"詳細 ↗"},"es":{"brandArchive":"ARCHIVO DE SUPERVIVENCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD DESCONECTADA","offlineBanner":"⚡ [RED DESCONECTADA] Operando con Caché Táctico Local Sin Conexión","backToIndex":"← Todos los Protocolos","allProtocols":"Índice General","readingTime":"Lectura: 30 seg","timeRequired":"Tiempo Requerido","successRate":"Tasa de Éxito","difficulty":"Dificultad","outputPerHour":"Producción / Hora","outcomeTitle":"Resultado Final del Objetivo","outcomeBadge":"Vista Previa del Resultado","outcomeStandard":"Criterio de Inspección","checklistTitle":"Lista de Materiales Esenciales (Recoger de Inmediato)","checklistDesc":"Materiales naturales o chatarra urbana recolectables en campo. Toque cada elemento para registrar su estado.","itemsSecured":"Asegurados","fieldTested":"[PROBADO EN CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EJECUCIÓN (PROCEDURE)","stepsFlow":"Flujo de Pasos","fatalTitle":"PELIGRO // ADVERTENCIA DE ERROR FATAL","mustReadBeforeDrink":"LEER ANTES DE EJECUTAR","nonNegotiableRule":"[REGLA DE SUPERVIVENCIA NO NEGOCIABLE]","saveOffline":"Guardar Offline (PDF)","share":"Compartir","nextProtocol":"Siguiente:","figurePrefix":"FIG","toastCopied":"Enlace copiado al portapapeles.","toastOfflineSaved":"Descargando manual offline (PDF).","toastThemeSwitched":"Tema cambiado.","feedHeaderTitle":"[PROTOCOLO DE SUPERVIVENCIA // ARCHIVO TÁCTICO]","feedCacheActive":"Caché Local Activo (100% Operativo Sin Conexión a Internet)","feedHeroHeadline":"SOBREVIVIR AL POSTAPOCALIPSIS","feedHeroSubtext":"Manual táctico de supervivencia para asegurar agua, fuego, herramientas y refugio usando recursos naturales y objetos urbanos abandonados (latas vacías, cables, etc.) tras el colapso. Funciona 100% sin red.","cat_ALL":"[TODOS]","cat_WATER":"[AGUA]","cat_FIRE":"[FUEGO]","cat_SHELTER":"[REFUGIO]","cat_FOOD":"[ALIMENTO]","cat_TOOLS":"[HERRAMIENTAS]","cat_MEDICINE":"[MEDICINA]","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","footerTitle":"ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.","footerDesc":"Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.","sort_latest":"Más recientes","sort_oldest":"Más antiguos","uploadDate":"Fecha","createdPrefix":"Publicado","updatedPrefix":"Actualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Buscar protocolos, materiales, pasos... (ej. agua, fuego)","searchNoResults":"No se encontraron protocolos de supervivencia coincidentes","searchShortcutHint":"ESC Cerrar | ↑↓ Navegar | Enter Abrir","searchBadge":"BÚSQUEDA 100% OFFLINE EN MEMORIA","searchResultsCount":"encontrados","searchPrompt":"Busque habilidades de supervivencia, herramientas o palabras clave (agua, fuego, refugio)...","crosslinkMaterialsPrefix":"Materiales: ","crosslinkCta":"ABRIR ↗"},"de":{"brandArchive":"TAKTIK-ÜBERLEBENSARCHIV","brandShort":"[PROTOKOLL]","offlineDb":"OFFLINE-DB","offlineBanner":"⚡ [NETZWERK GETRENNT] Betrieb über lokalen Offline-Notfall-Cache","backToIndex":"← Alle Protokolle","allProtocols":"Protokoll-Index","readingTime":"Lesezeit: 30 Sek","timeRequired":"Dauer","successRate":"Überlebensrate","difficulty":"Schwierigkeitsgrad","outputPerHour":"Leistung / Stunde","outcomeTitle":"Endergebnis & Zielaufbau","outcomeBadge":"Vorschau des Endergebnisses","outcomeStandard":"Prüf- und Abnahmekriterien","checklistTitle":"Material-Checkliste (Sofort sammeln)","checklistDesc":"Im Feld verfügbare Naturmaterialien oder verwertbare Reststoffe. Tippen Sie auf jedes Element.","itemsSecured":"Gesichert","fieldTested":"[FELDERPROBT]","procedureTitle":"// AUSFÜHRUNGSVERFAHREN (PROCEDURE)","stepsFlow":"Schritte","fatalTitle":"GEFAHR // TÖDLICHE FEHLERWARNUNG","mustReadBeforeDrink":"VOR AUSFÜHRUNG LESEN","nonNegotiableRule":"[UNVERHANDELBARE REGEL]","saveOffline":"Offline speichern (PDF)","share":"Teilen","nextProtocol":"Weiter:","figurePrefix":"ABB","toastCopied":"Link in die Zwischenablage kopiert.","toastOfflineSaved":"Offline-Handbuch wird heruntergeladen (PDF).","toastThemeSwitched":"Design umgeschaltet.","feedHeaderTitle":"[ÜBERLEBENSPROTOKOLL // SURVIVAL PROTOCOL]","feedCacheActive":"Lokaler Offline-Cache Aktiv (100% Funktionsfähig Ohne Internet)","feedHeroHeadline":"ÜBERLEBEN IN DER POSTAPOKALYPSE","feedHeroSubtext":"Praxiserprobtes Handbuch für Überlebenstechniken nach dem Zusammenbruch — mit Naturmaterialien sowie zurückgelassenen Alltagsgegenständen (leere Dosen, alte Kabel usw.). Funktioniert dauerhaft zu 100% offline.","cat_ALL":"[ALLE]","cat_WATER":"[WASSER]","cat_FIRE":"[FEUER]","cat_SHELTER":"[UNTERKUNFT]","cat_FOOD":"[NAHRUNG]","cat_TOOLS":"[WERKZEUGE]","cat_MEDICINE":"[MEDIZIN]","threat_CRITICAL":"[KRITISCH]","threat_HIGH":"[ESSENZIELL]","threat_MODERATE":"[BASIS]","threat_LOW":"[BASIS]","readProtocolBtn":"[HANDBUCH ÖFFNEN →]","paginationRecordPrefix":"EINTRÄGE","paginationTotalPrefix":"/ GESAMT","paginationTotalSuffix":"","footerTitle":"KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.","footerDesc":"Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.","sort_latest":"Neueste","sort_oldest":"Älteste","uploadDate":"Datum","createdPrefix":"Erstellt","updatedPrefix":"Aktualisiert","searchBtn":"[SUCHE]","searchPlaceholder":"Protokolle, Materialien, Schritte suchen... (z.B. Wasser, Feuer)","searchNoResults":"Keine passenden Überlebensprotokolle gefunden","searchShortcutHint":"ESC Schließen | ↑↓ Navigieren | Enter Öffnen","searchBadge":"100% OFFLINE-SPEICHERSUCHE","searchResultsCount":"gefunden","searchPrompt":"Überlebensfähigkeiten, Werkzeuge oder Stichwörter eingeben (z. B. Wasser, Feuer, Schutz)...","crosslinkMaterialsPrefix":"Material: ","crosslinkCta":"ÖFFNEN ↗"},"pt":{"brandArchive":"ARQUIVO DE SOBREVIVÊNCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD OFFLINE","offlineBanner":"⚡ [REDE DESCONECTADA] Operando via Cache Tático Local Offline","backToIndex":"← Todos os Protocolos","allProtocols":"Índice Geral","readingTime":"Leitura: 30 seg","timeRequired":"Tempo Necessário","successRate":"Taxa de Sobrevivência","difficulty":"Dificuldade","outputPerHour":"Produção / Hora","outcomeTitle":"Resultado Final do Objetivo","outcomeBadge":"Prévia do Resultado em Campo","outcomeStandard":"Critério de Inspeção","checklistTitle":"Checklist de Materiais Esenciais (Coletar Imediatamente)","checklistDesc":"Materiais naturais ou sucata urbana disponíveis em campo. Toque em cada item para registrar.","itemsSecured":"Garantidos","fieldTested":"[TESTADO EM CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EXECUÇÃO (PROCEDURE)","stepsFlow":"Etapas","fatalTitle":"PERIGO // ALERTA DE ERRO FATAL","mustReadBeforeDrink":"LEIA ANTES DE EXECUTAR","nonNegotiableRule":"[REGRA INEGOCIÁVEL]","saveOffline":"Salvar Offline (PDF)","share":"Compartilhar","nextProtocol":"Próximo:","figurePrefix":"FIG","toastCopied":"Link copiado.","toastOfflineSaved":"Baixando manual offline (PDF).","toastThemeSwitched":"Tema alterado.","feedHeaderTitle":"[PROTOCOLO DE SOBREVIVÊNCIA // ARQUIVO TÁTICO]","feedCacheActive":"Cache Local Ativo (100% Operacional Sem Internet)","feedHeroHeadline":"SOBREVIVENDO AO PÓS-APOCALIPSE","feedHeroSubtext":"Manual prático de sobrevivência para obter água, fogo, ferramentas e abrigo usando recursos naturais e objetos urbanos abandonados (latas vazias, fios elétricos, etc.) após o colapso. 100% offline.","cat_ALL":"[TODOS]","cat_WATER":"[ÁGUA]","cat_FIRE":"[FOGO]","cat_SHELTER":"[ABRIGO]","cat_FOOD":"[ALIMENTO]","cat_TOOLS":"[FERRAMENTAS]","cat_MEDICINE":"[MEDICINA]","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESSENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","footerTitle":"ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.","footerDesc":"Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.","sort_latest":"Mais recentes","sort_oldest":"Mais antigos","uploadDate":"Data","createdPrefix":"Criado","updatedPrefix":"Atualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Pesquisar protocolos, materiais, etapas... (ex: água, fogo)","searchNoResults":"Nenhum protocolo de sobrevivência encontrado","searchShortcutHint":"ESC Fechar | ↑↓ Navegar | Enter Abrir","searchBadge":"BUSCA 100% OFFLINE EM MEMÓRIA","searchResultsCount":"encontrados","searchPrompt":"Pesquise técnicas de sobrevivência, ferramentas ou palavras-chave (água, fogo, abrigo)...","crosslinkMaterialsPrefix":"Materiais: ","crosslinkCta":"ABRIR ↗"},"zh-TW":{"brandArchive":"生存戰術手冊檔案庫","brandShort":"[生存手冊]","offlineDb":"離線數據庫","offlineBanner":"⚡ [偵測到通訊中斷] 外部網路斷線 // 目前以本地離線快取手冊運作中","backToIndex":"← 所有手冊目錄","allProtocols":"手冊總目錄","readingTime":"閱讀時間：30秒","timeRequired":"所需時間","successRate":"生存率/成功率","difficulty":"技術難度","outputPerHour":"每小時產量","outcomeTitle":"最終完成成果","outcomeBadge":"實戰完成預覽","outcomeStandard":"實戰驗收標準","checklistTitle":"必備物資清單（立即收集）","checklistDesc":"野戰環境中可取得的天然物資或廢棄都市材料。請點擊已備妥的項目以記錄收集狀態。","itemsSecured":"已確保","fieldTested":"[實戰檢驗完成]","procedureTitle":"// 執行程序標準 (PROCEDURE)","stepsFlow":"步驟進行","fatalTitle":"危險 // 致命錯誤警告","mustReadBeforeDrink":"執行前必讀","nonNegotiableRule":"[不可妥協的絕對法則]","saveOffline":"離線保存 (A4/PDF)","share":"分享","nextProtocol":"下一篇：","figurePrefix":"圖","toastCopied":"協議連結已複製至剪貼簿。","toastOfflineSaved":"離線手冊下載中 (A4/PDF)。","toastThemeSwitched":"主題已切換。","feedHeaderTitle":"[生存手冊 // SURVIVAL PROTOCOL]","feedCacheActive":"本地離線快取已啟用（網路中斷時仍可100%離線調閱）","feedHeroHeadline":"在後末日世界中生存","feedHeroSubtext":"現代文明崩潰後，利用自然物與都市廢棄物（空罐頭、廢電線等）自製飲水、生火、工具與避難所的實戰求生檔案。一旦瀏覽過即永久保存於本地，斷網時仍可100%運作。","cat_ALL":"[全部]","cat_WATER":"[飲水淨化]","cat_FIRE":"[原始生火]","cat_SHELTER":"[避難庇護]","cat_FOOD":"[糧食採集]","cat_TOOLS":"[原始工具]","cat_MEDICINE":"[野戰醫藥]","threat_CRITICAL":"[致命級]","threat_HIGH":"[必備級]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[調閱手冊 →]","paginationRecordPrefix":"紀錄","paginationTotalPrefix":"/ 共","paginationTotalSuffix":"篇","footerTitle":"為重建人類文明而設的免費開源生存檔案庫。","footerDesc":"本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。","sort_latest":"最新發布","sort_oldest":"最早發布","uploadDate":"發布日期","createdPrefix":"發布","updatedPrefix":"最後更新","searchBtn":"[搜尋]","searchPlaceholder":"搜尋生存手冊、物資、步驟... (如: 飲水, 生火, 陷阱)","searchNoResults":"查無相符的生存手冊","searchShortcutHint":"ESC 關閉 | ↑↓ 移動 | Enter 開啟","searchBadge":"100% 離線內存即時搜尋","searchResultsCount":"篇查獲","searchPrompt":"請輸入所需的生存技能、工具、材料或關鍵字（如過濾、生火、庇護所）...","crosslinkMaterialsPrefix":"準備材料: ","crosslinkCta":"查看 ↗"}};
+    window.__UI_STRINGS__ = {"ko":{"brandArchive":"생존 기술 가이드","brandShort":"[생존 교범]","offlineDb":"오프라인 저장소","offlineBanner":"⚡ [인터넷 연결 끊김] 저장된 오프라인 화면으로 보는 중입니다","backToIndex":"← 전체 목록","allProtocols":"전체 목록","readingTime":"실전 현장 가이드","timeRequired":"걸리는 시간","successRate":"성공 확률","difficulty":"난이도","outputPerHour":"결과물","outcomeTitle":"최종 완성 형태","outcomeBadge":"실전 완성 미리보기","outcomeStandard":"완성 검수 기준","checklistTitle":"준비할 재료 체크리스트","checklistDesc":"주변 자연물이나 버려진 도시 잔해에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.","itemsSecured":"준비 완료","fieldTested":"[실전 검증 완료]","procedureTitle":"// 순서대로 따라 하기","stepsFlow":"단계 순서","fatalTitle":"주의 // 절대 하면 안 되는 실수","mustReadBeforeDrink":"시작 전 필독","nonNegotiableRule":"","saveOffline":"오프라인 저장 (A4/PDF)","share":"공유","nextProtocol":"다음:","figurePrefix":"그림","toastCopied":"링크가 복사되었습니다.","toastOfflineSaved":"문서를 인쇄/저장합니다 (A4/PDF).","toastThemeSwitched":"테마가 변경되었습니다.","feedHeaderTitle":"[생존 교범 // SURVIVAL PROTOCOL]","feedCacheActive":"오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)","feedHeroHeadline":"포스트 아포칼립스에서 살아남기","feedHeroSubtext":"문명이 멈춘 세상, 주변의 나무·돌·흙 같은 자연물부터 도시에 버려진 빈 깡통·안 쓰는 전기선까지 활용해 물과 불, 도구와 거처를 만드는 실전 생존 가이드입니다. 한 번 열어본 글은 기기에 자동 저장되어 인터넷이 끊긴 곳에서도 그대로 볼 수 있습니다.","cat_ALL":"[전체]","cat_WATER":"[물 구하기]","cat_FIRE":"[불 피우기]","cat_SHELTER":"[움막 짓기]","cat_FOOD":"[식량 구하기]","cat_TOOLS":"[도구 만들기]","cat_MEDICINE":"[응급 처치]","threat_CRITICAL":"[필수 생존]","threat_HIGH":"[중요]","threat_MODERATE":"[기초]","threat_LOW":"[기초]","readProtocolBtn":"[자세히 보기 →]","paginationRecordPrefix":"글","paginationTotalPrefix":"/ 총","paginationTotalSuffix":"개","footerTitle":"누구나 위급할 때 바로 따라 할 수 있는 실전 생존 가이드.","footerDesc":"한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.","footerLegalNotice":"[안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.","sort_latest":"최신순","sort_oldest":"오래된순","uploadDate":"등록일","createdPrefix":"등록","updatedPrefix":"최종 수정","searchBtn":"[검색]","searchPlaceholder":"생존 기술, 재료, 단계 검색... (초성 검색 가능: ㅅㅅ, ㅂㅇ)","searchNoResults":"일치하는 생존 프로토콜이 없습니다","searchShortcutHint":"ESC 닫기 | ↑↓ 탐색 | Enter 이동","searchBadge":"100% 오프라인 인메모리 검색","searchResultsCount":"개 발견","searchPrompt":"필요한 생존 기술, 도구, 또는 자음 초성(ㅅㅅ, ㅂㅇ, ㅊㄴㅁ)을 입력하세요.","crosslinkMaterialsPrefix":"준비물: ","crosslinkCta":"교범 보기 ↗","viewsPrefix":"열람","confirmSurvival":"생존 확인","toastLiked":"생존 기술 유용성을 확인했습니다.","toastUnliked":"생존 확인이 취소되었습니다."},"en":{"brandArchive":"TACTICAL SURVIVAL ARCHIVE","brandShort":"[SURVIVAL PROTOCOL]","offlineDb":"OFFLINE DB","offlineBanner":"⚡ [NETWORK DISCONNECTED] Operating on Local Offline Tactical Cache","backToIndex":"← All Protocols","allProtocols":"Protocol Index","readingTime":"Read Time: 30 sec","timeRequired":"Time Required","successRate":"Survival Rate","difficulty":"Skill Level","outputPerHour":"Output / Hour","outcomeTitle":"Target Outcome","outcomeBadge":"Field Result Preview","outcomeStandard":"Field Inspection Standard","checklistTitle":"Essential Materials Checklist (Gather Immediately)","checklistDesc":"Field-foraged natural resources or urban salvage. Tap each item to record your collection status.","itemsSecured":"Secured","fieldTested":"[FIELD VERIFIED]","procedureTitle":"// EXECUTION PROCEDURE (FIELD MANUAL)","stepsFlow":"Steps Flow","fatalTitle":"HAZARD // FATAL MISTAKE WARNING","mustReadBeforeDrink":"MUST READ BEFORE EXECUTION","nonNegotiableRule":"[NON-NEGOTIABLE SURVIVAL RULE]","saveOffline":"Save Offline (A4/PDF)","share":"Share","nextProtocol":"Next:","figurePrefix":"FIG","toastCopied":"Protocol link copied to clipboard.","toastOfflineSaved":"Downloading offline manual (A4/PDF).","toastThemeSwitched":"Theme toggled successfully.","feedHeaderTitle":"[SURVIVAL PROTOCOL // TACTICAL ARCHIVE]","feedCacheActive":"Local Offline Cache Active (100% Operable Without Internet)","feedHeroHeadline":"SURVIVING THE POST-APOCALYPSE","feedHeroSubtext":"A field-verified survival manual for securing water, fire, tools, and shelter using raw natural materials and abandoned urban salvage (tin cans, scrap wire, etc.) after civilization collapse. Permanently cached for 100% offline operation.","cat_ALL":"[ALL]","cat_WATER":"[WATER]","cat_FIRE":"[FIRE]","cat_SHELTER":"[SHELTER]","cat_FOOD":"[FOOD]","cat_TOOLS":"[TOOLS]","cat_MEDICINE":"[MEDICINE]","threat_CRITICAL":"[CRITICAL]","threat_HIGH":"[ESSENTIAL]","threat_MODERATE":"[BASIC SKILL]","threat_LOW":"[BASIC SKILL]","readProtocolBtn":"[OPEN MANUAL →]","paginationRecordPrefix":"RECORDS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","footerTitle":"FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.","footerDesc":"Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.","footerLegalNotice":"[Safety Disclaimer & Privacy Notice] This archive is provided for emergency preparedness and educational purposes. Observe fire, toxicity, and local legal safety regulations during practice. Only anonymized telemetry (GA4/Firebase) and local storage are used without collecting personal data.","sort_latest":"Latest","sort_oldest":"Oldest","uploadDate":"Date","createdPrefix":"Created","updatedPrefix":"Updated","searchBtn":"[SEARCH]","searchPlaceholder":"Search protocols, materials, steps... (e.g. water, fire, trap)","searchNoResults":"No matching survival protocols found","searchShortcutHint":"ESC Close | ↑↓ Navigate | Enter Open","searchBadge":"100% OFFLINE IN-MEMORY SEARCH","searchResultsCount":"found","searchPrompt":"Search survival skills, tools, materials, or keywords (e.g. water, fire, shelter)...","crosslinkMaterialsPrefix":"Materials: ","crosslinkCta":"OPEN ↗","viewsPrefix":"VIEWS","confirmSurvival":"SURVIVAL CONFIRMED","toastLiked":"Survival protocol validated.","toastUnliked":"Validation withdrawn."},"ja":{"brandArchive":"生存戦術教本アーカイブ","brandShort":"[生存教本]","offlineDb":"オフラインDB","offlineBanner":"⚡ [通信途絶検知] 外部ネットワーク切断 // ローカルオフラインキャッシュ教本で稼働中","backToIndex":"← 全教本リスト","allProtocols":"教本インデックス","readingTime":"閲覧所要時間: 30秒","timeRequired":"所要時間","successRate":"生存率/成功率","difficulty":"技術難易度","outputPerHour":"時間あたり生産量","outcomeTitle":"最終完成形","outcomeBadge":"実践完成プレビュー","outcomeStandard":"完成検収基準","checklistTitle":"必須確保物資チェックリスト (直ちに収集せよ)","checklistDesc":"野戦で確保可能な天然代替資材です。準備できた項目をタップして収集状況を記録してください。","itemsSecured":"確保完了","fieldTested":"[実戦検証完了]","procedureTitle":"// 実行手順標準 (PROCEDURE)","stepsFlow":"ステップ進行","fatalTitle":"危険 // 致命的な過誤警告","mustReadBeforeDrink":"実行前必読","nonNegotiableRule":"[妥協不可の絶対規則]","saveOffline":"オフライン保存 (A4/PDF)","share":"共有","nextProtocol":"次:","figurePrefix":"図","toastCopied":"プロトコルリンクがクリップボードにコピーされました。","toastOfflineSaved":"オフライン教本がダウンロードされます (A4/PDF)。","toastThemeSwitched":"テーマが切り替わりました。","feedHeaderTitle":"[生存教本 // SURVIVAL PROTOCOL]","feedCacheActive":"ローカルキャッシュ有効 (通信途絶時もオフライン閲覧可能)","feedHeroHeadline":"ポスト・アポカリプスで生き残る","feedHeroSubtext":"文明崩壊後の世界で、自然物や都市に放置された空き缶・廃電線などを活用して水、火、道具、シェルターを自作する実践サバイバル記録書。一度閲覧した教本はブラウザに永久保存され、通信途絶下でも100%稼働します。","cat_ALL":"[すべて]","cat_WATER":"[飲料水確保]","cat_FIRE":"[火起こし]","cat_SHELTER":"[シェルター]","cat_FOOD":"[食料採集]","cat_TOOLS":"[原始道具]","cat_MEDICINE":"[野戦医薬]","threat_CRITICAL":"[致命的]","threat_HIGH":"[必須]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[教本を閲覧 →]","paginationRecordPrefix":"記録","paginationTotalPrefix":"/ 全","paginationTotalSuffix":"件","footerTitle":"人類文明再建のための無料オープンソース生存記録書。","footerDesc":"このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。","footerLegalNotice":"[安全免責およびプライバシー通知] 本教本は緊急災害対策および教育目的で作成されており、平時の実習では火災・中毒・怪我の安全規則および現地法令を遵守してください。個人を特定しない匿名統計(GA4/Firebase)とローカルストレージのみを使用します。","sort_latest":"最新順","sort_oldest":"古い順","uploadDate":"登録日","createdPrefix":"登録","updatedPrefix":"最終更新","searchBtn":"[検索]","searchPlaceholder":"生存技術、資材、手順を検索... (例: ろ過, 火起こし, 罠)","searchNoResults":"一致する生存教本が見つかりません","searchShortcutHint":"ESC 閉じる | ↑↓ 移動 | Enter 開く","searchBadge":"100% オフラインインメモリ検索","searchResultsCount":"件発見","searchPrompt":"必要な生存技術、道具、材料、キーワード（ろ過、火起こし等）を入力してください。","crosslinkMaterialsPrefix":"準備物: ","crosslinkCta":"詳細 ↗","viewsPrefix":"閲覧","confirmSurvival":"生存確認","toastLiked":"生存技術の有用性を確認しました。","toastUnliked":"生存確認を取り消しました。"},"es":{"brandArchive":"ARCHIVO DE SUPERVIVENCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD DESCONECTADA","offlineBanner":"⚡ [RED DESCONECTADA] Operando con Caché Táctico Local Sin Conexión","backToIndex":"← Todos los Protocolos","allProtocols":"Índice General","readingTime":"Lectura: 30 seg","timeRequired":"Tiempo Requerido","successRate":"Tasa de Éxito","difficulty":"Dificultad","outputPerHour":"Producción / Hora","outcomeTitle":"Resultado Final del Objetivo","outcomeBadge":"Vista Previa del Resultado","outcomeStandard":"Criterio de Inspección","checklistTitle":"Lista de Materiales Esenciales (Recoger de Inmediato)","checklistDesc":"Materiales naturales o chatarra urbana recolectables en campo. Toque cada elemento para registrar su estado.","itemsSecured":"Asegurados","fieldTested":"[PROBADO EN CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EJECUCIÓN (PROCEDURE)","stepsFlow":"Flujo de Pasos","fatalTitle":"PELIGRO // ADVERTENCIA DE ERROR FATAL","mustReadBeforeDrink":"LEER ANTES DE EJECUTAR","nonNegotiableRule":"[REGLA DE SUPERVIVENCIA NO NEGOCIABLE]","saveOffline":"Guardar Offline (PDF)","share":"Compartir","nextProtocol":"Siguiente:","figurePrefix":"FIG","toastCopied":"Enlace copiado al portapapeles.","toastOfflineSaved":"Descargando manual offline (PDF).","toastThemeSwitched":"Tema cambiado.","feedHeaderTitle":"[PROTOCOLO DE SUPERVIVENCIA // ARCHIVO TÁCTICO]","feedCacheActive":"Caché Local Activo (100% Operativo Sin Conexión a Internet)","feedHeroHeadline":"SOBREVIVIR AL POSTAPOCALIPSIS","feedHeroSubtext":"Manual táctico de supervivencia para asegurar agua, fuego, herramientas y refugio usando recursos naturales y objetos urbanos abandonados (latas vacías, cables, etc.) tras el colapso. Funciona 100% sin red.","cat_ALL":"[TODOS]","cat_WATER":"[AGUA]","cat_FIRE":"[FUEGO]","cat_SHELTER":"[REFUGIO]","cat_FOOD":"[ALIMENTO]","cat_TOOLS":"[HERRAMIENTAS]","cat_MEDICINE":"[MEDICINA]","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","footerTitle":"ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.","footerDesc":"Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.","footerLegalNotice":"[Aviso Legal y de Privacidad] Este archivo tiene fines educativos y de preparación ante emergencias. Respete las normas de seguridad y leyes locales. Solo se utilizan estadísticas anónimas (GA4/Firebase) y almacenamiento local sin recopilar datos personales.","sort_latest":"Más recientes","sort_oldest":"Más antiguos","uploadDate":"Fecha","createdPrefix":"Publicado","updatedPrefix":"Actualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Buscar protocolos, materiales, pasos... (ej. agua, fuego)","searchNoResults":"No se encontraron protocolos de supervivencia coincidentes","searchShortcutHint":"ESC Cerrar | ↑↓ Navegar | Enter Abrir","searchBadge":"BÚSQUEDA 100% OFFLINE EN MEMORIA","searchResultsCount":"encontrados","searchPrompt":"Busque habilidades de supervivencia, herramientas o palabras clave (agua, fuego, refugio)...","crosslinkMaterialsPrefix":"Materiales: ","crosslinkCta":"ABRIR ↗","viewsPrefix":"VISTAS","confirmSurvival":"CONFIRMAR SUPERVIVENCIA","toastLiked":"Protocolo de supervivencia validado.","toastUnliked":"Validación retirada."},"de":{"brandArchive":"TAKTIK-ÜBERLEBENSARCHIV","brandShort":"[PROTOKOLL]","offlineDb":"OFFLINE-DB","offlineBanner":"⚡ [NETZWERK GETRENNT] Betrieb über lokalen Offline-Notfall-Cache","backToIndex":"← Alle Protokolle","allProtocols":"Protokoll-Index","readingTime":"Lesezeit: 30 Sek","timeRequired":"Dauer","successRate":"Überlebensrate","difficulty":"Schwierigkeitsgrad","outputPerHour":"Leistung / Stunde","outcomeTitle":"Endergebnis & Zielaufbau","outcomeBadge":"Vorschau des Endergebnisses","outcomeStandard":"Prüf- und Abnahmekriterien","checklistTitle":"Material-Checkliste (Sofort sammeln)","checklistDesc":"Im Feld verfügbare Naturmaterialien oder verwertbare Reststoffe. Tippen Sie auf jedes Element.","itemsSecured":"Gesichert","fieldTested":"[FELDERPROBT]","procedureTitle":"// AUSFÜHRUNGSVERFAHREN (PROCEDURE)","stepsFlow":"Schritte","fatalTitle":"GEFAHR // TÖDLICHE FEHLERWARNUNG","mustReadBeforeDrink":"VOR AUSFÜHRUNG LESEN","nonNegotiableRule":"[UNVERHANDELBARE REGEL]","saveOffline":"Offline speichern (PDF)","share":"Teilen","nextProtocol":"Weiter:","figurePrefix":"ABB","toastCopied":"Link in die Zwischenablage kopiert.","toastOfflineSaved":"Offline-Handbuch wird heruntergeladen (PDF).","toastThemeSwitched":"Design umgeschaltet.","feedHeaderTitle":"[ÜBERLEBENSPROTOKOLL // SURVIVAL PROTOCOL]","feedCacheActive":"Lokaler Offline-Cache Aktiv (100% Funktionsfähig Ohne Internet)","feedHeroHeadline":"ÜBERLEBEN IN DER POSTAPOKALYPSE","feedHeroSubtext":"Praxiserprobtes Handbuch für Überlebenstechniken nach dem Zusammenbruch — mit Naturmaterialien sowie zurückgelassenen Alltagsgegenständen (leere Dosen, alte Kabel usw.). Funktioniert dauerhaft zu 100% offline.","cat_ALL":"[ALLE]","cat_WATER":"[WASSER]","cat_FIRE":"[FEUER]","cat_SHELTER":"[UNTERKUNFT]","cat_FOOD":"[NAHRUNG]","cat_TOOLS":"[WERKZEUGE]","cat_MEDICINE":"[MEDIZIN]","threat_CRITICAL":"[KRITISCH]","threat_HIGH":"[ESSENZIELL]","threat_MODERATE":"[BASIS]","threat_LOW":"[BASIS]","readProtocolBtn":"[HANDBUCH ÖFFNEN →]","paginationRecordPrefix":"EINTRÄGE","paginationTotalPrefix":"/ GESAMT","paginationTotalSuffix":"","footerTitle":"KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.","footerDesc":"Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.","footerLegalNotice":"[Sicherheitshinweis & Datenschutz] Dieses Archiv dient der Katastrophenvorsorge und Bildungszwecken. Beachten Sie Sicherheitsvorschriften und lokale Gesetze. Es werden nur anonyme Statistiken (GA4/Firebase) und lokaler Speicher ohne personenbezogene Daten verwendet.","sort_latest":"Neueste","sort_oldest":"Älteste","uploadDate":"Datum","createdPrefix":"Erstellt","updatedPrefix":"Aktualisiert","searchBtn":"[SUCHE]","searchPlaceholder":"Protokolle, Materialien, Schritte suchen... (z.B. Wasser, Feuer)","searchNoResults":"Keine passenden Überlebensprotokolle gefunden","searchShortcutHint":"ESC Schließen | ↑↓ Navigieren | Enter Öffnen","searchBadge":"100% OFFLINE-SPEICHERSUCHE","searchResultsCount":"gefunden","searchPrompt":"Überlebensfähigkeiten, Werkzeuge oder Stichwörter eingeben (z. B. Wasser, Feuer, Schutz)...","crosslinkMaterialsPrefix":"Material: ","crosslinkCta":"ÖFFNEN ↗","viewsPrefix":"AUFRUFE","confirmSurvival":"ÜBERLEBEN BESTÄTIGT","toastLiked":"Überlebensprotokoll bestätigt.","toastUnliked":"Bestätigung zurückgezogen."},"pt":{"brandArchive":"ARQUIVO DE SOBREVIVÊNCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD OFFLINE","offlineBanner":"⚡ [REDE DESCONECTADA] Operando via Cache Tático Local Offline","backToIndex":"← Todos os Protocolos","allProtocols":"Índice Geral","readingTime":"Leitura: 30 seg","timeRequired":"Tempo Necessário","successRate":"Taxa de Sobrevivência","difficulty":"Dificuldade","outputPerHour":"Produção / Hora","outcomeTitle":"Resultado Final do Objetivo","outcomeBadge":"Prévia do Resultado em Campo","outcomeStandard":"Critério de Inspeção","checklistTitle":"Checklist de Materiais Esenciais (Coletar Imediatamente)","checklistDesc":"Materiais naturais ou sucata urbana disponíveis em campo. Toque em cada item para registrar.","itemsSecured":"Garantidos","fieldTested":"[TESTADO EM CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EXECUÇÃO (PROCEDURE)","stepsFlow":"Etapas","fatalTitle":"PERIGO // ALERTA DE ERRO FATAL","mustReadBeforeDrink":"LEIA ANTES DE EXECUTAR","nonNegotiableRule":"[REGRA INEGOCIÁVEL]","saveOffline":"Salvar Offline (PDF)","share":"Compartilhar","nextProtocol":"Próximo:","figurePrefix":"FIG","toastCopied":"Link copiado.","toastOfflineSaved":"Baixando manual offline (PDF).","toastThemeSwitched":"Tema alterado.","feedHeaderTitle":"[PROTOCOLO DE SOBREVIVÊNCIA // ARQUIVO TÁTICO]","feedCacheActive":"Cache Local Ativo (100% Operacional Sem Internet)","feedHeroHeadline":"SOBREVIVENDO AO PÓS-APOCALIPSE","feedHeroSubtext":"Manual prático de sobrevivência para obter água, fogo, ferramentas e abrigo usando recursos naturais e objetos urbanos abandonados (latas vazias, fios elétricos, etc.) após o colapso. 100% offline.","cat_ALL":"[TODOS]","cat_WATER":"[ÁGUA]","cat_FIRE":"[FOGO]","cat_SHELTER":"[ABRIGO]","cat_FOOD":"[ALIMENTO]","cat_TOOLS":"[FERRAMENTAS]","cat_MEDICINE":"[MEDICINA]","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESSENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","footerTitle":"ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.","footerDesc":"Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.","footerLegalNotice":"[Aviso de Segurança e Privacidade] Este arquivo destina-se à preparação para emergências e fins educativos. Respeite as normas de segurança e leis locais. Apenas estatísticas anônimas (GA4/Firebase) e armazenamento local são usados sem coleta de dados pessoais.","sort_latest":"Mais recentes","sort_oldest":"Mais antigos","uploadDate":"Data","createdPrefix":"Criado","updatedPrefix":"Atualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Pesquisar protocolos, materiais, etapas... (ex: água, fogo)","searchNoResults":"Nenhum protocolo de sobrevivência encontrado","searchShortcutHint":"ESC Fechar | ↑↓ Navegar | Enter Abrir","searchBadge":"BUSCA 100% OFFLINE EM MEMÓRIA","searchResultsCount":"encontrados","searchPrompt":"Pesquise técnicas de sobrevivência, ferramentas ou palavras-chave (água, fogo, abrigo)...","crosslinkMaterialsPrefix":"Materiais: ","crosslinkCta":"ABRIR ↗","viewsPrefix":"VISUALIZAÇÕES","confirmSurvival":"CONFIRMAR SOBREVIVÊNCIA","toastLiked":"Protocolo de sobrevivência validado.","toastUnliked":"Validação retirada."},"zh-TW":{"brandArchive":"生存戰術手冊檔案庫","brandShort":"[生存手冊]","offlineDb":"離線數據庫","offlineBanner":"⚡ [偵測到通訊中斷] 外部網路斷線 // 目前以本地離線快取手冊運作中","backToIndex":"← 所有手冊目錄","allProtocols":"手冊總目錄","readingTime":"閱讀時間：30秒","timeRequired":"所需時間","successRate":"生存率/成功率","difficulty":"技術難度","outputPerHour":"每小時產量","outcomeTitle":"最終完成成果","outcomeBadge":"實戰完成預覽","outcomeStandard":"實戰驗收標準","checklistTitle":"必備物資清單（立即收集）","checklistDesc":"野戰環境中可取得的天然物資或廢棄都市材料。請點擊已備妥的項目以記錄收集狀態。","itemsSecured":"已確保","fieldTested":"[實戰檢驗完成]","procedureTitle":"// 執行程序標準 (PROCEDURE)","stepsFlow":"步驟進行","fatalTitle":"危險 // 致命錯誤警告","mustReadBeforeDrink":"執行前必讀","nonNegotiableRule":"[不可妥協的絕對法則]","saveOffline":"離線保存 (A4/PDF)","share":"分享","nextProtocol":"下一篇：","figurePrefix":"圖","toastCopied":"協議連結已複製至剪貼簿。","toastOfflineSaved":"離線手冊下載中 (A4/PDF)。","toastThemeSwitched":"主題已切換。","feedHeaderTitle":"[生存手冊 // SURVIVAL PROTOCOL]","feedCacheActive":"本地離線快取已啟用（網路中斷時仍可100%離線調閱）","feedHeroHeadline":"在後末日世界中生存","feedHeroSubtext":"現代文明崩潰後，利用自然物與都市廢棄物（空罐頭、廢電線等）自製飲水、生火、工具與避難所的實戰求生檔案。一旦瀏覽過即永久保存於本地，斷網時仍可100%運作。","cat_ALL":"[全部]","cat_WATER":"[飲水淨化]","cat_FIRE":"[原始生火]","cat_SHELTER":"[避難庇護]","cat_FOOD":"[糧食採集]","cat_TOOLS":"[原始工具]","cat_MEDICINE":"[野戰醫藥]","threat_CRITICAL":"[致命級]","threat_HIGH":"[必備級]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[調閱手冊 →]","paginationRecordPrefix":"紀錄","paginationTotalPrefix":"/ 共","paginationTotalSuffix":"篇","footerTitle":"為重建人類文明而設的免費開源生存檔案庫。","footerDesc":"本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。","footerLegalNotice":"[安全免責與隱私聲明] 本手冊僅供災難應變與教育目的使用，平時演練請遵守用火、防毒、安全規範與當地法規。本網站僅使用去識別化匿名統計(GA4/Firebase)與本地儲存空間，不收集任何個人資料。","sort_latest":"最新發布","sort_oldest":"最早發布","uploadDate":"發布日期","createdPrefix":"發布","updatedPrefix":"最後更新","searchBtn":"[搜尋]","searchPlaceholder":"搜尋生存手冊、物資、步驟... (如: 飲水, 生火, 陷阱)","searchNoResults":"查無相符的生存手冊","searchShortcutHint":"ESC 關閉 | ↑↓ 移動 | Enter 開啟","searchBadge":"100% 離線內存即時搜尋","searchResultsCount":"篇查獲","searchPrompt":"請輸入所需的生存技能、工具、材料或關鍵字（如過濾、生火、庇護所）...","crosslinkMaterialsPrefix":"準備材料: ","crosslinkCta":"查看 ↗","viewsPrefix":"瀏覽","confirmSurvival":"確認生存","toastLiked":"已確認生存技術實用性。","toastUnliked":"已取消確認。"}};
 
     (function () {
       var PAGE_SIZE = 5;
@@ -1650,6 +1730,304 @@
     });
 
   })();
+    (function () {
+      if (typeof window === 'undefined') return;
+
+      var config = {"apiKey":"AIzaSyBcRHzAgxRGSoZ_8yxgNRnKrJwUzgHjmxs","authDomain":"zozero94-462fc.firebaseapp.com","databaseURL":"https://zozero94-462fc-default-rtdb.firebaseio.com","projectId":"zozero94-462fc","storageBucket":"zozero94-462fc.firebasestorage.app","messagingSenderId":"813038880669","appId":"1:813038880669:web:c62941cc79cae32be7d174","measurementId":"G-FJLCKRXCT1","disabled":false};
+      if (!config || !config.apiKey || config.disabled || config.apiKey.indexOf('your_') === 0) return;
+
+      var VALID_PID_RE = /^PR-[0-9]{2,4}$/;
+      var rawPid = window.__PROTOCOL_ID__;
+      var pid = (typeof rawPid === 'string' && VALID_PID_RE.test(rawPid)) ? rawPid : null;
+
+      // ─── 0. Safe Storage Helper (Safari Private Mode / SecurityError / QuotaExceededError 방어) ───
+      var safeStorage = {
+        getItem: function (k) {
+          try { return localStorage.getItem(k); } catch (e) { return null; }
+        },
+        setItem: function (k, v) {
+          try { localStorage.setItem(k, v); return true; } catch (e) { return false; }
+        },
+        removeItem: function (k) {
+          try { localStorage.removeItem(k); return true; } catch (e) { return false; }
+        }
+      };
+
+      function formatNumber(num) {
+        return (Number(num) || 0).toLocaleString();
+      }
+
+      function getToastMessage(isLiked) {
+        var lang = document.documentElement.getAttribute('lang') || 'ko';
+        var strings = (window.__UI_STRINGS__ && window.__UI_STRINGS__[lang]) || (window.__UI_STRINGS__ && window.__UI_STRINGS__['ko']) || {};
+        if (isLiked) {
+          return strings.toastLiked || '생존 기술 유용성을 확인했습니다.';
+        } else {
+          return strings.toastUnliked || '생존 확인이 취소되었습니다.';
+        }
+      }
+
+      function showToast(msg) {
+        var toastEl = document.getElementById('toast');
+        if (!toastEl) return;
+        toastEl.textContent = msg;
+        toastEl.classList.remove('hidden');
+        if (window.__toastTimer__) clearTimeout(window.__toastTimer__);
+        window.__toastTimer__ = setTimeout(function () {
+          toastEl.classList.add('hidden');
+        }, 2500);
+      }
+
+      // ─── PHASE 1: Zero-Dependency Local Phase (동기 실행 / PWA 오프라인 100% 보장) ───
+      var CLICK_COOLDOWN_MS = 1200;
+      var MAX_TOGGLES_PER_SESSION = 6;
+      var lastLikeClickTime = 0;
+      var sessionToggleCount = 0;
+
+      var localState = {
+        isLiked: false,
+        pendingDelta: 0,
+        renderLikeButtonState: null,
+        syncRemote: null
+      };
+
+      if (pid) {
+        initLocalProtocolUI(pid);
+      }
+
+      function initLocalProtocolUI(protocolId) {
+        var likeBtn = document.getElementById('btn-like-protocol');
+        var likeIcon = document.getElementById('icon-like');
+        var likesEl = document.getElementById('proto-likes-count');
+        var likedStorageKey = 'ps_liked_' + protocolId;
+
+        localState.isLiked = safeStorage.getItem(likedStorageKey) === '1';
+
+        function renderLikeButtonState(liked) {
+          if (!likeBtn) return;
+          likeBtn.setAttribute('aria-pressed', liked ? 'true' : 'false');
+          if (liked) {
+            likeBtn.classList.remove('bg-[#191919]', 'text-[#999]', 'border-[#333]');
+            likeBtn.classList.add('bg-[#1f1d13]', 'text-[#fde68a]', 'border-[#fde68a]');
+            if (likeIcon) {
+              likeIcon.setAttribute('fill', '#fde68a');
+              likeIcon.setAttribute('stroke', '#fde68a');
+            }
+          } else {
+            likeBtn.classList.remove('bg-[#1f1d13]', 'text-[#fde68a]', 'border-[#fde68a]');
+            likeBtn.classList.add('bg-[#191919]', 'text-[#999]', 'border-[#333]');
+            if (likeIcon) {
+              likeIcon.setAttribute('fill', 'none');
+              likeIcon.setAttribute('stroke', 'currentColor');
+            }
+          }
+        }
+
+        localState.renderLikeButtonState = renderLikeButtonState;
+
+        // 초기 로컬 상태 즉시 렌더링
+        renderLikeButtonState(localState.isLiked);
+
+        // 클릭 리스너 즉각 동기 등록 (네트워크/CDN 로드 실패 시에도 로컬 토글 100% 동작 + 매크로 어뷰징 방어)
+        if (likeBtn) {
+          likeBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            var nowClick = Date.now();
+            if (nowClick - lastLikeClickTime < CLICK_COOLDOWN_MS) return;
+            if (sessionToggleCount >= MAX_TOGGLES_PER_SESSION) return;
+            lastLikeClickTime = nowClick;
+            sessionToggleCount++;
+
+            var targetState = !localState.isLiked;
+            localState.isLiked = targetState;
+
+            if (targetState) {
+              safeStorage.setItem(likedStorageKey, '1');
+            } else {
+              safeStorage.removeItem(likedStorageKey);
+            }
+
+            renderLikeButtonState(targetState);
+
+            // 낙관적 카운터 UI 반영
+            if (likesEl) {
+              var currentNum = parseInt((likesEl.textContent || '0').replace(/[^0-9]/g, ''), 10) || 0;
+              var nextNum = targetState ? currentNum + 1 : Math.max(0, currentNum - 1);
+              likesEl.textContent = formatNumber(nextNum);
+            }
+
+            // 다국어 토스트 메시지 즉시 출력
+            showToast(getToastMessage(targetState));
+
+            // 원격 동기화 트리거
+            if (typeof localState.syncRemote === 'function') {
+              localState.syncRemote(targetState);
+            } else {
+              localState.pendingDelta += (targetState ? 1 : -1);
+            }
+          });
+        }
+      }
+
+      // ─── PHASE 2: Background Remote Telemetry Phase (지연 로딩 & 장애 격리) ───
+      var scheduleTelemetry = window.requestIdleCallback || function (cb) { setTimeout(cb, 400); };
+
+      scheduleTelemetry(function () {
+        // A. Firebase Realtime Database 코어 우선 비동기 동기화 (GA4 애드블록 차단과 완벽 분리)
+        Promise.all([
+          import('https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js'),
+          import('https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js')
+        ]).then(function (modules) {
+          var appMod = modules[0];
+          var dbMod = modules[1];
+          var app = appMod.getApps && appMod.getApps().length > 0 ? appMod.getApps()[0] : appMod.initializeApp(config);
+          var db = dbMod.getDatabase(app);
+          var ref = dbMod.ref;
+          var runTransaction = dbMod.runTransaction;
+          var onValue = dbMod.onValue;
+
+          if (pid) {
+            initProtocolRemote(db, pid, ref, runTransaction, onValue);
+          } else {
+            initFeedRemote(db, ref, onValue);
+          }
+
+          // B. GA4 격리 로드 (애드블록 등으로 차단되어도 DB 로직에 영향 제로)
+          if (config.measurementId) {
+            import('https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js')
+              .then(function (analyticsMod) {
+                analyticsMod.getAnalytics(app);
+              })
+              .catch(function () {});
+          }
+        }).catch(function () {
+          // CDN 다운타임, 오프라인 또는 방화벽 차단 시 침묵 (PWA 로컬 경험 완벽 보존)
+        });
+      });
+
+      function initProtocolRemote(db, protocolId, ref, runTransaction, onValue) {
+        if (!VALID_PID_RE.test(protocolId)) return;
+
+        var viewsEl = document.getElementById('proto-views-count');
+        var likesEl = document.getElementById('proto-likes-count');
+        var viewStorageKey = 'ps_view_' + protocolId;
+        var likedStorageKey = 'ps_liked_' + protocolId;
+        var now = Date.now();
+        var cooldown = 24 * 60 * 60 * 1000;
+
+        // Zombie View Lock 자가 치유 방어: NaN, 음수, 미래 시간 검증
+        var rawViewTime = safeStorage.getItem(viewStorageKey);
+        var lastView = parseInt(rawViewTime || '0', 10);
+        if (isNaN(lastView) || lastView <= 0 || lastView > now) {
+          lastView = 0;
+        }
+
+        var viewsRef = ref(db, 'protocol_stats/' + protocolId + '/views');
+        if (now - lastView > cooldown && safeStorage.setItem(viewStorageKey, String(now))) {
+          runTransaction(viewsRef, function (curr) {
+            return (curr || 0) + 1;
+          }).then(function (res) {
+            if (viewsEl) {
+              var val = (res && res.snapshot && res.snapshot.exists()) ? res.snapshot.val() : 1;
+              viewsEl.textContent = formatNumber(val);
+            }
+          }).catch(function () {
+            safeStorage.removeItem(viewStorageKey);
+          });
+        } else {
+          onValue(viewsRef, function (snap) {
+            if (viewsEl) {
+              viewsEl.textContent = snap.exists() ? formatNumber(snap.val()) : '0';
+            }
+          }, { onlyOnce: true });
+        }
+
+        // B. 좋아요 1회 스냅샷 조회 (웹소켓 연결 누수 방지 { onlyOnce: true } + 서버 0일 때 로컬 상태 자가 치유)
+        var likesRef = ref(db, 'protocol_stats/' + protocolId + '/likes');
+        onValue(likesRef, function (snap) {
+          var serverLikes = snap.exists() ? (Number(snap.val()) || 0) : 0;
+          if (likesEl) {
+            likesEl.textContent = formatNumber(serverLikes);
+          }
+          if (serverLikes <= 0 && localState.isLiked && localState.pendingDelta <= 0) {
+            localState.isLiked = false;
+            safeStorage.removeItem(likedStorageKey);
+            if (typeof localState.renderLikeButtonState === 'function') {
+              localState.renderLikeButtonState(false);
+            }
+          }
+        }, { onlyOnce: true });
+
+        // 원격 동기화 핸들러 등록 (보안 규칙 !data.exists() || +1 || (data > 0 && -1) 100% 준수)
+        var isSyncing = false;
+        localState.syncRemote = function (targetState) {
+          if (isSyncing) return;
+          isSyncing = true;
+          runTransaction(likesRef, function (curr) {
+            if (targetState) {
+              return (curr || 0) + 1;
+            } else {
+              if (curr === null || curr === undefined || curr <= 0) {
+                return; // 이미 0이거나 노드가 없으면 트랜잭션 중단(불필요한 Permission Denied 방지)
+              }
+              return curr - 1;
+            }
+          }).then(function (res) {
+            if (res && res.committed && res.snapshot && res.snapshot.exists() && likesEl) {
+              likesEl.textContent = formatNumber(res.snapshot.val());
+            }
+          }).catch(function () {
+            // 트랜잭션 거부/오류 시 로컬 상태 롤백
+            var reverted = !targetState;
+            localState.isLiked = reverted;
+            if (reverted) {
+              safeStorage.setItem(likedStorageKey, '1');
+            } else {
+              safeStorage.removeItem(likedStorageKey);
+            }
+            if (typeof localState.renderLikeButtonState === 'function') {
+              localState.renderLikeButtonState(reverted);
+            }
+          }).finally(function () {
+            isSyncing = false;
+          });
+        };
+
+        // 로컬에서 CDN 로딩 전에 누른 클릭이 있다면 원격으로 전파 (보안 규칙 준수를 위해 ±1 단위로 전파)
+        if (localState.pendingDelta !== 0) {
+          var delta = localState.pendingDelta > 0 ? 1 : -1;
+          localState.pendingDelta = 0;
+          localState.syncRemote(delta > 0);
+        }
+      }
+
+      function initFeedRemote(db, ref, onValue) {
+        // 보안 규칙($protocolId: { ".read": true })과 100% 호환되도록 화면 내 유효 프로토콜 카드별 개별 1회 조회
+        var viewEls = document.querySelectorAll('[data-feed-views]');
+        var queriedMap = {};
+
+        for (var i = 0; i < viewEls.length; i++) {
+          var protocolId = viewEls[i].getAttribute('data-feed-views');
+          if (!protocolId || !VALID_PID_RE.test(protocolId) || queriedMap[protocolId]) continue;
+          queriedMap[protocolId] = true;
+
+          (function (pidKey) {
+            var itemRef = ref(db, 'protocol_stats/' + pidKey);
+            onValue(itemRef, function (snap) {
+              var stats = (snap && snap.exists() && typeof snap.val() === 'object') ? snap.val() : null;
+              var cardViewEl = document.querySelector('[data-feed-views="' + pidKey + '"]');
+              var cardLikeEl = document.querySelector('[data-feed-likes="' + pidKey + '"]');
+              if (cardViewEl) {
+                cardViewEl.textContent = (stats && stats.views !== undefined) ? formatNumber(stats.views) : '0';
+              }
+              if (cardLikeEl) {
+                cardLikeEl.textContent = (stats && stats.likes !== undefined) ? formatNumber(stats.likes) : '0';
+              }
+            }, { onlyOnce: true });
+          })(protocolId);
+        }
+      }
+    })();
   </script>
 </body>
 </html>

@@ -67,6 +67,13 @@ export function renderProtocolCard(protocol: Protocol): string {
     <div class="flex items-center gap-2">
       <span data-i18n="cat_${protocol.category}" class="text-neutral-400 font-bold">${categoryLabel}</span>
       ${dateHtml}
+      <span class="text-neutral-600 hidden sm:inline">/</span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>V:</span><span data-feed-views="${protocol.protocolId}" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
+      </span>
+      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
+        <span>L:</span><span data-feed-likes="${protocol.protocolId}" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
+      </span>
     </div>
     ${threatBadge}
   </div>
@@ -78,7 +85,7 @@ export function renderProtocolCard(protocol: Protocol): string {
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
-        <a href="${detailLink}" data-card-title="${protocol.protocolId}" class="block focus:outline-none">
+        <a href="${detailLink}" data-card-title="${protocol.protocolId}" class="block focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
           ${protocol.title}
         </a>
       </h2>
@@ -93,7 +100,7 @@ export function renderProtocolCard(protocol: Protocol): string {
     <div class="flex items-center gap-1.5 flex-wrap">
       ${materialsHtml}
     </div>
-    <a href="${detailLink}" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
+    <a href="${detailLink}" tabindex="-1" aria-hidden="true" data-i18n="readProtocolBtn" class="text-white font-bold group-hover:translate-x-1 transition-transform uppercase tracking-wider shrink-0 flex items-center gap-1">
       [자세히 보기 →]
     </a>
   </div>
