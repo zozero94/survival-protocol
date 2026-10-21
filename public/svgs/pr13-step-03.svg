@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg1303" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="potMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="20%" stop-color="#64748b"/>
+      <stop offset="60%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="pasteGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="spatulaWood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="resinAmber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="drop1303" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1303" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1303)"/>
+  <rect width="400" height="400" fill="url(#grid1303)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // SAPONIFICATION REACTION &amp; STIRRING</text>
+
+  <!-- Saponification Pot & Stirring Spatula -->
+  <g filter="url(#drop1303)">
+    <!-- Stove / Embers Base Below Pot -->
+    <ellipse cx="200" cy="305" rx="90" ry="15" fill="#450a0a" opacity="0.6"/>
+    <circle cx="170" cy="303" r="4" fill="#ea580c"/>
+    <circle cx="200" cy="306" r="4.5" fill="#f97316"/>
+    <circle cx="230" cy="304" r="3.5" fill="#ea580c"/>
+
+    <!-- Main Steel Pot Body -->
+    <path d="M 100 145 L 110 290 A 90 20 0 0 0 290 290 L 300 145 Z" fill="url(#potMetal)" stroke="#94a3b8" stroke-width="1.5"/>
+    <ellipse cx="200" cy="145" rx="100" ry="22" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Saponified Viscous Soap Paste (Peanut Butter Texture) -->
+    <path d="M 102 175 L 110 288 A 88 19 0 0 0 290 288 L 298 175 Z" fill="url(#pasteGrad)"/>
+    <ellipse cx="200" cy="175" rx="96" ry="20" fill="#facc15" opacity="0.8"/>
+
+    <!-- Clockwise Circular Stirring Orbit Arrows -->
+    <ellipse cx="200" cy="175" rx="65" ry="12" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8,4"/>
+    <polygon points="268,175 264,167 274,171" fill="#38bdf8"/>
+
+    <!-- 3-Second Trace Raised Ribbon on Paste Surface -->
+    <path d="M 155 180 Q 185 165 210 182 Q 235 195 250 178" fill="none" stroke="#fef08a" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Wooden Paddle Spatula Held Diagonally -->
+    <g transform="rotate(22 200 160)">
+      <!-- Paddle Handle -->
+      <rect x="194" y="60" width="12" height="120" rx="3" fill="url(#spatulaWood)" stroke="#291204" stroke-width="1"/>
+      <!-- Paddle Flat Blade -->
+      <path d="M 190 175 L 210 175 L 206 205 L 194 205 Z" fill="url(#spatulaWood)" stroke="#291204" stroke-width="1"/>
+      <!-- Soap Paste Clinging to Blade Tip -->
+      <path d="M 192 195 Q 200 215 208 195 Z" fill="#fef08a" stroke="#d97706" stroke-width="1"/>
+    </g>
+
+    <!-- Pine Resin Amber Powder Falling into Mix -->
+    <circle cx="140" cy="150" r="3" fill="url(#resinAmber)"/>
+    <circle cx="146" cy="156" r="2.5" fill="url(#resinAmber)"/>
+    <circle cx="135" cy="160" r="3.5" fill="url(#resinAmber)"/>
+    <circle cx="152" cy="163" r="2" fill="url(#resinAmber)"/>
+  </g>
+
+  <!-- Callouts & Labels -->
+  <!-- Label 2: 1:1 Mixture Ratio -->
+  <line x1="110" y1="210" x2="60" y2="125" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="110" cy="210" r="3" fill="#fde68a"/>
+  <rect x="18" y="52" width="265" height="24" rx="3" fill="#0f1722" stroke="#fde68a" stroke-width="1"/>
+  <text x="26" y="68" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">양잿물과 정제 기름 1:1 부피 비율 혼합액</text>
+
+  <!-- Label 3: Unidirectional 45-min Stirring -->
+  <line x1="265" y1="172" x2="310" y2="105" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="265" cy="172" r="3" fill="#38bdf8"/>
+  <rect x="95" y="90" width="285" height="24" rx="3" fill="#0f1722" stroke="#38bdf8" stroke-width="1"/>
+  <text x="103" y="106" fill="#f8fafc" font-family="sans-serif" font-size="11">납작한 나무 주걱으로 한 방향 45분 연속 교반</text>
+
+  <!-- Label 4: 3-Second Trace Raised Trail -->
+  <line x1="210" y1="182" x2="250" y2="235" stroke="#facc15" stroke-width="1.2"/>
+  <circle cx="210" cy="182" r="3" fill="#facc15"/>
+  <rect x="85" y="240" width="295" height="24" rx="3" fill="#0f1722" stroke="#facc15" stroke-width="1"/>
+  <text x="93" y="256" fill="#fde68a" font-family="sans-serif" font-size="11">주걱 자국이 3초 유지되는 걸쭉한 트레이스 완성</text>
+
+  <!-- Label 5: Core Rule -->
+  <rect x="16" y="348" width="368" height="34" rx="4" fill="#141c26" stroke="#eab308" stroke-width="1.2"/>
+  <text x="26" y="369" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">[3단계 핵심] 약불 은근한 가열 &amp; 송진 가루 혼합</text>
+</svg>

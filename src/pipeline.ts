@@ -293,15 +293,46 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
 export async function runPipeline() {
   const buildResult = await buildSite();
 
-  // 5. Shorts Service 실행 (OSMU)
+  // 5. Shorts Service 실행 (OSMU - Google Flow & 1-Source 7-Multilingual)
+  // [Pilot Mode] 안전성을 위해 첫 번째 프로토콜(PR-01)만 우선 파일럿 생성
   const protocolsDir = path.join(defaultRootDir, 'content/protocols');
-  const protocolFiles = fs.readdirSync(protocolsDir).filter((f) => f.endsWith('.json')).sort();
-  const rawFirst = fs.readFileSync(path.join(protocolsDir, protocolFiles[0]), 'utf-8');
+  const localesDir = path.join(protocolsDir, 'locales');
+  const rawFirst = fs.readFileSync(path.join(protocolsDir, '01-water-purification.json'), 'utf-8');
   const firstProto: Protocol = JSON.parse(rawFirst);
 
-  const shortsDir = path.join(defaultRootDir, 'shorts/01-water-purification');
-  ShortsService.convertProtocolToShorts(firstProto, shortsDir);
-  console.log(`🎬 [Shorts Service] 45초 유튜브 쇼츠 마스터 대본 생성 완료: shorts/01-water-purification/`);
+  const supportedLocales: SupportedLocale[] = ['ko', 'en', 'ja', 'es', 'de', 'pt', 'zh-TW'];
+  const localesMap: Record<SupportedLocale, Protocol> = {
+    ko: firstProto,
+  } as Record<SupportedLocale, Protocol>;
+
+  for (const loc of supportedLocales) {
+    if (loc === 'ko') continue;
+    const locFilePath = path.join(localesDir, `01-water-purification.${loc}.json`);
+    if (fs.existsSync(locFilePath)) {
+      try {
+        localesMap[loc] = JSON.parse(fs.readFileSync(locFilePath, 'utf-8'));
+      } catch {
+        localesMap[loc] = firstProto;
+      }
+    } else {
+      localesMap[loc] = firstProto;
+    }
+  }
+
+  const shortsBaseDir = path.join(defaultRootDir, 'shorts');
+  const shortsPkgResult = await ShortsService.generateShortsPackage(
+    firstProto,
+    shortsBaseDir,
+    localesMap,
+    'PR-01-water-purification'
+  );
+  // 레거시 호환도 유지 (기존 빌드 및 참조 깨짐 방지)
+  ShortsService.convertProtocolToShorts(firstProto, path.join(shortsBaseDir, '01-water-purification'));
+
+  console.log(`🎬 [Shorts Pilot] 구글 플로우 7대 프롬프트 & 7개국어 패키지 생성 완료:`);
+  console.log(`   └ 대상: ${firstProto.protocolId} (${firstProto.title.slice(0, 25)}...)`);
+  console.log(`   └ 경로: shorts/${firstProto.protocolId}-water-purification/`);
+  console.log(`   └ 생성된 언어: ${shortsPkgResult.localesGenerated.join(', ')}`);
 
   // 6. 다음 주제 기획 (TopicCurator Service - 명시적 요청 시에만 LLM 호출 수행하여 Vercel 정적 빌드 지연 차단)
   const shouldPlanNextTopic =

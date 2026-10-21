@@ -15,4 +15,5 @@ export * from './google-drive.service.js';
 export * from './search.service.js';
 export * from './posting-review.service.js';
 export * from './content-enrichment.service.js';
+export * from './tts.service.js';
 

@@ -1,0 +1,190 @@
+{
+  "protocolId": "PR-13",
+  "category": "MEDICINE",
+  "title": "Herstellung von natürlicher Eichenaschelauge- & Fettseife zur Infektionsabwehr (Feldhygiene-Desinfektionsseife)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[FELDHYGIENE & WUNDDESINFEKTION & SEPSIS-PRÄVENTION]",
+  "summary": "Im autarken Wildnisüberleben oder bei einem Zusammenbruch der Infrastruktur ohne fließendes Wasser und Medikamente können schon kleine Schürfwunden oder verunreinigte Hände beim Essen tödliche Ruhr, Wundstarrkrampf (Tetanus) oder systemische Blutvergiftung (Sepsis) auslösen. Sammelt man schneeweiße Eichenasche aus einer Feuerstelle oder dem [Doppeldosen-Holzvergaserofen](/protocol-12.html), verdichtet sie in einem Dosenfilter mit Schilfgras- und Kiesschicht und übergießt sie mit heißem Wasser, entsteht alkalische Kaliumkarbonatlauge. Kocht man diese Lauge im Verhältnis 1:1 mit ausgelassenem Tiertalg oder gefiltertem Altspeiseöl unter ständigem Rühren mit einem Holzspatel ein, setzt die Verseifung ein und erzeugt eine hochwirksame Desinfektionsseife, die bakterielle Zellmembranen auflöst.",
+  "timeRequired": "70 Minuten (20 Min. Ascheauslaugung + 45 Min. Verseifungssieden + 5 Min. Gießen)",
+  "successRate": "95% (bei Einhaltung der Kartoffel-Auftriebsdichte und kontinuierlichem Rühren in eine Richtung)",
+  "difficulty": "Mittel (äußerste Vorsicht vor Verätzungen von Haut und Augen durch stark basische Lauge)",
+  "outputPerHour": "1 Eimer Eichenasche & 2 Tassen Fett ergeben 3–4 feste Seifenstücke (1 Monatsvorrat)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Ein Eimer vollständig verbrannte, schneeweiße Hartholz-Asche (Eiche)",
+      "desc": "Mehlfeine weiße Asche aus einem [Eichenholzkohlemeiler](/protocol-09.html) oder einer Feuerstelle, gesiebt und frei von schwarzen Holzkohlestücken. Harthölzer wie Eiche besitzen den höchsten Kaliumgehalt für konzentrierte Lauge."
+    },
+    {
+      "id": "mat-02",
+      "name": "Gelochter Dosenfilter mit Trockengras- und Kies-Pufferschicht",
+      "desc": "Basiert auf dem Filtrationsprinzip des [natürlichen Wasserfilters](/protocol-01.html). Eine große Weißblechdose mit Nagelperforationen im Boden, ausgelegt mit Kieselsteinen und trockenem Schilfgras, um Aschepartikel zurückzuhalten, während klare goldene Lauge abtropft. Schutzlacke zuvor ausbrennen."
+    },
+    {
+      "id": "mat-03",
+      "name": "Rohes Kartoffelstück (oder frisches Ei) für die Auftriebs-Dichteprüfung",
+      "desc": "Visueller Dichteanzeiger ohne moderne Hydrometer. Schwimmt das Stück in der Lauge so auf, dass eine Daumennagelbreite über der Oberfläche liegt, entspricht die Dichte exakt den erforderlichen 1,08 g/cm³."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Tassen ausgelassener Tiertalg (Rinder-/Schweinefett) oder geklärtes Altspeiseöl",
+      "desc": "Über schwacher Hitze geschmolzene Fettabschnitte von Beutetieren, befreit von Grieben und Wasser, oder gefiltertes Pflanzenöl aus städtischen Restbeständen. Hohe Reinheit verhindert Verderb und sichert Formstabilität."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 Esslöffel feines Kiefernharzpulver und 1 Teelöffel Kochsalz",
+      "desc": "Helle Kiefernharzkristalle ähnlich der [Kiefernharz-Wundsalbe](/protocol-10.html), zu feinem Pulver zerstoßen. Natürliche Phytonzide maximieren die antimikrobielle Wirkung; das Salz unterstützt die Härtung der Seifenstücke."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Weiße Eichenasche im Dosenfilter verdichten und mit heißem Wasser goldene Lauge auslaugen",
+      "description": "1. **Ascheauslese & Vorbereitung**: Sortieren Sie unverbrannte schwarze Kohlestücke aus und sammeln Sie einen Eimer **mehlfeine, weiße Eichenasche**, befreit von Rinde und Steinen.\n2. **Kies- & Grasfilterschicht anlegen**: Stanzen Sie kleine Nagellöcher in den Boden einer großen Blechdose, legen Sie saubere daumendicke Kiesel hinein und verdichten Sie trockenes Schilfgras **zwei Fingerbreit (ca. 3 cm)** fest darüber.\n3. **Asche einfüllen & Heißwasseraufguss**: Drücken Sie die weiße Asche bis zu **einer Handbreite unter den Rand (80% Füllung)** fest an und gießen Sie langsam [kochendes, heißes Wasser](/protocol-01.html) auf, bis das Aschebett vollständig getränkt ist.\n4. **Goldene Lauge auffangen**: Stellen Sie ein sauberes Auffanggefäß unter die Dose und fangen Sie die tropfende, bernsteingoldene, seifig-glatte Holzaschelauge (Kaliumkarbonatlösung) auf.",
+      "actionNote": "> Verätzungsgefahr: Konzentrierte Eichenaschelauge zersetzt Proteine und verursacht schwere Verätzungen auf ungeschützter Haut. Benutzen Sie ausschließlich Holzspatel und spülen Sie Spritzer sofort 5 Minuten mit klarem, kaltem Wasser aus. Botanische Felddetails siehe Spezifikation unten.",
+      "svgFileName": "pr13-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // EICHENASCHELAUGE-AUSLAUGUNGSFILTER",
+        "EICHEN-WEISSASCHEBETT (OBERE 80% VERDICHTET)",
+        "SCHILFGRAS-FASERSCHICHT & KIES-PUFFERFILTER",
+        "AUSGELAUGTE BERNSTEINGOLDENE ALKALISCHE LAUGE",
+        "[SCHRITT 1 FOKUS] ASCHESIEBUNG & HEISSWASSER-LIXIVIATION"
+      ],
+      "deepDive": {
+        "badge": "FIELD CHEMISTRY",
+        "title": "Kaliumkarbonat-Auslaugung (K2CO3) und hochalkalische Ausbeutefaktoren",
+        "text": "Beim Verbrennen dichter Harthölzer wie Eiche reagiert das im Holzgewebe gespeicherte Kalium zu Kaliumkarbonat (K2CO3). Durch die Verwendung von 70–80°C heißem Wasser verdoppelt sich die Löslichkeit im Vergleich zu kaltem Wasser, was eine schnelle Auslaugung hochkonzentrierter Lauge bewirkt. Schwarze Holzkohleanteile müssen zwingend entfernt werden, da lösliche Gerbstoffe (Tannine) die Seife brüchig machen und verfärben.",
+        "fieldSpecs": [
+          {
+            "name": "Vollständig ausgebrannte weiße Eichenholzasche",
+            "scientificName": "Quercus Acutissima White Wood Ash",
+            "categoryTag": "Feldchemisches Reagenz / Alkalische Kaliumquelle",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-13A // MACRO OPTIC",
+            "hudStatus": "POTASSIUM CONTENT HIGH: VERIFIED",
+            "traits": [
+              {
+                "label": "FARBE",
+                "value": "Kreidig **reinweiß oder helles Silbergrau**, frei von schwarzen Kohleresten."
+              },
+              {
+                "label": "TEXTUR",
+                "value": "Zerfällt zwischen den Fingern zu einem **seidig-feinen, mehlartigen Pulver**."
+              },
+              {
+                "label": "LAUGE",
+                "value": "Ergibt nach Heißwasserdurchlauf eine **klare, bernsteingoldene Flüssigkeit** mit rutschigem Griff."
+              }
+            ],
+            "fieldUse": "Laugenextraktion für Seife, Neutralisation saurer Böden, Entspelzung von Getreide"
+          },
+          {
+            "name": "Natürliche Kiefernharzkristalle",
+            "scientificName": "Pinus Densiflora Natural Oleoresin",
+            "categoryTag": "Feld-Konservierungsmittel / Natürliches antibakterielles Phytonzid",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-13B // MACRO OPTIC",
+            "hudStatus": "TERPENE PURITY: VERIFIED",
+            "traits": [
+              {
+                "label": "FORM",
+                "value": "Erstarrte **bernsteinfarbene oder weißgelbliche, halbtransparente Harztränen**."
+              },
+              {
+                "label": "DUFT",
+                "value": "Beim Zerdrücken verströmt es einen **intensiv-frischen Terpengeruch nach Nadelwald**."
+              },
+              {
+                "label": "WIRKUNG",
+                "value": "Stabilisiert den Schaum und **hemmt Staphylokokken sowie infektiöse Keime**."
+              }
+            ],
+            "fieldUse": "Antiseptischer Seifenzusatz, desinfizierende Wundsalbe, wasserfester Baumharzkleber"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Laugendichte mittels Kartoffel-Auftrieb prüfen und Talg oder Altspeiseöl klären",
+      "description": "1. **Kartoffel-Dichteprüfung**: Legen Sie ein **daumennagelgroßes Stück rohe Kartoffel (ca. 2 cm)** oder ein frisches rohes Ei vorsichtig in die aufgefangene Lauge.\n2. **Auftriebshöhe beurteilen**: Sinkt das Stück auf den Boden, ist die Lauge zu schwach; kochen Sie sie auf kleiner Flamme ein, **bis sich das Volumen halbiert hat**. Schwimmt die Kartoffel so, dass **eine Daumennagelfläche über den Wasserspiegel ragt**, ist die optimale Konzentration erreicht.\n3. **Tiertalg ausschmelzen**: Schneiden Sie Fettabschnitte von Beutetieren klein, geben Sie sie in einen Topf über der schwachen Flamme des [Holzvergaserofens](/protocol-12.html) und schmelzen Sie klares flüssiges Öl aus.\n4. **Filtrieren & Abmessen**: Seihen Sie das geschmolzene Fett durch ein sauberes Tuch oder Schilf ab, um Fleischreste und Wasser vollständig zu entfernen, und stellen Sie **exakt 2 Tassen klares Öl** bereit.",
+      "actionNote": "> Auftriebsregel: Ragt die Kartoffel zu mehr als der Hälfte aus der Lauge heraus, ist die Lauge überkonzentriert und führt zu Hautreizungen. Geben Sie schrittweise eine halbe Tasse sauberes Wasser hinzu, bis nur noch eine kleine Kuppe herausschaut.",
+      "svgFileName": "pr13-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // KARTOFFEL-AUFTRIEBS-DICHTETEST",
+        "AUFSCHWIMMENDES KARTOFFELSTÜCK (DAUMENNAGELBREITE)",
+        "EINKOCHEN BEI UNTERSCHREITUNG & VERDÜNNEN BEI ÜBERSCHUSS",
+        "AUSGELASSENER TIERTALG & 2 TASSEN REINES ÖL",
+        "[SCHRITT 2 FOKUS] DICHTEKONTROLLE & FETTKLÄRUNG"
+      ],
+      "deepDive": {
+        "badge": "SPECIFIC GRAVITY",
+        "title": "Hydrodynamik der feldmäßigen Dichtemessung (Spezifisches Gewicht 1,05~1,10)",
+        "text": "Eine gebrauchsfähige Seifenlauge besitzt eine Dichte von ca. 1,08 g/cm³. Frische rohe Kartoffeln weisen eine mittlere Dichte von 1,06 bis 1,09 g/cm³ auf und schwimmen gemäß dem archimedischen Prinzip erst dann auf, wenn die Kaliumkarbonatkonzentration ausreichend hoch ist. Bei einer Dichte unter 1,05 g/cm³ misslingt die Verseifungsreaktion und die Phasen trennen sich wieder."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Lauge und Fett im Verhältnis 1:1 mischen und unter stetigem Rühren bis zur Zeichnung sieden",
+      "description": "1. **Mischungsverhältnis einhalten**: Geben Sie 2 Tassen geklärtes warmes Fett und 2 Tassen eingestellte Lauge im **exakten 1:1 Volumenverhältnis** in einen Metalltopf.\n2. **Sanfte Glutwärme**: Meiden Sie offenes Brandfeuer und halten Sie den Topf auf sanfter Glutwärme, sodass **lediglich feine Bläschen am Topfrand aufsteigen**.\n3. **Kontinuierliches Rühren in eine Richtung**: Rühren Sie die Mischung mit einem flachen Holzspatel **40 bis 50 Minuten lang ununterbrochen in kreisenden Bewegungen in dieselbe Richtung**. Ein plötzlicher Richtungswechsel kann die Emulsion zerreißen.\n4. **Prüfung der Zeichnung (Trace) & Harzzugabe**: Sobald die Masse die Konsistenz von dickflüssigem Brei oder Erdnussbutter annimmt und vom Spatel abtropfende Spuren **mindestens 3 Sekunden lang sichtbar auf der Oberfläche verweilen**, rühren Sie **1 Esslöffel Kiefernharzpulver** und 1 Teelöffel Salz ein und nehmen den Topf von der Glut.",
+      "actionNote": "> 3-Sekunden-Zeichnung: Die Seifenmasse muss beim Anheben des Spatels deutliche, erhabene Fäden bilden, die nicht sofort verlaufen. Dies signalisiert den erfolgreichen Abschluss der chemischen Verseifung. Das Kiefernharz verleiht einen frischen Duft und stärkt den Schaum.",
+      "svgFileName": "pr13-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // VERSEIFUNGSREAKTION & RÜHRPROZESS",
+        "LAUGE & GEKLÄRTES FETT IM 1:1 VOLUMENVERHÄLTNIS",
+        "KONTINUIERLICHES RÜHREN IN EINE RICHTUNG (45 MIN)",
+        "ZEICHNUNG: SPATELSPUR BLEIBT 3 SEKUNDEN BESTEHEN",
+        "[SCHRITT 3 FOKUS] MÄSSIGE HITZE & HARZZUGABE"
+      ],
+      "deepDive": {
+        "badge": "SAPONIFICATION",
+        "title": "Triglycerid-Hydrolyse und Glycerinbildung im Verseifungsprozess",
+        "text": "Esterbindungen der Triglyceride im Fett werden durch basische Kaliumionen hydrolysiert. Dabei verbinden sich Fettsäuren mit Kalium zu Kaliumfettsäuresalzen (echte Naturseife), während Glycerin als natürlicher Feuchtigkeitsspender freigesetzt wird. Das gleichmäßige Rühren in eine Richtung vergrößert die Grenzfläche der nicht mischbaren Phasen und beschleunigt die molekulare Bindung."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: In Rindenformen gießen, im Schatten aushärten lassen und Verträglichkeit per Schaumtest prüfen",
+      "description": "1. **Rindenform falten**: Falten Sie aus glatter Birken- oder Kiefernrinde eine **handtellergroße rechteckige Kastenform** oder modellieren Sie einen Lehmdamm auf einer flachen Steinplatte.\n2. **Eingießen & Entlüften**: Gießen Sie den zähflüssigen Seifenbrei in die Form und klopfen Sie den Boden sanft auf, um Luftbläschen entweichen zu lassen.\n3. **48 Stunden Schattentrocknung**: Lagern Sie die Form an einem gut belüfteten, regengeschützten und schattigen Felsspalt und lassen Sie sie **zwei volle Tage (48 Stunden)** fest werden.\n4. **Schaumtest auf dem Handrücken**: Schneiden Sie die feste Seife in faustgroße Stücke. Befeuchten Sie ein Stück und reiben Sie es auf dem Handrücken: Entsteht ein **feiner, dichter weißer Schaum ohne Brennen oder Rötung**, ist die Seife einsatzbereit.",
+      "actionNote": "> Verträglichkeitskontrolle: Brennt oder juckt die Haut beim Einreiben, ist noch unneutralisierte Restlauge vorhanden. Spülen Sie die Haut mit Wasser ab und lassen Sie die Seife weitere 3 bis 4 Tage im Schatten nachreifen; sie nimmt Kohlendioxid aus der Luft auf und wird mild.",
+      "svgFileName": "pr13-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // RINDENFORMGUSS & SCHAUM-SICHERHEITSTEST",
+        "RECHTECKIGE BIRKENRINDEN-GUSSFORM & BEFÜLLUNG",
+        "48 STUNDEN SCHATTENAUSHÄRTUNG AN FRISCHER LUFT",
+        "FEINER DICHTER SCHAUM OHNE HAUTBRENNEN",
+        "[SCHRITT 4 FOKUS] VOLLSTÄNDIGE REIFUNG & HAUTTEST"
+      ],
+      "deepDive": {
+        "badge": "ANTIMICROBIAL SCIENCE",
+        "title": "Auflösung von Lipid-Doppelschichten und Zerstörung von Bakterienmembranen",
+        "text": "Seifenmoleküle bestehen aus einem fettliebenden (lipophilen) Kohlenwasserstoffschwanz und einem wasserliebenden (hydrophilen) Kopf. Treffen sie auf Bakterien oder Viren in Schmutz und Wundsekreten, dringen die lipophilen Enden keilartig in die Lipid-Doppelschicht der mikrobiellen Membran ein, reißen sie auf und zerstören den Erreger, bevor die Bruchstücke im Schaum mit Wasser weggespült werden."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fataler Fehler: Hantieren mit konzentrierter Lauge ohne Schutz oder Auftragen unreifer Seife auf frische Fleischwunden",
+    "description": "Aus Eichenasche ausgelaugte Lauge ist stark alkalisch und zersetzt körpereigenes Eiweiß; Berührung mit bloßen Händen führt zu schweren chemischen Verbrennungen, Spritzer in die Augen können zur Erblindung führen. Frische, unvollständig verseifte Seife auf tiefen Wunden ruft Gewebenekrosen hervor. Bei Hautkontakt sofort mindestens 5 Minuten mit reichlich kaltem Wasser spülen. Nutzen Sie ausschließlich Seife, die 48 Stunden gereift ist und den Schaumtest bestanden hat.",
+    "consequence": "Folge: Schwere chemische Hautverätzungen, irreversible Erblindung durch Hornhautschäden und Gewebenekrosen"
+  },
+  "shortsScript": {
+    "hook": "Ohne Ärzte und Penicillin führt ein kleiner Kratzer in der Wildnis binnen 3 Tagen zur tödlichen Sepsis! So kochst du echte Desinfektionsseife aus Eichenasche!",
+    "body": "Sammle reine weiße Eichenasche in einer gelochten Dose und gieße heißes Wasser darüber, um goldene Lauge zu filtern. Schwimmt ein Stück rohe Kartoffel mit daumennagelbreitem Kopf auf, stimmt die Dichte perfekt! Mische die Lauge 1:1 mit ausgelassenem Tierfett und rühre sie auf kleiner Glut 40 Minuten in eine Richtung. Zieht der Spatel eine 3 Sekunden stehende Spur, rühre Kiefernharzpulver ein und gieße alles in Rindenformen. Nach zwei Tagen Schattenreife wäscht der weiße Schaum sämtliche Keime eiskalt weg!",
+    "outro": "Lade dir die taktischen Vektor-Schaltpläne für die Offline-Nutzung über den Profil-Link herunter."
+  },
+  "outcome": {
+    "svgFileName": "pr13-outcome.svg",
+    "title": "Technische Fertigungsspezifikationen & Verseifungs-Querschnitt der Eichenaschelauge-Naturseife",
+    "description": "Umfassender Querschnitt der chemischen Feldfertigung: Eichenasche-Laugensäule, Kartoffel-Auftriebsprüfung, 1:1-Verseifungsreaktion im Kochtopf und die fertigen quaderförmigen Desinfektionsseifenstücke aus der Rindengussform.",
+    "svgLabels": [
+      "FIG. 13-M // EICHENASCHELAUGE-SEIFENHERSTELLUNG GESAMTÜBERSICHT",
+      "LINKS: EICHENASCHE-AUSLAUGUNG & KARTOFFEL-AUFTRIEBSDICHTE",
+      "MITTE: 1:1 VERSEIFUNG BEI MÄSSIGER HITZE & HARZZUGABE",
+      "RECHTS: AUSGEHÄRTETE QUADERSICHERHEITSSEIFE AUS RINDENFORM",
+      "[PR-13 ABSCHLUSS] KEIMTÖTENDE FELDHYGIENE-DESINFEKTIONSSEIFE"
+    ]
+  },
+  "createdAt": "2026-10-21T05:30:00.000Z",
+  "contentHash": "84750b222b4c5546",
+  "updatedAt": "2026-10-21T05:32:17.564Z"
+}

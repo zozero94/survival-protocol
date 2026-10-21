@@ -1,0 +1,190 @@
+{
+  "protocolId": "PR-13",
+  "category": "MEDICINE",
+  "title": "Fabricación de Jabón Desinfectante Natural con Lejía de Ceniza de Roble y Grasa para Prevenir Infecciones",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[HIGIENE DE CAMPO & DESINFECCIÓN DE HERIDAS & PREVENCIÓN DE SEPSIS]",
+  "summary": "En escenarios de supervivencia agreste o colapso de infraestructuras sin agua corriente ni medicinas, un simple raspón o comer con manos contaminadas puede provocar disentería mortal, tétanos o sepsis sistémica fulminante. Al recolectar ceniza blanca pura de roble de una hoguera o de la [estufa de gasificación de leña de doble lata](/protocol-12.html), compactarla en una lata filtrante con lecho de grava y hierba seca, y verter agua caliente, se extrae lejía alcalina de carbonato de potasio. Al hervir suavemente esta lejía en proporción 1:1 con sebo animal clarificado o aceite vegetal rescatado mientras se bate continuamente con una espátula de madera, se desencadena la saponificación, produciendo un potente jabón antiséptico que destruye las membranas de los patógenos.",
+  "timeRequired": "70 minutos (20 min lixiviación de ceniza + 45 min ebullición de saponificación + 5 min vertido)",
+  "successRate": "95% (al verificar densidad con flotación de patata y mantener batido unidireccional)",
+  "difficulty": "Media (precaución extrema contra quemaduras cáusticas por lejía alcalina en piel y ojos)",
+  "outputPerHour": "1 cubo de ceniza de roble y 2 tazas de grasa rinden 3–4 pastillas de jabón (suministro mensual de campo)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Un cubo de ceniza blanca pura de madera dura (roble) completamente calcinada",
+      "desc": "Ceniza pulverulenta y sedosa como harina, recolectada de un [horno de carbón de roble](/protocol-09.html) o fogón, tras cribar y retirar todos los trozos negros de carbón. El roble ofrece la máxima concentración de sales de potasio para una lejía concentrada."
+    },
+    {
+      "id": "mat-02",
+      "name": "Lata metálica perforada con lecho filtrante de grava y hierba seca",
+      "desc": "Basada en los principios mecánicos del [filtro de agua natural](/protocol-01.html). Una lata de conserva grande con agujeros de clavo en la base, almohadillada con guijarros y hierba seca compacta para retener la ceniza mientras drena lejía dorada limpia. Quemar previamente los recubrimientos sintéticos."
+    },
+    {
+      "id": "mat-03",
+      "name": "Trozo de patata cruda (o huevo fresco) para prueba de flotabilidad",
+      "desc": "Indicador hidrométrico visual sin instrumentos modernos. Al colocarla en la lejía, debe flotar asomando una corona del tamaño de una uña sobre la superficie, confirmando la densidad ideal (1,08 g/cm³) para la saponificación."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 tazas de grasa animal clarificada (sebo de res/cerdo) o aceite vegetal residual",
+      "desc": "Recortes de grasa animal derretidos a fuego lento y filtrados de chicharrones y agua, o aceite vegetal recogido de restos urbanos. La ausencia de impurezas garantiza un jabón sólido y duradero que no se enrancia."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 cucharada de resina de pino molida y 1 cucharadita de sal común",
+      "desc": "Cristales transparentes de resina de pino obtenidos como en el [ungüento de brea de pino](/protocol-10.html), triturados en polvo para aportar fitoncidas antibacterianos, junto a una pizca de sal para endurecer las pastillas y facilitar el desmoldeo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Compactar ceniza blanca de roble en la lata filtrante y lixiviar lejía alcalina dorada con agua caliente",
+      "description": "1. **Cribado de ceniza blanca pura**: Retire cualquier trozo de carbón negro y recolecte un cubo de **ceniza de roble blanca y fina**, sacudiendo restos gruesos de corteza o tierra.\n2. **Estratificación del filtro de grava y hierba**: En una lata grande de hojalata con orificios perforados en el fondo, coloque guijarros limpios del grosor de un pulgar y comprima encima hierba seca hasta un espesor de **dos nudillos (aprox. 3 cm)** para evitar fugas de ceniza.\n3. **Carga de ceniza e infusión caliente**: Rellene con la ceniza blanca comprimiendo firmemente hasta **un palmo de altura (80% del volumen)**, y vierta lentamente [agua hervida muy caliente](/protocol-01.html) hasta saturar todo el lecho.\n4. **Recolección de lejía ambarina**: Coloque un cuenco limpio debajo para recoger gota a gota la lejía densa, resbaladiza y de color ámbar dorado (solución de carbonato de potasio).",
+      "actionNote": "> Peligro de quemadura cáustica: La lejía concentrada es altamente alcalina y disuelve la queratina y las proteínas de la piel viva. Utilice siempre espátulas de madera y enjuague de inmediato con agua fría corriente durante 5 minutos si salpica la piel o los ojos. Confirme los rasgos botánicos en la guía inferior.",
+      "svgFileName": "pr13-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // LEJÍA DE CENIZA DE ROBLE - COLUMNA DE FILTRACIÓN",
+        "LECHO DE CENIZA BLANCA DE ROBLE (80% SUPERIOR)",
+        "CAPA DE FIBRA DE HIERBA SECA & TAMPÓN DE GRAVA",
+        "LIXIVIACIÓN DE LEJÍA ALCALINA ÁMBAR DORADA",
+        "[PASO CLAVE 1] CRIBADO DE CENIZA & LIXIVIACIÓN EN CALIENTE"
+      ],
+      "deepDive": {
+        "badge": "FIELD CHEMISTRY",
+        "title": "Lixiviación de Carbonato de Potasio (K2CO3) y Rendimiento Alcalino de Alta Pureza",
+        "text": "Al quemar maderas duras como el roble, el potasio acumulado en los tejidos vegetales reacciona con el dióxido de carbono formando carbonato de potasio (K2CO3). Verter agua caliente a 70–80°C duplica con creces la solubilidad frente al agua fría, acelerando la extracción de lejía concentrada. El carbón vegetal negro no quemado debe eliminarse minuciosamente, ya que los taninos solubles manchan la solución y reblandecen el jabón final.",
+        "fieldSpecs": [
+          {
+            "name": "Ceniza de Madera de Roble Completamente Calcinada",
+            "scientificName": "Quercus Acutissima White Wood Ash",
+            "categoryTag": "Reactivo Químico de Campo / Fuente de Base Alcalina",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-13A // MACRO OPTIC",
+            "hudStatus": "POTASSIUM CONTENT HIGH: VERIFIED",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Polvo calcáreo **completamente blanco o gris plateado brillante**, sin residuos de carbón negro."
+              },
+              {
+                "label": "TEXTURA",
+                "value": "Al frotarla entre los dedos, se deshace en un **polvo impalpable y suave** sin granos ásperos."
+              },
+              {
+                "label": "LEJÍA",
+                "value": "Al pasar agua caliente, genera un **líquido ámbar dorado transparente** de tacto muy jabonoso."
+              }
+            ],
+            "fieldUse": "Extracción de lejía cáustica para jabón, neutralización de suelos ácidos, pelado de granos"
+          },
+          {
+            "name": "Cristales de Resina Natural de Pino",
+            "scientificName": "Pinus Densiflora Natural Oleoresin",
+            "categoryTag": "Conservante de Campo / Fitoncida Antibacteriano Natural",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-13B // MACRO OPTIC",
+            "hudStatus": "TERPENE PURITY: VERIFIED",
+            "traits": [
+              {
+                "label": "ASPECTO",
+                "value": "Gotas y lágrimas endurecidas de resina **translúcida de tono ámbar o blanco amarillento**."
+              },
+              {
+                "label": "AROMA",
+                "value": "Al triturarla emana una **fuerte y penetrante fragancia a pinar silvestre (terpenos)**."
+              },
+              {
+                "label": "EFECTO",
+                "value": "Mejora la espuma, endurece la barra e **inhibe estafilococos y bacterias patógenas**."
+              }
+            ],
+            "fieldUse": "Aditivo antiséptico para jabón, pomada desinfectante estéril, adhesivo impermeable"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Calibrar la concentración de lejía mediante flotación de patata y clarificar la grasa o aceite residual",
+      "description": "1. **Prueba hidrométrica con patata cruda**: En el recipiente con la lejía extraída, deposite con delicadeza un **trozo de patata cruda del tamaño de una uña (2 cm de diámetro)** o un huevo fresco.\n2. **Evaluación de la altura de flotación**: Si la patata se hunde hasta el fondo, la lejía está demasiado diluida; llévela al fuego y **hiérvala a fuego moderado hasta reducir su volumen a la mitad**. Si la patata flota asomando **el tamaño de una uña sobre la superficie**, la concentración es perfecta para fabricar jabón.\n3. **Clarificación térmica de la grasa animal**: Pique en dados pequeños los restos de grasa de caza o sebo, colóquelos en una olla sobre la llama suave del [estufa de leña de gasificación](/protocol-12.html) y fúndalos lentamente para liberar el aceite líquido claro.\n4. **Filtrado de impurezas**: Filtre la grasa fundida a través de un paño limpio o fibra vegetal para retirar todos los restos de carne y agua, reuniendo **2 tazas exactas de grasa clarificada y limpia**.",
+      "actionNote": "> Calibración de flotabilidad: Si la patata flota sobresaliendo más de la mitad, la lejía es excesivamente cáustica y el jabón quemará la piel. Añada media taza de agua limpia para diluir hasta que solo asome una pequeña corona en la superficie.",
+      "svgFileName": "pr13-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // PRUEBA DE GRAVEDAD ESPECÍFICA CON PATATA",
+        "PATATA FLOTANDO ASOMANDO UNA CORONA DEL TAMAÑO DE UNA UÑA",
+        "CONCENTRAR SI SE HUNDE & DILUIR SI FLOTA EN EXCESO",
+        "SEBO ANIMAL FUNDIDO & 2 TAZAS DE ACEITE CLARIFICADO",
+        "[PASO CLAVE 2] CONTROL DE FLOTABILIDAD & FILTRADO DE GRASA"
+      ],
+      "deepDive": {
+        "badge": "SPECIFIC GRAVITY",
+        "title": "Hidrodinámica del Control de Densidad de Campo (Gravedad Específica 1,05~1,10)",
+        "text": "La lejía en concentración óptima alcanza una gravedad específica cercana a 1,08 g/cm³. La patata cruda fresca posee una densidad media de 1,06 a 1,09 g/cm³, por lo que solo flotará según el principio de Arquímedes cuando la concentración alcalina sea suficiente. Una densidad inferior a 1,05 impide la reacción de saponificación y provoca la separación de fases entre el aceite y el agua."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Mezclar lejía y grasa en proporción 1:1 y hervir batiendo en una sola dirección hasta alcanzar traza",
+      "description": "1. **Proporción de vertido**: En una olla metálica, combine 2 tazas de grasa animal clarificada tibia y 2 tazas de lejía calibrada en **proporción de volumen exacta 1:1**.\n2. **Cocción a fuego bajo y constante**: Evite llamas intensas; mantenga la mezcla sobre brasas calientes asegurando **un hervor suave con diminutas burbujas en los bordes**.\n3. **Batido unidireccional ininterrumpido**: Con una espátula de madera limpia, remueva el líquido en **círculos hacia una sola dirección durante 40 a 50 minutos** sin detenerse. Si invierte la dirección bruscamente, la emulsión puede romperse separando el aceite de la lejía.\n4. **Verificación del punto de traza y adición de resina**: Cuando la masa adquiera la textura espesa de crema o puré, y al levantar la espátula el chorro forme **un relieve visible que persista durante 3 segundos**, añada **1 cucharada de resina de pino molida** y 1 cucharadita de sal, mezcle a fondo y retire del fuego.",
+      "actionNote": "> Señal de traza de 3 segundos: La masa debe mantener surcos nítidos al escurrir de la espátula. Este estado confirma que la saponificación química se ha completado. La resina de pino pulverizada aporta propiedades antisépticas duraderas y compacta la espuma.",
+      "svgFileName": "pr13-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // REACCIÓN DE SAPONIFICACIÓN & AGITACIÓN",
+        "MEZCLA DE LEJÍA Y GRASA CLARIFICADA EN PROPORCIÓN 1:1",
+        "BATIDO UNIDIRECCIONAL CONTINUO DURANTE 45 MINUTOS",
+        "TRAZA ESPESA CON RELIEVE QUE PERSISTE 3 SEGUNDOS",
+        "[PASO CLAVE 3] FUEGO LENTO & INCORPORACIÓN DE RESINA"
+      ],
+      "deepDive": {
+        "badge": "SAPONIFICATION",
+        "title": "Mecanismo Químico de Hidrólisis de Triglicéridos y Formación de Glicerina",
+        "text": "Los ésteres de los triglicéridos de la grasa reaccionan con la base de carbonato de potasio, rompiendo los enlaces lipídicos para formar sales potásicas de ácidos grasos (jabón natural) y liberando glicerina como subproducto emoliente. La agitación unidireccional maximiza el área interfacial entre los líquidos inmiscibles, acelerando el choque molecular necesario para la reacción completa."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Verter en moldes de corteza, curar a la sombra y verificar seguridad con prueba de espuma",
+      "description": "1. **Construcción del molde de corteza**: Pliegue una lámina limpia y lisa de corteza de abedul o pino formando una **caja rectangular del tamaño de una palma**, o cree un cerco de arcilla sobre una laja de piedra plana.\n2. **Vertido de masa y desaireado**: Vierta la masa caliente de jabón en el molde y golpee suavemente la base contra el suelo para expulsar las burbujas de aire atrapadas.\n3. **Curado en sombra ventilada durante 48 horas**: Sitúe el molde en una hendidura rocosa ventilada, protegida de la lluvia y del sol directo, dejándolo endurecer durante **dos días enteros (48 horas)**.\n4. **Prueba de espuma en el dorso de la mano**: Desmolde y corte la barra en pastillas del tamaño de medio puño. Humedézcala y frótela en el dorso de la mano: si genera una **espuma blanca y cremosa sin provocar picor ni ardor**, el jabón es seguro para su uso.",
+      "actionNote": "> Control de reactividad dérmica: Si nota escozor, picor o enrojecimiento, la lejía aún no se ha neutralizado del todo. Enjuáguese con abundante agua y deje curar las pastillas de jabón a la sombra durante 3 o 4 días adicionales; la absorción paulatina de dióxido de carbono atmosférico completará la neutralización alcalina.",
+      "svgFileName": "pr13-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // MOLDEADO EN CORTEZA & PRUEBA DE ESPUMA",
+        "MOLDE RECTANGULAR DE CORTEZA DE ABEDUL & VERTIDO",
+        "CURADO NATURAL DE 48 HORAS EN SOMBRA VENTILADA",
+        "ESPUMA CREMOSA ABUNDANTE SIN IRRITACIÓN DÉRMICA",
+        "[PASO CLAVE 4] CURADO COMPLETO & PRUEBA DE BIOSEGURIDAD"
+      ],
+      "deepDive": {
+        "badge": "ANTIMICROBIAL SCIENCE",
+        "title": "Disolución de Bicapas Lipídicas y Ruptura de Membranas Bacterianas",
+        "text": "Las moléculas de jabón poseen una cola hidrocarbonada lipofílica (afín a las grasas) y una cabeza hidrofílica (afín al agua). Al entrar en contacto con bacterias o virus patógenos presentes en las heridas o manos, las colas lipofílicas se insertan en la bicapa lipídica que forma la membrana externa del microorganismo, rompiéndola como cuñas y disolviendo su envoltura, para luego arrastrar los restos en microgotas suspendidas durante el enjuague."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Manipular lejía cáustica con las manos desnudas o aplicar jabón inmaduro sobre heridas abiertas profundas",
+    "description": "La lejía lixiviada de ceniza de roble es un álcali fuerte que digiere las proteínas dérmicas; tocarla sin protección produce quemaduras químicas graves y puede causar ceguera permanente si salpica los ojos. Asimismo, frotar jabón crudo sin curar en heridas profundas provoca necrosis tisular por exceso cáustico. En caso de contacto accidental, lave la piel con abundante agua fría durante al menos 5 minutos, y use únicamente jabón que haya completado 48 horas de curado y superado la prueba de espuma para desinfectar vajilla y el contorno de laceraciones.",
+    "consequence": "Consecuencia: Quemaduras químicas graves, pérdida irreversible de visión por daño corneal y necrosis celular por contacto cáustico"
+  },
+  "shortsScript": {
+    "hook": "¡En plena catástrofe sin médicos ni antibióticos, una simple herida infectada te causará sepsis mortal en 3 días! ¡Aprende a fabricar jabón antiséptico con ceniza de roble!",
+    "body": "Recoge ceniza blanca pura de roble en una lata perforada y vierte agua caliente para extraer lejía dorada. Comprueba la concentración con una patata cruda: si flota asomando una corona, ¡es la densidad exacta! Mézclala 1 a 1 con grasa animal clarificada y bátela al fuego en una sola dirección durante 40 minutos. Cuando la espátula deje un rastro espeso que dure 3 segundos, añade resina de pino molida y viértela en un molde de corteza durante dos días. ¡Al frotar brotará una espuma blanca que fulmina cualquier bacteria patógena!",
+    "outro": "Descarga los diagramas tácticos vectoriales para consultarlos sin internet en el enlace del perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr13-outcome.svg",
+    "title": "Especificaciones Técnicas del Proceso de Fabricación y Reacción de Saponificación de Jabón de Lejía de Roble",
+    "description": "Sección química y táctica que ilustra la columna de lixiviación de ceniza de roble, la medición hidrométrica por flotación de patata, el proceso de cocción y saponificación 1:1 en caldero, y las pastillas cuadradas de jabón desinfectante curadas en moldes de corteza natural.",
+    "svgLabels": [
+      "FIG. 13-M // RESUMEN DE PRODUCCIÓN DE JABÓN DE LEJÍA Y ROBLE",
+      "IZQ: LIXIVIACIÓN DE CENIZA & PRUEBA DE FLOTABILIDAD DE PATATA",
+      "CENTRO: REACCIÓN DE SAPONIFICACIÓN 1:1 & AGITACIÓN CON RESINA",
+      "DER: BLOQUES DE JABÓN DESINFECTANTE CURADOS EN CORTEZA",
+      "[PR-13 FINAL] JABÓN ANTISÉPTICO DESTRUCTIVO DE MEMBRANAS BACTERIANAS"
+    ]
+  },
+  "createdAt": "2026-10-21T05:30:00.000Z",
+  "contentHash": "84750b222b4c5546",
+  "updatedAt": "2026-10-21T05:32:17.564Z"
+}

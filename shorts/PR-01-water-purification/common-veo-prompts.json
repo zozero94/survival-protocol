@@ -1,0 +1,71 @@
+{
+  "protocolId": "PR-01",
+  "title": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+  "aspectRatio": "9:16",
+  "totalDurationSeconds": 45,
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "startSecond": 0,
+      "endSecond": 5,
+      "durationSeconds": 5,
+      "screenType": "HOOK",
+      "referencePlate": "pr01-outcome.svg",
+      "flowPrompt": "Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand). Character says: \"Survival emergency hook warning.\" (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone."
+    },
+    {
+      "sceneNumber": 2,
+      "startSecond": 5,
+      "endSecond": 10,
+      "durationSeconds": 5,
+      "screenType": "CHECKLIST",
+      "referencePlate": "pr01-step-01.svg",
+      "flowPrompt": "Vertical 9:16 eye-level knolling layout shot, smooth camera slide from left to right. Crisp survival field manual aesthetic. Neutral overcast soft daylight. Natural raw materials neatly arranged on dark slate stone: Hardwood charcoal, Clean rinsed river sand, Small round pebbles. Hands selecting and inspecting the first item. (no subtitles). Audio: gentle rustling of wood and stone handling | Background music: steady building tactical rhythm."
+    },
+    {
+      "sceneNumber": 3,
+      "startSecond": 10,
+      "endSecond": 18,
+      "durationSeconds": 8,
+      "screenType": "STEP_1",
+      "referencePlate": "pr01-step-01.svg",
+      "flowPrompt": "Vertical 9:16 medium close-up shot, slow downward tilt following hands. Gritty authentic survival documentary style. Directional morning side-lighting. Hands carefully executing step 1: Step 1: Set up a 3-stick tripod and mount the cone funnel. (no subtitles). Audio: tactile craft foley, wood clicking, cordage binding | Background music: focused rhythmic pacing."
+    },
+    {
+      "sceneNumber": 4,
+      "startSecond": 18,
+      "endSecond": 26,
+      "durationSeconds": 8,
+      "screenType": "STEP_2",
+      "referencePlate": "pr01-step-02.svg",
+      "flowPrompt": "Vertical 9:16 dynamic 45-degree angle shot, subtle upward pedestal camera movement. Hyper-realistic tactile manual aesthetic. Warm directional sunlight. Hands assembling step 2: Step 2: Crush charcoal to pea size and pack an 8cm active bed. (no subtitles). Audio: friction scraping, crisp material layering sound | Background music: confident problem-solving melody."
+    },
+    {
+      "sceneNumber": 5,
+      "startSecond": 26,
+      "endSecond": 34,
+      "durationSeconds": 8,
+      "screenType": "STEP_3",
+      "referencePlate": "pr01-step-03.svg",
+      "flowPrompt": "Vertical 9:16 close-up tracking shot, steady camera tracking physical transformation. Tactical documentary visual. Golden hour warm glow. Key mechanical operation in progress: Step 3: Layer clean rinsed river sand to a flat 6cm barrier. Clear visible functional result emerging. (no subtitles). Audio: satisfying mechanical lock, flow of air or liquid | Background music: triumphant tactical swell."
+    },
+    {
+      "sceneNumber": 6,
+      "startSecond": 34,
+      "endSecond": 42,
+      "durationSeconds": 8,
+      "screenType": "FATAL_WARNING",
+      "referencePlate": "pr01-outcome.svg",
+      "flowPrompt": "Vertical 9:16 high-contrast warning shot, sudden subtle camera shake and slow dramatic push-in. High-tension survival aesthetic with deep shadows. Flickering red firelight and stark cold shadows. Hands hesitating before common fatal error: Fatal Mistake: Drinking filtered clear water without thermal boiling. (no subtitles). Audio: sharp warning heartbeat thud, crackling tension | Background music: urgent low pulse with sharp cut."
+    },
+    {
+      "sceneNumber": 7,
+      "startSecond": 42,
+      "endSecond": 45,
+      "durationSeconds": 3,
+      "screenType": "OUTRO",
+      "referencePlate": "pr01-outcome.svg",
+      "flowPrompt": "Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand) in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord."
+    }
+  ]
+}

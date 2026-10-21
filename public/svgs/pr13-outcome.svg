@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgOut13" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="50%" stop-color="#0c121a"/>
+      <stop offset="100%" stop-color="#080b10"/>
+    </linearGradient>
+    <linearGradient id="steelMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="35%" stop-color="#475569"/>
+      <stop offset="70%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ashFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="lyeAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="soapPaste" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="soapBlock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#facc15"/>
+      <stop offset="80%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="birchBark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <filter id="shadowOut13" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+    <pattern id="gridOut13" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#152230" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgOut13)"/>
+  <rect width="800" height="450" fill="url(#gridOut13)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#293d52" stroke-width="1.2"/>
+
+  <!-- Top Master Header Banner (Label 1) -->
+  <rect x="20" y="18" width="760" height="34" rx="3" fill="#0f1822" stroke="#eab308" stroke-width="1"/>
+  <text x="34" y="40" fill="#fde68a" font-family="monospace" font-size="12" font-weight="bold">FIG. 13-M // NATURAL WOOD ASH LYE SOAP PRODUCTION OVERVIEW</text>
+
+  <!-- Composite Master Graphics -->
+  <g filter="url(#shadowOut13)">
+    <!-- LEFT PANEL: Wood Ash Column & Potato Buoyancy Test (x=40 to 250) -->
+    <!-- Ash Leaching Column -->
+    <path d="M 60 145 L 60 275 A 45 12 0 0 0 150 275 L 150 145 Z" fill="url(#steelMetal)" stroke="#94a3b8" stroke-width="1.2"/>
+    <ellipse cx="105" cy="145" rx="45" ry="12" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.5"/>
+    <!-- Ash Bed Inside -->
+    <path d="M 61 147 L 61 250 A 44 11 0 0 0 149 250 L 149 147 Z" fill="url(#ashFill)"/>
+    <!-- Filter Grass & Pebble Base -->
+    <path d="M 61 250 L 61 273 A 44 11 0 0 0 149 273 L 149 250 Z" fill="#4d7c0f"/>
+
+    <!-- Dripping Amber Lye Droplets -->
+    <path d="M 105 290 Q 105 310 105 320" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3,3"/>
+    <circle cx="105" cy="300" r="2.5" fill="#f59e0b"/>
+
+    <!-- Buoyancy Testing Vessel Beside Column -->
+    <path d="M 165 185 L 165 295 A 35 10 0 0 0 235 295 L 235 185 Z" fill="#131c26" stroke="#475569" stroke-width="1.2"/>
+    <ellipse cx="200" cy="185" rx="35" ry="10" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+    <!-- Lye in Glass -->
+    <path d="M 166 205 L 166 293 A 34 9 0 0 0 234 293 L 234 205 Z" fill="url(#lyeAmber)" opacity="0.9"/>
+    <!-- Floating Potato Crown -->
+    <ellipse cx="200" cy="203" rx="14" ry="9" fill="#d97706" stroke="#fde68a" stroke-width="1"/>
+    <path d="M 188 203 Q 200 193 212 203 Z" fill="#fef08a"/>
+
+    <!-- CENTER PANEL: Saponification Pot & Stirring (x=270 to 520) -->
+    <!-- Stove Embers Below -->
+    <ellipse cx="395" cy="350" rx="75" ry="14" fill="#450a0a" opacity="0.7"/>
+    <circle cx="365" cy="349" r="4" fill="#ea580c"/>
+    <circle cx="395" cy="351" r="4.5" fill="#f97316"/>
+    <circle cx="425" cy="349" r="4" fill="#ea580c"/>
+
+    <!-- Main Iron Pot -->
+    <path d="M 310 175 L 320 330 A 80 18 0 0 0 470 330 L 480 175 Z" fill="url(#steelMetal)" stroke="#cbd5e1" stroke-width="1.8"/>
+    <ellipse cx="395" cy="175" rx="85" ry="20" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.8"/>
+    <!-- Golden Soap Paste -->
+    <path d="M 312 200 L 320 328 A 78 17 0 0 0 470 328 L 478 200 Z" fill="url(#soapPaste)"/>
+    <ellipse cx="395" cy="200" rx="82" ry="18" fill="#facc15" opacity="0.85"/>
+    <!-- Stirring Flow Orbit -->
+    <ellipse cx="395" cy="200" rx="55" ry="10" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,3"/>
+    <polygon points="452,200 448,193 458,196" fill="#38bdf8"/>
+    <!-- 3s Trace Ridge -->
+    <path d="M 355 205 Q 380 193 405 207 Q 430 217 445 203" fill="none" stroke="#fef08a" stroke-width="4" stroke-linecap="round"/>
+    <!-- Diagonal Spatula -->
+    <g transform="rotate(25 395 185)">
+      <rect x="390" y="90" width="10" height="110" rx="2" fill="#78350f" stroke="#291204" stroke-width="1"/>
+      <path d="M 386 195 L 404 195 L 400 220 L 390 220 Z" fill="#78350f" stroke="#291204" stroke-width="1"/>
+      <path d="M 388 210 Q 395 225 402 210 Z" fill="#fef08a"/>
+    </g>
+
+    <!-- RIGHT PANEL: Cured Birch Mold & Finished Soap Bars (x=540 to 760) -->
+    <!-- Folded Birch Bark Mold Box -->
+    <polygon points="545,235 625,200 715,235 635,270" fill="url(#birchBark)" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="545,235 635,270 635,315 545,280" fill="#94a3b8" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="635,270 715,235 715,280 635,315" fill="#64748b" stroke="#1e293b" stroke-width="1.2"/>
+    <!-- Bark Texture Lines -->
+    <line x1="555" y1="265" x2="585" y2="273" stroke="#1e293b" stroke-width="1.2"/>
+    <line x1="655" y1="293" x2="685" y2="281" stroke="#1e293b" stroke-width="1.2"/>
+    <!-- Solid Cured Soap in Mold -->
+    <polygon points="555,235 625,205 705,235 635,265" fill="url(#soapBlock)" stroke="#b45309" stroke-width="1"/>
+
+    <!-- Cut Ready-to-Use Soap Bar on Stand (x=680, y=140) -->
+    <polygon points="660,150 705,130 750,150 705,170" fill="url(#soapBlock)" stroke="#b45309" stroke-width="1.2"/>
+    <polygon points="660,150 705,170 705,205 660,185" fill="#f59e0b" stroke="#b45309" stroke-width="1.2"/>
+    <polygon points="705,170 750,150 750,185 705,205" fill="#d97706" stroke="#b45309" stroke-width="1.2"/>
+
+    <!-- Rich White Antimicrobial Froth Bubbles -->
+    <circle cx="700" cy="120" r="10" fill="#ffffff" opacity="0.95"/>
+    <circle cx="715" cy="115" r="12" fill="#f8fafc" opacity="0.95"/>
+    <circle cx="730" cy="122" r="11" fill="#ffffff" opacity="0.95"/>
+    <circle cx="710" cy="130" r="9" fill="#f1f5f9" opacity="0.95"/>
+    <circle cx="725" cy="132" r="8" fill="#ffffff" opacity="0.95"/>
+    <ellipse cx="712" cy="112" rx="3" ry="2" fill="#38bdf8"/>
+    <ellipse cx="726" cy="119" rx="3" ry="2" fill="#38bdf8"/>
+  </g>
+
+  <!-- Process Callout Badges (Labels 2, 3, 4, 5) -->
+  <!-- Label 2: Left Process (x=24, y=70, text y=87) -->
+  <rect x="24" y="68" width="280" height="26" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="1"/>
+  <text x="32" y="85" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold">좌측: 참나무 백탄 재 여과 및 생감자 부력 비중 측정</text>
+
+  <!-- Label 3: Center Process (x=260, y=105, text y=122) -->
+  <rect x="260" y="105" width="275" height="26" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="268" y="122" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold">중앙: 약불 가열 1:1 비누화 반응 &amp; 송진 첨가 교반</text>
+
+  <!-- Label 4: Right Process (x=495, y=68, text y=85) -->
+  <rect x="495" y="68" width="280" height="26" rx="3" fill="#0f172a" stroke="#facc15" stroke-width="1"/>
+  <text x="503" y="85" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold">우측: 수목 수피 거푸집 응고 사각 살균 비누 블록</text>
+
+  <!-- Label 5: Core Summary Rule Banner (x=20, y=388, text y=412) -->
+  <rect x="20" y="388" width="760" height="38" rx="4" fill="#141c26" stroke="#eab308" stroke-width="1.2"/>
+  <text x="34" y="412" fill="#fde68a" font-family="sans-serif" font-size="12" font-weight="bold">[PR-13 최종 완성] 병원균 세포막 사멸 야전 소독 비누</text>
+</svg>

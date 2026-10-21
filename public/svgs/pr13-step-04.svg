@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg1304" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="barkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="30%" stop-color="#cbd5e1"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="soapBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="handSkin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="40%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="drop1304" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1304" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1304)"/>
+  <rect width="400" height="400" fill="url(#grid1304)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // MOLD CASTING &amp; FOAM SAFETY TEST</text>
+
+  <!-- Birch Bark Mold (Left) & Hand Lather Foam Test (Right) -->
+  <g filter="url(#drop1304)">
+    <!-- LEFT: Folded Birch Bark Rectangular Mold with Cured Soap -->
+    <!-- Mold Outer Box -->
+    <polygon points="40,215 110,185 185,215 115,245" fill="url(#barkGrad)" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="40,215 115,245 115,285 40,255" fill="#94a3b8" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="115,245 185,215 185,255 115,285" fill="#64748b" stroke="#1e293b" stroke-width="1.2"/>
+    <!-- Bark Texture Streaks -->
+    <line x1="45" y1="240" x2="65" y2="248" stroke="#1e293b" stroke-width="1.2"/>
+    <line x1="125" y1="265" x2="155" y2="253" stroke="#1e293b" stroke-width="1.2"/>
+
+    <!-- Hardened Solid Soap Block Inside Mold -->
+    <polygon points="50,215 110,190 175,215 115,240" fill="url(#soapBar)" stroke="#b45309" stroke-width="1"/>
+    <!-- Cut Lines Dividing Bars -->
+    <line x1="80" y1="202" x2="82" y2="227" stroke="#92400e" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <line x1="140" y1="202" x2="142" y2="227" stroke="#92400e" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+    <!-- Cut Single Soap Bar Standing Beside Mold -->
+    <polygon points="65,160 95,145 125,160 95,175" fill="url(#soapBar)" stroke="#b45309" stroke-width="1"/>
+    <polygon points="65,160 95,175 95,200 65,185" fill="#f59e0b" stroke="#b45309" stroke-width="1"/>
+    <polygon points="95,175 125,160 125,185 95,200" fill="#d97706" stroke="#b45309" stroke-width="1"/>
+
+    <!-- RIGHT: Survivalist Hand Lather Foam Test -->
+    <!-- Forearm & Back of Hand -->
+    <path d="M 370 290 Q 330 270 295 240 Q 275 220 260 215 Q 240 220 235 240 Q 260 265 300 295 Z" fill="url(#handSkin)" stroke="#451a03" stroke-width="1.5"/>
+    <!-- Thumb & Knuckles -->
+    <ellipse cx="255" cy="215" rx="12" ry="8" fill="#d97706" stroke="#451a03" stroke-width="1"/>
+    <ellipse cx="275" cy="212" rx="10" ry="7" fill="#b45309"/>
+    <ellipse cx="292" cy="215" rx="9" ry="7" fill="#b45309"/>
+
+    <!-- Rich White Soapy Froth / Micro Foam Bubbles over Back of Hand -->
+    <circle cx="265" cy="235" r="9" fill="#ffffff" opacity="0.95"/>
+    <circle cx="278" cy="230" r="11" fill="#f8fafc" opacity="0.95"/>
+    <circle cx="290" cy="240" r="12" fill="#ffffff" opacity="0.95"/>
+    <circle cx="272" cy="248" r="10" fill="#f1f5f9" opacity="0.95"/>
+    <circle cx="285" cy="252" r="11" fill="#ffffff" opacity="0.95"/>
+    <circle cx="258" cy="245" r="7" fill="#e2e8f0" opacity="0.95"/>
+    <circle cx="302" cy="246" r="8" fill="#ffffff" opacity="0.95"/>
+    <circle cx="296" cy="232" r="7" fill="#f8fafc" opacity="0.95"/>
+    <!-- Bubble Gleams -->
+    <ellipse cx="276" cy="227" rx="3" ry="2" fill="#38bdf8"/>
+    <ellipse cx="288" cy="237" rx="3" ry="2" fill="#38bdf8"/>
+    <ellipse cx="263" cy="233" rx="2" ry="1.5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Callouts & Labels -->
+  <!-- Label 2: Birch Bark Mold -->
+  <line x1="80" y1="145" x2="50" y2="90" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="80" cy="145" r="3" fill="#fde68a"/>
+  <rect x="20" y="60" width="260" height="24" rx="3" fill="#0f1722" stroke="#fde68a" stroke-width="1"/>
+  <text x="28" y="76" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">자작나무 껍질 사각 거푸집 성형 및 타설</text>
+
+  <!-- Label 3: 48h Natural Curing in Shade -->
+  <line x1="150" y1="215" x2="200" y2="120" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="150" cy="215" r="3" fill="#38bdf8"/>
+  <rect x="90" y="95" width="275" height="24" rx="3" fill="#0f1722" stroke="#38bdf8" stroke-width="1"/>
+  <text x="98" y="111" fill="#f8fafc" font-family="sans-serif" font-size="11">48시간 서늘한 바람 그늘 자연 응고 경화</text>
+
+  <!-- Label 4: Hand Foam Safety Test -->
+  <line x1="280" y1="235" x2="310" y2="155" stroke="#facc15" stroke-width="1.2"/>
+  <circle cx="280" cy="235" r="3" fill="#facc15"/>
+  <rect x="75" y="160" width="310" height="24" rx="3" fill="#0f1722" stroke="#facc15" stroke-width="1"/>
+  <text x="83" y="176" fill="#fde68a" font-family="sans-serif" font-size="11">손등 문지름 시 따끔거림 없는 풍성한 미세 거품</text>
+
+  <!-- Label 5: Core Rule -->
+  <rect x="16" y="348" width="368" height="34" rx="4" fill="#141c26" stroke="#eab308" stroke-width="1.2"/>
+  <text x="26" y="369" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">[4단계 핵심] 완전 건조 숙성 &amp; 피부 안전성 통과</text>
+</svg>

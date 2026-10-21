@@ -148,3 +148,34 @@ flowchart TD
    - Ran `npm test`: all 13 suites / 91 tests 100% passing in 377ms.
    - Ran `npm run gdrive:sync`: successfully synced all documentation to Google Drive.
    - Committed changes and pushed to GitHub `origin/main` (commit `ee50739`).
+
+### Phase 10: PR-10 (Pine Resin Pitch Glue & Antiseptic Ointment) Autonomous Publishing [COMPLETED]
+1. [x] Master Protocol & Plain Korean: `10-pine-resin-pitch-glue.json` (100/100 Elementary Approved).
+2. [x] 5 Technical 3D Vector SVGs: `pr10-step-01.svg` ~ `04.svg`, `pr10-outcome.svg` (100/100 by `svg-blueprint-auditor`).
+3. [x] 6 Global Languages Localized: `locales/10-pine-resin-pitch-glue.{en,ja,es,de,pt,zh-TW}.json`.
+4. [x] Verification & Sync: All test suites 100% passing, timestamps synced, gdrive synced.
+
+### Phase 11: PR-11 (Willow One-Way Funnel Fish Trap) Autonomous Publishing [COMPLETED]
+1. [x] Master Protocol: `11-willow-funnel-fish-trap.json` with fieldSpecs ID macro images (`id-willow-tree.jpg`, `id-river-snail-bait.jpg`).
+2. [x] 5 Technical 3D Vector SVGs: `pr11-step-01.svg` ~ `04.svg`, `pr11-outcome.svg` (100/100).
+3. [x] 6 Global Languages Localized: Full parity across 7 languages.
+4. [x] Verification & Sync: All test suites passing, timestamps and build synced.
+
+### Phase 12: PR-12 (Twin-Can Double-Wall Wood Gas Stove) Autonomous Publishing [COMPLETED]
+1. [x] Master Protocol: `12-twin-can-wood-gas-stove.json` (Urban salvage + primitive hybrid, 100/100).
+2. [x] 5 Technical 3D Vector SVGs: `pr12-step-01.svg` ~ `04.svg`, `pr12-outcome.svg` (100/100).
+3. [x] 6 Global Languages Localized: 0 residual Korean, 100% test pass.
+4. [x] Verification & Sync: All test suites passing, timestamps and build synced.
+
+### Phase 13: In-Memory Search Engine & Firebase Realtime Telemetry [COMPLETED]
+1. [x] Fuse.js In-Memory Search: Sub-millisecond fuzzy search, Chosung decomposition (`hangul.util.ts`), tactical highlighting.
+2. [x] Crosslink Hover Popover: Singleton HUD card preview on `a[data-proto="crosslink"]` hover.
+3. [x] Firebase Realtime Telemetry: Safe gradual enhancement, optimistic UI, abuse-resistant rate limiting, and adblock isolation.
+
+### Phase 14: PR-13 (Wood Ash Lye & Oil Soap Making) Autonomous Publishing [COMPLETED]
+1. [x] Plain Korean Master Protocol: `13-wood-ash-lye-soap.json` (54-char SEO title, 100/100 Plain Korean, 0 modern measurement tools, 5 posting pillars 100/100).
+2. [x] 5 High-Definition 3D Technical Vector SVGs: `pr13-step-01.svg` ~ `04.svg`, `pr13-outcome.svg` (100/100 on `SvgAuditService.auditSvgStatic`, staggered outcome badges).
+3. [x] 6 Global Languages Localized: `13-wood-ash-lye-soap.{en,ja,es,de,pt,zh-TW}.json` (0 residual Korean, full structural parity).
+4. [x] Static Build & PWA Update: `npm run sync:timestamps && npm run build` (hash `84750b222b4c5546`, 12 HTML protocol pages compiled).
+5. [x] Test Suite Verification: 18 test suites / 125 tests 100% passing (`npm test`).
+6. [x] Chained Sync & Next Topic Planning: `PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md` (PR-14 Bone Needle & Sinew Sewing Kit) updated.

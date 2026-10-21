@@ -1,0 +1,190 @@
+{
+  "protocolId": "PR-13",
+  "category": "MEDICINE",
+  "title": "Natural Wood Ash Lye & Oil Soap Making to Prevent Wound Infection (Field Hygiene)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[FIELD SANITATION & WOUND DISINFECTION & SEPSIS PREVENTION]",
+  "summary": "In off-grid wilderness survival or post-collapse scenarios without plumbing or medicine, a minor scrape or eating with dirty hands can rapidly cause lethal dysentery, tetanus, or systemic sepsis. By collecting pure white oak ashes from a campfire or [twin-can gasifier stove](/protocol-12.html), packing them in a leacher can with a gravel and grass filter, and pouring hot water through, you extract potassium carbonate lye. Simmering this lye 1:1 with rendered animal tallow or salvaged cooking oil while stirring with a wooden paddle initiates saponification, creating a potent antibacterial soap that ruptures pathogen cell membranes.",
+  "timeRequired": "70 mins (20m ash leaching + 45m saponification simmer + 5m pour)",
+  "successRate": "95% (when potato buoyancy indicates correct lye density & continuous 1-way stirring is maintained)",
+  "difficulty": "Medium (requires skin & eye protection against strong alkaline caustic burn)",
+  "outputPerHour": "1 bucket of oak ash & 2 cups oil yields 3–4 solid soap bars (1 month field supply)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "One Bucket of Pure White Hardwood (Oak) Ash",
+      "desc": "Flour-like powdery white ash sifted from an [oak charcoal kiln](/protocol-09.html) or hearth, with all black charcoal chunks removed. Hardwoods like oak provide the highest potassium carbonate concentration for potent lye."
+    },
+    {
+      "id": "mat-02",
+      "name": "Perforated Metal Can Leacher with Wild Grass & Gravel Filter",
+      "desc": "Based on the filtration mechanics of the [natural water filter](/protocol-01.html). A salvaged steel can with nail holes in the base, lined with thumb-sized pebbles and dry reed grass to retain ash while dripping clean golden lye. Liners pre-burned to eliminate toxic fumes."
+    },
+    {
+      "id": "mat-03",
+      "name": "Raw Potato Cube (or Fresh Egg) for Buoyancy Testing",
+      "desc": "A visual density test gauge. When placed in extracted lye, floating with a thumbnail-sized crown exposed above the surface indicates the precise specific gravity (1.08 g/cm³) needed for soapmaking without modern hydrometers."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Cups Rendered Animal Tallow (Beef/Pork Fat) or Salvaged Cooking Oil",
+      "desc": "Animal trimmings melted down over gentle heat and strained of cracklings and water, or filtered cooking oil scavenged from abandoned kitchens."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 Tablespoon Crushed Pine Resin Powder & 1 Teaspoon Salt",
+      "desc": "Natural golden pine resin crystals from [pine pitch ointment](/protocol-10.html) pulverized into powder to boost antimicrobial strength, combined with a pinch of salt to firm the soap bars."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Pack Sifted White Oak Ash in a Can Leacher & Leach Golden Alkaline Lye",
+      "description": "1. **Sift Pure White Ash**: Discard black charcoal lumps and gather one bucket of powdery **pure white oak ash** free from soil or bark debris.\n2. **Layer Gravel & Grass Filter**: In a large steel can with small nail holes punched in the base, place thumb-thick clean pebbles and pack dry reed grass **two finger widths deep (about 3cm)** to prevent ash from dumping through.\n3. **Pack Ash & Pour Hot Water**: Tamp the white ash firmly into the can to **one handspan high (80% full)**, then slowly pour [boiled, warm water](/protocol-01.html) over the top until saturated.\n4. **Collect Amber Lye**: Place a clean receiving vessel underneath to catch the rich, slippery golden-amber lye (potassium carbonate solution) as it percolates down drop by drop.",
+      "actionNote": "> Caustic Hazard: Concentrated wood ash lye dissolves organic tissue and causes painful chemical burns on bare skin. Always use a wooden paddle and flush immediately with cool, clean water for 5 minutes if splashed. Ground identification with the botanical traits below.",
+      "svgFileName": "pr13-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WOOD ASH LYE EXTRACTION LEACHER",
+        "OAK WHITE ASH BED (PACKED TOP 80%)",
+        "BASE GRASS FIBER & PEBBLE BUFFER FILTER",
+        "LEACHED DEEP AMBER ALKALINE LYE SOLUTION",
+        "[KEY STEP 1] SIFT WHITE ASH & WARM WATER LEACHING"
+      ],
+      "deepDive": {
+        "badge": "FIELD CHEMISTRY",
+        "title": "Potassium Carbonate (K2CO3) Leaching & High-Alkaline Extraction Yields",
+        "text": "Burning dense hardwoods like oak oxidizes potassium stored in wood fibers into potassium carbonate (K2CO3). Pouring warm water (70–80°C) more than doubles solubility compared to cold water, rapidly extracting concentrated lye. Black charcoal chunks must be discarded because unburned tannins darken the solution and soften finished soap bars.",
+        "fieldSpecs": [
+          {
+            "name": "White Oak Completely Burned Wood Ash",
+            "scientificName": "Quercus Acutissima White Wood Ash",
+            "categoryTag": "Field Chemistry Reagent / Potassium Carbonate Source",
+            "imageFileName": "id-oak-tree.jpg",
+            "hudCode": "FIG. BIO-13A // MACRO OPTIC",
+            "hudStatus": "POTASSIUM CONTENT HIGH: VERIFIED",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Chalky **pure white or pale silvery-grey** powder without black charcoal fragments."
+              },
+              {
+                "label": "TEXTURE",
+                "value": "Crumbles into an **ultra-fine, talc-like dust** between fingers without gritty grit."
+              },
+              {
+                "label": "EXTRACT",
+                "value": "Leaches into a **clear, rich amber-gold fluid** with a distinctly slippery alkaline feel."
+              }
+            ],
+            "fieldUse": "Raw material for lye soap, soil pH balancing, hominy corn nixtamalization"
+          },
+          {
+            "name": "Natural Pine Resin Crystals",
+            "scientificName": "Pinus Densiflora Natural Oleoresin",
+            "categoryTag": "Wilderness Preservative / Phytoncide Antibacterial",
+            "imageFileName": "id-pine-tree.jpg",
+            "hudCode": "FIG. BIO-13B // MACRO OPTIC",
+            "hudStatus": "TERPENE PURITY: VERIFIED",
+            "traits": [
+              {
+                "label": "RESIN",
+                "value": "Translucent **golden amber crystals** oozed from natural pine bark crevices."
+              },
+              {
+                "label": "AROMA",
+                "value": "Emits a sharp, invigorating **terpene pine aroma** when pulverized between stones."
+              },
+              {
+                "label": "ACTION",
+                "value": "Firms soap lather and **inhibits bacterial growth (Staphylococcus)** on cleansed skin."
+              }
+            ],
+            "fieldUse": "Antimicrobial soap additive, waterproof wound salve, pitch adhesive binder"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Balance Lye Strength via Potato Buoyancy & Clarify Tallow / Cooking Oil",
+      "description": "1. **Float Test Potato Cube**: Drop a **thumbnail-sized raw potato cube (or fresh egg)** into the extracted lye bowl.\n2. **Check Buoyancy Elevation**: If the potato sinks to the bottom, the lye is too weak—simmer in a pot to **reduce volume by half**. When the potato floats with a **thumbnail-width crown (1–2cm)** protruding above the surface, lye strength is optimal.\n3. **Render Fat over Gentle Heat**: Dice wild game fat or fat scraps into small chunks and melt slowly in a pot over [gentle stove heat](/protocol-12.html) until liquid oil separates from cracklings.\n4. **Strain Clarified Oil**: Pour warm melted oil through clean cloth or reed grass to filter out burnt solids and water, yielding **2 cups of pure golden oil**.",
+      "actionNote": "> Density Rule: If the potato bobs high with over half its body exposed, lye is dangerously caustic. Add half a cup of boiled water to dilute until just the potato top breaks the surface, avoiding harsh skin irritation in the finished soap.",
+      "svgFileName": "pr13-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // POTATO BUOYANCY SPECIFIC GRAVITY TEST",
+        "POTATO FLOATING THUMBNAIL-WIDTH ABOVE LIQUID",
+        "WEAK LYE: SIMMER REDUCE // STRONG LYE: DILUTE",
+        "RENDERED CLEAN ANIMAL TALLOW / PURIFIED OIL",
+        "[KEY STEP 2] VERIFY LYE BUOYANCY & CLARIFY OIL"
+      ],
+      "deepDive": {
+        "badge": "SPECIFIC GRAVITY",
+        "title": "Tool-Free Hydrometry (Specific Gravity 1.05–1.10) via Archimedes Principle",
+        "text": "Properly balanced lye reaches a specific gravity around 1.08 g/cm³. Fresh potato density averages 1.06–1.09 g/cm³, meaning buoyant equilibrium occurs only when alkali concentration is sufficient. Below 1.05 g/cm³, saponification fails to initiate, resulting in oily separation."
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Combine Lye and Oil 1:1, Simmer over Low Heat & Stir to Peanut Butter Trace",
+      "description": "1. **Measure 1:1 Ratio**: Pour 2 cups of warm clarified oil and 2 cups of balanced lye into a clean metal pot in an **equal 1:1 volume ratio**.\n2. **Maintain Gentle Heat**: Set the pot over glowing coals or low heat, keeping the liquid at a **gentle simmer with tiny bubbles along the rim**.\n3. **Continuous Clockwise Stirring**: Stir slowly in **one direction only with a flat wooden paddle for 40–50 minutes**. Reversing direction breaks the emulsion and causes oil separation.\n4. **Verify 3-Second Trace & Add Resin**: Lift the paddle; when dripping batter leaves a **raised ribbon mark that holds for 3 seconds** (peanut butter consistency), stir in **1 tablespoon crushed pine resin powder** and a pinch of salt, then remove from heat.",
+      "actionNote": "> 3-Second Trace Signal: Saponification is complete only when the batter holds its shape like thick porridge instead of blending back like liquid. Pine resin adds a clean pine scent, hardens the bar, and enhances antibacterial properties.",
+      "svgFileName": "pr13-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SAPONIFICATION REACTION & STIRRING",
+        "1:1 VOLUME RATIO BALANCED LYE & PURIFIED OIL",
+        "UNIDIRECTIONAL STIRRING FOR 45 MINS WITH PADDLE",
+        "THICK TRACE LEAVES RAISED TRAIL FOR 3 SECONDS",
+        "[KEY STEP 3] GENTLE SIMMER & CRUSHED PINE RESIN MIX"
+      ],
+      "deepDive": {
+        "badge": "SAPONIFICATION",
+        "title": "Triglyceride Hydrolysis & Glycerol Release Mechanics",
+        "text": "Fatty acid triglycerides react with potassium hydroxide/carbonate to split ester bonds, forming potassium carboxylate salts (natural soap) while freeing glycerol as a natural moisturizer. Unidirectional mechanical stirring maximizes interfacial contact area between immiscible liquid phases."
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Pour into Bark Molds, Cure in the Shade & Verify with Back-of-Hand Foam Test",
+      "description": "1. **Form Bark Mold**: Fold smooth birch or pine bark into a **palm-sized rectangular box** pinned with small wooden twigs, or form a flat stone slab with clay borders.\n2. **Pour & Tap Out Air**: Pour the thick soap batter into the mold and tap the base on the ground to release trapped air pockets.\n3. **48-Hour Shaded Cure**: Set the filled mold in a cool, well-ventilated shaded rock crevice away from direct sun and **let harden for 48 hours**.\n4. **Back-of-Hand Foam Test**: Slice cured soap into fist-half bars with a knife. Rub with water onto the back of your hand; if it lathers into **creamy white foam without stinging or burning**, it is safe for washing wounds and camp utensils.",
+      "actionNote": "> Skin Safety Test: If rubbing causes redness or a stinging sensation, excess unreacted lye remains. Rinse immediately and let bars cure in the shade for an additional 3–5 days. Atmospheric carbon dioxide naturally neutralizes residual alkalinity into mild, gentle soap.",
+      "svgFileName": "pr13-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // MOLD CASTING & FOAM SAFETY TEST",
+        "BIRCH BARK RECTANGULAR FORM CASTING",
+        "48-HOUR SHADED WELL-VENTILATED HARDENING CURE",
+        "RICH CREAMY FOAM ON SKIN WITHOUT STINGING",
+        "[KEY STEP 4] COMPLETE CURING & FOAM SAFETY PASS"
+      ],
+      "deepDive": {
+        "badge": "ANTIMICROBIAL SCIENCE",
+        "title": "Lipid Bilayer Dissolution & Pathogen Membrane Destruction",
+        "text": "Soap molecules possess a hydrophobic hydrocarbon tail and a hydrophilic polar head. When applied to bacterial pathogens, the hydrophobic tails wedge into the lipid bilayer of cell membranes, prying them apart and lysing the microbe. Rinsing lifts enveloped debris away inside micro-emulsion micelle foam."
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Handling raw concentrated lye bare-handed or applying uncured fresh soap directly to open wounds",
+    "description": "Wood ash lye is a strong alkaline caustic that dissolves skin proteins, causing severe chemical burns, tissue necrosis, and permanent blindness if splashed into the eyes. Applying uncured fresh soap before complete saponification burns flesh and destroys healing tissue. Flush splashes immediately with cold running water for 5+ minutes, and only use bars that have cured 48+ hours and passed the back-of-hand foam safety check.",
+    "consequence": "Outcome: Severe caustic chemical skin burns, ocular blindness & wound tissue necrosis"
+  },
+  "shortsScript": {
+    "hook": "Wild muddy water on an open wound will cause lethal sepsis in 3 days! Here is how to make antiseptic soap from campfire ash!",
+    "body": "Sift white oak ash, pack it over gravel in a can, and pour hot water to extract golden lye. Float a raw potato cube; when it bobs thumbnail-width high, lye strength is perfect! Mix 1:1 with animal fat in a pot over gentle heat and stir clockwise for 40 minutes. When the batter holds a 3-second trace like peanut butter, pour into a bark mold and cure 48 hours in the shade! When it lathers into rich white foam without stinging, your field-grade antiseptic soap is ready to kill deadly bacteria!",
+    "outro": "Access full offline survival blueprints with zero cell data via the profile link."
+  },
+  "outcome": {
+    "svgFileName": "pr13-outcome.svg",
+    "title": "Completed Wood Ash Lye Soap Production & Saponification Chemical Overview",
+    "description": "A comprehensive chemical and mechanical overview illustrating hardwood ash percolation, potato buoyancy hydrometry, 1:1 pot simmer saponification, and rectangular solid cured antiseptic soap bars cast in birch bark molds.",
+    "svgLabels": [
+      "FIG. 13-M // NATURAL WOOD ASH LYE SOAP PRODUCTION OVERVIEW",
+      "LEFT: OAK ASH LEACHING & POTATO BUOYANCY DENSITY TEST",
+      "CENTER: LOW-HEAT 1:1 SAPONIFICATION & RESIN STIRRING",
+      "RIGHT: TREE BARK MOLD CURED SOLID ANTISEPTIC SOAP BARS",
+      "[PR-13 FINAL BLUEPRINT] PATHOGEN MEMBRANE DESTROYING SOAP"
+    ]
+  },
+  "createdAt": "2026-10-21T05:30:00.000Z",
+  "contentHash": "84750b222b4c5546",
+  "updatedAt": "2026-10-21T05:32:17.564Z"
+}

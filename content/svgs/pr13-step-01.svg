@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1301" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="canBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="25%" stop-color="#64748b"/>
+      <stop offset="60%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="ashGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="grassGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#65a30d"/>
+      <stop offset="50%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+    <linearGradient id="amberLye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="drop1301" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1301" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1301)"/>
+  <rect width="400" height="400" fill="url(#grid1301)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // WOOD ASH LYE EXTRACTION LEACHER</text>
+
+  <!-- 3D Leaching Column & Collector -->
+  <g filter="url(#drop1301)">
+    <!-- Collecting Basin Below -->
+    <path d="M 125 300 L 135 345 A 65 14 0 0 0 265 345 L 275 300 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.2"/>
+    <ellipse cx="200" cy="300" rx="75" ry="14" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+    <ellipse cx="200" cy="316" rx="55" ry="10" fill="url(#amberLye)" opacity="0.9"/>
+
+    <!-- Main Leaching Can Cylinder -->
+    <path d="M 115 130 L 115 255 A 85 18 0 0 0 285 255 L 285 130 Z" fill="url(#canBody)" stroke="#94a3b8" stroke-width="1.2"/>
+    <ellipse cx="200" cy="130" rx="85" ry="18" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.8"/>
+
+    <!-- Cutaway Cross-Section Front View -->
+    <!-- Layer 1: Pebble Bed (Bottom 3cm) -->
+    <path d="M 116 238 L 116 254 A 84 18 0 0 0 284 254 L 284 238 A 84 18 0 0 1 116 238 Z" fill="#475569"/>
+    <circle cx="140" cy="245" r="5" fill="#64748b"/>
+    <circle cx="160" cy="248" r="6" fill="#94a3b8"/>
+    <circle cx="185" cy="246" r="5" fill="#64748b"/>
+    <circle cx="215" cy="249" r="6" fill="#94a3b8"/>
+    <circle cx="240" cy="246" r="5.5" fill="#64748b"/>
+    <circle cx="265" cy="244" r="5" fill="#94a3b8"/>
+
+    <!-- Layer 2: Dry Grass / Fiber Filter (Middle 3cm) -->
+    <path d="M 116 220 L 116 238 A 84 18 0 0 0 284 238 L 284 220 A 84 18 0 0 1 116 220 Z" fill="url(#grassGrad)"/>
+    <!-- Grass fiber hatching -->
+    <path d="M 125 224 L 145 234 M 150 223 L 175 235 M 190 224 L 210 236 M 225 223 L 255 235" stroke="#365314" stroke-width="1.5"/>
+
+    <!-- Layer 3: Packed Pure White Oak Ash Bed (Top 80%) -->
+    <path d="M 116 132 L 116 220 A 84 18 0 0 0 284 220 L 284 132 A 84 18 0 0 1 116 132 Z" fill="url(#ashGrad)"/>
+    <ellipse cx="200" cy="132" rx="83" ry="17" fill="#f1f5f9"/>
+
+    <!-- Hot Water Dripping Pour from Top -->
+    <path d="M 200 80 Q 200 110 200 125" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4,2"/>
+    <ellipse cx="200" cy="80" rx="12" ry="4" fill="#38bdf8"/>
+
+    <!-- Amber Lye Droplets Falling into Collector -->
+    <path d="M 198 268 Q 198 285 198 295" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="3,3"/>
+    <circle cx="198" cy="275" r="2.5" fill="#f59e0b"/>
+    <circle cx="198" cy="288" r="3" fill="#d97706"/>
+  </g>
+
+  <!-- Callouts & Labels -->
+  <!-- Label 2: Oak White Ash Bed -->
+  <line x1="260" y1="165" x2="310" y2="120" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="260" cy="165" r="3" fill="#fde68a"/>
+  <rect x="75" y="52" width="250" height="24" rx="3" fill="#0f1722" stroke="#fde68a" stroke-width="1"/>
+  <text x="83" y="68" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">참나무 백탄 재 (상단 80% 적층)</text>
+
+  <!-- Label 3: Grass & Pebble Buffer Filter -->
+  <line x1="120" y1="235" x2="60" y2="235" stroke="#a3e635" stroke-width="1.2"/>
+  <circle cx="120" cy="235" r="3" fill="#a3e635"/>
+  <rect x="20" y="200" width="235" height="24" rx="3" fill="#0f1722" stroke="#a3e635" stroke-width="1"/>
+  <text x="28" y="216" fill="#f8fafc" font-family="sans-serif" font-size="11">바닥 억새풀 섬유층 &amp; 자갈 완충 필터</text>
+
+  <!-- Label 4: Amber Alkali Lye Extraction -->
+  <line x1="205" y1="318" x2="275" y2="318" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="205" cy="318" r="3" fill="#f59e0b"/>
+  <rect x="120" y="270" width="265" height="24" rx="3" fill="#0f1722" stroke="#f59e0b" stroke-width="1"/>
+  <text x="128" y="286" fill="#fde68a" font-family="sans-serif" font-size="11">침출 추출되는 짙은 호박색 알칼리 양잿물</text>
+
+  <!-- Label 5: Core Rule -->
+  <rect x="16" y="348" width="368" height="34" rx="4" fill="#141c26" stroke="#eab308" stroke-width="1.2"/>
+  <text x="26" y="369" fill="#fde68a" font-family="sans-serif" font-size="11.5" font-weight="bold">[1단계 핵심] 숯 조각 제거 &amp; 끓인 온수 침출 여과</text>
+</svg>

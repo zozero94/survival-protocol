@@ -21,3 +21,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
+
+# Generated Audio Binaries
+shorts/**/*.wav
+shorts/**/*.wav.hash

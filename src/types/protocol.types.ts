@@ -80,5 +80,5 @@ export interface Protocol {
   createdAt?: string;
   updatedAt?: string;
   contentHash?: string;
-  shortsScript?: { hook: string; body: string };
+  shortsScript?: { hook: string; body: string; outro?: string };
 }

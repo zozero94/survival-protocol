@@ -1,0 +1,233 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+  <defs>
+    <!-- Background & Frame Gradients -->
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </linearGradient>
+    <linearGradient id="woodTripod" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a3728"/>
+      <stop offset="50%" stop-color="#73543d"/>
+      <stop offset="100%" stop-color="#3b2b1f"/>
+    </linearGradient>
+    <linearGradient id="cylinderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a2a2a" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#404040" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#404040" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#222222" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Filter Layers Gradients -->
+    <linearGradient id="muddyWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5c4028"/>
+      <stop offset="100%" stop-color="#422e1c"/>
+    </linearGradient>
+    <linearGradient id="pebbleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6e6e6e"/>
+      <stop offset="50%" stop-color="#4f4f4f"/>
+      <stop offset="100%" stop-color="#383838"/>
+    </linearGradient>
+    <linearGradient id="coarseSand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#998059"/>
+      <stop offset="100%" stop-color="#7a6341"/>
+    </linearGradient>
+    <linearGradient id="fineSand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c9ad7d"/>
+      <stop offset="100%" stop-color="#ad9162"/>
+    </linearGradient>
+    <linearGradient id="charcoalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222222"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="fiberGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a7e6b"/>
+      <stop offset="100%" stop-color="#635847"/>
+    </linearGradient>
+
+    <!-- Purified Water Gradient & Glow -->
+    <linearGradient id="pureWater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <radialGradient id="dropletGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="waterSurface" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <!-- Technical Drop Shadow -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Technical Canvas Backdrop -->
+  <rect x="0" y="0" width="800" height="450" fill="url(#bgGrad1)"/>
+  <rect x="15" y="15" width="770" height="420" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- Crosshair Registration Markers -->
+  <path d="M 25 35 L 45 35 M 35 25 L 35 45" stroke="#444" stroke-width="1"/>
+  <path d="M 775 35 L 755 35 M 765 25 L 765 45" stroke="#444" stroke-width="1"/>
+  <path d="M 25 415 L 45 415 M 35 405 L 35 425" stroke="#444" stroke-width="1"/>
+  <path d="M 775 415 L 755 415 M 765 405 L 765 425" stroke="#444" stroke-width="1"/>
+
+  <!-- Technical Watermark / Metadata -->
+  <text x="35" y="60" fill="#555" font-family="monospace" font-size="10" letter-spacing="1">ARCHIVE // OUTCOME SPECIFICATION</text>
+  <text x="35" y="74" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: 5-TIER STRATIFIED PURIFIER [100% SPEC]</text>
+  <text x="765" y="60" fill="#555" font-family="monospace" font-size="10" text-anchor="end">FLOW RATE: 1.5L / HR</text>
+
+  <!-- Tripod Legs (Behind Cylinder) -->
+  <g id="tripod">
+    <!-- Back Leg -->
+    <polygon points="398,50 402,50 435,390 425,390" fill="#3b2b1f" stroke="#261b13" stroke-width="1"/>
+    <!-- Left Leg -->
+    <polygon points="396,50 400,50 280,395 270,395" fill="url(#woodTripod)" stroke="#261b13" stroke-width="1"/>
+    <!-- Right Leg -->
+    <polygon points="400,50 404,50 530,395 520,395" fill="url(#woodTripod)" stroke="#261b13" stroke-width="1"/>
+    <!-- Lashing at Apex -->
+    <ellipse cx="400" cy="56" rx="14" ry="7" fill="#695138" stroke="#3b2b1f" stroke-width="1.5"/>
+    <ellipse cx="400" cy="62" rx="13" ry="6" fill="#54402c" stroke="#3b2b1f" stroke-width="1.5"/>
+  </g>
+
+  <!-- Filter Funnel Housing (Glass/PET/Clay Cutaway) -->
+  <g id="filterHousing" filter="url(#subtleShadow)">
+    <!-- Outer Cylinder Wall -->
+    <path d="M 340 90 L 460 90 L 440 270 L 415 310 L 415 330 L 385 330 L 385 310 L 360 270 Z" fill="url(#cylinderGrad)" stroke="#4a4a4a" stroke-width="2"/>
+
+    <!-- Layer 0: Raw Muddy Water (Top Level) -->
+    <polygon points="342,92 458,92 454,120 346,120" fill="url(#muddyWater)"/>
+    <ellipse cx="400" cy="92" rx="58" ry="6" fill="#6e4f33" stroke="#8c6643" stroke-width="1"/>
+    <!-- Floating particulates in muddy water -->
+    <circle cx="370" cy="105" r="1.5" fill="#382617"/>
+    <circle cx="420" cy="102" r="2" fill="#2b1d11"/>
+    <circle cx="395" cy="112" r="1.8" fill="#3d2817"/>
+
+    <!-- Layer 1: Pebbles & Coarse Gravel -->
+    <polygon points="346,120 454,120 450,155 350,155" fill="url(#pebbleGrad)"/>
+    <!-- Illustrated round pebbles -->
+    <ellipse cx="365" cy="130" rx="9" ry="6" fill="#888" stroke="#444"/>
+    <ellipse cx="385" cy="128" rx="8" ry="5" fill="#666" stroke="#333"/>
+    <ellipse cx="405" cy="132" rx="10" ry="7" fill="#777" stroke="#444"/>
+    <ellipse cx="428" cy="129" rx="9" ry="6" fill="#555" stroke="#333"/>
+    <ellipse cx="442" cy="133" rx="7" ry="5" fill="#777" stroke="#444"/>
+    <ellipse cx="355" cy="144" rx="8" ry="6" fill="#666" stroke="#333"/>
+    <ellipse cx="378" cy="145" rx="10" ry="7" fill="#777" stroke="#444"/>
+    <ellipse cx="400" cy="144" rx="9" ry="6" fill="#555" stroke="#333"/>
+    <ellipse cx="422" cy="146" rx="8" ry="5" fill="#888" stroke="#444"/>
+    <ellipse cx="440" cy="145" rx="7" ry="5" fill="#666" stroke="#333"/>
+
+    <!-- Layer 2: Coarse River Sand -->
+    <polygon points="350,155 450,155 446,190 354,190" fill="url(#coarseSand)"/>
+    <!-- Sand speckles -->
+    <line x1="358" y1="172" x2="442" y2="172" stroke="#665235" stroke-dasharray="2 3" stroke-width="1"/>
+    <line x1="360" y1="180" x2="440" y2="180" stroke="#665235" stroke-dasharray="3 4" stroke-width="1"/>
+
+    <!-- Layer 3: Fine Silica Sand -->
+    <polygon points="354,190 446,190 442,225 358,225" fill="url(#fineSand)"/>
+    <line x1="362" y1="205" x2="438" y2="205" stroke="#8f764d" stroke-dasharray="1 2" stroke-width="0.8"/>
+    <line x1="364" y1="215" x2="436" y2="215" stroke="#8f764d" stroke-dasharray="2 2" stroke-width="0.8"/>
+
+    <!-- Layer 4: Activated Crushed Charcoal -->
+    <polygon points="358,225 442,225 438,265 362,265" fill="url(#charcoalGrad)"/>
+    <!-- Charcoal granular facets -->
+    <polygon points="370,235 382,232 380,245 368,242" fill="#333" stroke="#111" stroke-width="0.8"/>
+    <polygon points="392,238 406,234 404,248 390,246" fill="#2a2a2a" stroke="#111" stroke-width="0.8"/>
+    <polygon points="418,235 430,233 428,245 415,244" fill="#333" stroke="#111" stroke-width="0.8"/>
+    <polygon points="375,250 388,248 386,260 373,258" fill="#2a2a2a" stroke="#111" stroke-width="0.8"/>
+    <polygon points="398,252 412,249 410,262 396,260" fill="#383838" stroke="#111" stroke-width="0.8"/>
+    <polygon points="420,250 432,248 430,260 418,258" fill="#222" stroke="#111" stroke-width="0.8"/>
+
+    <!-- Layer 5: Cloth / Fiber Filter Plug -->
+    <polygon points="362,265 438,265 415,310 385,310" fill="url(#fiberGrad)"/>
+    <path d="M 370 275 Q 400 285 430 275 M 378 290 Q 400 300 422 290" stroke="#473f32" stroke-width="1.2" fill="none"/>
+
+    <!-- Spout Opening & Perforations -->
+    <rect x="385" y="310" width="30" height="20" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  </g>
+
+  <!-- Flowing Purified Water & Droplet Dynamics -->
+  <g id="purifiedDrop">
+    <!-- Stream Line -->
+    <line x1="400" y1="330" x2="400" y2="348" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <!-- Clear Droplet with Radial Glow -->
+    <ellipse cx="400" cy="358" rx="6" ry="10" fill="url(#dropletGlow)"/>
+    <path d="M 400 350 C 397 355 395 358 395 362 C 395 365 397 367 400 367 C 403 367 405 365 405 362 C 405 358 403 355 400 350 Z" fill="url(#pureWater)"/>
+    <circle cx="398" cy="360" r="1.5" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Collection Pot / Water Receptacle -->
+  <g id="collectionPot" filter="url(#subtleShadow)">
+    <!-- Pot Body -->
+    <path d="M 330 375 C 330 370 345 365 400 365 C 455 365 470 370 470 375 L 458 420 C 458 428 435 432 400 432 C 365 432 342 428 342 420 Z" fill="#24211d" stroke="#3d3730" stroke-width="2"/>
+    <!-- Water Level Inside Pot -->
+    <ellipse cx="400" cy="385" rx="60" ry="10" fill="url(#waterSurface)"/>
+    <!-- Water Ripple Circles from Droplet Impact -->
+    <ellipse cx="400" cy="385" rx="14" ry="3.5" fill="none" stroke="#bae6fd" stroke-width="1.2" opacity="0.8"/>
+    <ellipse cx="400" cy="385" rx="28" ry="6" fill="none" stroke="#7dd3fc" stroke-width="1" opacity="0.6"/>
+    <ellipse cx="400" cy="385" rx="42" ry="8" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.4"/>
+  </g>
+
+  <!-- Technical Callout Leader Lines & Labels (Right Side) -->
+  <g id="calloutsRight" font-family="monospace" font-size="10" fill="#cccccc">
+    <!-- Callout 1: Pebbles -->
+    <line x1="435" y1="135" x2="550" y2="135" stroke="#E02424" stroke-width="1"/>
+    <circle cx="435" cy="135" r="2" fill="#E02424"/>
+    <text x="560" y="132" fill="#ffffff" font-weight="bold">STAGE 1: RIVER PEBBLES</text>
+    <text x="560" y="145" fill="#888888">낙엽·벌레 등 대형 부유물 1차 차단</text>
+
+    <!-- Callout 2: Coarse Sand -->
+    <line x1="430" y1="172" x2="550" y2="172" stroke="#666" stroke-width="1"/>
+    <circle cx="430" cy="172" r="2" fill="#666"/>
+    <text x="560" y="169" fill="#ffffff" font-weight="bold">STAGE 2: COARSE SAND</text>
+    <text x="560" y="182" fill="#888888">굵은 흙 입자 및 모래 부유물 침전</text>
+
+    <!-- Callout 3: Fine Silica Sand -->
+    <line x1="425" y1="208" x2="550" y2="208" stroke="#666" stroke-width="1"/>
+    <circle cx="425" cy="208" r="2" fill="#666"/>
+    <text x="560" y="205" fill="#ffffff" font-weight="bold">STAGE 3: FINE SILICA SAND</text>
+    <text x="560" y="218" fill="#888888">미세 진흙 입자 및 미세 탁도 여과</text>
+
+    <!-- Callout 4: Charcoal -->
+    <line x1="420" y1="245" x2="550" y2="245" stroke="#E02424" stroke-width="1"/>
+    <circle cx="420" cy="245" r="2" fill="#E02424"/>
+    <text x="560" y="242" fill="#E02424" font-weight="bold">STAGE 4: ACTIVATED CHARCOAL</text>
+    <text x="560" y="255" fill="#888888">미세 구멍으로 독소·냄새·유기물 흡착</text>
+
+    <!-- Callout 5: Fiber Plug -->
+    <line x1="410" y1="288" x2="550" y2="288" stroke="#666" stroke-width="1"/>
+    <circle cx="410" cy="288" r="2" fill="#666"/>
+    <text x="560" y="285" fill="#ffffff" font-weight="bold">STAGE 5: FIBER FILTER PLUG</text>
+    <text x="560" y="298" fill="#888888">숯가루 유출 방지 및 최종 유속 조절</text>
+
+    <!-- Callout 6: Potable Water -->
+    <line x1="440" y1="390" x2="550" y2="390" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="440" cy="390" r="2" fill="#38bdf8"/>
+    <text x="560" y="387" fill="#38bdf8" font-weight="bold">OUTPUT: CLEAR POTABLE WATER</text>
+    <text x="560" y="400" fill="#888888">무색투명 식수 (음용 전 3분 끓임 필수)</text>
+  </g>
+
+  <!-- Technical Callout Leader Lines & Specs (Left Side) -->
+  <g id="calloutsLeft" font-family="monospace" font-size="10" fill="#cccccc">
+    <!-- Spec Box -->
+    <rect x="45" y="110" width="180" height="150" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="45" y="110" width="180" height="22" fill="#1f1f1f"/>
+    <text x="55" y="125" fill="#E02424" font-weight="bold">CRITICAL METRICS</text>
+
+    <text x="55" y="150" fill="#aaa">· TOTAL HEIGHT: 60-80 CM</text>
+    <text x="55" y="170" fill="#aaa">· COMPACTION: 100% TIGHT</text>
+    <text x="55" y="190" fill="#aaa">· CHARCOAL THICKNESS: 10 CM+</text>
+    <text x="55" y="210" fill="#aaa">· INITIAL FLUSH: DISCARD 1L</text>
+    <text x="55" y="230" fill="#aaa">· WATER PURITY: 99.2% CLARITY</text>
+    <text x="55" y="250" fill="#38bdf8">· BOILING REQ: 3 MIN AT 100°C</text>
+
+    <!-- Raw Water Inflow Indicator -->
+    <path d="M 330 75 Q 360 82 375 92" stroke="#8c6643" stroke-width="2" fill="none"/>
+    <text x="320" y="65" fill="#c9ad7d" font-weight="bold">RAW MUDDY INFLOW (탁수 유입)</text>
+  </g>
+</svg>
