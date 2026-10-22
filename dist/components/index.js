@@ -1,4 +1,5 @@
 export * from './layout/Header.js';
+export * from './layout/Footer.js';
 export * from './layout/StickyActionBar.js';
 export * from './layout/SearchModal.js';
 export * from './layout/CrosslinkPopover.js';

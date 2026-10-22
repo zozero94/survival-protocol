@@ -57,6 +57,24 @@ ${buildAlternates(pagePath)}
   </url>`);
     }
 
+    const policyPages = [
+      { path: '/about', priority: '0.7', changefreq: 'monthly' },
+      { path: '/privacy', priority: '0.6', changefreq: 'monthly' },
+      { path: '/terms', priority: '0.6', changefreq: 'monthly' },
+      { path: '/contact', priority: '0.6', changefreq: 'monthly' },
+    ];
+
+    for (const pol of policyPages) {
+      const pagePath = `${siteUrl}${pol.path}`;
+      entries.push(`  <url>
+    <loc>${pagePath}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${pol.changefreq}</changefreq>
+    <priority>${pol.priority}</priority>
+${buildAlternates(pagePath)}
+  </url>`);
+    }
+
     return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">

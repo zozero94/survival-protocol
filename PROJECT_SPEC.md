@@ -12,13 +12,19 @@
   - 피드 카드 상단 레일 등록일(`YYYY.MM.DD`) 및 상세 히어로 섹션 최종 수정 시간(`YYYY.MM.DD HH:mm`) 표기
   - 독해 시간("소요 30초 독해") 문구 완전 배제 및 모노스페이스 브루탈리즘 제원 스트립 정밀 배치
   - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
+  - 글로벌 통합 푸터 (`Footer.ts`): Stitch Tactical HUD Dark Brutalist 4-컬럼 그리드 규격, 모바일 하단 액션바 오프셋(`pb-20 md:pb-4`), AdSense 4대 규정 링크, 6대 생존 분과 색인 및 CC0 라이선스 스트립 탑재
+- **Google AdSense 승인 및 E-E-A-T 신뢰성 4대 규정 페이지 (Stitch 1:1 완벽 이식)**:
+  - `about.html`: 4대 엄격 실증 체계 (Zero-Tool, Vector Blueprint, Red-Team Safety, PWA Offline), 수석 편찬 위원회(인류학/열역학 공학), CC0 오픈소스 배포 헌장
+  - `privacy.html`: Zero-PII 수집 헌장, Google AdSense 맞춤 쿠키 및 옵트아웃(`adssettings.google.com`), GA4 IP 비식별화, Firebase 원자적 증분 텔레메트리, PWA 로컬 스토리지 즉시 소각(`executeHardPurge()`)
+  - `terms.html`: 재난 대비 생존 교육 및 야전 안전 면책 조항, 공공 비영리 목적, 고위험 야전 실습 면책, 생존 결과 무보증 원칙, 현행 산림보호법 준수 의무
+  - `contact.html`: 비상 통신 및 야전 기술 제보 레지스트리, PGP 암호화 서신, 공식 GitHub 이슈/PR, 긴급 텔레그램 채널, 야전 정오표(Errata) 보고서 양식
 - **클라이언트 인메모리 초고속 검색 & 초성 탐색 엔진**:
   - `Fuse.js` 및 순수 유니코드 연산 초성 분해 엔진(`hangul.util.ts`) 탑재로 0ms 초고속 반응 속도 구현
   - 한글 자음 초성(`ㅅㅅ` -> 식수, `ㅂㅇ` -> 바위, `ㅈㅅㄱ` -> 정수기) 및 완성형 키워드 하이브리드 퍼지 매칭
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 107개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (19개 스위트 / 133개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
   - 듀얼 트랙 생존 고증 (Track A: 순수 자연물 원시 공학 / Track B: 포스트 아포칼립스 도시 폐자재 업사이클링 공학)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
@@ -76,7 +82,7 @@ primitive-survival/
 │   ├── site.config.ts           # 사이트 메타데이터, AdSense, PWA 경로 설정
 │   ├── i18n/                    # [i18n Layer] 7대 언어 사전 및 무상태 판별 엔진
 │   ├── components/              # [Presentational Layer] 순수 UI 컴포넌트
-│   │   ├── layout/              # Header, StickyActionBar, SearchModal (택티컬 검색창)
+│   │   ├── layout/              # Header, StickyActionBar, SearchModal, Footer (글로벌 4-컬럼 HUD 푸터)
 │   │   ├── feed/                # FeedHeader, ProtocolCard, Pagination
 │   │   └── protocol/            # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning
 │   ├── state/                   # [State Layer] SSOT 런타임 스크립트 직렬화 (0.01초 핫스왑)
@@ -102,14 +108,16 @@ primitive-survival/
 │   │   ├── hangul.util.ts       # 유니코드 초성 분해(0.0001ms), NFD 호환 정규화 유틸
 │   │   ├── svg-renderer.ts      # 고해상도 SVG-to-PNG 렌더링 유틸
 │   │   └── protocol-timestamp.ts # Git 커밋 및 실질 콘텐츠 SHA-256 해시 기반 타임스탬프 동기화 유틸
+│   ├── policy-content.ts        # Stitch 1:1 규격 4대 정책 페이지 원시 본문 마크업
+│   ├── render-policy.ts         # Google AdSense 4대 규정 페이지(About, Privacy, Terms, Contact) 정적 컴파일러
 │   ├── gdrive-sync.ts           # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts                # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts          # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts              # 전체 빌드 파이프라인
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
-├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 18개 테스트 스위트 (125/125 단위 테스트 100% PASS)
+├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
+├── tests/                       # [Quality Audit] 19개 테스트 스위트 (133/133 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```

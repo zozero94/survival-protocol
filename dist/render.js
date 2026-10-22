@@ -12,6 +12,7 @@ import {
   renderFatalWarning,
   renderSearchModal,
   renderCrosslinkPopover,
+  renderFooter,
 } from './components/index.js';
 import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG, EXTERNAL_RUNTIME_ASSETS } from './site.config.js';
 import { SeoService } from './services/seo.service.js';
@@ -195,13 +196,15 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   ${searchModalHtml}
   ${crosslinkPopoverHtml}
 
-  <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-5 space-y-6 flex-1 pb-28">
+  <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-5 space-y-6 flex-1 pb-16">
     ${heroHtml}
     ${outcomeHtml}
     ${checklistHtml}
     ${stepCardsHtml}
     ${fatalHtml}
   </main>
+
+  ${renderFooter('protocol')}
 
   ${actionHtml}
 

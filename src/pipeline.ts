@@ -8,6 +8,12 @@ import { SUPPORTED_LOCALES } from './i18n/locales.ts';
 import { UI_STRINGS } from './i18n/ui-strings.ts';
 import { renderCanonicalProtocolPage } from './render.ts';
 import { renderIndexPage } from './render-index.ts';
+import {
+  renderAboutPage,
+  renderPrivacyPage,
+  renderTermsPage,
+  renderContactPage,
+} from './render-policy.ts';
 import { ShortsService } from './services/shorts.service.ts';
 import { TopicCuratorService } from './services/topic-curator.service.ts';
 import { PwaService } from './services/pwa.service.ts';
@@ -241,6 +247,27 @@ export async function buildSite(options: { rootDir?: string; silent?: boolean } 
     compiledPages.push(fileName);
   }
   log(`🌐 [3/4 Presentational] 상세 교범 웹 페이지 (${allMasterProtocols.length}개) 컴파일 완료`);
+
+  // 3-4. Google AdSense & E-E-A-T 신뢰성 4대 규정 페이지 컴파일 (About, Privacy, Terms, Contact)
+  const aboutHtml = renderAboutPage();
+  const privacyHtml = renderPrivacyPage();
+  const termsHtml = renderTermsPage();
+  const contactHtml = renderContactPage();
+
+  const policyFiles = [
+    { name: 'about.html', path: '/about', html: aboutHtml },
+    { name: 'privacy.html', path: '/privacy', html: privacyHtml },
+    { name: 'terms.html', path: '/terms', html: termsHtml },
+    { name: 'contact.html', path: '/contact', html: contactHtml },
+  ];
+
+  for (const pol of policyFiles) {
+    fs.writeFileSync(path.join(publicDir, pol.name), pol.html, 'utf-8');
+    precacheEntries.push({ url: `/${pol.name}`, content: pol.html });
+    precacheEntries.push({ url: pol.path, content: pol.html });
+    compiledPages.push(pol.name);
+  }
+  log(`⚖️ [3/4 Presentational] Google AdSense 4대 신뢰성 규정 페이지 컴파일 완료 (about, privacy, terms, contact)`);
 
   // 4. PWA 오프라인 캐시 시스템 빌드 (Service Worker, Manifest, Icon)
   const externalUrls = [

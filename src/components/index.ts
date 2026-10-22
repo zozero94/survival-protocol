@@ -1,4 +1,5 @@
 export * from './layout/Header.ts';
+export * from './layout/Footer.ts';
 export * from './layout/StickyActionBar.ts';
 export * from './layout/SearchModal.ts';
 export * from './layout/CrosslinkPopover.ts';

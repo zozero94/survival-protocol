@@ -8,6 +8,7 @@ import {
   renderProtocolCard,
   renderPagination,
   renderSearchModal,
+  renderFooter,
 } from './components/index.ts';
 import { SearchService, type SearchDocument } from './services/search.service.ts';
 import {
@@ -162,23 +163,8 @@ export function renderIndexPage(
     ${paginationHtml}
   </main>
 
-  <!-- RECOVERY FOOTER NOTIFICATION (Stitch 1:1 + 7개국어 바인딩 + 안전 면책/익명 통계 고지) -->
-  <footer class="border-t border-neutral-800 bg-[#0e0e0e] text-neutral-400 py-6 px-4 sm:px-8 font-mono text-xs">
-    <div class="max-w-5xl mx-auto flex flex-col gap-2">
-      <div class="flex items-center gap-2">
-        <span class="inline-block w-2 h-2 bg-white"></span>
-        <p data-i18n="footerTitle" class="text-white font-bold uppercase tracking-wider">
-          누구나 위급할 때 바로 따라 할 수 있는 실전 야생 생존 가이드.
-        </p>
-      </div>
-      <p data-i18n="footerDesc" class="text-neutral-500 text-[11px] leading-relaxed max-w-2xl">
-        한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.
-      </p>
-      <p data-i18n="footerLegalNotice" class="text-neutral-600 text-[10px] leading-relaxed max-w-3xl pt-1 border-t border-neutral-900">
-        [안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.
-      </p>
-    </div>
-  </footer>
+  <!-- Stitch Tactical HUD Global Footer -->
+  ${renderFooter('index')}
 
   <script>
     window.__FEED_PROTOCOLS__ = ${JSON.stringify(feedProtocolsMap)};
