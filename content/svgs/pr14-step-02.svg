@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1402" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="flintAwl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="30%" stop-color="#334155"/>
+      <stop offset="60%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="boneBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f1f5f9"/>
+      <stop offset="80%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="boneHole" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="drop1402" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1402" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1402)"/>
+  <rect width="400" height="400" fill="url(#grid1402)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // DUAL-CONE EYE DRILLING &amp; FINISHING</text>
+
+  <!-- Main Drilling Action: Flint Awl & Bone Needle Head -->
+  <g filter="url(#drop1402)">
+    <!-- Bone Needle Head (Enlarged Macro View) -->
+    <path d="M 40 180 C 40 160 55 145 80 145 L 340 152 C 345 152 350 156 350 162 L 350 198 C 350 204 345 208 340 208 L 80 215 C 55 215 40 200 40 180 Z" fill="url(#boneBody)" stroke="#94a3b8" stroke-width="1.5"/>
+
+    <!-- 5mm Measurement Graphic Gauge (Lines only, no extra text) -->
+    <line x1="42" y1="135" x2="42" y2="125" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="88" y1="135" x2="88" y2="125" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="42" y1="128" x2="88" y2="128" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2 1"/>
+    <!-- Small 5mm tick dots -->
+    <circle cx="42" cy="128" r="1.5" fill="#38bdf8"/>
+    <circle cx="88" cy="128" r="1.5" fill="#38bdf8"/>
+
+    <!-- Bi-conical Eye Hole -->
+    <ellipse cx="88" cy="180" rx="9" ry="12" fill="url(#boneHole)" stroke="#e02424" stroke-width="1.5"/>
+    <ellipse cx="88" cy="180" rx="4" ry="6" fill="#000000" stroke="#fde68a" stroke-width="1"/>
+
+    <!-- Sharp Chipped Flint Awl Drill Bit (Top Plunge) -->
+    <path d="M 88 174 L 76 90 L 85 70 L 98 72 L 100 90 Z" fill="url(#flintAwl)" stroke="#64748b" stroke-width="1.2"/>
+    <path d="M 88 174 L 85 70" stroke="#94a3b8" stroke-width="0.8" opacity="0.6"/>
+    <path d="M 88 174 L 100 90" stroke="#1e293b" stroke-width="0.8"/>
+
+    <!-- Drilling Rotation Arcs -->
+    <path d="M 70 105 A 20 10 0 0 1 106 105" fill="none" stroke="#fde68a" stroke-width="1.5"/>
+    <polygon points="108,105 102,100 104,108" fill="#fde68a"/>
+    <path d="M 106 115 A 20 10 0 0 1 70 115" fill="none" stroke="#fde68a" stroke-width="1.5"/>
+    <polygon points="68,115 74,120 72,112" fill="#fde68a"/>
+
+    <!-- Reverse Drill Vector (Opposite Side Awl Indicator Graphic) -->
+    <path d="M 88 190 L 88 230" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <polygon points="88,186 84,194 92,194" fill="#38bdf8"/>
+    <!-- Opposite rotation arc -->
+    <path d="M 76 220 A 14 6 0 0 1 100 220" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Label 2: Flint Awl Drilling -->
+  <rect x="25" y="48" width="220" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="33" y="63" fill="#fde68a" font-family="monospace" font-size="10" font-weight="bold">부싯돌 송곳(Flint Awl) 양면 회전 천공</text>
+
+  <!-- Label 3: 5mm Eye Distance -->
+  <rect x="180" y="80" width="205" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="188" y="95" fill="#94a3b8" font-family="monospace" font-size="9.5" font-weight="bold">머리 끝 5mm 안쪽 바늘귀(Eye) 관통 구멍</text>
+
+  <!-- Thorn/Twig Deburring & Sand Polishing Section (Bottom) -->
+  <g filter="url(#drop1402)">
+    <!-- Sand Polishing Leather Wrap on Needle Body -->
+    <rect x="200" y="160" width="60" height="40" rx="3" fill="#78350f" stroke="#b45309" stroke-width="1.2" opacity="0.9"/>
+    <!-- Fine sand grain particles -->
+    <circle cx="210" cy="170" r="1.2" fill="#fde68a"/>
+    <circle cx="230" cy="165" r="1.2" fill="#fde68a"/>
+    <circle cx="225" cy="185" r="1.5" fill="#fde68a"/>
+    <circle cx="245" cy="180" r="1.2" fill="#fde68a"/>
+    <circle cx="215" cy="190" r="1" fill="#fde68a"/>
+
+    <!-- Slender Thorn / Twig Burr Reamer passing through hole -->
+    <path d="M 60 290 L 88 185 L 105 130" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="88" cy="185" r="3" fill="#f59e0b"/>
+    <!-- Internal Reaming Rotation -->
+    <ellipse cx="88" cy="210" rx="14" ry="5" fill="none" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- Label 4: Thorn Burr Removal -->
+  <rect x="25" y="310" width="180" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="33" y="325" fill="#94a3b8" font-family="monospace" font-size="10" font-weight="bold">잔가시 회전 내부 버(Burr) 제거</text>
+
+  <!-- Label 5: Step 2 Core Summary -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">[2단계 핵심] 고운 강 모래 연마로 유리알 광택 마감</text>
+</svg>

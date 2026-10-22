@@ -1,0 +1,180 @@
+{
+  "protocolId": "PR-14",
+  "category": "TOOLS",
+  "title": "Agulha de Osso Primitiva e Costura com Tendão Seco para Couro e Calçados",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFESA CONTRA PERDA TÉRMICA & PREVENÇÃO DE HIPOTERMIA E CONGELAMENTO]",
+  "summary": "Em climas de frio extremo ou em cenários pós-colapso sem acesso a suprimentos manufaturados, o rompimento de trajes de couro ou solas de botas provoca uma perda térmica drástica, levando à hipotermia letal ou congelamento de membros em menos de 2 horas. Sem agulhas de aço ou linha sintética, é vital confeccionar um kit de costura rústico: quebre ossos longos de perna de cervos ou javalis com um [machado de pedra](/protocol-04.html), lixe sobre quartzito molhado e fure o olho com uma sovela de sílex. Combinadas com tendões secos desfiados em fibras de colágeno de altíssima tensão, as linhas amolecidas com saliva encolhem de 3 a 5% ao secar, comprimindo os orifícios antes de serem impermeabilizadas com [breu de pinho aquecido](/protocol-10.html).",
+  "timeRequired": "60 min (30m polimento de osso + 15m desfiamento de tendão + 15m costura)",
+  "successRate": "95% (quando pré-perfurado com sovela de sílex e lubrificado com saliva)",
+  "difficulty": "Média (seleção criteriosa de osso cortical denso e perfuração bicônica)",
+  "outputPerHour": "2 agulhas de osso e 10 fios de tendão; restaura 1 par de botas ou 1 casaco de couro",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1–2 Fragmentos de Osso Cortical da Perna (Tíbia ou Metatarso de Cervo ou Javali)",
+      "desc": "Obtidos em [armadilhas de caça](/protocol-08.html) ou restos de gordura para [sabão de lixívia de cinzas](/protocol-13.html). A densa parede tubular do osso cortical resiste a esforços de flexão comparáveis aos de pregos de aço, não se quebrando ao perfurar couros duros."
+    },
+    {
+      "id": "mat-02",
+      "name": "Placa Abrasiva de Quartzito & Sovela Perfuradora de Sílex",
+      "desc": "Uma laje de quartzito áspero usada na [manufatura lítica](/protocol-04.html) e uma sovela pontiaguda de sílex para escavar o orifício de 1,8 mm da agulha em ambos os lados."
+    },
+    {
+      "id": "mat-03",
+      "name": "Tira de Tendão Animal Seco ao Vento (Tendão de Aquiles)",
+      "desc": "Tendão extraído das articulações de cervos, desidratado à sombra até adquirir aspecto córneo e translúcido. Ao ser percutido suavemente com madeira, solta centenas de filamentos de colágeno finíssimos e resistentes."
+    },
+    {
+      "id": "mat-04",
+      "name": "Bastão Curto de Madeira Dura & Resina de Pinho Impermeabilizante",
+      "desc": "Um pedaço roliço de carvalho para desfiar tendões e percutir a sovela, junto com [unguento de resina de pinho](/protocol-10.html) para selar hermeticamente as costuras do couro."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Fender o Osso Cortical e Esboçar uma Haste de Agulha sobre Quartzito Úmido",
+      "description": "1. **Seleção e Fendimento Longitudinal**: Fenda a tíbia de um cervo no sentido longitudinal com um [machado de pedra ou seixo pesado](/protocol-04.html) para extrair uma lasca densa do **comprimento de um dedo (7–8 cm) e 3–4 mm de espessura**.\n2. **Desbaste em Quartzito Úmido**: Molhe a laje de quartzito e friccione a lasca óssea a 45 graus, removendo resíduos esponjosos de medula e moldando-a em formato cilíndrico regular.\n3. **Usinagem da Ponta Perfurante**: Incline uma das pontas a 30 graus girando-a continuamente contra a pedra molhada até obter uma **ponta afiada capaz de perfurar couro**.",
+      "actionNote": "> Risco de Estilhaços: O impacto pode projetar lascas de osso; vire o rosto em 45 graus ao percutir. Mantenha o quartzito sempre úmido para que o atrito térmico não queime nem fragilize o osso.",
+      "svgFileName": "pr14-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BONE SPLINTER BLANK PREPARATION",
+        "FENDIMENTO LONGITUDINAL DE TÍBIA DE CERVO",
+        "DESBASTE DE SUPERFÍCIE EM QUARTZITO ÚMIDO",
+        "HASTE CILÍNDRICA DO TAMANHO DE UM DEDO (7–8CM)",
+        "[PASSO CHAVE 1] AFIAÇÃO ROTACIONAL A 30° DA PONTA"
+      ],
+      "deepDive": {
+        "badge": "FIELD BIOMECHANICS",
+        "title": "Matriz de Hidroxiapatita e Resistência ao Cisalhamento do Osso Cortical",
+        "text": "A cortical dos ossos de sustentação de grandes mamíferos é constituída por camadas concêntricas de osteônios sem porosidade esponjosa. A sinergia entre cristais de hidroxiapatita e fibras de colágeno confere tenacidade e elasticidade mecânica, permitindo que as agulhas suportem pressões de torção sem se romperem dentro de peles duras.",
+        "fieldSpecs": [
+          {
+            "name": "Lasca de Osso Cortical de Mamífero",
+            "scientificName": "Mammalian Tibia Cortical Bone",
+            "categoryTag": "Material Osteológico Rústico / Haste de Agulha",
+            "imageFileName": "id-deer-metatarsal-bone.jpg",
+            "hudCode": "FIG. BIO-14A // MACRO OPTIC",
+            "hudStatus": "DENSITY & FLEXURAL STRENGTH: HIGH",
+            "traits": [
+              {
+                "label": "COLORAÇÃO",
+                "value": "Superfície marfim ou creme claro com interior denso e amarelado."
+              },
+              {
+                "label": "DENSIDADE",
+                "value": "Corte transversal polido e vítreo, sem cavidades porosas esponjosas."
+              },
+              {
+                "label": "ACÚSTICA",
+                "value": "Produz um tinido metálico cristalino e ressonante ao ser batido de leve em pedra."
+              }
+            ],
+            "fieldUse": "Lascas selecionadas de 3–4 mm polidas em agulhas afiadas sobre quartzito"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Escavar o Olho Bicônico com Sovela de Sílex e Polir com Areia Fina",
+      "description": "1. **Perfuração Rotativa Oposta**: Apoie a ponta da sovela de sílex a **meia unha de distância (cerca de 5 mm) da cabeça cega**. Gire entre os dedos para abrir uma cavidade cônica até a metade da espessura; vire a agulha e termine a perfuração pelo lado oposto.\n2. **Desbaste Interno e Remoção de Rebarbas**: Com o canal aberto, passe um espinho seco ou graveto fino girando-o com vigor para remover rebarbas internas que possam desfiar a linha.\n3. **Polimento Sedoso**: Esfregue toda a extensão da agulha com argila úmida ou areia fina de rio até que fique **lisa e brilhante como vidro**, garantindo deslizamento suave no couro.",
+      "actionNote": "> Evitar Ruptura da Cabeça: Furar por um único lado cria pressão expansiva e racha o osso. Adote sempre a perfuração simétrica em formato de ampulheta (frente e verso).",
+      "svgFileName": "pr14-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DUAL-CONE EYE DRILLING & FINISHING",
+        "PERFURAÇÃO ROTATIVA OPOSTA COM SOVELA DE SÍLEX",
+        "OLHO DA AGULHA ESCAVADO A 5MM DA CABEÇA",
+        "REMOÇÃO DE REBARBAS INTERNAS COM ESPINHO VEGETAL",
+        "[PASSO CHAVE 2] POLIMENTO COM AREIA FINA ATÉ O BRILHO"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Bater o Tendão Seco com Bastão de Madeira e Extrair Fibras de Colágeno",
+      "description": "1. **Posicionamento do Tendão**: Disponha a tira rígida de tendão seco em uma pedra chata de rio que sirva de bigorna.\n2. **Batidas Leves de Madeira**: Golpeie suavemente com a ponta roliça de um bastão de carvalho para desarticular a união entre os feixes de colágeno (pancadas fortes cortam as fibras prematuramente).\n3. **Separação e Lubrificação com Saliva**: Puxe com as pontas dos dedos os feixes esfiapados até destacar **linhas da espessura de 3 a 4 fios de cabelo**. Molhe a ponta com saliva e torça entre os dedos para compactá-la, facilitando a passagem pelo olho da agulha.",
+      "actionNote": "> Força das Batidas: Nunca use pedras cortantes ou machados para bater no tendão. Use madeira arredondada e bata delicadamente para desfiar o material como pluma de seda sem quebrar sua extensão.",
+      "svgFileName": "pr14-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DRIED ANIMAL SINEW FIBER SEPARATION",
+        "TENDÃO SECO SOBRE BIGORNA DE PEDRA LISA",
+        "BATIDAS LEVES COM BASTÃO (DESPRENDIMENTO DE COLÁGENO)",
+        "DESFIAMENTO DE LINHAS DA LARGURA DE 3–4 CABELOS",
+        "[PASSO CHAVE 3] LUBRIFICAÇÃO COM SALIVA PARA ENFIAMENTO"
+      ],
+      "deepDive": {
+        "badge": "FIBER SCIENCE",
+        "title": "Entrecruzamento Molecular de Colágeno Tipo I e Contração Autoblocante",
+        "text": "As fibrilas de colágeno Tipo I dos tendões atingem resistências à tração de 50 a 100 MPa — quadruplicando a resistência do algodão de mesmo calibre. Umedecidas em saliva, tornam-se maleáveis para a costura. Ao secarem no couro, sofrem retração volumétrica de 3 a 5%, apertando as margens do orifício e garantindo um travamento mecânico firme sem a necessidade de nós complexos.",
+        "fieldSpecs": [
+          {
+            "name": "Tira de Tendão Animal Seco ao Vento",
+            "scientificName": "Dried Mammalian Tendon (Sinew)",
+            "categoryTag": "Fibra Natural Rústica / Linha de Alta Resistência",
+            "imageFileName": "id-dried-animal-sinew.jpg",
+            "hudCode": "FIG. BIO-14B // MACRO OPTIC",
+            "hudStatus": "TENSILE STRENGTH RATING: MAXIMUM",
+            "traits": [
+              {
+                "label": "TEXTURA",
+                "value": "Bastão rígido e translúcido cor de âmbar com estrias longitudinais visíveis."
+              },
+              {
+                "label": "DESFIAMENTO",
+                "value": "Desprende-se em filamentos brancos prateados e macios como seda quando percutido."
+              },
+              {
+                "label": "CONTRAÇÃO",
+                "value": "Maleável com saliva; contrai-se com a rigidez de um arame de aço ao secar."
+              }
+            ],
+            "fieldUse": "Fibras delgadas enfiadas em agulhas de osso para reparar trajes e amarrar ferramentas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Pré-Perfurar Furos a 5mm com Sovela, Costurar em Ponto de Sela e Selar com Breu",
+      "description": "1. **Pré-Perfuração do Couro**: Sobreponha as bordas rasgadas em **uma largura de falange** e faça previamente uma fileira de **furos espaçados em 5 mm** usando a sovela de sílex e o bastão.\n2. **Ponto de Sela (Costura Cruzada)**: Passe agulhas em ambas as extremidades da linha de tendão ou cruze uma única agulha alternando frente e verso em oito, puxando com firmeza a cada ponto.\n3. **Contração e Selagem com Resina**: Deixe a linha secar e esticar, aplicando em seguida [unguento de resina de pinho aquecido](/protocol-10.html) sobre a costura para bloquear **a infiltração de água, neve e vento gelado**.",
+      "actionNote": "> Pré-Perfuração Obrigatória: A agulha de osso resiste bem à compressão, mas partirá com esforço de alavanca em couro duro. Fure sempre com a sovela de sílex e use a agulha de osso apenas como guia da linha.",
+      "svgFileName": "pr14-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SADDLE STITCHING & PITCH SEALING",
+        "PRÉ-PERFURAÇÃO COM SOVELA A INTERVALOS DE 5MM",
+        "COSTURA EM PONTO DE SELA COM TENDÃO CRUZADO",
+        "SELAGEM IMPERMEÁVEL DA COSTURA COM BREU DE PINHO",
+        "[PASSO CHAVE 4] CONTRAÇÃO DO TENDÃO BLOQUEIA FUROS"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Empurrar com força a cabeça da agulha de osso para furar couro espesso sem fazer furos prévios",
+    "description": "Forçar uma agulha de osso através de couro cru e espesso sem furos prévios submete a estrutura a uma força de torção excessiva que quebra a cabeça ou a haste. Lascas pontiagudas de osso podem penetrar profundamente na palma da mão ou nos dedos, provocando ferimentos penetrantes graves e infecção por tétano em campo. Faça sempre furos prévios a cada 5 mm com uma sovela de sílex e bastão de madeira, usando a agulha de osso exclusivamente como guia suave para conduzir a linha de tendão.",
+    "consequence": "Consequência: Quebra da agulha, ferimento penetrante profundo na mão e risco de infecção por tétano"
+  },
+  "shortsScript": {
+    "hook": "Nevasca a 20 graus abaixo de zero e a bota rasgada? Em 2 horas você morre de hipotermia. Fabrique uma agulha de osso AGORA!",
+    "body": "Quebre o osso da perna de um cervo, afie em pedra de quartzito molhada e fure o olho com sílex. Bata no tendão seco com um pedaço de pau: você terá fios 4 vezes mais resistentes que algodão! Molhe com saliva, fure o couro com sílex e faça a costura cruzada. Ao secar, o tendão encolhe como arame de aço, e a resina de pinho torna a bota 100% à prova d'água!",
+    "outro": "Aprenda habilidades primitivas reais para sobreviver ao colapso. Baixe todos os guias sem precisar de internet!"
+  },
+  "outcome": {
+    "title": "Bota de Couro Reparada em Campo e Kit de Agulha de Osso e Tendão",
+    "badge": "PADRÃO DE INSPEÇÃO // FIELD REPAIRED GEAR",
+    "standard": "Agulha de osso com polimento vítreo, olho acomodando duas pontas de tendão confortavelmente e costura em ponto de sela sem afrouxar nem 1 mm sob forte tração manual",
+    "svgFileName": "pr14-outcome.svg",
+    "svgLabels": [
+      "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
+      "AGULHA DE OSSO CORTICAL CONCLUÍDA (COMPRIMENTO 7.5CM)",
+      "OLHO PRECISO PERFURADO COM SOVELA DE SÍLEX (DIÂMETRO 1.8MM)",
+      "FEIXE DE FIOS DE TENDÃO DE ALTA TENSÃO DESFIADOS",
+      "PONTO DE SELA DUPLO E COSTURA SELADA COM BREU DE PINHO",
+      "BOTA DE INVERNO RECUPERADA (100% RETENÇÃO TÉRMICA)",
+      "FIELD VERIFIED // TENSILE STRENGTH RATED & WATERPROOF"
+    ]
+  },
+  "createdAt": "2026-10-22T08:09:29.733Z",
+  "updatedAt": "2026-10-22T08:14:43.819Z",
+  "contentHash": "614132e570544622"
+}

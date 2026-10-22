@@ -1,0 +1,180 @@
+{
+  "protocolId": "PR-14",
+  "category": "TOOLS",
+  "title": "Primitive Knochennadel & Sehnenfaden zur Reparatur von Leder und Stiefeln",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[WINTERLICHE WÄRMEVERLUSTABWEHR & ERFRIERUNGS- / HYPOTHERMIESCHUTZ]",
+  "summary": "In subpolarer Wildnis oder bei zusammengebrochener zivilisatorischer Versorgung führt ein Riss im Winterleder oder an den Stiefelsohlen binnen 2 Stunden zu tödlicher Unterkühlung oder schweren Erfrierungen. Wenn moderne Stahl Nadeln und Kunstfaserfäden fehlen, muss aus [erbeuteten Jagdtieren](/protocol-08.html) wie Hirsch oder Wildschwein ein Nähbesteck improvisiert werden: Das dichte Schienbeinkompakta wird mit einer [Steinaxt](/protocol-04.html) gespalten, auf nassem Quarzit geschliffen und mit einer Feuersteinahle beidseitig durchbohrt. Kombiniert mit faserig geklopften Tiersehnen entsteht hochfester Nähfaden, der beim Trocknen um 3–5% schrumpft, die Nahtlöcher hermetisch verpresst und nach Versiegelung mit [flüssigem Kiefernharz](/protocol-10.html) vollkommen wind- und wasserdicht schützt.",
+  "timeRequired": "60 Min (30m Knochenschliff + 15m Sehnenspaltung + 15m Ledernaht)",
+  "successRate": "95% (bei Vorlochen mit Feuersteinahle und Speichelbefeuchtung der Sehnenfäden)",
+  "difficulty": "Mittel (erfordert sorgfältiges Spalten der Kompakta und beidseitiges Bohren des Nadelöhrs)",
+  "outputPerHour": "2 polierte Knochennadeln und 10 Sehnenstränge; repariert 1 Paar Winterstiefel oder 1 Lederjacke",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1–2 Schienbein-Knochensplitter großer Säugetiere (Hirsch, Reh, Wildschwein)",
+      "desc": "Gewonnen aus [Fallenjagd](/protocol-08.html) oder Resten der Talgverarbeitung für [Holzaschen-Seife](/protocol-13.html). Die zylindrische Röhrenknochen-Kompakta (Cortical Bone) besitzt eine Biegezugfestigkeit ähnlich wie Stahlnägel und bricht beim Durchstechen von Leder nicht ab."
+    },
+    {
+      "id": "mat-02",
+      "name": "Grobe Quarzit-Schleifplatte & scharfe Feuerstein-Bohrahle (Flint Awl)",
+      "desc": "Ein rauer Quarzit-Schleifstein aus der [Steinwerkzeug-Herstellung](/protocol-04.html) und eine spitz zulaufende Feuersteinahle, um ein 1,8 mm weites Nadelöhr beidseitig auszudrehen."
+    },
+    {
+      "id": "mat-03",
+      "name": "Luftgetrockneter Tiersehnenstrang (Achillessehne)",
+      "desc": "Aus Beingelenken gewonnene, im schattigen Wind hornartig getrocknete Sehne von bernsteingelber Farbe. Durch leichtes Hämmern mit Holz spaltet sie sich in hunderte haarfeine, extrem zugfeste Kollagenfasern."
+    },
+    {
+      "id": "mat-04",
+      "name": "Hartholz-Klopfer & abdichtendes Kiefernpech",
+      "desc": "Ein handlicher Eichenholzknüppel zum Auffasern der Sehne und Eintreiben der Ahle, sowie [Kiefernharzsalbe](/protocol-10.html) zur dauerhaften Imprägnierung der Nahtfalten."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Schienbeinkompakta spalten und fingerlangen Nadelrohling auf nassem Quarzit schleifen",
+      "description": "1. **Kompakta auswählen und spalten**: Das Schienbein eines Hirsches mit einer [Steinaxt oder einem schweren Flusskiesel](/protocol-04.html) längs spalten, um einen Splitter von **Fingerlänge (ca. 7–8 cm) und 3–4 mm Stärke** zu gewinnen.\n2. **Grobschliff auf nassem Quarzit**: Den Knochensplitter im 45-Grad-Winkel auf der befeuchteten Quarzitplatte reiben, um raue Markreste abzutragen und einen gleichmäßigen zylindrischen Stab zu formen.\n3. **Nadeldorn zuschleifen**: Ein Ende im 30-Grad-Winkel unter ständiger Drehung schleifen, bis eine **dornenscharfe, penetrierende Spitze** entsteht.",
+      "actionNote": "> Splittergefahr: Beim Zertrümmern können feine Knochensplitter weggeschleudert werden; wenden Sie das Gesicht beim Schlagen um 45 Grad ab. Den Schleifstein stets feucht halten, um Reibungshitze und Versprödung des Knochens zu verhindern.",
+      "svgFileName": "pr14-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BONE SPLINTER BLANK PREPARATION",
+        "LÄNGSSPALTE DES HIRSCH-SCHIENBEINKNOCHENS",
+        "OBERFLÄCHENSCHLIFF AUF FEUCHTEM QUARZIT",
+        "FINGERLANGER (7–8CM) ZYLINDER-ROHLING",
+        "[SCHRITT 1 FOKUS] 30° ROTATIONSSCHLIFF ZUR NADELSPITZE"
+      ],
+      "deepDive": {
+        "badge": "FIELD BIOMECHANICS",
+        "title": "Hydroxyapatit-Kristallgitter und Scherfestigkeit der Säuger-Kompakta",
+        "text": "Die dichte Knochenwand tragender Extremitätenknochen besteht aus hochdicht lamelliertem Kompaktknochen ohne Schwammstrukturen. Die Verbindung aus mineralischem Hydroxyapatit und elastischen Kollagenfasern erzeugt eine enorme Torsions- und Bruchfestigkeit, die Knochennadeln geschmeidig und bruchsicher durch zähes Leder gleiten lässt.",
+        "fieldSpecs": [
+          {
+            "name": "Säugetier-Schienbein Kompakta-Splitter",
+            "scientificName": "Mammalian Tibia Cortical Bone",
+            "categoryTag": "Prähistorisches Knochenmaterial / Hochfeste Nadelspäne",
+            "imageFileName": "id-deer-metatarsal-bone.jpg",
+            "hudCode": "FIG. BIO-14A // MACRO OPTIC",
+            "hudStatus": "DENSITY & FLEXURAL STRENGTH: HIGH",
+            "traits": [
+              {
+                "label": "FARBE",
+                "value": "Elfenbeinweiß bis cremefarben mit dichter, gelblicher Knocheninnenwand."
+              },
+              {
+                "label": "DICHTE",
+                "value": "Porenfreier, glasig-fester Querschnitt völlig ohne schwammige Hohlräume."
+              },
+              {
+                "label": "AKUSTIK",
+                "value": "Erzeugt beim leichten Antippen mit Stein einen hellen, metallischen Klingelton."
+              }
+            ],
+            "fieldUse": "3–4 mm dicke Späne zur Formung von Knochennadeln auf Quarzitsteinen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Nadelöhr mit der Feuersteinahle beidseitig ausbohren und mit feinem Flusssand polieren",
+      "description": "1. **Beidseitiges Rotationsbohren**: Die Spitze der Feuersteinahle **einen halben Fingernagel breit (ca. 5 mm) unterhalb des Nadelkopfes** ansetzen und zwischen den Fingern drehen, bis eine konische Vertiefung zur Knochenmitte reicht; dann wenden und von hinten gegenbohren.\n2. **Kanalräumung und Entgraten**: Sobald das Öhr durchbrochen ist, einen Dorn oder dünnen Zweig durchstecken und rotieren, um schneidende Innenkanten abzuschaben.\n3. **Feinpolitur**: Die gesamte Nadel mit feinem, feuchtem Flusssand abreiben, bis die Oberfläche **glatt wie Glas poliert** ist und reibungsfrei durch Tierhäute gleitet.",
+      "actionNote": "> Kopfbruch vermeiden: Einseitiges Bohren sprengt den Knochenkopf durch Spreizdruck. Bohren Sie stets von vorne bis zur Hälfte und schließen Sie das Öhr sanduhrförmig von der Rückseite ab.",
+      "svgFileName": "pr14-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DUAL-CONE EYE DRILLING & FINISHING",
+        "BEIDSEITIGES DREHBOHREN MIT FEUERSTEINAHLE",
+        "5MM VOM NADELKOPF EINGESETZTES NADELÖHR",
+        "ENTGRATEN DES ÖHRS MIT DREHENDEM PFLANZENSTRUNK",
+        "[SCHRITT 2 FOKUS] FLUSSSAND-POLITUR ZU GLASARTIGEM GLANZ"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Getrocknete Sehne mit dem Holzknüppel klopfen und hochfeste Kollagenfasern auffasern",
+      "description": "1. **Getrocknete Sehne auflegen**: Den luftgetrockneten, bernsteinfarbenen Sehnenstrang flach auf einen glatten Flussstein-Amboss betten.\n2. **Sanftes Einklopfen**: Mit dem runden Ende eines Eichenknüppels leicht und federnd auf die Sehne klopfen, um die Bindung der Faserbündel aufzulösen (harte Schläge zerschneiden die Fasern).\n3. **Ausfaserung und Speichelpflege**: Die weich geklopften Faserbüschel mit den Fingerspitzen in **Stränge von 3–4 Haaren Stärke** auseinanderzupfen. Die Spitze mit Speichel befeuchten und drehen, damit sie formstabil und geschmeidig durch das Öhr gleitet.",
+      "actionNote": "> Schlagdosierung: Niemals scharfe Steinkanten oder Klingen zum Klopfen verwenden. Benutzen Sie glattes Hartholz und klopfen Sie behutsam, um die Seide der Sehne sanft aufzuwollst.",
+      "svgFileName": "pr14-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DRIED ANIMAL SINEW FIBER SEPARATION",
+        "PLATZIERUNG DER SEHNE AUF FLUSSSTEIN-AMBOSS",
+        "EICHENKNÜPPEL-KLOPFUNG (KOLLAGENSPALTUNG)",
+        "AUSFASERN IN 3–4 HAARE STARKE ZUGFÄDEN",
+        "[SCHRITT 3 FOKUS] SPEICHELGLÄTTUNG ZUM EINFÄDELN INS ÖHR"
+      ],
+      "deepDive": {
+        "badge": "FIBER SCIENCE",
+        "title": "Typ-I-Kollagen-Quervernetzung und selbstblockierende Trockenschrumpfung",
+        "text": "Die Typ-I-Kollagen-Mikrofibrillen von Tiersehnen erreichen Zugfestigkeiten von 50 bis 100 MPa – viermal mehr als vergleichbare Baumwollfäden. Mit Speichel angefeuchtet bleiben sie weich und führig. Beim Trocknen im verarbeiteten Zustand verringern sie ihr Volumen um 3–5%, klemmen das Einstichloch im Leder radial fest zusammen und fixieren die Naht ohne voluminöse Knoten.",
+        "fieldSpecs": [
+          {
+            "name": "Luftgetrocknete Säugersehne (Sehnenfaden)",
+            "scientificName": "Dried Mammalian Tendon (Sinew)",
+            "categoryTag": "Prähistorische Naturfaser / Hochfester Nähfaden",
+            "imageFileName": "id-dried-animal-sinew.jpg",
+            "hudCode": "FIG. BIO-14B // MACRO OPTIC",
+            "hudStatus": "TENSILE STRENGTH RATING: MAXIMUM",
+            "traits": [
+              {
+                "label": "TEXTUR",
+                "value": "Hornartig zäher, bernsteingelber Stab mit längslaufender Faserung."
+              },
+              {
+                "label": "SPALTUNG",
+                "value": "Entfaltet sich beim Klopfen zu seidig-weißen, feinsten Einzelfasern."
+              },
+              {
+                "label": "SCHRUMPFUNG",
+                "value": "Feucht geschmeidig; zieht sich beim Trocknen wie Stahldraht zusammen."
+              }
+            ],
+            "fieldUse": "In feine Fäden zerfasert zur Besteckung von Knochennadeln und Steinaxt-Bindungen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Löcher im 5mm-Abstand vorstechen, im Sattlerstich vernähen und mit Kiefernharz abdichten",
+      "description": "1. **Lederkanten vorlochen**: Die zerrissenen Lederstücke **um Fingergliedbreite überlappen** und mit Feuersteinahle und Holzknüppel eine gerade Reihe von **Löchern im Abstand von 5 mm** vorlochen.\n2. **Sattlerstich (Zweiseitiges Kreuznähen)**: Beide Enden des Sehnenfadens mit Knochennadeln bestücken oder eine Nadel abwechselnd von vorn und hinten durch dieselben Löcher kreuzen und jede Schlinge stramm anziehen.\n3. **Schrumpfung und Pechversiegelung**: Sobald der Sehnenfaden getrocknet und gespannt ist, erwärmte [Kiefernharzsalbe](/protocol-10.html) auf die Nahtlinie streichen, um das Leder **vollkommen sturm- und schneewasserdicht** zu versiegeln.",
+      "actionNote": "> Vorlochen strikt einhalten: Knochennadeln sind extrem druckfest, brechen jedoch bei seitlicher Scherbelastung in dickem Leder. Stechen Sie Löcher stets mit der Feuersteinahle vor und nutzen Sie die Knochennadel nur als Fadenführer.",
+      "svgFileName": "pr14-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SADDLE STITCHING & PITCH SEALING",
+        "FEUERSTEINAHLE VORLOCHUNG IM 5MM ABSTAND",
+        "DOPPELTER SATTLERSTICH-SEHNENNAHTVERLAUF",
+        "KIEFERNHARZ-IMPRÄGNIERUNG DER NAHTFALTE",
+        "[SCHRITT 4 FOKUS] SEHNENSCHRUMPFUNG DICHTET NADELÖCHER AB"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fataler Fehler: Gewaltsames Hineindrücken der Knochennadel in dickes, ungebohrtes Leder durch Druck auf den Nadelkopf",
+    "description": "Das gewaltsame Durchdrücken einer Knochennadel durch zähes Rohleder ohne Vorlochung erzeugt extreme Biegespannungen, die den Nadelkopf oder Nadelschaft abbrechen. Die messerscharfen Knochenbruchkanten dringen tief in den Handballen oder die Finger ein und verursachen schwere Stichverletzungen sowie tödlichen Wundstarrkrampf (Tetanus). Löcher stets im 5-mm-Abstand mit einer gehärteten Feuersteinahle und Holzknüppel vorstechen; die Knochennadel nur als reibungsfreie Führungsnadel durch existierende Öffnungen leiten.",
+    "consequence": "Folge: Nadelbruch, tiefe Knochensplinter-Stichverletzungen der Hand & lebensbedrohlicher Wundstarrkrampf"
+  },
+  "shortsScript": {
+    "hook": "Minus 20 Grad und der Stiefel reißt auf? In 2 Stunden erfrierst du im Schnee. Baue dir SOFORT eine Knochennadel!",
+    "body": "Spalte Hirschknochen mit einem Stein, schleife ihn auf feuchtem Quarzit zu einer Nadel und bohre das Öhr mit Feuerstein. Klopfe getrocknete Sehnen mit Holz: Du erhältst Fäden, die 4-mal reißfester als Baumwolle sind! Befeuchte den Faden mit Speichel, loche das Leder mit Feuerstein vor und vernähe es im Sattlerstich. Beim Trocknen zieht sich die Sehne zusammen wie Stahldraht, und Kiefernharz dichtet alles 100% wasserdicht ab!",
+    "outro": "Erlernen Sie echte Überlebenstechniken für den Ernstfall. Laden Sie alle Baupläne offline herunter!"
+  },
+  "outcome": {
+    "title": "Feldmäßig reparierte Winterstiefel & Knochennadel-Nähbesteck",
+    "badge": "ABNAHMESTANDARD // FIELD REPAIRED GEAR",
+    "standard": "Knochennadel glasartig glatt poliert, Öhr nimmt Doppelstrang ohne Reibung auf, und die Sattlernaht hält starkem manuellem Zug ohne 1 mm Spaltbildung stand",
+    "svgFileName": "pr14-outcome.svg",
+    "svgLabels": [
+      "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
+      "FERTIGE ELFENBEIN-KNOCHENNADEL (LÄNGE 7.5CM)",
+      "FEUERSTEIN-BOHRUNG PRÄZISIONS-ÖHR (DURCHMESSER 1.8MM)",
+      "MIT HOLZKNÜPPEL AUFGEFASERTE HOCHFESTE SEHNENSTRÄNGE",
+      "SATTLERSTICH-DOPPELVERBINDUNG & KIEFERNHARZNAHT",
+      "RESTAURIERTER WINTERSTIEFEL (100% WÄRMEERHALT)",
+      "FIELD VERIFIED // TENSILE STRENGTH RATED & WATERPROOF"
+    ]
+  },
+  "createdAt": "2026-10-22T08:09:29.733Z",
+  "updatedAt": "2026-10-22T08:14:43.819Z",
+  "contentHash": "614132e570544622"
+}

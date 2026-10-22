@@ -179,3 +179,12 @@ flowchart TD
 4. [x] Static Build & PWA Update: `npm run sync:timestamps && npm run build` (hash `84750b222b4c5546`, 12 HTML protocol pages compiled).
 5. [x] Test Suite Verification: 18 test suites / 125 tests 100% passing (`npm test`).
 6. [x] Chained Sync & Next Topic Planning: `PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md` (PR-14 Bone Needle & Sinew Sewing Kit) updated.
+
+### Phase 15: PR-14 (Primitive Bone Needle & Dried Sinew Sewing Kit) Autonomous Publishing [COMPLETED]
+1. [x] Plain Korean Master Protocol: `14-bone-needle-sinew-sewing.json` (Cortical bone + dried sinew cord, zero knots, 1-sentence 1-action checklist, 2 field troubleshooting FAQs in `protocol-faqs.ts`).
+2. [x] Botanical/Material Macro ID Photos: `id-deer-metatarsal-bone.jpg` & `id-dried-animal-sinew.jpg` generated via `image-generator` subagent (0 text, hyper-realistic dark field lighting).
+3. [x] 5 High-Definition 3D Technical Vector SVGs: `pr14-step-01.svg` ~ `04.svg`, `pr14-outcome.svg` (100/100 static audit, 1:1 `<text>` tag & `svgLabels` parity, registered in `10_svg_audit_loop.test.ts`).
+4. [x] 6 Global Languages Localized: `14-bone-needle-sinew-sewing.{en,ja,es,de,pt,zh-TW}.json` (0 residual Korean, full parity).
+5. [x] Static Build & PWA Update: `npm run sync:timestamps && npm run build` (hash `614132e570544622`, 13 HTML protocol pages compiled).
+6. [x] Test Suite Verification: 15 suites / 137 tests 100% passing (`npm test`).
+7. [x] Chained Sync & Next Topic Planning: `PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md` (PR-15 Activated Charcoal & Sand Cloth Smoke Mask) updated.

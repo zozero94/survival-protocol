@@ -1,0 +1,180 @@
+{
+  "protocolId": "PR-14",
+  "category": "TOOLS",
+  "title": "Primitive Bone Needle & Dried Sinew Sewing Kit for Leather & Footwear Repair",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[WINTER HEAT-LOSS DEFENSE & FROSTBITE / HYPOTHERMIA PREVENTION]",
+  "summary": "In sub-zero wilderness conditions or post-collapse disaster environments, torn winter leather garments or boot soles lead to catastrophic body heat loss, inducing fatal hypothermia or crippling frostbite within 2 hours. When modern needles and nylon thread are unavailable, you must craft an emergency sewing kit using high-density cortical shin bones from deer or boar split with a [stone axe](/protocol-04.html) and ground on wet quartzite into a sharp bone needle with a dual-drilled eye, paired with natural high-tensile sinew cord harvested from dried leg tendons. As saliva-coated sinew thread dries inside stitched leather, it shrinks 3–5%, mechanically locking needle holes airtight before sealing with [melted pine pitch ointment](/protocol-10.html) to create a stormproof, waterproof barrier.",
+  "timeRequired": "60 mins (30m bone needle honing + 15m sinew fiber splitting + 15m leather stitching)",
+  "successRate": "95% (when pre-punching holes with a flint awl and saliva-coating sinew threads)",
+  "difficulty": "Medium (requires careful flint awl drilling and cortical bone selection)",
+  "outputPerHour": "2 polished bone needles and 10 sinew threads; fully restores 1 pair of torn leather boots or winter coat",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1–2 Mammalian Leg Bone Splinters (Deer, Elk, or Boar Metatarsal)",
+      "desc": "Salvaged from [primitive hunting traps](/protocol-08.html) or tallow rendering for [wood ash lye soap](/protocol-13.html). The dense cortical wall of mammalian leg bones possesses flexural tensile strength rivaling steel nails and resists bending fractures under leather penetration."
+    },
+    {
+      "id": "mat-02",
+      "name": "Coarse Quartzite Honing Slab & Sharp Flint Drill Awl",
+      "desc": "A flat coarse quartzite sharpening slab used in [stone tool making](/protocol-04.html), paired with a razor-sharp conical chert or flint awl micro-drill to bore a clean 1.8mm needle eye."
+    },
+    {
+      "id": "mat-03",
+      "name": "Dried Animal Tendon / Sinew Bundle (Achilles Tendon)",
+      "desc": "Natural tendon harvested from deer leg joints, wind-dried in the shade into a hard amber cord. Light tapping with a wooden baton frees hundreds of hair-thin, ultra-high-tensile collagen fibers."
+    },
+    {
+      "id": "mat-04",
+      "name": "Palm-Sized Hardwood Tapping Baton & Waterproof Pine Resin",
+      "desc": "A blunt oak branch used to crush tendon bundles and drive flint awls, paired with sticky [pine pitch ointment](/protocol-10.html) to waterproof the finished leather seam."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Split Shin Bone Splinters & Grind a Finger-Length Needle Blank on Wet Quartzite",
+      "description": "1. **Select & Split Cortical Bone**: Split a deer leg bone lengthwise using a [stone axe or heavy river hammerstone](/protocol-04.html) to extract a dense splinter **finger-length (7–8cm) and 3–4mm thick**.\n2. **Grind on Wet Quartzite**: Wet a coarse quartzite slab and rub the bone splinter flat at a 45-degree angle, removing porous marrow residues and shaping it into a uniform cylinder.\n3. **Form Piercing Awl Tip**: Tilt one end at 30 degrees while rotating continuously against the wet rock until you obtain a **needle-sharp penetrating point**.",
+      "actionNote": "> Splinter Hazard: Bone fragments can shatter under blunt impact; turn your face 45 degrees away when striking. Always lubricate the quartzite slab with water to prevent frictional heat from scorching and weakening the bone matrix.",
+      "svgFileName": "pr14-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BONE SPLINTER BLANK PREPARATION",
+        "SPLITTING DEER TIBIA CORTICAL BONE CYLINDER",
+        "WET COARSE QUARTZITE SLAB SURFACE HONING",
+        "FINGER-LENGTH (7–8CM) & ROUND ROD SHAPING",
+        "[KEY STEP 1] 30° ROTATIONAL HONING FOR SHARP TIP"
+      ],
+      "deepDive": {
+        "badge": "FIELD BIOMECHANICS",
+        "title": "Mammalian Cortical Bone Hydroxyapatite Matrix & Shear Resilience",
+        "text": "The weight-bearing cortical wall of ungulate leg bones consists of dense concentric lamellae reinforced with crystalline hydroxyapatite and interwoven collagen fibers. This biological composite structure yields extraordinary compressive strength and flexural resilience, producing needles capable of penetrating thick animal hides without catastrophic snapping.",
+        "fieldSpecs": [
+          {
+            "name": "Mammalian Cortical Bone Splinter",
+            "scientificName": "Mammalian Tibia Cortical Bone",
+            "categoryTag": "Field Osteological Material / High-Strength Needle Blank",
+            "imageFileName": "id-deer-metatarsal-bone.jpg",
+            "hudCode": "FIG. BIO-14A // MACRO OPTIC",
+            "hudStatus": "DENSITY & FLEXURAL STRENGTH: HIGH",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Ivory-white to pale cream exterior with yellowish dense inner bone core."
+              },
+              {
+                "label": "DENSITY",
+                "value": "Pore-less, glassy smooth cross-section free of spongy cancellous cavities."
+              },
+              {
+                "label": "ACOUSTIC",
+                "value": "Produces a clear, metallic ringing chime when tapped lightly against stone."
+              }
+            ],
+            "fieldUse": "Selected 3–4mm splinters shaped into needle blanks on wet quartzite slabs"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Bore a Bi-Conical Needle Eye with a Flint Awl & Polish with Fine Sand",
+      "description": "1. **Dual-Cone Rotational Drilling**: Place the tip of a sharp flint awl **half a fingernail width (about 5mm) from the blunt head**. Twist back and forth between your fingers to drill a conical depression halfway through, then flip and drill from the opposite side.\n2. **Passage Clearing & Burr Removal**: Once pierced through, thread a slender twig or dried thorn through the eye, spinning it to scrape away internal bone burrs that could fray thread.\n3. **Fine Polishing**: Buff the entire needle surface with damp clay-stone or fine river sand until it gleams with **glass-like smoothness** to ensure frictionless hide penetration.",
+      "actionNote": "> Head Fracture Prevention: Drilling entirely from one side exerts excessive outward pressure, splitting the needle head. Always drill halfway from the front, then flip over and meet from the rear in a bi-conical hourglass channel.",
+      "svgFileName": "pr14-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DUAL-CONE EYE DRILLING & FINISHING",
+        "FLINT AWL DUAL-CONE ROTATIONAL DRILLING",
+        "5MM INSET EYE PASSAGE FROM NEEDLE HEAD",
+        "THORN ROTATION INTERNAL BURR REMOVAL",
+        "[KEY STEP 2] FINE RIVER SAND BUFFING TO GLASS GLOSS"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Pound Dried Sinew with a Wooden Baton to Separate High-Tensile Collagen Threads",
+      "description": "1. **Prepare Dried Tendon**: Lay an amber, sun-dried tendon cord flat across a smooth river stone anvil.\n2. **Light Baton Tapping**: Lightly tap the tendon with a rounded hardwood baton to fracture the inter-fiber collagen matrix (hard strikes will sever fibers prematurely).\n3. **Fiber Combing & Saliva Coating**: Pull apart the frayed bundle with your fingertips into **threads 3–4 hairs thick**. Roll the thread tip between saliva-moistened fingertips to condense the fibers into a stiff, sleek point that glides effortlessly through the needle eye.",
+      "actionNote": "> Strike Modulation: Never use sharp stones or axe edges to pound sinew. Use a smooth wooden baton and tap gently to fluff the fibers apart like silk floss rather than cutting them.",
+      "svgFileName": "pr14-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DRIED ANIMAL SINEW FIBER SEPARATION",
+        "DRIED SINEW PLACEMENT ON FLAT ANVIL STONE",
+        "OAK BATON GENTLE TAPPING (COLLAGEN SPLIT)",
+        "COMBING 3–4 HAIR THICK HIGH-TENSILE FIBERS",
+        "[KEY STEP 3] SALIVA COATING FOR SMOOTH EYE THREADING"
+      ],
+      "deepDive": {
+        "badge": "FIBER SCIENCE",
+        "title": "Type I Collagen Molecular Crosslinking & Self-Locking Shrinkage",
+        "text": "Mammalian tendon fibers consist of parallel arrays of Type I collagen fibrils with tensile strengths between 50 and 100 MPa—exceeding cotton cordage fourfold. When moistened with saliva or water, the fibers soften for friction-free stitching. Upon ambient drying, they shrink 3–5% in volume, exerting radial clamping pressure that self-locks the needle puncture without complex knots.",
+        "fieldSpecs": [
+          {
+            "name": "Sun-Dried Mammalian Sinew Cord",
+            "scientificName": "Dried Mammalian Tendon (Sinew)",
+            "categoryTag": "Primitive Natural Fiber / High-Tensile Sewing Thread",
+            "imageFileName": "id-dried-animal-sinew.jpg",
+            "hudCode": "FIG. BIO-14B // MACRO OPTIC",
+            "hudStatus": "TENSILE STRENGTH RATING: MAXIMUM",
+            "traits": [
+              {
+                "label": "TEXTURE",
+                "value": "Translucent amber-yellow, horn-like rigid cord with longitudinal grain."
+              },
+              {
+                "label": "SEPARATION",
+                "value": "Fluffs into glistening silver-white, silk-fine filaments when lightly pounded."
+              },
+              {
+                "label": "SHRINKAGE",
+                "value": "Supple when wet; contracts into rock-hard tensile wire upon drying."
+              }
+            ],
+            "fieldUse": "Frayed into fine filaments to thread bone needles for garment repair and axe hafting"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Pre-Punch 5mm Holes with a Flint Awl, Saddle Stitch & Seal Seams with Pine Pitch",
+      "description": "1. **Pre-Punch Leather Holes**: Overlap torn leather edges by **one knuckle width**, and use a sharp flint awl and wooden baton to pre-punch a row of **holes spaced 5mm apart**.\n2. **Execute Saddle Stitching**: Thread bone needles on both ends of a sinew cord, or pass a single needle alternating front-to-back in an interlocking figure-8 saddle stitch, pulling each stitch firmly.\n3. **Shrinkage & Pine Pitch Seal**: Allow the sinew to dry and contract, then smear warm [pine pitch ointment](/protocol-10.html) over the seam line to form a **100% stormproof, wind-tight leather seal**.",
+      "actionNote": "> Mandatory Pre-Punching: Bone needles have high compressive strength but will shear if forced through tough rawhide. Always pre-punch holes with a flint awl, using the bone needle solely as a smooth thread guide.",
+      "svgFileName": "pr14-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SADDLE STITCHING & PITCH SEALING",
+        "FLINT AWL 5MM INTERVAL PRE-PUNCHED HOLES",
+        "DUAL-DIRECTION SADDLE STITCH SEWING",
+        "PINE PITCH OINTMENT WATERPROOF SEAM SEAL",
+        "[KEY STEP 4] SINEW DRY SHRINKAGE AIRTIGHT CLOSURE"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Forcing a bone needle through thick, un-punched leather by pressing hard on the needle head",
+    "description": "Forcing a bone needle through tough, thick rawhide without pre-punched holes applies severe bending torque that snaps the needle head or shaft. The jagged, razor-sharp bone splinter can penetrate deep into the palm or fingers, causing disabling puncture wounds and life-threatening field tetanus. Always pre-punch 5mm interval holes with a hardened flint awl and wooden baton, using the bone needle solely as a guide to carry sinew threads smoothly through existing apertures.",
+    "consequence": "Outcome: Needle fracture, deep palmar bone puncture trauma & lethal field tetanus infection"
+  },
+  "shortsScript": {
+    "hook": "Sub-zero blizzard and your boot sole splits wide open? You have 2 hours before fatal hypothermia sets in. Craft a primitive bone needle NOW!",
+    "body": "Split a deer leg bone with a stone axe, grind it on wet quartzite into a finger-length needle, and dual-drill an eye with a flint awl. Next, tap dried animal sinew with a wooden stick—it fluffs into collagen threads 4 times stronger than cotton! Lick the thread, pass it through, pre-punch leather holes with flint, and cross-stitch tightly. As the sinew dries, it contracts like steel wire, and pine resin seals it 100% waterproof!",
+    "outro": "Master post-collapse primitive technology before disaster strikes. Access all survival blueprints offline!"
+  },
+  "outcome": {
+    "title": "Field-Repaired Winter Leather Boot & Primitive Bone Needle Sewing Kit",
+    "badge": "INSPECTION CRITERIA // FIELD REPAIRED GEAR",
+    "standard": "Bone needle surface polished to glass-smooth finish, eye accommodates dual sinew strands cleanly, and saddle-stitched leather seam shows zero gap under heavy manual tension",
+    "svgFileName": "pr14-outcome.svg",
+    "svgLabels": [
+      "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
+      "COMPLETED CORTICAL BONE NEEDLE (LENGTH 7.5CM)",
+      "FLINT AWL DUAL-BORED EYE PASSAGE (DIA 1.8MM)",
+      "OAK BATON SEPARATED HIGH-TENSILE SINEW FIBERS",
+      "SADDLE STITCH & PINE PITCH WATERPROOF SEAM",
+      "RESTORED WINTER BOOT (100% HEAT LOSS BLOCKED)",
+      "FIELD VERIFIED // TENSILE STRENGTH RATED & WATERPROOF"
+    ]
+  },
+  "createdAt": "2026-10-22T08:09:29.733Z",
+  "updatedAt": "2026-10-22T08:14:43.819Z",
+  "contentHash": "614132e570544622"
+}

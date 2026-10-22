@@ -1,0 +1,180 @@
+{
+  "protocolId": "PR-14",
+  "category": "TOOLS",
+  "title": "Aguja de Hueso Primitiva y Costura con Tendón Seco para Cuero y Calzado",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFENSA CONTRA PÉRDIDA TÉRMICA Y PREVENCIÓN DE HIPOTERMIA / CONGELACIÓN]",
+  "summary": "En climas gélidos extremos o tras el colapso de la infraestructura moderna, si las prendas térmicas de cuero o las suelas de las botas se desgarran, el calor corporal escapa rápidamente, provocando hipotermia mortal o congelación de extremidades en menos de 2 horas. Ante la ausencia de agujas de acero e hilo sintético, es indispensable fabricar un juego de costura de emergencia utilizando fragmentos de hueso cortical de ciervo o jabalí hendidos con un [hacha de piedra](/protocol-04.html), afilados sobre cuarcita húmeda y perforados con una lezna de sílex, combinados con cordones de tendón animal secado al aire. Al humedecerse con saliva y coserse, el hilo de tendón se encoge de un 3 a un 5% al secarse, sellando los agujeros por compresión radial antes de impermeabilizarse con [brea caliente de pino](/protocol-10.html).",
+  "timeRequired": "60 min (30 min pulido de aguja + 15 min desfibrado de tendón + 15 min costura)",
+  "successRate": "95% (perforando previamente con lezna de sílex e hidratando el tendón con saliva)",
+  "difficulty": "Media (selección de hueso cortical denso y perforación bicónica cuidadosa)",
+  "outputPerHour": "2 agujas de hueso y 10 hebras de tendón; restaura 1 par de botas o 1 abrigo de piel",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1–2 Fragmentos de Hueso Cortical de Pata (Tibia o Metatarso de Ciervo o Jabalí)",
+      "desc": "Recuperados de [trampas de caza](/protocol-08.html) o del procesamiento de grasa para [jabón de lejía](/protocol-13.html). La densa pared cilíndrica del hueso cortical posee una tenacidad a la flexión similar a la de un clavo de acero y no se quiebra al penetrar cuero."
+    },
+    {
+      "id": "mat-02",
+      "name": "Laja de Cuarcita Abrasiva y Lezna Perforadora de Sílex",
+      "desc": "Una laja de cuarcita de grano grueso para [fabricación de herramientas líticas](/protocol-04.html) y una lezna cónica afilada de sílex para perforar el ojo de 1,8 mm en la aguja."
+    },
+    {
+      "id": "mat-03",
+      "name": "Manojo de Tendón Animal Secado al Viento (Tendón de Aquiles)",
+      "desc": "Tendón recolectado de articulaciones de ciervo o vacuno, secado a la sombra hasta formar una tira rígida de color ámbar. Al golpearlo suavemente con un mazo de madera, se desfibra en cientos de hebras de colágeno ultrafinas."
+    },
+    {
+      "id": "mat-04",
+      "name": "Maza Corta de Madera Dura y Resina de Pino Impermeabilizante",
+      "desc": "Una rama cilíndrica de roble para machacar el tendón y percutir la lezna, junto con [ungüento de resina de pino](/protocol-10.html) para sellar herméticamente las costuras del cuero."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Hender el Hueso Cortical y Desbastar una Espiga de Aguja sobre Cuarcita Húmeda",
+      "description": "1. **Selección y Hendido Longitudinal**: Henda la tibia de un ciervo longitudinalmente con un [hacha de piedra o canto rodado pesado](/protocol-04.html) para obtener una astilla densa del **largo de un dedo (7–8 cm) y 3–4 mm de grosor**.\n2. **Desbaste sobre Cuarcita Húmeda**: Moje la laja de cuarcita y frote la astilla ósea con una inclinación de 45 grados, eliminando restos porosos de médula y redondeando la pieza hasta lograr un cilindro parejo.\n3. **Afilar la Punta de Perforación**: Incline un extremo a 30 grados girándolo continuamente contra la piedra mojada hasta obtener una **punta aguzada capaz de penetrar cuero**.",
+      "actionNote": "> Peligro de Esquirlas: El impacto puede proyectar astillas afiladas; gire el rostro 45 grados al golpear el hueso. Lubrique siempre la cuarcita con agua para evitar que el calor de fricción queme y debilite la estructura ósea.",
+      "svgFileName": "pr14-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BONE SPLINTER BLANK PREPARATION",
+        "HENDIDO LONGITUDINAL DE TIBIA CORTICAL",
+        "DESBASTE SOBRE LAJA DE CUARCITA HÚMEDA",
+        "ESPIGA CILÍNDRICA DEL LARGO DE UN DEDO (7–8CM)",
+        "[PASO CLAVE 1] AFILADO ROTACIONAL A 30° DE PUNTA"
+      ],
+      "deepDive": {
+        "badge": "FIELD BIOMECHANICS",
+        "title": "Matriz de Hidroxiapatita y Resistencia al Cizallamiento del Hueso Cortical",
+        "text": "La pared cortical de las patas de grandes ungulados está diseñada para soportar cargas dinámicas masivas, careciendo de poros esponjosos. Su estructura laminar de cristales de hidroxiapatita entrelazados con fibras elásticas de colágeno ofrece una formidable tenacidad a la flexión, permitiendo a la aguja penetrar cuero grueso sin quebrarse.",
+        "fieldSpecs": [
+          {
+            "name": "Astilla de Hueso Cortical de Ungulado",
+            "scientificName": "Mammalian Tibia Cortical Bone",
+            "categoryTag": "Material Osteológico Primitivo / Espiga para Agujas",
+            "imageFileName": "id-deer-metatarsal-bone.jpg",
+            "hudCode": "FIG. BIO-14A // MACRO OPTIC",
+            "hudStatus": "DENSITY & FLEXURAL STRENGTH: HIGH",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Exterior blanco marfil o crema pálido con núcleo óseo denso y amarillento."
+              },
+              {
+                "label": "DENSIDAD",
+                "value": "Corte transversal liso y vidrioso, totalmente libre de cavidades esponjosas."
+              },
+              {
+                "label": "ACÚSTICA",
+                "value": "Emite un sonido metálico claro y resonante al golpearse suavemente con piedra."
+              }
+            ],
+            "fieldUse": "Astillas seleccionadas de 3–4 mm afiladas como agujas sobre lajas de cuarcita"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Perforar el Ojo Bicónico con Lezna de Sílex y Pulir con Arena Fina",
+      "description": "1. **Perforación Rotatoria Opuesta**: Apoye la punta de la lezna de sílex a **medio ancho de uña (unos 5 mm) del extremo grueso**. Gírela entre los dedos para excavar una cavidad cónica hasta la mitad del grosor, luego invierta la aguja y perfore desde el lado opuesto.\n2. **Limpieza del Canal y Desbarbado**: Al perforar el ojo, pase una espina vegetal seca o ramita delgada girándola enérgicamente para raspar asperezas internas que pudieran cortar el hilo.\n3. **Pulido de Alto Brillo**: Frote la aguja con arcilla fina humedecida o arena de río hasta que adquiera una **superficie lisa como el cristal**, asegurando un deslizamiento sin fricción a través del cuero.",
+      "actionNote": "> Prevención de Fracturas: Perforar desde una sola cara ejerce presión expansiva y quiebra la cabeza del hueso. Aplique siempre el método bicónico perforando hasta la mitad por delante y rematando por detrás.",
+      "svgFileName": "pr14-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DUAL-CONE EYE DRILLING & FINISHING",
+        "PERFORACIÓN ROTATORIA OPUESTA CON LEZNA DE SÍLEX",
+        "OJO PERFORADO A 5MM DEL EXTREMO DE LA AGUJA",
+        "DESBARBADO INTERNO DEL OJO CON ESPINA VEGETAL",
+        "[PASO CLAVE 2] PULIDO CON ARENA FINA A BRILLO VIDRIO"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Machacar el Tendón Seco con Maza de Madera y Extraer Hebras de Colágeno",
+      "description": "1. **Colocar el Tendón Seco**: Coloque la tira de tendón ámbar secada al viento sobre una piedra de río lisa a modo de yunque.\n2. **Percusión Ligera con Madera**: Golpee suavemente con una maza cilíndrica de roble para desintegrar los enlaces entre fibras de colágeno (un impacto violento cortará las hebras).\n3. **Separación y Humectación con Saliva**: Separe con las yemas de los dedos las hebras esponjadas hasta obtener **filamentos del grosor de 3–4 cabellos**. Humedezca la punta del hilo con saliva y tuérzala para afilarla y facilitar el enhebrado.",
+      "actionNote": "> Control del Impacto: Jamás utilice piedras filosas ni hachas para machacar el tendón. Emplee una maza roma de madera dura y golpee rítmicamente para desfibrar el material como seda natural sin cortarlo.",
+      "svgFileName": "pr14-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DRIED ANIMAL SINEW FIBER SEPARATION",
+        "TENDÓN SECO SOBRE YUNQUE DE PIEDRA PLANA",
+        "GOLPETEO SUAVE CON MAZA DE ROBLE (FIBRA DE COLÁGENO)",
+        "SEPARACIÓN DE HEBRAS DEL GROSOR DE 3–4 CABELLOS",
+        "[PASO CLAVE 3] HUMECTACIÓN CON SALIVA PARA ENHEBRADO"
+      ],
+      "deepDive": {
+        "badge": "FIBER SCIENCE",
+        "title": "Entrecruzamiento Molecular de Colágeno Tipo I y Retracción Autoblocante",
+        "text": "Las fibrillas de colágeno Tipo I que componen los tendones poseen una resistencia a la tracción de 50 a 100 MPa, superando cuatro veces la tenacidad del hilo de algodón. Al humedecerse con saliva, las hebras se vuelven dóciles para la costura; al evaporarse la humedad, se contraen entre un 3 y un 5% en volumen, bloqueando firmemente los orificios del cuero sin requerir nudos voluminosos.",
+        "fieldSpecs": [
+          {
+            "name": "Tira de Tendón Animal Secado al Viento",
+            "scientificName": "Dried Mammalian Tendon (Sinew)",
+            "categoryTag": "Fibra Natural Primitiva / Hilo de Tracción Extrema",
+            "imageFileName": "id-dried-animal-sinew.jpg",
+            "hudCode": "FIG. BIO-14B // MACRO OPTIC",
+            "hudStatus": "TENSILE STRENGTH RATING: MAXIMUM",
+            "traits": [
+              {
+                "label": "TEXTURA",
+                "value": "Tira rígida y traslúcida de color ámbar con estrías fibrosas visibles."
+              },
+              {
+                "label": "DESFIBRADO",
+                "value": "Se esponja en hebras blanco-plateadas tan suaves como la seda al percutirse."
+              },
+              {
+                "label": "CONTRACCIÓN",
+                "value": "Flexible al contacto con saliva; se tensa como alambre acerado al secarse."
+              }
+            ],
+            "fieldUse": "Separado en filamentos finos para enhebrar agujas de hueso y reparar equipo de cuero"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Pre-Perforar Orificios a 5mm con Lezna, Coser con Puntada de Guarnicionero y Sellar con Brea",
+      "description": "1. **Pre-Perforación del Cuero**: Traslape los bordes del cuero roto **el ancho de una falange** y perfore previamente una hilera de **agujeros separados 5 mm** con la lezna de sílex y la maza de madera.\n2. **Costura de Guarnicionero (Saddle Stitch)**: Enhebre una aguja en cada extremo del tendón o cruce una sola aguja alternando de adelante hacia atrás, tensando firmemente cada puntada.\n3. **Contracción y Sellado con Resina**: Una vez tensada la costura y seco el tendón, extienda [ungüento templado de resina de pino](/protocol-10.html) sobre la costura para sellar los orificios contra **la entrada de nieve, viento y agua helada**.",
+      "actionNote": "> Pre-Perforación Obligatoria: Aunque la aguja de hueso es sumamente resistente, se quebrará si intenta perforar cuero duro directamente. Abra siempre los orificios con la lezna de sílex y use la aguja solo como guía de arrastre del hilo.",
+      "svgFileName": "pr14-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SADDLE STITCHING & PITCH SEALING",
+        "PRE-PERFORACIÓN CON LEZNA A INTERVALOS DE 5MM",
+        "COSTURA DE GUARNICIONERO CON TENDÓN CRUZADO",
+        "SELLADO IMPERMEABLE DE COSTURA CON BREA DE PINO",
+        "[PASO CLAVE 4] RETRACCIÓN DEL TENDÓN PARA CIERRE ESTANCO"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Empujar con fuerza la cabeza de la aguja de hueso para forzarla a atravesar cuero grueso sin perforación previa",
+    "description": "Forzar una aguja de hueso a través de cuero crudo y grueso sin perforaciones previas somete la estructura a un par de torsión excesivo que quiebra la cabeza o el cuerpo. La astilla ósea afilada puede clavarse profundamente en la palma o dedos, provocando traumatismos penetrantes graves y tétanos letal de campo. Perfore siempre orificios espaciados a 5 mm con una lezna de sílex y maza de madera, utilizando la aguja de hueso exclusivamente como guía suave para deslizar el hilo de tendón.",
+    "consequence": "Consecuencia: Fractura de la aguja, herida penetrante profunda en la mano y riesgo de tétanos / sepsis"
+  },
+  "shortsScript": {
+    "hook": "¿Viento helado a 20 bajo cero y la bota rota? En 2 horas morirás congelado. ¡Fabrica una aguja de hueso ahora mismo!",
+    "body": "Parte la tibia de un ciervo con una piedra, afílala sobre cuarcita mojada y taladra el ojo con sílex. Machaca tendón seco con un palo: ¡obtendrás hebras 4 veces más fuertes que el algodón! Humedece el hilo con saliva, perfora agujeros en el cuero con sílex y cose cruzado. Al secarse, el tendón se encoge y aprieta los orificios, ¡y untar resina de pino hace que la bota sea 100% impermeable!",
+    "outro": "Sobrevive sin tecnología moderna aprendiendo habilidades primitivas. Consulta todos los manuales sin conexión."
+  },
+  "outcome": {
+    "title": "Bota de Cuero Reparada en Campo y Juego de Aguja de Hueso y Tendón",
+    "badge": "CRITERIO DE INSPECCIÓN // FIELD REPAIRED GEAR",
+    "standard": "La aguja de hueso debe lucir un pulido sedoso sin aristas, el ojo debe admitir hebra doble con holgura y la costura de cuero no debe abrirse ni 1 mm bajo tracción manual vigorosa",
+    "svgFileName": "pr14-outcome.svg",
+    "svgLabels": [
+      "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
+      "AGUJA DE HUESO CORTICAL TERMINADA (LARGO 7.5CM)",
+      "OJO PRECISO PERFORADO CON LEZNA DE SÍLEX (DIÁMETRO 1.8MM)",
+      "MANOJO DE HEBRAS DE TENDÓN DE ALTA TENACIDAD DESFIBRADO",
+      "COSTURA CRUZADA DE GUARNICIONERO Y SELLO DE BREA",
+      "BOTA DE INVIERNO RESTAURADA (100% RETENCIÓN TÉRMICA)",
+      "FIELD VERIFIED // TENSILE STRENGTH RATED & WATERPROOF"
+    ]
+  },
+  "createdAt": "2026-10-22T08:09:29.733Z",
+  "updatedAt": "2026-10-22T08:14:43.819Z",
+  "contentHash": "614132e570544622"
+}

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1404" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="leatherTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#854d0e"/>
+      <stop offset="50%" stop-color="#713f12"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="leatherBot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#581c87"/>
+      <stop offset="50%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="pitchGlaze" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="bone4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <filter id="drop1404" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1404" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1404)"/>
+  <rect width="400" height="400" fill="url(#grid1404)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // SADDLE STITCHING &amp; PITCH SEALING</text>
+
+  <!-- Main Leather Cross-Section & Saddle Stitching Display -->
+  <g filter="url(#drop1404)">
+    <!-- Top Leather Layer -->
+    <path d="M 30 140 L 370 140 L 370 190 L 30 190 Z" fill="url(#leatherTop)" stroke="#a16207" stroke-width="1.2"/>
+    <!-- Bottom Overlapping Leather Layer (Offset seam) -->
+    <path d="M 30 170 L 370 170 L 370 220 L 30 220 Z" fill="#292524" stroke="#57534e" stroke-width="1.2" opacity="0.95"/>
+
+    <!-- Pre-punched 5mm Holes Line -->
+    <!-- Hole 1 -->
+    <circle cx="70" cy="180" r="4.5" fill="#0c0a09" stroke="#e02424" stroke-width="1.2"/>
+    <!-- Hole 2 -->
+    <circle cx="130" cy="180" r="4.5" fill="#0c0a09" stroke="#e02424" stroke-width="1.2"/>
+    <!-- Hole 3 -->
+    <circle cx="190" cy="180" r="4.5" fill="#0c0a09" stroke="#e02424" stroke-width="1.2"/>
+    <!-- Hole 4 -->
+    <circle cx="250" cy="180" r="4.5" fill="#0c0a09" stroke="#e02424" stroke-width="1.2"/>
+    <!-- Hole 5 -->
+    <circle cx="310" cy="180" r="4.5" fill="#0c0a09" stroke="#e02424" stroke-width="1.2"/>
+
+    <!-- Saddle Stitch Sinew Thread Paths (Dual Cross Threads) -->
+    <!-- Front Thread (Gold) -->
+    <path d="M 50 180 Q 70 160 130 180 Q 190 160 250 180 Q 310 160 340 180" fill="none" stroke="#fde68a" stroke-width="3" stroke-linecap="round"/>
+    <!-- Back Thread (Silver White Cross) -->
+    <path d="M 50 180 Q 70 200 130 180 Q 190 200 250 180 Q 310 200 340 180" fill="none" stroke="#f1f5f9" stroke-width="2.5" stroke-dasharray="6 3" stroke-linecap="round"/>
+
+    <!-- Bone Needles in Action (Left needle plunging down, right needle coming up) -->
+    <!-- Needle A (Top to Down) -->
+    <path d="M 175 110 L 190 175 L 187 177 L 172 112 Z" fill="url(#bone4)" stroke="#475569" stroke-width="1"/>
+    <ellipse cx="174" cy="114" rx="2" ry="3.5" fill="#020617"/>
+    <!-- Thread coming out of Needle A -->
+    <path d="M 174 114 Q 155 95 130 180" fill="none" stroke="#fde68a" stroke-width="2"/>
+
+    <!-- Needle B (Bottom to Up) -->
+    <path d="M 205 250 L 190 185 L 193 183 L 208 248 Z" fill="url(#bone4)" stroke="#475569" stroke-width="1"/>
+    <ellipse cx="206" cy="246" rx="2" ry="3.5" fill="#020617"/>
+    <!-- Thread coming out of Needle B -->
+    <path d="M 206 246 Q 225 265 250 180" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+
+    <!-- 5mm Gauge Indicator Graphic -->
+    <line x1="70" y1="148" x2="130" y2="148" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="70" y1="144" x2="70" y2="152" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="130" y1="144" x2="130" y2="152" stroke="#38bdf8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Label 2: 5mm Awl Pre-Punched Holes -->
+  <rect x="25" y="55" width="230" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="33" y="70" fill="#fde68a" font-family="monospace" font-size="10" font-weight="bold">부싯돌 송곳 5mm 간격 예비 가죽 천공</text>
+
+  <!-- Label 3: Saddle Stitch Dual Cross -->
+  <rect x="180" y="85" width="205" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="188" y="100" fill="#94a3b8" font-family="monospace" font-size="9.5" font-weight="bold">힘줄 실 양방향 교차(Saddle Stitch) 봉제</text>
+
+  <!-- Heated Pine Pitch Sealing Glaze Section (Lower Half) -->
+  <g filter="url(#drop1404)">
+    <!-- Sealed Seam Line with Translucent Melted Resin Glaze -->
+    <path d="M 40 270 L 360 270 L 360 295 L 40 295 Z" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+    <!-- Pitch Coating Layer -->
+    <path d="M 40 278 C 100 273 200 282 360 276 L 360 292 C 240 296 120 288 40 293 Z" fill="url(#pitchGlaze)" stroke="#ea580c" stroke-width="1"/>
+    <!-- Glistening gloss highlight line on resin -->
+    <path d="M 50 282 C 120 278 220 284 350 280" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Waterproof Shield Graphic Indicator -->
+    <path d="M 190 310 L 200 305 L 210 310 L 210 325 C 210 335 200 342 200 342 C 200 342 190 335 190 325 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="1.2"/>
+    <path d="M 196 322 L 199 325 L 205 318" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- Label 4: Pine Pitch Seam Glaze -->
+  <rect x="25" y="320" width="190" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="33" y="335" fill="#fde68a" font-family="monospace" font-size="10" font-weight="bold">소나무 송진 고약 솔기 방수 코팅</text>
+
+  <!-- Label 5: Step 4 Core Summary -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">[4단계 핵심] 힘줄 건조 수축으로 바늘구멍 완전 밀폐</text>
+</svg>
