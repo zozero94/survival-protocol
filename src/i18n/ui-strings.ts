@@ -72,6 +72,15 @@ export interface UiStrings {
   confirmSurvival: string;
   toastLiked: string;
   toastUnliked: string;
+  faqSectionTitle: string;
+  faqBadgeSchema: string;
+  faqBadgeStatus: string;
+  faqHeadline: string;
+  faqSubtext: string;
+  faqExpandText: string;
+  faqCollapseText: string;
+  faqCauseLabel: string;
+  faqResolutionLabel: string;
 }
 
 export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
@@ -149,6 +158,15 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: '생존 확인',
     toastLiked: '생존 기술 유용성을 확인했습니다.',
     toastUnliked: '생존 확인이 취소되었습니다.',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[조치 방안 완비]',
+    faqHeadline: '야전 돌발 변수 대처 및 실패 방지 실전 질의응답',
+    faqSubtext: '비가 오거나 바람이 강할 때, 여과수가 뿌옇거나 부품이 헐거워질 때 즉각 시도할 수 있는 야전 긴급 대응 요령입니다.',
+    faqExpandText: '[ + 펼치기 ]',
+    faqCollapseText: '[ - 접기 ]',
+    faqCauseLabel: '[원인 진단]:',
+    faqResolutionLabel: 'TACTICAL RESOLUTION // 야전 즉각 조치',
   },
   en: {
     brandArchive: 'TACTICAL SURVIVAL ARCHIVE',
@@ -224,6 +242,15 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: 'SURVIVAL CONFIRMED',
     toastLiked: 'Survival protocol validated.',
     toastUnliked: 'Validation withdrawn.',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[RESOLUTIONS READY]',
+    faqHeadline: 'Field Troubleshooting & Contingency Q&A',
+    faqSubtext: 'Immediate tactical countermeasures for unexpected rain, wind, turbidity, or mechanical looseness.',
+    faqExpandText: '[ + EXPAND ]',
+    faqCollapseText: '[ - COLLAPSE ]',
+    faqCauseLabel: '[CAUSE DIAGNOSTIC]:',
+    faqResolutionLabel: 'TACTICAL RESOLUTION // IMMEDIATE ACTION',
   },
   ja: {
     brandArchive: '生存戦術教本アーカイブ',
@@ -299,6 +326,15 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: '生存確認',
     toastLiked: '生存技術の有用性を確認しました。',
     toastUnliked: '生存確認を取り消しました。',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[対策配備完了]',
+    faqHeadline: '野戦トラブルシューティング＆失敗防止Q&A',
+    faqSubtext: '予期せぬ風雨、ろ過水の濁り、部材の緩みなど突発的な問題への即応マニュアルです。',
+    faqExpandText: '[ + 展開 ]',
+    faqCollapseText: '[ - 折りたたむ ]',
+    faqCauseLabel: '[原因診断]:',
+    faqResolutionLabel: 'TACTICAL RESOLUTION // 野戦即応措置',
   },
   es: {
     brandArchive: 'ARCHIVO DE SUPERVIVENCIA TÁCTICA',
@@ -374,6 +410,15 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: 'CONFIRMAR SUPERVIVENCIA',
     toastLiked: 'Protocolo de supervivencia validado.',
     toastUnliked: 'Validación retirada.',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[RESOLUCIONES LISTAS]',
+    faqHeadline: 'Resolución de Problemas en el Campo y Preguntas Frecuentes',
+    faqSubtext: 'Medidas tácticas inmediatas para lluvia imprevista, viento, turbidez o fallos mecánicos.',
+    faqExpandText: '[ + DESPLEGAR ]',
+    faqCollapseText: '[ - PLEGAR ]',
+    faqCauseLabel: '[DIAGNÓSTICO]:',
+    faqResolutionLabel: 'RESOLUCIÓN TÁCTICA // ACCIÓN INMEDIATA',
   },
   de: {
     brandArchive: 'TAKTIK-ÜBERLEBENSARCHIV',
@@ -449,6 +494,15 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: 'ÜBERLEBEN BESTÄTIGT',
     toastLiked: 'Überlebensprotokoll bestätigt.',
     toastUnliked: 'Bestätigung zurückgezogen.',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[LÖSUNGEN BEREIT]',
+    faqHeadline: 'Feld-Fehlerbehebung & Notfall-FAQ',
+    faqSubtext: 'Sofortige taktische Gegenmaßnahmen bei plötzlichem Regen, Wind, Trübung oder lockeren Teilen.',
+    faqExpandText: '[ + AUSKLAPPEN ]',
+    faqCollapseText: '[ - EINKLAPPEN ]',
+    faqCauseLabel: '[URSACHENDIAGNOSE]:',
+    faqResolutionLabel: 'TAKTIK-LÖSUNG // SOFORTMASSNAHME',
   },
   pt: {
     brandArchive: 'ARQUIVO DE SOBREVIVÊNCIA TÁCTICA',
@@ -524,6 +578,15 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: 'CONFIRMAR SOBREVIVÊNCIA',
     toastLiked: 'Protocolo de sobrevivência validado.',
     toastUnliked: 'Validação retirada.',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[RESOLUÇÕES PRONTAS]',
+    faqHeadline: 'Resolução de Problemas de Campo e Perguntas Frecuentes',
+    faqSubtext: 'Contramedidas táticas imediatas para chuva inesperada, vento, turbidez ou afrouxamento estrutural.',
+    faqExpandText: '[ + EXPANDIR ]',
+    faqCollapseText: '[ - RECOLHER ]',
+    faqCauseLabel: '[DIAGNÓSTICO]:',
+    faqResolutionLabel: 'RESOLUÇÃO TÁCTICA // AÇÃO IMEDIATA',
   },
   'zh-TW': {
     brandArchive: '生存戰術手冊檔案庫',
@@ -599,5 +662,14 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
     confirmSurvival: '確認生存',
     toastLiked: '已確認生存技術實用性。',
     toastUnliked: '已取消確認。',
+    faqSectionTitle: '// 05 FIELD TROUBLESHOOTING & FAQ',
+    faqBadgeSchema: '[SCHEMA.ORG FAQPAGE]',
+    faqBadgeStatus: '[處置方案已就緒]',
+    faqHeadline: '野戰故障排除與應急問答',
+    faqSubtext: '針對突降暴雨、強風、過濾水混濁或結構鬆脫時的即時應對處置方案。',
+    faqExpandText: '[ + 展開 ]',
+    faqCollapseText: '[ - 摺疊 ]',
+    faqCauseLabel: '[原因診斷]:',
+    faqResolutionLabel: '戰術應對 // 現場即時處置',
   },
 };

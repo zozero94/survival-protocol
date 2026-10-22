@@ -89,8 +89,8 @@ export function renderCanonicalProtocolPage(
   const checklistHtml = renderChecklist(master.materials);
   const stepCardsHtml = renderStepCards(master.steps, svgsMap);
   const fatalHtml = renderFatalWarning(master.fatalMistake);
-  const faqs = PROTOCOL_FAQS[master.protocolId] || [];
-  const faqHtml = renderFaqSection(master.protocolId);
+  const faqs = master.faqs || PROTOCOL_FAQS[master.protocolId] || [];
+  const faqHtml = renderFaqSection(faqs);
   const faqJsonLd = SeoService.generateFaqJsonLd(faqs);
   const actionHtml = renderStickyActionBar(nextProtocolTitle || master.nextProtocolTitle, nextProtocolHref);
 
@@ -193,8 +193,16 @@ ${faqJsonLd}
   </script>
   <style>
     * { box-sizing: border-box; border-radius: 0px !important; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+    summary::-webkit-details-marker { display: none; }
     body { background-color: #131313; color: #F5F5F5; font-family: 'Chivo', 'Noto Sans KR', sans-serif; line-height: 1.7; }
-    @media print { .no-print { display: none !important; } body { background: white !important; color: black !important; } }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      details { display: block !important; }
+      details > div { display: block !important; background: transparent !important; color: black !important; }
+      details summary [data-i18n="faqExpandText"],
+      details summary [data-i18n="faqCollapseText"] { display: none !important; }
+    }
   </style>
 </head>
 <body class="bg-[#131313] text-[#F5F5F5] min-h-screen selection:bg-white selection:text-black antialiased flex flex-col justify-between pb-24">

@@ -1,8 +1,5 @@
-export interface ProtocolFaqItem {
-  question: string;
-  causeDiagnostic: string;
-  resolution: string;
-}
+import type { ProtocolFaqItem } from '../types/index.ts';
+export type { ProtocolFaqItem };
 
 /**
  * [Content Layer]

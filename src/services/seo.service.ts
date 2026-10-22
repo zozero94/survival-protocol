@@ -1,4 +1,4 @@
-import type { Protocol } from '../types/index.ts';
+import type { Protocol, ProtocolFaqItem } from '../types/index.ts';
 import { SITE_META, ADSENSE_CONFIG, SEO_CONFIG } from '../site.config.ts';
 import { SUPPORTED_LOCALES } from '../i18n/locales.ts';
 
@@ -138,13 +138,15 @@ Sitemap: ${siteUrl}/sitemap.xml
       })),
     };
 
-    return JSON.stringify(schema, null, 2);
+    return JSON.stringify(schema, null, 2)
+      .replace(/</g, '\\u003c')
+      .replace(/>/g, '\\u003e');
   }
 
   /**
    * Google 검색결과 리치 스니펫용 Schema.org FAQPage JSON-LD 구조화 데이터 생성
    */
-  public static generateFaqJsonLd(faqs: { question: string; resolution: string }[]): string | null {
+  public static generateFaqJsonLd(faqs: ProtocolFaqItem[]): string | null {
     if (!faqs || faqs.length === 0) return null;
     const schema = {
       '@context': 'https://schema.org',
@@ -154,11 +156,15 @@ Sitemap: ${siteUrl}/sitemap.xml
         name: f.question,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: f.resolution,
+          text: f.causeDiagnostic
+            ? `[원인 진단] ${f.causeDiagnostic}\n[야전 즉각 조치] ${f.resolution}`
+            : f.resolution,
         },
       })),
     };
-    return JSON.stringify(schema, null, 2);
+    return JSON.stringify(schema, null, 2)
+      .replace(/</g, '\\u003c')
+      .replace(/>/g, '\\u003e');
   }
 
   /**

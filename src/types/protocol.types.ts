@@ -59,6 +59,12 @@ export interface FatalMistake {
 
 export type ProtocolCategory = 'FIRE' | 'WATER' | 'TOOLS' | 'SHELTER' | 'FOOD' | 'MEDICINE';
 
+export interface ProtocolFaqItem {
+  question: string;
+  causeDiagnostic: string;
+  resolution: string;
+}
+
 export interface Protocol {
   protocolId: string;
   category: ProtocolCategory;
@@ -76,6 +82,7 @@ export interface Protocol {
   materials: Material[];
   steps: ProtocolStep[];
   fatalMistake: FatalMistake;
+  faqs?: ProtocolFaqItem[];
   nextProtocolTitle?: string;
   createdAt?: string;
   updatedAt?: string;
