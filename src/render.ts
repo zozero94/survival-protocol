@@ -10,12 +10,14 @@ import {
   renderChecklist,
   renderStepCards,
   renderFatalWarning,
+  renderFaqSection,
   renderSearchModal,
   renderCrosslinkPopover,
   renderFooter,
 } from './components/index.ts';
 import { SITE_META, PWA_PATHS, SEO_CONFIG, ADSENSE_CONFIG, EXTERNAL_RUNTIME_ASSETS } from './site.config.ts';
 import { SeoService } from './services/seo.service.ts';
+import { PROTOCOL_FAQS } from './content/protocol-faqs.ts';
 import { SearchService, type SearchDocument } from './services/search.service.ts';
 import {
   getThemeRuntimeScript,
@@ -87,6 +89,9 @@ export function renderCanonicalProtocolPage(
   const checklistHtml = renderChecklist(master.materials);
   const stepCardsHtml = renderStepCards(master.steps, svgsMap);
   const fatalHtml = renderFatalWarning(master.fatalMistake);
+  const faqs = PROTOCOL_FAQS[master.protocolId] || [];
+  const faqHtml = renderFaqSection(master.protocolId);
+  const faqJsonLd = SeoService.generateFaqJsonLd(faqs);
   const actionHtml = renderStickyActionBar(nextProtocolTitle || master.nextProtocolTitle, nextProtocolHref);
 
   const themeScript = getThemeRuntimeScript();
@@ -132,6 +137,10 @@ export function renderCanonicalProtocolPage(
   <script type="application/ld+json">
 ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   </script>
+${faqJsonLd ? `  <!-- Schema.org JSON-LD FAQPage Structured Data -->
+  <script type="application/ld+json">
+${faqJsonLd}
+  </script>` : ''}
 
   <!-- FOUC(Flash of Untranslated Content) 방지 쉴드 스타일 및 동기 판별 스크립트 -->
   <style id="fouc-shield">
@@ -202,6 +211,7 @@ ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
     ${checklistHtml}
     ${stepCardsHtml}
     ${fatalHtml}
+    ${faqHtml}
   </main>
 
   ${renderFooter('protocol')}

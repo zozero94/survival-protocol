@@ -108,6 +108,31 @@
   ]
 }
   </script>
+  <!-- Schema.org JSON-LD FAQPage Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "칡 줄기를 엮었는데 마르면서 바스라지고 끊어져요.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "생칡을 나무 방망이로 살살 두드려 뻣뻣한 겉껍질을 벗겨내고, 얇고 부드러운 속껍질 섬유만 분리하십시오. 두 가닥을 시계 방향으로 꼬면서 반시계 방향으로 엮으면 질겨집니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "밧줄 끝부분이 시간이 지나면 스르륵 풀려버립니다.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "밧줄 끝부분을 옭매듭으로 한 번 묶어주거나, 얇은 칡 섬유 한 줄로 끝을 단단하게 감아쥐는 휘핑 결속을 해주면 절대 풀리지 않습니다."
+      }
+    }
+  ]
+}
+  </script>
 
   <!-- FOUC(Flash of Untranslated Content) 방지 쉴드 스타일 및 동기 판별 스크립트 -->
   <style id="fouc-shield">
@@ -1295,6 +1320,92 @@
     <div class="border-t border-[#441a1a] pt-3 font-mono text-xs text-[#ff8888] font-bold">
       <span id="fatal-consequence" data-proto-fatal="consequence">결과: 자는 도중 움막 지붕이 무너지거나 나무를 찍던 돌도끼 날이 빠져 큰 부상을 입음</span>
     </div>
+  </div>
+</section>
+    <section aria-label="Field Troubleshooting Accordion Nodes" class="border border-[#262626] bg-[#0d0d0d] p-4 sm:p-6 mb-8 space-y-4">
+  <!-- 상단 헤더 레일 -->
+  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#262626] pb-3">
+    <div class="flex items-center gap-2 font-mono text-xs text-[#fde68a] font-bold">
+      <span class="inline-block w-2 h-2 bg-[#fde68a]"></span>
+      <span data-i18n="faqSectionTitle">// 05 FIELD TROUBLESHOOTING &amp; FAQ</span>
+    </div>
+    <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400">
+      <span class="border border-[#333] bg-[#141414] px-1.5 py-0.5" data-i18n="faqBadgeSchema">[SCHEMA.ORG FAQPAGE]</span>
+      <span class="border border-[#333] bg-[#141414] px-1.5 py-0.5 text-emerald-400 font-bold" data-i18n="faqBadgeStatus">[RESOLUTIONS READY]</span>
+    </div>
+  </div>
+
+  <div class="space-y-1">
+    <h3 class="text-sm sm:text-base font-bold font-mono text-white" data-i18n="faqHeadline">
+      야전 돌발 변수 대처 및 실패 방지 실전 질의응답
+    </h3>
+    <p class="text-neutral-400 text-xs leading-relaxed" data-i18n="faqSubtext">
+      비가 오거나 바람이 강할 때, 여과수가 뿌옇거나 부품이 헐거워질 때 즉각 시도할 수 있는 야전 긴급 대응 요령입니다.
+    </p>
+  </div>
+
+  <!-- 아코디언 목록 (기본 접힘 상태) -->
+  <div class="space-y-2.5 pt-1">
+    <details class="group border border-[#262626] bg-[#141414] hover:border-[#404040] transition-colors">
+      <summary class="flex justify-between items-center p-3 sm:p-3.5 cursor-pointer select-none bg-[#111111] hover:bg-[#1a1a1a] transition-colors list-none">
+        <div class="flex items-center gap-2.5 min-w-0 pr-2">
+          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0">
+            [Q01]
+          </span>
+          <span data-proto="faq" class="font-mono text-xs sm:text-sm font-semibold text-white truncate group-open:whitespace-normal">
+            칡 줄기를 엮었는데 마르면서 바스라지고 끊어져요.
+          </span>
+        </div>
+        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1">
+          <span class="group-open:hidden text-[#fde68a]" data-i18n="faqExpandText">[ + 펼치기 ]</span>
+          <span class="hidden group-open:inline text-neutral-300" data-i18n="faqCollapseText">[ - 접기 ]</span>
+        </div>
+      </summary>
+      <div class="p-3.5 sm:p-4 bg-[#0a0a0a] border-t border-[#262626] space-y-2.5 text-xs sm:text-sm leading-relaxed">
+        <div class="p-2.5 bg-[#121212] border border-[#262626] font-mono text-[11px] flex items-start gap-2">
+          <span class="text-[#f59e0b] font-bold shrink-0" data-i18n="faqCauseLabel">[CAUSE DIAGNOSTIC]:</span>
+          <span data-proto="faq" class="text-neutral-300 leading-snug">뻣뻣한 겉껍질을 그대로 썼거나 섬유를 고르게 비틀어 꼬지 않아 인장력이 약해진 상태입니다.</span>
+        </div>
+        <div class="bg-[#121212] border-l-2 border-[#fde68a] border-t border-r border-b border-[#262626] p-3 text-neutral-200">
+          <div class="font-mono text-[10px] text-[#fde68a] font-bold uppercase tracking-wider mb-1.5 flex items-center justify-between">
+            <span data-i18n="faqResolutionLabel">TACTICAL RESOLUTION // 야전 즉각 조치</span>
+          </div>
+          <p data-proto="faq" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
+            생칡을 나무 방망이로 살살 두드려 뻣뻣한 겉껍질을 벗겨내고, 얇고 부드러운 속껍질 섬유만 분리하십시오. 두 가닥을 시계 방향으로 꼬면서 반시계 방향으로 엮으면 질겨집니다.
+          </p>
+        </div>
+      </div>
+    </details>
+<details class="group border border-[#262626] bg-[#141414] hover:border-[#404040] transition-colors">
+      <summary class="flex justify-between items-center p-3 sm:p-3.5 cursor-pointer select-none bg-[#111111] hover:bg-[#1a1a1a] transition-colors list-none">
+        <div class="flex items-center gap-2.5 min-w-0 pr-2">
+          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0">
+            [Q02]
+          </span>
+          <span data-proto="faq" class="font-mono text-xs sm:text-sm font-semibold text-white truncate group-open:whitespace-normal">
+            밧줄 끝부분이 시간이 지나면 스르륵 풀려버립니다.
+          </span>
+        </div>
+        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1">
+          <span class="group-open:hidden text-[#fde68a]" data-i18n="faqExpandText">[ + 펼치기 ]</span>
+          <span class="hidden group-open:inline text-neutral-300" data-i18n="faqCollapseText">[ - 접기 ]</span>
+        </div>
+      </summary>
+      <div class="p-3.5 sm:p-4 bg-[#0a0a0a] border-t border-[#262626] space-y-2.5 text-xs sm:text-sm leading-relaxed">
+        <div class="p-2.5 bg-[#121212] border border-[#262626] font-mono text-[11px] flex items-start gap-2">
+          <span class="text-[#f59e0b] font-bold shrink-0" data-i18n="faqCauseLabel">[CAUSE DIAGNOSTIC]:</span>
+          <span data-proto="faq" class="text-neutral-300 leading-snug">섬유 꼬임의 끝단 마감이 되어있지 않아 풀림 현상이 일어납니다.</span>
+        </div>
+        <div class="bg-[#121212] border-l-2 border-[#fde68a] border-t border-r border-b border-[#262626] p-3 text-neutral-200">
+          <div class="font-mono text-[10px] text-[#fde68a] font-bold uppercase tracking-wider mb-1.5 flex items-center justify-between">
+            <span data-i18n="faqResolutionLabel">TACTICAL RESOLUTION // 야전 즉각 조치</span>
+          </div>
+          <p data-proto="faq" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
+            밧줄 끝부분을 옭매듭으로 한 번 묶어주거나, 얇은 칡 섬유 한 줄로 끝을 단단하게 감아쥐는 휘핑 결속을 해주면 절대 풀리지 않습니다.
+          </p>
+        </div>
+      </div>
+    </details>
   </div>
 </section>
   </main>

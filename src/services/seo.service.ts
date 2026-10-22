@@ -142,6 +142,26 @@ Sitemap: ${siteUrl}/sitemap.xml
   }
 
   /**
+   * Google 검색결과 리치 스니펫용 Schema.org FAQPage JSON-LD 구조화 데이터 생성
+   */
+  public static generateFaqJsonLd(faqs: { question: string; resolution: string }[]): string | null {
+    if (!faqs || faqs.length === 0) return null;
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: f.resolution,
+        },
+      })),
+    };
+    return JSON.stringify(schema, null, 2);
+  }
+
+  /**
    * Google AdSense 공식 비동기 스크립트 태그 및 계정 소유권 메타태그 렌더링
    */
   public static renderAdsenseHeadScript(clientId: string = ADSENSE_CONFIG.clientId): string {
