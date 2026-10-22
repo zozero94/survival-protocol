@@ -163,6 +163,7 @@
     "title": "野外修復完成的防寒皮靴與骨針·筋線縫紉套裝",
     "badge": "驗收檢驗標準 // FIELD REPAIRED GEAR",
     "standard": "骨針表面呈現鏡面光滑，針孔能容納兩股筋線順暢穿過，雙向馬鞍縫合的皮革接縫在雙手用力拉扯下無1毫米鬆脫裂隙",
+    "description": "骨針表面呈現鏡面光滑，針孔能容納兩股筋線順暢穿過，雙向馬鞍縫合的皮革接縫在雙手用力拉扯下無1毫米鬆脫裂隙",
     "svgFileName": "pr14-outcome.svg",
     "svgLabels": [
       "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
@@ -175,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T08:14:43.819Z",
-  "contentHash": "614132e570544622"
+  "updatedAt": "2026-10-22T17:22:40+09:00",
+  "contentHash": "b182acb92e757c63"
 }

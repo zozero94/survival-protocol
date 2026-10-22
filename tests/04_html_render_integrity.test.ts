@@ -8,7 +8,8 @@ import type { Protocol } from '../src/types/protocol.types.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const compiledHtmlPath = path.resolve(__dirname, '../public/protocol-01.html');
+const publicDir = path.resolve(__dirname, '../public');
+const compiledHtmlPath = path.resolve(publicDir, 'protocol-01.html');
 
 describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫스왑 엔진 전수 검증', () => {
   test('public/protocol-01.html 파일이 존재하고 0바이트가 아니어야 한다', () => {
@@ -18,9 +19,13 @@ describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫�
   });
 
   test('컴파일된 HTML 본문 내에 렌더링 버그 문자열(>undefined<, [object Object])이 없어야 한다', () => {
-    const html = fs.readFileSync(compiledHtmlPath, 'utf-8');
-    assert.equal(html.includes('>undefined<'), false, 'HTML 본문 태그 내에 undefined가 렌더링되어선 안 됨');
-    assert.equal(html.includes('[object Object]'), false, 'HTML 내에 [object Object]가 노출되어선 안 됨');
+    const htmlFiles = fs.readdirSync(publicDir).filter(f => f.startsWith('protocol-') && f.endsWith('.html'));
+    assert.ok(htmlFiles.length > 0, '프로토콜 HTML 파일이 존재해야 함');
+    for (const f of htmlFiles) {
+      const html = fs.readFileSync(path.join(publicDir, f), 'utf-8');
+      assert.equal(/>\s*undefined\s*</.test(html), false, `${f} 본문 태그 내에 undefined가 렌더링되어선 안 됨`);
+      assert.equal(html.includes('[object Object]'), false, `${f} 내에 [object Object]가 노출되어선 안 됨`);
+    }
   });
 
   test('FOUC 쉴드 스타일 및 4대 선언적 바인딩 속성이 100% 탑재되어 있어야 한다', () => {

@@ -1,4 +1,5 @@
                                                                                 
+import { highlightTechnicalTerms } from '../protocol/StepCard.js';
 
 const CATEGORY_LABELS                                   = {
   WATER: '[물 구하기]',
@@ -90,7 +91,7 @@ export function renderProtocolCard(protocol          )         {
         </a>
       </h2>
       <p data-card-summary="${protocol.protocolId}" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
-        ${protocol.summary}
+        ${highlightTechnicalTerms(protocol.summary)}
       </p>
     </div>
   </div>

@@ -103,5 +103,14 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
       }
     }
   });
+
+  test('메인 index.html 피드 카드 요약에 마크다운 원문이 노출되지 않고 인라인 크로스링크 및 호버 팝오버가 탑재되어야 한다', () => {
+    const html = fs.readFileSync(indexPath, 'utf-8');
+    assert.ok(html.includes('id="tactical-crosslink-popover"'), '메인 페이지에 크로스링크 프리뷰 팝오버(#tactical-crosslink-popover)가 탑재되어야 함');
+    assert.ok(html.includes('showPopoverForAnchor'), '메인 페이지에 크로스링크 호버 런타임 스크립트가 내장되어야 함');
+    assert.equal(/data-card-summary="[^"]*"[^>]*>[^<]*\[[^\]]+\]\(\/protocol-[^)]+\)/.test(html), false, '피드 카드 요약에 마크다운 링크 원문이 그대로 노출되어선 안 됨');
+    assert.ok(html.includes('data-card-summary="PR-14"'), 'PR-14 카드가 존재해야 함');
+    assert.ok(html.includes('data-proto="crosslink"'), '카드 요약 내 크로스링크(data-proto="crosslink") 태그가 정상 렌더링되어야 함');
+  });
 });
 

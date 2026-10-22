@@ -442,7 +442,7 @@
   <!-- Clean Summary Paragraph with Left Accent Border -->
   <div class="border-l-2 border-white pl-3.5 py-1 text-xs sm:text-sm text-[#d1d1d1] leading-relaxed mb-4 bg-[#141414]/60">
     <p id="proto-summary" data-proto="summary">
-      모닥불에 나무를 그냥 태우면 산소와 완전히 반응해 하얀 재만 남고 아무것도 남지 않습니다. 땅에 **50cm** 원뿔형 구덩이를 파고 참나무를 빽빽하게 세운 뒤, 흙과 잔디로 덮어 공기 유입을 **95%** 차단하면 나무가 활활 타지 않고 고열에 쪄지면서 단단한 숯이 됩니다. 연기 없이 따뜻하게 밤을 지새우거나, 정수용 숯 필터로 쓰거나, 불씨를 며칠씩 보관할 수 있는 야생의 검은 보석입니다.
+      모닥불에 나무를 그냥 태우면 산소와 완전히 반응해 하얀 재만 남고 아무것도 남지 않습니다. 땅에 <strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">50cm</strong> 원뿔형 구덩이를 파고 참나무를 빽빽하게 세운 뒤, 흙과 잔디로 덮어 공기 유입을 <strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">95%</strong> 차단하면 나무가 활활 타지 않고 고열에 쪄지면서 단단한 숯이 됩니다. 연기 없이 따뜻하게 밤을 지새우거나, 정수용 숯 필터로 쓰거나, 불씨를 며칠씩 보관할 수 있는 야생의 검은 보석입니다.
     </p>
   </div>
 
@@ -2352,6 +2352,8 @@
                   uContainer.classList.add('hidden');
                 }
               }
+            } else if (field === 'summary') {
+              el.innerHTML = renderHighlightTermsClient(proto[field]);
             } else {
               el.innerText = proto[field];
             }
@@ -2399,8 +2401,11 @@
         // 4-2. [선언적 엔진] 최종 결과물(Outcome) 중첩 객체 자동 매핑 (data-proto-outcome)
         document.querySelectorAll('[data-proto-outcome]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-outcome');
-          if (proto.outcome && proto.outcome[prop] !== undefined) {
-            el.innerText = proto.outcome[prop];
+          if (proto.outcome) {
+            var val = proto.outcome[prop] || (prop === 'description' ? proto.outcome.standard : undefined);
+            if (val !== undefined) {
+              el.innerText = val;
+            }
           }
         });
 

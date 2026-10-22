@@ -72,7 +72,7 @@ export function renderOutcomePreview(
       <span data-i18n="outcomeStandard">완성 검수 기준</span>
     </div>
     <p id="proto-outcome-desc" data-proto-outcome="description" class="text-xs sm:text-sm text-[#e0e0e0]">
-      ${outcome.description}
+      ${outcome.description || outcome.standard || ''}
     </p>
   </div>
 </section>

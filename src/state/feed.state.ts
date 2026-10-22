@@ -47,6 +47,20 @@ export function getFeedRuntimeScript(): string {
         return (lang && window.__UI_STRINGS__[lang]) ? lang : 'ko';
       }
 
+      function renderHighlightTermsClient(text) {
+        if (!text) return '';
+        var withLinks = text.replace(/\\\[([^\\\]]+)\\\]\\(([^)]+)\\)/g, function(_m, label, url) {
+          return '<a data-proto="crosslink" href="' + url + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
+        });
+        return withLinks.replace(/\\*\\*(.*?)\\*\\*/g, function(_m, p1) {
+          var isMetric = /\\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
+          if (isMetric) {
+            return '<strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
+          }
+          return '<strong data-proto="highlight" class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">' + p1 + '</strong>';
+        });
+      }
+
       function switchFeedLocale(targetLocale) {
         try {
           var ui = window.__UI_STRINGS__[targetLocale];
@@ -83,7 +97,7 @@ export function getFeedRuntimeScript(): string {
           document.querySelectorAll('[data-card-summary]').forEach(function (el) {
             var pid = el.getAttribute('data-card-summary');
             if (feedMap[pid] && feedMap[pid].summary) {
-              el.innerText = feedMap[pid].summary;
+              el.innerHTML = renderHighlightTermsClient(feedMap[pid].summary);
             }
           });
           document.querySelectorAll('[data-card-mat]').forEach(function (el) {
@@ -253,9 +267,20 @@ export function getFeedRuntimeScript(): string {
           return;
         }
 
+        // 크로스링크 클릭 시 해당 링크로 직접 이동 (현재 언어 유지)
+        var crosslink = e.target.closest('a[data-proto="crosslink"]');
+        if (crosslink) {
+          var crossHref = crosslink.getAttribute('href');
+          if (crossHref) {
+            var targetCrossUrl = (currentLang && currentLang !== 'ko') ? (crossHref.split('?')[0] + '?lang=' + currentLang) : crossHref;
+            window.location.href = targetCrossUrl;
+            return;
+          }
+        }
+
         // 피드 카드 어디를 클릭/터치해도 상세페이지로 즉시 랜딩 (현재 언어 유지)
         var card = e.target.closest('[data-protocol-href]');
-        if (card && !e.target.closest('button')) {
+        if (card && !e.target.closest('button') && !e.target.closest('a')) {
           var href = card.getAttribute('data-protocol-href');
           if (href) {
             var targetUrl = (currentLang && currentLang !== 'ko') ? (href + '?lang=' + currentLang) : href;

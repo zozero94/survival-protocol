@@ -181,6 +181,8 @@ export function getLocaleRuntimeScript(): string {
                   uContainer.classList.add('hidden');
                 }
               }
+            } else if (field === 'summary') {
+              el.innerHTML = renderHighlightTermsClient(proto[field]);
             } else {
               el.innerText = proto[field];
             }
@@ -228,8 +230,11 @@ export function getLocaleRuntimeScript(): string {
         // 4-2. [선언적 엔진] 최종 결과물(Outcome) 중첩 객체 자동 매핑 (data-proto-outcome)
         document.querySelectorAll('[data-proto-outcome]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-outcome');
-          if (proto.outcome && proto.outcome[prop] !== undefined) {
-            el.innerText = proto.outcome[prop];
+          if (proto.outcome) {
+            var val = proto.outcome[prop] || (prop === 'description' ? proto.outcome.standard : undefined);
+            if (val !== undefined) {
+              el.innerText = val;
+            }
           }
         });
 

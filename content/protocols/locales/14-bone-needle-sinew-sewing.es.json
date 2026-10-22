@@ -163,6 +163,7 @@
     "title": "Bota de Cuero Reparada en Campo y Juego de Aguja de Hueso y Tendón",
     "badge": "CRITERIO DE INSPECCIÓN // FIELD REPAIRED GEAR",
     "standard": "La aguja de hueso debe lucir un pulido sedoso sin aristas, el ojo debe admitir hebra doble con holgura y la costura de cuero no debe abrirse ni 1 mm bajo tracción manual vigorosa",
+    "description": "La aguja de hueso debe lucir un pulido sedoso sin aristas, el ojo debe admitir hebra doble con holgura y la costura de cuero no debe abrirse ni 1 mm bajo tracción manual vigorosa",
     "svgFileName": "pr14-outcome.svg",
     "svgLabels": [
       "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
@@ -175,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T08:14:43.819Z",
-  "contentHash": "614132e570544622"
+  "updatedAt": "2026-10-22T17:22:40+09:00",
+  "contentHash": "b182acb92e757c63"
 }

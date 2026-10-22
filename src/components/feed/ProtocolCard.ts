@@ -1,4 +1,5 @@
 import type { Protocol, ProtocolCategory } from '../../types/protocol.types.ts';
+import { highlightTechnicalTerms } from '../protocol/StepCard.ts';
 
 const CATEGORY_LABELS: Record<ProtocolCategory, string> = {
   WATER: '[물 구하기]',
@@ -90,7 +91,7 @@ export function renderProtocolCard(protocol: Protocol): string {
         </a>
       </h2>
       <p data-card-summary="${protocol.protocolId}" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
-        ${protocol.summary}
+        ${highlightTechnicalTerms(protocol.summary)}
       </p>
     </div>
   </div>

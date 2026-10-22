@@ -442,7 +442,7 @@
   <!-- Clean Summary Paragraph with Left Accent Border -->
   <div class="border-l-2 border-white pl-3.5 py-1 text-xs sm:text-sm text-[#d1d1d1] leading-relaxed mb-4 bg-[#141414]/60">
     <p id="proto-summary" data-proto="summary">
-      야생에서 돌날이나 나뭇가지에 손을 베였을 때 소독하지 못하면 세균 감염으로 상처가 덧나 목숨을 위협받습니다. 또한 돌도끼 자루나 토기 틈새를 단단하고 물이 새지 않게 메워줄 접착제가 절실합니다. 소나무가 스스로를 보호하기 위해 분비하는 송진을 숯불 잔열로 은근하게 녹여 불순물을 거르면 상처를 보호하는 천연 항균 연고가 되고, 여기에 미세한 숯가루를 **1:1**로 섞어 반죽하면 식으면서 돌처럼 단단하게 굳는 천연 방수 수지 접착제(Pitch Glue)가 됩니다.
+      야생에서 돌날이나 나뭇가지에 손을 베였을 때 소독하지 못하면 세균 감염으로 상처가 덧나 목숨을 위협받습니다. 또한 돌도끼 자루나 토기 틈새를 단단하고 물이 새지 않게 메워줄 접착제가 절실합니다. 소나무가 스스로를 보호하기 위해 분비하는 송진을 숯불 잔열로 은근하게 녹여 불순물을 거르면 상처를 보호하는 천연 항균 연고가 되고, 여기에 미세한 숯가루를 <strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">1:1</strong>로 섞어 반죽하면 식으면서 돌처럼 단단하게 굳는 천연 방수 수지 접착제(Pitch Glue)가 됩니다.
     </p>
   </div>
 
@@ -2310,6 +2310,8 @@
                   uContainer.classList.add('hidden');
                 }
               }
+            } else if (field === 'summary') {
+              el.innerHTML = renderHighlightTermsClient(proto[field]);
             } else {
               el.innerText = proto[field];
             }
@@ -2357,8 +2359,11 @@
         // 4-2. [선언적 엔진] 최종 결과물(Outcome) 중첩 객체 자동 매핑 (data-proto-outcome)
         document.querySelectorAll('[data-proto-outcome]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-outcome');
-          if (proto.outcome && proto.outcome[prop] !== undefined) {
-            el.innerText = proto.outcome[prop];
+          if (proto.outcome) {
+            var val = proto.outcome[prop] || (prop === 'description' ? proto.outcome.standard : undefined);
+            if (val !== undefined) {
+              el.innerText = val;
+            }
           }
         });
 

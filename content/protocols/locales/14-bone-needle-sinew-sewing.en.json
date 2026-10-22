@@ -163,6 +163,7 @@
     "title": "Field-Repaired Winter Leather Boot & Primitive Bone Needle Sewing Kit",
     "badge": "INSPECTION CRITERIA // FIELD REPAIRED GEAR",
     "standard": "Bone needle surface polished to glass-smooth finish, eye accommodates dual sinew strands cleanly, and saddle-stitched leather seam shows zero gap under heavy manual tension",
+    "description": "Bone needle surface polished to glass-smooth finish, eye accommodates dual sinew strands cleanly, and saddle-stitched leather seam shows zero gap under heavy manual tension",
     "svgFileName": "pr14-outcome.svg",
     "svgLabels": [
       "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
@@ -175,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T08:14:43.819Z",
-  "contentHash": "614132e570544622"
+  "updatedAt": "2026-10-22T17:22:40+09:00",
+  "contentHash": "b182acb92e757c63"
 }

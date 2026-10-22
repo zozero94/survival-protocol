@@ -320,6 +320,73 @@
 
   </div>
 </div>
+  <div
+      id="tactical-crosslink-popover"
+      role="tooltip"
+      aria-hidden="true"
+      class="no-print fixed z-[95] hidden opacity-0 pointer-events-none w-[320px] sm:w-[356px] bg-[#0a0a0a] border border-[#fde68a] shadow-[0_20px_50px_rgba(0,0,0,0.95)] transition-opacity duration-75 select-none"
+      style="border-radius: 0px;"
+    >
+      <!-- 네 모서리 택티컬 조준 십자(+) 마커 -->
+      <span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#fde68a] pointer-events-none"></span>
+      <span class="absolute -top-1 -right-1 w-2 h-2 border-t-2 border-r-2 border-[#fde68a] pointer-events-none"></span>
+      <span class="absolute -bottom-1 -left-1 w-2 h-2 border-b-2 border-l-2 border-[#fde68a] pointer-events-none"></span>
+      <span class="absolute -bottom-1 -right-1 w-2 h-2 border-b-2 border-r-2 border-[#fde68a] pointer-events-none"></span>
+
+      <a
+        id="popover-card-link"
+        href="#"
+        class="block text-left no-underline focus:outline-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a] group"
+      >
+        <!-- 1. 상단 텔레메트리 헤더 바 -->
+        <div class="bg-[#121212] border-b border-[#262626] px-3 py-1.5 flex items-center justify-between gap-2 font-mono text-[10px]">
+          <span
+            id="popover-category"
+            class="text-[#fde68a] font-bold tracking-wider uppercase bg-[#221f14] border border-[#4a3b1a] px-1.5 py-0.5"
+          >[PROTOCOL]</span>
+          <div class="flex items-center gap-2 text-[#a3a3a3]">
+            <span id="popover-time" class="tracking-tight"></span>
+            <span id="popover-rate" class="text-white font-bold bg-[#1c1c1c] border border-[#333333] px-1 py-0.2"></span>
+          </div>
+        </div>
+
+        <!-- 2. 16:9 대표 썸네일 뷰포트 (Outcome SVG 도면 또는 실사 이미지) -->
+        <div class="relative w-full h-[152px] bg-[#050505] border-b border-[#262626] overflow-hidden flex items-center justify-center">
+          <span
+            id="popover-hud-code"
+            class="absolute top-1.5 left-2 z-10 text-[9px] font-mono text-[#fde68a] bg-black/85 px-1.5 py-0.5 border border-[#383838] tracking-widest uppercase"
+          >FIG // TARGET OUTCOME</span>
+          <img
+            id="popover-thumb"
+            src=""
+            alt=""
+            class="w-full h-full object-contain p-1.5 group-hover:scale-[1.02] transition-transform duration-150"
+          />
+        </div>
+
+        <!-- 3. 프로토콜 제목 & 2줄 핵심 요약 -->
+        <div class="p-3 space-y-1.5 bg-[#0a0a0a]">
+          <div
+            id="popover-title"
+            class="text-xs sm:text-sm font-bold text-white group-hover:text-[#fde68a] leading-snug font-sans line-clamp-2 transition-colors"
+          ></div>
+          <p
+            id="popover-summary"
+            class="text-[11px] sm:text-xs text-[#cfcfcf] leading-relaxed font-sans line-clamp-2 m-0"
+          ></p>
+        </div>
+
+        <!-- 4. 하단 핵심 준비물 요약 & 이동 프롬프트 -->
+        <div class="bg-[#121212] border-t border-[#262626] px-3 py-1.5 flex items-center justify-between gap-2 font-mono text-[10px]">
+          <span id="popover-materials" class="text-[#9ca3af] truncate flex-1"></span>
+          <span
+            id="popover-cta"
+            data-i18n="crosslinkCta"
+            class="text-[#fde68a] font-bold flex-shrink-0 tracking-wider uppercase group-hover:underline"
+          >교범 보기 ↗</span>
+        </div>
+      </a>
+    </div>
 
   <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-2 flex-1 pb-16">
     <!-- 피드 카드 컨테이너 (한 페이지당 5개 노출) -->
@@ -353,7 +420,7 @@
         </a>
       </h2>
       <p data-card-summary="PR-14" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
-        혹한의 겨울 야생이나 문명 붕괴 재난지에서 방한 가죽옷이나 가죽 신발 밑창이 찢어지면, 체온이 급격히 빠져나가 2시간 안에 치명적인 저체온증에 걸리거나 발에 동상이 생겨 걸을 수 없게 됩니다. 금속 바늘과 나일론 실이 없는 원시 야전에서는 [동물 덫과 사냥](/protocol-08.html)으로 얻은 사슴이나 멧돼지의 다리 정강이뼈를 [단단한 돌도끼](/protocol-04.html)로 쪼개고 규암 숫돌에 갈아 바늘귀를 뚫은 '뼈바늘(Bone Needle)'과, 다리 힘줄을 말려 두드려 풀어낸 초강력 섬유 '건사(Sinew Thread)'를 결합하여 바느질 키트를 자급해야 합니다. 마른 힘줄 실은 침을 묻혀 꿰맨 뒤 마르면서 3~5% 스스로 수축해 가죽 구멍을 꽉 메우므로, [달군 소나무 송진 고약](/protocol-10.html)을 바르면 비바람과 눈보라가 전혀 스며들지 않는 완벽한 방한 장비가 복원됩니다.
+        혹한의 겨울 야생이나 문명 붕괴 재난지에서 방한 가죽옷이나 가죽 신발 밑창이 찢어지면, 체온이 급격히 빠져나가 2시간 안에 치명적인 저체온증에 걸리거나 발에 동상이 생겨 걸을 수 없게 됩니다. 금속 바늘과 나일론 실이 없는 원시 야전에서는 <a data-proto="crosslink" href="/protocol-08.html" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">동물 덫과 사냥 ↗</a>으로 얻은 사슴이나 멧돼지의 다리 정강이뼈를 <a data-proto="crosslink" href="/protocol-04.html" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">단단한 돌도끼 ↗</a>로 쪼개고 규암 숫돌에 갈아 바늘귀를 뚫은 '뼈바늘(Bone Needle)'과, 다리 힘줄을 말려 두드려 풀어낸 초강력 섬유 '건사(Sinew Thread)'를 결합하여 바느질 키트를 자급해야 합니다. 마른 힘줄 실은 침을 묻혀 꿰맨 뒤 마르면서 3~5% 스스로 수축해 가죽 구멍을 꽉 메우므로, <a data-proto="crosslink" href="/protocol-10.html" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">달군 소나무 송진 고약 ↗</a>을 바르면 비바람과 눈보라가 전혀 스며들지 않는 완벽한 방한 장비가 복원됩니다.
       </p>
     </div>
   </div>
@@ -397,7 +464,7 @@
         </a>
       </h2>
       <p data-card-summary="PR-13" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
-        상하수도와 병원이 멈춘 야생이나 재난 환경에서는 작은 찰과상이나 오염된 손으로 음식을 먹는 것만으로도 이질과 파상풍, 패혈증에 걸려 목숨을 잃습니다. 모닥불이나 [빈 깡통 우드 가스 스토브](/protocol-12.html)에서 나오는 하얀 참나무 백탄 재를 깡통 여과기에 모아 끓인 물을 부어 걸러내면 탄산칼륨이 녹아 나온 미끌미끌한 양잿물(Lye)이 됩니다. 여기에 사냥한 동물의 비계 기름이나 버려진 폐식용유를 1:1로 섞어 약한 불에서 걸쭉해질 때까지 나무 주걱으로 저어주며 끓이면, 세균의 세포막을 녹여 파괴하는 강력한 천연 살균 비누가 완성됩니다.
+        상하수도와 병원이 멈춘 야생이나 재난 환경에서는 작은 찰과상이나 오염된 손으로 음식을 먹는 것만으로도 이질과 파상풍, 패혈증에 걸려 목숨을 잃습니다. 모닥불이나 <a data-proto="crosslink" href="/protocol-12.html" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">빈 깡통 우드 가스 스토브 ↗</a>에서 나오는 하얀 참나무 백탄 재를 깡통 여과기에 모아 끓인 물을 부어 걸러내면 탄산칼륨이 녹아 나온 미끌미끌한 양잿물(Lye)이 됩니다. 여기에 사냥한 동물의 비계 기름이나 버려진 폐식용유를 1:1로 섞어 약한 불에서 걸쭉해질 때까지 나무 주걱으로 저어주며 끓이면, 세균의 세포막을 녹여 파괴하는 강력한 천연 살균 비누가 완성됩니다.
       </p>
     </div>
   </div>
@@ -529,7 +596,7 @@
         </a>
       </h2>
       <p data-card-summary="PR-10" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
-        야생에서 돌날이나 나뭇가지에 손을 베였을 때 소독하지 못하면 세균 감염으로 상처가 덧나 목숨을 위협받습니다. 또한 돌도끼 자루나 토기 틈새를 단단하고 물이 새지 않게 메워줄 접착제가 절실합니다. 소나무가 스스로를 보호하기 위해 분비하는 송진을 숯불 잔열로 은근하게 녹여 불순물을 거르면 상처를 보호하는 천연 항균 연고가 되고, 여기에 미세한 숯가루를 **1:1**로 섞어 반죽하면 식으면서 돌처럼 단단하게 굳는 천연 방수 수지 접착제(Pitch Glue)가 됩니다.
+        야생에서 돌날이나 나뭇가지에 손을 베였을 때 소독하지 못하면 세균 감염으로 상처가 덧나 목숨을 위협받습니다. 또한 돌도끼 자루나 토기 틈새를 단단하고 물이 새지 않게 메워줄 접착제가 절실합니다. 소나무가 스스로를 보호하기 위해 분비하는 송진을 숯불 잔열로 은근하게 녹여 불순물을 거르면 상처를 보호하는 천연 항균 연고가 되고, 여기에 미세한 숯가루를 <strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">1:1</strong>로 섞어 반죽하면 식으면서 돌처럼 단단하게 굳는 천연 방수 수지 접착제(Pitch Glue)가 됩니다.
       </p>
     </div>
   </div>
@@ -573,7 +640,7 @@
         </a>
       </h2>
       <p data-card-summary="PR-09" class="text-neutral-400 text-xs sm:text-sm mt-1.5 line-clamp-2 leading-relaxed">
-        모닥불에 나무를 그냥 태우면 산소와 완전히 반응해 하얀 재만 남고 아무것도 남지 않습니다. 땅에 **50cm** 원뿔형 구덩이를 파고 참나무를 빽빽하게 세운 뒤, 흙과 잔디로 덮어 공기 유입을 **95%** 차단하면 나무가 활활 타지 않고 고열에 쪄지면서 단단한 숯이 됩니다. 연기 없이 따뜻하게 밤을 지새우거나, 정수용 숯 필터로 쓰거나, 불씨를 며칠씩 보관할 수 있는 야생의 검은 보석입니다.
+        모닥불에 나무를 그냥 태우면 산소와 완전히 반응해 하얀 재만 남고 아무것도 남지 않습니다. 땅에 <strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">50cm</strong> 원뿔형 구덩이를 파고 참나무를 빽빽하게 세운 뒤, 흙과 잔디로 덮어 공기 유입을 <strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">95%</strong> 차단하면 나무가 활활 타지 않고 고열에 쪄지면서 단단한 숯이 됩니다. 연기 없이 따뜻하게 밤을 지새우거나, 정수용 숯 필터로 쓰거나, 불씨를 며칠씩 보관할 수 있는 야생의 검은 보석입니다.
       </p>
     </div>
   </div>
@@ -1201,6 +1268,20 @@
         return (lang && window.__UI_STRINGS__[lang]) ? lang : 'ko';
       }
 
+      function renderHighlightTermsClient(text) {
+        if (!text) return '';
+        var withLinks = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_m, label, url) {
+          return '<a data-proto="crosslink" href="' + url + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
+        });
+        return withLinks.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
+          var isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
+          if (isMetric) {
+            return '<strong data-proto="highlight" class="text-[#fde68a] font-mono font-bold bg-[#221f14] px-1 py-0.5 border border-[#4a3b1a] select-text">' + p1 + '</strong>';
+          }
+          return '<strong data-proto="highlight" class="text-white font-bold bg-[#262626] px-1 py-0.5 border border-[#383838] select-text">' + p1 + '</strong>';
+        });
+      }
+
       function switchFeedLocale(targetLocale) {
         try {
           var ui = window.__UI_STRINGS__[targetLocale];
@@ -1237,7 +1318,7 @@
           document.querySelectorAll('[data-card-summary]').forEach(function (el) {
             var pid = el.getAttribute('data-card-summary');
             if (feedMap[pid] && feedMap[pid].summary) {
-              el.innerText = feedMap[pid].summary;
+              el.innerHTML = renderHighlightTermsClient(feedMap[pid].summary);
             }
           });
           document.querySelectorAll('[data-card-mat]').forEach(function (el) {
@@ -1407,9 +1488,20 @@
           return;
         }
 
+        // 크로스링크 클릭 시 해당 링크로 직접 이동 (현재 언어 유지)
+        var crosslink = e.target.closest('a[data-proto="crosslink"]');
+        if (crosslink) {
+          var crossHref = crosslink.getAttribute('href');
+          if (crossHref) {
+            var targetCrossUrl = (currentLang && currentLang !== 'ko') ? (crossHref.split('?')[0] + '?lang=' + currentLang) : crossHref;
+            window.location.href = targetCrossUrl;
+            return;
+          }
+        }
+
         // 피드 카드 어디를 클릭/터치해도 상세페이지로 즉시 랜딩 (현재 언어 유지)
         var card = e.target.closest('[data-protocol-href]');
-        if (card && !e.target.closest('button')) {
+        if (card && !e.target.closest('button') && !e.target.closest('a')) {
           var href = card.getAttribute('data-protocol-href');
           if (href) {
             var targetUrl = (currentLang && currentLang !== 'ko') ? (href + '?lang=' + currentLang) : href;
@@ -1932,6 +2024,257 @@
     });
 
   })();
+    (function() {
+      var hideTimer = null;
+      var activeAnchor = null;
+      var domCache = null;
+
+      function getDom() {
+        if (domCache && domCache.popover) return domCache;
+        var popover = document.getElementById('tactical-crosslink-popover');
+        if (!popover) return null;
+        domCache = {
+          popover: popover,
+          cardLink: document.getElementById('popover-card-link'),
+          catEl: document.getElementById('popover-category'),
+          timeEl: document.getElementById('popover-time'),
+          rateEl: document.getElementById('popover-rate'),
+          hudEl: document.getElementById('popover-hud-code'),
+          thumbEl: document.getElementById('popover-thumb'),
+          titleEl: document.getElementById('popover-title'),
+          sumEl: document.getElementById('popover-summary'),
+          matEl: document.getElementById('popover-materials'),
+          ctaEl: document.getElementById('popover-cta')
+        };
+        return domCache;
+      }
+
+      function getCurrentLocale() {
+        var htmlLang = document.documentElement.getAttribute('lang');
+        if (htmlLang && window.__SEARCH_DOCS__ && window.__SEARCH_DOCS__[htmlLang]) {
+          return htmlLang;
+        }
+        try {
+          var saved = localStorage.getItem('survival_lang');
+          if (saved && window.__SEARCH_DOCS__ && window.__SEARCH_DOCS__[saved]) {
+            return saved;
+          }
+        } catch (e) {}
+        return 'ko';
+      }
+
+      function getCrosslinkLabels(lang) {
+        var uiMap = window.__UI_STRINGS__;
+        var ui = (uiMap && (uiMap[lang] || uiMap['ko'])) || {};
+        return {
+          matPrefix: ui.crosslinkMaterialsPrefix || (lang === 'ko' ? '준비물: ' : 'Materials: '),
+          cta: ui.crosslinkCta || (lang === 'ko' ? '교범 보기 ↗' : 'OPEN ↗')
+        };
+      }
+
+      function extractProtocolNum(href) {
+        if (!href) return null;
+        var m = String(href).match(/protocol-(\d+)/i);
+        if (!m || !m[1]) return null;
+        return m[1].padStart(2, '0');
+      }
+
+      function findProtocolDoc(num, lang) {
+        var docsByLocale = window.__SEARCH_DOCS__;
+        if (!docsByLocale) return null;
+        var list = docsByLocale[lang] || docsByLocale['ko'] || [];
+        if (!Array.isArray(list)) return null;
+        var targetId = 'PR-' + num;
+        for (var i = 0; i < list.length; i++) {
+          if (list[i] && list[i].id === targetId) {
+            return list[i];
+          }
+        }
+        return null;
+      }
+
+      function positionPopover(popover, anchor) {
+        var rect = anchor.getBoundingClientRect();
+        var vw = window.innerWidth || document.documentElement.clientWidth;
+        var vh = window.innerHeight || document.documentElement.clientHeight;
+        var popW = popover.offsetWidth || 340;
+        var popH = popover.offsetHeight || 285;
+        var margin = 12;
+
+        var left = rect.left + (rect.width / 2) - (popW / 2);
+        if (left < margin) left = margin;
+        if (left + popW > vw - margin) left = Math.max(margin, vw - popW - margin);
+
+        // 상단 공간이 충분하면 앵커 위에 배치, 부족하면 앵커 바로 아래에 배치하여 앵커 자체를 덮지 않도록 보장
+        var spaceAbove = rect.top - margin;
+        var spaceBelow = vh - rect.bottom - margin;
+        var top;
+        if (spaceAbove >= popH + 10 || spaceAbove >= spaceBelow) {
+          top = Math.max(margin, rect.top - popH - 10);
+        } else {
+          top = Math.max(margin, rect.bottom + 10);
+        }
+
+        popover.style.left = Math.round(left) + 'px';
+        popover.style.top = Math.round(top) + 'px';
+      }
+
+      function showPopoverForAnchor(anchor) {
+        var dom = getDom();
+        if (!dom) return;
+
+        var href = anchor.getAttribute('href') || '';
+        var num = extractProtocolNum(href);
+        if (!num) return;
+
+        var lang = getCurrentLocale();
+        var doc = findProtocolDoc(num, lang);
+        if (!doc) return;
+
+        if (hideTimer) {
+          clearTimeout(hideTimer);
+          hideTimer = null;
+        }
+        activeAnchor = anchor;
+
+        var labels = getCrosslinkLabels(lang);
+
+        if (dom.cardLink) {
+          var baseHref = (doc.url && /^(\/|https?:\/\/)/i.test(doc.url)) ? doc.url.split('?')[0] : ('/protocol-' + num + '.html');
+          var targetHref = (lang && lang !== 'ko') ? (baseHref + '?lang=' + encodeURIComponent(lang)) : baseHref;
+          dom.cardLink.setAttribute('href', targetHref);
+        }
+        if (dom.catEl) dom.catEl.textContent = doc.categoryName || ('[' + doc.category + ']');
+        if (dom.timeEl) dom.timeEl.textContent = doc.timeRequired ? ('⏱ ' + doc.timeRequired) : '';
+        if (dom.rateEl) {
+          dom.rateEl.textContent = doc.successRate || '';
+          dom.rateEl.style.display = doc.successRate ? 'inline-block' : 'none';
+        }
+        if (dom.hudEl) dom.hudEl.textContent = 'FIG. ' + doc.id + ' // TARGET OUTCOME';
+        if (dom.thumbEl) {
+          var rawThumb = doc.thumbnailUrl || ('/svgs/pr' + num + '-outcome.svg');
+          var thumbSrc = /^\/(svgs|images)\//.test(rawThumb) ? rawThumb : ('/svgs/pr' + num + '-outcome.svg');
+          if (dom.thumbEl.getAttribute('src') !== thumbSrc) {
+            dom.thumbEl.removeAttribute('src');
+            dom.thumbEl.setAttribute('src', thumbSrc);
+          }
+          dom.thumbEl.setAttribute('alt', doc.title || '');
+        }
+        if (dom.titleEl) dom.titleEl.textContent = doc.title || '';
+        if (dom.sumEl) dom.sumEl.textContent = doc.summary || '';
+        var matText = doc.materialsSummary || doc.materials || '';
+        if (dom.matEl) dom.matEl.textContent = matText ? (labels.matPrefix + matText) : '';
+        if (dom.ctaEl) dom.ctaEl.textContent = labels.cta;
+
+        dom.popover.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
+        dom.popover.classList.add('opacity-100', 'pointer-events-auto');
+        dom.popover.setAttribute('aria-hidden', 'false');
+
+        positionPopover(dom.popover, anchor);
+      }
+
+      function scheduleHidePopover() {
+        if (hideTimer) clearTimeout(hideTimer);
+        hideTimer = setTimeout(function() {
+          hidePopoverImmediate();
+        }, 130);
+      }
+
+      function hidePopoverImmediate() {
+        if (hideTimer) {
+          clearTimeout(hideTimer);
+          hideTimer = null;
+        }
+        activeAnchor = null;
+        var dom = getDom();
+        if (!dom) return;
+        dom.popover.classList.remove('opacity-100', 'pointer-events-auto');
+        dom.popover.classList.add('hidden', 'opacity-0', 'pointer-events-none');
+        dom.popover.setAttribute('aria-hidden', 'true');
+      }
+
+      document.addEventListener('mouseover', function(e) {
+        if (window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+        var target = e.target;
+        if (!target || typeof target.closest !== 'function') return;
+
+        var crosslink = target.closest('a[data-proto="crosslink"]');
+        if (crosslink) {
+          if (crosslink === activeAnchor) {
+            if (hideTimer) {
+              clearTimeout(hideTimer);
+              hideTimer = null;
+            }
+            return;
+          }
+          showPopoverForAnchor(crosslink);
+          return;
+        }
+
+        if (activeAnchor && target.closest('#tactical-crosslink-popover')) {
+          if (hideTimer) {
+            clearTimeout(hideTimer);
+            hideTimer = null;
+          }
+        }
+      });
+
+      document.addEventListener('mouseout', function(e) {
+        if (!activeAnchor) return;
+        var target = e.target;
+        if (!target || typeof target.closest !== 'function') return;
+
+        var crosslink = target.closest('a[data-proto="crosslink"]');
+        var insidePopover = target.closest('#tactical-crosslink-popover');
+        if (crosslink || insidePopover) {
+          var related = e.relatedTarget;
+          if (related && typeof related.closest === 'function') {
+            if (related.closest('#tactical-crosslink-popover') || related.closest('a[data-proto="crosslink"]') === activeAnchor) {
+              return;
+            }
+          }
+          scheduleHidePopover();
+        }
+      });
+
+      document.addEventListener('focusin', function(e) {
+        var target = e.target;
+        if (!target || typeof target.closest !== 'function') return;
+        var crosslink = target.closest('a[data-proto="crosslink"]');
+        if (crosslink) {
+          showPopoverForAnchor(crosslink);
+        }
+      });
+
+      document.addEventListener('focusout', function(e) {
+        if (!activeAnchor) return;
+        var target = e.target;
+        if (!target || typeof target.closest !== 'function') return;
+        if (target.closest('a[data-proto="crosslink"]') || target.closest('#tactical-crosslink-popover')) {
+          var related = e.relatedTarget;
+          if (related && typeof related.closest === 'function') {
+            if (related.closest('#tactical-crosslink-popover') || related.closest('a[data-proto="crosslink"]') === activeAnchor) {
+              return;
+            }
+          }
+          scheduleHidePopover();
+        }
+      });
+
+      window.addEventListener('scroll', function() {
+        if (activeAnchor) hidePopoverImmediate();
+      }, { passive: true });
+
+      window.addEventListener('pagehide', function() {
+        if (activeAnchor) hidePopoverImmediate();
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && activeAnchor) {
+          hidePopoverImmediate();
+        }
+      });
+    })();
     (function () {
       if (typeof window === 'undefined') return;
 

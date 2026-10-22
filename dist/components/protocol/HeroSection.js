@@ -1,4 +1,5 @@
                                                               
+import { highlightTechnicalTerms } from './StepCard.js';
 
 function formatDate(iso         )         {
   if (!iso) return '';
@@ -73,7 +74,7 @@ export function renderHeroSection(protocol          )         {
   <!-- Clean Summary Paragraph with Left Accent Border -->
   <div class="border-l-2 border-white pl-3.5 py-1 text-xs sm:text-sm text-[#d1d1d1] leading-relaxed mb-4 bg-[#141414]/60">
     <p id="proto-summary" data-proto="summary">
-      ${protocol.summary}
+      ${highlightTechnicalTerms(protocol.summary)}
     </p>
   </div>
 

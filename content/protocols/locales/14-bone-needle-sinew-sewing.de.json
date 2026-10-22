@@ -163,6 +163,7 @@
     "title": "Feldmäßig reparierte Winterstiefel & Knochennadel-Nähbesteck",
     "badge": "ABNAHMESTANDARD // FIELD REPAIRED GEAR",
     "standard": "Knochennadel glasartig glatt poliert, Öhr nimmt Doppelstrang ohne Reibung auf, und die Sattlernaht hält starkem manuellem Zug ohne 1 mm Spaltbildung stand",
+    "description": "Knochennadel glasartig glatt poliert, Öhr nimmt Doppelstrang ohne Reibung auf, und die Sattlernaht hält starkem manuellem Zug ohne 1 mm Spaltbildung stand",
     "svgFileName": "pr14-outcome.svg",
     "svgLabels": [
       "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
@@ -175,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T08:14:43.819Z",
-  "contentHash": "614132e570544622"
+  "updatedAt": "2026-10-22T17:22:40+09:00",
+  "contentHash": "b182acb92e757c63"
 }

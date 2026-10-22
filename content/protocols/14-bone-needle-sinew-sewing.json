@@ -163,6 +163,7 @@
     "title": "야전 수선 완료된 방한 가죽 장화와 뼈바늘·힘줄 실 바느질 키트",
     "badge": "완성 검수 규격 // FIELD REPAIRED GEAR",
     "standard": "뼈바늘 표면이 걸림 없이 매끄럽고, 바늘귀가 힘줄 실 2가닥을 견고히 수용하며, 새들 스티치로 결속된 가죽 솔기가 손으로 강하게 잡아당겨도 1mm의 벌어짐 없이 팽팽하게 체결되어 있을 것",
+    "description": "뼈바늘 표면이 걸림 없이 매끄럽고, 바늘귀가 힘줄 실 2가닥을 견고히 수용하며, 새들 스티치로 결속된 가죽 솔기가 손으로 강하게 잡아당겨도 1mm의 벌어짐 없이 팽팽하게 체결되어 있을 것",
     "svgFileName": "pr14-outcome.svg",
     "svgLabels": [
       "PR-14 OUTCOME // BONE NEEDLE & SINEW SEWING KIT",
@@ -187,6 +188,6 @@
     }
   ],
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T08:14:43.819Z",
-  "contentHash": "614132e570544622"
+  "updatedAt": "2026-10-22T17:22:40+09:00",
+  "contentHash": "b182acb92e757c63"
 }

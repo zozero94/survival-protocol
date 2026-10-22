@@ -8,6 +8,7 @@ import {
   renderProtocolCard,
   renderPagination,
   renderSearchModal,
+  renderCrosslinkPopover,
   renderFooter,
 } from './components/index.js';
 import { SearchService,                     } from './services/search.service.js';
@@ -16,6 +17,7 @@ import {
   getPwaRuntimeScript,
   getFeedRuntimeScript,
   getSearchRuntimeScript,
+  getCrosslinkRuntimeScript,
   getFirebaseRuntimeScript,
 } from './state/index.js';
 
@@ -62,10 +64,12 @@ export function renderIndexPage(
     }
   }
 
+  const crosslinkPopoverHtml = renderCrosslinkPopover();
   const themeScript = getThemeRuntimeScript();
   const pwaScript = getPwaRuntimeScript();
   const feedScript = getFeedRuntimeScript();
   const searchScript = getSearchRuntimeScript();
+  const crosslinkScript = getCrosslinkRuntimeScript();
   const firebaseScript = getFirebaseRuntimeScript();
 
   return `<!DOCTYPE html>
@@ -152,6 +156,7 @@ export function renderIndexPage(
 
   ${feedHeaderHtml}
   ${searchModalHtml}
+  ${crosslinkPopoverHtml}
 
   <main class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-2 flex-1 pb-16">
     <!-- 피드 카드 컨테이너 (한 페이지당 5개 노출) -->
@@ -172,6 +177,7 @@ export function renderIndexPage(
     ${pwaScript}
     ${feedScript}
     ${searchScript}
+    ${crosslinkScript}
     ${firebaseScript}
   </script>
 </body>

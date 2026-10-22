@@ -442,7 +442,7 @@
   <!-- Clean Summary Paragraph with Left Accent Border -->
   <div class="border-l-2 border-white pl-3.5 py-1 text-xs sm:text-sm text-[#d1d1d1] leading-relaxed mb-4 bg-[#141414]/60">
     <p id="proto-summary" data-proto="summary">
-      상하수도와 병원이 멈춘 야생이나 재난 환경에서는 작은 찰과상이나 오염된 손으로 음식을 먹는 것만으로도 이질과 파상풍, 패혈증에 걸려 목숨을 잃습니다. 모닥불이나 [빈 깡통 우드 가스 스토브](/protocol-12.html)에서 나오는 하얀 참나무 백탄 재를 깡통 여과기에 모아 끓인 물을 부어 걸러내면 탄산칼륨이 녹아 나온 미끌미끌한 양잿물(Lye)이 됩니다. 여기에 사냥한 동물의 비계 기름이나 버려진 폐식용유를 1:1로 섞어 약한 불에서 걸쭉해질 때까지 나무 주걱으로 저어주며 끓이면, 세균의 세포막을 녹여 파괴하는 강력한 천연 살균 비누가 완성됩니다.
+      상하수도와 병원이 멈춘 야생이나 재난 환경에서는 작은 찰과상이나 오염된 손으로 음식을 먹는 것만으로도 이질과 파상풍, 패혈증에 걸려 목숨을 잃습니다. 모닥불이나 <a data-proto="crosslink" href="/protocol-12.html" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">빈 깡통 우드 가스 스토브 ↗</a>에서 나오는 하얀 참나무 백탄 재를 깡통 여과기에 모아 끓인 물을 부어 걸러내면 탄산칼륨이 녹아 나온 미끌미끌한 양잿물(Lye)이 됩니다. 여기에 사냥한 동물의 비계 기름이나 버려진 폐식용유를 1:1로 섞어 약한 불에서 걸쭉해질 때까지 나무 주걱으로 저어주며 끓이면, 세균의 세포막을 녹여 파괴하는 강력한 천연 살균 비누가 완성됩니다.
     </p>
   </div>
 
@@ -2150,6 +2150,8 @@
                   uContainer.classList.add('hidden');
                 }
               }
+            } else if (field === 'summary') {
+              el.innerHTML = renderHighlightTermsClient(proto[field]);
             } else {
               el.innerText = proto[field];
             }
@@ -2197,8 +2199,11 @@
         // 4-2. [선언적 엔진] 최종 결과물(Outcome) 중첩 객체 자동 매핑 (data-proto-outcome)
         document.querySelectorAll('[data-proto-outcome]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-outcome');
-          if (proto.outcome && proto.outcome[prop] !== undefined) {
-            el.innerText = proto.outcome[prop];
+          if (proto.outcome) {
+            var val = proto.outcome[prop] || (prop === 'description' ? proto.outcome.standard : undefined);
+            if (val !== undefined) {
+              el.innerText = val;
+            }
           }
         });
 
