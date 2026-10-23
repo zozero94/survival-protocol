@@ -1,0 +1,179 @@
+{
+  "protocolId": "PR-15",
+  "category": "MEDICINE",
+  "title": "Máscara improvisada de tela con carbón activado y arena para escape de humo y gases tóxicos",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ESCUDO CONTRA HUMO ASFIXIANTE Y GASES TÓXICOS / DEFENSA ANTE QUEMADURAS TÉRMICAS]",
+  "summary": "En incendios forestales repentinos, fuegos en refugios subterráneos o conflagraciones estructurales post-colapso, inhalar humo denso y gases sobrecalentados más de 3 veces destruye las vías respiratorias y causa asfixia en menos de 2 minutos. Ante la total ausencia de máscaras antigás o respiradores N95 en el campo, debes fabricar de inmediato una máscara de carbón y arena estratificando carbón vegetal de roble de alta temperatura de un [horno de fosa](/protocol-09.html) y arena de río lavada de un [filtro de agua primitivo](/protocol-01.html) en tela húmeda. La arena húmeda enfría al instante el gas ardiente y atrapa cenizas gruesas, mientras millones de microporos de carbón activado adsorben vapores orgánicos letales. Ajustada firmemente con [cuerdas de fibra de kudzu](/protocol-05.html) y sellada con [ungüento de brea de pino](/protocol-10.html), esta máscara garantiza una ventana de 15 minutos para evacuar zonas de desastre tóxico.",
+  "timeRequired": "25 min (10 min triturado de carbón + 5 min lavado de arena + 10 min estratificado y ajuste facial)",
+  "successRate": "92% (manteniendo grano de 1–2mm y sellado hermético por presión negativa)",
+  "difficulty": "Media (atención a evitar polvo fino de carbón y fugas perimetrales)",
+  "outputPerHour": "2 bolsas de filtro facial; asegura 15 minutos de respiración de escape para 2 supervivientes",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2–3 Trozos de Carbón Blanco de Roble de Alta Densidad",
+      "desc": "Carbonizado a más de 600°C en un [horno de fosa cerrado](/protocol-09.html), produciendo un tintineo metálico claro al golpearse. Libre de alquitranes, con una inmensa red de microporos que atrapa moléculas tóxicas."
+    },
+    {
+      "id": "mat-02",
+      "name": "1–2 Tazas de Arena de Río Cuarcítica Lavada y Húmeda",
+      "desc": "Arena limpia de arroyo de [filtración de agua primitiva](/protocol-01.html). Lavada sin lodo ni arcilla, actúa como amortiguador térmico que enfría humo ardiente a temperatura ambiente al contacto."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 Cuadrados de Tela Resistente de Algodón o Lino (30×30cm)",
+      "desc": "Envoltura transpirable para contener arena y carbón. Las fibras sintéticas se derriten sobre la piel con el calor; deben usarse telas vegetales naturales empapadas en agua para atrapar partículas."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Tiras de Cuerda Resistente de Fibra de Kudzu (60cm de longitud)",
+      "desc": "[Cuerdas de fibra vegetal](/protocol-05.html) o tiras de cuero. Atadas a la parte superior e inferior para amarrar tras la coronilla y la nuca, asegurando tensión perimetral hermética."
+    },
+    {
+      "id": "mat-05",
+      "name": "Poco de Ungüento de Brea de Pino o Pasta de Arcilla Húmeda",
+      "desc": "[Ungüento de resina de pino](/protocol-10.html) o arcilla húmeda fina aplicada en el puente nasal y mejillas para sellar fugas perimetrales de humo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Seleccionar carbón blanco de roble y triturar en mortero a grano de sal gruesa",
+      "description": "1. **Seleccionar carbón denso**: Escoge 2–3 trozos de carbón de roble del [horno de fosa](/protocol-09.html) que emitan un **tintineo metálico claro** al golpearse entre sí, no un sonido sordo.\n2. **Triturar a 1–2mm**: Coloca el carbón sobre una piedra plana y aplástalo suavemente con un [hacha de piedra o canto rodado](/protocol-04.html) hasta lograr **granos del tamaño de sal gruesa (1–2mm)**, evitando polvo fino.\n3. **Lavar polvo fino con agua**: Vierte agua limpia sobre el carbón triturado para purgar cenizas flotantes y escurre el exceso, obteniendo **partículas húmedas de carbón activado**.",
+      "actionNote": "> Peligro de polvo: Moler el carbón hasta convertirlo en harina hace que el polvo penetre en los alvéolos pulmonares al inhalar con fuerza. Mantén siempre grano de 1–2mm y enjuaga con agua para eliminar partículas volátiles.",
+      "svgFileName": "pr15-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // ACTIVATED CHARCOAL CRUSHING & SIZING",
+        "SELECCIÓN DE CARBÓN DE ROBLE (PRUEBA DE RESONANCIA)",
+        "TRITURADO EN MORTERO A 1–2MM (TAMAÑO SAL)",
+        "LAVADO CON AGUA DE CENIZAS Y RECUBRIMIENTO HÚMEDO",
+        "[PASO 1 CLAVE] TAMAÑO DE 1–2MM PARA SEGURIDAD PULMONAR"
+      ],
+      "deepDive": {
+        "badge": "FIELD TOXICOLOGY & ADSORPTION",
+        "title": "Adsorción superficial del carbón pirolizado y amortiguación térmica de la arena húmeda",
+        "text": "El carbón de roble obtenido por pirólisis anaeróbica a 600–800°C posee millones de microporos, generando un área superficial específica de 300–500 m²/g. Esta estructura atrapa acroleína, formaldehído y vapores orgánicos mediante fuerzas de van der Waals. Combinado con arena cuarcítica húmeda, enfría gases a más de 300°C en milisegundos a temperatura ambiente, evitando quemaduras graves en la tráquea.",
+        "fieldSpecs": [
+          {
+            "name": "Carbón blanco de roble de alta densidad",
+            "scientificName": "Quercus Variabilis High-Temp Charcoal",
+            "categoryTag": "Material adsorbente de campo / Trampa molecular de gases tóxicos",
+            "imageFileName": "id-oak-white-charcoal.jpg",
+            "hudCode": "FIG. BIO-15A // MACRO OPTIC",
+            "hudStatus": "ADSORPTION CAPACITY: MAXIMUM",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Superficie de fractura vítrea con brillo metálico gris plateado."
+              },
+              {
+                "label": "TEXTURA",
+                "value": "Microporos rígidos y densos, totalmente libre de ceniza quebradiza."
+              },
+              {
+                "label": "ACÚSTICA",
+                "value": "Emite un sonido metálico agudo y limpio al golpearse."
+              }
+            ],
+            "fieldUse": "Triturado a grano de 1–2mm para la capa central de adsorción de gases tóxicos"
+          },
+          {
+            "name": "Arena cuarcítica de río lavada",
+            "scientificName": "Rinsed Quartzite River Sand",
+            "categoryTag": "Amortiguador térmico de campo / Trampa física de cenizas",
+            "imageFileName": "id-quartz-river-sand.jpg",
+            "hudCode": "FIG. BIO-15B // MACRO OPTIC",
+            "hudStatus": "THERMAL BUFFER & FILTRATION: OPTIMAL",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Granos cristalinos translúcidos de cuarzo blanco, ámbar y sílex."
+              },
+              {
+                "label": "GRANULOMETRÍA",
+                "value": "Partículas angulares de 0.5–1.5mm completamente libres de arcilla."
+              },
+              {
+                "label": "HUMEDAD",
+                "value": "Forma una masa compacta al apretarse en la mano sin gotear agua."
+              }
+            ],
+            "fieldUse": "Estratificada en capas de 1cm antes y después del carbón para enfriar y atrapar ceniza"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Lavar arena de río para preparar matriz de enfriamiento y trampa de cenizas",
+      "description": "1. **Recolectar arena cuarcítica limpia**: Toma **1–2 tazas de arena limpia** del lecho de rápidos claros, evitando fango.\n2. **Enjuagar y decantar agua turbia**: Coloca la arena en un [cuenco de arcilla](/protocol-06.html), vierte agua, revuelve y decanta el lodo turbio en suspensión al menos 3 veces hasta que el agua salga clara.\n3. **Lograr humedad óptima**: Escurre la arena hasta que al apretarla con la mano se compacte manteniendo **humedad palpable sin gotear agua**.",
+      "actionNote": "> Peligro de lodo: La arcilla no lavada se apelmaza en los poros de la tela durante la inhalación, causando asfixia en segundos. Enjuaga con agua limpia 3 o más veces hasta retirar todo el sedimento turbio.",
+      "svgFileName": "pr15-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // RIVER SAND WASHING & COOLING MATRIX",
+        "RECOLECCIÓN DE 1–2 TAZAS DE ARENA CUARCÍTICA DE RÍO",
+        "ENJUAGUE 3 VECES (DECANTADO DE LODO TURBIO)",
+        "TEXTURA HÚMEDA COHESIVA SIN GOTEO DE AGUA",
+        "[PASO 2 CLAVE] CAPA DE AMORTIGUACIÓN PARA ENFRIAR HUMO"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Estratificar arena-carbón-arena en sándwich de 3 capas y plegar bolsa de filtro",
+      "description": "1. **Extender tela húmeda**: Coloca una tela húmeda de 30×30cm en orientación de rombo sobre una piedra plana.\n2. **Estratificar sándwich de 3 capas**: En el **área central del tamaño de la palma (10×10cm)**, deposita **1cm de arena húmeda ➔ 2cm de carbón triturado ➔ 1cm de arena húmeda** en capas ordenadas.\n3. **Plegar en sobre y coser bordes**: Pliega las cuatro esquinas de la tela hacia el centro envolviendo el material, y cose los bordes en 3–4 puntos con [aguja de hueso e hilo de tendón](/protocol-14.html) para crear un **paquete de filtro rectangular firme**.",
+      "actionNote": "> Secuencia estricta de capas: El carbón en contacto directo con la boca provoca tragar gránulos. El carbón expuesto hacia afuera puede arder con las chispas. Mantén siempre el carbón en el centro protegido por la arena húmeda.",
+      "svgFileName": "pr15-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-TIER SANDWICH POUCH ENCAPSULATION",
+        "TELA HÚMEDA EN ROMBO (BASE DE 30×30CM)",
+        "APILADO DE ARENA(1CM)-CARBÓN(2CM)-ARENA(1CM)",
+        "PLEGADO EN SOBRE DE CUATRO ESQUINAS AL CENTRO",
+        "[PASO 3 CLAVE] COSTURA DE BORDES CON AGUJA DE HUESO"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Moldear sobre nariz y boca, asegurar correas dobles y probar presión negativa",
+      "description": "1. **Moldear contorno facial**: Presiona firmemente el centro de la máscara contra la nariz, boca y barbilla, moldeando con los dedos para ajustar los bordes a la cara.\n2. **Atar correas de arnés**: Ajusta las dos [cuerdas de kudzu](/protocol-05.html); ata la superior **sobre las orejas alrededor de la coronilla**, y la inferior **bajo las orejas alrededor de la nuca**.\n3. **Probar presión negativa y evacuar**: Cubre la tela exterior con las palmas e inhala hondo; verifica que no entre aire por los bordes y que **el aire fresco y filtrado fluya a través del filtro**, luego mantente agachado y evacúa la zona en 15 minutos.",
+      "actionNote": "> Control de fugas: Si entra olor acre o caliente por el puente nasal al inhalar, aprieta las correas de inmediato o aplica arcilla húmeda o brea de pino en el contorno para garantizar el sellado hermético.",
+      "svgFileName": "pr15-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // FACIAL SEALING & DUAL-CORD HARNESS",
+        "MOLDEADO CON DEDOS EN NARIZ, MEJILLAS Y BARBILLA",
+        "ARNÉS DOBLE: AMARRE EN CORONILLA Y NUCA",
+        "PRUEBA DE PRESIÓN NEGATIVA CON PALMAS (CERO FUGAS)",
+        "[PASO 4 CLAVE] POSTURA BAJA Y EVACUACIÓN EN 15 MINUTOS"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error fatal: Creer que la máscara filtra monóxido de carbono (CO) permanentemente y permanecer más de 15 minutos en el fuego",
+    "description": "El carbón activado y la arena húmeda atrapan hollín, cenizas y gases orgánicos como cianuro, pero el monóxido de carbono (CO), inodoro e incoloro, penetra lentamente los poros del carbón con el tiempo. Esta máscara es únicamente un respirador de escape de emergencia para 10–15 minutos. Jamás la utilices para combatir incendios ni permanezcas en refugios ardiendo; avanza agachado de inmediato hacia terreno abierto en dirección contraria al viento.",
+    "consequence": "Resultado: Saturación de poros del carbón, intoxicación por CO, pérdida de consciencia y asfixia fatal"
+  },
+  "shortsScript": {
+    "hook": "¡Atrapado en un incendio! ¡Inhalar humo tóxico 3 veces te mata en 2 minutos! ¡Si no tienes máscara, busca carbón y arena ya!",
+    "body": "Elige carbón blanco de roble duro, tritúralo a tamaño de sal gruesa y enjuaga el polvo. Lava arena de río 3 veces hasta eliminar el lodo. Sobre una tela húmeda, coloca 1cm de arena, 2cm de carbón y 1cm de arena. ¡Dobla las 4 esquinas como un sobre y cose los bordes! Apriétalo en tu nariz y boca, ata las cuerdas a la cabeza y respira hondo. ¡Si sientes aire fresco y limpio, estás protegido! ¡Agáchate y corre hacia el viento en 15 minutos!",
+    "outro": "El humo avanza más rápido que el fuego. Domina las técnicas primitivas de supervivencia. ¡Suscríbete ya!"
+  },
+  "outcome": {
+    "title": "Máscara improvisada de carbón activado en 3 capas y arnés facial hermético",
+    "badge": "CRITERIOS DE INSPECCIÓN // FIELD IMPROVISED GAS MASK",
+    "standard": "Bordes de tela completamente cosidos sin fugas de material, sellado facial hermético bajo inhalación de presión negativa y flujo fluido de aire limpio y refrigerado a través del filtro",
+    "description": "Bordes de tela completamente cosidos sin fugas de material, sellado facial hermético bajo inhalación de presión negativa y flujo fluido de aire limpio y refrigerado a través del filtro",
+    "svgFileName": "pr15-outcome.svg",
+    "svgLabels": [
+      "PR-15 OUTCOME // IMPROVISED ACTIVATED CHARCOAL SMOKE MASK",
+      "NÚCLEO DE CARBÓN DE ROBLE DE 1–2MM (2CM DE GROSOR)",
+      "ARENA CUARCÍTICA AMORTIGUADORA DE ENFRIAMIENTO (1CM DOBLE)",
+      "ENVOLTURA DE ALGODÓN EN 3 CAPAS Y COSTURA CON TENDÓN",
+      "ARNÉS DE KUDZU DE 2 CORREAS (CORONILLA/NUCA)",
+      "INHALACIÓN HERMÉTICA POR PRESIÓN NEGATIVA",
+      "FIELD VERIFIED // TOXIC SMOKE ESCAPE RATED (15-MIN SURVIVAL)"
+    ]
+  },
+  "createdAt": "2026-10-23T06:15:00.000Z",
+  "updatedAt": "2026-10-23T06:26:26.663Z",
+  "contentHash": "5c6edad36e2ff4e9"
+}

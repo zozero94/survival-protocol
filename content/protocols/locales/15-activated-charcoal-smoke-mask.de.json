@@ -1,0 +1,179 @@
+{
+  "protocolId": "PR-15",
+  "category": "MEDICINE",
+  "title": "Behelfsmäßige Aktivkohle- und Sand-Rauchgasmaske zur Notflucht bei Brandkatastrophen",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ABSCHIRMUNG GEGEN GIFTGASE & RAUCHERSTICKUNG / ATEMWEGS-VERBRENNUNGSSCHUTZ]",
+  "summary": "Bei Waldbränden, Feuern in Erdbunkern oder strukturellen Gebäudebränden nach dem Zivilisationskollaps führt das mehr als dreimalige Einatmen dichten Rußes und überhitzter Gase innerhalb von 2 Minuten zu tödlichen Atemwegsverbrennungen und Erstickung. Wenn Gasmasken oder Partikelfilter im Feld fehlen, muss unverzüglich eine Aktivkohle-Tuchmaske hergestellt werden, indem hochtemperaturgeglühte Eichenholzkohle aus einem [Erdgruben-Kohlenmeiler](/protocol-09.html) und gewaschener Flusssand aus einem [primitiven Wasserfilter](/protocol-01.html) in feuchtes Tuch geschichtet werden. Der feuchte Sand kühlt brennendes Gas sofort ab und fängt Flugasche ab, während Millionen Aktivkohle-Mikroporen giftige Dämpfe adsorbieren. Fest mit [Kudzufaser-Kordeln](/protocol-05.html) verschnürt und mit [Kiefernharz-Salbe](/protocol-10.html) abgedichtet, sichert diese Feldmaske ein 15-minütiges Zeitfenster zur Flucht aus Giftgaszonen.",
+  "timeRequired": "25 Min. (10 Min. Kohle zerkleinern + 5 Min. Sand waschen + 10 Min. 3-Lagen-Schichtung & Anpassung)",
+  "successRate": "92% (bei 1–2mm Körnung und lückenlosem Unterdruck-Dichtsitz)",
+  "difficulty": "Mittel (Kohlenstaub-Inhalation verhindern und Randleckagen abdichten)",
+  "outputPerHour": "2 Tuchfiltermasken; sichert die 15-minütige Notfluchtatmung für 2 Überlebende",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2–3 Stücke hochdichte Eichen-Weißkohle (Binchotan-Härte)",
+      "desc": "Im [versiegelten Kohlenmeiler](/protocol-09.html) bei über 600°C pyrolysiert, mit hellem metallischem Klang beim Zusammenschlagen. Frei von Teer, mit gewaltigem Waben-Mikroporennetz zur Adsorption toxischer Gasmoleküle."
+    },
+    {
+      "id": "mat-02",
+      "name": "1–2 Tassen gewaschener, feuchter Quarzit-Flusssand",
+      "desc": "Sauberer Bachsand aus der [primitiven Wasserfiltration](/protocol-01.html). Schlammfrei gewaschen, dient er als thermischer Puffer, der hunderte Grad heiße Gase beim Durchströmen schlagartig abkühlt."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 quadratische, feste Baumwoll- oder Leinentücher (30×30cm)",
+      "desc": "Atmungsaktive Hülle zur Aufnahme von Sand und Kohle. Synthetikfasern schmelzen bei Hitze auf der Haut; es dürfen nur feuchte Naturfasern verwendet werden, die Rußpartikel physikalisch abfangen."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Stränge reißfeste Kudzufaser-Kordel (60cm Länge)",
+      "desc": "Gewonnene [Bastfaserschnüre](/protocol-05.html) oder Lederriemen. Oben und unten an der Tasche befestigt, um Hinterkopf und Nacken stramm zu fixieren und Randleckagen zu unterbinden."
+    },
+    {
+      "id": "mat-05",
+      "name": "Etwas Kiefernharz-Salbe oder feuchter Tonbrei",
+      "desc": "Warme [Kiefernharz-Salbe](/protocol-10.html) oder feiner Schlick an Nasenrücken und Wangen, um periphere Raucheinbrüche lückenlos abzudichten."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Eichen-Weißkohle selektieren und im Steinmörser auf grobe Meersalzgröße zerkleinern",
+      "description": "1. **Dichte Weißkohle prüfen**: Wähle 2–3 Stücke Eichenkohle aus dem [Kohlenmeiler](/protocol-09.html), die beim Anschlagen einen **klaren metallischen Klang** anstelle eines dumpfen Schlags erzeugen.\n2. **Auf 1–2mm Körnung stoßen**: Lege die Kohle auf eine flache Steinunterlage und zerkleinere sie mit einer [Steinaxt oder einem Geröllstein](/protocol-04.html) gleichmäßig auf **grobes Meersalzkorn (1–2mm)**, ohne mehligen Staub zu erzeugen.\n3. **Schwebstaub mit Wasser abspülen**: Gieße klares Wasser über das Granulat, um aufschwimmenden feinen Rußstaub abzuspülen, und lasse das Wasser abtropfen, sodass **feuchte Aktivkohlepartikel** verbleiben.",
+      "actionNote": "> Feinstaub-Gefahr: Kohlemehl dringt beim tiefen Einatmen bis in die Lungenbläschen vor und führt zu Hustenkrämpfen. Halte zwingend 1–2mm Körnung ein und spüle Feinstaub mit Wasser aus.",
+      "svgFileName": "pr15-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // ACTIVATED CHARCOAL CRUSHING & SIZING",
+        "EICHEN-WEISSKOHLE-AUSWAHL (METALLISCHER KLANGTEST)",
+        "MÖRSERUNG AUF 1–2MM MEERSALZKORN-GRÖSSE",
+        "WASSERSPÜLUNG DES ASCHESTAUBS & FEUCHTIGKEITSFILM",
+        "[SCHRITT 1 FOKUS] 1–2MM KÖRNUNG FÜR LUNGENSICHERHEIT"
+      ],
+      "deepDive": {
+        "badge": "FIELD TOXICOLOGY & ADSORPTION",
+        "title": "Spezifische Oberfläche reduzierter Holzkohle und thermische Pufferung durch nassen Sand",
+        "text": "Unter Sauerstoffausschluss bei 600–800°C pyrolysierte Eichenholzkohle verfügt über Millionen mikroskopischer Wabenporen mit einer inneren Oberfläche von 300–500 m²/g. Diese bindet Acrolein, Formaldehyd und organische Giftgase durch van-der-Waals-Adsorption. In Kombination mit feuchtem Quarzitsand werden über 300°C heiße Brandgase in Millisekunden auf Umgebungstemperatur abgekühlt, was Inhalationstraumata verhindert.",
+        "fieldSpecs": [
+          {
+            "name": "Hochdichte Eichen-Weißkohle",
+            "scientificName": "Quercus Variabilis High-Temp Charcoal",
+            "categoryTag": "Feldadsorptionsmittel / Molekularfalle für Giftgase",
+            "imageFileName": "id-oak-white-charcoal.jpg",
+            "hudCode": "FIG. BIO-15A // MACRO OPTIC",
+            "hudStatus": "ADSORPTION CAPACITY: MAXIMUM",
+            "traits": [
+              {
+                "label": "FARBE/COLOR",
+                "value": "Obsidianartige Bruchflächen mit silbergrauem Metallglanz."
+              },
+              {
+                "label": "TEXTUR/TEXTURE",
+                "value": "Feste Waben-Mikroporen, frei von bröckeligem Aschenstaub."
+              },
+              {
+                "label": "AKUSTIK/ACOUSTIC",
+                "value": "Gibt beim Anschlagen einen hohen, hellen metallischen Ton ab."
+              }
+            ],
+            "fieldUse": "Auf 1–2mm zerkleinert als zentrale chemische Giftgas-Adsorptionsschicht"
+          },
+          {
+            "name": "Gewaschener Quarzit-Flusssand",
+            "scientificName": "Rinsed Quartzite River Sand",
+            "categoryTag": "Thermischer Feldpuffer / Physische Flugaschefalle",
+            "imageFileName": "id-quartz-river-sand.jpg",
+            "hudCode": "FIG. BIO-15B // MACRO OPTIC",
+            "hudStatus": "THERMAL BUFFER & FILTRATION: OPTIMAL",
+            "traits": [
+              {
+                "label": "FARBE/COLOR",
+                "value": "Bernsteinfarbene, quarzweiße und kieselgraue Quarzkristalle."
+              },
+              {
+                "label": "KORN/GRAIN",
+                "value": "Kantige Sandkörner (0,5–1,5mm), völlig frei von Lehmtrübung."
+              },
+              {
+                "label": "FEUCHTE/MOISTURE",
+                "value": "Klumpt beim Handdruck zusammen, ohne Wasser abtropfen zu lassen."
+              }
+            ],
+            "fieldUse": "In 1cm-Schichten vor und hinter der Kohle zur Hitzekühlung und Ascheabscheidung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Flusssand waschen und thermische Kühl- und Flugasche-Puffermatrix vorbereiten",
+      "description": "1. **Quarzitsand sammeln**: Schöpfe **1–2 Tassen sauberen Flusssand** aus klaren Stromschnellen, meide Schlammufer.\n2. **Trübschlamm auswaschen**: Gib den Sand in eine [Tonschale](/protocol-06.html), gieße Wasser nach, rühre kräftig um und dekantiere das trübe Schlammwasser mindestens 3-mal, bis der Ablauf klar ist.\n3. **Optimalen Feuchtigkeitsgrad einstellen**: Drücke den Sand mit der Hand aus, bis er zusammenhält und **feucht bleibt, ohne Wasser abzutropfen**.",
+      "actionNote": "> Schlamm-Gefahr: Ungewaschener Lehm setzt beim Einatmen die Poren des Tuches zu und führt binnen Sekunden zum Ersticken. Wasche den Sand mindestens dreimal gründlich aus.",
+      "svgFileName": "pr15-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // RIVER SAND WASHING & COOLING MATRIX",
+        "1–2 TASSEN SAUBEREN QUARZIT-FLUSSSAND ENTNEHMEN",
+        "3X WASCHUNG ZUR DEKANTIERUNG VON LEHMSCHLAMM",
+        "ZUSAMMENHALTENDER FEUCHTZUSTAND OHNE ABTROPFEN",
+        "[SCHRITT 2 FOKUS] THERMISCHE PUFFERSCHICHT ZUR GASKÜHLUNG"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Sand-Kohle-Sand als 3-Lagen-Sandwich aufschichten und zur Filtertasche falten",
+      "description": "1. **Feuchtes Tuch ausbreiten**: Lege ein feuchtes 30×30cm Baumwoll- oder Leinentuch rautenförmig auf einer ebenen Felsplatte aus.\n2. **3-Lagen-Schichtung auftragen**: Schichte im **handtellergroßen Zentrum (10×10cm)** geordnet auf: **1cm feuchter Sand ➔ 2cm Kohlegranulat ➔ 1cm feuchter Sand**.\n3. **Briefumschlag-Faltung & Nahtsicherung**: Schlage alle vier Tuchecken fest über der Schichtung zur Mitte ein und vernähe die Kanten an 3–4 Stellen mit [Knochennadel und Sehnenfaden](/protocol-14.html) zu einem **kompakten Filterkissen**.",
+      "actionNote": "> Schichtfolge einhalten: Kohle direkt am Mund führt zum Verschlucken von Partikeln. Außenliegende Kohle kann durch Glutpartikel entzünden. Schließe die Kohle immer beidseitig fest in nassen Sand ein.",
+      "svgFileName": "pr15-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-TIER SANDWICH POUCH ENCAPSULATION",
+        "FEUCHTESTUCH RAUTENFÖRMIG AUSGEBREITET (30×30CM)",
+        "SCHICHTUNG SAND(1CM)-KOHLE(2CM)-SAND(1CM)",
+        "BRIEFUMSCHLAG-FALTUNG ALLER VIER TUCHECKON",
+        "[SCHRITT 3 FOKUS] NAHTVERHEFTUNG MIT KNOCHENNADEL"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Auf Nase und Mund anformen, Doppelriemen fixieren und Unterdrucktest durchführen",
+      "description": "1. **Gesichtskonturen anformen**: Drücke die Maske fest auf Nase, Lippen und Kinn und modelliere die Ränder mit den Fingern lückenlos an die Gesichtszüge an.\n2. **Doppelriemen verschnüren**: Binde die zwei [Kudzukordeln](/protocol-05.html); führe das obere Band **über die Ohren um den Scheitel**, das untere **unter den Ohren um den Nacken** stramm zusammen.\n3. **Unterdrucktest & Notflucht**: Umschließe das Tuch mit beiden Handflächen und atme kräftig ein; stelle sicher, dass keine Falschluft einbricht und **gekühlte, saubere Luft durch den Filter strömt**, halte dich gebückt und verlasse die Brandzone innerhalb von 15 Minuten.",
+      "actionNote": "> Dichtigkeitsprüfung: Dringt beim Einatmen beißender Rauchgeruch am Nasenrücken ein, ziehe die Riemen sofort fester oder dichte die Ränder mit nassem Ton oder Kiefernharz ab.",
+      "svgFileName": "pr15-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // FACIAL SEALING & DUAL-CORD HARNESS",
+        "FINGERMODELLIERUNG AN NASE, WANGEN UND KINN",
+        "DOPPEL-BEFESTIGUNG AN SCHEITEL UND NACKEN",
+        "UNTERDRUCKTEST MIT HANDFLÄCHEN (LECKAGEFREI)",
+        "[SCHRITT 4 FOKUS] GEBÜCKTE HALTUNG & 15-MINUTEN-FLUCHT"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Zu glauben, die Maske filtere Kohlenmonoxid (CO) dauerhaft, und länger als 15 Minuten im Brandbereich zu verharren",
+    "description": "Aktivkohle und nasser Sand filtern Ruß, Schwebstoffe und Reizgase wie Cyanwasserstoff zuverlässig ab, doch geruchloses Kohlenmonoxid (CO) durchdringt die Kohleporen mit der Zeit. Diese behelfsmäßige Maske dient ausschließlich als 10–15-minütiges Notfall-Fluchtgerät. Verwende sie niemals zur Brandbekämpfung oder zum Ausharren in brennenden Unterkünften; gehe sofort in geduckte Haltung und flüchte gegen den Wind ins Freie.",
+    "consequence": "Ergebnis: Sättigung der Kohleporen, Kohlenmonoxid-Vergiftung, Bewusstlosigkeit und tödliche Erstickung"
+  },
+  "shortsScript": {
+    "hook": "Eingeschlossen im Feuer? Giftiger Rauch tötet nach 3 Atemzügen in 2 Minuten! Wenn du keine Gasmaske hast, schnapp dir Kohle und Sand!",
+    "body": "Nimm harte Eichen-Weißkohle aus deinem Meiler, zerstoße sie auf Meersalzgröße und wasche den Staub ab. Wasche Flusssand 3-mal, bis der Schlamm weg ist. Schichte auf ein feuchtes Tuch 1cm Sand, 2cm Kohle und 1cm Sand! Falte es wie einen Umschlag zusammen und nähe es fest. Drücke es an Nase und Mund, binde die Schnüre stramm um Scheitel und Nacken und atme ein. Wenn kühle, reine Luft strömt, bist du geschützt! Gebückt halten und in 15 Minuten rausrennen!",
+    "outro": "Rauch ist schneller als Feuer. Meistere primitive Überlebenstechniken rechtzeitig. Kanal abonnieren!"
+  },
+  "outcome": {
+    "title": "Dreilagige improvisierte Aktivkohle-Rauchgasmaske und luftdichtes Trageharnisch-Set",
+    "badge": "ABNAHMEKRITERIEN // FIELD IMPROVISED GAS MASK",
+    "standard": "Tuchränder vollständig ohne Materialaustritt vernäht, Gesichtsdichtsitz unter Einatem-Unterdruck leckagefrei und ungehinderter Durchstrom gekühlter, partikelfreier Luft durch die Filterschichten",
+    "description": "Tuchränder vollständig ohne Materialaustritt vernäht, Gesichtsdichtsitz unter Einatem-Unterdruck leckagefrei und ungehinderter Durchstrom gekühlter, partikelfreier Luft durch die Filterschichten",
+    "svgFileName": "pr15-outcome.svg",
+    "svgLabels": [
+      "PR-15 OUTCOME // IMPROVISED ACTIVATED CHARCOAL SMOKE MASK",
+      "DICHTER EICHENKOHLE-ADSORPTIONSKERN 1–2MM (2CM STARK)",
+      "GEWASCHENER QUARZITSAND ZUR HITZEDÄMPFUNG (1CM DOPPELT)",
+      "FEUCHTE BAUMWOLL-3-LAGEN-HÜLLE & SEHNENNAHT-SICHERUNG",
+      "KUDZU-DOPPELGURT-HARNISCH (SCHEITEL/NACKEN)",
+      "DICHTSITZ BEI EINATEM-UNTERDRUCK (LECKFREI)",
+      "FIELD VERIFIED // TOXIC SMOKE ESCAPE RATED (15-MIN SURVIVAL)"
+    ]
+  },
+  "createdAt": "2026-10-23T06:15:00.000Z",
+  "updatedAt": "2026-10-23T06:26:26.663Z",
+  "contentHash": "5c6edad36e2ff4e9"
+}

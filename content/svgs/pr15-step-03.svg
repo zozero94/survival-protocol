@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1503" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="clothBase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="sandLayer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="charcoalLayer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="drop1503" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1503" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1503)"/>
+  <rect width="400" height="400" fill="url(#grid1503)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 3-TIER SANDWICH POUCH ENCAPSULATION</text>
+
+  <!-- Diamond Cloth Layout (Flat View & 3D Layer Stack) -->
+  <g filter="url(#drop1503)">
+    <!-- Flat Rock Base Workstation -->
+    <ellipse cx="200" cy="225" rx="170" ry="110" fill="#131b26" stroke="#2c3e50" stroke-width="1"/>
+
+    <!-- Wet Woven Cloth Spread in Diamond Shape (30x30cm) -->
+    <polygon points="200,105 325,225 200,315 75,225" fill="url(#clothBase)" stroke="#64748b" stroke-width="1.2"/>
+    <!-- Fold Crease Guide Lines -->
+    <line x1="200" y1="105" x2="200" y2="315" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="75" y1="225" x2="325" y2="225" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- Central Palm-Sized Filter Core (10x10cm area) -->
+    <rect x="145" y="180" width="110" height="75" rx="4" fill="#0b1118" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- 3-Tier Sandwich Cross Section Cutaway -->
+    <!-- Bottom Sand Layer (1cm) -->
+    <rect x="150" y="235" width="100" height="15" rx="2" fill="url(#sandLayer)" stroke="#d97706" stroke-width="0.8"/>
+    <!-- Middle Charcoal Layer (2cm) -->
+    <rect x="150" y="200" width="100" height="32" rx="2" fill="url(#charcoalLayer)" stroke="#64748b" stroke-width="1"/>
+    <!-- Charcoal granule texture dots inside middle layer -->
+    <circle cx="165" cy="215" r="1.5" fill="#94a3b8"/>
+    <circle cx="180" cy="222" r="1.5" fill="#cbd5e1"/>
+    <circle cx="200" cy="210" r="1.5" fill="#94a3b8"/>
+    <circle cx="220" cy="224" r="1.5" fill="#cbd5e1"/>
+    <circle cx="235" cy="212" r="1.5" fill="#94a3b8"/>
+    <!-- Top Sand Layer (1cm) -->
+    <rect x="150" y="182" width="100" height="15" rx="2" fill="url(#sandLayer)" stroke="#d97706" stroke-width="0.8"/>
+
+    <!-- Folding Flap Movement Arrows (4 corners toward center) -->
+    <!-- Top Corner Inward -->
+    <path d="M 200,120 L 200,165" stroke="#fde68a" stroke-width="1.8" stroke-dasharray="2 2"/>
+    <polygon points="196,165 204,165 200,172" fill="#fde68a"/>
+    <!-- Bottom Corner Inward -->
+    <path d="M 200,300 L 200,265" stroke="#fde68a" stroke-width="1.8" stroke-dasharray="2 2"/>
+    <polygon points="196,265 204,265 200,258" fill="#fde68a"/>
+    <!-- Left Corner Inward -->
+    <path d="M 90,225 L 135,225" stroke="#fde68a" stroke-width="1.8" stroke-dasharray="2 2"/>
+    <polygon points="135,221 135,229 142,225" fill="#fde68a"/>
+    <!-- Right Corner Inward -->
+    <path d="M 310,225 L 265,225" stroke="#fde68a" stroke-width="1.8" stroke-dasharray="2 2"/>
+    <polygon points="265,221 265,229 258,225" fill="#fde68a"/>
+  </g>
+
+  <!-- Label 2: Diamond Cloth Spread -->
+  <rect x="25" y="70" width="220" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="85" fill="#94a3b8" font-family="monospace" font-size="8.8" font-weight="bold">젖은 면포 천 마름모 바닥 전개 (가로세로 30cm)</text>
+
+  <!-- Label 3: 3-Tier Layering Spec -->
+  <rect x="100" y="152" width="280" height="22" rx="2" fill="#141a23" stroke="#f59e0b" stroke-width="1"/>
+  <text x="107" y="167" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">중앙 손바닥 면적 모래(1cm)-숯(2cm)-모래(1cm) 3중 적층</text>
+
+  <!-- Label 4: Envelope Folding Motion -->
+  <rect x="25" y="340" width="180" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="355" fill="#94a3b8" font-family="monospace" font-size="9" font-weight="bold">네 모서리 중앙 접기 봉투형 랩핑</text>
+
+  <!-- Label 5: Step 3 Callout -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="9.8" font-weight="bold">[3단계 핵심] 뼈바늘·힘줄 실 가봉으로 내용물 누출 차단</text>
+</svg>

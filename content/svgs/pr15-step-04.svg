@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1504" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="headShade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="maskPouch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="kudzuCord" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#65a30d"/>
+      <stop offset="50%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+    <filter id="drop1504" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1504" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1504)"/>
+  <rect width="400" height="400" fill="url(#grid1504)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // FACIAL SEALING &amp; DUAL-CORD HARNESS</text>
+
+  <!-- Human Head Profile & Improvised Mask Assembly (Center) -->
+  <g filter="url(#drop1504)">
+    <!-- Head & Neck Silhouette (Profile Facing Left) -->
+    <path d="M 120 220 C 115 190 125 150 160 120 C 200 90 270 95 295 140 C 315 175 310 240 280 270 C 270 280 270 320 275 350 L 210 350 C 210 320 205 285 195 275 C 175 270 140 250 120 220 Z" fill="url(#headShade)" stroke="#475569" stroke-width="1.2"/>
+    <!-- Ear Landmark -->
+    <ellipse cx="230" cy="210" rx="14" ry="22" fill="#1e293b" stroke="#64748b" stroke-width="1.2"/>
+
+    <!-- Dual Kudzu Fiber Tension Straps -->
+    <!-- Top Strap (Over ear to crown/occiput) -->
+    <path d="M 155 210 C 180 185 215 170 290 175" fill="none" stroke="url(#kudzuCord)" stroke-width="3" stroke-linecap="round"/>
+    <!-- Bottom Strap (Under ear to nape of neck) -->
+    <path d="M 150 245 C 180 250 220 260 280 275" fill="none" stroke="url(#kudzuCord)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Folded Filter Pouch Moulded Over Nose, Mouth & Chin -->
+    <path d="M 140 180 C 150 175 162 195 160 225 C 158 250 148 265 130 265 C 115 265 105 250 110 225 C 115 195 130 185 140 180 Z" fill="url(#maskPouch)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Facial Contour Seal Ridge / Finger Compression -->
+    <path d="M 148 185 C 152 205 150 235 142 255" fill="none" stroke="#fde68a" stroke-width="2" stroke-dasharray="2 2"/>
+    <circle cx="150" cy="190" r="3" fill="#fde68a"/>
+    <circle cx="152" cy="220" r="3" fill="#fde68a"/>
+    <circle cx="145" cy="250" r="3" fill="#fde68a"/>
+
+    <!-- Negative Pressure Inhalation Stream Vectors (Inward into Mask) -->
+    <path d="M 70 215 L 105 220" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="105,217 105,223 112,220" fill="#38bdf8"/>
+    <path d="M 75 235 L 105 232" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="105,229 105,235 112,232" fill="#38bdf8"/>
+
+    <!-- Smoke Block Wave (Deflected Toxic Smoke Outside) -->
+    <path d="M 60 175 Q 85 200 65 240 Q 80 270 55 295" stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.8" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Label 2: Facial Contouring -->
+  <rect x="25" y="65" width="220" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="80" fill="#fde68a" font-family="monospace" font-size="8.8" font-weight="bold">콧등·뺨·턱 밑 안면 굴곡 손가락 밀착 성형</text>
+
+  <!-- Label 3: Dual Harness Straps -->
+  <rect x="135" y="140" width="250" height="22" rx="2" fill="#141a23" stroke="#84cc16" stroke-width="0.8"/>
+  <text x="142" y="155" fill="#a3e635" font-family="monospace" font-size="8.5" font-weight="bold">상단 끈 정수리 뒤 &amp; 하단 끈 목덜미 뒤 이중 결속</text>
+
+  <!-- Label 4: Negative Pressure Test -->
+  <rect x="25" y="340" width="235" height="22" rx="2" fill="#141a23" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="32" y="355" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">손바닥 음압 호흡 흡기 테스트 (누기 제로 확인)</text>
+
+  <!-- Label 5: Step 4 Callout -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="9.8" font-weight="bold">[4단계 핵심] 저자세 유지 및 15분 골든타임 탈출 기동</text>
+</svg>

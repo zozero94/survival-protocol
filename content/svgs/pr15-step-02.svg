@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1502" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="clayPot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9a3412"/>
+      <stop offset="50%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#431407"/>
+    </linearGradient>
+    <linearGradient id="wetSand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="40%" stop-color="#b45309"/>
+      <stop offset="80%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="waterFlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="drop1502" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1502" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1502)"/>
+  <rect width="400" height="400" fill="url(#grid1502)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // RIVER SAND WASHING &amp; COOLING MATRIX</text>
+
+  <!-- Stream Bed Quartzite Sand Scooping (Top-Left) -->
+  <g filter="url(#drop1502)">
+    <!-- Riverbed Slate Slab -->
+    <path d="M 35 125 L 145 105 L 160 145 L 50 160 Z" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <!-- Clear Water Ripple -->
+    <path d="M 30 115 C 60 110 100 125 150 115" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <!-- Angular Quartz Sand Heap (Amber, White, Gray Crystals) -->
+    <ellipse cx="95" cy="135" rx="35" ry="15" fill="url(#wetSand)" stroke="#d97706" stroke-width="1"/>
+    <circle cx="85" cy="133" r="1.5" fill="#fef08a"/>
+    <circle cx="95" cy="131" r="1.5" fill="#ffffff"/>
+    <circle cx="105" cy="134" r="1.5" fill="#fef08a"/>
+    <circle cx="90" cy="138" r="1.5" fill="#cbd5e1"/>
+    <circle cx="102" cy="139" r="1.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Label 2: River Sand Harvest -->
+  <rect x="25" y="165" width="180" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="180" fill="#94a3b8" font-family="monospace" font-size="9" font-weight="bold">개울 바닥 깨끗한 규암 모래 1~2컵 채취</text>
+
+  <!-- Clay Pot & Water Decanting Rinse (Center-Right) -->
+  <g filter="url(#drop1502)">
+    <!-- Tilted Primitive Clay Hearth Bowl -->
+    <g transform="rotate(-18 270 230)">
+      <path d="M 210 200 C 205 250 240 280 290 280 C 340 280 375 250 370 200 Z" fill="url(#clayPot)" stroke="#c2410c" stroke-width="1.5"/>
+      <ellipse cx="290" cy="200" rx="80" ry="25" fill="#431407" stroke="#9a3412" stroke-width="1.2"/>
+      <!-- Sand settled at bottom -->
+      <path d="M 235 235 C 255 265 315 265 340 235 Z" fill="url(#wetSand)"/>
+      <!-- Turbid dirty water pouring out over rim -->
+      <path d="M 215 195 C 190 205 180 245 175 275 C 172 290 185 295 188 280 C 195 245 210 220 230 205 Z" fill="url(#waterFlow)"/>
+      <path d="M 210 198 L 180 260" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.7"/>
+    </g>
+
+    <!-- Water Rinse Arrow (3 Cycles) -->
+    <path d="M 335 150 A 25 25 0 0 1 365 185" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="368,185 360,178 368,174" fill="#38bdf8"/>
+    <circle cx="345" cy="135" r="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3: Decanting Turbid Water -->
+  <rect x="105" y="105" width="280" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="112" y="120" fill="#fde68a" font-family="monospace" font-size="8.2" font-weight="bold">점토 그릇 담수 3회 헹굼 (탁한 흙탕물 배출)</text>
+
+  <!-- Moist Cohesive Ball Hand Test (Bottom-Left) -->
+  <g filter="url(#drop1502)">
+    <!-- Sand clump holding shape without dripping -->
+    <ellipse cx="120" cy="290" rx="42" ry="26" fill="url(#wetSand)" stroke="#f59e0b" stroke-width="1.2"/>
+    <circle cx="105" cy="285" r="2" fill="#fef08a"/>
+    <circle cx="120" cy="282" r="2" fill="#ffffff"/>
+    <circle cx="132" cy="288" r="2" fill="#fef08a"/>
+    <circle cx="115" cy="295" r="2" fill="#ffffff"/>
+    <circle cx="128" cy="297" r="2" fill="#fef08a"/>
+
+    <!-- Hand silhouette contour gently pressing -->
+    <path d="M 70 290 C 85 270 100 265 125 265 C 145 265 160 275 165 290" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3 2"/>
+
+    <!-- Zero-Drip Indicator: Crossed droplet -->
+    <circle cx="165" cy="320" r="10" fill="#0f172a" stroke="#22c55e" stroke-width="1.2"/>
+    <path d="M 160 320 L 170 320" stroke="#22c55e" stroke-width="2"/>
+    <path d="M 165 315 L 165 325" stroke="#22c55e" stroke-width="2"/>
+  </g>
+
+  <!-- Label 4: Moist Cohesion Standard -->
+  <rect x="25" y="340" width="220" height="22" rx="2" fill="#141a23" stroke="#22c55e" stroke-width="0.8"/>
+  <text x="32" y="355" fill="#22c55e" font-family="monospace" font-size="8.8" font-weight="bold">손으로 쥐었을 때 뭉쳐지는 촉촉한 수분 유지</text>
+
+  <!-- Label 5: Step 2 Callout -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">[2단계 핵심] 고온 열기 급속 냉각 완충층 완성</text>
+</svg>

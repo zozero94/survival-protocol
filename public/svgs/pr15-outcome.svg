@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgOut15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="50%" stop-color="#0c121a"/>
+      <stop offset="100%" stop-color="#080b10"/>
+    </linearGradient>
+    <linearGradient id="charcoalCore" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="sandMatrix" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="clothWrap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="kudzuHarness" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#65a30d"/>
+      <stop offset="50%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+    <linearGradient id="headProfile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowOut15" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+    <pattern id="gridOut15" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#152230" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgOut15)"/>
+  <rect width="800" height="450" fill="url(#gridOut15)"/>
+  <rect x="12" y="12" width="776" height="426" fill="none" stroke="#253548" stroke-width="1.2"/>
+
+  <!-- Top Tactical Header Banner (Label 1) -->
+  <rect x="24" y="20" width="752" height="34" rx="2" fill="#0d141f" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="38" y="42" fill="#fde68a" font-family="monospace" font-size="12" font-weight="bold">PR-15 OUTCOME // IMPROVISED ACTIVATED CHARCOAL SMOKE MASK</text>
+
+  <!-- SECTION 1 (LEFT): Charcoal Granules & Sand Media (x: 30 ~ 260) -->
+  <g filter="url(#shadowOut15)">
+    <rect x="30" y="66" width="230" height="305" rx="3" fill="#0b111a" stroke="#2a3f55" stroke-width="1"/>
+    <rect x="30" y="66" width="230" height="24" fill="#131e2b"/>
+
+    <!-- Stone Mortar & Granules Detail -->
+    <ellipse cx="145" cy="180" rx="90" ry="32" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <ellipse cx="145" cy="180" rx="75" ry="20" fill="#0b1118"/>
+
+    <!-- 1~2mm Granules Macro Cluster -->
+    <rect x="100" y="172" width="6" height="6" rx="1.5" fill="#64748b"/>
+    <rect x="115" y="176" width="5" height="6" rx="1.5" fill="#94a3b8"/>
+    <rect x="130" y="170" width="7" height="6" rx="1.5" fill="#cbd5e1"/>
+    <rect x="148" y="178" width="6" height="7" rx="1.5" fill="#64748b"/>
+    <rect x="165" y="172" width="7" height="6" rx="1.5" fill="#94a3b8"/>
+    <rect x="180" y="175" width="6" height="6" rx="1.5" fill="#cbd5e1"/>
+
+    <!-- Quartzite Sand Pile (Amber & White) -->
+    <ellipse cx="145" cy="285" rx="80" ry="26" fill="url(#sandMatrix)" stroke="#d97706" stroke-width="1"/>
+    <circle cx="115" cy="280" r="2" fill="#fef08a"/>
+    <circle cx="130" cy="286" r="2.5" fill="#ffffff"/>
+    <circle cx="150" cy="278" r="2" fill="#fef08a"/>
+    <circle cx="168" cy="285" r="2.5" fill="#ffffff"/>
+    <circle cx="145" cy="292" r="2" fill="#fef08a"/>
+  </g>
+
+  <!-- Label 2: Charcoal 2cm Layer Spec (Inside Section 1) -->
+  <rect x="36" y="68" width="218" height="18" fill="none"/>
+  <text x="40" y="80" fill="#fde68a" font-family="monospace" font-size="8.8" font-weight="bold">단단한 참나무 백탄 1~2mm 활성탄 흡착 층 (두께 2cm)</text>
+
+  <!-- Label 3: Sand 1cm Buffer Spec (Inside Section 1) -->
+  <rect x="36" y="215" width="218" height="20" rx="2" fill="#141a23" stroke="#d97706" stroke-width="0.8"/>
+  <text x="40" y="229" fill="#f59e0b" font-family="monospace" font-size="7.8" font-weight="bold">세척된 규암질 강 모래 급속 냉각 &amp; 비산재 완충 층 (상하 1cm)</text>
+
+  <!-- SECTION 2 (CENTER): 3-Tier Sandwich Cutaway (x: 275 ~ 515) -->
+  <g filter="url(#shadowOut15)">
+    <rect x="275" y="66" width="240" height="305" rx="3" fill="#0b111a" stroke="#2a3f55" stroke-width="1"/>
+    <rect x="275" y="66" width="240" height="34" fill="#131e2b"/>
+
+    <!-- 3D Cutaway Pouch Block -->
+    <!-- Outer Woven Cloth Layer (Envelope Fold) -->
+    <rect x="300" y="115" width="190" height="190" rx="8" fill="url(#clothWrap)" stroke="#475569" stroke-width="1.5"/>
+    <rect x="310" y="125" width="170" height="170" rx="5" fill="#0b1118"/>
+
+    <!-- Layer 1: Front Sand Layer (1cm) -->
+    <rect x="315" y="132" width="160" height="32" rx="3" fill="url(#sandMatrix)" stroke="#d97706" stroke-width="1"/>
+    <!-- Layer 2: Core Charcoal Layer (2cm) -->
+    <rect x="315" y="172" width="160" height="75" rx="3" fill="url(#charcoalCore)" stroke="#64748b" stroke-width="1.2"/>
+    <!-- Porous Charcoal Texture Dots -->
+    <circle cx="335" cy="195" r="2" fill="#94a3b8"/>
+    <circle cx="360" cy="210" r="2" fill="#cbd5e1"/>
+    <circle cx="395" cy="190" r="2.5" fill="#94a3b8"/>
+    <circle cx="430" cy="215" r="2" fill="#cbd5e1"/>
+    <circle cx="455" cy="195" r="2" fill="#94a3b8"/>
+    <!-- Layer 3: Rear Sand Layer (1cm) -->
+    <rect x="315" y="255" width="160" height="32" rx="3" fill="url(#sandMatrix)" stroke="#d97706" stroke-width="1"/>
+
+    <!-- Sinew Thread Edge Stitches (PR-14 연계) -->
+    <line x1="305" y1="130" x2="305" y2="145" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="305" y1="170" x2="305" y2="185" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="305" y1="210" x2="305" y2="225" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="305" y1="250" x2="305" y2="265" stroke="#f8fafc" stroke-width="2"/>
+  </g>
+
+  <!-- Label 4: Cloth 3-Tier Sandwich Spec (Inside Section 2) -->
+  <rect x="281" y="80" width="228" height="18" fill="none"/>
+  <text x="284" y="94" fill="#fde68a" font-family="monospace" font-size="8.3" font-weight="bold">젖은 천연 면포 3중 샌드위치 랩핑 &amp; 힘줄 실 가봉 마감</text>
+
+  <!-- SECTION 3 (RIGHT): Head Profile & Airtight Escape (x: 530 ~ 770) -->
+  <g filter="url(#shadowOut15)">
+    <rect x="530" y="66" width="240" height="305" rx="3" fill="#0b111a" stroke="#2a3f55" stroke-width="1"/>
+    <rect x="530" y="66" width="240" height="24" fill="#131e2b"/>
+
+    <!-- Head Profile Contour (Facing Left) -->
+    <path d="M 590 200 C 585 170 595 130 630 110 C 670 90 730 95 750 140 C 765 170 760 230 735 255 C 730 265 730 300 735 330 L 675 330 C 675 305 670 275 660 265 C 640 260 610 240 590 200 Z" fill="url(#headProfile)" stroke="#475569" stroke-width="1.2"/>
+    <ellipse cx="685" cy="195" rx="12" ry="18" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+
+    <!-- Dual Kudzu Harness Straps -->
+    <path d="M 620 190 C 640 170 670 155 745 160" fill="none" stroke="url(#kudzuHarness)" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M 615 225 C 640 230 680 240 735 255" fill="none" stroke="url(#kudzuHarness)" stroke-width="2.8" stroke-linecap="round"/>
+
+    <!-- Fitted Mask over Nose/Mouth -->
+    <path d="M 610 165 C 618 160 628 178 626 205 C 624 228 616 242 602 242 C 590 242 580 228 585 205 C 590 178 602 170 610 165 Z" fill="url(#clothWrap)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Clean Inhalation Flow Vector -->
+    <path d="M 555 205 L 580 208" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="580,205 580,211 587,208" fill="#38bdf8"/>
+
+    <!-- Deflected Toxic Smoke Cloud Wave -->
+    <path d="M 545 160 Q 565 190 545 225 Q 560 250 540 270" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="2 2"/>
+
+    <!-- Verified Green Shield Badge -->
+    <circle cx="725" cy="290" r="18" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
+    <path d="M 717 290 L 723 296 L 733 285" fill="none" stroke="#22c55e" stroke-width="2"/>
+  </g>
+
+  <!-- Label 5: Kudzu Harness Spec (Inside Section 3) -->
+  <rect x="534" y="68" width="232" height="18" fill="none"/>
+  <text x="536" y="80" fill="#fde68a" font-family="monospace" font-size="8.1" font-weight="bold">야생 칡 섬유 2열 텐션 하네스 (정수리 &amp; 목덜미 기밀 결속)</text>
+
+  <!-- Label 6: Facial Seal Negative Pressure Spec (Inside Section 3) -->
+  <rect x="538" y="325" width="224" height="22" rx="2" fill="#141a23" stroke="#22c55e" stroke-width="1"/>
+  <text x="544" y="340" fill="#22c55e" font-family="monospace" font-size="8.3" font-weight="bold">안면 틈새 완전 밀폐 음압 호흡 상태 (유독가스 흡착 차단)</text>
+
+  <!-- Bottom Master Verification Banner (Label 7) -->
+  <rect x="24" y="388" width="752" height="38" rx="2" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="38" y="412" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">FIELD VERIFIED // TOXIC SMOKE ESCAPE RATED (15-MIN SURVIVAL)</text>
+</svg>

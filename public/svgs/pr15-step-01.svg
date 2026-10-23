@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg1501" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="charcoalLump" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="30%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="mortarStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="40%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="pestleWood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="waterRinse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="drop1501" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1501" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1501)"/>
+  <rect width="400" height="400" fill="url(#grid1501)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // ACTIVATED CHARCOAL CRUSHING &amp; SIZING</text>
+
+  <!-- Charcoal Selection & Acoustic Test (Top-Left) -->
+  <g filter="url(#drop1501)">
+    <!-- High-temperature hard white charcoal lump -->
+    <polygon points="45,95 85,80 120,95 135,130 95,150 50,135" fill="url(#charcoalLump)" stroke="#64748b" stroke-width="1.2"/>
+    <!-- Obsidian-like fractured facets & sheen -->
+    <polygon points="50,95 85,80 90,115 55,120" fill="#475569" opacity="0.6"/>
+    <polygon points="85,80 120,95 105,125 90,115" fill="#334155" opacity="0.8"/>
+    <!-- Sound Waves / Ringing Resonance -->
+    <path d="M 125,75 A 15 15 0 0 1 145,95" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <path d="M 132,68 A 25 25 0 0 1 160,95" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Label 2: Oak Charcoal Selection -->
+  <rect x="25" y="158" width="185" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="173" fill="#94a3b8" font-family="monospace" font-size="9" font-weight="bold">참나무 백탄 선별 (맑은 쇳소리 공명음 확인)</text>
+
+  <!-- Stone Mortar & Pestle Grinding (Center-Bottom) -->
+  <g filter="url(#drop1501)">
+    <!-- Solid Granite Mortar Base -->
+    <path d="M 100,280 C 100,230 140,210 240,210 C 340,210 380,230 380,280 C 380,335 320,350 240,350 C 160,350 100,335 100,280 Z" fill="url(#mortarStone)" stroke="#64748b" stroke-width="1.5"/>
+    <!-- Mortar Cavity Bowl -->
+    <ellipse cx="240" cy="260" rx="100" ry="35" fill="#0b1118" stroke="#475569" stroke-width="1.2"/>
+
+    <!-- Crushed 1-2mm Salt-Sized Charcoal Granules -->
+    <ellipse cx="240" cy="265" rx="85" ry="25" fill="#020617"/>
+    <!-- Scattered 1~2mm Granules -->
+    <rect x="180" y="255" width="4" height="4" fill="#64748b" rx="1"/>
+    <rect x="195" y="260" width="5" height="4" fill="#94a3b8" rx="1"/>
+    <rect x="210" y="252" width="4" height="5" fill="#cbd5e1" rx="1"/>
+    <rect x="225" y="268" width="5" height="5" fill="#64748b" rx="1"/>
+    <rect x="240" y="258" width="4" height="4" fill="#94a3b8" rx="1"/>
+    <rect x="255" y="262" width="5" height="4" fill="#cbd5e1" rx="1"/>
+    <rect x="270" y="254" width="4" height="4" fill="#64748b" rx="1"/>
+    <rect x="285" y="265" width="5" height="5" fill="#94a3b8" rx="1"/>
+    <rect x="200" y="272" width="4" height="4" fill="#64748b" rx="1"/>
+    <rect x="235" y="275" width="5" height="4" fill="#cbd5e1" rx="1"/>
+    <rect x="260" y="272" width="4" height="5" fill="#94a3b8" rx="1"/>
+
+    <!-- Heavy Stone Pestle in Action -->
+    <g transform="rotate(-20 250 210)">
+      <path d="M 235,140 L 265,140 L 270,240 C 270,250 260,258 250,258 C 240,258 230,250 230,240 Z" fill="url(#pestleWood)" stroke="#94a3b8" stroke-width="1.2"/>
+      <ellipse cx="250" cy="140" rx="15" ry="5" fill="#cbd5e1"/>
+    </g>
+
+    <!-- Crushing Downward Force Arrow -->
+    <path d="M 285,170 L 285,205" stroke="#fde68a" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="280,205 290,205 285,215" fill="#fde68a"/>
+  </g>
+
+  <!-- Label 3: Mortar Grinding 1-2mm -->
+  <rect x="110" y="115" width="275" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="118" y="130" fill="#fde68a" font-family="monospace" font-size="8.2" font-weight="bold">단단한 돌절구 위 1~2mm 소금 알갱이 크기 분쇄</text>
+
+  <!-- Water Rinsing Bowl (Top-Right / Mid) -->
+  <g filter="url(#drop1501)">
+    <ellipse cx="320" cy="80" rx="40" ry="16" fill="url(#waterRinse)" stroke="#38bdf8" stroke-width="1"/>
+    <ellipse cx="320" cy="82" rx="25" ry="8" fill="#0284c7" opacity="0.6"/>
+    <!-- Floating fines floating away -->
+    <circle cx="310" cy="81" r="1.5" fill="#0f172a"/>
+    <circle cx="325" cy="80" r="1.5" fill="#0f172a"/>
+    <circle cx="335" cy="83" r="1.5" fill="#0f172a"/>
+  </g>
+
+  <!-- Label 4: Water Rinsing & Wet Coating -->
+  <rect x="25" y="340" width="210" height="22" rx="2" fill="#141a23" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="32" y="355" fill="#38bdf8" font-family="monospace" font-size="8.8" font-weight="bold">물 헹굼으로 미세 뜬재 분진 배출 및 수분 코팅</text>
+
+  <!-- Label 5: Step 1 Callout -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">[1단계 핵심] 폐포 흡입 방지용 굵은 소금 규격 유지</text>
+</svg>

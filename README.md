@@ -18,7 +18,7 @@
 
 ---
 
-## 🧱 6대 생존 공학 분과 및 발행 현황 (총 11편 배포 완료)
+## 🧱 6대 생존 공학 분과 및 발행 현황 (총 14편 배포 완료)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면/이미지 | 세부 스텝 비주얼 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
@@ -33,6 +33,9 @@
 | **MEDICINE** | [소나무 송진을 녹여 굳히는 상처 소독 연고 및 만능 방수 접착제](public/protocol-10.html) | `pr10-outcome.svg` | 4단계 (FIG 01~04 + 식생 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 | **FOOD** | [버드나무 가지를 엮어 들어간 물고기가 빠져나오지 못하는 원시 깔때기 통발](public/protocol-11.html) | `pr11-outcome.svg` | 4단계 (FIG 01~04 + 식생·미끼 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 | **FIRE** | [버려진 빈 깡통 2개와 폐전선·잔가지로 연기 없이 물을 끓이는 이중 연소 우드 가스 스토브](public/protocol-12.html) | `pr12-outcome.svg` | 4단계 (FIG 01~04 + 폐자재 실사 2종) | 7개국어 완비 | ✅ 라이브 |
+| **MEDICINE** | [나무를 태운 재와 동물 기름으로 천연 살균 잿물 비누 만드는 법 (야전 세정 비누)](public/protocol-13.html) | `pr13-outcome.svg` | 4단계 (FIG 01~04) | 7개국어 완비 | ✅ 라이브 |
+| **TOOLS** | [동물 다리뼈와 마른 힘줄로 찢어진 가죽옷과 신발을 꿰매는 법 (야전 골침과 건사 봉제술)](public/protocol-14.html) | `pr14-outcome.svg` | 4단계 (FIG 01~04 + 생체자재 실사 2종) | 7개국어 완비 | ✅ 라이브 |
+| **MEDICINE** | [활성탄 숯가루와 모래를 천에 싼 화재·유독가스 방호 간이 방독 마스크 (야전 탄포 마스크)](public/protocol-15.html) | `pr15-outcome.svg` | 4단계 (FIG 01~04 + 활성탄·모래 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -42,10 +45,10 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-14, 총 13편)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-15, 총 14편)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 14종)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 89종: 활성 스텝 61종 + 결과 14종)
+│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 16종)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 94종: 활성 스텝 65종 + 결과 15종)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -84,7 +87,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 18대 테스트 스위트 (125/125 PASS)
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (139/139 PASS)
 ```
 
 ---

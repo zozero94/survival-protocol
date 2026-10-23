@@ -1,0 +1,179 @@
+{
+  "protocolId": "PR-15",
+  "category": "MEDICINE",
+  "title": "Máscara improvisada de pano com carvão ativado e areia para escape de fumaça e gases tóxicos",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ESCUDO CONTRA GASES TÓXICOS E FUMAÇA ASFIXIANTE / DEFESA CONTRA QUEIMADURAS DAS VIAS AÉREAS]",
+  "summary": "Em incêndios florestais repentinos, queimadas em abrigos subterrâneos ou conflagrações estruturais pós-colapso, inalar fumaça densa e vapores superaquecidos mais de 3 vezes destrói as vias respiratórias e causa asfixia fatal em menos de 2 minutos. Na ausência total de máscaras antigás industriais no campo, é preciso fabricar imediatamente uma máscara de carvão ativado e areia, estratificando carvão de carvalho de alta temperatura de um [forno de trincheira](/protocol-09.html) e areia de rio lavada de um [filtro de água primitivo](/protocol-01.html) em pano úmido. A areia úmida resfria na hora o calor escaldante e retém cinzas voadoras, enquanto milhões de microporos de carvão adsorvem gases venenosos. Amarrada com [cordas de fibra de kudzu](/protocol-05.html) e vedada com [pomada de resina de pinheiro](/protocol-10.html), essa máscara garante uma janela crucial de 15 minutos para evacuar zonas de desastre tóxico.",
+  "timeRequired": "25 min (10 min trituração de carvão + 5 min lavagem de areia + 10 min montagem e ajuste facial)",
+  "successRate": "92% (mantendo granulação de 1–2mm e vedação hermética por pressão negativa)",
+  "difficulty": "Média (atenção para evitar pó fino de carvão e vazamentos periféricos)",
+  "outputPerHour": "2 bolsas de filtro facial; garante 15 minutos de fuga para 2 sobreviventes",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2–3 Pedaços de Carvão Branco de Carvalho de Alta Densidade",
+      "desc": "Carbonizado a mais de 600°C em [forno de trincheira vedado](/protocol-09.html), emitindo tinido metálico limpo ao ser percutido. Sem alcatrões, com uma imensa rede de microporos que aprisiona moléculas tóxicas."
+    },
+    {
+      "id": "mat-02",
+      "name": "1–2 Xícaras de Areia Quartzítica de Rio Lavada e Úmida",
+      "desc": "Areia limpa colhida para [filtragem primitiva de água](/protocol-01.html). Lavada sem lama nem argila, atua como amortecedor térmico que resfria fumaça a centenas de graus para temperatura ambiente no contato."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 Quadrados de Tecido Firme de Algodão ou Linho (30×30cm)",
+      "desc": "Invólucro respirável para reter areia e carvão. Fibras sintéticas derretem na pele com o calor intenso; use sempre tecidos vegetais naturais molhados em água para capturar fuligem."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Tiras de Corda Resistente de Fibra de Kudzu (60cm de comprimento)",
+      "desc": "[Cordas de fibra vegetal](/protocol-05.html) ou tiras de couro. Fixadas no topo e na base da bolsa para amarrar atrás do topo da cabeça e na nuca, mantendo vedação periférica justa."
+    },
+    {
+      "id": "mat-05",
+      "name": "Pouco de Pomada de Resina de Pinheiro ou Pasta de Argila Úmida",
+      "desc": "[Pomada de resina de pinheiro](/protocol-10.html) ou argila úmida espalhada no dorso do nariz e bochechas para selar vazamentos periféricos de fumaça."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Selecionar carvão de carvalho e quebrar no pilão em grãos de sal grosso",
+      "description": "1. **Selecionar carvão denso**: Escolha 2–3 pedaços de carvão do [forno de trincheira](/protocol-09.html) que emitam um **tinido metálico claro (ressonância límpida)** ao baterem um no outro, sem som abafado.\n2. **Moer no tamanho de 1–2mm**: Coloque o carvão sobre pedra plana e quebre suavemente com [machado de pedra ou seixo de rio](/protocol-04.html), atingindo **grânulos do tamanho de sal grosso (1–2mm)** sem virar pó fino.\n3. **Enxaguar cinza fina com água**: Verta água limpa sobre o carvão triturado para retirar a poeira flutuante e escorra o excesso, obtendo **grãos úmidos de carvão ativado**.",
+      "actionNote": "> Risco de inalação de pó: Moer o carvão até virar farinha faz com que o pó entre nos alvéolos pulmonares durante a respiração ofegante. Mantenha grãos de 1–2mm e lave com água para eliminar o pó volátil.",
+      "svgFileName": "pr15-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // ACTIVATED CHARCOAL CRUSHING & SIZING",
+        "SELEÇÃO DE CARVÃO DE CARVALHO (TESTE DE TINIDO METÁLICO)",
+        "MOAGEM NO PILÃO A GRÃOS DE SAL DE 1–2MM",
+        "LAVAGEM COM ÁGUA DE CINZAS E REVESTIMENTO ÚMIDO",
+        "[PASSO 1 CHAVE] GRANULAÇÃO DE 1–2MM PARA SEGURANÇA PULMONAR"
+      ],
+      "deepDive": {
+        "badge": "FIELD TOXICOLOGY & ADSORPTION",
+        "title": "Adsorção superficial do carbono pirolisado e amortecimento térmico da areia úmida",
+        "text": "O carvão de carvalho pirolisado em atmosfera redutora a 600–800°C possui milhões de microporos com área superficial específica de 300–500 m²/g. Essa vasta superfície retém acroleína, formaldeído e compostos orgânicos por forças de van der Waals. Combinado com areia quartzítica úmida, resfria fumaça a mais de 300°C em milissegundos para temperatura ambiente, prevenindo lesões térmicas na árvore respiratória.",
+        "fieldSpecs": [
+          {
+            "name": "Carvão branco de carvalho de alta densidade",
+            "scientificName": "Quercus Variabilis High-Temp Charcoal",
+            "categoryTag": "Material adsorvente de campo / Armadilha molecular de gases tóxicos",
+            "imageFileName": "id-oak-white-charcoal.jpg",
+            "hudCode": "FIG. BIO-15A // MACRO OPTIC",
+            "hudStatus": "ADSORPTION CAPACITY: MAXIMUM",
+            "traits": [
+              {
+                "label": "COR/COLOR",
+                "value": "Fratura vítrea brilhante com reflexos metálicos cinza-prateados."
+              },
+              {
+                "label": "TEXTURA/TEXTURE",
+                "value": "Microporos rígidos e densos, livre de cinzas quebradiças e frouxas."
+              },
+              {
+                "label": "ACÚSTICA/ACOUSTIC",
+                "value": "Emite um som agudo e metálico claro quando batido contra outra pedra."
+              }
+            ],
+            "fieldUse": "Triturado em grãos de 1–2mm para a camada central de adsorção de gases tóxicos"
+          },
+          {
+            "name": "Areia quartzítica de rio lavada",
+            "scientificName": "Rinsed Quartzite River Sand",
+            "categoryTag": "Amortecedor térmico de campo / Armadilha física de cinzas",
+            "imageFileName": "id-quartz-river-sand.jpg",
+            "hudCode": "FIG. BIO-15B // MACRO OPTIC",
+            "hudStatus": "THERMAL BUFFER & FILTRATION: OPTIMAL",
+            "traits": [
+              {
+                "label": "COR/COLOR",
+                "value": "Grãos cristalinos translúcidos de quartzo branco, âmbar e sílex."
+              },
+              {
+                "label": "GRANULAÇÃO/GRAIN",
+                "value": "Partículas angulares de 0.5–1.5mm totalmente livres de lodo."
+              },
+              {
+                "label": "UMIDADE/MOISTURE",
+                "value": "Forma torrão coeso quando apertada na mão, sem escorrer água."
+              }
+            ],
+            "fieldUse": "Estratificada em camadas de 1cm antes e após o carvão para resfriar e reter cinzas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Lavar areia de rio para preparar matriz de resfriamento e retenção de cinzas",
+      "description": "1. **Coletar areia limpa**: Colha **1–2 xícaras de areia quartzítica** do leito de corredeiras limpas, evitando barrancos lamacentos.\n2. **Enxaguar e decantar água barrenta**: Coloque a areia em uma [tigela de argila](/protocol-06.html), coloque água, mexa bem e decante a água barrenta turva 3 vezes até sair límpida.\n3. **Ajustar umidade correta**: Escorra a areia até que, ao apertar na mão, ela se molde em torrão mantendo **umidade perceptível sem pingar água**.",
+      "actionNote": "> Perigo de lama: A argila não lavada obstrui as tramas do pano durante a inalação, provocando asfixia em segundos. Enxágue com água limpa 3 ou mais vezes até remover todo o resíduo turvo.",
+      "svgFileName": "pr15-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // RIVER SAND WASHING & COOLING MATRIX",
+        "COLETA DE 1–2 XÍCARAS DE AREIA QUARTZÍTICA LIMPA",
+        "ENXÁGUE 3 VEZES PARA DECANTAR LAMA TURVA",
+        "TEXTURA ÚMIDA COESA SEM GOTEJAMENTO DE ÁGUA",
+        "[PASSO 2 CHAVE] CAMADA AMORTECEDORA PARA RESFRIAR FUMAÇA"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Estratificar areia-carvão-areia em sanduíche de 3 camadas e dobrar em bolsa de filtro",
+      "description": "1. **Estender pano úmido**: Abra um pano úmido de 30×30cm em formato de losango sobre uma laje de pedra limpa.\n2. **Montar sanduíche de 3 camadas**: Na **área central do tamanho da palma (10×10cm)**, deposite em sequência: **1cm de areia úmida ➔ 2cm de carvão triturado ➔ 1cm de areia úmida**.\n3. **Dobrar em envelope e costurar bordas**: Dobre as quatro pontas do tecido para o centro cobrindo o conteúdo e costure as bordas em 3–4 pontos com [agulha de osso e fio de tendão](/protocol-14.html) para formar um **pacote de filtro retangular firme**.",
+      "actionNote": "> Ordem estrita das camadas: Carvão encostado diretamente na boca causa deglutição de grãos. Carvão exposto para fora pode inflamar com fagulhas. Mantenha o carvão sempre protegido entre camadas de areia úmida.",
+      "svgFileName": "pr15-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-TIER SANDWICH POUCH ENCAPSULATION",
+        "PANO ÚMIDO EM LOSANGO (BASE DE 30×30CM)",
+        "CAMADAS AREIA(1CM)-CARVÃO(2CM)-AREIA(1CM)",
+        "DOBRADURA EM ENVELOPE DAS QUATRO PONTAS AO CENTRO",
+        "[PASSO 3 CHAVE] COSTURA DE BORDAS COM AGULHA DE OSSO"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Moldar sobre nariz e boca, amarrar correias duplas e testar pressão negativa",
+      "description": "1. **Moldar contornos faciais**: Pressione o centro da máscara firmemente contra nariz, lábios e queixo, moldando com os dedos para adaptar as bordas ao rosto.\n2. **Amarrar correias de fixação**: Amarre as duas [cordas de kudzu](/protocol-05.html); passe a superior **por cima das orelhas no topo da cabeça** e a inferior **por baixo das orelhas na nuca**, apertando bem.\n3. **Testar pressão negativa e evacuar**: Cubra o pano externo com as palmas e puxe o ar com força; confirme que não há vazamento nas bordas e que **o ar fresco filtrado entra suavemente pela camada de filtro**, mantenha-se abaixado e saia da área de fumaça em 15 minutos.",
+      "actionNote": "> Teste de vedação: Se cheiro quente ou acre de fumaça entrar pelo dorso do nariz ao inspirar, aperte as cordas na hora ou passe barro úmido ou resina de pinheiro nas bordas para fechar a vedação.",
+      "svgFileName": "pr15-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // FACIAL SEALING & DUAL-CORD HARNESS",
+        "MOLDAGEM COM OS DEDOS NO NARIZ, BOCHECHAS E QUEIXO",
+        "ARNÊS DUPLO: FIXAÇÃO NO TOPO DA CABEÇA E NA NUCA",
+        "TESTE DE PRESSÃO NEGATIVA COM AS PALMAS (SEM VAZAMENTOS)",
+        "[PASSO 4 CHAVE] POSTURA BAIXA E EVACUAÇÃO EM 15 MINUTOS"
+      ]
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro fatal: Acreditar que a máscara filtra monóxido de carbono (CO) permanentemente e ficar mais de 15 minutos no incêndio",
+    "description": "O carvão ativado e a areia úmida retêm fuligem, cinzas e gases orgânicos como cianeto, mas o monóxido de carbono (CO), inodoro e invisível, atravessa os poros do carvão aos poucos. Esta máscara é exclusivamente um respirador de escape rápido para 10–15 minutos de emergência. Nunca use para apagar incêndios nem permaneça dentro de abrigos queimando; desça o corpo imediatamente e evacue rumo a campo aberto na direção contrária ao vento.",
+    "consequence": "Resultado: Saturação dos poros do carvão, envenenamento por CO, desmaio tardio e asfixia letal"
+  },
+  "shortsScript": {
+    "hook": "Preso no incêndio? Inalar fumaça tóxica 3 vezes te mata em 2 minutos! Se não tem máscara, ache carvão e areia agora!",
+    "body": "Pegue carvão de carvalho duro, quebre no tamanho de sal grosso e lave o pó. Enxágue areia de rio 3 vezes até sair todo o barro. Num pano úmido, monte 1cm de areia, 2cm de carvão e 1cm de areia! Dobre como um envelope e costure as bordas. Pressione na boca e no nariz, amarre atrás da cabeça e puxe o ar fundo. Sentiu ar fresco e limpo? Está protegido! Fique abaixado e corra contra o vento em 15 minutos!",
+    "outro": "A fumaça corre mais que o fogo. Domine as técnicas primitivas de sobrevivência. Inscreva-se agora!"
+  },
+  "outcome": {
+    "title": "Máscara improvisada de carvão ativado em 3 camadas e conjunto de arnês hermético",
+    "badge": "CRITÉRIOS DE INSPEÇÃO // FIELD IMPROVISED GAS MASK",
+    "standard": "Bordas de tecido totalmente costuradas sem vazamento de material, vedação facial estanque sob inalação de pressão negativa e fluxo contínuo de ar refrigerado e filtrado através do sistema",
+    "description": "Bordas de tecido totalmente costuradas sem vazamento de material, vedação facial estanque sob inalação de pressão negativa e fluxo contínuo de ar refrigerado e filtrado através do sistema",
+    "svgFileName": "pr15-outcome.svg",
+    "svgLabels": [
+      "PR-15 OUTCOME // IMPROVISED ACTIVATED CHARCOAL SMOKE MASK",
+      "NÚCLEO DE CARVÃO DE CARVALHO DE 1–2MM (2CM DE ESPESSURA)",
+      "AREIA QUARTZÍTICA AMORTECEDORA DE RESFRIAMENTO (1CM DUPLO)",
+      "ENVOLTÓRIO DE ALGODÃO EM 3 CAMADAS E COSTURA COM TENDÃO",
+      "ARNÊS DE KUDZU DE 2 TIRAS (TOPO E NUCA)",
+      "INALAÇÃO ESTANQUE POR PRESSÃO NEGATIVA",
+      "FIELD VERIFIED // TOXIC SMOKE ESCAPE RATED (15-MIN SURVIVAL)"
+    ]
+  },
+  "createdAt": "2026-10-23T06:15:00.000Z",
+  "updatedAt": "2026-10-23T06:26:26.663Z",
+  "contentHash": "5c6edad36e2ff4e9"
+}
