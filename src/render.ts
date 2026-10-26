@@ -47,6 +47,12 @@ export function renderCanonicalProtocolPage(
     throw new Error('프로토콜 데이터셋이 비어 있습니다.');
   }
 
+  // 마스터 프로토콜의 FAQ 기본값(PROTOCOL_FAQS)을 master.faqs에 확정 연결
+  const defaultFaqs = master.faqs || PROTOCOL_FAQS[master.protocolId] || [];
+  if (!master.faqs && defaultFaqs.length > 0) {
+    master.faqs = defaultFaqs;
+  }
+
   // 마스터(또는 svgLabels가 비어있는 로케일)의 step.svgLabels를 원본 SVG <text>에서 자동 추출·보강
   for (const proto of Object.values(protocolsMap)) {
     if (!proto || !Array.isArray(proto.steps)) continue;
@@ -138,7 +144,7 @@ export function renderCanonicalProtocolPage(
 ${SeoService.generateJsonLd(master, SITE_META.siteUrl)}
   </script>
 ${faqJsonLd ? `  <!-- Schema.org JSON-LD FAQPage Structured Data -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="faq-json-ld">
 ${faqJsonLd}
   </script>` : ''}
 

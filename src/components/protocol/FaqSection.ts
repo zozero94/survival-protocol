@@ -21,14 +21,14 @@ export function renderFaqSection(faqs: ProtocolFaqItem[] = []): string {
     <details class="group border border-[#262626] bg-[#141414] hover:border-[#404040] transition-colors">
       <summary class="flex justify-between items-center min-h-[48px] p-3 sm:p-3.5 cursor-pointer select-none bg-[#111111] hover:bg-[#1a1a1a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#fde68a] focus-visible:outline-offset-1 transition-colors list-none">
         <div class="flex items-start gap-2.5 min-w-0 pr-2">
-          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0 mt-0.5">
+          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0 mt-0.5" aria-hidden="true">
             [Q${qNum}]
           </span>
-          <span data-proto-faq="question" class="font-headline text-xs sm:text-sm font-semibold text-white line-clamp-2 group-open:line-clamp-none group-open:whitespace-normal">
+          <span data-proto-faq="question" data-index="${idx}" class="font-headline text-xs sm:text-sm font-semibold text-white line-clamp-2 group-open:line-clamp-none group-open:whitespace-normal">
             ${safeQ}
           </span>
         </div>
-        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1 ml-2">
+        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1 ml-2" aria-hidden="true">
           <span class="group-open:hidden text-[#fde68a]" data-i18n="faqExpandText">[ + 펼치기 ]</span>
           <span class="hidden group-open:inline text-neutral-300" data-i18n="faqCollapseText">[ - 접기 ]</span>
         </div>
@@ -36,13 +36,13 @@ export function renderFaqSection(faqs: ProtocolFaqItem[] = []): string {
       <div class="p-3.5 sm:p-4 bg-[#0a0a0a] border-t border-[#262626] space-y-2.5 text-xs sm:text-sm leading-relaxed">
         <div class="p-2.5 bg-[#121212] border border-[#262626] font-mono text-[11px] flex items-start gap-2">
           <span class="text-[#f59e0b] font-bold shrink-0" data-i18n="faqCauseLabel">[CAUSE DIAGNOSTIC]:</span>
-          <span data-proto-faq="cause" class="text-neutral-300 leading-snug">${safeCause}</span>
+          <span data-proto-faq="causeDiagnostic" data-index="${idx}" class="text-neutral-300 leading-snug">${safeCause}</span>
         </div>
         <div class="bg-[#121212] border-l-2 border-[#fde68a] border-t border-r border-b border-[#262626] p-3 text-neutral-200">
           <div class="font-mono text-[10px] text-[#fde68a] font-bold uppercase tracking-wider mb-1.5 flex items-center justify-between">
             <span data-i18n="faqResolutionLabel">TACTICAL RESOLUTION // 야전 즉각 조치</span>
           </div>
-          <p data-proto-faq="resolution" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
+          <p data-proto-faq="resolution" data-index="${idx}" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
             ${safeResolution}
           </p>
         </div>
@@ -53,11 +53,11 @@ export function renderFaqSection(faqs: ProtocolFaqItem[] = []): string {
     .join('\n');
 
   return `
-<section aria-labelledby="faq-section-heading" class="border border-[#262626] bg-[#0d0d0d] p-4 sm:p-6 mb-8 space-y-4">
+<section id="faq-section" aria-labelledby="faq-section-heading" class="border border-[#262626] bg-[#0d0d0d] p-4 sm:p-6 mb-8 space-y-4">
   <!-- 상단 헤더 레일 -->
   <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#262626] pb-3">
     <div class="flex items-center gap-2 font-mono text-xs text-[#fde68a] font-bold">
-      <span class="inline-block w-2 h-2 bg-[#fde68a]"></span>
+      <span class="inline-block w-2 h-2 bg-[#fde68a]" aria-hidden="true"></span>
       <span data-i18n="faqSectionTitle">// 05 FIELD TROUBLESHOOTING &amp; FAQ</span>
     </div>
     <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400">

@@ -106,7 +106,7 @@
 }
   </script>
   <!-- Schema.org JSON-LD FAQPage Structured Data -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="faq-json-ld">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -1550,11 +1550,11 @@
     </div>
   </div>
 </section>
-    <section aria-labelledby="faq-section-heading" class="border border-[#262626] bg-[#0d0d0d] p-4 sm:p-6 mb-8 space-y-4">
+    <section id="faq-section" aria-labelledby="faq-section-heading" class="border border-[#262626] bg-[#0d0d0d] p-4 sm:p-6 mb-8 space-y-4">
   <!-- 상단 헤더 레일 -->
   <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#262626] pb-3">
     <div class="flex items-center gap-2 font-mono text-xs text-[#fde68a] font-bold">
-      <span class="inline-block w-2 h-2 bg-[#fde68a]"></span>
+      <span class="inline-block w-2 h-2 bg-[#fde68a]" aria-hidden="true"></span>
       <span data-i18n="faqSectionTitle">// 05 FIELD TROUBLESHOOTING &amp; FAQ</span>
     </div>
     <div class="flex items-center gap-1.5 font-mono text-[10px] text-neutral-400">
@@ -1577,14 +1577,14 @@
     <details class="group border border-[#262626] bg-[#141414] hover:border-[#404040] transition-colors">
       <summary class="flex justify-between items-center min-h-[48px] p-3 sm:p-3.5 cursor-pointer select-none bg-[#111111] hover:bg-[#1a1a1a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#fde68a] focus-visible:outline-offset-1 transition-colors list-none">
         <div class="flex items-start gap-2.5 min-w-0 pr-2">
-          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0 mt-0.5">
+          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0 mt-0.5" aria-hidden="true">
             [Q01]
           </span>
-          <span data-proto-faq="question" class="font-headline text-xs sm:text-sm font-semibold text-white line-clamp-2 group-open:line-clamp-none group-open:whitespace-normal">
+          <span data-proto-faq="question" data-index="0" class="font-headline text-xs sm:text-sm font-semibold text-white line-clamp-2 group-open:line-clamp-none group-open:whitespace-normal">
             모래에 물을 부었는데도 안쪽 토기 온도가 별로 시원해지지 않아요.
           </span>
         </div>
-        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1 ml-2">
+        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1 ml-2" aria-hidden="true">
           <span class="group-open:hidden text-[#fde68a]" data-i18n="faqExpandText">[ + 펼치기 ]</span>
           <span class="hidden group-open:inline text-neutral-300" data-i18n="faqCollapseText">[ - 접기 ]</span>
         </div>
@@ -1592,13 +1592,13 @@
       <div class="p-3.5 sm:p-4 bg-[#0a0a0a] border-t border-[#262626] space-y-2.5 text-xs sm:text-sm leading-relaxed">
         <div class="p-2.5 bg-[#121212] border border-[#262626] font-mono text-[11px] flex items-start gap-2">
           <span class="text-[#f59e0b] font-bold shrink-0" data-i18n="faqCauseLabel">[CAUSE DIAGNOSTIC]:</span>
-          <span data-proto-faq="cause" class="text-neutral-300 leading-snug">바깥 토기 표면에 유약이나 기름기가 발라져 있어 물이 스며 나오지 못하거나, 바람이 안 통하는 습한 곳에 두어 증발이 멈춘 상태입니다.</span>
+          <span data-proto-faq="causeDiagnostic" data-index="0" class="text-neutral-300 leading-snug">바깥 토기 표면에 유약이나 기름기가 발라져 있어 물이 스며 나오지 못하거나, 바람이 안 통하는 습한 곳에 두어 증발이 멈춘 상태입니다.</span>
         </div>
         <div class="bg-[#121212] border-l-2 border-[#fde68a] border-t border-r border-b border-[#262626] p-3 text-neutral-200">
           <div class="font-mono text-[10px] text-[#fde68a] font-bold uppercase tracking-wider mb-1.5 flex items-center justify-between">
             <span data-i18n="faqResolutionLabel">TACTICAL RESOLUTION // 야전 즉각 조치</span>
           </div>
-          <p data-proto-faq="resolution" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
+          <p data-proto-faq="resolution" data-index="0" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
             바깥 토기 겉면을 만져보아 축축하지 않고 말라 있다면 미세 기공이 막힌 토기입니다. 거친 돌로 겉면을 살짝 갈아내어 숨구멍을 열어주거나 무유약 토기로 교체하고, 바람이 솔솔 부는 나무 그늘 통풍구로 위치를 옮기십시오.
           </p>
         </div>
@@ -1607,14 +1607,14 @@
 <details class="group border border-[#262626] bg-[#141414] hover:border-[#404040] transition-colors">
       <summary class="flex justify-between items-center min-h-[48px] p-3 sm:p-3.5 cursor-pointer select-none bg-[#111111] hover:bg-[#1a1a1a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#fde68a] focus-visible:outline-offset-1 transition-colors list-none">
         <div class="flex items-start gap-2.5 min-w-0 pr-2">
-          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0 mt-0.5">
+          <span class="font-mono text-[11px] text-[#050505] bg-[#fde68a] px-1.5 py-0.5 font-bold shrink-0 mt-0.5" aria-hidden="true">
             [Q02]
           </span>
-          <span data-proto-faq="question" class="font-headline text-xs sm:text-sm font-semibold text-white line-clamp-2 group-open:line-clamp-none group-open:whitespace-normal">
+          <span data-proto-faq="question" data-index="1" class="font-headline text-xs sm:text-sm font-semibold text-white line-clamp-2 group-open:line-clamp-none group-open:whitespace-normal">
             장마철이나 비가 오는 날에도 제어 팟 냉장고가 잘 작동하나요?
           </span>
         </div>
-        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1 ml-2">
+        <div class="font-mono text-[10px] text-neutral-400 border border-[#333] px-2 py-0.5 bg-[#080808] shrink-0 flex items-center gap-1 ml-2" aria-hidden="true">
           <span class="group-open:hidden text-[#fde68a]" data-i18n="faqExpandText">[ + 펼치기 ]</span>
           <span class="hidden group-open:inline text-neutral-300" data-i18n="faqCollapseText">[ - 접기 ]</span>
         </div>
@@ -1622,13 +1622,13 @@
       <div class="p-3.5 sm:p-4 bg-[#0a0a0a] border-t border-[#262626] space-y-2.5 text-xs sm:text-sm leading-relaxed">
         <div class="p-2.5 bg-[#121212] border border-[#262626] font-mono text-[11px] flex items-start gap-2">
           <span class="text-[#f59e0b] font-bold shrink-0" data-i18n="faqCauseLabel">[CAUSE DIAGNOSTIC]:</span>
-          <span data-proto-faq="cause" class="text-neutral-300 leading-snug">대기 중 습도가 80~90% 이상으로 너무 높으면 토기 표면의 물이 공기 중으로 잘 증발하지 못해 기화열 냉각 효율이 떨어집니다.</span>
+          <span data-proto-faq="causeDiagnostic" data-index="1" class="text-neutral-300 leading-snug">대기 중 습도가 80~90% 이상으로 너무 높으면 토기 표면의 물이 공기 중으로 잘 증발하지 못해 기화열 냉각 효율이 떨어집니다.</span>
         </div>
         <div class="bg-[#121212] border-l-2 border-[#fde68a] border-t border-r border-b border-[#262626] p-3 text-neutral-200">
           <div class="font-mono text-[10px] text-[#fde68a] font-bold uppercase tracking-wider mb-1.5 flex items-center justify-between">
             <span data-i18n="faqResolutionLabel">TACTICAL RESOLUTION // 야전 즉각 조치</span>
           </div>
-          <p data-proto-faq="resolution" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
+          <p data-proto-faq="resolution" data-index="1" class="text-neutral-200 leading-relaxed font-sans text-xs sm:text-sm">
             습한 날에는 최대한 바람이 강하게 부는 능선 그늘이나 통풍 길목에 거치하여 강제 대류 증발을 유도하십시오. 모래층에 부어주는 물을 새벽녘 가장 차가운 깊은 계곡물이나 샘물로 채우면 수온 자체의 냉기로 저온 상태를 유지할 수 있습니다.
           </p>
         </div>
@@ -1863,10 +1863,22 @@
       return (lang && window.__PROTOCOLS__[lang]) ? lang : 'ko';
     }
 
+    function escapeClientHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function renderHighlightTermsClient(text) {
       if (!text) return '';
-      var withLinks = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_m, label, url) {
-        return '<a data-proto="crosslink" href="' + url + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
+      var safe = escapeClientHtml(text);
+      var withLinks = safe.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_m, label, url) {
+        var safeUrl = (/^(?:https?:|\/|#)/i.test(url)) ? url : '#';
+        return '<a data-proto="crosslink" href="' + safeUrl + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
       });
       return withLinks.replace(/\*\*(.*?)\*\*/g, function(_m, p1) {
         var isMetric = /\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
@@ -1980,7 +1992,7 @@
         // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n & data-i18n-placeholder)
         document.querySelectorAll('[data-i18n]').forEach(function(el) {
           var key = el.getAttribute('data-i18n');
-          if (ui[key] !== undefined) el.innerText = ui[key];
+          if (ui[key] !== undefined) el.textContent = ui[key];
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
           var key = el.getAttribute('data-i18n-placeholder');
@@ -2000,9 +2012,9 @@
                 var cy = ckst.getUTCFullYear();
                 var cm = String(ckst.getUTCMonth() + 1).padStart(2, '0');
                 var cday = String(ckst.getUTCDate()).padStart(2, '0');
-                el.innerText = cy + '.' + cm + '.' + cday;
+                el.textContent = cy + '.' + cm + '.' + cday;
               } else {
-                el.innerText = String(proto[field]).slice(0, 10).replace(/-/g, '.');
+                el.textContent = String(proto[field]).slice(0, 10).replace(/-/g, '.');
               }
             } else if (field === 'updatedAt') {
               var ud = new Date(proto[field]);
@@ -2014,13 +2026,13 @@
                 var uday = String(ukst.getUTCDate()).padStart(2, '0');
                 var uhh = String(ukst.getUTCHours()).padStart(2, '0');
                 var umm = String(ukst.getUTCMinutes()).padStart(2, '0');
-                el.innerText = uy + '.' + um + '.' + uday + ' ' + uhh + ':' + umm;
+                el.textContent = uy + '.' + um + '.' + uday + ' ' + uhh + ':' + umm;
                 if (uContainer) {
                   uContainer.classList.remove('hidden');
                   uContainer.classList.add('flex');
                 }
               } else {
-                el.innerText = '';
+                el.textContent = '';
                 if (uContainer) {
                   uContainer.classList.remove('flex');
                   uContainer.classList.add('hidden');
@@ -2029,9 +2041,9 @@
             } else if (field === 'summary') {
               el.innerHTML = renderHighlightTermsClient(proto[field]);
             } else if (field === 'category') {
-              el.innerText = ui['cat_' + proto[field]] || proto[field];
+              el.textContent = ui['cat_' + proto[field]] || proto[field];
             } else {
-              el.innerText = proto[field];
+              el.textContent = proto[field];
             }
           }
         });
@@ -2051,9 +2063,9 @@
             } else if (prop === 'actionNote' && el.id && el.id.startsWith('step-note-')) {
               el.innerHTML = renderHighlightTermsClient(stepItem.actionNote);
             } else if (prop === 'deepDiveTitle' && stepItem.deepDive) {
-              el.innerText = stepItem.deepDive.title || '';
+              el.textContent = stepItem.deepDive.title || '';
             } else if (prop === 'deepDiveBadge' && stepItem.deepDive) {
-              el.innerText = stepItem.deepDive.badge || 'FIELD SCIENCE';
+              el.textContent = stepItem.deepDive.badge || 'FIELD SCIENCE';
             } else if (prop === 'deepDiveText' && stepItem.deepDive) {
               el.innerHTML = renderHighlightTermsClient(stepItem.deepDive.text || '');
             } else if (prop === 'fieldSpecs' && stepItem.deepDive && Array.isArray(stepItem.deepDive.fieldSpecs)) {
@@ -2061,7 +2073,7 @@
             } else if (itemKey === 'materials' && prop === 'desc') {
               el.innerHTML = renderHighlightTermsClient(stepItem.desc || '');
             } else if (stepItem[prop] !== undefined) {
-              el.innerText = stepItem[prop];
+              el.textContent = stepItem[prop];
             }
           }
         });
@@ -2070,7 +2082,7 @@
         document.querySelectorAll('[data-proto-fatal]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-fatal');
           if (proto.fatalMistake && proto.fatalMistake[prop] !== undefined) {
-            el.innerText = proto.fatalMistake[prop];
+            el.textContent = proto.fatalMistake[prop];
           }
         });
 
@@ -2080,10 +2092,55 @@
           if (proto.outcome) {
             var val = proto.outcome[prop] || (prop === 'description' ? proto.outcome.standard : undefined);
             if (val !== undefined) {
-              el.innerText = val;
+              el.textContent = val;
             }
           }
         });
+
+        // 4-3. [선언적 엔진] 야전 트러블슈팅 FAQ 질문/원인/조치 자동 매핑 (data-proto-faq, data-index)
+        var faqContainer = document.getElementById('faq-section');
+        var faqScope = faqContainer || document;
+        faqScope.querySelectorAll('[data-proto-faq]').forEach(function(el) {
+          var prop = el.getAttribute('data-proto-faq');
+          var idx = parseInt(el.getAttribute('data-index'), 10);
+          if (Array.isArray(proto.faqs) && proto.faqs[idx]) {
+            var item = proto.faqs[idx];
+            var val = item[prop];
+            if (val !== undefined) {
+              if (prop === 'resolution') {
+                el.innerHTML = renderHighlightTermsClient(val);
+              } else {
+                el.textContent = val;
+              }
+            }
+          }
+        });
+
+        // 4-4. [선언적 엔진] Schema.org FAQPage 구조화 데이터 클라이언트 핫스왑 동기화
+        var faqLdEl = document.getElementById('faq-json-ld');
+        if (faqLdEl && Array.isArray(proto.faqs) && proto.faqs.length > 0) {
+          try {
+            var faqSchema = {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: proto.faqs.map(function(f) {
+                return {
+                  '@type': 'Question',
+                  name: f.question,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: f.causeDiagnostic
+                      ? '[' + (ui.faqCauseLabel || 'CAUSE') + '] ' + f.causeDiagnostic + '\n[' + (ui.faqResolutionLabel || 'TACTICAL RESOLUTION') + '] ' + f.resolution
+                      : f.resolution
+                  }
+                };
+              })
+            };
+            faqLdEl.textContent = JSON.stringify(faqSchema, null, 2);
+          } catch (_e) {
+            // no-op
+          }
+        }
 
         // 5. [선언적 엔진] 인라인 벡터 도면(SVG) 내부 <text> 다국어 핫스왑 (data-svg-step, data-svg-label)
         document.querySelectorAll('text[data-svg-step]').forEach(function(el) {

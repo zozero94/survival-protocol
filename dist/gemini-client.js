@@ -94,7 +94,9 @@ export async function callGeminiApi(
 
       const data = await response.json();
       const candidate = data.candidates?.[0];
-      const text = candidate?.content?.parts?.[0]?.text;
+      const parts = candidate?.content?.parts;
+      const textPart = Array.isArray(parts) ? parts.find((p     ) => typeof p?.text === 'string') : null;
+      const text = textPart?.text;
 
       if (!text) {
         throw new Error(`Gemini API(${model})로부터 유효한 텍스트 응답을 받지 못했습니다.`);

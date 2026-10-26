@@ -18,10 +18,22 @@ export function getLocaleRuntimeScript()         {
       return (lang && window.__PROTOCOLS__[lang]) ? lang : 'ko';
     }
 
+    function escapeClientHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function renderHighlightTermsClient(text) {
       if (!text) return '';
-      var withLinks = text.replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g, function(_m, label, url) {
-        return '<a data-proto="crosslink" href="' + url + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
+      var safe = escapeClientHtml(text);
+      var withLinks = safe.replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g, function(_m, label, url) {
+        var safeUrl = (/^(?:https?:|\\/|#)/i.test(url)) ? url : '#';
+        return '<a data-proto="crosslink" href="' + safeUrl + '" onclick="event.stopPropagation();" class="inline-flex items-center gap-0.5 text-[#fde68a] font-mono font-bold underline decoration-[#fde68a]/60 underline-offset-4 bg-[#221f14] hover:bg-[#fde68a] hover:text-black px-1.5 py-0.5 border border-[#4a3b1a] transition-colors">' + label + ' ↗</a>';
       });
       return withLinks.replace(/\\*\\*(.*?)\\*\\*/g, function(_m, p1) {
         var isMetric = /\\d+|cm|mm|kg|℃|도|분|초|방울|리터|L|ml|컵/i.test(p1);
@@ -135,7 +147,7 @@ export function getLocaleRuntimeScript()         {
         // 1. [선언적 엔진] UI 정적 문자열 자동 매핑 (data-i18n & data-i18n-placeholder)
         document.querySelectorAll('[data-i18n]').forEach(function(el) {
           var key = el.getAttribute('data-i18n');
-          if (ui[key] !== undefined) el.innerText = ui[key];
+          if (ui[key] !== undefined) el.textContent = ui[key];
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
           var key = el.getAttribute('data-i18n-placeholder');
@@ -155,9 +167,9 @@ export function getLocaleRuntimeScript()         {
                 var cy = ckst.getUTCFullYear();
                 var cm = String(ckst.getUTCMonth() + 1).padStart(2, '0');
                 var cday = String(ckst.getUTCDate()).padStart(2, '0');
-                el.innerText = cy + '.' + cm + '.' + cday;
+                el.textContent = cy + '.' + cm + '.' + cday;
               } else {
-                el.innerText = String(proto[field]).slice(0, 10).replace(/-/g, '.');
+                el.textContent = String(proto[field]).slice(0, 10).replace(/-/g, '.');
               }
             } else if (field === 'updatedAt') {
               var ud = new Date(proto[field]);
@@ -169,13 +181,13 @@ export function getLocaleRuntimeScript()         {
                 var uday = String(ukst.getUTCDate()).padStart(2, '0');
                 var uhh = String(ukst.getUTCHours()).padStart(2, '0');
                 var umm = String(ukst.getUTCMinutes()).padStart(2, '0');
-                el.innerText = uy + '.' + um + '.' + uday + ' ' + uhh + ':' + umm;
+                el.textContent = uy + '.' + um + '.' + uday + ' ' + uhh + ':' + umm;
                 if (uContainer) {
                   uContainer.classList.remove('hidden');
                   uContainer.classList.add('flex');
                 }
               } else {
-                el.innerText = '';
+                el.textContent = '';
                 if (uContainer) {
                   uContainer.classList.remove('flex');
                   uContainer.classList.add('hidden');
@@ -184,9 +196,9 @@ export function getLocaleRuntimeScript()         {
             } else if (field === 'summary') {
               el.innerHTML = renderHighlightTermsClient(proto[field]);
             } else if (field === 'category') {
-              el.innerText = ui['cat_' + proto[field]] || proto[field];
+              el.textContent = ui['cat_' + proto[field]] || proto[field];
             } else {
-              el.innerText = proto[field];
+              el.textContent = proto[field];
             }
           }
         });
@@ -206,9 +218,9 @@ export function getLocaleRuntimeScript()         {
             } else if (prop === 'actionNote' && el.id && el.id.startsWith('step-note-')) {
               el.innerHTML = renderHighlightTermsClient(stepItem.actionNote);
             } else if (prop === 'deepDiveTitle' && stepItem.deepDive) {
-              el.innerText = stepItem.deepDive.title || '';
+              el.textContent = stepItem.deepDive.title || '';
             } else if (prop === 'deepDiveBadge' && stepItem.deepDive) {
-              el.innerText = stepItem.deepDive.badge || 'FIELD SCIENCE';
+              el.textContent = stepItem.deepDive.badge || 'FIELD SCIENCE';
             } else if (prop === 'deepDiveText' && stepItem.deepDive) {
               el.innerHTML = renderHighlightTermsClient(stepItem.deepDive.text || '');
             } else if (prop === 'fieldSpecs' && stepItem.deepDive && Array.isArray(stepItem.deepDive.fieldSpecs)) {
@@ -216,7 +228,7 @@ export function getLocaleRuntimeScript()         {
             } else if (itemKey === 'materials' && prop === 'desc') {
               el.innerHTML = renderHighlightTermsClient(stepItem.desc || '');
             } else if (stepItem[prop] !== undefined) {
-              el.innerText = stepItem[prop];
+              el.textContent = stepItem[prop];
             }
           }
         });
@@ -225,7 +237,7 @@ export function getLocaleRuntimeScript()         {
         document.querySelectorAll('[data-proto-fatal]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-fatal');
           if (proto.fatalMistake && proto.fatalMistake[prop] !== undefined) {
-            el.innerText = proto.fatalMistake[prop];
+            el.textContent = proto.fatalMistake[prop];
           }
         });
 
@@ -235,10 +247,55 @@ export function getLocaleRuntimeScript()         {
           if (proto.outcome) {
             var val = proto.outcome[prop] || (prop === 'description' ? proto.outcome.standard : undefined);
             if (val !== undefined) {
-              el.innerText = val;
+              el.textContent = val;
             }
           }
         });
+
+        // 4-3. [선언적 엔진] 야전 트러블슈팅 FAQ 질문/원인/조치 자동 매핑 (data-proto-faq, data-index)
+        var faqContainer = document.getElementById('faq-section');
+        var faqScope = faqContainer || document;
+        faqScope.querySelectorAll('[data-proto-faq]').forEach(function(el) {
+          var prop = el.getAttribute('data-proto-faq');
+          var idx = parseInt(el.getAttribute('data-index'), 10);
+          if (Array.isArray(proto.faqs) && proto.faqs[idx]) {
+            var item = proto.faqs[idx];
+            var val = item[prop];
+            if (val !== undefined) {
+              if (prop === 'resolution') {
+                el.innerHTML = renderHighlightTermsClient(val);
+              } else {
+                el.textContent = val;
+              }
+            }
+          }
+        });
+
+        // 4-4. [선언적 엔진] Schema.org FAQPage 구조화 데이터 클라이언트 핫스왑 동기화
+        var faqLdEl = document.getElementById('faq-json-ld');
+        if (faqLdEl && Array.isArray(proto.faqs) && proto.faqs.length > 0) {
+          try {
+            var faqSchema = {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: proto.faqs.map(function(f) {
+                return {
+                  '@type': 'Question',
+                  name: f.question,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: f.causeDiagnostic
+                      ? '[' + (ui.faqCauseLabel || 'CAUSE') + '] ' + f.causeDiagnostic + '\\n[' + (ui.faqResolutionLabel || 'TACTICAL RESOLUTION') + '] ' + f.resolution
+                      : f.resolution
+                  }
+                };
+              })
+            };
+            faqLdEl.textContent = JSON.stringify(faqSchema, null, 2);
+          } catch (_e) {
+            // no-op
+          }
+        }
 
         // 5. [선언적 엔진] 인라인 벡터 도면(SVG) 내부 <text> 다국어 핫스왑 (data-svg-step, data-svg-label)
         document.querySelectorAll('text[data-svg-step]').forEach(function(el) {

@@ -137,6 +137,15 @@ export async function buildSite(options                                         
     fs.writeFileSync(path.join(publicSvgsDir, svgFile), normalizedSvg, 'utf-8');
   }
 
+  // 1-3. 다국어 FAQ 데이터셋 동적 수집 (content/protocol-faqs-locales.json)
+  const faqsLocalesPath = path.join(root, 'content/protocol-faqs-locales.json');
+  let faqsLocalesCache                                        = {};
+  if (fs.existsSync(faqsLocalesPath)) {
+    try {
+      faqsLocalesCache = JSON.parse(fs.readFileSync(faqsLocalesPath, 'utf-8'));
+    } catch (e) {}
+  }
+
   // 프로토콜별 7개국어 맵 사전 구성 (메인 피드 & 상세 페이지 공통 SSOT)
   const localesByProtocolId                                                             = {};
   for (const proto of allMasterProtocols) {
@@ -153,6 +162,10 @@ export async function buildSite(options                                         
           }
           if (proto.contentHash) {
             localizedClone.contentHash = proto.contentHash;
+          }
+          // 다국어 FAQ 데이터셋 동적 매핑 보강
+          if ((!localizedClone.faqs || localizedClone.faqs.length === 0) && faqsLocalesCache[lKey]?.[proto.protocolId]) {
+            localizedClone.faqs = faqsLocalesCache[lKey][proto.protocolId];
           }
           pMap[lKey                   ] = localizedClone;
         }

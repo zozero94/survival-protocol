@@ -1,0 +1,1094 @@
+{
+  "en": {
+    "PR-01": [
+      {
+        "question": "The water that passed through the filter looks clear. Can I drink it right away?",
+        "causeDiagnostic": "Filtration only filters out physical impurities such as muddy water and odor and does not remove viruses or microorganisms.",
+        "resolution": "Never drink it right away. Even in clear water, invisible parasite spores are alive, so you must sterilize it by boiling it for at least 3 minutes until bubbles rise to prevent stomach upset."
+      },
+      {
+        "question": "What should I do if charcoal powder mixes with water and turns black?",
+        "causeDiagnostic": "This is a natural phenomenon in which fine black dust from the surface of a layer of freshly crushed oak charcoal is initially washed away by water.",
+        "resolution": "Discard the first 1 to 2 cups of water as it is for filter cleaning. If you pour and filter the water again 2-3 times until it becomes clear, the charcoal powder will be washed away and clear water will come out."
+      }
+    ],
+    "PR-02": [
+      {
+        "question": "There is a lot of smoke, but the embers (ember) do not clump up and just scatter around.",
+        "causeDiagnostic": "It is in a state of incomplete carbonation due to soil moisture rising from the bottom of the support or lack of oxygen circulation in the V-shaped groove.",
+        "resolution": "Place two layers of dry leaves under the support boards to seal out moisture from the ground. If you slightly widen the angle of the V-shaped groove to 45 degrees with a knife to secure an oxygen passage, and then turn it a little faster, black embers clump together."
+      },
+      {
+        "question": "The bow string keeps spinning and the wooden axis (spindle) does not turn.",
+        "causeDiagnostic": "This is a phenomenon where the tension of the bow string becomes loose and there is insufficient friction with the spindle wood surface, causing it to slip.",
+        "resolution": "Pull the string slightly with the finger holding the bow to make it taut. If you wrap the string around the axle two turns instead of one to increase the friction area, it will never spin."
+      }
+    ],
+    "PR-03": [
+      {
+        "question": "I covered the roof with fallen leaves, but if the wind blows, won’t they all fly away?",
+        "causeDiagnostic": "Because the surface of the fallen leaves is light, there is a risk of being blown away by gusts of wind in valleys or ridges.",
+        "resolution": "Press heavy, thick twigs into a sparse mesh-like pattern on top of the layer of fallen leaves. The weight of the twigs compresses the fallen leaves so tightly that the insulation layer does not blow away even when strong winds blow."
+      },
+      {
+        "question": "How can I sleep when the floor is cold and I feel chilled?",
+        "causeDiagnostic": "The cold rising from the ground causes body temperature to drop rapidly and is the main cause of hypothermia.",
+        "resolution": "Spread dry pine needles and fallen leaves on the ground to a thickness of two fingers (at least 20 cm). Your body should not be in direct contact with the ground to preserve body heat throughout the night."
+      }
+    ],
+    "PR-04": [
+      {
+        "question": "When cutting down a tree, the stone ax blade keeps getting loose and falling out.",
+        "causeDiagnostic": "The depth of the groove in the handle is shallow, or the kudzu string is tied loosely, causing the binding to come loose due to shock and vibration.",
+        "resolution": "Dig the groove of the wooden handle deeper than 1/3 of the length of the stone blade. After tying the kudzu string tightly, apply pine resin adhesive or mud and let it dry, it will be firmly fixed without shaking."
+      },
+      {
+        "question": "What stone should I pick up to use as a strong ax blade without breaking?",
+        "causeDiagnostic": "Sedimentary rock (shale) or cracked river stone cannot withstand the impact of a blow and breaks easily.",
+        "resolution": "Choose quartzite or black obsidian, which are sharp and hard as glass when broken. It must be a dense rock with no thinly split grains so that it does not break when cut into firewood."
+      }
+    ],
+    "PR-05": [
+      {
+        "question": "I woven arrowroot stems, but as they dried, they became brittle and broke.",
+        "causeDiagnostic": "The tensile strength is weakened because the stiff outer shell is used as is or the fibers are not twisted evenly.",
+        "resolution": "Gently pound the raw kudzu with a wooden bat to remove the stiff outer skin and separate only the thin, soft inner bark fibers. If you twist the two strands clockwise and counterclockwise, they will become tougher."
+      },
+      {
+        "question": "The end of the rope will come loose over time.",
+        "causeDiagnostic": "Because the ends of the fiber twist are not finished, unraveling occurs.",
+        "resolution": "If you tie the end of the rope with a knot, or wrap the end tightly with a thin line of arrowroot fiber and make a whipping tie, it will never come loose."
+      }
+    ],
+    "PR-06": [
+      {
+        "question": "When I light a fire in the oven, the mud wall splits apart.",
+        "causeDiagnostic": "This is because sand or fiber was not mixed into the mud, or a high fire was suddenly started before the dough dried.",
+        "resolution": "Mix and knead at a ratio of 2 parts red clay to 1 part sand to 1 part dry grass. After building the fire pit, you must dry it slowly with small twigs for the first 2 to 3 hours to prevent cracks from forming."
+      },
+      {
+        "question": "When it rains, doesn't the mud fire pit melt with the rainwater?",
+        "causeDiagnostic": "Mud that has been baked with only mild heat may have its surface eroded by heavy rain.",
+        "resolution": "If you bake it with high heat for a long time, it hardens like earthenware and does not easily melt in the rain. When it rains, you can preserve it for a long time by covering it with broad leaves or bark of a birch tree as a roof."
+      }
+    ],
+    "PR-08": [
+      {
+        "question": "The trap pole breaks, unable to withstand the weight of the rock.",
+        "causeDiagnostic": "The strength of the stick joint is weak because the groove is dug too deep or rotten, dry branches are used.",
+        "resolution": "Use a hard oak tree branch about the thickness of your thumb. The depth of the groove must be only slightly dug, less than 1/3 of the thickness of the branch, to support the weight of the rock."
+      },
+      {
+        "question": "Only the bait disappears and the cover rock does not fall.",
+        "causeDiagnostic": "The bar catch is so stiff that the trigger does not release when contacted by a small animal.",
+        "resolution": "Smooth out the snag where the horizontal bait rod and the diagonal support wood meet with a stone knife. The sensitivity must be adjusted so that even if you touch it, it bounces away in 0.1 seconds."
+      }
+    ],
+    "PR-09": [
+      {
+        "question": "I dug a hole and burned the wood, but it didn't turn into charcoal, only ash remained.",
+        "causeDiagnostic": "This is because when covered with soil, fine air gaps remain and oxygen continues to be supplied, leading to complete combustion.",
+        "resolution": "When a tree catches fire and the smoke subsides, cover it tightly with thick soil and step on it tightly to block out 100% oxygen. Without air, wood does not burn and turns into solid charcoal."
+      },
+      {
+        "question": "When should I dig a hole after covering it with soil?",
+        "causeDiagnostic": "If you remove the dirt while the internal temperature is still hot, the charcoal will re-ignite when exposed to outside air.",
+        "resolution": "Wait at least 4 to 6 hours for the soil outside the hole to cool completely. Hard black charcoal can be safely harvested only after it has completely cooled and then dug out."
+      }
+    ],
+    "PR-10": [
+      {
+        "question": "I am afraid that melting the rosin will cause the pot or stone to catch fire.",
+        "causeDiagnostic": "Rosin contains highly flammable terpene oils, which ignite immediately when exposed to an open flame.",
+        "resolution": "Avoid direct contact with open flames. It is safe to melt slowly with indirect radiant heat from a distance of at least 10 cm from the residual heat of a red charcoal fire or on hot stones next to a fire pit."
+      },
+      {
+        "question": "The hardened rosin adhesive breaks like glass.",
+        "causeDiagnostic": "When pure rosin is hardened, it is highly brittle (breakable) and therefore vulnerable to impact.",
+        "resolution": "Mix finely ground oak charcoal powder with melted rosin in a 1:1 volume ratio. Charcoal powder carbon particles act as a skeleton, creating a waterproof adhesive that does not break even when hit by an axe."
+      }
+    ],
+    "PR-11": [
+      {
+        "question": "Doesn't the fish that goes into the trap swim out again?",
+        "causeDiagnostic": "The entrance is narrowed into a pointed conical spine, physically blocking reverse escape.",
+        "resolution": "The ends of the inner funnel are constricted at intervals of 5 to 6 cm, so they can be pushed in when going in, but when coming out, they are blocked by the ends of elastic branches and cannot escape."
+      },
+      {
+        "question": "How do I prevent my fish trap from floating away in the strong current of the river?",
+        "causeDiagnostic": "If bottom traction is weakened due to water resistance, there is a risk of it being lost downstream.",
+        "resolution": "Add weight by placing 2-3 fist-sized river rocks in the bottom of the trap. In shoals with rapid water flow, stakes should be driven into the bottom and secured by tying them firmly with arrowroot string."
+      }
+    ],
+    "PR-12": [
+      {
+        "question": "Why do double-burning stoves produce very little smoke?",
+        "causeDiagnostic": "Hot preheated air heated between the inner and outer walls is blown out through the top hole and re-burns the unburned gas.",
+        "resolution": "In a normal fire, the wood gas does not burn out and is emitted as smoke, but the high-temperature oxygen emitted from the upper nozzle hole meets the gas to create a vortex jet flame, burning away 100% of the smoke."
+      },
+      {
+        "question": "How do you avoid hurting your hands with sharp pieces of metal when drilling a hole in a can?",
+        "causeDiagnostic": "A sharp metal burr protrudes from the inside rim of the perforated can.",
+        "resolution": "It is safe to drill a hole, place a smooth round pebble in the can, turn it, and press down on any metal shavings that stick out to smooth them out."
+      }
+    ],
+    "PR-13": [
+      {
+        "question": "Is lye dangerous enough to burn your skin if it comes in contact with it?",
+        "causeDiagnostic": "Concentrated oak lye is strongly alkaline and has the property of dissolving proteins.",
+        "resolution": "If you have a wound on your hand, avoid touching it with your bare hands. If it gets on your skin, it is safe to immediately wash it off with clear running water until the soap is completely gone."
+      },
+      {
+        "question": "I mixed lye and oil, but it didn't harden and turned out like water.",
+        "causeDiagnostic": "The lye concentration is too dilute or the temperature is low, so the saponification reaction does not occur sufficiently.",
+        "resolution": "Use lye water thick enough for the eggs to float slightly. In lukewarm residual heat, stir thoroughly with a twig in one direction for at least 30 minutes until it becomes a thick yogurt consistency."
+      }
+    ],
+    "PR-14": [
+      {
+        "question": "The tendon thread (tendon thread) keeps hardening during sewing and falls out of the eye of the needle.",
+        "causeDiagnostic": "This is a natural phenomenon in which collagen fibers become stiff when exposed to the air during sewing and saliva or moisture evaporates.",
+        "resolution": "Lightly moisten your fingertips with saliva or water and gently rub the ends of the tendon threads for 2 to 3 seconds. The collagen fibers immediately become soft, gently re-enter the eye of the needle, and the cracks in the stitches disappear."
+      },
+      {
+        "question": "Cold wind and water droplets seep through the needle holes in the leather.",
+        "causeDiagnostic": "This is a microscopic gap created when the diameter of the pilot hole drilled with a flint awl is slightly larger than the thickness of the tendon thread that has not yet dried and shrunk.",
+        "resolution": "Don't panic. As the wet tendon thread dries naturally at room temperature, it shrinks by 3-5% in volume and tightens the hole by itself. A day after sewing, apply a thin layer of heated pine resin plaster (PR-10) over the seam to form a complete cold and waterproof film."
+      }
+    ],
+    "PR-15": [
+      {
+        "question": "When I breathe in, I smell charcoal powder and I cough. Are you okay?",
+        "causeDiagnostic": "Fine dust created by grinding charcoal too finely enters the respiratory tract through the gaps in the weave of the fabric due to lack of moisture.",
+        "resolution": "Immediately wet the outside of the mask with a few more drops of water, or lightly rinse the charcoal powder in water to filter out fine debris before making the filter pouch. In your current situation, press lightly on the surface with your palm to squeeze out the charcoal particles and move them around slowly, breathing only through your nose."
+      },
+      {
+        "question": "Can you put out a fire or survive for a long time wearing a bomb mask?",
+        "causeDiagnostic": "This mask is a simple physical and chemical absorption 'short-term escape device' without an oxygen supply device.",
+        "resolution": "It should never be used for fire suppression or left on site. In an oxygen-deficient, confined fire space, no matter how good the filter is, it cannot produce oxygen and people suffocate. After wearing it, use it only for the purpose of escape to an open area on the ground within the golden time of 10 to 15 minutes."
+      }
+    ],
+    "PR-16": [
+      {
+        "question": "Even after pouring water into the sand, the temperature inside the pot does not cool down much.",
+        "causeDiagnostic": "The outer surface of the pottery is coated with glaze or oil, preventing water from seeping out, or it is placed in a humid place with no wind, so evaporation has stopped.",
+        "resolution": "If you touch the outer surface of the pottery and it is not wet but dry, it means the pottery has clogged micropores. Lightly grind the surface with a rough stone to open the pores, or replace it with unglazed earthenware and move it to a vent in the shade of a tree where the breeze blows."
+      },
+      {
+        "question": "Does the control pot refrigerator work well during monsoon season or on rainy days?",
+        "causeDiagnostic": "If the humidity in the air is too high (more than 80-90%), the water on the surface of the earthenware cannot easily evaporate into the air, reducing the cooling efficiency of evaporation heat.",
+        "resolution": "On humid days, try to induce forced convection evaporation by placing it in the shade of a ridge where the wind blows as much as possible or in a ventilated area. If you fill the water poured into the sand layer with deep valley water or spring water, which is the coldest at dawn, you can maintain a low temperature due to the coldness of the water itself."
+      }
+    ]
+  },
+  "ja": {
+    "PR-01": [
+      {
+        "question": "フィルターを通過した水が透明に見えますが、すぐに飲んでもいいですか？",
+        "causeDiagnostic": "ろ過は汚れや臭いなど物理的不純物だけろ過するだけでウイルスや微生物は除去できません。",
+        "resolution": "絶対に飲んではいけません。透明な水でも目に見えない寄生虫胞子が生きているので、必ず気泡が湧き出るまで3分以上パルパル煮て消毒しなければ、排除を防ぐことができます。"
+      },
+      {
+        "question": "炭粉が水に混じって出て黒く変わったらどうなりますか？",
+        "causeDiagnostic": "新しく不純なオークの木炭層表面の微細な黒い粉塵が初期の水路に洗い流される自然な現象です。",
+        "resolution": "最初に通過する水1～2カップ分量はフィルター洗浄用ですので捨ててください。水が澄んでくるまで2〜3回再び注いでろ過すると、炭粉が洗い流され、透明な水が出ます。"
+      }
+    ],
+    "PR-02": [
+      {
+        "question": "煙はたくさん出るのに火種（エンバー）の塊が束にならずに散らばります。",
+        "causeDiagnostic": "台座の底から土の湿気が上がったり、V字溝に酸素循環が不足して不完全炭化した状態です。",
+        "resolution": "台座の板の下に乾いた葉を二重敷き、地面の湿気を遮断します。 V字溝角度をナイフで45度に軽く広げて酸素通路を確保した後、もう少し早く回すと黒い火種が集まります。"
+      },
+      {
+        "question": "弓紐がどんどん無駄になって木軸（スピンドル）が回らないんです。",
+        "causeDiagnostic": "弓紐の張力が緩み、スピンドル木の表面との摩擦力が不足して滑る現象です。",
+        "resolution": "弓を握った指でひもを軽く引っ張り、しっかりと締めます。紐を軸にしたホイールではなく、2つのホイールを巻いて摩擦面積を広げると、絶対に無駄になりません。"
+      }
+    ],
+    "PR-03": [
+      {
+        "question": "屋根に落ち葉を覆ったのですが、風が吹くと全部飛びませんか？",
+        "causeDiagnostic": "落葉層の表面が軽く、谷や尾根の突風に飛び散る危険があります。",
+        "resolution": "落葉層の上に重い太い小枝を網のように盛り上げて押します。残りの重さで落葉がしっかりと圧着され、強風が吹いても断熱層が飛びません。"
+      },
+      {
+        "question": "床が冷えて寒気が上がるのにどうやって寝ますか？",
+        "causeDiagnostic": "地面から上がる冷気は体温を急激に落とし、低体温症の主原因となります。",
+        "resolution": "床に乾いた松葉と落葉を2本の指（少なくとも20cm）の厚さでふわふわにしてください。体が地面に直接届かないようにし、一晩体温を保存することができます。"
+      }
+    ],
+    "PR-04": [
+      {
+        "question": "木を撮ってみると石斧の日がどんどんゆるくなってしまいます。",
+        "causeDiagnostic": "袋溝の深さが浅くなったり、ひもをゆったりと結んで衝撃振動に結束が解かれた状態です。",
+        "resolution": "木の袋の溝の深さを回す長さの3分の1以上深く掘ります。ひもをしっかりと束ねた後、松の送り接着剤や泥をかき混ぜて乾かすと揺れずに丈夫に固定されます。"
+      },
+      {
+        "question": "どんな石を拾わなければ壊れずに硬い斧の日として使えますか？",
+        "causeDiagnostic": "堆積岩（シェール）や割れた川石は、打撃時に衝撃を耐えられず、簡単に割れます。",
+        "resolution": "割れたときは、ガラスのように鋭く硬い珪岩（茶石）や黒い黒曜石を選んでください。薄く割れる結がない密な岩でなければ薪を撮っても割れません。"
+      }
+    ],
+    "PR-05": [
+      {
+        "question": "茎の茎を編みましたが、乾きながらバスになって切れます。",
+        "causeDiagnostic": "硬い表皮をそのまま使用したり、繊維を均等にねじってねじれず、引張力が弱くなった状態です。",
+        "resolution": "生の茎を木製のバットでしっかり叩き、硬い表皮をはがし、薄く柔らかい皮の繊維だけを分離します。 2本のストランドを時計回りにねじり、反時計回りに編むと、吊り下げられます。"
+      },
+      {
+        "question": "ロープの先端が時間が経つとスルリュック解放されます。",
+        "causeDiagnostic": "繊維キンクの先端仕上げになっていないため、ゆるみ現象が起こります。",
+        "resolution": "ロープの先端を裾で一度束ねたり、細い裾繊維の一列で先端をしっかりと巻き取るホイップ結束をしてくれれば絶対解けません。"
+      }
+    ],
+    "PR-06": [
+      {
+        "question": "花徳に火をつけると泥の壁がちょっと分かれます。",
+        "causeDiagnostic": "泥に砂や繊維を混ぜていないか、生地が乾く前に突然強火を吸ったからです。",
+        "resolution": "赤い粘土2：砂1：乾いた草1の割合で混ぜて練ります。花徳を作った後、最初の2〜3時間は小さな小枝の火種でゆっくり乾かさなければ亀裂が生じません。"
+      },
+      {
+        "question": "雨が降ったら、泥の花火が雨水に溶けませんか？",
+        "causeDiagnostic": "未熱でのみ焼かれた泥は、長いコントラストに表面が侵食される可能性があります。",
+        "resolution": "セン火力で長時間焼くと土器のように固く雨に溶けにくくなります。雨が降るときは、広葉樹の葉や樹皮を屋根のように載せてあげると長期間保存されます。"
+      }
+    ],
+    "PR-08": [
+      {
+        "question": "岩の重さを持ち上げることができず、罠棒が壊れます。",
+        "causeDiagnostic": "棒結合溝を深く掘りすぎたり、腐った乾燥した枝を使用して強度が弱い状態です。",
+        "resolution": "親指の太さの堅いオークの生地を削って使用してください。溝の深さは小枝の厚さの3分の1以下で軽く掘り下げると岩の重量を支えます。"
+      },
+      {
+        "question": "餌だけが消え、カバーの岩が落ちません。",
+        "causeDiagnostic": "スティックジャックがあまりにも硬く、小さな動物に触れるとトリガーが解放されていません。",
+        "resolution": "水平ベイトバーと斜めの支持ネックが当たるジャックジョーを石の刃で滑らかに整えます。触れるだけで0.1秒で弾くように感度を調整する必要があります。"
+      }
+    ],
+    "PR-09": [
+      {
+        "question": "ピットを掘って木を焼いたが、炭ができず灰だけが残りました。",
+        "causeDiagnostic": "土を覆うと微細な空気の隙間が残り、酸素が供給され続け、完全に燃焼したためです。",
+        "resolution": "木に火がついて煙が頻繁に入ったら、厚い土をしっかりと覆い、しっかり踏んで酸素を100％遮断してください。空気がなければ木が燃えずに硬い炭になります。"
+      },
+      {
+        "question": "土を覆った後、いつの間にピットを掘る必要がありますか？",
+        "causeDiagnostic": "内部温度がまだ熱いときに土を取り除くと、外気と出会い、炭が再び吹き付けてしまいます。",
+        "resolution": "ピットの表面が汚れが完全に冷えるまで、少なくとも4〜6時間待ってください。完全に冷えた後、掘るだけで硬い黒炭を安全に収穫することができます。"
+      }
+    ],
+    "PR-10": [
+      {
+        "question": "松鎮を溶かし、鍋や石に火がつくのではないかと恐れています。",
+        "causeDiagnostic": "松津は高引火性テルペン油を含んでおり、直火炎に触れるとすぐに発火します。",
+        "resolution": "直接燃える炎に触れないようにしてください。赤い炭火の残熱や火徳の隣の熱い石の上から10cm以上の距離を置き、間接輻射熱でゆっくりと溶かさなければ安全です。"
+      },
+      {
+        "question": "固い送り接着剤はガラスのように突き破ります。",
+        "causeDiagnostic": "純粋な松津だけ固めると脆性（割れる性質）が強く衝撃に弱いです。",
+        "resolution": "溶かした松の木に細かく挽いたオークの木炭を1：1の体積比で混ぜる。炭粉炭素粒子が骨格の役割をし、斧の衝撃にも割れない防水接着剤となります。"
+      }
+    ],
+    "PR-11": [
+      {
+        "question": "痛みの中に入った魚はまた泳いでいませんか？",
+        "causeDiagnostic": "入り口が先のとがった円錐形の棘状に狭くなっており、逆方向の脱出が物理的に遮断されます。",
+        "resolution": "内側の漏斗の肉の先端が5〜6cm間隔で来るので、入るときは押し込んでいきますが、出てくるときは弾力のある木の枝に塞がれて抜け出すことはできません。"
+      },
+      {
+        "question": "痛みが激しい川の流速に浮かび上がらないようにするには？",
+        "causeDiagnostic": "水流抵抗によって床の接地力が弱くなると、下流に失われる危険があります。",
+        "resolution": "通発床の中に拳の大きさ 2～3個の鋼石を入れて重量を加えてください。水の流れが急いだ瀬には、床に杭を打ち、ひもでしっかりと束ねて固定しなければなりません。"
+      }
+    ],
+    "PR-12": [
+      {
+        "question": "二重燃焼ストーブはなぜ煙がほとんどないのですか？",
+        "causeDiagnostic": "内外壁の間で加熱された熱い予熱空気が上部穴に噴出し、未燃ガスを再燃焼します。",
+        "resolution": "一般火は木材ガスが燃えなくて煙に排出されますが、上段のノズル穴から噴出する高温酸素がガスと出会い、渦流ジェット火炎を作り煙を100％燃やして取り除きます。"
+      },
+      {
+        "question": "缶の穴を開けるときに鋭い釘彫刻に手を傷つけないようにするには？",
+        "causeDiagnostic": "穴を開けた缶の内側の縁に鋭い金属製のバーが突き出ています。",
+        "resolution": "穴を開けた後、滑らかな丸い小石を缶の中に入れて回して飛び出した鉄粉をしっかり押して平らに整えてくれれば安全です。"
+      }
+    ],
+    "PR-13": [
+      {
+        "question": "灰が皮膚に触れるとやけどをするのに十分危険です。",
+        "causeDiagnostic": "濃縮されたオークの灰は強いアルカリ性を持つので、タンパク質を溶かす性質があります。",
+        "resolution": "手に傷があるときは、素手の接触を避けてください。皮膚に付着したときは、すぐに流れる澄んだ谷で石鹸が完全に行くまで洗い流すと安全です。"
+      },
+      {
+        "question": "灰と油を混ぜたのに固まらず水のように見回します。",
+        "causeDiagnostic": "灰濃度が低すぎるか温度が低く、けん化反応が十分に起こらない状態です。",
+        "resolution": "卵がそっと茂るほどの濃い灰を入れてください。ぬるま湯の残熱状態で、木の枝に一方向に30分以上唐辛子ヨーグルト濃度になるまで十分にかき混ぜてあげなければなりません。"
+      }
+    ],
+    "PR-14": [
+      {
+        "question": "腱糸（乾癬）が縫う途中、しっかり固まって針耳から抜けます。",
+        "causeDiagnostic": "縫製中に空気中にさらされ、唾液や水分が蒸発しながらコラーゲン繊維が硬く固まる自然な現象です。",
+        "resolution": "指先に唾液や水を少し埋め、腱糸の先端を2〜3秒間殺す。コラーゲン繊維がすぐに枯渇し、針の耳に再び滑らかに入り、縫い目の割れが消えます。"
+      },
+      {
+        "question": "革を縫った針穴の間に冷たい風と水滴が浸透します。",
+        "causeDiagnostic": "フリントの牙で開いた予備穴の直径が、まだ乾燥収縮していない腱の糸の厚さよりわずかに大きくなっている微細な隙間である。",
+        "resolution": "パニックにならないでください。濡れた腱糸は常温で自然乾燥し、3〜5％体積がしっかり収縮し、穴を自ら締め締めます。縫製一日後にダルグン松の送鎮ゴヤク（PR-10）を縫い目の上に薄く広げると完全な防寒・防水皮膜が形成されます。"
+      }
+    ],
+    "PR-15": [
+      {
+        "question": "息を吸うと、炭の香りがし、咳が出ます。大丈夫ですか？",
+        "causeDiagnostic": "炭を細かく細かく粉砕してできた微細粉塵が水分不足で布の織りの隙間をあけて呼吸器に流入した状態です。",
+        "resolution": "すぐにマスクの表面に水を何滴か揚げて湿らせるか、フィルターポーチを作る前に木炭粉を水で軽くすすいで微粉をろ過しなければなりません。今の状況では、手のひらで表側を軽く押して炭粒子を圧搾し、ゆっくりとコロマン息をして移動します。"
+      },
+      {
+        "question": "弾砲マスクを使って火災を鎮圧したり、長時間耐えることができますか？",
+        "causeDiagnostic": "このマスクは酸素供給装置のない単純物理・化学吸着式「短期脱出用機構」です。",
+        "resolution": "絶対火災鎮圧用として使用したり、現場に留まってはいけません。酸素が欠乏した密閉火災空間では、いくら良いフィルターでも酸素を作り出せないので窒息します。着用後10〜15分ゴールデンタイム内に地上開放区域に出る脱出目的にのみ使用してください。"
+      }
+    ],
+    "PR-16": [
+      {
+        "question": "砂に水を注いでも内側の土器温度があまり涼しくなりません。",
+        "causeDiagnostic": "外の土器の表面に釉薬や油が塗られており、水が滲み出ることができず、風が通じない湿った所に置いて蒸発が止まった状態です。",
+        "resolution": "外土器の表側に触ってみて湿らせずに乾いていると、微細気孔が詰まった土器です。粗い石で表面を軽く挽き、気孔を開けるか、無釉薬土器と交換し、風が溶けた木陰の通気口に位置を移します。"
+      },
+      {
+        "question": "雨季や雨の日でもコントロールポット冷蔵庫はうまくいきますか？",
+        "causeDiagnostic": "大気中の湿度が80〜90％以上に高すぎると、土器表面の水が空気中に蒸発しにくくなり、気化熱冷却効率が低下します。",
+        "resolution": "湿った日には、風が強く吹く尾根や風通しの良い道を通って強制対流蒸発を誘導します。砂の層に注ぐ水を夜明けの最も冷たい深い渓谷や湧水で満たせば、水温自体の冷気で低温状態を維持することができます。"
+      }
+    ]
+  },
+  "es": {
+    "PR-01": [
+      {
+        "question": "El agua que pasó por el filtro parece clara. ¿Puedo beberlo de inmediato?",
+        "causeDiagnostic": "La filtración solo filtra impurezas físicas como agua turbia y olores y no elimina virus ni microorganismos.",
+        "resolution": "Nunca lo bebas de inmediato. Incluso en agua clara, las esporas de parásitos invisibles están vivas, por lo que debes esterilizarla hirviéndola durante al menos 3 minutos hasta que suban burbujas para evitar malestar estomacal."
+      },
+      {
+        "question": "¿Qué debo hacer si el polvo de carbón se mezcla con agua y se vuelve negro?",
+        "causeDiagnostic": "Se trata de un fenómeno natural en el que el agua elimina inicialmente el fino polvo negro de la superficie de una capa de carbón de roble recién triturado.",
+        "resolution": "Deseche las primeras 1 o 2 tazas de agua tal como están para limpiar el filtro. Si vierte y filtra el agua nuevamente 2 o 3 veces hasta que se aclare, el polvo de carbón se eliminará y saldrá agua clara."
+      }
+    ],
+    "PR-02": [
+      {
+        "question": "Hay mucho humo, pero las brasas (brasas) no se acumulan y simplemente se esparcen.",
+        "causeDiagnostic": "Se encuentra en un estado de carbonatación incompleta debido a la humedad del suelo que sube desde el fondo del soporte o a la falta de circulación de oxígeno en el surco en forma de V.",
+        "resolution": "Coloque dos capas de hojas secas debajo de las tablas de soporte para sellar la humedad del suelo. Si amplía ligeramente el ángulo de la ranura en forma de V a 45 grados con un cuchillo para asegurar el paso de oxígeno y luego lo gira un poco más rápido, las brasas negras se acumulan."
+      },
+      {
+        "question": "La cuerda del arco sigue girando y el eje de madera (huso) no gira.",
+        "causeDiagnostic": "Este es un fenómeno en el que la tensión de la cuerda del arco se afloja y hay una fricción insuficiente con la superficie de la madera del huso, lo que hace que se deslice.",
+        "resolution": "Tira ligeramente de la cuerda con el dedo que sujeta el arco para tensarlo. Si enrollas la cuerda alrededor del eje dos vueltas en lugar de una para aumentar el área de fricción, nunca girará."
+      }
+    ],
+    "PR-03": [
+      {
+        "question": "Cubrí el techo con hojas caídas, pero si sopla el viento, ¿no se irán todas volando?",
+        "causeDiagnostic": "Debido a que la superficie de las hojas caídas es liviana, existe el riesgo de que las ráfagas de viento las arrastren en valles o crestas.",
+        "resolution": "Presione ramitas pesadas y gruesas formando un patrón de malla escasa sobre la capa de hojas caídas. El peso de las ramitas comprime las hojas caídas con tanta fuerza que la capa aislante no se desprende ni siquiera cuando soplan fuertes vientos."
+      },
+      {
+        "question": "¿Cómo puedo dormir cuando el suelo está frío y siento escalofríos?",
+        "causeDiagnostic": "El frío que sube del suelo hace que la temperatura corporal baje rápidamente y es la principal causa de hipotermia.",
+        "resolution": "Extienda agujas de pino secas y hojas caídas en el suelo hasta un espesor de dos dedos (al menos 20 cm). Mantener tu cuerpo fuera del contacto directo con el suelo te ayuda a conservar el calor corporal durante toda la noche."
+      }
+    ],
+    "PR-04": [
+      {
+        "question": "Al talar un árbol, la hoja del hacha de piedra sigue aflojándose y cayéndose.",
+        "causeDiagnostic": "La profundidad de la ranura en el mango es poco profunda o la cuerda de kudzu está floja, lo que hace que la atadura se suelte debido a los golpes y vibraciones.",
+        "resolution": "Cava la ranura del mango de madera a una profundidad superior a 1/3 de la longitud de la hoja de piedra. Después de atar bien la cuerda de kudzu, aplica adhesivo de resina de pino o barro y déjala secar, quedará firmemente fijada sin temblar."
+      },
+      {
+        "question": "¿Qué piedra debo recoger para usarla como un hacha fuerte sin romperse?",
+        "causeDiagnostic": "La roca sedimentaria (esquisto) o la piedra de río agrietada no resisten el impacto de un golpe y se rompen con facilidad.",
+        "resolution": "Elija cuarcita u obsidiana negra, que son afiladas y duras como el vidrio cuando se rompen. Debe ser una roca densa y sin granos finos para que no se rompa al cortarla para leña."
+      }
+    ],
+    "PR-05": [
+      {
+        "question": "Tejí tallos de arrurruz, pero a medida que se secaban, se volvían quebradizos y se rompían.",
+        "causeDiagnostic": "La resistencia a la tracción se debilita porque la capa exterior rígida se utiliza tal cual o las fibras no se retuercen uniformemente.",
+        "resolution": "Golpee suavemente el kudzu crudo con un bate de madera para quitar la piel exterior rígida y separar solo las fibras internas finas y suaves de la corteza. Si giras los dos hilos en el sentido de las agujas del reloj y en el sentido contrario, se volverán más duros."
+      },
+      {
+        "question": "El extremo de la cuerda se aflojará con el tiempo.",
+        "causeDiagnostic": "Debido a que los extremos de la fibra retorcida no están terminados, se produce un desenredado.",
+        "resolution": "Si atas el extremo de la cuerda con un nudo o lo envuelves firmemente con una fina línea de fibra de arrurruz y haces una atadura, nunca se soltará."
+      }
+    ],
+    "PR-06": [
+      {
+        "question": "Cuando enciendo fuego en el horno, la pared de barro se parte.",
+        "causeDiagnostic": "Esto se debe a que no se mezcló arena o fibra con el barro, o se encendió repentinamente un fuego alto antes de que la masa se secara.",
+        "resolution": "Mezcle y amase en una proporción de 2 partes de arcilla roja, 1 parte de arena y 1 parte de pasto seco. Después de construir el fogón, debes secarlo lentamente con ramitas pequeñas durante las primeras 2 a 3 horas para evitar que se formen grietas."
+      },
+      {
+        "question": "Cuando llueve, ¿no se derrite el pozo de barro con el agua de lluvia?",
+        "causeDiagnostic": "La superficie del barro que se ha cocido con un calor suave puede erosionarse con las fuertes lluvias.",
+        "resolution": "Si lo horneas a fuego alto durante mucho tiempo, se endurece como la loza y no se derrite fácilmente bajo la lluvia. Cuando llueve, puedes conservarlo durante mucho tiempo cubriéndolo con hojas anchas o corteza de abedul a modo de techo."
+      }
+    ],
+    "PR-08": [
+      {
+        "question": "El poste de la trampa se rompe al no poder soportar el peso de la roca.",
+        "causeDiagnostic": "La resistencia de la unión del palo es débil porque la ranura está demasiado profunda o porque se utilizan ramas podridas y secas.",
+        "resolution": "Utilice una rama de roble dura del grosor de su pulgar. La profundidad de la ranura debe excavarse sólo ligeramente, menos de 1/3 del espesor de la rama, para soportar el peso de la roca."
+      },
+      {
+        "question": "Sólo el cebo desaparece y la roca de cobertura no cae.",
+        "causeDiagnostic": "El pestillo de la barra es tan rígido que el gatillo no se suelta cuando lo toca un animal pequeño.",
+        "resolution": "Alise el enganche donde se unen la varilla de cebo horizontal y la madera de soporte diagonal con un cuchillo de piedra. Hay que ajustar la sensibilidad para que aunque lo toques rebote en 0,1 segundos."
+      }
+    ],
+    "PR-09": [
+      {
+        "question": "Cavé un hoyo y quemé la madera, pero no se convirtió en carbón, solo quedó ceniza.",
+        "causeDiagnostic": "Esto se debe a que cuando se cubre con tierra, quedan finas lagunas de aire y se continúa suministrando oxígeno, lo que lleva a una combustión completa.",
+        "resolution": "Cuando un árbol se incendia y el humo disminuye, cúbralo bien con tierra espesa y pise con fuerza para bloquear el 100% del oxígeno. Sin aire, la madera no arde y se convierte en carbón sólido."
+      },
+      {
+        "question": "¿Cuándo debo cavar un hoyo después de cubrirlo con tierra?",
+        "causeDiagnostic": "Si quita la suciedad mientras la temperatura interna aún está alta, el carbón se volverá a encender cuando se exponga al aire exterior.",
+        "resolution": "Espere al menos de 4 a 6 horas para que la tierra fuera del hoyo se enfríe por completo. El carbón negro duro se puede recolectar de manera segura solo después de que se haya enfriado por completo y luego se haya extraído."
+      }
+    ],
+    "PR-10": [
+      {
+        "question": "Temo que al derretir la colofonia la olla o la piedra se incendien.",
+        "causeDiagnostic": "La colofonia contiene aceites terpénicos altamente inflamables, que se encienden inmediatamente cuando se exponen a una llama abierta.",
+        "resolution": "Evite el contacto directo con llamas abiertas. Es seguro derretirse lentamente con calor radiante indirecto desde una distancia de al menos 10 cm del calor residual de un fuego de carbón rojo o sobre piedras calientes junto a una fogata."
+      },
+      {
+        "question": "El adhesivo de colofonia endurecido se rompe como el cristal.",
+        "causeDiagnostic": "Cuando la colofonia pura se endurece, es muy quebradiza (quebradiza) y, por lo tanto, vulnerable al impacto.",
+        "resolution": "Mezcle polvo de carbón de roble finamente molido con colofonia derretida en una proporción de volumen de 1:1. Las partículas de carbón en polvo actúan como un esqueleto, creando un adhesivo impermeable que no se rompe incluso cuando se golpea con un hacha."
+      }
+    ],
+    "PR-11": [
+      {
+        "question": "¿El pez que entra en la trampa no vuelve a salir nadando?",
+        "causeDiagnostic": "La entrada se estrecha hasta convertirse en una espina cónica puntiaguda, que bloquea físicamente el escape inverso.",
+        "resolution": "Los extremos del embudo interior están apretados a intervalos de 5 a 6 cm, por lo que pueden empujarse hacia adentro al entrar, pero al salir quedan bloqueados por los extremos de las ramas elásticas y no pueden escapar."
+      },
+      {
+        "question": "¿Cómo evito que mi trampa para peces flote en la fuerte corriente del río?",
+        "causeDiagnostic": "Si la tracción del fondo se debilita debido a la resistencia al agua, existe el riesgo de que se pierda aguas abajo.",
+        "resolution": "Agregue peso colocando 2 o 3 piedras de río del tamaño de un puño en el fondo de la trampa. En bancos de arena con flujo rápido de agua, se deben clavar estacas en el fondo y asegurarlas atándolas firmemente con una cuerda de arrurruz."
+      }
+    ],
+    "PR-12": [
+      {
+        "question": "¿Por qué las estufas de doble combustión producen muy poco humo?",
+        "causeDiagnostic": "El aire caliente precalentado entre las paredes interior y exterior sale a través del orificio superior y vuelve a quemar el gas no quemado.",
+        "resolution": "En un incendio normal, el gas de la madera no se quema y se emite en forma de humo, pero el oxígeno de alta temperatura emitido por el orificio de la boquilla superior se encuentra con el gas para crear una llama de chorro de vórtice, que quema el 100% del humo."
+      },
+      {
+        "question": "¿Cómo evitar lastimarse las manos con piezas de metal afiladas al perforar un agujero en una lata?",
+        "causeDiagnostic": "Del borde interior de la lata perforada sobresale una rebaba metálica afilada.",
+        "resolution": "Es seguro perforar un agujero, colocar una piedra redonda y lisa en la lata, girarla y presionar hacia abajo las virutas de metal que sobresalgan para alisarlas."
+      }
+    ],
+    "PR-13": [
+      {
+        "question": "¿Es la lejía lo suficientemente peligrosa como para quemar la piel si entra en contacto con ella?",
+        "causeDiagnostic": "La lejía de roble concentrada es fuertemente alcalina y tiene la propiedad de disolver las proteínas.",
+        "resolution": "Si tienes una herida en la mano, evita tocarla con las manos desnudas. Si entra en contacto con la piel, es seguro lavarla inmediatamente con agua corriente limpia hasta que el jabón desaparezca por completo."
+      },
+      {
+        "question": "Mezclé lejía y aceite, pero no se endureció y quedó como agua.",
+        "causeDiagnostic": "La concentración de lejía es demasiado diluida o la temperatura es baja, por lo que la reacción de saponificación no se produce lo suficiente.",
+        "resolution": "Use agua con lejía lo suficientemente espesa como para que los huevos floten ligeramente. En calor residual tibio, revuelva bien con una ramita en una dirección durante al menos 30 minutos hasta que adquiera una consistencia espesa de yogur."
+      }
+    ],
+    "PR-14": [
+      {
+        "question": "El hilo del tendón (hilo del tendón) se sigue endureciendo durante la costura y se cae del ojo de la aguja.",
+        "causeDiagnostic": "Este es un fenómeno natural en el que las fibras de colágeno se vuelven rígidas cuando se exponen al aire durante la costura y la saliva o la humedad se evaporan.",
+        "resolution": "Humedezca ligeramente las yemas de los dedos con saliva o agua y frote suavemente los extremos de los hilos del tendón durante 2 a 3 segundos. Las fibras de colágeno se ablandan inmediatamente, vuelven a entrar suavemente en el ojo de la aguja y las grietas en los puntos desaparecen."
+      },
+      {
+        "question": "El viento frío y las gotas de agua se filtran a través de los agujeros de las agujas en el cuero.",
+        "causeDiagnostic": "Se trata de una brecha microscópica que se crea cuando el diámetro del orificio piloto perforado con un punzón de pedernal es ligeramente mayor que el grosor del hilo del tendón que aún no se ha secado ni encogido.",
+        "resolution": "No entrar en pánico. A medida que el hilo del tendón húmedo se seca naturalmente a temperatura ambiente, se contrae entre un 3 y un 5 % en volumen y cierra el orificio por sí solo. Un día después de coser, aplicar una fina capa de yeso de resina de pino calentado (PR-10) sobre la costura para formar una película completa fría e impermeable."
+      }
+    ],
+    "PR-15": [
+      {
+        "question": "Cuando respiro, huelo carbón en polvo y toso. ¿Estás bien?",
+        "causeDiagnostic": "El polvo fino que se genera al moler carbón demasiado fino ingresa al tracto respiratorio a través de los huecos en el tejido debido a la falta de humedad.",
+        "resolution": "Moje inmediatamente el exterior de la mascarilla con unas gotas más de agua o enjuague ligeramente el polvo de carbón en agua para filtrar los residuos finos antes de hacer la bolsa del filtro. En su situación actual, presione ligeramente la superficie con la palma para exprimir las partículas de carbón y muévalas lentamente, respirando solo por la nariz."
+      },
+      {
+        "question": "¿Podrás apagar un incendio o sobrevivir mucho tiempo con una máscara de bomba?",
+        "causeDiagnostic": "Esta máscara es un simple \"dispositivo de escape a corto plazo\" de absorción física y química sin un dispositivo de suministro de oxígeno.",
+        "resolution": "Nunca debe utilizarse para la extinción de incendios ni dejarse en el lugar. En un espacio confinado y con deficiencia de oxígeno, por muy bueno que sea el filtro, no puede producir oxígeno y las personas se asfixian. Después de usarlo, úselo sólo para escapar a un área abierta en el suelo dentro del tiempo dorado de 10 a 15 minutos."
+      }
+    ],
+    "PR-16": [
+      {
+        "question": "Incluso después de verter agua en la arena, la temperatura dentro de la olla no baja mucho.",
+        "causeDiagnostic": "La superficie exterior de la cerámica se recubre con esmalte o aceite, evitando que el agua se filtre, o se coloca en un lugar húmedo y sin viento, para que se detenga la evaporación.",
+        "resolution": "Si tocas la superficie exterior de la cerámica y no está mojada sino seca, significa que la cerámica tiene microporos obstruidos. Pula ligeramente la superficie con una piedra rugosa para abrir los poros, o sustitúyala por loza sin esmaltar y trasládela a un respiradero a la sombra de un árbol por donde sople la brisa."
+      },
+      {
+        "question": "¿El refrigerador con olla de control funciona bien durante la temporada de monzones o en días lluviosos?",
+        "causeDiagnostic": "Si la humedad en el aire es demasiado alta (más del 80-90%), el agua en la superficie de la loza no puede evaporarse fácilmente en el aire, lo que reduce la eficiencia de enfriamiento del calor de evaporación.",
+        "resolution": "En días húmedos, intente inducir la evaporación por convección forzada colocándolo a la sombra de una cresta donde sople el viento tanto como sea posible o en una zona ventilada. Si llenas el agua vertida en la capa de arena con agua de valle profundo o agua de manantial, que es la más fría al amanecer, puedes mantener una temperatura baja debido al frío del agua misma."
+      }
+    ]
+  },
+  "de": {
+    "PR-01": [
+      {
+        "question": "Das Wasser, das durch den Filter gelaufen ist, sieht klar aus. Kann ich es sofort trinken?",
+        "causeDiagnostic": "Die Filtration filtert nur physikalische Verunreinigungen wie schlammiges Wasser und Gerüche heraus und entfernt keine Viren oder Mikroorganismen.",
+        "resolution": "Trinken Sie es niemals sofort. Selbst in klarem Wasser leben unsichtbare Parasitensporen. Daher müssen Sie es sterilisieren, indem Sie es mindestens drei Minuten lang kochen, bis Blasen aufsteigen, um Magenbeschwerden vorzubeugen."
+      },
+      {
+        "question": "Was soll ich tun, wenn sich Holzkohlepulver mit Wasser vermischt und schwarz wird?",
+        "causeDiagnostic": "Hierbei handelt es sich um ein natürliches Phänomen, bei dem feiner schwarzer Staub von der Oberfläche einer Schicht frisch zerkleinerter Eichenholzkohle zunächst durch Wasser weggespült wird.",
+        "resolution": "Entsorgen Sie die ersten 1 bis 2 Tassen Wasser zur Filterreinigung. Wenn Sie das Wasser noch einmal 2-3 Mal aufgießen und filtern, bis es klar wird, wird das Kohlepulver weggespült und es kommt klares Wasser heraus."
+      }
+    ],
+    "PR-02": [
+      {
+        "question": "Es entsteht viel Rauch, aber die Glut verklumpt nicht und verstreut sich einfach.",
+        "causeDiagnostic": "Aufgrund der vom Boden der Stütze aufsteigenden Bodenfeuchtigkeit oder der mangelnden Sauerstoffzirkulation in der V-förmigen Rille befindet es sich in einem Zustand unvollständiger Karbonisierung.",
+        "resolution": "Legen Sie zwei Schichten trockenes Laub unter die Stützbretter, um die Feuchtigkeit vom Boden fernzuhalten. Wenn man den Winkel der V-förmigen Rille mit einem Messer leicht auf 45 Grad erweitert, um einen Sauerstoffdurchgang zu gewährleisten, und ihn dann etwas schneller dreht, verklumpt die schwarze Glut."
+      },
+      {
+        "question": "Die Bogensehne dreht sich weiter und die Holzachse (Spindel) dreht sich nicht.",
+        "causeDiagnostic": "Hierbei handelt es sich um ein Phänomen, bei dem die Spannung der Bogensehne nachlässt und die Reibung mit der Oberfläche des Spindelholzes nicht ausreicht, was dazu führt, dass die Bogensehne abrutscht.",
+        "resolution": "Ziehen Sie leicht an der Sehne, während Sie den Bogen mit dem Finger festhalten, um ihn zu spannen. Wenn Sie die Saite zwei Umdrehungen statt einer Umdrehung um die Achse wickeln, um die Reibungsfläche zu vergrößern, wird sie sich nie drehen."
+      }
+    ],
+    "PR-03": [
+      {
+        "question": "Ich habe das Dach mit abgefallenen Blättern bedeckt, aber wenn der Wind weht, fliegen sie dann nicht alle weg?",
+        "causeDiagnostic": "Da die Oberfläche der abgefallenen Blätter hell ist, besteht in Tälern oder Bergrücken die Gefahr, dass sie von Windböen weggeweht werden.",
+        "resolution": "Drücken Sie schwere, dicke Zweige in einem spärlichen, maschenartigen Muster auf die Schicht abgefallener Blätter. Das Gewicht der Zweige drückt das abgefallene Laub so stark zusammen, dass die Dämmschicht auch bei starkem Wind nicht wegweht."
+      },
+      {
+        "question": "Wie kann ich schlafen, wenn der Boden kalt ist und mir kalt ist?",
+        "causeDiagnostic": "Die vom Boden aufsteigende Kälte führt zu einem raschen Absinken der Körpertemperatur und ist die Hauptursache für Unterkühlung.",
+        "resolution": "Verteilen Sie trockene Kiefernnadeln und abgefallenes Laub bis zu einer Dicke von zwei Fingern (mindestens 20 cm) auf dem Boden. Wenn Sie Ihren Körper von direktem Kontakt mit dem Boden fernhalten, können Sie die Körperwärme die ganze Nacht über bewahren."
+      }
+    ],
+    "PR-04": [
+      {
+        "question": "Beim Fällen eines Baumes löst sich immer wieder die Steinaxtklinge und fällt heraus.",
+        "causeDiagnostic": "Die Tiefe der Nut im Griff ist gering oder die Kudzu-Saite ist locker gebunden, sodass sich die Bindung durch Stöße und Vibrationen löst.",
+        "resolution": "Graben Sie die Nut des Holzgriffs tiefer als 1/3 der Länge der Steinklinge. Nachdem Sie die Kudzu-Schnur festgebunden haben, tragen Sie Kiefernharzkleber oder Schlamm auf und lassen Sie sie trocknen, damit sie fest sitzt, ohne zu zittern."
+      },
+      {
+        "question": "Welchen Stein sollte ich aufheben, um ihn als starke Axtklinge zu verwenden, ohne zu brechen?",
+        "causeDiagnostic": "Sedimentgestein (Schiefer) oder rissiges Flussgestein können einem Schlag nicht standhalten und brechen leicht.",
+        "resolution": "Wählen Sie Quarzit oder schwarzen Obsidian, die im zerbrochenen Zustand scharf und hart wie Glas sind. Es muss ein dichter Stein ohne fein gespaltene Körner sein, damit er beim Schneiden in Brennholz nicht zerbricht."
+      }
+    ],
+    "PR-05": [
+      {
+        "question": "Ich habe Pfeilwurzstiele geflochten, aber als sie trockneten, wurden sie spröde und brachen.",
+        "causeDiagnostic": "Die Zugfestigkeit wird geschwächt, weil die steife Außenhülle unverändert verwendet wird oder die Fasern nicht gleichmäßig verdrillt sind.",
+        "resolution": "Schlagen Sie vorsichtig mit einem Holzschläger auf den rohen Kudzu, um die steife Außenhaut zu entfernen und nur die dünnen, weichen inneren Rindenfasern abzutrennen. Wenn Sie die beiden Stränge im und gegen den Uhrzeigersinn drehen, werden sie härter."
+      },
+      {
+        "question": "Das Ende des Seils wird sich mit der Zeit lösen.",
+        "causeDiagnostic": "Da die Enden der Faserverdrillung noch nicht fertig sind, kommt es zu einer Entwirrung.",
+        "resolution": "Wenn Sie das Ende des Seils mit einem Knoten festbinden oder das Ende mit einer dünnen Linie aus Pfeilwurzfasern fest umwickeln und eine Peitschenschnur machen, wird es sich nie lösen."
+      }
+    ],
+    "PR-06": [
+      {
+        "question": "Wenn ich im Ofen ein Feuer anzünde, bricht die Lehmwand auseinander.",
+        "causeDiagnostic": "Dies liegt daran, dass Sand oder Fasern nicht in den Schlamm eingemischt wurden oder plötzlich ein großes Feuer entfacht wurde, bevor der Teig getrocknet war.",
+        "resolution": "Mischen und kneten Sie im Verhältnis 2 Teile roter Ton zu 1 Teil Sand zu 1 Teil trockenem Gras. Nach dem Bau der Feuerstelle müssen Sie diese in den ersten 2 bis 3 Stunden langsam mit kleinen Zweigen trocknen, um die Bildung von Rissen zu verhindern."
+      },
+      {
+        "question": "Wenn es regnet, schmilzt die Schlammfeuerstelle nicht mit dem Regenwasser?",
+        "causeDiagnostic": "Schlamm, der nur mit milder Hitze gebacken wurde, kann durch starken Regen an der Oberfläche erodiert werden.",
+        "resolution": "Wenn man es lange bei starker Hitze backt, härtet es wie Steingut aus und schmilzt im Regen nicht so leicht. Wenn es regnet, können Sie es für lange Zeit konservieren, indem Sie es mit breiten Blättern oder der Rinde einer Birke als Dach bedecken."
+      }
+    ],
+    "PR-08": [
+      {
+        "question": "Die Fangstange bricht und kann dem Gewicht des Felsens nicht mehr standhalten.",
+        "causeDiagnostic": "Die Festigkeit der Stockverbindung ist gering, da die Rille zu tief gegraben wird oder morsche, trockene Äste verwendet werden.",
+        "resolution": "Benutzen Sie einen harten Eichenzweig, etwa so dick wie Ihr Daumen. Die Tiefe der Rille darf nur geringfügig gegraben werden, weniger als 1/3 der Dicke des Astes, um das Gewicht des Gesteins zu tragen."
+      },
+      {
+        "question": "Nur der Köder verschwindet und der Deckstein fällt nicht.",
+        "causeDiagnostic": "Der Stangenverschluss ist so steif, dass der Abzug bei Kontakt mit einem kleinen Tier nicht ausgelöst wird.",
+        "resolution": "Glätten Sie den Baumstumpf dort, wo die horizontale Köderstange und das diagonale Stützholz aufeinandertreffen, mit einem Steinmesser. Die Empfindlichkeit muss so eingestellt sein, dass es selbst bei Berührung in 0,1 Sekunden abprallt."
+      }
+    ],
+    "PR-09": [
+      {
+        "question": "Ich habe ein Loch gegraben und das Holz verbrannt, aber es wurde nicht zu Holzkohle, sondern nur Asche übrig.",
+        "causeDiagnostic": "Denn wenn es mit Erde bedeckt ist, bleiben feine Luftspalten zurück und es wird weiterhin Sauerstoff zugeführt, was zu einer vollständigen Verbrennung führt.",
+        "resolution": "Wenn ein Baum Feuer fängt und der Rauch nachlässt, bedecken Sie ihn fest mit dicker Erde und treten Sie fest darauf, um 100 % Sauerstoff auszuschließen. Ohne Luft brennt Holz nicht und wird zu fester Holzkohle."
+      },
+      {
+        "question": "Wann sollte ich ein Loch graben, nachdem ich es mit Erde bedeckt habe?",
+        "causeDiagnostic": "Wenn Sie den Schmutz entfernen, während die Innentemperatur noch heiß ist, entzündet sich die Holzkohle erneut, wenn sie der Außenluft ausgesetzt wird.",
+        "resolution": "Warten Sie mindestens 4 bis 6 Stunden, bis die Erde außerhalb des Lochs vollständig abgekühlt ist. Harte schwarze Holzkohle kann erst dann sicher geerntet werden, wenn sie vollständig abgekühlt und dann ausgegraben ist."
+      }
+    ],
+    "PR-10": [
+      {
+        "question": "Ich befürchte, dass der Topf oder Stein durch das Schmelzen des Kolophoniums Feuer fängt.",
+        "causeDiagnostic": "Kolophonium enthält leicht entzündliche Terpenöle, die sich sofort entzünden, wenn sie einer offenen Flamme ausgesetzt werden.",
+        "resolution": "Vermeiden Sie direkten Kontakt mit offenen Flammen. Es ist sicher, langsam mit indirekter Strahlungswärme aus einem Abstand von mindestens 10 cm zur Restwärme eines roten Holzkohlefeuers oder auf heißen Steinen neben einer Feuerstelle zu schmelzen."
+      },
+      {
+        "question": "Der ausgehärtete Kolophoniumkleber zerbricht wie Glas.",
+        "causeDiagnostic": "Wenn reines Kolophonium ausgehärtet ist, ist es sehr spröde (zerbrechlich) und daher anfällig für Stöße.",
+        "resolution": "Mischen Sie fein gemahlenes Eichenholzkohlepulver mit geschmolzenem Kolophonium im Volumenverhältnis 1:1. Kohlenstoffpartikel aus Holzkohlepulver fungieren als Skelett und bilden einen wasserfesten Klebstoff, der auch bei Schlägen mit einer Axt nicht bricht."
+      }
+    ],
+    "PR-11": [
+      {
+        "question": "Schwimmt der Fisch, der in die Falle geht, nicht wieder heraus?",
+        "causeDiagnostic": "Der Eingang verengt sich zu einem spitzen konischen Dorn, der den Rückweg physisch blockiert.",
+        "resolution": "Die Enden des Innentrichters sind in Abständen von 5 bis 6 cm verengt, so dass sie beim Hineinschieben hineingeschoben werden können, beim Herauskommen jedoch durch die Enden elastischer Zweige blockiert werden und nicht entkommen können."
+      },
+      {
+        "question": "Wie verhindere ich, dass meine Reuse in der starken Strömung des Flusses wegschwimmt?",
+        "causeDiagnostic": "Wenn die Bodentraktion durch den Wasserwiderstand geschwächt wird, besteht die Gefahr, dass sie flussabwärts verloren geht.",
+        "resolution": "Fügen Sie Gewicht hinzu, indem Sie zwei bis drei faustgroße Flusssteine ​​auf den Boden der Falle legen. Bei Untiefen mit schnellem Wasserfluss sollten Pfähle in den Boden getrieben und durch festes Anbinden mit einer Pfeilwurzelschnur gesichert werden."
+      }
+    ],
+    "PR-12": [
+      {
+        "question": "Warum erzeugen Doppelbrenneröfen sehr wenig Rauch?",
+        "causeDiagnostic": "Heiße, vorgewärmte Luft, die zwischen den Innen- und Außenwänden erhitzt wird, wird durch das obere Loch ausgeblasen und verbrennt das unverbrannte Gas erneut.",
+        "resolution": "Bei einem normalen Feuer verbrennt das Holzgas nicht und wird als Rauch ausgestoßen, aber der aus dem oberen Düsenloch austretende Hochtemperatursauerstoff trifft auf das Gas und erzeugt eine Wirbelstrahlflamme, die 100 % des Rauchs verbrennt."
+      },
+      {
+        "question": "Wie vermeidet man, dass man sich beim Bohren eines Lochs in eine Dose die Hände durch scharfe Metallteile verletzt?",
+        "causeDiagnostic": "Aus dem Innenrand der perforierten Dose ragt ein scharfer Metallgrat heraus.",
+        "resolution": "Es ist sicher, ein Loch zu bohren, einen glatten runden Kieselstein in die Dose zu legen, sie zu drehen und auf die herausstehenden Metallspäne zu drücken, um sie zu glätten."
+      }
+    ],
+    "PR-13": [
+      {
+        "question": "Ist Lauge gefährlich genug, um Ihre Haut zu verbrennen, wenn Sie damit in Berührung kommen?",
+        "causeDiagnostic": "Konzentrierte Eichenlauge ist stark alkalisch und hat die Eigenschaft, Eiweiße aufzulösen.",
+        "resolution": "Wenn Sie eine Wunde an der Hand haben, berühren Sie diese nicht mit bloßen Händen. Wenn es auf Ihre Haut gelangt, können Sie es sofort mit klarem, fließendem Wasser abwaschen, bis die Seife vollständig verschwunden ist."
+      },
+      {
+        "question": "Ich habe Lauge und Öl gemischt, aber es wurde nicht hart und war wie Wasser.",
+        "causeDiagnostic": "Die Laugenkonzentration ist zu verdünnt oder die Temperatur ist niedrig, so dass die Verseifungsreaktion nicht ausreichend abläuft.",
+        "resolution": "Verwenden Sie Laugenwasser, das so dick ist, dass die Eier leicht schwimmen können. Bei lauwarmer Restwärme mit einem Zweig in eine Richtung mindestens 30 Minuten gründlich verrühren, bis eine dickflüssige Joghurtkonsistenz entsteht."
+      }
+    ],
+    "PR-14": [
+      {
+        "question": "Der Sehnenfaden (Sehnenfaden) verhärtet sich beim Nähen immer wieder und fällt aus dem Nadelöhr.",
+        "causeDiagnostic": "Hierbei handelt es sich um ein natürliches Phänomen, bei dem Kollagenfasern steif werden, wenn sie beim Nähen der Luft ausgesetzt werden und Speichel oder Feuchtigkeit verdunsten.",
+        "resolution": "Befeuchten Sie Ihre Fingerspitzen leicht mit Speichel oder Wasser und reiben Sie 2 bis 3 Sekunden lang sanft über die Enden der Sehnenfäden. Die Kollagenfasern werden sofort weich, dringen sanft wieder in das Nadelöhr ein und die Risse in den Nähten verschwinden."
+      },
+      {
+        "question": "Kalter Wind und Wassertropfen dringen durch die Nadellöcher im Leder.",
+        "causeDiagnostic": "Hierbei handelt es sich um einen mikroskopisch kleinen Spalt, der entsteht, wenn der Durchmesser des mit einer Feuersteinahle gebohrten Pilotlochs etwas größer ist als die Dicke des noch nicht getrockneten und geschrumpften Sehnenfadens.",
+        "resolution": "Keine Panik. Da der nasse Sehnenfaden bei Raumtemperatur auf natürliche Weise trocknet, schrumpft er um 3–5 % seines Volumens und verengt das Loch von selbst. Tragen Sie einen Tag nach dem Nähen eine dünne Schicht erhitzten Kiefernharzputzes (PR-10) auf die Naht auf, um einen vollständigen kalten und wasserdichten Film zu bilden."
+      }
+    ],
+    "PR-15": [
+      {
+        "question": "Beim Einatmen rieche ich Holzkohlepulver und huste. Geht es dir gut?",
+        "causeDiagnostic": "Feiner Staub, der durch zu feines Mahlen von Holzkohle entsteht, gelangt aufgrund fehlender Feuchtigkeit durch die Lücken im Gewebe des Stoffes in die Atemwege.",
+        "resolution": "Befeuchten Sie die Außenseite der Maske sofort mit ein paar weiteren Tropfen Wasser oder spülen Sie das Aktivkohlepulver leicht mit Wasser ab, um feine Rückstände herauszufiltern, bevor Sie den Filterbeutel herstellen. Drücken Sie in Ihrer aktuellen Situation leicht mit der Handfläche auf die Oberfläche, um die Kohlepartikel herauszudrücken, und bewegen Sie sie langsam hin und her, wobei Sie nur durch die Nase atmen."
+      },
+      {
+        "question": "Kann man mit einer Bombenmaske ein Feuer löschen oder lange überleben?",
+        "causeDiagnostic": "Bei dieser Maske handelt es sich um ein einfaches „Kurzzeit-Fluchtgerät“ mit physikalischer und chemischer Absorption ohne Sauerstoffversorgungseinrichtung.",
+        "resolution": "Es sollte niemals zur Brandbekämpfung verwendet oder auf der Baustelle gelassen werden. In einem sauerstoffarmen, geschlossenen Brandraum kann der Filter, egal wie gut der Filter ist, keinen Sauerstoff produzieren und Menschen ersticken. Verwenden Sie es nach dem Tragen nur zum Zwecke der Flucht in einen offenen Bereich auf dem Boden innerhalb der goldenen Zeit von 10 bis 15 Minuten."
+      }
+    ],
+    "PR-16": [
+      {
+        "question": "Selbst nachdem Wasser in den Sand gegossen wurde, kühlt sich die Temperatur im Topf nicht wesentlich ab.",
+        "causeDiagnostic": "Die äußere Oberfläche der Keramik wird mit Glasur oder Öl beschichtet, um das Austreten von Wasser zu verhindern, oder sie wird an einem feuchten Ort ohne Wind platziert, damit die Verdunstung gestoppt wird.",
+        "resolution": "Wenn Sie die äußere Oberfläche der Keramik berühren und diese nicht nass, sondern trocken ist, bedeutet das, dass die Mikroporen der Keramik verstopft sind. Schleifen Sie die Oberfläche leicht mit einem rauen Stein ab, um die Poren zu öffnen, oder ersetzen Sie sie durch unglasiertes Steingut und stellen Sie es an einen Lüftungsschlitz im Schatten eines Baumes, wo die Brise weht."
+      },
+      {
+        "question": "Funktioniert der Kontrolltopf-Kühlschrank während der Monsunzeit oder an Regentagen gut?",
+        "causeDiagnostic": "Wenn die Luftfeuchtigkeit zu hoch ist (mehr als 80–90 %), kann das Wasser auf der Oberfläche des Steinguts nicht leicht in die Luft verdunsten, was die Kühleffizienz der Verdunstungswärme verringert.",
+        "resolution": "Versuchen Sie an feuchten Tagen, eine erzwungene Konvektionsverdunstung herbeizuführen, indem Sie das Gerät im Schatten eines Bergrückens aufstellen, wo möglichst viel Wind weht, oder in einem belüfteten Bereich. Wenn Sie das in die Sandschicht gegossene Wasser mit tiefem Talwasser oder Quellwasser füllen, das im Morgengrauen am kältesten ist, können Sie aufgrund der Kälte des Wassers selbst eine niedrige Temperatur aufrechterhalten."
+      }
+    ]
+  },
+  "pt": {
+    "PR-01": [
+      {
+        "question": "A água que passou pelo filtro parece límpida. Posso beber imediatamente?",
+        "causeDiagnostic": "A filtragem apenas filtra impurezas físicas, como água lamacenta e odores, e não remove vírus ou microorganismos.",
+        "resolution": "Nunca beba imediatamente. Mesmo em água limpa, os esporos invisíveis do parasita estão vivos, por isso você deve esterilizá-lo fervendo-o por pelo menos 3 minutos até que as bolhas subam para evitar dores de estômago."
+      },
+      {
+        "question": "O que devo fazer se o pó de carvão se misturar com água e ficar preto?",
+        "causeDiagnostic": "Este é um fenômeno natural no qual a poeira preta e fina da superfície de uma camada de carvão de carvalho recém-triturado é inicialmente lavada pela água.",
+        "resolution": "Descarte as primeiras 1 a 2 xícaras de água para limpeza do filtro. Se você derramar e filtrar a água novamente 2 a 3 vezes até que fique transparente, o pó de carvão será removido e a água limpa sairá."
+      }
+    ],
+    "PR-02": [
+      {
+        "question": "Há muita fumaça, mas as brasas (brasas) não se acumulam e apenas se espalham.",
+        "causeDiagnostic": "Encontra-se em estado de carbonatação incompleta devido à umidade do solo subindo do fundo do suporte ou à falta de circulação de oxigênio na ranhura em forma de V.",
+        "resolution": "Coloque duas camadas de folhas secas sob as placas de suporte para vedar a umidade do solo. Se você ampliar ligeiramente o ângulo da ranhura em forma de V para 45 graus com uma faca para garantir a passagem do oxigênio e depois girar um pouco mais rápido, as brasas pretas se aglomeram."
+      },
+      {
+        "question": "A corda do arco continua girando e o eixo de madeira (fuso) não gira.",
+        "causeDiagnostic": "Este é um fenômeno onde a tensão da corda do arco fica frouxa e há atrito insuficiente com a superfície da madeira do fuso, fazendo com que ela escorregue.",
+        "resolution": "Puxe levemente a corda com o dedo que segura o arco para esticá-lo. Se você enrolar a corda em volta do eixo duas voltas em vez de uma para aumentar a área de atrito, ela nunca girará."
+      }
+    ],
+    "PR-03": [
+      {
+        "question": "Cobri o telhado com folhas caídas, mas se o vento soprar, não vão todas voar?",
+        "causeDiagnostic": "Como a superfície das folhas caídas é leve, existe o risco de serem levadas por rajadas de vento em vales ou cumes.",
+        "resolution": "Pressione galhos pesados ​​e grossos em um padrão de malha esparsa no topo da camada de folhas caídas. O peso dos galhos comprime as folhas caídas com tanta força que a camada de isolamento não se desprende mesmo quando sopram ventos fortes."
+      },
+      {
+        "question": "Como posso dormir quando o chão está frio e sinto frio?",
+        "causeDiagnostic": "O frio que sobe do solo faz com que a temperatura corporal caia rapidamente e é a principal causa da hipotermia.",
+        "resolution": "Espalhe no chão agulhas de pinheiro secas e folhas caídas com uma espessura de dois dedos (pelo menos 20 cm). Seu corpo não deve estar em contato direto com o solo para preservar o calor corporal durante a noite."
+      }
+    ],
+    "PR-04": [
+      {
+        "question": "Ao cortar uma árvore, a lâmina do machado de pedra fica solta e cai.",
+        "causeDiagnostic": "A profundidade da ranhura no cabo é rasa ou o fio kudzu está solto, fazendo com que a amarração se solte devido ao choque e à vibração.",
+        "resolution": "Cave a ranhura do cabo de madeira mais fundo que 1/3 do comprimento da lâmina de pedra. Depois de amarrar bem o barbante kudzu, aplique adesivo de resina de pinho ou lama e deixe secar, ficará bem fixado sem tremer."
+      },
+      {
+        "question": "Que pedra devo pegar para usar como lâmina de machado forte sem quebrar?",
+        "causeDiagnostic": "Rocha sedimentar (xisto) ou pedra de rio rachada não resiste ao impacto de um golpe e quebra facilmente.",
+        "resolution": "Escolha quartzito ou obsidiana negra, que são afiados e duros como vidro quando quebrados. Deve ser uma rocha densa, sem grãos finos, para que não se quebre ao ser cortada em lenha."
+      }
+    ],
+    "PR-05": [
+      {
+        "question": "Eu teci caules de araruta, mas à medida que secavam, ficavam quebradiços e quebravam.",
+        "causeDiagnostic": "A resistência à tração é enfraquecida porque o revestimento externo rígido é usado como está ou as fibras não são torcidas uniformemente.",
+        "resolution": "Bata suavemente o kudzu cru com um bastão de madeira para remover a casca externa rígida e separar apenas as fibras finas e macias da casca interna. Se você torcer os dois fios no sentido horário e anti-horário, eles ficarão mais duros."
+      },
+      {
+        "question": "A ponta da corda se soltará com o tempo.",
+        "causeDiagnostic": "Como as pontas da torção da fibra não estão acabadas, ocorre o desfiamento.",
+        "resolution": "Se você amarrar a ponta da corda com um nó, ou enrolar bem a ponta com uma linha fina de fibra de araruta e fazer um laço de chicote, ela nunca se soltará."
+      }
+    ],
+    "PR-06": [
+      {
+        "question": "Quando acendo o fogo do forno, a parede de barro se rompe.",
+        "causeDiagnostic": "Isso ocorre porque areia ou fibra não foram misturadas à lama, ou um fogo alto foi iniciado repentinamente antes que a massa secasse.",
+        "resolution": "Misture e amasse na proporção de 2 partes de argila vermelha para 1 parte de areia e 1 parte de grama seca. Depois de construir a fogueira, você deve secá-la lentamente com pequenos galhos durante as primeiras 2 a 3 horas para evitar a formação de rachaduras."
+      },
+      {
+        "question": "Quando chove, a fogueira de lama não derrete com a água da chuva?",
+        "causeDiagnostic": "A lama que foi cozida apenas com calor moderado pode ter sua superfície erodida por fortes chuvas.",
+        "resolution": "Se você assar em fogo alto por muito tempo, ele endurece como a cerâmica e não derrete facilmente na chuva. Quando chove, você pode preservá-lo por muito tempo cobrindo-o com folhas largas ou casca de bétula como telhado."
+      }
+    ],
+    "PR-08": [
+      {
+        "question": "O poste da armadilha quebra, incapaz de suportar o peso da rocha.",
+        "causeDiagnostic": "A resistência da junta adesiva é fraca porque o sulco é cavado muito fundo ou podre, são usados ​​​​galhos secos.",
+        "resolution": "Use um galho de carvalho duro com a espessura do seu polegar. A profundidade do sulco deve ser apenas ligeiramente cavada, menos de 1/3 da espessura do galho, para suportar o peso da rocha."
+      },
+      {
+        "question": "Apenas a isca desaparece e a rocha de cobertura não cai.",
+        "causeDiagnostic": "A trava da barra é tão rígida que o gatilho não libera quando entra em contato com um animal pequeno.",
+        "resolution": "Alise o obstáculo onde a haste horizontal da isca e a madeira de suporte diagonal se encontram com uma faca de pedra. A sensibilidade deve ser ajustada para que, mesmo que você toque, ela salte em 0,1 segundos."
+      }
+    ],
+    "PR-09": [
+      {
+        "question": "Cavei um buraco e queimei a lenha, mas não virou carvão, só restou cinza.",
+        "causeDiagnostic": "Isso ocorre porque, quando coberto com solo, permanecem pequenas lacunas de ar e o oxigênio continua a ser fornecido, levando à combustão completa.",
+        "resolution": "Quando uma árvore pegar fogo e a fumaça diminuir, cubra-a firmemente com terra espessa e pise nela com força para bloquear 100% do oxigênio. Sem ar, a madeira não queima e vira carvão sólido."
+      },
+      {
+        "question": "Quando devo cavar um buraco depois de cobri-lo com terra?",
+        "causeDiagnostic": "Se você remover a sujeira enquanto a temperatura interna ainda estiver quente, o carvão acenderá novamente quando exposto ao ar externo.",
+        "resolution": "Espere pelo menos 4 a 6 horas para que o solo fora do buraco esfrie completamente. O carvão preto duro só pode ser colhido com segurança depois de esfriar completamente e depois ser desenterrado."
+      }
+    ],
+    "PR-10": [
+      {
+        "question": "Receio que o derretimento da colofónia faça com que a panela ou a pedra pegue fogo.",
+        "causeDiagnostic": "A colofónia contém óleos terpênicos altamente inflamáveis, que se inflamam imediatamente quando expostos a uma chama aberta.",
+        "resolution": "Evite o contato direto com chamas abertas. É seguro derreter lentamente com calor radiante indireto a uma distância de pelo menos 10 cm do calor residual de uma fogueira de carvão vermelho ou em pedras quentes próximas a uma fogueira."
+      },
+      {
+        "question": "O adesivo de colofónia endurecido quebra como vidro.",
+        "causeDiagnostic": "Quando a colofónia pura é endurecida, é altamente frágil (quebrável) e, portanto, vulnerável ao impacto.",
+        "resolution": "Misture pó de carvão de carvalho finamente moído com colofónia derretida na proporção de volume de 1:1. As partículas de carvão em pó atuam como um esqueleto, criando um adesivo à prova d'água que não quebra mesmo quando atingido por um machado."
+      }
+    ],
+    "PR-11": [
+      {
+        "question": "O peixe que vai para a armadilha não sai nadando de novo?",
+        "causeDiagnostic": "A entrada é estreitada em uma espinha cônica pontiaguda, bloqueando fisicamente a fuga reversa.",
+        "resolution": "As pontas do funil interno são contraídas em intervalos de 5 a 6 cm, para que possam ser empurradas ao entrar, mas ao sair ficam bloqueadas pelas pontas dos galhos elásticos e não podem escapar."
+      },
+      {
+        "question": "Como evito que minha armadilha para peixes flutue na forte correnteza do rio?",
+        "causeDiagnostic": "Se a tracção inferior for enfraquecida devido à resistência à água, existe o risco de se perder a jusante.",
+        "resolution": "Adicione peso colocando 2 a 3 pedras de rio do tamanho de um punho no fundo da armadilha. Em cardumes com fluxo rápido de água, as estacas devem ser cravadas no fundo e presas amarrando-as firmemente com barbante de araruta."
+      }
+    ],
+    "PR-12": [
+      {
+        "question": "Por que os fogões de queima dupla produzem muito pouca fumaça?",
+        "causeDiagnostic": "O ar quente pré-aquecido aquecido entre as paredes interna e externa é expelido pelo orifício superior e queima novamente o gás não queimado.",
+        "resolution": "Em um incêndio normal, o gás da madeira não queima e é emitido como fumaça, mas o oxigênio em alta temperatura emitido pelo orifício superior do bico encontra o gás para criar um jato de chama em vórtice, queimando 100% da fumaça."
+      },
+      {
+        "question": "Como evitar machucar as mãos com pedaços de metal pontiagudos ao fazer um furo em uma lata?",
+        "causeDiagnostic": "Uma rebarba de metal afiada se projeta da borda interna da lata perfurada.",
+        "resolution": "É seguro fazer um furo, colocar uma pedra redonda e lisa na lata, girá-la e pressionar qualquer lasca de metal que sobressaia para alisá-la."
+      }
+    ],
+    "PR-13": [
+      {
+        "question": "A soda cáustica é perigosa o suficiente para queimar sua pele se entrar em contato com ela?",
+        "causeDiagnostic": "A lixívia concentrada de carvalho é fortemente alcalina e tem a propriedade de dissolver proteínas.",
+        "resolution": "Se você tiver um ferimento na mão, evite tocá-lo com as mãos desprotegidas. Se entrar em contato com a pele, é seguro lavá-lo imediatamente com água corrente limpa até que o sabão desapareça completamente."
+      },
+      {
+        "question": "Misturei soda cáustica e óleo, mas não endureceu e ficou como água.",
+        "causeDiagnostic": "A concentração de soda cáustica é muito diluída ou a temperatura é baixa, então a reação de saponificação não ocorre suficientemente.",
+        "resolution": "Use água com soda cáustica espessa o suficiente para que os ovos flutuem ligeiramente. Em fogo residual morno, mexa bem com um galho em uma direção por pelo menos 30 minutos até obter uma consistência espessa de iogurte."
+      }
+    ],
+    "PR-14": [
+      {
+        "question": "A linha do tendão (linha do tendão) continua endurecendo durante a costura e cai do buraco da agulha.",
+        "causeDiagnostic": "Este é um fenômeno natural no qual as fibras de colágeno ficam rígidas quando expostas ao ar durante a costura e a saliva ou a umidade evaporam.",
+        "resolution": "Umedeça levemente as pontas dos dedos com saliva ou água e esfregue suavemente as pontas dos fios do tendão por 2 a 3 segundos. As fibras de colágeno imediatamente ficam macias, entram suavemente no buraco da agulha e as rachaduras nos pontos desaparecem."
+      },
+      {
+        "question": "O vento frio e as gotas de água penetram pelos orifícios das agulhas no couro.",
+        "causeDiagnostic": "Esta é uma lacuna microscópica criada quando o diâmetro do furo piloto perfurado com um furador de pedra é ligeiramente maior que a espessura do fio do tendão que ainda não secou e encolheu.",
+        "resolution": "Não entrar em pânico. À medida que o fio do tendão molhado seca naturalmente à temperatura ambiente, ele encolhe de 3 a 5% em volume e aperta o orifício sozinho. Um dia após a costura, aplique uma fina camada de gesso de resina de pinho aquecido (PR-10) sobre a costura para formar uma película completa fria e impermeável."
+      }
+    ],
+    "PR-15": [
+      {
+        "question": "Quando inspiro, sinto cheiro de pó de carvão e tusso. Você está bem?",
+        "causeDiagnostic": "A poeira fina criada pela moagem muito fina do carvão entra no trato respiratório através das lacunas na trama do tecido devido à falta de umidade.",
+        "resolution": "Molhe imediatamente a parte externa da máscara com mais algumas gotas de água ou enxágue levemente o pó de carvão em água para filtrar os resíduos finos antes de fazer a bolsa do filtro. Na sua situação atual, pressione levemente a superfície com a palma da mão para espremer as partículas de carvão e mova-as lentamente, respirando apenas pelo nariz."
+      },
+      {
+        "question": "Você consegue apagar um incêndio ou sobreviver por muito tempo usando uma máscara de bomba?",
+        "causeDiagnostic": "Esta máscara é um 'dispositivo de fuga de curto prazo' de absorção física e química simples, sem um dispositivo de fornecimento de oxigênio.",
+        "resolution": "Nunca deve ser usado para supressão de incêndio ou deixado no local. Em um espaço de incêndio confinado e com deficiência de oxigênio, não importa quão bom seja o filtro, ele não pode produzir oxigênio e as pessoas sufocam. Depois de usá-lo, use-o apenas para escapar para uma área aberta no solo dentro do tempo dourado de 10 a 15 minutos."
+      }
+    ],
+    "PR-16": [
+      {
+        "question": "Mesmo depois de despejar água na areia, a temperatura dentro da panela não esfria muito.",
+        "causeDiagnostic": "A superfície externa da cerâmica é revestida com esmalte ou óleo, evitando que a água escorra, ou é colocada em local úmido e sem vento, para que a evaporação seja interrompida.",
+        "resolution": "Se você tocar a superfície externa da cerâmica e ela não estiver molhada, mas seca, significa que a cerâmica está com microporos obstruídos. Lixe levemente a superfície com uma pedra áspera para abrir os poros ou substitua-a por cerâmica não vidrada e leve-a para um respiradouro à sombra de uma árvore onde sopra a brisa."
+      },
+      {
+        "question": "O refrigerador com pote de controle funciona bem durante a estação das monções ou em dias chuvosos?",
+        "causeDiagnostic": "Se a umidade do ar for muito alta (mais de 80-90%), a água na superfície da cerâmica não pode evaporar facilmente no ar, reduzindo a eficiência de resfriamento do calor de evaporação.",
+        "resolution": "Em dias úmidos, tente induzir a evaporação por convecção forçada colocando-o à sombra de uma crista onde o vento sopra tanto quanto possível ou em uma área ventilada. Se você preencher a água despejada na camada de areia com água de vale profundo ou água de nascente, que é a mais fria de madrugada, consegue manter a temperatura baixa devido ao frio da própria água."
+      }
+    ]
+  },
+  "zh-TW": {
+    "PR-01": [
+      {
+        "question": "通過過濾器的水看起來很清澈。我可以馬上喝嗎？",
+        "causeDiagnostic": "過濾僅濾除泥水、異味等物理雜質，並不能去除病毒或微生物。",
+        "resolution": "切勿立即飲用。即使在清水中，看不見的寄生蟲孢子也是活的，所以必須煮沸至少3分鐘至氣泡升起消毒，以防止胃部不適。"
+      },
+      {
+        "question": "木炭粉遇水變黑怎麼辦？",
+        "causeDiagnostic": "這是一種自然現象，剛壓碎的橡木炭層表面的黑色細塵最初被水沖走。",
+        "resolution": "丟棄前 1 到 2 杯水，因為它是用於清潔過濾器的。如果再倒入水並過濾2-3次，直到水變得清澈，木炭粉就會被沖走，出清水。"
+      }
+    ],
+    "PR-02": [
+      {
+        "question": "有很多煙，但餘燼（餘燼）不會結塊，只是散落各處。",
+        "causeDiagnostic": "由於土壤水分從支架底部上升或V形槽內氧氣循環不足，使其處於不完全碳化狀態。",
+        "resolution": "在支撐板下方放置兩層乾樹葉，以隔離地面的水分。如果你用小刀將V形槽的角度稍微擴大到45度以確保氧氣通道，然後再稍微轉動一點，黑色的餘燼就會聚集在一起。"
+      },
+      {
+        "question": "弓弦不斷旋轉，木軸（心軸）不會轉動。",
+        "causeDiagnostic": "這是弓弦張力變松，與軸木表面摩擦力不足，導致打滑的現象。",
+        "resolution": "用握住弓的手指輕輕拉動琴弦，使其拉緊。如果將繩子繞軸繞兩圈而不是一圈以增加摩擦面積，則它永遠不會旋轉。"
+      }
+    ],
+    "PR-03": [
+      {
+        "question": "我把落葉蓋在了屋頂上，但是如果風一吹，它們不是都會飛走嗎？",
+        "causeDiagnostic": "由於落葉表面較輕，山谷或山脊有被陣風吹走的危險。",
+        "resolution": "將又重又粗的樹枝壓成稀疏的網狀圖案，放在落葉層的頂部。樹枝的重量將落葉壓得很緊，即使強風吹來，隔熱層也不會被吹走。"
+      },
+      {
+        "question": "地板涼了，我感覺冷，我怎麼能睡覺呢？",
+        "causeDiagnostic": "從地面升起的寒氣使體溫迅速下降，是造成體溫過低的主要原因。",
+        "resolution": "將乾松針和落葉鋪在地上，厚度為兩指（至少20公分）。您的身體不應直接接觸地面，以在整個晚上保持身體熱量。"
+      }
+    ],
+    "PR-04": [
+      {
+        "question": "砍樹時，石斧刃不斷鬆動脫落。",
+        "causeDiagnostic": "手把凹槽深度淺，或葛繩綁得太鬆，因衝擊、震動而導致捆綁鬆動。",
+        "resolution": "將木柄的凹槽挖得深於石刃長度的1/3。將葛繩繫緊後，塗上松脂膠或泥漿，晾乾，固定牢固，不晃動。"
+      },
+      {
+        "question": "我應該撿起什麼石頭來用作堅固的斧刃而不折斷？",
+        "causeDiagnostic": "沉積岩（頁岩）或裂開的河石不能承受打擊的衝擊，容易破裂。",
+        "resolution": "選擇石英岩或黑曜石，破碎後尖銳堅硬如玻璃。它必須是緻密的岩石，沒有細碎的顆粒，這樣在砍柴時不會破裂。"
+      }
+    ],
+    "PR-05": [
+      {
+        "question": "我編織了竹芋莖，但是當它們乾燥時，它們變得脆弱並且斷裂。",
+        "causeDiagnostic": "由於直接使用堅硬的外殼或纖維撚度不均勻，拉伸強度減弱。",
+        "resolution": "用木棒輕輕敲打生葛，除去堅硬的外皮，只分離薄而柔軟的內皮纖維。如果你順時針和逆時針扭轉兩股線，它們會變得更硬。"
+      },
+      {
+        "question": "隨著時間的推移，繩子的末端會鬆動。",
+        "causeDiagnostic": "由於纖維撚度的末端未完成，因此會發生散開。",
+        "resolution": "如果你在繩子的末端打一個結，或者用一根細線的葛根纖維緊緊地包裹住繩子的末端並製成鞭打領帶，它就永遠不會鬆動。"
+      }
+    ],
+    "PR-06": [
+      {
+        "question": "當我在烤箱裡生火時，泥牆就會裂開。",
+        "causeDiagnostic": "這是因為泥中沒有混入沙子或纖維，或在麵團乾燥之前突然開大火。",
+        "resolution": "以 2 份紅黏土、1 份沙、1 份乾草的比例混合並揉捏。搭建火坑後，前2至3小時必須用小樹枝慢慢擦乾，以防止形成裂縫。"
+      },
+      {
+        "question": "下雨的時候，泥火坑不是會隨著雨水融化嗎？",
+        "causeDiagnostic": "僅用溫和熱量烘烤的泥土可能會被大雨侵蝕其表面。",
+        "resolution": "如果長時間用高溫烘烤，它會像陶器一樣變硬，並且在雨中也不易融化。下雨時，用闊葉或白樺樹皮覆蓋作為屋頂，可以長期保存。"
+      }
+    ],
+    "PR-08": [
+      {
+        "question": "陷阱桿因無法承受岩石的重量而折斷。",
+        "causeDiagnostic": "由於溝槽挖得太深或腐爛，使用乾樹枝，棍節強度較弱。",
+        "resolution": "使用大約拇指粗細的硬橡樹枝。凹槽的深度必須稍微挖一下，小於樹枝厚度的1/3，以支撐岩石的重量。"
+      },
+      {
+        "question": "只是餌料消失，蓋石不​​落。",
+        "causeDiagnostic": "桿鎖非常堅硬，當小動物接觸時扳機無法釋放。",
+        "resolution": "用石刀將水平餌桿和對角線支撐木相交處的障礙物修平。必須調整靈敏度，以便即使你觸摸它，它也會在 0.1 秒內彈開。"
+      }
+    ],
+    "PR-09": [
+      {
+        "question": "我挖了一個洞，把木頭燒了，但它沒有變成木炭，只剩下灰燼。",
+        "causeDiagnostic": "這是因為當被土壤覆蓋時，會保留細小的空氣間隙並繼續供應氧氣，從而導致完全燃燒。",
+        "resolution": "當樹著火、煙霧消退時，用厚土蓋緊，並踩緊，隔絕100%的氧氣。沒有空氣，木材就不會燃燒並變成固體木炭。"
+      },
+      {
+        "question": "蓋土後什麼時候挖洞？",
+        "causeDiagnostic": "如果在內部溫度仍然很高時清除污垢，木炭暴露在外部空氣中就會重新點燃。",
+        "resolution": "等待至少 4 至 6 小時，讓孔外的土壤完全冷卻。硬黑木炭只有在完全冷卻然後挖出後才能安全收穫。"
+      }
+    ],
+    "PR-10": [
+      {
+        "question": "我擔心松香融化會導致鍋子或石頭著火。",
+        "causeDiagnostic": "松香含有高度易燃的萜烯油，接觸明火時會立即點燃。",
+        "resolution": "避免直接接觸明火。在距離紅炭火餘熱至少 10 公分或火坑旁的熱石頭上使用間接輻射熱緩慢熔化是安全的。"
+      },
+      {
+        "question": "硬化的松香黏合劑像玻璃一樣破裂。",
+        "causeDiagnostic": "當純鬆香硬化時，它非常脆（易碎），因此容易受到衝擊。",
+        "resolution": "將細磨的橡木炭粉與融化的松香以 1:1 的體積比混合。木炭粉碳顆粒可作為骨架，形成防水黏合劑，即使被斧頭擊打也不會破裂。"
+      }
+    ],
+    "PR-11": [
+      {
+        "question": "進了陷阱的魚不是又遊出來了嗎？",
+        "causeDiagnostic": "入口被縮小成一個尖的圓錐形脊柱，從物理上阻止了反向逃生。",
+        "resolution": "內漏斗兩端間隔5～6公分收縮，進去時可以推進去，出來時卻被彈力樹枝端部擋住，無法逃脫。"
+      },
+      {
+        "question": "如何防止魚籠在湍急的河水中漂走？",
+        "causeDiagnostic": "如果底部牽引力因水的阻力而減弱，則存在在下游失去的風險。",
+        "resolution": "透過在陷阱底部放置 2-3 個拳頭大小的河石來增加重量。在水流湍急的淺灘，應將木樁打入底部，並用竹繩將其綁牢。"
+      }
+    ],
+    "PR-12": [
+      {
+        "question": "為什麼雙燒爐產生的煙霧很少？",
+        "causeDiagnostic": "在內、外壁之間加熱的熱預熱空氣透過頂部孔吹出，重新燃燒未燃燒的氣體。",
+        "resolution": "正常火災中，木氣體不會燃盡，而是以煙霧的形式散發出來，但從上方噴嘴孔噴出的高溫氧氣與氣體相遇，產生渦流噴射火焰，將煙霧100%燒掉。"
+      },
+      {
+        "question": "在罐頭上鑽孔時，如何避免鋒利的金屬片傷到手？",
+        "causeDiagnostic": "鋒利的金屬毛邊從穿孔罐的內緣突出。",
+        "resolution": "安全的做法是鑽一個孔，將光滑的圓形卵石放入罐中，轉動它，然後按下任何伸出的金屬刨花，將其弄平。"
+      }
+    ],
+    "PR-13": [
+      {
+        "question": "如果接觸到鹼液，是否危險到足以燒傷皮膚？",
+        "causeDiagnostic": "濃縮橡鹼液呈強鹼性，具有溶解蛋白質的特性。",
+        "resolution": "如果手上有傷口，請避免徒手觸摸。如果它沾到你的皮膚上，可以立即用清水清洗，直到肥皂完全消失。"
+      },
+      {
+        "question": "我將鹼液和油混合，但它沒有硬化，結果像水一樣。",
+        "causeDiagnostic": "鹼液濃度太稀或溫度低，皂化反應無法充分發生。",
+        "resolution": "使用足夠濃的鹼水，讓雞蛋稍微浮起來。在微溫的餘熱下，用小樹枝朝一個方向徹底攪拌至少 30 分鐘，直到變成濃稠的優格濃稠度。"
+      }
+    ],
+    "PR-14": [
+      {
+        "question": "筋線（筋線）在縫紉過程中不斷變硬，從針眼中脫落。",
+        "causeDiagnostic": "這是一種自然現象，縫製過程中膠原纖維暴露在空氣中會變硬，唾液或水分會蒸發。",
+        "resolution": "用唾液或水輕輕沾濕指尖，輕輕摩擦腱絲末端 2 至 3 秒。膠原纖維立即變軟，輕輕地重新進入針眼，縫線的裂縫消失。"
+      },
+      {
+        "question": "冷風和水滴從皮革上的針孔滲入。",
+        "causeDiagnostic": "這是用燧石錐鑽出的導孔直徑略大於尚未乾燥收縮的腱絲厚度時所產生的微小間隙。",
+        "resolution": "不要恐慌。由於濕的筋線在室溫下自然乾燥，體積會收縮3-5%，並自行收緊孔洞。縫紉後一天，在接縫處塗上一層薄薄的加熱松樹脂灰泥 (PR-10)，形成完整的防寒防水膜。"
+      }
+    ],
+    "PR-15": [
+      {
+        "question": "當我吸氣時，我聞到木炭粉的味道並咳嗽。你還好嗎？",
+        "causeDiagnostic": "由於木炭磨得太細而產生的細粉塵由於缺乏水分而通過織物編織的間隙進入呼吸道。",
+        "resolution": "立即再滴幾滴水潤濕口罩外部，或在水中輕輕沖洗木炭粉，以過濾掉細小碎片，然後再製作過濾袋。在當前情況下，用手掌輕輕按壓表面，擠出木炭顆粒，然後緩慢移動它們，僅通過鼻子呼吸。"
+      },
+      {
+        "question": "戴著防彈面具你能滅火或長時間生存嗎？",
+        "causeDiagnostic": "這種面罩是一種簡單的物理化學吸收“短期逃生裝置”，沒有供氧裝置。",
+        "resolution": "切勿將其用於滅火或留在現場。在缺氧、密閉的火災空間中，無論過濾器有多好，也無法產生氧氣，導致人窒息。佩戴後，僅用於在10至15分鐘的黃金時間內逃往地面空曠區域時使用。"
+      }
+    ],
+    "PR-16": [
+      {
+        "question": "即使將水倒入沙子中，鍋內的溫度也不會降低太多。",
+        "causeDiagnostic": "陶器的外表面塗有釉或油，防止水滲出，或放置在潮濕無風的地方，蒸發就停止了。",
+        "resolution": "如果用手觸摸陶器的外表面，發現不是濕的而是乾燥的，則表示陶器的微孔已被堵塞。用粗糙的石頭輕輕打磨表面，打開毛孔，或用未上釉的陶器代替，然後將其移至樹蔭下微風吹過的通風口。"
+      },
+      {
+        "question": "控制鍋冰箱在季風季節或下雨天運作正常嗎？",
+        "causeDiagnostic": "如果空氣中的濕度太高（超過80-90%），陶器表面的水分不易蒸發到空氣中，降低蒸發熱的冷卻效率。",
+        "resolution": "在潮濕的日子裡，盡量將其放置在風吹的山脊陰涼處或通風的地方，以引起強制對流蒸發。如果用黎明時最冷的深谷水或泉水填充倒入沙層的水，由於水本身的寒冷，可以保持較低的溫度。"
+      }
+    ]
+  }
+}
