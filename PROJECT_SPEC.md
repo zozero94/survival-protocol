@@ -24,7 +24,7 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (19개 스위트 / 133개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 140개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
   - 듀얼 트랙 생존 고증 (Track A: 순수 자연물 원시 공학 / Track B: 포스트 아포칼립스 도시 폐자재 업사이클링 공학)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
@@ -72,10 +72,10 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-15, 총 14편)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-16, 총 15편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 16종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (94개 SVG 도면, 활성 감사 80종)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 18종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (99개 SVG 도면, 활성 감사 85종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
@@ -117,14 +117,14 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 15개 테스트 스위트 (139/139 단위 테스트 100% PASS)
-├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts 등
+├── tests/                       # [Quality Audit] 15개 테스트 스위트 (140/140 단위 테스트 100% PASS)
+├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 94종, 활성 정적 감사 80종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 99종, 활성 정적 감사 85종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:

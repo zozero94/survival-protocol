@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg1603" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="wetClayWall" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="50%" stop-color="#431407"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="wetSandGap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="waterPour" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="drop1603" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1603" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1603)"/>
+  <rect width="400" height="400" fill="url(#grid1603)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // SAND CAVITY FILLING &amp; WATER SATURATION</text>
+
+  <!-- Label 2: Sand Cavity Filling -->
+  <rect x="20" y="54" width="360" height="22" rx="2" fill="#141a23" stroke="#d97706" stroke-width="0.8"/>
+  <text x="28" y="69" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">두 토기 사이 3~4cm 틈새에 강 모래 밀실 충진</text>
+
+  <!-- Cross-Section of Sand Saturation & Capillary Evaporation -->
+  <g filter="url(#drop1603)">
+    <!-- Outer Pot Darkened by Moisture -->
+    <path d="M 85 120 L 315 120 L 290 278 C 285 290 265 294 200 294 C 135 294 115 290 110 278 Z" fill="url(#wetClayWall)" stroke="#ea580c" stroke-width="1.5"/>
+
+    <!-- Saturated Wet Sand Cavity (Left, Bottom, Right) -->
+    <path d="M 97 125 L 303 125 L 280 272 L 120 272 Z" fill="url(#wetSandGap)" stroke="#38bdf8" stroke-width="1"/>
+
+    <!-- Inner Dry Storage Pot -->
+    <path d="M 132 120 L 268 120 L 254 244 L 146 244 Z" fill="#c2410c" stroke="#fdba74" stroke-width="1.5"/>
+    <path d="M 142 120 L 258 120 L 245 234 L 155 234 Z" fill="#0b1118"/>
+
+    <!-- Cold Stream Water Pouring into Annular Sand Gap -->
+    <path d="M 105 82 C 108 98 112 110 112 125" stroke="url(#waterPour)" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 295 82 C 292 98 288 110 288 125" stroke="url(#waterPour)" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="112" cy="145" r="2.5" fill="#7dd3fc"/>
+    <circle cx="116" cy="175" r="2.5" fill="#7dd3fc"/>
+    <circle cx="288" cy="145" r="2.5" fill="#7dd3fc"/>
+    <circle cx="284" cy="175" r="2.5" fill="#7dd3fc"/>
+
+    <!-- Outward Capillary Evaporation Arrows (Heat Extraction) -->
+    <path d="M 92 175 L 55 175" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="55,171 55,179 47,175" fill="#38bdf8"/>
+    <path d="M 98 220 L 60 220" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="60,216 60,224 52,220" fill="#38bdf8"/>
+
+    <path d="M 308 175 L 345 175" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="345,171 345,179 353,175" fill="#38bdf8"/>
+    <path d="M 302 220 L 340 220" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="340,216 340,224 348,220" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3: Cold Water Saturation -->
+  <rect x="20" y="302" width="360" height="22" rx="2" fill="#141a23" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="28" y="317" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">차가운 계곡물 주입으로 모래층 100% 수분 포화</text>
+
+  <!-- Label 4: Capillary Seepage & Evaporation -->
+  <rect x="20" y="334" width="360" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="28" y="349" fill="#94a3b8" font-family="monospace" font-size="8.5" font-weight="bold">외벽 미세 기공을 통한 수분 삼투 및 기화 냉각 개시</text>
+
+  <!-- Label 5: Step 3 Callout -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="9.5" font-weight="bold">[3단계 핵심] 외벽이 진한 고동색으로 젖으며 냉기 형성</text>
+</svg>

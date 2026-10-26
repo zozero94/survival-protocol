@@ -12,6 +12,7 @@
     "webhook:info": "node --experimental-strip-types src/webhook.ts info",
     "webhook:local": "node --experimental-strip-types src/webhook.ts local",
     "typecheck": "tsc --noEmit",
+    "serve": "node --experimental-strip-types scripts/serve.ts",
     "gdrive:sync": "node --experimental-strip-types src/gdrive-sync.ts",
     "sync:timestamps": "node --experimental-strip-types scripts/sync-timestamps.ts",
     "audit:svg-design": "node --experimental-strip-types scripts/audit-svg-design.ts",

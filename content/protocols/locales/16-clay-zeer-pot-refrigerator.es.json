@@ -1,0 +1,198 @@
+{
+  "protocolId": "PR-16",
+  "category": "FOOD",
+  "title": "Refrigerador Natural Sin Electricidad con Vasijas de Arcilla y Arena Húmeda (Zeer Pot de Campo)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFENSA CONTRA PUTREFACCIÓN DE CARNE Y CONSERVACIÓN FRÍA SIN ELECTRICIDAD]",
+  "summary": "En el calor del verano o en una zona de desastre sin red eléctrica, la carne y el pescado obtenidos mediante [trampas y caza](/protocol-08.html) o [nasas primitivas para peces](/protocol-11.html) crían larvas de mosca y bacterias putrefactas en medio día a temperatura ambiente, causando intoxicación alimentaria mortal y enteritis. En el campo sin electricidad ni hielo, debes construir de inmediato un refrigerador evaporativo 'Zeer Pot de Campo' anidando dos 'vasijas de arcilla porosa sin esmaltar' de distinto tamaño cocidas bajo el principio de un [horno de barro](/protocol-06.html), rellenando el espacio entre ellas con arena de río de un [filtro de agua natural](/protocol-01.html) y vertiendo agua fría para que la evaporación robe el calor circundante. A medida que el agua se evapora por los microporos de la vasija exterior, mantiene el interior entre 8 y 12°C más frío que el exterior; guardar alimentos dentro de la cámara desinfectada con [jabón natural de lejía](/protocol-13.html) conserva las raciones frescas por más de una semana sin electricidad.",
+  "timeRequired": "40 Min (Selección y Sellado 15m + Relleno de Arena y Riego 15m + Instalación a la Sombra 10m)",
+  "successRate": "95% (Usando vasijas de terracota porosa sin esmalte y ubicándolas a la sombra con brisa)",
+  "difficulty": "Fácil (Mantener grosor de arena de dos nudillos y evitar entrada de agua a la cámara)",
+  "outputPerHour": "Construye 1 refrigerador de 20L sin energía que conserva 5kg de carne y alimentos por 7 días",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Vasijas de Arcilla Porosa Sin Esmaltar (Una Grande Exterior y Una Pequeña Interior)",
+      "desc": "Vasijas de terracota marrón rojiza cocidas a baja temperatura sin recubrimiento brillante, similares a un [horno de barro](/protocol-06.html). Combina una vasija grande (boca de dos palmos, ~35-40cm) con una más pequeña que quepa dentro (boca de un palmo y medio, ~25cm) para que el agua rezume por los microporos y se evapore enfriando el núcleo."
+    },
+    {
+      "id": "mat-02",
+      "name": "Arena de Río de Cuarcita Lavada (Aprox. 4-5kg)",
+      "desc": "Arena limpia de arroyo usada en el [filtro de agua natural](/protocol-01.html). Rellena el hueco entre ambas vasijas para retener agua fría durante horas y distribuir la humedad uniformemente por toda la pared exterior."
+    },
+    {
+      "id": "mat-03",
+      "name": "Agua Fría de Arroyo y 1 Paño de Arpillera o Cáñamo Húmedo",
+      "desc": "Agua clara añadida dos veces al día a la arena, más un paño grueso de arpillera o algodón natural (mismo material de la [máscara de carbón de campo](/protocol-15.html)) para cubrir la boca superior contra el sol y las moscas."
+    },
+    {
+      "id": "mat-04",
+      "name": "Pegamento de Resina de Pino y Pasta de Arcilla para Sellar Agujeros Base",
+      "desc": "[Pegamento de resina de pino](/protocol-10.html) caliente y barro espeso para tapar por completo los orificios de drenaje inferiores al reutilizar macetas de barro."
+    },
+    {
+      "id": "mat-05",
+      "name": "3-4 Troncos de Roble del Grosor del Antebrazo como Soporte",
+      "desc": "Ramas resistentes que elevan la base de la vasija un palmo sobre el suelo para bloquear el calor terrestre y abrir un canal de viento inferior."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Seleccionar 2 Vasijas de Arcilla Sin Esmaltar, Sellar el Fondo con Resina y Desinfectar",
+      "description": "1. **Seleccionar Vasijas Sin Esmalte**: Elige **una vasija grande de dos palmos de boca (~38cm) y una pequeña de un palmo y medio (~26cm)** sin esmalte brillante para que el agua atraviese las paredes y se evapore.\n2. **Sellar Orificios de Drenaje**: Para evitar fugas de agua, tapa cualquier agujero en el fondo con una laja de piedra plana y séllalo con [pegamento de resina de pino caliente](/protocol-10.html) y arcilla hasta endurecer.\n3. **Desinfectar Cámara Interior**: Elimina bacterias lavando el interior de la vasija pequeña con agua hervida y [jabón natural de lejía](/protocol-13.html), secándola completamente al sol.",
+      "actionNote": "> Prohibido Usar Vasijas Esmaltadas: Los tarros con esmalte brillante como vidrio o cubos plásticos impiden que el agua atraviese la pared, reduciendo el enfriamiento a cero. Usa siempre terracota rojiza áspera que se oscurezca al mojarse.",
+      "svgFileName": "pr16-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // UNGLAZED CLAY POT SELECTION & SEALING",
+        "Seleccionar vasijas porosas sin esmalte (38cm y 26cm)",
+        "Sellar drenaje base con piedra plana y resina de pino",
+        "Desinfectar interior con agua hervida y jabón de lejía",
+        "[Clave Paso 1] Asegurar microporos para evaporación"
+      ],
+      "deepDive": {
+        "badge": "THERMODYNAMICS & EVAPORATIVE COOLING",
+        "title": "Acción Capilar de la Arcilla Porosa y Calor Latente de Vaporización (2,260 J/g)",
+        "text": "La terracota rojiza cocida a 700-900°C sin esmalte posee decenas de miles de microporos capilares entre los granos de arcilla. Al verter agua en la arena entre las dos vasijas, la capilaridad lleva la humedad lentamente hacia la cara externa de la vasija grande. Cuando la brisa evapora esa agua en vapor, cada gramo extrae 540 calorías (2,260 julios) de calor latente de la cámara interna, manteniendo el interior a 12-15°C incluso cuando el verano supera los 35°C.",
+        "fieldSpecs": [
+          {
+            "name": "Vasija de Arcilla Terracota Porosa Sin Esmaltar",
+            "scientificName": "Unglazed Porous Terracotta Earthenware",
+            "categoryTag": "Radiador Evaporativo de Campo / Vasija Capilar",
+            "imageFileName": "id-unglazed-terracotta-clay.jpg",
+            "hudCode": "FIG. BIO-16A // MACRO OPTIC",
+            "hudStatus": "CAPILLARY POROSITY: OPTIMAL",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "**Marrón rojizo claro mate** en seco, cambiando a **marrón chocolate oscuro** al mojarse."
+              },
+              {
+                "label": "TEXTURA",
+                "value": "Sin brillo vítreo, con **tacto áspero como lija fina y microporos transpirables**."
+              },
+              {
+                "label": "ABSORCIÓN",
+                "value": "Una gota de agua **se absorbe en 3 segundos**, dejando una marca húmeda y fresca."
+              }
+            ],
+            "fieldUse": "Empleada como doble vasija concéntrica: carcasa exterior evaporativa y cámara interior seca"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Tender una Cama de Arena Húmeda en el Fondo y Centrar la Vasija Pequeña a Nivel",
+      "description": "1. **Tender Arena Aislante Base**: Extiende [arena de río de cuarcita](/protocol-01.html) lavada en el fondo de la vasija grande con un grosor de **dos nudillos (~4-5cm)** para aislar el calor del suelo.\n2. **Centrar la Vasija Pequeña**: Coloca la vasija pequeña en el centro exacto sobre la arena, girándola suavemente hasta asentarla nivelada y firme.\n3. **Nivelar Bordes Superiores**: Ajusta la arena base para que los bordes superiores de ambas vasijas queden a la misma altura, evitando que arena o agua entren a la cámara de comida.",
+      "actionNote": "> Mantener Espacio Concéntrico Uniforme: Si la vasija interna toca la pared externa, el calor exterior pasará directo a la comida. Céntrala dejando un espacio uniforme de dos dedos (~3-4cm) en todo el contorno.",
+      "svgFileName": "pr16-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONCENTRIC POT NESTING & BASE BEDDING",
+        "Tender 4-5cm (dos nudillos) de arena lavada en la base",
+        "Asentar la vasija pequeña nivelada en el centro exacto",
+        "Dejar espacio uniforme de dos dedos (3-4cm) alrededor",
+        "[Clave Paso 2] Nivelar bordes superiores de las vasijas"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Rellenar el Hueco con Arena de Río y Verter Agua Fría de Arroyo hasta Saturar",
+      "description": "1. **Rellenar Hueco Lateral con Arena**: Llena la **ranura anular de dos dedos (3-4cm)** entre ambas vasijas con arena limpia hasta un nudillo (2cm) por debajo del borde.\n2. **Compactar y Verter Agua Fría**: Pincha la arena con una ramita para eliminar bolsas de aire y vierte lentamente agua fría de arroyo hasta saturar toda la arena.\n3. **Verificar Trasudación Exterior**: Añade agua hasta que toda la pared exterior de la vasija grande se torne **marrón oscuro húmedo y se sienta fría al tocarla con el dorso de la mano**.",
+      "actionNote": "> Evitar Inundar la Cámara Interna: Verter agua muy rápido salpica agua turbia dentro de la vasija pequeña. Tapa primero la boca interna con una tabla o paño mientras viertes agua despacio en el anillo de arena.",
+      "svgFileName": "pr16-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SAND CAVITY FILLING & WATER SATURATION",
+        "Rellenar hueco de 3-4cm con arena de río compactada",
+        "Verter agua fría de arroyo hasta saturar el 100%",
+        "El agua rezuma por los microporos e inicia el frío",
+        "[Clave Paso 3] Pared externa oscura y fría al tacto"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Envolver Comida en Hojas, Cubrir con Arpillera Húmeda y Elevar a la Sombra Ventilada",
+      "description": "1. **Guardar Raciones con Higiene**: Envuelve [carne cazada](/protocol-08.html), [pescado de nasa](/protocol-11.html) o frutos en hojas anchas limpias y colócalos en la cámara interna seca sin amontonarlos.\n2. **Cubrir con Arpillera Húmeda**: Cubre toda la boca superior con un paño grueso de arpillera o cáñamo empapado en agua para bloquear el sol y las moscas, metiendo los bordes en la arena húmeda.\n3. **Elevar sobre Troncos en Sombra Ventilada**: Coloca el refrigerador sobre **troncos de roble bajo sombra de árboles donde corra brisa**, y recarga agua fría dos veces al día (mañana y tarde).",
+      "actionNote": "> Prohibido Ubicar en Sitios Cerrados Húmedos: Poner la vasija en una cueva húmeda o refugio cerrado sin viento detiene la evaporación y el enfriamiento. Instálala siempre a la sombra donde sople brisa seca constante.",
+      "svgFileName": "pr16-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WET BURLAP COVER & SHADED AIRFLOW SETUP",
+        "Guardar carne envuelta en hojas en cámara interna seca",
+        "Cubrir con arpillera húmeda contra moscas y calor",
+        "Elevar sobre troncos en sombra con brisa inferior",
+        "[Clave Paso 4] Recargar agua 2 veces/día (12-15°C)"
+      ],
+      "deepDive": {
+        "badge": "MICRO-CLIMATE & HYGIENE",
+        "title": "Escudo Convectivo y Defensa contra Larvas de Mosca mediante Red de Arpillera Húmeda",
+        "text": "La causa principal de putrefacción en el campo es la puesta de huevos de mosca (gusanos) y la entrada de aire caliente. La arpillera o cáñamo empapado forma una malla vegetal de 1-2mm que bloquea el 100% de las moscas. Al mismo tiempo, el agua que se evapora del paño superior enfría el aire sobre la boca, creando una 'corriente de convección descendente fría' que baja al fondo de la vasija pequeña y enfría toda la cámara de manera uniforme.",
+        "fieldSpecs": [
+          {
+            "name": "Cubierta Tejida de Arpillera y Cáñamo Húmedo",
+            "scientificName": "Water-Soaked Coarse Hemp & Burlap Fabric",
+            "categoryTag": "Parasol Evaporativo / Filtro Físico Antinsectos",
+            "imageFileName": "id-wet-burlap-hemp-cloth.jpg",
+            "hudCode": "FIG. BIO-16B // MACRO OPTIC",
+            "hudStatus": "EVAPORATION & PEST SHIELD: HIGH",
+            "traits": [
+              {
+                "label": "TEJIDO/WEAVE",
+                "value": "Fibras vegetales gruesas tejidas en una **malla transpirable con microporos de 1-2mm**."
+              },
+              {
+                "label": "HUMEDAD/MOISTURE",
+                "value": "Las fibras hinchadas retienen agua formando una **película fría evaporativa superior**."
+              },
+              {
+                "label": "ESCUDO/SHIELD",
+                "value": "Deja salir el vapor libremente mientras **bloquea por completo moscas y polvo**."
+              }
+            ],
+            "fieldUse": "Cubre toda la boca del Zeer Pot con los bordes hundidos en la arena húmeda para auto-riego capilar"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Mortal: Usar Tarros de Cerámica Esmaltada Brillante o Dejar que se Acumule Agua Dentro de la Cámara de Comida",
+    "description": "Usar tarros esmaltados brillantes, latas metálicas o cubos plásticos impide que la humedad salga a la pared externa, reduciendo el enfriamiento al 0% y atrapando el calor hasta pudrir la carne en 3 horas. Además, si entra agua a la vasija pequeña y toca la carne cruda, las bacterias anaerobias se multiplican explosivamente. Mantén siempre la arena exterior húmeda, pero la cámara interna totalmente seca y fresca.",
+    "consequence": "Consecuencia: Efecto invernadero por nula evaporación, putrefacción rápida de la carne e intoxicación alimentaria o sepsis mortal"
+  },
+  "shortsScript": {
+    "hook": "¡Dejar la carne cazada al aire libre sin electricidad hace que se llene de gusanos en medio día! ¡Haz un refrigerador sin energía con dos vasijas de barro!",
+    "body": "Prepara una vasija de barro grande y una pequeña sin esmalte y sella sus agujeros con resina de pino. Pon dos nudillos de arena de río en el fondo de la grande y centra la pequeña. ¡Llena el hueco entre ambas con arena y vierte abundante agua fría de arroyo! Mete la carne, cubre con arpillera húmeda y ponlo a la sombra con brisa. ¡El agua se evapora por los poros bajando la temperatura más de 10°C y conservando la comida fresca toda la semana!",
+    "outro": "La física te mantiene vivo sin electricidad. ¡Suscríbete al manual de supervivencia ahora!"
+  },
+  "outcome": {
+    "title": "Refrigerador Evaporativo de Doble Vasija (Zeer Pot) Activo y Raciones Conservadas en Frío",
+    "badge": "ESTÁNDAR DE VERIFICACIÓN // FIELD EVAPORATIVE COOLER",
+    "standard": "Toda la pared exterior debe mantenerse húmeda de color marrón rojizo oscuro y fría al tacto con el dorso de la mano, mientras la cámara interna permanece seca y entre 8 y 12°C más fría que el aire exterior",
+    "description": "Toda la pared exterior debe mantenerse húmeda de color marrón rojizo oscuro y fría al tacto con el dorso de la mano, mientras la cámara interna permanece seca y entre 8 y 12°C más fría que el aire exterior",
+    "svgFileName": "pr16-outcome.svg",
+    "svgLabels": [
+      "PR-16 OUTCOME // ZEER POT EVAPORATIVE CLAY REFRIGERATOR",
+      "Vasija Exterior Porosa Sin Esmalte (Pared Evaporativa)",
+      "Arena de Cuarcita Saturada de Agua (Matriz Fría 3-4cm)",
+      "Cámara Interna Seca Estéril (Mantiene 8-12°C Menos)",
+      "Cubierta de Arpillera Húmeda (Convección Fría)",
+      "Soporte de Troncos en Sombra (Aireación 360°)",
+      "FIELD VERIFIED // ZERO-POWER COLD STORAGE (7-DAY PRESERVATION)"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Vertí agua en la arena, pero el interior de la vasija pequeña no se enfría mucho.",
+      "causeDiagnostic": "La superficie de la vasija exterior tiene esmalte o grasa que bloquea la salida de agua, o está en un sitio húmedo sin viento donde no hay evaporación.",
+      "resolution": "Toca el exterior de la vasija grande: si está seca en vez de húmeda, los poros están tapados. Lija suavemente el exterior con una piedra áspera o cámbiala por barro sin esmaltar, y muévela a una sombra donde corra brisa."
+    },
+    {
+      "question": "¿Funciona el refrigerador Zeer Pot en días lluviosos o de alta humedad?",
+      "causeDiagnostic": "Cuando la humedad ambiental supera el 80-90%, el agua de la pared se evapora más lento al aire, reduciendo la eficiencia del enfriamiento evaporativo.",
+      "resolution": "En días húmedos, colócalo bajo sombra en una cresta o corredor de viento fuerte para forzar la evaporación convectiva. Rellenar la arena al amanecer con el agua más fría de manantial o arroyo profundo también mantiene el frío por masa térmica."
+    }
+  ],
+  "createdAt": "2026-10-26T00:05:00.000Z",
+  "updatedAt": "2026-10-26T00:08:42.165Z",
+  "contentHash": "418459d2aa16b06e"
+}

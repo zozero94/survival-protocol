@@ -1,0 +1,198 @@
+{
+  "protocolId": "PR-16",
+  "category": "FOOD",
+  "title": "Refrigerador Natural Sem Energia com Potes de Barro e Areia Úmida (Zeer Pot de Campo)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFESA CONTRA DETERIORAÇÃO DE CARNE E CONSERVAÇÃO FRIA SEM ELETRICIDADE]",
+  "summary": "No calor do verão ou em uma zona de desastre sem rede elétrica, a carne e o peixe obtidos com [armadilhas e caça](/protocol-08.html) ou [covos primitivos para peixes](/protocol-11.html) criam larvas de mosca e bactérias putrefatas em meio dia à temperatura ambiente, causando intoxicação alimentar fatal e enterite. No campo sem eletricidade ou gelo, você deve construir imediatamente um refrigerador evaporativo 'Zeer Pot de Campo' encaixando dois 'potes de barro poroso não esmaltado' de tamanhos diferentes cozidos sob o princípio do [forno de barro](/protocol-06.html), preenchendo o espaço entre eles com areia de rio do [filtro de água natural](/protocol-01.html) e despejando água fria para que a evaporação retire o calor ao redor. Como a água evapora continuamente pelos microporos da parede externa, mantém o interior de 8 a 12°C mais frio que o ar externo; guardar alimentos na câmara desinfetada com [sabão natural de lixívia](/protocol-13.html) conserva as rações frescas por mais de uma semana sem energia.",
+  "timeRequired": "40 Min (Seleção e Vedação 15m + Preenchimento de Areia e Água 15m + Sombra 10m)",
+  "successRate": "95% (Usando potes de terracota porosa sem esmalte e posicionando na sombra ventilada)",
+  "difficulty": "Fácil (Manter espessura de areia de dois nós de dedo e evitar entrada de água na câmara)",
+  "outputPerHour": "Constrói 1 refrigerador de 20L sem energia que conserva 5kg de carne e alimentos por 7 dias",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Potes de Barro Poroso Sem Esmalte (Um Grande Externo e Um Pequeno Interno)",
+      "desc": "Potes de terracota marrom-avermelhada cozidos em baixa temperatura sem esmalte brilhante, semelhantes ao [forno de barro](/protocol-06.html). Combine um pote grande (boca de dois palmos, ~35-40cm) com um menor que caiba dentro (boca de um palmo e meio, ~25cm) para que a água transpire pelos microporos e evapore resfriando o interior."
+    },
+    {
+      "id": "mat-02",
+      "name": "Areia de Rio de Quartzito Lavada (Aprox. 4-5kg)",
+      "desc": "Areia limpa de riacho usada no [filtro de água natural](/protocol-01.html). Preenche a fresta entre os dois potes para reter água fria por horas e distribuir a umidade uniformemente por toda a parede externa."
+    },
+    {
+      "id": "mat-03",
+      "name": "Água Fria de Riacho e 1 Pano de Aniagem ou Cânhamo Úmido",
+      "desc": "Água limpa reposta duas vezes ao dia na areia, mais um pano grosso de aniagem ou algodão natural (mesmo material da [máscara de carvão de campo](/protocol-15.html)) para cobrir a boca superior contra o sol e moscas."
+    },
+    {
+      "id": "mat-04",
+      "name": "Cola de Resina de Pinho e Pasta de Argila para Vedar Furos na Base",
+      "desc": "[Cola de resina de pinho](/protocol-10.html) aquecida e barro firme para tapar completamente os furos de drenagem inferiores ao reutilizar vasos de barro."
+    },
+    {
+      "id": "mat-05",
+      "name": "3-4 Toras de Carvalho da Grossura do Antebraço como Suporte",
+      "desc": "Galhos resistentes que elevam a base do pote um palmo acima do solo para bloquear o calor da terra e abrir um canal de vento inferior."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Selecionar 2 Potes de Barro Sem Esmalte, Vedar o Fundo com Resina e Desinfetar",
+      "description": "1. **Selecionar Potes Sem Esmalte**: Escolha **um pote grande com boca de dois palmos (~38cm) e um pequeno de um palmo e meio (~26cm)** sem esmalte brilhante para que a água atravesse as paredes e evapore.\n2. **Vedar Furos de Drenagem**: Para evitar vazamento de água, tape qualquer furo no fundo com uma lasca de pedra plana e vede com [cola de resina de pinho quente](/protocol-10.html) e argila até endurecer.\n3. **Desinfetar Câmara Interna**: Elimine bactérias lavando o interior do pote pequeno com água fervida e [sabão natural de lixívia](/protocol-13.html), secando-o totalmente ao sol.",
+      "actionNote": "> Proibido Usar Potes Esmaltados: Potes com esmalte brilhante como vidro ou baldes plásticos impedem que a água atravesse a parede, reduzindo o resfriamento a zero. Use sempre terracota avermelhada áspera que escureça ao molhar.",
+      "svgFileName": "pr16-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // UNGLAZED CLAY POT SELECTION & SEALING",
+        "Selecionar potes porosos sem esmalte (38cm e 26cm)",
+        "Vedar furo base com pedra plana e resina de pinho",
+        "Desinfetar interior com água fervida e sabão de cinza",
+        "[Chave Passo 1] Garantir microporos para evaporação"
+      ],
+      "deepDive": {
+        "badge": "THERMODYNAMICS & EVAPORATIVE COOLING",
+        "title": "Ação Capilar da Argila Porosa e Calor Latente de Vaporização (2.260 J/g)",
+        "text": "A terracota avermelhada cozida a 700-900°C sem esmalte possui dezenas de milhares de microporos capilares entre os grãos de argila. Ao despejar água na areia entre os dois potes, a capilaridade leva a umidade lentamente até a face externa do pote grande. Quando a brisa evapora essa água em vapor, cada grama extrai 540 calorias (2.260 joules) de calor latente da câmara interna, mantendo o interior entre 12 e 15°C mesmo no verão de 35°C.",
+        "fieldSpecs": [
+          {
+            "name": "Pote de Barro Terracota Poroso Sem Esmalte",
+            "scientificName": "Unglazed Porous Terracotta Earthenware",
+            "categoryTag": "Radiador Evaporativo de Campo / Vaso Capilar",
+            "imageFileName": "id-unglazed-terracotta-clay.jpg",
+            "hudCode": "FIG. BIO-16A // MACRO OPTIC",
+            "hudStatus": "CAPILLARY POROSITY: OPTIMAL",
+            "traits": [
+              {
+                "label": "COR/COLOR",
+                "value": "**Marrom-avermelhado claro fosco** quando seco, mudando para **marrom-chocolate escuro** ao molhar."
+              },
+              {
+                "label": "TEXTURA/TEXTURE",
+                "value": "Sem brilho vítreo, com **toque áspero como lixa fina e microporos respiráveis**."
+              },
+              {
+                "label": "ABSORÇÃO/ABSORPTION",
+                "value": "Uma gota de água **é absorvida em 3 segundos**, deixando uma marca úmida e fria."
+              }
+            ],
+            "fieldUse": "Usado como vaso duplo concêntrico: casca externa evaporativa e câmara interna seca"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Espalhar Areia Úmida no Fundo e Centralizar o Pote Pequeno Nivelado",
+      "description": "1. **Espalhar Areia Isolante na Base**: Espalhe [areia de rio de quartzito](/protocol-01.html) lavada no fundo do pote grande com espessura de **dois nós de dedo (~4-5cm)** para bloquear o calor do solo.\n2. **Centralizar o Pote Pequeno**: Coloque o pote pequeno exatamente no centro sobre a areia, girando suavemente até assentar nivelado e firme.\n3. **Nivelar Bordas Superiores**: Ajuste a areia da base para que as bordas superiores de ambos os potes fiquem na mesma altura, evitando que areia ou água entrem na câmara de alimentos.",
+      "actionNote": "> Manter Espaço Concêntrico Uniforme: Se o pote interno encostar na parede externa, o calor de fora passará direto para a comida. Centralize-o mantendo uma fresta uniforme de dois dedos (~3-4cm) ao redor.",
+      "svgFileName": "pr16-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONCENTRIC POT NESTING & BASE BEDDING",
+        "Espalhar 4-5cm (dois nós) de areia lavada na base",
+        "Assentar o pote pequeno nivelado no centro exato",
+        "Manter espaço uniforme de dois dedos (3-4cm) ao redor",
+        "[Chave Passo 2] Nivelar bordas superiores dos potes"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Preencher a Fresta com Areia de Rio e Despejar Água Fria de Riacho até Saturar",
+      "description": "1. **Preencher Fresta Lateral com Areia**: Encha o **espaço anelar de dois dedos (3-4cm)** entre os dois potes com areia limpa até um nó de dedo (2cm) abaixo da borda.\n2. **Compactar e Despejar Água Fria**: Cutuque a areia com um graveto fino para eliminar bolsas de ar e despeje lentamente água fria de riacho até saturar toda a areia.\n3. **Verificar Transpiração Externa**: Adicione água até que toda a parede externa do pote grande fique **marrom-escura úmida e fria ao tocar com as costas da mão**.",
+      "actionNote": "> Evitar Inundar a Câmara Interna: Despejar água rápido demais espirra água barrenta dentro do pote pequeno. Cubra primeiro a boca interna com uma tábua ou pano enquanto despeja água devagar no anel de areia.",
+      "svgFileName": "pr16-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SAND CAVITY FILLING & WATER SATURATION",
+        "Preencher fresta de 3-4cm com areia compactada",
+        "Despejar água fria de riacho até saturar 100%",
+        "A água transpira pelos microporos e inicia o frio",
+        "[Chave Passo 3] Parede externa escura e fria ao toque"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Envolver Comida em Folhas, Cobrir com Aniagem Úmida e Elevar na Sombra Ventilada",
+      "description": "1. **Guardar Rações com Higiene**: Envolva [carne caçada](/protocol-08.html), [peixe de covo](/protocol-11.html) ou frutos em folhas largas limpas e coloque-os na câmara interna seca sem amontoar.\n2. **Cobrir com Aniagem Úmida**: Cubra toda a boca superior com um pano grosso de aniagem ou cânhamo encharcado de água para bloquear sol e moscas, encostando as bordas na areia úmida.\n3. **Elevar sobre Toras na Sombra Ventilada**: Coloque o refrigerador sobre **toras de carvalho sob sombra de árvores com brisa**, e reponha água fria duas vezes ao dia (manhã e tarde).",
+      "actionNote": "> Proibido Colocar em Locais Fechados Úmidos: Colocar o pote em uma caverna úmida ou abrigo fechado sem vento interrompe a evaporação e o resfriamento. Instale sempre na sombra onde sopre brisa seca constante.",
+      "svgFileName": "pr16-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WET BURLAP COVER & SHADED AIRFLOW SETUP",
+        "Guardar carne envolta em folhas na câmara interna seca",
+        "Cobrir com aniagem úmida contra moscas e calor",
+        "Elevar sobre toras na sombra com circulação de ar",
+        "[Chave Passo 4] Repor água 2x ao dia (frio 12-15°C)"
+      ],
+      "deepDive": {
+        "badge": "MICRO-CLIMATE & HYGIENE",
+        "title": "Escudo Convectivo e Defesa contra Larvas de Mosca via Malha de Aniagem Úmida",
+        "text": "A principal causa de apodrecimento no campo são ovos de mosca (larvas) e entrada de ar quente. A aniagem ou cânhamo encharcado forma uma grade vegetal de 1-2mm que bloqueia 100% das moscas. Ao mesmo tempo, a água que evapora do pano superior resfria o ar sobre a boca, criando uma 'corrente de convecção descendente fria' que desce ao fundo do pote pequeno e resfria toda a câmara uniformemente.",
+        "fieldSpecs": [
+          {
+            "name": "Cobertura Tecida de Aniagem e Cânhamo Úmido",
+            "scientificName": "Water-Soaked Coarse Hemp & Burlap Fabric",
+            "categoryTag": "Quebra-Sol Evaporativo / Filtro Físico Anti-Insetos",
+            "imageFileName": "id-wet-burlap-hemp-cloth.jpg",
+            "hudCode": "FIG. BIO-16B // MACRO OPTIC",
+            "hudStatus": "EVAPORATION & PEST SHIELD: HIGH",
+            "traits": [
+              {
+                "label": "TRAMA/WEAVE",
+                "value": "Fibras vegetais grossas tecidas em **malha respirável com microporos de 1-2mm**."
+              },
+              {
+                "label": "UMIDADE/MOISTURE",
+                "value": "Fibras inchadas retêm água formando uma **película fria evaporativa no topo**."
+              },
+              {
+                "label": "ESCUDO/SHIELD",
+                "value": "Deixa o vapor sair livremente enquanto **bloqueia totalmente moscas e poeira**."
+              }
+            ],
+            "fieldUse": "Cobre toda a boca do Zeer Pot com as pontas mergulhadas na areia úmida para auto-irrigação capilar"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Usar Potes de Cerâmica Esmaltada Brilhante ou Deixar Acumular Água Dentro da Câmara de Comida",
+    "description": "Usar potes esmaltados brilhantes, latas metálicas ou baldes plásticos impede que a umidade saia para a parede externa, derrubando o resfriamento para 0% e prendendo o calor até apodrecer a carne em 3 horas. Além disso, se entrar água no pote pequeno e tocar na carne crua, bactérias anaeróbias multiplicam-se explosivamente. Mantenha sempre a areia externa úmida, mas a câmara interna totalmente seca e fria.",
+    "consequence": "Consequência: Efeito estufa por falta de evaporação, apodrecimento rápido da carne e intoxicação alimentar ou sepse fatal"
+  },
+  "shortsScript": {
+    "hook": "Deixar a carne caçada ao ar livre sem energia faz criar larvas em meio dia! Faça uma geladeira sem eletricidade com dois potes de barro!",
+    "body": "Pegue um pote de barro grande e um pequeno sem esmalte e vede os furos do fundo com resina de pinho. Espalhe dois nós de dedo de areia de rio no fundo do grande e centralize o pequeno. Encha a fresta entre eles com areia e despeje bastante água fria de riacho! Coloque a carne dentro, cubra com aniagem úmida e deixe na sombra ventilada. A água evapora pelos poros baixando a temperatura em mais de 10°C e mantendo a comida fresca a semana toda!",
+    "outro": "A física mantém você vivo sem eletricidade. Inscreva-se no manual de sobrevivência agora!"
+  },
+  "outcome": {
+    "title": "Refrigerador Evaporativo de Pote Duplo (Zeer Pot) Ativo e Rações Conservadas a Frio",
+    "badge": "PADRÃO DE VERIFICAÇÃO // FIELD EVAPORATIVE COOLER",
+    "standard": "Toda a parede externa deve permanecer úmida em tom marrom-avermelhado escuro e fria ao toque com as costas da mão, enquanto a câmara interna permanece seca e de 8 a 12°C mais fria que o ar externo",
+    "description": "Toda a parede externa deve permanecer úmida em tom marrom-avermelhado escuro e fria ao toque com as costas da mão, enquanto a câmara interna permanece seca e de 8 a 12°C mais fria que o ar externo",
+    "svgFileName": "pr16-outcome.svg",
+    "svgLabels": [
+      "PR-16 OUTCOME // ZEER POT EVAPORATIVE CLAY REFRIGERATOR",
+      "Pote Externo Poroso Sem Esmalte (Parede Evaporativa)",
+      "Areia de Quartzito Saturada (Matriz Fria de 3-4cm)",
+      "Câmara Interna Seca Estéril (Mantém 8-12°C a Menos)",
+      "Cobertura de Aniagem Úmida (Convecção Fria)",
+      "Suporte de Toras na Sombra (Circulação 360°)",
+      "FIELD VERIFIED // ZERO-POWER COLD STORAGE (7-DAY PRESERVATION)"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Coloquei água na areia, mas o interior do pote pequeno não está ficando muito frio.",
+      "causeDiagnostic": "A superfície do pote externo tem esmalte ou óleo bloqueando a saída de água, ou o pote está em local úmido sem vento onde não há evaporação.",
+      "resolution": "Toque o exterior do pote grande: se estiver seco em vez de úmido, os poros estão entupidos. Lixe levemente o exterior com uma pedra áspera ou troque por barro sem esmalte, e mova-o para uma sombra com brisa."
+    },
+    {
+      "question": "O refrigerador Zeer Pot funciona em dias de chuva ou alta umidade?",
+      "causeDiagnostic": "Quando a umidade do ar passa de 80-90%, a água da parede evapora mais devagar, reduzindo a eficiência do resfriamento evaporativo.",
+      "resolution": "Em dias úmidos, coloque-o sob sombra em uma crista ou corredor de vento forte para forçar a evaporação convectiva. Reabastecer a areia ao amanhecer com a água mais fria de nascente ou riacho fundo também mantém o frio por massa térmica."
+    }
+  ],
+  "createdAt": "2026-10-26T00:05:00.000Z",
+  "updatedAt": "2026-10-26T00:08:42.165Z",
+  "contentHash": "418459d2aa16b06e"
+}

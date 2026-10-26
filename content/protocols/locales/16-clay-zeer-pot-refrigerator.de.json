@@ -1,0 +1,198 @@
+{
+  "protocolId": "PR-16",
+  "category": "FOOD",
+  "title": "Stromloser Verdunstungs-Kühlschrank aus Doppel-Tonkrügen und Nassem Sand (Feld-Zeer-Pot)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[SOMMER-FLEISCHVERDERB- & LEBENSMITTELVERGIFTUNGSSCHUTZ & STROMLOSE KÜHLUNG]",
+  "summary": "In der Sommerhitze oder in einem Katastrophengebiet ohne Stromnetz züchten durch [Tierfallen und Jagd](/protocol-08.html) oder [primitive Fischreusen](/protocol-11.html) mühsam gewonnene Fleisch- und Fischvorräte bei Raumtemperatur binnen eines halben Tages Fliegenlarven und Fäulnisbakterien, was zu tödlicher Lebensmittelvergiftung führt. Ohne Strom und Eis müssen Sie sofort einen stromlosen 'Feld-Zeer-Pot'-Verdunstungskühlschrank bauen, indem Sie zwei unterschiedlich große 'unglasierte poröse Tonkrüge' nach dem Prinzip des [Lehmofens](/protocol-06.html) ineinanderstellen, den Zwischenraum mit Flusssand vom [natürlichen Wasserfilter](/protocol-01.html) füllen und kaltes Wasser eingießen, sodass die Verdunstungswärme der Umgebung Hitze entzieht. Da Wasser ständig durch die Mikroporen der Außenwand verdunstet, bleibt das Innere 8 bis 12°C kühler als die Außenluft; in der mit [natürlicher Laugenseife](/protocol-13.html) desinfizierten Innenkammer bleiben Vorräte ganz ohne Strom über eine Woche lang frisch.",
+  "timeRequired": "40 Min. (Krugauswahl & Bodenabdichtung 15m + Sandfüllung & Bewässerung 15m + Schattenplatz 10m)",
+  "successRate": "95% (Bei unglasierten porösen Terrakotta-Töpfen und schattigem, luftigem Standort)",
+  "difficulty": "Einfach (Sanddicke von zwei Fingerknöcheln halten & Wassereinbruch in Innenkammer verhindern)",
+  "outputPerHour": "Baut 1 stromlosen 20L-Feldkühler zur 7-tägigen Kühlung von 5kg Fleisch und Nahrung",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Unglasierte Poröse Tonkrüge oder Tontöpfe (1 Großer Außenkrug & 1 Kleiner Innenkrug)",
+      "desc": "Bei niedriger Temperatur gebrannte rotbraune Terrakotta-Gefäße ohne glänzende Glasur, ähnlich wie beim [Lehmofen](/protocol-06.html). Kombinieren Sie einen großen Topf (Öffnung zwei Handspannen, ~35-40cm) mit einem kleineren Innentopf (eineinhalb Handspannen, ~25cm), damit Wasser durch die Poren schwitzt und beim Verdunsten kühlt."
+    },
+    {
+      "id": "mat-02",
+      "name": "Gewaschener Quarzit-Flusssand (ca. 4-5kg)",
+      "desc": "Sauberer Bachsand wie beim [natürlichen Wasserfilter](/protocol-01.html). Füllt den Spalt zwischen beiden Töpfen lückenlos aus, speichert stundenlang kaltes Wasser und verteilt die Feuchtigkeit gleichmäßig an die Außenwand."
+    },
+    {
+      "id": "mat-03",
+      "name": "Kaltes Bachwasser & 1 Nasses Grobes Sackleinen- oder Hanftuch",
+      "desc": "Klares Wasser zum zweimal täglichen Nachfüllen des Sandes sowie ein dickes Naturhanf- oder Baumwolltuch (gleiches Material wie bei der [Feld-Kohlemaske](/protocol-15.html)) als Sonnen- und Fliegenschutz über der Öffnung."
+    },
+    {
+      "id": "mat-04",
+      "name": "Kiefernharz-Kleber & Zäher Lehmbrei zum Abdichten von Bodenlöchern",
+      "desc": "Erhitzter [Kiefernharz-Kleber](/protocol-10.html) und fester Lehm zum kompletten Verschließen von Wasserablauflöchern am Topfboden."
+    },
+    {
+      "id": "mat-05",
+      "name": "3-4 Unterarmdicke Eichenholz-Stützscheite für die Bodenbelüftung",
+      "desc": "Stabile Hartholzäste, die den Topfboden eine Handspanne über den Boden heben, um Erdwärme abzuhalten und Luft unter dem Krug zirkulieren zu lassen."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: 2 Unglasierte Poröse Tonkrüge Auswählen, Bodenlöcher mit Harz Abdichten & Desinfizieren",
+      "description": "1. **Atmungsaktive Unglasierte Töpfe Wählen**: Wählen Sie **einen großen Topf mit zwei Handspannen Öffnung (~38cm) und einen kleinen mit eineinhalb Handspannen (~26cm)** ohne glänzende Glasur, damit Wasser durch die Wände verdunsten kann.\n2. **Bodenlöcher Komplett Abdichten**: Um Wasserverlust zu verhindern, decken Sie eventuelle Ablauflöcher am Boden mit einem flachen Stein ab und versiegeln Sie diese fest mit [heißem Kiefernharz-Kleber](/protocol-10.html) und Lehm.\n3. **Innenkammer Keimfrei Reinigen**: Waschen Sie die Innenwand des kleinen Topfes gründlich mit abgekochtem Wasser und [natürlicher Laugenseife](/protocol-13.html) aus und trocknen Sie ihn in der Sonne.",
+      "actionNote": "> Keine Glasierten Keramiktöpfe Verwenden: Glasierte, glänzende Töpfe oder Plastikeimer lassen kein Wasser durch die Wand, wodurch die Verdunstungskühlung gleich null ist. Nutzen Sie stets raue, rotbraune unglasierte Terrakotta, die bei Wasserkontakt sofort dunkel wird.",
+      "svgFileName": "pr16-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // UNGLAZED CLAY POT SELECTION & SEALING",
+        "Unglasierte poröse Tonkrüge (38cm & 26cm) wählen",
+        "Bodenlöcher mit Flachstein & Kiefernharz abdichten",
+        "Innentopf mit Kochwasser & Laugenseife desinfizieren",
+        "[Schritt 1 Kern] Atmungsaktive Mikroporen sichern"
+      ],
+      "deepDive": {
+        "badge": "THERMODYNAMICS & EVAPORATIVE COOLING",
+        "title": "Kapillarwirkung Poröser Tonerde und Verdunstungswärme (2.260 J/g)",
+        "text": "Unglasierte rotbraune Terrakotta (700-900°C gebrannt) besitzt zehntausende mikroskopische Kapillarporen. Gießt man Wasser in den Sand zwischen beiden Krügen, zieht die Kapillarkraft die Feuchtigkeit langsam an die Außenhaut des großen Krugs. Wenn der Wind dieses Wasser verdunstet, entzieht jedes Gramm 540 Kalorien (2.260 Joule) Verdunstungswärme aus der Innenkammer und hält sie selbst bei 35°C Sommerhitze auf kühlen 12-15°C.",
+        "fieldSpecs": [
+          {
+            "name": "Unglasierter Poröser Terrakotta-Tonkrug",
+            "scientificName": "Unglazed Porous Terracotta Earthenware",
+            "categoryTag": "Feld-Verdunstungskühler / Kapillar-Tongefäß",
+            "imageFileName": "id-unglazed-terracotta-clay.jpg",
+            "hudCode": "FIG. BIO-16A // MACRO OPTIC",
+            "hudStatus": "CAPILLARY POROSITY: OPTIMAL",
+            "traits": [
+              {
+                "label": "FARBE/COLOR",
+                "value": "Trocken **matt hellrotbraun**, färbt sich bei Wasserkontakt sofort **tief schokoladenbraun**."
+              },
+              {
+                "label": "TEXTUR/TEXTURE",
+                "value": "Ohne Glasglanz, fühlt sich **wie feines Sandpapier mit offenen Mikroporen** an."
+              },
+              {
+                "label": "AUFNAHME/ABSORPTION",
+                "value": "Ein Wassertropfen **zieht binnen 3 Sekunden ein** und hinterlässt einen kühlen Fleck."
+              }
+            ],
+            "fieldUse": "Einsatz als Doppelgefäß: äußere Verdunstungsschale und innere trockene Kühlkammer"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Nasses Flusssandbett auf den Boden Legen und Kleinen Krug Mittig Ausrichten",
+      "description": "1. **Isolierendes Sandbett Legen**: Verteilen Sie gewaschenen [Quarzit-Flusssand](/protocol-01.html) **zwei Fingerknöchel dick (~4-5cm)** flach auf dem Boden des großen Topfes gegen Erdwärme.\n2. **Kleinen Topf Mittig Setzen**: Setzen Sie den kleinen Topf exakt mittig auf das Sandbett und drehen Sie ihn leicht, bis er waagerecht und wackelfrei sitzt.\n3. **Obere Ränder Angleichung**: Passen Sie die Bodensandhöhe so an, dass beide Topfränder exakt auf gleicher Höhe liegen, damit weder Sand noch Wasser in die Speisekammer gelangen.",
+      "actionNote": "> Gleichmäßigen Ringspalt Halten: Berührt der Innentopf die Außenwand, strömt Außenwärme direkt hinein. Richten Sie ihn mittig aus, sodass rundum ein zwei Finger breiter Spalt (~3-4cm) bleibt.",
+      "svgFileName": "pr16-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONCENTRIC POT NESTING & BASE BEDDING",
+        "4-5cm (zwei Knöchel) gewaschenen Sand am Boden legen",
+        "Kleinen Tonkrug waagerecht in der Mitte platzieren",
+        "Rundum zwei Finger (3-4cm) gleichen Abstand sichern",
+        "[Schritt 2 Kern] Obere Topfränder bündig ausrichten"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Zwischenraum mit Flusssand Füllen und mit Kaltem Bachwasser Vollständig Sättigen",
+      "description": "1. **Ringspalt mit Sand Füllen**: Füllen Sie den **zwei Finger breiten (3-4cm) Spalt** zwischen beiden Töpfen bis einen Knöchel (2cm) unter den Rand dicht mit sauberem Sand.\n2. **Stochern & Kaltwasser Eingießen**: Verdichten Sie den Sand mit einem dünnen Zweig gegen Luftlöcher und gießen Sie langsam kaltes Bachwasser ein, bis der Sand vollgesogen ist.\n3. **Außenwand-Feuchte Prüfen**: Füllen Sie Wasser nach, bis die gesamte Außenwand des großen Topfes **dunkelbraun durchfeuchtet ist und sich am Handrücken deutlich kalt anfühlt**.",
+      "actionNote": "> Flutung der Innenkammer Vermeiden: Zu schnelles Eingießen spritzt Schmutzwasser in den Innentopf. Decken Sie die innere Öffnung beim Wassereingießen zuerst mit einem Holzbrett oder Tuch ab.",
+      "svgFileName": "pr16-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SAND CAVITY FILLING & WATER SATURATION",
+        "3-4cm Ringspalt dicht mit Flusssand auffüllen",
+        "Kaltes Bachwasser bis zur 100%-Sättigung eingießen",
+        "Feuchte dringt durch Mikroporen & startet Kühlung",
+        "[Schritt 3 Kern] Außenwand wird dunkel und spürbar kalt"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Nahrung in Blätter Wickeln, Nasses Sackleinen Auflegen & im Luftigen Schatten Lagern",
+      "description": "1. **Vorräte Hygienisch Einlagern**: Wickeln Sie [erbeutetes Fleisch](/protocol-08.html), [Reusenfisch](/protocol-11.html) oder Beeren in breite Blätter und legen Sie diese locker in die trockene Innenkammer.\n2. **Mit Nassem Sackleinen Abdecken**: Decken Sie die gesamte Öffnung mit einem wassergetränkten Sackleinen- oder Hanftuch gegen Sonne und Fliegen ab, wobei die Ränder im nassen Sand liegen.\n3. **Auf Holzscheiten im Luftigen Schatten Lagern**: Stellen Sie den Kühler auf **unterarmdicke Eichenscheite in windigen Baumschatten** für 360°-Belüftung und füllen Sie zweimal täglich (morgens und abends) kaltes Wasser nach.",
+      "actionNote": "> Nicht in Geschlossenen Feuchten Räumen Aufstellen: In feuchten Höhlen oder windstillen Hütten stoppt die Verdunstung sofort. Stellen Sie den Krug stets in den Schatten mit trockenem Luftzug.",
+      "svgFileName": "pr16-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WET BURLAP COVER & SHADED AIRFLOW SETUP",
+        "In Blätter gewickeltes Fleisch trocken innen lagern",
+        "Nasses Sackleinen oben gegen Fliegen & Hitze auflegen",
+        "Auf Holzscheiten im schattigen Windkanal aufstellen",
+        "[Schritt 4 Kern] 2x täglich Wasser für 12-15°C Kühlung"
+      ],
+      "deepDive": {
+        "badge": "MICRO-CLIMATE & HYGIENE",
+        "title": "Konvektionsschutz und Fliegenlarven-Abwehr durch Nasses Sackleinen-Gewebe",
+        "text": "Hauptursache für Fleischverderb im Feld sind Fliegeneier (Maden) und Heißluft. Wassergetränktes Sackleinen bildet ein 1-2mm enges Pflanzenfasergitter, das Fliegen zu 100% abblockt. Gleichzeitig kühlt das oben verdunstende Wasser die Luft über der Öffnung ab und erzeugt eine 'kalte Fallwind-Konvektion', die bis zum Boden des Innentopfs absinkt und die Kammer gleichmäßig kühlt.",
+        "fieldSpecs": [
+          {
+            "name": "Wassergetränkte Naturhanf- & Sackleinen-Abdeckung",
+            "scientificName": "Water-Soaked Coarse Hemp & Burlap Fabric",
+            "categoryTag": "Feld-Verdunstungsschirm / Physischer Insektenschutz",
+            "imageFileName": "id-wet-burlap-hemp-cloth.jpg",
+            "hudCode": "FIG. BIO-16B // MACRO OPTIC",
+            "hudStatus": "EVAPORATION & PEST SHIELD: HIGH",
+            "traits": [
+              {
+                "label": "GEWEBE/WEAVE",
+                "value": "Grobe Pflanzenfasern mit **atmungsaktiven 1-2mm Mikroporen im Gitterverbund**."
+              },
+              {
+                "label": "FEUCHTE/MOISTURE",
+                "value": "Aufgequollene Fasern halten Wasser und bilden einen **kalten Verdunstungsfilm**."
+              },
+              {
+                "label": "SCHUTZ/SHIELD",
+                "value": "Lässt Wasserdampf frei entweichen und **blockiert Fliegen sowie Staub zu 100%**."
+              }
+            ],
+            "fieldUse": "Überspannt die gesamte Krugöffnung mit in den nassen Sand gesteckten Rändern zur Selbstbefeuchtung"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Verwendung Glänzend Glasierter Keramikkrüge oder Stehendes Wasser in der Innenkammer",
+    "description": "Glasierte Krüge, Metall- oder Plastikeimer lassen keine Feuchtigkeit nach außen dringen, wodurch die Verdunstungskühlung auf 0% fällt und Mittagshitze das Fleisch in 3 Stunden verfaulen lässt. Dringt zudem Wasser in den Innentopf zum rohen Fleisch ein, vermehren sich Fäulnisbakterien explosionsartig. Halten Sie den äußeren Sand stets nass, aber die innere Speisekammer absolut trocken und kühl.",
+    "consequence": "Folge: Treibhauseffekt durch fehlende Verdunstung, rapider Fleischverderb und tödliche Lebensmittelvergiftung oder Sepsis"
+  },
+  "shortsScript": {
+    "hook": "Ohne Strom verdirbt erjagtes Fleisch in der Wildnis binnen Stunden! Bauen Sie aus zwei Tontöpfen einen stromlosen Kühlschrank!",
+    "body": "Nehmen Sie einen großen und einen kleinen unglasierten Tontopf und dichten Sie die Bodenlöcher mit Kiefernharz ab. Zwei Fingerknöchel Flusssand auf den Boden legen und den kleinen Topf mittig einsetzen. Den Spalt mit Sand füllen und reichlich kaltes Bachwasser eingießen! Fleisch hineinlegen, nasses Sackleinen darüberlegen und in den luftigen Schatten stellen! Das durch die Poren verdunstende Wasser senkt die Temperatur um über 10°C und hält Vorräte eine Woche frisch!",
+    "outro": "Physik rettet Ihr Leben ohne Stromnetz. Abonnieren Sie jetzt das Überlebenshandbuch!"
+  },
+  "outcome": {
+    "title": "Aktiver Verdunstungs-Doppeltonkrug-Kühler (Zeer Pot) & Kühl Konservierte Vorräte",
+    "badge": "PRÜFSTANDARD // FIELD EVAPORATIVE COOLER",
+    "standard": "Die gesamte Außenwand muss gleichmäßig dunkelrotbraun durchfeuchtet und am Handrücken spürbar kalt sein, während die Innenkammer trocken bleibt und 8-12°C kühler als die Außenluft ist",
+    "description": "Die gesamte Außenwand muss gleichmäßig dunkelrotbraun durchfeuchtet und am Handrücken spürbar kalt sein, während die Innenkammer trocken bleibt und 8-12°C kühler als die Außenluft ist",
+    "svgFileName": "pr16-outcome.svg",
+    "svgLabels": [
+      "PR-16 OUTCOME // ZEER POT EVAPORATIVE CLAY REFRIGERATOR",
+      "Poröser Unglasierter Außenkrug (Verdunstungswand)",
+      "Wassergesättigter Quarzsand (3-4cm Kühlmatrix)",
+      "Trockene Sterile Innenkammer (8-12°C Kühler)",
+      "Nasse Sackleinen-Abdeckung (Kalte Fallkonvektion)",
+      "Schatten-Holzgestell (360° Luftzirkulation)",
+      "FIELD VERIFIED // ZERO-POWER COLD STORAGE (7-DAY PRESERVATION)"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Ich habe Wasser in den Sand gegossen, aber der Innentopf wird kaum kühl.",
+      "causeDiagnostic": "Entweder blockiert eine Glasur oder Fettschicht am Außentopf das Durchschwitzen, oder der Krug steht an einem windstillen, feuchten Ort ohne Verdunstung.",
+      "resolution": "Fühlen Sie die Außenwand: Ist sie trocken statt feucht, sind die Poren verstopft. Rauen Sie die Oberfläche mit einem Stein leicht an oder tauschen Sie den Krug gegen unglasierte Terrakotta und stellen Sie ihn in den luftigen Schatten."
+    },
+    {
+      "question": "Funktioniert der Zeer-Pot-Kühlschrank auch bei Regenwetter oder hoher Luftfeuchtigkeit?",
+      "causeDiagnostic": "Bei über 80-90% Luftfeuchtigkeit verdunstet das Wasser an der Tonwand langsamer in die Luft, was die Kühlleistung mindert.",
+      "resolution": "Stellen Sie den Krug an feuchten Tagen an einen schattigen, windigen Kamm oder Durchzugsort für erzwungene Konvektion. Das Nachfüllen im Morgengrauen mit eiskaltem Quell- oder tiefem Bachwasser nutzt zudem die direkte Wasserkälte."
+    }
+  ],
+  "createdAt": "2026-10-26T00:05:00.000Z",
+  "updatedAt": "2026-10-26T00:08:42.165Z",
+  "contentHash": "418459d2aa16b06e"
+}

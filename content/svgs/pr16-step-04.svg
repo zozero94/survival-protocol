@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1604" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="potBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="50%" stop-color="#431407"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="burlapCloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="oakLogs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <filter id="drop1604" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1604" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1604)"/>
+  <rect width="400" height="400" fill="url(#grid1604)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="26" y="32" fill="#fde68a" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // WET BURLAP COVER &amp; SHADED AIRFLOW SETUP</text>
+
+  <!-- Label 2: Leaf-Wrapped Food Storage -->
+  <rect x="20" y="54" width="360" height="22" rx="2" fill="#141a23" stroke="#22c55e" stroke-width="0.8"/>
+  <text x="28" y="69" fill="#22c55e" font-family="monospace" font-size="8.5" font-weight="bold">내부 건조 저장실에 잎사귀 포장 육류·식량 수납</text>
+
+  <!-- Complete Zeer Pot Assembly on Elevated Log Stand -->
+  <g filter="url(#drop1604)">
+    <!-- Elevated Oak Support Logs (Airflow Gap Underneath) -->
+    <circle cx="130" cy="278" r="14" fill="url(#oakLogs)" stroke="#a16207" stroke-width="1.5"/>
+    <circle cx="200" cy="278" r="14" fill="url(#oakLogs)" stroke="#a16207" stroke-width="1.5"/>
+    <circle cx="270" cy="278" r="14" fill="url(#oakLogs)" stroke="#a16207" stroke-width="1.5"/>
+
+    <!-- Outer Wet Terracotta Pot -->
+    <path d="M 85 115 L 315 115 L 288 265 L 112 265 Z" fill="url(#potBody)" stroke="#ea580c" stroke-width="1.5"/>
+    <!-- Wet Sand Layer -->
+    <path d="M 98 115 L 302 115 L 278 256 L 122 256 Z" fill="#b45309"/>
+    <!-- Inner Cold Chamber -->
+    <path d="M 135 115 L 265 115 L 252 232 L 148 232 Z" fill="#0b1118" stroke="#fdba74" stroke-width="1.5"/>
+
+    <!-- Leaf-Wrapped Meat & Food Packages Inside Cold Chamber -->
+    <ellipse cx="180" cy="205" rx="24" ry="14" fill="#15803d" stroke="#4ade80" stroke-width="1.2"/>
+    <ellipse cx="222" cy="198" rx="22" ry="13" fill="#166534" stroke="#4ade80" stroke-width="1.2"/>
+    <ellipse cx="200" cy="175" rx="25" ry="12" fill="#15803d" stroke="#86efac" stroke-width="1.2"/>
+
+    <!-- Wet Burlap / Hemp Cloth Draped Over Top Rim -->
+    <path d="M 70 125 C 85 102 120 104 200 104 C 280 104 315 102 330 125 L 320 135 C 300 116 270 116 200 116 C 130 116 100 116 80 135 Z" fill="url(#burlapCloth)" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Breezy Shade Wind Arrows Passing Around & Under Pot -->
+    <path d="M 35 190 L 75 190" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="75,186 75,194 83,190" fill="#38bdf8"/>
+    <path d="M 315 190 L 365 190" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="365,186 365,194 373,190" fill="#38bdf8"/>
+    <path d="M 60 282 L 340 282" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- Label 3: Wet Burlap Top Cover -->
+  <rect x="20" y="302" width="360" height="22" rx="2" fill="#141a23" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="28" y="317" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">물에 적신 삼베 천 상단 덮개로 파리 및 열기 차단</text>
+
+  <!-- Label 4: Shaded Elevated Stand -->
+  <rect x="20" y="334" width="360" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="28" y="349" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">그늘진 통풍 구역 받침목 거치 (바닥 공기 순환)</text>
+
+  <!-- Label 5: Step 4 Callout -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="9.5" font-weight="bold">[4단계 핵심] 일 2회 모래 급수로 12~15°C 냉장 유지</text>
+</svg>

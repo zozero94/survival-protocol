@@ -1,0 +1,198 @@
+{
+  "protocolId": "PR-16",
+  "category": "FOOD",
+  "title": "Zero-Power Evaporative Clay Pot Refrigerator (Field Zeer Pot) for Preserving Meat and Food",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[SUMMER MEAT SPOILAGE & FOOD POISONING DEFENSE & ZERO-POWER COLD PRESERVATION]",
+  "summary": "In midsummer heat or a post-grid disaster zone, meat and fish hard-won through [animal traps and hunting](/protocol-08.html) or [primitive fish traps](/protocol-11.html) breed fly larvae and putrefactive bacteria within half a day at ambient temperatures, causing fatal food poisoning and enteritis. In the field without electricity or ice, you must immediately build an evaporative cooling 'Field Zeer Pot' refrigerator by nesting two differently sized 'unglazed porous clay pots' fired on the same principle as an [earthen kiln](/protocol-06.html), packing [natural water filter](/protocol-01.html) river sand into the gap between them, and pouring cold water so evaporation continuously draws heat away. As water evaporates through the microscopic pores of the outer pot wall, it maintains the interior 8 to 12°C cooler than the outside air; storing food inside the chamber disinfected with [natural lye soap](/protocol-13.html) preserves rations fresh for over a week with zero electricity.",
+  "timeRequired": "40 Mins (Pot Selection & Base Sealing 15m + Sand Packing & Watering 15m + Shaded Setup 10m)",
+  "successRate": "95% (When using unglazed porous terracotta pots and placing in shaded breeze)",
+  "difficulty": "Easy (Maintain two-knuckle sand thickness & prevent water spillover into food chamber)",
+  "outputPerHour": "Builds 1 unit of 20L zero-power field cooler preserving 5kg of meat and rations for 7 days",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Unglazed Porous Clay Pots (Large Outer & Smaller Inner Earthenware)",
+      "desc": "Low-fired reddish-brown terracotta pots without glossy glaze coating, similar to an [earthen kiln](/protocol-06.html). Pair a large pot (mouth width two handspans, ~35-40cm) with a smaller pot that fits inside (mouth width one-and-a-half handspans, ~25cm) so moisture seeps through microscopic pores and evaporates to cool the core."
+    },
+    {
+      "id": "mat-02",
+      "name": "Washed Quartzite River Sand (Approx. 4-5kg)",
+      "desc": "Clean stream sand used in a [natural water filter](/protocol-01.html). Packs tightly into the gap between the two pots to hold cold water for hours and distribute moisture evenly across the entire outer pot wall."
+    },
+    {
+      "id": "mat-03",
+      "name": "Cold Stream Water & 1 Sheet of Wet Coarse Burlap or Hemp Cloth",
+      "desc": "Clear water replenished twice daily into the sand layer, plus thick natural burlap or cotton cloth (same material as the [field charcoal mask](/protocol-15.html)) draped over the top opening to block sunlight and flies."
+    },
+    {
+      "id": "mat-04",
+      "name": "Pine Pitch Glue & Stiff Clay Paste for Sealing Drain Holes",
+      "desc": "Heated [pine pitch glue](/protocol-10.html) and dense clay paste used to completely plug bottom drainage holes when repurposing unglazed clay flowerpots."
+    },
+    {
+      "id": "mat-05",
+      "name": "3-4 Forearm-Thick Oak Support Logs for Bottom Airflow",
+      "desc": "Sturdy hardwood branches that elevate the pot base one handspan above the ground to block soil heat and open an underside wind channel."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Select 2 Unglazed Porous Clay Pots, Seal Base Drain Holes with Pine Pitch, and Sanitize",
+      "description": "1. **Select Breathable Unglazed Pots**: Choose **a large pot two handspans wide (~38cm) and a small pot one-and-a-half handspans wide (~26cm)** with matte unglazed surfaces so water can permeate the walls and evaporate.\n2. **Seal Bottom Drain Holes Completely**: To prevent cooling water from leaking out, cover any bottom drainage holes with a flat stone flake and seal tightly with [heated pine pitch glue](/protocol-10.html) and clay paste until rock-hard.\n3. **Sanitize Inner Storage Chamber**: Eliminate food-spoiling bacteria by scrubbing the inside wall of the smaller pot with boiled water and [natural lye soap](/protocol-13.html), then sun-drying completely.",
+      "actionNote": "> Never Use Glazed Ceramic Pots: Glossy glazed jars or plastic buckets block water from seeping through the outer wall, reducing evaporative cooling to zero. Always use rough reddish-brown unglazed terracotta that darkens immediately when splashed with water.",
+      "svgFileName": "pr16-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // UNGLAZED CLAY POT SELECTION & SEALING",
+        "Select unglazed porous large (38cm) & small (26cm) clay pots",
+        "Seal bottom drain holes with flat stone & pine pitch",
+        "Sanitize inner pot wall with boiled water & lye soap",
+        "[Step 1 Key] Secure breathable micropores for evaporation"
+      ],
+      "deepDive": {
+        "badge": "THERMODYNAMICS & EVAPORATIVE COOLING",
+        "title": "Porous Clay Capillary Action and Latent Heat of Vaporization (2,260 J/g)",
+        "text": "Low-fired reddish-brown terracotta earthenware baked at 700-900°C contains tens of thousands of microscopic capillary pores between clay grains. When water is poured into the sand between the two pots, capillary action draws moisture slowly to the outer skin of the large pot. As external breeze evaporates this moisture into vapor, each gram of water forcibly extracts 540 calories (2,260 Joules) of latent heat from the inner chamber, keeping the core at a cool 12-15°C even when summer air reaches 35°C.",
+        "fieldSpecs": [
+          {
+            "name": "Unglazed Porous Terracotta Clay Pot",
+            "scientificName": "Unglazed Porous Terracotta Earthenware",
+            "categoryTag": "Field Evaporative Radiator / Capillary Cooling Vessel",
+            "imageFileName": "id-unglazed-terracotta-clay.jpg",
+            "hudCode": "FIG. BIO-16A // MACRO OPTIC",
+            "hudStatus": "CAPILLARY POROSITY: OPTIMAL",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "**Matte light reddish-brown** when dry, turning **deep chocolate-brown** on contact with water."
+              },
+              {
+                "label": "TEXTURE",
+                "value": "Free of glassy shine, feeling **slightly gritty like fine sandpaper with breathable micropores**."
+              },
+              {
+                "label": "ABSORPTION",
+                "value": "A single drop of water **soaks in within 3 seconds**, leaving a cool damp mark."
+              }
+            ],
+            "fieldUse": "Deployed as dual concentric vessels: outer evaporating shell and inner dry food vault"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Lay a Wet River Sand Bed on the Large Pot Floor and Center the Small Pot Levelly",
+      "description": "1. **Lay Insulating Base Sand**: Spread washed [quartzite river sand](/protocol-01.html) across the floor of the large pot to a flat thickness of **two finger knuckles (~4-5cm)** to block ground heat.\n2. **Center the Small Pot**: Place the smaller pot dead-center atop the sand bed, twisting gently left and right until seated levelly without wobbling.\n3. **Align Top Rims Level**: Adjust the base sand depth so the top rims of both pots sit at the exact same height, preventing sand or water from spilling into the inner food vault.",
+      "actionNote": "> Maintain Uniform Concentric Gap: If the inner pot leans against the outer pot wall, outside heat conducts directly into the food chamber. Center it carefully so an even two-finger-wide gap (~3-4cm) surrounds the pot on all sides.",
+      "svgFileName": "pr16-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CONCENTRIC POT NESTING & BASE BEDDING",
+        "Lay 4-5cm (two knuckles) washed river sand on base",
+        "Seat small clay pot levelly at dead center",
+        "Maintain uniform two-finger (3-4cm) side gap all around",
+        "[Step 2 Key] Align inner and outer pot top rims level"
+      ]
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Pack the Annular Gap Full of River Sand and Pour Cold Stream Water to Saturate",
+      "description": "1. **Pack Side Cavity with Sand**: Fill the **two-finger-wide (3-4cm) ring gap** between the large and small pots with clean river sand up to one knuckle (2cm) below the top rim.\n2. **Tamp & Pour Cooling Water**: Prod the sand with a thin twig to eliminate air pockets, then slowly pour cold stream water around the ring until the sand is fully saturated.\n3. **Verify Outer Wall Seepage**: Add water until the entire outer wall of the large pot turns **deep damp brown and feels distinctly cold against the back of your hand**.",
+      "actionNote": "> Prevent Inner Chamber Flooding: Pouring water too fast splashes muddy water over the rim into the inner food pot. Cover the inner pot mouth with a wooden board or cloth first while pouring water slowly into the outer sand ring.",
+      "svgFileName": "pr16-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SAND CAVITY FILLING & WATER SATURATION",
+        "Pack washed river sand tightly into 3-4cm ring cavity",
+        "Pour cold stream water to 100% saturate sand matrix",
+        "Moisture seeps through micropores to start cooling",
+        "[Step 3 Key] Outer wall darkens and turns cold to touch"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Wrap Food in Broad Leaves, Drape a Wet Burlap Cover, and Elevate in Shaded Breeze",
+      "description": "1. **Store Rations Hygienically**: Wrap [hunted meat](/protocol-08.html), [trapped fish](/protocol-11.html), or foraged berries in clean broad leaves and place them inside the dry inner chamber without crowding.\n2. **Seal Top with Wet Burlap**: Drape a water-soaked coarse burlap or hemp cloth across the entire top opening to block sunlight and flies, tucking its edges into the wet sand ring for continuous capillary wicking.\n3. **Elevate on Logs in Shaded Breeze**: Place the cooler on **forearm-thick oak support logs under breezy tree shade** to maximize 360° evaporation, and replenish the sand with cold water twice daily (morning and evening).",
+      "actionNote": "> Never Place in Enclosed Damp Spaces: Putting the pot inside a humid cave corner or windless sealed shelter stops water evaporation and halts cooling. Always set it up in a shaded spot with steady dry airflow.",
+      "svgFileName": "pr16-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WET BURLAP COVER & SHADED AIRFLOW SETUP",
+        "Store leaf-wrapped meat & rations in dry inner vault",
+        "Drape wet burlap cloth over top to block flies & heat",
+        "Elevate on oak support logs in breezy shaded zone",
+        "[Step 4 Key] Refill water 2x daily to keep 12-15°C chill"
+      ],
+      "deepDive": {
+        "badge": "MICRO-CLIMATE & HYGIENE",
+        "title": "Convective Shielding and Fly Larvae (Maggot) Defense via Wet Burlap Mesh",
+        "text": "The primary cause of field meat spoilage is not merely ambient warmth, but blowflies laying eggs (maggots) and hot air intrusion. Water-soaked coarse burlap or hemp fabric forms a tight 1-2mm plant-fiber grid that physically blocks 100% of flies and insects. Simultaneously, water evaporating from the top fabric cools the air immediately above the inner mouth, creating a 'cold downdraft convection current' that sinks to the bottom of the inner pot and chills the entire chamber evenly.",
+        "fieldSpecs": [
+          {
+            "name": "Water-Soaked Natural Burlap & Hemp Cover",
+            "scientificName": "Water-Soaked Coarse Hemp & Burlap Fabric",
+            "categoryTag": "Field Evaporative Sunshade / Physical Pest Shield",
+            "imageFileName": "id-wet-burlap-hemp-cloth.jpg",
+            "hudCode": "FIG. BIO-16B // MACRO OPTIC",
+            "hudStatus": "EVAPORATION & PEST SHIELD: HIGH",
+            "traits": [
+              {
+                "label": "WEAVE",
+                "value": "Coarse bast fibers woven into a **breathable grid with 1-2mm micro-ventilation pores**."
+              },
+              {
+                "label": "MOISTURE",
+                "value": "Swollen plant fibers hold abundant water, forming a **cold evaporating water film across the top**."
+              },
+              {
+                "label": "SHIELD",
+                "value": "Allows water vapor to escape freely while **completely blocking flies and dust intrusion**."
+              }
+            ],
+            "fieldUse": "Draped across the entire Zeer pot mouth with edges tucked into the wet sand ring for self-wicking"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Using Glossy Glazed Ceramic Jars or Allowing Water to Pool Inside the Inner Food Chamber",
+    "description": "Using glossy glazed jars, metal cans, or plastic buckets prevents moisture from seeping through the outer wall, dropping evaporative cooling to 0% and trapping midday heat inside until meat rots within 3 hours. Furthermore, if water leaks into the inner pot and touches raw meat directly, anaerobic putrefactive bacteria multiply explosively. Always keep the outer sand layer saturated, while keeping the inner food chamber bone-dry and cool.",
+    "consequence": "Consequence: Greenhouse heat trapping from zero evaporation, rapid meat putrefaction, and fatal food poisoning or sepsis"
+  },
+  "shortsScript": {
+    "hook": "Leave hunted meat out in the wild without power and maggots ruin it in half a day! Build a zero-power fridge with two clay pots!",
+    "body": "Take a large and a small unglazed clay pot and seal their bottom holes with pine pitch. Spread two knuckles of river sand on the large pot floor and center the small pot inside. Pack the gap between them full of sand and pour plenty of cold stream water! Put your meat inside, cover the top with wet burlap cloth, and set it on logs in breezy shade! Water evaporating through the clay pores drops the inside temperature by over 10°C, keeping food fresh all week!",
+    "outro": "Physics keeps you alive when the grid dies. Subscribe to the survival manual now!"
+  },
+  "outcome": {
+    "title": "Active Evaporative Double-Clay-Pot Cooler (Zeer Pot) & Cold-Preserved Rations",
+    "badge": "VERIFICATION STANDARD // FIELD EVAPORATIVE COOLER",
+    "standard": "The entire outer clay wall must stay evenly dampened to a deep reddish-brown with a distinct chill to the back of the hand, while the inner storage chamber remains completely dry and 8-12°C cooler than ambient air",
+    "description": "The entire outer clay wall must stay evenly dampened to a deep reddish-brown with a distinct chill to the back of the hand, while the inner storage chamber remains completely dry and 8-12°C cooler than ambient air",
+    "svgFileName": "pr16-outcome.svg",
+    "svgLabels": [
+      "PR-16 OUTCOME // ZEER POT EVAPORATIVE CLAY REFRIGERATOR",
+      "Outer Porous Unglazed Clay Wall (Evaporative Radiator)",
+      "Water-Saturated Quartz Sand Matrix (3-4cm Cooling Buffer)",
+      "Dry Sterile Inner Clay Vault (Maintains 8-12°C Cooler)",
+      "Wet Burlap Shade & Pest Cover (Cold Downdraft Convection)",
+      "Shaded Oak Log Stand (Ground Heat Block & 360° Airflow)",
+      "FIELD VERIFIED // ZERO-POWER COLD STORAGE (7-DAY PRESERVATION)"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "I poured water into the sand, but the inner pot isn't getting noticeably cool.",
+      "causeDiagnostic": "Either the outer pot surface has a glaze or oil film blocking water seepage, or the cooler is sitting in stagnant humid air where evaporation cannot occur.",
+      "resolution": "Touch the outside of the large pot—if it feels dry instead of damp, its pores are clogged. Lightly abrade the outer skin with a rough stone to open the pores or replace it with an unglazed terracotta pot, and move it into a breezy shaded wind channel."
+    },
+    {
+      "question": "Does the Zeer pot refrigerator still work on rainy days or during the monsoon season?",
+      "causeDiagnostic": "When ambient relative humidity exceeds 80-90%, moisture on the pot wall evaporates much slower into the air, reducing evaporative cooling efficiency.",
+      "resolution": "On humid days, place the pot on an elevated shaded ridge or wind tunnel where strong breeze forces convective evaporation. Replenishing the sand layer at dawn with the coldest deep stream or spring water also leverages direct thermal mass cooling."
+    }
+  ],
+  "createdAt": "2026-10-26T00:05:00.000Z",
+  "updatedAt": "2026-10-26T00:08:42.165Z",
+  "contentHash": "418459d2aa16b06e"
+}

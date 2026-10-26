@@ -197,3 +197,12 @@ flowchart TD
 5. [x] Static Build & PWA Update: `npm run sync:timestamps && npm run build` (hash `5c6edad36e2ff4e9`, 14 HTML protocol pages compiled).
 6. [x] Test Suite Verification: 15 suites / 139 tests 100% passing (`npm test`).
 7. [x] Chained Sync & Next Topic Planning: `PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md` (PR-16 Clay & Charcoal Water Evaporative Zeer Pot Refrigerator) updated.
+
+### Phase 17: PR-16 (Evaporative Clay Zeer Pot Refrigerator) Autonomous Publishing [COMPLETED]
+1. [x] Plain Korean Master Protocol: `16-clay-zeer-pot-refrigerator.json` (Category `FOOD`, ThreatLevel `HIGH`, 4-step plain Korean checklist, 0 modern measurement tools, 2 field troubleshooting FAQs in `protocol-faqs.ts`).
+2. [x] Botanical/Material Macro ID Photos: `id-unglazed-terracotta-clay.jpg` & `id-wet-burlap-hemp-cloth.jpg` generated via `image-generator` subagent (0 text, hyper-realistic macro photography).
+3. [x] 5 High-Definition 3D Technical Vector SVGs: `pr16-step-01.svg` ~ `04.svg`, `pr16-outcome.svg` (100/100 static audit, 1:1 `<text>` tag & `svgLabels` parity, zero text overlap across 7 languages, registered in `10_svg_audit_loop.test.ts`).
+4. [x] 6 Global Languages Localized: `16-clay-zeer-pot-refrigerator.{en,ja,es,de,pt,zh-TW}.json` (0 residual Korean, multilingual SVG text label validation 100% PASS).
+5. [x] Static Build & PWA Update: `npm run sync:timestamps && npm run build` (hash `418459d2aa16b06e`, 15 HTML protocol pages compiled).
+6. [x] Test Suite Verification: 15 suites / 140 tests 100% passing (`npm test`).
+7. [x] Chained Sync & Next Topic Planning: `PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md` (PR-17 Oak Bark Tannin & Wood Ash Hide Tanning) updated.

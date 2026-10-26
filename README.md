@@ -18,7 +18,7 @@
 
 ---
 
-## 🧱 6대 생존 공학 분과 및 발행 현황 (총 14편 배포 완료)
+## 🧱 6대 생존 공학 분과 및 발행 현황 (총 15편 배포 완료)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면/이미지 | 세부 스텝 비주얼 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
@@ -36,6 +36,7 @@
 | **MEDICINE** | [나무를 태운 재와 동물 기름으로 천연 살균 잿물 비누 만드는 법 (야전 세정 비누)](public/protocol-13.html) | `pr13-outcome.svg` | 4단계 (FIG 01~04) | 7개국어 완비 | ✅ 라이브 |
 | **TOOLS** | [동물 다리뼈와 마른 힘줄로 찢어진 가죽옷과 신발을 꿰매는 법 (야전 골침과 건사 봉제술)](public/protocol-14.html) | `pr14-outcome.svg` | 4단계 (FIG 01~04 + 생체자재 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 | **MEDICINE** | [활성탄 숯가루와 모래를 천에 싼 화재·유독가스 방호 간이 방독 마스크 (야전 탄포 마스크)](public/protocol-15.html) | `pr15-outcome.svg` | 4단계 (FIG 01~04 + 활성탄·모래 실사 2종) | 7개국어 완비 | ✅ 라이브 |
+| **FOOD** | [이중 점토 옹기와 젖은 모래 기화열로 고기와 음식을 보존하는 무전력 천연 냉장고 (야전 제어 팟)](public/protocol-16.html) | `pr16-outcome.svg` | 4단계 (FIG 01~04 + 무유약 토기·삼베 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -45,10 +46,10 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-15, 총 14편)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-16, 총 15편)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 16종)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 94종: 활성 스텝 65종 + 결과 15종)
+│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 18종)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 99종: 활성 스텝 69종 + 결과 16종)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -83,11 +84,11 @@ primitive-survival/
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts    # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts        # 엔드투엔드 정적 사이트 컴파일 파이프라인
-├── scripts/               # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts
+├── scripts/               # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 15대 테스트 스위트 (139/139 PASS)
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (140/140 PASS)
 ```
 
 ---
