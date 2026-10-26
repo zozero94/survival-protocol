@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-09",
-  "category": "FIRE",
+  "category": "MATERIALS",
   "title": "Herstellung von Hartholzkohle im anaeroben Erdgrubenmeiler",
   "threatLevel": "HIGH",
   "threatLevelText": "[RAUCHFREIER BRENNSTOFF & KOHLEFILTER]",
@@ -127,6 +127,6 @@
     "description": "Technische Schnittdarstellung des anaeroben 50cm Erdmeilers mit 95% Luftdrosselung zur Gewinnung poröser Eichenholzkohle für rauchfreie Hitze und Trinkwasserfilterung."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "916099d408d4f948",
-  "updatedAt": "2026-10-15T14:41:20+09:00"
+  "contentHash": "322dc0eab95e53a9",
+  "updatedAt": "2026-10-15T16:31:51+09:00"
 }

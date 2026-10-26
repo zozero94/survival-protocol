@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-01",
-  "category": "WATER",
+  "category": "FOOD",
   "title": "How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[MUST-HAVE SURVIVAL]",
@@ -139,6 +139,6 @@
     "description": "A field-tested primitive filtration column suspended on a timber tripod, layering charcoal, river sand, and pebbles to turn turbid wild water into crystal clear boilable drinking water."
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T15:29:10+09:00",
-  "contentHash": "8e86ecfb1c03de78"
+  "updatedAt": "2026-10-16T13:34:53+09:00",
+  "contentHash": "2abe4cfb93c63475"
 }

@@ -290,7 +290,22 @@ export function getFeedRuntimeScript(): string {
         }
       });
 
-      // 초기 실행
+      // 초기 실행 (URL ?cat= 파라미터 지원)
+      try {
+        var urlParams = new URLSearchParams(window.location.search);
+        var catParam = urlParams.get('cat');
+        if (catParam && ['ALL', 'FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'].indexOf(catParam) !== -1) {
+          currentCategory = catParam;
+          document.querySelectorAll('[data-action="filter-category"]').forEach(function (btn) {
+            var isSel = btn.getAttribute('data-category') === currentCategory;
+            if (isSel) {
+              btn.className = 'px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 bg-white text-black font-bold transition-none';
+            } else {
+              btn.className = 'px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800 transition-none';
+            }
+          });
+        }
+      } catch (e) {}
       updateFeed();
       var initLang = detectInitialFeedLocale();
       if (initLang && initLang !== 'ko') {

@@ -57,7 +57,7 @@ export interface FatalMistake {
   consequence: string;
 }
 
-export type ProtocolCategory = 'FIRE' | 'WATER' | 'TOOLS' | 'SHELTER' | 'FOOD' | 'MEDICINE';
+export type ProtocolCategory = 'FOOD' | 'SHELTER' | 'TOOLS' | 'MATERIALS' | 'MEDICINE' | 'WATER' | 'FIRE';
 
 export interface ProtocolFaqItem {
   question: string;

@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "Purificação de resina de pinheiro em pomada antisséptica e cola impermeável",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFESA CONTRA INFECÇÕES E FIXAÇÃO IMPERMEÁVEL]",
@@ -173,5 +173,5 @@
     "description": "Especificações completas da pomada antimicrobiana em concha marinha, bastão de cola de piche em madeira dura e corte transversal da vedação impermeável no machado."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

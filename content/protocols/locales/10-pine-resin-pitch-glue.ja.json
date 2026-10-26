@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "松脂を溶かして固める傷口消毒軟膏と万能防水接着剤（原始松脂精製法）",
   "threatLevel": "HIGH",
   "threatLevelText": "[細菌感染遮断 ＆ 道具防水結束]",
@@ -173,5 +173,5 @@
     "description": "窪み石皿と貝殻に収められた黄金色の天然抗菌保護軟膏と、木炭粉を1:1配合して小枝先端に固めた黒曜石光沢の防水結束棒、および石斧の柄結束部の防水防壁断面図です。"
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

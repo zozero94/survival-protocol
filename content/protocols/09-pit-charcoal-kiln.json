@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-09",
-  "category": "FIRE",
+  "category": "MATERIALS",
   "title": "흙구덩이 속에서 공기를 막아 나무를 단단한 숯으로 굽는 법 (원시 숯가마 제작법)",
   "threatLevel": "HIGH",
   "threatLevelText": "[무연 고열 연료 & 정수 필터 숯 확보]",
@@ -127,6 +127,6 @@
     "description": "50cm 원뿔형 흙구덩이 속에서 공기를 95% 차단한 채 고온으로 구워내어, 연기 없는 고열 연료이자 식수 정화 필터로 사용 가능한 단단한 참나무 숯의 완성 단면입니다."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "916099d408d4f948",
-  "updatedAt": "2026-10-15T14:41:20+09:00"
+  "contentHash": "322dc0eab95e53a9",
+  "updatedAt": "2026-10-15T16:31:51+09:00"
 }

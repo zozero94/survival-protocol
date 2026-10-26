@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-01",
-  "category": "WATER",
+  "category": "FOOD",
   "title": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[필수 생존]",
@@ -139,6 +139,6 @@
     "description": "나뭇가지 삼발이에 매단 용기 내부에 숯, 고운 모래, 자갈, 섬유 마개가 층별로 적층되어 상단의 흙탕물이 하단에서 맑고 투명한 물로 여과되는 구조입니다."
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T15:29:10+09:00",
-  "contentHash": "8e86ecfb1c03de78"
+  "updatedAt": "2026-10-16T13:34:53+09:00",
+  "contentHash": "2abe4cfb93c63475"
 }

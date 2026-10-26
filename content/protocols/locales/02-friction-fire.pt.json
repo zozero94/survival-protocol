@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-02",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "Como Fazer Fogo por Fricção com Galhos (Método do Arco)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
@@ -112,6 +112,6 @@
     "description": "Uma brasa incandescente a 400°C gerada na ranhura em V, transferida com sucesso para o ninho de mecha seca e soprada até formar chamas vivas."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:45:00+09:00",
-  "contentHash": "006f8f1c7593c632"
+  "updatedAt": "2026-10-15T15:52:40+09:00",
+  "contentHash": "6cbccf0cd402bece"
 }

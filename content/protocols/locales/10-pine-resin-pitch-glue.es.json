@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "Purificación de resina de pino en ungüento antiséptico y pegamento impermeable",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA INFECCIONES Y FIJACIÓN IMPERMEABLE]",
@@ -173,5 +173,5 @@
     "description": "Especificaciones del ungüento antimicrobiano en concha marina, barra de pegamento de brea sobre madera dura y sección transversal del sellado impermeable en unión de hacha."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

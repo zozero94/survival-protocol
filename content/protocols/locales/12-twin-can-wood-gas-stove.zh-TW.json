@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-12",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "用2個廢棄空鐵罐與廢電線、枯枝打造無煙煮水的雙重燃燒木煤氣爐",
   "threatLevel": "HIGH",
   "threatLevelText": "[無煙高熱炊事殺菌 ＆ 節省80%木柴燃料]",
@@ -173,5 +173,6 @@
     "description": "外層大號鋼鐵罐與內層小號燃燒罐之間的1.5〜2cm雙層預熱空氣通道、底部冷氣吸入孔與頂部二次預熱氧氣噴嘴、廢電線十字鍋架，以及將木煤氣完全燃燒為850℃無煙火燄的熱力學斷面結構。"
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "00b85f08738b5163"
+  "contentHash": "47468e0c9ce45c53",
+  "updatedAt": "2026-10-17T19:16:11+09:00"
 }

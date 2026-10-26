@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-12",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "Twin-Can Double-Wall Wood Gas Stove Using Salvaged Cans, Scrap Wire & Dry Twigs",
   "threatLevel": "HIGH",
   "threatLevelText": "[SMOKELESS HIGH-HEAT BOILING & 80% FUEL SAVING]",
@@ -173,5 +173,6 @@
     "description": "Built from two salvaged steel cans and stripped scrap wire, featuring a 1.5–2cm double-wall air preheat channel, lower cold-air intakes, upper secondary oxygen nozzles, a cross-wire pot trivet, and smokeless 850°C wood-gas combustion."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "00b85f08738b5163"
+  "contentHash": "47468e0c9ce45c53",
+  "updatedAt": "2026-10-17T19:16:11+09:00"
 }

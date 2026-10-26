@@ -2,12 +2,13 @@ import type { Protocol, ProtocolCategory } from '../../types/protocol.types.ts';
 import { highlightTechnicalTerms } from '../protocol/StepCard.ts';
 
 const CATEGORY_LABELS: Record<ProtocolCategory, string> = {
-  WATER: '[물 구하기]',
-  FIRE: '[불 피우기]',
-  SHELTER: '[움막 짓기]',
-  FOOD: '[식량 구하기]',
-  TOOLS: '[도구 만들기]',
-  MEDICINE: '[응급 처치]',
+  WATER: '[물·식량·보존]',
+  FIRE: '[불·거처·보온]',
+  SHELTER: '[불·거처·보온]',
+  FOOD: '[물·식량·보존]',
+  TOOLS: '[도구·의복·공작]',
+  MATERIALS: '[소재·천연화학]',
+  MEDICINE: '[의약·위생·방호]',
 };
 
 const DEFAULT_SVGS: Record<ProtocolCategory, string> = {
@@ -16,7 +17,15 @@ const DEFAULT_SVGS: Record<ProtocolCategory, string> = {
   SHELTER: `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6L6 38H42L24 6Z" stroke-width="2"></path><line x1="24" y1="6" x2="24" y2="38" stroke-width="1.5"></line><line x1="15" y1="22" x2="33" y2="22" stroke-width="1.2"></line><path d="M18 38V30H30V38" stroke-width="1.5"></path></svg>`,
   FOOD: `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="18" rx="14" ry="4" stroke-width="1.8"></ellipse><path d="M10 18C10 27 15 33 24 33C33 33 38 27 38 18" stroke-width="2"></path><ellipse cx="11" cy="38" rx="5" ry="3" stroke-width="1.6"></ellipse><ellipse cx="24" cy="40" rx="6" ry="3" stroke-width="1.6"></ellipse><ellipse cx="37" cy="38" rx="5" ry="3" stroke-width="1.6"></ellipse></svg>`,
   TOOLS: `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38L12 32C15 29 17 30 20 27L26 21C29 18 31 19 34 16L42 8" stroke-width="2.2"></path><path d="M9 41L15 35C18 32 20 33 23 30L29 24C32 21 34 22 37 19L45 11" stroke-width="2.2"></path><line x1="9" y1="35" x2="12" y2="38" stroke-width="1.2"></line><line x1="16" y1="28" x2="19" y2="31" stroke-width="1.2"></line><line x1="23" y1="20" x2="26" y2="23" stroke-width="1.2"></line></svg>`,
+  MATERIALS: `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12 L12 32 H28 L32 12 H8 Z" stroke-width="1.6"></path><path d="M12 24 C16 26 24 26 28 24" stroke-dasharray="2 1.5" stroke-width="1.2"></path><circle cx="20" cy="18" r="2.5" stroke-width="1.4"></circle><path d="M18 10 L20 6 L22 10 Z" fill="currentColor"></path><line x1="14" y1="36" x2="16" y2="34" stroke-width="1.5"></line><line x1="20" y1="36" x2="20" y2="33" stroke-width="1.5"></line><line x1="26" y1="36" x2="24" y2="34" stroke-width="1.5"></line><circle cx="16" cy="28" r="1" fill="currentColor"></circle><circle cx="24" cy="28" r="1" fill="currentColor"></circle><circle cx="20" cy="29" r="1" fill="currentColor"></circle></svg>`,
   MEDICINE: `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 38L18 26L30 14" stroke-width="2.2"></path><path d="M23 27C21 31 21 35 25 39C29 39 30 35 27 31C25 28 24 26 23 27Z" stroke-width="1.6"></path><rect x="30" y="26" width="14" height="14" stroke-width="1.2" stroke-dasharray="2 1.5"></rect><path d="M37 29V37M33 33H41" stroke-width="2"></path></svg>`,
+};
+
+const PROTOCOL_ICON_OVERRIDES: Record<string, string> = {
+  'PR-01': DEFAULT_SVGS.WATER,
+  'PR-02': DEFAULT_SVGS.FIRE,
+  'PR-12': DEFAULT_SVGS.FIRE,
+  'PR-16': `<svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10 L10 34 H30 L34 10 H6 Z" stroke-dasharray="2 1" stroke-width="1.5"></path><path d="M12 12 L15 30 H25 L28 12 H12 Z" stroke-width="1.5"></path><line x1="8" x2="13" y1="20" y2="20" stroke-width="1"></line><line x1="27" x2="32" y1="20" y2="20" stroke-width="1"></line><line x1="10" x2="14" y1="26" y2="26" stroke-width="1"></line><line x1="26" x2="30" y1="26" y2="26" stroke-width="1"></line><path d="M16 6 L16 3 M20 7 L20 2 M24 6 L24 3" stroke-width="1.2"></path><circle cx="20" cy="21" r="1.5" fill="currentColor"></circle></svg>`,
 };
 
 function formatDate(iso?: string): string {
@@ -37,7 +46,11 @@ function formatDate(iso?: string): string {
  */
 export function renderProtocolCard(protocol: Protocol): string {
   const categoryLabel = CATEGORY_LABELS[protocol.category] || `[${protocol.category}]`;
-  const iconSvg = protocol.iconSvg || DEFAULT_SVGS[protocol.category] || DEFAULT_SVGS.WATER;
+  const iconSvg =
+    protocol.iconSvg ||
+    PROTOCOL_ICON_OVERRIDES[protocol.protocolId] ||
+    DEFAULT_SVGS[protocol.category] ||
+    DEFAULT_SVGS.WATER;
 
   const threatBadge =
     protocol.threatLevel === 'CRITICAL'

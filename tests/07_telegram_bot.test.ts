@@ -98,14 +98,15 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
     );
   });
 
-  it('/stats 명령 시 6대 카테고리별 통계 및 SVG/번역 완비 현황을 반환해야 한다', async () => {
+  it('/stats 명령 시 5대 핵심 카테고리별 통계 및 SVG/번역 완비 현황을 반환해야 한다', async () => {
     const mockClient = new MockTelegramApiClient();
     const bot = new TelegramBotService({ client: mockClient, allowedChatId: '1234' });
 
     const reply = await bot.handleMessage(1234, '/stats');
     assert.match(reply.text, /생존 교범 인프라 통계/);
-    assert.match(reply.text, /식수 확보/);
-    assert.match(reply.text, /불 피우기/);
+    assert.match(reply.text, /물·식량·보존 \(FOOD\)/);
+    assert.match(reply.text, /불·거처·보온 \(SHELTER\)/);
+    assert.match(reply.text, /소재·천연화학 \(MATERIALS\)/);
     assert.match(reply.text, /정밀 테크니컬 벡터 SVG/);
     assert.match(reply.text, /다국어 번역 데이터셋/);
   });

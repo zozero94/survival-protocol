@@ -9,12 +9,11 @@ import { renderSearchTriggerButton } from '../layout/SearchModal.js';
 export function renderFeedHeader(totalCount        )         {
   const categories                                                     = [
     { key: 'ALL', label: '[전체]' },
-    { key: 'WATER', label: '[물 구하기]' },
-    { key: 'FIRE', label: '[불 피우기]' },
-    { key: 'SHELTER', label: '[움막 짓기]' },
-    { key: 'FOOD', label: '[식량 구하기]' },
-    { key: 'TOOLS', label: '[도구 만들기]' },
-    { key: 'MEDICINE', label: '[응급 처치]' },
+    { key: 'FOOD', label: '[물·식량·보존]' },
+    { key: 'SHELTER', label: '[불·거처·보온]' },
+    { key: 'TOOLS', label: '[도구·의복·공작]' },
+    { key: 'MATERIALS', label: '[소재·천연화학]' },
+    { key: 'MEDICINE', label: '[의약·위생·방호]' },
   ];
 
   const categoryTabs = categories

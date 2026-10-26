@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-09",
-  "category": "FIRE",
+  "category": "MATERIALS",
   "title": "How to Make Hardwood Charcoal in an Underground Pit Kiln",
   "threatLevel": "HIGH",
   "threatLevelText": "[SMOKELESS FUEL & CARBON FILTER]",
@@ -127,6 +127,6 @@
     "description": "Cross-sectional engineering view of the 50cm underground cone kiln operating at 95% oxygen restriction, yielding dense porous hardwood charcoal ideal for smokeless high heat and emergency water filtration."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "916099d408d4f948",
-  "updatedAt": "2026-10-15T14:41:20+09:00"
+  "contentHash": "322dc0eab95e53a9",
+  "updatedAt": "2026-10-15T16:31:51+09:00"
 }

@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-09",
-  "category": "FIRE",
+  "category": "MATERIALS",
   "title": "在土坑中隔絕空氣將木材燒製成堅硬木炭的方法（原始炭窯製作法）",
   "threatLevel": "HIGH",
   "threatLevelText": "[無煙高熱燃料 & 淨水濾炭必備]",
@@ -127,6 +127,6 @@
     "description": "深50公分圓錐形土坑在限制95%空氣下高溫燜烤運作的技術剖面圖，產出可用於無煙高熱與飲用水過濾的緻密多孔橡木炭。"
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "916099d408d4f948",
-  "updatedAt": "2026-10-15T14:41:20+09:00"
+  "contentHash": "322dc0eab95e53a9",
+  "updatedAt": "2026-10-15T16:31:51+09:00"
 }

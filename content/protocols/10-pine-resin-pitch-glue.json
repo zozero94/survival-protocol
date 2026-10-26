@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "소나무 송진을 녹여 굳히는 상처 소독 연고 및 만능 방수 접착제 (원시 송진 정제법)",
   "threatLevel": "HIGH",
   "threatLevelText": "[야생 세균 감염 차단 & 도구 방수 결속]",
@@ -173,5 +173,5 @@
     "description": "오목한 돌판과 조개껍데기에 담긴 황금빛 천연 항균 보호막 연고와, 참나무 숯가루를 1:1 배합하여 나뭇가지 끝에 굳힌 흑요석 광택의 방수 결속 막대(Pitch Stick), 그리고 돌도끼 자루 결속부 방수 방벽 단면입니다."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

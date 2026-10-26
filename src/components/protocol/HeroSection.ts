@@ -1,4 +1,5 @@
 import type { Protocol } from '../../types/protocol.types.ts';
+import { UI_STRINGS } from '../../i18n/ui-strings.ts';
 import { highlightTechnicalTerms } from './StepCard.ts';
 
 function formatDate(iso?: string): string {
@@ -55,7 +56,7 @@ export function renderHeroSection(protocol: Protocol): string {
         ${protocol.threatLevelText}
       </span>
       <span class="border border-[#444] text-[#ccc] px-1.5 py-0.5 text-[11px] uppercase">
-        <span id="proto-hero-category" data-proto="category">${protocol.category}</span>
+        <span id="proto-hero-category" data-proto="category" data-i18n="cat_${protocol.category}">${(UI_STRINGS.ko as Record<string, string>)['cat_' + protocol.category] || protocol.category}</span>
       </span>
       ${dateHtml}
       <span class="border border-[#333] text-[#999] px-1.5 py-0.5 text-[11px] font-mono flex items-center gap-1 rounded-none">

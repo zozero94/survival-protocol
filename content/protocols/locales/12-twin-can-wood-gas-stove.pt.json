@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-12",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "Fogareiro a Gás de Lenha de Dupla Combustão com 2 Latas Vazias, Fio Desencapado e Gravetos",
   "threatLevel": "HIGH",
   "threatLevelText": "[COZIMENTO SEM FUMAÇA DE ALTA TEMPERATURA E 80% ECONOMIA DE LENHA]",
@@ -173,5 +173,6 @@
     "description": "Construído com duas latas de aço descartadas e arame desencapado, com canal de pré-aquecimento de 1,5–2cm, entradas inferiores de ar frio, bicos superiores de oxigênio secundário e suporte cruzado de arame para combustão limpa a 850°C."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "00b85f08738b5163"
+  "contentHash": "47468e0c9ce45c53",
+  "updatedAt": "2026-10-17T19:16:11+09:00"
 }

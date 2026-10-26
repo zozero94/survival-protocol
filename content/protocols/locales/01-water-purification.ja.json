@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-01",
-  "category": "WATER",
+  "category": "FOOD",
   "title": "泥水をきれいな飲み水に変える方法（炭と砂で作る自然の浄水器）",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[必須サバイバル]",
@@ -139,6 +139,6 @@
     "description": "木の枝の三脚につるした容器内に木炭、川砂、小石、繊維栓が層状に配置され、上部の泥水が下部出口から澄んだ透明な水へとろ過される構造です。"
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-15T15:29:10+09:00",
-  "contentHash": "8e86ecfb1c03de78"
+  "updatedAt": "2026-10-16T13:34:53+09:00",
+  "contentHash": "2abe4cfb93c63475"
 }

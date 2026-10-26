@@ -2,7 +2,7 @@ import { callGeminiApi } from '../gemini-client.ts';
 
 export interface PlannedTopic {
   protocolId: string;
-  category: 'FIRE' | 'WATER' | 'TOOLS' | 'SHELTER' | 'FOOD';
+  category: 'FOOD' | 'SHELTER' | 'TOOLS' | 'MATERIALS' | 'MEDICINE' | 'FIRE' | 'WATER';
   koreanTitle: string;
   threatLevel: 'CRITICAL' | 'HIGH' | 'MODERATE';
   stitchPrompt: string;

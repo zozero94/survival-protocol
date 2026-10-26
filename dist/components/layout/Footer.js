@@ -101,12 +101,11 @@ export function renderFooter(activePage                   = 'index')         {
         <span class="text-[9px] text-neutral-500">ARCHIVE TIERS</span>
       </div>
       <ul class="space-y-1.5 text-[11px]">
-        <li><a href="/?cat=WATER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat1">[01 WATER] 수분 확보 &amp; 여과</span><span class="text-neutral-600">Tier 1</span></a></li>
-        <li><a href="/?cat=FIRE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat2">[02 FIRE] 열 &amp; 발화 공학</span><span class="text-neutral-600">Tier 1</span></a></li>
-        <li><a href="/?cat=SHELTER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat3">[03 SHELTER] 은신처 &amp; 화덕</span><span class="text-neutral-600">Tier 1</span></a></li>
-        <li><a href="/?cat=TOOLS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat4">[04 TOOLS] 석기 가공 &amp; 결속</span><span class="text-neutral-600">Tier 1</span></a></li>
-        <li><a href="/?cat=FOOD" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat5">[05 FOOD] 어로 통발 &amp; 덫</span><span class="text-neutral-600">Tier 2</span></a></li>
-        <li><a href="/?cat=MEDICINE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat6">[06 MEDICINE] 의약 &amp; 잿물비누</span><span class="text-neutral-600">Tier 2</span></a></li>
+        <li><a href="/?cat=FOOD" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat1">[01 FOOD] 물·식량·보존</span><span class="text-neutral-600">04 DOCS</span></a></li>
+        <li><a href="/?cat=SHELTER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat2">[02 SHELTER] 불·거처·보온</span><span class="text-neutral-600">04 DOCS</span></a></li>
+        <li><a href="/?cat=TOOLS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat3">[03 TOOLS] 도구·의복·공작</span><span class="text-neutral-600">03 DOCS</span></a></li>
+        <li><a href="/?cat=MATERIALS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat4">[04 MATERIALS] 소재·천연화학</span><span class="text-neutral-600">02 DOCS</span></a></li>
+        <li><a href="/?cat=MEDICINE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat5">[05 MEDICINE] 의약·위생·방호</span><span class="text-neutral-600">02 DOCS</span></a></li>
       </ul>
     </div>
 

@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "Purifying Pine Resin into Antiseptic Ointment & Waterproof Pitch Glue",
   "threatLevel": "HIGH",
   "threatLevelText": "[INFECTION DEFENSE & WATERPROOF TOOL LASHING]",
@@ -173,5 +173,5 @@
     "description": "Full specifications of clarified golden antimicrobial salve in an oyster shell, rock-hard obsidian pitch glue stick wrapped on hardwood, and axe joint waterproof barrier cross-section."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

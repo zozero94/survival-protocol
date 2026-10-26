@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-12",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "Estufa de Gas de Leña de Doble Combustión con 2 Latas Vacías, Cable Pelado y Ramitas",
   "threatLevel": "HIGH",
   "threatLevelText": "[COCCIÓN SIN HUMO A ALTA TEMPERATURA Y 80% AHORRO DE LEÑA]",
@@ -173,5 +173,6 @@
     "description": "Construida con dos latas de acero recuperadas y alambre pelado, con canal de precalentamiento de 1.5–2cm, tomas inferiores de aire frío, toberas superiores de oxígeno secundario y soporte cruzado de alambre para combustión limpia a 850°C."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "00b85f08738b5163"
+  "contentHash": "47468e0c9ce45c53",
+  "updatedAt": "2026-10-17T19:16:11+09:00"
 }

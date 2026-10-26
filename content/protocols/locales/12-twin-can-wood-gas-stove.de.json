@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-12",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "Doppelwandiger Holzvergaser-Kocher aus 2 leeren Konservendosen, Schrottdraht und Zweigen",
   "threatLevel": "HIGH",
   "threatLevelText": "[RAUCHFREIES HOCHTEMPERATUR-KOCHEN & 80% HOLZERSPARNIS]",
@@ -173,5 +173,6 @@
     "description": "Gebaut aus zwei geborgenen Stahldosen und blankem Draht mit 1,5–2cm Doppelwand-Luftspalt, unteren Kaltlufteinlässen, oberen Sekundärluftdüsen, Draht-Topfkreuz und rauchfreier 850°C-Holzgasverbrennung."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "00b85f08738b5163"
+  "contentHash": "47468e0c9ce45c53",
+  "updatedAt": "2026-10-17T19:16:11+09:00"
 }

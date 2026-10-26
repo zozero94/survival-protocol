@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-02",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "利用樹枝摩擦生火的方法 (弓鑽鑽木取火法)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[威脅等級：致命 (CRITICAL)]",
@@ -112,6 +112,6 @@
     "description": "火板45度V型槽內藉由摩擦熱生成的400°C黑炭灰餘燼劇烈冒烟，安全轉移至乾燥引火鳥巢並吹拂出明火的實戰生火完成狀態。"
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:45:00+09:00",
-  "contentHash": "006f8f1c7593c632"
+  "updatedAt": "2026-10-15T15:52:40+09:00",
+  "contentHash": "6cbccf0cd402bece"
 }

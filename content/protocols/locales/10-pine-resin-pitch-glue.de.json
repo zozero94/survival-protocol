@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "Kiefernharz zu antiseptischer Salbe und wasserfestem Pechkleber veredeln",
   "threatLevel": "HIGH",
   "threatLevelText": "[INFEKTIONSABWEHR & WASSERFESTE WERKZEUGBINDUNG]",
@@ -173,5 +173,5 @@
     "description": "Vollständige Spezifikationen der geklärten Wundsalbe in der Muschelschale, des obsidianharten Pechklebestifts am Hartholzast und des wasserdichten Beilbindungs-Schnitts."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

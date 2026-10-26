@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-09",
-  "category": "FIRE",
+  "category": "MATERIALS",
   "title": "土穴で空気を遮断して木材を高硬度な炭に焼き上げる方法（原始木炭窯）",
   "threatLevel": "HIGH",
   "threatLevelText": "[無煙高熱燃料 & 浄水フィルター木炭確保]",
@@ -127,6 +127,6 @@
     "description": "深さ50cmの円錐形土穴で酸素を95%遮断して高温蒸し焼きにし、無煙高熱燃料や飲料水ろ過フィルターとして使用可能な硬質多孔質ナラ炭の完成断面図です。"
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "916099d408d4f948",
-  "updatedAt": "2026-10-15T14:41:20+09:00"
+  "contentHash": "322dc0eab95e53a9",
+  "updatedAt": "2026-10-15T16:31:51+09:00"
 }

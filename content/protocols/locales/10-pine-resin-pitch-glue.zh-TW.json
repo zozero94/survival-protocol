@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-10",
-  "category": "MEDICINE",
+  "category": "MATERIALS",
   "title": "熬製松脂傷口消毒軟膏與萬能防水硬膠（原始松脂提煉法）",
   "threatLevel": "HIGH",
   "threatLevelText": "[阻斷野外細菌感染 ＆ 器具防水牢固結合]",
@@ -173,5 +173,5 @@
     "description": "貝殼內金黃澄澈的天然抗菌保護軟膏、混合櫟木炭粉裹於硬木端部之黑曜石光澤膠棒，以及石斧握柄接合處完全防水之斷面構造技術圖解。"
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "db453b0037c7d451"
+  "contentHash": "3274b3a5945db93f"
 }

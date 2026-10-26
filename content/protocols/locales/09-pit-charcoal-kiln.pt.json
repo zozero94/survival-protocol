@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-09",
-  "category": "FIRE",
+  "category": "MATERIALS",
   "title": "Como fazer carvão vegetal denso em trincheira de terra sem oxigênio",
   "threatLevel": "HIGH",
   "threatLevelText": "[COMBUSTÍVEL SEM FUMAÇA E FILTRO DE CARBONO]",
@@ -127,6 +127,6 @@
     "description": "Vista técnica do forno subterrâneo cônico com 95% de restrição de oxigênio, produzindo carvão vegetal poroso de carvalho para calor sem fumaça e filtragem de emergência."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "916099d408d4f948",
-  "updatedAt": "2026-10-15T14:41:20+09:00"
+  "contentHash": "322dc0eab95e53a9",
+  "updatedAt": "2026-10-15T16:31:51+09:00"
 }

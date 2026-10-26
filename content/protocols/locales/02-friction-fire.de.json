@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-02",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "Feuer machen durch Holzreibung (Bogenbohrer-Methode)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
@@ -112,6 +112,6 @@
     "description": "Eine 400°C heiße Holzkohleglut aus der 45°-V-Kerbe, die sicher in das trockene Zundernest überführt und zu einer offenen Flamme entfacht wurde."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:45:00+09:00",
-  "contentHash": "006f8f1c7593c632"
+  "updatedAt": "2026-10-15T15:52:40+09:00",
+  "contentHash": "6cbccf0cd402bece"
 }

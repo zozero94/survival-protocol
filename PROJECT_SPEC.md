@@ -12,7 +12,7 @@
   - 피드 카드 상단 레일 등록일(`YYYY.MM.DD`) 및 상세 히어로 섹션 최종 수정 시간(`YYYY.MM.DD HH:mm`) 표기
   - 독해 시간("소요 30초 독해") 문구 완전 배제 및 모노스페이스 브루탈리즘 제원 스트립 정밀 배치
   - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-  - 글로벌 통합 푸터 (`Footer.ts`): Stitch Tactical HUD Dark Brutalist 4-컬럼 그리드 규격, 모바일 하단 액션바 오프셋(`pb-20 md:pb-4`), AdSense 4대 규정 링크, 6대 생존 분과 색인 및 CC0 라이선스 스트립 탑재
+  - 글로벌 통합 푸터 (`Footer.ts`): Stitch Tactical HUD Dark Brutalist 4-컬럼 그리드 규격, 모바일 하단 액션바 오프셋(`pb-20 md:pb-4`), AdSense 4대 규정 링크, 5대 핵심 생존 분과 색인(`FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE`) 및 CC0 라이선스 스트립 탑재
 - **Google AdSense 승인 및 E-E-A-T 신뢰성 4대 규정 페이지 (Stitch 1:1 완벽 이식)**:
   - `about.html`: 4대 엄격 실증 체계 (Zero-Tool, Vector Blueprint, Red-Team Safety, PWA Offline), 수석 편찬 위원회(인류학/열역학 공학), CC0 오픈소스 배포 헌장
   - `privacy.html`: Zero-PII 수집 헌장, Google AdSense 맞춤 쿠키 및 옵트아웃(`adssettings.google.com`), GA4 IP 비식별화, Firebase 원자적 증분 텔레메트리, PWA 로컬 스토리지 즉시 소각(`executeHardPurge()`)

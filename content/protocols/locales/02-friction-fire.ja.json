@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-02",
-  "category": "FIRE",
+  "category": "SHELTER",
   "title": "木の枝の摩擦で火を起こす方法（ボウドリル摩擦発火法）",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[危険等級: 致命的(CRITICAL)]",
@@ -112,6 +112,6 @@
     "description": "火床板の45度V溝に摩擦熱で生じた黒い炭粉の熾火(400°C)が赤く燃え上がり、これを乾燥した火口の巣に移して炎を立ち上げた実戦発火の完成状態です。"
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:45:00+09:00",
-  "contentHash": "006f8f1c7593c632"
+  "updatedAt": "2026-10-15T15:52:40+09:00",
+  "contentHash": "6cbccf0cd402bece"
 }

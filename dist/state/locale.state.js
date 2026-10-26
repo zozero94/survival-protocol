@@ -183,6 +183,8 @@ export function getLocaleRuntimeScript()         {
               }
             } else if (field === 'summary') {
               el.innerHTML = renderHighlightTermsClient(proto[field]);
+            } else if (field === 'category') {
+              el.innerText = ui['cat_' + proto[field]] || proto[field];
             } else {
               el.innerText = proto[field];
             }

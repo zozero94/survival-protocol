@@ -643,13 +643,12 @@ ${stepsText}
 
     return `📊 <b>[생존 교범 인프라 통계 대시보드]</b>
 
-<b>🏷️ 6대 도메인별 프로토콜 분포:</b>
-• 💧 식수 확보 (WATER): ${catCounts['WATER'] || 0}편
-• 🔥 불 피우기 (FIRE): ${catCounts['FIRE'] || 0}편
-• 🏕️ 은신처 구축 (SHELTER): ${catCounts['SHELTER'] || 0}편
-• 🪓 원시 도구 (TOOLS): ${catCounts['TOOLS'] || 0}편
-• 🌿 식량 채집 (FOOD): ${catCounts['FOOD'] || 0}편
-• 🧪 야전 의약 (MEDICINE): ${catCounts['MEDICINE'] || 0}편
+<b>🏷️ 5대 핵심 도메인별 프로토콜 분포:</b>
+• 💧 물·식량·보존 (FOOD): ${(catCounts['FOOD'] || 0) + (catCounts['WATER'] || 0)}편
+• 🔥 불·거처·보온 (SHELTER): ${(catCounts['SHELTER'] || 0) + (catCounts['FIRE'] || 0)}편
+• 🪓 도구·의복·공작 (TOOLS): ${catCounts['TOOLS'] || 0}편
+• ⚗️ 소재·천연화학 (MATERIALS): ${catCounts['MATERIALS'] || 0}편
+• 🧪 의약·위생·방호 (MEDICINE): ${catCounts['MEDICINE'] || 0}편
 ──────────────────
 <b>📦 총 발행 프로토콜:</b> ${protocols.length}편
 <b>🎨 정밀 테크니컬 벡터 SVG:</b> ${svgCount}종
