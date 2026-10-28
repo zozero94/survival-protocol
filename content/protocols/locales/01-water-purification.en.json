@@ -4,7 +4,7 @@
   "title": "How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[MUST-HAVE SURVIVAL]",
-  "summary": "Drinking untreated muddy water in the wild leads to severe cramps, diarrhea, and dangerous dehydration. By building a three-branch tripod, hanging a bark cone, and layering charcoal, sand, and pebbles in order, turbid water is filtered clear. Boiling this filtered water vigorously for 3+ minutes destroys residual microscopic bacteria, making it safe to drink.",
+  "summary": "Drinking untreated muddy water in the wild leads to severe cramps, diarrhea, and dangerous dehydration. By setting up a three-branch tripod, tying three horizontal cross-sticks around the middle to form a triangular support cradle, seating a birch-bark cone inside with a moss plug, and layering charcoal, sand, and pebbles in order, turbid water is filtered clear. Boiling this filtered water vigorously for 3+ minutes destroys microscopic bacteria, making it safe to drink.",
   "timeRequired": "25 min (15 min filtration + 10 min boiling)",
   "successRate": "99.9% (When layered in sequence and boiled for 3+ min)",
   "difficulty": "Moderate (Built purely from natural materials)",
@@ -32,8 +32,8 @@
     },
     {
       "id": "mat-05",
-      "name": "Three straight finger-thick branches (50cm long)",
-      "desc": "Tied together at the top to form a stable tripod. Holds the cone high enough to place a collection cup below."
+      "name": "Three tripod leg branches & three short cross-brace sticks",
+      "desc": "Three short cross-sticks are tied horizontally in a triangle halfway up the tripod legs to cradle the filter cone securely."
     },
     {
       "id": "mat-06",
@@ -44,35 +44,113 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Step 1: Set up a 3-stick tripod and mount the cone funnel",
-      "description": "1. **Assemble Tripod**: Lash three finger-thick straight branches together near the top and spread the legs to form a sturdy tripod.\n2. **Suspend Cone**: Mount the rolled birch bark cone or hollow bamboo stalk vertically at the center of the tripod.\n3. **Insert Base Plug**: Firmly pack clean, rinsed river moss or a cloth scrap into the narrow bottom spout. A loose plug will allow filter media to dump out.",
-      "actionNote": "> Plug Check: Ensure the plug is firmly wedged. A loose plug will blow out under water pressure, leaking black charcoal dust.",
+      "title": "Step 1: Tie a triangular cross-brace cradle on the tripod, seat the cone, and pack the moss plug",
+      "description": "1. **Build Tripod & Triangular Cradle Collar**: Lash three sturdy branches at the top with [Wild Kudzu Vine Cordage](/protocol-05.html) and spread the legs wide. Halfway down the legs, **tie three short cross-sticks horizontally across the three legs to form a triangular support collar**.\n2. **Seat Cone & Double-Lash**: Drop the tapered birch-bark cone (or bamboo tube) **down into the center of the triangular wooden collar** so it wedges snugly. Lash the cone's waist to the horizontal crossbar and **tie the cone's upper rim to the left and right tripod legs** so the top mouth stays wide open and never tilts.\n3. **Pack Bottom Moss Plug**: Firmly press a handful of clean rinsed sphagnum moss into the narrow bottom spout with your thumb.",
+      "actionNote": "> Mounting & Plug Check: Keep the top mouth completely open for pouring water, and ensure the horizontal triangular cradle supports the waist of the cone so heavy wet sand cannot push it down.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // PURIFICATION STEP 1: TRIPOD FRAME",
-        "TRIPOD FRAME (3-POINT)",
-        "CONE FUNNEL (VESSEL)",
-        "MOSS PLUG (BASE)",
-        "[STEP 1] STABLE 3-POINT TRIPOD SETUP"
-      ]
+        "FIG. 01 // STEP 1: TRIPOD CRADLE & MOSS PLUG",
+        "Tie horizontal cross-sticks mid-leg to form a triangle cradle",
+        "Lash cone top rim and waist tightly to the tripod frame",
+        "Pack clean green moss firmly into the narrow bottom spout",
+        "[STEP 1] Wide-open top mouth & rock-solid triangle cradle"
+      ],
+      "deepDive": {
+        "badge": "TRIPOD CRADLE & MOSS PLUG",
+        "title": "Why You Need a Triangular Cross-Brace Collar Halfway Up the Tripod",
+        "text": "A filter cone filled with wet sand, gravel, and water becomes very heavy; hanging it by a single loose string causes it to tip over or slip down. By tying three horizontal cross-sticks around the middle of the tripod legs to form a triangular collar, the tapered cone wedges firmly into the wooden ring like a funnel in a stand. Tying the upper rim to the side poles keeps the top mouth wide open while eliminating wobble.",
+        "fieldSpecs": [
+          {
+            "name": "Birch-Bark Filter Cone Wedged in a Triangular Cross-Braced Tripod",
+            "scientificName": "Triangular Cross-Braced Tripod & Birch-Bark Cone Mount",
+            "categoryTag": "Dual Upper-Lower Vine Lashing / Load-Bearing Cradle",
+            "imageFileName": "id-tripod-bark-cone-mount.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "TRIPOD CRADLE LOCK: VERIFIED",
+            "traits": [
+              {
+                "label": "COLLAR/RING",
+                "value": "Horizontal sticks lashed across the three legs **form a sturdy triangular ring** supporting the cone waist."
+              },
+              {
+                "label": "UPPER TIE",
+                "value": "Both sides of the **upper cone rim are tied to the tripod poles** to prevent tilting when pouring water."
+              },
+              {
+                "label": "CLEAR BASE",
+                "value": "Open ground space directly beneath the spout **allows easy placement of the collection bowl**."
+              }
+            ],
+            "fieldUse": "Field mounting structure that holds heavy wet filter media upright without tipping or blocking the top opening"
+          },
+          {
+            "name": "Compressed Green Sphagnum Moss Bottom Filter Plug",
+            "scientificName": "Compressed Sphagnum Moss Bottom Filter Plug",
+            "categoryTag": "Media Retention / Drip Flow Regulator",
+            "imageFileName": "id-sphagnum-moss-plug.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "MOSS PLUG DENSITY: TIGHT",
+            "traits": [
+              {
+                "label": "PACKING",
+                "value": "Stuff a handful of **clean green sphagnum moss tightly into the narrow bottom tip** with your thumb."
+              },
+              {
+                "label": "RETENTION",
+                "value": "Acts as a dense fibrous mesh that **prevents black charcoal grains and sand from falling out**."
+              },
+              {
+                "label": "FLOW RATE",
+                "value": "Regulates water exit speed so **clear water drips steadily drop by drop** instead of gushing through."
+              }
+            ],
+            "fieldUse": "Natural bottom plug that holds up the charcoal and sand beds while letting clear water droplets pass"
+          }
+        ]
+      }
     },
     {
       "stepNumber": "02",
       "title": "Step 2: Crush charcoal to pea size and pack an 8cm active bed",
-      "description": "1. **Crush & Grade**: Take cool, fully carbonized campfire charcoal and tap gently with a stone into **pea-sized chunks (5-8mm)**. Discard fine flour-like dust that would clog the water flow.\n2. **Pack 8cm Bed**: Pour the charcoal over the base moss plug and tamp down gently with a stick to form a level bed **four finger widths deep (about 8cm)**.",
+      "description": "1. **Crush & Grade**: Take cool [Hardwood Charcoal](/protocol-09.html) and tap gently with a stone into **pea-sized chunks (5-8mm)**. Discard fine flour-like dust that would clog the water flow.\n2. **Pack 8cm Bed**: Pour the charcoal over the base moss plug and tamp down gently with a stick to form a level bed **four finger widths deep (about 8cm)**.",
       "actionNote": "> Grain Rule: Charcoal chunks must remain coarser than rice grains. Fine powdered dust clogs percolation.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // PURIFICATION STEP 2: CHARCOAL CORE",
-        "CHARCOAL CORE (ACTIVE)",
-        "PORE ABSORPTION (TOXINS)",
-        "THICKNESS: 8CM",
-        "[STEP 2] PACK 8CM OF PEA-SIZED CHARCOAL"
+        "FIG. 02 // STEP 2: 8CM CHARCOAL ADSORPTION BED",
+        "Pea-sized crushed black charcoal (brush away fine powder)",
+        "Micro-pores that trap foul odors and organic toxins",
+        "Pack four finger-widths deep (8cm) above the moss plug",
+        "[STEP 2] Pack 8cm of pea-sized charcoal and tamp level"
       ],
       "deepDive": {
         "badge": "FIELD SCIENCE",
-        "title": "Charcoal Adsorption Mechanics",
-        "text": "When wood is pyrolyzed in low-oxygen heat, millions of microscopic pores form. These micropores exert strong van der Waals forces, trapping dissolved organic toxins and chemical odors onto the carbon surface."
+        "title": "Charcoal Adsorption Mechanics & Stratified Grain Sizing",
+        "text": "When wood is pyrolyzed in low-oxygen heat, millions of microscopic pores form inside the carbon matrix, physically trapping dissolved organic toxins and foul odors. Crushing charcoal into uniform pea-sized granules (5-8mm) maximizes surface area without choking water flow.",
+        "fieldSpecs": [
+          {
+            "name": "Vertical Cutaway of 4-Stage Stratified Filter Column (Moss, Charcoal, Sand, Pebbles)",
+            "scientificName": "Vertical Gravity-Fed Stratified Bio-Filter Column",
+            "categoryTag": "Bottom Charcoal Bed / Middle Sand Bed / Top Pebble Buffer",
+            "imageFileName": "id-layered-charcoal-sand-filter.jpg",
+            "hudCode": "FIG. BIO-01C // MACRO OPTIC",
+            "hudStatus": "STRATA ORDER: BOTTOM-TO-TOP",
+            "traits": [
+              {
+                "label": "BOTTOM/CHAR",
+                "value": "Pack **four finger widths (8cm) of pea-sized (5-8mm) hardwood charcoal** directly over the moss plug."
+              },
+              {
+                "label": "MIDDLE/SAND",
+                "value": "Layer **three finger widths (6cm) of rinsed fine river sand** evenly over the charcoal bed."
+              },
+              {
+                "label": "TOP/PEBBLES",
+                "value": "Place **two finger widths (4cm) of rounded pebbles** on top to disperse inflow water pressure."
+              }
+            ],
+            "fieldUse": "Vertical gravity-fed filter column purifying muddy water through pebbles, fine sand, charcoal, and moss"
+          }
+        ]
       }
     },
     {
@@ -82,11 +160,11 @@
       "actionNote": "> Level Bed: Keep the sand surface perfectly horizontal to ensure uniform percolation across the entire filter column.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // PURIFICATION STEP 3: SAND LAYER",
-        "RIVER SAND (FINE)",
-        "PARTICLE FILTER (SILT)",
-        "THICKNESS: 6CM",
-        "[STEP 3] LOCK CHARCOAL AND TRAP SILT"
+        "FIG. 03 // STEP 3: 6CM FINE RIVER SAND LAYER",
+        "Fine river sand rinsed 2-3 times to remove mud silt",
+        "Tightly packed sand grains block fine suspended mud",
+        "Spread flat to three finger-widths (6cm) over charcoal",
+        "[STEP 3] Layer 6cm of washed river sand with a flat top"
       ]
     },
     {
@@ -96,25 +174,25 @@
       "actionNote": "> Flush Rule: Never drink the initial 1-2 cups. Let the column flush itself clean until transparent drips appear.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // PURIFICATION STEP 4: PEBBLE & FLUSH",
-        "PEBBLE LAYER (BUFFER)",
-        "FLUSH FIRST CUPS (DISCARD)",
-        "CLEAR DRIP (COLLECT)",
-        "[STEP 4] BUFFER WATER & DISCARD FLUSH"
+        "FIG. 04 // STEP 4: PEBBLE BUFFER & INITIAL FLUSH",
+        "Fingernail-sized pebble layer (4cm) & leaf diffuser",
+        "Discard the first 1-2 cups containing black charcoal dust",
+        "Collect only crystal-clear water drops in a clean vessel",
+        "[STEP 4] Protect sand with pebbles & discard first 1-2 cups"
       ]
     },
     {
       "stepNumber": "05",
       "title": "Step 5: Boil filtered water for 3+ minutes to destroy all microbes",
-      "description": "1. **Heat in Boiler**: Transfer visually transparent filtered water into a clay pot, stone bowl, or bamboo boiler and place over campfire coals.\n2. **Maintain Rolling Boil**: Once large rolling bubbles erupt vigorously across the entire surface, maintain a continuous boil for at least **3 full minutes (5 minutes at altitudes above 1,000m)**.\n3. **Cool & Consume**: Allow the sterile water to cool before drinking.",
+      "description": "1. **Heat in Boiler**: Transfer visually transparent filtered water into a clay pot or stone bowl seated on hearth stones over a [Bow-Drill Campfire](/protocol-02.html).\n2. **Maintain Rolling Boil**: Once large rolling bubbles erupt vigorously across the entire surface, maintain a continuous boil for at least **3 full minutes (5 minutes at altitudes above 1,000m)**.\n3. **Cool & Consume**: Allow the sterile water to cool before drinking.",
       "actionNote": "> Compulsory Boiling: Clear water is NOT sterile water. Mechanical filtration followed by thermal boiling achieves 99.9% biological safety.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // PURIFICATION STEP 5: 100°C BOIL",
-        "BOILING 100°C (ROLLING)",
-        "TIME: 3+ MIN (TIMER)",
-        "PATHOGEN FREE (99.9%)",
-        "[STEP 5] ROLLING BOIL FOR 3+ MINUTES"
+        "FIG. 05 // STEP 5: 100°C ROLLING BOIL STERILIZATION",
+        "Vigorous rolling boil with large bubbles on hearth stones",
+        "Maintain full boil for at least 3+ min (5 min at altitude)",
+        "Eradicates 99.9% of microscopic bacteria and parasite cysts",
+        "[STEP 5] Always boil clear filtered water for 3+ minutes"
       ],
       "deepDive": {
         "badge": "FIELD SCIENCE",
@@ -130,15 +208,24 @@
   },
   "shortsScript": {
     "hook": "Drinking wild muddy water will cause lethal diarrhea within 3 days! Here is how to purify it without plastic!",
-    "body": "Lash a tripod, suspend a bark cone, and plug the base with moss. Layer 8cm of pea-sized charcoal, 6cm of river sand, and 4cm of pebbles. Pour muddy water in! Discard the first 2 cups of dusty wash water. Critical rule: Clear water is NOT safe water! You must boil it vigorously for 3+ minutes to destroy invisible pathogens!",
+    "body": "Lash a tripod with a middle triangle cross-brace, seat a bark cone inside, and plug the base with moss. Layer 8cm of pea-sized charcoal, 6cm of river sand, and 4cm of pebbles. Pour muddy water in! Discard the first 2 cups of dusty wash water. Critical rule: Clear water is NOT safe water! You must boil it vigorously for 3+ minutes to destroy invisible pathogens!",
     "outro": "Access full offline survival blueprints with zero cell data via the profile link."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Completed Natural Charcoal & Sand Water Filter",
-    "description": "A field-tested primitive filtration column suspended on a timber tripod, layering charcoal, river sand, and pebbles to turn turbid wild water into crystal clear boilable drinking water."
+    "title": "Completed 3-Stage Charcoal & Sand Water Purifier on Tripod Cradle",
+    "description": "A birch-bark cone mounted securely inside a triangular cross-braced tripod, layering moss, pea-sized charcoal (8cm), fine sand (6cm), and pebbles (4cm) to clarify muddy water before a 3-minute sterilizing boil.",
+    "svgLabels": [
+      "PR-01 OUTCOME // 3-STAGE CHARCOAL & SAND WATER PURIFIER",
+      "Step 1: Tie mid-leg triangle cradle, seat cone & pack moss",
+      "Steps 2-3: Layer 8cm pea charcoal & 6cm rinsed fine sand",
+      "Step 4: Add 4cm pebbles, pour water & discard first 1-2 cups",
+      "Step 5: Boil clear filtered water at rolling boil for 3+ min",
+      "Output: Odor-free, crystal-clear & 99.9% sterile safe water",
+      "[FINAL CHECK] Secure tripod cradle · Discard flush · Boil 3+ min"
+    ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-16T13:34:53+09:00",
-  "contentHash": "2abe4cfb93c63475"
+  "updatedAt": "2026-10-27T00:18:03.903Z",
+  "contentHash": "ed3f942f6826c6c2"
 }

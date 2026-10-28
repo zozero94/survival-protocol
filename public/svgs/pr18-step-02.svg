@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d12" />
+      <stop offset="100%" stop-color="#121720" />
+    </linearGradient>
+    <linearGradient id="woodStick02" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a17249" />
+      <stop offset="50%" stop-color="#7c5330" />
+      <stop offset="100%" stop-color="#4f331b" />
+    </linearGradient>
+    <linearGradient id="mossGrad02" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="leatherGrad02" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d99b52" />
+      <stop offset="50%" stop-color="#b87b35" />
+      <stop offset="100%" stop-color="#8c581e" />
+    </linearGradient>
+    <linearGradient id="armGrad02" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d6a784" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#9c6d4c" stop-opacity="0.88" />
+    </linearGradient>
+    <filter id="shadow02" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bgGrad02)" />
+  <g stroke="#1e2633" stroke-width="0.6" opacity="0.6">
+    <path d="M 0,80 L 400,80 M 0,160 L 400,160 M 0,240 L 400,240 M 0,320 L 400,320" />
+    <path d="M 80,0 L 80,400 M 160,0 L 160,400 M 240,0 L 240,400 M 320,0 L 320,400" />
+  </g>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1.2" />
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="26" rx="3" fill="#131b26" stroke="#3b4d66" stroke-width="1" />
+
+  <!-- Dimension Arrow: Two-Joint Span (45~50cm, Elbow to Palm) -->
+  <g stroke="#fde68a" stroke-width="1.5">
+    <line x1="44" y1="84" x2="356" y2="84" />
+    <line x1="44" y1="76" x2="44" y2="104" />
+    <line x1="356" y1="76" x2="356" y2="104" />
+    <path d="M 52,80 L 44,84 L 52,88 M 348,80 L 356,84 L 348,88" fill="none" />
+  </g>
+
+  <!-- TOP SPLINT STICK + INNER MOSS & BUCKSKIN PAD -->
+  <g filter="url(#shadow02)">
+    <!-- Outer Hardwood Stick #1 (45-50cm) -->
+    <rect x="44" y="102" width="312" height="18" rx="6" fill="url(#woodStick02)" stroke="#d99b52" stroke-width="1.2" />
+    <path d="M 56,110 L 140,110 M 180,112 L 280,112 M 300,109 L 344,109" stroke="#3d2410" stroke-width="0.9" />
+    <!-- Inner Sphagnum Moss Cushion (2cm) + Buckskin Wrap -->
+    <rect x="52" y="120" width="296" height="16" rx="4" fill="url(#mossGrad02)" stroke="#86efac" stroke-width="1" />
+    <rect x="52" y="132" width="296" height="5" rx="2" fill="url(#leatherGrad02)" />
+    <path d="M 76,102 L 84,137 M 136,102 L 144,137 M 196,102 L 204,137 M 256,102 L 264,137 M 316,102 L 324,137" stroke="#f59e0b" stroke-width="1.5" />
+  </g>
+
+  <!-- CENTER: Forearm Silhouette Showing Elbow Joint, Fracture, Wrist Joint & Palm Moss Roll -->
+  <g filter="url(#shadow02)">
+    <!-- Forearm Body -->
+    <path d="M 48,154 C 110,148 230,152 296,158 C 325,154 348,160 352,182 C 348,204 325,210 296,204 C 230,210 110,214 48,208 Z" fill="url(#armGrad02)" stroke="#f59e0b" stroke-width="1.2" />
+    <!-- Internal Bone Schematic (Elbow -> Fracture -> Wrist) -->
+    <circle cx="72" cy="181" r="11" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" />
+    <circle cx="282" cy="181" r="9" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" />
+    <path d="M 83,176 L 172,176 L 178,183 L 184,175 L 273,176" fill="none" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" />
+    <path d="M 83,187 L 174,187 L 180,192 L 186,186 L 273,187" fill="none" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round" />
+    <!-- Fracture Lightning Marker & Boiled Burlap Pad -->
+    <rect x="156" y="148" width="48" height="66" rx="3" fill="#c4a46d" fill-opacity="0.45" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="3,2" />
+    <path d="M 176,166 L 184,180 L 175,184 L 183,198" fill="none" stroke="#ef4444" stroke-width="2.5" />
+
+    <!-- Egg-Sized Moss Roll Held Inside Palm -->
+    <ellipse cx="328" cy="182" rx="18" ry="14" fill="url(#mossGrad02)" stroke="#bbf7d0" stroke-width="1.5" />
+    <path d="M 318,178 C 324,174 332,174 338,178 M 316,185 C 324,182 332,182 340,185" fill="none" stroke="#14532d" stroke-width="1.2" />
+  </g>
+
+  <!-- BOTTOM SPLINT STICK + INNER MOSS & BUCKSKIN PAD -->
+  <g filter="url(#shadow02)">
+    <rect x="52" y="225" width="296" height="5" rx="2" fill="url(#leatherGrad02)" />
+    <rect x="52" y="229" width="296" height="16" rx="4" fill="url(#mossGrad02)" stroke="#86efac" stroke-width="1" />
+    <rect x="44" y="245" width="312" height="18" rx="6" fill="url(#woodStick02)" stroke="#d99b52" stroke-width="1.2" />
+    <path d="M 62,254 L 150,254 M 190,255 L 295,255" stroke="#3d2410" stroke-width="0.9" />
+    <path d="M 76,225 L 84,263 M 136,225 L 144,263 M 196,225 L 204,263 M 256,225 L 264,263 M 316,225 L 324,263" stroke="#f59e0b" stroke-width="1.5" />
+  </g>
+
+  <!-- Callout Boxes & Leader Lines -->
+  <rect x="18" y="48" width="364" height="24" rx="3" fill="#0f172a" stroke="#fde68a" stroke-width="1" />
+
+  <rect x="18" y="292" width="364" height="24" rx="3" fill="#0f291e" stroke="#4ade80" stroke-width="1" />
+  <line x1="140" y1="245" x2="140" y2="292" stroke="#4ade80" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <rect x="18" y="322" width="364" height="24" rx="3" fill="#1c1917" stroke="#fbbf24" stroke-width="1" />
+  <line x1="328" y1="196" x2="328" y2="322" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <!-- Footer Summary Bar -->
+  <rect x="14" y="356" width="372" height="30" rx="3" fill="#1e1b4b" stroke="#fde68a" stroke-width="1.2" />
+
+  <!-- 5 SVG Text Labels (1:1 Matched with steps[1].svgLabels) -->
+  <text x="200" y="31" fill="#fde68a" font-family="monospace" font-size="10.5" font-weight="bold" text-anchor="middle">FIG. 02 // TWO-JOINT SPLINT SIZING &amp; MOSS PADDING</text>
+  <text x="200" y="64" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">위쪽 관절(팔꿈치)부터 아래쪽 관절(손목)까지 덮는 긴 가지 2개</text>
+  <text x="200" y="308" fill="#86efac" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">나뭇가지 안쪽에 물이끼(2cm)와 부드러운 가죽 완충 패드 감싸기</text>
+  <text x="200" y="338" fill="#fcd34d" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">손바닥 안에 달걀 크기 이끼 뭉치를 쥐여주어 손가락 굳음 방지</text>
+  <text x="200" y="375" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">[2단계 핵심] 위아래 관절을 모두 덮는 길이와 푹신한 안쪽 패드</text>
+</svg>

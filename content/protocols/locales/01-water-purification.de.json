@@ -4,7 +4,7 @@
   "title": "Wie man schlammiges Wasser in sauberes Trinkwasser verwandelt (Naturfilter aus Kohle und Sand)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WICHTIGES ÜBERLEBEN]",
-  "summary": "Unbehandeltes schlammiges Wasser in der Wildnis zu trinken führt zu schweren Magenkrämpfen, Durchfall und lebensgefährlicher Dehydrierung. Durch ein Ast-Dreibein mit Rindentrichter und schichtweisem Aufbau aus Kohle, Sand und Kies wird trübes Wasser glasklar gefiltert. Durch anschließendes sprudelndes Kochen für 3+ Minuten werden mikroskopische Keime vollständig zerstört und das Wasser sicher trinkbar.",
+  "summary": "Unbehandeltes schlammiges Wasser in der Wildnis zu trinken führt zu schweren Magenkrämpfen, Durchfall und lebensgefährlicher Dehydrierung. Durch ein Ast-Dreibein mit einem waagerechten Dreiecks-Halterahmen, einem eingeklemmten Rindentrichter und schichtweisem Aufbau aus Kohle, Sand und Kies wird trübes Wasser glasklar gefiltert. Durch anschließendes sprudelndes Kochen für 3+ Minuten werden mikroskopische Keime vollständig zerstört und das Wasser sicher trinkbar.",
   "timeRequired": "25 Min. (15 Min. Filtration + 10 Min. Kochen)",
   "successRate": "99.9% (Nach schichtweiser Filtration und 3+ Min. Kochen)",
   "difficulty": "Mittel (Ausschließlich aus Naturmaterialien herstellbar)",
@@ -28,12 +28,12 @@
     {
       "id": "mat-04",
       "name": "Birkenrindentrichter oder hohles Bambusrohr (1 Stück)",
-      "desc": "Ein 30–40 cm langer, nach unten schmaler werdender Behälter. Hält die Filterschichten und leitet die Wassertropfen ab."
+      "desc": "Ein 30–40 cm langer, nach unten schmaler werdender Behälter. Wird senkrecht in den Dreiecks-Halterahmen des Dreibeins gesteckt."
     },
     {
       "id": "mat-05",
-      "name": "Drei fingerdicke gerade Äste (50 cm lang)",
-      "desc": "Oben zusammengebunden als stabiles Dreibein. Hält den Trichter hoch genug für ein Auffanggefäß darunter."
+      "name": "Drei lange Äste (70 cm) & drei kurze Querstreben (25 cm)",
+      "desc": "3 lange Äste bilden das Dreibein; 3 kurze Stöcke werden auf halber Höhe waagerecht als Dreiecks-Halterahmen festgebunden, in den der Trichter geklemmt wird."
     },
     {
       "id": "mat-06",
@@ -44,35 +44,113 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Schritt 1: Dreibein aufstellen und Rindentrichter montieren",
-      "description": "1. **Dreibein montieren**: Drei fingerdicke Äste oben mit Schnur fest zusammenbinden und zu einem stabilen Dreibein aufstellen.\n2. **Trichter aufhängen**: Den Birkenrindentrichter oder das Bambusrohr senkrecht in der Mitte des Dreibeins befestigen.\n3. **Bodenstopfen einsetzen**: Sauberes, feuchtes Moos fest mit dem Finger in die untere Öffnung drücken. Ein lockerer Stopfen führt zum Auslaufen der Filterschichten.",
-      "actionNote": "> Stopfen prüfen: Sitzt der Stopfen zu locker, rieselt Kohlestaub heraus. Drücken Sie ihn fest hinein.",
+      "title": "Schritt 1: Dreibein mit Dreiecks-Halterahmen bauen und Trichter einklemmen",
+      "description": "1. **Dreibein & Dreiecksrahmen binden**: Drei 70 cm lange Äste oben zusammenbinden und breit aufstellen. Auf halber Höhe drei 25 cm kurze Stöcke waagerecht zwischen die Beine binden, sodass ein **dreieckiger Halterahmen** entsteht.\n2. **Trichter einklemmen & Rand sichern**: Den Birkenrindentrichter senkrecht von oben in die dreieckige Öffnung des Halterahmens schieben, bis er durch seine Kegelform festklemmt. Den oberen Trichterrand links und rechts an den Dreibein-Beinen festbinden, damit die Öffnung oben frei zugänglich bleibt.\n3. **Moosstopfen fest eindrücken**: Sauberes feuchtes Moos fest mit dem Daumen in die untere Spitze drücken, damit Kohle und Sand nicht herausfallen.",
+      "actionNote": "> Festen Sitz prüfen: Der Trichter muss sicher im Dreiecksrahmen klemmen, damit er beim Wassereingießen nicht kippt.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // PURIFICATION STEP 1: DREIBEIN & STOPFEN",
-        "TRIPOD FRAME (DREIBEIN)",
-        "CONE FUNNEL (TRICHTER)",
-        "MOSS PLUG (MOOSSTOPFEN)",
-        "[SCHRITT 1] STABILES DREIBEIN AUFSTELLEN"
-      ]
+        "FIG. 01 // DREIBEIN & DREIECKSRAHMEN",
+        "DREIBEIN-SPITZE",
+        "TRICHTER-ANBINDUNG",
+        "DREIECKS-HALTERAHMEN",
+        "[SCHRITT 1] TRICHTER IM RAHMEN & MOOSSTOPFEN"
+      ],
+      "deepDive": {
+        "badge": "FIELD SCIENCE",
+        "title": "Warum ein waagerechter Dreiecksrahmen den Trichter kippsicher hält",
+        "text": "Hängt man einen mit nassem Sand und Wasser gefüllten Rindentrichter nur an Schnüren auf, verdreht er sich oder reißt an den Löchern ein. Ein waagerecht in das Dreibein gebundener Dreiecksrahmen (Triangular Collar) nimmt das gesamte Gewicht über den Außenumfang des Kegels gleichmäßig an drei Seiten auf, während die obere Öffnung völlig frei bleibt.",
+        "fieldSpecs": [
+          {
+            "name": "Birkenrindentrichter im waagerechten Dreiecks-Halterahmen des Dreibeins",
+            "scientificName": "Triangular Cross-Braced Tripod & Birch-Bark Cone Mount",
+            "categoryTag": "Doppelte Lianen-Bindung / Kippsicherer Halterahmen",
+            "imageFileName": "id-tripod-bark-cone-mount.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "TRIPOD CRADLE LOCK: VERIFIED",
+            "traits": [
+              {
+                "label": "RAHMEN/RING",
+                "value": "Waagerechte Querhölzer zwischen den drei Beinen **bilden ein stabiles Dreieck**, das den Trichter hält."
+              },
+              {
+                "label": "RAND/RIM",
+                "value": "Beide Seiten des **oberen Trichterrands sind an den Beinen festgebunden**, damit nichts kippt."
+              },
+              {
+                "label": "BASIS/BASE",
+                "value": "Freier Platz direkt unter dem Auslauf **ermöglicht das sichere Abstellen der Auffangschale**."
+              }
+            ],
+            "fieldUse": "Tragstruktur, die das schwere nasse Filtermaterial senkrecht hält, ohne die obere Öffnung zu blockieren"
+          },
+          {
+            "name": "Fest eingedrückter grüner Torfmoos-Bodenstopfen",
+            "scientificName": "Compressed Sphagnum Moss Bottom Filter Plug",
+            "categoryTag": "Rückhalt der Filterschichten / Tropf-Regulator",
+            "imageFileName": "id-sphagnum-moss-plug.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "MOSS PLUG DENSITY: TIGHT",
+            "traits": [
+              {
+                "label": "DICHTE/PACK",
+                "value": "Drücken Sie eine Handvoll **sauberes grünes Waldmoos fest in die untere Trichterspitze**."
+              },
+              {
+                "label": "HALT/ROLE",
+                "value": "Wirkt wie ein dichtes Fasernetz, das **Kohlekörner und Sand am Herausfallen hindert**."
+              },
+              {
+                "label": "FLUSS/FLOW",
+                "value": "Bremst den Durchfluss, sodass **klares Wasser gleichmäßig Tropfen für Tropfen** austritt."
+              }
+            ],
+            "fieldUse": "Natürlicher Bodenstopfen, der Kohle und Sand stützt und nur klares Wasser durchlässt"
+          }
+        ]
+      }
     },
     {
       "stepNumber": "02",
       "title": "Schritt 2: Kohle auf Erbsengröße zerkleinern und 8 cm einfüllen",
-      "description": "1. **Zerkleinern & Sortieren**: Vollständig kalte Holzkohle mit einem Stein vorsichtig in **erbsengroße Stücke (5–8 mm)** klopfen. Mehlfeinen Staub entfernen, der den Wasserdurchfluss verstopfen würde.\n2. **8 cm Kohlebett einfüllen**: Die Kohle über den Moosstopfen schütten und mit einem Stöckchen leicht andrücken, bis eine ebene Schicht von **vier Fingerbreiten (ca. 8 cm)** erreicht ist.",
+      "description": "1. **Zerkleinern & Sortieren**: Vollständig kalte Holzkohle mit einem Stein vorsichtig in **erbsengroße Stücke (5–8 mm)** klopfen. Mehlfeinen Staub entfernen, der den Wasserdurchfluss verstopfen würde.\n2. **8 cm Kohlebett einfüllen**: Die Kohle im gestützten Trichter über den Moosstopfen schütten und mit einem Stöckchen leicht andrücken, bis eine ebene Schicht von **vier Fingerbreiten (ca. 8 cm)** erreicht ist.",
       "actionNote": "> Korngröße: Die Stücke müssen größer als Reiskörner sein. Feiner Staub hemmt die Fließgeschwindigkeit.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // PURIFICATION STEP 2: KOHLEFILTERBETT",
-        "CHARCOAL CORE (AKTIVKOHLE)",
-        "PORE ABSORPTION (ADSORPTION)",
-        "THICKNESS: 8CM (DICKE)",
-        "[SCHRITT 2] 8CM KOHLEKOMPONENTE EINFÜLLEN"
+        "FIG. 02 // 8CM KOHLEBETT EINFÜLLEN",
+        "DREIECKSRAHMEN-STÜTZE",
+        "ERBSENGROSSE KOHLE (8CM)",
+        "MOOSSTOPFEN (4CM)",
+        "[SCHRITT 2] 8CM KOHLE ÜBER DEM MOOS EINFÜLLEN"
       ],
       "deepDive": {
         "badge": "FIELD SCIENCE",
         "title": "Wirkungsweise der Kohleadsorption",
-        "text": "Wird Holz unter Sauerstoffmangel erhitzt, bilden sich im Inneren Millionen mikroskopischer Poren. Diese Mikroporen üben starke Van-der-Waals-Kräfte aus, die gelöste organische Toxine und Gerüche an der Kohleoberfläche binden."
+        "text": "Wird Holz unter Sauerstoffmangel erhitzt, bilden sich im Inneren Millionen mikroskopischer Poren. Diese Mikroporen üben starke Van-der-Waals-Kräfte aus, die gelöste organische Toxine und Gerüche an der Kohleoberfläche binden.",
+        "fieldSpecs": [
+          {
+            "name": "Vertikaler Querschnitt der 4-stufigen Filtersäule (Moos, Kohle, Sand, Kiesel)",
+            "scientificName": "Vertical Gravity-Fed Stratified Bio-Filter Column",
+            "categoryTag": "Unten Kohlebett / Mitte Sandschicht / Oben Kieselpuffer",
+            "imageFileName": "id-layered-charcoal-sand-filter.jpg",
+            "hudCode": "FIG. BIO-01C // MACRO OPTIC",
+            "hudStatus": "4-STAGE STRATA: VERIFIED",
+            "traits": [
+              {
+                "label": "KOHLE/8CM",
+                "value": "Unteres Bett aus **erbsengroßen Hartholzkohlestücken (8 cm)** bindet Gerüche und organische Giftstoffe."
+              },
+              {
+                "label": "SAND/6CM",
+                "value": "Mittlere Schicht aus **gewaschenem feinem Flusssand (6 cm)** hält feine Schlammpartikel zurück."
+              },
+              {
+                "label": "KIESEL/4CM",
+                "value": "Obere Schicht aus **runden Flusskieseln (4 cm)** bremst den Wasserstrahl und schützt den Sand."
+              }
+            ],
+            "fieldUse": "Senkrecht im Dreibein gelagerte 4-Schicht-Filtersäule zur Umwandlung von Schlammwasser in klares Rohwasser"
+          }
+        ]
       }
     },
     {
@@ -82,39 +160,39 @@
       "actionNote": "> Schicht einebnen: Eine waagerechte Oberfläche gewährleistet eine gleichmäßige Filtration über die gesamte Säule.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // PURIFICATION STEP 3: SANDSCHICHT",
-        "RIVER SAND (FLUSSSAND)",
-        "PARTICLE FILTER (FILTER)",
-        "THICKNESS: 6CM (DICKE)",
-        "[SCHRITT 3] KOHLE SICHERN & SCHMUTZ FANGEN"
+        "FIG. 03 // 6CM FLUSSSAND EINEBNEN",
+        "GEWASCHENER SAND (6CM)",
+        "WAAGERECHTE GRENZLINIE",
+        "KOHLEBETT (8CM)",
+        "[SCHRITT 3] 6CM SAND GLATT ÜBER KOHLE LEGEN"
       ]
     },
     {
       "stepNumber": "04",
       "title": "Schritt 4: 4 cm Kiesel auflegen, Schlammwasser gießen und Erstspülung verwerfen",
-      "description": "1. **4 cm Kieselschicht auflegen**: Daumennagelgroße Steine **zwei Fingerbreit (ca. 4 cm)** auf den Sand legen und mit einem breiten Blatt abdecken.\n2. **Schlammwasser eingießen**: Das Trübwasser langsam über das Blatt gießen. Kiesel und Blatt dämpfen den Strahl und verhindern Aushöhlungen im Sand.\n3. **Erste 1-2 Tassen wegschütten**: Die ersten **1–2 Tassen (ca. 300 ml)** spülen gelösten Kohlestaub aus und **müssen verworfen werden**.\n4. **Klares Wasser auffangen**: Sobald die Tropfen glasklar fallen, ein sauberes Auffanggefäß unterstellen.",
+      "description": "1. **4 cm Kieselschicht auflegen**: Daumennagelgroße Steine **zwei Fingerbreit (ca. 4 cm)** auf den Sand legen und mit einem breiten Blatt abdecken.\n2. **Schlammwasser eingießen**: Das Trübwasser langsam durch die freie obere Öffnung gießen. Kiesel und Blatt dämpfen den Strahl und verhindern Aushöhlungen im Sand.\n3. **Erste 1-2 Tassen wegschütten**: Die ersten **1–2 Tassen (ca. 300 ml)** spülen gelösten Kohlestaub aus und **müssen verworfen werden**.\n4. **Klares Wasser auffangen**: Sobald die Tropfen glasklar fallen, ein sauberes Auffanggefäß unter das Dreibein stellen.",
       "actionNote": "> Erstwasser wegschütten: Die ersten Becher reinigen das Filterinnere. Nicht trinken, bis das Wasser glasklar tropft.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // PURIFICATION STEP 4: KIESEL & SPÜLEN",
-        "PEBBLE LAYER (KIESEL)",
-        "FLUSH FIRST CUPS (SPÜLEN)",
-        "CLEAR DRIP (KLARTROPF)",
-        "[SCHRITT 4] SAND SCHÜTZEN & ERSTWASSER WEG"
+        "FIG. 04 // KIESEL & ERSTWASSER VERWERFEN",
+        "KIESEL & BLATT (4CM)",
+        "SCHLAMMWASSER EINGIESSEN",
+        "ERSTE 1-2 TASSEN WEG",
+        "[SCHRITT 4] SPÜLWASSER WEG & KLARWASSER FANGEN"
       ]
     },
     {
       "stepNumber": "05",
       "title": "Schritt 5: Das gefilterte klare Wasser 3+ Minuten sprudelnd kochen",
-      "description": "1. **In Kochbehälter füllen**: Das glasklar gefilterte Wasser in einen Steintopf, Tonkessel oder Bambusbehälter füllen und über die Glut stellen.\n2. **3 Minuten sprudelnd kochen**: Sobald große Blasen über die gesamte Oberfläche steigen, das Kochen mindestens **3 Minuten lang (über 1.000 m Höhe 5 Minuten lang)** aufrechterhalten.\n3. **Abkühlen lassen**: Vor dem Trinken vollständig abkühlen lassen.",
+      "description": "1. **Auf 3 Feuersteine stellen**: Drei stabile Steine um die Glut legen und das Ton- oder Steingefäß mit dem gefilterten Wasser sicher darauf platzieren.\n2. **3 Minuten sprudelnd kochen**: Sobald große Blasen über die gesamte Oberfläche steigen, das Kochen mindestens **3 Minuten lang (über 1.000 m Höhe 5 Minuten lang)** aufrechterhalten.\n3. **Abkühlen lassen**: Vor dem Trinken vollständig abkühlen lassen.",
       "actionNote": "> Kochen zwingend erforderlich: Klares Wasser ist KEIN keimfreies Wasser. Erst Filtration und anschließendes Abkochen gewährleisten 99.9% biologische Sicherheit.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // PURIFICATION STEP 5: 100°C KOCHEN",
-        "BOILING 100°C (KOCHEN)",
-        "TIME: 3+ MIN (MINUTEN)",
-        "PATHOGEN FREE (KEIMFREI)",
-        "[SCHRITT 5] 3+ MINUTEN SPRUDELND KOCHEN"
+        "FIG. 05 // 100°C KOCHEN (3+ MIN.)",
+        "100°C SPRUDELND KOCHEN",
+        "KEIME ABGETÖTET",
+        "3 FEUERSTEINE & GLUT",
+        "[SCHRITT 5] KLARWASSER 3+ MIN. SPRUDELND KOCHEN"
       ],
       "deepDive": {
         "badge": "FIELD SCIENCE",
@@ -130,15 +208,24 @@
   },
   "shortsScript": {
     "hook": "Wildes Schlammwasser zu trinken führt in 3 Tagen zu tödlichem Durchfall! So reinigst du es ohne Plastik!",
-    "body": "Dreibein binden, Rindentrichter aufhängen und Auslauf mit Moos stopfen. 8 cm Kohle, 6 cm Sand und 4 cm Kiesel einfüllen. Schlammwasser darübergießen! Die ersten 2 Becher mit Kohlestaub wegschütten. Wichtigste Regel: Klares Wasser ist noch nicht sicher! Du musst es mindestens 3 Minuten lang sprudelnd kochen, um mikroskopische Erreger zu töten!",
+    "body": "Dreibein mit Dreiecksrahmen binden, Rindentrichter einklemmen und Auslauf mit Moos stopfen. 8 cm Kohle, 6 cm Sand und 4 cm Kiesel einfüllen. Schlammwasser darübergießen! Die ersten 2 Becher mit Kohlestaub wegschütten. Wichtigste Regel: Klares Wasser ist noch nicht sicher! Du musst es mindestens 3 Minuten lang sprudelnd kochen, um mikroskopische Erreger zu töten!",
     "outro": "Genaue Offline-Überlebenspläne ohne Internet gibt es über den Link im Profil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Fertiger Naturwasserfilter aus Kohle und Sand",
-    "description": "An einem Dreibein aufgehängte Filtrationssäule aus Holzkohle, Flusssand, Kieselsteinen und Moosstopfen, die schlammiges Wildwasser in glasklares, abkochbares Trinkwasser verwandelt."
+    "title": "Fertiger Naturwasserfilter mit Dreibein-Halterahmen & Abkochsystem",
+    "description": "Ein mit einem waagerechten Dreiecksrahmen im Dreibein verankerter 4-Stufen-Rindentrichter (Moos, 8 cm Kohle, 6 cm Sand, 4 cm Kiesel) und anschließendes 3-minütiges Abkochen auf Feuersteinen verwandeln Schlammwasser in sicheres Trinkwasser.",
+    "svgLabels": [
+      "FIG. OUTCOME // 2-STUFEN NATURFILTER & ABKOCHSYSTEM",
+      "DREIBEIN-SPITZE",
+      "DREIECKS-HALTERAHMEN",
+      "4-SCHICHT RINDENTRICHTER",
+      "KLARWASSER-AUFFANG",
+      "100°C KOCHEN (3+ MIN.)",
+      "[ENDERGEBNIS] 4-SCHICHT-FILTRATION + 3 MIN. KOCHEN = 99.9% TRINKWASSER"
+    ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-16T13:34:53+09:00",
-  "contentHash": "2abe4cfb93c63475"
+  "updatedAt": "2026-10-27T00:18:03.903Z",
+  "contentHash": "ed3f942f6826c6c2"
 }

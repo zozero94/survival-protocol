@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d12" />
+      <stop offset="100%" stop-color="#121720" />
+    </linearGradient>
+    <linearGradient id="woodStick03" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a17249" />
+      <stop offset="50%" stop-color="#7c5330" />
+      <stop offset="100%" stop-color="#4f331b" />
+    </linearGradient>
+    <linearGradient id="mossGrad03" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="clothBand03" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e5d3b3" />
+      <stop offset="50%" stop-color="#cbb082" />
+      <stop offset="100%" stop-color="#9c8054" />
+    </linearGradient>
+    <filter id="shadow03" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bgGrad03)" />
+  <g stroke="#1e2633" stroke-width="0.6" opacity="0.6">
+    <path d="M 0,80 L 400,80 M 0,160 L 400,160 M 0,240 L 400,240 M 0,320 L 400,320" />
+    <path d="M 80,0 L 80,400 M 160,0 L 160,400 M 240,0 L 240,400 M 320,0 L 320,400" />
+  </g>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1.2" />
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="26" rx="3" fill="#131b26" stroke="#3b4d66" stroke-width="1" />
+
+  <!-- MAIN SPLINT ASSEMBLY (Top & Bottom Padded Sticks Sandwiching Forearm) -->
+  <g filter="url(#shadow03)">
+    <!-- Forearm Core -->
+    <path d="M 36,154 C 100,148 240,150 318,158 C 344,156 364,162 368,182 C 364,202 344,208 318,204 C 240,210 100,212 36,206 Z" fill="#c79572" stroke="#7c5330" stroke-width="1.2" />
+    <!-- Palm Moss Roll -->
+    <ellipse cx="342" cy="182" rx="16" ry="12" fill="url(#mossGrad03)" stroke="#bbf7d0" stroke-width="1.2" />
+
+    <!-- Center Wound Pad (NO-TIE ZONE over Fracture) -->
+    <rect x="164" y="148" width="56" height="66" rx="3" fill="#d6be96" stroke="#ef4444" stroke-width="1.8" stroke-dasharray="4,2" />
+    <!-- Red X Warning Over Fracture Zone (Do Not Tie Directly Over Fracture) -->
+    <circle cx="192" cy="181" r="14" fill="#450a0a" stroke="#ef4444" stroke-width="1.5" />
+    <path d="M 185,174 L 199,188 M 199,174 L 185,188" stroke="#fca5a5" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Top Moss Cushion & Hardwood Stick -->
+    <rect x="48" y="134" width="292" height="14" rx="3" fill="url(#mossGrad03)" stroke="#86efac" stroke-width="0.9" />
+    <rect x="40" y="118" width="308" height="16" rx="5" fill="url(#woodStick03)" stroke="#d99b52" stroke-width="1.2" />
+
+    <!-- Bottom Moss Cushion & Hardwood Stick -->
+    <rect x="48" y="214" width="292" height="14" rx="3" fill="url(#mossGrad03)" stroke="#86efac" stroke-width="0.9" />
+    <rect x="40" y="228" width="308" height="16" rx="5" fill="url(#woodStick03)" stroke="#d99b52" stroke-width="1.2" />
+
+    <!-- 4-POINT BROAD CLOTH + VINE LASHINGS (2 Above Fracture, 2 Below Fracture) -->
+    <!-- Tie #1 (Upper Proximal) -->
+    <rect x="66" y="114" width="24" height="134" rx="3" fill="url(#clothBand03)" stroke="#785c30" stroke-width="1.2" />
+    <path d="M 74,114 L 74,248 M 82,114 L 82,248" stroke="#654321" stroke-width="1.8" />
+    <circle cx="78" cy="118" r="5" fill="#a16207" stroke="#fde68a" stroke-width="1.2" />
+
+    <!-- Tie #2 (Inner Proximal) -->
+    <rect x="116" y="114" width="24" height="134" rx="3" fill="url(#clothBand03)" stroke="#785c30" stroke-width="1.2" />
+    <path d="M 124,114 L 124,248 M 132,114 L 132,248" stroke="#654321" stroke-width="1.8" />
+    <circle cx="128" cy="118" r="5" fill="#a16207" stroke="#fde68a" stroke-width="1.2" />
+
+    <!-- Tie #3 (Inner Distal) -->
+    <rect x="242" y="114" width="24" height="134" rx="3" fill="url(#clothBand03)" stroke="#785c30" stroke-width="1.2" />
+    <path d="M 250,114 L 250,248 M 258,114 L 258,248" stroke="#654321" stroke-width="1.8" />
+    <circle cx="254" cy="118" r="5" fill="#a16207" stroke="#fde68a" stroke-width="1.2" />
+
+    <!-- Tie #4 (Outer Distal) + 1-Finger Gap Check -->
+    <rect x="292" y="114" width="24" height="134" rx="3" fill="url(#clothBand03)" stroke="#785c30" stroke-width="1.2" />
+    <path d="M 300,114 L 300,248 M 308,114 L 308,248" stroke="#654321" stroke-width="1.8" />
+    <circle cx="304" cy="118" r="5" fill="#a16207" stroke="#fde68a" stroke-width="1.2" />
+
+    <!-- Finger Sliding Under Tie #4 to Verify 1-Finger Circulation Gap -->
+    <path d="M 304,260 L 304,234" stroke="#38bdf8" stroke-width="2" />
+    <rect x="296" y="256" width="16" height="26" rx="6" fill="#d6a784" stroke="#38bdf8" stroke-width="1.5" />
+  </g>
+
+  <!-- Callout Badges & Leader Lines -->
+  <rect x="18" y="48" width="364" height="24" rx="3" fill="#0f172a" stroke="#86efac" stroke-width="1" />
+  <line x1="200" y1="72" x2="200" y2="118" stroke="#86efac" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <rect x="18" y="292" width="364" height="24" rx="3" fill="#1c1917" stroke="#fde68a" stroke-width="1" />
+  <line x1="78" y1="248" x2="78" y2="292" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="2,2" />
+  <line x1="128" y1="248" x2="128" y2="292" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="2,2" />
+  <line x1="254" y1="248" x2="254" y2="292" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <rect x="18" y="322" width="364" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+  <line x1="304" y1="282" x2="304" y2="322" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <!-- Footer Summary Bar -->
+  <rect x="14" y="356" width="372" height="30" rx="3" fill="#1e1b4b" stroke="#fde68a" stroke-width="1.2" />
+
+  <!-- 5 SVG Text Labels (1:1 Matched with steps[2].svgLabels) -->
+  <text x="200" y="31" fill="#fde68a" font-family="monospace" font-size="10.5" font-weight="bold" text-anchor="middle">FIG. 03 // 4-POINT SPLIT LASHING (AVOID FRACTURE ZONE)</text>
+  <text x="200" y="64" fill="#86efac" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">팔다리 양옆에 이끼 패드를 덧댄 나뭇가지 부목 2개 나란히 대기</text>
+  <text x="200" y="308" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">부러진 곳 위는 비워두고 위쪽 2곳·아래쪽 2곳(총 4곳) 나누어 묶기</text>
+  <text x="200" y="338" fill="#7dd3fc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">묶은 끈 밑에 손가락 하나가 들어갈 여유를 두고 나무 위에 매듭짓기</text>
+  <text x="200" y="375" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">[3단계 핵심] 상처 위 직접 압박 금지 및 위아래 4곳 분산 결속</text>
+</svg>

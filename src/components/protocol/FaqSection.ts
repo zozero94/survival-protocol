@@ -1,5 +1,6 @@
 import type { ProtocolFaqItem } from '../../types/index.ts';
 import { escapeHtml } from '../../utils/sanitize.util.ts';
+import { highlightTechnicalTerms } from './StepCard.ts';
 
 /**
  * [Presentational Component]
@@ -14,8 +15,8 @@ export function renderFaqSection(faqs: ProtocolFaqItem[] = []): string {
     .map((item, idx) => {
       const qNum = String(idx + 1).padStart(2, '0');
       const safeQ = escapeHtml(item.question);
-      const safeCause = escapeHtml(item.causeDiagnostic);
-      const safeResolution = escapeHtml(item.resolution);
+      const safeCause = highlightTechnicalTerms(escapeHtml(item.causeDiagnostic || ''));
+      const safeResolution = highlightTechnicalTerms(escapeHtml(item.resolution || ''));
 
       return `
     <details class="group border border-[#262626] bg-[#141414] hover:border-[#404040] transition-colors">

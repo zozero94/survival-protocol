@@ -4,8 +4,8 @@ Wildes Schlammwasser zu trinken führt in 3 Tagen zu tödlichem Durchfall! So re
 [Scene 2] (Holzkohle, Gewaschener feiner Flusssand, Kleine runde Kieselsteine)
 Holzkohle, Gewaschener feiner Flusssand, Kleine runde Kieselsteine
 
-[Scene 3] (Schritt 1: Dreibein aufstellen und Rindentrichter montieren)
-Schritt 1: Dreibein aufstellen und Rindentrichter montieren. Stopfen prüfen: Sitzt der Stopfen zu locker, rieselt Kohlestaub heraus. Drücken Sie ihn fest hinein.
+[Scene 3] (Schritt 1: Dreibein mit Dreiecks-Halterahmen bauen und Trichter einklemmen)
+Schritt 1: Dreibein mit Dreiecks-Halterahmen bauen und Trichter einklemmen. Festen Sitz prüfen: Der Trichter muss sicher im Dreiecksrahmen klemmen, damit er beim Wassereingießen nicht kippt.
 
 [Scene 4] (Schritt 2: Kohle auf Erbsengröße zerkleinern und 8 cm einfüllen)
 Schritt 2: Kohle auf Erbsengröße zerkleinern und 8 cm einfüllen. Korngröße: Die Stücke müssen größer als Reiskörner sein. Feiner Staub hemmt die Fließgeschwindigkeit.

@@ -1,103 +1,137 @@
-<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGradP02" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#08090b"/>
-      <stop offset="50%" stop-color="#0e1217"/>
-      <stop offset="100%" stop-color="#080a0d"/>
+    <linearGradient id="bg0102" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a0f"/>
+      <stop offset="100%" stop-color="#0d131c"/>
     </linearGradient>
-
-    <!-- Funnel Cutaway Shell Gradient -->
-    <linearGradient id="funnelCutaway" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#332c25"/>
-      <stop offset="15%" stop-color="#665747"/>
-      <stop offset="50%" stop-color="#181e26"/>
-      <stop offset="85%" stop-color="#665747"/>
-      <stop offset="100%" stop-color="#332c25"/>
+    <linearGradient id="woodPole02" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="45%" stop-color="#78350f"/>
+      <stop offset="75%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#2e1305"/>
     </linearGradient>
-
-    <!-- Charcoal Grain Texture Pattern -->
-    <pattern id="charcoalTexture" width="12" height="12" patternUnits="userSpaceOnUse">
-      <rect width="12" height="12" fill="#111317"/>
-      <circle cx="3" cy="3" r="2.2" fill="#22272e"/>
-      <circle cx="8" cy="8" r="2.8" fill="#1b2026"/>
-      <circle cx="9" cy="2" r="1.5" fill="#2d333b"/>
-      <circle cx="2" cy="9" r="1.8" fill="#262c33"/>
+    <linearGradient id="barkWall02" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#574c41"/>
+      <stop offset="50%" stop-color="#9e8d7c"/>
+      <stop offset="100%" stop-color="#453b32"/>
+    </linearGradient>
+    <pattern id="charcoalBed02" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#11151c"/>
+      <polygon points="2,2 7,1 8,6 3,7" fill="#262f3d" stroke="#090c10" stroke-width="0.7"/>
+      <polygon points="8,7 13,6 12,12 7,13" fill="#1e2631" stroke="#090c10" stroke-width="0.7"/>
+      <polygon points="1,9 6,8 5,13 1,12" fill="#323d4f" stroke="#090c10" stroke-width="0.7"/>
     </pattern>
-
-    <!-- Drop Shadow Filter -->
-    <filter id="shadowP02" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.9"/>
+    <filter id="drop0102" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.85"/>
     </filter>
+    <pattern id="grid0102" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16212e" stroke-width="0.6"/>
+    </pattern>
   </defs>
 
-  <!-- Background Backdrop -->
-  <rect width="400" height="400" fill="url(#bgGradP02)"/>
-  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg0102)"/>
+  <rect width="400" height="400" fill="url(#grid0102)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#243447" stroke-width="1"/>
 
-  <!-- Technical Corner Crosshairs -->
-  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
-  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
-  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
-  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
+  <!-- Top Header (Label 1, y=32) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0e1621" stroke="#2e4359" stroke-width="1"/>
+  <text x="24" y="32" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">FIG. 02 // PURIFICATION STEP 2: 숯 흡착층 형성</text>
 
-  <!-- Blueprint Header (Label 1) -->
-  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.5">FIG. 02 // PURIFICATION STEP 2: 숯 흡착층 형성</text>
-  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
+  <!-- Main 3D Illustration Area (y: 84 ~ 288) -->
+  <g filter="url(#drop0102)">
+    <!-- LEFT PANEL: Cutaway Cone Mounted in Tripod Frame + 8cm Charcoal Layer (x: 20 ~ 238) -->
+    <rect x="20" y="86" width="218" height="202" rx="3" fill="#0b1119" stroke="#26374a" stroke-width="1"/>
 
-  <!-- Cutaway Cross Section Funnel Wall -->
-  <polygon points="120,85 240,85 195,295 165,295" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4 2"/>
-  <path d="M 120 85 L 165 295 L 195 295 L 240 85" fill="none" stroke="#374151" stroke-width="3"/>
+    <!-- Back Tripod Leg & Mid Horizontal Cradle Bar (Behind Cutaway Cone) -->
+    <path d="M 122 90 L 130 90 L 132 280 L 122 280 Z" fill="#3b1d0a" stroke="#261105" stroke-width="1"/>
+    <path d="M 52 198 L 198 198 L 198 208 L 52 208 Z" fill="url(#woodPole02)" stroke="#d97706" stroke-width="1"/>
 
-  <!-- Bottom Moss Plug in Cross Section -->
-  <polygon points="166,275 194,275 190,295 170,295" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+    <!-- Front Tripod Legs (Outside Cone) -->
+    <path d="M 114 90 L 124 92 L 46 280 L 34 280 Z" fill="url(#woodPole02)" stroke="#261105" stroke-width="1.2"/>
+    <path d="M 128 92 L 138 90 L 216 280 L 204 280 Z" fill="url(#woodPole02)" stroke="#261105" stroke-width="1.2"/>
+    <!-- Top Tripod Apex Vine Lashing -->
+    <path d="M 110 95 L 142 95 L 140 106 L 112 106 Z" fill="#b45309" stroke="#fde68a" stroke-width="1.2"/>
+    <!-- Cradle Bar Leg Lashings -->
+    <path d="M 68 195 L 82 211 M 82 195 L 68 211" stroke="#fde68a" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 168 195 L 182 211 M 182 195 L 168 211" stroke="#fde68a" stroke-width="2.2" stroke-linecap="round"/>
 
-  <!-- Charcoal Bed (8cm layer) with Texture and Shading -->
-  <polygon points="152,195 208,195 194,275 166,275" fill="url(#charcoalTexture)" stroke="#111827" stroke-width="1.5" filter="url(#shadowP02)"/>
-  
-  <!-- Individual Charcoal Chunks (5~8mm grains) -->
-  <rect x="172" y="202" width="7" height="6" rx="1.5" fill="#374151" stroke="#1f2937" stroke-width="0.8"/>
-  <rect x="183" y="205" width="8" height="7" rx="1.5" fill="#4b5563" stroke="#1f2937" stroke-width="0.8"/>
-  <rect x="175" y="218" width="9" height="7" rx="2" fill="#374151" stroke="#111827" stroke-width="0.8"/>
-  <rect x="188" y="222" width="7" height="6" rx="1.5" fill="#4b5563" stroke="#1f2937" stroke-width="0.8"/>
-  <rect x="170" y="235" width="8" height="8" rx="2" fill="#1f2937" stroke="#0f172a" stroke-width="0.8"/>
-  <rect x="182" y="240" width="9" height="7" rx="2" fill="#374151" stroke="#1f2937" stroke-width="0.8"/>
-  <rect x="174" y="255" width="8" height="6" rx="1.5" fill="#4b5563" stroke="#111827" stroke-width="0.8"/>
+    <!-- Cutaway Birch-Bark Cone Shell -->
+    <path d="M 88 122 L 164 122 L 139 262 L 113 262 Z" fill="#11161f" stroke="url(#barkWall02)" stroke-width="3.5"/>
+    <!-- Upper Rim Vine Ties to Tripod Legs -->
+    <path d="M 88 122 L 99 118 M 164 122 L 153 118" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- 8cm Height Dimension Bracket -->
-  <path d="M 215 195 L 225 195 L 225 275 L 215 275" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
-  <line x1="225" y1="235" x2="235" y2="235" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Layer 0: Bottom Sphagnum Moss Plug (y: 242 ~ 262) -->
+    <path d="M 110 242 L 142 242 L 139 262 L 113 262 Z" fill="#15803d" stroke="#4ade80" stroke-width="1.2"/>
 
-  <!-- Zoom Loupe: Micro-Pore Adsorption Mechanism (Right Top) -->
-  <circle cx="310" cy="115" r="32" fill="#0d1117" stroke="#38bdf8" stroke-width="1.5"/>
-  <!-- Charcoal Porous Matrix -->
-  <circle cx="310" cy="115" r="22" fill="#1f2937"/>
-  <circle cx="304" cy="110" r="3" fill="#0b0f14"/>
-  <circle cx="316" cy="112" r="2.5" fill="#0b0f14"/>
-  <circle cx="310" cy="122" r="3.2" fill="#0b0f14"/>
-  <!-- Toxin Trap Arrow Vectors into pores -->
-  <path d="M 292 105 L 302 109" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <polygon points="302,109 296,106 298,112" fill="#ef4444"/>
-  <path d="M 326 126 L 314 123" stroke="#ef4444" stroke-width="1.5"/>
-  <polygon points="314,123 320,121 319,127" fill="#ef4444"/>
+    <!-- Layer 1: 8cm Crushed Pea-Sized Charcoal Bed (y: 182 ~ 242) -->
+    <path d="M 99 182 L 153 182 L 142 242 L 110 242 Z" fill="url(#charcoalBed02)" stroke="#64748b" stroke-width="1.4"/>
+    <!-- Highlighted Pea-Sized Charcoal Facets Inside Layer -->
+    <polygon points="108,192 117,190 119,198 109,200" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="124,194 134,191 135,200 125,201" fill="#1e293b" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="138,192 146,194 145,202 137,201" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="113,210 123,208 124,217 114,218" fill="#1e293b" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="129,212 139,209 138,218 128,219" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="116,226 126,224 127,233 117,234" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="130,227 138,225 137,234 129,235" fill="#1e293b" stroke="#94a3b8" stroke-width="0.8"/>
 
-  <!-- Technical Callouts -->
-  <!-- Callout 1: Charcoal Core (Label 2) -->
-  <line x1="160" y1="235" x2="115" y2="75" stroke="#9ca3af" stroke-width="1"/>
-  <circle cx="160" cy="235" r="2.5" fill="#f59e0b"/>
-  <text x="24" y="70" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold">CHARCOAL CORE (활성 숯)</text>
+    <!-- Wooden Stick Gently Tamping Charcoal Level from Top -->
+    <path d="M 123 112 L 129 112 L 129 176 L 123 176 Z" fill="#92400e" stroke="#fde68a" stroke-width="1"/>
+    <path d="M 116 176 L 136 176" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Callout 2: Pore Absorption (Label 3) -->
-  <text x="376" y="70" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="end">PORE ABSORPTION (미세 흡착)</text>
+    <!-- 8cm (손가락 4마디) Dimension Callout Bracket on Cone Side -->
+    <path d="M 158 182 L 168 182 L 168 242 L 158 242" fill="none" stroke="#fde68a" stroke-width="1.8"/>
+    <!-- 4 Finger Knuckle Gauge Bars (손가락 4마디 척도) -->
+    <rect x="172" y="183" width="22" height="13" rx="4" fill="#d97706" stroke="#fde68a" stroke-width="0.9"/>
+    <rect x="172" y="198" width="22" height="13" rx="4" fill="#d97706" stroke="#fde68a" stroke-width="0.9"/>
+    <rect x="172" y="213" width="22" height="13" rx="4" fill="#d97706" stroke="#fde68a" stroke-width="0.9"/>
+    <rect x="172" y="228" width="22" height="13" rx="4" fill="#d97706" stroke="#fde68a" stroke-width="0.9"/>
 
-  <!-- Callout 3: Thickness 8cm (Label 4) -->
-  <line x1="235" y1="235" x2="285" y2="165" stroke="#f59e0b" stroke-width="1"/>
-  <circle cx="235" cy="235" r="2.5" fill="#f59e0b"/>
-  <text x="376" y="165" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="end">THICKNESS: 8CM (두께)</text>
+    <!-- RIGHT PANEL TOP: Pea-Sized Crushing (5~8mm) vs Fine Powder Rejection (x: 246 ~ 380, y: 86 ~ 182) -->
+    <rect x="246" y="86" width="134" height="96" rx="3" fill="#0b1119" stroke="#f59e0b" stroke-width="1.1"/>
+    <!-- Flat Anvil Stone & Hammerstone Crushing Charcoal -->
+    <ellipse cx="290" cy="158" rx="34" ry="10" fill="#334155" stroke="#64748b" stroke-width="1.2"/>
+    <ellipse cx="284" cy="118" rx="18" ry="12" fill="#64748b" stroke="#cbd5e1" stroke-width="1.2"/>
+    <path d="M 284 132 L 284 144" stroke="#fde68a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Good Pea-Sized Granules (5~8mm, Checkmark) -->
+    <polygon points="274,148 282,146 283,154 275,155" fill="#1e293b" stroke="#4ade80" stroke-width="1.2"/>
+    <polygon points="288,150 296,147 297,155 289,156" fill="#1e293b" stroke="#4ade80" stroke-width="1.2"/>
+    <path d="M 268 104 L 273 109 L 282 98" fill="none" stroke="#4ade80" stroke-width="2.2"/>
+    <!-- Bad Fine Black Powder (Discard X) -->
+    <circle cx="348" cy="148" r="1.5" fill="#94a3b8"/>
+    <circle cx="354" cy="152" r="1.2" fill="#94a3b8"/>
+    <circle cx="344" cy="155" r="1.4" fill="#94a3b8"/>
+    <circle cx="358" cy="146" r="1.3" fill="#94a3b8"/>
+    <path d="M 342 118 L 358 134 M 358 118 L 342 134" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round"/>
 
-  <!-- Bottom Tactical Note Strip -->
-  <rect x="18" y="340" width="364" height="34" fill="#111419" stroke="#262d35" stroke-width="1"/>
-  <rect x="18" y="340" width="4" height="34" fill="#f59e0b"/>
-  <!-- Label 5: Step Core Instruction -->
-  <text x="32" y="361" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">[2단계 핵심] 콩알 크기(5~8mm)로 부숴 8cm 충진</text>
+    <!-- RIGHT PANEL BOTTOM: Charcoal Micro-Pore Toxin Adsorption Zoom (x: 246 ~ 380, y: 190 ~ 288) -->
+    <rect x="246" y="190" width="134" height="98" rx="3" fill="#0b1119" stroke="#38bdf8" stroke-width="1.1"/>
+    <circle cx="313" cy="239" r="36" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Porous Carbon Matrix Channels -->
+    <circle cx="300" cy="228" r="7" fill="#030712" stroke="#475569" stroke-width="1"/>
+    <circle cx="326" cy="226" r="6.5" fill="#030712" stroke="#475569" stroke-width="1"/>
+    <circle cx="312" cy="252" r="7.5" fill="#030712" stroke="#475569" stroke-width="1"/>
+    <!-- Trapped Red/Amber Odor & Organic Toxin Molecules Inside Pores -->
+    <circle cx="300" cy="228" r="3" fill="#ef4444"/>
+    <circle cx="326" cy="226" r="2.8" fill="#f59e0b"/>
+    <circle cx="312" cy="252" r="3" fill="#ef4444"/>
+    <!-- Clean Blue Water Flow Passing Through -->
+    <path d="M 284 212 C 296 232 328 242 340 266" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+  </g>
+
+  <!-- Label 2 (y=75) -->
+  <rect x="20" y="60" width="360" height="22" rx="2" fill="#141c26" stroke="#334155" stroke-width="1"/>
+  <text x="28" y="75" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">콩알 크기로 부순 까만 숯 알갱이 (고운 가루는 털어내기)</text>
+
+  <!-- Label 3 (y=310) -->
+  <rect x="20" y="295" width="360" height="22" rx="2" fill="#141c26" stroke="#38bdf8" stroke-width="0.9"/>
+  <text x="28" y="310" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">나쁜 냄새와 독소를 빨아들이는 숯 미세 구멍</text>
+
+  <!-- Label 4 (y=345) -->
+  <rect x="20" y="330" width="360" height="22" rx="2" fill="#141c26" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="28" y="345" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">물이끼 마개 위로 손가락 네 마디 높이 (8cm) 채우기</text>
+
+  <!-- Label 5 (y=383) -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="8.8" font-weight="bold">[2단계 핵심] 콩알 크기 숯을 8cm 채우고 살살 다지기</text>
 </svg>

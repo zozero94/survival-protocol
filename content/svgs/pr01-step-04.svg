@@ -1,118 +1,136 @@
-<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGradP04" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#08090b"/>
-      <stop offset="50%" stop-color="#0e1217"/>
-      <stop offset="100%" stop-color="#080a0d"/>
+    <linearGradient id="bg0104" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a0f"/>
+      <stop offset="100%" stop-color="#0d131c"/>
     </linearGradient>
-
-    <!-- Water Drop Gradient -->
-    <linearGradient id="clearWater" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="woodPole04" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="45%" stop-color="#78350f"/>
+      <stop offset="75%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#2e1305"/>
+    </linearGradient>
+    <linearGradient id="pebble3D04" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="55%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="pureDrop04" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#e0f2fe"/>
       <stop offset="50%" stop-color="#38bdf8"/>
       <stop offset="100%" stop-color="#0284c7"/>
     </linearGradient>
-
-    <!-- Turbid Inflow Water -->
-    <linearGradient id="muddyWater" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#78350f"/>
-      <stop offset="100%" stop-color="#92400e"/>
-    </linearGradient>
-
-    <!-- Pebble 3D Gradient -->
-    <linearGradient id="pebbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#9ca3af"/>
-      <stop offset="50%" stop-color="#4b5563"/>
-      <stop offset="100%" stop-color="#1f2937"/>
-    </linearGradient>
-
-    <!-- Drop Shadow Filter -->
-    <filter id="shadowP04" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.9"/>
+    <filter id="drop0104" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.85"/>
     </filter>
+    <pattern id="grid0104" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16212e" stroke-width="0.6"/>
+    </pattern>
   </defs>
 
-  <!-- Background Backdrop -->
-  <rect width="400" height="400" fill="url(#bgGradP04)"/>
-  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg0104)"/>
+  <rect width="400" height="400" fill="url(#grid0104)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#243447" stroke-width="1"/>
 
-  <!-- Technical Corner Crosshairs -->
-  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
-  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
-  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
-  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
+  <!-- Top Header (Label 1, y=32) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0e1621" stroke="#2e4359" stroke-width="1"/>
+  <text x="24" y="32" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">FIG. 04 // PURIFICATION STEP 4: 자갈층 및 초기 세척</text>
 
-  <!-- Blueprint Header (Label 1) -->
-  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.5">FIG. 04 // PURIFICATION STEP 4: 자갈층 및 초기 세척</text>
-  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
+  <!-- Main 3D Illustration Area (y: 84 ~ 288) -->
+  <g filter="url(#drop0104)">
+    <!-- LEFT PANEL: Full Stratified Filter Mounted in Tripod + Muddy Water Inflow (x: 20 ~ 238) -->
+    <rect x="20" y="86" width="218" height="202" rx="3" fill="#0b1119" stroke="#26374a" stroke-width="1"/>
 
-  <!-- Funnel Outline -->
-  <polygon points="120,85 240,85 195,275 165,275" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4 2"/>
-  <path d="M 120 85 L 165 275 L 195 275 L 240 85" fill="none" stroke="#374151" stroke-width="3"/>
+    <!-- Back Tripod Leg & Mid Horizontal Cradle Bar -->
+    <path d="M 122 90 L 130 90 L 132 280 L 122 280 Z" fill="#3b1d0a" stroke="#261105" stroke-width="1"/>
+    <path d="M 52 198 L 198 198 L 198 208 L 52 208 Z" fill="url(#woodPole04)" stroke="#d97706" stroke-width="1"/>
 
-  <!-- Inflow Muddy Water Stream -->
-  <path d="M 180 55 C 180 75 170 85 170 95" stroke="url(#muddyWater)" stroke-width="6" stroke-linecap="round" fill="none"/>
-  <polygon points="180,50 176,58 184,58" fill="#78350f"/>
+    <!-- Front Tripod Legs (Outside Cone) -->
+    <path d="M 114 90 L 124 92 L 46 280 L 34 280 Z" fill="url(#woodPole04)" stroke="#261105" stroke-width="1.2"/>
+    <path d="M 128 92 L 138 90 L 216 280 L 204 280 Z" fill="url(#woodPole04)" stroke="#261105" stroke-width="1.2"/>
+    <!-- Top Tripod Apex Vine Lashing -->
+    <path d="M 110 95 L 142 95 L 140 105 L 112 105 Z" fill="#b45309" stroke="#fde68a" stroke-width="1.2"/>
+    <!-- Cradle Bar Leg Lashings -->
+    <path d="M 68 195 L 82 211 M 82 195 L 68 211" stroke="#fde68a" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 168 195 L 182 211 M 182 195 L 168 211" stroke="#fde68a" stroke-width="2.2" stroke-linecap="round"/>
 
-  <!-- Top Pebble Bed (4cm) -->
-  <polygon points="125,95 235,95 222,140 138,140" fill="#2d333b" stroke="#1f242c" stroke-width="1" filter="url(#shadowP04)"/>
-  <!-- 3D Pebbles -->
-  <ellipse cx="145" cy="115" rx="9" ry="6" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
-  <ellipse cx="165" cy="110" rx="10" ry="7" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
-  <ellipse cx="185" cy="116" rx="8" ry="6" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
-  <ellipse cx="205" cy="112" rx="11" ry="7" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
-  <ellipse cx="155" cy="128" rx="8" ry="5" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
-  <ellipse cx="178" cy="130" rx="9" ry="6" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
-  <ellipse cx="198" cy="126" rx="8" ry="5" fill="url(#pebbleGrad)" stroke="#111827" stroke-width="0.8"/>
+    <!-- Cutaway Birch-Bark Cone Shell -->
+    <path d="M 88 122 L 164 122 L 139 258 L 113 258 Z" fill="#11161f" stroke="#9e8d7c" stroke-width="3.2"/>
+    <path d="M 88 122 L 99 118 M 164 122 L 153 118" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Mid Sand Layer -->
-  <polygon points="138,140 222,140 208,195 152,195" fill="#785934" stroke="#92400e" stroke-width="1"/>
-  <!-- Charcoal Bed -->
-  <polygon points="152,195 208,195 194,255 166,255" fill="#181c22" stroke="#111827" stroke-width="1"/>
-  <!-- Moss Plug -->
-  <polygon points="166,255 194,255 190,275 170,275" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+    <!-- Layer 0: Bottom Sphagnum Moss Plug (y: 242 ~ 258) -->
+    <path d="M 110 242 L 142 242 L 139 258 L 113 258 Z" fill="#15803d" stroke="#4ade80" stroke-width="1.1"/>
+    <!-- Layer 1: 8cm Charcoal Bed (y: 196 ~ 242) -->
+    <path d="M 101 196 L 151 196 L 142 242 L 110 242 Z" fill="#18202c" stroke="#475569" stroke-width="1.1"/>
+    <!-- Layer 2: 6cm Washed River Sand Bed (y: 158 ~ 196) -->
+    <path d="M 95 158 L 157 158 L 151 196 L 101 196 Z" fill="#b45309" stroke="#fbbf24" stroke-width="1.1"/>
+    <!-- Layer 3: 4cm Rounded Pebbles Bed (y: 128 ~ 158) -->
+    <path d="M 89 128 L 163 128 L 157 158 L 95 158 Z" fill="#334155" stroke="#94a3b8" stroke-width="1.2"/>
+    <ellipse cx="104" cy="138" rx="8" ry="5" fill="url(#pebble3D04)" stroke="#0f172a" stroke-width="0.8"/>
+    <ellipse cx="122" cy="136" rx="9" ry="5.5" fill="url(#pebble3D04)" stroke="#0f172a" stroke-width="0.8"/>
+    <ellipse cx="140" cy="138" rx="8.5" ry="5" fill="url(#pebble3D04)" stroke="#0f172a" stroke-width="0.8"/>
+    <ellipse cx="112" cy="149" rx="8" ry="5" fill="url(#pebble3D04)" stroke="#0f172a" stroke-width="0.8"/>
+    <ellipse cx="132" cy="150" rx="9" ry="5" fill="url(#pebble3D04)" stroke="#0f172a" stroke-width="0.8"/>
+    <ellipse cx="148" cy="148" rx="7" ry="4.5" fill="url(#pebble3D04)" stroke="#0f172a" stroke-width="0.8"/>
 
-  <!-- Water Dripping Mechanism at Bottom Spout -->
-  <circle cx="180" cy="285" r="3.5" fill="url(#clearWater)"/>
-  <path d="M 180 292 C 182 297 182 301 180 304 C 178 301 178 297 180 292" fill="url(#clearWater)"/>
+    <!-- Top Green Broad Leaf Splash Diffuser & Muddy Water Stream -->
+    <ellipse cx="126" cy="126" rx="24" ry="4" fill="#22c55e" stroke="#86efac" stroke-width="1"/>
+    <path d="M 102 104 Q 124 112 126 125" fill="none" stroke="#854d0e" stroke-width="5" stroke-linecap="round"/>
 
-  <!-- Dual Cup Flushing Scheme (Right Inset) -->
-  <g id="flushingCups">
-    <!-- Cup 1: Dirty Black Flush Cup (DISCARD) -->
-    <rect x="290" y="210" width="30" height="35" rx="3" fill="#181c22" stroke="#ef4444" stroke-width="1.5"/>
-    <rect x="294" y="218" width="22" height="23" fill="#0f1216"/>
-    <!-- Red X mark -->
-    <path d="M 299 224 L 311 236 M 311 224 L 299 236" stroke="#ef4444" stroke-width="2"/>
+    <!-- 4cm (손가락 2마디) Dimension Callout Bracket -->
+    <path d="M 167 128 L 175 128 L 175 158 L 167 158" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <rect x="179" y="129" width="20" height="12" rx="4" fill="#d97706" stroke="#fde68a" stroke-width="0.9"/>
+    <rect x="179" y="144" width="20" height="12" rx="4" fill="#d97706" stroke="#fde68a" stroke-width="0.9"/>
 
-    <!-- Arrow from discard to clean -->
-    <path d="M 325 228 L 338 228" stroke="#9ca3af" stroke-width="1.5"/>
-    <polygon points="340,228 334,225 334,231" fill="#9ca3af"/>
+    <!-- Clear Filtered Water Droplets Falling into Bowl at Bottom -->
+    <circle cx="126" cy="264" r="3" fill="url(#pureDrop04)"/>
+    <circle cx="126" cy="273" r="3.5" fill="url(#pureDrop04)"/>
+    <path d="M 104 276 L 148 276 L 142 285 L 110 285 Z" fill="#0284c7" stroke="#7dd3fc" stroke-width="1"/>
 
-    <!-- Cup 2: Crystal Clean Water Cup (COLLECT) -->
-    <rect x="345" y="210" width="30" height="35" rx="3" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
-    <rect x="349" y="222" width="22" height="19" fill="#0284c7" opacity="0.6"/>
-    <!-- Green Check mark -->
-    <path d="M 353 230 L 358 235 L 367 225" stroke="#22c55e" stroke-width="2" fill="none"/>
+    <!-- RIGHT PANEL TOP: Pebble & Leaf Water Pressure Dispersion (x: 246 ~ 380, y: 86 ~ 182) -->
+    <rect x="246" y="86" width="134" height="96" rx="3" fill="#0b1119" stroke="#f59e0b" stroke-width="1.1"/>
+    <!-- Muddy Stream Hitting Broad Leaf & Pebbles and Splitting Safely -->
+    <path d="M 313 94 L 313 122" stroke="#854d0e" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="313" cy="125" rx="28" ry="5" fill="#16a34a" stroke="#86efac" stroke-width="1.2"/>
+    <!-- Dispersed Gentle Streams Left & Right -->
+    <path d="M 305 125 C 290 128 282 135 280 144" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 321 125 C 336 128 344 135 346 144" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Rounded Pebbles Protecting Flat Sand Line Below -->
+    <ellipse cx="278" cy="152" rx="11" ry="7" fill="url(#pebble3D04)" stroke="#cbd5e1" stroke-width="0.9"/>
+    <ellipse cx="302" cy="151" rx="12" ry="7.5" fill="url(#pebble3D04)" stroke="#cbd5e1" stroke-width="0.9"/>
+    <ellipse cx="326" cy="152" rx="11" ry="7" fill="url(#pebble3D04)" stroke="#cbd5e1" stroke-width="0.9"/>
+    <ellipse cx="348" cy="153" rx="10" ry="6.5" fill="url(#pebble3D04)" stroke="#cbd5e1" stroke-width="0.9"/>
+    <rect x="260" y="162" width="106" height="12" fill="#d97706" stroke="#fde68a" stroke-width="1"/>
+
+    <!-- RIGHT PANEL BOTTOM: Discard First 1~2 Cups vs Collect Clear Water (x: 246 ~ 380, y: 190 ~ 288) -->
+    <rect x="246" y="190" width="134" height="98" rx="3" fill="#0b1119" stroke="#38bdf8" stroke-width="1.1"/>
+    <!-- Cup 1 (Left): Murky Charcoal Dust Flush Water -> DISCARD (Red X) -->
+    <rect x="258" y="218" width="42" height="52" rx="4" fill="#1f2937" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="263" y="230" width="32" height="35" fill="#111827"/>
+    <path d="M 271 239 L 287 255 M 287 239 L 271 255" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Transition Arrow -->
+    <path d="M 305 244 L 319 244" stroke="#fde68a" stroke-width="2"/>
+    <polygon points="322,244 316,240 316,248" fill="#fde68a"/>
+    <!-- Cup 2 (Right): Crystal Clear Filtered Water -> COLLECT (Green Check) -->
+    <rect x="326" y="218" width="42" height="52" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="331" y="232" width="32" height="33" fill="url(#pureDrop04)" opacity="0.85"/>
+    <path d="M 338 248 L 345 255 L 357 240" fill="none" stroke="#4ade80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Technical Callouts -->
-  <!-- Callout 1: Pebble Layer (Label 2) -->
-  <line x1="165" y1="120" x2="115" y2="75" stroke="#9ca3af" stroke-width="1"/>
-  <circle cx="165" cy="120" r="2.5" fill="#f59e0b"/>
-  <text x="24" y="70" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold">PEBBLE LAYER (자갈층)</text>
+  <!-- Label 2 (y=75) -->
+  <rect x="20" y="60" width="360" height="22" rx="2" fill="#141c26" stroke="#334155" stroke-width="1"/>
+  <text x="28" y="75" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">수압을 분산하는 손톱 크기 자갈층 (4cm)과 나뭇잎 덮개</text>
 
-  <!-- Callout 2: Flush First Cups (Label 3) -->
-  <text x="376" y="70" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="end">FLUSH FIRST CUPS (첫물 버리기)</text>
+  <!-- Label 3 (y=310) -->
+  <rect x="20" y="295" width="360" height="22" rx="2" fill="#141c26" stroke="#ef4444" stroke-width="0.9"/>
+  <text x="28" y="310" fill="#f87171" font-family="monospace" font-size="8.5" font-weight="bold">숯가루가 섞여 나오는 첫 1~2컵 세척수는 반드시 버리기</text>
 
-  <!-- Callout 3: Clear Drip (Label 4) -->
-  <line x1="185" y1="298" x2="285" y2="165" stroke="#38bdf8" stroke-width="1"/>
-  <circle cx="185" cy="298" r="2.5" fill="#38bdf8"/>
-  <text x="376" y="165" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="end">CLEAR DRIP (맑은 물 방울)</text>
+  <!-- Label 4 (y=345) -->
+  <rect x="20" y="330" width="360" height="22" rx="2" fill="#141c26" stroke="#38bdf8" stroke-width="0.9"/>
+  <text x="28" y="345" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">유리알처럼 투명하게 떨어지는 맑은 물만 그릇에 받기</text>
 
-  <!-- Bottom Tactical Note Strip -->
-  <rect x="18" y="340" width="364" height="34" fill="#111419" stroke="#262d35" stroke-width="1"/>
-  <rect x="18" y="340" width="4" height="34" fill="#38bdf8"/>
-  <!-- Label 5: Step Core Instruction -->
-  <text x="32" y="361" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">[4단계 핵심] 자갈로 수압 분산 후 첫 1~2컵 버리기</text>
+  <!-- Label 5 (y=383) -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="8.8" font-weight="bold">[4단계 핵심] 자갈로 모래 파임을 막고 첫 1~2컵 버리기</text>
 </svg>

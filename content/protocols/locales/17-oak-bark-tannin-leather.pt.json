@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-17",
+  "category": "MATERIALS",
+  "title": "Como Transformar Couro Cru em Couro Impermeável com Água Fervida de Casca de Carvalho e Cinza (Fazer Couro Natural no Campo)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFESA CONTRA APODRECIMENTO DE COURO CRU E AUTOSSUFICIÊNCIA EM COURO IMPERMEÁVEL]",
+  "summary": "Em isolamento prolongado, peles cruas obtidas através de [armadilhas e caça](/protocol-08.html) criam larvas e apodrecem em um único dia por causa da carne e umidade, ou secam ao sol virando uma tábua dura inútil para roupas ou sapatos. Na natureza sem produtos químicos, primeiro deixe a pele crua de molho na 'água escorregadia de cinza branca' usada no [sabão natural de cinza](/protocol-13.html) para soltar os pelos suavemente, e depois mergulhe a pele por uma semana na 'água adstringente fervida de casca de carvalho' feita com a entrecasca vermelha dos carvalhos ao redor de um [forno de carvão de fosso](/protocol-09.html). Assim como morder uma bolota ou um caqui verde amarra a boca, a 'seiva adstringente conservante' da casca de carvalho penetra fundo no couro impedindo que bactérias o apodreçam, enquanto a fumaça de madeira impermeabiliza o exterior para costurar casacos e botas com [agulhas de osso e fio de tendão](/protocol-14.html).",
+  "timeRequired": "7-10 Dias (Raspar Gordura e Tirar Pelo na Cinza 2d + Molho na Água de Casca de Carvalho 5-7d + Passar Gordura e Defumar 1d)",
+  "successRate": "93% (Usando a água de casca de carvalho totalmente fria e confirmando a cor marrom até o meio do corte)",
+  "difficulty": "Moderada (Exige pedra redonda para não rasgar a pele e deixar de molho da água fraca para a forte em ordem)",
+  "outputPerHour": "Transforma 1 pele média de cervo/cabra (4-5 painéis de dois palmos) em couro impermeável para casaco, sapatos e mochila",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Pele Crua Fresca de Animal e Pedra Redonda de Rio ou Espátula de Osso para Tirar Gordura",
+      "desc": "Pele fresca de cervo, cabra ou javali retirada após [armadilhas e caça](/protocol-08.html), junto com um [raspador de pedra de borda arredondada](/protocol-04.html) ou osso cego para empurrar a camada de gordura branca interna sem furar a pele."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Mochila de Casca Externa Grossa e Entrecasca Vermelha de Carvalho (Aprox. 5-6kg)",
+      "desc": "Casca retirada de troncos de carvalho ou castanheira caídos usados no [forno de carvão de fosso](/protocol-09.html). Especialmente a entrecasca vermelha logo abaixo da casca grossa está cheia de 'seiva adstringente conservante' que impede o couro de apodrecer."
+    },
+    {
+      "id": "mat-03",
+      "name": "5-6 Punhados de Cinza Branca de Carvalho e Água Limpa de Riacho para Soltar a Raiz do Pelo",
+      "desc": "Cinza branca de madeira usada para fazer [sabão natural de cinza](/protocol-13.html). Dissolvida na água vira uma água de cinza escorregadia como sabão que amolece os poros do pelo para empurrá-lo sem lâmina."
+    },
+    {
+      "id": "mat-04",
+      "name": "Buraco no Chão Revestido de Barro (ou Cocho de Tronco) e Pedra para Esmagar a Casca",
+      "desc": "Um buraco cavado para cobrir a pele e revestido com barro grosso para não vazar água, além de uma pedra dura de rio para esmagar a casca de carvalho em pedaços do tamanho de uma unha."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 Xícara de Gordura Animal Morna para Amaciar e Fumaça de Carvalho Podre sem Chama",
+      "desc": "Gordura animal morna passada no couro para não endurecer ao secar, combinada com fumaça de madeira sem chama de uma [fornalha de barro](/protocol-06.html) para criar uma camada impermeável na superfície do couro."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Empurrar a Gordura Interna sobre um Tronco Redondo e Deixar na Água de Cinza para Tirar o Pelo",
+      "description": "1. **Empurrar Gordura e Carne Interna**: Estenda a pele crua sobre um tronco liso mais grosso que o antebraço e empurre com força de cima para baixo com um [raspador de pedra arredondado](/protocol-04.html) usando as duas mãos até tirar toda a gordura branca **sem restar nada escorregadio nas pontas dos dedos**.\n2. **Deixar de Molho na Água de Cinza para Amolecer os Poros**: Dissolva **cinco punhados** de [cinza branca de carvalho](/protocol-13.html) em um balde de água até ficar escorregadia nos dedos, prenda a pele com pedras e **deixe submersa por 2-3 dias** até a raiz do pelo soltar sozinha.\n3. **Empurrar o Pelo com Espátula de Madeira e Lavar no Riacho**: Quando o pelo sair sem força ao empurrar com o polegar, coloque a pele de volta no tronco, empurre o pelo e a camada escura externa com uma espátula de madeira cega e **deixe meio dia num riacho corrente** para tirar toda a água de cinza.",
+      "actionNote": "> Evite Facas de Pedra Afiadas e Contato Prolongado das Mãos com Água de Cinza: Raspar a gordura com pedra afiada abre furos na pele; empurre sempre com osso cego ou pedra redonda. Vire a pele com um galho e lave as mãos com água limpa após o trabalho.",
+      "svgFileName": "pr17-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FLESHING BEAM & WOOD ASH LYE DEHAIRING",
+        "Empurrar gordura interna com pedra redonda no tronco inclinado",
+        "Deixar 2-3 dias na água de cinza branca para amolecer poros",
+        "Empurrar pelo com espátula de madeira e enxaguar no riacho",
+        "[Chave Passo 1] Tirar gordura, pelo e cinza sem ferir o couro"
+      ],
+      "deepDive": {
+        "badge": "NATURAL DEHAIRING & CLEANING",
+        "title": "Por Que Deixar de Molho na Água de Cinza Branca Faz o Pelo Sair pela Raiz sem Usar Faca?",
+        "text": "Se você raspar o pelo de uma pele crua com uma faca afiada, a raiz do pelo continua presa lá dentro e a lâmina fere a superfície, fazendo o couro rasgar fácil. Já quando dissolvemos cinza branca de carvalho na água, forma-se uma água escorregadia como sabão que amolece suavemente a película externa e os poros do pelo. Três dias depois, basta passar o dedo ou uma tábua cega para o pelo escorregar inteiro pela raiz, deixando a pele limpa, lisa e intacta.",
+        "fieldSpecs": [
+          {
+            "name": "Empurrar a Gordura Branca Interna com Pedra Redonda sobre um Tronco",
+            "scientificName": "Blunt River Stone Fleshing on Smooth Log Beam",
+            "categoryTag": "Remoção da Causa de Apodrecimento / Limpeza de Gordura",
+            "imageFileName": "id-rawhide-fat-scraping.jpg",
+            "hudCode": "FIG. BIO-17A // MACRO OPTIC",
+            "hudStatus": "FAT LAYER REMOVAL: CLEAN",
+            "traits": [
+              {
+                "label": "FERRAMENTA/TOOL",
+                "value": "Usa **uma pedra chata de rio com bordas redondas ou osso da canela** em vez de faca."
+              },
+              {
+                "label": "GORDURA/FAT",
+                "value": "Ao empurrar, **a camada branca e gordurosa sai em tiras**, revelando o couro limpo."
+              },
+              {
+                "label": "CHECAGEM/CHECK",
+                "value": "Está aprovado quando ao esfregar as pontas dos dedos **não houver nenhuma oleosidade**."
+              }
+            ],
+            "fieldUse": "Primeiro trabalho logo após a caça para retirar toda carne e gordura evitando o apodrecimento"
+          },
+          {
+            "name": "Pele Amolecida na Água de Cinza Branca Soltando o Pelo sem Esforço",
+            "scientificName": "Hardwood Ash Water Soak & Hair Slipping Stage",
+            "categoryTag": "Remoção Natural de Pelos sem Lâmina / Limpeza de Poros",
+            "imageFileName": "id-wood-ash-lye-soak.jpg",
+            "hudCode": "FIG. BIO-17B // MACRO OPTIC",
+            "hudStatus": "HAIR FOLLICLE SLIP: READY",
+            "traits": [
+              {
+                "label": "CINZA/LYE",
+                "value": "Água cinza-esbranquiçada de cinza de carvalho que **escorrega nos dedos como água com sabão**."
+              },
+              {
+                "label": "PELO/SLIP",
+                "value": "Após 3 dias de molho, ao empurrar com o polegar **o pelo grosso sai em tufos sem força**."
+              },
+              {
+                "label": "PELE/GRAIN",
+                "value": "No lugar de onde sai o pelo surge **uma superfície de pele branca, lisa e sem nenhum arranhão**."
+              }
+            ],
+            "fieldUse": "Processo para retirar de forma limpa os pelos e a película escura sem cortar o couro"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Esmagar a Entrecasca Vermelha de Carvalho, Ferver e Esfriar até Virar Água Adstringente Fria",
+      "description": "1. **Descascar e Esmagar Entrecasca de Carvalho**: Retire a casca de troncos de carvalho caídos, coloque sobre uma rocha plana e bata com uma pedra até virar **pedaços desfiados do tamanho da unha do polegar (~1-2cm)**.\n2. **Ferver Água Vermelha Adstringente**: Encha até a metade um pote grande sobre a [fornalha de barro](/protocol-06.html) com a casca esmagada, complete com água e ferva por mais de 1 hora até ficar com **cor de chá preto forte ou molho de soja vermelho** e cheiro forte de madeira.\n3. **Esfriar como Água de Riacho e Preparar o Dia 1**: Deixe a água fervida esfriar na sombra até **sentir frio nas costas da mão** para não cozinhar a pele, e no primeiro dia misture meio a meio com água limpa.",
+      "actionNote": "> Jamais Coloque a Pele Crua na Água de Carvalho Morna ou Quente: Colocar a pele na água ainda morna cozinha o couro na hora como pele de porco fervida, fazendo encolher, amolecer e rasgar. Espere sempre esfriar totalmente como água de riacho.",
+      "svgFileName": "pr17-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // OAK BARK CRUSHING & COLD ASTRINGENT LIQUOR",
+        "Esmagar entrecasca vermelha de carvalho ao tamanho de uma unha",
+        "Ferver 1 hora no pote até virar água vermelha cor de chá preto",
+        "Esfriar totalmente e preparar água marrom fraca 1:1 para o 1º dia",
+        "[Chave Passo 2] Usar 100% fria para não cozinhar a pele"
+      ],
+      "deepDive": {
+        "badge": "NATURAL BARK PRESERVATION",
+        "title": "Como a 'Água Adstringente' da Casca de Carvalho que Amarra a Boca Impede o Couro de Apodrecer?",
+        "text": "Quando mastigamos um caqui verde ou uma bolota, sentimos um forte gosto 'adstringente' que amarra e repuxa a boca por dentro. A entrecasca vermelha do carvalho e da castanheira é cheia dessa seiva conservante natural que a árvore produz para se proteger de insetos e mofo. Ao mergulhar a pele crua nessa água escura de carvalho, a seiva envolve e reveste cada fiozinho minúsculo dentro da pele. Assim as bactérias não conseguem mais apodrecer a pele, transformando-a em couro verdadeiro para a vida toda.",
+        "fieldSpecs": [
+          {
+            "name": "Entrecasca Vermelha de Carvalho Esmagada e Água Fria Cor de Chá Preto",
+            "scientificName": "Crushed Red Oak Inner Bark & Cooled Astringent Bark Liquor",
+            "categoryTag": "Conservante Natural de Couro / Água de Casca",
+            "imageFileName": "id-oak-inner-bark-tannin.jpg",
+            "hudCode": "FIG. BIO-17C // MACRO OPTIC",
+            "hudStatus": "BARK EXTRACT STRENGTH: HIGH",
+            "traits": [
+              {
+                "label": "COR/COLOR",
+                "value": "A entrecasca é **marrom-avermelhada viva** e ao ferver fica com **cor de chá preto ou molho de soja vermelho**."
+              },
+              {
+                "label": "CHEIRO/SCENT",
+                "value": "Sem mau cheiro, solta **um aroma encorpado e levemente ácido de folhas molhadas e carvalho**."
+              },
+              {
+                "label": "TOQUE/TOUCH",
+                "value": "Ao esfregar nos dedos não escorrega, mas **repuxa e aperta a pele das pontas dos dedos**."
+              }
+            ],
+            "fieldUse": "Ferver a entrecasca esmagada, esfriar bem e deixar a pele de molho por 5-7 dias para não apodrecer"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Deixar a Pele na Água de Carvalho Virando Todo Dia Até Tingir o Meio de Marrom",
+      "description": "1. **Virar Todo Dia e Pôr Água Mais Forte**: Estenda a pele sem pelos na água fraca de carvalho sem dobrar, **vire de cima para baixo 2-3 vezes ao dia com um galho comprido** para não manchar e a cada dois dias complete com água de carvalho mais forte e fria.\n2. **Cortar um Cantinho para Ver se Tingiu o Meio**: Após 5-7 dias, faça um **pequeno corte do tamanho da unha do mindinho na borda mais grossa**; confira se a linha branca do meio sumiu e **todo o interior ficou com cor marrom uniforme**.\n3. **Secar até a Metade e Esfregar Gordura Animal Morna**: Enxágue de leve o couro tingido em água limpa, deixe secar até a metade na sombra e **esfregue gordura animal morna com as palmas das mãos** por todo o lado interno.",
+      "actionNote": "> Proibido Colocar em Água de Carvalho Muito Forte desde o Primeiro Dia: Se começar com água muito grossa e forte, só a parte de fora do couro endurece e fecha na hora, impedindo que a água de carvalho entre até o meio da pele.",
+      "svgFileName": "pr17-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // PROGRESSIVE OAK BARK SOAK & CORE CHECK",
+        "Virar 2-3x ao dia com um galho dentro do buraco barreado",
+        "Conferir corte da borda (todo marrom sem linha branca no meio)",
+        "Esfregar gordura animal morna no lado interno da pele semisseca",
+        "[Chave Passo 3] Da água fraca à forte até tingir todo o centro"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Puxar e Esfregar a Pele numa Estaca Redonda de Madeira para Amaciar e Defumar",
+      "description": "1. **Esfregar na Estaca Redonda para Amaciar**: Quando o couro com gordura começar a secar, passe-o na **borda redonda e lisa de uma estaca de madeira na altura do joelho** e puxe com força para todos os lados até ficar **macio como um cobertor**.\n2. **Amarrar em Cone e Dar Banho de Fumaça**: Enrole o couro macio em forma de cone sobre galhos acima de um buraco pequeno queimando **pedaços de carvalho podre sem chama**, deixando a fumaça pegar por igual durante 1 hora.\n3. **Concluir Couro Impermeável de Agasalho**: Quando o lado de fora ficar **revestido de marrom-dourado com cheiro gostoso de fumaça**, use [agulhas de osso e fio de tendão seco](/protocol-14.html) para costurar casacos de frio e sapatos de couro.",
+      "actionNote": "> Não Pare de Esfregar Antes de Secar Todo e Cuidado com Chamas na Fumaça: Se parar de puxar na estaca antes do couro secar totalmente, ele volta a endurecer como papelão. Use só madeira podre úmida para subir fumaça morna sem fogo.",
+      "svgFileName": "pr17-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // POST RUBBING SOFTENING & SMOKE COATING",
+        "Puxar e esfregar para todos os lados na estaca redonda",
+        "Defumar em forma de cone sobre buraco de carvalho sem chama",
+        "Camada impermeável marrom-dourada e costura com agulha de osso",
+        "[Chave Passo 4] Couro macio como cobertor mesmo após tomar chuva"
+      ],
+      "deepDive": {
+        "badge": "SOFTENING & SMOKE WATERPROOFING",
+        "title": "Por Que Esfregar na Estaca Enquanto Seca Deixa o Couro Macio como Cobertor e a Fumaça Impermeabiliza?",
+        "text": "Assim como uma toalha molhada seca dura se ficar parada, mas fica macia se for esfregada com as mãos enquanto seca, o couro com água de carvalho e gordura também endurece se ficar parado porque os fios internos grudam uns nos outros. Ao puxar e esfregar na estaca redonda no momento final da secagem, abrem-se espaços fofos de ar entre os fios, deixando-o macio como um cobertor de inverno. Já a fumaça sem chama veste a superfície com uma resina natural da madeira, para que não endureça de novo mesmo se molhar na chuva.",
+        "fieldSpecs": [
+          {
+            "name": "Couro Impermeável Marrom-Dourado Amaciado na Estaca e Defumado",
+            "scientificName": "Oak-Bark Cured & Wood-Smoked Supple Waterproof Leather",
+            "categoryTag": "Tecido de Casaco de Campo / Couro Impermeável para Botas",
+            "imageFileName": "id-smoked-buckskin-leather.jpg",
+            "hudCode": "FIG. BIO-17D // MACRO OPTIC",
+            "hudStatus": "WATERPROOF & SUPPLE GRADE: A+",
+            "traits": [
+              {
+                "label": "TOQUE/FEEL",
+                "value": "Mesmo amassando na mão não ficam marcas duras e **dobra macio como um cobertor grosso**."
+              },
+              {
+                "label": "COR/COLOR",
+                "value": "A água vermelha de carvalho e a fumaça criam **um tom marrom-dourado quente e profundo**."
+              },
+              {
+                "label": "ÁGUA/WATER",
+                "value": "As gotas de água formam bolinhas na superfície e **depois de molhar e secar não fica duro**."
+              }
+            ],
+            "fieldUse": "Costurado na hora com agulha de osso e fio de tendão para fazer casacos de inverno, sapatos e bolsas de água"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Colocar a Pele Crua na Água de Carvalho Quente ou Começar na Água Muito Forte no 1º Dia",
+    "description": "Colocar a pele crua na água fervida de casca de carvalho antes de esfriar cozinha a pele na mesma hora pelo calor, fazendo encolher como pele de porco cozida e rasgar num pedaço duro. Da mesma forma, colocar desde o primeiro dia na água de carvalho muito forte endurece e tampa só a superfície de fora, impedindo que a água adstringente chegue ao meio e fazendo o interior apodrecer. Esfrie sempre a água como água de riacho e comece na água marrom fraca antes de passar para a mais forte. [Aviso Legal e de Segurança: Este guia é material acadêmico para sobrevivência extrema e estudo de artesanato tradicional; capturar animais silvestres e retirar casca de árvores vivas em situações normais é estritamente proibido pelas leis ambientais e florestais.]",
+    "consequence": "Consequência: A pele cozinha e encolhe na água quente ou apodrece por dentro, perdendo roupa de frio"
+  },
+  "shortsScript": {
+    "hook": "Se secar a pele de um animal caçado sem tratar, ela fica dura como tábua e na chuva apodrece com larvas em um dia! Faça couro impermeável com água de casca de carvalho!",
+    "body": "Empurre toda a gordura interna num tronco liso com uma pedra redonda e deixe três dias na água de cinza branca para tirar o pelo fácil. Esmague a entrecasca de carvalho com uma pedra, ferva bem, deixe esfriar totalmente e mergulhe a pele por uma semana até o meio ficar marrom. Passe gordura animal morna meio seca, puxe numa estaca redonda até ficar macia como cobertor e defume por uma hora para ter couro impermeável!",
+    "outro": "A sabedoria da natureza protege a sua vida. Inscreva-se agora no Manual de Sobrevivência!"
+  },
+  "outcome": {
+    "title": "Conjunto de Couro Natural Impermeável e de Agasalho Concluído com Água de Casca de Carvalho e Fumaça",
+    "badge": "ESPECIFICAÇÃO FINAL // FIELD WATERPROOF LEATHER",
+    "standard": "Ao cortar a borda não há linha branca no meio e sim cor marrom uniforme até o centro; dobra macio como cobertor na mão e não endurece como tábua depois de molhar e secar",
+    "description": "Ao cortar a borda não há linha branca no meio e sim cor marrom uniforme até o centro; dobra macio como cobertor na mão e não endurece como tábua depois de molhar e secar",
+    "svgFileName": "pr17-outcome.svg",
+    "svgLabels": [
+      "PR-17 OUTCOME // OAK BARK & SMOKED WATERPROOF LEATHER",
+      "Passo 1: Empurrar gordura com pedra redonda e tirar pelo na cinza",
+      "Passo 2: Esmagar entrecasca vermelha e esfriar água adstringente",
+      "Passo 3: Tingir 100% de marrom até o meio e passar gordura morna",
+      "Passo 4: Amaciar esfregando na estaca redonda e defumar com madeira",
+      "Couro Final: Couro natural impermeável que não apodrece na chuva",
+      "FIELD VERIFIED // PERMANENT WATERPROOF & SUPPLE BUCKSKIN"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Deixei a pele uma semana na água de carvalho, mas ao cortar a borda ainda tem uma linha branca no meio.",
+      "causeDiagnostic": "Foi colocada desde o começo numa água de carvalho muito forte, endurecendo e tampando primeiro a parte de fora e impedindo a água de entrar até o meio.",
+      "resolution": "Tire a pele e amasse e dobre suavemente sobre um bastão redondo de madeira para soltar a camada externa endurecida. Depois coloque de novo por 2-3 dias em água de carvalho recém-fervida e fria para a água marrom penetrar até o centro."
+    },
+    {
+      "question": "Depois de secar todo o couro ele ficou mais duro do que eu pensava. Dá para deixar macio de novo?",
+      "causeDiagnostic": "Parou de puxar e esfregar na estaca de madeira cedo demais enquanto secava, ou faltou gordura e os fios internos do couro grudaram de novo.",
+      "resolution": "Esfregue uma mistura de água morna e gordura animal com as palmas no lado interno e enrole o couro por meio dia para a umidade espalhar. Quando ficar úmido, passe novamente na estaca redonda e puxe com força para todos os lados até secar totalmente."
+    }
+  ],
+  "createdAt": "2026-10-26T13:00:00.000Z",
+  "updatedAt": "2026-10-26T13:31:24.635Z",
+  "contentHash": "d3bf620f626719da"
+}

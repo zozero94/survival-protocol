@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1704" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080a0e"/>
+      <stop offset="100%" stop-color="#0e1319"/>
+    </linearGradient>
+    <linearGradient id="stakingPost" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="buckskinGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="55%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="smokePlume17" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#cbd5e1" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="drop1704" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <pattern id="grid1704" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16202c" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1704)"/>
+  <rect width="400" height="400" fill="url(#grid1704)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#253342" stroke-width="1"/>
+
+  <!-- Top Header (Label 1) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0f1722" stroke="#2c3e50" stroke-width="1"/>
+  <text x="24" y="32" fill="#fde68a" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 04 // POST RUBBING SOFTENING &amp; SMOKE COATING</text>
+
+  <!-- Main 3D Illustration: Rounded Staking Post (Left) & Conical Tripod Smoke Tent (Right) -->
+  <g filter="url(#drop1704)">
+    <!-- Left: Rounded Wooden Staking Post & Stretched Soft Buckskin -->
+    <path d="M 96 142 C 96 124 128 124 128 142 L 128 275 L 96 275 Z" fill="url(#stakingPost)" stroke="#b45309" stroke-width="1.3"/>
+    <!-- Supple Hide Pulled Back and Forth Over Post Dome -->
+    <path d="M 52 212 Q 112 108 172 212 L 154 226 Q 112 142 70 226 Z" fill="url(#buckskinGold)" stroke="#fde68a" stroke-width="1.4"/>
+    <!-- Bi-Directional Pulling Tension Arrows -->
+    <path d="M 56 218 L 42 242" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 168 218 L 182 242" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Right: Conical Hide Tent Over Flameless Rotten Oak Smolder Pit -->
+    <!-- Ground Smolder Pit -->
+    <ellipse cx="295" cy="264" rx="54" ry="14" fill="#1e293b" stroke="#64748b" stroke-width="1.2"/>
+    <ellipse cx="295" cy="266" rx="34" ry="8" fill="#7c2d12"/>
+    <!-- Rising Aldehyde Wood Smoke Plumes -->
+    <path d="M 285 262 C 275 235 310 215 295 182" fill="none" stroke="url(#smokePlume17)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 304 260 C 316 232 282 210 302 178" fill="none" stroke="url(#smokePlume17)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Conical Smoked Golden Buckskin Tepee -->
+    <path d="M 295 104 L 232 254 Q 295 268 358 254 Z" fill="url(#buckskinGold)" fill-opacity="0.88" stroke="#fde68a" stroke-width="1.5"/>
+  </g>
+
+  <!-- Label 2 -->
+  <rect x="20" y="60" width="360" height="22" rx="2" fill="#141a23" stroke="#334155" stroke-width="1"/>
+  <text x="28" y="75" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">둥근 나무 말뚝 모서리에 사방으로 당겨 문질러 부드럽게 풀기</text>
+
+  <!-- Label 3 -->
+  <rect x="20" y="295" width="360" height="22" rx="2" fill="#141a23" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="28" y="310" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">불꽃 없는 썩은 참나무 연기 구덩이 위 고깔 모양 연기 쐬기</text>
+
+  <!-- Label 4 -->
+  <rect x="20" y="330" width="360" height="22" rx="2" fill="#141a23" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="28" y="345" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">황금빛 갈색 방수 연기 코팅 완료 및 뼈바늘 바느질 연계</text>
+
+  <!-- Label 5 -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="8.8" font-weight="bold">[4단계 핵심] 비에 젖었다 말라도 담요처럼 부드러운 가죽 완성</text>
+</svg>

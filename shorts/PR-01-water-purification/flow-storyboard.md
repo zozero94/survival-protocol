@@ -31,7 +31,7 @@ Vertical 9:16 eye-level knolling layout shot, smooth camera slide from left to r
 * **Google Flow 투입 이미지**: `pr01-step-01.png` (원천 벡터: `pr01-step-01.svg`)
 * **구글 플로우 프롬프트**:
 ```text
-Vertical 9:16 medium close-up shot, slow downward tilt following hands. Gritty authentic survival documentary style. Directional morning side-lighting. Hands carefully executing step 1: Step 1: Set up a 3-stick tripod and mount the cone funnel. (no subtitles). Audio: tactile craft foley, wood clicking, cordage binding | Background music: focused rhythmic pacing.
+Vertical 9:16 medium close-up shot, slow downward tilt following hands. Gritty authentic survival documentary style. Directional morning side-lighting. Hands carefully executing step 1: Step 1: Tie a triangular cross-brace cradle on the tripod, seat the cone, and pack the moss plug. (no subtitles). Audio: tactile craft foley, wood clicking, cordage binding | Background music: focused rhythmic pacing.
 ```
 
 ---

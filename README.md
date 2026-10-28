@@ -18,11 +18,11 @@
 
 ---
 
-## 🧱 5대 핵심 생존 공학 분과 및 발행 현황 (총 15편 배포 완료)
+## 🧱 5대 핵심 생존 공학 분과 및 발행 현황 (총 17편 배포 완료)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면/이미지 | 세부 스텝 비주얼 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
-| **FOOD** | [흙탕물을 깨끗한 식수로 바꾸는 법 (숯·모래 정수기)](public/protocol-01.html) | `pr01-outcome.svg` | 5단계 (FIG 01~05) | 7개국어 완비 | ✅ 라이브 |
+| **FOOD** | [흙탕물을 깨끗한 식수로 바꾸는 법 (숯·모래 정수기)](public/protocol-01.html) | `pr01-outcome.svg` | 5단계 (FIG 01~05 + 삼각대 거치·이끼·4층 단면 실사 3종) | 7개국어 완비 | ✅ 라이브 |
 | **SHELTER** | [나뭇가지 마찰로 불 피우는 법 (활비비 불피우기)](public/protocol-02.html) | `pr02-outcome.svg` | 3단계 (FIG 01~03) | 7개국어 완비 | ✅ 라이브 |
 | **SHELTER** | [불 없이 체온을 지키는 낙엽 움막 만드는 법](public/protocol-03.html) | `pr03-outcome.svg` | 3단계 (FIG 01~03) | 7개국어 완비 | ✅ 라이브 |
 | **TOOLS** | [깬 돌과 칡덩굴로 나무 베는 돌도끼 만드는 법](public/protocol-04.html) | `pr04-outcome.svg` | 3단계 (FIG 01~03) | 7개국어 완비 | ✅ 라이브 |
@@ -37,6 +37,8 @@
 | **TOOLS** | [동물 다리뼈와 마른 힘줄로 찢어진 가죽옷과 신발을 꿰매는 법 (야전 골침과 건사 봉제술)](public/protocol-14.html) | `pr14-outcome.svg` | 4단계 (FIG 01~04 + 생체자재 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 | **MEDICINE** | [활성탄 숯가루와 모래를 천에 싼 화재·유독가스 방호 간이 방독 마스크 (야전 탄포 마스크)](public/protocol-15.html) | `pr15-outcome.svg` | 4단계 (FIG 01~04 + 활성탄·모래 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 | **FOOD** | [이중 점토 옹기와 젖은 모래 기화열로 고기와 음식을 보존하는 무전력 천연 냉장고 (야전 제어 팟)](public/protocol-16.html) | `pr16-outcome.svg` | 4단계 (FIG 01~04 + 무유약 토기·삼베 실사 2종) | 7개국어 완비 | ✅ 라이브 |
+| **MATERIALS** | [참나무 껍질 우린 물과 잿물로 썩기 쉬운 날가죽을 질긴 방수 가죽으로 만드는 법 (야전 천연 가죽 만들기)](public/protocol-17.html) | `pr17-outcome.svg` | 4단계 (FIG 01~04 + 날가죽·잿물·참나무·훈연 가죽 실사 4종) | 7개국어 완비 | ✅ 라이브 |
+| **MEDICINE** | [곧은 나뭇가지와 이끼 패드·삼베 천으로 부러진 팔다리와 출혈을 고정하는 법 (야전 나뭇가지 부목 & 지혈 압박법)](public/protocol-18.html) | `pr18-outcome.svg` | 4단계 (FIG 01~04 + 삶은 삼베·이끼 부목·4점 결속·손톱 혈색 실사 4종) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -46,10 +48,10 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-16, 총 15편)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-18, 총 17편)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 18종)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 99종: 활성 스텝 69종 + 결과 16종)
+│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 29종)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 109종: 활성 85종[스텝 68 + 결과 17], 보존 24종)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -57,10 +59,17 @@ primitive-survival/
 │   ├── i18n/              # [i18n Layer] 7대 언어 사전 및 무상태 판별 엔진
 │   ├── state/             # [State Layer] 페이징, 카테고리 필터, 검색 런타임, 테마, 선언적 바인딩 스크립트
 │   │   ├── search.state.ts # 인메모리 검색, 초성 탐색 및 키보드 단축키(Cmd+K, /, ESC, 방향키) 런타임
+│   │   ├── feed.state.ts   # 동적 피드 페이징 및 정렬 상태 관리
+│   │   ├── locale.state.ts # 7개국어 0.01초 무새로고침 핫스왑 엔진 (FAQ 크로스링크 실시간 파싱)
+│   │   ├── crosslink.state.ts # a[data-proto="crosslink"] 호버 프리뷰 싱글톤 HUD 팝오버 런타임
+│   │   ├── theme.state.ts  # 다크/라이트 테마 토글 및 로컬 스토리지 동기화
+│   │   ├── checklist.state.ts # 체크리스트 카운터 및 진행률 실시간 연산
+│   │   ├── pwa.state.ts    # Service Worker 등록 및 오프라인 배너 런타임
+│   │   └── firebase.state.ts # Firebase Realtime Database 조회수/확인 텔레메트리 스크립트
 │   ├── components/        # [Presentational Layer] 순수 UI 컴포넌트 (DOM 무의존)
 │   │   ├── feed/          # FeedHeader, ProtocolCard, Pagination
-│   │   ├── layout/        # Header, StickyActionBar, SearchModal
-│   │   └── protocol/      # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning
+│   │   ├── layout/        # Header, StickyActionBar, SearchModal, CrosslinkPopover, Footer
+│   │   └── protocol/      # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning, FaqSection
 │   ├── services/          # [Service Layer]
 │   │   ├── search.service.ts # Fuse.js 퍼지 검색, 슬림 인덱스 구축, 택티컬 하이라이팅 및 스니펫
 │   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
@@ -88,7 +97,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 15대 테스트 스위트 (140/140 PASS)
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (149/149 PASS)
 ```
 
 ---

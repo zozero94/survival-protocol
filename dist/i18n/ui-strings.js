@@ -57,6 +57,20 @@
                                  
                                 
                                 
+                    
+                       
+                       
+                       
+                          
+                          
+                            
+                          
+                            
+                          
+                          
+                            
+                            
+                             
                       
                      
                             
@@ -134,7 +148,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[도구·의복·공작]',
     cat_MATERIALS: '[소재·천연화학]',
     cat_MEDICINE: '[의약·위생·방호]',
-    footerCat1: '[01 SUSTENANCE] 물 · 식량 · 보존',
+    footerCat1: '[01 FOOD] 물 · 식량 · 보존',
     footerCat2: '[02 SHELTER] 불 · 거처 · 보온',
     footerCat3: '[03 TOOLS] 도구 · 의복 · 공작',
     footerCat4: '[04 MATERIALS] 소재 · 천연화학',
@@ -147,6 +161,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: '글',
     paginationTotalPrefix: '/ 총',
     paginationTotalSuffix: '개',
+    brandLong: '[생존 교범 // SURVIVAL PROTOCOL]',
+    footerTrait1: '● 현대 공산품 의존도: 0.00%',
+    footerTrait2: '● 오프라인 단독 작동 보장 (PWA)',
+    footerTrait3: '● 100% 무상 공공 도메인 개방',
+    footerCol2Title: '신뢰성 & 규정',
+    footerLinkAbout: '프로젝트 철학 & 검증 체계 (About)',
+    footerLinkPrivacy: '개인정보처리방침 (Privacy Policy)',
+    footerLinkTerms: '이용약관 및 면책고지 (Terms)',
+    footerLinkContact: '비상 통신 & 기술 제보 (Contact)',
+    footerCol3Title: '생존 분과 색인',
+    footerCol4Title: '기술 사양 & 라이선스',
+    footerPersistence:
+      '단 1회 방문 시 전 페이지 HTML, SVG 도면, 검색 인덱스가 브라우저 로컬 저장소에 영구 보존됩니다.',
+    footerSitemapLink: '[XML SITEMAP // 검색엔진 색인]',
+    footerManifestLink: '[PWA MANIFEST // 앱 설치 규격]',
     footerTitle: '누구나 위급할 때 바로 따라 할 수 있는 실전 생존 가이드.',
     footerDesc:
       '한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.',
@@ -224,7 +253,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[TOOLS · GEAR · CRAFT]',
     cat_MATERIALS: '[MATERIALS · BIO-CHEM]',
     cat_MEDICINE: '[MEDICINE · HYGIENE · NBC]',
-    footerCat1: '[01 SUSTENANCE] Water · Food · Preserve',
+    footerCat1: '[01 FOOD] Water · Food · Preserve',
     footerCat2: '[02 SHELTER] Fire · Shelter · Heat',
     footerCat3: '[03 TOOLS] Tools · Gear · Craft',
     footerCat4: '[04 MATERIALS] Materials · Bio-Chem',
@@ -237,6 +266,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: 'RECORDS',
     paginationTotalPrefix: '/ TOTAL',
     paginationTotalSuffix: '',
+    brandLong: '[SURVIVAL PROTOCOL // FIELD MANUAL]',
+    footerTrait1: '● Industrial Goods Reliance: 0.00%',
+    footerTrait2: '● 100% Offline Standalone Operation (PWA)',
+    footerTrait3: '● 100% Free Public Domain Access',
+    footerCol2Title: 'Trust & Compliance',
+    footerLinkAbout: 'Philosophy & Verification (About)',
+    footerLinkPrivacy: 'Privacy Policy',
+    footerLinkTerms: 'Terms of Service & Disclaimer',
+    footerLinkContact: 'Emergency Contact & Tech Intel',
+    footerCol3Title: 'Survival Field Index',
+    footerCol4Title: 'Tech Specs & Licensing',
+    footerPersistence:
+      'A single visit permanently caches all HTML pages, SVG blueprints, and search indices into browser storage.',
+    footerSitemapLink: '[XML SITEMAP // Search Engine Index]',
+    footerManifestLink: '[PWA MANIFEST // App Install Spec]',
     footerTitle: 'FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.',
     footerDesc:
       'Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.',
@@ -314,7 +358,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[道具・衣服・工作]',
     cat_MATERIALS: '[素材・天然化学]',
     cat_MEDICINE: '[医薬・衛生・防護]',
-    footerCat1: '[01 SUSTENANCE] 水・食料・保存',
+    footerCat1: '[01 FOOD] 水・食料・保存',
     footerCat2: '[02 SHELTER] 火・シェルター・保温',
     footerCat3: '[03 TOOLS] 道具・衣服・工作',
     footerCat4: '[04 MATERIALS] 素材・天然化学',
@@ -327,6 +371,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: '記録',
     paginationTotalPrefix: '/ 全',
     paginationTotalSuffix: '件',
+    brandLong: '[生存教範 // SURVIVAL PROTOCOL]',
+    footerTrait1: '● 現代工業製品への依存度: 0.00%',
+    footerTrait2: '● 完全オフライン単独動作保証 (PWA)',
+    footerTrait3: '● 100% 無料パブリックドメイン開放',
+    footerCol2Title: '信頼性・規約',
+    footerLinkAbout: 'プロジェクト理念と検証体系 (About)',
+    footerLinkPrivacy: 'プライバシーポリシー (Privacy)',
+    footerLinkTerms: '利用規約および免責事項 (Terms)',
+    footerLinkContact: '非常通信・技術情報提供 (Contact)',
+    footerCol3Title: '生存分科インデックス',
+    footerCol4Title: '技術仕様・ライセンス',
+    footerPersistence:
+      '一度のアクセスで全ページHTML、SVG図面、検索インデックスがブラウザのローカルストレージに永久保存されます。',
+    footerSitemapLink: '[XML SITEMAP // 検索エンジン索引]',
+    footerManifestLink: '[PWA MANIFEST // アプリインストール規格]',
     footerTitle: '人類文明再建のための無料オープンソース生存記録書。',
     footerDesc:
       'このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。',
@@ -404,7 +463,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[HERRAMIENTAS · EQUIPO]',
     cat_MATERIALS: '[MATERIALES · BIOQUÍMICA]',
     cat_MEDICINE: '[MEDICINA · HIGIENE]',
-    footerCat1: '[01 SUSTENANCE] Agua · Alimento · Conserva',
+    footerCat1: '[01 FOOD] Agua · Alimento · Conserva',
     footerCat2: '[02 SHELTER] Fuego · Refugio · Calor',
     footerCat3: '[03 TOOLS] Herramientas · Equipo',
     footerCat4: '[04 MATERIALS] Materiales · Bioquímica',
@@ -417,6 +476,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: 'REGISTROS',
     paginationTotalPrefix: '/ TOTAL',
     paginationTotalSuffix: '',
+    brandLong: '[PROTOCOLO DE SUPERVIVENCIA // MANUAL DE CAMPO]',
+    footerTrait1: '● Dependencia de Productos Industriales: 0.00%',
+    footerTrait2: '● Operación Totalmente Desconectada (PWA)',
+    footerTrait3: '● Acceso 100% Libre y de Dominio Público',
+    footerCol2Title: 'Confianza y Normas',
+    footerLinkAbout: 'Filosofía y Verificación (About)',
+    footerLinkPrivacy: 'Política de Privacidad',
+    footerLinkTerms: 'Términos de Uso y Descargo',
+    footerLinkContact: 'Contacto de Emergencia e Informes',
+    footerCol3Title: 'Índice de Ramas de Supervivencia',
+    footerCol4Title: 'Especificaciones y Licencia',
+    footerPersistence:
+      'Una sola visita guarda permanentemente todas las páginas HTML, diagramas SVG e índices en el almacenamiento local.',
+    footerSitemapLink: '[XML SITEMAP // Índice de Motores]',
+    footerManifestLink: '[PWA MANIFEST // Especificación de Instalación]',
     footerTitle: 'ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.',
     footerDesc:
       'Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.',
@@ -494,7 +568,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[WERKZEUG · KLEIDUNG]',
     cat_MATERIALS: '[ROHSTOFFE · NATURCHEMIE]',
     cat_MEDICINE: '[MEDIZIN · HYGIENE · SCHUTZ]',
-    footerCat1: '[01 SUSTENANCE] Wasser · Nahrung · Lager',
+    footerCat1: '[01 FOOD] Wasser · Nahrung · Lager',
     footerCat2: '[02 SHELTER] Feuer · Schutz · Wärme',
     footerCat3: '[03 TOOLS] Werkzeug · Kleidung',
     footerCat4: '[04 MATERIALS] Rohstoffe · Naturchemie',
@@ -507,6 +581,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: 'EINTRÄGE',
     paginationTotalPrefix: '/ GESAMT',
     paginationTotalSuffix: '',
+    brandLong: '[ÜBERLEBENSPROTOKOLL // FELDMANDAT]',
+    footerTrait1: '● Abhängigkeit von Industrieprodukten: 0.00%',
+    footerTrait2: '● 100% Offline-Betrieb garantiert (PWA)',
+    footerTrait3: '● 100% Freier Gemeinfreier Zugang',
+    footerCol2Title: 'Vertrauen & Richtlinien',
+    footerLinkAbout: 'Philosophie & Verifizierung (About)',
+    footerLinkPrivacy: 'Datenschutzerklärung (Privacy)',
+    footerLinkTerms: 'Nutzungsbedingungen & Haftung',
+    footerLinkContact: 'Notfallkontakt & Fehlerberichte',
+    footerCol3Title: 'Überlebenssparten-Index',
+    footerCol4Title: 'Technische Daten & Lizenz',
+    footerPersistence:
+      'Ein einziger Besuch sichert alle HTML-Seiten, SVG-Baupläne und den Suchindex dauerhaft im lokalen Speicher.',
+    footerSitemapLink: '[XML SITEMAP // Suchmaschinenindex]',
+    footerManifestLink: '[PWA MANIFEST // App-Installationsspezifikation]',
     footerTitle: 'KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.',
     footerDesc:
       'Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.',
@@ -584,7 +673,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[FERRAMENTAS · EQUIPAMENTO]',
     cat_MATERIALS: '[MATERIAIS · BIOQUÍMICA]',
     cat_MEDICINE: '[MEDICINA · HIGIENE]',
-    footerCat1: '[01 SUSTENANCE] Água · Alimento · Conserva',
+    footerCat1: '[01 FOOD] Água · Alimento · Conserva',
     footerCat2: '[02 SHELTER] Fogo · Abrigo · Calor',
     footerCat3: '[03 TOOLS] Ferramentas · Equipamento',
     footerCat4: '[04 MATERIALS] Materiais · Bioquímica',
@@ -597,6 +686,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: 'REGISTROS',
     paginationTotalPrefix: '/ TOTAL',
     paginationTotalSuffix: '',
+    brandLong: '[PROTOCOLO DE SOBREVIVÊNCIA // MANUAL DE CAMPO]',
+    footerTrait1: '● Dependência de Produtos Industriais: 0.00%',
+    footerTrait2: '● Operação 100% Offline Garantida (PWA)',
+    footerTrait3: '● Acesso 100% Livre e de Domínio Público',
+    footerCol2Title: 'Confiabilidade e Normas',
+    footerLinkAbout: 'Filosofia e Verificação (About)',
+    footerLinkPrivacy: 'Política de Privacidade',
+    footerLinkTerms: 'Termos de Uso e Isenção',
+    footerLinkContact: 'Contato de Emergência e Relatos',
+    footerCol3Title: 'Índice de Ramos de Sobrevivência',
+    footerCol4Title: 'Especificações e Licença',
+    footerPersistence:
+      'Uma única visita armazena permanentemente todas as páginas HTML, diagramas SVG e índices no navegador.',
+    footerSitemapLink: '[XML SITEMAP // Índice de Busca]',
+    footerManifestLink: '[PWA MANIFEST // Especificação de Instalação]',
     footerTitle: 'ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.',
     footerDesc:
       'Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.',
@@ -674,7 +778,7 @@ export const UI_STRINGS                                     = {
     cat_TOOLS: '[工具·衣物·工藝]',
     cat_MATERIALS: '[素材·天然化學]',
     cat_MEDICINE: '[醫藥·衛生·防護]',
-    footerCat1: '[01 SUSTENANCE] 飲水·糧食·保存',
+    footerCat1: '[01 FOOD] 飲水·糧食·保存',
     footerCat2: '[02 SHELTER] 生火·庇護·保溫',
     footerCat3: '[03 TOOLS] 工具·衣物·工藝',
     footerCat4: '[04 MATERIALS] 素材·天然化學',
@@ -687,6 +791,21 @@ export const UI_STRINGS                                     = {
     paginationRecordPrefix: '紀錄',
     paginationTotalPrefix: '/ 共',
     paginationTotalSuffix: '篇',
+    brandLong: '[生存教範 // SURVIVAL PROTOCOL]',
+    footerTrait1: '● 現代工業品依賴度：0.00%',
+    footerTrait2: '● 離線單機運作保證 (PWA)',
+    footerTrait3: '● 100% 免費公共領域開放',
+    footerCol2Title: '信任與規範',
+    footerLinkAbout: '專案理念與驗證體系 (About)',
+    footerLinkPrivacy: '隱私權政策 (Privacy Policy)',
+    footerLinkTerms: '使用條款與免責聲明 (Terms)',
+    footerLinkContact: '緊急通訊與技術通報 (Contact)',
+    footerCol3Title: '生存分科索引',
+    footerCol4Title: '技術規格與授權',
+    footerPersistence:
+      '造訪一次即可將所有 HTML 頁面、SVG 圖面與搜尋索引永久保存於瀏覽器本地空間。',
+    footerSitemapLink: '[XML SITEMAP // 搜尋引擎索引]',
+    footerManifestLink: '[PWA MANIFEST // 應用程式安裝規格]',
     footerTitle: '為重建人類文明而設的免費開源生存檔案庫。',
     footerDesc:
       '本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。',

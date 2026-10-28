@@ -24,7 +24,7 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 140개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 149개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
   - 듀얼 트랙 생존 고증 (Track A: 순수 자연물 원시 공학 / Track B: 포스트 아포칼립스 도시 폐자재 업사이클링 공학)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
@@ -72,23 +72,28 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-16, 총 15편)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-18, 총 17편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 18종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (99개 SVG 도면, 활성 감사 85종)
-│   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 분과/도메인/티어)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 29종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (109개 SVG 도면, 활성 감사 85종: 스텝 68 + 결과 17, 보존 24종)
+│   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
 │   ├── site.config.ts           # 사이트 메타데이터, AdSense, PWA 경로 설정
 │   ├── i18n/                    # [i18n Layer] 7대 언어 사전 및 무상태 판별 엔진
 │   ├── components/              # [Presentational Layer] 순수 UI 컴포넌트
-│   │   ├── layout/              # Header, StickyActionBar, SearchModal, Footer (글로벌 4-컬럼 HUD 푸터)
+│   │   ├── layout/              # Header, StickyActionBar, SearchModal, CrosslinkPopover, Footer
 │   │   ├── feed/                # FeedHeader, ProtocolCard, Pagination
-│   │   └── protocol/            # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning
+│   │   └── protocol/            # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning, FaqSection
 │   ├── state/                   # [State Layer] SSOT 런타임 스크립트 직렬화 (0.01초 핫스왑)
 │   │   ├── search.state.ts      # Fuse.js 인스턴스 싱글톤 캐시, IME 방어, 키보드 단축키 런타임
 │   │   ├── feed.state.ts        # 동적 피드 페이징 및 정렬 상태 관리
-│   │   └── locale.state.ts      # 7개국어 0.01초 무새로고침 핫스왑 엔진
+│   │   ├── locale.state.ts      # 7개국어 0.01초 무새로고침 핫스왑 엔진 (FAQ 크로스링크 실시간 파싱)
+│   │   ├── crosslink.state.ts   # a[data-proto="crosslink"] 호버 프리뷰 싱글톤 HUD 팝오버 런타임
+│   │   ├── theme.state.ts       # 다크/라이트 테마 토글 및 로컬 스토리지 동기화
+│   │   ├── checklist.state.ts   # 체크리스트 카운터 및 진행률 실시간 연산
+│   │   ├── pwa.state.ts         # Service Worker 등록 및 오프라인 배너 런타임
+│   │   └── firebase.state.ts    # Firebase Realtime Database 조회수/확인 텔레메트리 점진적 향상 스크립트
 │   ├── services/                # [Service Layer] 
 │   │   ├── search.service.ts    # 슬림 인덱스 빌드, Fuse 퍼지 검색, 택티컬 하이라이팅
 │   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
@@ -117,14 +122,14 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 15개 테스트 스위트 (140/140 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 15개 테스트 스위트 (149/149 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 99종, 활성 정적 감사 85종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 109종, 활성 정적 감사 85종: 스텝 68종 + 결과 17종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:
@@ -134,7 +139,7 @@ primitive-survival/
 3. **전문 테크니컬 라이팅, 인라인 크로스링킹 & 콘텐츠 심층 보강 감수 (`PlainKoreanEditorService`, `PostingReviewService`, `CrossLinkerService`, `ContentEnrichmentService`)**:
    - 유아어/동화풍 표현(Fluff) 및 난해한 학술 용어(Jargon) 동시 100% 배제.
    - 1문장 1행동 번호형 액션 체크리스트(`01`, `02`) 및 핵심 수치 하이라이팅(`#fde68a`, `#ffffff`) 규격화.
-   - **문맥 하이퍼텍스트 상호 링킹 (`protocol-cross-linker` / `CrossLinkerService`)**: 본문 및 준비물 설명 도중 연관된 다른 프로토콜(예: 송진 채취 시 `[돌칼이나 돌도끼](/protocol-04.html)`, 경화제 `[참나무 숯가루](/protocol-09.html)`, 돌도끼 결속 시 `[야생 칡덩굴 밧줄](/protocol-05.html)`)을 찾아 인라인 하이퍼텍스트 배지(`↗`)로 즉시 이동 가능하게 연결.
+   - **문맥 하이퍼텍스트 상호 링킹 (`protocol-cross-linker` / `CrossLinkerService`)**: 본문, 준비물, 요약문(`summary`) 및 야전 FAQ(`FaqSection.ts`, `locale.state.ts`) 설명 도중 연관된 다른 프로토콜(예: 송진 채취 시 `[돌칼이나 돌도끼](/protocol-04.html)`, 경화제 `[참나무 숯가루](/protocol-09.html)`, 돌도끼 결속 시 `[야생 칡덩굴 밧줄](/protocol-05.html)`, 부목 완충재 `[부드러운 천연 가죽](/protocol-17.html)`)을 찾아 인라인 하이퍼텍스트 배지(`↗`)로 즉시 이동 가능하게 연결.
    - **콘텐츠 깊이·벡터 밀도·실사 도감 보강 감수 (`content-enrichment-auditor` / `ContentEnrichmentService`)**: 내용의 의미성과 쉬운 인과 설명 여부 검수, 스텝별 벡터 도면 밀도 가감(`NEEDS_EXTRA_VECTOR` 추가 요청 vs `OVERDONE_PRUNE_CANDIDATE` 과잉 감축), 그리고 헷갈리는 수종/자재에 대한 실사 도감(`FieldIdentificationSpec`) 보강 판정.
    - **4대 심층 포스팅 리뷰 통과 (`posting-quality-auditor`)**: ① 야전 안전 Red-Team 심사, ② 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T & HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 현지화 검수 (`tests/16_posting_review_engine.test.ts`).
 4. **타임스탬프 및 콘텐츠 해시 정밀 동기화 (`protocol-timestamp.ts`)**:

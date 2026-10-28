@@ -1,0 +1,256 @@
+{
+  "protocolId": "PR-18",
+  "category": "MEDICINE",
+  "title": "Knochenbrüche und Blutungen mit geraden Ästen, Moospolstern und ausgekochtem Leinen schienen",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[NOTFALL-TRAUMA] Schutz vor Arterien-/Nervendurchtrennung, Blutverlust & Gewebenekrose",
+  "summary": "Wenn bei einem Sturz im Gelände oder in Trümmern ein Arm- oder Beinknochen bricht und ungeschient wackelt, schneiden scharfe Knochenkanten umliegende Arterien und Nerven durch und verursachen schwere Blutungen oder dauerhafte Lähmungen. Im Feld ohne Krankenhaus waschen Sie die Wundumgebung mit [Natürlicher Holzasche-Seife](/protocol-13.html) und abgekühltem [Abgekochtem Filterwasser](/protocol-01.html) gegen Tetanus und Infektionen, drücken ein ausgekochtes Leinenpolster 10 Minuten lang fest auf die Blutung und stellen sowohl das obere als auch das untere Gelenk mit zwei geraden, innen mit Torfmoos und [Weichem Naturleder](/protocol-17.html) gepolsterten Ästen ruhig, die an 4 Punkten mit [Wilder Lianenschnur](/protocol-05.html) gebunden werden.",
+  "timeRequired": "Ca. 20 Min. (5 Min. Blutstillung + 10 Min. Astpolsterung + 5 Min. 4-Punkt-Bindung & Nageltest)",
+  "successRate": "99% (Bei Zwei-Gelenk-Ruhigstellung und 2-Sekunden-Nagelbett-Durchblutungstest)",
+  "difficulty": "Mittel (Sofort mit Waldästen, Moos und ausgekochtem Stoff ohne Erste-Hilfe-Kasten durchführbar)",
+  "outputPerHour": "1 komplettes gepolstertes Zwei-Gelenk-Astschienen-Set & herzhohle Lederschlinge",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 gerade, daumendicke Hartholzäste (Länger als das obere und untere Gelenk)",
+      "desc": "Biegefeste Eichen- oder Eschenäste. Für einen gebrochenen Unterarm wählen Sie Stöcke von **zweieinhalb Handspannen Länge (45-50 cm)** vom Ellbogen bis zu den Fingerspitzen und glätten Astknoten mit einer [Steinaxt oder Steinklinge](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 Handvoll sauberes Torfmoos / trockenes Laub & weiches Naturleder (Innenpolsterung)",
+      "desc": "Weiches Polster, das verhindert, dass hartes Holz direkt auf geschwollenes Gewebe und Knochen drückt und Gewebetod (Nekrose) auslöst. Innen 2 cm dick auflegen und mit [Weichem Naturleder](/protocol-17.html) umwickeln."
+    },
+    {
+      "id": "mat-03",
+      "name": "Mit Ascheseife gewaschenes und ausgekochtes Sackleinen oder Baumwolltuch (Druckpolster & 4 Bänder)",
+      "desc": "Ein handtellergroßes, 8-lagig gefaltetes Druckpolster für die Wunde sowie vier zwei Finger breite Stoffstreifen, damit die Schnüre nicht in die Haut einschneiden."
+    },
+    {
+      "id": "mat-04",
+      "name": "1 Liter abgekochtes, abgekühltes sauberes Wasser + Natürliche Holzasche-Seife",
+      "desc": "Mit dem [Naturwasserfilter](/protocol-01.html) gefiltertes und abgekochtes Wasser sowie [Natürliche Holzasche-Seife](/protocol-13.html) zum Händewaschen und Abspülen von Schmutz rund um die Wunde gegen Tetanus."
+    },
+    {
+      "id": "mat-05",
+      "name": "4 Stränge wilde Lianenschnur & 1 großes dreieckiges Ledertuch (Für Bindung & Armschlinge)",
+      "desc": "[Wilde Lianenschnur](/protocol-05.html) zum Sichern der vier Bindepunkte ober- und unterhalb des Bruchs sowie ein breites dreieckiges Ledertuch, um den Arm auf Herzhöhe zu lagern."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Wundumgebung mit abgekochtem Wasser spülen und 10 Minuten mit Leinenpolster abdrücken",
+      "description": "1. **Hände waschen & Schmutz abspülen**: Waschen Sie Ihre Hände gründlich mit [Natürlicher Holzasche-Seife](/protocol-13.html) und gießen Sie lauwarmes [Abgekochtes Filterwasser](/protocol-01.html) von oben nach unten um die Wunde, um Erde und Sand auszuspülen und Tetanus vorzubeugen.\n2. **10 Minuten mit 8-lagigem Leinenpolster abdrücken**: Falten Sie ein ausgekochtes Leinentuch **8-lagig auf Handtellergröße**, legen Sie es direkt auf die blutende Stelle und **drücken Sie 10 Minuten lang gleichmäßig fest mit dem Handballen darauf**.\n3. **Knochen niemals gewaltsam einrenken**: Auch wenn der Knochen absteht oder schief ist, niemals daran ziehen oder drücken, da sonst tiefe Arterien reißen; **stützen Sie das Glied genau in der vorgefundenen Position**.",
+      "actionNote": "> Erstes durchgeblutetes Polster niemals abziehen: Wer das Tuch anhebt, reißt den frischen Blutpfropf ab und löst erneutes starkes Bluten aus. Wenn das erste Polster durchblutet, lassen Sie es liegen und drücken Sie ein zweites sauberes Polster direkt darüber.",
+      "svgFileName": "pr18-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WOUND WASH & DIRECT PRESSURE HEMOSTASIS",
+        "Schmutz mit abgekochtem Wasser & Ascheseife abspülen",
+        "8-lagiges ausgekochtes Leinenpolster 10 Min. fest aufdrücken",
+        "Wenn durchtränkt, nicht abziehen; neues Polster auflegen",
+        "[SCHRITT 1] Mit Kochwasser spülen & 10 Min. Druckverband"
+      ],
+      "deepDive": {
+        "badge": "CLEANING & DIRECT PRESSURE",
+        "title": "Warum man niemals Erde oder Asche in offene Wunden streuen oder den Oberarm abschnüren darf",
+        "text": "Trockene Erde, Holzasche oder rohes Blattpulver in einer offenen Wunde bringen Tetanussporen und Bakterien direkt in die Blutbahn. Ebenso unterbricht eine eng geschnürte dünne Schnur am Oberarm die gesamte arterielle Blutzufuhr und führt binnen Stunden zum Absterben der Gliedmaße (Nekrose). Ein ausgekochtes 8-lagiges Leinenpolster, das 10 Minuten direkt auf die Wunde gedrückt wird, verschließt nur die verletzten Gefäße und erhält die Durchblutung.",
+        "fieldSpecs": [
+          {
+            "name": "Mit Ascheseife gewaschenes und ausgekochtes 8-lagiges Sackleinen-Druckpolster",
+            "scientificName": "Boiled 8-Layer Coarse Hemp Direct-Pressure Pad",
+            "categoryTag": "Wundreinigung / 10-Minuten-Direktdruck-Blutstillung",
+            "imageFileName": "id-boiled-burlap-wound-pad.jpg",
+            "hudCode": "FIG. BIO-18A // MACRO OPTIC",
+            "hudStatus": "BOILED STERILE PAD: VERIFIED",
+            "traits": [
+              {
+                "label": "KEIMFREI",
+                "value": "Mit [Holzasche-Seife](/protocol-13.html) gewaschen und **über 10 Min. ausgekocht** gegen Wundinfektionen."
+              },
+              {
+                "label": "8 LAGEN",
+                "value": "Auf **Handtellergröße 8-fach gefaltet**, um Blut aufzunehmen und Druck gleichmäßig zu verteilen."
+              },
+              {
+                "label": "LAUWARM",
+                "value": "Vor dem Auflegen am Handrücken prüfen, dass das Tuch **lauwarm abgekühlt** ist."
+              }
+            ],
+            "fieldUse": "Primäres Druckpolster, das 10 Minuten fest auf die Wunde gepresst wird, um Blutungen zu stoppen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: 2 gerade Äste über beide Gelenke wählen und innen mit Moos & Leder polstern",
+      "description": "1. **2 gerade Äste länger als beide Gelenke schneiden**: Wählen Sie zwei daumendicke, gerade Hartholzäste, die **vom oberen Gelenk (Ellbogen/Knie) bis über das untere Gelenk (Handgelenk/Knöchel) reichen (ca. 45-50 cm)**, und glätten Sie Knoten mit einer [Scharfen Steinklinge](/protocol-04.html).\n2. **Innenseite dick mit Moos und Leder polstern**: Polstern Sie die gesamte Innenseite beider Stöcke **fingerdick (ca. 2 cm) mit sauberem Torfmoos oder weichem Laub** und wickeln Sie [Weiches Naturleder](/protocol-17.html) darum.\n3. **Eigroße Moosrolle in die Handfläche legen**: Geben Sie bei Unterarm- oder Handgelenksbrüchen eine **eigroße weiche Moosrolle in die Handfläche**, damit die Finger entspannt gekrümmt bleiben.",
+      "actionNote": "> Keine kurzen Stöcke verwenden, die nur die Bruchstelle abdecken: Werden kurze Stöcke nur um die Mitte des Bruchs gebunden, verdreht jede Bewegung von Ellbogen oder Handgelenk die gebrochenen Knochenenden. Die Schienen müssen immer beide Nachbargelenke einschließen.",
+      "svgFileName": "pr18-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWO-JOINT SPLINT SIZING & MOSS PADDING",
+        "2 lange Äste vom oberen (Ellbogen) bis unteren Gelenk (Handgelenk)",
+        "Innenseite mit 2 cm Torfmoos & weichem Lederpolster umwickeln",
+        "Eigroße Moosrolle in die Handfläche gegen Fingerversteifung",
+        "[SCHRITT 2] Beide Gelenke überbrücken & Innenseite weich polstern"
+      ],
+      "deepDive": {
+        "badge": "TWO-JOINT IMMOBILIZATION",
+        "title": "Warum eine Schiene ohne Ruhigstellung des oberen und unteren Gelenks versagt",
+        "text": "Unterarm und Unterschenkel besitzen jeweils zwei parallele Röhrenknochen, die sich bei jeder Drehung von Handgelenk oder Ellbogen umeinander drehen. Deckt eine Schiene nur die Bruchmitte ab, reiben die scharfen Bruchenden bei jeder Handgelenksdrehung wie Mühlsteine aneinander und zerreißen Blutgefäße. Erst wenn die Äste über Ellbogen und Handgelenk hinausragen, wird jede Drehbewegung blockiert.",
+        "fieldSpecs": [
+          {
+            "name": "Zwei gerade Hartholz-Schienenstöcke mit Torfmoos- und Wildleder-Innenpolsterung",
+            "scientificName": "Moss-and-Buckskin Padded Dual Hardwood Splint Sticks",
+            "categoryTag": "Zwei-Gelenk-Stütze / Druckstellen- & Nekroseschutz",
+            "imageFileName": "id-padded-hardwood-splint-sticks.jpg",
+            "hudCode": "FIG. BIO-18B // MACRO OPTIC",
+            "hudStatus": "DUAL SPLINT PADDING: VERIFIED",
+            "traits": [
+              {
+                "label": "STABIL",
+                "value": "Zwei **daumendicke (2 cm), gerade Hartholzäste** mit glatt geschabter Oberfläche."
+              },
+              {
+                "label": "POLSTER",
+                "value": "Auf der Hautseite mit **2 cm grünem Torfmoos und weichem Leder** gepolstert."
+              },
+              {
+                "label": "LÄNGE",
+                "value": "**Zweieinhalb Handspannen (45-50 cm)** lang, um oberes und unteres Gelenk zugleich zu sperren."
+              }
+            ],
+            "fieldUse": "Werden beidseitig angelegt, um Gelenkdrehungen zu blockieren und Knochenvorsprünge zu schützen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Schienen beidseitig anlegen und unter Aussparung der Wunde an 4 Punkten binden",
+      "description": "1. **Gepolsterte Schienen beidseitig anlegen**: Während ein Helfer das obere und untere Gelenk vorsichtig stützt, legen Sie die beiden moosgepolsterten Äste **parallel an die Innen- und Außenseite der Gliedmaße**.\n2. **Bruchstelle aussparen & an 4 Punkten (2 oben, 2 unten) binden**: Binden Sie niemals direkt über dem Bruch. Wickeln Sie zwei Finger breite Stoffstreifen an **zwei Stellen oberhalb und zwei Stellen unterhalb des Bruchs (insgesamt 4 Punkte)** herum und sichern Sie diese mit [Wilder Lianenschnur](/protocol-05.html).\n3. **1 Fingerbreit Platz unter jedem Band lassen**: Prüfen Sie, dass **ein kleiner Finger knapp unter jedes Band passt**, damit die Blutzirkulation erhalten bleibt, und verknoten Sie außen auf dem Holz.",
+      "actionNote": "> Niemals direkt auf dem Bruch oder nur mit dünner Schnur binden: Ein Knoten über der Bruchstelle drückt Knochensplitter tief ins Gewebe. Zudem schneidet dünne Schnur in die Haut ein – legen Sie immer zuerst breite Stoffbänder unter.",
+      "svgFileName": "pr18-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 4-POINT SPLIT LASHING (AVOID FRACTURE ZONE)",
+        "2 moosgepolsterte Astschienen beidseitig parallel anlegen",
+        "Bruchmitte freilassen; 2 Punkte oben & 2 unten binden (4 gesamt)",
+        "1 Fingerbreit Platz unter dem Band lassen & am Holz knoten",
+        "[SCHRITT 3] Bruchzone freilassen & Druck auf 4 Bänder verteilen"
+      ],
+      "deepDive": {
+        "badge": "4-POINT SPLIT LASHING",
+        "title": "Warum 4 breite Bänder ober- und unterhalb des Bruchs Wippen und Blutstau verhindern",
+        "text": "Schnürt man nur ein oder zwei dünne Seile fest zu, entsteht ein gefährlicher Abbindeeffekt, während die Schienenstöcke wie eine Wippe kippen können. Vier breite Stoffbänder – zwei oberhalb und zwei unterhalb der Bruchzone – verteilen den Halt gleichmäßig auf eine große Fläche, fixieren die beiden Äste verwindungssteif und halten die Blutgefäße offen.",
+        "fieldSpecs": [
+          {
+            "name": "An 4 Punkten mit breiten Stoffbändern und Lianen gebundene Schiene (Bruchzone frei)",
+            "scientificName": "Four-Point Broad-Cloth & Vine Lashing Splint Assembly",
+            "categoryTag": "Bruchzonen-Freihaltung / 4-Punkt-Lastverteilung",
+            "imageFileName": "id-four-point-splint-lashing.jpg",
+            "hudCode": "FIG. BIO-18C // MACRO OPTIC",
+            "hudStatus": "4-POINT LASHING: VERIFIED",
+            "traits": [
+              {
+                "label": "4 ZONEN",
+                "value": "Lässt das Wundpolster in der Mitte frei und **bindet 2 Punkte oben sowie 2 Punkte unten**."
+              },
+              {
+                "label": "STOFFBAND",
+                "value": "Nutzt **zwei Finger breite Stoffstreifen** unter der Liane, damit nichts ins Fleisch schneidet."
+              },
+              {
+                "label": "1 FINGER",
+                "value": "Bewahrt **einen Fingerbreit Spielraum unter jedem Band** zum Schutz der Durchblutung."
+              }
+            ],
+            "fieldUse": "Verbindet beide Polsteräste zu einem wackelfreien Rahmen ohne Druck auf die Bruchstelle"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: 2-Sekunden-Nageltest prüfen und Arm auf Herzhöhe in Lederschlinge lagern",
+      "description": "1. **2-Sekunden-Nagelbett-Durchblutungstest prüfen**: Direkt nach dem Binden und danach alle 30 Minuten **drücken Sie auf den Daumen- oder Zehennagel der verletzten Seite, bis er weiß wird, lassen los und prüfen, ob er innerhalb von 2 Sekunden wieder rosig wird**.\n2. **Bei Kälte oder Kribbeln Knoten sofort lockern**: Fühlen sich die Fingerspitzen eiskalt an, verfärben sich blass oder bläulich oder kribbeln, drückt die Schwellung die Gefäße ab; **lockern Sie sofort alle 4 Knoten um eine halbe Fingerbreite**.\n3. **Auf Herzhöhe in breiter Lederschlinge lagern**: Hängen Sie ein breites Dreieckstuch aus [Weichem Naturleder](/protocol-17.html) **so um den Hals, dass die Hand etwas höher als der Ellbogen (auf Herzhöhe) ruht**, um Schwellung und pochenden Schmerz zu mindern.",
+      "actionNote": "> Pflichtkontrolle alle 30 Minuten: Selbst wenn anfangs ein Finger unter das Band passte, schwillt das Gewebe nach einem Bruch weiter an und kann die Blutzufuhr abschnüren. Prüfen Sie alle 30 Minuten den 2-Sekunden-Nageltest gegen Nekrose.",
+      "svgFileName": "pr18-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 2-SECOND NAIL CIRCULATION CHECK & ELEVATED SLING",
+        "Nagel drücken & loslassen: rosige Farbe muss in 2 Sek. kehren",
+        "Breite Lederschlinge umhängen und Hand auf Herzhöhe lagern",
+        "Bei kalten oder bläulichen Fingern sofort alle 4 Knoten lockern",
+        "[SCHRITT 4] Alle 30 Min. 2-Sek.-Nageltest & Lagerung auf Herzhöhe"
+      ],
+      "deepDive": {
+        "badge": "CIRCULATION CHECK & ELEVATION",
+        "title": "Warum der 2-Sekunden-Drucktest am Fingernagel über den Erhalt der Gliedmaße entscheidet",
+        "text": "Unter den Finger- und Zehennägeln liegt ein feines Kapillarnetz, das sofort anzeigt, ob noch sauerstoffreiches Blut bis in die äußersten Spitzen gelangt. Durch kurzes Drücken wird das Blut verdrängt und das Nagelbett wird weiß; kehrt nach dem Loslassen binnen 2 Sekunden die rosige Farbe zurück, ist die Durchblutung intakt. Dauert es länger als 2 Sekunden oder werden die Finger kalt, schnürt die Schiene ab und muss sofort gelockert werden.",
+        "fieldSpecs": [
+          {
+            "name": "Herzhohle Wildleder-Armschlinge & 2-Sekunden-Daumennagel-Durchblutungstest",
+            "scientificName": "Heart-Level Buckskin Arm Sling & 2-Second Nail-Bed Blanch Check",
+            "categoryTag": "Schwellungsmindernde Hochlagerung / Durchblutungskontrolle",
+            "imageFileName": "id-capillary-nail-blanch-sling.jpg",
+            "hudCode": "FIG. BIO-18D // MACRO OPTIC",
+            "hudStatus": "2-SEC PINK REFILL: VERIFIED",
+            "traits": [
+              {
+                "label": "2-SEK ROSA",
+                "value": "Das weiß gedrückte Nagelbett **färbt sich nach dem Loslassen in unter 2 Sekunden wieder rosig**."
+              },
+              {
+                "label": "HERZHÖHE",
+                "value": "Die breite Lederschlinge hält **die Hand leicht über Ellbogenhöhe (Herzniveau)**."
+              },
+              {
+                "label": "WÄRME",
+                "value": "Die Fingerspitzen bleiben **vorn sichtbar**, um alle 30 Minuten Wärme und Gefühl zu prüfen."
+              }
+            ],
+            "fieldUse": "Stützt den geschienten Arm ruhig am Oberkörper und erlaubt die 30-minütige Kreislaufkontrolle"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Abstehende Knochen gewaltsam hineindrücken oder Bänder bis zum Blutstau zuschnüren",
+    "description": "Wer im Gelände versucht, einen verschobenen oder offenen Knochenbruch gewaltsam geradezuziehen oder hineinzudrücken, riskiert, dass messerscharfe Knochenkanten Hauptarterien und Nervenstränge durchtrennen – mit lebensgefährlichen Blutungen oder dauerhafter Lähmung als Folge. Zudem führt das Hineindrücken verschmutzter Knochenenden zu schweren Knocheninfektionen und Tetanus. Umgekehrt führt ein zu enges Zuschnüren ohne 30-minütigen Nageltest bei zunehmender Schwellung innerhalb weniger Stunden zum Absterben der Gliedmaße (Nekrose). Diese Anleitung dient der Notfall-Ruhigstellung vor dem Transport in ärztliche Behandlung.",
+    "consequence": "Folge: Arterien-/Nervendurchtrennung, Blutungsschock, schwere Tetanusinfektion oder Gliedmaßennekrose"
+  },
+  "shortsScript": {
+    "hook": "Bei einem Knochenbruch in der Wildnis kann gewaltsames Einrenken oder falsches Abbinden Arterien durchtrennen! So schienst du sicher mit 2 Ästen!",
+    "body": "Erstens: Spüle die Wundumgebung mit abgekühltem Kochwasser und drücke ein 8-lagiges ausgekochtes Leinenpolster 10 Minuten fest auf die Blutung. Zweitens: Kurze Stöcke verhindern kein Verdrehen – wähle 2 gerade Äste, die vom Ellbogen bis zum Handgelenk reichen, und polstere sie innen 2 cm dick mit Moos und Leder. Drittens: Lege die Schienen beidseitig an, spare den Bruch aus und binde 4 breite Stoffbänder – 2 oben, 2 unten – mit 1 Fingerbreit Spielraum. Viertens: Prüfe alle 30 Minuten, ob der Daumennagel nach Druck in 2 Sekunden wieder rosig wird!",
+    "outro": "Das komplette Offline-Überlebenshandbuch ohne Internet findest du über den Link im Profil."
+  },
+  "outcome": {
+    "svgFileName": "pr18-outcome.svg",
+    "title": "Komplettes Zwei-Gelenk-Astschienen- & 2-Sekunden-Nageltest-System",
+    "description": "4-stufiges Feld-Traumasystem aus 10-minütigem Direktdruck mit ausgekochtem Leinenpolster, beidseitiger Zwei-Gelenk-Astschiene mit Moos-Leder-Polsterung, 4-Punkt-Bindung außerhalb der Bruchzone und 30-minütigem 2-Sekunden-Nageltest.",
+    "svgLabels": [
+      "FIG. OUTCOME // FIELD FRACTURE SPLINT & HEMOSTASIS SYSTEM",
+      "STAGE 1: 8-Lagen-Leinenpolster 10 Min. Direktdruck",
+      "STAGE 2: Zwei-Gelenk-Äste + Moos- & Lederpolster",
+      "STAGE 3: Bruch frei; 2 Punkte oben & 2 unten binden",
+      "STAGE 4: Lederschlinge auf Herzhöhe & 2-Sek.-Nageltest",
+      "SAFETY RULE: 1 Finger Spielraum & kein Einrenken",
+      "[ENDERGEBNIS] Druckpolster + Zwei-Gelenk-Schiene + 2-Sek.-Nageltest = 0% Folgeschäden"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Eine Stunde nach dem Anlegen der Schiene werden meine Fingerspitzen kalt und kribbeln. Was tun?",
+      "causeDiagnostic": "Durch die natürliche innere Schwellung an der Bruchstelle spannen sich die Bänder nachträglich an und drücken die Blutgefäße ab.",
+      "resolution": "Bleibt der Verband zu eng, droht Gewebenekrose. Während ein Helfer beide Schienenäste festhält, damit sich der Knochen nicht bewegt, lösen Sie nacheinander die 4 Knoten der [Wilden Lianenschnur](/protocol-05.html), lockern die Bänder so weit, dass wieder ein kleiner Finger darunterpasst, und prüfen sofort den 2-Sekunden-Nageltest."
+    },
+    {
+      "question": "Der gebrochene Arm oder das Bein steht in einem schiefen Winkel. Wie lege ich gerade Äste an?",
+      "causeDiagnostic": "Brüche nahe einem Gelenk verkeilen sich oft in einem Winkel; gewaltsames Geradebiegen zerreißt Arterien und Nerven.",
+      "resolution": "Biegen Sie den Bruch niemals mit Gewalt gerade. Füllen Sie die Hohlräume der Biegung dick mit sauberem Torfmoos, trockenem Laub und [Weichem Naturleder](/protocol-17.html) aus, legen Sie die Äste außen an und binden Sie das Glied exakt in der vorgefundenen Winkelstellung fest."
+    }
+  ],
+  "createdAt": "2026-10-28T09:00:00+09:00",
+  "updatedAt": "2026-10-28T00:18:06.707Z",
+  "contentHash": "c4a0b16244afc3ec"
+}

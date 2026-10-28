@@ -1,233 +1,193 @@
-<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
   <defs>
-    <!-- Background & Frame Gradients -->
-    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d0d0d"/>
-      <stop offset="100%" stop-color="#141414"/>
+    <linearGradient id="bgOut01" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a0f"/>
+      <stop offset="50%" stop-color="#0c121b"/>
+      <stop offset="100%" stop-color="#080b11"/>
     </linearGradient>
-    <linearGradient id="woodTripod" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4a3728"/>
-      <stop offset="50%" stop-color="#73543d"/>
-      <stop offset="100%" stop-color="#3b2b1f"/>
+    <linearGradient id="woodOut01" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="45%" stop-color="#78350f"/>
+      <stop offset="75%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#2e1305"/>
     </linearGradient>
-    <linearGradient id="cylinderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2a2a2a" stop-opacity="0.8"/>
-      <stop offset="30%" stop-color="#404040" stop-opacity="0.2"/>
-      <stop offset="70%" stop-color="#404040" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#222222" stop-opacity="0.8"/>
+    <linearGradient id="barkConeOut01" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#574c41"/>
+      <stop offset="35%" stop-color="#8c7b6b"/>
+      <stop offset="65%" stop-color="#b5a392"/>
+      <stop offset="100%" stop-color="#453b32"/>
     </linearGradient>
-
-    <!-- Filter Layers Gradients -->
-    <linearGradient id="muddyWater" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#5c4028"/>
-      <stop offset="100%" stop-color="#422e1c"/>
+    <linearGradient id="pureWaterOut01" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
     </linearGradient>
-    <linearGradient id="pebbleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#6e6e6e"/>
-      <stop offset="50%" stop-color="#4f4f4f"/>
-      <stop offset="100%" stop-color="#383838"/>
+    <linearGradient id="flameOut01" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="55%" stop-color="#f97316"/>
+      <stop offset="90%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#fef08a"/>
     </linearGradient>
-    <linearGradient id="coarseSand" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#998059"/>
-      <stop offset="100%" stop-color="#7a6341"/>
-    </linearGradient>
-    <linearGradient id="fineSand" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#c9ad7d"/>
-      <stop offset="100%" stop-color="#ad9162"/>
-    </linearGradient>
-    <linearGradient id="charcoalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#222222"/>
-      <stop offset="50%" stop-color="#141414"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="fiberGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8a7e6b"/>
-      <stop offset="100%" stop-color="#635847"/>
-    </linearGradient>
-
-    <!-- Purified Water Gradient & Glow -->
-    <linearGradient id="pureWater" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#0284c7"/>
-      <stop offset="100%" stop-color="#0369a1"/>
-    </linearGradient>
-    <radialGradient id="dropletGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.9"/>
-      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="waterSurface" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.9"/>
-    </radialGradient>
-
-    <!-- Technical Drop Shadow -->
-    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.7"/>
+    <filter id="shadowOut01" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.85"/>
     </filter>
+    <pattern id="gridOut01" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#152230" stroke-width="0.6"/>
+    </pattern>
   </defs>
 
-  <!-- Technical Canvas Backdrop -->
-  <rect x="0" y="0" width="800" height="450" fill="url(#bgGrad1)"/>
-  <rect x="15" y="15" width="770" height="420" fill="none" stroke="#222222" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgOut01)"/>
+  <rect width="800" height="450" fill="url(#gridOut01)"/>
+  <rect x="12" y="12" width="776" height="426" fill="none" stroke="#253548" stroke-width="1.2"/>
 
-  <!-- Crosshair Registration Markers -->
-  <path d="M 25 35 L 45 35 M 35 25 L 35 45" stroke="#444" stroke-width="1"/>
-  <path d="M 775 35 L 755 35 M 765 25 L 765 45" stroke="#444" stroke-width="1"/>
-  <path d="M 25 415 L 45 415 M 35 405 L 35 425" stroke="#444" stroke-width="1"/>
-  <path d="M 775 415 L 755 415 M 765 405 L 765 425" stroke="#444" stroke-width="1"/>
+  <!-- Top Tactical Header Banner (Label 1, y=42) -->
+  <rect x="24" y="20" width="752" height="34" rx="2" fill="#0d141f" stroke="#0284c7" stroke-width="1.2"/>
+  <text x="38" y="42" fill="#fde68a" font-family="monospace" font-size="11.5" font-weight="bold">PR-01 OUTCOME // 3-STAGE CHARCOAL &amp; SAND WATER PURIFIER</text>
 
-  <!-- Technical Watermark / Metadata -->
-  <text x="35" y="60" fill="#555" font-family="monospace" font-size="10" letter-spacing="1">ARCHIVE // OUTCOME SPECIFICATION</text>
-  <text x="35" y="74" fill="#E02424" font-family="monospace" font-size="11" font-weight="bold">TARGET: 5-TIER STRATIFIED PURIFIER [100% SPEC]</text>
-  <text x="765" y="60" fill="#555" font-family="monospace" font-size="10" text-anchor="end">FLOW RATE: 1.5L / HR</text>
+  <!-- SECTION 1 (LEFT): Tripod Frame, Triangular Cradle Collar & Moss Plug (x: 28 ~ 258) -->
+  <g filter="url(#shadowOut01)">
+    <rect x="28" y="64" width="230" height="310" rx="3" fill="#0b111a" stroke="#2a3f55" stroke-width="1"/>
+    <rect x="28" y="64" width="230" height="24" fill="#131e2b"/>
 
-  <!-- Tripod Legs (Behind Cylinder) -->
-  <g id="tripod">
-    <!-- Back Leg -->
-    <polygon points="398,50 402,50 435,390 425,390" fill="#3b2b1f" stroke="#261b13" stroke-width="1"/>
-    <!-- Left Leg -->
-    <polygon points="396,50 400,50 280,395 270,395" fill="url(#woodTripod)" stroke="#261b13" stroke-width="1"/>
-    <!-- Right Leg -->
-    <polygon points="400,50 404,50 530,395 520,395" fill="url(#woodTripod)" stroke="#261b13" stroke-width="1"/>
-    <!-- Lashing at Apex -->
-    <ellipse cx="400" cy="56" rx="14" ry="7" fill="#695138" stroke="#3b2b1f" stroke-width="1.5"/>
-    <ellipse cx="400" cy="62" rx="13" ry="6" fill="#54402c" stroke="#3b2b1f" stroke-width="1.5"/>
+    <!-- Back Tripod Leg -->
+    <path d="M 139 98 L 147 98 L 149 298 L 139 298 Z" fill="#3b1d0a" stroke="#261105" stroke-width="1"/>
+    <!-- Rolled Birch-Bark Cone Mounted Inside Tripod -->
+    <path d="M 106 140 L 180 140 L 155 256 L 131 256 Z" fill="url(#barkConeOut01)" stroke="#2b231d" stroke-width="1.4"/>
+    <ellipse cx="143" cy="140" rx="37" ry="8" fill="#1f1a16" stroke="#d6c5b3" stroke-width="1.4"/>
+    <!-- Bottom Green Sphagnum Moss Plug -->
+    <path d="M 131 242 L 155 242 L 152 264 L 134 264 Z" fill="#16a34a" stroke="#86efac" stroke-width="1.2"/>
+
+    <!-- Front Left & Right Tripod Legs (Outside Cone) -->
+    <path d="M 130 98 L 140 100 L 58 302 L 46 302 Z" fill="url(#woodOut01)" stroke="#261105" stroke-width="1.2"/>
+    <path d="M 146 100 L 156 98 L 240 302 L 228 302 Z" fill="url(#woodOut01)" stroke="#261105" stroke-width="1.2"/>
+    <!-- Top Tripod Apex Vine Lashing -->
+    <path d="M 126 104 L 160 104 L 158 115 L 128 115 Z" fill="#b45309" stroke="#fde68a" stroke-width="1.2"/>
+    <!-- Upper Rim Vine Ties to Tripod Legs -->
+    <path d="M 106 140 L 116 135 M 180 140 L 170 135" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Mid-Height Horizontal Cradle Frame & X-Lashing Knots -->
+    <path d="M 66 194 L 220 194 L 220 206 L 66 206 Z" fill="url(#woodOut01)" stroke="#d97706" stroke-width="1.1"/>
+    <path d="M 84 191 L 98 209 M 98 191 L 84 209" stroke="#fde68a" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 188 191 L 202 209 M 202 191 L 188 209" stroke="#fde68a" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 118 192 L 168 192 L 166 208 L 120 208 Z" fill="#92400e" stroke="#fde68a" stroke-width="1.3"/>
+    <path d="M 124 194 L 162 206 M 162 194 L 124 206" stroke="#fef08a" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Top-Down Mini Diagram of Triangular Cradle Collar -->
+    <path d="M 118 308 L 143 274 L 168 308 Z" fill="none" stroke="#d97706" stroke-width="3.5" stroke-linejoin="round"/>
+    <circle cx="143" cy="296" r="10" fill="#8c7b6b" stroke="#fde68a" stroke-width="1.2"/>
   </g>
 
-  <!-- Filter Funnel Housing (Glass/PET/Clay Cutaway) -->
-  <g id="filterHousing" filter="url(#subtleShadow)">
-    <!-- Outer Cylinder Wall -->
-    <path d="M 340 90 L 460 90 L 440 270 L 415 310 L 415 330 L 385 330 L 385 310 L 360 270 Z" fill="url(#cylinderGrad)" stroke="#4a4a4a" stroke-width="2"/>
+  <!-- Label 2 (y=80) -->
+  <rect x="32" y="66" width="222" height="18" fill="none"/>
+  <text x="36" y="80" fill="#fde68a" font-family="monospace" font-size="7.5" font-weight="bold">1단계: 삼발이 중간에 가로 받침틀을 묶고 고깔과 물이끼 마개 고정</text>
 
-    <!-- Layer 0: Raw Muddy Water (Top Level) -->
-    <polygon points="342,92 458,92 454,120 346,120" fill="url(#muddyWater)"/>
-    <ellipse cx="400" cy="92" rx="58" ry="6" fill="#6e4f33" stroke="#8c6643" stroke-width="1"/>
-    <!-- Floating particulates in muddy water -->
-    <circle cx="370" cy="105" r="1.5" fill="#382617"/>
-    <circle cx="420" cy="102" r="2" fill="#2b1d11"/>
-    <circle cx="395" cy="112" r="1.8" fill="#3d2817"/>
+  <!-- Label 3 (y=338) -->
+  <rect x="34" y="323" width="218" height="22" rx="2" fill="#141a23" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="38" y="338" fill="#f59e0b" font-family="monospace" font-size="7.4" font-weight="bold">2~3단계: 물이끼 위로 콩알 숯(8cm)과 씻은 고운 강모래(6cm) 적층</text>
 
-    <!-- Layer 1: Pebbles & Coarse Gravel -->
-    <polygon points="346,120 454,120 450,155 350,155" fill="url(#pebbleGrad)"/>
-    <!-- Illustrated round pebbles -->
-    <ellipse cx="365" cy="130" rx="9" ry="6" fill="#888" stroke="#444"/>
-    <ellipse cx="385" cy="128" rx="8" ry="5" fill="#666" stroke="#333"/>
-    <ellipse cx="405" cy="132" rx="10" ry="7" fill="#777" stroke="#444"/>
-    <ellipse cx="428" cy="129" rx="9" ry="6" fill="#555" stroke="#333"/>
-    <ellipse cx="442" cy="133" rx="7" ry="5" fill="#777" stroke="#444"/>
-    <ellipse cx="355" cy="144" rx="8" ry="6" fill="#666" stroke="#333"/>
-    <ellipse cx="378" cy="145" rx="10" ry="7" fill="#777" stroke="#444"/>
-    <ellipse cx="400" cy="144" rx="9" ry="6" fill="#555" stroke="#333"/>
-    <ellipse cx="422" cy="146" rx="8" ry="5" fill="#888" stroke="#444"/>
-    <ellipse cx="440" cy="145" rx="7" ry="5" fill="#666" stroke="#333"/>
+  <!-- SECTION 2 (CENTER): Stratified 4-Layer Cutaway Cone in Tripod Frame (x: 268 ~ 508) -->
+  <g filter="url(#shadowOut01)">
+    <rect x="268" y="64" width="240" height="310" rx="3" fill="#0b111a" stroke="#2a3f55" stroke-width="1"/>
+    <rect x="268" y="64" width="240" height="38" fill="#131e2b"/>
 
-    <!-- Layer 2: Coarse River Sand -->
-    <polygon points="350,155 450,155 446,190 354,190" fill="url(#coarseSand)"/>
-    <!-- Sand speckles -->
-    <line x1="358" y1="172" x2="442" y2="172" stroke="#665235" stroke-dasharray="2 3" stroke-width="1"/>
-    <line x1="360" y1="180" x2="440" y2="180" stroke="#665235" stroke-dasharray="3 4" stroke-width="1"/>
+    <!-- Tripod Frame & Horizontal Cradle Bar Supporting Cutaway Cone -->
+    <path d="M 384 106 L 392 106 L 394 328 L 384 328 Z" fill="#3b1d0a" stroke="#261105" stroke-width="1"/>
+    <path d="M 296 226 L 480 226 L 480 238 L 296 238 Z" fill="url(#woodOut01)" stroke="#d97706" stroke-width="1.1"/>
+    <path d="M 374 106 L 386 108 L 292 332 L 278 332 Z" fill="url(#woodOut01)" stroke="#261105" stroke-width="1.2"/>
+    <path d="M 390 108 L 402 106 L 498 332 L 484 332 Z" fill="url(#woodOut01)" stroke="#261105" stroke-width="1.2"/>
+    <path d="M 370 112 L 406 112 L 404 122 L 372 122 Z" fill="#b45309" stroke="#fde68a" stroke-width="1.2"/>
+    <!-- Cradle X-Lashings on Left & Right Tripod Legs -->
+    <path d="M 316 223 L 332 241 M 332 223 L 316 241" stroke="#fde68a" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 444 223 L 460 241 M 460 223 L 444 241" stroke="#fde68a" stroke-width="2.4" stroke-linecap="round"/>
 
-    <!-- Layer 3: Fine Silica Sand -->
-    <polygon points="354,190 446,190 442,225 358,225" fill="url(#fineSand)"/>
-    <line x1="362" y1="205" x2="438" y2="205" stroke="#8f764d" stroke-dasharray="1 2" stroke-width="0.8"/>
-    <line x1="364" y1="215" x2="436" y2="215" stroke="#8f764d" stroke-dasharray="2 2" stroke-width="0.8"/>
+    <!-- Cutaway Birch-Bark Cone Housing -->
+    <path d="M 336 136 L 440 136 L 406 292 L 370 292 Z" fill="#101620" stroke="url(#barkConeOut01)" stroke-width="4"/>
+    <!-- Upper Rim Vine Ties to Tripod Legs -->
+    <path d="M 336 136 L 352 132 M 440 136 L 424 132" stroke="#fde68a" stroke-width="2.6" stroke-linecap="round"/>
 
-    <!-- Layer 4: Activated Crushed Charcoal -->
-    <polygon points="358,225 442,225 438,265 362,265" fill="url(#charcoalGrad)"/>
-    <!-- Charcoal granular facets -->
-    <polygon points="370,235 382,232 380,245 368,242" fill="#333" stroke="#111" stroke-width="0.8"/>
-    <polygon points="392,238 406,234 404,248 390,246" fill="#2a2a2a" stroke="#111" stroke-width="0.8"/>
-    <polygon points="418,235 430,233 428,245 415,244" fill="#333" stroke="#111" stroke-width="0.8"/>
-    <polygon points="375,250 388,248 386,260 373,258" fill="#2a2a2a" stroke="#111" stroke-width="0.8"/>
-    <polygon points="398,252 412,249 410,262 396,260" fill="#383838" stroke="#111" stroke-width="0.8"/>
-    <polygon points="420,250 432,248 430,260 418,258" fill="#222" stroke="#111" stroke-width="0.8"/>
+    <!-- Layer 0 (Bottom): Green Sphagnum Moss Plug (y: 270 ~ 292) -->
+    <path d="M 366 270 L 410 270 L 406 292 L 370 292 Z" fill="#15803d" stroke="#4ade80" stroke-width="1.3"/>
+    <!-- Layer 1 (Lower 8cm): Pea-Sized Crushed Hardwood Charcoal (y: 216 ~ 270) -->
+    <path d="M 354 216 L 422 216 L 410 270 L 366 270 Z" fill="#18202c" stroke="#64748b" stroke-width="1.3"/>
+    <polygon points="366,226 378,224 380,234 368,236" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="386,228 400,225 401,236 387,237" fill="#1e293b" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="404,226 414,228 412,238 402,237" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="372,246 385,244 386,255 373,256" fill="#1e293b" stroke="#94a3b8" stroke-width="0.8"/>
+    <polygon points="392,248 405,245 404,256 391,257" fill="#334155" stroke="#94a3b8" stroke-width="0.8"/>
 
-    <!-- Layer 5: Cloth / Fiber Filter Plug -->
-    <polygon points="362,265 438,265 415,310 385,310" fill="url(#fiberGrad)"/>
-    <path d="M 370 275 Q 400 285 430 275 M 378 290 Q 400 300 422 290" stroke="#473f32" stroke-width="1.2" fill="none"/>
+    <!-- Layer 2 (Middle 6cm): Washed Fine River Sand (y: 174 ~ 216) -->
+    <path d="M 345 174 L 431 174 L 422 216 L 354 216 Z" fill="#b45309" stroke="#fbbf24" stroke-width="1.3"/>
+    <line x1="354" y1="188" x2="422" y2="188" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="358" y1="202" x2="418" y2="202" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="3 3"/>
 
-    <!-- Spout Opening & Perforations -->
-    <rect x="385" y="310" width="30" height="20" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+    <!-- Layer 3 (Top 4cm): Rounded River Pebbles & Leaf Diffuser (y: 144 ~ 174) -->
+    <path d="M 338 144 L 438 144 L 431 174 L 345 174 Z" fill="#334155" stroke="#94a3b8" stroke-width="1.3"/>
+    <ellipse cx="356" cy="154" rx="9" ry="5.5" fill="#94a3b8" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="378" cy="153" rx="10" ry="6" fill="#cbd5e1" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="400" cy="154" rx="9.5" ry="5.5" fill="#94a3b8" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="420" cy="155" rx="9" ry="5.5" fill="#cbd5e1" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="366" cy="165" rx="9" ry="5" fill="#cbd5e1" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="390" cy="166" rx="10" ry="5.5" fill="#94a3b8" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="412" cy="165" rx="9" ry="5" fill="#cbd5e1" stroke="#1e293b" stroke-width="0.8"/>
+    <ellipse cx="388" cy="142" rx="28" ry="4.5" fill="#22c55e" stroke="#86efac" stroke-width="1"/>
+
+    <!-- Clear Water Droplets & Receiving Bowl Below Spout -->
+    <circle cx="388" cy="300" r="3.5" fill="url(#pureWaterOut01)"/>
+    <circle cx="388" cy="310" r="4" fill="url(#pureWaterOut01)"/>
+    <path d="M 352 316 L 424 316 L 414 336 L 362 336 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="1.3"/>
+    <ellipse cx="388" cy="318" rx="34" ry="4.5" fill="#0284c7" stroke="#bae6fd" stroke-width="1"/>
   </g>
 
-  <!-- Flowing Purified Water & Droplet Dynamics -->
-  <g id="purifiedDrop">
-    <!-- Stream Line -->
-    <line x1="400" y1="330" x2="400" y2="348" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-    <!-- Clear Droplet with Radial Glow -->
-    <ellipse cx="400" cy="358" rx="6" ry="10" fill="url(#dropletGlow)"/>
-    <path d="M 400 350 C 397 355 395 358 395 362 C 395 365 397 367 400 367 C 403 367 405 365 405 362 C 405 358 403 355 400 350 Z" fill="url(#pureWater)"/>
-    <circle cx="398" cy="360" r="1.5" fill="#ffffff" opacity="0.9"/>
+  <!-- Label 4 (y=95) -->
+  <rect x="272" y="78" width="232" height="22" fill="none"/>
+  <text x="276" y="95" fill="#38bdf8" font-family="monospace" font-size="7.4" font-weight="bold">4단계: 손톱 크기 자갈(4cm)을 얹고 흙탕물 부어 첫 1~2컵은 버리기</text>
+
+  <!-- Label 5 (y=360) -->
+  <rect x="274" y="345" width="228" height="22" rx="2" fill="#141a23" stroke="#22c55e" stroke-width="0.9"/>
+  <text x="278" y="360" fill="#4ade80" font-family="monospace" font-size="7.4" font-weight="bold">5단계: 투명하게 걸러진 물을 화덕에 올려 큰 거품이 일도록 3분 끓이기</text>
+
+  <!-- SECTION 3 (RIGHT): Initial Flush Discard & 100°C Rolling Boil Sterilization (x: 518 ~ 772) -->
+  <g filter="url(#shadowOut01)">
+    <rect x="518" y="64" width="254" height="310" rx="3" fill="#0b111a" stroke="#2a3f55" stroke-width="1"/>
+    <rect x="518" y="64" width="254" height="60" fill="#131e2b"/>
+
+    <!-- Top Mini Comparison: Cup 1 (Black Flush Discard X) -> Cup 2 (Clear Water Check) -->
+    <rect x="546" y="136" width="44" height="46" rx="3" fill="#1f2937" stroke="#ef4444" stroke-width="1.4"/>
+    <path d="M 560 151 L 576 167 M 576 151 L 560 167" stroke="#ef4444" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 600 159 L 618 159" stroke="#fde68a" stroke-width="2"/>
+    <polygon points="622,159 615,155 615,163" fill="#fde68a"/>
+    <rect x="630" y="136" width="44" height="46" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4"/>
+    <rect x="635" y="148" width="34" height="29" fill="url(#pureWaterOut01)" opacity="0.85"/>
+    <path d="M 643 163 L 650 170 L 662 155" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Bottom Main Element: Clay Pot on 3 Hearth Stones Over Campfire at 100°C Rolling Boil -->
+    <path d="M 568 344 L 722 330 L 726 342 L 572 356 Z" fill="#451a03" stroke="#261105" stroke-width="1.2"/>
+    <path d="M 572 330 L 726 344 L 722 356 L 568 342 Z" fill="#3b1502" stroke="#1c0a00" stroke-width="1.2"/>
+    <!-- Flames -->
+    <path d="M 616 344 C 608 318 626 296 634 282 C 642 298 638 322 630 344 Z" fill="url(#flameOut01)"/>
+    <path d="M 640 344 C 634 312 652 288 656 274 C 666 294 662 322 654 344 Z" fill="url(#flameOut01)"/>
+    <path d="M 664 344 C 668 318 684 300 678 286 C 674 304 670 326 676 344 Z" fill="url(#flameOut01)"/>
+    <!-- Left & Right Hearth Stones Supporting Clay Vessel -->
+    <path d="M 552 354 C 550 314 564 292 584 292 C 596 292 600 320 596 354 Z" fill="#475569" stroke="#94a3b8" stroke-width="1.3"/>
+    <path d="M 694 354 C 690 320 694 292 706 292 C 726 292 740 314 738 354 Z" fill="#475569" stroke="#94a3b8" stroke-width="1.3"/>
+    <!-- Clay Boiling Vessel -->
+    <path d="M 578 226 L 712 226 L 696 298 C 692 310 672 316 645 316 C 618 316 598 310 594 298 Z" fill="#7c2d12" stroke="#fdba74" stroke-width="1.6"/>
+    <path d="M 586 236 L 704 236 L 691 294 C 688 304 668 309 645 309 C 622 309 602 304 599 294 Z" fill="url(#pureWaterOut01)"/>
+    <!-- Vigorous Rolling Boil Bubbles & Steam -->
+    <circle cx="616" cy="236" r="6.5" fill="#ffffff" stroke="#0284c7" stroke-width="1.1"/>
+    <circle cx="645" cy="234" r="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.1"/>
+    <circle cx="674" cy="236" r="7" fill="#ffffff" stroke="#0284c7" stroke-width="1.1"/>
+    <path d="M 622 218 C 616 204 628 194 622 182" fill="none" stroke="#bae6fd" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 645 216 C 651 202 639 192 645 180" fill="none" stroke="#e0f2fe" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 668 218 C 674 204 662 194 668 182" fill="none" stroke="#bae6fd" stroke-width="2.2" stroke-linecap="round"/>
   </g>
 
-  <!-- Collection Pot / Water Receptacle -->
-  <g id="collectionPot" filter="url(#subtleShadow)">
-    <!-- Pot Body -->
-    <path d="M 330 375 C 330 370 345 365 400 365 C 455 365 470 370 470 375 L 458 420 C 458 428 435 432 400 432 C 365 432 342 428 342 420 Z" fill="#24211d" stroke="#3d3730" stroke-width="2"/>
-    <!-- Water Level Inside Pot -->
-    <ellipse cx="400" cy="385" rx="60" ry="10" fill="url(#waterSurface)"/>
-    <!-- Water Ripple Circles from Droplet Impact -->
-    <ellipse cx="400" cy="385" rx="14" ry="3.5" fill="none" stroke="#bae6fd" stroke-width="1.2" opacity="0.8"/>
-    <ellipse cx="400" cy="385" rx="28" ry="6" fill="none" stroke="#7dd3fc" stroke-width="1" opacity="0.6"/>
-    <ellipse cx="400" cy="385" rx="42" ry="8" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.4"/>
-  </g>
+  <!-- Label 6 (y=115) -->
+  <rect x="522" y="98" width="246" height="22" fill="none"/>
+  <text x="526" y="115" fill="#fde68a" font-family="monospace" font-size="7.5" font-weight="bold">완성 식수: 흙먼지·악취 제거 및 미세 세균 99.9% 멸균된 안전한 식수</text>
 
-  <!-- Technical Callout Leader Lines & Labels (Right Side) -->
-  <g id="calloutsRight" font-family="monospace" font-size="10" fill="#cccccc">
-    <!-- Callout 1: Pebbles -->
-    <line x1="435" y1="135" x2="550" y2="135" stroke="#E02424" stroke-width="1"/>
-    <circle cx="435" cy="135" r="2" fill="#E02424"/>
-    <text x="560" y="132" fill="#ffffff" font-weight="bold">STAGE 1: RIVER PEBBLES</text>
-    <text x="560" y="145" fill="#888888">낙엽·벌레 등 대형 부유물 1차 차단</text>
-
-    <!-- Callout 2: Coarse Sand -->
-    <line x1="430" y1="172" x2="550" y2="172" stroke="#666" stroke-width="1"/>
-    <circle cx="430" cy="172" r="2" fill="#666"/>
-    <text x="560" y="169" fill="#ffffff" font-weight="bold">STAGE 2: COARSE SAND</text>
-    <text x="560" y="182" fill="#888888">굵은 흙 입자 및 모래 부유물 침전</text>
-
-    <!-- Callout 3: Fine Silica Sand -->
-    <line x1="425" y1="208" x2="550" y2="208" stroke="#666" stroke-width="1"/>
-    <circle cx="425" cy="208" r="2" fill="#666"/>
-    <text x="560" y="205" fill="#ffffff" font-weight="bold">STAGE 3: FINE SILICA SAND</text>
-    <text x="560" y="218" fill="#888888">미세 진흙 입자 및 미세 탁도 여과</text>
-
-    <!-- Callout 4: Charcoal -->
-    <line x1="420" y1="245" x2="550" y2="245" stroke="#E02424" stroke-width="1"/>
-    <circle cx="420" cy="245" r="2" fill="#E02424"/>
-    <text x="560" y="242" fill="#E02424" font-weight="bold">STAGE 4: ACTIVATED CHARCOAL</text>
-    <text x="560" y="255" fill="#888888">미세 구멍으로 독소·냄새·유기물 흡착</text>
-
-    <!-- Callout 5: Fiber Plug -->
-    <line x1="410" y1="288" x2="550" y2="288" stroke="#666" stroke-width="1"/>
-    <circle cx="410" cy="288" r="2" fill="#666"/>
-    <text x="560" y="285" fill="#ffffff" font-weight="bold">STAGE 5: FIBER FILTER PLUG</text>
-    <text x="560" y="298" fill="#888888">숯가루 유출 방지 및 최종 유속 조절</text>
-
-    <!-- Callout 6: Potable Water -->
-    <line x1="440" y1="390" x2="550" y2="390" stroke="#38bdf8" stroke-width="1"/>
-    <circle cx="440" cy="390" r="2" fill="#38bdf8"/>
-    <text x="560" y="387" fill="#38bdf8" font-weight="bold">OUTPUT: CLEAR POTABLE WATER</text>
-    <text x="560" y="400" fill="#888888">무색투명 식수 (음용 전 3분 끓임 필수)</text>
-  </g>
-
-  <!-- Technical Callout Leader Lines & Specs (Left Side) -->
-  <g id="calloutsLeft" font-family="monospace" font-size="10" fill="#cccccc">
-    <!-- Spec Box -->
-    <rect x="45" y="110" width="180" height="150" fill="#141414" stroke="#333" stroke-width="1"/>
-    <rect x="45" y="110" width="180" height="22" fill="#1f1f1f"/>
-    <text x="55" y="125" fill="#E02424" font-weight="bold">CRITICAL METRICS</text>
-
-    <text x="55" y="150" fill="#aaa">· TOTAL HEIGHT: 60-80 CM</text>
-    <text x="55" y="170" fill="#aaa">· COMPACTION: 100% TIGHT</text>
-    <text x="55" y="190" fill="#aaa">· CHARCOAL THICKNESS: 10 CM+</text>
-    <text x="55" y="210" fill="#aaa">· INITIAL FLUSH: DISCARD 1L</text>
-    <text x="55" y="230" fill="#aaa">· WATER PURITY: 99.2% CLARITY</text>
-    <text x="55" y="250" fill="#38bdf8">· BOILING REQ: 3 MIN AT 100°C</text>
-
-    <!-- Raw Water Inflow Indicator -->
-    <path d="M 330 75 Q 360 82 375 92" stroke="#8c6643" stroke-width="2" fill="none"/>
-    <text x="320" y="65" fill="#c9ad7d" font-weight="bold">RAW MUDDY INFLOW (탁수 유입)</text>
-  </g>
+  <!-- Bottom Tactical Verification Bar (Label 7, y=414) -->
+  <rect x="24" y="390" width="752" height="36" rx="2" fill="#121c29" stroke="#e02424" stroke-width="1.2"/>
+  <text x="38" y="414" fill="#ffffff" font-family="monospace" font-size="9.5" font-weight="bold">[최종 검수] 삼발이 가로틀 단단히 고정 · 첫 1~2컵 폐기 · 3분 이상 끓이기 필수</text>
 </svg>

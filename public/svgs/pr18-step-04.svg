@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad04" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d12" />
+      <stop offset="100%" stop-color="#121720" />
+    </linearGradient>
+    <linearGradient id="slingGrad04" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d99b52" />
+      <stop offset="50%" stop-color="#b87b35" />
+      <stop offset="100%" stop-color="#7c4d19" />
+    </linearGradient>
+    <linearGradient id="pinkNail04" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <filter id="shadow04" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bgGrad04)" />
+  <g stroke="#1e2633" stroke-width="0.6" opacity="0.6">
+    <path d="M 0,80 L 400,80 M 0,160 L 400,160 M 0,240 L 400,240 M 0,320 L 400,320" />
+    <path d="M 80,0 L 80,400 M 160,0 L 160,400 M 240,0 L 240,400 M 320,0 L 320,400" />
+  </g>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1.2" />
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="26" rx="3" fill="#131b26" stroke="#3b4d66" stroke-width="1" />
+
+  <!-- LEFT PANEL: Torso Silhouette with Heart-Level Buckskin Triangular Sling -->
+  <g filter="url(#shadow04)">
+    <!-- Torso & Shoulders -->
+    <path d="M 38,108 C 58,92 142,92 162,108 L 176,274 L 24,274 Z" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+    <!-- Heart Level Indicator -->
+    <circle cx="112" cy="166" r="7" fill="#ef4444" opacity="0.85" />
+    <line x1="32" y1="166" x2="184" y2="166" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" />
+
+    <!-- Buckskin Triangular Arm Sling Hung Around Neck -->
+    <path d="M 78,94 L 126,94 L 164,198 L 48,228 Z" fill="url(#slingGrad04)" stroke="#fde68a" stroke-width="1.5" />
+    <!-- Splinted Forearm Inside Sling (Hand Slightly Elevated Above Elbow) -->
+    <g transform="translate(52, 206) rotate(-12)">
+      <rect x="0" y="-12" width="108" height="8" rx="3" fill="#8c581e" stroke="#fde68a" stroke-width="0.9" />
+      <rect x="0" y="-4" width="108" height="16" rx="4" fill="#d6a784" />
+      <rect x="0" y="12" width="108" height="8" rx="3" fill="#8c581e" stroke="#fde68a" stroke-width="0.9" />
+      <rect x="16" y="-13" width="10" height="34" rx="2" fill="#e5d3b3" />
+      <rect x="82" y="-13" width="10" height="34" rx="2" fill="#e5d3b3" />
+      <!-- Exposed Fingers at Sling Opening for Nail Check -->
+      <ellipse cx="116" cy="4" rx="12" ry="9" fill="#d6a784" stroke="#fda4af" stroke-width="1.2" />
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL: Zoom Loupe Inset of 2-Second Thumbnail Pink Refill Check -->
+  <g filter="url(#shadow04)">
+    <circle cx="292" cy="182" r="76" fill="#0f172a" stroke="#fde68a" stroke-width="2" />
+    <!-- Leader Line from Exposed Hand to Zoom Loupe -->
+    <line x1="170" y1="184" x2="216" y2="182" stroke="#fde68a" stroke-width="1.5" stroke-dasharray="4,3" />
+
+    <!-- Top Half of Loupe: Step A - Press Nail (Blanches White) -->
+    <path d="M 228,154 C 254,148 286,148 308,156 C 316,160 316,172 308,176 C 286,180 254,180 228,176 Z" fill="#c79572" stroke="#7c5330" stroke-width="1.2" />
+    <!-- White Blanched Thumbnail -->
+    <rect x="288" y="155" width="20" height="16" rx="5" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2" />
+    <!-- Pressing Finger Arrow -->
+    <path d="M 298,124 L 298,150 M 293,144 L 298,152 L 303,144" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" />
+
+    <!-- Bottom Half of Loupe: Step B - Release -> Warm Pink within 2 Seconds -->
+    <path d="M 228,200 C 254,194 286,194 308,202 C 316,206 316,218 308,222 C 286,226 254,226 228,222 Z" fill="#d6a784" stroke="#7c5330" stroke-width="1.2" />
+    <!-- Warm Pink Refilled Thumbnail (Healthy Capillary Refill) -->
+    <rect x="288" y="201" width="20" height="16" rx="5" fill="url(#pinkNail04)" stroke="#fecdd3" stroke-width="1.5" />
+    <!-- Release Arrow & Checkmark -->
+    <path d="M 334,209 L 340,215 L 352,201" fill="none" stroke="#4ade80" stroke-width="2.8" stroke-linecap="round" />
+  </g>
+
+  <!-- Callout Badges & Leader Lines -->
+  <rect x="18" y="48" width="364" height="24" rx="3" fill="#0f172a" stroke="#fda4af" stroke-width="1" />
+  <line x1="292" y1="72" x2="292" y2="106" stroke="#fda4af" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <rect x="18" y="292" width="364" height="24" rx="3" fill="#1c1917" stroke="#fde68a" stroke-width="1" />
+  <line x1="106" y1="224" x2="106" y2="292" stroke="#fde68a" stroke-width="1.2" stroke-dasharray="2,2" />
+
+  <rect x="18" y="322" width="364" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+
+  <!-- Footer Summary Bar -->
+  <rect x="14" y="356" width="372" height="30" rx="3" fill="#1e1b4b" stroke="#fde68a" stroke-width="1.2" />
+
+  <!-- 5 SVG Text Labels (1:1 Matched with steps[3].svgLabels) -->
+  <text x="200" y="31" fill="#fde68a" font-family="monospace" font-size="10.5" font-weight="bold" text-anchor="middle">FIG. 04 // 2-SECOND NAIL CIRCULATION CHECK &amp; ELEVATED SLING</text>
+  <text x="200" y="64" fill="#fda4af" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">손톱 끝을 눌렀다 뗐을 때 2초 안에 분홍빛 혈색이 돌아오는지 확인</text>
+  <text x="200" y="308" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">넓은 가죽 삼각 걸이를 목에 걸어 손을 심장 높이로 살짝 올리기</text>
+  <text x="200" y="338" fill="#7dd3fc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">손끝이 차갑거나 보라색이면 즉시 4곳 매듭을 살짝 풀어 괴사 방지</text>
+  <text x="200" y="375" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">[4단계 핵심] 30분마다 손톱 2초 혈색 확인 및 심장 높이 거치</text>
+</svg>

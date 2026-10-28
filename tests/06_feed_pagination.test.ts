@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { UI_STRINGS } from '../src/i18n/ui-strings.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -100,6 +101,20 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
           attrs.includes('data-card') ||
           attrs.includes('data-svg');
         assert.ok(isBound, `[${fileName}] 다국어 바인딩 누락 한글 발견: <${match[1]}${attrs}>${text}</${match[1]}>`);
+
+        // data-i18n 속성이 있는 경우 실제 UI_STRINGS 사전에 유효한 키로 등록되어 있는지 엄격 검증
+        const i18nMatch = attrs.match(/data-i18n="([^"]+)"/);
+        if (i18nMatch) {
+          const key = i18nMatch[1];
+          assert.ok(
+            (UI_STRINGS.ko as Record<string, string>)[key] !== undefined,
+            `[${fileName}] data-i18n="${key}" 속성이 존재하나 UI_STRINGS.ko에 키가 누락되었습니다!`
+          );
+          assert.ok(
+            (UI_STRINGS.en as Record<string, string>)[key] !== undefined,
+            `[${fileName}] data-i18n="${key}" 속성이 존재하나 UI_STRINGS.en에 키가 누락되었습니다!`
+          );
+        }
       }
     }
   });

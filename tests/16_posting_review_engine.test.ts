@@ -131,7 +131,7 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     }
   });
 
-  await t.test('16-6: 빌드된 HTML(protocol-10.html, protocol-04.html)에 인라인 하이퍼텍스트 앵커(data-proto="crosslink")가 정상 렌더링되어야 한다', () => {
+  await t.test('16-6: 빌드된 HTML(protocol-10.html, protocol-04.html, protocol-18.html FAQ)에 인라인 하이퍼텍스트 앵커(data-proto="crosslink")가 정상 렌더링되어야 한다', () => {
     const html10 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-10.html'), 'utf-8');
     assert.ok(
       html10.includes('data-proto="crosslink" href="/protocol-04.html"'),
@@ -142,6 +142,23 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     assert.ok(
       html04.includes('data-proto="crosslink" href="/protocol-05.html"'),
       'protocol-04.html 본문에 /protocol-05.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+    );
+
+    const html18 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-18.html'), 'utf-8');
+    assert.ok(
+      html18.includes('data-proto="crosslink" href="/protocol-17.html"'),
+      'protocol-18.html FAQ 영역에 /protocol-17.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+    );
+    assert.ok(
+      html18.includes('data-proto="crosslink" href="/protocol-05.html"'),
+      'protocol-18.html FAQ 영역에 /protocol-05.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+    );
+    // FAQ 섹션 내에 파싱되지 않은 원시 마크다운 링크 문법(](/)이 잔존하지 않아야 함
+    const faqSectionMatch = html18.match(/<section id="faq-section"[\s\S]*?<\/section>/);
+    assert.ok(faqSectionMatch, 'protocol-18.html에 #faq-section이 존재해야 함');
+    assert.ok(
+      !faqSectionMatch[0].includes('](/protocol-'),
+      'FAQ 섹션 내에 원시 마크다운 링크 문법(](/protocol-)이 잔존하지 않고 <a> 태그로 치환되어야 함'
     );
   });
 
@@ -234,6 +251,15 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
       swCode.includes('ALLOWED_EXTERNAL_HOSTS') && swCode.includes('if (!ALLOWED_EXTERNAL_HOSTS.includes(url.hostname)) return;'),
       'Service Worker(sw.js)가 허용된 외부 정적 자산(Tailwind/Google Fonts) 외의 외부 API/Firebase 요청을 가로채지 않아야 함'
     );
+  });
+
+  await t.test('16-10: PostingReviewService.auditSiteWideUiLocalization이 7개국어 UI_STRINGS 및 HTML 바인딩 무결성을 보증해야 한다', () => {
+    const report = PostingReviewService.auditSiteWideUiLocalization(PUBLIC_DIR);
+    assert.strictEqual(report.passed, true, `사이트 전역 UI 다국어 검수 실패: ${report.warnings.join(' / ')}`);
+    assert.strictEqual(report.score, 100, `UI 다국어 검수 만점이어야 함 (실제: ${report.score})`);
+    assert.strictEqual(report.warnings.length, 0, 'UI 다국어 경고가 0건이어야 함');
+    assert.ok(report.checks.some((c) => c.includes('UI_STRINGS 키 1:1 완전 동기화 확인')));
+    assert.ok(report.checks.some((c) => c.includes('미번역 한글 0건 확인')));
   });
 });
 

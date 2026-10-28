@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgOut18" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090c10" />
+      <stop offset="100%" stop-color="#111722" />
+    </linearGradient>
+    <linearGradient id="woodOut18" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a87950" />
+      <stop offset="50%" stop-color="#7c5330" />
+      <stop offset="100%" stop-color="#4a2e16" />
+    </linearGradient>
+    <linearGradient id="mossOut18" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="slingOut18" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d99b52" />
+      <stop offset="100%" stop-color="#8c581e" />
+    </linearGradient>
+    <filter id="shadowOut18" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Grid -->
+  <rect width="800" height="450" fill="url(#bgOut18)" />
+  <g stroke="#1e2633" stroke-width="0.6" opacity="0.55">
+    <path d="M 0,90 L 800,90 M 0,180 L 800,180 M 0,270 L 800,270 M 0,360 L 800,360" />
+    <path d="M 160,0 L 160,450 M 320,0 L 320,450 M 480,0 L 480,450 M 640,0 L 640,450" />
+  </g>
+  <rect x="8" y="8" width="784" height="434" fill="none" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Top Header Strip -->
+  <rect x="18" y="16" width="764" height="30" rx="4" fill="#131b26" stroke="#475569" stroke-width="1" />
+
+  <!-- STAGE 1 PANEL (Left): Wound Wash & Boiled 8-Layer Burlap Direct Pressure -->
+  <g filter="url(#shadowOut18)">
+    <rect x="20" y="58" width="230" height="274" rx="4" fill="#0f151f" stroke="#38bdf8" stroke-width="1.2" />
+    <!-- Boiled Water Pot & Soap -->
+    <ellipse cx="78" cy="128" rx="28" ry="18" fill="#9a5538" stroke="#d4896a" stroke-width="1.2" />
+    <rect x="128" y="114" width="38" height="22" rx="3" fill="#d6ccb8" stroke="#8c7f68" stroke-width="1" />
+    <path d="M 88,146 L 106,184" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" />
+    <!-- Forearm + 8-Layer Burlap Pad Pressed Down -->
+    <rect x="40" y="218" width="188" height="34" rx="8" fill="#c79572" stroke="#7c5330" stroke-width="1.2" />
+    <rect x="96" y="196" width="76" height="24" rx="3" fill="#d6be96" stroke="#f59e0b" stroke-width="1.5" />
+    <path d="M 118,162 L 118,192 M 113,185 L 118,193 L 123,185" fill="none" stroke="#ef4444" stroke-width="2.5" />
+    <path d="M 150,162 L 150,192 M 145,185 L 150,193 L 155,185" fill="none" stroke="#ef4444" stroke-width="2.5" />
+    <rect x="28" y="66" width="214" height="24" rx="3" fill="#172554" stroke="#38bdf8" stroke-width="1" />
+  </g>
+
+  <!-- STAGE 2 & 3 PANEL (Center): Two-Joint Padded Splints + 4-Point Split Lashing -->
+  <g filter="url(#shadowOut18)">
+    <rect x="262" y="58" width="276" height="274" rx="4" fill="#0f151f" stroke="#fde68a" stroke-width="1.2" />
+    <rect x="270" y="96" width="260" height="24" rx="3" fill="#1e293b" stroke="#fde68a" stroke-width="1" />
+
+    <!-- Forearm Spanning Elbow to Palm -->
+    <path d="M 278,184 C 330,178 440,180 498,186 C 514,184 526,190 528,204 C 526,218 514,224 498,220 C 440,224 330,226 278,220 Z" fill="#c79572" stroke="#7c5330" stroke-width="1.2" />
+    <ellipse cx="508" cy="203" rx="14" ry="10" fill="url(#mossOut18)" stroke="#bbf7d0" stroke-width="1.2" />
+
+    <!-- Center No-Tie Fracture Protection Pad -->
+    <rect x="376" y="178" width="44" height="50" rx="3" fill="#d6be96" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,2" />
+
+    <!-- Top & Bottom Moss Pads + Hardwood Splint Sticks -->
+    <rect x="284" y="166" width="232" height="12" rx="3" fill="url(#mossOut18)" />
+    <rect x="278" y="152" width="244" height="14" rx="4" fill="url(#woodOut18)" stroke="#d99b52" stroke-width="1" />
+    <rect x="284" y="226" width="232" height="12" rx="3" fill="url(#mossOut18)" />
+    <rect x="278" y="240" width="244" height="14" rx="4" fill="url(#woodOut18)" stroke="#d99b52" stroke-width="1" />
+
+    <!-- 4 Broad Cloth & Vine Lashings (2 Left, 2 Right of Fracture) -->
+    <rect x="298" y="148" width="18" height="110" rx="2" fill="#e5d3b3" stroke="#785c30" stroke-width="1.2" />
+    <rect x="338" y="148" width="18" height="110" rx="2" fill="#e5d3b3" stroke="#785c30" stroke-width="1.2" />
+    <rect x="438" y="148" width="18" height="110" rx="2" fill="#e5d3b3" stroke="#785c30" stroke-width="1.2" />
+    <rect x="478" y="148" width="18" height="110" rx="2" fill="#e5d3b3" stroke="#785c30" stroke-width="1.2" />
+    <circle cx="307" cy="152" r="4" fill="#fde68a" />
+    <circle cx="347" cy="152" r="4" fill="#fde68a" />
+    <circle cx="447" cy="152" r="4" fill="#fde68a" />
+    <circle cx="487" cy="152" r="4" fill="#fde68a" />
+
+    <rect x="270" y="274" width="260" height="24" rx="3" fill="#1c1917" stroke="#fbbf24" stroke-width="1" />
+  </g>
+
+  <!-- STAGE 4 PANEL (Right): Heart-Level Buckskin Sling & 2-Second Nail Refill Check -->
+  <g filter="url(#shadowOut18)">
+    <rect x="550" y="58" width="230" height="274" rx="4" fill="#0f151f" stroke="#4ade80" stroke-width="1.2" />
+    <rect x="558" y="302" width="214" height="24" rx="3" fill="#0f291e" stroke="#4ade80" stroke-width="1" />
+
+    <!-- Torso & Elevated Buckskin Sling -->
+    <path d="M 580,104 C 600,90 670,90 690,104 L 702,248 L 568,248 Z" fill="#1e293b" stroke="#475569" stroke-width="1.2" />
+    <path d="M 612,94 L 654,94 L 688,182 L 584,208 Z" fill="url(#slingOut18)" stroke="#fde68a" stroke-width="1.4" />
+    <!-- Zoom Circle: Pink Thumbnail 2-Sec Refill -->
+    <circle cx="724" cy="208" r="38" fill="#090d16" stroke="#fda4af" stroke-width="1.8" />
+    <rect x="702" y="198" width="36" height="20" rx="8" fill="#d6a784" />
+    <rect x="722" y="200" width="14" height="16" rx="4" fill="#f43f5e" stroke="#fecdd3" stroke-width="1.2" />
+    <path d="M 714,180 L 722,188 L 736,174" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom Safety Rule Strip & Master Outcome Bar -->
+  <rect x="20" y="344" width="760" height="28" rx="4" fill="#1c1917" stroke="#f59e0b" stroke-width="1.2" />
+  <rect x="20" y="382" width="760" height="36" rx="4" fill="#1e1b4b" stroke="#fde68a" stroke-width="1.5" />
+
+  <!-- 7 SVG Text Labels (1:1 Matched with outcome.svgLabels, Distinct Y Rows) -->
+  <text x="400" y="36" fill="#fde68a" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">FIG. OUTCOME // FIELD FRACTURE SPLINT &amp; HEMOSTASIS SYSTEM</text>
+  <text x="160" y="82" fill="#7dd3fc" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 1: 삶은 삼베 8겹 패드 10분 직접 압박 지혈</text>
+  <text x="400" y="112" fill="#fde68a" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 2: 위아래 관절 덮는 가지 + 안쪽 이끼·가죽 패드</text>
+  <text x="400" y="290" fill="#fcd34d" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 3: 상처 위 피해서 위 2곳·아래 2곳(총 4곳) 분산 결속</text>
+  <text x="610" y="318" fill="#86efac" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 4: 가죽 삼각 걸이 거치 &amp; 손톱 2초 혈색 확인</text>
+  <text x="400" y="362" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">SAFETY RULE: 끈 아래 손가락 1개 틈 유지 &amp; 억지 뼈 맞춤 금지</text>
+  <text x="400" y="405" fill="#ffffff" font-family="sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle">[최종 완성] 지혈 패드 + 위아래 관절 양측 패드 부목 + 2초 혈색 점검 = 2차 손상 0%</text>
+</svg>

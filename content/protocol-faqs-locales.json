@@ -1090,5 +1090,79 @@
         "resolution": "在潮濕的日子裡，盡量將其放置在風吹的山脊陰涼處或通風的地方，以引起強制對流蒸發。如果用黎明時最冷的深谷水或泉水填充倒入沙層的水，由於水本身的寒冷，可以保持較低的溫度。"
       }
     ]
+  },
+  "PR-17": {
+    "en": [
+      {
+        "question": "I soaked the hide in tannin water for a week, but a white line still remains in the middle of the edge cut.",
+        "causeDiagnostic": "The initial tannin bath was too concentrated, sealing and hardening the outer surfaces before tannins could diffuse into the center.",
+        "resolution": "Remove the hide and gently flex and knead it over a rounded wooden pole to loosen the sealed outer fiber grain. Return it to a freshly brewed batch of cool tannin liquor for another 2-3 days so tannins penetrate completely into the core."
+      },
+      {
+        "question": "The leather dried stiffer than expected. Can I make it soft again?",
+        "causeDiagnostic": "Stretching over the wooden staking post was stopped before the hide was completely dry, or insufficient fat allowed collagen fibers to stick back together.",
+        "resolution": "Rub a mixture of lukewarm water and animal fat evenly into the flesh side, then roll the hide up for half a day so moisture equalizes. Once damp and pliable, work and stretch it continuously over the rounded wooden post until 100% dry."
+      }
+    ],
+    "ja": [
+      {
+        "question": "タンニン液に1週間浸したのに、革の断面の中央にまだ白い筋が残っています。",
+        "causeDiagnostic": "最初から濃すぎるタンニン液に入れたため革の表面だけが硬く詰まり、内側へタンニン成分が染み込めなくなった状態です。",
+        "resolution": "革を引き上げて丸い木の棒の上で軽く揉みほぐして曲げ、表面の固まった繊維の目を緩めてください。その後、新しく煮出して冷ましたタンニン液に再び2〜3日間浸せば、開いた繊維の隙間から中心部までタンニンが深く浸透します。"
+      },
+      {
+        "question": "革を乾かしたら思ったより硬くなったのですが、もう一度柔らかくできますか？",
+        "causeDiagnostic": "革が乾く途中で木杭に引っ張って擦る作業を早く止めすぎたか、油分が不足して繊維同士が再びくっついたためです。",
+        "resolution": "革の内側面にぬるま湯と動物油を混ぜて手のひらで満遍なく擦り込み、半日間丸めて水分を馴染ませてください。革がしっとりしたら再び丸い木杭の角にかけ、完全に乾くまで四方へ力強く引っ張って擦り続ければ柔らかな質感が蘇ります。"
+      }
+    ],
+    "es": [
+      {
+        "question": "Dejé la piel una semana en agua de tanino, pero aún queda una línea blanca en el centro del corte.",
+        "causeDiagnostic": "El baño inicial de tanino estaba demasiado concentrado, sellando y endureciendo la superficie exterior antes de que el tanino penetrara al centro.",
+        "resolution": "Saque la piel y amásela suavemente sobre un palo redondo de madera para aflojar las fibras exteriores endurecidas. Luego vuélvala a sumergir durante 2-3 días en licor de tanino fresco y frío para que penetre hasta el núcleo."
+      },
+      {
+        "question": "El cuero quedó más rígido de lo esperado al secarse. ¿Puedo volver a ablandarlo?",
+        "causeDiagnostic": "Se detuvo el frotado sobre la estaca de madera antes de que secara por completo, o faltó grasa y las fibras volvieron a pegarse.",
+        "resolution": "Frote una mezcla de agua tibia y grasa animal en la cara interna, enrolle la piel durante medio día para distribuir la humedad y vuelva a estirarla con fuerza sobre la estaca redonda hasta que seque al 100%."
+      }
+    ],
+    "de": [
+      {
+        "question": "Ich habe die Haut eine Woche in Tanninwasser gelegt, aber im Querschnitt ist in der Mitte noch ein weißer Streifen.",
+        "causeDiagnostic": "Das erste Tanninbad war zu stark konzentriert, wodurch die äußeren Hautschichten sofort dicht gemacht haben und kein Tannin mehr ins Innere dringen konnte.",
+        "resolution": "Nehmen Sie die Haut heraus und kneten und biegen Sie sie leicht über einem runden Holzstab, um die verhärteten Außenfasern zu lockern. Legen Sie sie danach für weitere 2-3 Tage in frisch gekochte, kalte Tanninbrühe, bis der Kern durchgefärbt ist."
+      },
+      {
+        "question": "Das Leder ist nach dem Trocknen steifer als gedacht. Kann ich es wieder weich machen?",
+        "causeDiagnostic": "Das Weichziehen über dem Holzpfahl wurde beendet, bevor die Haut ganz trocken war, oder durch zu wenig Fett haben sich die Fasern wieder verklebt.",
+        "resolution": "Reiben Sie eine Mischung aus lauwarmem Wasser und Tierfett gleichmäßig in die Fleischseite ein und rollen Sie die Haut für einen halben Tag zusammen. Sobald sie gleichmäßig feucht ist, ziehen Sie sie erneut kräftig über den runden Holzpfahl, bis sie 100% trocken ist."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Deixei a pele uma semana na água de tanino, mas ainda há uma linha branca no meio do corte.",
+        "causeDiagnostic": "O banho inicial de tanino estava forte demais, fechando e endurecendo a superfície externa antes que o tanino penetrasse até o centro.",
+        "resolution": "Retire a pele e amasse-a suavemente sobre um bastão redondo de madeira para soltar as fibras externas endurecidas. Depois mergulhe novamente por 2-3 dias em licor de tanino novo e frio para que penetre até o núcleo."
+      },
+      {
+        "question": "O couro ficou mais duro que o esperado depois de secar. Posso amaciá-lo novamente?",
+        "causeDiagnostic": "O trabalho de esticar sobre a estaca de madeira parou antes de secar totalmente, ou faltou gordura e as fibras voltaram a colar.",
+        "resolution": "Esfregue uma mistura de água morna e gordura animal na face interna, enrole a pele por meio dia para espalhar a umidade e volte a esticá-la com força sobre a estaca redonda até secar 100%."
+      }
+    ],
+    "zh-TW": [
+      {
+        "question": "已經在單寧水裡泡了一整週，為什麼剪開皮革截面中間還有一條白線？",
+        "causeDiagnostic": "一開始浸泡的單寧水濃度太高，導致獸皮外層迅速硬化封死，單寧成分無法繼續往中心滲透。",
+        "resolution": "請取出獸皮，在圓木棍上輕輕搓揉彎折，使外層硬化的纖維紋理鬆開。接著重新放入新熬好並放涼的單寧水中再泡2～3天，單寧就能順著打開的纖維縫隙深入皮芯。"
+      },
+      {
+        "question": "皮革晾乾後比想像中還硬，有辦法重新變軟嗎？",
+        "causeDiagnostic": "在皮革完全乾透前太早停止在木樁上拉扯摩擦，或是油脂塗抹不足導致纖維再次黏結。",
+        "resolution": "請在皮革內側面均勻塗抹溫水與動物油脂的混合液，捲起來靜置半天讓水分均勻滲透。待皮革恢復微濕柔軟後，再次掛上圓木樁向四方用力拉扯摩擦直到100%乾透，即可恢復柔軟質感。"
+      }
+    ]
   }
 }

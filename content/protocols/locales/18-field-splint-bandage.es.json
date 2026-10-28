@@ -1,0 +1,256 @@
+{
+  "protocolId": "PR-18",
+  "category": "MEDICINE",
+  "title": "Cómo inmovilizar fracturas y frenar hemorragias con ramas rectas, musgo y tela hervida",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[PRIMEROS AUXILIOS] Prevención de corte arterial/nervioso, shock hemorrágico y necrosis",
+  "summary": "Cuando se rompe un hueso del brazo o la pierna por una caída en la montaña o entre escombros, dejar la extremidad suelta permite que los bordes afilados del hueso corten arterias y nervios cercanos, causando hemorragias graves o parálisis permanente. En el campo sin hospital, lave alrededor de la herida con [Jabón Natural de Ceniza](/protocol-13.html) y [Agua Filtrada Hervida](/protocol-01.html) tibia para prevenir el tétanos y las infecciones, presione una almohadilla de arpillera hervida durante 10 minutos sobre el sangrado e inmovilice tanto la articulación superior como la inferior con dos ramas rectas acolchadas con musgo y [Cuero Natural Suave](/protocol-17.html), atadas en 4 puntos con [Cuerda de Liana Silvestre](/protocol-05.html).",
+  "timeRequired": "Unos 20 min (5 min control de sangrado + 10 min acolchado de ramas + 5 min amarre en 4 puntos)",
+  "successRate": "99% (Con inmovilización de dos articulaciones y control de retorno rosado en uña en 2 s)",
+  "difficulty": "Media (Realizable de inmediato con ramas, musgo y tela hervida sin botiquín moderno)",
+  "outputPerHour": "1 juego completo de férula doble acolchada de dos articulaciones y cabestrillo de cuero",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 ramas rectas y rígidas del grosor del pulgar (Más largas que las articulaciones superior e inferior)",
+      "desc": "Ramas firmes de roble o fresno que no se doblen. Para un antebrazo roto, elija ramas de **dos palmos y medio (45-50 cm)** que cubran desde el codo hasta la punta de los dedos, y alise los nudos con un [Hacha o Cuchillo de Piedra](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 puñados de musgo esfagno limpio / hojas secas y cuero suave (Para acolchado interior)",
+      "desc": "Acolchado blando que impide que la madera dura presione directamente la carne inflamada y los huesos, evitando la muerte del tejido (necrosis). Coloque una capa del grosor de un dedo (2 cm) en el interior de las ramas y envuélvala con [Cuero Natural Suave](/protocol-17.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Tela de arpillera o algodón lavada con jabón de ceniza y hervida (Almohadilla y 4 tiras anchas)",
+      "desc": "Una almohadilla gruesa de tela doblada en 8 capas del tamaño de la palma para presionar la herida, más cuatro tiras de tela de dos dedos de ancho para envolver la extremidad sin cortar la piel."
+    },
+    {
+      "id": "mat-04",
+      "name": "1 litro de agua limpia hervida y enfriada + Jabón natural de ceniza",
+      "desc": "Agua filtrada con el [Filtro de Agua Natural](/protocol-01.html) y hervida, junto con [Jabón Natural de Ceniza](/protocol-13.html) para lavar las manos del socorrista y limpiar la tierra alrededor de la herida."
+    },
+    {
+      "id": "mat-05",
+      "name": "4 cuerdas de liana silvestre y 1 pieza triangular grande de cuero (Para amarre y cabestrillo)",
+      "desc": "[Cuerda de Liana Silvestre](/protocol-05.html) para asegurar los cuatro puntos arriba y abajo de la fractura, y un paño triangular de cuero para sostener el brazo a la altura del corazón."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Lavar alrededor de la herida con agua hervida y presionar 10 minutos con tela hervida",
+      "description": "1. **Lavar Manos y Limpiar Tierra Alrededor**: Lávese bien las manos con [Jabón Natural de Ceniza](/protocol-13.html) y vierta suavemente [Agua Filtrada Hervida](/protocol-01.html) tibia de arriba hacia abajo alrededor de la herida para arrastrar tierra y arena, previniendo el tétanos.\n2. **Presionar 10 Minutos con Almohadilla de 8 Capas**: Doble una tela de arpillera hervida en **8 capas del tamaño de la palma**, colóquela sobre el punto de sangrado y **presione con firmeza constante durante 10 minutos completos** sin levantarla.\n3. **No Forzar el Hueso a su Sitio**: Aunque el hueso esté torcido o asome, nunca tire ni lo empuje hacia adentro porque cortaría arterias profundas; **sostenga el miembro tal como está**.",
+      "actionNote": "> Nunca retire la primera almohadilla empapada: Si levanta la tela para mirar, arrancará el coágulo recién formado y volverá a sangrar con fuerza. Si la primera tela se empapa de sangre, déjela puesta y coloque otra almohadilla limpia justo encima.",
+      "svgFileName": "pr18-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WOUND WASH & DIRECT PRESSURE HEMOSTASIS",
+        "Lavar tierra alrededor con agua hervida tibia y jabón de ceniza",
+        "Presionar almohadilla hervida de 8 capas por 10 min continuos",
+        "Si se empapa, no quitar; superponer otra tela limpia encima",
+        "[PASO 1] Lavar con agua hervida y presionar 10 min para frenar sangre"
+      ],
+      "deepDive": {
+        "badge": "CLEANING & DIRECT PRESSURE",
+        "title": "Por qué nunca debe echar tierra o ceniza en la herida ni atar un cordón fino arriba",
+        "text": "Echar tierra seca, ceniza o polvo de hojas crudas sobre una herida abierta introduce bacterias y esporas de tétanos directamente en la sangre. Asimismo, atar una cuerda fina muy apretada en la parte superior del brazo corta toda la circulación arterial y provoca necrosis irreversible en pocas horas. Presionar una almohadilla gruesa de arpillera hervida directamente sobre el sangrado durante 10 minutos sella los vasos rotos manteniendo vivo el flujo sanguíneo del resto del miembro.",
+        "fieldSpecs": [
+          {
+            "name": "Almohadilla hemostática de arpillera de 8 capas lavada con jabón de ceniza y hervida",
+            "scientificName": "Boiled 8-Layer Coarse Hemp Direct-Pressure Pad",
+            "categoryTag": "Lavado de Heridas / Compresión Directa de 10 Minutos",
+            "imageFileName": "id-boiled-burlap-wound-pad.jpg",
+            "hudCode": "FIG. BIO-18A // MACRO OPTIC",
+            "hudStatus": "BOILED STERILE PAD: VERIFIED",
+            "traits": [
+              {
+                "label": "HIGIENE",
+                "value": "Lavada con [Jabón de Ceniza](/protocol-13.html) y **hervida por más de 10 minutos** para eliminar gérmenes."
+              },
+              {
+                "label": "8 CAPAS",
+                "value": "Doblada en **8 capas del tamaño de la palma** para absorber sangre y repartir la presión."
+              },
+              {
+                "label": "TIBIA",
+                "value": "Enfriada hasta sentirse **tibia en el dorso de la mano** antes de aplicarla sobre la herida."
+              }
+            ],
+            "fieldUse": "Almohadilla primaria presionada durante 10 minutos sobre la herida para detener hemorragias y bloquear suciedad"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Elegir 2 ramas rectas que cubran ambas articulaciones y forrarlas con musgo y cuero",
+      "description": "1. **Cortar 2 Ramas Más Largas que Ambas Articulaciones**: Elija dos ramas rectas del grosor del pulgar que **cubran desde la articulación superior (codo/rodilla) hasta pasar la articulación inferior (muñeca/tobillo)—unos 45-50 cm**—y raspe los nudos con una [Lascas de Piedra Afilada](/protocol-04.html).\n2. **Forrar el Interior con Musgo y Cuero Suave**: Para que la madera dura no dañe la piel inflamada, cubra toda la cara interna de las ramas con **musgo limpio u hojas suaves de 2 cm de grosor** y envuélvalas con [Cuero Natural Suave](/protocol-17.html).\n3. **Colocar un Rollo de Musgo en la Palma**: Si el antebrazo o la muñeca están rotos, ponga un **rollo de musgo del tamaño de un huevo en la palma** para que los dedos descansen ligeramente curvados.",
+      "actionNote": "> Prohibido usar palos cortos que solo cubran la fractura: Si ata palos cortos solo en el centro del hueso roto, cada giro del codo o la muñeca retorcerá los extremos rotos del hueso. Use siempre ramas largas que bloqueen tanto la articulación superior como la inferior.",
+      "svgFileName": "pr18-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWO-JOINT SPLINT SIZING & MOSS PADDING",
+        "2 ramas largas desde articulación superior (codo) a inferior (muñeca)",
+        "Forrar cara interna con musgo (2 cm) y cuero suave acolchado",
+        "Colocar rollo de musgo en la palma para curvar los dedos",
+        "[PASO 2] Cubrir ambas articulaciones y acolchar el interior"
+      ],
+      "deepDive": {
+        "badge": "TWO-JOINT IMMOBILIZATION",
+        "title": "Por qué inmovilizar solo el punto roto fracasa si no se bloquean las dos articulaciones vecinas",
+        "text": "El antebrazo y la pantorrilla tienen dos huesos largos paralelos que giran uno sobre otro cada vez que se mueve la muñeca o el codo. Si la férula solo cubre la mitad del hueso, cualquier movimiento de la muñeca hace girar los bordes rotos como piedras de molino, desgarrando vasos sanguíneos. Extender las ramas rígidas más allá del codo y la muñeca reduce el giro a cero.",
+        "fieldSpecs": [
+          {
+            "name": "Par de ramas rígidas acolchadas en su interior con musgo esfagno y cuero suave",
+            "scientificName": "Moss-and-Buckskin Padded Dual Hardwood Splint Sticks",
+            "categoryTag": "Soporte de Dos Articulaciones / Acolchado Antinecrosis",
+            "imageFileName": "id-padded-hardwood-splint-sticks.jpg",
+            "hudCode": "FIG. BIO-18B // MACRO OPTIC",
+            "hudStatus": "DUAL SPLINT PADDING: VERIFIED",
+            "traits": [
+              {
+                "label": "RIGIDEZ",
+                "value": "Dos **ramas rectas de madera dura del grosor del pulgar (2 cm)** sin nudos salientes."
+              },
+              {
+                "label": "COJÍN",
+                "value": "Cara interna forrada con **2 cm de musgo verde envuelto en cuero suave**."
+              },
+              {
+                "label": "LARGO",
+                "value": "Longitud de **dos palmos y medio (45-50 cm)** para fijar codo y muñeca al mismo tiempo."
+              }
+            ],
+            "fieldUse": "Se colocan a ambos lados de la extremidad para impedir el giro articular y proteger la piel"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Colocar las férulas a ambos lados y atar en 4 puntos evitando el centro de la herida",
+      "description": "1. **Colocar las 2 Férulas Acolchadas a Ambos Lados**: Mientras un ayudante sostiene suavemente las articulaciones superior e inferior, coloque las dos ramas acolchadas **en paralelo a ambos lados (interior y exterior) de la extremidad**.\n2. **Atar en 4 Puntos (2 Arriba y 2 Abajo) Evitando la Fractura**: Nunca ate justo encima del hueso roto. Envuelva tiras anchas de tela en **dos puntos arriba de la fractura y dos puntos abajo (4 en total)** y asegúrelas con [Cuerda de Liana Silvestre](/protocol-05.html).\n3. **Dejar Espacio para 1 Dedo Bajo Cada Amarre**: Verifique que **quepa un dedo meñique ajustado bajo cada tira** para no cortar la sangre, y haga los nudos sobre la madera exterior.",
+      "actionNote": "> Prohibido atar sobre la fractura o usar cuerda fina sola: Atar encima del hueso roto hunde las astillas óseas en la carne. Tampoco ate cuerda fina directo sobre la piel; envuelva primero tiras de tela de dos dedos de ancho.",
+      "svgFileName": "pr18-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 4-POINT SPLIT LASHING (AVOID FRACTURE ZONE)",
+        "Colocar 2 ramas acolchadas con musgo a ambos lados del brazo",
+        "Dejar libre la herida; atar 2 puntos arriba y 2 abajo (4 total)",
+        "Dejar holgura de 1 dedo bajo la tira y anudar sobre la madera",
+        "[PASO 3] No apretar sobre la fractura; repartir en 4 amarres"
+      ],
+      "deepDive": {
+        "badge": "4-POINT SPLIT LASHING",
+        "title": "Por qué atar en 4 puntos con tiras anchas evita el efecto torniquete y el balanceo",
+        "text": "Apretar una o dos cuerdas finas estrangula las venas como un torniquete mientras las ramas siguen balanceándose como un sube y baja. Al distribuir cuatro bandas anchas de tela (dos arriba y dos abajo del centro lesionado), la fuerza de sujeción se reparte sin bloquear la circulación sanguínea y bloquea por completo el movimiento lateral.",
+        "fieldSpecs": [
+          {
+            "name": "Férula fijada en 4 puntos con bandas anchas de tela y liana (zona central libre)",
+            "scientificName": "Four-Point Broad-Cloth & Vine Lashing Splint Assembly",
+            "categoryTag": "Protección sin Contacto en Fractura / Amarre en 4 Puntos",
+            "imageFileName": "id-four-point-splint-lashing.jpg",
+            "hudCode": "FIG. BIO-18C // MACRO OPTIC",
+            "hudStatus": "4-POINT LASHING: VERIFIED",
+            "traits": [
+              {
+                "label": "4 PUNTOS",
+                "value": "Deja libre el centro lesionado y **ata 2 puntos arriba y 2 puntos abajo**."
+              },
+              {
+                "label": "BANDA ANCHA",
+                "value": "Usa **tiras de tela de 2 dedos de ancho** bajo la liana para no cortar la piel."
+              },
+              {
+                "label": "1 DEDO",
+                "value": "Mantiene **holgura para introducir un dedo** bajo cada banda y proteger el flujo sanguíneo."
+              }
+            ],
+            "fieldUse": "Une ambas ramas acolchadas en una estructura firme sin comprimir el foco de la fractura"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Comprobar el color rosado de la uña en 2 segundos y elevar a la altura del corazón",
+      "description": "1. **Comprobar Retorno Rosado en 2 Segundos en la Uña**: Justo después de atar y cada 30 minutos, **presione la uña del pulgar o del pie lesionado hasta que se ponga blanca, suelte y confirme que el color rosado cálido regresa en menos de 2 segundos**.\n2. **Aflojar Nudos si se Enfría o Entumece**: Si las puntas de los dedos se sienten frías como el hielo, pálidas o moradas, o con hormigueo, la hinchazón está apretando las bandas; **afloje de inmediato los 4 nudos medio dedo**.\n3. **Sostener a la Altura del Corazón con Cabestrillo de Cuero**: Cuelgue un **cabestrillo triangular ancho de [Cuero Natural Suave](/protocol-17.html) al cuello para mantener la mano ligeramente más alta que el codo (altura del corazón)** y reducir la hinchazón.",
+      "actionNote": "> Control obligatorio cada 30 minutos del color de la uña: Aunque al principio quepa un dedo bajo las tiras, la hinchazón interna de la fractura aumenta con las horas y puede estrangular la sangre causando necrosis. Revise las uñas cada 30 minutos.",
+      "svgFileName": "pr18-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 2-SECOND NAIL CIRCULATION CHECK & ELEVATED SLING",
+        "Presionar uña y soltar: ver retorno rosado en menos de 2 seg",
+        "Colgar cabestrillo ancho de cuero manteniendo mano al corazón",
+        "Si los dedos están fríos o morados, aflojar los 4 nudos",
+        "[PASO 4] Revisar uña en 2 s cada 30 min y elevar al corazón"
+      ],
+      "deepDive": {
+        "badge": "CIRCULATION CHECK & ELEVATION",
+        "title": "Por qué presionar la uña y contar 2 segundos es la prueba clave para salvar la extremidad",
+        "text": "Debajo de las uñas hay una red de diminutos vasos capilares que muestran al instante si la sangre llega hasta la punta de los dedos. Al presionar la uña, la sangre sale y se ve blanca; al soltar, si el color rosado vuelve en menos de 2 segundos, la sangre circula bien. Si tarda más de 2 segundos o los dedos están fríos, las ataduras están bloqueando las arterias y deben aflojarse al instante.",
+        "fieldSpecs": [
+          {
+            "name": "Cabestrillo de cuero a la altura del corazón y prueba de retorno rosado en uña en 2 s",
+            "scientificName": "Heart-Level Buckskin Arm Sling & 2-Second Nail-Bed Blanch Check",
+            "categoryTag": "Elevación Antiinflamatoria / Control de Circulación Distal",
+            "imageFileName": "id-capillary-nail-blanch-sling.jpg",
+            "hudCode": "FIG. BIO-18D // MACRO OPTIC",
+            "hudStatus": "2-SEC PINK REFILL: VERIFIED",
+            "traits": [
+              {
+                "label": "UÑA 2 SEG",
+                "value": "Al soltar la uña presionada, **pasa de blanco a rosado cálido en menos de 2 segundos**."
+              },
+              {
+                "label": "ALTURA",
+                "value": "El cabestrillo de cuero sostiene **la mano ligeramente por encima del codo (nivel del corazón)**."
+              },
+              {
+                "label": "CALOR",
+                "value": "Los dedos quedan **visibles fuera del cabestrillo** para comprobar calor y sensibilidad cada 30 min."
+              }
+            ],
+            "fieldUse": "Inmoviliza el brazo contra el pecho reduciendo el edema mientras permite vigilar la circulación cada 30 minutos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error fatal: Empujar huesos salientes a la fuerza o apretar tanto las cuerdas que se corte la sangre",
+    "description": "Intentar tirar, enderezar o meter a la fuerza un hueso roto o saliente en el campo hace que los bordes óseos afilados corten arterias principales y nervios, provocando hemorragias mortales o parálisis permanente. Además, introducir un hueso con tierra causa infección ósea profunda y tétanos. Por otro lado, atar cuerdas demasiado apretadas sin revisar las uñas cada 30 minutos corta la circulación cuando el miembro se hincha, causando necrosis en pocas horas. Esta guía es un procedimiento de inmovilización de emergencia para evitar daños secundarios hasta el traslado médico.",
+    "consequence": "Resultado: Corte arterial o nervioso, shock hemorrágico, tétanos profundo o necrosis de la extremidad por falta de riego"
+  },
+  "shortsScript": {
+    "hook": "¡Si te rompes un brazo o pierna en el monte, enderezarlo a la fuerza o atarlo mal puede cortar una arteria! ¡Así se inmoviliza con 2 ramas!",
+    "body": "Primero, lava alrededor de la herida con agua hervida tibia y presiona una almohadilla de arpillera hervida de 8 capas por 10 minutos. Segundo, usar palos cortos deja que las articulaciones giren el hueso roto: elige 2 ramas rectas que cubran desde el codo hasta la muñeca y fórralas por dentro con 2 cm de musgo y cuero. Tercero, pon las férulas a ambos lados, deja libre la herida y ata 4 tiras anchas de tela —2 arriba y 2 abajo— dejando espacio para un dedo. ¡Cuarto, revisa cada 30 minutos que la uña vuelva a ponerse rosada en 2 segundos!",
+    "outro": "Accede al manual médico de supervivencia offline sin internet en el enlace del perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr18-outcome.svg",
+    "title": "Sistema Completo de Férula Doble de Dos Articulaciones y Control de Uña en 2 s",
+    "description": "Sistema de trauma de campo en 4 etapas: compresión directa de 10 minutos con arpillera hervida, férula doble de ramas acolchadas con musgo y cuero cubriendo ambas articulaciones, amarre en 4 puntos fuera de la fractura y control de circulación en uña cada 30 minutos.",
+    "svgLabels": [
+      "FIG. OUTCOME // FIELD FRACTURE SPLINT & HEMOSTASIS SYSTEM",
+      "STAGE 1: Almohadilla Hervida 8 Capas Presión 10 Min",
+      "STAGE 2: Ramas de 2 Articulaciones + Cojín Musgo y Cuero",
+      "STAGE 3: Evitar Herida; Atar 2 Arriba y 2 Abajo (4 Total)",
+      "STAGE 4: Cabestrillo al Corazón y Uña Rosada en 2 Seg",
+      "SAFETY RULE: Holgura de 1 Dedo Bajo Tiras y No Forzar Hueso",
+      "[FINAL] Almohadilla + Férula Acolchada 2 Articulaciones + Uña 2 Seg = 0% Daño Secundario"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Una hora después de poner la férula, siento los dedos fríos y con hormigueo. ¿Qué hago?",
+      "causeDiagnostic": "La hinchazón natural dentro de la fractura está aumentando y hace que las tiras que antes estaban bien ahora aprieten los vasos sanguíneos.",
+      "resolution": "Dejarlo apretado puede causar necrosis. Mientras un ayudante sujeta las dos ramas de la férula para que el brazo no se mueva, desate los 4 nudos de [Cuerda de Liana Silvestre](/protocol-05.html) uno por uno, aflójelos hasta que vuelva a caber un dedo meñique debajo y compruebe de inmediato que la uña recupere su color rosado en 2 segundos."
+    },
+    {
+      "question": "El brazo o la pierna rota está doblado en un ángulo extraño. ¿Cómo pongo ramas rectas?",
+      "causeDiagnostic": "Las fracturas cerca de una articulación suelen quedar bloqueadas en ángulo; enderezarlas a la fuerza desgarra arterias y nervios.",
+      "resolution": "Nunca intente enderezar el hueso a la fuerza. Rellene los huecos del ángulo con abundante musgo limpio, hojas secas y [Cuero Natural Suave](/protocol-17.html) para acolchar la forma actual, y luego ate las ramas por fuera para fijar la extremidad exactamente en esa posición sin doblar el hueso."
+    }
+  ],
+  "createdAt": "2026-10-28T09:00:00+09:00",
+  "updatedAt": "2026-10-28T00:18:06.707Z",
+  "contentHash": "c4a0b16244afc3ec"
+}

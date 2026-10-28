@@ -1,0 +1,256 @@
+{
+  "protocolId": "PR-18",
+  "category": "MEDICINE",
+  "title": "How to Splint Broken Limbs & Stop Bleeding with Straight Branches, Moss Pads & Boiled Burlap",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[TRAUMA FIRST AID] Preventing Artery/Nerve Severing, Hemorrhagic Shock & Tissue Necrosis",
+  "summary": "When an arm or leg bone breaks from a fall in rough terrain or collapsed rubble, leaving the broken limb unsupported allows sharp bone ends to slice surrounding arteries and nerves, causing severe bleeding or permanent paralysis. In the field without a hospital or orthopedic splint, wash the area around the wound with [Natural Wood-Ash Soap](/protocol-13.html) and cooled [Boiled Filtered Water](/protocol-01.html) to prevent tetanus and bacterial infection, press a boiled burlap pad directly over the bleeding spot for 10 minutes, and immobilize both the upper and lower joints using two straight hardwood sticks lined with sphagnum moss and [Soft Smoked Leather](/protocol-17.html) pads tied at 4 points with [Wild Kudzu Vine Rope](/protocol-05.html).",
+  "timeRequired": "About 20 mins (5 mins bleeding control + 10 mins branch padding + 5 mins 4-point tying & nail check)",
+  "successRate": "99% (With two-joint immobilization & 2-second pink thumbnail circulation check)",
+  "difficulty": "Medium (Can be performed immediately using forest branches, moss, and boiled cloth without a first-aid kit)",
+  "outputPerHour": "1 complete two-joint padded dual-branch splint set & heart-level leather arm sling",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Straight Thumb-Thick Hardwood Branches (Long enough to span above and below the joints)",
+      "desc": "Stiff oak or ash branches that do not bend under pressure. For a broken forearm, choose sticks **two and a half hand-spans long (45-50cm)** to cover from the elbow to the fingertips, and scrape off sharp knots with a [Stone Axe or Flake Knife](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 Handfuls of Clean Sphagnum Moss / Dry Leaves & Soft Smoked Leather (For inner padding)",
+      "desc": "Soft cushioning that prevents hard wood from pressing directly against swollen flesh and bony joints, preventing tissue death (necrosis). Line the inside of the sticks one finger-joint thick (2cm) and wrap with [Soft Smoked Leather](/protocol-17.html) or cloth."
+    },
+    {
+      "id": "mat-03",
+      "name": "Coarse Burlap or Cotton Cloth Washed with Ash Soap & Boiled (For pressure pad & 4 wide ties)",
+      "desc": "A palm-sized 8-layer folded cloth pad for direct wound pressure, plus four strips of cloth two fingers wide to wrap around the limb so cordage does not cut into the skin."
+    },
+    {
+      "id": "mat-04",
+      "name": "1 Liter of Boiled & Cooled Clean Water + Natural Wood-Ash Soap",
+      "desc": "Clean water filtered through a [Natural Water Filter](/protocol-01.html) and boiled, plus [Natural Wood-Ash Soap](/protocol-13.html). Used to wash the rescuer's hands and flush dirt away from the wound to prevent tetanus and secondary infection."
+    },
+    {
+      "id": "mat-05",
+      "name": "4 Strands of Wild Kudzu Vine Cordage & 1 Large Triangular Leather Sheet (For tying & sling)",
+      "desc": "[Wild Kudzu Vine Rope](/protocol-05.html) to secure the four splint points above and below the fracture, plus a wide triangular leather sheet to support the splinted arm at heart level."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Flush dirt around the wound with boiled water and press a boiled burlap pad for 10 minutes",
+      "description": "1. **Wash Hands & Flush Dirt Around Wound**: First wash your hands thoroughly with [Natural Wood-Ash Soap](/protocol-13.html), then gently pour warm cooled [Boiled Filtered Water](/protocol-01.html) from top to bottom around the wound to flush out dirt and sand, preventing tetanus and bacterial infection.\n2. **Press Boiled 8-Layer Burlap Pad for 10 Minutes**: Fold a clean boiled burlap cloth **into an 8-layer palm-sized pad**, place it directly over the bleeding spot, and **press down firmly and steadily with your palm for 10 full minutes** without lifting to stop the bleeding.\n3. **Never Force Bone Ends Back Inside**: Even if the limb is angled or bone is visible, never yank or push the bone back in, as sharp bone edges will sever deep arteries; **support the limb gently in its current position**.",
+      "actionNote": "> Never Peel Off the First Blood-Soaked Pad: Lifting the cloth pad to peek tears away the newly forming blood clot and restarts heavy bleeding. If blood soaks through the first pad, leave it in place and stack a second clean burlap pad right on top of it.",
+      "svgFileName": "pr18-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WOUND WASH & DIRECT PRESSURE HEMOSTASIS",
+        "Flush dirt around wound with boiled water & wood-ash soap",
+        "Press 8-layer boiled burlap pad firmly for 10 minutes",
+        "If soaked, do not peel off; stack a fresh pad on top",
+        "[STEP 1] Cleanse with boiled water & press 10 min to stop bleeding"
+      ],
+      "deepDive": {
+        "badge": "CLEANING & DIRECT PRESSURE",
+        "title": "Why You Must Press Directly with Boiled Cloth Instead of Pouring Dirt/Ash or Tying a Tight Cord",
+        "text": "Putting dry dirt, wood ash, or crushed raw leaves directly into an open wound introduces tetanus spores and bacteria straight into the bloodstream. Likewise, tying a narrow cord tightly around the upper arm cuts off all arterial blood flow and causes irreversible tissue death (necrosis) within hours. Pressing a clean boiled 8-layer burlap pad directly over the bleeding site for 10 steady minutes seals only the ruptured vessels while keeping surrounding circulation alive.",
+        "fieldSpecs": [
+          {
+            "name": "8-Layer Coarse Burlap Direct-Pressure Pad Washed with Ash Soap & Boiled",
+            "scientificName": "Boiled 8-Layer Coarse Hemp Direct-Pressure Pad",
+            "categoryTag": "Field Wound Cleansing / 10-Min Direct Pressure Hemostasis",
+            "imageFileName": "id-boiled-burlap-wound-pad.jpg",
+            "hudCode": "FIG. BIO-18A // MACRO OPTIC",
+            "hudStatus": "BOILED STERILE PAD: VERIFIED",
+            "traits": [
+              {
+                "label": "STERILE",
+                "value": "Washed with [Wood-Ash Soap](/protocol-13.html) and **boiled for 10+ minutes** to eliminate bacteria."
+              },
+              {
+                "label": "8-LAYER",
+                "value": "Folded into a **palm-sized 8-layer cushion** to absorb blood and distribute palm pressure evenly."
+              },
+              {
+                "label": "COOLED",
+                "value": "Cooled until **lukewarm against the back of your hand** before touching the wound."
+              }
+            ],
+            "fieldUse": "Primary compression pad pressed directly over a bleeding wound for 10 minutes to seal vessels and block dirt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Select 2 straight branches spanning both joints and wrap inner moss & leather padding",
+      "description": "1. **Cut 2 Straight Branches Spanning Upper & Lower Joints**: Select two straight thumb-thick hardwood sticks **long enough to reach past both the upper joint (elbow/knee) and lower joint (wrist/ankle)—about 2.5 hand-spans (45-50cm)**—and scrape off rough bark knots with a [Sharp Stone Flake](/protocol-04.html).\n2. **Wrap Thick Sphagnum Moss & Leather Cushion Inside**: To prevent hard wood from bruising swollen flesh, line the entire inner side of both sticks with **clean green moss or soft leaves one finger-joint thick (2cm)** and wrap them in [Soft Smoked Leather](/protocol-17.html).\n3. **Place an Egg-Sized Moss Roll Inside the Palm**: For a broken forearm or wrist, place an **egg-sized roll of soft moss inside the palm** so the fingers rest in a natural gentle curve instead of stiffening flat.",
+      "actionNote": "> Never Use Short Sticks That Only Cover the Break: Tying short sticks only around the middle of a broken bone allows the elbow and wrist to twist, grinding the broken bone ends together. Always use sticks long enough to lock both the upper and lower joints.",
+      "svgFileName": "pr18-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWO-JOINT SPLINT SIZING & MOSS PADDING",
+        "2 straight sticks spanning upper (elbow) to lower (wrist) joint",
+        "Wrap 2cm sphagnum moss & soft leather pad along inner stick",
+        "Place egg-sized moss roll in palm to keep natural finger curve",
+        "[STEP 2] Span both joints & cushion inner wood with moss pad"
+      ],
+      "deepDive": {
+        "badge": "TWO-JOINT IMMOBILIZATION",
+        "title": "Why Splinting Only the Fracture Site Fails Unless Both Adjacent Joints Are Locked",
+        "text": "The human forearm and lower leg each contain two parallel bones that pivot around one another whenever the wrist, elbow, or ankle turns. If a splint only covers the middle of the shaft, any slight motion of the wrist or elbow twists the broken bone ends like millstones, tearing blood vessels. Extending the rigid sticks past both the upper joint and the lower joint locks rotational freedom to zero.",
+        "fieldSpecs": [
+          {
+            "name": "Dual Straight Hardwood Splint Sticks Lined with Sphagnum Moss & Buckskin Cushion",
+            "scientificName": "Moss-and-Buckskin Padded Dual Hardwood Splint Sticks",
+            "categoryTag": "Two-Joint Rigid Support / Pressure-Sore Prevention Pad",
+            "imageFileName": "id-padded-hardwood-splint-sticks.jpg",
+            "hudCode": "FIG. BIO-18B // MACRO OPTIC",
+            "hudStatus": "DUAL SPLINT PADDING: VERIFIED",
+            "traits": [
+              {
+                "label": "RIGIDITY",
+                "value": "Two **thumb-thick (2cm) straight hardwood branches** with all sharp knots scraped smooth."
+              },
+              {
+                "label": "CUSHION",
+                "value": "Lined along the skin-facing side with **2cm of green moss wrapped in soft buckskin**."
+              },
+              {
+                "label": "LENGTH",
+                "value": "Sized at **2.5 hand-spans (45-50cm)** to immobilize both the upper and lower joints together."
+              }
+            ],
+            "fieldUse": "Placed along both sides of the injured limb to lock joint rotation and cushion bony prominences"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Position padded splints on both sides and tie 4 points above and below the fracture",
+      "description": "1. **Sandwich the Limb with Both Padded Sticks**: While a helper gently supports the upper and lower joints, place the two moss-padded branches **parallel along the inner and outer sides of the limb**.\n2. **Tie 4 Points (2 Above, 2 Below) Avoiding the Fracture Center**: Never tie directly over the break itself. Wrap two-finger-wide cloth bands at **two points above the fracture and two points below the fracture (4 points total)** and secure them with [Wild Kudzu Vine Rope](/protocol-05.html).\n3. **Leave a 1-Finger Gap Under Every Tie**: Check that **one pinky finger can slide snugly under each tied band** so swelling does not cut off blood flow, and tie all knots on the outer wooden stick.",
+      "actionNote": "> Never Tie Directly Over the Break or Use Thin Cord Alone: Tying over the fracture drives sharp bone fragments inward. Also never tie thin vine cord directly against bare skin—always wrap wide cloth strips first and tie the cord over the wooden splints.",
+      "svgFileName": "pr18-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 4-POINT SPLIT LASHING (AVOID FRACTURE ZONE)",
+        "Place 2 moss-padded hardwood splints along both sides of limb",
+        "Skip fracture center; tie 2 points above & 2 points below (4 total)",
+        "Keep a 1-finger gap under ties & tie knots on outer wood stick",
+        "[STEP 3] Never tie over break; distribute pressure across 4 ties"
+      ],
+      "deepDive": {
+        "badge": "4-POINT SPLIT LASHING",
+        "title": "Why Tying 4 Broad Bands Above and Below Prevents Seesaw Wobble and Blood Cutoff",
+        "text": "Cinching one or two narrow cords tightly creates a tourniquet effect that chokes veins while still allowing the splint sticks to pivot like a seesaw. By placing two broad cloth ties above the fracture and two below it, clamping force is spread across four wide zones—holding the two padded sticks like a rigid box frame without pinching blood vessels.",
+        "fieldSpecs": [
+          {
+            "name": "4-Point Broad Cloth & Vine Lashing Splint Assembly (Clear Fracture Zone)",
+            "scientificName": "Four-Point Broad-Cloth & Vine Lashing Splint Assembly",
+            "categoryTag": "Fracture-Zone Clearance / 4-Point Load Distribution",
+            "imageFileName": "id-four-point-splint-lashing.jpg",
+            "hudCode": "FIG. BIO-18C // MACRO OPTIC",
+            "hudStatus": "4-POINT LASHING: VERIFIED",
+            "traits": [
+              {
+                "label": "4 ZONES",
+                "value": "Leaves the center fracture pad un-cinched and **ties 2 points above and 2 points below**."
+              },
+              {
+                "label": "WIDE BAND",
+                "value": "Uses **two-finger-wide woven cloth wraps** under vine cordage so ties never dig into flesh."
+              },
+              {
+                "label": "1-FINGER",
+                "value": "Maintains a **one-finger clearance gap under every band** to preserve blood flow."
+              }
+            ],
+            "fieldUse": "Locks both padded splint sticks into a wobble-free cage without compressing the broken bone site"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Check 2-second pink nail refill and elevate at heart level in a leather sling",
+      "description": "1. **Check 2-Second Pink Thumbnail Refill**: Immediately after tying and every 30 minutes thereafter, **press the injured thumbnail or toenail until it turns white, then release and verify that warm pink color returns within 2 seconds**.\n2. **Loosen Ties Slightly if Cold, Pale, or Numb**: If the fingertips feel icy cold, look pale or bluish, or tingle with numbness, internal swelling is tightening the bands; **immediately loosen all 4 knots by half a finger-joint**.\n3. **Support at Heart Level in a Wide Leather Sling**: To prevent blood pooling and throbbing swelling, hang a wide [Soft Smoked Leather](/protocol-17.html) **triangular sling around the neck so the hand rests slightly higher than the elbow (at heart level)**.",
+      "actionNote": "> Mandatory 30-Minute Nail Refill & Warmth Check: Even a splint tied with a 1-finger gap can become dangerously tight an hour later as internal fracture swelling expands. Check the 2-second pink nail refill every 30 minutes to prevent limb necrosis.",
+      "svgFileName": "pr18-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 2-SECOND NAIL CIRCULATION CHECK & ELEVATED SLING",
+        "Press nail & release: verify pink color returns within 2 seconds",
+        "Hang wide leather sling around neck to keep hand at heart level",
+        "If fingertips feel cold or pale, loosen all 4 knots slightly",
+        "[STEP 4] Check 2-sec nail refill every 30m & elevate at heart level"
+      ],
+      "deepDive": {
+        "badge": "CIRCULATION CHECK & ELEVATION",
+        "title": "Why Pressing the Thumbnail for a 2-Second Pink Return Is the Lifesaving Field Check",
+        "text": "Dense beds of tiny capillaries lie directly beneath the fingernails and toenails, serving as an instant window into distal blood flow. Pressing the nail squeezes blood out so the bed turns white; when released, healthy arterial pressure flushes it back to warm pink in under 2 seconds. A delay beyond 2 seconds or cold fingers warns that swelling is choking blood flow and ties must be loosened immediately.",
+        "fieldSpecs": [
+          {
+            "name": "Heart-Level Buckskin Triangular Arm Sling & 2-Second Thumbnail Blanch Check",
+            "scientificName": "Heart-Level Buckskin Arm Sling & 2-Second Nail-Bed Blanch Check",
+            "categoryTag": "Swelling Reduction Sling / Distal Perfusion Monitoring",
+            "imageFileName": "id-capillary-nail-blanch-sling.jpg",
+            "hudCode": "FIG. BIO-18D // MACRO OPTIC",
+            "hudStatus": "2-SEC PINK REFILL: VERIFIED",
+            "traits": [
+              {
+                "label": "2-SEC PINK",
+                "value": "Thumbnail blanched white by finger pressure **flushes back to warm pink within 2 seconds**."
+              },
+              {
+                "label": "ELEVATION",
+                "value": "Wide buckskin sling holds the **hand slightly above the elbow at heart level** to reduce swelling."
+              },
+              {
+                "label": "WARMTH",
+                "value": "Fingertips remain **exposed at the front of the sling** for 30-minute temperature and sensation checks."
+              }
+            ],
+            "fieldUse": "Secures the splinted arm comfortably against the chest while allowing continuous 30-minute blood flow checks"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Forcing protruding bone ends back in or tying cords so tightly that blood flow stops",
+    "description": "Attempting to pull, straighten, or push a deformed or protruding broken bone back into place in the wilderness causes razor-sharp bone fragments to sever major arteries and nerves, triggering fatal internal bleeding or permanent paralysis. Pushing dirt-contaminated bone inward also causes deep bone infection and tetanus. Conversely, tying narrow cords too tightly without checking nail refill every 30 minutes cuts off circulation as the limb swells, causing irreversible tissue necrosis. This guide provides emergency field immobilization to prevent secondary damage until professional medical evacuation is possible.",
+    "consequence": "Result: Arterial/nerve severing, hemorrhagic shock, deep tetanus infection, or limb necrosis from choked circulation"
+  },
+  "shortsScript": {
+    "hook": "If you break an arm or leg in the wild, forcing the bone straight or tying a tight cord can sever arteries! Here is how 2 branches save your limb!",
+    "body": "First, flush dirt around the wound with cooled boiled water and press an 8-layer boiled burlap pad firmly for 10 minutes. Second, short sticks let joints twist the break—pick 2 straight branches long enough to span from elbow to wrist, and line the inside with 2cm of soft moss and leather. Third, place the splints on both sides, skip the fracture center, and tie 4 wide cloth bands—2 above and 2 below—leaving a 1-finger gap. Fourth, rest the arm at heart level in a sling and press the thumbnail every 30 minutes to be sure pink color returns in 2 seconds!",
+    "outro": "Check the profile link for the offline survival medical manual that works without internet."
+  },
+  "outcome": {
+    "svgFileName": "pr18-outcome.svg",
+    "title": "Complete Two-Joint Padded Branch Splint & 2-Second Nail Refill System",
+    "description": "A 4-stage field trauma system combining 10-minute direct pressure with a boiled burlap pad, two-joint immobilization using moss-and-leather-padded hardwood sticks lashed at 4 points away from the fracture, heart-level sling support, and 30-minute 2-second nail refill checks.",
+    "svgLabels": [
+      "FIG. OUTCOME // FIELD FRACTURE SPLINT & HEMOSTASIS SYSTEM",
+      "STAGE 1: 8-Layer Boiled Burlap Pad 10-Min Direct Pressure",
+      "STAGE 2: Two-Joint Branches + Inner Moss & Leather Pads",
+      "STAGE 3: Skip Break Center; Tie 2 Above & 2 Below (4 Total)",
+      "STAGE 4: Heart-Level Leather Sling & 2-Sec Pink Nail Check",
+      "SAFETY RULE: Keep 1-Finger Gap Under Ties & Never Force Bone",
+      "[OUTCOME] Boiled Pad + Two-Joint Padded Splint + 2-Sec Nail Check = Zero Secondary Damage"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "About an hour after tying the splint, my fingers feel cold and tingly. What should I do?",
+      "causeDiagnostic": "Natural internal swelling around the fracture is expanding inside the splint, causing ties that were originally snug to choke blood flow.",
+      "resolution": "Leaving it tight can cause tissue death (necrosis). While a helper holds the two wooden splint sticks steady so the limb does not move, untie the 4 [Wild Kudzu Vine Rope](/protocol-05.html) knots one by one, loosen each cloth band until one pinky finger fits underneath again, and immediately check that the thumbnail turns pink within 2 seconds."
+    },
+    {
+      "question": "The broken arm or leg is bent at an awkward angle. How do I attach straight sticks?",
+      "causeDiagnostic": "Fractures near a joint or displaced bones often lock at an angle; forcing them straight tears blood vessels and nerves.",
+      "resolution": "Never force a bent fracture straight. Pack generous cushions of clean moss, dry leaves, and [Soft Smoked Leather](/protocol-17.html) into the hollow spaces around the bend to support the limb in the exact angle it was found, then lash the branches along the outside to lock that position without bending the bone."
+    }
+  ],
+  "createdAt": "2026-10-28T09:00:00+09:00",
+  "updatedAt": "2026-10-28T00:18:06.707Z",
+  "contentHash": "c4a0b16244afc3ec"
+}

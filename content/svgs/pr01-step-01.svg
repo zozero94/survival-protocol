@@ -1,104 +1,142 @@
-<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGradP01" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#08090b"/>
-      <stop offset="50%" stop-color="#0e1217"/>
-      <stop offset="100%" stop-color="#080a0d"/>
+    <linearGradient id="bg0101" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a0f"/>
+      <stop offset="100%" stop-color="#0d131c"/>
     </linearGradient>
-
-    <!-- Timber Tripod Cylinder Shading -->
-    <linearGradient id="woodLeg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3d2817"/>
-      <stop offset="45%" stop-color="#694627"/>
-      <stop offset="70%" stop-color="#8c5d35"/>
-      <stop offset="100%" stop-color="#2a1b0e"/>
+    <linearGradient id="woodPole01" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="40%" stop-color="#78350f"/>
+      <stop offset="70%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#2e1305"/>
     </linearGradient>
-
-    <!-- Birch Bark Cone Funnel -->
-    <linearGradient id="birchCone" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#403830"/>
-      <stop offset="35%" stop-color="#736658"/>
-      <stop offset="65%" stop-color="#9e8d7c"/>
-      <stop offset="100%" stop-color="#332c25"/>
+    <linearGradient id="birchCone01" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#574c41"/>
+      <stop offset="30%" stop-color="#8c7b6b"/>
+      <stop offset="65%" stop-color="#b5a392"/>
+      <stop offset="100%" stop-color="#453b32"/>
     </linearGradient>
-
-    <!-- Moss Plug Green Gradient -->
-    <linearGradient id="mossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#14532d"/>
-      <stop offset="50%" stop-color="#22c55e"/>
-      <stop offset="100%" stop-color="#052e16"/>
+    <linearGradient id="mossPlug01" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="55%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#14532d"/>
     </linearGradient>
-
-    <!-- Drop Shadow Filter -->
-    <filter id="shadowP01" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.9"/>
+    <filter id="drop0101" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.85"/>
     </filter>
+    <pattern id="grid0101" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16212e" stroke-width="0.6"/>
+    </pattern>
   </defs>
 
-  <!-- Background Backdrop -->
-  <rect width="400" height="400" fill="url(#bgGradP01)"/>
-  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#22262c" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg0101)"/>
+  <rect width="400" height="400" fill="url(#grid0101)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#243447" stroke-width="1"/>
 
-  <!-- Technical Corner Crosshairs -->
-  <path d="M 14 22 L 26 22 M 20 16 L 20 28" stroke="#374151" stroke-width="1"/>
-  <path d="M 386 22 L 374 22 M 380 16 L 380 28" stroke="#374151" stroke-width="1"/>
-  <path d="M 14 378 L 26 378 M 20 372 L 20 384" stroke="#374151" stroke-width="1"/>
-  <path d="M 386 378 L 374 378 M 380 372 L 380 384" stroke="#374151" stroke-width="1"/>
+  <!-- Top Header (Label 1, y=32) -->
+  <rect x="16" y="14" width="368" height="28" rx="2" fill="#0e1621" stroke="#2e4359" stroke-width="1"/>
+  <text x="24" y="32" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">FIG. 01 // PURIFICATION STEP 1: 삼발이 가로틀 거치 및 이끼 마개</text>
 
-  <!-- Blueprint Header (Label 1) -->
-  <text x="24" y="28" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.5">FIG. 01 // PURIFICATION STEP 1: 프레임 거치 및 하단 마개</text>
-  <line x1="24" y1="36" x2="376" y2="36" stroke="#262d35" stroke-width="1"/>
+  <!-- Main 3D Illustration Area (y: 84 ~ 288) -->
+  <g filter="url(#drop0101)">
+    <!-- LEFT PANEL: Full 3D Tripod Stand with Horizontal Cradle Frame & Mounted Bark Cone (x: 20 ~ 244) -->
+    <rect x="20" y="86" width="224" height="202" rx="3" fill="#0b1119" stroke="#26374a" stroke-width="1"/>
 
-  <!-- Tripod Legs (Back Leg first) -->
-  <line x1="200" y1="65" x2="200" y2="320" stroke="#000000" stroke-width="14" stroke-linecap="round"/>
-  <line x1="200" y1="65" x2="200" y2="320" stroke="url(#woodLeg)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Back Center Tripod Leg (Behind Cone) -->
+    <path d="M 128 90 L 136 90 L 138 278 L 128 278 Z" fill="#3b1d0a" stroke="#261105" stroke-width="1"/>
 
-  <!-- Cone Funnel Body (Birch Bark) with Drop Shadow -->
-  <polygon points="140,110 260,110 215,260 185,260" fill="url(#birchCone)" stroke="#221c17" stroke-width="1.5" filter="url(#shadowP01)"/>
-  <ellipse cx="200" cy="110" rx="60" ry="12" fill="#52473c" stroke="#221c17" stroke-width="1.5"/>
+    <!-- Birch-Bark Conical Filter Vessel (Wide Open Top Mouth, Tapered Body) -->
+    <path d="M 96 134 L 168 134 L 144 246 L 120 246 Z" fill="url(#birchCone01)" stroke="#2b231d" stroke-width="1.5"/>
+    <!-- Birch Bark Horizontal Lenticel Texture Lines & Overlapping Seam -->
+    <line x1="106" y1="152" x2="126" y2="152" stroke="#453b32" stroke-width="1.2"/>
+    <line x1="136" y1="166" x2="154" y2="166" stroke="#453b32" stroke-width="1.2"/>
+    <line x1="112" y1="176" x2="128" y2="176" stroke="#453b32" stroke-width="1.2"/>
+    <line x1="132" y1="142" x2="132" y2="238" stroke="#3b3129" stroke-width="1" stroke-dasharray="4 3"/>
 
-  <!-- Front Tripod Left Leg -->
-  <line x1="200" y1="65" x2="120" y2="320" stroke="#000000" stroke-width="16" stroke-linecap="round"/>
-  <line x1="200" y1="65" x2="120" y2="320" stroke="url(#woodLeg)" stroke-width="10" stroke-linecap="round"/>
+    <!-- Wide Open Top Mouth of Birch-Bark Cone (100% Unobstructed for Water Pouring) -->
+    <ellipse cx="132" cy="134" rx="36" ry="8.5" fill="#231e19" stroke="#d6c5b3" stroke-width="1.5"/>
+    <ellipse cx="132" cy="134" rx="31" ry="6" fill="#14110e" stroke="#6b5c4f" stroke-width="0.8"/>
 
-  <!-- Front Tripod Right Leg -->
-  <line x1="200" y1="65" x2="280" y2="320" stroke="#000000" stroke-width="16" stroke-linecap="round"/>
-  <line x1="200" y1="65" x2="280" y2="320" stroke="url(#woodLeg)" stroke-width="10" stroke-linecap="round"/>
+    <!-- Bottom Spout Green Sphagnum Moss Plug (물이끼 마개) -->
+    <path d="M 120 235 L 144 235 L 141 256 L 123 256 Z" fill="url(#mossPlug01)" stroke="#86efac" stroke-width="1.2"/>
+    <circle cx="128" cy="244" r="2" fill="#bbf7d0"/>
+    <circle cx="136" cy="248" r="1.8" fill="#86efac"/>
+    <circle cx="131" cy="252" r="1.6" fill="#bbf7d0"/>
 
-  <!-- Top Lash Knot Binding Tripod -->
-  <rect x="188" y="58" width="24" height="16" rx="4" fill="#854d0e" stroke="#451a03" stroke-width="1.5"/>
+    <!-- Front Left Tripod Leg (Angled Outside Cone Rim) -->
+    <path d="M 120 90 L 130 92 L 50 280 L 38 280 Z" fill="url(#woodPole01)" stroke="#261105" stroke-width="1.2"/>
+    <!-- Front Right Tripod Leg (Angled Outside Cone Rim) -->
+    <path d="M 134 92 L 144 90 L 226 280 L 214 280 Z" fill="url(#woodPole01)" stroke="#261105" stroke-width="1.2"/>
 
-  <!-- Bottom Spout Opening and Moss Plug -->
-  <polygon points="185,260 215,260 210,282 190,282" fill="#2d241c" stroke="#1c1611" stroke-width="1"/>
-  <!-- Moss / Fabric Plug Core -->
-  <ellipse cx="200" cy="275" rx="11" ry="7" fill="url(#mossGrad)" stroke="#14532d" stroke-width="1"/>
-  <!-- Texture dots for moss -->
-  <circle cx="197" cy="274" r="1.5" fill="#86efac"/>
-  <circle cx="203" cy="276" r="1.2" fill="#4ade80"/>
+    <!-- Top Tripod Apex Braided Vine Lashing (삼발이 꼭대기 칡덩굴 결속) -->
+    <path d="M 116 96 L 148 96 L 146 108 L 118 108 Z" fill="#b45309" stroke="#fde68a" stroke-width="1.3"/>
+    <line x1="117" y1="100" x2="147" y2="100" stroke="#fef08a" stroke-width="1.2"/>
+    <line x1="118" y1="104" x2="146" y2="104" stroke="#fef08a" stroke-width="1.2"/>
 
-  <!-- Support Cord wrapped around Funnel -->
-  <ellipse cx="200" cy="140" rx="48" ry="9" fill="none" stroke="#ca8a04" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <!-- MOUNTING POINT 1: Upper Rim Braided Vine Ties to Left/Right Legs (상단 테두리 고정 매듭) -->
+    <path d="M 96 134 L 106 128 M 95 138 L 104 132" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 168 134 L 158 128 M 169 138 L 160 132" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Technical Callout Lines -->
-  <!-- Callout 1: Tripod Frame (Label 2) -->
-  <line x1="140" y1="160" x2="105" y2="75" stroke="#9ca3af" stroke-width="1"/>
-  <circle cx="140" cy="160" r="2.5" fill="#f59e0b"/>
-  <text x="24" y="70" fill="#fde68a" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold">TRIPOD FRAME (삼각대)</text>
+    <!-- MOUNTING POINT 2: Mid-Height Horizontal Cradle Frame & X-Lashing (중간 가로 받침틀 & X자 매듭) -->
+    <path d="M 58 184 L 206 184 L 206 196 L 58 196 Z" fill="url(#woodPole01)" stroke="#d97706" stroke-width="1.1"/>
+    <line x1="60" y1="190" x2="204" y2="190" stroke="#451a03" stroke-width="1"/>
+    <!-- Left Leg X-Lashing Knot -->
+    <path d="M 74 181 L 90 199 M 90 181 L 74 199" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Right Leg X-Lashing Knot -->
+    <path d="M 174 181 L 190 199 M 190 181 L 174 199" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Center Cone Waist Clamping X-Lashing (고깔 허리 X자 덩굴 결속) -->
+    <path d="M 108 182 L 156 182 L 154 198 L 110 198 Z" fill="#92400e" stroke="#fde68a" stroke-width="1.3"/>
+    <path d="M 114 183 L 150 197 M 150 183 L 114 197" stroke="#fef08a" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Callout 2: Cone Funnel (Label 3) -->
-  <line x1="240" y1="170" x2="105" y2="165" stroke="#9ca3af" stroke-width="1"/>
-  <circle cx="240" cy="170" r="2.5" fill="#38bdf8"/>
-  <text x="24" y="160" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold">CONE FUNNEL (여과관)</text>
+    <!-- Collection Bowl on Ground Between Tripod Legs -->
+    <path d="M 102 266 L 162 266 L 154 282 L 110 282 Z" fill="#451a03" stroke="#b45309" stroke-width="1.2"/>
+    <ellipse cx="132" cy="266" rx="30" ry="4.5" fill="#1c1917" stroke="#d97706" stroke-width="1"/>
 
-  <!-- Callout 3: Moss Plug (Label 4) -->
-  <line x1="200" y1="275" x2="105" y2="255" stroke="#9ca3af" stroke-width="1"/>
-  <circle cx="200" cy="275" r="2.5" fill="#22c55e"/>
-  <text x="24" y="250" fill="#86efac" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold">MOSS PLUG (이끼 마개)</text>
+    <!-- RIGHT PANEL TOP: Zoom A — Top-Down View of Triangular Cradle Ring (x: 252 ~ 380, y: 86 ~ 182) -->
+    <rect x="252" y="86" width="128" height="96" rx="3" fill="#0b1119" stroke="#f59e0b" stroke-width="1.1"/>
+    <!-- Triangle Wooden Collar Bars (위에서 본 삼각 가로 받침틀) -->
+    <path d="M 272 162 L 316 98 L 360 162 Z" fill="none" stroke="#92400e" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 272 162 L 316 98 L 360 162 Z" fill="none" stroke="#d97706" stroke-width="2" stroke-linejoin="round"/>
+    <!-- 3 Tripod Leg Cross-Sections at Triangle Vertices -->
+    <circle cx="316" cy="98" r="7" fill="#78350f" stroke="#fde68a" stroke-width="1.5"/>
+    <circle cx="272" cy="162" r="7" fill="#78350f" stroke="#fde68a" stroke-width="1.5"/>
+    <circle cx="360" cy="162" r="7" fill="#78350f" stroke="#fde68a" stroke-width="1.5"/>
+    <!-- Bark Cone Wedged Tightly Inside Triangle Ring -->
+    <circle cx="316" cy="140" r="22" fill="#8c7b6b" stroke="#fde68a" stroke-width="1.5"/>
+    <circle cx="316" cy="140" r="16" fill="#1c1917" stroke="#b5a392" stroke-width="1"/>
+    <!-- 3 Vine Tie Points Holding Cone to Collar -->
+    <line x1="316" y1="105" x2="316" y2="118" stroke="#fde68a" stroke-width="2.5"/>
+    <line x1="279" y1="158" x2="296" y2="149" stroke="#fde68a" stroke-width="2.5"/>
+    <line x1="353" y1="158" x2="336" y2="149" stroke="#fde68a" stroke-width="2.5"/>
 
-  <!-- Bottom Tactical Note Strip -->
-  <rect x="18" y="340" width="364" height="34" fill="#111419" stroke="#262d35" stroke-width="1"/>
-  <rect x="18" y="340" width="4" height="34" fill="#38bdf8"/>
-  <!-- Label 5: Step Core Instruction -->
-  <text x="32" y="361" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="bold">[1단계 핵심] 흔들리지 않는 3점 지지대 결속</text>
+    <!-- RIGHT PANEL BOTTOM: Zoom B — Cutaway of Moss Plug Pressed into Cone Tip (x: 252 ~ 380, y: 190 ~ 288) -->
+    <rect x="252" y="190" width="128" height="98" rx="3" fill="#0b1119" stroke="#22c55e" stroke-width="1.1"/>
+    <!-- Tapered Cone Spout Walls -->
+    <path d="M 282 198 L 298 268 M 350 198 L 334 268" stroke="#b5a392" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tightly Compressed Sphagnum Moss Plug Inside Spout -->
+    <path d="M 290 226 L 342 226 L 334 264 L 298 264 Z" fill="url(#mossPlug01)" stroke="#86efac" stroke-width="1.3"/>
+    <path d="M 296 236 Q 316 244 336 236 M 300 248 Q 316 256 332 248" fill="none" stroke="#bbf7d0" stroke-width="1.5"/>
+    <!-- Downward Compression Arrow (손가락으로 꾹 눌러 밀착) -->
+    <path d="M 316 198 L 316 220" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="316,224 311,216 321,216" fill="#fde68a"/>
+    <!-- Filtered Droplet Passing Below Plug -->
+    <circle cx="316" cy="276" r="4" fill="#38bdf8" stroke="#bae6fd" stroke-width="1"/>
+  </g>
+
+  <!-- Label 2 (y=75) -->
+  <rect x="20" y="60" width="360" height="22" rx="2" fill="#141c26" stroke="#334155" stroke-width="1"/>
+  <text x="28" y="75" fill="#fde68a" font-family="monospace" font-size="8.5" font-weight="bold">다리 3개 중간에 가로 받침대를 묶어 고깔을 끼울 삼각 틀 만들기</text>
+
+  <!-- Label 3 (y=310) -->
+  <rect x="20" y="295" width="360" height="22" rx="2" fill="#141c26" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="28" y="310" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">고깔 윗테두리와 허리를 칡덩굴 줄로 삼발이 기둥에 단단히 묶기</text>
+
+  <!-- Label 4 (y=345) -->
+  <rect x="20" y="330" width="360" height="22" rx="2" fill="#141c26" stroke="#22c55e" stroke-width="0.9"/>
+  <text x="28" y="345" fill="#4ade80" font-family="monospace" font-size="8.5" font-weight="bold">고깔 맨 아래 좁은 구멍에 물이끼를 손가락으로 꾹 눌러 막기</text>
+
+  <!-- Label 5 (y=383) -->
+  <rect x="16" y="368" width="368" height="22" rx="2" fill="#1e293b" stroke="#e02424" stroke-width="1"/>
+  <text x="24" y="383" fill="#ffffff" font-family="monospace" font-size="8.8" font-weight="bold">[1단계 핵심] 위 입구는 활짝 열리고 가로 받침틀로 흔들림 없이 고정</text>
 </svg>

@@ -4,8 +4,8 @@
 [Scene 2] (Carbón vegetal de leña, Arena fina de río lavada, Piedritas redondas de río)
 Carbón vegetal de leña, Arena fina de río lavada, Piedritas redondas de río
 
-[Scene 3] (Paso 1: Montar el trípode con 3 ramas y fijar el cono)
-Paso 1: Montar el trípode con 3 ramas y fijar el cono. Control del tapón: Si queda flojo, saldrá polvo negro de carbón. Asegúrese de que no se mueva al empujar.
+[Scene 3] (Paso 1: Atar un soporte triangular en el trípode, encajar el cono y colocar el tapón de musgo)
+Paso 1: Atar un soporte triangular en el trípode, encajar el cono y colocar el tapón de musgo. Control del soporte y tapón: La boca superior debe quedar totalmente despejada para verter agua, y el anillo triangular central debe sostener firmemente el peso del cono lleno.
 
 [Scene 4] (Paso 2: Triturar carbón al tamaño de guisante y llenar 8 cm abajo)
 Paso 2: Triturar carbón al tamaño de guisante y llenar 8 cm abajo. Regla de grano: Use trozos mayores que granos de arroz. El polvo fino bloquea el paso del agua.

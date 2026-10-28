@@ -262,7 +262,7 @@ export function getLocaleRuntimeScript(): string {
             var item = proto.faqs[idx];
             var val = item[prop];
             if (val !== undefined) {
-              if (prop === 'resolution') {
+              if (prop === 'resolution' || prop === 'causeDiagnostic') {
                 el.innerHTML = renderHighlightTermsClient(val);
               } else {
                 el.textContent = val;
@@ -297,7 +297,7 @@ export function getLocaleRuntimeScript(): string {
           }
         }
 
-        // 5. [선언적 엔진] 인라인 벡터 도면(SVG) 내부 <text> 다국어 핫스왑 (data-svg-step, data-svg-label)
+        // 5. [선언적 엔진] 인라인 벡터 도면(SVG) 내부 <text> 다국어 핫스왑 (data-svg-step, data-svg-label, data-svg-outcome-label)
         document.querySelectorAll('text[data-svg-step]').forEach(function(el) {
           var sIdx = parseInt(el.getAttribute('data-svg-step'), 10);
           var lIdx = parseInt(el.getAttribute('data-svg-label'), 10);
@@ -308,6 +308,16 @@ export function getLocaleRuntimeScript(): string {
             proto.steps[sIdx].svgLabels[lIdx] !== undefined
           ) {
             el.textContent = proto.steps[sIdx].svgLabels[lIdx];
+          }
+        });
+        document.querySelectorAll('text[data-svg-outcome-label]').forEach(function(el) {
+          var lIdx = parseInt(el.getAttribute('data-svg-outcome-label'), 10);
+          if (
+            proto.outcome &&
+            Array.isArray(proto.outcome.svgLabels) &&
+            proto.outcome.svgLabels[lIdx] !== undefined
+          ) {
+            el.textContent = proto.outcome.svgLabels[lIdx];
           }
         });
 

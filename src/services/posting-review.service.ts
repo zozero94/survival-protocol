@@ -1,5 +1,9 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import type { Protocol } from '../types/protocol.types.ts';
 import { SeoService } from './seo.service.ts';
+import { UI_STRINGS } from '../i18n/ui-strings.ts';
+import { SUPPORTED_LOCALES, type SupportedLocale } from '../i18n/locales.ts';
 
 export interface ReviewPillarResult {
   pillar:
@@ -7,7 +11,8 @@ export interface ReviewPillarResult {
     | 'FIELD_REPRODUCIBILITY'
     | 'SEO_SEARCH_INTENT'
     | 'GLOBAL_ECO_LOCALIZATION'
-    | 'LEGAL_GOOGLE_POLICY';
+    | 'LEGAL_GOOGLE_POLICY'
+    | 'SITE_WIDE_UI_LOCALIZATION';
   passed: boolean;
   score: number;
   checks: string[];
@@ -286,6 +291,14 @@ export class PostingReviewService {
         if ((mStep.deepDive?.fieldSpecs?.length || 0) !== (lStep.deepDive?.fieldSpecs?.length || 0)) {
           score -= 10;
           warnings.push(`[${lang}] Step ${i + 1} fieldSpecs 개수 불일치`);
+        } else if (mStep.deepDive?.fieldSpecs && lStep.deepDive?.fieldSpecs) {
+          for (let fIdx = 0; fIdx < lStep.deepDive.fieldSpecs.length; fIdx++) {
+            const fSpec = lStep.deepDive.fieldSpecs[fIdx]!;
+            if (!fSpec.name || !fSpec.imageFileName || !Array.isArray(fSpec.traits) || fSpec.traits.length === 0) {
+              score -= 10;
+              warnings.push(`[${lang}] Step ${i + 1} fieldSpecs[${fIdx}] 필수 속성(name, imageFileName, traits) 누락`);
+            }
+          }
         }
       }
     }
@@ -374,6 +387,81 @@ export class PostingReviewService {
 
     return {
       pillar: 'LEGAL_GOOGLE_POLICY',
+      passed: score >= 80 && warnings.length === 0,
+      score: Math.max(0, score),
+      checks,
+      warnings,
+    };
+  }
+
+  /**
+   * 6. 🌐 사이트 전역 UI 다국어 사전(UI_STRINGS) 및 HTML data-i18n 바인딩 전수 감사 (Site-wide UI Localization Audit)
+   */
+  public static auditSiteWideUiLocalization(publicHtmlDir?: string): ReviewPillarResult {
+    const checks: string[] = [];
+    const warnings: string[] = [];
+    let score = 100;
+
+    const allLocales = Object.keys(SUPPORTED_LOCALES) as SupportedLocale[];
+    const koKeys = Object.keys(UI_STRINGS.ko);
+
+    // 1. 7개 언어 사전 키 1:1 완전 동기화 검사
+    for (const locale of allLocales) {
+      const targetDict = UI_STRINGS[locale] as Record<string, string>;
+      const missingKeys = koKeys.filter((k) => !(k in targetDict));
+      if (missingKeys.length > 0) {
+        score -= 20;
+        warnings.push(`[${locale}] UI_STRINGS에 키가 누락되었습니다: ${missingKeys.join(', ')}`);
+      }
+    }
+    if (warnings.length === 0) {
+      checks.push(`7개 전 언어(${allLocales.join(', ')}) UI_STRINGS 키 1:1 완전 동기화 확인 (총 ${koKeys.length}개 키)`);
+    }
+
+    // 2. 비한국어 6개 언어 내 미번역 한글 잔존 여부 검사
+    const koreanCharRegex = /[가-힣]/;
+    for (const locale of allLocales.filter((l) => l !== 'ko')) {
+      const targetDict = UI_STRINGS[locale] as Record<string, string>;
+      for (const [key, value] of Object.entries(targetDict)) {
+        if (koreanCharRegex.test(value)) {
+          score -= 15;
+          warnings.push(`[${locale}] UI_STRINGS.${key}에 미번역 한글 잔존: "${value}"`);
+        }
+      }
+    }
+    if (!warnings.some((w) => w.includes('미번역 한글 잔존'))) {
+      checks.push('6대 외국어 UI_STRINGS 내 미번역 한글 0건 확인');
+    }
+
+    // 3. 실제 빌드된 public/*.html 내 data-i18n 속성 추출 및 사전 키 대조
+    const targetDir =
+      publicHtmlDir ||
+      (typeof process !== 'undefined' ? path.resolve(process.cwd(), 'public') : undefined);
+    if (targetDir && fs.existsSync(targetDir)) {
+      const htmlFiles = fs.readdirSync(targetDir).filter((f) => f.endsWith('.html'));
+      const usedKeys = new Set<string>();
+
+      for (const fileName of htmlFiles) {
+        const content = fs.readFileSync(path.join(targetDir, fileName), 'utf-8');
+        const matches = content.matchAll(/data-i18n(?:-placeholder)?="([^"]+)"/g);
+        for (const m of matches) {
+          usedKeys.add(m[1]);
+        }
+      }
+
+      const missingInKo = Array.from(usedKeys).filter((k) => !(k in UI_STRINGS.ko));
+      if (missingInKo.length > 0) {
+        score -= 25;
+        warnings.push(
+          `HTML 태그에 data-i18n 속성으로 사용되었으나 UI_STRINGS.ko에 없는 키 감지: ${missingInKo.join(', ')}`
+        );
+      } else {
+        checks.push(`빌드된 HTML 내 모든 data-i18n 키(${usedKeys.size}종)의 UI_STRINGS 100% 매핑 확인`);
+      }
+    }
+
+    return {
+      pillar: 'SITE_WIDE_UI_LOCALIZATION',
       passed: score >= 80 && warnings.length === 0,
       score: Math.max(0, score),
       checks,

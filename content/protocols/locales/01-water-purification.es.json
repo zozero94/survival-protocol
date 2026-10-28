@@ -4,7 +4,7 @@
   "title": "Cómo convertir agua turbia en agua limpia para beber (Filtro natural con carbón y arena)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SUPERVIVENCIA VITAL]",
-  "summary": "Beber agua turbia no tratada en la naturaleza provoca cólicos severos, diarrea y deshidratación peligrosa. Al montar un trípode de ramas, suspender un cono de corteza y colocar carbón, arena y grava en secuencia, el agua turbia se filtra transparente. Hervir esta agua enérgica y continuamente durante 3+ minutos elimina las bacterias microscópicas, haciéndola segura para beber.",
+  "summary": "Beber agua turbia no tratada en la naturaleza provoca cólicos severos, diarrea y deshidratación peligrosa. Al montar un trípode de ramas, atar un marco triangular horizontal a media altura para encajar el cono de corteza con un tapón de musgo y colocar carbón, arena y grava en secuencia, el agua turbia se filtra transparente. Hervir esta agua durante 3+ minutos elimina las bacterias microscópicas.",
   "timeRequired": "25 min (15 min filtrado + 10 min hervido)",
   "successRate": "99.9% (Al colocar en secuencia y hervir 3+ min)",
   "difficulty": "Media (Construido únicamente con materiales naturales)",
@@ -32,8 +32,8 @@
     },
     {
       "id": "mat-05",
-      "name": "Tres ramas rectas del grosor de un dedo (50 cm de largo)",
-      "desc": "Atadas por la parte superior para formar un trípode estable. Sostienen el cono elevado para colocar un vaso debajo."
+      "name": "Tres ramas para el trípode y tres palos transversales cortos",
+      "desc": "Tres palos cortos se atan horizontalmente formando un anillo triangular a media altura del trípode para sostener el cono."
     },
     {
       "id": "mat-06",
@@ -44,35 +44,113 @@
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Paso 1: Montar el trípode con 3 ramas y fijar el cono",
-      "description": "1. **Ensamblar Trípode**: Junte tres ramas rectas del grosor de un dedo, ate la parte superior con lianas o cuerda y abra las patas formando un soporte firme.\n2. **Suspender Cono**: Monte el cono de corteza o el tubo de bambú en posición vertical en el centro del trípode.\n3. **Insertar Tapón Inferior**: Empuje musgo limpio o un trozo de tela en la boquilla estrecha con el dedo. Un tapón suelto provocará la caída de los materiales filtrantes.",
-      "actionNote": "> Control del tapón: Si queda flojo, saldrá polvo negro de carbón. Asegúrese de que no se mueva al empujar.",
+      "title": "Paso 1: Atar un soporte triangular en el trípode, encajar el cono y colocar el tapón de musgo",
+      "description": "1. **Armar Trípode y Marco Triangular**: Ate la punta superior de tres ramas con [Cuerda de Liana Silvestre](/protocol-05.html) y abra las patas. A media altura, **ate tres palos cortos horizontalmente entre las patas formando un anillo de soporte triangular**.\n2. **Encajar el Cono y Doble Amarre**: Introduzca el cono de corteza de abedul **desde arriba en el centro del marco triangular** para que encaje como una cuña. Ate la cintura del cono al travesaño y **sujete también el borde superior del cono a las patas laterales**.\n3. **Tapón Inferior de Musgo**: Presione con fuerza un puñado de musgo limpio en el orificio estrecho inferior con el pulgar.",
+      "actionNote": "> Control del soporte y tapón: La boca superior debe quedar totalmente despejada para verter agua, y el anillo triangular central debe sostener firmemente el peso del cono lleno.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
-        "FIG. 01 // PURIFICATION STEP 1: TRÍPODE Y TAPÓN",
-        "TRIPOD FRAME (TRÍPODE)",
-        "CONE FUNNEL (CONO)",
-        "MOSS PLUG (TAPÓN)",
-        "[PASO 1] MONTAJE DE SOPORTE DE 3 PUNTOS"
-      ]
+        "FIG. 01 // PASO 1: SOPORTE TRIANGULAR Y TAPÓN",
+        "Atar travesaños a media altura formando un marco triangular",
+        "Asegurar el borde superior y la cintura del cono al trípode",
+        "Presionar musgo limpio con fuerza en la boquilla inferior",
+        "[PASO 1] Boca superior despejada y soporte triangular firme"
+      ],
+      "deepDive": {
+        "badge": "TRIPOD CRADLE & MOSS PLUG",
+        "title": "¿Por qué atar un anillo triangular horizontal a media altura del trípode?",
+        "text": "Un cono lleno de arena húmeda, grava y agua pesa bastante; si solo se cuelga con una cuerda floja, se vuelca o se desliza al suelo. Al atar tres travesaños horizontales a media altura de las patas formando un triángulo, el cono se encaja firmemente como en un portavaso, manteniendo la boca superior totalmente libre.",
+        "fieldSpecs": [
+          {
+            "name": "Cono de corteza encajado en trípode con soporte triangular transversal",
+            "scientificName": "Triangular Cross-Braced Tripod & Birch-Bark Cone Mount",
+            "categoryTag": "Amarre Doble con Lianas / Soporte de Carga Estable",
+            "imageFileName": "id-tripod-bark-cone-mount.jpg",
+            "hudCode": "FIG. BIO-01A // MACRO OPTIC",
+            "hudStatus": "TRIPOD CRADLE LOCK: VERIFIED",
+            "traits": [
+              {
+                "label": "ANILLO/RING",
+                "value": "Travesaños atados en triángulo entre las tres patas **sostienen firmemente la cintura del cono**."
+              },
+              {
+                "label": "BORDE/RIM",
+                "value": "Ambos lados del **borde superior se atan a las patas** para evitar que se incline al verter agua."
+              },
+              {
+                "label": "BASE/BOWL",
+                "value": "El espacio libre bajo la boquilla **permite colocar cómodamente el cuenco recolector**."
+              }
+            ],
+            "fieldUse": "Estructura de montaje que soporta el peso de la arena húmeda sin bloquear la entrada de agua"
+          },
+          {
+            "name": "Tapón inferior de musgo esfagno verde compactado",
+            "scientificName": "Compressed Sphagnum Moss Bottom Filter Plug",
+            "categoryTag": "Retención de Carbón / Regulador de Goteo",
+            "imageFileName": "id-sphagnum-moss-plug.jpg",
+            "hudCode": "FIG. BIO-01B // MACRO OPTIC",
+            "hudStatus": "MOSS PLUG DENSITY: TIGHT",
+            "traits": [
+              {
+                "label": "COMPACTADO",
+                "value": "Empuje un puñado de **musgo verde limpio con firmeza dentro de la punta inferior**."
+              },
+              {
+                "label": "RETENCIÓN",
+                "value": "Funciona como una malla densa que **impide que caigan los granos de carbón y arena**."
+              },
+              {
+                "label": "FLUJO",
+                "value": "Regula la salida para que **el agua limpia caiga gota a gota** de manera constante."
+              }
+            ],
+            "fieldUse": "Tapón natural que sostiene el lecho filtrante mientras deja pasar gotas transparentes"
+          }
+        ]
+      }
     },
     {
       "stepNumber": "02",
       "title": "Paso 2: Triturar carbón al tamaño de guisante y llenar 8 cm abajo",
-      "description": "1. **Triturar y Seleccionar**: Tome carbón negro completamente frío de la fogata y golpéelo suavemente con una piedra en **trozos de tamaño guisante (5-8 mm)**. Deseche el polvo fino tipo harina que obstruiría el flujo.\n2. **Empacar Lecho de 8 cm**: Vierta el carbón sobre el tapón de musgo y compáctelo suavemente con una vara formando un lecho nivelado de **cuatro dedos de altura (unos 8 cm)**.",
+      "description": "1. **Triturar y Seleccionar**: Tome [Carbón de Leña](/protocol-09.html) frío y golpéelo suavemente con una piedra en **trozos tamaño guisante (5-8 mm)**. Deseche el polvo fino que obstruiría el flujo.\n2. **Empacar Lecho de 8 cm**: Vierta el carbón sobre el tapón de musgo y compáctelo suavemente con una vara formando una capa de **cuatro dedos de altura (unos 8 cm)**.",
       "actionNote": "> Regla de grano: Use trozos mayores que granos de arroz. El polvo fino bloquea el paso del agua.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
-        "FIG. 02 // PURIFICATION STEP 2: LECHO DE CARBÓN",
-        "CHARCOAL CORE (ACTIVO)",
-        "PORE ABSORPTION (ABSORCIÓN)",
-        "THICKNESS: 8CM (GROSOR)",
-        "[PASO 2] EMPACAR 8CM DE CARBÓN TRITURADO"
+        "FIG. 02 // PASO 2: LECHO DE CARBÓN DE 8 CM",
+        "Carbón triturado tamaño guisante (desechar el polvo fino)",
+        "Microporos que atrapan malos olores y toxinas orgánicas",
+        "Llenar cuatro dedos de altura (8 cm) sobre el musgo",
+        "[PASO 2] Empacar 8 cm de carbón tamaño guisante y nivelar"
       ],
       "deepDive": {
         "badge": "FIELD SCIENCE",
-        "title": "Mecanismo de adsorción del carbón",
-        "text": "Cuando la madera se carboniza a alta temperatura sin oxígeno, se generan millones de poros microscópicos. Estos microporos ejercen intensas fuerzas de van der Waals que atrapan toxinas orgánicas disueltas y malos olores en la superficie del carbón."
+        "title": "Mecanismo de adsorción del carbón y granulometría por capas",
+        "text": "Cuando la madera se carboniza sin oxígeno, se forman millones de microporos que atrapan toxinas orgánicas y malos olores. Triturar el carbón al tamaño de un guisante (5-8 mm) maximiza la superficie de contacto sin obstruir el flujo de agua.",
+        "fieldSpecs": [
+          {
+            "name": "Corte vertical de columna filtrante de 4 capas (musgo, carbón, arena, grava)",
+            "scientificName": "Vertical Gravity-Fed Stratified Bio-Filter Column",
+            "categoryTag": "Base de Carbón / Capa Media de Arena / Amortiguador de Grava",
+            "imageFileName": "id-layered-charcoal-sand-filter.jpg",
+            "hudCode": "FIG. BIO-01C // MACRO OPTIC",
+            "hudStatus": "STRATA ORDER: BOTTOM-TO-TOP",
+            "traits": [
+              {
+                "label": "BASE/CHAR",
+                "value": "Coloque **cuatro dedos (8 cm) de carbón tamaño guisante (5-8 mm)** sobre el tapón de musgo."
+              },
+              {
+                "label": "MEDIO/SAND",
+                "value": "Añada **tres dedos (6 cm) de arena fina de río lavada** en una capa plana sobre el carbón."
+              },
+              {
+                "label": "TOPE/GRAVA",
+                "value": "Cubra con **dos dedos (4 cm) de piedritas redondas** arriba para dispersar la presión del agua."
+              }
+            ],
+            "fieldUse": "Columna vertical por gravedad que purifica el agua turbia pasando por grava, arena, carbón y musgo"
+          }
+        ]
       }
     },
     {
@@ -82,11 +160,11 @@
       "actionNote": "> Lecho horizontal: Mantenga la superficie de arena plana para garantizar una filtración uniforme en toda la columna.",
       "svgFileName": "pr01-step-03.svg",
       "svgLabels": [
-        "FIG. 03 // PURIFICATION STEP 3: CAPA DE ARENA",
-        "RIVER SAND (ARENA)",
-        "PARTICLE FILTER (FILTRO)",
-        "THICKNESS: 6CM (GROSOR)",
-        "[PASO 3] FIJAR CARBÓN Y ATRAPAR LIMO"
+        "FIG. 03 // PASO 3: CAPA DE ARENA FINA DE 6 CM",
+        "Arena fina de río enjuagada 2-3 veces sin restos de lodo",
+        "Los granos finos compactos bloquean las partículas de barro",
+        "Extender tres dedos de altura (6 cm) planos sobre el carbón",
+        "[PASO 3] Cubrir el carbón con 6 cm de arena bien nivelada"
       ]
     },
     {
@@ -96,25 +174,25 @@
       "actionNote": "> Regla de purga: Nunca beba las primeras 1-2 tazas. Deje que el filtro se autolimpie hasta que el goteo sea cristalino.",
       "svgFileName": "pr01-step-04.svg",
       "svgLabels": [
-        "FIG. 04 // PURIFICATION STEP 4: GRAVA Y PURGA",
-        "PEBBLE LAYER (GRAVA)",
-        "FLUSH FIRST CUPS (PURGA)",
-        "CLEAR DRIP (GOTEO)",
-        "[PASO 4] AMORTIGUAR Y PURGAR PRIMERAS TAZAS"
+        "FIG. 04 // PASO 4: CAPA DE GRAVA Y PURGA INICIAL",
+        "Capa de grava del tamaño de una uña (4 cm) y hoja difusora",
+        "Desechar las primeras 1-2 tazas con polvo negro de carbón",
+        "Recoger solo el agua cristalina en un recipiente limpio",
+        "[PASO 4] Proteger la arena con grava y tirar las 2 primeras tazas"
       ]
     },
     {
       "stepNumber": "05",
       "title": "Paso 5: Hervir el agua limpia durante 3+ minutos continuos",
-      "description": "1. **Transferir al Recipiente**: Vierta el agua filtrada y transparente en una vasija de barro, piedra o bambú sobre las brasas de la fogata.\n2. **Hervido Enérgico Continuo**: Cuando se formen burbujas grandes en toda la superficie, mantenga el hervor durante al menos **3 minutos completos (5 minutos a más de 1.000 m de altitud)**.\n3. **Enfriar y Beber**: Deje enfriar el agua antes de beberla con seguridad.",
+      "description": "1. **Transferir al Recipiente**: Vierta el agua filtrada y transparente en una vasija de barro o piedra colocada sobre piedras de soporte en una [Fogata de Fricción](/protocol-02.html).\n2. **Hervido Enérgico Continuo**: Cuando se formen burbujas grandes en toda la superficie, mantenga el hervor durante al menos **3 minutos completos (5 minutos a más de 1.000 m de altitud)**.\n3. **Enfriar y Beber**: Deje enfriar el agua antes de beberla con seguridad.",
       "actionNote": "> Hervido obligatorio: El agua transparente NO es agua estéril. La filtración física seguida de ebullición térmica garantiza un 99.9% de seguridad biológica.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
-        "FIG. 05 // PURIFICATION STEP 5: HERVIDO A 100°C",
-        "BOILING 100°C (HERVOR)",
-        "TIME: 3+ MIN (MINUTOS)",
-        "PATHOGEN FREE (99.9%)",
-        "[PASO 5] HERVIR CON FUERZA POR 3+ MINUTOS"
+        "FIG. 05 // PASO 5: ESTERILIZACIÓN POR HERVIDO A 100°C",
+        "Hervor vigoroso con burbujas grandes sobre piedras de fogón",
+        "Mantener el hervor continuo por 3+ min (5 min en montaña)",
+        "Elimina el 99.9% de bacterias y quistes de parásitos",
+        "[PASO 5] Hervir siempre el agua clara durante 3+ minutos"
       ],
       "deepDive": {
         "badge": "FIELD SCIENCE",
@@ -130,15 +208,24 @@
   },
   "shortsScript": {
     "hook": "¡Beber agua con lodo en la naturaleza causará diarrea letal en 3 días! ¡Mira cómo purificarla sin plástico!",
-    "body": "Monta un trípode, cuelga un cono y tapa la base con musgo. Coloca 8 cm de carbón partido, 6 cm de arena limpia y 4 cm de piedritas. ¡Vierte el agua turbia! Tira las 2 primeras tazas de lavado con polvo de carbón. Regla crítica: ¡Agua transparente NO significa agua segura! Debes hervirla enérgicamente durante 3+ minutos para destruir microbios invisibles.",
+    "body": "Monta un trípode con un soporte triangular a media altura, encaja un cono de corteza y tapa la base con musgo. Coloca 8 cm de carbón partido, 6 cm de arena limpia y 4 cm de piedritas. ¡Vierte el agua turbia! Tira las 2 primeras tazas de lavado. Regla crítica: ¡Agua transparente NO significa agua segura! Debes hervirla durante 3+ minutos.",
     "outro": "Consigue los manuales de supervivencia sin internet en el enlace de mi perfil."
   },
   "outcome": {
     "svgFileName": "pr01-outcome.svg",
-    "title": "Filtro natural de carbón y arena terminado",
-    "description": "Columna de filtración rústica suspendida en un trípode de ramas con capas de carbón, arena limpia, piedritas y tapón de musgo que convierten agua turbia en agua cristalina apta para hervir y beber."
+    "title": "Purificador natural de carbón y arena sobre trípode con marco triangular",
+    "description": "Cono de corteza fijado en un trípode con soporte triangular transversal, con capas de musgo, carbón (8 cm), arena fina (6 cm) y grava (4 cm) para clarificar agua turbia antes de hervirla 3 minutos.",
+    "svgLabels": [
+      "PR-01 OUTCOME // PURIFICADOR DE AGUA DE CARBÓN Y ARENA",
+      "Paso 1: Atar soporte triangular en trípode, fijar cono y musgo",
+      "Pasos 2-3: Colocar 8 cm de carbón y 6 cm de arena lavada",
+      "Paso 4: Añadir 4 cm de grava, filtrar y tirar 1-2 tazas",
+      "Paso 5: Hervir el agua clara con burbujas grandes por 3+ min",
+      "Resultado: Agua cristalina, sin olor y 99.9% libre de microbios",
+      "[CONTROL FINAL] Fijar soporte · Desechar purga · Hervir 3+ min"
+    ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-16T13:34:53+09:00",
-  "contentHash": "2abe4cfb93c63475"
+  "updatedAt": "2026-10-27T00:18:03.903Z",
+  "contentHash": "ed3f942f6826c6c2"
 }

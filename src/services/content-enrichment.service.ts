@@ -248,6 +248,8 @@ export class CrossLinkerService {
       }
     };
 
+    inspectField(protocol.summary, 'summary');
+
     (protocol.materials || []).forEach((mat, idx) => {
       inspectField(mat.desc, `materials[${mat.id || idx}].desc`);
     });
@@ -255,6 +257,11 @@ export class CrossLinkerService {
     (protocol.steps || []).forEach(step => {
       inspectField(step.description, `steps[${step.stepNumber}].description`);
       inspectField(step.actionNote, `steps[${step.stepNumber}].actionNote`);
+    });
+
+    (protocol.faqs || []).forEach((faq, idx) => {
+      inspectField(faq.causeDiagnostic, `faqs[${idx}].causeDiagnostic`);
+      inspectField(faq.resolution, `faqs[${idx}].resolution`);
     });
 
     // 문맥 기반 미연결 프로토콜 추천 탐지

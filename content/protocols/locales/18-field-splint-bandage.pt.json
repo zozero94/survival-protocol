@@ -1,0 +1,256 @@
+{
+  "protocolId": "PR-18",
+  "category": "MEDICINE",
+  "title": "Como imobilizar fraturas e estancar sangramentos com galhos retos, musgo e pano fervido",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[PRIMEIROS SOCORROS] Prevenção de corte arterial/nervoso, choque hemorrágico e necrose",
+  "summary": "Quando um osso do braço ou da perna se quebra em uma queda na mata ou em escombros, deixar o membro solto faz com que as pontas afiadas do osso cortem artérias e nervos próximos, causando hemorragia grave ou paralisia permanente. No campo sem hospital, lave ao redor da ferida com [Sabão Natural de Cinzas](/protocol-13.html) e [Água Filtrada Fervida](/protocol-01.html) morna para evitar tétano e infecções, pressione uma compressa de estopa fervida por 10 minutos sobre o sangramento e imobilize tanto a articulação de cima quanto a de baixo com dois galhos retos forrados com musgo e [Couro Natural Macio](/protocol-17.html), amarrados em 4 pontos com [Corda de Cipó Silvestre](/protocol-05.html).",
+  "timeRequired": "Cerca de 20 min (5 min estancamento + 10 min acolchoamento + 5 min amarração em 4 pontos)",
+  "successRate": "99% (Com imobilização de duas articulações e teste de retorno rosado na unha em 2 s)",
+  "difficulty": "Médio (Executável na hora com galhos, musgo e pano fervido sem kit de primeiros socorros)",
+  "outputPerHour": "1 conjunto completo de tala dupla acolchoada de duas articulações e tipóia de couro",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 galhos retos e firmes da grossura do polegar (Mais longos que as articulações de cima e de baixo)",
+      "desc": "Galhos rígidos de madeira dura que não enverguem. Para um antebraço quebrado, escolha varetas de **dois palmos e meio (45-50 cm)** que cubram do cotovelo até a ponta dos dedos, e alise os nós com um [Machado ou Faca de Pedra](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "4 punhados de musgo esfagno limpo / folhas secas e couro macio (Para acolchoamento interno)",
+      "desc": "Almofada macia que impede que a madeira dura aperte diretamente a carne inchada e os ossos, evitando a morte do tecido (necrose). Forre o interior dos galhos com 2 cm de espessura e envolva com [Couro Natural Macio](/protocol-17.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Pano de estopa ou algodão lavado com sabão de cinzas e fervido (Compressa e 4 tiras largas)",
+      "desc": "Uma compressa grossa dobrada em 8 camadas do tamanho da palma para pressionar a ferida, mais quatro tiras de pano de dois dedos de largura para não cortar a pele ao amarrar."
+    },
+    {
+      "id": "mat-04",
+      "name": "1 litro de água limpa fervida e resfriada + Sabão natural de cinzas",
+      "desc": "Água passada no [Filtro de Água Natural](/protocol-01.html) e fervida, junto com [Sabão Natural de Cinzas](/protocol-13.html) para lavar as mãos do socorrista e remover a terra ao redor do ferimento."
+    },
+    {
+      "id": "mat-05",
+      "name": "4 cordas de cipó silvestre e 1 peça triangular grande de couro (Para amarração e tipóia)",
+      "desc": "[Corda de Cipó Silvestre](/protocol-05.html) para amarrar os quatro pontos acima e abaixo da fratura, e um pano triangular de couro para apoiar o braço na altura do coração."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Lavar ao redor da ferida com água fervida e pressionar por 10 minutos com pano fervido",
+      "description": "1. **Lavar as Mãos e Limpar a Terra ao Redor**: Lave bem as mãos com [Sabão Natural de Cinzas](/protocol-13.html) e despeje devagar [Água Filtrada Fervida](/protocol-01.html) morna de cima para baixo ao redor da ferida para remover terra e areia, prevenindo o tétano.\n2. **Pressionar por 10 Minutos com Compressa de 8 Camadas**: Dobre um pano de estopa fervido em **8 camadas do tamanho da palma**, coloque sobre o sangramento e **pressione com firmeza constante por 10 minutos seguidos** sem levantar.\n3. **Nunca Forçar o Osso para o Lugar**: Mesmo que o osso esteja torto ou aparente, nunca puxe nem empurre para dentro para não romper artérias profundas; **apoie o membro exatamente na posição encontrada**.",
+      "actionNote": "> Nunca arranque a primeira compressa encharcada: Levantar o pano para olhar arranca o coágulo recém-formado e faz o sangue jorrar novamente. Se a primeira compressa encharcar, deixe-a no lugar e coloque outra compressa limpa por cima.",
+      "svgFileName": "pr18-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WOUND WASH & DIRECT PRESSURE HEMOSTASIS",
+        "Lavar terra ao redor com água fervida morna e sabão de cinzas",
+        "Pressionar compressa fervida de 8 camadas por 10 min seguidos",
+        "Se encharcar, não tire; coloque outro pano limpo por cima",
+        "[PASSO 1] Lavar com água fervida e pressionar 10 min para estancar"
+      ],
+      "deepDive": {
+        "badge": "CLEANING & DIRECT PRESSURE",
+        "title": "Por que nunca se deve jogar terra ou cinza na ferida nem amarrar um cordão fino no braço",
+        "text": "Jogar terra seca, cinza ou pó de folhas cruas em uma ferida aberta leva esporos de tétano e bactérias direto para a corrente sanguínea. Da mesma forma, apertar uma corda fina na parte superior do braço corta toda a circulação arterial e causa necrose irreversível em poucas horas. Pressionar uma compressa grossa de estopa fervida diretamente sobre o sangramento por 10 minutos fecha apenas os vasos rompidos mantendo o membro vivo.",
+        "fieldSpecs": [
+          {
+            "name": "Compressa hemostática de estopa de 8 camadas lavada com sabão de cinzas e fervida",
+            "scientificName": "Boiled 8-Layer Coarse Hemp Direct-Pressure Pad",
+            "categoryTag": "Lavagem de Feridas / Compressão Direta de 10 Minutos",
+            "imageFileName": "id-boiled-burlap-wound-pad.jpg",
+            "hudCode": "FIG. BIO-18A // MACRO OPTIC",
+            "hudStatus": "BOILED STERILE PAD: VERIFIED",
+            "traits": [
+              {
+                "label": "ESTÉRIL",
+                "value": "Lavada com [Sabão de Cinzas](/protocol-13.html) e **fervida por mais de 10 minutos** contra bactérias."
+              },
+              {
+                "label": "8 CAMADAS",
+                "value": "Dobrada em **8 camadas do tamanho da palma** para absorver sangue e distribuir a pressão."
+              },
+              {
+                "label": "MORNA",
+                "value": "Resfriada até ficar **morna no dorso da mão** antes de encostar no ferimento."
+              }
+            ],
+            "fieldUse": "Compressa primária pressionada por 10 minutos sobre a ferida para estancar o sangue e barrar sujeira"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Escolher 2 galhos retos que cubram ambas as articulações e forrar com musgo e couro",
+      "description": "1. **Cortar 2 Galhos Mais Longos que Ambas as Articulações**: Escolha dois galhos retos da grossura do polegar que **alcancem desde a articulação de cima (cotovelo/joelho) até passar a de baixo (pulso/tornozelo)—cerca de 45-50 cm**—e raspe os nós com uma [Lasca de Pedra Afiada](/protocol-04.html).\n2. **Forrar o Interior com Musgo e Couro Macio**: Para que a madeira dura não machuque a pele inchada, cubra toda a face interna dos galhos com **musgo limpo ou folhas macias de 2 cm de espessura** e envolva com [Couro Natural Macio](/protocol-17.html).\n3. **Colocar um Rolo de Musgo na Palma da Mão**: Em fraturas de antebraço ou pulso, coloque um **rolinho de musgo do tamanho de um ovo na palma** para manter os dedos levemente curvados.",
+      "actionNote": "> Proibido usar gravetos curtos que só cubram o meio quebrado: Amarrar gravetos curtos só no meio do osso quebrado deixa o cotovelo e o pulso girarem, torcendo as pontas quebradas. Use sempre galhos longos que travem as duas articulações vizinhas.",
+      "svgFileName": "pr18-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWO-JOINT SPLINT SIZING & MOSS PADDING",
+        "2 galhos longos da articulação superior (cotovelo) à inferior (pulso)",
+        "Forrar lado interno com musgo (2 cm) e couro macio acolchoado",
+        "Colocar rolo de musgo na palma para manter dedos curvados",
+        "[PASSO 2] Cobrir ambas as articulações e acolchoar o interior"
+      ],
+      "deepDive": {
+        "badge": "TWO-JOINT IMMOBILIZATION",
+        "title": "Por que imobilizar apenas o local quebrado falha se as duas articulações não forem travadas",
+        "text": "O antebraço e a canela possuem dois ossos longos paralelos que giram um sobre o outro sempre que o pulso ou o cotovelo se movem. Se a tala cobrir só o meio do braço, qualquer giro do pulso faz as pontas quebradas moerem como pedras de moinho, rasgando vasos sanguíneos. Prolongar os galhos rígidos além do cotovelo e do pulso reduz a torção a zero.",
+        "fieldSpecs": [
+          {
+            "name": "Par de galhos retos de madeira dura forrados por dentro com musgo e couro macio",
+            "scientificName": "Moss-and-Buckskin Padded Dual Hardwood Splint Sticks",
+            "categoryTag": "Trava de Duas Articulações / Almofada Antinecrose",
+            "imageFileName": "id-padded-hardwood-splint-sticks.jpg",
+            "hudCode": "FIG. BIO-18B // MACRO OPTIC",
+            "hudStatus": "DUAL SPLINT PADDING: VERIFIED",
+            "traits": [
+              {
+                "label": "RIGIDEZ",
+                "value": "Dois **galhos retos da grossura do polegar (2 cm)** com todos os nós raspados."
+              },
+              {
+                "label": "ALMOFADA",
+                "value": "Lado interno forrado com **2 cm de musgo verde envolto em couro macio**."
+              },
+              {
+                "label": "TAMANHO",
+                "value": "Medindo **dois palmos e meio (45-50 cm)** para travar cotovelo e pulso juntos."
+              }
+            ],
+            "fieldUse": "Posicionados nos dois lados do membro para bloquear o giro articular e proteger a pele"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Apoiar as talas nos dois lados e amarrar em 4 pontos evitando o centro da ferida",
+      "description": "1. **Apoiar as 2 Talas Acolchoadas nos Dois Lados**: Enquanto um ajudante segura com cuidado as articulações de cima e de baixo, posicione os dois galhos acolchoados **paralelos nos lados interno e externo do membro**.\n2. **Amarrar em 4 Pontos (2 Acima e 2 Abaixo) Evitando a Fratura**: Nunca amarre em cima do osso quebrado. Passe tiras largas de pano em **dois pontos acima da fratura e dois pontos abaixo (4 no total)** e firme com [Corda de Cipó Silvestre](/protocol-05.html).\n3. **Deixar Folga para 1 Dedo Sob Cada Amarra**: Confira se **cabe um dedo mínimo justo por baixo de cada tira** para não prender o sangue, e dê os nós sobre a madeira externa.",
+      "actionNote": "> Proibido amarrar sobre a fratura ou usar corda fina direto na pele: Apertar em cima do osso quebrado empurra farpas ósseas para dentro da carne. Também nunca amarre cipó fino direto na pele; passe sempre tiras de pano de dois dedos de largura primeiro.",
+      "svgFileName": "pr18-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 4-POINT SPLIT LASHING (AVOID FRACTURE ZONE)",
+        "Apoiar 2 galhos acolchoados com musgo nos dois lados do braço",
+        "Deixar a ferida livre; amarrar 2 pontos acima e 2 abaixo (4 total)",
+        "Deixar folga de 1 dedo sob a tira e dar o nó sobre a madeira",
+        "[PASSO 3] Não apertar sobre a fratura; dividir em 4 amarras"
+      ],
+      "deepDive": {
+        "badge": "4-POINT SPLIT LASHING",
+        "title": "Por que amarrar 4 tiras largas acima e abaixo evita o efeito torniquete e o balanço",
+        "text": "Apertar apenas uma ou duas cordas finas estrangula as veias como um torniquete enquanto os galhos continuam balançando como uma gangorra. Ao distribuir quatro faixas largas de pano (duas acima e duas abaixo do centro ferido), a pressão se espalha sem bloquear a circulação e trava totalmente a tala.",
+        "fieldSpecs": [
+          {
+            "name": "Tala amarrada em 4 pontos com faixas largas de pano e cipó (centro livre)",
+            "scientificName": "Four-Point Broad-Cloth & Vine Lashing Splint Assembly",
+            "categoryTag": "Proteção sem Contato na Fratura / Amarração em 4 Pontos",
+            "imageFileName": "id-four-point-splint-lashing.jpg",
+            "hudCode": "FIG. BIO-18C // MACRO OPTIC",
+            "hudStatus": "4-POINT LASHING: VERIFIED",
+            "traits": [
+              {
+                "label": "4 PONTOS",
+                "value": "Deixa o centro quebrado livre e **amarra 2 pontos acima e 2 pontos abaixo**."
+              },
+              {
+                "label": "FAIXA LARGA",
+                "value": "Usa **tiras de pano de 2 dedos de largura** sob o cipó para não cortar a carne."
+              },
+              {
+                "label": "1 DEDO",
+                "value": "Mantém **espaço para passar um dedo** sob cada faixa, protegendo o fluxo sanguíneo."
+              }
+            ],
+            "fieldUse": "Une os dois galhos acolchoados em uma gaiola firme sem comprimir o foco da fratura"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Testar o retorno rosado da unha em 2 segundos e elevar na altura do coração",
+      "description": "1. **Testar Retorno Rosado em 2 Segundos na Unha**: Logo após amarrar e a cada 30 minutos, **aperte a unha do polegar ou do pé machucado até ficar branca, solte e confirme se a cor rosada volta em até 2 segundos**.\n2. **Afrouxar os Nós se Esfriar ou Formigar**: Se as pontas dos dedos ficarem geladas, pálidas ou roxas, ou formigarem, o inchaço está apertando as faixas; **afrouxe imediatamente os 4 nós em meio dedo**.\n3. **Apoiar na Altura do Coração com Tipóia de Couro**: Pendure uma **tipóia triangular larga de [Couro Natural Macio](/protocol-17.html) no pescoço para manter a mão levemente mais alta que o cotovelo (altura do coração)** e reduzir o inchaço.",
+      "actionNote": "> Verificação obrigatória da unha a cada 30 minutos: Mesmo deixando um dedo de folga no início, o inchaço interno da fratura aumenta com o tempo e pode cortar a circulação causando necrose. Teste a unha a cada 30 minutos.",
+      "svgFileName": "pr18-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 2-SECOND NAIL CIRCULATION CHECK & ELEVATED SLING",
+        "Apertar unha e soltar: ver cor rosada voltar em até 2 seg",
+        "Pendurar tipóia larga de couro mantendo a mão ao coração",
+        "Se os dedos ficarem frios ou roxos, afrouxar os 4 nós",
+        "[PASSO 4] Checar unha em 2 s a cada 30 min e elevar ao coração"
+      ],
+      "deepDive": {
+        "badge": "CIRCULATION CHECK & ELEVATION",
+        "title": "Por que apertar a unha e contar 2 segundos é o teste que salva o braço ou a perna",
+        "text": "Debaixo das unhas existe uma rede de vasos capilares finíssimos que mostra na hora se o sangue está chegando até a ponta dos dedos. Ao apertar a unha, o sangue sai e ela fica branca; ao soltar, se o tom rosado voltar em até 2 segundos, a circulação está ótima. Se demorar mais de 2 segundos ou os dedos esfriarem, as amarras estão bloqueando as artérias e precisam ser afrouxadas na hora.",
+        "fieldSpecs": [
+          {
+            "name": "Tipóia de couro na altura do coração e teste de retorno rosado na unha em 2 s",
+            "scientificName": "Heart-Level Buckskin Arm Sling & 2-Second Nail-Bed Blanch Check",
+            "categoryTag": "Elevação Anti-inchaço / Monitoramento de Circulação Distal",
+            "imageFileName": "id-capillary-nail-blanch-sling.jpg",
+            "hudCode": "FIG. BIO-18D // MACRO OPTIC",
+            "hudStatus": "2-SEC PINK REFILL: VERIFIED",
+            "traits": [
+              {
+                "label": "UNHA 2 SEG",
+                "value": "Ao soltar a unha pressionada, **ela passa de branca para rosada em até 2 segundos**."
+              },
+              {
+                "label": "ALTURA",
+                "value": "A tipóia de couro sustenta **a mão levemente acima do cotovelo (altura do coração)**."
+              },
+              {
+                "label": "CALOR",
+                "value": "As pontas dos dedos ficam **visíveis para checar calor e sensibilidade a cada 30 min**."
+              }
+            ],
+            "fieldUse": "Estabiliza o braço junto ao peito reduzindo o inchaço enquanto permite checar a circulação a cada 30 minutos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro fatal: Empurrar ossos expostos à força ou apertar tanto as cordas que o sangue pare de circular",
+    "description": "Tentar puxar, endireitar ou empurrar à força um osso quebrado ou exposto na selva faz com que as bordas ósseas afiadas cortem grandes artérias e nervos, causando hemorragia fatal ou paralisia definitiva. Além disso, empurrar um osso sujo de terra para dentro causa infecção óssea grave e tétano. Por outro lado, amarrar cordas apertadas demais sem checar as unhas a cada 30 minutos corta o sangue conforme o membro incha, gerando necrose em poucas horas. Este protocolo é uma imobilização de emergência para evitar danos secundários até o resgate médico.",
+    "consequence": "Resultado: Corte arterial ou nervoso, choque hemorrágico, tétano profundo ou necrose do membro por falta de sangue"
+  },
+  "shortsScript": {
+    "hook": "Se quebrar um braço ou perna na mata, tentar colocar no lugar à força ou amarrar errado pode cortar uma artéria! Veja como salvar com 2 galhos!",
+    "body": "Primeiro, lave ao redor da ferida com água fervida morna e pressione uma compressa de estopa fervida de 8 camadas por 10 minutos. Segundo, gravetos curtos deixam as articulações torcerem o osso: escolha 2 galhos retos que cubram do cotovelo ao pulso e forre por dentro com 2 cm de musgo e couro. Terceiro, apoie as talas nos dois lados, deixe a ferida livre e amarre 4 tiras largas de pano —2 acima e 2 abaixo— deixando folga para um dedo. Quarto, cheque a cada 30 minutos se a unha volta a ficar rosada em 2 segundos!",
+    "outro": "Acesse o manual médico de sobrevivência offline sem internet no link do perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr18-outcome.svg",
+    "title": "Sistema Completo de Tala Dupla de Duas Articulações e Teste de Unha em 2 s",
+    "description": "Sistema de trauma de campo em 4 etapas: compressão direta de 10 minutos com estopa fervida, tala dupla de galhos acolchoados com musgo e couro cobrindo ambas as articulações, amarração em 4 pontos fora da fratura e checagem da unha a cada 30 minutos.",
+    "svgLabels": [
+      "FIG. OUTCOME // FIELD FRACTURE SPLINT & HEMOSTASIS SYSTEM",
+      "STAGE 1: Compressa Fervida 8 Camadas Pressão 10 Min",
+      "STAGE 2: Galhos 2 Articulações + Almofada Musgo e Couro",
+      "STAGE 3: Evitar Ferida; Amarrar 2 Acima e 2 Abaixo (4 Total)",
+      "STAGE 4: Tipóia ao Coração e Unha Rosada em 2 Seg",
+      "SAFETY RULE: Folga de 1 Dedo Sob Tiras e Não Forçar Osso",
+      "[FINAL] Compressa + Tala Acolchoada 2 Articulações + Unha 2 Seg = 0% Dano Secundário"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Uma hora depois de amarrar a tala, meus dedos ficaram frios e formigando. O que eu faço?",
+      "causeDiagnostic": "O inchaço natural dentro da fratura está aumentando e fazendo com que as faixas antes ajustadas agora apertem os vasos sanguíneos.",
+      "resolution": "Deixar apertado pode causar necrose. Enquanto um ajudante segura os dois galhos da tala para o braço não mexer, desamarre os 4 nós de [Corda de Cipó Silvestre](/protocol-05.html) um por um, afrouxe até caber novamente um dedo mínimo por baixo e confirme na hora se a unha volta a ficar rosada em 2 segundos."
+    },
+    {
+      "question": "O braço ou a perna quebrada está dobrado em um ângulo estranho. Como coloco galhos retos?",
+      "causeDiagnostic": "Fraturas perto de articulações costumam travar em ângulo; forçá-las para ficarem retas rasga artérias e nervos.",
+      "resolution": "Jamais force o osso para ficar reto. Preencha os espaços vazios da dobra com bastante musgo limpo, folhas secas e [Couro Natural Macio](/protocol-17.html) para acolchoar o formato atual, e depois amarre os galhos por fora fixando o membro exatamente nessa posição."
+    }
+  ],
+  "createdAt": "2026-10-28T09:00:00+09:00",
+  "updatedAt": "2026-10-28T00:18:06.707Z",
+  "contentHash": "c4a0b16244afc3ec"
+}

@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-17",
+  "category": "MATERIALS",
+  "title": "Turning Raw Animal Hide into Durable Waterproof Leather with Brewed Oak Bark Water and Wood Ash Lye (Field Natural Leather Making)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[RAWHIDE SPOILAGE DEFENSE & PERMANENT WATERPROOF WINTER LEATHER SELF-SUFFICIENCY]",
+  "summary": "During long-term isolation, raw animal hides obtained through [animal traps and hunting](/protocol-08.html) breed maggots and rot within a single day due to leftover flesh and moisture, or dry under the sun into stiff board-like rawhide unusable for clothing or shoes. In the wild without chemicals, you first soak the rawhide in slippery 'white wood-ash water' used in [natural lye soap](/protocol-13.html) to loosen and push off the hair cleanly, then steep the hide for a week in dark reddish-brown 'brewed oak bark water' made from crushed inner oak bark found around a [sealed pit charcoal kiln](/protocol-09.html). Just like biting into an acorn or unripe persimmon puckers your mouth, the natural 'astringent preservative sap' inside oak inner bark soaks deep into the hide to stop bacteria from rotting it, while wood smoke adds a waterproof outer coat so you can stitch warm winter coats and boots with [bone needles and sinew thread](/protocol-14.html).",
+  "timeRequired": "7-10 Days (Scraping Fat & Ash Water Hair Removal 2d + Oak Bark Water Soak 5-7d + Oiling & Smoking 1d)",
+  "successRate": "93% (When using fully cooled oak bark water and verifying uniform brown color right to the center of the hide cut)",
+  "difficulty": "Moderate (Requires a blunt stone to avoid tearing the hide & soaking from weak to strong bark water in order)",
+  "outputPerHour": "Turns 1 medium deer/goat hide (4-5 two-handspan panels) into waterproof leather for winter coats, boots, and packs",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Fresh Raw Animal Hide & Blunt River Stone or Bone Scraper for Removing Inner Fat",
+      "desc": "Fresh deer, goat, or wild boar hide skinned after [animal trapping and hunting](/protocol-08.html), paired with a [rounded-edge stone scraper](/protocol-04.html) or blunt shinbone paddle to push off the inner white fat layer without poking holes in the hide."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Backpack Load of Rough Outer & Red Inner Oak Bark (Approx. 5-6kg)",
+      "desc": "Bark stripped from dead or fallen oak (acorn tree) or chestnut trunks used for a [sealed pit charcoal kiln](/protocol-09.html). The reddish inner bark right beneath the rough outer bark is packed with puckering 'astringent preservative sap' that keeps leather from ever rotting."
+    },
+    {
+      "id": "mat-03",
+      "name": "5-6 Handfuls of White Oak Ash & Clear Stream Water for Loosening Hair Roots",
+      "desc": "White wood ash used in making [natural lye soap](/protocol-13.html). Dissolving it in water creates slippery soapy ash water that gently swells hair pores so hair can be pushed off cleanly without a blade."
+    },
+    {
+      "id": "mat-04",
+      "name": "Clay-Lined Ground Pit (or Hollowed Log Trough) & Hammerstone for Crushing Bark",
+      "desc": "A ground pit dug large enough to submerge the hide and lined thickly with clay so water cannot leak, plus a dense river stone for pounding oak bark into thumbnail-sized shreds."
+    },
+    {
+      "id": "mat-05",
+      "name": "1 Cup of Warm Animal Fat for Softening & Flameless Rotten Oak Smoke",
+      "desc": "Warm animal fat worked into the hide fibers so it does not dry stiff, paired with cool flameless wood smoke from an [earthen hearth](/protocol-06.html) to give the leather surface a waterproof coating."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Push Off Inner Fat Over a Rounded Log and Soak in Wood Ash Water to Slip the Hair",
+      "description": "1. **Push Off Inner Fat & Flesh**: Drape the rawhide over a smooth log thicker than your forearm and push downward firmly with a two-handed [blunt stone scraper](/protocol-04.html) until all white fat and flesh are cleared and **no greasiness remains at your fingertips**.\n2. **Soak in Ash Water to Loosen Pores**: Dissolve **five handfuls** of [white oak ash](/protocol-13.html) in a bucket of water until slippery to the touch, weigh the hide down with stones, and **submerge it for 2-3 days** until hair roots loosen on their own.\n3. **Scrape Off Hair with Wood Paddle & Rinse in Stream**: When hair pulls out effortlessly with your thumb, place the hide back on the log, push off the hair and dark outer skin with a blunt wooden paddle, and **soak in a flowing stream for half a day** to wash out all ash water.",
+      "actionNote": "> Avoid Sharp Stone Blades & Prolonged Bare-Hand Contact with Ash Water: Scraping fat with a sharp stone knife slices holes through the hide; always push with a blunt bone or rounded river stone. Turn the hide with a wooden stick and rinse your hands with clear water after handling.",
+      "svgFileName": "pr17-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FLESHING BEAM & WOOD ASH LYE DEHAIRING",
+        "Pushing off inner fat with a blunt stone on an inclined log",
+        "Soaking 2-3 days in white wood-ash water to loosen hair pores",
+        "Pushing off hair with a blunt wood paddle & rinsing in stream",
+        "[Step 1 Key] Clean removal of fat, hair & ash water without cuts"
+      ],
+      "deepDive": {
+        "badge": "NATURAL DEHAIRING & CLEANING",
+        "title": "Why Soaking in White Wood-Ash Water Pulls Hair Out by the Roots Without a Blade",
+        "text": "Shaving animal hair off a raw hide with a sharp knife leaves the hair roots trapped inside and nicks the hide surface so it tears easily. When white oak ash is dissolved in water, it becomes slippery like soapy water and gently swells and loosens the outer skin and hair pores. After three days, pushing with your thumb or a blunt wooden board slides the hair right out by the roots, leaving behind a smooth, unblemished bare hide.",
+        "fieldSpecs": [
+          {
+            "name": "Pushing Off White Inner Fat with a Blunt River Stone on a Log",
+            "scientificName": "Blunt River Stone Fleshing on Smooth Log Beam",
+            "categoryTag": "Primary Rot Prevention / Inner Fat Cleaning",
+            "imageFileName": "id-rawhide-fat-scraping.jpg",
+            "hudCode": "FIG. BIO-17A // MACRO OPTIC",
+            "hudStatus": "FAT LAYER REMOVAL: CLEAN",
+            "traits": [
+              {
+                "label": "TOOL",
+                "value": "Uses a **smooth, rounded flat river stone or shinbone** instead of a sharp blade."
+              },
+              {
+                "label": "FAT",
+                "value": "Pushes off **white, greasy fat layers in strips**, revealing the clean pale inner hide."
+              },
+              {
+                "label": "CHECK",
+                "value": "Passes inspection when rubbing with fingertips feels **squeaky-clean with zero grease**."
+              }
+            ],
+            "fieldUse": "First step right after skinning to remove all flesh and fat so the hide does not rot"
+          },
+          {
+            "name": "Bare Hide in White Wood-Ash Water with Hair Slipping Off Cleanly",
+            "scientificName": "Hardwood Ash Water Soak & Hair Slipping Stage",
+            "categoryTag": "Bladeless Natural Hair Removal / Pore Loosening",
+            "imageFileName": "id-wood-ash-lye-soak.jpg",
+            "hudCode": "FIG. BIO-17B // MACRO OPTIC",
+            "hudStatus": "HAIR FOLLICLE SLIP: READY",
+            "traits": [
+              {
+                "label": "LYE",
+                "value": "Milky gray-white water made from white oak ash that **feels slippery like soapy water**."
+              },
+              {
+                "label": "SLIP",
+                "value": "After a 3-day soak, pushing with a thumb **slides coarse hair off effortlessly in clumps**."
+              },
+              {
+                "label": "GRAIN",
+                "value": "Reveals a **smooth, unblemished white bare hide surface** where the hair slipped away."
+              }
+            ],
+            "fieldUse": "Cleanly removing hair and outer skin without cutting or weakening the hide"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Pound Red Oak Inner Bark with a Stone, Boil It, and Cool into Cold Astringent Water",
+      "description": "1. **Strip & Pound Red Oak Inner Bark**: Strip bark from dead or fallen oak (acorn tree) trunks, lay it on a flat rock, and pound it with a hammerstone into **thumbnail-sized (~1-2cm) shredded pieces**.\n2. **Boil Dark Red Astringent Bark Water**: Fill a large clay pot over an [earthen hearth](/protocol-06.html) halfway with crushed oak bark, top with water, and boil for over 1 hour until it turns **dark black-tea or red soy-sauce color** with a deep woody aroma.\n3. **Cool to Stream Temperature & Mix Day-1 Bath**: Cool the brewed water in the shade until **cold to the back of your hand** so the hide never gets cooked, then mix 1:1 with clear water on day one for a mild brown starter bath.",
+      "actionNote": "> Never Put Rawhide into Warm or Hot Oak Bark Water: Placing rawhide into warm water immediately cooks the hide like boiled pork skin, making it curl up, turn mushy, and tear apart. Always wait until the water is stream-cold.",
+      "svgFileName": "pr17-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // OAK BARK CRUSHING & COLD ASTRINGENT LIQUOR",
+        "Pounding red oak inner bark into thumbnail-sized shreds",
+        "Boiling 1 hour in clay pot to brew dark red astringent water",
+        "Cooling completely & setting up 1:1 mild brown day-one bath",
+        "[Step 2 Key] 100% cold immersion so the hide never gets cooked"
+      ],
+      "deepDive": {
+        "badge": "NATURAL BARK PRESERVATION",
+        "title": "How the Mouth-Puckering 'Astringent Water' in Oak Bark Keeps Hide from Ever Rotting",
+        "text": "Chewing an unripe persimmon or acorn gives a strong 'astringent' feeling that puckers and tightens the inside of your mouth. The reddish inner bark of oak and chestnut trees is packed with this natural astringent sap, which the tree makes to protect itself against bugs and mold. When a raw hide that would normally rot in a day is steeped in this dark brewed oak water, the astringent sap wraps tightly around every tiny fiber inside the hide. Bacteria can no longer eat the skin, turning it into real leather that will never rot even when wet.",
+        "fieldSpecs": [
+          {
+            "name": "Crushed Red Oak Inner Bark & Stream-Cold Black-Tea Bark Water",
+            "scientificName": "Crushed Red Oak Inner Bark & Cooled Astringent Bark Liquor",
+            "categoryTag": "Field Natural Leather Preservative / Fiber-Coating Brew",
+            "imageFileName": "id-oak-inner-bark-tannin.jpg",
+            "hudCode": "FIG. BIO-17C // MACRO OPTIC",
+            "hudStatus": "BARK EXTRACT STRENGTH: HIGH",
+            "traits": [
+              {
+                "label": "COLOR",
+                "value": "Inner bark is **vivid reddish-brown**, boiling into a **dark black-tea or red soy-sauce color**."
+              },
+              {
+                "label": "SCENT",
+                "value": "Free of foul odor, giving off a **rich, slightly tangy scent of damp autumn leaves and oak**."
+              },
+              {
+                "label": "TOUCH",
+                "value": "Rubbing the cooled water between fingers feels **non-slippery and tightly puckers the skin**."
+              }
+            ],
+            "fieldUse": "Boiled from crushed inner bark, cooled completely, and used to soak rawhide for 5-7 days"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Soak Hide in Oak Bark Water, Turning Daily Until Brown Right to the Center",
+      "description": "1. **Turn Daily & Add Stronger Bark Water**: Lay the dehaired hide flat in the mild oak water, **turn it 2-3 times daily with a long branch** to prevent blotchy spots, and add stronger cooled oak bark water every two days.\n2. **Snip Edge Corner to Check Core Color**: After 5-7 days, snip a **pinky-nail-sized sliver from the thickest edge**; verify that the white raw center line has disappeared and the **entire cross-section is dyed an even golden-brown**.\n3. **Half-Dry & Rub in Warm Animal Oil**: Rinse the brown-dyed hide briefly in clear water, let it half-dry in the shade, and **rub warm animal fat evenly into the inner side** with your palms.",
+      "actionNote": "> Never Start in Overly Strong Oak Water on Day One: Plunging rawhide straight into very strong bark water hardens and seals only the outer surface right away, blocking the preservative water from reaching the middle of the hide. Always start weak for the first two days and work up to stronger water.",
+      "svgFileName": "pr17-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // PROGRESSIVE OAK BARK SOAK & CORE CHECK",
+        "Turning hide 2-3x daily with a branch in clay-lined pit",
+        "Checking edge cut (uniform brown to center with no white line)",
+        "Rubbing warm animal fat into the inner side of half-dry hide",
+        "[Step 3 Key] Weak-to-strong soak until dyed right to the core"
+      ]
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Pull and Rub the Drying Hide Over a Rounded Wooden Post to Soften, Then Smoke",
+      "description": "1. **Rub Over a Rounded Wooden Post to Soften**: As the oiled hide starts drying, drape it over the **smooth rounded edge of a knee-high wooden post** and pull vigorously in all directions until **blanket-soft leather fibers** loosen up.\n2. **Tie into a Cone & Bathe in Wood Smoke**: Wrap the softened leather into a cone around a branch frame over a small pit burning **flameless rotten oak chunks**, bathing it evenly in smoke for 1 hour.\n3. **Complete Waterproof Winter Leather**: Once the surface is **coated golden-brown with a rich smoky scent**, use [bone needles and dried sinew thread](/protocol-14.html) to sew rainproof winter coats and leather boots.",
+      "actionNote": "> Do Not Stop Rubbing Before Dry & Keep Flames Away While Smoking: If you stop working the hide over the wooden post before it is completely dry, it will stiffen back up like cardboard. Use only damp rotten wood so cool smoke rises without open flames scorching the leather.",
+      "svgFileName": "pr17-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // POST RUBBING SOFTENING & SMOKE COATING",
+        "Pulling & rubbing hide in all directions over rounded wood post",
+        "Conical hide tent over flameless rotten oak smoke pit",
+        "Golden-brown waterproof smoke coat & bone needle sewing",
+        "[Step 4 Key] Blanket-soft leather that stays soft after rain"
+      ],
+      "deepDive": {
+        "badge": "SOFTENING & SMOKE WATERPROOFING",
+        "title": "Why Rubbing Over a Wooden Post While Drying Makes Leather Blanket-Soft and Smoke Makes It Waterproof",
+        "text": "Just as a wet towel dries stiff if hung still but turns soft if rubbed by hand as it dries, leather soaked in oak water and oil will dry stiff if left alone because its inner fibers stick back together. Pulling and rubbing the hide over a rounded wooden post during the final drying stage opens tiny air pockets between the fibers so it becomes as soft as a winter blanket. Bathing it in cool, flameless wood smoke coats the fibers in natural wood resin so the leather stays soft even after getting soaked in rain.",
+        "fieldSpecs": [
+          {
+            "name": "Golden-Brown Waterproof Leather Softened on a Post & Wood-Smoked",
+            "scientificName": "Oak-Bark Cured & Wood-Smoked Supple Waterproof Leather",
+            "categoryTag": "Field Winter Coat Fabric / Waterproof Boot & Pack Leather",
+            "imageFileName": "id-smoked-buckskin-leather.jpg",
+            "hudCode": "FIG. BIO-17D // MACRO OPTIC",
+            "hudStatus": "WATERPROOF & SUPPLE GRADE: A+",
+            "traits": [
+              {
+                "label": "FEEL",
+                "value": "Crumpling in your fist leaves no sharp creases, bending **as softly as a thick wool blanket**."
+              },
+              {
+                "label": "COLOR",
+                "value": "Red oak bark water and wood smoke combine into a **deep, warm golden-brown hue**."
+              },
+              {
+                "label": "WATER",
+                "value": "Water droplets bead up on the surface and **it dries soft again after getting wet**."
+              }
+            ],
+            "fieldUse": "Sewn immediately with bone needles and sinew thread into winter coats, waterproof boots, and water bags"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Putting Rawhide into Hot Oak Bark Water or Starting in Overly Strong Water on Day One",
+    "description": "Putting rawhide into boiled oak bark water before it has cooled completely cooks the hide right on the spot, making it shrivel up like boiled pork skin and tear into a stiff palm-sized scrap. Likewise, soaking the hide in overly strong oak water on the very first day hardens and seals only the outer surface, blocking the astringent preservative water from reaching the center so the inside rots away. Always cool the brewed water to stream temperature and progress gradually from mild brown water to strong water. [Field Safety & Legal Notice: This leather-making guide is an academic reference for extreme survival and traditional craft study; trapping wildlife and stripping bark from living trees in non-emergency situations are strictly prohibited by forestry and wildlife conservation laws.]",
+    "consequence": "Consequence: Hide cooks and shrinks in hot water or rots inside, causing loss of winter clothing and hypothermia"
+  },
+  "shortsScript": {
+    "hook": "Dry a hunted animal skin as-is and it turns stiff like plywood or rots with maggots in a day! Make lifelong waterproof leather with brewed oak bark water!",
+    "body": "Push all fat off the inside of the rawhide on a smooth log using a blunt stone, then soak it in white wood-ash water for three days to slide the hair right off. Pound oak inner bark with a rock, boil it into dark red astringent water, cool it completely, and soak the hide for a week until brown right to the middle! Rub warm animal fat on when half-dry, pull it back and forth over a rounded wooden post until blanket-soft, and smoke it for an hour over rotten wood for waterproof leather!",
+    "outro": "Nature's wisdom keeps you alive. Subscribe to the Survival Manual now!"
+  },
+  "outcome": {
+    "title": "Field Waterproof & Winter Natural Leather Set Cured with Oak Inner Bark Water and Wood Smoke",
+    "badge": "COMPLETION SPEC // FIELD WATERPROOF LEATHER",
+    "standard": "Edge cut shows an even golden-brown color right to the middle with no white raw center line; folds as softly as a blanket in your hand and does not stiffen like a board after getting wet and drying",
+    "description": "Edge cut shows an even golden-brown color right to the middle with no white raw center line; folds as softly as a blanket in your hand and does not stiffen like a board after getting wet and drying",
+    "svgFileName": "pr17-outcome.svg",
+    "svgLabels": [
+      "PR-17 OUTCOME // OAK BARK & SMOKED WATERPROOF LEATHER",
+      "Step 1: Pushing off inner fat with blunt stone & dehairing in ash water",
+      "Step 2: Crushing red oak inner bark & brewing cold astringent water",
+      "Step 3: 100% brown core saturation & rubbing in warm animal fat",
+      "Step 4: Softening over rounded wooden post & wood smoke coating",
+      "Finished Leather: Rot-proof waterproof leather for winter coats & boots",
+      "FIELD VERIFIED // PERMANENT WATERPROOF & SUPPLE BUCKSKIN"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "I soaked the hide in brewed oak water for a week, but when I snipped the edge there is still a white line in the middle.",
+      "causeDiagnostic": "The oak water was too strong on the first day, hardening and sealing the outer surface before the brewed water could soak into the middle.",
+      "resolution": "Take the hide out and gently knead and bend it over a rounded wooden stick to loosen the stiffened outer grain. Then place it back into freshly boiled and cooled oak bark water for another 2-3 days so the brown water soaks all the way into the center."
+    },
+    {
+      "question": "The leather dried stiffer than I expected. Can I make it soft again?",
+      "causeDiagnostic": "Pulling and rubbing over the wooden post was stopped too early while drying, or there was not enough fat so the inner hide fibers stuck back together.",
+      "resolution": "Rub a mix of lukewarm water and animal fat evenly into the inner side with your palms, then roll the hide up for half a day so moisture spreads evenly. Once damp, drape it over the rounded wooden post again and pull firmly in all directions until completely dry."
+    }
+  ],
+  "createdAt": "2026-10-26T13:00:00.000Z",
+  "updatedAt": "2026-10-26T13:31:24.635Z",
+  "contentHash": "d3bf620f626719da"
+}
