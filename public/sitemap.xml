@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://survival-protocol.com/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/?lang=ko"/>
@@ -254,8 +254,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://survival-protocol.com/protocol-18"/>
   </url>
   <url>
+    <loc>https://survival-protocol.com/protocol-19</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/protocol-19?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://survival-protocol.com/protocol-19?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://survival-protocol.com/protocol-19?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://survival-protocol.com/protocol-19?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://survival-protocol.com/protocol-19?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://survival-protocol.com/protocol-19?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://survival-protocol.com/protocol-19?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://survival-protocol.com/protocol-19"/>
+  </url>
+  <url>
     <loc>https://survival-protocol.com/about</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/about?lang=ko"/>
@@ -269,7 +283,7 @@
   </url>
   <url>
     <loc>https://survival-protocol.com/privacy</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/privacy?lang=ko"/>
@@ -283,7 +297,7 @@
   </url>
   <url>
     <loc>https://survival-protocol.com/terms</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/terms?lang=ko"/>
@@ -297,7 +311,7 @@
   </url>
   <url>
     <loc>https://survival-protocol.com/contact</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://survival-protocol.com/contact?lang=ko"/>

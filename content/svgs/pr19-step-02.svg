@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg19s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090b0e"/>
+      <stop offset="100%" stop-color="#11151c"/>
+    </linearGradient>
+    <linearGradient id="poleWood19" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#785233"/>
+      <stop offset="50%" stop-color="#5c3d24"/>
+      <stop offset="100%" stop-color="#3a2514"/>
+    </linearGradient>
+    <linearGradient id="peeledStick19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="meatStrip19" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#581c1c"/>
+    </linearGradient>
+    <filter id="shadow19s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg19s2)"/>
+  <g stroke="#1e293b" stroke-width="0.6" opacity="0.45">
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="160" x2="400" y2="160"/>
+    <line x1="0" y1="240" x2="400" y2="240"/>
+    <line x1="0" y1="320" x2="400" y2="320"/>
+    <line x1="80" y1="0" x2="80" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+  </g>
+  <rect x="4" y="4" width="392" height="392" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner -->
+  <rect x="8" y="10" width="384" height="24" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="16" y="26" fill="#fde68a" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 02 // CHEST-HIGH TRIPOD DRYING RACK &amp; MEAT SPACING</text>
+
+  <!-- Sub-banner 1 -->
+  <rect x="20" y="52" width="360" height="22" rx="2" fill="#131922" stroke="#334155" stroke-width="0.8"/>
+  <text x="200" y="67" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">팔목 굵기 긴 가지 3개를 묶어 두 걸음 폭으로 삼발이 세우기</text>
+
+  <!-- Tripod Structure & Elevation Guide -->
+  <g filter="url(#shadow19s2)">
+    <!-- Ground line -->
+    <line x1="36" y1="304" x2="364" y2="304" stroke="#64748b" stroke-width="2"/>
+
+    <!-- Back Pole (Center) -->
+    <polygon points="196,82 206,82 214,304 202,304" fill="url(#poleWood19)" stroke="#472d18" stroke-width="1"/>
+    <!-- Left Pole -->
+    <polygon points="192,80 204,84 86,304 72,304" fill="url(#poleWood19)" stroke="#9a6b43" stroke-width="1"/>
+    <!-- Right Pole -->
+    <polygon points="196,84 208,80 328,304 314,304" fill="url(#poleWood19)" stroke="#9a6b43" stroke-width="1"/>
+
+    <!-- Kudzu Vine Top Lashing -->
+    <rect x="184" y="92" width="32" height="16" rx="4" fill="#a16207" stroke="#fde68a" stroke-width="1.2"/>
+    <line x1="186" y1="97" x2="214" y2="97" stroke="#fef08a" stroke-width="1"/>
+    <line x1="186" y1="103" x2="214" y2="103" stroke="#fef08a" stroke-width="1"/>
+
+    <!-- Sub-banner 2 (Middle overlay label) -->
+    <rect x="20" y="166" width="360" height="22" rx="2" fill="#131922" stroke="#fde68a" stroke-width="0.9"/>
+    <text x="200" y="181" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">바닥에서 가슴 높이(120cm)에 삼각형 가로 받침틀과 걸이 막대 얹기</text>
+
+    <!-- Chest-High Horizontal Triangular Support Frame & Peeled Grate Sticks -->
+    <!-- Side diagonal rails of triangle -->
+    <line x1="132" y1="206" x2="202" y2="194" stroke="url(#poleWood19)" stroke-width="6" stroke-linecap="round"/>
+    <line x1="268" y1="206" x2="202" y2="194" stroke="url(#poleWood19)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Peeled willow cross-sticks -->
+    <line x1="124" y1="202" x2="276" y2="202" stroke="url(#peeledStick19)" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="118" y1="210" x2="282" y2="210" stroke="url(#peeledStick19)" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Corner Vine Lashings -->
+    <circle cx="126" cy="208" r="6" fill="#a16207" stroke="#fde68a" stroke-width="1"/>
+    <circle cx="274" cy="208" r="6" fill="#a16207" stroke="#fde68a" stroke-width="1"/>
+
+    <!-- Hanging Meat Strips with 2cm Finger-Width Spacing -->
+    <g transform="translate(138, 212)">
+      <rect x="0" y="0" width="9" height="48" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+      <rect x="20" y="0" width="9" height="50" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+      <rect x="40" y="0" width="9" height="46" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+      <rect x="60" y="0" width="9" height="52" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+      <rect x="80" y="0" width="9" height="48" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+      <rect x="100" y="0" width="9" height="50" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+      <rect x="120" y="0" width="9" height="46" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+
+      <!-- Spacing Callout Arrows between strips -->
+      <line x1="9" y1="26" x2="20" y2="26" stroke="#38bdf8" stroke-width="1.5"/>
+      <line x1="29" y1="26" x2="40" y2="26" stroke="#38bdf8" stroke-width="1.5"/>
+      <line x1="49" y1="26" x2="60" y2="26" stroke="#38bdf8" stroke-width="1.5"/>
+    </g>
+
+    <!-- 120cm Chest-High Elevation Indicator on Left -->
+    <line x1="48" y1="210" x2="48" y2="304" stroke="#fde68a" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <line x1="42" y1="210" x2="54" y2="210" stroke="#fde68a" stroke-width="1.5"/>
+    <line x1="42" y1="304" x2="54" y2="304" stroke="#fde68a" stroke-width="1.5"/>
+    <circle cx="48" cy="257" r="4" fill="#fde68a"/>
+  </g>
+
+  <!-- Sub-banner 3 -->
+  <rect x="20" y="312" width="360" height="22" rx="2" fill="#131922" stroke="#334155" stroke-width="0.8"/>
+  <text x="200" y="327" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">고기 줄이 서로 닿지 않게 손가락 한 개(2cm) 간격으로 걸기</text>
+
+  <!-- Spacing Zoom Diagram at Bottom -->
+  <g transform="translate(85, 340)">
+    <rect x="0" y="0" width="230" height="22" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+    <rect x="25" y="4" width="14" height="14" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+    <path d="M43,11 L67,11" stroke="#fde68a" stroke-width="1.5"/>
+    <rect x="71" y="4" width="14" height="14" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+    <path d="M89,11 L113,11" stroke="#fde68a" stroke-width="1.5"/>
+    <rect x="117" y="4" width="14" height="14" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+    <path d="M135,11 L159,11" stroke="#fde68a" stroke-width="1.5"/>
+    <rect x="163" y="4" width="14" height="14" rx="2" fill="url(#meatStrip19)" stroke="#f87171" stroke-width="0.8"/>
+    <circle cx="198" cy="11" r="5" fill="#22c55e"/>
+  </g>
+
+  <!-- Footer Summary Bar -->
+  <rect x="8" y="368" width="384" height="24" fill="#1e1b18" stroke="#f59e0b" stroke-width="1"/>
+  <text x="200" y="384" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">[2단계 핵심] 불길과 멀리 떨어진 가슴 높이 거치 및 2cm 통풍 간격</text>
+</svg>

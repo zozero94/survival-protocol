@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-19",
+  "category": "FOOD",
+  "title": "Cómo Secar y Ahumar Carne y Pescado con un Trípode de Ramas y Humo de Roble Verde para que Duren Más de un Mes (Charqui de Campo)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[CONSERVACIÓN DE ALIMENTOS] Evitar la Putrefacción de Carne y Pescado sin Refrigeración ni Sal y Asegurar Raciones Portátiles",
+  "summary": "En el campo, la carne y el pescado frescos capturados con una [Trampa de Piedra en Figura 4](/protocol-08.html) o una [Nasa de Sauce en Embudo](/protocol-11.html) contienen tanta humedad que las moscas ponen huevos y las bacterias los pudren en un solo día. Ni siquiera un [Refrigerador Evaporativo de Vasija](/protocol-16.html) puede transportarse en una marcha larga. En aislamiento sin sal, esta guía muestra cómo recortar toda la grasa blanca con un [Cuchillo de Piedra Afilado](/protocol-04.html), cortar la carne magra en tiras de 5mm, colgarlas a la altura del pecho en un trípode atado con [Cuerda de Liana Silvestre](/protocol-05.html) y quemar [Carbón de Roble](/protocol-09.html) cubierto con hojas verdes debajo para producir humo blanco sin llamas que extrae la humedad y conserva el alimento por más de un mes.",
+  "timeRequired": "Medio Día (1 h Limpieza y Orejonado + 30 min Armado del Trípode + 6–8 h Ahumado Lento)",
+  "successRate": "98% (Eliminando toda la grasa blanca y manteniendo humo cálido sin llamas)",
+  "difficulty": "Media (Realizable con ramas, carbón de roble y hojas verdes sin sal ni parrillas metálicas)",
+  "outputPerHour": "Produce 20–30 tiras ligeras y duraderas de carne o pescado ahumado (ración de 1 semana para 1 adulto)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Carne Fresca de Caza o Pescado de Río Limpio (4–5 Puñados)",
+      "desc": "Carne magra o pescado recién capturado con una [Trampa de Piedra en Figura 4](/protocol-08.html) o [Nasa de Sauce en Embudo](/protocol-11.html). La grasa blanca nunca se seca bien y se enrancia rápido al aire, por lo que debe recortarse por completo con un [Cuchillo de Piedra Afilado](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "3 Ramas Largas del Grosor de la Muñeca y 10 Varillas Transversales del Grosor de un Dedo",
+      "desc": "Levanta **3 ramas rectas de unos 180cm de largo** como patas del trípode, ata 3 travesaños horizontales a **la altura del pecho (unos 120cm)** sobre el suelo y coloca encima varillas peladas de sauce o roble para colgar la carne."
+    },
+    {
+      "id": "mat-03",
+      "name": "2–3 Puñados de Carbón de Roble y una Brazada de Ramas y Hojas Verdes de Roble",
+      "desc": "Prepara una base de brasas en el suelo con [Carbón de Roble de Horno Primitivo](/protocol-09.html) y cúbrela con ramas y hojas verdes recién cortadas de roble, castaño o árboles frutales para ahogar las llamas y elevar un humo blanco continuo."
+    },
+    {
+      "id": "mat-04",
+      "name": "Cuerda de Liana Silvestre y Hojas Anchas o Cuero Suave para Cubierta de Humo",
+      "desc": "[Cuerda de Liana Silvestre](/protocol-05.html) para atar la cúspide del trípode y el marco transversal, más [Cuero Suave Natural](/protocol-17.html) o manojos de hojas anchas alrededor del trípode para retener el humo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Recortar Toda la Grasa Blanca con un Cuchillo de Piedra y Cortar Tiras Magras de 5mm",
+      "description": "1. **Eliminar el 100% de la Grasa Blanca y Coágulos**: La grasa blanca no pierde agua con el humo y se pudre con olor rancio en pocos días. Usa un [Cuchillo de Piedra Afilado](/protocol-04.html) para **recortar toda la grasa blanca y membranas duras, dejando solo carne magra roja**. En pescados, abre el vientre, saca las vísceras y branquias, y ábrelo plano.\n2. **Cortar Tiras Finas y Largas Siguiendo la Fibra**: Corta la carne magra a lo largo de la fibra con un **grosor uniforme de media falange del meñique (5mm), ancho de dos dedos (3cm) y largo de un palmo (20cm)**. Si es muy gruesa se pudre por dentro; si es muy fina se desmorona.\n3. **Orear la Humedad Superficial a la Sombra con Brisa por 30 Minutos**: Si pones carne mojada directo al humo, el hollín negro se pega al agua. Extiende las tiras sobre una roca limpia al **viento fresco durante 30 minutos hasta que la superficie se sienta ligeramente seca y pegajosa**.",
+      "actionNote": "> Guarda aparte los recortes de grasa blanca: Aunque la grasa blanca arruina el charqui, si la derrites a fuego lento obtienes sebo valioso para fabricar [Jabón Natural de Lejía de Ceniza](/protocol-13.html) o impermeabilizar [Cuero Suave Natural](/protocol-17.html).",
+      "svgFileName": "pr19-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
+        "Recortar 100% de la grasa blanca con cuchillo de piedra",
+        "Cortar carne magra siguiendo la fibra en tiras de 5mm x 20cm",
+        "Orear al viento por 30 min hasta secar humedad superficial",
+        "[CLAVE 01] Cero grasa blanca y corte uniforme de 5mm"
+      ],
+      "deepDive": {
+        "badge": "FAT REMOVAL & THIN SLICING",
+        "title": "¿Por Qué un Poco de Grasa Blanca Echa a Perder Todo el Lote y Por Qué Cortar a 5mm?",
+        "text": "El músculo magro rojo es mayormente agua; al recibir aire tibio y humo, la humedad se evapora hasta que las bacterias no pueden vivir. En cambio, la grasa blanca retiene humedad y se oxida con el aire, volviéndose rancia y pudriendo la carne vecina. Además, si la carne supera el grosor de un dedo, solo se seca por fuera mientras el centro queda húmedo y cría larvas de mosca. Cortar a 5mm de grosor —casi translúcido al sol— asegura que el centro se seque al mismo tiempo que el exterior.",
+        "fieldSpecs": [
+          {
+            "name": "Tiras de Carne Magra de 5mm Sin Grasa Cortadas a lo Largo de la Fibra",
+            "scientificName": "Fat-Trimmed 5mm Lean Muscle Strips Cut Along the Grain",
+            "categoryTag": "Sin Grasa Oxidante / Sección Uniforme de 5mm para Evaporación",
+            "imageFileName": "id-trimmed-lean-meat-strips.jpg",
+            "hudCode": "FIG. BIO-19A // MACRO OPTIC",
+            "hudStatus": "ZERO WHITE FAT: VERIFIED",
+            "traits": [
+              {
+                "label": "MAGRO/LEAN",
+                "value": "Elimina el **100% de la grasa blanca y coágulos** con un [Cuchillo de Piedra Afilado](/protocol-04.html) para evitar rancidez."
+              },
+              {
+                "label": "GROSOR/5MM",
+                "value": "Corta a **5mm de grosor y un palmo (20cm) de largo** para un secado rápido del núcleo."
+              },
+              {
+                "label": "OREADO/TACKY",
+                "value": "**Seca al viento por 30 minutos** antes de ahumar para fijar el humo de forma pareja."
+              }
+            ],
+            "fieldUse": "Tiras de carne magra preparadas en grosor y sin grasa para secarse hasta el centro sin sal"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Levantar un Trípode de 3 Ramas y Atar una Parrilla de Varillas a la Altura del Pecho",
+      "description": "1. **Erguir un Trípode con 3 Ramas Largas**: Ata los extremos superiores de **3 ramas rectas del grosor de la muñeca y 180cm de largo** con [Cuerda de Liana Silvestre](/protocol-05.html), y abre las tres patas a **dos pasos de ancho (unos 120cm)** clavándolas firmes en el suelo.\n2. **Atar un Marco Triangular Horizontal a la Altura del Pecho**: Si cuelgas la carne muy cerca del fuego, se asará en vez de secarse. Ata 3 travesaños entre las patas a **la altura del pecho de un adulto (unos 120cm)** para formar un soporte triangular nivelado.\n3. **Colgar las Tiras con un Dedo de Separación sobre Varillas Peladas**: Coloca 8–10 varillas peladas y lisas sobre el marco triangular y cuelga las tiras de carne dejando **el ancho de un dedo (unos 2cm) de espacio** entre cada pieza.",
+      "actionNote": "> Nunca dejes que las tiras de carne se toquen o superpongan: Donde dos trozos de carne quedan pegados, no circula el humo ni el aire, dejando una zona húmeda donde salen gusanos o moho. Deja siempre un dedo de espacio entre tiras.",
+      "svgFileName": "pr19-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CHEST-HIGH TRIPOD DRYING RACK & MEAT SPACING",
+        "Atar 3 ramas largas y abrir las patas a dos pasos de ancho",
+        "Montar marco triangular y varillas a 120cm de altura",
+        "Colgar tiras de carne con 2cm (un dedo) de separación",
+        "[CLAVE 02] Altura de pecho (120cm) y separación de 2cm"
+      ],
+      "deepDive": {
+        "badge": "HEIGHT & AIRFLOW GEOMETRY",
+        "title": "¿Por Qué Instalar la Parrilla a la Altura del Pecho (120cm) y No Justo Sobre el Fuego?",
+        "text": "Hacer charqui consiste en secar la carne con aire tibio y humo, no en asarla. Si colocas la parrilla por debajo de la rodilla, el calor intenso de las brasas sella la superficie de la carne formando una costra dura. Una vez sellada por fuera, el agua atrapada en el centro no puede salir y la carne se pudre desde adentro en pocos días. Al elevar la parrilla a la altura del pecho (120cm), el aire caliente se atempera al subir y extrae suavemente la humedad interna sin cocinar la carne.",
+        "fieldSpecs": [
+          {
+            "name": "Trípode de Madera con Parrilla a la Altura del Pecho (120cm) y Separación de 2cm",
+            "scientificName": "Chest-High Tripod Wooden Grate Rack with 2cm Meat Spacing",
+            "categoryTag": "Corriente Ascendente Templada / Parrilla de Contacto de Humo 360°",
+            "imageFileName": "id-tripod-wooden-drying-rack.jpg",
+            "hudCode": "FIG. BIO-19B // MACRO OPTIC",
+            "hudStatus": "120CM ELEVATION: VERIFIED",
+            "traits": [
+              {
+                "label": "ALTURA/120CM",
+                "value": "Sitúa la parrilla a **la altura del pecho (120cm)** sobre el pozo para secar sin cocinar."
+              },
+              {
+                "label": "ESPACIO/2CM",
+                "value": "Deja **un dedo de espacio (2cm)** entre tiras para que el humo envuelva cada cara."
+              },
+              {
+                "label": "PELADO/PEELED",
+                "value": "**Quita la corteza** de las varillas para evitar insectos y savia amarga en la carne."
+              }
+            ],
+            "fieldUse": "Estructura de secado que modera el calor del fogón y distribuye el humo de forma uniforme"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Encender Brasas de Roble en el Pozo Central y Cubrir con Hojas Verdes Sin Llamas",
+      "description": "1. **Cavar un Pozo Poco Profundo en el Centro del Trípode**: Justo debajo de la parrilla, cava un hueco de **un palmo de profundidad (15cm) y dos palmos de ancho**, y coloca dos o tres puñados de [Carbón de Roble](/protocol-09.html) al rojo vivo encendido con un [Arco de Fricción](/protocol-02.html).\n2. **Cubrir las Brasas con Ramas y Hojas Verdes de Roble**: Sobre las brasas rojas sin llamas, coloca una **doble capa gruesa de ramas y hojas verdes húmedas de roble (o castaño/manzano)** para reducir el oxígeno y generar nubes densas de humo blanco.\n3. **Comprobar el Calor con la Mano Desnuda durante 3 Segundos**: Pon la mano junto a la carne colgada; si quema, hay demasiado calor. Añade más hojas verdes hasta que **puedas mantener la mano de 3 a 5 segundos sintiendo un calor suave y agradable**.",
+      "actionNote": "> Prohibido usar pino, coníferas o maderas tóxicas: El pino y las coníferas sueltan hollín negro de resina que amarga y contamina la carne. Maderas tóxicas como la adelfa o el zumaque venenoso impregnan veneno mortal en el humo. Usa solo maderas duras seguras como roble, castaño o frutales.",
+      "svgFileName": "pr19-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FLAMELESS OAK EMBER & GREEN LEAF SMOKE PIT",
+        "Colocar brasas rojas de carbón de roble en el pozo central",
+        "Cubrir brasas con ramas y hojas verdes de roble sin llamas",
+        "Mantener calor suave a la mano y humo blanco constante",
+        "[CLAVE 03] Cero llamas y humo blanco protector de roble"
+      ],
+      "deepDive": {
+        "badge": "FLAMELESS HARDWOOD SMOKE",
+        "title": "¿Por Qué el Humo Sin Llamas de Ramas Verdes de Roble Conserva la Carne Sin Sal?",
+        "text": "Cuando una madera dura como el roble se consume lentamente sin llamas, el humo blanco contiene compuestos antimicrobianos y antioxidantes naturales. Estas partículas forman una fina película protectora color caoba sobre la carne que elimina bacterias e impide que las moscas se posen a poner huevos. Si quemas leña seca con llamas vivas, apenas sale humo y la grasa que gotea puede encenderse y carbonizar la carne. Cubrir el carbón con hojas verdes húmedas apaga las llamas y produce humo protector continuo.",
+        "fieldSpecs": [
+          {
+            "name": "Pozo de Brasas de Roble Cubierto con Hojas Verdes de Madera Dura Sin Llamas",
+            "scientificName": "Flameless Smoldering Oak Charcoal & Green Hardwood Leaf Smoke Pit",
+            "categoryTag": "Ahumado Templado Sin Llamas / Recubrimiento Antimicrobiano y Antimosca",
+            "imageFileName": "id-smoldering-oak-green-leaves.jpg",
+            "hudCode": "FIG. BIO-19C // MACRO OPTIC",
+            "hudStatus": "WHITE HARDWOOD SMOKE: VERIFIED",
+            "traits": [
+              {
+                "label": "MADERA/OAK",
+                "value": "Quema solo **carbón y hojas verdes de roble, castaño o frutales sin resina**."
+              },
+              {
+                "label": "SIN LLAMA/NO-FLAME",
+                "value": "Cubre las brasas con hojas frescas para **apagar llamas y elevar humo blanco denso**."
+              },
+              {
+                "label": "TEMPLADO/WARM",
+                "value": "Mantén una **temperatura agradablemente tibia a la mano** a la altura de la carne."
+              }
+            ],
+            "fieldUse": "Generador de humo que seca la humedad interna sin cocinar y protege contra moscas y bacterias"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Envolver el Trípode con Cuero u Hojas para Retener el Humo y Secar por Medio Día",
+      "description": "1. **Rodear el Trípode con Cuero u Hojas Anchas**: Para que el viento no se lleve el humo, envuelve la parte media y superior del trípode con [Cuero Suave Natural](/protocol-17.html) o manojos de hojas anchas, dejando **solo un hueco del tamaño de un puño en la cúspide** para que el humo envuelva la carne antes de salir.\n2. **Voltear las Tiras Cada 2 Horas durante 6–8 Horas**: Invierte la posición de las tiras **una vez cada 2 horas** para un secado parejo, añadiendo carbón de roble y hojas verdes durante **medio día (6–8 horas)**.\n3. **Verificar con la Prueba de Doblado como Rama Seca**: Toma la tira más gruesa, déjala enfriar y **dóblala por la mitad con los dedos; cuando no salga ni una gota de sangre o agua y se doble correosa como una rama seca mostrando fibras blancas**, está lista.",
+      "actionNote": "> Enfría por completo el charqui antes de guardarlo en una bolsa transpirable: Si guardas charqui tibio en un recipiente cerrado, el calor residual forma gotas de condensación que crían moho. Enfríalo siempre a la sombra y guárdalo en arpillera seca o cuero.",
+      "svgFileName": "pr19-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE CANOPY ENCLOSURE & BEND-TEST VERIFICATION",
+        "Envolver trípode con cuero/hojas dejando salida superior",
+        "Voltear la carne cada 2 horas durante 6-8 horas de secado",
+        "Listo al doblarse como rama seca sin rastro de humedad",
+        "[CLAVE 04] Cubierta retenedora de humo y prueba de doblado"
+      ],
+      "deepDive": {
+        "badge": "SMOKE TRAP & BEND TEST",
+        "title": "¿Por Qué Dejar un Hueco Superior del Tamaño de un Puño y Cómo Funciona la Prueba de Doblado?",
+        "text": "Si cierras el trípode por completo sin salida superior, el vapor de agua que sale de la carne no puede escapar y vuelve a condensarse sobre el charqui. Por el contrario, sin cubierta el viento dispersa el humo. Al cubrir los lados y dejar una chimenea del tamaño de un puño arriba, el humo tibio rodea la carne, recoge la humedad y sale por la cúspide. Además, si secas la carne hasta que se quiebre como galleta, se hará polvo en la mochila; detenerse cuando se dobla correosa como rama seca sin soltar humedad garantiza máxima durabilidad.",
+        "fieldSpecs": [
+          {
+            "name": "Tiras de Charqui Ahumado Color Caoba Oscuro que Superan la Prueba de Doblado",
+            "scientificName": "Dark Mahogany Dry-Smoked Meat & Fish Jerky Strips",
+            "categoryTag": "Eliminación Total de Humedad / Ración de Campo Estable por Más de 1 Mes",
+            "imageFileName": "id-finished-smoked-jerky-strips.jpg",
+            "hudCode": "FIG. BIO-19D // MACRO OPTIC",
+            "hudStatus": "DRY BEND TEST: VERIFIED",
+            "traits": [
+              {
+                "label": "COLOR/MAHOGANY",
+                "value": "Impregnado de humo de roble con un **tono caoba rojizo oscuro y brillo suave**."
+              },
+              {
+                "label": "DOBLADO/BEND",
+                "value": "Al doblarse por la mitad, **no suelta agua ni sangre y cede como rama seca**."
+              },
+              {
+                "label": "CONSERVACIÓN/KEEP",
+                "value": "Enfriado a la sombra y guardado en bolsa de cuero seca, **dura más de un mes**."
+              }
+            ],
+            "fieldUse": "Ración de emergencia alta en calorías para masticar en marcha o hervir en caldo caliente"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Error Fatal: Asar el Exterior con Llamas Fuertes o Quemar Maderas Tóxicas o Coníferas",
+    "description": "Encender una hoguera fuerte para apurar el secado cocina la capa exterior de la carne formando una costra dura que encierra el agua en el centro. Al guardarla, el interior húmedo se pudre en dos días y causa intoxicaciones alimentarias mortales (como botulismo). Quemar maderas tóxicas como adelfa o zumaque venenoso concentra venenos letales en la carne, y el pino impregna hollín resinoso irritante. En prácticas en tiempos de paz, utiliza siempre fogones autorizados y respeta las leyes de prevención de incendios forestales.",
+    "consequence": "Consecuencia: Intoxicación alimentaria aguda, choque por deshidratación o envenenamiento por humo tóxico"
+  },
+  "shortsScript": {
+    "hook": "¿Atrapaste carne en la naturaleza sin nevera ni sal? ¡Haz charqui para un mes con solo 3 ramas!",
+    "body": "Primero, recorta toda la grasa blanca con un cuchillo de piedra, corta la carne magra a 5mm de grosor y oréala 30 minutos al viento. Segundo, arma un trípode con tres ramas largas y cuelga la carne a la altura del pecho dejando un dedo de separación. Tercero, pon brasas de carbón de roble en el suelo y cúbrelas con hojas verdes de roble para levantar humo blanco sin llamas. Cuarto, rodea el trípode con cuero u hojas y ahúma medio día hasta que al doblarla ceda como rama seca sin humedad!",
+    "outro": "Abre el manual de supervivencia offline que funciona sin señal: revisa el enlace en el perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr19-outcome.svg",
+    "title": "Trípode de Ahumado a la Altura del Pecho y Sistema de Conservación con Humo de Roble Verde",
+    "description": "Sistema integral de conservación en campo que combina corte magro de 5mm sin grasa, parrilla en trípode a 120cm, fogón sin llamas de carbón y hojas verdes de roble, cubierta retenedora de humo y verificación por doblado.",
+    "svgLabels": [
+      "FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT & FISH DRYING SYSTEM",
+      "STAGE 1: Quitar 100% Grasa Blanca y Cortar Tiras de 5mm",
+      "STAGE 2: Parrilla en Trípode a 120cm y Separación de 2cm",
+      "STAGE 3: Brasas de Roble + Hojas Verdes Sin Llamas",
+      "STAGE 4: Cubierta de Humo y Prueba de Doblado (6-8 h)",
+      "SAFETY RULE: Prohibido Pino/Madera Tóxica y Evitar Llamas",
+      "[RESULTADO FINAL] Corte Magro 5mm + Humo Templado = Ración de 1 Mes"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Tras 3 horas de ahumado, la carne está cubierta de hollín negro y sigue húmeda al tocarla.",
+      "causeDiagnostic": "Colgaste la carne mojada sin orearla 30 minutos al viento, se mezclaron ramas resinosas de pino en el fuego o el respiradero superior del trípode está tapado y el vapor no puede salir.",
+      "resolution": "Abre de inmediato un hueco del tamaño de un puño en la cúspide del trípode para evacuar el vapor, retira cualquier rama de conífera y deja solo [Carbón de Roble de Horno Primitivo](/protocol-09.html) y hojas verdes de madera dura. Limpia el hollín con hierba seca, deja que el viento seque la superficie y reanuda el ahumado suave."
+    },
+    {
+      "question": "Las moscas y mosquitos siguen acercándose a la carne mientras se seca. ¿Cómo los detengo?",
+      "causeDiagnostic": "Las hojas verdes del fogón se consumieron y dejó de salir humo, o la cubierta exterior del trípode está muy abierta y el viento dispersa el humo.",
+      "resolution": "Las moscas no pueden acercarse al humo denso de roble ni al calor. Cubre las brasas con otro puñado de ramas y hojas verdes húmedas de roble para mantener el humo blanco constante, y ajusta [Cuero Suave Natural](/protocol-17.html) o manojos de hojas alrededor del trípode para envolver la carne por completo."
+    }
+  ],
+  "createdAt": "2026-10-29T02:06:29.298Z",
+  "updatedAt": "2026-10-29T02:11:48.134Z",
+  "contentHash": "c1051e1ea99b1468"
+}

@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-19",
+  "category": "FOOD",
+  "title": "How to Smoke-Dry Meat and Fish to Last Over a Month Using a Wooden Tripod Rack and Green Oak Smoke (Field Jerky & Smoked Fish)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[LONG-TERM FOOD PRESERVATION] Prevent Meat & Fish Spoilage Without Refrigeration or Salt and Secure Portable Emergency Rations",
+  "summary": "In the field, fresh meat and fish caught with a [Figure-4 Deadfall Trap](/protocol-08.html) or a [Willow Funnel Fish Trap](/protocol-11.html) hold so much moisture that flies lay eggs and bacteria spoil them within a single day. Even a [Zeer Pot Evaporative Cooler](/protocol-16.html) cannot be carried on a long march. When you are isolated without salt, this guide shows how to trim away every bit of easily spoiled white fat with a [Sharp Stone Blade](/protocol-04.html), slice the lean meat as thin as half a pinky joint (5mm), hang the strips at chest height on a tripod rack tied with [Wild Kudzu Vine Cordage](/protocol-05.html), and smolder [Oak Charcoal](/protocol-09.html) covered with green hardwood leaves underneath to produce flameless white smoke that drives out moisture and coats the meat so it stays edible for over a month.",
+  "timeRequired": "Half a Day (1 hr Trimming & Wind-Drying + 30 min Tripod Rack Build + 6–8 hrs Gentle Smoke-Drying)",
+  "successRate": "98% (When all white fat is removed and warm flameless smoke is maintained)",
+  "difficulty": "Medium (Buildable with branches, oak charcoal, and green leaves without salt or metal grates)",
+  "outputPerHour": "Produces 20–30 lightweight, durable smoked jerky or fish strips (1 week of rations for 1 adult)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Freshly Caught Game Meat or Gutted Freshwater Fish (4–5 Fistfuls)",
+      "desc": "Fresh lean meat or fish caught with a [Figure-4 Deadfall Trap](/protocol-08.html) or [Willow Funnel Fish Trap](/protocol-11.html). White fat never dries properly and quickly turns rancid in open air, so every trace of fat must be trimmed away with a [Sharp Stone Blade](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "3 Wrist-Thick Long Branches and 10 Finger-Thick Crossbar Sticks",
+      "desc": "Stand **3 straight branches about 180cm long** (adult height) as tripod legs, tie 3 horizontal support bars at **chest height (about 120cm)** above the ground, and lay peeled smooth willow or oak hanging sticks across them."
+    },
+    {
+      "id": "mat-03",
+      "name": "2–3 Handfuls of Oak Charcoal and an Armful of Fresh Green Oak Branches & Leaves",
+      "desc": "Start a glowing ember bed on the ground using [Primitive Kiln Oak Charcoal](/protocol-09.html), then smother it thickly with freshly cut green oak, chestnut, or fruitwood twigs and leaves so no flames flare up and thick, fragrant white smoke rises steadily."
+    },
+    {
+      "id": "mat-04",
+      "name": "Wild Kudzu Vine Cordage and Broad Leaves or Soft Leather for a Smoke Canopy",
+      "desc": "[Wild Kudzu Vine Cordage](/protocol-05.html) to lash the tripod apex and crossbar frame tightly, plus [Soft Buckskin Leather](/protocol-17.html) or bundles of broad leaves wrapped around the tripod like a cone so wind does not scatter the smoke."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Trim Away All White Fat with a Sharp Stone Blade and Slice Lean Meat into 5mm Strips",
+      "description": "1. **Trim Away 100% of White Fat and Blood Clots**: White fat attached to meat does not lose moisture during smoking and turns rancid with a sour smell within days. Use a [Sharp Stone Blade](/protocol-04.html) to **cut away all white fat and tough silver skin, leaving only dark red lean muscle**. For fish, slit the belly, remove the guts and gills, and butterfly it flat along the backbone.\n2. **Slice Thin and Long Along the Muscle Grain**: Slice the lean meat along the grain so it stays tear-resistant, keeping a uniform **thickness of half a pinky joint (about 5mm), width of two fingers (about 3cm), and length of one handspan (about 20cm)**. If sliced too thick, the center rots before drying; if too thin, it crumbles.\n3. **Air-Dry Surface Moisture in Breezy Shade for 30 Minutes**: Placing wet meat directly over smoke causes black soot to stick to surface water droplets. Lay the strips on a clean rock or branch in a **cool breeze for 30 minutes until the surface feels slightly tacky and dry** before smoking.",
+      "actionNote": "> Save the trimmed white fat scraps separately: While white fat spoils if left on jerky, rendering it over low heat yields valuable tallow for making [Natural Wood-Ash Lye Soap](/protocol-13.html) or waterproofing [Soft Buckskin Leather](/protocol-17.html).",
+      "svgFileName": "pr19-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
+        "Trim away 100% of easily spoiled white fat with stone blade",
+        "Slice red lean meat along grain into 5mm x 20cm strips",
+        "Air-dry in breeze for 30 min until surface feels tacky",
+        "[KEY 01] Remove all white fat & slice 5mm thin for surface dry"
+      ],
+      "deepDive": {
+        "badge": "FAT REMOVAL & THIN SLICING",
+        "title": "Why Does Even a Tiny Strip of White Fat Spoil the Batch, and Why Must Thickness Be 5mm?",
+        "text": "Red lean muscle is mostly water; when exposed to warm airflow and smoke, moisture evaporates until bacteria can no longer survive. White fat, however, repels water loss and oxidizes on contact with air, turning sour and rotting the surrounding meat. Furthermore, if meat is cut thicker than a full finger joint, only the outside dries while the core stays damp, breeding fly larvae and spoilage bacteria. Slicing uniformly at 5mm—thin enough to look slightly translucent against sunlight—ensures the center dries right along with the surface.",
+        "fieldSpecs": [
+          {
+            "name": "Fat-Trimmed 5mm Lean Meat Strips Cut Along the Grain",
+            "scientificName": "Fat-Trimmed 5mm Lean Muscle Strips Cut Along the Grain",
+            "categoryTag": "Rancidity-Free Lean Prep / Uniform 5mm Evaporation Cross-Section",
+            "imageFileName": "id-trimmed-lean-meat-strips.jpg",
+            "hudCode": "FIG. BIO-19A // MACRO OPTIC",
+            "hudStatus": "ZERO WHITE FAT: VERIFIED",
+            "traits": [
+              {
+                "label": "TRIM/LEAN",
+                "value": "Trim away **100% of white fat and blood clots** with a [Sharp Stone Blade](/protocol-04.html) to prevent rancidity."
+              },
+              {
+                "label": "SLICE/5MM",
+                "value": "Cut uniformly at **half a pinky joint (5mm) thick and one handspan (20cm) long** for rapid core drying."
+              },
+              {
+                "label": "SURFACE/TACKY",
+                "value": "**Air-dry for 30 minutes in the breeze** before smoking so protective smoke coats evenly."
+              }
+            ],
+            "fieldUse": "Lean meat strips prepped in thickness and fat removal to dry evenly all the way through without salt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Stand a 3-Pole Wooden Tripod and Lash a Meat-Hanging Grate at Chest Height",
+      "description": "1. **Stand a Tripod with 3 Long Branches**: Lash the top ends of **3 straight, wrist-thick branches about 180cm long** tightly with [Wild Kudzu Vine Cordage](/protocol-05.html), then spread the three legs **two paces wide (about 120cm)** and plant them firmly into the ground.\n2. **Lash a Triangular Horizontal Support Frame at Chest Height**: If hung too close to the fire, the meat cooks instead of drying. Lash 3 horizontal crossbar branches across the tripod legs at **adult chest height (about 120cm, six handspans high)** to form a level triangular frame.\n3. **Hang Meat Strips One Finger-Width Apart on Peeled Sticks**: Lay 8–10 peeled, smooth finger-thick sticks across the triangular frame, and hang the meat strips with a **one-finger gap (about 2cm) between every piece** so no two strips touch.",
+      "actionNote": "> Never let meat strips overlap or touch each other: Wherever two pieces of meat press together, smoke and air cannot circulate, leaving a wet patch that quickly breeds maggots or mold. Always leave a one-finger gap between strips.",
+      "svgFileName": "pr19-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CHEST-HIGH TRIPOD DRYING RACK & MEAT SPACING",
+        "Lash 3 wrist-thick poles and spread legs two paces wide",
+        "Mount triangular support frame & grate sticks at 120cm height",
+        "Hang meat strips with 2cm (one-finger) gap between pieces",
+        "[KEY 02] Chest-high 120cm elevation & 2cm airflow spacing"
+      ],
+      "deepDive": {
+        "badge": "HEIGHT & AIRFLOW GEOMETRY",
+        "title": "Why Must the Hanging Rack Be Placed at Chest Height (120cm) Instead of Low Over the Fire?",
+        "text": "Making jerky means drying meat with warm air and smoke, not roasting it over flames. If you set the grate below knee height, intense heat from the embers sears the outside of the meat into a hard, sealed crust. Once the surface sears shut, moisture trapped inside the center cannot escape, causing the meat to rot from the inside out within days. Elevating the grate to chest height (about 120cm) allows rising heat to cool to a gentle warmth that steadily draws moisture out of the core without cooking the meat.",
+        "fieldSpecs": [
+          {
+            "name": "Chest-High (120cm) Tripod Wooden Grate Rack with 2cm Meat Spacing",
+            "scientificName": "Chest-High Tripod Wooden Grate Rack with 2cm Meat Spacing",
+            "categoryTag": "Low-Heat Updraft Elevation / 360-Degree Smoke Contact Grate",
+            "imageFileName": "id-tripod-wooden-drying-rack.jpg",
+            "hudCode": "FIG. BIO-19B // MACRO OPTIC",
+            "hudStatus": "120CM ELEVATION: VERIFIED",
+            "traits": [
+              {
+                "label": "HEIGHT/120CM",
+                "value": "Position the grate at **chest height (six handspans, 120cm)** above the pit so meat dries without cooking."
+              },
+              {
+                "label": "SPACING/2CM",
+                "value": "Keep a **one-finger gap (2cm)** between strips so smoke wraps around every surface."
+              },
+              {
+                "label": "RODS/PEELED",
+                "value": "**Peel the bark off** all hanging sticks to keep insects and bitter sap off the meat."
+              }
+            ],
+            "fieldUse": "Field drying structure that moderates fire pit heat and distributes rising smoke evenly across hanging meat"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Fill the Center Pit with Glowing Oak Coals and Smother with Green Leaves for Flameless Smoke",
+      "description": "1. **Dig a Shallow Fire Pit Under the Tripod Center**: Directly beneath the hanging grate, dig a shallow bowl **one palm deep (about 15cm) and two handspans wide**, then fill it with two or three handfuls of glowing red [Oak Charcoal](/protocol-09.html) ignited with a [Bow Drill Fire Starter](/protocol-02.html).\n2. **Smother the Glowing Coals with Green Oak Twigs and Leaves**: Over the flameless red oak coals, pile a **double layer of damp green oak (or chestnut/apple) twigs and fresh leaves** to restrict oxygen and send up thick clouds of fragrant white smoke.\n3. **Check Warmth with the 3-Second Bare-Hand Test at Rack Height**: Hold your bare hand right beside the hanging meat. If it feels too hot to keep your hand there, the fire is overheating. Add more green leaves until **holding your hand at rack height for 3–5 seconds feels comfortably warm**.",
+      "actionNote": "> Never burn pine, conifers, or toxic woods: Pine, fir, and other conifers release sticky resin soot that coats meat in black tar and bitter creosote. Toxic woods like oleander or poison sumac release deadly poison into the smoke. Always use safe hardwoods such as oak, chestnut, or fruit trees.",
+      "svgFileName": "pr19-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FLAMELESS OAK EMBER & GREEN LEAF SMOKE PIT",
+        "Lay glowing red oak charcoal in shallow center pit",
+        "Cover coals with green oak twigs & leaves to kill flames",
+        "Keep rack temperature comfortably warm to bare hand",
+        "[KEY 03] Zero open flames & thick white hardwood smoke"
+      ],
+      "deepDive": {
+        "badge": "FLAMELESS HARDWOOD SMOKE",
+        "title": "Why Does Flameless Smoke from Green Oak Branches Preserve Meat Without Any Salt?",
+        "text": "When hardwood like oak smolders slowly without open flames, the rising white smoke carries natural antimicrobial and antioxidant compounds. These smoke particles form a thin mahogany protective layer on the meat surface that kills bacteria and stops blowflies from landing to lay eggs. If you burn dry wood with open red flames, very little smoke is produced and dripping fat can flare up and char the meat. Smothering glowing charcoal with moisture-rich green oak leaves eliminates flames and generates a continuous stream of protective white smoke.",
+        "fieldSpecs": [
+          {
+            "name": "Flameless Smoldering Oak Charcoal Pit Blanketed with Green Hardwood Leaves",
+            "scientificName": "Flameless Smoldering Oak Charcoal & Green Hardwood Leaf Smoke Pit",
+            "categoryTag": "Zero-Flame Low-Temp Smoking / Natural Antimicrobial & Fly-Repellent Coating",
+            "imageFileName": "id-smoldering-oak-green-leaves.jpg",
+            "hudCode": "FIG. BIO-19C // MACRO OPTIC",
+            "hudStatus": "WHITE HARDWOOD SMOKE: VERIFIED",
+            "traits": [
+              {
+                "label": "WOOD/OAK",
+                "value": "Burn only **resin-free oak, chestnut, or fruitwood charcoal and green leaves**."
+              },
+              {
+                "label": "FLAME/ZERO",
+                "value": "Smother glowing coals with fresh leaves to **extinguish flames and raise dense white smoke**."
+              },
+              {
+                "label": "TEMP/WARM",
+                "value": "Maintain a **pleasantly warm bare-hand temperature** at the meat rack level."
+              }
+            ],
+            "fieldUse": "Smoke generator that dries internal moisture without cooking while coating meat against flies and bacteria"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Wrap the Tripod with a Leather or Leaf Canopy to Trap Smoke and Dry for Half a Day",
+      "description": "1. **Wrap the Tripod Perimeter with Leather or Broad Leaves**: To keep wind from blowing the smoke away, wrap the middle and upper tripod frame with [Soft Buckskin Leather](/protocol-17.html) or thick bundles of broad leaves, leaving **only a fist-sized vent hole at the very top** so smoke swirls around the meat before escaping.\n2. **Flip Meat Strips Every 2 Hours Over 6–8 Hours**: Turn the hanging meat strips upside down **once every 2 hours** so both ends dry evenly, replenishing oak charcoal and green leaves whenever smoke thins out over **half a day (6–8 hours)**.\n3. **Verify Completion with the Dry Twig Bend Test**: Pick the thickest strip, let it cool, and **bend it in half with your fingers. When zero red moisture or oil squeezes out and the meat bends toughly like a dry willow twig showing white fibers**, it is ready.",
+      "actionNote": "> Cool finished jerky completely before storing in a breathable pouch: Packing warm jerky straight from the smoker into a closed container traps residual heat, creating condensation droplets that grow mold. Always cool completely in the shade and store in dry burlap or buckskin.",
+      "svgFileName": "pr19-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE CANOPY ENCLOSURE & BEND-TEST VERIFICATION",
+        "Wrap tripod with leather/leaves & leave fist-sized top vent",
+        "Flip strips every 2 hours during 6-8 hours of smoking",
+        "Done when bent strip shows dry fibers with zero moisture",
+        "[KEY 04] Canopy smoke trap & dry fibrous bend test"
+      ],
+      "deepDive": {
+        "badge": "SMOKE TRAP & BEND TEST",
+        "title": "Why Leave a Fist-Sized Top Vent Hole, and How Does the Bend Test Confirm Safe Preservation?",
+        "text": "If you seal the tripod canopy completely with no top opening, damp water vapor evaporating from the meat cannot escape and condenses right back onto the jerky. Conversely, leaving the rack completely open lets wind scatter the smoke. Wrapping the sides while leaving a fist-sized chimney vent at the apex creates a slow draft where warm smoke bathes the meat, picks up moisture, and exits cleanly out the top. Finally, over-drying meat until it snaps like a cracker turns it into powder inside your pack; stopping when it bends toughly like a dry twig with zero moisture squeeze guarantees durability.",
+        "fieldSpecs": [
+          {
+            "name": "Dark Mahogany Smoked Jerky Strips Passing the Dry Fibrous Bend Test",
+            "scientificName": "Dark Mahogany Dry-Smoked Meat & Fish Jerky Strips",
+            "categoryTag": "Complete Moisture Removal / 1-Month Shelf-Stable Field Ration",
+            "imageFileName": "id-finished-smoked-jerky-strips.jpg",
+            "hudCode": "FIG. BIO-19D // MACRO OPTIC",
+            "hudStatus": "DRY BEND TEST: VERIFIED",
+            "traits": [
+              {
+                "label": "COLOR/MAHOGANY",
+                "value": "Deeply infused with oak smoke to a **dark reddish-brown mahogany sheen**."
+              },
+              {
+                "label": "TEST/BEND",
+                "value": "When folded in half, **zero blood or water appears and fibers bend like a dry twig**."
+              },
+              {
+                "label": "STORAGE/1MO",
+                "value": "Once cooled in shade and kept in a dry leather pouch, **stays edible for over a month**."
+              }
+            ],
+            "fieldUse": "High-calorie emergency trail ration chewed directly on the march or boiled into nourishing soup"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Searing the Outside over High Flames or Burning Toxic/Resinous Woods",
+    "description": "Rushing the process by building a roaring fire sears the outside of the meat into a hard crust while trapping raw water inside the core (`case hardening`). Within two days in a pouch, the damp interior rots and breeds deadly foodborne bacteria (including botulism and putrefactive pathogens). Burning toxic woods such as oleander or poison sumac infuses lethal toxins into the meat, while pine and conifers coat the food in stomach-irritating black resin soot. During peacetime practice, always use designated campground fire rings and strictly obey local wildfire prevention laws.",
+    "consequence": "Consequence: Acute food poisoning, severe dehydration shock from internally rotted meat, or poisoning from toxic smoke"
+  },
+  "shortsScript": {
+    "hook": "Caught meat in the wild with no fridge and no salt? Build a 3-pole tripod smoker so it lasts over a month!",
+    "body": "First, trim away every bit of white fat with a stone blade, slice the red lean meat 5mm thin along the grain, and air-dry it for 30 minutes. Second, lash three long branches into a tripod and hang the meat at chest height with a one-finger gap between strips. Third, fill a shallow pit with glowing oak charcoal and smother it with green oak leaves to raise thick white smoke with zero flames. Fourth, wrap the rack with leather or broad leaves and smoke for half a day until a bent strip shows dry fibers with zero moisture!",
+    "outro": "Open the offline survival manual that works even when cell networks go down—check the link in profile."
+  },
+  "outcome": {
+    "svgFileName": "pr19-outcome.svg",
+    "title": "Chest-High Tripod Smoke-Drying Rack & Green Oak Flameless Jerky Preservation System",
+    "description": "Complete field food preservation system combining fat-trimmed 5mm lean slicing, a chest-high (120cm) tripod grate, a flameless oak charcoal and green leaf smoke pit, and a canopy enclosure verified by the dry bend test.",
+    "svgLabels": [
+      "FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT & FISH DRYING SYSTEM",
+      "STAGE 1: Trim 100% White Fat & Slice 5mm Lean Strips",
+      "STAGE 2: Chest-High (120cm) Tripod Rack & 2cm Spacing",
+      "STAGE 3: Oak Coals + Green Leaves for Flameless Smoke",
+      "STAGE 4: Canopy Smoke Trap & 6-8 Hr Dry Bend Test",
+      "SAFETY RULE: No Toxic/Pine Wood & Avoid High-Flame Searing",
+      "[FINAL OUTCOME] 5mm Lean Prep + Low-Heat Oak Smoke = 1-Month Ration"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "After 3 hours of smoking, the meat is covered in black soot and still feels wet to the touch.",
+      "causeDiagnostic": "Either the meat was hung while still dripping wet without 30 minutes of initial wind-drying, resinous pine twigs got mixed into the fire pit, or the top chimney vent of the tripod canopy is blocked so steam cannot escape.",
+      "resolution": "Immediately open a fist-sized vent hole at the very top of the tripod canopy to let damp steam escape, remove any resinous conifer branches from the fire, and burn only [Primitive Kiln Oak Charcoal](/protocol-09.html) and green hardwood leaves. Wipe the black soot off the meat with dry grass, let the breeze dry the surface first, and then resume gentle smoking."
+    },
+    {
+      "question": "Blowflies and gnats keep swarming around the meat while it is drying. How do I stop them?",
+      "causeDiagnostic": "The green leaves over the fire pit burned away so smoke stopped rising, or the outer canopy around the tripod is too open, allowing wind to blow the smoke away and letting the scent of raw meat escape.",
+      "resolution": "Flies cannot approach dense oak smoke and rising warmth. Pile another handful of damp green oak twigs and leaves over the glowing coals to keep white smoke billowing continuously, and wrap [Soft Buckskin Leather](/protocol-17.html) or thick leaf bundles snugly around the tripod perimeter so smoke blankets the meat completely."
+    }
+  ],
+  "createdAt": "2026-10-29T02:06:29.298Z",
+  "updatedAt": "2026-10-29T02:11:48.134Z",
+  "contentHash": "c1051e1ea99b1468"
+}

@@ -18,7 +18,7 @@
 
 ---
 
-## 🧱 5대 핵심 생존 공학 분과 및 발행 현황 (총 17편 배포 완료)
+## 🧱 5대 핵심 생존 공학 분과 및 발행 현황 (총 18편 배포 완료)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면/이미지 | 세부 스텝 비주얼 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
@@ -39,6 +39,7 @@
 | **FOOD** | [이중 점토 옹기와 젖은 모래 기화열로 고기와 음식을 보존하는 무전력 천연 냉장고 (야전 제어 팟)](public/protocol-16.html) | `pr16-outcome.svg` | 4단계 (FIG 01~04 + 무유약 토기·삼베 실사 2종) | 7개국어 완비 | ✅ 라이브 |
 | **MATERIALS** | [참나무 껍질 우린 물과 잿물로 썩기 쉬운 날가죽을 질긴 방수 가죽으로 만드는 법 (야전 천연 가죽 만들기)](public/protocol-17.html) | `pr17-outcome.svg` | 4단계 (FIG 01~04 + 날가죽·잿물·참나무·훈연 가죽 실사 4종) | 7개국어 완비 | ✅ 라이브 |
 | **MEDICINE** | [곧은 나뭇가지와 이끼 패드·삼베 천으로 부러진 팔다리와 출혈을 고정하는 법 (야전 나뭇가지 부목 & 지혈 압박법)](public/protocol-18.html) | `pr18-outcome.svg` | 4단계 (FIG 01~04 + 삶은 삼베·이끼 부목·4점 결속·손톱 혈색 실사 4종) | 7개국어 완비 | ✅ 라이브 |
+| **FOOD** | [나뭇가지 삼발이와 참나무 생가지 연기로 고기·생선을 한 달 이상 말리는 법 (야전 훈연 육포 & 어포)](public/protocol-19.html) | `pr19-outcome.svg` | 4단계 (FIG 01~04 + 살코기·삼발이·무화염연기·완성육포 실사 4종) | 7개국어 완비 | ✅ 라이브 |
 
 > **[주제 정책 공지: 매듭(Knot) 주제 영구 제외]**: 2D/3D 정적 도면만으로 직관적 공간 조작을 전달하기 어렵고 야전 혼선을 초래하는 매듭법은 파이프라인에서 영구 제외되었으며, 기존 PR-07은 `_archived_shells/`로 안전 격리되었습니다 (단, 3D 벡터 도면 기술 자산은 영구 보존).
 
@@ -48,10 +49,10 @@
 ```text
 primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
-│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-18, 총 17편)
+│   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-19, 총 18편)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 29종)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 109종: 활성 85종[스텝 68 + 결과 17], 보존 24종)
+│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 33종)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 114종: 활성 90종[스텝 72 + 결과 18], 보존 24종)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
@@ -97,7 +98,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 15대 테스트 스위트 (149/149 PASS)
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (150/150 PASS)
 ```
 
 ---

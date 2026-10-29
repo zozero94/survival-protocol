@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-19",
+  "category": "FOOD",
+  "title": "Fleisch und Fisch mit einem Holz-Dreibein und grünem Eichenrauch über einen Monat haltbar räuchern (Feld-Dörrfleisch & Räucherfisch)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[LANGZEIT-KONSERVIERUNG] Fleisch- und Fischverderb ohne Kühlung oder Salz stoppen und tragbare Notrationen sichern",
+  "summary": "Im Feld enthalten frisches Fleisch und Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08.html) oder einer [Weiden-Trichterreuse](/protocol-11.html) so viel Wasser, dass Fliegen Eier ablegen und Bakterien sie binnen eines Tages verderben lassen. Selbst ein [Verdunstungskühler aus Tonkrügen](/protocol-16.html) lässt sich auf Märschen nicht mittragen. Ohne Salz zeigt diese Anleitung, wie man mit einer [Scharfen Steinklinge](/protocol-04.html) alles leicht verderbliche weiße Fett wegschneidet, mageres Fleisch in 5mm dünne Streifen schneidet, auf Brusthöhe an ein mit [Wilder Kudzu-Rankenschnur](/protocol-05.html) gebundenes Dreibein hängt und darunter [Eichenholzkohle](/protocol-09.html) mit grünen Laubblättern ohne Flammen glimmen lässt, um über einen Monat haltbares Dörrfleisch herzustellen.",
+  "timeRequired": "Halber Tag (1 Std. Zuschneiden & Windtrocknen + 30 Min. Dreibein-Aufbau + 6–8 Std. sanftes Räuchern)",
+  "successRate": "98% (Bei vollständiger Fettentfernung und warmer, flammenloser Rauchführung)",
+  "difficulty": "Mittel (Ohne Salz oder Metallrost nur mit Ästen, Eichenkohle und grünen Blättern machbar)",
+  "outputPerHour": "Ergibt 20–30 leichte, haltbare Räucherfleisch- oder Fischstreifen (1 Woche Notration für 1 Erwachsenen)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Frisches Wildfleisch oder ausgenommener Süßwasserfisch (4–5 Handvoll)",
+      "desc": "Frisches mageres Fleisch oder Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08.html) oder [Weiden-Trichterreuse](/protocol-11.html). Weißes Fett trocknet nicht und wird an der Luft schnell ranzig; es muss mit einer [Scharfen Steinklinge](/protocol-04.html) restlos entfernt werden."
+    },
+    {
+      "id": "mat-02",
+      "name": "3 handgelenkdicke lange Äste und 10 fingerdicke Querstäbe",
+      "desc": "Stelle **3 gerade, etwa 180cm lange Äste** als Dreibein auf, binde auf **Brusthöhe (ca. 120cm)** über dem Boden 3 Querstreben fest und lege geschälte, glatte Weiden- oder Eichenstäbe zum Aufhängen darüber."
+    },
+    {
+      "id": "mat-03",
+      "name": "2–3 Handvoll Eichenholzkohle und ein Armvoll frische grüne Eichenzweige & Blätter",
+      "desc": "Schaffe am Boden mit [Eichenholzkohle aus dem Grubenmeiler](/protocol-09.html) ein Glutbett und bedecke es dick mit frisch geschnittenen grünen Eichen-, Kastanien- oder Obstbaumzweigen und Blättern, damit keine Flammen schlagen und dichter weißer Rauch aufsteigt."
+    },
+    {
+      "id": "mat-04",
+      "name": "Wilde Kudzu-Rankenschnur sowie breite Blätter oder weiches Leder als Rauchmantel",
+      "desc": "[Wilde Kudzu-Rankenschnur](/protocol-05.html) zum Festbinden des Dreibeins sowie [Weiches Naturleder](/protocol-17.html) oder breite Blätterbündel, die das Dreibein kegelförmig umschließen, damit der Wind den Rauch nicht verweht."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Alles weiße Fett mit einer Steinklinge wegschneiden und 5mm dünne Streifen schneiden",
+      "description": "1. **Weißes Fett und Blutgerinnsel zu 100% entfernen**: Weißes Fett verliert beim Räuchern kein Wasser und fault nach wenigen Tagen mit ranzigem Geruch. Schneide mit einer [Scharfen Steinklinge](/protocol-04.html) **alles weiße Fett und zähe Sehnenhäute weg, sodass nur rotes Muskelfleisch** bleibt. Fische am Bauch öffnen, ausnehmen und flach aufklappen.\n2. **Längs zur Faser dünn und lang schneiden**: Schneide das magere Fleisch längs zur Faser gleichmäßig **5mm dünn (halbes Kleinfingerglied), zwei Finger breit (3cm) und eine Handspanne lang (20cm)**. Zu dicke Stücke faulen innen; zu dünne zerbröseln.\n3. **Oberflächenfeuchtigkeit 30 Minuten im windigen Schatten vortrocknen**: Hängt man nasses Fleisch direkt in den Rauch, klebt schwarzer Ruß an den Wassertropfen. Lege die Streifen **30 Minuten in den kühlen Wind, bis sich die Oberfläche leicht trocken und griffig anfühlt**.",
+      "actionNote": "> Weggeschnittenes weißes Fett separat aufbewahren: Auf Dörrfleisch verdirbt Fett zwar, aber langsam ausgelassen liefert es wertvollen Talg für [Natürliche Holzasche-Seife](/protocol-13.html) oder zum Imprägnieren von [Weichem Naturleder](/protocol-17.html).",
+      "svgFileName": "pr19-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
+        "100% des weißen Fetts mit scharfer Steinklinge entfernen",
+        "Rotes Muskelfleisch längs zur Faser in 5mm Streifen schneiden",
+        "Vor dem Räuchern 30 Min. im Wind antrocknen lassen",
+        "[KERN 01] Fettfrei zuschneiden & 5mm dünn im Wind vortrocknen"
+      ],
+      "deepDive": {
+        "badge": "FAT REMOVAL & THIN SLICING",
+        "title": "Warum verdirbt schon ein kleiner Rest weißes Fett den Vorrat, und warum sind 5mm Dicke entscheidend?",
+        "text": "Rotes Muskelfleisch besteht größtenteils aus Wasser; durch warme Luft und Rauch verdunstet die Feuchtigkeit, bis Bakterien nicht mehr überleben können. Weißes Fett hingegen gibt kein Wasser ab und oxidiert an der Luft rasch, wird ranzig und lässt auch das angrenzende Fleisch faulen. Ist das Fleisch zudem dicker als ein Fingerglied, trocknet nur die Außenseite, während der Kern feucht bleibt und Fliegenmaden oder Fäulnisbakterien nährt. Ein gleichmäßiger 5mm-Schnitt stellt sicher, dass das Innere gleichzeitig mit der Oberfläche durchtrocknet.",
+        "fieldSpecs": [
+          {
+            "name": "Fettfreie, 5mm dünne magere Fleischstreifen längs zur Faser geschnitten",
+            "scientificName": "Fat-Trimmed 5mm Lean Muscle Strips Cut Along the Grain",
+            "categoryTag": "Schutz vor Ranzigkeit / Gleichmäßiger 5mm-Verdunstungsquerschnitt",
+            "imageFileName": "id-trimmed-lean-meat-strips.jpg",
+            "hudCode": "FIG. BIO-19A // MACRO OPTIC",
+            "hudStatus": "ZERO WHITE FAT: VERIFIED",
+            "traits": [
+              {
+                "label": "FETTFREI/LEAN",
+                "value": "Mit einer [Scharfen Steinklinge](/protocol-04.html) **100% des weißen Fetts entfernen**, um Ranzigkeit zu verhindern."
+              },
+              {
+                "label": "DICKE/5MM",
+                "value": "Gleichmäßig **5mm dünn und 20cm lang** schneiden für schnelle Kerntrocknung."
+              },
+              {
+                "label": "ANTROCKNEN/TACKY",
+                "value": "Vor dem Räuchern **30 Minuten im Wind antrocknen**, damit der Rauch gleichmäßig haftet."
+              }
+            ],
+            "fieldUse": "In Dicke und Fettgehalt vorbereitete magere Fleischstreifen, die auch ohne Salz bis in den Kern trocknen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Dreibein aus 3 Ästen aufstellen und Fleischrost auf Brusthöhe festbinden",
+      "description": "1. **Dreibein aus 3 langen Ästen errichten**: Binde die oberen Enden von **3 geraden, handgelenkdicken und ca. 180cm langen Ästen** mit [Wilder Kudzu-Rankenschnur](/protocol-05.html) fest zusammen und spreize die Beine **zwei Schritt weit (ca. 120cm)** standfest in den Boden.\n2. **Dreieckigen Querrahmen auf Brusthöhe festbinden**: Hängt das Fleisch zu nah am Feuer, gart es statt zu trocknen. Binde auf **Brusthöhe (ca. 120cm)** 3 Querstreben zwischen die Beine, um einen waagerechten Dreiecksrahmen zu bilden.\n3. **Fleischstreifen mit Fingerabstand auf geschälte Stäbe hängen**: Lege 8–10 geschälte, glatte Stäbe über den Rahmen und hänge die Fleischstreifen mit **einem Fingerbreit (ca. 2cm) Abstand** auf, sodass sich keine Stücke berühren.",
+      "actionNote": "> Fleischstreifen dürfen sich niemals berühren oder überlappen: Wo zwei Fleischstücke aneinanderkleben, kommen weder Rauch noch Luft durch; die Stelle bleibt feucht und bildet Maden oder Schimmel. Immer einen Fingerbreit Abstand lassen.",
+      "svgFileName": "pr19-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CHEST-HIGH TRIPOD DRYING RACK & MEAT SPACING",
+        "3 lange Äste zusammenbinden und zwei Schritt weit spreizen",
+        "Dreiecksrahmen und Querstäbe auf 120cm Brusthöhe montieren",
+        "Fleischstreifen mit 2cm (Fingerbreit) Abstand aufhängen",
+        "[KERN 02] 120cm Brusthöhe gegen Garen & 2cm Lüftungsabstand"
+      ],
+      "deepDive": {
+        "badge": "HEIGHT & AIRFLOW GEOMETRY",
+        "title": "Warum muss das Hängegestell auf Brusthöhe (120cm) statt dicht über dem Feuer liegen?",
+        "text": "Dörrfleisch wird mit warmer Luft und Rauch getrocknet, nicht über dem Feuer gebraten. Baut man den Rost unter Kniehöhe, versiegelt die starke Hitze der Glut sofort die Fleischoberschicht zu einer harten Kruste. Ist die Oberfläche erst einmal dichtgekocht, kann das Wasser im Kern nicht mehr entweichen und das Fleisch fault binnen weniger Tage von innen heraus. Auf Brusthöhe (120cm) kühlt die aufsteigende Wärme genau richtig ab, um die Feuchtigkeit schonend aus dem Inneren zu ziehen.",
+        "fieldSpecs": [
+          {
+            "name": "Dreibein-Holzrost auf Brusthöhe (120cm) mit 2cm Fleischabstand",
+            "scientificName": "Chest-High Tripod Wooden Grate Rack with 2cm Meat Spacing",
+            "categoryTag": "Milde Aufwind-Höhe / 360-Grad-Rauchkontakt-Gitter",
+            "imageFileName": "id-tripod-wooden-drying-rack.jpg",
+            "hudCode": "FIG. BIO-19B // MACRO OPTIC",
+            "hudStatus": "120CM ELEVATION: VERIFIED",
+            "traits": [
+              {
+                "label": "HÖHE/120CM",
+                "value": "Den Rost auf **Brusthöhe (120cm)** über der Grube anbringen, damit das Fleisch trocknet statt gart."
+              },
+              {
+                "label": "ABSTAND/2CM",
+                "value": "Zwischen den Streifen **2cm Abstand** lassen, damit Rauch jede Seite umhüllt."
+              },
+              {
+                "label": "GESCHÄLT/PEELED",
+                "value": "**Rinde von den Querstäben schälen**, um Insekten und bitteren Baumsaft fernzuhalten."
+              }
+            ],
+            "fieldUse": "Feldtrocknungsgestell, das die Glutwärme mäßigt und aufsteigenden Rauch gleichmäßig verteilt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Eichenkohle in der Mittelgrube entzünden und mit grünen Blättern flammenlos abdecken",
+      "description": "1. **Flache Feuergrube unter der Dreibein-Mitte ausheben**: Grabe genau unter dem Rost eine Mulde **handbreit tief (15cm) und zwei Handspannen breit** und fülle sie mit zwei bis drei Handvoll glühender [Eichenholzkohle](/protocol-09.html), entzündet mit einem [Feuerbogen](/protocol-02.html).\n2. **Glühende Kohle mit grünen Eichenzweigen und Blättern abdecken**: Lege eine **doppelte Schicht feuchter grüner Eichen- (oder Kastanien-/Apfelbaum-) Zweige und Blätter** auf die flammenlose Glut, um Sauerstoff zu drosseln und dichten weißen Rauch zu erzeugen.\n3. **Wärme mit dem 3-Sekunden-Handtest auf Rosthöhe prüfen**: Halte die bloße Hand neben das hängende Fleisch. Musst du sie vor Hitze wegziehen, ist es zu heiß. Lege grüne Blätter nach, bis sich **3–5 Sekunden Handhalten angenehm warm anfühlen**.",
+      "actionNote": "> Niemals Kiefer, Nadelholz oder giftige Hölzer verbrennen: Nadelhölzer wie Kiefer entwickeln klebrigen Harzruß, der das Fleisch schwarz und ungenießbar bitter macht. Giftige Hölzer wie Oleander oder Giftsumach geben tödliche Gifte in den Rauch ab. Nur sichere Laubhölzer wie Eiche, Kastanie oder Obstbäume nutzen.",
+      "svgFileName": "pr19-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FLAMELESS OAK EMBER & GREEN LEAF SMOKE PIT",
+        "Glühende Eichenholzkohle in die flache Mittelgrube legen",
+        "Glut mit grünen Eichenzweigen & Blättern flammenlos abdecken",
+        "Angenehme Handwärme und weißen Rauch auf Rosthöhe halten",
+        "[KERN 03] 0% offene Flammen & weißer Eichen-Schutzrauch"
+      ],
+      "deepDive": {
+        "badge": "FLAMELESS HARDWOOD SMOKE",
+        "title": "Warum macht flammenloser Rauch aus grünen Eichenzweigen Fleisch auch ohne Salz haltbar?",
+        "text": "Wenn Laubholz wie Eiche ohne offene Flamme langsam glimmt, enthält der weiße Rauch natürliche keimtötende und konservierende Stoffe. Diese Rauchpartikel legen einen dünnen braunen Schutzfilm um das Fleisch, der Bakterien abtötet und Schmeißfliegen am Eierlegen hindert. Verbrennt man hingegen trockenes Holz mit offener Flamme, entsteht kaum Rauch und herabtropfendes Fett kann sich entzünden und das Fleisch verkohlen. Frische grüne Eichenblätter auf der Kohle ersticken Flammen und liefern stetigen Schutzrauch.",
+        "fieldSpecs": [
+          {
+            "name": "Flammenlose Eichenkohle-Rauchgrube bedeckt mit grünen Laubholzzweigen",
+            "scientificName": "Flameless Smoldering Oak Charcoal & Green Hardwood Leaf Smoke Pit",
+            "categoryTag": "Flammenloses Niedrigtemperatur-Räuchern / Natürlicher Keim- & Fliegenschutz",
+            "imageFileName": "id-smoldering-oak-green-leaves.jpg",
+            "hudCode": "FIG. BIO-19C // MACRO OPTIC",
+            "hudStatus": "WHITE HARDWOOD SMOKE: VERIFIED",
+            "traits": [
+              {
+                "label": "LAUBHOLZ/OAK",
+                "value": "Nur **harzfreie Eichen-, Kastanien- oder Obstbaumkohle und grüne Blätter** verwenden."
+              },
+              {
+                "label": "FLAMMENLOS/NO-FLAME",
+                "value": "Glut mit frischen Blättern abdecken, um **Flammen zu löschen und weißen Rauch** zu erzeugen."
+              },
+              {
+                "label": "HANDWARM/WARM",
+                "value": "Auf Fleischhöhe eine **angenehm milde Handwärme** halten."
+              }
+            ],
+            "fieldUse": "Rauchquelle, die Kernfeuchtigkeit ohne Garen trocknet und das Fleisch vor Fliegen und Bakterien schützt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Dreibein mit Leder oder Blättern ummanteln und einen halben Tag lang fertig trocknen",
+      "description": "1. **Dreibein mit Leder oder breiten Blättern umhüllen**: Wickle [Weiches Naturleder](/protocol-17.html) oder breite Blätterbündel um den mittleren und oberen Teil des Dreibeins und lasse **ganz oben nur ein faustgroßes Rauchloch** offen, damit der Rauch das Fleisch umströmt.\n2. **Fleischstreifen über 6–8 Stunden alle 2 Stunden wenden**: Wende die Streifen **alle 2 Stunden**, damit sie gleichmäßig trocknen, und lege über **einen halben Tag (6–8 Stunden)** bei Bedarf Eichenkohle und grüne Blätter nach.\n3. **Fertigstellung mit dem Trockenzweig-Biegetest prüfen**: Nimm das dickste abgekühlte Stück und **biege es mit den Fingern zur Hälfte; tritt kein Tropfen Wasser oder Blut aus und biegt es sich zäh wie ein trockener Zweig mit weißen Fasern**, ist es fertig.",
+      "actionNote": "> Fertiges Dörrfleisch vor dem Verpacken komplett abkühlen lassen: Packt man warmes Dörrfleisch sofort in einen geschlossenen Behälter, bildet die Restwärme Schwitzwasser und Schimmel. Immer im Schatten ganz abkühlen lassen und in trockenem Sackleinen oder Leder lagern.",
+      "svgFileName": "pr19-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE CANOPY ENCLOSURE & BEND-TEST VERIFICATION",
+        "Dreibein mit Leder/Blättern umhüllen & oben Rauchloch lassen",
+        "Fleisch über 6-8 Stunden alle 2 Stunden gleichmäßig wenden",
+        "Fertig wenn gebogenes Stück trocken wie ein Zweig nachgibt",
+        "[KERN 04] Rauchmantel-Effizienz & trockener Faser-Biegetest"
+      ],
+      "deepDive": {
+        "badge": "SMOKE TRAP & BEND TEST",
+        "title": "Warum bleibt oben ein faustgroßes Abzugsloch, und wie bestätigt der Biegetest die Haltbarkeit?",
+        "text": "Verschließt man das Dreibein komplett ohne obere Öffnung, kann der aus dem Fleisch entweichende Wasserdampf nicht abziehen und schlägt sich wieder als Tropfen auf dem Fleisch nieder. Ohne Ummantelung wiederum verweht der Wind den Rauch. Ein geschlossener Mantel mit faustgroßem Abzugsloch an der Spitze erzeugt einen sanften Kaminzug, bei dem warmer Rauch das Fleisch umhüllt, Feuchtigkeit aufnimmt und oben entweicht. Trocknet man das Fleisch zu stark, bis es wie Keks bricht, zerfällt es im Rucksack zu Staub; biegt es sich zäh wie ein trockener Zweig ohne Feuchtigkeit, ist es ideal.",
+        "fieldSpecs": [
+          {
+            "name": "Dunkelbraun glänzendes Räucher-Dörrfleisch im bestandenen Biegetest",
+            "scientificName": "Dark Mahogany Dry-Smoked Meat & Fish Jerky Strips",
+            "categoryTag": "Vollständiger Wasserentzug / Über 1 Monat ungekühlt haltbare Notration",
+            "imageFileName": "id-finished-smoked-jerky-strips.jpg",
+            "hudCode": "FIG. BIO-19D // MACRO OPTIC",
+            "hudStatus": "DRY BEND TEST: VERIFIED",
+            "traits": [
+              {
+                "label": "FARBE/MAHOGANY",
+                "value": "Durch Eichenrauch tief **dunkelrotbraun (Mahagoni) mit sanftem Glanz**."
+              },
+              {
+                "label": "BIEGUNG/BEND",
+                "value": "Beim Falten **völlig frei von Wasser oder Blut und zäh biegsam wie ein Zweig**."
+              },
+              {
+                "label": "LAGERUNG/KEEP",
+                "value": "Im Schatten gekühlt und im trockenen Lederbeutel **über einen Monat haltbar**."
+              }
+            ],
+            "fieldUse": "Kalorienreiche Notration für den Marsch zum direkten Kauen oder Auskochen als kräftige Brühe"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Tödlicher Fehler: Außenseite über starker Flamme angaren oder Gift-/Nadelholz verbrennen",
+    "description": "Ein starkes Feuer zum schnellen Trocknen gart die äußere Fleischschicht zu einer harten Kruste, während das Wasser im Inneren eingeschlossen bleibt. Im Beutel fault der feuchte Kern binnen zwei Tagen und verursacht lebensgefährliche Lebensmittelvergiftungen (wie Botulismus). Giftige Hölzer wie Oleander oder Giftsumach reichern tödliche Gifte im Fleisch an, und Nadelholz überzieht es mit schwarzem Harzruß. Bei Übungen in Friedenszeiten stets zugelassene Feuerstellen nutzen und Waldbrandschutzgesetze strikt beachten.",
+    "consequence": "Folge: Akute Lebensmittelvergiftung, Dehydrierungsschock durch innen verfaultes Fleisch oder Rauchvergiftung"
+  },
+  "shortsScript": {
+    "hook": "Fleisch in der Wildnis ohne Kühlschrank und ohne Salz? Bau aus 3 Ästen einen Räucherstand für 1 Monat Haltbarkeit!",
+    "body": "Erstens: Alles weiße Fett mit einer Steinklinge wegschneiden, mageres Fleisch 5mm dünn schneiden und 30 Minuten im Wind antrocknen. Zweitens: Aus drei langen Ästen ein Dreibein bauen und das Fleisch auf Brusthöhe mit Fingerabstand aufhängen. Drittens: Glühende Eichenkohle am Boden auslegen und mit grünen Eichenblättern abdecken, damit weißer Rauch ohne Flammen aufsteigt. Viertens: Dreibein mit Leder oder Blättern umhüllen und einen halben Tag räuchern, bis es sich trocken wie ein Zweig biegt!",
+    "outro": "Das Offline-Survival-Handbuch für den Ernstfall ohne Netz – Link im Profil prüfen."
+  },
+  "outcome": {
+    "svgFileName": "pr19-outcome.svg",
+    "title": "Brusthohes Dreibein-Räuchergestell & Flammenloses Eichenlaub-Dörrfleisch-System",
+    "description": "Vollständiges Feldkonservierungssystem aus fettfreiem 5mm-Zuschnitt, brusthohem (120cm) Dreibein-Gitter, flammenloser Eichenkohle-Laub-Rauchgrube sowie Rauchmantel und Biegetest-Prüfung.",
+    "svgLabels": [
+      "FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT & FISH DRYING SYSTEM",
+      "STAGE 1: 100% Weißes Fett Entfernen & 5mm Streifen Schneiden",
+      "STAGE 2: Brusthohes (120cm) Dreibein & 2cm Fleischabstand",
+      "STAGE 3: Eichenkohle + Grüne Blätter für Flammenlosen Rauch",
+      "STAGE 4: Rauchmantel & Biegetest nach 6-8 Std. Trocknung",
+      "SAFETY RULE: Kein Gift-/Nadelholz & Keine Starken Flammen",
+      "[ENDERGEBNIS] 5mm Mager-Schnitt + Milder Eichenrauch = 1-Monats-Ration"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Nach 3 Stunden Räuchern ist das Fleisch voller schwarzem Ruß und fühlt sich immer noch feucht an.",
+      "causeDiagnostic": "Das Fleisch wurde nass ohne 30 Minuten Windtrocknung aufgehängt, harzige Kiefernzweige sind im Feuer oder das obere Abzugsloch des Dreibeins ist verstopft, sodass Wasserdampf nicht entweichen kann.",
+      "resolution": "Öffne sofort ganz oben am Dreibein ein faustgroßes Rauchloch für den Dampfabzug, entferne alle Nadelholzäste aus der Grube und nutze nur [Eichenholzkohle aus dem Grubenmeiler](/protocol-09.html) sowie grüne Laubblätter. Wische den Ruß mit trockenem Gras ab, lasse die Oberfläche erst im Wind antrocknen und räuchere dann sanft weiter."
+    },
+    {
+      "question": "Beim Trocknen schwärmen ständig Schmeißfliegen und Mücken um das Fleisch. Wie halte ich sie fern?",
+      "causeDiagnostic": "Die grünen Blätter auf der Glut sind verbrannt, sodass der Rauch abgerissen ist, oder der Mantel um das Dreibein ist zu offen, sodass der Wind den Rauch verweht.",
+      "resolution": "Fliegen meiden dichten Eichenrauch und Wärme. Lege eine weitere Handvoll feuchter grüner Eichenzweige und Blätter auf die Glut, damit ununterbrochen weißer Rauch aufsteigt, und schließe [Weiches Naturleder](/protocol-17.html) oder Blätterbündel dichter um das Dreibein."
+    }
+  ],
+  "createdAt": "2026-10-29T02:06:29.298Z",
+  "updatedAt": "2026-10-29T02:11:48.134Z",
+  "contentHash": "c1051e1ea99b1468"
+}

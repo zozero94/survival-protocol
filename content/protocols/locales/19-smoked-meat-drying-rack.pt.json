@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-19",
+  "category": "FOOD",
+  "title": "Como Secar e Defumar Carne e Peixe com Tripé de Galhos e Fumaça de Carvalho Verde para Durar Mais de um Mês (Charque de Campo)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[CONSERVAÇÃO DE ALIMENTOS] Evitar o Apodrecimento de Carne e Peixe sem Geladeira ou Sal e Garantir Rações Portáteis",
+  "summary": "No campo, a carne e o peixe frescos capturados com uma [Armadilha de Pedra Figura-4](/protocol-08.html) ou um [Covo de Salgueiro em Funil](/protocol-11.html) têm tanta umidade que moscas botam ovos e bactérias os apodrecem em um único dia. Nem mesmo um [Resfriador Evaporativo de Pote de Barro](/protocol-16.html) pode ser carregado em longas caminhadas. Em isolamento sem sal, este guia mostra como remover toda a gordura branca com uma [Lâmina de Pedra Afiada](/protocol-04.html), fatiar a carne magra em tiras de 5mm, pendurá-las na altura do peito em um tripé amarrado com [Corda de Cipó Silvestre](/protocol-05.html) e queimar [Carvão de Carvalho](/protocol-09.html) coberto com folhas verdes por baixo para produzir fumaça branca sem chamas que seca a umidade e conserva o alimento por mais de um mês.",
+  "timeRequired": "Meio Dia (1 h Limpeza e Secagem ao Vento + 30 min Montagem do Tripé + 6–8 h Defumação Lenta)",
+  "successRate": "98% (Removendo toda a gordura branca e mantendo fumaça morna sem chamas)",
+  "difficulty": "Média (Executável com galhos, carvão de carvalho e folhas verdes sem sal ou grelhas metálicas)",
+  "outputPerHour": "Produz 20–30 tiras leves e firmes de carne ou peixe defumado (ração de 1 semana para 1 adulto)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Carne de Caça Fresca ou Peixe de Rio Limpo (4–5 Punhados)",
+      "desc": "Carne magra ou peixe recém-capturado com uma [Armadilha de Pedra Figura-4](/protocol-08.html) ou [Covo de Salgueiro em Funil](/protocol-11.html). A gordura branca não seca bem e fica rançosa rapidamente ao ar livre, devendo ser totalmente removida com uma [Lâmina de Pedra Afiada](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "3 Galhos Longos da Grossura do Pulso e 10 Varetas Transversais da Grossura de um Dedo",
+      "desc": "Ergue-se **3 galhos retos de cerca de 180cm** como pernas do tripé, amarram-se 3 travessas horizontais **na altura do peito (cerca de 120cm)** acima do chão e apoiam-se varetas descascadas de salgueiro ou carvalho para pendurar a carne."
+    },
+    {
+      "id": "mat-03",
+      "name": "2–3 Punhados de Carvão de Carvalho e uma Braçada de Galhos e Folhas Verdes de Carvalho",
+      "desc": "Faça uma cama de brasas no chão com [Carvão de Carvalho de Forno Primitivo](/protocol-09.html) e cubra-a com galhos e folhas verdes recém-cortados de carvalho, castanheira ou árvores frutíferas para abafar as chamas e gerar fumaça branca contínua."
+    },
+    {
+      "id": "mat-04",
+      "name": "Corda de Cipó Silvestre e Folhas Largas ou Couro Macio para Tenda de Fumaça",
+      "desc": "[Corda de Cipó Silvestre](/protocol-05.html) para amarrar o topo do tripé e o suporte transversal, além de [Couro Macio Natural](/protocol-17.html) ou feixes de folhas largas ao redor do tripé para reter a fumaça."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Retirar Toda a Gordura Branca com Lâmina de Pedra e Cortar Tiras Magras de 5mm",
+      "description": "1. **Remover 100% da Gordura Branca e Coágulos**: A gordura branca não perde água na fumaça e apodrece com cheiro rançoso em poucos dias. Use uma [Lâmina de Pedra Afiada](/protocol-04.html) para **retirar toda a gordura branca e membranas duras, deixando apenas carne magra vermelha**. Nos peixes, abra a barriga, tire as vísceras e guelras e abra-o espalmado.\n2. **Cortar Tiras Finas e Longas no Sentido da Fibra**: Corte a carne magra ao longo da fibra com **espessura uniforme de meia falange do mindinho (5mm), largura de dois dedos (3cm) e comprimento de um palmo (20cm)**. Se ficar grossa demais, apodrece por dentro; se fina demais, esfarela.\n3. **Secar a Umidade Superficial na Sombra Ventilada por 30 Minutos**: Colocar carne molhada direto na fumaça faz a fuligem preta grudar nas gotas de água. Espalhe as tiras sobre uma pedra limpa ao **vento fresco por 30 minutos até a superfície ficar levemente seca e pegajosa**.",
+      "actionNote": "> Guarde os recortes de gordura branca separadamente: Embora a gordura estrague o charque, derretê-la em fogo baixo rende sebo valioso para fazer [Sabão Natural de Cinzas](/protocol-13.html) ou impermeabilizar [Couro Macio Natural](/protocol-17.html).",
+      "svgFileName": "pr19-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
+        "Remover 100% da gordura branca com lâmina de pedra",
+        "Cortar carne magra ao longo da fibra em tiras de 5mm x 20cm",
+        "Secar ao vento por 30 min até tirar a umidade superficial",
+        "[CHAVE 01] Zero gordura branca e corte uniforme de 5mm"
+      ],
+      "deepDive": {
+        "badge": "FAT REMOVAL & THIN SLICING",
+        "title": "Por Que um Pouco de Gordura Branca Estraga Tudo e Por Que Cortar com 5mm?",
+        "text": "O músculo magro vermelho é composto majoritariamente por água; quando exposto ao ar morno e à fumaça, a umidade evapora até que as bactérias não consigam sobreviver. Já a gordura branca retém umidade e oxida em contato com o ar, ficando rançosa e apodrecendo a carne ao redor. Além disso, se a carne tiver mais de um dedo de espessura, apenas o exterior seca enquanto o miolo permanece úmido, criando larvas de mosca. Cortar uniformemente a 5mm garante que o centro seque junto com a superfície.",
+        "fieldSpecs": [
+          {
+            "name": "Tiras de Carne Magra de 5mm Sem Gordura Cortadas ao Longo da Fibra",
+            "scientificName": "Fat-Trimmed 5mm Lean Muscle Strips Cut Along the Grain",
+            "categoryTag": "Sem Gordura Oxidante / Seção Uniforme de 5mm para Evaporação",
+            "imageFileName": "id-trimmed-lean-meat-strips.jpg",
+            "hudCode": "FIG. BIO-19A // MACRO OPTIC",
+            "hudStatus": "ZERO WHITE FAT: VERIFIED",
+            "traits": [
+              {
+                "label": "MAGRO/LEAN",
+                "value": "Remova **100% da gordura branca e coágulos** com uma [Lâmina de Pedra Afiada](/protocol-04.html) para evitar ranço."
+              },
+              {
+                "label": "ESPESSURA/5MM",
+                "value": "Corte com **5mm de espessura e um palmo (20cm) de comprimento** para secagem rápida do miolo."
+              },
+              {
+                "label": "PRÉ-SECO/TACKY",
+                "value": "**Seque ao vento por 30 minutos** antes de defumar para fixar a fumaça por igual."
+              }
+            ],
+            "fieldUse": "Tiras de carne magra preparadas em espessura e sem gordura para secar até o centro sem sal"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Erguer um Tripé de 3 Galhos e Amarrar uma Grelha de Varetas na Altura do Peito",
+      "description": "1. **Montar um Tripé com 3 Galhos Longos**: Amarre as pontas superiores de **3 galhos retos da grossura do pulso e 180cm de comprimento** com [Corda de Cipó Silvestre](/protocol-05.html) e abra as três pernas a **dois passos de largura (cerca de 120cm)** firmando-as no solo.\n2. **Amarrar um Quadro Triangular Horizontal na Altura do Peito**: Se ficar muito perto do fogo, a carne assa em vez de secar. Amarre 3 travessas entre as pernas **na altura do peito de um adulto (cerca de 120cm)** para formar um suporte triangular nivelado.\n3. **Pendurar as Tiras com um Dedo de Espaço sobre Varetas Descascadas**: Apoie 8–10 varetas descascadas e lisas sobre o quadro triangular e pendure as tiras de carne deixando **a largura de um dedo (cerca de 2cm) de espaço** entre cada pedaço.",
+      "actionNote": "> Nunca deixe as tiras de carne encostarem ou sobreporem: Onde dois pedaços de carne ficam grudados, a fumaça e o ar não circulam, deixando uma parte úmida que cria bicheira ou mofo. Deixe sempre um dedo de espaço entre as tiras.",
+      "svgFileName": "pr19-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CHEST-HIGH TRIPOD DRYING RACK & MEAT SPACING",
+        "Amarrar 3 galhos longos e abrir as pernas a dois passos",
+        "Montar suporte triangular e varetas a 120cm de altura",
+        "Pendurar tiras de carne com 2cm (um dedo) de distância",
+        "[CHAVE 02] Altura do peito (120cm) e espaçamento de 2cm"
+      ],
+      "deepDive": {
+        "badge": "HEIGHT & AIRFLOW GEOMETRY",
+        "title": "Por Que Instalar a Grelha na Altura do Peito (120cm) e Não Logo Acima do Fogo?",
+        "text": "Fazer charque significa secar a carne com ar morno e fumaça, não assá-la. Se você posicionar a grelha abaixo da altura do joelho, o calor intenso das brasas sela a superfície da carne formando uma crosta dura. Uma vez selada por fora, a água presa no centro não consegue sair e a carne apodrece de dentro para fora em poucos dias. Ao elevar a grelha à altura do peito (120cm), o ar quente esfria ao subir e retira suavemente a umidade interna sem cozinhar a carne.",
+        "fieldSpecs": [
+          {
+            "name": "Tripé de Madeira com Grelha na Altura do Peito (120cm) e Espaçamento de 2cm",
+            "scientificName": "Chest-High Tripod Wooden Grate Rack with 2cm Meat Spacing",
+            "categoryTag": "Corrente Ascendente Morna / Grelha de Contato de Fumaça 360°",
+            "imageFileName": "id-tripod-wooden-drying-rack.jpg",
+            "hudCode": "FIG. BIO-19B // MACRO OPTIC",
+            "hudStatus": "120CM ELEVATION: VERIFIED",
+            "traits": [
+              {
+                "label": "ALTURA/120CM",
+                "value": "Posicione a grelha **na altura do peito (120cm)** acima do fogo para secar sem cozinhar."
+              },
+              {
+                "label": "ESPAÇO/2CM",
+                "value": "Deixe **um dedo de espaço (2cm)** entre as tiras para a fumaça envolver todos os lados."
+              },
+              {
+                "label": "DESCASCADO/PEELED",
+                "value": "**Retire a casca** das varetas para evitar insetos e seiva amarga na carne."
+              }
+            ],
+            "fieldUse": "Estrutura de secagem que modera o calor do braseiro e distribui a fumaça de maneira uniforme"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Acender Brasas de Carvalho na Cova Central e Cobrir com Folhas Verdes Sem Chamas",
+      "description": "1. **Cavar uma Cova Rasa no Centro do Tripé**: Bem embaixo da grelha, cave uma cova rasa de **um palmo de profundidade (15cm) e dois palmos de largura** e coloque dois ou três punhados de [Carvão de Carvalho](/protocol-09.html) em brasa aceso com um [Arco de Pua](/protocol-02.html).\n2. **Cobrir as Brasas com Galhos e Folhas Verdes de Carvalho**: Sobre as brasas vermelhas sem chamas, coloque uma **camada dupla de galhos e folhas verdes úmidas de carvalho (ou castanheira/macieira)** para reduzir o oxigênio e levantar nuvens densas de fumaça branca.\n3. **Testar o Calor com a Mão Nua por 3 Segundos**: Coloque a mão ao lado da carne pendurada; se queimar, está quente demais. Adicione mais folhas verdes até que **manter a mão por 3 a 5 segundos transmita apenas um calor suave e agradável**.",
+      "actionNote": "> Proibido usar pinheiro, coníferas ou madeiras tóxicas: Pinheiros e coníferas soltam fuligem preta de resina que amarga e estraga a carne. Madeiras tóxicas como espirradeira ou sumagre-venenoso liberam veneno mortal na fumaça. Use apenas madeiras duras seguras como carvalho, castanheira ou frutíferas.",
+      "svgFileName": "pr19-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FLAMELESS OAK EMBER & GREEN LEAF SMOKE PIT",
+        "Colocar brasas de carvão de carvalho na cova central",
+        "Cobrir brasas com galhos e folhas verdes sem chamas",
+        "Manter calor suave à mão e fumaça branca constante",
+        "[CHAVE 03] Zero chamas e fumaça branca protetora de carvalho"
+      ],
+      "deepDive": {
+        "badge": "FLAMELESS HARDWOOD SMOKE",
+        "title": "Por Que a Fumaça Sem Chamas de Galhos Verdes de Carvalho Conserva a Carne Sem Sal?",
+        "text": "Quando uma madeira dura como o carvalho queima lentamente sem chamas, a fumaça branca carrega compostos antimicrobianos e antioxidantes naturais. Essas partículas formam uma fina película protetora cor de mogno sobre a carne que mata bactérias e impede que moscas pousem para botar ovos. Se você queimar lenha seca com chamas vivas, quase não sai fumaça e a gordura que pinga pode pegar fogo e carbonizar a carne. Cobrir o carvão com folhas verdes úmidas apaga as chamas e gera fumaça protetora contínua.",
+        "fieldSpecs": [
+          {
+            "name": "Cova de Brasas de Carvalho Coberta com Folhas Verdes de Madeira Dura Sem Chamas",
+            "scientificName": "Flameless Smoldering Oak Charcoal & Green Hardwood Leaf Smoke Pit",
+            "categoryTag": "Defumação Morna Sem Chamas / Película Antimicrobiana e Repelente de Moscas",
+            "imageFileName": "id-smoldering-oak-green-leaves.jpg",
+            "hudCode": "FIG. BIO-19C // MACRO OPTIC",
+            "hudStatus": "WHITE HARDWOOD SMOKE: VERIFIED",
+            "traits": [
+              {
+                "label": "MADEIRA/OAK",
+                "value": "Queime apenas **carvão e folhas verdes de carvalho, castanheira ou frutíferas sem resina**."
+              },
+              {
+                "label": "SEM CHAMA/NO-FLAME",
+                "value": "Cubra as brasas com folhas frescas para **apagar chamas e gerar fumaça branca densa**."
+              },
+              {
+                "label": "MORNO/WARM",
+                "value": "Mantenha uma **temperatura agradavelmente morna à mão** na altura da carne."
+              }
+            ],
+            "fieldUse": "Gerador de fumaça que seca a umidade interna sem cozinhar e protege contra moscas e bactérias"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Envolver o Tripé com Couro ou Folhas para Reter a Fumaça e Secar por Meio Dia",
+      "description": "1. **Cercar o Tripé com Couro ou Folhas Largas**: Para que o vento não espalhe a fumaça, envolva a parte média e superior do tripé com [Couro Macio Natural](/protocol-17.html) ou feixes de folhas largas, deixando **apenas uma abertura do tamanho de um punho no topo** para a fumaça envolver a carne antes de sair.\n2. **Virar as Tiras a Cada 2 Horas durante 6–8 Horas**: Inverta a posição das tiras **uma vez a cada 2 horas** para secar por igual, repondo carvão de carvalho e folhas verdes durante **meio dia (6–8 horas)**.\n3. **Confirmar o Ponto com o Teste de Dobra de Galho Seco**: Pegue a tira mais grossa, deixe esfriar e **dobre-a ao meio com os dedos; quando não sair nenhuma gota de sangue ou água e ela dobrar firme como um galho seco mostrando fibras brancas**, está pronta.",
+      "actionNote": "> Esfrie totalmente o charque antes de guardar em saco respirável: Guardar a carne ainda morna em recipiente fechado gera gotas de condensação que criam mofo. Sempre esfrie na sombra e guarde em saco de estopa seca ou couro.",
+      "svgFileName": "pr19-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SMOKE CANOPY ENCLOSURE & BEND-TEST VERIFICATION",
+        "Envolver tripé com couro/folhas deixando saída no topo",
+        "Virar a carne a cada 2 horas durante 6-8 horas de secagem",
+        "Pronto ao dobrar como galho seco sem sinal de umidade",
+        "[CHAVE 04] Tenda retentora de fumaça e teste de dobra seca"
+      ],
+      "deepDive": {
+        "badge": "SMOKE TRAP & BEND TEST",
+        "title": "Por Que Deixar uma Saída do Tamanho de um Punho no Topo e Como Funciona o Teste de Dobra?",
+        "text": "Se você fechar o tripé completamente sem saída superior, o vapor de água que sai da carne não consegue escapar e condensa de volta sobre o charque. Por outro lado, sem cobertura o vento espalha toda a fumaça. Ao cobrir as laterais e deixar uma chaminé do tamanho de um punho no topo, a fumaça morna circula pela carne, absorve a umidade e sai por cima. Além disso, secar demais até quebrar como biscoito faz a carne virar pó na mochila; parar quando ela dobra firme como galho seco sem soltar água garante durabilidade máxima.",
+        "fieldSpecs": [
+          {
+            "name": "Tiras de Charque Defumado Cor de Mogno Escuro Aprovadas no Teste de Dobra",
+            "scientificName": "Dark Mahogany Dry-Smoked Meat & Fish Jerky Strips",
+            "categoryTag": "Remoção Total de Umidade / Ração de Campo Estável por Mais de 1 Mês",
+            "imageFileName": "id-finished-smoked-jerky-strips.jpg",
+            "hudCode": "FIG. BIO-19D // MACRO OPTIC",
+            "hudStatus": "DRY BEND TEST: VERIFIED",
+            "traits": [
+              {
+                "label": "COR/MAHOGANY",
+                "value": "Impregnado com fumaça de carvalho em **tom mogno avermelhado escuro e brilho suave**."
+              },
+              {
+                "label": "DOBRA/BEND",
+                "value": "Ao dobrar ao meio, **não solta água nem sangue e cede firme como galho seco**."
+              },
+              {
+                "label": "CONSERVAÇÃO/KEEP",
+                "value": "Resfriado na sombra e guardado em saco de couro seco, **dura mais de um mês**."
+              }
+            ],
+            "fieldUse": "Ração de emergência altamente calórica para mastigar em marcha ou ferver em caldo nutritivo"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Erro Fatal: Assar o Exterior com Chamas Altas ou Queimar Madeiras Tóxicas ou Coníferas",
+    "description": "Acender uma fogueira forte para apressar a secagem assa a camada externa da carne formando uma crosta dura que prende a água no miolo. Guardada no saco, a parte interna úmida apodrece em dois dias e causa intoxicação alimentar grave (como botulismo). Queimar madeiras tóxicas como espirradeira concentra venenos letais na carne, e o pinheiro impregna fuligem resinosa irritante. Em treinamentos em tempos de paz, utilize sempre fogueiras autorizadas e respeite rigorosamente as leis de prevenção a incêndios florestais.",
+    "consequence": "Consequência: Intoxicação alimentar aguda, choque por desidratação ou envenenamento por fumaça tóxica"
+  },
+  "shortsScript": {
+    "hook": "Pegou carne na selva sem geladeira e sem sal? Faça charque para um mês usando apenas 3 galhos!",
+    "body": "Primeiro, tire toda a gordura branca com uma lâmina de pedra, corte a carne magra com 5mm de espessura e seque 30 minutos ao vento. Segundo, monte um tripé com três galhos longos e pendure a carne na altura do peito deixando um dedo de espaço. Terceiro, coloque brasas de carvão de carvalho no chão e cubra com folhas verdes de carvalho para levantar fumaça branca sem chamas. Quarto, envolva o tripé com couro ou folhas e defume por meio dia até dobrar firme como galho seco sem umidade!",
+    "outro": "Abra o manual de sobrevivência offline que funciona sem sinal — confira o link no perfil."
+  },
+  "outcome": {
+    "svgFileName": "pr19-outcome.svg",
+    "title": "Tripé de Defumação na Altura do Peito e Sistema de Conservação com Fumaça de Carvalho Verde",
+    "description": "Sistema completo de conservação em campo combinando corte magro de 5mm sem gordura, grelha em tripé a 120cm, braseiro sem chamas de carvão e folhas verdes de carvalho, tenda de fumaça e teste de dobra.",
+    "svgLabels": [
+      "FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT & FISH DRYING SYSTEM",
+      "STAGE 1: Tirar 100% da Gordura Branca e Cortar Tiras de 5mm",
+      "STAGE 2: Grelha em Tripé a 120cm e Espaçamento de 2cm",
+      "STAGE 3: Brasas de Carvalho + Folhas Verdes Sem Chamas",
+      "STAGE 4: Tenda de Fumaça e Teste de Dobra (6-8 h)",
+      "SAFETY RULE: Proibido Pinheiro/Madeira Tóxica e Chamas Altas",
+      "[RESULTADO FINAL] Corte Magro 5mm + Fumaça Morna = Ração de 1 Mês"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Após 3 horas de fumaça, a carne está coberta de fuligem preta e continua úmida ao toque.",
+      "causeDiagnostic": "A carne foi pendurada molhada sem secar 30 minutos ao vento, galhos resinosos de pinheiro entraram no fogo ou a saída superior do tripé está fechada impedindo a saída do vapor.",
+      "resolution": "Abra imediatamente um buraco do tamanho de um punho no topo do tripé para o vapor sair, retire qualquer galho de conífera do fogo e deixe apenas [Carvão de Carvalho de Forno Primitivo](/protocol-09.html) e folhas verdes de madeira dura. Limpe a fuligem com capim seco, deixe o vento secar a superfície primeiro e retome a defumação suave."
+    },
+    {
+      "question": "Moscas e mosquitos continuam rondando a carne enquanto ela seca. Como impedir?",
+      "causeDiagnostic": "As folhas verdes sobre o fogo queimaram tudo e a fumaça parou, ou a cobertura externa do tripé está muito aberta deixando o vento espalhar a fumaça.",
+      "resolution": "Moscas não conseguem se aproximar de fumaça densa de carvalho e calor. Cubra as brasas com mais um punhado de galhos e folhas verdes úmidas de carvalho para manter a fumaça branca contínua, e feche [Couro Macio Natural](/protocol-17.html) ou feixes de folhas largas ao redor do tripé."
+    }
+  ],
+  "createdAt": "2026-10-29T02:06:29.298Z",
+  "updatedAt": "2026-10-29T02:11:48.134Z",
+  "contentHash": "c1051e1ea99b1468"
+}

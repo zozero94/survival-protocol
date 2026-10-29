@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT &amp; FISH DRYING SYSTEM">
+  <title>FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT &amp; FISH DRYING SYSTEM</title>
+  <defs>
+    <radialGradient id="pr19o-bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#171e15"/>
+      <stop offset="100%" stop-color="#0b0f0a"/>
+    </radialGradient>
+    <pattern id="pr19o-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#c8d6c0" stroke-width="0.3" stroke-opacity="0.08"/>
+    </pattern>
+    <linearGradient id="pr19o-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2417"/>
+      <stop offset="100%" stop-color="#10160e"/>
+    </linearGradient>
+    <linearGradient id="pr19o-meat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b83a2e"/>
+      <stop offset="50%" stop-color="#922b21"/>
+      <stop offset="100%" stop-color="#641e16"/>
+    </linearGradient>
+    <linearGradient id="pr19o-jerky" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4e1a12"/>
+      <stop offset="50%" stop-color="#36110b"/>
+      <stop offset="100%" stop-color="#220a06"/>
+    </linearGradient>
+    <radialGradient id="pr19o-ember" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="60%" stop-color="#b83214"/>
+      <stop offset="100%" stop-color="#2a140d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="pr19o-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#pr19o-bg)"/>
+  <rect width="800" height="450" fill="url(#pr19o-grid)"/>
+  <rect x="10" y="10" width="780" height="430" rx="6" fill="none" stroke="#c8d6c0" stroke-width="1" stroke-opacity="0.22"/>
+
+  <!-- Header Banner -->
+  <rect x="20" y="16" width="760" height="28" rx="4" fill="#0d130b" stroke="#ffb703" stroke-width="1" stroke-opacity="0.45"/>
+
+  <!-- ================= STAGE 1 CARD (Top Left) ================= -->
+  <g filter="url(#pr19o-shadow)">
+    <rect x="24" y="54" width="366" height="156" rx="6" fill="url(#pr19o-card)" stroke="#8ecae6" stroke-width="1.2" stroke-opacity="0.55"/>
+    <!-- Lean Meat Strips Illustration (Left side of card) -->
+    <ellipse cx="95" cy="148" rx="58" ry="26" fill="#4e5851" stroke="#7a867e" stroke-width="1.5"/>
+    <path d="M55,138 C75,134 115,135 135,140 L132,147 C112,143 75,142 53,145 Z" fill="url(#pr19o-meat)" stroke="#d98880" stroke-width="0.7"/>
+    <path d="M58,150 C78,146 118,147 138,152 L135,159 C115,155 78,154 56,157 Z" fill="url(#pr19o-meat)" stroke="#d98880" stroke-width="0.7"/>
+    <!-- Fat scrap removed with X -->
+    <path d="M44,116 C56,112 72,114 78,120 C70,124 54,123 44,116 Z" fill="#f2ebd9" stroke="#d5cbb4" stroke-width="0.8"/>
+    <line x1="48" y1="110" x2="72" y2="124" stroke="#e63946" stroke-width="2"/>
+    <line x1="72" y1="110" x2="48" y2="124" stroke="#e63946" stroke-width="2"/>
+    <!-- 5mm thickness gauge -->
+    <rect x="165" y="128" width="195" height="64" rx="4" fill="#0d130b" stroke="#8ecae6" stroke-width="0.8" stroke-opacity="0.4"/>
+    <path d="M180,152 L255,152" stroke="#ffb703" stroke-width="5" stroke-linecap="round"/>
+    <path d="M275,145 L345,145 M275,160 L345,160" stroke="#c8d6c0" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <circle cx="310" cy="176" r="6" fill="#52b788"/>
+    <path d="M307,176 L309,179 L314,173" fill="none" stroke="#0b0f0a" stroke-width="1.5"/>
+  </g>
+
+  <!-- ================= STAGE 2 CARD (Top Right) ================= -->
+  <g filter="url(#pr19o-shadow)">
+    <rect x="410" y="54" width="366" height="156" rx="6" fill="url(#pr19o-card)" stroke="#ffb703" stroke-width="1.2" stroke-opacity="0.55"/>
+    <!-- Tripod Rack Mini Diagram -->
+    <line x1="442" y1="196" x2="488" y2="118" stroke="#6e4b2a" stroke-width="5" stroke-linecap="round"/>
+    <line x1="536" y1="196" x2="488" y2="118" stroke="#54381e" stroke-width="5" stroke-linecap="round"/>
+    <line x1="488" y1="198" x2="488" y2="118" stroke="#8a623a" stroke-width="4" stroke-linecap="round"/>
+    <!-- Crossbar & Meat Strips with 2cm gap -->
+    <line x1="454" y1="142" x2="524" y2="142" stroke="#c49a6c" stroke-width="4" stroke-linecap="round"/>
+    <rect x="466" y="140" width="6" height="32" rx="2" fill="url(#pr19o-meat)"/>
+    <rect x="480" y="140" width="6" height="34" rx="2" fill="url(#pr19o-meat)"/>
+    <rect x="494" y="140" width="6" height="31" rx="2" fill="url(#pr19o-meat)"/>
+    <rect x="508" y="140" width="6" height="33" rx="2" fill="url(#pr19o-meat)"/>
+    <!-- 120cm height & 2cm gap indicator box -->
+    <rect x="556" y="128" width="204" height="64" rx="4" fill="#0d130b" stroke="#ffb703" stroke-width="0.8" stroke-opacity="0.4"/>
+    <line x1="576" y1="138" x2="576" y2="182" stroke="#ffb703" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <line x1="571" y1="138" x2="581" y2="138" stroke="#ffb703" stroke-width="1.5"/>
+    <line x1="571" y1="182" x2="581" y2="182" stroke="#ffb703" stroke-width="1.5"/>
+    <rect x="615" y="144" width="12" height="32" rx="2" fill="url(#pr19o-meat)"/>
+    <rect x="645" y="144" width="12" height="32" rx="2" fill="url(#pr19o-meat)"/>
+    <path d="M629,160 L643,160" stroke="#8ecae6" stroke-width="1.5"/>
+    <circle cx="715" cy="160" r="14" fill="#172214" stroke="#52b788" stroke-width="1.5"/>
+    <path d="M709,160 L713,165 L722,154" fill="none" stroke="#52b788" stroke-width="2"/>
+  </g>
+
+  <!-- ================= STAGE 3 CARD (Middle Left) ================= -->
+  <g filter="url(#pr19o-shadow)">
+    <rect x="24" y="220" width="366" height="148" rx="6" fill="url(#pr19o-card)" stroke="#52b788" stroke-width="1.2" stroke-opacity="0.55"/>
+    <!-- Smoldering Oak Coals + Green Leaves -->
+    <ellipse cx="98" cy="340" rx="54" ry="14" fill="url(#pr19o-ember)"/>
+    <polygon points="62,338 78,328 92,336 74,344" fill="#d94e1f" stroke="#ffb703" stroke-width="0.7"/>
+    <polygon points="90,336 112,326 128,336 106,344" fill="#b83214" stroke="#ff9f1c" stroke-width="0.7"/>
+    <!-- Green Oak Leaves Blanket -->
+    <ellipse cx="82" cy="322" rx="22" ry="9" fill="#3a6b2c" stroke="#6aa154" stroke-width="0.8"/>
+    <ellipse cx="110" cy="322" rx="24" ry="9" fill="#2d5422" stroke="#52b788" stroke-width="0.8"/>
+    <ellipse cx="96" cy="316" rx="20" ry="8" fill="#4f863d" stroke="#8ecae6" stroke-width="0.6"/>
+    <!-- White Smoke Plumes -->
+    <path d="M82,310 C74,295 92,282 84,268" fill="none" stroke="#dce5dc" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/>
+    <path d="M108,310 C116,295 98,282 106,268" fill="none" stroke="#dce5dc" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/>
+    <!-- Right visual gauge inside Stage 3 -->
+    <rect x="165" y="266" width="195" height="62" rx="4" fill="#0d130b" stroke="#52b788" stroke-width="0.8" stroke-opacity="0.4"/>
+    <path d="M190,308 C210,286 235,308 255,286 C275,308 300,286 320,308" fill="none" stroke="#dce5dc" stroke-width="3" stroke-opacity="0.65" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= STAGE 4 CARD (Middle Right) ================= -->
+  <g filter="url(#pr19o-shadow)">
+    <rect x="410" y="220" width="366" height="148" rx="6" fill="url(#pr19o-card)" stroke="#52b788" stroke-width="1.2" stroke-opacity="0.55"/>
+    <!-- Finished Bent Jerky Strip Showing Fibrous Crease Without Snap -->
+    <path d="M442,324 C442,278 528,278 528,324 L512,328 C512,296 458,296 458,328 Z" fill="url(#pr19o-jerky)" stroke="#8a3b2b" stroke-width="1.5"/>
+    <!-- White Dry Fiber Threads at Bend -->
+    <path d="M476,289 L484,286 M484,291 L494,287 M492,289 L500,286" stroke="#e8dccb" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Right visual gauge inside Stage 4 -->
+    <rect x="556" y="266" width="204" height="62" rx="4" fill="#0d130b" stroke="#52b788" stroke-width="0.8" stroke-opacity="0.4"/>
+    <rect x="576" y="282" width="38" height="28" rx="4" fill="#2a3d24" stroke="#52b788" stroke-width="1"/>
+    <path d="M632,296 L668,296" stroke="#ffb703" stroke-width="2" stroke-dasharray="4 2"/>
+    <rect x="684" y="282" width="56" height="28" rx="4" fill="url(#pr19o-jerky)" stroke="#a44230" stroke-width="1"/>
+  </g>
+
+  <!-- ================= BOTTOM SAFETY & FINAL OUTCOME BANNERS ================= -->
+  <rect x="24" y="376" width="752" height="28" rx="4" fill="#241112" stroke="#e63946" stroke-width="1.2" stroke-opacity="0.7"/>
+  <rect x="24" y="408" width="752" height="28" rx="4" fill="#132217" stroke="#52b788" stroke-width="1.4" stroke-opacity="0.85"/>
+
+  <!-- ================= 7 TEXT LABELS (1:1 WITH outcome.svgLabels) ================= -->
+  <!-- Label 1: Header (y=35) -->
+  <text x="400" y="35" fill="#ffb703" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">FIG. OUTCOME // TRIPOD HARDWOOD SMOKE MEAT &amp; FISH DRYING SYSTEM</text>
+
+  <!-- Label 2: Stage 1 (y=82) -->
+  <text x="207" y="82" fill="#8ecae6" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 1: 하얀 비계 100% 제거 및 5mm 두께 살코기 썰기</text>
+
+  <!-- Label 3: Stage 2 (y=108) -->
+  <text x="593" y="108" fill="#ffb703" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 2: 가슴 높이(120cm) 삼발이 걸이대 &amp; 2cm 간격 배치</text>
+
+  <!-- Label 4: Stage 3 (y=244) -->
+  <text x="207" y="244" fill="#52b788" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 3: 참나무 숯불 + 푸른 생잎 덮기로 불꽃 없는 연기 생성</text>
+
+  <!-- Label 5: Stage 4 (y=352) -->
+  <text x="593" y="352" fill="#52b788" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">STAGE 4: 가죽·나뭇잎 연기 가림막 &amp; 반나절 건조 후 굽힘 확인</text>
+
+  <!-- Label 6: Safety Rule (y=394) -->
+  <text x="400" y="394" fill="#ffccd5" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">SAFETY RULE: 독성 나무·침엽수 금지 &amp; 센 불꽃 겉익힘 주의</text>
+
+  <!-- Label 7: Final Outcome (y=426) -->
+  <text x="400" y="426" fill="#d8f3dc" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">[최종 완성] 5mm 무지방 손질 + 가슴 높이 저온 참나무 연기 = 1개월 비상식량</text>
+</svg>
