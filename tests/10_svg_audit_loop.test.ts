@@ -168,6 +168,25 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
     assert.ok(report.remediationPrompt.includes('TEXT_OVERLAP'));
   });
 
+  it('상태 표시 박스 내에 라벨이나 심볼 없이 단독 막대선이 그어진 결함(Naked Indicator Line)을 정확히 감지해야 한다', () => {
+    const ambiguousLineSvg = `<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="660" height="320" fill="none" stroke="#262626"/>
+      <circle cx="300" cy="200" r="20" stroke="#fff"/>
+      <text x="50" y="50" font-size="12">LABEL ONE</text>
+      <text x="50" y="100" font-size="12">LABEL TWO</text>
+      <!-- 설명/심볼 없이 막대선만 덜렁 있는 기만적 상태 카드 -->
+      <g transform="translate(100, 200)">
+        <rect x="0" y="0" width="150" height="25" fill="#0f291e" stroke="#22c55e"/>
+        <circle cx="16" cy="12" r="5" fill="#22c55e"/>
+        <line x1="30" y1="12" x2="135" y2="12" stroke="#86efac" stroke-width="2"/>
+      </g>
+    </svg>`;
+
+    const report = SvgAuditService.auditSvgStatic(ambiguousLineSvg, sampleContext);
+    assert.strictEqual(report.passed, false);
+    assert.ok(report.issues.some((i) => i.category === 'CONTENT_MISMATCH' && i.reason.includes('의미 불명의 단독 선')));
+  });
+
   it('불투명 다각형(바위 등)이 지지대 기둥의 중간을 가로질러 관통하는 기하학적 관통(Piercing) 결함을 정확히 감지해야 한다', () => {
     const piercingSvg = `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
       <rect x="10" y="10" width="380" height="380" fill="none"/>

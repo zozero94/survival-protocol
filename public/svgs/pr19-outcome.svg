@@ -98,9 +98,23 @@
     <!-- White Smoke Plumes -->
     <path d="M82,310 C74,295 92,282 84,268" fill="none" stroke="#dce5dc" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/>
     <path d="M108,310 C116,295 98,282 106,268" fill="none" stroke="#dce5dc" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/>
-    <!-- Right visual gauge inside Stage 3 -->
+    <!-- Right visual gauge inside Stage 3: Hand Warmth & Smoke Check -->
     <rect x="165" y="266" width="195" height="62" rx="4" fill="#0d130b" stroke="#52b788" stroke-width="0.8" stroke-opacity="0.4"/>
-    <path d="M190,308 C210,286 235,308 255,286 C275,308 300,286 320,308" fill="none" stroke="#dce5dc" stroke-width="3" stroke-opacity="0.65" stroke-linecap="round"/>
+    <!-- Realistic Hand Silhouette -->
+    <g transform="translate(180, 276)">
+      <path d="M 4,28 C 3,24 4,19 6,16 L 11,10 C 12,9 14,9 14,11 L 13,15 L 17,5 C 18,3 20,3 21,5 L 20,14 L 24,3 C 25,2 27,2 28,3 L 26,14 L 30,5 C 31,4 33,5 33,6 L 31,17 C 32,18 33,20 32,23 C 31,27 26,30 18,30 C 10,30 5,29 4,28 Z" fill="#fde68a" stroke="#d97706" stroke-width="0.8"/>
+    </g>
+    <!-- Warmth Wave Lines -->
+    <path d="M 226,298 Q 231,291 226,284 Q 221,277 226,270" fill="none" stroke="#f97316" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 234,300 Q 239,293 234,286 Q 229,279 234,272" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 242,298 Q 247,291 242,284 Q 237,277 242,270" fill="none" stroke="#f97316" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- 3-Second Check Green Indicator -->
+    <circle cx="270" cy="296" r="10" fill="#14532d" stroke="#22c55e" stroke-width="1.2"/>
+    <path d="M 266,296 L 269,299 L 275,293" fill="none" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Oak Leaf vs Needle Symbol in Gauge -->
+    <path d="M 302,306 C 298,303 296,299 299,297 C 297,295 298,291 301,292 C 303,288 307,288 309,290 C 313,288 316,291 315,295 C 317,297 315,301 311,303 Z" fill="#22c55e" stroke="#86efac" stroke-width="0.7"/>
+    <circle cx="330" cy="296" r="8" fill="#15803d"/>
+    <path d="M 327,296 L 329,298 L 334,293" fill="none" stroke="#f0fdf4" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
   <!-- ================= STAGE 4 CARD (Middle Right) ================= -->
@@ -110,11 +124,20 @@
     <path d="M442,324 C442,278 528,278 528,324 L512,328 C512,296 458,296 458,328 Z" fill="url(#pr19o-jerky)" stroke="#8a3b2b" stroke-width="1.5"/>
     <!-- White Dry Fiber Threads at Bend -->
     <path d="M476,289 L484,286 M484,291 L494,287 M492,289 L500,286" stroke="#e8dccb" stroke-width="1.2" stroke-linecap="round"/>
-    <!-- Right visual gauge inside Stage 4 -->
+    <!-- Right visual gauge inside Stage 4: 2-Hour Inversion & Fiber Bend Gauge -->
     <rect x="556" y="266" width="204" height="62" rx="4" fill="#0d130b" stroke="#52b788" stroke-width="0.8" stroke-opacity="0.4"/>
-    <rect x="576" y="282" width="38" height="28" rx="4" fill="#2a3d24" stroke="#52b788" stroke-width="1"/>
-    <path d="M632,296 L668,296" stroke="#ffb703" stroke-width="2" stroke-dasharray="4 2"/>
-    <rect x="684" y="282" width="56" height="28" rx="4" fill="url(#pr19o-jerky)" stroke="#a44230" stroke-width="1"/>
+    <!-- Wet red lean meat strip -->
+    <rect x="572" y="278" width="10" height="36" rx="2" fill="url(#pr19o-meat)" stroke="#f87171" stroke-width="0.8"/>
+    <!-- Circular Inversion Flip Arrow (2h Interval) -->
+    <path d="M 602,296 A 12,12 0 1,1 592,308" fill="none" stroke="#fde68a" stroke-width="1.8"/>
+    <polygon points="592,304 586,309 594,311" fill="#fde68a"/>
+    <!-- Transition Arrow to Finished Jerky -->
+    <path d="M 626,296 L 652,296" stroke="#52b788" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="652,293 658,296 652,299" fill="#52b788"/>
+    <!-- Finished Dried Bent Jerky with Checkmark -->
+    <rect x="670" y="278" width="10" height="36" rx="2" fill="url(#pr19o-jerky)" stroke="#a44230" stroke-width="0.8"/>
+    <circle cx="720" cy="296" r="12" fill="#14532d" stroke="#22c55e" stroke-width="1.2"/>
+    <path d="M 714,296 L 718,300 L 726,292" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
   <!-- ================= BOTTOM SAFETY & FINAL OUTCOME BANNERS ================= -->

@@ -34,5 +34,5 @@
   <!-- 하단 캡션 -->
   <rect x="32" y="320" width="336" height="44" fill="#0A0A0A" stroke="#262626" stroke-width="1"/>
   <text x="44" y="338" fill="#E5E5E5" font-family="monospace" font-size="11" font-weight="bold">PHASE 02: POT CENTERED &amp; PERIMETER AIRTIGHT SEAL</text>
-  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="9">ANCHOR EDGES WITH WET SOIL; COMPLETE SEAL REQUIRED FOR 55°C VAPORIZATION</text>
+  <text x="44" y="353" fill="#737373" font-family="monospace" font-size="7">ANCHOR EDGES WITH WET SOIL; COMPLETE SEAL REQUIRED FOR 55°C VAPORIZATION</text>
 </svg>

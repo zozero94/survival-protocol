@@ -97,6 +97,7 @@ export class SvgAuditService {
 1. 인간 직관 인지성 (Cognitive Legibility, 25점):
    - 능동 요소(움직이는 손, 작동 줄 끝단 등)와 수동 요소(원줄, 지지대 등)가 명확한 고대비 색상/선으로 분리되어 줄의 궤적이 0.1초 만에 추적되는가?
    - 밧줄이나 부품의 상하 교차 지점(OVER / UNDER)에 명확한 그림자(Deep Drop-Shadow) 또는 시각적 마스킹이 들어가 입체적 엮임 관계가 즉시 식별되는가? (단순한 2D 평면 교차는 감점 및 FAIL 대상)
+   - [라벨 없는 장식선 및 추상 덩어리 전면 금지]: 상태 표시 박스나 카드 내에 설명 텍스트나 만국 공통 심볼(✓, ✗, 잎사귀 실루엣) 없이 덜렁 그어진 의미 불명의 선(<line>)이나 찌그러진 추상 패스는 즉시 CRITICAL 결함으로 탈락 처리. 신체 부위(손, 발 등)나 도구는 다섯 손가락 관절과 실루엣이 0.1초 만에 인지되는 표준 픽토그램으로 명확히 작도할 것.
 2. 시각적 완성도 & 재질 리얼리즘 (Material Realism & Fidelity, 25점):
    - 전선 같은 단순 단색 선(Wireframe)은 즉시 감점.
    - 실제 밧줄의 3가닥 나선 꼬임 결(Strand Braid Texture), 나무 기둥의 나이테/입체 음영, 3D 원통형 하이라이트/명암 그라디언트가 구현되었는가?
@@ -272,6 +273,9 @@ export class SvgAuditService {
     // 5. 기하학적 도형 관통/차폐(Shape Piercing / Occlusion) 검사
     // 기둥/막대 형태의 수직 요소(<rect>) 뒤에 렌더링된 다각형(<polygon>)이 기둥 중간통로를 가로질러 덮어버리는 결함 감지
     this.detectShapePiercingIssues(svgCode, issues);
+
+    // 6. 의미 불명의 라벨 없는 상태 표시 바/선(Ambiguous Indicator Lines) 및 설명 없는 추상 실루엣 검사
+    this.detectAmbiguousIndicatorStrips(svgCode, issues);
 
     // 점수 산정 (CRITICAL 당 -25점, WARNING 당 -5점)
     const criticalCount = issues.filter((i) => i.severity === 'CRITICAL').length;
@@ -874,6 +878,76 @@ ${bulletLines.join('\n')}
               });
             }
           }
+        }
+      }
+    }
+  }
+
+  /**
+   * 의미 불명의 라벨 없는 상태 표시 바/선(Ambiguous Indicator Lines) 및 설명 없는 추상 실루엣 검사
+   * - <rect> 또는 작은 컨테이너 <g> 내부에 설명 텍스트(<text>)도 없고 명확한 픽토그램/심볼(체크마크/엑스마크/실루엣)도 없는데,
+   *   단순히 가로/세로 막대선(<line>)이나 점선만 홀로 그어져 의미를 알 수 없는 결함을 감지
+   */
+          static detectAmbiguousIndicatorStrips(svgCode        , issues                 )       {
+    const groupRegex = /<g\b[^>]*>([\s\S]*?)<\/g>/gi;
+    let gm                        ;
+    while ((gm = groupRegex.exec(svgCode)) !== null) {
+      const gContent = gm[1];
+
+      // 내부에 중첩된 g가 있다면 가장 안쪽 매칭을 대상으로 함
+      if (/<g\b/i.test(gContent)) continue;
+
+      // 텍스트가 존재하는 그룹이면 라벨이 있으므로 패스
+      if (/<text\b/i.test(gContent)) continue;
+
+      // rect가 배경 카드로 사용되고 있는지 확인 (width >= 60, height >= 15)
+      const rectMatch = gContent.match(/<rect\b([^>]*)\/?>/i);
+      if (!rectMatch) continue;
+
+      const attrs = rectMatch[1];
+      const w = parseFloat((attrs.match(/\bwidth=["']([-\d.]+)/i) || [])[1]);
+      const h = parseFloat((attrs.match(/\bheight=["']([-\d.]+)/i) || [])[1]);
+      if (isNaN(w) || isNaN(h) || w < 60 || h < 15 || h > 100) continue;
+
+      // 내부에 <line>이 존재하는 경우
+      const lineMatches = gContent.match(/<line\b([^>]*)\/?>/gi) || [];
+
+      // 구체적인 형태를 나타내는 곡선 path나 polygon이 있는지 확인
+      const hasDetailedShapes =
+        /<path\b[^>]*\bd=["'][^"']*[CQSZcqsz][^"']*["']/i.test(gContent) ||
+        /<polygon\b/i.test(gContent);
+
+      // 교차형 X마크인지 확인 (빨간색 계열의 교차 선 2개)
+      const isXMark =
+        lineMatches.length >= 2 &&
+        lineMatches.some((l1) =>
+          lineMatches.some(
+            (l2) =>
+              l1 !== l2 &&
+              /stroke=["']#?(ef4444|dc2626|red|f87171|b91c1c)/i.test(l1) &&
+              /stroke=["']#?(ef4444|dc2626|red|f87171|b91c1c)/i.test(l2)
+          )
+        );
+
+      // 긴 가로/세로선(길이 >= 35)이 홀로 그어져 있고, 의미 있는 텍스트나 상세 심볼이 전혀 없다면 CRITICAL!
+      for (const lineTag of lineMatches) {
+        const x1 = parseFloat((lineTag.match(/\bx1=["']([-\d.]+)/i) || [])[1]);
+        const x2 = parseFloat((lineTag.match(/\bx2=["']([-\d.]+)/i) || [])[1]);
+        const y1 = parseFloat((lineTag.match(/\by1=["']([-\d.]+)/i) || [])[1]);
+        const y2 = parseFloat((lineTag.match(/\by2=["']([-\d.]+)/i) || [])[1]);
+        const length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        if (length >= 35 && !hasDetailedShapes && !isXMark) {
+          issues.push({
+            category: 'CONTENT_MISMATCH',
+            severity: 'CRITICAL',
+            element: lineTag,
+            reason: `상태 표시 또는 비교 카드(w=${w}, h=${h}) 내부에 설명 텍스트나 명확한 픽토그램/심볼 없이 의미 불명의 단독 선(길이=${Math.round(
+              length
+            )})만 배치되어 인간 직관 인지성이 결여되었습니다.`,
+            fixInstruction: `의미 불명의 막대선을 제거하고, 전 세계 공통 식별 심볼(✓, ✗) 또는 구체적인 사물 픽토그램(잎사귀, 솔잎 등)과 설명 라벨을 명확히 작도하십시오.`,
+          });
+          break;
         }
       }
     }

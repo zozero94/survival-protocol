@@ -33,23 +33,24 @@
   </g>
   <rect x="4" y="4" width="392" height="392" fill="none" stroke="#334155" stroke-width="1"/>
 
-  <!-- Header Banner -->
+  <!-- Header Banner (Text 1) -->
   <rect x="8" y="10" width="384" height="24" fill="#0f172a" stroke="#475569" stroke-width="1"/>
   <text x="16" y="26" fill="#fde68a" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 04 // SMOKE CANOPY ENCLOSURE &amp; BEND-TEST VERIFICATION</text>
 
-  <!-- Sub-banner 1 -->
+  <!-- Sub-banner 1 (Text 2) -->
   <rect x="20" y="52" width="360" height="22" rx="2" fill="#131922" stroke="#334155" stroke-width="0.8"/>
   <text x="200" y="67" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">삼발이 둘레에 가죽·나뭇잎을 둘러 연기를 가두고 꼭대기 숨구멍 두기</text>
 
   <!-- Zone 1: Enclosed Tripod Smoke Tent with Top Fist-Sized Vent -->
   <g filter="url(#shadow19s4)">
     <!-- Tripod Lower Legs -->
-    <line x1="185" y1="90" x2="95" y2="184" stroke="#785233" stroke-width="5"/>
-    <line x1="215" y1="90" x2="305" y2="184" stroke="#785233" stroke-width="5"/>
-    <line x1="200" y1="90" x2="200" y2="184" stroke="#5c3d24" stroke-width="4"/>
+    <line x1="185" y1="90" x2="95" y2="178" stroke="#785233" stroke-width="5"/>
+    <line x1="215" y1="90" x2="305" y2="178" stroke="#785233" stroke-width="5"/>
+    <line x1="200" y1="90" x2="200" y2="178" stroke="#5c3d24" stroke-width="4"/>
 
     <!-- Buckskin & Foliage Canopy Wrapping Middle/Upper Tripod -->
     <polygon points="182,96 218,96 276,164 124,164" fill="url(#hideCover19)" stroke="#fde68a" stroke-width="1.2" opacity="0.9"/>
+    
     <!-- Cutaway Window Showing Hanging Jerky Inside Canopy -->
     <rect x="155" y="118" width="90" height="38" rx="3" fill="#090d12" stroke="#d97706" stroke-width="1"/>
     <rect x="166" y="122" width="8" height="28" rx="1.5" fill="url(#smokedJerky19)" stroke="#b91c1c" stroke-width="0.7"/>
@@ -58,56 +59,58 @@
     <rect x="214" y="122" width="8" height="28" rx="1.5" fill="url(#smokedJerky19)" stroke="#b91c1c" stroke-width="0.7"/>
     <rect x="230" y="122" width="8" height="28" rx="1.5" fill="url(#smokedJerky19)" stroke="#b91c1c" stroke-width="0.7"/>
 
-    <!-- Top Fist-Sized Smoke Vent Arrow -->
+    <!-- Top Fist-Sized Smoke Vent Indicator -->
     <path d="M192,94 Q188,82 194,76" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3,2"/>
     <path d="M208,94 Q212,82 206,76" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3,2"/>
     <circle cx="200" cy="92" r="8" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2,2"/>
-
-    <!-- 2-Hour Flip Cycle Circular Arrow on Right -->
-    <path d="M295,122 A16,16 0 1,1 282,144" fill="none" stroke="#fde68a" stroke-width="1.8"/>
-    <polygon points="282,138 276,145 286,147" fill="#fde68a"/>
   </g>
 
-  <!-- Sub-banner 2 -->
-  <rect x="20" y="190" width="360" height="22" rx="2" fill="#131922" stroke="#334155" stroke-width="0.8"/>
-  <text x="200" y="205" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">2시간마다 고기를 뒤집으며 반나절(6~8시간) 동안 골고루 말리기</text>
+  <!-- Sub-banner 2 (Text 3) -->
+  <rect x="20" y="184" width="360" height="22" rx="2" fill="#131922" stroke="#fde68a" stroke-width="0.9"/>
+  <text x="200" y="199" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">2시간마다 고기를 뒤집으며 반나절(6~8시간) 동안 골고루 말리기</text>
+
+  <!-- Sub-banner 3 (Text 4) -->
+  <rect x="20" y="214" width="360" height="22" rx="2" fill="#131922" stroke="#22c55e" stroke-width="0.9"/>
+  <text x="200" y="229" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">반으로 구부렸을 때 물기 없이 마른 가지처럼 질기게 휘어지면 완성</text>
 
   <!-- Zone 2: Dry Bend Test Inspection Loupe & Buckskin Storage Pouch -->
   <g filter="url(#shadow19s4)">
     <!-- Left Card: 180-Degree Dry Bend Test -->
-    <rect x="28" y="220" width="196" height="84" rx="4" fill="#0d131a" stroke="#22c55e" stroke-width="1.2"/>
-    <!-- Bent Smoked Jerky Strip showing dry white-brown muscle fibers at bend -->
-    <path d="M62,282 L62,254 C62,232 138,232 138,254 L138,282" fill="none" stroke="url(#smokedJerky19)" stroke-width="14" stroke-linecap="round"/>
-    <path d="M62,282 L62,254 C62,232 138,232 138,254 L138,282" fill="none" stroke="#b91c1c" stroke-width="1.2" stroke-dasharray="6,3"/>
-    <!-- Exposed dry muscle fibers at top apex of bend -->
-    <line x1="90" y1="232" x2="96" y2="226" stroke="#fcd34d" stroke-width="1.2"/>
-    <line x1="100" y1="231" x2="102" y2="224" stroke="#fcd34d" stroke-width="1.2"/>
-    <line x1="110" y1="232" x2="106" y2="226" stroke="#fcd34d" stroke-width="1.2"/>
-    <!-- Checkmark icon -->
-    <circle cx="186" cy="262" r="16" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
-    <polyline points="178,262 184,268 195,255" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(24, 246)">
+      <rect x="0" y="0" width="206" height="108" rx="4" fill="#0d131a" stroke="#22c55e" stroke-width="1.2"/>
+      
+      <!-- Bent Smoked Jerky Strip showing dry white-brown muscle fibers at bend -->
+      <path d="M42,88 L42,54 C42,26 128,26 128,54 L128,88" fill="none" stroke="url(#smokedJerky19)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M42,88 L42,54 C42,26 128,26 128,54 L128,88" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="6,3"/>
+      
+      <!-- Exposed dry white/yellow muscle fibers at apex of bend -->
+      <line x1="78" y1="26" x2="86" y2="18" stroke="#fde68a" stroke-width="1.5"/>
+      <line x1="88" y1="24" x2="92" y2="16" stroke="#fde68a" stroke-width="1.5"/>
+      <line x1="98" y1="26" x2="94" y2="18" stroke="#fde68a" stroke-width="1.5"/>
+      
+      <!-- Checkmark Success Badge -->
+      <circle cx="168" cy="56" r="18" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+      <path d="M 158,56 L 165,63 L 178,49" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
 
-    <!-- Right Card: Breathable Buckskin Storage Pouch (Cool in Shade First) -->
-    <rect x="236" y="220" width="136" height="84" rx="4" fill="#0d131a" stroke="#fde68a" stroke-width="1"/>
-    <!-- Buckskin pouch silhouette with jerky strips sticking out slightly -->
-    <rect x="282" y="232" width="8" height="24" rx="2" fill="url(#smokedJerky19)" stroke="#dc2626" stroke-width="0.8"/>
-    <rect x="296" y="230" width="8" height="26" rx="2" fill="url(#smokedJerky19)" stroke="#dc2626" stroke-width="0.8"/>
-    <rect x="310" y="232" width="8" height="24" rx="2" fill="url(#smokedJerky19)" stroke="#dc2626" stroke-width="0.8"/>
-    <path d="M272,248 L328,248 L336,288 C336,294 264,294 264,288 Z" fill="url(#hideCover19)" stroke="#fcd34d" stroke-width="1"/>
-    <line x1="270" y1="254" x2="330" y2="254" stroke="#fde68a" stroke-width="2"/>
+    <!-- Right Card: Breathable Buckskin Storage Pouch -->
+    <g transform="translate(238, 246)">
+      <rect x="0" y="0" width="138" height="108" rx="4" fill="#0d131a" stroke="#fde68a" stroke-width="1.2"/>
+      
+      <!-- Buckskin pouch silhouette with jerky strips sticking out -->
+      <rect x="42" y="16" width="10" height="34" rx="2" fill="url(#smokedJerky19)" stroke="#dc2626" stroke-width="0.8"/>
+      <rect x="58" y="12" width="10" height="38" rx="2" fill="url(#smokedJerky19)" stroke="#dc2626" stroke-width="0.8"/>
+      <rect x="74" y="16" width="10" height="34" rx="2" fill="url(#smokedJerky19)" stroke="#dc2626" stroke-width="0.8"/>
+      
+      <!-- Soft Pouch Body -->
+      <path d="M 30,38 L 96,38 L 106,88 C 106,96 20,96 20,88 Z" fill="url(#hideCover19)" stroke="#fcd34d" stroke-width="1.2"/>
+      <!-- Pouch Drawstring Lashing -->
+      <path d="M 28,46 L 98,46" stroke="#fde68a" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="63" cy="54" r="5" fill="#fde68a"/>
+    </g>
   </g>
 
-  <!-- Sub-banner 3 -->
-  <rect x="20" y="312" width="360" height="22" rx="2" fill="#131922" stroke="#334155" stroke-width="0.8"/>
-  <text x="200" y="327" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">반으로 구부렸을 때 물기 없이 마른 가지처럼 질기게 휘어지면 완성</text>
-
-  <!-- Bottom Preservation Progress Bar -->
-  <g transform="translate(35, 342)">
-    <rect x="0" y="0" width="330" height="18" rx="3" fill="#0f172a" stroke="#475569" stroke-width="0.8"/>
-    <rect x="4" y="4" width="322" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
-  </g>
-
-  <!-- Footer Summary Bar -->
+  <!-- Footer Summary Bar (Text 5) -->
   <rect x="8" y="368" width="384" height="24" fill="#1e1b18" stroke="#f59e0b" stroke-width="1"/>
   <text x="200" y="384" fill="#fde68a" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">[4단계 핵심] 연기 가림막으로 훈연 효율 극대화 및 굽힘 건조 판정</text>
 </svg>
