@@ -1,0 +1,251 @@
+{
+  "protocolId": "PR-20",
+  "category": "WATER",
+  "title": "How to Distill Seawater & Muddy Water into Pure Drinking Water with a Clay Pot & Bamboo Pipe",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[DEHYDRATION DEFENSE] 100% Salt-Free Freshwater Recovery on Coasts & Contaminated Zones",
+  "summary": "When stranded on a coast, island, or near brackish pools where only seawater or chemically tainted water exists, a [Charcoal & Sand Filter](/protocol-01.html) only removes dirt and odors—it cannot remove dissolved salt (3.5% salinity). Drinking seawater draws water out of your cells and causes fatal dehydration within two days. By boiling seawater in an [Earthen Clay Pot](/protocol-16.html) over a [Clay Hearth](/protocol-06.html), attaching a node-hollowed bamboo pipe to the sealed lid, and wrapping the pipe with cold-water-soaked [Sphagnum Moss and Burlap](/protocol-18.html), heavy salt stays at the bottom as white crystals while pure steam condenses inside the cool tube into 2–3 liters of pure drinking water and natural sea salt per day.",
+  "timeRequired": "2 Hours (Bamboo node piercing & clay-resin seal 40m + Moss cooling wrap 20m + Boiling & distillation 1h)",
+  "successRate": "99% (With airtight clay lid seal and continuous cool seawater wetting on the moss wrap)",
+  "difficulty": "Medium (Buildable with earthen pots, bamboo, and moss without modern tubing or tarps)",
+  "outputPerHour": "500–700ml of crystal-clear pure drinking water per hour plus a handful of natural sea salt",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Fireproof Earthen Clay Boiling Pot with Lid & Clean Receiving Bowl",
+      "desc": "A heat-resistant unglazed clay pot (or hollowed stone basin) as used in the [Clay Zeer Pot](/protocol-16.html) with a fitting lid, plus a clean bowl to catch pure freshwater dripping from the bamboo pipe tip."
+    },
+    {
+      "id": "mat-02",
+      "name": "5-Handspan (1m) Wrist-Thick Bamboo (or Hollow Elderberry/Reed) Steam Pipe",
+      "desc": "A natural cooling conduit where rising steam cools into liquid water droplets. Use a fire-heated wooden rod to punch through all internal bamboo diaphragm nodes into a continuous open tube."
+    },
+    {
+      "id": "mat-03",
+      "name": "Cold-Soaked Sphagnum Moss, Burlap Cloth & Wild Kudzu Cordage",
+      "desc": "Highly absorbent sphagnum moss and burlap from the [Field Splint Pad](/protocol-18.html) wrapped thickly around the middle of the bamboo tube and tied with [Wild Kudzu Cordage](/protocol-05.html), kept cold by pouring cool seawater over it."
+    },
+    {
+      "id": "mat-04",
+      "name": "Two Fistfuls of Wet Clay Paste, Pine Pitch Glue & Y-Forked Support Stick",
+      "desc": "Wet clay paste and [Pine Pitch Glue](/protocol-10.html) to hermetically seal the pot lid rim and bamboo joint against steam leaks, plus a Y-forked branch to prop the condenser tube at a downward slope."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Pierce Bamboo Nodes with a Hot Wooden Rod & Seal Joint into Clay Lid with Pitch and Clay",
+      "description": "1. **Burn Through Internal Bamboo Nodes**: Select a straight bamboo pole **five handspans long (1m) and wrist-thick (4–5cm diameter)**, and push a red-hot fire-hardened wooden rod through the core to **burn and punch out all internal node walls with a hiss of smoke** until you see straight through.\n2. **Fit Bamboo End into Clay Lid Hole**: Use a [Sharp Stone Blade](/protocol-04.html) or stone awl to bore a snug hole in the center of the clay lid, inserting the bamboo pipe **two finger-joints deep (4cm)**.\n3. **Double-Seal Joint with Pine Pitch and Clay**: Coat the gap around the bamboo joint with warm [Pine Pitch Glue](/protocol-10.html), then pack **wet clay paste finger-thick (1.5cm)** over it so zero steam can escape.",
+      "actionNote": "> Bind Bamboo Exterior with Wet Cordage Before Piercing: Pushing a rod too hard into dry bamboo can split its side wall. Wrap wet plant fibers around the outside at intervals and twist the hot rod gently through each node.",
+      "svgFileName": "pr20-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // HOLLOWING BAMBOO NODES & HERMETIC CLAY-RESIN SEAL",
+        "Pierce all internal nodes of 1m bamboo with a hot wooden rod",
+        "Insert bamboo pipe end 4cm deep into center hole of clay lid",
+        "Seal joint airtight with pine pitch and 1.5cm clay paste collar",
+        "[STEP 1 KEY] Full node clearance & 0% steam leak clay-pitch seal"
+      ],
+      "deepDive": {
+        "badge": "STEAM PIPE & HERMETIC SEAL",
+        "title": "Why Must the Bamboo Pipe Be 1m Long and Double-Sealed with Pine Pitch and Clay?",
+        "text": "Boiling steam expands rapidly and escapes through the smallest pinhole. If the lid joint has any gap, all vapor vents into the air instead of traveling down the tube. Sealing first with waterproof pine pitch and covering with wet clay that bakes rock-hard over heat forces 100% of the steam into the bamboo pipe. A full 1m length also keeps hearth heat away from the collection bowl so vapor cools completely midway.",
+        "fieldSpecs": [
+          {
+            "name": "Node-Punctured 1m Bamboo Steam Conduit & Pitch-Clay Sealed Lid",
+            "scientificName": "Node-Punctured 1m Bamboo Steam Conduit & Pitch-Clay Sealed Lid",
+            "categoryTag": "Zero-Leak Steam Conduit / 100C Vapor Pressure Seal",
+            "imageFileName": "id-hollowed-bamboo-condenser-pipe.jpg",
+            "hudCode": "FIG. BIO-20A // MACRO OPTIC",
+            "hudStatus": "NODE CLEAR & SEAL: VERIFIED",
+            "traits": [
+              {
+                "label": "HOLLOW/CORE",
+                "value": "Punched clean through all **internal bamboo nodes** with a hot rod for unobstructed steam flow."
+              },
+              {
+                "label": "LENGTH/100CM",
+                "value": "Cut to **five handspans (1m)** to separate the hot hearth from the cold condensation zone."
+              },
+              {
+                "label": "SEALED/COLLAR",
+                "value": "Double-sealed with [Pine Pitch](/protocol-10.html) and **finger-thick clay paste** to prevent vapor loss."
+              }
+            ],
+            "fieldUse": "Directs 100% of pure rising steam from boiling seawater into the cooling condenser section"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Fill Clay Pot 2/3 with Seawater on Hearth & Prop Bamboo Pipe at a 30-Degree Downward Slope",
+      "description": "1. **Fill Boiling Pot Only 2/3 Full**: Pour seawater into the pot on your [Clay Hearth](/protocol-06.html) up to **two-thirds height (leaving one handspan of top headspace)** so boiling salty foam never surges into the bamboo pipe.\n2. **Seal Lid Rim with Clay and Ignite Fire**: Pack sticky wet clay around the pot rim, press the lid down firmly, and light the hearth using a [Bow Drill Fire](/protocol-02.html).\n3. **Prop Pipe at a 30-Degree Downward Angle**: Plant a **Y-forked wooden stick** three handspans from the hearth so the bamboo tip slopes **two handspans (40cm) lower than the pot at a 30-degree angle** for gravity drainage.",
+      "actionNote": "> Drop 3–4 Clean Pebbles into Pot Bottom: Seawater foams and bumps violently when boiling. Placing 3–4 washed fist-half pebbles on the bottom breaks up large surges into gentle bubbles so salt spray never enters the pipe.",
+      "svgFileName": "pr20-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 2/3 SEAWATER FILL & 30-DEG CONDENSER SLOPE",
+        "Fill clay pot only 2/3 full with seawater to prevent foam carryover",
+        "Seal lid rim with clay paste and place 3-4 boiling pebbles inside",
+        "Prop bamboo pipe at a 30-degree downward slope on Y-fork stick",
+        "[STEP 2 KEY] One-handspan steam headspace & 30-deg gravity slope"
+      ],
+      "deepDive": {
+        "badge": "BOIL HEADSPACE & GRAVITY SLOPE",
+        "title": "Why Fill the Pot Only 2/3 Full and Slope the Bamboo Pipe Downward at 30 Degrees?",
+        "text": "Seawater contains dissolved salts and organic minerals that foam high when boiling. Overfilling causes salty froth to splash into the tube and ruin the freshwater. Leaving one handspan of upper headspace lets heavy salt droplets fall back down while only pure water vapor rises into the pipe. The 30-degree downward angle ensures condensed droplets roll immediately toward the collection bowl by gravity.",
+        "fieldSpecs": [
+          {
+            "name": "2/3 Fill Earthen Boiling Pot on Hearth with 30-Degree Sloped Bamboo Tube",
+            "scientificName": "2/3 Fill Earthen Boiling Pot on Hearth with 30-Degree Sloped Bamboo Tube",
+            "categoryTag": "Zero Brine Carryover / 30-Degree Gravity Drainage",
+            "imageFileName": "id-clay-pot-angled-bamboo-still.jpg",
+            "hudCode": "FIG. BIO-20B // MACRO OPTIC",
+            "hudStatus": "30-DEG SLOPE: VERIFIED",
+            "traits": [
+              {
+                "label": "FILL/2-THIRDS",
+                "value": "Leaves **one handspan of top headspace** so boiling brine foam cannot enter the tube."
+              },
+              {
+                "label": "SLOPE/30-DEG",
+                "value": "Tilts the pipe tip **two handspans lower than the pot** for smooth gravity flow."
+              },
+              {
+                "label": "PEBBLES/CALM",
+                "value": "Uses **3–4 clean river pebbles** at the bottom to prevent violent boiling surges."
+              }
+            ],
+            "fieldUse": "Prevents salty splash contamination and channels pure steam smoothly down the cooling slope"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Wrap Pipe Mid-Section with Wet Sphagnum Moss & Burlap to Condense Steam into Cold Water",
+      "description": "1. **Wrap 60cm Mid-Section with Wet Moss and Burlap**: Wrap cold-soaked [Sphagnum Moss and Burlap](/protocol-18.html) **fist-thick over a three-handspan (60cm) middle section** of the bamboo pipe and bind with [Wild Kudzu Cordage](/protocol-05.html).\n2. **Douse Moss Jacket with Cool Seawater Every 10 Minutes**: Ladle cool raw seawater over the **exterior moss pad every 10 minutes** so the bamboo wall stays cool to the touch.\n3. **Tie a Cordage Drip-Stop Ring Before the Pipe Tip**: Tie a tight kudzu cordage ring with a hanging tail near the end of the pipe and place a bark tray beneath the moss so **salty exterior cooling water drips to the ground** well before the freshwater bowl.",
+      "actionNote": "> Isolate Salty Exterior Cooling Water from Collection Bowl: Never let cooling seawater run down the outside of the bamboo into your drinking bowl. The tied cordage drip ring forces all exterior runoff to drop straight to the ground.",
+      "svgFileName": "pr20-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // WET SPHAGNUM MOSS COOLING JACKET & DRIP-RING ISOLATION",
+        "Wrap 60cm bamboo mid-section thickly with wet moss and burlap",
+        "Pour cool seawater over moss pad to rapidly condense inner steam",
+        "Tie cordage drip ring before pipe tip to divert salty runoff down",
+        "[STEP 3 KEY] Evaporative moss cooling turns steam to 100% freshwater"
+      ],
+      "deepDive": {
+        "badge": "EVAPORATIVE MOSS CONDENSER",
+        "title": "How Does Wetting the Outer Moss with Raw Seawater Create Pure Freshwater Inside the Tube?",
+        "text": "When 100C steam travels through the bamboo section chilled by wet sphagnum moss, it loses latent heat through the tube wall and condenses into pure liquid water droplets—just like dew forming on a cold glass. Pouring raw cool seawater over the exterior moss uses evaporative cooling to chill the pipe continuously without wasting a single drop of drinking water.",
+        "fieldSpecs": [
+          {
+            "name": "Wet Sphagnum Moss & Burlap Evaporative Condenser Jacket with Drip Ring",
+            "scientificName": "Wet Sphagnum Moss & Burlap Evaporative Condenser Jacket with Drip Ring",
+            "categoryTag": "Evaporative Latent Heat Chilling / Brine Runoff Drip-Stop",
+            "imageFileName": "id-wet-moss-burlap-cooling-wrap.jpg",
+            "hudCode": "FIG. BIO-20C // MACRO OPTIC",
+            "hudStatus": "COOL CONDENSATION: VERIFIED",
+            "traits": [
+              {
+                "label": "JACKET/MOSS",
+                "value": "Wraps **three handspans of wet moss and burlap** around the tube to draw heat out."
+              },
+              {
+                "label": "CHILL/SEAWATER",
+                "value": "Pours **raw cool seawater over the moss** to chill the pipe without using drinking water."
+              },
+              {
+                "label": "DRIP-RING/STOP",
+                "value": "A **kudzu cordage drip ring** diverts salty outer runoff onto the ground before the bowl."
+              }
+            ],
+            "fieldUse": "Rapidly cools internal steam into steady streams of pure distilled drinking water"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Discard the First Half-Cup, Collect Pure Freshwater & Harvest White Sea Salt from Pot Bottom",
+      "description": "1. **Discard the First Half-Cup (50ml) of Runoff**: The first half-cup dripping out after 10 minutes carries bamboo dust and volatile raw odors—**pour this first 50ml onto the moss pad** instead of drinking it.\n2. **Verify Zero Salinity on Tongue Tip and Collect Freshwater**: Touch a droplet to your tongue tip to **confirm it tastes 100% sweet and salt-free**, then collect 500ml+ per hour in your clean bowl.\n3. **Extinguish Fire Early and Scrape Residual Sea Salt**: When water inside the pot drops to **one finger-joint deep**, put out the fire, let residual heat dry the bottom, and **scrape out the white natural sea salt crystals** with a wooden spatula.",
+      "actionNote": "> Save Residual Sea Salt for Meat Preservation & Electrolyte Recovery: The white sea salt left in the pot is invaluable in the wild. Wrap it in dry leaves to cure [Smoked Meat & Fish Jerky](/protocol-19.html) or add a tiny pinch to drinking water during heavy sweating.",
+      "svgFileName": "pr20-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // FIRST-RUN DISCARD, PURE FRESHWATER COLLECTION & SALT HARVEST",
+        "Discard first half-cup (50ml) containing bamboo dust and odors",
+        "Verify zero salt taste on tongue and collect 100% pure freshwater",
+        "Scrape and store white natural sea salt crystals from pot bottom",
+        "[STEP 4 KEY] First 50ml discard + pure water & natural salt harvest"
+      ],
+      "deepDive": {
+        "badge": "PURE DISTILLATE & SEA SALT",
+        "title": "Why Discard the First Half-Cup, and Why Is Distilled Seawater Completely Free of Salt?",
+        "text": "Water molecules vaporize into light steam at 100C, whereas dissolved salt (sodium chloride) and heavy minerals cannot vaporize and remain trapped at the bottom of the pot. Between 70C and 90C, however, light organic odors and inner bamboo dust flush out first—so discarding the initial 50ml guarantees crystal-clear, 100% pure drinking water thereafter, while leaving pure white sea salt crystals at the bottom.",
+        "fieldSpecs": [
+          {
+            "name": "Zero-Salinity Distilled Freshwater Droplets & Residual Crystalline Sea Salt",
+            "scientificName": "Zero-Salinity Distilled Freshwater Droplets & Residual Crystalline Sea Salt",
+            "categoryTag": "0% Salinity Pure Water / Dual Freshwater & Sea Salt Yield",
+            "imageFileName": "id-distilled-freshwater-and-sea-salt.jpg",
+            "hudCode": "FIG. BIO-20D // MACRO OPTIC",
+            "hudStatus": "0% SALINITY WATER: VERIFIED",
+            "traits": [
+              {
+                "label": "DISCARD/50ML",
+                "value": "Throws out the **first half-cup (50ml)** to flush bamboo dust and volatile odors."
+              },
+              {
+                "label": "PURE/WATER",
+                "value": "Yields **500ml+ per hour of 100% salt-free, sterile drinking water**."
+              },
+              {
+                "label": "HARVEST/SALT",
+                "value": "Recovers **white crystalline sea salt** from the pot bottom for [food preservation](/protocol-19.html)."
+              }
+            ],
+            "fieldUse": "Provides both life-saving pure drinking water and essential culinary sea salt from ocean water"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Fatal Mistake: Submerging the Bamboo Pipe Tip Below Water causing Steam Back-Siphon, or Distilling Chemical Fuel Water",
+    "description": "If the lower tip of the bamboo pipe dips below the water surface in the receiving bowl, any slight drop in hearth heat creates a vacuum inside the pot that violently sucks cold water backward up the tube—cracking the hot clay pot and blasting scalding steam. Always keep a two-finger air gap between the pipe tip and water surface. Never distill water contaminated with petroleum, oil, or volatile chemicals, as toxic vapors co-distill into the drinking bowl. During peacetime coastal practice, use designated fire pits and strictly obey local wildfire and coastal park laws.",
+    "consequence": "Consequence: Pot explosion and severe steam burns from vacuum back-siphon, or acute poisoning from volatile chemicals"
+  },
+  "shortsScript": {
+    "hook": "Stranded on an island with only ocean water? Here is how to turn salty seawater into sweet drinking water using a clay pot and bamboo!",
+    "body": "First, burn through the inner nodes of a 1-meter bamboo pole with a hot stick, insert it into a clay pot lid, and seal the joint tight with pine pitch and clay. Second, fill the pot two-thirds with seawater over a hearth and prop the bamboo tube at a 30-degree downward slope. Third, wrap the middle of the tube with wet sphagnum moss and burlap, pouring cool seawater over it to chill the steam inside. Fourth, discard the first half-cup, and pure salt-free drinking water will pour out while white sea salt crystals remain at the bottom!",
+    "outro": "Open the offline survival manual anytime without cell service via the link in bio."
+  },
+  "outcome": {
+    "svgFileName": "pr20-outcome.svg",
+    "title": "Clay Pot Hearth Boiler & Wet Moss Bamboo Condenser Seawater Desalination System",
+    "description": "Complete field desalination system combining a 2/3-fill earthen boiling pot with a pitch-clay sealed lid, a 30-degree sloped hollow bamboo steam pipe, an evaporative wet sphagnum moss cooling jacket with a cordage drip ring, and dual recovery of pure freshwater and crystalline sea salt.",
+    "svgLabels": [
+      "FIG. OUTCOME // CLAY POT & WET MOSS BAMBOO CONDENSER DESALINATION STILL",
+      "STAGE 1: 1m Bamboo Node Clearance & Clay-Pitch Lid Seal",
+      "STAGE 2: 2/3 Seawater Fill Level & 30-Deg Downward Slope",
+      "STAGE 3: Wet Moss-Burlap Cooling Wrap & Cordage Drip Ring",
+      "STAGE 4: Discard First 50ml & Collect Pure Water + Sea Salt",
+      "SAFETY RULE: Keep Pipe Tip Above Water (No Back-Siphon) & No Fuel Water",
+      "[FINAL OUTCOME] Boiling Seawater Steam + Moss Cooling = 100% Pure Water & Salt"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "The seawater is boiling hard in the pot, but only white steam blows out of the bamboo tip instead of water droplets.",
+      "causeDiagnostic": "The sphagnum moss wrap around the bamboo tube has dried out and heated up, or the hearth fire is roaring too hot for the steam to condense in time.",
+      "resolution": "Immediately douse the [Sphagnum Moss and Burlap](/protocol-18.html) jacket with cold raw seawater until the bamboo feels cool to the touch, and pull one log out of the [Clay Hearth](/protocol-06.html) to maintain a steady simmer. As soon as the tube cools, white steam stops and clear water droplets flow steadily."
+    },
+    {
+      "question": "Why does the water collected in my receiving bowl still taste slightly salty?",
+      "causeDiagnostic": "Either the pot was filled too high so boiling salty foam surged into the tube, or cooling seawater poured onto the moss ran down the outside of the bamboo into your bowl.",
+      "resolution": "Lower the seawater level in the pot below two-thirds height and add 3–4 clean pebbles to stop violent foaming. Then tie a tight [Wild Kudzu Cordage](/protocol-05.html) drip ring around the bamboo tube between the moss wrap and the bowl so all exterior salty runoff drips onto the ground."
+    }
+  ],
+  "createdAt": "2026-11-02T01:10:00.000Z",
+  "updatedAt": "2026-11-02T01:29:31.861Z",
+  "contentHash": "3a3fe70b4066523a"
+}

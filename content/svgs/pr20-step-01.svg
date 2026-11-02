@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg20s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#111722"/>
+    </linearGradient>
+    <linearGradient id="bambooWall20" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a3b18a"/>
+      <stop offset="50%" stop-color="#588157"/>
+      <stop offset="100%" stop-color="#344e41"/>
+    </linearGradient>
+    <linearGradient id="clayLid20" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="60%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <radialGradient id="hotTip20" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow20s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg20s1)"/>
+  <g stroke="#1e293b" stroke-width="0.6" opacity="0.45">
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="160" x2="400" y2="160"/>
+    <line x1="0" y1="240" x2="400" y2="240"/>
+    <line x1="0" y1="320" x2="400" y2="320"/>
+    <line x1="80" y1="0" x2="80" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+  </g>
+  <rect x="4" y="4" width="392" height="392" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Text 1) -->
+  <rect x="8" y="10" width="384" height="24" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="16" y="26" fill="#38bdf8" font-family="monospace" font-size="9.5" font-weight="bold">FIG. 01 // HOLLOWING BAMBOO NODES &amp; HERMETIC CLAY-RESIN SEAL</text>
+
+  <!-- Sub-banner 1 (Text 2) -->
+  <rect x="20" y="46" width="360" height="22" rx="2" fill="#131922" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="200" y="61" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">불에 달군 나무 꼬챙이로 1m 대나무 안쪽 마디 칸막이 모두 뚫기</text>
+
+  <!-- Top Diagram: Bamboo Cross-Section & Hot Rod Piercing Nodes -->
+  <g filter="url(#shadow20s1)">
+    <!-- Bamboo Outer & Inner Cutaway Tube -->
+    <rect x="40" y="84" width="280" height="54" rx="4" fill="#1b261d" stroke="#84a98c" stroke-width="1.5"/>
+    <!-- Top Bamboo Wall -->
+    <rect x="40" y="84" width="280" height="12" fill="url(#bambooWall20)" stroke="#a3b18a" stroke-width="0.8"/>
+    <!-- Bottom Bamboo Wall -->
+    <rect x="40" y="126" width="280" height="12" fill="url(#bambooWall20)" stroke="#a3b18a" stroke-width="0.8"/>
+
+    <!-- Bamboo Outer Node Ridges -->
+    <ellipse cx="125" cy="84" rx="4" ry="3" fill="#a3b18a"/>
+    <ellipse cx="125" cy="138" rx="4" ry="3" fill="#a3b18a"/>
+    <ellipse cx="235" cy="84" rx="4" ry="3" fill="#a3b18a"/>
+    <ellipse cx="235" cy="138" rx="4" ry="3" fill="#a3b18a"/>
+
+    <!-- Punctured Node 1 (Already Cleared) -->
+    <rect x="122" y="96" width="6" height="7" fill="#588157"/>
+    <rect x="122" y="119" width="6" height="7" fill="#588157"/>
+
+    <!-- Node 2 Being Pierced by Glowing Hot Wooden Rod -->
+    <rect x="232" y="96" width="6" height="8" fill="#588157"/>
+    <rect x="232" y="118" width="6" height="8" fill="#588157"/>
+    <circle cx="235" cy="111" r="16" fill="url(#hotTip20)"/>
+
+    <!-- Fire-Hardened Wooden Poker Rod Pushing Right -->
+    <rect x="18" y="106" width="212" height="10" rx="3" fill="#78350f" stroke="#d97706" stroke-width="1"/>
+    <polygon points="230,105 248,111 230,117" fill="#ef4444" stroke="#fef08a" stroke-width="1.2"/>
+    <!-- Thrust Arrow -->
+    <polygon points="262,111 252,106 252,116" fill="#38bdf8"/>
+    <path d="M 248,111 L 298,111" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,3"/>
+
+    <!-- Clear Hollow Channel Verification Badge -->
+    <circle cx="352" cy="111" r="18" fill="#0d1f17" stroke="#22c55e" stroke-width="1.5"/>
+    <path d="M 344,111 L 350,117 L 361,104" fill="none" stroke="#4ade80" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sub-banner 2 (Text 3) -->
+  <rect x="20" y="156" width="360" height="22" rx="2" fill="#131922" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="200" y="171" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">토기 뚜껑 중앙 구멍에 대나무 관 끝을 손가락 두 마디 깊이로 끼우기</text>
+
+  <!-- Bottom Diagram: Clay Pot Lid Socket + Pine Resin + 1.5cm Clay Collar Seal -->
+  <g filter="url(#shadow20s1)">
+    <!-- Clay Pot Upper Rim & Lid Cross-Section -->
+    <path d="M 75,302 L 95,252 L 305,252 L 325,302 Z" fill="#291509" stroke="#b45309" stroke-width="1.8"/>
+    <!-- Curved Earthen Lid -->
+    <path d="M 82,254 Q 140,218 176,220 L 176,242 Q 135,242 95,256 Z" fill="url(#clayLid20)" stroke="#d97706" stroke-width="1.2"/>
+    <path d="M 318,254 Q 260,218 224,220 L 224,242 Q 265,242 305,256 Z" fill="url(#clayLid20)" stroke="#d97706" stroke-width="1.2"/>
+
+    <!-- Bamboo Pipe Inserted 4cm Into Lid Port -->
+    <path d="M 180,264 L 180,192 L 335,192 L 335,218 L 216,218 L 216,264 Z" fill="url(#bambooWall20)" stroke="#a3b18a" stroke-width="1.5"/>
+    <!-- Inner Hollow Steam Path -->
+    <path d="M 190,264 L 190,201 L 335,201 L 335,210 L 206,210 L 206,264 Z" fill="#0f172a"/>
+
+    <!-- Rising Steam Arrows Inside Pot Entering Bamboo Pipe -->
+    <path d="M 198,294 L 198,205 L 315,205" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5,3"/>
+    <polygon points="323,205 313,200 313,210" fill="#38bdf8"/>
+
+    <!-- Layer 1: Inner Dark Pine Pitch Resin Seal -->
+    <ellipse cx="176" cy="226" rx="10" ry="7" fill="#d97706" stroke="#fef08a" stroke-width="1"/>
+    <ellipse cx="224" cy="226" rx="10" ry="7" fill="#d97706" stroke="#fef08a" stroke-width="1"/>
+
+    <!-- Layer 2: Outer 1.5cm Thick Clay Paste Mound Seal -->
+    <path d="M 146,238 Q 162,202 180,208 L 180,236 Z" fill="#78716c" stroke="#d6d3d1" stroke-width="1.2"/>
+    <path d="M 254,238 Q 238,202 220,208 L 220,236 Z" fill="#78716c" stroke="#d6d3d1" stroke-width="1.2"/>
+  </g>
+
+  <!-- Sub-banner 3 (Text 4) -->
+  <rect x="20" y="314" width="360" height="22" rx="2" fill="#131922" stroke="#22c55e" stroke-width="0.8"/>
+  <text x="200" y="329" fill="#fde68a" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">연결부 틈새에 소나무 송진과 찰흙 반죽을 1.5cm 두께로 발라 밀봉</text>
+
+  <!-- Footer Key Summary Banner (Text 5) -->
+  <rect x="8" y="352" width="384" height="36" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="200" y="374" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">[1단계 핵심] 마디 완전 관통 및 수증기 누출 0% 진흙·송진 밀폐</text>
+</svg>

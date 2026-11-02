@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg20s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#111722"/>
+    </linearGradient>
+    <linearGradient id="mossJacket20" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="steamToWater20" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#f8fafc" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="shadow20s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg20s3)"/>
+  <g stroke="#1e293b" stroke-width="0.6" opacity="0.45">
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="160" x2="400" y2="160"/>
+    <line x1="0" y1="240" x2="400" y2="240"/>
+    <line x1="0" y1="320" x2="400" y2="320"/>
+    <line x1="80" y1="0" x2="80" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+  </g>
+  <rect x="4" y="4" width="392" height="392" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Text 1) -->
+  <rect x="8" y="10" width="384" height="24" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="16" y="26" fill="#38bdf8" font-family="monospace" font-size="9" font-weight="bold">FIG. 03 // WET SPHAGNUM MOSS COOLING JACKET &amp; DRIP-RING ISOLATION</text>
+
+  <!-- Sub-banner 1 (Text 2) -->
+  <rect x="20" y="44" width="360" height="22" rx="2" fill="#131922" stroke="#22c55e" stroke-width="0.8"/>
+  <text x="200" y="59" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">대나무 관 중간 60cm 구간에 찬물 적신 물이끼와 삼베 천 두껍게 감기</text>
+
+  <!-- Sub-banner 2 (Text 3) -->
+  <rect x="20" y="74" width="360" height="22" rx="2" fill="#131922" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="200" y="89" fill="#bae6fd" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">물이끼 위에 차가운 바닷물을 수시로 부어 관 내부 수증기 급속 냉각</text>
+
+  <!-- Main Diagram: Sloped Bamboo Condenser Cutaway + Wet Moss Jacket + Drip Stop Ring -->
+  <g filter="url(#shadow20s3)">
+    <!-- Wooden Gourd Ladle Pouring Cool Seawater Over Moss Pad -->
+    <path d="M 162,106 C 162,122 192,122 192,106 L 228,100 L 228,106 L 194,114 Z" fill="#92400e" stroke="#f59e0b" stroke-width="1.2"/>
+    <!-- Falling Cooling Water Streams -->
+    <path d="M 168,120 L 164,142" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4,3" stroke-linecap="round"/>
+    <path d="M 180,122 L 176,146" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="4,3" stroke-linecap="round"/>
+    <path d="M 192,120 L 188,148" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4,3" stroke-linecap="round"/>
+
+    <!-- Angled Bamboo Condenser Tube Cutaway -->
+    <g transform="translate(36, 134) rotate(18)">
+      <!-- Outer Wet Sphagnum Moss & Burlap Cooling Jacket (Central 60cm Section) -->
+      <rect x="76" y="-18" width="160" height="62" rx="14" fill="url(#mossJacket20)" stroke="#4ade80" stroke-width="1.8"/>
+      <!-- Burlap Cross-Weave Texture & Kudzu Cordage Bindings -->
+      <line x1="104" y1="-18" x2="104" y2="44" stroke="#a16207" stroke-width="3.5"/>
+      <line x1="156" y1="-18" x2="156" y2="44" stroke="#a16207" stroke-width="3.5"/>
+      <line x1="208" y1="-18" x2="208" y2="44" stroke="#a16207" stroke-width="3.5"/>
+
+      <!-- Bamboo Tube Walls -->
+      <rect x="0" y="0" width="318" height="26" rx="3" fill="#588157" stroke="#a3b18a" stroke-width="1.5"/>
+      <!-- Inner Hollow Channel Showing Phase Change (Hot Orange/White Steam -> Cool Blue Water) -->
+      <rect x="4" y="6" width="310" height="14" fill="#0f172a"/>
+      <rect x="8" y="8" width="298" height="10" rx="2" fill="url(#steamToWater20)" opacity="0.85"/>
+
+      <!-- Condensed Pure Water Droplets Inside Right Half of Tube -->
+      <circle cx="195" cy="13" r="3" fill="#e0f2fe"/>
+      <circle cx="235" cy="14" r="3.5" fill="#bae6fd"/>
+      <circle cx="275" cy="15" r="4" fill="#38bdf8"/>
+
+      <!-- Kudzu Cordage Drip-Stop Ring Tied Before Pipe Tip -->
+      <rect x="266" y="-5" width="8" height="36" rx="2" fill="#d97706" stroke="#fef08a" stroke-width="1.2"/>
+      <!-- Hanging Cordage Tail Directing Exterior Salty Runoff Straight Down -->
+      <path d="M 270,31 L 262,56" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Exterior Salty Cooling Runoff Dripping Onto Bark Deflector Tray (Left of Bowl) -->
+    <circle cx="182" cy="232" r="3" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="222" cy="244" r="3" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="275" cy="264" r="3.5" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+    <!-- Angled Bark Deflector Channeling Salty Cooling Water Away -->
+    <polygon points="154,258 290,282 286,292 150,268" fill="#57534e" stroke="#a8a29e" stroke-width="1.2"/>
+
+    <!-- Pure Freshwater Droplets Falling From Pipe Tip Into Clean Bowl (Right) -->
+    <path d="M 336,246 C 333,253 339,253 336,246 Z" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.5"/>
+    <circle cx="336" cy="256" r="4" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1"/>
+    <path d="M 308,268 L 316,298 L 356,298 L 364,268 Z" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
+    <ellipse cx="336" cy="288" rx="18" ry="6" fill="#0284c7" stroke="#bae6fd" stroke-width="1"/>
+  </g>
+
+  <!-- Sub-banner 3 (Text 4) -->
+  <rect x="14" y="314" width="372" height="22" rx="2" fill="#131922" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="200" y="329" fill="#fde68a" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">관 끝 전에 칡끈 물끊기 고리를 묶어 겉면의 짠 냉각수가 땅으로 떨어지게 차단</text>
+
+  <!-- Footer Key Summary Banner (Text 5) -->
+  <rect x="8" y="352" width="384" height="36" rx="3" fill="#0f172a" stroke="#22c55e" stroke-width="1.2"/>
+  <text x="200" y="374" fill="#4ade80" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">[3단계 핵심] 젖은 물이끼 증발 냉각으로 수증기를 100% 민물 방울로 응결</text>
+</svg>
