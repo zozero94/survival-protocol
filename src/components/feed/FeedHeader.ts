@@ -57,11 +57,12 @@ export function renderFeedHeader(totalCount: number): string {
       SURVIVAL GUIDE // FIELD MANUAL
     </div>
     <h1 data-i18n="feedHeroHeadline" class="text-2xl sm:text-3xl md:text-4xl font-black font-mono tracking-tight text-white uppercase leading-snug">
-      전기와 도구가 모두 사라졌을 때, 맨손과 자연물만으로 살아남는 법.
+      재난에서 살아남기
     </h1>
     <p data-i18n="feedHeroSubtext" class="text-neutral-400 text-xs sm:text-sm mt-3 max-w-2xl leading-relaxed">
-      주변에서 쉽게 구할 수 있는 나무, 돌, 흙, 낙엽만으로 물과 불, 거처를 만드는 실전 생존 가이드입니다.
-      한 번 열어본 글은 기기에 자동 저장되어 인터넷이나 통신이 끊긴 곳에서도 그대로 볼 수 있습니다.
+      문명이 멈추고 전기와 수도가 끊긴 극한의 재난·전쟁·도시 마비 위기에서 살아남는 실전 행동 수칙입니다.
+      주변의 버려진 생활용품(깡통·페트병·비닐·호일)과 자연물만으로 물, 불, 난방, 조리, 방호 문제를 해결하는 기술을 기록합니다.
+      (포스트 아포칼립스 생존 아카이브 / 1회 방문 시 오프라인 영구 보존)
     </p>
   </div>
 </section>

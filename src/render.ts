@@ -115,6 +115,7 @@ export function renderCanonicalProtocolPage(
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title data-proto="title">${SITE_META.shortName} // ${master.title}</title>
   <meta name="description" content="${master.summary}">
+  <meta name="keywords" content="${master.title}, 재난에서 살아남기, 포스트 아포칼립스, 전시 생존, 비상사태, ${master.category}, survival protocol">
   <meta name="theme-color" content="${SITE_META.themeColor}">
   <link rel="canonical" href="${SITE_META.siteUrl}/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}">
   ${SeoService.renderHreflangTags(`/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}`)}

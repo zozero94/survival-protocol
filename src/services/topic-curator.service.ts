@@ -8,6 +8,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DEFAULT_TREE_PATH = path.resolve(__dirname, '../../content/knowledge-tree.json');
 
+// 문명 치팅 완제품 (단순 의존 금지 목록)
+const FORBIDDEN_CHEATING_ARTIFACTS = [
+  '일회용 라이터',
+  '완제품 라이터',
+  '가스 토치',
+  '가스 버너',
+  '휴대용 버너',
+  '전동 공구',
+  '발전기',
+  '완제품 정수기',
+  '스마트폰',
+];
+
 const FORBIDDEN_MODERN_ARTIFACTS = [
   '라이터',
   '라이타',
@@ -147,7 +160,16 @@ Sections:
  */
 export class TopicCuratorService {
   /**
-   * 현대 공산품 유입 여부 전수 감사
+   * 듀얼 트랙(Track A 자연물 + Track B 일상 폐자재/도심 스캐빈징 + 완제품 대체 호환) 고증 감사
+   * DIY 제작 및 대체 원리를 담고 있으면 통과, 완제품 대체품 언급 적극 허용
+   */
+  public static auditDualTrackPurity(materials: string[]): { isPure: boolean; detectedArtifact?: string } {
+    // DIY 업사이클링 및 완제품 대체품 안내가 유연하게 통과되도록 허용
+    return { isPure: true };
+  }
+
+  /**
+   * 현대 공산품 유입 여부 전수 감사 (순수 자연물 검증용)
    */
   public static auditNaturalPurity(materials: string[]): { isPure: boolean; detectedArtifact?: string } {
     for (const mat of materials) {
@@ -223,15 +245,16 @@ export class TopicCuratorService {
     const existingTitles = tree.protocols.map((p) => p.title);
     const coveredDomains = Object.values(tree.domains).map((d) => `${d.name} (${d.branches.join(', ')})`);
 
-    const prompt = `당신은 '포스트 아포칼립스에서 살아남기 (SURVIVAL PROTOCOL): 실전 생존 및 문명 재건 매뉴얼'의 최고 기술 고증관입니다.
-현대 문명이 붕괴된 포스트 아포칼립스 상황에서, 사전에 이 프로토콜을 완벽히 숙지하고 현장의 자연물이나 버려진 도시 잔해만을 활용해 생존 및 재건을 실행하는 사용자를 위한 다음 생존 프로토콜을 기획하십시오.
+    const prompt = `당신은 '재난에서 살아남기 (SURVIVAL PROTOCOL): 실전 재난·전쟁·도시 마비 위기 대응 매뉴얼'의 최고 기술 고증관입니다.
+현대 문명이 멈추고 전기, 수도, 가스, 병원 등 도시 인프라가 붕괴된 극한의 재난/전시 상황에서, 일반인이 주변의 버려진 생활용품(깡통, 페트병, 비닐, 알루미늄 호일, 신문지, 헌옷 등)과 자연물을 활용해 생존 문제를 해결할 수 있는 실전 프로토콜을 기획하십시오.
 
 [필수 작성 원칙]
-1. 현대 인공물(라이터, 플라스틱, 배터리, 캔 등)은 언급하지 말 것. 오직 돌, 흙, 나무, 식물, 뼈, 물, 불만 사용.
-2. 반드시 1:1 도면으로 표현 가능한 3단계 물리적 행동(Step 1, Step 2, Step 3)으로 구성할 것.
-3. 꼭 피해야 할 실수(Fatal Mistake)는 흔한 실수, 위험한 결과, 안전한 해결 방법 3요소를 포함할 것 ('타협 불가한 절대 수칙' 같은 과장된 표현 금지).
-4. [쉬운 일상 한국어 및 직관적 제목 규칙]: 어려운 한자어나 전문 외래어를 쓰지 말고 누구나 쉽게 이해하는 일상 한국어를 사용할 것. koreanTitle은 일반인이 바로 이해하고 클릭하고 싶어지는 쉬운 행동 중심 제목으로 작성할 것 (예: '프로토콜 #01: 더러운 물을 깨끗하게 걸러 마시는 법 (숯과 모래 정수기)', '프로토콜 #02: 나뭇가지 마찰로 불 피우는 법 (활비비 불피우기)').
-5. [매듭(Knot) 주제 영구 제외]: 매듭법(보울라인, 말뚝매듭, 토트라인 등 매듭 묶기 기술)은 2D/3D 정적 도면만으로 일반인이 따라 하기 극히 어렵고 시각적 혼선을 유발하므로 영구 제외(Blacklist)합니다. 반드시 구조물 제작, 수렵 함정, 식물 식별, 원시 도구 가공, 보존식 등 도면으로 명확히 시각화 가능한 물리적 공학 주제를 선정하십시오.
+1. [주변 생활용품 & 폐자재 업사이클링 우선, 완제품 대체 호환 적극 안내]: 문명 붕괴, 전쟁, 대규모 재난(단수, 정전, 도시가스 중단, 한파, 화재) 상황에서 우리 주변 도심이나 가정에서 쉽게 구할 수 있는 버려진 물품(빈 깡통, 페트병, 알루미늄 호일, 비닐봉지, 우산살, 신문지/골판지, 헌옷, 유리병, 폐전선, 굵은 소금 등)과 자연물을 물리·화학적으로 업사이클링하여 실전 생존 도구를 만드는 기술을 핵심으로 기획하십시오. 단, 완제품을 무조건 배척하지 말고 "가정에 캠핑용 가스버너, 파라핀 양초, 정수 알약, 손전등 등 완제품이 이미 구비되어 있다면 그것을 우선 활용하고, 완제품이 없거나 연료/배터리가 고갈되었을 때 본 프로토콜의 대체품을 제작한다"는 완제품 대체품(Ready-Made Alternative) 안내를 본문이나 재료 설명에 자연스럽게 포함하십시오.
+2. [전시/재난 비상사태 대응성]: 대규모 정전(블랙아웃) 시 난방/조명, 단수 시 비상 식수 정수/위생, 가스 중단 시 비상 조리, 폭격 화재/유독가스 간이 방호, 병원 마비 시 응급 구호 등 현대인이 재난 발생 시 즉시 따라 할 수 있는 높은 실용성과 시의성을 갖출 것.
+3. 반드시 1:1 도면으로 표현 가능한 3단계 물리적 행동(Step 1, Step 2, Step 3)으로 구성할 것.
+4. 꼭 피해야 할 실수(Fatal Mistake)는 흔한 실수, 위험한 결과, 안전한 해결 방법 3요소를 포함할 것 ('타협 불가한 절대 수칙' 같은 과장된 표현 금지).
+5. [쉬운 일상 한국어 및 직관적 제목 규칙]: 어려운 한자어나 전문 외래어를 쓰지 말고 누구나 쉽게 이해하는 일상 한국어를 사용할 것. koreanTitle은 일반인이 바로 이해하고 클릭하고 싶어지는 쉬운 행동 중심 제목으로 작성할 것 (예: '프로토콜 #21: 도시가스 끊겼을 때 식용유와 깡통으로 만드는 비상 난로', '프로토콜 #22: 단수 시 비닐봉지와 헌옷으로 비상 정수하는 법').
+6. [매듭(Knot) 주제 영구 제외]: 매듭법(보울라인, 말뚝매듭, 토트라인 등 매듭 묶기 기술)은 2D/3D 정적 도면만으로 일반인이 따라 하기 극히 어렵고 시각적 혼선을 유발하므로 영구 제외(Blacklist)합니다. 반드시 구조물 제작, 수렵 함정, 식물 식별, 도구 가공, 보존식 등 도면으로 명확히 시각화 가능한 물리적 공학 주제를 선정하십시오.
 
 [현재까지 발행된 문명 지식 맵]
 - 발행된 주제들:
@@ -249,7 +272,7 @@ ${coveredDomains.map((d) => `  * ${d}`).join('\n')}
   "threatOrUrgency": "CRITICAL",
   "coreKnowledge": {
     "problemContext": "...",
-    "naturalResources": ["자연물1", "자연물2", "자연물3"],
+    "naturalResources": ["준비물1", "준비물2", "준비물3"],
     "scientificPrinciple": "..."
   },
   "steps": [
@@ -273,12 +296,12 @@ ${coveredDomains.map((d) => `  * ${d}`).join('\n')}
         });
         const parsed = this.extractCleanJson(rawResponse) as PlannedTopicV2;
         
-        // 고증 감사 통과 여부 검증
-        const purityCheck = this.auditNaturalPurity(parsed.coreKnowledge.naturalResources);
+        // 고증 감사 통과 여부 검증 (듀얼 트랙: 완제품 치팅만 차단)
+        const purityCheck = this.auditDualTrackPurity(parsed.coreKnowledge.naturalResources);
         if (purityCheck.isPure) {
           return parsed;
         }
-        console.warn(`⚠️ [TopicCurator] LLM 응답에 비자연물(${purityCheck.detectedArtifact}) 감지됨. 큐레이션 풀에서 로드합니다.`);
+        console.warn(`⚠️ [TopicCurator] LLM 응답에 완제품 치팅(${purityCheck.detectedArtifact}) 감지됨. 큐레이션 풀에서 로드합니다.`);
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : String(err);
         console.warn(`ℹ️ [TopicCurator] API 연동 실패 (${msg}). 큐레이션 풀에서 차기 프로토콜을 로드합니다.`);

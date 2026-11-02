@@ -79,6 +79,7 @@ export function renderIndexPage(
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
   <title data-i18n="feedHeaderTitle">${SITE_META.name} // [생존 교범 // SURVIVAL PROTOCOL]</title>
   <meta name="description" content="${SITE_META.description}">
+  <meta name="keywords" content="재난에서 살아남기, 포스트 아포칼립스, 전쟁 생존, 비상사태 생존법, 도시 재난, 단수 대처, 정전 난방, 생존 교범, 서바이벌 프로토콜, survival protocol, post-apocalypse, emergency preparedness">
   <meta name="theme-color" content="${SITE_META.themeColor}">
   <link rel="canonical" href="${SITE_META.siteUrl}/">
   ${SeoService.renderHreflangTags('/')}
