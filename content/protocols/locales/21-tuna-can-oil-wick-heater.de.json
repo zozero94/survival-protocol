@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-21",
+  "category": "SHELTER",
+  "title": "72-Stunden-Notheizung & Kocher aus Thunfischdose, Speiseöl und Toilettenpapier bei Strom- & Gasausfall",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[BLACKOUT-INNENHEIZUNG & 72-STUNDEN-WÄRMEQUELLE]",
+  "summary": "Wenn Sie zu Hause fertige Notfallausrüstung wie einen Gaskocher, Campingheizer, Paraffinkerzen oder Trockenbrennstoff haben, nutzen Sie diese immer zuerst als sicherste und schnellste Lösung. Dauert ein Winter-Blackout oder Gasausfall jedoch länger an und sind Gaskartuschen sowie Batterien aufgebraucht, droht beim Verbrennen von Holz in Innenräumen tödlicher Rauch und Kohlenmonoxid (nutzen Sie den [Doppeldosen-Holzgas-Kocher](/protocol-12.html) nur im Freien). Indem Sie den Boden einer leeren Stahl-Thunfischdose mit einer Kiesschicht dämmen, 3 fest gedrehte Toilettenpapier-Dochte in einer gefalteten Folienbrücke aufstellen und Pflanzenöl einfüllen, entsteht ein rauchfreier Innenheizer, der den Raum wärmt und Trinkwasser 8 bis 12 Stunden pro Füllung (über 72 Stunden pro Ölflasche) erhitzt.",
+  "timeRequired": "15 Min. (Dose & Kiesschicht 3m + Papierdochte & Folienbrücke 5m + Ölsättigung 5m + Reflektorwand 2m)",
+  "successRate": "99% (Bei reinem Pflanzenöl und einer freien Dochtspitze unter 1cm / halbes Fingerglied)",
+  "difficulty": "Einfach (Ohne Messer mit alltäglichen Küchenutensilien machbar)",
+  "outputPerHour": "8-10 Std. Dauerwärme pro Thunfischdose (120ml) / 72+ Std. mit 1 Flasche Speiseöl (900ml)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 leere Stahl-Thunfisch- oder Konservendose & 1 Handvoll kleine Kieselsteine oder grober Sand",
+      "desc": "Eine flache, breite Weißblech-Konservendose (handtellergroß, zwei Fingerglieder hoch), wenn fertige Gasheizer oder Festbrennstoffe fehlen. Eine Handvoll Blumentopferde, Kieselsteine oder Münzen am Boden verhindert die Wärmeübertragung nach unten auf Tisch oder Fußboden."
+    },
+    {
+      "id": "mat-02",
+      "name": "Pflanzliches Speiseöl (Soja-, Raps-, Oliven- oder gefiltertes Frittieröl) & 3 Blatt Toilettenpapier",
+      "desc": "Sicheres Pflanzenöl als Ersatz für aufgebrauchte Kerzen oder Petroleum. Pflanzliches Speiseöl hat einen Flammpunkt über 300°C, fängt beim Verschütten kein Feuer und brennt mit 2-3 fest gedrehten Blättern Toilettenpapier (oder Streifen aus 100% Baumwoll-T-Shirts / Baumwollschnürsenkeln) rußfrei ab."
+    },
+    {
+      "id": "mat-03",
+      "name": "Zwei Handspannen Küchen-Metallfolie & 2 dicke abisolierte Metalldrähte (oder Drahtkleiderbügel)",
+      "desc": "Eine Handspanne Metallfolie wird zu einer Haltebrücke gefaltet, die die 3 Dochte aufrecht im Öl hält; die zweite Handspanne steht hinter der Dose und reflektiert die Strahlungswärme nach vorn. Zwei dicke Metalldrähte (bei alten Stromkabeln die Isolierung zuvor mit einer [Scharfen Steinklinge](/protocol-04.html) komplett abziehen, um Giftgase zu vermeiden) dienen als Topfauflage zum Erhitzen eines Metallbechers Wasser."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Papieretikett der Stahldose restlos abziehen und eine halbfingerglieddicke Kiesschicht am Boden verteilen",
+      "description": "1. **Fertiggeräte prüfen & Dose reinigen**: Prüfen Sie zuerst, ob noch Gaskartuschen oder Kerzen vorhanden sind; falls nicht, nehmen Sie eine leere Stahl-Thunfisch- oder Konservendose. Ziehen Sie das äußere Papieretikett samt Kleberesten komplett ab, damit nichts verkohlt oder giftig raucht, und wischen Sie die Dose trocken.\n2. **Scharfen Dosenrand glätten**: Drücken Sie scharfe Blechkanten am oberen Öffnungsrand mit einem Löffelrücken oder glatten Stein flach, um Schnittwunden zu vermeiden.\n3. **Kiesel- & Sandschicht als Hitzeschutz einfüllen**: Bedecken Sie den Dosenboden gleichmäßig **ein halbes Fingerglied hoch (ca. 1cm)** mit kleinen Kieselsteinen, grobem Sand oder Münzen.\n4. **Auf feuerfeste Unterlage stellen**: Stellen Sie die vorbereitete Dose auf einen Keramikteller, Topfdeckel oder flachen Stein, um den Zimmerboden bei stundenlangem Betrieb doppelt gegen Hitze zu schützen.",
+      "actionNote": "> Warum die Bodendämmung wichtig ist: Wenn das Speiseöl fast verbraucht ist, erhitzt sich der Dosenboden auf fast 200°C. Eine 1cm dicke Schicht aus Kies oder Sand im Inneren blockiert die Hitze nach unten und gibt den Dochtfüßen gleichzeitig festen Halt.",
+      "svgFileName": "pr21-step-01.svg",
+      "svgLabels": [
+        "ABB. 01 // STAHLDOSE REINIGEN & BODEN-HITZESCHUTZ",
+        "Flache Stahldose ohne äußeres Papieretikett",
+        "1cm Kiesel- & Sandschicht als Boden-Hitzepuffer",
+        "Keramikteller oder Steinplatte als Untersetzer",
+        "[KERN] Dosen-Vorbereitung & doppelte Bodendämmung"
+      ],
+      "deepDive": {
+        "badge": "BLACKOUT-WÄRME",
+        "title": "Kohlenmonoxid-Gefahr durch Holz/Kohle im Zimmer vs. Thermische Sicherheit von Weißblechdosen",
+        "text": "Das Verbrennen von Holz oder [Hartholzkohle](/protocol-09.html) in geschlossenen Wohnräumen führt rasch zu tödlicher Kohlenmonoxid-Vergiftung. Weißblechdosen haben dagegen einen Schmelzpunkt über **1.500°C**, und dank der **1cm dicken Kiesschicht am Boden** sowie reinem Pflanzenöl überhitzt das Dosenblech nicht und spendet saubere Wärme im Innenraum.",
+        "fieldSpecs": [
+          {
+            "name": "Gereinigte Stahl-Thunfischdose & 1cm Kies-Hitzepuffer",
+            "scientificName": "Clean Tinplate Steel Can & 1cm Pebble Thermal Buffer",
+            "categoryTag": "Boden-Hitzeschild / Hochtemperatur-Stahlbehälter",
+            "imageFileName": "id-clean-tuna-tin-can.jpg",
+            "hudCode": "FIG. HEAT-21A // MACRO OPTIC",
+            "hudStatus": "BASE THERMAL SHIELD: VERIFIED",
+            "traits": [
+              {
+                "label": "DOSE/GEFÄSS",
+                "value": "Flache **Stahl-Thunfischdose (8-10cm Durchmesser, 4-5cm Höhe)** mit vollständig entferntem Papieretikett."
+              },
+              {
+                "label": "PUFFER/SAND",
+                "value": "Eine **halbfingerglieddicke (1cm) Schicht aus Kies und Sand (oder Münzen)** verhindert Bodenüberhitzung."
+              },
+              {
+                "label": "SCHILD/BASIS",
+                "value": "Ein **Keramikteller oder eine flache Steinplatte** darunter schützt den Fußboden vor Wärmeleitung."
+              }
+            ],
+            "fieldUse": "Brennstoffbehälter für Blackout-Innenheizung, Ersatz für Trockenbrennstoff und Kerzen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: 3 Toilettenpapier-Dochte auf Kleinfingerdicke fest zusammendrehen und in eine gefaltete Folienbrücke klemmen",
+      "description": "1. **Toilettenpapier diagonal fest verdrillen**: Reißen Sie 1 Blatt Toilettenpapier ab, falten Sie es mittig und drehen Sie es diagonal zwischen den Fingerspitzen wie beim Auswringen von Wäsche extrem fest zusammen, bis **3 feste Dochte von halber Kleinfingerdicke (4-5mm) und zwei Fingergliedern Länge (5cm)** entstehen (Streifen aus 100% Baumwoll-T-Shirts funktionieren ebenfalls).\n2. **Silberne Folienbrücke falten**: Reißen Sie ein **handtellergroßes Stück** Küchenfolie ab und falten Sie es der Länge nach 4-mal zu einem **ein Fingerglied breiten, stabilen Folienstreifen**.\n3. **3 Dochte mit Abstand umwickeln**: Legen Sie die 3 gedrehten Papierdochte mit je einem Fingerglied Abstand in die Mitte des Folienstreifens und drücken Sie die Folie fest um die Dochtmitte, sodass oben nur **ein halbes Fingerglied (0,8-1cm)** Dochtspitze herausragt.\n4. **Mittig in die Dose setzen**: Hängen Sie beide Enden der Folienbrücke über den Dosenrand oder stecken Sie sie in die Bodenkiesschicht, sodass alle 3 Dochte senkrecht in der Mitte stehen.",
+      "actionNote": "> Dochtfestigkeit & Spitzenhöhe regulieren: Locker gerolltes Papier verbrennt zu schnell und rußt stark. Drehen Sie das Toilettenpapier so fest wie einen trockenen Zweig und halten Sie die freie Spitze über der Folie unter einem halben Fingerglied (0,8-1cm) für eine ruhige, rußfreie Flamme.",
+      "svgFileName": "pr21-step-02.svg",
+      "svgLabels": [
+        "ABB. 02 // GEDREHTE PAPIERDOCHTE & FOLIENBRÜCKE",
+        "3 fest verdrillte Toilettenpapier-Dochte (4-5mm dick)",
+        "Freie Dochtspitze über der Folie (max. 0,8-1cm hoch)",
+        "4-lagig gefaltete Metallfolien-Haltebrücke",
+        "[KERN] Kippsichere Dochtstütze & rußfreie Dosierung"
+      ],
+      "deepDive": {
+        "badge": "KAPILLAR-DOCHT",
+        "title": "Kapillarer Öltransport in verdrillten Zellulosefasern & Flammschutz durch Metallfolie",
+        "text": "Die feinen Mikrokanäle im fest verdrillten Zellulose- oder Baumwollgewebe ziehen dickflüssiges Speiseöl durch **Kapillarkraft** gleichmäßig nach oben. Der eng angepresste Metallfolienkragen wirkt als **Flammenbremse**, verhindert das Abbrennen des unteren Dochts und sorgt dafür, dass das Öl nur an der **0,8-1cm kurzen Spitze** sauber vergast.",
+        "fieldSpecs": [
+          {
+            "name": "3 fest verdrillte Papierdochte & Folien-Haltebrücke",
+            "scientificName": "Tightly Twisted Cellulose Wicks & Multi-Fold Foil Clip",
+            "categoryTag": "Kapillare Ölförderung / Rauchfreie Flammenkontrolle",
+            "imageFileName": "id-twisted-tissue-foil-wick.jpg",
+            "hudCode": "FIG. HEAT-21B // MACRO OPTIC",
+            "hudStatus": "WICK DENSITY: HIGH-TORSION",
+            "traits": [
+              {
+                "label": "DOCHT/KORDEL",
+                "value": "**3 feste weiße Kordel-Dochte (4-5mm Durchmesser)** aus stark verdrilltem Toilettenpapier."
+              },
+              {
+                "label": "SPITZE/HÖHE",
+                "value": "Eine **0,8-1cm kurze Spitze über dem Folienkragen** garantiert eine helle Flamme ohne schwarzen Ruß."
+              },
+              {
+                "label": "CLIP/BRÜCKE",
+                "value": "Eine **4-fach gefaltete Folienbrücke** auf dem Dosenrand hält die Dochte aufrecht im Öl."
+              }
+            ],
+            "fieldUse": "Dochte für Speiseöl-Notkocher, Dochte für Tierfett- (Schmalz/Talg) Notlampen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Speiseöl zu 4/5 in die Dose füllen und Dochtspitzen 5 Minuten lang volltränken",
+      "description": "1. **Speiseöl bis auf 4/5 Höhe einfüllen**: Gießen Sie Soja-, Raps-, Sonnenblumen- oder gefiltertes altes Frittieröl langsam bis **ein halbes Fingerglied (ca. 1cm) unter den oberen Dosenrand (80% Füllstand)** ein.\n2. **Dochtspitzen von oben beträufeln**: Zündet man einen trockenen Papierdocht sofort an, verbrennt nur das Papier und erlischt. Träufeln Sie mit einer Löffelspitze **3-4 Tropfen Speiseöl direkt oben auf alle 3 Dochtspitzen**, damit das Öl von oben und unten einzieht.\n3. **5 Minuten Sättigungspause**: Warten Sie **5 Minuten**, bis sich die weißen Papierdochte komplett vollgesogen haben und **durchscheinend goldgelb** glänzen.\n4. **Öltropfen außen abwischen**: Wischen Sie verschüttete Öltropfen an der Dosenaußenseite oder auf dem Teller mit trockenem Papier ab, um Gerüche zu vermeiden.",
+      "actionNote": "> Warum Speiseöl explosionssicher ist: Benzin, Spiritus und Petroleum bilden schon bei Raumtemperatur explosive Dämpfe. Pflanzliches Speiseöl hat einen Flammpunkt über 300°C – selbst wenn die Dose umkippt, brennt das flüssige Öl nicht, sondern nur die heiße Dochtspitze.",
+      "svgFileName": "pr21-step-03.svg",
+      "svgLabels": [
+        "ABB. 03 // 80% SPEISEÖL-FÜLLUNG & DOCHTSÄTTIGUNG",
+        "Speiseöl bis auf 4/5 Höhe füllen (1cm Randabstand)",
+        "3-4 Tropfen Öl direkt von oben auf Dochtspitzen geben",
+        "Nach 5 Min. Wartezeit goldgelb vollgesogene Dochte",
+        "[KERN] >300C Flammpunkt garantiert 0% Explosionsgefahr"
+      ],
+      "deepDive": {
+        "badge": "HOHER FLAMMPUNKT",
+        "title": "300°C Flammpunkt pflanzlicher Triglyceride & Explosionssicherheit im Innenraum",
+        "text": "Pflanzliches Speiseöl besitzt einen Flammpunkt von **310-330°C** und bildet bei Raumtemperatur keinerlei brennbare Dämpfe wie Benzin (-43°C) oder Petroleum (40°C). Wirft man ein brennendes Streichholz direkt in kaltes Speiseöl, erlischt es sofort. Nur das an der heißen Dochtspitze aufsteigende Öl vergast und verbrennt sicher.",
+        "fieldSpecs": [
+          {
+            "name": "Zu 80% gefüllte Speiseöldose & vollgesogene 3fach-Dochte",
+            "scientificName": "80% Filled Vegetable Oil Reservoir & Saturated Wicks",
+            "categoryTag": "Hochflammpunkt-Brennstoff / 8-10 Std. Wärmequelle",
+            "imageFileName": "id-cooking-oil-soaked-wicks.jpg",
+            "hudCode": "FIG. HEAT-21C // MACRO OPTIC",
+            "hudStatus": "FLASH POINT >300C: SAFE",
+            "traits": [
+              {
+                "label": "STAND/ÖL",
+                "value": "Goldgelbes Pflanzenöl bis **1cm unter den oberen Dosenrand (ca. 80% Volumen)** eingefüllt."
+              },
+              {
+                "label": "DOCHT/VOLL",
+                "value": "Dochtspitzen vollständig mit Öl gesättigt und **durchscheinend goldgelb glänzend**."
+              },
+              {
+                "label": "ERSATZ/ÖL",
+                "value": "Funktioniert mit frischem Speiseöl, abgelaufenem Öl, **gefiltertem Frittieröl oder dem Öl in der Thunfischdose**."
+              }
+            ],
+            "fieldUse": "72-Stunden-Blackout-Heizbrennstoff, rauchfreie Notbeleuchtung und Innenraumwärme"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: 3 Dochte entzünden, Folien-Wärmereflektor dahinter aufstellen und Wasser auf Drahtstreben erhitzen",
+      "description": "1. **3fach-Dochte entzünden**: Halten Sie eine Flamme (oder Glut vom [Feuerbohrer-Reibungsfeuer](/protocol-02.html), falls Feuerzeuge leer sind) für **3-4 Sekunden** an die ölgetränkten Dochtspitzen. Nach 1 Minute brennen **3 ruhige, helle orangefarbene Flammen von einem Fingerglied Höhe (2-3cm)** völlig rauchfrei.\n2. **Zickzack-Folienreflektor aufstellen**: Falten Sie ein handspannengroßes Stück Küchenfolie ziehharmonikaartig mit der glänzenden Seite nach vorn und stellen Sie es halbkreisförmig **zwei Fingerglieder (3-4cm) hinter der Dose** auf.\n3. **Abisolierte Drahtstreben auflegen**: Legen Sie 2 dicke abisolierte Metalldrähte oder Kleiderbügelstreben quer über den Dosenrand und stellen Sie einen Metallbecher darauf, um Trinkwasser (gefiltert mit dem [Holzkohle-Sand-Wasserfilter](/protocol-01.html)) und Konserven zu erwärmen.\n4. **Alle 3 Stunden Fenster 2cm öffnen**: Auch rauchfreie Flammen verbrauchen Sauerstoff – **öffnen Sie alle 3 Stunden das Fenster einen Spalt breit (2cm)** zum Lüften.",
+      "actionNote": "> Effizienz von Folienreflektor & Drahtauflage: Eine glänzende Folienwand hinter der Dose reflektiert 90% der nach hinten abstrahlenden Wärme nach vorn zu Ihnen. Stellen Sie einen Becher niemals ohne die 2 Drahtstreben direkt auf den Dosenrand, da die Flammen sonst ersticken.",
+      "svgFileName": "pr21-step-04.svg",
+      "svgLabels": [
+        "ABB. 04 // ZÜNDUNG, FOLIENREFLEKTOR & DRAHT-TOPFAUFLAGE",
+        "Rauchfreie 3fach-Flamme (konstant 2-3cm Höhe)",
+        "Gebogener Folienreflektor lenkt 90% Wärme nach vorn",
+        "2 abisolierte Drahtstreben sichern Luftspalt unterm Topf",
+        "[KERN] 72h Raumwärme, Wassererhitzung & 3h-Lüftung"
+      ],
+      "deepDive": {
+        "badge": "WÄRMEREFLEKTOR",
+        "title": "Infrarot-Reflexion von Metallfolie & Konvektive Heizleistung des 3fach-Dochts",
+        "text": "Während eine einzelne Kerze nur ca. 30-40W Wärme liefert, erhitzen 3 gebündelte Dochte die Luftsäule zwischen den Flammen und erzeugen **120-150W konstante Heizleistung**. Zusammen mit dem gebogenen Metallfolienreflektor (**>90% Infrarot-Reflexion**) steigt die Temperatur in kleinen Räumen oder Zimmerzelten um **4-6°C**, und 300ml Wasser im Metallbecher werden in 15 Minuten heiß.",
+        "fieldSpecs": [
+          {
+            "name": "Brennender 3fach-Docht-Dosenheizer, Folienreflektor & Drahtauflage",
+            "scientificName": "Triple-Wick Oil Heater with Foil Reflector & Wire Trivet",
+            "categoryTag": "Gerichtete Strahlungswärme / Notfall-Wassererwärmung",
+            "imageFileName": "id-burning-can-heater-foil-reflector.jpg",
+            "hudCode": "FIG. HEAT-21D // MACRO OPTIC",
+            "hudStatus": "SMOKELESS RADIANT HEAT: VERIFIED",
+            "traits": [
+              {
+                "label": "FLAMME/BRAND",
+                "value": "**3 helle orange-blaue Flammen**, die gleichmäßig ohne schwarzen Ruß oder beißenden Geruch brennen."
+              },
+              {
+                "label": "REFLEKT/WAND",
+                "value": "Eine **gebogene mehrlagige Folienwand** hinter der Dose bündelt die Wärmestrahlung nach vorn."
+              },
+              {
+                "label": "ROST/DRAHT",
+                "value": "**2 abisolierte Metalldrähte** über dem Dosenrand halten den Luftstrom frei und tragen einen Metallbecher."
+              }
+            ],
+            "fieldUse": "Hände- und Körperwärmer bei Winter-Blackout, Trinkwasser- und Essenserwärmung, Notlicht"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Niemals Benzin, Spiritus oder Verdünner statt Speiseöl einfüllen, brennendes Öl nie mit Wasser löschen und keine Kunstfaser-Dochte nutzen",
+    "description": "Das Einfüllen leichtflüchtiger Brennstoffe wie Benzin, Brennspiritus, Aceton oder Farbverdünner in eine offene Dose füllt den Raum mit explosiven Dämpfen, die beim Anzünden verpuffen (nutzen Sie bei vorhandenen Gaskochern oder Petroleumheizern ausschließlich deren Originalbrennstoff im jeweiligen Gerät). Verwenden Sie niemals Polyester- oder Nylonstoff als Docht, da schmelzende Kunstfasern tödliche Dioxingase freisetzen (tragen Sie bei Rauchflucht eine [Aktivkohle-Rauchschutzmaske](/protocol-15.html)); nutzen Sie nur Toilettenpapier oder 100% Baumwolle.",
+    "consequence": "Wasser in brennendes Öl zu schütten führt zu einer schlagartigen Fettexplosion durch verdampfendes Wasser. Zum Löschen die Dochte auspusten oder einen Keramikteller bzw. ein feuchtes Tuch von oben auflegen, um den Sauerstoff abzuschneiden."
+  },
+  "faqs": [
+    {
+      "question": "Kann ich einen Papierdocht direkt in eine ungeöffnete Thunfischdose stecken und das darin enthaltene Öl verbrennen, ohne den Fisch vorher herauszunehmen?",
+      "causeDiagnostic": "Das Öl in einer normalen Thunfischdose ist Soja- oder Rapsöl und brennt gut, aber **Wasser aus dem Thunfischfleisch** am Docht kann Funken sprühen lassen oder die Flamme löschen.",
+      "resolution": "Wenn Sie den Deckel leicht öffnen und einen gedrehten Papierdocht mittig in das Öl stecken, verbrennt nur das Öl, während der Thunfisch unversehrt bleibt und **2-3 Stunden Notwärme** liefert. Nach dem Löschen kann der warmgewordene Thunfisch direkt als Notmahlzeit gegessen werden (keine Thunfischdosen in eigenem Saft oder Chilisauce verwenden, da der hohe Wasseranteil das Brennen verhindert)."
+    },
+    {
+      "question": "Was tun, wenn der Docht plötzlich schwarzen Ruß bildet oder die Flamme zu klein wird?",
+      "causeDiagnostic": "Ragt die Dochtspitze **mehr als ein Fingerglied (1,5cm)** über die Folie hinaus, entsteht durch unverbranntes Öl schwarzer Ruß; ist das Papier zu locker gedreht und sinkt ins Öl ein, schrumpft die Flamme.",
+      "resolution": "Korrigieren Sie die Folienbrücke mit Essstäbchen oder einer Pinzette so, dass die **freie Dochtspitze unter einem halben Fingerglied (0,8-1cm)** bleibt – die Flamme brennt sofort wieder sauber und rußfrei. Für starkes Kochen im Freien oder Unterkunftsbeheizung kombinieren Sie dies mit dem [Doppeldosen-Holzgas-Kocher](/protocol-12.html) oder dem [Lehm-Wärmespeicherofen](/protocol-06.html)."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Strom und Gas im eiskalten Winter ausgefallen? Bauen Sie mit einer Thunfischdose und Speiseöl eine 72-Stunden-Innenheizung! [5-35s Body] Wenn Gaskartuschen und Kerzen leer sind, füllen Sie 1cm Kies als Hitzeschutz in eine saubere Thunfischdose. Drehen Sie 3 feste Toilettenpapier-Dochte und stellen Sie diese mit einer Folienbrücke mittig auf. Zu 4/5 mit Speiseöl füllen, Spitzen beträufeln, anzünden und einen Folienreflektor dahinterstellen – für rauchfreie Wärme und heißes Wasser! [35-45s Warning & Outro] Niemals Benzin oder Wasser nutzen – mit einem Teller ersticken! Jetzt offline speichern.",
+  "outcome": {
+    "title": "Fertige 3fach-Docht-Thunfischdosen-Speiseölheizung & Folien-Wärmereflektor-System",
+    "badge": "FINAL SPEC // 72-HOUR BLACKOUT OIL WICK HEATER",
+    "description": "Kombiniert einen 1cm Kies-Bodenhitzeschutz, 80% Füllung mit >300°C-Speiseöl, eine 3-Docht-Folienbrücke, eine hintere Folien-Reflektorwand und eine Draht-Topfauflage für 72 Stunden rauchfreie, explosionssichere Innenwärme und heißes Wasser bei Blackouts.",
+    "svgFileName": "pr21-outcome.svg",
+    "svgLabels": [
+      "PR-21 ERGEBNIS // 72-STD. THUNFISCHDOSEN-SPEISEÖLHEIZER",
+      "STUFE 01: DOSE & KIESPUFFER",
+      "1cm Kies-Bodenhitzeschild",
+      "STUFE 02: 3X DOCHT & FOLIE",
+      "3 Papierdochte & Folienbrücke",
+      "STUFE 03: 80% SPEISEÖL",
+      "4/5 Ölfüllung & 72h Brenndauer",
+      "STUFE 04: REFLEKTOR & TOPF",
+      "Folienreflektor & Drahtrost",
+      "PRAXISGEPRÜFT // RAUCHFREIE INNENHEIZUNG & WARMWASSER"
+    ]
+  },
+  "contentHash": "09e4c955a5075ef8",
+  "createdAt": "2026-11-02T06:35:00.000Z",
+  "updatedAt": "2026-11-02T06:41:48.546Z"
+}

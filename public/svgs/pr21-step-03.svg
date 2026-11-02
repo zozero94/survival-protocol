@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <pattern id="grid21s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#18202c" stroke-width="0.7"/>
+    </pattern>
+    <linearGradient id="oilGrad21s3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.88"/>
+      <stop offset="50%" stop-color="#d97706" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="soakedWick21s3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow21s3" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <marker id="arrGold21s3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrGreen21s3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="400" fill="#090c10"/>
+  <rect x="10" y="10" width="380" height="380" fill="url(#grid21s3)" stroke="#263244" stroke-width="1"/>
+
+  <!-- Top Header Banner -->
+  <rect x="18" y="16" width="364" height="24" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+
+  <!-- Label 3 Callout Box (Top: Priming Wick Tips with 3-4 Oil Drops) -->
+  <rect x="24" y="48" width="352" height="24" rx="3" fill="#1c1917" stroke="#fbbf24" stroke-width="1"/>
+
+  <!-- Spoon Tip Dripping Golden Oil Drops Onto Wick Tips -->
+  <g filter="url(#shadow21s3)">
+    <path d="M 275 84 C 245 84 228 96 210 104 C 228 110 250 106 278 96 Z" fill="#94a3b8" stroke="#e2e8f0" stroke-width="1.2"/>
+    <!-- Falling Golden Oil Droplets -->
+    <path d="M 200 108 C 196 115 196 121 200 123 C 204 121 204 115 200 108 Z" fill="#fbbf24" stroke="#fef08a" stroke-width="0.8"/>
+    <path d="M 155 112 C 152 118 152 123 155 125 C 158 123 158 118 155 112 Z" fill="#fbbf24" stroke="#fef08a" stroke-width="0.8"/>
+    <path d="M 245 112 C 242 118 242 123 245 125 C 248 123 248 118 245 112 Z" fill="#fbbf24" stroke="#fef08a" stroke-width="0.8"/>
+  </g>
+
+  <!-- 3D Tuna Can Filled to 80% Height with Cooking Oil -->
+  <g filter="url(#shadow21s3)">
+    <!-- Can Shell -->
+    <path d="M 88 156 L 88 258 A 112 22 0 0 0 312 258 L 312 156 Z" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+
+    <!-- Bottom Pebble Buffer Layer -->
+    <path d="M 92 236 A 108 18 0 0 0 308 236 L 308 256 A 108 20 0 0 1 92 256 Z" fill="#57534e" stroke="#a8a29e" stroke-width="1"/>
+
+    <!-- Golden Cooking Oil Reservoir (80% Fill Level = y=174, 1cm below rim y=156) -->
+    <path d="M 90 174 A 110 20 0 0 0 310 174 L 310 238 A 110 20 0 0 1 90 238 Z" fill="url(#oilGrad21s3)" stroke="#f59e0b" stroke-width="1.2"/>
+    <ellipse cx="200" cy="174" rx="110" ry="20" fill="#fbbf24" fill-opacity="0.45" stroke="#fde68a" stroke-width="1.2"/>
+
+    <!-- Upward Capillary Oil Absorption Arrows Along Wicks -->
+    <rect x="150" y="164" width="10" height="72" rx="4" fill="url(#soakedWick21s3)" stroke="#b45309" stroke-width="1"/>
+    <rect x="195" y="164" width="10" height="74" rx="4" fill="url(#soakedWick21s3)" stroke="#b45309" stroke-width="1"/>
+    <rect x="240" y="164" width="10" height="72" rx="4" fill="url(#soakedWick21s3)" stroke="#b45309" stroke-width="1"/>
+
+    <path d="M 142 224 L 142 182" stroke="#fef08a" stroke-width="1.4" marker-end="url(#arrGold21s3)"/>
+    <path d="M 187 224 L 187 182" stroke="#fef08a" stroke-width="1.4" marker-end="url(#arrGold21s3)"/>
+    <path d="M 258 224 L 258 182" stroke="#fef08a" stroke-width="1.4" marker-end="url(#arrGold21s3)"/>
+
+    <!-- Foil Bridge & Saturated Yellow Wick Tips -->
+    <path d="M 78 160 L 86 148 L 314 148 L 322 160 L 312 166 L 88 166 Z" fill="#cbd5e1" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="146" y="144" width="18" height="20" rx="2" fill="#94a3b8" stroke="#f8fafc" stroke-width="1"/>
+    <rect x="191" y="144" width="18" height="20" rx="2" fill="#94a3b8" stroke="#f8fafc" stroke-width="1"/>
+    <rect x="236" y="144" width="18" height="20" rx="2" fill="#94a3b8" stroke="#f8fafc" stroke-width="1"/>
+
+    <!-- Saturated Golden Wick Tips -->
+    <rect x="150" y="128" width="10" height="16" rx="3" fill="url(#soakedWick21s3)" stroke="#fef08a" stroke-width="1.2"/>
+    <rect x="195" y="128" width="10" height="16" rx="3" fill="url(#soakedWick21s3)" stroke="#fef08a" stroke-width="1.2"/>
+    <rect x="240" y="128" width="10" height="16" rx="3" fill="url(#soakedWick21s3)" stroke="#fef08a" stroke-width="1.2"/>
+
+    <!-- Top Can Rim -->
+    <ellipse cx="200" cy="156" rx="112" ry="22" fill="none" stroke="#e2e8f0" stroke-width="2.5"/>
+  </g>
+
+  <!-- Label 2 Callout Box (Middle-Bottom: 80% Cooking Oil Fill Level) -->
+  <rect x="24" y="278" width="352" height="24" rx="3" fill="#1c1917" stroke="#f59e0b" stroke-width="1.1"/>
+  <path d="M 118 278 L 128 206" stroke="#f59e0b" stroke-width="1.3" marker-end="url(#arrGold21s3)"/>
+
+  <!-- Label 4 Callout Box (Lower: 5-Min Capillary Soak State) -->
+  <rect x="24" y="312" width="352" height="24" rx="3" fill="#06281e" stroke="#34d399" stroke-width="1.1"/>
+  <path d="M 280 312 L 245 215" stroke="#34d399" stroke-width="1.3" marker-end="url(#arrGreen21s3)"/>
+
+  <!-- Bottom Key Principle Banner -->
+  <rect x="18" y="352" width="364" height="30" rx="3" fill="#111827" stroke="#34d399" stroke-width="1.2"/>
+
+  <!-- 5 SVG TEXT LABELS (1:1 Match with svgLabels) -->
+  <text x="200" y="32" fill="#f8fafc" font-family="monospace" font-size="9.5" font-weight="bold" text-anchor="middle">FIG. 03 // 80% COOKING OIL FILL &amp; WICK SATURATION</text>
+  <text x="200" y="294" fill="#fde68a" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">식용유·폐식용유 4/5 높이 충진 (상단 1cm 여유)</text>
+  <text x="200" y="64" fill="#fef08a" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">심지 꼭대기에 마중 기름 3~4방울 직접 적시기</text>
+  <text x="200" y="328" fill="#a7f3d0" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">5분 대기 후 심지 전체가 노란빛으로 젖은 상태</text>
+  <text x="200" y="371" fill="#34d399" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">[핵심] 인화점 300℃ 식용유로 폭발 위험 0% 안전 연료 완성</text>
+</svg>

@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-21",
+  "category": "SHELTER",
+  "title": "Cómo Hacer una Estufa Interior de 72 Horas con Lata de Atún, Aceite de Cocina y Papel Higiénico",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[CALEFACCIÓN EN APAGÓN & FUENTE TÉRMICA DE 72H]",
+  "summary": "Si en casa ya dispone de equipos comerciales como hornillos de gas butano, estufas portátiles, velas de parafina o pastillas de combustible sólido, utilícelos siempre primero por ser la opción más segura y rápida. Sin embargo, cuando un apagón invernal o corte de gas se prolonga y se agotan todas las bombonas y baterías, quemar leña en interiores provoca asfixia mortal por humo y monóxido de carbono (para cocción exterior de alta potencia use la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html)). Al colocar una capa aislante de gravilla en una lata vacía de atún, sostener 3 mechas de papel higiénico retorcido con un puente de papel metálico y llenarla con aceite vegetal de cocina, obtendrá un calefactor interior sin hollín que mantiene el calor y calienta agua durante 8 a 12 horas por carga (más de 72 horas con una botella de aceite).",
+  "timeRequired": "15 min (Limpieza y capa aislante 3m + Mechas y clip metálico 5m + Empapado en aceite 5m + Reflector 2m)",
+  "successRate": "99% (Usando aceite vegetal y manteniendo la punta expuesta de la mecha bajo 1cm)",
+  "difficulty": "Fácil (Sin cuchillos, fabricado con artículos cotidianos de cocina)",
+  "outputPerHour": "8-10 horas de calor continuo por lata (120ml) / 72+ horas por botella de aceite (900ml)",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Lata Vacía de Atún o Conserva de Acero y un Puñado de Gravilla o Arena Gruesa",
+      "desc": "Una lata baja y ancha de acero estañado (del ancho de la palma y dos falanges de alto) empleada cuando no quedan estufas de gas ni combustibles sólidos comerciales. Extienda un puñado de tierra de maceta, gravilla o monedas en el fondo para bloquear el calor hacia el suelo o la mesa."
+    },
+    {
+      "id": "mat-02",
+      "name": "Aceite Vegetal de Cocina (Soja, Canola, Oliva o Aceite Usado Colado) y 3 Cuadros de Papel Higiénico",
+      "desc": "Aceite vegetal seguro que sustituye a las velas o el queroseno agotados. El aceite de cocina tiene un punto de inflamación superior a 300°C, por lo que no se incendia aunque se derrame, y 2-3 cuadros de papel higiénico (o tiras de camiseta 100% algodón) bien retorcidos arden limpiamente sin hollín negro."
+    },
+    {
+      "id": "mat-03",
+      "name": "Dos Palmos de Papel Metálico de Cocina y 2 Alambres Gruesos Pelados (o Percha Metálica)",
+      "desc": "Un palmo de lámina metálica se pliega como puente en cruz para sujetar las 3 mechas erguidas en el aceite, y el otro palmo se coloca detrás de la lata para reflejar el calor hacia adelante. Dos alambres gruesos (si usa cable eléctrico recuperado, pele toda la funda con una [Hoja de Piedra Afilada](/protocol-04.html) para evitar gases tóxicos) sirven de soporte sobre el borde para calentar agua en una taza metálica."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Retirar la Etiqueta de Papel de la Lata y Extender Media Falange (1cm) de Gravilla en el Fondo",
+      "description": "1. **Verificar Equipos Comerciales y Preparar la Lata**: Compruebe primero si quedan cartuchos de butano o velas en casa; si se han agotado, tome una lata vacía de atún o conserva. Retire por completo la etiqueta de papel exterior y los restos de pegamento para que no se quemen ni emitan humo tóxico, y séquela bien.\n2. **Aplanar el Borde Cortante**: Presione el borde interior cortante de la lata abierta con el dorso de una cuchara o una piedra lisa para no cortarse los dedos.\n3. **Extender Capa Aislante de Gravilla y Arena**: Cubra el fondo interior de la lata de forma uniforme con gravilla de maceta, arena gruesa o monedas hasta un grosor de **media falange (aprox. 1cm)**.\n4. **Colocar Plato Base Incombustible**: Apoye la lata sobre un plato de cerámica, tapa de olla o losa de piedra plana para aislar doblemente el suelo durante horas de encendido.",
+      "actionNote": "> Importancia del Aislamiento Inferior: Cuando el aceite está por terminarse, el fondo de la lata alcanza casi 200°C. Una capa de 1cm de gravilla o arena en el fondo bloquea el calor hacia abajo y al mismo tiempo sujeta con firmeza la base de las mechas.",
+      "svgFileName": "pr21-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // STEEL TIN CAN PREP & BOTTOM HEAT BUFFER LAYER",
+        "Lata Baja de Acero sin Etiqueta de Papel Exterior",
+        "Capa Aislante Inferior de Gravilla y Arena (1cm)",
+        "Base Protectora de Cerámica o Losa de Piedra",
+        "[CLAVE] Limpieza de Lata y Doble Aislamiento Inferior"
+      ],
+      "deepDive": {
+        "badge": "URBAN BLACKOUT HEAT",
+        "title": "Riesgo de Asfixia por Leña/Carbón en Interiores vs. Seguridad Térmica del Acero Estañado",
+        "text": "Quemar leña o [Carbón de Madera Dura](/protocol-09.html) dentro de un apartamento cerrado llena rápidamente la estancia de monóxido de carbono inodoro, causando intoxicación mortal. En cambio, las latas de acero estañado funden por encima de **1,500°C**, y al cubrir el fondo con **1cm de gravilla** quemando solo mechas de aceite vegetal, ni la lata ni su recubrimiento se sobrecalientan.",
+        "fieldSpecs": [
+          {
+            "name": "Lata de Atún Limpia y Capa Aislante de Gravilla de 1cm",
+            "scientificName": "Clean Tinplate Steel Can & 1cm Pebble Thermal Buffer",
+            "categoryTag": "Escudo Térmico Inferior / Depósito de Acero",
+            "imageFileName": "id-clean-tuna-tin-can.jpg",
+            "hudCode": "FIG. HEAT-21A // MACRO OPTIC",
+            "hudStatus": "BASE THERMAL SHIELD: VERIFIED",
+            "traits": [
+              {
+                "label": "ENVASE/CAN",
+                "value": "**Lata baja de acero corrugado de 8-10cm de diámetro y 4-5cm de alto** sin etiquetas de papel."
+              },
+              {
+                "label": "AISLANTE/BUFFER",
+                "value": "Una **capa de media falange (1cm) de gravilla y arena gruesa (o monedas)** evita el sobrecalentamiento."
+              },
+              {
+                "label": "BASE/SHIELD",
+                "value": "Un **plato cerámico o piedra plana** debajo bloquea la conducción térmica hacia el piso."
+              }
+            ],
+            "fieldUse": "Depósito de estufa interior en apagones, sustituto de velas y combustible sólido"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Retorcer Fuerte 3 Mechas de Papel Higiénico y Fijarlas en un Puente de Lámina Metálica",
+      "description": "1. **Retorcer el Papel en Diagonal**: Corte 1 cuadro de papel higiénico, dóblelo por la mitad y retuérzalo con fuerza desde una esquina con las yemas de los dedos como exprimiendo ropa hasta formar **3 mechas firmes como cordeles, de medio meñique de grosor (4-5mm) y dos falanges de largo (5cm)** (también sirven tiras de camiseta 100% algodón).\n2. **Doblar el Puente de Lámina Metálica**: Corte un trozo de papel metálico de cocina del **tamaño de la palma** y dóblelo 4 veces a lo largo para crear una **tira firme del ancho de un dedo**.\n3. **Envolver y Espaciar las 3 Mechas**: Coloque las 3 mechas en el centro de la tira metálica separadas por el ancho de un dedo, apriete la lámina alrededor de su cintura y deje sobresalir por arriba solo **media falange (0.8-1cm)** de punta.\n4. **Fijar en el Centro de la Lata**: Apoye los extremos del puente metálico sobre el borde de la lata o clávelos en la gravilla del fondo para mantener las 3 mechas verticales en el centro.",
+      "actionNote": "> Ajuste de Grosor y Altura de la Mecha: Si el papel queda flojo, el aceite arde demasiado rápido y genera hollín negro. Retuérzalo hasta que se sienta duro como una ramita seca y mantenga la punta expuesta bajo media falange (menos de 1cm) para una llama limpia y duradera.",
+      "svgFileName": "pr21-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWISTED TISSUE WICKS & FOIL BRIDGE CLIP",
+        "3 Mechas de Papel Retorcido Firme (4-5mm Diámetro)",
+        "Puntas Expuestas Sobre el Clip (Mantener en 0.8-1cm)",
+        "Puente Fijador en Cruz de Lámina Metálica de 4 Pliegues",
+        "[CLAVE] Soporte Antivuelco y Combustión Limpia sin Hollín"
+      ],
+      "deepDive": {
+        "badge": "CAPILLARY WICK",
+        "title": "Succión Capilar en Fibras de Celulosa y Control de Llama con Collar Metálico",
+        "text": "Los microcanales dentro del papel higiénico o algodón fuertemente retorcido hacen subir el aceite vegetal pesado a velocidad constante por **acción capilar**. El collar de lámina metálica actúa como **cortafuegos**, impidiendo que la llama baje por la mecha y asegurando que el aceite se vaporice limpiamente solo en los **0.8-1cm de punta expuesta**.",
+        "fieldSpecs": [
+          {
+            "name": "3 Mechas de Papel Retorcido y Puente de Lámina Metálica",
+            "scientificName": "Tightly Twisted Cellulose Wicks & Multi-Fold Foil Clip",
+            "categoryTag": "Succión Capilar / Control de Llama sin Humo",
+            "imageFileName": "id-twisted-tissue-foil-wick.jpg",
+            "hudCode": "FIG. HEAT-21B // MACRO OPTIC",
+            "hudStatus": "WICK DENSITY: HIGH-TORSION",
+            "traits": [
+              {
+                "label": "MECHA/WICK",
+                "value": "**3 mechas blancas firmes como cordel (4-5mm)** hechas retorciendo papel higiénico con alta tensión."
+              },
+              {
+                "label": "PUNTA/TIP",
+                "value": "Mantener la punta **0.8-1cm sobre el collar metálico** conserva una llama brillante sin humo negro."
+              },
+              {
+                "label": "PUENTE/CLIP",
+                "value": "Un **puente metálico de 4 pliegues** cruza la lata para sostener las mechas sin que se hundan."
+              }
+            ],
+            "fieldUse": "Mechas para estufa de aceite de cocina, mechas para lámpara de grasa animal"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Llenar 4/5 de la Lata con Aceite de Cocina y Empapar las Mechas durante 5 Minutos",
+      "description": "1. **Verter Aceite hasta 4/5 de Altura**: Vierta lentamente aceite de soja, canola, maíz o aceite usado colado hasta **media falange (1cm) por debajo del borde superior (80% de su altura)**.\n2. **Cebar las Puntas con Gotas de Aceite**: Si enciende la mecha seca de inmediato, el papel se quemará y se apagará. Con la punta de una cuchara deje caer **3-4 gotas de aceite directamente sobre la cabeza de las 3 mechas**.\n3. **Esperar 5 Minutos de Absorción**: Espere **5 minutos** hasta que las mechas blancas absorban el aceite por completo y adquieran un **color amarillo translúcido brillante**.\n4. **Limpiar Gotas Exteriores**: Limpie con papel seco cualquier gota derramada por fuera de la lata o en el plato base para evitar olores.",
+      "actionNote": "> ¿Por Qué es Seguro el Aceite de Cocina?: La gasolina, el alcohol y el queroseno emiten vapores inflamables a temperatura ambiente y pueden explotar en interiores. El aceite vegetal solo arde por encima de 300°C, por lo que solo se quema la punta de la mecha y el aceite líquido nunca se inflama.",
+      "svgFileName": "pr21-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 80% COOKING OIL FILL & WICK SATURATION",
+        "Aceite de Cocina a 4/5 de Altura (1cm Libre Arriba)",
+        "Cebar las Puntas con 3-4 Gotas Directas de Aceite",
+        "Mechas Saturadas en Amarillo Translúcido tras 5 Min",
+        "[CLAVE] Punto de Inflamación >300C con 0% Riesgo Explosivo"
+      ],
+      "deepDive": {
+        "badge": "HIGH FLASH POINT",
+        "title": "Punto de Inflamación de 300°C de los Triglicéridos Vegetales y Seguridad Antideflagrante",
+        "text": "El aceite vegetal común tiene un punto de inflamación de **310-330°C**, sin emitir vapores inflamables a temperatura ambiente a diferencia de la gasolina (-43°C) o el queroseno (40°C). Incluso si cae una cerilla encendida dentro del aceite, se apaga al sumergirse. Solo la fina película de aceite que sube a la punta caliente se vaporiza y arde.",
+        "fieldSpecs": [
+          {
+            "name": "Lata Llena al 80% de Aceite y Triple Mecha Saturada",
+            "scientificName": "80% Filled Vegetable Oil Reservoir & Saturated Wicks",
+            "categoryTag": "Combustible Seguro >300C / 8-10 Horas de Calor",
+            "imageFileName": "id-cooking-oil-soaked-wicks.jpg",
+            "hudCode": "FIG. HEAT-21C // MACRO OPTIC",
+            "hudStatus": "FLASH POINT >300C: SAFE",
+            "traits": [
+              {
+                "label": "NIVEL/LEVEL",
+                "value": "Aceite vegetal dorado llenado hasta **1cm debajo del borde superior (80% de capacidad)**."
+              },
+              {
+                "label": "EMPAPADO/SOAKED",
+                "value": "Puntas de mecha saturadas que cambian de blanco a **amarillo translúcido brillante**."
+              },
+              {
+                "label": "ALT/FUEL",
+                "value": "Funciona con aceite nuevo, caducado, **aceite de fritura colado o el propio aceite de la lata de atún**."
+              }
+            ],
+            "fieldUse": "Combustible de calefacción para 72h de apagón, iluminación y calor interior sin humo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Encender las Mechas, Colocar la Pared Reflectora Metálica y Calentar Agua sobre Alambres",
+      "description": "1. **Encender la Triple Mecha**: Acerque una llama (o brasa del [Arco de Fricción](/protocol-02.html) si no hay cerillas) a las 3 puntas empapadas durante **3-4 segundos**. En 1 minuto se formarán **3 llamas naranjas brillantes y estables de una falange de altura (2-3cm)** sin humo.\n2. **Levantar Pared Reflectora en Zigzag**: Pliegue un palmo de lámina metálica en acordeón con la cara brillante hacia adelante y colóquela en semicírculo **dos falanges (3-4cm) detrás de la lata**.\n3. **Colocar Soporte de Alambre Pelado**: Apoye 2 alambres gruesos sin funda o varillas de percha sobre el borde superior de la lata y ponga encima una taza metálica o cazo para calentar agua potable (filtrada con el [Filtro de Carbón y Arena](/protocol-01.html)) y conservas.\n4. **Ventilar 2cm Cada 3 Horas**: Aunque no emita humo, las llamas consumen oxígeno interior; **abra la ventana una falange (2cm) cada 3 horas** para renovar el aire.",
+      "actionNote": "> Efecto del Reflector y el Soporte de Alambre: La pared reflectora detrás de la lata dirige hacia adelante el 90% del calor radiante, sintiéndose el abrigo a un palmo de distancia. Nunca apoye una taza directamente sobre la lata sin los 2 alambres o ahogará las llamas por falta de aire.",
+      "svgFileName": "pr21-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // IGNITION, FOIL HEAT REFLECTOR & WIRE POT STAND",
+        "Triple Llama Limpia sin Hollín (Altura Estable 2-3cm)",
+        "Reflector Metálico que Dirige el 90% del Calor al Frente",
+        "2 Barras de Alambre Superior para Paso de Oxígeno",
+        "[CLAVE] Calor Interior 72h, Agua Caliente y Ventilación 3h"
+      ],
+      "deepDive": {
+        "badge": "RADIANT REFLECTOR",
+        "title": "Reflectividad Infrarroja de la Lámina Metálica y Potencia Térmica de Triple Mecha",
+        "text": "Una sola mecha genera unos 30-40W, pero agrupar 3 mechas calienta la columna de aire intermedia logrando **120-150W de potencia térmica**. Al sumar una pantalla reflectora metálica (**>90% de reflexión infrarroja**), la temperatura percibida en una tienda o habitación pequeña sube **4-6°C** y calienta 300ml de agua en 15 minutos.",
+        "fieldSpecs": [
+          {
+            "name": "Estufa de 3 Mechas Encendida, Reflector y Soporte de Alambre",
+            "scientificName": "Triple-Wick Oil Heater with Foil Reflector & Wire Trivet",
+            "categoryTag": "Calor Radiante Direccional / Calentamiento de Agua",
+            "imageFileName": "id-burning-can-heater-foil-reflector.jpg",
+            "hudCode": "FIG. HEAT-21D // MACRO OPTIC",
+            "hudStatus": "SMOKELESS RADIANT HEAT: VERIFIED",
+            "traits": [
+              {
+                "label": "LLAMA/FLAME",
+                "value": "**3 llamas naranjas y azules** que arden de forma constante sin hollín ni olor acre."
+              },
+              {
+                "label": "REFLECTOR/WALL",
+                "value": "Una **pared metálica plegada** detrás de la lata concentra el calor hacia las personas."
+              },
+              {
+                "label": "SOPORTE/TRIVET",
+                "value": "**2 alambres pelados** sobre el borde mantienen el paso de aire y sostienen el vaso metálico."
+              }
+            ],
+            "fieldUse": "Abrigo de manos y cuerpo en apagones invernales, calentar agua y raciones, luz nocturna"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "PELIGRO // Prohibido Verter Gasolina, Alcohol o Disolvente, Prohibido Echar Agua al Aceite Ardiendo y Prohibido Usar Mechas Sintéticas",
+    "description": "Verter líquidos volátiles como gasolina, alcohol, acetona o disolvente de pintura en una lata abierta llena la habitación de vapor explosivo que detona al encender (si dispone de un hornillo de butano o estufa de queroseno comercial, úselo únicamente en su aparato original). Tampoco use telas sintéticas como poliéster o nailon como mecha, pues al fundirse liberan dioxinas letales (ante humo de incendio use la [Máscara Antigás de Carbón Activo](/protocol-15.html)); use solo papel higiénico o algodón 100%.",
+    "consequence": "Echar agua sobre aceite caliente provoca una explosión instantánea de vapor que proyecta aceite en llamas por toda la sala, causando quemaduras graves. Para apagarlo, sople las mechas o cubra la lata con un plato cerámico o paño húmedo para cortar el oxígeno."
+  },
+  "faqs": [
+    {
+      "question": "¿Puedo clavar una mecha de papel directamente en una lata de atún sin vaciar el pescado y quemar el aceite que trae?",
+      "causeDiagnostic": "El aceite dentro de una lata de atún común es aceite vegetal de soja o girasol y arde muy bien, pero la **humedad de la carne del atún** puede hacer chisporrotear o apagar la mecha si la toca.",
+      "resolution": "Si abre ligeramente la tapa e inserta una mecha de papel higiénico en el aceite central, solo se quema el aceite sin quemar el atún, dando **2-3 horas de calefacción**. Al apagarlo, podrá comer el atún caliente como ración de emergencia (no use latas de atún al natural en agua ni en salsa picante, pues el agua impide el encendido)."
+    },
+    {
+      "question": "¿Cómo regulo la mecha si empieza a soltar un poco de hollín negro o si la llama se vuelve muy pequeña?",
+      "causeDiagnostic": "Si la punta de la mecha sobre el puente metálico mide **más de una falange (1.5cm)**, el exceso de aceite sin quemar genera hollín negro; si el papel se enrolló muy flojo y se hunde en el aceite, la llama se achica.",
+      "resolution": "Con palillos o pinzas ajuste el clip metálico para que **la punta expuesta mida menos de media falange (0.8-1cm)**, eliminando al instante el humo negro. Si necesita hervir agua rápido en exteriores o calentar un refugio de campo, combine esto con la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o el [Hogar Térmico de Arcilla](/protocol-06.html)."
+    }
+  ],
+  "shortsScript": "[0-5s Gancho] ¿Sin luz ni gas en pleno invierno? ¡Haz una estufa interior para 72 horas con una lata de atún y aceite de cocina! [5-35s Cuerpo] Cuando se acaben el butano o las velas, pon 1cm de gravilla en una lata limpia para aislar el fondo. Retuerce 3 mechas de papel higiénico y sujétalas en el centro con un puente de papel metálico. Llena 4/5 con aceite vegetal, empapa las puntas, enciende y pon un reflector detrás para tener calor sin humo y calentar agua. [35-45s Aviso y Cierre] ¡Nunca uses gasolina ni agua; apágala con un plato! Guarda este manual offline ahora.",
+  "outcome": {
+    "title": "Estufa de Emergencia de 3 Mechas con Lata de Atún, Aceite de Cocina y Reflector Térmico",
+    "badge": "ESPECIFICACIÓN FINAL // 72-HOUR BLACKOUT OIL WICK HEATER",
+    "description": "Sistema térmico urbano que integra 1cm de gravilla aislante, llenado al 80% con aceite de cocina (>300°C), puente metálico de 3 mechas de papel, pared reflectora trasera y soporte de alambre para brindar 72 horas de calor interior y agua caliente sin humo ni riesgo de explosión.",
+    "svgFileName": "pr21-outcome.svg",
+    "svgLabels": [
+      "PR-21 OUTCOME // 72-HOUR TUNA CAN & COOKING OIL WICK HEATER",
+      "STAGE 01: CAN & PEBBLE BUFFER",
+      "Fondo Aislante de 1cm de Gravilla",
+      "STAGE 02: 3X TISSUE WICK & FOIL",
+      "3 Mechas de Papel y Puente",
+      "STAGE 03: 80% COOKING OIL",
+      "Aceite al 80% y 72h de Calor",
+      "STAGE 04: FOIL REFLECTOR & POT",
+      "Pared Reflectora y Soporte",
+      "FIELD VERIFIED // ZERO-SMOKE INDOOR HEAT & HOT WATER SYSTEM"
+    ]
+  },
+  "contentHash": "09e4c955a5075ef8",
+  "createdAt": "2026-11-02T06:35:00.000Z",
+  "updatedAt": "2026-11-02T06:41:48.546Z"
+}

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <pattern id="grid21s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#18202c" stroke-width="0.7"/>
+    </pattern>
+    <linearGradient id="foilGrad21s2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="35%" stop-color="#cbd5e1"/>
+      <stop offset="70%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="wickGrad21s2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <filter id="shadow21s2" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <marker id="arrSky21s2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrAmber21s2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="400" fill="#090c10"/>
+  <rect x="10" y="10" width="380" height="380" fill="url(#grid21s2)" stroke="#263244" stroke-width="1"/>
+
+  <!-- Top Header Banner -->
+  <rect x="18" y="16" width="364" height="24" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+
+  <!-- Label 2 Callout Box (Top: 3 Twisted Tissue Wicks) -->
+  <rect x="24" y="48" width="352" height="24" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <path d="M 155 72 L 155 128" stroke="#38bdf8" stroke-width="1.3" marker-end="url(#arrSky21s2)"/>
+
+  <!-- Label 3 Callout Box (Upper-Mid: Exposed Wick Tip 0.8~1cm) -->
+  <rect x="24" y="80" width="352" height="24" rx="3" fill="#1c1917" stroke="#f59e0b" stroke-width="1"/>
+  <path d="M 245 104 L 245 132" stroke="#f59e0b" stroke-width="1.3" marker-end="url(#arrAmber21s2)"/>
+
+  <!-- 3D Tuna Can & Multi-Fold Foil Bridge Assembly -->
+  <g filter="url(#shadow21s2)">
+    <!-- Can Body Cutaway -->
+    <path d="M 88 164 L 88 262 A 112 22 0 0 0 312 262 L 312 164 Z" fill="#111827" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Bottom Pebble Buffer -->
+    <path d="M 92 238 A 108 18 0 0 0 308 238 L 308 260 A 108 20 0 0 1 92 260 Z" fill="#57534e" stroke="#a8a29e" stroke-width="1"/>
+    <ellipse cx="200" cy="238" rx="108" ry="18" fill="#44403c" stroke="#a8a29e" stroke-width="0.9"/>
+
+    <!-- Top Can Rim -->
+    <ellipse cx="200" cy="164" rx="112" ry="22" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+
+    <!-- 3 Twisted Tissue Wicks (Left: x=155, Center: x=200, Right: x=245) -->
+    <!-- Lower Submerged Wick Stems Anchored in Pebbles -->
+    <g stroke="#64748b" stroke-width="0.8">
+      <!-- Left Wick Stem -->
+      <rect x="150" y="170" width="10" height="72" rx="4" fill="url(#wickGrad21s2)"/>
+      <path d="M 150 182 L 160 190 M 150 198 L 160 206 M 150 214 L 160 222 M 150 230 L 160 238" stroke="#475569" stroke-width="1.2"/>
+      <!-- Center Wick Stem -->
+      <rect x="195" y="170" width="10" height="74" rx="4" fill="url(#wickGrad21s2)"/>
+      <path d="M 195 182 L 205 190 M 195 198 L 205 206 M 195 214 L 205 222 M 195 230 L 205 238" stroke="#475569" stroke-width="1.2"/>
+      <!-- Right Wick Stem -->
+      <rect x="240" y="170" width="10" height="72" rx="4" fill="url(#wickGrad21s2)"/>
+      <path d="M 240 182 L 250 190 M 240 198 L 250 206 M 240 214 L 250 222 M 240 230 L 250 238" stroke="#475569" stroke-width="1.2"/>
+    </g>
+
+    <!-- 4-Fold Silver Foil Bridge Clip Across Can Rim -->
+    <path d="M 78 168 L 86 154 L 314 154 L 322 168 L 312 174 L 88 174 Z" fill="url(#foilGrad21s2)" stroke="#f8fafc" stroke-width="1.3"/>
+    <!-- Foil Collar Sleeves Crimped Around Each Wick -->
+    <rect x="146" y="148" width="18" height="24" rx="2" fill="url(#foilGrad21s2)" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="191" y="148" width="18" height="24" rx="2" fill="url(#foilGrad21s2)" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="236" y="148" width="18" height="24" rx="2" fill="url(#foilGrad21s2)" stroke="#e2e8f0" stroke-width="1.2"/>
+
+    <!-- Exposed Upper Wick Tips (0.8~1cm height above foil collar) -->
+    <g>
+      <rect x="150" y="132" width="10" height="17" rx="3" fill="url(#wickGrad21s2)" stroke="#f59e0b" stroke-width="1.2"/>
+      <path d="M 150 137 L 160 142 M 150 143 L 160 148" stroke="#64748b" stroke-width="1.1"/>
+
+      <rect x="195" y="132" width="10" height="17" rx="3" fill="url(#wickGrad21s2)" stroke="#f59e0b" stroke-width="1.2"/>
+      <path d="M 195 137 L 205 142 M 195 143 L 205 148" stroke="#64748b" stroke-width="1.1"/>
+
+      <rect x="240" y="132" width="10" height="17" rx="3" fill="url(#wickGrad21s2)" stroke="#f59e0b" stroke-width="1.2"/>
+      <path d="M 240 137 L 250 142 M 240 143 L 250 148" stroke="#64748b" stroke-width="1.1"/>
+    </g>
+
+    <!-- 0.8~1cm Tip Height Gauge Bracket -->
+    <line x1="258" y1="132" x2="276" y2="132" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="258" y1="148" x2="276" y2="148" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="268" y1="132" x2="268" y2="148" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Label 4 Callout Box (Lower: 4-Fold Foil Bridge Clip) -->
+  <rect x="24" y="298" width="352" height="24" rx="3" fill="#0f172a" stroke="#cbd5e1" stroke-width="1.1"/>
+  <path d="M 200 298 L 200 176" stroke="#cbd5e1" stroke-width="1.3" stroke-dasharray="3,2"/>
+  <circle cx="200" cy="176" r="3" fill="#f8fafc"/>
+
+  <!-- Bottom Key Principle Banner -->
+  <rect x="18" y="352" width="364" height="30" rx="3" fill="#111827" stroke="#38bdf8" stroke-width="1.2"/>
+
+  <!-- 5 SVG TEXT LABELS (1:1 Match with svgLabels) -->
+  <text x="200" y="32" fill="#f8fafc" font-family="monospace" font-size="9.5" font-weight="bold" text-anchor="middle">FIG. 02 // TWISTED TISSUE WICKS &amp; FOIL BRIDGE CLIP</text>
+  <text x="200" y="64" fill="#bae6fd" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">단단히 비틀어 꼰 화장지 심지 3개 (직경 4~5mm)</text>
+  <text x="200" y="96" fill="#fde68a" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">호일 위로 노출된 심지 머리 (0.8~1cm 이내 유지)</text>
+  <text x="200" y="314" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">4겹 접은 은박 호일 십자 고정 브릿지</text>
+  <text x="200" y="371" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">[핵심] 심지 쓰러짐 방지 &amp; 그을음 없는 정량 연소 유도</text>
+</svg>

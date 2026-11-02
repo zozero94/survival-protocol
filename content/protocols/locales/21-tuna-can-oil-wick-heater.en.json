@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-21",
+  "category": "SHELTER",
+  "title": "How to Build a 72-Hour Indoor Emergency Heater & Cooker with a Tuna Can, Cooking Oil & Tissue",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[BLACKOUT INDOOR HEATING & 72-HOUR THERMAL SOURCE]",
+  "summary": "If your home already has ready-made gear such as a portable butane stove, camp heater, paraffin candles, or solid fuel tablets, always use those first as the safest and fastest option. However, when a winter blackout or city gas outage drags on and all butane canisters and batteries are depleted, burning wood indoors risks fatal smoke and carbon monoxide suffocation (use the [Twin-Can Wood Gas Stove](/protocol-12.html) for high-heat outdoor cooking). By lining an empty steel tuna can with a pebble thermal buffer, standing 3 tightly twisted tissue wicks in a folded foil bridge clip, and filling it with vegetable cooking oil, you create a smokeless indoor heater that warms a room and heats drinking water for 8 to 12 hours per fill (over 72 hours per bottle of oil).",
+  "timeRequired": "15 mins (Can prep & pebble buffer 3m + Tissue wicks & foil clip 5m + Oil soak 5m + Reflector setup 2m)",
+  "successRate": "99% (When using vegetable oil and keeping exposed wick tip under 1cm / half a finger joint)",
+  "difficulty": "Easy (No knife required, built with everyday kitchen items)",
+  "outputPerHour": "8-10 hours continuous heat per tuna can fill (120ml) / 72+ hours per 900ml oil bottle",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Empty Steel Tuna or Canned Food Tin & A Handful of Small Pebbles or Coarse Sand",
+      "desc": "A wide, low tinplate steel food can (palm width, two finger joints tall) used when ready-made gas heaters or solid fuels are unavailable. Spread a handful of planter soil, small pebbles, or coins across the bottom to block downward heat transfer to floors or tables."
+    },
+    {
+      "id": "mat-02",
+      "name": "Kitchen Vegetable Cooking Oil (Soybean, Canola, Olive, or Strained Used Oil) & 3 Squares of Toilet Tissue",
+      "desc": "Safe plant-based oil that replaces depleted candles or kerosene. Vegetable cooking oil has a flash point above 300°C, meaning it will not catch fire or spread even if spilled, and 2-3 squares of toilet paper (or 100% cotton t-shirt strips / cotton shoelaces) twisted tightly burn cleanly without black soot."
+    },
+    {
+      "id": "mat-03",
+      "name": "Two Handspans of Kitchen Metal Foil & 2 Thick Stripped Metal Wires (or Wire Coat Hanger)",
+      "desc": "One handspan of kitchen foil is folded into a cross-bridge clip that holds the 3 wicks upright inside the oil, while the second handspan stands behind the can to reflect radiant heat forward. Two thick metal wires (if salvaging scrap electrical wire, strip all outer insulation with a [Sharp Stone Blade](/protocol-04.html) to prevent toxic fumes) rest across the rim as a trivet to heat a metal cup of water."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Peel Paper Labels Off the Steel Tin Can and Spread a Half-Finger-Joint Layer of Pebbles on the Bottom",
+      "description": "1. **Check Ready-Made Gear & Prep Can**: First check if any ready-made butane canisters or candles remain; once depleted, take an empty steel tuna or food can. Peel off all outer paper labels and glue residue so they do not char and emit toxic fumes, then wipe dry.\n2. **Flatten Sharp Rim Edges**: Press down any sharp inner metal edges along the opened rim using the back of a spoon or a smooth stone so you do not cut your fingers.\n3. **Spread Pebble & Sand Heat Buffer**: Cover the inside bottom of the can evenly with small pebbles, coarse sand, or metal coins to a thickness of **half a finger joint (about 1cm)**.\n4. **Place on Non-Combustible Base Plate**: Set the prepared tin can on a ceramic dinner plate, pot lid, or flat stone slab to double-insulate the floor surface during multi-hour burning.",
+      "actionNote": "> Why Bottom Insulation Matters: When the cooking oil is nearly consumed, the bottom of the steel can reaches nearly 200°C. A 1cm layer of pebbles or sand inside the bottom blocks downward heat transfer while anchoring the bases of the wicks firmly in place.",
+      "svgFileName": "pr21-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // STEEL TIN CAN PREP & BOTTOM HEAT BUFFER LAYER",
+        "Low Steel Food Can with Outer Paper Label Removed",
+        "1cm Pebble & Coarse Sand Bottom Thermal Buffer",
+        "Ceramic Plate or Stone Slab Under-Base Shield",
+        "[KEY] Salvage Can Prep & Dual Bottom Thermal Insulation"
+      ],
+      "deepDive": {
+        "badge": "URBAN BLACKOUT HEAT",
+        "title": "Indoor Carbon Monoxide Hazard of Wood/Charcoal vs. Thermal Safety of Tinplate Steel Cans",
+        "text": "Burning firewood or [Hardwood Charcoal](/protocol-09.html) inside a sealed apartment rapidly fills the room with odorless carbon monoxide, causing fatal poisoning. In contrast, tinplate steel cans have a melting point above **1,500°C**, and lining the bottom with a **1cm pebble buffer** while burning pure vegetable oil wicks prevents the can body or liner from overheating, delivering clean indoor warmth.",
+        "fieldSpecs": [
+          {
+            "name": "Cleaned Steel Tuna Can & 1cm Pebble Buffer",
+            "scientificName": "Clean Tinplate Steel Can & 1cm Pebble Thermal Buffer",
+            "categoryTag": "Bottom Heat Shield / High-Temp Steel Reservoir",
+            "imageFileName": "id-clean-tuna-tin-can.jpg",
+            "hudCode": "FIG. HEAT-21A // MACRO OPTIC",
+            "hudStatus": "BASE THERMAL SHIELD: VERIFIED",
+            "traits": [
+              {
+                "label": "VESSEL/CAN",
+                "value": "A low **8-10cm diameter, 4-5cm tall corrugated steel tuna can** with all paper labels stripped clean."
+              },
+              {
+                "label": "BUFFER/SAND",
+                "value": "A **half-finger-joint (1cm) layer of small pebbles and coarse sand (or coins)** prevents bottom overheating."
+              },
+              {
+                "label": "SHIELD/BASE",
+                "value": "A **ceramic plate or flat stone slab** underneath blocks heat conduction into indoor flooring."
+              }
+            ],
+            "fieldUse": "Blackout indoor emergency heater reservoir, substitute for solid fuel and candles"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Tightly Twist 3 Pinky-Thick Tissue Wicks and Mount Them in a Folded Foil Bridge Clip",
+      "description": "1. **Twist Tissue Diagonally**: Tear off 1 square of toilet tissue, fold it in half, and twist it tightly from corner to corner between your fingertips like wringing laundry to form **3 firm cord-like wicks, each half a pinky thick (4-5mm diameter) and two finger joints long (5cm)** (100% cotton t-shirt strips or cotton string also work).\n2. **Fold Silver Foil Support Strip**: Tear a **palm-sized sheet** of kitchen foil and fold it lengthwise 4 times into a **one-finger-joint-wide rigid foil strip**.\n3. **Wrap & Space 3 Wicks**: Place the 3 twisted tissue wicks one finger joint apart along the center of the foil strip, crimping the foil tightly around their waists so only **half a finger joint (0.8-1cm)** of each wick tip protrudes above the foil.\n4. **Seat in Center of Can**: Rest the two ends of the foil bridge across the can rim or press them into the bottom pebble layer so all 3 wicks stand vertically in the center.",
+      "actionNote": "> Controlling Wick Tightness & Tip Height: Loosely rolled tissue burns too fast and produces black soot. Twist the tissue until it feels as firm as a dry twig between your fingers, and keep the exposed wick head above the foil under half a finger joint (0.8-1cm) for a steady, soot-free flame.",
+      "svgFileName": "pr21-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWISTED TISSUE WICKS & FOIL BRIDGE CLIP",
+        "3 Tightly Twisted Tissue Wicks (4-5mm Diameter)",
+        "Exposed Wick Tips Above Foil (Keep Within 0.8-1cm)",
+        "4-Layer Folded Metal Foil Cross-Bridge Clip",
+        "[KEY] Anti-Tip Wick Support & Soot-Free Metering"
+      ],
+      "deepDive": {
+        "badge": "CAPILLARY WICK",
+        "title": "Capillary Oil Draw in Twisted Cellulose Fibers & Foil Flame Arrestor Mechanics",
+        "text": "The dense micro-channels inside tightly twisted cellulose tissue or cotton fibers draw heavy liquid cooking oil upward at a steady rate via **capillary action**. The tightly crimped metal foil collar acts as a **flame arrestor**, preventing the flame from creeping down the wick and ensuring oil vaporizes cleanly only at the **0.8-1cm exposed tip**.",
+        "fieldSpecs": [
+          {
+            "name": "3 Tightly Twisted Tissue Wicks & Foil Bridge Clip",
+            "scientificName": "Tightly Twisted Cellulose Wicks & Multi-Fold Foil Clip",
+            "categoryTag": "Capillary Fuel Draw / Smokeless Flame Control",
+            "imageFileName": "id-twisted-tissue-foil-wick.jpg",
+            "hudCode": "FIG. HEAT-21B // MACRO OPTIC",
+            "hudStatus": "WICK DENSITY: HIGH-TORSION",
+            "traits": [
+              {
+                "label": "WICK/CORD",
+                "value": "**3 firm white cord-like wicks (4-5mm diameter)** made by twisting toilet tissue squares under high tension."
+              },
+              {
+                "label": "TIP/HEIGHT",
+                "value": "Keeping the tip **0.8-1cm above the foil collar** maintains a bright flame with zero black smoke."
+              },
+              {
+                "label": "CLIP/BRIDGE",
+                "value": "A **4-fold silver foil bridge** spans the can rim to hold the wicks upright without drowning in oil."
+              }
+            ],
+            "fieldUse": "Emergency cooking oil heater wicks, animal fat (lard/tallow) lamp wicks"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Fill the Can 4/5 Full with Cooking Oil and Soak the Wick Tips for 5 Minutes",
+      "description": "1. **Pour Cooking Oil to 4/5 Height**: Slowly pour kitchen soybean, canola, corn, or strained used cooking oil into the can up to **half a finger joint (about 1cm) below the top rim (80% full)**.\n2. **Prime Wick Tops with Oil Drops**: Lighting a dry wick immediately will burn away the paper and go out. Use the tip of a spoon to drip **3-4 drops of cooking oil directly onto the tops of all 3 wicks** so oil saturates from both top and bottom.\n3. **Wait 5 Minutes for Full Saturation**: Wait **5 minutes** until the white paper wicks absorb the oil completely and turn a **translucent golden-yellow**.\n4. **Wipe Outer Oil Drips**: Wipe away any oil droplets spilled on the outside of the can or base plate with dry tissue to prevent odors.",
+      "actionNote": "> Why Cooking Oil Is Explosion-Proof: Gasoline, alcohol, and kerosene emit flammable vapors at room temperature and can explode indoors. Kitchen vegetable oil only ignites above 300°C, meaning only the hot wick tip burns while the liquid oil pool inside the can cannot catch fire.",
+      "svgFileName": "pr21-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 80% COOKING OIL FILL & WICK SATURATION",
+        "Cooking Oil Filled to 4/5 Height (1cm Rim Clearance)",
+        "Prime Wick Tips Directly with 3-4 Drops of Oil",
+        "Wicks Fully Saturated Translucent Yellow After 5 Mins",
+        "[KEY] >300C Flash Point Oil Ensures 0% Explosion Risk"
+      ],
+      "deepDive": {
+        "badge": "HIGH FLASH POINT",
+        "title": "300°C High Flash Point of Vegetable Triglycerides & Non-Explosive Safety",
+        "text": "Standard vegetable cooking oil has a flash point of **310-330°C**, emitting zero flammable vapor at room temperature unlike gasoline (-43°C) or kerosene (40°C). Dropping a lit match directly into liquid cooking oil simply quenches the match. Only the small film of oil drawn up to the hot wick tip vaporizes and burns, eliminating spill-fire hazards indoors.",
+        "fieldSpecs": [
+          {
+            "name": "80% Oil-Filled Can & Saturated Triple Wicks",
+            "scientificName": "80% Filled Vegetable Oil Reservoir & Saturated Wicks",
+            "categoryTag": "High-Flash-Point Fuel / 8-10 Hour Heat Source",
+            "imageFileName": "id-cooking-oil-soaked-wicks.jpg",
+            "hudCode": "FIG. HEAT-21C // MACRO OPTIC",
+            "hudStatus": "FLASH POINT >300C: SAFE",
+            "traits": [
+              {
+                "label": "LEVEL/OIL",
+                "value": "Golden vegetable oil filled to **1cm below the top rim (approx. 80% capacity)**."
+              },
+              {
+                "label": "SOAKED/TIP",
+                "value": "Wick tips thoroughly saturated with oil, turning from white to **glistening translucent gold**."
+              },
+              {
+                "label": "ALT/FUEL",
+                "value": "Works with fresh cooking oil, expired vegetable oil, **strained used frying oil, or oil inside a tuna can**."
+              }
+            ],
+            "fieldUse": "72-hour blackout heating fuel, indoor smokeless emergency lighting and warming"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Ignite the 3 Wicks, Stand the Foil Heat Reflector Wall Behind, and Heat Water on Wire Bars",
+      "description": "1. **Ignite Triple Wicks**: Hold a flame (or ember from a [Bow Drill Friction Fire](/protocol-02.html) if matches are gone) against the 3 oil-soaked wick tips for **3-4 seconds**. Within 1 minute, **3 steady, bright orange flames about one finger joint tall (2-3cm)** will burn without smoke.\n2. **Set Up Accordion Foil Reflector Wall**: Fold a one-handspan sheet of kitchen foil in a zigzag accordion with the shiny side facing forward, and stand it in a semi-circle **two finger joints (3-4cm) behind the can**.\n3. **Lay Stripped Wire Trivet Bars**: Lay 2 thick stripped metal wires or coat hanger rods across the top rim of the can, and place a metal mug or small pot on top to warm drinking water (filtered via the [Charcoal & Sand Water Filter](/protocol-01.html)) and canned rations.\n4. **Crack Window 2cm Every 3 Hours**: Even smokeless flames consume indoor oxygen, so **open a window by one finger joint (2cm) every 3 hours** to refresh the air.",
+      "actionNote": "> Foil Reflector & Wire Trivet Efficiency: Standing a shiny foil reflector behind the can redirects 90% of rear radiant heat forward toward you, making the warmth immediately felt from a handspan away. Never set a cup directly on the can rim without the 2 wire bars, or it will suffocate the flames.",
+      "svgFileName": "pr21-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // IGNITION, FOIL HEAT REFLECTOR & WIRE POT STAND",
+        "Smokeless Triple Flame (Steady 2-3cm Height)",
+        "Curved Foil Reflector Focusing 90% Radiant Heat Forward",
+        "2 Stripped Wire Pot Stand Bars Maintaining Air Gap",
+        "[KEY] 72h Indoor Warming, Water Heating & 3h Ventilation"
+      ],
+      "deepDive": {
+        "badge": "RADIANT REFLECTOR",
+        "title": "Infrared Reflectivity of Metal Foil & Triple-Wick Convective Thermal Output",
+        "text": "While a single candle wick produces about 30-40W of heat, clustering 3 wicks heats the air column between the flames to generate **120-150W of steady heating power**. Pairing this with a curved metal foil reflector (**>90% infrared reflectivity**) raises small room or indoor tent temperatures by **4-6°C** and heats 300ml of water in a metal cup within 15 minutes.",
+        "fieldSpecs": [
+          {
+            "name": "Burning Triple-Wick Can Heater, Foil Reflector & Wire Trivet",
+            "scientificName": "Triple-Wick Oil Heater with Foil Reflector & Wire Trivet",
+            "categoryTag": "Directional Radiant Heat / Emergency Water Heating",
+            "imageFileName": "id-burning-can-heater-foil-reflector.jpg",
+            "hudCode": "FIG. HEAT-21D // MACRO OPTIC",
+            "hudStatus": "SMOKELESS RADIANT HEAT: VERIFIED",
+            "traits": [
+              {
+                "label": "FLAME/BURN",
+                "value": "**3 bright orange-blue flames** burning steadily with zero black soot or acrid odor."
+              },
+              {
+                "label": "REFLECT/WALL",
+                "value": "A **curved multi-fold foil wall** behind the can beams escaping radiant heat forward."
+              },
+              {
+                "label": "TRIVET/WIRE",
+                "value": "**2 stripped metal wires** across the top rim preserve airflow while supporting a metal cup."
+              }
+            ],
+            "fieldUse": "Winter blackout hand/body warming, heating drinking water and rations, emergency night lamp"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Never Pour Gasoline, Alcohol, or Paint Thinner Instead of Cooking Oil, Never Throw Water on Burning Oil, and Never Use Synthetic Cloth Wicks",
+    "description": "Pouring volatile fuels like gasoline, rubbing alcohol, acetone, or paint thinner into an open tin can fills the room with explosive vapor that detonates upon ignition (if you have a ready-made butane stove or kerosene heater, only use its designated fuel inside the original appliance). Never use polyester or nylon fabric as a wick, as melting synthetics release lethal dioxin fumes (wear an [Activated Charcoal Smoke Mask](/protocol-15.html) when escaping smoke); use only toilet tissue or 100% cotton.",
+    "consequence": "Pouring water onto burning oil causes instant steam expansion that splatters flaming oil across the room, causing severe burns. To extinguish, blow out the wicks or cover the top with a ceramic plate or damp cloth to cut off oxygen."
+  },
+  "faqs": [
+    {
+      "question": "Can I insert a tissue wick directly into an unopened tuna can and burn the oil already inside without emptying the fish?",
+      "causeDiagnostic": "The oil packed inside a standard tuna can is soybean or canola oil and burns well, but **moisture from the tuna meat** touching the wick can cause crackling sparks or extinguish the flame.",
+      "resolution": "If you pry open the lid slightly and insert a twisted tissue wick into the center oil pool, only the oil burns while the tuna meat remains unburned, providing **2-3 hours of emergency heat**. Once extinguished, the warmed tuna can be eaten right away as an emergency meal (do not use chili-sauce or water-packed tuna cans, as high water content prevents ignition)."
+    },
+    {
+      "question": "What should I do if the wick starts producing a little black soot or the flame becomes too small?",
+      "causeDiagnostic": "If the wick tip above the foil collar is **longer than one finger joint (1.5cm)**, unburned oil vapor turns into black soot; if the tissue was rolled too loosely and slumps into the oil, the flame shrinks.",
+      "resolution": "Use chopsticks or tweezers to adjust the foil clip so the **exposed wick tip is under half a finger joint (0.8-1cm)**, which immediately restores a clean, smokeless flame. For high-heat outdoor boiling or shelter heating, pair this with the [Twin-Can Wood Gas Stove](/protocol-12.html) or [Clay Thermal Hearth](/protocol-06.html)."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Power and city gas cut off in freezing winter? Build a 72-hour indoor heater with a tuna can and cooking oil! [5-35s Body] Once ready-made butane or candles run out, spread a 1cm layer of pebbles inside a clean tuna can to insulate the bottom. Twist 3 tight tissue wicks and stand them in the center with a folded foil bridge clip. Fill 4/5 with cooking oil, prime the wick tips, light them, and stand a foil reflector behind for smokeless warmth and hot water! [35-45s Warning & Outro] Never use gasoline or water—snuff flames with a plate! Save this offline survival manual now.",
+  "outcome": {
+    "title": "Completed Triple-Wick Tuna Can Cooking Oil Heater & Foil Radiant Reflector System",
+    "badge": "FINAL SPEC // 72-HOUR BLACKOUT OIL WICK HEATER",
+    "description": "Combining a 1cm bottom pebble thermal buffer, 80% fill of >300°C high-flash-point cooking oil, a 3-wick foil bridge clip, a rear foil radiant reflector wall, and a wire pot trivet to deliver 72 hours of smokeless, explosion-free indoor warmth and hot water during blackouts.",
+    "svgFileName": "pr21-outcome.svg",
+    "svgLabels": [
+      "PR-21 OUTCOME // 72-HOUR TUNA CAN & COOKING OIL WICK HEATER",
+      "STAGE 01: CAN & PEBBLE BUFFER",
+      "1cm Pebble Bottom Heat Shield",
+      "STAGE 02: 3X TISSUE WICK & FOIL",
+      "3 Twisted Wicks & Foil Bridge",
+      "STAGE 03: 80% COOKING OIL",
+      "4/5 Oil Fill & 72h Burn Time",
+      "STAGE 04: FOIL REFLECTOR & POT",
+      "Foil Heat Wall & Wire Trivet",
+      "FIELD VERIFIED // ZERO-SMOKE INDOOR HEAT & HOT WATER SYSTEM"
+    ]
+  },
+  "contentHash": "09e4c955a5075ef8",
+  "createdAt": "2026-11-02T06:35:00.000Z",
+  "updatedAt": "2026-11-02T06:41:48.546Z"
+}

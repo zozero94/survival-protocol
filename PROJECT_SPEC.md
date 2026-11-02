@@ -1,7 +1,7 @@
-# 포스트 아포칼립스에서 살아남기 (SURVIVAL PROTOCOL) : 실전 생존 매뉴얼 웹진 & 유튜브 쇼츠 파이프라인
+# 재난에서 살아남기 (SURVIVAL PROTOCOL) : 실전 재난·포스트 아포칼립스 생존 매뉴얼 웹진 & 유튜브 쇼츠 파이프라인
 
 ## 1. 프로젝트 개요
-- **목적**: 인류 문명이 멈춘 포스트 아포칼립스 상황에서 야생 자연물(나무·돌·흙) 및 도시에 버려진 잔해(빈 깡통·안 쓰는 전기선 등)를 활용해 살아남는 기술을 흑백 브루탈리즘 야전 교본 스타일로 디지털 아카이빙하고, 이를 45초 유튜브 쇼츠 영상으로 원소스 멀티유즈(OSMU) 자동 확장
+- **목적**: 대규모 재난(정전·단수·도시가스 중단·전쟁)부터 인류 문명이 멈춘 포스트 아포칼립스 상황까지, 가정 내 완제품 비상장비 우선 활용 안내는 물론 완제품/연료 고갈 시 도시에 버려진 생활 폐자재(빈 깡통·식용유·화장지·은박지·폐전선 등)와 야생 자연물(나무·돌·흙)을 활용해 살아남는 기술을 흑백 브루탈리즘 야전 교본 스타일로 디지털 아카이빙하고, 이를 45초 유튜브 쇼츠 영상으로 원소스 멀티유즈(OSMU) 자동 확장
 - **글로벌 다국어 지원 (7대 언어)**:
   - `ko` (한국어), `en` (영어), `ja` (일본어), `es` (스페인어), `de` (독일어), `pt` (포르투갈어), `zh-TW` (중국어 번체)
 - **디자인 철학 (Utilitarian Brutalism)**: 
@@ -12,7 +12,7 @@
   - 피드 카드 상단 레일 등록일(`YYYY.MM.DD`) 및 상세 히어로 섹션 최종 수정 시간(`YYYY.MM.DD HH:mm`) 표기
   - 독해 시간("소요 30초 독해") 문구 완전 배제 및 모노스페이스 브루탈리즘 제원 스트립 정밀 배치
   - 듀얼 모드 (야간 전술 다크모드 ↔ 재생지 인쇄 라이트모드)
-  - 글로벌 통합 푸터 (`Footer.ts`): Stitch Tactical HUD Dark Brutalist 4-컬럼 그리드 규격, 모바일 하단 액션바 오프셋(`pb-20 md:pb-4`), AdSense 4대 규정 링크, 5대 핵심 생존 분과 색인(`FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE`) 및 CC0 라이선스 스트립 탑재
+  - 글로벌 통합 푸터 (`Footer.ts`): Stitch Tactical HUD Dark Brutalist 4-컬럼 그리드 규격, 모바일 하단 액션바 오프셋(`pb-20 md:pb-4`), AdSense 4대 규정 링크, 5대 핵심 생존 분과 색인(`FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE` — SSOT 강타입 상수 배열 `PROTOCOL_CATEGORIES` 기반) 및 CC0 라이선스 스트립 탑재
 - **Google AdSense 승인 및 E-E-A-T 신뢰성 4대 규정 페이지 (Stitch 1:1 완벽 이식)**:
   - `about.html`: 4대 엄격 실증 체계 (Zero-Tool, Vector Blueprint, Red-Team Safety, PWA Offline), 수석 편찬 위원회(인류학/열역학 공학), CC0 오픈소스 배포 헌장
   - `privacy.html`: Zero-PII 수집 헌장, Google AdSense 맞춤 쿠키 및 옵트아웃(`adssettings.google.com`), GA4 IP 비식별화, Firebase 원자적 증분 텔레메트리, PWA 로컬 스토리지 즉시 소각(`executeHardPurge()`)
@@ -24,14 +24,14 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 152개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 154개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
-  - 듀얼 트랙 생존 고증 (Track A: 순수 자연물 원시 공학 / Track B: 포스트 아포칼립스 도시 폐자재 업사이클링 공학)
+  - 듀얼 트랙 생존 고증 + 완제품 대체 호환(Ready-Made Alternative) 원칙 (Track A: 순수 자연물 원시 공학 / Track B: 도시 생활 폐자재 업사이클링 공학 + 가정 내 완제품 장비 우선 활용 안내 및 고갈 시 DIY 대체 제작)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
     - 난해한 학술·전문 용어(다공성, 흡착, 비등 멸균, 플러싱 등) 전면 배제 및 일상 친화 구어체 표준화
     - 숫자에 신체 감각 비유 병기(콩알 크기, 손가락 두~네 마디 높이 등) 및 직관적 이유 즉시 제시
-  - **4대 심층 포스팅 품질 리뷰 (`PostingReviewService` & `posting-quality-auditor`)**:
-    - ① 야전 안전 & 오남용 Red-Team 심사, ② 자·저울·타이머 없는 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T & HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 대응 현지화 검수
+  - **5대 심층 포스팅 품질 리뷰 (`PostingReviewService` & `posting-quality-auditor`)**:
+    - ① 야전 안전 & 오남용 Red-Team 심사, ② 자·저울·타이머 없는 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T · SSOT 5대 카테고리(`PROTOCOL_CATEGORIES`) · HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 대응 현지화 검수, ⑤ 법무 및 Google Publisher/AdSense 유해물·유독가스 경고 정책 감사
   - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
   - 가변 3~6단계 세부 공학 체계 및 16:9 와이드 완성 결과도(Outcome) 기본 탑재
   - 3D 포토리얼리스틱 실물 이미지 에셋(Image Generator)과 벡터 SVG의 하이브리드 지원
@@ -72,10 +72,10 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-20, 총 19편)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-21, 총 20편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 37종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (119개 SVG 도면, 활성 감사 95종: 스텝 76 + 결과 19, 보존 24종)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 40종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (124개 SVG 도면, 활성 감사 100종: 스텝 80 + 결과 20, 보존 24종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
@@ -122,14 +122,14 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 15개 테스트 스위트 (152/152 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 15개 테스트 스위트 (154/154 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 119종, 활성 정적 감사 95종: 스텝 76종 + 결과 19종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 124종, 활성 정적 감사 100종: 스텝 80종 + 결과 20종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:

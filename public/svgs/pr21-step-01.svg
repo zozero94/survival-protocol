@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <pattern id="grid21s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#18202c" stroke-width="0.7"/>
+    </pattern>
+    <linearGradient id="steelWall21s1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="30%" stop-color="#94a3b8"/>
+      <stop offset="55%" stop-color="#cbd5e1"/>
+      <stop offset="85%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="canInner21s1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="plateGrad21s1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="pebbleGrad21s1" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#d6d3d1"/>
+      <stop offset="60%" stop-color="#78716c"/>
+      <stop offset="100%" stop-color="#44403c"/>
+    </radialGradient>
+    <filter id="shadow21s1" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <marker id="arrAmber21s1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrCyan21s1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <!-- Dark Tactical Background -->
+  <rect x="0" y="0" width="400" height="400" fill="#090c10"/>
+  <rect x="10" y="10" width="380" height="380" fill="url(#grid21s1)" stroke="#263244" stroke-width="1"/>
+
+  <!-- Corner Crosshairs -->
+  <path d="M 16 24 L 24 24 M 20 20 L 20 28" stroke="#475569" stroke-width="1"/>
+  <path d="M 376 24 L 384 24 M 380 20 L 380 28" stroke="#475569" stroke-width="1"/>
+  <path d="M 16 376 L 24 376 M 20 372 L 20 380" stroke="#475569" stroke-width="1"/>
+  <path d="M 376 376 L 384 376 M 380 372 L 380 380" stroke="#475569" stroke-width="1"/>
+
+  <!-- Top Header Banner -->
+  <rect x="18" y="16" width="364" height="24" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+
+  <!-- Label 2 Callout Box (Top: Clean Steel Tuna Can) -->
+  <rect x="24" y="48" width="352" height="24" rx="3" fill="#0f172a" stroke="#94a3b8" stroke-width="1"/>
+  <path d="M 135 72 L 145 122" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <circle cx="145" cy="122" r="2.5" fill="#cbd5e1"/>
+
+  <!-- 3D Ceramic/Slate Base Plate (Bottom Thermal Shield) -->
+  <g filter="url(#shadow21s1)">
+    <ellipse cx="200" cy="248" rx="146" ry="30" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <ellipse cx="200" cy="242" rx="142" ry="26" fill="url(#plateGrad21s1)" stroke="#94a3b8" stroke-width="1.2"/>
+    <ellipse cx="200" cy="240" rx="118" ry="18" fill="#0f172a" stroke="#475569" stroke-width="0.9" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- 3D Cutaway Corrugated Steel Tuna Can -->
+  <g filter="url(#shadow21s1)">
+    <!-- Back Wall of Can -->
+    <path d="M 96 132 L 96 226 A 104 22 0 0 0 304 226 L 304 132 Z" fill="url(#canInner21s1)" stroke="#94a3b8" stroke-width="1.4"/>
+    <!-- Left & Right Outer Metallic Side Segments (Cutaway Front) -->
+    <path d="M 96 132 L 96 226 A 104 22 0 0 0 132 242 L 132 148 A 104 22 0 0 1 96 132 Z" fill="url(#steelWall21s1)" stroke="#cbd5e1" stroke-width="1.2"/>
+    <path d="M 304 132 L 304 226 A 104 22 0 0 1 268 242 L 268 148 A 104 22 0 0 0 304 132 Z" fill="url(#steelWall21s1)" stroke="#cbd5e1" stroke-width="1.2"/>
+    <!-- Corrugated Reinforcing Ribs on Steel Wall -->
+    <path d="M 96 158 Q 112 166 132 170" fill="none" stroke="#e2e8f0" stroke-width="1.4"/>
+    <path d="M 96 182 Q 112 190 132 194" fill="none" stroke="#e2e8f0" stroke-width="1.4"/>
+    <path d="M 96 206 Q 112 214 132 218" fill="none" stroke="#e2e8f0" stroke-width="1.4"/>
+    <path d="M 304 158 Q 288 166 268 170" fill="none" stroke="#e2e8f0" stroke-width="1.4"/>
+    <path d="M 304 182 Q 288 190 268 194" fill="none" stroke="#e2e8f0" stroke-width="1.4"/>
+    <path d="M 304 206 Q 288 214 268 218" fill="none" stroke="#e2e8f0" stroke-width="1.4"/>
+
+    <!-- Top Rolled Rim of Tuna Can -->
+    <ellipse cx="200" cy="132" rx="104" ry="22" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+    <ellipse cx="200" cy="132" rx="99" ry="19" fill="none" stroke="#475569" stroke-width="1"/>
+
+    <!-- 1cm Pebble & Coarse Sand Thermal Buffer Layer Inside Bottom -->
+    <path d="M 102 204 A 98 18 0 0 0 298 204 L 298 225 A 98 19 0 0 1 102 225 Z" fill="#57534e" stroke="#a8a29e" stroke-width="1.2"/>
+    <ellipse cx="200" cy="204" rx="98" ry="18" fill="#44403c" stroke="#a8a29e" stroke-width="1"/>
+
+    <!-- Individual 3D River Pebbles & Sand Grains -->
+    <ellipse cx="132" cy="206" rx="11" ry="6" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="156" cy="202" rx="13" ry="7" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="182" cy="208" rx="12" ry="6.5" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="208" cy="201" rx="14" ry="7" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="234" cy="207" rx="12" ry="6" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="262" cy="203" rx="13" ry="6.5" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="145" cy="216" rx="10" ry="5.5" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="170" cy="218" rx="12" ry="6" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="198" cy="217" rx="13" ry="6" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="225" cy="218" rx="11" ry="5.5" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+    <ellipse cx="250" cy="215" rx="12" ry="6" fill="url(#pebbleGrad21s1)" stroke="#292524" stroke-width="0.8"/>
+
+    <!-- 1cm Thickness Dimension Gauge on Right Cutaway -->
+    <line x1="314" y1="204" x2="330" y2="204" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="314" y1="226" x2="330" y2="226" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="322" y1="204" x2="322" y2="226" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="328" y="206" width="44" height="18" rx="2" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+    <path d="M 335 215 L 365 215" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Label 3 Callout Box (Middle: 1cm Pebble & Sand Thermal Buffer) -->
+  <rect x="24" y="278" width="352" height="24" rx="3" fill="#1c1917" stroke="#f59e0b" stroke-width="1.1"/>
+  <path d="M 200 278 L 200 222" stroke="#f59e0b" stroke-width="1.3" marker-end="url(#arrAmber21s1)"/>
+
+  <!-- Label 4 Callout Box (Lower: Ceramic Plate / Stone Slab Shield) -->
+  <rect x="24" y="312" width="352" height="24" rx="3" fill="#0c1928" stroke="#38bdf8" stroke-width="1.1"/>
+  <path d="M 290 312 L 270 264" stroke="#38bdf8" stroke-width="1.3" marker-end="url(#arrCyan21s1)"/>
+
+  <!-- Bottom Key Principle Banner -->
+  <rect x="18" y="352" width="364" height="30" rx="3" fill="#111827" stroke="#f59e0b" stroke-width="1.2"/>
+
+  <!-- 5 SVG TEXT LABELS (1:1 Match with svgLabels) -->
+  <text x="200" y="32" fill="#f8fafc" font-family="monospace" font-size="9.5" font-weight="bold" text-anchor="middle">FIG. 01 // STEEL TIN CAN PREP &amp; BOTTOM HEAT BUFFER LAYER</text>
+  <text x="200" y="64" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">겉면 종이 상표를 제거한 낮은 철제 통조림 깡통</text>
+  <text x="200" y="294" fill="#fde68a" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">깡통 바닥 과열 차단용 잔자갈·모래 완충층 (1cm 두께)</text>
+  <text x="200" y="328" fill="#bae6fd" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">장판·식탁 열 손상 방지용 하단 사기접시·돌판 받침</text>
+  <text x="200" y="371" fill="#fbbf24" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">[핵심] 완제품 고갈 시 폐깡통 세척 &amp; 바닥 2중 단열 확보</text>
+</svg>
