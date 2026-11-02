@@ -1,38 +1,32 @@
-                                                                      
+import {
+  FEED_CATEGORY_KEYS,
+                       
+} from '../../types/protocol.types.js';
+import { UI_STRINGS } from '../../i18n/ui-strings.js';
 import { renderSearchTriggerButton } from '../layout/SearchModal.js';
 
 /**
  * [Presentational Component]
  * 메인 피드 인덱스 대문 헤더 (Stitch 디자인 1:1 완벽 이식 + 7개국어 선언적 data-i18n 바인딩)
- * 7대 카테고리 필터 칩 + 오프라인 펄스 인디케이터 + 킬러 대문 선언문
+ * SSOT 기반 5대 핵심 카테고리 필터 칩 + 오프라인 펄스 인디케이터 + 킬러 대문 선언문
  */
 export function renderFeedHeader(totalCount        )         {
-  const categories                                                     = [
-    { key: 'ALL', label: '[전체]' },
-    { key: 'FOOD', label: '[물·식량·보존]' },
-    { key: 'SHELTER', label: '[불·거처·보온]' },
-    { key: 'TOOLS', label: '[도구·의복·공작]' },
-    { key: 'MATERIALS', label: '[소재·천연화학]' },
-    { key: 'MEDICINE', label: '[의약·위생·방호]' },
-  ];
-
-  const categoryTabs = categories
-    .map(
-      (cat, idx) => `
+  const categoryTabs = FEED_CATEGORY_KEYS.map((key, idx) => {
+    const defaultLabel = (UI_STRINGS.ko                                     )[`cat_${key}`] || `[${key}]`;
+    return `
     <button type="button"
       data-action="filter-category"
-      data-category="${cat.key}"
-      data-i18n="cat_${cat.key}"
+      data-category="${key}"
+      data-i18n="cat_${key}"
       class="px-3 py-1.5 font-mono text-xs uppercase tracking-wider shrink-0 transition-none ${
         idx === 0
           ? 'bg-white text-black font-bold'
           : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
       }">
-      ${cat.label}
+      ${defaultLabel}
     </button>
-  `
-    )
-    .join('');
+  `;
+  }).join('');
 
   return `
 <!-- 상단 긴급 고정 헤더 레일 -->

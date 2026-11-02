@@ -1,8 +1,9 @@
 import { callGeminiApi } from '../gemini-client.js';
+                                                                   
 
                                
                      
-                                                                                       
+                             
                       
                                                 
                        
@@ -11,7 +12,7 @@ import { callGeminiApi } from '../gemini-client.js';
 
 const FALLBACK_TOPIC               = {
   protocolId: 'PR-02',
-  category: 'FIRE',
+  category: 'SHELTER',
   koreanTitle: '프로토콜 #02: 마찰열을 이용한 원시 활비비(Bow Drill) 발화법',
   threatLevel: 'CRITICAL',
   summary: '저체온증으로 인한 3시간 이내 사망을 막기 위해 주변의 나뭇가지와 끈으로 불씨를 피워내는 원시 발화 절차입니다.',
@@ -44,10 +45,10 @@ ${existingTitles.map((t) => `- ${t}`).join('\n')}
 
 그리고 이 주제를 스티치(Stitch)가 가장 정교한 흑백 도면과 브루탈리즘 UI로 렌더링할 수 있도록 **영문 스티치 프롬프트**를 함께 작성하세요.
 
-반드시 다음 JSON 형식으로만 응답하세요:
+반드시 다음 JSON 형식으로만 응답하세요 (category는 반드시 FOOD, SHELTER, TOOLS, MATERIALS, MEDICINE 중 하나):
 {
   "protocolId": "PR-02",
-  "category": "FIRE",
+  "category": "SHELTER",
   "koreanTitle": "...",
   "threatLevel": "CRITICAL",
   "summary": "...",

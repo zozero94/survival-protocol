@@ -403,7 +403,7 @@
   <!-- 메인 본문: 인라인 정밀 SVG 도면 + 행동 중심 대제목 -->
   <div class="flex gap-3 sm:gap-4 items-start py-1">
     <div class="shrink-0 p-1.5 bg-black border border-neutral-800">
-      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="18" rx="14" ry="4" stroke-width="1.8"></ellipse><path d="M10 18C10 27 15 33 24 33C33 33 38 27 38 18" stroke-width="2"></path><ellipse cx="11" cy="38" rx="5" ry="3" stroke-width="1.6"></ellipse><ellipse cx="24" cy="40" rx="6" ry="3" stroke-width="1.6"></ellipse><ellipse cx="37" cy="38" rx="5" ry="3" stroke-width="1.6"></ellipse></svg>
+      <svg class="shrink-0 mt-0.5 text-white" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6H34M16 6L18 20L21 34L24 38L27 34L30 20L32 6" stroke-width="1.8"></path><path d="M17.5 11H30.5M19 15H29M20 19H28" stroke-width="1.2" stroke-dasharray="1 2" opacity="0.7"></path><circle cx="21" cy="13" r="1" fill="currentColor"></circle><circle cx="24" cy="14" r="1.2" fill="currentColor"></circle><circle cx="27" cy="12.5" r="0.9" fill="currentColor"></circle><circle cx="23" cy="17" r="1" fill="currentColor"></circle><line x1="18.2" y1="20" x2="29.8" y2="20" stroke-width="1.5"></line><path d="M19.5 24H28.5M20 27H28M20.8 30H27.2" stroke-width="1" opacity="0.8"></path><line x1="21" y1="34" x2="27" y2="34" stroke-width="1.5"></line><circle cx="24" cy="42" r="1.5" fill="currentColor"></circle><path d="M24 40V38" stroke-width="1.5"></path></svg>
     </div>
     <div class="flex flex-col flex-1 min-w-0">
       <h2 class="text-base sm:text-lg md:text-xl font-bold font-mono text-white group-hover:underline underline-offset-4 tracking-tight leading-snug">
@@ -1773,11 +1773,12 @@
         }
       });
 
-      // 초기 실행 (URL ?cat= 파라미터 지원)
+      // 초기 실행 (URL ?cat= 파라미터 지원, SSOT 5대 카테고리 + ALL 화이트리스트 주입)
       try {
         var urlParams = new URLSearchParams(window.location.search);
         var catParam = urlParams.get('cat');
-        if (catParam && ['ALL', 'FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'].indexOf(catParam) !== -1) {
+        var validCategories = ['ALL', 'FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'];
+        if (catParam && validCategories.indexOf(catParam) !== -1) {
           currentCategory = catParam;
           document.querySelectorAll('[data-action="filter-category"]').forEach(function (btn) {
             var isSel = btn.getAttribute('data-category') === currentCategory;

@@ -290,11 +290,12 @@ export function getFeedRuntimeScript(): string {
         }
       });
 
-      // 초기 실행 (URL ?cat= 파라미터 지원)
+      // 초기 실행 (URL ?cat= 파라미터 지원, SSOT 5대 카테고리 + ALL 화이트리스트 주입)
       try {
         var urlParams = new URLSearchParams(window.location.search);
         var catParam = urlParams.get('cat');
-        if (catParam && ['ALL', 'FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'].indexOf(catParam) !== -1) {
+        var validCategories = ['ALL', 'FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'];
+        if (catParam && validCategories.indexOf(catParam) !== -1) {
           currentCategory = catParam;
           document.querySelectorAll('[data-action="filter-category"]').forEach(function (btn) {
             var isSel = btn.getAttribute('data-category') === currentCategory;

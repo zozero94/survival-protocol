@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import type { Protocol } from '../types/protocol.types.ts';
+import {
+  PROTOCOL_CATEGORIES,
+  isProtocolCategory,
+  type Protocol,
+  type ProtocolCategory,
+} from '../types/protocol.types.ts';
 import { SeoService } from './seo.service.ts';
 import { UI_STRINGS } from '../i18n/ui-strings.ts';
 import { SUPPORTED_LOCALES, type SupportedLocale } from '../i18n/locales.ts';
@@ -187,14 +192,13 @@ export class PostingReviewService {
       warnings.push(`제목 길이가 너무 짧거나 깁니다 (${protocol.title?.length || 0}자, 권장 10~65자).`);
     }
 
-    // 5대 핵심 카테고리(FOOD, SHELTER, TOOLS, MATERIALS, MEDICINE) 일관성 검증 (UI 탭 필터링 누락 방지)
-    const valid5Categories = ['FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'];
-    if (valid5Categories.includes(protocol.category)) {
+    // 5대 핵심 카테고리(FOOD, SHELTER, TOOLS, MATERIALS, MEDICINE) SSOT 일관성 검증 (UI 탭 필터링 누락 원천 방지)
+    if (isProtocolCategory(protocol.category)) {
       checks.push(`5대 핵심 카테고리 규격 준수 확인 (category: ${protocol.category})`);
     } else {
       score -= 30;
       warnings.push(
-        `카테고리 '${protocol.category}'는 5대 UI 카테고리 필터 탭(${valid5Categories.join(', ')})에 포함되지 않아 메인 피드 필터링에서 누락됩니다.`
+        `카테고리 '${protocol.category}'는 5대 UI 카테고리 필터 탭(${PROTOCOL_CATEGORIES.join(', ')})에 포함되지 않아 메인 피드 필터링에서 누락됩니다.`
       );
     }
 
@@ -423,7 +427,7 @@ export class PostingReviewService {
 
     // 1. 7개 언어 사전 키 1:1 완전 동기화 검사
     for (const locale of allLocales) {
-      const targetDict = UI_STRINGS[locale] as Record<string, string>;
+      const targetDict = UI_STRINGS[locale] as unknown as Record<string, string>;
       const missingKeys = koKeys.filter((k) => !(k in targetDict));
       if (missingKeys.length > 0) {
         score -= 20;
@@ -437,7 +441,7 @@ export class PostingReviewService {
     // 2. 비한국어 6개 언어 내 미번역 한글 잔존 여부 검사
     const koreanCharRegex = /[가-힣]/;
     for (const locale of allLocales.filter((l) => l !== 'ko')) {
-      const targetDict = UI_STRINGS[locale] as Record<string, string>;
+      const targetDict = UI_STRINGS[locale] as unknown as Record<string, string>;
       for (const [key, value] of Object.entries(targetDict)) {
         if (koreanCharRegex.test(value)) {
           score -= 15;

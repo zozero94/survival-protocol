@@ -108,7 +108,7 @@ export class StitchService {
 
     return {
       protocolId: options.protocolPrefix ? `PR-${options.protocolPrefix}` : 'PR-01',
-      category: 'WATER',
+      category: 'FOOD',
       title,
       threatLevel: 'CRITICAL',
       threatLevelText: '[위험 등급: 치명적(CRITICAL)]',

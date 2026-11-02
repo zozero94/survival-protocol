@@ -852,9 +852,9 @@ ${instructions}
         urgency: '중요 (움막·도구 묶기용 끈)',
       },
       {
-        category: 'WATER',
+        category: 'FOOD',
         title: '물 없는 땅에서 햇빛과 나뭇잎으로 식수 모으는 법',
-        domain: '물 구하기 (WATER)',
+        domain: '물 구하기 (FOOD: 물·식량·보존)',
         urgency: '필수 생존 (물 없는 곳에서 수분 확보)',
       },
     ];

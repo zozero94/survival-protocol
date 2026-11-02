@@ -1,7 +1,7 @@
 import Fuse, {                   } from 'fuse.js';
 import fs from 'node:fs';
 import path from 'node:path';
-                                                           
+                                                                             
                                                           
 import { extractChosung, isPureChosung, cleanSearchText } from '../utils/hangul.util.js';
 import { UI_STRINGS } from '../i18n/ui-strings.js';
@@ -12,11 +12,12 @@ import { UI_STRINGS } from '../i18n/ui-strings.js';
  * 대용량 SVG 벡터 도면, 실사 이미지, 타임스탬프 등을 완전 배제하여
  * 메모리 80% 이상 절감 및 100% 오프라인 고속 탐색을 지원한다.
  */
+
                                  
                                       
                                              
-                                      
-                                        
+                             
+                                          
                                                    
                                                    
                                   

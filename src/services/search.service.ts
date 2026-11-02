@@ -1,7 +1,7 @@
 import Fuse, { type IFuseOptions } from 'fuse.js';
 import fs from 'node:fs';
 import path from 'node:path';
-import type { Protocol } from '../types/protocol.types.ts';
+import type { Protocol, ProtocolCategory } from '../types/protocol.types.ts';
 import type { SupportedLocale } from '../i18n/locales.ts';
 import { extractChosung, isPureChosung, cleanSearchText } from '../utils/hangul.util.ts';
 import { UI_STRINGS } from '../i18n/ui-strings.ts';
@@ -12,11 +12,12 @@ import { UI_STRINGS } from '../i18n/ui-strings.ts';
  * 대용량 SVG 벡터 도면, 실사 이미지, 타임스탬프 등을 완전 배제하여
  * 메모리 80% 이상 절감 및 100% 오프라인 고속 탐색을 지원한다.
  */
+
 export interface SearchDocument {
   id: string;               // "PR-01"
   url: string;              // "/protocol-01"
-  category: string;         // "WATER"
-  categoryName: string;     // "[물 구하기]"
+  category: ProtocolCategory;
+  categoryName: string;     // "[물·식량·보존]"
   title: string;            // "흙탕물을 깨끗한 식수로 바꾸는 법"
   titleChosung?: string;    // "ㅎㅌㅁㅇ ㄲㄲㅎ ㅅㅅㄹ ㅂㄲㄴ ㅂ"
   summary: string;          // 요약문
