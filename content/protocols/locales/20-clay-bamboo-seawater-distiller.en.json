@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-20",
-  "category": "WATER",
+  "category": "FOOD",
   "title": "How to Distill Seawater & Muddy Water into Pure Drinking Water with a Clay Pot & Bamboo Pipe",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEHYDRATION DEFENSE] 100% Salt-Free Freshwater Recovery on Coasts & Contaminated Zones",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T01:29:31.861Z",
-  "contentHash": "3a3fe70b4066523a"
+  "updatedAt": "2026-11-02T10:59:47+09:00",
+  "contentHash": "e30d31f76b87086a"
 }

@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-20",
-  "category": "WATER",
+  "category": "FOOD",
   "title": "用陶罐與竹冷卻管將海水、泥水煮沸轉化為純淨飲用水的方法（野戰蒸餾淡化器）",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[防範脫水] 在僅有海水或污染水的海岸與孤立地區確保100%無鹽飲用水",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T01:29:31.861Z",
-  "contentHash": "3a3fe70b4066523a"
+  "updatedAt": "2026-11-02T10:59:47+09:00",
+  "contentHash": "e30d31f76b87086a"
 }

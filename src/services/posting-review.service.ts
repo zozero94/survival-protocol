@@ -187,6 +187,17 @@ export class PostingReviewService {
       warnings.push(`제목 길이가 너무 짧거나 깁니다 (${protocol.title?.length || 0}자, 권장 10~65자).`);
     }
 
+    // 5대 핵심 카테고리(FOOD, SHELTER, TOOLS, MATERIALS, MEDICINE) 일관성 검증 (UI 탭 필터링 누락 방지)
+    const valid5Categories = ['FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'];
+    if (valid5Categories.includes(protocol.category)) {
+      checks.push(`5대 핵심 카테고리 규격 준수 확인 (category: ${protocol.category})`);
+    } else {
+      score -= 30;
+      warnings.push(
+        `카테고리 '${protocol.category}'는 5대 UI 카테고리 필터 탭(${valid5Categories.join(', ')})에 포함되지 않아 메인 피드 필터링에서 누락됩니다.`
+      );
+    }
+
     if (protocol.summary && protocol.summary.trim().length >= 30) {
       checks.push(`메타 디스크립션/요약문(summary) 분량 충분 (${protocol.summary.trim().length}자)`);
     } else {
@@ -261,6 +272,11 @@ export class PostingReviewService {
       if (loc.steps.length !== masterProtocol.steps.length) {
         score -= 20;
         warnings.push(`[${lang}] 스텝 수 불일치 (마스터: ${masterProtocol.steps.length}, ${lang}: ${loc.steps.length})`);
+      }
+
+      if (loc.category !== masterProtocol.category) {
+        score -= 20;
+        warnings.push(`[${lang}] 카테고리 불일치 (마스터: ${masterProtocol.category}, ${lang}: ${loc.category})`);
       }
 
       // 한글 잔존 여부 검사 (번역 누락 탐지)

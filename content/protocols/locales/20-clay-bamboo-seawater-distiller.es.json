@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-20",
-  "category": "WATER",
+  "category": "FOOD",
   "title": "Cómo Destilar Agua de Mar y Lodo en Agua Potable Pura con Olla de Barro y Tubo de Bambú",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFENSA CONTRA DESHIDRATACIÓN] Agua Dulce 100% Sin Sal en Costas y Zonas Aisladas",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T01:29:31.861Z",
-  "contentHash": "3a3fe70b4066523a"
+  "updatedAt": "2026-11-02T10:59:47+09:00",
+  "contentHash": "e30d31f76b87086a"
 }

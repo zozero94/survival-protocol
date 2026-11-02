@@ -261,6 +261,21 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     assert.ok(report.checks.some((c) => c.includes('UI_STRINGS 키 1:1 완전 동기화 확인')));
     assert.ok(report.checks.some((c) => c.includes('미번역 한글 0건 확인')));
   });
+
+  await t.test('16-11: 5대 UI 카테고리(FOOD, SHELTER, TOOLS, MATERIALS, MEDICINE) 외의 비표준 카테고리 지정 시 SEO_SEARCH_INTENT에서 탈락해야 한다', () => {
+    const sample = allMasterProtocols[0]!;
+    const orphanCategoryProtocol: Protocol = {
+      ...sample,
+      category: 'WATER' as any,
+    };
+
+    const res = PostingReviewService.auditSeoSearchIntent(orphanCategoryProtocol);
+    assert.strictEqual(res.passed, false, '비표준 카테고리는 검수를 통과해서는 안 됨');
+    assert.ok(
+      res.warnings.some((w) => w.includes('5대 UI 카테고리 필터 탭')),
+      '5대 UI 카테고리 필터 탭 누락 경고가 발생해야 함'
+    );
+  });
 });
 
 
