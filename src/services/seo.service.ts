@@ -107,6 +107,18 @@ Sitemap: ${siteUrl}/sitemap.xml
   }
 
   /**
+   * HTML 메타 태그 및 JSON-LD 스니펫용 마크다운 문법([텍스트](url), **볼드**, `코드`) 순수 평문 정제
+   */
+  public static stripMarkdown(text: string): string {
+    if (!text) return '';
+    return text
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/\*\*([^*]+)\*\*/g, '$1')
+      .replace(/`([^`]+)`/g, '$1')
+      .replace(/"/g, '&quot;');
+  }
+
+  /**
    * Google 검색결과 리치 스니펫용 Schema.org HowTo & Article JSON-LD 구조화 데이터 생성
    */
   public static generateJsonLd(protocol: Protocol, siteUrl: string = SITE_META.siteUrl): string {
@@ -117,7 +129,7 @@ Sitemap: ${siteUrl}/sitemap.xml
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       name: `${protocol.protocolId}: ${protocol.title}`,
-      description: protocol.summary,
+      description: this.stripMarkdown(protocol.summary),
       url: pageUrl,
       estimatedCost: {
         '@type': 'MonetaryAmount',
@@ -133,7 +145,7 @@ Sitemap: ${siteUrl}/sitemap.xml
         '@type': 'HowToStep',
         position: idx + 1,
         name: `Step ${s.stepNumber}: ${s.title}`,
-        text: s.description,
+        text: this.stripMarkdown(s.description),
         url: `${pageUrl}#step-${s.stepNumber}`,
       })),
     };

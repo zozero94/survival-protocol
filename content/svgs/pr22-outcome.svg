@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg22out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#121820"/>
+    </linearGradient>
+    <linearGradient id="cbGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c6985e"/>
+      <stop offset="100%" stop-color="#835929"/>
+    </linearGradient>
+    <linearGradient id="foilGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="warmDome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="sh22out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Outer Frame -->
+  <rect width="800" height="450" fill="url(#bg22out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#334155" stroke-width="1.5"/>
+  <path d="M10 30 L30 10 M770 10 L790 30 M10 420 L30 440 M770 440 L790 420" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Top Title Banner (Label 1) -->
+  <rect x="20" y="18" width="760" height="34" fill="#141b24" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="34" y="40" fill="#fef08a" font-family="monospace" font-size="14" font-weight="bold">PR-22 완성체 // 무전력 실내 +7C 골판지·신문지 방한 캡슐</text>
+
+  <!-- 4 Stage Summary Cards Row (Labels 2..9) -->
+  <!-- Stage 01 Card -->
+  <rect x="20" y="62" width="182" height="54" rx="2" fill="#171f2a" stroke="#d97706" stroke-width="1"/>
+  <text x="30" y="82" fill="#fbbf24" font-family="monospace" font-size="11" font-weight="bold">STAGE 01: 3겹 골판지 매트</text>
+  <text x="30" y="102" fill="#e2e8f0" font-family="sans-serif" font-size="11">1.5cm 교차 적층 바닥 냉기 차단</text>
+
+  <!-- Stage 02 Card -->
+  <rect x="212" y="62" width="182" height="54" rx="2" fill="#171f2a" stroke="#94a3b8" stroke-width="1"/>
+  <text x="222" y="82" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">STAGE 02: 은박 반사 상자 후드</text>
+  <text x="222" y="102" fill="#e2e8f0" font-family="sans-serif" font-size="11">체열 90% 하향 반사 소형 돔</text>
+
+  <!-- Stage 03 Card -->
+  <rect x="404" y="62" width="182" height="54" rx="2" fill="#171f2a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="414" y="82" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">STAGE 03: 구긴 신문지 침낭</text>
+  <text x="414" y="102" fill="#e2e8f0" font-family="sans-serif" font-size="11">주먹 크기 종이볼 정지공기 포켓</text>
+
+  <!-- Stage 04 Card -->
+  <rect x="596" y="62" width="184" height="54" rx="2" fill="#171f2a" stroke="#22c55e" stroke-width="1"/>
+  <text x="606" y="82" fill="#4ade80" font-family="monospace" font-size="11" font-weight="bold">STAGE 04: 담요 커튼 &amp; 숨구멍</text>
+  <text x="606" y="102" fill="#e2e8f0" font-family="sans-serif" font-size="11">상부 온기 가둠 및 하단 10cm 환기</text>
+
+  <!-- Main 16:9 Cutaway Technical Blueprint of the Full Capsule System -->
+  <g filter="url(#sh22out)">
+    <!-- Cold Concrete Room Floor Slab -->
+    <rect x="40" y="346" width="720" height="24" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+    <path d="M120,366 L120,348 M260,366 L260,348 M420,366 L420,348 M580,366 L580,348 M680,366 L680,348" stroke="#38bdf8" stroke-width="1.8"/>
+
+    <!-- Stage 01: 3-Layer Cross-Stacked Corrugated Cardboard Mat -->
+    <rect x="56" y="318" width="688" height="28" fill="url(#cbGrad)" stroke="#fbbf24" stroke-width="1.5"/>
+    <path d="M62,326 Q68,320 74,326 T86,326 T98,326 T110,326 T122,326 T134,326 T146,326 T158,326 T170,326 T182,326 T194,326 T206,326 T218,326 T230,326 T242,326 T254,326 T266,326 T278,326 T290,326 T302,326 T314,326 T326,326 T338,326 T350,326 T362,326 T374,326 T386,326 T398,326 T410,326 T422,326 T434,326 T446,326 T458,326 T470,326 T482,326 T494,326 T506,326 T518,326 T530,326 T542,326 T554,326 T566,326 T578,326 T590,326 T602,326 T614,326 T626,326 T638,326 T650,326 T662,326 T674,326 T686,326 T698,326 T710,326 T722,326 T734,326" fill="none" stroke="#fef08a" stroke-width="1.2"/>
+    <line x1="56" y1="332" x2="744" y2="332" stroke="#78350f" stroke-width="1.5"/>
+    <path d="M62,340 Q68,334 74,340 T86,340 T98,340 T110,340 T122,340 T134,340 T146,340 T158,340 T170,340 T182,340 T194,340 T206,340 T218,340 T230,340 T242,340 T254,340 T266,340 T278,340 T290,340 T302,340 T314,340 T326,340 T338,340 T350,340 T362,340 T374,340 T386,340 T398,340 T410,340 T422,340 T434,340 T446,340 T458,340 T470,340 T482,340 T494,340 T506,340 T518,340 T530,340 T542,340 T554,340 T566,340 T578,340 T590,340 T602,340 T614,340 T626,340 T638,340 T650,340 T662,340 T674,340 T686,340 T698,340 T710,340 T722,340 T734,340" fill="none" stroke="#fef08a" stroke-width="1.2"/>
+
+    <!-- Warm Micro-Climate Core Zone (+7C Higher Than Room) -->
+    <path d="M84,318 L84,158 L368,158 L368,225 L716,238 L716,318 Z" fill="url(#warmDome)"/>
+
+    <!-- Stage 02: Cardboard Upper-Body Hood + Foil Ceiling -->
+    <path d="M70,318 L70,142 L378,142 L378,158 L86,158 L86,318 Z" fill="url(#cbGrad)" stroke="#f59e0b" stroke-width="1.8"/>
+    <rect x="88" y="158" width="280" height="6" fill="url(#foilGrad)" stroke="#ffffff" stroke-width="1"/>
+    <!-- Reflected Radiant Heat Arrows Inside Hood -->
+    <path d="M160,166 L160,224 M154,216 L160,224 L166,216" stroke="#fbbf24" stroke-width="2.2" fill="none"/>
+    <path d="M225,166 L225,224 M219,216 L225,224 L231,216" stroke="#fbbf24" stroke-width="2.2" fill="none"/>
+    <path d="M290,166 L290,224 M284,216 L290,224 L296,216" stroke="#fbbf24" stroke-width="2.2" fill="none"/>
+
+    <!-- Stage 04: Blanket Draft Curtain (Top 2/3) & 10cm Vent Gap (Bottom) -->
+    <path d="M368,156 Q382,210 368,264 L382,264 Q396,210 382,156 Z" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.5"/>
+    <!-- 10cm Fist-Sized Ventilation Gap Highlight -->
+    <rect x="358" y="268" width="34" height="46" rx="4" fill="#0f172a" stroke="#4ade80" stroke-width="1.8" stroke-dasharray="4,2"/>
+    <path d="M342,282 L408,282 M401,277 L408,282 L401,287" stroke="#38bdf8" stroke-width="2" fill="none"/>
+    <path d="M408,300 L342,300 M349,295 L342,300 L349,305" stroke="#4ade80" stroke-width="2" fill="none"/>
+
+    <!-- Stage 03: Newspaper-Ball-Filled Duvet Sleeping Sack -->
+    <path d="M320,218 C420,210 640,216 726,242 L726,318 L320,318 Z" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <!-- 12 Crumpled Newspaper Balls Creating Loft Pockets -->
+    <g fill="#e2e8f0" stroke="#475569" stroke-width="1.2">
+      <circle cx="348" cy="240" r="14"/>
+      <circle cx="380" cy="238" r="14"/>
+      <circle cx="412" cy="238" r="14"/>
+      <circle cx="444" cy="239" r="14"/>
+      <circle cx="476" cy="240" r="14"/>
+      <circle cx="508" cy="242" r="14"/>
+      <circle cx="540" cy="244" r="14"/>
+      <circle cx="572" cy="246" r="14"/>
+      <circle cx="604" cy="248" r="14"/>
+      <circle cx="636" cy="251" r="14"/>
+      <circle cx="668" cy="254" r="14"/>
+      <circle cx="698" cy="258" r="14"/>
+    </g>
+
+    <!-- Human Body Silhouette Warm & Protected Inside Capsule -->
+    <circle cx="152" cy="276" r="22" fill="#fed7aa" stroke="#f97316" stroke-width="2"/>
+    <path d="M178,282 L360,278 L690,286 L690,312 L178,312 Z" fill="#fb923c" fill-opacity="0.75" stroke="#f97316" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Verification Footer Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="40" fill="#1c1917" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="42" cy="408" r="6" fill="#22c55e"/>
+  <text x="58" y="413" fill="#fde68a" font-family="sans-serif" font-size="13" font-weight="bold">야전 검증 완료 // 연료 소모 0% 동계 블랙아웃 저체온증 방어</text>
+</svg>

@@ -110,6 +110,16 @@ export class PostingReviewService {
         score -= 15;
         warnings.push('fatalMistake.consequence가 너무 짧습니다.');
       }
+
+      // fatalMistake 내 마크다운 링크 문법 무결성 검증
+      const fatalText = `${fm.title} ${fm.description} ${fm.consequence}`;
+      const brokenMarkdownLink = /\[[^\]]*$/m.test(fatalText) || /\]\([^)]*$/m.test(fatalText);
+      if (brokenMarkdownLink) {
+        score -= 20;
+        warnings.push('fatalMistake 내에 닫히지 않은 비정상 마크다운 링크 문법이 존재합니다.');
+      } else if (fatalText.includes('/protocol-')) {
+        checks.push('치명적 실수(fatalMistake) 섹션 내 연관 생존 교범 인라인 하이퍼링크 검증 완료');
+      }
     }
 
     const stepsWithActionNote = protocol.steps.filter((s) => s.actionNote && s.actionNote.trim().length >= 10);
@@ -477,6 +487,26 @@ export class PostingReviewService {
         );
       } else {
         checks.push(`빌드된 HTML 내 모든 data-i18n 키(${usedKeys.size}종)의 UI_STRINGS 100% 매핑 확인`);
+      }
+
+      // 4. 빌드된 HTML 텍스트 노드 내 미변환 마크다운 링크([텍스트](/protocol-XX.html)) 잔존 전수 검사
+      const unparsedLinkRegex = /\[([^\]]+)\]\((?:\/protocol-\d{2}\.html|https?:\/\/[^)]+)\)/g;
+      const filesWithUnparsedLinks: string[] = [];
+      for (const fileName of htmlFiles) {
+        const content = fs.readFileSync(path.join(targetDir, fileName), 'utf-8');
+        // <script> 태그 안의 JSON 데이터셋(protoData)은 제외하고 실제 DOM 렌더링 영역만 검사
+        const bodyContent = content.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+        if (unparsedLinkRegex.test(bodyContent)) {
+          filesWithUnparsedLinks.push(fileName);
+        }
+      }
+      if (filesWithUnparsedLinks.length > 0) {
+        score -= 30;
+        warnings.push(
+          `HTML 본문에 변환되지 않은 마크다운 링크 문법([링크](/protocol-XX.html)) 잔존 감지: ${filesWithUnparsedLinks.join(', ')}`
+        );
+      } else {
+        checks.push('전체 HTML 본문 내 마크다운 링크 미변환(Unparsed Markdown Links) 0건 무결성 확인');
       }
     }
 

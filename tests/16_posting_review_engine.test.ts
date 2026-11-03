@@ -276,6 +276,39 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
       '5대 UI 카테고리 필터 탭 누락 경고가 발생해야 함'
     );
   });
+
+  await t.test('16-12: 주의/치명적 실수(fatalMistake) 섹션 및 모든 본문 DOM에 마크다운 링크가 a 태그로 100% 변환되어야 한다 (미변환 잔존 0건)', () => {
+    const htmlFiles = fs.readdirSync(PUBLIC_DIR).filter(f => f.startsWith('protocol-') && f.endsWith('.html'));
+    assert.ok(htmlFiles.length >= 21, '21개 이상의 프로토콜 HTML이 존재해야 함');
+
+    const unparsedRegex = /\[([^\]]+)\]\((?:\/protocol-\d{2}\.html|https?:\/\/[^)]+)\)/g;
+
+    for (const file of htmlFiles) {
+      const content = fs.readFileSync(path.join(PUBLIC_DIR, file), 'utf-8');
+      const bodyWithoutScripts = content.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+      const unparsedMatches = [...bodyWithoutScripts.matchAll(unparsedRegex)];
+
+      assert.equal(
+        unparsedMatches.length,
+        0,
+        `[${file}] 본문 DOM 내에 마크다운 링크 문법이 평문으로 노출됨: ${unparsedMatches.map(m => m[0]).join(', ')}`
+      );
+
+      // protocol-21과 protocol-22는 fatalMistake에 인라인 링크가 반드시 <a data-proto="crosslink">로 렌더링되어야 함
+      if (file === 'protocol-21.html') {
+        assert.ok(
+          content.includes('href="/protocol-15.html"') && content.includes('data-proto="crosslink"'),
+          'protocol-21.html의 fatalMistake 섹션에 protocol-15 링크가 a 태그로 렌더링되어야 함'
+        );
+      }
+      if (file === 'protocol-22.html') {
+        assert.ok(
+          content.includes('href="/protocol-21.html"') && content.includes('href="/protocol-06.html"'),
+          'protocol-22.html의 fatalMistake 섹션에 protocol-21 및 protocol-06 링크가 a 태그로 렌더링되어야 함'
+        );
+      }
+    }
+  });
 });
 
 

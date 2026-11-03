@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg22s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="100%" stop-color="#11161d"/>
+    </linearGradient>
+    <linearGradient id="duvetTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="paperBall" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </radialGradient>
+    <filter id="sh22s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & HUD Frame -->
+  <rect width="400" height="400" fill="url(#bg22s3)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#334155" stroke-width="1"/>
+  <path d="M8 24 L24 8 M376 8 L392 24 M8 376 L24 392 M376 392 L392 376" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="28" fill="#131922" stroke="#475569" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 구긴 신문지 공기 주머니 다리 보온 침낭</text>
+
+  <!-- Label 1 Callout Box: 25-30 Crumpled Newspaper Balls -->
+  <rect x="20" y="50" width="360" height="28" rx="2" fill="#1c1917" stroke="#f59e0b" stroke-width="1"/>
+  <text x="32" y="68" fill="#fef3c7" font-family="sans-serif" font-size="11" font-weight="bold">낱장으로 느슨하게 구긴 주먹 크기 신문지 볼 25~30개</text>
+
+  <!-- Label 2 Callout Box: 8-10cm Loft Inside Duvet Cover -->
+  <rect x="20" y="84" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <text x="32" y="102" fill="#e0f2fe" font-family="sans-serif" font-size="11" font-weight="bold">이불 커버·외투 내피 사이에 8~10cm 두께로 충진</text>
+
+  <!-- Cross-Section Diagram of Duvet Cover Filled with Crumpled Newspaper Balls -->
+  <g filter="url(#sh22s3)">
+    <!-- Bottom 3-Layer Cardboard Mat -->
+    <rect x="36" y="280" width="328" height="16" fill="#875f32" stroke="#d97706" stroke-width="1.2"/>
+    <path d="M40,288 Q46,282 52,288 T64,288 T76,288 T88,288 T100,288 T112,288 T124,288 T136,288 T148,288 T160,288 T172,288 T184,288 T196,288 T208,288 T220,288 T232,288 T244,288 T256,288 T268,288 T280,288 T292,288 T304,288 T316,288 T328,288 T340,288 T352,288" fill="none" stroke="#fde68a" stroke-width="1.2"/>
+
+    <!-- Outer Duvet / Winter Coat Shell (Lofty 8-10cm Cross-Section) -->
+    <path d="M44,278 C44,160 80,142 200,142 C320,142 356,160 356,278 Z" fill="url(#duvetTop)" stroke="#60a5fa" stroke-width="2"/>
+    <!-- Inner Lining Boundary -->
+    <path d="M68,278 C68,215 110,204 200,204 C290,204 332,215 332,278 Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+    <!-- Row of Crumpled 3D Faceted Newspaper Balls (Dead-Air Pockets) -->
+    <!-- Ball 1 -->
+    <circle cx="72" cy="240" r="18" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M62,234 L74,228 L82,240 L70,250 Z M66,242 L78,236" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 2 -->
+    <circle cx="94" cy="202" r="19" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M84,195 L98,190 L104,204 L90,212 Z M88,204 L100,198" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 3 -->
+    <circle cx="130" cy="176" r="20" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M118,170 L134,164 L142,178 L126,188 Z M122,178 L138,172" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 4 -->
+    <circle cx="175" cy="166" r="20" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M163,160 L179,154 L187,168 L171,178 Z M167,168 L183,162" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 5 -->
+    <circle cx="222" cy="166" r="20" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M210,160 L226,154 L234,168 L218,178 Z M214,168 L230,162" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 6 -->
+    <circle cx="268" cy="176" r="20" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M256,170 L272,164 L280,178 L264,188 Z M260,178 L276,172" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 7 -->
+    <circle cx="305" cy="202" r="19" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M295,195 L309,190 L315,204 L301,212 Z M299,204 L311,198" fill="none" stroke="#475569" stroke-width="1"/>
+    <!-- Ball 8 -->
+    <circle cx="328" cy="240" r="18" fill="url(#paperBall)" stroke="#475569" stroke-width="1"/>
+    <path d="M318,234 L330,228 L338,240 L326,250 Z M322,242 L334,236" fill="none" stroke="#475569" stroke-width="1"/>
+
+    <!-- Warm Orange Dead-Air Glow Circles Between Balls -->
+    <circle cx="152" cy="186" r="7" fill="#f97316" fill-opacity="0.45" stroke="#fbbf24" stroke-width="1"/>
+    <circle cx="200" cy="182" r="7" fill="#f97316" fill-opacity="0.45" stroke="#fbbf24" stroke-width="1"/>
+    <circle cx="246" cy="186" r="7" fill="#f97316" fill-opacity="0.45" stroke="#fbbf24" stroke-width="1"/>
+
+    <!-- Warm Core Chamber (Lower Body / Legs cross-section) -->
+    <ellipse cx="172" cy="252" rx="22" ry="18" fill="#334155" stroke="#fbbf24" stroke-width="1.5"/>
+    <ellipse cx="228" cy="252" rx="22" ry="18" fill="#334155" stroke="#fbbf24" stroke-width="1.5"/>
+    <path d="M162,226 Q200,214 238,226" fill="none" stroke="#f97316" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3 Callout Box: Down-Like Dead Air Pockets -->
+  <rect x="20" y="314" width="360" height="28" rx="2" fill="#271712" stroke="#f97316" stroke-width="1"/>
+  <text x="32" y="332" fill="#fed7aa" font-family="sans-serif" font-size="11" font-weight="bold">오리털 패딩과 동일한 다중 정지 공기 포켓 형성</text>
+
+  <!-- Footer Key Takeaway Banner -->
+  <rect x="14" y="352" width="372" height="32" fill="#1e1b18" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="26" y="372" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">[핵심] 하반신·발끝 보온 및 무전력 침낭 구현</text>
+</svg>

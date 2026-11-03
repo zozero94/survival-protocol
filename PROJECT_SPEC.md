@@ -72,10 +72,10 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-21, 총 20편)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-22, 총 21편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 40종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (124개 SVG 도면, 활성 감사 100종: 스텝 80 + 결과 20, 보존 24종)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 44종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (129개 SVG 도면, 활성 감사 105종: 스텝 84 + 결과 21, 보존 24종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
@@ -129,7 +129,7 @@ primitive-survival/
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 124종, 활성 정적 감사 100종: 스텝 80종 + 결과 20종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 129종, 활성 정적 감사 105종: 스텝 84종 + 결과 21종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:

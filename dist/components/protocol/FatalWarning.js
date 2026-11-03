@@ -1,4 +1,5 @@
                                                                   
+import { highlightTechnicalTerms } from './StepCard.js';
 
 /**
  * [Presentational Component]
@@ -15,15 +16,15 @@ export function renderFatalWarning(fatal              )         {
   </div>
 
   <h3 id="fatal-title" data-proto-fatal="title" class="font-title text-base sm:text-xl font-bold text-white mb-2 leading-snug">
-    ${fatal.title}
+    ${highlightTechnicalTerms(fatal.title)}
   </h3>
 
   <div class="space-y-2.5 text-xs sm:text-sm text-[#ddd] leading-relaxed">
     <p id="fatal-desc" data-proto-fatal="description">
-      ${fatal.description}
+      ${highlightTechnicalTerms(fatal.description)}
     </p>
     <div class="border-t border-[#441a1a] pt-3 font-mono text-xs text-[#ff8888] font-bold">
-      <span id="fatal-consequence" data-proto-fatal="consequence">${fatal.consequence}</span>
+      <span id="fatal-consequence" data-proto-fatal="consequence">${highlightTechnicalTerms(fatal.consequence)}</span>
     </div>
   </div>
 </section>

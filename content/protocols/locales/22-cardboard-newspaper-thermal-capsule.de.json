@@ -1,0 +1,245 @@
+{
+  "protocolId": "PR-22",
+  "category": "SHELTER",
+  "title": "Stromlose Wärmekapsel & Schlafsack (+7°C) aus Versandkartons, Zeitungspapier und alter Kleidung bei Winter-Blackout",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[WINTER-BLACKOUT HYPOTHERMIE-SCHUTZ & STROMLOSE WÄRMEKAPSUL]",
+  "summary": "Wenn Sie zu Hause bereits fertige Winterausrüstung wie einen Winterschlafsack, ein Indoor-Wärmezelt, eine Rettungsdecke, Taschenwärmer oder Wärmflaschen besitzen, nutzen Sie diese immer zuerst als schnellste und wärmste Lösung. Dauert ein Winter-Blackout oder Heizungsausfall jedoch länger an, sind Wärmepacks aufgebraucht und fehlt ein Wärmezelt, entzieht der kalte Betonboden beim Schlafen unter normalen Decken 70% Ihrer Körperwärme und führt nachts zu Unterkühlung (im Freien im Wald stattdessen eine [Laubhütte Debris Hut](/protocol-03.html) bauen). Indem Sie flachgelegte Versandkartons 3-lagig auf den Boden schichten, eine mit Küchen-Metallfolie ausgekleidete Kartonhaube über den Oberkörper stellen und faustgroß geknüllte Zeitungskugeln in einen Bettbezug füllen, erwärmt Ihre eigene Körperwärme (ca. 100W) das Kapselinnere ganz ohne Brennstoff um 6 bis 8°C über die Raumtemperatur.",
+  "timeRequired": "20 Min. (3-Lagen-Kartonmatte 5m + Folien-Kartonhaube 5m + Zeitungspapier-Schlafsack 5m + Deckenvorhang 5m)",
+  "successRate": "99% (Bei mind. 1,5cm 3-Lagen-Karton am Boden und einer faustgroßen Lüftungsöffnung an der Unterkante)",
+  "difficulty": "Einfach (Ohne Messer oder Werkzeug sofort im Zimmer aus Paketkartons, Zeitung und Bettzeug baubar)",
+  "outputPerHour": "0% Strom-/Brennstoffverbrauch / Innenraum erwärmt sich nach 15 Min. Liegezeit um +6 bis 8°C",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "5-6 Wellpappe-Versandkartons (4 breite Kartons für die Bodenmatte & 1-2 große Kartons für die Oberkörperhaube)",
+      "desc": "Wellpappe-Kartons sind die beste Wärmedämmung, wenn fertige Isomatten oder Wärmezelte fehlen. Die gewellten Luftkanäle im Karton blockieren die Bodenkälte von Beton; falten Sie die Kartons an der Klebenaht von Hand oder mit einer [Scharfen Steinklinge](/protocol-04.html) flach auseinander."
+    },
+    {
+      "id": "mat-02",
+      "name": "20-30 Bögen Zeitungspapier (oder Prospekte/Packpapier) & 1 Bettdeckenbezug oder 2-3 dicke Wintermäntel",
+      "desc": "Wärmendes Füllmaterial als Ersatz für fehlende Daunenschlafsäcke oder Heizkissen. Wenn Sie Zeitungsbögen locker zu faustgroßen Kugeln knüllen und in einen Bettbezug oder zwischen Wintermäntel füllen (Öffnungen mit [Wilder Kudzu-Schnur](/protocol-05.html) oder Schnürsenkeln zubinden), schließen die Papierfalten ruhende Warmluft wie echte Daunen ein."
+    },
+    {
+      "id": "mat-03",
+      "name": "Zwei Handspannen Küchen-Metallfolie & 1 dünne Decke oder großes Badetuch (gekochter Reis oder Kiefernharz als Kleber)",
+      "desc": "Strahlungswärme-Reflektor an der Innendecke des Kartons als Ersatz für eine Rettungsdecke. Mit zerdrücktem Reis oder Mehlkleister (im Feld [Kiefernharz-Kleber](/protocol-10.html)) wird die Metallfolie mit der glänzenden Seite nach unten an die Kartondecke geklebt und reflektiert 90% Ihrer Infrarot-Körperwärme zurück."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Flachgelegte Wellpappe-Kartons 3-lagig (ein Fingerglied dick) kreuzweise in der Zimmermitte auslegen",
+      "description": "1. **Fertigausrüstung prüfen & Platz wählen**: Prüfen Sie zuerst, ob ein Wärmezelt oder eine Isomatte vorhanden ist; falls nicht, wählen Sie einen Platz in der **Zimmermitte (oder unter einem Esstisch/Schreibtisch), mindestens einen großen Schritt (80cm-1m)** von zugigen Fenstern und kalten Außenwänden entfernt.\n2. **Versandkartons flach auseinanderfalten**: Öffnen Sie die Klappen und Seitenlaschen von 4-5 Wellpappe-Kartons mit den Händen zu flachen Platten.\n3. **3 Lagen kreuzweise übereinanderschichten**: Legen Sie die 1. Lage längs, die 2. Lage quer und die 3. Lage wieder längs versetzt übereinander, sodass keine Fugen übereinanderliegen und eine **ein Fingerglied dicke (1,5-2cm) 3-lagige Karton-Dämmmatte** entsteht.\n4. **Kälteschutz mit der Hand prüfen**: Drücken Sie Ihre Handfläche 10 Sekunden lang auf die Matte; wenn keine Betonbodenkälte mehr spürbar ist und die Hand sofort ihre eigene Wärme fühlt, ist die Bodendämmung perfekt.",
+      "actionNote": "> Warum Bodendämmung 3-mal wichtiger ist als Zudecken: Beim Liegen drückt Ihr Körpergewicht die Luftpolster einer normalen Decke unter dem Rücken platt, sodass 70% Ihrer Körperwärme rasch in den kalten Boden abfließen. Drei druckfeste Lagen Wellpappe unter Ihnen wärmen deutlich besser als zwei zusätzliche Decken obenauf.",
+      "svgFileName": "pr22-step-01.svg",
+      "svgLabels": [
+        "ABB. 01 // 3-LAGIGE KREUZWEISE KARTON-BODENMATTE",
+        "In Zimmermitte (unter Tisch) 1m weg von Fenstern legen",
+        "3 Lagen Wellpappe längs und quer versetzt schichten",
+        "1,5-2cm Gesamtdicke blockiert 85% der Bodenkälte",
+        "[KERN] Druckfeste ruhende Luftschicht gegen Bodenkälte"
+      ],
+      "deepDive": {
+        "badge": "CONDUCTIVE SHIELD",
+        "title": "Wärmeleitungsverlust auf Betonböden & Dämmtechnik mehrlagiger Wellpappe-Flutes",
+        "text": "Ein unbeheizter Betonboden entzieht dem Körper Wärme **25-mal schneller als Luft**. Da die gewellten Papierbögen (Flutes) im Inneren von Wellpappe dem Körpergewicht standhalten und tausende kleine Luftkammern einschließen, senkt eine **3-lagige Kreuzschichtung (1,5-2cm)** die Wärmeleitfähigkeit auf `0,045 W/m·K` – vergleichbar mit Styropor-Dämmplatten.",
+        "fieldSpecs": [
+          {
+            "name": "3-lagig kreuzweise geschichtete Kartonmatte & Wellen-Querschnitt",
+            "scientificName": "3-Layer Cross-Stacked Corrugated Cardboard Thermal Mat",
+            "categoryTag": "Bodenkälteschild / Druckfeste Ruheluft-Matte",
+            "imageFileName": "id-corrugated-cardboard-3layer-mat.jpg",
+            "hudCode": "FIG. SHELTER-22A // MACRO OPTIC",
+            "hudStatus": "FLOOR R-VALUE: 3-LAYER VERIFIED",
+            "traits": [
+              {
+                "label": "WELLE/LUFT",
+                "value": "**Gewellte Papierstege zwischen den Deckpapieren** verhindern das Plattdrücken der Luftpolster durch das Körpergewicht."
+              },
+              {
+                "label": "LAGEN/DICKE",
+                "value": "**3 versetzte Kreuzlagen (ein Fingerglied / 1,5-2cm dick)** beseitigen Kältebrücken an den Fugen."
+              },
+              {
+                "label": "ORT/TISCH",
+                "value": "Der Aufbau **unter einem Esstisch oder Schreibtisch in der Raumitte** bremst zusätzlich kalte Luftströmungen von oben."
+              }
+            ],
+            "fieldUse": "Indoor-Schlafunterlage bei Winter-Blackout, Kältesperre auf Betonböden in Notunterkünften"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Innendecke eines großen Kartons mit Küchen-Metallfolie auskleiden und schulterbreite Haube aufstellen",
+      "description": "1. **Schulterbreiten Karton vorbereiten**: Wählen Sie einen großen Karton, in den Kopf und Schultern bequem passen (**zweieinhalb Handspannen / 55-65cm breit, eine Faust breiter als Ihre Schultern**), und klappen Sie Boden- sowie Vorderklappen nach innen zu einem unten offenen U-Tunnel.\n2. **Glänzende Metallfolie an die Innendecke kleben**: Tupfen Sie zerdrückten gekochten Reis oder Mehlkleister an die Innendecke und Seitenwände des Kartons und drücken Sie Küchen-Metallfolie mit der **glänzenden Seite nach unten (zum Körper hin)** glatt fest.\n3. **Dachklappen doppelt falten**: Falten Sie die oberen Deckelklappen doppelt übereinander, um das Kartondach zu verstärken, und stellen Sie die Haube am Kopfende Ihrer 3-lagigen Kartonmatte auf.\n4. **Reflektierte Gesichtswärme prüfen**: Legen Sie sich mit Kopf und Oberkörper für 3 Minuten in die Haube; Sie spüren sofort, wie die Metallfolie Ihre Gesichts- und Brustwärme wie ein Wärmespiegel zurückstrahlt.",
+      "actionNote": "> Kleines Luftvolumen (Mikroklima) & Folienreflexion: Selbst im Ruhezustand gibt der menschliche Körper 100W Wärme ab – so viel wie eine Glühbirne. Statt das eiskalte Zimmer zu heizen, umschließt die folienbeschichtete Kartonhaube nur Ihren Oberkörper und verwandelt Ihre Eigenwärme in eine Wärmekuppel.",
+      "svgFileName": "pr22-step-02.svg",
+      "svgLabels": [
+        "ABB. 02 // FOLIENBESCHICHTETE KARTON-WÄRMEHAUBE",
+        "Schulterbreiter (60cm) U-förmiger Oberkörper-Karton",
+        "Glänzende Küchen-Metallfolie an der Innendecke",
+        "Reflektiert 90% der Körperwärme (100W IR) nach unten",
+        "[KERN] Verkleinert Luftvolumen & hält Strahlungswärme"
+      ],
+      "deepDive": {
+        "badge": "RADIANT DOME",
+        "title": "Einschluss von 100W menschlicher Grundumsatzwärme & Infrarot-Reflexion durch Metallfolie",
+        "text": "Ein ruhender Erwachsener gibt **80-100W Grundumsatzwärme** ab, wovon mehr als die Hälfte als unsichtbare **Ferninfrarot-Strahlung** über Kopf und Brust entweicht. Eine mit Metallfolie ausgekleidete Kartonhaube **zwei Handspannen (40-50cm) über dem Kopf** reflektiert **über 90% dieser Infrarotwärme** direkt zurück zum Körper und erhöht die Innentemperatur binnen 15 Minuten um **über 5°C**.",
+        "fieldSpecs": [
+          {
+            "name": "Mit Metallfolie ausgekleidete Oberkörper-Kartonhaube",
+            "scientificName": "Foil-Lined Corrugated Cardboard Micro-Climate Hood",
+            "categoryTag": "90% Wärmestrahlungs-Reflexion / Mikroklima-Dom",
+            "imageFileName": "id-foil-lined-cardboard-hood.jpg",
+            "hudCode": "FIG. SHELTER-22B // MACRO OPTIC",
+            "hudStatus": "IR REFLECTIVITY >90%: ACTIVE",
+            "traits": [
+              {
+                "label": "BOGEN/TUNNEL",
+                "value": "Ein **60cm breiter, 45-50cm hoher U-förmiger Kartontunnel**, der Kopf und Schultern umschließt."
+              },
+              {
+                "label": "DECKE/FOLIE",
+                "value": "**Glänzende Küchen-Metallfolie** an der Innendecke wirft die Körperwärme nach unten zurück."
+              },
+              {
+                "label": "ERSATZ/MÖBEL",
+                "value": "Fehlt ein großer Karton, **legen Sie Kartons und Decken über zwei Stühle oder unter einen niedrigen Tisch**."
+              }
+            ],
+            "fieldUse": "Stromloser Ersatz für Indoor-Wärmezelte, Kaltluftschutz für Kopf und Atemwege"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: 25 Zeitungsbögen locker zu faustgroßen Kugeln knüllen und in Bettbezug oder Mäntel füllen",
+      "description": "1. **Zeitungspapier einzeln zu Kugeln knüllen**: Trennen Sie 20-30 Bögen Zeitungspapier oder Packpapier einzeln ab und knüllen Sie jeden Bogen locker (nicht zu fest pressen) zu einer **flauschigen, faustgroßen Papierkugel**.\n2. **Gleichmäßig in Bettbezug oder Mäntel füllen**: Stopfen Sie die Zeitungskugeln gleichmäßig **eine Handbreit dick (ca. 8-10cm)** in einen Bettdeckenbezug mit Reißverschluss (oder zwischen zwei übereinandergelegte Wintermäntel bzw. Decken), sodass ein warmer Fuß- und Beinschlafsack entsteht.\n3. **Fußende extra polstern**: Füllen Sie am Fußende, wo die Zehen am schnellsten auskühlen, 5-6 zusätzliche Zeitungskugeln ein oder wickeln Sie die Füße vorab in ein trockenes Handtuch.\n4. **Bauschige Rückstellkraft testen**: Drücken Sie von oben auf die gefüllte Zeitungsdecke und lassen Sie los; wenn sie **raschelnd wie eine dicke Daunenjacke wieder nach oben federt**, ist das Warmluftpolster optimal.",
+      "actionNote": "> Warum Zeitungspapier geknüllt statt glatt eingelegt wird: Nicht das Papier selbst wärmt, sondern die 'ruhende Luft', die in den Falten eingeschlossen ist. Faustgroß geknüllte Zeitungskugeln im Bettbezug bilden hunderte kleine Luftkammern, die genau wie Gänsedaunen isolieren.",
+      "svgFileName": "pr22-step-03.svg",
+      "svgLabels": [
+        "ABB. 03 // SCHLAFSACK MIT GEKNÜLLTEN ZEITUNGSKUGELN",
+        "25-30 locker geknüllte faustgroße Zeitungskugeln",
+        "8-10cm dick in Bettdeckenbezug oder Mäntel gefüllt",
+        "Bildet vielfache ruhende Luftpolster wie echte Daunen",
+        "[KERN] Stromlose Unterkörper- & Fußwärme im Schlafsack"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR LOFT",
+        "title": "Physik ruhender Luftpolster in geknüllten Zellulosefasern & Nachahmung von Daunenfedern",
+        "text": "Hochwertige Daunenschlafsäcke wärmen nicht durch Eigenwärme der Federn, sondern weil sie **unzählige Mikrokammern ruhender Luft** festhalten. Werden Zeitungsbögen zu faustgroßen Kugeln in eine Stoffhülle gefüllt, entsteht ein 3D-Gitter aus **konvektionsfreien Lufttaschen (Loft)**, das die Wärmespeicherung gegenüber einer flachen Decke um **mehr als das 2,5-Fache** steigert.",
+        "fieldSpecs": [
+          {
+            "name": "Mit geknüllten Zeitungskugeln gefüllter Schlafsack & Ruheluft-Polster",
+            "scientificName": "Crumpled Newspaper Loft-Filled Duvet Sleeping Sack",
+            "categoryTag": "Ruheluft-Dämmstoff / Daunenschlafsack-Ersatz",
+            "imageFileName": "id-crumpled-newspaper-coat-sleeping-bag.jpg",
+            "hudCode": "FIG. SHELTER-22C // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR LOFT: 8-10CM VERIFIED",
+            "traits": [
+              {
+                "label": "FÜLLUNG/PAPIER",
+                "value": "**25-30 flauschige, faustgroße Zeitungskugeln** schließen stehende Warmluft ein."
+              },
+              {
+                "label": "HÜLLE/BEZUG",
+                "value": "Ein **Baumwoll-Bettbezug oder doppelte Wintermäntel** verhindern das Eindringen kalter Raumluft."
+              },
+              {
+                "label": "TROCKEN/FASER",
+                "value": "Papierfasern **nehmen nächtlichen Körperschweiß auf** und halten das Innere des Schlafsacks trocken."
+              }
+            ],
+            "fieldUse": "Notfall-Winterschlafsack bei fehlendem Fertigschlafsack, Isolierfüllung unter weiter Kleidung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Kartonhaube mit dem Zeitungsschlafsack verbinden und unten einen faustgroßen Lüftungsspalt lassen",
+      "description": "1. **Haube & Schlafsack 15cm überlappen**: Legen Sie sich auf der 3-lagigen Kartonmatte mit Beinen und Hüfte in den Zeitungsschlafsack und ziehen Sie dessen Oberkante **mindestens eine Handspanne (15-20cm) weit in die Öffnung der Kartonhaube hinein**, damit an der Taille keine Kaltluft einströmt.\n2. **Obere 2/3 der Öffnung mit Tuch abhängen**: Hängen Sie ein großes Badetuch oder eine dünne Decke über die Vorderseite der Kartonhaube, sodass **nur die oberen zwei Drittel bedeckt sind** und die aufsteigende Warmluft unter der Decke gehalten wird.\n3. **Unten faustgroßen (10cm) Lüftungsspalt offenlassen**: Verschließen Sie die Öffnung niemals komplett; lassen Sie **an der unteren Ecke zwingend einen faustgroßen Spalt (ca. 10cm)** frei, damit frischer Sauerstoff einströmt und Atemfeuchtigkeit entweicht.\n4. **Nach 15 Minuten +7°C Erwärmung prüfen**: Schon 15 Minuten nach dem Hineinlegen wird das Innere der Kapsel allein durch Ihre Körper- und Atemwärme **6-8°C wärmer als das kalte Zimmer**, sodass Sie ohne Zittern durchschlafen können.",
+      "actionNote": "> Warum die Kapsel niemals luftdicht verschlossen werden darf: Wer die Kartonöffnung mit Klebeband oder Plastikfolie komplett zuklebt, riskiert gefährlichen Kohlendioxid-Stau (Erstickungsgefahr) sowie starkes Schwitzwasser durch die Atemluft, wodurch Kleidung und Papier nass und kalt werden. Lassen Sie unten immer einen faustgroßen Spalt offen.",
+      "svgFileName": "pr22-step-04.svg",
+      "svgLabels": [
+        "ABB. 04 // KAPSEL-BUND + 10CM LÜFTUNGSSPALT UNTEN",
+        "Oberkörper-Folienhaube + Zeitungssack 15cm überlappen",
+        "Deckenvorhang über oberen 2/3 hält warme Luftkuppel",
+        "Faustgroßer (10cm) Spalt unten für O2 + Feuchteabzug",
+        "[KERN] Stromlos +7C im Raum ohne Kondenswasser"
+      ],
+      "deepDive": {
+        "badge": "THERMAL CAPSULE",
+        "title": "Warmluft-Auftriebsspeicherung durch oberen Vorhang & Kondensationsschutz über unteren Lüftungsspalt",
+        "text": "Da erwärmte Luft nach oben steigt, hält ein Vorhang über den **oberen 2/3 der Haubenöffnung** die warme Luftblase im Kopfbereich fest. Gleichzeitig sinken das kühlere, schwerere ausgeatmete Kohlendioxid und der Wasserdampf nach unten und entweichen auf natürliche Weise durch den **10cm großen (faustgroßen) Bodenspalt**, was sicheren Sauerstoffgehalt und trockenes Papier über Nacht garantiert.",
+        "fieldSpecs": [
+          {
+            "name": "Fertige stromlose 1-Personen-Wärmekapsel aus Karton & Zeitungspapier",
+            "scientificName": "Completed 1-Person Indoor Cardboard & Newspaper Thermal Capsule",
+            "categoryTag": "Stromloser Mikroklima-Schutz / +7°C Innentemperatur",
+            "imageFileName": "id-completed-indoor-cardboard-capsule.jpg",
+            "hudCode": "FIG. SHELTER-22D // MACRO OPTIC",
+            "hudStatus": "DELTA-T +7C & VENTILATION: VERIFIED",
+            "traits": [
+              {
+                "label": "DICHT/BUND",
+                "value": "Nahtlose Verbindung aus **3-lagiger Bodenmatte, Folien-Kartonhaube und geknülltem Zeitungsschlafsack**."
+              },
+              {
+                "label": "VORHANG/SPALT",
+                "value": "Oberer Deckenvorhang staut Warmluft, während der **10cm-Spalt unten** Schwitzwasser verhindert."
+              },
+              {
+                "label": "ZUSATZ/WÄRME",
+                "value": "Eine auf dem [Thunfischdosen-Ölheizer](/protocol-21.html) erwärmte, in ein Handtuch gewickelte Wasserflasche im Fußraum wärmt selbst bei Frost."
+              }
+            ],
+            "fieldUse": "Stromloses Indoor-Schlafzelt bei Winter-Blackouts und Ausfall der Fernwärme/Gasheizung"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Niemals Kerzen, Dosenheizer oder Kohlen in die Kartonkapsel stellen und niemals Kopf oder Öffnung mit Plastiktüten abdichten",
+    "description": "Wenn Sie offenes Feuer – wie Kerzen, Gaskocher, den [Thunfischdosen-Speiseölheizer](/protocol-21.html) oder Glut aus einem [Lehmofen](/protocol-06.html) – in eine enge Kapsel aus trockenem Karton und Zeitungspapier mitnehmen, fängt das Papier im Schlaf sofort Feuer und führt zu tödlichen Verbrennungen sowie Kohlenmonoxid-Erstickung (nutzen Sie Flammenheizer ausschließlich außerhalb in sicherem Abstand zum Wassererwärmen). Kleben Sie den Karton zudem nie luftdicht zu und ziehen Sie keine Plastiktüte über den Kopf – es besteht akute Erstickungsgefahr.",
+    "consequence": "Wenn Sie zusätzliche Wärme in der Kapsel wünschen, nehmen Sie niemals Feuer mit hinein, sondern legen Sie nur eine fest verschlossene Wärmflasche mit warmem Wasser (oder einen in dicke Handtücher gewickelten warmen Stein) ans Fußende."
+  },
+  "faqs": [
+    {
+      "question": "Womit kann ich die obere Kartonhaube ersetzen, wenn ich zu Hause nur kleine Paketkartons habe?",
+      "causeDiagnostic": "Kleine Päckchen reichen nicht über die Schulterbreite eines Erwachsenen (60cm), um daraus einen freistehenden U-Tunnel zu falten.",
+      "resolution": "Legen Sie sich **unter einen Esstisch oder Schreibtisch, oder stellen Sie zwei Stühle gegenüber, legen Sie einen Besenstiel oder aufgespannten Regenschirm darüber und hängen Sie Decken und Wintermäntel darüber**, um eine kleine Zeltkuppel zu schaffen. Falten Sie die kleinen Kartons flach oder legen Sie dicke Bücher als Kältesperre unter sich auf den Boden – das erzielt denselben +7°C-Wärmeeffekt."
+    },
+    {
+      "question": "Nach einer Nacht fühlt sich das Zeitungspapier im Bettbezug leicht klamm an. Kann ich es in der nächsten Nacht weiterverwenden?",
+      "causeDiagnostic": "Über Nacht gibt der Mensch über Haut und Atem **etwa ein halbes bis ganzes Glas Feuchtigkeit** ab, die das Zeitungspapier aufnimmt, wodurch es etwas weich wird.",
+      "resolution": "Nehmen Sie die Zeitungskugeln tagsüber aus dem Bezug, **breiten Sie sie für 2-3 Stunden auf dem trockenen Zimmerboden oder am sonnigen Fenster zum Trocknen aus und knüllen Sie sie erneut locker auf** – so kehrt die volle Dämmkraft für die nächste Nacht zurück."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Heizung und Strom im eiskalten Winter ausgefallen? Erhöhen Sie Ihre Schlaftemperatur mit Paketkartons und Zeitung um 7°C! [5-35s Body] Wenn Wärmezelt oder Schlafsack fehlen, legen Sie flache Kartons 3-lagig über Kreuz in die Zimmermitte gegen die Bodenkälte. Kleben Sie glänzende Küchenfolie an die Innendecke eines großen Kartons als Kopfhülle und füllen Sie 25 faustgroß geknüllte Zeitungskugeln wie Daunen in einen Bettbezug. Obere 2/3 der Öffnung mit einem Tuch abhängen und unten einen faustgroßen Lüftungsspalt lassen – Ihre Körperwärme heizt es in 15 Minuten auf! [35-45s Warning & Outro] Niemals Kerzen oder Heizer in den Karton stellen! Jetzt offline speichern.",
+  "outcome": {
+    "title": "Stromlose Wärmekapsel aus 3-Lagen-Kartonmatte, Folien-Reflexionshaube & Zeitungspapier-Schlafsack",
+    "badge": "FINAL SPEC // ZERO-POWER +7°C MICRO-CLIMATE CAPSULE",
+    "description": "Kombiniert eine 1,5cm dicke 3-lagige Wellpappe-Bodenmatte (blockiert 85% Bodenkälte), eine folienbeschichtete Kartonhaube (reflektiert 90% der 100W Körperwärme), einen daunenartigen Zeitungspapier-Schlafsack und einen faustgroßen Bodenlüftungsspalt zum Schutz vor Unterkühlung ohne Brennstoff.",
+    "svgFileName": "pr22-outcome.svg",
+    "svgLabels": [
+      "PR-22 ERGEBNIS // STROMLOSE +7C KARTON-WÄRMEKAPSUL",
+      "STUFE 01: 3-LAGEN-MATTE",
+      "1,5cm Karton-Bodenkälteschutz",
+      "STUFE 02: FOLIEN-HAUBE",
+      "Reflektiert 90% Körperwärme",
+      "STUFE 03: ZEITUNGSSACK",
+      "Papierbälle-Warmluftpolster",
+      "STUFE 04: VORHANG / SPALT",
+      "Wärmestau + 10cm Lüftung",
+      "PRAXISGEPRÜFT // 0% BRENNSTOFF WINTER-BLACKOUT KÄLTESCHUTZ"
+    ]
+  },
+  "contentHash": "7102df871c650344",
+  "createdAt": "2026-11-03T01:00:00.000Z"
+}

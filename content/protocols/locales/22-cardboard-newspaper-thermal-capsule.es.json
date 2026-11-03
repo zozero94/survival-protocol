@@ -1,0 +1,245 @@
+{
+  "protocolId": "PR-22",
+  "category": "SHELTER",
+  "title": "Cómo Hacer una Cápsula Térmica y Saco de Dormir Sin Electricidad (+7°C) con Cajas de Cartón, Periódico y Ropa Vieja",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[DEFENSA CONTRA HIPOTERMIA EN APAGÓN INVERNAL & CÁPSULA TÉRMICA SIN ENERGÍA]",
+  "summary": "Si en casa ya dispone de equipamiento térmico listo para usar, como un saco de dormir de invierno, tienda térmica interior, manta térmica de emergencia, parches térmicos o bolsas de agua caliente, úselos siempre primero como la opción más rápida y cálida. Sin embargo, cuando un apagón invernal o corte de gas y calefacción se prolonga, los parches térmicos se agotan y no hay tienda térmica, dormir en el suelo frío de hormigón solo con mantas drena el 70% de su calor corporal hacia el piso y provoca hipotermia nocturna (en aislamiento forestal al aire libre, construya un [Refugio de Hojarasca Debris Hut](/protocol-03.html)). Apilando 3 capas de cajas de cartón en el suelo, colocando una capucha de cartón forrada con lámina metálica de cocina y rellenando una funda nórdica con bolas de periódico arrugado, sus propios 100W de calor corporal elevan la temperatura interior de 6 a 8°C sobre la habitación sin gastar combustible.",
+  "timeRequired": "20 min (Colchoneta de 3 capas de cartón 5m + Capucha con lámina metálica 5m + Saco de periódico arrugado 5m + Cortina 5m)",
+  "successRate": "99% (Al asegurar 1.5cm+ de cartón en 3 capas en el suelo y dejar una abertura inferior de ventilación del tamaño de un puño)",
+  "difficulty": "Fácil (Se arma de inmediato sin cuchillos ni herramientas usando cajas de envío, periódico y ropa de cama)",
+  "outputPerHour": "0% consumo de energía/combustible / El interior sube +6 a 8°C a los 15 minutos de acostarse",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "5-6 Cajas de Cartón Corrugado de Envío (4 Cajas Anchas para el Suelo & 1-2 Cajas Grandes para Capucha Superior)",
+      "desc": "Las cajas de cartón corrugado son el mejor aislante térmico cuando no hay esterillas de espuma ni tiendas térmicas listas. Los canales ondulados de aire dentro del cartón bloquean el frío del suelo de cemento; ábralas por la unión pegada con la mano o con una [Hoja de Piedra Afilada](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "20-30 Hojas de Papel Periódico (o Folletos/Papel de Envolver) & 1 Funda de Edredón o 2-3 Abrigos Gruesos",
+      "desc": "Relleno aislante que sustituye a los sacos de plumas o calentadores agotados. Arrugar hojas de periódico sin apretar demasiado en bolas del tamaño de un puño y meterlas dentro de una funda de edredón o entre abrigos (ate los bordes con [Cuerda de Kudzu Salvaje](/protocol-05.html) o cordones) atrapa aire caliente igual que el plumón."
+    },
+    {
+      "id": "mat-03",
+      "name": "Dos Palmos de Lámina Metálica de Cocina & 1 Manta Fina o Toalla Grande (Arroz Cocido o Resina para Pegar)",
+      "desc": "Reflector de calor radiante fijado en el techo interior de la caja en lugar de una manta espacial comercial. Pegar lámina metálica de cocina con el lado brillante hacia abajo usando pasta de arroz o harina ([Pegamento de Resina de Pino](/protocol-10.html) en el campo) devuelve el 90% del calor infrarrojo de su cuerpo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Apile Cajas de Cartón Desplegadas en 3 Capas Cruzadas (Grosor de una Falange) en el Centro del Cuarto",
+      "description": "1. **Revisar Equipo Listo y Elegir Ubicación**: Primero compruebe si tiene tienda térmica o esterilla de acampada; si no, instálese en el **centro de la habitación (o debajo de una mesa o escritorio) al menos a un paso largo (80cm-1m)** de ventanas con corrientes y paredes exteriores heladas.\n2. **Desplegar las Cajas de Cartón**: Abra con las manos las solapas y costuras laterales de 4-5 cajas de cartón corrugado hasta dejarlas como planchas planas.\n3. **Apilar 3 Capas Alternando Dirección**: Coloque la 1.ª capa a lo largo, la 2.ª capa a lo ancho y la 3.ª capa de nuevo a lo largo para que las uniones no coincidan, formando una **colchoneta térmica de cartón de 3 capas con el grosor de una falange (1.5-2cm)**.\n4. **Comprobar el Bloqueo de Frío al Tacto**: Apoye la palma de la mano sobre la colchoneta durante 10 segundos; si ya no se siente el frío helado del cemento y su mano nota su propio calor de inmediato, el aislamiento del suelo está listo.",
+      "actionNote": "> Por Qué Aislar el Suelo Es 3 Veces Más Importante que las Mantas Encima: Al acostarse, el peso del cuerpo aplasta las bolsas de aire de la manta debajo de la espalda y el 70% de su calor corporal se escapa hacia el piso frío. Poner 3 capas firmes de cartón debajo abriga mucho más que echarse dos mantas extra encima.",
+      "svgFileName": "pr22-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // COLCHONETA DE CARTÓN DE 3 CAPAS CRUZADAS",
+        "Ubicar en Centro del Cuarto (Bajo Mesa) a 1m de Ventana",
+        "Apilar 3 Capas Cruzadas de Cartón Corrugado Ondulado",
+        "Grosor de 1.5-2cm Bloquea 85% del Frío del Suelo",
+        "[CLAVE] Colchón de Aire Quieto que Soporta el Peso"
+      ],
+      "deepDive": {
+        "badge": "CONDUCTIVE SHIELD",
+        "title": "Mecanismo de Pérdida Térmica por Conducción en Hormigón e Ingeniería del Cartón Ondulado",
+        "text": "Un piso de hormigón sin calefacción roba calor del cuerpo **25 veces más rápido que el aire**. Como las ondas internas (Flute) del cartón corrugado resisten el peso corporal sin aplastarse y encierran miles de celdas de aire quieto, **apilar 3 capas cruzadas (1.5-2cm)** reduce la conductividad térmica a `0.045 W/m·K`, igualando a una plancha de espuma aislante.",
+        "fieldSpecs": [
+          {
+            "name": "Colchoneta Térmica de Cartón de 3 Capas Cruzadas & Corte Ondulado",
+            "scientificName": "3-Layer Cross-Stacked Corrugated Cardboard Thermal Mat",
+            "categoryTag": "Escudo contra Frío del Suelo / Aire Quieto Sin Compresión",
+            "imageFileName": "id-corrugated-cardboard-3layer-mat.jpg",
+            "hudCode": "FIG. SHELTER-22A // MACRO OPTIC",
+            "hudStatus": "FLOOR R-VALUE: 3-LAYER VERIFIED",
+            "traits": [
+              {
+                "label": "ONDA/AIRE",
+                "value": "**Arcos ondulados de papel entre láminas de cartón** impiden que las cámaras de aire se aplasten con el peso."
+              },
+              {
+                "label": "CAPAS/GROSOR",
+                "value": "**3 capas alternadas en cruz (una falange / 1.5-2cm de grosor)** eliminan rendijas de frío."
+              },
+              {
+                "label": "SITIO/MESA",
+                "value": "Colocarla **debajo de una mesa o escritorio en el centro del cuarto** frena además las corrientes superiores."
+              }
+            ],
+            "fieldUse": "Esterilla aislante interior para apagones de invierno, barrera contra pisos de hormigón en refugios"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Forre el Techo Interior de una Caja Grande con Lámina Metálica de Cocina y Levante la Capucha",
+      "description": "1. **Preparar Caja Grande del Ancho de Hombros**: Elija una caja de cartón amplia donde quepan su cabeza y hombros (**dos palmos y medio / 55-65cm de ancho, un puño más ancha que sus hombros**) y doble hacia adentro las solapas inferiores y frontales para formar un túnel en U abierto por abajo.\n2. **Pegar Lámina Metálica en el Techo Interior**: Aplique puntos de arroz cocido machacado o engrudo de harina en el techo y paredes internas de la caja, y adhiera lámina metálica de cocina con **la cara más brillante mirando hacia abajo (hacia su cuerpo)**.\n3. **Reforzar el Techo con Solapas Dobles**: Doble las solapas superiores en dos capas superpuestas sin cortarlas para engrosar el techo, y coloque la capucha sobre el extremo superior de la colchoneta de cartón.\n4. **Sentir el Calor Reflejado en el Rostro**: Meta la cabeza y el torso dentro de la capucha durante 3 minutos; sentirá cómo la lámina metálica refleja el calor de su cara y pecho como un espejo.",
+      "actionNote": "> Reducción de Volumen (Microclima) y Reflexión Metálica: Incluso en reposo, el cuerpo humano emite 100W de calor como una bombilla incandescente. En vez de intentar calentar todo un cuarto helado, encerrar un pequeño túnel sobre el torso forrado con lámina brillante convierte su propio calor en una cúpula térmica.",
+      "svgFileName": "pr22-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CAPUCHA DE CARTÓN FORRADA CON LÁMINA METÁLICA",
+        "Túnel de Cartón en U del Ancho de Hombros (60cm)",
+        "Lámina Metálica de Cocina Pegada en Techo Interior",
+        "Refleja 90% del Calor Corporal (100W IR) Hacia Abajo",
+        "[CLAVE] Reduce Volumen de Aire y Atrapa Calor Radiante"
+      ],
+      "deepDive": {
+        "badge": "RADIANT DOME",
+        "title": "Confinamiento de 100W de Calor Metabólico Basal y Reflexión Infrarroja de la Lámina Metálica",
+        "text": "Un adulto en reposo irradia **80-100W de calor metabólico**, y más de la mitad se pierde desde la cabeza y el pecho como **radiación infrarroja lejana**. Colocar una capucha de cartón forrada con lámina metálica a **dos palmos (40-50cm) sobre la cabeza** refleja **más del 90% del calor infrarrojo** de vuelta al cuerpo y eleva la temperatura interna en **5°C+ en 15 minutos**.",
+        "fieldSpecs": [
+          {
+            "name": "Capucha Térmica Superior de Cartón con Interior de Lámina Metálica",
+            "scientificName": "Foil-Lined Corrugated Cardboard Micro-Climate Hood",
+            "categoryTag": "Reflexión Radiante del 90% / Domo de Microclima",
+            "imageFileName": "id-foil-lined-cardboard-hood.jpg",
+            "hudCode": "FIG. SHELTER-22B // MACRO OPTIC",
+            "hudStatus": "IR REFLECTIVITY >90%: ACTIVE",
+            "traits": [
+              {
+                "label": "ARCO/TÚNEL",
+                "value": "Túnel de **cartón en U de 60cm de ancho y 45-50cm de alto** que cubre cabeza y hombros."
+              },
+              {
+                "label": "TECHO/LÁMINA",
+                "value": "**Lámina metálica brillante de cocina** fijada en el techo interior que rebota el calor hacia abajo."
+              },
+              {
+                "label": "ALT/MUEBLE",
+                "value": "Si no hay caja grande, **cubra dos sillas o una mesa baja con cartones y mantas** para formar el túnel."
+              }
+            ],
+            "fieldUse": "Sustituto de tienda térmica interior sin electricidad, protector de aire frío para cabeza y vías respiratorias"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Arrugue 25 Hojas de Periódico en Bolas del Tamaño de un Puño y Rellene una Funda Nórdica o Abrigos",
+      "description": "1. **Arrugar Periódico en Bolas Esponjosas**: Separe 20-30 hojas de periódico o papel de envolver una por una, y arrúguelas sin apretar demasiado formando **bolas esponjosas del tamaño del puño de un adulto**.\n2. **Rellenar Funda de Edredón o Abrigos**: Introduzca las bolas de periódico de forma uniforme dentro de una funda nórdica con cierre (o entre dos abrigos de invierno o dos mantas cosidas) hasta lograr **el grosor de una palma (8-10cm)** para formar un saco térmico para las piernas.\n3. **Reforzar el Fondo para los Pies**: Añada 5-6 bolas extra de periódico en el fondo donde van los pies, o envuélvalos en una toalla seca antes de entrar.\n4. **Comprobar el Rebote Esponjoso**: Presione el edredón de periódico con la mano y suelte; si **cruje suavemente y vuelve a inflarse como una chaqueta de plumas**, las cámaras de aire quieto están listas.",
+      "actionNote": "> Por Qué Arrugar el Periódico en Vez de Ponerlo Plano: El verdadero aislante no es el papel en sí, sino el 'aire quieto' atrapado entre sus pliegues. Al meter bolas de periódico arrugado dentro de una funda de tela se crean cientos de bolsas de aire sin convección que imitan el plumón de ganso.",
+      "svgFileName": "pr22-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SACO TÉRMICO DE BOLAS DE PERIÓDICO ARRUGADO",
+        "25-30 Bolas Esponjosas de Periódico Tamaño Puño",
+        "Relleno de 8-10cm Entre Funda Nórdica o Abrigos",
+        "Forma Múltiples Bolsas de Aire Quieto Como Plumón",
+        "[CLAVE] Abrigo de Piernas y Pies Sin Electricidad"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR LOFT",
+        "title": "Física de Bolsas de Aire Quieto en Fibra de Celulosa Arrugada e Imitación del Plumón",
+        "text": "Los sacos de dormir de plumas calientan porque atrapan **miles de microbolsas de aire inmóvil** entre las plumas. Arrugar hojas de periódico en esferas del tamaño de un puño dentro de una funda textil crea una matriz tridimensional de **cámaras de aire sin convección (Loft)** que multiplica por **2.5 veces** la retención térmica de una manta plana.",
+        "fieldSpecs": [
+          {
+            "name": "Saco de Dormir Relleno de Bolas de Periódico & Bolsas de Aire Quieto",
+            "scientificName": "Crumpled Newspaper Loft-Filled Duvet Sleeping Sack",
+            "categoryTag": "Aislante de Aire Quieto / Sustituto de Saco de Plumas",
+            "imageFileName": "id-crumpled-newspaper-coat-sleeping-bag.jpg",
+            "hudCode": "FIG. SHELTER-22C // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR LOFT: 8-10CM VERIFIED",
+            "traits": [
+              {
+                "label": "RELLENO/PAPEL",
+                "value": "**25-30 bolas esponjosas de periódico tamaño puño** que atrapan aire caliente estacionario."
+              },
+              {
+                "label": "FUNDA/TELA",
+                "value": "Una **funda de edredón de algodón o abrigos superpuestos** impiden que el aire frío penetre entre el papel."
+              },
+              {
+                "label": "SECO/HUMEDAD",
+                "value": "La fibra de papel **absorbe el sudor fino nocturno**, manteniendo seco y cálido el interior del saco."
+              }
+            ],
+            "fieldUse": "Saco de dormir de emergencia cuando no hay sacos comerciales, relleno térmico dentro de abrigos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Una la Capucha de Cartón con el Saco de Periódico y Deje un Respiradero Inferior del Tamaño de un Puño",
+      "description": "1. **Solapar Capucha y Saco 15cm en la Cintura**: Acuéstese sobre la colchoneta de 3 capas de cartón con las piernas dentro del saco de periódico y suba el borde superior del saco **al menos un palmo (15-20cm) dentro de la boca de la capucha de cartón** para sellar corrientes en la cintura.\n2. **Colgar Cortina en los 2/3 Superiores**: Cuelgue una toalla grande o manta fina en la parte alta de la entrada de la capucha para **cubrir solo los dos tercios superiores**, reteniendo el aire caliente que sube hacia el techo.\n3. **Dejar Respiradero Inferior del Tamaño de un Puño (10cm)**: Nunca cierre toda la entrada; deje siempre **un hueco del tamaño de un puño adulto (unos 10cm) en la esquina inferior** para que entre oxígeno fresco y salga la humedad al respirar.\n4. **Comprobar Subida de +7°C en 15 Minutos**: A los 15 minutos de acostarse dentro, aunque el aire del cuarto esté helado, el interior de la cápsula se vuelve **templado y acogedor (+6 a 8°C más cálido)** solo con su calor corporal.",
+      "actionNote": "> Por Qué Nunca Debe Sellar la Entrada por Completo: Tapar toda la caja con plástico o cinta acumula dióxido de carbono al respirar (riesgo de asfixia) y hace que el vapor del aliento se condense en gotas de agua que mojan la ropa y el papel, arruinando el aislamiento. Deje siempre un hueco del tamaño de un puño abajo.",
+      "svgFileName": "pr22-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // UNIÓN DE CÁPSULA Y RESPIRADERO INFERIOR 10CM",
+        "Solapar 15cm Capucha con Lámina y Saco de Periódico",
+        "Cortina en 2/3 Superiores Retiene Bolsa de Aire Caliente",
+        "Hueco Inferior de 1 Puño (10cm) Evacua Humedad y Da O2",
+        "[CLAVE] +7C Interior Sin Energía y Cero Condensación"
+      ],
+      "deepDive": {
+        "badge": "THERMAL CAPSULE",
+        "title": "Retención de Aire Caliente Flotante con Cortina Superior y Control de Condensación por Ventilación Inferior",
+        "text": "Como el aire caliente sube, cubrir los **2/3 superiores de la entrada con una manta** conserva la burbuja de calor sobre la cabeza y el pecho. Al mismo tiempo, el dióxido de carbono y el vapor de agua exhalados, más densos y fríos, salen por gravedad a través de la **abertura inferior de 10cm (tamaño puño)**, garantizando oxígeno seguro y evitando que el papel se humedezca.",
+        "fieldSpecs": [
+          {
+            "name": "Cápsula Térmica Individual Completa de Cartón y Periódico Sin Electricidad",
+            "scientificName": "Completed 1-Person Indoor Cardboard & Newspaper Thermal Capsule",
+            "categoryTag": "Refugio Térmico Sin Energía / +7°C en Interior",
+            "imageFileName": "id-completed-indoor-cardboard-capsule.jpg",
+            "hudCode": "FIG. SHELTER-22D // MACRO OPTIC",
+            "hudStatus": "DELTA-T +7C & VENTILATION: VERIFIED",
+            "traits": [
+              {
+                "label": "UNIÓN/SELLO",
+                "value": "Integración continua de **colchoneta de 3 capas, capucha con lámina metálica y saco de periódico**."
+              },
+              {
+                "label": "CORTINA/VENT",
+                "value": "Cortina superior que retiene calor y **respiradero inferior de 10cm** que evita condensación."
+              },
+              {
+                "label": "APOYO/CALOR",
+                "value": "Meter en los pies una botella de agua tibia calentada en el [Calentador de Lata de Atún](/protocol-21.html) envuelta en toalla abriga incluso bajo cero."
+              }
+            ],
+            "fieldUse": "Tienda térmica interior sin electricidad para dormir durante apagones invernales y cortes de gas"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Jamás Meta Velas, Calentadores de Lata ni Brasas Dentro de la Cápsula de Cartón, y Nunca Cubra su Cabeza ni Selle la Entrada con Bolsas Plásticas",
+    "description": "Introducir fuego abierto —como velas, hornillos de gas, el [Calentador de Lata de Atún y Aceite](/protocol-21.html) o brasas de un [Fogón de Barro](/protocol-06.html)— dentro de una cápsula estrecha de cartón y periódico seco prenderá fuego al papel al moverse dormido, causando un incendio mortal e intoxicación por monóxido de carbono (use cualquier calentador de llama siempre fuera de la caja en un lugar despejado solo para calentar agua). Tampoco selle la caja con cinta ni se cubra la cabeza con bolsas plásticas, pues causa asfixia fatal.",
+    "consequence": "Si desea añadir calor extra dentro de la cápsula, nunca meta fuego: llene una botella resistente bien cerrada con agua tibia (o envuelva una piedra templada en varias toallas) y colóquela en los pies."
+  },
+  "faqs": [
+    {
+      "question": "¿Con qué puedo sustituir la capucha superior si en casa no tengo cajas de cartón suficientemente grandes?",
+      "causeDiagnostic": "Si las cajas de envío son pequeñas, no alcanzan el ancho de hombros de un adulto (60cm) para formar un túnel en U por sí solas.",
+      "resolution": "Acuéstese **debajo de la mesa del comedor o de un escritorio, o ponga dos sillas enfrentadas, apoye un palo de escoba o paraguas abierto encima y cúbralo con mantas y abrigos** para crear una pequeña tienda. Ponga las cajas pequeñas desplegadas o libros gruesos en el suelo debajo de usted para cortar el frío del piso y logrará el mismo aumento de +7°C."
+    },
+    {
+      "question": "Al despertar por la mañana noté el periódico un poco húmedo. ¿Puedo volver a usarlo la noche siguiente?",
+      "causeDiagnostic": "Durante el sueño el cuerpo exhala y transpira **entre medio vaso y un vaso de agua**, humedad que el periódico absorbe para mantener seco su cuerpo.",
+      "resolution": "Durante el día saque las bolas de periódico de la funda, **extiéndalas sobre el suelo seco o junto a una ventana soleada durante 2-3 horas para que se sequen y vuelva a ahuecarlas**; recuperarán el 100% de su capacidad aislante."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] ¿Sin luz ni calefacción en pleno invierno? ¡Sube 7°C la temperatura de tu cama con cajas de cartón y periódico! [5-35s Body] Si no tienes tienda térmica ni saco de dormir, apila 3 capas cruzadas de cartón en el centro del cuarto para cortar el frío del piso. Forra el techo interior de una caja grande con lámina metálica de cocina como capucha, y rellena una funda de edredón con 25 bolas de periódico arrugado como si fueran plumas. Cubre los 2/3 superiores de la entrada con una toalla dejando un hueco de un puño abajo: ¡tu propio calor lo calienta en 15 minutos! [35-45s Warning & Outro] ¡Jamás metas velas ni estufas dentro de la caja! Guarda este manual offline ahora.",
+  "outcome": {
+    "title": "Cápsula Térmica Sin Electricidad con Colchoneta de Cartón de 3 Capas, Capucha Reflectante y Saco de Periódico",
+    "badge": "FINAL SPEC // ZERO-POWER +7°C MICRO-CLIMATE CAPSULE",
+    "description": "Sistema de supervivencia interior que combina una colchoneta de cartón cruzado de 1.5cm (bloquea 85% del frío del suelo), capucha con lámina metálica (refleja 90% de los 100W corporales), saco de bolas de periódico tipo plumón y respiradero inferior de 10cm para evitar la hipotermia sin combustible.",
+    "svgFileName": "pr22-outcome.svg",
+    "svgLabels": [
+      "PR-22 RESULTADO // CÁPSULA TÉRMICA +7C DE CARTÓN Y PERIÓDICO",
+      "ETAPA 01: CARTÓN 3 CAPAS",
+      "1.5cm Cruzado Bloquea Frío Piso",
+      "ETAPA 02: CAPUCHA METÁLICA",
+      "Domo Refleja 90% Calor Corporal",
+      "ETAPA 03: SACO DE PERIÓDICO",
+      "Bolas de Papel Aire Quieto",
+      "ETAPA 04: CORTINA Y VENTEO",
+      "Atrapa Calor y Ventila 10cm",
+      "VERIFICADO // 0% COMBUSTIBLE DEFENSA HIPOTERMIA EN APAGÓN"
+    ]
+  },
+  "contentHash": "7102df871c650344",
+  "createdAt": "2026-11-03T01:00:00.000Z"
+}

@@ -1,0 +1,245 @@
+{
+  "protocolId": "PR-22",
+  "category": "SHELTER",
+  "title": "How to Build a Zero-Power Indoor Thermal Capsule & Sleeping Bag (+7°C) with Cardboard Boxes, Newspaper & Old Clothes",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[WINTER BLACKOUT HYPOTHERMIA DEFENSE & ZERO-POWER THERMAL CAPSULE]",
+  "summary": "If your home already has ready-made winter gear such as a cold-weather sleeping bag, indoor thermal tent, mylar survival blanket, chemical hand warmers, or hot water bottles, always use those first as the fastest and warmest solution. However, when a winter blackout or heating failure drags on, hand warmers are depleted, and no ready-made thermal tent is available, sleeping directly on a cold concrete floor under ordinary blankets drains 70% of your body heat into the floor and causes overnight hypothermia (in outdoor wilderness isolation, build a [Debris Hut Shelter](/protocol-03.html)). By stacking flattened shipping cardboard boxes 3 layers thick on the floor, standing a kitchen foil-lined cardboard hood over your upper body, and stuffing fist-sized crumpled newspaper balls inside a duvet cover, your own 100W metabolic body heat warms the capsule interior 6 to 8°C above the room temperature with zero fuel.",
+  "timeRequired": "20 mins (3-layer cardboard floor mat 5m + Foil-lined cardboard hood 5m + Crumpled newspaper sleeping bag 5m + Blanket curtain 5m)",
+  "successRate": "99% (When securing 1.5cm+ 3-layer cardboard floor insulation and a fist-sized bottom air vent gap)",
+  "difficulty": "Easy (Built immediately indoors without knives or tools using shipping boxes, newspaper, and bedding)",
+  "outputPerHour": "0% Fuel/Power consumed / Capsule interior warms +6 to 8°C within 15 mins of lying down",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "5-6 Corrugated Shipping Cardboard Boxes (4 Wide Boxes for Floor Mat & 1-2 Large Boxes for Upper-Body Hood)",
+      "desc": "Corrugated cardboard boxes serve as top-tier thermal insulation when ready-made foam camping mats or indoor tents are unavailable. The wavy air flutes inside the cardboard block cold conduction from concrete floors; unfold them along the glued seam by hand or with a [Sharp Stone Blade](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "20-30 Sheets of Newspaper (or Flyers/Wrapping Paper) & 1 Duvet Cover or 2-3 Thick Winter Coats",
+      "desc": "Thermal loft filler that replaces depleted down sleeping bags or hot packs. Loosely crumpling newspaper sheets into fist-sized balls and stuffing them between a duvet cover or layered winter coats (tie openings with [Natural Kudzu Cordage](/protocol-05.html) or shoelaces) traps warm dead air just like down feathers."
+    },
+    {
+      "id": "mat-03",
+      "name": "Two Handspans of Kitchen Metal Foil & 1 Thin Blanket or Large Bath Towel (Cooked Rice or Pine Resin Paste)",
+      "desc": "Radiant heat reflector attached inside the cardboard hood ceiling in place of a ready-made survival blanket. Gluing kitchen foil shiny-side-down to the inner ceiling using mashed rice paste or flour paste ([Pine Resin Glue](/protocol-10.html) in the field) reflects 90% of your body's infrared heat back onto you."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Stack Flattened Cardboard Boxes 3 Layers Thick (One Finger Joint) in the Center of the Room",
+      "description": "1. **Check Ready-Made Gear & Choose Spot**: First check if you have a ready-made thermal tent or camping mat; if not, set up in the **center of the room (or under a dining table/desk) at least one full stride (80cm-1m) away** from drafty windows and freezing exterior walls.\n2. **Flatten Shipping Boxes Wide**: Tear open the flaps and side seams of 4-5 corrugated cardboard boxes by hand to spread them into flat boards.\n3. **Cross-Stack 3 Alternating Layers**: Stack the flattened boxes 3 layers thick—Layer 1 lengthwise, Layer 2 crosswise, and Layer 3 lengthwise—so seams never overlap, forming a **one-finger-joint-thick (1.5-2cm) 3-layer cardboard thermal mat**.\n4. **Verify Cold Barrier by Touch**: Press your palm against the top of the mat for 10 seconds; if the icy concrete chill is gone and your palm immediately feels its own warmth returning, ground insulation is complete.",
+      "actionNote": "> Why Floor Insulation Is 3x More Important Than Top Blankets: When lying down, your body weight crushes the air pockets in blankets underneath you, allowing 70% of your body heat to drain rapidly into the cold floor. Three rigid layers of corrugated cardboard beneath you keep you far warmer than adding two extra blankets on top.",
+      "svgFileName": "pr22-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 3-LAYER CROSS-STACKED CARDBOARD FLOOR MAT",
+        "Place in Room Center (Under Table) 1m From Windows",
+        "Cross-Stack 3 Layers of Wavy Corrugated Cardboard",
+        "1.5-2cm Total Thickness Blocks 85% Floor Cold Loss",
+        "[KEY] Crush-Resistant Dead-Air Floor Insulation"
+      ],
+      "deepDive": {
+        "badge": "CONDUCTIVE SHIELD",
+        "title": "Concrete Floor Conductive Heat Loss Mechanics & Multi-Layer Corrugated Flute Insulation",
+        "text": "Unheated concrete floors conduct heat away from the human body **25 times faster than air**. Because the wavy fluted channels inside corrugated cardboard resist compression under body weight and hold thousands of tiny dead-air cells, **cross-stacking 3 layers (1.5-2cm)** lowers thermal conductivity to `0.045 W/m·K`, matching rigid foam board insulation.",
+        "fieldSpecs": [
+          {
+            "name": "3-Layer Cross-Stacked Cardboard Mat & Wavy Flute Cross-Section",
+            "scientificName": "3-Layer Cross-Stacked Corrugated Cardboard Thermal Mat",
+            "categoryTag": "Conductive Cold Shield / Non-Compressing Dead-Air Mat",
+            "imageFileName": "id-corrugated-cardboard-3layer-mat.jpg",
+            "hudCode": "FIG. SHELTER-22A // MACRO OPTIC",
+            "hudStatus": "FLOOR R-VALUE: 3-LAYER VERIFIED",
+            "traits": [
+              {
+                "label": "FLUTE/CELLS",
+                "value": "**Wavy fluted paper arches sandwiched between linerboards** prevent air pockets from collapsing under body weight."
+              },
+              {
+                "label": "STACK/THICK",
+                "value": "**3 alternating cross-grain layers (one finger joint / 1.5-2cm thick)** eliminate cold seam gaps."
+              },
+              {
+                "label": "SPOT/UNDER",
+                "value": "Positioning **under a desk or table in the room center** adds an extra overhead barrier against cold drafts."
+              }
+            ],
+            "fieldUse": "Winter blackout indoor sleeping pad, emergency shelter concrete floor cold barrier"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Line the Inner Ceiling of a Large Cardboard Box with Kitchen Foil and Stand the Shoulder-Width Hood",
+      "description": "1. **Prepare Shoulder-Width Box Hood**: Select a large cardboard box wide enough for your head and shoulders (**two and a half handspans / 55-65cm wide, a fist wider than your shoulders**), and fold the bottom and front flaps inward to form an open-bottom U-shaped tunnel hood.\n2. **Attach Shiny Foil to Inner Ceiling**: Dab cooked rice paste or flour paste across the inner ceiling and side walls of the box, and press sheets of kitchen metal foil smoothly with the **shiniest side facing downward toward your body**.\n3. **Double-Fold Top Roof Flaps**: Fold the top flaps in two overlapping layers to thicken the roof, then stand the hood over the head end of your 3-layer cardboard floor mat.\n4. **Feel Reflected Facial Warmth**: Lie with your head and upper torso inside the foil-lined hood for 3 minutes; you will feel the foil reflecting your facial and chest heat downward like a mirror.",
+      "actionNote": "> Micro-Climate Volume Reduction & Foil Reflection: Even at rest, the human body radiates 100W of heat like an incandescent bulb. Instead of trying to heat an entire freezing room, enclosing a small hood around your upper body lined with shiny foil turns your own body heat into a personal warming dome.",
+      "svgFileName": "pr22-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // FOIL-LINED CARDBOARD THERMAL HOOD TUNNEL",
+        "Shoulder-Width (60cm) U-Shaped Cardboard Upper Hood",
+        "Shiny Kitchen Metal Foil Lined Across Inner Ceiling",
+        "Reflects 90% of Human Body Heat (100W IR) Downward",
+        "[KEY] Shrinks Heated Air Volume & Traps Radiant Heat"
+      ],
+      "deepDive": {
+        "badge": "RADIANT DOME",
+        "title": "Trapping 100W Human Basal Metabolic Heat & Infrared Reflectivity of Metal Foil",
+        "text": "A resting adult emits **80-100W of basal metabolic heat**, over half of which escapes from the head, neck, and torso as **far-infrared radiation**. Positioning a foil-lined cardboard hood **two handspans (40-50cm) above the head** reflects **over 90% of infrared radiant heat** back onto the body while blocking room convection, raising hood temperature by **5°C+ within 15 minutes**.",
+        "fieldSpecs": [
+          {
+            "name": "Foil-Lined Cardboard Upper-Body Thermal Hood Capsule",
+            "scientificName": "Foil-Lined Corrugated Cardboard Micro-Climate Hood",
+            "categoryTag": "90% Radiant Heat Reflection / Micro-Climate Dome",
+            "imageFileName": "id-foil-lined-cardboard-hood.jpg",
+            "hudCode": "FIG. SHELTER-22B // MACRO OPTIC",
+            "hudStatus": "IR REFLECTIVITY >90%: ACTIVE",
+            "traits": [
+              {
+                "label": "ARCH/HOOD",
+                "value": "A **60cm-wide, 45-50cm-tall U-shaped cardboard tunnel** enclosing the head and shoulders."
+              },
+              {
+                "label": "LINING/FOIL",
+                "value": "**Shiny kitchen metal foil** adhered across the inner roof reflects body heat downward."
+              },
+              {
+                "label": "ALT/FRAME",
+                "value": "If no large box is available, **drape cardboard and blankets across two chairs or under a low table**."
+              }
+            ],
+            "fieldUse": "Zero-power indoor thermal tent substitute, head and respiratory cold-air shield"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Loosely Crumple 25 Sheets of Newspaper into Fist-Sized Balls and Stuff a Duvet Cover or Coats",
+      "description": "1. **Crumple Newspaper into Fist-Sized Balls**: Separate 20-30 full sheets of newspaper or wrapping paper one by one, and crumple each sheet loosely into a **fluffy, adult-fist-sized paper ball** without crushing it too tightly.\n2. **Stuff Evenly Inside Duvet Cover or Coats**: Pack the crumpled newspaper balls evenly inside a zippered duvet cover (or between two layered winter coats or blankets) to a **palm-width loft thickness (8-10cm)** to form a lower-body sleeping bag sack.\n3. **Reinforce the Footbox**: Stuff an extra 5-6 crumpled newspaper balls at the bottom foot area where toes chill fastest, or wrap your feet in a dry towel before sliding in.\n4. **Test Springy Loft Recovery**: Press down on the stuffed newspaper quilt with your hand and release; when it **rustles and springs back up like a puffy down jacket**, dead-air insulation is ready.",
+      "actionNote": "> Why Newspaper Must Be Crumpled Rather Than Laid Flat: Still air trapped inside the paper folds—not the paper itself—is the real insulator. Crumpling sheets into fist-sized balls inside a duvet cover creates hundreds of non-convecting dead-air pockets that mimic goose down.",
+      "svgFileName": "pr22-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CRUMPLED NEWSPAPER DEAD-AIR SLEEPING BAG",
+        "25-30 Loosely Crumpled Fist-Sized Newspaper Balls",
+        "Stuffed 8-10cm Thick Inside Duvet Cover or Coats",
+        "Forms Multi-Pocket Dead Air Insulation Like Down",
+        "[KEY] Zero-Power Lower-Body & Foot Thermal Sack"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR LOFT",
+        "title": "Dead-Air Pocket Physics of Crumpled Cellulose Fibers & Down Feather Mimicry",
+        "text": "High-end down sleeping bags insulate not because feathers generate heat, but because they trap **microscopic pockets of stationary air**. Loosely crumpling newspaper into fist-sized spheres inside a fabric shell creates a 3D matrix of **non-convecting dead air pockets (Loft)**, boosting thermal retention to **over 2.5x** that of a single flat blanket.",
+        "fieldSpecs": [
+          {
+            "name": "Crumpled Newspaper Ball Sleeping Sack & Dead-Air Loft Matrix",
+            "scientificName": "Crumpled Newspaper Loft-Filled Duvet Sleeping Sack",
+            "categoryTag": "Dead-Air Loft Insulator / Down Sleeping Bag Substitute",
+            "imageFileName": "id-crumpled-newspaper-coat-sleeping-bag.jpg",
+            "hudCode": "FIG. SHELTER-22C // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR LOFT: 8-10CM VERIFIED",
+            "traits": [
+              {
+                "label": "LOFT/PAPER",
+                "value": "**25-30 fluffy fist-sized newspaper balls** trap stationary warm air pockets."
+              },
+              {
+                "label": "SHELL/COVER",
+                "value": "A **cotton duvet cover or layered winter coats** block cold room air from penetrating between the paper balls."
+              },
+              {
+                "label": "WICK/DRY",
+                "value": "Cellulose paper fibers **absorb overnight perspired moisture**, keeping the inside of the sleeping sack dry."
+              }
+            ],
+            "fieldUse": "Emergency blackout sleeping bag when ready-made bags are unavailable, inside-coat torso stuffing"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Join the Upper Box Hood to the Newspaper Sleeping Bag and Leave a Fist-Sized Bottom Air Vent",
+      "description": "1. **Overlap Hood & Sleeping Bag by 15cm**: Lie on the 3-layer cardboard mat with your legs and waist inside the newspaper sleeping bag, pulling the top edge of the bag **at least one handspan (15-20cm) inside the cardboard hood opening** so no cold air leaks at your waist.\n2. **Drape Blanket Curtain Over Top 2/3 of Opening**: Hang a large bath towel or thin blanket across the top of the cardboard hood opening to **cover only the upper two-thirds**, trapping rising warm air near the ceiling.\n3. **Keep a Fist-Sized (10cm) Bottom Vent Gap**: Never seal the opening completely; leave a **fist-sized gap (about 10cm wide) at the bottom corner of the hood opening** so fresh oxygen enters and exhaled moisture escapes.\n4. **Verify +7°C Interior Warming After 15 Mins**: Within 15 minutes of lying inside, even if the room air stings your nose with cold, the capsule interior warms **6-8°C higher than the room** from your body heat alone.",
+      "actionNote": "> Why You Must Never Seal the Capsule Airtight: Taping the box shut or covering the opening with plastic traps exhaled carbon dioxide (risking suffocation) and causes breath moisture to condense inside the box, soaking your clothes and paper insulation. Always keep a fist-sized vent gap at the bottom corner.",
+      "svgFileName": "pr22-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CAPSULE SEAL AND 10CM BOTTOM AIR VENT",
+        "Overlap Upper Foil Box Hood and Newspaper Bag 15cm",
+        "Top 2/3 Blanket Curtain Traps Rising Warm Air Pocket",
+        "Fist-Sized (10cm) Bottom Corner Vent for O2/Moisture",
+        "[KEY] +7C Indoor Warmth while Preventing Condensation"
+      ],
+      "deepDive": {
+        "badge": "THERMAL CAPSULE",
+        "title": "Warm Air Buoyancy Trapping via Top Curtain & Bottom Vent Condensation Control",
+        "text": "Because warm air rises, draping a curtain over the **upper 2/3 of the hood opening** retains the buoyant warm air dome around your head and torso. Meanwhile, cooler, denser exhaled carbon dioxide and water vapor sink and exit naturally through the **bottom 10cm (fist-sized) vent gap**, maintaining safe oxygen levels and keeping the paper insulation dry all night.",
+        "fieldSpecs": [
+          {
+            "name": "Completed 1-Person Zero-Power Cardboard & Newspaper Thermal Capsule",
+            "scientificName": "Completed 1-Person Indoor Cardboard & Newspaper Thermal Capsule",
+            "categoryTag": "Zero-Power Micro-Climate Shelter / +7°C Indoor Gain",
+            "imageFileName": "id-completed-indoor-cardboard-capsule.jpg",
+            "hudCode": "FIG. SHELTER-22D // MACRO OPTIC",
+            "hudStatus": "DELTA-T +7C & VENTILATION: VERIFIED",
+            "traits": [
+              {
+                "label": "SEAL/JOINT",
+                "value": "Seamless union of the **3-layer floor mat, foil-lined cardboard hood, and crumpled newspaper sleeping sack**."
+              },
+              {
+                "label": "CURTAIN/VENT",
+                "value": "Top blanket curtain holds warm air while the **10cm bottom corner vent** prevents condensation."
+              },
+              {
+                "label": "BOOST/BOTTLE",
+                "value": "Placing a towel-wrapped warm water bottle heated on the [Tuna Can Oil Heater](/protocol-21.html) at your feet keeps you warm even in sub-zero rooms."
+              }
+            ],
+            "fieldUse": "Zero-power indoor sleeping shelter during winter blackouts and heating grid failures"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Never Bring Candles, Oil Heaters, or Charcoal Embers Inside the Cardboard Capsule, and Never Seal Your Head or Box Opening with Plastic Bags",
+    "description": "Bringing open flames—such as candles, gas stoves, the [Tuna Can Cooking Oil Heater](/protocol-21.html), or charcoal embers from a [Clay Hearth](/protocol-06.html)—inside a dry cardboard and newspaper capsule will ignite the paper if you shift in your sleep, causing instant lethal fire and carbon monoxide suffocation (always keep any flame heater outside in a clear, safe area solely to warm water). Furthermore, sealing the box shut with tape or pulling a plastic bag over your head causes fatal suffocation and severe condensation.",
+    "consequence": "If you want extra heat inside the capsule, never bring fire inside—instead, pour warm water into a tightly capped metal or thick bottle (or wrap a warmed stone in thick towels) and place it safely at your feet."
+  },
+  "faqs": [
+    {
+      "question": "What can I use instead of a large cardboard box if I only have small delivery boxes at home?",
+      "causeDiagnostic": "Small parcel boxes cannot span an adult's shoulder width (60cm) to form a self-supporting U-shaped hood.",
+      "resolution": "Set up **underneath a dining table or desk, or place two chairs facing each other, lay broomsticks or an open umbrella across them, and drape blankets and winter coats over the top** to create a low tunnel. Flatten your small cardboard boxes or stack thick books underneath you on the floor to block conductive cold, achieving the same +7°C micro-climate effect."
+    },
+    {
+      "question": "After sleeping overnight, the crumpled newspaper inside the duvet cover feels slightly damp. Can I reuse it the next night?",
+      "causeDiagnostic": "The human body releases **half a cup to a full cup of moisture** overnight through breath and perspiration, which the newspaper absorbs, making the paper slightly limp.",
+      "resolution": "During the day, take the newspaper balls out of the cover, **spread them across a dry floor or sunny window for 2-3 hours to dry, and re-crumple them into fluffy balls** to restore 100% of their insulating loft for the next night."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Heating cut off in a freezing winter blackout? Raise your sleeping temperature by 7°C with cardboard boxes and newspaper! [5-35s Body] If you don't have a thermal tent or sleeping bag, cross-stack flattened cardboard boxes 3 layers thick in the center of the room to block icy floor cold. Line a large box ceiling with shiny kitchen foil as an upper-body hood, and stuff 25 fist-sized crumpled newspaper balls inside a duvet cover like down feathers. Drape a towel over the top 2/3 of the opening while leaving a fist-sized bottom air vent—your body heat warms it in 15 minutes! [35-45s Warning & Outro] Never bring candles or heaters inside the box! Save this offline survival manual now.",
+  "outcome": {
+    "title": "Integrated 3-Layer Cardboard Mat, Foil Reflective Hood & Crumpled Newspaper Sleeping Bag Thermal Capsule",
+    "badge": "FINAL SPEC // ZERO-POWER +7°C MICRO-CLIMATE CAPSULE",
+    "description": "Combining a 1.5cm 3-layer cross-stacked cardboard floor mat (blocking 85% floor cold), a foil-lined cardboard hood (reflecting 90% of 100W body heat), a down-mimicking crumpled newspaper sleeping bag, and a bottom fist-sized vent gap to prevent hypothermia indoors with zero fuel.",
+    "svgFileName": "pr22-outcome.svg",
+    "svgLabels": [
+      "PR-22 OUTCOME // ZERO-POWER +7C CARDBOARD THERMAL CAPSULE",
+      "STAGE 01: 3-LAYER MAT",
+      "1.5cm Cardboard Cold Shield",
+      "STAGE 02: FOIL BOX HOOD",
+      "90% Body Heat Reflector Dome",
+      "STAGE 03: NEWSPAPER BAG",
+      "Paper Ball Dead-Air Pockets",
+      "STAGE 04: CURTAIN / VENT",
+      "Top Warmth Trap + 10cm Vent",
+      "FIELD VERIFIED // 0% FUEL WINTER BLACKOUT HYPOTHERMIA DEFENSE"
+    ]
+  },
+  "contentHash": "7102df871c650344",
+  "createdAt": "2026-11-03T01:00:00.000Z"
+}

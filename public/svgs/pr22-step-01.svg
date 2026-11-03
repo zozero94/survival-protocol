@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg22s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="100%" stop-color="#11161d"/>
+    </linearGradient>
+    <linearGradient id="cbTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c89d66"/>
+      <stop offset="50%" stop-color="#a87c48"/>
+      <stop offset="100%" stop-color="#875f32"/>
+    </linearGradient>
+    <linearGradient id="cbEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#755129"/>
+      <stop offset="100%" stop-color="#4e3418"/>
+    </linearGradient>
+    <linearGradient id="coldFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="sh22s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & HUD Frame -->
+  <rect width="400" height="400" fill="url(#bg22s1)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#334155" stroke-width="1"/>
+  <path d="M8 24 L24 8 M376 8 L392 24 M8 376 L24 392 M376 392 L392 376" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="28" fill="#131922" stroke="#475569" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // 3중 교차 골판지 바닥 단열 매트 구축</text>
+
+  <!-- Label 1 Callout Box: Room Center Placement -->
+  <rect x="20" y="50" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="34" cy="64" r="4" fill="#38bdf8"/>
+  <text x="46" y="68" fill="#e0f2fe" font-family="sans-serif" font-size="11" font-weight="bold">창문·외벽에서 1m 떨어진 방 중앙(책상 아래) 배치</text>
+
+  <!-- Cold Concrete Floor Base -->
+  <g filter="url(#sh22s1)">
+    <polygon points="40,260 200,210 360,260 200,310" fill="url(#coldFloor)" stroke="#475569" stroke-width="1.5"/>
+    <!-- Cold Blue Upward Arrows Blocked by Mat -->
+    <path d="M110,285 L110,262 M105,268 L110,262 L115,268" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <path d="M200,298 L200,275 M195,281 L200,275 L205,281" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <path d="M290,285 L290,262 M285,268 L290,262 L295,268" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+
+    <!-- Layer 1: Longitudinal Cardboard Sheet (Bottom) -->
+    <polygon points="55,232 200,186 345,232 200,278" fill="url(#cbTop)" stroke="#eab308" stroke-width="1"/>
+    <polygon points="55,232 200,278 200,288 55,242" fill="url(#cbEdge)" stroke="#92400e" stroke-width="1"/>
+    <polygon points="200,278 345,232 345,242 200,288" fill="#5c3d1e" stroke="#92400e" stroke-width="1"/>
+    <!-- Wavy Flute Corrugation along Layer 1 Edge -->
+    <path d="M62,239 Q67,234 72,242 T82,245 T92,248 T102,251 T112,254 T122,257 T132,260 T142,263 T152,266 T162,269 T172,272 T182,275 T192,278" fill="none" stroke="#fde68a" stroke-width="1.2"/>
+
+    <!-- Layer 2: Cross-Grain Transverse Cardboard Sheet (Middle) -->
+    <polygon points="62,208 200,164 338,208 200,252" fill="url(#cbTop)" stroke="#f59e0b" stroke-width="1"/>
+    <polygon points="62,208 200,252 200,262 62,218" fill="url(#cbEdge)" stroke="#92400e" stroke-width="1"/>
+    <polygon points="200,252 338,208 338,218 200,262" fill="#5c3d1e" stroke="#92400e" stroke-width="1"/>
+    <line x1="131" y1="186" x2="269" y2="230" stroke="#78350f" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <!-- Wavy Flute Corrugation along Layer 2 Right Edge -->
+    <path d="M206,255 Q211,248 216,252 T226,249 T236,246 T246,243 T256,240 T266,237 T276,234 T286,231 T296,228 T306,225 T316,222 T326,219" fill="none" stroke="#fde68a" stroke-width="1.2"/>
+
+    <!-- Layer 3: Longitudinal Cardboard Sheet (Top) -->
+    <polygon points="70,184 200,142 330,184 200,226" fill="url(#cbTop)" stroke="#fef08a" stroke-width="1.2"/>
+    <polygon points="70,184 200,226 200,236 70,194" fill="url(#cbEdge)" stroke="#b45309" stroke-width="1"/>
+    <polygon points="200,226 330,184 330,194 200,236" fill="#5c3d1e" stroke="#b45309" stroke-width="1"/>
+    <line x1="135" y1="205" x2="265" y2="163" stroke="#78350f" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <path d="M76,191 Q81,186 86,194 T96,197 T106,200 T116,203 T126,206 T136,209 T146,212 T156,215 T166,218 T176,221 T186,224" fill="none" stroke="#fef08a" stroke-width="1.2"/>
+  </g>
+
+  <!-- Zoom Loupe: Wavy Flute Cross-Section (Top Right) -->
+  <g filter="url(#sh22s1)">
+    <circle cx="328" cy="126" r="36" fill="#0f172a" stroke="#f59e0b" stroke-width="1.8"/>
+    <line x1="298" y1="112" x2="358" y2="112" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M300,118 Q305,106 310,118 T320,118 T330,118 T340,118 T350,118 T356,118" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
+    <line x1="296" y1="124" x2="360" y2="124" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M298,130 Q303,118 308,130 T318,130 T328,130 T338,130 T348,130 T358,130" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
+    <line x1="298" y1="136" x2="358" y2="136" stroke="#d97706" stroke-width="2.5"/>
+    <line x1="292" y1="142" x2="265" y2="180" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Label 2 Callout Box: Cross-Grain 3-Layer Stacking -->
+  <rect x="20" y="92" width="256" height="28" rx="2" fill="#1c1917" stroke="#f59e0b" stroke-width="1"/>
+  <text x="30" y="110" fill="#fef3c7" font-family="sans-serif" font-size="11" font-weight="bold">골판지 물결 공기층 세로·가로 3겹 교차 적층</text>
+
+  <!-- Label 3 Callout Box: 1.5~2cm Thickness & 85% Cold Block -->
+  <rect x="20" y="314" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <text x="32" y="332" fill="#bae6fd" font-family="sans-serif" font-size="11" font-weight="bold">총 두께 1.5~2cm 확보로 바닥 전도 냉기 85% 차단</text>
+
+  <!-- Footer Key Takeaway Banner -->
+  <rect x="14" y="352" width="372" height="32" fill="#1e1b18" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="26" y="372" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">[핵심] 체중 압축에 견디는 바닥 정지 공기층 형성</text>
+</svg>

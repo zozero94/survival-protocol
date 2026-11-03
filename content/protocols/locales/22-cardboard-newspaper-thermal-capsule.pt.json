@@ -1,0 +1,245 @@
+{
+  "protocolId": "PR-22",
+  "category": "SHELTER",
+  "title": "Como Fazer uma Cápsula Térmica e Saco de Dormir Sem Energia (+7°C) com Caixas de Papelão, Jornal e Roupas Velhas",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[DEFESA CONTRA HIPOTERMIA EM APAGÃO DE INVERNO & CÁPSULA TÉRMICA SEM ENERGIA]",
+  "summary": "Se você já tiver equipamentos de inverno prontos em casa, como saco de dormir térmico, barraca térmica interna, manta aluminizada de emergência, aquecedores químicos ou bolsa de água quente, use-os sempre primeiro como a solução mais rápida e quente. Porém, quando um apagão de inverno ou corte de aquecimento se prolonga, os aquecedores acabam e não há barraca térmica, dormir no chão frio de concreto apenas com cobertores drena 70% do calor do corpo para o piso e causa hipotermia durante o sono (em isolamento na mata, construa um [Abrigo de Folhas Secas Debris Hut](/protocol-03.html)). Empilhando caixas de papelão desmontadas em 3 camadas no chão, montando um capuz de papelão forrado com folha metálica culinária e enchendo uma capa de edredom com bolas de jornal amassado, seus próprios 100W de calor corporal aquecem o interior da cápsula de 6 a 8°C acima da temperatura do quarto sem gastar combustível.",
+  "timeRequired": "20 min (Colchonete de 3 camadas de papelão 5m + Capuz com folha metálica 5m + Saco de jornal amassado 5m + Cortina 5m)",
+  "successRate": "99% (Garantindo 1,5cm+ de papelão em 3 camadas no chão e mantendo uma abertura inferior de ventilação do tamanho de um punho)",
+  "difficulty": "Fácil (Montado imediatamente sem facas ou ferramentas usando caixas de entrega, jornal e roupa de cama)",
+  "outputPerHour": "0% de consumo de energia/combustível / Interior aquece +6 a 8°C após 15 minutos deitado",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "5-6 Caixas de Papelão Ondulado de Entrega (4 Caixas Largas para o Chão & 1-2 Caixas Grandes para o Capuz Superior)",
+      "desc": "Caixas de papelão ondulado são o melhor isolante térmico quando não há isolantes de espuma nem barracas térmicas prontas. Os canais ondulados de ar dentro do papelão bloqueiam o frio do piso de concreto; abra-as pela emenda colada com a mão ou com uma [Lâmina de Pedra Afiada](/protocol-04.html)."
+    },
+    {
+      "id": "mat-02",
+      "name": "20-30 Folhas de Jornal (ou Panfletos/Papel de Embrulho) & 1 Capa de Edredom ou 2-3 Casacos Grossos de Inverno",
+      "desc": "Enchimento térmico que substitui sacos de plumas ou aquecedores esgotados. Amassar folhas de jornal frouxamente em bolas do tamanho de um punho e colocá-las dentro de uma capa de edredom ou entre casacos (amarre as pontas com [Corda de Kudzu Selvagem](/protocol-05.html) ou cadarços) prende o ar quente parado igual às plumas de ganso."
+    },
+    {
+      "id": "mat-03",
+      "name": "Dois Palmos de Folha Metálica de Cozinha & 1 Cobertor Fino ou Toalha de Banho Grande (Arroz Cozido ou Resina para Colar)",
+      "desc": "Refletor de calor radiante colado no teto interno da caixa no lugar de uma manta térmica comercial. Colar folha metálica culinária com o lado brilhante voltado para baixo usando arroz amassado ou goma de farinha ([Cola de Resina de Pinheiro](/protocol-10.html) no campo) devolve 90% do calor infravermelho do seu corpo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Empilhe Caixas de Papelão Abertas em 3 Camadas Cruzadas (Espessura de uma Falange) no Centro do Quarto",
+      "description": "1. **Verificar Equipamentos Prontos e Escolher o Local**: Primeiro veja se há barraca térmica ou isolante de camping em casa; se não houver, monte no **centro do quarto (ou debaixo de uma mesa de jantar/escrivaninha) a pelo menos um passo largo (80cm-1m)** de janelas com frestas e paredes externas geladas.\n2. **Abrir as Caixas de Papelão**: Descole com as mãos as abas e laterais de 4-5 caixas de papelão ondulado até formarem chapas retas.\n3. **Empilhar 3 Camadas Alternando a Direção**: Coloque a 1.ª camada no sentido comprido, a 2.ª atravessada e a 3.ª de novo no sentido comprido para desencontrar as frestas, formando um **colchonete térmico de papelão de 3 camadas com uma falange de espessura (1,5-2cm)**.\n4. **Testar o Bloqueio de Frio com a Mão**: Encoste a palma da mão no colchonete por 10 segundos; se o gelo do piso de cimento sumir e sua mão sentir o próprio calor imediatamente, o isolamento de solo está pronto.",
+      "actionNote": "> Por Que Isolar o Chão É 3 Vezes Mais Importante que os Cobertores de Cima: Quando você se deita, o peso do corpo esmaga o ar do cobertor debaixo das costas e 70% do calor corporal foge rápido para o piso frio. Colocar 3 camadas firmes de papelão por baixo aquece muito mais do que jogar dois cobertores extras por cima.",
+      "svgFileName": "pr22-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // COLCHONETE DE PAPELÃO DE 3 CAMADAS CRUZADAS",
+        "No Centro do Quarto (Sob Mesa) a 1m da Janela",
+        "Empilhar 3 Camadas Cruzadas de Papelão Ondulado",
+        "Espessura de 1,5-2cm Bloqueia 85% do Frio do Piso",
+        "[CHAVE] Camada de Ar Parado que Suporta o Peso"
+      ],
+      "deepDive": {
+        "badge": "CONDUCTIVE SHIELD",
+        "title": "Mecanismo de Perda Térmica por Condução no Concreto & Engenharia do Papelão Ondulado",
+        "text": "Um piso de concreto sem aquecimento rouba calor do corpo **25 vezes mais rápido que o ar**. Como as ondas internas (Flute) do papelão ondulado suportam o peso corporal sem amassar e prendem milhares de células de ar parado, **empilhar 3 camadas cruzadas (1,5-2cm)** reduz a condutividade térmica para `0,045 W/m·K`, equivalente a uma placa de isopor.",
+        "fieldSpecs": [
+          {
+            "name": "Colchonete Térmico de Papelão de 3 Camadas Cruzadas & Corte Ondulado",
+            "scientificName": "3-Layer Cross-Stacked Corrugated Cardboard Thermal Mat",
+            "categoryTag": "Escudo Contra Frio do Piso / Ar Parado Sem Compressão",
+            "imageFileName": "id-corrugated-cardboard-3layer-mat.jpg",
+            "hudCode": "FIG. SHELTER-22A // MACRO OPTIC",
+            "hudStatus": "FLOOR R-VALUE: 3-LAYER VERIFIED",
+            "traits": [
+              {
+                "label": "ONDA/AR",
+                "value": "**Arcos ondulados de papel entre chapas de papelão** impedem que os bolsões de ar sejam esmagados pelo peso."
+              },
+              {
+                "label": "CAMADAS/ESP",
+                "value": "**3 camadas alternadas em cruz (uma falange / 1,5-2cm de espessura)** eliminam frestas frias."
+              },
+              {
+                "label": "LOCAL/MESA",
+                "value": "Montar **debaixo de uma mesa ou escrivaninha no centro do quarto** bloqueia também correntes frias superiores."
+              }
+            ],
+            "fieldUse": "Isolante de solo interno para apagões de inverno, barreira contra piso frio de concreto em abrigos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Forre o Teto Interno de uma Caixa Grande com Folha Metálica de Cozinha e Monte o Capuz Térmico",
+      "description": "1. **Preparar Caixa Grande da Largura dos Ombros**: Escolha uma caixa de papelão larga onde caibam sua cabeça e ombros (**dois palmos e meio / 55-65cm de largura, um punho mais larga que os ombros**) e dobre para dentro as abas inferiores e frontais formando um túnel em U aberto embaixo.\n2. **Colar Folha Metálica no Teto Interno**: Aplique pontinhos de arroz cozido amassado ou goma de farinha no teto e nas paredes internas da caixa, e fixe a folha metálica de cozinha com **o lado mais brilhante voltado para baixo (para o seu corpo)**.\n3. **Reforçar o Teto com Abas Duplas**: Dobre as abas superiores em duas camadas sobrepostas sem cortá-las para engrossar o teto, e posicione o capuz na cabeceira do colchonete de papelão.\n4. **Sentir o Calor Refletido no Rosto**: Coloque a cabeça e o tronco dentro do capuz por 3 minutos; você sentirá a folha metálica refletindo o calor do rosto e peito de volta como um espelho.",
+      "actionNote": "> Redução de Volume (Microclima) e Reflexão Metálica: Mesmo parado, o corpo humano emite 100W de calor como uma lâmpada incandescente. Em vez de tentar aquecer o quarto inteiro, fechar um pequeno túnel sobre o tronco forrado com folha brilhante transforma seu próprio calor em uma cúpula aquecida.",
+      "svgFileName": "pr22-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CAPUZ DE PAPELÃO FORRADO COM FOLHA METÁLICA",
+        "Túnel de Papelão em U da Largura dos Ombros (60cm)",
+        "Folha Metálica de Cozinha Colada no Teto Interno",
+        "Reflete 90% do Calor Corporal (100W IR) Para Baixo",
+        "[CHAVE] Reduz Volume de Ar e Retém Calor Radiante"
+      ],
+      "deepDive": {
+        "badge": "RADIANT DOME",
+        "title": "Confinamento de 100W de Calor Metabólico Basal & Reflexão Infravermelha da Folha Metálica",
+        "text": "Um adulto em repouso emite **80-100W de calor metabólico**, e mais da metade escapa pela cabeça e tórax como **radiação infravermelha longa**. Posicionar um capuz de papelão forrado com folha metálica a **dois palmos (40-50cm) acima da cabeça** reflete **mais de 90% do calor infravermelho** de volta ao corpo e eleva a temperatura interna em **5°C+ em 15 minutos**.",
+        "fieldSpecs": [
+          {
+            "name": "Capuz Térmico Superior de Papelão Revestido com Folha Metálica",
+            "scientificName": "Foil-Lined Corrugated Cardboard Micro-Climate Hood",
+            "categoryTag": "Reflexão Radiante de 90% / Domo de Microclima",
+            "imageFileName": "id-foil-lined-cardboard-hood.jpg",
+            "hudCode": "FIG. SHELTER-22B // MACRO OPTIC",
+            "hudStatus": "IR REFLECTIVITY >90%: ACTIVE",
+            "traits": [
+              {
+                "label": "ARCO/TÚNEL",
+                "value": "Túnel de **papelão em U com 60cm de largura e 45-50cm de altura** cobrindo cabeça e ombros."
+              },
+              {
+                "label": "TETO/FOLHA",
+                "value": "**Folha metálica brilhante de cozinha** colada no teto interno que rebate o calor para baixo."
+              },
+              {
+                "label": "ALT/MÓVEIS",
+                "value": "Se não houver caixa grande, **cubra duas cadeiras ou uma mesa baixa com papelão e cobertores**."
+              }
+            ],
+            "fieldUse": "Substituto de barraca térmica interna sem energia, escudo contra ar frio para cabeça e vias aéreas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Amasse 25 Folhas de Jornal em Bolas do Tamanho de um Punho e Encha uma Capa de Edredom ou Casacos",
+      "description": "1. **Amassar Jornal em Bolas Fofas**: Separe 20-30 folhas de jornal ou papel de embrulho uma por uma e amasse sem apertar demais, formando **bolas fofas do tamanho do punho de um adulto**.\n2. **Preencher Capa de Edredom ou Casacos**: Espalhe as bolas de jornal uniformemente dentro de uma capa de edredom com zíper (ou entre dois casacos de inverno ou dois cobertores) até atingir **a espessura de um palmo/mão (8-10cm)** para formar um saco térmico para as pernas.\n3. **Reforçar o Fundo dos Pés**: Coloque 5-6 bolas extras de jornal no fundo onde ficam os pés, ou enrole os pés em uma toalha seca antes de entrar.\n4. **Testar a Elasticidade do Colchão de Ar**: Aperte o edredom de jornal com a mão e solte; quando ele **farfalhar e voltar a estufar como uma jaqueta de plumas**, os bolsões de ar parado estão prontos.",
+      "actionNote": "> Por Que Amassar o Jornal em Vez de Esticar: O verdadeiro isolante não é o papel em si, mas o 'ar parado' preso entre as dobras. Encher uma capa de tecido com bolas de jornal cria centenas de câmaras de ar sem convecção que imitam plumas de ganso.",
+      "svgFileName": "pr22-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SACO TÉRMICO DE BOLAS DE JORNAL AMASSADO",
+        "25-30 Bolas Fofas de Jornal do Tamanho de um Punho",
+        "Preenchimento de 8-10cm em Capa de Edredom ou Casacos",
+        "Forma Múltiplos Bolsões de Ar Parado Como Plumas",
+        "[CHAVE] Aquecimento de Pernas e Pés Sem Energia"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR LOFT",
+        "title": "Física dos Bolsões de Ar Parado em Fibras de Celulose Amassadas & Imitação de Plumas",
+        "text": "Sacos de dormir de plumas aquecem porque prendem **milhares de microbolsões de ar imóvel** entre as penas. Amassar folhas de jornal em esferas do tamanho de um punho dentro de uma capa de tecido cria uma matriz 3D de **bolsões de ar sem convecção (Loft)** que aumenta em **mais de 2,5 vezes** a retenção térmica de um cobertor comum.",
+        "fieldSpecs": [
+          {
+            "name": "Saco de Dormir Preenchido com Bolas de Jornal & Bolsões de Ar Parado",
+            "scientificName": "Crumpled Newspaper Loft-Filled Duvet Sleeping Sack",
+            "categoryTag": "Isolante de Ar Parado / Substituto de Saco de Plumas",
+            "imageFileName": "id-crumpled-newspaper-coat-sleeping-bag.jpg",
+            "hudCode": "FIG. SHELTER-22C // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR LOFT: 8-10CM VERIFIED",
+            "traits": [
+              {
+                "label": "MIOLO/PAPEL",
+                "value": "**25-30 bolas fofas de jornal tamanho punho** que retêm ar quente estacionário."
+              },
+              {
+                "label": "CAPA/TECIDO",
+                "value": "Uma **capa de edredom de algodão ou casacos sobrepostos** impedem a entrada de ar frio entre o papel."
+              },
+              {
+                "label": "SECO/UMIDADE",
+                "value": "As fibras de papel **absorvem o suor fino noturno**, mantendo o interior do saco seco e aquecido."
+              }
+            ],
+            "fieldUse": "Saco de dormir de emergência na falta de sacos prontos, enchimento térmico sob casacos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Una o Capuz de Papelão ao Saco de Jornal e Deixe uma Abertura Inferior do Tamanho de um Punho",
+      "description": "1. **Sobrepor Capuz e Saco em 15cm na Cintura**: Deite-se sobre o colchonete de 3 camadas de papelão com as pernas dentro do saco de jornal e puxe a borda superior do saco **pelo menos um palmo (15-20cm) para dentro da boca do capuz de papelão** para vedar o vento na cintura.\n2. **Pendurar Cortina nos 2/3 Superiores**: Pendure uma toalha grande ou cobertor fino na parte alta da entrada do capuz para **cobrir apenas os dois terços superiores**, segurando o ar quente que sobe até o teto.\n3. **Manter Fresta Inferior do Tamanho de um Punho (10cm)**: Nunca feche toda a entrada; deixe sempre **uma abertura do tamanho de um punho adulto (cerca de 10cm) no canto inferior** para entrar oxigênio fresco e sair a umidade da respiração.\n4. **Verificar Aumento de +7°C em 15 Minutos**: Após 15 minutos deitado lá dentro, mesmo que o quarto esteja congelando, o interior da cápsula fica **quentinho (+6 a 8°C acima do quarto)** apenas com o calor do seu corpo.",
+      "actionNote": "> Por Que Nunca Vedar a Entrada Completamente: Fechar toda a caixa com plástico ou fita acumula gás carbônico da respiração (risco de asfixia) e faz o vapor do hálito virar gotas de água que molham a roupa e o papel, destruindo o isolamento. Deixe sempre uma fresta de um punho embaixo.",
+      "svgFileName": "pr22-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // UNIÃO DA CÁPSULA E ABERTURA INFERIOR DE 10CM",
+        "Sobrepor 15cm Capuz com Folha e Saco de Jornal",
+        "Cortina nos 2/3 Superiores Retém Bolsão de Ar Quente",
+        "Fresta Inferior de 1 Punho (10cm) Drena Umidade e Dá O2",
+        "[CHAVE] +7C Interno Sem Energia e Zero Condensação"
+      ],
+      "deepDive": {
+        "badge": "THERMAL CAPSULE",
+        "title": "Retenção de Ar Quente Flutuante com Cortina Superior & Controle de Condensação por Ventilação Inferior",
+        "text": "Como o ar quente sobe, cobrir os **2/3 superiores da entrada com um cobertor** preserva a bolha de calor sobre a cabeça e o peito. Ao mesmo tempo, o gás carbônico e o vapor de água exalados, mais frios e pesados, descem e saem naturalmente pela **fresta inferior de 10cm (tamanho de um punho)**, garantindo oxigênio seguro e mantendo o papel seco a noite toda.",
+        "fieldSpecs": [
+          {
+            "name": "Cápsula Térmica Individual Completa de Papelão e Jornal Sem Energia",
+            "scientificName": "Completed 1-Person Indoor Cardboard & Newspaper Thermal Capsule",
+            "categoryTag": "Abrigo Térmico Sem Energia / +7°C no Interior",
+            "imageFileName": "id-completed-indoor-cardboard-capsule.jpg",
+            "hudCode": "FIG. SHELTER-22D // MACRO OPTIC",
+            "hudStatus": "DELTA-T +7C & VENTILATION: VERIFIED",
+            "traits": [
+              {
+                "label": "UNIÃO/VEDAÇÃO",
+                "value": "Integração contínua do **colchonete de 3 camadas, capuz com folha metálica e saco de jornal**."
+              },
+              {
+                "label": "CORTINA/VENT",
+                "value": "Cortina superior que segura o calor e **abertura inferior de 10cm** que impede condensação."
+              },
+              {
+                "label": "APOIO/CALOR",
+                "value": "Colocar nos pés uma garrafa de água morna aquecida no [Aquecedor de Lata de Atum](/protocol-21.html) enrolada em toalha aquece mesmo abaixo de zero."
+              }
+            ],
+            "fieldUse": "Barraca térmica interna sem energia para dormir durante apagões de inverno e cortes de gás"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Jamais Coloque Velas, Aquecedores de Lata ou Brasas Dentro da Cápsula de Papelão, e Nunca Cubra a Cabeça nem Vede a Entrada com Sacos Plásticos",
+    "description": "Colocar fogo aberto — como velas, fogareiros a gás, o [Aquecedor de Lata de Atum e Óleo](/protocol-21.html) ou brasas de um [Forno de Barro](/protocol-06.html) — dentro de uma cápsula estreita de papelão e jornal seco incendiará o papel ao se mexer dormindo, causando incêndio fatal e asfixia por monóxido de carbono (use qualquer aquecedor de chama sempre fora da caixa em local seguro apenas para amornar água). Também nunca vede a caixa com fita nem coloque sacos plásticos na cabeça, pois causa asfixia mortal.",
+    "consequence": "Se quiser calor extra dentro da cápsula, nunca leve fogo para dentro: encha uma garrafa resistente bem fechada com água morna (ou enrole uma pedra aquecida em várias toalhas) e coloque nos pés."
+  },
+  "faqs": [
+    {
+      "question": "Com o que posso substituir o capuz superior se eu só tiver caixas de papelão pequenas em casa?",
+      "causeDiagnostic": "Caixas de encomenda pequenas não alcançam a largura dos ombros de um adulto (60cm) para formar um túnel em U sozinhas.",
+      "resolution": "Deite-se **debaixo da mesa de jantar ou escrivaninha, ou coloque duas cadeiras frente a frente, apoie um cabo de vassoura ou guarda-chuva aberto em cima e cubra com cobertores e casacos** para criar uma pequena barraca. Espalhe as caixas pequenas abertas ou livros grossos no chão debaixo de você para cortar o frio do piso e obterá o mesmo ganho de +7°C."
+    },
+    {
+      "question": "Ao acordar de manhã notei que o jornal ficou um pouco úmido. Posso usá-lo novamente na noite seguinte?",
+      "causeDiagnostic": "Durante o sono o corpo libera **de meio copo a um copo de água** pelo suor e respiração, umidade que o jornal absorve para manter você seco.",
+      "resolution": "Durante o dia retire as bolas de jornal da capa, **espalhe-as no chão seco ou perto de uma janela ensolarada por 2-3 horas para secar e amasse-as de novo**; elas recuperarão 100% do poder isolante."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Faltou luz e aquecimento no frio intenso? Aumente em 7°C a temperatura da sua cama com caixas de papelão e jornal! [5-35s Body] Se não tiver barraca térmica nem saco de dormir, empilhe 3 camadas cruzadas de papelão no centro do quarto para cortar o frio do chão. Forre o teto interno de uma caixa grande com folha metálica de cozinha como capuz, e encha uma capa de edredom com 25 bolas de jornal amassado imitando plumas. Cubra os 2/3 superiores da entrada com uma toalha deixando uma fresta de um punho embaixo: seu próprio calor aquece tudo em 15 minutos! [35-45s Warning & Outro] Jamais coloque velas ou aquecedores dentro da caixa! Salve este manual offline agora.",
+  "outcome": {
+    "title": "Cápsula Térmica Sem Energia com Colchonete de Papelão de 3 Camadas, Capuz Refletor e Saco de Jornal",
+    "badge": "FINAL SPEC // ZERO-POWER +7°C MICRO-CLIMATE CAPSULE",
+    "description": "Sistema de sobrevivência interno que combina colchonete de papelão cruzado de 1,5cm (bloqueia 85% do frio do piso), capuz com folha metálica (reflete 90% dos 100W corporais), saco de bolas de jornal tipo plumas e abertura inferior de 10cm para prevenir hipotermia sem combustível.",
+    "svgFileName": "pr22-outcome.svg",
+    "svgLabels": [
+      "PR-22 RESULTADO // CÁPSULA TÉRMICA +7C DE PAPELÃO E JORNAL",
+      "ETAPA 01: PAPELÃO 3 CAMADAS",
+      "1,5cm Corta Frio do Piso",
+      "ETAPA 02: CAPUZ METÁLICO",
+      "Reflete 90% Calor Corporal",
+      "ETAPA 03: SACO DE JORNAL",
+      "Bolas de Papel Bolsões de Ar",
+      "ETAPA 04: CORTINA E RESPIRO",
+      "Retém Calor e Ventila 10cm",
+      "VERIFICADO // 0% COMBUSTÍVEL DEFESA HIPOTERMIA EM APAGÃO"
+    ]
+  },
+  "contentHash": "7102df871c650344",
+  "createdAt": "2026-11-03T01:00:00.000Z"
+}

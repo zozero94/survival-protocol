@@ -237,7 +237,7 @@ export function getLocaleRuntimeScript()         {
         document.querySelectorAll('[data-proto-fatal]').forEach(function(el) {
           var prop = el.getAttribute('data-proto-fatal');
           if (proto.fatalMistake && proto.fatalMistake[prop] !== undefined) {
-            el.textContent = proto.fatalMistake[prop];
+            el.innerHTML = renderHighlightTermsClient(proto.fatalMistake[prop]);
           }
         });
 

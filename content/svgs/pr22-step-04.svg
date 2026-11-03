@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg22s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="100%" stop-color="#11161d"/>
+    </linearGradient>
+    <linearGradient id="warmInterior" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c2d12" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#9a3412" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="sh22s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & HUD Frame -->
+  <rect width="400" height="400" fill="url(#bg22s4)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#334155" stroke-width="1"/>
+  <path d="M8 24 L24 8 M376 8 L392 24 M8 376 L24 392 M376 392 L392 376" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="28" fill="#131922" stroke="#475569" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // 방한 캡슐 결합 및 하단 주먹 크기 환기구</text>
+
+  <!-- Label 1 Callout Box: 15cm Overlap Seal -->
+  <rect x="20" y="50" width="360" height="28" rx="2" fill="#1c1917" stroke="#f59e0b" stroke-width="1"/>
+  <text x="32" y="68" fill="#fef3c7" font-family="sans-serif" font-size="11" font-weight="bold">상체 은박 골판지 후드와 하체 신문지 침낭 15cm 겹침</text>
+
+  <!-- Label 2 Callout Box: Top 2/3 Blanket Curtain -->
+  <rect x="20" y="84" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <text x="32" y="102" fill="#e0f2fe" font-family="sans-serif" font-size="11" font-weight="bold">상단 2/3 담요 커튼으로 상부 온기 유출 차단</text>
+
+  <!-- Side-Profile Cross-Section of Complete Capsule, Curtain, and Bottom 10cm Vent -->
+  <g filter="url(#sh22s4)">
+    <!-- 3-Layer Cardboard Floor Mat -->
+    <rect x="24" y="276" width="352" height="16" fill="#9a6b38" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="24" y1="281" x2="376" y2="281" stroke="#fde68a" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="24" y1="287" x2="376" y2="287" stroke="#fde68a" stroke-width="1" stroke-dasharray="4,2"/>
+
+    <!-- Warm Interior Thermal Zone -->
+    <path d="M40,276 L40,146 L195,146 L195,205 L356,215 L356,276 Z" fill="url(#warmInterior)"/>
+
+    <!-- Left Section: Foil-Lined Cardboard Upper-Body Hood -->
+    <path d="M36,276 L36,140 L202,140 L202,152 L48,152 L48,276 Z" fill="#b88b54" stroke="#fbbf24" stroke-width="1.5"/>
+    <!-- Foil Reflective Layer Inside Roof -->
+    <line x1="50" y1="155" x2="198" y2="155" stroke="#f8fafc" stroke-width="3"/>
+
+    <!-- Top 2/3 Hanging Blanket Curtain at Hood Opening (x=196, y=148 to y=234) -->
+    <path d="M194,148 Q204,190 194,234 L204,234 Q214,190 204,148 Z" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.5"/>
+
+    <!-- Bottom 10cm (Fist-Sized) Vent Gap (y=234 to y=276) with Fresh O2 / Moisture Arrows -->
+    <rect x="184" y="238" width="28" height="34" rx="4" fill="#0f172a" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Outgoing Moisture / CO2 Arrow -->
+    <path d="M170,250 L226,250 M220,245 L226,250 L220,255" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <!-- Incoming Fresh Air Arrow -->
+    <path d="M226,264 L170,264 M176,259 L170,264 L176,269" stroke="#22c55e" stroke-width="1.8" fill="none"/>
+
+    <!-- Right Section: Newspaper-Stuffed Sleeping Bag Overlapping 15cm at Waist -->
+    <path d="M168,202 C220,196 320,202 362,222 L362,276 L168,276 Z" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Newspaper Balls Inside Sleeping Bag -->
+    <circle cx="190" cy="218" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <circle cx="216" cy="216" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <circle cx="242" cy="217" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <circle cx="268" cy="219" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <circle cx="294" cy="222" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <circle cx="320" cy="225" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <circle cx="344" cy="230" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+
+    <!-- Reclining Human Silhouette Inside Capsule -->
+    <circle cx="88" cy="242" r="15" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+    <path d="M106,248 L180,246 L336,254 L336,270 L106,270 Z" fill="#fdba74" fill-opacity="0.7" stroke="#f97316" stroke-width="1.5"/>
+
+    <!-- Retained Upper Warm Air Pocket Loop -->
+    <path d="M95,212 C95,180 155,180 155,212" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <polygon points="155,212 150,204 160,204" fill="#fbbf24"/>
+  </g>
+
+  <!-- Label 3 Callout Box: Bottom Fist-Sized Air & Moisture Vent -->
+  <rect x="20" y="314" width="360" height="28" rx="2" fill="#11221c" stroke="#22c55e" stroke-width="1"/>
+  <text x="32" y="332" fill="#bbf7d0" font-family="sans-serif" font-size="11" font-weight="bold">하단 모서리 주먹 1개 크기(10cm) 숨구멍·습기 배출구</text>
+
+  <!-- Footer Key Takeaway Banner -->
+  <rect x="14" y="352" width="372" height="32" fill="#1e1b18" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="26" y="372" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">[핵심] 무전력 실내 +7C 상승 및 결로·산소부족 예방</text>
+</svg>

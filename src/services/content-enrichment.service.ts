@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import type { Protocol } from '../types/protocol.types.ts';
 
 
@@ -187,11 +189,24 @@ export class CrossLinkerService {
     protocol: Protocol,
     allProtocols: Protocol[] = []
   ): CrossLinkAuditResult {
-    const validIds = new Set<string>(
-      allProtocols.length > 0
-        ? allProtocols.map(p => p.protocolId)
-        : PROTOCOL_DEPENDENCY_CATALOG.map(c => c.protocolId)
-    );
+    const validIds = new Set<string>();
+    if (allProtocols.length > 0) {
+      allProtocols.forEach(p => validIds.add(p.protocolId));
+    } else {
+      // 1. 카탈로그 기본 등록 ID
+      PROTOCOL_DEPENDENCY_CATALOG.forEach(c => validIds.add(c.protocolId));
+      // 2. content/protocols 디렉토리에 실재하는 모든 프로토콜 ID 동적 자동 스캔
+      try {
+        const protocolsDir = path.resolve(process.cwd(), 'content/protocols');
+        if (fs.existsSync(protocolsDir)) {
+          const files = fs.readdirSync(protocolsDir).filter(f => f.endsWith('.json'));
+          for (const f of files) {
+            const m = f.match(/^(\d{2})/);
+            if (m) validIds.add(`PR-${m[1]}`);
+          }
+        }
+      } catch (_e) {}
+    }
 
     const existingLinks: Array<{ label: string; url: string; location: string }> = [];
     const validationIssues: InlineLinkValidationIssue[] = [];
@@ -257,7 +272,16 @@ export class CrossLinkerService {
     (protocol.steps || []).forEach(step => {
       inspectField(step.description, `steps[${step.stepNumber}].description`);
       inspectField(step.actionNote, `steps[${step.stepNumber}].actionNote`);
+      if (step.deepDive) {
+        inspectField(step.deepDive.text, `steps[${step.stepNumber}].deepDive.text`);
+      }
     });
+
+    if (protocol.fatalMistake) {
+      inspectField(protocol.fatalMistake.title, 'fatalMistake.title');
+      inspectField(protocol.fatalMistake.description, 'fatalMistake.description');
+      inspectField(protocol.fatalMistake.consequence, 'fatalMistake.consequence');
+    }
 
     (protocol.faqs || []).forEach((faq, idx) => {
       inspectField(faq.causeDiagnostic, `faqs[${idx}].causeDiagnostic`);

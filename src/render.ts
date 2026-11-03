@@ -114,7 +114,7 @@ export function renderCanonicalProtocolPage(
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title data-proto="title">${SITE_META.shortName} // ${master.title}</title>
-  <meta name="description" content="${master.summary}">
+  <meta name="description" content="${SeoService.stripMarkdown(master.summary)}">
   <meta name="keywords" content="${master.title}, 재난에서 살아남기, 포스트 아포칼립스, 전시 생존, 비상사태, ${master.category}, survival protocol">
   <meta name="theme-color" content="${SITE_META.themeColor}">
   <link rel="canonical" href="${SITE_META.siteUrl}/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}">
@@ -125,13 +125,13 @@ export function renderCanonicalProtocolPage(
   <!-- Open Graph & Social Cards -->
   <meta property="og:site_name" content="${SITE_META.name}">
   <meta property="og:title" content="${SITE_META.shortName} // ${master.title}">
-  <meta property="og:description" content="${master.summary}">
+  <meta property="og:description" content="${SeoService.stripMarkdown(master.summary)}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="${SITE_META.siteUrl}/protocol-${master.protocolId.replace(/[^0-9]/g, '').padStart(2, '0')}">
   <meta property="og:image" content="${SITE_META.siteUrl}${SEO_CONFIG.defaultOgImage}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${SITE_META.shortName} // ${master.title}">
-  <meta name="twitter:description" content="${master.summary}">
+  <meta name="twitter:description" content="${SeoService.stripMarkdown(master.summary)}">
   <meta name="twitter:image" content="${SITE_META.siteUrl}${SEO_CONFIG.defaultOgImage}">
 
   <!-- Search Engine Verifications -->
