@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-23",
+  "category": "FOOD",
+  "title": "Trinkwasser bei Wasser- und Stromausfall mit Baumwolltuch-Kapillarsiphon & Sonnenlicht (SODIS) aufbereiten",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[STÄDTISCHER WASSERAUSFALL & BRENNSTOFFFREIE KAPILLARFILTRATION + UV-SONNENDESINFEKTION]",
+  "summary": "Wenn Sie zu Hause bereits abgefülltes Flaschenwasser, einen tragbaren Outdoor-Trinkhalmfilter (wie LifeStraw), Chlordioxid-Wasserentkeimungstabletten oder einen Hohlfaser-Schwerkraftfilter besitzen, nutzen Sie diese Fertigprodukte immer zuerst – das ist am schnellsten und sichersten. Wenn jedoch Erdbeben, Krieg oder ein flächendeckender Blackout Flaschenwasser und Tabletten erschöpfen und Sie in einer Stadtwohnung weder Holzkohle noch Flusssand oder Gas/Strom zum Abkochen haben (in der Natur mit Kohle und Sand nutzen Sie den [Wildnis-Holzkohle-Sand-Filter](/protocol-01.html)), führt das Trinken von trübem Regen- oder rostigem Leitungswasser binnen 3 Tagen zu schwerem Durchfall und lebensbedrohlicher Dehydrierung. Indem Sie sauberes Reservewasser aus dem Keramik-Spülkasten der Toilette oder Regenwasser gewinnen, Schwebstoffe und Rost über eine gedrehte 100%-Baumwolltuch-Kapillarbrücke abfiltern und das klare Wasser in farblosen PET-Flaschen auf einem Alufolien-Reflektor 6 Stunden praller Sonne aussetzen (WHO-anerkannte SODIS-Methode), gewinnen Sie keimfreies Trinkwasser völlig ohne Brennstoff.",
+  "timeRequired": "2 Std. Filtration + 6 Std. Sonnendesinfektion (automatisches Kapillartropfen & direkte Sonnenbestrahlung)",
+  "successRate": "99% (nach Stufenfiltration über ein 100%-Baumwolltuch und 6 Stunden direkter Sonne in farblosen PET-Flaschen)",
+  "difficulty": "Anfänger (Ohne Feuer, Kohle oder Sand – benötigt nur ein Baumwolltuch, zwei Töpfe und klare PET-Flaschen)",
+  "outputPerHour": "0% Brennstoffverbrauch / 0,5–1 L klares Wasser pro Tuch & Stunde sowie 3–4 Flaschen gleichzeitig entkeimt",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Handtuch aus 100% Baumwolle (oder ausgekochte Baumwollsocken / T-Shirt-Streifen) & 2 Töpfe/Schüsseln",
+      "desc": "Stromloser Faserfilter, der Schlamm und Rostpartikel zurückhält, wenn Fertigfilter fehlen. Wird ein 100%-Baumwolltuch handgelenkdick gedreht und als Brücke von einer erhöhten Schüssel in einen tieferen Topf gehängt, steigt nur klares Wasser durch die Zellulosefasern auf und tropft sauber herab."
+    },
+    {
+      "id": "mat-02",
+      "name": "2–3 etikettenfreie, farblose, transparente PET-Flaschen bis 2 L (unverkratzte Wasser-/Limoflaschen)",
+      "desc": "UV-A-durchlässige Entkeimungsgefäße bei fehlenden Tabletten oder Brennholz. Es müssen farblose Flaschen mit dem Recycling-Dreieck #1 (PET) am Boden sein; entfernen Sie Etiketten und Klebereste restlos mit dem Fingernagel oder einem [primitiven Steinmesser](/protocol-04.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Küchen-Alufolie (2 Handspannen) & 1 Wellpappe-Platte (Reiskleister oder Kiefernharz)",
+      "desc": "Solarreflektor, der Sonnenlicht und Infrarotwärme auf die Flaschenunterseite zurückwirft und die Entkeimung verdoppelt. Kleben Sie die glänzende Folienseite mit Reiskleister oder [Kiefernharz-Pechkleber](/protocol-10.html) auf die Pappe."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Reservewasser aus dem Keramik-Spülkasten oder Regenwasser schöpfen und 1 Stunde absetzen lassen",
+      "description": "1. **Verborgenes Reservewasser im Haus sichern**: Heben Sie bei Beginn des Wasserausfalls sofort den rechteckigen Porzellandeckel des WC-Spülkastens ab und schöpfen Sie das **10–15 L fassende saubere Leitungswasser (nur wenn frei von blauen Chemie-Duftsteinen)** oder aufgefangenes Balkon-Regenwasser in einen großen Topf.\n2. **Warmwasserspeicher & Leitungen prüfen**: Zapfen Sie auch Restwasser aus Boiler-Ablassventilen ab, verwenden Sie aber niemals seifiges Abwasser oder Wasser aus der Toilettenschüssel.\n3. **1 Stunde erschütterungsfreie Schwerkraft-Sedimentation**: Stellen Sie das Gefäß auf einen ebenen, ruhigen Boden und **lassen Sie es mindestens 1 Stunde völlig unberührt stehen**, damit schwere Sandkörner und roter Rohrrost von selbst zu Boden sinken.\n4. **Obere 2/3 Klarwasser vorsichtig abschöpfen**: Ohne den Bodensatz aufzuwirbeln, schöpfen Sie mit einer Kelle oder Tasse **langsam nur die oberen zwei Drittel des relativ klaren Wassers** in Ihr Filtergefäß ab.",
+      "actionNote": "> Warum das Wasser vor dem Einhängen des Tuchs 1 Stunde ruhen muss: Taucht man ein Baumwolltuch direkt in aufgewühltes Schlammwasser, verstopfen grobe Schlammpartikel binnen 10 Minuten die feinen Fadenporen und das Tropfen stoppt. Vorabsetzen verdreifacht das Tempo.",
+      "svgFileName": "pr23-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // NOTWASSER + 1 STD. ABSETZUNG",
+        "Chemiefreies Spülkasten- (12L) oder Regenwasser holen",
+        "1 Std. ruhig stehen lassen bis Rost/Sand absinkt",
+        "Obere 2/3 Klarwasser ohne Aufwirbeln abschöpfen",
+        "[KERN] Kein Tuch-Verstopfen + 70% Schlamm weg"
+      ],
+      "deepDive": {
+        "badge": "GRAVITY SEDIMENTATION",
+        "title": "Städtische Spülkasten-Notwassergewinnung und Stokessche Schwerkraft-Sedimentation",
+        "text": "Der obere Keramik-Spülkasten einer Haushaltstoilette ist baulich vom unteren Becken getrennt und speichert **10–15 Liter sauberes Trinkwasser**, was ihn zur wichtigsten Sofortreserve bei Netzausfall macht. Durch 60-minütiges Ruhenlassen sinken gemäß dem Stokesschen Gesetz **über 70 % der Schwebstoffe und Eisenoxid-Rostpartikel** in die unteren 3 cm ab.",
+        "fieldSpecs": [
+          {
+            "name": "Keramik-Spülkasten-Notwassergewinnung & 1-Stunden-Absetzbehälter",
+            "scientificName": "Domestic Ceramic Cistern Water Recovery & Gravity Sedimentation Basin",
+            "categoryTag": "Innenraum-Notwasserreserve / Primäre Schwerkraftabscheidung",
+            "imageFileName": "id-ceramic-cistern-settled-water.jpg",
+            "hudCode": "FIG. FOOD-23A // MACRO OPTIC",
+            "hudStatus": "SEDIMENT LAYER: SETTLED 70%",
+            "traits": [
+              {
+                "label": "QUELLE/REIN",
+                "value": "Nur **geruchloses Spülkastenwasser ohne Chemie-Steine** oder Regenwasser nach 10 Min. Vorlauf nutzen."
+              },
+              {
+                "label": "BODEN/SCHICHT",
+                "value": "Nach 1 Stunde **liegen Sand und Rost am Boden**, darüber steht durchscheinendes Wasser."
+              },
+              {
+                "label": "MEERWASSER/NEIN",
+                "value": "Gelöstes Meersalz filtert kein Tuch; Salzwasser muss im [Ton-Bambus-Meerwasserdestillator](/protocol-20.html) gekocht werden."
+              }
+            ],
+            "fieldUse": "Notwassergewinnung in Wohnungen bei Leitungsausfall und Grobstoff-Vorabscheidung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Rohwasserschüssel 1 Handspanne erhöht aufstellen und gedrehtes Baumwolltuch in tieferen Topf hängen",
+      "description": "1. **Höhenunterschied von 1 Handspanne (15–20 cm) schaffen**: Stellen Sie die Schüssel mit dem abgeschöpften Wasser auf eine Kiste oder einen umgedrehten Topf (**eine Handspanne, ca. 15–20 cm über dem Boden**) und platzieren Sie einen sauberen Auffangtopf direkt daneben auf dem Boden.\n2. **100%-Baumwolltuch handgelenkdick fest eindrehen**: Befeuchten Sie ein sauberes, weichspülerfreies 100%-Baumwolltuch (oder dicke Baumwollsocken) mit Wasser und wringen Sie es fest zu einem **strammen Seil von Handgelenkdicke**.\n3. **Tuchbrücke zwischen beide Gefäße spannen**: Tauchen Sie ein Ende des gedrehten Tuchs bis zur halben Tiefe in die obere Schüssel (nicht den Bodensatz berühren) und lassen Sie das andere Ende in den unteren Topf hängen – **mindestens eine Handspanne tiefer als der obere Wasserspiegel**.\n4. **Gleichmäßiges Abtropfen von klarem Wasser prüfen**: Nach 5–10 Minuten wandert das Wasser durch die Baumwollfasern über den Rand und tropft unten mit **1–2 glasklaren Tropfen pro Sekunde** ab, während Schlamm und Rost oben bleiben.",
+      "actionNote": "> Warum das Aufwärts-Siphonieren über den Gefäßrand viel sauberer filtert als Durchgießen nach unten: Beim Eingießen von oben drückt der Wasserdruck feinen Schlamm durch das Gewebe. Beim Aufstieg gegen die Schwerkraft klettern nur leichte Wassermoleküle durch die Mikrofasern.",
+      "svgFileName": "pr23-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // STUFEN-KAPILLARSIPHON MIT BAUMWOLLTUCH",
+        "Oberes Gefäß 15-20cm höher als unteren Topf stellen",
+        "100% Baumwolltuch handgelenkdick als Seil drehen",
+        "Unteres Ende tiefer als oberer Pegel (1 Tropfen/Sek)",
+        "[KERN] Aufwärts-Kapillarzug hält 95% Schlamm zurück"
+      ],
+      "deepDive": {
+        "badge": "CAPILLARY SIPHON",
+        "title": "Zellulose-Mikrokapillarwirkung kombiniert mit gravitativer Siphon-Druckhöhe",
+        "text": "Ein stramm gedrehtes 100%-Baumwolltuch bildet tausende **mikrometerfeine Zellulose-Kapillarkanäle**. Die Oberflächenspannung zieht Wassermoleküle über den Gefäßrand, während schwere Ton- und Rostpartikel die Schwerkraftbarriere nicht überwinden. Da das untere Tuchende **15–20 cm unter dem oberen Wasserspiegel** hängt, sorgt das Siphon-Gefälle für stromlosen Dauerbetrieb.",
+        "fieldSpecs": [
+          {
+            "name": "Gedrehte 100%-Baumwolltuch-Kapillarsiphonbrücke zwischen Stufentöpfen",
+            "scientificName": "Twisted 100% Cotton Capillary Siphon Filtration Bridge",
+            "categoryTag": "Stromlose Kapillarfiltration / >95% Trübungsreduktion",
+            "imageFileName": "id-twisted-cotton-towel-siphon-bridge.jpg",
+            "hudCode": "FIG. FOOD-23B // MACRO OPTIC",
+            "hudStatus": "TURBIDITY REDUCTION: >95%",
+            "traits": [
+              {
+                "label": "FASER/BAUMWOLLE",
+                "value": "Saugfähige **Tücher oder T-Shirts aus 100% reiner Baumwolle** fest wie ein Seil verdrehen."
+              },
+              {
+                "label": "GEFÄLLE/15CM",
+                "value": "Das untere Tuchende muss **15–20 cm tiefer als der obere Wasserspiegel** hängen."
+              },
+              {
+                "label": "SCHUTZ/DECKEL",
+                "value": "Beide Töpfe während der 1–2 Stunden Tropfzeit mit **Tellern oder Folie gegen Staub abdecken**."
+              }
+            ],
+            "fieldUse": "Trübungsreduktion von Regen- und Rostwasser in Innenräumen ohne Kohle oder Sand"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Etikettenfreie klare PET-Flasche zu 3/4 füllen und 20 Sekunden kräftig schütteln (Sauerstoffanreicherung)",
+      "description": "1. **Farblose PET-#1-Flasche wählen & Etikett ablösen**: Wählen Sie eine **völlig farblose, durchsichtige Plastikflasche bis 2 L (Bodenprägung #1 PET)**, ziehen Sie Folienetikett und Kleber restlos ab und spülen Sie sie mit gefiltertem Wasser aus.\n2. **Handlinien-Durchsichtstest durch die Flasche**: Füllen Sie die Flasche zur Probe und halten Sie Ihre Hand oder Zeitungspapier dahinter – **Handlinien oder große Schrift müssen klar durch das Wasser erkennbar sein**, damit UV-Licht durchdringt.\n3. **Zu 3/4 füllen & 20 Sekunden kräftig schütteln**: Füllen Sie das gefilterte Wasser zunächst nur bis zur **Flaschenschulter (ca. 3/4 voll)**, schließen Sie den Deckel und **schütteln Sie 20 Sekunden lang kräftig auf und ab**, bis feine weiße Luftbläschen das Wasser durchsetzen.\n4. **Randvoll auffüllen & fest verschließen**: Öffnen Sie den Deckel, **gießen Sie gefiltertes Wasser bis ganz an den oberen Rand nach** und drehen Sie den Verschluss fest zu.",
+      "actionNote": "> Warum die Flasche vor dem Sonnenbad 20 Sekunden lang geschüttelt werden muss: Die im Wasser gelösten Sauerstoffbläschen reagieren mit den UV-A-Strahlen der Sonne zu hochaktiven Sauerstoffradikalen, die Bakterienhüllen oxidativ zerstören und die Entkeimungskraft verdoppeln.",
+      "svgFileName": "pr23-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // KLARE PET #1 + 20S O2-SCHÜTTELN",
+        "Etikettenfreie farblose <=2L PET-Flasche (#1) nutzen",
+        "Klare Sichtbarkeit der Handlinien durch die Flasche",
+        "Zu 3/4 füllen und 20s schütteln für O2-Mikroblasen",
+        "[KERN] Maximiert gelösten O2 für UV-Photooxidation"
+      ],
+      "deepDive": {
+        "badge": "PHOTO-OXIDATION",
+        "title": "Sauerstoffsättigung und solare UV-A-Photooxidations-Synergie",
+        "text": "Die solare Wasserdesinfektion (SODIS) spaltet nicht nur direkt die Bakterien-DNA durch UV-A-Licht, sondern aktiviert **gelösten Sauerstoff (O₂) unter 320–400 nm UV-A-Strahlung zur Bildung reaktiver Sauerstoffspezies (ROS) und Hydroxylradikale**, welche Zellmembranen von Viren und Bakterien aufbrechen. Das 20-sekündige Schütteln einer zu 3/4 gefüllten Flasche sättigt den Sauerstoffgehalt.",
+        "fieldSpecs": [
+          {
+            "name": "Etikettenfreie farblose PET-Flasche gesättigt mit gelösten Sauerstoff-Mikrobläschen",
+            "scientificName": "Clear Polyethylene Terephthalate (PET #1) Bottle with Aerated Micro-Bubbles",
+            "categoryTag": "UV-A-durchlässiges Gefäß / Reaktive Sauerstoffbildung",
+            "imageFileName": "id-clear-pet-bottle-oxygen-bubbles.jpg",
+            "hudCode": "FIG. FOOD-23C // MACRO OPTIC",
+            "hudStatus": "DISSOLVED OXYGEN: SATURATED",
+            "traits": [
+              {
+                "label": "GEFÄSS/PET-1",
+                "value": "Grüne oder braune Flaschen blockieren UV; nur **dünnwandige farblose PET-(#1)-Flaschen <=2L** nutzen."
+              },
+              {
+                "label": "KLARHEIT/TEST",
+                "value": "**Fingerfalten oder Buchstaben hinter der Flasche** müssen scharf lesbar sein."
+              },
+              {
+                "label": "BELÜFTUNG/O2",
+                "value": "Nach 20s Schütteln überziehen **feine silbrige Sauerstoffbläschen** die Innenwand."
+              }
+            ],
+            "fieldUse": "Sauerstoffsättigung und optische Trübungsprüfung (<30 NTU) vor brennstofffreier Solarsterilisation"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Flasche liegend auf Alufolien-Reflektorpappe 6 Stunden in pralle Sonne legen (oder 3 Min. abkochen)",
+      "description": "1. **Alufolien-Reflektorpappe bauen**: Knicken Sie ein flaches Stück Wellpappe leicht V-förmig ein und kleben Sie **Küchen-Alufolie (glänzende Seite nach oben)** glatt auf die Innenseite.\n2. **Flaschen waagerecht in direkte Südsonne legen**: Platzieren Sie den Reflektor an einem schattenfreien Platz im Freien (offener Balkon, Dach oder Hof, 30–45° zur Sonne geneigt) und **legen Sie die klaren PET-Flaschen waagerecht darauf** – niemals aufrecht hinstellen.\n3. **6 Stunden in der Mittagssonne bestrahlen**: Lassen Sie die Flaschen zwischen 9 und 15 Uhr **mindestens 6 Stunden am Stück in direkter Sonne**, damit UV-A-Strahlen und >50°C Sonnenwärme alle Keime abtöten (bei mehr als 50% Bewölkung **2 volle Tage** auslegen; bei Dauerregen Regenwasser direkt auffangen oder abkochen).\n4. **Abkühlen & trinken oder 3 Min. kochen**: Lassen Sie das **badewarme Wasser** nach 6 Stunden im Schatten abkühlen; falls ein [Zwei-Dosen-Holzvergaserkocher](/protocol-12.html) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21.html) bereitsteht, können Sie das gefilterte Wasser alternativ 3 Minuten sprudelnd abkochen.",
+      "actionNote": "> Warum die PET-Flasche waagerecht auf Alufolie liegen muss statt aufrecht zu stehen: Steht die Flasche aufrecht, ist die Wassersäule zu tief für UV-Strahlen. Liegend bleibt die Wassertiefe unter 10 cm (Handbreit), und die Alufolie reflektiert das Sonnenlicht ein zweites Mal von unten durch das Wasser.",
+      "svgFileName": "pr23-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 6 STD. ALUFOLIEN-REFLEKTOR SOLAR-SODIS",
+        "V-förmige Wellpappe beklebt mit glänzender Alufolie",
+        "Klare PET-Flasche flach hinlegen (Tiefe <10cm)",
+        "6 Std. pralle Sonne für UV-A + 50C Hitze-Entkeimung",
+        "[KERN] 0% Brennstoff tötet 99,9% Keime/Viren"
+      ],
+      "deepDive": {
+        "badge": "SODIS STERILIZATION",
+        "title": "WHO-anerkannte SODIS-Synergie aus UV-A + 50°C Wärme und Alufolien-Konzentratoroptik",
+        "text": "Das von der Weltgesundheitsorganisation (WHO) und dem Roten Kreuz empfohlene **SODIS-Verfahren (Solar Water Disinfection)** kombiniert **UV-A-Strahlung (320–400 nm)** mit **Infrarot-Erwärmung**. Steigt die Wassertemperatur auf dem Alufolien-Reflektor über **50°C**, beschleunigt sich die Keimabtötung um **mehr als das Dreifache** und inaktiviert 99,9 % von Cholera-, Ruhr-, E.-coli-Erregern und Rotaviren in 6 Stunden.",
+        "fieldSpecs": [
+          {
+            "name": "Waagerechte Klar-PET-SODIS-Anordnung auf alukaschierter Wellpappe-Reflektorwiege",
+            "scientificName": "Foil-Backed Corrugated Reflector Cradle & Horizontal PET SODIS Array",
+            "categoryTag": "Brennstofffreie UV-A- & Hitze-Entkeimung / WHO-Standard",
+            "imageFileName": "id-foil-cardboard-sodis-solar-cradle.jpg",
+            "hudCode": "FIG. FOOD-23D // MACRO OPTIC",
+            "hudStatus": "UV-A + 50C SYNERGY: 6H STERILE",
+            "traits": [
+              {
+                "label": "LIEGEND/10CM",
+                "value": "Waagerechtes Lagern **hält die Wassertiefe unter 10 cm** für volle UV-A-Durchdringung."
+              },
+              {
+                "label": "ALUFOLIE/50C",
+                "value": "Die **glänzende Alufolie** reflektiert UV-Licht und erwärmt das Wasser rasch auf ~50°C."
+              },
+              {
+                "label": "FENSTER/ÖFFNEN",
+                "value": "Doppeltes Fensterglas blockiert UV-A; Flaschen immer **ins Freie oder ans offene Fenster** legen."
+              }
+            ],
+            "fieldUse": "Brennstofffreie Trinkwasserentkeimung bei städtischem Wasser- und Stromnetzausfall"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Niemals grüne/braune Farbflaschen oder Sonne hinter geschlossenen Glasfenstern nutzen, und niemals chemisch belastetes Wasser trinken",
+    "description": "Gefärbte Plastikflaschen (grüne Limo- oder braune Bierflaschen) sowie stark zerkratzte blinde Flaschen blockieren UV-A-Strahlen vollständig, sodass tödliche Keime trotz Sonnenbad überleben. Ebenso hält geschlossenes Doppel-Fensterglas die UV-Strahlung ab – öffnen Sie das Fenster ganz oder legen Sie die Flaschen ins Freie (an Regentagen oder nachts kochen Sie das Wasser auf dem [Zwei-Dosen-Holzvergaserkocher](/protocol-12.html) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21.html) ab). Trinken Sie zudem niemals Spülkastenwasser mit blauen Chemie-Duftsteinen, Frostschutzmittel, Öl oder Pestiziden, da weder Tuch noch Sonne chemische Gifte entfernen.",
+    "consequence": "Nur chemiefreies Rohwasser wählen, klar filtern, in farblose PET-#1-Flaschen füllen und volle 6 Stunden direkter Sonne aussetzen."
+  },
+  "faqs": [
+    {
+      "question": "Lösen sich bei 6 Stunden starker Sonne Weichmacher oder giftige Stoffe aus der PET-Plastikflasche ins Wasser?",
+      "causeDiagnostic": "Viele befürchten Schadstoffe bei erwärmtem Plastik, doch transparente Getränkeflaschen mit dem Code #1 (PET) enthalten weder Bisphenol-A (BPA) noch Phthalate.",
+      "resolution": "Umfassende Labortests der **Weltgesundheitsorganisation (WHO) und des Schweizer Wasserforschungsinstituts (Eawag)** belegen, dass farblose PET-Flaschen nach 6 Stunden Sonne (50–60°C) keinerlei gesundheitsbedenkliche Stoffe abgeben. Tauschen Sie lediglich alte, weiß verkratzte Flaschen aus."
+    },
+    {
+      "question": "Was kann ich tun, wenn der Baumwolltuch-Siphon viel zu langsam tropft?",
+      "causeDiagnostic": "Wenn das Tuch einen zu hohen Topfrand überwinden muss oder der Höhenunterschied zwischen oberer Schüssel und unterem Topf zu gering ist, sinkt die Saugkraft.",
+      "resolution": "**Füllen Sie die obere Schüssel fast bis zum Rand, sodass das Tuch nur 3–5 cm ansteigen muss, und hängen Sie 2 bis 3 gedrehte Tücher nebeneinander.** Mit 3 Tüchern gewinnen Sie fast 2 Liter klares Wasser pro Stunde."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Kein Leitungswasser und kein Strom oder Gas zum Abkochen? Mach schmutziges Wasser mit einem Baumwolltuch und einer klaren PET-Flasche trinkbar! [5-35s Body] Schöpfe zuerst sauberes Wasser aus dem chemiefreien WC-Spülkasten oder Regenwasser und lass es 1 Stunde absetzen. Stell die Schüssel eine Handspanne höher und hänge ein fest gedrehtes 100%-Baumwolltuch in einen tieferen Topf: Durch Kapillarkraft wandern nur glasklare Tropfen über den Rand, während Schlamm und Rost zurückbleiben! Fülle eine farblose PET-Flasche ohne Etikett zu 3/4, schüttle 20 Sekunden für Sauerstoff, fülle sie ganz auf und lege sie auf Alufolie für 6 Stunden in die pralle Sonne – das tötet 99,9% aller Keime! [35-45s Warnung & Outro] Keine grünen Flaschen und nicht hinter geschlossenem Fensterglas! Speichere dieses Handbuch jetzt.",
+  "outcome": {
+    "title": "Stufen-Baumwolltuch-Kapillarsiphonfilter & Alufolien-Reflektor-Klar-PET-Solarsterilisator (SODIS)",
+    "badge": "FINAL SPEC // ZERO-FUEL CAPILLARY SIPHON & SODIS STERILIZER",
+    "description": "Ein brennstofffreies Notfall-Trinkwassersystem aus 1 Stunde Schwerkraft-Sedimentation, 15 cm Stufen-Baumwolltuch-Kapillarsiphon (95% Trübungsabbau), 20 Sekunden Sauerstoffsättigung und 6 Stunden direkter UV-A- & Wärme-Sonnendesinfektion (SODIS) auf Alufolie.",
+    "svgFileName": "pr23-outcome.svg",
+    "svgLabels": [
+      "PR-23 // 0% BRENNSTOFF BAUMWOLL-SIPHON + SOLAR-SODIS",
+      "STAGE 01: 1H ABSETZEN",
+      "Spülkasten/Regen-Sediment",
+      "STAGE 02: TUCH-SIPHON",
+      "15cm Gefälle Kapillarfilter",
+      "STAGE 03: 20S O2-SCHÜTTELN",
+      "Klare PET 3/4 mit O2 sättigen",
+      "STAGE 04: 6H ALU-SODIS",
+      "UV-A + 50C tötet 99,9% Keime",
+      "FELDGEPRÜFT // 0% BRENNSTOFF TRINKWASSER IM BLACKOUT"
+    ]
+  },
+  "createdAt": "2026-11-04T02:22:36.760Z",
+  "updatedAt": "2026-11-04T02:26:54.183Z",
+  "contentHash": "621efe19c4a078a8"
+}

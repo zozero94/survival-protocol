@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-23",
+  "category": "FOOD",
+  "title": "Como Purificar Água Potável na Falta de Água e Luz Usando Sifão Capilar de Toalha de Algodão e Sol (SODIS)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[CORTE DE ÁGUA URBANO E FILTRAÇÃO CAPILAR SEM COMBUSTÍVEL + DESINFECÇÃO SOLAR UV]",
+  "summary": "Se sua residência já possui água engarrafada, canudo purificador portátil (como LifeStraw), pastilhas de dióxido de cloro ou filtro de barro/fibra oca comercial, utilize sempre esses equipamentos prontos primeiro pela rapidez e segurança. Contudo, quando desastres, guerra ou apagões prolongados esgotam a água mineral e as pastilhas, e você fica isolado em um apartamento sem carvão, areia de rio e sem gás ou eletricidade para ferver água (se estiver na mata com carvão e areia, use o [Filtro Natural de Carvão e Areia](/protocol-01.html)), beber água de chuva turva ou água enferrujada dos canos causa diarreia grave e desidratação fatal em 3 dias. Ao recolher a água limpa da caixa acoplada de louça do vaso sanitário ou água da chuva, filtrar o barro e a ferrugem com uma ponte de sifão capilar de toalha 100% algodão torcida e expor garrafas PET transparentes sobre um refletor de papel-alumínio a 6 horas de sol direto (método SODIS aprovado pela OMS), você garante água potável sem gastar combustível.",
+  "timeRequired": "2 horas de filtração + 6 horas de desinfecção solar (gotejamento capilar autônomo e exposição ao sol direto)",
+  "successRate": "99% (após filtrar com toalha 100% algodão em desnível e expor em garrafas PET incolores a 6 horas de sol forte)",
+  "difficulty": "Iniciante (Sem fogo, carvão ou areia; usa apenas toalha de algodão, duas panelas e garrafas PET transparentes)",
+  "outputPerHour": "0% consumo de combustível / 0,5–1L de água limpa por hora por toalha e 3–4 garrafas esterilizadas juntas",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Toalha 100% Algodão (ou Meias / Camiseta de Algodão Fervidas) e 2 Panelas ou Tigelas",
+      "desc": "Filtro têxtil sem energia que barra lama e partículas de ferrugem quando não há velas de filtro. Ao torcer uma toalha 100% algodão na grossura do pulso e apoiá-la como ponte de uma tigela alta para uma panela baixa, apenas a água limpa sobe pelas microfibras e pinga limpa embaixo."
+    },
+    {
+      "id": "mat-02",
+      "name": "2–3 Garrafas PET Transparentes Incolores de até 2L sem Rótulo (Garrafas de Água/Refrigerante sem Riscos)",
+      "desc": "Recipientes de esterilização permeáveis aos raios UV-A quando faltam pastilhas ou fogo. Devem ser garrafas incolores com o símbolo triangular #1 (PET) no fundo; raspe todo o rótulo plástico e restos de cola com a unha ou uma [Lâmina de Pedra Primitiva](/protocol-04.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Papel-Alumínio de Cozinha (2 Palmos) e 1 Placa de Papelão (Cola de Arroz Cozido ou Resina de Pinheiro)",
+      "desc": "Berço refletor solar que rebate a luz e o calor infravermelho para a parte inferior das garrafas, dobrando a velocidade de desinfecção. Cole o lado brilhante do papel-alumínio no papelão usando arroz amassado ou [Cola de Resina de Pinheiro](/protocol-10.html)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Recolher Água da Caixa Acoplada de Louça ou Chuva e Deixar Decantar por 1 Hora",
+      "description": "1. **Recolher Água de Reserva Escondida em Casa**: Assim que faltar água na torneira, abra a tampa retangular de porcelana atrás do vaso sanitário (caixa acoplada) e retire os **10–15L de água limpa armazenada (apenas se não houver blocos químicos azuis)** ou a água de chuva recolhida na varanda.\n2. **Checar Aquecedor e Tubulações**: Aproveite também a água retida no dreno do aquecedor/boiler, mas jamais use água com sabão ou água de dentro do vaso sanitário.\n3. **1 Hora de Decantação por Gravidade sem Mexer**: Apoie a panela em piso plano e firme e **deixe em repouso absoluto por pelo menos 1 hora** para que grãos de areia e ferrugem vermelha desçam sozinhos para o fundo.\n4. **Retirar com Cuidado os 2/3 Superiores Claros**: Sem agitar o lodo do fundo, use uma concha ou caneca para **transferir devagar apenas os dois terços superiores de água mais limpa** para a tigela de filtração.",
+      "actionNote": "> Por que deixar a água descansar por 1 hora antes de colocar a toalha: Mergulhar a toalha direto na água barrenta agitada entope os poros microscópicos dos fios de algodão em 10 minutos e trava o pinga-pinga. Decantar antes triplica a velocidade.",
+      "svgFileName": "pr23-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RESERVA INTERNA E DECANTAÇÃO DE 1H",
+        "Coletar água de caixa acoplada sem química (12L)",
+        "Repousar 1h no chão plano para assentar ferrugem",
+        "Separar os 2/3 superiores claros sem mexer o fundo",
+        "[CHAVE] Evita entupir a toalha e remove 70% do lodo"
+      ],
+      "deepDive": {
+        "badge": "GRAVITY SEDIMENTATION",
+        "title": "Recuperação de Reserva em Caixa Acoplada Urbana e Eficiência de Sedimentação de Stokes",
+        "text": "A caixa acoplada superior de porcelana do vaso sanitário é isolada da bacia inferior e guarda **10–15 litros de água potável da rede**, sendo a principal reserva imediata em um apagão hídrico. Deixar a água imóvel por 60 minutos permite que **mais de 70% do silte e partículas de óxido de ferro** sedimentem nos 3 cm inferiores pela Lei de Stokes.",
+        "fieldSpecs": [
+          {
+            "name": "Coleta de Água da Caixa Acoplada de Louça e Bacia de Decantação de 1 Hora",
+            "scientificName": "Domestic Ceramic Cistern Water Recovery & Gravity Sedimentation Basin",
+            "categoryTag": "Reserva Hídrica Interna / Decantação Primária",
+            "imageFileName": "id-ceramic-cistern-settled-water.jpg",
+            "hudCode": "FIG. FOOD-23A // MACRO OPTIC",
+            "hudStatus": "SEDIMENT LAYER: SETTLED 70%",
+            "traits": [
+              {
+                "label": "FONTE/LIMPA",
+                "value": "Use apenas **água sem cheiro da caixa acoplada sem pastilha azul** ou chuva após 10 min iniciais."
+              },
+              {
+                "label": "FUNDO/CAMADA",
+                "value": "Após 1 hora, **areia e ferrugem ficam no fundo** e a água translúcida se separa acima."
+              },
+              {
+                "label": "MAR/PROIBIDO",
+                "value": "O sal do mar não sai no pano; água salgada exige o [Destilador de Barro e Bambu](/protocol-20.html)."
+              }
+            ],
+            "fieldUse": "Captação doméstica de emergência em cortes de água e remoção primária de lama"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Elevar a Tigela Superior em 1 Palmo e Passar uma Ponte de Toalha de Algodão Torcida para a Panela Baixa",
+      "description": "1. **Criar Desnível de 1 Palmo (15–20 cm)**: Coloque a tigela com água decantada sobre uma caixa ou panela virada (**um palmo de mão adulta, cerca de 15–20 cm acima do chão**) e posicione uma panela limpa vazia no chão logo ao lado.\n2. **Torcer uma Toalha 100% Algodão na Grossura do Pulso**: Molhe uma toalha 100% algodão limpa (sem cheiro de amaciante) e torça com força até formar uma **corda firme da grossura de um pulso adulto**.\n3. **Apoiar a Ponte de Toalha entre os Dois Recipientes**: Mergulhe uma ponta da toalha até a metade da tigela superior (sem encostar na sujeira do fundo) e deixe a outra ponta pendurada dentro da panela inferior **pelo menos um palmo abaixo do nível da água de cima**.\n4. **Confirmar o Pinga-Pinga de Água Cristalina**: Em 5–10 minutos, a água puxada pelas fibras de algodão começará a pingar da ponta de baixo a **1–2 gotas transparentes por segundo**, deixando a lama retida na tigela de cima.",
+      "actionNote": "> Por que puxar a água por cima da borda (sifão) filtra muito melhor do que coar de cima para baixo: Ao despejar água barrenta sobre um pano, o peso da água empurra o barro fino pelos furos do tecido. No sifão capilar, só as moléculas leves de água sobem contra a gravidade.",
+      "svgFileName": "pr23-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // SIFÃO CAPILAR DE TOALHA EM DESNÍVEL",
+        "Elevar tigela superior 15-20cm acima da panela",
+        "Torcer toalha 100% algodão como corda grossa",
+        "Ponta inferior abaixo do nível superior (1 gota/s)",
+        "[CHAVE] Subida capilar barra 95% do barro/ferrugem"
+      ],
+      "deepDive": {
+        "badge": "CAPILLARY SIPHON",
+        "title": "Capilaridade em Microfibras de Celulose Combinada com Carga de Sifão Gravitacional",
+        "text": "Uma toalha 100% algodão bem torcida forma milhares de **microcanais capilares de celulose em escala micrométrica**. A tensão superficial puxa as moléculas de água por cima da borda enquanto partículas pesadas de barro e ferrugem não vencem a gravidade. Com a ponta externa **15–20 cm abaixo do nível superior**, o sifão gravitacional drena água limpa continuamente sem energia.",
+        "fieldSpecs": [
+          {
+            "name": "Ponte Sifão Capilar de Toalha 100% Algodão Torcida entre Panelas em Desnível",
+            "scientificName": "Twisted 100% Cotton Capillary Siphon Filtration Bridge",
+            "categoryTag": "Filtração Capilar sem Energia / Redução >95% Turbidez",
+            "imageFileName": "id-twisted-cotton-towel-siphon-bridge.jpg",
+            "hudCode": "FIG. FOOD-23B // MACRO OPTIC",
+            "hudStatus": "TURBIDITY REDUCTION: >95%",
+            "traits": [
+              {
+                "label": "FIBRA/ALGODÃO",
+                "value": "Use **toalhas ou camisetas 100% algodão puro** torcidas como corda firme."
+              },
+              {
+                "label": "QUEDA/15CM",
+                "value": "A ponta de baixo deve ficar **15–20 cm abaixo do nível da água de cima**."
+              },
+              {
+                "label": "TAMPA/HIGIENE",
+                "value": "Cubra as duas vasilhas com **pratos ou plástico** durante as 1–2 horas de filtração."
+              }
+            ],
+            "fieldUse": "Clarificação interna de água de chuva ou encanamento sem precisar de carvão ou areia"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Encher 3/4 de uma Garrafa PET Transparente sem Rótulo e Agitar por 20 Segundos para Oxigenar",
+      "description": "1. **Escolher Garrafa PET #1 Incolor e Tirar o Rótulo**: Pegue uma **garrafa plástica totalmente transparente e sem cor de até 2L (com o código #1 PET no fundo)**, arranque o rótulo e a cola e enxágue por dentro com água filtrada.\n2. **Teste de Leitura das Linhas da Mão Através da Garrafa**: Encha a garrafa e coloque a palma da mão ou um jornal atrás; **as linhas da mão ou letras devem aparecer nítidas através da água** para garantir a passagem dos raios UV.\n3. **Encher 3/4 e Sacudir com Força por 20 Segundos**: Coloque água filtrada até **a altura do ombro da garrafa (cerca de 3/4)**, feche a tampa e **sacuda vigorosamente para cima e para baixo por 20 segundos** até encher de microbolhas brancas de ar.\n4. **Completar até a Boca e Rosquear Firme**: Abra a tampa, **complete com água filtrada até a borda da boca** e aperte bem a tampa.",
+      "actionNote": "> Por que sacudir a garrafa por 20 segundos antes de colocar no sol é essencial: As bolhas de oxigênio dissolvido reagem com a radiação solar UV-A criando radicais de oxigênio ativo que destroem a parede das bactérias, dobrando o poder de esterilização.",
+      "svgFileName": "pr23-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SELEÇÃO PET #1 E AERAÇÃO DE 20S",
+        "Garrafa PET (#1) incolor <=2L limpa sem rótulo",
+        "Confirmar nitidez vendo linhas da mão atrás",
+        "Encher 3/4 e agitar 20s para dissolver oxigênio",
+        "[CHAVE] Maximiza O2 dissolvido para foto-oxidação"
+      ],
+      "deepDive": {
+        "badge": "PHOTO-OXIDATION",
+        "title": "Saturação de Oxigênio Dissolvido e Sinergia de Foto-Oxidação Solar UV-A",
+        "text": "A desinfecção solar (SODIS) não apenas quebra o DNA bacteriano via UV-A direto, mas ativa o **oxigênio dissolvido (O₂) sob luz UV-A (320–400 nm) gerando espécies reativas de oxigênio (ROS) e radicais hidroxila** que oxidam e rompem as membranas de vírus e bactérias. Sacudir a garrafa cheia a 3/4 por 20 segundos satura o oxigênio na água.",
+        "fieldSpecs": [
+          {
+            "name": "Garrafa PET Incolor sem Rótulo Saturada com Microbolhas de Oxigênio Dissolvido",
+            "scientificName": "Clear Polyethylene Terephthalate (PET #1) Bottle with Aerated Micro-Bubbles",
+            "categoryTag": "Vaso Transparente UV-A / Geração de Oxigênio Reativo",
+            "imageFileName": "id-clear-pet-bottle-oxygen-bubbles.jpg",
+            "hudCode": "FIG. FOOD-23C // MACRO OPTIC",
+            "hudStatus": "DISSOLVED OXYGEN: SATURATED",
+            "traits": [
+              {
+                "label": "GARRAFA/PET-1",
+                "value": "Garrafas verdes ou marrons barram os UV; use só **garrafas PET (#1) incolores <=2L**."
+              },
+              {
+                "label": "NITIDEZ/TESTE",
+                "value": "**As linhas dos dedos ou letras atrás da garrafa** precisam ser vistas com nitidez."
+              },
+              {
+                "label": "BOLHAS/O2",
+                "value": "Após 20s sacudindo, **finas microbolhas prateadas de oxigênio** cobrem o interior."
+              }
+            ],
+            "fieldUse": "Oxigenação pré-solar e verificação visual de limpidez (<30 NTU) para esterilização sem fogo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Deitar a Garrafa sobre o Refletor de Papelão e Alumínio no Sol Direto por 6 Horas (ou Ferver 3 Minutos)",
+      "description": "1. **Montar o Refletor de Papelão com Papel-Alumínio**: Dobre uma folha de papelão formando uma calha em V suave e cole **papel-alumínio de cozinha (lado brilhante para cima)** na face interna.\n2. **Deitar as Garrafas na Horizontal sob Sol Direto**: Posicione o refletor em local externo sem sombra (varanda aberta, telhado ou quintal inclinado 30–45° para o sol) e **deite as garrafas PET transparentes de lado**, nunca em pé.\n3. **Expor por 6 Horas no Sol do Meio-Dia**: Deixe as garrafas sob **sol direto entre 9h e 15h por no mínimo 6 horas seguidas** para que os raios UV-A e o calor solar (>50°C) matem os micróbios (se o céu estiver mais de 50% nublado, exponha por **2 dias seguidos**; na chuva, colete água da chuva direta ou ferva).\n4. **Esfriar e Beber, ou Ferver por 3 Minutos se Tiver Fogo**: Após 6 horas, deixe a **água morna como banho** esfriar na sombra antes de beber; se tiver o [Fogareiro de Gás de Madeira de Dupla Lata](/protocol-12.html) ou o [Aquecedor de Lata de Atum e Óleo](/protocol-21.html), você pode ferver a água filtrada por 3 minutos.",
+      "actionNote": "> Por que deitar a garrafa no papel-alumínio em vez de deixá-la em pé: Com a garrafa em pé, a coluna de água fica funda demais e os raios UV não chegam ao fundo. Deitada, a camada de água fica menor que 10 cm e o alumínio rebate o sol de volta por baixo.",
+      "svgFileName": "pr23-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ESTERILIZAÇÃO SOLAR SODIS 6H NO ALUMÍNIO",
+        "Refletor em V de papelão forrado com papel-alumínio",
+        "Deitar garrafa PET mantendo profundidade <10cm",
+        "6h de sol direto para esterilização UV-A + 50C",
+        "[CHAVE] 0% combustível mata 99,9% dos germes/vírus"
+      ],
+      "deepDive": {
+        "badge": "SODIS STERILIZATION",
+        "title": "Sinergia UV-A + Calor Térmico (50°C) do Método SODIS (OMS) e Óptica Refletora de Alumínio",
+        "text": "Recomendado pela Organização Mundial da Saúde (OMS) e Cruz Vermelha para áreas de desastre, o método **SODIS (Solar Water Disinfection)** une **radiação UV-A (320–400 nm)** com **aquecimento infravermelho**. Quando o refletor de alumínio eleva a água acima de **50°C**, a destruição bacteriana acelera **mais de 3 vezes**, eliminando 99,9% de cólera, disenteria, E. coli e rotavírus em 6 horas.",
+        "fieldSpecs": [
+          {
+            "name": "Arranjo SODIS de Garrafas PET Horizontais sobre Berço Refletor de Papelão e Alumínio",
+            "scientificName": "Foil-Backed Corrugated Reflector Cradle & Horizontal PET SODIS Array",
+            "categoryTag": "Esterilização UV-A + Térmica sem Combustível / Padrão OMS",
+            "imageFileName": "id-foil-cardboard-sodis-solar-cradle.jpg",
+            "hudCode": "FIG. FOOD-23D // MACRO OPTIC",
+            "hudStatus": "UV-A + 50C SYNERGY: 6H STERILE",
+            "traits": [
+              {
+                "label": "DEITADA/10CM",
+                "value": "Deitar a garrafa **mantém a profundidade da água abaixo de 10 cm** para passagem total de UV-A."
+              },
+              {
+                "label": "ALUMÍNIO/50C",
+                "value": "O **papel-alumínio brilhante** reflete os raios UV e aquece a água perto de 50°C."
+              },
+              {
+                "label": "JANELA/ABRIR",
+                "value": "Vidros duplos de janela bloqueiam UV-A; coloque as garrafas **no sol direto sem vidro na frente**."
+              }
+            ],
+            "fieldUse": "Esterilização em massa de água potável sem combustível em colapsos urbanos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca Use Garrafas Verdes ou Marrons nem Sol Atrás de Janelas Fechadas, e Jamais Beba Água com Produtos Químicos ou Combustível",
+    "description": "Garrafas plásticas coloridas (verdes de refrigerante ou marrons de cerveja) e garrafas velhas muito riscadas bloqueiam totalmente os raios UV-A, mantendo as bactérias vivas mesmo após horas no sol. Da mesma forma, deixar as garrafas atrás de janelas de vidro fechadas barra a radiação UV — abra totalmente a janela ou coloque-as ao ar livre (em dias chuvosos ou à noite, ferva a água no [Fogareiro de Gás de Madeira de Dupla Lata](/protocol-12.html) ou no [Aquecedor de Lata de Atum e Óleo](/protocol-21.html)). Por fim, jamais beba água de caixas acopladas com pastilhas sanitárias azuis, aditivo de radiador, óleo ou agrotóxicos, pois nem o pano nem o sol removem venenos químicos.",
+    "consequence": "Escolha apenas água livre de químicos, filtre até ficar cristalina, use garrafas PET #1 incolores e complete as 6 horas de sol direto antes de beber."
+  },
+  "faqs": [
+    {
+      "question": "Deixar garrafas plásticas PET no sol quente por 6 horas não solta bisfenol ou substâncias tóxicas na água?",
+      "causeDiagnostic": "Muita gente teme que o plástico aquecido no sol libere toxinas, mas as garrafas transparentes marcadas com o número 1 (PET) não usam plastificantes como Bisfenol-A (BPA) ou ftalatos.",
+      "resolution": "Pesquisas da **Organização Mundial da Saúde (OMS) e do Instituto Federal Suíço de Ciência Aquática (Eawag)** comprovaram que garrafas PET incolores expostas a 6 horas de sol (50–60°C) mantêm qualquer migração muito abaixo dos limites seguros de água potável. Apenas descarte garrafas velhas e esbranquiçadas de riscos."
+    },
+    {
+      "question": "O que fazer se o sifão de toalha de algodão estiver pingando devagar demais?",
+      "causeDiagnostic": "Se a toalha precisar subir uma borda muito alta ou a diferença de altura entre a tigela de cima e a panela de baixo for pequena, a puxada capilar perde força.",
+      "resolution": "**Encha a tigela de cima quase até a borda para a toalha subir apenas 3–5 cm e pendure 2 ou 3 toalhas torcidas lado a lado.** Com 3 toalhas trabalhando juntas, você filtra quase 2 litros de água limpa por hora."
+    }
+  ],
+  "shortsScript": "[0-5s Gancho] Acabou a água da torneira e não tem gás nem luz para ferver? Transforme água suja em água potável usando uma toalha de algodão e uma garrafa PET! [5-35s Corpo] Primeiro pegue a água limpa da caixa acoplada atrás do vaso (sem pedra química) ou chuva e deixe descansar 1 hora. Suba a vasilha um palmo de altura e passe uma toalha 100% algodão torcida até uma panela mais baixa: pela capilaridade só sobem gotas cristalinas deixando o barro e a ferrugem para trás! Encha 3/4 de uma garrafa PET incolor sem rótulo, sacuda 20 segundos para misturar oxigênio, complete até a boca e deite sobre papel-alumínio no sol direto por 6 horas para matar 99,9% dos germes! [35-45s Aviso e Final] Não use garrafa verde nem sol atrás de janela fechada! Salve este manual agora.",
+  "outcome": {
+    "title": "Filtro Sifão Capilar de Toalha de Algodão em Desnível e Esterilizador Solar (SODIS) em Refletor de Alumínio",
+    "badge": "FINAL SPEC // ZERO-FUEL CAPILLARY SIPHON & SODIS STERILIZER",
+    "description": "Sistema urbano de sobrevivência contra falta de água combinando 1 hora de decantação por gravidade, sifão capilar com toalha de algodão em desnível de 15 cm (95% menos turbidez), aeração de 20 segundos e 6 horas de desinfecção solar UV-A + calor (SODIS) sobre papel-alumínio.",
+    "svgFileName": "pr23-outcome.svg",
+    "svgLabels": [
+      "PR-23 // SIFÃO DE ALGODÃO + ESTERILIZADOR SOLAR SODIS",
+      "STAGE 01: DECANTAR 1H",
+      "Caixa/chuva por gravidade",
+      "STAGE 02: SIFÃO ALGODÃO",
+      "Desnível 15cm filtra barro",
+      "STAGE 03: AGITAR O2 20S",
+      "PET incolor 3/4 oxigenado",
+      "STAGE 04: SODIS 6H ALUMÍNIO",
+      "UV-A + 50C mata 99,9% germes",
+      "VERIFICADO // ÁGUA POTÁVEL URBANA COM 0% COMBUSTÍVEL"
+    ]
+  },
+  "createdAt": "2026-11-04T02:22:36.760Z",
+  "updatedAt": "2026-11-04T02:26:54.183Z",
+  "contentHash": "621efe19c4a078a8"
+}

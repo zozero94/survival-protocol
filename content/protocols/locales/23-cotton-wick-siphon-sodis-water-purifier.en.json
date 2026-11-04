@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-23",
+  "category": "FOOD",
+  "title": "How to Purify Drinking Water During Blackouts & Water Outages Using Cotton Towel Capillary Siphon & Solar UV (SODIS)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[URBAN WATER OUTAGE & ZERO-FUEL CAPILLARY FILTRATION + SOLAR UV DISINFECTION]",
+  "summary": "If your household already has bottled water reserves, a commercial camping filter straw (such as a LifeStraw), chlorine dioxide water purification tablets, or a gravity hollow-fiber filter, always use those ready-made supplies first for the fastest and safest protection. However, when earthquakes, war, or grid-down water outages exhaust bottled water and tablets, and you are trapped in an urban apartment without charcoal, river sand, or fuel to boil water (if you are in the wilderness with wood ash and sand, use the [Wilderness Charcoal & Sand Filter](/protocol-01.html)), drinking raw rainwater or rusty pipe water causes severe diarrhea and fatal dehydration within 3 days. By recovering clean reserve water from your toilet ceramic cistern or rain catchment, filtering out silt and rust via a twisted 100% cotton towel capillary siphon bridge, and exposing clear PET bottles on a foil reflector to 6 hours of direct sunlight (WHO-approved SODIS method), you can secure sterile drinking water with zero fuel.",
+  "timeRequired": "2 hours filtration + 6 hours solar disinfection (hands-free capillary dripping & sunlight exposure)",
+  "successRate": "99% (when siphoned through a 100% cotton towel and exposed in colorless clear PET bottles to 6 hours of direct sun)",
+  "difficulty": "Beginner (Requires no fire, charcoal, or sand—uses only household cotton towels, two pots, and clear plastic bottles)",
+  "outputPerHour": "0% fuel consumption / 0.5–1L clear water per towel per hour & 3–4 bottles sterilized simultaneously",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "100% Cotton Towel (or Boiled Cotton Socks / T-Shirt Strips) & 2 Pots or Bowls",
+      "desc": "A zero-power fiber wick filter that removes mud, silt, and pipe rust when commercial filter cartridges are unavailable. Twisting a 100% cotton towel into a tight rope and draping it from an elevated raw-water bowl down into a lower pot draws only clear water up through microscopic cellulose fibers while leaving heavy sediment behind."
+    },
+    {
+      "id": "mat-02",
+      "name": "2–3 Label-Free Colorless Transparent PET Bottles (2L or Smaller Water/Soda Bottles)",
+      "desc": "UV-A transparent disinfection vessels used when water tablets or cooking fuel run out. Must be colorless clear recycling #1 (PET) bottles so solar UV-A rays penetrate completely; scrape off all paper labels and glue residue using a fingernail or [Primitive Stone Blade](/protocol-04.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Kitchen Aluminum Foil (2 Hand-Spans) & 1 Corrugated Cardboard Sheet (Rice Paste or Pine Resin Glue)",
+      "desc": "A solar reflector cradle that bounces sunlight and infrared heat back through the underside of the bottles, doubling disinfection speed. Glue the shiny side of kitchen foil onto a cardboard panel using cooked rice paste or [Pine Resin Pitch Glue](/protocol-10.html)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Recover Hidden Ceramic Cistern or Rain Water and Let Settle Untouched for 1 Hour",
+      "description": "1. **Recover Hidden Indoor Reserve Water**: As soon as tap water stops, lift the rectangular porcelain lid off the back of your toilet tank (cistern) and scoop out the **10–15L of clean stored tap water (only if free of blue chemical puck cleaners)** or collected balcony rainwater into a large pot.\n2. **Check Water Heater & Pipe Drains**: Collect remaining water from water-heater drain valves if available, but never use soapy graywater or contaminated toilet bowl water.\n3. **1-Hour Motionless Gravity Settling**: Set the pot on a flat, vibration-free floor and **leave it completely still for at least 1 hour** so heavy sand grains and reddish pipe rust settle naturally to the bottom.\n4. **Gently Skim the Top 2/3 Clear Water**: Without stirring up the bottom mud layer, use a cup or ladle to **slowly transfer only the upper two-thirds of relatively clear water** into your filtration bowl.",
+      "actionNote": "> Why you must let the water settle for 1 hour before inserting the towel: Plunging a cotton towel directly into stirred-up muddy water clogs the microscopic thread pores with heavy silt within 10 minutes, stopping the drip completely. Pre-settling triples filtration speed.",
+      "svgFileName": "pr23-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // INDOOR RESERVE & 1H GRAVITY SETTLING",
+        "Collect clean toilet cistern (12L) or rainwater",
+        "Leave still for 1h so rust/sand settle at bottom",
+        "Skim top 2/3 clear water without disturbing mud",
+        "[KEY] Prevents towel clogging & removes 70% silt"
+      ],
+      "deepDive": {
+        "badge": "GRAVITY SEDIMENTATION",
+        "title": "Urban Cistern Water Recovery and Stokes' Law Gravity Sedimentation Efficiency",
+        "text": "A household toilet's upper ceramic cistern is mechanically isolated from the lower bowl and holds **10–15 liters of potable municipal tap water**, making it the primary indoor emergency water source during an outage. Allowing raw water to stand undisturbed for 60 minutes enables **over 70% of suspended silt and iron-oxide rust particles** to settle into the bottom 3 cm under Stokes' Law, preventing premature fiber blinding.",
+        "fieldSpecs": [
+          {
+            "name": "Indoor Ceramic Cistern Reserve Recovery & 1-Hour Gravity Sedimentation Basin",
+            "scientificName": "Domestic Ceramic Cistern Water Recovery & Gravity Sedimentation Basin",
+            "categoryTag": "Indoor Water Recovery / Primary Gravity Settling",
+            "imageFileName": "id-ceramic-cistern-settled-water.jpg",
+            "hudCode": "FIG. FOOD-23A // MACRO OPTIC",
+            "hudStatus": "SEDIMENT LAYER: SETTLED 70%",
+            "traits": [
+              {
+                "label": "SOURCE/CHECK",
+                "value": "Use only **odorless cistern tank water without chemical tablets** or rainwater collected after the first 10 minutes."
+              },
+              {
+                "label": "LAYER/SETTLE",
+                "value": "After 1 hour, **brown rust and sand rest at the bottom** while translucent water forms above."
+              },
+              {
+                "label": "SALTWATER/NO",
+                "value": "Dissolved sea salt cannot be filtered by cloth; seawater must be boiled in a [Clay & Bamboo Seawater Distiller](/protocol-20.html)."
+              }
+            ],
+            "fieldUse": "Emergency indoor water harvesting during municipal water cutoffs and pre-filtration silt removal"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Elevate the Raw Water Bowl by 1 Hand-Span and Bridge a Twisted Cotton Towel into a Lower Pot",
+      "description": "1. **Create a 1-Hand-Span Height Drop**: Place the upper bowl of settled water on top of an upturned pot or box (**one adult hand-span, about 15–20 cm higher than the floor**), and set a scrubbed, clean receiving pot on the floor right next to it.\n2. **Twist a 100% Cotton Towel into a Wrist-Thick Rope**: Pre-wet a clean, unscented 100% cotton towel (or thick cotton socks) and wring it tightly into a **firm rope as thick as an adult wrist**.\n3. **Drape the Towel Bridge Between Bowls**: Submerge one end of the twisted towel halfway into the upper bowl (keep it above the bottom sediment), and hang the other end down into the lower clean pot **at least one hand-span below the upper water surface**.\n4. **Verify Steady Clear Water Dripping**: Within 5–10 minutes, water drawn up the cotton fibers will drip from the lower tip at **1–2 crystal-clear drops per second**, leaving mud and rust trapped in the upper bowl.",
+      "actionNote": "> Why siphoning UP and over the rim filters far cleaner than pouring water straight through cloth: Pouring murky water downward forces fine mud through fabric weave under water pressure. Siphoning upward against gravity pulls only lightweight water molecules through microscopic fiber channels.",
+      "svgFileName": "pr23-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TWO-TIER COTTON CAPILLARY SIPHON",
+        "Elevate upper bowl 15-20cm above lower clean pot",
+        "Twist 100% cotton towel into wrist-thick rope",
+        "Keep lower tip below upper water for 1 drop/sec",
+        "[KEY] Uphill capillary action blocks 95% mud/rust"
+      ],
+      "deepDive": {
+        "badge": "CAPILLARY SIPHON",
+        "title": "Cellulose Micro-Capillary Action Combined with Gravitational Siphon Head",
+        "text": "A tightly twisted 100% cotton towel forms thousands of **micrometer-scale cellulose capillary channels**. Surface tension pulls water molecules uphill over the rim while heavy silt and rust particles cannot overcome gravity. Once the water crosses the arch and drops toward the lower tip positioned **15–20 cm below the upper surface**, gravitational siphon potential continuously drains clear water without power.",
+        "fieldSpecs": [
+          {
+            "name": "Twisted 100% Cotton Towel Capillary Siphon Bridge Across Two-Tier Pots",
+            "scientificName": "Twisted 100% Cotton Capillary Siphon Filtration Bridge",
+            "categoryTag": "Zero-Power Capillary Filtration / 95% Turbidity Removal",
+            "imageFileName": "id-twisted-cotton-towel-siphon-bridge.jpg",
+            "hudCode": "FIG. FOOD-23B // MACRO OPTIC",
+            "hudStatus": "TURBIDITY REDUCTION: >95%",
+            "traits": [
+              {
+                "label": "FIBER/COTTON",
+                "value": "Use hydrophilic **100% pure cotton towels or T-shirts** twisted tightly like rope."
+              },
+              {
+                "label": "DROP/HEAD",
+                "value": "The lower towel tip must hang **15–20 cm below the upper water level** to maintain flow."
+              },
+              {
+                "label": "COVER/HYGIENE",
+                "value": "Cover both pots with **plates or plastic wrap** during the 1–2 hour drip to keep dust out."
+              }
+            ],
+            "fieldUse": "Clarifying turbid rainwater or rusty pipe water to <5 NTU clarity indoors without charcoal or sand"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Fill a Label-Free Clear PET Bottle 3/4 Full and Shake Vigorously for 20 Seconds to Dissolve Oxygen",
+      "description": "1. **Select Clear PET #1 Bottle & Strip Labels**: Choose a colorless, un-scratched **transparent plastic bottle (2L or smaller, marked #1 PET on the bottom)**, peel off all labels and glue, and rinse inside with filtered water.\n2. **Check Finger-Crease Clarity Through Bottle**: Fill the bottle and hold your hand or newspaper behind it; **your palm creases or headline text must be clearly readable through the water** so UV rays can penetrate.\n3. **Fill 3/4 Full & Shake 20 Seconds**: Pour filtered clear water to **shoulder height (about 3/4 full)**, cap tightly, and **shake vigorously up and down for 20 seconds** until the water is filled with tiny white air bubbles.\n4. **Top Off Completely & Seal Tightly**: Open the cap, **fill the remaining space to the very brim** with filtered water, and screw the cap on tightly.",
+      "actionNote": "> Why shaking the bottle for 20 seconds to mix air bubbles is essential before sun exposure: Dissolved oxygen bubbles react with solar UV-A rays to create reactive oxygen molecules (natural sterilizers) that shred bacterial cell walls, doubling disinfection power.",
+      "svgFileName": "pr23-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CLEAR PET #1 CHECK & 20S AERATION",
+        "Use label-free colorless 2L PET (#1) bottle",
+        "Verify palm lines/text are visible through water",
+        "Fill 3/4 full and shake 20s to dissolve oxygen",
+        "[KEY] Maximizes dissolved O2 for UV photo-oxidation"
+      ],
+      "deepDive": {
+        "badge": "PHOTO-OXIDATION",
+        "title": "Dissolved Oxygen Saturation and Solar UV-A Photo-Oxidative Disinfection Synergy",
+        "text": "Solar water disinfection (SODIS) destroys pathogens not only via direct UV-A DNA cleavage, but also by energizing **dissolved oxygen (O₂) under 320–400 nm UV-A light to generate reactive oxygen species (ROS) and hydroxyl radicals** that oxidize viral and bacterial membranes. Shaking a 3/4-filled bottle for 20 seconds saturates dissolved oxygen before exposure.",
+        "fieldSpecs": [
+          {
+            "name": "Label-Free Colorless PET Bottle Saturated with Dissolved Oxygen Micro-Bubbles",
+            "scientificName": "Clear Polyethylene Terephthalate (PET #1) Bottle with Aerated Micro-Bubbles",
+            "categoryTag": "UV-A Transparent Vessel / Reactive Oxygen Generation",
+            "imageFileName": "id-clear-pet-bottle-oxygen-bubbles.jpg",
+            "hudCode": "FIG. FOOD-23C // MACRO OPTIC",
+            "hudStatus": "DISSOLVED OXYGEN: SATURATED",
+            "traits": [
+              {
+                "label": "VESSEL/PET-1",
+                "value": "Green or brown bottles block UV; use only **thin-walled, colorless clear PET (#1) bottles <=2L**."
+              },
+              {
+                "label": "CLARITY/TEST",
+                "value": "**Finger lines or large letters held behind the bottle** must be clearly legible."
+              },
+              {
+                "label": "BUBBLES/O2",
+                "value": "After 20s of shaking, **fine silver oxygen micro-bubbles** coat the inner walls."
+              }
+            ],
+            "fieldUse": "Pre-solar oxygenation and visual turbidity verification (<30 NTU) for fuel-free water sterilization"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Lay the Bottle Horizontally on a Foil Cardboard Reflector in Direct Sun for 6 Hours (or Boil 3 Minutes)",
+      "description": "1. **Build a Foil-Lined Cardboard Reflector**: Fold a flat corrugated cardboard sheet into a gentle V-trough and glue **kitchen aluminum foil (shiny side facing up)** across the inner surface to form a solar collector cradle.\n2. **Lay Bottles Horizontally in Direct South Sun**: Place the reflector in unshaded outdoor sunlight (an open balcony rail, roof, or yard tilted 30–45° toward the sun) and **lay the clear PET bottles horizontally on their sides**, never standing upright.\n3. **Expose for 6 Hours in Midday Sun**: Leave the bottles under **direct midday sunlight (9 AM to 3 PM) for at least 6 continuous hours** so UV-A rays and 50°C+ solar heat kill all microbes (if skies are more than 50% cloudy, expose for **2 consecutive days**; in heavy rain, collect fresh rainwater or boil).\n4. **Cool & Drink, or Boil 3 Minutes if Fuel Exists**: After 6 hours, let the **bath-warm bottle** cool in the shade before drinking; if you have a [Twin-Can Wood Gas Stove](/protocol-12.html) or [Tuna Can Cooking Oil Heater](/protocol-21.html), you can alternatively boil filtered water at a rolling boil for 3 minutes.",
+      "actionNote": "> Why the PET bottle must be laid horizontally on foil rather than standing upright: Standing a bottle upright makes the water column too deep for UV rays to reach the bottom. Laying it flat keeps water depth under 10 cm (one palm width), while the foil bounces sunlight back through a second time.",
+      "svgFileName": "pr23-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 6H FOIL REFLECTOR SOLAR SODIS",
+        "V-angled cardboard lined with shiny kitchen foil",
+        "Lay clear PET bottle flat to keep depth <10cm",
+        "Expose 6h in direct sun for UV-A + 50C heat kill",
+        "[KEY] 0% fuel used to kill 99.9% germs & viruses"
+      ],
+      "deepDive": {
+        "badge": "SODIS STERILIZATION",
+        "title": "WHO-Endorsed SODIS UV-A + 50°C Thermal Synergy and Aluminum Foil Concentrator Optics",
+        "text": "Endorsed by the World Health Organization (WHO) and Red Cross for disaster zones, **SODIS (Solar Water Disinfection)** combines **UV-A radiation (320–400 nm)** with **infrared thermal pasteurization**. When an aluminum foil reflector raises water temperature inside a horizontal PET bottle above **50°C**, synergistic inactivation accelerates **more than 3-fold**, destroying 99.9% of cholera, dysentery, E. coli, and rotavirus within 6 hours.",
+        "fieldSpecs": [
+          {
+            "name": "Horizontal Clear PET SODIS Array on Foil-Backed Corrugated Reflector Cradle",
+            "scientificName": "Foil-Backed Corrugated Reflector Cradle & Horizontal PET SODIS Array",
+            "categoryTag": "Zero-Fuel UV-A + Thermal Sterilization / WHO Standard",
+            "imageFileName": "id-foil-cardboard-sodis-solar-cradle.jpg",
+            "hudCode": "FIG. FOOD-23D // MACRO OPTIC",
+            "hudStatus": "UV-A + 50C SYNERGY: 6H STERILE",
+            "traits": [
+              {
+                "label": "FLAT/DEPTH",
+                "value": "Laying the bottle **horizontally keeps water depth under 10 cm** for full UV-A penetration."
+              },
+              {
+                "label": "FOIL/REFLECT",
+                "value": "The **shiny aluminum foil backing** reflects UV rays and heats water near 50°C."
+              },
+              {
+                "label": "WINDOW/OPEN",
+                "value": "Double-pane window glass blocks UV-A; always place bottles in **unobstructed direct sunlight**."
+              }
+            ],
+            "fieldUse": "Mass zero-fuel drinking water sterilization during urban water and power grid collapse"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Never Use Green/Brown Colored Bottles or Sunlight Behind Closed Glass Windows, and Never Drink Water Contaminated with Chemical Cleaners or Fuel",
+    "description": "Colored plastic bottles (green lemon-lime soda or brown beer bottles) and heavily scratched opaque bottles block UV-A rays completely, leaving deadly bacteria alive even after hours in the sun. Likewise, placing bottles behind closed double-pane apartment windows blocks UV radiation—always open the window wide or place bottles outdoors in direct sunlight (on rainy days or at night, boil water using the [Twin-Can Wood Gas Stove](/protocol-12.html) or [Tuna Can Cooking Oil Heater](/protocol-21.html)). Finally, never use toilet tank water containing blue chemical cleaning pucks, antifreeze, oil, or pesticides, as neither cloth filtration nor sunlight removes chemical toxins.",
+    "consequence": "Select only chemical-free raw water, filter until clear, seal inside colorless PET #1 bottles, and complete the full 6-hour direct solar exposure before drinking."
+  },
+  "faqs": [
+    {
+      "question": "Does exposing PET plastic bottles to hot sunlight for 6 hours leach toxic chemicals or endocrine disruptors into the water?",
+      "causeDiagnostic": "Many people worry about plastic heating in the sun, but #1 PET beverage bottles do not contain plasticizers like Bisphenol-A (BPA) or phthalates.",
+      "resolution": "Extensive laboratory testing by the **World Health Organization (WHO) and the Swiss Federal Institute of Aquatic Science and Technology (Eawag)** confirmed that colorless PET bottles exposed to 6 hours of sunlight (50–60°C) keep any migration far below safe drinking water guidelines. Simply replace heavily scratched or aged bottles."
+    },
+    {
+      "question": "What should I do if the cotton towel siphon drips too slowly?",
+      "causeDiagnostic": "If the towel climbs too high over a tall pot rim or the vertical drop between the upper and lower pots is too small, capillary pull slows down.",
+      "resolution": "**Fill the upper bowl near the brim so the towel only climbs 3–5 cm over the rim, and drape 2 or 3 twisted cotton towels side by side.** Running 3 towels in parallel yields nearly 2 liters of clear filtered water per hour."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Tap water cut off and no gas or power to boil water? Turn murky water into safe drinking water using a cotton towel and a clear plastic bottle! [5-35s Body] First, scoop clean reserve water from your chemical-free toilet tank or rain barrel and let it settle for 1 hour. Elevate the bowl one hand-span high and drape a tightly twisted 100% cotton towel down into a lower pot—capillary action pulls only crystal-clear drops over the rim while trapping mud and rust behind! Fill a label-free colorless PET bottle 3/4 full, shake for 20 seconds to mix oxygen, top it off, and lay it flat on an aluminum foil reflector in direct sun for 6 hours to kill 99.9% of germs! [35-45s Warning & Outro] Never use green bottles or closed window glass! Save this offline manual now.",
+  "outcome": {
+    "title": "Two-Tier Cotton Towel Capillary Siphon Filter & Foil-Reflector Clear PET Solar (SODIS) Sterilizer",
+    "badge": "FINAL SPEC // ZERO-FUEL CAPILLARY SIPHON & SODIS STERILIZER",
+    "description": "An integrated urban water outage survival system combining 1-hour gravity sedimentation, a 15 cm two-tier cotton towel capillary siphon (95% turbidity removal), 20-second oxygen aeration, and 6-hour direct solar UV-A + thermal disinfection (SODIS) on a foil reflector.",
+    "svgFileName": "pr23-outcome.svg",
+    "svgLabels": [
+      "PR-23 // ZERO-FUEL COTTON SIPHON + SOLAR SODIS",
+      "STAGE 01: 1H SETTLING",
+      "Cistern/rain gravity settling",
+      "STAGE 02: COTTON SIPHON",
+      "15cm drop capillary filter",
+      "STAGE 03: 20S O2 SHAKE",
+      "Clear PET 3/4 shake aeration",
+      "STAGE 04: 6H FOIL SODIS",
+      "UV-A + 50C kills 99.9% germs",
+      "FIELD VERIFIED // ZERO-FUEL URBAN BLACKOUT WATER SYSTEM"
+    ]
+  },
+  "createdAt": "2026-11-04T02:22:36.760Z",
+  "updatedAt": "2026-11-04T02:26:54.183Z",
+  "contentHash": "621efe19c4a078a8"
+}

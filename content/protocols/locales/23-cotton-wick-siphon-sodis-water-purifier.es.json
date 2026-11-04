@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-23",
+  "category": "FOOD",
+  "title": "Cómo Purificar Agua Potable en Apagones y Cortes de Agua con Sifón Capilar de Toalla de Algodón y Luz Solar (SODIS)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[CORTE DE AGUA URBANO Y FILTRACIÓN CAPILAR SIN COMBUSTIBLE + DESINFECCIÓN SOLAR UV]",
+  "summary": "Si en casa ya dispone de agua embotellada, una pajita filtrante portátil (como LifeStraw), pastillas potabilizadoras de dióxido de cloro o un filtro doméstico de fibra hueca, utilice siempre esos productos comerciales primero por rapidez y seguridad. Sin embargo, cuando un terremoto, guerra o apagón masivo agota el agua embotellada y las pastillas, y usted queda atrapado en un apartamento urbano sin carbón, arena de río ni gas o electricidad para hervir agua (si está en el bosque con carbón y arena, use el [Filtro Natural de Carbón y Arena](/protocol-01.html)), beber agua de lluvia turbia o agua con óxido de las tuberías provoca diarrea grave y deshidratación mortal en 3 días. Al recuperar agua limpia del tanque cerámico del inodoro o agua de lluvia, filtrar el barro y el óxido mediante un puente sifón capilar de toalla 100% algodón retorcida, y exponer botellas PET transparentes sobre un reflector de aluminio a 6 horas de sol directo (método SODIS avalado por la OMS), obtendrá agua potable segura sin gastar combustible.",
+  "timeRequired": "2 horas de filtración + 6 horas de desinfección solar (goteo capilar autónomo y exposición al sol directo)",
+  "successRate": "99% (tras filtrar con toalla 100% algodón en desnivel y exponer en botellas PET incoloras a 6 horas de sol despejado)",
+  "difficulty": "Principiante (Sin fuego, carbón ni arena; usa solo una toalla de algodón, dos ollas y botellas transparentes)",
+  "outputPerHour": "0% consumo de combustible / 0.5–1L de agua clara por hora por toalla y 3–4 botellas esterilizadas a la vez",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Toalla 100% Algodón (o Calcetines / Camiseta de Algodón Hervidos) y 2 Ollas o Cuencos",
+      "desc": "Filtro textil sin energía que retiene barro y partículas de óxido cuando no hay filtros comerciales. Al retorcer una toalla 100% algodón del grosor de la muñeca y tenderla como puente desde un recipiente alto hacia una olla baja, solo el agua clara sube por las microfibras y gotea limpia abajo."
+    },
+    {
+      "id": "mat-02",
+      "name": "2–3 Botellas PET Transparentes Incoloras de 2L o Menos sin Etiqueta (Botellas de Agua/Refresco sin Rayones)",
+      "desc": "Recipientes de desinfección permeables a rayos UV-A cuando faltan pastillas o leña. Deben ser botellas incoloras con el código triangular #1 (PET) en la base; retire toda etiqueta plástica y pegamento con la uña o un [Cuchillo de Piedra Primitivo](/protocol-04.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Papel de Aluminio de Cocina (2 Palmos) y 1 Plancha de Cartón (Pegamento de Arroz o Resina de Pino)",
+      "desc": "Reflector solar que rebota la luz y el calor infrarrojo hacia la cara inferior de las botellas, duplicando la velocidad de esterilización. Pegue el lado brillante del aluminio sobre el cartón con arroz cocido o [Pegamento de Resina de Pino](/protocol-10.html)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Recuperar Agua de la Cisterna Cerámica o Lluvia y Dejar Reposar 1 Hora para Asentar Sedimentos",
+      "description": "1. **Recuperar Agua de Reserva Oculta en Casa**: Apenas se corte el agua, levante la tapa rectangular de porcelana detrás del inodoro (cisterna) y extraiga los **10–15L de agua limpia almacenada (solo si no contiene pastillas químicas azules)** o el agua de lluvia recogida en el balcón.\n2. **Revisar Tuberías y Termo**: Recoja también el agua residual de las llaves de purga del calentador, pero jamás use agua jabonosa ni agua de la taza del inodoro.\n3. **1 Hora de Sedimentación por Gravedad sin Vibración**: Deje la olla sobre un suelo plano sin moverla durante **al menos 1 hora** para que la arena pesada y el óxido rojizo caigan por su propio peso al fondo.\n4. **Extraer con Cuidado los 2/3 Superiores Claros**: Sin remover el lodo del fondo, use un cucharón o taza para **pasar lentamente solo las dos terceras partes superiores de agua clara** al recipiente de filtrado.",
+      "actionNote": "> Por qué debe dejar reposar el agua 1 hora antes de meter la toalla: Si sumerge la toalla en agua turbia recién agitada, el barro grueso taponará los poros microscópicos de los hilos de algodón en 10 minutos y detendrá el goteo. Decantar antes triplica la velocidad.",
+      "svgFileName": "pr23-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RESERVA INTERIOR Y SEDIMENTACIÓN 1H",
+        "Extraer agua de cisterna sin químicos (12L) o lluvia",
+        "Reposar 1h en suelo plano para asentar óxido/arena",
+        "Separar los 2/3 superiores claros sin agitar fondo",
+        "[CLAVE] Evita tapar la toalla y quita 70% de lodo"
+      ],
+      "deepDive": {
+        "badge": "GRAVITY SEDIMENTATION",
+        "title": "Recuperación de Reserva en Cisterna Urbana y Eficiencia de Sedimentación de Stokes",
+        "text": "El tanque cerámico superior del inodoro está físicamente aislado de la taza inferior y conserva **10–15 litros de agua potable de red**, siendo la fuente de emergencia prioritaria en un corte urbano. Dejar el agua en reposo absoluto durante 60 minutos permite que **más del 70% del limo y partículas de óxido de hierro** sedimenten en los 3 cm inferiores según la Ley de Stokes.",
+        "fieldSpecs": [
+          {
+            "name": "Recuperación de Agua de Cisterna Cerámica y Recipiente de Sedimentación de 1 Hora",
+            "scientificName": "Domestic Ceramic Cistern Water Recovery & Gravity Sedimentation Basin",
+            "categoryTag": "Reserva Hídrica Interior / Sedimentación Primaria",
+            "imageFileName": "id-ceramic-cistern-settled-water.jpg",
+            "hudCode": "FIG. FOOD-23A // MACRO OPTIC",
+            "hudStatus": "SEDIMENT LAYER: SETTLED 70%",
+            "traits": [
+              {
+                "label": "FUENTE/LIMPIA",
+                "value": "Use solo **agua inodora de cisterna sin bloques químicos** o agua de lluvia tras los primeros 10 minutos."
+              },
+              {
+                "label": "CAPA/FONDO",
+                "value": "Tras 1 hora, **la arena y el óxido descansan en el fondo** y el agua translúcida queda arriba."
+              },
+              {
+                "label": "MAR/PROHIBIDO",
+                "value": "La sal marina no se filtra con tela; el agua de mar debe destilarse en el [Destilador de Barro y Bambú](/protocol-20.html)."
+              }
+            ],
+            "fieldUse": "Captación de agua de emergencia en viviendas y eliminación primaria de lodo pesado"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Elevar el Recipiente Superior 1 Palmo y Tender un Puente de Toalla de Algodón Retorcida hacia la Olla Inferior",
+      "description": "1. **Crear un Desnivel de 1 Palmo (15–20 cm)**: Coloque el recipiente con agua decantada sobre una caja o cacerola invertida (**un palmo de mano adulta, unos 15–20 cm más alto que el suelo**), y ponga una olla limpia vacía abajo a su lado.\n2. **Retorcer una Toalla 100% Algodón del Grosor de la Muñeca**: Moje una toalla limpia 100% algodón sin suavizante y retuérzala con fuerza hasta formar una **cuerda firme del grosor de una muñeca adulta**.\n3. **Tender el Puente de Toalla entre Ambos Recipientes**: Sumerja un extremo de la toalla a media altura en el recipiente superior (sin tocar el sedimento del fondo) y deje colgar el otro extremo dentro de la olla inferior **al menos un palmo por debajo del nivel del agua superior**.\n4. **Confirmar el Goteo Continuo de Agua Clara**: En 5–10 minutos, el agua que sube por las fibras de algodón caerá desde la punta inferior a razón de **1–2 gotas cristalinas por segundo**, dejando el barro atrapado arriba.",
+      "actionNote": "> Por qué sifonar hacia arriba por encima del borde filtra mucho mejor que colar hacia abajo: Al verter agua turbia hacia abajo sobre una tela, la presión empuja el barro fino a través del tejido. Al subir por capilaridad contra la gravedad, solo las moléculas ligeras de agua cruzan el arco.",
+      "svgFileName": "pr23-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // SIFÓN CAPILAR CON TOALLA EN DESNIVEL",
+        "Elevar cuenco superior 15-20cm sobre olla inferior",
+        "Retorcer toalla 100% algodón como cuerda firme",
+        "Punta inferior más baja que nivel superior (1 gota/s)",
+        "[CLAVE] Flujo capilar antigravedad retiene 95% lodo"
+      ],
+      "deepDive": {
+        "badge": "CAPILLARY SIPHON",
+        "title": "Acción Capilar en Microfibras de Celulosa Combinada con Carga de Sifón Gravitacional",
+        "text": "Una toalla 100% algodón retorcida forma miles de **microcanales capilares de celulosa de escala micrométrica**. La tensión superficial eleva las moléculas de agua sobre el borde mientras el limo pesado no puede vencer la gravedad. Cuando el extremo colgante se sitúa **15–20 cm por debajo de la superficie superior**, la diferencia de energía potencial del sifón mantiene un goteo continuo sin electricidad.",
+        "fieldSpecs": [
+          {
+            "name": "Puente Sifón Capilar de Toalla 100% Algodón Retorcida entre Ollas a Dos Niveles",
+            "scientificName": "Twisted 100% Cotton Capillary Siphon Filtration Bridge",
+            "categoryTag": "Filtración Capilar sin Energía / Reducción >95% Turbidez",
+            "imageFileName": "id-twisted-cotton-towel-siphon-bridge.jpg",
+            "hudCode": "FIG. FOOD-23B // MACRO OPTIC",
+            "hudStatus": "TURBIDITY REDUCTION: >95%",
+            "traits": [
+              {
+                "label": "FIBRA/ALGODÓN",
+                "value": "Use **toallas o camisetas 100% algodón puro** retorcidas como soga."
+              },
+              {
+                "label": "DESNIVEL/15CM",
+                "value": "La punta inferior debe colgar **15–20 cm más abajo que el nivel de agua superior**."
+              },
+              {
+                "label": "TAPA/HIGIENE",
+                "value": "Cubra ambos recipientes con **platos o plástico** durante las 1–2 horas de goteo."
+              }
+            ],
+            "fieldUse": "Clarificación de agua de lluvia o tuberías en interiores sin carbón ni arena"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Llenar 3/4 de una Botella PET Transparente sin Etiqueta y Agitar 20 Segundos para Oxigenar",
+      "description": "1. **Seleccionar Botella PET #1 Incolora y Quitar Etiqueta**: Elija una **botella plástica totalmente transparente e incolora de 2L o menos (marcada #1 PET en la base)**, despegue la etiqueta y restos de pegamento, y enjuáguela con agua filtrada.\n2. **Prueba Visual de Nitidez a Través de la Botella**: Llene la botella y coloque su mano o un periódico detrás; **las líneas de la palma o las letras deben verse nítidas a través del agua** para garantizar que los rayos UV penetren.\n3. **Llenar a 3/4 y Agitar 20 Segundos con Fuerza**: Vierta agua filtrada hasta **la altura del hombro (unos 3/4)**, cierre el tapón y **agite enérgicamente arriba y abajo durante 20 segundos** hasta llenarla de pequeñas burbujas blancas.\n4. **Completar hasta el Borde y Cerrar Firme**: Abra el tapón, **termine de llenar con agua filtrada hasta el borde mismo de la boca** y enrosque el tapón con fuerza.",
+      "actionNote": "> Por qué es vital agitar la botella 20 segundos antes de exponerla al sol: Las burbujas de oxígeno disuelto reaccionan con los rayos solares UV-A para formar radicales de oxígeno activo que destruyen la membrana de las bacterias, duplicando el poder desinfectante.",
+      "svgFileName": "pr23-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SELECCIÓN PET #1 Y OXIGENACIÓN 20S",
+        "Botella PET (#1) incolora de <=2L sin etiquetas",
+        "Verificar nitidez viendo líneas de la mano detrás",
+        "Llenar 3/4 y agitar 20s para disolver microburbujas",
+        "[CLAVE] Maximiza O2 disuelto para fotooxidación UV"
+      ],
+      "deepDive": {
+        "badge": "PHOTO-OXIDATION",
+        "title": "Saturación de Oxígeno Disuelto y Sinergia de Fotooxidación Solar UV-A",
+        "text": "La desinfección solar (SODIS) no solo rompe el ADN bacteriano mediante radiación UV-A directa, sino que activa el **oxígeno disuelto (O₂) bajo luz UV-A (320–400 nm) para generar especies reactivas de oxígeno (ROS) y radicales hidroxilo** que perforan las membranas celulares de virus y bacterias. Agitar la botella llena a 3/4 durante 20 segundos satura el oxígeno disuelto.",
+        "fieldSpecs": [
+          {
+            "name": "Botella PET Incolora sin Etiqueta Saturada con Microburbujas de Oxígeno Disuelto",
+            "scientificName": "Clear Polyethylene Terephthalate (PET #1) Bottle with Aerated Micro-Bubbles",
+            "categoryTag": "Envase Permeable a UV-A / Generación de Oxígeno Reactivo",
+            "imageFileName": "id-clear-pet-bottle-oxygen-bubbles.jpg",
+            "hudCode": "FIG. FOOD-23C // MACRO OPTIC",
+            "hudStatus": "DISSOLVED OXYGEN: SATURATED",
+            "traits": [
+              {
+                "label": "ENVASE/PET-1",
+                "value": "Botellas verdes o marrones bloquean los UV; use solo **botellas PET (#1) incoloras de <=2L**."
+              },
+              {
+                "label": "NITIDEZ/TEST",
+                "value": "**Las líneas de los dedos o letras detrás de la botella** deben leerse con claridad."
+              },
+              {
+                "label": "AIREACIÓN/O2",
+                "value": "Tras agitar 20s, **finas microburbujas plateadas de oxígeno** cubren el interior."
+              }
+            ],
+            "fieldUse": "Oxigenación previa y control visual de turbidez (<30 NTU) para esterilización solar"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Acostar la Botella sobre el Reflector de Cartón y Aluminio al Sol Directo por 6 Horas (o Hervir 3 Minutos)",
+      "description": "1. **Armar el Reflector de Cartón y Papel Aluminio**: Doble una lámina de cartón en forma de canal en V suave y pegue **papel de aluminio de cocina (con la cara más brillante hacia arriba)** para formar una cuna concentradora.\n2. **Acostar las Botellas Horizontalmente al Sol Directo**: Coloque el reflector en un lugar exterior sin sombra (balcón abierto, azotea o patio inclinado 30–45° hacia el sol) y **acueste las botellas PET transparentes de lado**, nunca de pie.\n3. **Exponer 6 Horas al Sol del Mediodía**: Déjelas bajo **sol directo entre las 9:00 y las 15:00 durante al menos 6 horas seguidas** para que los rayos UV-A y el calor solar (>50°C) eliminen los microbios (si el cielo está más de 50% nublado, exponga durante **2 días seguidos**; si llueve, recoja agua de lluvia limpia o hiérvala).\n4. **Enfriar y Beber, o Hervir 3 Minutos si Hay Fuego**: Pasadas 6 horas, deje enfriar a la sombra el **agua tibia como baño** antes de beber; si cuenta con la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o el [Calentador de Lata de Atún y Aceite](/protocol-21.html), puede hervir el agua filtrada durante 3 minutos.",
+      "actionNote": "> Por qué la botella debe acostarse sobre aluminio y no dejarse de pie: Si la botella está vertical, la columna de agua es demasiado profunda y los rayos UV no llegan al fondo. Al acostarla, el espesor del agua baja a menos de 10 cm y el aluminio rebota el sol por debajo.",
+      "svgFileName": "pr23-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ESTERILIZACIÓN SOLAR SODIS 6H EN ALUMINIO",
+        "Reflector en V de cartón forrado con aluminio",
+        "Acostar envase PET para mantener espesor <10cm",
+        "6h de sol directo para esterilización UV-A + 50C",
+        "[CLAVE] 0% combustible para destruir 99.9% gérmenes"
+      ],
+      "deepDive": {
+        "badge": "SODIS STERILIZATION",
+        "title": "Sinergia UV-A + Calor Térmico (50°C) del Método SODIS (OMS) y Óptica Reflectora de Aluminio",
+        "text": "Avalado por la Organización Mundial de la Salud (OMS) y la Cruz Roja para zonas de desastre, el método **SODIS (Solar Water Disinfection)** combina **radiación UV-A (320–400 nm)** con **pasteurización infrarroja**. Cuando el reflector de aluminio eleva la temperatura del agua por encima de **50°C**, la velocidad bactericida se acelera **más de 3 veces**, inactivando el 99.9% de cólera, disentería, E. coli y rotavirus en 6 horas.",
+        "fieldSpecs": [
+          {
+            "name": "Batería SODIS de Botellas PET Horizontales sobre Cuna Reflectora de Cartón y Aluminio",
+            "scientificName": "Foil-Backed Corrugated Reflector Cradle & Horizontal PET SODIS Array",
+            "categoryTag": "Esterilización UV-A + Térmica sin Combustible / Estándar OMS",
+            "imageFileName": "id-foil-cardboard-sodis-solar-cradle.jpg",
+            "hudCode": "FIG. FOOD-23D // MACRO OPTIC",
+            "hudStatus": "UV-A + 50C SYNERGY: 6H STERILE",
+            "traits": [
+              {
+                "label": "HORIZONTAL/10CM",
+                "value": "Acostar la botella **mantiene la profundidad del agua bajo 10 cm** para penetración total UV-A."
+              },
+              {
+                "label": "ALUMINIO/50C",
+                "value": "El **forro brillante de papel aluminio** rebota los rayos UV y calienta el agua cerca de 50°C."
+              },
+              {
+                "label": "VENTANA/ABRIR",
+                "value": "El vidrio doble de ventana bloquea los UV-A; ponga las botellas **al sol directo sin cristales de por medio**."
+              }
+            ],
+            "fieldUse": "Potabilización masiva sin combustible durante colapsos de agua y energía en ciudades"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca Use Botellas de Color Verde o Marrón ni Sol Detrás de Ventanas Cerradas, y Jamás Beba Agua con Limpiadores Químicos o Combustible",
+    "description": "Las botellas de plástico de colores (verdes de refresco o marrones de cerveza) y las botellas viejas muy rayadas bloquean los rayos UV-A por completo, dejando vivas las bacterias aunque pasen horas al sol. Asimismo, poner las botellas detrás de ventanas cerradas de doble acristalamiento frena la radiación UV; abra siempre la ventana de par en par o colóquelas al aire libre (en días lluviosos o de noche, hierva el agua en la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o el [Calentador de Lata de Atún y Aceite](/protocol-21.html)). Por último, jamás beba agua de cisternas que contengan pastillas limpiadoras azules, anticongelante, aceite o pesticidas, pues ni la tela ni el sol eliminan venenos químicos.",
+    "consequence": "Use solo agua libre de químicos, fíltrela hasta que esté cristalina, llene botellas PET #1 incoloras y complete las 6 horas de sol directo antes de beber."
+  },
+  "faqs": [
+    {
+      "question": "¿Exponer botellas de plástico PET al sol caliente durante 6 horas libera bisfenol o sustancias tóxicas en el agua?",
+      "causeDiagnostic": "Es común temer que el plástico al sol suelte químicos, pero las botellas transparentes marcadas con el número 1 (PET) no contienen plastificantes como Bisfenol-A (BPA) ni ftalatos.",
+      "resolution": "Estudios de la **Organización Mundial de la Salud (OMS) y el Instituto Federal Suizo de Ciencia y Tecnología Acuática (Eawag)** demostraron que exponer botellas PET incoloras a 6 horas de sol (50–60°C) mantiene cualquier migración muy por debajo de los límites seguros. Solo reemplace botellas viejas o blanquecinas por rayones."
+    },
+    {
+      "question": "¿Qué hago si el sifón de toalla de algodón gotea demasiado lento?",
+      "causeDiagnostic": "Si la toalla sube un borde muy alto o la diferencia de altura entre el recipiente superior y la olla inferior es pequeña, la fuerza capilar pierde velocidad.",
+      "resolution": "**Llene casi hasta el borde el recipiente superior para que la toalla solo suba 3–5 cm, y coloque 2 o 3 toallas retorcidas en paralelo.** Con 3 toallas simultáneas obtendrá casi 2 litros de agua clara por hora."
+    }
+  ],
+  "shortsScript": "[0-5s Gancho] ¿Sin agua del grifo y sin gas ni luz para hervir? ¡Purifica agua en casa usando una toalla de algodón y una botella transparente! [5-35s Cuerpo] Primero saca agua limpia del tanque trasero del inodoro (sin pastillas químicas) o lluvia y déjala reposar 1 hora. Sube el recipiente un palmo de altura y tiende una toalla 100% algodón retorcida hacia una olla más baja: ¡por capilaridad solo suben gotas cristalinas dejando el barro y óxido atrás! Llena 3/4 de una botella PET transparente sin etiqueta, agita 20 segundos para mezclar oxígeno, llénala al tope y acuéstate sobre papel aluminio al sol directo por 6 horas para eliminar el 99.9% de bacterias! [35-45s Aviso y Cierre] ¡No uses botellas verdes ni sol tras cristales cerrados! Guarda este manual ahora.",
+  "outcome": {
+    "title": "Filtro Sifón Capilar de Toalla de Algodón en Desnivel y Esterilizador Solar (SODIS) en Reflector de Aluminio",
+    "badge": "FINAL SPEC // ZERO-FUEL CAPILLARY SIPHON & SODIS STERILIZER",
+    "description": "Sistema urbano de supervivencia ante cortes de agua que integra 1 hora de sedimentación por gravedad, sifón capilar con toalla de algodón a 15 cm de desnivel (95% menos turbidez), aireación de 20 segundos y 6 horas de desinfección solar UV-A + calor (SODIS) sobre aluminio.",
+    "svgFileName": "pr23-outcome.svg",
+    "svgLabels": [
+      "PR-23 // SIFÓN DE ALGODÓN + ESTERILIZADOR SOLAR SODIS",
+      "STAGE 01: DECANTAR 1H",
+      "Cisterna/lluvia por gravedad",
+      "STAGE 02: SIFÓN ALGODÓN",
+      "Desnivel 15cm filtra lodo",
+      "STAGE 03: AGITAR O2 20S",
+      "PET incoloro 3/4 oxigenado",
+      "STAGE 04: SODIS 6H ALUMINIO",
+      "UV-A + 50C mata 99.9% microbios",
+      "VERIFICADO // AGUA POTABLE URBANA CON 0% COMBUSTIBLE"
+    ]
+  },
+  "createdAt": "2026-11-04T02:22:36.760Z",
+  "updatedAt": "2026-11-04T02:26:54.183Z",
+  "contentHash": "621efe19c4a078a8"
+}

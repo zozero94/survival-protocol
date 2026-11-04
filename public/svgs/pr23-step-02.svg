@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg23s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090d14"/>
+      <stop offset="100%" stop-color="#111824"/>
+    </linearGradient>
+    <linearGradient id="cottonRope" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="standBox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="sh23s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & HUD Frame -->
+  <rect width="400" height="400" fill="url(#bg23s2)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#334155" stroke-width="1"/>
+  <path d="M8 24 L24 8 M376 8 L392 24 M8 376 L24 392 M376 392 L392 376" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="28" fill="#131922" stroke="#475569" stroke-width="1"/>
+  <text x="22" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 단차 용기 순면 수건 모세관 사이펀 여과</text>
+
+  <!-- Label 1 Callout Box -->
+  <rect x="20" y="50" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="34" cy="64" r="4" fill="#38bdf8"/>
+  <text x="44" y="68" fill="#e0f2fe" font-family="sans-serif" font-size="11" font-weight="bold">상단 원수 용기를 하단 집수 냄비보다 15~20cm 높게 배치</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="20" y="86" width="360" height="28" rx="2" fill="#1c1917" stroke="#f59e0b" stroke-width="1"/>
+  <text x="30" y="104" fill="#fef3c7" font-family="sans-serif" font-size="11" font-weight="bold">100% 순면 수건을 손목 굵기 로프 형태로 비틀어 연결</text>
+
+  <!-- Center 3D Capillary Siphon Setup -->
+  <g filter="url(#sh23s2)">
+    <!-- Elevation Support Box Under Upper Bowl (Left) -->
+    <polygon points="34,232 164,232 164,296 34,296" fill="url(#standBox)" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="34" y1="264" x2="164" y2="264" stroke="#fde68a" stroke-width="1" stroke-dasharray="4,3"/>
+    <!-- Vertical Height Diff Dimension Arrow (15~20cm) -->
+    <line x1="178" y1="175" x2="178" y2="255" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <path d="M174,181 L178,175 L182,181 M174,249 L178,255 L182,249" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+
+    <!-- Upper Raw Water Bowl -->
+    <rect x="42" y="154" width="114" height="78" rx="4" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="46" y="168" width="106" height="48" fill="#0369a1" fill-opacity="0.65"/>
+    <rect x="46" y="216" width="106" height="12" fill="#78350f"/>
+
+    <!-- Lower Clean Receiving Pot (Right) -->
+    <rect x="228" y="218" width="132" height="78" rx="5" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="233" y="262" width="122" height="30" fill="#38bdf8" fill-opacity="0.75"/>
+    <path d="M235,262 Q294,258 353,262" fill="none" stroke="#e0f2fe" stroke-width="1.5"/>
+
+    <!-- Twisted 100% Cotton Towel Siphon Bridge Arching Over Rim -->
+    <path d="M115,202 C115,132 185,128 248,175 C265,188 275,205 275,224" fill="none" stroke="url(#cottonRope)" stroke-width="16" stroke-linecap="round"/>
+    <!-- Twisted Rope Strand Texture Lines -->
+    <path d="M112,190 L124,180 M122,168 L136,162 M142,150 L156,152 M168,144 L180,152 M196,148 L206,160 M222,158 L230,172 M246,174 L252,188 M264,195 L278,205" stroke="#0284c7" stroke-width="2"/>
+    <!-- Capillary Flow Direction Arrows Along Towel -->
+    <path d="M148,140 L166,138 L161,133 M216,145 L232,156 L230,148" fill="none" stroke="#fde68a" stroke-width="1.8"/>
+
+    <!-- Crystal-Clear Water Droplets Dripping from Lower Towel Tip -->
+    <path d="M275,232 C271,240 272,245 275,245 C278,245 279,240 275,232 Z" fill="#7dd3fc" stroke="#e0f2fe" stroke-width="1"/>
+    <path d="M275,249 C271,257 272,261 275,261 C278,261 279,257 275,249 Z" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="20" y="314" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <text x="30" y="332" fill="#bae6fd" font-family="sans-serif" font-size="11" font-weight="bold">수건 하단 끝을 상단 수면보다 낮게 두어 1초 1방울 출수</text>
+
+  <!-- Footer Key Takeaway Banner -->
+  <rect x="14" y="352" width="372" height="32" fill="#1e1b18" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="24" y="372" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">[핵심] 중력 역행 모세관 이동으로 진흙·녹 95% 여과</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg23s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090d14"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+    <linearGradient id="cisternCer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="clearUpper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="sedimentBot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <filter id="sh23s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & HUD Frame -->
+  <rect width="400" height="400" fill="url(#bg23s1)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#334155" stroke-width="1"/>
+  <path d="M8 24 L24 8 M376 8 L392 24 M8 376 L24 392 M376 392 L392 376" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="28" fill="#131922" stroke="#475569" stroke-width="1"/>
+  <text x="22" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // 실내 비상 원수 확보 및 1시간 중력 침전 분리</text>
+
+  <!-- Label 1 Callout Box -->
+  <rect x="20" y="50" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="34" cy="64" r="4" fill="#38bdf8"/>
+  <text x="44" y="68" fill="#e0f2fe" font-family="sans-serif" font-size="11" font-weight="bold">세정제 없는 변기 뒤 도기 수조(12L) 및 빗물 원수 확보</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="20" y="86" width="360" height="28" rx="2" fill="#1c1917" stroke="#f59e0b" stroke-width="1"/>
+  <text x="30" y="104" fill="#fef3c7" font-family="sans-serif" font-size="11" font-weight="bold">평평한 바닥에서 1시간 정체시켜 녹·모래 하단 침전</text>
+
+  <!-- Left Visual: 3D Ceramic Cistern Tank with Open Lid -->
+  <g filter="url(#sh23s1)">
+    <!-- Open Lid Lifted Up -->
+    <polygon points="32,140 132,126 144,136 44,150" fill="url(#cisternCer)" stroke="#64748b" stroke-width="1.2"/>
+    <!-- Cistern Tank Body -->
+    <polygon points="36,160 136,160 130,275 42,275" fill="url(#cisternCer)" stroke="#475569" stroke-width="1.5"/>
+    <!-- Inner Water Cutaway in Cistern -->
+    <polygon points="44,178 128,178 123,265 49,265" fill="url(#clearUpper)" stroke="#38bdf8" stroke-width="1"/>
+    <path d="M46,184 Q66,180 86,184 T126,184" fill="none" stroke="#bae6fd" stroke-width="1.5"/>
+    <!-- Green Checkmark Symbol on Clean Cistern -->
+    <circle cx="86" cy="222" r="14" fill="#064e3b" stroke="#22c55e" stroke-width="1.5"/>
+    <path d="M79,222 L84,227 L94,216" fill="none" stroke="#4ade80" stroke-width="2.2"/>
+    <!-- Transfer Arrow to Settling Pot -->
+    <path d="M142,205 C165,185 185,185 205,202" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2"/>
+    <polygon points="205,202 197,197 200,206" fill="#38bdf8"/>
+  </g>
+
+  <!-- Right Visual: 1-Hour Gravity Sedimentation Pot Cross-Section -->
+  <g filter="url(#sh23s1)">
+    <!-- Pot Handles -->
+    <path d="M204,178 L192,178 L192,194 L204,194 M356,178 L368,178 L368,194 L356,194" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+    <!-- Pot Outer Cylinder -->
+    <rect x="204" y="162" width="152" height="132" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Top 2/3 Clear Supernatant Layer -->
+    <rect x="210" y="174" width="140" height="82" fill="url(#clearUpper)" stroke="#38bdf8" stroke-width="1"/>
+    <!-- Bottom 1/3 Settled Rust & Silt Sediment Layer -->
+    <path d="M210,256 Q280,252 350,256 L350,288 L210,288 Z" fill="url(#sedimentBot)" stroke="#d97706" stroke-width="1"/>
+    <!-- Sediment Granules & Downward Gravity Arrows -->
+    <circle cx="235" cy="272" r="2.5" fill="#fbbf24"/>
+    <circle cx="260" cy="278" r="3" fill="#f59e0b"/>
+    <circle cx="290" cy="270" r="2" fill="#fcd34d"/>
+    <circle cx="320" cy="276" r="3" fill="#d97706"/>
+    <circle cx="335" cy="268" r="2.2" fill="#fbbf24"/>
+    <path d="M250,215 L250,248 M245,242 L250,248 L255,242" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <path d="M310,215 L310,248 M305,242 L310,248 L315,242" fill="none" stroke="#fde68a" stroke-width="1.6"/>
+    <!-- Ladle Skimming Top 2/3 Clear Water -->
+    <path d="M275,195 A18,12 0 0,0 311,195 Z" fill="#cbd5e1" stroke="#f8fafc" stroke-width="1.5"/>
+    <line x1="310" y1="192" x2="345" y2="145" stroke="#e2e8f0" stroke-width="3"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="20" y="314" width="360" height="28" rx="2" fill="#161f2c" stroke="#38bdf8" stroke-width="1"/>
+  <text x="30" y="332" fill="#bae6fd" font-family="sans-serif" font-size="11" font-weight="bold">바닥 찌꺼기 교란 없이 상단 2/3 맑은 상등수 분리</text>
+
+  <!-- Footer Key Takeaway Banner -->
+  <rect x="14" y="352" width="372" height="32" fill="#1e1b18" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="24" y="372" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">[핵심] 수건 필터 눈막힘 방지 및 1차 고형물 70% 제거</text>
+</svg>
