@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg24s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="orsWater24s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="spoonMetal24s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <pattern id="grid24s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow24s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg24s2)"/>
+  <rect width="400" height="400" fill="url(#grid24s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // WHO 표준 경구수액(ORS) 소금·설탕 정밀 배합</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">끓여 식힌 물 1리터에 순수 소금 3손가락 2꼬집(2.5g) 투입</text>
+
+  <!-- Center Illustration: 1L Mixing Pitcher + Salt Pinch (Left) + 2 Level Spoons Sugar (Right) -->
+  <g filter="url(#shadow24s2)">
+    <!-- Left: Anatomical 3-Finger Salt Pinch (2.5g / 0.5 tsp) -->
+    <g transform="translate(28, 92)">
+      <rect x="0" y="0" width="96" height="68" rx="4" fill="#111827" stroke="#64748b" stroke-width="1.2"/>
+      <!-- 3-Finger Silhouette (Thumb, Index, Middle pinching crystal grains) -->
+      <path d="M24,14 C30,22 36,34 42,40 C45,43 42,48 37,45 C30,39 22,28 16,20 Z" fill="#d6b498" stroke="#f8fafc" stroke-width="1"/>
+      <path d="M56,10 C54,22 50,34 47,40 C45,43 49,47 53,43 C58,36 62,24 64,12 Z" fill="#d6b498" stroke="#f8fafc" stroke-width="1"/>
+      <path d="M70,14 C66,24 58,35 53,41 C51,44 55,48 59,44 C66,37 72,26 76,16 Z" fill="#c49e80" stroke="#f8fafc" stroke-width="1"/>
+      <!-- Falling Salt Crystals -->
+      <circle cx="44" cy="50" r="2" fill="#ffffff"/>
+      <circle cx="50" cy="53" r="1.8" fill="#e0f2fe"/>
+      <circle cx="46" cy="58" r="2.2" fill="#ffffff"/>
+      <circle cx="53" cy="60" r="1.6" fill="#bae6fd"/>
+    </g>
+
+    <!-- Arrow Left to Center Pitcher -->
+    <path d="M128,136 L148,154" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="145,157 154,158 150,149" fill="#38bdf8"/>
+
+    <!-- Center: 1.0L Clear ORS Vessel with Dissolving Vortex -->
+    <path d="M154,116 L246,116 L240,236 Q239,244 231,244 L169,244 Q161,244 160,236 Z" fill="#1e293b" stroke="#7dd3fc" stroke-width="1.8"/>
+    <path d="M158,138 L242,138 L237,234 Q236,240 230,240 L170,240 Q164,240 163,234 Z" fill="url(#orsWater24s2)"/>
+    <!-- Stirring Vortex & Na+/Glucose Co-Transport Ions -->
+    <ellipse cx="200" cy="170" rx="28" ry="7" fill="none" stroke="#e0f2fe" stroke-width="1.2" stroke-dasharray="4,2"/>
+    <ellipse cx="200" cy="194" rx="22" ry="5" fill="none" stroke="#fde047" stroke-width="1.2" stroke-dasharray="3,2"/>
+    <ellipse cx="200" cy="216" rx="14" ry="4" fill="none" stroke="#e0f2fe" stroke-width="1.2"/>
+    <circle cx="182" cy="182" r="3" fill="#ffffff"/>
+    <circle cx="216" cy="186" r="3.5" fill="#fde047"/>
+    <circle cx="196" cy="204" r="3" fill="#ffffff"/>
+    <circle cx="210" cy="212" r="3.5" fill="#fde047"/>
+
+    <!-- Right: 2 Level Tablespoons of Sugar (30g / 6 tsp) -->
+    <g transform="translate(274, 92)">
+      <rect x="0" y="0" width="98" height="68" rx="4" fill="#111827" stroke="#eab308" stroke-width="1.2"/>
+      <!-- Spoon 1 (Level Sugar) -->
+      <ellipse cx="36" cy="26" rx="20" ry="8" fill="url(#spoonMetal24s2)" stroke="#f8fafc" stroke-width="1"/>
+      <path d="M18,24 L54,24 Q36,16 18,24 Z" fill="#fef08a" stroke="#fde047" stroke-width="1"/>
+      <rect x="56" y="24" width="32" height="4" rx="1.5" fill="url(#spoonMetal24s2)"/>
+      <!-- Spoon 2 (Level Sugar) -->
+      <ellipse cx="36" cy="50" rx="20" ry="8" fill="url(#spoonMetal24s2)" stroke="#f8fafc" stroke-width="1"/>
+      <path d="M18,48 L54,48 Q36,40 18,48 Z" fill="#fef08a" stroke="#fde047" stroke-width="1"/>
+      <rect x="56" y="48" width="32" height="4" rx="1.5" fill="url(#spoonMetal24s2)"/>
+    </g>
+
+    <!-- Arrow Right to Center Pitcher -->
+    <path d="M270,136 L250,154" fill="none" stroke="#fde047" stroke-width="2"/>
+    <polygon points="248,149 244,158 253,157" fill="#fde047"/>
+
+    <!-- Tear-Taste Check Badge on Left Lower -->
+    <g transform="translate(28, 178)">
+      <rect x="0" y="0" width="96" height="58" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+      <path d="M48,12 C48,12 36,28 36,36 C36,43 41,48 48,48 C55,48 60,43 60,36 C60,28 48,12 48,12 Z" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.2"/>
+      <path d="M43,35 L47,39 L55,30" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- SGLT-1 3x Absorption Diagram on Right Lower -->
+    <g transform="translate(274, 178)">
+      <rect x="0" y="0" width="98" height="58" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+      <path d="M18,42 L40,22 L56,32 L80,14" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+      <polygon points="75,12 84,11 81,20" fill="#10b981"/>
+      <circle cx="40" cy="22" r="3" fill="#fde047"/>
+      <circle cx="56" cy="32" r="3" fill="#38bdf8"/>
+    </g>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="256" width="368" height="26" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="273" fill="#fef08a" font-family="monospace" font-size="10.5">설탕을 밥숟가락 평평하게 깎아 2스푼(6작은술, 30g) 투입</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="290" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="307" fill="#e0f2fe" font-family="monospace" font-size="10.5">손등에 한 방울 맛보아 눈물보다 덜 짠 맛인지 관능 검증</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 소장 나트륨-포도당 공동 수송으로 수분 흡수율 3배 상승</text>
+</svg>

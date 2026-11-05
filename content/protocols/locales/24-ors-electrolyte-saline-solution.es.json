@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-24",
+  "category": "MEDICINE",
+  "title": "Cómo Hacer Suero Oral (SRO) de la OMS y Solución Salina al 0.9% para Heridas con Agua Hervida, Sal y Azúcar",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[SUERO ORAL SALVAVIDAS CONTRA CHOQUE POR DESHIDRATACIÓN Y SOLUCIÓN SALINA ISOTÓNICA AL 0.9%]",
+  "summary": "Si su hogar o botiquín ya cuenta con sobres comerciales de sales de rehidratación oral, bebidas isotónicas deportivas o suero fisiológico estéril de farmacia, utilice siempre esos productos primero inmediatamente después de abrirlos. Sin embargo, cuando los hospitales y farmacias colapsan durante un desastre, apagón o corte de agua y se agotan los suministros, la diarrea aguda, los vómitos o la fiebre alta drenan rápidamente el agua y las sales del cuerpo, provocando un choque por deshidratación mortal en 3 días. Beber solo agua simple no logra absorberse en el intestino, y verter agua simple sobre una herida abierta rompe las células por choque osmótico, empeorando el dolor, la infección secundaria y la necrosis. Al mezclar sal y azúcar de cocina en 1 litro de agua purificada mediante un [Filtro Natural de Carbón y Arena](/protocol-01.html) o un [Sifón de Toalla de Algodón y Esterilizador Solar SODIS](/protocol-23.html) y hervida durante 3 minutos, puede preparar de inmediato el Suero de Rehidratación Oral (SRO) estándar de la OMS que triplica la absorción intestinal, además de una solución salina al 0.9% sin azúcar para lavar heridas sin dolor.",
+  "timeRequired": "20 min (incluye 3 min de hervor, enfriamiento a temperatura corporal y mezcla)",
+  "successRate": "99% (mezclando 2 pizcas de sal de tres dedos y 2 cucharadas rasas de azúcar en 1L de agua hervida y verificando el sabor a lágrima)",
+  "difficulty": "Básico (Sin báscula ni taza medidora; usa dos botellas de 500mL, una cuchara sopera, sal y azúcar)",
+  "outputPerHour": "Produce 2–3L de suero oral salvavidas (SRO) o 2L de solución salina estéril al 0.9% por hora",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Litro de Agua Filtrada Hervida por 3+ Minutos y Dos Botellas Vacías de 500mL (o 5.5 Vasos de Papel)",
+      "desc": "Para evitar infecciones intestinales y en heridas, el agua debe hervirse a borbotones. Sin jarra graduada, llenar dos botellas comunes de 500mL hasta el hombro (o 5 vasos y medio de papel del tamaño de un puño) asegura exactamente 1 litro (1,000mL)."
+    },
+    {
+      "id": "mat-02",
+      "name": "Sal Refinada Pura (o Sal Marina Limpia) y 1 Cuchara Sopera Estándar",
+      "desc": "El electrolito esencial que iguala la salinidad de la sangre y las lágrimas para impulsar la absorción de agua y proteger las células de las heridas. Nunca use sal condimentada con ajo ni glutamato. En la costa sin sal de mesa, use los cristales blancos obtenidos en el fondo de un [Destilador de Agua de Mar de Arcilla y Bambú](/protocol-20.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Azúcar Blanca (o Azúcar Morena, Miel, Glucosa o un Puñado de Arroz Cocido Machacado)",
+      "desc": "Abre los cotransportadores de sodio-glucosa (SGLT-1) en la pared del intestino delgado para atraer sodio y agua al torrente sanguíneo 3 veces más rápido. Nunca use edulcorantes artificiales sin calorías, ya que no absorben agua y empeoran la diarrea osmótica; si no hay azúcar, use agua de arroz hervida."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Hervir 1 Litro de Agua Filtrada a Borbotones por 3+ Minutos, Enfriar a Temperatura Corporal y Medir con Dos Botellas de 500mL",
+      "description": "1. **Preparar Agua Clara Filtrada**: Vierta en una olla limpia agua libre de barro filtrada con un [Filtro de Carbón y Arena](/protocol-01.html) o un [Sifón Capilar de Toalla de Algodón](/protocol-23.html).\n2. **Hervir a Borbotones por 3+ Minutos**: Caliente la olla sobre una [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o un [Calentador de Lata de Atún y Aceite](/protocol-21.html) hasta que **burbujas grandes del tamaño de una uña del pulgar broten por toda la superficie durante al menos 3 minutos**, eliminando bacterias de diarrea y tétanos.\n3. **Enfriar hasta Tibieza Corporal**: Deje la olla tapada a la sombra hasta que al tocar el exterior con el dorso de la mano se sienta **tibio como agua de baño para bebé (35–37°C)**.\n4. **Medir Exactamente 1 Litro con Dos Botellas de 500mL**: Llene **dos botellas limpias de 500mL hasta el hombro (o 5.5 vasos de papel)** para obtener **exactamente 1 litro (1,000mL)** de agua base estéril.",
+      "actionNote": "> Por qué debe medir exactamente 1 litro con dos botellas de 500mL en lugar de calcular a ojo: Si usa muy poca agua, la concentración de sal y azúcar será demasiado alta, provocando ósmosis inversa que extrae líquido del cuerpo hacia el intestino y agrava mortalmente la deshidratación.",
+      "svgFileName": "pr24-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // HERVOR DE 3 MIN + MEDICION EXACTA DE 1 LITRO",
+        "Hervir agua filtrada con burbujas grandes por 3+ min",
+        "Enfriar tapado hasta sentir tibio al dorso de mano (36C)",
+        "Usar 2 envases de 500mL (5.5 vasos) para 1,000mL exactos",
+        "[CLAVE] Evita osmosis inversa + infeccion bacteriana"
+      ],
+      "deepDive": {
+        "badge": "STERILE BASE & VOLUME",
+        "title": "Esterilización Térmica y Estandarización Volumétrica de 1,000mL sin Báscula",
+        "text": "En pacientes con deshidratación aguda la barrera mucosa intestinal está debilitada, por lo que cualquier traza de E. coli o disentería en el agua puede causar sepsis. Hervir a **100°C durante 3+ minutos** asegura la esterilidad, y usar **dos envases estándar de 500mL (1,000mL)** mantiene el margen de error osmótico **por debajo del 5%**.",
+        "fieldSpecs": [
+          {
+            "name": "Base de 1 Litro de Agua Estéril Hervida y Enfriada Medida con Dos Envases de 500mL",
+            "scientificName": "Boiled Sterile Water Base & Dual 500mL Volumetric Reference Vessels",
+            "categoryTag": "Base Estéril de Suero / Estandarización de 1L sin Herramientas",
+            "imageFileName": "id-boiled-cooled-1liter-water-base.jpg",
+            "hudCode": "FIG. MED-24A // MACRO OPTIC",
+            "hudStatus": "STERILE BASE: 1,000ML LOCKED",
+            "traits": [
+              {
+                "label": "Hervor/Estéril",
+                "value": "Use solo agua **hervida con burbujas grandes por 3+ minutos y enfriada con tapa**."
+              },
+              {
+                "label": "Temp/Tacto",
+                "value": "Mezcle cuando esté **tibia al dorso de la mano (36°C)** para evitar espasmos gástricos."
+              },
+              {
+                "label": "Volumen/Ref",
+                "value": "**Dos botellas de 500mL o 5.5 vasos de papel (180mL)** equivalen exactamente a 1 litro."
+              }
+            ],
+            "fieldUse": "Obtención de solvente estéril y exacto para suero oral (SRO) y solución salina para heridas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Disolver Dos Pizcas de Sal de Tres Dedos y Dos Cucharadas Rasas de Azúcar en 1L de Agua y Verificar el Sabor a Lágrima",
+      "description": "1. **Añadir Dos Pizcas de Sal de Tres Dedos (1/2 Cucharadita)**: Con los dedos secos, tome sal pura con las **puntas del pulgar, índice y medio dos veces (igual a 1/2 cucharadita rasa o 1/6 de cuchara sopera, aprox. 2.5–3g)** y viértala en el litro de agua.\n2. **Añadir Dos Cucharadas Soperas Rasas de Azúcar (6 Cucharaditas)**: Agregue **dos cucharadas soperas de azúcar blanca niveladas al ras sin copete (igual a 6 cucharaditas rasas o 6–7 terrones, aprox. 25–30g)**.\n3. **Revolver hasta Disolver por Completo**: Mezcle con una cuchara limpia durante **al menos 1 minuto** hasta que el agua quede totalmente transparente y sin cristales en el fondo.\n4. **Verificar con la Prueba del 'Sabor a Lágrima'**: Ponga una gota en el dorso de su mano y pruébela: debe saber **'nunca más salada que sus propias lágrimas, con un suave toque dulce-salado'** (si sabe tan salada como agua de mar, agregue más agua hervida de inmediato).",
+      "actionNote": "> Por qué debe mezclar azúcar en casi 10 veces el peso de la sal en lugar de beber solo agua con sal: El intestino deshidratado no absorbe bien el agua salada sola. Cuando la glucosa (azúcar) y el sodio (sal) entran juntos en esta proporción exacta, las bombas SGLT-1 del intestino se abren y absorben agua hacia la sangre 3 veces más rápido.",
+      "svgFileName": "pr24-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // PROPORCION EXACTA DE SAL Y AZUCAR (SRO OMS)",
+        "En 1L de agua anadir 2 pizcas de 3 dedos de sal (2.5g)",
+        "Anadir 2 cucharadas soperas rasas de azucar (6 cdta, 30g)",
+        "Probar gota en mano: debe ser menos salada que lagrimas",
+        "[CLAVE] Cotransporte SGLT-1 triplica absorcion de agua"
+      ],
+      "deepDive": {
+        "badge": "SGLT-1 CO-TRANSPORT",
+        "title": "Activación del Cotransportador Sodio-Glucosa (SGLT-1) y Mecanismo de Hipoosmolaridad (245 mOsm/L)",
+        "text": "Incluso durante diarreas infecciosas graves, el **cotransportador sodio-glucosa (SGLT-1)** del epitelio intestinal permanece intacto. Disolver **2.6g de cloruro de sodio y 25–30g de sacarosa/glucosa por litro** genera una solución hipoosmolar (245 mOsm/L frente a 290 mOsm/L del plasma) que introduce 2 iones de sodio y 1 molécula de glucosa arrastrando cientos de moléculas de agua hacia los capilares.",
+        "fieldSpecs": [
+          {
+            "name": "Proporción Estándar de SRO de la OMS: Dos Pizcas de Sal de 3 Dedos (2.5g) y Dos Cucharadas Rasas de Azúcar (30g)",
+            "scientificName": "WHO Oral Rehydration Salts (ORS) Pinch-and-Spoon Volumetric Ratio",
+            "categoryTag": "Balance Electrolito-Glucosa / Bomba de Absorción SGLT-1",
+            "imageFileName": "id-who-ors-salt-sugar-spoon-ratio.jpg",
+            "hudCode": "FIG. MED-24B // MACRO OPTIC",
+            "hudStatus": "OSMOLARITY: < TEAR SALINITY",
+            "traits": [
+              {
+                "label": "Sal/Límite",
+                "value": "Nunca exceda **dos pizcas de 3 dedos (1/2 cucharadita rasa, 2.5–3g)** por 1 litro de agua."
+              },
+              {
+                "label": "Azúcar/Dosis",
+                "value": "Agregue **dos cucharadas soperas rasas (6 cucharaditas rasas, 25–30g)** por litro."
+              },
+              {
+                "label": "Lágrima/Test",
+                "value": "Pruébelo primero: debe ser **menos salado que las lágrimas** para evitar hipernatremia."
+              }
+            ],
+            "fieldUse": "Reposición oral urgente de líquidos y electrolitos en diarrea aguda, vómitos, golpe de calor y quemaduras"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Evitar el Vómito Sentando al Paciente a 45 Grados y Dando de 1 a 2 Sorbos Pequeños Cada 5 Minutos",
+      "description": "1. **Elevar el Torso a 45 Grados**: Apoye la espalda del paciente debilitado con ropa doblada o almohadas en un **ángulo semiincorporado de 45 grados** para evitar que se ahogue o aspire líquido.\n2. **Dar 1–2 Sorbos (1 Cucharada) Cada 5 Minutos**: No permita que beba un vaso de golpe; use una cuchara limpia o tacita para darle **1–2 sorbos pequeños cada 5 minutos (1 cucharadita cada 1–2 minutos en niños)**.\n3. **Pausar 10 Minutos si Hay Vómito**: Si el paciente vomita, detenga la ingesta y **deje descansar el estómago por 10 minutos completos**, luego reanude más despacio con **1 cucharada cada 3–5 minutos**.\n4. **Vigilar el Color de la Orina y Desechar tras 24 Horas**: Administre 1–2 vasos por hora en adultos hasta que **los labios secos se humedezcan y la orina oscura vuelva a ser amarillo claro**, y **deseche el suero sobrante tras 24 horas**.",
+      "actionNote": "> Por qué un paciente deshidratado y sediento nunca debe beber un vaso lleno de golpe: Llenar de golpe un estómago inflamado estira bruscamente la pared gástrica y dispara el reflejo del vómito, expulsando tanto el suero como los electrolitos gástricos.",
+      "svgFileName": "pr24-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOSIFICACION FRACCIONADA CADA 5 MIN SIN VOMITO",
+        "Elevar torso 45 grados para evitar broncoaspiracion",
+        "Prohibido beber de golpe: dar 1-2 sorbos cada 5 minutos",
+        "Si vomita, pausar 10 min y reanudar 1 cucharada cada 3-5m",
+        "[CLAVE] Frena reflejo de vomito + desechar suero a las 24h"
+      ],
+      "deepDive": {
+        "badge": "FRACTIONAL DOSING",
+        "title": "Inhibición del Reflejo de Vómito por Distensión Gástrica mediante Dosificación Fraccionada",
+        "text": "Durante la gastroenteritis aguda o el agotamiento por calor, el vaciamiento gástrico se ralentiza y cualquier bolo mayor a 100mL estimula los mecanorreceptores gástricos provocando **emesis (vómito)**. Administrar **15–30mL cada 5 minutos** permite el paso continuo hacia el duodeno sin elevar la presión intragástrica, logrando una rehidratación comparable a la vía intravenosa.",
+        "fieldSpecs": [
+          {
+            "name": "Administración Fraccionada de Suero Oral Cada 5 Minutos con Vaso Pequeño y Cuchara",
+            "scientificName": "Small-Volume Fractional Oral Rehydration Therapy (ORT) Administration",
+            "categoryTag": "Ingesta Fraccionada Antivómito / Signos Vitales de Hidratación",
+            "imageFileName": "id-ors-small-sip-rehydration-cup.jpg",
+            "hudCode": "FIG. MED-24C // MACRO OPTIC",
+            "hudStatus": "DOSING RATE: 15-30ML / 5MIN",
+            "traits": [
+              {
+                "label": "Ritmo/Sorbos",
+                "value": "No beba de golpe; tome **1–2 sorbos pequeños (1–2 cucharadas) cada 5 minutos**."
+              },
+              {
+                "label": "Vómito/Pausa",
+                "value": "Si vomita, **espere 10 minutos sin beber** antes de reiniciar con 1 cucharada."
+              },
+              {
+                "label": "Límite/24h",
+                "value": "El suero con azúcar cría bacterias a temperatura ambiente; **deséchelo a las 24 horas**."
+              }
+            ],
+            "fieldUse": "Rehidratación oral segura sin sobrecarga gástrica en pacientes con náuseas, vómitos y diarrea aguda"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Para Lavar Heridas Abiertas, Omitir Todo el Azúcar y Disolver Dos Pizcas de Sal en 500mL de Agua Hervida Vertiendo desde 15cm",
+      "description": "1. **Preparar 500mL de Agua Hervida y Solo Sal (CERO Azúcar)**: Para lavar una herida sangrante con tierra, **jamás use suero oral con azúcar**; prepare aparte **1 botella de 500mL (casi 3 vasos de papel)** de agua recién hervida y tibia.\n2. **Preparar Solución Salina Isotónica al 0.9%**: Disuelva **dos pizcas generosas de 3 dedos de sal pura (1/2 cucharadita rasa, aprox. 4.5g)** en los 500mL de agua hervida para igualar la concentración de los fluidos corporales (0.9%).\n3. **Irrigar con Presión de Agua desde un Palmo (15–20cm) de Altura**: Coloque la herida sobre un recipiente limpio y **vierta un chorro continuo de solución salina desde 15–20cm arriba** para que la fuerza del agua arrastre la arena y coágulos sin frotar la carne viva con los dedos.\n4. **Aplicar Ungüento de Resina y Vendaje Estéril**: Seque el borde exterior, aplique [Ungüento Antiséptico de Resina de Pino](/protocol-10.html) alrededor y cubra con un [Vendaje Compresivo de Lino Hervido](/protocol-18.html) lavado con [Jabón de Lejía de Ceniza](/protocol-13.html) para prevenir el tétanos y la infección secundaria.",
+      "actionNote": "> Por qué nunca debe verter suero con azúcar ni agua simple sobre una herida abierta: El azúcar alimenta a las bacterias dentro de la herida causando infección grave y necrosis. A la inversa, el agua simple sin sal hace que las células expuestas se hinchen y revienten con intenso dolor.",
+      "svgFileName": "pr24-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SOLUCION SALINA 0.9% SIN AZUCAR PARA HERIDAS",
+        "Cero azucar: 500mL agua hervida + 1/2 cdta sal pura (4.5g)",
+        "Iguala el 0.9% corporal para lavar sin dolor ni dano celular",
+        "Verter desde 15-20cm de altura para barrer tierra a presion",
+        "[CLAVE] Previene necrosis bacteriana + infeccion por tetanos"
+      ],
+      "deepDive": {
+        "badge": "ISOTONIC SALINE 0.9%",
+        "title": "Protección Osmótica Celular con Solución Salina Isotónica al 0.9% e Irrigación sin Contacto",
+        "text": "El líquido extracelular humano tiene una concentración de cloruro de sodio del **0.9% (4.5g de sal por 500mL de agua)**. El agua simple hipotónica rompe las células subcutáneas expuestas, mientras que la **solución salina isotónica al 0.9%** preserva los tejidos y desprende biopelículas bacterianas y tierra por presión mecánica, reduciendo el riesgo de tétanos e infección en **más del 80%**.",
+        "fieldSpecs": [
+          {
+            "name": "Irrigación de Herida sin Contacto Vertiendo Solución Salina al 0.9% sin Azúcar desde 15cm",
+            "scientificName": "0.9% Isotonic Normal Saline Non-Contact Wound Irrigation",
+            "categoryTag": "Solución Salina 0.9% sin Azúcar / Prevención de Tétanos",
+            "imageFileName": "id-isotonic-saline-wound-irrigation.jpg",
+            "hudCode": "FIG. MED-24D // MACRO OPTIC",
+            "hudStatus": "SALINE CONC: 0.9% SUGAR-FREE",
+            "traits": [
+              {
+                "label": "Azúcar/Cero",
+                "value": "No use **nada de azúcar** en heridas: disuelva **1/2 cucharadita (4.5g) de sal pura en 500mL de agua hervida**."
+              },
+              {
+                "label": "SinRoce/Chorro",
+                "value": "No frote la herida; **vierta desde un palmo (15–20cm) arriba** para barrer la tierra."
+              },
+              {
+                "label": "Uso/Inmediato",
+                "value": "La solución salina casera sin conservantes debe **usarse al instante y desechar el resto**."
+              }
+            ],
+            "fieldUse": "Limpieza indolora de tierra y prevención de tétanos e infecciones en cortes, raspaduras y quemaduras"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca Exceda la Dosis de Sal, No Use Sal Condimentada ni Edulcorantes Cero Calorías, y Jamás Vierta Suero con Azúcar en una Herida",
+    "description": "Poner cucharadas llenas de sal creyendo que dará más fuerza extrae el agua de las células hacia el intestino, causando deshidratación hipernatrémica mortal, edema cerebral y daño renal; compruebe siempre que el suero sepa 'menos salado que sus propias lágrimas'. Tampoco use sal con ajo/glutamato ni edulcorantes artificiales sin calorías, que impiden la absorción y empeoran la diarrea. Sobre todo, nunca lave heridas sangrantes con suero azucarado ni líquido de lentes de contacto con conservantes, pues causan infección bacteriana y necrosis; use solo solución salina al 0.9% (500mL de agua hervida + 1/2 cucharadita de sal pura) antes de cubrir con un [Vendaje Compresivo de Lino Hervido](/protocol-18.html).",
+    "consequence": "Separe estrictamente ambas fórmulas: Suero Oral para beber = '1L agua + 1/2 cdta sal + 2 cdas rasas azúcar'; Solución Salina para heridas = '500mL agua + 1/2 cdta sal (CERO azúcar)'."
+  },
+  "faqs": [
+    {
+      "question": "¿Cómo puedo hacer Suero de Rehidratación Oral (SRO) si no tengo nada de azúcar ni miel en casa?",
+      "causeDiagnostic": "La función del azúcar es aportar glucosa para activar la bomba de absorción de sodio y agua en el intestino delgado, por lo que el almidón de los cereales puede sustituirla por completo.",
+      "resolution": "**Hierva 2 cucharadas colmadas (30–50g) de harina de arroz blanco o arroz cocido machacado en 1 litro de agua durante 10 minutos para hacer un agua de arroz clara, enfríela hasta que esté tibia y disuelva dos pizcas de 3 dedos (1/2 cucharadita) de sal pura.** El almidón del arroz se transforma en glucosa en el intestino y rehidrata con la misma eficacia."
+    },
+    {
+      "question": "¿Puedo beber jugo de frutas, refrescos o bebidas dulces sin diluir cuando tengo diarrea aguda?",
+      "causeDiagnostic": "Los jugos comerciales, refrescos y bebidas azucaradas tienen un exceso de azúcar y muy poco sodio.",
+      "resolution": "Beber líquidos muy dulces sin diluir atrae agua del cuerpo hacia el intestino y **agrava severamente la diarrea osmótica**. Las bebidas deportivas para electrolitos son seguras, pero si solo tiene jugo o bebidas dulces, **dilúyalos al menos 1:1 con agua hervida fría y agregue una pizca de sal pura** antes de beber."
+    }
+  ],
+  "shortsScript": "[0-5s Gancho] ¿Diarrea grave o fiebre alta durante un corte de agua o apagón? ¡Beber solo agua simple es peligroso! ¡Prepara suero oral salvavidas y solución salina con sal y azúcar! [5-35s Cuerpo] Primero hierve agua filtrada por 3 minutos, enfríala hasta que esté tibia y mide 1 litro con dos botellas de 500mL. Añade dos pizcas de sal de 3 dedos y dos cucharadas soperas rasas de azúcar. Prueba una gota: ¡debe ser menos salada que tus lágrimas! Toma 2 sorbos cada 5 minutos para triplicar la absorción. ¡Para lavar heridas abiertas, no uses azúcar: disuelve dos pizcas de sal en 500mL de agua hervida y vierte desde 15cm! [35-45s Alerta y Cierre] ¡Nunca uses sal condimentada ni pongas azúcar en heridas! Guarda este manual ahora.",
+  "outcome": {
+    "title": "Sistema de Suero de Rehidratación Oral (SRO) de la OMS y Solución Salina Isotónica al 0.9% sin Azúcar",
+    "badge": "FINAL SPEC // WHO SGLT-1 ORS & 0.9% ISOTONIC SALINE",
+    "description": "Protocolo médico dual de emergencia que utiliza 1 litro de agua hervida por 3 minutos con dos pizcas de sal (2.5g) y dos cucharadas rasas de azúcar (30g) para frenar el choque por deshidratación, junto con una solución salina isotónica al 0.9% sin azúcar (500mL de agua + 4.5g de sal) para lavar heridas sin dolor ni infección.",
+    "svgFileName": "pr24-outcome.svg",
+    "svgLabels": [
+      "PR-24 COMPLETO // SUERO ORAL OMS + SALINA 0.9% HERIDAS",
+      "STAGE 01: BASE ESTERIL 1L",
+      "Agua hervida 3m: 2 de 500mL",
+      "STAGE 02: SUERO ORAL (SRO)",
+      "1L + 2 pizcas sal + 2 cdas azucar",
+      "STAGE 03: SORBOS CADA 5 MIN",
+      "Menos sal que lagrima + 2 sorbos",
+      "STAGE 04: SALINA 0.9%",
+      "0 azucar: 500mL + 4.5g sal",
+      "VERIFICADO // RESCATE DE DESHIDRATACION + LAVADO INDOLORO"
+    ]
+  },
+  "createdAt": "2026-11-05T01:35:36.454Z",
+  "updatedAt": "2026-11-05T01:47:27.614Z",
+  "contentHash": "58c9c2c0e0af6177"
+}

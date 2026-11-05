@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg24s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="potMetal24s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#64748b"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="waterBlue24s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="bottleGlass24s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#7dd3fc" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="flame24s1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <pattern id="grid24s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow24s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg24s1)"/>
+  <rect width="400" height="400" fill="url(#grid24s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // 정화수 3분 가열 살균 및 1리터 무도구 정량 계측</text>
+
+  <!-- Left Zone: 3-Minute Rolling Boil Pot -->
+  <g filter="url(#shadow24s1)">
+    <!-- Stove Base & Flame -->
+    <polygon points="40,218 164,218 154,234 50,234" fill="#1e293b" stroke="#64748b" stroke-width="1.2"/>
+    <path d="M62,218 Q70,196 78,218 Q88,192 98,218 Q108,192 118,218 Q128,196 138,218 Z" fill="url(#flame24s1)"/>
+
+    <!-- Boiling Pot 3D Cylinder -->
+    <rect x="44" y="128" width="116" height="78" rx="4" fill="url(#potMetal24s1)" stroke="#cbd5e1" stroke-width="1.5"/>
+    <path d="M34,142 L44,142 L44,154 L34,154 Z" fill="#475569" stroke="#cbd5e1" stroke-width="1"/>
+    <path d="M160,142 L170,142 L170,154 L160,154 Z" fill="#475569" stroke="#cbd5e1" stroke-width="1"/>
+
+    <!-- Interior Water Cutaway & Rolling Bubbles -->
+    <rect x="52" y="144" width="100" height="54" rx="2" fill="url(#waterBlue24s1)" stroke="#bae6fd" stroke-width="1"/>
+    <circle cx="72" cy="182" r="5" fill="#e0f2fe" opacity="0.85"/>
+    <circle cx="94" cy="172" r="6.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="118" cy="178" r="5.5" fill="#e0f2fe" opacity="0.85"/>
+    <circle cx="84" cy="156" r="7" fill="#ffffff" opacity="0.95"/>
+    <circle cx="108" cy="158" r="6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="132" cy="164" r="4.5" fill="#e0f2fe" opacity="0.85"/>
+
+    <!-- Slightly Lifted Lid & Steam -->
+    <ellipse cx="102" cy="126" rx="60" ry="7" fill="url(#potMetal24s1)" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="92" y="114" width="20" height="6" rx="2" fill="#64748b" stroke="#e2e8f0" stroke-width="1"/>
+    <path d="M76,112 Q70,98 78,86" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="3,2"/>
+    <path d="M102,110 Q96,96 104,84" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="3,2"/>
+    <path d="M128,112 Q122,98 130,86" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="52" width="368" height="24" rx="2" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+  <text x="24" y="68" fill="#fed7aa" font-family="monospace" font-size="10.5">정화한 맑은 물을 냄비에 담아 큰 거품 나게 3분 이상 끓임</text>
+
+  <!-- Transfer Arrow & Lukewarm Hand Check -->
+  <path d="M174,168 L208,168" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="208,163 218,168 208,173" fill="#38bdf8"/>
+
+  <!-- Right Zone: Two 500mL Reference Vessels = 1,000mL (1.0L) -->
+  <g filter="url(#shadow24s1)">
+    <!-- Bottle 1 (500mL) -->
+    <rect x="236" y="106" width="18" height="10" rx="1" fill="#0284c7" stroke="#bae6fd" stroke-width="1"/>
+    <path d="M232,116 L258,116 L268,134 L268,226 Q268,232 262,232 L228,232 Q222,232 222,226 L222,134 Z" fill="url(#bottleGlass24s1)" stroke="#7dd3fc" stroke-width="1.5"/>
+    <rect x="225" y="138" width="40" height="90" rx="2" fill="url(#waterBlue24s1)"/>
+    <path d="M225,164 L265,164 M225,192 L265,192" stroke="#bae6fd" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+    <!-- Bottle 2 (500mL) -->
+    <rect x="312" y="106" width="18" height="10" rx="1" fill="#0284c7" stroke="#bae6fd" stroke-width="1"/>
+    <path d="M308,116 L334,116 L344,134 L344,226 Q344,232 338,232 L304,232 Q298,232 298,226 L298,134 Z" fill="url(#bottleGlass24s1)" stroke="#7dd3fc" stroke-width="1.5"/>
+    <rect x="301" y="138" width="40" height="90" rx="2" fill="url(#waterBlue24s1)"/>
+    <path d="M301,164 L341,164 M301,192 L341,192" stroke="#bae6fd" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+    <!-- Plus Sign Between Bottles -->
+    <circle cx="283" cy="178" r="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <path d="M278,178 L288,178 M283,173 L283,183" stroke="#fde047" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="252" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="269" fill="#e0f2fe" font-family="monospace" font-size="10.5">뚜껑 덮어 손등에 미지근한 체온(36C)이 될 때까지 냉각</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="286" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="303" fill="#fde047" font-family="monospace" font-size="10.5">500mL 용기 2개(종이컵 5.5컵)로 정확히 1리터(1,000mL) 확보</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 농도 오차에 의한 삼투압 역류 및 2차 세균 감염 차단</text>
+</svg>

@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-24",
+  "category": "MEDICINE",
+  "title": "Como Fazer Soro Caseiro (SRO da OMS) contra Choque de Desidratação e Soro Fisiológico 0,9% para Feridas com Água Fervida, Sal e Açúcar",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[SORO DE REIDRATAÇÃO ORAL SALVA-VIDAS & SORO FISIOLÓGICO ISOTÔNICO 0,9% PARA FERIDAS]",
+  "summary": "Se sua casa ou kit de primeiros socorros já possui envelopes de sais de reidratação oral de farmácia, bebidas isotônicas esportivas ou soro fisiológico estéril comercial, utilize sempre esses produtos primeiro logo após abri-los. Contudo, quando hospitais e farmácias fecham durante desastres, apagões ou falta de água e os suprimentos acabam, diarreia aguda, vômitos ou febre alta drenam rapidamente a água e o sal do corpo, causando choque de desidratação fatal em 3 dias. Beber apenas água pura não é absorvido pelo intestino, e jogar água pura em uma ferida aberta rompe as células por choque osmótico, agravando a dor, a infecção secundária e a necrose. Ao misturar sal e açúcar de cozinha em 1 litro de água purificada por um [Filtro Natural de Carvão e Areia](/protocol-01.html) ou [Sifão de Toalha de Algodão e Esterilizador Solar SODIS](/protocol-23.html) e fervida por 3 minutos, você prepara imediatamente o Soro de Reidratação Oral (SRO) padrão da OMS que triplica a absorção intestinal, além de um soro fisiológico 0,9% sem açúcar para lavar feridas sem dor.",
+  "timeRequired": "20 min (incluindo 3 min de fervura, resfriamento até temperatura corporal e mistura)",
+  "successRate": "99% (misturando 2 pitadas de sal de três dedos e 2 colheres de sopa rasas de açúcar em 1L de água fervida e testando o sabor de lágrima)",
+  "difficulty": "Iniciante (Sem balança ou copo medidor; usa duas garrafas de 500mL, colher de sopa, sal e açúcar)",
+  "outputPerHour": "Produz 2–3L de soro oral salva-vidas (SRO) ou 2L de soro fisiológico estéril 0,9% por hora",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Litro de Água Filtrada Fervida por 3+ Minutos & Duas Garrafas Vazias de 500mL (ou 5,5 Copos Descartáveis)",
+      "desc": "Para evitar infecções intestinais e em feridas, a água deve ser fervida intensamente. Sem jarra graduada, encher duas garrafas comuns de 500mL até o ombro (ou 5 copos e meio de papel do tamanho de um punho) garante exatamente 1 litro (1.000mL)."
+    },
+    {
+      "id": "mat-02",
+      "name": "Sal Refinado Puro (ou Sal Marinho Limpo) & 1 Colher de Sopa Padrão",
+      "desc": "O eletrólito essencial que iguala a salinidade do sangue e das lágrimas para estimular a absorção de água e proteger as células das feridas. Nunca use sal temperado com alho ou glutamato. No litoral sem sal de cozinha, use os cristais brancos recolhidos no fundo de um [Destilador de Água do Mar de Barro e Bambu](/protocol-20.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Açúcar Branco (ou Açúcar Mascavo, Mel, Glicose ou um Punhado de Arroz Cozido Amassado)",
+      "desc": "Abre os cotransportadores de sódio-glicose (SGLT-1) na parede do intestino delgado para puxar sódio e água para o sangue 3 vezes mais rápido. Nunca use adoçantes artificiais zero caloria, pois não absorvem água e pioram a diarreia osmótica; na falta de açúcar, use água de arroz cozido."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Ferver 1 Litro de Água Filtrada com Bolhas Grandes por 3+ Minutos, Esfriar até Ficar Morna e Medir com Duas Garrafas de 500mL",
+      "description": "1. **Preparar Água Limpa Filtrada**: Despeje em uma panela limpa a água livre de barro filtrada com um [Filtro de Carvão e Areia](/protocol-01.html) ou [Sifão Capilar de Toalha de Algodão](/protocol-23.html).\n2. **Ferver Intensamente por 3+ Minutos**: Aqueça a panela sobre um [Fogão a Gás de Madeira de Duas Latas](/protocol-12.html) ou [Aquecedor de Lata de Atum e Óleo](/protocol-21.html) até que **bolhas grandes do tamanho da unha do polegar subam por toda a superfície por pelo menos 3 minutos**, matando bactérias de diarreia e tétano.\n3. **Esfriar até a Temperatura Corporal**: Deixe a panela tampada na sombra até que, ao encostar o dorso da mão na lateral, ela esteja **morna como água de banho de bebê (35–37°C)**.\n4. **Medir Exatamente 1 Litro com Duas Garrafas de 500mL**: Encha **duas garrafas limpas de 500mL até o ombro (ou 5,5 copos de papel)** para garantir **exatamente 1 litro (1.000mL)** de água base estéril.",
+      "actionNote": "> Por que medir exatamente 1 litro com duas garrafas de 500mL em vez de fazer a olho: Se houver pouca água, a concentração de sal e açúcar ficará alta demais, causando osmose reversa que rouba água do corpo para o intestino e agrava fatalmente a desidratação.",
+      "svgFileName": "pr24-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FERVURA DE 3 MIN + MEDICAO EXATA DE 1 LITRO",
+        "Ferver agua filtrada com bolhas grandes por 3+ min",
+        "Esfriar tampado ate ficar morno no dorso da mao (36C)",
+        "Usar 2 frascos de 500mL (5,5 copos) para 1.000mL exatos",
+        "[CHAVE] Evita osmose reversa + infeccao bacteriana"
+      ],
+      "deepDive": {
+        "badge": "STERILE BASE & VOLUME",
+        "title": "Esterilização Térmica e Padronização Volumétrica de 1.000mL sem Balança",
+        "text": "Na desidratação aguda a barreira mucosa intestinal está fragilizada, e qualquer resquício de E. coli ou disenteria na água pode causar sepse. Ferver a **100°C por 3+ minutos** garante esterilidade, enquanto **dois recipientes padrão de 500mL (1.000mL)** mantêm a variação osmótica **abaixo de 5%**.",
+        "fieldSpecs": [
+          {
+            "name": "Base de 1 Litro de Água Estéril Fervida e Resfriada Medida com Dois Recipientes de 500mL",
+            "scientificName": "Boiled Sterile Water Base & Dual 500mL Volumetric Reference Vessels",
+            "categoryTag": "Base Estéril de Soro / Padronização de 1L sem Instrumentos",
+            "imageFileName": "id-boiled-cooled-1liter-water-base.jpg",
+            "hudCode": "FIG. MED-24A // MACRO OPTIC",
+            "hudStatus": "STERILE BASE: 1,000ML LOCKED",
+            "traits": [
+              {
+                "label": "Fervura/Estéril",
+                "value": "Use apenas água **fervida com bolhas grandes por 3+ minutos e resfriada tampada**."
+              },
+              {
+                "label": "Temp/Toque",
+                "value": "Misture quando estiver **morna no dorso da mão (36°C)** para evitar cólicas gástricas."
+              },
+              {
+                "label": "Volume/Base",
+                "value": "**Duas garrafas de 500mL ou 5,5 copos de papel (180mL)** equivalem exatamente a 1 litro."
+              }
+            ],
+            "fieldUse": "Obtenção de solvente estéril e exato para soro oral (SRO) e soro fisiológico para feridas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Dissolver Duas Pitadas de Sal de Três Dedos e Duas Colheres de Sopa Rasas de Açúcar em 1L de Água e Testar o Sabor de Lágrima",
+      "description": "1. **Adicionar Duas Pitadas de Sal de Três Dedos (1/2 Colher de Chá)**: Com os dedos secos, pegue sal puro com as **pontas do polegar, indicador e dedo médio duas vezes (igual a 1/2 colher de chá rasa ou 1/6 da ponta da colher de sopa, aprox. 2,5–3g)** e coloque em 1 litro de água.\n2. **Adicionar Duas Colheres de Sopa Rasas de Açúcar (6 Colheres de Chá)**: Adicione **duas colheres de sopa de açúcar branco niveladas rente à borda sem monte (igual a 6 colheres de chá rasas ou 6–7 torrões, aprox. 25–30g)**.\n3. **Mexer até Ficar Totalmente Transparente**: Misture com uma colher limpa por **pelo menos 1 minuto** até não restar nenhum cristal no fundo.\n4. **Conferir com o Teste do 'Sabor de Lágrima'**: Pingue uma gota no dorso da mão e prove: deve ter **'sabor nunca mais salgado que sua própria lágrima, levemente doce e salgado'** (se estiver salgado como água do mar, adicione mais água fervida imediatamente).",
+      "actionNote": "> Por que colocar quase 10 vezes mais açúcar do que sal em vez de beber apenas água com sal: O intestino desidratado não consegue absorver água salgada pura. Quando a glicose (açúcar) e o sódio (sal) entram juntos nessa proporção exata, as bombas SGLT-1 da parede intestinal se abrem e puxam água para o sangue 3 vezes mais rápido.",
+      "svgFileName": "pr24-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // PROPORCAO EXATA DE SAL E ACUCAR (SRO OMS)",
+        "Em 1L de agua por 2 pitadas de 3 dedos de sal (2,5g)",
+        "Adicionar 2 colheres de sopa rasas de acucar (30g)",
+        "Provar gota na mao: deve ser menos salgada que lagrima",
+        "[CHAVE] Cotransporte SGLT-1 triplica absorcao de agua"
+      ],
+      "deepDive": {
+        "badge": "SGLT-1 CO-TRANSPORT",
+        "title": "Ativação do Cotransportador Sódio-Glicose (SGLT-1) e Mecanismo de Hipo-Osmolaridade (245 mOsm/L)",
+        "text": "Mesmo em diarreias infecciosas severas, o **cotransportador sódio-glicose (SGLT-1)** da mucosa intestinal permanece intacto. Dissolver **2,6g de cloreto de sódio e 25–30g de sacarose/glicose por litro** cria uma solução hipo-osmolar (245 mOsm/L contra 290 mOsm/L do plasma) que transporta 2 íons de sódio e 1 molécula de glicose puxando centenas de moléculas de água para os vasos sanguíneos.",
+        "fieldSpecs": [
+          {
+            "name": "Proporção Padrão de SRO da OMS: Duas Pitadas de Sal de 3 Dedos (2,5g) e Duas Colheres de Sopa Rasas de Açúcar (30g)",
+            "scientificName": "WHO Oral Rehydration Salts (ORS) Pinch-and-Spoon Volumetric Ratio",
+            "categoryTag": "Proporção Eletrólito-Glicose / Bomba de Absorção SGLT-1",
+            "imageFileName": "id-who-ors-salt-sugar-spoon-ratio.jpg",
+            "hudCode": "FIG. MED-24B // MACRO OPTIC",
+            "hudStatus": "OSMOLARITY: < TEAR SALINITY",
+            "traits": [
+              {
+                "label": "Sal/Limite",
+                "value": "Nunca ultrapasse **duas pitadas de 3 dedos (1/2 colher de chá rasa, 2,5–3g)** por 1 litro de água."
+              },
+              {
+                "label": "Açúcar/Dose",
+                "value": "Adicione **duas colheres de sopa rasas (6 colheres de chá rasas, 25–30g)** por litro."
+              },
+              {
+                "label": "Lágrima/Teste",
+                "value": "Prove antes: deve ser **menos salgado que lágrima** para evitar choque hipernatrêmico."
+              }
+            ],
+            "fieldUse": "Reposição oral urgente de líquidos e eletrólitos em diarreia aguda, vômitos, insolação e queimaduras"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Evitar Vômitos Sentando o Paciente a 45 Graus e Dando 1 a 2 Goles Pequenos a Cada 5 Minutos",
+      "description": "1. **Elevar o Tronco a 45 Graus**: Apoie as costas do paciente enfraquecido com casacos dobrados ou travesseiros em um **ângulo semi-inclinado de 45 graus** para evitar engasgos.\n2. **Dar 1–2 Goles (1 Colherada) a Cada 5 Minutos**: Não deixe beber um copo inteiro de uma vez; use uma colher limpa ou copinho para dar **1–2 goles pequenos a cada 5 minutos (1 colher de chá a cada 1–2 minutos para crianças)**.\n3. **Pausar 10 Minutos se Houver Vômito**: Se o paciente vomitar, pare imediatamente e **deixe o estômago descansar por 10 minutos completos**, retomando depois mais devagar com **1 colherada a cada 3–5 minutos**.\n4. **Observar a Cor da Urina e Descartar Após 24 Horas**: Ofereça 1–2 copos por hora em adultos até que **os lábios secos fiquem úmidos e a urina escura volte a ser amarelo-clara**, e **descarte o soro após 24 horas**.",
+      "actionNote": "> Por que um paciente sedento e desidratado nunca deve virar um copo cheio de uma só vez: Jogar muito líquido de repente em um estômago inflamado estica rapidamente a parede gástrica e dispara o reflexo do vômito, fazendo perder tanto o soro quanto os sais do estômago.",
+      "svgFileName": "pr24-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOSAGEM FRACIONADA A CADA 5 MIN SEM VOMITO",
+        "Elevar tronco em 45 graus para evitar broncoaspiracao",
+        "Proibido beber tudo de uma vez: 1-2 goles a cada 5 min",
+        "Se vomitar, pausar 10 min e retomar 1 colher a cada 3-5m",
+        "[CHAVE] Inibe reflexo de vomito + descartar soro em 24h"
+      ],
+      "deepDive": {
+        "badge": "FRACTIONAL DOSING",
+        "title": "Inibição do Reflexo de Vômito por Distensão Gástrica via Administração Fracionada",
+        "text": "Na gastroenterite aguda ou exaustão pelo calor, o esvaziamento gástrico fica lento e qualquer volume rápido acima de 100mL aciona mecanorreceptores gástricos provocando **êmese (vômito)**. Administrar **15–30mL a cada 5 minutos** permite passagem contínua ao duodeno sem elevar a pressão do estômago, hidratando com eficácia semelhante ao soro na veia.",
+        "fieldSpecs": [
+          {
+            "name": "Administração Fracionada de Soro Oral a Cada 5 Minutos com Copo Pequeno e Colher",
+            "scientificName": "Small-Volume Fractional Oral Rehydration Therapy (ORT) Administration",
+            "categoryTag": "Ingestão Fracionada Antivômito / Sinais Vitais de Reidratação",
+            "imageFileName": "id-ors-small-sip-rehydration-cup.jpg",
+            "hudCode": "FIG. MED-24C // MACRO OPTIC",
+            "hudStatus": "DOSING RATE: 15-30ML / 5MIN",
+            "traits": [
+              {
+                "label": "Ritmo/Goles",
+                "value": "Não beba rápido; tome **1–2 goles pequenos (1–2 colheradas) a cada 5 minutos**."
+              },
+              {
+                "label": "Vômito/Pausa",
+                "value": "Se vomitar, **aguarde 10 minutos sem beber** antes de recomeçar com 1 colherada."
+              },
+              {
+                "label": "Prazo/24h",
+                "value": "O soro com açúcar prolifera bactérias em temperatura ambiente; **descarte em 24 horas**."
+              }
+            ],
+            "fieldUse": "Reidratação oral segura sem sobrecarga gástrica para pacientes com náuseas, vômitos e diarreia aguda"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Para Lavar Feridas Abertas, Retirar Todo o Açúcar e Dissolver Duas Pitadas de Sal em 500mL de Água Fervida Despejando de 15cm",
+      "description": "1. **Preparar 500mL de Água Fervida e Apenas Sal (ZERO Açúcar)**: Ao lavar uma ferida sangrando e suja de terra, **jamais use o soro oral com açúcar**; separe **1 garrafa de 500mL (quase 3 copos de papel)** de água recém-fervida e morna.\n2. **Fazer Soro Fisiológico Isotônico 0,9%**: Dissolva **duas pitadas generosas de 3 dedos de sal puro (1/2 colher de chá rasa, aprox. 4,5g)** nos 500mL de água fervida para igualar a concentração dos líquidos do corpo (0,9%).\n3. **Irrigar com Pressão de Água a Um Palmo (15–20cm) de Altura**: Segure o ferimento sobre uma bacia limpa e **despeje um jato contínuo de soro fisiológico de 15–20cm acima** para que a pressão da água remova areia e coágulos sem esfregar a carne viva com os dedos.\n4. **Aplicar Pomada de Resina e Bandagem Estéril**: Seque a pele ao redor, passe [Pomada Antisséptica de Resina de Pinheiro](/protocol-10.html) nas bordas e cubra com uma [Bandagem Compressiva de Linho Fervido](/protocol-18.html) lavada com [Sabão de Cinza de Madeira](/protocol-13.html) para bloquear o tétano e infecções.",
+      "actionNote": "> Por que nunca jogar soro com açúcar nem água pura em uma ferida aberta: O açúcar serve de alimento para bactérias na ferida, causando pus e necrose rápida. Por outro lado, a água pura sem sal faz as células expostas incharem e estourarem com dor intensa.",
+      "svgFileName": "pr24-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SORO FISIOLOGICO 0,9% SEM ACUCAR PARA FERIDAS",
+        "Zero acucar: 500mL agua fervida + 1/2 col. cha sal (4,5g)",
+        "Iguala 0,9% dos fluidos do corpo para lavar sem dor",
+        "Despejar de 15-20cm de altura para remover terra a jato",
+        "[CHAVE] Evita necrose bacteriana + infeccao por tetano"
+      ],
+      "deepDive": {
+        "badge": "ISOTONIC SALINE 0.9%",
+        "title": "Proteção Osmótica Celular com Soro Fisiológico Isotônico 0,9% e Irrigação sem Contato",
+        "text": "O fluido extracelular humano possui concentração de cloreto de sódio de **0,9% (4,5g de sal por 500mL de água)**. Água pura hipotônica rompe as células subcutâneas expostas, enquanto o **soro fisiológico isotônico 0,9%** preserva os tecidos e remove biofilmes bacterianos e terra por pressão mecânica, reduzindo o risco de tétano e infecção em **mais de 80%**.",
+        "fieldSpecs": [
+          {
+            "name": "Irrigação de Ferida sem Contato Despejando Soro Fisiológico 0,9% sem Açúcar a 15cm de Altura",
+            "scientificName": "0.9% Isotonic Normal Saline Non-Contact Wound Irrigation",
+            "categoryTag": "Soro Fisiológico 0,9% sem Açúcar / Prevenção de Tétano",
+            "imageFileName": "id-isotonic-saline-wound-irrigation.jpg",
+            "hudCode": "FIG. MED-24D // MACRO OPTIC",
+            "hudStatus": "SALINE CONC: 0.9% SUGAR-FREE",
+            "traits": [
+              {
+                "label": "Açúcar/Zero",
+                "value": "Não use **nada de açúcar** em feridas: dissolva **1/2 colher de chá (4,5g) de sal puro em 500mL de água fervida**."
+              },
+              {
+                "label": "SemToque/Jato",
+                "value": "Não esfregue a ferida; **despeje a um palmo (15–20cm) acima** para lavar a terra."
+              },
+              {
+                "label": "Uso/Imediato",
+                "value": "O soro caseiro sem conservantes deve ser **usado na hora e o restante descartado**."
+              }
+            ],
+            "fieldUse": "Remoção indolor de terra e prevenção de tétano e infecção em cortes, ralados e queimaduras"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca Exagere no Sal, Não Use Sal Temperado ou Adoçante Zero Caloria e Jamais Jogue Soro com Açúcar em Feridas Abertas",
+    "description": "Colocar colheres cheias de sal achando que dará energia mais rápido puxa a água das células para o intestino, causando desidratação hipernatrêmica fatal, edema cerebral e lesão renal — sempre prove antes para garantir que esteja 'menos salgado que sua própria lágrima'. Também nunca use sal temperado com alho/glutamato nem adoçantes artificiais zero caloria, que impedem a absorção de água e pioram a diarreia. Acima de tudo, nunca lave feridas sangrando com soro açucarado ou solução de lente de contato com conservantes, pois causam infecção bacteriana grave e necrose; em feridas, use apenas soro fisiológico 0,9% (500mL de água fervida + 1/2 colher de chá de sal puro) antes de proteger com uma [Bandagem Compressiva de Linho Fervido](/protocol-18.html).",
+    "consequence": "Separe rigorosamente as duas receitas: Soro Oral de beber = '1L água + 1/2 col. chá sal + 2 col. sopa rasas açúcar'; Soro para feridas = '500mL água + 1/2 col. chá sal (ZERO açúcar)'."
+  },
+  "faqs": [
+    {
+      "question": "Como posso fazer o Soro de Reidratação Oral (SRO) se não houver nenhum açúcar ou mel em casa?",
+      "causeDiagnostic": "O papel do açúcar é fornecer glicose para ativar a bomba de absorção de sódio e água no intestino delgado, podendo ser totalmente substituído pelo amido de cereais.",
+      "resolution": "**Ferva 2 colheres de sopa cheias (30–50g) de farinha de arroz branco ou arroz cozido amassado em 1 litro de água por 10 minutos para fazer um caldo de arroz ralo, deixe amornar e dissolva duas pitadas de 3 dedos (1/2 colher de chá) de sal puro.** O amido do arroz vira glicose no intestino e reidrata com a mesma eficácia."
+    },
+    {
+      "question": "Posso beber suco de frutas, refrigerante ou bebidas doces puras durante uma diarreia aguda?",
+      "causeDiagnostic": "Sucos industrializados, refrigerantes e bebidas doces têm excesso de açúcar e pouquíssimo sódio.",
+      "resolution": "Beber líquidos muito doces puros puxa água do corpo para o intestino e **agrava severamente a diarreia osmótica**. Isotônicos esportivos são seguros, mas se você só tiver suco ou bebida doce, **dilua pelo menos 1:1 com água fervida fria e adicione uma pitada de sal puro** antes de beber."
+    }
+  ],
+  "shortsScript": "[0-5s Gancho] Diarreia forte ou febre alta durante falta de água ou apagão? Beber só água pura é perigoso! Faça soro caseiro da OMS e soro fisiológico para feridas com sal e açúcar! [5-35s Corpo] Primeiro ferva água filtrada por 3 minutos, deixe ficar morna e meça 1 litro com duas garrafas de 500mL. Coloque duas pitadas de sal de 3 dedos e duas colheres de sopa rasas de açúcar. Prove uma gota: deve ser menos salgado que sua lágrima! Beba 2 goles a cada 5 minutos para triplicar a absorção. Para lavar feridas abertas, tire todo o açúcar: dissolva duas pitadas de sal em 500mL de água fervida e despeje de 15cm! [35-45s Alerta e Final] Nunca use sal temperado nem jogue açúcar em feridas! Salve este manual agora.",
+  "outcome": {
+    "title": "Sistema de Soro de Reidratação Oral (SRO da OMS) & Soro Fisiológico Isotônico 0,9% sem Açúcar para Feridas",
+    "badge": "FINAL SPEC // WHO SGLT-1 ORS & 0.9% ISOTONIC SALINE",
+    "description": "Um protocolo médico duplo de emergência que utiliza 1 litro de água fervida por 3 minutos com duas pitadas de sal (2,5g) e duas colheres de sopa rasas de açúcar (30g) para reverter o choque de desidratação, junto com um soro fisiológico isotônico 0,9% sem açúcar (500mL de água + 4,5g de sal) para lavagem indolor de feridas.",
+    "svgFileName": "pr24-outcome.svg",
+    "svgLabels": [
+      "PR-24 COMPLETO // SORO ORAL OMS + SALINA 0,9% FERIDAS",
+      "STAGE 01: BASE ESTERIL 1L",
+      "Agua fervida 3m: 2 de 500mL",
+      "STAGE 02: SORO ORAL (SRO)",
+      "1L + 2 pitadas sal + 2 col acucar",
+      "STAGE 03: GOLES A CADA 5M",
+      "Sabor lagrima + 2 goles / 5 min",
+      "STAGE 04: SALINA 0,9%",
+      "0 acucar: 500mL + 4,5g sal",
+      "VERIFICADO // RESGATE DE DESIDRATACAO + LAVAGEM INDOLOR"
+    ]
+  },
+  "createdAt": "2026-11-05T01:35:36.454Z",
+  "updatedAt": "2026-11-05T01:47:27.614Z",
+  "contentHash": "58c9c2c0e0af6177"
+}

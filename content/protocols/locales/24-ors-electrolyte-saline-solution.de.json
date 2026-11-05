@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-24",
+  "category": "MEDICINE",
+  "title": "WHO-Trinklösung (ORS) gegen Dehydrationsschock und 0,9% Wund-Kochsalzlösung aus abgekochtem Wasser, Salz und Zucker herstellen",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[LEBENSRETTENDE ORS-ELEKTROLYTLÖSUNG & 0,9% ISOTONISCHE WUNDSPÜLLÖSUNG]",
+  "summary": "Wenn Ihr Haushalt oder Erste-Hilfe-Kasten bereits fertige Elektrolytpulver aus der Apotheke, isotonische Sportgetränke oder sterile medizinische Kochsalzlösung enthält, verwenden Sie diese Vorräte nach dem Öffnen immer zuerst. Wenn jedoch Krankenhäuser und Apotheken bei Katastrophen, Stromausfall oder Wassermangel ausfallen und fertige Medikamente aufgebraucht sind, führen starker Durchfall, Erbrechen oder hohes Fieber binnen 3 Tagen zu einem lebensbedrohlichen Dehydrationsschock. Reines Leitungswasser allein wird vom geschwächten Darm kaum aufgenommen, und das Übergießen offener Wunden mit reinem Wasser lässt Zellen durch osmotischen Schock platzen, was Schmerzen, Sekundärinfektionen und Gewebenekrosen verschlimmert. Indem Sie Haushaltssalz und Zucker im exakten Finger-Prisen- und Löffelverhältnis in 1 Liter gefiltertes, 3 Minuten abgekochtes Wasser aus einem [Kohle-Sand-Wasserfilter](/protocol-01.html) oder [Baumwolltuch-Siphon & SODIS-Entkeimer](/protocol-23.html) einrühren, stellen Sie sofort die WHO-Standard-Trinklösung (ORS) mit dreifacher Darmaufnahme sowie eine zuckerfreie 0,9% isotonische Kochsalzlösung zur schmerzfreien Wundspülung her.",
+  "timeRequired": "20 Min. (inkl. 3 Min. Abkochen, Abkühlen auf Körpertemperatur und Anrühren)",
+  "successRate": "99% (bei 2 Drei-Finger-Prisen Salz und 2 gestrichenen Esslöffeln Zucker auf 1L abgekochtes Wasser plus Tränen-Geschmackstest)",
+  "difficulty": "Anfänger (Ohne Waage oder Messbecher; benötigt zwei 500mL-Flaschen, Esslöffel, Salz und Zucker)",
+  "outputPerHour": "Produziert 2–3L lebensrettende ORS-Trinklösung oder 2L sterile 0,9% Wundspüllösung pro Stunde",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Liter Gefiltertes, 3+ Minuten Sprudelnd Abgekochtes Wasser & Zwei Leere 500mL-Flaschen (oder 5,5 Pappbecher)",
+      "desc": "Um Darm- und Wundinfektionen auszuschließen, muss das Wasser sprudelnd abgekocht werden. Ohne Messbecher ergeben zwei bis zur Schulter gefüllte 500mL-Getränkeflaschen (oder 5,5 faustgroße Standard-Pappbecher) exakt 1 Liter (1.000mL)."
+    },
+    {
+      "id": "mat-02",
+      "name": "Reines Speisesalz (oder Sauberes Meersalz) & 1 Normaler Suppen-Esslöffel",
+      "desc": "Das unverzichtbare Elektrolyt, das den Salzgehalt von Blut und Tränen nachbildet. Verwenden Sie niemals Gewürzsalz, Knoblauchsalz oder Glutamat-Mischungen. An der Küste ohne Tafelsalz nutzen Sie die weißen Salzkristalle vom Boden einer [Tonkrug-Bambus-Meerwasserdestille](/protocol-20.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "Weißer Zucker (oder Brauner Zucker, Honig, Traubenzucker bzw. eine Handvoll Zerdrückter Gekochter Reis)",
+      "desc": "Aktiviert die Natrium-Glukose-Cotransporter (SGLT-1) in der Dünndarmwand und zieht Salz samt Wasser dreimal schneller ins Blut. Verwenden Sie niemals kalorienfreie künstliche Süßstoffe, da diese keine Wasseraufnahme bewirken und osmotischen Durchfall verschlimmern; kochen Sie ohne Zucker stattdessen Reisschleim."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: 1 Liter Gefiltertes Wasser 3+ Minuten Sprudelnd Abkochen, auf Handwärme Abkühlen und mit Zwei 500mL-Flaschen Abmessen",
+      "description": "1. **Klares Filterwasser Vorbereiten**: Gießen Sie mit einem [Kohle-Sand-Filter](/protocol-01.html) oder [Baumwolltuch-Kapillarsiphon](/protocol-23.html) geklärtes Wasser in einen sauberen Topf.\n2. **Mindestens 3 Minuten Sprudelnd Kochen**: Erhitzen Sie den Topf auf einem [Doppeldosen-Holzvergaserkocher](/protocol-12.html) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21.html), bis **daumennagelgroße Blasen mindestens 3 Minuten lang kräftig aufsteigen**, um Durchfallerreger und Tetanuskeime abzutöten.\n3. **Auf Lauwarme Körpertemperatur Abkühlen**: Lassen Sie den Topf mit geschlossenem Deckel im Schatten abkühlen, bis sich die Topfwand am Handrücken **lauwarm wie Badewasser (ca. 35–37°C)** anfühlt.\n4. **Mit Zwei 500mL-Flaschen Exakt 1 Liter Abmessen**: Füllen Sie **zwei gereinigte 500mL-Flaschen bis zur Schulter (oder 5,5 Pappbecher)**, um **exakt 1 Liter (1.000mL)** steriles Basiswasser zu erhalten.",
+      "actionNote": "> Warum Sie mit zwei 500mL-Flaschen exakt 1 Liter abmessen müssen statt zu schätzen: Bei zu wenig Wasser wird die Salz-Zucker-Lösung hypertonisch, entzieht dem Körper durch Umkehrosmose noch mehr Wasser in den Darm und verschlimmert die Dehydration lebensgefährlich.",
+      "svgFileName": "pr24-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 3 MIN ABKOCHEN + EXAKTE 1-LITER-ABMESSUNG",
+        "Gefiltertes Wasser im Topf 3+ Min sprudelnd abkochen",
+        "Mit Deckel auf Handwarme (36C am Handrucken) abkuhlen",
+        "Mit zwei 500mL-Gefassen (5,5 Becher) exakt 1L abmessen",
+        "[KERN] Verhindert Umkehrosmose + bakterielle Infektion"
+      ],
+      "deepDive": {
+        "badge": "STERILE BASE & VOLUME",
+        "title": "Thermische Keimabtötung und Volumetrische 1.000mL-Standardisierung Ohne Messgeräte",
+        "text": "Bei akuter Dehydration ist die Darmschleimhautbarriere geschwächt, sodass selbst geringste Mengen an E. coli oder Ruhrbakterien im Wasser eine Sepsis auslösen können. Ein **3-minütiges sprudelndes Abkochen bei 100°C** sichert Keimfreiheit, während zwei genormte **500mL-Getränkeflaschen (1.000mL)** die Osmolaritätsabweichung **unter 5%** halten.",
+        "fieldSpecs": [
+          {
+            "name": "1 Liter Abgekochtes, Handwarmes Steriles Basiswasser mit Zwei 500mL-Referenzflaschen",
+            "scientificName": "Boiled Sterile Water Base & Dual 500mL Volumetric Reference Vessels",
+            "categoryTag": "Sterile Lösungsbasis / Werkzeuglose 1L-Volumen-Normierung",
+            "imageFileName": "id-boiled-cooled-1liter-water-base.jpg",
+            "hudCode": "FIG. MED-24A // MACRO OPTIC",
+            "hudStatus": "STERILE BASE: 1,000ML LOCKED",
+            "traits": [
+              {
+                "label": "Kochen/Steril",
+                "value": "Verwenden Sie nur Wasser, das **3+ Minuten sprudelnd gekocht und abgedeckt abgekühlt** wurde."
+              },
+              {
+                "label": "Temp/Handtest",
+                "value": "Bei **Körperwärme (36°C am Handrücken)** anrühren, um Magenkrämpfe zu vermeiden."
+              },
+              {
+                "label": "Volumen/Norm",
+                "value": "**Zwei 500mL-Flaschen oder 5,5 Standard-Pappbecher (180mL)** ergeben exakt 1 Liter."
+              }
+            ],
+            "fieldUse": "Herstellung einer sterilen, präzise abgemessenen Wasserbasis für ORS-Trinklösung und Wundspülung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Zwei Drei-Finger-Prisen Salz und Zwei Gestrichene Esslöffel Zucker in 1L Wasser Auflösen und per Tränen-Geschmackstest Prüfen",
+      "description": "1. **Zwei Drei-Finger-Prisen Salz (1/2 Teelöffel) Zugeben**: Greifen Sie mit trockenen Spitzen von **Daumen, Zeige- und Mittelfinger zweimal reines Salz (entspricht 1/2 gestrichenen Teelöffel oder 1/6 Esslöffelspitze, ca. 2,5–3g)** und geben Sie es in 1 Liter Wasser.\n2. **Zwei Gestrichene Esslöffel Zucker (6 Teelöffel) Zugeben**: Geben Sie **zwei flach gestrichene Suppen-Esslöffel weißen Zucker ohne Berg (entspricht 6 gestrichenen Teelöffeln oder 6–7 Stück Würfelzucker, ca. 25–30g)** hinzu.\n3. **Vollständig Klar Verrühren**: Rühren Sie mit einem sauberen Löffel **mindestens 1 Minute lang**, bis sich alle Kristalle restlos aufgelöst haben.\n4. **Mit dem 'Tränen-Geschmackstest' Prüfen**: Geben Sie einen Tropfen auf den Handrücken und kosten Sie: Die Lösung darf **'keinesfalls salziger schmecken als eigene Tränen, sondern nur mild süß-salzig'** (schmeckt sie so salzig wie Meerwasser, sofort mit abgekochtem Wasser verdünnen).",
+      "actionNote": "> Warum fast die zehnfache Gewichtsmenge an Zucker im Verhältnis zum Salz nötig ist: Ein dehydrierter Dünndarm kann reines Salzwasser kaum aufnehmen. Erst wenn Glukose (Zucker) und Natrium (Salz) genau in diesem Verhältnis eintreffen, öffnen sich die SGLT-1-Zellpumpen und ziehen Wasser dreimal schneller ins Blut.",
+      "svgFileName": "pr24-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // WHO-ORS SALZ-ZUCKER-MISCHVERHALTNIS",
+        "In 1L Wasser zwei 3-Finger-Prisen Salz (2,5g) geben",
+        "Zwei gestrichene Essloffel Zucker (6 TL, 30g) einruhren",
+        "Tropfen auf Hand kosten: weniger salzig als Tranen",
+        "[KERN] SGLT-1-Cotransport verdreifacht Wasseraufnahme"
+      ],
+      "deepDive": {
+        "badge": "SGLT-1 CO-TRANSPORT",
+        "title": "Aktivierung des Natrium-Glukose-Cotransporters (SGLT-1) und Hypoosmolarität (245 mOsm/L)",
+        "text": "Selbst bei schweren Durchfallerkrankungen bleibt der **Natrium-Glukose-Cotransporter (SGLT-1)** der Dünndarmschleimhaut funktionsfähig. Das Auflösen von **2,6g Natriumchlorid und 25–30g Zucker pro Liter** erzeugt eine leicht hypoosmolarische Lösung (245 mOsm/L gegenüber 290 mOsm/L im Blutplasma), die pro Glukosemolekül und 2 Natriumionen hunderte Wassermoleküle in die Blutgefäße schleust.",
+        "fieldSpecs": [
+          {
+            "name": "WHO-Standardverhältnis: Zwei 3-Finger-Prisen Salz (2,5g) und Zwei Gestrichene Esslöffel Zucker (30g)",
+            "scientificName": "WHO Oral Rehydration Salts (ORS) Pinch-and-Spoon Volumetric Ratio",
+            "categoryTag": "Elektrolyt-Glukose-Verhältnis / SGLT-1-Resorptionspumpe",
+            "imageFileName": "id-who-ors-salt-sugar-spoon-ratio.jpg",
+            "hudCode": "FIG. MED-24B // MACRO OPTIC",
+            "hudStatus": "OSMOLARITY: < TEAR SALINITY",
+            "traits": [
+              {
+                "label": "Salz/Maximal",
+                "value": "Niemals mehr als **zwei 3-Finger-Prisen (1/2 gestrichener Teelöffel, 2,5–3g)** pro Liter verwenden."
+              },
+              {
+                "label": "Zucker/Menge",
+                "value": "**Zwei gestrichene Esslöffel (6 gestrichene Teelöffel, 25–30g)** echten Zucker pro Liter zugeben."
+              },
+              {
+                "label": "Tränen/Probe",
+                "value": "Vorab kosten: Muss **weniger salzig als Tränen** sein, um Hypernatriämie auszuschließen."
+              }
+            ],
+            "fieldUse": "Notfallmäßiger oraler Flüssigkeits- und Elektrolytersatz bei akutem Durchfall, Erbrechen, Hitzschlag und Verbrennungen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Erbrechen Verhindern – Oberkörper um 45 Grad Erhöhen und Alle 5 Minuten Nur 1–2 Kleine Schlucke Geben",
+      "description": "1. **Oberkörper um 45 Grad Aufrichten**: Stützen Sie den geschwächten Patienten mit gefalteten Jacken oder Kissen im **45-Grad-Winkel** ab, um Verschlucken zu verhindern.\n2. **Alle 5 Minuten 1–2 Kleine Schlucke (1 Löffel) Geben**: Lassen Sie niemals ein ganzes Glas auf einmal austrinken; verabreichen Sie mit einem sauberen Löffel oder kleinen Becher **alle 5 Minuten 1–2 kleine Schlucke (bei Kindern alle 1–2 Minuten 1 Teelöffel)**.\n3. **Bei Erbrechen 10 Minuten Pausieren**: Wenn der Patient erbricht, setzen Sie die Gabe für **volle 10 Minuten aus**, damit sich der Magen beruhigt, und fahren Sie dann noch langsamer mit **1 Löffel alle 3–5 Minuten** fort.\n4. **Urin-Farbe Prüfen und Lösung nach 24 Stunden Entsorgen**: Geben Sie Erwachsenen 1–2 Becher pro Stunde, bis **trockene Lippen feucht werden und dunkler Urin wieder hellgelb wird**; **entsorgen Sie angemischte ORS-Lösung nach 24 Stunden** wegen Keimbildung.",
+      "actionNote": "> Warum ein stark dehydrierter Patient niemals einen vollen Becher auf einmal hinunterstürzen darf: Eine plötzliche Flüssigkeitsmenge dehnt die gereizte Magenwand ruckartig aus, löst sofort den Brechreiz aus und führt zum Verlust von Flüssigkeit und Magensäure.",
+      "svgFileName": "pr24-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FRAKTIONIERTE GABE ALLE 5 MIN GEGEN ERBRECHEN",
+        "Oberkorper 45 Grad aufrichten gegen Verschlucken",
+        "Kein Sturztrinken: alle 5 Min nur 1-2 kleine Schlucke",
+        "Bei Erbrechen 10 Min Pause, dann 1 Loffel alle 3-5 Min",
+        "[KERN] Hemmt Magen-Brechreiz + Losung nach 24h entsorgen"
+      ],
+      "deepDive": {
+        "badge": "FRACTIONAL DOSING",
+        "title": "Unterdrückung des Magen-Dehnungs-Brechreizes durch Fraktionierte Kleinmengen-Gabe",
+        "text": "Bei akuter Gastroenteritis oder Hitzeerschöpfung ist die Magenentleerung verzögert; jedes schnelle Trinkvolumen über 100mL reizt die Dehnungsrezeptoren der Magenwand und löst **Emesis (Erbrechen)** aus. Die Gabe von **15–30mL alle 5 Minuten** passiert den Magenpförtner kontinuierlich ohne Druckanstieg und wirkt ähnlich effektiv wie eine Tropfinfusion.",
+        "fieldSpecs": [
+          {
+            "name": "Fraktionierte Orale Rehydratation im 5-Minuten-Takt mit Kleinem Becher und Löffel",
+            "scientificName": "Small-Volume Fractional Oral Rehydration Therapy (ORT) Administration",
+            "categoryTag": "Brechreizhemmende Intervall-Gabe / Hydratations-Vitalzeichen",
+            "imageFileName": "id-ors-small-sip-rehydration-cup.jpg",
+            "hudCode": "FIG. MED-24C // MACRO OPTIC",
+            "hudStatus": "DOSING RATE: 15-30ML / 5MIN",
+            "traits": [
+              {
+                "label": "Takt/Schlucke",
+                "value": "Nicht hastig trinken; **alle 5 Minuten nur 1–2 kleine Schlucke (1–2 Löffel)** nehmen."
+              },
+              {
+                "label": "Brechen/Pause",
+                "value": "Nach Erbrechen **10 Minuten komplett pausieren**, dann löffelweise neu beginnen."
+              },
+              {
+                "label": "Frist/24Std",
+                "value": "Zuckerhaltige Lösung bildet bei Raumtemperatur Keime; **nach 24 Stunden weggießen**."
+              }
+            ],
+            "fieldUse": "Magenschonende Flüssigkeitszufuhr bei Patienten mit Übelkeit, Erbrechen und schwerem Durchfall"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Für Offene Wunden Zucker Komplett Weglassen und Zwei Prisen Salz in 500mL Abgekochtem Wasser aus 15cm Höhe DarüberSpülen",
+      "description": "1. **500mL Abgekochtes Wasser und Nur Salz (NULL Zucker) Bereitstellen**: Verwenden Sie zum Auswaschen blutender, verschmutzter Wunden **niemals zuckerhaltige ORS-Trinklösung**; stellen Sie separat **500mL (1 Getränkeflasche bzw. knapp 3 Pappbecher)** frisch abgekochtes, lauwarmes Wasser bereit.\n2. **0,9% Isotonische Wund-Kochsalzlösung Anrühren**: Lösen Sie **zwei kräftige Drei-Finger-Prisen reines Salz (1/2 gestrichener Teelöffel, ca. 4,5g)** in den 500mL Wasser auf, um exakt den Salzgehalt menschlicher Körperflüssigkeit (0,9%) zu erreichen.\n3. **Aus Einer Handspanne (15–20cm) Höhe mit Wasserdruck Ausspülen**: Halten Sie die Wunde über eine Schale und **gießen Sie die Kochsalzlösung in kräftigem Strahl aus 15–20cm Höhe darüber**, damit der Spüldruck Sand und Blutgerinnsel entfernt, ohne das Gewebe mit den Fingern zu reiben.\n4. **Kiefernharz-Salbe und Sterilen Leinenverband Anlegen**: Tupfen Sie den Wundrand trocken, tragen Sie [Gereinigte Kiefernharz-Wundsalbe](/protocol-10.html) auf und verbinden Sie die Stelle mit einer in [Holzasche-Laugenseife](/protocol-13.html) gewaschenen und ausgekochten [Leinen-Druckbandage](/protocol-18.html) zum Schutz vor Tetanus.",
+      "actionNote": "> Warum Sie niemals Zuckerlösung oder reines Leitungswasser in eine offene Wunde gießen dürfen: Zucker dient Bakterien in der Wunde als Nahrung und führt zu schwerer Vereiterung und Gewebenekrose. Salzfreies Wasser wiederum lässt offene Wundzellen durch fehlenden osmotischen Druck anschwellen und schmerzhaft platzen.",
+      "svgFileName": "pr24-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ZUCKERFREIE 0,9% KOCHSALZLOSUNG FUR WUNDEN",
+        "Null Zucker: 500mL abgekochtes Wasser + 1/2 TL Salz (4,5g)",
+        "Entspricht 0,9% Korperflussigkeit fur schmerzfreie Spulung",
+        "Aus 15-20cm Hohe eingiessen, um Schmutz per Druck zu losen",
+        "[KERN] Verhindert Bakterien-Nekrose + Tetanus-Infektion"
+      ],
+      "deepDive": {
+        "badge": "ISOTONIC SALINE 0.9%",
+        "title": "Osmotischer Zellschutz durch 0,9% Isotonische Kochsalzlösung und Berührungslose Druckspülung",
+        "text": "Menschliche Extrazellulärflüssigkeit besitzt eine Natriumchlorid-Konzentration von **0,9% (4,5g Salz auf 500mL Wasser)**. Hypotonisches Leitungswasser zerstört freiliegende Unterhautzellen, während **0,9% isotonische Kochsalzlösung** das Gewebe schont und Bakterien-Biofilme sowie Erdpartikel rein mechanisch abspült, was das Tetanus- und Infektionsrisiko um **über 80% senkt**.",
+        "fieldSpecs": [
+          {
+            "name": "Berührungslose Wundspülung mit Zuckerfreier 0,9% Kochsalzlösung aus 15cm Höhe",
+            "scientificName": "0.9% Isotonic Normal Saline Non-Contact Wound Irrigation",
+            "categoryTag": "Zuckerfreie 0,9% Kochsalzlösung / Tetanus- & Infektionsschutz",
+            "imageFileName": "id-isotonic-saline-wound-irrigation.jpg",
+            "hudCode": "FIG. MED-24D // MACRO OPTIC",
+            "hudStatus": "SALINE CONC: 0.9% SUGAR-FREE",
+            "traits": [
+              {
+                "label": "Zucker/Null",
+                "value": "Für Wunden **null Zucker** nutzen: **1/2 Teelöffel (4,5g) reines Salz auf 500mL abgekochtes Wasser**."
+              },
+              {
+                "label": "Kontaktlos",
+                "value": "Wunde nicht reiben; **aus 15–20cm Höhe spülen**, um Schmutz mit dem Wasserstrahl zu lösen."
+              },
+              {
+                "label": "Sofort/Nutzung",
+                "value": "Konservierungsmittelfreie Lösung **sofort komplett verbrauchen und Reste verwerfen**."
+              }
+            ],
+            "fieldUse": "Schmerzfreie Schmutzentfernung sowie Tetanus- und Infektionsprävention bei Schnitt-, Schürf- und Brandwunden"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Niemals Salz Überdosieren, Kein Gewürzsalz oder Süßstoff Nutzen und Niemals Zuckerhaltige ORS-Lösung in Offene Wunden Gießen",
+    "description": "Wer aus falscher Eile gehäufte Löffel Salz ins Wasser gibt, erzeugt eine hypertonische Lösung, die den Körperzellen Wasser entzieht und zu tödlicher Hypernatriämie, Hirnödem und Nierenversagen führt – prüfen Sie immer, dass die Lösung 'weniger salzig als eigene Tränen' schmeckt. Nutzen Sie niemals Knoblauch-/Glutamat-Gewürzsalz oder kalorienfreie Süßstoffe, da diese keine Wasseraufnahme bewirken. Spülen Sie blutende Wunden niemals mit zuckerhaltiger ORS-Lösung oder konservierungsmittelhaltiger Kontaktlinsenlösung, da dies schwere Infektionen und Gewebenekrosen auslöst; nutzen Sie für Wunden ausschließlich zuckerfreie 0,9% Kochsalzlösung (500mL abgekochtes Wasser + 1/2 TL reines Salz) und legen Sie danach eine [Ausgekochte Leinen-Druckbandage](/protocol-18.html) an.",
+    "consequence": "Trennen Sie beide Formeln strikt: Trink-ORS = '1L Wasser + 1/2 TL Salz + 2 gestrichene EL Zucker'; Wund-Kochsalzlösung = '500mL Wasser + 1/2 TL Salz (NULL Zucker)'."
+  },
+  "faqs": [
+    {
+      "question": "Wie stelle ich eine orale Rehydratationslösung (ORS) her, wenn überhaupt kein Zucker oder Honig im Haus ist?",
+      "causeDiagnostic": "Zucker liefert Glukose zur Aktivierung der Natrium-Wasser-Pumpe im Dünndarm und kann daher vollständig durch stärkehaltiges Getreide ersetzt werden.",
+      "resolution": "**Kochen Sie 2 gehäufte Esslöffel (30–50g) Reismehl oder zerdrückten gekochten weißen Reis in 1 Liter Wasser für 10 Minuten zu einem dünnen Reisschleim, lassen Sie ihn handwarm abkühlen und lösen Sie zwei 3-Finger-Prisen (1/2 Teelöffel) reines Salz darin auf.** Die Reisstärke wird im Darm zu Glukose gespalten und hydratisiert genauso wirksam."
+    },
+    {
+      "question": "Darf man bei starkem Durchfall unverdünnten Fruchtsaft, Limonade oder Cola trinken?",
+      "causeDiagnostic": "Handelsübliche Fruchtsäfte, Limonaden und Softdrinks enthalten viel zu viel Zucker und kaum Natrium (Salz).",
+      "resolution": "Unverdünnte süße Getränke ziehen durch ihren hohen Zuckergehalt Körperwasser in den Darm und **verschlimmern osmotischen Durchfall drastisch**. Isotonische Sportgetränke sind geeignet; wenn Sie nur Saft oder süße Getränke haben, **verdünnen Sie diese mindestens 1:1 mit abgekochtem Wasser und geben Sie eine Prise reines Salz hinzu**."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Starker Durchfall oder hohes Fieber bei Stromausfall und Wassermangel? Nur reines Wasser zu trinken ist gefährlich! Stellen Sie lebensrettende WHO-Trinklösung und Wundspüllösung aus Salz und Zucker her! [5-35s Body] Kochen Sie gefiltertes Wasser 3 Minuten sprudelnd ab, kühlen Sie es handwarm ab und messen Sie mit zwei 500mL-Flaschen exakt 1 Liter ab. Geben Sie zwei 3-Finger-Prisen reines Salz und zwei gestrichene Esslöffel Zucker hinzu. Kosten Sie: Es muss weniger salzig als Ihre Tränen schmecken! Trinken Sie alle 5 Minuten 2 kleine Schlucke. Für offene Wunden lassen Sie den Zucker weg und lösen zwei Prisen Salz in 500mL abgekochtem Wasser! [35-45s Warnung & Outro] Nie Gewürzsalz nutzen oder Zucker in Wunden gießen! Speichern Sie dieses Handbuch jetzt.",
+  "outcome": {
+    "title": "WHO-Standard Orale Rehydratationslösung (ORS) & Zuckerfreie 0,9% Isotonische Wund-Kochsalzlösung",
+    "badge": "FINAL SPEC // WHO SGLT-1 ORS & 0.9% ISOTONIC SALINE",
+    "description": "Ein doppeltes medizinisches Notfallprotokoll auf Basis von 1 Liter 3 Minuten abgekochtem Wasser mit zwei 3-Finger-Prisen Salz (2,5g) und zwei gestrichenen Esslöffeln Zucker (30g) gegen Dehydrationsschock sowie einer zuckerfreien 0,9% isotonischen Kochsalzlösung (500mL Wasser + 4,5g Salz) zur schmerz- und infektionsfreien Wundspülung.",
+    "svgFileName": "pr24-outcome.svg",
+    "svgLabels": [
+      "PR-24 KOMPLETT // WHO-ORS-LOSUNG + 0,9% WUND-SALZLOSUNG",
+      "STAGE 01: STERILE 1L BASIS",
+      "3 Min gekocht: zwei 500mL",
+      "STAGE 02: WHO-ORS-MISCHUNG",
+      "1L + 2 Prisen Salz + 2 EL Zucker",
+      "STAGE 03: INTERVALL-SCHLUCKE",
+      "Tranen-Test + 2 Schlucke / 5m",
+      "STAGE 04: 0,9% SALZLOSUNG",
+      "0 Zucker: 500mL + 4,5g Salz",
+      "FELDGEPRUFT // DEHYDRATIONS-RETTUNG + SCHMERZFREIE SPULUNG"
+    ]
+  },
+  "createdAt": "2026-11-05T01:35:36.454Z",
+  "updatedAt": "2026-11-05T01:47:27.614Z",
+  "contentHash": "58c9c2c0e0af6177"
+}

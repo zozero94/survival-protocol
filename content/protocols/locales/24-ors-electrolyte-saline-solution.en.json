@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-24",
+  "category": "MEDICINE",
+  "title": "How to Make Life-Saving WHO Oral Rehydration Solution (ORS) and 0.9% Wound Saline from Boiled Water, Salt, and Sugar",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[EMERGENCY DEHYDRATION SHOCK ORS FLUID & 0.9% ISOTONIC WOUND IRRIGATION SALINE]",
+  "summary": "If your home or first-aid kit already stocks pharmacy oral rehydration salt packets, sports electrolyte drinks, or sterile medical normal saline, always use those commercial supplies first immediately after opening. However, when hospitals and pharmacies shut down during a disaster, blackout, or water outage and medical supplies run out, severe diarrhea, vomiting, or high fever from contaminated water can drain body fluids and electrolytes, causing fatal dehydration shock within 3 days. Drinking plain water alone fails to absorb in the intestine, while pouring plain water onto an open wound ruptures cells by osmotic shock, worsening pain, secondary infection, and tissue necrosis. By mixing household salt and sugar into 1 liter of boiled purified water from a [Wilderness Charcoal-Sand Filter](/protocol-01.html) or [Cotton Towel Siphon & SODIS Sterilizer](/protocol-23.html) using exact finger-pinch and spoon ratios, you can immediately prepare World Health Organization (WHO) standard Oral Rehydration Solution (ORS) that triples intestinal water absorption, plus a sugar-free 0.9% isotonic saline solution for painless wound washing.",
+  "timeRequired": "20 mins (including 3-min rolling boil, cooling to body temperature, and mixing)",
+  "successRate": "99% (when mixing 2 three-finger pinches of salt and 2 level tablespoons of sugar into 1L boiled water and verifying tear-taste salinity)",
+  "difficulty": "Beginner (No scale or measuring cup required; uses two 500mL bottles, a tablespoon, salt, and sugar)",
+  "outputPerHour": "Produces 2–3L of life-saving ORS fluid or 2L of sterile 0.9% wound saline per hour",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Liter of Filtered Water Boiled for 3+ Minutes & Two Empty 500mL Bottles (or 5.5 Paper Cups)",
+      "desc": "To prevent intestinal and wound infections, the water must be sterilized at a rolling boil. Without a graduated pitcher, filling two standard 500mL water bottles to the shoulder (or 5.5 standard fist-sized paper cups) provides an exact 1-liter (1,000mL) volume."
+    },
+    {
+      "id": "mat-02",
+      "name": "Pure Refined Salt (or Clean Sea Salt) & 1 Standard Soup Tablespoon",
+      "desc": "The essential electrolyte that matches blood and tear salinity to drive water absorption and protect exposed wound cells. Never use seasoned salt, garlic salt, or MSG-blended salt. If stranded on a coast without table salt, use the white sea salt crystals recovered at the bottom of a [Clay Pot & Bamboo Seawater Distiller](/protocol-20.html)."
+    },
+    {
+      "id": "mat-03",
+      "name": "White Sugar (or Brown Sugar, Honey, Glucose Powder, or a Handful of Mashed Cooked Rice)",
+      "desc": "Activates the sodium-glucose co-transporters (SGLT-1) in the small intestine wall to pull sodium and water into the bloodstream 3 times faster. Never substitute zero-calorie artificial sweeteners, which fail to trigger absorption and worsen osmotic diarrhea. If no sugar is available, use boiled rice water."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Boil 1 Liter of Filtered Water at a Rolling Boil for 3+ Minutes, Cool to Body Temp, and Measure with Two 500mL Bottles",
+      "description": "1. **Prepare Clarified Water**: Pour clear water filtered through a [Charcoal-Sand Water Filter](/protocol-01.html) or [Cotton Towel Capillary Siphon](/protocol-23.html) into a clean pot.\n2. **Rolling Boil for 3+ Minutes**: Heat the pot over a [Twin-Can Wood Gas Stove](/protocol-12.html) or [Tuna Can Cooking Oil Heater](/protocol-21.html) until **thumb-sized bubbles vigorously break across the entire surface for at least 3 minutes**, killing diarrhea bacteria and tetanus spores.\n3. **Cool to Lukewarm Body Temperature**: Keep the lid on in the shade to block airborne dust until touching the outside of the pot with the back of your hand feels **lukewarm like baby bathwater (approx. 35–37°C)**.\n4. **Measure Exactly 1 Liter with Two 500mL Bottles**: Fill **two clean 500mL beverage bottles to the shoulder (or 5.5 standard paper cups)** to lock in **exactly 1 liter (1,000mL)** of sterile base water.",
+      "actionNote": "> Why you must measure an exact 1-liter volume with two 500mL bottles instead of guessing: If you use too little water, the salt and sugar concentration becomes hypertonic, drawing water out of the body into the gut by reverse osmosis and fatally worsening dehydration.",
+      "svgFileName": "pr24-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 3-MIN BOIL STERILIZATION + 1L VOLUMETRIC LOCK",
+        "Boil filtered clear water at rolling boil for 3+ mins",
+        "Cool with lid on until lukewarm to back of hand (36C)",
+        "Use two 500mL bottles (5.5 cups) for exact 1,000mL base",
+        "[CORE] Prevents reverse osmosis + secondary infection"
+      ],
+      "deepDive": {
+        "badge": "STERILE BASE & VOLUME",
+        "title": "Thermal Pathogen Elimination and 1,000mL Volumetric Standardization Without Scales",
+        "text": "Because acute dehydration compromises the intestinal mucosal barrier, any residual E. coli or dysentery bacteria in the base water can trigger sepsis. Maintaining a **100°C rolling boil for 3+ minutes** guarantees sterility, while using two ubiquitous **500mL beverage vessels (1,000mL total)** keeps osmolarity variance **within 5%** without laboratory glassware.",
+        "fieldSpecs": [
+          {
+            "name": "1-Liter Boiled & Cooled Sterile Water Base Measured with Dual 500mL Vessels",
+            "scientificName": "Boiled Sterile Water Base & Dual 500mL Volumetric Reference Vessels",
+            "categoryTag": "Sterile Fluid Base / Zero-Tool 1L Volume Standardization",
+            "imageFileName": "id-boiled-cooled-1liter-water-base.jpg",
+            "hudCode": "FIG. MED-24A // MACRO OPTIC",
+            "hudStatus": "STERILE BASE: 1,000ML LOCKED",
+            "traits": [
+              {
+                "label": "Boil/Sterile",
+                "value": "Use only water **boiled vigorously for 3+ minutes and cooled with the lid closed**."
+              },
+              {
+                "label": "Temp/Touch",
+                "value": "Mix at **lukewarm body temperature (36°C)** checked with the back of your hand to prevent stomach cramps."
+              },
+              {
+                "label": "Volume/Ref",
+                "value": "**Two 500mL bottles or 5.5 standard paper cups (180mL)** equal an exact 1-liter base."
+              }
+            ],
+            "fieldUse": "Preparing sterile, accurately measured water solvent for oral rehydration and wound irrigation"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Dissolve Two 3-Finger Pinches of Salt and Two Level Tablespoons of Sugar in 1L Water, Then Verify with the Tear-Taste Test",
+      "description": "1. **Add Two 3-Finger Pinches of Salt (1/2 Teaspoon)**: With dry fingers, pinch pure salt using the **tips of your thumb, index, and middle fingers twice (equal to 1/2 level teaspoon or 1/6 of a soup tablespoon, approx. 2.5–3g)** and drop it into the 1 liter of water.\n2. **Add Two Level Tablespoons of Sugar (6 Teaspoons)**: Add **two level soup tablespoons of white sugar scraped flat (equal to 6 level teaspoons or 6–7 sugar cubes, approx. 25–30g)**.\n3. **Stir Until Crystal Clear**: Stir with a clean spoon for **at least 1 minute** until zero salt or sugar grains remain on the bottom.\n4. **Verify via the 'Tear-Taste' Check**: Drop a small bead onto the back of your hand and taste it—it must taste **'no saltier than your own tears, with a mild sweet-salty balance'** (if it tastes as salty as seawater, dilute immediately with more boiled water).",
+      "actionNote": "> Why you must combine sugar at nearly 10 times the weight of salt instead of drinking plain salt water: A dehydrated small intestine cannot absorb plain salt water efficiently. When glucose (sugar) and sodium (salt) enter together in this exact ratio, intestinal SGLT-1 pumps open wide and pull water into the bloodstream 3 times faster.",
+      "svgFileName": "pr24-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // WHO STANDARD ORS SALT + SUGAR RATIO",
+        "Add two 3-finger pinches of pure salt (2.5g) to 1L water",
+        "Add 2 level tablespoons of sugar (6 tsp, 30g) + stir",
+        "Taste drop on hand: must be less salty than human tears",
+        "[CORE] SGLT-1 co-transport triples gut water absorption"
+      ],
+      "deepDive": {
+        "badge": "SGLT-1 CO-TRANSPORT",
+        "title": "Small Intestine Sodium-Glucose Co-Transporter (SGLT-1) Activation and Hypo-Osmolarity (245 mOsm/L)",
+        "text": "Even when bacterial toxins cause severe secretory diarrhea, the intestinal **Sodium-Glucose Co-Transporter (SGLT-1)** remains intact. Dissolving **2.6g of sodium chloride and 25–30g of sucrose/glucose per liter** creates a slightly hypo-osmolar solution (approx. 245 mOsm/L vs. plasma 290 mOsm/L) that actively transports 2 sodium ions and 1 glucose molecule across the epithelium, pulling hundreds of water molecules into the capillaries.",
+        "fieldSpecs": [
+          {
+            "name": "WHO Oral Rehydration Salts (ORS) Ratio: Two 3-Finger Salt Pinches (2.5g) & Two Level Tablespoons Sugar (30g)",
+            "scientificName": "WHO Oral Rehydration Salts (ORS) Pinch-and-Spoon Volumetric Ratio",
+            "categoryTag": "Electrolyte-Glucose Ratio / SGLT-1 Absorption Pump",
+            "imageFileName": "id-who-ors-salt-sugar-spoon-ratio.jpg",
+            "hudCode": "FIG. MED-24B // MACRO OPTIC",
+            "hudStatus": "OSMOLARITY: < TEAR SALINITY",
+            "traits": [
+              {
+                "label": "Salt/Limit",
+                "value": "Never exceed **two 3-finger pinches (1/2 level teaspoon, 2.5–3g)** per 1 liter of water."
+              },
+              {
+                "label": "Sugar/Dose",
+                "value": "Add **two level soup tablespoons (6 level teaspoons, 25–30g)** of real sugar per 1 liter."
+              },
+              {
+                "label": "Tear/Check",
+                "value": "Taste a drop first—it must be **less salty than tears** to prevent hypernatremic shock."
+              }
+            ],
+            "fieldUse": "Emergency oral fluid and electrolyte replacement for acute diarrhea, vomiting, heatstroke, and burns"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Prevent Vomiting by Seating the Patient at 45 Degrees and Giving 1–2 Small Sips Every 5 Minutes",
+      "description": "1. **Elevate Upper Body to 45 Degrees**: Prop the weakened patient's back with folded coats or pillows to a **45-degree semi-upright posture** to prevent choking or aspiration.\n2. **Feed 1–2 Sips (1 Spoonful) Every 5 Minutes**: Never let a thirsty patient gulp a full cup at once; use a clean spoon or small cup to give **1–2 small sips every 5 minutes (1 spoonful every 1–2 minutes for children)**.\n3. **Pause 10 Minutes After Vomiting**: If the patient vomits, stop feeding and **let the stomach rest completely for 10 minutes**, then resume even more slowly at **1 spoonful every 3–5 minutes**.\n4. **Track Urine Color & Discard After 24 Hours**: Aim for 1–2 cups per hour for adults (plus 1–2 cups after each loose stool) until **dry lips moisten and dark urine turns pale yellow**, and **discard any remaining ORS after 24 hours** to prevent bacterial growth.",
+      "actionNote": "> Why a severely dehydrated patient must never gulp a full cup of ORS at once: Rapidly flooding an inflamed, dehydrated stomach stretches the gastric wall and triggers an immediate vomiting reflex, expelling both the ORS and vital stomach electrolytes.",
+      "svgFileName": "pr24-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ANTI-EMESIS 5-MIN FRACTIONAL SIPPING PROTOCOL",
+        "Elevate upper torso 45 degrees to prevent aspiration",
+        "No rapid gulping: give 1-2 small sips every 5 minutes",
+        "If vomiting occurs, rest gut 10 mins then resume slowly",
+        "[CORE] Stops gastric stretch reflex + discard after 24h"
+      ],
+      "deepDive": {
+        "badge": "FRACTIONAL DOSING",
+        "title": "Inhibiting the Gastric Stretch Vomiting Reflex via Small-Volume Fractional Administration",
+        "text": "During acute gastroenteritis or heat exhaustion, delayed gastric emptying causes any sudden bolus over 100mL to trigger mechanoreceptors in the stomach wall, inducing **emesis (vomiting)**. Administering **15–30mL every 5 minutes** allows continuous passage through the pylorus into the duodenum without raising intragastric pressure, achieving hydration efficacy comparable to intravenous (IV) infusion.",
+        "fieldSpecs": [
+          {
+            "name": "5-Minute Fractional Oral Rehydration Dosing Using a Small Cup and Spoon",
+            "scientificName": "Small-Volume Fractional Oral Rehydration Therapy (ORT) Administration",
+            "categoryTag": "Anti-Emesis Fractional Dosing / Hydration Recovery Bio-Signs",
+            "imageFileName": "id-ors-small-sip-rehydration-cup.jpg",
+            "hudCode": "FIG. MED-24C // MACRO OPTIC",
+            "hudStatus": "DOSING RATE: 15-30ML / 5MIN",
+            "traits": [
+              {
+                "label": "Pace/Sips",
+                "value": "Never gulp; take **1–2 small sips (1–2 spoonfuls) every 5 minutes**."
+              },
+              {
+                "label": "Vomit/Pause",
+                "value": "If vomiting occurs, **wait 10 full minutes** before restarting 1 spoonful at a time."
+              },
+              {
+                "label": "Shelf/24h",
+                "value": "Sugar-containing ORS breeds bacteria at room temperature; **discard after 24 hours**."
+              }
+            ],
+            "fieldUse": "Safe oral rehydration for patients with nausea, vomiting, and severe diarrheal dehydration"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: For Open Wounds, Omit All Sugar and Dissolve Two Pinches of Salt in 500mL Boiled Water to Flush From 15cm Above",
+      "description": "1. **Prepare 500mL Boiled Water and Salt Only (ZERO Sugar)**: When washing a bleeding, dirt-contaminated wound, **never use sugar-containing ORS**; prepare a separate **500mL bottle (just under 3 paper cups)** of freshly boiled, lukewarm water.\n2. **Mix 0.9% Isotonic Normal Saline**: Dissolve **two generous 3-finger pinches of pure salt (1/2 level teaspoon, approx. 4.5g)** in the 500mL of boiled water to match human body fluid salinity (0.9%).\n3. **Irrigate With Water Pressure From One Hand-Span (15–20cm) Above**: Hold the injured limb over a clean basin and **pour a steady stream of saline from 15–20cm above** (or squeeze through a pinhole cap) so water pressure flushes out sand and blood clots without fingers rubbing the raw tissue.\n4. **Apply Pine Resin Ointment & Sterile Linen Bandage**: Pat the surrounding skin dry, apply [Refined Pine Resin Antiseptic Ointment](/protocol-10.html) around the edges, and wrap with a [Boiled Linen Pressure Bandage](/protocol-18.html) washed in [Wood Ash Lye Soap](/protocol-13.html) to block tetanus and secondary infection.",
+      "actionNote": "> Why you must never pour sugar-containing ORS or plain tap water onto an open wound: Sugar feeds bacteria inside the wound, causing rapid suppuration and tissue necrosis. Conversely, salt-free plain water has zero osmotic pressure, causing exposed wound cells to swell and burst with severe pain.",
+      "svgFileName": "pr24-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SUGAR-FREE 0.9% SALINE + WOUND IRRIGATION",
+        "Zero sugar: 500mL boiled water + 1/2 tsp pure salt (4.5g)",
+        "Matches 0.9% body fluid salinity for painless cell safety",
+        "Pour from 15-20cm height to flush dirt via stream pressure",
+        "[CORE] Prevents bacterial necrosis + tetanus infection"
+      ],
+      "deepDive": {
+        "badge": "ISOTONIC SALINE 0.9%",
+        "title": "Cellular Osmotic Preservation with 0.9% Isotonic Normal Saline and Non-Contact Jet Irrigation",
+        "text": "Human extracellular fluid has a sodium chloride concentration of **0.9% (4.5g salt per 500mL water)**. Pouring hypotonic plain water onto raw subcutaneous tissue induces cell lysis and inflammation, whereas **0.9% isotonic saline** preserves fibroblasts while mechanical stream pressure detaches bacterial biofilms and soil particles, reducing tetanus and wound infection rates by **over 80%**.",
+        "fieldSpecs": [
+          {
+            "name": "Non-Contact Wound Irrigation Pouring Sugar-Free 0.9% Saline From 15cm Height",
+            "scientificName": "0.9% Isotonic Normal Saline Non-Contact Wound Irrigation",
+            "categoryTag": "Sugar-Free 0.9% Isotonic Saline / Tetanus & Infection Prevention",
+            "imageFileName": "id-isotonic-saline-wound-irrigation.jpg",
+            "hudCode": "FIG. MED-24D // MACRO OPTIC",
+            "hudStatus": "SALINE CONC: 0.9% SUGAR-FREE",
+            "traits": [
+              {
+                "label": "Sugar/Zero",
+                "value": "Use **zero sugar** for wounds: dissolve **1/2 level teaspoon (4.5g) of pure salt in 500mL boiled water**."
+              },
+              {
+                "label": "No-Touch/Jet",
+                "value": "Do not scrub raw flesh; **pour from one hand-span (15–20cm) above** to flush grit away."
+              },
+              {
+                "label": "Single/Use",
+                "value": "Preservative-free homemade saline must be **used immediately and any remainder discarded**."
+              }
+            ],
+            "fieldUse": "Painless soil removal and tetanus/infection prevention for lacerations, abrasions, and burns"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Never Overdose Salt, Use Seasoned Salt or Zero-Calorie Sweeteners, or Pour Sugar-Containing ORS onto Open Wounds",
+    "description": "Adding extra salt in hopes of faster recovery creates a hypertonic solution that pulls water out of body cells into the gut, causing lethal hypernatremic dehydration, cerebral edema, and kidney failure—always verify that the ORS tastes 'less salty than your own tears.' Never use garlic/MSG seasoned salt or zero-calorie artificial sweeteners, which fail to absorb water and worsen diarrhea. Above all, never wash bleeding wounds with sugar-containing ORS or preservative-laden contact lens solution, which trigger severe bacterial infection and tissue necrosis; wash wounds strictly with sugar-free 0.9% saline (500mL boiled water + 1/2 tsp pure salt) before dressing with a [Boiled Linen Pressure Bandage](/protocol-18.html).",
+    "consequence": "Strictly separate the two formulas: Drinking ORS = '1L boiled water + 1/2 tsp salt + 2 level tbsp sugar (less salty than tears)'; Wound Saline = '500mL boiled water + 1/2 tsp pure salt (ZERO sugar).'"
+  },
+  "faqs": [
+    {
+      "question": "How can I make Oral Rehydration Solution (ORS) if I have no sugar or honey at home?",
+      "causeDiagnostic": "Sugar provides glucose to activate the sodium-water absorption pump in the small intestine, so starch-rich grain powder can fully replace it.",
+      "resolution": "**Boil 2 heaping tablespoons (30–50g) of white rice powder or mashed cooked rice in 1 liter of water for 10 minutes to make a thin, clear rice gruel, cool it to lukewarm, and dissolve two 3-finger pinches (1/2 teaspoon) of pure salt.** Intestinal enzymes break rice starch down into glucose, rehydrating the body just as effectively as sugar-based ORS."
+    },
+    {
+      "question": "Can I drink fruit juice, soda, or undiluted sweet beverages during severe diarrhea?",
+      "causeDiagnostic": "Commercial fruit juices, sodas, and soft drinks contain excessively high sugar concentrations and far too little sodium.",
+      "resolution": "Drinking high-sugar beverages straight draws body water into the gut and **severely worsens osmotic diarrhea**. Commercial sports electrolyte drinks are safe, but if you only have fruit juice or sweet drinks, **dilute them at least 1:1 with boiled cooled water and add a pinch of pure salt** before sipping."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Suffering severe diarrhea or fever during a blackout or water outage? Drinking plain water alone can be dangerous! Make life-saving WHO rehydration fluid and wound saline from salt and sugar! [5-35s Body] First, boil filtered water for 3 minutes, cool to lukewarm, and measure 1 liter using two 500mL bottles. Add two 3-finger pinches of pure salt and two level tablespoons of sugar. Stir well and taste—it must be less salty than your tears! Sip 1 to 2 spoonfuls every 5 minutes to triple water absorption. For bleeding wounds, omit all sugar and dissolve two pinches of salt in 500mL boiled water to flush dirt from 15cm above! [35-45s Warning & Outro] Never use seasoned salt or pour sugar water on wounds! Save this survival manual now.",
+  "outcome": {
+    "title": "WHO Standard Oral Rehydration Solution (ORS) & Sugar-Free 0.9% Isotonic Wound Saline System",
+    "badge": "FINAL SPEC // WHO SGLT-1 ORS & 0.9% ISOTONIC SALINE",
+    "description": "A dual emergency medical protocol using 1 liter of 3-minute boiled water mixed with two 3-finger pinches of salt (2.5g) and two level tablespoons of sugar (30g) to reverse fatal dehydration shock, alongside a sugar-free 0.9% isotonic saline (500mL water + 4.5g salt) for painless, infection-free wound irrigation.",
+    "svgFileName": "pr24-outcome.svg",
+    "svgLabels": [
+      "PR-24 COMPLETE // WHO ORS FLUID + 0.9% WOUND SALINE",
+      "STAGE 01: STERILE 1L BASE",
+      "3-min boiled water in two 500mL",
+      "STAGE 02: WHO ORS MIX",
+      "1L + 2 pinches salt + 2 tbsp sugar",
+      "STAGE 03: FRACTIONAL SIPS",
+      "Tear-taste check + 2 sips / 5m",
+      "STAGE 04: 0.9% SALINE",
+      "0 sugar: 500mL + 4.5g salt",
+      "FIELD VERIFIED // DEHYDRATION RESCUE + PAINLESS WOUND WASH"
+    ]
+  },
+  "createdAt": "2026-11-05T01:35:36.454Z",
+  "updatedAt": "2026-11-05T01:47:27.614Z",
+  "contentHash": "58c9c2c0e0af6177"
+}
