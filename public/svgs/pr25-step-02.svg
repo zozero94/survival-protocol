@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg25s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="cardboard25s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="paper25s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <pattern id="grid25s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow25s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg25s2)"/>
+  <rect width="400" height="400" fill="url(#grid25s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 액체·고체 분리 및 바닥 10cm 셀룰로오스 수분 흡수층</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="66" fill="#fef08a" font-family="monospace" font-size="10.5">소변은 별도 용기로 분리하여 혐기성 암모니아 부패 차단</text>
+
+  <!-- Main Illustration: Left (Liquid Diversion Bottle) & Right (10cm Fist-Height Shredded Paper/Cardboard Bed) -->
+  <g filter="url(#shadow25s2)">
+    <!-- Left Card: Urine Separation Vessel -->
+    <rect x="22" y="86" width="126" height="154" rx="4" fill="#0f172a" stroke="#fde047" stroke-width="1.2"/>
+    <!-- Funnel + Sealed Urine Bottle -->
+    <polygon points="62,104 108,104 92,130 78,130" fill="#38bdf8" stroke="#bae6fd" stroke-width="1.2"/>
+    <rect x="64" y="130" width="42" height="90" rx="4" fill="#1e293b" stroke="#fde047" stroke-width="1.5"/>
+    <rect x="68" y="162" width="34" height="54" rx="2" fill="#eab308" fill-opacity="0.75"/>
+    <!-- Checkmark Badge -->
+    <circle cx="44" cy="112" r="10" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <path d="M39,112 L43,116 L50,108" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Right Card: 10cm Shredded Newspaper + Corrugated Cardboard Absorbent Bed Inside Bag -->
+    <rect x="162" y="86" width="216" height="154" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+
+    <!-- Toilet Bag Cutaway -->
+    <path d="M188,104 L352,104 L340,224 L200,224 Z" fill="#111827" stroke="#94a3b8" stroke-width="1.8"/>
+
+    <!-- 10cm Absorbent Layer at Bottom (Crumpled Newspaper + Cardboard Shreds + Litter Granules) -->
+    <g transform="translate(0, 0)">
+      <rect x="202" y="166" width="136" height="54" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+      <!-- Shredded Cardboard & Newspaper Polygons -->
+      <polygon points="208,214 226,196 242,210 220,218" fill="url(#cardboard25s2)"/>
+      <polygon points="236,212 258,192 274,208 252,218" fill="url(#paper25s2)"/>
+      <polygon points="268,214 290,194 308,210 284,218" fill="url(#cardboard25s2)"/>
+      <polygon points="298,212 320,194 334,212 312,218" fill="url(#paper25s2)"/>
+      <polygon points="214,194 236,174 254,188 230,198" fill="url(#paper25s2)"/>
+      <polygon points="248,192 272,172 290,188 266,196" fill="url(#cardboard25s2)"/>
+      <polygon points="282,194 306,174 328,188 302,198" fill="url(#paper25s2)"/>
+      <!-- Absorbent Granules -->
+      <circle cx="224" cy="182" r="2.5" fill="#fde047"/>
+      <circle cx="262" cy="182" r="2.5" fill="#fde047"/>
+      <circle cx="296" cy="182" r="2.5" fill="#fde047"/>
+      <circle cx="318" cy="184" r="2.5" fill="#fde047"/>
+    </g>
+
+    <!-- 10cm (1 Fist Height) Scale Indicator -->
+    <path d="M180,166 L180,220" stroke="#10b981" stroke-width="2"/>
+    <path d="M174,166 L186,166 M174,220 L186,220" stroke="#10b981" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="271" fill="#bae6fd" font-family="monospace" font-size="10.5">신문지·골판지를 손가락 두 마디 크기로 찢고 구겨 표면적 확대</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">포집 봉투 바닥에 주먹 높이(10cm)로 흡수 매트 도톰하게 포설</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 수분 즉시 흡수로 세균 증식 및 악취 발생 80% 억제</text>
+</svg>

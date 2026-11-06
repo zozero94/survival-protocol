@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-25",
+  "category": "MEDICINE",
+  "title": "Wie man bei Wasserausfall mit Müllsäcken, zerrissenem Zeitungspapier und Eichenholzkohle eine wasserlose Notfall-Trockentoilette baut",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[WASSERAUSFALL & ABWASSERRÜCKSTAU-SPERRE & WASSERLOSE BIOHAZARD-HYGIENE]",
+  "summary": "Wenn Sie zu Hause oder im Notfallrucksack bereits fertige Notfall-Toiletten-Gerinnungsmittel (Superabsorber-Pulver), eine tragbare Campingtoilette oder geruchsdichte Fäkalienbeutel besitzen, verwenden Sie diese Fertigprodukte immer zuerst. Wenn jedoch Erdbeben, Bombardierungen, Stromausfälle oder starker Frost das Leitungswasser kappen und Abwasserrohre in Wohnblocks brechen – und keine Fertigpulver mehr da sind –, führt das Nachspülen mit Wassereimern dazu, dass Fäkalien in untere Stockwerke und Ihr eigenes Bad zurückstauen. Offene Fäkalien züchten binnen 24 Stunden Fliegen, E. coli, Ruhr und Noroviren. Indem Sie den Spülhebel festbinden, zwei dicke Müllsäcke übereinander über die Toilettenschüssel (oder einen 20-L-Eimer) spannen, ein 10 cm hohes Saugbett aus zerrissenem Zeitungspapier und Karton auslegen und Fäkalien sofort mit zerstoßener [Eichenholzkohle](/protocol-09.html) und weißer Holzasche abdecken, bevor Sie den Beutel per Schwanenhals-Doppelknoten versiegeln, stoppen Sie Gerüche und Seuchen komplett ohne Wasser.",
+  "timeRequired": "15 Min. (inkl. Spülhebel-Sperre, Doppelbeutel-Montage sowie Vorbereiten von Papierstreifen und Holzkohle)",
+  "successRate": "99 % (bei Urintrennung, 10 cm Papier-Saugbett, Holzkohle-/Asche-Abdeckung und Doppelknoten-Verschluss)",
+  "difficulty": "Anfänger (Werkzeuglos; nutzt vorhandene Toilette oder Eimer, dicke Müllsäcke, Zeitung/Karton und Holzkohle/Erde)",
+  "outputPerHour": "0 % Wasserverbrauch / Bewältigt 10–15 geruchs- und infektionsfreie Nutzungen pro Tag für einen 4-Personen-Haushalt",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Vorhandene Keramiktoilette (oder 20-L-Eimer) & reißfeste 50–70-L-Müllsäcke + schwarze Innenbeutel",
+      "desc": "Trägt das Körpergewicht und schließt Fäkalien auslaufsicher ein, wenn keine Campingtoilette vorhanden ist. Wenn Sie unter der Toilettenbrille einen ersten Schutzbeutel über die Keramik spannen und über der Brille einen zweiten schwarzen Wechselbeutel anbringen, müssen Sie nach jeder Nutzung nur den inneren Beutel sauber entnehmen."
+    },
+    {
+      "id": "mat-02",
+      "name": "Fein zerrissenes & zerknülltes Zeitungspapier, Kartonreste, Klopapierrollen (oder Katzenstreu / trockenes Laub)",
+      "desc": "Dient als natürliches Feuchtigkeits-Saugbett am Beutelboden, wenn Superabsorber-Pulver fehlt. Wenn Sie Kartonreste einer [Indoor-Karton-Wärmekapsel](/protocol-22.html) oder Zeitungspapier in fingergliedgroße Stücke reißen und faustdick (10 cm) aufschichten, wird Flüssigkeit sofort aufgesaugt und Fäulnisgeruch halbiert."
+    },
+    {
+      "id": "mat-03",
+      "name": "Fein zerstoßene Eichenholzkohle & weiße Hartholzasche (oder staubtrockene Blumenerde / Sägemehl)",
+      "desc": "Wird direkt nach dem Toilettengang über die Fäkalien gestreut, um Ammoniak- und Schwefelwasserstoffgase zu binden und Fliegenbrut zu stoppen. Erbsengroß zerstoßene Holzkohle aus einem [Erdgruben-Holzkohlemeiler](/protocol-09.html) kombiniert mit weißer Holzasche bewirkt gleichzeitige Gasadsorption und stark alkalische (pH 11) Oberflächenentkeimung."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Toiletten-Spülhebel gegen Abwasserrückstau festbinden und zwei Müllsäcke doppelt über Schüssel und Brille spannen",
+      "description": "1. **Spülkastenwasser sichern & Spülhebel sperren**: Schöpfen Sie direkt nach dem Wasserausfall das saubere Vorratswasser (10–15 L) aus dem Keramik-Spülkasten für Ihren [Baumwolltuch-Heber & SODIS-Entkeimer](/protocol-23.html) ab und **binden Sie den Spülhebel fest mit einer Schnur zu**, damit niemand aus Gewohnheit spült.\n2. **Ersten Schutzbeutel über die Keramikschüssel ziehen**: Klappen Sie die Toilettenbrille hoch und spannen Sie einen **großen, dicken 50–70-L-Müllsack (Schicht 1 Schutzbarriere)** über den gesamten Keramikrand, damit die Schüssel sauber bleibt.\n3. **Brille herunterklappen & Wechselbeutel anbringen**: Klappen Sie die Toilettenbrille herunter und ziehen Sie einen **dicken schwarzen Müllsack (Schicht 2 Auffangbeutel)** über die Brille.\n4. **Eimerrand mit gerolltem Karton polstern**: Falls Sie einen 20-L-Eimer nutzen, kleben Sie **zwei Finger dick gerollten Karton oder ein altes Handtuch** als Polster auf den scharfen Eimerrand.",
+      "actionNote": "> Warum Sie nach einem Erdbeben oder Frost niemals Wasser mit Eimern in die Toilette schütten dürfen: Wenn Abwasserfallrohre in unteren Stockwerken gerissen, zugefroren oder verstopft sind, drückt jedes Nachspülen von oben Fäkalienabwasser rückwärts aus Bodenabläufen und unteren Toiletten in die Wohnräume.",
+      "svgFileName": "pr25-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SPÜLHEBEL-SPERRE + DOPPELBEUTEL-DICHTUNG",
+        "Spülhebel festbinden um Abwasser-Rückstau zu blockieren",
+        "Brille hoch + 1. Schutzbeutel über Keramikschüssel ziehen",
+        "Brille runter + 2. schwarzen Wechselbeutel darüber spannen",
+        "[KERN] Verhindert Rohrbruch-Rückstau + Schüssel-Verschmutzung"
+      ],
+      "deepDive": {
+        "badge": "RÜCKSTAU-SPERRE & DOPPELBEUTEL",
+        "title": "Prävention von hydrostatischem Abwasserrückstau in Mehrgeschossern durch Doppelbeutel-Einschluss",
+        "text": "Wenn vertikale Fallrohre bei Erdbeben oder Frost brechen, erzeugt das Spülen in oberen Etagen hydrostatischen Druck, der **pathogenes Schwarzwasser in tiefere Wohnungen presst**. Das physische Sperren des Spülhebels und das Einsetzen von **Schicht 1 Schutzbeutel + Schicht 2 Wechselbeutel (Double-Bagging)** verwandelt jede Toilette in eine wasserlose Trockentoilette.",
+        "fieldSpecs": [
+          {
+            "name": "Spülgesperrte Keramiktoilette mit doppellagigen wasserdichten Auffangbeuteln",
+            "scientificName": "Flush-Locked Ceramic Toilet with Double-Layer Containment Liner",
+            "categoryTag": "Abwasserrückstau-Prävention / Doppellagiger Einschluss",
+            "imageFileName": "id-double-bagged-emergency-toilet-seat.jpg",
+            "hudCode": "FIG. MED-25A // MACRO OPTIC",
+            "hudStatus": "SEWAGE BACKFLOW: LOCKED 100%",
+            "traits": [
+              {
+                "label": "Hebel/Sperre",
+                "value": "**Spülhebel mit Schnur fixieren**, damit vor der Rohrprüfung niemand Wasser nachschüttet."
+              },
+              {
+                "label": "Doppel/Beutel",
+                "value": "**Einen Beutel unter der Brille und einen zweiten über der Brille** für sauberen Wechsel anbringen."
+              },
+              {
+                "label": "Eimer/Polster",
+                "value": "Bei 20-L-Eimern den Rand mit **gerolltem Karton oder Stoff** stabil abpolstern."
+              }
+            ],
+            "fieldUse": "Sofortiger Umbau von Heimtoiletten oder 20-L-Eimern zur wasserlosen Trockentoilette bei Wasserausfall"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Urin getrennt auffangen und am Beutelboden ein faustdickes (10 cm) Saugbett aus zerrissenem Zeitungspapier und Karton auslegen",
+      "description": "1. **Flüssigkeit (Urin) und Feststoffe strikt trennen**: Das wichtigste Prinzip gegen Gestank und Keimwachstum ist, **Urin und Kot niemals im selben Beutel zu mischen**; fangen Sie Urin separat in einer Weithalsflasche auf.\n2. **Zeitung & Karton in fingergroße Stücke reißen**: Legen Sie Papier nicht glatt hinein, sondern reißen Sie Zeitungspapier, Wellpappe und Klopapierrollen in **zwei Fingerglieder große Streifen und zerknüllen Sie diese**.\n3. **Faustdickes (10 cm) Saugbett aufschichten**: Füllen Sie die zerknüllten Papier- und Kartonstücke **eine Erwachsenenfaust hoch (ca. 8–10 cm)** auf den Boden des inneren schwarzen Beutels.\n4. **Mit Katzenstreu oder trockenem Laub verstärken**: Falls Sie **klumpende Katzenstreu (Bentonit oder Tofu)**, trockenes Laub oder Sägemehl haben, streuen Sie **zwei Handvoll** darüber, um die Saugkraft zu verdreifachen.",
+      "actionNote": "> Warum das Mischen von Urin und Kot explosiven Gestank auslöst: Wenn Darmbakterien im Kot auf Harnstoff und Wasser im Urin treffen, setzt anaerobe Fäulnis zehnmal schneller stechendes Ammoniak und giftigen Schwefelwasserstoff frei. Trockene Feststoffe verhindern Geruch von vornherein.",
+      "svgFileName": "pr25-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // URINTRENNUNG + 10 CM ZELLULOSE-SAUGBETT",
+        "Urin in separates Gefäß leiten gegen Ammoniak-Fäulnis",
+        "Zeitung + Karton in fingergroße Stücke reißen + knüllen",
+        "10 cm (1 Faust hoch) dickes Saugbett am Boden auslegen",
+        "[KERN] Sofortige Trocknung senkt Keime + Geruch um 80 %"
+      ],
+      "deepDive": {
+        "badge": "FEUCHTIGKEITS-TROCKNUNG",
+        "title": "Hemmung der Urease-Hydrolyse-Ammoniakbildung durch kapillare Zellulose-Trocknung",
+        "text": "Wenn fäkale Urease-Enzyme in feuchtem Milieu auf Harnstoff im Urin treffen, erzeugt rasche Hydrolyse **Ammoniak (NH3) und Schwefelwasserstoff (H2S)**. Die Urintrennung und ein **10 cm dickes Bett aus zerrissener Zellulose (Zeitung/Karton) oder Bentonitstreu** senken sofort die Wasseraktivität und stoppen mikrobielle Fäulnis.",
+        "fieldSpecs": [
+          {
+            "name": "10 cm faustdickes Saugbett aus zerrissenem Zeitungspapier, Wellpappe und Holzspänen",
+            "scientificName": "Shredded Cellulose Newspaper & Corrugated Cardboard Desiccant Bed",
+            "categoryTag": "Sofortige Feuchtigkeitsaufnahme / Ammoniakgas-Unterdrückung",
+            "imageFileName": "id-shredded-newspaper-cardboard-absorbent-bed.jpg",
+            "hudCode": "FIG. MED-25B // MACRO OPTIC",
+            "hudStatus": "MOISTURE ABSORPTION: 10CM BED",
+            "traits": [
+              {
+                "label": "Reißen/Knüllen",
+                "value": "Papier und Karton **in fingergroße Streifen reißen und knüllen** für rasche Saugkraft."
+              },
+              {
+                "label": "Tiefe/10cm",
+                "value": "Saugschicht **eine Faust hoch (10 cm)** anhäufen, bis der Boden unsichtbar ist."
+              },
+              {
+                "label": "Streu/Boost",
+                "value": "Zugabe von **Katzenstreu, trockenem Laub oder Sägemehl** maximiert die Geruchsbindung."
+              }
+            ],
+            "fieldUse": "Unteres Trockenbett zur Feuchtigkeitsbindung und zum Schutz vor Beutelrissen ohne Chemie-Gel"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Fäkalien sofort mit 2 Bechern zerstoßener Eichenholzkohle und Holzasche abdecken, Luft herausdrücken und per Schwanenhals-Doppelknoten verschließen",
+      "description": "1. **Sofort mit 1–2 Bechern Holzkohle & Asche abdecken**: Streuen Sie direkt nach der Nutzung **1–2 Pappbecher fein zerstoßene [Eichenholzkohle](/protocol-09.html) und weiße Hartholzasche (oder trockene Blumenerde / Papierstreifen)** darüber, bis nichts mehr sichtbar ist.\n2. **Geruchsbindung & alkalische Entkeimung prüfen**: Die Mikroporen der schwarzen Holzkohle schließen Geruchsgase binnen 60 Sekunden ein, während weiße Holzasche Feuchtigkeit entzieht und **den pH-Wert stark alkalisch anhebt, um Keime und Fliegeneier abzutöten**.\n3. **Innenluft vorsichtig herausdrücken**: Fassen Sie den oberen Rand des inneren Beutels mit beiden Händen, **drehen Sie das Gesicht zur Seite** und drücken Sie überschüssige Luft langsam heraus.\n4. **Schwanenhals-Doppelknoten (Gooseneck Tie) anlegen**: Drehen Sie den Beutelhals fest wie ein Seil ein, machen Sie den **ersten Knoten**, klappen Sie das überstehende Ende wie einen Schwanenhals um und binden Sie es mit Schnur oder einem **zweiten Knoten hermetisch dicht**.",
+      "actionNote": "> Warum zerstoßene Holzkohle und weiße Holzasche viel besser wirken als bloßes Papier: Papier saugt nur Nässe auf, während Eichenholzkohle das Vielfache ihres Gewichts an Faulgasen in ihren Mikroporen einfängt und weiße Holzasche eine starke Laugenschicht bildet, in der Fäulnisbakterien und Fliegenmaden absterben.",
+      "svgFileName": "pr25-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // EICHENKOHLE + ASCHE + SCHWANENHALS-DOPPELKNOTEN",
+        "2 Becher zerstoßene Eichenkohle + weiße Asche aufstreuen",
+        "Kohle bindet Faulgas + alkalische Asche (pH 11) tötet Keime",
+        "Luft rausdrücken, Hals eindrehen, umklappen + Doppelknoten",
+        "[KERN] Beseitigt 95 % H2S-/Ammoniakgeruch + stoppt Fliegen"
+      ],
+      "deepDive": {
+        "badge": "KOHLE- & ASCHE-ENTKEIMUNG",
+        "title": "Van-der-Waals-Gasadsorption durch Eichenholzkohle und hochalkalische (pH 10–12) Pathogen-Inaktivierung durch Holzasche",
+        "text": "Fein zerstoßene Eichenholzkohle bietet hunderte Quadratmeter innere Oberfläche pro Gramm, um **Schwefelwasserstoff, Mercaptane, Indol und Skatol** über Van-der-Waals-Kräfte zu binden. Gleichzeitig hebt Kaliumcarbonat in weißer Hartholzasche den Oberflächen-pH-Wert **über 10** und zerstört die Zellmembranen von Cholera-, Salmonellen- und Parasiteneiern.",
+        "fieldSpecs": [
+          {
+            "name": "Desodorierende Abdeckmatrix aus zerstoßener Eichenholzkohle und weißer Hartholzasche",
+            "scientificName": "Crushed Hardwood Charcoal & Alkaline Wood Ash Deodorizing Cover Matrix",
+            "categoryTag": "Geruchsgas-Adsorption / Hochalkalische Oberflächenentkeimung",
+            "imageFileName": "id-crushed-charcoal-wood-ash-deodorizer-cover.jpg",
+            "hudCode": "FIG. MED-25C // MACRO OPTIC",
+            "hudStatus": "ODOR & PATHOGEN: SEALED >95%",
+            "traits": [
+              {
+                "label": "Kohle/Gas",
+                "value": "**Ein Becher erbsengroße Eichenholzkohle** schließt Schwefel- und Ammoniakgase ein."
+              },
+              {
+                "label": "Asche/Alkalisch",
+                "value": "Abdecken mit **weißer Holzasche oder trockener Erde** trocknet Oberflächen und tötet Keime."
+              },
+              {
+                "label": "Schwanenhals",
+                "value": "Luft raus, **eindrehen und knoten, Hals umklappen und nochmals knoten** für null Leckage."
+              }
+            ],
+            "fieldUse": "Sofortige Fäkalienabdeckung nach Nutzung, Schutz vor Fliegenablage und gasdichte Doppelversiegelung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Versiegelte Beutel in einer Außentonne mit Deckel isolieren und Hände 30 Sekunden lang mit Laugenseife oder Kochsalzlösung waschen",
+      "description": "1. **In schattiger Außentonne mit Deckel lagern**: Bewahren Sie verknotete Beutel niemals nahe Schlaf- oder Kochbereichen auf; legen Sie sie in eine **stabile Tonne mit Deckel im schattigen Außenbereich oder auf dem Balkon**, geschützt vor Ratten, Katzen und Krähen.\n2. **In der Wildnis 30+ Schritte vom Wasser entfernt vergraben**: Graben Sie im freien Feld ein knietiefes (30 cm) Loch **mindestens 30 Erwachsenenschritte (25–30 m) entfernt von Bächen, Brunnen oder Ihrem [Holzkohle-Sand-Filter](/protocol-01.html)** und vergraben Sie den Inhalt mit Kohle und Asche.\n3. **Hände 30 Sekunden mit Laugenseife schrubben**: Waschen Sie sofort nach dem Verschließen **Handflächen, Handrücken, Fingerzwischenräume und unter den Fingernägeln 30 Sekunden lang** mit [natürlicher Holzasche-Laugenseife](/protocol-13.html), um E.-coli-Keime zu entfernen.\n4. **Bei Wassermangel 0,9 % Kochsalzlösung oder Alkohol nutzen**: Wenn Waschwasser knapp ist, spülen Sie Hände und Nägel mit [0,9 % steriler Kochsalzlösung](/protocol-24.html) oder Desinfektionsalkohol ab, um die **fäkal-orale Infektionskette** zu durchbrechen.",
+      "actionNote": "> Warum Nachlässigkeit bei der Außenlagerung und dem 30-Sekunden-Händewaschen alle gefährdet: In Notunterkünften sterben mehr Menschen an kollektiver Ruhr und Cholera durch unsichtbare Kotbakterien an ungewaschenen Fingern beim Berühren von Essen als durch Hunger.",
+      "svgFileName": "pr25-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // AUSSENTONNE + 30S LAUGENSEIFEN-HANDWÄSCHE",
+        "Doppelknoten-Beutel in schattiger Deckeltonne lagern",
+        "Im Feld 30+ Schritte (30 m) fern vom Wasser vergraben",
+        "Hände + unter Nägeln 30 s mit Laugenseife/Salzlösung waschen",
+        "[KERN] Stoppt Fliegen/Nager + fäkal-orale Seuchenausbrüche"
+      ],
+      "deepDive": {
+        "badge": "BIOHAZARD-ISOLATION",
+        "title": "Unterbrechung der 5-F fäkal-oralen Übertragungskette und die 30-Meter-Grundwasserschutzregel",
+        "text": "Um die **5-F-Übertragungswege der WHO (Feces -> Fingers, Flies, Fields, Fluids -> Food)** zu kappen, müssen versiegelte Beutel in nagergeschützten, schattigen Außenbehältern isoliert (oder im Feld **30+ Meter fern von Gewässern** vergraben) werden, gefolgt von einer **30-sekündigen Reinigung unter den Fingernägeln mit Holzasche-Laugenseife**.",
+        "fieldSpecs": [
+          {
+            "name": "Außentonne mit Deckel für doppelt verknotete Beutel und Handwaschstation mit Holzasche-Laugenseife",
+            "scientificName": "Double-Knotted Biohazard Waste Containment & Alkaline Soap Hand Sanitization",
+            "categoryTag": "Schattige Außenisolation / Fäkal-orale Infektionsblockade",
+            "imageFileName": "id-double-knotted-biohazard-containment-bin.jpg",
+            "hudCode": "FIG. MED-25D // MACRO OPTIC",
+            "hudStatus": "FECAL-ORAL VECTOR: BLOCKED",
+            "traits": [
+              {
+                "label": "Außen/Tonne",
+                "value": "Beutel in einer **schattigen Balkon- oder Außentonne mit Deckel** vor Tieren schützen."
+              },
+              {
+                "label": "Wasser/30m",
+                "value": "Beim Vergraben im Freien **mindestens 30 Schritte (30 m) Abstand zu Gewässern** halten."
+              },
+              {
+                "label": "Hände/30s",
+                "value": "**Unter den Fingernägeln 30 Sekunden mit Laugenseife schrubben** gegen Durchfallseuchen."
+              }
+            ],
+            "fieldUse": "Sichere Biohazard-Abfalllagerung und Schutz vor wasserbürtigen Epidemien bei langem Wasserausfall"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Niemals vor Rohrprüfung spülen, niemals Chlorbleiche mit sauren Reinigern auf Fäkalien mischen und niemals Plastikbeutel drinnen verbrennen",
+    "description": "Das Nachschütten von Eimerwasser bei gebrochenen oder verstopften Hausabflussrohren lässt Fäkalienabwasser in untere Etagen und den eigenen Wohnraum überlaufen. Zudem setzt das Zusammenschütten von Chlorbleiche und sauren WC-Reinigern (auch Essig oder Zitronensäure) auf Fäkalien tödliches Chlorgas frei, das im engen Bad rasch zum Ersticken führt, während das Verbrennen von Plastikbeuteln in Innenräumen hochgiftige Dioxine freisetzt. Trocknen und versiegeln Sie Abfälle immer mit [zerstoßener Eichenholzkohle](/protocol-09.html), Holzasche und Zeitungspapier und waschen Sie die Hände sofort mit [Holzasche-Laugenseife](/protocol-13.html).",
+    "consequence": "Sperren Sie sofort den Spülhebel und befolgen Sie strikt die 4 Regeln: 'Urin trennen + 10 cm Papierbett + Holzkohle-/Asche-Abdeckung + Schwanenhals-Doppelknoten & Außenisolation.'"
+  },
+  "faqs": [
+    {
+      "question": "Womit kann ich Fäkalien in einer Stadtwohnung abdecken, wenn ich weder Holzkohle noch Asche oder Blumenerde habe?",
+      "causeDiagnostic": "Der Hauptzweck des Abdeckmaterials besteht darin, Oberflächenfeuchtigkeit rasch aufzusaugen und eine luftdichte Decke gegen Gerüche zu bilden.",
+      "resolution": "**Verwenden Sie zwei Handvoll klumpende Katzenstreu (Bentonit oder Tofu), abgelaufenes Mehl oder Speisestärke, getrockneten Kaffeesatz, Natron (Backpulver) oder fein zerrissenes Zeitungspapier und Toilettenpapier.** Getrockneter Kaffeesatz oder Natron gemischt mit Papierstreifen bindet Gerüche fast genauso stark wie Holzkohlepulver."
+    },
+    {
+      "question": "Wie entsorge ich den separat aufgefangenen Urin bei Wasserausfall ohne Geruchsbelästigung?",
+      "causeDiagnostic": "Urin allein enthält weit weniger Krankheitserreger als Kot, bildet aber beim Stehenbleiben schnell stechendes Ammoniakgas.",
+      "resolution": "Wenn das Abwasserrohr intakt ist, gießen Sie den Urin vorsichtig in die Toilette und **spülen Sie ihn mit einer Schöpfkelle Grauwasser (gebrauchtes Waschwasser oder Regenwasser) nach**. Sind die Rohre gebrochen, **füllen Sie Urin per Trichter in leere Plastikflaschen, schrauben diese fest zu** und entleeren sie draußen in einen Kanaldeckel oder Boden fernab von Wasserquellen."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Wasserausfall nach Erdbeben oder Rohrbruch? Schütten Sie niemals Eimerwasser in die Toilette – das Abwasser quillt sonst zurück in Ihre Wohnung! Bauen Sie stattdessen eine wasserlose Trockentoilette! [5-35s Body] Schöpfen Sie zuerst das saubere Spülkastenwasser ab und binden Sie den Spülhebel fest. Ziehen Sie einen großen Schutzbeutel über die Schüssel, klappen Sie die Brille herunter und spannen Sie einen zweiten schwarzen Beutel darüber. Legen Sie am Boden ein faustdickes 10-cm-Bett aus zerrissener Zeitung, Karton oder Katzenstreu aus. Fangen Sie Urin separat auf, decken Sie Feststoffe sofort mit zwei Bechern zerstoßener Eichenholzkohle oder Holzasche ab und verschließen Sie den Beutel per Schwanenhals-Doppelknoten! [35-45s Warning & Outro] Niemals Chlorbleiche und saure Reiniger mischen! Speichern Sie dieses Überlebenshandbuch jetzt.",
+  "outcome": {
+    "title": "Abwasserrückstau-Sperre Doppelbeutel & Zeitung-Holzkohle Wasserloses Notfall-Trockentoiletten-System",
+    "badge": "FINAL SPEC // WATERLESS DRY SANITATION & BIOHAZARD SEAL",
+    "description": "Ein wasserloses Katastrophen-Hygienesystem, das einen gesperrten Spülhebel und doppelte wasserdichte Beutel mit einem 10-cm-Saugbett aus Zeitung/Karton, einer Abdeckung aus zerstoßener Eichenholzkohle und alkalischer Holzasche sowie einer Schwanenhals-Doppelknoten-Außenisolation kombiniert.",
+    "svgFileName": "pr25-outcome.svg",
+    "svgLabels": [
+      "PR-25 COMPLETE // WATERLESS DRY TOILET + BIOHAZARD SEAL",
+      "STAGE 01: DOPPELBEUTEL",
+      "Hebel sperren + 2 Schutzbeutel",
+      "STAGE 02: 10CM PAPIERBETT",
+      "Urin trennen + Papierstreifen",
+      "STAGE 03: KOHLE-VERSCHLUSS",
+      "Kohle/Asche + Doppelknoten",
+      "STAGE 04: AUSSENTONNE",
+      "Deckeltonne + 30s Seifenwäsche",
+      "FIELD VERIFIED // ZERO-WATER SEWAGE + EPIDEMIC BLOCKADE"
+    ]
+  },
+  "createdAt": "2026-11-06T01:27:20.308Z",
+  "updatedAt": "2026-11-06T01:29:44.479Z",
+  "contentHash": "a232171f3f6774af"
+}

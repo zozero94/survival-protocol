@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg25out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ceramic25out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <pattern id="grid25out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow25out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Frame -->
+  <rect width="800" height="450" fill="url(#bg25out)"/>
+  <rect width="800" height="450" fill="url(#grid25out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f8fafc" font-family="monospace" font-size="14" font-weight="bold">PR-25 완성체 // 무수(Waterless) 비상 건식 변기 · 방역 시스템</text>
+
+  <!-- 4-Stage Horizontal Engineering Pipeline -->
+  <g filter="url(#shadow25out)">
+    <!-- STAGE 01 Card -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+    <text x="32" y="103" fill="#38bdf8" font-family="monospace" font-size="10.5" font-weight="bold">STAGE 01: 이중 방수 봉투</text>
+
+    <!-- Double-Bagged Toilet Bowl Visual -->
+    <path d="M56,144 L162,144 L150,224 L68,224 Z" fill="url(#ceramic25out)" stroke="#f8fafc" stroke-width="1.2"/>
+    <path d="M50,136 L168,136 L156,210 L62,210 Z" fill="#1e293b" stroke="#10b981" stroke-width="1.8"/>
+    <circle cx="109" cy="260" r="20" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+    <path d="M101,252 L117,268 M117,252 L101,268" stroke="#f87171" stroke-width="2.2" stroke-linecap="round"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="32" y="341" fill="#e2e8f0" font-family="monospace" font-size="9.5">레버 봉인 + 도기·시트 2중 포집</text>
+
+    <!-- STAGE 02 Card -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#fde047" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#eab308" stroke-width="1"/>
+    <text x="226" y="103" fill="#fde047" font-family="monospace" font-size="10.5" font-weight="bold">STAGE 02: 10cm 흡수 매트</text>
+
+    <!-- Urine Diversion + 10cm Shredded Paper/Cardboard Bed -->
+    <rect x="238" y="138" width="32" height="68" rx="3" fill="#1e293b" stroke="#fde047" stroke-width="1.2"/>
+    <rect x="242" y="164" width="24" height="38" fill="#eab308" opacity="0.8"/>
+    <rect x="284" y="138" width="84" height="84" rx="3" fill="#111827" stroke="#94a3b8" stroke-width="1.2"/>
+    <rect x="288" y="182" width="76" height="36" fill="#92400e"/>
+    <circle cx="303" cy="260" r="20" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <path d="M295,260 L301,266 L313,254" fill="none" stroke="#34d399" stroke-width="2.2" stroke-linecap="round"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="226" y="341" fill="#fef08a" font-family="monospace" font-size="9.5">소변 분리 + 파쇄 신문지·골판지</text>
+
+    <!-- STAGE 03 Card -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="420" y="103" fill="#34d399" font-family="monospace" font-size="10.5" font-weight="bold">STAGE 03: 숯·재 탈취 밀봉</text>
+
+    <!-- Charcoal Powder Blanket + Gooseneck Double Tie -->
+    <path d="M454,186 C446,210 452,238 472,242 L522,242 C542,238 548,210 540,186 Z" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="488" y="156" width="18" height="30" rx="2" fill="#334155" stroke="#cbd5e1" stroke-width="1"/>
+    <path d="M497,156 C497,130 526,130 526,156" fill="none" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+    <rect x="484" y="164" width="42" height="6" rx="2" fill="#fde047"/>
+    <rect x="484" y="174" width="42" height="6" rx="2" fill="#10b981"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="420" y="341" fill="#a7f3d0" font-family="monospace" font-size="9.5">숯가루 도포 + 구스넥 2중 매듭</text>
+
+    <!-- STAGE 04 Card -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#f97316" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+    <text x="612" y="103" fill="#fdba74" font-family="monospace" font-size="10.5" font-weight="bold">STAGE 04: 외부 격리·손소독</text>
+
+    <!-- Outdoor Lidded Bin + Lye Soap Handwash -->
+    <rect x="626" y="142" width="64" height="78" rx="3" fill="#334155" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="622" y="132" width="72" height="10" rx="2" fill="#64748b" stroke="#f8fafc" stroke-width="1"/>
+    <circle cx="732" cy="180" r="24" fill="#0284c7" fill-opacity="0.4" stroke="#7dd3fc" stroke-width="1.5"/>
+    <rect x="716" y="170" width="32" height="18" rx="4" fill="#e2e8f0"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="612" y="341" fill="#fed7aa" font-family="monospace" font-size="9.5">베란다 밀폐통 + 잿물 비누 세척</text>
+  </g>
+
+  <!-- Bottom Verification Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="40" rx="3" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#ecfdf5" font-family="monospace" font-size="13" font-weight="bold">야전 검증 완료 // 물 소모 0% 오물 역류 및 집단 전염병 차단</text>
+</svg>

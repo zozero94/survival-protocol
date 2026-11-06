@@ -136,7 +136,11 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr24-step-02.svg',
       'pr24-step-03.svg',
       'pr24-step-04.svg',
-      // 최종 완성 결과물 초고화질 벡터 도면 24종
+      'pr25-step-01.svg',
+      'pr25-step-02.svg',
+      'pr25-step-03.svg',
+      'pr25-step-04.svg',
+      // 최종 완성 결과물 초고화질 벡터 도면 25종
       'pr01-outcome.svg',
       'pr02-outcome.svg',
       'pr03-outcome.svg',
@@ -161,6 +165,7 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr22-outcome.svg',
       'pr23-outcome.svg',
       'pr24-outcome.svg',
+      'pr25-outcome.svg',
     ];
 
     for (const fileName of activeSvgs) {

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg25s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="binMetal25s4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid25s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow25s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg25s4)"/>
+  <rect width="400" height="400" fill="url(#grid25s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // 실외 밀폐 용기 격리 보관 및 30초 손 소독 방역</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">이중 밀봉 봉투를 베란다·실외 그늘의 뚜껑 있는 통에 격리</text>
+
+  <!-- Main Illustration: Left (Outdoor Lidded Containment Bin + 30m Water Distance) & Right (30s Lye Soap Handwash) -->
+  <g filter="url(#shadow25s4)">
+    <!-- Left Card: Lidded Outdoor Containment Bin -->
+    <rect x="22" y="86" width="174" height="154" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+
+    <!-- Heavy Lidded Drum Holding Sealed Bags -->
+    <rect x="52" y="122" width="114" height="104" rx="4" fill="url(#binMetal25s4)" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Tightly Closed Lid -->
+    <rect x="46" y="110" width="126" height="12" rx="3" fill="#64748b" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="94" y="102" width="30" height="8" rx="2" fill="#475569" stroke="#e2e8f0" stroke-width="1"/>
+
+    <!-- Sealed Bags Inside Cutaway -->
+    <circle cx="84" cy="192" r="20" fill="#090d16" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="132" cy="192" r="20" fill="#090d16" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="108" cy="158" r="20" fill="#090d16" stroke="#10b981" stroke-width="1.2"/>
+
+    <!-- Right Card: 30-Second Wood-Ash Lye Soap Hand Sanitization -->
+    <rect x="208" y="86" width="170" height="154" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+
+    <!-- Lye Soap Bar + Water Stream + Foam Bubbles Over Hands -->
+    <rect x="266" y="102" width="54" height="28" rx="6" fill="#d6d3d1" stroke="#f8fafc" stroke-width="1.2"/>
+    <!-- Soap Lather & Bubbles Around Hands -->
+    <path d="M242,178 C242,158 268,148 293,148 C318,148 344,158 344,178 C344,196 318,208 293,208 C268,208 242,196 242,178 Z" fill="#0284c7" fill-opacity="0.35" stroke="#7dd3fc" stroke-width="1.5"/>
+    <!-- Anatomical Hand Silhouette & Foam Circles -->
+    <path d="M262,194 L262,162 M276,194 L276,156 M292,194 L292,154 M308,194 L308,158 M322,194 L322,168" stroke="#f8fafc" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="268" cy="152" r="6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="286" cy="146" r="7" fill="#e0f2fe" opacity="0.9"/>
+    <circle cx="306" cy="150" r="6.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="320" cy="160" r="5.5" fill="#e0f2fe" opacity="0.9"/>
+    <circle cx="256" cy="168" r="5" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">야외 매립 시 식수원에서 최소 30걸음(30m) 이격 후 매립</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">처리 직후 잿물 비누·소독 식염수로 손톱 밑까지 30초 세척</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 파리·설치류 매개 전염 및 분변-경구 집단 감염 원천 차단</text>
+</svg>

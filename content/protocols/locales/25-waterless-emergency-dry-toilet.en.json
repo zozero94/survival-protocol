@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-25",
+  "category": "MEDICINE",
+  "title": "How to Build a Waterless Emergency Dry Toilet Using Trash Bags, Shredded Newspaper, and Oak Charcoal to Stop Odors and Disease",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[WATER OUTAGE & BROKEN SEWER PIPE BACKFLOW LOCK & WATERLESS BIOHAZARD SANITATION]",
+  "summary": "If your home or disaster kit already includes commercial emergency toilet coagulant packets (super-absorbent polymer gel), a portable camping toilet, or odor-sealing waste bags, always use those commercial supplies first. However, when an earthquake, bombing, blackout, or severe freeze cuts off tap water and ruptures apartment drainpipes—and commercial coagulants run out—pouring bucket water to force a flush causes raw sewage to backflow into lower-floor living rooms and your own bathroom. Leaving human waste unsealed breeds flies, E. coli, dysentery, and norovirus within 24 hours, turning your shelter into an epidemic zone. By locking the flush lever, fitting a double-layer heavy-duty trash bag over your toilet bowl (or 20L bucket), laying a 10cm moisture-absorbing bed of shredded newspaper and cardboard, and covering waste immediately with crushed [Oak Charcoal Powder](/protocol-09.html) and white wood ash before gooseneck double-knotting, you can eliminate odors and pathogen spread with zero water.",
+  "timeRequired": "15 mins (including locking the flush lever, double-bagging, and preparing shredded paper and charcoal cover)",
+  "successRate": "99% (when separating urine from solids, using a 10cm paper absorbent bed, covering with charcoal/ash, and double-sealing)",
+  "difficulty": "Beginner (No tools required; uses existing toilet or bucket, heavy trash bags, newspaper/cardboard, and charcoal/soil)",
+  "outputPerHour": "0% water consumption / Safely handles 10–15 odor-free, infection-free uses per day for a 4-person household",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Existing Ceramic Toilet (or 20L Bucket) & Heavy-Duty 50–70L Trash Bags + Black Liner Bags",
+      "desc": "Supports body weight and seals waste without leaks when portable camping toilets are unavailable. Fitting a primary protective liner bag directly over the ceramic bowl under the seat and layering a second replaceable black bag over the seat lets you remove only the inner bag cleanly each time without ever soiling the toilet."
+    },
+    {
+      "id": "mat-02",
+      "name": "Finely Torn & Crumpled Newspaper, Cardboard Scraps, Toilet Roll Cores (or Cat Litter / Dry Leaves)",
+      "desc": "Acts as a natural moisture-absorbing bed at the bottom of the bag when polymer coagulant powder is unavailable. Tearing leftover cardboard from an [Indoor Cardboard Thermal Capsule](/protocol-22.html) or newspaper into finger-joint-sized strips and piling them one fist deep absorbs liquid immediately and cuts putrefaction odor in half."
+    },
+    {
+      "id": "mat-03",
+      "name": "Finely Crushed Oak Charcoal Powder & White Hardwood Ash (or Bone-Dry Potting Soil / Sawdust)",
+      "desc": "Sprinkled over waste immediately after use to trap ammonia and hydrogen sulfide gases while stopping fly breeding and bacterial growth. Combining pea-sized crushed charcoal from a [Pit Oak Charcoal Kiln](/protocol-09.html) with white wood ash delivers simultaneous gas adsorption and high-alkaline (pH 11) surface sterilization."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Tie and Lock the Toilet Flush Lever to Prevent Sewage Backflow, Then Fit Two Overlapping Liner Bags Over the Bowl and Seat",
+      "description": "1. **Recover Cistern Water & Lock the Flush Lever**: Right after a water outage, open the ceramic tank behind the toilet to scoop out the clean reserve water (10–15L) for your [Cotton Towel Siphon & SODIS Sterilizer](/protocol-23.html), then **tie the flush lever down tightly with cord** so no one flushes by habit.\n2. **Fit Primary Protective Bag Over Ceramic Bowl**: Lift the toilet seat up and stretch a **large, thick 50–70L trash bag (Layer 1 protective barrier)** over the entire ceramic rim so waste can never touch the porcelain.\n3. **Lower the Seat & Fit Replaceable Collection Bag**: Lower the toilet seat over the first bag, then fit a **thick black plastic bag (Layer 2 collection liner)** over the seat, tucking the edges snugly underneath.\n4. **Pad Bucket Rims with Rolled Cardboard**: If using a 20L utility bucket instead of a toilet, roll **thick cardboard or an old towel into a two-finger-thick cushion** around the sharp top rim before fitting the bags.",
+      "actionNote": "> Why you must never pour buckets of water to force-flush a toilet after an earthquake or freeze: When lower-floor drain stacks are cracked, frozen, or clogged, flushing from upper floors forces raw sewage to erupt backward out of floor drains and lower-floor toilets, creating a catastrophic biohazard.",
+      "svgFileName": "pr25-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FLUSH LEVER LOCK + DOUBLE WATERPROOF BAG SEAL",
+        "Tie flush lever with cord to block sewage pipe backflow",
+        "Lift seat + fit Layer 1 protective bag over ceramic bowl",
+        "Lower seat + fit Layer 2 replaceable black collection bag",
+        "[CORE] Prevents ruptured pipe backflow + bowl contamination"
+      ],
+      "deepDive": {
+        "badge": "BACKFLOW LOCK & DOUBLE LINER",
+        "title": "Preventing Hydrostatic Sewage Backflow in Multi-Story Buildings via Double-Bag Containment",
+        "text": "When vertical soil stacks fracture during earthquakes or freezes, upper-floor flushing creates hydrostatic pressure that **ejects pathogenic sewage into lower apartments**. Physically locking the flush lever and installing a **Layer 1 fixed barrier + Layer 2 replaceable liner (Double-Bagging)** converts any toilet into a zero-water dry sanitation unit without contaminating the fixture.",
+        "fieldSpecs": [
+          {
+            "name": "Flush-Locked Ceramic Toilet Fitted with Double-Layer Waterproof Containment Bags",
+            "scientificName": "Flush-Locked Ceramic Toilet with Double-Layer Containment Liner",
+            "categoryTag": "Sewage Backflow Prevention / Double-Layer Containment",
+            "imageFileName": "id-double-bagged-emergency-toilet-seat.jpg",
+            "hudCode": "FIG. MED-25A // MACRO OPTIC",
+            "hudStatus": "SEWAGE BACKFLOW: LOCKED 100%",
+            "traits": [
+              {
+                "label": "Lever/Lock",
+                "value": "**Tie the flush lever with cord** so no one pours water or flushes before pipes are inspected."
+              },
+              {
+                "label": "Double/Liner",
+                "value": "Fit **one bag under the seat and a second bag over the seat** for clean inner-bag swaps."
+              },
+              {
+                "label": "Bucket/Seat",
+                "value": "On a 20L bucket, pad the rim with **rolled cardboard or cloth** to support body weight."
+              }
+            ],
+            "fieldUse": "Instant conversion of indoor toilets or 20L buckets into waterless dry toilets during outages"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Separate Urine from Solids and Lay a One-Fist-Deep (10cm) Bed of Shredded Newspaper and Cardboard at the Bottom",
+      "description": "1. **Separate Liquid (Urine) from Solid Waste**: The most effective rule to stop odor and bacterial growth is **never mixing urine and solid waste in the same bag**; collect urine separately in a wide-mouth bottle or container.\n2. **Tear Newspaper & Cardboard into Finger-Joint Strips**: Do not lay flat sheets; tear newspaper, corrugated cardboard, and toilet roll cores into **two-finger-joint-sized strips and crumple them** to maximize absorbent surface area.\n3. **Build a One-Fist-Deep (10cm) Absorbent Bed**: Pile the crumpled newspaper and cardboard strips **one adult fist deep (approx. 8–10cm)** across the bottom of the inner black bag.\n4. **Boost with Cat Litter or Dry Leaves**: If you have **clumping cat litter (bentonite or tofu litter)**, dry leaves, or sawdust at home, add **two handfuls** over the paper bed to triple moisture absorption.",
+      "actionNote": "> Why mixing urine and solid waste triggers explosive stench: When fecal bacteria meet the urea and water in urine, anaerobic putrefaction rapidly releases pungent ammonia and toxic hydrogen sulfide gas at 10 times the normal rate. Keeping solid waste dry stops odor before it starts.",
+      "svgFileName": "pr25-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // URINE SEPARATION + 10CM CELLULOSE ABSORBENT BED",
+        "Divert urine into separate vessel to stop ammonia rot",
+        "Tear newspaper + cardboard into finger-sized crumpled bits",
+        "Lay a 10cm (1 fist height) absorbent mat at bag bottom",
+        "[CORE] Instant moisture lock cuts bacteria + odor by 80%"
+      ],
+      "deepDive": {
+        "badge": "MOISTURE DESICCATION",
+        "title": "Inhibiting Urease Hydrolysis Ammonia Generation via Cellulose Capillary Desiccation",
+        "text": "When fecal urease enzymes contact urinary urea in a wet environment, rapid hydrolysis generates **ammonia (NH3) and hydrogen sulfide (H2S)**. Diverting liquid urine and layering a **10cm bed of shredded cellulose (newspaper/cardboard) or bentonite litter** immediately lowers water activity, halting microbial metabolism and putrefaction odor.",
+        "fieldSpecs": [
+          {
+            "name": "10cm Fist-Deep Shredded Newspaper, Corrugated Cardboard, and Wood Shaving Absorbent Bed",
+            "scientificName": "Shredded Cellulose Newspaper & Corrugated Cardboard Desiccant Bed",
+            "categoryTag": "Instant Moisture Absorption / Ammonia Gas Suppression",
+            "imageFileName": "id-shredded-newspaper-cardboard-absorbent-bed.jpg",
+            "hudCode": "FIG. MED-25B // MACRO OPTIC",
+            "hudStatus": "MOISTURE ABSORPTION: 10CM BED",
+            "traits": [
+              {
+                "label": "Shred/Crumple",
+                "value": "Tear paper and cardboard into **finger-joint strips and crumple** to trap liquid fast."
+              },
+              {
+                "label": "Depth/10cm",
+                "value": "Pile the absorbent layer **one adult fist deep (10cm)** so the bag bottom is unseen."
+              },
+              {
+                "label": "Litter/Boost",
+                "value": "Mixing in **cat litter, dry leaves, or sawdust** maximizes clumping and odor control."
+              }
+            ],
+            "fieldUse": "Bottom desiccant bed that locks away moisture and prevents bag leaks without chemical gels"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Immediately Cover Waste with Two Cups of Crushed Oak Charcoal and Wood Ash, Press Out Air, and Gooseneck Double-Tie",
+      "description": "1. **Cover Waste Immediately with 1–2 Cups of Charcoal & Ash**: Right after use, sprinkle **1–2 paper cups of finely crushed [Oak Charcoal Powder](/protocol-09.html) and white hardwood ash (or bone-dry potting soil / shredded paper)** until the waste is completely covered.\n2. **Verify Rapid Deodorization & Alkaline Sanitization**: Countless micro-pores in the black charcoal trap rising odor gases within 60 seconds, while white wood ash dries surface moisture and **raises pH to kill bacteria and fly eggs**.\n3. **Gently Press Out Internal Air**: Gather the top of the inner black bag with both hands, **turn your face to the side**, and slowly press out excess air so the bag does not balloon.\n4. **Seal with a Gooseneck Double Knot**: Twist the bag neck tightly like a rope, tie a **first knot**, fold the remaining tail in half like a gooseneck, and wrap tightly with cord or a second knot for a **hermetic double seal**.",
+      "actionNote": "> Why covering waste with crushed charcoal and white wood ash works far better than paper alone: Paper only absorbs liquid, whereas oak charcoal traps puluhan times its weight in foul gases inside its micro-holes, and white wood ash creates a strong alkaline barrier where rot bacteria and fly maggots cannot survive.",
+      "svgFileName": "pr25-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CHARCOAL-ASH COVER + GOOSENECK DOUBLE SEAL",
+        "Pour 2 cups of crushed oak charcoal + white ash over waste",
+        "Charcoal traps odor gas + alkaline ash (pH 11) kills germs",
+        "Press air out, twist neck, fold over + tie double knot",
+        "[CORE] Eliminates 95% H2S/ammonia odor + blocks flies"
+      ],
+      "deepDive": {
+        "badge": "CHARCOAL & ASH SANITIZATION",
+        "title": "Van der Waals Gas Adsorption by Oak Charcoal and High-Alkaline (pH 10–12) Pathogen Inactivation by Wood Ash",
+        "text": "Finely crushed oak charcoal provides hundreds of square meters of internal surface area per gram to capture **hydrogen sulfide, mercaptans, indole, and skatole** via van der Waals forces. Simultaneously, potassium carbonate in white hardwood ash elevates surface pH **above 10**, rupturing the cell membranes of cholera, salmonella, and parasite ova.",
+        "fieldSpecs": [
+          {
+            "name": "Crushed Oak Charcoal Powder and White Hardwood Ash Deodorizing Cover Matrix",
+            "scientificName": "Crushed Hardwood Charcoal & Alkaline Wood Ash Deodorizing Cover Matrix",
+            "categoryTag": "Odor Gas Adsorption / High-Alkaline Surface Sanitization",
+            "imageFileName": "id-crushed-charcoal-wood-ash-deodorizer-cover.jpg",
+            "hudCode": "FIG. MED-25C // MACRO OPTIC",
+            "hudStatus": "ODOR & PATHOGEN: SEALED >95%",
+            "traits": [
+              {
+                "label": "Charcoal/Gas",
+                "value": "**One cup of pea-crushed oak charcoal** locks away foul sulfur and ammonia gases."
+              },
+              {
+                "label": "Ash/Alkaline",
+                "value": "Covering with **white wood ash or dry soil** desiccates surfaces and kills germs."
+              },
+              {
+                "label": "Gooseneck/Tie",
+                "value": "Expel air, **twist and tie once, then fold the neck over and tie again** for zero leaks."
+              }
+            ],
+            "fieldUse": "Immediate post-use waste covering, fly oviposition prevention, and gas-tight double sealing"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Isolate Sealed Bags in a Lidded Outdoor Bin and Wash Hands for 30 Seconds with Lye Soap or Saline",
+      "description": "1. **Store in a Shaded Outdoor Lidded Bin**: Never keep knotted waste bags near sleeping or cooking areas; place them inside a **sturdy lidded drum or heavy sack in a shaded outdoor balcony corner** where rats, cats, and crows cannot tear them.\n2. **Bury 30+ Paces Away from Water in the Wild**: In a wilderness camp without buildings, dig a knee-deep (30cm) hole **at least 30 adult paces (25–30m) away from any stream, well, or [Charcoal-Sand Filter](/protocol-01.html) water source** and bury waste with charcoal and ash.\n3. **Scrub Hands for 30 Seconds with Lye Soap**: Immediately after handling the bag, scrub **palms, backs of hands, between fingers, and under fingernails for at least 30 seconds** using [Natural Wood Ash Lye Soap](/protocol-13.html) to block invisible E. coli transfer.\n4. **Use 0.9% Saline or Alcohol When Water Is Scarce**: If wash water is critically low, pour [0.9% Sterile Saline](/protocol-24.html) or rubbing alcohol over your hands and fingernails to break the **fecal-oral infection chain**.",
+      "actionNote": "> Why neglecting outdoor isolation and the final 30-second handwash endangers every survivor: In disaster shelters, more people die from group dysentery and cholera spread by microscopic fecal bacteria on unwashed fingers touching food or cups than from starvation.",
+      "svgFileName": "pr25-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // OUTDOOR BIN ISOLATION + 30S LYE SOAP HANDWASH",
+        "Isolate double-sealed bags in shaded outdoor lidded bin",
+        "In wilderness, bury at least 30 paces (30m) from water",
+        "Wash hands + under nails for 30s with lye soap or saline",
+        "[CORE] Breaks fly/rodent vectors + fecal-oral epidemics"
+      ],
+      "deepDive": {
+        "badge": "BIOHAZARD CONTAINMENT",
+        "title": "Breaking the 5-F Fecal-Oral Transmission Chain and the 30-Meter Groundwater Protection Rule",
+        "text": "To sever the WHO **5-F transmission pathways (Feces -> Fingers, Flies, Fields, Fluids -> Food)**, sealed waste must be isolated in rodent-proof, shaded exterior containers (or buried **30+ meters from water tables** in the field), followed immediately by a **30-second surfactant scrub with wood-ash lye soap** under the fingernails.",
+        "fieldSpecs": [
+          {
+            "name": "Outdoor Lidded Containment Drum for Double-Knotted Bags and Wood-Ash Lye Soap Handwash Station",
+            "scientificName": "Double-Knotted Biohazard Waste Containment & Alkaline Soap Hand Sanitization",
+            "categoryTag": "Shaded Exterior Isolation / Fecal-Oral Infection Blockade",
+            "imageFileName": "id-double-knotted-biohazard-containment-bin.jpg",
+            "hudCode": "FIG. MED-25D // MACRO OPTIC",
+            "hudStatus": "FECAL-ORAL VECTOR: BLOCKED",
+            "traits": [
+              {
+                "label": "Outdoor/Bin",
+                "value": "Keep sealed bags in a **shaded balcony or outdoor lidded drum** away from pests."
+              },
+              {
+                "label": "Water/30m",
+                "value": "When burying outdoors, stay **at least 30 paces (30m) away from streams or wells**."
+              },
+              {
+                "label": "Handwash/30s",
+                "value": "Scrub **under fingernails for 30 seconds with lye soap** to prevent diarrheal outbreaks."
+              }
+            ],
+            "fieldUse": "Safe biohazard waste staging and prevention of waterborne epidemics during prolonged outages"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Never Flush Before Inspecting Pipes, Never Mix Bleach with Acid Cleaners on Waste, and Never Burn Plastic Waste Bags Indoors",
+    "description": "Pouring bucket water to force-flush a toilet when apartment sewer lines are cracked or clogged causes raw sewage to erupt into lower floors and your living space. Furthermore, pouring chlorine bleach and acidic toilet cleaners (including vinegar or citric acid) together onto waste releases lethal chlorine gas that can cause rapid asphyxiation in a small bathroom, while burning plastic waste bags indoors releases toxic dioxins and pathogen aerosols. Always desiccate and seal waste using [Crushed Oak Charcoal](/protocol-09.html), wood ash, and newspaper, and scrub hands with [Wood Ash Lye Soap](/protocol-13.html) immediately afterward.",
+    "consequence": "Lock the flush lever immediately and strictly follow the 4 rules: 'Separate urine + 10cm paper bed + Charcoal/ash cover + Gooseneck double-knot outdoor isolation.'"
+  },
+  "faqs": [
+    {
+      "question": "What can I use to cover waste in an urban apartment if I have no charcoal, wood ash, or potting soil?",
+      "causeDiagnostic": "The primary purpose of the cover material is to rapidly absorb surface moisture and form an airtight blanket that traps odors.",
+      "resolution": "**Use two handfuls of clumping cat litter (bentonite or tofu litter), expired flour or cornstarch, dried used coffee grounds, baking soda, or finely shredded newspaper and toilet tissue.** Dried coffee grounds or baking soda mixed with torn paper shreds deodorize almost as effectively as charcoal powder."
+    },
+    {
+      "question": "How should I dispose of the separately collected urine during a water outage without causing odors?",
+      "causeDiagnostic": "Urine alone carries far fewer pathogens than solid waste, but standing urine quickly releases pungent ammonia gas.",
+      "resolution": "If the drainpipe is intact, pour urine carefully into the toilet bowl and **flush it down with a single scoop of greywater (used handwash water or rainwater)**. If sewer pipes are ruptured, **funnel urine into empty plastic bottles, cap them tightly**, and empty them outdoors into a designated storm drain or soil far from water sources."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Toilet stopped working after an earthquake or water outage? Never pour bucket water to force a flush—sewage will erupt back into your home! Build a waterless dry toilet instead! [5-35s Body] First, scoop out the clean tank water for drinking and tie the flush lever shut. Fit a large protective bag over the bowl, lower the seat, and fit a second black bag on top. Pile a fist-deep 10cm bed of shredded newspaper, cardboard, or cat litter at the bottom. Separate urine into a bottle, and right after solid use, cover with two cups of crushed oak charcoal or wood ash, press out air, and gooseneck double-tie! [35-45s Warning & Outro] Never mix bleach and acid cleaners on waste! Save this survival manual now.",
+  "outcome": {
+    "title": "Sewage Backflow Lock Double-Liner & Newspaper-Charcoal Waterless Emergency Dry Toilet System",
+    "badge": "FINAL SPEC // WATERLESS DRY SANITATION & BIOHAZARD SEAL",
+    "description": "A zero-water disaster sanitation system combining a locked flush lever and double waterproof liner bags with a 10cm shredded newspaper/cardboard moisture bed, crushed oak charcoal and alkaline wood ash covering, and gooseneck double-knot outdoor isolation to stop sewage backflow and epidemic outbreaks.",
+    "svgFileName": "pr25-outcome.svg",
+    "svgLabels": [
+      "PR-25 COMPLETE // WATERLESS DRY TOILET + BIOHAZARD SEAL",
+      "STAGE 01: DOUBLE LINER",
+      "Lock lever + 2 waterproof bags",
+      "STAGE 02: 10CM PAPER BED",
+      "Divert urine + shredded paper",
+      "STAGE 03: CHARCOAL SEAL",
+      "Charcoal/ash + gooseneck knot",
+      "STAGE 04: OUTDOOR BIN",
+      "Lidded bin + 30s soap handwash",
+      "FIELD VERIFIED // ZERO-WATER SEWAGE + EPIDEMIC BLOCKADE"
+    ]
+  },
+  "createdAt": "2026-11-06T01:27:20.308Z",
+  "updatedAt": "2026-11-06T01:29:44.479Z",
+  "contentHash": "a232171f3f6774af"
+}

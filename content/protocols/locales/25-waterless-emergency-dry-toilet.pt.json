@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-25",
+  "category": "MEDICINE",
+  "title": "Como Construir um Banheiro Seco de Emergência Sem Água Usando Sacos de Lixo, Jornal Rasgado e Carvão de Carvalho para Evitar Mau Cheiro e Epidemias",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[CORTE DE ÁGUA & TRAVA CONTRA REFLUXO DE ESGOTO & SANEAMENTO SECO DE RISCO BIOLÓGICO]",
+  "summary": "Se a sua casa ou mochila de emergência já possui pacotes comerciais de coagulante para banheiro portátil (polímero superabsorvente), um vaso sanitário de camping ou sacos vedadores de odor, utilize sempre esses produtos prontos primeiro. Contudo, quando um terremoto, bombardeio, apagão ou congelamento severo corta a água encanada e rompe as tubulações de esgoto do prédio — e o coagulante comercial acaba —, jogar baldes de água para forçar a descarga faz o esgoto bruto refluir pelos ralos dos andares inferiores e do seu próprio banheiro. Deixar dejetos expostos prolifera moscas, E. coli, disenteria e norovírus em 24 horas. Ao amarrar e travar a alavanca de descarga, vestir dois sacos de lixo grossos sobre o vaso sanitário (ou balde de 20L), forrar o fundo com um colchão absorvente de 10cm de jornal e papelão rasgados e cobrir os dejetos imediatamente com [Pó de Carvão de Carvalho](/protocol-09.html) triturado e cinza branca de madeira antes de dar um nó duplo pescoço de ganso, você elimina odores e contaminações sem gastar uma gota de água.",
+  "timeRequired": "15 min (incluindo travar a descarga, colocar saco duplo e preparar jornal rasgado e carvão triturado)",
+  "successRate": "99% (ao separar a urina, usar camada absorvente de 10cm de papel, cobrir com carvão/cinza e dar nó duplo)",
+  "difficulty": "Iniciante (Sem ferramentas; usa o vaso sanitário existente ou balde, sacos de lixo grossos, jornal/papelão e carvão/terra)",
+  "outputPerHour": "0% de consumo de água / Suporta com segurança 10–15 usos diários sem odor nem infecção para uma família de 4 pessoas",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Vaso Sanitário de Cerâmica Existente (ou Balde de 20L) & Sacos de Lixo Grossos de 50–70L + Sacos Pretos Internos",
+      "desc": "Sustenta o peso do corpo e veda os dejetos sem vazamentos na falta de um banheiro químico portátil. Vestir um primeiro saco protetor diretamente sobre a louça sob o assento e um segundo saco preto substituível por cima do assento permite retirar apenas o saco interno de forma limpa a cada uso, sem nunca sujar o vaso."
+    },
+    {
+      "id": "mat-02",
+      "name": "Jornal Rasgado e Amassado, Retalhos de Papelão, Rolos de Papel Higiênico (ou Areia de Gato / Folhas Secas)",
+      "desc": "Atua como colchão natural absorvente de umidade no fundo do saco quando não há pó coagulante. Rasgar sobras de papelão de uma [Cápsula Térmica Interna de Papelão](/protocol-22.html) ou folhas de jornal em tiras do tamanho de uma falange e empilhá-las na altura de um punho (10cm) absorve líquidos na hora e reduz o mau cheiro pela metade."
+    },
+    {
+      "id": "mat-03",
+      "name": "Pó de Carvão de Carvalho Triturado Fino & Cinza Branca de Lenha (ou Terra Vegetal Seca / Serragem)",
+      "desc": "Polvilhado sobre os dejetos logo após o uso para capturar gases de amônia e sulfeto de hidrogênio, bloqueando moscas e bactérias. Combinar carvão triturado do tamanho de ervilhas de um [Forno de Carvão de Carvalho em Fosso](/protocol-09.html) com cinza branca de madeira garante adsorção de gases e esterilização alcalina (pH 11) simultâneas."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Amarrar e Travar a Alavanca de Descarga Contra Refluxo de Esgoto e Vestir Dois Sacos Sobrepostos no Vaso e no Assento",
+      "description": "1. **Resgatar a Água da Caixa Acoplada & Travar a Descarga**: Logo após o corte de água, abra a caixa acoplada de cerâmica atrás do vaso para recolher a água limpa (10–15L) para o seu [Sifão de Toalha de Algodão e Esterilizador SODIS](/protocol-23.html), e **amarre a alavanca ou botão de descarga firmemente com um cordão** para ninguém acionar por hábito.\n2. **Vestir o Primeiro Saco Protetor na Louça**: Levante o assento sanitário e estique um **saco de lixo grande e grosso de 50–70L (Camada 1 barreira protetora)** cobrindo toda a borda de cerâmica.\n3. **Abaixar o Assento & Vestir o Saco Coletor Substituível**: Abaixe o assento por cima do primeiro saco e vista um **saco plástico preto grosso (Camada 2 saco coletor)** sobre o assento, dobrando as bordas por baixo.\n4. **Acolchoar a Borda do Balde com Papelão Enrolado**: Se usar um balde de 20L em vez do vaso, enrole **papelão grosso ou uma toalha velha na espessura de dois dedos** sobre a borda plástica antes de colocar os sacos.",
+      "actionNote": "> Por que você nunca deve jogar baldes de água para forçar a descarga após um terremoto ou congelamento: Quando a coluna de esgoto dos andares inferiores racha, congela ou entope, dar descarga nos andares altos faz o esgoto bruto jorrar de volta pelos ralos e vasos inferiores, criando um foco grave de contaminação.",
+      "svgFileName": "pr25-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TRAVA DE DESCARGA + VEDAÇÃO COM SACO DUPLO",
+        "Amarrar alavanca de descarga para bloquear refluxo de esgoto",
+        "Levantar assento + vestir 1º saco protetor sobre a cerâmica",
+        "Abaixar assento + vestir 2º saco preto coletor substituível",
+        "[NÚCLEO] Impede refluxo de cano rompido + protege o vaso"
+      ],
+      "deepDive": {
+        "badge": "TRAVA DE REFLUXO & SACO DUPLO",
+        "title": "Prevenção de Refluxo Hidrostático de Esgoto em Edifícios via Contenção de Saco Duplo",
+        "text": "Quando colunas verticais de esgoto rompem em terremotos ou congelamentos, a descarga nos andares superiores gera pressão hidrostática que **expulsa esgoto patogênico nos apartamentos inferiores**. Travar fisicamente a descarga e instalar **Camada 1 barreira fixa + Camada 2 saco coletor (Double-Bagging)** converte qualquer vaso em uma unidade sanitária seca sem água.",
+        "fieldSpecs": [
+          {
+            "name": "Vaso Sanitário de Cerâmica com Descarga Travada e Sacos Impermeáveis de Dupla Camada",
+            "scientificName": "Flush-Locked Ceramic Toilet with Double-Layer Containment Liner",
+            "categoryTag": "Prevenção de Refluxo de Esgoto / Contenção em Dupla Camada",
+            "imageFileName": "id-double-bagged-emergency-toilet-seat.jpg",
+            "hudCode": "FIG. MED-25A // MACRO OPTIC",
+            "hudStatus": "SEWAGE BACKFLOW: LOCKED 100%",
+            "traits": [
+              {
+                "label": "Alavanca/Trava",
+                "value": "**Amarrar a alavanca de descarga com cordão** para evitar uso antes da inspeção dos canos."
+              },
+              {
+                "label": "Saco/Duplo",
+                "value": "Colocar **um saco sob o assento e um segundo saco sobre o assento** para trocas limpas."
+              },
+              {
+                "label": "Balde/Assento",
+                "value": "Em baldes de 20L, acolchoar a borda com **papelão enrolado ou pano** para suportar o peso."
+              }
+            ],
+            "fieldUse": "Conversão imediata de vasos sanitários ou baldes de 20L em banheiro seco sem água durante apagões hídricos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Separar a Urina dos Sólidos e Forrar o Fundo com um Colchão de 10cm (Altura de um Punho) de Jornal e Papelão Rasgados",
+      "description": "1. **Separar Líquidos (Urina) de Dejetos Sólidos**: A regra mais eficaz contra mau cheiro e proliferação bacteriana é **jamais misturar urina e fezes no mesmo saco**; recolha a urina separadamente em um garrafão de boca larga.\n2. **Rasgar Jornal e Papelão em Tiras Pequenas**: Não coloque folhas inteiras lisas; rasgue jornais, papelão ondulado e rolos de papel higiênico em **tiras do tamanho de duas falanges e amasse-as bem** para multiplicar a área de absorção.\n3. **Formar um Colchão Absorvente de 10cm (1 Punho)**: Empilhe as tiras amassadas de jornal e papelão na **altura de um punho fechado de adulto (cerca de 8–10cm)** cobrindo todo o fundo do saco preto interno.\n4. **Reforçar com Areia de Gato ou Folhas Secas**: Se tiver **areia higiênica aglomerante para gatos (bentonita ou tofu)**, folhas secas ou serragem em casa, adicione **dois punhados** sobre o papel para triplicar a absorção.",
+      "actionNote": "> Por que misturar urina e fezes gera um mau cheiro explosivo: Quando as bactérias fecais entram em contato com a ureia e a água da urina, a putrefação anaeróbica libera gás amônia pungente e sulfeto de hidrogênio tóxico 10 vezes mais rápido. Manter os sólidos secos corta o odor pela raiz.",
+      "svgFileName": "pr25-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // SEPARAR URINA + COLCHÃO ABSORVENTE DE 10CM",
+        "Desviar urina para recipiente separado contra gás amônia",
+        "Rasgar jornal + papelão em tiras pequenas e amassar bem",
+        "Forrar o fundo com 10cm (1 punho) de camada absorvente",
+        "[NÚCLEO] Absorção imediata reduz bactérias + odor em 80%"
+      ],
+      "deepDive": {
+        "badge": "DESSECAÇÃO DE UMIDADE",
+        "title": "Inibição da Geração de Amônia por Hidrólise da Urease via Dessecação Capilar de Celulose",
+        "text": "Quando enzimas urease fecais encontram a ureia urinária em meio úmido, a hidrólise rápida gera **amônia (NH3) e sulfeto de hidrogênio (H2S)**. Desviar a urina líquida e aplicar um **leito de 10cm de celulose rasgada (jornal/papelão) ou areia de bentonita** reduz imediatamente a atividade de água, travando o metabolismo microbiano.",
+        "fieldSpecs": [
+          {
+            "name": "Colchão Absorvente de 10cm de Jornal Rasgado, Papelão Ondulado e Maravalha de Madeira",
+            "scientificName": "Shredded Cellulose Newspaper & Corrugated Cardboard Desiccant Bed",
+            "categoryTag": "Absorção Instantânea de Umidade / Supressão de Gás Amônia",
+            "imageFileName": "id-shredded-newspaper-cardboard-absorbent-bed.jpg",
+            "hudCode": "FIG. MED-25B // MACRO OPTIC",
+            "hudStatus": "MOISTURE ABSORPTION: 10CM BED",
+            "traits": [
+              {
+                "label": "Rasgar/Amassar",
+                "value": "Rasgar papel e papelão em **tiras pequenas e amassar** para reter líquido rapidamente."
+              },
+              {
+                "label": "Altura/10cm",
+                "value": "Empilhar a camada absorvente na **altura de um punho (10cm)** até cobrir todo o fundo."
+              },
+              {
+                "label": "Areia/Reforço",
+                "value": "Misturar **areia de gato, folhas secas ou serragem** maximiza o controle de odores."
+              }
+            ],
+            "fieldUse": "Camada dessecante de fundo que retém umidade e evita rasgos no saco sem géis químicos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Cobrir Imediatamente os Dejetos com 2 Copos de Carvão de Carvalho Triturado e Cinza, Extrair o Ar e Fechar com Nó Duplo Pescoço de Ganso",
+      "description": "1. **Cobrir na Hora com 1–2 Copos de Carvão e Cinza**: Logo após usar, espalhe **1–2 copos descartáveis de [Pó de Carvão de Carvalho](/protocol-09.html) finamente triturado e cinza branca de madeira (ou terra seca / tiras de papel)** até cobrir totalmente os dejetos.\n2. **Confirmar a Desodorização e Esterilização Alcalina**: Os microporos do carvão preto capturam os gases de mau cheiro em 60 segundos, enquanto a cinza branca seca a superfície e **eleva o pH para matar bactérias e ovos de mosca**.\n3. **Pressionar Suavemente o Ar Interno para Fora**: Segure a boca do saco preto interno com as duas mãos, **vire o rosto para o lado** e pressione devagar para expulsar o excesso de ar sem estufar o saco.\n4. **Vedação com Nó Duplo Pescoço de Ganso (Gooseneck)**: Torça o pescoço do saco firmemente como uma corda, dê o **primeiro nó**, dobre a ponta restante ao meio como um pescoço de ganso e amarre firme com cordão ou um **segundo nó hermético**.",
+      "actionNote": "> Por que cobrir os dejetos com carvão triturado e cinza branca funciona muito melhor do que apenas papel: O papel apenas chupa o líquido, enquanto o carvão de carvalho aprisiona dezenas de vezes o seu peso em gases fétidos dentro de seus microporos, e a cinza branca cria uma barreira alcalina onde bactérias e larvas de mosca não sobrevivem.",
+      "svgFileName": "pr25-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CARVÃO + CINZA + NÓ DUPLO PESCOÇO DE GANSO",
+        "Despejar 2 copos de carvão de carvalho triturado + cinza",
+        "Carvão retém gás fétido + cinza alcalina (pH 11) mata germes",
+        "Extrair ar, torcer boca, dobrar ponta + atar nó duplo",
+        "[NÚCLEO] Elimina 95% do odor H2S/amônia + bloqueia moscas"
+      ],
+      "deepDive": {
+        "badge": "ESTERILIZAÇÃO COM CARVÃO & CINZA",
+        "title": "Adsorção de Gases por Forças de Van der Waals no Carvão de Carvalho e Inativação Alcalina (pH 10–12) por Cinza",
+        "text": "O carvão de carvalho triturado oferece centenas de metros quadrados de área interna por grama para capturar **sulfeto de hidrogênio, mercaptanas, indol e escatol** via forças de van der Waals. Simultaneamente, o carbonato de potássio da cinza branca eleva o pH superficial **acima de 10**, rompendo membranas celulares de cólera, salmonela e ovos de parasitas.",
+        "fieldSpecs": [
+          {
+            "name": "Matriz Cobertura Desodorizante de Carvão de Carvalho Triturado e Cinza Branca de Madeira",
+            "scientificName": "Crushed Hardwood Charcoal & Alkaline Wood Ash Deodorizing Cover Matrix",
+            "categoryTag": "Adsorção de Gases de Odor / Esterilização Superficial Alcalina",
+            "imageFileName": "id-crushed-charcoal-wood-ash-deodorizer-cover.jpg",
+            "hudCode": "FIG. MED-25C // MACRO OPTIC",
+            "hudStatus": "ODOR & PATHOGEN: SEALED >95%",
+            "traits": [
+              {
+                "label": "Carvão/Gás",
+                "value": "**Um copo de carvão triturado** aprisiona gases de enxofre e amônia instantaneamente."
+              },
+              {
+                "label": "Cinza/Alcalina",
+                "value": "Cobrir com **cinza branca ou terra seca** desseca a superfície e destrói germes."
+              },
+              {
+                "label": "Nó/Ganso",
+                "value": "Tirar o ar, **torcer e atar uma vez, dobrar o pescoço e atar de novo** para vazamento zero."
+              }
+            ],
+            "fieldUse": "Cobertura imediata pós-uso, prevenção de postura de moscas e vedação dupla estanque a gases"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Isolar os Sacos Lacrados em Tambor Externo com Tampa e Lavar as Mãos por 30 Segundos com Sabão de Cinza ou Soro",
+      "description": "1. **Guardar em Tambor Externo Sombreado com Tampa**: Nunca deixe sacos amarrados perto de onde dorme ou cozinha; coloque-os dentro de um **tambor resistente com tampa na sombra da varanda ou área externa**, longe de ratos, gatos e corvos.\n2. **Enterrar a 30+ Passos da Água na Natureza**: Em acampamento selvagem sem edificações, cave um buraco na altura do joelho (30cm) a **pelo menos 30 passos largos (25–30m) de distância de rios, poços ou do seu [Filtro de Carvão e Areia](/protocol-01.html)** e enterre com carvão e cinza.\n3. **Esfregar as Mãos por 30 Segundos com Sabão de Cinza**: Imediatamente após manusear o saco, esfregue **palmas, dorso, entre os dedos e debaixo das unhas por 30 segundos** usando [Sabão Natural de Lixívia de Cinza](/protocol-13.html) para eliminar E. coli.\n4. **Usar Soro Fisiológico 0,9% ou Álcool se Faltar Água**: Se a água de lavagem estiver crítica, despeje [Soro Fisiológico Estéril 0,9%](/protocol-24.html) ou álcool nas mãos e unhas para quebrar a **cadeia de transmissão fecal-oral**.",
+      "actionNote": "> Por que descuidar do isolamento externo e da lavagem de mãos de 30 segundos coloca todos em risco: Em abrigos de desastre, morrem mais pessoas de disenteria coletiva e cólera espalhadas por bactérias fecais invisíveis nas unhas ao tocar alimentos do que de fome.",
+      "svgFileName": "pr25-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ISOLAMENTO EM TAMBOR EXTERNO + LAVAGEM DE 30S",
+        "Isolar sacos com nó duplo em tambor externo sombreado",
+        "No mato, enterrar a pelo menos 30 passos (30m) da água",
+        "Lavar mãos + unhas por 30s com sabão de cinza ou soro",
+        "[NÚCLEO] Corta vetores de moscas/ratos + surtos fecais-orais"
+      ],
+      "deepDive": {
+        "badge": "CONTENÇÃO DE RISCO BIOLÓGICO",
+        "title": "Quebra da Cadeia de Transmissão Fecal-Oral 5-F e Regra de Proteção Hídrica de 30 Metros",
+        "text": "Para cortar as **vias de transmissão 5-F da OMS (Fezes -> Dedos, Moscas, Solo, Fluidos -> Alimentos)**, os sacos lacrados devem ser isolados em tambores externos à prova de roedores (ou enterrados a **30+ metros de lençóis freáticos**), seguido de **lavagem surfactante de 30 segundos sob as unhas com sabão de lixívia de cinza**.",
+        "fieldSpecs": [
+          {
+            "name": "Tambor Externo com Tampa para Sacos de Nó Duplo e Estação de Lavagem com Sabão de Cinza",
+            "scientificName": "Double-Knotted Biohazard Waste Containment & Alkaline Soap Hand Sanitization",
+            "categoryTag": "Isolamento Externo Sombreado / Bloqueio de Infecção Fecal-Oral",
+            "imageFileName": "id-double-knotted-biohazard-containment-bin.jpg",
+            "hudCode": "FIG. MED-25D // MACRO OPTIC",
+            "hudStatus": "FECAL-ORAL VECTOR: BLOCKED",
+            "traits": [
+              {
+                "label": "Tambor/Externo",
+                "value": "Manter sacos lacrados em **varanda sombreada ou tambor com tampa** longe de pragas."
+              },
+              {
+                "label": "Água/30m",
+                "value": "Ao enterrar no campo, manter **pelo menos 30 passos (30m) de distância de rios ou poços**."
+              },
+              {
+                "label": "Mãos/30s",
+                "value": "Esfregar **debaixo das unhas por 30 segundos com sabão de cinza** contra diarreias."
+              }
+            ],
+            "fieldUse": "Armazenamento seguro de resíduos biológicos e prevenção de epidemias hídricas em cortes prolongados"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Jamais Dê Descarga Sem Inspecionar os Canos, Jamais Misture Água Sanitária com Limpadores Ácidos nos Dejetos e Jamais Queime Sacos Plásticos Dentro de Casa",
+    "description": "Despejar baldes de água para forçar a descarga quando a tubulação do prédio está rachada ou entupida faz o esgoto bruto transbordar nos andares inferiores e na sua sala. Além disso, jogar água sanitária (cloro) junto com limpadores ácidos (ou vinagre/ácido cítrico) sobre os dejetos libera gás cloro letal que causa asfixia rápida em banheiros fechados, enquanto queimar sacos plásticos dentro de casa libera dioxinas tóxicas. Sempre seque e vede os dejetos usando [Carvão de Carvalho Triturado](/protocol-09.html), cinza e jornal, e lave as mãos com [Sabão de Cinza de Madeira](/protocol-13.html) logo em seguida.",
+    "consequence": "Trave a alavanca de descarga imediatamente e siga à risca as 4 regras: 'Separar urina + Colchão de papel de 10cm + Cobertura de carvão/cinza + Nó duplo pescoço de ganso e isolamento externo.'"
+  },
+  "faqs": [
+    {
+      "question": "O que posso usar para cobrir os dejetos em um apartamento urbano se não tiver carvão, cinza nem terra?",
+      "causeDiagnostic": "O objetivo principal do material de cobertura é absorver rapidamente a umidade superficial e formar um manto hermético que bloqueia odores.",
+      "resolution": "**Use dois punhados de areia higiênica aglomerante para gatos (bentonita ou tofu), farinha ou amido de milho vencidos, borra de café usada bem seca, bicarbonato de sódio ou jornal e papel higiênico picados bem finos.** Borra de café seca ou bicarbonato misturados com tiras de papel desodorizam quase tão bem quanto o pó de carvão."
+    },
+    {
+      "question": "Como descartar a urina coletada separadamente durante a falta de água sem gerar mau cheiro?",
+      "causeDiagnostic": "A urina isolada contém muito menos patógenos que as fezes, mas quando parada libera rapidamente gás amônia forte.",
+      "resolution": "Se o cano de esgoto estiver intacto, despeje a urina com cuidado no vaso e **empurre com uma única caneca de água cinza (água já usada para lavar as mãos ou água da chuva)**. Se os canos estiverem rompidos, **passe a urina com um funil para garrafas PET vazias, feche bem a tampa** e esvazie-as lá fora em um bueiro pluvial ou solo longe de fontes de água."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Faltou água após terremoto ou cano rompido? Jamais jogue baldes de água no vaso sanitário—o esgoto vai voltar pelos ralos da sua casa! Monte um banheiro seco sem água! [5-35s Body] Primeiro, recolha a água limpa da caixa acoplada para beber e amarre a alavanca de descarga. Vista um saco protetor grande na louça, abaixe o assento e vista um segundo saco preto por cima. Forre o fundo com 10cm de jornal rasgado, papelão ou areia de gato. Separe a urina em uma garrafa e, após o uso sólido, cubra na hora com dois copos de carvão de carvalho triturado ou cinza, tire o ar e dê um nó duplo pescoço de ganso! [35-45s Warning & Outro] Jamais misture água sanitária e ácidos nos dejetos! Salve este manual de sobrevivência agora.",
+  "outcome": {
+    "title": "Sistema de Banheiro Seco de Emergência Sem Água com Trava de Refluxo, Saco Duplo e Jornal-Carvão",
+    "badge": "FINAL SPEC // WATERLESS DRY SANITATION & BIOHAZARD SEAL",
+    "description": "Sistema de saneamento de desastre sem água que combina alavanca de descarga travada e sacos impermeáveis duplos com leito absorvente de 10cm de jornal/papelão, cobertura de carvão de carvalho e cinza alcalina e isolamento externo com nó duplo pescoço de ganso.",
+    "svgFileName": "pr25-outcome.svg",
+    "svgLabels": [
+      "PR-25 COMPLETE // WATERLESS DRY TOILET + BIOHAZARD SEAL",
+      "STAGE 01: SACO DUPLO",
+      "Travar alavanca + 2 sacos",
+      "STAGE 02: COLCHÃO DE 10CM",
+      "Separar urina + papel rasgado",
+      "STAGE 03: VEDAÇÃO CARVÃO",
+      "Carvão/cinza + nó duplo",
+      "STAGE 04: TAMBOR EXTERNO",
+      "Tambor tampado + lavar mãos",
+      "FIELD VERIFIED // ZERO-WATER SEWAGE + EPIDEMIC BLOCKADE"
+    ]
+  },
+  "createdAt": "2026-11-06T01:27:20.308Z",
+  "updatedAt": "2026-11-06T01:29:44.479Z",
+  "contentHash": "a232171f3f6774af"
+}

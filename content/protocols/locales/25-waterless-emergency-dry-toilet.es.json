@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-25",
+  "category": "MEDICINE",
+  "title": "Cómo Hacer un Inodoro Seco de Emergencia sin Agua con Bolsas, Periódico y Carbón de Roble para Evitar Olores y Epidemias",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[BLOQUEO DE REFLUJO DE ALCANTARILLADO E INODORO SECO SIN AGUA CONTRA EPIDEMIAS]",
+  "summary": "Si su hogar o mochila de emergencia ya cuenta con bolsas coagulantes comerciales para inodoro (polvo de polímero superabsorbente), un inodoro portátil de campamento o bolsas herméticas antiolor, utilice siempre esos suministros primero. Sin embargo, cuando un terremoto, apagón o helada corta el agua potable y rompe las tuberías de desagüe del edificio —y se agotan los coagulantes—, echar cubetas de agua para forzar la descarga provoca que las aguas negras refluyan hacia los pisos inferiores y su propio baño. Dejar los desechos sin sellar cría moscas, E. coli, disentería y norovirus en 24 horas. Al atar la palanca del inodoro, colocar doble bolsa resistente sobre la taza (o cubeta de 20L), poner una cama absorbente de 10cm de periódico y cartón rasgado, y cubrir de inmediato con [Polvo de Carbón de Roble](/protocol-09.html) y ceniza blanca antes de hacer doble nudo cuello de ganso, eliminará los olores y el contagio sin usar una sola gota de agua.",
+  "timeRequired": "15 min (incluye bloqueo de palanca, colocación de doble bolsa y preparación de papel y carbón)",
+  "successRate": "99% (separando la orina, usando cama absorbente de 10cm de papel, cubriendo con carbón/ceniza y sellando con doble nudo)",
+  "difficulty": "Básico (Sin herramientas; usa el inodoro o cubeta de 20L, bolsas de basura gruesas, periódico/cartón y carbón/tierra)",
+  "outputPerHour": "0% consumo de agua / Procesa 10–15 usos diarios sin olor ni infección para una familia de 4 personas",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Inodoro de Cerámica Existente (o Cubeta de 20L) y Bolsas de Basura Gruesas de 50–70L + Bolsas Negras",
+      "desc": "Soporta el peso corporal y aísla los desechos sin fugas. Colocar una primera bolsa protectora directamente sobre la taza bajo el asiento y una segunda bolsa negra reemplazable sobre el asiento permite retirar solo la bolsa interior limpia en cada uso sin ensuciar jamás la porcelana."
+    },
+    {
+      "id": "mat-02",
+      "name": "Periódico Rasgado y Arrugado, Trozos de Cartón y Tubos de Papel (o Arena para Gatos / Hojas Secas)",
+      "desc": "Actúa como colchón absorbente natural en el fondo de la bolsa cuando no hay polvo coagulante. Rasgar cartón sobrante de una [Cápsula Térmica de Cartón](/protocol-22.html) o periódico en tiras del tamaño de una falange y apilarlo a la altura de un puño absorbe el líquido al instante y reduce el mal olor a la mitad."
+    },
+    {
+      "id": "mat-03",
+      "name": "Polvo de Carbón de Roble Triturado y Ceniza Blanca de Leña (o Tierra Seca de Maceta / Aserrín)",
+      "desc": "Se espolvorea sobre los desechos inmediatamente después de usar para atrapar gases de amoníaco y sulfuro de hidrógeno, frenando moscas y bacterias. Mezclar carbón triturado de un [Horno de Carbón en Pozo](/protocol-09.html) con ceniza blanca combina absorción de gases y esterilización alcalina (pH 11)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Atar la Palanca del Inodoro para Evitar el Reflujo de Aguas Negras y Colocar Dos Bolsas Superpuestas en la Taza y el Asiento",
+      "description": "1. **Recuperar Agua del Tanque y Bloquear la Palanca**: Tras el corte de agua, abra el tanque de cerámica trasero para sacar el agua limpia (10–15L) para su [Sifón de Toalla y Esterilizador Solar SODIS](/protocol-23.html), y **ate firmemente la palanca de descarga con cuerda** para que nadie descargue por costumbre.\n2. **Colocar la 1.ª Bolsa Protectora en la Taza**: Levante el asiento y ajuste una **bolsa gruesa de 50–70L (1.ª capa protectora)** cubriendo toda la taza de porcelana.\n3. **Bajar el Asiento y Colocar la 2.ª Bolsa Negra Reemplazable**: Baje el asiento sobre la primera bolsa y coloque encima una **bolsa negra resistente (2.ª capa colectora)** doblando los bordes bajo el asiento.\n4. **Acolchar el Borde si Usa Cubeta de 20L**: Si usa un balde de 20L en lugar de inodoro, enrolle **cartón grueso o una toalla vieja del grosor de dos dedos** sobre el borde antes de poner las bolsas.",
+      "actionNote": "> Por qué jamás debe echar cubetas de agua para forzar la descarga tras un sismo o helada: Si las tuberías de los pisos inferiores están rotas o tapadas, descargar agua desde arriba hace que las aguas negras broten por los desagües del piso inferior y de su propio baño.",
+      "svgFileName": "pr25-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BLOQUEO DE PALANCA + DOBLE BOLSA IMPERMEABLE",
+        "Atar palanca con cuerda para evitar reflujo de cloaca",
+        "Subir asiento + fijar 1a bolsa protectora en la taza",
+        "Bajar asiento + colocar 2a bolsa negra reemplazable",
+        "[CLAVE] Bloquea reflujo de aguas negras + protege taza"
+      ],
+      "deepDive": {
+        "badge": "BACKFLOW LOCK & DOUBLE LINER",
+        "title": "Bloqueo de Reflujo Hidrostático de Aguas Residuales y Ingeniería de Doble Bolsa Aislante",
+        "text": "Cuando las columnas verticales de desagüe se fracturan por sismos o congelación, verter agua desde pisos superiores genera presión hidrostática que **expulsa aguas negras infecciosas en las viviendas inferiores**. Bloquear físicamente la palanca e instalar un **sistema de doble bolsa (1.ª barrera fija + 2.ª bolsa intercambiable)** transforma el inodoro en una unidad seca segura.",
+        "fieldSpecs": [
+          {
+            "name": "Inodoro con Palanca Bloqueada y Sistema de Doble Bolsa Impermeable",
+            "scientificName": "Flush-Locked Ceramic Toilet with Double-Layer Containment Liner",
+            "categoryTag": "Prevención de Reflujo / Doble Membrana Colectora",
+            "imageFileName": "id-double-bagged-emergency-toilet-seat.jpg",
+            "hudCode": "FIG. MED-25A // MACRO OPTIC",
+            "hudStatus": "SEWAGE BACKFLOW: LOCKED 100%",
+            "traits": [
+              {
+                "label": "Palanca/Fija",
+                "value": "**Ate la palanca con cuerda** para impedir descargas antes de revisar las tuberías."
+              },
+              {
+                "label": "Doble/Bolsa",
+                "value": "Ponga **una bolsa bajo el asiento y otra sobre el asiento** para cambiar solo la interior."
+              },
+              {
+                "label": "Balde/Borde",
+                "value": "En cubetas de 20L, cubra el borde con **cartón enrollado o tela** como asiento."
+              }
+            ],
+            "fieldUse": "Conversión inmediata de inodoros o cubetas de 20L en inodoros secos sin agua durante cortes"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Separar la Orina de los Sólidos y Colocar una Cama de 10cm (Un Puño) de Periódico y Cartón Rasgado en el Fondo",
+      "description": "1. **Regla de Oro: Separar Líquido (Orina) y Sólido**: La forma más segura de evitar el mal olor es **no mezclar orina y heces en la misma bolsa**; recolecte la orina aparte en un envase de boca ancha.\n2. **Rasgar Periódico y Cartón al Tamaño de un Dedo**: No ponga hojas planas; rasgue periódico, cartón corrugado y tubos de papel en **trozos de dos falanges y arrúguelos** para ampliar el área de absorción.\n3. **Colocar una Cama Absorbente de Un Puño de Alto (10cm)**: Cubra el fondo de la 2.ª bolsa negra con **un puño de altura (8–10cm)** de papel y cartón arrugado.\n4. **Reforzar con Arena para Gatos u Hojas Secas**: Si tiene **arena aglomerante para gatos (bentonita o tofu)**, hojas secas o aserrín, agregue **dos puñados** sobre el papel para triplicar la absorción.",
+      "actionNote": "> Por qué mezclar orina y heces desata un olor insoportable: Cuando las bacterias fecales entran en contacto con la urea y el agua de la orina, se produce una putrefacción sin oxígeno que libera gas amoníaco y sulfuro de hidrógeno 10 veces más rápido. Al secar la humedad al instante, casi no hay olor.",
+      "svgFileName": "pr25-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // SEPARACION DE ORINA + CAMA ABSORBENTE DE 10CM",
+        "Separar orina en otro envase para frenar gas amoniaco",
+        "Rasgar periodico y carton en trozos y arrugar fibras",
+        "Formar colchon absorbente de 10cm (1 puno) en el fondo",
+        "[CLAVE] Absorcion inmediata reduce bacterias y olor 80%"
+      ],
+      "deepDive": {
+        "badge": "MOISTURE DESICCATION",
+        "title": "Inhibición de la Hidrólisis de Ureasa y Desecación Capilar con Celulosa",
+        "text": "Cuando las bacterias con enzima ureasa en las heces se mezclan con la urea de la orina en presencia de agua, liberan grandes cantidades de **amoníaco (NH3) y sulfuro de hidrógeno (H2S)**. Separar la orina y colocar un **lecho de 10cm de celulosa arrugada (periódico/cartón) o bentonita** reduce la actividad de agua y detiene la putrefacción.",
+        "fieldSpecs": [
+          {
+            "name": "Cama Absorbente de 10cm de Periódico Rasgado, Cartón Corrugado y Virutas de Madera",
+            "scientificName": "Shredded Cellulose Newspaper & Corrugated Cardboard Desiccant Bed",
+            "categoryTag": "Absorción Inmediata de Humedad / Supresión de Amoníaco",
+            "imageFileName": "id-shredded-newspaper-cardboard-absorbent-bed.jpg",
+            "hudCode": "FIG. MED-25B // MACRO OPTIC",
+            "hudStatus": "MOISTURE ABSORPTION: 10CM BED",
+            "traits": [
+              {
+                "label": "Rasgar/Arrugar",
+                "value": "Rasgue el papel y cartón al **tamaño de un dedo y arrúguelo** para atrapar líquidos."
+              },
+              {
+                "label": "Grosor/10cm",
+                "value": "Forme una capa de **un puño de altura (10cm)** que cubra todo el fondo."
+              },
+              {
+                "label": "Arena/Extra",
+                "value": "Mezclar **arena para gatos, hojas secas o aserrín** maximiza la absorción."
+              }
+            ],
+            "fieldUse": "Colchón desecante inferior que evita fugas de líquido y putrefacción sin geles químicos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Cubrir al Instante con Dos Vasos de Carbón de Roble Triturado y Ceniza, Sacar el Aire y Hacer Doble Nudo Cuello de Ganso",
+      "description": "1. **Cubrir con 1–2 Vasos de Carbón y Ceniza Blanca**: Inmediatamente después de usar, espolvoree **1–2 vasos de papel de [Polvo de Carbón de Roble](/protocol-09.html) triturado y ceniza blanca de leña (o tierra seca / papel rasgado)** hasta cubrir todo por completo.\n2. **Desodorización y Esterilización Alcalina Instantánea**: Los microporos del carbón atrapan los gases fétidos en menos de 1 minuto, mientras la ceniza blanca seca la superficie y **destruye bacterias y huevos de mosca por su alto pH alcalino**.\n3. **Sacar el Aire Interior con Cuidado**: Tome la parte superior de la 2.ª bolsa negra, **gire la cara hacia un lado** y presione suavemente para expulsar el aire sin que la bolsa se infle.\n4. **Sellar con Doble Nudo Cuello de Ganso**: Retuerza el cuello de la bolsa con firmeza, ate un **primer nudo**, doble el extremo sobrante por la mitad como cuello de ganso y átelo de nuevo con cuerda para un **sellado hermético doble**.",
+      "actionNote": "> Por qué cubrir con carbón triturado y ceniza blanca es mucho más eficaz que usar solo papel: El papel solo absorbe agua, pero el carbón de roble atrapa decenas de veces su peso en gases malolientes dentro de sus microporos, y la ceniza blanca crea un ambiente alcalino donde no sobreviven bacterias ni larvas de mosca.",
+      "svgFileName": "pr25-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CUBIERTA DE CARBON Y CENIZA + DOBLE NUDO",
+        "Espolvorear 2 vasos de carbon triturado + ceniza blanca",
+        "El carbon atrapa gases + la ceniza (pH 11) mata germenes",
+        "Sacar aire, retorcer cuello, doblar y atar doble nudo",
+        "[CLAVE] Elimina 95% de olor H2S/amoniaco + bloquea moscas"
+      ],
+      "deepDive": {
+        "badge": "CHARCOAL & ASH SANITIZATION",
+        "title": "Adsorción Física de Sulfuro de Hidrógeno por Carbón de Roble e Inactivación Alcalina (pH 10–12)",
+        "text": "El carbón de madera dura triturado ofrece cientos de metros cuadrados de superficie interna por gramo para atrapar **sulfuro de hidrógeno, mercaptanos, indol y escatol** mediante fuerzas de van der Waals. Al mismo tiempo, el carbonato de potasio de la ceniza blanca eleva el pH superficial **por encima de 10**, destruyendo membranas de cólera, salmonela y huevos de parásitos.",
+        "fieldSpecs": [
+          {
+            "name": "Matriz Desodorizante de Carbón de Roble Triturado y Ceniza Blanca de Leña",
+            "scientificName": "Crushed Hardwood Charcoal & Alkaline Wood Ash Deodorizing Cover Matrix",
+            "categoryTag": "Captura de Gases Fétidos / Esterilización Alcalina Superficial",
+            "imageFileName": "id-crushed-charcoal-wood-ash-deodorizer-cover.jpg",
+            "hudCode": "FIG. MED-25C // MACRO OPTIC",
+            "hudStatus": "ODOR & PATHOGEN: SEALED >95%",
+            "traits": [
+              {
+                "label": "Carbón/Gas",
+                "value": "**Un vaso de carbón de roble molido** atrapa al instante los gases de azufre y amoníaco."
+              },
+              {
+                "label": "Ceniza/pH",
+                "value": "Cubrir con **ceniza blanca o tierra seca** deseca la superficie y mata gérmenes."
+              },
+              {
+                "label": "Doble/Nudo",
+                "value": "Saque el aire, **retuerza y ate una vez, doble el cuello y vuelva a atar** sin fugas."
+              }
+            ],
+            "fieldUse": "Cobertura desodorizante inmediata tras el uso, bloqueo de moscas y sellado doble hermético"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Aislar las Bolsas Selladas en un Contenedor Exterior con Tapa y Lavar las Manos por 30 Segundos con Jabón de Lejía o Salina",
+      "description": "1. **Guardar en Contenedor con Tapa en Balcón o Exterior**: Jamás deje las bolsas anudadas cerca de dormitorios o cocina; colóquelas dentro de un **tambor rígido con tapa en un rincón sombreado del balcón o patio** a salvo de ratas, gatos y aves.\n2. **En Campo Abierto, Enterrar a 30+ Pasos del Agua**: Si está en el bosque sin edificios, cave un hoyo de 30cm de profundidad **a por lo menos 30 pasos de adulto (25–30m) de cualquier arroyo, pozo o [Filtro de Carbón y Arena](/protocol-01.html)** y entierre con carbón y ceniza.\n3. **Lavar las Manos por 30 Segundos con Jabón de Ceniza**: Inmediatamente después de atar la bolsa, frote **palmas, dorso, entre los dedos y debajo de las uñas durante al menos 30 segundos** con [Jabón Antiséptico de Lejía de Ceniza](/protocol-13.html).\n4. **Si Falta Agua, Desinfectar con Solución Salina al 0.9%**: Si casi no hay agua para lavarse, vierta [Solución Salina Estéril al 0.9%](/protocol-24.html) o alcohol sobre las manos y uñas para cortar la **infección fecal-oral**.",
+      "actionNote": "> Por qué descuidar el aislamiento exterior y el lavado de manos de 30 segundos pone en peligro a todo el grupo: En refugios de desastre, mueren más personas por epidemias de disentería y cólera transmitidas por bacterias fecales invisibles en dedos sucios que tocan alimentos o vasos que por hambre.",
+      "svgFileName": "pr25-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // AISLAMIENTO EN TAMBOR EXTERIOR + LAVADO 30S",
+        "Aislar bolsas selladas en contenedor con tapa a la sombra",
+        "En campo abierto, enterrar a 30+ pasos (30m) del agua",
+        "Lavar manos y unas por 30s con jabon de ceniza o salina",
+        "[CLAVE] Corta vectores de moscas/ratas + contagio fecal"
+      ],
+      "deepDive": {
+        "badge": "BIOHAZARD CONTAINMENT",
+        "title": "Bloqueo de las 5 Vías Fecal-Orales (5-F) y Regla de Protección de Acuíferos de 30 Metros",
+        "text": "Para cortar las **5 vías de contagio de la OMS (Heces -> Dedos, Moscas, Suelo, Agua -> Alimentos)**, las bolsas selladas deben aislarse en contenedores exteriores cerrados a la sombra (o enterrarse **a más de 30m de fuentes de agua**), seguido de un **lavado de 30 segundos con jabón alcalino de ceniza** bajo las uñas.",
+        "fieldSpecs": [
+          {
+            "name": "Contenedor Exterior con Tapa para Bolsas con Doble Nudo y Estación de Lavado con Jabón de Lejía",
+            "scientificName": "Double-Knotted Biohazard Waste Containment & Alkaline Soap Hand Sanitization",
+            "categoryTag": "Aislamiento Exterior / Bloqueo de Contagio Fecal-Oral",
+            "imageFileName": "id-double-knotted-biohazard-containment-bin.jpg",
+            "hudCode": "FIG. MED-25D // MACRO OPTIC",
+            "hudStatus": "FECAL-ORAL VECTOR: BLOCKED",
+            "traits": [
+              {
+                "label": "Exterior/Tapa",
+                "value": "Guarde las bolsas en un **tambor con tapa en balcón o exterior a la sombra**."
+              },
+              {
+                "label": "Agua/30m",
+                "value": "Al enterrar en el campo, aléjese **al menos 30 pasos (30m) de arroyos o pozos**."
+              },
+              {
+                "label": "Manos/30seg",
+                "value": "Lave **debajo de las uñas por 30 segundos con jabón de ceniza** tras cada uso."
+              }
+            ],
+            "fieldUse": "Almacenamiento sanitario seguro y prevención de epidemias diarreicas en cortes prolongados"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca Descargue el Inodoro Antes de Revisar Tuberías, Jamás Mezcle Cloro con Limpiadores Ácidos y No Queme Bolsas con Desechos bajo Techo",
+    "description": "Echar cubetas de agua cuando las tuberías del edificio están rotas o tapadas provoca que las aguas negras broten dentro de las viviendas. Además, verter cloro (lejía) junto con limpiadores ácidos (vinagre o ácido cítrico) sobre los desechos libera gas cloro mortal que causa asfixia rápida en un baño cerrado, y quemar bolsas plásticas con desechos en estufas interiores libera dioxinas tóxicas y aerosoles bacterianos. Seque y selle siempre con [Carbón de Roble Triturado](/protocol-09.html), ceniza y periódico, y lávese las manos con [Jabón de Lejía de Ceniza](/protocol-13.html).",
+    "consequence": "Bloquee la palanca del inodoro de inmediato y cumpla las 4 reglas: 'Separar orina + Cama de papel 10cm + Cubierta de carbón/ceniza + Doble nudo y aislamiento exterior'."
+  },
+  "faqs": [
+    {
+      "question": "¿Con qué puedo cubrir los desechos en un apartamento si no tengo carbón, ceniza de leña ni tierra de macetas?",
+      "causeDiagnostic": "La función principal del material de cobertura es absorber rápido la humedad superficial y formar un manto que bloquee el aire y el mal olor.",
+      "resolution": "**Use dos puñados de arena para gatos (bentonita o tofu), harina o maicena vencida, borra de café bien seca, bicarbonato de sodio o periódico y papel higiénico finamente rasgados.** La borra de café seca o el bicarbonato mezclados con tiras de papel eliminan el olor casi tan bien como el carbón."
+    },
+    {
+      "question": "¿Cómo debo desechar la orina recolectada por separado durante un corte de agua sin generar mal olor?",
+      "causeDiagnostic": "La orina separada de las heces tiene mucho menor riesgo bacteriano, pero al exponerse al aire libera un fuerte olor a amoníaco.",
+      "resolution": "Si el desagüe no está roto, vierta solo la orina en la taza del inodoro y **empújela con una sola jarra de agua gris (agua de lavado de manos o lluvia)**. Si las tuberías están rotas, **embude la orina en botellas plásticas vacías, ciérrelas bien** y vacíelas afuera en un drenaje pluvial o tierra lejos de fuentes de agua."
+    }
+  ],
+  "shortsScript": "[0-5s Gancho] ¿Se detuvo el inodoro tras un sismo o corte de agua? ¡Nunca eches cubetas de agua o las aguas negras refluirán a tu casa! ¡Haz un inodoro seco sin agua! [5-35s Cuerpo] Primero saca el agua limpia del tanque para beber y ata la palanca con cuerda. Pon una bolsa grande protectora en la taza, baja el asiento y coloca una segunda bolsa negra encima. Pon en el fondo un puño (10cm) de periódico y cartón rasgado o arena de gato. Separa la orina en una botella y, tras usar el inodoro, cubre con dos vasos de carbón de roble triturado o ceniza, saca el aire y haz doble nudo cuello de ganso. ¡Cero olor! [35-45s Alerta y Cierre] ¡Jamás mezcles cloro con ácidos en los desechos! Guarda este manual ahora.",
+  "outcome": {
+    "title": "Sistema de Inodoro Seco de Emergencia sin Agua con Doble Bolsa Anti-Reflujo, Periódico y Carbón de Roble",
+    "badge": "FINAL SPEC // WATERLESS DRY SANITATION & BIOHAZARD SEAL",
+    "description": "Sistema sanitario de emergencia con cero consumo de agua que combina bloqueo de palanca y doble bolsa impermeable con una cama absorbente de 10cm de papel/cartón, cobertura de carbón de roble y ceniza alcalina, y sellado de doble nudo con aislamiento exterior para frenar reflujos y epidemias.",
+    "svgFileName": "pr25-outcome.svg",
+    "svgLabels": [
+      "PR-25 COMPLETO // INODORO SECO SIN AGUA + BIOSEGURIDAD",
+      "STAGE 01: DOBLE BOLSA",
+      "Atar palanca + 2 bolsas",
+      "STAGE 02: CAMA DE 10CM",
+      "Separar orina + papel rasgado",
+      "STAGE 03: CARBON Y NUDO",
+      "Carbon/ceniza + doble nudo",
+      "STAGE 04: TAMBOR EXTERIOR",
+      "Aislar afuera + lavar manos 30s",
+      "VERIFICADO // CERO AGUA + BLOQUEO DE CLOACA Y EPIDEMIAS"
+    ]
+  },
+  "createdAt": "2026-11-06T01:27:20.308Z",
+  "updatedAt": "2026-11-06T01:29:44.479Z",
+  "contentHash": "a232171f3f6774af"
+}
