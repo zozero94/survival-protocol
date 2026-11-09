@@ -367,7 +367,7 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
     const baseSlugs = [
       '01-water-purification',
       '02-friction-fire',
-      '03-프로토콜-03-데브리-헛-debris-hut-a프레임-단열-은신처-구축법',
+      '03-debris-hut-insulation-shelter',
       '08-figure-four-deadfall',
     ];
     const protocolsDir = path.resolve(__dirname, '../content/protocols');
