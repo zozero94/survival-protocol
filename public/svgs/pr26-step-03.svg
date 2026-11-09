@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg26s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="cardboard26s3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="darkCloth26s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <pattern id="grid26s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow26s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg26s3)"/>
+  <rect width="400" height="400" fill="url(#grid26s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 골판지 상자·검은 천 이중 암실 차광 및 하단 통기구</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="66" fill="#fef08a" font-family="monospace" font-size="10.5">재배 용기 전체에 골판지 상자와 검은 천을 씌워 빛 100% 차단</text>
+
+  <!-- Main 3D Cutaway Illustration: Double Darkroom Hood Blocking UV/Light + 1.5cm Bottom Vent Gap -->
+  <g filter="url(#shadow26s3)">
+    <rect x="24" y="86" width="352" height="154" rx="4" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+
+    <!-- Blocked External Light Rays (Top Left Deflected) -->
+    <path d="M44,98 L82,126 M58,94 L96,122" stroke="#fde047" stroke-width="2" stroke-dasharray="4,2"/>
+    <circle cx="64" cy="112" r="12" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+    <path d="M58,106 L70,118 M70,106 L58,118" stroke="#f87171" stroke-width="2"/>
+
+    <!-- Outer Layer: Thick Dark Cloth Drape -->
+    <path d="M96,102 L304,102 L316,216 L84,216 Z" fill="url(#darkCloth26s3)" stroke="#94a3b8" stroke-width="1.8"/>
+
+    <!-- Inner Layer: Corrugated Cardboard Box Cutaway -->
+    <rect x="112" y="112" width="176" height="104" fill="url(#cardboard26s3)" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Dark Interior Chamber -->
+    <rect x="122" y="122" width="156" height="94" fill="#05070a" stroke="#475569" stroke-width="1"/>
+
+    <!-- Etiolated Yellow Bean Sprouts Growing Inside Dark Chamber -->
+    <g>
+      <rect x="154" y="146" width="92" height="58" rx="4" fill="#0f172a" stroke="#64748b" stroke-width="1.2"/>
+      <path d="M168,196 Q170,170 176,162" fill="none" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="176" cy="160" rx="5" ry="3.5" fill="#facc15"/>
+      <path d="M192,196 Q194,168 200,158" fill="none" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="200" cy="156" rx="5" ry="3.5" fill="#facc15"/>
+      <path d="M216,196 Q218,170 224,160" fill="none" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="224" cy="158" rx="5" ry="3.5" fill="#facc15"/>
+    </g>
+
+    <!-- Bottom 1.5cm Wood/Stone Spacer & Ventilation Airflow -->
+    <rect x="276" y="214" width="24" height="12" rx="2" fill="#a16207" stroke="#fde047" stroke-width="1.2"/>
+    <path d="M312,222 L348,222" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="271" fill="#bae6fd" font-family="monospace" font-size="10.5">엽록소 녹변 및 섬유질 경화를 막아 연하고 노란 줄기 유도</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">상자 하단 모서리를 1.5cm 띄워 신선한 산소 유입 및 발아열 배출</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 자외선·가시광선 완전 차단 및 18~24℃ 적정 발아 온도 유지</text>
+</svg>

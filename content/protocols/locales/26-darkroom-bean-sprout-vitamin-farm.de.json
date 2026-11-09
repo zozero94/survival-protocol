@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-26",
+  "category": "FOOD",
+  "title": "Wie man bei Langzeit-Isolation mit einem leeren Gefäß, Baumwolltuch und trockenen Bohnen erdfreie Dunkelkammer-Sprossen gegen Skorbut zieht",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[VITAMIN-C-SELBSTVERSORGUNG BEI LANGZEIT-ISOLATION & ERDFREIE DUNKELKAMMER-KEIMSPROSSENZUCHT]",
+  "summary": "Wenn Sie zu Hause oder in Ihrem Notfallgepäck bereits fertige Multivitamintabletten (Vitamin-C-Präparate), Brausetabletten, gefriergetrocknete Gemüseblöcke oder ein spezielles Keimsprossen-Set besitzen, nutzen Sie diese Fertigprodukte immer zuerst für die schnellste und sicherste Nährstoffversorgung. Wenn jedoch Krieg, Großkatastrophen oder lange Isolation die Lieferketten unterbrechen und Vitaminpräparate aufgebraucht sind, führt eine 3–4-wöchige Ernährung nur aus Dosenfutter, Hartkeksen, weißem Reis und Trockengetreide zu schwerem Vitamin-C-Mangel und Skorbut – mit Zahnfleischbluten, nicht heilenden Wunden und Immunschwäche. Trockene Sojabohnen und Mungbohnen enthalten im Ruhezustand fast kein Vitamin C, doch sauberes Wasser und Dunkelheit aktivieren Enzyme im Keimling, die Vitamin C und Aminosäuren binnen 5 Tagen um das 10- bis 30-Fache vervielfachen. Mit einem leeren Gefäß, dünnem Baumwolltuch, einem Stück [Eichenholzkohle](/protocol-09.html) und einer Lichtschutzhaube aus [Wärmedämmkapsel-Wellpappe](/protocol-22.html) ernten Sie in 5 Tagen ohne eine Handvoll Erde frisches Vitamingemüse.",
+  "timeRequired": "15 Min. Vorbereitung (plus 5 Tage lang 2–3 Mal täglich 1 Min. Wasserspülung)",
+  "successRate": "98% (bei Aussortieren gebrochener Bohnen, 100% Wasserablauf im 45°-Winkel, 100% Lichtschutz und 2x täglicher Spülung)",
+  "difficulty": "Anfänger (Ohne Werkzeug oder Erde; mit trockenen Bohnen/Mungbohnen, leerem Gefäß, dünnem Baumwolltuch und dunklem Karton)",
+  "outputPerHour": "1 Handvoll (100 g) trockene Bohnen ergibt nach 5 Tagen 500–600 g (5–6-faches Gewicht) frische Vitamin-C-Sprossen",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Eine Handvoll (ca. 100 g) unbeschädigte trockene gelbe Sojabohnen, Mungbohnen, Linsen oder Rettichsamen",
+      "desc": "Lebende Vitaminsamen, die trocken jahrelang haltbar sind und sich mit Wasser in 5 Tagen in frisches Gemüse verwandeln. Verwenden Sie niemals gebeiztes Saatgut, geröstete Bohnen oder gebrochene/gespaltene Bohnen, da diese im Wasser faulen. Wählen Sie nur ganze, lebensmittelechte Rohbohnen."
+    },
+    {
+      "id": "mat-02",
+      "name": "Leeres Gefäß mit weiter Öffnung (oder Siebschale) & atmungsaktives dünnes Baumwolltuch (Mull / Taschentuch) + Schnur",
+      "desc": "Dient als belüftetes Abtropfgefäß, wenn kein fertiges Keimglas vorhanden ist. Wird die Gefäßöffnung mit dünner 100%-Baumwollgaze bespannt und mit [Wilder Kudzu- oder Rindenschnur](/protocol-05.html) festgebunden, strömt Luft frei ein, während das Spülwasser bis zum letzten Tropfen abläuft."
+    },
+    {
+      "id": "mat-03",
+      "name": "100% lichtdichter Wellpappkarton & dunkle Altkleider + sauberes Trinkwasser & ein Stück Eichenholzkohle",
+      "desc": "Verhindert, dass Sprossen durch Licht grün, zäh und bitter werden, und stoppt bakterielle Fäulnis. Sauberes Wasser aus dem [Baumwolltuch-Siphon & SODIS-Sterilisator](/protocol-23.html) sowie ein daumengroßes Stück [Eichenholzkohle](/protocol-09.html) verhindern sauren Geruch und Schleimbildung."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Gebrochene oder beschädigte Bohnen aussortieren und ganze Bohnen 8–12 Stunden mit Eichenholzkohle in sauberem Wasser einweichen",
+      "description": "1. **Hände waschen & gebrochene oder schimmelige Bohnen aussortieren**: Waschen Sie Ihre Hände gründlich mit [Natürlicher Holzasche-Laugenseife](/protocol-13.html), breiten Sie eine Handvoll trockene Bohnen auf einem Teller aus und **entfernen Sie jede halbierte, geschälte, angefressene oder schimmelige Bohne**.\n2. **Zweimal sanft mit sauberem Wasser waschen**: Geben Sie nur die unversehrten Bohnen in eine Schüssel und spülen Sie sie zweimal sanft mit gereinigtem Wasser aus dem [Holzkohle-Sand-Filter](/protocol-01.html) oder [Baumwolltuch-Siphon & SODIS-Sterilisator](/protocol-23.html), um Staub abzuwaschen.\n3. **Dreifache Wassermenge aufgießen & Eichenholzkohle zugeben**: Gießen Sie lauwarmes sauberes Wasser bis zur **dreifachen Höhe der Bohnen (mindestens drei Fingerbreit darüber)** auf und legen Sie **ein daumengliedgroßes Stück saubere [Eichenholzkohle](/protocol-09.html)** hinein, damit das Wasser nicht kippt.\n4. **8–12 Stunden im Dunkeln einweichen, um die Keimruhe zu brechen**: Decken Sie die Schüssel über Nacht (8–12 Stunden) mit einem Tuch ab, bis die harten Bohnen Wasser aufsaugen, **auf das Doppelte aufquellen** und feine weiße Wurzelspitzen zeigen.",
+      "actionNote": "> Warum schon eine einzige gebrochene Bohne die gesamte Ernte verdirbt: Gebrochene Bohnen können nicht mehr keimen; im feuchtwarmen Gefäß sondern sie binnen 24 Stunden gelben Schleim ab, faulen und übertragen Fäulnisbakterien auf alle gesunden Bohnen ringsum.",
+      "svgFileName": "pr26-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BRUCHBOHNEN AUSSORTIEREN + 3X WASSER-EINWEICHUNG",
+        "100% aller gebrochenen/schimmeligen Bohnen aussortieren",
+        "3-fache Menge sauberes Wasser + 1 Stück Holzkohle zugeben",
+        "8-12 Std. einweichen bis 2x Volumen + weiße Wurzelspitze",
+        "[KERN] Aussortieren verhindert bakterielle Nassfäule"
+      ],
+      "deepDive": {
+        "badge": "KEIMRUHE-AUFHEBUNG & ENZYMSTART",
+        "title": "Aufhebung der Samenruhe durch Wasseraufnahme und Vitamin-C-Biosynthese über L-Gulonolacton-Oxidase",
+        "text": "Trockene Sojabohnen (*Glycine max*) und Mungbohnen (*Vigna radiata*) verharren unter 10% Feuchte in Stoffwechselruhe. **8–12 Stunden Einweichen** hebt die Innenfeuchte auf 50–60%, setzt Gibberellin-Hormone frei und aktiviert das Enzym **L-Gulonolacton-Oxidase**, das Glukose direkt in Ascorbinsäure (Vitamin C) umwandelt.",
+        "fieldSpecs": [
+          {
+            "name": "Nach 8–12 Stunden Einweichen mit Eichenholzkohle auf doppelte Größe aufgequollene Soja- und Mungbohnen",
+            "scientificName": "Imbibed Glycine max & Vigna radiata Viable Seed Selection",
+            "categoryTag": "Aussortieren defekter Samen / 8–12 Std. Imbibitions-Keimstart",
+            "imageFileName": "id-soaked-soybean-mungbean-selection.jpg",
+            "hudCode": "FIG. FOOD-26A // MACRO OPTIC",
+            "hudStatus": "SEED VIABILITY: 100% SORTED",
+            "traits": [
+              {
+                "label": "Bruch/Auslese",
+                "value": "**Gespaltene oder geschälte Bohnen** faulen im Wasser sofort und müssen vorab entfernt werden."
+              },
+              {
+                "label": "3xWasser/Kohle",
+                "value": "**3-faches Bohnenvolumen an Wasser plus Eichenholzkohle** hält das Einweichwasser frisch."
+              },
+              {
+                "label": "Quellung/2x",
+                "value": "Nach **8–12 Stunden bei doppelter Größe** das Einweichwasser vollständig abgießen."
+              }
+            ],
+            "fieldUse": "Erste Samenaktivierung für maximale Keimrate und Schutz vor Fäulnis bei Langzeit-Isolation"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Dünnes Baumwolltuch über die Gefäßöffnung binden und umgedreht im 45-Grad-Winkel aufstellen, damit kein Tropfen Wasser steht",
+      "description": "1. **Einweichwasser abgießen & Gefäß nur zu 1/4 füllen**: Gießen Sie das Einweichwasser ab und füllen Sie die gequollenen Bohnen bis **maximal 1/4 des Gefäßvolumens** ein, damit die Sprossen Platz für das 5–6-fache Wachstum haben.\n2. **Atmungsaktives Baumwolltuch straff über die Öffnung binden**: Spannen Sie **dünne 100%-Baumwollgaze oder ein Baumwolltaschentuch** über die Öffnung und binden Sie den Rand dreimal fest mit [Wilder Kudzu-Schnur](/protocol-05.html) oder Faden ab.\n3. **Umgedreht im 45-Grad-Winkel auf einen Teller stützen**: Steht das Gefäß aufrecht, lässt schon ein Löffel Restwasser am Boden die unteren Bohnen ersticken und faulen; stützen Sie das Gefäß **mit der Öffnung nach unten im 45-Grad-Winkel** in eine Auffangschale.\n4. **Alternative mit gelochtem Topfboden**: Nutzen Sie eine Schale mit Bodenlöchern, stechen Sie **mindestens 15 bleistiftminengroße Ablauflöcher** in den Boden und stellen Sie das Gefäß auf zwei Holzstäbe **fingerbreit (2 cm) erhöht** auf.",
+      "actionNote": "> Warum in stehendem Wasser liegende Bohnen über Nacht sauer stinken und verfaulen: Sobald die Keimung beginnt, atmen Bohnen Sauerstoff und geben Wärme ab. Stehen sie im Wasser, ersticken sie und gehen in anaerobe Alkoholgärung über, wodurch schleimige Fäulnis entsteht.",
+      "svgFileName": "pr26-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // BAUMWOLLGAZE-KAPPE + 45-GRAD-SCHRÄGABLAUF",
+        "Gefäß max. zu 1/4 füllen für 5-6x Sprossenwachstum",
+        "Atmungsaktive Baumwollgaze mit Naturschnur festbinden",
+        "Im 45-Grad-Winkel schräg lagern für 100% Wasserablauf",
+        "[KERN] 0% Staunässe + Luftstrom verhindert Wurzelfäule"
+      ],
+      "deepDive": {
+        "badge": "AEROBE ENTWÄSSERUNGSGEOMETRIE",
+        "title": "Sauerstoffbedarf der Zellatmung keimender Samen und 45-Grad-Schwerkraftentwässerung",
+        "text": "Keimende Samen benötigen für die rasche Zellteilung viel Sauerstoff. Schon 5 mm **Staunässe** am Boden senken die Sauerstoffdiffusion um das 10.000-Fache und lösen **anaerobe Ethanolgärung sowie Nassfäule** aus. Die **45-Grad-Schräglage** über das Baumwolltuch leitet 100% des Restwassers ab und führt Frischluft zu.",
+        "fieldSpecs": [
+          {
+            "name": "Im 45-Grad-Winkel geneigtes Keimgefäß mit schnurgebundener Baumwollgaze-Abtropföffnung",
+            "scientificName": "45-Degree Inverted Cotton-Gauze Aerobic Sprouting Vessel",
+            "categoryTag": "Null Staunässe / Aerobe Sauerstoffzirkulation",
+            "imageFileName": "id-perforated-jar-cotton-gauze-drain.jpg",
+            "hudCode": "FIG. FOOD-26B // MACRO OPTIC",
+            "hudStatus": "STAGNANT WATER: 0% DRAINED",
+            "traits": [
+              {
+                "label": "Füllung/Viertel",
+                "value": "Gefäß **höchstens zu 1/4 füllen**, um Platz für die 5-fache Ausdehnung zu lassen."
+              },
+              {
+                "label": "Gaze/Öffnung",
+                "value": "**Dünne Baumwollgaze über die Öffnung binden**, um Wasser ohne Bohnenverlust abzugießen."
+              },
+              {
+                "label": "Neigung/45Grad",
+                "value": "Gefäß nach dem Spülen immer **im 45-Grad-Winkel kippen**, damit kein Wasser steht."
+              }
+            ],
+            "fieldUse": "Erdfreie Entwässerung und Belüftung mit jedem leeren Gefäß ohne fertige Keimsiebe"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Mit Wellpappkarton und dunkler Kleidung 100% des Lichts abschirmen und bei milder Raumwärme (18–24 °C) lagern",
+      "description": "1. **Wellpappkarton über das Keimgefäß stülpen**: Decken Sie das schräg stehende Keimgefäß mit einem **Wellpappkarton** aus Resten der [Wellpappe-Wärmedämmkapsel](/protocol-22.html) oder einem dunklen Eimer ab, um Sonnen- und Lampenlicht fernzuhalten.\n2. **Dunkle Kleidung als doppelte Lichtsperre darüberlegen**: Breiten Sie **dicke schwarze Winterkleidung oder eine dunkle Decke** über den Karton aus, damit kein einziger Lichtstrahl durch Ritzen dringt.\n3. **Unten einen 1,5 cm fingerbreiten Lüftungsspalt lassen**: Verschließen Sie den unteren Rand nicht luftdicht, sonst garen die Bohnen in ihrer Eigenwärme; legen Sie einen **kleinen Stein unter eine Kartonkante für einen 1,5 cm breiten Luftspalt**.\n4. **An einem milden Innenplatz (18–24 °C) aufstellen**: Stellen Sie die Dunkelkammer fern von kalten Fenstern in eine **zugfreie Zimmerecke oder einen Schrank (18–24 °C)**, wo die gelben Sprossen täglich fingerbreit wachsen.",
+      "actionNote": "> Warum schon 10 Minuten Sonnen- oder Lampenlicht Geschmack und Zartheit der Sprossen ruinieren: Sobald Licht auf die Keimköpfe trifft, bilden sie grünes Chlorophyll; die Stängel verholzen zäh und entwickeln Bitterstoffe, die Bauchschmerzen verursachen können.",
+      "svgFileName": "pr26-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // KARTON + DUNKELSTOFF DOPPEL-LICHTSCHUTZHAUBE",
+        "Karton + dunkles Tuch überstülpen für 0% Lichteinfall",
+        "Stoppt Chlorophyll + Verholzung für zarte Sprossen",
+        "Unten 1,5 cm Spalt offen lassen für Abluft + Sauerstoff",
+        "[KERN] 100% Lichtsperre + 18-24°C milde Raumtemperatur"
+      ],
+      "deepDive": {
+        "badge": "DUNKELKEIMUNG (ETIOLIERUNG)",
+        "title": "Chlorophyll-Unterdrückung und zarte Hypokotyl-Streckung durch Dunkelkammer-Etiolierung",
+        "text": "In völliger Dunkelheit keimende Samen durchlaufen die **Etiolierung (Vergeilung)** und stecken ihre Energie in rasches Längenwachstum des Stängels. Die Lichtsperre verhindert **Chlorophyllsynthese und Lignin-Verholzung**, während der 1,5-cm-Bodenspalt Atmungswärme ableitet.",
+        "fieldSpecs": [
+          {
+            "name": "Doppellagige Dunkelkammer-Haube aus Wellpappkarton und dunklem Verdunkelungstuch",
+            "scientificName": "Double-Layered Corrugated Cardboard & Blackout Cloth Etiolation Hood",
+            "categoryTag": "100% Lichtabschirmung / Zarte Dunkelkeimung",
+            "imageFileName": "id-cardboard-darkroom-blackout-hood.jpg",
+            "hudCode": "FIG. FOOD-26C // MACRO OPTIC",
+            "hudStatus": "LIGHT TRANSMITTANCE: 0.0%",
+            "traits": [
+              {
+                "label": "Doppel/Haube",
+                "value": "**Dunkle Kleidung über dem Wellpappkarton** sorgt für absolute Dunkelheit."
+              },
+              {
+                "label": "Boden/Spalt",
+                "value": "Am unteren Rand **1,5 cm Spalt lassen**, damit frischer Sauerstoff nachströmt."
+              },
+              {
+                "label": "Wärme/18-24C",
+                "value": "Bei **18–24 °C im Innenraum** sind die Sprossen in 5 Tagen erntereif."
+              }
+            ],
+            "fieldUse": "Dunkelkammer-Konstruktion gegen zähe Fasern und Bitterstoffe bei der Innenraumzucht"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: 2–3 Mal täglich mit sauberem Wasser spülen, am 5. Tag bei Fingerlänge (7–10 cm) ernten und 2 Minuten blanchieren",
+      "description": "1. **2–3 Mal täglich spülen, um Wärme & Schleim auszuspülen**: Gießen Sie bei gedämpftem Licht **morgens und abends (2–3 Mal täglich) sauberes Wasser durch das Baumwolltuch, schwenken Sie 10 Sekunden sanft**, um Pflanzenschleim und Keimwärme abzuwaschen, und lassen Sie alles abtropfen.\n2. **Abgegossenes Spülwasser zu 100% wiederverwenden**: Verschwenden Sie bei Wassermangel keinen Tropfen; fangen Sie das Spülwasser auf, um Urin in der [Wasserlosen Trockentoilette](/protocol-25.html) nachzuspülen oder den Sand des [Tonkrug-Verdunstungskühlers](/protocol-16.html) zu befeuchten.\n3. **Am 5. Tag bei Zeigefingerlänge (7–10 cm) ernten**: Nach 4–6 Tagen, wenn die knackigen weißen Stängel **Zeigefingerlänge (7–10 cm)** erreichen, ist der Vitamin-C-Gehalt am höchsten.\n4. **Sojasprossen vor dem Verzehr 2 Minuten blanchieren**: Rohe Sojabohnen enthalten Verdauungshemmer; erhitzen Sie geerntete Sojasprossen mit Deckel auf dem [Thunfischdosen-Öldochtkocher](/protocol-21.html) oder [Zwei-Dosen-Holzvergaserkocher](/protocol-12.html) für **2–3 Minuten in kochendem Wasser**.",
+      "actionNote": "> Warum Besprühen mit einer Sprühflasche versagt und Sie kräftig durchspülen müssen: Bloßes Besprühen lässt klebrigen Samenschleim und steigende Stoffwechselwärme im Gefäß zurück, sodass Bakterien die Sprossen binnen 24 Stunden verfaulen lassen.",
+      "svgFileName": "pr26-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 2-3X TÄGLICHE KÜHLSPÜLUNG + TAG-5-VITAMINERNTE",
+        "2-3x täglich spülen zum Kühlen + Abwaschen von Schleim",
+        "Aufgefangenes Spülwasser für Kühltopf/Hygiene nutzen",
+        "An Tag 5 bei 7-10 cm ernten + 2 Min. heiß blanchieren",
+        "[KERN] Vervielfacht Vitamin C 10-30x + schützt vor Skorbut"
+      ],
+      "deepDive": {
+        "badge": "STOFFWECHSELWÄRME-ABFUHR & VITAMIN-PEAK",
+        "title": "Abfuhr der Keimwärme durch Vollspülung, Vitamin-C-Maximum an Tag 5 und Denaturierung von Trypsin-Inhibitoren",
+        "text": "Dicht liegende Keimlinge erzeugen Atmungswärme, die die Gefäßtemperatur um **3–5 °C** erhöht, und scheiden Polysaccharidschleim aus. 2–3 Spülungen täglich kühlen das Bett und führen Sauerstoff zu. Vitamin C erreicht an **Tag 5 (7–10 cm Länge, 15–25 mg/100 g)** das Maximum; **2 Minuten Blanchieren bei 100 °C** baut Trypsin-Inhibitoren ab und erhält über 70% des Vitamin C.",
+        "fieldSpecs": [
+          {
+            "name": "Am 5. Tag bei Fingerlänge (7–10 cm) geerntete vitaminreiche Soja- und Mungbohnensprossen",
+            "scientificName": "5-Day Harvested High-Ascorbate Soybean & Mung Bean Sprouts",
+            "categoryTag": "Keimwärme-Kühlung / Vitamin-C-Spitzenernte an Tag 5",
+            "imageFileName": "id-harvested-fresh-vitamin-bean-sprouts.jpg",
+            "hudCode": "FIG. FOOD-26D // MACRO OPTIC",
+            "hudStatus": "VITAMIN C: +2000% SYNTHESIZED",
+            "traits": [
+              {
+                "label": "Spülung/Kühlung",
+                "value": "**2–3 Vollspülungen täglich** waschen Keimwärme und klebrigen Schleim restlos aus."
+              },
+              {
+                "label": "Peak/Tag5",
+                "value": "Bei **Zeigefingerlänge (7–10 cm) an Tag 5** ernten für maximales Vitamin C."
+              },
+              {
+                "label": "Blanchieren/2m",
+                "value": "Sojasprossen **2 Minuten kochen**, um Verdauungshemmer sicher abzubauen."
+              }
+            ],
+            "fieldUse": "Kontinuierliche erdfreie Produktion von frischem Vitamin C und Ballaststoffen bei Isolation"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Niemals rote Kidneybohnen oder Kartoffelkeime roh als Sprossen essen und sauer riechende, schleimige Sprossen sofort entsorgen",
+    "description": "Nicht jeder Samen eignet sich für Keimsprossen. Rote Kidneybohnen enthalten starkes Phytohämagglutinin (Lektin-Gift), das ohne mindestens 10-minütiges Kochen schweres Erbrechen und Krämpfe auslöst, während Kartoffelkeime und grüne Kartoffelschalen hitzestabiles Solanin-Nervengift enthalten. Riechen Sprossen wegen schlechter Entwässerung sauer und ziehen Fäden, haben sich Krankheitserreger (*Salmonella*, *E. coli*) vermehrt – sofort wegwerfen! Ziehen Sie nur gelbe Sojabohnen, Mungbohnen oder Rettichsamen, blanchieren Sie Sojasprossen 2 Minuten auf dem [Thunfischdosen-Öldochtkocher](/protocol-21.html) und trinken Sie bei Durchfall sofort [Orale Rehydratationslösung (ORS)](/protocol-24.html).",
+    "consequence": "Verwenden Sie nur essbare Sojabohnen, Mungbohnen, Linsen oder Rettichsamen und halten Sie '45°-Restwasserablauf + Dunkelhaube + 2x tägliche Spülung + 2 Min. Blanchieren' strikt ein."
+  },
+  "faqs": [
+    {
+      "question": "Welche anderen Vorratssamen kann ich für Vitamin C keimen lassen, wenn ich keine Soja- oder Mungbohnen habe?",
+      "causeDiagnostic": "Die Enzyme zur Vitamin-C-Synthese werden bei der Keimung fast aller essbaren Hülsenfrüchte, Getreidekörner und Kohlsamen aktiviert.",
+      "resolution": "**Linsen, Kichererbsen, grüne Erbsen, ganze Weizenkörner, Gerste, Naturreis, Rettichsamen, Brokkolisamen, Alfalfa, Sonnenblumenkerne und Kürbiskerne** lassen sich genauso ziehen. Rettich-, Brokkoli-, Linsen- und Mungbohnensprossen sind schon nach 3–4 Tagen fertig und können bei Brennstoffmangel nach kurzem Waschen sogar roh gegessen werden."
+    },
+    {
+      "question": "Wie spare ich bei Wasserausfall Wasser, wenn ich die Sprossen zweimal täglich spülen muss?",
+      "causeDiagnostic": "Das Bohnenspülwasser enthält weder Erde noch Chemikalien, sondern nur harmlose wasserlösliche Pflanzenstoffe.",
+      "resolution": "Statt großer Mengen auf einmal **setzen Sie alle zwei Tage versetzt 2 Esslöffel Bohnen in einem kleinen Becher an** – das verbraucht nur zwei Pappbecher Spülwasser pro Tag. Fangen Sie das ablaufende Wasser auf und nutzen Sie es zum Händewaschen oder für die Trockentoilette."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Im Katastrophenfall wochenlang nur Dosenfutter und Reis? Nach einem Monat droht Skorbut mit Zahnfleischbluten! Ziehen Sie in 5 Tagen ohne Erde frische Vitaminsprossen! [5-35s Body] Zuerst gebrochene Bohnen aussortieren und ganze Soja- oder Mungbohnen über Nacht mit einem Stück Holzkohle einweichen. Ein leeres Gefäß zu einem Viertel füllen, Baumwolltuch über die Öffnung binden und im 45-Grad-Winkel schräg stellen, damit kein Wasser steht. Mit Karton und dunkler Kleidung 100% lichtdicht abdecken und morgens sowie abends spülen. In 5 Tagen steigt das Vitamin C um das 20-Fache! [35-45s Warning & Outro] Niemals Kidneybohnen oder Kartoffelkeime nehmen und Sojasprossen 2 Minuten kochen! Jetzt speichern.",
+  "outcome": {
+    "title": "45-Grad-Baumwollgaze-Entwässerung & Karton-Dunkelkammer für erdfreie Vitamin-Keimsprossen",
+    "badge": "FINAL SPEC // ERDFREIE DUNKELKAMMER-VITAMIN-SPROSSENFARM",
+    "description": "Ein erdfreies Noternährungssystem aus Bruchbohnen-Auslese, 8-stündiger Holzkohle-Einweichung, 45-Grad-Baumwollgaze-Entwässerung, doppellagiger Karton-Dunkelkammer und 2x täglicher Kühlspülung für 10–30x mehr Vitamin C in 5 Tagen.",
+    "svgFileName": "pr26-outcome.svg",
+    "svgLabels": [
+      "PR-26 COMPLETE // ERDFREIE DUNKELKAMMER-SPROSSENFARM",
+      "STUFE 01: AUSLESE & QUELLEN",
+      "Bruch raus + 8 Std. Quellen",
+      "STUFE 02: 45-GRAD-ABLAUF",
+      "Baumwolltuch + 0% Staunässe",
+      "STUFE 03: DUNKELHAUBE",
+      "Karton/Stoff + 1,5cm Spalt",
+      "STUFE 04: SPÜLEN & KOCHEN",
+      "2x Spülung + Tag 5 Kochen",
+      "FIELD VERIFIED // BIS ZU 20X VITAMIN-C-SYNTHESE IN 5 TAGEN"
+    ]
+  },
+  "createdAt": "2026-11-09T01:46:25.453Z",
+  "updatedAt": "2026-11-09T01:48:42.186Z",
+  "contentHash": "45e82305911eee4d"
+}

@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-26",
+  "category": "FOOD",
+  "title": "How to Grow Soil-Free Darkroom Bean Sprouts Using an Empty Jar, Cotton Cloth, and Dry Beans to Prevent Scurvy During Isolation",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[LONG-TERM ISOLATION VITAMIN C SELF-SUFFICIENCY & SOIL-FREE DARKROOM HYDROPONIC SPROUTING]",
+  "summary": "If your home or disaster kit already includes commercial multivitamin tablets (vitamin C pills), effervescent vitamin tablets, freeze-dried vegetable blocks, or a dedicated sprouting tray set, always use those commercial supplies first for the fastest and safest nutrition. However, when war, major disaster, or prolonged isolation cuts off grocery supply chains and vitamin pills run out, surviving for 3–4+ weeks solely on canned food, hardtack, white rice, and dry grains depletes body vitamin C, triggering scurvy—bleeding gums, non-healing wounds, and immune collapse. Dry yellow soybeans and mung beans contain almost zero vitamin C while dormant, but supplying clean water and darkness awakens internal enzymes that multiply vitamin C and essential amino acids 10 to 30 times within 5 days. Using only an empty container, thin cotton cloth, a piece of [Oak Charcoal](/protocol-09.html), and a light-blocking box made from leftover [Cardboard Thermal Capsule](/protocol-22.html) scraps, you can harvest fresh vitamin-rich vegetables in 5 days without a single handful of soil.",
+  "timeRequired": "15 mins initial setup (plus 1-minute water rinse 2–3 times daily for 5 days)",
+  "successRate": "98% (when culling split beans, draining 100% of standing water at 45°, blocking all light, and rinsing twice daily)",
+  "difficulty": "Beginner (No tools or soil required; uses kitchen dry beans/mung beans, an empty jar, thin cotton cloth, and a dark box)",
+  "outputPerHour": "1 handful (100g) of dry beans yields 500–600g (5–6x weight increase) of fresh vitamin C bean sprouts in 5 days",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "One Handful (approx. 100g) of Intact Dry Yellow Soybeans, Mung Beans, Lentils, or Radish Seeds",
+      "desc": "Living vitamin seeds that store for years when dry yet transform into fresh vegetables in 5 days when hydrated. Never use pesticide-coated agricultural seeds, roasted beans, or split/broken beans—they cannot sprout and will rot in water. Always select whole, food-grade raw beans."
+    },
+    {
+      "id": "mat-02",
+      "name": "Wide-Mouth Empty Container (or Perforated Bowl) & Breathable Thin Cotton Cloth (Gauze / Handkerchief) + Cord",
+      "desc": "Acts as an aerobic drainage vessel when commercial sprouting trays are unavailable. Covering the container mouth with thin 100% cotton gauze and tying it tightly with [Wild Kudzu or Bark Cordage](/protocol-05.html) or cotton string lets air circulate freely while draining every last drop of rinse water without spilling a single bean."
+    },
+    {
+      "id": "mat-03",
+      "name": "100% Light-Blocking Cardboard Box & Dark Old Clothes + Clean Purified Water & One Piece of Oak Charcoal",
+      "desc": "Prevents sprouts from turning green, tough, and bitter under light while stopping bacterial water rot. Using clean water from a [Cotton Towel Siphon & SODIS Sterilizer](/protocol-23.html) and placing a thumb-sized piece of [Oak Charcoal](/protocol-09.html) inside the vessel prevents sour odors and bacterial slime."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Cull All Split or Damaged Beans and Soak Intact Beans for 8–12 Hours in Clean Water with a Piece of Oak Charcoal",
+      "description": "1. **Wash Hands & Remove Every Split or Moldy Bean**: Wash your hands thoroughly with [Natural Wood Ash Lye Soap](/protocol-13.html), spread one handful of dry beans on a flat plate, and **remove every split bean, peeled bean, insect-damaged bean, or moldy seed**.\n2. **Rinse Gently Twice with Clean Water**: Place only intact beans into a clean bowl and rinse them gently twice using purified water from a [Charcoal-Sand Filter](/protocol-01.html) or [Cotton Towel Siphon & SODIS Sterilizer](/protocol-23.html) to wash off surface dust.\n3. **Pour 3x Volume of Water & Add Oak Charcoal**: Pour lukewarm clean water up to **3 times the height of the beans (at least three finger-joints above the beans)** and drop in **one thumb-joint-sized piece of clean [Oak Charcoal](/protocol-09.html)** to keep the water from turning sour.\n4. **Soak 8–12 Hours in the Dark to Break Dormancy**: Cover the bowl with a cloth overnight (8–12 hours) until the hard beans absorb water, **swell to twice their original size**, and show tiny white root tips pushing through the seed coat.",
+      "actionNote": "> Why leaving even a single split or cracked bean in the batch ruins the entire harvest: Broken beans have lost their ability to sprout; in a warm, damp container they exude yellow slime and rot within 24 hours, spreading putrefactive bacteria to every healthy bean around them.",
+      "svgFileName": "pr26-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CULL SPLIT SEEDS + 3X WATER SOAK DORMANCY BREAK",
+        "Cull 100% of split, cracked, or moldy seeds to stop rot",
+        "Add 3x volume of clean water + 1 piece of oak charcoal",
+        "Soak 8-12h until beans swell 2x + white root tips emerge",
+        "[CORE] Pre-sorting broken beans blocks bacterial soft rot"
+      ],
+      "deepDive": {
+        "badge": "SEED DORMANCY & ENZYME ACTIVATION",
+        "title": "Dormancy Termination via Seed Imbibition and Vitamin C Biosynthesis via L-Gulonolactone Oxidase",
+        "text": "Dry soybean (*Glycine max*) and mung bean (*Vigna radiata*) seeds remain metabolically dormant below 10% moisture. **Soaking for 8–12 hours** raises internal moisture to 50–60%, releasing gibberellin hormones and activating **L-gulonolactone oxidase**, the enzyme that converts glucose into ascorbic acid (vitamin C) from scratch.",
+        "fieldSpecs": [
+          {
+            "name": "Sorted Soybeans and Mung Beans Swollen 2x After 8–12 Hours Soaking with Oak Charcoal",
+            "scientificName": "Imbibed Glycine max & Vigna radiata Viable Seed Selection",
+            "categoryTag": "Defective Seed Culling / 8–12h Imbibition Dormancy Break",
+            "imageFileName": "id-soaked-soybean-mungbean-selection.jpg",
+            "hudCode": "FIG. FOOD-26A // MACRO OPTIC",
+            "hudStatus": "SEED VIABILITY: 100% SORTED",
+            "traits": [
+              {
+                "label": "Cull/Broken",
+                "value": "**Split or peeled beans** rot immediately in water and must be removed first."
+              },
+              {
+                "label": "Soak/3xWater",
+                "value": "Pour **3x the bean volume in clean water and add oak charcoal** to prevent souring."
+              },
+              {
+                "label": "Swell/2xSize",
+                "value": "Stop soaking after **8–12 hours once beans swell to double size** and drain fully."
+              }
+            ],
+            "fieldUse": "Initial seed activation maximizing germination rate and preventing bacterial rot during isolation"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Tie Thin Cotton Gauze Over the Container Mouth and Prop It Inverted at a 45-Degree Angle to Drain All Standing Water",
+      "description": "1. **Drain Soak Water & Fill Container Only 1/4 Full**: Pour out all soaking water and load the swollen beans into an empty wide-mouth container to **no more than 1/4 of its total volume** so the sprouts have room to expand 5–6 times.\n2. **Tie Breathable Thin Cotton Gauze Over the Mouth**: Stretch a **thin, breathable 100% cotton gauze or cotton handkerchief** over the opening and bind the rim tightly with three wraps of [Wild Kudzu Cordage](/protocol-05.html) or strong string.\n3. **Prop Inverted at a 45-Degree Angle Over a Dish**: If the jar stands upright, even a spoonful of water pooled at the bottom will suffocate and rot the lower beans; always prop the container **mouth-down at a 45-degree angle (half a handspan tilt)** inside a catch dish.\n4. **Alternative Perforated Bottom Setup**: If using a plastic tub or clay pot with bottom holes, punch **at least 15 pencil-lead-sized drain holes** across the bottom and elevate the pot **one finger-joint (2cm) off the tray** on two sticks.",
+      "actionNote": "> Why leaving soaked beans submerged in standing water causes sour stench overnight: Once germination begins, beans breathe oxygen and release heat just like living creatures. If submerged in pooled water, they suffocate and undergo anaerobic alcohol fermentation, turning into slimy, sour-smelling rot.",
+      "svgFileName": "pr26-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // COTTON GAUZE CAP + 45-DEG INVERTED DRAINAGE",
+        "Fill vessel to 1/4 volume max to allow 5-6x sprout growth",
+        "Bind breathable cotton gauze over mouth with natural cord",
+        "Prop inverted at 45 deg on dish to drain 100% of water",
+        "[CORE] Zero standing water + airflow stops root suffocation"
+      ],
+      "deepDive": {
+        "badge": "AEROBIC DRAINAGE GEOMETRY",
+        "title": "Aerobic Respiration Oxygen Demand in Germinating Seeds and 45-Degree Gravity Drainage Engineering",
+        "text": "Germinating seeds consume high levels of oxygen for rapid cell division. Even 5mm of **stagnant water** at the bottom reduces oxygen diffusion 10,000-fold, triggering **anaerobic ethanol fermentation and bacterial soft rot**. Inverting the gauze-capped vessel at **45 degrees** drains 100% of excess water by gravity while drawing fresh air into the upper chamber.",
+        "fieldSpecs": [
+          {
+            "name": "45-Degree Inverted Sprouting Vessel with Cord-Bound Cotton Gauze Drainage Mouth",
+            "scientificName": "45-Degree Inverted Cotton-Gauze Aerobic Sprouting Vessel",
+            "categoryTag": "Zero Stagnant Water / Aerobic Oxygen Circulation",
+            "imageFileName": "id-perforated-jar-cotton-gauze-drain.jpg",
+            "hudCode": "FIG. FOOD-26B // MACRO OPTIC",
+            "hudStatus": "STAGNANT WATER: 0% DRAINED",
+            "traits": [
+              {
+                "label": "Fill/Quarter",
+                "value": "Load beans to **1/4 container height max** to accommodate 5x volume expansion."
+              },
+              {
+                "label": "Gauze/Mouth",
+                "value": "**Tie thin cotton gauze over the mouth** to drain water cleanly without losing beans."
+              },
+              {
+                "label": "Tilt/45Deg",
+                "value": "Always rest the vessel **tilted at 45 degrees** after rinsing so zero water pools."
+              }
+            ],
+            "fieldUse": "Soil-free hydroponic drainage and aeration using any empty jar without commercial strainer trays"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Cover with a Cardboard Box and Dark Clothes to Block 100% of Light While Maintaining Indoor Warmth (18–24°C)",
+      "description": "1. **Place a Corrugated Cardboard Box Over the Vessel**: Cover the tilted sprouting container with a leftover **corrugated cardboard box** from your [Cardboard Thermal Capsule](/protocol-22.html) or a deep opaque bucket to block sunlight and room lamps.\n2. **Drape Dark Clothes for a Double Blackout Seal**: Lay **thick black winter clothing or a dark blanket** over the cardboard box so not a single ray of light leaks through the seams.\n3. **Leave a 1.5cm Finger-Width Bottom Air Vent**: Do not seal the bottom edge airtight, or metabolic heat will cook the beans; prop one bottom corner of the box on a **small stone or stick to leave a one-finger-joint (1.5cm) air gap**.\n4. **Keep in a Mild Indoor Spot (18–24°C)**: Place the darkroom box away from freezing windows or hot stoves in a **draft-free indoor corner or cabinet (18–24°C)** where plump golden sprouts will grow one finger-joint per day.",
+      "actionNote": "> Why exposing bean sprouts to sunlight or room light for even 10 minutes ruins their texture and flavor: As soon as light hits the sprout heads, they synthesize green chlorophyll, turning the tender stems woody and tough while producing bitter compounds that can cause stomach upset.",
+      "svgFileName": "pr26-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CARDBOARD + DARK CLOTH DOUBLE BLACKOUT HOOD",
+        "Cover vessel with cardboard box + dark cloth for 0% light",
+        "Prevents green chlorophyll + woody fiber for tender stems",
+        "Prop bottom box edge 1.5cm open to vent heat + draw air",
+        "[CORE] 100% UV/light block + 18-24C indoor warmth control"
+      ],
+      "deepDive": {
+        "badge": "ETIOLATION DARKROOM CONTROL",
+        "title": "Chlorophyll Suppression and Tender Hypocotyl Elongation via Etiolation Darkroom Cultivation",
+        "text": "Seeds germinating in complete darkness undergo **etiolation**, directing energy into rapid stem (hypocotyl) elongation in search of light. Blocking visible light prevents **chlorophyll synthesis and lignin fiber hardening**, producing crisp, digestible yellow sprouts while the 1.5cm bottom vent dissipates respiratory heat.",
+        "fieldSpecs": [
+          {
+            "name": "Double-Layered Corrugated Cardboard and Blackout Cloth Indoor Sprouting Darkroom Hood",
+            "scientificName": "Double-Layered Corrugated Cardboard & Blackout Cloth Etiolation Hood",
+            "categoryTag": "100% Visible Light Blockade / Etiolation Tenderization",
+            "imageFileName": "id-cardboard-darkroom-blackout-hood.jpg",
+            "hudCode": "FIG. FOOD-26C // MACRO OPTIC",
+            "hudStatus": "LIGHT TRANSMITTANCE: 0.0%",
+            "traits": [
+              {
+                "label": "Double/Hood",
+                "value": "Layer **dark clothing over a cardboard box** for total darkness indoors."
+              },
+              {
+                "label": "Bottom/Vent",
+                "value": "Leave a **one-finger-joint (1.5cm) gap** at the bottom edge for fresh oxygen."
+              },
+              {
+                "label": "Warmth/18-24C",
+                "value": "Keep in a **mild indoor room (18–24°C)** for a full harvest in 5 days."
+              }
+            ],
+            "fieldUse": "Darkroom cultivation structure that prevents tough fibers and bitterness in indoor sprouts"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Rinse 2–3 Times Daily with Clean Water to Flush Metabolic Heat, Harvest at Finger Length (7–10cm) on Day 5, and Blanch for 2 Minutes",
+      "description": "1. **Rinse 2–3 Times Daily to Flush Heat & Slime**: In dim light, **pour clean water through the gauze mouth 2–3 times a day (morning and evening), swirl gently for 10 seconds** to wash away sticky mucilage and germination heat, and drain completely.\n2. **Reuse All Drained Rinse Water**: During a water shortage, never waste the drained rinse water; collect it in a bowl to flush separated urine in your [Waterless Emergency Dry Toilet](/protocol-25.html) or wet the sand layer of a [Clay Zeer Pot Refrigerator](/protocol-16.html).\n3. **Harvest on Day 5 at Index-Finger Length (7–10cm)**: After 4–6 days, when the crisp white stems reach **adult index-finger length (7–10cm)**, vitamin C content peaks—harvest before fibrous side roots harden.\n4. **Blanch Soybean Sprouts for 2 Minutes Before Eating**: Raw soybeans contain enzyme inhibitors that cause stomach cramps; heat harvested soybean sprouts with a lid on over a [Tuna Can Oil Wick Heater](/protocol-21.html) or [Twin-Can Wood Gas Stove](/protocol-12.html) in boiling water for **2–3 minutes** before eating.",
+      "actionNote": "> Why misting with a spray bottle fails and you must pour water to rinse and drain completely: Light misting leaves sticky seed mucilage and rising metabolic heat trapped inside the jar, turning the container into a warm incubator where bacteria rot the sprouts within 24 hours.",
+      "svgFileName": "pr26-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 2-3X DAILY HEAT FLUSH + DAY 5 VITAMIN HARVEST",
+        "Rinse 2-3x daily with clean water to flush heat + slime",
+        "Reuse drained rinse water for cooling pot or sanitation",
+        "Harvest at 7-10cm on Day 5 + blanch 2 mins before eating",
+        "[CORE] Multiplies Vitamin C 10-30x + prevents scurvy"
+      ],
+      "deepDive": {
+        "badge": "METABOLIC HEAT FLUSH & VITAMIN PEAK",
+        "title": "Metabolic Heat Dissipation via Full-Volume Rinsing, Day-5 Ascorbate Peak, and Trypsin Inhibitor Denaturation",
+        "text": "Dense germinating seeds generate respiratory heat that raises internal vessel temperatures by **3–5°C** while secreting polysaccharide mucilage. Rinsing 2–3 times daily cools the bed, removes mucilage, and replenishes oxygen. Vitamin C peaks on **Day 5 (7–10cm length, 15–25mg/100g)**, and **2-minute covered blanching at 100°C** deactivates soybean trypsin inhibitors while preserving over 70% of vitamin C.",
+        "fieldSpecs": [
+          {
+            "name": "Day-5 Harvested Finger-Length (7–10cm) High-Vitamin Soybean and Mung Bean Sprouts",
+            "scientificName": "5-Day Harvested High-Ascorbate Soybean & Mung Bean Sprouts",
+            "categoryTag": "Metabolic Heat Cooling / Day-5 Vitamin C Peak Harvest",
+            "imageFileName": "id-harvested-fresh-vitamin-bean-sprouts.jpg",
+            "hudCode": "FIG. FOOD-26D // MACRO OPTIC",
+            "hudStatus": "VITAMIN C: +2000% SYNTHESIZED",
+            "traits": [
+              {
+                "label": "Rinse/Cool",
+                "value": "**Full-pour rinsing 2–3 times daily** flushes out heat and sticky seed mucilage."
+              },
+              {
+                "label": "Peak/Day5",
+                "value": "Harvest at **index-finger length (7–10cm) on Day 5** for maximum vitamin C."
+              },
+              {
+                "label": "Blanch/2Min",
+                "value": "**Blanch soybean sprouts for 2 minutes** in boiling water for safe digestion."
+              }
+            ],
+            "fieldUse": "Continuous soil-free production of fresh vitamin C and dietary fiber during prolonged isolation"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Never Sprout Red Kidney Beans or Potato Eyes to Eat Raw, and Immediately Discard Any Sour-Smelling, Slimy Sprouts",
+    "description": "Not every seed is safe to sprout and eat lightly cooked. Red kidney beans contain high levels of phytohemagglutinin, a potent lectin toxin that causes severe vomiting and abdominal pain unless boiled hard for over 10 minutes, while potato sprouts and green potato skins contain heat-stable solanine neurotoxin and must never be eaten. Furthermore, if poor drainage causes bean sprouts to smell sour and turn slimy or mushy, pathogenic bacteria (*Salmonella* or *E. coli*) have multiplied—discard the batch immediately. Always sprout safe yellow soybeans, mung beans, or radish seeds, blanch soybean sprouts for 2 minutes on a [Tuna Can Oil Wick Heater](/protocol-21.html), and if foodborne diarrhea occurs, rehydrate immediately with [Oral Rehydration Solution (ORS)](/protocol-24.html).",
+    "consequence": "Use only edible soybeans, mung beans, lentils, or radish seeds and strictly follow: '45° complete drainage + Darkroom blackout hood + Twice-daily water rinse + 2-minute blanching.'"
+  },
+  "faqs": [
+    {
+      "question": "What other pantry seeds can I sprout for vitamin C if I have no yellow soybeans or mung beans?",
+      "causeDiagnostic": "Vitamin C biosynthesis enzymes activate across nearly all edible legumes, grains, and brassica seeds during germination.",
+      "resolution": "**Lentils, chickpeas, green peas, whole wheat berries, barley, brown rice, radish seeds, broccoli seeds, alfalfa, sunflower seeds, and pumpkin seeds** can all be sprouted using the exact same method. Radish, broccoli, lentil, and mung bean sprouts mature in just 3–4 days and can even be eaten after a quick wash when cooking fuel is scarce."
+    },
+    {
+      "question": "How can I conserve water when rinsing sprouts twice a day during a water outage?",
+      "causeDiagnostic": "Bean rinse water contains zero soil or chemical toxins—only trace water-soluble plant compounds.",
+      "resolution": "Instead of growing a large batch at once, **sprout two tablespoons of beans in a small cup every two days in a relay cycle**, which requires only two paper cups of rinse water per day. Always collect the drained rinse water and reuse it for first-stage handwashing or flushing urine in your emergency toilet."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Trapped indoors on canned food and dry rice during a disaster? Within a month, vitamin C depletion causes bleeding gums and scurvy! Grow fresh vitamin sprouts in 5 days with zero soil! [5-35s Body] First, pick out any broken beans and soak whole soybeans or mung beans overnight in clean water with a piece of oak charcoal. Fill an empty jar one-quarter full, tie thin cotton gauze over the mouth, and prop it inverted at 45 degrees so zero water pools. Cover with a cardboard box and dark clothes to block 100% of light, and rinse morning and night to flush out heat. In 5 days, vitamin C multiplies 20 times! [35-45s Warning & Outro] Never sprout red kidney beans or potato eyes, and blanch soybean sprouts for 2 minutes! Save this survival manual now.",
+  "outcome": {
+    "title": "45-Degree Cotton-Gauze Zero-Stagnation Drainage & Cardboard Darkroom Soil-Free Vitamin Sprout System",
+    "badge": "FINAL SPEC // SOIL-FREE DARKROOM VITAMIN C SPROUT FARM",
+    "description": "A soil-free disaster nutrition system combining broken-seed culling and 8-hour charcoal soaking with 45-degree inverted cotton-gauze drainage, double-layer cardboard darkroom etiolation, and twice-daily metabolic heat flushing to multiply vitamin C 10–30x in 5 days.",
+    "svgFileName": "pr26-outcome.svg",
+    "svgLabels": [
+      "PR-26 COMPLETE // SOIL-FREE DARKROOM VITAMIN SPROUT FARM",
+      "STAGE 01: CULL & SOAK",
+      "Remove split beans + 8h soak",
+      "STAGE 02: 45-DEG DRAIN",
+      "Cotton gauze + 0% pooled water",
+      "STAGE 03: DARKROOM HOOD",
+      "Cardboard/cloth + 1.5cm vent",
+      "STAGE 04: RINSE & BLANCH",
+      "2x daily rinse + Day 5 blanch",
+      "FIELD VERIFIED // UP TO 20X VITAMIN C BIOSYNTHESIS IN 5 DAYS"
+    ]
+  },
+  "createdAt": "2026-11-09T01:46:25.453Z",
+  "updatedAt": "2026-11-09T01:48:42.186Z",
+  "contentHash": "45e82305911eee4d"
+}

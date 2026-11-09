@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg26s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="pot26s4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <pattern id="grid26s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow26s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg26s4)"/>
+  <rect width="400" height="400" fill="url(#grid26s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // 1일 2~3회 발아열 세척 배수 및 5일 차 비타민 수확</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">하루 2~3회 깨끗한 물을 부어 발아열과 끈적한 점액질 세척 배출</text>
+
+  <!-- Main 3D Illustration: Left (2x Daily Cooling Rinse & Greywater Reuse) & Right (Day 5 7-10cm Harvest & 2-Min Blanch) -->
+  <g filter="url(#shadow26s4)">
+    <!-- Left Panel: 2-3x Daily Rinse & Heat Flush -->
+    <rect x="24" y="88" width="164" height="150" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <!-- Rinse Vessel & Water Stream -->
+    <rect x="62" y="116" width="88" height="74" rx="5" fill="#1e293b" stroke="#7dd3fc" stroke-width="1.5"/>
+    <path d="M90,96 L90,126 M106,96 L106,126 M122,96 L122,126" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+    <!-- Sprouts Inside Being Cooled -->
+    <path d="M78,178 Q82,148 88,140 M104,178 Q108,146 114,138 M128,178 Q132,150 136,142" fill="none" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Greywater Collection Basin Below -->
+    <path d="M54,202 L158,202 L148,224 L64,224 Z" fill="#0369a1" stroke="#38bdf8" stroke-width="1.2"/>
+
+    <!-- Right Panel: Day 5 7-10cm Harvest & 2-Min Blanching Pot -->
+    <rect x="202" y="88" width="174" height="150" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+    <!-- Cooking Pot with Lid & 2-Min Blanching Steam -->
+    <path d="M232,148 L346,148 L336,214 L242,214 Z" fill="url(#pot26s4)" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="226" y="138" width="126" height="8" rx="2" fill="#94a3b8" stroke="#f8fafc" stroke-width="1"/>
+    <!-- Golden Bean Sprouts (7-10cm Finger Length) Inside Pot -->
+    <path d="M254,196 Q262,166 274,162" fill="none" stroke="#fef08a" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="276" cy="160" rx="6" ry="4" fill="#facc15"/>
+    <path d="M286,198 Q294,166 306,162" fill="none" stroke="#fef08a" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="308" cy="160" rx="6" ry="4" fill="#facc15"/>
+    <!-- Gentle Heat Waves Below -->
+    <path d="M266,228 Q272,218 278,228 M296,228 Q302,218 308,228" fill="none" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">배출된 세척수는 버리지 않고 냉각기 적심·위생 허드렛물로 재활용</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">5일 차 줄기 7~10cm 도달 시 수확 후 2분간 가볍게 데쳐 섭취</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 비타민 C 10~30배 증폭 달성 및 괴혈병·영양실조 완벽 예방</text>
+</svg>

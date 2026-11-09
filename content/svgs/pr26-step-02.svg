@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg26s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="jar26s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="grid26s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="gauzeMesh26s2" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M 4 0 L 0 0 0 4" fill="none" stroke="#f8fafc" stroke-width="0.8"/>
+    </pattern>
+    <filter id="shadow26s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg26s2)"/>
+  <rect width="400" height="400" fill="url(#grid26s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 면 거즈 통기 결속 및 45도 경사 무정체 배수 거치</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="66" fill="#fef08a" font-family="monospace" font-size="10.5">5~6배 팽창 공간을 위해 용기 부피의 1/4 이하로만 종자 충진</text>
+
+  <!-- Main 3D Illustration: 45-Degree Inverted Vessel with Cotton Gauze Mouth Draining into Dish -->
+  <g filter="url(#shadow26s2)">
+    <rect x="24" y="86" width="352" height="154" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+
+    <!-- Catch Dish at Bottom Left -->
+    <path d="M64,212 L196,212 L182,230 L78,230 Z" fill="#334155" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Tilted 45-Degree Sprouting Jar -->
+    <g transform="translate(185,156) rotate(-35)">
+      <!-- Jar Body -->
+      <rect x="-70" y="-42" width="140" height="84" rx="8" fill="url(#jar26s2)" stroke="#94a3b8" stroke-width="1.8"/>
+      <!-- Cotton Gauze Cap Tied Over Left Mouth -->
+      <rect x="-82" y="-32" width="14" height="64" rx="3" fill="url(#gauzeMesh26s2)" stroke="#f8fafc" stroke-width="1.5"/>
+      <!-- Natural Cord Binding -->
+      <rect x="-72" y="-35" width="5" height="70" rx="2" fill="#d97706" stroke="#fde047" stroke-width="1"/>
+
+      <!-- 1/4 Volume Soaked Soybeans Inside -->
+      <circle cx="-48" cy="18" r="8" fill="#facc15" stroke="#ca8a04" stroke-width="1"/>
+      <circle cx="-30" cy="20" r="8" fill="#eab308" stroke="#ca8a04" stroke-width="1"/>
+      <circle cx="-12" cy="22" r="8" fill="#facc15" stroke="#ca8a04" stroke-width="1"/>
+      <circle cx="-40" cy="4" r="8" fill="#eab308" stroke="#ca8a04" stroke-width="1"/>
+      <circle cx="-22" cy="6" r="8" fill="#facc15" stroke="#ca8a04" stroke-width="1"/>
+    </g>
+
+    <!-- Draining Water Droplets & Fresh Air Intake Arrow -->
+    <circle cx="118" cy="198" r="3.5" fill="#38bdf8"/>
+    <circle cx="126" cy="206" r="3.5" fill="#38bdf8"/>
+    <path d="M102,176 L132,154" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="3,2"/>
+
+    <!-- Approval Check Badge -->
+    <circle cx="326" cy="164" r="22" fill="#064e3b" stroke="#10b981" stroke-width="1.8"/>
+    <path d="M316,164 L323,172 L338,156" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="271" fill="#bae6fd" font-family="monospace" font-size="10.5">용기 입구를 얇은 면 거즈와 천연 끈으로 단단히 밀착 결속</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">받침 접시 위에 45도 각도로 거꾸로 기울여 잔류 수분 100% 배수</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 고인 물 제로화 및 산소 순환 확보로 뿌리 질식 부패 방지</text>
+</svg>

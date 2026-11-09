@@ -1,0 +1,246 @@
+{
+  "protocolId": "PR-26",
+  "category": "FOOD",
+  "title": "Como Cultivar Brotos de Feijão e Soja sem Terra no Escuro Usando um Pote Vazio, Pano de Algodão e Grãos Secos para Prevenir o Escorbuto",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[AUTOSSUFICIÊNCIA DE VITAMINA C EM ISOLAMENTO PROLONGADO & CULTIVO HIDROPÔNICO DE BROTOS NO ESCURO SEM TERRA]",
+  "summary": "Se a sua casa ou mochila de emergência já possui comprimidos multivitamínicos comerciais (vitamina C), pastilhas efervescentes, blocos de vegetais liofilizados ou uma bandeja germinadora própria, utilize sempre esses produtos prontos primeiro para garantir uma nutrição rápida e segura. Porém, quando guerras, grandes desastres ou isolamentos prolongados interrompem o abastecimento e as vitaminas acabam, sobreviver por 3 a 4 semanas apenas com enlatados, biscoitos secos, arroz branco e grãos esgota a vitamina C do corpo, causando escorbuto — sangramento nas gengivas, feridas que não cicatrizam e queda da imunidade. Grãos secos de soja amarela e feijão-mungo quase não têm vitamina C quando dormentes, mas água limpa e escuridão ativam enzimas que multiplicam a vitamina C e os aminoácidos de 10 a 30 vezes em 5 dias. Usando apenas um pote vazio, pano fino de algodão, um pedaço de [Carvão de Carvalho](/protocol-09.html) e uma caixa escura feita com sobras da [Cápsula Térmica de Papelão](/protocol-22.html), você colhe vegetais frescos ricos em vitaminas em 5 dias sem um punhado de terra.",
+  "timeRequired": "15 min de preparo inicial (mais 1 min de enxágue com água 2 a 3 vezes ao dia por 5 dias)",
+  "successRate": "98% (ao descartar grãos quebrados, drenar 100% da água a 45°, bloquear toda a luz e enxaguar 2 vezes ao dia)",
+  "difficulty": "Iniciante (Sem ferramentas ou terra; usa soja/feijão-mungo seco da despensa, pote vazio, pano fino de algodão e caixa escura)",
+  "outputPerHour": "1 punhado (100 g) de grãos secos rende 500–600 g (aumento de 5 a 6x no peso) de brotos frescos ricos em vitamina C em 5 dias",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Um Punhado (aprox. 100 g) de Grãos Secos Inteiros de Soja Amarela, Feijão-Mungo (Moyashi), Lentilha ou Sementes de Rabanete",
+      "desc": "Sementes vivas que duram anos secas e se transformam em vegetais frescos em 5 dias com água. Nunca use sementes agrícolas tratadas com agrotóxicos, grãos torrados ou grãos partidos/quebrados, pois apodrecem na água. Escolha sempre grãos crus inteiros de uso alimentar."
+    },
+    {
+      "id": "mat-02",
+      "name": "Recipiente Vazio de Boca Larga (ou Tigela Perfurada) & Pano Fino Respirável de Algodão (Gaze / Lenço) + Cordão",
+      "desc": "Funciona como vaso aeróbico de drenagem na falta de bandejas germinadoras. Cobrir a boca do pote com gaze 100% algodão e amarrar bem com [Cordão de Kudzu ou Casca de Árvore](/protocol-05.html) permite a entrada livre de ar enquanto escorre cada gota de água sem perder nenhum grão."
+    },
+    {
+      "id": "mat-03",
+      "name": "Caixa de Papelão 100% Vedada à Luz & Roupas Escuras + Água Limpa Purificada & Um Pedaço de Carvão de Carvalho",
+      "desc": "Impede que os brotos fiquem verdes, fibrosos e amargos com a luz e evita o apodrecimento bacteriano. Usar água limpa do [Sifão de Toalha & Esterilizador Solar SODIS](/protocol-23.html) e colocar um pedaço de [Carvão de Carvalho](/protocol-09.html) dentro do pote evita cheiro azedo e limo."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Descartar Todos os Grãos Quebrados ou Rachados e Deixar os Grãos Inteiros de Molho por 8 a 12 Horas em Água Limpa com Carvão",
+      "description": "1. **Lavar as Mãos e Retirar Grãos Quebrados ou Mofados**: Lave bem as mãos com [Sabão Natural de Cinza de Madeira](/protocol-13.html), espalhe um punhado de grãos secos num prato e **retire todos os grãos partidos ao meio, descascados, furados por insetos ou mofados**.\n2. **Lavar Suavemente Duas Vezes com Água Limpa**: Coloque apenas os grãos inteiros numa tigela limpa e lave-os suavemente duas vezes com água purificada do [Filtro de Carvão e Areia](/protocol-01.html) ou do [Sifão de Toalha & Esterilizador SODIS](/protocol-23.html) para remover a poeira.\n3. **Colocar 3x o Volume de Água e Adicionar Carvão de Carvalho**: Despeje água limpa morna até **3 vezes a altura dos grãos (três dedos acima dos grãos)** e coloque **um pedaço de [Carvão de Carvalho](/protocol-09.html) do tamanho da ponta do polegar** para manter a água fresca.\n4. **Deixar de Molho por 8–12 Horas no Escuro para Quebrar a Dormência**: Cubra a tigela com um pano durante a noite (8–12 horas) até os grãos absorverem água, **incharem para o dobro do tamanho** e apontarem pequenas pontas de raízes brancas.",
+      "actionNote": "> Por que deixar um único grão quebrado estraga toda a colheita: Grãos partidos perderam a capacidade de germinar; no ambiente úmido e morno do pote, liberam gosma amarela e apodrecem em 24 horas, espalhando bactérias para todos os grãos saudáveis ao redor.",
+      "svgFileName": "pr26-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SEPARAR GRÃOS PARTIDOS + MOLHO 3X ÁGUA (8-12H)",
+        "Retirar 100% dos grãos partidos/mofados contra podridão",
+        "Pôr 3x o volume de água limpa + 1 pedaço de carvão",
+        "Molho de 8-12h até dobrar de tamanho + ponta de raiz",
+        "[NÚCLEO] Triagem prévia bloqueia podridão bacteriana"
+      ],
+      "deepDive": {
+        "badge": "QUEBRA DE DORMÊNCIA & ATIVAÇÃO ENZIMÁTICA",
+        "title": "Quebra da Dormência por Embebição e Biossíntese de Vitamina C via L-Gulonolactona Oxidase",
+        "text": "Sementes secas de soja (*Glycine max*) e feijão-mungo (*Vigna radiata*) permanecem dormentes abaixo de 10% de umidade. **O molho por 8–12 horas** eleva a umidade interna para 50–60%, liberando hormônios giberelinas e ativando a enzima **L-gulonolactona oxidase**, que converte glicose em ácido ascórbico (vitamina C).",
+        "fieldSpecs": [
+          {
+            "name": "Grãos Selecionados de Soja e Feijão-Mungo Inchados ao Dobro Após 8–12 Horas de Molho com Carvão",
+            "scientificName": "Imbibed Glycine max & Vigna radiata Viable Seed Selection",
+            "categoryTag": "Triagem de Sementes Defeituosas / Quebra de Dormência 8–12h",
+            "imageFileName": "id-soaked-soybean-mungbean-selection.jpg",
+            "hudCode": "FIG. FOOD-26A // MACRO OPTIC",
+            "hudStatus": "SEED VIABILITY: 100% SORTED",
+            "traits": [
+              {
+                "label": "Triagem/Grãos",
+                "value": "**Grãos partidos ou sem casca** apodrecem imediatamente na água e devem ser removidos."
+              },
+              {
+                "label": "Molho/3xÁgua",
+                "value": "Use **3x o volume de água limpa com carvão de carvalho** para evitar que a água azede."
+              },
+              {
+                "label": "Inchaço/2x",
+                "value": "Encerre o molho após **8–12 horas quando dobrarem de tamanho** e escorra tudo."
+              }
+            ],
+            "fieldUse": "Ativação inicial de sementes maximizando a germinação e evitando apodrecimento no isolamento"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Amarrar Gaze Fina de Algodão na Boca do Pote e Apoiá-lo Invertido a 45 Graus para Drenar 100% da Água Parada",
+      "description": "1. **Escorrer a Água do Molho e Preencher Só 1/4 do Pote**: Descarte toda a água do molho e coloque os grãos inchados num recipiente de boca larga até **no máximo 1/4 da altura total**, deixando espaço para crescerem de 5 a 6 vezes.\n2. **Amarrar Gaze Fina Respirável de Algodão na Boca**: Estique uma **gaze fina 100% algodão ou lenço de algodão** sobre a boca do pote e amarre firmemente com três voltas de [Cordão de Kudzu](/protocol-05.html) ou barbante.\n3. **Apoiar Invertido num Ângulo de 45 Graus Sobre um Prato**: Se o pote ficar em pé, uma única colher de água parada no fundo sufoca e apodrece os grãos; apoie sempre o recipiente **com a boca para baixo a 45 graus** sobre um prato coletor.\n4. **Alternativa com Fundo Perfurado**: Se usar um pote ou vaso com furos no fundo, faça **pelo menos 15 furos da espessura de um grafite** na base e apoie o pote sobre dois gravetos **a 2 cm de altura do prato**.",
+      "actionNote": "> Por que deixar os grãos em água parada causa mau cheiro azedo da noite para o dia: Ao germinar, os grãos respiram oxigênio e liberam calor. Se ficarem submersos em água parada, sufocam e entram em fermentação alcoólica anaeróbica, virando uma massa viscosa e podre.",
+      "svgFileName": "pr26-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TAMPA DE GAZE + DRENAGEM INVERTIDA A 45 GRAUS",
+        "Encher no máx. 1/4 do pote para expansão de 5-6x",
+        "Amarrar gaze de algodão respirável com cordão natural",
+        "Apoiar invertido a 45 graus para drenar 100% da água",
+        "[NÚCLEO] Zero água parada + ar evita asfixia da raiz"
+      ],
+      "deepDive": {
+        "badge": "GEOMETRIA DE DRENAGEM AERÓBICA",
+        "title": "Demanda de Oxigênio na Respiração Celular de Sementes e Engenharia de Drenagem por Gravidade a 45 Graus",
+        "text": "Sementes em germinação consomem muito oxigênio para a divisão celular. Apenas 5 mm de **água estagnada** no fundo reduzem a difusão de oxigênio em 10.000 vezes, provocando **fermentação anaeróbica e podridão mole**. Inverter o pote com gaze a **45 graus** drena 100% da água por gravidade e renova o ar.",
+        "fieldSpecs": [
+          {
+            "name": "Recipiente Germinador Invertido a 45 Graus com Boca de Drenagem em Gaze de Algodão",
+            "scientificName": "45-Degree Inverted Cotton-Gauze Aerobic Sprouting Vessel",
+            "categoryTag": "Zero Água Estagnada / Circulação Aeróbica de Oxigênio",
+            "imageFileName": "id-perforated-jar-cotton-gauze-drain.jpg",
+            "hudCode": "FIG. FOOD-26B // MACRO OPTIC",
+            "hudStatus": "STAGNANT WATER: 0% DRAINED",
+            "traits": [
+              {
+                "label": "Volume/Quarto",
+                "value": "Preencha **no máximo 1/4 do pote** para acomodar o crescimento de 5x."
+              },
+              {
+                "label": "Gaze/Boca",
+                "value": "**Amarre gaze fina de algodão na boca** para drenar a água sem perder grãos."
+              },
+              {
+                "label": "Inclinar/45G",
+                "value": "Mantenha o pote **inclinado a 45 graus** após enxaguar para não acumular água."
+              }
+            ],
+            "fieldUse": "Drenagem hidropônica sem terra e aeração usando qualquer pote vazio sem peneiras comerciais"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Cobrir com Caixa de Papelão e Roupas Escuras para Bloquear 100% da Luz Mantendo Temperatura Amena (18–24 °C)",
+      "description": "1. **Cobrir o Recipiente com uma Caixa de Papelão Ondulado**: Coloque uma **caixa de papelão ondulado** das sobras da [Cápsula Térmica de Papelão](/protocol-22.html) ou um balde opaco sobre o pote inclinado para bloquear a luz do sol e das lâmpadas.\n2. **Envolver com Roupas Escuras para Dupla Vedação**: Cubra a caixa de papelão com **roupas grossas pretas ou um cobertor escuro** para que nenhum feixe de luz entre pelas frestas.\n3. **Deixar uma Fresta de Ventilação de 1,5 cm na Base**: Não vede a base hermeticamente ou o calor dos grãos irá cozinhá-los; apoie um canto inferior da caixa sobre uma **pedrinha para deixar uma fresta de ar de 1,5 cm (um dedo)**.\n4. **Manter em Local Interno Ameno (18–24 °C)**: Deixe a câmara escura longe de janelas frias num **canto interno sem vento ou armário (18–24 °C)**, onde os brotos amarelos crescerão um dedo por dia.",
+      "actionNote": "> Por que expor os brotos à luz solar ou lâmpadas por apenas 10 minutos estraga a textura e o sabor: Assim que a luz atinge as cabeças dos brotos, eles sintetizam clorofila verde, deixando os caules duros e fibrosos, além de produzir compostos amargos indigesto.",
+      "svgFileName": "pr26-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CAPUZ DUPLO DE PAPELÃO + PANO ESCURO (0% LUZ)",
+        "Cobrir pote com caixa de papelão + pano escuro (0% luz)",
+        "Evita clorofila verde + fibras duras para caules macios",
+        "Calçar base da caixa em 1,5 cm para ventilar calor e ar",
+        "[NÚCLEO] Bloqueio 100% de luz + calor interno de 18-24°C"
+      ],
+      "deepDive": {
+        "badge": "CONTROLE DE ESTIOLAMENTO NO ESCURO",
+        "title": "Supressão de Clorofila e Alongamento Macio do Hipocótilo por Cultivo de Estiolamento no Escuro",
+        "text": "Sementes que germinam na escuridão total passam pelo **estiolamento**, concentrando energia no rápido alongamento do caule (hipocótilo) em busca de luz. Bloquear a luz visível impede a **síntese de clorofila e o endurecimento por lignina**, gerando brotos amarelos macios enquanto a fresta de 1,5 cm dissipa o calor.",
+        "fieldSpecs": [
+          {
+            "name": "Capuz de Câmara Escura de Dupla Camada em Papelão Ondulado e Tecido Blackout",
+            "scientificName": "Double-Layered Corrugated Cardboard & Blackout Cloth Etiolation Hood",
+            "categoryTag": "Bloqueio de 100% da Luz Visível / Maciez por Estiolamento",
+            "imageFileName": "id-cardboard-darkroom-blackout-hood.jpg",
+            "hudCode": "FIG. FOOD-26C // MACRO OPTIC",
+            "hudStatus": "LIGHT TRANSMITTANCE: 0.0%",
+            "traits": [
+              {
+                "label": "Capuz/Duplo",
+                "value": "Sobreponha **roupas escuras à caixa de papelão** para escuridão total."
+              },
+              {
+                "label": "Fresta/Base",
+                "value": "Deixe **1,5 cm de abertura na base** para entrada de oxigênio fresco."
+              },
+              {
+                "label": "Clima/18-24C",
+                "value": "Mantenha em **ambiente interno ameno (18–24 °C)** para colher em 5 dias."
+              }
+            ],
+            "fieldUse": "Estrutura de câmara escura que evita fibras duras e amargor nos brotos cultivados dentro de casa"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Enxaguar 2 a 3 Vezes ao Dia com Água Limpa para Dissipar o Calor, Colher no 5º Dia (7–10 cm) e Branquear por 2 Minutos",
+      "description": "1. **Enxaguar 2–3 Vezes ao Dia para Remover Calor e Mucilagem**: Em meia-luz, **despeje água limpa pela gaze 2 a 3 vezes ao dia (manhã e noite), gire suavemente por 10 segundos** para lavar a mucilagem pegajosa e o calor metabólico, e escorra tudo.\n2. **Reutilizar 100% da Água Escorrida do Enxágue**: Na falta de água, nunca jogue fora a água escorrida; recolha-a numa tigela para dar descarga de urina no [Banheiro Seco de Emergência](/protocol-25.html) ou umedecer a areia do [Refrigerador de Pote de Barro Zeer](/protocol-16.html).\n3. **Colher no 5º Dia com o Comprimento do Dedo Indicador (7–10 cm)**: Após 4–6 dias, quando os caules brancos atingirem **o comprimento do dedo indicador (7–10 cm)**, o teor de vitamina C atinge o pico.\n4. **Ferver os Brotos de Soja por 2 Minutos Antes de Comer**: A soja crua contém inibidores digestivos; cozinhe os brotos de soja com tampa sobre o [Aquecedor a Pavio de Lata de Atum](/protocol-21.html) ou [Fogão Gaseificador de Duas Latas](/protocol-12.html) em água fervente por **2 a 3 minutos**.",
+      "actionNote": "> Por que borrifar água não funciona e você deve despejar água e drenar por completo: Apenas borrifar deixa a mucilagem pegajosa e o calor da germinação presos dentro do pote, transformando-o numa incubadora morna onde bactérias apodrecem os brotos em 24 horas.",
+      "svgFileName": "pr26-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ENXÁGUE TÉRMICO 2-3X/DIA + COLHEITA NO 5º DIA",
+        "Enxaguar 2-3x ao dia com água limpa contra calor e limo",
+        "Reutilizar água drenada no pote refrigerador ou higiene",
+        "Colher com 7-10 cm no 5º dia + ferver por 2 min",
+        "[NÚCLEO] Multiplica Vitamina C 10-30x + evita escorbuto"
+      ],
+      "deepDive": {
+        "badge": "DISSIPAÇÃO DE CALOR METABÓLICO & PICO VITAMÍNICO",
+        "title": "Dissipação de Calor Metabólico por Enxágue Completo, Pico de Ascorbato no 5º Dia e Desnaturação de Inibidores de Tripsina",
+        "text": "Sementes germinando geram calor respiratório que eleva a temperatura do pote em **3–5 °C** e secretam mucilagem. Enxaguar 2–3 vezes ao dia resfria os grãos e renova o oxigênio. A vitamina C atinge o pico no **5º dia (7–10 cm, 15–25 mg/100 g)**, e **ferver por 2 minutos a 100 °C** inativa os inibidores de tripsina da soja preservando mais de 70% da vitamina C.",
+        "fieldSpecs": [
+          {
+            "name": "Brotos de Soja e Feijão-Mungo Ricos em Vitamina C Colhidos no 5º Dia com 7–10 cm",
+            "scientificName": "5-Day Harvested High-Ascorbate Soybean & Mung Bean Sprouts",
+            "categoryTag": "Resfriamento Metabólico / Colheita no Pico de Vitamina C no 5º Dia",
+            "imageFileName": "id-harvested-fresh-vitamin-bean-sprouts.jpg",
+            "hudCode": "FIG. FOOD-26D // MACRO OPTIC",
+            "hudStatus": "VITAMIN C: +2000% SYNTHESIZED",
+            "traits": [
+              {
+                "label": "Enxágue/Frio",
+                "value": "**Enxaguar abundantemente 2–3x ao dia** remove o calor e a mucilagem pegajosa."
+              },
+              {
+                "label": "Pico/Dia5",
+                "value": "Colha com **7–10 cm no 5º dia** para obter o máximo de vitamina C."
+              },
+              {
+                "label": "Ferver/2Min",
+                "value": "**Ferva os brotos de soja por 2 minutos** para digestão segura sem cólicas."
+              }
+            ],
+            "fieldUse": "Produção contínua sem terra de vitamina C fresca e fibras durante isolamento prolongado"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca Cultive Brotos de Feijão-Vermelho (Kidney) ou Brotos de Batata para Comer Crus, e Descarte Imediatamente Brotos com Cheiro Azedo e Limo",
+    "description": "Nem toda semente pode ser germinada e consumida rapidamente. O feijão-vermelho (*Kidney bean*) contém alta concentração de fito-hemaglutinina, uma lectina tóxica que causa vômitos graves e cólicas intensas a menos que seja fervida por mais de 10 minutos, enquanto brotos de batata e cascas verdes contêm solanina, neurotoxina resistente ao calor. Além disso, se a má drenagem deixar os brotos com cheiro azedo e gosmentos, bactérias patogênicas (*Salmonella* ou *E. coli*) se multiplicaram — descarte tudo imediatamente. Cultive apenas soja amarela, feijão-mungo ou rabanete, ferva os brotos de soja por 2 minutos no [Aquecedor de Lata de Atum](/protocol-21.html) e, em caso de diarreia, hidrate-se com [Soro Caseiro (SRO)](/protocol-24.html).",
+    "consequence": "Use apenas soja, feijão-mungo, lentilha ou sementes de rabanete comestíveis e siga rigorosamente: 'Drenagem a 45° + Capuz escuro + Enxágue 2x ao dia + Fervura de 2 minutos'."
+  },
+  "faqs": [
+    {
+      "question": "Quais outras sementes da despensa posso germinar para obter vitamina C se não tiver soja amarela ou feijão-mungo?",
+      "causeDiagnostic": "As enzimas de biossíntese de vitamina C são ativadas durante a germinação de quase todas as leguminosas, grãos integrais e sementes de brássicas comestíveis.",
+      "resolution": "**Lentilha, grão-de-bico, ervilha, trigo em grão, cevada, arroz integral, sementes de rabanete, brócolis, alfafa, girassol e abóbora** podem ser germinados exatamente do mesmo modo. Brotos de rabanete, brócolis, lentilha e feijão-mungo ficam prontos em 3–4 dias e podem ser consumidos após lavagem rápida se faltar combustível."
+    },
+    {
+      "question": "Como economizar água ao enxaguar os brotos duas vezes por dia durante uma falta de água?",
+      "causeDiagnostic": "A água do enxágue dos brotos não contém terra nem produtos químicos, apenas compostos vegetais solúveis inofensivos.",
+      "resolution": "Em vez de fazer uma grande quantidade de uma só vez, **coloque duas colheres de sopa de grãos num copo pequeno a cada dois dias em sistema de revezamento**, gastando apenas dois copinhos de água por dia. Recolha sempre a água drenada para lavar as mãos ou usar no banheiro seco."
+    }
+  ],
+  "shortsScript": "[0-5s Hook] Preso em casa comendo só enlatados e arroz seco no desastre? Em um mês, a falta de vitamina C causa sangramento na gengiva e escorbuto! Cultive brotos frescos em 5 dias sem terra! [5-35s Body] Primeiro, retire os grãos quebrados e deixe a soja ou feijão-mungo de molho durante a noite em água limpa com um pedaço de carvão. Encha um quarto do pote, amarre gaze de algodão na boca e apoie invertido a 45 graus sem água parada. Cubra com caixa de papelão e roupa escura contra a luz, e enxágue de manhã e à noite. Em 5 dias, a vitamina C multiplica 20 vezes! [35-45s Warning & Outro] Nunca use feijão-vermelho ou broto de batata, e ferva o broto de soja por 2 minutos! Salve este manual.",
+  "outcome": {
+    "title": "Sistema Hidropônico de Brotos Vitamínicos no Escuro com Drenagem a 45 Graus em Gaze de Algodão e Capuz de Papelão",
+    "badge": "FINAL SPEC // FAZENDA DE BROTOS DE VITAMINA C NO ESCURO SEM TERRA",
+    "description": "Um sistema de nutrição de emergência sem terra que combina triagem de grãos e molho com carvão por 8h, drenagem invertida a 45 graus em gaze de algodão, câmara escura dupla de papelão e enxágue térmico duas vezes ao dia para multiplicar a vitamina C em 10–30x em 5 dias.",
+    "svgFileName": "pr26-outcome.svg",
+    "svgLabels": [
+      "PR-26 COMPLETE // CULTIVO DE BROTOS NO ESCURO SEM TERRA",
+      "ETAPA 01: TRIAGEM E MOLHO",
+      "Tirar partidos + 8h molho",
+      "ETAPA 02: DRENO A 45 GRAUS",
+      "Gaze de algodão + 0% água",
+      "ETAPA 03: CAPUZ ESCURO",
+      "Papelão/pano + fresta 1,5cm",
+      "ETAPA 04: ENXÁGUE E FERVURA",
+      "Enxágue 2x + ferver no 5º dia",
+      "FIELD VERIFIED // ATÉ 20X MAIS VITAMINA C EM 5 DIAS"
+    ]
+  },
+  "createdAt": "2026-11-09T01:46:25.453Z",
+  "updatedAt": "2026-11-09T01:48:42.186Z",
+  "contentHash": "45e82305911eee4d"
+}
