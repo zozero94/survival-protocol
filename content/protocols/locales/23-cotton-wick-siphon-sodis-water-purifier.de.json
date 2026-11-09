@@ -4,7 +4,7 @@
   "title": "Trinkwasser bei Wasser- und Stromausfall mit Baumwolltuch-Kapillarsiphon & Sonnenlicht (SODIS) aufbereiten",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[STÄDTISCHER WASSERAUSFALL & BRENNSTOFFFREIE KAPILLARFILTRATION + UV-SONNENDESINFEKTION]",
-  "summary": "Wenn Sie zu Hause bereits abgefülltes Flaschenwasser, einen tragbaren Outdoor-Trinkhalmfilter (wie LifeStraw), Chlordioxid-Wasserentkeimungstabletten oder einen Hohlfaser-Schwerkraftfilter besitzen, nutzen Sie diese Fertigprodukte immer zuerst – das ist am schnellsten und sichersten. Wenn jedoch Erdbeben, Krieg oder ein flächendeckender Blackout Flaschenwasser und Tabletten erschöpfen und Sie in einer Stadtwohnung weder Holzkohle noch Flusssand oder Gas/Strom zum Abkochen haben (in der Natur mit Kohle und Sand nutzen Sie den [Wildnis-Holzkohle-Sand-Filter](/protocol-01.html)), führt das Trinken von trübem Regen- oder rostigem Leitungswasser binnen 3 Tagen zu schwerem Durchfall und lebensbedrohlicher Dehydrierung. Indem Sie sauberes Reservewasser aus dem Keramik-Spülkasten der Toilette oder Regenwasser gewinnen, Schwebstoffe und Rost über eine gedrehte 100%-Baumwolltuch-Kapillarbrücke abfiltern und das klare Wasser in farblosen PET-Flaschen auf einem Alufolien-Reflektor 6 Stunden praller Sonne aussetzen (WHO-anerkannte SODIS-Methode), gewinnen Sie keimfreies Trinkwasser völlig ohne Brennstoff.",
+  "summary": "Wenn Sie zu Hause bereits abgefülltes Flaschenwasser, einen tragbaren Outdoor-Trinkhalmfilter (wie LifeStraw), Chlordioxid-Wasserentkeimungstabletten oder einen Hohlfaser-Schwerkraftfilter besitzen, nutzen Sie diese Fertigprodukte immer zuerst – das ist am schnellsten und sichersten. Wenn jedoch Erdbeben, Krieg oder ein flächendeckender Blackout Flaschenwasser und Tabletten erschöpfen und Sie in einer Stadtwohnung weder Holzkohle noch Flusssand oder Gas/Strom zum Abkochen haben (in der Natur mit Kohle und Sand nutzen Sie den [Wildnis-Holzkohle-Sand-Filter](/protocol-01)), führt das Trinken von trübem Regen- oder rostigem Leitungswasser binnen 3 Tagen zu schwerem Durchfall und lebensbedrohlicher Dehydrierung. Indem Sie sauberes Reservewasser aus dem Keramik-Spülkasten der Toilette oder Regenwasser gewinnen, Schwebstoffe und Rost über eine gedrehte 100%-Baumwolltuch-Kapillarbrücke abfiltern und das klare Wasser in farblosen PET-Flaschen auf einem Alufolien-Reflektor 6 Stunden praller Sonne aussetzen (WHO-anerkannte SODIS-Methode), gewinnen Sie keimfreies Trinkwasser völlig ohne Brennstoff.",
   "timeRequired": "2 Std. Filtration + 6 Std. Sonnendesinfektion (automatisches Kapillartropfen & direkte Sonnenbestrahlung)",
   "successRate": "99% (nach Stufenfiltration über ein 100%-Baumwolltuch und 6 Stunden direkter Sonne in farblosen PET-Flaschen)",
   "difficulty": "Anfänger (Ohne Feuer, Kohle oder Sand – benötigt nur ein Baumwolltuch, zwei Töpfe und klare PET-Flaschen)",
@@ -18,12 +18,12 @@
     {
       "id": "mat-02",
       "name": "2–3 etikettenfreie, farblose, transparente PET-Flaschen bis 2 L (unverkratzte Wasser-/Limoflaschen)",
-      "desc": "UV-A-durchlässige Entkeimungsgefäße bei fehlenden Tabletten oder Brennholz. Es müssen farblose Flaschen mit dem Recycling-Dreieck #1 (PET) am Boden sein; entfernen Sie Etiketten und Klebereste restlos mit dem Fingernagel oder einem [primitiven Steinmesser](/protocol-04.html)."
+      "desc": "UV-A-durchlässige Entkeimungsgefäße bei fehlenden Tabletten oder Brennholz. Es müssen farblose Flaschen mit dem Recycling-Dreieck #1 (PET) am Boden sein; entfernen Sie Etiketten und Klebereste restlos mit dem Fingernagel oder einem [primitiven Steinmesser](/protocol-04)."
     },
     {
       "id": "mat-03",
       "name": "Küchen-Alufolie (2 Handspannen) & 1 Wellpappe-Platte (Reiskleister oder Kiefernharz)",
-      "desc": "Solarreflektor, der Sonnenlicht und Infrarotwärme auf die Flaschenunterseite zurückwirft und die Entkeimung verdoppelt. Kleben Sie die glänzende Folienseite mit Reiskleister oder [Kiefernharz-Pechkleber](/protocol-10.html) auf die Pappe."
+      "desc": "Solarreflektor, der Sonnenlicht und Infrarotwärme auf die Flaschenunterseite zurückwirft und die Entkeimung verdoppelt. Kleben Sie die glänzende Folienseite mit Reiskleister oder [Kiefernharz-Pechkleber](/protocol-10) auf die Pappe."
     }
   ],
   "steps": [
@@ -63,7 +63,7 @@
               },
               {
                 "label": "MEERWASSER/NEIN",
-                "value": "Gelöstes Meersalz filtert kein Tuch; Salzwasser muss im [Ton-Bambus-Meerwasserdestillator](/protocol-20.html) gekocht werden."
+                "value": "Gelöstes Meersalz filtert kein Tuch; Salzwasser muss im [Ton-Bambus-Meerwasserdestillator](/protocol-20) gekocht werden."
               }
             ],
             "fieldUse": "Notwassergewinnung in Wohnungen bei Leitungsausfall und Grobstoff-Vorabscheidung"
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: Flasche liegend auf Alufolien-Reflektorpappe 6 Stunden in pralle Sonne legen (oder 3 Min. abkochen)",
-      "description": "1. **Alufolien-Reflektorpappe bauen**: Knicken Sie ein flaches Stück Wellpappe leicht V-förmig ein und kleben Sie **Küchen-Alufolie (glänzende Seite nach oben)** glatt auf die Innenseite.\n2. **Flaschen waagerecht in direkte Südsonne legen**: Platzieren Sie den Reflektor an einem schattenfreien Platz im Freien (offener Balkon, Dach oder Hof, 30–45° zur Sonne geneigt) und **legen Sie die klaren PET-Flaschen waagerecht darauf** – niemals aufrecht hinstellen.\n3. **6 Stunden in der Mittagssonne bestrahlen**: Lassen Sie die Flaschen zwischen 9 und 15 Uhr **mindestens 6 Stunden am Stück in direkter Sonne**, damit UV-A-Strahlen und >50°C Sonnenwärme alle Keime abtöten (bei mehr als 50% Bewölkung **2 volle Tage** auslegen; bei Dauerregen Regenwasser direkt auffangen oder abkochen).\n4. **Abkühlen & trinken oder 3 Min. kochen**: Lassen Sie das **badewarme Wasser** nach 6 Stunden im Schatten abkühlen; falls ein [Zwei-Dosen-Holzvergaserkocher](/protocol-12.html) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21.html) bereitsteht, können Sie das gefilterte Wasser alternativ 3 Minuten sprudelnd abkochen.",
+      "description": "1. **Alufolien-Reflektorpappe bauen**: Knicken Sie ein flaches Stück Wellpappe leicht V-förmig ein und kleben Sie **Küchen-Alufolie (glänzende Seite nach oben)** glatt auf die Innenseite.\n2. **Flaschen waagerecht in direkte Südsonne legen**: Platzieren Sie den Reflektor an einem schattenfreien Platz im Freien (offener Balkon, Dach oder Hof, 30–45° zur Sonne geneigt) und **legen Sie die klaren PET-Flaschen waagerecht darauf** – niemals aufrecht hinstellen.\n3. **6 Stunden in der Mittagssonne bestrahlen**: Lassen Sie die Flaschen zwischen 9 und 15 Uhr **mindestens 6 Stunden am Stück in direkter Sonne**, damit UV-A-Strahlen und >50°C Sonnenwärme alle Keime abtöten (bei mehr als 50% Bewölkung **2 volle Tage** auslegen; bei Dauerregen Regenwasser direkt auffangen oder abkochen).\n4. **Abkühlen & trinken oder 3 Min. kochen**: Lassen Sie das **badewarme Wasser** nach 6 Stunden im Schatten abkühlen; falls ein [Zwei-Dosen-Holzvergaserkocher](/protocol-12) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21) bereitsteht, können Sie das gefilterte Wasser alternativ 3 Minuten sprudelnd abkochen.",
       "actionNote": "> Warum die PET-Flasche waagerecht auf Alufolie liegen muss statt aufrecht zu stehen: Steht die Flasche aufrecht, ist die Wassersäule zu tief für UV-Strahlen. Liegend bleibt die Wassertiefe unter 10 cm (Handbreit), und die Alufolie reflektiert das Sonnenlicht ein zweites Mal von unten durch das Wasser.",
       "svgFileName": "pr23-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Niemals grüne/braune Farbflaschen oder Sonne hinter geschlossenen Glasfenstern nutzen, und niemals chemisch belastetes Wasser trinken",
-    "description": "Gefärbte Plastikflaschen (grüne Limo- oder braune Bierflaschen) sowie stark zerkratzte blinde Flaschen blockieren UV-A-Strahlen vollständig, sodass tödliche Keime trotz Sonnenbad überleben. Ebenso hält geschlossenes Doppel-Fensterglas die UV-Strahlung ab – öffnen Sie das Fenster ganz oder legen Sie die Flaschen ins Freie (an Regentagen oder nachts kochen Sie das Wasser auf dem [Zwei-Dosen-Holzvergaserkocher](/protocol-12.html) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21.html) ab). Trinken Sie zudem niemals Spülkastenwasser mit blauen Chemie-Duftsteinen, Frostschutzmittel, Öl oder Pestiziden, da weder Tuch noch Sonne chemische Gifte entfernen.",
+    "description": "Gefärbte Plastikflaschen (grüne Limo- oder braune Bierflaschen) sowie stark zerkratzte blinde Flaschen blockieren UV-A-Strahlen vollständig, sodass tödliche Keime trotz Sonnenbad überleben. Ebenso hält geschlossenes Doppel-Fensterglas die UV-Strahlung ab – öffnen Sie das Fenster ganz oder legen Sie die Flaschen ins Freie (an Regentagen oder nachts kochen Sie das Wasser auf dem [Zwei-Dosen-Holzvergaserkocher](/protocol-12) oder [Thunfischdosen-Speiseöl-Heizer](/protocol-21) ab). Trinken Sie zudem niemals Spülkastenwasser mit blauen Chemie-Duftsteinen, Frostschutzmittel, Öl oder Pestiziden, da weder Tuch noch Sonne chemische Gifte entfernen.",
     "consequence": "Nur chemiefreies Rohwasser wählen, klar filtern, in farblose PET-#1-Flaschen füllen und volle 6 Stunden direkter Sonne aussetzen."
   },
   "faqs": [
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T02:26:54.183Z",
-  "contentHash": "621efe19c4a078a8"
+  "updatedAt": "2026-11-04T11:56:30+09:00",
+  "contentHash": "1e9b8d304fe76a93"
 }

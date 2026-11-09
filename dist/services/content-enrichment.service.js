@@ -79,77 +79,77 @@ import path from 'node:path';
 const PROTOCOL_DEPENDENCY_CATALOG                        = [
   {
     protocolId: 'PR-01',
-    url: '/protocol-01.html',
+    url: '/protocol-01',
     defaultLabelKo: '자연 정수 필터',
     keywords: /(정수|흙탕물\s*여과|식수\s*여과|water\s*filter|water\s*purif)/i,
     rationale: '오염된 물을 걸러내고 끓여 식수를 확보하는 원시 정수 프로토콜과 직접 연결됩니다.',
   },
   {
     protocolId: 'PR-02',
-    url: '/protocol-02.html',
+    url: '/protocol-02',
     defaultLabelKo: '활비비 마찰 발화법',
     keywords: /(활비비|마찰\s*발화|불씨\s*피우기|모닥불\s*점화|bow\s*drill|friction\s*fire)/i,
     rationale: '라이터 없이 나무 마찰열로 불씨와 모닥불을 피우는 발화 프로토콜이 선행되어야 합니다.',
   },
   {
     protocolId: 'PR-03',
-    url: '/protocol-03.html',
+    url: '/protocol-03',
     defaultLabelKo: 'A프레임 낙엽 은신처(데브리 헛)',
     keywords: /(움막\s*기둥|은신처|데브리\s*헛|debris\s*hut|shelter\s*frame)/i,
     rationale: '체온 유지를 위한 A프레임 단열 은신처 구축 프로토콜과 연계됩니다.',
   },
   {
     protocolId: 'PR-04',
-    url: '/protocol-04.html',
+    url: '/protocol-04',
     defaultLabelKo: '돌도끼 및 날카로운 돌날 제작법',
     keywords: /(돌도끼|돌칼|날카로운\s*돌날|박리\s*돌날|stone\s*axe|stone\s*knife|sharp\s*stone\s*flake)/i,
     rationale: '나무껍질 채취, 기둥 벌목, 홈 파기에 필수적인 석기(돌칼·돌도끼) 제작 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-05',
-    url: '/protocol-05.html',
+    url: '/protocol-05',
     defaultLabelKo: '야생 칡덩굴 밧줄 만드는 법',
     keywords: /(칡덩굴|야생\s*밧줄|속껍질\s*섬유|식물\s*밧줄|끈으로\s*묶|천연\s*로프|natural\s*cordage|kudzu\s*rope|bast\s*fiber)/i,
     rationale: '도끼 자루 결속, 삼발이 묶기, 활비비 줄에 쓰이는 고강도 야생 밧줄 제작 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-06',
-    url: '/protocol-06.html',
+    url: '/protocol-06',
     defaultLabelKo: '진흙 화덕 및 다코타 무연 아궁이',
     keywords: /(진흙\s*화덕|무연\s*화덕|다코타\s*화덕|clay\s*hearth|dakota\s*fire)/i,
     rationale: '열효율을 높이고 연기를 줄이는 밀폐형 진흙 화덕 구축 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-08',
-    url: '/protocol-08.html',
+    url: '/protocol-08',
     defaultLabelKo: '4자형 낙하 돌덫(Figure-4 Deadfall)',
     keywords: /(4자형\s*덫|돌덫|인계철선|사냥\s*함정|deadfall\s*trap|figure-4)/i,
     rationale: '수면 중 칼로리를 자동으로 확보하는 원시 물리 함정 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-09',
-    url: '/protocol-09.html',
+    url: '/protocol-09',
     defaultLabelKo: '지하 흙구덩이 참나무 숯가마',
     keywords: /(참나무\s*숯|숯가루|숯불\s*잔열|숯가마|활성탄|charcoal\s*powder|oak\s*charcoal|pit\s*kiln)/i,
     rationale: '정수 필터 흡착제, 송진 경화제, 무연 고열 연료로 쓰이는 고밀도 참나무 숯 제조 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-10',
-    url: '/protocol-10.html',
+    url: '/protocol-10',
     defaultLabelKo: '소나무 송진 방수 접착제 및 소독 연고',
     keywords: /(소나무\s*송진|송진\s*접착제|방수\s*접착제|상처\s*소독\s*연고|천연\s*에폭시|pine\s*resin|pitch\s*glue)/i,
     rationale: '돌도끼 결속 방수 코팅과 야생 외상 소독에 필수적인 송진 정제 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-11',
-    url: '/protocol-11.html',
+    url: '/protocol-11',
     defaultLabelKo: '원시 버드나무 깔때기 통발 어로법',
     keywords: /(버드나무\s*통발|깔때기\s*통발|어로\s*통발|물고기\s*함정|fish\s*trap|willow\s*funnel)/i,
     rationale: '수면 중 강물에서 민물고기를 자동으로 포획하는 원시 버드나무 통발 프로토콜과 연결됩니다.',
   },
   {
     protocolId: 'PR-12',
-    url: '/protocol-12.html',
+    url: '/protocol-12',
     defaultLabelKo: '빈 깡통 이중 연소 우드 가스 스토브',
     keywords: /(우드\s*가스\s*스토브|깡통\s*스토브|깡통\s*화덕|이중\s*연소\s*화덕|폐전선|wood\s*gas\s*stove|tin\s*can\s*stove)/i,
     rationale: '도시 폐자재인 빈 깡통 2개와 폐전선으로 연기 없이 물을 끓이는 고화력 이중 연소 스토브 프로토콜과 연결됩니다.',
@@ -228,14 +228,14 @@ export class CrossLinkerService {
           });
         }
 
-        const protoMatch = link.url.match(/^\/protocol-(\d{2})\.html$/);
+        const protoMatch = link.url.match(/^\/protocol-(\d{2})(?:\.html)?$/);
         if (!protoMatch) {
           validationIssues.push({
             location,
             rawLink: link.raw,
             targetUrl: link.url,
             reason: 'BROKEN_TARGET',
-            message: `${location}: 유효하지 않은 프로토콜 경로 형식입니다 (${link.url}). '/protocol-XX.html' 형식이어야 합니다.`,
+            message: `${location}: 유효하지 않은 프로토콜 경로 형식입니다 (${link.url}). '/protocol-XX' 형식이어야 합니다.`,
           });
           continue;
         }

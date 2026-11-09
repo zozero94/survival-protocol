@@ -4,7 +4,7 @@
   "title": "Como Fazer uma Cápsula Térmica e Saco de Dormir Sem Energia (+7°C) com Caixas de Papelão, Jornal e Roupas Velhas",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFESA CONTRA HIPOTERMIA EM APAGÃO DE INVERNO & CÁPSULA TÉRMICA SEM ENERGIA]",
-  "summary": "Se você já tiver equipamentos de inverno prontos em casa, como saco de dormir térmico, barraca térmica interna, manta aluminizada de emergência, aquecedores químicos ou bolsa de água quente, use-os sempre primeiro como a solução mais rápida e quente. Porém, quando um apagão de inverno ou corte de aquecimento se prolonga, os aquecedores acabam e não há barraca térmica, dormir no chão frio de concreto apenas com cobertores drena 70% do calor do corpo para o piso e causa hipotermia durante o sono (em isolamento na mata, construa um [Abrigo de Folhas Secas Debris Hut](/protocol-03.html)). Empilhando caixas de papelão desmontadas em 3 camadas no chão, montando um capuz de papelão forrado com folha metálica culinária e enchendo uma capa de edredom com bolas de jornal amassado, seus próprios 100W de calor corporal aquecem o interior da cápsula de 6 a 8°C acima da temperatura do quarto sem gastar combustível.",
+  "summary": "Se você já tiver equipamentos de inverno prontos em casa, como saco de dormir térmico, barraca térmica interna, manta aluminizada de emergência, aquecedores químicos ou bolsa de água quente, use-os sempre primeiro como a solução mais rápida e quente. Porém, quando um apagão de inverno ou corte de aquecimento se prolonga, os aquecedores acabam e não há barraca térmica, dormir no chão frio de concreto apenas com cobertores drena 70% do calor do corpo para o piso e causa hipotermia durante o sono (em isolamento na mata, construa um [Abrigo de Folhas Secas Debris Hut](/protocol-03)). Empilhando caixas de papelão desmontadas em 3 camadas no chão, montando um capuz de papelão forrado com folha metálica culinária e enchendo uma capa de edredom com bolas de jornal amassado, seus próprios 100W de calor corporal aquecem o interior da cápsula de 6 a 8°C acima da temperatura do quarto sem gastar combustível.",
   "timeRequired": "20 min (Colchonete de 3 camadas de papelão 5m + Capuz com folha metálica 5m + Saco de jornal amassado 5m + Cortina 5m)",
   "successRate": "99% (Garantindo 1,5cm+ de papelão em 3 camadas no chão e mantendo uma abertura inferior de ventilação do tamanho de um punho)",
   "difficulty": "Fácil (Montado imediatamente sem facas ou ferramentas usando caixas de entrega, jornal e roupa de cama)",
@@ -13,17 +13,17 @@
     {
       "id": "mat-01",
       "name": "5-6 Caixas de Papelão Ondulado de Entrega (4 Caixas Largas para o Chão & 1-2 Caixas Grandes para o Capuz Superior)",
-      "desc": "Caixas de papelão ondulado são o melhor isolante térmico quando não há isolantes de espuma nem barracas térmicas prontas. Os canais ondulados de ar dentro do papelão bloqueiam o frio do piso de concreto; abra-as pela emenda colada com a mão ou com uma [Lâmina de Pedra Afiada](/protocol-04.html)."
+      "desc": "Caixas de papelão ondulado são o melhor isolante térmico quando não há isolantes de espuma nem barracas térmicas prontas. Os canais ondulados de ar dentro do papelão bloqueiam o frio do piso de concreto; abra-as pela emenda colada com a mão ou com uma [Lâmina de Pedra Afiada](/protocol-04)."
     },
     {
       "id": "mat-02",
       "name": "20-30 Folhas de Jornal (ou Panfletos/Papel de Embrulho) & 1 Capa de Edredom ou 2-3 Casacos Grossos de Inverno",
-      "desc": "Enchimento térmico que substitui sacos de plumas ou aquecedores esgotados. Amassar folhas de jornal frouxamente em bolas do tamanho de um punho e colocá-las dentro de uma capa de edredom ou entre casacos (amarre as pontas com [Corda de Kudzu Selvagem](/protocol-05.html) ou cadarços) prende o ar quente parado igual às plumas de ganso."
+      "desc": "Enchimento térmico que substitui sacos de plumas ou aquecedores esgotados. Amassar folhas de jornal frouxamente em bolas do tamanho de um punho e colocá-las dentro de uma capa de edredom ou entre casacos (amarre as pontas com [Corda de Kudzu Selvagem](/protocol-05) ou cadarços) prende o ar quente parado igual às plumas de ganso."
     },
     {
       "id": "mat-03",
       "name": "Dois Palmos de Folha Metálica de Cozinha & 1 Cobertor Fino ou Toalha de Banho Grande (Arroz Cozido ou Resina para Colar)",
-      "desc": "Refletor de calor radiante colado no teto interno da caixa no lugar de uma manta térmica comercial. Colar folha metálica culinária com o lado brilhante voltado para baixo usando arroz amassado ou goma de farinha ([Cola de Resina de Pinheiro](/protocol-10.html) no campo) devolve 90% do calor infravermelho do seu corpo."
+      "desc": "Refletor de calor radiante colado no teto interno da caixa no lugar de uma manta térmica comercial. Colar folha metálica culinária com o lado brilhante voltado para baixo usando arroz amassado ou goma de farinha ([Cola de Resina de Pinheiro](/protocol-10) no campo) devolve 90% do calor infravermelho do seu corpo."
     }
   ],
   "steps": [
@@ -195,7 +195,7 @@
               },
               {
                 "label": "APOIO/CALOR",
-                "value": "Colocar nos pés uma garrafa de água morna aquecida no [Aquecedor de Lata de Atum](/protocol-21.html) enrolada em toalha aquece mesmo abaixo de zero."
+                "value": "Colocar nos pés uma garrafa de água morna aquecida no [Aquecedor de Lata de Atum](/protocol-21) enrolada em toalha aquece mesmo abaixo de zero."
               }
             ],
             "fieldUse": "Barraca térmica interna sem energia para dormir durante apagões de inverno e cortes de gás"
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Jamais Coloque Velas, Aquecedores de Lata ou Brasas Dentro da Cápsula de Papelão, e Nunca Cubra a Cabeça nem Vede a Entrada com Sacos Plásticos",
-    "description": "Colocar fogo aberto — como velas, fogareiros a gás, o [Aquecedor de Lata de Atum e Óleo](/protocol-21.html) ou brasas de um [Forno de Barro](/protocol-06.html) — dentro de uma cápsula estreita de papelão e jornal seco incendiará o papel ao se mexer dormindo, causando incêndio fatal e asfixia por monóxido de carbono (use qualquer aquecedor de chama sempre fora da caixa em local seguro apenas para amornar água). Também nunca vede a caixa com fita nem coloque sacos plásticos na cabeça, pois causa asfixia mortal.",
+    "description": "Colocar fogo aberto — como velas, fogareiros a gás, o [Aquecedor de Lata de Atum e Óleo](/protocol-21) ou brasas de um [Forno de Barro](/protocol-06) — dentro de uma cápsula estreita de papelão e jornal seco incendiará o papel ao se mexer dormindo, causando incêndio fatal e asfixia por monóxido de carbono (use qualquer aquecedor de chama sempre fora da caixa em local seguro apenas para amornar água). Também nunca vede a caixa com fita nem coloque sacos plásticos na cabeça, pois causa asfixia mortal.",
     "consequence": "Se quiser calor extra dentro da cápsula, nunca leve fogo para dentro: encha uma garrafa resistente bem fechada com água morna (ou enrole uma pedra aquecida em várias toalhas) e coloque nos pés."
   },
   "faqs": [
@@ -240,6 +240,7 @@
       "VERIFICADO // 0% COMBUSTÍVEL DEFESA HIPOTERMIA EM APAGÃO"
     ]
   },
-  "contentHash": "7102df871c650344",
-  "createdAt": "2026-11-03T01:00:00.000Z"
+  "contentHash": "fa7cb634f6645209",
+  "createdAt": "2026-11-03T01:00:00.000Z",
+  "updatedAt": "2026-11-03T10:37:53+09:00"
 }

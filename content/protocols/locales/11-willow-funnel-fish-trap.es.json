@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "40–50 varas verdes flexibles de sauce o avellano (largo de brazo, 70–80cm)",
-      "desc": "Ramas verdes recién cortadas en la orilla con un [Hacha de Piedra o Lasca Afilada](/protocol-04.html), de la mitad del grosor de un meñique (~5mm), que se doblen sin romperse."
+      "desc": "Ramas verdes recién cortadas en la orilla con un [Hacha de Piedra o Lasca Afilada](/protocol-04), de la mitad del grosor de un meñique (~5mm), que se doblen sin romperse."
     },
     {
       "id": "mat-02",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Cuerda resistente al agua de corteza interna de kudzu (15m en total)",
-      "desc": "Cordel vegetal trenzado mediante [Cuerda Salvaje de Fibras](/protocol-05.html). Sellar los nudos principales con [Pegamento Impermeable de Resina de Pino](/protocol-10.html) evita que se aflojen bajo el agua."
+      "desc": "Cordel vegetal trenzado mediante [Cuerda Salvaje de Fibras](/protocol-05). Sellar los nudos principales con [Pegamento Impermeable de Resina de Pino](/protocol-10) evita que se aflojen bajo el agua."
     },
     {
       "id": "mat-04",
@@ -40,8 +40,8 @@
     {
       "stepNumber": "01",
       "title": "Paso 1: Enrollar Ramas Gruesas en 4 Aros Circulares de Tamaño Gradual",
-      "description": "1. **Probar Elasticidad de las Varas**: Dobla lentamente a mano 4 ramas de sauce del grosor de un lápiz para comprobar que se curvan sin quebrarse.\n2. **Formar 4 Aros Graduales**: Enrolla las ramas en cuatro anillos circulares de **un palmo y medio (25cm de diámetro)**, **un palmo (20cm)**, **dos puños (15cm)** y **un puño (10cm)**.\n3. **Atar Extremos Superpuestos**: Superpón los extremos de cada aro por **dos dedos de ancho (~4cm)** y átalos firmemente con más de 10 vueltas de [Cuerda Salvaje](/protocol-05.html).\n4. **Alinear a Intervalos de 1 Palmo**: Coloca los cuatro aros de mayor a menor separados por **un palmo (~15cm)** para definir el cono.",
-      "actionNote": "> Identificación y Seguridad Ocular: Las ramas secas se parten bruscamente y pueden herir tus manos u ojos. Usa la guía fotográfica inferior para distinguir las **varas vivas de sauce** y el **cebo de caracol de río** ([Hacha de Piedra (PR-04)](/protocol-04.html) / [Cuerda Salvaje (PR-05)](/protocol-05.html)).",
+      "description": "1. **Probar Elasticidad de las Varas**: Dobla lentamente a mano 4 ramas de sauce del grosor de un lápiz para comprobar que se curvan sin quebrarse.\n2. **Formar 4 Aros Graduales**: Enrolla las ramas en cuatro anillos circulares de **un palmo y medio (25cm de diámetro)**, **un palmo (20cm)**, **dos puños (15cm)** y **un puño (10cm)**.\n3. **Atar Extremos Superpuestos**: Superpón los extremos de cada aro por **dos dedos de ancho (~4cm)** y átalos firmemente con más de 10 vueltas de [Cuerda Salvaje](/protocol-05).\n4. **Alinear a Intervalos de 1 Palmo**: Coloca los cuatro aros de mayor a menor separados por **un palmo (~15cm)** para definir el cono.",
+      "actionNote": "> Identificación y Seguridad Ocular: Las ramas secas se parten bruscamente y pueden herir tus manos u ojos. Usa la guía fotográfica inferior para distinguir las **varas vivas de sauce** y el **cebo de caracol de río** ([Hacha de Piedra (PR-04)](/protocol-04) / [Cuerda Salvaje (PR-05)](/protocol-05)).",
       "svgFileName": "pr11-step-01.svg",
       "svgLabels": [
         "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
@@ -126,7 +126,7 @@
     {
       "stepNumber": "03",
       "title": "Paso 3: Construir el Embudo Invertido (Válvula Unidireccional) y Unirlo a la Boca",
-      "description": "1. **Formar el Cono del Embudo**: Reúne **16–20 ramitas delgadas y elásticas de sauce** (largo del antebrazo, ~30–35cm) formando un cono pequeño.\n2. **Ajustar Diámetros de Entrada y Salida**: Abre la boca exterior a **un palmo y medio (25cm)** para encajar en el cuerpo, y estrecha el cuello interior al grosor de **tres dedos juntos (5–6cm)**.\n3. **Dejar Libres las Puntas Interiores**: Deja los últimos **dos dedos (5cm)** de las puntas interiores sin atar para que se abran cuando el pez empuje al entrar y se cierren como espinas si intenta salir.\n4. **Insertar y Coser a la Boca**: Introduce el embudo dentro de la boca ancha del cuerpo principal y cose ambos bordes exteriores con [Cuerda Salvaje](/protocol-05.html).",
+      "description": "1. **Formar el Cono del Embudo**: Reúne **16–20 ramitas delgadas y elásticas de sauce** (largo del antebrazo, ~30–35cm) formando un cono pequeño.\n2. **Ajustar Diámetros de Entrada y Salida**: Abre la boca exterior a **un palmo y medio (25cm)** para encajar en el cuerpo, y estrecha el cuello interior al grosor de **tres dedos juntos (5–6cm)**.\n3. **Dejar Libres las Puntas Interiores**: Deja los últimos **dos dedos (5cm)** de las puntas interiores sin atar para que se abran cuando el pez empuje al entrar y se cierren como espinas si intenta salir.\n4. **Insertar y Coser a la Boca**: Introduce el embudo dentro de la boca ancha del cuerpo principal y cose ambos bordes exteriores con [Cuerda Salvaje](/protocol-05).",
       "actionNote": "> Calibre del Cuello: Si el agujero interior es más grande que tu puño, los peces nadarán hacia afuera. Mantenlo al ancho de tres dedos (5–6cm) para que funcione como válvula antirretorno.",
       "svgFileName": "pr11-step-03.svg",
       "svgLabels": [
@@ -146,7 +146,7 @@
       "stepNumber": "04",
       "title": "Paso 4: Cargar Piedras de Lastre y Cebo, y Anclar con Estacas en la Corriente",
       "description": "1. **Introducir Lastre y Bolsa de Cebo**: Abre el nudo trasero, mete **2 piedras del tamaño de un puño** y una hoja perforada con **caracoles machacados y lombrices**, y vuelve a atar la cola.\n2. **Elegir Canal Entre Rocas**: Busca un paso estrecho de agua entre rocas de **profundidad hasta la rodilla (30–50cm)** o junto a plantas acuáticas.\n3. **Orientar la Boca Aguas Arriba**: Hunde la nasa en el fondo con la **boca del embudo mirando aguas arriba (o en diagonal a la corriente)** para que el olor del cebo baje con el agua.\n4. **Fijar con 4 Estacas y Rocas Laterales**: Clava **4 estacas de madera del largo del antebrazo** a ambos lados de la nasa y calza piedras pesadas en los costados para que la corriente nocturna no la arrastre.",
-      "actionNote": "> Recolección y Cocción Segura: Por la mañana, suelta el nudo trasero para vaciar los peces. Cocina siempre el pescado de río completamente sobre un [Fogón Dakota Sin Humo](/protocol-06.html) o [Brasas de Carbón de Roble](/protocol-09.html) para eliminar parásitos.",
+      "actionNote": "> Recolección y Cocción Segura: Por la mañana, suelta el nudo trasero para vaciar los peces. Cocina siempre el pescado de río completamente sobre un [Fogón Dakota Sin Humo](/protocol-06) o [Brasas de Carbón de Roble](/protocol-09) para eliminar parásitos.",
       "svgFileName": "pr11-step-04.svg",
       "svgLabels": [
         "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
@@ -178,5 +178,5 @@
     "description": "Sección longitudinal mostrando los 4 aros graduales, cuerpo cónico de varas de sauce a 1cm, embudo antirretorno de 5cm, 2 piedras de lastre, bolsa de cebo de caracol y 4 estacas de fijación en el lecho del río."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "037d4ce0763a3aa2"
+  "contentHash": "69dbedcc472bdbdb"
 }

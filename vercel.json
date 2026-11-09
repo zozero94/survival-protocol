@@ -7,6 +7,28 @@
       "maxDuration": 300
     }
   },
+  "redirects": [
+    {
+      "source": "/protocol-07",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/protocol-07.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/protocol-7",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/protocol-7.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/sw.js",

@@ -4,7 +4,7 @@
   "title": "Agulha de Osso Primitiva e Costura com Tendão Seco para Couro e Calçados",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFESA CONTRA PERDA TÉRMICA & PREVENÇÃO DE HIPOTERMIA E CONGELAMENTO]",
-  "summary": "Em climas de frio extremo ou em cenários pós-colapso sem acesso a suprimentos manufaturados, o rompimento de trajes de couro ou solas de botas provoca uma perda térmica drástica, levando à hipotermia letal ou congelamento de membros em menos de 2 horas. Sem agulhas de aço ou linha sintética, é vital confeccionar um kit de costura rústico: quebre ossos longos de perna de cervos ou javalis com um [machado de pedra](/protocol-04.html), lixe sobre quartzito molhado e fure o olho com uma sovela de sílex. Combinadas com tendões secos desfiados em fibras de colágeno de altíssima tensão, as linhas amolecidas com saliva encolhem de 3 a 5% ao secar, comprimindo os orifícios antes de serem impermeabilizadas com [breu de pinho aquecido](/protocol-10.html).",
+  "summary": "Em climas de frio extremo ou em cenários pós-colapso sem acesso a suprimentos manufaturados, o rompimento de trajes de couro ou solas de botas provoca uma perda térmica drástica, levando à hipotermia letal ou congelamento de membros em menos de 2 horas. Sem agulhas de aço ou linha sintética, é vital confeccionar um kit de costura rústico: quebre ossos longos de perna de cervos ou javalis com um [machado de pedra](/protocol-04), lixe sobre quartzito molhado e fure o olho com uma sovela de sílex. Combinadas com tendões secos desfiados em fibras de colágeno de altíssima tensão, as linhas amolecidas com saliva encolhem de 3 a 5% ao secar, comprimindo os orifícios antes de serem impermeabilizadas com [breu de pinho aquecido](/protocol-10).",
   "timeRequired": "60 min (30m polimento de osso + 15m desfiamento de tendão + 15m costura)",
   "successRate": "95% (quando pré-perfurado com sovela de sílex e lubrificado com saliva)",
   "difficulty": "Média (seleção criteriosa de osso cortical denso e perfuração bicônica)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "1–2 Fragmentos de Osso Cortical da Perna (Tíbia ou Metatarso de Cervo ou Javali)",
-      "desc": "Obtidos em [armadilhas de caça](/protocol-08.html) ou restos de gordura para [sabão de lixívia de cinzas](/protocol-13.html). A densa parede tubular do osso cortical resiste a esforços de flexão comparáveis aos de pregos de aço, não se quebrando ao perfurar couros duros."
+      "desc": "Obtidos em [armadilhas de caça](/protocol-08) ou restos de gordura para [sabão de lixívia de cinzas](/protocol-13). A densa parede tubular do osso cortical resiste a esforços de flexão comparáveis aos de pregos de aço, não se quebrando ao perfurar couros duros."
     },
     {
       "id": "mat-02",
       "name": "Placa Abrasiva de Quartzito & Sovela Perfuradora de Sílex",
-      "desc": "Uma laje de quartzito áspero usada na [manufatura lítica](/protocol-04.html) e uma sovela pontiaguda de sílex para escavar o orifício de 1,8 mm da agulha em ambos os lados."
+      "desc": "Uma laje de quartzito áspero usada na [manufatura lítica](/protocol-04) e uma sovela pontiaguda de sílex para escavar o orifício de 1,8 mm da agulha em ambos os lados."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Bastão Curto de Madeira Dura & Resina de Pinho Impermeabilizante",
-      "desc": "Um pedaço roliço de carvalho para desfiar tendões e percutir a sovela, junto com [unguento de resina de pinho](/protocol-10.html) para selar hermeticamente as costuras do couro."
+      "desc": "Um pedaço roliço de carvalho para desfiar tendões e percutir a sovela, junto com [unguento de resina de pinho](/protocol-10) para selar hermeticamente as costuras do couro."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Passo 1: Fender o Osso Cortical e Esboçar uma Haste de Agulha sobre Quartzito Úmido",
-      "description": "1. **Seleção e Fendimento Longitudinal**: Fenda a tíbia de um cervo no sentido longitudinal com um [machado de pedra ou seixo pesado](/protocol-04.html) para extrair uma lasca densa do **comprimento de um dedo (7–8 cm) e 3–4 mm de espessura**.\n2. **Desbaste em Quartzito Úmido**: Molhe a laje de quartzito e friccione a lasca óssea a 45 graus, removendo resíduos esponjosos de medula e moldando-a em formato cilíndrico regular.\n3. **Usinagem da Ponta Perfurante**: Incline uma das pontas a 30 graus girando-a continuamente contra a pedra molhada até obter uma **ponta afiada capaz de perfurar couro**.",
+      "description": "1. **Seleção e Fendimento Longitudinal**: Fenda a tíbia de um cervo no sentido longitudinal com um [machado de pedra ou seixo pesado](/protocol-04) para extrair uma lasca densa do **comprimento de um dedo (7–8 cm) e 3–4 mm de espessura**.\n2. **Desbaste em Quartzito Úmido**: Molhe a laje de quartzito e friccione a lasca óssea a 45 graus, removendo resíduos esponjosos de medula e moldando-a em formato cilíndrico regular.\n3. **Usinagem da Ponta Perfurante**: Incline uma das pontas a 30 graus girando-a continuamente contra a pedra molhada até obter uma **ponta afiada capaz de perfurar couro**.",
       "actionNote": "> Risco de Estilhaços: O impacto pode projetar lascas de osso; vire o rosto em 45 graus ao percutir. Mantenha o quartzito sempre úmido para que o atrito térmico não queime nem fragilize o osso.",
       "svgFileName": "pr14-step-01.svg",
       "svgLabels": [
@@ -137,7 +137,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Pré-Perfurar Furos a 5mm com Sovela, Costurar em Ponto de Sela e Selar com Breu",
-      "description": "1. **Pré-Perfuração do Couro**: Sobreponha as bordas rasgadas em **uma largura de falange** e faça previamente uma fileira de **furos espaçados em 5 mm** usando a sovela de sílex e o bastão.\n2. **Ponto de Sela (Costura Cruzada)**: Passe agulhas em ambas as extremidades da linha de tendão ou cruze uma única agulha alternando frente e verso em oito, puxando com firmeza a cada ponto.\n3. **Contração e Selagem com Resina**: Deixe a linha secar e esticar, aplicando em seguida [unguento de resina de pinho aquecido](/protocol-10.html) sobre a costura para bloquear **a infiltração de água, neve e vento gelado**.",
+      "description": "1. **Pré-Perfuração do Couro**: Sobreponha as bordas rasgadas em **uma largura de falange** e faça previamente uma fileira de **furos espaçados em 5 mm** usando a sovela de sílex e o bastão.\n2. **Ponto de Sela (Costura Cruzada)**: Passe agulhas em ambas as extremidades da linha de tendão ou cruze uma única agulha alternando frente e verso em oito, puxando com firmeza a cada ponto.\n3. **Contração e Selagem com Resina**: Deixe a linha secar e esticar, aplicando em seguida [unguento de resina de pinho aquecido](/protocol-10) sobre a costura para bloquear **a infiltração de água, neve e vento gelado**.",
       "actionNote": "> Pré-Perfuração Obrigatória: A agulha de osso resiste bem à compressão, mas partirá com esforço de alavanca em couro duro. Fure sempre com a sovela de sílex e use a agulha de osso apenas como guia da linha.",
       "svgFileName": "pr14-step-04.svg",
       "svgLabels": [
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:22:40+09:00",
-  "contentHash": "b182acb92e757c63"
+  "updatedAt": "2026-10-22T17:35:09+09:00",
+  "contentHash": "911b5ab190a2616e"
 }

@@ -4,7 +4,7 @@
   "title": "Aguja de Hueso Primitiva y Costura con Tendón Seco para Cuero y Calzado",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA PÉRDIDA TÉRMICA Y PREVENCIÓN DE HIPOTERMIA / CONGELACIÓN]",
-  "summary": "En climas gélidos extremos o tras el colapso de la infraestructura moderna, si las prendas térmicas de cuero o las suelas de las botas se desgarran, el calor corporal escapa rápidamente, provocando hipotermia mortal o congelación de extremidades en menos de 2 horas. Ante la ausencia de agujas de acero e hilo sintético, es indispensable fabricar un juego de costura de emergencia utilizando fragmentos de hueso cortical de ciervo o jabalí hendidos con un [hacha de piedra](/protocol-04.html), afilados sobre cuarcita húmeda y perforados con una lezna de sílex, combinados con cordones de tendón animal secado al aire. Al humedecerse con saliva y coserse, el hilo de tendón se encoge de un 3 a un 5% al secarse, sellando los agujeros por compresión radial antes de impermeabilizarse con [brea caliente de pino](/protocol-10.html).",
+  "summary": "En climas gélidos extremos o tras el colapso de la infraestructura moderna, si las prendas térmicas de cuero o las suelas de las botas se desgarran, el calor corporal escapa rápidamente, provocando hipotermia mortal o congelación de extremidades en menos de 2 horas. Ante la ausencia de agujas de acero e hilo sintético, es indispensable fabricar un juego de costura de emergencia utilizando fragmentos de hueso cortical de ciervo o jabalí hendidos con un [hacha de piedra](/protocol-04), afilados sobre cuarcita húmeda y perforados con una lezna de sílex, combinados con cordones de tendón animal secado al aire. Al humedecerse con saliva y coserse, el hilo de tendón se encoge de un 3 a un 5% al secarse, sellando los agujeros por compresión radial antes de impermeabilizarse con [brea caliente de pino](/protocol-10).",
   "timeRequired": "60 min (30 min pulido de aguja + 15 min desfibrado de tendón + 15 min costura)",
   "successRate": "95% (perforando previamente con lezna de sílex e hidratando el tendón con saliva)",
   "difficulty": "Media (selección de hueso cortical denso y perforación bicónica cuidadosa)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "1–2 Fragmentos de Hueso Cortical de Pata (Tibia o Metatarso de Ciervo o Jabalí)",
-      "desc": "Recuperados de [trampas de caza](/protocol-08.html) o del procesamiento de grasa para [jabón de lejía](/protocol-13.html). La densa pared cilíndrica del hueso cortical posee una tenacidad a la flexión similar a la de un clavo de acero y no se quiebra al penetrar cuero."
+      "desc": "Recuperados de [trampas de caza](/protocol-08) o del procesamiento de grasa para [jabón de lejía](/protocol-13). La densa pared cilíndrica del hueso cortical posee una tenacidad a la flexión similar a la de un clavo de acero y no se quiebra al penetrar cuero."
     },
     {
       "id": "mat-02",
       "name": "Laja de Cuarcita Abrasiva y Lezna Perforadora de Sílex",
-      "desc": "Una laja de cuarcita de grano grueso para [fabricación de herramientas líticas](/protocol-04.html) y una lezna cónica afilada de sílex para perforar el ojo de 1,8 mm en la aguja."
+      "desc": "Una laja de cuarcita de grano grueso para [fabricación de herramientas líticas](/protocol-04) y una lezna cónica afilada de sílex para perforar el ojo de 1,8 mm en la aguja."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Maza Corta de Madera Dura y Resina de Pino Impermeabilizante",
-      "desc": "Una rama cilíndrica de roble para machacar el tendón y percutir la lezna, junto con [ungüento de resina de pino](/protocol-10.html) para sellar herméticamente las costuras del cuero."
+      "desc": "Una rama cilíndrica de roble para machacar el tendón y percutir la lezna, junto con [ungüento de resina de pino](/protocol-10) para sellar herméticamente las costuras del cuero."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Paso 1: Hender el Hueso Cortical y Desbastar una Espiga de Aguja sobre Cuarcita Húmeda",
-      "description": "1. **Selección y Hendido Longitudinal**: Henda la tibia de un ciervo longitudinalmente con un [hacha de piedra o canto rodado pesado](/protocol-04.html) para obtener una astilla densa del **largo de un dedo (7–8 cm) y 3–4 mm de grosor**.\n2. **Desbaste sobre Cuarcita Húmeda**: Moje la laja de cuarcita y frote la astilla ósea con una inclinación de 45 grados, eliminando restos porosos de médula y redondeando la pieza hasta lograr un cilindro parejo.\n3. **Afilar la Punta de Perforación**: Incline un extremo a 30 grados girándolo continuamente contra la piedra mojada hasta obtener una **punta aguzada capaz de penetrar cuero**.",
+      "description": "1. **Selección y Hendido Longitudinal**: Henda la tibia de un ciervo longitudinalmente con un [hacha de piedra o canto rodado pesado](/protocol-04) para obtener una astilla densa del **largo de un dedo (7–8 cm) y 3–4 mm de grosor**.\n2. **Desbaste sobre Cuarcita Húmeda**: Moje la laja de cuarcita y frote la astilla ósea con una inclinación de 45 grados, eliminando restos porosos de médula y redondeando la pieza hasta lograr un cilindro parejo.\n3. **Afilar la Punta de Perforación**: Incline un extremo a 30 grados girándolo continuamente contra la piedra mojada hasta obtener una **punta aguzada capaz de penetrar cuero**.",
       "actionNote": "> Peligro de Esquirlas: El impacto puede proyectar astillas afiladas; gire el rostro 45 grados al golpear el hueso. Lubrique siempre la cuarcita con agua para evitar que el calor de fricción queme y debilite la estructura ósea.",
       "svgFileName": "pr14-step-01.svg",
       "svgLabels": [
@@ -137,7 +137,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Pre-Perforar Orificios a 5mm con Lezna, Coser con Puntada de Guarnicionero y Sellar con Brea",
-      "description": "1. **Pre-Perforación del Cuero**: Traslape los bordes del cuero roto **el ancho de una falange** y perfore previamente una hilera de **agujeros separados 5 mm** con la lezna de sílex y la maza de madera.\n2. **Costura de Guarnicionero (Saddle Stitch)**: Enhebre una aguja en cada extremo del tendón o cruce una sola aguja alternando de adelante hacia atrás, tensando firmemente cada puntada.\n3. **Contracción y Sellado con Resina**: Una vez tensada la costura y seco el tendón, extienda [ungüento templado de resina de pino](/protocol-10.html) sobre la costura para sellar los orificios contra **la entrada de nieve, viento y agua helada**.",
+      "description": "1. **Pre-Perforación del Cuero**: Traslape los bordes del cuero roto **el ancho de una falange** y perfore previamente una hilera de **agujeros separados 5 mm** con la lezna de sílex y la maza de madera.\n2. **Costura de Guarnicionero (Saddle Stitch)**: Enhebre una aguja en cada extremo del tendón o cruce una sola aguja alternando de adelante hacia atrás, tensando firmemente cada puntada.\n3. **Contracción y Sellado con Resina**: Una vez tensada la costura y seco el tendón, extienda [ungüento templado de resina de pino](/protocol-10) sobre la costura para sellar los orificios contra **la entrada de nieve, viento y agua helada**.",
       "actionNote": "> Pre-Perforación Obligatoria: Aunque la aguja de hueso es sumamente resistente, se quebrará si intenta perforar cuero duro directamente. Abra siempre los orificios con la lezna de sílex y use la aguja solo como guía de arrastre del hilo.",
       "svgFileName": "pr14-step-04.svg",
       "svgLabels": [
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:22:40+09:00",
-  "contentHash": "b182acb92e757c63"
+  "updatedAt": "2026-10-22T17:35:09+09:00",
+  "contentHash": "911b5ab190a2616e"
 }

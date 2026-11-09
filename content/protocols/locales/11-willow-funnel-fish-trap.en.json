@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "40–50 flexible green willow or hazel shoots (forearm-to-arm length, 70–80cm)",
-      "desc": "Freshly cut shoots about half the thickness of a pinky finger (~5mm) harvested along the riverbank using a [Stone Axe or Sharp Stone Flake](/protocol-04.html). Select live green shoots that bend without snapping."
+      "desc": "Freshly cut shoots about half the thickness of a pinky finger (~5mm) harvested along the riverbank using a [Stone Axe or Sharp Stone Flake](/protocol-04). Select live green shoots that bend without snapping."
     },
     {
       "id": "mat-02",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Water-resistant wild kudzu or inner bark cordage (15m total length)",
-      "desc": "Twisted plant fiber cordage made via [Wild Bast Fiber Cordage](/protocol-05.html). Sealing main hoop knots with [Waterproof Pine Pitch Glue](/protocol-10.html) prevents loosening underwater."
+      "desc": "Twisted plant fiber cordage made via [Wild Bast Fiber Cordage](/protocol-05). Sealing main hoop knots with [Waterproof Pine Pitch Glue](/protocol-10) prevents loosening underwater."
     },
     {
       "id": "mat-04",
@@ -40,8 +40,8 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Coil Thick Branches into 4 Graduated Circular Hoop Rings",
-      "description": "1. **Test Green Shoot Flexibility**: Slowly bend 4 pencil-thick willow branches by hand to verify they curve smoothly into a circle without cracking.\n2. **Form 4 Graduated Hoop Sizes**: Coil the branches into four circular rings measuring **1.5 hand-spans (25cm diameter)**, **1 hand-span (20cm)**, **two-fist width (15cm)**, and **one-fist width (10cm)**.\n3. **Lash Overlapping Ends**: Overlap the ends of each ring by **two finger-widths (~4cm)** and bind tightly with 10+ wraps of [Wild Bast Cordage](/protocol-05.html).\n4. **Align at 1-Span Intervals**: Lay the four rings in descending order spaced **one hand-span (~15cm) apart** to establish the conical taper.",
-      "actionNote": "> Material ID & Eye Safety: Brittle dead twigs snap sharply and can injure your hands or eyes. Use the macro field guide below to identify flexible live **Stream Willow** shoots and **Freshwater Snail Bait** ([Stone Axe (PR-04)](/protocol-04.html) / [Wild Cordage (PR-05)](/protocol-05.html)).",
+      "description": "1. **Test Green Shoot Flexibility**: Slowly bend 4 pencil-thick willow branches by hand to verify they curve smoothly into a circle without cracking.\n2. **Form 4 Graduated Hoop Sizes**: Coil the branches into four circular rings measuring **1.5 hand-spans (25cm diameter)**, **1 hand-span (20cm)**, **two-fist width (15cm)**, and **one-fist width (10cm)**.\n3. **Lash Overlapping Ends**: Overlap the ends of each ring by **two finger-widths (~4cm)** and bind tightly with 10+ wraps of [Wild Bast Cordage](/protocol-05).\n4. **Align at 1-Span Intervals**: Lay the four rings in descending order spaced **one hand-span (~15cm) apart** to establish the conical taper.",
+      "actionNote": "> Material ID & Eye Safety: Brittle dead twigs snap sharply and can injure your hands or eyes. Use the macro field guide below to identify flexible live **Stream Willow** shoots and **Freshwater Snail Bait** ([Stone Axe (PR-04)](/protocol-04) / [Wild Cordage (PR-05)](/protocol-05)).",
       "svgFileName": "pr11-step-01.svg",
       "svgLabels": [
         "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
@@ -126,7 +126,7 @@
     {
       "stepNumber": "03",
       "title": "Step 3: Build the Inward-Narrowing Funnel Valve and Sew into the Mouth",
-      "description": "1. **Assemble Funnel Tines**: Gather **16–20 slender, springy willow twigs** (forearm length, ~30–35cm) into a smaller cone.\n2. **Set Outer & Inner Diameters**: Flare the front opening to **1.5 hand-spans (25cm)** to match the main basket mouth, tapering the inner throat down to **three fingers wide (5–6cm)**.\n3. **Leave Inner Tine Tips Unbound**: Leave the final **two finger-widths (5cm)** of the inner twig tips untied so they flex apart when a fish pushes inward and spring shut behind it.\n4. **Insert & Lash to Basket Mouth**: Push the funnel cone inside the wide front opening of the main body and stitch both outer rims tightly together with [Wild Cordage](/protocol-05.html).",
+      "description": "1. **Assemble Funnel Tines**: Gather **16–20 slender, springy willow twigs** (forearm length, ~30–35cm) into a smaller cone.\n2. **Set Outer & Inner Diameters**: Flare the front opening to **1.5 hand-spans (25cm)** to match the main basket mouth, tapering the inner throat down to **three fingers wide (5–6cm)**.\n3. **Leave Inner Tine Tips Unbound**: Leave the final **two finger-widths (5cm)** of the inner twig tips untied so they flex apart when a fish pushes inward and spring shut behind it.\n4. **Insert & Lash to Basket Mouth**: Push the funnel cone inside the wide front opening of the main body and stitch both outer rims tightly together with [Wild Cordage](/protocol-05).",
       "actionNote": "> Throat Gauge: If the inner funnel opening is wider than your fist, fish will swim back out. Keep the throat at a three-finger bundle width (5–6cm) so the springy tips act as a one-way valve.",
       "svgFileName": "pr11-step-03.svg",
       "svgLabels": [
@@ -146,7 +146,7 @@
       "stepNumber": "04",
       "title": "Step 4: Load Ballast Stones & Bait, Then Anchor in a Stream Riffle",
       "description": "1. **Load Ballast & Bait Pouch**: Untie the tail knot, place **2 fist-sized river stones** and a pierced leaf pouch of **crushed snails & worms** inside, then retie the tail securely.\n2. **Select Riffle Channel**: Locate a knee-deep (**30–50cm**) stream constriction between boulders or along undercut bank vegetation where fish funnel naturally.\n3. **Aim Funnel Into Current**: Submerge the trap on the riverbed with the **funnel mouth facing upstream (or diagonally across the current)** so bait scent washes downstream into approaching fish.\n4. **Pin with 4 Stakes & Side Rocks**: Drive **4 forearm-length wooden stakes** firmly into the riverbed on both sides of the basket and wedge heavy stones against the flanks so strong current cannot roll the trap.",
-      "actionNote": "> Harvest & Cooking Safety: In the morning, pull the tail slip-knot to empty your catch. Always cook freshwater fish thoroughly over a [Dakota Smokeless Fire](/protocol-06.html) or [Oak Charcoal Embers](/protocol-09.html) to eliminate waterborne parasites.",
+      "actionNote": "> Harvest & Cooking Safety: In the morning, pull the tail slip-knot to empty your catch. Always cook freshwater fish thoroughly over a [Dakota Smokeless Fire](/protocol-06) or [Oak Charcoal Embers](/protocol-09) to eliminate waterborne parasites.",
       "svgFileName": "pr11-step-04.svg",
       "svgLabels": [
         "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
@@ -178,5 +178,5 @@
     "description": "Longitudinal cutaway showing the 4 graduated hoops, 1cm-spaced willow rib cone, inward-converging 5cm check-valve funnel tips, 2 internal ballast cobbles, crushed snail bait pouch, and 4 riverbed anchor stakes holding captured fish."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "037d4ce0763a3aa2"
+  "contentHash": "69dbedcc472bdbdb"
 }

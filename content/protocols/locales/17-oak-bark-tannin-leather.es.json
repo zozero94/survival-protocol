@@ -4,7 +4,7 @@
   "title": "Cómo Convertir Piel Cruda en Cuero Impermeable con Agua Hervida de Corteza de Roble y Ceniza (Fabricación de Cuero Natural en Campo)",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA PUTREFACCIÓN DE PIEL CRUDA Y AUTOSUFICIENCIA DE CUERO IMPERMEABLE]",
-  "summary": "En aislamiento prolongado, las pieles crudas obtenidas mediante [trampas y caza](/protocol-08.html) crían gusanos y se pudren en un solo día por los restos de carne y humedad, o se secan al sol como tablas rígidas inútiles para ropa o zapatos. En la naturaleza sin químicos, primero debe remojar la piel cruda en 'agua jabonosa de ceniza blanca' usada en el [jabón natural de ceniza](/protocol-13.html) para empujar el pelo suavemente, y luego sumergirla durante una semana en 'agua astringente hervida de corteza de roble' hecha con la corteza interna rojiza de los robles alrededor de un [horno de carbón de foso](/protocol-09.html). Igual que morder una bellota o un caqui verde tensa la boca, la 'savia astringente conservante' de la corteza de roble penetra hasta el centro de la piel evitando que las bacterias la pudran, mientras el humo de madera recubre el exterior para coser abrigos y botas con [agujas de hueso e hilo de tendón](/protocol-14.html).",
+  "summary": "En aislamiento prolongado, las pieles crudas obtenidas mediante [trampas y caza](/protocol-08) crían gusanos y se pudren en un solo día por los restos de carne y humedad, o se secan al sol como tablas rígidas inútiles para ropa o zapatos. En la naturaleza sin químicos, primero debe remojar la piel cruda en 'agua jabonosa de ceniza blanca' usada en el [jabón natural de ceniza](/protocol-13) para empujar el pelo suavemente, y luego sumergirla durante una semana en 'agua astringente hervida de corteza de roble' hecha con la corteza interna rojiza de los robles alrededor de un [horno de carbón de foso](/protocol-09). Igual que morder una bellota o un caqui verde tensa la boca, la 'savia astringente conservante' de la corteza de roble penetra hasta el centro de la piel evitando que las bacterias la pudran, mientras el humo de madera recubre el exterior para coser abrigos y botas con [agujas de hueso e hilo de tendón](/protocol-14).",
   "timeRequired": "7-10 Días (Raspado de Grasa y Quitado de Pelo en Ceniza 2d + Remojo en Agua de Corteza de Roble 5-7d + Engrasado y Ahumado 1d)",
   "successRate": "93% (Usando agua de corteza de roble totalmente fría y verificando el color marrón hasta la mitad del corte)",
   "difficulty": "Moderada (Requiere piedra redonda para no romper la piel y remojar de agua suave a concentrada en orden)",
@@ -13,17 +13,17 @@
     {
       "id": "mat-01",
       "name": "1 Piel Cruda Fresca de Animal y Piedra de Río Redonda o Espátula de Hueso para Quitar Grasa",
-      "desc": "Piel fresca de ciervo, cabra o jabalí desollada tras [trampas y caza](/protocol-08.html), junto con un [raspador de piedra de borde redondeado](/protocol-04.html) o hueso romo para empujar la capa de grasa blanca interior sin perforar la piel."
+      "desc": "Piel fresca de ciervo, cabra o jabalí desollada tras [trampas y caza](/protocol-08), junto con un [raspador de piedra de borde redondeado](/protocol-04) o hueso romo para empujar la capa de grasa blanca interior sin perforar la piel."
     },
     {
       "id": "mat-02",
       "name": "1 Mochila de Corteza Externa Rugosa y Corteza Interna Roja de Roble (Aprox. 5-6kg)",
-      "desc": "Corteza extraída de troncos de roble (árbol de bellotas) o castaño caídos usados para el [horno de carbón de foso](/protocol-09.html). La corteza interna rojiza justo debajo de la corteza rugosa está llena de 'savia astringente conservante' que evita que el cuero se pudra."
+      "desc": "Corteza extraída de troncos de roble (árbol de bellotas) o castaño caídos usados para el [horno de carbón de foso](/protocol-09). La corteza interna rojiza justo debajo de la corteza rugosa está llena de 'savia astringente conservante' que evita que el cuero se pudra."
     },
     {
       "id": "mat-03",
       "name": "5-6 Puñados de Ceniza Blanca de Roble y Agua Clara de Arroyo para Aflojar el Pelo",
-      "desc": "Ceniza blanca de madera usada para hacer [jabón natural de ceniza](/protocol-13.html). Disuelta en agua crea un líquido resbaladizo como agua jabonosa que ablanda los poros del pelo para empujarlo sin cuchillas."
+      "desc": "Ceniza blanca de madera usada para hacer [jabón natural de ceniza](/protocol-13). Disuelta en agua crea un líquido resbaladizo como agua jabonosa que ablanda los poros del pelo para empujarlo sin cuchillas."
     },
     {
       "id": "mat-04",
@@ -33,14 +33,14 @@
     {
       "id": "mat-05",
       "name": "1 Taza de Grasa Animal Tibia para Suavizar y Humo de Roble Podrido sin Llama",
-      "desc": "Grasa animal tibia frotada en la piel para que no se vuelva rígida al secarse, combinada con humo de madera sin llama de un [fogón de barro](/protocol-06.html) para dar una capa impermeable a la superficie del cuero."
+      "desc": "Grasa animal tibia frotada en la piel para que no se vuelva rígida al secarse, combinada con humo de madera sin llama de un [fogón de barro](/protocol-06) para dar una capa impermeable a la superficie del cuero."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Paso 1: Empujar la Grasa Interna sobre un Tronco Redondo y Remojar en Agua de Ceniza para Quitar el Pelo",
-      "description": "1. **Empujar Grasa y Carne Interna**: Coloque la piel cruda sobre un tronco liso más grueso que su antebrazo y empuje con fuerza hacia abajo con un [raspador de piedra redondeado](/protocol-04.html) a dos manos hasta quitar toda la grasa blanca **sin que quede sensación grasosa en las yemas**.\n2. **Remojar en Agua de Ceniza para Ablandar Poros**: Disuelva **cinco puñados** de [ceniza blanca de roble](/protocol-13.html) en un cubo de agua hasta que resbale en los dedos, sujete la piel con piedras y **sumérjala por 2-3 días** hasta que las raíces del pelo se aflojen solas.\n3. **Empujar el Pelo con Paleta de Madera y Lavar en Arroyo**: Cuando el pelo salga sin esfuerzo al empujar con el pulgar, vuelva a poner la piel en el tronco, empuje el pelo y la piel oscura exterior con una paleta de madera roma y **remójela medio día en un arroyo corriente** para sacar toda el agua de ceniza.",
+      "description": "1. **Empujar Grasa y Carne Interna**: Coloque la piel cruda sobre un tronco liso más grueso que su antebrazo y empuje con fuerza hacia abajo con un [raspador de piedra redondeado](/protocol-04) a dos manos hasta quitar toda la grasa blanca **sin que quede sensación grasosa en las yemas**.\n2. **Remojar en Agua de Ceniza para Ablandar Poros**: Disuelva **cinco puñados** de [ceniza blanca de roble](/protocol-13) en un cubo de agua hasta que resbale en los dedos, sujete la piel con piedras y **sumérjala por 2-3 días** hasta que las raíces del pelo se aflojen solas.\n3. **Empujar el Pelo con Paleta de Madera y Lavar en Arroyo**: Cuando el pelo salga sin esfuerzo al empujar con el pulgar, vuelva a poner la piel en el tronco, empuje el pelo y la piel oscura exterior con una paleta de madera roma y **remójela medio día en un arroyo corriente** para sacar toda el agua de ceniza.",
       "actionNote": "> Evite Cuchillos de Piedra Afilados y Contacto Prolongado con Agua de Ceniza: Raspar la grasa con una piedra afilada abrirá agujeros en la piel; use siempre un hueso romo o piedra redonda. Voltee la piel con una rama y lávese las manos con agua limpia.",
       "svgFileName": "pr17-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Paso 2: Machacar la Corteza Interna Roja de Roble, Hervirla y Enfriarla en Agua Astringente Fría",
-      "description": "1. **Pelar y Machacar Corteza Interna de Roble**: Retire la corteza de troncos de roble caídos, póngala sobre una roca plana y golpéela con una piedra hasta dejar **trozos desmenuzados del tamaño de la uña del pulgar (~1-2cm)**.\n2. **Hervir Agua Roja y Astringente de Roble**: Llene hasta la mitad una vasija grande sobre el [fogón de barro](/protocol-06.html) con la corteza machacada, llene de agua y hierva por más de 1 hora hasta lograr **color de té negro oscuro o salsa de soja roja** con aroma profundo a madera.\n3. **Enfriar como Agua de Arroyo y Preparar el Día 1**: Deje enfriar el agua hervida a la sombra hasta sentirla **fría en el dorso de la mano** para no cocer la piel, y el primer día mézclela mitad y mitad con agua limpia.",
+      "description": "1. **Pelar y Machacar Corteza Interna de Roble**: Retire la corteza de troncos de roble caídos, póngala sobre una roca plana y golpéela con una piedra hasta dejar **trozos desmenuzados del tamaño de la uña del pulgar (~1-2cm)**.\n2. **Hervir Agua Roja y Astringente de Roble**: Llene hasta la mitad una vasija grande sobre el [fogón de barro](/protocol-06) con la corteza machacada, llene de agua y hierva por más de 1 hora hasta lograr **color de té negro oscuro o salsa de soja roja** con aroma profundo a madera.\n3. **Enfriar como Agua de Arroyo y Preparar el Día 1**: Deje enfriar el agua hervida a la sombra hasta sentirla **fría en el dorso de la mano** para no cocer la piel, y el primer día mézclela mitad y mitad con agua limpia.",
       "actionNote": "> Jamás Meta la Piel Cruda en Agua de Roble Tibia o Caliente: Meter la piel en agua tibia la cocina en el acto como piel de cerdo hervida, haciendo que se encoja, se ablande y se rompa. Espere siempre a que esté fría como agua de arroyo.",
       "svgFileName": "pr17-step-02.svg",
       "svgLabels": [
@@ -165,7 +165,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Tirar y Frotar la Piel sobre una Estaca Redonda de Madera para Suavizarla y Ahumar",
-      "description": "1. **Frotar en Estaca Redonda para Ablandar**: Cuando la piel engrasada empiece a secarse, pásela sobre el **borde redondeado y liso de una estaca de madera a la altura de la rodilla** y tire con fuerza en todas direcciones hasta que quede **suave como una manta**.\n2. **Atar en Cono y Bañar en Humo de Madera**: Envuelva el cuero suave en forma de cono sobre ramas encima de un pequeño hoyo quemando **trozos de roble podrido sin llama**, dándole humo parejo durante 1 hora.\n3. **Completar Cuero Impermeable de Abrigo**: Cuando el exterior quede **recubierto de marrón dorado con aroma a humo**, use [agujas de hueso e hilo de tendón seco](/protocol-14.html) para coser abrigos de invierno y zapatos impermeables.",
+      "description": "1. **Frotar en Estaca Redonda para Ablandar**: Cuando la piel engrasada empiece a secarse, pásela sobre el **borde redondeado y liso de una estaca de madera a la altura de la rodilla** y tire con fuerza en todas direcciones hasta que quede **suave como una manta**.\n2. **Atar en Cono y Bañar en Humo de Madera**: Envuelva el cuero suave en forma de cono sobre ramas encima de un pequeño hoyo quemando **trozos de roble podrido sin llama**, dándole humo parejo durante 1 hora.\n3. **Completar Cuero Impermeable de Abrigo**: Cuando el exterior quede **recubierto de marrón dorado con aroma a humo**, use [agujas de hueso e hilo de tendón seco](/protocol-14) para coser abrigos de invierno y zapatos impermeables.",
       "actionNote": "> No Deje de Frotar Antes de que Seque ni Permita Llamas al Ahumar: Si deja de frotar en la estaca antes de que seque por completo, el cuero volverá a endurecerse como cartón. Use solo madera podrida húmeda para que suba humo tibio sin llamas.",
       "svgFileName": "pr17-step-04.svg",
       "svgLabels": [
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-26T13:00:00.000Z",
-  "updatedAt": "2026-10-26T13:31:24.635Z",
-  "contentHash": "d3bf620f626719da"
+  "updatedAt": "2026-10-28T17:33:13+09:00",
+  "contentHash": "1edc87e6714dfcae"
 }

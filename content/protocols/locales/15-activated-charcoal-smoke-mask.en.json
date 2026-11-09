@@ -4,7 +4,7 @@
   "title": "Improvised Activated Charcoal & Sand Cloth Smoke and Toxic Gas Escape Mask",
   "threatLevel": "HIGH",
   "threatLevelText": "[TOXIC GAS & CHOKING SMOKE SHIELD / RESPIRATORY BURN DEFENSE]",
-  "summary": "In escalating wildfires, subterranean shelter blazes, or post-collapse structural conflagrations, inhaling dense soot and superheated toxic fumes more than 3 times causes fatal airway burns and asphyxiation within 2 minutes. When industrial gas masks or N95 respirators are nonexistent in the field, you must immediately craft an improvised activated charcoal mask by layering high-temperature oak charcoal from a [pit charcoal kiln](/protocol-09.html) and clean river sand from a [primitive water filter](/protocol-01.html) inside wet cloth. The moist sand instantly cools searing gas and traps coarse airborne ash, while millions of activated carbon micro-pores adsorb lethal organic vapors. Secured tightly with [wild kudzu cordage](/protocol-05.html) and edge-sealed with [pine pitch ointment](/protocol-10.html), this field mask guarantees a life-saving 15-minute golden window to evacuate toxic disaster zones.",
+  "summary": "In escalating wildfires, subterranean shelter blazes, or post-collapse structural conflagrations, inhaling dense soot and superheated toxic fumes more than 3 times causes fatal airway burns and asphyxiation within 2 minutes. When industrial gas masks or N95 respirators are nonexistent in the field, you must immediately craft an improvised activated charcoal mask by layering high-temperature oak charcoal from a [pit charcoal kiln](/protocol-09) and clean river sand from a [primitive water filter](/protocol-01) inside wet cloth. The moist sand instantly cools searing gas and traps coarse airborne ash, while millions of activated carbon micro-pores adsorb lethal organic vapors. Secured tightly with [wild kudzu cordage](/protocol-05) and edge-sealed with [pine pitch ointment](/protocol-10), this field mask guarantees a life-saving 15-minute golden window to evacuate toxic disaster zones.",
   "timeRequired": "25 mins (10m charcoal crushing + 5m sand rinsing + 10m 3-tier layering & facial fitting)",
   "successRate": "92% (when maintaining 1–2mm charcoal grain size and airtight negative pressure seal)",
   "difficulty": "Medium (requires preventing fine charcoal dust inhalation and sealing perimeter leaks)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "2–3 Lumps of High-Density Oak White Charcoal (Binchotan Type)",
-      "desc": "Pyrolyzed at 600°C+ in a [sealed pit charcoal kiln](/protocol-09.html) and producing a clear metallic ring when tapped. Completely free of volatile tars, with an enormous internal network of honeycomb micro-pores that aggressively traps toxic smoke molecules."
+      "desc": "Pyrolyzed at 600°C+ in a [sealed pit charcoal kiln](/protocol-09) and producing a clear metallic ring when tapped. Completely free of volatile tars, with an enormous internal network of honeycomb micro-pores that aggressively traps toxic smoke molecules."
     },
     {
       "id": "mat-02",
       "name": "1–2 Cups of Thoroughly Rinsed, Moist Quartzite River Sand",
-      "desc": "Clean stream sand sourced from [primitive water filtration](/protocol-01.html). Rinsed free of clay and organic mud, this moist mineral buffer cools hundreds-of-degrees hot smoke down to ambient temperatures upon contact."
+      "desc": "Clean stream sand sourced from [primitive water filtration](/protocol-01). Rinsed free of clay and organic mud, this moist mineral buffer cools hundreds-of-degrees hot smoke down to ambient temperatures upon contact."
     },
     {
       "id": "mat-03",
@@ -28,19 +28,19 @@
     {
       "id": "mat-04",
       "name": "2 Strands of Tough Wild Kudzu Fiber Cordage (60cm Length)",
-      "desc": "Extracted [bast fiber cordage](/protocol-05.html) or leather thongs. Fastened to the top and bottom of the pouch to anchor behind the crown and nape of the neck, maintaining perimeter airtight tension."
+      "desc": "Extracted [bast fiber cordage](/protocol-05) or leather thongs. Fastened to the top and bottom of the pouch to anchor behind the crown and nape of the neck, maintaining perimeter airtight tension."
     },
     {
       "id": "mat-05",
       "name": "Small Lump of Pine Pitch Ointment or Moist Clay Paste",
-      "desc": "Warm [pine pitch ointment](/protocol-10.html) or smooth damp river clay smeared along facial bridge contours to eliminate perimeter smoke bypass leaks."
+      "desc": "Warm [pine pitch ointment](/protocol-10) or smooth damp river clay smeared along facial bridge contours to eliminate perimeter smoke bypass leaks."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Step 1: Select High-Temp Oak White Charcoal & Crush in Stone Mortar to Coarse Salt Grains",
-      "description": "1. **Select Dense White Charcoal**: Choose 2–3 lumps of oak charcoal from the [pit kiln](/protocol-09.html) that produce a **clear, metallic ringing chime** rather than a dull thud when struck together.\n2. **Crush to 1–2mm Granules**: Place the charcoal on a flat rock mortar and crush gently with a [stone axe or river hammerstone](/protocol-04.html), breaking it down to **coarse sea-salt grain size (1–2mm)** rather than powdery flour.\n3. **Water Rinse Fine Dust**: Pour clean water over the crushed granules to flush away floating ash fines, and drain excess water to leave **glistening, damp activated carbon**.",
+      "description": "1. **Select Dense White Charcoal**: Choose 2–3 lumps of oak charcoal from the [pit kiln](/protocol-09) that produce a **clear, metallic ringing chime** rather than a dull thud when struck together.\n2. **Crush to 1–2mm Granules**: Place the charcoal on a flat rock mortar and crush gently with a [stone axe or river hammerstone](/protocol-04), breaking it down to **coarse sea-salt grain size (1–2mm)** rather than powdery flour.\n3. **Water Rinse Fine Dust**: Pour clean water over the crushed granules to flush away floating ash fines, and drain excess water to leave **glistening, damp activated carbon**.",
       "actionNote": "> Inhalation Hazard: Grinding charcoal into flour-like powder causes fine dust to be inhaled directly into pulmonary alveoli during heavy breathing. Always maintain coarse 1–2mm granules and rinse with water to eliminate airborne dust.",
       "svgFileName": "pr15-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Step 2: Wash & Sieve River Sand to Prepare Thermal Cooling and Ash-Trapping Buffer",
-      "description": "1. **Gather Coarse Quartz Sand**: Collect **1–2 cups of clean quartzite sand** from clear river rapids, avoiding muddy banks.\n2. **Rinse & Decant Turbid Water**: Place the sand into a [clay hearth bowl](/protocol-06.html), add clear water, swirl vigorously, and decant the muddy suspended silt 3 times until runoff is transparent.\n3. **Achieve Optimal Moisture**: Squeeze the sand gently in your hand until it forms a cohesive shape that **retains dampness without dripping water droplets**.",
+      "description": "1. **Gather Coarse Quartz Sand**: Collect **1–2 cups of clean quartzite sand** from clear river rapids, avoiding muddy banks.\n2. **Rinse & Decant Turbid Water**: Place the sand into a [clay hearth bowl](/protocol-06), add clear water, swirl vigorously, and decant the muddy suspended silt 3 times until runoff is transparent.\n3. **Achieve Optimal Moisture**: Squeeze the sand gently in your hand until it forms a cohesive shape that **retains dampness without dripping water droplets**.",
       "actionNote": "> Mud Hazard: Fine clay silt in unwashed sand clogs cloth pores during inhalation, suffocating the wearer within seconds. Always flush with clear water 3 or more times until all cloudy silt is completely washed away.",
       "svgFileName": "pr15-step-02.svg",
       "svgLabels": [
@@ -121,7 +121,7 @@
     {
       "stepNumber": "03",
       "title": "Step 3: Layer Sand-Charcoal-Sand in a 3-Tier Sandwich & Fold into Filter Pouch",
-      "description": "1. **Spread Wet Cloth Base**: Spread a damp 30×30cm cotton or linen cloth flat in a diamond orientation over a clean rock slab.\n2. **Stack 3-Tier Sandwich**: In the center **palm-sized zone (10×10cm)**, deposit **1cm rinsed moist sand ➔ 2cm crushed charcoal ➔ 1cm rinsed moist sand** in sequential tiers.\n3. **Fold Envelope Pouch**: Fold all four cloth corners inward over the stack to fully enclose the media, and stitch edges at 3–4 points using [bone needles and sinew thread](/protocol-14.html) to create a **sturdy rectangular filter pack**.",
+      "description": "1. **Spread Wet Cloth Base**: Spread a damp 30×30cm cotton or linen cloth flat in a diamond orientation over a clean rock slab.\n2. **Stack 3-Tier Sandwich**: In the center **palm-sized zone (10×10cm)**, deposit **1cm rinsed moist sand ➔ 2cm crushed charcoal ➔ 1cm rinsed moist sand** in sequential tiers.\n3. **Fold Envelope Pouch**: Fold all four cloth corners inward over the stack to fully enclose the media, and stitch edges at 3–4 points using [bone needles and sinew thread](/protocol-14) to create a **sturdy rectangular filter pack**.",
       "actionNote": "> Layer Sequence Rule: Placing charcoal directly against mouth surfaces leads to swallowing carbon granules. Placing charcoal on the outer face allows hot embers to ignite the carbon. Always sandwich the charcoal securely between moist sand layers.",
       "svgFileName": "pr15-step-03.svg",
       "svgLabels": [
@@ -135,7 +135,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Mould Pouch Over Nose & Mouth, Secure Dual Straps & Execute Negative Pressure Test",
-      "description": "1. **Mould Facial Contours**: Press the center of the mask firmly over the nose, lips, and chin, using your fingers to compress the borders against facial ridges.\n2. **Tie Dual Harness Straps**: Fasten the two [kudzu cords](/protocol-05.html); tie the top cord **over the ears around the crown of the head**, and tie the bottom cord **under the ears around the nape of the neck**.\n3. **Perform Negative Pressure Test**: Cup your hands over the outer fabric and inhale deeply; confirm that perimeter bypass is zero and that **cool, filtered air enters smoothly through the filter media**, then stay low and evacuate the smoke zone within 15 minutes.",
+      "description": "1. **Mould Facial Contours**: Press the center of the mask firmly over the nose, lips, and chin, using your fingers to compress the borders against facial ridges.\n2. **Tie Dual Harness Straps**: Fasten the two [kudzu cords](/protocol-05); tie the top cord **over the ears around the crown of the head**, and tie the bottom cord **under the ears around the nape of the neck**.\n3. **Perform Negative Pressure Test**: Cup your hands over the outer fabric and inhale deeply; confirm that perimeter bypass is zero and that **cool, filtered air enters smoothly through the filter media**, then stay low and evacuate the smoke zone within 15 minutes.",
       "actionNote": "> Perimeter Leak Check: If acrid, hot smoke smell enters through the nasal bridge or cheeks during inhalation, tighten harness straps immediately or paste wet clay or pine pitch along the perimeter to achieve an airtight seal.",
       "svgFileName": "pr15-step-04.svg",
       "svgLabels": [
@@ -174,6 +174,6 @@
     ]
   },
   "createdAt": "2026-10-23T06:15:00.000Z",
-  "updatedAt": "2026-10-23T06:26:26.663Z",
-  "contentHash": "5c6edad36e2ff4e9"
+  "updatedAt": "2026-10-23T15:31:14+09:00",
+  "contentHash": "9e1a3cafbc077cd0"
 }

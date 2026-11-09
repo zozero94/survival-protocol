@@ -4,7 +4,7 @@
   "title": "Como Fazer um Aquecedor e Fogareiro Interno de 72 Horas com Lata de Atum, Óleo de Cozinha e Papel Higiênico",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[AQUECIMENTO INTERNO EM APAGÃO & FONTE TÉRMICA 72H]",
-  "summary": "Se você tiver equipamentos prontos em casa, como fogareiro a gás butano, aquecedor portátil, velas de parafina ou álcool sólido, use-os sempre primeiro como a opção mais segura e rápida. Porém, quando um apagão de inverno ou corte de gás se prolonga e todos os cartuchos de gás e pilhas acabam, queimar madeira dentro de casa causa fumaça e asfixia fatal por monóxido de carbono (use o [Fogareiro de Gás de Madeira de Lata Dupla](/protocol-12.html) apenas ao ar livre). Forrando o fundo de uma lata de atum de aço com pedrinhas, fixando 3 pavios de papel higiênico bem torcidos em uma ponte de folha metálica e enchendo com óleo vegetal de cozinha, você cria um aquecedor interno sem fumaça que aquece o quarto e esquenta água por 8 a 12 horas por recarga (mais de 72 horas por garrafa de óleo).",
+  "summary": "Se você tiver equipamentos prontos em casa, como fogareiro a gás butano, aquecedor portátil, velas de parafina ou álcool sólido, use-os sempre primeiro como a opção mais segura e rápida. Porém, quando um apagão de inverno ou corte de gás se prolonga e todos os cartuchos de gás e pilhas acabam, queimar madeira dentro de casa causa fumaça e asfixia fatal por monóxido de carbono (use o [Fogareiro de Gás de Madeira de Lata Dupla](/protocol-12) apenas ao ar livre). Forrando o fundo de uma lata de atum de aço com pedrinhas, fixando 3 pavios de papel higiênico bem torcidos em uma ponte de folha metálica e enchendo com óleo vegetal de cozinha, você cria um aquecedor interno sem fumaça que aquece o quarto e esquenta água por 8 a 12 horas por recarga (mais de 72 horas por garrafa de óleo).",
   "timeRequired": "15 min (Limpeza da lata e cascalho 3m + Pavios e ponte de folha 5m + Encharcar óleo 5m + Refletor 2m)",
   "successRate": "99% (Usando óleo vegetal puro e mantendo a ponta exposta do pavio abaixo de 1cm / meia falange)",
   "difficulty": "Fácil (Feito sem faca com itens comuns de cozinha)",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Dois Palmos de Folha Metálica de Cozinha & 2 Arames Grossos Desencapados (ou Cabide de Metal)",
-      "desc": "Um palmo de folha metálica culinária é dobrado como ponte para segurar os 3 pavios em pé no óleo, enquanto o segundo palmo fica atrás da lata refletindo o calor radiante para a frente. Dois arames grossos (se usar fios elétricos, desencape toda a borracha com uma [Lâmina de Pedra Afiada](/protocol-04.html) para evitar gases tóxicos) apoiam uma caneca metálica para aquecer água."
+      "desc": "Um palmo de folha metálica culinária é dobrado como ponte para segurar os 3 pavios em pé no óleo, enquanto o segundo palmo fica atrás da lata refletindo o calor radiante para a frente. Dois arames grossos (se usar fios elétricos, desencape toda a borracha com uma [Lâmina de Pedra Afiada](/protocol-04) para evitar gases tóxicos) apoiam uma caneca metálica para aquecer água."
     }
   ],
   "steps": [
@@ -43,7 +43,7 @@
       "deepDive": {
         "badge": "CALOR EM APAGÃO",
         "title": "Risco de Monóxido de Carbono da Lenha/Carvão vs. Segurança Térmica de Latas de Aço",
-        "text": "Queimar lenha ou [Carvão de Madeira Dura](/protocol-09.html) dentro de um apartamento fechado enche o ambiente de monóxido de carbono sem cheiro, causando intoxicação fatal. Já as latas de aço têm ponto de fusão acima de **1.500°C**, e forrar o fundo com **1cm de pedrinhas** queimando óleo vegetal puro evita o superaquecimento da lata e fornece calor limpo.",
+        "text": "Queimar lenha ou [Carvão de Madeira Dura](/protocol-09) dentro de um apartamento fechado enche o ambiente de monóxido de carbono sem cheiro, causando intoxicação fatal. Já as latas de aço têm ponto de fusão acima de **1.500°C**, e forrar o fundo com **1cm de pedrinhas** queimando óleo vegetal puro evita o superaquecimento da lata e fornece calor limpo.",
         "fieldSpecs": [
           {
             "name": "Lata de Atum de Aço Limpa & Camada Térmica de 1cm de Pedrinhas",
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Acenda os 3 Pavios, Monte o Refletor de Folha Metálica Atrás e Aqueça Água Sobre os Arames",
-      "description": "1. **Acender o Triplo Pavio**: Encoste uma chama (ou brasa de [Fogo por Fricção com Arco](/protocol-02.html) se não houver fósforos) nas pontas encharcadas por **3-4 segundos**. Em 1 minuto, **3 chamas alaranjadas firmes de uma falange de altura (2-3cm)** queimarão sem fumaça.\n2. **Levantar Parede Refletora em Ziguezague**: Dobre um palmo de folha metálica culinária em sanfona com o lado brilhante voltado para a frente e posicione em semicírculo **duas falanges (3-4cm) atrás da lata**.\n3. **Apoiar Grelha de Arames Desencapados**: Coloque 2 arames grossos desencapados ou hastes de cabide atravessados sobre a borda da lata e apoie uma caneca metálica para esquentar água potável (filtrada no [Filtro de Água de Carvão e Areia](/protocol-01.html)) e comida enlatada.\n4. **Abrir 2cm da Janela a Cada 3 Horas**: Mesmo chamas sem fumaça consomem oxigênio interno; **abra uma fresta de uma falange (2cm) na janela a cada 3 horas** para renovar o ar.",
+      "description": "1. **Acender o Triplo Pavio**: Encoste uma chama (ou brasa de [Fogo por Fricção com Arco](/protocol-02) se não houver fósforos) nas pontas encharcadas por **3-4 segundos**. Em 1 minuto, **3 chamas alaranjadas firmes de uma falange de altura (2-3cm)** queimarão sem fumaça.\n2. **Levantar Parede Refletora em Ziguezague**: Dobre um palmo de folha metálica culinária em sanfona com o lado brilhante voltado para a frente e posicione em semicírculo **duas falanges (3-4cm) atrás da lata**.\n3. **Apoiar Grelha de Arames Desencapados**: Coloque 2 arames grossos desencapados ou hastes de cabide atravessados sobre a borda da lata e apoie uma caneca metálica para esquentar água potável (filtrada no [Filtro de Água de Carvão e Areia](/protocol-01)) e comida enlatada.\n4. **Abrir 2cm da Janela a Cada 3 Horas**: Mesmo chamas sem fumaça consomem oxigênio interno; **abra uma fresta de uma falange (2cm) na janela a cada 3 horas** para renovar o ar.",
       "actionNote": "> Eficiência do Refletor e dos Arames: A parede de folha metálica brilhante atrás da lata reflete 90% do calor traseiro para a frente na sua direção. Nunca apoie uma caneca direto na borda da lata sem os 2 arames, ou abafará e apagará as chamas.",
       "svgFileName": "pr21-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Nunca Use Gasolina, Álcool Líquido ou Thinner no Lugar do Óleo de Cozinha, Nunca Jogue Água no Óleo em Chamas e Nunca Use Tecidos Sintéticos como Pavio",
-    "description": "Colocar combustíveis voláteis como gasolina, álcool líquido, acetona ou thinner em uma lata aberta enche o quarto de vapor explosivo que detona ao acender (se tiver fogareiro a gás ou aquecedor a querosene pronto, use apenas o combustível original dentro do aparelho). Nunca use poliéster ou nylon como pavio, pois plásticos derretendo liberam dioxinas mortais (use uma [Máscara de Carvão Ativado](/protocol-15.html) ao escapar de fumaça); use apenas papel higiênico ou 100% algodão.",
+    "description": "Colocar combustíveis voláteis como gasolina, álcool líquido, acetona ou thinner em uma lata aberta enche o quarto de vapor explosivo que detona ao acender (se tiver fogareiro a gás ou aquecedor a querosene pronto, use apenas o combustível original dentro do aparelho). Nunca use poliéster ou nylon como pavio, pois plásticos derretendo liberam dioxinas mortais (use uma [Máscara de Carvão Ativado](/protocol-15) ao escapar de fumaça); use apenas papel higiênico ou 100% algodão.",
     "consequence": "Jogar água em óleo pegando fogo causa expansão instantânea de vapor que espalha óleo em chamas por todo o quarto. Para apagar, sopre os pavios ou cubra o topo da lata com um prato de cerâmica ou pano úmido para cortar o oxigênio."
   },
   "faqs": [
@@ -218,7 +218,7 @@
     {
       "question": "O que fazer se o pavio começar a soltar um pouco de fumaça preta ou a chama ficar muito pequena?",
       "causeDiagnostic": "Se a ponta do pavio acima da folha metálica tiver **mais de uma falange (1,5cm)**, o excesso de óleo vira fuligem preta; se o papel foi enrolado frouxo demais e afundou no óleo, a chama diminui.",
-      "resolution": "Use palitos ou uma pinça para ajustar a ponte de folha metálica deixando a **ponta exposta do pavio abaixo de meia falange (0,8-1cm)**, restaurando na hora uma chama limpa sem fumaça. Para ferver água em fogo alto ao ar livre ou aquecer abrigos, combine com o [Fogareiro de Gás de Madeira de Lata Dupla](/protocol-12.html) ou o [Forno Térmico de Barro](/protocol-06.html)."
+      "resolution": "Use palitos ou uma pinça para ajustar a ponte de folha metálica deixando a **ponta exposta do pavio abaixo de meia falange (0,8-1cm)**, restaurando na hora uma chama limpa sem fumaça. Para ferver água em fogo alto ao ar livre ou aquecer abrigos, combine com o [Fogareiro de Gás de Madeira de Lata Dupla](/protocol-12) ou o [Forno Térmico de Barro](/protocol-06)."
     }
   ],
   "shortsScript": "[0-5s Hook] Cortaram a luz e o gás no frio intenso? Faça um aquecedor interno de 72 horas com lata de atum e óleo de cozinha! [5-35s Body] Quando o gás e as velas acabarem, forre o fundo de uma lata de atum limpa com 1cm de pedrinhas. Torça bem 3 pavios de papel higiênico e fixe-os no centro com uma ponte de folha metálica. Encha 4/5 com óleo de cozinha, pingue óleo nas pontas, acenda e coloque um refletor metálico atrás para ter calor sem fumaça e água quente! [35-45s Warning & Outro] Nunca use gasolina nem jogue água—abafe com um prato! Salve este manual offline agora.",
@@ -240,7 +240,7 @@
       "VERIFICADO // CALOR INTERNO SEM FUMAÇA E ÁGUA QUENTE"
     ]
   },
-  "contentHash": "09e4c955a5075ef8",
+  "contentHash": "75c437ca60b0bfba",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T06:41:48.546Z"
+  "updatedAt": "2026-11-02T16:17:08+09:00"
 }

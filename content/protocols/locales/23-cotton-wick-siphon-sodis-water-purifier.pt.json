@@ -4,7 +4,7 @@
   "title": "Como Purificar Água Potável na Falta de Água e Luz Usando Sifão Capilar de Toalha de Algodão e Sol (SODIS)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[CORTE DE ÁGUA URBANO E FILTRAÇÃO CAPILAR SEM COMBUSTÍVEL + DESINFECÇÃO SOLAR UV]",
-  "summary": "Se sua residência já possui água engarrafada, canudo purificador portátil (como LifeStraw), pastilhas de dióxido de cloro ou filtro de barro/fibra oca comercial, utilize sempre esses equipamentos prontos primeiro pela rapidez e segurança. Contudo, quando desastres, guerra ou apagões prolongados esgotam a água mineral e as pastilhas, e você fica isolado em um apartamento sem carvão, areia de rio e sem gás ou eletricidade para ferver água (se estiver na mata com carvão e areia, use o [Filtro Natural de Carvão e Areia](/protocol-01.html)), beber água de chuva turva ou água enferrujada dos canos causa diarreia grave e desidratação fatal em 3 dias. Ao recolher a água limpa da caixa acoplada de louça do vaso sanitário ou água da chuva, filtrar o barro e a ferrugem com uma ponte de sifão capilar de toalha 100% algodão torcida e expor garrafas PET transparentes sobre um refletor de papel-alumínio a 6 horas de sol direto (método SODIS aprovado pela OMS), você garante água potável sem gastar combustível.",
+  "summary": "Se sua residência já possui água engarrafada, canudo purificador portátil (como LifeStraw), pastilhas de dióxido de cloro ou filtro de barro/fibra oca comercial, utilize sempre esses equipamentos prontos primeiro pela rapidez e segurança. Contudo, quando desastres, guerra ou apagões prolongados esgotam a água mineral e as pastilhas, e você fica isolado em um apartamento sem carvão, areia de rio e sem gás ou eletricidade para ferver água (se estiver na mata com carvão e areia, use o [Filtro Natural de Carvão e Areia](/protocol-01)), beber água de chuva turva ou água enferrujada dos canos causa diarreia grave e desidratação fatal em 3 dias. Ao recolher a água limpa da caixa acoplada de louça do vaso sanitário ou água da chuva, filtrar o barro e a ferrugem com uma ponte de sifão capilar de toalha 100% algodão torcida e expor garrafas PET transparentes sobre um refletor de papel-alumínio a 6 horas de sol direto (método SODIS aprovado pela OMS), você garante água potável sem gastar combustível.",
   "timeRequired": "2 horas de filtração + 6 horas de desinfecção solar (gotejamento capilar autônomo e exposição ao sol direto)",
   "successRate": "99% (após filtrar com toalha 100% algodão em desnível e expor em garrafas PET incolores a 6 horas de sol forte)",
   "difficulty": "Iniciante (Sem fogo, carvão ou areia; usa apenas toalha de algodão, duas panelas e garrafas PET transparentes)",
@@ -18,12 +18,12 @@
     {
       "id": "mat-02",
       "name": "2–3 Garrafas PET Transparentes Incolores de até 2L sem Rótulo (Garrafas de Água/Refrigerante sem Riscos)",
-      "desc": "Recipientes de esterilização permeáveis aos raios UV-A quando faltam pastilhas ou fogo. Devem ser garrafas incolores com o símbolo triangular #1 (PET) no fundo; raspe todo o rótulo plástico e restos de cola com a unha ou uma [Lâmina de Pedra Primitiva](/protocol-04.html)."
+      "desc": "Recipientes de esterilização permeáveis aos raios UV-A quando faltam pastilhas ou fogo. Devem ser garrafas incolores com o símbolo triangular #1 (PET) no fundo; raspe todo o rótulo plástico e restos de cola com a unha ou uma [Lâmina de Pedra Primitiva](/protocol-04)."
     },
     {
       "id": "mat-03",
       "name": "Papel-Alumínio de Cozinha (2 Palmos) e 1 Placa de Papelão (Cola de Arroz Cozido ou Resina de Pinheiro)",
-      "desc": "Berço refletor solar que rebate a luz e o calor infravermelho para a parte inferior das garrafas, dobrando a velocidade de desinfecção. Cole o lado brilhante do papel-alumínio no papelão usando arroz amassado ou [Cola de Resina de Pinheiro](/protocol-10.html)."
+      "desc": "Berço refletor solar que rebate a luz e o calor infravermelho para a parte inferior das garrafas, dobrando a velocidade de desinfecção. Cole o lado brilhante do papel-alumínio no papelão usando arroz amassado ou [Cola de Resina de Pinheiro](/protocol-10)."
     }
   ],
   "steps": [
@@ -63,7 +63,7 @@
               },
               {
                 "label": "MAR/PROIBIDO",
-                "value": "O sal do mar não sai no pano; água salgada exige o [Destilador de Barro e Bambu](/protocol-20.html)."
+                "value": "O sal do mar não sai no pano; água salgada exige o [Destilador de Barro e Bambu](/protocol-20)."
               }
             ],
             "fieldUse": "Captação doméstica de emergência em cortes de água e remoção primária de lama"
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Deitar a Garrafa sobre o Refletor de Papelão e Alumínio no Sol Direto por 6 Horas (ou Ferver 3 Minutos)",
-      "description": "1. **Montar o Refletor de Papelão com Papel-Alumínio**: Dobre uma folha de papelão formando uma calha em V suave e cole **papel-alumínio de cozinha (lado brilhante para cima)** na face interna.\n2. **Deitar as Garrafas na Horizontal sob Sol Direto**: Posicione o refletor em local externo sem sombra (varanda aberta, telhado ou quintal inclinado 30–45° para o sol) e **deite as garrafas PET transparentes de lado**, nunca em pé.\n3. **Expor por 6 Horas no Sol do Meio-Dia**: Deixe as garrafas sob **sol direto entre 9h e 15h por no mínimo 6 horas seguidas** para que os raios UV-A e o calor solar (>50°C) matem os micróbios (se o céu estiver mais de 50% nublado, exponha por **2 dias seguidos**; na chuva, colete água da chuva direta ou ferva).\n4. **Esfriar e Beber, ou Ferver por 3 Minutos se Tiver Fogo**: Após 6 horas, deixe a **água morna como banho** esfriar na sombra antes de beber; se tiver o [Fogareiro de Gás de Madeira de Dupla Lata](/protocol-12.html) ou o [Aquecedor de Lata de Atum e Óleo](/protocol-21.html), você pode ferver a água filtrada por 3 minutos.",
+      "description": "1. **Montar o Refletor de Papelão com Papel-Alumínio**: Dobre uma folha de papelão formando uma calha em V suave e cole **papel-alumínio de cozinha (lado brilhante para cima)** na face interna.\n2. **Deitar as Garrafas na Horizontal sob Sol Direto**: Posicione o refletor em local externo sem sombra (varanda aberta, telhado ou quintal inclinado 30–45° para o sol) e **deite as garrafas PET transparentes de lado**, nunca em pé.\n3. **Expor por 6 Horas no Sol do Meio-Dia**: Deixe as garrafas sob **sol direto entre 9h e 15h por no mínimo 6 horas seguidas** para que os raios UV-A e o calor solar (>50°C) matem os micróbios (se o céu estiver mais de 50% nublado, exponha por **2 dias seguidos**; na chuva, colete água da chuva direta ou ferva).\n4. **Esfriar e Beber, ou Ferver por 3 Minutos se Tiver Fogo**: Após 6 horas, deixe a **água morna como banho** esfriar na sombra antes de beber; se tiver o [Fogareiro de Gás de Madeira de Dupla Lata](/protocol-12) ou o [Aquecedor de Lata de Atum e Óleo](/protocol-21), você pode ferver a água filtrada por 3 minutos.",
       "actionNote": "> Por que deitar a garrafa no papel-alumínio em vez de deixá-la em pé: Com a garrafa em pé, a coluna de água fica funda demais e os raios UV não chegam ao fundo. Deitada, a camada de água fica menor que 10 cm e o alumínio rebate o sol de volta por baixo.",
       "svgFileName": "pr23-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Nunca Use Garrafas Verdes ou Marrons nem Sol Atrás de Janelas Fechadas, e Jamais Beba Água com Produtos Químicos ou Combustível",
-    "description": "Garrafas plásticas coloridas (verdes de refrigerante ou marrons de cerveja) e garrafas velhas muito riscadas bloqueiam totalmente os raios UV-A, mantendo as bactérias vivas mesmo após horas no sol. Da mesma forma, deixar as garrafas atrás de janelas de vidro fechadas barra a radiação UV — abra totalmente a janela ou coloque-as ao ar livre (em dias chuvosos ou à noite, ferva a água no [Fogareiro de Gás de Madeira de Dupla Lata](/protocol-12.html) ou no [Aquecedor de Lata de Atum e Óleo](/protocol-21.html)). Por fim, jamais beba água de caixas acopladas com pastilhas sanitárias azuis, aditivo de radiador, óleo ou agrotóxicos, pois nem o pano nem o sol removem venenos químicos.",
+    "description": "Garrafas plásticas coloridas (verdes de refrigerante ou marrons de cerveja) e garrafas velhas muito riscadas bloqueiam totalmente os raios UV-A, mantendo as bactérias vivas mesmo após horas no sol. Da mesma forma, deixar as garrafas atrás de janelas de vidro fechadas barra a radiação UV — abra totalmente a janela ou coloque-as ao ar livre (em dias chuvosos ou à noite, ferva a água no [Fogareiro de Gás de Madeira de Dupla Lata](/protocol-12) ou no [Aquecedor de Lata de Atum e Óleo](/protocol-21)). Por fim, jamais beba água de caixas acopladas com pastilhas sanitárias azuis, aditivo de radiador, óleo ou agrotóxicos, pois nem o pano nem o sol removem venenos químicos.",
     "consequence": "Escolha apenas água livre de químicos, filtre até ficar cristalina, use garrafas PET #1 incolores e complete as 6 horas de sol direto antes de beber."
   },
   "faqs": [
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T02:26:54.183Z",
-  "contentHash": "621efe19c4a078a8"
+  "updatedAt": "2026-11-04T11:56:30+09:00",
+  "contentHash": "1e9b8d304fe76a93"
 }

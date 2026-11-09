@@ -4,7 +4,7 @@
   "title": "Fleisch und Fisch mit einem Holz-Dreibein und grünem Eichenrauch über einen Monat haltbar räuchern (Feld-Dörrfleisch & Räucherfisch)",
   "threatLevel": "HIGH",
   "threatLevelText": "[LANGZEIT-KONSERVIERUNG] Fleisch- und Fischverderb ohne Kühlung oder Salz stoppen und tragbare Notrationen sichern",
-  "summary": "Im Feld enthalten frisches Fleisch und Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08.html) oder einer [Weiden-Trichterreuse](/protocol-11.html) so viel Wasser, dass Fliegen Eier ablegen und Bakterien sie binnen eines Tages verderben lassen. Selbst ein [Verdunstungskühler aus Tonkrügen](/protocol-16.html) lässt sich auf Märschen nicht mittragen. Ohne Salz zeigt diese Anleitung, wie man mit einer [Scharfen Steinklinge](/protocol-04.html) alles leicht verderbliche weiße Fett wegschneidet, mageres Fleisch in 5mm dünne Streifen schneidet, auf Brusthöhe an ein mit [Wilder Kudzu-Rankenschnur](/protocol-05.html) gebundenes Dreibein hängt und darunter [Eichenholzkohle](/protocol-09.html) mit grünen Laubblättern ohne Flammen glimmen lässt, um über einen Monat haltbares Dörrfleisch herzustellen.",
+  "summary": "Im Feld enthalten frisches Fleisch und Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08) oder einer [Weiden-Trichterreuse](/protocol-11) so viel Wasser, dass Fliegen Eier ablegen und Bakterien sie binnen eines Tages verderben lassen. Selbst ein [Verdunstungskühler aus Tonkrügen](/protocol-16) lässt sich auf Märschen nicht mittragen. Ohne Salz zeigt diese Anleitung, wie man mit einer [Scharfen Steinklinge](/protocol-04) alles leicht verderbliche weiße Fett wegschneidet, mageres Fleisch in 5mm dünne Streifen schneidet, auf Brusthöhe an ein mit [Wilder Kudzu-Rankenschnur](/protocol-05) gebundenes Dreibein hängt und darunter [Eichenholzkohle](/protocol-09) mit grünen Laubblättern ohne Flammen glimmen lässt, um über einen Monat haltbares Dörrfleisch herzustellen.",
   "timeRequired": "Halber Tag (1 Std. Zuschneiden & Windtrocknen + 30 Min. Dreibein-Aufbau + 6–8 Std. sanftes Räuchern)",
   "successRate": "98% (Bei vollständiger Fettentfernung und warmer, flammenloser Rauchführung)",
   "difficulty": "Mittel (Ohne Salz oder Metallrost nur mit Ästen, Eichenkohle und grünen Blättern machbar)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Frisches Wildfleisch oder ausgenommener Süßwasserfisch (4–5 Handvoll)",
-      "desc": "Frisches mageres Fleisch oder Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08.html) oder [Weiden-Trichterreuse](/protocol-11.html). Weißes Fett trocknet nicht und wird an der Luft schnell ranzig; es muss mit einer [Scharfen Steinklinge](/protocol-04.html) restlos entfernt werden."
+      "desc": "Frisches mageres Fleisch oder Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08) oder [Weiden-Trichterreuse](/protocol-11). Weißes Fett trocknet nicht und wird an der Luft schnell ranzig; es muss mit einer [Scharfen Steinklinge](/protocol-04) restlos entfernt werden."
     },
     {
       "id": "mat-02",
@@ -23,20 +23,20 @@
     {
       "id": "mat-03",
       "name": "2–3 Handvoll Eichenholzkohle und ein Armvoll frische grüne Eichenzweige & Blätter",
-      "desc": "Schaffe am Boden mit [Eichenholzkohle aus dem Grubenmeiler](/protocol-09.html) ein Glutbett und bedecke es dick mit frisch geschnittenen grünen Eichen-, Kastanien- oder Obstbaumzweigen und Blättern, damit keine Flammen schlagen und dichter weißer Rauch aufsteigt."
+      "desc": "Schaffe am Boden mit [Eichenholzkohle aus dem Grubenmeiler](/protocol-09) ein Glutbett und bedecke es dick mit frisch geschnittenen grünen Eichen-, Kastanien- oder Obstbaumzweigen und Blättern, damit keine Flammen schlagen und dichter weißer Rauch aufsteigt."
     },
     {
       "id": "mat-04",
       "name": "Wilde Kudzu-Rankenschnur sowie breite Blätter oder weiches Leder als Rauchmantel",
-      "desc": "[Wilde Kudzu-Rankenschnur](/protocol-05.html) zum Festbinden des Dreibeins sowie [Weiches Naturleder](/protocol-17.html) oder breite Blätterbündel, die das Dreibein kegelförmig umschließen, damit der Wind den Rauch nicht verweht."
+      "desc": "[Wilde Kudzu-Rankenschnur](/protocol-05) zum Festbinden des Dreibeins sowie [Weiches Naturleder](/protocol-17) oder breite Blätterbündel, die das Dreibein kegelförmig umschließen, damit der Wind den Rauch nicht verweht."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Schritt 1: Alles weiße Fett mit einer Steinklinge wegschneiden und 5mm dünne Streifen schneiden",
-      "description": "1. **Weißes Fett und Blutgerinnsel zu 100% entfernen**: Weißes Fett verliert beim Räuchern kein Wasser und fault nach wenigen Tagen mit ranzigem Geruch. Schneide mit einer [Scharfen Steinklinge](/protocol-04.html) **alles weiße Fett und zähe Sehnenhäute weg, sodass nur rotes Muskelfleisch** bleibt. Fische am Bauch öffnen, ausnehmen und flach aufklappen.\n2. **Längs zur Faser dünn und lang schneiden**: Schneide das magere Fleisch längs zur Faser gleichmäßig **5mm dünn (halbes Kleinfingerglied), zwei Finger breit (3cm) und eine Handspanne lang (20cm)**. Zu dicke Stücke faulen innen; zu dünne zerbröseln.\n3. **Oberflächenfeuchtigkeit 30 Minuten im windigen Schatten vortrocknen**: Hängt man nasses Fleisch direkt in den Rauch, klebt schwarzer Ruß an den Wassertropfen. Lege die Streifen **30 Minuten in den kühlen Wind, bis sich die Oberfläche leicht trocken und griffig anfühlt**.",
-      "actionNote": "> Weggeschnittenes weißes Fett separat aufbewahren: Auf Dörrfleisch verdirbt Fett zwar, aber langsam ausgelassen liefert es wertvollen Talg für [Natürliche Holzasche-Seife](/protocol-13.html) oder zum Imprägnieren von [Weichem Naturleder](/protocol-17.html).",
+      "description": "1. **Weißes Fett und Blutgerinnsel zu 100% entfernen**: Weißes Fett verliert beim Räuchern kein Wasser und fault nach wenigen Tagen mit ranzigem Geruch. Schneide mit einer [Scharfen Steinklinge](/protocol-04) **alles weiße Fett und zähe Sehnenhäute weg, sodass nur rotes Muskelfleisch** bleibt. Fische am Bauch öffnen, ausnehmen und flach aufklappen.\n2. **Längs zur Faser dünn und lang schneiden**: Schneide das magere Fleisch längs zur Faser gleichmäßig **5mm dünn (halbes Kleinfingerglied), zwei Finger breit (3cm) und eine Handspanne lang (20cm)**. Zu dicke Stücke faulen innen; zu dünne zerbröseln.\n3. **Oberflächenfeuchtigkeit 30 Minuten im windigen Schatten vortrocknen**: Hängt man nasses Fleisch direkt in den Rauch, klebt schwarzer Ruß an den Wassertropfen. Lege die Streifen **30 Minuten in den kühlen Wind, bis sich die Oberfläche leicht trocken und griffig anfühlt**.",
+      "actionNote": "> Weggeschnittenes weißes Fett separat aufbewahren: Auf Dörrfleisch verdirbt Fett zwar, aber langsam ausgelassen liefert es wertvollen Talg für [Natürliche Holzasche-Seife](/protocol-13) oder zum Imprägnieren von [Weichem Naturleder](/protocol-17).",
       "svgFileName": "pr19-step-01.svg",
       "svgLabels": [
         "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
@@ -60,7 +60,7 @@
             "traits": [
               {
                 "label": "FETTFREI/LEAN",
-                "value": "Mit einer [Scharfen Steinklinge](/protocol-04.html) **100% des weißen Fetts entfernen**, um Ranzigkeit zu verhindern."
+                "value": "Mit einer [Scharfen Steinklinge](/protocol-04) **100% des weißen Fetts entfernen**, um Ranzigkeit zu verhindern."
               },
               {
                 "label": "DICKE/5MM",
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Schritt 2: Dreibein aus 3 Ästen aufstellen und Fleischrost auf Brusthöhe festbinden",
-      "description": "1. **Dreibein aus 3 langen Ästen errichten**: Binde die oberen Enden von **3 geraden, handgelenkdicken und ca. 180cm langen Ästen** mit [Wilder Kudzu-Rankenschnur](/protocol-05.html) fest zusammen und spreize die Beine **zwei Schritt weit (ca. 120cm)** standfest in den Boden.\n2. **Dreieckigen Querrahmen auf Brusthöhe festbinden**: Hängt das Fleisch zu nah am Feuer, gart es statt zu trocknen. Binde auf **Brusthöhe (ca. 120cm)** 3 Querstreben zwischen die Beine, um einen waagerechten Dreiecksrahmen zu bilden.\n3. **Fleischstreifen mit Fingerabstand auf geschälte Stäbe hängen**: Lege 8–10 geschälte, glatte Stäbe über den Rahmen und hänge die Fleischstreifen mit **einem Fingerbreit (ca. 2cm) Abstand** auf, sodass sich keine Stücke berühren.",
+      "description": "1. **Dreibein aus 3 langen Ästen errichten**: Binde die oberen Enden von **3 geraden, handgelenkdicken und ca. 180cm langen Ästen** mit [Wilder Kudzu-Rankenschnur](/protocol-05) fest zusammen und spreize die Beine **zwei Schritt weit (ca. 120cm)** standfest in den Boden.\n2. **Dreieckigen Querrahmen auf Brusthöhe festbinden**: Hängt das Fleisch zu nah am Feuer, gart es statt zu trocknen. Binde auf **Brusthöhe (ca. 120cm)** 3 Querstreben zwischen die Beine, um einen waagerechten Dreiecksrahmen zu bilden.\n3. **Fleischstreifen mit Fingerabstand auf geschälte Stäbe hängen**: Lege 8–10 geschälte, glatte Stäbe über den Rahmen und hänge die Fleischstreifen mit **einem Fingerbreit (ca. 2cm) Abstand** auf, sodass sich keine Stücke berühren.",
       "actionNote": "> Fleischstreifen dürfen sich niemals berühren oder überlappen: Wo zwei Fleischstücke aneinanderkleben, kommen weder Rauch noch Luft durch; die Stelle bleibt feucht und bildet Maden oder Schimmel. Immer einen Fingerbreit Abstand lassen.",
       "svgFileName": "pr19-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Schritt 3: Eichenkohle in der Mittelgrube entzünden und mit grünen Blättern flammenlos abdecken",
-      "description": "1. **Flache Feuergrube unter der Dreibein-Mitte ausheben**: Grabe genau unter dem Rost eine Mulde **handbreit tief (15cm) und zwei Handspannen breit** und fülle sie mit zwei bis drei Handvoll glühender [Eichenholzkohle](/protocol-09.html), entzündet mit einem [Feuerbogen](/protocol-02.html).\n2. **Glühende Kohle mit grünen Eichenzweigen und Blättern abdecken**: Lege eine **doppelte Schicht feuchter grüner Eichen- (oder Kastanien-/Apfelbaum-) Zweige und Blätter** auf die flammenlose Glut, um Sauerstoff zu drosseln und dichten weißen Rauch zu erzeugen.\n3. **Wärme mit dem 3-Sekunden-Handtest auf Rosthöhe prüfen**: Halte die bloße Hand neben das hängende Fleisch. Musst du sie vor Hitze wegziehen, ist es zu heiß. Lege grüne Blätter nach, bis sich **3–5 Sekunden Handhalten angenehm warm anfühlen**.",
+      "description": "1. **Flache Feuergrube unter der Dreibein-Mitte ausheben**: Grabe genau unter dem Rost eine Mulde **handbreit tief (15cm) und zwei Handspannen breit** und fülle sie mit zwei bis drei Handvoll glühender [Eichenholzkohle](/protocol-09), entzündet mit einem [Feuerbogen](/protocol-02).\n2. **Glühende Kohle mit grünen Eichenzweigen und Blättern abdecken**: Lege eine **doppelte Schicht feuchter grüner Eichen- (oder Kastanien-/Apfelbaum-) Zweige und Blätter** auf die flammenlose Glut, um Sauerstoff zu drosseln und dichten weißen Rauch zu erzeugen.\n3. **Wärme mit dem 3-Sekunden-Handtest auf Rosthöhe prüfen**: Halte die bloße Hand neben das hängende Fleisch. Musst du sie vor Hitze wegziehen, ist es zu heiß. Lege grüne Blätter nach, bis sich **3–5 Sekunden Handhalten angenehm warm anfühlen**.",
       "actionNote": "> Niemals Kiefer, Nadelholz oder giftige Hölzer verbrennen: Nadelhölzer wie Kiefer entwickeln klebrigen Harzruß, der das Fleisch schwarz und ungenießbar bitter macht. Giftige Hölzer wie Oleander oder Giftsumach geben tödliche Gifte in den Rauch ab. Nur sichere Laubhölzer wie Eiche, Kastanie oder Obstbäume nutzen.",
       "svgFileName": "pr19-step-03.svg",
       "svgLabels": [
@@ -167,7 +167,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: Dreibein mit Leder oder Blättern ummanteln und einen halben Tag lang fertig trocknen",
-      "description": "1. **Dreibein mit Leder oder breiten Blättern umhüllen**: Wickle [Weiches Naturleder](/protocol-17.html) oder breite Blätterbündel um den mittleren und oberen Teil des Dreibeins und lasse **ganz oben nur ein faustgroßes Rauchloch** offen, damit der Rauch das Fleisch umströmt.\n2. **Fleischstreifen über 6–8 Stunden alle 2 Stunden wenden**: Wende die Streifen **alle 2 Stunden**, damit sie gleichmäßig trocknen, und lege über **einen halben Tag (6–8 Stunden)** bei Bedarf Eichenkohle und grüne Blätter nach.\n3. **Fertigstellung mit dem Trockenzweig-Biegetest prüfen**: Nimm das dickste abgekühlte Stück und **biege es mit den Fingern zur Hälfte; tritt kein Tropfen Wasser oder Blut aus und biegt es sich zäh wie ein trockener Zweig mit weißen Fasern**, ist es fertig.",
+      "description": "1. **Dreibein mit Leder oder breiten Blättern umhüllen**: Wickle [Weiches Naturleder](/protocol-17) oder breite Blätterbündel um den mittleren und oberen Teil des Dreibeins und lasse **ganz oben nur ein faustgroßes Rauchloch** offen, damit der Rauch das Fleisch umströmt.\n2. **Fleischstreifen über 6–8 Stunden alle 2 Stunden wenden**: Wende die Streifen **alle 2 Stunden**, damit sie gleichmäßig trocknen, und lege über **einen halben Tag (6–8 Stunden)** bei Bedarf Eichenkohle und grüne Blätter nach.\n3. **Fertigstellung mit dem Trockenzweig-Biegetest prüfen**: Nimm das dickste abgekühlte Stück und **biege es mit den Fingern zur Hälfte; tritt kein Tropfen Wasser oder Blut aus und biegt es sich zäh wie ein trockener Zweig mit weißen Fasern**, ist es fertig.",
       "actionNote": "> Fertiges Dörrfleisch vor dem Verpacken komplett abkühlen lassen: Packt man warmes Dörrfleisch sofort in einen geschlossenen Behälter, bildet die Restwärme Schwitzwasser und Schimmel. Immer im Schatten ganz abkühlen lassen und in trockenem Sackleinen oder Leder lagern.",
       "svgFileName": "pr19-step-04.svg",
       "svgLabels": [
@@ -237,15 +237,15 @@
     {
       "question": "Nach 3 Stunden Räuchern ist das Fleisch voller schwarzem Ruß und fühlt sich immer noch feucht an.",
       "causeDiagnostic": "Das Fleisch wurde nass ohne 30 Minuten Windtrocknung aufgehängt, harzige Kiefernzweige sind im Feuer oder das obere Abzugsloch des Dreibeins ist verstopft, sodass Wasserdampf nicht entweichen kann.",
-      "resolution": "Öffne sofort ganz oben am Dreibein ein faustgroßes Rauchloch für den Dampfabzug, entferne alle Nadelholzäste aus der Grube und nutze nur [Eichenholzkohle aus dem Grubenmeiler](/protocol-09.html) sowie grüne Laubblätter. Wische den Ruß mit trockenem Gras ab, lasse die Oberfläche erst im Wind antrocknen und räuchere dann sanft weiter."
+      "resolution": "Öffne sofort ganz oben am Dreibein ein faustgroßes Rauchloch für den Dampfabzug, entferne alle Nadelholzäste aus der Grube und nutze nur [Eichenholzkohle aus dem Grubenmeiler](/protocol-09) sowie grüne Laubblätter. Wische den Ruß mit trockenem Gras ab, lasse die Oberfläche erst im Wind antrocknen und räuchere dann sanft weiter."
     },
     {
       "question": "Beim Trocknen schwärmen ständig Schmeißfliegen und Mücken um das Fleisch. Wie halte ich sie fern?",
       "causeDiagnostic": "Die grünen Blätter auf der Glut sind verbrannt, sodass der Rauch abgerissen ist, oder der Mantel um das Dreibein ist zu offen, sodass der Wind den Rauch verweht.",
-      "resolution": "Fliegen meiden dichten Eichenrauch und Wärme. Lege eine weitere Handvoll feuchter grüner Eichenzweige und Blätter auf die Glut, damit ununterbrochen weißer Rauch aufsteigt, und schließe [Weiches Naturleder](/protocol-17.html) oder Blätterbündel dichter um das Dreibein."
+      "resolution": "Fliegen meiden dichten Eichenrauch und Wärme. Lege eine weitere Handvoll feuchter grüner Eichenzweige und Blätter auf die Glut, damit ununterbrochen weißer Rauch aufsteigt, und schließe [Weiches Naturleder](/protocol-17) oder Blätterbündel dichter um das Dreibein."
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T04:50:53.466Z",
-  "contentHash": "fcd2e88cf547f683"
+  "updatedAt": "2026-10-29T14:00:23+09:00",
+  "contentHash": "2feab12730b3a242"
 }

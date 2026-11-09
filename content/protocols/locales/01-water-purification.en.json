@@ -45,7 +45,7 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Tie a triangular cross-brace cradle on the tripod, seat the cone, and pack the moss plug",
-      "description": "1. **Build Tripod & Triangular Cradle Collar**: Lash three sturdy branches at the top with [Wild Kudzu Vine Cordage](/protocol-05.html) and spread the legs wide. Halfway down the legs, **tie three short cross-sticks horizontally across the three legs to form a triangular support collar**.\n2. **Seat Cone & Double-Lash**: Drop the tapered birch-bark cone (or bamboo tube) **down into the center of the triangular wooden collar** so it wedges snugly. Lash the cone's waist to the horizontal crossbar and **tie the cone's upper rim to the left and right tripod legs** so the top mouth stays wide open and never tilts.\n3. **Pack Bottom Moss Plug**: Firmly press a handful of clean rinsed sphagnum moss into the narrow bottom spout with your thumb.",
+      "description": "1. **Build Tripod & Triangular Cradle Collar**: Lash three sturdy branches at the top with [Wild Kudzu Vine Cordage](/protocol-05) and spread the legs wide. Halfway down the legs, **tie three short cross-sticks horizontally across the three legs to form a triangular support collar**.\n2. **Seat Cone & Double-Lash**: Drop the tapered birch-bark cone (or bamboo tube) **down into the center of the triangular wooden collar** so it wedges snugly. Lash the cone's waist to the horizontal crossbar and **tie the cone's upper rim to the left and right tripod legs** so the top mouth stays wide open and never tilts.\n3. **Pack Bottom Moss Plug**: Firmly press a handful of clean rinsed sphagnum moss into the narrow bottom spout with your thumb.",
       "actionNote": "> Mounting & Plug Check: Keep the top mouth completely open for pouring water, and ensure the horizontal triangular cradle supports the waist of the cone so heavy wet sand cannot push it down.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
@@ -112,7 +112,7 @@
     {
       "stepNumber": "02",
       "title": "Step 2: Crush charcoal to pea size and pack an 8cm active bed",
-      "description": "1. **Crush & Grade**: Take cool [Hardwood Charcoal](/protocol-09.html) and tap gently with a stone into **pea-sized chunks (5-8mm)**. Discard fine flour-like dust that would clog the water flow.\n2. **Pack 8cm Bed**: Pour the charcoal over the base moss plug and tamp down gently with a stick to form a level bed **four finger widths deep (about 8cm)**.",
+      "description": "1. **Crush & Grade**: Take cool [Hardwood Charcoal](/protocol-09) and tap gently with a stone into **pea-sized chunks (5-8mm)**. Discard fine flour-like dust that would clog the water flow.\n2. **Pack 8cm Bed**: Pour the charcoal over the base moss plug and tamp down gently with a stick to form a level bed **four finger widths deep (about 8cm)**.",
       "actionNote": "> Grain Rule: Charcoal chunks must remain coarser than rice grains. Fine powdered dust clogs percolation.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
@@ -184,7 +184,7 @@
     {
       "stepNumber": "05",
       "title": "Step 5: Boil filtered water for 3+ minutes to destroy all microbes",
-      "description": "1. **Heat in Boiler**: Transfer visually transparent filtered water into a clay pot or stone bowl seated on hearth stones over a [Bow-Drill Campfire](/protocol-02.html).\n2. **Maintain Rolling Boil**: Once large rolling bubbles erupt vigorously across the entire surface, maintain a continuous boil for at least **3 full minutes (5 minutes at altitudes above 1,000m)**.\n3. **Cool & Consume**: Allow the sterile water to cool before drinking.",
+      "description": "1. **Heat in Boiler**: Transfer visually transparent filtered water into a clay pot or stone bowl seated on hearth stones over a [Bow-Drill Campfire](/protocol-02).\n2. **Maintain Rolling Boil**: Once large rolling bubbles erupt vigorously across the entire surface, maintain a continuous boil for at least **3 full minutes (5 minutes at altitudes above 1,000m)**.\n3. **Cool & Consume**: Allow the sterile water to cool before drinking.",
       "actionNote": "> Compulsory Boiling: Clear water is NOT sterile water. Mechanical filtration followed by thermal boiling achieves 99.9% biological safety.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
@@ -226,6 +226,6 @@
     ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-27T00:18:03.903Z",
-  "contentHash": "ed3f942f6826c6c2"
+  "updatedAt": "2026-10-28T17:33:13+09:00",
+  "contentHash": "b95e8a8abc03a175"
 }

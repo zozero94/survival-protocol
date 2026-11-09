@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "40–50 varas verdes flexíveis de salgueiro ou aveleira (comprimento de um braço, 70–80cm)",
-      "desc": "Ramos verdes recém-cortados na margem com um [Machado de Pedra ou Lasca Afiada](/protocol-04.html), com metade da grossura de um dedo mínimo (~5mm), que dobrem sem quebrar."
+      "desc": "Ramos verdes recém-cortados na margem com um [Machado de Pedra ou Lasca Afiada](/protocol-04), com metade da grossura de um dedo mínimo (~5mm), que dobrem sem quebrar."
     },
     {
       "id": "mat-02",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Corda resistente à água de entrecasca de kudzu (15m no total)",
-      "desc": "Corda vegetal torcida conforme [Corda Selvagem de Fibras](/protocol-05.html). Selar os nós principais com [Cola Impermeável de Resina de Pinheiro](/protocol-10.html) evita que afrouxem debaixo d'água."
+      "desc": "Corda vegetal torcida conforme [Corda Selvagem de Fibras](/protocol-05). Selar os nós principais com [Cola Impermeável de Resina de Pinheiro](/protocol-10) evita que afrouxem debaixo d'água."
     },
     {
       "id": "mat-04",
@@ -40,8 +40,8 @@
     {
       "stepNumber": "01",
       "title": "Passo 1: Curvar Galhos Grossos em 4 Aros Circulares de Tamanhos Graduais",
-      "description": "1. **Testar Flexibilidade dos Galhos**: Dobre lentamente com as mãos 4 galhos de salgueiro da grossura de um lápis para garantir que curvem sem rachar.\n2. **Formar 4 Aros Graduais**: Enrole os galhos em quatro anéis circulares de **um palmo e meio (25cm de diâmetro)**, **um palmo (20cm)**, **dois punhos (15cm)** e **um punho (10cm)**.\n3. **Amarrar Pontas Sobrepostas**: Sobreponha as pontas de cada aro por **dois dedos de largura (~4cm)** e amarre firmemente com mais de 10 voltas de [Corda Selvagem](/protocol-05.html).\n4. **Alinhar a Intervalos de 1 Palmo**: Posicione os quatro aros do maior para o menor separados por **um palmo (~15cm)** para definir o cone.",
-      "actionNote": "> Identificação e Proteção Ocular: Galhos secos quebram de repente e podem ferir suas mãos ou olhos. Use o guia fotográfico abaixo para identificar **varas vivas de salgueiro** e **isca de caramujo de rio** ([Machado de Pedra (PR-04)](/protocol-04.html) / [Corda Selvagem (PR-05)](/protocol-05.html)).",
+      "description": "1. **Testar Flexibilidade dos Galhos**: Dobre lentamente com as mãos 4 galhos de salgueiro da grossura de um lápis para garantir que curvem sem rachar.\n2. **Formar 4 Aros Graduais**: Enrole os galhos em quatro anéis circulares de **um palmo e meio (25cm de diâmetro)**, **um palmo (20cm)**, **dois punhos (15cm)** e **um punho (10cm)**.\n3. **Amarrar Pontas Sobrepostas**: Sobreponha as pontas de cada aro por **dois dedos de largura (~4cm)** e amarre firmemente com mais de 10 voltas de [Corda Selvagem](/protocol-05).\n4. **Alinhar a Intervalos de 1 Palmo**: Posicione os quatro aros do maior para o menor separados por **um palmo (~15cm)** para definir o cone.",
+      "actionNote": "> Identificação e Proteção Ocular: Galhos secos quebram de repente e podem ferir suas mãos ou olhos. Use o guia fotográfico abaixo para identificar **varas vivas de salgueiro** e **isca de caramujo de rio** ([Machado de Pedra (PR-04)](/protocol-04) / [Corda Selvagem (PR-05)](/protocol-05)).",
       "svgFileName": "pr11-step-01.svg",
       "svgLabels": [
         "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
@@ -126,7 +126,7 @@
     {
       "stepNumber": "03",
       "title": "Passo 3: Construir o Funil Invertido (Válvula Unidirecional) e Costurar na Boca",
-      "description": "1. **Montar o Cone do Funil**: Junte **16–20 raminhos finos e elásticos de salgueiro** (comprimento do antebraço, ~30–35cm) formando um cone menor.\n2. **Definir Diâmetros de Entrada e Saída**: Abra a boca externa em **um palmo e meio (25cm)** para encaixar no corpo, e estreite o pescoço interno para a largura de **três dedos juntos (5–6cm)**.\n3. **Deixar as Pontas Internas Livres**: Deixe os últimos **dois dedos (5cm)** das pontas internas sem amarrar para que abram quando o peixe empurrar para entrar e travem como espinhos se tentar voltar.\n4. **Encaixar e Costurar na Boca**: Empurre o funil para dentro da boca larga do corpo principal e costure as duas bordas externas com [Corda Selvagem](/protocol-05.html).",
+      "description": "1. **Montar o Cone do Funil**: Junte **16–20 raminhos finos e elásticos de salgueiro** (comprimento do antebraço, ~30–35cm) formando um cone menor.\n2. **Definir Diâmetros de Entrada e Saída**: Abra a boca externa em **um palmo e meio (25cm)** para encaixar no corpo, e estreite o pescoço interno para a largura de **três dedos juntos (5–6cm)**.\n3. **Deixar as Pontas Internas Livres**: Deixe os últimos **dois dedos (5cm)** das pontas internas sem amarrar para que abram quando o peixe empurrar para entrar e travem como espinhos se tentar voltar.\n4. **Encaixar e Costurar na Boca**: Empurre o funil para dentro da boca larga do corpo principal e costure as duas bordas externas com [Corda Selvagem](/protocol-05).",
       "actionNote": "> Medida do Pescoço: Se o furo interno for maior que seu punho, os peixes nadarão para fora. Mantenha na largura de três dedos (5–6cm) para funcionar como válvula de retenção.",
       "svgFileName": "pr11-step-03.svg",
       "svgLabels": [
@@ -146,7 +146,7 @@
       "stepNumber": "04",
       "title": "Passo 4: Colocar Pedras de Lastro e Isca, e Fixar com Estacas na Correnteza",
       "description": "1. **Colocar Lastro e Trouxa de Isca**: Abra o nó traseiro, coloque **2 pedras do tamanho de um punho** e uma folha furada com **caramujos esmagados e minhocas**, e amarre a cauda novamente.\n2. **Escolher Canal Entre Pedras**: Procure um canal estreito de água entre pedras com **profundidade até o joelho (30–50cm)** ou junto à vegetação da margem.\n3. **Apontar a Boca Rio Acima**: Afunde o covo no leito com a **boca do funil voltada rio acima (ou na diagonal da correnteza)** para que o cheiro da isca desça com a água.\n4. **Travar com 4 Estacas e Pedras Laterais**: Crave **4 estacas de madeira do tamanho do antebraço** nos dois lados do covo e escore pedras pesadas nas laterais para que a correnteza noturna não o role.",
-      "actionNote": "> Coleta e Cozimento Seguro: Pela manhã, basta puxar o nó traseiro para recolher os peixes. Cozinhe sempre muito bem os peixes de água doce sobre um [Fogão Dakota Sem Fumaça](/protocol-06.html) ou [Brasas de Carvão de Carvalho](/protocol-09.html) para eliminar parasitas.",
+      "actionNote": "> Coleta e Cozimento Seguro: Pela manhã, basta puxar o nó traseiro para recolher os peixes. Cozinhe sempre muito bem os peixes de água doce sobre um [Fogão Dakota Sem Fumaça](/protocol-06) ou [Brasas de Carvão de Carvalho](/protocol-09) para eliminar parasitas.",
       "svgFileName": "pr11-step-04.svg",
       "svgLabels": [
         "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
@@ -178,5 +178,5 @@
     "description": "Corte longitudinal mostrando os 4 aros graduais, corpo cônico de varas de salgueiro a 1cm, funil antirretorno de 5cm, 2 pedras de lastro, trouxa de isca de caramujo e 4 estacas de fixação no leito do rio."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "037d4ce0763a3aa2"
+  "contentHash": "69dbedcc472bdbdb"
 }

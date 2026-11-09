@@ -4,7 +4,7 @@
   "title": "How to Distill Seawater & Muddy Water into Pure Drinking Water with a Clay Pot & Bamboo Pipe",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEHYDRATION DEFENSE] 100% Salt-Free Freshwater Recovery on Coasts & Contaminated Zones",
-  "summary": "When stranded on a coast, island, or near brackish pools where only seawater or chemically tainted water exists, a [Charcoal & Sand Filter](/protocol-01.html) only removes dirt and odors—it cannot remove dissolved salt (3.5% salinity). Drinking seawater draws water out of your cells and causes fatal dehydration within two days. By boiling seawater in an [Earthen Clay Pot](/protocol-16.html) over a [Clay Hearth](/protocol-06.html), attaching a node-hollowed bamboo pipe to the sealed lid, and wrapping the pipe with cold-water-soaked [Sphagnum Moss and Burlap](/protocol-18.html), heavy salt stays at the bottom as white crystals while pure steam condenses inside the cool tube into 2–3 liters of pure drinking water and natural sea salt per day.",
+  "summary": "When stranded on a coast, island, or near brackish pools where only seawater or chemically tainted water exists, a [Charcoal & Sand Filter](/protocol-01) only removes dirt and odors—it cannot remove dissolved salt (3.5% salinity). Drinking seawater draws water out of your cells and causes fatal dehydration within two days. By boiling seawater in an [Earthen Clay Pot](/protocol-16) over a [Clay Hearth](/protocol-06), attaching a node-hollowed bamboo pipe to the sealed lid, and wrapping the pipe with cold-water-soaked [Sphagnum Moss and Burlap](/protocol-18), heavy salt stays at the bottom as white crystals while pure steam condenses inside the cool tube into 2–3 liters of pure drinking water and natural sea salt per day.",
   "timeRequired": "2 Hours (Bamboo node piercing & clay-resin seal 40m + Moss cooling wrap 20m + Boiling & distillation 1h)",
   "successRate": "99% (With airtight clay lid seal and continuous cool seawater wetting on the moss wrap)",
   "difficulty": "Medium (Buildable with earthen pots, bamboo, and moss without modern tubing or tarps)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Fireproof Earthen Clay Boiling Pot with Lid & Clean Receiving Bowl",
-      "desc": "A heat-resistant unglazed clay pot (or hollowed stone basin) as used in the [Clay Zeer Pot](/protocol-16.html) with a fitting lid, plus a clean bowl to catch pure freshwater dripping from the bamboo pipe tip."
+      "desc": "A heat-resistant unglazed clay pot (or hollowed stone basin) as used in the [Clay Zeer Pot](/protocol-16) with a fitting lid, plus a clean bowl to catch pure freshwater dripping from the bamboo pipe tip."
     },
     {
       "id": "mat-02",
@@ -23,19 +23,19 @@
     {
       "id": "mat-03",
       "name": "Cold-Soaked Sphagnum Moss, Burlap Cloth & Wild Kudzu Cordage",
-      "desc": "Highly absorbent sphagnum moss and burlap from the [Field Splint Pad](/protocol-18.html) wrapped thickly around the middle of the bamboo tube and tied with [Wild Kudzu Cordage](/protocol-05.html), kept cold by pouring cool seawater over it."
+      "desc": "Highly absorbent sphagnum moss and burlap from the [Field Splint Pad](/protocol-18) wrapped thickly around the middle of the bamboo tube and tied with [Wild Kudzu Cordage](/protocol-05), kept cold by pouring cool seawater over it."
     },
     {
       "id": "mat-04",
       "name": "Two Fistfuls of Wet Clay Paste, Pine Pitch Glue & Y-Forked Support Stick",
-      "desc": "Wet clay paste and [Pine Pitch Glue](/protocol-10.html) to hermetically seal the pot lid rim and bamboo joint against steam leaks, plus a Y-forked branch to prop the condenser tube at a downward slope."
+      "desc": "Wet clay paste and [Pine Pitch Glue](/protocol-10) to hermetically seal the pot lid rim and bamboo joint against steam leaks, plus a Y-forked branch to prop the condenser tube at a downward slope."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Step 1: Pierce Bamboo Nodes with a Hot Wooden Rod & Seal Joint into Clay Lid with Pitch and Clay",
-      "description": "1. **Burn Through Internal Bamboo Nodes**: Select a straight bamboo pole **five handspans long (1m) and wrist-thick (4–5cm diameter)**, and push a red-hot fire-hardened wooden rod through the core to **burn and punch out all internal node walls with a hiss of smoke** until you see straight through.\n2. **Fit Bamboo End into Clay Lid Hole**: Use a [Sharp Stone Blade](/protocol-04.html) or stone awl to bore a snug hole in the center of the clay lid, inserting the bamboo pipe **two finger-joints deep (4cm)**.\n3. **Double-Seal Joint with Pine Pitch and Clay**: Coat the gap around the bamboo joint with warm [Pine Pitch Glue](/protocol-10.html), then pack **wet clay paste finger-thick (1.5cm)** over it so zero steam can escape.",
+      "description": "1. **Burn Through Internal Bamboo Nodes**: Select a straight bamboo pole **five handspans long (1m) and wrist-thick (4–5cm diameter)**, and push a red-hot fire-hardened wooden rod through the core to **burn and punch out all internal node walls with a hiss of smoke** until you see straight through.\n2. **Fit Bamboo End into Clay Lid Hole**: Use a [Sharp Stone Blade](/protocol-04) or stone awl to bore a snug hole in the center of the clay lid, inserting the bamboo pipe **two finger-joints deep (4cm)**.\n3. **Double-Seal Joint with Pine Pitch and Clay**: Coat the gap around the bamboo joint with warm [Pine Pitch Glue](/protocol-10), then pack **wet clay paste finger-thick (1.5cm)** over it so zero steam can escape.",
       "actionNote": "> Bind Bamboo Exterior with Wet Cordage Before Piercing: Pushing a rod too hard into dry bamboo can split its side wall. Wrap wet plant fibers around the outside at intervals and twist the hot rod gently through each node.",
       "svgFileName": "pr20-step-01.svg",
       "svgLabels": [
@@ -68,7 +68,7 @@
               },
               {
                 "label": "SEALED/COLLAR",
-                "value": "Double-sealed with [Pine Pitch](/protocol-10.html) and **finger-thick clay paste** to prevent vapor loss."
+                "value": "Double-sealed with [Pine Pitch](/protocol-10) and **finger-thick clay paste** to prevent vapor loss."
               }
             ],
             "fieldUse": "Directs 100% of pure rising steam from boiling seawater into the cooling condenser section"
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Step 2: Fill Clay Pot 2/3 with Seawater on Hearth & Prop Bamboo Pipe at a 30-Degree Downward Slope",
-      "description": "1. **Fill Boiling Pot Only 2/3 Full**: Pour seawater into the pot on your [Clay Hearth](/protocol-06.html) up to **two-thirds height (leaving one handspan of top headspace)** so boiling salty foam never surges into the bamboo pipe.\n2. **Seal Lid Rim with Clay and Ignite Fire**: Pack sticky wet clay around the pot rim, press the lid down firmly, and light the hearth using a [Bow Drill Fire](/protocol-02.html).\n3. **Prop Pipe at a 30-Degree Downward Angle**: Plant a **Y-forked wooden stick** three handspans from the hearth so the bamboo tip slopes **two handspans (40cm) lower than the pot at a 30-degree angle** for gravity drainage.",
+      "description": "1. **Fill Boiling Pot Only 2/3 Full**: Pour seawater into the pot on your [Clay Hearth](/protocol-06) up to **two-thirds height (leaving one handspan of top headspace)** so boiling salty foam never surges into the bamboo pipe.\n2. **Seal Lid Rim with Clay and Ignite Fire**: Pack sticky wet clay around the pot rim, press the lid down firmly, and light the hearth using a [Bow Drill Fire](/protocol-02).\n3. **Prop Pipe at a 30-Degree Downward Angle**: Plant a **Y-forked wooden stick** three handspans from the hearth so the bamboo tip slopes **two handspans (40cm) lower than the pot at a 30-degree angle** for gravity drainage.",
       "actionNote": "> Drop 3–4 Clean Pebbles into Pot Bottom: Seawater foams and bumps violently when boiling. Placing 3–4 washed fist-half pebbles on the bottom breaks up large surges into gentle bubbles so salt spray never enters the pipe.",
       "svgFileName": "pr20-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Step 3: Wrap Pipe Mid-Section with Wet Sphagnum Moss & Burlap to Condense Steam into Cold Water",
-      "description": "1. **Wrap 60cm Mid-Section with Wet Moss and Burlap**: Wrap cold-soaked [Sphagnum Moss and Burlap](/protocol-18.html) **fist-thick over a three-handspan (60cm) middle section** of the bamboo pipe and bind with [Wild Kudzu Cordage](/protocol-05.html).\n2. **Douse Moss Jacket with Cool Seawater Every 10 Minutes**: Ladle cool raw seawater over the **exterior moss pad every 10 minutes** so the bamboo wall stays cool to the touch.\n3. **Tie a Cordage Drip-Stop Ring Before the Pipe Tip**: Tie a tight kudzu cordage ring with a hanging tail near the end of the pipe and place a bark tray beneath the moss so **salty exterior cooling water drips to the ground** well before the freshwater bowl.",
+      "description": "1. **Wrap 60cm Mid-Section with Wet Moss and Burlap**: Wrap cold-soaked [Sphagnum Moss and Burlap](/protocol-18) **fist-thick over a three-handspan (60cm) middle section** of the bamboo pipe and bind with [Wild Kudzu Cordage](/protocol-05).\n2. **Douse Moss Jacket with Cool Seawater Every 10 Minutes**: Ladle cool raw seawater over the **exterior moss pad every 10 minutes** so the bamboo wall stays cool to the touch.\n3. **Tie a Cordage Drip-Stop Ring Before the Pipe Tip**: Tie a tight kudzu cordage ring with a hanging tail near the end of the pipe and place a bark tray beneath the moss so **salty exterior cooling water drips to the ground** well before the freshwater bowl.",
       "actionNote": "> Isolate Salty Exterior Cooling Water from Collection Bowl: Never let cooling seawater run down the outside of the bamboo into your drinking bowl. The tied cordage drip ring forces all exterior runoff to drop straight to the ground.",
       "svgFileName": "pr20-step-03.svg",
       "svgLabels": [
@@ -168,7 +168,7 @@
       "stepNumber": "04",
       "title": "Step 4: Discard the First Half-Cup, Collect Pure Freshwater & Harvest White Sea Salt from Pot Bottom",
       "description": "1. **Discard the First Half-Cup (50ml) of Runoff**: The first half-cup dripping out after 10 minutes carries bamboo dust and volatile raw odors—**pour this first 50ml onto the moss pad** instead of drinking it.\n2. **Verify Zero Salinity on Tongue Tip and Collect Freshwater**: Touch a droplet to your tongue tip to **confirm it tastes 100% sweet and salt-free**, then collect 500ml+ per hour in your clean bowl.\n3. **Extinguish Fire Early and Scrape Residual Sea Salt**: When water inside the pot drops to **one finger-joint deep**, put out the fire, let residual heat dry the bottom, and **scrape out the white natural sea salt crystals** with a wooden spatula.",
-      "actionNote": "> Save Residual Sea Salt for Meat Preservation & Electrolyte Recovery: The white sea salt left in the pot is invaluable in the wild. Wrap it in dry leaves to cure [Smoked Meat & Fish Jerky](/protocol-19.html) or add a tiny pinch to drinking water during heavy sweating.",
+      "actionNote": "> Save Residual Sea Salt for Meat Preservation & Electrolyte Recovery: The white sea salt left in the pot is invaluable in the wild. Wrap it in dry leaves to cure [Smoked Meat & Fish Jerky](/protocol-19) or add a tiny pinch to drinking water during heavy sweating.",
       "svgFileName": "pr20-step-04.svg",
       "svgLabels": [
         "FIG. 04 // FIRST-RUN DISCARD, PURE FRESHWATER COLLECTION & SALT HARVEST",
@@ -200,7 +200,7 @@
               },
               {
                 "label": "HARVEST/SALT",
-                "value": "Recovers **white crystalline sea salt** from the pot bottom for [food preservation](/protocol-19.html)."
+                "value": "Recovers **white crystalline sea salt** from the pot bottom for [food preservation](/protocol-19)."
               }
             ],
             "fieldUse": "Provides both life-saving pure drinking water and essential culinary sea salt from ocean water"
@@ -237,15 +237,15 @@
     {
       "question": "The seawater is boiling hard in the pot, but only white steam blows out of the bamboo tip instead of water droplets.",
       "causeDiagnostic": "The sphagnum moss wrap around the bamboo tube has dried out and heated up, or the hearth fire is roaring too hot for the steam to condense in time.",
-      "resolution": "Immediately douse the [Sphagnum Moss and Burlap](/protocol-18.html) jacket with cold raw seawater until the bamboo feels cool to the touch, and pull one log out of the [Clay Hearth](/protocol-06.html) to maintain a steady simmer. As soon as the tube cools, white steam stops and clear water droplets flow steadily."
+      "resolution": "Immediately douse the [Sphagnum Moss and Burlap](/protocol-18) jacket with cold raw seawater until the bamboo feels cool to the touch, and pull one log out of the [Clay Hearth](/protocol-06) to maintain a steady simmer. As soon as the tube cools, white steam stops and clear water droplets flow steadily."
     },
     {
       "question": "Why does the water collected in my receiving bowl still taste slightly salty?",
       "causeDiagnostic": "Either the pot was filled too high so boiling salty foam surged into the tube, or cooling seawater poured onto the moss ran down the outside of the bamboo into your bowl.",
-      "resolution": "Lower the seawater level in the pot below two-thirds height and add 3–4 clean pebbles to stop violent foaming. Then tie a tight [Wild Kudzu Cordage](/protocol-05.html) drip ring around the bamboo tube between the moss wrap and the bowl so all exterior salty runoff drips onto the ground."
+      "resolution": "Lower the seawater level in the pot below two-thirds height and add 3–4 clean pebbles to stop violent foaming. Then tie a tight [Wild Kudzu Cordage](/protocol-05) drip ring around the bamboo tube between the moss wrap and the bowl so all exterior salty runoff drips onto the ground."
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T10:59:47+09:00",
-  "contentHash": "e30d31f76b87086a"
+  "updatedAt": "2026-11-02T11:24:26+09:00",
+  "contentHash": "3662cb12c2284d2c"
 }

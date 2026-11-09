@@ -4,7 +4,7 @@
   "title": "How to Build a Zero-Power Indoor Thermal Capsule & Sleeping Bag (+7°C) with Cardboard Boxes, Newspaper & Old Clothes",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WINTER BLACKOUT HYPOTHERMIA DEFENSE & ZERO-POWER THERMAL CAPSULE]",
-  "summary": "If your home already has ready-made winter gear such as a cold-weather sleeping bag, indoor thermal tent, mylar survival blanket, chemical hand warmers, or hot water bottles, always use those first as the fastest and warmest solution. However, when a winter blackout or heating failure drags on, hand warmers are depleted, and no ready-made thermal tent is available, sleeping directly on a cold concrete floor under ordinary blankets drains 70% of your body heat into the floor and causes overnight hypothermia (in outdoor wilderness isolation, build a [Debris Hut Shelter](/protocol-03.html)). By stacking flattened shipping cardboard boxes 3 layers thick on the floor, standing a kitchen foil-lined cardboard hood over your upper body, and stuffing fist-sized crumpled newspaper balls inside a duvet cover, your own 100W metabolic body heat warms the capsule interior 6 to 8°C above the room temperature with zero fuel.",
+  "summary": "If your home already has ready-made winter gear such as a cold-weather sleeping bag, indoor thermal tent, mylar survival blanket, chemical hand warmers, or hot water bottles, always use those first as the fastest and warmest solution. However, when a winter blackout or heating failure drags on, hand warmers are depleted, and no ready-made thermal tent is available, sleeping directly on a cold concrete floor under ordinary blankets drains 70% of your body heat into the floor and causes overnight hypothermia (in outdoor wilderness isolation, build a [Debris Hut Shelter](/protocol-03)). By stacking flattened shipping cardboard boxes 3 layers thick on the floor, standing a kitchen foil-lined cardboard hood over your upper body, and stuffing fist-sized crumpled newspaper balls inside a duvet cover, your own 100W metabolic body heat warms the capsule interior 6 to 8°C above the room temperature with zero fuel.",
   "timeRequired": "20 mins (3-layer cardboard floor mat 5m + Foil-lined cardboard hood 5m + Crumpled newspaper sleeping bag 5m + Blanket curtain 5m)",
   "successRate": "99% (When securing 1.5cm+ 3-layer cardboard floor insulation and a fist-sized bottom air vent gap)",
   "difficulty": "Easy (Built immediately indoors without knives or tools using shipping boxes, newspaper, and bedding)",
@@ -13,17 +13,17 @@
     {
       "id": "mat-01",
       "name": "5-6 Corrugated Shipping Cardboard Boxes (4 Wide Boxes for Floor Mat & 1-2 Large Boxes for Upper-Body Hood)",
-      "desc": "Corrugated cardboard boxes serve as top-tier thermal insulation when ready-made foam camping mats or indoor tents are unavailable. The wavy air flutes inside the cardboard block cold conduction from concrete floors; unfold them along the glued seam by hand or with a [Sharp Stone Blade](/protocol-04.html)."
+      "desc": "Corrugated cardboard boxes serve as top-tier thermal insulation when ready-made foam camping mats or indoor tents are unavailable. The wavy air flutes inside the cardboard block cold conduction from concrete floors; unfold them along the glued seam by hand or with a [Sharp Stone Blade](/protocol-04)."
     },
     {
       "id": "mat-02",
       "name": "20-30 Sheets of Newspaper (or Flyers/Wrapping Paper) & 1 Duvet Cover or 2-3 Thick Winter Coats",
-      "desc": "Thermal loft filler that replaces depleted down sleeping bags or hot packs. Loosely crumpling newspaper sheets into fist-sized balls and stuffing them between a duvet cover or layered winter coats (tie openings with [Natural Kudzu Cordage](/protocol-05.html) or shoelaces) traps warm dead air just like down feathers."
+      "desc": "Thermal loft filler that replaces depleted down sleeping bags or hot packs. Loosely crumpling newspaper sheets into fist-sized balls and stuffing them between a duvet cover or layered winter coats (tie openings with [Natural Kudzu Cordage](/protocol-05) or shoelaces) traps warm dead air just like down feathers."
     },
     {
       "id": "mat-03",
       "name": "Two Handspans of Kitchen Metal Foil & 1 Thin Blanket or Large Bath Towel (Cooked Rice or Pine Resin Paste)",
-      "desc": "Radiant heat reflector attached inside the cardboard hood ceiling in place of a ready-made survival blanket. Gluing kitchen foil shiny-side-down to the inner ceiling using mashed rice paste or flour paste ([Pine Resin Glue](/protocol-10.html) in the field) reflects 90% of your body's infrared heat back onto you."
+      "desc": "Radiant heat reflector attached inside the cardboard hood ceiling in place of a ready-made survival blanket. Gluing kitchen foil shiny-side-down to the inner ceiling using mashed rice paste or flour paste ([Pine Resin Glue](/protocol-10) in the field) reflects 90% of your body's infrared heat back onto you."
     }
   ],
   "steps": [
@@ -195,7 +195,7 @@
               },
               {
                 "label": "BOOST/BOTTLE",
-                "value": "Placing a towel-wrapped warm water bottle heated on the [Tuna Can Oil Heater](/protocol-21.html) at your feet keeps you warm even in sub-zero rooms."
+                "value": "Placing a towel-wrapped warm water bottle heated on the [Tuna Can Oil Heater](/protocol-21) at your feet keeps you warm even in sub-zero rooms."
               }
             ],
             "fieldUse": "Zero-power indoor sleeping shelter during winter blackouts and heating grid failures"
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Never Bring Candles, Oil Heaters, or Charcoal Embers Inside the Cardboard Capsule, and Never Seal Your Head or Box Opening with Plastic Bags",
-    "description": "Bringing open flames—such as candles, gas stoves, the [Tuna Can Cooking Oil Heater](/protocol-21.html), or charcoal embers from a [Clay Hearth](/protocol-06.html)—inside a dry cardboard and newspaper capsule will ignite the paper if you shift in your sleep, causing instant lethal fire and carbon monoxide suffocation (always keep any flame heater outside in a clear, safe area solely to warm water). Furthermore, sealing the box shut with tape or pulling a plastic bag over your head causes fatal suffocation and severe condensation.",
+    "description": "Bringing open flames—such as candles, gas stoves, the [Tuna Can Cooking Oil Heater](/protocol-21), or charcoal embers from a [Clay Hearth](/protocol-06)—inside a dry cardboard and newspaper capsule will ignite the paper if you shift in your sleep, causing instant lethal fire and carbon monoxide suffocation (always keep any flame heater outside in a clear, safe area solely to warm water). Furthermore, sealing the box shut with tape or pulling a plastic bag over your head causes fatal suffocation and severe condensation.",
     "consequence": "If you want extra heat inside the capsule, never bring fire inside—instead, pour warm water into a tightly capped metal or thick bottle (or wrap a warmed stone in thick towels) and place it safely at your feet."
   },
   "faqs": [
@@ -240,6 +240,7 @@
       "FIELD VERIFIED // 0% FUEL WINTER BLACKOUT HYPOTHERMIA DEFENSE"
     ]
   },
-  "contentHash": "7102df871c650344",
-  "createdAt": "2026-11-03T01:00:00.000Z"
+  "contentHash": "fa7cb634f6645209",
+  "createdAt": "2026-11-03T01:00:00.000Z",
+  "updatedAt": "2026-11-03T10:37:53+09:00"
 }

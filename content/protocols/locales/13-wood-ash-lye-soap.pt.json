@@ -4,7 +4,7 @@
   "title": "Fabricação de Sabão Desinfetante Natural com Lixívia de Cinza de Carvalho e Gordura para Prevenir Infecções",
   "threatLevel": "HIGH",
   "threatLevelText": "[HIGIENE DE CAMPO & DESINFECÇÃO DE FERIDAS & PREVENÇÃO DE SEPSE]",
-  "summary": "Em cenários de sobrevivência no mato ou colapso civilizatório sem saneamento nem antibióticos, uma simples escoriação ou comer com as mãos sujas pode desencadear disenteria bacteriana, tétano ou sepse fatal em poucos dias. Coletando cinzas brancas puras de carvalho de uma fogueira ou do [fogareiro a lenha de gaseificação em lata dupla](/protocol-12.html), compactando-as em uma lata perfurada com leito de cascalho e capim-seco e vertendo água quente, extrai-se uma lixívia alcalina rica em carbonato de potássio. Fervendo suavemente essa lixívia na proporção de 1:1 com sebo animal purificado ou óleo vegetal reaproveitado sob agitação constante com espátula de madeira, inicia-se a saponificação, gerando um sabão bactericida de alta potência que rompe as membranas dos patógenos.",
+  "summary": "Em cenários de sobrevivência no mato ou colapso civilizatório sem saneamento nem antibióticos, uma simples escoriação ou comer com as mãos sujas pode desencadear disenteria bacteriana, tétano ou sepse fatal em poucos dias. Coletando cinzas brancas puras de carvalho de uma fogueira ou do [fogareiro a lenha de gaseificação em lata dupla](/protocol-12), compactando-as em uma lata perfurada com leito de cascalho e capim-seco e vertendo água quente, extrai-se uma lixívia alcalina rica em carbonato de potássio. Fervendo suavemente essa lixívia na proporção de 1:1 com sebo animal purificado ou óleo vegetal reaproveitado sob agitação constante com espátula de madeira, inicia-se a saponificação, gerando um sabão bactericida de alta potência que rompe as membranas dos patógenos.",
   "timeRequired": "70 minutos (20 min lixiviação de cinzas + 45 min fervura de saponificação + 5 min moldagem)",
   "successRate": "95% (ao verificar a densidade com flutuação de batata e manter a mistura unidirecional)",
   "difficulty": "Média (extremo cuidado contra queimaduras químicas cáusticas por contato de lixívia com pele e olhos)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "Um balde de cinzas brancas puras de carvalho completamente calcinadas",
-      "desc": "Cinza fina e aveludada como farinha, recolhida de um [forno de carvão de carvalho](/protocol-09.html) ou fogueira, peneirada e livre de pedaços de carvão preto. O carvalho e as madeiras de lei concentram a maior carga de potássio para produzir lixívia forte."
+      "desc": "Cinza fina e aveludada como farinha, recolhida de um [forno de carvão de carvalho](/protocol-09) ou fogueira, peneirada e livre de pedaços de carvão preto. O carvalho e as madeiras de lei concentram a maior carga de potássio para produzir lixívia forte."
     },
     {
       "id": "mat-02",
       "name": "Lata metálica perfurada com leito filtrante de cascalho e capim-seco",
-      "desc": "Inspirada no princípio do [filtro de água natural](/protocol-01.html). Uma lata de conserva grande com perfurações no fundo, forrada com seixos rolados e capim-seco compactado para impedir a passagem das cinzas enquanto drena a lixívia límpida. Queimar tintas e vernizes antes do uso."
+      "desc": "Inspirada no princípio do [filtro de água natural](/protocol-01). Uma lata de conserva grande com perfurações no fundo, forrada com seixos rolados e capim-seco compactado para impedir a passagem das cinzas enquanto drena a lixívia límpida. Queimar tintas e vernizes antes do uso."
     },
     {
       "id": "mat-03",
@@ -33,14 +33,14 @@
     {
       "id": "mat-05",
       "name": "1 colher de sopa de resina de pinheiro em pó e 1 colher de chá de sal de cozinha",
-      "desc": "Cristais de resina de pinheiro semelhantes aos da [pomada desinfetante de pinho](/protocol-10.html), pulverizados finamente para agregar fitoncidas antibacterianos, e uma pitada de sal para acelerar o endurecimento das barras no desmolde."
+      "desc": "Cristais de resina de pinheiro semelhantes aos da [pomada desinfetante de pinho](/protocol-10), pulverizados finamente para agregar fitoncidas antibacterianos, e uma pitada de sal para acelerar o endurecimento das barras no desmolde."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Passo 1: Compactar cinzas brancas de carvalho na lata filtrante e extrair a lixívia alcalina dourada com água quente",
-      "description": "1. **Triagem de cinzas brancas puras**: Remova pedaços de carvão preto e recolha um balde de **cinzas de carvalho esbranquiçadas e finas**, descartando lascas grossas de casca ou terra.\n2. **Estratificação do filtro de seixos e capim**: Em uma lata metálica grande perfurada no fundo com prego, coloque seixos limpos da grossura de um polegar e prense por cima capim-seco na espessura de **dois nós de dedo (cerca de 3 cm)**.\n3. **Carga de cinza e infusão com água fervente**: Pressione a cinza branca com força até **um palmo abaixo da borda (80% da capacidade)** e despeje vagarosamente [água previamente fervida e quente](/protocol-01.html) até embeber todo o leito.\n4. **Coleta da lixívia âmbar**: Posicione um recipiente limpo por baixo para aparar gota a gota a lixívia untuosa, espessa e de tom âmbar dourado (solução de carbonato de potássio).",
+      "description": "1. **Triagem de cinzas brancas puras**: Remova pedaços de carvão preto e recolha um balde de **cinzas de carvalho esbranquiçadas e finas**, descartando lascas grossas de casca ou terra.\n2. **Estratificação do filtro de seixos e capim**: Em uma lata metálica grande perfurada no fundo com prego, coloque seixos limpos da grossura de um polegar e prense por cima capim-seco na espessura de **dois nós de dedo (cerca de 3 cm)**.\n3. **Carga de cinza e infusão com água fervente**: Pressione a cinza branca com força até **um palmo abaixo da borda (80% da capacidade)** e despeje vagarosamente [água previamente fervida e quente](/protocol-01) até embeber todo o leito.\n4. **Coleta da lixívia âmbar**: Posicione um recipiente limpo por baixo para aparar gota a gota a lixívia untuosa, espessa e de tom âmbar dourado (solução de carbonato de potássio).",
       "actionNote": "> Perigo cáustico: A lixívia de cinza de carvalho é uma base alcalina forte capaz de digerir tecidos orgânicos e queimar a pele. Mexa apenas com espátulas de madeira e lave com água corrente fria por 5 minutos caso espirrem gotas. Confira as espécies botânicas no guia abaixo.",
       "svgFileName": "pr13-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Passo 2: Calibrar a densidade da lixívia com batata crua e clarificar o sebo ou óleo usado",
-      "description": "1. **Teste hidrométrico com batata crua**: Deposite suavemente um **cubo de batata crua do tamanho de uma unha (2 cm)** ou um ovo cru fresco na lixívia coletada.\n2. **Avaliação da flutuabilidade**: Se a batata afundar, a lixívia está fraca; leve-a ao fogo para **ferver e reduzir pela metade**. Quando a batata boiar expondo **uma coroa da largura de uma unha para fora do líquido**, a concentração é perfeita para saponificar.\n3. **Fusão e clarificação de gordura animal**: Pique a gordura e o sebo de caça em pedaços miúdos, coloque numa panela sobre a chama suave do [fogareiro a lenha](/protocol-12.html) e derreta lentamente até extrair o óleo límpido.\n4. **Filtragem e dosagem**: Coe a gordura derretida com pano limpo ou capim para reter resíduos de carne e água, obtendo **exatamente 2 xícaras de óleo clarificado e puro**.",
+      "description": "1. **Teste hidrométrico com batata crua**: Deposite suavemente um **cubo de batata crua do tamanho de uma unha (2 cm)** ou um ovo cru fresco na lixívia coletada.\n2. **Avaliação da flutuabilidade**: Se a batata afundar, a lixívia está fraca; leve-a ao fogo para **ferver e reduzir pela metade**. Quando a batata boiar expondo **uma coroa da largura de uma unha para fora do líquido**, a concentração é perfeita para saponificar.\n3. **Fusão e clarificação de gordura animal**: Pique a gordura e o sebo de caça em pedaços miúdos, coloque numa panela sobre a chama suave do [fogareiro a lenha](/protocol-12) e derreta lentamente até extrair o óleo límpido.\n4. **Filtragem e dosagem**: Coe a gordura derretida com pano limpo ou capim para reter resíduos de carne e água, obtendo **exatamente 2 xícaras de óleo clarificado e puro**.",
       "actionNote": "> Parâmetro de flutuação: Se a batata boiar mostrando mais de metade do corpo fora do líquido, a lixívia está forte demais e causará irritação na pele. Adicione meia xícara de água pura para diluir, deixando apenas uma pequena ponta na flor da água.",
       "svgFileName": "pr13-step-02.svg",
       "svgLabels": [
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "84750b222b4c5546",
-  "updatedAt": "2026-10-21T05:32:17.564Z"
+  "contentHash": "6c6c26a55586fcca",
+  "updatedAt": "2026-10-28T17:33:13+09:00"
 }

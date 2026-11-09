@@ -4,7 +4,7 @@
   "title": "Herstellung von natürlicher Eichenaschelauge- & Fettseife zur Infektionsabwehr (Feldhygiene-Desinfektionsseife)",
   "threatLevel": "HIGH",
   "threatLevelText": "[FELDHYGIENE & WUNDDESINFEKTION & SEPSIS-PRÄVENTION]",
-  "summary": "Im autarken Wildnisüberleben oder bei einem Zusammenbruch der Infrastruktur ohne fließendes Wasser und Medikamente können schon kleine Schürfwunden oder verunreinigte Hände beim Essen tödliche Ruhr, Wundstarrkrampf (Tetanus) oder systemische Blutvergiftung (Sepsis) auslösen. Sammelt man schneeweiße Eichenasche aus einer Feuerstelle oder dem [Doppeldosen-Holzvergaserofen](/protocol-12.html), verdichtet sie in einem Dosenfilter mit Schilfgras- und Kiesschicht und übergießt sie mit heißem Wasser, entsteht alkalische Kaliumkarbonatlauge. Kocht man diese Lauge im Verhältnis 1:1 mit ausgelassenem Tiertalg oder gefiltertem Altspeiseöl unter ständigem Rühren mit einem Holzspatel ein, setzt die Verseifung ein und erzeugt eine hochwirksame Desinfektionsseife, die bakterielle Zellmembranen auflöst.",
+  "summary": "Im autarken Wildnisüberleben oder bei einem Zusammenbruch der Infrastruktur ohne fließendes Wasser und Medikamente können schon kleine Schürfwunden oder verunreinigte Hände beim Essen tödliche Ruhr, Wundstarrkrampf (Tetanus) oder systemische Blutvergiftung (Sepsis) auslösen. Sammelt man schneeweiße Eichenasche aus einer Feuerstelle oder dem [Doppeldosen-Holzvergaserofen](/protocol-12), verdichtet sie in einem Dosenfilter mit Schilfgras- und Kiesschicht und übergießt sie mit heißem Wasser, entsteht alkalische Kaliumkarbonatlauge. Kocht man diese Lauge im Verhältnis 1:1 mit ausgelassenem Tiertalg oder gefiltertem Altspeiseöl unter ständigem Rühren mit einem Holzspatel ein, setzt die Verseifung ein und erzeugt eine hochwirksame Desinfektionsseife, die bakterielle Zellmembranen auflöst.",
   "timeRequired": "70 Minuten (20 Min. Ascheauslaugung + 45 Min. Verseifungssieden + 5 Min. Gießen)",
   "successRate": "95% (bei Einhaltung der Kartoffel-Auftriebsdichte und kontinuierlichem Rühren in eine Richtung)",
   "difficulty": "Mittel (äußerste Vorsicht vor Verätzungen von Haut und Augen durch stark basische Lauge)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "Ein Eimer vollständig verbrannte, schneeweiße Hartholz-Asche (Eiche)",
-      "desc": "Mehlfeine weiße Asche aus einem [Eichenholzkohlemeiler](/protocol-09.html) oder einer Feuerstelle, gesiebt und frei von schwarzen Holzkohlestücken. Harthölzer wie Eiche besitzen den höchsten Kaliumgehalt für konzentrierte Lauge."
+      "desc": "Mehlfeine weiße Asche aus einem [Eichenholzkohlemeiler](/protocol-09) oder einer Feuerstelle, gesiebt und frei von schwarzen Holzkohlestücken. Harthölzer wie Eiche besitzen den höchsten Kaliumgehalt für konzentrierte Lauge."
     },
     {
       "id": "mat-02",
       "name": "Gelochter Dosenfilter mit Trockengras- und Kies-Pufferschicht",
-      "desc": "Basiert auf dem Filtrationsprinzip des [natürlichen Wasserfilters](/protocol-01.html). Eine große Weißblechdose mit Nagelperforationen im Boden, ausgelegt mit Kieselsteinen und trockenem Schilfgras, um Aschepartikel zurückzuhalten, während klare goldene Lauge abtropft. Schutzlacke zuvor ausbrennen."
+      "desc": "Basiert auf dem Filtrationsprinzip des [natürlichen Wasserfilters](/protocol-01). Eine große Weißblechdose mit Nagelperforationen im Boden, ausgelegt mit Kieselsteinen und trockenem Schilfgras, um Aschepartikel zurückzuhalten, während klare goldene Lauge abtropft. Schutzlacke zuvor ausbrennen."
     },
     {
       "id": "mat-03",
@@ -33,14 +33,14 @@
     {
       "id": "mat-05",
       "name": "1 Esslöffel feines Kiefernharzpulver und 1 Teelöffel Kochsalz",
-      "desc": "Helle Kiefernharzkristalle ähnlich der [Kiefernharz-Wundsalbe](/protocol-10.html), zu feinem Pulver zerstoßen. Natürliche Phytonzide maximieren die antimikrobielle Wirkung; das Salz unterstützt die Härtung der Seifenstücke."
+      "desc": "Helle Kiefernharzkristalle ähnlich der [Kiefernharz-Wundsalbe](/protocol-10), zu feinem Pulver zerstoßen. Natürliche Phytonzide maximieren die antimikrobielle Wirkung; das Salz unterstützt die Härtung der Seifenstücke."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Schritt 1: Weiße Eichenasche im Dosenfilter verdichten und mit heißem Wasser goldene Lauge auslaugen",
-      "description": "1. **Ascheauslese & Vorbereitung**: Sortieren Sie unverbrannte schwarze Kohlestücke aus und sammeln Sie einen Eimer **mehlfeine, weiße Eichenasche**, befreit von Rinde und Steinen.\n2. **Kies- & Grasfilterschicht anlegen**: Stanzen Sie kleine Nagellöcher in den Boden einer großen Blechdose, legen Sie saubere daumendicke Kiesel hinein und verdichten Sie trockenes Schilfgras **zwei Fingerbreit (ca. 3 cm)** fest darüber.\n3. **Asche einfüllen & Heißwasseraufguss**: Drücken Sie die weiße Asche bis zu **einer Handbreite unter den Rand (80% Füllung)** fest an und gießen Sie langsam [kochendes, heißes Wasser](/protocol-01.html) auf, bis das Aschebett vollständig getränkt ist.\n4. **Goldene Lauge auffangen**: Stellen Sie ein sauberes Auffanggefäß unter die Dose und fangen Sie die tropfende, bernsteingoldene, seifig-glatte Holzaschelauge (Kaliumkarbonatlösung) auf.",
+      "description": "1. **Ascheauslese & Vorbereitung**: Sortieren Sie unverbrannte schwarze Kohlestücke aus und sammeln Sie einen Eimer **mehlfeine, weiße Eichenasche**, befreit von Rinde und Steinen.\n2. **Kies- & Grasfilterschicht anlegen**: Stanzen Sie kleine Nagellöcher in den Boden einer großen Blechdose, legen Sie saubere daumendicke Kiesel hinein und verdichten Sie trockenes Schilfgras **zwei Fingerbreit (ca. 3 cm)** fest darüber.\n3. **Asche einfüllen & Heißwasseraufguss**: Drücken Sie die weiße Asche bis zu **einer Handbreite unter den Rand (80% Füllung)** fest an und gießen Sie langsam [kochendes, heißes Wasser](/protocol-01) auf, bis das Aschebett vollständig getränkt ist.\n4. **Goldene Lauge auffangen**: Stellen Sie ein sauberes Auffanggefäß unter die Dose und fangen Sie die tropfende, bernsteingoldene, seifig-glatte Holzaschelauge (Kaliumkarbonatlösung) auf.",
       "actionNote": "> Verätzungsgefahr: Konzentrierte Eichenaschelauge zersetzt Proteine und verursacht schwere Verätzungen auf ungeschützter Haut. Benutzen Sie ausschließlich Holzspatel und spülen Sie Spritzer sofort 5 Minuten mit klarem, kaltem Wasser aus. Botanische Felddetails siehe Spezifikation unten.",
       "svgFileName": "pr13-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Schritt 2: Laugendichte mittels Kartoffel-Auftrieb prüfen und Talg oder Altspeiseöl klären",
-      "description": "1. **Kartoffel-Dichteprüfung**: Legen Sie ein **daumennagelgroßes Stück rohe Kartoffel (ca. 2 cm)** oder ein frisches rohes Ei vorsichtig in die aufgefangene Lauge.\n2. **Auftriebshöhe beurteilen**: Sinkt das Stück auf den Boden, ist die Lauge zu schwach; kochen Sie sie auf kleiner Flamme ein, **bis sich das Volumen halbiert hat**. Schwimmt die Kartoffel so, dass **eine Daumennagelfläche über den Wasserspiegel ragt**, ist die optimale Konzentration erreicht.\n3. **Tiertalg ausschmelzen**: Schneiden Sie Fettabschnitte von Beutetieren klein, geben Sie sie in einen Topf über der schwachen Flamme des [Holzvergaserofens](/protocol-12.html) und schmelzen Sie klares flüssiges Öl aus.\n4. **Filtrieren & Abmessen**: Seihen Sie das geschmolzene Fett durch ein sauberes Tuch oder Schilf ab, um Fleischreste und Wasser vollständig zu entfernen, und stellen Sie **exakt 2 Tassen klares Öl** bereit.",
+      "description": "1. **Kartoffel-Dichteprüfung**: Legen Sie ein **daumennagelgroßes Stück rohe Kartoffel (ca. 2 cm)** oder ein frisches rohes Ei vorsichtig in die aufgefangene Lauge.\n2. **Auftriebshöhe beurteilen**: Sinkt das Stück auf den Boden, ist die Lauge zu schwach; kochen Sie sie auf kleiner Flamme ein, **bis sich das Volumen halbiert hat**. Schwimmt die Kartoffel so, dass **eine Daumennagelfläche über den Wasserspiegel ragt**, ist die optimale Konzentration erreicht.\n3. **Tiertalg ausschmelzen**: Schneiden Sie Fettabschnitte von Beutetieren klein, geben Sie sie in einen Topf über der schwachen Flamme des [Holzvergaserofens](/protocol-12) und schmelzen Sie klares flüssiges Öl aus.\n4. **Filtrieren & Abmessen**: Seihen Sie das geschmolzene Fett durch ein sauberes Tuch oder Schilf ab, um Fleischreste und Wasser vollständig zu entfernen, und stellen Sie **exakt 2 Tassen klares Öl** bereit.",
       "actionNote": "> Auftriebsregel: Ragt die Kartoffel zu mehr als der Hälfte aus der Lauge heraus, ist die Lauge überkonzentriert und führt zu Hautreizungen. Geben Sie schrittweise eine halbe Tasse sauberes Wasser hinzu, bis nur noch eine kleine Kuppe herausschaut.",
       "svgFileName": "pr13-step-02.svg",
       "svgLabels": [
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "84750b222b4c5546",
-  "updatedAt": "2026-10-21T05:32:17.564Z"
+  "contentHash": "6c6c26a55586fcca",
+  "updatedAt": "2026-10-28T17:33:13+09:00"
 }

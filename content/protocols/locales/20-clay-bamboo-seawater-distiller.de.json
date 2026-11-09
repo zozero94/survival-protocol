@@ -4,7 +4,7 @@
   "title": "Meerwasser und Schmutzwasser mit Tontopf und Bambusrohr zu reinem Trinkwasser destillieren",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEHYDRATIONSSCHUTZ] 100% salzfreies Trinkwasser an Küsten und in isolierten Gebieten",
-  "summary": "Wenn man an einer Küste, auf einer Insel oder an Brackwasserstellen festsitzt, entfernt ein [Kohle- und Sandfilter](/protocol-01.html) nur Schmutz und Gerüche, aber niemals gelöstes Salz (3,5% Salzgehalt). Wer Meerwasser trinkt, entzieht seinen Körperzellen Wasser und stirbt binnen zwei Tagen an schwerer Dehydration. Indem man Meerwasser in einem [Unglasierten Tontopf](/protocol-16.html) auf einem [Lehmofen](/protocol-06.html) kocht, ein durchgestoßenes Bambusrohr in den abgedichteten Deckel steckt und das Rohr außen mit kaltem [Torfmoos und Sackleinen](/protocol-18.html) kühlt, bleibt das schwere Salz als weiße Kristalle am Topfboden zurück, während reiner Dampf im kühlen Rohr zu 2–3 Litern Trinkwasser pro Tag kondensiert.",
+  "summary": "Wenn man an einer Küste, auf einer Insel oder an Brackwasserstellen festsitzt, entfernt ein [Kohle- und Sandfilter](/protocol-01) nur Schmutz und Gerüche, aber niemals gelöstes Salz (3,5% Salzgehalt). Wer Meerwasser trinkt, entzieht seinen Körperzellen Wasser und stirbt binnen zwei Tagen an schwerer Dehydration. Indem man Meerwasser in einem [Unglasierten Tontopf](/protocol-16) auf einem [Lehmofen](/protocol-06) kocht, ein durchgestoßenes Bambusrohr in den abgedichteten Deckel steckt und das Rohr außen mit kaltem [Torfmoos und Sackleinen](/protocol-18) kühlt, bleibt das schwere Salz als weiße Kristalle am Topfboden zurück, während reiner Dampf im kühlen Rohr zu 2–3 Litern Trinkwasser pro Tag kondensiert.",
   "timeRequired": "2 Stunden (Bambus durchstoßen & Lehm-Harz-Dichtung 40m + Mooskühlung 20m + Destillation 1h)",
   "successRate": "99% (Bei luftdichter Lehmdeckeldichtung und laufender Kühlung des Mooses mit kaltem Meerwasser)",
   "difficulty": "Mittel (Mit Tontopf, Bambus und Moos ohne moderne Schläuche oder Folien baubar)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Feuerfester Tontopf mit Deckel zum Kochen und saubere Auffangschale",
-      "desc": "Ein hitzebeständiger unglasierter Tontopf (oder ausgehöhlter Steinbehälter) wie beim [Tonkrug-Kühler](/protocol-16.html) mit passendem Deckel sowie eine saubere Schale zum Auffangen des Süßwassers."
+      "desc": "Ein hitzebeständiger unglasierter Tontopf (oder ausgehöhlter Steinbehälter) wie beim [Tonkrug-Kühler](/protocol-16) mit passendem Deckel sowie eine saubere Schale zum Auffangen des Süßwassers."
     },
     {
       "id": "mat-02",
@@ -23,19 +23,19 @@
     {
       "id": "mat-03",
       "name": "Kalt getränktes Torfmoos, Sackleinen und wilde Kudzu-Schnur",
-      "desc": "Saugfähiges Torfmoos und Sackleinen vom [Schienen-Polster](/protocol-18.html), dick um die Mitte des Bambusrohrs gewickelt, mit [Kudzu-Seil](/protocol-05.html) gebunden und mit kaltem Meerwasser übergossen."
+      "desc": "Saugfähiges Torfmoos und Sackleinen vom [Schienen-Polster](/protocol-18), dick um die Mitte des Bambusrohrs gewickelt, mit [Kudzu-Seil](/protocol-05) gebunden und mit kaltem Meerwasser übergossen."
     },
     {
       "id": "mat-04",
       "name": "Zwei Handvoll feuchter Lehm, Kiefernharz-Kleber und Y-Aststütze",
-      "desc": "Feuchter Lehmteig und [Kiefernharz-Kleber](/protocol-10.html) zum dampfdichten Versiegeln von Deckelrand und Rohranschluss sowie ein Y-förmiger Ast zum schrägen Abstützen des Rohrs."
+      "desc": "Feuchter Lehmteig und [Kiefernharz-Kleber](/protocol-10) zum dampfdichten Versiegeln von Deckelrand und Rohranschluss sowie ein Y-förmiger Ast zum schrägen Abstützen des Rohrs."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Schritt 1: Bambusknoten mit glühendem Holzstab durchstoßen und am Topfdeckel mit Harz und Lehm abdichten",
-      "description": "1. **Innere Bambusknoten durchbrennen**: Wähle ein gerades Bambusrohr von **fünf Handspannen Länge (1m) und Handgelenkdicke (4–5cm)** und schiebe einen rotglühenden Holzstab hinein, um **alle inneren Knotenwände unter Zischen zu durchstoßen**, bis man frei hindurchsehen kann.\n2. **Bambusende in das Deckelloch einsetzen**: Bohre mit einer [Scharfen Steinklinge](/protocol-04.html) ein passgenaues Loch in die Mitte des Tondeckels und stecke das Bambusrohr **zwei Fingerglieder tief (4cm)** hinein.\n3. **Anschluss doppelt mit Kiefernharz und Lehm versiegeln**: Bestreiche den Spalt um das Rohr mit warmem [Kiefernharz-Kleber](/protocol-10.html) und streiche darüber **feuchten Lehm fingerdick (1,5cm)** auf, damit kein Dampf entweicht.",
+      "description": "1. **Innere Bambusknoten durchbrennen**: Wähle ein gerades Bambusrohr von **fünf Handspannen Länge (1m) und Handgelenkdicke (4–5cm)** und schiebe einen rotglühenden Holzstab hinein, um **alle inneren Knotenwände unter Zischen zu durchstoßen**, bis man frei hindurchsehen kann.\n2. **Bambusende in das Deckelloch einsetzen**: Bohre mit einer [Scharfen Steinklinge](/protocol-04) ein passgenaues Loch in die Mitte des Tondeckels und stecke das Bambusrohr **zwei Fingerglieder tief (4cm)** hinein.\n3. **Anschluss doppelt mit Kiefernharz und Lehm versiegeln**: Bestreiche den Spalt um das Rohr mit warmem [Kiefernharz-Kleber](/protocol-10) und streiche darüber **feuchten Lehm fingerdick (1,5cm)** auf, damit kein Dampf entweicht.",
       "actionNote": "> Bambus außen vor dem Durchstoßen mit nasser Schnur umwickeln: Zu starker Druck im trockenen Bambus kann die Rohrwand spalten. Binde außen nasse Pflanzenfasern herum und drehe den glühenden Stab langsam durch jeden Knoten.",
       "svgFileName": "pr20-step-01.svg",
       "svgLabels": [
@@ -68,7 +68,7 @@
               },
               {
                 "label": "DICHT/KRAGEN",
-                "value": "Mit [Kiefernharz](/protocol-10.html) und **fingerdickem Lehm** dampfdicht versiegelt."
+                "value": "Mit [Kiefernharz](/protocol-10) und **fingerdickem Lehm** dampfdicht versiegelt."
               }
             ],
             "fieldUse": "Leitet 100% des aufsteigenden Dampfes verlustfrei in die Kühlzone"
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Schritt 2: Tontopf auf dem Ofen zu 2/3 mit Meerwasser füllen und Bambusrohr um 30 Grad nach unten neigen",
-      "description": "1. **Tontopf nur zu 2/3 füllen**: Gieße Meerwasser bis auf **zwei Drittel der Topfhöhe (eine Handspanne Freiraum oben)** in den Topf auf dem [Lehmofen](/protocol-06.html), damit kochender Salzschaum nicht in das Rohr überkocht.\n2. **Deckelrand mit Lehm abdichten und Feuer entfachen**: Streiche feuchten Lehm um den Topfrand, drücke den Deckel fest an und entzünde das Feuer mit dem [ Feuerbohrer](/protocol-02.html).\n3. **Bambusrohr auf Y-Aststütze um 30 Grad neigen**: Stecke drei Handspannen vom Ofen entfernt eine **Y-Aststütze** in den Boden, sodass die Rohrspitze **zwei Handspannen (40cm) tiefer im 30-Grad-Winkel** nach unten zeigt.",
+      "description": "1. **Tontopf nur zu 2/3 füllen**: Gieße Meerwasser bis auf **zwei Drittel der Topfhöhe (eine Handspanne Freiraum oben)** in den Topf auf dem [Lehmofen](/protocol-06), damit kochender Salzschaum nicht in das Rohr überkocht.\n2. **Deckelrand mit Lehm abdichten und Feuer entfachen**: Streiche feuchten Lehm um den Topfrand, drücke den Deckel fest an und entzünde das Feuer mit dem [ Feuerbohrer](/protocol-02).\n3. **Bambusrohr auf Y-Aststütze um 30 Grad neigen**: Stecke drei Handspannen vom Ofen entfernt eine **Y-Aststütze** in den Boden, sodass die Rohrspitze **zwei Handspannen (40cm) tiefer im 30-Grad-Winkel** nach unten zeigt.",
       "actionNote": "> 3–4 saubere Kieselsteine auf den Topfboden legen: Meerwasser schäumt beim Kochen stark auf. 3–4 gewaschene Kieselsteine am Boden brechen große Dampfblasen und verhindern, dass Salzwasser in das Rohr spritzt.",
       "svgFileName": "pr20-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Schritt 3: Rohrmitte dick mit nassem Torfmoos und Sackleinen umwickeln, um Dampf zu Wasser abzukühlen",
-      "description": "1. **Mittlere 60cm mit nassem Moos und Sackleinen umwickeln**: Wickle kalt getränktes [Torfmoos und Sackleinen](/protocol-18.html) **faustdick über drei Handspannen (60cm) in der Rohrmitte** und binde es mit [Kudzu-Seil](/protocol-05.html) fest.\n2. **Alle 10 Minuten kaltes Meerwasser über das Moos gießen**: Schöpfe kaltes Meerwasser und **gieße es alle 10 Minuten über das Moospolster**, damit das Bambusrohr außen stets kühl bleibt.\n3. **Tropfring aus Schnur vor der Rohrspitze binden**: Binde vor dem Rohrende einen Schnurring mit herabhängendem Ende und lege eine Rindenrinne unter das Moos, damit **salziges Kühlwasser vor der Schale zu Boden tropft**.",
+      "description": "1. **Mittlere 60cm mit nassem Moos und Sackleinen umwickeln**: Wickle kalt getränktes [Torfmoos und Sackleinen](/protocol-18) **faustdick über drei Handspannen (60cm) in der Rohrmitte** und binde es mit [Kudzu-Seil](/protocol-05) fest.\n2. **Alle 10 Minuten kaltes Meerwasser über das Moos gießen**: Schöpfe kaltes Meerwasser und **gieße es alle 10 Minuten über das Moospolster**, damit das Bambusrohr außen stets kühl bleibt.\n3. **Tropfring aus Schnur vor der Rohrspitze binden**: Binde vor dem Rohrende einen Schnurring mit herabhängendem Ende und lege eine Rindenrinne unter das Moos, damit **salziges Kühlwasser vor der Schale zu Boden tropft**.",
       "actionNote": "> Salziges Außenkühlwasser strikt von der Trinkwasserschale trennen: Das über das Moos gegossene Meerwasser darf niemals außen am Rohr entlang in die Auffangschale laufen. Der Schnur-Tropfring leitet alles Außenwasser sicher zum Boden ab.",
       "svgFileName": "pr20-step-03.svg",
       "svgLabels": [
@@ -168,7 +168,7 @@
       "stepNumber": "04",
       "title": "Schritt 4: Erste halbe Tasse verwerfen, reines Trinkwasser sammeln und weißes Meersalz am Boden ernten",
       "description": "1. **Erste halbe Tasse (50ml) weggießen**: Die ersten 50ml nach 10 Minuten enthalten Bambusstaub und flüchtige Gerüche – **nicht trinken, sondern zur Kühlung auf das Moos gießen**.\n2. **Mit der Zungenspitze auf Salzfreiheit prüfen und sammeln**: Prüfe einen Tropfen mit der Zungenspitze auf **100% salzfreien, milden Geschmack** und sammle über 500ml pro Stunde in der sauberen Schale.\n3. **Feuer rechtzeitig löschen und weißes Meersalz abschaben**: Wenn nur noch **ein Fingerglied hoch Wasser** im Topf steht, Feuer löschen, Restwärme trocknen lassen und **weiße Meersalzkristalle mit einem Holzspatel abschaben**.",
-      "actionNote": "> Gewonnenes Meersalz zur Fleischkonservierung nutzen: Das weiße Salz am Topfboden ist in der Wildnis extrem wertvoll. In trockenen Blättern lagern und für [Räucherfleisch & Trockenfisch](/protocol-19.html) oder als Elektrolytzusatz verwenden.",
+      "actionNote": "> Gewonnenes Meersalz zur Fleischkonservierung nutzen: Das weiße Salz am Topfboden ist in der Wildnis extrem wertvoll. In trockenen Blättern lagern und für [Räucherfleisch & Trockenfisch](/protocol-19) oder als Elektrolytzusatz verwenden.",
       "svgFileName": "pr20-step-04.svg",
       "svgLabels": [
         "FIG. 04 // FIRST-RUN DISCARD, PURE FRESHWATER COLLECTION & SALT HARVEST",
@@ -200,7 +200,7 @@
               },
               {
                 "label": "ERNTE/SALZ",
-                "value": "Gewinnt **weiße Meersalzkristalle** am Boden zur [Haltbarmachung](/protocol-19.html)."
+                "value": "Gewinnt **weiße Meersalzkristalle** am Boden zur [Haltbarmachung](/protocol-19)."
               }
             ],
             "fieldUse": "Versorgt Überlebende an der Küste gleichzeitig mit reinem Trinkwasser und Salz"
@@ -237,15 +237,15 @@
     {
       "question": "Das Wasser im Topf kocht stark, aber aus dem Bambusrohr kommt nur weißer Dampf statt Wassertropfen.",
       "causeDiagnostic": "Das Torfmoos um das Bambusrohr ist ausgetrocknet und heiß geworden, oder das Ofenfeuer brennt zu stark, sodass der Dampf ungekühlt durchschießt.",
-      "resolution": "Übergieße das [Torfmoos und Sackleinen](/protocol-18.html) sofort reichlich mit kaltem Meerwasser, bis sich das Rohr kühl anfühlt, und nimm ein Holzscheit aus dem [Lehmofen](/protocol-06.html), damit das Wasser ruhig siedet. Sobald das Rohr abkühlt, tropft klares Wasser heraus."
+      "resolution": "Übergieße das [Torfmoos und Sackleinen](/protocol-18) sofort reichlich mit kaltem Meerwasser, bis sich das Rohr kühl anfühlt, und nimm ein Holzscheit aus dem [Lehmofen](/protocol-06), damit das Wasser ruhig siedet. Sobald das Rohr abkühlt, tropft klares Wasser heraus."
     },
     {
       "question": "Warum schmeckt das aufgefangene Wasser in meiner Schale immer noch leicht salzig?",
       "causeDiagnostic": "Entweder war der Topf zu voll und Salzschaum ist in das Rohr übergekocht, oder das über das Moos gegossene Kühl-Meerwasser ist außen am Rohr in die Schale gelaufen.",
-      "resolution": "Senke den Meerwasserstand im Topf auf unter zwei Drittel und lege 3–4 saubere Kieselsteine hinein. Binde zudem zwischen Mooswickel und Rohrende einen festen Tropfring aus [Kudzu-Seil](/protocol-05.html), damit äußeres Salzwasser vor der Schale zu Boden tropft."
+      "resolution": "Senke den Meerwasserstand im Topf auf unter zwei Drittel und lege 3–4 saubere Kieselsteine hinein. Binde zudem zwischen Mooswickel und Rohrende einen festen Tropfring aus [Kudzu-Seil](/protocol-05), damit äußeres Salzwasser vor der Schale zu Boden tropft."
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T10:59:47+09:00",
-  "contentHash": "e30d31f76b87086a"
+  "updatedAt": "2026-11-02T11:24:26+09:00",
+  "contentHash": "3662cb12c2284d2c"
 }

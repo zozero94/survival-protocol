@@ -4,7 +4,7 @@
   "title": "Primitive Bone Needle & Dried Sinew Sewing Kit for Leather & Footwear Repair",
   "threatLevel": "HIGH",
   "threatLevelText": "[WINTER HEAT-LOSS DEFENSE & FROSTBITE / HYPOTHERMIA PREVENTION]",
-  "summary": "In sub-zero wilderness conditions or post-collapse disaster environments, torn winter leather garments or boot soles lead to catastrophic body heat loss, inducing fatal hypothermia or crippling frostbite within 2 hours. When modern needles and nylon thread are unavailable, you must craft an emergency sewing kit using high-density cortical shin bones from deer or boar split with a [stone axe](/protocol-04.html) and ground on wet quartzite into a sharp bone needle with a dual-drilled eye, paired with natural high-tensile sinew cord harvested from dried leg tendons. As saliva-coated sinew thread dries inside stitched leather, it shrinks 3–5%, mechanically locking needle holes airtight before sealing with [melted pine pitch ointment](/protocol-10.html) to create a stormproof, waterproof barrier.",
+  "summary": "In sub-zero wilderness conditions or post-collapse disaster environments, torn winter leather garments or boot soles lead to catastrophic body heat loss, inducing fatal hypothermia or crippling frostbite within 2 hours. When modern needles and nylon thread are unavailable, you must craft an emergency sewing kit using high-density cortical shin bones from deer or boar split with a [stone axe](/protocol-04) and ground on wet quartzite into a sharp bone needle with a dual-drilled eye, paired with natural high-tensile sinew cord harvested from dried leg tendons. As saliva-coated sinew thread dries inside stitched leather, it shrinks 3–5%, mechanically locking needle holes airtight before sealing with [melted pine pitch ointment](/protocol-10) to create a stormproof, waterproof barrier.",
   "timeRequired": "60 mins (30m bone needle honing + 15m sinew fiber splitting + 15m leather stitching)",
   "successRate": "95% (when pre-punching holes with a flint awl and saliva-coating sinew threads)",
   "difficulty": "Medium (requires careful flint awl drilling and cortical bone selection)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "1–2 Mammalian Leg Bone Splinters (Deer, Elk, or Boar Metatarsal)",
-      "desc": "Salvaged from [primitive hunting traps](/protocol-08.html) or tallow rendering for [wood ash lye soap](/protocol-13.html). The dense cortical wall of mammalian leg bones possesses flexural tensile strength rivaling steel nails and resists bending fractures under leather penetration."
+      "desc": "Salvaged from [primitive hunting traps](/protocol-08) or tallow rendering for [wood ash lye soap](/protocol-13). The dense cortical wall of mammalian leg bones possesses flexural tensile strength rivaling steel nails and resists bending fractures under leather penetration."
     },
     {
       "id": "mat-02",
       "name": "Coarse Quartzite Honing Slab & Sharp Flint Drill Awl",
-      "desc": "A flat coarse quartzite sharpening slab used in [stone tool making](/protocol-04.html), paired with a razor-sharp conical chert or flint awl micro-drill to bore a clean 1.8mm needle eye."
+      "desc": "A flat coarse quartzite sharpening slab used in [stone tool making](/protocol-04), paired with a razor-sharp conical chert or flint awl micro-drill to bore a clean 1.8mm needle eye."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Palm-Sized Hardwood Tapping Baton & Waterproof Pine Resin",
-      "desc": "A blunt oak branch used to crush tendon bundles and drive flint awls, paired with sticky [pine pitch ointment](/protocol-10.html) to waterproof the finished leather seam."
+      "desc": "A blunt oak branch used to crush tendon bundles and drive flint awls, paired with sticky [pine pitch ointment](/protocol-10) to waterproof the finished leather seam."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Step 1: Split Shin Bone Splinters & Grind a Finger-Length Needle Blank on Wet Quartzite",
-      "description": "1. **Select & Split Cortical Bone**: Split a deer leg bone lengthwise using a [stone axe or heavy river hammerstone](/protocol-04.html) to extract a dense splinter **finger-length (7–8cm) and 3–4mm thick**.\n2. **Grind on Wet Quartzite**: Wet a coarse quartzite slab and rub the bone splinter flat at a 45-degree angle, removing porous marrow residues and shaping it into a uniform cylinder.\n3. **Form Piercing Awl Tip**: Tilt one end at 30 degrees while rotating continuously against the wet rock until you obtain a **needle-sharp penetrating point**.",
+      "description": "1. **Select & Split Cortical Bone**: Split a deer leg bone lengthwise using a [stone axe or heavy river hammerstone](/protocol-04) to extract a dense splinter **finger-length (7–8cm) and 3–4mm thick**.\n2. **Grind on Wet Quartzite**: Wet a coarse quartzite slab and rub the bone splinter flat at a 45-degree angle, removing porous marrow residues and shaping it into a uniform cylinder.\n3. **Form Piercing Awl Tip**: Tilt one end at 30 degrees while rotating continuously against the wet rock until you obtain a **needle-sharp penetrating point**.",
       "actionNote": "> Splinter Hazard: Bone fragments can shatter under blunt impact; turn your face 45 degrees away when striking. Always lubricate the quartzite slab with water to prevent frictional heat from scorching and weakening the bone matrix.",
       "svgFileName": "pr14-step-01.svg",
       "svgLabels": [
@@ -137,7 +137,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Pre-Punch 5mm Holes with a Flint Awl, Saddle Stitch & Seal Seams with Pine Pitch",
-      "description": "1. **Pre-Punch Leather Holes**: Overlap torn leather edges by **one knuckle width**, and use a sharp flint awl and wooden baton to pre-punch a row of **holes spaced 5mm apart**.\n2. **Execute Saddle Stitching**: Thread bone needles on both ends of a sinew cord, or pass a single needle alternating front-to-back in an interlocking figure-8 saddle stitch, pulling each stitch firmly.\n3. **Shrinkage & Pine Pitch Seal**: Allow the sinew to dry and contract, then smear warm [pine pitch ointment](/protocol-10.html) over the seam line to form a **100% stormproof, wind-tight leather seal**.",
+      "description": "1. **Pre-Punch Leather Holes**: Overlap torn leather edges by **one knuckle width**, and use a sharp flint awl and wooden baton to pre-punch a row of **holes spaced 5mm apart**.\n2. **Execute Saddle Stitching**: Thread bone needles on both ends of a sinew cord, or pass a single needle alternating front-to-back in an interlocking figure-8 saddle stitch, pulling each stitch firmly.\n3. **Shrinkage & Pine Pitch Seal**: Allow the sinew to dry and contract, then smear warm [pine pitch ointment](/protocol-10) over the seam line to form a **100% stormproof, wind-tight leather seal**.",
       "actionNote": "> Mandatory Pre-Punching: Bone needles have high compressive strength but will shear if forced through tough rawhide. Always pre-punch holes with a flint awl, using the bone needle solely as a smooth thread guide.",
       "svgFileName": "pr14-step-04.svg",
       "svgLabels": [
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:22:40+09:00",
-  "contentHash": "b182acb92e757c63"
+  "updatedAt": "2026-10-22T17:35:09+09:00",
+  "contentHash": "911b5ab190a2616e"
 }

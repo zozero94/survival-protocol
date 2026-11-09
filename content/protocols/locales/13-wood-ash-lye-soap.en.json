@@ -4,7 +4,7 @@
   "title": "Natural Wood Ash Lye & Oil Soap Making to Prevent Wound Infection (Field Hygiene)",
   "threatLevel": "HIGH",
   "threatLevelText": "[FIELD SANITATION & WOUND DISINFECTION & SEPSIS PREVENTION]",
-  "summary": "In off-grid wilderness survival or post-collapse scenarios without plumbing or medicine, a minor scrape or eating with dirty hands can rapidly cause lethal dysentery, tetanus, or systemic sepsis. By collecting pure white oak ashes from a campfire or [twin-can gasifier stove](/protocol-12.html), packing them in a leacher can with a gravel and grass filter, and pouring hot water through, you extract potassium carbonate lye. Simmering this lye 1:1 with rendered animal tallow or salvaged cooking oil while stirring with a wooden paddle initiates saponification, creating a potent antibacterial soap that ruptures pathogen cell membranes.",
+  "summary": "In off-grid wilderness survival or post-collapse scenarios without plumbing or medicine, a minor scrape or eating with dirty hands can rapidly cause lethal dysentery, tetanus, or systemic sepsis. By collecting pure white oak ashes from a campfire or [twin-can gasifier stove](/protocol-12), packing them in a leacher can with a gravel and grass filter, and pouring hot water through, you extract potassium carbonate lye. Simmering this lye 1:1 with rendered animal tallow or salvaged cooking oil while stirring with a wooden paddle initiates saponification, creating a potent antibacterial soap that ruptures pathogen cell membranes.",
   "timeRequired": "70 mins (20m ash leaching + 45m saponification simmer + 5m pour)",
   "successRate": "95% (when potato buoyancy indicates correct lye density & continuous 1-way stirring is maintained)",
   "difficulty": "Medium (requires skin & eye protection against strong alkaline caustic burn)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "One Bucket of Pure White Hardwood (Oak) Ash",
-      "desc": "Flour-like powdery white ash sifted from an [oak charcoal kiln](/protocol-09.html) or hearth, with all black charcoal chunks removed. Hardwoods like oak provide the highest potassium carbonate concentration for potent lye."
+      "desc": "Flour-like powdery white ash sifted from an [oak charcoal kiln](/protocol-09) or hearth, with all black charcoal chunks removed. Hardwoods like oak provide the highest potassium carbonate concentration for potent lye."
     },
     {
       "id": "mat-02",
       "name": "Perforated Metal Can Leacher with Wild Grass & Gravel Filter",
-      "desc": "Based on the filtration mechanics of the [natural water filter](/protocol-01.html). A salvaged steel can with nail holes in the base, lined with thumb-sized pebbles and dry reed grass to retain ash while dripping clean golden lye. Liners pre-burned to eliminate toxic fumes."
+      "desc": "Based on the filtration mechanics of the [natural water filter](/protocol-01). A salvaged steel can with nail holes in the base, lined with thumb-sized pebbles and dry reed grass to retain ash while dripping clean golden lye. Liners pre-burned to eliminate toxic fumes."
     },
     {
       "id": "mat-03",
@@ -33,14 +33,14 @@
     {
       "id": "mat-05",
       "name": "1 Tablespoon Crushed Pine Resin Powder & 1 Teaspoon Salt",
-      "desc": "Natural golden pine resin crystals from [pine pitch ointment](/protocol-10.html) pulverized into powder to boost antimicrobial strength, combined with a pinch of salt to firm the soap bars."
+      "desc": "Natural golden pine resin crystals from [pine pitch ointment](/protocol-10) pulverized into powder to boost antimicrobial strength, combined with a pinch of salt to firm the soap bars."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Step 1: Pack Sifted White Oak Ash in a Can Leacher & Leach Golden Alkaline Lye",
-      "description": "1. **Sift Pure White Ash**: Discard black charcoal lumps and gather one bucket of powdery **pure white oak ash** free from soil or bark debris.\n2. **Layer Gravel & Grass Filter**: In a large steel can with small nail holes punched in the base, place thumb-thick clean pebbles and pack dry reed grass **two finger widths deep (about 3cm)** to prevent ash from dumping through.\n3. **Pack Ash & Pour Hot Water**: Tamp the white ash firmly into the can to **one handspan high (80% full)**, then slowly pour [boiled, warm water](/protocol-01.html) over the top until saturated.\n4. **Collect Amber Lye**: Place a clean receiving vessel underneath to catch the rich, slippery golden-amber lye (potassium carbonate solution) as it percolates down drop by drop.",
+      "description": "1. **Sift Pure White Ash**: Discard black charcoal lumps and gather one bucket of powdery **pure white oak ash** free from soil or bark debris.\n2. **Layer Gravel & Grass Filter**: In a large steel can with small nail holes punched in the base, place thumb-thick clean pebbles and pack dry reed grass **two finger widths deep (about 3cm)** to prevent ash from dumping through.\n3. **Pack Ash & Pour Hot Water**: Tamp the white ash firmly into the can to **one handspan high (80% full)**, then slowly pour [boiled, warm water](/protocol-01) over the top until saturated.\n4. **Collect Amber Lye**: Place a clean receiving vessel underneath to catch the rich, slippery golden-amber lye (potassium carbonate solution) as it percolates down drop by drop.",
       "actionNote": "> Caustic Hazard: Concentrated wood ash lye dissolves organic tissue and causes painful chemical burns on bare skin. Always use a wooden paddle and flush immediately with cool, clean water for 5 minutes if splashed. Ground identification with the botanical traits below.",
       "svgFileName": "pr13-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Step 2: Balance Lye Strength via Potato Buoyancy & Clarify Tallow / Cooking Oil",
-      "description": "1. **Float Test Potato Cube**: Drop a **thumbnail-sized raw potato cube (or fresh egg)** into the extracted lye bowl.\n2. **Check Buoyancy Elevation**: If the potato sinks to the bottom, the lye is too weak—simmer in a pot to **reduce volume by half**. When the potato floats with a **thumbnail-width crown (1–2cm)** protruding above the surface, lye strength is optimal.\n3. **Render Fat over Gentle Heat**: Dice wild game fat or fat scraps into small chunks and melt slowly in a pot over [gentle stove heat](/protocol-12.html) until liquid oil separates from cracklings.\n4. **Strain Clarified Oil**: Pour warm melted oil through clean cloth or reed grass to filter out burnt solids and water, yielding **2 cups of pure golden oil**.",
+      "description": "1. **Float Test Potato Cube**: Drop a **thumbnail-sized raw potato cube (or fresh egg)** into the extracted lye bowl.\n2. **Check Buoyancy Elevation**: If the potato sinks to the bottom, the lye is too weak—simmer in a pot to **reduce volume by half**. When the potato floats with a **thumbnail-width crown (1–2cm)** protruding above the surface, lye strength is optimal.\n3. **Render Fat over Gentle Heat**: Dice wild game fat or fat scraps into small chunks and melt slowly in a pot over [gentle stove heat](/protocol-12) until liquid oil separates from cracklings.\n4. **Strain Clarified Oil**: Pour warm melted oil through clean cloth or reed grass to filter out burnt solids and water, yielding **2 cups of pure golden oil**.",
       "actionNote": "> Density Rule: If the potato bobs high with over half its body exposed, lye is dangerously caustic. Add half a cup of boiled water to dilute until just the potato top breaks the surface, avoiding harsh skin irritation in the finished soap.",
       "svgFileName": "pr13-step-02.svg",
       "svgLabels": [
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "84750b222b4c5546",
-  "updatedAt": "2026-10-21T05:32:17.564Z"
+  "contentHash": "6c6c26a55586fcca",
+  "updatedAt": "2026-10-28T17:33:13+09:00"
 }

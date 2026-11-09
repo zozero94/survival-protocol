@@ -18,7 +18,7 @@
     {
       "id": "mat-02",
       "name": "50cm geborgenes Elektrokabel (ohne Isolierung)",
-      "desc": "Schneiden Sie die äußere Isolierung mit einer [scharfen Steinklinge oder Steinaxt](/protocol-04.html) ab und nutzen Sie den blanken Kupfer- oder Stahldrahtkern (1,5–3mm dick) zur feuerfesten Befestigung und als Topfkreuz."
+      "desc": "Schneiden Sie die äußere Isolierung mit einer [scharfen Steinklinge oder Steinaxt](/protocol-04) ab und nutzen Sie den blanken Kupfer- oder Stahldrahtkern (1,5–3mm dick) zur feuerfesten Befestigung und als Topfkreuz."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Zwei Handvoll daumenlanger trockener Zweige & Kiefernharz-Zunder",
-      "desc": "Knochentrockene Laubholzzweige auf Daumenlänge gebrochen zur vertikalen Schichtung sowie [Kiefernharzbrocken](/protocol-10.html) und trockene Rinde für die Zündung von oben."
+      "desc": "Knochentrockene Laubholzzweige auf Daumenlänge gebrochen zur vertikalen Schichtung sowie [Kiefernharzbrocken](/protocol-10) und trockene Rinde für die Zündung von oben."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Schritt 1: Stabile Stahldosen wählen, Kabel abisolieren & innere Epoxidschicht ausbrennen",
-      "description": "1. **Geriffelte Stahldosen auswählen**: Wählen Sie zwei feste Konservendosen mit querverlaufenden Verstärkungsrillen, die sich mit der Hand nicht eindrücken lassen. Zwischen Innen- und Außendose muss ringsum **eine Fingerbreite (1,5–2cm)** Luftspalt bleiben.\n2. **Elektrokabel abisolieren**: Ritzen Sie den Mantel eines alten Kabels mit einer [scharfen Steinklinge](/protocol-04.html) längs auf und ziehen Sie **50cm blanken Kupfer- oder Stahldraht** heraus.\n3. **5 Minuten Ausbrennen der Beschichtung**: Füllen Sie vor dem Lochen trockenes Laub und Reisig in beide leeren Dosen und **brennen Sie diese im Freien 5 Minuten lang aus**, um Innenbeschichtung und Farbe restlos zu verkohlen.\n4. **Mattgraue Stahloberfläche prüfen**: Sobald kein beißender Geruch mehr aufsteigt und das Innere **matt dunkelgrau** ist, lassen Sie die Dosen im Schatten abkühlen.",
+      "description": "1. **Geriffelte Stahldosen auswählen**: Wählen Sie zwei feste Konservendosen mit querverlaufenden Verstärkungsrillen, die sich mit der Hand nicht eindrücken lassen. Zwischen Innen- und Außendose muss ringsum **eine Fingerbreite (1,5–2cm)** Luftspalt bleiben.\n2. **Elektrokabel abisolieren**: Ritzen Sie den Mantel eines alten Kabels mit einer [scharfen Steinklinge](/protocol-04) längs auf und ziehen Sie **50cm blanken Kupfer- oder Stahldraht** heraus.\n3. **5 Minuten Ausbrennen der Beschichtung**: Füllen Sie vor dem Lochen trockenes Laub und Reisig in beide leeren Dosen und **brennen Sie diese im Freien 5 Minuten lang aus**, um Innenbeschichtung und Farbe restlos zu verkohlen.\n4. **Mattgraue Stahloberfläche prüfen**: Sobald kein beißender Geruch mehr aufsteigt und das Innere **matt dunkelgrau** ist, lassen Sie die Dosen im Schatten abkühlen.",
       "actionNote": "> Giftgas- & Metall-Check: Ohne vorheriges Ausbrennen gelangen giftige Dämpfe ins Kochwasser. Dünne Getränkedosen schmelzen wie Papier – prüfen Sie anhand der Fotos unten die geriffelten Stahldosen und den blanken Drahtkern.",
       "svgFileName": "pr12-step-01.svg",
       "svgLabels": [
@@ -140,7 +140,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: Zweige senkrecht schlichten, von oben entzünden & rauchfrei Wasser kochen",
-      "description": "1. **Zweige senkrecht einstellen**: Brechen Sie trockene Laubholzzweige auf Daumenlänge und stellen Sie diese **senkrecht und dicht an dicht** in die Innendose bis **knapp unter die oberen Düsenlöcher**.\n2. **Zündung von oben nach unten (Top-Down)**: Legen Sie trockene Rinde und [Kiefernharz-Zunder](/protocol-10.html) **oben auf die senkrechten Zweige** und entzünden Sie diese von oben mit Glut vom [Feuerbogen](/protocol-02.html).\n3. **Sekundäre Holzgas-Flammen prüfen**: Nach 2–3 Minuten erhitzt sich die Doppelwand; aus den oberen Düsen schießen **hellgelb-bläuliche Flammenstrahlen** nach innen und der Rauch verschwindet komplett.\n4. **Wasser abkochen & Pflanzenkohle sichern**: Setzen Sie Ihr Gefäß mit [gefiltertem Wasser](/protocol-01.html) auf das Drahtkreuz (kocht in 7–8 Minuten) und löschen Sie danach die rote Restglut mit Erde ab, um [reine Holzkohle](/protocol-09.html) zu gewinnen.",
+      "description": "1. **Zweige senkrecht einstellen**: Brechen Sie trockene Laubholzzweige auf Daumenlänge und stellen Sie diese **senkrecht und dicht an dicht** in die Innendose bis **knapp unter die oberen Düsenlöcher**.\n2. **Zündung von oben nach unten (Top-Down)**: Legen Sie trockene Rinde und [Kiefernharz-Zunder](/protocol-10) **oben auf die senkrechten Zweige** und entzünden Sie diese von oben mit Glut vom [Feuerbogen](/protocol-02).\n3. **Sekundäre Holzgas-Flammen prüfen**: Nach 2–3 Minuten erhitzt sich die Doppelwand; aus den oberen Düsen schießen **hellgelb-bläuliche Flammenstrahlen** nach innen und der Rauch verschwindet komplett.\n4. **Wasser abkochen & Pflanzenkohle sichern**: Setzen Sie Ihr Gefäß mit [gefiltertem Wasser](/protocol-01) auf das Drahtkreuz (kocht in 7–8 Minuten) und löschen Sie danach die rote Restglut mit Erde ab, um [reine Holzkohle](/protocol-09) zu gewinnen.",
       "actionNote": "> Warum von oben anzünden?: Von unten angezündet qualmt das gesamte Holz auf einmal. Von oben brennt die Glut langsam wie eine Kerze nach unten, sodass aller aufsteigende Rauch durch den oberen Flammenring gezogen und restlos verbrannt wird.",
       "svgFileName": "pr12-step-04.svg",
       "svgLabels": [
@@ -173,6 +173,6 @@
     "description": "Gebaut aus zwei geborgenen Stahldosen und blankem Draht mit 1,5–2cm Doppelwand-Luftspalt, unteren Kaltlufteinlässen, oberen Sekundärluftdüsen, Draht-Topfkreuz und rauchfreier 850°C-Holzgasverbrennung."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "47468e0c9ce45c53",
-  "updatedAt": "2026-10-17T19:16:11+09:00"
+  "contentHash": "61644332f814ecf5",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

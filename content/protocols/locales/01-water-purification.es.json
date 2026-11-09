@@ -45,7 +45,7 @@
     {
       "stepNumber": "01",
       "title": "Paso 1: Atar un soporte triangular en el trípode, encajar el cono y colocar el tapón de musgo",
-      "description": "1. **Armar Trípode y Marco Triangular**: Ate la punta superior de tres ramas con [Cuerda de Liana Silvestre](/protocol-05.html) y abra las patas. A media altura, **ate tres palos cortos horizontalmente entre las patas formando un anillo de soporte triangular**.\n2. **Encajar el Cono y Doble Amarre**: Introduzca el cono de corteza de abedul **desde arriba en el centro del marco triangular** para que encaje como una cuña. Ate la cintura del cono al travesaño y **sujete también el borde superior del cono a las patas laterales**.\n3. **Tapón Inferior de Musgo**: Presione con fuerza un puñado de musgo limpio en el orificio estrecho inferior con el pulgar.",
+      "description": "1. **Armar Trípode y Marco Triangular**: Ate la punta superior de tres ramas con [Cuerda de Liana Silvestre](/protocol-05) y abra las patas. A media altura, **ate tres palos cortos horizontalmente entre las patas formando un anillo de soporte triangular**.\n2. **Encajar el Cono y Doble Amarre**: Introduzca el cono de corteza de abedul **desde arriba en el centro del marco triangular** para que encaje como una cuña. Ate la cintura del cono al travesaño y **sujete también el borde superior del cono a las patas laterales**.\n3. **Tapón Inferior de Musgo**: Presione con fuerza un puñado de musgo limpio en el orificio estrecho inferior con el pulgar.",
       "actionNote": "> Control del soporte y tapón: La boca superior debe quedar totalmente despejada para verter agua, y el anillo triangular central debe sostener firmemente el peso del cono lleno.",
       "svgFileName": "pr01-step-01.svg",
       "svgLabels": [
@@ -112,7 +112,7 @@
     {
       "stepNumber": "02",
       "title": "Paso 2: Triturar carbón al tamaño de guisante y llenar 8 cm abajo",
-      "description": "1. **Triturar y Seleccionar**: Tome [Carbón de Leña](/protocol-09.html) frío y golpéelo suavemente con una piedra en **trozos tamaño guisante (5-8 mm)**. Deseche el polvo fino que obstruiría el flujo.\n2. **Empacar Lecho de 8 cm**: Vierta el carbón sobre el tapón de musgo y compáctelo suavemente con una vara formando una capa de **cuatro dedos de altura (unos 8 cm)**.",
+      "description": "1. **Triturar y Seleccionar**: Tome [Carbón de Leña](/protocol-09) frío y golpéelo suavemente con una piedra en **trozos tamaño guisante (5-8 mm)**. Deseche el polvo fino que obstruiría el flujo.\n2. **Empacar Lecho de 8 cm**: Vierta el carbón sobre el tapón de musgo y compáctelo suavemente con una vara formando una capa de **cuatro dedos de altura (unos 8 cm)**.",
       "actionNote": "> Regla de grano: Use trozos mayores que granos de arroz. El polvo fino bloquea el paso del agua.",
       "svgFileName": "pr01-step-02.svg",
       "svgLabels": [
@@ -184,7 +184,7 @@
     {
       "stepNumber": "05",
       "title": "Paso 5: Hervir el agua limpia durante 3+ minutos continuos",
-      "description": "1. **Transferir al Recipiente**: Vierta el agua filtrada y transparente en una vasija de barro o piedra colocada sobre piedras de soporte en una [Fogata de Fricción](/protocol-02.html).\n2. **Hervido Enérgico Continuo**: Cuando se formen burbujas grandes en toda la superficie, mantenga el hervor durante al menos **3 minutos completos (5 minutos a más de 1.000 m de altitud)**.\n3. **Enfriar y Beber**: Deje enfriar el agua antes de beberla con seguridad.",
+      "description": "1. **Transferir al Recipiente**: Vierta el agua filtrada y transparente en una vasija de barro o piedra colocada sobre piedras de soporte en una [Fogata de Fricción](/protocol-02).\n2. **Hervido Enérgico Continuo**: Cuando se formen burbujas grandes en toda la superficie, mantenga el hervor durante al menos **3 minutos completos (5 minutos a más de 1.000 m de altitud)**.\n3. **Enfriar y Beber**: Deje enfriar el agua antes de beberla con seguridad.",
       "actionNote": "> Hervido obligatorio: El agua transparente NO es agua estéril. La filtración física seguida de ebullición térmica garantiza un 99.9% de seguridad biológica.",
       "svgFileName": "pr01-step-05.svg",
       "svgLabels": [
@@ -226,6 +226,6 @@
     ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-27T00:18:03.903Z",
-  "contentHash": "ed3f942f6826c6c2"
+  "updatedAt": "2026-10-28T17:33:13+09:00",
+  "contentHash": "b95e8a8abc03a175"
 }

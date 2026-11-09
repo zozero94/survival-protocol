@@ -4,7 +4,7 @@
   "title": "Como Destilar Água do Mar e Água Barrenta em Água Potável Pura com Panela de Barro e Bambu",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFESA CONTRA DESIDRATAÇÃO] Água Doce 100% Sem Sal em Costas e Zonas Isoladas",
-  "summary": "Quando isolado numa costa, ilha ou perto de poças salobras onde só existe água do mar ou água contaminada, um [Filtro Natural de Carvão e Areia](/protocol-01.html) apenas retém lama e odores, mas não remove o sal dissolvido (3,5% de salinidade). Beber água do mar retira líquido das células e causa desidratação fatal em dois dias. Fervendo a água salgada numa [Panela de Barro](/protocol-16.html) sobre uma [Fornalha de Barro](/protocol-06.html), conectando um tubo de bambu sem nós à tampa vedada e envolvendo-o com [Musgo Esfagno e Juta](/protocol-18.html) molhados em água fria, o sal pesado fica no fundo como cristais brancos enquanto o vapor puro condensa em 2 a 3 litros diários de água doce e sal marinho natural.",
+  "summary": "Quando isolado numa costa, ilha ou perto de poças salobras onde só existe água do mar ou água contaminada, um [Filtro Natural de Carvão e Areia](/protocol-01) apenas retém lama e odores, mas não remove o sal dissolvido (3,5% de salinidade). Beber água do mar retira líquido das células e causa desidratação fatal em dois dias. Fervendo a água salgada numa [Panela de Barro](/protocol-16) sobre uma [Fornalha de Barro](/protocol-06), conectando um tubo de bambu sem nós à tampa vedada e envolvendo-o com [Musgo Esfagno e Juta](/protocol-18) molhados em água fria, o sal pesado fica no fundo como cristais brancos enquanto o vapor puro condensa em 2 a 3 litros diários de água doce e sal marinho natural.",
   "timeRequired": "2 Horas (Perfurar bambu e vedar com barro-resina 40m + Revestimento de musgo 20m + Destilação 1h)",
   "successRate": "99% (Mantendo a vedação hermética de barro e resfriando o musgo com água do mar fria)",
   "difficulty": "Média (Executável com panela de barro, bambu e musgo sem mangueiras ou lonas modernas)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Panela de Barro Cozido com Tampa para Ferver e Tigela Limpa Coletora",
-      "desc": "Uma panela de barro sem esmalte resistente ao fogo (ou bacia de pedra escavada) como no [Resfriador de Pote Duplo](/protocol-16.html) com tampa, mais uma tigela limpa para aparar as gotas de água doce."
+      "desc": "Uma panela de barro sem esmalte resistente ao fogo (ou bacia de pedra escavada) como no [Resfriador de Pote Duplo](/protocol-16) com tampa, mais uma tigela limpa para aparar as gotas de água doce."
     },
     {
       "id": "mat-02",
@@ -23,19 +23,19 @@
     {
       "id": "mat-03",
       "name": "Musgo Esfagno Encharcado em Água Fria, Pano de Juta e Corda de Kudzu",
-      "desc": "Musgo absorvente e juta do [Acolchoamento de Tala](/protocol-18.html) enrolados grossamente no meio do tubo de bambu e amarrados com [Corda de Kudzu](/protocol-05.html), resfriados despejando água do mar fria por cima."
+      "desc": "Musgo absorvente e juta do [Acolchoamento de Tala](/protocol-18) enrolados grossamente no meio do tubo de bambu e amarrados com [Corda de Kudzu](/protocol-05), resfriados despejando água do mar fria por cima."
     },
     {
       "id": "mat-04",
       "name": "Dois Punhados de Barro Úmido, Resina de Pinheiro e Forquilha de Madeira em Y",
-      "desc": "Massa de barro e [Cola de Resina de Pinheiro](/protocol-10.html) para vedar sem vazamentos a tampa e a junção do bambu, além de um galho em Y para apoiar o tubo inclinado para baixo."
+      "desc": "Massa de barro e [Cola de Resina de Pinheiro](/protocol-10) para vedar sem vazamentos a tampa e a junção do bambu, além de um galho em Y para apoiar o tubo inclinado para baixo."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Passo 1: Perfurar os Nós do Bambu com Vara em Brasa e Vedar a Junção na Tampa com Resina e Barro",
-      "description": "1. **Queimar e Furar os Nós Internos do Bambu**: Escolha um bambu reto de **cinco palmos (1m) e grossura de pulso (4–5cm)**, e empurre uma vara de madeira com a ponta em brasa para **furar todas as paredes internas dos nós com chiado de fumaça** até enxergar de ponta a ponta.\n2. **Encaixar o Bambu no Furo da Tampa**: Com uma [Faca de Pedra Afiada](/protocol-04.html) abra um furo justo no centro da tampa de barro e insira a ponta do bambu **duas falanges de profundidade (4cm)**.\n3. **Vedar Duplamente a Junção com Resina e Barro**: Passe [Resina de Pinheiro](/protocol-10.html) morna na fresta e cubra com **massa de barro da grossura de um dedo (1,5cm)** para bloquear qualquer vazamento de vapor.",
+      "description": "1. **Queimar e Furar os Nós Internos do Bambu**: Escolha um bambu reto de **cinco palmos (1m) e grossura de pulso (4–5cm)**, e empurre uma vara de madeira com a ponta em brasa para **furar todas as paredes internas dos nós com chiado de fumaça** até enxergar de ponta a ponta.\n2. **Encaixar o Bambu no Furo da Tampa**: Com uma [Faca de Pedra Afiada](/protocol-04) abra um furo justo no centro da tampa de barro e insira a ponta do bambu **duas falanges de profundidade (4cm)**.\n3. **Vedar Duplamente a Junção com Resina e Barro**: Passe [Resina de Pinheiro](/protocol-10) morna na fresta e cubra com **massa de barro da grossura de um dedo (1,5cm)** para bloquear qualquer vazamento de vapor.",
       "actionNote": "> Amarrar o Exterior do Bambu com Fibra Úmida Antes de Furar: Empurrar com força excessiva no bambu seco pode rachar a lateral. Amarre fibras úmidas por fora e gire a vara em brasa devagar em cada nó.",
       "svgFileName": "pr20-step-01.svg",
       "svgLabels": [
@@ -68,7 +68,7 @@
               },
               {
                 "label": "VEDADO/COLAR",
-                "value": "Dupla vedação de [Resina de Pinheiro](/protocol-10.html) e **barro de 1,5cm**."
+                "value": "Dupla vedação de [Resina de Pinheiro](/protocol-10) e **barro de 1,5cm**."
               }
             ],
             "fieldUse": "Direciona 100% do vapor puro da água fervente para a seção de resfriamento"
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Passo 2: Encher a Panela 2/3 com Água do Mar na Fornalha e Inclinar o Bambu 30 Graus Para Baixo",
-      "description": "1. **Encher a Panela Apenas até 2/3 da Altura**: Despeje água do mar na panela sobre a [Fornalha de Barro](/protocol-06.html) até **dois terços da altura (deixando um palmo livre no topo)** para que a espuma salgada não suba para o tubo.\n2. **Vedar a Borda da Tampa com Barro e Acender o Fogo**: Passe barro úmido na borda da panela, pressione a tampa e acenda a fornalha usando [Fogo por Fricção](/protocol-02.html).\n3. **Inclinar o Tubo 30 Graus com Forquilha em Y**: Finque um **galho em Y** a três palmos da fornalha para que a ponta do bambu fique **dois palmos (40cm) mais baixa num ângulo de 30 graus**.",
+      "description": "1. **Encher a Panela Apenas até 2/3 da Altura**: Despeje água do mar na panela sobre a [Fornalha de Barro](/protocol-06) até **dois terços da altura (deixando um palmo livre no topo)** para que a espuma salgada não suba para o tubo.\n2. **Vedar a Borda da Tampa com Barro e Acender o Fogo**: Passe barro úmido na borda da panela, pressione a tampa e acenda a fornalha usando [Fogo por Fricção](/protocol-02).\n3. **Inclinar o Tubo 30 Graus com Forquilha em Y**: Finque um **galho em Y** a três palmos da fornalha para que a ponta do bambu fique **dois palmos (40cm) mais baixa num ângulo de 30 graus**.",
       "actionNote": "> Colocar 3–4 Seixos Limpos no Fundo da Panela: A água do mar espuma forte ao ferver. Colocar 3–4 pedras lavadas no fundo quebra as bolhas grandes e impede respingos de sal no tubo.",
       "svgFileName": "pr20-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Passo 3: Enrolar o Meio do Tubo com Musgo Úmido e Juta para Condensar o Vapor em Água Fria",
-      "description": "1. **Enrolar 60cm do Meio com Musgo e Juta Molhados**: Enrole **três palmos (60cm) centrais** do bambu com [Musgo Esfagno e Juta](/protocol-18.html) encharcados em água fria na **grossura de um punho** e amarre com [Corda de Kudzu](/protocol-05.html).\n2. **Despejar Água do Mar Fria sobre o Musgo a Cada 10 Minutos**: Jogue água do mar fria sobre o **musgo externo a cada 10 minutos** para manter o tubo sempre frio ao toque.\n3. **Amarrar Anel Corta-Gotas Antes da Ponta**: Amarre um anel de corda de kudzu com ponta pendente antes do final do tubo e ponha uma casca abaixo do musgo para que **a água salgada de resfriamento pingue no chão** longe da tigela.",
+      "description": "1. **Enrolar 60cm do Meio com Musgo e Juta Molhados**: Enrole **três palmos (60cm) centrais** do bambu com [Musgo Esfagno e Juta](/protocol-18) encharcados em água fria na **grossura de um punho** e amarre com [Corda de Kudzu](/protocol-05).\n2. **Despejar Água do Mar Fria sobre o Musgo a Cada 10 Minutos**: Jogue água do mar fria sobre o **musgo externo a cada 10 minutos** para manter o tubo sempre frio ao toque.\n3. **Amarrar Anel Corta-Gotas Antes da Ponta**: Amarre um anel de corda de kudzu com ponta pendente antes do final do tubo e ponha uma casca abaixo do musgo para que **a água salgada de resfriamento pingue no chão** longe da tigela.",
       "actionNote": "> Isolar a Água Salgada de Resfriamento da Tigela Coletora: Nunca deixe a água salgada externa escorrer pelo bambu até a tigela de água doce. O anel corta-gotas desvia toda a água salgada externa direto para o chão.",
       "svgFileName": "pr20-step-03.svg",
       "svgLabels": [
@@ -168,7 +168,7 @@
       "stepNumber": "04",
       "title": "Passo 4: Descartar o Primeiro Meio Copo, Coletar Água Doce Pura e Raspar o Sal Branco do Fundo",
       "description": "1. **Descartar o Primeiro Meio Copo (50ml)**: O primeiro meio copo que pinga após 10 minutos traz pó de bambu e odores voláteis; **não beba e despeje sobre o musgo**.\n2. **Confirmar Zero Salinidade na Ponta da Língua**: Toque uma gota na ponta da língua para **confirmar que é água doce 100% sem sal** e colete mais de 500ml por hora na tigela limpa.\n3. **Apagar o Fogo a Tempo e Raspar o Sal Marinho do Fundo**: Quando restar **uma falange de água** no fundo, apague o fogo, deixe o calor residual secar o resto e **raspe os cristais brancos de sal marinho natural** com uma espátula de madeira.",
-      "actionNote": "> Guardar o Sal Marinho para Conservar Carne e Repor Eletrólitos: O sal branco que sobra no fundo da panela é valioso. Guarde em folhas secas para curar [Carne e Peixe Defumado](/protocol-19.html) ou evitar exaustão pelo calor.",
+      "actionNote": "> Guardar o Sal Marinho para Conservar Carne e Repor Eletrólitos: O sal branco que sobra no fundo da panela é valioso. Guarde em folhas secas para curar [Carne e Peixe Defumado](/protocol-19) ou evitar exaustão pelo calor.",
       "svgFileName": "pr20-step-04.svg",
       "svgLabels": [
         "FIG. 04 // FIRST-RUN DISCARD, PURE FRESHWATER COLLECTION & SALT HARVEST",
@@ -200,7 +200,7 @@
               },
               {
                 "label": "COLHEITA/SAL",
-                "value": "Recupera **cristais brancos de sal marinho** para [conservar carne](/protocol-19.html)."
+                "value": "Recupera **cristais brancos de sal marinho** para [conservar carne](/protocol-19)."
               }
             ],
             "fieldUse": "Fornece água potável pura e sal natural de conservação a partir da água do mar"
@@ -237,15 +237,15 @@
     {
       "question": "A água ferve forte na panela, mas pela ponta do bambu só sai fumaça branca em vez de gotas de água.",
       "causeDiagnostic": "O musgo ao redor do tubo de bambu secou e esquentou, ou o fogo da fornalha está forte demais para que o vapor esfrie a tempo.",
-      "resolution": "Molhe imediatamente o [Musgo Esfagno e Juta](/protocol-18.html) com bastante água do mar fria até o tubo ficar fresco ao toque, e retire uma lenha da [Fornalha de Barro](/protocol-06.html) para manter uma fervura suave. Assim que o tubo esfriar, o vapor virará gotas contínuas."
+      "resolution": "Molhe imediatamente o [Musgo Esfagno e Juta](/protocol-18) com bastante água do mar fria até o tubo ficar fresco ao toque, e retire uma lenha da [Fornalha de Barro](/protocol-06) para manter uma fervura suave. Assim que o tubo esfriar, o vapor virará gotas contínuas."
     },
     {
       "question": "Por que a água coletada na minha tigela ainda tem um leve gosto salgado?",
       "causeDiagnostic": "Você encheu demais a panela e a espuma salgada subiu para o tubo, ou a água salgada jogada sobre o musgo escorreu por fora do bambu até cair na tigela.",
-      "resolution": "Reduza o nível de água do mar na panela para menos de dois terços e coloque 3–4 seixos limpos no fundo. Além disso, amarre um anel corta-gotas com [Corda de Kudzu](/protocol-05.html) entre o musgo e a ponta para que a água salgada externa pingue no chão antes da tigela."
+      "resolution": "Reduza o nível de água do mar na panela para menos de dois terços e coloque 3–4 seixos limpos no fundo. Além disso, amarre um anel corta-gotas com [Corda de Kudzu](/protocol-05) entre o musgo e a ponta para que a água salgada externa pingue no chão antes da tigela."
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T10:59:47+09:00",
-  "contentHash": "e30d31f76b87086a"
+  "updatedAt": "2026-11-02T11:24:26+09:00",
+  "contentHash": "3662cb12c2284d2c"
 }

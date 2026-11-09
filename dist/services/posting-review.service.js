@@ -489,8 +489,8 @@ export class PostingReviewService {
         checks.push(`빌드된 HTML 내 모든 data-i18n 키(${usedKeys.size}종)의 UI_STRINGS 100% 매핑 확인`);
       }
 
-      // 4. 빌드된 HTML 텍스트 노드 내 미변환 마크다운 링크([텍스트](/protocol-XX.html)) 잔존 전수 검사
-      const unparsedLinkRegex = /\[([^\]]+)\]\((?:\/protocol-\d{2}\.html|https?:\/\/[^)]+)\)/g;
+      // 4. 빌드된 HTML 텍스트 노드 내 미변환 마크다운 링크([텍스트](/protocol-XX)) 잔존 전수 검사
+      const unparsedLinkRegex = /\[([^\]]+)\]\((?:\/protocol-\d{2}(?:\.html)?|https?:\/\/[^)]+)\)/g;
       const filesWithUnparsedLinks           = [];
       for (const fileName of htmlFiles) {
         const content = fs.readFileSync(path.join(targetDir, fileName), 'utf-8');
@@ -503,7 +503,7 @@ export class PostingReviewService {
       if (filesWithUnparsedLinks.length > 0) {
         score -= 30;
         warnings.push(
-          `HTML 본문에 변환되지 않은 마크다운 링크 문법([링크](/protocol-XX.html)) 잔존 감지: ${filesWithUnparsedLinks.join(', ')}`
+          `HTML 본문에 변환되지 않은 마크다운 링크 문법([링크](/protocol-XX)) 잔존 감지: ${filesWithUnparsedLinks.join(', ')}`
         );
       } else {
         checks.push('전체 HTML 본문 내 마크다운 링크 미변환(Unparsed Markdown Links) 0건 무결성 확인');

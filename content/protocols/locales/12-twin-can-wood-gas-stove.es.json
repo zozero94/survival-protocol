@@ -18,7 +18,7 @@
     {
       "id": "mat-02",
       "name": "50cm de Cable Eléctrico Recuperado (Sin Funda Aislante)",
-      "desc": "Use una [laja de piedra afilada o hacha de piedra](/protocol-04.html) para pelar la funda exterior del cable y extraer el alambre desnudo de cobre o acero (1.5–3mm) para fijar las latas y armar el soporte de olla."
+      "desc": "Use una [laja de piedra afilada o hacha de piedra](/protocol-04) para pelar la funda exterior del cable y extraer el alambre desnudo de cobre o acero (1.5–3mm) para fijar las latas y armar el soporte de olla."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Dos Puñados de Ramitas Secas del Largo del Pulgar y Yesca de Resina",
-      "desc": "Ramitas secas de madera dura partidas al tamaño del pulgar para carga vertical, junto con [trozos de resina de pino](/protocol-10.html) y corteza seca para el encendido superior."
+      "desc": "Ramitas secas de madera dura partidas al tamaño del pulgar para carga vertical, junto con [trozos de resina de pino](/protocol-10) y corteza seca para el encendido superior."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Paso 1: Seleccionar Latas de Acero, Pelar el Cable y Quemar el Revestimiento Epoxi Interior",
-      "description": "1. **Seleccionar Latas de Acero Estriado**: Elija dos latas rígidas de conserva con estrías horizontales de refuerzo que no se doblen al apretarlas. Al colocar la pequeña dentro de la grande debe quedar un canal de aire del **ancho de un nudillo (1.5–2cm)** alrededor.\n2. **Pelar el Cable Eléctrico**: Corte longitudinalmente el aislamiento del cable con una [laja de piedra afilada](/protocol-04.html) y extraiga **50cm de alambre metálico desnudo** de cobre o acero.\n3. **Quema Previa de 5 Minutos**: Antes de hacer agujeros, llene ambas latas vacías con hojas y ramitas secas y **quémelas al aire libre durante 5 minutos** para carbonizar el barniz epoxi interior y la pintura.\n4. **Verificar el Acero Gris Mate**: Cuando desaparezca el olor químico y el interior luzca **gris oscuro mate**, deje enfriar las latas a la sombra.",
+      "description": "1. **Seleccionar Latas de Acero Estriado**: Elija dos latas rígidas de conserva con estrías horizontales de refuerzo que no se doblen al apretarlas. Al colocar la pequeña dentro de la grande debe quedar un canal de aire del **ancho de un nudillo (1.5–2cm)** alrededor.\n2. **Pelar el Cable Eléctrico**: Corte longitudinalmente el aislamiento del cable con una [laja de piedra afilada](/protocol-04) y extraiga **50cm de alambre metálico desnudo** de cobre o acero.\n3. **Quema Previa de 5 Minutos**: Antes de hacer agujeros, llene ambas latas vacías con hojas y ramitas secas y **quémelas al aire libre durante 5 minutos** para carbonizar el barniz epoxi interior y la pintura.\n4. **Verificar el Acero Gris Mate**: Cuando desaparezca el olor químico y el interior luzca **gris oscuro mate**, deje enfriar las latas a la sombra.",
       "actionNote": "> Control de Toxicidad y Metal: Omitir la quema previa contamina el agua con vapores tóxicos. Las latas blandas de bebida se derriten rápido; guíese por las fotos reales de abajo para elegir latas de acero estriado y alambre pelado.",
       "svgFileName": "pr12-step-01.svg",
       "svgLabels": [
@@ -140,7 +140,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Cargar Ramitas en Vertical, Encender desde Arriba y Hervir Agua Sin Humo",
-      "description": "1. **Carga Vertical de Ramitas**: Parta ramitas secas del grosor de un dedo al largo del pulgar y colóquelas **de pie en vertical** dentro de la lata interna hasta **justo debajo de las toberas superiores**.\n2. **Encendido Invertido (Arriba hacia Abajo)**: Coloque corteza seca y [yesca de resina de pino](/protocol-10.html) **encima de las ramitas verticales** y préndalas desde arriba con una brasa de [arco de fricción](/protocol-02.html).\n3. **Verificar los Chorros de Gas de Leña**: En 2–3 minutos, al calentarse la doble pared, verá salir **chorros de llama amarillo-azulada** por las toberas superiores mientras el humo desaparece por completo.\n4. **Hervir Agua y Recoger Biocarbón**: Coloque su recipiente con [agua filtrada](/protocol-01.html) sobre el soporte de alambre para hervir en 7–8 minutos; al terminar, cubra las brasas rojas con tierra para obtener [carbón vegetal limpio](/protocol-09.html).",
+      "description": "1. **Carga Vertical de Ramitas**: Parta ramitas secas del grosor de un dedo al largo del pulgar y colóquelas **de pie en vertical** dentro de la lata interna hasta **justo debajo de las toberas superiores**.\n2. **Encendido Invertido (Arriba hacia Abajo)**: Coloque corteza seca y [yesca de resina de pino](/protocol-10) **encima de las ramitas verticales** y préndalas desde arriba con una brasa de [arco de fricción](/protocol-02).\n3. **Verificar los Chorros de Gas de Leña**: En 2–3 minutos, al calentarse la doble pared, verá salir **chorros de llama amarillo-azulada** por las toberas superiores mientras el humo desaparece por completo.\n4. **Hervir Agua y Recoger Biocarbón**: Coloque su recipiente con [agua filtrada](/protocol-01) sobre el soporte de alambre para hervir en 7–8 minutos; al terminar, cubra las brasas rojas con tierra para obtener [carbón vegetal limpio](/protocol-09).",
       "actionNote": "> ¿Por qué encender desde arriba?: Si enciende por debajo, toda la madera humea a la vez. Al encender por arriba como una vela, el humo que sube desde abajo tiene que atravesar el anillo de fuego superior y se quema sin dejar rastro.",
       "svgFileName": "pr12-step-04.svg",
       "svgLabels": [
@@ -173,6 +173,6 @@
     "description": "Construida con dos latas de acero recuperadas y alambre pelado, con canal de precalentamiento de 1.5–2cm, tomas inferiores de aire frío, toberas superiores de oxígeno secundario y soporte cruzado de alambre para combustión limpia a 850°C."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "47468e0c9ce45c53",
-  "updatedAt": "2026-10-17T19:16:11+09:00"
+  "contentHash": "61644332f814ecf5",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

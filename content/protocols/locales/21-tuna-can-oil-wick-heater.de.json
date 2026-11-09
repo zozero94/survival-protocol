@@ -4,7 +4,7 @@
   "title": "72-Stunden-Notheizung & Kocher aus Thunfischdose, Speiseöl und Toilettenpapier bei Strom- & Gasausfall",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[BLACKOUT-INNENHEIZUNG & 72-STUNDEN-WÄRMEQUELLE]",
-  "summary": "Wenn Sie zu Hause fertige Notfallausrüstung wie einen Gaskocher, Campingheizer, Paraffinkerzen oder Trockenbrennstoff haben, nutzen Sie diese immer zuerst als sicherste und schnellste Lösung. Dauert ein Winter-Blackout oder Gasausfall jedoch länger an und sind Gaskartuschen sowie Batterien aufgebraucht, droht beim Verbrennen von Holz in Innenräumen tödlicher Rauch und Kohlenmonoxid (nutzen Sie den [Doppeldosen-Holzgas-Kocher](/protocol-12.html) nur im Freien). Indem Sie den Boden einer leeren Stahl-Thunfischdose mit einer Kiesschicht dämmen, 3 fest gedrehte Toilettenpapier-Dochte in einer gefalteten Folienbrücke aufstellen und Pflanzenöl einfüllen, entsteht ein rauchfreier Innenheizer, der den Raum wärmt und Trinkwasser 8 bis 12 Stunden pro Füllung (über 72 Stunden pro Ölflasche) erhitzt.",
+  "summary": "Wenn Sie zu Hause fertige Notfallausrüstung wie einen Gaskocher, Campingheizer, Paraffinkerzen oder Trockenbrennstoff haben, nutzen Sie diese immer zuerst als sicherste und schnellste Lösung. Dauert ein Winter-Blackout oder Gasausfall jedoch länger an und sind Gaskartuschen sowie Batterien aufgebraucht, droht beim Verbrennen von Holz in Innenräumen tödlicher Rauch und Kohlenmonoxid (nutzen Sie den [Doppeldosen-Holzgas-Kocher](/protocol-12) nur im Freien). Indem Sie den Boden einer leeren Stahl-Thunfischdose mit einer Kiesschicht dämmen, 3 fest gedrehte Toilettenpapier-Dochte in einer gefalteten Folienbrücke aufstellen und Pflanzenöl einfüllen, entsteht ein rauchfreier Innenheizer, der den Raum wärmt und Trinkwasser 8 bis 12 Stunden pro Füllung (über 72 Stunden pro Ölflasche) erhitzt.",
   "timeRequired": "15 Min. (Dose & Kiesschicht 3m + Papierdochte & Folienbrücke 5m + Ölsättigung 5m + Reflektorwand 2m)",
   "successRate": "99% (Bei reinem Pflanzenöl und einer freien Dochtspitze unter 1cm / halbes Fingerglied)",
   "difficulty": "Einfach (Ohne Messer mit alltäglichen Küchenutensilien machbar)",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Zwei Handspannen Küchen-Metallfolie & 2 dicke abisolierte Metalldrähte (oder Drahtkleiderbügel)",
-      "desc": "Eine Handspanne Metallfolie wird zu einer Haltebrücke gefaltet, die die 3 Dochte aufrecht im Öl hält; die zweite Handspanne steht hinter der Dose und reflektiert die Strahlungswärme nach vorn. Zwei dicke Metalldrähte (bei alten Stromkabeln die Isolierung zuvor mit einer [Scharfen Steinklinge](/protocol-04.html) komplett abziehen, um Giftgase zu vermeiden) dienen als Topfauflage zum Erhitzen eines Metallbechers Wasser."
+      "desc": "Eine Handspanne Metallfolie wird zu einer Haltebrücke gefaltet, die die 3 Dochte aufrecht im Öl hält; die zweite Handspanne steht hinter der Dose und reflektiert die Strahlungswärme nach vorn. Zwei dicke Metalldrähte (bei alten Stromkabeln die Isolierung zuvor mit einer [Scharfen Steinklinge](/protocol-04) komplett abziehen, um Giftgase zu vermeiden) dienen als Topfauflage zum Erhitzen eines Metallbechers Wasser."
     }
   ],
   "steps": [
@@ -43,7 +43,7 @@
       "deepDive": {
         "badge": "BLACKOUT-WÄRME",
         "title": "Kohlenmonoxid-Gefahr durch Holz/Kohle im Zimmer vs. Thermische Sicherheit von Weißblechdosen",
-        "text": "Das Verbrennen von Holz oder [Hartholzkohle](/protocol-09.html) in geschlossenen Wohnräumen führt rasch zu tödlicher Kohlenmonoxid-Vergiftung. Weißblechdosen haben dagegen einen Schmelzpunkt über **1.500°C**, und dank der **1cm dicken Kiesschicht am Boden** sowie reinem Pflanzenöl überhitzt das Dosenblech nicht und spendet saubere Wärme im Innenraum.",
+        "text": "Das Verbrennen von Holz oder [Hartholzkohle](/protocol-09) in geschlossenen Wohnräumen führt rasch zu tödlicher Kohlenmonoxid-Vergiftung. Weißblechdosen haben dagegen einen Schmelzpunkt über **1.500°C**, und dank der **1cm dicken Kiesschicht am Boden** sowie reinem Pflanzenöl überhitzt das Dosenblech nicht und spendet saubere Wärme im Innenraum.",
         "fieldSpecs": [
           {
             "name": "Gereinigte Stahl-Thunfischdose & 1cm Kies-Hitzepuffer",
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: 3 Dochte entzünden, Folien-Wärmereflektor dahinter aufstellen und Wasser auf Drahtstreben erhitzen",
-      "description": "1. **3fach-Dochte entzünden**: Halten Sie eine Flamme (oder Glut vom [Feuerbohrer-Reibungsfeuer](/protocol-02.html), falls Feuerzeuge leer sind) für **3-4 Sekunden** an die ölgetränkten Dochtspitzen. Nach 1 Minute brennen **3 ruhige, helle orangefarbene Flammen von einem Fingerglied Höhe (2-3cm)** völlig rauchfrei.\n2. **Zickzack-Folienreflektor aufstellen**: Falten Sie ein handspannengroßes Stück Küchenfolie ziehharmonikaartig mit der glänzenden Seite nach vorn und stellen Sie es halbkreisförmig **zwei Fingerglieder (3-4cm) hinter der Dose** auf.\n3. **Abisolierte Drahtstreben auflegen**: Legen Sie 2 dicke abisolierte Metalldrähte oder Kleiderbügelstreben quer über den Dosenrand und stellen Sie einen Metallbecher darauf, um Trinkwasser (gefiltert mit dem [Holzkohle-Sand-Wasserfilter](/protocol-01.html)) und Konserven zu erwärmen.\n4. **Alle 3 Stunden Fenster 2cm öffnen**: Auch rauchfreie Flammen verbrauchen Sauerstoff – **öffnen Sie alle 3 Stunden das Fenster einen Spalt breit (2cm)** zum Lüften.",
+      "description": "1. **3fach-Dochte entzünden**: Halten Sie eine Flamme (oder Glut vom [Feuerbohrer-Reibungsfeuer](/protocol-02), falls Feuerzeuge leer sind) für **3-4 Sekunden** an die ölgetränkten Dochtspitzen. Nach 1 Minute brennen **3 ruhige, helle orangefarbene Flammen von einem Fingerglied Höhe (2-3cm)** völlig rauchfrei.\n2. **Zickzack-Folienreflektor aufstellen**: Falten Sie ein handspannengroßes Stück Küchenfolie ziehharmonikaartig mit der glänzenden Seite nach vorn und stellen Sie es halbkreisförmig **zwei Fingerglieder (3-4cm) hinter der Dose** auf.\n3. **Abisolierte Drahtstreben auflegen**: Legen Sie 2 dicke abisolierte Metalldrähte oder Kleiderbügelstreben quer über den Dosenrand und stellen Sie einen Metallbecher darauf, um Trinkwasser (gefiltert mit dem [Holzkohle-Sand-Wasserfilter](/protocol-01)) und Konserven zu erwärmen.\n4. **Alle 3 Stunden Fenster 2cm öffnen**: Auch rauchfreie Flammen verbrauchen Sauerstoff – **öffnen Sie alle 3 Stunden das Fenster einen Spalt breit (2cm)** zum Lüften.",
       "actionNote": "> Effizienz von Folienreflektor & Drahtauflage: Eine glänzende Folienwand hinter der Dose reflektiert 90% der nach hinten abstrahlenden Wärme nach vorn zu Ihnen. Stellen Sie einen Becher niemals ohne die 2 Drahtstreben direkt auf den Dosenrand, da die Flammen sonst ersticken.",
       "svgFileName": "pr21-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Niemals Benzin, Spiritus oder Verdünner statt Speiseöl einfüllen, brennendes Öl nie mit Wasser löschen und keine Kunstfaser-Dochte nutzen",
-    "description": "Das Einfüllen leichtflüchtiger Brennstoffe wie Benzin, Brennspiritus, Aceton oder Farbverdünner in eine offene Dose füllt den Raum mit explosiven Dämpfen, die beim Anzünden verpuffen (nutzen Sie bei vorhandenen Gaskochern oder Petroleumheizern ausschließlich deren Originalbrennstoff im jeweiligen Gerät). Verwenden Sie niemals Polyester- oder Nylonstoff als Docht, da schmelzende Kunstfasern tödliche Dioxingase freisetzen (tragen Sie bei Rauchflucht eine [Aktivkohle-Rauchschutzmaske](/protocol-15.html)); nutzen Sie nur Toilettenpapier oder 100% Baumwolle.",
+    "description": "Das Einfüllen leichtflüchtiger Brennstoffe wie Benzin, Brennspiritus, Aceton oder Farbverdünner in eine offene Dose füllt den Raum mit explosiven Dämpfen, die beim Anzünden verpuffen (nutzen Sie bei vorhandenen Gaskochern oder Petroleumheizern ausschließlich deren Originalbrennstoff im jeweiligen Gerät). Verwenden Sie niemals Polyester- oder Nylonstoff als Docht, da schmelzende Kunstfasern tödliche Dioxingase freisetzen (tragen Sie bei Rauchflucht eine [Aktivkohle-Rauchschutzmaske](/protocol-15)); nutzen Sie nur Toilettenpapier oder 100% Baumwolle.",
     "consequence": "Wasser in brennendes Öl zu schütten führt zu einer schlagartigen Fettexplosion durch verdampfendes Wasser. Zum Löschen die Dochte auspusten oder einen Keramikteller bzw. ein feuchtes Tuch von oben auflegen, um den Sauerstoff abzuschneiden."
   },
   "faqs": [
@@ -218,7 +218,7 @@
     {
       "question": "Was tun, wenn der Docht plötzlich schwarzen Ruß bildet oder die Flamme zu klein wird?",
       "causeDiagnostic": "Ragt die Dochtspitze **mehr als ein Fingerglied (1,5cm)** über die Folie hinaus, entsteht durch unverbranntes Öl schwarzer Ruß; ist das Papier zu locker gedreht und sinkt ins Öl ein, schrumpft die Flamme.",
-      "resolution": "Korrigieren Sie die Folienbrücke mit Essstäbchen oder einer Pinzette so, dass die **freie Dochtspitze unter einem halben Fingerglied (0,8-1cm)** bleibt – die Flamme brennt sofort wieder sauber und rußfrei. Für starkes Kochen im Freien oder Unterkunftsbeheizung kombinieren Sie dies mit dem [Doppeldosen-Holzgas-Kocher](/protocol-12.html) oder dem [Lehm-Wärmespeicherofen](/protocol-06.html)."
+      "resolution": "Korrigieren Sie die Folienbrücke mit Essstäbchen oder einer Pinzette so, dass die **freie Dochtspitze unter einem halben Fingerglied (0,8-1cm)** bleibt – die Flamme brennt sofort wieder sauber und rußfrei. Für starkes Kochen im Freien oder Unterkunftsbeheizung kombinieren Sie dies mit dem [Doppeldosen-Holzgas-Kocher](/protocol-12) oder dem [Lehm-Wärmespeicherofen](/protocol-06)."
     }
   ],
   "shortsScript": "[0-5s Hook] Strom und Gas im eiskalten Winter ausgefallen? Bauen Sie mit einer Thunfischdose und Speiseöl eine 72-Stunden-Innenheizung! [5-35s Body] Wenn Gaskartuschen und Kerzen leer sind, füllen Sie 1cm Kies als Hitzeschutz in eine saubere Thunfischdose. Drehen Sie 3 feste Toilettenpapier-Dochte und stellen Sie diese mit einer Folienbrücke mittig auf. Zu 4/5 mit Speiseöl füllen, Spitzen beträufeln, anzünden und einen Folienreflektor dahinterstellen – für rauchfreie Wärme und heißes Wasser! [35-45s Warning & Outro] Niemals Benzin oder Wasser nutzen – mit einem Teller ersticken! Jetzt offline speichern.",
@@ -240,7 +240,7 @@
       "PRAXISGEPRÜFT // RAUCHFREIE INNENHEIZUNG & WARMWASSER"
     ]
   },
-  "contentHash": "09e4c955a5075ef8",
+  "contentHash": "75c437ca60b0bfba",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T06:41:48.546Z"
+  "updatedAt": "2026-11-02T16:17:08+09:00"
 }

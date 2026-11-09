@@ -4,7 +4,7 @@
   "title": "Wie man leicht verderbliche Rohhaut mit Eichenrindensud und Aschelauge zu festem, wasserfestem Leder macht (Natürliche Lederherstellung im Feld)",
   "threatLevel": "HIGH",
   "threatLevelText": "[SCHUTZ VOR ROHHAUTFÄULNIS & DAUERHAFTE WASSERFESTE WINTERLEDER-SELBSTVERSORGUNG]",
-  "summary": "Bei langfristiger Isolation verfaulen durch [Tierfallen und Jagd](/protocol-08.html) gewonnene 'Rohhäute' wegen Fleischresten und Feuchtigkeit binnen eines Tages oder trocknen in der Sonne hart wie ein Holzbrett, sodass sie für Kleidung oder Schuhe unbrauchbar sind. In der Wildnis ohne Chemikalien weichen Sie die Rohhaut zuerst in glitschigem 'weißem Holzaschewasser' wie bei der [natürlichen Ascheseife](/protocol-13.html) ein, um die Haare sanft abzuschieben, und legen sie danach eine Woche lang in dunkelroten 'herben Eichenrindensud' aus zerstoßener roter Eicheninnenrinde rund um einen [Erdgruben-Kohlemeiler](/protocol-09.html). Genau wie das Kauen einer Eichel oder unreifen Kaki den Mund zusammenzieht, dringt der 'herbe Schutzsaft' der Eichenrinde tief in die Haut ein und schützt sie vor Fäulnisbakterien, während Holzrauch die Oberfläche versiegelt – für warme Wintermäntel und Lederschuhe mit [Knochennadeln und Sehnengarn](/protocol-14.html).",
+  "summary": "Bei langfristiger Isolation verfaulen durch [Tierfallen und Jagd](/protocol-08) gewonnene 'Rohhäute' wegen Fleischresten und Feuchtigkeit binnen eines Tages oder trocknen in der Sonne hart wie ein Holzbrett, sodass sie für Kleidung oder Schuhe unbrauchbar sind. In der Wildnis ohne Chemikalien weichen Sie die Rohhaut zuerst in glitschigem 'weißem Holzaschewasser' wie bei der [natürlichen Ascheseife](/protocol-13) ein, um die Haare sanft abzuschieben, und legen sie danach eine Woche lang in dunkelroten 'herben Eichenrindensud' aus zerstoßener roter Eicheninnenrinde rund um einen [Erdgruben-Kohlemeiler](/protocol-09). Genau wie das Kauen einer Eichel oder unreifen Kaki den Mund zusammenzieht, dringt der 'herbe Schutzsaft' der Eichenrinde tief in die Haut ein und schützt sie vor Fäulnisbakterien, während Holzrauch die Oberfläche versiegelt – für warme Wintermäntel und Lederschuhe mit [Knochennadeln und Sehnengarn](/protocol-14).",
   "timeRequired": "7-10 Tage (Fett abschaben & Enthaaren in Aschewasser 2T + Eichenrindensud-Bad 5-7T + Einfetten & Räuchern 1T)",
   "successRate": "93% (Wenn der Eichenrindensud komplett kalt verwendet wird und der Hautschnitt bis zur Mitte braun gefärbt ist)",
   "difficulty": "Mittel (Erfordert runden Stein gegen Löcher in der Haut & Einlegen von schwachem zu starkem Sud der Reihe nach)",
@@ -13,17 +13,17 @@
     {
       "id": "mat-01",
       "name": "1 Frische Rohe Tierhaut & Stumpfer Flussstein oder Knochenspatel zum Abstoßen des Innenfetts",
-      "desc": "Frische Hirsch-, Ziegen- oder Wildschweinhaut direkt nach der [Fallenjagd](/protocol-08.html) sowie ein [abgerundeter Steinschaber](/protocol-04.html) oder stumpfer Schienbeinknochen, um nur die weiße Fettschicht innen abzuschieben, ohne Löcher in die Haut zu reißen."
+      "desc": "Frische Hirsch-, Ziegen- oder Wildschweinhaut direkt nach der [Fallenjagd](/protocol-08) sowie ein [abgerundeter Steinschaber](/protocol-04) oder stumpfer Schienbeinknochen, um nur die weiße Fettschicht innen abzuschieben, ohne Löcher in die Haut zu reißen."
     },
     {
       "id": "mat-02",
       "name": "1 Rucksackladung Raue Außenrinde & Rote Innenrinde der Eiche (ca. 5-6kg)",
-      "desc": "Rinde von abgestorbenen oder umgestürzten Eichen- oder Kastanienstämmen wie beim [Erdgruben-Kohlemeiler](/protocol-09.html). Besonders in der roten Innenrinde direkt unter der rauen Borke steckt reichlich 'herber Schutzsaft', der verhindert, dass das Leder jemals verfault."
+      "desc": "Rinde von abgestorbenen oder umgestürzten Eichen- oder Kastanienstämmen wie beim [Erdgruben-Kohlemeiler](/protocol-09). Besonders in der roten Innenrinde direkt unter der rauen Borke steckt reichlich 'herber Schutzsaft', der verhindert, dass das Leder jemals verfault."
     },
     {
       "id": "mat-03",
       "name": "5-6 Handvoll Weiße Eichenasche & Klares Bachwasser zum Aufweichen der Haarwurzeln",
-      "desc": "Weiße Holzasche wie bei der Herstellung von [natürlicher Ascheseife](/protocol-13.html). In Wasser aufgelöst entsteht seifig-glitschiges Aschewasser, das die Haarporen sanft aufweicht, sodass sich Haare ohne Klinge abschieben lassen."
+      "desc": "Weiße Holzasche wie bei der Herstellung von [natürlicher Ascheseife](/protocol-13). In Wasser aufgelöst entsteht seifig-glitschiges Aschewasser, das die Haarporen sanft aufweicht, sodass sich Haare ohne Klinge abschieben lassen."
     },
     {
       "id": "mat-04",
@@ -33,14 +33,14 @@
     {
       "id": "mat-05",
       "name": "1 Tasse Warmes Tierfett zum Geschmeidigmachen & Rauch von Morschem Eichenholz",
-      "desc": "Warmes Tierfett, damit das Leder beim Trocknen nicht steif wird, kombiniert mit flammenlosem Holzrauch aus einem [Lehmofen](/protocol-06.html) als wasserfeste Schutzschicht auf der Lederoberfläche."
+      "desc": "Warmes Tierfett, damit das Leder beim Trocknen nicht steif wird, kombiniert mit flammenlosem Holzrauch aus einem [Lehmofen](/protocol-06) als wasserfeste Schutzschicht auf der Lederoberfläche."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Schritt 1: Auf Rundem Baumstamm Innenfett Abschieben und in Aschewasser Haare Ablösen",
-      "description": "1. **Innenfett & Fleischreste Abschieben**: Legen Sie die Rohhaut über einen glatten, mehr als unterarmdicken Baumstamm und schieben Sie mit einem beidhändigen [stumpfen Steinschaber](/protocol-04.html) kräftig von oben nach unten, bis alles weiße Fett weg ist und **sich an den Fingerspitzen nichts mehr schmierig anfühlt**.\n2. **In Aschewasser Haarporen Aufweichen**: Lösen Sie **fünf Handvoll** [weiße Eichenasche](/protocol-13.html) in einem Eimer Wasser zu glitschigem Aschewasser, beschweren Sie die Haut mit Steinen und **lassen Sie sie 2-3 Tage komplett eingetaucht**, bis sich die Haarwurzeln von selbst lockern.\n3. **Mit Holzspatel Haare Abschieben & im Bach Spülen**: Lassen sich die Haare mit dem Daumen mühelos wegschieben, legen Sie die Haut wieder auf den Stamm, schieben Haare und dunkle Oberhaut mit einem stumpfen Holzspatel ab und **legen die Haut einen halben Tag in den fließenden Bach**, um das Aschewasser restlos auszuspülen.",
+      "description": "1. **Innenfett & Fleischreste Abschieben**: Legen Sie die Rohhaut über einen glatten, mehr als unterarmdicken Baumstamm und schieben Sie mit einem beidhändigen [stumpfen Steinschaber](/protocol-04) kräftig von oben nach unten, bis alles weiße Fett weg ist und **sich an den Fingerspitzen nichts mehr schmierig anfühlt**.\n2. **In Aschewasser Haarporen Aufweichen**: Lösen Sie **fünf Handvoll** [weiße Eichenasche](/protocol-13) in einem Eimer Wasser zu glitschigem Aschewasser, beschweren Sie die Haut mit Steinen und **lassen Sie sie 2-3 Tage komplett eingetaucht**, bis sich die Haarwurzeln von selbst lockern.\n3. **Mit Holzspatel Haare Abschieben & im Bach Spülen**: Lassen sich die Haare mit dem Daumen mühelos wegschieben, legen Sie die Haut wieder auf den Stamm, schieben Haare und dunkle Oberhaut mit einem stumpfen Holzspatel ab und **legen die Haut einen halben Tag in den fließenden Bach**, um das Aschewasser restlos auszuspülen.",
       "actionNote": "> Vorsicht vor Scharfen Steinmessern & Langem Bloßem Handkontakt mit Aschewasser: Scharfe Steinklingen schneiden Löcher in die Haut; schieben Sie immer mit einem stumpfen Knochen oder runden Flussstein. Wenden Sie die Haut mit einem Ast und waschen Sie die Hände danach mit klarem Wasser.",
       "svgFileName": "pr17-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Schritt 2: Rote Eicheninnenrinde mit Stein Zerstoßen, Auskochen und Kalt Werden Lassen",
-      "description": "1. **Eicheninnenrinde Abschälen & Zerstoßen**: Schälen Sie die Rinde von abgestorbenen Eichenstämmen, legen Sie sie auf einen flachen Fels und klopfen Sie sie mit einem Fauststein in **daumennagelgroße (~1-2cm) feine Stücke**.\n2. **Kräftigen Roten Rindensud Auskochen**: Füllen Sie einen großen Tontopf auf dem [Lehmofen](/protocol-06.html) halb mit zerstoßener Eichenrinde, gießen Sie Wasser voll auf und kochen Sie alles über 1 Stunde, bis der Sud **wie starker Schwarztee oder dunkle Sojasauce** aussieht und kräftig nach Holz duftet.\n3. **Bachkalt Abkühlen & Tag-1-Wasser Mischen**: Lassen Sie den Sud im Schatten abkühlen, bis er sich **am Handrücken kühl anfühlt**, damit die Haut nicht kocht, und mischen Sie ihn am ersten Tag halb und halb mit klarem Wasser.",
+      "description": "1. **Eicheninnenrinde Abschälen & Zerstoßen**: Schälen Sie die Rinde von abgestorbenen Eichenstämmen, legen Sie sie auf einen flachen Fels und klopfen Sie sie mit einem Fauststein in **daumennagelgroße (~1-2cm) feine Stücke**.\n2. **Kräftigen Roten Rindensud Auskochen**: Füllen Sie einen großen Tontopf auf dem [Lehmofen](/protocol-06) halb mit zerstoßener Eichenrinde, gießen Sie Wasser voll auf und kochen Sie alles über 1 Stunde, bis der Sud **wie starker Schwarztee oder dunkle Sojasauce** aussieht und kräftig nach Holz duftet.\n3. **Bachkalt Abkühlen & Tag-1-Wasser Mischen**: Lassen Sie den Sud im Schatten abkühlen, bis er sich **am Handrücken kühl anfühlt**, damit die Haut nicht kocht, und mischen Sie ihn am ersten Tag halb und halb mit klarem Wasser.",
       "actionNote": "> Niemals Rohhaut in Lauwarmen oder Heißen Eichensud Legen: Legt man die Haut in noch warmes Wasser, wird sie auf der Stelle gekocht wie Schweineschwarte, zieht sich zusammen und reißt. Immer warten, bis der Sud kalt wie Bachwasser ist.",
       "svgFileName": "pr17-step-02.svg",
       "svgLabels": [
@@ -165,7 +165,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: Trocknende Haut über Rundem Holzpfahl Weichreiben und über Holzrauch Räuchern",
-      "description": "1. **Über Rundem Holzpfahl Weichreiben**: Sobald die gefettete Haut zu trocknen beginnt, hängen Sie sie über die **runde, glatte Kante eines kniehohen Holzpfahls** und ziehen und reiben Sie kräftig in alle Richtungen, bis **deckenweiche Lederfasern** entstehen.\n2. **Als Kegel Binden & Holzrauch Aussetzen**: Binden Sie das weiche Leder kegelförmig um ein Astgestell und lassen Sie aus einer kleinen Grube darunter 1 Stunde lang **flammenlosen Rauch von morschen Eichenholzstücken** durchziehen.\n3. **Wasserfestes Winterleder Fertigstellen**: Ist die Außenseite **goldbraun beschichtet und duftet würzig nach Rauch**, nähen Sie mit [Knochennadeln und trockenem Sehnengarn](/protocol-14.html) wetterfeste Winterkleidung und Lederschuhe.",
+      "description": "1. **Über Rundem Holzpfahl Weichreiben**: Sobald die gefettete Haut zu trocknen beginnt, hängen Sie sie über die **runde, glatte Kante eines kniehohen Holzpfahls** und ziehen und reiben Sie kräftig in alle Richtungen, bis **deckenweiche Lederfasern** entstehen.\n2. **Als Kegel Binden & Holzrauch Aussetzen**: Binden Sie das weiche Leder kegelförmig um ein Astgestell und lassen Sie aus einer kleinen Grube darunter 1 Stunde lang **flammenlosen Rauch von morschen Eichenholzstücken** durchziehen.\n3. **Wasserfestes Winterleder Fertigstellen**: Ist die Außenseite **goldbraun beschichtet und duftet würzig nach Rauch**, nähen Sie mit [Knochennadeln und trockenem Sehnengarn](/protocol-14) wetterfeste Winterkleidung und Lederschuhe.",
       "actionNote": "> Nicht Vor dem Trocknen Aufhören zu Reiben & Beim Räuchern auf Flammen Achten: Hört man mit dem Ziehen am Holzpfahl auf, bevor das Leder ganz trocken ist, wird es wieder steif wie Pappe. Nutzen Sie beim Räuchern nur feuchtes morsches Holz ohne offene Flamme.",
       "svgFileName": "pr17-step-04.svg",
       "svgLabels": [
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-26T13:00:00.000Z",
-  "updatedAt": "2026-10-26T13:31:24.635Z",
-  "contentHash": "d3bf620f626719da"
+  "updatedAt": "2026-10-28T17:33:13+09:00",
+  "contentHash": "1edc87e6714dfcae"
 }

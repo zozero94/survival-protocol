@@ -4,7 +4,7 @@
   "title": "How to Build a 72-Hour Indoor Emergency Heater & Cooker with a Tuna Can, Cooking Oil & Tissue",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[BLACKOUT INDOOR HEATING & 72-HOUR THERMAL SOURCE]",
-  "summary": "If your home already has ready-made gear such as a portable butane stove, camp heater, paraffin candles, or solid fuel tablets, always use those first as the safest and fastest option. However, when a winter blackout or city gas outage drags on and all butane canisters and batteries are depleted, burning wood indoors risks fatal smoke and carbon monoxide suffocation (use the [Twin-Can Wood Gas Stove](/protocol-12.html) for high-heat outdoor cooking). By lining an empty steel tuna can with a pebble thermal buffer, standing 3 tightly twisted tissue wicks in a folded foil bridge clip, and filling it with vegetable cooking oil, you create a smokeless indoor heater that warms a room and heats drinking water for 8 to 12 hours per fill (over 72 hours per bottle of oil).",
+  "summary": "If your home already has ready-made gear such as a portable butane stove, camp heater, paraffin candles, or solid fuel tablets, always use those first as the safest and fastest option. However, when a winter blackout or city gas outage drags on and all butane canisters and batteries are depleted, burning wood indoors risks fatal smoke and carbon monoxide suffocation (use the [Twin-Can Wood Gas Stove](/protocol-12) for high-heat outdoor cooking). By lining an empty steel tuna can with a pebble thermal buffer, standing 3 tightly twisted tissue wicks in a folded foil bridge clip, and filling it with vegetable cooking oil, you create a smokeless indoor heater that warms a room and heats drinking water for 8 to 12 hours per fill (over 72 hours per bottle of oil).",
   "timeRequired": "15 mins (Can prep & pebble buffer 3m + Tissue wicks & foil clip 5m + Oil soak 5m + Reflector setup 2m)",
   "successRate": "99% (When using vegetable oil and keeping exposed wick tip under 1cm / half a finger joint)",
   "difficulty": "Easy (No knife required, built with everyday kitchen items)",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Two Handspans of Kitchen Metal Foil & 2 Thick Stripped Metal Wires (or Wire Coat Hanger)",
-      "desc": "One handspan of kitchen foil is folded into a cross-bridge clip that holds the 3 wicks upright inside the oil, while the second handspan stands behind the can to reflect radiant heat forward. Two thick metal wires (if salvaging scrap electrical wire, strip all outer insulation with a [Sharp Stone Blade](/protocol-04.html) to prevent toxic fumes) rest across the rim as a trivet to heat a metal cup of water."
+      "desc": "One handspan of kitchen foil is folded into a cross-bridge clip that holds the 3 wicks upright inside the oil, while the second handspan stands behind the can to reflect radiant heat forward. Two thick metal wires (if salvaging scrap electrical wire, strip all outer insulation with a [Sharp Stone Blade](/protocol-04) to prevent toxic fumes) rest across the rim as a trivet to heat a metal cup of water."
     }
   ],
   "steps": [
@@ -43,7 +43,7 @@
       "deepDive": {
         "badge": "URBAN BLACKOUT HEAT",
         "title": "Indoor Carbon Monoxide Hazard of Wood/Charcoal vs. Thermal Safety of Tinplate Steel Cans",
-        "text": "Burning firewood or [Hardwood Charcoal](/protocol-09.html) inside a sealed apartment rapidly fills the room with odorless carbon monoxide, causing fatal poisoning. In contrast, tinplate steel cans have a melting point above **1,500°C**, and lining the bottom with a **1cm pebble buffer** while burning pure vegetable oil wicks prevents the can body or liner from overheating, delivering clean indoor warmth.",
+        "text": "Burning firewood or [Hardwood Charcoal](/protocol-09) inside a sealed apartment rapidly fills the room with odorless carbon monoxide, causing fatal poisoning. In contrast, tinplate steel cans have a melting point above **1,500°C**, and lining the bottom with a **1cm pebble buffer** while burning pure vegetable oil wicks prevents the can body or liner from overheating, delivering clean indoor warmth.",
         "fieldSpecs": [
           {
             "name": "Cleaned Steel Tuna Can & 1cm Pebble Buffer",
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Ignite the 3 Wicks, Stand the Foil Heat Reflector Wall Behind, and Heat Water on Wire Bars",
-      "description": "1. **Ignite Triple Wicks**: Hold a flame (or ember from a [Bow Drill Friction Fire](/protocol-02.html) if matches are gone) against the 3 oil-soaked wick tips for **3-4 seconds**. Within 1 minute, **3 steady, bright orange flames about one finger joint tall (2-3cm)** will burn without smoke.\n2. **Set Up Accordion Foil Reflector Wall**: Fold a one-handspan sheet of kitchen foil in a zigzag accordion with the shiny side facing forward, and stand it in a semi-circle **two finger joints (3-4cm) behind the can**.\n3. **Lay Stripped Wire Trivet Bars**: Lay 2 thick stripped metal wires or coat hanger rods across the top rim of the can, and place a metal mug or small pot on top to warm drinking water (filtered via the [Charcoal & Sand Water Filter](/protocol-01.html)) and canned rations.\n4. **Crack Window 2cm Every 3 Hours**: Even smokeless flames consume indoor oxygen, so **open a window by one finger joint (2cm) every 3 hours** to refresh the air.",
+      "description": "1. **Ignite Triple Wicks**: Hold a flame (or ember from a [Bow Drill Friction Fire](/protocol-02) if matches are gone) against the 3 oil-soaked wick tips for **3-4 seconds**. Within 1 minute, **3 steady, bright orange flames about one finger joint tall (2-3cm)** will burn without smoke.\n2. **Set Up Accordion Foil Reflector Wall**: Fold a one-handspan sheet of kitchen foil in a zigzag accordion with the shiny side facing forward, and stand it in a semi-circle **two finger joints (3-4cm) behind the can**.\n3. **Lay Stripped Wire Trivet Bars**: Lay 2 thick stripped metal wires or coat hanger rods across the top rim of the can, and place a metal mug or small pot on top to warm drinking water (filtered via the [Charcoal & Sand Water Filter](/protocol-01)) and canned rations.\n4. **Crack Window 2cm Every 3 Hours**: Even smokeless flames consume indoor oxygen, so **open a window by one finger joint (2cm) every 3 hours** to refresh the air.",
       "actionNote": "> Foil Reflector & Wire Trivet Efficiency: Standing a shiny foil reflector behind the can redirects 90% of rear radiant heat forward toward you, making the warmth immediately felt from a handspan away. Never set a cup directly on the can rim without the 2 wire bars, or it will suffocate the flames.",
       "svgFileName": "pr21-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Never Pour Gasoline, Alcohol, or Paint Thinner Instead of Cooking Oil, Never Throw Water on Burning Oil, and Never Use Synthetic Cloth Wicks",
-    "description": "Pouring volatile fuels like gasoline, rubbing alcohol, acetone, or paint thinner into an open tin can fills the room with explosive vapor that detonates upon ignition (if you have a ready-made butane stove or kerosene heater, only use its designated fuel inside the original appliance). Never use polyester or nylon fabric as a wick, as melting synthetics release lethal dioxin fumes (wear an [Activated Charcoal Smoke Mask](/protocol-15.html) when escaping smoke); use only toilet tissue or 100% cotton.",
+    "description": "Pouring volatile fuels like gasoline, rubbing alcohol, acetone, or paint thinner into an open tin can fills the room with explosive vapor that detonates upon ignition (if you have a ready-made butane stove or kerosene heater, only use its designated fuel inside the original appliance). Never use polyester or nylon fabric as a wick, as melting synthetics release lethal dioxin fumes (wear an [Activated Charcoal Smoke Mask](/protocol-15) when escaping smoke); use only toilet tissue or 100% cotton.",
     "consequence": "Pouring water onto burning oil causes instant steam expansion that splatters flaming oil across the room, causing severe burns. To extinguish, blow out the wicks or cover the top with a ceramic plate or damp cloth to cut off oxygen."
   },
   "faqs": [
@@ -218,7 +218,7 @@
     {
       "question": "What should I do if the wick starts producing a little black soot or the flame becomes too small?",
       "causeDiagnostic": "If the wick tip above the foil collar is **longer than one finger joint (1.5cm)**, unburned oil vapor turns into black soot; if the tissue was rolled too loosely and slumps into the oil, the flame shrinks.",
-      "resolution": "Use chopsticks or tweezers to adjust the foil clip so the **exposed wick tip is under half a finger joint (0.8-1cm)**, which immediately restores a clean, smokeless flame. For high-heat outdoor boiling or shelter heating, pair this with the [Twin-Can Wood Gas Stove](/protocol-12.html) or [Clay Thermal Hearth](/protocol-06.html)."
+      "resolution": "Use chopsticks or tweezers to adjust the foil clip so the **exposed wick tip is under half a finger joint (0.8-1cm)**, which immediately restores a clean, smokeless flame. For high-heat outdoor boiling or shelter heating, pair this with the [Twin-Can Wood Gas Stove](/protocol-12) or [Clay Thermal Hearth](/protocol-06)."
     }
   ],
   "shortsScript": "[0-5s Hook] Power and city gas cut off in freezing winter? Build a 72-hour indoor heater with a tuna can and cooking oil! [5-35s Body] Once ready-made butane or candles run out, spread a 1cm layer of pebbles inside a clean tuna can to insulate the bottom. Twist 3 tight tissue wicks and stand them in the center with a folded foil bridge clip. Fill 4/5 with cooking oil, prime the wick tips, light them, and stand a foil reflector behind for smokeless warmth and hot water! [35-45s Warning & Outro] Never use gasoline or water—snuff flames with a plate! Save this offline survival manual now.",
@@ -240,7 +240,7 @@
       "FIELD VERIFIED // ZERO-SMOKE INDOOR HEAT & HOT WATER SYSTEM"
     ]
   },
-  "contentHash": "09e4c955a5075ef8",
+  "contentHash": "75c437ca60b0bfba",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T06:41:48.546Z"
+  "updatedAt": "2026-11-02T16:17:08+09:00"
 }

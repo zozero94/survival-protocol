@@ -4,7 +4,7 @@
   "title": "How to Purify Drinking Water During Blackouts & Water Outages Using Cotton Towel Capillary Siphon & Solar UV (SODIS)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[URBAN WATER OUTAGE & ZERO-FUEL CAPILLARY FILTRATION + SOLAR UV DISINFECTION]",
-  "summary": "If your household already has bottled water reserves, a commercial camping filter straw (such as a LifeStraw), chlorine dioxide water purification tablets, or a gravity hollow-fiber filter, always use those ready-made supplies first for the fastest and safest protection. However, when earthquakes, war, or grid-down water outages exhaust bottled water and tablets, and you are trapped in an urban apartment without charcoal, river sand, or fuel to boil water (if you are in the wilderness with wood ash and sand, use the [Wilderness Charcoal & Sand Filter](/protocol-01.html)), drinking raw rainwater or rusty pipe water causes severe diarrhea and fatal dehydration within 3 days. By recovering clean reserve water from your toilet ceramic cistern or rain catchment, filtering out silt and rust via a twisted 100% cotton towel capillary siphon bridge, and exposing clear PET bottles on a foil reflector to 6 hours of direct sunlight (WHO-approved SODIS method), you can secure sterile drinking water with zero fuel.",
+  "summary": "If your household already has bottled water reserves, a commercial camping filter straw (such as a LifeStraw), chlorine dioxide water purification tablets, or a gravity hollow-fiber filter, always use those ready-made supplies first for the fastest and safest protection. However, when earthquakes, war, or grid-down water outages exhaust bottled water and tablets, and you are trapped in an urban apartment without charcoal, river sand, or fuel to boil water (if you are in the wilderness with wood ash and sand, use the [Wilderness Charcoal & Sand Filter](/protocol-01)), drinking raw rainwater or rusty pipe water causes severe diarrhea and fatal dehydration within 3 days. By recovering clean reserve water from your toilet ceramic cistern or rain catchment, filtering out silt and rust via a twisted 100% cotton towel capillary siphon bridge, and exposing clear PET bottles on a foil reflector to 6 hours of direct sunlight (WHO-approved SODIS method), you can secure sterile drinking water with zero fuel.",
   "timeRequired": "2 hours filtration + 6 hours solar disinfection (hands-free capillary dripping & sunlight exposure)",
   "successRate": "99% (when siphoned through a 100% cotton towel and exposed in colorless clear PET bottles to 6 hours of direct sun)",
   "difficulty": "Beginner (Requires no fire, charcoal, or sand—uses only household cotton towels, two pots, and clear plastic bottles)",
@@ -18,12 +18,12 @@
     {
       "id": "mat-02",
       "name": "2–3 Label-Free Colorless Transparent PET Bottles (2L or Smaller Water/Soda Bottles)",
-      "desc": "UV-A transparent disinfection vessels used when water tablets or cooking fuel run out. Must be colorless clear recycling #1 (PET) bottles so solar UV-A rays penetrate completely; scrape off all paper labels and glue residue using a fingernail or [Primitive Stone Blade](/protocol-04.html)."
+      "desc": "UV-A transparent disinfection vessels used when water tablets or cooking fuel run out. Must be colorless clear recycling #1 (PET) bottles so solar UV-A rays penetrate completely; scrape off all paper labels and glue residue using a fingernail or [Primitive Stone Blade](/protocol-04)."
     },
     {
       "id": "mat-03",
       "name": "Kitchen Aluminum Foil (2 Hand-Spans) & 1 Corrugated Cardboard Sheet (Rice Paste or Pine Resin Glue)",
-      "desc": "A solar reflector cradle that bounces sunlight and infrared heat back through the underside of the bottles, doubling disinfection speed. Glue the shiny side of kitchen foil onto a cardboard panel using cooked rice paste or [Pine Resin Pitch Glue](/protocol-10.html)."
+      "desc": "A solar reflector cradle that bounces sunlight and infrared heat back through the underside of the bottles, doubling disinfection speed. Glue the shiny side of kitchen foil onto a cardboard panel using cooked rice paste or [Pine Resin Pitch Glue](/protocol-10)."
     }
   ],
   "steps": [
@@ -63,7 +63,7 @@
               },
               {
                 "label": "SALTWATER/NO",
-                "value": "Dissolved sea salt cannot be filtered by cloth; seawater must be boiled in a [Clay & Bamboo Seawater Distiller](/protocol-20.html)."
+                "value": "Dissolved sea salt cannot be filtered by cloth; seawater must be boiled in a [Clay & Bamboo Seawater Distiller](/protocol-20)."
               }
             ],
             "fieldUse": "Emergency indoor water harvesting during municipal water cutoffs and pre-filtration silt removal"
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Lay the Bottle Horizontally on a Foil Cardboard Reflector in Direct Sun for 6 Hours (or Boil 3 Minutes)",
-      "description": "1. **Build a Foil-Lined Cardboard Reflector**: Fold a flat corrugated cardboard sheet into a gentle V-trough and glue **kitchen aluminum foil (shiny side facing up)** across the inner surface to form a solar collector cradle.\n2. **Lay Bottles Horizontally in Direct South Sun**: Place the reflector in unshaded outdoor sunlight (an open balcony rail, roof, or yard tilted 30–45° toward the sun) and **lay the clear PET bottles horizontally on their sides**, never standing upright.\n3. **Expose for 6 Hours in Midday Sun**: Leave the bottles under **direct midday sunlight (9 AM to 3 PM) for at least 6 continuous hours** so UV-A rays and 50°C+ solar heat kill all microbes (if skies are more than 50% cloudy, expose for **2 consecutive days**; in heavy rain, collect fresh rainwater or boil).\n4. **Cool & Drink, or Boil 3 Minutes if Fuel Exists**: After 6 hours, let the **bath-warm bottle** cool in the shade before drinking; if you have a [Twin-Can Wood Gas Stove](/protocol-12.html) or [Tuna Can Cooking Oil Heater](/protocol-21.html), you can alternatively boil filtered water at a rolling boil for 3 minutes.",
+      "description": "1. **Build a Foil-Lined Cardboard Reflector**: Fold a flat corrugated cardboard sheet into a gentle V-trough and glue **kitchen aluminum foil (shiny side facing up)** across the inner surface to form a solar collector cradle.\n2. **Lay Bottles Horizontally in Direct South Sun**: Place the reflector in unshaded outdoor sunlight (an open balcony rail, roof, or yard tilted 30–45° toward the sun) and **lay the clear PET bottles horizontally on their sides**, never standing upright.\n3. **Expose for 6 Hours in Midday Sun**: Leave the bottles under **direct midday sunlight (9 AM to 3 PM) for at least 6 continuous hours** so UV-A rays and 50°C+ solar heat kill all microbes (if skies are more than 50% cloudy, expose for **2 consecutive days**; in heavy rain, collect fresh rainwater or boil).\n4. **Cool & Drink, or Boil 3 Minutes if Fuel Exists**: After 6 hours, let the **bath-warm bottle** cool in the shade before drinking; if you have a [Twin-Can Wood Gas Stove](/protocol-12) or [Tuna Can Cooking Oil Heater](/protocol-21), you can alternatively boil filtered water at a rolling boil for 3 minutes.",
       "actionNote": "> Why the PET bottle must be laid horizontally on foil rather than standing upright: Standing a bottle upright makes the water column too deep for UV rays to reach the bottom. Laying it flat keeps water depth under 10 cm (one palm width), while the foil bounces sunlight back through a second time.",
       "svgFileName": "pr23-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Never Use Green/Brown Colored Bottles or Sunlight Behind Closed Glass Windows, and Never Drink Water Contaminated with Chemical Cleaners or Fuel",
-    "description": "Colored plastic bottles (green lemon-lime soda or brown beer bottles) and heavily scratched opaque bottles block UV-A rays completely, leaving deadly bacteria alive even after hours in the sun. Likewise, placing bottles behind closed double-pane apartment windows blocks UV radiation—always open the window wide or place bottles outdoors in direct sunlight (on rainy days or at night, boil water using the [Twin-Can Wood Gas Stove](/protocol-12.html) or [Tuna Can Cooking Oil Heater](/protocol-21.html)). Finally, never use toilet tank water containing blue chemical cleaning pucks, antifreeze, oil, or pesticides, as neither cloth filtration nor sunlight removes chemical toxins.",
+    "description": "Colored plastic bottles (green lemon-lime soda or brown beer bottles) and heavily scratched opaque bottles block UV-A rays completely, leaving deadly bacteria alive even after hours in the sun. Likewise, placing bottles behind closed double-pane apartment windows blocks UV radiation—always open the window wide or place bottles outdoors in direct sunlight (on rainy days or at night, boil water using the [Twin-Can Wood Gas Stove](/protocol-12) or [Tuna Can Cooking Oil Heater](/protocol-21)). Finally, never use toilet tank water containing blue chemical cleaning pucks, antifreeze, oil, or pesticides, as neither cloth filtration nor sunlight removes chemical toxins.",
     "consequence": "Select only chemical-free raw water, filter until clear, seal inside colorless PET #1 bottles, and complete the full 6-hour direct solar exposure before drinking."
   },
   "faqs": [
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T02:26:54.183Z",
-  "contentHash": "621efe19c4a078a8"
+  "updatedAt": "2026-11-04T11:56:30+09:00",
+  "contentHash": "1e9b8d304fe76a93"
 }

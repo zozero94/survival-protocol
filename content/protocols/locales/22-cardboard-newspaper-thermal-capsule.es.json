@@ -4,7 +4,7 @@
   "title": "Cómo Hacer una Cápsula Térmica y Saco de Dormir Sin Electricidad (+7°C) con Cajas de Cartón, Periódico y Ropa Vieja",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFENSA CONTRA HIPOTERMIA EN APAGÓN INVERNAL & CÁPSULA TÉRMICA SIN ENERGÍA]",
-  "summary": "Si en casa ya dispone de equipamiento térmico listo para usar, como un saco de dormir de invierno, tienda térmica interior, manta térmica de emergencia, parches térmicos o bolsas de agua caliente, úselos siempre primero como la opción más rápida y cálida. Sin embargo, cuando un apagón invernal o corte de gas y calefacción se prolonga, los parches térmicos se agotan y no hay tienda térmica, dormir en el suelo frío de hormigón solo con mantas drena el 70% de su calor corporal hacia el piso y provoca hipotermia nocturna (en aislamiento forestal al aire libre, construya un [Refugio de Hojarasca Debris Hut](/protocol-03.html)). Apilando 3 capas de cajas de cartón en el suelo, colocando una capucha de cartón forrada con lámina metálica de cocina y rellenando una funda nórdica con bolas de periódico arrugado, sus propios 100W de calor corporal elevan la temperatura interior de 6 a 8°C sobre la habitación sin gastar combustible.",
+  "summary": "Si en casa ya dispone de equipamiento térmico listo para usar, como un saco de dormir de invierno, tienda térmica interior, manta térmica de emergencia, parches térmicos o bolsas de agua caliente, úselos siempre primero como la opción más rápida y cálida. Sin embargo, cuando un apagón invernal o corte de gas y calefacción se prolonga, los parches térmicos se agotan y no hay tienda térmica, dormir en el suelo frío de hormigón solo con mantas drena el 70% de su calor corporal hacia el piso y provoca hipotermia nocturna (en aislamiento forestal al aire libre, construya un [Refugio de Hojarasca Debris Hut](/protocol-03)). Apilando 3 capas de cajas de cartón en el suelo, colocando una capucha de cartón forrada con lámina metálica de cocina y rellenando una funda nórdica con bolas de periódico arrugado, sus propios 100W de calor corporal elevan la temperatura interior de 6 a 8°C sobre la habitación sin gastar combustible.",
   "timeRequired": "20 min (Colchoneta de 3 capas de cartón 5m + Capucha con lámina metálica 5m + Saco de periódico arrugado 5m + Cortina 5m)",
   "successRate": "99% (Al asegurar 1.5cm+ de cartón en 3 capas en el suelo y dejar una abertura inferior de ventilación del tamaño de un puño)",
   "difficulty": "Fácil (Se arma de inmediato sin cuchillos ni herramientas usando cajas de envío, periódico y ropa de cama)",
@@ -13,17 +13,17 @@
     {
       "id": "mat-01",
       "name": "5-6 Cajas de Cartón Corrugado de Envío (4 Cajas Anchas para el Suelo & 1-2 Cajas Grandes para Capucha Superior)",
-      "desc": "Las cajas de cartón corrugado son el mejor aislante térmico cuando no hay esterillas de espuma ni tiendas térmicas listas. Los canales ondulados de aire dentro del cartón bloquean el frío del suelo de cemento; ábralas por la unión pegada con la mano o con una [Hoja de Piedra Afilada](/protocol-04.html)."
+      "desc": "Las cajas de cartón corrugado son el mejor aislante térmico cuando no hay esterillas de espuma ni tiendas térmicas listas. Los canales ondulados de aire dentro del cartón bloquean el frío del suelo de cemento; ábralas por la unión pegada con la mano o con una [Hoja de Piedra Afilada](/protocol-04)."
     },
     {
       "id": "mat-02",
       "name": "20-30 Hojas de Papel Periódico (o Folletos/Papel de Envolver) & 1 Funda de Edredón o 2-3 Abrigos Gruesos",
-      "desc": "Relleno aislante que sustituye a los sacos de plumas o calentadores agotados. Arrugar hojas de periódico sin apretar demasiado en bolas del tamaño de un puño y meterlas dentro de una funda de edredón o entre abrigos (ate los bordes con [Cuerda de Kudzu Salvaje](/protocol-05.html) o cordones) atrapa aire caliente igual que el plumón."
+      "desc": "Relleno aislante que sustituye a los sacos de plumas o calentadores agotados. Arrugar hojas de periódico sin apretar demasiado en bolas del tamaño de un puño y meterlas dentro de una funda de edredón o entre abrigos (ate los bordes con [Cuerda de Kudzu Salvaje](/protocol-05) o cordones) atrapa aire caliente igual que el plumón."
     },
     {
       "id": "mat-03",
       "name": "Dos Palmos de Lámina Metálica de Cocina & 1 Manta Fina o Toalla Grande (Arroz Cocido o Resina para Pegar)",
-      "desc": "Reflector de calor radiante fijado en el techo interior de la caja en lugar de una manta espacial comercial. Pegar lámina metálica de cocina con el lado brillante hacia abajo usando pasta de arroz o harina ([Pegamento de Resina de Pino](/protocol-10.html) en el campo) devuelve el 90% del calor infrarrojo de su cuerpo."
+      "desc": "Reflector de calor radiante fijado en el techo interior de la caja en lugar de una manta espacial comercial. Pegar lámina metálica de cocina con el lado brillante hacia abajo usando pasta de arroz o harina ([Pegamento de Resina de Pino](/protocol-10) en el campo) devuelve el 90% del calor infrarrojo de su cuerpo."
     }
   ],
   "steps": [
@@ -195,7 +195,7 @@
               },
               {
                 "label": "APOYO/CALOR",
-                "value": "Meter en los pies una botella de agua tibia calentada en el [Calentador de Lata de Atún](/protocol-21.html) envuelta en toalla abriga incluso bajo cero."
+                "value": "Meter en los pies una botella de agua tibia calentada en el [Calentador de Lata de Atún](/protocol-21) envuelta en toalla abriga incluso bajo cero."
               }
             ],
             "fieldUse": "Tienda térmica interior sin electricidad para dormir durante apagones invernales y cortes de gas"
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Jamás Meta Velas, Calentadores de Lata ni Brasas Dentro de la Cápsula de Cartón, y Nunca Cubra su Cabeza ni Selle la Entrada con Bolsas Plásticas",
-    "description": "Introducir fuego abierto —como velas, hornillos de gas, el [Calentador de Lata de Atún y Aceite](/protocol-21.html) o brasas de un [Fogón de Barro](/protocol-06.html)— dentro de una cápsula estrecha de cartón y periódico seco prenderá fuego al papel al moverse dormido, causando un incendio mortal e intoxicación por monóxido de carbono (use cualquier calentador de llama siempre fuera de la caja en un lugar despejado solo para calentar agua). Tampoco selle la caja con cinta ni se cubra la cabeza con bolsas plásticas, pues causa asfixia fatal.",
+    "description": "Introducir fuego abierto —como velas, hornillos de gas, el [Calentador de Lata de Atún y Aceite](/protocol-21) o brasas de un [Fogón de Barro](/protocol-06)— dentro de una cápsula estrecha de cartón y periódico seco prenderá fuego al papel al moverse dormido, causando un incendio mortal e intoxicación por monóxido de carbono (use cualquier calentador de llama siempre fuera de la caja en un lugar despejado solo para calentar agua). Tampoco selle la caja con cinta ni se cubra la cabeza con bolsas plásticas, pues causa asfixia fatal.",
     "consequence": "Si desea añadir calor extra dentro de la cápsula, nunca meta fuego: llene una botella resistente bien cerrada con agua tibia (o envuelva una piedra templada en varias toallas) y colóquela en los pies."
   },
   "faqs": [
@@ -240,6 +240,7 @@
       "VERIFICADO // 0% COMBUSTIBLE DEFENSA HIPOTERMIA EN APAGÓN"
     ]
   },
-  "contentHash": "7102df871c650344",
-  "createdAt": "2026-11-03T01:00:00.000Z"
+  "contentHash": "fa7cb634f6645209",
+  "createdAt": "2026-11-03T01:00:00.000Z",
+  "updatedAt": "2026-11-03T10:37:53+09:00"
 }

@@ -4,7 +4,7 @@
   "title": "Primitive Knochennadel & Sehnenfaden zur Reparatur von Leder und Stiefeln",
   "threatLevel": "HIGH",
   "threatLevelText": "[WINTERLICHE WÄRMEVERLUSTABWEHR & ERFRIERUNGS- / HYPOTHERMIESCHUTZ]",
-  "summary": "In subpolarer Wildnis oder bei zusammengebrochener zivilisatorischer Versorgung führt ein Riss im Winterleder oder an den Stiefelsohlen binnen 2 Stunden zu tödlicher Unterkühlung oder schweren Erfrierungen. Wenn moderne Stahl Nadeln und Kunstfaserfäden fehlen, muss aus [erbeuteten Jagdtieren](/protocol-08.html) wie Hirsch oder Wildschwein ein Nähbesteck improvisiert werden: Das dichte Schienbeinkompakta wird mit einer [Steinaxt](/protocol-04.html) gespalten, auf nassem Quarzit geschliffen und mit einer Feuersteinahle beidseitig durchbohrt. Kombiniert mit faserig geklopften Tiersehnen entsteht hochfester Nähfaden, der beim Trocknen um 3–5% schrumpft, die Nahtlöcher hermetisch verpresst und nach Versiegelung mit [flüssigem Kiefernharz](/protocol-10.html) vollkommen wind- und wasserdicht schützt.",
+  "summary": "In subpolarer Wildnis oder bei zusammengebrochener zivilisatorischer Versorgung führt ein Riss im Winterleder oder an den Stiefelsohlen binnen 2 Stunden zu tödlicher Unterkühlung oder schweren Erfrierungen. Wenn moderne Stahl Nadeln und Kunstfaserfäden fehlen, muss aus [erbeuteten Jagdtieren](/protocol-08) wie Hirsch oder Wildschwein ein Nähbesteck improvisiert werden: Das dichte Schienbeinkompakta wird mit einer [Steinaxt](/protocol-04) gespalten, auf nassem Quarzit geschliffen und mit einer Feuersteinahle beidseitig durchbohrt. Kombiniert mit faserig geklopften Tiersehnen entsteht hochfester Nähfaden, der beim Trocknen um 3–5% schrumpft, die Nahtlöcher hermetisch verpresst und nach Versiegelung mit [flüssigem Kiefernharz](/protocol-10) vollkommen wind- und wasserdicht schützt.",
   "timeRequired": "60 Min (30m Knochenschliff + 15m Sehnenspaltung + 15m Ledernaht)",
   "successRate": "95% (bei Vorlochen mit Feuersteinahle und Speichelbefeuchtung der Sehnenfäden)",
   "difficulty": "Mittel (erfordert sorgfältiges Spalten der Kompakta und beidseitiges Bohren des Nadelöhrs)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "1–2 Schienbein-Knochensplitter großer Säugetiere (Hirsch, Reh, Wildschwein)",
-      "desc": "Gewonnen aus [Fallenjagd](/protocol-08.html) oder Resten der Talgverarbeitung für [Holzaschen-Seife](/protocol-13.html). Die zylindrische Röhrenknochen-Kompakta (Cortical Bone) besitzt eine Biegezugfestigkeit ähnlich wie Stahlnägel und bricht beim Durchstechen von Leder nicht ab."
+      "desc": "Gewonnen aus [Fallenjagd](/protocol-08) oder Resten der Talgverarbeitung für [Holzaschen-Seife](/protocol-13). Die zylindrische Röhrenknochen-Kompakta (Cortical Bone) besitzt eine Biegezugfestigkeit ähnlich wie Stahlnägel und bricht beim Durchstechen von Leder nicht ab."
     },
     {
       "id": "mat-02",
       "name": "Grobe Quarzit-Schleifplatte & scharfe Feuerstein-Bohrahle (Flint Awl)",
-      "desc": "Ein rauer Quarzit-Schleifstein aus der [Steinwerkzeug-Herstellung](/protocol-04.html) und eine spitz zulaufende Feuersteinahle, um ein 1,8 mm weites Nadelöhr beidseitig auszudrehen."
+      "desc": "Ein rauer Quarzit-Schleifstein aus der [Steinwerkzeug-Herstellung](/protocol-04) und eine spitz zulaufende Feuersteinahle, um ein 1,8 mm weites Nadelöhr beidseitig auszudrehen."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Hartholz-Klopfer & abdichtendes Kiefernpech",
-      "desc": "Ein handlicher Eichenholzknüppel zum Auffasern der Sehne und Eintreiben der Ahle, sowie [Kiefernharzsalbe](/protocol-10.html) zur dauerhaften Imprägnierung der Nahtfalten."
+      "desc": "Ein handlicher Eichenholzknüppel zum Auffasern der Sehne und Eintreiben der Ahle, sowie [Kiefernharzsalbe](/protocol-10) zur dauerhaften Imprägnierung der Nahtfalten."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Schritt 1: Schienbeinkompakta spalten und fingerlangen Nadelrohling auf nassem Quarzit schleifen",
-      "description": "1. **Kompakta auswählen und spalten**: Das Schienbein eines Hirsches mit einer [Steinaxt oder einem schweren Flusskiesel](/protocol-04.html) längs spalten, um einen Splitter von **Fingerlänge (ca. 7–8 cm) und 3–4 mm Stärke** zu gewinnen.\n2. **Grobschliff auf nassem Quarzit**: Den Knochensplitter im 45-Grad-Winkel auf der befeuchteten Quarzitplatte reiben, um raue Markreste abzutragen und einen gleichmäßigen zylindrischen Stab zu formen.\n3. **Nadeldorn zuschleifen**: Ein Ende im 30-Grad-Winkel unter ständiger Drehung schleifen, bis eine **dornenscharfe, penetrierende Spitze** entsteht.",
+      "description": "1. **Kompakta auswählen und spalten**: Das Schienbein eines Hirsches mit einer [Steinaxt oder einem schweren Flusskiesel](/protocol-04) längs spalten, um einen Splitter von **Fingerlänge (ca. 7–8 cm) und 3–4 mm Stärke** zu gewinnen.\n2. **Grobschliff auf nassem Quarzit**: Den Knochensplitter im 45-Grad-Winkel auf der befeuchteten Quarzitplatte reiben, um raue Markreste abzutragen und einen gleichmäßigen zylindrischen Stab zu formen.\n3. **Nadeldorn zuschleifen**: Ein Ende im 30-Grad-Winkel unter ständiger Drehung schleifen, bis eine **dornenscharfe, penetrierende Spitze** entsteht.",
       "actionNote": "> Splittergefahr: Beim Zertrümmern können feine Knochensplitter weggeschleudert werden; wenden Sie das Gesicht beim Schlagen um 45 Grad ab. Den Schleifstein stets feucht halten, um Reibungshitze und Versprödung des Knochens zu verhindern.",
       "svgFileName": "pr14-step-01.svg",
       "svgLabels": [
@@ -137,7 +137,7 @@
     {
       "stepNumber": "04",
       "title": "Schritt 4: Löcher im 5mm-Abstand vorstechen, im Sattlerstich vernähen und mit Kiefernharz abdichten",
-      "description": "1. **Lederkanten vorlochen**: Die zerrissenen Lederstücke **um Fingergliedbreite überlappen** und mit Feuersteinahle und Holzknüppel eine gerade Reihe von **Löchern im Abstand von 5 mm** vorlochen.\n2. **Sattlerstich (Zweiseitiges Kreuznähen)**: Beide Enden des Sehnenfadens mit Knochennadeln bestücken oder eine Nadel abwechselnd von vorn und hinten durch dieselben Löcher kreuzen und jede Schlinge stramm anziehen.\n3. **Schrumpfung und Pechversiegelung**: Sobald der Sehnenfaden getrocknet und gespannt ist, erwärmte [Kiefernharzsalbe](/protocol-10.html) auf die Nahtlinie streichen, um das Leder **vollkommen sturm- und schneewasserdicht** zu versiegeln.",
+      "description": "1. **Lederkanten vorlochen**: Die zerrissenen Lederstücke **um Fingergliedbreite überlappen** und mit Feuersteinahle und Holzknüppel eine gerade Reihe von **Löchern im Abstand von 5 mm** vorlochen.\n2. **Sattlerstich (Zweiseitiges Kreuznähen)**: Beide Enden des Sehnenfadens mit Knochennadeln bestücken oder eine Nadel abwechselnd von vorn und hinten durch dieselben Löcher kreuzen und jede Schlinge stramm anziehen.\n3. **Schrumpfung und Pechversiegelung**: Sobald der Sehnenfaden getrocknet und gespannt ist, erwärmte [Kiefernharzsalbe](/protocol-10) auf die Nahtlinie streichen, um das Leder **vollkommen sturm- und schneewasserdicht** zu versiegeln.",
       "actionNote": "> Vorlochen strikt einhalten: Knochennadeln sind extrem druckfest, brechen jedoch bei seitlicher Scherbelastung in dickem Leder. Stechen Sie Löcher stets mit der Feuersteinahle vor und nutzen Sie die Knochennadel nur als Fadenführer.",
       "svgFileName": "pr14-step-04.svg",
       "svgLabels": [
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:22:40+09:00",
-  "contentHash": "b182acb92e757c63"
+  "updatedAt": "2026-10-22T17:35:09+09:00",
+  "contentHash": "911b5ab190a2616e"
 }

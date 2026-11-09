@@ -4,7 +4,7 @@
   "title": "Fabricación de Jabón Desinfectante Natural con Lejía de Ceniza de Roble y Grasa para Prevenir Infecciones",
   "threatLevel": "HIGH",
   "threatLevelText": "[HIGIENE DE CAMPO & DESINFECCIÓN DE HERIDAS & PREVENCIÓN DE SEPSIS]",
-  "summary": "En escenarios de supervivencia agreste o colapso de infraestructuras sin agua corriente ni medicinas, un simple raspón o comer con manos contaminadas puede provocar disentería mortal, tétanos o sepsis sistémica fulminante. Al recolectar ceniza blanca pura de roble de una hoguera o de la [estufa de gasificación de leña de doble lata](/protocol-12.html), compactarla en una lata filtrante con lecho de grava y hierba seca, y verter agua caliente, se extrae lejía alcalina de carbonato de potasio. Al hervir suavemente esta lejía en proporción 1:1 con sebo animal clarificado o aceite vegetal rescatado mientras se bate continuamente con una espátula de madera, se desencadena la saponificación, produciendo un potente jabón antiséptico que destruye las membranas de los patógenos.",
+  "summary": "En escenarios de supervivencia agreste o colapso de infraestructuras sin agua corriente ni medicinas, un simple raspón o comer con manos contaminadas puede provocar disentería mortal, tétanos o sepsis sistémica fulminante. Al recolectar ceniza blanca pura de roble de una hoguera o de la [estufa de gasificación de leña de doble lata](/protocol-12), compactarla en una lata filtrante con lecho de grava y hierba seca, y verter agua caliente, se extrae lejía alcalina de carbonato de potasio. Al hervir suavemente esta lejía en proporción 1:1 con sebo animal clarificado o aceite vegetal rescatado mientras se bate continuamente con una espátula de madera, se desencadena la saponificación, produciendo un potente jabón antiséptico que destruye las membranas de los patógenos.",
   "timeRequired": "70 minutos (20 min lixiviación de ceniza + 45 min ebullición de saponificación + 5 min vertido)",
   "successRate": "95% (al verificar densidad con flotación de patata y mantener batido unidireccional)",
   "difficulty": "Media (precaución extrema contra quemaduras cáusticas por lejía alcalina en piel y ojos)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "Un cubo de ceniza blanca pura de madera dura (roble) completamente calcinada",
-      "desc": "Ceniza pulverulenta y sedosa como harina, recolectada de un [horno de carbón de roble](/protocol-09.html) o fogón, tras cribar y retirar todos los trozos negros de carbón. El roble ofrece la máxima concentración de sales de potasio para una lejía concentrada."
+      "desc": "Ceniza pulverulenta y sedosa como harina, recolectada de un [horno de carbón de roble](/protocol-09) o fogón, tras cribar y retirar todos los trozos negros de carbón. El roble ofrece la máxima concentración de sales de potasio para una lejía concentrada."
     },
     {
       "id": "mat-02",
       "name": "Lata metálica perforada con lecho filtrante de grava y hierba seca",
-      "desc": "Basada en los principios mecánicos del [filtro de agua natural](/protocol-01.html). Una lata de conserva grande con agujeros de clavo en la base, almohadillada con guijarros y hierba seca compacta para retener la ceniza mientras drena lejía dorada limpia. Quemar previamente los recubrimientos sintéticos."
+      "desc": "Basada en los principios mecánicos del [filtro de agua natural](/protocol-01). Una lata de conserva grande con agujeros de clavo en la base, almohadillada con guijarros y hierba seca compacta para retener la ceniza mientras drena lejía dorada limpia. Quemar previamente los recubrimientos sintéticos."
     },
     {
       "id": "mat-03",
@@ -33,14 +33,14 @@
     {
       "id": "mat-05",
       "name": "1 cucharada de resina de pino molida y 1 cucharadita de sal común",
-      "desc": "Cristales transparentes de resina de pino obtenidos como en el [ungüento de brea de pino](/protocol-10.html), triturados en polvo para aportar fitoncidas antibacterianos, junto a una pizca de sal para endurecer las pastillas y facilitar el desmoldeo."
+      "desc": "Cristales transparentes de resina de pino obtenidos como en el [ungüento de brea de pino](/protocol-10), triturados en polvo para aportar fitoncidas antibacterianos, junto a una pizca de sal para endurecer las pastillas y facilitar el desmoldeo."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Paso 1: Compactar ceniza blanca de roble en la lata filtrante y lixiviar lejía alcalina dorada con agua caliente",
-      "description": "1. **Cribado de ceniza blanca pura**: Retire cualquier trozo de carbón negro y recolecte un cubo de **ceniza de roble blanca y fina**, sacudiendo restos gruesos de corteza o tierra.\n2. **Estratificación del filtro de grava y hierba**: En una lata grande de hojalata con orificios perforados en el fondo, coloque guijarros limpios del grosor de un pulgar y comprima encima hierba seca hasta un espesor de **dos nudillos (aprox. 3 cm)** para evitar fugas de ceniza.\n3. **Carga de ceniza e infusión caliente**: Rellene con la ceniza blanca comprimiendo firmemente hasta **un palmo de altura (80% del volumen)**, y vierta lentamente [agua hervida muy caliente](/protocol-01.html) hasta saturar todo el lecho.\n4. **Recolección de lejía ambarina**: Coloque un cuenco limpio debajo para recoger gota a gota la lejía densa, resbaladiza y de color ámbar dorado (solución de carbonato de potasio).",
+      "description": "1. **Cribado de ceniza blanca pura**: Retire cualquier trozo de carbón negro y recolecte un cubo de **ceniza de roble blanca y fina**, sacudiendo restos gruesos de corteza o tierra.\n2. **Estratificación del filtro de grava y hierba**: En una lata grande de hojalata con orificios perforados en el fondo, coloque guijarros limpios del grosor de un pulgar y comprima encima hierba seca hasta un espesor de **dos nudillos (aprox. 3 cm)** para evitar fugas de ceniza.\n3. **Carga de ceniza e infusión caliente**: Rellene con la ceniza blanca comprimiendo firmemente hasta **un palmo de altura (80% del volumen)**, y vierta lentamente [agua hervida muy caliente](/protocol-01) hasta saturar todo el lecho.\n4. **Recolección de lejía ambarina**: Coloque un cuenco limpio debajo para recoger gota a gota la lejía densa, resbaladiza y de color ámbar dorado (solución de carbonato de potasio).",
       "actionNote": "> Peligro de quemadura cáustica: La lejía concentrada es altamente alcalina y disuelve la queratina y las proteínas de la piel viva. Utilice siempre espátulas de madera y enjuague de inmediato con agua fría corriente durante 5 minutos si salpica la piel o los ojos. Confirme los rasgos botánicos en la guía inferior.",
       "svgFileName": "pr13-step-01.svg",
       "svgLabels": [
@@ -107,7 +107,7 @@
     {
       "stepNumber": "02",
       "title": "Paso 2: Calibrar la concentración de lejía mediante flotación de patata y clarificar la grasa o aceite residual",
-      "description": "1. **Prueba hidrométrica con patata cruda**: En el recipiente con la lejía extraída, deposite con delicadeza un **trozo de patata cruda del tamaño de una uña (2 cm de diámetro)** o un huevo fresco.\n2. **Evaluación de la altura de flotación**: Si la patata se hunde hasta el fondo, la lejía está demasiado diluida; llévela al fuego y **hiérvala a fuego moderado hasta reducir su volumen a la mitad**. Si la patata flota asomando **el tamaño de una uña sobre la superficie**, la concentración es perfecta para fabricar jabón.\n3. **Clarificación térmica de la grasa animal**: Pique en dados pequeños los restos de grasa de caza o sebo, colóquelos en una olla sobre la llama suave del [estufa de leña de gasificación](/protocol-12.html) y fúndalos lentamente para liberar el aceite líquido claro.\n4. **Filtrado de impurezas**: Filtre la grasa fundida a través de un paño limpio o fibra vegetal para retirar todos los restos de carne y agua, reuniendo **2 tazas exactas de grasa clarificada y limpia**.",
+      "description": "1. **Prueba hidrométrica con patata cruda**: En el recipiente con la lejía extraída, deposite con delicadeza un **trozo de patata cruda del tamaño de una uña (2 cm de diámetro)** o un huevo fresco.\n2. **Evaluación de la altura de flotación**: Si la patata se hunde hasta el fondo, la lejía está demasiado diluida; llévela al fuego y **hiérvala a fuego moderado hasta reducir su volumen a la mitad**. Si la patata flota asomando **el tamaño de una uña sobre la superficie**, la concentración es perfecta para fabricar jabón.\n3. **Clarificación térmica de la grasa animal**: Pique en dados pequeños los restos de grasa de caza o sebo, colóquelos en una olla sobre la llama suave del [estufa de leña de gasificación](/protocol-12) y fúndalos lentamente para liberar el aceite líquido claro.\n4. **Filtrado de impurezas**: Filtre la grasa fundida a través de un paño limpio o fibra vegetal para retirar todos los restos de carne y agua, reuniendo **2 tazas exactas de grasa clarificada y limpia**.",
       "actionNote": "> Calibración de flotabilidad: Si la patata flota sobresaliendo más de la mitad, la lejía es excesivamente cáustica y el jabón quemará la piel. Añada media taza de agua limpia para diluir hasta que solo asome una pequeña corona en la superficie.",
       "svgFileName": "pr13-step-02.svg",
       "svgLabels": [
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "84750b222b4c5546",
-  "updatedAt": "2026-10-21T05:32:17.564Z"
+  "contentHash": "6c6c26a55586fcca",
+  "updatedAt": "2026-10-28T17:33:13+09:00"
 }

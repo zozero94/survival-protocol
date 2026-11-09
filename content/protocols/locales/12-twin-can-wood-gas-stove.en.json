@@ -18,7 +18,7 @@
     {
       "id": "mat-02",
       "name": "50cm Salvaged Electrical Wire (Insulation Stripped)",
-      "desc": "Use a [sharp stone flake blade](/protocol-04.html) to strip the outer jacket from scrap cable, extracting the bare copper or steel core wire (1.5–3mm thick) for heat-proof binding and a pot stand."
+      "desc": "Use a [sharp stone flake blade](/protocol-04) to strip the outer jacket from scrap cable, extracting the bare copper or steel core wire (1.5–3mm thick) for heat-proof binding and a pot stand."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Two Handfuls of Thumb-Length Dry Twigs & Pine Resin Tinder",
-      "desc": "Bone-dry hardwood twigs snapped to thumb length for vertical packing, plus [pine resin chunks](/protocol-10.html) and dry bark for top-down ignition."
+      "desc": "Bone-dry hardwood twigs snapped to thumb length for vertical packing, plus [pine resin chunks](/protocol-10) and dry bark for top-down ignition."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Step 1: Select Rigid Steel Cans, Strip Scrap Wire & Pre-Burn Inner Epoxy Coatings",
-      "description": "1. **Select Corrugated Steel Cans**: Choose two rigid steel food cans with horizontal reinforcement ribs that do not flex when squeezed. When the small can is held inside the large can, a **finger-width (1.5–2cm)** gap must remain all around.\n2. **Strip Scrap Electrical Wire**: Slice along the outer insulation of salvaged electrical wire using a [sharp stone flake blade](/protocol-04.html) and pull out **50cm of bare copper or steel core wire**.\n3. **Pre-Burn Inner Epoxy Liner**: Before punching holes, stuff dry leaves and twigs inside both empty cans and **burn them outdoors for 5 minutes** to incinerate the interior BPA epoxy coating and outer paint.\n4. **Verify Matte Grey Surface**: Once acrid smoke stops and the inner steel turns **matte dark grey**, let both cans cool completely in the shade.",
+      "description": "1. **Select Corrugated Steel Cans**: Choose two rigid steel food cans with horizontal reinforcement ribs that do not flex when squeezed. When the small can is held inside the large can, a **finger-width (1.5–2cm)** gap must remain all around.\n2. **Strip Scrap Electrical Wire**: Slice along the outer insulation of salvaged electrical wire using a [sharp stone flake blade](/protocol-04) and pull out **50cm of bare copper or steel core wire**.\n3. **Pre-Burn Inner Epoxy Liner**: Before punching holes, stuff dry leaves and twigs inside both empty cans and **burn them outdoors for 5 minutes** to incinerate the interior BPA epoxy coating and outer paint.\n4. **Verify Matte Grey Surface**: Once acrid smoke stops and the inner steel turns **matte dark grey**, let both cans cool completely in the shade.",
       "actionNote": "> Coating & Metal Check: Skipping the 5-minute pre-burn contaminates your boiling water with toxic fumes. Thin soda cans melt like paper in high heat—use the field identification photos below to select ribbed steel cans and stripped metal wire.",
       "svgFileName": "pr12-step-01.svg",
       "svgLabels": [
@@ -140,7 +140,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Pack Dry Twigs Vertically, Ignite from the Top Down & Boil Water Smokelessly",
-      "description": "1. **Pack Dry Twigs Vertically**: Snap finger-thick dry hardwood twigs to thumb length and pack them **standing vertically** inside the inner can up to just **below the upper nozzle holes**.\n2. **Top-Down Ignition**: Place dry bark curls and [pine resin tinder](/protocol-10.html) on **top of the vertical twigs** and light from above using an ember from a [Bow Drill Fire](/protocol-02.html).\n3. **Verify Secondary Wood-Gas Jets**: After 2–3 minutes, as the inner wall heats up, watch **bright golden-blue flame jets** shoot inward from the upper 10–12mm holes while visible smoke disappears.\n4. **Boil Water & Harvest Biochar**: Set your pot of [filtered water](/protocol-01.html) on the wire trivet to reach a rolling boil in 7–8 minutes, then smother the remaining red coals with dirt to save [clean charcoal](/protocol-09.html).",
+      "description": "1. **Pack Dry Twigs Vertically**: Snap finger-thick dry hardwood twigs to thumb length and pack them **standing vertically** inside the inner can up to just **below the upper nozzle holes**.\n2. **Top-Down Ignition**: Place dry bark curls and [pine resin tinder](/protocol-10) on **top of the vertical twigs** and light from above using an ember from a [Bow Drill Fire](/protocol-02).\n3. **Verify Secondary Wood-Gas Jets**: After 2–3 minutes, as the inner wall heats up, watch **bright golden-blue flame jets** shoot inward from the upper 10–12mm holes while visible smoke disappears.\n4. **Boil Water & Harvest Biochar**: Set your pot of [filtered water](/protocol-01) on the wire trivet to reach a rolling boil in 7–8 minutes, then smother the remaining red coals with dirt to save [clean charcoal](/protocol-09).",
       "actionNote": "> Why Light from the Top? Lighting from the bottom sends all twigs into smoke at once. Lighting from the top makes the ember zone burn slowly downward like a candle, forcing rising wood smoke right through the upper flame jets.",
       "svgFileName": "pr12-step-04.svg",
       "svgLabels": [
@@ -173,6 +173,6 @@
     "description": "Built from two salvaged steel cans and stripped scrap wire, featuring a 1.5–2cm double-wall air preheat channel, lower cold-air intakes, upper secondary oxygen nozzles, a cross-wire pot trivet, and smokeless 850°C wood-gas combustion."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "47468e0c9ce45c53",
-  "updatedAt": "2026-10-17T19:16:11+09:00"
+  "contentHash": "61644332f814ecf5",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

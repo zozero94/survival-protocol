@@ -4,7 +4,7 @@
   "title": "Cómo Destilar Agua de Mar y Lodo en Agua Potable Pura con Olla de Barro y Tubo de Bambú",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFENSA CONTRA DESHIDRATACIÓN] Agua Dulce 100% Sin Sal en Costas y Zonas Aisladas",
-  "summary": "Cuando quedas aislado en una costa, isla o junto a charcos salobres donde solo hay agua de mar o agua contaminada, un [Filtro Natural de Carbón y Arena](/protocol-01.html) solo retiene tierra y olores, pero no puede eliminar la sal disuelta (3.5% de salinidad). Beber agua de mar extrae el líquido de tus células y causa deshidratación mortal en dos días. Hirviendo el agua salada en una [Olla de Barro](/protocol-16.html) sobre un [Fogón de Arcilla](/protocol-06.html), conectando un tubo de bambú sin nudos a la tapa sellada y envolviéndolo con [Musgo Esfagno y Arpillera](/protocol-18.html) mojados en agua fría, la sal pesada queda en el fondo como cristales blancos mientras el vapor puro se condensa en 2 a 3 litros diarios de agua dulce y sal marina natural.",
+  "summary": "Cuando quedas aislado en una costa, isla o junto a charcos salobres donde solo hay agua de mar o agua contaminada, un [Filtro Natural de Carbón y Arena](/protocol-01) solo retiene tierra y olores, pero no puede eliminar la sal disuelta (3.5% de salinidad). Beber agua de mar extrae el líquido de tus células y causa deshidratación mortal en dos días. Hirviendo el agua salada en una [Olla de Barro](/protocol-16) sobre un [Fogón de Arcilla](/protocol-06), conectando un tubo de bambú sin nudos a la tapa sellada y envolviéndolo con [Musgo Esfagno y Arpillera](/protocol-18) mojados en agua fría, la sal pesada queda en el fondo como cristales blancos mientras el vapor puro se condensa en 2 a 3 litros diarios de agua dulce y sal marina natural.",
   "timeRequired": "2 Horas (Perforar bambú y sellar con arcilla-resina 40m + Envoltura de musgo 20m + Destilación 1h)",
   "successRate": "99% (Manteniendo el sellado hermético de arcilla y enfriando el musgo con agua de mar fría)",
   "difficulty": "Media (Realizable con olla de barro, bambú y musgo sin mangueras ni lonas modernas)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Olla de Barro Cocido con Tapa para Hervir y Cuenco Limpio Receptor",
-      "desc": "Una olla de barro sin esmaltar resistente al fuego (o cuenco de piedra ahuecado) como en el [Refrigerador de Doble Vasija](/protocol-16.html) con su tapa, más un recipiente limpio para recoger las gotas de agua dulce."
+      "desc": "Una olla de barro sin esmaltar resistente al fuego (o cuenco de piedra ahuecado) como en el [Refrigerador de Doble Vasija](/protocol-16) con su tapa, más un recipiente limpio para recoger las gotas de agua dulce."
     },
     {
       "id": "mat-02",
@@ -23,19 +23,19 @@
     {
       "id": "mat-03",
       "name": "Musgo Esfagno Empapado en Agua Fría, Tela de Arpillera y Cuerda de Kudzu",
-      "desc": "Musgo absorbente y arpillera del [Acolchado para Férula](/protocol-18.html) envueltos gruesamente en la mitad del tubo de bambú y atados con [Cuerda de Kudzu](/protocol-05.html), enfriados vertiendo agua de mar fresca encima."
+      "desc": "Musgo absorbente y arpillera del [Acolchado para Férula](/protocol-18) envueltos gruesamente en la mitad del tubo de bambú y atados con [Cuerda de Kudzu](/protocol-05), enfriados vertiendo agua de mar fresca encima."
     },
     {
       "id": "mat-04",
       "name": "Dos Puñados de Barro Húmedo, Resina de Pino y Horquilla de Madera en Y",
-      "desc": "Pasta de arcilla y [Pegamento de Resina de Pino](/protocol-10.html) para sellar sin fugas la tapa y la unión del bambú, junto con una rama en forma de Y para sostener el tubo inclinado hacia abajo."
+      "desc": "Pasta de arcilla y [Pegamento de Resina de Pino](/protocol-10) para sellar sin fugas la tapa y la unión del bambú, junto con una rama en forma de Y para sostener el tubo inclinado hacia abajo."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Paso 1: Perforar los Nudos del Bambú con Vara Candente y Sellar la Unión en la Tapa con Resina y Barro",
-      "description": "1. **Quemar y Perforar los Nudos Internos del Bambú**: Elige una caña recta de bambú de **cinco palmos (1m) y grosor de muñeca (4–5cm)**, e introduce una vara de madera con la punta al rojo vivo para **perforar todos los tabiques internos entre humo** hasta ver de extremo a extremo.\n2. **Encajar el Bambú en el Orificio de la Tapa**: Con un [Cuchillo de Piedra Afilado](/protocol-04.html) abre un agujero ajustado en el centro de la tapa de barro e inserta el extremo del bambú **dos falanges de profundidad (4cm)**.\n3. **Sellar Doblemente la Unión con Resina y Arcilla**: Cubre la junta con [Resina de Pino](/protocol-10.html) tibia y aplica encima **pasta de barro del grosor de un dedo (1.5cm)** para impedir cualquier fuga de vapor.",
+      "description": "1. **Quemar y Perforar los Nudos Internos del Bambú**: Elige una caña recta de bambú de **cinco palmos (1m) y grosor de muñeca (4–5cm)**, e introduce una vara de madera con la punta al rojo vivo para **perforar todos los tabiques internos entre humo** hasta ver de extremo a extremo.\n2. **Encajar el Bambú en el Orificio de la Tapa**: Con un [Cuchillo de Piedra Afilado](/protocol-04) abre un agujero ajustado en el centro de la tapa de barro e inserta el extremo del bambú **dos falanges de profundidad (4cm)**.\n3. **Sellar Doblemente la Unión con Resina y Arcilla**: Cubre la junta con [Resina de Pino](/protocol-10) tibia y aplica encima **pasta de barro del grosor de un dedo (1.5cm)** para impedir cualquier fuga de vapor.",
       "actionNote": "> Atar el Exterior del Bambú con Cuerda Húmeda Antes de Perforar: Empujar con demasiada fuerza dentro de bambú seco puede rajarlo. Ata fibras vegetales húmedas alrededor del exterior y gira la vara candente suavemente.",
       "svgFileName": "pr20-step-01.svg",
       "svgLabels": [
@@ -68,7 +68,7 @@
               },
               {
                 "label": "SELLO/COLLAR",
-                "value": "Doble sello de [Resina de Pino](/protocol-10.html) y **barro de 1.5cm** contra fugas."
+                "value": "Doble sello de [Resina de Pino](/protocol-10) y **barro de 1.5cm** contra fugas."
               }
             ],
             "fieldUse": "Conduce el 100% del vapor puro hacia la sección de enfriamiento sin pérdidas"
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Paso 2: Llenar la Olla 2/3 con Agua de Mar sobre el Fogón e Inclinar el Bambú 30 Grados Hacia Abajo",
-      "description": "1. **Llenar la Olla Solo a 2/3 de su Altura**: Vierte agua de mar en la olla sobre el [Fogón de Arcilla](/protocol-06.html) hasta **dos tercios de su capacidad (dejando un palmo libre arriba)** para que la espuma salada nunca suba al tubo.\n2. **Sellar el Borde de la Tapa con Barro y Encender Fuego**: Rodea la boca de la olla con barro húmedo, presiona la tapa y enciende el fogón mediante [Fuego por Fricción](/protocol-02.html).\n3. **Inclinar el Tubo 30 Grados con una Horquilla en Y**: Clava una **rama en forma de Y** a tres palmos del fogón para que la punta del bambú quede **dos palmos (40cm) más baja en ángulo de 30 grados**.",
+      "description": "1. **Llenar la Olla Solo a 2/3 de su Altura**: Vierte agua de mar en la olla sobre el [Fogón de Arcilla](/protocol-06) hasta **dos tercios de su capacidad (dejando un palmo libre arriba)** para que la espuma salada nunca suba al tubo.\n2. **Sellar el Borde de la Tapa con Barro y Encender Fuego**: Rodea la boca de la olla con barro húmedo, presiona la tapa y enciende el fogón mediante [Fuego por Fricción](/protocol-02).\n3. **Inclinar el Tubo 30 Grados con una Horquilla en Y**: Clava una **rama en forma de Y** a tres palmos del fogón para que la punta del bambú quede **dos palmos (40cm) más baja en ángulo de 30 grados**.",
       "actionNote": "> Colocar 3–4 Guijarros Limpios en el Fondo de la Olla: El agua de mar hierve con espuma fuerte. Poner 3–4 piedras lavadas en el fondo suaviza el hervor y evita salpicaduras de sal hacia el tubo.",
       "svgFileName": "pr20-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Paso 3: Envolver el Centro del Tubo con Musgo Húmedo y Arpillera para Condensar el Vapor en Agua Fría",
-      "description": "1. **Envolver 60cm del Centro con Musgo y Arpillera Mojados**: Envuelve **tres palmos (60cm) centrales** del bambú con [Musgo Esfagno y Arpillera](/protocol-18.html) empapados en agua fría del **grosor de un puño** y ata con [Cuerda de Kudzu](/protocol-05.html).\n2. **Verter Agua de Mar Fría sobre el Musgo Cada 10 Minutos**: Echa agua de mar fría sobre el **musgo exterior cada 10 minutos** para que el tubo se sienta siempre fresco al tacto.\n3. **Atar un Anillo Cortagotas Antes de la Punta**: Ata un anillo de cuerda de kudzu con cabo colgante antes de la punta y pon una corteza debajo del musgo para que **el agua salada de enfriamiento caiga al suelo** lejos del cuenco de agua dulce.",
+      "description": "1. **Envolver 60cm del Centro con Musgo y Arpillera Mojados**: Envuelve **tres palmos (60cm) centrales** del bambú con [Musgo Esfagno y Arpillera](/protocol-18) empapados en agua fría del **grosor de un puño** y ata con [Cuerda de Kudzu](/protocol-05).\n2. **Verter Agua de Mar Fría sobre el Musgo Cada 10 Minutos**: Echa agua de mar fría sobre el **musgo exterior cada 10 minutos** para que el tubo se sienta siempre fresco al tacto.\n3. **Atar un Anillo Cortagotas Antes de la Punta**: Ata un anillo de cuerda de kudzu con cabo colgante antes de la punta y pon una corteza debajo del musgo para que **el agua salada de enfriamiento caiga al suelo** lejos del cuenco de agua dulce.",
       "actionNote": "> Aislar el Agua Salada de Enfriamiento del Cuenco Colector: Nunca dejes que el agua salada exterior escurra por el tubo hasta el cuenco. El anillo cortagotas desvía toda el agua salada exterior directo al suelo.",
       "svgFileName": "pr20-step-03.svg",
       "svgLabels": [
@@ -168,7 +168,7 @@
       "stepNumber": "04",
       "title": "Paso 4: Desechar la Primera Media Taza, Recoger Agua Dulce Pura y Raspar la Sal Blanca del Fondo",
       "description": "1. **Desechar la Primera Media Taza (50ml)**: La primera media taza que gotea tras 10 minutos arrastra polvo de bambú y olores volátiles; **no la bebas y viértela sobre el musgo**.\n2. **Comprobar Cero Salinidad con la Punta de la Lengua**: Toca una gota con la lengua para **verificar que sea agua dulce 100% libre de sal** y recoge más de 500ml por hora en el cuenco limpio.\n3. **Apagar el Fuego a Tiempo y Raspar la Sal Marina del Fondo**: Cuando quede **una falange de agua** en el fondo, apaga el fuego, deja que el calor residual seque el fondo y **raspa los cristales blancos de sal marina natural** con una espátula de madera.",
-      "actionNote": "> Guardar la Sal Marina para Conservar Carne y Prevenir Calambres: La sal blanca que queda en la olla es un tesoro. Guárdala en hojas secas para curar [Carne y Pescado Ahumado](/protocol-19.html) o reponer electrolitos.",
+      "actionNote": "> Guardar la Sal Marina para Conservar Carne y Prevenir Calambres: La sal blanca que queda en la olla es un tesoro. Guárdala en hojas secas para curar [Carne y Pescado Ahumado](/protocol-19) o reponer electrolitos.",
       "svgFileName": "pr20-step-04.svg",
       "svgLabels": [
         "FIG. 04 // FIRST-RUN DISCARD, PURE FRESHWATER COLLECTION & SALT HARVEST",
@@ -200,7 +200,7 @@
               },
               {
                 "label": "COSECHA/SAL",
-                "value": "Recupera **cristales blancos de sal marina** para [conservar carne](/protocol-19.html)."
+                "value": "Recupera **cristales blancos de sal marina** para [conservar carne](/protocol-19)."
               }
             ],
             "fieldUse": "Proporciona agua potable pura y sal natural de conservación a partir del mar"
@@ -237,15 +237,15 @@
     {
       "question": "El agua hierve fuerte en la olla, pero por la punta del bambú solo sale humo blanco en vez de gotas de agua.",
       "causeDiagnostic": "El musgo alrededor del tubo de bambú se secó y calentó, o el fuego del fogón es demasiado intenso para que el vapor se enfríe a tiempo.",
-      "resolution": "Moja de inmediato el [Musgo Esfagno y Arpillera](/protocol-18.html) con abundante agua de mar fría hasta que el tubo se sienta fresco al tacto, y retira un leño del [Fogón de Arcilla](/protocol-06.html) para mantener un hervor suave. Al enfriarse el tubo, el vapor se convertirá en gotas continuas."
+      "resolution": "Moja de inmediato el [Musgo Esfagno y Arpillera](/protocol-18) con abundante agua de mar fría hasta que el tubo se sienta fresco al tacto, y retira un leño del [Fogón de Arcilla](/protocol-06) para mantener un hervor suave. Al enfriarse el tubo, el vapor se convertirá en gotas continuas."
     },
     {
       "question": "¿Por qué el agua recogida en mi cuenco todavía sabe un poco salada?",
       "causeDiagnostic": "Llenaste demasiado la olla y la espuma salada subió al tubo, o el agua salada vertida sobre el musgo escurrió por fuera del bambú hasta caer en el cuenco.",
-      "resolution": "Reduce el nivel de agua de mar en la olla a menos de dos tercios y coloca 3–4 guijarros limpios en el fondo. Además, ata un anillo cortagotas con [Cuerda de Kudzu](/protocol-05.html) entre el musgo y la punta para que el agua salada exterior caiga al suelo antes del cuenco."
+      "resolution": "Reduce el nivel de agua de mar en la olla a menos de dos tercios y coloca 3–4 guijarros limpios en el fondo. Además, ata un anillo cortagotas con [Cuerda de Kudzu](/protocol-05) entre el musgo y la punta para que el agua salada exterior caiga al suelo antes del cuenco."
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T10:59:47+09:00",
-  "contentHash": "e30d31f76b87086a"
+  "updatedAt": "2026-11-02T11:24:26+09:00",
+  "contentHash": "3662cb12c2284d2c"
 }

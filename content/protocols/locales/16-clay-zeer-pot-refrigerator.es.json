@@ -4,7 +4,7 @@
   "title": "Refrigerador Natural Sin Electricidad con Vasijas de Arcilla y Arena Húmeda (Zeer Pot de Campo)",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA PUTREFACCIÓN DE CARNE Y CONSERVACIÓN FRÍA SIN ELECTRICIDAD]",
-  "summary": "En el calor del verano o en una zona de desastre sin red eléctrica, la carne y el pescado obtenidos mediante [trampas y caza](/protocol-08.html) o [nasas primitivas para peces](/protocol-11.html) crían larvas de mosca y bacterias putrefactas en medio día a temperatura ambiente, causando intoxicación alimentaria mortal y enteritis. En el campo sin electricidad ni hielo, debes construir de inmediato un refrigerador evaporativo 'Zeer Pot de Campo' anidando dos 'vasijas de arcilla porosa sin esmaltar' de distinto tamaño cocidas bajo el principio de un [horno de barro](/protocol-06.html), rellenando el espacio entre ellas con arena de río de un [filtro de agua natural](/protocol-01.html) y vertiendo agua fría para que la evaporación robe el calor circundante. A medida que el agua se evapora por los microporos de la vasija exterior, mantiene el interior entre 8 y 12°C más frío que el exterior; guardar alimentos dentro de la cámara desinfectada con [jabón natural de lejía](/protocol-13.html) conserva las raciones frescas por más de una semana sin electricidad.",
+  "summary": "En el calor del verano o en una zona de desastre sin red eléctrica, la carne y el pescado obtenidos mediante [trampas y caza](/protocol-08) o [nasas primitivas para peces](/protocol-11) crían larvas de mosca y bacterias putrefactas en medio día a temperatura ambiente, causando intoxicación alimentaria mortal y enteritis. En el campo sin electricidad ni hielo, debes construir de inmediato un refrigerador evaporativo 'Zeer Pot de Campo' anidando dos 'vasijas de arcilla porosa sin esmaltar' de distinto tamaño cocidas bajo el principio de un [horno de barro](/protocol-06), rellenando el espacio entre ellas con arena de río de un [filtro de agua natural](/protocol-01) y vertiendo agua fría para que la evaporación robe el calor circundante. A medida que el agua se evapora por los microporos de la vasija exterior, mantiene el interior entre 8 y 12°C más frío que el exterior; guardar alimentos dentro de la cámara desinfectada con [jabón natural de lejía](/protocol-13) conserva las raciones frescas por más de una semana sin electricidad.",
   "timeRequired": "40 Min (Selección y Sellado 15m + Relleno de Arena y Riego 15m + Instalación a la Sombra 10m)",
   "successRate": "95% (Usando vasijas de terracota porosa sin esmalte y ubicándolas a la sombra con brisa)",
   "difficulty": "Fácil (Mantener grosor de arena de dos nudillos y evitar entrada de agua a la cámara)",
@@ -13,22 +13,22 @@
     {
       "id": "mat-01",
       "name": "2 Vasijas de Arcilla Porosa Sin Esmaltar (Una Grande Exterior y Una Pequeña Interior)",
-      "desc": "Vasijas de terracota marrón rojiza cocidas a baja temperatura sin recubrimiento brillante, similares a un [horno de barro](/protocol-06.html). Combina una vasija grande (boca de dos palmos, ~35-40cm) con una más pequeña que quepa dentro (boca de un palmo y medio, ~25cm) para que el agua rezume por los microporos y se evapore enfriando el núcleo."
+      "desc": "Vasijas de terracota marrón rojiza cocidas a baja temperatura sin recubrimiento brillante, similares a un [horno de barro](/protocol-06). Combina una vasija grande (boca de dos palmos, ~35-40cm) con una más pequeña que quepa dentro (boca de un palmo y medio, ~25cm) para que el agua rezume por los microporos y se evapore enfriando el núcleo."
     },
     {
       "id": "mat-02",
       "name": "Arena de Río de Cuarcita Lavada (Aprox. 4-5kg)",
-      "desc": "Arena limpia de arroyo usada en el [filtro de agua natural](/protocol-01.html). Rellena el hueco entre ambas vasijas para retener agua fría durante horas y distribuir la humedad uniformemente por toda la pared exterior."
+      "desc": "Arena limpia de arroyo usada en el [filtro de agua natural](/protocol-01). Rellena el hueco entre ambas vasijas para retener agua fría durante horas y distribuir la humedad uniformemente por toda la pared exterior."
     },
     {
       "id": "mat-03",
       "name": "Agua Fría de Arroyo y 1 Paño de Arpillera o Cáñamo Húmedo",
-      "desc": "Agua clara añadida dos veces al día a la arena, más un paño grueso de arpillera o algodón natural (mismo material de la [máscara de carbón de campo](/protocol-15.html)) para cubrir la boca superior contra el sol y las moscas."
+      "desc": "Agua clara añadida dos veces al día a la arena, más un paño grueso de arpillera o algodón natural (mismo material de la [máscara de carbón de campo](/protocol-15)) para cubrir la boca superior contra el sol y las moscas."
     },
     {
       "id": "mat-04",
       "name": "Pegamento de Resina de Pino y Pasta de Arcilla para Sellar Agujeros Base",
-      "desc": "[Pegamento de resina de pino](/protocol-10.html) caliente y barro espeso para tapar por completo los orificios de drenaje inferiores al reutilizar macetas de barro."
+      "desc": "[Pegamento de resina de pino](/protocol-10) caliente y barro espeso para tapar por completo los orificios de drenaje inferiores al reutilizar macetas de barro."
     },
     {
       "id": "mat-05",
@@ -40,7 +40,7 @@
     {
       "stepNumber": "01",
       "title": "Paso 1: Seleccionar 2 Vasijas de Arcilla Sin Esmaltar, Sellar el Fondo con Resina y Desinfectar",
-      "description": "1. **Seleccionar Vasijas Sin Esmalte**: Elige **una vasija grande de dos palmos de boca (~38cm) y una pequeña de un palmo y medio (~26cm)** sin esmalte brillante para que el agua atraviese las paredes y se evapore.\n2. **Sellar Orificios de Drenaje**: Para evitar fugas de agua, tapa cualquier agujero en el fondo con una laja de piedra plana y séllalo con [pegamento de resina de pino caliente](/protocol-10.html) y arcilla hasta endurecer.\n3. **Desinfectar Cámara Interior**: Elimina bacterias lavando el interior de la vasija pequeña con agua hervida y [jabón natural de lejía](/protocol-13.html), secándola completamente al sol.",
+      "description": "1. **Seleccionar Vasijas Sin Esmalte**: Elige **una vasija grande de dos palmos de boca (~38cm) y una pequeña de un palmo y medio (~26cm)** sin esmalte brillante para que el agua atraviese las paredes y se evapore.\n2. **Sellar Orificios de Drenaje**: Para evitar fugas de agua, tapa cualquier agujero en el fondo con una laja de piedra plana y séllalo con [pegamento de resina de pino caliente](/protocol-10) y arcilla hasta endurecer.\n3. **Desinfectar Cámara Interior**: Elimina bacterias lavando el interior de la vasija pequeña con agua hervida y [jabón natural de lejía](/protocol-13), secándola completamente al sol.",
       "actionNote": "> Prohibido Usar Vasijas Esmaltadas: Los tarros con esmalte brillante como vidrio o cubos plásticos impiden que el agua atraviese la pared, reduciendo el enfriamiento a cero. Usa siempre terracota rojiza áspera que se oscurezca al mojarse.",
       "svgFileName": "pr16-step-01.svg",
       "svgLabels": [
@@ -84,7 +84,7 @@
     {
       "stepNumber": "02",
       "title": "Paso 2: Tender una Cama de Arena Húmeda en el Fondo y Centrar la Vasija Pequeña a Nivel",
-      "description": "1. **Tender Arena Aislante Base**: Extiende [arena de río de cuarcita](/protocol-01.html) lavada en el fondo de la vasija grande con un grosor de **dos nudillos (~4-5cm)** para aislar el calor del suelo.\n2. **Centrar la Vasija Pequeña**: Coloca la vasija pequeña en el centro exacto sobre la arena, girándola suavemente hasta asentarla nivelada y firme.\n3. **Nivelar Bordes Superiores**: Ajusta la arena base para que los bordes superiores de ambas vasijas queden a la misma altura, evitando que arena o agua entren a la cámara de comida.",
+      "description": "1. **Tender Arena Aislante Base**: Extiende [arena de río de cuarcita](/protocol-01) lavada en el fondo de la vasija grande con un grosor de **dos nudillos (~4-5cm)** para aislar el calor del suelo.\n2. **Centrar la Vasija Pequeña**: Coloca la vasija pequeña en el centro exacto sobre la arena, girándola suavemente hasta asentarla nivelada y firme.\n3. **Nivelar Bordes Superiores**: Ajusta la arena base para que los bordes superiores de ambas vasijas queden a la misma altura, evitando que arena o agua entren a la cámara de comida.",
       "actionNote": "> Mantener Espacio Concéntrico Uniforme: Si la vasija interna toca la pared externa, el calor exterior pasará directo a la comida. Céntrala dejando un espacio uniforme de dos dedos (~3-4cm) en todo el contorno.",
       "svgFileName": "pr16-step-02.svg",
       "svgLabels": [
@@ -112,7 +112,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Envolver Comida en Hojas, Cubrir con Arpillera Húmeda y Elevar a la Sombra Ventilada",
-      "description": "1. **Guardar Raciones con Higiene**: Envuelve [carne cazada](/protocol-08.html), [pescado de nasa](/protocol-11.html) o frutos en hojas anchas limpias y colócalos en la cámara interna seca sin amontonarlos.\n2. **Cubrir con Arpillera Húmeda**: Cubre toda la boca superior con un paño grueso de arpillera o cáñamo empapado en agua para bloquear el sol y las moscas, metiendo los bordes en la arena húmeda.\n3. **Elevar sobre Troncos en Sombra Ventilada**: Coloca el refrigerador sobre **troncos de roble bajo sombra de árboles donde corra brisa**, y recarga agua fría dos veces al día (mañana y tarde).",
+      "description": "1. **Guardar Raciones con Higiene**: Envuelve [carne cazada](/protocol-08), [pescado de nasa](/protocol-11) o frutos en hojas anchas limpias y colócalos en la cámara interna seca sin amontonarlos.\n2. **Cubrir con Arpillera Húmeda**: Cubre toda la boca superior con un paño grueso de arpillera o cáñamo empapado en agua para bloquear el sol y las moscas, metiendo los bordes en la arena húmeda.\n3. **Elevar sobre Troncos en Sombra Ventilada**: Coloca el refrigerador sobre **troncos de roble bajo sombra de árboles donde corra brisa**, y recarga agua fría dos veces al día (mañana y tarde).",
       "actionNote": "> Prohibido Ubicar en Sitios Cerrados Húmedos: Poner la vasija en una cueva húmeda o refugio cerrado sin viento detiene la evaporación y el enfriamiento. Instálala siempre a la sombra donde sople brisa seca constante.",
       "svgFileName": "pr16-step-04.svg",
       "svgLabels": [
@@ -193,6 +193,6 @@
     }
   ],
   "createdAt": "2026-10-26T00:05:00.000Z",
-  "updatedAt": "2026-10-26T00:08:42.165Z",
-  "contentHash": "418459d2aa16b06e"
+  "updatedAt": "2026-10-26T10:53:22+09:00",
+  "contentHash": "61cf2d9d25082a99"
 }

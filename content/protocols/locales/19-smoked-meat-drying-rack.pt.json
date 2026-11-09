@@ -4,7 +4,7 @@
   "title": "Como Secar e Defumar Carne e Peixe com Tripé de Galhos e Fumaça de Carvalho Verde para Durar Mais de um Mês (Charque de Campo)",
   "threatLevel": "HIGH",
   "threatLevelText": "[CONSERVAÇÃO DE ALIMENTOS] Evitar o Apodrecimento de Carne e Peixe sem Geladeira ou Sal e Garantir Rações Portáteis",
-  "summary": "No campo, a carne e o peixe frescos capturados com uma [Armadilha de Pedra Figura-4](/protocol-08.html) ou um [Covo de Salgueiro em Funil](/protocol-11.html) têm tanta umidade que moscas botam ovos e bactérias os apodrecem em um único dia. Nem mesmo um [Resfriador Evaporativo de Pote de Barro](/protocol-16.html) pode ser carregado em longas caminhadas. Em isolamento sem sal, este guia mostra como remover toda a gordura branca com uma [Lâmina de Pedra Afiada](/protocol-04.html), fatiar a carne magra em tiras de 5mm, pendurá-las na altura do peito em um tripé amarrado com [Corda de Cipó Silvestre](/protocol-05.html) e queimar [Carvão de Carvalho](/protocol-09.html) coberto com folhas verdes por baixo para produzir fumaça branca sem chamas que seca a umidade e conserva o alimento por mais de um mês.",
+  "summary": "No campo, a carne e o peixe frescos capturados com uma [Armadilha de Pedra Figura-4](/protocol-08) ou um [Covo de Salgueiro em Funil](/protocol-11) têm tanta umidade que moscas botam ovos e bactérias os apodrecem em um único dia. Nem mesmo um [Resfriador Evaporativo de Pote de Barro](/protocol-16) pode ser carregado em longas caminhadas. Em isolamento sem sal, este guia mostra como remover toda a gordura branca com uma [Lâmina de Pedra Afiada](/protocol-04), fatiar a carne magra em tiras de 5mm, pendurá-las na altura do peito em um tripé amarrado com [Corda de Cipó Silvestre](/protocol-05) e queimar [Carvão de Carvalho](/protocol-09) coberto com folhas verdes por baixo para produzir fumaça branca sem chamas que seca a umidade e conserva o alimento por mais de um mês.",
   "timeRequired": "Meio Dia (1 h Limpeza e Secagem ao Vento + 30 min Montagem do Tripé + 6–8 h Defumação Lenta)",
   "successRate": "98% (Removendo toda a gordura branca e mantendo fumaça morna sem chamas)",
   "difficulty": "Média (Executável com galhos, carvão de carvalho e folhas verdes sem sal ou grelhas metálicas)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Carne de Caça Fresca ou Peixe de Rio Limpo (4–5 Punhados)",
-      "desc": "Carne magra ou peixe recém-capturado com uma [Armadilha de Pedra Figura-4](/protocol-08.html) ou [Covo de Salgueiro em Funil](/protocol-11.html). A gordura branca não seca bem e fica rançosa rapidamente ao ar livre, devendo ser totalmente removida com uma [Lâmina de Pedra Afiada](/protocol-04.html)."
+      "desc": "Carne magra ou peixe recém-capturado com uma [Armadilha de Pedra Figura-4](/protocol-08) ou [Covo de Salgueiro em Funil](/protocol-11). A gordura branca não seca bem e fica rançosa rapidamente ao ar livre, devendo ser totalmente removida com uma [Lâmina de Pedra Afiada](/protocol-04)."
     },
     {
       "id": "mat-02",
@@ -23,20 +23,20 @@
     {
       "id": "mat-03",
       "name": "2–3 Punhados de Carvão de Carvalho e uma Braçada de Galhos e Folhas Verdes de Carvalho",
-      "desc": "Faça uma cama de brasas no chão com [Carvão de Carvalho de Forno Primitivo](/protocol-09.html) e cubra-a com galhos e folhas verdes recém-cortados de carvalho, castanheira ou árvores frutíferas para abafar as chamas e gerar fumaça branca contínua."
+      "desc": "Faça uma cama de brasas no chão com [Carvão de Carvalho de Forno Primitivo](/protocol-09) e cubra-a com galhos e folhas verdes recém-cortados de carvalho, castanheira ou árvores frutíferas para abafar as chamas e gerar fumaça branca contínua."
     },
     {
       "id": "mat-04",
       "name": "Corda de Cipó Silvestre e Folhas Largas ou Couro Macio para Tenda de Fumaça",
-      "desc": "[Corda de Cipó Silvestre](/protocol-05.html) para amarrar o topo do tripé e o suporte transversal, além de [Couro Macio Natural](/protocol-17.html) ou feixes de folhas largas ao redor do tripé para reter a fumaça."
+      "desc": "[Corda de Cipó Silvestre](/protocol-05) para amarrar o topo do tripé e o suporte transversal, além de [Couro Macio Natural](/protocol-17) ou feixes de folhas largas ao redor do tripé para reter a fumaça."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Passo 1: Retirar Toda a Gordura Branca com Lâmina de Pedra e Cortar Tiras Magras de 5mm",
-      "description": "1. **Remover 100% da Gordura Branca e Coágulos**: A gordura branca não perde água na fumaça e apodrece com cheiro rançoso em poucos dias. Use uma [Lâmina de Pedra Afiada](/protocol-04.html) para **retirar toda a gordura branca e membranas duras, deixando apenas carne magra vermelha**. Nos peixes, abra a barriga, tire as vísceras e guelras e abra-o espalmado.\n2. **Cortar Tiras Finas e Longas no Sentido da Fibra**: Corte a carne magra ao longo da fibra com **espessura uniforme de meia falange do mindinho (5mm), largura de dois dedos (3cm) e comprimento de um palmo (20cm)**. Se ficar grossa demais, apodrece por dentro; se fina demais, esfarela.\n3. **Secar a Umidade Superficial na Sombra Ventilada por 30 Minutos**: Colocar carne molhada direto na fumaça faz a fuligem preta grudar nas gotas de água. Espalhe as tiras sobre uma pedra limpa ao **vento fresco por 30 minutos até a superfície ficar levemente seca e pegajosa**.",
-      "actionNote": "> Guarde os recortes de gordura branca separadamente: Embora a gordura estrague o charque, derretê-la em fogo baixo rende sebo valioso para fazer [Sabão Natural de Cinzas](/protocol-13.html) ou impermeabilizar [Couro Macio Natural](/protocol-17.html).",
+      "description": "1. **Remover 100% da Gordura Branca e Coágulos**: A gordura branca não perde água na fumaça e apodrece com cheiro rançoso em poucos dias. Use uma [Lâmina de Pedra Afiada](/protocol-04) para **retirar toda a gordura branca e membranas duras, deixando apenas carne magra vermelha**. Nos peixes, abra a barriga, tire as vísceras e guelras e abra-o espalmado.\n2. **Cortar Tiras Finas e Longas no Sentido da Fibra**: Corte a carne magra ao longo da fibra com **espessura uniforme de meia falange do mindinho (5mm), largura de dois dedos (3cm) e comprimento de um palmo (20cm)**. Se ficar grossa demais, apodrece por dentro; se fina demais, esfarela.\n3. **Secar a Umidade Superficial na Sombra Ventilada por 30 Minutos**: Colocar carne molhada direto na fumaça faz a fuligem preta grudar nas gotas de água. Espalhe as tiras sobre uma pedra limpa ao **vento fresco por 30 minutos até a superfície ficar levemente seca e pegajosa**.",
+      "actionNote": "> Guarde os recortes de gordura branca separadamente: Embora a gordura estrague o charque, derretê-la em fogo baixo rende sebo valioso para fazer [Sabão Natural de Cinzas](/protocol-13) ou impermeabilizar [Couro Macio Natural](/protocol-17).",
       "svgFileName": "pr19-step-01.svg",
       "svgLabels": [
         "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
@@ -60,7 +60,7 @@
             "traits": [
               {
                 "label": "MAGRO/LEAN",
-                "value": "Remova **100% da gordura branca e coágulos** com uma [Lâmina de Pedra Afiada](/protocol-04.html) para evitar ranço."
+                "value": "Remova **100% da gordura branca e coágulos** com uma [Lâmina de Pedra Afiada](/protocol-04) para evitar ranço."
               },
               {
                 "label": "ESPESSURA/5MM",
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Passo 2: Erguer um Tripé de 3 Galhos e Amarrar uma Grelha de Varetas na Altura do Peito",
-      "description": "1. **Montar um Tripé com 3 Galhos Longos**: Amarre as pontas superiores de **3 galhos retos da grossura do pulso e 180cm de comprimento** com [Corda de Cipó Silvestre](/protocol-05.html) e abra as três pernas a **dois passos de largura (cerca de 120cm)** firmando-as no solo.\n2. **Amarrar um Quadro Triangular Horizontal na Altura do Peito**: Se ficar muito perto do fogo, a carne assa em vez de secar. Amarre 3 travessas entre as pernas **na altura do peito de um adulto (cerca de 120cm)** para formar um suporte triangular nivelado.\n3. **Pendurar as Tiras com um Dedo de Espaço sobre Varetas Descascadas**: Apoie 8–10 varetas descascadas e lisas sobre o quadro triangular e pendure as tiras de carne deixando **a largura de um dedo (cerca de 2cm) de espaço** entre cada pedaço.",
+      "description": "1. **Montar um Tripé com 3 Galhos Longos**: Amarre as pontas superiores de **3 galhos retos da grossura do pulso e 180cm de comprimento** com [Corda de Cipó Silvestre](/protocol-05) e abra as três pernas a **dois passos de largura (cerca de 120cm)** firmando-as no solo.\n2. **Amarrar um Quadro Triangular Horizontal na Altura do Peito**: Se ficar muito perto do fogo, a carne assa em vez de secar. Amarre 3 travessas entre as pernas **na altura do peito de um adulto (cerca de 120cm)** para formar um suporte triangular nivelado.\n3. **Pendurar as Tiras com um Dedo de Espaço sobre Varetas Descascadas**: Apoie 8–10 varetas descascadas e lisas sobre o quadro triangular e pendure as tiras de carne deixando **a largura de um dedo (cerca de 2cm) de espaço** entre cada pedaço.",
       "actionNote": "> Nunca deixe as tiras de carne encostarem ou sobreporem: Onde dois pedaços de carne ficam grudados, a fumaça e o ar não circulam, deixando uma parte úmida que cria bicheira ou mofo. Deixe sempre um dedo de espaço entre as tiras.",
       "svgFileName": "pr19-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Passo 3: Acender Brasas de Carvalho na Cova Central e Cobrir com Folhas Verdes Sem Chamas",
-      "description": "1. **Cavar uma Cova Rasa no Centro do Tripé**: Bem embaixo da grelha, cave uma cova rasa de **um palmo de profundidade (15cm) e dois palmos de largura** e coloque dois ou três punhados de [Carvão de Carvalho](/protocol-09.html) em brasa aceso com um [Arco de Pua](/protocol-02.html).\n2. **Cobrir as Brasas com Galhos e Folhas Verdes de Carvalho**: Sobre as brasas vermelhas sem chamas, coloque uma **camada dupla de galhos e folhas verdes úmidas de carvalho (ou castanheira/macieira)** para reduzir o oxigênio e levantar nuvens densas de fumaça branca.\n3. **Testar o Calor com a Mão Nua por 3 Segundos**: Coloque a mão ao lado da carne pendurada; se queimar, está quente demais. Adicione mais folhas verdes até que **manter a mão por 3 a 5 segundos transmita apenas um calor suave e agradável**.",
+      "description": "1. **Cavar uma Cova Rasa no Centro do Tripé**: Bem embaixo da grelha, cave uma cova rasa de **um palmo de profundidade (15cm) e dois palmos de largura** e coloque dois ou três punhados de [Carvão de Carvalho](/protocol-09) em brasa aceso com um [Arco de Pua](/protocol-02).\n2. **Cobrir as Brasas com Galhos e Folhas Verdes de Carvalho**: Sobre as brasas vermelhas sem chamas, coloque uma **camada dupla de galhos e folhas verdes úmidas de carvalho (ou castanheira/macieira)** para reduzir o oxigênio e levantar nuvens densas de fumaça branca.\n3. **Testar o Calor com a Mão Nua por 3 Segundos**: Coloque a mão ao lado da carne pendurada; se queimar, está quente demais. Adicione mais folhas verdes até que **manter a mão por 3 a 5 segundos transmita apenas um calor suave e agradável**.",
       "actionNote": "> Proibido usar pinheiro, coníferas ou madeiras tóxicas: Pinheiros e coníferas soltam fuligem preta de resina que amarga e estraga a carne. Madeiras tóxicas como espirradeira ou sumagre-venenoso liberam veneno mortal na fumaça. Use apenas madeiras duras seguras como carvalho, castanheira ou frutíferas.",
       "svgFileName": "pr19-step-03.svg",
       "svgLabels": [
@@ -167,7 +167,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Envolver o Tripé com Couro ou Folhas para Reter a Fumaça e Secar por Meio Dia",
-      "description": "1. **Cercar o Tripé com Couro ou Folhas Largas**: Para que o vento não espalhe a fumaça, envolva a parte média e superior do tripé com [Couro Macio Natural](/protocol-17.html) ou feixes de folhas largas, deixando **apenas uma abertura do tamanho de um punho no topo** para a fumaça envolver a carne antes de sair.\n2. **Virar as Tiras a Cada 2 Horas durante 6–8 Horas**: Inverta a posição das tiras **uma vez a cada 2 horas** para secar por igual, repondo carvão de carvalho e folhas verdes durante **meio dia (6–8 horas)**.\n3. **Confirmar o Ponto com o Teste de Dobra de Galho Seco**: Pegue a tira mais grossa, deixe esfriar e **dobre-a ao meio com os dedos; quando não sair nenhuma gota de sangue ou água e ela dobrar firme como um galho seco mostrando fibras brancas**, está pronta.",
+      "description": "1. **Cercar o Tripé com Couro ou Folhas Largas**: Para que o vento não espalhe a fumaça, envolva a parte média e superior do tripé com [Couro Macio Natural](/protocol-17) ou feixes de folhas largas, deixando **apenas uma abertura do tamanho de um punho no topo** para a fumaça envolver a carne antes de sair.\n2. **Virar as Tiras a Cada 2 Horas durante 6–8 Horas**: Inverta a posição das tiras **uma vez a cada 2 horas** para secar por igual, repondo carvão de carvalho e folhas verdes durante **meio dia (6–8 horas)**.\n3. **Confirmar o Ponto com o Teste de Dobra de Galho Seco**: Pegue a tira mais grossa, deixe esfriar e **dobre-a ao meio com os dedos; quando não sair nenhuma gota de sangue ou água e ela dobrar firme como um galho seco mostrando fibras brancas**, está pronta.",
       "actionNote": "> Esfrie totalmente o charque antes de guardar em saco respirável: Guardar a carne ainda morna em recipiente fechado gera gotas de condensação que criam mofo. Sempre esfrie na sombra e guarde em saco de estopa seca ou couro.",
       "svgFileName": "pr19-step-04.svg",
       "svgLabels": [
@@ -237,15 +237,15 @@
     {
       "question": "Após 3 horas de fumaça, a carne está coberta de fuligem preta e continua úmida ao toque.",
       "causeDiagnostic": "A carne foi pendurada molhada sem secar 30 minutos ao vento, galhos resinosos de pinheiro entraram no fogo ou a saída superior do tripé está fechada impedindo a saída do vapor.",
-      "resolution": "Abra imediatamente um buraco do tamanho de um punho no topo do tripé para o vapor sair, retire qualquer galho de conífera do fogo e deixe apenas [Carvão de Carvalho de Forno Primitivo](/protocol-09.html) e folhas verdes de madeira dura. Limpe a fuligem com capim seco, deixe o vento secar a superfície primeiro e retome a defumação suave."
+      "resolution": "Abra imediatamente um buraco do tamanho de um punho no topo do tripé para o vapor sair, retire qualquer galho de conífera do fogo e deixe apenas [Carvão de Carvalho de Forno Primitivo](/protocol-09) e folhas verdes de madeira dura. Limpe a fuligem com capim seco, deixe o vento secar a superfície primeiro e retome a defumação suave."
     },
     {
       "question": "Moscas e mosquitos continuam rondando a carne enquanto ela seca. Como impedir?",
       "causeDiagnostic": "As folhas verdes sobre o fogo queimaram tudo e a fumaça parou, ou a cobertura externa do tripé está muito aberta deixando o vento espalhar a fumaça.",
-      "resolution": "Moscas não conseguem se aproximar de fumaça densa de carvalho e calor. Cubra as brasas com mais um punhado de galhos e folhas verdes úmidas de carvalho para manter a fumaça branca contínua, e feche [Couro Macio Natural](/protocol-17.html) ou feixes de folhas largas ao redor do tripé."
+      "resolution": "Moscas não conseguem se aproximar de fumaça densa de carvalho e calor. Cubra as brasas com mais um punhado de galhos e folhas verdes úmidas de carvalho para manter a fumaça branca contínua, e feche [Couro Macio Natural](/protocol-17) ou feixes de folhas largas ao redor do tripé."
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T04:50:53.466Z",
-  "contentHash": "fcd2e88cf547f683"
+  "updatedAt": "2026-10-29T14:00:23+09:00",
+  "contentHash": "2feab12730b3a242"
 }

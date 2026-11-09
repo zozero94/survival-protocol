@@ -4,7 +4,7 @@
   "title": "Cómo Hacer una Estufa Interior de 72 Horas con Lata de Atún, Aceite de Cocina y Papel Higiénico",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[CALEFACCIÓN EN APAGÓN & FUENTE TÉRMICA DE 72H]",
-  "summary": "Si en casa ya dispone de equipos comerciales como hornillos de gas butano, estufas portátiles, velas de parafina o pastillas de combustible sólido, utilícelos siempre primero por ser la opción más segura y rápida. Sin embargo, cuando un apagón invernal o corte de gas se prolonga y se agotan todas las bombonas y baterías, quemar leña en interiores provoca asfixia mortal por humo y monóxido de carbono (para cocción exterior de alta potencia use la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html)). Al colocar una capa aislante de gravilla en una lata vacía de atún, sostener 3 mechas de papel higiénico retorcido con un puente de papel metálico y llenarla con aceite vegetal de cocina, obtendrá un calefactor interior sin hollín que mantiene el calor y calienta agua durante 8 a 12 horas por carga (más de 72 horas con una botella de aceite).",
+  "summary": "Si en casa ya dispone de equipos comerciales como hornillos de gas butano, estufas portátiles, velas de parafina o pastillas de combustible sólido, utilícelos siempre primero por ser la opción más segura y rápida. Sin embargo, cuando un apagón invernal o corte de gas se prolonga y se agotan todas las bombonas y baterías, quemar leña en interiores provoca asfixia mortal por humo y monóxido de carbono (para cocción exterior de alta potencia use la [Estufa de Gas de Madera de Doble Lata](/protocol-12)). Al colocar una capa aislante de gravilla en una lata vacía de atún, sostener 3 mechas de papel higiénico retorcido con un puente de papel metálico y llenarla con aceite vegetal de cocina, obtendrá un calefactor interior sin hollín que mantiene el calor y calienta agua durante 8 a 12 horas por carga (más de 72 horas con una botella de aceite).",
   "timeRequired": "15 min (Limpieza y capa aislante 3m + Mechas y clip metálico 5m + Empapado en aceite 5m + Reflector 2m)",
   "successRate": "99% (Usando aceite vegetal y manteniendo la punta expuesta de la mecha bajo 1cm)",
   "difficulty": "Fácil (Sin cuchillos, fabricado con artículos cotidianos de cocina)",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Dos Palmos de Papel Metálico de Cocina y 2 Alambres Gruesos Pelados (o Percha Metálica)",
-      "desc": "Un palmo de lámina metálica se pliega como puente en cruz para sujetar las 3 mechas erguidas en el aceite, y el otro palmo se coloca detrás de la lata para reflejar el calor hacia adelante. Dos alambres gruesos (si usa cable eléctrico recuperado, pele toda la funda con una [Hoja de Piedra Afilada](/protocol-04.html) para evitar gases tóxicos) sirven de soporte sobre el borde para calentar agua en una taza metálica."
+      "desc": "Un palmo de lámina metálica se pliega como puente en cruz para sujetar las 3 mechas erguidas en el aceite, y el otro palmo se coloca detrás de la lata para reflejar el calor hacia adelante. Dos alambres gruesos (si usa cable eléctrico recuperado, pele toda la funda con una [Hoja de Piedra Afilada](/protocol-04) para evitar gases tóxicos) sirven de soporte sobre el borde para calentar agua en una taza metálica."
     }
   ],
   "steps": [
@@ -43,7 +43,7 @@
       "deepDive": {
         "badge": "URBAN BLACKOUT HEAT",
         "title": "Riesgo de Asfixia por Leña/Carbón en Interiores vs. Seguridad Térmica del Acero Estañado",
-        "text": "Quemar leña o [Carbón de Madera Dura](/protocol-09.html) dentro de un apartamento cerrado llena rápidamente la estancia de monóxido de carbono inodoro, causando intoxicación mortal. En cambio, las latas de acero estañado funden por encima de **1,500°C**, y al cubrir el fondo con **1cm de gravilla** quemando solo mechas de aceite vegetal, ni la lata ni su recubrimiento se sobrecalientan.",
+        "text": "Quemar leña o [Carbón de Madera Dura](/protocol-09) dentro de un apartamento cerrado llena rápidamente la estancia de monóxido de carbono inodoro, causando intoxicación mortal. En cambio, las latas de acero estañado funden por encima de **1,500°C**, y al cubrir el fondo con **1cm de gravilla** quemando solo mechas de aceite vegetal, ni la lata ni su recubrimiento se sobrecalientan.",
         "fieldSpecs": [
           {
             "name": "Lata de Atún Limpia y Capa Aislante de Gravilla de 1cm",
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Encender las Mechas, Colocar la Pared Reflectora Metálica y Calentar Agua sobre Alambres",
-      "description": "1. **Encender la Triple Mecha**: Acerque una llama (o brasa del [Arco de Fricción](/protocol-02.html) si no hay cerillas) a las 3 puntas empapadas durante **3-4 segundos**. En 1 minuto se formarán **3 llamas naranjas brillantes y estables de una falange de altura (2-3cm)** sin humo.\n2. **Levantar Pared Reflectora en Zigzag**: Pliegue un palmo de lámina metálica en acordeón con la cara brillante hacia adelante y colóquela en semicírculo **dos falanges (3-4cm) detrás de la lata**.\n3. **Colocar Soporte de Alambre Pelado**: Apoye 2 alambres gruesos sin funda o varillas de percha sobre el borde superior de la lata y ponga encima una taza metálica o cazo para calentar agua potable (filtrada con el [Filtro de Carbón y Arena](/protocol-01.html)) y conservas.\n4. **Ventilar 2cm Cada 3 Horas**: Aunque no emita humo, las llamas consumen oxígeno interior; **abra la ventana una falange (2cm) cada 3 horas** para renovar el aire.",
+      "description": "1. **Encender la Triple Mecha**: Acerque una llama (o brasa del [Arco de Fricción](/protocol-02) si no hay cerillas) a las 3 puntas empapadas durante **3-4 segundos**. En 1 minuto se formarán **3 llamas naranjas brillantes y estables de una falange de altura (2-3cm)** sin humo.\n2. **Levantar Pared Reflectora en Zigzag**: Pliegue un palmo de lámina metálica en acordeón con la cara brillante hacia adelante y colóquela en semicírculo **dos falanges (3-4cm) detrás de la lata**.\n3. **Colocar Soporte de Alambre Pelado**: Apoye 2 alambres gruesos sin funda o varillas de percha sobre el borde superior de la lata y ponga encima una taza metálica o cazo para calentar agua potable (filtrada con el [Filtro de Carbón y Arena](/protocol-01)) y conservas.\n4. **Ventilar 2cm Cada 3 Horas**: Aunque no emita humo, las llamas consumen oxígeno interior; **abra la ventana una falange (2cm) cada 3 horas** para renovar el aire.",
       "actionNote": "> Efecto del Reflector y el Soporte de Alambre: La pared reflectora detrás de la lata dirige hacia adelante el 90% del calor radiante, sintiéndose el abrigo a un palmo de distancia. Nunca apoye una taza directamente sobre la lata sin los 2 alambres o ahogará las llamas por falta de aire.",
       "svgFileName": "pr21-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "PELIGRO // Prohibido Verter Gasolina, Alcohol o Disolvente, Prohibido Echar Agua al Aceite Ardiendo y Prohibido Usar Mechas Sintéticas",
-    "description": "Verter líquidos volátiles como gasolina, alcohol, acetona o disolvente de pintura en una lata abierta llena la habitación de vapor explosivo que detona al encender (si dispone de un hornillo de butano o estufa de queroseno comercial, úselo únicamente en su aparato original). Tampoco use telas sintéticas como poliéster o nailon como mecha, pues al fundirse liberan dioxinas letales (ante humo de incendio use la [Máscara Antigás de Carbón Activo](/protocol-15.html)); use solo papel higiénico o algodón 100%.",
+    "description": "Verter líquidos volátiles como gasolina, alcohol, acetona o disolvente de pintura en una lata abierta llena la habitación de vapor explosivo que detona al encender (si dispone de un hornillo de butano o estufa de queroseno comercial, úselo únicamente en su aparato original). Tampoco use telas sintéticas como poliéster o nailon como mecha, pues al fundirse liberan dioxinas letales (ante humo de incendio use la [Máscara Antigás de Carbón Activo](/protocol-15)); use solo papel higiénico o algodón 100%.",
     "consequence": "Echar agua sobre aceite caliente provoca una explosión instantánea de vapor que proyecta aceite en llamas por toda la sala, causando quemaduras graves. Para apagarlo, sople las mechas o cubra la lata con un plato cerámico o paño húmedo para cortar el oxígeno."
   },
   "faqs": [
@@ -218,7 +218,7 @@
     {
       "question": "¿Cómo regulo la mecha si empieza a soltar un poco de hollín negro o si la llama se vuelve muy pequeña?",
       "causeDiagnostic": "Si la punta de la mecha sobre el puente metálico mide **más de una falange (1.5cm)**, el exceso de aceite sin quemar genera hollín negro; si el papel se enrolló muy flojo y se hunde en el aceite, la llama se achica.",
-      "resolution": "Con palillos o pinzas ajuste el clip metálico para que **la punta expuesta mida menos de media falange (0.8-1cm)**, eliminando al instante el humo negro. Si necesita hervir agua rápido en exteriores o calentar un refugio de campo, combine esto con la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o el [Hogar Térmico de Arcilla](/protocol-06.html)."
+      "resolution": "Con palillos o pinzas ajuste el clip metálico para que **la punta expuesta mida menos de media falange (0.8-1cm)**, eliminando al instante el humo negro. Si necesita hervir agua rápido en exteriores o calentar un refugio de campo, combine esto con la [Estufa de Gas de Madera de Doble Lata](/protocol-12) o el [Hogar Térmico de Arcilla](/protocol-06)."
     }
   ],
   "shortsScript": "[0-5s Gancho] ¿Sin luz ni gas en pleno invierno? ¡Haz una estufa interior para 72 horas con una lata de atún y aceite de cocina! [5-35s Cuerpo] Cuando se acaben el butano o las velas, pon 1cm de gravilla en una lata limpia para aislar el fondo. Retuerce 3 mechas de papel higiénico y sujétalas en el centro con un puente de papel metálico. Llena 4/5 con aceite vegetal, empapa las puntas, enciende y pon un reflector detrás para tener calor sin humo y calentar agua. [35-45s Aviso y Cierre] ¡Nunca uses gasolina ni agua; apágala con un plato! Guarda este manual offline ahora.",
@@ -240,7 +240,7 @@
       "FIELD VERIFIED // ZERO-SMOKE INDOOR HEAT & HOT WATER SYSTEM"
     ]
   },
-  "contentHash": "09e4c955a5075ef8",
+  "contentHash": "75c437ca60b0bfba",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T06:41:48.546Z"
+  "updatedAt": "2026-11-02T16:17:08+09:00"
 }

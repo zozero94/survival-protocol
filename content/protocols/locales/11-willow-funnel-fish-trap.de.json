@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "40–50 biegsame grüne Weiden- oder Haselruten (Armlänge, 70–80cm)",
-      "desc": "Frisch am Ufer mit einer [Steinaxt oder scharfen Steinklinge](/protocol-04.html) geschnittene Triebe von halber Kleinfingerdicke (~5mm), die sich biegen lassen, ohne zu brechen."
+      "desc": "Frisch am Ufer mit einer [Steinaxt oder scharfen Steinklinge](/protocol-04) geschnittene Triebe von halber Kleinfingerdicke (~5mm), die sich biegen lassen, ohne zu brechen."
     },
     {
       "id": "mat-02",
@@ -23,7 +23,7 @@
     {
       "id": "mat-03",
       "name": "Wasserfeste Wildkudzu- oder Bastfaserschnur (15m Gesamtlänge)",
-      "desc": "Gedrehte Pflanzenschnur nach [Herstellung von Wildseilen](/protocol-05.html). Das Versiegeln der Hauptknoten mit [Wasserfestem Kiefernharz-Kleber](/protocol-10.html) verhindert ein Lösen unter Wasser."
+      "desc": "Gedrehte Pflanzenschnur nach [Herstellung von Wildseilen](/protocol-05). Das Versiegeln der Hauptknoten mit [Wasserfestem Kiefernharz-Kleber](/protocol-10) verhindert ein Lösen unter Wasser."
     },
     {
       "id": "mat-04",
@@ -40,8 +40,8 @@
     {
       "stepNumber": "01",
       "title": "Schritt 1: Dicke Zweige zu 4 abgestuften Kreisringen (Reifen) biegen",
-      "description": "1. **Biegsamkeit prüfen**: Biegen Sie 4 bleistiftdicke Weidenzweige langsam mit der Hand, um sicherzustellen, dass sie sich geschmeidig runden lassen.\n2. **4 abgestufte Ringgrößen formen**: Biegen Sie die Zweige zu vier Ringen mit **anderthalb Handspannen (25cm Durchmesser)**, **einer Handspanne (20cm)**, **zwei Faustbreiten (15cm)** und **einer Faustbreite (10cm)**.\n3. **Überlappende Enden abbinden**: Legen Sie die Ringenden um **zwei Fingerbreiten (~4cm)** übereinander und umwickeln Sie sie fest mit mindestens 10 Windungen [Wilder Bastschnur](/protocol-05.html).\n4. **Im Abstand von 1 Handspanne ausrichten**: Stellen Sie die vier Ringe der Größe nach im Abstand von **einer Handspanne (~15cm)** hintereinander auf.",
-      "actionNote": "> Materialkennung & Augenschutz: Trockenes Totholz bricht splitternd und kann Augen oder Hände verletzen. Nutzen Sie die Fotokarte unten zur sicheren Unterscheidung von **lebenden Weidenruten** und **Flussschnecken-Ködern** ([Steinaxt (PR-04)](/protocol-04.html) / [Wildseil (PR-05)](/protocol-05.html)).",
+      "description": "1. **Biegsamkeit prüfen**: Biegen Sie 4 bleistiftdicke Weidenzweige langsam mit der Hand, um sicherzustellen, dass sie sich geschmeidig runden lassen.\n2. **4 abgestufte Ringgrößen formen**: Biegen Sie die Zweige zu vier Ringen mit **anderthalb Handspannen (25cm Durchmesser)**, **einer Handspanne (20cm)**, **zwei Faustbreiten (15cm)** und **einer Faustbreite (10cm)**.\n3. **Überlappende Enden abbinden**: Legen Sie die Ringenden um **zwei Fingerbreiten (~4cm)** übereinander und umwickeln Sie sie fest mit mindestens 10 Windungen [Wilder Bastschnur](/protocol-05).\n4. **Im Abstand von 1 Handspanne ausrichten**: Stellen Sie die vier Ringe der Größe nach im Abstand von **einer Handspanne (~15cm)** hintereinander auf.",
+      "actionNote": "> Materialkennung & Augenschutz: Trockenes Totholz bricht splitternd und kann Augen oder Hände verletzen. Nutzen Sie die Fotokarte unten zur sicheren Unterscheidung von **lebenden Weidenruten** und **Flussschnecken-Ködern** ([Steinaxt (PR-04)](/protocol-04) / [Wildseil (PR-05)](/protocol-05)).",
       "svgFileName": "pr11-step-01.svg",
       "svgLabels": [
         "FIG. 01 // GRADUATED HOOP RINGS (4 SIZES)",
@@ -126,7 +126,7 @@
     {
       "stepNumber": "03",
       "title": "Schritt 3: Nach innen verengten Einweg-Trichter (Rückschlagventil) einnähen",
-      "description": "1. **Trichterruten bündeln**: Fassen Sie **16–20 dünne, federnde Weidenzweiglein** (Unterarmlänge, ~30–35cm) zu einem kleineren Kegel zusammen.\n2. **Ein- und Ausgangsdurchmesser einstellen**: Weiten Sie den vorderen Rand auf **anderthalb Handspannen (25cm)** passend zum Korbmaul und verengen Sie den inneren Hals auf **drei Fingerbreiten (5–6cm)**.\n3. **Innere Rutenspitzen frei lassen**: Lassen Sie die letzten **zwei Fingerbreiten (5cm)** der inneren Spitzen ungebunden, damit sie sich beim Hineinschwimmen spreizen und beim Rückwärtsversuch wie Dornen sperren.\n4. **In die Korböffnung einsetzen & vernähen**: Schieben Sie den Trichter in die vordere Korböffnung und nähen Sie beide Außenringe mit [Wildseil](/protocol-05.html) lückenlos zusammen.",
+      "description": "1. **Trichterruten bündeln**: Fassen Sie **16–20 dünne, federnde Weidenzweiglein** (Unterarmlänge, ~30–35cm) zu einem kleineren Kegel zusammen.\n2. **Ein- und Ausgangsdurchmesser einstellen**: Weiten Sie den vorderen Rand auf **anderthalb Handspannen (25cm)** passend zum Korbmaul und verengen Sie den inneren Hals auf **drei Fingerbreiten (5–6cm)**.\n3. **Innere Rutenspitzen frei lassen**: Lassen Sie die letzten **zwei Fingerbreiten (5cm)** der inneren Spitzen ungebunden, damit sie sich beim Hineinschwimmen spreizen und beim Rückwärtsversuch wie Dornen sperren.\n4. **In die Korböffnung einsetzen & vernähen**: Schieben Sie den Trichter in die vordere Korböffnung und nähen Sie beide Außenringe mit [Wildseil](/protocol-05) lückenlos zusammen.",
       "actionNote": "> Trichterhals-Maß: Ist die innere Öffnung größer als eine Faust, schwimmen die Fische wieder hinaus. Halten Sie den Durchlass auf drei Fingerbreiten (5–6cm), damit die federnden Spitzen als Einwegventil wirken.",
       "svgFileName": "pr11-step-03.svg",
       "svgLabels": [
@@ -146,7 +146,7 @@
       "stepNumber": "04",
       "title": "Schritt 4: Ballaststeine & Köder einlegen und mit Pflöcken in der Strömung verankern",
       "description": "1. **Ballast & Köderbeutel laden**: Öffnen Sie den Heckknoten, legen Sie **2 faustgroße Flusssteine** und ein perforiertes Blatt mit **zerdrückten Schnecken & Würmern** hinein und binden Sie das Heck wieder fest zu.\n2. **Strömungsrinne wählen**: Suchen Sie eine knietiefe (**30–50cm**) Engstelle zwischen Flussfelsen oder am Uferbewuchs.\n3. **Trichteröffnung stromaufwärts richten**: Versenken Sie die Reuse so am Grund, dass die **Trichteröffnung stromaufwärts (oder schräg gegen die Strömung)** zeigt, damit der Köderduft stromabwärts zu den Fischen treibt.\n4. **Mit 4 Pflöcken & Steinen sichern**: Schlagen Sie **4 unterarmlange Holzpflöcke** beidseitig tief in das Flussbett und verkeilen Sie schwere Steine an den Flanken gegen das Wegrollen.",
-      "actionNote": "> Entnahme & Garvorschrift: Am Morgen einfach den Heckknoten aufziehen. Süßwasserfische zum Schutz vor Parasiten immer über einem [Rauchfreien Dakota-Erdofen](/protocol-06.html) oder [Eichenholzkohle-Glut](/protocol-09.html) vollständig durchgaren.",
+      "actionNote": "> Entnahme & Garvorschrift: Am Morgen einfach den Heckknoten aufziehen. Süßwasserfische zum Schutz vor Parasiten immer über einem [Rauchfreien Dakota-Erdofen](/protocol-06) oder [Eichenholzkohle-Glut](/protocol-09) vollständig durchgaren.",
       "svgFileName": "pr11-step-04.svg",
       "svgLabels": [
         "FIG. 04 // STREAM CHANNEL ANCHORING & BAIT PLUME",
@@ -178,5 +178,5 @@
     "description": "Längsschnitt durch die 4 abgestuften Ringe, das 1cm-Weidengitter, den 5cm-Rückschlagtrichter, 2 Ballaststeine, Schneckenköderbeutel und 4 Bodenpflöcke mit gefangenem Fisch."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "037d4ce0763a3aa2"
+  "contentHash": "69dbedcc472bdbdb"
 }

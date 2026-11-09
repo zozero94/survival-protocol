@@ -4,7 +4,7 @@
   "title": "Stromlose Wärmekapsel & Schlafsack (+7°C) aus Versandkartons, Zeitungspapier und alter Kleidung bei Winter-Blackout",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WINTER-BLACKOUT HYPOTHERMIE-SCHUTZ & STROMLOSE WÄRMEKAPSUL]",
-  "summary": "Wenn Sie zu Hause bereits fertige Winterausrüstung wie einen Winterschlafsack, ein Indoor-Wärmezelt, eine Rettungsdecke, Taschenwärmer oder Wärmflaschen besitzen, nutzen Sie diese immer zuerst als schnellste und wärmste Lösung. Dauert ein Winter-Blackout oder Heizungsausfall jedoch länger an, sind Wärmepacks aufgebraucht und fehlt ein Wärmezelt, entzieht der kalte Betonboden beim Schlafen unter normalen Decken 70% Ihrer Körperwärme und führt nachts zu Unterkühlung (im Freien im Wald stattdessen eine [Laubhütte Debris Hut](/protocol-03.html) bauen). Indem Sie flachgelegte Versandkartons 3-lagig auf den Boden schichten, eine mit Küchen-Metallfolie ausgekleidete Kartonhaube über den Oberkörper stellen und faustgroß geknüllte Zeitungskugeln in einen Bettbezug füllen, erwärmt Ihre eigene Körperwärme (ca. 100W) das Kapselinnere ganz ohne Brennstoff um 6 bis 8°C über die Raumtemperatur.",
+  "summary": "Wenn Sie zu Hause bereits fertige Winterausrüstung wie einen Winterschlafsack, ein Indoor-Wärmezelt, eine Rettungsdecke, Taschenwärmer oder Wärmflaschen besitzen, nutzen Sie diese immer zuerst als schnellste und wärmste Lösung. Dauert ein Winter-Blackout oder Heizungsausfall jedoch länger an, sind Wärmepacks aufgebraucht und fehlt ein Wärmezelt, entzieht der kalte Betonboden beim Schlafen unter normalen Decken 70% Ihrer Körperwärme und führt nachts zu Unterkühlung (im Freien im Wald stattdessen eine [Laubhütte Debris Hut](/protocol-03) bauen). Indem Sie flachgelegte Versandkartons 3-lagig auf den Boden schichten, eine mit Küchen-Metallfolie ausgekleidete Kartonhaube über den Oberkörper stellen und faustgroß geknüllte Zeitungskugeln in einen Bettbezug füllen, erwärmt Ihre eigene Körperwärme (ca. 100W) das Kapselinnere ganz ohne Brennstoff um 6 bis 8°C über die Raumtemperatur.",
   "timeRequired": "20 Min. (3-Lagen-Kartonmatte 5m + Folien-Kartonhaube 5m + Zeitungspapier-Schlafsack 5m + Deckenvorhang 5m)",
   "successRate": "99% (Bei mind. 1,5cm 3-Lagen-Karton am Boden und einer faustgroßen Lüftungsöffnung an der Unterkante)",
   "difficulty": "Einfach (Ohne Messer oder Werkzeug sofort im Zimmer aus Paketkartons, Zeitung und Bettzeug baubar)",
@@ -13,17 +13,17 @@
     {
       "id": "mat-01",
       "name": "5-6 Wellpappe-Versandkartons (4 breite Kartons für die Bodenmatte & 1-2 große Kartons für die Oberkörperhaube)",
-      "desc": "Wellpappe-Kartons sind die beste Wärmedämmung, wenn fertige Isomatten oder Wärmezelte fehlen. Die gewellten Luftkanäle im Karton blockieren die Bodenkälte von Beton; falten Sie die Kartons an der Klebenaht von Hand oder mit einer [Scharfen Steinklinge](/protocol-04.html) flach auseinander."
+      "desc": "Wellpappe-Kartons sind die beste Wärmedämmung, wenn fertige Isomatten oder Wärmezelte fehlen. Die gewellten Luftkanäle im Karton blockieren die Bodenkälte von Beton; falten Sie die Kartons an der Klebenaht von Hand oder mit einer [Scharfen Steinklinge](/protocol-04) flach auseinander."
     },
     {
       "id": "mat-02",
       "name": "20-30 Bögen Zeitungspapier (oder Prospekte/Packpapier) & 1 Bettdeckenbezug oder 2-3 dicke Wintermäntel",
-      "desc": "Wärmendes Füllmaterial als Ersatz für fehlende Daunenschlafsäcke oder Heizkissen. Wenn Sie Zeitungsbögen locker zu faustgroßen Kugeln knüllen und in einen Bettbezug oder zwischen Wintermäntel füllen (Öffnungen mit [Wilder Kudzu-Schnur](/protocol-05.html) oder Schnürsenkeln zubinden), schließen die Papierfalten ruhende Warmluft wie echte Daunen ein."
+      "desc": "Wärmendes Füllmaterial als Ersatz für fehlende Daunenschlafsäcke oder Heizkissen. Wenn Sie Zeitungsbögen locker zu faustgroßen Kugeln knüllen und in einen Bettbezug oder zwischen Wintermäntel füllen (Öffnungen mit [Wilder Kudzu-Schnur](/protocol-05) oder Schnürsenkeln zubinden), schließen die Papierfalten ruhende Warmluft wie echte Daunen ein."
     },
     {
       "id": "mat-03",
       "name": "Zwei Handspannen Küchen-Metallfolie & 1 dünne Decke oder großes Badetuch (gekochter Reis oder Kiefernharz als Kleber)",
-      "desc": "Strahlungswärme-Reflektor an der Innendecke des Kartons als Ersatz für eine Rettungsdecke. Mit zerdrücktem Reis oder Mehlkleister (im Feld [Kiefernharz-Kleber](/protocol-10.html)) wird die Metallfolie mit der glänzenden Seite nach unten an die Kartondecke geklebt und reflektiert 90% Ihrer Infrarot-Körperwärme zurück."
+      "desc": "Strahlungswärme-Reflektor an der Innendecke des Kartons als Ersatz für eine Rettungsdecke. Mit zerdrücktem Reis oder Mehlkleister (im Feld [Kiefernharz-Kleber](/protocol-10)) wird die Metallfolie mit der glänzenden Seite nach unten an die Kartondecke geklebt und reflektiert 90% Ihrer Infrarot-Körperwärme zurück."
     }
   ],
   "steps": [
@@ -195,7 +195,7 @@
               },
               {
                 "label": "ZUSATZ/WÄRME",
-                "value": "Eine auf dem [Thunfischdosen-Ölheizer](/protocol-21.html) erwärmte, in ein Handtuch gewickelte Wasserflasche im Fußraum wärmt selbst bei Frost."
+                "value": "Eine auf dem [Thunfischdosen-Ölheizer](/protocol-21) erwärmte, in ein Handtuch gewickelte Wasserflasche im Fußraum wärmt selbst bei Frost."
               }
             ],
             "fieldUse": "Stromloses Indoor-Schlafzelt bei Winter-Blackouts und Ausfall der Fernwärme/Gasheizung"
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Niemals Kerzen, Dosenheizer oder Kohlen in die Kartonkapsel stellen und niemals Kopf oder Öffnung mit Plastiktüten abdichten",
-    "description": "Wenn Sie offenes Feuer – wie Kerzen, Gaskocher, den [Thunfischdosen-Speiseölheizer](/protocol-21.html) oder Glut aus einem [Lehmofen](/protocol-06.html) – in eine enge Kapsel aus trockenem Karton und Zeitungspapier mitnehmen, fängt das Papier im Schlaf sofort Feuer und führt zu tödlichen Verbrennungen sowie Kohlenmonoxid-Erstickung (nutzen Sie Flammenheizer ausschließlich außerhalb in sicherem Abstand zum Wassererwärmen). Kleben Sie den Karton zudem nie luftdicht zu und ziehen Sie keine Plastiktüte über den Kopf – es besteht akute Erstickungsgefahr.",
+    "description": "Wenn Sie offenes Feuer – wie Kerzen, Gaskocher, den [Thunfischdosen-Speiseölheizer](/protocol-21) oder Glut aus einem [Lehmofen](/protocol-06) – in eine enge Kapsel aus trockenem Karton und Zeitungspapier mitnehmen, fängt das Papier im Schlaf sofort Feuer und führt zu tödlichen Verbrennungen sowie Kohlenmonoxid-Erstickung (nutzen Sie Flammenheizer ausschließlich außerhalb in sicherem Abstand zum Wassererwärmen). Kleben Sie den Karton zudem nie luftdicht zu und ziehen Sie keine Plastiktüte über den Kopf – es besteht akute Erstickungsgefahr.",
     "consequence": "Wenn Sie zusätzliche Wärme in der Kapsel wünschen, nehmen Sie niemals Feuer mit hinein, sondern legen Sie nur eine fest verschlossene Wärmflasche mit warmem Wasser (oder einen in dicke Handtücher gewickelten warmen Stein) ans Fußende."
   },
   "faqs": [
@@ -240,6 +240,7 @@
       "PRAXISGEPRÜFT // 0% BRENNSTOFF WINTER-BLACKOUT KÄLTESCHUTZ"
     ]
   },
-  "contentHash": "7102df871c650344",
-  "createdAt": "2026-11-03T01:00:00.000Z"
+  "contentHash": "fa7cb634f6645209",
+  "createdAt": "2026-11-03T01:00:00.000Z",
+  "updatedAt": "2026-11-03T10:37:53+09:00"
 }

@@ -4,7 +4,7 @@
   "title": "Como imobilizar fraturas e estancar sangramentos com galhos retos, musgo e pano fervido",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[PRIMEIROS SOCORROS] Prevenção de corte arterial/nervoso, choque hemorrágico e necrose",
-  "summary": "Quando um osso do braço ou da perna se quebra em uma queda na mata ou em escombros, deixar o membro solto faz com que as pontas afiadas do osso cortem artérias e nervos próximos, causando hemorragia grave ou paralisia permanente. No campo sem hospital, lave ao redor da ferida com [Sabão Natural de Cinzas](/protocol-13.html) e [Água Filtrada Fervida](/protocol-01.html) morna para evitar tétano e infecções, pressione uma compressa de estopa fervida por 10 minutos sobre o sangramento e imobilize tanto a articulação de cima quanto a de baixo com dois galhos retos forrados com musgo e [Couro Natural Macio](/protocol-17.html), amarrados em 4 pontos com [Corda de Cipó Silvestre](/protocol-05.html).",
+  "summary": "Quando um osso do braço ou da perna se quebra em uma queda na mata ou em escombros, deixar o membro solto faz com que as pontas afiadas do osso cortem artérias e nervos próximos, causando hemorragia grave ou paralisia permanente. No campo sem hospital, lave ao redor da ferida com [Sabão Natural de Cinzas](/protocol-13) e [Água Filtrada Fervida](/protocol-01) morna para evitar tétano e infecções, pressione uma compressa de estopa fervida por 10 minutos sobre o sangramento e imobilize tanto a articulação de cima quanto a de baixo com dois galhos retos forrados com musgo e [Couro Natural Macio](/protocol-17), amarrados em 4 pontos com [Corda de Cipó Silvestre](/protocol-05).",
   "timeRequired": "Cerca de 20 min (5 min estancamento + 10 min acolchoamento + 5 min amarração em 4 pontos)",
   "successRate": "99% (Com imobilização de duas articulações e teste de retorno rosado na unha em 2 s)",
   "difficulty": "Médio (Executável na hora com galhos, musgo e pano fervido sem kit de primeiros socorros)",
@@ -13,12 +13,12 @@
     {
       "id": "mat-01",
       "name": "2 galhos retos e firmes da grossura do polegar (Mais longos que as articulações de cima e de baixo)",
-      "desc": "Galhos rígidos de madeira dura que não enverguem. Para um antebraço quebrado, escolha varetas de **dois palmos e meio (45-50 cm)** que cubram do cotovelo até a ponta dos dedos, e alise os nós com um [Machado ou Faca de Pedra](/protocol-04.html)."
+      "desc": "Galhos rígidos de madeira dura que não enverguem. Para um antebraço quebrado, escolha varetas de **dois palmos e meio (45-50 cm)** que cubram do cotovelo até a ponta dos dedos, e alise os nós com um [Machado ou Faca de Pedra](/protocol-04)."
     },
     {
       "id": "mat-02",
       "name": "4 punhados de musgo esfagno limpo / folhas secas e couro macio (Para acolchoamento interno)",
-      "desc": "Almofada macia que impede que a madeira dura aperte diretamente a carne inchada e os ossos, evitando a morte do tecido (necrose). Forre o interior dos galhos com 2 cm de espessura e envolva com [Couro Natural Macio](/protocol-17.html)."
+      "desc": "Almofada macia que impede que a madeira dura aperte diretamente a carne inchada e os ossos, evitando a morte do tecido (necrose). Forre o interior dos galhos com 2 cm de espessura e envolva com [Couro Natural Macio](/protocol-17)."
     },
     {
       "id": "mat-03",
@@ -28,19 +28,19 @@
     {
       "id": "mat-04",
       "name": "1 litro de água limpa fervida e resfriada + Sabão natural de cinzas",
-      "desc": "Água passada no [Filtro de Água Natural](/protocol-01.html) e fervida, junto com [Sabão Natural de Cinzas](/protocol-13.html) para lavar as mãos do socorrista e remover a terra ao redor do ferimento."
+      "desc": "Água passada no [Filtro de Água Natural](/protocol-01) e fervida, junto com [Sabão Natural de Cinzas](/protocol-13) para lavar as mãos do socorrista e remover a terra ao redor do ferimento."
     },
     {
       "id": "mat-05",
       "name": "4 cordas de cipó silvestre e 1 peça triangular grande de couro (Para amarração e tipóia)",
-      "desc": "[Corda de Cipó Silvestre](/protocol-05.html) para amarrar os quatro pontos acima e abaixo da fratura, e um pano triangular de couro para apoiar o braço na altura do coração."
+      "desc": "[Corda de Cipó Silvestre](/protocol-05) para amarrar os quatro pontos acima e abaixo da fratura, e um pano triangular de couro para apoiar o braço na altura do coração."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Passo 1: Lavar ao redor da ferida com água fervida e pressionar por 10 minutos com pano fervido",
-      "description": "1. **Lavar as Mãos e Limpar a Terra ao Redor**: Lave bem as mãos com [Sabão Natural de Cinzas](/protocol-13.html) e despeje devagar [Água Filtrada Fervida](/protocol-01.html) morna de cima para baixo ao redor da ferida para remover terra e areia, prevenindo o tétano.\n2. **Pressionar por 10 Minutos com Compressa de 8 Camadas**: Dobre um pano de estopa fervido em **8 camadas do tamanho da palma**, coloque sobre o sangramento e **pressione com firmeza constante por 10 minutos seguidos** sem levantar.\n3. **Nunca Forçar o Osso para o Lugar**: Mesmo que o osso esteja torto ou aparente, nunca puxe nem empurre para dentro para não romper artérias profundas; **apoie o membro exatamente na posição encontrada**.",
+      "description": "1. **Lavar as Mãos e Limpar a Terra ao Redor**: Lave bem as mãos com [Sabão Natural de Cinzas](/protocol-13) e despeje devagar [Água Filtrada Fervida](/protocol-01) morna de cima para baixo ao redor da ferida para remover terra e areia, prevenindo o tétano.\n2. **Pressionar por 10 Minutos com Compressa de 8 Camadas**: Dobre um pano de estopa fervido em **8 camadas do tamanho da palma**, coloque sobre o sangramento e **pressione com firmeza constante por 10 minutos seguidos** sem levantar.\n3. **Nunca Forçar o Osso para o Lugar**: Mesmo que o osso esteja torto ou aparente, nunca puxe nem empurre para dentro para não romper artérias profundas; **apoie o membro exatamente na posição encontrada**.",
       "actionNote": "> Nunca arranque a primeira compressa encharcada: Levantar o pano para olhar arranca o coágulo recém-formado e faz o sangue jorrar novamente. Se a primeira compressa encharcar, deixe-a no lugar e coloque outra compressa limpa por cima.",
       "svgFileName": "pr18-step-01.svg",
       "svgLabels": [
@@ -65,7 +65,7 @@
             "traits": [
               {
                 "label": "ESTÉRIL",
-                "value": "Lavada com [Sabão de Cinzas](/protocol-13.html) e **fervida por mais de 10 minutos** contra bactérias."
+                "value": "Lavada com [Sabão de Cinzas](/protocol-13) e **fervida por mais de 10 minutos** contra bactérias."
               },
               {
                 "label": "8 CAMADAS",
@@ -84,7 +84,7 @@
     {
       "stepNumber": "02",
       "title": "Passo 2: Escolher 2 galhos retos que cubram ambas as articulações e forrar com musgo e couro",
-      "description": "1. **Cortar 2 Galhos Mais Longos que Ambas as Articulações**: Escolha dois galhos retos da grossura do polegar que **alcancem desde a articulação de cima (cotovelo/joelho) até passar a de baixo (pulso/tornozelo)—cerca de 45-50 cm**—e raspe os nós com uma [Lasca de Pedra Afiada](/protocol-04.html).\n2. **Forrar o Interior com Musgo e Couro Macio**: Para que a madeira dura não machuque a pele inchada, cubra toda a face interna dos galhos com **musgo limpo ou folhas macias de 2 cm de espessura** e envolva com [Couro Natural Macio](/protocol-17.html).\n3. **Colocar um Rolo de Musgo na Palma da Mão**: Em fraturas de antebraço ou pulso, coloque um **rolinho de musgo do tamanho de um ovo na palma** para manter os dedos levemente curvados.",
+      "description": "1. **Cortar 2 Galhos Mais Longos que Ambas as Articulações**: Escolha dois galhos retos da grossura do polegar que **alcancem desde a articulação de cima (cotovelo/joelho) até passar a de baixo (pulso/tornozelo)—cerca de 45-50 cm**—e raspe os nós com uma [Lasca de Pedra Afiada](/protocol-04).\n2. **Forrar o Interior com Musgo e Couro Macio**: Para que a madeira dura não machuque a pele inchada, cubra toda a face interna dos galhos com **musgo limpo ou folhas macias de 2 cm de espessura** e envolva com [Couro Natural Macio](/protocol-17).\n3. **Colocar um Rolo de Musgo na Palma da Mão**: Em fraturas de antebraço ou pulso, coloque um **rolinho de musgo do tamanho de um ovo na palma** para manter os dedos levemente curvados.",
       "actionNote": "> Proibido usar gravetos curtos que só cubram o meio quebrado: Amarrar gravetos curtos só no meio do osso quebrado deixa o cotovelo e o pulso girarem, torcendo as pontas quebradas. Use sempre galhos longos que travem as duas articulações vizinhas.",
       "svgFileName": "pr18-step-02.svg",
       "svgLabels": [
@@ -128,7 +128,7 @@
     {
       "stepNumber": "03",
       "title": "Passo 3: Apoiar as talas nos dois lados e amarrar em 4 pontos evitando o centro da ferida",
-      "description": "1. **Apoiar as 2 Talas Acolchoadas nos Dois Lados**: Enquanto um ajudante segura com cuidado as articulações de cima e de baixo, posicione os dois galhos acolchoados **paralelos nos lados interno e externo do membro**.\n2. **Amarrar em 4 Pontos (2 Acima e 2 Abaixo) Evitando a Fratura**: Nunca amarre em cima do osso quebrado. Passe tiras largas de pano em **dois pontos acima da fratura e dois pontos abaixo (4 no total)** e firme com [Corda de Cipó Silvestre](/protocol-05.html).\n3. **Deixar Folga para 1 Dedo Sob Cada Amarra**: Confira se **cabe um dedo mínimo justo por baixo de cada tira** para não prender o sangue, e dê os nós sobre a madeira externa.",
+      "description": "1. **Apoiar as 2 Talas Acolchoadas nos Dois Lados**: Enquanto um ajudante segura com cuidado as articulações de cima e de baixo, posicione os dois galhos acolchoados **paralelos nos lados interno e externo do membro**.\n2. **Amarrar em 4 Pontos (2 Acima e 2 Abaixo) Evitando a Fratura**: Nunca amarre em cima do osso quebrado. Passe tiras largas de pano em **dois pontos acima da fratura e dois pontos abaixo (4 no total)** e firme com [Corda de Cipó Silvestre](/protocol-05).\n3. **Deixar Folga para 1 Dedo Sob Cada Amarra**: Confira se **cabe um dedo mínimo justo por baixo de cada tira** para não prender o sangue, e dê os nós sobre a madeira externa.",
       "actionNote": "> Proibido amarrar sobre a fratura ou usar corda fina direto na pele: Apertar em cima do osso quebrado empurra farpas ósseas para dentro da carne. Também nunca amarre cipó fino direto na pele; passe sempre tiras de pano de dois dedos de largura primeiro.",
       "svgFileName": "pr18-step-03.svg",
       "svgLabels": [
@@ -172,7 +172,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Testar o retorno rosado da unha em 2 segundos e elevar na altura do coração",
-      "description": "1. **Testar Retorno Rosado em 2 Segundos na Unha**: Logo após amarrar e a cada 30 minutos, **aperte a unha do polegar ou do pé machucado até ficar branca, solte e confirme se a cor rosada volta em até 2 segundos**.\n2. **Afrouxar os Nós se Esfriar ou Formigar**: Se as pontas dos dedos ficarem geladas, pálidas ou roxas, ou formigarem, o inchaço está apertando as faixas; **afrouxe imediatamente os 4 nós em meio dedo**.\n3. **Apoiar na Altura do Coração com Tipóia de Couro**: Pendure uma **tipóia triangular larga de [Couro Natural Macio](/protocol-17.html) no pescoço para manter a mão levemente mais alta que o cotovelo (altura do coração)** e reduzir o inchaço.",
+      "description": "1. **Testar Retorno Rosado em 2 Segundos na Unha**: Logo após amarrar e a cada 30 minutos, **aperte a unha do polegar ou do pé machucado até ficar branca, solte e confirme se a cor rosada volta em até 2 segundos**.\n2. **Afrouxar os Nós se Esfriar ou Formigar**: Se as pontas dos dedos ficarem geladas, pálidas ou roxas, ou formigarem, o inchaço está apertando as faixas; **afrouxe imediatamente os 4 nós em meio dedo**.\n3. **Apoiar na Altura do Coração com Tipóia de Couro**: Pendure uma **tipóia triangular larga de [Couro Natural Macio](/protocol-17) no pescoço para manter a mão levemente mais alta que o cotovelo (altura do coração)** e reduzir o inchaço.",
       "actionNote": "> Verificação obrigatória da unha a cada 30 minutos: Mesmo deixando um dedo de folga no início, o inchaço interno da fratura aumenta com o tempo e pode cortar a circulação causando necrose. Teste a unha a cada 30 minutos.",
       "svgFileName": "pr18-step-04.svg",
       "svgLabels": [
@@ -242,15 +242,15 @@
     {
       "question": "Uma hora depois de amarrar a tala, meus dedos ficaram frios e formigando. O que eu faço?",
       "causeDiagnostic": "O inchaço natural dentro da fratura está aumentando e fazendo com que as faixas antes ajustadas agora apertem os vasos sanguíneos.",
-      "resolution": "Deixar apertado pode causar necrose. Enquanto um ajudante segura os dois galhos da tala para o braço não mexer, desamarre os 4 nós de [Corda de Cipó Silvestre](/protocol-05.html) um por um, afrouxe até caber novamente um dedo mínimo por baixo e confirme na hora se a unha volta a ficar rosada em 2 segundos."
+      "resolution": "Deixar apertado pode causar necrose. Enquanto um ajudante segura os dois galhos da tala para o braço não mexer, desamarre os 4 nós de [Corda de Cipó Silvestre](/protocol-05) um por um, afrouxe até caber novamente um dedo mínimo por baixo e confirme na hora se a unha volta a ficar rosada em 2 segundos."
     },
     {
       "question": "O braço ou a perna quebrada está dobrado em um ângulo estranho. Como coloco galhos retos?",
       "causeDiagnostic": "Fraturas perto de articulações costumam travar em ângulo; forçá-las para ficarem retas rasga artérias e nervos.",
-      "resolution": "Jamais force o osso para ficar reto. Preencha os espaços vazios da dobra com bastante musgo limpo, folhas secas e [Couro Natural Macio](/protocol-17.html) para acolchoar o formato atual, e depois amarre os galhos por fora fixando o membro exatamente nessa posição."
+      "resolution": "Jamais force o osso para ficar reto. Preencha os espaços vazios da dobra com bastante musgo limpo, folhas secas e [Couro Natural Macio](/protocol-17) para acolchoar o formato atual, e depois amarre os galhos por fora fixando o membro exatamente nessa posição."
     }
   ],
   "createdAt": "2026-10-28T09:00:00+09:00",
-  "updatedAt": "2026-10-28T00:18:06.707Z",
-  "contentHash": "c4a0b16244afc3ec"
+  "updatedAt": "2026-10-28T17:33:13+09:00",
+  "contentHash": "f016404b5e722ceb"
 }

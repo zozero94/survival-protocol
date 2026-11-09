@@ -4,7 +4,7 @@
   "title": "Cómo Purificar Agua Potable en Apagones y Cortes de Agua con Sifón Capilar de Toalla de Algodón y Luz Solar (SODIS)",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[CORTE DE AGUA URBANO Y FILTRACIÓN CAPILAR SIN COMBUSTIBLE + DESINFECCIÓN SOLAR UV]",
-  "summary": "Si en casa ya dispone de agua embotellada, una pajita filtrante portátil (como LifeStraw), pastillas potabilizadoras de dióxido de cloro o un filtro doméstico de fibra hueca, utilice siempre esos productos comerciales primero por rapidez y seguridad. Sin embargo, cuando un terremoto, guerra o apagón masivo agota el agua embotellada y las pastillas, y usted queda atrapado en un apartamento urbano sin carbón, arena de río ni gas o electricidad para hervir agua (si está en el bosque con carbón y arena, use el [Filtro Natural de Carbón y Arena](/protocol-01.html)), beber agua de lluvia turbia o agua con óxido de las tuberías provoca diarrea grave y deshidratación mortal en 3 días. Al recuperar agua limpia del tanque cerámico del inodoro o agua de lluvia, filtrar el barro y el óxido mediante un puente sifón capilar de toalla 100% algodón retorcida, y exponer botellas PET transparentes sobre un reflector de aluminio a 6 horas de sol directo (método SODIS avalado por la OMS), obtendrá agua potable segura sin gastar combustible.",
+  "summary": "Si en casa ya dispone de agua embotellada, una pajita filtrante portátil (como LifeStraw), pastillas potabilizadoras de dióxido de cloro o un filtro doméstico de fibra hueca, utilice siempre esos productos comerciales primero por rapidez y seguridad. Sin embargo, cuando un terremoto, guerra o apagón masivo agota el agua embotellada y las pastillas, y usted queda atrapado en un apartamento urbano sin carbón, arena de río ni gas o electricidad para hervir agua (si está en el bosque con carbón y arena, use el [Filtro Natural de Carbón y Arena](/protocol-01)), beber agua de lluvia turbia o agua con óxido de las tuberías provoca diarrea grave y deshidratación mortal en 3 días. Al recuperar agua limpia del tanque cerámico del inodoro o agua de lluvia, filtrar el barro y el óxido mediante un puente sifón capilar de toalla 100% algodón retorcida, y exponer botellas PET transparentes sobre un reflector de aluminio a 6 horas de sol directo (método SODIS avalado por la OMS), obtendrá agua potable segura sin gastar combustible.",
   "timeRequired": "2 horas de filtración + 6 horas de desinfección solar (goteo capilar autónomo y exposición al sol directo)",
   "successRate": "99% (tras filtrar con toalla 100% algodón en desnivel y exponer en botellas PET incoloras a 6 horas de sol despejado)",
   "difficulty": "Principiante (Sin fuego, carbón ni arena; usa solo una toalla de algodón, dos ollas y botellas transparentes)",
@@ -18,12 +18,12 @@
     {
       "id": "mat-02",
       "name": "2–3 Botellas PET Transparentes Incoloras de 2L o Menos sin Etiqueta (Botellas de Agua/Refresco sin Rayones)",
-      "desc": "Recipientes de desinfección permeables a rayos UV-A cuando faltan pastillas o leña. Deben ser botellas incoloras con el código triangular #1 (PET) en la base; retire toda etiqueta plástica y pegamento con la uña o un [Cuchillo de Piedra Primitivo](/protocol-04.html)."
+      "desc": "Recipientes de desinfección permeables a rayos UV-A cuando faltan pastillas o leña. Deben ser botellas incoloras con el código triangular #1 (PET) en la base; retire toda etiqueta plástica y pegamento con la uña o un [Cuchillo de Piedra Primitivo](/protocol-04)."
     },
     {
       "id": "mat-03",
       "name": "Papel de Aluminio de Cocina (2 Palmos) y 1 Plancha de Cartón (Pegamento de Arroz o Resina de Pino)",
-      "desc": "Reflector solar que rebota la luz y el calor infrarrojo hacia la cara inferior de las botellas, duplicando la velocidad de esterilización. Pegue el lado brillante del aluminio sobre el cartón con arroz cocido o [Pegamento de Resina de Pino](/protocol-10.html)."
+      "desc": "Reflector solar que rebota la luz y el calor infrarrojo hacia la cara inferior de las botellas, duplicando la velocidad de esterilización. Pegue el lado brillante del aluminio sobre el cartón con arroz cocido o [Pegamento de Resina de Pino](/protocol-10)."
     }
   ],
   "steps": [
@@ -63,7 +63,7 @@
               },
               {
                 "label": "MAR/PROHIBIDO",
-                "value": "La sal marina no se filtra con tela; el agua de mar debe destilarse en el [Destilador de Barro y Bambú](/protocol-20.html)."
+                "value": "La sal marina no se filtra con tela; el agua de mar debe destilarse en el [Destilador de Barro y Bambú](/protocol-20)."
               }
             ],
             "fieldUse": "Captación de agua de emergencia en viviendas y eliminación primaria de lodo pesado"
@@ -162,7 +162,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Acostar la Botella sobre el Reflector de Cartón y Aluminio al Sol Directo por 6 Horas (o Hervir 3 Minutos)",
-      "description": "1. **Armar el Reflector de Cartón y Papel Aluminio**: Doble una lámina de cartón en forma de canal en V suave y pegue **papel de aluminio de cocina (con la cara más brillante hacia arriba)** para formar una cuna concentradora.\n2. **Acostar las Botellas Horizontalmente al Sol Directo**: Coloque el reflector en un lugar exterior sin sombra (balcón abierto, azotea o patio inclinado 30–45° hacia el sol) y **acueste las botellas PET transparentes de lado**, nunca de pie.\n3. **Exponer 6 Horas al Sol del Mediodía**: Déjelas bajo **sol directo entre las 9:00 y las 15:00 durante al menos 6 horas seguidas** para que los rayos UV-A y el calor solar (>50°C) eliminen los microbios (si el cielo está más de 50% nublado, exponga durante **2 días seguidos**; si llueve, recoja agua de lluvia limpia o hiérvala).\n4. **Enfriar y Beber, o Hervir 3 Minutos si Hay Fuego**: Pasadas 6 horas, deje enfriar a la sombra el **agua tibia como baño** antes de beber; si cuenta con la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o el [Calentador de Lata de Atún y Aceite](/protocol-21.html), puede hervir el agua filtrada durante 3 minutos.",
+      "description": "1. **Armar el Reflector de Cartón y Papel Aluminio**: Doble una lámina de cartón en forma de canal en V suave y pegue **papel de aluminio de cocina (con la cara más brillante hacia arriba)** para formar una cuna concentradora.\n2. **Acostar las Botellas Horizontalmente al Sol Directo**: Coloque el reflector en un lugar exterior sin sombra (balcón abierto, azotea o patio inclinado 30–45° hacia el sol) y **acueste las botellas PET transparentes de lado**, nunca de pie.\n3. **Exponer 6 Horas al Sol del Mediodía**: Déjelas bajo **sol directo entre las 9:00 y las 15:00 durante al menos 6 horas seguidas** para que los rayos UV-A y el calor solar (>50°C) eliminen los microbios (si el cielo está más de 50% nublado, exponga durante **2 días seguidos**; si llueve, recoja agua de lluvia limpia o hiérvala).\n4. **Enfriar y Beber, o Hervir 3 Minutos si Hay Fuego**: Pasadas 6 horas, deje enfriar a la sombra el **agua tibia como baño** antes de beber; si cuenta con la [Estufa de Gas de Madera de Doble Lata](/protocol-12) o el [Calentador de Lata de Atún y Aceite](/protocol-21), puede hervir el agua filtrada durante 3 minutos.",
       "actionNote": "> Por qué la botella debe acostarse sobre aluminio y no dejarse de pie: Si la botella está vertical, la columna de agua es demasiado profunda y los rayos UV no llegan al fondo. Al acostarla, el espesor del agua baja a menos de 10 cm y el aluminio rebota el sol por debajo.",
       "svgFileName": "pr23-step-04.svg",
       "svgLabels": [
@@ -206,7 +206,7 @@
   ],
   "fatalMistake": {
     "title": "FATAL // Nunca Use Botellas de Color Verde o Marrón ni Sol Detrás de Ventanas Cerradas, y Jamás Beba Agua con Limpiadores Químicos o Combustible",
-    "description": "Las botellas de plástico de colores (verdes de refresco o marrones de cerveza) y las botellas viejas muy rayadas bloquean los rayos UV-A por completo, dejando vivas las bacterias aunque pasen horas al sol. Asimismo, poner las botellas detrás de ventanas cerradas de doble acristalamiento frena la radiación UV; abra siempre la ventana de par en par o colóquelas al aire libre (en días lluviosos o de noche, hierva el agua en la [Estufa de Gas de Madera de Doble Lata](/protocol-12.html) o el [Calentador de Lata de Atún y Aceite](/protocol-21.html)). Por último, jamás beba agua de cisternas que contengan pastillas limpiadoras azules, anticongelante, aceite o pesticidas, pues ni la tela ni el sol eliminan venenos químicos.",
+    "description": "Las botellas de plástico de colores (verdes de refresco o marrones de cerveza) y las botellas viejas muy rayadas bloquean los rayos UV-A por completo, dejando vivas las bacterias aunque pasen horas al sol. Asimismo, poner las botellas detrás de ventanas cerradas de doble acristalamiento frena la radiación UV; abra siempre la ventana de par en par o colóquelas al aire libre (en días lluviosos o de noche, hierva el agua en la [Estufa de Gas de Madera de Doble Lata](/protocol-12) o el [Calentador de Lata de Atún y Aceite](/protocol-21)). Por último, jamás beba agua de cisternas que contengan pastillas limpiadoras azules, anticongelante, aceite o pesticidas, pues ni la tela ni el sol eliminan venenos químicos.",
     "consequence": "Use solo agua libre de químicos, fíltrela hasta que esté cristalina, llene botellas PET #1 incoloras y complete las 6 horas de sol directo antes de beber."
   },
   "faqs": [
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T02:26:54.183Z",
-  "contentHash": "621efe19c4a078a8"
+  "updatedAt": "2026-11-04T11:56:30+09:00",
+  "contentHash": "1e9b8d304fe76a93"
 }

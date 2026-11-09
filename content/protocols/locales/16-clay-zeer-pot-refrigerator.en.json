@@ -4,7 +4,7 @@
   "title": "Zero-Power Evaporative Clay Pot Refrigerator (Field Zeer Pot) for Preserving Meat and Food",
   "threatLevel": "HIGH",
   "threatLevelText": "[SUMMER MEAT SPOILAGE & FOOD POISONING DEFENSE & ZERO-POWER COLD PRESERVATION]",
-  "summary": "In midsummer heat or a post-grid disaster zone, meat and fish hard-won through [animal traps and hunting](/protocol-08.html) or [primitive fish traps](/protocol-11.html) breed fly larvae and putrefactive bacteria within half a day at ambient temperatures, causing fatal food poisoning and enteritis. In the field without electricity or ice, you must immediately build an evaporative cooling 'Field Zeer Pot' refrigerator by nesting two differently sized 'unglazed porous clay pots' fired on the same principle as an [earthen kiln](/protocol-06.html), packing [natural water filter](/protocol-01.html) river sand into the gap between them, and pouring cold water so evaporation continuously draws heat away. As water evaporates through the microscopic pores of the outer pot wall, it maintains the interior 8 to 12°C cooler than the outside air; storing food inside the chamber disinfected with [natural lye soap](/protocol-13.html) preserves rations fresh for over a week with zero electricity.",
+  "summary": "In midsummer heat or a post-grid disaster zone, meat and fish hard-won through [animal traps and hunting](/protocol-08) or [primitive fish traps](/protocol-11) breed fly larvae and putrefactive bacteria within half a day at ambient temperatures, causing fatal food poisoning and enteritis. In the field without electricity or ice, you must immediately build an evaporative cooling 'Field Zeer Pot' refrigerator by nesting two differently sized 'unglazed porous clay pots' fired on the same principle as an [earthen kiln](/protocol-06), packing [natural water filter](/protocol-01) river sand into the gap between them, and pouring cold water so evaporation continuously draws heat away. As water evaporates through the microscopic pores of the outer pot wall, it maintains the interior 8 to 12°C cooler than the outside air; storing food inside the chamber disinfected with [natural lye soap](/protocol-13) preserves rations fresh for over a week with zero electricity.",
   "timeRequired": "40 Mins (Pot Selection & Base Sealing 15m + Sand Packing & Watering 15m + Shaded Setup 10m)",
   "successRate": "95% (When using unglazed porous terracotta pots and placing in shaded breeze)",
   "difficulty": "Easy (Maintain two-knuckle sand thickness & prevent water spillover into food chamber)",
@@ -13,22 +13,22 @@
     {
       "id": "mat-01",
       "name": "2 Unglazed Porous Clay Pots (Large Outer & Smaller Inner Earthenware)",
-      "desc": "Low-fired reddish-brown terracotta pots without glossy glaze coating, similar to an [earthen kiln](/protocol-06.html). Pair a large pot (mouth width two handspans, ~35-40cm) with a smaller pot that fits inside (mouth width one-and-a-half handspans, ~25cm) so moisture seeps through microscopic pores and evaporates to cool the core."
+      "desc": "Low-fired reddish-brown terracotta pots without glossy glaze coating, similar to an [earthen kiln](/protocol-06). Pair a large pot (mouth width two handspans, ~35-40cm) with a smaller pot that fits inside (mouth width one-and-a-half handspans, ~25cm) so moisture seeps through microscopic pores and evaporates to cool the core."
     },
     {
       "id": "mat-02",
       "name": "Washed Quartzite River Sand (Approx. 4-5kg)",
-      "desc": "Clean stream sand used in a [natural water filter](/protocol-01.html). Packs tightly into the gap between the two pots to hold cold water for hours and distribute moisture evenly across the entire outer pot wall."
+      "desc": "Clean stream sand used in a [natural water filter](/protocol-01). Packs tightly into the gap between the two pots to hold cold water for hours and distribute moisture evenly across the entire outer pot wall."
     },
     {
       "id": "mat-03",
       "name": "Cold Stream Water & 1 Sheet of Wet Coarse Burlap or Hemp Cloth",
-      "desc": "Clear water replenished twice daily into the sand layer, plus thick natural burlap or cotton cloth (same material as the [field charcoal mask](/protocol-15.html)) draped over the top opening to block sunlight and flies."
+      "desc": "Clear water replenished twice daily into the sand layer, plus thick natural burlap or cotton cloth (same material as the [field charcoal mask](/protocol-15)) draped over the top opening to block sunlight and flies."
     },
     {
       "id": "mat-04",
       "name": "Pine Pitch Glue & Stiff Clay Paste for Sealing Drain Holes",
-      "desc": "Heated [pine pitch glue](/protocol-10.html) and dense clay paste used to completely plug bottom drainage holes when repurposing unglazed clay flowerpots."
+      "desc": "Heated [pine pitch glue](/protocol-10) and dense clay paste used to completely plug bottom drainage holes when repurposing unglazed clay flowerpots."
     },
     {
       "id": "mat-05",
@@ -40,7 +40,7 @@
     {
       "stepNumber": "01",
       "title": "Step 1: Select 2 Unglazed Porous Clay Pots, Seal Base Drain Holes with Pine Pitch, and Sanitize",
-      "description": "1. **Select Breathable Unglazed Pots**: Choose **a large pot two handspans wide (~38cm) and a small pot one-and-a-half handspans wide (~26cm)** with matte unglazed surfaces so water can permeate the walls and evaporate.\n2. **Seal Bottom Drain Holes Completely**: To prevent cooling water from leaking out, cover any bottom drainage holes with a flat stone flake and seal tightly with [heated pine pitch glue](/protocol-10.html) and clay paste until rock-hard.\n3. **Sanitize Inner Storage Chamber**: Eliminate food-spoiling bacteria by scrubbing the inside wall of the smaller pot with boiled water and [natural lye soap](/protocol-13.html), then sun-drying completely.",
+      "description": "1. **Select Breathable Unglazed Pots**: Choose **a large pot two handspans wide (~38cm) and a small pot one-and-a-half handspans wide (~26cm)** with matte unglazed surfaces so water can permeate the walls and evaporate.\n2. **Seal Bottom Drain Holes Completely**: To prevent cooling water from leaking out, cover any bottom drainage holes with a flat stone flake and seal tightly with [heated pine pitch glue](/protocol-10) and clay paste until rock-hard.\n3. **Sanitize Inner Storage Chamber**: Eliminate food-spoiling bacteria by scrubbing the inside wall of the smaller pot with boiled water and [natural lye soap](/protocol-13), then sun-drying completely.",
       "actionNote": "> Never Use Glazed Ceramic Pots: Glossy glazed jars or plastic buckets block water from seeping through the outer wall, reducing evaporative cooling to zero. Always use rough reddish-brown unglazed terracotta that darkens immediately when splashed with water.",
       "svgFileName": "pr16-step-01.svg",
       "svgLabels": [
@@ -84,7 +84,7 @@
     {
       "stepNumber": "02",
       "title": "Step 2: Lay a Wet River Sand Bed on the Large Pot Floor and Center the Small Pot Levelly",
-      "description": "1. **Lay Insulating Base Sand**: Spread washed [quartzite river sand](/protocol-01.html) across the floor of the large pot to a flat thickness of **two finger knuckles (~4-5cm)** to block ground heat.\n2. **Center the Small Pot**: Place the smaller pot dead-center atop the sand bed, twisting gently left and right until seated levelly without wobbling.\n3. **Align Top Rims Level**: Adjust the base sand depth so the top rims of both pots sit at the exact same height, preventing sand or water from spilling into the inner food vault.",
+      "description": "1. **Lay Insulating Base Sand**: Spread washed [quartzite river sand](/protocol-01) across the floor of the large pot to a flat thickness of **two finger knuckles (~4-5cm)** to block ground heat.\n2. **Center the Small Pot**: Place the smaller pot dead-center atop the sand bed, twisting gently left and right until seated levelly without wobbling.\n3. **Align Top Rims Level**: Adjust the base sand depth so the top rims of both pots sit at the exact same height, preventing sand or water from spilling into the inner food vault.",
       "actionNote": "> Maintain Uniform Concentric Gap: If the inner pot leans against the outer pot wall, outside heat conducts directly into the food chamber. Center it carefully so an even two-finger-wide gap (~3-4cm) surrounds the pot on all sides.",
       "svgFileName": "pr16-step-02.svg",
       "svgLabels": [
@@ -112,7 +112,7 @@
     {
       "stepNumber": "04",
       "title": "Step 4: Wrap Food in Broad Leaves, Drape a Wet Burlap Cover, and Elevate in Shaded Breeze",
-      "description": "1. **Store Rations Hygienically**: Wrap [hunted meat](/protocol-08.html), [trapped fish](/protocol-11.html), or foraged berries in clean broad leaves and place them inside the dry inner chamber without crowding.\n2. **Seal Top with Wet Burlap**: Drape a water-soaked coarse burlap or hemp cloth across the entire top opening to block sunlight and flies, tucking its edges into the wet sand ring for continuous capillary wicking.\n3. **Elevate on Logs in Shaded Breeze**: Place the cooler on **forearm-thick oak support logs under breezy tree shade** to maximize 360° evaporation, and replenish the sand with cold water twice daily (morning and evening).",
+      "description": "1. **Store Rations Hygienically**: Wrap [hunted meat](/protocol-08), [trapped fish](/protocol-11), or foraged berries in clean broad leaves and place them inside the dry inner chamber without crowding.\n2. **Seal Top with Wet Burlap**: Drape a water-soaked coarse burlap or hemp cloth across the entire top opening to block sunlight and flies, tucking its edges into the wet sand ring for continuous capillary wicking.\n3. **Elevate on Logs in Shaded Breeze**: Place the cooler on **forearm-thick oak support logs under breezy tree shade** to maximize 360° evaporation, and replenish the sand with cold water twice daily (morning and evening).",
       "actionNote": "> Never Place in Enclosed Damp Spaces: Putting the pot inside a humid cave corner or windless sealed shelter stops water evaporation and halts cooling. Always set it up in a shaded spot with steady dry airflow.",
       "svgFileName": "pr16-step-04.svg",
       "svgLabels": [
@@ -193,6 +193,6 @@
     }
   ],
   "createdAt": "2026-10-26T00:05:00.000Z",
-  "updatedAt": "2026-10-26T00:08:42.165Z",
-  "contentHash": "418459d2aa16b06e"
+  "updatedAt": "2026-10-26T10:53:22+09:00",
+  "contentHash": "61cf2d9d25082a99"
 }

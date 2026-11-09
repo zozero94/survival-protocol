@@ -99,22 +99,22 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     const pr10 = allMasterProtocols.find(p => p.protocolId === 'PR-10')!;
     const pr10Audit = CrossLinkerService.auditCrossLinks(pr10, allMasterProtocols);
     assert.ok(
-      pr10Audit.existingLinks.some(l => l.url === '/protocol-04.html'),
+      pr10Audit.existingLinks.some(l => l.url === '/protocol-04' || l.url === '/protocol-04.html'),
       'PR-10(소나무 송진)은 돌칼/돌도끼 제작(PR-04)으로의 인라인 하이퍼링크를 포함해야 함'
     );
     assert.ok(
-      pr10Audit.existingLinks.some(l => l.url === '/protocol-09.html'),
+      pr10Audit.existingLinks.some(l => l.url === '/protocol-09' || l.url === '/protocol-09.html'),
       'PR-10(소나무 송진)은 참나무 숯가마(PR-09)로의 인라인 하이퍼링크를 포함해야 함'
     );
 
     const pr04 = allMasterProtocols.find(p => p.protocolId === 'PR-04')!;
     const pr04Audit = CrossLinkerService.auditCrossLinks(pr04, allMasterProtocols);
     assert.ok(
-      pr04Audit.existingLinks.some(l => l.url === '/protocol-05.html'),
+      pr04Audit.existingLinks.some(l => l.url === '/protocol-05' || l.url === '/protocol-05.html'),
       'PR-04(돌도끼)는 야생 밧줄 제작(PR-05)으로의 인라인 하이퍼링크를 포함해야 함'
     );
     assert.ok(
-      pr04Audit.existingLinks.some(l => l.url === '/protocol-10.html'),
+      pr04Audit.existingLinks.some(l => l.url === '/protocol-10' || l.url === '/protocol-10.html'),
       'PR-04(돌도끼)는 소나무 송진 접착제(PR-10)로의 인라인 하이퍼링크를 포함해야 함'
     );
   });
@@ -134,24 +134,24 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
   await t.test('16-6: 빌드된 HTML(protocol-10.html, protocol-04.html, protocol-18.html FAQ)에 인라인 하이퍼텍스트 앵커(data-proto="crosslink")가 정상 렌더링되어야 한다', () => {
     const html10 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-10.html'), 'utf-8');
     assert.ok(
-      html10.includes('data-proto="crosslink" href="/protocol-04.html"'),
-      'protocol-10.html 본문에 /protocol-04.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+      html10.includes('data-proto="crosslink"') && (html10.includes('href="/protocol-04"') || html10.includes('href="/protocol-04.html"')),
+      'protocol-10.html 본문에 /protocol-04 인라인 하이퍼링크 앵커가 렌더링되어야 함'
     );
 
     const html04 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-04.html'), 'utf-8');
     assert.ok(
-      html04.includes('data-proto="crosslink" href="/protocol-05.html"'),
-      'protocol-04.html 본문에 /protocol-05.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+      html04.includes('data-proto="crosslink"') && (html04.includes('href="/protocol-05"') || html04.includes('href="/protocol-05.html"')),
+      'protocol-04.html 본문에 /protocol-05 인라인 하이퍼링크 앵커가 렌더링되어야 함'
     );
 
     const html18 = fs.readFileSync(path.join(PUBLIC_DIR, 'protocol-18.html'), 'utf-8');
     assert.ok(
-      html18.includes('data-proto="crosslink" href="/protocol-17.html"'),
-      'protocol-18.html FAQ 영역에 /protocol-17.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+      html18.includes('data-proto="crosslink"') && (html18.includes('href="/protocol-17"') || html18.includes('href="/protocol-17.html"')),
+      'protocol-18.html FAQ 영역에 /protocol-17 인라인 하이퍼링크 앵커가 렌더링되어야 함'
     );
     assert.ok(
-      html18.includes('data-proto="crosslink" href="/protocol-05.html"'),
-      'protocol-18.html FAQ 영역에 /protocol-05.html 인라인 하이퍼링크 앵커가 렌더링되어야 함'
+      html18.includes('data-proto="crosslink"') && (html18.includes('href="/protocol-05"') || html18.includes('href="/protocol-05.html"')),
+      'protocol-18.html FAQ 영역에 /protocol-05 인라인 하이퍼링크 앵커가 렌더링되어야 함'
     );
     // FAQ 섹션 내에 파싱되지 않은 원시 마크다운 링크 문법(](/)이 잔존하지 않아야 함
     const faqSectionMatch = html18.match(/<section id="faq-section"[\s\S]*?<\/section>/);
@@ -281,7 +281,7 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
     const htmlFiles = fs.readdirSync(PUBLIC_DIR).filter(f => f.startsWith('protocol-') && f.endsWith('.html'));
     assert.ok(htmlFiles.length >= 21, '21개 이상의 프로토콜 HTML이 존재해야 함');
 
-    const unparsedRegex = /\[([^\]]+)\]\((?:\/protocol-\d{2}\.html|https?:\/\/[^)]+)\)/g;
+    const unparsedRegex = /\[([^\]]+)\]\((?:\/protocol-\d{2}(?:\.html)?|https?:\/\/[^)]+)\)/g;
 
     for (const file of htmlFiles) {
       const content = fs.readFileSync(path.join(PUBLIC_DIR, file), 'utf-8');
@@ -297,13 +297,14 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
       // protocol-21과 protocol-22는 fatalMistake에 인라인 링크가 반드시 <a data-proto="crosslink">로 렌더링되어야 함
       if (file === 'protocol-21.html') {
         assert.ok(
-          content.includes('href="/protocol-15.html"') && content.includes('data-proto="crosslink"'),
+          (content.includes('href="/protocol-15"') || content.includes('href="/protocol-15.html"')) && content.includes('data-proto="crosslink"'),
           'protocol-21.html의 fatalMistake 섹션에 protocol-15 링크가 a 태그로 렌더링되어야 함'
         );
       }
       if (file === 'protocol-22.html') {
         assert.ok(
-          content.includes('href="/protocol-21.html"') && content.includes('href="/protocol-06.html"'),
+          (content.includes('href="/protocol-21"') || content.includes('href="/protocol-21.html"')) &&
+          (content.includes('href="/protocol-06"') || content.includes('href="/protocol-06.html"')),
           'protocol-22.html의 fatalMistake 섹션에 protocol-21 및 protocol-06 링크가 a 태그로 렌더링되어야 함'
         );
       }

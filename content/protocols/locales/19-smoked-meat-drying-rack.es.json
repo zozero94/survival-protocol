@@ -4,7 +4,7 @@
   "title": "Cómo Secar y Ahumar Carne y Pescado con un Trípode de Ramas y Humo de Roble Verde para que Duren Más de un Mes (Charqui de Campo)",
   "threatLevel": "HIGH",
   "threatLevelText": "[CONSERVACIÓN DE ALIMENTOS] Evitar la Putrefacción de Carne y Pescado sin Refrigeración ni Sal y Asegurar Raciones Portátiles",
-  "summary": "En el campo, la carne y el pescado frescos capturados con una [Trampa de Piedra en Figura 4](/protocol-08.html) o una [Nasa de Sauce en Embudo](/protocol-11.html) contienen tanta humedad que las moscas ponen huevos y las bacterias los pudren en un solo día. Ni siquiera un [Refrigerador Evaporativo de Vasija](/protocol-16.html) puede transportarse en una marcha larga. En aislamiento sin sal, esta guía muestra cómo recortar toda la grasa blanca con un [Cuchillo de Piedra Afilado](/protocol-04.html), cortar la carne magra en tiras de 5mm, colgarlas a la altura del pecho en un trípode atado con [Cuerda de Liana Silvestre](/protocol-05.html) y quemar [Carbón de Roble](/protocol-09.html) cubierto con hojas verdes debajo para producir humo blanco sin llamas que extrae la humedad y conserva el alimento por más de un mes.",
+  "summary": "En el campo, la carne y el pescado frescos capturados con una [Trampa de Piedra en Figura 4](/protocol-08) o una [Nasa de Sauce en Embudo](/protocol-11) contienen tanta humedad que las moscas ponen huevos y las bacterias los pudren en un solo día. Ni siquiera un [Refrigerador Evaporativo de Vasija](/protocol-16) puede transportarse en una marcha larga. En aislamiento sin sal, esta guía muestra cómo recortar toda la grasa blanca con un [Cuchillo de Piedra Afilado](/protocol-04), cortar la carne magra en tiras de 5mm, colgarlas a la altura del pecho en un trípode atado con [Cuerda de Liana Silvestre](/protocol-05) y quemar [Carbón de Roble](/protocol-09) cubierto con hojas verdes debajo para producir humo blanco sin llamas que extrae la humedad y conserva el alimento por más de un mes.",
   "timeRequired": "Medio Día (1 h Limpieza y Orejonado + 30 min Armado del Trípode + 6–8 h Ahumado Lento)",
   "successRate": "98% (Eliminando toda la grasa blanca y manteniendo humo cálido sin llamas)",
   "difficulty": "Media (Realizable con ramas, carbón de roble y hojas verdes sin sal ni parrillas metálicas)",
@@ -13,7 +13,7 @@
     {
       "id": "mat-01",
       "name": "Carne Fresca de Caza o Pescado de Río Limpio (4–5 Puñados)",
-      "desc": "Carne magra o pescado recién capturado con una [Trampa de Piedra en Figura 4](/protocol-08.html) o [Nasa de Sauce en Embudo](/protocol-11.html). La grasa blanca nunca se seca bien y se enrancia rápido al aire, por lo que debe recortarse por completo con un [Cuchillo de Piedra Afilado](/protocol-04.html)."
+      "desc": "Carne magra o pescado recién capturado con una [Trampa de Piedra en Figura 4](/protocol-08) o [Nasa de Sauce en Embudo](/protocol-11). La grasa blanca nunca se seca bien y se enrancia rápido al aire, por lo que debe recortarse por completo con un [Cuchillo de Piedra Afilado](/protocol-04)."
     },
     {
       "id": "mat-02",
@@ -23,20 +23,20 @@
     {
       "id": "mat-03",
       "name": "2–3 Puñados de Carbón de Roble y una Brazada de Ramas y Hojas Verdes de Roble",
-      "desc": "Prepara una base de brasas en el suelo con [Carbón de Roble de Horno Primitivo](/protocol-09.html) y cúbrela con ramas y hojas verdes recién cortadas de roble, castaño o árboles frutales para ahogar las llamas y elevar un humo blanco continuo."
+      "desc": "Prepara una base de brasas en el suelo con [Carbón de Roble de Horno Primitivo](/protocol-09) y cúbrela con ramas y hojas verdes recién cortadas de roble, castaño o árboles frutales para ahogar las llamas y elevar un humo blanco continuo."
     },
     {
       "id": "mat-04",
       "name": "Cuerda de Liana Silvestre y Hojas Anchas o Cuero Suave para Cubierta de Humo",
-      "desc": "[Cuerda de Liana Silvestre](/protocol-05.html) para atar la cúspide del trípode y el marco transversal, más [Cuero Suave Natural](/protocol-17.html) o manojos de hojas anchas alrededor del trípode para retener el humo."
+      "desc": "[Cuerda de Liana Silvestre](/protocol-05) para atar la cúspide del trípode y el marco transversal, más [Cuero Suave Natural](/protocol-17) o manojos de hojas anchas alrededor del trípode para retener el humo."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Paso 1: Recortar Toda la Grasa Blanca con un Cuchillo de Piedra y Cortar Tiras Magras de 5mm",
-      "description": "1. **Eliminar el 100% de la Grasa Blanca y Coágulos**: La grasa blanca no pierde agua con el humo y se pudre con olor rancio en pocos días. Usa un [Cuchillo de Piedra Afilado](/protocol-04.html) para **recortar toda la grasa blanca y membranas duras, dejando solo carne magra roja**. En pescados, abre el vientre, saca las vísceras y branquias, y ábrelo plano.\n2. **Cortar Tiras Finas y Largas Siguiendo la Fibra**: Corta la carne magra a lo largo de la fibra con un **grosor uniforme de media falange del meñique (5mm), ancho de dos dedos (3cm) y largo de un palmo (20cm)**. Si es muy gruesa se pudre por dentro; si es muy fina se desmorona.\n3. **Orear la Humedad Superficial a la Sombra con Brisa por 30 Minutos**: Si pones carne mojada directo al humo, el hollín negro se pega al agua. Extiende las tiras sobre una roca limpia al **viento fresco durante 30 minutos hasta que la superficie se sienta ligeramente seca y pegajosa**.",
-      "actionNote": "> Guarda aparte los recortes de grasa blanca: Aunque la grasa blanca arruina el charqui, si la derrites a fuego lento obtienes sebo valioso para fabricar [Jabón Natural de Lejía de Ceniza](/protocol-13.html) o impermeabilizar [Cuero Suave Natural](/protocol-17.html).",
+      "description": "1. **Eliminar el 100% de la Grasa Blanca y Coágulos**: La grasa blanca no pierde agua con el humo y se pudre con olor rancio en pocos días. Usa un [Cuchillo de Piedra Afilado](/protocol-04) para **recortar toda la grasa blanca y membranas duras, dejando solo carne magra roja**. En pescados, abre el vientre, saca las vísceras y branquias, y ábrelo plano.\n2. **Cortar Tiras Finas y Largas Siguiendo la Fibra**: Corta la carne magra a lo largo de la fibra con un **grosor uniforme de media falange del meñique (5mm), ancho de dos dedos (3cm) y largo de un palmo (20cm)**. Si es muy gruesa se pudre por dentro; si es muy fina se desmorona.\n3. **Orear la Humedad Superficial a la Sombra con Brisa por 30 Minutos**: Si pones carne mojada directo al humo, el hollín negro se pega al agua. Extiende las tiras sobre una roca limpia al **viento fresco durante 30 minutos hasta que la superficie se sienta ligeramente seca y pegajosa**.",
+      "actionNote": "> Guarda aparte los recortes de grasa blanca: Aunque la grasa blanca arruina el charqui, si la derrites a fuego lento obtienes sebo valioso para fabricar [Jabón Natural de Lejía de Ceniza](/protocol-13) o impermeabilizar [Cuero Suave Natural](/protocol-17).",
       "svgFileName": "pr19-step-01.svg",
       "svgLabels": [
         "FIG. 01 // TRIMMING WHITE FAT & SLICING LEAN STRIPS",
@@ -60,7 +60,7 @@
             "traits": [
               {
                 "label": "MAGRO/LEAN",
-                "value": "Elimina el **100% de la grasa blanca y coágulos** con un [Cuchillo de Piedra Afilado](/protocol-04.html) para evitar rancidez."
+                "value": "Elimina el **100% de la grasa blanca y coágulos** con un [Cuchillo de Piedra Afilado](/protocol-04) para evitar rancidez."
               },
               {
                 "label": "GROSOR/5MM",
@@ -79,7 +79,7 @@
     {
       "stepNumber": "02",
       "title": "Paso 2: Levantar un Trípode de 3 Ramas y Atar una Parrilla de Varillas a la Altura del Pecho",
-      "description": "1. **Erguir un Trípode con 3 Ramas Largas**: Ata los extremos superiores de **3 ramas rectas del grosor de la muñeca y 180cm de largo** con [Cuerda de Liana Silvestre](/protocol-05.html), y abre las tres patas a **dos pasos de ancho (unos 120cm)** clavándolas firmes en el suelo.\n2. **Atar un Marco Triangular Horizontal a la Altura del Pecho**: Si cuelgas la carne muy cerca del fuego, se asará en vez de secarse. Ata 3 travesaños entre las patas a **la altura del pecho de un adulto (unos 120cm)** para formar un soporte triangular nivelado.\n3. **Colgar las Tiras con un Dedo de Separación sobre Varillas Peladas**: Coloca 8–10 varillas peladas y lisas sobre el marco triangular y cuelga las tiras de carne dejando **el ancho de un dedo (unos 2cm) de espacio** entre cada pieza.",
+      "description": "1. **Erguir un Trípode con 3 Ramas Largas**: Ata los extremos superiores de **3 ramas rectas del grosor de la muñeca y 180cm de largo** con [Cuerda de Liana Silvestre](/protocol-05), y abre las tres patas a **dos pasos de ancho (unos 120cm)** clavándolas firmes en el suelo.\n2. **Atar un Marco Triangular Horizontal a la Altura del Pecho**: Si cuelgas la carne muy cerca del fuego, se asará en vez de secarse. Ata 3 travesaños entre las patas a **la altura del pecho de un adulto (unos 120cm)** para formar un soporte triangular nivelado.\n3. **Colgar las Tiras con un Dedo de Separación sobre Varillas Peladas**: Coloca 8–10 varillas peladas y lisas sobre el marco triangular y cuelga las tiras de carne dejando **el ancho de un dedo (unos 2cm) de espacio** entre cada pieza.",
       "actionNote": "> Nunca dejes que las tiras de carne se toquen o superpongan: Donde dos trozos de carne quedan pegados, no circula el humo ni el aire, dejando una zona húmeda donde salen gusanos o moho. Deja siempre un dedo de espacio entre tiras.",
       "svgFileName": "pr19-step-02.svg",
       "svgLabels": [
@@ -123,7 +123,7 @@
     {
       "stepNumber": "03",
       "title": "Paso 3: Encender Brasas de Roble en el Pozo Central y Cubrir con Hojas Verdes Sin Llamas",
-      "description": "1. **Cavar un Pozo Poco Profundo en el Centro del Trípode**: Justo debajo de la parrilla, cava un hueco de **un palmo de profundidad (15cm) y dos palmos de ancho**, y coloca dos o tres puñados de [Carbón de Roble](/protocol-09.html) al rojo vivo encendido con un [Arco de Fricción](/protocol-02.html).\n2. **Cubrir las Brasas con Ramas y Hojas Verdes de Roble**: Sobre las brasas rojas sin llamas, coloca una **doble capa gruesa de ramas y hojas verdes húmedas de roble (o castaño/manzano)** para reducir el oxígeno y generar nubes densas de humo blanco.\n3. **Comprobar el Calor con la Mano Desnuda durante 3 Segundos**: Pon la mano junto a la carne colgada; si quema, hay demasiado calor. Añade más hojas verdes hasta que **puedas mantener la mano de 3 a 5 segundos sintiendo un calor suave y agradable**.",
+      "description": "1. **Cavar un Pozo Poco Profundo en el Centro del Trípode**: Justo debajo de la parrilla, cava un hueco de **un palmo de profundidad (15cm) y dos palmos de ancho**, y coloca dos o tres puñados de [Carbón de Roble](/protocol-09) al rojo vivo encendido con un [Arco de Fricción](/protocol-02).\n2. **Cubrir las Brasas con Ramas y Hojas Verdes de Roble**: Sobre las brasas rojas sin llamas, coloca una **doble capa gruesa de ramas y hojas verdes húmedas de roble (o castaño/manzano)** para reducir el oxígeno y generar nubes densas de humo blanco.\n3. **Comprobar el Calor con la Mano Desnuda durante 3 Segundos**: Pon la mano junto a la carne colgada; si quema, hay demasiado calor. Añade más hojas verdes hasta que **puedas mantener la mano de 3 a 5 segundos sintiendo un calor suave y agradable**.",
       "actionNote": "> Prohibido usar pino, coníferas o maderas tóxicas: El pino y las coníferas sueltan hollín negro de resina que amarga y contamina la carne. Maderas tóxicas como la adelfa o el zumaque venenoso impregnan veneno mortal en el humo. Usa solo maderas duras seguras como roble, castaño o frutales.",
       "svgFileName": "pr19-step-03.svg",
       "svgLabels": [
@@ -167,7 +167,7 @@
     {
       "stepNumber": "04",
       "title": "Paso 4: Envolver el Trípode con Cuero u Hojas para Retener el Humo y Secar por Medio Día",
-      "description": "1. **Rodear el Trípode con Cuero u Hojas Anchas**: Para que el viento no se lleve el humo, envuelve la parte media y superior del trípode con [Cuero Suave Natural](/protocol-17.html) o manojos de hojas anchas, dejando **solo un hueco del tamaño de un puño en la cúspide** para que el humo envuelva la carne antes de salir.\n2. **Voltear las Tiras Cada 2 Horas durante 6–8 Horas**: Invierte la posición de las tiras **una vez cada 2 horas** para un secado parejo, añadiendo carbón de roble y hojas verdes durante **medio día (6–8 horas)**.\n3. **Verificar con la Prueba de Doblado como Rama Seca**: Toma la tira más gruesa, déjala enfriar y **dóblala por la mitad con los dedos; cuando no salga ni una gota de sangre o agua y se doble correosa como una rama seca mostrando fibras blancas**, está lista.",
+      "description": "1. **Rodear el Trípode con Cuero u Hojas Anchas**: Para que el viento no se lleve el humo, envuelve la parte media y superior del trípode con [Cuero Suave Natural](/protocol-17) o manojos de hojas anchas, dejando **solo un hueco del tamaño de un puño en la cúspide** para que el humo envuelva la carne antes de salir.\n2. **Voltear las Tiras Cada 2 Horas durante 6–8 Horas**: Invierte la posición de las tiras **una vez cada 2 horas** para un secado parejo, añadiendo carbón de roble y hojas verdes durante **medio día (6–8 horas)**.\n3. **Verificar con la Prueba de Doblado como Rama Seca**: Toma la tira más gruesa, déjala enfriar y **dóblala por la mitad con los dedos; cuando no salga ni una gota de sangre o agua y se doble correosa como una rama seca mostrando fibras blancas**, está lista.",
       "actionNote": "> Enfría por completo el charqui antes de guardarlo en una bolsa transpirable: Si guardas charqui tibio en un recipiente cerrado, el calor residual forma gotas de condensación que crían moho. Enfríalo siempre a la sombra y guárdalo en arpillera seca o cuero.",
       "svgFileName": "pr19-step-04.svg",
       "svgLabels": [
@@ -237,15 +237,15 @@
     {
       "question": "Tras 3 horas de ahumado, la carne está cubierta de hollín negro y sigue húmeda al tocarla.",
       "causeDiagnostic": "Colgaste la carne mojada sin orearla 30 minutos al viento, se mezclaron ramas resinosas de pino en el fuego o el respiradero superior del trípode está tapado y el vapor no puede salir.",
-      "resolution": "Abre de inmediato un hueco del tamaño de un puño en la cúspide del trípode para evacuar el vapor, retira cualquier rama de conífera y deja solo [Carbón de Roble de Horno Primitivo](/protocol-09.html) y hojas verdes de madera dura. Limpia el hollín con hierba seca, deja que el viento seque la superficie y reanuda el ahumado suave."
+      "resolution": "Abre de inmediato un hueco del tamaño de un puño en la cúspide del trípode para evacuar el vapor, retira cualquier rama de conífera y deja solo [Carbón de Roble de Horno Primitivo](/protocol-09) y hojas verdes de madera dura. Limpia el hollín con hierba seca, deja que el viento seque la superficie y reanuda el ahumado suave."
     },
     {
       "question": "Las moscas y mosquitos siguen acercándose a la carne mientras se seca. ¿Cómo los detengo?",
       "causeDiagnostic": "Las hojas verdes del fogón se consumieron y dejó de salir humo, o la cubierta exterior del trípode está muy abierta y el viento dispersa el humo.",
-      "resolution": "Las moscas no pueden acercarse al humo denso de roble ni al calor. Cubre las brasas con otro puñado de ramas y hojas verdes húmedas de roble para mantener el humo blanco constante, y ajusta [Cuero Suave Natural](/protocol-17.html) o manojos de hojas alrededor del trípode para envolver la carne por completo."
+      "resolution": "Las moscas no pueden acercarse al humo denso de roble ni al calor. Cubre las brasas con otro puñado de ramas y hojas verdes húmedas de roble para mantener el humo blanco constante, y ajusta [Cuero Suave Natural](/protocol-17) o manojos de hojas alrededor del trípode para envolver la carne por completo."
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T04:50:53.466Z",
-  "contentHash": "fcd2e88cf547f683"
+  "updatedAt": "2026-10-29T14:00:23+09:00",
+  "contentHash": "2feab12730b3a242"
 }

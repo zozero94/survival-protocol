@@ -18,7 +18,7 @@
     {
       "id": "mat-02",
       "name": "50cm de Fio Elétrico Descartado (Sem Capa Isolante)",
-      "desc": "Use uma [lasca de pedra afiada ou machado de pedra](/protocol-04.html) para rasgar a capa isolante externa e extrair o arame nu de cobre ou aço (1,5–3mm) para amarrar as latas e fazer a trempe da panela."
+      "desc": "Use uma [lasca de pedra afiada ou machado de pedra](/protocol-04) para rasgar a capa isolante externa e extrair o arame nu de cobre ou aço (1,5–3mm) para amarrar as latas e fazer a trempe da panela."
     },
     {
       "id": "mat-03",
@@ -28,14 +28,14 @@
     {
       "id": "mat-04",
       "name": "Dois Punhados de Gravetos Secos do Tamanho do Polegar e Isca de Resina",
-      "desc": "Gravetos secos de madeira dura quebrados no comprimento do polegar para carga vertical, mais [pedacinhos de resina de pinheiro](/protocol-10.html) e casca seca para acendimento pelo topo."
+      "desc": "Gravetos secos de madeira dura quebrados no comprimento do polegar para carga vertical, mais [pedacinhos de resina de pinheiro](/protocol-10) e casca seca para acendimento pelo topo."
     }
   ],
   "steps": [
     {
       "stepNumber": "01",
       "title": "Passo 1: Selecionar Latas de Aço, Desencapar o Fio e Queimar o Revestimento Epóxi Interno",
-      "description": "1. **Selecionar Latas de Aço Frisado**: Escolha duas latas rígidas de conserva com anéis horizontais de reforço que não amassem ao apertar. Ao colocar a menor dentro da maior, deve restar uma folga da **largura de um dedo (1,5–2cm)** ao redor.\n2. **Desencapar o Fio Elétrico**: Corte a capa isolante do cabo com uma [lasca de pedra afiada](/protocol-04.html) e retire **50cm de fio metálico nu** de cobre ou aço.\n3. **Queima Prévia de 5 Minutos**: Antes de furar, coloque folhas e gravetos secos dentro das duas latas vazias e **queime ao ar livre por 5 minutos** para carbonizar o verniz epóxi interno e a tinta.\n4. **Confirmar o Aço Cinza Fosco**: Quando o cheiro químico sumir e o interior ficar **cinza-escuro fosco**, deixe esfriar totalmente na sombra.",
+      "description": "1. **Selecionar Latas de Aço Frisado**: Escolha duas latas rígidas de conserva com anéis horizontais de reforço que não amassem ao apertar. Ao colocar a menor dentro da maior, deve restar uma folga da **largura de um dedo (1,5–2cm)** ao redor.\n2. **Desencapar o Fio Elétrico**: Corte a capa isolante do cabo com uma [lasca de pedra afiada](/protocol-04) e retire **50cm de fio metálico nu** de cobre ou aço.\n3. **Queima Prévia de 5 Minutos**: Antes de furar, coloque folhas e gravetos secos dentro das duas latas vazias e **queime ao ar livre por 5 minutos** para carbonizar o verniz epóxi interno e a tinta.\n4. **Confirmar o Aço Cinza Fosco**: Quando o cheiro químico sumir e o interior ficar **cinza-escuro fosco**, deixe esfriar totalmente na sombra.",
       "actionNote": "> Verificação de Toxicidade e Metal: Pular a queima prévia contamina a água com vapores tóxicos. Latas finas de bebida derretem rápido; veja as fotos reais abaixo para identificar latas de aço frisado e arame desencapado.",
       "svgFileName": "pr12-step-01.svg",
       "svgLabels": [
@@ -140,7 +140,7 @@
     {
       "stepNumber": "04",
       "title": "Passo 4: Empilhar Gravetos na Vertical, Acender pelo Topo e Ferver Água Sem Fumaça",
-      "description": "1. **Carga Vertical de Gravetos**: Quebre gravetos secos na grossura de um dedo e comprimento do polegar e arrume-os **em pé na vertical** dentro da lata interna até **logo abaixo dos bicos superiores**.\n2. **Acendimento Invertido (Topo para Baixo)**: Coloque casca seca e [isca de resina de pinheiro](/protocol-10.html) **no topo dos gravetos verticais** e acenda por cima usando uma brasa do [arco de pua](/protocol-02.html).\n3. **Confirmar os Jatos de Gás de Lenha**: Em 2–3 minutos, quando a parede dupla aquecer, **jatos de chama amarelo-azulada** sairão pelos bicos superiores e a fumaça desaparecerá por completo.\n4. **Ferver Água e Colher Biocarvão**: Coloque sua vasilha com [água filtrada](/protocol-01.html) sobre o suporte de arame para ferver em 7–8 minutos; depois, abafe as brasas vermelhas com terra para guardar [carvão vegetal puro](/protocol-09.html).",
+      "description": "1. **Carga Vertical de Gravetos**: Quebre gravetos secos na grossura de um dedo e comprimento do polegar e arrume-os **em pé na vertical** dentro da lata interna até **logo abaixo dos bicos superiores**.\n2. **Acendimento Invertido (Topo para Baixo)**: Coloque casca seca e [isca de resina de pinheiro](/protocol-10) **no topo dos gravetos verticais** e acenda por cima usando uma brasa do [arco de pua](/protocol-02).\n3. **Confirmar os Jatos de Gás de Lenha**: Em 2–3 minutos, quando a parede dupla aquecer, **jatos de chama amarelo-azulada** sairão pelos bicos superiores e a fumaça desaparecerá por completo.\n4. **Ferver Água e Colher Biocarvão**: Coloque sua vasilha com [água filtrada](/protocol-01) sobre o suporte de arame para ferver em 7–8 minutos; depois, abafe as brasas vermelhas com terra para guardar [carvão vegetal puro](/protocol-09).",
       "actionNote": "> Por que acender por cima?: Se acender por baixo, toda a lenha fumega de uma vez. Acendendo pelo topo como uma vela, a fumaça que sobe de baixo é forçada a atravessar o anel de fogo superior e queima sem deixar rastro.",
       "svgFileName": "pr12-step-04.svg",
       "svgLabels": [
@@ -173,6 +173,6 @@
     "description": "Construído com duas latas de aço descartadas e arame desencapado, com canal de pré-aquecimento de 1,5–2cm, entradas inferiores de ar frio, bicos superiores de oxigênio secundário e suporte cruzado de arame para combustão limpa a 850°C."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "47468e0c9ce45c53",
-  "updatedAt": "2026-10-17T19:16:11+09:00"
+  "contentHash": "61644332f814ecf5",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }
