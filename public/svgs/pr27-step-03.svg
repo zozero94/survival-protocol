@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg27s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="metal27s3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <pattern id="grid27s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow27s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg27s3)"/>
+  <rect width="400" height="400" fill="url(#grid27s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 엄지·검지 양옆 구멍 밀폐 및 120dB 3연속 국제 조난 신호</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="66" fill="#fef08a" font-family="monospace" font-size="10.5">둥근 소리통 양옆 구멍을 엄지와 검지 살로 빈틈없이 막아 공명실 밀폐</text>
+
+  <!-- Main 3D Illustration: Finger-Sealed Whistle Chamber & 3,000Hz 120dB 3-Blast Acoustic Wave -->
+  <g filter="url(#shadow27s3)">
+    <rect x="24" y="86" width="352" height="154" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+
+    <!-- Left Thumb Pad Sealing Left Cylinder Opening -->
+    <ellipse cx="102" cy="178" rx="28" ry="36" fill="#b45309" stroke="#fde047" stroke-width="1.8"/>
+    <!-- Central Metal Whistle Cylinder & Top Mouthpiece -->
+    <rect x="126" y="156" width="88" height="44" rx="8" fill="url(#metal27s3)" stroke="#f8fafc" stroke-width="1.8"/>
+    <rect x="152" y="128" width="36" height="30" rx="3" fill="url(#metal27s3)" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Right Index Finger Pad Sealing Right Cylinder Opening -->
+    <ellipse cx="238" cy="178" rx="28" ry="36" fill="#b45309" stroke="#fde047" stroke-width="1.8"/>
+
+    <!-- 3,000Hz 120dB Triple Acoustic Blast Waves (Right Panel Area) -->
+    <path d="M276,154 Q296,178 276,202" fill="none" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
+    <path d="M298,140 Q324,178 298,216" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <path d="M320,126 Q352,178 320,230" fill="none" stroke="#fde047" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- 3-Blast SOS Cadence Indicator Dots -->
+    <circle cx="348" cy="154" r="6" fill="#ef4444" stroke="#fecaca" stroke-width="1.2"/>
+    <circle cx="348" cy="178" r="6" fill="#ef4444" stroke="#fecaca" stroke-width="1.2"/>
+    <circle cx="348" cy="202" r="6" fill="#ef4444" stroke="#fecaca" stroke-width="1.2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="271" fill="#bae6fd" font-family="monospace" font-size="10.5">짧고 강하게 불어 건물 잔해·폭풍 소음을 뚫는 3,000Hz 고주파 발산</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">국제 조난 신호 규격(짧게 3번 불고 1분 휴식)으로 성대·체력 보존</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 외침(80dB) 대비 도달 거리 10배 증폭 및 탈진 원천 방지</text>
+</svg>

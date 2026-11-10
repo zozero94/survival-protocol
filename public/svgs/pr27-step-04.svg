@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg27s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="mirror27s4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="50%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="grid27s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow27s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg27s4)"/>
+  <rect width="400" height="400" fill="url(#grid27s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // 거울·은박 반사판과 V자 손가락 가늠자 10km 햇빛 조준</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">한 손에 거울(또는 꺼진 스마트폰 화면·은박지 판)을 눈앞 바짝 들기</text>
+
+  <!-- Main 3D Optical Alignment: Sun -> Mirror -> V-Finger Sight -> Distant Rescue Target -->
+  <g filter="url(#shadow27s4)">
+    <rect x="24" y="86" width="352" height="154" rx="4" fill="#0f172a" stroke="#fde047" stroke-width="1.2"/>
+
+    <!-- Incoming Sunlight Ray from Top Left -->
+    <circle cx="56" cy="112" r="14" fill="#facc15" stroke="#fef08a" stroke-width="2"/>
+    <path d="M68,122 L92,168" fill="none" stroke="#fde047" stroke-width="2.5" stroke-dasharray="4,2"/>
+
+    <!-- Reflector Mirror / Foil Plate Held Near Eye (Left) -->
+    <polygon points="78,152 110,144 118,214 86,222" fill="url(#mirror27s4)" stroke="#f8fafc" stroke-width="1.8"/>
+
+    <!-- Outstretched V-Finger Sight (Center) -->
+    <path d="M182,232 L204,166 M230,232 L208,166" fill="none" stroke="#d97706" stroke-width="8" stroke-linecap="round"/>
+    <!-- Reflected Aim Spot Aligned Inside V-Notch -->
+    <circle cx="206" cy="162" r="9" fill="#fef08a" stroke="#f97316" stroke-width="2.2"/>
+
+    <!-- Collimated 10km SOS Flash Beam Reaching Distant Helicopter/Ridge Target (Right) -->
+    <path d="M104,180 L206,162 L336,124" fill="none" stroke="#fef08a" stroke-width="3"/>
+    <circle cx="336" cy="124" r="18" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+    <path d="M324,124 L348,124 M336,112 L336,136" stroke="#34d399" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">반대쪽 팔을 뻗어 검지·중지 V자 가늠자 사이로 먼 구조 헬기 조준</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">반사된 햇빛 조각을 손가락 V자 끝에 겹친 채 짧게3·길게3·짧게3 흔들기</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 이중 시선 정렬로 10~15km 밖 수색대에 정확한 SOS 섬광 전달</text>
+</svg>

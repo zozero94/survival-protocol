@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg27s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="metal27s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <pattern id="grid27s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow27s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg27s2)"/>
+  <rect width="400" height="400" fill="url(#grid27s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 납작한 바람 통로(취구) 접기 및 원통 소리통(공명실) 성형</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="66" fill="#fef08a" font-family="monospace" font-size="10.5">윗부분을 반으로 납작하게 접어 숨이 모이는 1mm 좁은 바람길 형성</text>
+
+  <!-- Main 3D Cross-Section: Flat Windway (Fipple), 2-3mm Window Gap, and Pencil-Diameter Cylindrical Chamber -->
+  <g filter="url(#shadow27s2)">
+    <rect x="24" y="86" width="352" height="154" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+
+    <!-- Incoming Breath Airflow Arrow (Left) -->
+    <path d="M44,148 L96,148" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="5,3"/>
+    <polygon points="96,143 108,148 96,153" fill="#38bdf8"/>
+
+    <!-- Flat Folded Windway (Mouthpiece / Fipple Duct) -->
+    <rect x="110" y="136" width="96" height="10" rx="2" fill="url(#metal27s2)" stroke="#f8fafc" stroke-width="1.5"/>
+    <rect x="110" y="150" width="96" height="10" rx="2" fill="url(#metal27s2)" stroke="#cbd5e1" stroke-width="1.5"/>
+    <!-- 1mm Air Slit Highlight -->
+    <rect x="112" y="146" width="94" height="4" fill="#0284c7"/>
+
+    <!-- 2-3mm Sound Window (Labium Split Zone) -->
+    <circle cx="222" cy="152" r="14" fill="none" stroke="#ef4444" stroke-width="1.8" stroke-dasharray="3,2"/>
+
+    <!-- Cylindrical Resonance Chamber (Rolled Around Twig/Pencil Gauge) -->
+    <circle cx="268" cy="176" r="42" fill="#090d16" stroke="url(#metal27s2)" stroke-width="8"/>
+    <!-- Sharp Labium Lip Splitting the Jet Stream -->
+    <polygon points="232,152 252,144 246,160" fill="#fde047" stroke="#f97316" stroke-width="1.2"/>
+
+    <!-- Internal Vortex Swirl Inside Chamber -->
+    <path d="M252,164 C284,152 294,192 268,198 C246,202 244,174 266,174" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="271" fill="#bae6fd" font-family="monospace" font-size="10.5">아랫부분을 나뭇가지에 감아 연필 굵기 둥근 원통 소리통으로 말기</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">바람길 끝과 원통 입구 사이에 2~3mm 소리 창(발음구) 각도 맞춤</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 좁은 바람길에서 뿜어진 공기가 금속 날에 부딪혀 고주파 공명</text>
+</svg>

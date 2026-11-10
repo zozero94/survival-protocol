@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg27s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="metal27s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <pattern id="grid27s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow27s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg27s1)"/>
+  <rect width="400" height="400" fill="url(#grid27s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // 빈 음료 캔 박판 T자 전개도 재단 및 날카로운 단면 연마</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">빈 캔 위아래를 떼어내고 평평하게 펴서 2가지 금속 조각 재단</text>
+
+  <!-- Main 3D Illustration: Left (1.5x6cm Strip & T-Wing Sheet Pattern) & Right (Stone Edge Deburring) -->
+  <g filter="url(#shadow27s1)">
+    <!-- Left Panel: Straight Strip & T-Shape Pattern -->
+    <rect x="24" y="88" width="182" height="150" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <!-- Straight Strip (1.5cm x 6cm) -->
+    <rect x="44" y="112" width="32" height="106" rx="2" fill="url(#metal27s1)" stroke="#f8fafc" stroke-width="1.5"/>
+    <path d="M44,104 L76,104" stroke="#fde047" stroke-width="1.5"/>
+    <!-- T-Shape Winged Sheet -->
+    <path d="M126,112 L158,112 L158,148 L188,148 L188,180 L158,180 L158,218 L126,218 L126,180 L96,180 L96,148 L126,148 Z" fill="url(#metal27s1)" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Fold Guidelines on T-Shape -->
+    <path d="M126,148 L158,148 M126,180 L158,180" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="3,2"/>
+
+    <!-- Right Panel: Stone Grinding to Remove Sharp Burrs -->
+    <rect x="218" y="88" width="158" height="150" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+    <!-- Flat River Grinding Stone -->
+    <ellipse cx="297" cy="188" rx="60" ry="26" fill="#334155" stroke="#94a3b8" stroke-width="1.8"/>
+    <!-- Metal Strip Rubbing Against Stone Surface -->
+    <polygon points="262,126 294,120 314,182 282,188" fill="url(#metal27s1)" stroke="#fde047" stroke-width="1.5"/>
+    <!-- Friction Sparks / Smoothing Indicators -->
+    <circle cx="296" cy="184" r="4" fill="#fde047"/>
+    <circle cx="308" cy="180" r="3" fill="#f97316"/>
+    <!-- Safety Check Badge -->
+    <circle cx="344" cy="118" r="16" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <path d="M337,118 L342,124 L352,112" fill="none" stroke="#34d399" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#fde047" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">폭 1.5cm(손가락 한 마디)·길이 6cm 일자 띠 및 양옆 날개 T자 판</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">입술·손가락 베임 방지 위해 절단면 모서리를 거친 돌에 문질러 연마</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 일정한 손가락 폭 재단과 단면 연마로 구강 열상 원천 차단</text>
+</svg>

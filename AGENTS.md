@@ -21,7 +21,7 @@ AI 에이전트가 탐색할 때 무차별 검색(`grep/find`) 대신 아래 경
 | **지식 그래프 트리** | [content/knowledge-tree.json](file:///home/antigravity/zozero94/survival-protocol/content/knowledge-tree.json) | 6대 도메인(WATER, FIRE, SHELTER, TOOLS, FOOD, MEDICINE) 및 프로토콜 ID 색인 |
 | **전체 기술 명세서** | [PROJECT_SPEC.md](file:///home/antigravity/zozero94/survival-protocol/PROJECT_SPEC.md) | 아키텍처, 4대 품질 심사 체계, 5대 카테고리 규격, 코딩 컨벤션 |
 | **차기 작업 큐** | [NEXT_TOPIC_PROMPT.md](file:///home/antigravity/zozero94/survival-protocol/NEXT_TOPIC_PROMPT.md) | 다음에 제작할 차기 프로토콜 기획서 및 프롬프트 |
-| **전체 배포 인덱스** | [README.md](file:///home/antigravity/zozero94/survival-protocol/README.md) | 25개 전 프로토콜 발행 현황표 및 카테고리 색인 |
+| **전체 배포 인덱스** | [README.md](file:///home/antigravity/zozero94/survival-protocol/README.md) | 26개 전 프로토콜 발행 현황표 및 카테고리 색인 |
 | **사이트 메타 & 환경** | [src/site.config.ts](file:///home/antigravity/zozero94/survival-protocol/src/site.config.ts) | 도메인, PWA 경로, AdSense, Firebase 설정 |
 | **타입 인터페이스** | [src/types/protocol.types.ts](file:///home/antigravity/zozero94/survival-protocol/src/types/protocol.types.ts) | `Protocol`, `ProtocolStep`, `MaterialItem` 등 강타입 SSOT |
 | **다국어 사전** | [src/i18n/ui-strings.ts](file:///home/antigravity/zozero94/survival-protocol/src/i18n/ui-strings.ts) | 7개국어 UI 텍스트 사전 (`UI_STRINGS`) |

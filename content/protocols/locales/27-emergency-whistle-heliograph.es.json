@@ -1,0 +1,249 @@
+{
+  "protocolId": "PR-27",
+  "category": "TOOLS",
+  "title": "Cómo hacer un silbato de emergencia de 120dB y un heliógrafo solar de 10km con una lata vacía y un espejo",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Ingeniería de resonancia acústica de 3,000Hz y señalización de rescate por reflexión solar de 10km]",
+  "summary": "Si ya cuenta con un silbato de rescate comercial sin bolilla (Pealess), un espejo de señales aeronáutico, una bocina de aire o una radiobaliza de localización (PLB) en su mochila de emergencia o chaleco salvavidas, utilice siempre ese equipo comercial primero para lograr el rescate más rápido y seguro. Sin embargo, al quedar atrapado bajo escombros tras un terremoto o aislado en inundaciones o montañas sin equipo, gritar con todas sus fuerzas apenas alcanza 80–85dB y daña las cuerdas vocales agotando su energía en solo 15 minutos. En cambio, un silbato de resonancia doblado a partir de una lata de bebida vacía (o tapa de conserva) genera un agudo tono de 3,000Hz y 115–120dB con un mínimo soplo, atravesando el ruido de tormentas y hormigón hasta 1.5–2km. De día, usar un espejo de mano, la pantalla apagada de un teléfono o papel metálico sobrante de una [Cápsula Térmica de Cartón sin Energía](/protocol-22) con una mira en V de los dedos permite dirigir destellos SOS solares a helicópteros de búsqueda a 10–15km.",
+  "timeRequired": "10 min para el silbato de emergencia / 3 min para el reflector solar",
+  "successRate": "99% (al lijar bordes con piedra + ventana de sonido de 2–3mm + sellar lados con dedos + alinear mira en V)",
+  "difficulty": "Principiante (Fabricación inmediata con una lata vacía, piedra áspera y espejo/pantalla apagada/hoja metálica sin herramientas)",
+  "outputPerHour": "Amplifica el alcance acústico 10 veces (1.5–2km) frente al grito y envía destellos ópticos SOS a 10–15km de día",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 lata de bebida vacía (o tapa delgada de conserva, tapón duro de botella o tallo hueco de bambú)",
+      "desc": "Lámina metálica delgada y elástica que se dobla fácilmente a mano y vibra con nitidez para producir ondas de alta frecuencia. Si usa una lata de conserva de acero, nunca la queme al fuego porque el recubrimiento epóxico interno o el galvanizado de zinc liberan gases tóxicos; córtela en frío y átele una [Cuerda Silvestre de Enredadera Kudzu](/protocol-05) para colgarla al cuello."
+    },
+    {
+      "id": "mat-02",
+      "name": "Lasca de piedra afilada (o tijeras/cuchillo) y piedra de río áspera o fragmento de hormigón para lijar",
+      "desc": "Herramienta para marcar y partir la pared de la lata en tiras rectas y redondear los bordes cortantes. Sin tijeras, trace un surco profundo varias veces con una [Hacha de Piedra y Lasca Afilada](/protocol-04), doble la lámina hacia adelante y atrás hasta partirla limpia y frote los bordes contra piedra áspera para no cortar sus labios."
+    },
+    {
+      "id": "mat-03",
+      "name": "Espejo de mano pequeño para señal diurna de 10km (o pantalla negra de móvil apagado / lámina metálica sobre cartón)",
+      "desc": "Superficie reflectante plana que proyecta la luz del sol en un haz concentrado hacia helicópteros o barcos de rescate lejanos. Si no hay espejo, use el cristal negro liso de un móvil sin batería o envuelva papel metálico de cocina bien estirado y sin arrugas sobre un trozo plano de cartón."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Cortar el cuerpo de la lata en una tira del ancho de un dedo y una placa en T, y lijar los bordes con piedra",
+      "description": "1. **Retirar la parte superior e inferior y aplanar la lata**: Perfore alrededor del borde superior y la base de una lata vacía con una [Lasca de Piedra Afilada](/protocol-04) o punta de cuchillo, corte el cilindro verticalmente y aplánelo contra el suelo con la palma de la mano.\n2. **Cortar una tira de 1.5cm de ancho y una placa con alas en T**: Marque líneas sobre la lámina plana para cortar **una tira recta del ancho de un nudillo (1.5cm) por tres nudillos de largo (6cm)**, y **una placa en forma de T con alas laterales del tamaño de una uña (1cm)**.\n3. **Técnica de corte sin herramientas por fatiga metálica**: Si corta sin tijeras, no intente rebanar de un tajo; marque un surco profundo con piedra y **doble la lámina hacia adelante y atrás 3–4 veces** sobre la línea hasta que la fatiga del metal la parta recta.\n4. **Lijar todos los bordes cortados contra una piedra áspera**: Los bordes recién cortados tienen rebabas afiladas como navajas, así que **frote cada borde en diagonal contra una piedra áspera o bloque de hormigón más de 20 veces** hasta que al tocarlo con la yema del dedo esté totalmente liso.",
+      "actionNote": "> Por qué nunca debe llevarse a la boca la lámina metálica recién cortada sin antes lijar los bordes con piedra: El borde cortado de una lata fina actúa como una cuchilla de afeitar; soplar o inhalar con prisa cortará profundamente sus labios y lengua, provocando hemorragia e infección.",
+      "svgFileName": "pr27-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CORTE EN T Y LIJADO EN PIEDRA",
+        "Abrir lata, aplanar pared y cortar 2 tiras",
+        "Tira de 1.5cm x 6cm y lámina con alas en T",
+        "Lijar bordes en piedra para cuidar labios",
+        "[CLAVE] Corte uniforme y borde sin filos"
+      ],
+      "deepDive": {
+        "badge": "SHEET METAL FATIGUE SHEARING & DEBURRING",
+        "title": "Fractura por fatiga de bajo ciclo mediante flexión repetida y desbarbado de seguridad oral",
+        "text": "Una lámina de lata de 0.1–0.15mm marcada con una **muesca superficial de 0.03mm** concentra la tensión mecánica, permitiendo una fractura recta limpia tras solo 3–4 flexiones inversas sin tijeras. Lijar las micro-rebabas resultantes contra arenisca u hormigón (Deburring) garantiza tanto la seguridad de los labios como un flujo de aire laminar estable.",
+        "fieldSpecs": [
+          {
+            "name": "Tira recta de 1.5cm y lámina en T cortadas de lata de bebida junto con piedra de lijado",
+            "scientificName": "Deburred T-Wing & Linear Metal Strip Whistle Blank",
+            "categoryTag": "Corte por fatiga sin tijeras / Lijado seguro de bordes",
+            "imageFileName": "id-tin-can-t-strip-cutout.jpg",
+            "hudCode": "FIG. TOOL-27A // MACRO OPTIC",
+            "hudStatus": "EDGE BURR: 0.0mm SMOOTHED",
+            "traits": [
+              {
+                "label": "Medida/Proporción",
+                "value": "**1 nudillo de ancho (1.5cm) por 3 de largo (6cm)** genera el mejor tono agudo."
+              },
+              {
+                "label": "Corte/Flexión",
+                "value": "Marque con piedra afilada y **doble 3–4 veces hacia ambos lados** para partir recto."
+              },
+              {
+                "label": "Lijado/Seguro",
+                "value": "Frote todos los bordes en **piedra áspera hasta eliminar cualquier rebaba cortante.**"
+              }
+            ],
+            "fieldUse": "Proceso base para fabricar piezas acústicas de rescate sin tijeras en derrumbes o aislamiento"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Doblar la parte superior en un canal de aire plano (boquilla) y enrollar la inferior en un cilindro resonador",
+      "description": "1. **Doblar la parte superior plana para formar un canal de aire de 1mm**: Doble hacia adentro el tramo superior (o las alas laterales de la placa en T) para crear **un conducto de aire plano del grosor de una uña (aprox. 1mm)** que concentre su soplo.\n2. **Enrollar la parte inferior en una ramita del grosor de un lápiz**: Coloque una ramita recta **del grosor de un lápiz o dedo meñique (8–10mm de diámetro)** sobre la cola inferior de la tira y enrolle el metal alrededor para formar una cámara cilíndrica hueca.\n3. **Dejar una ventana de sonido de 2–3mm**: Ajuste la distancia entre la salida del conducto plano superior y el borde del cilindro inferior para que quede **una abertura rectangular del largo de un grano de arroz (2–3mm)**.\n4. **Alinear el filo metálico con el chorro de aire**: Presione suavemente con la yema del dedo la boquilla superior para que el chorro de aire que sale de la ranura de 1mm **golpee exactamente el centro del filo metálico del cilindro**, dividiendo el aire en dos.",
+      "actionNote": "> Por qué el silbato solo emite un soplido sordo en lugar de un pitido agudo al soplar: O bien la ranura de la boquilla es demasiado ancha y el aire se dispersa, o el chorro de aire no golpea de frente el filo metálico del cilindro.",
+      "svgFileName": "pr27-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CANAL DE 1MM Y CILINDRO SONORO",
+        "Doblar parte superior en ranura de 1mm",
+        "Enrollar cola en ramita gruesa como lápiz",
+        "Dejar ventana de 2-3mm frente al cilindro",
+        "[CLAVE] El aire choca en el filo y resuena"
+      ],
+      "deepDive": {
+        "badge": "EDGE-TONE VORTEX & HELMHOLTZ RESONANCE",
+        "title": "Vibración de vórtices de filo (Edge-Tone) y amplificación de 3,000Hz en resonador cilíndrico de Helmholtz",
+        "text": "Cuando el chorro de aire acelerado en la ranura de 1mm cruza la ventana de 2–3mm e impacta contra el filo metálico (Labium), oscila alternativamente dentro y fuera del cilindro creando **vórtices de Karman**. Esta oscilación excita la columna de aire dentro de la cámara de 8–10mm, generando **un tono puro de 2,800–3,200Hz** donde el oído humano tiene su máxima sensibilidad.",
+        "fieldSpecs": [
+          {
+            "name": "Silbato metálico moldeado con boquilla plana de 1mm, ventana de 2-3mm y cámara cilíndrica",
+            "scientificName": "Hand-Formed Fipple Windway & Cylindrical Helmholtz Resonator",
+            "categoryTag": "Chorro de ranura de 1mm / Alineación de ventana de 2-3mm",
+            "imageFileName": "id-folded-fipple-whistle-chamber.jpg",
+            "hudCode": "FIG. TOOL-27B // MACRO OPTIC",
+            "hudStatus": "RESONANCE FREQ: 3,000 Hz LOCKED",
+            "traits": [
+              {
+                "label": "Ranura/Grosor",
+                "value": "Aplane la boquilla al **grosor de una uña (1mm)** para acelerar el soplo."
+              },
+              {
+                "label": "Cilindro/Calibre",
+                "value": "Enrolle la cámara inferior al **grosor de un lápiz o meñique (8–10mm).**"
+              },
+              {
+                "label": "Ventana/Espacio",
+                "value": "Deje **el largo de un grano de arroz (2–3mm)** frente al filo del cilindro."
+              }
+            ],
+            "fieldUse": "Amplificador acústico sin energía que convierte poco aliento en una señal de rescate de 120dB"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Sellar ambos agujeros laterales con pulgar e índice y tocar la señal internacional de socorro de 120dB (3 pitidos)",
+      "description": "1. **Sellar por completo ambos extremos del cilindro con pulgar e índice**: Al sujetar el silbato, presione las yemas del **pulgar y del dedo índice firmemente contra las dos aberturas laterales** del cilindro enrollado para que no escape nada de aire por los lados.\n2. **Sellado permanente opcional con resina de pino o arcilla**: Si solo puede usar una mano o hace mucho frío, tapone ambos lados del cilindro con trocitos de madera y séllelos con [Pegamento Impermeable de Resina de Pino](/protocol-10) o barro húmedo.\n3. **Soplar corto y fuerte para emitir pitidos agudos de 120dB**: Coloque los labios en la boquilla plana y sople un golpe seco **'¡TU!'**; la cámara sellada emitirá un **agudo silbido de 115–120dB** capaz de escucharse a 1.5–2km de distancia.\n4. **Seguir la regla internacional de socorro (3 pitidos cortos y 1 minuto de pausa)**: Para ahorrar oxígeno y diferenciar su alerta del ruido ambiental, repita el código internacional: **'3 pitidos cortos de 1 segundo ➔ 1 minuto en silencio escuchando a los rescatistas'**.",
+      "actionNote": "> Por qué no suena fuerte el silbato si deja abiertos los agujeros laterales del cilindro: Si ambos extremos del cilindro quedan abiertos, la presión del aire y las ondas sonoras se escapan por los lados sin rebotar dentro de la cámara para crear resonancia.",
+      "svgFileName": "pr27-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SELLO LATERAL Y SOS DE 120DB",
+        "Tapar ambos lados con pulgar e índice",
+        "Soplar corto y fuerte (3,000Hz) en ruinas",
+        "3 pitidos cortos + 1 minuto de escucha",
+        "[CLAVE] 10x más alcance que gritar (80dB)"
+      ],
+      "deepDive": {
+        "badge": "CLOSED-CHAMBER ACOUSTIC IMPEDANCE & 3-BLAST SOS",
+        "title": "Adaptación de impedancia acústica por cámara cerrada y penetración de escombros a 3,000Hz",
+        "text": "Sellar ambas aberturas laterales con las yemas de los dedos convierte el cilindro en un **resonador de tubo cerrado**, elevando la presión sonora a **115–120dB (unas 1,000 veces la energía acústica de un grito humano de 80dB)**. La frecuencia de 3,000Hz supera el ruido grave del viento, agua o motores y atraviesa huecos de hormigón, mientras que el ciclo de **3 pitidos / 1 minuto de escucha** reduce el consumo de oxígeno en más del 80%.",
+        "fieldSpecs": [
+          {
+            "name": "Silbato de rescate metálico de 120dB sellado lateralmente con pulgar e índice",
+            "scientificName": "Finger-Sealed Closed-Chamber 120dB Acoustic Distress Whistle",
+            "categoryTag": "Sellado lateral hermético / 3 pitidos de socorro internacional",
+            "imageFileName": "id-finger-sealed-120db-whistle-blast.jpg",
+            "hudCode": "FIG. TOOL-27C // MACRO OPTIC",
+            "hudStatus": "OUTPUT: 120 dB @ 1.8 KM RANGE",
+            "traits": [
+              {
+                "label": "Sello/Lateral",
+                "value": "**Presione pulgar e índice contra ambos agujeros laterales** para encerrar el sonido."
+              },
+              {
+                "label": "Ciclo/SOS",
+                "value": "**Sople 3 veces cortas y descanse 1 minuto** prestando oído a las brigadas de rescate."
+              },
+              {
+                "label": "Cordón/Seguro",
+                "value": "Átelo al cuello o muñeca con **[Cuerda Silvestre de Enredadera Kudzu](/protocol-05)** para no perderlo."
+              }
+            ],
+            "fieldUse": "Baliza acústica para derrumbes, noche, niebla o tormenta sin dañar las cuerdas vocales"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Apuntar destellos solares SOS a 10km de día usando un espejo o pantalla de móvil y mira en V con los dedos",
+      "description": "1. **Sostener el espejo, pantalla negra de móvil o placa de papel metálico junto al ojo**: De día, al divisar un helicóptero, barco o patrulla a lo lejos, sostenga un **espejo pequeño (o pantalla negra de móvil apagado / placa lisa de papel metálico)** en una mano pegado a su mejilla, justo al lado del ojo.\n2. **Estirar el otro brazo y formar una mira en V con dos dedos**: Extienda el brazo opuesto hacia adelante, separe los **dedos índice y medio formando una letra V**, y coloque el **objetivo lejano (helicóptero, barco o cresta)** justo en el centro de la V.\n3. **Superponer el punto de sol reflejado sobre sus dedos en V**: Incline levemente el espejo hasta que **el punto brillante de luz solar reflejada caiga justo sobre las puntas internas de sus dedos en V**; así alineará ojo, mira en V y objetivo en línea recta para clavar el destello a 10km.\n4. **Mover el haz en código Morse SOS (3 cortos · 3 largos · 3 cortos)**: Manteniendo el punto luminoso sobre sus dedos en V, mueva ligeramente la muñeca del espejo para lanzar **3 destellos cortos, 3 largos y 3 cortos (··· --- ···)**, y barra el horizonte periódicamente aunque no vea aeronaves.",
+      "actionNote": "> Por qué agitar un espejo al azar hacia el cielo no sirve ni aunque el helicóptero pase justo encima: El haz solar reflejado tiene apenas 0.5 grados de ancho, por lo que sin línea de mira se desvía cientos de metros del objetivo; debe alinear el punto de luz sobre sus dedos en V con el blanco.",
+      "svgFileName": "pr27-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ESPEJO Y MIRA EN V A 10KM",
+        "Poner espejo, móvil o lámina junto al ojo",
+        "Encuadrar objetivo entre dos dedos en V",
+        "Poner sol en la V y lanzar destellos SOS",
+        "[CLAVE] Mira de 3 puntos alcanza 10-15km"
+      ],
+      "deepDive": {
+        "badge": "DUAL-VECTORS HELIOGRAPH OPTICAL COLLIMATION",
+        "title": "Divergencia de haz solar especular de 0.5 grados y geometría de colimación óptica de tres puntos",
+        "text": "La luz solar reflejada especularmente en un espejo plano o vidrio templado de móvil diverge solo **0.5 grados (el diámetro angular del sol)**, manteniendo **millones de candelas de intensidad a 10–15km**. Como el haz es invisible lateralmente, superponer **el espejo junto al ojo, el punto reflejado en la muesca en V de los dedos extendidos y el objetivo lejano** crea una colimación de 3 puntos con precisión de 0.2 grados.",
+        "fieldSpecs": [
+          {
+            "name": "Heliógrafo solar de 10km alineando espejo junto al ojo y mira en V de los dedos extendidos",
+            "scientificName": "V-Finger Collimated Solar Specular Heliograph Reflector",
+            "categoryTag": "Colimación óptica de 3 puntos / Destello SOS diurno de 10-15km",
+            "imageFileName": "id-v-finger-heliograph-sun-mirror.jpg",
+            "hudCode": "FIG. TOOL-27D // MACRO OPTIC",
+            "hudStatus": "OPTICAL RANGE: 10~15 KM LOCKED",
+            "traits": [
+              {
+                "label": "3 Puntos/Mira",
+                "value": "Alinee **espejo junto al ojo - punto de luz en dedos en V - objetivo lejano**."
+              },
+              {
+                "label": "Placa/Alterna",
+                "value": "Sin espejo, use **la pantalla negra de un móvil apagado, papel metálico liso o base de lata.**"
+              },
+              {
+                "label": "Destello/SOS",
+                "value": "Emita **3 cortos · 3 largos · 3 cortos** para captar la vista del piloto al instante."
+              }
+            ],
+            "fieldUse": "Comunicación óptica diurna sin baterías hacia aeronaves y barcos a decenas de kilómetros"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca se lleve a la boca bordes de lata cortantes sin lijar en piedra, ni mantenga el reflejo del espejo fijo durante decenas de segundos sobre la cabina de una aeronave",
+    "description": "Los bordes recién cortados de una lata son tan afilados como una navaja y cortarán profundamente sus labios y lengua si sopla sin antes lijarlos contra una piedra. Si se corta la mano durante la fabricación, lave la herida de inmediato con [Suero Oral y Solución Salina al 0.9%](/protocol-24) y detenga el sangrado mediante [Entablillado con Ramas y Hemostasia con Arpillera Hervida](/protocol-18). En escombros con polvo, cúbrase la nariz con una [Máscara Antigás de Carbón y Arena](/protocol-15) o tela húmeda y toque el silbato en vez de gritar. Al enviar destellos a un helicóptero, no mantenga el haz fijo en la cabina para no deslumbrar al piloto; envíe ráfagas cortas de 3 destellos y haga pausas.",
+    "consequence": "Cumpla siempre las 4 reglas: Lijar bordes metálicos en piedra + Sellar ambos lados con los dedos + Tocar 3 pitidos y escuchar 1 min + Enviar destellos SOS intermitentes con mira en V."
+  },
+  "faqs": [
+    {
+      "question": "¿Con qué puedo fabricar un silbato de emergencia de 120dB si no hay ninguna lata de bebida vacía alrededor?",
+      "causeDiagnostic": "Cualquier cavidad pequeña y hueca combinada con una ranura estrecha de aire puede generar la misma resonancia de alta frecuencia.",
+      "resolution": "Utilice **el tubo vacío de un bolígrafo (sin la mina), el capuchón de una bellota, un entrenudo hueco de bambú o caña, o un tapón de botella**. Sujete el capuchón de bellota o tapón entre los nudillos de ambos pulgares dejando una pequeña abertura en V entre ellos y sople con fuerza sobre el borde para producir un silbido agudo de más de 110dB."
+    },
+    {
+      "question": "¿Cómo reflejo la luz del sol hacia un helicóptero frente a mí cuando el sol está exactamente a mi espalda?",
+      "causeDiagnostic": "Cuando el sol está detrás de usted, la sombra de su propia cabeza y cuerpo bloquea la luz si intenta apuntar hacia adelante con un solo espejo.",
+      "resolution": "Aplique el **método de doble reflexión** sosteniendo **dos superficies reflectantes (por ejemplo, la pantalla de un móvil apagado en una mano y un espejo o lámina metálica en la otra)**. Reciba el sol desde atrás con el primer reflector para enviarlo al segundo espejo situado junto a su ojo, y desde ese segundo espejo apunte a través de sus dedos hacia el objetivo en 360 grados."
+    }
+  ],
+  "shortsScript": {
+    "hook": "¿Atrapado bajo escombros o aislado en la montaña? ¡Si solo grita perderá la voz y se agotará en 15 minutos! ¡Así puede llamar a rescatistas a 10km con una lata vacía y un espejo!",
+    "body": "Corte una tira del ancho de un dedo de una lata vacía y lije los bordes cortantes contra una piedra. Doble la parte superior plana para formar un canal de aire estrecho y enrolle la inferior en una ramita del grosor de un lápiz dejando una abertura del tamaño de un grano de arroz. ¡Tape ambos lados con pulgar e índice y sople 3 veces para lanzar un silbido de 120dB que viaja 2km! De día, ponga un espejo o móvil apagado junto al ojo, alinee el punto de sol en una V con sus dedos hacia el helicóptero y envíe destellos SOS a 10km."
+  },
+  "outcome": {
+    "title": "Silbato de Resonancia Helmholtz de 120dB en Lata y Sistema Heliógrafo Solar de 10km con Mira en V",
+    "badge": "FINAL SPEC // 120dB ACOUSTIC WHISTLE & 10KM SOLAR HELIOGRAPH",
+    "description": "Sistema de comunicación de supervivencia sin energía que combina una boquilla plana de 1mm y cámara cilíndrica sellada con los dedos para emitir señales acústicas de 3,000Hz y 120dB ahorrando 4/5 del aliento, junto con un reflector solar de 3 puntos en V para transmitir destellos SOS a 10–15km de día.",
+    "svgFileName": "pr27-outcome.svg",
+    "svgLabels": [
+      "PR-27 COMPLETO // SILBATO 120dB Y HELIÓGRAFO SOLAR 10KM",
+      "STAGE 01: CORTE LÁMINA EN T",
+      "Tira 1.5cm + Lijado en Piedra",
+      "STAGE 02: BOQUILLA Y CÁMARA",
+      "Ranura 1mm + Cilindro Lápiz",
+      "STAGE 03: SELLO LATERAL 120dB",
+      "Pulgar-Índice + 3 Pitidos SOS",
+      "STAGE 04: ESPEJO CON MIRA EN V",
+      "Mira de Dedos + Destello SOS",
+      "VERIFICADO // Ahorra 80% de Aliento · Alcance Óptico 10km"
+    ]
+  },
+  "createdAt": "2026-11-10T04:10:00.000Z",
+  "updatedAt": "2026-11-10T04:10:07.597Z",
+  "contentHash": "1b9f5a00b3ae1b42"
+}

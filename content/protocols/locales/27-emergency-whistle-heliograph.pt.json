@@ -1,0 +1,249 @@
+{
+  "protocolId": "PR-27",
+  "category": "TOOLS",
+  "title": "Como fazer um apito de emergência de 120dB e heliógrafo solar de 10km com lata vazia e espelho",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Engenharia de ressonância acústica de 3.000Hz e sinalização de resgate por reflexão solar de 10km]",
+  "summary": "Se você já tiver um apito de resgate comercial sem esfera (Pealess), espelho de sinalização aeronáutico, buzina a gás ou baliza localizadora pessoal (PLB) na mochila de emergência ou colete salva-vidas, use sempre esse equipamento pronto primeiro para obter o resgate mais rápido e seguro. Contudo, ao ficar preso sob escombros após um terremoto ou isolado em enchentes e montanhas sem equipamento, gritar com toda a força atinge apenas 80–85dB e lesiona as cordas vocais esgotando suas forças em 15 minutos. Já um apito de ressonância dobrado a partir de uma lata de bebida vazia (ou tampa de conserva) produz um som agudo de 3.000Hz e 115–120dB com pouquíssimo sopro, atravessando o barulho de tempestades e concreto até 1,5–2km. Durante o dia, usar um espelho de mão, a tela apagada do celular ou folha metálica que sobrou de uma [Cápsula Térmica de Papelão sem Energia](/protocol-22) com uma mira em V dos dedos permite enviar lampejos SOS solares a helicópteros de busca a 10–15km.",
+  "timeRequired": "10 min para o apito de emergência / 3 min para o refletor solar",
+  "successRate": "99% (ao lixar bordas na pedra + janela de som de 2–3mm + vedar laterais com dedos + alinhar mira em V)",
+  "difficulty": "Iniciante (Feito na hora com lata vazia, pedra áspera e espelho/tela apagada/folha metálica sem ferramentas especiais)",
+  "outputPerHour": "Amplifica o alcance sonoro em 10x (1,5–2km) comparado ao grito e projeta lampejos ópticos SOS a 10–15km de dia",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 lata de bebida vazia (ou tampa fina de conserva, tampa rígida de garrafa ou gomo oco de bambu)",
+      "desc": "Chapa metálica fina e flexível que dobra facilmente à mão e vibra com nitidez para gerar ondas de alta frequência. Se usar uma lata de conserva de aço, nunca a queime no fogo, pois o revestimento epóxi interno ou galvanizado libera gases tóxicos; corte a frio e amarre uma [Corda Silvestre de Cipó Kudzu](/protocol-05) para pendurar no pescoço."
+    },
+    {
+      "id": "mat-02",
+      "name": "Lasca de pedra afiada (ou tesoura/faca) e pedra de rio áspera ou pedaço de concreto para lixar",
+      "desc": "Ferramenta para vincar e partir a parede da lata em tiras retas e arredondar as bordas cortantes. Sem tesoura, risque um sulco profundo várias vezes com um [Machado de Pedra e Lasca Afiada](/protocol-04), dobre a chapa para frente e para trás até partir reto e esfregue as bordas na pedra áspera para proteger os lábios."
+    },
+    {
+      "id": "mat-03",
+      "name": "Pequeno espelho de mão para sinal diurno de 10km (ou tela preta de celular desligado / folha metálica sobre papelão)",
+      "desc": "Superfície refletora plana que reflete a luz do sol em um feixe concentrado rumo a helicópteros ou barcos de resgate distantes. Sem espelho, use o vidro preto liso de um celular sem carga ou envolva folha metálica de cozinha bem esticada e sem rugas sobre um pedaço plano de papelão."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Cortar o corpo da lata em uma tira da largura de um dedo e uma chapa em T, e lixar as bordas na pedra",
+      "description": "1. **Retirar o topo e o fundo e abrir a lata plana**: Perfure ao redor da borda superior e do fundo de uma lata vazia com uma [Lasca de Pedra Afiada](/protocol-04) ou ponta de faca, corte o cilindro na vertical e pressione-o contra o chão com a palma da mão.\n2. **Cortar uma tira de 1,5cm de largura e uma chapa com abas em T**: Risque linhas na chapa plana para cortar **uma tira reta da largura de uma falange (1,5cm) por três falanges de comprimento (6cm)**, além de **uma chapa em forma de T com abas laterais do tamanho de uma unha (1cm)**.\n3. **Técnica de corte sem tesoura por fadiga metálica**: Ao cortar sem tesoura, não tente fatiar de uma vez; risque um sulco fundo com pedra e **dobre a chapa para frente e para trás 3–4 vezes** sobre a linha até que a fadiga do metal a parta reta.\n4. **Lixar todas as bordas cortadas em uma pedra áspera**: As bordas recém-cortadas têm rebarbas afiadas como navalha, portanto **esfregue cada borda em diagonal contra uma pedra áspera ou bloco de concreto mais de 20 vezes** até ficar totalmente lisa ao toque.",
+      "actionNote": "> Por que nunca se deve levar a chapa metálica recém-cortada à boca sem antes lixar as bordas na pedra: A borda cortada de uma lata fina corta como lâmina de barbear; soprar ou puxar ar com pressa cortará profundamente seus lábios e língua, causando sangramento e infecção.",
+      "svgFileName": "pr27-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CORTE EM T E LIXAMENTO NA PEDRA",
+        "Abrir lata, achatar parede e cortar 2 tiras",
+        "Tira de 1,5cm x 6cm e chapa com abas em T",
+        "Lixar bordas na pedra para proteger lábios",
+        "[CHAVE] Corte uniforme e bordas sem rebarba"
+      ],
+      "deepDive": {
+        "badge": "SHEET METAL FATIGUE SHEARING & DEBURRING",
+        "title": "Fratura por fadiga de baixo ciclo mediante flexão repetida e rebarbação de segurança oral",
+        "text": "Uma chapa de lata de 0,1–0,15mm marcada com um **entalhe superficial de 0,03mm** concentra a tensão mecânica, permitindo uma fratura reta após apenas 3–4 flexões reversas sem tesoura. Lixar as micro-rebarbas contra arenito ou concreto (Deburring) garante segurança para os lábios e fluxo de ar laminar estável.",
+        "fieldSpecs": [
+          {
+            "name": "Tira reta de 1,5cm e chapa em T cortadas de lata de bebida junto com pedra de lixar",
+            "scientificName": "Deburred T-Wing & Linear Metal Strip Whistle Blank",
+            "categoryTag": "Corte por fadiga sem tesoura / Lixamento seguro de bordas",
+            "imageFileName": "id-tin-can-t-strip-cutout.jpg",
+            "hudCode": "FIG. TOOL-27A // MACRO OPTIC",
+            "hudStatus": "EDGE BURR: 0.0mm SMOOTHED",
+            "traits": [
+              {
+                "label": "Medida/Proporção",
+                "value": "**1 falange de largura (1,5cm) por 3 de comprimento (6cm)** gera o melhor som agudo."
+              },
+              {
+                "label": "Corte/Dobra",
+                "value": "Risque com pedra afiada e **dobre 3–4 vezes para frente e para trás** para partir reto."
+              },
+              {
+                "label": "Lixar/Seguro",
+                "value": "Esfregue todas as bordas em **pedra áspera até eliminar qualquer rebarba cortante.**"
+              }
+            ],
+            "fieldUse": "Processo básico para fabricar peças acústicas de resgate sem tesoura em soterramentos ou isolamento"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Dobrar a parte superior em um canal de ar achatado (bocal) e enrolar a inferior em um cilindro ressonador",
+      "description": "1. **Dobrar a parte superior plana para formar um canal de ar de 1mm**: Dobre para dentro a seção superior (ou as abas laterais da chapa em T) para criar **um duto de ar achatado da espessura de uma unha (aprox. 1mm)** que concentre o sopro.\n2. **Enrolar a parte inferior em um graveto da grossura de um lápis**: Coloque um graveto reto **da grossura de um lápis ou dedo mindinho (8–10mm de diâmetro)** sobre a cauda inferior da tira e enrole o metal ao redor para formar uma câmara cilíndrica oca.\n3. **Deixar uma janela de som de 2–3mm**: Ajuste a distância entre a saída do duto plano superior e a borda do cilindro inferior para que fique **uma abertura retangular do comprimento de um grão de arroz (2–3mm)**.\n4. **Alinhar o fio metálico com o jato de ar**: Pressione levemente com a ponta do dedo o bocal superior para que o jato de ar que sai da fenda de 1mm **atinja exatamente o centro da borda fina do cilindro**, dividindo o ar ao meio.",
+      "actionNote": "> Por que o apito só faz um chiado fraco de vento em vez de um apito agudo ao soprar: Ou a fenda do bocal está larga demais espalhando o sopro, ou o jato de ar não está batendo de frente na borda metálica afiada do cilindro.",
+      "svgFileName": "pr27-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CANAL DE 1MM E CILINDRO SONORO",
+        "Dobrar topo achatado em fenda de 1mm",
+        "Enrolar cauda em graveto grosso como lápis",
+        "Deixar janela de 2-3mm antes do cilindro",
+        "[CHAVE] Jato de ar divide-se e gera som"
+      ],
+      "deepDive": {
+        "badge": "EDGE-TONE VORTEX & HELMHOLTZ RESONANCE",
+        "title": "Vibração de vórtices de borda (Edge-Tone) e amplificação de 3.000Hz em ressonador cilíndrico de Helmholtz",
+        "text": "Quando o jato de ar acelerado na fenda de 1mm cruza a janela de 2–3mm e atinge a borda metálica (Labium), ele oscila para dentro e para fora do cilindro criando **vórtices de Karman**. Essa oscilação excita a coluna de ar na câmara de 8–10mm, gerando **um tom puro de 2.800–3.200Hz** onde a audição humana tem sensibilidade máxima.",
+        "fieldSpecs": [
+          {
+            "name": "Apito metálico moldado com bocal plano de 1mm, janela de 2-3mm e câmara cilíndrica",
+            "scientificName": "Hand-Formed Fipple Windway & Cylindrical Helmholtz Resonator",
+            "categoryTag": "Jato de fenda de 1mm / Alinhamento de janela de 2-3mm",
+            "imageFileName": "id-folded-fipple-whistle-chamber.jpg",
+            "hudCode": "FIG. TOOL-27B // MACRO OPTIC",
+            "hudStatus": "RESONANCE FREQ: 3,000 Hz LOCKED",
+            "traits": [
+              {
+                "label": "Fenda/Espessura",
+                "value": "Achate o bocal na **espessura de uma unha (1mm)** para acelerar o jato de ar."
+              },
+              {
+                "label": "Cilindro/Calibre",
+                "value": "Enrole a câmara inferior na **grossura de um lápis ou mindinho (8–10mm).**"
+              },
+              {
+                "label": "Janela/Espaço",
+                "value": "Deixe **o espaço de um grão de arroz (2–3mm)** de frente para a borda do cilindro."
+              }
+            ],
+            "fieldUse": "Amplificador acústico sem energia que converte pouco fôlego em um sinal de resgate de 120dB"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Vedar os dois furos laterais com polegar e indicador e soprar o sinal internacional de socorro de 120dB (3 toques)",
+      "description": "1. **Vedar totalmente as duas pontas abertas do cilindro com polegar e indicador**: Ao segurar o apito, pressione as pontas macias do **polegar e do dedo indicador firmemente contra as duas aberturas laterais** do cilindro enrolado para que nenhum ar escape pelos lados.\n2. **Vedação permanente opcional com resina de pinheiro ou argila**: Se só puder usar uma mão ou estiver muito frio, tampe ambos os lados do cilindro com pedacinhos de madeira e vede-os com [Cola Impermeável de Resina de Pinheiro](/protocol-10) ou barro úmido.\n3. **Soprar curto e forte para emitir apitos agudos de 120dB**: Apoie os lábios no bocal achatado e sopre um golpe seco **'TU!'**; a câmara vedada emitirá um **apito agudo de 115–120dB** audível a 1,5–2km de distância.\n4. **Seguir o padrão internacional de socorro (3 toques curtos e 1 minuto de pausa)**: Para poupar oxigênio e destacar seu alerta do barulho ao redor, repita o código internacional: **'3 toques curtos de 1 segundo ➔ 1 minuto em silêncio ouvindo as equipes de resgate'**.",
+      "actionNote": "> Por que o apito não sai alto se você deixar os furos laterais do cilindro abertos: Se as duas laterais do cilindro ficarem abertas, a pressão do ar e as ondas sonoras escapam pelos lados sem rebater dentro da câmara para criar ressonância.",
+      "svgFileName": "pr27-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // VEDAÇÃO LATERAL E SOS DE 120DB",
+        "Tapar ambos os lados com polegar e indicador",
+        "Soprar curto e forte (3.000Hz) em escombros",
+        "3 toques curtos + 1 minuto de escuta",
+        "[CHAVE] Alcance 10x maior que gritar (80dB)"
+      ],
+      "deepDive": {
+        "badge": "CLOSED-CHAMBER ACOUSTIC IMPEDANCE & 3-BLAST SOS",
+        "title": "Casamento de impedância acústica por câmara fechada e penetração de escombros em 3.000Hz",
+        "text": "Vedar ambas as aberturas laterais com as pontas dos dedos converte o cilindro em um **ressonador de tubo fechado**, elevando a pressão sonora para **115–120dB (cerca de 1.000 vezes a energia acústica de um grito humano de 80dB)**. A faixa de 3.000Hz supera o ruído grave de vento, água e motores e atravessa frestas de concreto, enquanto o ciclo de **3 toques / 1 minuto de escuta** reduz o gasto de oxigênio em mais de 80%.",
+        "fieldSpecs": [
+          {
+            "name": "Apito de resgate metálico de 120dB vedado lateralmente com polegar e indicador",
+            "scientificName": "Finger-Sealed Closed-Chamber 120dB Acoustic Distress Whistle",
+            "categoryTag": "Vedação lateral hermética / 3 toques de socorro internacional",
+            "imageFileName": "id-finger-sealed-120db-whistle-blast.jpg",
+            "hudCode": "FIG. TOOL-27C // MACRO OPTIC",
+            "hudStatus": "OUTPUT: 120 dB @ 1.8 KM RANGE",
+            "traits": [
+              {
+                "label": "Vedação/Lateral",
+                "value": "**Pressione polegar e indicador nos dois furos laterais** para prender e amplificar o som."
+              },
+              {
+                "label": "Ciclo/SOS",
+                "value": "**Sopre 3 vezes curtas e descanse 1 minuto** escutando possíveis equipes de busca."
+              },
+              {
+                "label": "Cordão/Seguro",
+                "value": "Amarre no pescoço ou pulso com **[Corda Silvestre de Cipó Kudzu](/protocol-05)** para não perder."
+              }
+            ],
+            "fieldUse": "Sinalizador acústico para soterramentos, noite, neblina ou chuva forte sem lesão vocal"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Mirar lampejos solares SOS a 10km de dia usando espelho ou tela de celular e mira em V com os dedos",
+      "description": "1. **Segurar o espelho, tela preta de celular ou placa de folha metálica junto ao olho**: De dia, ao avistar um helicóptero, barco ou equipe de busca ao longe, segure um **espelho pequeno (ou tela preta de celular desligado / placa lisa de folha metálica)** em uma mão encostado à bochecha, bem ao lado do olho.\n2. **Esticar o outro braço e formar uma mira em V com dois dedos**: Estenda o braço oposto para a frente, afaste os **dedos indicador e médio formando uma letra V** e enquadre o **alvo distante (helicóptero, barco ou crista da montanha)** bem no centro do V.\n3. **Sobrepor o ponto de sol refletido sobre os dedos em V**: Incline levemente o espelho até que **o ponto brilhante de luz solar refletida caia exatamente sobre as pontas internas dos seus dedos em V**; isso alinha olho, mira em V e alvo em linha reta para cravar o feixe a 10km.\n4. **Balançar o feixe em código Morse SOS (3 curtos · 3 longos · 3 curtos)**: Mantendo o ponto de luz sobre os dedos em V, mexa levemente o pulso do espelho para piscar **3 lampejos curtos, 3 longos e 3 curtos (··· --- ···)**, e varra o horizonte periodicamente mesmo sem ver aeronaves.",
+      "actionNote": "> Por que abanar um espelho a esmo para o céu não funciona nem quando o helicóptero passa bem acima: O feixe solar refletido tem apenas 0,5 grau de largura, portanto sem linha de mira ele erra o alvo por centenas de metros; você deve alinhar o ponto de luz sobre os dedos em V com o alvo.",
+      "svgFileName": "pr27-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ESPELHO E MIRA EM V A 10KM",
+        "Segurar espelho, tela ou folha junto ao olho",
+        "Enquadrar alvo distante entre dedos em V",
+        "Sobrepor sol no V e piscar lampejos SOS",
+        "[CHAVE] Mira de 3 pontos alcança 10-15km"
+      ],
+      "deepDive": {
+        "badge": "DUAL-VECTORS HELIOGRAPH OPTICAL COLLIMATION",
+        "title": "Divergência de feixe solar especular de 0,5 grau e geometria de colimação óptica de três pontos",
+        "text": "A luz solar refletida especularmente em um espelho plano ou vidro temperado de celular diverge apenas **0,5 grau (o diâmetro angular do sol)**, mantendo **milhões de candelas de intensidade a 10–15km**. Como o feixe é invisível de lado, sobrepor **o espelho junto ao olho, o ponto refletido no entalhe em V dos dedos estendidos e o alvo distante** cria uma colimação de 3 pontos com precisão de 0,2 grau.",
+        "fieldSpecs": [
+          {
+            "name": "Heliógrafo solar de 10km alinhando espelho junto ao olho e mira em V dos dedos estendidos",
+            "scientificName": "V-Finger Collimated Solar Specular Heliograph Reflector",
+            "categoryTag": "Colimação óptica de 3 pontos / Lampejo SOS diurno de 10-15km",
+            "imageFileName": "id-v-finger-heliograph-sun-mirror.jpg",
+            "hudCode": "FIG. TOOL-27D // MACRO OPTIC",
+            "hudStatus": "OPTICAL RANGE: 10~15 KM LOCKED",
+            "traits": [
+              {
+                "label": "3 Pontos/Mira",
+                "value": "Alinhe **espelho junto ao olho - ponto de luz nos dedos em V - alvo distante**."
+              },
+              {
+                "label": "Placa/Reserva",
+                "value": "Sem espelho, use **a tela preta de um celular desligado, folha metálica lisa ou fundo de lata.**"
+              },
+              {
+                "label": "Lampejo/SOS",
+                "value": "Pisque **3 curtos · 3 longos · 3 curtos** para atrair a atenção do piloto na hora."
+              }
+            ],
+            "fieldUse": "Comunicação óptica diurna sem bateria para aeronaves e embarcações a dezenas de quilômetros"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nunca coloque bordas de lata cortantes na boca sem lixar na pedra, nem mantenha o reflexo do espelho fixo por dezenas de segundos sobre a cabine de uma aeronave",
+    "description": "As bordas recém-cortadas de uma lata são afiadas como navalha e cortarão profundamente seus lábios e língua se você soprar sem antes lixá-las em uma pedra. Se cortar a mão durante a fabricação, lave a ferida imediatamente com [Soro Caseiro e Solução Salina a 0,9%](/protocol-24) e estanque o sangue usando [Tala de Galhos e Hemostasia com Juta Fervida](/protocol-18). Em escombros com poeira, cubra o nariz com uma [Máscara de Carvão e Areia](/protocol-15) ou pano úmido e sopre apenas o apito. Ao sinalizar para helicópteros, nunca mantenha o feixe fixo na cabine para não ofuscar o piloto; envie séries curtas de 3 lampejos e faça pausas.",
+    "consequence": "Siga rigorosamente as 4 regras: Lixar bordas metálicas na pedra + Vedar ambos os lados com os dedos + Soprar 3 toques e ouvir 1 min + Enviar lampejos SOS intermitentes com mira em V."
+  },
+  "faqs": [
+    {
+      "question": "Com o que posso fazer um apito de emergência de 120dB se não houver nenhuma lata de bebida vazia por perto?",
+      "causeDiagnostic": "Qualquer pequena cavidade oca combinada com uma fenda estreita de ar pode gerar a mesma ressonância de alta frequência.",
+      "resolution": "Use **o tubo vazio de uma caneta esferográfica (sem a carga), o chapéu de uma bolota (carvalho), um gomo oco de bambu ou junco, ou uma tampa de garrafa**. Segure o chapéu de bolota ou tampa entre as juntas dos dois polegares deixando uma pequena fresta em V entre eles e sopre com força sobre a borda para produzir um apito agudo acima de 110dB."
+    },
+    {
+      "question": "Como reflito a luz do sol para um helicóptero à minha frente quando o sol está exatamente atrás das minhas costas?",
+      "causeDiagnostic": "Quando o sol está atrás de você, a sombra da sua própria cabeça e corpo bloqueia a luz se tentar apontar para a frente com apenas um espelho.",
+      "resolution": "Use o **método de dupla reflexão** segurando **duas superfícies refletoras (por exemplo, a tela de um celular desligado em uma mão e um espelho ou folha metálica na outra)**. Capte o sol vindo de trás com o primeiro refletor para jogá-lo no segundo espelho ao lado do olho, e desse segundo espelho mire através dos dedos em V para o alvo em 360 graus."
+    }
+  ],
+  "shortsScript": {
+    "hook": "Preso sob escombros ou isolado na mata? Se apenas gritar, você perderá a voz e as forças em 15 minutos! Veja como chamar o resgate a 10km com uma lata vazia e um espelho!",
+    "body": "Corte uma tira da largura de um dedo de uma lata vazia e lixe as bordas cortantes em uma pedra. Dobre o topo achatado para criar um canal estreito de ar e enrole a parte de baixo em um graveto da grossura de um lápis deixando uma fresta do tamanho de um grão de arroz. Tampe os dois lados com polegar e indicador e sopre 3 vezes para lançar um apito de 120dB a 2km! De dia, segure um espelho junto ao olho, alinhe o ponto de sol em um V com os dedos rumo ao helicóptero e pisque SOS a 10km!"
+  },
+  "outcome": {
+    "title": "Apito de Ressonância Helmholtz de 120dB em Lata e Sistema Heliógrafo Solar de 10km com Mira em V",
+    "badge": "FINAL SPEC // 120dB ACOUSTIC WHISTLE & 10KM SOLAR HELIOGRAPH",
+    "description": "Sistema de comunicação de sobrevivência sem energia que combina bocal plano de 1mm e câmara cilíndrica vedada pelos dedos para emitir sinais acústicos de 3.000Hz e 120dB poupando 4/5 do fôlego, junto com refletor solar de 3 pontos em V para transmitir lampejos SOS a 10–15km de dia.",
+    "svgFileName": "pr27-outcome.svg",
+    "svgLabels": [
+      "PR-27 COMPLETO // APITO 120dB E HELIÓGRAFO SOLAR 10KM",
+      "STAGE 01: CORTE CHAPA EM T",
+      "Tira 1,5cm + Lixar na Pedra",
+      "STAGE 02: BOCAL E CÂMARA",
+      "Fenda 1mm + Cilindro Lápis",
+      "STAGE 03: VEDAR LADOS 120dB",
+      "Polegar-Indicador + 3 Toques",
+      "STAGE 04: ESPELHO MIRA EM V",
+      "Mira de Dedos + Lampejo SOS",
+      "VERIFICADO // Poupa 80% de Fôlego · Alcance Óptico 10km"
+    ]
+  },
+  "createdAt": "2026-11-10T04:10:00.000Z",
+  "updatedAt": "2026-11-10T04:10:07.597Z",
+  "contentHash": "1b9f5a00b3ae1b42"
+}

@@ -1,0 +1,249 @@
+{
+  "protocolId": "PR-27",
+  "category": "TOOLS",
+  "title": "Wie man aus einer leeren Getränkedose und einem Spiegel eine 120dB Notpfeife & einen 10km Sonnenreflektor baut",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[3.000Hz Akustikresonanz & 10km Spiegel-Sonnenreflexion für Rettungssignale bei Verschüttung]",
+  "summary": "Wenn Sie bereits eine handelsübliche kugellose Rettungspfeife (Pealess), einen Signalspiegel, ein Drucklufthorn oder einen Notfunkbaken (PLB) im Notfallrucksack oder an der Rettungsweste haben, nutzen Sie diese fertige Ausrüstung immer zuerst für die schnellste Rettung. Wer jedoch nach einem Erdbeben unter Trümmern eingeschlossen oder bei Hochwasser und im Gebirge ohne Ausrüstung isoliert ist, erreicht durch bloßes Schreien nur 80–85dB und verliert nach 15 Minuten Stimme und Kraft. Eine aus einer leeren Getränkedose (oder einem Konservendeckel) gefaltete Resonanzpfeife erzeugt dagegen schon mit wenig Atemluft einen durchdringenden 3.000Hz-Ton mit 115–120dB, der Sturm- und Trümmerlärm bis zu 1,5–2km weit durchdringt. Tagsüber können Sie mit einem Handspiegel, einem ausgeschalteten Smartphone-Display oder Küchenfolie aus einer [stromlosen Karton-Wärmekapsel](/protocol-22) über eine V-Finger-Kimme gezielte SOS-Sonnenblitze an 10–15km entfernte Suchhubschrauber senden.",
+  "timeRequired": "10 Min. für die Notpfeife / 3 Min. für den Sonnenreflektor",
+  "successRate": "99% (bei Steinschliff der Schnittkanten + 2–3mm Tonfenster + Finger-Seitenverschluss + V-Finger-Visierung)",
+  "difficulty": "Anfänger (Ohne Spezialwerkzeug sofort aus leerer Dose, rauem Stein und Spiegel/Display/Folie herstellbar)",
+  "outputPerHour": "Verstärkt die akustische Reichweite um das 10-Fache (1,5–2km) gegenüber Rufen und sendet tagsüber 10–15km weite SOS-Lichtblitze",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 leere Getränkedose (oder dünner Konservendeckel, fester Flaschenverschluss oder hohler Bambushalm)",
+      "desc": "Dünnes, federndes Metallblech, das sich leicht von Hand biegen lässt und kräftig schwingt, um hochfrequente Töne zu erzeugen. Wenn Sie eine Stahlkonservendose verwenden, erhitzen Sie diese niemals im Feuer, da Innenbeschichtungen oder Verzinkungen giftige Dämpfe freisetzen; schneiden Sie das Blech kalt und binden Sie es mit einem [Wildranken-Seil](/protocol-05) um den Hals."
+    },
+    {
+      "id": "mat-02",
+      "name": "Scharfer Steinabschlag (oder Schere/Messer) & rauer Flussstein oder Betonbrocken zum Entgraten",
+      "desc": "Werkzeug zum Anritzen und Brechen der Dosenwand in gerade Streifen sowie zum Abschleifen rasiermesserscharfer Kanten. Ohne Schere ritzen Sie mit einem [Steinbeil und scharfem Steinabschlag](/protocol-04) mehrfach eine tiefe Rille, biegen das Blech hin und her bis es sauber bricht, und schleifen die Kanten am Stein glatt."
+    },
+    {
+      "id": "mat-03",
+      "name": "Kleiner Handspiegel für 10km Tagessignale (oder schwarzes Display eines ausgeschalteten Smartphones / glatte Folienplatte)",
+      "desc": "Flache Spiegelfläche, die Sonnenlicht als gebündelten Strahl auf weit entfernte Rettungshubschrauber oder Schiffe wirft. Ohne Spiegel nutzen Sie das glatte schwarze Glas eines leeren Smartphones oder wickeln glänzende Küchenfolie faltenfrei über ein flaches Stück Karton."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Dosenwand in einen fingerbreiten Streifen und ein T-Flügelblech schneiden und Kanten am Stein glätten",
+      "description": "1. **Deckel und Boden abtrennen und Dosenwand flachdrücken**: Stechen Sie den oberen Rand und den Boden einer leeren Dose mit einem [scharfen Steinabschlag](/protocol-04) oder einer Messerspitze ringsum ab, schneiden Sie den Zylinder längs auf und drücken Sie ihn flach auf den Boden.\n2. **Fingerbreiten Streifen (1,5cm) und T-Blech zuschneiden**: Ritzen Sie Linien auf das flache Blech, um **einen geraden Streifen von 1 Fingerbreite (1,5cm) und 3 Fingergliedern Länge (6cm)** sowie **ein T-förmiges Blech mit daumennagelgroßen Seitenflügeln (1cm)** auszuschneiden.\n3. **Werkzeugloser Biegebruch durch Metallermüdung**: Wenn Sie ohne Schere arbeiten, ritzen Sie mit einer Steinkante eine tiefe Linie und **biegen Sie das Blech entlang der Rille 3–4 Mal hin und her**, bis es durch Materialermüdung kerzengerade bricht.\n4. **Alle Schnittkanten an einem rauen Stein abschleifen**: Frisch geschnittenes Dosenblech hat messerscharfe Grate, daher **reiben Sie jede Kante über 20 Mal schräg über einen rauen Flussstein oder Betonblock**, bis sie sich mit der Fingerkuppe völlig glatt anfühlt.",
+      "actionNote": "> Warum Sie frisch geschnittenes Dosenblech niemals ungeschliffen an den Mund setzen dürfen: Ungeschliffene Schnittkanten wirken wie Rasierklingen; wer in Panik hineinbläst oder Luft holt, schneidet sich Lippen und Zunge tief auf.",
+      "svgFileName": "pr27-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // T-STREIFEN & STEINSCHLIFF",
+        "Dosenenden ab, Wand in 2 Streifen teilen",
+        "1,5cm x 6cm Streifen & T-Flügelblech",
+        "Schnittkanten am rauen Stein entgraten",
+        "[KERN] Glatte Kanten schützen die Lippen"
+      ],
+      "deepDive": {
+        "badge": "SHEET METAL FATIGUE SHEARING & DEBURRING",
+        "title": "Niedrigzyklischer Ermüdungsbruch dünner Metallbleche und sicheres Entgraten für den Mundkontakt",
+        "text": "Ein 0,1–0,15mm dünnes Dosenblech mit einer **0,03mm tiefen Ritzkerbe** erfährt eine starke Spannungskonzentration und bricht nach 3–4 Wechselbiegungen auch ohne Schere exakt gerade. Das Abschleifen der Mikrograte an Sandstein oder Beton (Deburring) schützt die Lippen und sorgt für eine verwirbelungsfreie Luftströmung.",
+        "fieldSpecs": [
+          {
+            "name": "Aus Getränkedose geschnittener 1,5cm Streifen & T-Blech mit Schleifstein",
+            "scientificName": "Deburred T-Wing & Linear Metal Strip Whistle Blank",
+            "categoryTag": "Werkzeugloser Ermüdungsbruch / Sicherheits-Kantenschliff",
+            "imageFileName": "id-tin-can-t-strip-cutout.jpg",
+            "hudCode": "FIG. TOOL-27A // MACRO OPTIC",
+            "hudStatus": "EDGE BURR: 0.0mm SMOOTHED",
+            "traits": [
+              {
+                "label": "Maß/Proportion",
+                "value": "**1 Fingerglied breit (1,5cm) mal 3 Glieder lang (6cm)** liefert den besten Hochton."
+              },
+              {
+                "label": "Bruch/Technik",
+                "value": "Mit Steinkante anritzen und **3–4 Mal hin und her biegen** für einen geraden Bruch."
+              },
+              {
+                "label": "Schliff/Schutz",
+                "value": "Alle Mundkanten **am rauen Stein abreiben, bis kein scharfer Grat mehr spürbar ist.**"
+              }
+            ],
+            "fieldUse": "Grundlegende Blechbearbeitung für akustische Rettungswerkzeuge ohne Schere in Trümmern"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Oberteil zu einem flachen Windkanal (Mundstück) falten und Unterteil zu einer bleistiftdicken Tonkammer rollen",
+      "description": "1. **Oberteil flach zu einem 1mm schmalen Windkanal falten**: Falten Sie den oberen Teil (oder die Seitenflügel des T-Blechs) nach innen, sodass **ein fingernageldicker (ca. 1mm), flacher Luftkanal (Mundstück)** entsteht, der Ihren Atem bündelt.\n2. **Unterteil um einen Zweig zu einem bleistiftdicken Zylinder rollen**: Legen Sie einen geraden Zweig **in Bleistift- oder Kleinfingerstärke (8–10mm Durchmesser)** quer auf das untere Ende des Streifens und rollen Sie das Blech darum zu einer hohlen zylindrischen Resonanzkammer.\n3. **Ein 2–3mm großes Tonfenster offen lassen**: Richten Sie das Ende des flachen oberen Windkanals und den oberen Rand des unteren Zylinders so aus, dass dazwischen **eine reiskorngroße rechteckige Öffnung (2–3mm Tonfenster)** frei bleibt.\n4. **Schneidkante (Labium) exakt auf den Luftstrahl ausrichten**: Drücken Sie den oberen Windkanal sanft mit der Fingerkuppe zurecht, sodass der aus dem 1mm-Spalt strömende Luftstrahl **genau mittig auf die dünne Metallkante des Zylinders trifft** und dort geteilt wird.",
+      "actionNote": "> Warum beim Hineinblasen nur ein leises Zischen statt eines schrillen Pfeiftons entsteht: Entweder ist der Spalt des Mundstücks zu weit, sodass die Luft verpufft, oder der Luftstrahl verfehlt die scharfe Metallkante des Zylinders.",
+      "svgFileName": "pr27-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 1MM WINDKANAL & ZYLINDERKAMMER",
+        "Oberteil flach zu 1mm Luftspalt falten",
+        "Unterteil um Zweig zum Zylinder rollen",
+        "2-3mm Tonfenster vor der Zylinderlippe",
+        "[KERN] Luftstrahl teilt sich zur Resonanz"
+      ],
+      "deepDive": {
+        "badge": "EDGE-TONE VORTEX & HELMHOLTZ RESONANCE",
+        "title": "Schneidenton-Wirbelablösung (Edge-Tone) und 3.000Hz-Verstärkung im zylindrischen Helmholtz-Resonator",
+        "text": "Trifft der im 1mm-Spalt beschleunigte Luftstrahl nach dem 2–3mm-Tonfenster auf die scharfe Zylinderlippe (Labium), pendelt er abwechselnd nach innen und außen und erzeugt **Kármánsche Wirbelablösungen**. Diese Schwingung regt die Luftsäule in der 8–10mm-Kammer an und erzeugt **einen reinen Hochton von 2.800–3.200Hz**, für den das menschliche Gehör am empfindlichsten ist.",
+        "fieldSpecs": [
+          {
+            "name": "Geformte Metallpfeife mit 1mm flachem Windkanal, 2-3mm Tonfenster und Zylinderkammer",
+            "scientificName": "Hand-Formed Fipple Windway & Cylindrical Helmholtz Resonator",
+            "categoryTag": "1mm Spalt-Luftstrahl / 2-3mm Labium-Ausrichtung",
+            "imageFileName": "id-folded-fipple-whistle-chamber.jpg",
+            "hudCode": "FIG. TOOL-27B // MACRO OPTIC",
+            "hudStatus": "RESONANCE FREQ: 3,000 Hz LOCKED",
+            "traits": [
+              {
+                "label": "Spalt/Dicke",
+                "value": "Den oberen Windkanal auf **Fingernageldicke (1mm) zusammendrücken** für hohen Luftdruck."
+              },
+              {
+                "label": "Kammer/Dicke",
+                "value": "Das Unterteil auf **Bleistift- oder Kleinfingerstärke (8–10mm)** rund aufrollen."
+              },
+              {
+                "label": "Fenster/Spalt",
+                "value": "Zwischen Kanalende und Zylinderkante **Reiskorngröße (2–3mm) Abstand** halten."
+              }
+            ],
+            "fieldUse": "Stromloser Strömungsakustik-Verstärker, der schwachen Atem in 120dB Notsignale umwandelt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Beide Seitenlöcher mit Daumen und Zeigefinger dicht verschließen und das 120dB SOS-Notsignal (3 Pfiffe) blasen",
+      "description": "1. **Beide offenen Zylinderenden fest mit Daumen und Zeigefinger abdichten**: Halten Sie die Pfeife so, dass die weichen Fingerkuppen von **Daumen und Zeigefinger beide seitlichen Öffnungen** des gerollten Zylinders luftdicht verschließen.\n2. **Optionaler Dauerverschluss mit Kiefernharz oder Lehm**: Wenn nur eine Hand frei ist oder die Finger steifgefroren sind, stecken Sie kleine Holzstopfen in beide Seitenlöcher und dichten Sie diese mit [wasserfestem Kiefernharz-Kleber](/protocol-10) oder feuchtem Lehm ab.\n3. **Kurz und kräftig blasen für 120dB Hochfrequenz-Pfiffe**: Umschließen Sie das flache Mundstück mit den Lippen und stoßen Sie ein kurzes, kräftiges **„TU!“** aus; die geschlossene Kammer erzeugt einen durchdringenden **115–120dB Pfeifton**, der 1,5–2km weit hörbar ist.\n4. **Internationalen 3-Pfiff-Notruftakt einhalten**: Um Sauerstoff und Kraft zu sparen, wiederholen Sie das internationale Notsignal: **„3 kurze Pfiffe von je 1 Sekunde ➔ 1 volle Minute Stille, um auf Suchtrupps zu horchen“**.",
+      "actionNote": "> Warum kein lauter Pfeifton entsteht, wenn Sie die seitlichen Löcher des Zylinders offen lassen: Bleiben beide Zylinderseiten offen, entweichen Luftdruck und Schallwellen seitlich ins Leere, statt in der Kammer zu reflektieren und Resonanz aufzubauen.",
+      "svgFileName": "pr27-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SEITENDICHTUNG & 120DB 3-PFIFF",
+        "Zylinderseiten mit Daumen & Zeigefinger zu",
+        "Kurz blasen für 3.000Hz durch Trümmer",
+        "Notruftakt (3 kurze Pfiffe + 1 Min Pause)",
+        "[KERN] 10x weiter als Rufen (80dB)"
+      ],
+      "deepDive": {
+        "badge": "CLOSED-CHAMBER ACOUSTIC IMPEDANCE & 3-BLAST SOS",
+        "title": "Akustische Impedanzanpassung der geschlossenen Kammer und Trümmerdurchdringung bei 3.000Hz",
+        "text": "Das Abdichten beider Seitenöffnungen mit den Fingerkuppen verwandelt den Zylinder in einen **geschlossenen Helmholtz-Resonator** und steigert den Schalldruck auf **115–120dB (rund das 1.000-Fache der Schallenergie eines 80dB-Schreis)**. Das 3.000Hz-Band hebt sich deutlich von tieffrequentem Wind-, Wasser- und Motorenlärm ab, während der Zyklus aus **3 Pfiffen / 1 Minute Horchen** den Sauerstoffverbrauch um über 80% senkt.",
+        "fieldSpecs": [
+          {
+            "name": "Mit Daumen und Zeigefinger abgedichtete 120dB Metall-Rettungspfeife im Einsatz",
+            "scientificName": "Finger-Sealed Closed-Chamber 120dB Acoustic Distress Whistle",
+            "categoryTag": "Luftdichter Seitenverschluss / Internationales 3-Pfiff-Signal",
+            "imageFileName": "id-finger-sealed-120db-whistle-blast.jpg",
+            "hudCode": "FIG. TOOL-27C // MACRO OPTIC",
+            "hudStatus": "OUTPUT: 120 dB @ 1.8 KM RANGE",
+            "traits": [
+              {
+                "label": "Seiten/Dicht",
+                "value": "**Daumen und Zeigefinger fest auf beide Seitenlöcher drücken**, um den Schall zu bündeln."
+              },
+              {
+                "label": "SOS/Intervall",
+                "value": "**3 kurze Pfiffe blasen, dann 1 Minute pausieren** und auf Retter oder Suchhunde hören."
+              },
+              {
+                "label": "Schnur/Sicherung",
+                "value": "Mit **[Wildranken-Seil](/protocol-05) um Hals oder Handgelenk binden** gegen Verlust."
+              }
+            ],
+            "fieldUse": "Akustische Notbake unter Trümmern, bei Nacht, Nebel oder Starkregen ohne Stimmbandverlust"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Tagsüber mit Spiegel oder Smartphone-Display und V-Finger-Kimme 10km weite SOS-Sonnenblitze senden",
+      "description": "1. **Spiegel, dunkles Smartphone-Glas oder Folienplatte dicht ans Auge halten**: Wenn Sie tagsüber einen Suchhubschrauber, ein Schiff oder Retter in der Ferne sehen, halten Sie einen **kleinen Spiegel (oder ein ausgeschaltetes schwarzes Smartphone-Display / glatte Folienplatte)** dicht neben Wange und Auge.\n2. **Anderen Arm ausstrecken und mit zwei Fingern eine V-Kimme bilden**: Strecken Sie den freien Arm gerade nach vorn aus, spreizen Sie **Zeige- und Mittelfinger zu einem V** und nehmen Sie das entfernte **Ziel (Hubschrauber, Boot oder Bergkamm)** genau in die Mitte der V-Kerbe.\n3. **Reflektierten Sonnenfleck auf die V-Finger legen**: Neigen Sie den Spiegel leicht, bis **der helle reflektierte Sonnenlichtfleck genau auf den Innenspitzen Ihrer ausgestreckten V-Finger liegt**; dadurch bilden Auge, V-Finger und Ziel eine gerade Linie und der Lichtstrahl trifft das Ziel in 10km Entfernung.\n4. **Lichtstrahl im Morse-SOS-Takt (3 kurz · 3 lang · 3 kurz) bewegen**: Halten Sie den Lichtfleck auf den V-Fingern und kippen Sie das Spiegelhandgelenk leicht für **3 kurze, 3 lange und 3 kurze Blitze (··· --- ···)**; streichen Sie auch ohne sichtbares Flugzeug regelmäßig den Horizont ab.",
+      "actionNote": "> Warum zielloses Wedeln mit einem Spiegel in den Himmel selbst von einem nahen Hubschrauberpiloten nicht gesehen wird: Der reflektierte Sonnenstrahl ist nur 0,5 Grad schmal und verfehlt das Ziel ohne Visierlinie um Hunderte Meter; Sie müssen den Lichtfleck über die V-Finger mit dem Ziel zur Deckung bringen.",
+      "svgFileName": "pr27-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SPIEGEL & V-FINGER AUF 10KM",
+        "Spiegel, Display oder Folie ans Auge",
+        "Fernziel im ausgestreckten Finger-V",
+        "Sonnenfleck aufs V legen & SOS blitzen",
+        "[KERN] 3-Punkt-Visier trifft auf 10-15km"
+      ],
+      "deepDive": {
+        "badge": "DUAL-VECTORS HELIOGRAPH OPTICAL COLLIMATION",
+        "title": "0,5-Grad-Strahldivergenz gerichteter Sonnenreflexion und optische Dreipunkt-Kollimation über V-Finger",
+        "text": "Von einem flachen Spiegel oder gehärtetem Smartphone-Glas reflektiertes Sonnenlicht weitet sich nur um **0,5 Grad (Sonnendurchmesser)** auf und erreicht bei klarem Wetter **10–15km weit Millionen Candela Leuchtstärke**. Da der schmale Strahl seitlich unsichtbar ist, bringt erst die Überlagerung von **Spiegel am Auge – Lichtfleck auf der ausgestreckten V-Finger-Kerbe – Fernziel** eine auf 0,2 Grad präzise Visierlinie.",
+        "fieldSpecs": [
+          {
+            "name": "10km Sonnen-Heliograph mit Spiegel am Auge und ausgestreckter V-Finger-Kimme",
+            "scientificName": "V-Finger Collimated Solar Specular Heliograph Reflector",
+            "categoryTag": "Optische 3-Punkt-Kollimation / 10-15km Tag-SOS-Lichtblitz",
+            "imageFileName": "id-v-finger-heliograph-sun-mirror.jpg",
+            "hudCode": "FIG. TOOL-27D // MACRO OPTIC",
+            "hudStatus": "OPTICAL RANGE: 10~15 KM LOCKED",
+            "traits": [
+              {
+                "label": "3-Punkt/Visier",
+                "value": "**Spiegel am Auge – Lichtfleck auf V-Fingern – Fernziel** in eine Linie bringen."
+              },
+              {
+                "label": "Ersatz/Spiegel",
+                "value": "Ohne Spiegel **ausgeschaltetes Smartphone-Display, glatte Küchenfolie oder Dosenboden** nutzen."
+              },
+              {
+                "label": "SOS/Blitzfolge",
+                "value": "**3 kurz · 3 lang · 3 kurz** blitzen, um sofort die Aufmerksamkeit von Piloten zu wecken."
+              }
+            ],
+            "fieldUse": "Batterielose optische Langstrecken-Signalgebung zu Luftfahrzeugen und Schiffen am Tag"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Setzen Sie niemals ungeschliffene, scharfe Dosenkanten an den Mund und richten Sie Spiegelblitze niemals puluhan Sekunden lang dauerhaft auf ein Flugzeugcockpit",
+    "description": "Frisch geschnittene Dosenkanten sind scharf wie Rasierklingen und schneiden Lippen und Zunge tief auf, wenn sie vor dem Gebrauch nicht an einem Stein glattgeschliffen werden. Bei Schnittwunden an der Hand spülen Sie diese sofort mit [oraler Rehydrationslösung & 0,9% Wundkochsalzlösung](/protocol-24) aus und stillen Sie die Blutung per [Astschiene & abgekochtem Jute-Druckverband](/protocol-18). Bei Staubentwicklung unter Trümmern bedecken Sie Mund und Nase mit einer [Aktivkohle-Sand-Rauchmaske](/protocol-15) oder einem feuchten Tuch und nutzen nur die Pfeife. Blenden Sie Hubschrauberpiloten niemals durch Dauerlicht, sondern senden Sie kurze 3er-Blitzfolgen mit Pausen.",
+    "consequence": "Halten Sie strikt die 4 Regeln ein: Metallkanten am Stein glätten + Seitenlöcher mit Fingern abdichten + 3 Pfiffe und 1 Min. Horchen + Unterbrochene SOS-Blitze über V-Kimme."
+  },
+  "faqs": [
+    {
+      "question": "Womit kann ich eine 120dB Notpfeife bauen, wenn weit und breit keine leere Getränkedose zu finden ist?",
+      "causeDiagnostic": "Jeder kleine Hohlraum mit einer schmalen Anblaskante erzeugt dieselbe hochfrequente Helmholtz-Resonanz.",
+      "resolution": "Nutzen Sie **eine leere Kugelschreiberhülse (ohne Mine), eine Eichelkappe, ein hohles Bambus- oder Schilfrohrsegment oder einen Flaschenverschluss**. Klemmen Sie eine Eichelkappe oder einen Flaschenverschluss zwischen beide Daumenknöchel, lassen Sie einen schmalen V-Spalt zwischen den Daumen und blasen Sie kräftig über die Kante, um einen über 110dB lauten Schrillton zu erzeugen."
+    },
+    {
+      "question": "Wie reflektiere ich Sonnenlicht zu einem Hubschrauber vor mir, wenn die Sonne genau hinter meinem Rücken steht?",
+      "causeDiagnostic": "Steht die Sonne im Rücken, wirft Ihr eigener Kopf und Körper Schatten auf einen einzelnen Spiegel vor Ihrem Gesicht.",
+      "resolution": "Nutzen Sie die **Zwei-Spiegel-Relais-Methode** mit **zwei reflektierenden Flächen (z. B. ausgeschaltetes Smartphone-Display in einer Hand und Spiegel oder Folienplatte in der anderen)**. Fangen Sie das Sonnenlicht von hinten mit dem ersten Reflektor ein, lenken Sie es auf den zweiten Spiegel neben Ihrem Auge und visieren Sie von dort über Ihre V-Finger das Ziel in 360 Grad an."
+    }
+  ],
+  "shortsScript": {
+    "hook": "Unter Trümmern verschüttet oder in den Bergen verirrt? Wer nur schreit, verliert nach 15 Minuten Stimme und Kraft! So rufen Sie mit einer leeren Dose und einem Spiegel Retter in 10km Entfernung!",
+    "body": "Schneiden Sie einen fingerbreiten Streifen aus einer leeren Getränkedose und schleifen Sie die scharfen Kanten an einem Stein glatt. Falten Sie das Oberteil flach zu einem engen Luftkanal und rollen Sie das Unterteil um einen Zweig zu einem bleistiftdicken Zylinder mit reiskorngroßem Tonspalt. Halten Sie beide Seitenlöcher mit Daumen und Zeigefinger dicht zu und blasen Sie 3 Mal kurz für ein 120dB Notsignal über 2km! Tagsüber halten Sie einen Spiegel ans Auge, legen den Sonnenfleck über zwei V-Finger auf den Hubschrauber und blitzen SOS bis zu 10km weit!"
+  },
+  "outcome": {
+    "title": "Getränkedosen-Helmholtz-120dB-Notpfeife & V-Finger-visiertes 10km Sonnen-Heliographen-System",
+    "badge": "FINAL SPEC // 120dB ACOUSTIC WHISTLE & 10KM SOLAR HELIOGRAPH",
+    "description": "Stromloses Überlebens-Signalsystem mit 1mm flachem Windkanal und fingerabgedichteter Zylinderresonanzkammer für 3.000Hz / 120dB Schallimpulse bei 80% weniger Atemverbrauch sowie 3-Punkt-V-Finger-Sonnenreflektor für 10–15km weite optische SOS-Signale am Tag.",
+    "svgFileName": "pr27-outcome.svg",
+    "svgLabels": [
+      "PR-27 SYSTEM // 120dB NOTPFEIFE & 10KM SONNEN-HELIOGRAPH",
+      "STAGE 01: T-BLECH-ZUSCHNITT",
+      "1,5cm Streifen + Steinschliff",
+      "STAGE 02: KANAL & TONKAMMER",
+      "1mm Spalt + Bleistiftzylinder",
+      "STAGE 03: SEITENDICHT 120dB",
+      "Daumen-Zeigefinger + 3 Pfiffe",
+      "STAGE 04: V-FINGER-SPIEGEL",
+      "V-Kimme + SOS-Sonnenblitz",
+      "FELDGETESTET // 80% Atem gespart · 10km optische Reichweite"
+    ]
+  },
+  "createdAt": "2026-11-10T04:10:00.000Z",
+  "updatedAt": "2026-11-10T04:10:07.597Z",
+  "contentHash": "1b9f5a00b3ae1b42"
+}

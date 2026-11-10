@@ -72,10 +72,10 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-26, 총 25편)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-27, 총 26편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 60종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (149개 SVG 도면, 활성 감사 125종: 스텝 100 + 결과 25, 보존 24종)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 64종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (154개 SVG 도면, 활성 감사 130종: 스텝 104 + 결과 26, 보존 24종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
