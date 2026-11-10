@@ -4,12 +4,21 @@ export interface ModelRankingInfo {
   id: string;
   major: number;
   minor: number;
-  tierScore: number; // pro > flash > flash-lite 등 가중치
+  tierScore: number;
 }
 
 export interface CachedModelResolution {
   timestamp: number;
   models: Record<GeminiModelCategory, string>;
+}
+
+export interface GoogleModelItem {
+  name?: string;
+  supportedGenerationMethods?: string[];
+}
+
+export interface GoogleModelListResponse {
+  models?: GoogleModelItem[];
 }
 
 /**
@@ -19,16 +28,18 @@ export interface CachedModelResolution {
  */
 export class GeminiModelResolverService {
   private static readonly TTL_MS = 12 * 60 * 60 * 1000; // 12시간 캐시
+  private static readonly NEGATIVE_TTL_MS = 60 * 1000; // 실패 시 1분 네거티브 캐시 (지속 지연 방지)
   private static cachedResolution: CachedModelResolution | null = null;
+  private static inFlightResolution: Promise<Record<GeminiModelCategory, string>> | null = null;
 
   /**
    * 네트워크 단절 및 API 오류 시 무중단 작동을 보장하는 검증된 최신 베이스라인
    */
   public static readonly BASELINE_MODELS: Record<GeminiModelCategory, string> = {
-    flash: 'gemini-3.8-flash',
-    pro: 'gemini-3.1-pro',
-    image: 'gemini-3-pro-image',
-    tts: 'gemini-3.8-flash-tts',
+    flash: 'gemini-2.5-flash',
+    pro: 'gemini-2.5-pro',
+    image: 'gemini-2.5-flash',
+    tts: 'gemini-2.0-flash',
   };
 
   /**
@@ -54,6 +65,7 @@ export class GeminiModelResolverService {
    */
   public static clearCache(): void {
     this.cachedResolution = null;
+    this.inFlightResolution = null;
   }
 
   /**
@@ -63,49 +75,62 @@ export class GeminiModelResolverService {
     apiKey: string,
     category: GeminiModelCategory = 'flash'
   ): Promise<string> {
-    // 1. 환경변수 수동 오버라이드가 있으면 최우선 적용
     const envOverride = this.getEnvOverride(category);
     if (envOverride) {
       return envOverride.trim();
     }
 
-    // 2. 캐시 유효성 확인
     const now = Date.now();
     if (this.cachedResolution && now - this.cachedResolution.timestamp < this.TTL_MS) {
       const cached = this.cachedResolution.models[category];
       if (cached) return cached;
     }
 
-    // 3. API 키가 없으면 안전 베이스라인 반환
     if (!apiKey || apiKey.trim() === '') {
       return this.BASELINE_MODELS[category];
     }
 
-    // 4. 구글 API에서 모델 목록 동적 조회
-    try {
-      const availableModels = await this.fetchAvailableModels(apiKey);
-      const resolved = this.rankAndSelectBestModels(availableModels);
+    // In-flight Promise가 존재하면 기존 요청에 편승 (Thundering Herd / Cache Stampede 방지)
+    if (!this.inFlightResolution) {
+      this.inFlightResolution = (async () => {
+        try {
+          const availableModels = await this.fetchAvailableModels(apiKey);
+          const resolved = this.rankAndSelectBestModels(availableModels);
 
-      this.cachedResolution = {
-        timestamp: now,
-        models: resolved,
-      };
+          this.cachedResolution = {
+            timestamp: Date.now(),
+            models: resolved,
+          };
 
-      return resolved[category] || this.BASELINE_MODELS[category];
-    } catch (err: unknown) {
-      // 5. 장애 격리: 네트워크나 API 오류 발생 시 안전 베이스라인으로 폴백
-      return this.BASELINE_MODELS[category];
+          return resolved;
+        } catch {
+          // 장애 격리 & 네거티브 캐싱: 외부 API 장애 시 1분간 베이스라인 캐시로 연속 타임아웃 방어
+          this.cachedResolution = {
+            timestamp: Date.now() - this.TTL_MS + this.NEGATIVE_TTL_MS,
+            models: { ...this.BASELINE_MODELS },
+          };
+          return { ...this.BASELINE_MODELS };
+        } finally {
+          this.inFlightResolution = null;
+        }
+      })();
     }
+
+    const resolved = await this.inFlightResolution;
+    return resolved[category] || this.BASELINE_MODELS[category];
   }
 
   /**
-   * 구글 models.list API 호출
+   * 구글 models.list API 호출 (x-goog-api-key 헤더 인증)
    */
   public static async fetchAvailableModels(apiKey: string): Promise<string[]> {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`;
+    const url = 'https://generativelanguage.googleapis.com/v1beta/models';
     const res = await fetch(url, {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': apiKey,
+      },
       signal: AbortSignal.timeout(5000), // 5초 타임아웃
     });
 
@@ -113,16 +138,15 @@ export class GeminiModelResolverService {
       throw new Error(`Models API responded with status ${res.status}`);
     }
 
-    const data: any = await res.json();
-    const rawList: any[] = Array.isArray(data.models) ? data.models : [];
+    const data = (await res.json()) as GoogleModelListResponse;
+    const rawList: GoogleModelItem[] = Array.isArray(data?.models) ? data.models : [];
 
     return rawList
       .filter((m) => {
-        // generateContent를 지원하는 모델 필터링
         const methods: string[] = Array.isArray(m.supportedGenerationMethods)
           ? m.supportedGenerationMethods
           : [];
-        return methods.includes('generateContent');
+        return methods.includes('generateContent') || methods.includes('predict');
       })
       .map((m) => String(m.name || '').replace(/^models\//, ''))
       .filter((name) => name.length > 0);
@@ -145,16 +169,15 @@ export class GeminiModelResolverService {
   /**
    * [Flash 모델 랭킹]
    * gemini-{major}.{minor}-flash 또는 gemini-{major}.{minor}-flash-lite
-   * 가중치: major * 1000 + minor * 10 + (lite ? 0 : 5)
+   * GA 접미사(-001, -002 등) 허용, CoT/추론(thinking) 및 실험(exp) 모델 배제
    */
   public static selectBestFlashModel(modelIds: string[]): string {
     const candidates: ModelRankingInfo[] = [];
 
     for (const id of modelIds) {
-      // tts, image, cyber, audio 전용 제외
-      if (/(tts|image|cyber|audio|preview)/i.test(id)) continue;
+      if (/(tts|image|cyber|audio|preview|thinking|exp|experimental)/i.test(id)) continue;
 
-      const match = id.match(/^gemini-(\d+)(?:\.(\d+))?-flash(?:-(lite))?$/i);
+      const match = id.match(/^gemini-(\d+)(?:\.(\d+))?-flash(?:-(lite))?(?:-(?:001|002|latest|\d{3}))?$/i);
       if (match) {
         const major = parseInt(match[1], 10);
         const minor = match[2] ? parseInt(match[2], 10) : 0;
@@ -180,9 +203,9 @@ export class GeminiModelResolverService {
     const candidates: ModelRankingInfo[] = [];
 
     for (const id of modelIds) {
-      if (/(image|vision|preview)/i.test(id)) continue;
+      if (/(image|vision|preview|thinking|exp|experimental)/i.test(id)) continue;
 
-      const match = id.match(/^gemini-(\d+)(?:\.(\d+))?-pro$/i);
+      const match = id.match(/^gemini-(\d+)(?:\.(\d+))?-pro(?:-(?:001|002|latest|\d{3}))?$/i);
       if (match) {
         const major = parseInt(match[1], 10);
         const minor = match[2] ? parseInt(match[2], 10) : 0;
@@ -201,29 +224,32 @@ export class GeminiModelResolverService {
 
   /**
    * [Image 모델 랭킹]
-   * 1순위: gemini-{major}-pro-image (Nano Banana Pro 등 최고 화질)
-   * 2순위: gemini-{major}.{minor}-flash-image
-   * 3순위: imagen-3.*
+   * 1순위: gemini-{major}-pro-image (tierWeight: 100)
+   * 2순위: gemini-{major}.{minor}-flash-image (tierWeight: 50)
+   * 3순위: imagen-3.* (tierWeight: 10)
+   * 계층 분리: tierWeight * 100000 + major * 1000 + minor * 10
    */
   public static selectBestImageModel(modelIds: string[]): string {
     const candidates: ModelRankingInfo[] = [];
 
     for (const id of modelIds) {
       // 1. gemini-*-pro-image
-      const proImageMatch = id.match(/^gemini-(\d+)(?:\.(\d+))?-pro-image$/i);
+      const proImageMatch = id.match(/^gemini-(\d+)(?:\.(\d+))?-pro-image(?:-(?:001|002|latest|\d{3}))?$/i);
       if (proImageMatch) {
         const major = parseInt(proImageMatch[1], 10);
         const minor = proImageMatch[2] ? parseInt(proImageMatch[2], 10) : 0;
-        candidates.push({ id, major, minor, tierScore: major * 1000 + minor * 10 + 100 });
+        const tierScore = 100 * 100000 + major * 1000 + minor * 10;
+        candidates.push({ id, major, minor, tierScore });
         continue;
       }
 
       // 2. gemini-*-flash-image
-      const flashImageMatch = id.match(/^gemini-(\d+)(?:\.(\d+))?-flash(?:-lite)?-image$/i);
+      const flashImageMatch = id.match(/^gemini-(\d+)(?:\.(\d+))?-flash(?:-lite)?-image(?:-(?:001|002|latest|\d{3}))?$/i);
       if (flashImageMatch) {
         const major = parseInt(flashImageMatch[1], 10);
         const minor = flashImageMatch[2] ? parseInt(flashImageMatch[2], 10) : 0;
-        candidates.push({ id, major, minor, tierScore: major * 1000 + minor * 10 + 50 });
+        const tierScore = 50 * 100000 + major * 1000 + minor * 10;
+        candidates.push({ id, major, minor, tierScore });
         continue;
       }
 
@@ -232,7 +258,8 @@ export class GeminiModelResolverService {
       if (imagenMatch) {
         const major = parseInt(imagenMatch[1], 10);
         const minor = imagenMatch[2] ? parseInt(imagenMatch[2], 10) : 0;
-        candidates.push({ id, major, minor, tierScore: major * 1000 + minor * 10 + 10 });
+        const tierScore = 10 * 100000 + major * 1000 + minor * 10;
+        candidates.push({ id, major, minor, tierScore });
       }
     }
 
@@ -252,11 +279,11 @@ export class GeminiModelResolverService {
     const candidates: ModelRankingInfo[] = [];
 
     for (const id of modelIds) {
-      const match = id.match(/^gemini-(\d+)(?:\.(\d+))?-flash(?:-lite)?-tts$/i);
+      const match = id.match(/^gemini-(\d+)(?:\.(\d+))?-flash(?:-(lite))?-tts(?:-(?:001|002|latest|\d{3}))?$/i);
       if (match) {
         const major = parseInt(match[1], 10);
         const minor = match[2] ? parseInt(match[2], 10) : 0;
-        const isLite = id.includes('lite');
+        const isLite = Boolean(match[3]);
         const tierScore = major * 1000 + minor * 10 + (isLite ? 0 : 5);
         candidates.push({ id, major, minor, tierScore });
       }
