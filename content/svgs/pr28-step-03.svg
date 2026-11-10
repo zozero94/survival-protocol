@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg28s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="vapor28s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="boot28s3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid28s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow28s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg28s3)"/>
+  <rect width="400" height="400" fill="url(#grid28s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#06b6d4" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 방습 외피 결합 및 발목 1마디 여유 결속</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#06b6d4" stroke-width="1"/>
+  <text x="24" y="66" fill="#a5f3fc" font-family="monospace" font-size="10.5">신문지 단열층 바깥에 튼튼한 방습 외피를 씌워 외부 수분 차단</text>
+
+  <!-- Main Illustration: Boot Cutaway with Waterproof Shell & Ankle 1-Finger Loop -->
+  <g filter="url(#shadow28s3)">
+    <!-- Main Center Panel: Cross-Section Assembly -->
+    <rect x="24" y="88" width="352" height="150" rx="4" fill="#0f172a" stroke="#0891b2" stroke-width="1.2"/>
+
+    <!-- Left Sub-view: Layered Foot inserted into Boot -->
+    <!-- Outer Wet Boot Contour -->
+    <path d="M75,115 L75,155 Q75,180 50,195 L34,204 Q26,210 32,222 L145,222 Q158,220 150,202 Q136,182 122,155 L122,115 Z" fill="url(#boot28s3)" stroke="#64748b" stroke-width="1.8"/>
+    <!-- Water droplet exterior threat blocked -->
+    <circle cx="28" cy="180" r="4" fill="#38bdf8"/>
+    <circle cx="24" cy="195" r="3.5" fill="#38bdf8"/>
+    <path d="M22,188 L28,188" stroke="#ef4444" stroke-width="1.5"/>
+
+    <!-- Translucent Vapor Barrier Membrane Layer -->
+    <path d="M80,105 L80,150 Q80,172 58,188 L44,198 Q38,204 42,214 L136,214 Q146,212 140,196 Q128,176 116,150 L116,105 Z" fill="url(#vapor28s3)" stroke="#22d3ee" stroke-width="1.8"/>
+
+    <!-- Inner Paper & Sock Core Foot -->
+    <path d="M86,112 L86,146 Q86,165 68,178 L56,186 Q50,192 54,202 L128,202 Q134,200 130,188 Q120,170 110,146 L110,112 Z" fill="#475569" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Right Sub-view: Ankle Loose Tether Detail with 1-Finger Clearance -->
+    <rect x="186" y="98" width="176" height="130" rx="3" fill="#0b1120" stroke="#f59e0b" stroke-width="1"/>
+    <!-- Ankle Leg Cylinder Profile -->
+    <rect x="238" y="108" width="56" height="110" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Loose Tether Cord Wrapped Around Ankle -->
+    <path d="M230,158 C230,150 302,150 302,158 C302,166 230,166 230,158 Z" fill="none" stroke="#f59e0b" stroke-width="2.8"/>
+    <!-- 1 Finger Gap Indicator (15mm) -->
+    <rect x="290" y="146" width="16" height="24" rx="4" fill="#10b981" fill-opacity="0.3" stroke="#10b981" stroke-width="1.5"/>
+    <path d="M298,140 L298,132 M294,136 L298,132 L302,136" stroke="#10b981" stroke-width="1.5" fill="none"/>
+    <!-- Blood Flow Green Arrows Unconstricted -->
+    <path d="M256,116 L256,144 M252,138 L256,144 L260,138" stroke="#10b981" stroke-width="2" fill="none"/>
+    <path d="M276,116 L276,144 M272,138 L276,144 L280,138" stroke="#10b981" stroke-width="2" fill="none"/>
+    <path d="M256,172 L256,204 M252,198 L256,204 L260,198" stroke="#10b981" stroke-width="2" fill="none"/>
+    <path d="M276,172 L276,204 M272,198 L276,204 L280,198" stroke="#10b981" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#06b6d4" stroke-width="1"/>
+  <text x="24" y="271" fill="#a5f3fc" font-family="monospace" font-size="10.5">젖은 신발 속에 라이너를 조심스럽게 밀어 넣어 착용</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="305" fill="#fef08a" font-family="monospace" font-size="10.5">발목 윗부분에 손가락 한 마디 여유를 두고 끈으로 고정</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 발목을 너무 조이지 않아야 발가락 혈액순환과 온기가 유지됨</text>
+</svg>

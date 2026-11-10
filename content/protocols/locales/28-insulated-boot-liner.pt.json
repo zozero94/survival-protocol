@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-28",
+  "category": "SHELTER",
+  "title": "Como Fazer um Forro Isolante e Impermeável para Botas com Sacos Plásticos, Papelão e Jornal contra Congelamento e Pé de Trincheira",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Engenharia de Barreira de Vapor Térmica e Isolamento Multicamada de Ar Estagnado contra Congelamento e Pé de Trincheira]",
+  "summary": "Se você já possui em seu abrigo ou mochila de emergência botas impermeáveis de trilha (GORE-TEX), meias grossas de lã merino, aquecedores químicos adesivos para os pés ou sapatilhas de neoprene, use sempre esses equipamentos prontos em primeiro lugar. Porém, em frio extremo ou evacuações por enchentes geladas, assim que sapatos e meias se molham, a água dissipa o calor cerca de 25 vezes mais rápido do que o ar estagnado. A temperatura dos pés despenca, provocando congelamento (Frostbite) ou necrose por maceração tecidual (Pé de Trincheira / Trench Foot) em apenas 2 a 3 horas. Em desastres, perder a mobilidade dos pés impede a fuga e o resgate. Combinando caixas de papelão ondulado descartadas, jornais velhos, sacos plásticos e papel-alumínio de cozinha (ou casca de bétula e capim seco), é possível montar imediatamente um forro térmico que barra o frio do chão, retém o calor e isola o suor da água externa.",
+  "timeRequired": "15 min para palmilha e envelopamento com jornal / 2 min para a troca a cada 3 a 4 horas",
+  "successRate": "99% (com papelão duplo cortado com 5 mm de folga, alumínio voltado para cima, jornal amassado para criar bolsões de ar e 1 falange de folga no tornozelo)",
+  "difficulty": "Iniciante (Construído imediatamente sem ferramentas especiais usando papelão, jornais, sacolas plásticas e papel-alumínio)",
+  "outputPerHour": "Bloqueia mais de 80% da perda de calor dos pés no gelo e previne necroses por pé de trincheira em áreas alagadas",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Pedaços de Papelão Ondulado (ou Placas Rígidas de Embalagem / 2 Folhas de Casca de Bétula)",
+      "desc": "Barreira rígida contra a condução térmica entre os pés e o solo congelado. O ar estagnado aprisionado nas ondas internas do papelão bloqueia o frio da terra como no [Isolante Térmico de Papelão em 3 Camadas](/protocol-22). Sobrepor duas camadas com ondas cruzadas evita que o papelão amasse sob o peso do corpo."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Folhas de Papel-Alumínio de Cozinha (ou Forro Metalizado de Pacote de Salgadinho / Manta Térmica)",
+      "desc": "Refletor de radiação térmica que rebate o calor infravermelho do corpo de volta para as solas dos pés. Manter o lado brilhante voltado para cima reflete o calor corporal com o mesmo princípio óptico do [Apito de Emergência 120dB e Espelho de Sinalização](/protocol-27)."
+    },
+    {
+      "id": "mat-03",
+      "name": "6 a 8 Folhas de Jornal Velho (ou Retalhos de Pano de Algodão / Capim Seco / Plumas de Tifa)",
+      "desc": "Amassadas à mão e reabertas para criar milhares de microbolsas de ar estagnado que impedem a convecção. As fibras de celulose absorvem de 2 a 3 vezes o próprio peso em umidade, evitando que o suor encharque a pele dentro da barreira plástica."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Sacos Plásticos Resistentes (ou Sacos Zip / Sacos de Pão) e 2 Cadarços (ou Corda de Fibra Selvagem)",
+      "desc": "Membrana impermeável de barreira de vapor (Vapor Barrier) que impede a lama e o gelo do calçado de atingirem o isolamento seco de jornal. A amarração no tornozelo deve ter 1 falange de folga feita com [Corda Selvagem de Kudzu](/protocol-05) ou cadarços para não comprimir a circulação."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Recortar 2 camadas de papelão e papel-alumínio com meio dedo de folga para criar a palmilha de isolamento do chão",
+      "description": "1. **Traçar o contorno da sola com 5 mm de sobra**: Coloque a sola da bota (ou o pé descalço) sobre o papelão ondulado e trace o contorno com uma [Lâmina de Pedra Afiada](/protocol-04) ou caneta, deixando **meio dedo (cerca de 5 mm) mais largo** em toda a volta para compensar o volume do jornal.\n2. **Recortar 2 camadas de papelão e 1 de alumínio**: Corte duas palmilhas de papelão e uma folha de papel-alumínio seguindo o contorno ampliado. Se não houver tesoura, faça um vinco profundo com a pedra e dobre para destacar.\n3. **Cruzar as ondas do papelão e virar o alumínio para cima**: Ao juntar os dois papelões, alinhe as **ondulações internas em sentidos perpendiculares (cruzadas a 90 graus)** para não afundarem com o peso. Coloque o papel-alumínio por cima com o **lado brilhante voltado para CIMA (em direção à sola do pé)**.\n4. **Inserir no calçado e nivelar**: Empurre a palmilha de 3 camadas até o fundo do calçado e verifique com a mão se a superfície ficou lisa e sem dobras desconfortáveis.",
+      "actionNote": "> Por que o lado brilhante do alumínio deve apontar para cima: O papel-alumínio não bloqueia o calor por contato direto, mas reflete o calor radiante infravermelho. Posicionar o espelho voltado para a pele faz com que o calor emitido pelo pé seja devolvido diretamente aos dedos.",
+      "svgFileName": "pr28-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PALMILHA ISOLANTE DE PAPELÃO DUPLO E ALUMÍNIO",
+        "Contornar a sola do calçado com folga de 5 mm (meio dedo)",
+        "Recortar 2 camadas de papelão e papel-alumínio em 3 camadas",
+        "Posicionar o lado brilhante do alumínio para CIMA (refletir calor)",
+        "[PRINCIPAL] Palmilha 5 mm maior bloqueia 90% do frio do solo"
+      ],
+      "deepDive": {
+        "badge": "GROUND CONDUCTION BLOCK & RADIANT FOIL INSOLE",
+        "title": "Interrupção da Condução Térmica do Solo e 95% de Reflexão da Radiação Infravermelha",
+        "text": "O solo funciona como um dissipador térmico infinito; a perda por condução através das solas drena a temperatura corporal rapidamente. O papelão ondulado possui condutividade térmica baixíssima (0,04 a 0,05 W/m·K). Duas camadas com ondas cruzadas interrompem a condução do gelo, enquanto o papel-alumínio superior **reflete de 90% a 95% da radiação infravermelha de onda longa** emitida pelos pés.",
+        "fieldSpecs": [
+          {
+            "name": "Palmilha Térmica de Papelão Duplo Cruzado com 5 mm de Folga e Alumínio Radiante",
+            "scientificName": "Cross-Corrugated & Radiant Foil Barrier Insole",
+            "categoryTag": "Bloqueio de Condução do Solo / 95% de Reflexão Radiante",
+            "imageFileName": "id-cardboard-foil-insole-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28A // MACRO OPTIC",
+            "hudStatus": "CONDUCTION LOSS: -90% BLOCKED",
+            "traits": [
+              {
+                "label": "Corte/Medida",
+                "value": "Cortar com **meio dedo (5 mm) a mais** para acomodar o estofamento de jornal."
+              },
+              {
+                "label": "Ondas/Cruzamento",
+                "value": "Cruzar as ondas a **90 graus entre as duas placas** para resistir ao peso do corpo."
+              },
+              {
+                "label": "Alumínio/Face",
+                "value": "O lado espelhado deve ficar **voltado para CIMA**, em direção à planta do pé."
+              }
+            ],
+            "fieldUse": "Isolamento básico essencial contra o frio cortante de pisos de neve, gelo ou concreto úmido"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Vestir meia de algodão seca e envolver com jornal amassado (ou capim seco) para criar bolsas de ar e absorver suor",
+      "description": "1. **Meia seca de algodão diretamente na pele**: Em contato direto com a pele dos pés, vista obrigatoriamente uma meia de algodão seca (ou retalho limpo) para absorver o suor liberado durante a caminhada.\n2. **Amassar bem 3 a 4 folhas de jornal e reabrir**: Pegue as folhas de jornal com as duas mãos e aperte-as até formarem **uma bola firme do tamanho de uma laranja**, depois abra-as suavemente. Esse enrugamento cria bolsas de ar estagnado com cerca de uma falange de dedo (1,5 cm) de espessura.\n3. **Envolver da ponta dos dedos até o tornozelo**: Dobre o jornal amassado em camada dupla sobre a ponta dos dedos e envolva o peito do pé, a sola e a região do tendão de Aquiles. No ambiente selvagem, adicione capim seco ou plumas de tifa perto do [Fogareiro Primitivo](/protocol-21) entre o papel.\n4. **Verificar a flexibilidade e maciez**: Não aperte o papel excessivamente para não colapsar os bolsões de ar. **O envelopamento deve ter a consistência macia e elástica de uma esponja**.",
+      "actionNote": "> Por que o jornal liso não aquece: Folhas lisas de papel têm menos de 0,1 mm de espessura e não retêm calor. Somente ao amassar surgem milhares de bolsões de 'ar estagnado' (Dead-Air) com mais de 15 mm de espessura, que agem como um isolante térmico de alta eficiência.",
+      "svgFileName": "pr28-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // MEIA DE ALGODÃO E JORNAL AMASSADO (AR ESTAGNADO)",
+        "Vestir meia seca na pele para absorver o suor dos pés",
+        "Amassar 3 a 4 folhas de jornal para criar bolsões de ar (15 mm)",
+        "Envolver dos dedos até o tornozelo para conter a perda de calor",
+        "[PRINCIPAL] Milhares de bolsas de ar retêm o calor do corpo"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR TRAPPING & CAPILLARY MOISTURE WICKING",
+        "title": "Retenção de Ar Estagnado (Dead-Air) e Absorção Capilar de Suor pela Celulose",
+        "text": "O ar imóvel tem condutividade térmica de apenas 0,024 W/m·K, sendo um dos melhores isolantes da natureza. As microdobras do jornal amassado bloqueiam a convecção do ar formando um **colchão de ar estagnado de 15 mm (Air Pocket)**. Simultaneamente, as fibras de polpa de madeira da celulose drenam o suor da planta do pé por capilaridade, impedindo pontes térmicas úmidas.",
+        "fieldSpecs": [
+          {
+            "name": "Camada Interna de Algodão e Isolamento de Celulose com Bolsas de Ar de 15 mm",
+            "scientificName": "Wicking Cotton & Crumpled Cellulose Dead-Air Cushion",
+            "categoryTag": "Absorção Capilar de Suor / Colchão de Ar Estagnado",
+            "imageFileName": "id-crumpled-paper-air-pockets.jpg",
+            "hudCode": "FIG. SHELTER-28B // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR THICKNESS: 15mm SECURED",
+            "traits": [
+              {
+                "label": "Amasso/Volume",
+                "value": "O jornal deve ser **completamente amassado e aberto** para gerar 15 mm de colchão de ar."
+              },
+              {
+                "label": "Camada/Suor",
+                "value": "Use **meia seca de algodão rente à pele** para drenar o suor para o papel."
+              },
+              {
+                "label": "Ponta/Dedos",
+                "value": "Os **dedos, área mais crítica a congelamentos, recebem camada dupla**."
+              }
+            ],
+            "fieldUse": "Camada isolante essencial para reter o calor dos dedos no inverno rigoroso e absorver o suor das solas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Envolver com saco plástico (barreira impermeável), calçar a bota e atar o tornozelo com folga",
+      "description": "1. **Cobrir o jornal com o saco plástico**: Introduza o pé já envolvido pela meia e pelo jornal dentro de um **saco plástico limpo e sem nenhum furo (ou saco tipo zip)**. Deixe uma leve folga nos dedos e no calcanhar sem esticar o plástico demais.\n2. **Calçar a bota suavemente**: Deslize o pé protegido para dentro do calçado sobre a palmilha de papelão. Se a bota ficar apertada e esmagar o jornal, afrouxe os cadarços ao máximo ou retire uma camada de papelão da palmilha para que **os dedos possam se mexer livremente**.\n3. **Amarrar o tornozelo com folga de 1 falange**: Junte a abertura superior do saco no tornozelo e prenda com um pedaço de barbante ou [Corda Selvagem de Kudzu](/protocol-05). **A amarração deve permitir passar o dedo indicador com facilidade por baixo do laço**.\n4. **Verificar a proteção contra água**: Confirme se o plástico isola totalmente o jornal interno da parte interna úmida da bota.",
+      "actionNote": "> Por que a amarração no tornozelo nunca deve ser apertada: Apertar o tornozelo comprime as artérias e veias da perna. Sem sangue quente fluindo do coração, os dedos atingem temperaturas negativas em menos de 1 hora, provocando congelamento grave e irreversível.",
+      "svgFileName": "pr28-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BARREIRA DE VAPOR PLÁSTICA E FIXAÇÃO COM FOLGA",
+        "Cobrir o jornal com saco plástico para barrar água externa",
+        "Deslizar o pé cuidadosamente para dentro da bota úmida",
+        "Amarrar o tornozelo com folga de 1 falange de dedo",
+        "[PRINCIPAL] Nunca apertar o tornozelo para não cortar a circulação"
+      ],
+      "deepDive": {
+        "badge": "VAPOR BARRIER LINER & VASCULAR PERFUSION SAFETY",
+        "title": "Barreira de Vapor Externa e Manutenção da Pressão de Perfusão Vascular Periférica",
+        "text": "O saco plástico opera como uma **barreira de vapor impermeável (Vapor Barrier)** contra a entrada de água líquida externa (lama, neve, poças). No entanto, apertar o tornozelo acima de 20 mmHg de pressão reduz drasticamente a **pressão de perfusão capilar (Capillary Perfusion Pressure)** da artéria tibial. O sangue aquecido deixa de alcançar as extremidades, acelerando o congelamento isquêmico. Manter uma **folga de segurança de 1 falange de dedo (cerca de 15 mm)** é essencial.",
+        "fieldSpecs": [
+          {
+            "name": "Forro Plástico de Barreira de Vapor com Amarração Não-Compressiva de Segurança",
+            "scientificName": "Impermeable Vapor Barrier Shell & Non-Constrictive Ankle Tether",
+            "categoryTag": "Isolamento Hídrico / Preservação da Circulação",
+            "imageFileName": "id-vapor-barrier-boot-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28C // MACRO OPTIC",
+            "hudStatus": "CIRCULATION: 100% UNCONSTRICTED",
+            "traits": [
+              {
+                "label": "Água/Bloqueio",
+                "value": "A película plástica **impede 100% da lama e do gelo externo**."
+              },
+              {
+                "label": "Tornozelo/Folga",
+                "value": "O laço deve ser frouxo o bastante para **um dedo indicador entrar com facilidade**."
+              },
+              {
+                "label": "Dedos/Espaço",
+                "value": "Cadarços bem soltos para que **os dedos se mexam sem aperto**."
+              }
+            ],
+            "fieldUse": "Protege os pés contra umidade e necrose ao atravessar trechos alagados ou neve profunda com calçados encharcados"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Trocar o jornal úmido interno a cada 3 a 4 horas e mexer os dedos para monitorar o fluxo sanguíneo",
+      "description": "1. **Verificar a umidade a cada 3 a 4 horas**: Como o suor liberado fica retido dentro da capa plástica, retire a bota **a cada duas refeições (cerca de 3 a 4 horas)** e apalpe o jornal interno para ver se está úmido.\n2. **Retirar o jornal úmido e colocar folhas secas**: Remova o jornal amolecido pelo suor e substitua-o imediatamente por **3 folhas de jornal seco recém-amassadas** ao redor dos dedos e peito do pé.\n3. **Cuidar da secagem das meias**: Se a meia estiver úmida, troque-a por uma reserva seca. Seque a meia úmida colocando-a sob o casaco perto da axila usando o calor do corpo ou ao lado do [Fogareiro de Lata Sem Fumaça](/protocol-21).\n4. **Exercício de dedos e teste de retorno capilar a cada hora**: Durante a caminhada, **mexa ativamente os dedos para cima e para baixo pelo menos 20 vezes a cada hora**. Pressione a ponta do dedão por 3 segundos; a cor rosada normal da pele deve retornar em menos de 2 segundos.",
+      "actionNote": "> Por que manter o jornal úmido dentro do plástico é perigoso: O papel encharcado de suor perde todas as bolsas de ar isolantes. Como a água conduz calor 25 vezes mais rápido, o forro vira uma bolsa de gelo que rouba calor corporal acelerando o surgimento do pé de trincheira.",
+      "svgFileName": "pr28-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TROCA A CADA 3-4H E TESTE DE ENCHIMENTO CAPILAR",
+        "Remover o jornal úmido interno e trocar por papel seco",
+        "O suor retido conduz calor 25x mais rápido causando hipotermia",
+        "Mexer os dedos a cada hora para checar a circulação sanguínea",
+        "[PRINCIPAL] Troca periódica de jornal e movimento evitam pé de trincheira"
+      ],
+      "deepDive": {
+        "badge": "MOISTURE ACCUMULATION PREVENTION & CAPILLARY REFILL",
+        "title": "Prevenção do Resfriamento Latente por Saturação e Diagnóstico por Tempo de Enchimento Capilar (TEC)",
+        "text": "Os pés humanos liberam de 10 a 30 ml de suor por hora durante a marcha. Quando a umidade relativa dentro do saco atinge 100%, a condensação elimina o colchão de ar e **a condutividade da água (0,6 W/m·K) rouba o calor do corpo 25 vezes mais rápido do que o ar seco**. A troca do jornal a cada 3 a 4 horas é mandatória. O teste de **Tempo de Enchimento Capilar (Capillary Refill Time, TEC < 2s)** avalia a circulação periférica em tempo real.",
+        "fieldSpecs": [
+          {
+            "name": "Protocolo de Troca de Matriz Úmida a Cada 3 a 4 Horas e Diagnóstico de TEC em 2 Segundos",
+            "scientificName": "Moisture-Saturated Matrix Rotation & Capillary Refill Protocol",
+            "categoryTag": "Prevenção de Colapso Térmico / Avaliação Circulatória",
+            "imageFileName": "id-newspaper-swap-circulation-check.jpg",
+            "hudCode": "FIG. SHELTER-28D // MACRO OPTIC",
+            "hudStatus": "CAPILLARY REFILL: &lt; 2 SEC (NORMAL)",
+            "traits": [
+              {
+                "label": "Troca/Intervalo",
+                "value": "Trocar o papel a cada **3 a 4 horas de uso** devido ao acúmulo de suor."
+              },
+              {
+                "label": "Movimento/Dedos",
+                "value": "Mexer os dedos **20 vezes por hora** para bombear a circulação."
+              },
+              {
+                "label": "Retorno/Capilar",
+                "value": "A cor deve voltar em **menos de 2 segundos** após pressionar o dedo por 3s."
+              }
+            ],
+            "fieldUse": "Procedimento obrigatório de manutenção para impedir gangrena, pé de trincheira e amputações em deslocamentos no frio extremo"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Colocar o saco plástico diretamente sobre a pele descalça sem meia absorvente nem jornal",
+    "description": "Ao tentar isolar da água colocando o plástico direto na pele, todo o suor expelido pelos poros fica aprisionado contra a epiderme. A água retida conduz o calor 25 vezes mais rápido do que o ar, congelando os pés ou provocando maceração grave dos tecidos (pé de trincheira) em poucas horas.",
+    "consequence": "Danos neurológicos irreversíveis nos dedos dos pés, perda da capacidade de andar e risco de amputação por necrose",
+    "prevention": "Vista sempre primeiro uma meia ou pano seco de algodão rente à pele, envolva com jornal amassado e só então vista o saco plástico. Troque o jornal úmido a cada 3 a 4 horas."
+  },
+  "faqs": [
+    {
+      "question": "Como improvisar se não houver caixas de papelão nem papel-alumínio?",
+      "answer": "Casca de bétula é a melhor alternativa natural. 2 a 3 camadas de casca de bétula sob a sola isolam a friagem do solo e são impermeáveis graças aos óleos naturais (betulina). Se não tiver papel-alumínio, use a parte interna prateada de pacotes de salgadinhos ou forre o fundo do calçado com uma camada fofa de 2 cm de agulhas de pinheiro bem secas ou musgo seco."
+    },
+    {
+      "question": "Amarrar o tornozelo bem apertado não ajuda a vedar melhor contra a neve e o vento frio?",
+      "answer": "De jeito nenhum! Apertar o tornozelo bloqueia os vasos que irrigam as extremidades dos pés. Sem o sangue aquecido bombeado pelo coração, os dedos esfriam para temperaturas negativas em menos de 1 hora, causando congelamento severo. Deixe sempre a folga de um dedo indicador entre a amarração e a pele para o sangue circular livremente."
+    },
+    {
+      "question": "O forro funciona mesmo se a bota externa já estiver completamente encharcada de lama ou gelo?",
+      "answer": "Sim, com total eficácia. O saco plástico externo atua como uma barreira de vapor (Vapor Barrier) 100% impermeável. Mesmo que o calçado esteja ensopado de água congelante, o plástico impede que a umidade alcance o jornal seco e a meia. Certifique-se apenas de remover pedrinhas afiadas de dentro da bota para não furar a sacola plástica ao calçar."
+    }
+  ],
+  "createdAt": "2026-11-10T05:23:59.349Z",
+  "contentHash": "c583f79cc83ca9d5"
+}

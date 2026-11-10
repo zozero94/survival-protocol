@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-28",
+  "category": "SHELTER",
+  "title": "Cómo hacer forros térmicos e impermeables para botas con bolsas de plástico, cartón y periódico contra la congelación y el pie de trinchera",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Ingeniería térmica de calzado con barrera de vapor y aislamiento multicapa contra congelación y necrosis por pie de trinchera]",
+  "summary": "Si ya dispone de botas impermeables de senderismo (GORE-TEX), calcetines gruesos de lana merino, parches térmicos desechables o escarpines de neopreno en su refugio o mochila de emergencia, use siempre ese equipo comercial en primer lugar. Sin embargo, durante apagones bajo cero o evacuaciones en inundaciones heladas, una vez que las botas y calcetines se mojan, el agua conduce el calor corporal aproximadamente 25 veces más rápido que el aire estático. La temperatura de los pies se desploma, causando congelación (Frostbite) o pie de trinchera (Trench Foot) en 2 o 3 horas. En un desastre, perder la movilidad del pie impide la evacuación. Combinando cajas de cartón corrugado, periódicos arrugados, bolsas de plástico y papel de aluminio (o corteza de abedul y hierba seca), se construye un forro aislante que bloquea el frío del suelo, atrapa calor en bolsas de aire y aísla el sudor del agua exterior.",
+  "timeRequired": "15 min para plantilla y envoltura de papel / 2 min para cambio cada 3-4 h",
+  "successRate": "99% (con cartón doble con 5mm de margen extra, aluminio hacia arriba, periódico arrugado y tobillo con holgura de 1 dedo)",
+  "difficulty": "Principiante (Fabricado de inmediato con cajas de cartón, periódicos viejos, bolsas de plástico y papel de aluminio sin herramientas especiales)",
+  "outputPerHour": "Bloquea más del 80% de pérdida térmica del pie bajo cero y previene necrosis por humedad en inundaciones",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Piezas de Cartón Corrugado (o Cartón Grueso de Embalaje / 2 Láminas de Corteza de Abedul)",
+      "desc": "Barrera térmica rígida entre el pie y el suelo congelado. El aire atrapado en los canales del cartón corrugado bloquea el frío del suelo al igual que en la [Esterilla de Cartón Triple y Cápsula Térmica](/protocol-22). Apilar dos capas cruzadas evita que se aplasten con el peso del cuerpo."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Láminas de Papel de Aluminio (o Interior Metalizado de Bolsas de Snack / Trozo de Manta Térmica)",
+      "desc": "Reflector térmico que devuelve el calor corporal infrarrojo hacia las plantas de los pies. Colocar la cara brillante hacia arriba refleja la radiación corporal como en el [Silbato de Emergencia de 120dB y Espejo de Señales](/protocol-27)."
+    },
+    {
+      "id": "mat-03",
+      "name": "6 a 8 Hojas de Periódico Viejo (o Retales de Tela de Algodón / Hierba Seca / Espadaña)",
+      "desc": "Arrugadas y aplanadas a mano para crear miles de microbolsas de aire estático que detienen la pérdida convectiva de calor. La celulosa absorbe de 2 a 3 veces su peso en humedad, evitando que el sudor empape la piel dentro de la barrera de vapor."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Bolsas de Plástico Fuertes (o Bolsas Herméticas) y 2 Cordones (o Cuerda de Enredadera Kudzu)",
+      "desc": "Membrana impermeable de barrera de vapor que mantiene el lodo helado exterior lejos del aislamiento de papel. El puño del tobillo se ata dejando la holgura de 1 falange de dedo usando [Cuerda de Enredadera Kudzu](/protocol-05) o cordones para evitar comprimir los vasos sanguíneos."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Cortar cartón corrugado doble y aluminio con medio dedo de margen para hacer una plantilla térmica",
+      "description": "1. **Trazar la Suela con 5mm de Margen**: Coloque la suela del calzado sobre el cartón corrugado y trace el contorno con una [Lámina de Piedra Afilada](/protocol-04) o bolígrafo, añadiendo **medio dedo (aprox. 5mm) de margen extra** en todo el borde para compensar el volumen del papel.\n2. **Cortar 2 Capas de Cartón y 1 de Aluminio**: Corte dos plantillas de cartón idénticas y una de papel de aluminio por la línea exterior. Si no tiene tijeras, marque una ranura profunda con la piedra y doble hasta quebrar.\n3. **Cruzar Canales de Cartón y Orientar Aluminio hacia Arriba**: Apile las dos piezas de cartón de modo que sus **canales ondulados internos queden cruzados a 90 grados** para evitar que se aplasten con el peso, y coloque encima el papel de aluminio con su **cara brillante hacia ARRIBA (hacia la planta del pie)**.\n4. **Insertar en la Bota y Comprobar Ajuste Plano**: Introduzca la plantilla de 3 capas hasta el fondo de la bota, asegurando que quede perfectamente plana sin pliegues en el talón.",
+      "actionNote": "> Por qué la cara brillante del aluminio debe mirar hacia arriba hacia la planta del pie: El aluminio refleja el calor radiante infrarrojo que viaja por el aire, no la conducción directa; apuntar la cara de espejo hacia la piel devuelve el calor del pie directamente a los dedos.",
+      "svgFileName": "pr28-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PLANTILLA TÉRMICA DE CARTÓN DOBLE Y ALUMINIO",
+        "Trazar la suela con 5mm (medio dedo) de margen extra",
+        "Cortar 2 capas de cartón y aluminio para formar 3 capas",
+        "Colocar cara brillante hacia ARRIBA para reflejar calor",
+        "[CLAVE] Cartón 5mm más ancho bloquea 90% del frío del suelo"
+      ],
+      "deepDive": {
+        "badge": "GROUND CONDUCTION BLOCK & RADIANT FOIL INSOLE",
+        "title": "Interrupción de la conducción térmica del suelo y 95% de reflexión infrarroja de la plantilla",
+        "text": "El suelo actúa como un sumidero infinito de calor; la pérdida por contacto agota la temperatura del pie. El cartón corrugado tiene una baja conductividad de 0.04–0.05 W/m·K. Dos capas de 3–4mm frenan la conducción del suelo, mientras que el aluminio superior **refleja entre el 90% y 95% de la radiación infrarroja** de vuelta al pie.",
+        "fieldSpecs": [
+          {
+            "name": "Plantilla de Cartón Cruzado con 5mm de Margen y Reflector de Aluminio",
+            "scientificName": "Cross-Corrugated & Radiant Foil Barrier Insole",
+            "categoryTag": "Bloqueo de Conducción del Suelo / 95% Reflexión Radiante",
+            "imageFileName": "id-cardboard-foil-insole-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28A // MACRO OPTIC",
+            "hudStatus": "CONDUCTION LOSS: -90% BLOCKED",
+            "traits": [
+              {
+                "label": "Margen de Corte",
+                "value": "Corte **medio dedo (5mm) más ancho** para la holgura del papel."
+              },
+              {
+                "label": "Canales Cruzados",
+                "value": "Cruce los canales a **90 grados** para resistir el peso corporal."
+              },
+              {
+                "label": "Cara de Aluminio",
+                "value": "La cara brillante debe mirar **hacia ARRIBA** para rebotar calor."
+              }
+            ],
+            "fieldUse": "Barrera de aislamiento de suelo fundamental contra la congelación en nieve y asfalto helado"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Poner calcetines de algodón seco y envolver con periódico arrugado para crear bolsas de aire y absorción de sudor",
+      "description": "1. **Usar Calcetines de Algodón Seco sobre la Piel**: Coloque siempre calcetines de algodón bien secos (o paños de algodón) directamente sobre la piel para absorber el sudor que despiden los pies al caminar.\n2. **Arrugar y Desdoblar 3 a 4 Hojas de Periódico**: Apriete 3 o 4 hojas de periódico con ambas manos hasta formar bolas apretadas como pelotas de béisbol y luego desdóblelas con cuidado. Las arrugas crean miles de **microbolsas de aire estático de 1.5cm de grosor**.\n3. **Envolver Abundantemente desde los Dedos hasta el Tobillo**: Doble el periódico arrugado en doble capa sobre la puntera de los dedos donde el frío ataca primero, y cubra el empeine, talón y tendón de Aquiles. En la naturaleza, intercale briznas de hierba seca o pelusa de espadaña entre los pliegues.\n4. **Verificar la Elasticidad del Acolchado**: No apriete el papel en exceso para no aplastar las bolsas de aire; debe sentirse **esponjoso y mullido como una almohadilla suave** al presionar con la mano.",
+      "actionNote": "> Por qué el periódico liso falla y el periódico arrugado aísla magníficamente: El papel liso mide menos de 0.1mm de grosor y no retiene calor, pero al arrugarlo se crea una matriz de 15mm de 'aire estático' (Dead-Air), uno de los mejores aislantes naturales.",
+      "svgFileName": "pr28-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // ENVOLTURA DE CALCETÍN Y PERIÓDICO ARRUGADO",
+        "Usar calcetines secos contra la piel para absorber sudor",
+        "Arrugar 3-4 periódicos para crear bolsas de aire de 15mm",
+        "Envolver con grosor desde los dedos hasta el tobillo",
+        "[CLAVE] Miles de bolsas de aire estático retienen el calor"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR TRAPPING & CAPILLARY MOISTURE WICKING",
+        "title": "Detención convectiva por aire estático y dinámica capilar de absorción de sudor por celulosa",
+        "text": "El aire estático tiene una conductividad mínima de 0.024 W/m·K. El papel arrugado crea una **matriz de 15mm de grosor de aire atrapado** que frena la convección térmica. Las fibras de celulosa absorben la transpiración por capilaridad, manteniendo la piel seca y previniendo el choque térmico por humedad.",
+        "fieldSpecs": [
+          {
+            "name": "Calcetín de Algodón Seco y Matriz de Bolsas de Aire de Celulosa de 15mm",
+            "scientificName": "Wicking Cotton & Crumpled Cellulose Dead-Air Cushion",
+            "categoryTag": "Absorción Capilar de Sudor / Bolsas de Aire Estático",
+            "imageFileName": "id-crumpled-paper-air-pockets.jpg",
+            "hudCode": "FIG. SHELTER-28B // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR THICKNESS: 15mm SECURED",
+            "traits": [
+              {
+                "label": "Matriz Arrugada",
+                "value": "Arrugue bien el papel para formar **cámaras de aire de 15mm**."
+              },
+              {
+                "label": "Calcetín Interior",
+                "value": "El **algodón sobre la piel** transfiere el sudor a la celulosa."
+              },
+              {
+                "label": "Protección Dedos",
+                "value": "Envuelva los **dedos con 2 capas gruesas** para frenar la congelación."
+              }
+            ],
+            "fieldUse": "Capa aislante central que detiene la fuga térmica y mantiene la piel completamente seca"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Colocar una bolsa de plástico sobre el periódico, calzar la bota y atar flojo al tobillo",
+      "description": "1. **Cubrir el Pie Envuelto con una Bolsa de Plástico**: Introduzca el pie cubierto de papel dentro de una bolsa de plástico resistente sin agujeros. Deje holgura para que la bolsa no quede tirante sobre los dedos o el talón.\n2. **Deslizar el Pie con Cuidado en la Bota**: Introduzca lentamente el pie embolsado dentro de la bota sobre la plantilla de cartón. Si nota que aprieta y aplasta el acolchado de papel, afloje los cordones al máximo o quite una capa de cartón para que **los dedos se muevan libremente**.\n3. **Atar al Tobillo Dejando 1 Falange de Espacio**: Recoja la boca superior de la bolsa alrededor del tobillo y átela con un cordón extra o [Cuerda de Kudzu](/protocol-05). Deje siempre **espacio para introducir una falange de dedo entre la atadura y su piel**.\n4. **Verificar la Barrera contra Lodo Helado**: Aunque la bota exterior se empape de barro helado, compruebe que la bolsa de plástico mantiene el papel interior completamente seco.",
+      "actionNote": "> Por qué atar el tobillo apretado para frenar corrientes de aire provoca congelación grave: Apretar el tobillo estrangula las arterias tibiales, interrumpiendo el flujo de sangre caliente del corazón; los pies fríos sin irrigación sanguínea se congelan en menos de 1 hora.",
+      "svgFileName": "pr28-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BARRERA DE VAPOR Y ATADURA FLOJA AL TOBILLO",
+        "Cubrir el papel con bolsa plástica para frenar agua exterior",
+        "Deslizar el pie embolsado en la bota sobre la plantilla",
+        "Atar el cuello del tobillo dejando 1 falange de holgura",
+        "[CLAVE] Atar flojo mantiene el flujo sanguíneo hacia los dedos"
+      ],
+      "deepDive": {
+        "badge": "VAPOR BARRIER LINER & VASCULAR PERFUSION SAFETY",
+        "title": "Sellado con barrera de vapor y seguridad de perfusión vascular periférica en el tobillo",
+        "text": "La bolsa de plástico es una barrera de vapor impermeable al agua exterior. Sin embargo, presiones mayores a 20mmHg en el tobillo reducen la **presión de perfusión capilar en las arterias tibiales**, privando a los dedos de oxígeno y sangre caliente, acelerando la congelación isquémica. Dejar **1 falange de dedo (15mm) de holgura** garantiza una circulación fluida.",
+        "fieldSpecs": [
+          {
+            "name": "Barrera de Vapor Impermeable y Cierre de Tobillo con Holgura de 1 Dedo",
+            "scientificName": "Impermeable Vapor Barrier Shell & Non-Constrictive Ankle Tether",
+            "categoryTag": "Aislamiento de Líquidos / Protección Vascular Periférica",
+            "imageFileName": "id-vapor-barrier-boot-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28C // MACRO OPTIC",
+            "hudStatus": "CIRCULATION: 100% UNCONSTRICTED",
+            "traits": [
+              {
+                "label": "Capa Impermeable",
+                "value": "La bolsa **bloquea el 100% del lodo exterior** hacia el papel interior."
+              },
+              {
+                "label": "Holgura Tobillo",
+                "value": "Deje **espacio para 1 falange de dedo** bajo la atadura del tobillo."
+              },
+              {
+                "label": "Espacio en Bota",
+                "value": "Afloje cordones para que **los dedos se muevan sin compresión**."
+              }
+            ],
+            "fieldUse": "Funda impermeable que mantiene el aislamiento seco durante evacuaciones bajo aguanieve"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Cambiar el periódico húmedo por hojas secas cada 3-4 horas y mover los dedos para revisar la circulación",
+      "description": "1. **Comprobar la Humedad del Periódico cada 3 o 4 Horas**: Aunque la bolsa bloquea el agua externa, el sudor del pie se acumula. Quítese la bota **cada 3 o 4 horas (aproximadamente entre comidas)** y toque si el papel está húmedo.\n2. **Sustituir el Papel Húmedo por Hojas Secas**: Si el papel está húmedo, deséchelo de inmediato. Arrugue **3 hojas de periódico seco nuevo** y envuélvalas firmemente alrededor del pie para restaurar el aislamiento de aire.\n3. **Manejo de Calcetines Húmedos**: Si el calcetín de algodón se humedeció, cámbielo por otro seco. Seque el húmedo cerca de una [Estufa de Lata sin Humo](/protocol-21) o bajo las axilas dentro de su abrigo usando el calor corporal.\n4. **Movimiento Horario de Dedos y Prueba de Relleno Capilar**: Al caminar, **mueva los dedos arriba y abajo más de 20 veces cada hora**. Presione la yema del dedo gordo durante 3 segundos; el color rosado debe recuperarse en menos de 2 segundos.",
+      "actionNote": "> Por qué caminar con periódico empapado de sudor provoca pie de trinchera rápido: Al mojarse, las bolsas de aire colapsan y la alta conductividad del agua convierte la envoltura en un bloque de hielo que enfría los dedos 25 veces más rápido, pudriendo la piel.",
+      "svgFileName": "pr28-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ROTACIÓN DE PERIÓDICO CADA 3-4H Y CONTROL DE FLUJO",
+        "Retirar papel húmedo y reemplazar por hojas secas nuevas",
+        "El papel empapado de sudor conduce calor 25 veces más rápido",
+        "Mover los dedos cada hora para comprobar calor y sensibilidad",
+        "[CLAVE] Cambios regulares y movimiento de dedos evitan necrosis"
+      ],
+      "deepDive": {
+        "badge": "MOISTURE ACCUMULATION PREVENTION & CAPILLARY REFILL",
+        "title": "Inversión por conducción latente bajo saturación de vapor y diagnóstico de relleno capilar",
+        "text": "Los pies transpiran entre 10 y 30ml por hora en movimiento. Al llegar al 100% de humedad relativa dentro de la barrera de vapor, la condensación empapa la celulosa, aplicando la **conductividad térmica del agua (0.6 W/m·K) que disipa calor 25 veces más rápido que el aire seco**. Cambiar el papel cada 3–4 horas previene esta crisis. Un **tiempo de relleno capilar menor a 2 segundos (CRT < 2s)** certifica la salud vascular.",
+        "fieldSpecs": [
+          {
+            "name": "Protocolo de Rotación de Celulosa cada 3-4h y Diagnóstico Capilar de 2 Segundos",
+            "scientificName": "Moisture-Saturated Matrix Rotation & Capillary Refill Protocol",
+            "categoryTag": "Prevención de Colapso por Humedad / Test Vascular Capilar",
+            "imageFileName": "id-newspaper-swap-circulation-check.jpg",
+            "hudCode": "FIG. SHELTER-28D // MACRO OPTIC",
+            "hudStatus": "CAPILLARY REFILL: &lt; 2 SEC (NORMAL)",
+            "traits": [
+              {
+                "label": "Intervalo Cambio",
+                "value": "Cambie el periódico **cada 3 a 4 horas** antes de que el sudor se acumule."
+              },
+              {
+                "label": "Ejercicio Dedos",
+                "value": "**Mueva los dedos 20 veces por hora** para impulsar el flujo sanguíneo."
+              },
+              {
+                "label": "Prueba Relleno",
+                "value": "El color rosado **debe volver en menos de 2 segundos** tras presionar."
+              }
+            ],
+            "fieldUse": "Procedimiento de mantenimiento vital contra la necrosis por pie de trinchera y congelación grave"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Poner la bolsa de plástico directamente sobre la piel desnuda sin calcetines absorbentes ni periódico",
+    "description": "Pensar solo en la impermeabilidad y colocar la bolsa plástica sobre la piel sin capas intermedias retiene los más de 200ml de sudor diario. El agua transmite el calor 25 veces más rápido que el aire, congelando los pies o causando maceración y necrosis por pie de trinchera en 2 o 3 horas.",
+    "consequence": "Daño neurológico irreversible en los dedos, incapacidad para caminar y riesgo de amputación",
+    "prevention": "Lleve siempre calcetines de algodón seco sobre la piel, envuélvalos con periódico arrugado antes de colocar la bolsa plástica y cambie el papel húmedo por hojas secas cada 3 o 4 horas."
+  },
+  "faqs": [
+    {
+      "question": "¿Qué materiales naturales pueden sustituir el cartón o el papel de aluminio si no los tengo?",
+      "answer": "Apilar 2 o 3 láminas de corteza de abedul en el fondo del calzado crea una plantilla aislante excelente. La corteza contiene aceites impermeables de betulina y frena el frío del suelo. Si no tiene aluminio, use el interior plateado de bolsas de snacks vacías o coloque una capa de 2cm de agujas de pino secas y musgo seco."
+    },
+    {
+      "question": "¿No es mejor atar la bolsa al tobillo muy apretada para que no entre aire frío?",
+      "answer": "En absoluto. Apretar la atadura corta la circulación de los vasos sanguíneos hacia los dedos. Sin el flujo de sangre tibia bombeada por el corazón, los dedos caen a temperaturas bajo cero rápidamente, sufriendo congelación grave en menos de 1 hora. Deje siempre la holgura de un dedo."
+    },
+    {
+      "question": "Mis botas ya están empapadas de barro helado; ¿meter este forro mantendrá mis pies secos de verdad?",
+      "answer": "Sí. La bolsa plástica exterior actúa como una barrera de vapor infranqueable, impidiendo que el agua helada de la bota moje el periódico seco y los calcetines. Sacuda las piedras filosas de la bota antes de calzarse para evitar pinchar el plástico."
+    }
+  ],
+  "createdAt": "2026-11-10T05:23:59.349Z",
+  "contentHash": "c583f79cc83ca9d5"
+}

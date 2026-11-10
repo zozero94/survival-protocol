@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg28s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="dryPaper28" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="wetPaper28" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <pattern id="grid28s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow28s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg28s4)"/>
+  <rect width="400" height="400" fill="url(#grid28s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // 3~4시간 주기 안쪽 신문지 교체 및 발가락 혈류 점검</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="66" fill="#a7f3d0" font-family="monospace" font-size="10.5">축축해진 안쪽 신문지를 꺼내고 바짝 마른 새 신문지로 교체</text>
+
+  <!-- Main Illustration: Left (Paper Swap Cycle) & Right (Toe Wiggle Circulation Check) -->
+  <g filter="url(#shadow28s4)">
+    <!-- Left panel: Moisture Saturation & Rotation Cycle -->
+    <rect x="24" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+    <!-- Wet Damaged Paper Sheet (Outward) -->
+    <rect x="42" y="115" width="46" height="58" rx="2" fill="url(#wetPaper28)" stroke="#64748b" stroke-width="1.5"/>
+    <circle cx="58" cy="144" r="3" fill="#38bdf8"/>
+    <circle cx="70" cy="152" r="2.5" fill="#38bdf8"/>
+    <!-- Swap Curved Arrows -->
+    <path d="M96,132 C115,120 125,145 110,165" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M106,158 L110,165 L117,162" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Dry Fresh Paper Sheet (Inward) -->
+    <rect x="126" y="140" width="48" height="60" rx="2" fill="url(#dryPaper28)" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Warm Heat Lock Icon on Dry Sheet -->
+    <circle cx="150" cy="170" r="10" fill="#ef4444" fill-opacity="0.3"/>
+    <circle cx="150" cy="170" r="4" fill="#ef4444"/>
+
+    <!-- Right panel: Active Toe Wiggle & Capillary Blood Flow -->
+    <rect x="206" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+    <!-- Foot Outline Profile with Toes -->
+    <path d="M245,115 L245,165 Q245,188 230,200 L220,208 Q215,214 220,222 Q228,228 260,226 Q295,224 320,218 Q332,212 338,202 Q342,192 334,186 Q325,180 310,188 Q290,192 280,165 L280,115 Z" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Toe Joint Flexion Lines (Wiggle Action Indicators) -->
+    <path d="M322,204 C328,198 335,198 340,204" stroke="#10b981" stroke-width="2" fill="none"/>
+    <path d="M320,212 C326,206 333,206 338,212" stroke="#10b981" stroke-width="2" fill="none"/>
+    <!-- Motion Vibration Arcs at Toes -->
+    <path d="M346,192 C352,198 352,208 346,214" stroke="#f59e0b" stroke-width="1.8" fill="none"/>
+    <path d="M352,188 C360,198 360,212 352,220" stroke="#f59e0b" stroke-width="1.5" fill="none" stroke-dasharray="2,2"/>
+    <!-- Active Capillary Refill Heartbeat Indicator -->
+    <circle cx="305" cy="206" r="6" fill="#ef4444"/>
+    <path d="M298,206 L302,206 L304,201 L307,211 L309,203 L312,206 L316,206" stroke="#f8fafc" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="271" fill="#fca5a5" font-family="monospace" font-size="10.5">발에 땀이 차면 전도율이 25배 높아져 급격한 저체온증 유발</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="24" y="305" fill="#a7f3d0" font-family="monospace" font-size="10.5">매시간 발가락을 꼼지락거려 온기와 감각 회복 여부 확인</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 신문지 정기 교체와 발가락 꼼지락 운동으로 동상·참호족 차단</text>
+</svg>

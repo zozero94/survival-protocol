@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg28s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="sock28s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="paper28s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <pattern id="grid28s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow28s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg28s2)"/>
+  <rect width="400" height="400" fill="url(#grid28s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 면 양말 내피 땀 흡수 및 구긴 신문지 공기층 단열</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">피부 안쪽에 마른 면 양말을 신어 발에서 나는 땀을 1차 흡수</text>
+
+  <!-- Main Illustration: Left (Cotton Sock Foot) & Right (Crumpled Dead-Air Paper Wrap) -->
+  <g filter="url(#shadow28s2)">
+    <!-- Left panel: Dry Cotton Sock Foot -->
+    <rect x="24" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <!-- Cotton Sock Foot Contour -->
+    <path d="M78,112 L78,160 Q78,185 60,198 L48,206 Q40,212 45,220 Q52,228 85,226 Q122,222 136,215 Q144,208 132,202 Q112,192 112,160 L112,112 Z" fill="url(#sock28s2)" stroke="#f8fafc" stroke-width="1.8"/>
+    <!-- Sweat Absorption Beads inside Sock -->
+    <circle cx="68" cy="216" r="3" fill="#38bdf8"/>
+    <circle cx="85" cy="218" r="3" fill="#38bdf8"/>
+    <circle cx="105" cy="214" r="3" fill="#38bdf8"/>
+    <!-- Moisture Wicking Arrows into Sock Fabric -->
+    <path d="M68,208 L68,214 M85,210 L85,216 M105,206 L105,212" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Right panel: Crumpled Paper Air Pockets Wrap -->
+    <rect x="206" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+    <!-- Inner Foot Silhouette Guide (Dimmed) -->
+    <path d="M260,118 L260,160 Q260,182 244,194 L232,202 Q226,206 230,214 Q236,220 265,218 Q296,215 308,210 Q314,204 304,198 Q288,190 288,160 L288,118 Z" fill="#1e293b" stroke="#475569" stroke-width="1.2"/>
+    <!-- Crumpled Paper Exterior Wavy Shell -->
+    <path d="M250,110 Q256,125 248,140 Q255,155 245,170 Q235,185 224,196 Q215,206 220,218 Q230,228 265,228 Q305,225 320,218 Q328,210 316,200 Q305,185 300,165 Q308,145 298,125 Q305,115 296,110 Z" fill="url(#paper28s2)" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="4,2"/>
+    <!-- Trapped Dead-Air Micro Cell Circles -->
+    <circle cx="242" cy="180" r="5" fill="#fef08a" stroke="#d97706" stroke-width="1"/>
+    <circle cx="260" cy="195" r="6" fill="#fef08a" stroke="#d97706" stroke-width="1"/>
+    <circle cx="282" cy="202" r="5" fill="#fef08a" stroke="#d97706" stroke-width="1"/>
+    <circle cx="298" cy="185" r="5" fill="#fef08a" stroke="#d97706" stroke-width="1"/>
+    <!-- Heat Lock Core Radiation -->
+    <circle cx="272" cy="172" r="14" fill="#ef4444" fill-opacity="0.25"/>
+    <circle cx="272" cy="172" r="5" fill="#ef4444"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">신문지 3~4장을 잘게 구겼다 펴서 도톰한 정지 공기 주머니 형성</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="305" fill="#bae6fd" font-family="monospace" font-size="10.5">발가락 끝부터 발등·발목까지 신문지로 감싸 열 손실 방어</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 신문지 사이의 수만 개 공기 주머니가 체온을 가두는 단열벽 형성</text>
+</svg>

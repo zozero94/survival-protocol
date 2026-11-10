@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg28out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cardboard28out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="foil28out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="plastic28out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.3"/>
+    </linearGradient>
+    <pattern id="grid28out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow28out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Frame -->
+  <rect width="800" height="450" fill="url(#bg28out)"/>
+  <rect width="800" height="450" fill="url(#grid28out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Top Header Banner -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f8fafc" font-family="monospace" font-size="12" font-weight="bold">PR-28 완성체 // 무전력 다층 방한·방습 부츠 라이너 단열 시스템</text>
+
+  <!-- 4-Stage Horizontal Cards -->
+  <g filter="url(#shadow28out)">
+    <!-- STAGE 01 Card -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#d97706" stroke-width="1"/>
+    <text x="34" y="102" fill="#fbbf24" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 2겹 골판지·은박 깔창</text>
+
+    <!-- Visual 1: 2-layer cardboard with wave fluting and foil top -->
+    <ellipse cx="109" cy="245" rx="58" ry="18" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <ellipse cx="109" cy="225" rx="55" ry="16" fill="url(#cardboard28out)" stroke="#f59e0b" stroke-width="1.5"/>
+    <ellipse cx="109" cy="210" rx="53" ry="15" fill="url(#cardboard28out)" stroke="#f59e0b" stroke-width="1.5"/>
+    <ellipse cx="109" cy="195" rx="50" ry="14" fill="url(#foil28out)" stroke="#38bdf8" stroke-width="1.8"/>
+    <!-- Cold block arrows pointing up then deflecting -->
+    <path d="M80,270 L80,250 M75,255 L80,250 L85,255" stroke="#38bdf8" stroke-width="2" fill="none"/>
+    <path d="M109,275 L109,255 M104,260 L109,255 L114,260" stroke="#38bdf8" stroke-width="2" fill="none"/>
+    <path d="M138,270 L138,250 M133,255 L138,250 L143,255" stroke="#38bdf8" stroke-width="2" fill="none"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="36" y="341" fill="#fde68a" font-family="monospace" font-size="8.5">바닥 전도 냉기 90% 이상 차단</text>
+
+    <!-- STAGE 02 Card -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+    <text x="228" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 면양말 + 신문지 공기층</text>
+
+    <!-- Visual 2: Foot with sock and crumpled paper layers -->
+    <path d="M285,135 L285,185 Q285,210 265,225 L245,235 Q235,240 240,248 Q250,255 285,252 Q325,248 340,240 Q350,232 335,225 Q315,215 315,185 L315,135 Z" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <path d="M238,228 Q248,220 258,230 Q268,218 280,228 Q292,216 305,226 Q320,218 335,228 Q345,220 348,235 Q335,248 315,250 Q285,254 260,252 Q238,245 238,228 Z" fill="#475569" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="3,2"/>
+    <circle cx="275" cy="180" r="4" fill="#f97316"/>
+    <circle cx="295" cy="200" r="5" fill="#ef4444"/>
+    <circle cx="265" cy="235" r="4" fill="#f59e0b"/>
+    <circle cx="310" cy="235" r="4" fill="#f59e0b"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="230" y="341" fill="#bae6fd" font-family="monospace" font-size="8.5">땀 흡수 및 정지 공기 단열층 형성</text>
+
+    <!-- STAGE 03 Card -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#06b6d4" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0891b2" stroke-width="1"/>
+    <text x="424" y="102" fill="#22d3ee" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 방습 외피 결합 &amp; 결속</text>
+
+    <!-- Visual 3: Boot with plastic barrier and ankle tie -->
+    <path d="M470,140 L470,185 Q470,205 450,220 L430,232 Q420,240 425,252 L540,252 Q555,250 545,230 Q530,210 515,185 L515,140 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M465,130 L465,180 Q465,200 445,215 L432,228 Q425,235 430,245 L530,245 Q540,242 535,225 Q520,205 510,180 L510,130 Z" fill="url(#plastic28out)" stroke="#22d3ee" stroke-width="1.8"/>
+    <ellipse cx="488" cy="155" rx="28" ry="8" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <circle cx="512" cy="155" r="4" fill="#10b981"/>
+    <path d="M512,148 L512,162" stroke="#10b981" stroke-width="1.5"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="424" y="341" fill="#a5f3fc" font-family="monospace" font-size="8.5">외부 침수 차단 및 혈액순환 확보</text>
+
+    <!-- STAGE 04 Card -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+    <text x="618" y="102" fill="#34d399" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 정기 교체 &amp; 혈류 점검</text>
+
+    <!-- Visual 4: Circulation timer & toe wiggle check -->
+    <circle cx="691" cy="180" r="38" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <path d="M691,180 L691,155" stroke="#34d399" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M691,180 L712,192" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="691" cy="180" r="4" fill="#f8fafc"/>
+    <rect x="665" y="235" width="24" height="32" rx="2" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M695,250 L715,250 M708,245 L715,250 L708,255" stroke="#38bdf8" stroke-width="2" fill="none"/>
+    <rect x="720" y="235" width="24" height="32" rx="2" fill="#475569" stroke="#64748b" stroke-width="1"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="618" y="341" fill="#a7f3d0" font-family="monospace" font-size="8.5">땀 축적 방지 &amp; 발가락 동상 예방</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심 원리] 바닥 전도 냉기 차단 + 땀 흡수 정지 공기층 + 외부 침수 분리 3중 보온 공학</text>
+</svg>

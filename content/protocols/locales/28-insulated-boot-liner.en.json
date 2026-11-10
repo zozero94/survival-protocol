@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-28",
+  "category": "SHELTER",
+  "title": "How to Make No-Power Waterproof Insulated Boot Liners with Plastic Bags, Cardboard & Newspaper to Prevent Frostbite and Trench Foot",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Emergency Thermal Vapor-Barrier & Multi-Layer Dead-Air Boot Insulation Engineering Against Frostbite & Trench Foot]",
+  "summary": "If you already have commercial waterproof hiking boots (GORE-TEX), thick merino wool socks, disposable adhesive foot warmers, or neoprene booties in your shelter or bug-out pack, always wear that ready-made gear first. However, during sub-zero blackouts or icy flood evacuations, once boots and socks become soaked, water conducts heat away roughly 25 times faster than still air. Your foot temperature plummets, causing frostbite or tissue-macerating trench foot within 2–3 hours. In a disaster, foot injuries mean you cannot walk or evacuate. By layering corrugated cardboard boxes, newspapers, plastic bags, and kitchen foil (or dried reed grass and birch bark), you can build an insulated boot liner that reflects ground cold, traps dead-air warmth, and separates sweat from exterior floodwater.",
+  "timeRequired": "15 mins for insole & dead-air paper wrap / 2 mins for 3–4h rotation swap",
+  "successRate": "99% (when 2-layer cardboard is cut 5mm oversized, foil faces upward, newspaper is crumpled for dead-air pockets, and ankle tether leaves 1-finger slack)",
+  "difficulty": "Beginner (Crafted immediately from discarded cardboard boxes, old newspapers, plastic bags, and kitchen foil without special tools)",
+  "outputPerHour": "Blocks over 80% of conductive foot heat loss in freezing temps and prevents trench foot necrosis during floods",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Pieces of Corrugated Cardboard (or Thick Packaging Board / 2 Sheets of Wild Birch Bark)",
+      "desc": "A rigid conduction thermal barrier placed between your foot and freezing ground. The trapped air inside the corrugated fluting blocks conductive ground chill like the [3-Layer Cardboard Mat & Thermal Capsule](/protocol-22). Stacking two cross-fluted layers prevents crushing under body weight."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Sheets of Kitchen Aluminum Foil (or Metallic Snack Bag Lining / Silver Mat Piece)",
+      "desc": "A radiant thermal reflector that bounces infrared body heat back toward your soles. Placing the shiny side facing upward toward the foot sole reflects warmth just like the optical principle in the [120dB Emergency Whistle & Signal Mirror](/protocol-27)."
+    },
+    {
+      "id": "mat-03",
+      "name": "6–8 Sheets of Old Newspaper (or Cotton Cloth Scrap / Dried Reed Grass / Cattail Down)",
+      "desc": "Crumpled and flattened by hand to create tens of thousands of microscopic dead-air pockets that stop convective heat loss. Cellulose pulp fibers absorb 2–3 times their weight in moisture, preventing sweat from soaking your skin inside the sealed vapor barrier."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 Sturdy Plastic Grocery Bags (or Zip Bags / Bread Bags) & 2 Shoelaces (or Wild Kudzu Vine Rope)",
+      "desc": "An impermeable vapor barrier membrane that keeps exterior slush and floodwater away from the inner dry paper insulation. The ankle cuff is tied with 1 finger-joint of slack using [Wild Kudzu Vine Rope](/protocol-05) or spare laces to prevent vascular restriction."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Cut 2-Layer Corrugated Cardboard and Foil Half a Finger-Joint Oversized to Form a Thermal Insole",
+      "description": "1. **Trace Sole Outline with a 5mm Margin**: Place your boot sole or bare foot onto a piece of corrugated cardboard and trace around it with a [Sharp Stone Flake](/protocol-04) or pen, adding **half a finger-joint (approx. 5mm) extra width** around the entire perimeter to allow for bulky paper wrapping.\n2. **Cut 2 Cardboard Layers and 1 Foil Layer**: Cut out two identical cardboard soles and one sheet of kitchen foil along the oversized trace line. If scissors are unavailable, score deeply with a stone flake and snap along the line.\n3. **Cross Cardboard Fluting and Face Foil Upward**: Stack the two cardboard soles so their internal **wave flutes run perpendicular (cross-oriented at 90 degrees)** to resist crushing under foot pressure, and lay the foil on top with the **shiny reflective side facing UP (toward the foot sole)**.\n4. **Insert into Boot and Verify Flat Seating**: Push the assembled 3-layer insole all the way to the bottom of the boot, pressing flat with your hand to ensure no bumps or curling edges under your heel.",
+      "actionNote": "> Why the shiny side of the foil must face upward toward your foot sole: Foil reflects radiant infrared body heat traveling through the air gap, not direct conduction; facing the mirror surface toward your skin bounces body heat straight back into your toes.",
+      "svgFileName": "pr28-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 2-LAYER CARDBOARD & FOIL INSOLE CUTOUT",
+        "Trace shoe sole with 5mm (half-finger) margin",
+        "Cut 2-layer cardboard & foil into 3-layer stack",
+        "Place shiny foil facing UP to reflect body heat",
+        "[CORE] 5mm wider insole blocks 90% ground cold"
+      ],
+      "deepDive": {
+        "badge": "GROUND CONDUCTION BLOCK & RADIANT FOIL INSOLE",
+        "title": "Ground Thermal Conduction Interruption and 95% Infrared Radiation Reflection Mechanics",
+        "text": "The ground acts as an infinite heat sink; conductive loss through shoe soles rapidly depletes foot temperature. Corrugated cardboard has a low thermal conductivity of 0.04–0.05 W/m·K. Stacking two 3–4mm layers blocks ground conduction, while upper aluminum foil **reflects 90–95% of long-wave infrared radiation** back into the foot sole.",
+        "fieldSpecs": [
+          {
+            "name": "5mm Oversized Cross-Fluted Cardboard & Radiant Foil Insole Assembly",
+            "scientificName": "Cross-Corrugated & Radiant Foil Barrier Insole",
+            "categoryTag": "Ground Conduction Blocking / 95% Radiant Reflection",
+            "imageFileName": "id-cardboard-foil-insole-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28A // MACRO OPTIC",
+            "hudStatus": "CONDUCTION LOSS: -90% BLOCKED",
+            "traits": [
+              {
+                "label": "Cut Margin",
+                "value": "Cut **half a finger-joint (5mm) wider** than your sole for paper expansion."
+              },
+              {
+                "label": "Cross Fluting",
+                "value": "Cross cardboard flutes at **90 degrees** to resist body weight crushing."
+              },
+              {
+                "label": "Foil Face",
+                "value": "Keep shiny foil facing **UP toward foot** to bounce infrared heat."
+              }
+            ],
+            "fieldUse": "Fundamental ground barrier preventing conductive cold from freezing snow and icy concrete"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Put on Dry Cotton Socks and Wrap Crumpled Newspaper to Create Dead-Air and Sweat-Wicking Layers",
+      "description": "1. **Wear Dry Cotton Socks Against Bare Skin**: Always put on dry cotton socks (or wrap dry cotton cloth) directly against your bare skin first to wick away moisture produced by active walking.\n2. **Crumple and Flatten 3–4 Sheets of Newspaper**: Squeeze 3–4 newspaper sheets into tight balls the size of a baseball, then gently unfold them flat. Wrinkles create thousands of small **dead-air pockets roughly 1 finger-joint (1.5cm) thick**.\n3. **Wrap Generously from Toes to Ankle**: Fold crumpled newspaper twice over your toe cap where frostbite strikes first, then wrap the remaining sheets around your arch, heel, and Achilles tendon up to the ankle. In the wild, tuck dried reed grass or cattail down between the folds.\n4. **Verify Cushion Springiness**: Do not wrap paper too tightly, which would squash air chambers flat; ensure the wrap feels **plump and springy like a soft sponge** when lightly squeezed by hand.",
+      "actionNote": "> Why flat newspaper fails while crumpled newspaper insulates brilliantly: Flat paper is under 0.1mm thick and cannot trap heat, but crumpling creates a 15mm matrix of non-circulating 'dead air'—one of nature's best insulators.",
+      "svgFileName": "pr28-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // COTTON SOCK & CRUMPLED PAPER WRAP",
+        "Wear dry cotton socks against skin to absorb sweat",
+        "Crumple 3-4 newspapers to build 15mm air chambers",
+        "Wrap thickly from toes up over arch and ankle",
+        "[CORE] Tens of thousands of dead-air pockets trap heat"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR TRAPPING & CAPILLARY MOISTURE WICKING",
+        "title": "Dead-Air Convective Stoppage and Cellulose Capillary Moisture-Wicking Dynamics",
+        "text": "Stationary air has an ultra-low thermal conductivity of 0.024 W/m·K. Crumpled newspaper creates a **15mm thick matrix of trapped dead-air pockets** that halts heat loss from air convection. Wood pulp cellulose fibers wick perspiration away from skin via capillary action, keeping the skin surface dry and preventing rapid conductive chill.",
+        "fieldSpecs": [
+          {
+            "name": "Dry Cotton Inner Sock & 15mm Crumpled Cellulose Air Pocket Matrix",
+            "scientificName": "Wicking Cotton & Crumpled Cellulose Dead-Air Cushion",
+            "categoryTag": "Capillary Sweat Wicking / Trapped Dead-Air Pockets",
+            "imageFileName": "id-crumpled-paper-air-pockets.jpg",
+            "hudCode": "FIG. SHELTER-28B // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR THICKNESS: 15mm SECURED",
+            "traits": [
+              {
+                "label": "Crumple Matrix",
+                "value": "Crumple paper completely to form **15mm deep trapped air pockets**."
+              },
+              {
+                "label": "Inner Sock",
+                "value": "Wear **dry cotton against bare skin** to draw sweat into cellulose."
+              },
+              {
+                "label": "Toe Cushion",
+                "value": "Wrap **toes with 2 thick layers** where frostbite vulnerability is highest."
+              }
+            ],
+            "fieldUse": "Core thermal wrap halting foot heat loss and maintaining bone-dry skin surface"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Slide a Plastic Bag Over the Paper Layer, Step into Boots, and Tie Loosely at the Ankle",
+      "description": "1. **Encase Wrapped Foot in a Clean Plastic Bag**: Slide your paper-wrapped foot into an intact plastic bag or zip bag. Ensure the bag fits relaxed without pulling tightly across your toes or heel.\n2. **Insert Foot Gently onto the Cardboard Insole**: Slowly slide your bagged foot into your boot atop the 3-layer cardboard insole. If the fit feels pinched and crushes the paper air pockets, loosen your boot laces completely or remove one cardboard layer so **toes can wiggle freely inside**.\n3. **Tie Ankle Cuff Leaving 1 Finger-Joint Clearance**: Gather the top plastic bag collar loosely around your lower shin above the boot collar, and tie it with a spare lace or [Wild Kudzu Rope](/protocol-05). Always leave **clearance for an adult finger-joint between the tie and your ankle**.\n4. **Inspect Exterior Slush Barrier**: Even if your outer boot gets soaked with icy slush or mud, confirm with your fingers that the waterproof membrane keeps the paper wrap completely dry inside.",
+      "actionNote": "> Why tying the ankle cuff tightly to block drafts causes severe frostbite: Restricting your ankle compresses the anterior and posterior tibial arteries, choking off warm blood flow from your heart; cold feet with restricted blood supply freeze solid within 1 hour.",
+      "svgFileName": "pr28-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // VAPOR BARRIER & 1-FINGER LOOSE ANKLE TIE",
+        "Encase paper wrap in plastic bag to stop exterior water",
+        "Slide bagged foot carefully into boot onto insole",
+        "Tie ankle collar leaving 1 finger-joint of loose slack",
+        "[CORE] Loose ankle tie preserves blood circulation to toes"
+      ],
+      "deepDive": {
+        "badge": "VAPOR BARRIER LINER & VASCULAR PERFUSION SAFETY",
+        "title": "Impermeable Vapor Barrier Sealing and Ankle Peripheral Perfusion Safety Mechanics",
+        "text": "A plastic bag acts as an impermeable vapor barrier blocking external liquid water. However, tying the ankle cuff with over 20mmHg pressure drops **capillary perfusion pressure in the tibial arteries**, starving toes of warm oxygenated blood and triggering ischemic frostbite. Leaving **1 finger-joint (15mm) of slack** preserves unhindered blood flow.",
+        "fieldSpecs": [
+          {
+            "name": "Impermeable Plastic Vapor Barrier & 1-Finger Slack Ankle Assembly",
+            "scientificName": "Impermeable Vapor Barrier Shell & Non-Constrictive Ankle Tether",
+            "categoryTag": "External Liquid Isolation / Peripheral Vascular Protection",
+            "imageFileName": "id-vapor-barrier-boot-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28C // MACRO OPTIC",
+            "hudStatus": "CIRCULATION: 100% UNCONSTRICTED",
+            "traits": [
+              {
+                "label": "Waterproof Shell",
+                "value": "Plastic bag **blocks 100% of exterior slush and mud** from inner paper."
+              },
+              {
+                "label": "Ankle Clearance",
+                "value": "Leave **1 finger-joint of loose room** under the ankle tether."
+              },
+              {
+                "label": "Boot Room",
+                "value": "Loosen boot laces so **toes can wiggle freely without compression**."
+              }
+            ],
+            "fieldUse": "Weatherproof shell keeping foot insulation bone-dry during wet, snowy evacuations"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Rotate Damp Newspaper for Fresh Dry Sheets Every 3–4 Hours and Wiggle Toes to Check Blood Flow",
+      "description": "1. **Check Inner Newspaper Moisture Every 3–4 Hours**: While plastic blocks outside water, trapped foot sweat accumulates over time. Remove your boot **every 3–4 hours (roughly twice between meals)** and check if the paper feels damp.\n2. **Swap Damp Paper for Fresh Dry Crumpled Sheets**: If the paper is damp, discard it immediately. Crumple **3 fresh dry newspaper sheets** and wrap them snugly around your foot to restore dead-air insulation.\n3. **Dry Damp Cotton Socks**: If your inner socks feel wet, swap them for a dry pair. Dry damp socks near a [Smokeless Can Stove](/protocol-21) or tuck them inside your jacket under your armpits to dry with body heat.\n4. **Perform Hourly Toe Wiggles and Capillary Refill Test**: While hiking, **wiggle your toes 20 times every hour**. Press firmly on your big toe pad for 3 seconds; healthy circulation should return pink color within 2 seconds of release.",
+      "actionNote": "> Why walking on sweat-soaked newspaper causes rapid trench foot: Once wet, paper air pockets collapse and water's 25-times-higher conductivity turns the damp wrap into an ice pack, chilling toes into tissue-necrosing trench foot.",
+      "svgFileName": "pr28-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 3-4 HOUR PAPER ROTATION & CIRCULATION CHECK",
+        "Remove damp paper wrap and replace with fresh dry sheets",
+        "Sweat-soaked paper conducts heat 25x faster into cold",
+        "Wiggle toes every hour to verify warmth and sensation",
+        "[CORE] Regular paper swap and toe wiggles prevent trench foot"
+      ],
+      "deepDive": {
+        "badge": "MOISTURE ACCUMULATION PREVENTION & CAPILLARY REFILL",
+        "title": "Latent Conduction Inversion Under Vapor Saturation and Capillary Refill Diagnosis",
+        "text": "Human feet produce 10–30ml of perspiration per hour during movement. When relative humidity reaches 100% inside a vapor barrier, condensed sweat saturates cellulose fibers, collapsing air pockets and applying **water's high thermal conductivity (0.6 W/m·K), draining heat 25 times faster than dry air**. Swapping paper every 3–4 hours prevents this crash. A **capillary refill time under 2 seconds (CRT < 2s)** confirms healthy toe blood flow.",
+        "fieldSpecs": [
+          {
+            "name": "3–4 Hour Cellulose Swap Protocol & 2-Second Capillary Refill Diagnostic",
+            "scientificName": "Moisture-Saturated Matrix Rotation & Capillary Refill Protocol",
+            "categoryTag": "Moisture Collapse Prevention / Capillary Blood Flow Test",
+            "imageFileName": "id-newspaper-swap-circulation-check.jpg",
+            "hudCode": "FIG. SHELTER-28D // MACRO OPTIC",
+            "hudStatus": "CAPILLARY REFILL: &lt; 2 SEC (NORMAL)",
+            "traits": [
+              {
+                "label": "Swap Schedule",
+                "value": "Swap newspaper **every 3–4 hours** before sweat accumulates."
+              },
+              {
+                "label": "Toe Exercises",
+                "value": "**Wiggle toes 20 times every hour** to promote active blood flow."
+              },
+              {
+                "label": "Refill Test",
+                "value": "Toe color must **return pink within 2 seconds** after a 3-second press."
+              }
+            ],
+            "fieldUse": "Crucial maintenance routine preventing trench foot necrosis and irreversible frostbite"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Putting Plastic Bags Directly Against Bare Skin Without Inner Wicking Socks or Crumpled Newspaper",
+    "description": "Focusing solely on waterproofing and placing a plastic bag directly against bare skin traps the 200ml+ of daily foot sweat inside. Water conducts heat 25 times faster than air, rapidly cooling your feet and causing severe frostbite or macerated trench foot necrosis within 2–3 hours.",
+    "consequence": "Permanent toe nerve damage, inability to walk, and risk of necrotic tissue amputation",
+    "prevention": "Always wear dry cotton socks directly against your skin and wrap crumpled newspaper around them before putting on the plastic bag, and swap damp newspaper for dry sheets every 3–4 hours."
+  },
+  "faqs": [
+    {
+      "question": "What natural wild materials can replace cardboard or aluminum foil if none are available?",
+      "answer": "Stack 2–3 sheets of wild birch bark inside your boots. Birch bark contains natural waterproof betulin oils and provides outstanding ground insulation. If foil is unavailable, use the shiny metallic inside of an empty snack bag, or cushion your boot sole with a 2cm thick pad of dry pine needles and dry moss."
+    },
+    {
+      "question": "Doesn't tying the ankle cuff tightly keep out cold wind and make feet warmer?",
+      "answer": "Absolutely not. Tying the ankle cuff tightly constricts the major blood vessels feeding your foot. Deprived of warm blood pumped from your heart, toes drop to freezing temperatures even inside insulated boots, resulting in severe frostbite within an hour. Always leave 1 finger-joint of loose slack."
+    },
+    {
+      "question": "My boots are already soaked with icy mud; will inserting this liner into wet boots really keep my feet dry?",
+      "answer": "Yes. The outer plastic bag acts as an impenetrable vapor barrier, preventing icy muddy moisture in the outer boot from soaking the inner dry newspaper and socks. Shake out sharp pebbles from the boots before stepping in so they do not puncture the plastic."
+    }
+  ],
+  "createdAt": "2026-11-10T05:23:59.349Z",
+  "contentHash": "c583f79cc83ca9d5"
+}

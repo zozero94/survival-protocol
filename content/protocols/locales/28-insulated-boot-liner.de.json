@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-28",
+  "category": "SHELTER",
+  "title": "Notfall-Isolierstiefel-Futter aus Plastiktüten, Wellpappe & Zeitung gegen Erfrierungen und Grabenfuß selber bauen",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Thermische Dampfsperre & Mehrschicht-Totluft-Stiefelisolation gegen Erfrierungen und Grabenfuß]",
+  "summary": "Wenn Sie in Ihrer Notunterkunft oder Ihrem Fluchtgepäck bereits wasserdichte Wanderschuhe (GORE-TEX), dicke Merinowollsocken, Einweg-Fußwärmer oder Neopren-Überzieher haben, sollten Sie diese Fertigprodukte immer zuerst anziehen. Doch bei extremen Minusgraden oder Schmelzwasser-Überflutungen leitet Wasser Wärme etwa 25-mal schneller ab als ruhende Luft, sobald Schuhe und Socken durchnässt sind. Die Fußtemperatur fällt rapide ab, was innerhalb von 2 bis 3 Stunden zu Erfrierungen (Frostbite) oder gewebezerstörendem Grabenfuß (Trench Foot) führt. Wer bei einer Katastrophe nicht mehr laufen kann, verliert die Fluchtfähigkeit. Durch schichtweises Kombinieren von Versandkartons, Zeitungspapier, Plastiktüten und Alufolie (oder getrocknetem Schilfgras und Birkenrinde) lässt sich sofort ein isolierendes Notfall-Futter bauen, das Bodenkälte abwehrt, Totluft-Wärme speichert und Fußschweiß von eindringendem Außenwasser trennt.",
+  "timeRequired": "15 Min. für Sohle & Zeitungspolster / 2 Min. für den 3-4-Stunden-Wechsel",
+  "successRate": "99% (bei 5 mm Übermaß der Wellpappe, nach oben gerichteter Folie, zerknülltem Zeitungspapier und 1 Fingerbreit Spiel am Knöchel)",
+  "difficulty": "Anfänger (Sofort ohne Spezialwerkzeug aus Kartonagen, Altpapier, Plastikbeuteln und Küchenfolie herstellbar)",
+  "outputPerHour": "Blockiert über 80 % des Wärmeverlusts am Fuß bei Minusgraden und verhindert Grabenfuß-Nekrosen",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Stücke Wellpappe (oder dicke Kartonverpackung / 2 Lagen Birkenrinde)",
+      "desc": "Eine starre Wärmeleitungsbarriere zwischen Fuß und gefrorenem Boden. Die im Wellenprofil eingeschlossene ruhende Luft stoppt Bodenfrost ähnlich wie bei der [3-Schicht-Kartonmatte & Thermokapsel](/protocol-22). Durch das kreuzweise Schichten zweier Lagen wird ein Eindrücken unter Körpergewicht verhindert."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Bögen Küchen-Aluminiumfolie (oder Snacktüten-Silberfolie / Alumatten-Abschnitt)",
+      "desc": "Ein Reflektor für Wärmestrahlung, der Infrarot-Körperwärme zurück zur Fußsohle wirft. Das Prinzip spiegelt die Infrarotstrahlen genau wie die Optik im [120dB Notfall-Signalspiegel & Pfeife](/protocol-27) wider, wenn die glänzende Seite nach oben zeigt."
+    },
+    {
+      "id": "mat-03",
+      "name": "6–8 Seiten Altzeitungspapier (oder Baumwolltuchfetzen / trockenes Schilfgras / Rohrkolbenwolle)",
+      "desc": "Von Hand zerknüllt und wieder entfaltet, um zehntausende mikroskopische Totluft-Taschen zu bilden, die Konvektion stoppen. Zellulosefasern nehmen das 2- bis 3-Fache ihres Eigengewichts an Feuchtigkeit auf und verhindern ein Nassschwitzen der Haut im Plastikbeutel."
+    },
+    {
+      "id": "mat-04",
+      "name": "2 stabile Plastiktüten (oder Gefrierbeutel / Toastbrotbeutel) & 2 Schnürsenkel (oder Kudzu-Pflanzenschnur)",
+      "desc": "Eine undurchlässige Dampfsperre (Vapor Barrier), die Schneematsch und Pfützenwasser von der inneren trockenen Papierisolation fernhält. Das Knöchelband wird mit 1 Fingerbreit Spielraum aus [Wildem Kudzu-Seil](/protocol-05) oder Schnürsenkeln gebunden, um die Blutzirkulation nicht abzuklemmen."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: 2 Lagen Wellpappe und Alufolie mit einem halben Fingerbreit Übermaß als Kälteschutzsohle zuschneiden",
+      "description": "1. **Schuhsohlen-Umriss mit 5 mm Zugabe anzeichnen**: Stellen Sie den Stiefel oder den nackten Fuß auf die Wellpappe und ziehen Sie mit einer [Scharfen Steinklinge](/protocol-04) oder einem Stift eine Kontur, die **einen halben Fingerbreit (ca. 5 mm) breiter** ist, um das spätere Papierpolster auszugleichen.\n2. **2 Pappen und 1 Folie ausschneiden**: Schneiden Sie entlang der Kontur zwei Kartonsohlen und ein Stück Alufolie aus. Falls keine Schere zur Hand ist, ritzen Sie die Pappe mit der Steinklinge tief ein und brechen sie entlang der Kerbe.\n3. **Wellungen kreuzweise legen & Folie nach oben ausrichten**: Legen Sie die beiden Kartonsohlen so aufeinander, dass ihre **inneren Wellenbahnen im 90-Grad-Winkel gekreuzt** sind, damit sie beim Auftreten nicht plattgedrückt werden. Darauf legen Sie die Alufolie mit der **glänzenden Seite nach OBEN (zur Fußsohle gerichtet)**.\n4. **In den Stiefel einlegen und Glätte prüfen**: Schieben Sie die fertige 3-Schicht-Sohle ganz nach unten in den Stiefel und tasten Sie mit der Hand nach, dass die Oberfläche eben liegt und an der Ferse nicht hochsteht.",
+      "actionNote": "> Warum die glänzende Folienseite nach oben zum Fuß zeigen muss: Alufolie stoppt keine direkte Wärmeleitung, sondern reflektiert unsichtbare Infrarotstrahlung. Nur wenn die Spiegelfläche zur Haut gerichtet ist, wird die Fußwärme unmittelbar zu den Zehen zurückgestrahlt.",
+      "svgFileName": "pr28-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 2-LAGIGE WELLPAPPE & FOLIE ZUSCHNITT",
+        "Schuhsohle mit 5 mm Übermaß (halber Fingerbreit) anzeichnen",
+        "2 Lagen Wellpappe & Folie zu 3-Schicht-Sohle ausschneiden",
+        "Glänzende Folienseite nach OBEN legen zur Wärmereflexion",
+        "[KERN] 5 mm breitere Sohle blockiert 90 % Bodenkälte"
+      ],
+      "deepDive": {
+        "badge": "GROUND CONDUCTION BLOCK & RADIANT FOIL INSOLE",
+        "title": "Unterbrechung der Bodenwärmeleitung und 95 % Infrarotstrahlungs-Reflexion",
+        "text": "Gefrorener Boden wirkt wie eine unendliche Wärmesenke (Heat Sink); direkter Kontakt über die Schuhsohle entzieht dem Fuß rasant Wärme. Wellpappe weist eine extrem geringe Wärmeleitfähigkeit von 0,04 bis 0,05 W/m·K auf. Zwei gekreuzte Lagen mit ruhender Luft sperren die Bodenleitung, während die obere Alufolie **90 bis 95 % der langwelligen Infrarot-Körperstrahlung** zurückwirft.",
+        "fieldSpecs": [
+          {
+            "name": "5 mm Übermaß-Kombisohle aus gekreuzter Wellpappe & Infrarot-Alufolie",
+            "scientificName": "Cross-Corrugated & Radiant Foil Barrier Insole",
+            "categoryTag": "Bodenkälte-Leitungsstopp / 95 % Strahlungsreflexion",
+            "imageFileName": "id-cardboard-foil-insole-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28A // MACRO OPTIC",
+            "hudStatus": "CONDUCTION LOSS: -90% BLOCKED",
+            "traits": [
+              {
+                "label": "Zuschnitt/Maß",
+                "value": "Wegen des Zeitungspolsters **einen halben Fingerbreit (5 mm) breiter** zuschneiden."
+              },
+              {
+                "label": "Wellen/Kreuzung",
+                "value": "Die Wellen der beiden Pappen **um 90 Grad verdreht aufeinanderlegen**, um Druck abzufangen."
+              },
+              {
+                "label": "Folie/Richtung",
+                "value": "Die glänzende Seite muss **nach OBEN zur Fußsohle** weisen, um Wärme zu reflektieren."
+              }
+            ],
+            "fieldUse": "Basisisolierung gegen extreme Bodenkälte von Schnee-, Eis- oder nassen Betonflächen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Trockene Baumwollsocken anziehen und zerknülltes Zeitungspapier (oder Schilffasern) als Totluft-Polster wickeln",
+      "description": "1. **Trockene Baumwollsocke direkt auf die Haut**: Ziehen Sie direkt auf die bloße Haut eine trockene Baumwollsocke (oder wickeln Sie ein trockenes Baumwolltuch), um beim Gehen entstehenden Fußschweiß sofort aufzusaugen.\n2. **Zeitungspapier mit beiden Händen fest zerknüllen und entfalten**: Nehmen Sie 3 bis 4 Zeitungsbögen, zerknüllen Sie diese mit beiden Händen zu **einem festen Ball von der Größe eines Tennisballs** und streichen Sie sie vorsichtig wieder glatt. Durch die zahllosen Knitterfalten entsteht eine fingerbreite (ca. 1,5 cm) Schicht aus isolierenden Luftkammern.\n3. **Von den Zehen bis zum Knöchel polstern**: Legen Sie das zerknitterte Papier an den Zehen doppelt und wickeln Sie Spann, Sohle und Achillessehne lückenlos ein. In der Wildnis füllen Sie getrocknetes Schilfgras oder die Samenwolle von Rohrkolben aus der Nähe des [Stein-Urofens](/protocol-21) gleichmäßig dazwischen.\n4. **Nachgiebigkeit und Zehenspiel testen**: Das Papier darf nicht zu fest geschnürt werden, da sonst die Luftkammern plattgedrückt werden. **Es muss sich anfühlen wie ein weicher, elastischer Schaumstoffschwamm**.",
+      "actionNote": "> Warum glatt angelegtes Zeitungspapier nicht wärmt: Glattes Papier ist unter 0,1 mm dünn und kann keine Wärme speichern. Erst durch das Zerknüllen entstehen unbewegliche Luftkammern (Totluft), die dicker als 15 mm sind und wie eine Daunendecke isolieren.",
+      "svgFileName": "pr28-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // BAUMWOLLSOCKEN & ZERKNÜLLTES ZEITUNGSPAPIER",
+        "Trockene Baumwollsocken auf die Haut zur Schweißaufnahme",
+        "3-4 Zeitungsseiten zerknüllen für Totluft-Polster (15 mm)",
+        "Vom Zehenbereich bis zum Knöchel mit Papier umwickeln",
+        "[KERN] Tausende Luftkammern im Papier speichern Körperwärme"
+      ],
+      "deepDive": {
+        "badge": "DEAD-AIR TRAPPING & CAPILLARY MOISTURE WICKING",
+        "title": "Totluft-Isolierung und kapillare Zellulose-Feuchtigkeitsableitung",
+        "text": "Ruhende Luft ist mit einer Wärmeleitfähigkeit von 0,024 W/m·K einer der besten natürlichen Isolatoren. Die feinen Knitterfalten im Zeitungspapier unterdrücken Luftkonvektion und schaffen ein **15 mm dickes Totluft-Polster (Air Pocket)**. Gleichzeitig saugen die Zellulose-Holzfasern per Kapillareffekt den Schweiß von der Haut auf und verhindern nasse Kältebrücken.",
+        "fieldSpecs": [
+          {
+            "name": "Baumwoll-Innenlage & 15 mm zerknüllte Zellulose-Totluft-Polsterung",
+            "scientificName": "Wicking Cotton & Crumpled Cellulose Dead-Air Cushion",
+            "categoryTag": "Schweiß-Kapillaraufnahme / Totluft-Polster",
+            "imageFileName": "id-crumpled-paper-air-pockets.jpg",
+            "hudCode": "FIG. SHELTER-28B // MACRO OPTIC",
+            "hudStatus": "DEAD-AIR THICKNESS: 15mm SECURED",
+            "traits": [
+              {
+                "label": "Knitterung/Volumen",
+                "value": "Das Papier muss **vollständig zusammengeknüllt und gelockert werden**, um 15 mm Luftpolster zu bilden."
+              },
+              {
+                "label": "Innenlage/Schweiß",
+                "value": "Direkt auf der Haut muss eine **trockene Baumwollschicht** liegen, um Schweiß abzuleiten."
+              },
+              {
+                "label": "Zehenspitze/Dicke",
+                "value": "Die am stärksten frostgefährdeten **Zehen doppellagig einpacken**."
+              }
+            ],
+            "fieldUse": "Zentrale Isolierschicht, die Zehenwärme bei extremem Frost hält und Fußschweiß von der Haut wegsaugt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Plastiktüte als wasserdichte Außenhülle überziehen, in den Schuh schlüpfen und Knöchel locker binden",
+      "description": "1. **Plastiktüte über das Papier ziehen**: Stecken Sie den mit Socke und Zeitungspapier umhüllten Fuß in eine **völlig unbeschädigte, lochfreie Plastiktüte (oder Gefrierbeutel)**. Ziehen Sie die Tüte an Ferse und Zehen nicht stramm, sondern lassen Sie etwas Spielraum.\n2. **Vorsichtig in den Stiefel gleiten**: Führen Sie den verpackten Fuß behutsam in den Stiefel auf die vorbereitete Kartonsohle. Wenn der Stiefel zu eng sitzt und das Papier zusammenquetscht, lockern Sie die Schnürsenkel maximal oder entfernen Sie eine Kartonlage, damit **die Zehen im Schuh frei wackeln können**.\n3. **Knöchelabschluss mit 1 Fingerbreit Spiel fixieren**: Raffen Sie den oberen Rand der Plastiktüte am Knöchel zusammen und binden Sie ihn mit einer Schnur oder [Wildem Kudzu-Seil](/protocol-05) fest. **Zwischen Band und Haut muss mindestens ein Zeigefinger bequem Platz haben**.\n4. **Dichtigkeit gegen Schmelzwasser prüfen**: Überprüfen Sie mit der Hand, dass die Plastikhülle das Innenfutter vollständig von der oft nassen Innenseite des Außenschuhs abschirmt.",
+      "actionNote": "> Warum das Knöchelband keinesfalls stramm angezogen werden darf: Ein zu enges Band drückt die Schienbein- und Fußarterien ab. Ohne stetigen Blutfluss kühlen die Zehen trotz bester Isolierung binnen einer Stunde auf Minusgrade ab, was schwere Erfrierungen verursacht.",
+      "svgFileName": "pr28-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DAMPFSPERRE-HÜLLE & LOCKERE KNÖCHELBINDUNG",
+        "Wasserdichte Tüte über das Zeitungspapier gegen Nässe ziehen",
+        "Fuß vorsichtig in den feuchten Stiefel schieben",
+        "Knöchel mit Schnur und 1 Fingerbreit Spiel locker fixieren",
+        "[KERN] Knöchel niemals abschnüren - Durchblutung erhalten"
+      ],
+      "deepDive": {
+        "badge": "VAPOR BARRIER LINER & VASCULAR PERFUSION SAFETY",
+        "title": "Funktionsweise der Dampfsperre (Vapor Barrier) und Gefäßperfusion am Knöchel",
+        "text": "Die Plastiktüte bildet eine **vollkommen undurchlässige Dampfsperre (Vapor Barrier)** gegen flüssiges Außenwasser (Schnee, Schlamm, Eiswasser). Wird die Manschette jedoch mit mehr als 20 mmHg Druck abgeschnürt, sinkt der **kapillare Perfusionsdruck (Capillary Perfusion Pressure)** der Arteria tibialis drastisch. Warmes Herzblut erreicht die Zehen nicht mehr, und ischämische Erfrierungen setzen rasant ein. Ein **Sicherheitsspielraum von 1 Fingerbreit (ca. 15 mm)** ist überlebenswichtig.",
+        "fieldSpecs": [
+          {
+            "name": "Wasserdichte Plastik-Dampfsperrhülle mit druckfreier Knöchel-Sicherheitsbindung",
+            "scientificName": "Impermeable Vapor Barrier Shell & Non-Constrictive Ankle Tether",
+            "categoryTag": "Nässesperre / Durchblutungserhalt",
+            "imageFileName": "id-vapor-barrier-boot-assembly.jpg",
+            "hudCode": "FIG. SHELTER-28C // MACRO OPTIC",
+            "hudStatus": "CIRCULATION: 100% UNCONSTRICTED",
+            "traits": [
+              {
+                "label": "Wasser/Sperre",
+                "value": "Die Plastikfolie **blockiert Schlamm und Eiswasser zu 100 %**."
+              },
+              {
+                "label": "Knöchel/Spiel",
+                "value": "Das Band muss so locker sitzen, dass **ein Zeigefinger leicht darunter gleitet**."
+              },
+              {
+                "label": "Zehen/Freiheit",
+                "value": "Schuhe weit schnüren; **Zehen müssen sich frei bewegen können**."
+              }
+            ],
+            "fieldUse": "Schützt den Fuß vor Nässe und Erfrierungen beim Durchqueren von Hochwasser oder Tiefschnee in undichten Schuhen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Alle 3 bis 4 Stunden das feuchte Zeitungspapier gegen trockenes tauschen und Zehendurchblutung testen",
+      "description": "1. **Feuchtigkeit alle 3 bis 4 Stunden kontrollieren**: Da Fußschweiß in der Plastikhülle verbleibt, ziehen Sie **etwa alle 3 bis 4 Stunden (zwei Mahlzeiten-Abstände)** den Schuh aus und prüfen mit der Hand, ob das Papier feucht geworden ist.\n2. **Klammes Papier gegen frisches trockenes austauschen**: Nehmen Sie das klamme Papier heraus und ersetzen Sie es sofort durch **3 frisch zerknüllte, trockene Zeitungsbögen** um Zehen und Spann.\n3. **Nasse Socken trocknen**: Falls auch die Socke feucht ist, wechseln Sie auf ein trockenes Paar. Die nassen Socken stecken Sie zur Körperwärme-Trocknung unter die Jacke in die Achselhöhle oder trocknen sie am [Rauchfreien Dosenkocher](/protocol-21).\n4. **Stündliche Zehengymnastik & Kapillardurchblutungstest**: Bewegen Sie beim Gehen stündlich **mindestens 20-mal aktiv die Zehen auf und ab**. Drücken Sie die Zehenspitze 3 Sekunden lang fest ein; die Haut muss innerhalb von 2 Sekunden wieder eine gesunde rosa Farbe annehmen.",
+      "actionNote": "> Warum feucht gebliebenes Zeitungspapier lebensgefährlich ist: Durchnässtes Papier verliert seine Luftkammern komplett. Wasser leitet Kälte 25-mal schneller an die Haut weiter – der feuchte Schuh wirkt wie ein Eisbeutel und führt schnell zu Nekrosen und Grabenfuß.",
+      "svgFileName": "pr28-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 3-4H WECHSEL & KAPILLARE ZEICHEN-KONTROLLE",
+        "Feuchtes Innenpapier entfernen und durch trockenes ersetzen",
+        "Nasses Futter leitet Wärme 25x schneller ab - Unterkühlung",
+        "Stündlich Zehen bewegen zur Durchblutungskontrolle",
+        "[KERN] Regelmäßiger Papierwechsel schützt vor Grabenfuß"
+      ],
+      "deepDive": {
+        "badge": "MOISTURE ACCUMULATION PREVENTION & CAPILLARY REFILL",
+        "title": "Verhinderung latenter Verdunstungskühlung und Kapillarfüllungszeit-Diagnose (CRT)",
+        "text": "Füße scheiden beim Marschieren 10 bis 30 ml Schweiß pro Stunde aus. Erreicht die relative Luftfeuchtigkeit im Beutel 100 %, bricht das isolierende Luftpolster zusammen. **Wasser (Wärmeleitfähigkeit 0,6 W/m·K) leitet Körperwärme 25-mal schneller ab als trockene Luft**. Ein turnusmäßiger Papierwechsel alle 3 bis 4 Stunden ist unverzichtbar. Die **kapillare Rückfüllzeit (Capillary Refill Time, CRT < 2s)** zeigt sofort an, ob die Mikrozirkulation noch intakt ist.",
+        "fieldSpecs": [
+          {
+            "name": "3-4-Stunden-Papierwechselprotokoll & 2-Sekunden-Kapillarblutungsdiagnostik",
+            "scientificName": "Moisture-Saturated Matrix Rotation & Capillary Refill Protocol",
+            "categoryTag": "Nässestau-Verhinderung / Mikrozirkulations-Check",
+            "imageFileName": "id-newspaper-swap-circulation-check.jpg",
+            "hudCode": "FIG. SHELTER-28D // MACRO OPTIC",
+            "hudStatus": "CAPILLARY REFILL: &lt; 2 SEC (NORMAL)",
+            "traits": [
+              {
+                "label": "Wechsel/Takt",
+                "value": "Wegen Schweißbildung **alle 3 bis 4 Stunden** das Papier komplett erneuern."
+              },
+              {
+                "label": "Zehen/Bewegung",
+                "value": "Beim Marschieren **stündlich 20-mal mit den Zehen wackeln**, um Blut zu pumpen."
+              },
+              {
+                "label": "Kapillare/Test",
+                "value": "Nach 3 Sekunden Fingerdruck muss die Haut **binnen 2 Sekunden wieder rosa werden**."
+              }
+            ],
+            "fieldUse": "Lebenswichtige Pflegeroutine zur Vermeidung von Grabenfuß und Erfrierungen bei längeren Märschen durch Kälte und Nässe"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Überziehen der Plastiktüte direkt auf den nackten Fuß ohne saugfähige Socke oder Zeitungspapier",
+    "description": "Wer aus falscher Angst vor Nässe Plastiktüten direkt auf die nackte Haut zieht, sorgt dafür, dass sich der ausgeschwitzte Fußschweiß im Plastik staut. Da Wasser Körperwärme 25-mal schneller ableitet als Luft, kühlen die Zehen rasant aus; innerhalb weniger Stunden drohen schwere Erfrierungen und aufgeweichte Gewebenekrosen (Grabenfuß).",
+    "consequence": "Dauerhafte Nervenschäden an den Zehen, Gehunfähigkeit und Amputationsgefahr durch Nekrose",
+    "prevention": "Immer zuerst eine trockene Baumwollsocke oder Stoffreste auf die Haut bringen, darüber zerknülltes Zeitungspapier wickeln und erst darum die Plastikhülle legen. Das feuchte Papier alle 3 bis 4 Stunden erneuern."
+  },
+  "faqs": [
+    {
+      "question": "Was tun, wenn weder Karton noch Alufolie vorhanden sind?",
+      "answer": "Birkenrinde ist der beste natürliche Ersatz. 2 bis 3 Lagen Birkenrinde unter der Sohle isolieren hervorragend gegen Bodenfrost und sind dank des natürlichen Öls (Betulin) wasserabweisend. Fehlt Alufolie, können Sie die silberne Innenseite von Chipstüten nutzen oder den Schuhboden mit 2 cm dicken, getrockneten Kiefernnadeln oder trockenem Moos auspolstern."
+    },
+    {
+      "question": "Hält es nicht noch wärmer, wenn man das Knöchelband ganz stramm zubindet?",
+      "answer": "Auf keinen Fall! Ein strammes Band schneidet die Blutzufuhr zu den Zehen ab. Ohne stetigen Nachschub von warmem Blut aus dem Herzen kühlen die Zehen selbst in der besten Isolierung binnen einer Stunde auf Minusgrade ab und erfrieren unwiderruflich. Lassen Sie immer mindestens einen Zeigefingerbreit Spielraum zwischen Schnur und Knöchel."
+    },
+    {
+      "question": "Funktioniert dieses Futter auch in Stiefeln, die bereits nass oder schlammig sind?",
+      "answer": "Ja, absolut. Die äußere Plastiktüte bildet eine undurchlässige Dampfsperre (Vapor Barrier). Selbst wenn der Schuh von außen völlig mit Eiswasser vollgesogen ist, hält die Folie das Innenleben aus Zeitung und Socke trocken. Achten Sie beim Hineinschlüpfen lediglich darauf, spitze Steinchen vorher aus dem Schuh zu schütteln, damit das Plastik nicht durchstochen wird."
+    }
+  ],
+  "createdAt": "2026-11-10T05:23:59.349Z",
+  "contentHash": "c583f79cc83ca9d5"
+}

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg28s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="cardboard28s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="foil28s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <pattern id="grid28s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow28s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg28s1)"/>
+  <rect width="400" height="400" fill="url(#grid28s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 01 // 2겹 골판지 및 은박 단열 깔창 여유 재단</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">신발 바닥 밑창을 대고 손가락 반 마디(5mm) 여유 있게 외곽선 그리기</text>
+
+  <!-- Main Illustration: Tracing sole & 3-layer stack -->
+  <g filter="url(#shadow28s1)">
+    <!-- Left panel: Sole outline & 5mm expansion offset -->
+    <rect x="24" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <!-- Shoe insole profile -->
+    <path d="M75,115 C85,102 115,102 125,115 C135,130 140,165 132,195 C125,220 95,220 82,210 C72,195 68,140 75,115 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <!-- 5mm expansion contour (dotted line) -->
+    <path d="M70,110 C82,95 118,95 130,110 C142,126 148,168 138,200 C130,227 92,227 77,216 C66,200 62,136 70,110 Z" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="4,2"/>
+    <!-- 5mm margin callout -->
+    <path d="M136,155 L158,155" stroke="#f59e0b" stroke-width="1.2"/>
+    <circle cx="136" cy="155" r="2.5" fill="#f59e0b"/>
+
+    <!-- Right panel: 3-Layer Sandwich Insole Stack -->
+    <rect x="206" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+    <!-- Layer 1: Bottom Cardboard -->
+    <ellipse cx="291" cy="205" rx="55" ry="16" fill="url(#cardboard28s1)" stroke="#b45309" stroke-width="1.5"/>
+    <!-- Layer 2: Middle Cardboard -->
+    <ellipse cx="291" cy="175" rx="53" ry="15" fill="url(#cardboard28s1)" stroke="#b45309" stroke-width="1.5"/>
+    <!-- Layer 3: Top Shiny Foil (Facing UP) -->
+    <ellipse cx="291" cy="145" rx="50" ry="14" fill="url(#foil28s1)" stroke="#38bdf8" stroke-width="1.8"/>
+    <!-- Heat reflection upward arrows -->
+    <path d="M270,135 L270,118 M266,122 L270,118 L274,122" stroke="#ef4444" stroke-width="1.8" fill="none"/>
+    <path d="M291,130 L291,113 M287,117 L291,113 L295,117" stroke="#ef4444" stroke-width="1.8" fill="none"/>
+    <path d="M312,135 L312,118 M308,122 L312,118 L316,122" stroke="#ef4444" stroke-width="1.8" fill="none"/>
+    <!-- Ground cold blocked downward deflections -->
+    <path d="M270,225 L270,210" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <path d="M291,228 L291,212" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <path d="M312,225 L312,210" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">골판지 2겹과 은박지를 발 크기에 맞춰 잘라 3중 레이어 결합</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="305" fill="#bae6fd" font-family="monospace" font-size="10.5">은박 면이 발바닥(위쪽)을 향하도록 신발 속에 깔아 체온 반사</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 발바닥보다 5mm 큰 2겹 골판지와 은박으로 바닥 냉기 90% 차단</text>
+</svg>
