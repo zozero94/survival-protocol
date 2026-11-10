@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { GoogleGenAI } from '@google/genai';
+import { GeminiModelResolverService } from './gemini-model-resolver.service.js';
 
 /**
  * [Service Layer]
@@ -67,10 +68,13 @@ export class TtsService {
       };
     }
 
-    // 3. Gemini 3.8 Flash TTS 호출
+    // 3. Gemini 최신 Flash TTS 모델 동적 해석 및 호출
     try {
+      const apiKey = process.env.GEMINI_API_KEY || '';
+      const ttsModel = await GeminiModelResolverService.resolveModel(apiKey, 'tts');
+
       const response = await client.models.generateContent({
-        model: 'gemini-3.8-flash-tts',
+        model: ttsModel,
         contents: text,
         config: {
           responseModalities: ['AUDIO'],

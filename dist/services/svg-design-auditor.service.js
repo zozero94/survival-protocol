@@ -320,7 +320,7 @@ ${context.actionNote ? `- 핵심 팁: ${context.actionNote}` : ''}
 }`.trim();
 
     try {
-      const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
+      const raw = await callGeminiApi(apiKey, 'auto', prompt, {
         temperature: 0.1,
         responseMimeType: 'application/json',
         timeoutMs: 25000,

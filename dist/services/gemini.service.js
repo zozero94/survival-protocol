@@ -56,7 +56,7 @@ ${existingTitles.map((t) => `- ${t}`).join('\n')}
 }`;
 
     try {
-      const rawJson = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
+      const rawJson = await callGeminiApi(apiKey, 'auto', prompt, {
         responseMimeType: 'application/json',
         temperature: 0.3,
       });

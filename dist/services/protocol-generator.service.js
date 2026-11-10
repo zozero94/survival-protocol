@@ -304,7 +304,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
 }
 `.trim();
 
-    const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
+    const raw = await callGeminiApi(apiKey, 'auto', prompt, {
       responseMimeType: 'application/json',
       temperature: 0.2,
       timeoutMs: 45000,
@@ -369,7 +369,7 @@ Rules:
 3. If "svgLabels" array is present inside each step of "steps", translate every label string in "svgLabels" into short, clear, easy-to-read labels in ${code} while keeping the EXACT same array length and index order. Keep numbers and units (mm, cm, °C, °, kg, %) intact.
 4. Return valid JSON only:\n${JSON.stringify(master, null, 2)}`;
 
-        const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
+        const raw = await callGeminiApi(apiKey, 'auto', prompt, {
           responseMimeType: 'application/json',
           timeoutMs: 40000,
           maxRetries: 2,
@@ -621,7 +621,7 @@ ${instructions}
 4. 반드시 유효한 전체 JSON 코드로만 응답하십시오.
 `.trim();
 
-    const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', prompt, {
+    const raw = await callGeminiApi(apiKey, 'auto', prompt, {
       responseMimeType: 'application/json',
       temperature: 0.2,
       timeoutMs: 45000,

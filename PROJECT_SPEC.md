@@ -24,7 +24,7 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 160개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 172개 단위 테스트 무결성 100% 통과)
 - **주제 검증 및 문체 감수 철학**:
   - 듀얼 트랙 생존 고증 + 완제품 대체 호환(Ready-Made Alternative) 원칙 (Track A: 순수 자연물 원시 공학 / Track B: 도시 생활 폐자재 업사이클링 공학 + 가정 내 완제품 장비 우선 활용 안내 및 고갈 시 DIY 대체 제작)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)

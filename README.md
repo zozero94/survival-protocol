@@ -107,7 +107,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 15대 테스트 스위트 (160/160 PASS)
+└── tests/                 # [Quality Audit] 16대 테스트 스위트 (172/172 PASS)
 ```
 
 ---
@@ -136,7 +136,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(160개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지)*
+*(172개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash

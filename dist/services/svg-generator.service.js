@@ -89,7 +89,7 @@ ${
     : ''
 }`.trim();
 
-          const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', basePrompt, {
+          const raw = await callGeminiApi(apiKey, 'auto', basePrompt, {
             temperature: attempt === 1 ? 0.2 : 0.15,
             responseMimeType: 'text/plain',
             timeoutMs: 35000,

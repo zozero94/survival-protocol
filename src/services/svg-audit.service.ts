@@ -330,7 +330,7 @@ ${svgCode}
 `.trim();
 
     try {
-      const raw = await callGeminiApi(apiKey, 'gemini-3.8-flash', `${this.AUDITOR_SYSTEM_PROMPT}\n\n${userPrompt}`, {
+      const raw = await callGeminiApi(apiKey, 'auto', `${this.AUDITOR_SYSTEM_PROMPT}\n\n${userPrompt}`, {
         responseMimeType: 'application/json',
         temperature: 0.1,
         timeoutMs: 25000,

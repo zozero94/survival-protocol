@@ -16,4 +16,5 @@ export * from './search.service.js';
 export * from './posting-review.service.js';
 export * from './content-enrichment.service.js';
 export * from './tts.service.js';
-
+export * from './gemini-model-resolver.service.js';
+export * from './image-generator.service.js';

@@ -1,4 +1,5 @@
 import dns from 'node:dns';
+import { GeminiModelResolverService } from './services/gemini-model-resolver.service.ts';
 
 try {
   dns.setDefaultResultOrder('ipv4first');
@@ -7,12 +8,12 @@ try {
 /**
  * 구글 공식 REST API 기반 경량 제미나이 클라이언트
  * 외부 무거운 SDK 의존성 없이 순수 Node.js native fetch로 초고속 동작
- * 하위 버전 모델로 절대 다운그레이드하지 않고, 지정된 최신 모델(gemini-3.8-flash)만 사용하며
- * 일시적 503(수요 급증)/429 발생 시 동일 최신 모델로 지수 백오프(Exponential Backoff) 재시도 수행
+ * 모델명이 생략되거나 'auto'인 경우 GeminiModelResolverService를 통해 런타임 최신 모델 자동 해석
+ * 일시적 503(수요 급증)/429 발생 시 동일 모델로 지수 백오프(Exponential Backoff) 재시도 수행
  */
 export async function callGeminiApi(
   apiKey: string,
-  model: string,
+  model: string = 'auto',
   prompt: string,
   options: {
     systemInstruction?: string;
@@ -25,7 +26,10 @@ export async function callGeminiApi(
     imageMimeType?: string;
   } = {}
 ): Promise<string> {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+  const effectiveModel = (model && model !== 'auto')
+    ? model
+    : await GeminiModelResolverService.resolveModel(apiKey, 'flash');
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${effectiveModel}:generateContent?key=${apiKey}`;
 
   const parts: any[] = [];
   if (options.imageBase64) {
@@ -64,7 +68,7 @@ export async function callGeminiApi(
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     const remainingBudget = options.deadlineAt ? options.deadlineAt - Date.now() : Infinity;
     if (remainingBudget <= 1500) {
-      throw lastError || new Error(`Gemini API(${model}) 전체 실행 예산 시간을 초과했습니다.`);
+      throw lastError || new Error(`Gemini API(${effectiveModel}) 전체 실행 예산 시간을 초과했습니다.`);
     }
     const effectiveTimeout = Math.min(perAttemptTimeout, Math.max(1500, remainingBudget));
 
@@ -78,7 +82,7 @@ export async function callGeminiApi(
 
       if (!response.ok) {
         const errorText = await response.text();
-        lastError = new Error(`[Gemini API Error ${response.status} (${model})]: ${errorText}`);
+        lastError = new Error(`[Gemini API Error ${response.status} (${effectiveModel})]: ${errorText}`);
         if ((response.status === 503 || response.status === 429) && attempt < maxAttempts) {
           const jitter = Math.floor(Math.random() * 700);
           const delayMs = 1200 * Math.pow(2, attempt - 1) + jitter;
@@ -99,7 +103,7 @@ export async function callGeminiApi(
       const text = textPart?.text;
 
       if (!text) {
-        throw new Error(`Gemini API(${model})로부터 유효한 텍스트 응답을 받지 못했습니다.`);
+        throw new Error(`Gemini API(${effectiveModel})로부터 유효한 텍스트 응답을 받지 못했습니다.`);
       }
 
       return text;
@@ -124,5 +128,5 @@ export async function callGeminiApi(
     }
   }
 
-  throw lastError || new Error(`Gemini API(${model}) 호출에 실패했습니다.`);
+  throw lastError || new Error(`Gemini API(${effectiveModel}) 호출에 실패했습니다.`);
 }
