@@ -28,11 +28,24 @@ describe('📦 [Suite 2: 확장성] 전체 발행 프로토콜 데이터 무결�
         content.steps.length >= 3 && content.steps.length <= 8,
         `${file}: 단계(steps)는 최소 3개 이상 8개 이하여야 함 (현재: ${content.steps.length})`
       );
+      const imagesDir = path.resolve(__dirname, '../content/images');
+
       content.steps.forEach((step: any, idx: number) => {
         assert.ok(step.stepNumber, `${file} [Step ${idx + 1}]: stepNumber 누락`);
         assert.ok(step.title, `${file} [Step ${idx + 1}]: title 누락`);
         assert.ok(step.description, `${file} [Step ${idx + 1}]: description 누락`);
         assert.ok(step.svgFileName, `${file} [Step ${idx + 1}]: svgFileName 매핑 누락`);
+
+        if (step.deepDive?.fieldSpecs) {
+          step.deepDive.fieldSpecs.forEach((spec: any, sIdx: number) => {
+            if (spec.imageFileName) {
+              assert.ok(
+                fs.existsSync(path.join(imagesDir, spec.imageFileName)),
+                `${file} [Step ${idx + 1} Spec ${sIdx + 1}]: 실물 이미지 파일 누락 -> content/images/${spec.imageFileName} 파일이 실제로 존재해야 합니다 (엑스박스 방지)`
+              );
+            }
+          });
+        }
       });
 
       // 3. 치명적 실수 3대 요소 필수성

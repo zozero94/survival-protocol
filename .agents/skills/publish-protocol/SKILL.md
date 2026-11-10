@@ -33,6 +33,13 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
 
 ---
 
+### [Phase 1.5] 3D 실물·식생 식별 에셋 생성 및 배치 (`content/images/`)
+1. 각 스텝의 `deepDive.fieldSpecs`에 지정할 실물 이미지(`imageFileName`: `id-{slug}.jpg`)를 준비한다.
+2. `generate_image` 툴을 호출하여 4:3 종횡비의 사실적인 야전 실물 매크로 이미지를 생성한다.
+3. 생성된 이미지 아티팩트를 `content/images/{imageFileName}`으로 물리적으로 복사한다 (빌드 시 `public/images/`로 자동 복제되어 엑스박스/깨진 이미지를 원천 방지함).
+
+---
+
 ### [Phase 2] 초등학생 눈높이 마스터 JSON 작성 (`content/protocols/`)
 1. 경로: `content/protocols/{XX}-{slug}.json` (예: `27-emergency-whistle-heliograph.json`)
 2. **필수 스키마 규격** (`Protocol` 타입 엄수):
