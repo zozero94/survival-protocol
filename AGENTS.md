@@ -60,6 +60,9 @@ content/
 터미널에서 작업 수행 시 다음 명령어를 표준으로 사용합니다:
 
 ```bash
+# 0. 작업 시작 전 원격 최신 동기화 (Pre-Task Remote Sync)
+git pull --ff-only origin main
+
 # 1. 의존성 설치
 npm install
 
@@ -83,16 +86,18 @@ npm run typecheck
 
 ## 🚫 5. 에이전트 절대 준수 규칙 (Hard Constraints)
 
-1. **내부 링크 클린 URL 준수 (No `.html` in Markdown Links)**:
+1. **작업 시작 전 원격 최신 동기화 (Pre-Task Remote Sync)**:
+   - 새로운 작업이나 기능 개발, 프로토콜 발행 등 작업 착수 전, 반드시 원격 저장소(`origin/main`)에 pull할 내용이 있는지 확인하고(`git pull --ff-only origin main`), 최신 상태로 업데이트한 뒤 작업을 진행하십시오.
+2. **내부 링크 클린 URL 준수 (No `.html` in Markdown Links)**:
    - 본문 크로스링크는 반드시 `[텍스트](/protocol-XX)` 형식이어야 합니다. `.html` 확장자를 붙이지 마십시오 (Vercel 308 리디렉션 방지).
-2. **매듭(Knot) 주제 영구 제외**:
+3. **매듭(Knot) 주제 영구 제외**:
    - 2D/3D 정적 도면만으로 시공간 조작 전달이 불가능한 매듭법은 다루지 않습니다 (PR-07은 아카이브 격리됨).
-3. **5대 SSOT 카테고리 강타입 준수**:
+4. **5대 SSOT 카테고리 강타입 준수**:
    - `FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE` 외의 임의 카테고리는 허용되지 않습니다.
-4. **초등학생(11~13세) 눈높이 문체 & 무도구 원칙**:
+5. **초등학생(11~13세) 눈높이 문체 & 무도구 원칙**:
    - 난해한 학술 용어(다공성, 비등 멸균, 흡착 등)는 일상어로 순화하십시오.
    - 자·저울·타이머 등 현대 계측기 의존을 금지하고, 뼘·손가락 마디·콩알 크기 등 신체 감각 비유를 병기하십시오.
-5. **완제품 우선 & 비상 대체 호환 (Ready-Made Alternative)**:
+6. **완제품 우선 & 비상 대체 호환 (Ready-Made Alternative)**:
    - 시판 완제품 장비가 있을 때의 활용법을 먼저 안내하고, 없을 때의 DIY 대체법을 제시하십시오.
 
 ---

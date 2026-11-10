@@ -12,9 +12,10 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
 ## 📋 7단계 자율 발행 프로세스 (순서 엄수)
 
 ### [Phase 0] 차기 기획서 및 지식 트리 로드
-1. `NEXT_TOPIC_PROMPT.md`를 열어 `PR-XX` 주제, 카테고리(`FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE`), 결핍 상황, 4단계 실행 지침을 파악한다.
-2. `content/knowledge-tree.json`을 열어 해당 프로토콜이 속할 도메인(`WATER`, `FIRE`, `SHELTER`, `TOOLS`, `FOOD`, `MEDICINE`) 및 분과를 확인한다.
-3. **핵심 원칙 사전 점검**:
+1. **작업 시작 전 원격 최신 동기화 (Pre-Task Remote Sync)**: `git pull --ff-only origin main`을 실행하여 원격 저장소의 최신 커밋을 로컬에 먼저 반영한다.
+2. `NEXT_TOPIC_PROMPT.md`를 열어 `PR-XX` 주제, 카테고리(`FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE`), 결핍 상황, 4단계 실행 지침을 파악한다.
+3. `content/knowledge-tree.json`을 열어 해당 프로토콜이 속할 도메인(`WATER`, `FIRE`, `SHELTER`, `TOOLS`, `FOOD`, `MEDICINE`) 및 분과를 확인한다.
+4. **핵심 원칙 사전 점검**:
    - **완제품 우선 & 비상 대체 호환 (Ready-Made Alternative)**: 시판 완제품 장비가 있을 때의 활용법을 상단에 먼저 명시하고, 고갈 시 주변 생활 폐자재/자연물 DIY 대체 제작법을 본문으로 전개한다.
    - **매듭(Knot) 주제 영구 제외**: 2D 정적 도면으로 전달 불가능한 매듭법은 다루지 않는다.
    - **무도구 원칙**: 자, 저울, 타이머 의존을 금지하고 손가락 마디, 뼘, 콩알 크기, 호흡 횟수 등 신체 감각 비유를 병기한다.
