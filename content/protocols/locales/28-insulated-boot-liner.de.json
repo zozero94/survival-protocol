@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "Was tun, wenn weder Karton noch Alufolie vorhanden sind?",
-      "answer": "Birkenrinde ist der beste natürliche Ersatz. 2 bis 3 Lagen Birkenrinde unter der Sohle isolieren hervorragend gegen Bodenfrost und sind dank des natürlichen Öls (Betulin) wasserabweisend. Fehlt Alufolie, können Sie die silberne Innenseite von Chipstüten nutzen oder den Schuhboden mit 2 cm dicken, getrockneten Kiefernnadeln oder trockenem Moos auspolstern."
+      "causeDiagnostic": "Um die Bodenkälte durch Wärmeleitung zu stoppen, wird ein wasserabweisender Naturdämmstoff mit Luftpolstern unter der Sohle benötigt.",
+      "resolution": "Legen Sie **2 bis 3 Lagen Birkenrinde** in den Stiefelboden als wasserfeste, isolierende Einlegesohle. Birkenrinde enthält natürliche Öle (Betulin), die Wasser abweisen und Bodenfrost blockieren. Fehlt Alufolie, nutzen Sie die **metallische Innenseite einer Snacktüte** oder polstern Sie den Stiefelboden **fingerdick (ca. 2 cm) mit trockenen Kiefernnadeln und trockenem Moos**."
     },
     {
       "question": "Hält es nicht noch wärmer, wenn man das Knöchelband ganz stramm zubindet?",
-      "answer": "Auf keinen Fall! Ein strammes Band schneidet die Blutzufuhr zu den Zehen ab. Ohne stetigen Nachschub von warmem Blut aus dem Herzen kühlen die Zehen selbst in der besten Isolierung binnen einer Stunde auf Minusgrade ab und erfrieren unwiderruflich. Lassen Sie immer mindestens einen Zeigefingerbreit Spielraum zwischen Schnur und Knöchel."
+      "causeDiagnostic": "Ein fest zugeschnürtes Knöchelband drückt Arterien und Kapillaren ab und unterbricht die Blutzirkulation zu den Zehen.",
+      "resolution": "Wenn kein warmes Blut vom Herzen in die Zehen gelangt, fällt deren Temperatur rapide unter null Grad und führt **schon nach 1 Stunde zu schweren Erfrierungen**. Lassen Sie zwischen Schnur und Knöchel immer **eine Fingerbreite Platz**, damit das Blut ungehindert fließen kann."
     },
     {
       "question": "Funktioniert dieses Futter auch in Stiefeln, die bereits nass oder schlammig sind?",
-      "answer": "Ja, absolut. Die äußere Plastiktüte bildet eine undurchlässige Dampfsperre (Vapor Barrier). Selbst wenn der Schuh von außen völlig mit Eiswasser vollgesogen ist, hält die Folie das Innenleben aus Zeitung und Socke trocken. Achten Sie beim Hineinschlüpfen lediglich darauf, spitze Steinchen vorher aus dem Schuh zu schütteln, damit das Plastik nicht durchstochen wird."
+      "causeDiagnostic": "Die äußerste Plastiktüte wirkt als 100% wasserdichte Dampfsperre (Vapor Barrier) zwischen nassem Schuh und innerer Dämmung.",
+      "resolution": "Selbst wenn der Stiefel völlig durchnässt ist, **verhindert die äußere Folienhülle vollständig, dass kaltes Schmutzwasser in das Zeitungspapier und die trockenen Socken eindringt**. Gleiten Sie vorsichtig in den Stiefel und **wischen Sie vorher spitze Steinchen oder Sand aus dem Schuhinneren**."
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "c583f79cc83ca9d5"
+  "contentHash": "02d7f29c042a9c1b",
+  "shortsScript": {
+    "hook": "Wenn Stiefel bei Winterstromausfall oder Hochwasser durchnässen, drohen in 2 Stunden Erfrierungen und Grabenfuß! Bauen Sie aus Plastiktüten, Zeitung und Karton ein wasserfestes Thermofutter bis minus 20 Grad!",
+    "body": "Schneiden Sie zuerst zwei Lagen Wellpappe etwas größer als Ihren Fuß zu, wickeln Sie Alufolie darum und legen Sie sie in den Schuh – das stoppt 90% der Bodenkälte. Ziehen Sie trockene Baumwollsocken an, umwickeln Sie Zehen und Sohle dick mit 4 zerknüllten und geglätteten Zeitungsblättern als Warmluftpolster. Stülpen Sie einen intakten Plastikbeutel darüber, binden Sie ihn am Knöchel mit einer Fingerbreite Spielraum locker zu und schlüpfen Sie in den Stiefel. Zeitung alle 3 Stunden wechseln!"
+  },
+  "outcome": {
+    "title": "2-Lagen-Karton-Alu-Bodenkälteschild & Knüllzeitungs-Luftpolster-Dampfsperren-Stiefelfuttersystem",
+    "badge": "FINAL SPEC // 3-LAYER THERMAL & VAPOR BARRIER BOOT LINER",
+    "description": "Stromloses Schutzsystem gegen Erfrierungen und Grabenfuß: Eine 2-lagige Wellpappe-Alu-Einlegesohle blockiert über 90% der Bodenkälte, zerknüllte Zeitungsfasern nehmen Fußschweiß auf und halten eine ruhende Luftschicht, während die äußere Folienbarriere mit fingerbreiter Knöchelbindung Nässe abhält, ohne die Durchblutung zu stören.",
+    "svgFileName": "pr28-outcome.svg",
+    "svgLabels": [
+      "PR-28 SYSTEM // STROMLOSES THERMO- & NÄSSESCHUTZ-STIEFELFUTTER",
+      "STAGE 01: 2-LAGEN-KARTON-ALU-SOHLE",
+      "Blockiert 90%+ leitende Bodenkälte",
+      "STAGE 02: BAUMWOLLSOCKE + ZEITUNGSLUFT",
+      "Schweißaufnahme & Ruheluft-Dämmung",
+      "STAGE 03: NÄSSESCHUTZHÜLLE & BINDUNG",
+      "Stoppt Flutwasser & sichert Blutfluss",
+      "STAGE 04: WECHSEL & DURCHBLUTUNGSTEST",
+      "Verhindert Schweißstau & Zehenfrost",
+      "[KERNPRINZIP] Bodenkälteschild + Schweißsaugende Luftschicht + Nässesperre"
+    ]
+  },
+  "updatedAt": "2026-11-10T05:34:16+00:00"
 }

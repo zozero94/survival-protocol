@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "What natural wild materials can replace cardboard or aluminum foil if none are available?",
-      "answer": "Stack 2–3 sheets of wild birch bark inside your boots. Birch bark contains natural waterproof betulin oils and provides outstanding ground insulation. If foil is unavailable, use the shiny metallic inside of an empty snack bag, or cushion your boot sole with a 2cm thick pad of dry pine needles and dry moss."
+      "causeDiagnostic": "To block ground conduction cold, you need a non-absorbent natural insulator with trapped air pockets under the sole.",
+      "resolution": "Layer **2 to 3 sheets of birch bark** at the bottom of your boot for an excellent waterproof, insulating insole. Birch bark is rich in natural oils (betulin) that repel water and block ground frost. If you have no aluminum foil, cut out the **metallic inner lining of a snack bag**, or pack **dry pine needles and dry moss one finger-joint (2cm) thick** on the boot floor."
     },
     {
       "question": "Doesn't tying the ankle cuff tightly keep out cold wind and make feet warmer?",
-      "answer": "Absolutely not. Tying the ankle cuff tightly constricts the major blood vessels feeding your foot. Deprived of warm blood pumped from your heart, toes drop to freezing temperatures even inside insulated boots, resulting in severe frostbite within an hour. Always leave 1 finger-joint of loose slack."
+      "causeDiagnostic": "Tying the ankle strap tightly compresses arteries and capillaries running down to the toes, cutting off warm blood flow.",
+      "resolution": "If warm blood from your heart cannot reach your toes, toe temperature plummets below freezing and causes **severe frostbite within just 1 hour**, no matter how thick the insulation is. Always leave **a one-finger-joint gap** between the string and your ankle so blood circulates freely."
     },
     {
       "question": "My boots are already soaked with icy mud; will inserting this liner into wet boots really keep my feet dry?",
-      "answer": "Yes. The outer plastic bag acts as an impenetrable vapor barrier, preventing icy muddy moisture in the outer boot from soaking the inner dry newspaper and socks. Shake out sharp pebbles from the boots before stepping in so they do not puncture the plastic."
+      "causeDiagnostic": "The outermost plastic bag acts as a 100% waterproof barrier (Vapor Barrier) separating wet boot fabric from inner insulation.",
+      "resolution": "Even if the outer boot is sopping wet, **the outer plastic bag completely blocks external icy water from seeping into the inner newspaper and dry socks**. Just slide your foot in gently so the bag does not tear, and **sweep out any sharp sand or pebbles inside the boot** beforehand."
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "c583f79cc83ca9d5"
+  "contentHash": "02d7f29c042a9c1b",
+  "shortsScript": {
+    "hook": "When winter blackouts or floods soak your boots, frostbite and trench foot can cripple you in two hours! Build a zero-power waterproof thermal boot liner using plastic bags, newspaper, and cardboard!",
+    "body": "First, trace your foot slightly larger onto two layers of corrugated cardboard, wrap them in aluminum foil, and place them in your boot to block 90% of ground cold. Put dry cotton socks on bare feet, then wrap four sheets of crumpled-and-flattened newspaper around your toes and soles to trap warm air. Slip an intact plastic bag over the newspaper, tie the ankle loosely with a one-finger gap, and step into your boot! Never put plastic directly on bare skin—swap damp newspaper every 3 hours!"
+  },
+  "outcome": {
+    "title": "2-Ply Cardboard-Foil Ground Cold Shield & Crumpled Newspaper Air-Pocket Vapor Barrier Boot Liner System",
+    "badge": "FINAL SPEC // 3-LAYER THERMAL & VAPOR BARRIER BOOT LINER",
+    "description": "A zero-power frostbite and trench-foot defense system combining a 2-ply corrugated cardboard and reflective foil insole to block over 90% of ground conduction cold, crumpled newspaper fibers to absorb sweat and trap dead-air insulation, and an outer waterproof bag tied with a one-finger clearance to prevent water intrusion without restricting blood flow.",
+    "svgFileName": "pr28-outcome.svg",
+    "svgLabels": [
+      "PR-28 COMPLETE // ZERO-POWER THERMAL & WATERPROOF BOOT LINER",
+      "STAGE 01: 2-PLY CARDBOARD-FOIL INSOLE",
+      "Blocks 90%+ Ground Conduction Cold",
+      "STAGE 02: COTTON SOCK + PAPER AIR LAYER",
+      "Sweat Absorption & Dead-Air Insulation",
+      "STAGE 03: WATERPROOF SHELL & ANKLE TIE",
+      "Blocks Floodwater & Preserves Blood Flow",
+      "STAGE 04: TIMED SWAP & CIRCULATION CHECK",
+      "Prevents Sweat Buildup & Toe Frostbite",
+      "[CORE PRINCIPLE] Ground Cold Shield + Sweat-Wicking Air Layer + Outer Waterproof Barrier"
+    ]
+  },
+  "updatedAt": "2026-11-10T05:34:16+00:00"
 }

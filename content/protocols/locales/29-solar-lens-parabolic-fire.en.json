@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "What if I have neither a clear plastic bottle nor an aluminum beverage can?",
-      "answer": "Any clear plastic grocery bag, zip-top bag, or even a clear cellophane snack wrapper will work. Pour a small amount of clear water into one corner and twist the plastic tightly above it until it forms a taut, round sphere the size of an orange—this water ball acts as an effective convex lens. You can also use reading glasses (farsighted convex lenses), the curved bottom of a broken clear glass bottle, or the parabolic reflector dish unscrewed from a broken flashlight."
+      "causeDiagnostic": "Any clear film that can hold clean water in a spherical curve or any curved reflective surface can converge sunlight to a focal point.",
+      "resolution": "Any **clear plastic bag, zip-top bag, or even a transparent snack wrapper** works. Pour a little clean water into one corner and twist the top tightly until it forms a taut, round **water sphere like an orange**—this acts as a strong convex magnifying lens. You can also use **reading glasses (farsighted convex lenses), the thick curved bottom of a broken clear glass bottle, or the parabolic reflector from a broken flashlight**."
     },
     {
       "question": "What can I use in the wilderness to polish the can bottom if I don't have toothpaste?",
-      "answer": "Mix the finest 'white wood ash' from an old campfire with a few drops of water or saliva into a creamy paste and rub vigorously—its microscopic silica particles polish aluminum to a mirror shine just like toothpaste. If no ash is available, use ultra-fine riverbank clay silt paste followed by buffing with dry cloth or dry leaves. Even a tiny piece of chocolate rubbed onto the metal works as a fine polishing compound thanks to its cocoa solids and fat."
+      "causeDiagnostic": "Removing the dull microscopic oxide layer on aluminum requires ultra-fine mineral particles or a fine oil-suspended abrasive paste.",
+      "resolution": "Mix the finest **white wood ash** from a cold campfire with a few drops of water or saliva into a creamy paste and rub vigorously—its micro-silica particles polish aluminum just like toothpaste. If you have no ash, use **ultra-fine riverbank clay mud** followed by a dry cloth buff, or rub a **small piece of chocolate** on the metal, whose cocoa solids and fat polish aluminum to a mirror finish."
     },
     {
       "question": "Why does my focal spot only produce a tiny wisp of smoke that dies out without forming an ember?",
-      "answer": "First, the tinder is likely too light-colored or slightly damp. Pale dry grass reflects most sunlight, so always rub black charcoal dust, dark ash, or dark soil onto the tinder spot to absorb 95% of the heat. Second, loose single fibers let heat escape into the air; compress your dry mugwort fluff, cattail down, or punk wood into a tight, pea-sized pellet so the concentrated heat stays trapped inside and builds into a self-sustaining red coal."
+      "causeDiagnostic": "Light-colored tinder reflects over 70% of sunlight instead of reaching 400°C, and loose fibers let heat escape into the air.",
+      "resolution": "Always rub **black charcoal dust, dark ash, or black mud** onto the target spot (or aim at a pre-charred black edge) so over 90% of solar heat is absorbed. Also, do not leave tinder fibers loose; **compress dry mugwort or cattail fluff into a dense, pea-sized pellet** at the focal point so heat stays trapped inside and grows into a glowing red ember."
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "a42f5a8522780c40"
+  "contentHash": "258785c63f3ebd22",
+  "shortsScript": {
+    "hook": "Out of lighter gas during a winter blackout or wilderness stranding? Ignite a 400-degree fire in 30 seconds using an empty soda can and a clear water bottle!",
+    "body": "First, dab a pea-sized bit of toothpaste or fine wood ash onto the concave bottom of an aluminum can and buff for 5 minutes until it shines like a parabolic mirror. Second, fill a clear plastic bottle to the brim with bubble-free water so its rounded shoulder becomes a convex water lens. Third, rub black charcoal dust onto dry mugwort fluff to stop light reflection, then hold a rice-grain-sized solar focal point steady for 30 seconds! Once a red ember glows, wrap it in a dry pine-needle nest and blow gently into flame! Always store water bottles in the shade afterward!"
+  },
+  "outcome": {
+    "title": "Parabolic Can-Bottom Concave Mirror & Clear Bottle Spherical Water Lens 400°C Solar Ignition System",
+    "badge": "FINAL SPEC // PARABOLIC CAN MIRROR & WATER LENS SOLAR IGNITION",
+    "description": "A zero-fuel optical fire-starting system combining a toothpaste- or wood-ash-polished aluminum can parabolic mirror (90%+ reflectance) and a bubble-free clear bottle shoulder water lens to concentrate sunlight into a 1–2mm focal spot, igniting carbon-darkened tinder and a dual bird-nest oxygen bundle into open flame within 30 seconds.",
+    "svgFileName": "pr29-outcome.svg",
+    "svgLabels": [
+      "PR-29 COMPLETE // ZERO-FUEL OPTICAL REFRACTION & PARABOLIC SOLAR FIRE SYSTEM",
+      "STAGE 01: CAN BOTTOM CONCAVE MIRROR",
+      "Toothpaste/Ash Buff for Mirror Polish",
+      "STAGE 02: CLEAR VESSEL WATER LENS",
+      "Bubble-Free Water Forms Convex Focus",
+      "STAGE 03: RICE-GRAIN FOCAL IGNITION",
+      "1-2mm Spot Held 30s Reaches 400°C",
+      "STAGE 04: TINDER NEST OXYGEN BLOW",
+      "Wrap in Dry Grass Nest & Blow to Flame",
+      "[CORE PRINCIPLE] Parabolic Can Reflection & Water Lens Refraction Ignite 400°C Ember in 30s"
+    ]
+  },
+  "updatedAt": "2026-11-11T04:02:02+00:00"
 }

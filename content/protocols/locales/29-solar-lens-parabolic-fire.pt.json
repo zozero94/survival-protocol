@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "O que posso usar para concentrar o sol se não tiver nem garrafa PET nem lata de alumínio?",
-      "answer": "Qualquer saco plástico transparente, saco tipo zip ou até a embalagem transparente de um pacote de biscoitos funciona. Coloque um pouco de água limpa em um canto e torça a parte de cima com força até formar uma bola de água esticada e redonda como uma laranja; essa esfera funciona como uma ótima lupa convexa. Você também pode usar óculos de leitura para vista cansada (lentes convexas), o fundo curvo de uma garrafa de vidro quebrada ou o refletor parabólico desmontado de uma lanterna quebrada."
+      "causeDiagnostic": "Qualquer película transparente que segure água limpa numa curva esférica ou superfície refletora curva consegue concentrar a luz solar.",
+      "resolution": "Qualquer **saco plástico transparente, saco tipo zip ou até a embalagem transparente de um biscoito** funciona. Coloque um pouco de água limpa num canto e torça a parte superior com força até formar uma **bola de água esticada como uma laranja**, que age como lupa convexa. Também servem **óculos de leitura para vista cansada (lentes convexas), o fundo curvo de uma garrafa de vidro quebrada ou o refletor parabólico de uma lanterna quebrada**."
     },
     {
       "question": "Se eu não tiver pasta de dente na mata, o que posso passar no fundo da lata para deixá-lo espelhado?",
-      "answer": "Misture a 'cinza branca de madeira' mais fina de uma fogueira apagada com algumas gotas de água ou saliva até formar uma pasta cremosa e esfregue com força: suas micropartículas de sílica polem o alumínio tão bem quanto pasta de dente. Se não houver cinza, use lama de argila finíssima da margem de um rio e depois dê brilho com pano seco, ou até esfregue um pedacinho de chocolate no metal, cujos sólidos de cacau e gordura deixam um acabamento espelhado."
+      "causeDiagnostic": "Para remover a camada microscópica opaca de óxido do alumínio são necessárias micropartículas minerais finíssimas ou uma pasta abrasiva gordurosa.",
+      "resolution": "Misture a **cinza branca de madeira** mais fina de uma fogueira apagada com algumas gotas de água ou saliva até formar um creme e esfregue com força: suas micropartículas de sílica polem tão bem quanto pasta de dente. Sem cinza, use **lama de argila finíssima de beira de rio** e depois dê brilho com pano seco, ou esfregue um pedacinho de **chocolate** no metal, cujos sólidos de cacau e gordura deixam acabamento espelhado."
     },
     {
       "question": "Por que o ponto focal só solta um fiozinho de fumaça e apaga sem formar uma brasa firme?",
-      "answer": "A principal causa é a isca estar clara demais ou levemente úmida. Capim seco claro reflete a luz, por isso é indispensável esfregar pó de carvão preto, cinza escura ou lama preta no ponto onde o foco incide para absorver o calor. A segunda causa são fibras soltas demais que deixam o calor escapar; comprima a penugem de artemísia ou taboa formando uma bolinha densa do tamanho de uma ervilha para que o calor fique retido e forme uma brasa vermelha."
+      "causeDiagnostic": "Isca clara reflete mais de 70% da luz solar sem atingir 400°C, e fibras soltas deixam o calor escapar para o ar.",
+      "resolution": "Esfregue sempre **pó de carvão preto, cinza escura ou lama preta** no ponto onde o foco incide (ou mire numa borda já chamuscada) para absorver mais de 90% do calor. Além disso, não deixe as fibras soltas: **comprima a penugem de artemísia ou taboa formando uma bolinha densa do tamanho de uma ervilha** para reter o calor e formar uma brasa vermelha."
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "a42f5a8522780c40"
+  "contentHash": "258785c63f3ebd22",
+  "shortsScript": {
+    "hook": "Acabou o gás do isqueiro num apagão de inverno ou isolamento na mata? Acenda fogo a 400 graus em 30 segundos usando uma lata vazia e uma garrafa PET com água!",
+    "body": "Primeiro, passe uma gota de pasta de dente ou cinza fina no fundo côncavo de uma lata de alumínio e esfregue por 5 minutos até virar um espelho parabólico. Segundo, encha uma garrafa PET transparente com água limpa sem bolhas para que o ombro arredondado vire uma lupa de água. Terceiro, passe carvão preto na penugem seca para evitar reflexo e segure o foco do tamanho de um grão de arroz por 30 segundos! Quando a brasa acender, coloque num ninho de pinheiro seco e sopre suave até virar chama! Guarde sempre a garrafa na sombra!"
+  },
+  "outcome": {
+    "title": "Espelho Côncavo Parabólico em Fundo de Lata & Lente Convexa de Água em Garrafa para Ignição Solar a 400°C",
+    "badge": "FINAL SPEC // PARABOLIC CAN MIRROR & WATER LENS SOLAR IGNITION",
+    "description": "Sistema óptico de ignição sem combustível que combina o fundo côncavo de uma lata polido com pasta de dente ou cinza (90%+ refletância) e uma lente esférica de água sem bolhas em garrafa transparente para comprimir a luz solar num foco de 1–2mm, acendendo isca escurecida com carvão e um ninho duplo de capim seco em 30 segundos.",
+    "svgFileName": "pr29-outcome.svg",
+    "svgLabels": [
+      "PR-29 COMPLETO // SISTEMA SOLAR DE REFRAÇÃO E REFLEXÃO PARABÓLICA",
+      "STAGE 01: ESPELHO CÔNCAVO NA LATA",
+      "Polimento com Pasta/Cinza até Espelhar",
+      "STAGE 02: LENTE CONVEXA DE ÁGUA",
+      "Água sem Bolhas Forma Foco Refrativo",
+      "STAGE 03: IGNIÇÃO EM FOCO DE ARROZ",
+      "Foco 1-2mm Fixo 30s Atinge 400°C",
+      "STAGE 04: OXIGÊNIO NO NINHO DE ISCA",
+      "Envolver no Ninho Seco e Soprar Chama",
+      "[PRINCÍPIO CHAVE] Reflexão Côncava e Lente de Água Concentram 400°C em 30s"
+    ]
+  },
+  "updatedAt": "2026-11-11T04:02:02+00:00"
 }

@@ -45,23 +45,24 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
 2. **필수 스키마 규격** (`Protocol` 타입 엄수):
    - `protocolId`: `"PR-XX"`
    - `category`: 5대 SSOT 중 하나 (`FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE`)
-   - `title`: 행동 중심 직관적 대제목 (초등학생 11~13세 눈높이)
-   - `summary`: 재난 상황 정의 및 핵심 작동 원리 요약
-   - `readyMadeAlternative`: 완제품 우선 활용법 및 비상 DIY 호환 안내
-   - `materials`: 재료 목록 (`name`, `qty`, `desc`, `fieldSpecs` 실물/식생 식별 정보)
-   - `steps`: 3~4단계 가변 스텝 (`stepNumber`, `title`, `description`, `actionNote`, `svgFileName`, `svgLabels`)
+   - `title`: 행동 중심 직관적 대제목 (초등학생 11~13세 눈높이, 10~65자 이내)
+   - `summary`: 재난 상황 정의 및 핵심 작동 원리 요약 (완제품 우선 활용법 및 비상 DIY 호환 안내 포함)
+   - `materials`: 재료 목록 (`id`, `name`, `desc`, `isGathered`)
+   - `steps`: 3~4단계 가변 스텝 (`stepNumber`, `title`, `description`, `actionNote`, `svgFileName`, `svgLabels`, `deepDive.fieldSpecs`)
      - `description`: `1. **행동 키워드**: 구체적 행동 지침` 번호형 액션 체크리스트 규격 준수
      - 내부 크로스링크: **반드시 클린 URL `[라벨](/protocol-YY)` 형식 (절대 `.html` 금지)**
-   - `fatalMistake`: 치명적 실수 및 야전 안전 주의사항 (`mistake`, `consequence`, `prevention`)
-   - `faqs`: 현장 돌발 상황 대응 Q&A 2~3종
+   - `fatalMistake`: 치명적 실수 및 야전 안전 주의사항 (`title`, `description`, `consequence`)
+   - `faqs`: 현장 돌발 상황 대응 Q&A 2~3종 (**반드시 `{ "question": "...", "causeDiagnostic": "...", "resolution": "..." }` 3개 키 구조 사용, 절대 `answer` 단일 키 사용 금지**)
+   - `shortsScript`: `{ "hook": "...", "body": "..." }`
+   - `outcome`: 완성 결과물 프리뷰 (`title`, `badge`, `description`, `svgFileName`: `"pr{XX}-outcome.svg"`, `svgLabels`: `pr{XX}-outcome.svg`의 `<text>` 10개와 1:1 매칭)
 
 ---
 
 ### [Phase 3] 6개국 글로벌 다국어 번역 (`content/protocols/locales/`)
 1. 타겟 언어: `en`, `ja`, `es`, `de`, `pt`, `zh-TW`
 2. 경로: `content/protocols/locales/{XX}-{slug}.{lang}.json` (총 6개 파일)
-3. 모든 필드(`title`, `summary`, `materials`, `steps`, `fatalMistake`, `faqs`, `svgLabels`)를 누락 없이 1:1 완벽 번역한다.
-4. **SVG 라벨 수 일치**: 각 스텝의 `svgLabels` 배열 요소 개수는 원본 SVG의 `<text>` 개수 및 한국어 원본과 정확히 일치해야 한다 (Suite 10 정적 감사 통과 조건).
+3. 모든 필드(`title`, `summary`, `materials`, `steps`, `fatalMistake`, `faqs`(`question`/`causeDiagnostic`/`resolution`), `shortsScript`, `outcome`(`title`/`description`/`svgFileName`/`svgLabels`), `svgLabels`)를 누락 없이 1:1 완벽 번역한다.
+4. **SVG 라벨 수 일치**: 각 스텝 및 `outcome`의 `svgLabels` 배열 요소 개수는 원본 SVG의 `<text>` 개수 및 한국어 원본과 정확히 일치해야 한다 (Suite 10 정적 감사 통과 조건).
 
 ---
 

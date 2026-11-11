@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "Womit kann ich Sonnenlicht bündeln, wenn ich weder eine Plastikflasche noch eine Getränkedose habe?",
-      "answer": "Jede durchsichtige Plastiktüte, jeder Gefrierbeutel und sogar klare Verpackungsfolie von Snacks funktioniert. Füllen Sie etwas klares Wasser in eine Ecke und drehen Sie das Plastik darüber fest zusammen, bis eine pralle, runde Wasserkugel wie eine Orange entsteht – diese Wasserkugel wirkt als starke Sammellinse. Ebenso eignen sich Lesebrillen (Weitsichtigkeits-Sammellinsen), der dicke gewölbte Boden einer zerbrochenen Glasflasche oder der ausgebaute Reflektorspiegel einer defekten Taschenlampe."
+      "causeDiagnostic": "Jede klare Folie, die sauberes Wasser in einer Kugelform hält, oder jede gewölbte Spiegelfläche kann Sonnenstrahlen in einem Brennpunkt bündeln.",
+      "resolution": "Jeder **transparente Plastikbeutel, Gefrierbeutel oder sogar eine klare Snackverpackung** funktioniert. Füllen Sie etwas klares Wasser in eine Ecke und drehen Sie das obere Ende fest zu, bis eine pralle, runde **Wasserkugel wie eine Orange** entsteht – diese wirkt als starke Sammellinse. Ebenso funktionieren **Lesebrillen (Sammellinsen bei Weitsichtigkeit), der dicke gewölbte Boden einer zerbrochenen Glasflasche oder der Parabolreflektor einer defekten Taschenlampe**."
     },
     {
       "question": "Womit kann ich den Dosenboden in der Wildnis polieren, wenn ich keine Zahnpasta habe?",
-      "answer": "Mischen Sie die feinste 'weiße Holzasche' einer kalten Feuerstelle mit wenigen Tropfen Wasser oder Speichel zu einer cremigen Paste und reiben Sie kräftig – die mikroskopischen Silikapartikel polieren Aluminium genauso spiegelblank wie Zahnpasta. Alternativ eignet sich feinster Ton-Schluff vom Flussufer mit anschließendem Trockenpolieren per Tuch, oder sogar ein Stückchen Schokolade, dessen Kakaopartikel und Fett das Metall auf Hochglanz polieren."
+      "causeDiagnostic": "Um die matte mikroskopische Oxidschicht auf Aluminium abzutragen, sind ultrafeine Mineralpartikel oder eine fetthaltige Polierpaste nötig.",
+      "resolution": "Mischen Sie feinste **weiße Holzasche** aus einem kalten Lagerfeuer mit ein paar Tropfen Wasser oder Speichel zu einer Paste und reiben Sie kräftig – die feinen Silikatpartikel polieren Aluminium wie Zahnpasta. Fehlt Asche, nutzen Sie **feinsten Flussuferschlamm** und polieren mit trockenem Stoff nach, oder reiben Sie ein Stück **Schokolade** auf das Metall, deren Kakaopartikel und Fett einen Spiegelglanz erzeugen."
     },
     {
       "question": "Warum steigt am Brennpunkt nur kurz etwas Rauch auf, ohne dass eine dauerhafte Glut entsteht?",
-      "answer": "Meist ist der Zunder zu hell oder noch leicht klamm. Helles Gras reflektiert das Licht; reiben Sie zwingend schwarzen Kohlenstaub, dunkle Asche oder dunkle Erde auf die Fokusstelle, damit die Hitze absorbiert wird. Zweitens entweicht die Wärme, wenn die Fasern zu lose einzeln liegen: Pressen Sie trockenen Beifuß- oder Rohrkolbenflaum zu einem dichten, erbsengroßen Kügelchen zusammen, damit sich die Hitze im Inneren staut und ein glühendes Kohlekorn bildet."
+      "causeDiagnostic": "Heller Zunder reflektiert über 70% des Sonnenlichts statt 400°C zu erreichen, und lockere Fasern lassen die Wärme sofort entweichen.",
+      "resolution": "Reiben Sie immer **schwarzen Kohlenstaub, dunkle Asche oder schwarzen Schlamm** auf die Zielstelle (oder zielen Sie auf eine bereits verkohlte Kante), damit über 90% der Sonnenwärme absorbiert werden. Lassen Sie den Zunder zudem nicht locker, sondern **pressen Sie trockenen Beifuß- oder Rohrkolbenflaum zu einem erbsengroßen, dichten Kügelchen**, damit sich die Hitze im Inneren zu einer roten Glut staut."
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "a42f5a8522780c40"
+  "contentHash": "258785c63f3ebd22",
+  "shortsScript": {
+    "hook": "Kein Feuerzeuggas mehr bei Winterstromausfall oder in der Wildnis? Entfachen Sie mit einer leeren Getränkedose und einer klaren Wasserflasche in 30 Sekunden eine 400-Grad-Glut!",
+    "body": "Erstens: Geben Sie etwas Zahnpasta oder feine Holzasche auf den gewölbten Boden einer Aludose und polieren Sie ihn 5 Minuten lang zum Parabolspiegel. Zweitens: Füllen Sie eine klare Plastikflasche blasenfrei mit Wasser, sodass die runde Flaschenschulter zur Wasserlupe wird. Drittens: Schwärzen Sie trockenen Pflanzenflaum mit Kohlenstaub gegen Lichtreflexion und halten Sie einen reiskorngroßen Sonnenbrennpunkt 30 Sekunden ruhig! Sobald die Glut glimmt, ab ins trockene Kiefernnadelnest und sanft zur Flamme pusten! Wasserflaschen danach immer in den Schatten legen!"
+  },
+  "outcome": {
+    "title": "Dosenboden-Parabolspiegel & Klarflaschen-Kugelwasserlinsen-400°C-Solarzündsystem",
+    "badge": "FINAL SPEC // PARABOLIC CAN MIRROR & WATER LENS SOLAR IGNITION",
+    "description": "Brennstoffloses optisches Feuerzündsystem: Ein mit Zahnpasta oder Holzasche auf über 90% Reflexion polierter Aluminiumdosen-Hohlspiegel und eine blasenfrei mit klarem Wasser gefüllte Flaschenschulter-Sammellinse bündeln Sonnenlicht auf einen 1–2mm Brennpunkt und entzünden geschwärzten Zunder im Zundernest binnen 30 Sekunden.",
+    "svgFileName": "pr29-outcome.svg",
+    "svgLabels": [
+      "PR-29 SYSTEM // BRENNSTOFFLOSES OPTISCHES SOLAR-FEUERZÜNDSYSTEM",
+      "STAGE 01: DOSENBODEN-HOHLSPIEGEL",
+      "Zahnpasta-/Aschepolitur auf Spiegelglanz",
+      "STAGE 02: KLARGEFÄSS-WASSERLINSE",
+      "Blasenfreies Wasser formt Brennpunkt",
+      "STAGE 03: REISKORN-FOKUS-ZÜNDUNG",
+      "1-2mm Fokus 30s ruhig für 400°C Glut",
+      "STAGE 04: ZUNDERNEST-SAUERSTOFFZUFUHR",
+      "Im Grasnest einhüllen & zur Flamme blasen",
+      "[KERNPRINZIP] Dosen-Hohlspiegel & Wasserlinse bündeln Sonne in 30s auf 400°C"
+    ]
+  },
+  "updatedAt": "2026-11-11T04:02:02+00:00"
 }

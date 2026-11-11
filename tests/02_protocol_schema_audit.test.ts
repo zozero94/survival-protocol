@@ -53,6 +53,63 @@ describe('📦 [Suite 2: 확장성] 전체 발행 프로토콜 데이터 무결�
       assert.ok(content.fatalMistake.title, `${file}: fatalMistake.title 누락`);
       assert.ok(content.fatalMistake.description, `${file}: fatalMistake.description 누락`);
       assert.ok(content.fatalMistake.consequence, `${file}: fatalMistake.consequence 누락`);
+
+      // 4. 완성 결과물 프리뷰(outcome) 필수성 및 도면 파일 실존 검증
+      const svgsDir = path.resolve(__dirname, '../content/svgs');
+      assert.ok(content.outcome, `${file}: outcome(완성 결과물 프리뷰) 누락`);
+      assert.ok(content.outcome.title, `${file}: outcome.title 누락`);
+      assert.ok(content.outcome.description, `${file}: outcome.description 누락`);
+      assert.ok(content.outcome.svgFileName, `${file}: outcome.svgFileName 누락`);
+      assert.ok(
+        fs.existsSync(path.join(svgsDir, content.outcome.svgFileName)),
+        `${file}: outcome 도면 파일 누락 -> content/svgs/${content.outcome.svgFileName}`
+      );
+
+      // 5. FAQ 트러블슈팅 스키마 무결성 검증 (question, causeDiagnostic, resolution 필수)
+      if (content.faqs) {
+        assert.ok(
+          Array.isArray(content.faqs) && content.faqs.length >= 2,
+          `${file}: faqs 배열은 최소 2개 이상의 항목을 포함해야 함`
+        );
+        content.faqs.forEach((faq: any, fIdx: number) => {
+          assert.ok(faq.question, `${file} [FAQ ${fIdx + 1}]: question 누락`);
+          assert.ok(
+            faq.causeDiagnostic,
+            `${file} [FAQ ${fIdx + 1}]: causeDiagnostic 누락 (answer 단일 필드 사용 금지)`
+          );
+          assert.ok(
+            faq.resolution,
+            `${file} [FAQ ${fIdx + 1}]: resolution 누락 (answer 단일 필드 사용 금지)`
+          );
+        });
+      }
+
+      // 6. 다국어 로케일 파일(6개국어)의 outcome 및 faqs 스키마 동기화 검증
+      const localesDir = path.resolve(__dirname, '../content/protocols/locales');
+      const baseSlug = file.replace(/\.json$/, '');
+      for (const lang of ['en', 'ja', 'es', 'de', 'pt', 'zh-TW']) {
+        const localeFile = `${baseSlug}.${lang}.json`;
+        const localePath = path.join(localesDir, localeFile);
+        if (fs.existsSync(localePath)) {
+          const localeContent = JSON.parse(fs.readFileSync(localePath, 'utf-8'));
+          assert.ok(localeContent.outcome, `${localeFile}: outcome 누락`);
+          assert.ok(localeContent.outcome.title, `${localeFile}: outcome.title 누락`);
+          assert.ok(localeContent.outcome.description, `${localeFile}: outcome.description 누락`);
+          if (localeContent.faqs) {
+            localeContent.faqs.forEach((faq: any, fIdx: number) => {
+              assert.ok(faq.question, `${localeFile} [FAQ ${fIdx + 1}]: question 누락`);
+              assert.ok(
+                faq.causeDiagnostic,
+                `${localeFile} [FAQ ${fIdx + 1}]: causeDiagnostic 누락 (answer 단일 필드 사용 금지)`
+              );
+              assert.ok(
+                faq.resolution,
+                `${localeFile} [FAQ ${fIdx + 1}]: resolution 누락 (answer 단일 필드 사용 금지)`
+              );
+            });
+          }
+        }
+      }
     });
   }
 });

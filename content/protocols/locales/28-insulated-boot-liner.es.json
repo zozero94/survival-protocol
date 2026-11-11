@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "¿Qué materiales naturales pueden sustituir el cartón o el papel de aluminio si no los tengo?",
-      "answer": "Apilar 2 o 3 láminas de corteza de abedul en el fondo del calzado crea una plantilla aislante excelente. La corteza contiene aceites impermeables de betulina y frena el frío del suelo. Si no tiene aluminio, use el interior plateado de bolsas de snacks vacías o coloque una capa de 2cm de agujas de pino secas y musgo seco."
+      "causeDiagnostic": "Para frenar el frío por conducción del suelo se necesita un aislante natural que no absorba agua y retenga aire bajo la planta.",
+      "resolution": "Coloque **2 o 3 capas de corteza de abedul** en el fondo del calzado como plantilla impermeable y aislante. La corteza de abedul contiene aceites naturales (betulina) que repelen el agua y frenan la escarcha. Si no tiene papel de aluminio, recorte el **interior metalizado de una bolsa de aperitivos** o rellene el fondo con **agujas de pino secas y musgo seco de 2 cm de grosor**."
     },
     {
       "question": "¿No es mejor atar la bolsa al tobillo muy apretada para que no entre aire frío?",
-      "answer": "En absoluto. Apretar la atadura corta la circulación de los vasos sanguíneos hacia los dedos. Sin el flujo de sangre tibia bombeada por el corazón, los dedos caen a temperaturas bajo cero rápidamente, sufriendo congelación grave en menos de 1 hora. Deje siempre la holgura de un dedo."
+      "causeDiagnostic": "Atar el tobillo con fuerza comprime las arterias y capilares que bajan hacia los dedos, bloqueando la circulación sanguínea.",
+      "resolution": "Si la sangre caliente del corazón no llega a los dedos, su temperatura cae bajo cero y provoca **congelación grave en solo 1 hora** aunque el interior esté aislado. Deje siempre **el espacio de una falange de dedo** entre el cordón y el tobillo para que la sangre fluya sin obstáculos."
     },
     {
       "question": "Mis botas ya están empapadas de barro helado; ¿meter este forro mantendrá mis pies secos de verdad?",
-      "answer": "Sí. La bolsa plástica exterior actúa como una barrera de vapor infranqueable, impidiendo que el agua helada de la bota moje el periódico seco y los calcetines. Sacuda las piedras filosas de la bota antes de calzarse para evitar pinchar el plástico."
+      "causeDiagnostic": "La bolsa plástica exterior actúa como una barrera impermeable total (Vapor Barrier) que aísla la humedad externa.",
+      "resolution": "Aunque la bota exterior esté empapada, **la membrana plástica impide al 100% que el agua helada penetre hacia el periódico y los calcetines secos**. Solo deslice el pie con suavidad para no rasgar el plástico y **retire antes cualquier piedrecilla o arena afilada del interior de la bota**."
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "c583f79cc83ca9d5"
+  "contentHash": "02d7f29c042a9c1b",
+  "shortsScript": {
+    "hook": "¡Si tus botas se mojan durante un apagón invernal o inundación, la congelación y el pie de trinchera te impedirán caminar en 2 horas! ¡Haz un forro térmico impermeable con bolsas plásticas, periódico y cartón!",
+    "body": "Primero corta dos capas de cartón un poco más grandes que tu pie, envuélvelas en papel de aluminio y ponlas en la bota para bloquear el 90% del frío del suelo. Ponte calcetines secos, envuelve los dedos y la planta con 4 hojas de periódico arrugadas y estiradas para crear un colchón de aire caliente. Cubre todo con una bolsa plástica sin agujeros, átala al tobillo dejando un dedo de holgura y cálzate la bota. ¡Cambia el periódico húmedo cada 3 horas!"
+  },
+  "outcome": {
+    "title": "Plantilla Aislante de Cartón Doble y Aluminio & Forro de Bota de 3 Capas con Colchón de Periódico y Barrera Impermeable",
+    "badge": "FINAL SPEC // 3-LAYER THERMAL & VAPOR BARRIER BOOT LINER",
+    "description": "Sistema sin energía contra congelación y pie de trinchera que bloquea más del 90% del frío del suelo mediante doble cartón corrugado y aluminio reflectante, absorbe el sudor con fibras de periódico arrugado manteniendo aire estático aislante y sella la humedad externa con una bolsa impermeable atada con holgura de un dedo.",
+    "svgFileName": "pr28-outcome.svg",
+    "svgLabels": [
+      "PR-28 COMPLETO // SISTEMA DE FORRO TÉRMICO E IMPERMEABLE PARA BOTAS",
+      "STAGE 01: PLANTILLA DOBLE CARTÓN Y ALUMINIO",
+      "Bloquea 90%+ del Frío del Suelo",
+      "STAGE 02: CALCETÍN + AIRE EN PERIÓDICO",
+      "Absorbe Sudor y Aísla con Aire Fijo",
+      "STAGE 03: CAPA IMPERMEABLE Y ATADO",
+      "Frena Agua Externa y Cuida el Riego",
+      "STAGE 04: RECAMBIO Y CHEQUEO VASCULAR",
+      "Evita Humedad y Congelación en Dedos",
+      "[PRINCIPIO CLAVE] Escudo Basal + Aire Absorbente + Barrera Impermeable Triple"
+    ]
+  },
+  "updatedAt": "2026-11-10T05:34:16+00:00"
 }

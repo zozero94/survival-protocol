@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "Como improvisar se não houver caixas de papelão nem papel-alumínio?",
-      "answer": "Casca de bétula é a melhor alternativa natural. 2 a 3 camadas de casca de bétula sob a sola isolam a friagem do solo e são impermeáveis graças aos óleos naturais (betulina). Se não tiver papel-alumínio, use a parte interna prateada de pacotes de salgadinhos ou forre o fundo do calçado com uma camada fofa de 2 cm de agulhas de pinheiro bem secas ou musgo seco."
+      "causeDiagnostic": "Para barrar o frio conduzido pelo chão, é preciso um isolante natural que não absorva água e retenha ar sob a planta do pé.",
+      "resolution": "Sobreponha **2 a 3 camadas de casca de bétula** no fundo da bota como palmilha impermeável e isolante. A casca de bétula é rica em óleos naturais (betulina) que repelem a água e bloqueiam o gelo do solo. Sem papel-alumínio, recorte a **parte interna metalizada de um pacote de salgadinho** ou forre o fundo com **agulhas de pinheiro secas e musgo seco com 2 cm de espessura**."
     },
     {
       "question": "Amarrar o tornozelo bem apertado não ajuda a vedar melhor contra a neve e o vento frio?",
-      "answer": "De jeito nenhum! Apertar o tornozelo bloqueia os vasos que irrigam as extremidades dos pés. Sem o sangue aquecido bombeado pelo coração, os dedos esfriam para temperaturas negativas em menos de 1 hora, causando congelamento severo. Deixe sempre a folga de um dedo indicador entre a amarração e a pele para o sangue circular livremente."
+      "causeDiagnostic": "Amarrar o tornozelo com força comprime as artérias e capilares que descem até os dedos, bloqueando a circulação sanguínea.",
+      "resolution": "Se o sangue quente do coração não chegar aos dedos, a temperatura deles cai abaixo de zero e causa **congelamento grave em apenas 1 hora**, mesmo com bom isolamento. Deixe sempre **a folga de uma falange de dedo** entre o cordão e o tornozelo para o sangue circular livremente."
     },
     {
       "question": "O forro funciona mesmo se a bota externa já estiver completamente encharcada de lama ou gelo?",
-      "answer": "Sim, com total eficácia. O saco plástico externo atua como uma barreira de vapor (Vapor Barrier) 100% impermeável. Mesmo que o calçado esteja ensopado de água congelante, o plástico impede que a umidade alcance o jornal seco e a meia. Certifique-se apenas de remover pedrinhas afiadas de dentro da bota para não furar a sacola plástica ao calçar."
+      "causeDiagnostic": "O saco plástico externo atua como uma barreira 100% impermeável (Vapor Barrier) que isola a umidade externa.",
+      "resolution": "Mesmo que a bota externa esteja encharcada, **a membrana plástica impede totalmente que a água gelada passe para o jornal e para as meias secas**. Basta deslizar o pé com cuidado para não rasgar o plástico e **limpar antes qualquer pedrinha ou areia afiada do fundo da bota**."
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "c583f79cc83ca9d5"
+  "contentHash": "02d7f29c042a9c1b",
+  "shortsScript": {
+    "hook": "Se suas botas molharem num apagão de inverno ou enchente, o congelamento e o pé de trincheira podem impedir você de andar em 2 horas! Faça um forro térmico impermeável com sacos plásticos, jornal e papelão!",
+    "body": "Primeiro corte duas camadas de papelão um pouco maiores que o pé, envolva em papel-alumínio e coloque no fundo da bota para bloquear 90% do frio do chão. Calce meias secas, envolva os dedos e a sola com 4 folhas de jornal amassadas e abertas para criar um colchão de ar quente. Cubra tudo com um saco plástico sem furos, amarre no tornozelo deixando um dedo de folga e calce a bota. Troque o jornal úmido a cada 3 horas!"
+  },
+  "outcome": {
+    "title": "Palmilha Isolante de Papelão Duplo e Alumínio & Forro de Bota de 3 Camadas com Colchão de Jornal e Barreira Impermeável",
+    "badge": "FINAL SPEC // 3-LAYER THERMAL & VAPOR BARRIER BOOT LINER",
+    "description": "Sistema sem energia contra congelamento e pé de trincheira que bloqueia mais de 90% do frio do solo com papelão ondulado duplo e alumínio refletivo, absorve o suor com fibras de jornal amassado mantendo ar estático isolante e veda a umidade externa com saco impermeável amarrado com folga de um dedo.",
+    "svgFileName": "pr28-outcome.svg",
+    "svgLabels": [
+      "PR-28 COMPLETO // SISTEMA DE FORRO TÉRMICO E IMPERMEÁVEL PARA BOTAS",
+      "STAGE 01: PALMILHA DUPLA E ALUMÍNIO",
+      "Bloqueia 90%+ do Frio do Chão",
+      "STAGE 02: MEIA + CAMADA DE AR EM JORNAL",
+      "Absorve Suor e Isola com Ar Parado",
+      "STAGE 03: CAPA IMPERMEÁVEL E AMARRAÇÃO",
+      "Barra Água Externa e Preserva Fluxo",
+      "STAGE 04: TROCA E CHECAGEM VASCULAR",
+      "Evita Suor Retido e Congelamento",
+      "[PRINCÍPIO CHAVE] Escudo Basal + Ar Absorvente + Barreira Impermeável Tripla"
+    ]
+  },
+  "updatedAt": "2026-11-10T05:34:16+00:00"
 }

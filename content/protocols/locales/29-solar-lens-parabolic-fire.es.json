@@ -218,17 +218,43 @@
   "faqs": [
     {
       "question": "¿Qué puedo usar para concentrar el sol si no tengo ni botella de plástico ni lata de aluminio?",
-      "answer": "Cualquier bolsa de plástico transparente, bolsa con cierre zip o incluso el envoltorio transparente de un paquete de galletas sirve. Vierta un poco de agua limpia en una esquina y retuerza con fuerza la parte superior hasta formar una bola de agua tensa y redonda como una naranja; esta esfera actúa como una excelente lupa convexa. También puede usar gafas de lectura para presbicia (lentes convexas), el fondo curvo de una botella de vidrio rota o el reflector parabólico desmontado de una linterna averiada."
+      "causeDiagnostic": "Cualquier película transparente que retenga agua limpia en curva esférica o superficie reflectante curva puede concentrar la luz solar.",
+      "resolution": "Cualquier **bolsa de plástico transparente, bolsa tipo zip o incluso el envoltorio transparente de unas galletas** sirve. Vierta un poco de agua limpia en una esquina y retuerza la parte superior con fuerza hasta formar una **bola de agua tensa como una naranja**, que actúa como lupa convexa. También sirven **gafas de lectura para presbicia (lentes convexas), el fondo curvo de una botella de vidrio rota o el reflector parabólico de una linterna averiada**."
     },
     {
       "question": "Si no tengo pasta de dientes en el bosque, ¿con qué puedo frotar el fondo de la lata para que brille como espejo?",
-      "answer": "Mezcle la 'ceniza blanca de madera' más fina de una hoguera apagada con unas gotas de agua o saliva hasta formar una pasta cremosa y frote con fuerza: sus micropartículas de sílice pulen el aluminio igual de bien que la pasta dental. Si tampoco hay ceniza, use barro de arcilla muy fino de la orilla de un río y luego limpie con tela seca, o incluso frote un trocito de chocolate sobre el metal, cuyos sólidos de cacao y grasa dejan un acabado de espejo."
+      "causeDiagnostic": "Para eliminar la capa microscópica de óxido del aluminio se requieren micropartículas minerales muy finas o una pasta abrasiva grasa.",
+      "resolution": "Mezcle la **ceniza blanca de madera** más fina de una hoguera apagada con unas gotas de agua o saliva hasta formar una crema y frote con fuerza: sus micropartículas de sílice pulen igual que la pasta dental. Si no hay ceniza, use **barro de arcilla muy fino de río** y luego limpie con tela seca, o frote un trocito de **chocolate** sobre el metal, cuyos sólidos de cacao y grasa dejan un acabado de espejo."
     },
     {
       "question": "¿Por qué el punto focal solo saca un hilo de humo y se apaga sin formar una brasa duradera?",
-      "answer": "La causa principal es que la yesca es de color claro o está ligeramente húmeda. La hierba seca pálida refleja la luz, por lo que es indispensable frotar polvo de carbón negro, ceniza oscura o barro negro en el punto donde incide el foco para absorber el calor. La segunda causa es que las fibras están demasiado sueltas y el calor se escapa; comprima la pelusa de artemisa o espadaña formando una bolita densa del tamaño de un guisante para que el calor quede atrapado y forme una brasa roja."
+      "causeDiagnostic": "La yesca clara refleja más del 70% de la luz solar sin llegar a 400°C, y las fibras sueltas dejan escapar el calor al aire.",
+      "resolution": "Frote siempre **polvo de carbón negro, ceniza oscura o barro negro** en el punto donde incide el foco (o apunte a un borde ya chamuscado) para absorber más del 90% del calor. Además, no deje las fibras sueltas: **comprima la pelusa de artemisa o espadaña formando una bolita densa del tamaño de un guisante** para retener el calor y formar una brasa roja."
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "a42f5a8522780c40"
+  "contentHash": "258785c63f3ebd22",
+  "shortsScript": {
+    "hook": "¿Te quedaste sin gas en el encendedor durante un apagón invernal o aislamiento? ¡Enciende fuego a 400 grados en 30 segundos con una lata vacía y una botella de agua!",
+    "body": "Primero, pon una gota de pasta dental o ceniza fina en el fondo cóncavo de una lata de aluminio y frota 5 minutos hasta crear un espejo parabólico. Segundo, llena una botella transparente con agua limpia sin burbujas para que su hombro redondo actúe como lupa. Tercero, frota carbón negro en pelusa seca para evitar reflejos y mantén un punto focal del tamaño de un grano de arroz durante 30 segundos. ¡Cuando brille la brasa, envuélvela en un nido de pino seco y sopla suave hasta encender la llama! ¡Guarda siempre la botella a la sombra!"
+  },
+  "outcome": {
+    "title": "Espejo Cóncavo Parabólico en Fondo de Lata & Lente Convexo de Agua en Botella para Ignición Solar a 400°C",
+    "badge": "FINAL SPEC // PARABOLIC CAN MIRROR & WATER LENS SOLAR IGNITION",
+    "description": "Sistema óptico de ignición sin combustible que combina el fondo cóncavo de una lata pulido con pasta dental o ceniza (90%+ reflectancia) y una lente esférica de agua sin burbujas en botella transparente para comprimir la luz solar en un foco de 1–2mm, encendiendo yesca ennegrecida con carbón y un nido doble de hierba seca en 30 segundos.",
+    "svgFileName": "pr29-outcome.svg",
+    "svgLabels": [
+      "PR-29 COMPLETO // SISTEMA SOLAR DE REFRACCIÓN Y REFLEXIÓN PARABÓLICA",
+      "STAGE 01: ESPEJO CÓNCAVO EN LATA",
+      "Pulido con Pasta/Ceniza a Brillo Espejo",
+      "STAGE 02: LENTE CONVEXO DE AGUA",
+      "Agua sin Burbujas Forma Foco Refractivo",
+      "STAGE 03: IGNICIÓN EN FOCO DE ARROZ",
+      "Foco 1-2mm Fijo 30s Alcanza 400°C",
+      "STAGE 04: OXÍGENO EN NIDO DE YESCA",
+      "Envolver en Nido Seco y Soplar a Llama",
+      "[PRINCIPIO CLAVE] Reflexión Cóncava y Lente de Agua Concentran 400°C en 30s"
+    ]
+  },
+  "updatedAt": "2026-11-11T04:02:02+00:00"
 }
