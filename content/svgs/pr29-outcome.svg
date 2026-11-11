@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg29out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="metal29out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="water29out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="fire29out" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <pattern id="grid29out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow29out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Frame -->
+  <rect width="800" height="450" fill="url(#bg29out)"/>
+  <rect width="800" height="450" fill="url(#grid29out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Top Header Banner -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#111827" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f8fafc" font-family="monospace" font-size="12" font-weight="bold">PR-29 완성체 // 무연료 광학 집광 굴절 및 오목 반사 태양열 발화 시스템</text>
+
+  <!-- 4-Stage Horizontal Cards -->
+  <g filter="url(#shadow29out)">
+    <!-- STAGE 01 Card -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+    <text x="34" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 캔 바닥 오목 반사경</text>
+
+    <!-- Visual 1: Tin can bottom polished into concave mirror -->
+    <circle cx="109" cy="195" r="48" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="109" cy="195" r="38" fill="url(#metal29out)" stroke="#e2e8f0" stroke-width="1.5"/>
+    <path d="M90,180 A22,22 0 0,1 128,180" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M95,215 A20,20 0 0,0 123,215" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="36" y="341" fill="#bae6fd" font-family="monospace" font-size="8.5">치약·나무재 연마로 거울 광택 확보</text>
+
+    <!-- STAGE 02 Card -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#06b6d4" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0891b2" stroke-width="1"/>
+    <text x="228" y="102" fill="#22d3ee" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 투명 용기 물 볼록렌즈</text>
+
+    <!-- Visual 2: Clear water vessel shoulder refraction -->
+    <rect x="291" y="132" width="24" height="14" rx="2" fill="#0284c7" stroke="#bae6fd" stroke-width="1.2"/>
+    <path d="M291,146 C265,160 265,205 270,245 L336,245 C341,205 341,160 315,146 Z" fill="url(#water29out)" stroke="#38bdf8" stroke-width="1.8"/>
+    <line x1="250" y1="165" x2="295" y2="180" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="250" y1="190" x2="295" y2="190" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="295" y1="180" x2="352" y2="205" stroke="#f97316" stroke-width="2"/>
+    <line x1="295" y1="190" x2="352" y2="205" stroke="#f97316" stroke-width="2"/>
+    <circle cx="352" cy="205" r="4.5" fill="#ef4444" stroke="#fde047" stroke-width="1.5"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="230" y="341" fill="#a5f3fc" font-family="monospace" font-size="8.5">기포 없는 맑은 물로 굴절 초점 형성</text>
+
+    <!-- STAGE 03 Card -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#d97706" stroke-width="1"/>
+    <text x="424" y="102" fill="#fbbf24" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 쌀알 크기 초점 점화</text>
+
+    <!-- Visual 3: Concentrated hot spot on dark char cloth / tinder -->
+    <polygon points="455,225 535,225 550,255 440,255" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="465" y1="135" x2="495" y2="238" stroke="#fde047" stroke-width="2"/>
+    <line x1="495" y1="130" x2="495" y2="238" stroke="#fde047" stroke-width="2"/>
+    <line x1="525" y1="135" x2="495" y2="238" stroke="#fde047" stroke-width="2"/>
+    <circle cx="495" cy="238" r="6" fill="#ef4444" stroke="#fde047" stroke-width="2"/>
+    <path d="M495,230 Q485,205 502,185 Q512,165 495,148" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3,2"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="424" y="341" fill="#fde68a" font-family="monospace" font-size="8.5">1~2mm 초점 30초 고정 400도 점화</text>
+
+    <!-- STAGE 04 Card -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#dc2626" stroke-width="1"/>
+    <text x="618" y="102" fill="#f87171" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 부싯깃 둥지 산소 공급</text>
+
+    <!-- Visual 4: Tinder nest with ember and flame -->
+    <ellipse cx="691" cy="235" rx="52" ry="22" fill="#451a03" stroke="#d97706" stroke-width="1.8" stroke-dasharray="5,2"/>
+    <path d="M691,235 C670,215 675,180 691,150 C707,180 712,215 691,235 Z" fill="url(#fire29out)" stroke="#fde047" stroke-width="1.2"/>
+    <circle cx="691" cy="228" r="7" fill="#fef08a"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="618" y="341" fill="#fecaca" font-family="monospace" font-size="8.5">마른 풀 둥지 감싸고 불어 화염 생성</text>
+  </g>
+
+  <!-- Bottom Summary Strip -->
+  <rect x="20" y="384" width="760" height="44" rx="3" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="36" y="411" fill="#ecfdf5" font-family="monospace" font-size="11" font-weight="bold">[완성 원리] 캔 바닥 오목 반사와 물 렌즈 볼록 굴절로 햇빛을 쌀알 크기로 모아 30초 만에 400℃ 불씨를 점화함</text>
+</svg>

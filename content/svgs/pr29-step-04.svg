@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg29s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="nest29s4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="flame29s4" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <pattern id="grid29s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow29s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg29s4)"/>
+  <rect width="400" height="400" fill="url(#grid29s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 04 // 새둥지 불쏘시개 안착 및 산소 공급 화염 점화</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="66" fill="#fef08a" font-family="monospace" font-size="10.5">마른 솔잎과 잘게 찢은 나무껍질로 주먹 크기 새둥지 만들기</text>
+
+  <!-- Main Illustration: Left (Placing ember into tinder nest & blowing) vs Right (Bursting into open flame) -->
+  <g filter="url(#shadow29s4)">
+    <!-- Left panel: Ember tucked inside fibrous tinder nest + gentle airflow -->
+    <rect x="24" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+    <ellipse cx="115" cy="182" rx="52" ry="26" fill="url(#nest29s4)" stroke="#d97706" stroke-width="1.8" stroke-dasharray="6,2"/>
+    <ellipse cx="115" cy="178" rx="26" ry="14" fill="#1e293b" stroke="#78350f" stroke-width="1.2"/>
+    <!-- Glowing red ember core -->
+    <circle cx="115" cy="178" r="9" fill="#ef4444" stroke="#fde047" stroke-width="2"/>
+    <circle cx="115" cy="178" r="4" fill="#ffffff"/>
+    <!-- Gentle breath air stream arrows from top-left -->
+    <path d="M40,125 L88,162 M80,162 L88,162 L85,154" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M52,115 L96,152 M88,152 L96,152 L93,144" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Thick white smoke rising -->
+    <path d="M128,165 Q145,145 135,125 Q128,110 148,100" fill="none" stroke="#cbd5e1" stroke-width="2.2" stroke-dasharray="4,2"/>
+
+    <!-- Right panel: Full ignition burst in tinder bundle -->
+    <rect x="206" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#ef4444" stroke-width="1.2"/>
+    <ellipse cx="291" cy="198" rx="54" ry="22" fill="url(#nest29s4)" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="5,2"/>
+    <!-- Outer flame -->
+    <path d="M291,200 C255,180 262,135 291,102 C320,135 327,180 291,200 Z" fill="url(#flame29s4)" stroke="#fde047" stroke-width="1.5"/>
+    <!-- Inner bright core -->
+    <path d="M291,198 C275,182 278,155 291,132 C304,155 307,182 291,198 Z" fill="#fef08a"/>
+    <!-- Kindling twigs arranged over flame -->
+    <line x1="245" y1="212" x2="285" y2="145" stroke="#b45309" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="337" y1="212" x2="297" y2="145" stroke="#b45309" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="271" fill="#bae6fd" font-family="monospace" font-size="10.5">연기 나는 불씨를 둥지 중앙에 넣고 살짝 감싸 산소 통로 확보</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="305" fill="#fecaca" font-family="monospace" font-size="10.5">두 뼘 거리에서 길고 부드럽게 입바람을 불어 활활 타는 불길 생성</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 불씨에 완만한 산소를 불어넣어 발화 온도 이상으로 승온</text>
+</svg>

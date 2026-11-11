@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-29",
+  "category": "SHELTER",
+  "title": "Cómo Encender Fuego sin Cerillas Usando una Botella de Agua como Lente y el Fondo de una Lata Pulida como Espejo Cóncavo",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Ingeniería de Ignición Solar a 400°C sin Combustible mediante Refracción Convexa y Reflexión Parabólica Cóncava]",
+  "summary": "Si ya dispone de un encendedor turbo a prueba de viento, cerillas impermeables, una barra de ferrocerio (pedernal) o una lupa de cristal en su refugio o mochila de emergencia, utilice siempre ese equipo comercial en primer lugar por ser el método más rápido y seguro. Sin embargo, cuando el aislamiento prolongado o las inundaciones agotan el gas del encendedor y mojan las cerillas, o cuando el agotamiento físico impide usar el [Taladro de Arco por Fricción](/protocol-02), puede concentrar la luz del sol en un día despejado para crear una brasa sin esfuerzo. Puliendo el fondo cóncavo de una lata de aluminio con pasta de dientes o ceniza fina hasta convertirlo en un espejo parabólico, o llenando una botella transparente lisa (o bolsa plástica) con agua limpia sin burbujas para formar una lente convexa, basta con enfocar un punto de luz del tamaño de un grano de arroz (1–2 mm) sobre yesca ennegrecida durante 30 segundos para obtener una brasa a más de 400 °C sin gastar una sola gota de combustible.",
+  "timeRequired": "5–10 min para pulir el espejo de lata / 1 min para la lente de agua / 30 seg para la ignición solar",
+  "successRate": "98% (bajo cielo despejado entre las 10:00 y las 15:00 + yesca ennegrecida con carbón + foco de 1–2 mm fijo durante 30 s)",
+  "difficulty": "Principiante (Ejecutable de inmediato sin herramientas especiales usando una lata vacía, pasta dental/ceniza, botella o bolsa transparente y agua limpia)",
+  "outputPerHour": "Brasas ilimitadas a más de 400 °C sin consumo de combustible en días soleados para esterilizar agua y calentar el refugio",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Lata de Bebida de Aluminio Vacía y una Pizca de Pasta de Dientes (o Ceniza Blanca Fina de Madera / Chocolate / Lodo Fino)",
+      "desc": "La cúpula cóncava en la base de una lata de aluminio es un espejo parabólico natural que concentra el sol en un solo punto. Frotar la capa opaca de óxido con pasta de dientes o ceniza blanca fina de un [Fogón Primitivo de Barro](/protocol-06) mezclada con unas gotas de agua restaura un brillo de espejo idéntico al del [Silbato de 120dB y Espejo de Señales](/protocol-27)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Botella de Plástico Transparente Lisa sin Estrías (o Bolsa Plástica Transparente) y Agua Cristalina",
+      "desc": "Una lente convexa líquida que aprovecha el índice de refracción del agua (aprox. 1,33) para curvar y concentrar la luz solar. Llenar sin burbujas el hombro superior redondeado de una botella lisa con agua limpia filtrada con el [Filtro de Carbón y Arena](/protocol-01) o el [Sifón de Toalla de Algodón](/protocol-23) crea una potente lupa esférica."
+    },
+    {
+      "id": "mat-03",
+      "name": "Yesca Ennegrecida Absorbente de Luz: Pelusa de Artemisa o Espadaña Seca Frotada con Polvo de Carbón (o Tela Carbonizada / Papel Ennegrecido)",
+      "desc": "El papel higiénico blanco o la hierba seca clara reflejan más del 80 % de la luz solar y no arden. Frotar polvo de carbón negro de un [Horno de Carbón en Pozo](/protocol-09) sobre pelusa seca de artemisa, espadaña o algodón garantiza más del 95 % de absorción térmica solar, generando humo en 10 segundos."
+    },
+    {
+      "id": "mat-04",
+      "name": "Nido de Yesca Fibrosa: Agujas de Pino Secas, Corteza de Abedul Desmenuzada, Hierba Seca y Fibras de Cartón",
+      "desc": "Un nido poroso que alimenta de oxígeno la pequeña brasa hasta convertirla en llama abierta. Moldee hierba seca frotada a mano, agujas de pino o fibras de papel de una [Colchoneta Térmica de Cartón en 3 Capas](/protocol-22) formando un nido de pájaro del tamaño de un puño."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Pulir el fondo cóncavo de una lata vacía con pasta de dientes (o ceniza fina) hasta crear un espejo reflector",
+      "description": "1. **Preparar la base cóncava de la lata**: Voltee una lata de aluminio vacía, verifique que la cúpula cóncava del fondo no tenga abolladuras y limpie cualquier resto de tierra o polvo.\n2. **Aplicar una pizca del tamaño de un guisante de pasta dental o ceniza**: Aplique **una gota del tamaño de un guisante de pasta de dientes** en el centro del fondo. En la naturaleza sin pasta dental, mezcle **ceniza blanca muy fina de leña (o limo de arcilla fino) con unas gotas de agua hasta formar una crema espesa**.\n3. **Frotar en círculos durante 5 minutos con un paño seco**: Envuelva su pulgar con un paño de algodón seco o el borde de una camiseta y frote **con fuerza dibujando pequeños círculos desde el centro hacia afuera durante al menos 5 minutos**. Saldrá un residuo negro de óxido a medida que el metal brille.\n4. **Comprobar el reflejo nítido de espejo**: Limpie la superficie con una esquina limpia del paño y compruebe que **sus ojos y nariz se reflejen con total nitidez como en un espejo real**.",
+      "actionNote": "> Por qué debe pulir el fondo cóncavo y no el lateral plano de la lata: Una superficie plana solo rebota la luz sin concentrarla, mientras que el cuenco cóncavo recoge todos los rayos solares que tocan su superficie y los concentra en un único foco ardiente a más de 400 °C.",
+      "svgFileName": "pr29-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // PULIDO A ESPEJO DEL FONDO CÓNCAVO DE LATA",
+        "Aplicar una pizca de pasta dental o ceniza fina en el fondo",
+        "Frotar en círculos con paño seco por 5 min quitando óxido",
+        "Lograr acabado espejo (>85% de reflexión especular)",
+        "[CLAVE] El fondo cóncavo concentra el calor solar en 1 punto"
+      ],
+      "deepDive": {
+        "badge": "PARABOLIC MIRROR POLISHING & SPECULAR REFLECTANCE",
+        "title": "Micropulido de Óxido de Aluminio (Al2O3) y Mecánica de Concentración del Reflector Parabólico",
+        "text": "El fondo de las latas de bebida tiene una cúpula cóncava esférica (radio de 30–35 mm) para soportar la presión interna. Al pulir la capa mate de óxido de aluminio con el carbonato de calcio (CaCO3) de la pasta dental o las micropartículas de sílice de la ceniza de madera (grano de 5–15 μm), **la reflectancia especular sube del 40 % a más del 85 %**, creando un colector solar parabólico con distancia focal de 4–5 cm.",
+        "fieldSpecs": [
+          {
+            "name": "Colector Parabólico Cóncavo de Base de Lata Pulido con Pasta Dental o Ceniza",
+            "scientificName": "Polished Aluminum Concave Dome Parabolic Solar Collector",
+            "categoryTag": "Eliminación de Óxido / 85% de Enfoque Especular",
+            "imageFileName": "id-can-bottom-parabolic-mirror.jpg",
+            "hudCode": "FIG. SHELTER-29A // MACRO OPTIC",
+            "hudStatus": "REFLECTANCE: > 85% MIRROR GRADE",
+            "traits": [
+              {
+                "label": "Abrasivo/Pasta",
+                "value": "Use una pizca de pasta dental o **ceniza blanca fina mezclada con agua**."
+              },
+              {
+                "label": "Frotado/Giro",
+                "value": "Frote con firmeza **haciendo círculos pequeños durante 5 minutos** con tela seca."
+              },
+              {
+                "label": "Brillo/Control",
+                "value": "El fondo debe **reflejar claramente sus pupilas** para concentrar calor suficiente."
+              }
+            ],
+            "fieldUse": "Encendedor solar irrompible y sin combustible fabricado con una simple lata de bebida desechada"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Llenar una botella transparente con agua limpia sin burbujas para formar una lente convexa (o bolsa de agua)",
+      "description": "1. **Elegir un envase transparente liso y redondeado**: Retire todas las etiquetas y elija una **botella de plástico transparente cuya parte superior (hombro) sea redondeada como una esfera y sin estrías**. Evite botellas cuadradas o con muchas ranuras.\n2. **Llenar hasta el borde sin burbujas de aire**: Vierta **agua totalmente transparente y sin sedimentos hasta el borde mismo de la boca** y cierre el tapón con fuerza para que no quede ninguna burbuja de aire adentro.\n3. **Alternativa con bolsa plástica (esfera de agua retorcida)**: Si solo tiene una bolsa plástica transparente o bolsa zip, vierta unos tragos de agua limpia en una esquina y **retuerza con fuerza la parte superior hasta formar una bola de agua tensa y redonda del tamaño de un puño**.\n4. **Comprobar el haz de luz refractado**: Exponga el hombro redondeado de la botella (o la esfera de la bolsa) al sol y verifique que proyecte un cono de luz brillante hacia el suelo.",
+      "actionNote": "> Por qué las burbujas de aire o el agua turbia impiden encender fuego: Las burbujas o partículas de tierra provocan dispersión óptica, haciendo que los rayos solares reboten en todas direcciones y el calor se pierda en lugar de concentrarse en un punto.",
+      "svgFileName": "pr29-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // LLENADO DE AGUA CLARA Y LENTE CONVEXA",
+        "Llenar un envase transparente liso hasta el tope con agua clara",
+        "Eliminar todas las burbujas y cerrar el tapón con firmeza",
+        "Usar el hombro curvo (o bolsa esférica) para refractar el sol",
+        "[CLAVE] Índice de refracción (1,33) + curva = lupa convergente"
+      ],
+      "deepDive": {
+        "badge": "SPHERICAL WATER REFRACTION & CONVEX LENS OPTICS",
+        "title": "Índice de Refracción Líquida (n=1,333) y Minimización de la Aberración Esférica",
+        "text": "Cuando la luz pasa del aire (n=1,00) al agua (n=1,333), la Ley de Snell curva los rayos hacia el interior siguiendo la superficie esférica. Mientras que el cuerpo cilíndrico solo enfoca una línea, **el hombro superior abovedado de la botella o una bolsa plástica retorcida en esfera actúa como una lente biconvexa 3D**, convergiendo los rayos solares paralelos en un foco de 1–2 mm.",
+        "fieldSpecs": [
+          {
+            "name": "Lente Esférica sin Burbujas de Hombro de Botella Transparente y Bolsa de Agua",
+            "scientificName": "Bubble-Free Aqueous Spherical Convex Refracting Lens",
+            "categoryTag": "Enfoque por Refracción n=1,33 / Cero Dispersión",
+            "imageFileName": "id-pet-bottle-water-lens.jpg",
+            "hudCode": "FIG. SHELTER-29B // MACRO OPTIC",
+            "hudStatus": "REFRACTION INDEX: n = 1.333 OPTIMAL",
+            "traits": [
+              {
+                "label": "Envase/Curva",
+                "value": "Use el **hombro superior redondeado junto al cuello**, no el cuerpo recto."
+              },
+              {
+                "label": "Claridad/Aire",
+                "value": "Llene con **agua cristalina hasta el borde** sin dejar burbujas de aire."
+              },
+              {
+                "label": "Bolsa/Opción",
+                "value": "Retuerza agua en la **esquina de una bolsa transparente** hasta formar una bola."
+              }
+            ],
+            "fieldUse": "Lupa líquida instantánea hecha en 1 minuto con una cantimplora transparente o bolsa cuando no hay latas disponibles"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Enfocar un punto de luz del tamaño de un grano de arroz (1–2 mm) sobre yesca ennegrecida durante 30 segundos",
+      "description": "1. **Ennegrecer la yesca con polvo de carbón o tierra oscura**: Frote **polvo de carbón negro de roble (o ceniza oscura / barro negro)** sobre pelusa seca de artemisa, espadaña o papel higiénico desmenuzado. El color negro absorbe el calor solar como una esponja.\n2. **Alinear perpendicularmente al sol**: Entre las 10:00 y las 15:00 en un lugar soleado y protegido del viento, coloque la lente de agua o el espejo de lata **totalmente perpendicular (a 90 grados) respecto a los rayos del sol**.\n3. **Ajustar la distancia hasta lograr un punto brillante de 1–2 mm**:\n- **Con lente de agua**: Coloque la yesca en el suelo y sostenga el hombro de la botella a 2–3 falanges (5–8 cm) de altura, ajustando hasta que **el punto más pequeño y deslumbrante (del tamaño de un grano de arroz)** caiga sobre la yesca.\n- **Con espejo de lata**: Apunte el fondo cóncavo hacia el sol y sostenga una pizca de yesca negra en la punta de una ramita a 2 falanges (4–5 cm) frente al centro del espejo.\n4. **Apoyar la muñeca en una roca y mantener fijo 30 segundos**: Apoye firmemente la muñeca sobre una piedra o su rodilla para que el punto no tiemble. En 15–30 segundos saldrá humo blanco y nacerá una brasa roja incandescente.",
+      "actionNote": "> Por qué el papel blanco o la hierba clara no se encienden: Las superficies blancas reflejan más del 80 % de la luz solar sin calentarse. En cambio, la yesca ennegrecida con carbón absorbe más del 95 % de la energía luminosa, superando los 400 °C en segundos.",
+      "svgFileName": "pr29-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ENFOQUE DE 1-2MM Y FIJACIÓN POR 30 SEGUNDOS",
+        "Alinear en ángulo recto al sol y ajustar distancia focal",
+        "Proyectar punto de 1-2mm sobre yesca ennegrecida con carbón",
+        "Apoyar muñeca en roca y mantener fijo 30s hasta ver humo",
+        "[CLAVE] La yesca negra absorbe 95% del calor llegando a 400°C"
+      ],
+      "deepDive": {
+        "badge": "BLACKBODY ABSORPTIVITY & FOCAL IRRADIANCE",
+        "title": "Absortividad de Cuerpo Negro (95%) y Mecánica de Densidad de Flujo Térmico Focal",
+        "text": "La irradiancia solar en un día despejado es de unos 1.000 W/m². Al comprimir la luz captada por un diámetro de 60 mm en **un foco de 1,5 mm del tamaño de un grano de arroz (relación de área de 1.600:1)**, la densidad de flujo térmico se multiplica a cientos de kW/m². Al colocar **tela carbonizada o fibras con carbón (absortividad >0,95)**, se alcanza la temperatura de pirólisis de la celulosa (380–420 °C) en 15–30 segundos.",
+        "fieldSpecs": [
+          {
+            "name": "Yesca Ennegrecida con Carbón e Ignición de Brasa con Foco Solar de 1,5 mm",
+            "scientificName": "High-Absorptivity Carbonized Tinder & Solar Focal Hotspot",
+            "categoryTag": "95% Absorción de Cuerpo Negro / Compresión 1.600x",
+            "imageFileName": "id-solar-focal-point-ignition.jpg",
+            "hudCode": "FIG. SHELTER-29C // MACRO OPTIC",
+            "hudStatus": "FOCAL TEMP: > 420°C IGNITION",
+            "traits": [
+              {
+                "label": "Negro/Capa",
+                "value": "Frote **polvo de carbón negro o ceniza oscura** para evitar que la luz rebote."
+              },
+              {
+                "label": "Foco/Tamaño",
+                "value": "Ajuste la altura hasta que el punto tenga **el tamaño de un grano de arroz (1–2 mm)**."
+              },
+              {
+                "label": "Pulso/Apoyo",
+                "value": "Apoye la muñeca en una roca **durante 30 segundos sin temblar**."
+              }
+            ],
+            "fieldUse": "Etapa central que genera una brasa viva utilizando únicamente luz solar y fibras naturales oscurecidas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Colocar la brasa humeante en un nido de agujas de pino secas y soplar suavemente hasta levantar llama",
+      "description": "1. **Preparar de antemano un nido de yesca del tamaño de un puño**: Antes de encender, reúna agujas de pino muy secas, hierba seca desmenuzada a mano o tiras finas de corteza de abedul y déles forma de **nido de pájaro con un hueco en el centro**.\n2. **Asentar con cuidado la brasa en el centro del nido**: Cuando el humo blanco sea denso y la brasa roja tenga el tamaño de una uña, retire la lente y **coloque suavemente la brasa en el centro del nido**, arropándola ligeramente con las fibras exteriores.\n3. **Sostener a la altura del pecho y soplar largo y suave**: Sujete el nido con ambas manos a la altura del pecho y sople **de forma larga, constante y suave ('fuuu—') desde dos palmos (30–40 cm) de distancia**.\n4. **Depositar en el fogón al surgir la llama y añadir ramitas**: Cuando el humo se vuelva espeso y brote la llama roja, deposite de inmediato el nido ardiente en el [Fogón Primitivo de Barro](/protocol-06) o en la [Estufa de Gas de Madera de Doble Lata](/protocol-12) y apile ramitas secas encima.",
+      "actionNote": "> Por qué soplar fuerte y de cerca apaga la brasa: Una brasa recién creada mantiene su calor al límite; un soplido brusco dispersa la ceniza incandescente o la enfría de golpe. Soplar suave y largo aporta oxígeno continuo para que el fuego crezca por sí solo.",
+      "svgFileName": "pr29-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TRASLADO AL NIDO DE YESCA Y SOPLADO DE OXÍGENO",
+        "Armar un nido del tamaño de un puño con pino y corteza seca",
+        "Poner la brasa humeante en el centro y envolver sin apretar",
+        "Soplar largo y suave desde 30-40 cm hasta levantar llama",
+        "[CLAVE] El flujo suave de oxígeno eleva la brasa a >600°C"
+      ],
+      "deepDive": {
+        "badge": "TINDER BUNDLE CONVECTION & OXYGEN STOICHIOMETRY",
+        "title": "Estequiometría de Oxígeno en el Nido Fibroso y Transición de Brasa a Llama",
+        "text": "La yesca encendida por el sol comienza en **combustión sin llama (Smoldering, 400–500 °C)**. Al aislarla dentro de fibras secas de alta superficie específica (agujas de pino, espadaña, corteza de abedul) e inyectar un flujo suave de aire de 1–2 m/s (~16 % de O2), el calor exotérmico se acumula hasta que **la temperatura interna supera los 600 °C, inflamando súbitamente los gases de pirólisis en llama abierta**.",
+        "fieldSpecs": [
+          {
+            "name": "Nido de Agujas de Pino y Corteza de Abedul con Transición a Llama por Oxígeno",
+            "scientificName": "Fibrous Tinder Nest & Smoldering-to-Flaming Transition",
+            "categoryTag": "Convección Forzada de Oxígeno / Llama a 600°C",
+            "imageFileName": "id-tinder-nest-ember-ignition.jpg",
+            "hudCode": "FIG. SHELTER-29D // MACRO OPTIC",
+            "hudStatus": "FLAME TRANSITION: > 600°C ACTIVE",
+            "traits": [
+              {
+                "label": "Nido/Esponjoso",
+                "value": "Ahueque la hierba seca y el pino **como algodón de azúcar** para que pase el aire."
+              },
+              {
+                "label": "Soplo/Ritmo",
+                "value": "Sople **hilos de aire largos y suaves desde 30–40 cm** para avivar la brasa."
+              },
+              {
+                "label": "Manos/Seguridad",
+                "value": "Baje el nido al **fondo del fogón justo antes de que brote la llamarada**."
+              }
+            ],
+            "fieldUse": "Proceso final que convierte una diminuta brasa solar en una hoguera completa para hervir agua y calentar el refugio"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Mirar fijamente el punto focal deslumbrante a simple vista o dejar una botella llena de agua sobre hierba seca",
+    "description": "El punto focal de 1–2 mm concentra radiación UV e infrarroja tan intensa como mirar directamente al sol; observarlo fijamente durante varios segundos provoca quemaduras fotoquímicas en la retina y pérdida de visión. Además, dejar una botella transparente con agua sobre hojas secas o la lona del refugio tras encender el fuego hará que el movimiento del sol cree un foco automático, desatando un incendio forestal o destruyendo su campamento.",
+    "consequence": "Lesión ocular en la retina e incendio accidental del refugio o del bosque",
+    "prevention": "Mire el punto brillante solo un instante para ajustar su tamaño mínimo y luego dirija la vista al humo; guarde de inmediato las botellas de agua y espejos a la sombra o cúbralos con ropa tras usarlos."
+  },
+  "faqs": [
+    {
+      "question": "¿Qué puedo usar para concentrar el sol si no tengo ni botella de plástico ni lata de aluminio?",
+      "answer": "Cualquier bolsa de plástico transparente, bolsa con cierre zip o incluso el envoltorio transparente de un paquete de galletas sirve. Vierta un poco de agua limpia en una esquina y retuerza con fuerza la parte superior hasta formar una bola de agua tensa y redonda como una naranja; esta esfera actúa como una excelente lupa convexa. También puede usar gafas de lectura para presbicia (lentes convexas), el fondo curvo de una botella de vidrio rota o el reflector parabólico desmontado de una linterna averiada."
+    },
+    {
+      "question": "Si no tengo pasta de dientes en el bosque, ¿con qué puedo frotar el fondo de la lata para que brille como espejo?",
+      "answer": "Mezcle la 'ceniza blanca de madera' más fina de una hoguera apagada con unas gotas de agua o saliva hasta formar una pasta cremosa y frote con fuerza: sus micropartículas de sílice pulen el aluminio igual de bien que la pasta dental. Si tampoco hay ceniza, use barro de arcilla muy fino de la orilla de un río y luego limpie con tela seca, o incluso frote un trocito de chocolate sobre el metal, cuyos sólidos de cacao y grasa dejan un acabado de espejo."
+    },
+    {
+      "question": "¿Por qué el punto focal solo saca un hilo de humo y se apaga sin formar una brasa duradera?",
+      "answer": "La causa principal es que la yesca es de color claro o está ligeramente húmeda. La hierba seca pálida refleja la luz, por lo que es indispensable frotar polvo de carbón negro, ceniza oscura o barro negro en el punto donde incide el foco para absorber el calor. La segunda causa es que las fibras están demasiado sueltas y el calor se escapa; comprima la pelusa de artemisa o espadaña formando una bolita densa del tamaño de un guisante para que el calor quede atrapado y forme una brasa roja."
+    }
+  ],
+  "createdAt": "2026-11-11T03:46:46.687Z",
+  "contentHash": "a42f5a8522780c40"
+}

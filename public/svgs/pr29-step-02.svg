@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg29s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="water29s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.35"/>
+    </linearGradient>
+    <pattern id="grid29s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow29s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg29s2)"/>
+  <rect width="400" height="400" fill="url(#grid29s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#06b6d4" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 투명 용기 윗부분 맑은 물 채우기 및 볼록 렌즈 형성</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">무늬 없는 둥근 투명 용기에 맑은 물을 끝까지 가득 채우기</text>
+
+  <!-- Main Illustration: Left (Vessel Shoulder Convex Lens) vs Right (Spherical Water Pouch Lens) -->
+  <g filter="url(#shadow29s2)">
+    <!-- Left panel: Clear vessel upper shoulder refraction -->
+    <rect x="24" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <!-- Cap -->
+    <rect x="97" y="102" width="24" height="14" rx="2" fill="#0284c7" stroke="#bae6fd" stroke-width="1.5"/>
+    <!-- Rounded upper dome & body -->
+    <path d="M97,116 C68,132 68,175 72,222 L146,222 C150,175 150,132 121,116 Z" fill="url(#water29s2)" stroke="#38bdf8" stroke-width="1.8"/>
+    <!-- Sunlight rays refracting through shoulder -->
+    <line x1="34" y1="130" x2="88" y2="148" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="34" y1="158" x2="88" y2="162" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="88" y1="148" x2="172" y2="182" stroke="#f97316" stroke-width="2"/>
+    <line x1="88" y1="162" x2="172" y2="182" stroke="#f97316" stroke-width="2"/>
+    <circle cx="172" cy="182" r="4.5" fill="#ef4444" stroke="#fde047" stroke-width="1.5"/>
+
+    <!-- Right panel: Clear water pouch twisted into sphere -->
+    <rect x="206" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#06b6d4" stroke-width="1.2"/>
+    <!-- Twisted top knot -->
+    <polygon points="281,106 301,106 295,124 287,124" fill="#64748b" stroke="#cbd5e1" stroke-width="1.2"/>
+    <!-- Spherical water bulb -->
+    <circle cx="291" cy="164" r="40" fill="url(#water29s2)" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M268,144 A28,28 0 0,1 305,138" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <!-- Converging rays below sphere -->
+    <line x1="265" y1="195" x2="291" y2="225" stroke="#f97316" stroke-width="2"/>
+    <line x1="317" y1="195" x2="291" y2="225" stroke="#f97316" stroke-width="2"/>
+    <circle cx="291" cy="225" r="4.5" fill="#ef4444" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">용기 내부 기포를 완전히 빼고 뚜껑을 닫아 구면 굴절 확보</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="305" fill="#bae6fd" font-family="monospace" font-size="10.5">둥근 어깨 곡면(또는 물주머니 구체)으로 태양광 볼록 굴절</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 물의 굴절률(1.33)과 둥근 곡면이 만나 돋보기 렌즈 작동</text>
+</svg>

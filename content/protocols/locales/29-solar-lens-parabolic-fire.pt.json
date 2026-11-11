@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-29",
+  "category": "SHELTER",
+  "title": "Como Fazer Fogo sem Fósforos Usando uma Lente de Garrafa de Água e Espelho Côncavo de Fundo de Lata (Ignição Solar Óptica)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Engenharia de Ignição Solar a 400°C sem Combustível via Refração Convexa e Reflexão Parabólica Côncava]",
+  "summary": "Se você já possui um isqueiro maçarico à prova de vento, fósforos impermeáveis, uma pederneira de ferrocério ou uma lupa de vidro em seu abrigo ou mochila de emergência, utilize sempre esse equipamento pronto em primeiro lugar por ser o método mais seguro e rápido. Contudo, quando o isolamento prolongado ou enchentes esgotam o gás do isqueiro e molham os fósforos, ou quando a exaustão física impede o uso do [Arco de Pua por Fricção](/protocol-02), você pode concentrar a energia do sol em um dia limpo para criar uma brasa sem esforço. Polindo o fundo côncavo de uma lata de alumínio com pasta de dente ou cinza fina até transformá-lo em um espelho parabólico, ou enchendo uma garrafa plástica transparente lisa (ou saco plástico) com água limpa sem bolhas para formar uma lente convexa, basta focar um ponto de luz do tamanho de um grão de arroz (1–2 mm) sobre uma isca escurecida por 30 segundos para obter uma brasa a mais de 400 °C sem gastar uma única gota de combustível.",
+  "timeRequired": "5–10 min para polir o espelho da lata / 1 min para a lente de água / 30 seg para a ignição solar",
+  "successRate": "98% (sob céu limpo entre 10h e 15h + isca escurecida com carvão + foco de 1–2 mm firme por 30 s)",
+  "difficulty": "Iniciante (Executável imediatamente sem ferramentas especiais usando lata vazia, pasta de dente/cinza, garrafa/saco transparente e água limpa)",
+  "outputPerHour": "Brasas ilimitadas acima de 400 °C com consumo zero de combustível sob sol claro para esterilizar água e aquecer abrigos",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Lata de Bebida de Alumínio Vazia e uma Gota de Pasta de Dente (ou Cinza Branca Fina de Madeira / Chocolate / Argila Fina)",
+      "desc": "A cúpula côncava no fundo de uma lata de alumínio é um espelho parabólico natural que concentra a luz solar em um único ponto. Polir a camada fosca de óxido com pasta de dente ou cinza branca fina de uma [Fornalha Primitiva de Barro](/protocol-06) misturada com algumas gotas de água restaura um brilho espelhado idêntico ao do [Apito de 120dB e Espelho de Sinalização](/protocol-27)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Garrafa PET Transparente Lisa sem Frisos (ou Saco Plástico Transparente) e Água Cristalina",
+      "desc": "Uma lente convexa líquida que usa o índice de refração da água (aprox. 1,33) para curvar e concentrar a luz do sol. Encher sem bolhas o ombro superior arredondado de uma garrafa lisa com água limpa filtrada pelo [Filtro de Carvão e Areia](/protocol-01) ou pelo [Sifão de Toalha de Algodão](/protocol-23) cria uma potente lupa esférica."
+    },
+    {
+      "id": "mat-03",
+      "name": "Isca de Fogo Escurecida Absorvente de Luz: Penugem Seca de Artemísia ou Taboa Esfregada com Pó de Carvão (ou Pano Carbonizado / Papel Escurecido)",
+      "desc": "Papel higiênico branco ou capim seco claro refletem mais de 80% da luz solar e não pegam fogo. Esfregar pó de carvão preto de um [Forno de Carvão em Fosso](/protocol-09) sobre penugem seca de artemísia, taboa ou algodão garante mais de 95% de absorção térmica solar, gerando fumaça em 10 segundos."
+    },
+    {
+      "id": "mat-04",
+      "name": "Ninho de Isca Fibrosa: Agulhas de Pinheiro Secas, Casca de Bétula Desfiada, Capim Seco e Fibras de Papelão",
+      "desc": "Um ninho poroso que alimenta de oxigênio a pequena brasa até transformá-la em chama aberta. Modele capim seco esfregado à mão, agulhas de pinheiro ou fibras de papel de um [Isolante Térmico de Papelão em 3 Camadas](/protocol-22) no formato de um ninho de pássaro do tamanho de um punho."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Polir o fundo côncavo de uma lata vazia com pasta de dente (ou cinza fina) até criar um espelho refletor",
+      "description": "1. **Preparar a base côncava da lata**: Vire uma lata de alumínio vazia de cabeça para baixo, verifique se a cúpula côncava do fundo não tem amassados e limpe qualquer terra ou poeira.\n2. **Aplicar uma gota do tamanho de uma ervilha de pasta de dente ou cinza**: Coloque **uma gota do tamanho de uma ervilha de pasta de dente** no centro do fundo. Na selva sem pasta de dente, misture **cinza branca bem fina de lenha (ou argila finíssima) com algumas gotas de água até formar um creme espesso**.\n3. **Polir em círculos por 5 minutos com um pano seco**: Enrole um pano de algodão seco ou a barra da camisa no polegar e esfregue **com força fazendo pequenos círculos do centro para a borda durante pelo menos 5 minutos**. Sairá um resíduo escuro de óxido conforme o metal ganha brilho.\n4. **Confirmar o reflexo nítido de espelho**: Limpe a superfície com uma ponta limpa do pano e confirme se **seus olhos e nariz se refletem com total nitidez como em um espelho verdadeiro**.",
+      "actionNote": "> Por que você deve polir o fundo côncavo e não a lateral plana da lata: Uma superfície plana apenas rebate a luz sem concentrá-la, enquanto a concha côncava recolhe todos os raios solares que atingem sua área e os concentra em um único ponto focal ardente acima de 400 °C.",
+      "svgFileName": "pr29-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // POLIMENTO ESPELHADO DO FUNDO CÔNCAVO DA LATA",
+        "Aplicar uma gota de pasta de dente ou cinza fina no fundo",
+        "Esfregar em círculos com pano seco por 5 min tirando óxido",
+        "Obter acabamento de espelho (>85% de reflexão especular)",
+        "[PRINCIPAL] Fundo côncavo concentra calor solar em 1 ponto"
+      ],
+      "deepDive": {
+        "badge": "PARABOLIC MIRROR POLISHING & SPECULAR REFLECTANCE",
+        "title": "Micropolimento de Óxido de Alumínio (Al2O3) e Mecânica de Concentração do Refletor Parabólico",
+        "text": "O fundo das latas de bebida possui uma cúpula côncava esférica (raio de 30–35 mm) para suportar a pressão interna. Ao polir a película fosca de óxido de alumínio com o carbonato de cálcio (CaCO3) da pasta de dente ou as micropartículas de sílica da cinza de madeira (grão de 5–15 μm), **a refletância especular sobe de 40% para mais de 85%**, criando um coletor solar parabólico com distância focal de 4–5 cm.",
+        "fieldSpecs": [
+          {
+            "name": "Coletor Parabólico Côncavo de Fundo de Lata Polido com Pasta de Dente ou Cinza",
+            "scientificName": "Polished Aluminum Concave Dome Parabolic Solar Collector",
+            "categoryTag": "Remoção de Óxido / 85% de Foco Especular",
+            "imageFileName": "id-can-bottom-parabolic-mirror.jpg",
+            "hudCode": "FIG. SHELTER-29A // MACRO OPTIC",
+            "hudStatus": "REFLECTANCE: > 85% MIRROR GRADE",
+            "traits": [
+              {
+                "label": "Abrasivo/Pasta",
+                "value": "Use uma gota de pasta de dente ou **cinza branca fina misturada com água**."
+              },
+              {
+                "label": "Atrito/Giro",
+                "value": "Esfregue com firmeza **em pequenos círculos por 5 minutos** com pano seco."
+              },
+              {
+                "label": "Brilho/Padrão",
+                "value": "O fundo deve **refletir nitidamente suas pupilas** para concentrar calor suficiente."
+              }
+            ],
+            "fieldUse": "Acendedor solar inquebrável e sem combustível fabricado com uma única lata de bebida descartada"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Encher uma garrafa transparente com água limpa sem bolhas para formar uma lente convexa (ou esfera de saco plástico)",
+      "description": "1. **Escolher um recipiente transparente liso e arredondado**: Retire todos os rótulos e escolha uma **garrafa PET transparente cuja parte superior (ombro) seja arredondada como uma bola e sem ondulações**. Evite garrafas quadradas ou cheias de frisos.\n2. **Encher até a boca sem bolhas de ar**: Despeje **água totalmente cristalina e sem resíduos até a borda máxima do gargalo** e feche a tampa com força para não restar nenhuma bolha de ar dentro.\n3. **Alternativa com saco plástico (esfera de água torcida)**: Se tiver apenas um saco plástico transparente ou saco zip, coloque alguns goles de água limpa em um canto e **torça a parte superior com força até formar uma bola de água esticada e redonda do tamanho de um punho**.\n4. **Testar o feixe de luz refratado**: Exponha o ombro arredondado da garrafa (ou a bola de água do saco) ao sol e verifique se projeta um cone de luz brilhante no chão.",
+      "actionNote": "> Por que bolhas de ar ou água turva impedem a ignição: Bolhas ou partículas de sujeira causam dispersão luminosa, fazendo os raios solares ricochetearem para todos os lados em vez de convergirem o calor em um único ponto.",
+      "svgFileName": "pr29-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // ENCHIMENTO COM ÁGUA LIMPA E LENTE CONVEXA",
+        "Encher recipiente transparente liso até o topo com água limpa",
+        "Eliminar todas as bolhas de ar e fechar a tampa com firmeza",
+        "Usar o ombro curvo (ou saco esférico) para refratar o sol",
+        "[PRINCIPAL] Índice de refração (1,33) + curva = lente lupa"
+      ],
+      "deepDive": {
+        "badge": "SPHERICAL WATER REFRACTION & CONVEX LENS OPTICS",
+        "title": "Índice de Refração Líquida (n=1,333) e Minimização da Aberração Esférica",
+        "text": "Quando a luz passa do ar (n=1,00) para a água (n=1,333), a Lei de Snell curva os raios para dentro acompanhando a superfície esférica. Enquanto o corpo cilíndrico só foca uma linha, **o ombro superior abobadado da garrafa ou um saco plástico torcido em esfera atua como uma lente biconvexa 3D**, convergindo os raios solares paralelos em um foco de 1–2 mm.",
+        "fieldSpecs": [
+          {
+            "name": "Lente Esférica sem Bolhas do Ombro de Garrafa Transparente e Bolsa de Água",
+            "scientificName": "Bubble-Free Aqueous Spherical Convex Refracting Lens",
+            "categoryTag": "Foco por Refração n=1,33 / Zero Dispersão",
+            "imageFileName": "id-pet-bottle-water-lens.jpg",
+            "hudCode": "FIG. SHELTER-29B // MACRO OPTIC",
+            "hudStatus": "REFRACTION INDEX: n = 1.333 OPTIMAL",
+            "traits": [
+              {
+                "label": "Garrafa/Curva",
+                "value": "Use o **ombro superior arredondado perto do gargalo**, não a lateral reta."
+              },
+              {
+                "label": "Clareza/Bolhas",
+                "value": "Encha com **água cristalina até a borda** sem deixar bolhas de ar."
+              },
+              {
+                "label": "Saco/Opção",
+                "value": "Torça água no **canto de um saco transparente** até formar uma esfera firme."
+              }
+            ],
+            "fieldUse": "Lupa líquida instantânea feita em 1 minuto com uma garrafa de água ou saco transparente quando não há latas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Focar a luz solar em um ponto do tamanho de um grão de arroz (1–2 mm) sobre a isca escurecida por 30 segundos",
+      "description": "1. **Escurecer a isca com pó de carvão ou terra escura**: Esfregue **pó de carvão preto de carvalho (ou cinza escura / lama preta)** sobre penugem seca de artemísia, taboa ou papel higiênico desfiado. O preto absorve o calor solar como uma esponja.\n2. **Alinhar perpendicularmente ao sol**: Entre 10h e 15h, em um local ensolarado e protegido do vento, posicione a lente de água ou o espelho de lata **totalmente perpendicular (a 90 graus) em relação aos raios solares**.\n3. **Ajustar a distância até formar um ponto brilhante de 1–2 mm**:\n- **Com lente de água**: Coloque a isca no chão e segure o ombro da garrafa a 2–3 falanges (5–8 cm) de altura, ajustando até que **o menor e mais ofuscante ponto (do tamanho de um grão de arroz)** incida sobre a isca.\n- **Com espelho de lata**: Aponte o fundo côncavo para o sol e segure uma pitada de isca preta na ponta de um graveto a 2 falanges (4–5 cm) à frente do centro do espelho.\n4. **Apoiar o pulso em uma pedra e manter imóvel por 30 segundos**: Apoie firmemente o pulso sobre uma rocha ou no joelho para que o ponto não trema. Em 15–30 segundos subirá fumaça branca e nascerá uma brasa vermelha incandescente.",
+      "actionNote": "> Por que papel branco ou capim claro não pegam fogo: Superfícies brancas refletem mais de 80% da luz solar sem aquecer. Já a isca escurecida com carvão absorve mais de 95% da energia luminosa, ultrapassando os 400 °C em segundos.",
+      "svgFileName": "pr29-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FOCO DE 1-2MM E FIXAÇÃO POR 30 SEGUNDOS",
+        "Alinhar em ângulo reto ao sol e ajustar distância focal",
+        "Projetar ponto de 1-2mm sobre isca escurecida com carvão",
+        "Apoiar pulso em pedra e manter firme 30s até sair fumaça",
+        "[PRINCIPAL] Isca preta absorve 95% do calor chegando a 400°C"
+      ],
+      "deepDive": {
+        "badge": "BLACKBODY ABSORPTIVITY & FOCAL IRRADIANCE",
+        "title": "Absortividade de Corpo Negro (95%) e Mecânica de Densidade de Fluxo Térmico Focal",
+        "text": "A irradiância solar em dia limpo é de cerca de 1.000 W/m². Ao comprimir a luz captada por uma abertura de 60 mm em **um foco de 1,5 mm do tamanho de um grão de arroz (proporção de área de 1.600:1)**, a densidade de fluxo térmico salta para centenas de kW/m². Ao posicionar **pano carbonizado ou fibras com carvão (absortividade >0,95)**, atinge-se a temperatura de pirólise da celulose (380–420 °C) em 15–30 segundos.",
+        "fieldSpecs": [
+          {
+            "name": "Isca Escurecida com Carvão e Ignição de Brasa com Foco Solar de 1,5 mm",
+            "scientificName": "High-Absorptivity Carbonized Tinder & Solar Focal Hotspot",
+            "categoryTag": "95% Absorção de Corpo Negro / Compressão 1.600x",
+            "imageFileName": "id-solar-focal-point-ignition.jpg",
+            "hudCode": "FIG. SHELTER-29C // MACRO OPTIC",
+            "hudStatus": "FOCAL TEMP: > 420°C IGNITION",
+            "traits": [
+              {
+                "label": "Preto/Camada",
+                "value": "Esfregue **pó de carvão preto ou cinza escura** para evitar reflexo da luz."
+              },
+              {
+                "label": "Foco/Tamanho",
+                "value": "Ajuste a altura até o ponto ficar **do tamanho de um grão de arroz (1–2 mm)**."
+              },
+              {
+                "label": "Pulso/Apoio",
+                "value": "Apoie o pulso em uma rocha **por 30 segundos sem tremer**."
+              }
+            ],
+            "fieldUse": "Etapa central que gera uma brasa viva utilizando apenas luz solar e fibras naturais escurecidas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Colocar a brasa fumegante em um ninho de agulhas de pinheiro secas e soprar suavemente até abrir chama",
+      "description": "1. **Preparar previamente um ninho de isca do tamanho de um punho**: Antes de acender, junte agulhas de pinheiro bem secas, capim seco desfiado à mão ou tiras finas de casca de bétula e modele um **ninho de pássaro com uma cavidade no centro**.\n2. **Acomodar cuidadosamente a brasa no centro do ninho**: Quando a fumaça branca engrossar e a brasa vermelha atingir o tamanho de uma unha, guarde a lente e **acomode suavemente a brasa no centro do ninho**, dobrando levemente as fibras externas sobre ela.\n3. **Segurar na altura do peito e soprar longo e suave**: Segure o ninho com as duas mãos na altura do peito e sopre **de forma longa, contínua e suave ('fuuu—') a dois palmos (30–40 cm) de distância**.\n4. **Colocar na fornalha ao surgir a chama e adicionar gravetos**: Assim que a fumaça ficar densa e a chama vermelha saltar, coloque imediatamente o ninho ardente na [Fornalha Primitiva de Barro](/protocol-06) ou no [Fogareiro a Gás de Madeira de Dupla Lata](/protocol-12) e empilhe gravetos secos por cima.",
+      "actionNote": "> Por que soprar forte e de perto apaga a brasa: Uma brasa recém-criada mantém sua temperatura no limite; um sopro brusco espalha a cinza incandescente ou esfria a brasa de repente. Soprar suave e longo fornece oxigênio contínuo para o fogo crescer sozinho.",
+      "svgFileName": "pr29-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TRANSFERÊNCIA AO NINHO E SOPRO DE OXIGÊNIO",
+        "Montar ninho do tamanho de um punho com pinho e casca seca",
+        "Pôr a brasa fumegante no centro e envolver sem apertar",
+        "Soprar longo e suave a 30-40 cm até levantar labareda",
+        "[PRINCIPAL] Fluxo suave de oxigênio eleva a brasa a >600°C"
+      ],
+      "deepDive": {
+        "badge": "TINDER BUNDLE CONVECTION & OXYGEN STOICHIOMETRY",
+        "title": "Estequiometria de Oxigênio no Ninho Fibroso e Transição de Brasa para Chama",
+        "text": "A isca acesa pelo sol inicia em **combustão sem chama (Smoldering, 400–500 °C)**. Ao isolá-la dentro de fibras secas de alta área superficial (agulhas de pinheiro, taboa, casca de bétula) e injetar um fluxo suave de ar de 1–2 m/s (~16% de O2), o calor exotérmico acumula-se até que **a temperatura interna ultrapassa 600 °C, inflamando subitamente os gases de pirólise em chama aberta**.",
+        "fieldSpecs": [
+          {
+            "name": "Ninho de Agulhas de Pinheiro e Casca de Bétula com Transição para Chama por Oxigênio",
+            "scientificName": "Fibrous Tinder Nest & Smoldering-to-Flaming Transition",
+            "categoryTag": "Convecção Forçada de Oxigênio / Chama a 600°C",
+            "imageFileName": "id-tinder-nest-ember-ignition.jpg",
+            "hudCode": "FIG. SHELTER-29D // MACRO OPTIC",
+            "hudStatus": "FLAME TRANSITION: > 600°C ACTIVE",
+            "traits": [
+              {
+                "label": "Ninho/Fofo",
+                "value": "Solte o capim seco e o pinho **como algodão-doce** para o ar circular."
+              },
+              {
+                "label": "Sopro/Ritmo",
+                "value": "Sopre **fios de ar longos e suaves a 30–40 cm** para alimentar a brasa."
+              },
+              {
+                "label": "Mãos/Segurança",
+                "value": "Coloque o ninho no **fundo da fornalha logo antes de a labareda subir**."
+              }
+            ],
+            "fieldUse": "Processo final que transforma uma minúscula brasa solar em uma fogueira completa para ferver água e aquecer o abrigo"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Olhar fixamente para o ponto focal ofuscante a olho nu ou deixar uma garrafa cheia de água sobre capim seco",
+    "description": "O ponto focal de 1–2 mm concentra radiação UV e infravermelha tão intensa quanto olhar diretamente para o sol; encará-lo por vários segundos causa queimaduras fotoquímicas na retina e perda de visão. Além disso, deixar uma garrafa transparente com água sobre folhas secas ou na lona da barraca após acender o fogo fará com que o movimento do sol crie um foco automático, provocando incêndios florestais ou destruindo seu abrigo.",
+    "consequence": "Queimadura retiniana com perda visual e incêndio acidental do abrigo ou da floresta",
+    "prevention": "Olhe para o ponto brilhante apenas por um instante para ajustar seu tamanho mínimo e depois acompanhe apenas pela fumaça; guarde imediatamente garrafas de água e espelhos na sombra ou cubra-os com roupas após o uso."
+  },
+  "faqs": [
+    {
+      "question": "O que posso usar para concentrar o sol se não tiver nem garrafa PET nem lata de alumínio?",
+      "answer": "Qualquer saco plástico transparente, saco tipo zip ou até a embalagem transparente de um pacote de biscoitos funciona. Coloque um pouco de água limpa em um canto e torça a parte de cima com força até formar uma bola de água esticada e redonda como uma laranja; essa esfera funciona como uma ótima lupa convexa. Você também pode usar óculos de leitura para vista cansada (lentes convexas), o fundo curvo de uma garrafa de vidro quebrada ou o refletor parabólico desmontado de uma lanterna quebrada."
+    },
+    {
+      "question": "Se eu não tiver pasta de dente na mata, o que posso passar no fundo da lata para deixá-lo espelhado?",
+      "answer": "Misture a 'cinza branca de madeira' mais fina de uma fogueira apagada com algumas gotas de água ou saliva até formar uma pasta cremosa e esfregue com força: suas micropartículas de sílica polem o alumínio tão bem quanto pasta de dente. Se não houver cinza, use lama de argila finíssima da margem de um rio e depois dê brilho com pano seco, ou até esfregue um pedacinho de chocolate no metal, cujos sólidos de cacau e gordura deixam um acabamento espelhado."
+    },
+    {
+      "question": "Por que o ponto focal só solta um fiozinho de fumaça e apaga sem formar uma brasa firme?",
+      "answer": "A principal causa é a isca estar clara demais ou levemente úmida. Capim seco claro reflete a luz, por isso é indispensável esfregar pó de carvão preto, cinza escura ou lama preta no ponto onde o foco incide para absorver o calor. A segunda causa são fibras soltas demais que deixam o calor escapar; comprima a penugem de artemísia ou taboa formando uma bolinha densa do tamanho de uma ervilha para que o calor fique retido e forme uma brasa vermelha."
+    }
+  ],
+  "createdAt": "2026-11-11T03:46:46.687Z",
+  "contentHash": "a42f5a8522780c40"
+}

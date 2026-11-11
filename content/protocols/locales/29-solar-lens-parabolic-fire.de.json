@@ -1,0 +1,234 @@
+{
+  "protocolId": "PR-29",
+  "category": "SHELTER",
+  "title": "Feuer machen ohne Streichhölzer mit einer Wasserflaschen-Linse und poliertem Dosenboden-Hohlspiegel (Solare Lichtbündelung)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[Brennstofffreie Optische Konvex-Brechung & Parabolische Konkav-Reflexion zur 400°C Solar-Zündung]",
+  "summary": "Wenn Sie bereits ein sturmsicheres Turbo-Feuerzeug, wasserfeste Streichhölzer, einen Feuerstahl (Ferrocerium) oder eine Glaslupe im Notgepäck haben, nutzen Sie immer zuerst diese Fertigausrüstung – das ist der sicherste und schnellste Weg zum Feuer. Wenn jedoch bei langer Isolation oder Hochwasser das Feuerzeuggas leer ist, Streichhölzer durchnässt sind oder körperliche Erschöpfung das [Feuerbohren mit dem Bogen](/protocol-02) unmöglich macht, können Sie an klaren Tagen die Sonnenenergie bündeln. Indem Sie den gewölbten Boden einer Getränkedose mit Zahnpasta oder feiner Holzasche zu einem Parabolspiegel polieren oder eine glatte, klare Plastikflasche (oder Plastiktüte) blasenfrei mit klarem Wasser zu einer Sammellinse füllen, erzeugt ein reiskorngroßer (1–2 mm) Brennpunkt auf geschwärztem Zunder binnen 30 Sekunden eine über 400 °C heiße Glut ohne einen einzigen Tropfen Brennstoff.",
+  "timeRequired": "5–10 Min. für Dosenboden-Politur / 1 Min. für Wasserlinse / 30 Sek. für Solar-Zündung",
+  "successRate": "98% (bei klarem Himmel zwischen 10 und 15 Uhr + mit Holzkohle geschwärztem Zunder + 30 Sek. ruhig gehaltenem 1–2 mm Brennpunkt)",
+  "difficulty": "Anfänger (Sofort ohne Spezialwerkzeug mit einer leeren Getränkedose, Zahnpasta/Asche, klarer Flasche/Tüte und klarem Wasser ausführbar)",
+  "outputPerHour": "Unbegrenzte 400°C+ Glut ohne Brennstoffverbrauch bei Sonnenschein zur Wasserentkeimung und Notheizung",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 leere Aluminium-Getränkedose & 1 erbsengroßer Klecks Zahnpasta (oder feine weiße Holzasche / Schokolade / feiner Lehmschlamm)",
+      "desc": "Die nach innen gewölbte Kuppel am Dosenboden ist ein natürlicher Parabolspiegel, der Sonnenlicht in einem Punkt bündelt. Wer die matte Oxidschicht mit Zahnpasta oder feiner weißer Asche aus einem [Primitiven Lehmherd](/protocol-06) und etwas Wasser abpoliert, erhält einen Spiegelglanz wie beim [120dB Notfallpfeife & Signalspiegel](/protocol-27)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 glatte, klare Plastikflasche ohne Rillen (oder klarer Plastikbeutel / Gefrierbeutel) & glasklares Wasser",
+      "desc": "Eine flüssige Sammellinse, die den Brechungsindex von Wasser (ca. 1,33) nutzt, um Sonnenlicht zu bündeln. Füllt man die runde obere Flaschenschulter blasenfrei mit klarem Wasser aus dem [Kohle-Sand-Wasserfilter](/protocol-01) oder [Baumwolltuch-Siphon](/protocol-23), entsteht ein starkes Brennglas."
+    },
+    {
+      "id": "mat-03",
+      "name": "Lichtabsorbierender geschwärzter Zunder: Mit Holzkohlepulver eingeriebener Beifuß- oder Rohrkolbenflaum (oder Kohlestofftuch / geschwärztes Papier)",
+      "desc": "Weißes Taschentuchpapier oder helles trockenes Gras reflektiert über 80 % des Sonnenlichts und entzündet sich nicht. Erst das Einreiben mit schwarzem Kohlenstaub aus dem [Erdgruben-Kohlenmeiler](/protocol-09) sorgt für über 95 % Wärmeabsorption und lässt binnen 10 Sekunden Rauch aufsteigen."
+    },
+    {
+      "id": "mat-04",
+      "name": "Vogelnest-Zunderbündel: Knochentrockene Kiefernnadeln, zerfaserte Birkenrinde, trockenes Gras & Wellpappefasern",
+      "desc": "Ein luftdurchlässiges Fasernest, das die reiskorngroße Glut mit Sauerstoff nährt und zur offenen Flamme entfacht. Formen Sie handgeriebenes trockenes Gras, Kiefernnadeln oder Papierfasern einer [3-Schicht-Karton-Isoliermatte](/protocol-22) zu einem faustgroßen Vogelnest."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Den gewölbten Boden einer leeren Dose mit Zahnpasta (oder feiner Holzasche) zum Hohlspiegel polieren",
+      "description": "1. **Gewölbten Dosenboden vorbereiten**: Drehen Sie eine leere Aluminium-Getränkedose um, prüfen Sie, dass die nach innen gewölbte Bodenkuppel keine Dellen hat, und wischen Sie Erde oder Staub sauber ab.\n2. **Erbsengroßen Klecks Zahnpasta oder Aschepaste auftragen**: Geben Sie **einen erbsengroßen Klecks Zahnpasta** in die Mitte des Dosenbodens. Ohne Zahnpasta mischen Sie in der Natur **feinste weiße Laubholzasche (oder feinsten Lehmschluff) mit ein paar Tropfen Wasser zu einer dicken Creme**.\n3. **5 Minuten lang mit trockenem Tuch kreisförmig polieren**: Wickeln Sie ein trockenes Baumwolltuch um den Daumen und reiben Sie **mindestens 5 Minuten lang kräftig in kleinen Kreisen von der Mitte nach außen**. Zuerst löst sich schwarzer Metallabrieb, bis die matte Schicht verschwindet.\n4. **Klaren Spiegelglanz prüfen**: Wischen Sie die Paste mit einer sauberen Tuchecke ab und prüfen Sie, ob sich **Ihre Augen und Nase in der Wölbung so scharf wie in einem echten Spiegel** spiegeln.",
+      "actionNote": "> Warum Sie den gewölbten Dosenboden und nicht die glatte Seitenwand polieren müssen: Eine flache Wand wirft das Licht nur ungebündelt zurück, während der nach innen gewölbte Hohlspiegel alle einfallenden Sonnenstrahlen auf einen einzigen 400 °C heißen Brennpunkt in der Mitte konzentriert.",
+      "svgFileName": "pr29-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SPIEGELPOLITUR DES KONKAVEN DOSENBODENS",
+        "Erbsengroßen Klecks Zahnpasta oder feine Holzasche auftragen",
+        "Mit trockenem Tuch 5 Min. kreisförmig die Oxidschicht abreiben",
+        "Klare Spiegeloberfläche (>85% gerichtete Reflexion) herstellen",
+        "[KERN] Gewölbter Metallboden bündelt Sonnenwärme in 1 Punkt"
+      ],
+      "deepDive": {
+        "badge": "PARABOLIC MIRROR POLISHING & SPECULAR REFLECTANCE",
+        "title": "Mikropolitur der Aluminiumoxidschicht (Al2O3) und Bündelungsmechanik des Parabolspiegels",
+        "text": "Getränkedosenböden sind als kugelförmige konkave Kuppel (Radius 30–35 mm) geformt, um dem Innendruck standzuhalten. Durch das Abpolieren der matten Aluminiumoxidschicht mit Calciumcarbonat (CaCO3) aus Zahnpasta oder feinen Silikapartikeln aus Holzasche (5–15 μm Körnung) **steigt der gerichtete Reflexionsgrad von 40 % auf über 85 %**, wodurch ein Parabolkollektor mit 4–5 cm Brennweite entsteht.",
+        "fieldSpecs": [
+          {
+            "name": "Mit Zahnpasta & Holzasche polierter Aluminium-Dosenboden-Parabolspiegel",
+            "scientificName": "Polished Aluminum Concave Dome Parabolic Solar Collector",
+            "categoryTag": "Oxidschicht-Politur / 85% Spiegelbündelung",
+            "imageFileName": "id-can-bottom-parabolic-mirror.jpg",
+            "hudCode": "FIG. SHELTER-29A // MACRO OPTIC",
+            "hudStatus": "REFLECTANCE: > 85% MIRROR GRADE",
+            "traits": [
+              {
+                "label": "Schleifmittel/Paste",
+                "value": "Nutzen Sie Zahnpasta oder **feinste weiße Holzasche mit Wasser vermischt**."
+              },
+              {
+                "label": "Reibung/Kreise",
+                "value": "Mit einem trockenen Tuch **5 Minuten lang kräftig in kleinen Kreisen** polieren."
+              },
+              {
+                "label": "Glanz/Prüfung",
+                "value": "Im Dosenboden müssen **Ihre Pupillen gestochen scharf zu sehen sein**."
+              }
+            ],
+            "fieldUse": "Ein bruchsicherer, brennstofffreier Solar-Feuerstarter aus einer einzigen weggeworfenen Getränkedose"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Klare Plastikflasche blasenfrei randvoll mit klarem Wasser füllen als Sammellinse (oder Wasserbeutel-Kugel)",
+      "description": "1. **Glattes, rundes, klares Gefäß wählen**: Ziehen Sie alle Etiketten ab und wählen Sie eine **klare Plastikflasche, deren oberer Schulterbereich unter dem Hals kugelig rund und glatt ist**. Vermeiden Sie eckige oder stark geriffelte Flaschen.\n2. **Randvoll ohne Luftblasen mit klarem Wasser füllen**: Füllen Sie **glasklares, schwebstofffreies Wasser bis ganz an den oberen Rand** ein und schrauben Sie den Deckel fest zu, sodass keinerlei Luftblasen im Inneren bleiben.\n3. **Plastiktüten-Alternative (gedrehte Wasserkugel)**: Wenn Sie nur eine klare Plastiktüte oder einen Gefrierbeutel haben, füllen Sie ein paar Schluck Wasser in eine Ecke und **drehen Sie das Plastik darüber fest zusammen, bis eine pralle, runde Wasserkugel in Faustgröße entsteht**.\n4. **Gebrochenen Lichtkegel im Sonnenlicht prüfen**: Halten Sie die runde Flaschenschulter (oder die Wasserkugel) in die Sonne und prüfen Sie, ob auf dem Boden ein heller, zusammenlaufender Lichtpunkt entsteht.",
+      "actionNote": "> Warum Luftblasen oder trübes Wasser das Entzünden verhindern: Schwebende Luftblasen oder Schmutzpartikel streuen das einfallende Sonnenlicht in alle Richtungen (Lichtstreuung), sodass die Wärmeenergie verloren geht, statt sich in einem Punkt zu vereinen.",
+      "svgFileName": "pr29-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // KLARWASSERFÜLLUNG & SAMMELLINSEN-BILDUNG",
+        "Glattes rundes Klargefäß bis zum Rand mit klarem Wasser füllen",
+        "Luftblasen komplett entfernen und Deckel fest verschließen",
+        "Runde Flaschenschulter (oder Wasserkugel) bricht Sonnenlicht",
+        "[KERN] Wasser-Brechungsindex (1,33) + Wölbung = Lupenlinse"
+      ],
+      "deepDive": {
+        "badge": "SPHERICAL WATER REFRACTION & CONVEX LENS OPTICS",
+        "title": "Flüssigkeits-Brechungsindex (n=1,333) und Minimierung der sphärischen Aberration",
+        "text": "Beim Übergang von Luft (n=1,00) in Wasser (n=1,333) werden Lichtstrahlen nach dem Snelliusschen Brechungsgesetz entlang der gewölbten Oberfläche stark nach innen gebrochen. Während der zylindrische Flaschenkörper Licht nur zu einer Linie bündelt, **wirkt die kugelige obere Flaschenschulter oder ein rund gedrehter Wasserbeutel als 3D-Bikonvexlinse**, die parallele Sonnenstrahlen in einem 1–2 mm großen Brennpunkt vereint.",
+        "fieldSpecs": [
+          {
+            "name": "Blasenfreie Klarwasser-Flaschenschulter & Kugelförmige Folien-Wasserlinse",
+            "scientificName": "Bubble-Free Aqueous Spherical Convex Refracting Lens",
+            "categoryTag": "n=1,33 Brechungsfokus / Streuungsfreie Transmission",
+            "imageFileName": "id-pet-bottle-water-lens.jpg",
+            "hudCode": "FIG. SHELTER-29B // MACRO OPTIC",
+            "hudStatus": "REFRACTION INDEX: n = 1.333 OPTIMAL",
+            "traits": [
+              {
+                "label": "Gefäß/Wölbung",
+                "value": "Nutzen Sie die **glatte, runde obere Flaschenschulter**, nicht den geraden Bauch."
+              },
+              {
+                "label": "Klarheit/Blasen",
+                "value": "Mit **glasklarem Wasser randvoll füllen**, damit keine Luftblasen stören."
+              },
+              {
+                "label": "Beutel/Ersatz",
+                "value": "Wasser in einer **Beutelecke fest eindrehen**, bis eine pralle Kugel entsteht."
+              }
+            ],
+            "fieldUse": "Eine in 1 Minute einsatzbereite Flüssigkeitslupe aus einer Trinkflasche oder klaren Tüte, wenn keine Dose vorhanden ist"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Sonnenlicht auf Reiskorngröße (1–2 mm) auf geschwärztem Zunder bündeln und 30 Sekunden ruhig halten",
+      "description": "1. **Zunderoberfläche mit Holzkohlepulver oder dunkler Erde schwärzen**: Reiben Sie **schwarzen Eichenkohlenstaub (oder dunkle Asche / dunklen Lehm)** gründlich in trockenen Beifußflaum, Rohrkolbenwolle oder zerrupftes Papier ein. Schwarz saugt Sonnenhitze wie ein Schwamm auf.\n2. **Im rechten Winkel zur Sonne ausrichten**: Richten Sie zwischen 10 und 15 Uhr an einem windgeschützten, sonnigen Platz Ihre Wasserlinse oder den Dosenboden **exakt im rechten Winkel (90 Grad) zur einfallenden Sonne** aus.\n3. **Abstand anpassen für einen reiskorngroßen (1–2 mm) Lichtpunkt**:\n- **Mit Wasserlinse**: Legen Sie den Zunder auf den Boden und halten Sie die Flaschenschulter 2–3 Fingerbreit (5–8 cm) darüber, bis **der kleinste, blendend helle Punkt in Reiskorngröße** genau auf dem schwarzen Zunder liegt.\n- **Mit Dosen-Hohlspiegel**: Halten Sie den Dosenboden zur Sonne und führen Sie etwas geschwärzten Zunder an einem Zweig 2 Fingerbreit (4–5 cm) vor der Kuppelmitte in den hellsten Brennpunkt.\n4. **Handgelenk auf einem Stein abstützen und 30 Sekunden ruhig halten**: Stützen Sie das Handgelenk fest auf einem Felsen oder dem Knie ab, damit der Lichtpunkt nicht wackelt. Nach 15–30 Sekunden steigt weißer Rauch auf und eine rote Glut entsteht.",
+      "actionNote": "> Warum weißes Papier oder helles Gras trotz Fokus nicht brennt: Weiße Oberflächen werfen über 80 % des Lichts wie ein Spiegel zurück. Mit Kohlenstaub geschwärzter Zunder absorbiert dagegen über 95 % der Strahlung und überschreitet in Sekunden die 400-°C-Zündgrenze.",
+      "svgFileName": "pr29-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 1-2MM BRENNPUNKT-AUSRICHTUNG & 30S ZÜNDUNG",
+        "Im rechten Winkel zur Sonne halten & Fokusabstand anpassen",
+        "Reiskorngroßen (1-2mm) Lichtpunkt auf schwarzen Zunder lenken",
+        "Hand auf Stein stützen und 30 Sek. ruhig halten bis es raucht",
+        "[KERN] Schwarzer Zunder absorbiert 95% Wärme bis >400°C"
+      ],
+      "deepDive": {
+        "badge": "BLACKBODY ABSORPTIVITY & FOCAL IRRADIANCE",
+        "title": "Schwarzkörper-Absorptionsgrad (95 %) und Wärmestromdichte im Brennpunkt",
+        "text": "Bei klarem Himmel beträgt die Sonneneinstrahlung am Boden ca. 1.000 W/m². Wird das Licht einer 60-mm-Öffnung auf **einen 1,5 mm kleinen Brennpunkt komprimiert (Flächenverhältnis ca. 1.600:1)**, steigt die Wärmestromdichte auf mehrere hundert kW/m². Trifft dieser Fokus auf **Verkohlungstuch oder mit Kohle geschwärzte Fasern (Absorptionsgrad >0,95)**, wird binnen 15–30 Sekunden die Zellulose-Zündtemperatur von 380–420 °C erreicht.",
+        "fieldSpecs": [
+          {
+            "name": "Mit Holzkohle geschwärzter Zunder & 1,5-mm-Solarbrennpunkt-Glutzündung",
+            "scientificName": "High-Absorptivity Carbonized Tinder & Solar Focal Hotspot",
+            "categoryTag": "95% Schwarzkörper-Absorption / 1.600-fache Wärmedichte",
+            "imageFileName": "id-solar-focal-point-ignition.jpg",
+            "hudCode": "FIG. SHELTER-29C // MACRO OPTIC",
+            "hudStatus": "FOCAL TEMP: > 420°C IGNITION",
+            "traits": [
+              {
+                "label": "Schwarz/Auftrag",
+                "value": "Zunder mit **schwarzem Kohlenstaub oder Ruß einreiben** gegen Reflexion."
+              },
+              {
+                "label": "Fokus/Größe",
+                "value": "Abstand variieren, bis der Lichtpunkt **reiskorngroß (1–2 mm) gebündelt** ist."
+              },
+              {
+                "label": "Hand/Stütze",
+                "value": "Handgelenk auf Stein abstützen und **30 Sekunden absolut ruhig halten**."
+              }
+            ],
+            "fieldUse": "Zentraler Zündschritt, der allein durch Sonnenlicht und geschwärzte Pflanzenfasern eine glühende Kohle erzeugt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Rauchende Glut in ein Kiefernnadel-Vogelnest legen und durch sanftes Blasen zur Flamme entfachen",
+      "description": "1. **Faustgroßes Vogelnest-Zunderbündel vorab formen**: Formen Sie schon vor dem Zünden aus knochentrockenen Kiefernnadeln, fein zerriebenem Gras oder Birkenrinde ein **faustgroßes Vogelnest mit einer Mulde in der Mitte**.\n2. **Rauchende Glut behutsam in die Nestmitte betten**: Sobald dichter weißer Rauch aufsteigt und die rote Glut fingernagelgroß ist, legen Sie die Linse weg und **betten die Glut vorsichtig in die Mitte des Vogelnests**, wobei Sie die äußeren Fasern locker darüberfalten.\n3. **Auf Brusthöhe halten und aus zwei Handspannen Abstand sanft blasen**: Halten Sie das Nest locker in beiden Händen auf Brusthöhe und blasen Sie **aus zwei Handspannen (30–40 cm) Entfernung lang und sanft ('puhhh—')** hinein.\n4. **Bei Flammenausbruch in den Herd legen und Reisig nachlegen**: Sobald der Rauch dick wird und rote Flammen hervorschießen, legen Sie das brennende Bündel sofort in den [Primitiven Lehmherd](/protocol-06) oder [Doppeldosen-Holzgasofen](/protocol-12) und schichten dünne trockene Zweige darüber.",
+      "actionNote": "> Warum zu starkes Blasen aus nächster Nähe die Glut auslöscht: Eine frische Glut hält ihre Temperatur nur knapp; ein heftiger, kühler Luftstoß bläst die glühenden Fasern auseinander oder kühlt sie unter die Zündgrenze ab. Langes, sanftes Blasen liefert stetig Sauerstoff, sodass sich die Glut von selbst aufheizt.",
+      "svgFileName": "pr29-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // EINBETTEN INS ZUNDERNEST & SAUERSTOFFZUFUHR",
+        "Aus trockenen Kiefernnadeln & Rinde ein faustgroßes Nest formen",
+        "Rauchende Glut in die Mitte legen & locker für Luft umschließen",
+        "Aus 30-40 cm Abstand lang und sanft blasen bis Flammen lodern",
+        "[KERN] Sanfter Sauerstoffstrom hebt Glut über 600°C Zündpunkt"
+      ],
+      "deepDive": {
+        "badge": "TINDER BUNDLE CONVECTION & OXYGEN STOICHIOMETRY",
+        "title": "Sauerstoff-Stöchiometrie im Faser-Zundernest und Übergang vom Glimmen zur offenen Flamme",
+        "text": "Der solar gezündete Zunder befindet sich zunächst im **flammenlosen Glimmbrand (Smoldering, 400–500 °C)**. Wird er in trockene Fasern mit großer Oberfläche (Kiefernnadeln, Rohrkolben, Birkenrinde) eingebettet und mit einem sanften Luftstrom von 1–2 m/s (~16 % O2) versorgt, staut sich die Reaktionswärme, bis **die Innentemperatur 600 °C überschreitet und die Pyrolysegase schlagartig zur offenen Flamme durchzünden (Flashover)**.",
+        "fieldSpecs": [
+          {
+            "name": "Trockenes Kiefernnadel- & Birkenrinden-Zundernest mit Sauerstoff-Flammenübergang",
+            "scientificName": "Fibrous Tinder Nest & Smoldering-to-Flaming Transition",
+            "categoryTag": "Erzwungene Sauerstoffkonvektion / 600°C Flammenzündung",
+            "imageFileName": "id-tinder-nest-ember-ignition.jpg",
+            "hudCode": "FIG. SHELTER-29D // MACRO OPTIC",
+            "hudStatus": "FLAME TRANSITION: > 600°C ACTIVE",
+            "traits": [
+              {
+                "label": "Nest/Dichte",
+                "value": "Trockenes Gras und Nadeln **locker wie Zuckerwatte** für Luftzug formen."
+              },
+              {
+                "label": "Atmung/Stärke",
+                "value": "Aus **30–40 cm Abstand dünn und lang blasen**, um die Glut zu nähren."
+              },
+              {
+                "label": "Hitze/Schutz",
+                "value": "Das Bündel **kurz vor dem Durchzünden der Flamme auf die Feuerstelle** legen."
+              }
+            ],
+            "fieldUse": "Abschließender Schritt, der eine winzige Solar-Glut in ein kräftiges Lagerfeuer zum Wasserkochen und Wärmen verwandelt"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Direktes Starren mit bloßem Auge in den blendenden Solar-Brennpunkt oder Liegenlassen der Wasserflasche auf trockenem Laub",
+    "description": "Der 1–2 mm kleine Brennpunkt bündelt UV- und Infrarotstrahlung so stark wie der direkte Blick in die Sonne; wer mehrere Sekunden ungeschützt hineinschaut, riskiert photochemische Netzhautverbrennungen und bleibende Sehschäden. Lässt man zudem eine wassergefüllte transparente Flasche nach dem Feuermachen auf trockenem Gras oder dem Zeltdach liegen, wandert der Brennpunkt mit der Sonne weiter und löst unbemerkt verheerende Unterkunfts- oder Waldbrände aus.",
+    "consequence": "Netzhautverbrennung mit Sehverlust sowie unbeabsichtigter Hütten- oder Waldbrand",
+    "prevention": "Blicken Sie nur den Bruchteil einer Sekunde auf den Lichtpunkt, um ihn scharfzustellen, und achten Sie danach nur noch auf den aufsteigenden Rauch; verstauen Sie Wasserflaschen und Hohlspiegel sofort nach Gebrauch im Schatten oder unter Kleidung."
+  },
+  "faqs": [
+    {
+      "question": "Womit kann ich Sonnenlicht bündeln, wenn ich weder eine Plastikflasche noch eine Getränkedose habe?",
+      "answer": "Jede durchsichtige Plastiktüte, jeder Gefrierbeutel und sogar klare Verpackungsfolie von Snacks funktioniert. Füllen Sie etwas klares Wasser in eine Ecke und drehen Sie das Plastik darüber fest zusammen, bis eine pralle, runde Wasserkugel wie eine Orange entsteht – diese Wasserkugel wirkt als starke Sammellinse. Ebenso eignen sich Lesebrillen (Weitsichtigkeits-Sammellinsen), der dicke gewölbte Boden einer zerbrochenen Glasflasche oder der ausgebaute Reflektorspiegel einer defekten Taschenlampe."
+    },
+    {
+      "question": "Womit kann ich den Dosenboden in der Wildnis polieren, wenn ich keine Zahnpasta habe?",
+      "answer": "Mischen Sie die feinste 'weiße Holzasche' einer kalten Feuerstelle mit wenigen Tropfen Wasser oder Speichel zu einer cremigen Paste und reiben Sie kräftig – die mikroskopischen Silikapartikel polieren Aluminium genauso spiegelblank wie Zahnpasta. Alternativ eignet sich feinster Ton-Schluff vom Flussufer mit anschließendem Trockenpolieren per Tuch, oder sogar ein Stückchen Schokolade, dessen Kakaopartikel und Fett das Metall auf Hochglanz polieren."
+    },
+    {
+      "question": "Warum steigt am Brennpunkt nur kurz etwas Rauch auf, ohne dass eine dauerhafte Glut entsteht?",
+      "answer": "Meist ist der Zunder zu hell oder noch leicht klamm. Helles Gras reflektiert das Licht; reiben Sie zwingend schwarzen Kohlenstaub, dunkle Asche oder dunkle Erde auf die Fokusstelle, damit die Hitze absorbiert wird. Zweitens entweicht die Wärme, wenn die Fasern zu lose einzeln liegen: Pressen Sie trockenen Beifuß- oder Rohrkolbenflaum zu einem dichten, erbsengroßen Kügelchen zusammen, damit sich die Hitze im Inneren staut und ein glühendes Kohlekorn bildet."
+    }
+  ],
+  "createdAt": "2026-11-11T03:46:46.687Z",
+  "contentHash": "a42f5a8522780c40"
+}

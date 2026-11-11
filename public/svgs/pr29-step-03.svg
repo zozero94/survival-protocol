@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg29s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="char29s3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid29s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow29s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg29s3)"/>
+  <rect width="400" height="400" fill="url(#grid29s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 쌀알 크기(1~2mm) 초점 정렬 및 30초 고정 점화</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">햇빛과 직각으로 각도를 맞추고 거리를 조절해 초점 좁히기</text>
+
+  <!-- Main Illustration: Left (Water Lens Focal Alignment) vs Right (Concave Can Mirror Focal Alignment) -->
+  <g filter="url(#shadow29s3)">
+    <!-- Left panel: Convex lens converging cone onto dark char cloth -->
+    <rect x="24" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+    <!-- Lens arc at top -->
+    <path d="M68,112 Q109,136 150,112 Q109,98 68,112 Z" fill="#38bdf8" fill-opacity="0.55" stroke="#bae6fd" stroke-width="1.5"/>
+    <!-- Converging light cone -->
+    <polygon points="75,118 143,118 109,198" fill="#fde047" fill-opacity="0.25"/>
+    <line x1="75" y1="118" x2="109" y2="198" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="109" y1="122" x2="109" y2="198" stroke="#f97316" stroke-width="1.8"/>
+    <line x1="143" y1="118" x2="109" y2="198" stroke="#fde047" stroke-width="1.8"/>
+    <!-- Dark char cloth / mugwort pad -->
+    <polygon points="58,192 160,192 172,222 46,222" fill="url(#char29s3)" stroke="#64748b" stroke-width="1.5"/>
+    <!-- 1-2mm glowing hot spot -->
+    <circle cx="109" cy="198" r="5" fill="#ef4444" stroke="#fef08a" stroke-width="2"/>
+    <!-- Rising smoke wisp -->
+    <path d="M109,190 Q98,172 115,156 Q125,142 112,130" fill="none" stroke="#cbd5e1" stroke-width="1.8" stroke-dasharray="3,2"/>
+
+    <!-- Right panel: Concave can mirror focusing upward onto tinder tip -->
+    <rect x="206" y="88" width="170" height="150" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <!-- Concave mirror arc at bottom -->
+    <path d="M236,195 Q291,228 346,195" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M236,199 Q291,232 346,199" fill="none" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Incoming solar rays -->
+    <line x1="250" y1="105" x2="256" y2="202" stroke="#fde047" stroke-width="1.4" stroke-dasharray="3,2"/>
+    <line x1="332" y1="105" x2="326" y2="202" stroke="#fde047" stroke-width="1.4" stroke-dasharray="3,2"/>
+    <!-- Reflected converging rays to focal point (4-5cm above dome) -->
+    <line x1="256" y1="202" x2="291" y2="152" stroke="#f97316" stroke-width="2"/>
+    <line x1="326" y1="202" x2="291" y2="152" stroke="#f97316" stroke-width="2"/>
+    <!-- Tinder stick holding dark tinder at focal point -->
+    <line x1="291" y1="152" x2="355" y2="132" stroke="#b45309" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="291" cy="152" r="6" fill="#ef4444" stroke="#fef08a" stroke-width="2"/>
+    <path d="M291,144 Q282,126 296,112" fill="none" stroke="#cbd5e1" stroke-width="1.8" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="254" width="368" height="26" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="271" fill="#fef08a" font-family="monospace" font-size="10.5">검은 숯가루를 묻힌 마른 부싯깃에 쌀알 크기(1~2mm) 빛 맺기</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="288" width="368" height="26" rx="2" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="305" fill="#fecaca" font-family="monospace" font-size="10.5">손을 바위에 지지해 흔들림 없이 30초간 집중시켜 연기 피우기</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="348" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="369" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 검은색 부싯깃이 태양열을 95% 흡수해 400℃ 발화점 도달</text>
+</svg>
