@@ -1,0 +1,269 @@
+{
+  "title": "Trinkwassergewinnung durch Plastikbeutel-Blatt-Transpiration und Erd-Sonnendestille",
+  "summary": "Wenn bei einer Notlage oder Isolation Trinkwasser völlig fehlt und weder Bäche noch Regen vorhanden sind, gewinnt diese stromlose Überlebenstechnik durch die natürliche Transpiration ungiftiger Laubbaumblätter und die solare Verdampfung der Bodenfeuchte bis zu 1 Liter reines destilliertes Trinkwasser pro Tag ohne Abkochen. Bevorzugen Sie stets kommerzielle Wasserfilter oder Vorräte; im Ernstfall genügen ein einfacher transparenter Beutel und Kieselsteine.",
+  "threatLevelText": "KRITISCH // SOFORTIGES HANDELN ERFORDERLICH",
+  "timeRequired": "30 Min. Aufbau // 6–12 Std. Ernte",
+  "difficulty": "EASY // Ohne Werkzeug sofort machbar",
+  "outputPerHour": "50–100mL pro Stunde (Bis zu 1L täglich)",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "1–2 große unbeschädigte transparente Plastikbeutel (oder 1,5m×1,5m Klarsichtfolie)",
+      "desc": "Wasserdichte Folie, die über 90% Sonnenlicht durchlässt und Wasserdampf für Kondensation einschließt"
+    },
+    {
+      "id": "m2",
+      "name": "3–4 glatte Kieselsteine (einer faustgroß, einer walnussgroß)",
+      "desc": "Gewichte zur Bildung einer tiefen Sammeltasche im Beutel und für einen 45-Grad-Trichter über der Grube"
+    },
+    {
+      "id": "m3",
+      "name": "1 saubere leere Konservendose oder Becher (oder konkave Steinschale)",
+      "desc": "Auffanggefäß im Zentrum, um herabtropfendes reines Kondenswasser aus dem Trichter aufzufangen"
+    },
+    {
+      "id": "m4",
+      "name": "Lebende ungiftige Eichen-/Ahornzweige und zwei Handvoll zerquetschte grüne Gräser/feuchtes Laub",
+      "desc": "Natürliche Feuchtigkeitsquelle über Blatt-Spaltöffnungen oder Verdreifachung der Grubenausdunstung"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Sonnigen ungiftigen Laubzweig mit Folienbeutel umhüllen und Stein in Beutelecke legen",
+      "description": "1. **Ungiftige Bäume wählen**: Meiden Sie Giftpflanzen wie Oleander oder Giftsumach; wählen Sie dicht belaubte, sonnenbeschienene Südzweige von Eiche, Kastanie, Ahorn oder Weide.\n2. **Mit Klarsichtbeutel umhüllen**: Ziehen Sie einen großen Plastikbeutel vorsichtig von der Zweigspitze auf und umschließen Sie 30 bis 50 gesunde Blätter.\n3. **Sammeltasche formen**: Legen Sie einen faustgroßen glatten Stein in die unterste Ecke des Beutels, sodass die Ecke trichterförmig nach unten hängt.",
+      "actionNote": "Die beschwerte Beutelecke muss mindestens 20cm unter dem Zweig hängen, damit Wassertropfen ungehindert nach unten gleiten, ohne die Blätter zu berühren.",
+      "svgLabels": [
+        "FIG. 01 // Laubzweig mit Folienbeutel umschließen und Steingewicht platzieren",
+        "Sonnige ungiftige Eichen- oder Ahornzweige auswählen",
+        "Dichten Folienbeutel aufziehen und Stein in untere Ecke legen",
+        "Tiefsten Punkt als Sammeltrichter für Wassertropfen formen",
+        "[KERN] Tiefste Wassertasche zur Aufnahme von Transpirationskondensat"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRANSPIRATION BAG ON FOLIAGE",
+        "title": "Laubblatt-Transpiration und schwerkraftbasierte Sammeldynamik",
+        "text": "Pflanzen geben über 95% des von den Wurzeln aufgenommenen Wassers als reinen Wasserdampf über die Spaltöffnungen (Stomata) an die Atmosphäre ab. Das Einschließen in einen transparenten Beutel erzeugt einen Treibhauseffekt über 40°C, was die Transpiration massiv steigert, während die kältere Außenluft an der Beutelwand Kondensation auslöst. Die Schwerkraft leitet die Tropfen zum Stein, sodass steriles, keimfreies Destillat ohne Feuer entsteht.",
+        "fieldSpecs": [
+          {
+            "name": "Baumzweig-Transpirationsbeutel",
+            "scientificName": "Plant Transpiration Condensation Bag",
+            "categoryTag": "Feldhydratation",
+            "imageFileName": "id-transpiration-bag-tree.jpg",
+            "hudCode": "TR-01",
+            "hudStatus": "ACTIVE CONDENSATION",
+            "traits": [
+              {
+                "label": "Baumarten",
+                "value": "Ungiftige Eiche/Ahorn"
+              },
+              {
+                "label": "Innentemp.",
+                "value": "38–45°C bei Sonnenlicht"
+              },
+              {
+                "label": "Reinheit",
+                "value": "0% Keime Destillatgrad"
+              },
+              {
+                "label": "Ertrag/Std.",
+                "value": "30–60mL (am Mittag)"
+              }
+            ],
+            "fieldUse": "Gewinnung von reinem Trinkwasser ohne Baumschädigung bei fehlendem Oberflächenwasser"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Abstandsholz einsetzen, um Blätter trocken zu halten, und Beutelkragen dicht verschnüren",
+      "description": "1. **Abstandsholz einsetzen**: Liegen Blätter im gesammelten Wasser, treten Gerbstoffe (Tannine) aus und Blätter faulen; klemmen Sie ein kurzes sauberes Ästchen quer unter das Laub.\n2. **Beutelkragen verschnüren**: Fassen Sie die Beutelöffnung glatt um den Astast und wickeln Sie Schnur oder Schnürsenkel 3 bis 4 Mal fest herum.\n3. **Dichtheit prüfen**: Tasten Sie mit den Fingern ab, ob an der Bindung feuchte Luft oder Dampf entweicht.",
+      "actionNote": "Wird der Kragen locker gebunden, entweicht der Dampf in die Umgebung und Sie sammeln über den ganzen Tag nur wenige Tropfen.",
+      "svgLabels": [
+        "FIG. 02 // Abstandsholz einsetzen und Beutelkragen luftdicht verschnüren",
+        "Kurzes Querholz unter Blättern einpassen für Freiraum",
+        "Blatteintauchen verhindern gegen Fäulnis und Bitterstoffe",
+        "Beutelöffnung mit Schnur stramm um den Astast binden",
+        "[KERN] Null Dampfverlust und Erhalt reiner Trinkwasserqualität"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // SPACER STICK & SEALED COLLAR",
+        "title": "Tannin-Barriere und luftdichte Kragenkonstruktion",
+        "text": "Laubblätter wie Eiche enthalten wasserlösliche Tannine, die bitter schmecken und bei Aufnahme Magenreizungen auslösen können. Wenn Blätter stundenlang im Wasser liegen, laugen Tannine aus. Ein vertikaler Abstand von mindestens 5cm sorgt dafür, dass nur reines Kondenswasser an der Beutelwand hinabfließt und das gesammelte Wasser süß, klar und bekömmlich bleibt.",
+        "fieldSpecs": [
+          {
+            "name": "Blatt-Wasser-Abstandsholz",
+            "scientificName": "Leaf-Water Separation Spacer",
+            "categoryTag": "Wasserschutz",
+            "imageFileName": "id-water-reservoir-spacer-stick.jpg",
+            "hudCode": "TR-02",
+            "hudStatus": "CLEAR PURIFIED",
+            "traits": [
+              {
+                "label": "Abstand",
+                "value": "3 Fingerglieder (5cm+)"
+              },
+              {
+                "label": "Bindung",
+                "value": "3-fach gewickelte Schnur"
+              },
+              {
+                "label": "Geschmack",
+                "value": "0% Tannin geruchlos"
+              },
+              {
+                "label": "Zweigwechsel",
+                "value": "Alle 24 Std. neuer Ast"
+              }
+            ],
+            "fieldUse": "Sicherstellen, dass Transpirationswasser frei von Bitterkeit und Fäulnisbakterien bleibt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Kniefiefe Erdgrube ausheben, Auffangbecher mittig platzieren und mit zerquetschtem Gras umgeben",
+      "description": "1. **Grube graben**: Fehlen Bäume oder wird mehr Wasser benötigt, graben Sie an feuchter sonniger Stelle eine runde Grube von 50cm Breite und 45–50cm Tiefe.\n2. **Becher fixieren**: Drücken Sie eine saubere Blechdose oder einen Becher waagerecht in die Grubenmitte, ohne dass Erde hineinfällt.\n3. **Grünzeug einbringen**: Belegen Sie den Boden rund um das Gefäß dick mit handzerquetschtem frischem Gras und feuchtem Laub.",
+      "actionNote": "Legen Sie das feuchte Pflanzengut nur um das Gefäß herum; achten Sie streng darauf, dass keine Erde in den Becher gelangt.",
+      "svgLabels": [
+        "FIG. 03 // 50cm Erdgrube, Sammelgefäß und Schicht aus feuchtem Laub",
+        "Runde Grube 50cm breit und knietief in feuchten Boden graben",
+        "Sauberen Becher waagerecht in der Grubenmitte fixieren",
+        "Zerdrücktes Gras und feuchtes Laub dick um Becher schichten",
+        "[KERN] Feuchtigkeitsverdampfung aus Gräsern verdreifacht Ertrag"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // EARTHEN PIT & GREEN FOLIAGE",
+        "title": "Thermisches Erdgewächshaus und Verdampfungsbooster",
+        "text": "Selbst bei scheinbar trockenem Boden birgt die Tiefe ab 40cm erhebliche Kapillarfeuchte. Das Umbetten mit zerquetschtem Grünzeug bricht Zellwände auf. Bei Sonneneinstrahlung steigt die Innentemperatur rasch über 55°C. Schmutz, Mineralien und Keime verbleiben im Boden, während reiner Wasserdampf aufsteigt und kondensiert.",
+        "fieldSpecs": [
+          {
+            "name": "Erd-Sonnendestille mit Pflanzenbiomasse",
+            "scientificName": "Solar Earth Pit Biomass Layer",
+            "categoryTag": "Sonnendestillation",
+            "imageFileName": "id-solar-still-green-foliage-pit.jpg",
+            "hudCode": "SS-01",
+            "hudStatus": "THERMAL VAPORIZING",
+            "traits": [
+              {
+                "label": "Grubenmaße",
+                "value": "50cm Breite × 45cm Tiefe"
+              },
+              {
+                "label": "Sammelgefäß",
+                "value": "Blechdose oder Campingbecher"
+              },
+              {
+                "label": "Verdampfung",
+                "value": "+300% durch zerdrücktes Gras"
+              },
+              {
+                "label": "Feuchte",
+                "value": "Erreicht 98% Sättigung"
+              }
+            ],
+            "fieldUse": "Gewinnung von reinem Destillat aus Bodenfeuchte und Wildkräutern in offenem Gelände"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Grube mit Folie überspannen, Ränder mit Erde abdichten und Stein für 45°-Trichter auflegen",
+      "description": "1. **Folie spannen & abdichten**: Decken Sie die Grube locker mit Klarsichtfolie ab und dichten Sie den gesamten Rand schwer mit Aushuberde ab.\n2. **Mittelgewicht auflegen**: Legen Sie vorsichtig einen glatten walnussgroßen Kieselstein exakt über die Becheröffnung auf die Folie.\n3. **45°-Trichter ausrichten**: Durch das Steingewicht senkt sich die Folie zu einem 45-Grad-Trichter; der tiefste Punkt muss 2 bis 3cm über der Becheröffnung schweben.",
+      "actionNote": "Ist der Kiesel zu schwer, reißt die Folie oder taucht in den Becher ein, wodurch Schmutzwasser hineinläuft.",
+      "svgLabels": [
+        "FIG. 04 // Folien-Erdabdichtung und Mittelstein für 45°-Trichter",
+        "Grube mit Folie überspannen und Rand mit schwerer Erde dichten",
+        "Glatten walnussgroßen Stein mittig über Gefäß auflegen",
+        "45°-Trichterneigung leitet Kondensationstropfen zum Becher",
+        "[KERN] Treibhauseffekt-Kondensation und automatische Schwerkraftsammlung"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 45-DEGREE CONDENSATION CONE",
+        "title": "Oberflächenspannungskondensation und Trichterschwerkraft",
+        "text": "Aufsteigender Dampf kondensiert an der von Außenluft gekühlten Folienunterseite. Eine ebene Folie ließe Tropfen zurück in die Erde fallen. Der durch den Stein geformte 45-Grad-Trichter nutzt die Oberflächenspannung: Tropfen gleiten zur tiefsten Spitze des Steins. Alle 3 bis 5 Sekunden überwindet ein Tropfen die Haltekraft und fällt präzise in den Becher.",
+        "fieldSpecs": [
+          {
+            "name": "45°-Trichter-Kondensator für Sonnendestille",
+            "scientificName": "Inverted Solar Still Condenser Cone",
+            "categoryTag": "Schwerkraftkondensator",
+            "imageFileName": "id-solar-still-condensed-droplets.jpg",
+            "hudCode": "SS-02",
+            "hudStatus": "ACTIVE DRIPPING",
+            "traits": [
+              {
+                "label": "Neigungswinkel",
+                "value": "40 bis 45 Grad Neigung"
+              },
+              {
+                "label": "Mittelstein",
+                "value": "Walnussgroß (50–80g)"
+              },
+              {
+                "label": "Tropfrate",
+                "value": "1 Tropfen alle 3–5 Sek."
+              },
+              {
+                "label": "Tagesertrag",
+                "value": "500–1000mL an Sonnentagen"
+              }
+            ],
+            "fieldUse": "Konzentration des gesamten aufsteigenden Dampfes in ein Auffanggefäß mittels Fluidspannung"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Giftpflanzen (Oleander/Giftsumach) einhüllen oder Grubenränder undicht lassen",
+    "description": "Werden bei der Beutelmethode giftige Pflanzen wie Oleander (tödliche Herzglykoside) oder Giftsumach (Urushiol) umschlossen, verdampfen giftige Alkaloide und kondensieren im Trinkwasser, was zu Herzstillstand führt. Werden die Ränder der Erd-Sonnendestille nicht luftdicht mit Erde beschwert, entweicht der Wasserdampf und Sie verdursten trotz anstrengenden Grabens.",
+    "consequence": "Tödliche Pflanzengiftvergiftung oder schwere Dehydratation durch Dampfverlust",
+    "prevention": "Verwenden Sie ausschließlich 100% sichere Laubbäume (Eiche, Ahorn, Weide, Kiefer) und treten Sie die Erde auf den Folienrändern der Grube fest an."
+  },
+  "faqs": [
+    {
+      "question": "Funktioniert die Wassergewinnung mit Beutel oder Sonnendestille auch bei Bewölkung oder Regen?",
+      "causeDiagnostic": "Blatt-Transpiration und Erdverdampfung arbeiten bei direkter Sonneneinstrahlung am intensivsten.",
+      "resolution": "An stark bewölkten Tagen sinkt die Ausbeute auf 20–30% ab, doch im Beutel bleibt es 5–10°C wärmer als draußen, sodass 100–200mL entstehen. Beginnt es zu regnen, warten Sie nicht auf Destillation: **Spannen Sie die Folie als Regenauffangbecken auf und filtern Sie das Wasser mit einem [Kohle-Sand-Wasserfilter](/protocol-01)**."
+    },
+    {
+      "question": "Kann man Meerwasser oder Urin in die Grube geben, um Trinkwasser an der Küste oder Wüste zu destillieren?",
+      "causeDiagnostic": "Bei 55°C verdampfen selektiv reine Wassermoleküle (H2O), während Salz (NaCl), Harnstoff und Toxine im Erdreich gebunden bleiben.",
+      "resolution": "**Ja, uneingeschränkt möglich.** Gießen Sie Meerwasser oder Urin **niemals in das Auffanggefäß**, sondern gleichmäßig auf den Erdboden und das Grünzeug darum. Bei Sonnenhitze bleiben Schadstoffe im Boden, und nur reiner Wasserdampf tropft geruchlos und salzfrei in den Becher."
+    },
+    {
+      "question": "Kann man den Beutel am nächsten Tag am selben Zweig lassen, um weiter Wasser zu sammeln?",
+      "causeDiagnostic": "Blätter, die über 24 Stunden hoher Gewächshaushitze ausgesetzt sind, verlieren Wasser, schließen Stomata und beginnen zu welken.",
+      "resolution": "Ein dauerhaftes Verbleiben erstickt das Blattwerk, stoppt die Verdunstung und führt zu Faulgeruch. **Lösen Sie den Beutel nach 24 Stunden und binden Sie ihn an einen anderen gesunden Ast**, um den Baum zu schonen und täglich viel Wasser zu gewinnen."
+    }
+  ],
+  "shortsScript": {
+    "hook": "Kein Wasser mehr in Wüste oder Wildnis? Mit einer Plastiktüte und Baumblättern können Sie täglich 1 Liter reines Überlebenswasser ernten!",
+    "body": "Erstens: Stülpen Sie einen Klarsichtbeutel über einen sonnigen Eichen- oder Ahornzweig und legen Sie einen Stein in die untere Ecke als Sammeltasche! Zweitens: Klemmen Sie ein Querholz ein, damit Blätter nicht im Wasser faulen, und binden Sie den Kragen dicht zu – reines Kondenswasser sammelt sich rasch! Drittens: Fehlen Bäume, graben Sie eine knietiefe Grube, stellen einen Becher mittig auf, füllen zerdrücktes Gras ein und spannen Folie darüber! Ein Kiesel in der Mitte formt einen 45-Grad-Trichter, der Erddampf in den Becher tropfen lässt! Niemals Giftpflanzen wie Oleander nutzen!"
+  },
+  "outcome": {
+    "title": "Stromloses Blatt-Transpirations- und Erd-Sonnendestillations-Trinkwassersystem",
+    "badge": "FINAL SPEC // TRANSPIRATION & SOLAR EARTH STILL SYSTEM",
+    "description": "Stromloses Notfall-Wassergewinnungssystem, das Baumblatt-Transpiration in hermetischen Beuteln mit Abstandsicherung vor Gerbstoffen fängt, kombiniert mit einer 50cm-Erd-Sonnendestille unter Nutzung zerdrückter Pflanzenbiomasse und eines 45°-Trichters zur solaren Destillation.",
+    "svgFileName": "pr30-outcome.svg",
+    "svgLabels": [
+      "PR-30 SYSTEM // STROMLOSE BLATT-TRANSPIRATION & ERD-SONNENDESTILLE",
+      "STAGE 01: UNGIFTIGER LAUBZWEIG-BEUTEL",
+      "Steintasche & dichte Blatthülle",
+      "STAGE 02: ABSTANDSHOLZ & DICHTER KRAGEN",
+      "Schutz vor Tanninen & Fäulnis",
+      "STAGE 03: 50CM ERDGRUBE & SAMMELBECHER",
+      "Feuchtes Gras verdreifacht Dampf",
+      "STAGE 04: 45°-TRICHTER DURCH STEIN",
+      "Folienneigung leitet Tropfen um",
+      "[KERNPRINZIP] Blatt-Transpiration & Erddampf über 45°-Trichter für 1L Trinkwasser täglich"
+    ]
+  },
+  "createdAt": "2026-11-12T01:50:38.970Z",
+  "contentHash": "2e0b5744254a5aa6",
+  "protocolId": "PR-30",
+  "category": "FOOD"
+}

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg30out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="leaf30out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="bag30out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="water30out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="soil30out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+    <pattern id="grid30out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow30out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Frame -->
+  <rect width="800" height="450" fill="url(#bg30out)"/>
+  <rect width="800" height="450" fill="url(#grid30out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f8fafc" font-family="monospace" font-size="12" font-weight="bold">PR-30 완성체 // 무동력 나뭇잎 증산 포집 및 지중 태양열 응축 담수화 시스템</text>
+
+  <!-- 4-Stage Horizontal Cards -->
+  <g filter="url(#shadow30out)">
+    <!-- STAGE 01 Card -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+    <text x="34" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 무독성 활엽수 투명 봉투 결속</text>
+
+    <!-- Visual 1: Branch with lush leaves enclosed in transparent bag weighted with rock -->
+    <path d="M60,140 Q100,165 155,160" stroke="#78350f" stroke-width="4.5" fill="none"/>
+    <path d="M85,152 Q105,135 125,130" stroke="#78350f" stroke-width="3" fill="none"/>
+    <path d="M115,160 Q130,175 145,178" stroke="#78350f" stroke-width="2.5" fill="none"/>
+    <!-- Leaves -->
+    <ellipse cx="98" cy="138" rx="14" ry="7" transform="rotate(-15 98 138)" fill="url(#leaf30out)" stroke="#166534" stroke-width="1"/>
+    <ellipse cx="122" cy="132" rx="15" ry="8" transform="rotate(-5 122 132)" fill="url(#leaf30out)" stroke="#166534" stroke-width="1"/>
+    <ellipse cx="138" cy="158" rx="15" ry="7" transform="rotate(20 138 158)" fill="url(#leaf30out)" stroke="#166534" stroke-width="1"/>
+    <ellipse cx="110" cy="170" rx="14" ry="7" transform="rotate(35 110 170)" fill="url(#leaf30out)" stroke="#166534" stroke-width="1"/>
+    <!-- Transparent bag enclosing leaves with weighted corner -->
+    <path d="M72,130 C125,115 160,135 165,175 C168,205 145,245 120,250 C95,255 75,230 70,185 Z" fill="url(#bag30out)" stroke="#38bdf8" stroke-width="1.8"/>
+    <!-- Pebble in bottom corner -->
+    <ellipse cx="120" cy="244" rx="15" ry="8" fill="#64748b" stroke="#94a3b8" stroke-width="1.2"/>
+    <!-- Water pooling -->
+    <path d="M108,245 Q120,248 132,245 Q120,249 108,245 Z" fill="url(#water30out)"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="36" y="341" fill="#bae6fd" font-family="monospace" font-size="8.5">주먹 돌로 물주머니 형성 &amp; 잎 밀폐</text>
+
+    <!-- STAGE 02 Card -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#06b6d4" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#0891b2" stroke-width="1"/>
+    <text x="228" y="102" fill="#22d3ee" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 잎 수침 방지 지지목 설치</text>
+
+    <!-- Visual 2: Separator branch propping up leaves and neck tied tightly -->
+    <path d="M250,135 Q290,155 350,150" stroke="#78350f" stroke-width="4.5" fill="none"/>
+    <!-- Tie at neck -->
+    <ellipse cx="258" cy="138" rx="8" ry="14" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <!-- Leaves propped high -->
+    <ellipse cx="295" cy="142" rx="16" ry="8" transform="rotate(-10 295 142)" fill="url(#leaf30out)" stroke="#166534" stroke-width="1"/>
+    <ellipse cx="325" cy="138" rx="16" ry="8" transform="rotate(10 325 138)" fill="url(#leaf30out)" stroke="#166534" stroke-width="1"/>
+    <!-- Cross spacer stick keeping leaves away from bottom -->
+    <line x1="280" y1="180" x2="335" y2="185" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+    <!-- Bag boundary with water reservoir below spacer -->
+    <path d="M260,135 C310,120 355,135 360,175 C365,215 340,250 315,252 C290,254 265,225 258,175 Z" fill="url(#bag30out)" stroke="#22d3ee" stroke-width="1.8"/>
+    <!-- Clear gathered water reservoir -->
+    <ellipse cx="315" cy="246" rx="20" ry="7" fill="url(#water30out)" stroke="#bae6fd" stroke-width="1"/>
+    <!-- Water drops running down inside wall -->
+    <circle cx="285" cy="205" r="2" fill="#38bdf8"/>
+    <circle cx="340" cy="215" r="2" fill="#38bdf8"/>
+    <circle cx="318" cy="228" r="2.5" fill="#38bdf8"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="230" y="341" fill="#a5f3fc" font-family="monospace" font-size="8.5">쓴맛·부패 방지 받침대 &amp; 끈 밀봉</text>
+
+    <!-- STAGE 03 Card -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#d97706" stroke-width="1"/>
+    <text x="424" y="102" fill="#fbbf24" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 50cm 흙구덩이 &amp; 물받이 통</text>
+
+    <!-- Visual 3: Pit cross-section with container in center and green mash on edges -->
+    <path d="M425,150 L445,245 L550,245 L570,150 Z" fill="url(#soil30out)" stroke="#78350f" stroke-width="1.8"/>
+    <!-- Green mash bed on pit slopes -->
+    <ellipse cx="445" cy="235" rx="14" ry="6" fill="#15803d" stroke="#4ade80" stroke-width="1"/>
+    <ellipse cx="550" cy="235" rx="14" ry="6" fill="#15803d" stroke="#4ade80" stroke-width="1"/>
+    <!-- Water collecting container in center -->
+    <rect x="480" y="195" width="35" height="48" rx="2" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="484" y="222" width="27" height="18" fill="url(#water30out)"/>
+    <!-- Sun rays heating soil and vegetation -->
+    <line x1="455" y1="125" x2="455" y2="155" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="495" y1="120" x2="495" y2="150" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="535" y1="125" x2="535" y2="155" stroke="#fde047" stroke-width="1.8"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="424" y="341" fill="#fde68a" font-family="monospace" font-size="8.5">젖은 풀잎·낙엽 배치로 증발량 3배 증대</text>
+
+    <!-- STAGE 04 Card -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0b1120" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+    <text x="618" y="102" fill="#34d399" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 45도 역원뿔 응축 조약돌</text>
+
+    <!-- Visual 4: Inverted cone membrane with pebble dropping water into container -->
+    <path d="M618,155 L635,245 L745,245 L762,155 Z" fill="url(#soil30out)" stroke="#78350f" stroke-width="1.8"/>
+    <rect x="673" y="198" width="34" height="44" rx="2" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="677" y="222" width="26" height="18" fill="url(#water30out)"/>
+    <!-- Inverted cone clear membrane -->
+    <path d="M616,155 Q655,160 690,192 Q725,160 764,155" fill="none" stroke="#38bdf8" stroke-width="2.2"/>
+    <!-- Rocks weighting edges -->
+    <circle cx="616" cy="154" r="7" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="764" cy="154" r="7" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+    <!-- Center stone weighting membrane -->
+    <ellipse cx="690" cy="192" rx="9" ry="6" fill="#475569" stroke="#cbd5e1" stroke-width="1.5"/>
+    <!-- Water droplet falling into container -->
+    <circle cx="690" cy="204" r="2.5" fill="#38bdf8"/>
+    <circle cx="690" cy="214" r="2" fill="#38bdf8"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="618" y="341" fill="#a7f3d0" font-family="monospace" font-size="8.5">밀폐 투명 막 위 조약돌로 물방울 유도</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[완성 원리] 살아있는 잎의 증산 작용과 땅속 태양열 증발을 45도 깔때기로 모아 하루 1L 식수 채집</text>
+</svg>

@@ -1,0 +1,269 @@
+{
+  "title": "Cómo Recolectar Agua Potable con Bolsa Plástica, Transpiración Foliar y Destilador Solar de Tierra",
+  "summary": "En situaciones de aislamiento o desastre sin arroyos ni lluvia y con el agua agotada, esta tecnología de hidratación combina la transpiración natural de hojas de árboles no tóxicos con la evaporación y condensación solar de la humedad subterránea para cosechar hasta 1 litro diario de agua destilada pura sin hervir. Si dispone de filtros comerciales o agua embotellada, priorícelos; en caso de carencia total, recurra al 100% a una bolsa plástica y piedras.",
+  "threatLevelText": "CRÍTICO // ACCIÓN INMEDIATA REQUERIDA",
+  "timeRequired": "30 min instalación // 6–12 h recolección",
+  "difficulty": "EASY // No requiere herramientas",
+  "outputPerHour": "50–100mL por hora (Hasta 1L al día)",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "1–2 bolsas plásticas transparentes grandes sin agujeros (o lámina plástica de 1.5m×1.5m)",
+      "desc": "Barrera impermeable que deja pasar más del 90% de luz solar y retiene el vapor para inducir condensación"
+    },
+    {
+      "id": "m2",
+      "name": "3–4 piedras lisas (una del tamaño de un puño y otra de una nuez)",
+      "desc": "Pesas para formar una bolsa colectora en la esquina y deprimir la lámina del hoyo en un cono invertido de 45 grados"
+    },
+    {
+      "id": "m3",
+      "name": "1 lata vacía o taza plástica limpia (o plato de piedra cóncavo)",
+      "desc": "Recipiente colector ubicado en el centro para recibir el agua pura condensada que gotea del cono"
+    },
+    {
+      "id": "m4",
+      "name": "Ramas vivas de roble o arce no tóxicos y dos puñados de hierba verde machacada y follaje húmedo",
+      "desc": "Fuente natural que libera agua por los estomas foliares o triplica la humedad interior del hoyo"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Cubrir una Rama de Árbol No Tóxico con Bolsa Transparente y Colocar una Piedra en la Esquina",
+      "description": "1. **Seleccionar Árboles No Tóxicos**: Evite adelfas o zumaques venenosos; elija ramas con follaje denso orientadas al sur (roble, castaño, arce o sauce).\n2. **Envolver con Bolsa Transparente**: Deslice suavemente una bolsa plástica transparente grande desde la punta de la rama, envolviendo de 30 a 50 hojas sanas.\n3. **Formar una Bolsa Colectora**: Introduzca una piedra lisa del tamaño de un puño en la esquina inferior más baja de la bolsa para que el peso forme un receptáculo cónico.",
+      "actionNote": "La esquina con la piedra debe colgar al menos 20cm por debajo de la rama para que las gotas resbalen directamente al fondo sin mojar las hojas.",
+      "svgLabels": [
+        "FIG. 01 // Rama de Árbol Cubierta con Bolsa Plástica y Piedra Lastre",
+        "Seleccionar Ramas al Sol de Robles o Arces No Tóxicos",
+        "Deslizar Bolsa Plástica sin Fugas y Colocar Piedra en Esquina",
+        "Crear Punto Bajo Colector para Escurrimiento de Gotas",
+        "[CLAVE] Formar Depósito Inferior para Acumular Vapor Foliar Condensado"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRANSPIRATION BAG ON FOLIAGE",
+        "title": "Transpiración Foliar de Frondosas y Dinámica de Gravedad",
+        "text": "Las plantas expulsan a la atmósfera más del 95% del agua absorbida por las raíces en forma de vapor puro a través de los estomas del envés de las hojas. Al sellar las hojas en una bolsa transparente, el efecto invernadero eleva la temperatura interna por encima de 40°C, disparando la transpiración mientras el aire exterior enfría el plástico, formando condensación inmediata. La piedra crea una pendiente por donde las gotas resbalan por gravedad, produciendo agua destilada estéril sin necesidad de fuego.",
+        "fieldSpecs": [
+          {
+            "name": "Bolsa de Condensación por Transpiración Arbórea",
+            "scientificName": "Plant Transpiration Condensation Bag",
+            "categoryTag": "Hidratación en Campo",
+            "imageFileName": "id-transpiration-bag-tree.jpg",
+            "hudCode": "TR-01",
+            "hudStatus": "ACTIVE CONDENSATION",
+            "traits": [
+              {
+                "label": "Especies",
+                "value": "Roble, arce y frondosas seguras"
+              },
+              {
+                "label": "Temp Interna",
+                "value": "38–45°C bajo sol directo"
+              },
+              {
+                "label": "Pureza",
+                "value": "Grado destilado sin bacterias"
+              },
+              {
+                "label": "Rendimiento",
+                "value": "30–60mL/h al mediodía claro"
+              }
+            ],
+            "fieldUse": "Obtención de agua potable pura sin dañar árboles cuando no existe agua superficial"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Colocar un Palo Separador para Aislar las Hojas del Agua y Atar el Cuello Herméticamente",
+      "description": "1. **Instalar Separador**: Si las hojas quedan sumergidas en el agua acumulada, desprenden taninos amargos y se pudren; coloque una ramita corta debajo de las hojas para mantenerlas elevadas.\n2. **Atar Cuello Firmemente**: Junte la boca de la bolsa alrededor del tallo de la rama y átela con fuerza dando 3 o 4 vueltas con cordel o cordones de zapatos.\n3. **Verificar Hermeticidad**: Compruebe con los dedos que no escape brisa húmeda ni vapor por la atadura.",
+      "actionNote": "Si ata el cuello con holgura, el vapor a presión escapará a la atmósfera y apenas obtendrá unas gotas en todo el día.",
+      "svgLabels": [
+        "FIG. 02 // Colocación de Palo Separador y Atado Hermético al Tallo",
+        "Cruzar Ramita Corta Bajo las Hojas para Dejar Espacio Libre",
+        "Evitar Sumergir Hojas para Frenar Descomposición y Taninos",
+        "Atar Boca de la Bolsa Firmemente al Tallo con Cordel",
+        "[CLAVE] Sellado Cero Fugas y Conservación de Pureza del Agua"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // SPACER STICK & SEALED COLLAR",
+        "title": "Aislamiento contra Taninos y Sellado Hermético del Cuello",
+        "text": "Las hojas de árboles como robles contienen taninos, compuestos solubles que imparten un sabor amargo y astringente. Si las hojas permanecen sumergidas medio día en el agua, la presión osmótica libera taninos que oscurecen el líquido y pueden causar malestar gástrico. Al asegurar una separación vertical de más de 5cm, solo las gotas de condensación pura resbalan por las paredes hacia el fondo, garantizando un agua limpia, dulce y segura.",
+        "fieldSpecs": [
+          {
+            "name": "Separador de Hojas y Agua Acumulada",
+            "scientificName": "Leaf-Water Separation Spacer",
+            "categoryTag": "Protección de Agua",
+            "imageFileName": "id-water-reservoir-spacer-stick.jpg",
+            "hudCode": "TR-02",
+            "hudStatus": "CLEAR PURIFIED",
+            "traits": [
+              {
+                "label": "Distancia",
+                "value": "3 falanges (más de 5cm)"
+              },
+              {
+                "label": "Método Cierre",
+                "value": "Atadura tensa triple vuelta"
+              },
+              {
+                "label": "Sabor",
+                "value": "0% Taninos agua inodora"
+              },
+              {
+                "label": "Rotación",
+                "value": "Cambiar rama cada 24 horas"
+              }
+            ],
+            "fieldUse": "Prevenir que el agua recolectada tome sabor amargo o desarrolle bacterias de putrefacción"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Cavar un Hoyo Hasta la Rodilla, Colocar Recipiente al Centro y Rodear con Hierba Machacada",
+      "description": "1. **Excavación**: Si no hay árboles grandes o necesita agua adicional, elija tierra húmeda o lechos secos soleados y cave un hoyo circular de 50cm de ancho y 45–50cm de profundidad.\n2. **Fijar Recipiente**: Nivele una lata limpia o taza en el centro exacto del fondo del hoyo cuidando que no caiga tierra dentro.\n3. **Añadir Vegetación**: Cubra el suelo alrededor del recipiente con una capa gruesa de malas hierbas y hojas verdes machacadas a mano.",
+      "actionNote": "Coloque la vegetación únicamente alrededor del recipiente; evite arrojar restos de tierra u hojas dentro de la taza.",
+      "svgLabels": [
+        "FIG. 03 // Hoyo de 50cm, Recipiente Colector y Base de Hojas Húmedas",
+        "Cavar Hoyo Circular de 50cm de Ancho y Profundo en Tierra Húmeda",
+        "Fijar Recipiente Limpio Nivelado en el Centro del Fondo",
+        "Colocar Hierbas Verdes Machacadas Alrededor del Recipiente",
+        "[CLAVE] La Vaporización de Hojas Machacadas Triplica el Agua Obtenida"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // EARTHEN PIT & GREEN FOLIAGE",
+        "title": "Vaporización Térmica Subterránea y Amplificación por Biomasa",
+        "text": "Aunque la superficie de la tierra parezca seca, al excavar 40 o 50cm surge humedad por capilaridad. Al rodear el recipiente con follaje fresco machacado—rompiendo las paredes celulares para liberar savia—la temperatura interna supera los 55°C por el calor solar acumulado. La humedad del suelo y de las plantas se vaporiza intensamente, dejando atrás sales, minerales y bacterias, evaporando exclusivamente moléculas puras de H2O.",
+        "fieldSpecs": [
+          {
+            "name": "Hoyo de Destilación Solar y Capa Vegetal",
+            "scientificName": "Solar Earth Pit Biomass Layer",
+            "categoryTag": "Destilación Solar",
+            "imageFileName": "id-solar-still-green-foliage-pit.jpg",
+            "hudCode": "SS-01",
+            "hudStatus": "THERMAL VAPORIZING",
+            "traits": [
+              {
+                "label": "Dimensiones",
+                "value": "50cm diámetro × 45cm fondo"
+              },
+              {
+                "label": "Colector",
+                "value": "Lata metálica o taza de campo"
+              },
+              {
+                "label": "Aumento Evap",
+                "value": "+300% con hojas machacadas"
+              },
+              {
+                "label": "Humedad Pit",
+                "value": "98% de saturación interna"
+              }
+            ],
+            "fieldUse": "Destilar agua pura a partir de tierra húmeda y maleza machacada en terrenos abiertos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Cubrir Hoyo con Plástico Transparente, Sellar Bordes con Tierra y Colocar Piedra para Cono de 45°",
+      "description": "1. **Extender y Sellar**: Cubra el hoyo holgadamente con plástico transparente y tape todo el contorno con tierra y piedras pesadas para sellarlo herméticamente.\n2. **Colocar Pesa Central**: Deposite con suavidad una piedra lisa del tamaño de una nuez en el centro del plástico, alineada sobre la taza colectora.\n3. **Ajustar Cono de 45°**: El peso formará un cono invertido en V con pendiente de 45°; asegúrese de que la punta inferior cuelgue a 2 o 3cm sobre la boca del recipiente sin tocarlo.",
+      "actionNote": "Si la piedra es demasiado pesada, el plástico puede rasgarse o tocar el recipiente, contaminando el agua con tierra.",
+      "svgLabels": [
+        "FIG. 04 // Sellado con Tierra y Piedra Central para Cono Invertido a 45°",
+        "Cubrir Hoyo con Plástico y Sellar Bordes con Tierra Pesada",
+        "Colocar Piedra Lisa del Tamaño de Nuez Sobre el Colector",
+        "Pendiente de 45° Canaliza Gotas Condensadas Hacia la Taza",
+        "[CLAVE] Condensación por Efecto Invernadero y Recolección Automática"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 45-DEGREE CONDENSATION CONE",
+        "title": "Condensación por Tensión Superficial y Goteo Focalizado",
+        "text": "El vapor que asciende choca contra la cara inferior del plástico frío por el aire exterior y se condensa en gotas. Si el plástico estuviese plano, las gotas caerían de vuelta a la tierra. El cono invertido a 45° aprovecha la tensión superficial: las gotas resbalan hacia el punto más bajo donde reposa la piedra central. Al superar la tensión superficial cada 3 a 5 segundos, caen con precisión dentro de la taza.",
+        "fieldSpecs": [
+          {
+            "name": "Cono Invertido Condensador para Destilador Solar",
+            "scientificName": "Inverted Solar Still Condenser Cone",
+            "categoryTag": "Condensador por Gravedad",
+            "imageFileName": "id-solar-still-condensed-droplets.jpg",
+            "hudCode": "SS-02",
+            "hudStatus": "ACTIVE DRIPPING",
+            "traits": [
+              {
+                "label": "Inclinación",
+                "value": "Ángulo de 40 a 45 grados"
+              },
+              {
+                "label": "Piedra Pesa",
+                "value": "Tamaño nuez (50–80g)"
+              },
+              {
+                "label": "Frecuencia",
+                "value": "1 gota cada 3–5 segundos"
+              },
+              {
+                "label": "Cosecha Diaria",
+                "value": "500–1000mL en días claros"
+              }
+            ],
+            "fieldUse": "Concentrar todo el vapor solar evaporado hacia un solo colector mediante tensión de fluidos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Cubrir Plantas Venenosas (Adelfas/Zumaques) o Dejar Fugas de Aire en los Bordes del Hoyo",
+    "description": "Al usar bolsas de transpiración, envolver especies letales como adelfas (oleandrina) o zumaques venenosos (urushiol) hace que alcaloides tóxicos se evaporen y condensen directamente en el agua potable, provocando paros cardíacos fatales. En destiladores solares de tierra, si no sella los bordes con abundante tierra, el vapor caliente escapará y no obtendrá ni un trago tras horas de esfuerzo.",
+    "consequence": "Envenenamiento mortal por toxinas vegetales o deshidratación severa por fugas de vapor",
+    "prevention": "Utilice únicamente árboles 100% seguros (roble, arce, pino, sauce) y pise con firmeza la tierra sobre los bordes del plástico para asegurar un sellado hermético total."
+  },
+  "faqs": [
+    {
+      "question": "¿Puedo recolectar agua con bolsas o destiladores de tierra en días nublados o lluviosos?",
+      "causeDiagnostic": "La transpiración foliar y la evaporación del suelo funcionan con máxima eficacia bajo radiación solar directa.",
+      "resolution": "En días muy nublados la producción desciende al 20–30% del volumen normal, aunque el interior de la bolsa se mantiene de 5 a 10°C más cálido que el exterior, dando 100–200mL. Si llueve, no espere la destilación: **extienda el plástico transparente para recoger agua de lluvia directamente y fíltrala con un [Filtro de Carbón y Arena](/protocol-01)** para obtener agua rápida en cantidad."
+    },
+    {
+      "question": "¿Se puede verter agua de mar u orina en el hoyo para destilar agua en la costa o el desierto?",
+      "causeDiagnostic": "La destilación solar evapora solo moléculas de agua pura (H2O) a 55°C, mientras la sal, la urea y toxinas quedan fijadas en la tierra.",
+      "resolution": "**Sí, totalmente.** Nunca vierta agua de mar ni orina en la taza colectora central; viértala alrededor, sobre la tierra y hojas machacadas. Con el calor solar, las impurezas quedan retenidas en el suelo y solo el vapor puro asciende y gotea en el vaso, brindando agua potable sin sal ni mal olor."
+    },
+    {
+      "question": "¿Puedo dejar la bolsa en la misma rama para seguir recolectando agua al día siguiente?",
+      "causeDiagnostic": "Las hojas sometidas a altas temperaturas en una bolsa cerrada durante más de 24 horas pierden humedad, cierran sus estomas y se marchitan.",
+      "resolution": "Dejar la bolsa en la misma rama asfixia el follaje, detiene la producción de agua y causa olor a descomposición. **Tras 24 horas de recolección, retire la bolsa y muévala a otra rama sana y frondosa** para proteger el árbol y mantener un suministro diario continuo."
+    }
+  ],
+  "shortsScript": {
+    "hook": "¿Te quedaste sin agua en el desierto o en la montaña? ¡Con una bolsa plástica y hojas de árbol puedes cosechar 1 litro de agua pura cada día!",
+    "body": "Primero, cubre una rama de roble o arce soleada con una bolsa plástica y pon una piedra en la esquina para crear un pozo colector. Segundo, coloca una ramita separadora para que las hojas no toquen el agua y ata el cuello firmemente: ¡el vapor de las hojas goteará limpio! Tercero, si no hay árboles, cava un hoyo hasta la rodilla, pon una taza al centro, rodea con hierbas machacadas y cubre con plástico transparente. Pon una piedrecilla al centro para hacer un cono de 45 grados y el vapor de la tierra caerá dentro de la taza. ¡Nunca uses plantas venenosas como la adelfa!"
+  },
+  "outcome": {
+    "title": "Sistema de Hidratación por Transpiración Foliar y Destilador Solar de Tierra sin Energía",
+    "badge": "FINAL SPEC // TRANSPIRATION & SOLAR EARTH STILL SYSTEM",
+    "description": "Sistema dual de supervivencia sin energía que combina la captura de transpiración foliar en árboles no tóxicos mediante bolsas herméticas con separadores para evitar taninos, junto con un destilador solar de 50cm que utiliza biomasa machacada y un cono invertido a 45 grados para destilar agua pura bajo el calor solar.",
+    "svgFileName": "pr30-outcome.svg",
+    "svgLabels": [
+      "PR-30 COMPLETO // SISTEMA SOLAR DE TRANSPIRACIÓN FOLIAR Y DESTILADOR DE TIERRA",
+      "STAGE 01: ATADO EN RAMA DE FRONDOSA",
+      "Piedra Colectora y Bolsa sin Fugas",
+      "STAGE 02: PALO SEPARADOR Y SELLADO",
+      "Evita Taninos y Atado al Cuello",
+      "STAGE 03: HOYO DE 50CM Y COLECTOR",
+      "Hierba Machacada Triplica Vapor",
+      "STAGE 04: CONO INVERTIDO A 45°",
+      "Plástico con Pesa Canaliza Gotas",
+      "[PRINCIPIO CLAVE] Transpiración Foliar y Vapor Terrestre Canalizados a 45° para Cosechar 1L al Día"
+    ]
+  },
+  "createdAt": "2026-11-12T01:50:38.970Z",
+  "contentHash": "2e0b5744254a5aa6",
+  "protocolId": "PR-30",
+  "category": "FOOD"
+}

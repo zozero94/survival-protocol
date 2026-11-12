@@ -1,0 +1,269 @@
+{
+  "title": "How to Collect Drinking Water Using a Plastic Bag, Leaf Transpiration, and a Solar Earth Still",
+  "summary": "When all drinking water is exhausted with no streams or rain during wilderness or disaster isolation, this zero-power survival hydration technology combines the natural transpiration of living non-toxic broadleaf foliage with the solar thermal evaporation and condensation of ground moisture to harvest up to 1 liter of pure drinkable distilled water daily without boiling. If commercial water filters or bottled water are available, prioritize them; in absolute emergencies, rely 100% on a simple transparent bag and pebbles.",
+  "threatLevelText": "CRITICAL // IMMEDIATE ACTION REQUIRED",
+  "timeRequired": "30 min setup // 6–12 hr harvest",
+  "difficulty": "EASY // No tools required",
+  "outputPerHour": "50–100mL per hour (Up to 1L daily)",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "1–2 large intact transparent plastic bags (or 1.5m×1.5m clear plastic sheet/wrap)",
+      "desc": "Clear waterproof barrier transmitting 90%+ sunlight while trapping internal water vapor to induce condensation"
+    },
+    {
+      "id": "m2",
+      "name": "3–4 smooth pebbles (one fist-sized, one walnut-sized)",
+      "desc": "Weights to create a low collection pocket in the bag and depress the pit sheet into a 45-degree inverted cone"
+    },
+    {
+      "id": "m3",
+      "name": "1 clean empty tin can or plastic cup (or concave stone dish)",
+      "desc": "Collection container positioned to catch purified condensate dripping from the apex of the inverted cone"
+    },
+    {
+      "id": "m4",
+      "name": "Living non-toxic oak/maple branches and two handfuls of crushed green grass/wet foliage",
+      "desc": "Natural hydration source releasing soil moisture through leaf stomata or tripling ground pit humidity"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Enclose a Sunlit Non-Toxic Broadleaf Branch in a Clear Bag with a Fist-Sized Rock",
+      "description": "1. **Select Non-Toxic Trees**: Avoid toxic flora like oleander or poison sumac; choose sun-drenched southern branches of oak, chestnut, maple, or willow with dense, broad leaves.\n2. **Enclose with Clear Bag**: Gently slide a large clear plastic bag over the branch tip without tearing leaves, encapsulating 30 to 50 healthy leaves.\n3. **Form a Water Sump**: Place a smooth fist-sized stone in the lowest bottom corner of the bag so gravity pulls the corner downward into a steep conical collection pouch.",
+      "actionNote": "The weighted rock corner must hang at least 20cm below the branch so condensed water slides directly into the sump without wetting the leaves.",
+      "svgLabels": [
+        "FIG. 01 // Enclosing Sunlit Broadleaf Branch in Clear Bag with Rock Weight",
+        "Select Sun-Drenched Non-Toxic Oak/Maple Branch Tips",
+        "Slide Intact Clear Bag Deeply & Place Fist-Sized Rock in Corner",
+        "Create Lowest Gravity Sump for Water Droplet Pooling",
+        "[CORE] Form Lowest Water Reservoir to Collect Transpiration Condensate"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRANSPIRATION BAG ON FOLIAGE",
+        "title": "Broadleaf Foliar Transpiration & Gravity Sump Fluid Dynamics",
+        "text": "Plants release over 95% of water absorbed by roots into the atmosphere as pure gaseous vapor through stomata on leaf undersides. Sealing foliage in a clear plastic bag raises internal temperatures above 40°C via the greenhouse effect, massively boosting transpiration rates while the cooler ambient air outside causes immediate condensation on the bag walls. A fist-sized stone creates a focused low point where droplets roll down under gravity, extracting sterile, bacteria-free distilled water without requiring fire.",
+        "fieldSpecs": [
+          {
+            "name": "Tree Branch Transpiration Condensation Bag",
+            "scientificName": "Plant Transpiration Condensation Bag",
+            "categoryTag": "Field Hydration",
+            "imageFileName": "id-transpiration-bag-tree.jpg",
+            "hudCode": "TR-01",
+            "hudStatus": "ACTIVE CONDENSATION",
+            "traits": [
+              {
+                "label": "Tree Type",
+                "value": "Non-toxic Oak/Maple"
+              },
+              {
+                "label": "Internal Temp",
+                "value": "38–45°C under direct sun"
+              },
+              {
+                "label": "Purity",
+                "value": "0% Bacteria Distilled Grade"
+              },
+              {
+                "label": "Hourly Yield",
+                "value": "30–60mL (Clear midday)"
+              }
+            ],
+            "fieldUse": "Harvesting pure drinking water without harming living trees when surface water is completely absent"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Insert a Spacer Stick to Keep Leaves out of Water and Seal the Collar Tightly",
+      "description": "1. **Install Spacer Stick**: If leaves sit submerged in pooled water, tannins seep out and leaves rot; wedge a short clean twig crosswise beneath the foliage to hold it elevated.\n2. **Tie Collar Tightly**: Gather the bag opening snugly around the main branch stem and wrap cordage or shoelaces 3 to 4 turns, tying firmly.\n3. **Inspect Air Seal**: Check with your fingers for any leaking breeze or escaping humidity around the tied collar.",
+      "actionNote": "If the collar is tied loosely, pressurized water vapor escapes into the atmosphere and only a few droplets will collect all day.",
+      "svgLabels": [
+        "FIG. 02 // Spacer Stick Installation & Collar Air-Tight Tie",
+        "Cross-Wedge Short Twig Beneath Leaves to Maintain Clearance",
+        "Prevent Foliage Immersion, Rotting, and Tannin Bitterness",
+        "Tie Bag Opening Snugly Around Branch Collar with Cord",
+        "[CORE] Zero Vapor Leakage Seal & Preserving Pure Water Taste"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // SPACER STICK & SEALED COLLAR",
+        "title": "Tannin Contamination Prevention & Hermetic Collar Engineering",
+        "text": "Deciduous leaves such as oak and chestnut contain astringent, bitter-tasting phenolic compounds called tannins. If leaves remain submerged in collected water for half a day, osmotic pressure leaches tannins into the reservoir, turning the water bitter, dark, and potentially irritating to the stomach. Maintaining a 5cm vertical clearance between the foliage and the water reservoir allows pure condensate to trickle cleanly down the walls into the sump, preserving fresh, sweet, and uncontaminated drinking water.",
+        "fieldSpecs": [
+          {
+            "name": "Foliage Water-Separation Spacer",
+            "scientificName": "Leaf-Water Separation Spacer",
+            "categoryTag": "Water Protection",
+            "imageFileName": "id-water-reservoir-spacer-stick.jpg",
+            "hudCode": "TR-02",
+            "hudStatus": "CLEAR PURIFIED",
+            "traits": [
+              {
+                "label": "Clearance Gap",
+                "value": "3 finger joints (5cm+)"
+              },
+              {
+                "label": "Sealing Method",
+                "value": "Triple-wrap tension cord"
+              },
+              {
+                "label": "Flavor Integrity",
+                "value": "0% Tannin odorless water"
+              },
+              {
+                "label": "Branch Rotation",
+                "value": "Rotate branch every 24 hr"
+              }
+            ],
+            "fieldUse": "Ensuring harvested transpiration water remains sweet, crystal-clear, and free of rot bacteria"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Excavate a Knee-Deep Earthen Pit, Place a Center Catch Cup, and Bed with Mashed Foliage",
+      "description": "1. **Dig Pit**: When large trees are unavailable or extra water is required, choose sun-exposed damp soil or dry streambeds and dig a round pit 50cm wide and 45–50cm deep.\n2. **Anchor Container**: Level a wide-mouth tin can or cup firmly into the exact center of the pit floor so dirt cannot tumble in.\n3. **Pack Crushed Foliage**: Surround the cup on the pit floor with a thick layer of freshly crushed green weeds, grass, and damp leaf mulch.",
+      "actionNote": "Pack green vegetation only around the container base; take care not to drop any soil particles or organic debris into the cup.",
+      "svgLabels": [
+        "FIG. 03 // 50cm Earth Excavation, Catch Container & Damp Foliage Bed",
+        "Excavate Round Pit 50cm Wide and Knee-Deep in Moist Soil",
+        "Anchor Wide-Mouth Clean Cup Horizontally in Pit Center",
+        "Pack Crushed Green Weeds and Wet Mulch Thickly Around Cup",
+        "[CORE] Mashed Foliage Vaporization Triples Hourly Moisture Yield"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // EARTHEN PIT & GREEN FOLIAGE",
+        "title": "Thermal Vaporization in Earthen Pit & Biomass Humidity Amplification",
+        "text": "Even when ground surface soil appears bone-dry, digging 40 to 50cm down reveals cool moisture trapped by capillary action. Surrounding the catch container with freshly crushed vegetation—rupturing plant cell walls to release sap—causes internal pit temperatures to exceed 55°C under greenhouse solar heating. Soil and plant moisture vaporizes rapidly into the trapped air, while heavy minerals, dirt, and salts remain behind, allowing pure H2O molecules to distill naturally.",
+        "fieldSpecs": [
+          {
+            "name": "Solar Earth Pit Biomass Layer",
+            "scientificName": "Solar Earth Pit Biomass Layer",
+            "categoryTag": "Solar Distillation",
+            "imageFileName": "id-solar-still-green-foliage-pit.jpg",
+            "hudCode": "SS-01",
+            "hudStatus": "THERMAL VAPORIZING",
+            "traits": [
+              {
+                "label": "Pit Dimensions",
+                "value": "50cm wide × 45cm deep"
+              },
+              {
+                "label": "Catch Vessel",
+                "value": "Metal tin can or camp cup"
+              },
+              {
+                "label": "Evaporation Boost",
+                "value": "+300% with crushed foliage"
+              },
+              {
+                "label": "Internal Humidity",
+                "value": "Reaches 98% saturation"
+              }
+            ],
+            "fieldUse": "Distilling pure water from moist subsurface earth and crushed wild weeds in open or arid terrain"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Cover Pit with Clear Sheet, Berm Edges with Soil, and Center a Pebble for a 45° Cone",
+      "description": "1. **Spread Sheet & Berm**: Lay a clear plastic sheet loosely across the pit opening; seal all perimeter edges heavily with excavated soil and rocks to make it 100% airtight.\n2. **Place Center Weight**: Gently place a smooth walnut-sized pebble on the sheet directly above the center catch cup.\n3. **Tune 45° Inverted Cone**: The stone weight creates a 45-degree inverted funnel; ensure the lowest stone tip hangs 2 to 3cm suspended directly over the cup opening without touching.",
+      "actionNote": "If the pebble is too heavy, the sheet may tear or dip into the cup, allowing dirt to contaminate your drinking water.",
+      "svgLabels": [
+        "FIG. 04 // Sheet Soil Berm Seal & Center Pebble 45° Inverted Cone",
+        "Cover Pit with Clear Sheet & Seal Outer Rim with Heavy Dirt",
+        "Rest Walnut-Sized Smooth Pebble Centered Over Catch Vessel",
+        "45° Inverted Slope Channels Condensed Droplets to Cup",
+        "[CORE] Greenhouse Effect Condensation & Automatic Gravity Collection"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 45-DEGREE CONDENSATION CONE",
+        "title": "Surface Tension Condensation & Focal Point Gravity Dripping",
+        "text": "Vapor rising from the heated pit strikes the underside of the clear sheet, which is cooled by outside air, causing rapid condensation. If the sheet were flat, droplets would fall uselessly back onto the dirt. A 45-degree inverted cone created by the central pebble utilizes surface tension: droplets cling to the plastic, glide inward along the slope, and pool at the stone apex. When droplet weight overcomes surface tension every 3 to 5 seconds, a bead drops cleanly into the cup.",
+        "fieldSpecs": [
+          {
+            "name": "Inverted Solar Still Condenser Cone",
+            "scientificName": "Inverted Solar Still Condenser Cone",
+            "categoryTag": "Gravity Condenser",
+            "imageFileName": "id-solar-still-condensed-droplets.jpg",
+            "hudCode": "SS-02",
+            "hudStatus": "ACTIVE DRIPPING",
+            "traits": [
+              {
+                "label": "Slope Angle",
+                "value": "40–45 degree incline"
+              },
+              {
+                "label": "Weight Stone",
+                "value": "Walnut size (50–80g)"
+              },
+              {
+                "label": "Drip Rate",
+                "value": "1 drop every 3–5 seconds"
+              },
+              {
+                "label": "Daily Yield",
+                "value": "500–1000mL on sunny days"
+              }
+            ],
+            "fieldUse": "Directing 100% of evaporated solar moisture into a single catch vessel via precision fluid tension"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Enclosing Toxic Trees (Oleander/Sumac) in Bags or Failing to Seal Earth Pit Edges Airtight",
+    "description": "When using foliar transpiration bags, enclosing lethal plants like oleander (cardiac glycosides) or poison sumac (urushiol) causes volatile toxic alkaloids to vaporize and condense directly into your drinking water, inducing fatal cardiac arrest. In earth solar stills, failing to berm the sheet perimeter allows solar-heated steam to escape, leaving you completely dehydrated despite hours of digging.",
+    "consequence": "Fatal toxic plant alkaloid poisoning or severe dehydration from vapor leakage",
+    "prevention": "Only enclose 100% verified non-toxic trees (oak, maple, pine, willow), and stomp soil firmly around solar still edges to guarantee 100% airtight containment."
+  },
+  "faqs": [
+    {
+      "question": "Can I collect water from foliar bags or solar stills during cloudy or rainy weather?",
+      "causeDiagnostic": "Leaf stoma transpiration and ground evaporation operate at peak efficiency under direct solar radiation.",
+      "resolution": "Yield drops to 20–30% of normal on heavily overcast days, though the bag remains 5–10°C warmer than ambient air, still yielding 100–200mL. If it starts raining, do not wait for distillation—spread the clear sheet concave to catch rainwater directly and filter it with a [Charcoal-Sand Water Filter](/protocol-01) for immediate high-volume hydration."
+    },
+    {
+      "question": "Can I pour seawater or urine into the pit to distill drinking water in coastal or desert survival?",
+      "causeDiagnostic": "Solar distillation evaporates only pure H2O molecules at 55°C, while salt (NaCl), urea, and heavy toxins remain locked in the soil.",
+      "resolution": "**Yes, absolutely.** Never pour seawater or urine into the center catch cup; pour it evenly onto the perimeter soil and crushed leaves around the cup. Under solar heat, salts and contaminants stay bound in the earth, and only pure water vapor condenses into the cup, delivering odor-free, salt-free drinking water."
+    },
+    {
+      "question": "Can I leave the plastic bag on the same tree branch to collect water again the next day?",
+      "causeDiagnostic": "Leaves sealed inside a high-temperature greenhouse bag for over 24 hours lose extreme moisture, close stomata, and begin to wilt.",
+      "resolution": "Leaving the bag on the same branch suffocates the foliage, halting transpiration and creating foul odors. **After 24 hours of harvesting, untie the bag and rotate it to a fresh, healthy broadleaf branch** to preserve tree health and maintain steady daily yields."
+    }
+  ],
+  "shortsScript": {
+    "hook": "Stranded with zero drinking water in the desert or deep woods? A simple plastic bag and tree leaves can harvest 1 liter of pure life-saving water every day!",
+    "body": "First, slide a clear bag over a sun-drenched oak or maple branch, dropping a fist-sized rock into the bottom corner to form a sump! Second, insert a small spacer twig to keep leaves out of pooled water and tie the collar airtight—pure condensation will stream into the corner! Third, if trees are sparse, dig a knee-deep pit, place a cup in the center, surround it with mashed green weeds, and cover it with a clear sheet! Place a pebble on top to form a 45-degree cone, and solar heat will distill ground vapor straight into your cup! Never use toxic oleander!"
+  },
+  "outcome": {
+    "title": "Zero-Power Foliage Transpiration & Solar Earth Still Hydration System",
+    "badge": "FINAL SPEC // TRANSPIRATION & SOLAR EARTH STILL SYSTEM",
+    "description": "A dual zero-power field hydration system capturing foliar transpiration from non-toxic trees via clear hermetic bags with spacer-stick contamination protection, paired with a 50cm solar earth still utilizing crushed foliage biomass and a 45-degree inverted cone to distill pure, bacteria-free water under solar heat.",
+    "svgFileName": "pr30-outcome.svg",
+    "svgLabels": [
+      "PR-30 COMPLETE // ZERO-POWER LEAF TRANSPIRATION & SOLAR EARTH STILL SYSTEM",
+      "STAGE 01: NON-TOXIC BROADLEAF BAG TIE",
+      "Rock Sump Formation & Leaf Enclosure",
+      "STAGE 02: SPACING TWIG LEAF-CLEARANCE",
+      "Prevents Rot/Tannins & Airtight Collar",
+      "STAGE 03: 50CM EARTH PIT & CATCH CUP",
+      "Packed Wet Mulch Triples Evaporation",
+      "STAGE 04: 45° INVERTED CONE PEBBLE",
+      "Weighted Clear Sheet Funnels Droplets",
+      "[CORE PRINCIPLE] Leaf Transpiration & Solar Earth Vapor Funneled by 45° Cone to Harvest 1L Daily"
+    ]
+  },
+  "createdAt": "2026-11-12T01:50:38.970Z",
+  "contentHash": "2e0b5744254a5aa6",
+  "protocolId": "PR-30",
+  "category": "FOOD"
+}

@@ -155,6 +155,8 @@ export async function buildSite(options                                         
       if (baseKey.startsWith(num) || baseKey.includes(proto.protocolId.toLowerCase())) {
         for (const [lKey, lProto] of Object.entries(langObj)) {
           const localizedClone           = JSON.parse(JSON.stringify(lProto));
+          localizedClone.protocolId = localizedClone.protocolId || proto.protocolId;
+          localizedClone.category = localizedClone.category || proto.category;
           // 마스터와 동일한 등록 및 최종 수정 일시 전파 (다국어 탭 전환 시 시각적 일치 보장)
           localizedClone.createdAt = proto.createdAt;
           if (proto.updatedAt) {

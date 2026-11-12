@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg30s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="soil30s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="can30s3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="water30s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="grid30s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow30s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg30s3)"/>
+  <rect width="400" height="400" fill="url(#grid30s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 03 // 50cm 지중 굴착 및 물받이 통·젖은 풀잎 배치</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">물기 있는 땅에 두 뼘 반 너비, 무릎 깊이(50cm) 구덩이 파기</text>
+
+  <!-- Main Illustration: In-ground pit, container, green mash foliage -->
+  <g filter="url(#shadow30s3)">
+    <!-- Ground surface line -->
+    <line x1="20" y1="125" x2="80" y2="125" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="320" y1="125" x2="380" y2="125" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Excavated pit profile: inverted trapezoid -->
+    <path d="M80,125 L125,255 L275,255 L320,125 Z" fill="url(#soil30s3)" stroke="#78350f" stroke-width="2.5"/>
+
+    <!-- Depth indicator: knee depth (50cm) -->
+    <line x1="65" y1="125" x2="65" y2="255" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="60" y1="125" x2="70" y2="125" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="60" y1="255" x2="70" y2="255" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="35" y="195" fill="#fbbf24" font-family="monospace" font-size="8.5">50cm 깊이</text>
+
+    <!-- Green foliage mash piled on pit slopes -->
+    <!-- Left pile -->
+    <ellipse cx="120" cy="235" rx="25" ry="14" fill="#15803d" stroke="#4ade80" stroke-width="1.2"/>
+    <ellipse cx="130" cy="215" rx="18" ry="10" fill="#16a34a" stroke="#86efac" stroke-width="1"/>
+    <!-- Right pile -->
+    <ellipse cx="280" cy="235" rx="25" ry="14" fill="#15803d" stroke="#4ade80" stroke-width="1.2"/>
+    <ellipse cx="270" cy="215" rx="18" ry="10" fill="#16a34a" stroke="#86efac" stroke-width="1"/>
+
+    <!-- Central water collecting container (wide mouth tin can / cup) -->
+    <rect x="175" y="175" width="50" height="75" rx="3" fill="url(#can30s3)" stroke="#f8fafc" stroke-width="1.8"/>
+    <ellipse cx="200" cy="175" rx="25" ry="6" fill="#475569" stroke="#f8fafc" stroke-width="1.5"/>
+    <!-- Small amount of collected water in container -->
+    <ellipse cx="200" cy="235" rx="23" ry="5" fill="url(#water30s3)"/>
+    <rect x="177" y="235" width="46" height="13" rx="1" fill="url(#water30s3)"/>
+
+    <!-- Soil moisture evaporation arrows rising from mashed vegetation -->
+    <path d="M125,200 Q130,175 140,155 M135,160 L140,155 L143,163" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <path d="M275,200 Q270,175 260,155 M265,160 L260,155 L257,163" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <circle cx="132" cy="180" r="2" fill="#38bdf8"/>
+    <circle cx="268" cy="180" r="2" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="295" width="368" height="24" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="311" fill="#fef08a" font-family="monospace" font-size="10.5">구덩이 바닥 정중앙에 입구 넓은 깨끗한 수집 용기 수평 안치</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="324" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="340" fill="#bae6fd" font-family="monospace" font-size="10.5">용기 둘레 흙바닥에 짓이긴 푸른 풀잎과 젖은 낙엽 두껍게 적재</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="354" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="375" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 으깬 풀잎의 수분 기화로 시간당 수분 증발량 3배 극대화</text>
+</svg>

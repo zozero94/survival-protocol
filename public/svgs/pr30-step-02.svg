@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg30s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090c10"/>
+      <stop offset="100%" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="leaf30s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="bag30s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="water30s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="grid30s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow30s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg30s2)"/>
+  <rect width="400" height="400" fill="url(#grid30s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" fill="#111827" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="32" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">FIG. 02 // 나뭇잎 수침 방지 지지목 설치 및 줄기 결속 밀봉</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="50" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="66" fill="#bae6fd" font-family="monospace" font-size="10.5">잎 아래쪽에 짧은 가지 받침대를 가로질러 공간 띄우기</text>
+
+  <!-- Main Illustration: Neck tie, Spacer stick, pure water pooling -->
+  <g filter="url(#shadow30s2)">
+    <!-- Main branch -->
+    <path d="M50,140 Q120,155 220,150" stroke="#78350f" stroke-width="6" fill="none"/>
+
+    <!-- Tie at neck of bag: wrapped cord -->
+    <ellipse cx="85" cy="144" rx="10" ry="22" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M85,122 L92,110 M85,166 L94,175" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- Leaves held high -->
+    <ellipse cx="150" cy="135" rx="22" ry="10" transform="rotate(-15 150 135)" fill="url(#leaf30s2)" stroke="#166534" stroke-width="1.2"/>
+    <ellipse cx="195" cy="130" rx="24" ry="11" transform="rotate(-5 195 130)" fill="url(#leaf30s2)" stroke="#166534" stroke-width="1.2"/>
+    <ellipse cx="235" cy="140" rx="20" ry="9" transform="rotate(15 235 140)" fill="url(#leaf30s2)" stroke="#166534" stroke-width="1.2"/>
+
+    <!-- Transpiration bag outline -->
+    <path d="M85,142 C145,100 260,110 300,155 C320,195 305,255 250,270 C195,280 120,250 85,160 Z" fill="url(#bag30s2)" stroke="#22d3ee" stroke-width="2"/>
+
+    <!-- Cross spacer stick keeping leaves elevated -->
+    <line x1="140" y1="180" x2="255" y2="185" stroke="#fbbf24" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Tie or notch on spacer stick -->
+    <circle cx="140" cy="180" r="3" fill="#d97706"/>
+    <circle cx="255" cy="185" r="3" fill="#d97706"/>
+
+    <!-- Clear gathered water reservoir at bottom (isolated from leaves) -->
+    <ellipse cx="248" cy="262" rx="28" ry="10" fill="url(#water30s2)" stroke="#bae6fd" stroke-width="1.5"/>
+
+    <!-- Pure droplets condensing and sliding down -->
+    <circle cx="160" cy="210" r="2.5" fill="#38bdf8"/>
+    <circle cx="200" cy="225" r="3" fill="#38bdf8"/>
+    <circle cx="230" cy="240" r="3" fill="#38bdf8"/>
+
+    <!-- Isolation zone gap indicator -->
+    <line x1="200" y1="195" x2="200" y2="245" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <text x="208" y="222" fill="#86efac" font-family="monospace" font-size="8">안전 이격 공간</text>
+  </g>
+
+  <!-- Label 3 Callout Box -->
+  <rect x="16" y="295" width="368" height="24" rx="2" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="24" y="311" fill="#fef08a" font-family="monospace" font-size="10.5">잎이 고인 물에 닿아 썩거나 쓴맛 성분이 우러나는 것 차단</text>
+
+  <!-- Label 4 Callout Box -->
+  <rect x="16" y="324" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="340" fill="#bae6fd" font-family="monospace" font-size="10.5">봉투 입구를 나뭇가지 둘레에 맞춰 끈으로 빈틈없이 결속</text>
+
+  <!-- Bottom Core Principle Strip (Label 5) -->
+  <rect x="14" y="354" width="372" height="34" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="24" y="375" fill="#ecfdf5" font-family="monospace" font-size="10.5" font-weight="bold">[핵심] 수증기 누출 0% 밀폐 및 고인 식수의 청결도 유지</text>
+</svg>

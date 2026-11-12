@@ -1,0 +1,269 @@
+{
+  "title": "Como Coletar Água Potável com Saco Plástico, Transpiração Foliar e Destilador Solar de Terra",
+  "summary": "Em situações de isolamento ou desastre sem rios nem chuva e com a água esgotada, esta tecnologia de hidratação combina a transpiração natural de folhas de árvores não tóxicas com a evaporação e condensação solar da umidade subterrânea para obter até 1 litro diário de água destilada pura sem ferver. Se houver filtros portáteis ou água engarrafada, priorize-os; em escassez total, confie 100% num saco plástico e pedras.",
+  "threatLevelText": "CRÍTICO // AÇÃO IMEDIATA NECESSÁRIA",
+  "timeRequired": "30 min montagem // 6–12 h coleta",
+  "difficulty": "EASY // Não requer ferramentas",
+  "outputPerHour": "50–100mL por hora (Até 1L por dia)",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "1–2 sacos plásticos transparentes grandes sem furos (ou lona transparente de 1,5m×1,5m)",
+      "desc": "Barreira impermeável que transmite mais de 90% da luz solar e retém o vapor para induzir condensação"
+    },
+    {
+      "id": "m2",
+      "name": "3–4 pedras lisas (uma do tamanho de um punho e outra de uma noz)",
+      "desc": "Pesos para formar uma bolsa coletora no fundo do saco e rebaixar a lona da cova num cone invertido de 45 graus"
+    },
+    {
+      "id": "m3",
+      "name": "1 lata vazia ou copo plástico limpo (ou prato de pedra côncavo)",
+      "desc": "Recipiente coletor central para receber a água pura condensada que goteja do vértice do cone"
+    },
+    {
+      "id": "m4",
+      "name": "Galhos vivos de carvalho ou bordo não tóxicos e dois punhados de capim verde amassado e folhagem úmida",
+      "desc": "Fonte natural que libera água pelos estômatos foliares ou triplica a umidade interna da cova"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Cobrir Galho de Árvore Não Tóxica com Saco Transparente e Colocar uma Pedra no Canto",
+      "description": "1. **Selecionar Árvores Não Tóxicas**: Evite espécimes venenosos como espirradeira; escolha galhos densos expostos ao sol (carvalho, castanheiro, bordo ou salgueiro).\n2. **Envolver com Saco Plástico**: Deslize suavemente o saco plástico transparente a partir da ponta do galho, cobrindo de 30 a 50 folhas sadias.\n3. **Formar Bolsa Coletora**: Coloque uma pedra lisa do tamanho de um punho no canto inferior mais baixo do saco para formar um receptáculo cônico.",
+      "actionNote": "O canto com a pedra deve ficar pelo menos 20cm abaixo do galho para que as gotas escorram direto para o fundo sem molhar as folhas.",
+      "svgLabels": [
+        "FIG. 01 // Galho de Árvore Coberto com Saco Plástico e Pedra Lastro",
+        "Selecionar Galhos ao Sol de Carvalhos ou Bordos Seguros",
+        "Envolver com Saco sem Furos e Colocar Pedra no Canto",
+        "Criar Ponto Baixo Coletor para Escoamento de Gotas",
+        "[CHAVE] Formar Reservatório Inferior para Acumular Vapor Foliar Condensado"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRANSPIRATION BAG ON FOLIAGE",
+        "title": "Transpiração Foliar de Folhosas e Dinâmica de Gravidade",
+        "text": "As plantas liberam para a atmosfera mais de 95% da água absorvida pelas raízes em forma de vapor puro através dos estômatos. Ao selar as folhas em um saco transparente, o efeito estufa eleva a temperatura interna acima de 40°C, acelerando a transpiração enquanto o ar externo resfria o plástico, gerando condensação imediata. A pedra cria uma declividade que conduz as gotas por gravidade, gerando água destilada estéril sem precisar de fogo.",
+        "fieldSpecs": [
+          {
+            "name": "Saco de Condensação por Transpiração Foliar",
+            "scientificName": "Plant Transpiration Condensation Bag",
+            "categoryTag": "Hidratação em Campo",
+            "imageFileName": "id-transpiration-bag-tree.jpg",
+            "hudCode": "TR-01",
+            "hudStatus": "ACTIVE CONDENSATION",
+            "traits": [
+              {
+                "label": "Espécies",
+                "value": "Carvalho, bordo e folhosas seguras"
+              },
+              {
+                "label": "Temp Interna",
+                "value": "38–45°C sob sol direto"
+              },
+              {
+                "label": "Pureza",
+                "value": "Grau destilado sem bactérias"
+              },
+              {
+                "label": "Rendimento",
+                "value": "30–60mL/h ao meio-dia"
+              }
+            ],
+            "fieldUse": "Obtenção de água potável pura sem ferir árvores quando não há água superficial"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Colocar Graveto Espaçador para Afastar Folhas da Água e Amarrar o Gargalo",
+      "description": "1. **Instalar Espaçador**: Se as folhas ficarem submersas na água coletada, soltam taninos amargos e apodrecem; encaixe um graveto limpo transversalmente sob as folhas para erguê-las.\n2. **Amarrar o Gargalo**: Junte a abertura do saco firmemente ao redor do caule do galho e amarre bem dando 3 a 4 voltas com cordel ou cadarço.\n3. **Testar Vedação**: Verifique com os dedos se há ar úmido ou vapor escapando pela amarração.",
+      "actionNote": "Se o gargalo ficar frouxo, o vapor sob pressão escapa para o ar e você coletará apenas poucas gotas o dia inteiro.",
+      "svgLabels": [
+        "FIG. 02 // Colocação de Graveto Espaçador e Amarração Vedada ao Caule",
+        "Encaixar Graveto Curto Sob as Folhas para Criar Espaço",
+        "Evitar Folhas Submersas contra Apodrecimento e Taninos",
+        "Amarrar Boca do Saco Firmemente ao Caule com Cordel",
+        "[CHAVE] Vedação Total sem Vazamento de Vapor e Manutenção da Pureza"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // SPACER STICK & SEALED COLLAR",
+        "title": "Isolamento contra Taninos e Engenharia de Vedação",
+        "text": "Folhas de árvores como carvalhos contêm taninos solúveis que conferem sabor amargo e adstringente. Se as folhas ficarem submersas por horas, a pressão osmótica extrai taninos para a água, deixando-a escura e imprópria para o estômago. Garantir um vão vertical de pelo menos 5cm faz com que apenas as gotas puras escorram pelas paredes para o fundo, assegurando água límpida, fresca e doce.",
+        "fieldSpecs": [
+          {
+            "name": "Espaçador de Folhas e Água Coletada",
+            "scientificName": "Leaf-Water Separation Spacer",
+            "categoryTag": "Proteção de Água",
+            "imageFileName": "id-water-reservoir-spacer-stick.jpg",
+            "hudCode": "TR-02",
+            "hudStatus": "CLEAR PURIFIED",
+            "traits": [
+              {
+                "label": "Distância",
+                "value": "3 falanges (mais de 5cm)"
+              },
+              {
+                "label": "Vedação",
+                "value": "Amarração tensa tripla volta"
+              },
+              {
+                "label": "Sabor",
+                "value": "0% Taninos água inodora"
+              },
+              {
+                "label": "Rotação",
+                "value": "Trocar de galho a cada 24h"
+              }
+            ],
+            "fieldUse": "Garantir que a água coletada não fique amarga nem desenvolva bactérias de putrefação"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Cavar uma Cova até o Joelho, Posicionar Recipiente no Centro e Rodear com Capim Amassado",
+      "description": "1. **Escavar Cova**: Se não houver árvores grandes ou precisar de água extra, cave uma cova circular de 50cm de diâmetro e 45–50cm de profundidade em solo úmido e ensolarado.\n2. **Fixar Recipiente**: Posicione uma lata limpa ou copo bem nivelado no centro do fundo da cova, evitando que caia terra dentro.\n3. **Forrar com Vegetação**: Cubra o chão ao redor do recipiente com uma camada espessa de capim fresco e folhas verdes amassadas com as mãos.",
+      "actionNote": "Distribua a vegetação verde apenas ao redor do recipiente; cuidado para não deixar cair terra dentro da lata.",
+      "svgLabels": [
+        "FIG. 03 // Cova de 50cm, Recipiente Colector e Camada de Folhas Úmidas",
+        "Cavar Cova Circular de 50cm de Diâmetro em Solo Úmido",
+        "Fixar Recipiente Limpo Nivelado no Centro do Fundo",
+        "Colocar Capim Verde Amassado ao Redor do Recipiente",
+        "[CHAVE] Vaporização de Folhas Amassadas Triplica Volume Coletado"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // EARTHEN PIT & GREEN FOLIAGE",
+        "title": "Vaporização Térmica Subterrânea e Amplificação por Biomassa",
+        "text": "Mesmo que a superfície da terra pareça seca, escavar 40 a 50cm revela umidade preservada por capilaridade. Ao rodear o recipiente com folhas frescas esmagadas—rompendo as paredes celulares para liberar seiva—a temperatura interna passa de 55°C com a estufa solar. A umidade da terra e das plantas vaporiza intensamente, deixando sais, terra e impurezas no fundo, destilando apenas moléculas puras de H2O.",
+        "fieldSpecs": [
+          {
+            "name": "Cova de Destilação Solar e Camada Vegetal",
+            "scientificName": "Solar Earth Pit Biomass Layer",
+            "categoryTag": "Destilação Solar",
+            "imageFileName": "id-solar-still-green-foliage-pit.jpg",
+            "hudCode": "SS-01",
+            "hudStatus": "THERMAL VAPORIZING",
+            "traits": [
+              {
+                "label": "Dimensões",
+                "value": "50cm diâmetro × 45cm fundo"
+              },
+              {
+                "label": "Coletor",
+                "value": "Lata metálica ou caneca"
+              },
+              {
+                "label": "Evaporação",
+                "value": "+300% com capim amassado"
+              },
+              {
+                "label": "Umidade Cova",
+                "value": "98% saturação interna"
+              }
+            ],
+            "fieldUse": "Destilar água potável a partir de terra úmida e mato amassado em áreas abertas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Cobrir Cova com Plástico Transparente, Vedar Bordas com Terra e Centralizar Pedra para Cone de 45°",
+      "description": "1. **Estender e Vedar**: Cubra a cova com plástico transparente com certa folga e soterre todo o contorno com terra e pedras pesadas para vedação hermética.\n2. **Colocar Peso Central**: Deposite suavemente uma pedra lisa do tamanho de uma noz no centro do plástico, alinhada sobre o recipiente.\n3. **Ajustar Cone de 45°**: O peso formará um cone invertido em V com inclinação de 45°; assegure que a ponta inferior fique 2 a 3cm suspensa acima do copo sem encostar.",
+      "actionNote": "Se a pedra for pesada demais, o plástico pode rasgar ou tocar no copo, sujando a água potável.",
+      "svgLabels": [
+        "FIG. 04 // Vedação com Terra e Pedra Central para Cone Invertido a 45°",
+        "Cobrir Cova com Plástico e Vedar Bordas com Terra Pesada",
+        "Posicionar Pedra Lisa do Tamanho de Noz Sobre o Coletor",
+        "Inclinação de 45° Canaliza Gotas Condensadas para o Copo",
+        "[CHAVE] Condensação por Efeito Estufa e Coleta Automática por Gravidade"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 45-DEGREE CONDENSATION CONE",
+        "title": "Condensação por Tensão Superficial e Gotejamento Focalizado",
+        "text": "O vapor que sobe atinge a face inferior do plástico, resfriada pelo ar externo, condensando-se em gotas. Se o plástico ficasse plano, as gotas cairiam de volta na terra. O cone invertido a 45° aproveita a tensão superficial: as gotas deslizam até o ponto mais baixo onde repousa a pedra central. Ao superar a tensão superficial a cada 3 a 5 segundos, caem com precisão dentro do copo.",
+        "fieldSpecs": [
+          {
+            "name": "Cone Invertido Condensador para Destilador Solar",
+            "scientificName": "Inverted Solar Still Condenser Cone",
+            "categoryTag": "Condensador por Gravidade",
+            "imageFileName": "id-solar-still-condensed-droplets.jpg",
+            "hudCode": "SS-02",
+            "hudStatus": "ACTIVE DRIPPING",
+            "traits": [
+              {
+                "label": "Inclinação",
+                "value": "Ângulo de 40 a 45 graus"
+              },
+              {
+                "label": "Pedra Peso",
+                "value": "Tamanho noz (50–80g)"
+              },
+              {
+                "label": "Frequência",
+                "value": "1 gota a cada 3–5 segundos"
+              },
+              {
+                "label": "Produção",
+                "value": "500–1000mL em dias claros"
+              }
+            ],
+            "fieldUse": "Direcionar 100% do vapor solar evaporado para um único coletor através de tensão de fluidos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Cobrir Plantas Tóxicas (Espirradeiras) ou Deixar Frestas de Ar nas Bordas da Cova",
+    "description": "Ao usar sacos de transpiração, cobrir plantas venenosas como espirradeira (oleandrina) faz com que alcaloides tóxicos evaporem e se condensem diretamente na água potável, provocando parada cardíaca fatal. Em destiladores solares de terra, se não cobrir as bordas com bastante terra, o vapor quente escapará para fora e você não conseguirá nem um gole d'água.",
+    "consequence": "Envenenamento letal por toxinas vegetais ou desidratação severa por vazamento de vapor",
+    "prevention": "Utilize exclusivamente árvores 100% seguras (carvalho, bordo, pinheiro, salgueiro) e compacte a terra sobre as bordas do plástico para vedação total."
+  },
+  "faqs": [
+    {
+      "question": "É possível coletar água com sacos foliares ou destiladores de terra em dias nublados ou chuvosos?",
+      "causeDiagnostic": "A transpiração foliar e a evaporação da terra atingem rendimento máximo sob radiação solar direta.",
+      "resolution": "Em dias muito nublados a produção cai para 20–30% do normal, embora o interior do saco fique de 5 a 10°C mais quente que o exterior, rendendo 100–200mL. Se começar a chover, não espere pela destilação: **estenda o plástico para colher água da chuva diretamente e filtre-a com um [Filtro de Carvão e Areia](/protocol-01)**."
+    },
+    {
+      "question": "Pode-se despejar água do mar ou urina na cova para destilar água na praia ou no deserto?",
+      "causeDiagnostic": "A destilação solar evapora apenas moléculas de água pura (H2O) a 55°C, enquanto sais, ureia e toxinas ficam fixados na terra.",
+      "resolution": "**Sim, perfeitamente possível.** Nunca despeje água do mar ou urina no copo coletor central; despeje ao redor, sobre a terra e folhas amassadas. Com o calor solar, impurezas e sais ficam retidos no solo e apenas o vapor puro sobe e goteja no copo, fornecendo água potável sem sal nem odor."
+    },
+    {
+      "question": "Posso deixar o saco no mesmo galho para continuar colhendo água no dia seguinte?",
+      "causeDiagnostic": "Folhas submetidas a calor elevado em um saco fechado por mais de 24 horas perdem umidade, fecham os estômatos e murcham.",
+      "resolution": "Manter o saco no mesmo galho sufoca a folhagem, interrompe a transpiração e gera cheiro de decomposição. **Após 24 horas de coleta, retire o saco e transfira-o para outro galho saudável e verdejante** para preservar a árvore e manter a produção diária."
+    }
+  ],
+  "shortsScript": {
+    "hook": "Ficou sem água potável no deserto ou na mata? Com um saco plástico e folhas de árvore você pode colher 1 litro de água pura todo dia!",
+    "body": "Primeiro, cubra um galho ensolarado de carvalho ou bordo com um saco plástico e coloque uma pedra no canto para criar uma bolsa de água! Segundo, coloque um graveto espaçador para as folhas não tocarem na água e amarre bem o gargalo: o vapor das folhas vai pingar limpo! Terceiro, se não houver árvores, cave uma cova até o joelho, coloque um copo no centro, forre com mato amassado e cubra com plástico transparente! Coloque uma pedrinha no centro para formar um cone de 45 graus e o vapor da terra vai gotejar dentro do copo! Nunca use plantas venenosas como espirradeira!"
+  },
+  "outcome": {
+    "title": "Sistema de Hidratação por Transpiração Foliar e Destilador Solar de Terra sem Energia",
+    "badge": "FINAL SPEC // TRANSPIRATION & SOLAR EARTH STILL SYSTEM",
+    "description": "Sistema dual de sobrevivência sem energia combinando a captura de transpiração foliar em árvores não tóxicas através de sacos herméticos com espaçador protetor de taninos, juntamente com um destilador solar de 50cm que usa biomassa vegetal esmagada e cone invertido a 45 graus para destilar água pura sob calor solar.",
+    "svgFileName": "pr30-outcome.svg",
+    "svgLabels": [
+      "PR-30 COMPLETO // SISTEMA SOLAR DE TRANSPIRAÇÃO FOLIAR E DESTILADOR DE TERRA",
+      "STAGE 01: AMARRAÇÃO EM GALHO NÃO TÓXICO",
+      "Pedra Coletora e Saco sem Furos",
+      "STAGE 02: GRAVETO ESPAÇADOR E VEDAÇÃO",
+      "Proteção de Taninos e Nó no Gargalo",
+      "STAGE 03: COVA DE 50CM E COLETOR",
+      "Capim Amassado Triplica Vapor",
+      "STAGE 04: CONE INVERTIDO A 45°",
+      "Plástico com Peso Canaliza Gotas",
+      "[PRINCÍPIO CHAVE] Transpiração Foliar e Vapor da Terra Canalizados a 45° para Colher 1L por Dia"
+    ]
+  },
+  "createdAt": "2026-11-12T01:50:38.970Z",
+  "contentHash": "2e0b5744254a5aa6",
+  "protocolId": "PR-30",
+  "category": "FOOD"
+}
