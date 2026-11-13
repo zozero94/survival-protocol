@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-31",
+  "category": "SHELTER",
+  "title": "Fita em Grade Anti-Estilhaços em Janelas e Zona Segura Triangular Interior para Bombardeios e Terremotos",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "CRÍTICO // DEFESA IMEDIATA CONTRA BOMBARDEIOS E SISMOS",
+  "summary": "Durante conflitos armados, ataques com mísseis, explosões urbanas ou terremotos severos, a onda de choque estilhaça vidraças em milhares de lâminas pontiagudas em alta velocidade. Este protocolo cria uma barreira tripla para reter mais de 95% dos estilhaços e estabelece uma zona de refúgio estrutural do 'Triângulo da Vida' junto a paredes mestras interiores. Se possuir película de segurança ou persianas externas reforçadas, use-as prioritariamente; caso contrário, converta seu cômodo em um abrigo improvisado com fita reforçada, jornal úmido, cortinas blecaute e um colchão.",
+  "timeRequired": "Montagem: 10-15 min // Evacuação de alarme: 3 min",
+  "successRate": "95%",
+  "difficulty": "EASY // Aplicação Imediata no Lar",
+  "outputPerHour": "Taxa de Retenção de Estilhaços > 95%",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Fita adesiva reforçada (Silver Tape ou fita de empacotar 5 cm) 2-3 rolos",
+      "desc": "Fita têxtil de alta aderência para trançar o vidro em grade densa e ancorar as vedações de silicone na esquadria",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "Folhas de jornal 10-15 páginas (ou sacos de lixo grossos) + 500 mL de água borrifada",
+      "desc": "Camada de celulose aderida por tensão superficial da água para capturar poeira fina de vidro e microestilhaços",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Cortinas blecaute grossas ou cobertores pesados de lã/edredons 1-2 unid.",
+      "desc": "Barreira secundária de contenção que cobre toda a janela com 4 bordas vedadas por fita para frear blocos de vidro",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "Mesa/escrivaninha de madeira maciça e um colchão firme e espesso 1 jogo",
+      "desc": "Móveis protetores inclinados a 45 graus contra uma parede de suporte interior para criar um bolso de sobrevivência indeformável",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Aplicar fita em padrão de grade de 5 cm no vidro e reforçar o perímetro de silicone da esquadria",
+      "description": "1. **Limpeza da superfície**: Remova poeira e umidade do lado interno da vidraça com um pano seco para garantir aderência máxima da fita.\n2. **Ancoragem perimetral**: Cole a fita adesiva sobre a junta de silicone que une o vidro ao batente para fixar o painel.\n3. **Grade em tabuleiro de 5 cm**: Estique tiras horizontais e verticais espaçadas a cada três dedos (aprox. 5 cm), cruzando-as em uma malha densa e firme.",
+      "actionNote": "Nunca aplique apenas um 'X' simples no centro: isso faz com que o vidro quebre em enormes placas guilhotina cortantes. A grade densa é indispensável para dissipar as vibrações da onda de choque.",
+      "svgFileName": "pr31-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Aplicação de Fita em Grade de 5 cm e Ancoragem na Esquadria",
+        "Limpar o vidro e aplicar fita perimetral ao longo do silicone do batente",
+        "Cruzar fitas horizontais e verticais a cada 5 cm (3 dedos) em grade densa",
+        "Evitar o 'X' simples: o vidro central se solta em guilhotinas mortais",
+        "[NÚCLEO] Dissipar a onda de choque e manter o vidro unido como peça única"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // BLAST DUCT TAPE GRID",
+        "title": "Absorção de Ondas de Choque e Mecânica de Tensão de Cisalhamento",
+        "text": "Quando a onda de choque de uma explosão atinge a janela, forças intensas de flexão e cisalhamento se propagam do centro para fora. O vidro comum tem baixa resistência à tração e quebra em milissegundos. Uma grade tensionada de fita com filamentos absorve essa energia e a transmite para a esquadria estrutural. Mesmo se o vidro estilhaçar, os fragmentos permanecem colados à malha adesiva, sem serem arremessados para dentro.",
+        "fieldSpecs": [
+          {
+            "name": "Vidro Reforçado com Grade Anti-Impacto",
+            "scientificName": "Blast Mitigation Grid Taped Window",
+            "categoryTag": "Defesa Interna de Guerra",
+            "imageFileName": "id-blast-taped-window.jpg",
+            "hudCode": "BLAST-TAPE-01",
+            "hudStatus": "GRID REINFORCED",
+            "traits": [
+              {
+                "label": "Espaçamento",
+                "value": "5 cm (aprox. 3 dedos)"
+              },
+              {
+                "label": "Fixação",
+                "value": "Silicone do batente reforçado"
+              },
+              {
+                "label": "Eficácia",
+                "value": "80% de retenção de fragmentos"
+              }
+            ],
+            "fieldUse": "Instalar a grade adesiva em até 5 minutos após o toque da sirene de bombardeio"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Pressionar jornal úmido ou plástico grosso contra o vidro para reter microestilhaços e poeira de vidro",
+      "description": "1. **Borrife água**: Umedeça generosamente toda a superfície do vidro já encintado com um borrifador ou pano molhado.\n2. **Adesão das folhas**: Alise 2 a 3 camadas de jornal (ou plástico grosso) de cima para baixo com as palmas, expulsando bolhas de ar.\n3. **Fixação por tensão superficial**: Garanta que o papel grude uniformemente no vidro; reborrife água nas pontas se começarem a soltar.",
+      "actionNote": "Papel seco perde a aderência. Mantenha as folhas úmidas borrifando água a cada 2 a 3 horas enquanto persistir o risco de explosões.",
+      "svgFileName": "pr31-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Fixação Superficial de Jornal Úmido e Filme Plástico",
+        "Borrifar água e pressionar folhas de jornal sem deixar bolhas de ar",
+        "A tensão superficial cria uma barreira capilar que retém estilhaços finos",
+        "Evitar ressecamento: borrifar água a cada 2-3 horas para manter aderência",
+        "[PRINCÍPIO] Mesmo se estilhaçado, o pó fino de vidro fica preso na celulose"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WET NEWSPAPER SURFACE TENSION",
+        "title": "Coesão Capilar e Retenção de Microestilhaços em Celulose Úmida",
+        "text": "O perigo mais traiçoeiro após uma detonação é a poeira de vidro suspensa no ar, causadora de cortes na córnea e danos pulmonares. A água gera uma forte atração capilar entre o vidro e o papel. Quando o vidro se pulveriza, as fibras úmidas funcionam como cola natural, prendendo o pó tóxico e impedindo que se espalhe pelo ambiente residencial.",
+        "fieldSpecs": [
+          {
+            "name": "Barreira Capilar de Celulose Úmida",
+            "scientificName": "Wet Pulp Surface Tension Glass Seal",
+            "categoryTag": "Retenção de Fragmentos",
+            "imageFileName": "id-wet-newspaper-glass-seal.jpg",
+            "hudCode": "PULP-SEAL-02",
+            "hudStatus": "MOISTURE ADHESION",
+            "traits": [
+              {
+                "label": "Material",
+                "value": "Jornal triplo ou plástico grosso"
+              },
+              {
+                "label": "Mecanismo",
+                "value": "Tensão superficial capilar"
+              },
+              {
+                "label": "Manutenção",
+                "value": "Borrifar a cada 2-3 horas"
+              }
+            ],
+            "fieldUse": "Aplicar papel úmido sobre o vidro encintado para reter partículas microscópicas afiadas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Instalar cortinas blecaute grossas ou cobertores e vedar hermeticamente as 4 bordas com fita",
+      "description": "1. **Tecido pesado**: Pendure cortinas blecaute ou edredons grossos que ultrapassem a esquadria em pelo menos 20 cm em todos os lados.\n2. **Vedação em 4 lados**: Cole a fita adesiva reforçada no varão superior, nas paredes laterais e na bainha inferior junto ao piso.\n3. **Bolso de retenção**: Deixe uma folga de cerca de 10 cm na base para que os estilhaços caiam dentro do tecido sem ricochetear.",
+      "actionNote": "Nunca deixe a cortina solta embaixo: a onda de choque levantará o tecido bruscamente, arremessando cacos de vidro para dentro do cômodo.",
+      "svgFileName": "pr31-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Vedação Perimetral de Cortina Blecaute com Fita em 4 Lados",
+        "Instalar cortinas grossas ultrapassando em 20 cm os limites da janela",
+        "Vedar trilho superior, paredes laterais e bainha com fita adesiva firme",
+        "Evitar cortinas soltas: a onda de choque as levanta espalhando cacos",
+        "[BARREIRA 2] O tecido denso absorve energia cinética e retém os cacos no chão"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 4-EDGE SEALED BLAST CURTAIN",
+        "title": "Desaceleração Cinética Têxtil e Rede Coletora de Detritos",
+        "text": "Em detonações pesadas próximas, a sobrepressão do ar pode arrancar o batente da janela para dentro. Uma cortina pesada completamente colada em seus quatro lados atua como um airbag balístico. Quando os blocos de vidro e alumínio colidem contra o tecido, a elasticidade amortece o impacto e desacelera os fragmentos, fazendo-os deslizar suavemente para o piso.",
+        "fieldSpecs": [
+          {
+            "name": "Cortina Vedada Coletora de Detritos",
+            "scientificName": "Hermetically Sealed Shrapnel Catchment Curtain",
+            "categoryTag": "Contenção Secundária",
+            "imageFileName": "id-blast-curtain-containment.jpg",
+            "hudCode": "CURTAIN-WALL-03",
+            "hudStatus": "4-EDGE SEALED",
+            "traits": [
+              {
+                "label": "Vedação",
+                "value": "4 lados selados com fita forte"
+              },
+              {
+                "label": "Tecido indicado",
+                "value": "Blecaute ou cobertor de lã"
+              },
+              {
+                "label": "Absorção",
+                "value": "Amortece projéteis em alta velocidade"
+              }
+            ],
+            "fieldUse": "Criar uma barreira têxtil interna para frear o batente arrancado e reter estilhaços"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Abrigar-se no canto de uma parede mestra interior e montar a zona segura do 'Triângulo da Vida'",
+      "description": "1. **Localizar zona segura**: Saia imediatamente de cômodos com janelas externas e vá para corredores internos, banheiros ou cantos de paredes estruturais.\n2. **Construir o triângulo de sobrevivência**: Posicione uma mesa de madeira maciça contra o canto e incline um colchão grosso a 45 graus ao lado dela, formando um bolsão vazio rígido.\n3. **Postura de proteção**: Ajoelhe-se no bolsão, aproxime os joelhos do peito, entrelace as mãos na nuca e orelhas, feche os olhos e deixe a boca levemente aberta para equilibrar a pressão.",
+      "actionNote": "Nunca fique 'embaixo' da mesa: a queda de lajes pesadas esmagará os pés do móvel. Fique sempre 'ao lado' da mesa, no vão triangular formado junto a ela.",
+      "svgFileName": "pr31-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Zona Segura Triangular no Canto da Parede Mestra Interior",
+        "Afastar-se 3 m de janelas em direção a paredes estruturais de concreto",
+        "Apoiar colchão a 45 graus ao lado de móvel rígido para formar vão livre",
+        "Cobrir nuca e ouvidos com a boca entreaberta para equalizar a pressão",
+        "[SOBREVIVÊNCIA] Desviar escombros do teto para evitar esmagamentos"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRIANGLE OF LIFE DEFENSIVE ZONE",
+        "title": "Mecânica do Desmoronamento em Camadas e Equalização de Pressão",
+        "text": "Quando um edifício colapsa por impacto de bombas ou tremores, as lajes de teto não caem perfeitamente planas no chão; elas batem em objetos sólidos (mesas maciças, máquinas de lavar) e deixam vãos triangulares livres ao lado, conhecidos como o 'Triângulo da Vida'. O colchão inclinado a 45 graus atua como rampa protetora. Manter a boca entreaberta e ouvidos tapados equaliza a pressão do tímpano e pulmões com a sobrepressão externa, evitando hemorragias internas e surdez.",
+        "fieldSpecs": [
+          {
+            "name": "Abrigo Triangular em Parede Mestra",
+            "scientificName": "Load-Bearing Wall Triangle of Life Shelter",
+            "categoryTag": "Abrigo Interno de Guerra",
+            "imageFileName": "id-interior-safe-zone-triangle.jpg",
+            "hudCode": "SAFE-ZONE-04",
+            "hudStatus": "TRIANGLE ARMORED",
+            "traits": [
+              {
+                "label": "Localização",
+                "value": "Parede mestra central a 3 m de janelas"
+              },
+              {
+                "label": "Geometria",
+                "value": "Colchão a 45 graus junto a mesa firme"
+              },
+              {
+                "label": "Postura corporal",
+                "value": "Boca aberta e ouvidos tapados"
+              }
+            ],
+            "fieldUse": "Acobertar-se no espaço triangular imediatamente após a sirene para escapar de estilhaços e desabamentos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Colocar apenas uma fita em 'X' no vidro e permanecer deitado na cama perto da janela",
+    "description": "Uma única fita em X deixa grandes áreas do vidro soltas, que se soltam em enormes lâminas afiadas na onda de choque. Ficar perto da janela posiciona o corpo diretamente na linha de fogo dos estilhaços.",
+    "consequence": "Ruptura fatal da artéria carótida e ferimentos traumáticos graves por estilhaços"
+  },
+  "faqs": [
+    {
+      "question": "Filme plástico de cozinha ou caixas de papelão podem substituir a fita adesiva nas janelas?",
+      "causeDiagnostic": "As pessoas costumam deixar as janelas desprotegidas quando acaba a fita adesiva reforçada.",
+      "resolution": "Sim. Envolver a janela com várias camadas de filme plástico esticado ou recortar placas de papelão grosso (como nas [cápsulas térmicas de papelão](/protocol-22)) e fixá-las ao batente cria uma barreira emergencial muito eficiente."
+    },
+    {
+      "question": "É recomendado abrir as janelas durante bombardeios para aliviar a pressão da onda de choque?",
+      "causeDiagnostic": "Há um mito difundido de que janelas abertas evitam que o vidro estoure.",
+      "resolution": "Nunca abra as janelas. Uma janela aberta permite a entrada direta de ondas supersônicas, estilhaços mortais, bolas de fogo e fumaça tóxica. Mantenha as janelas travadas, reforçadas com a barreira tripla, e busque abrigo atrás de paredes estruturais."
+    },
+    {
+      "question": "Como identificar uma parede estrutural de concreto confiável em um apartamento?",
+      "causeDiagnostic": "Confundir paredes finas de gesso com pilares de sustentação traz sério risco de desabamento.",
+      "resolution": "Bata na parede com os nós dos dedos: um som oco e ecoante indica gesso acartonado (drywall). Um som firme, surdo e sem vibração indica pilar ou parede mestra de concreto armado. Banheiros centrais costumam ser os mais reforçados."
+    }
+  ],
+  "outcome": {
+    "title": "Barreira Tripla de Vidro Anti-Explosão e Zona Segura Triangular Interior",
+    "description": "A janela é protegida com grade de fita a 5 cm, coberta por papel úmido para capturar poeira fina e selada atrás de cortina blecaute vedada nos 4 lados. A 3 metros das janelas externas, a zona segura combina mesa maciça e colchão inclinado a 45 graus para garantir um bolso de sobrevivência contra quedas de escombros.",
+    "svgFileName": "pr31-outcome.svg",
+    "svgLabels": [
+      "PR-31 완성체 // 전시 폭격·충격파 창문 3중 방호 및 실내 내력벽 삼각 안전구역(Safe Zone)",
+      "STAGE 01: 창문 전면 격자망 테이핑",
+      "손가락 3마디 간격 격자로 충격파 분산",
+      "STAGE 02: 젖은 신문지/비닐 표면 압착",
+      "수분 표면장력으로 미세 유리분진 결속",
+      "STAGE 03: 암막 커튼 4면 테이프 밀폐",
+      "두꺼운 암막포 4면 밀봉으로 파편 포집",
+      "STAGE 04: 내력벽 삼각 안전구역 구축",
+      "외벽 3m 이격 내력벽 모서리 매트리스 대피",
+      "[방호 원리] 3중 파편 차단막으로 유리 파편 95% 결속 및 내력벽 삼각 구역으로 충격파 회피"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Colocar fita em 'X' na janela durante bombardeios é fatal! Conheça o método real de blindagem.",
+    "body": "Quando uma bomba cai, a onda de choque transforma o vidro em centenas de lâminas supersônicas! A fita em X quebra o vidro em guilhotinas gigantes! Passo 1: trace fita em grade densa de 5 cm por todo o vidro para espalhar a vibração. Passo 2: borrife água e pressione jornal úmido para prender o pó fino de vidro. Passo 3: feche cortinas blecaute grossas e vede os 4 cantos na parede com fita. Por fim, vá para uma parede mestra a 3 metros de distância, incline um colchão a 45 graus junto a uma mesa firme e proteja-se no Triângulo da Vida!"
+  },
+  "createdAt": "2026-11-13T00:05:48.223Z",
+  "contentHash": "bef5418b5df5f8ba"
+}

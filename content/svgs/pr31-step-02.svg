@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg31s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <pattern id="grid31s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow31s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg31s2)"/>
+  <rect width="400" height="400" fill="url(#grid31s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 02 // 분무기 수분 살포 후 젖은 신문지·비닐 3겹 표면 압착</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+  <text x="24" y="64" fill="#6ee7b7" font-family="monospace" font-size="9.5">유리 전면에 물을 흠뻑 뿌린 뒤 신문지나 두꺼운 비닐을 기포 없이 밀착</text>
+
+  <!-- Main Illustration: Applying wet newspaper with water sprayer -->
+  <g filter="url(#shadow31s2)">
+    <!-- Window Frame -->
+    <rect x="50" y="86" width="300" height="205" fill="#1e293b" stroke="#64748b" stroke-width="6"/>
+    <rect x="60" y="96" width="280" height="185" fill="#090d16" stroke="#334155" stroke-width="2"/>
+
+    <!-- Wet Newspaper Layer Covering 80% (Left to Center) -->
+    <rect x="60" y="96" width="210" height="185" fill="#475569" opacity="0.9"/>
+    <!-- Newsprint text line textures -->
+    <line x1="70" y1="115" x2="255" y2="115" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="125" x2="255" y2="125" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="135" x2="255" y2="135" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="155" x2="255" y2="155" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="165" x2="255" y2="165" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="175" x2="255" y2="175" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="195" x2="255" y2="195" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="205" x2="255" y2="205" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="215" x2="255" y2="215" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="235" x2="255" y2="235" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="70" y1="245" x2="255" y2="245" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+    <!-- Water droplets / moisture sheen -->
+    <ellipse cx="120" cy="145" rx="5" ry="3" fill="#38bdf8"/>
+    <ellipse cx="180" cy="180" rx="6" ry="3.5" fill="#38bdf8"/>
+    <ellipse cx="140" cy="225" rx="4.5" ry="2.5" fill="#38bdf8"/>
+    <ellipse cx="220" cy="130" rx="5" ry="3" fill="#38bdf8"/>
+
+    <!-- Water Sprayer Bottle (Right Side) -->
+    <path d="M280,170 L315,170 L320,240 L275,240 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="290" y="145" width="15" height="25" fill="#f8fafc"/>
+    <path d="M295,145 L325,135 L320,150 L305,150 Z" fill="#f8fafc"/>
+    <path d="M285,150 L275,150 L278,160 L288,160 Z" fill="#38bdf8"/>
+    <!-- Fine spray mist cone hitting window -->
+    <path d="M275,155 L245,130 L245,190 Z" fill="#38bdf8" opacity="0.35"/>
+    <circle cx="255" cy="148" r="1.5" fill="#38bdf8"/>
+    <circle cx="260" cy="162" r="1.8" fill="#38bdf8"/>
+    <circle cx="250" cy="172" r="1.5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3: Surface Tension Adhesion -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#94a3b8" font-family="monospace" font-size="9">수분 표면장력으로 종이와 유리가 흡착되어 파편 이탈 방지 피막 형성</text>
+
+  <!-- Label 4: Moisture Maintenance Note -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+  <text x="24" y="344" fill="#c7d2fe" font-family="monospace" font-size="9">건조 시 박리 방지: 2~3시간 간격으로 분무기로 수분을 보충하여 점착력 유지</text>
+
+  <!-- Label 5: Core Principle Footer -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#10b981" font-family="monospace" font-size="9.5" font-weight="bold">[원리] 유리가 산산조각 나더라도 미세 파편이 젖은 펄프에 달라붙어 비산 차단</text>
+</svg>

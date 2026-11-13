@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-31",
+  "category": "SHELTER",
+  "title": "Window Blast Taping and Interior Triangle Safe Zone for Air Raids and Earthquakes",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "CRITICAL // IMMEDIATE WARTIME & QUAKE DEFENSE",
+  "summary": "During major urban catastrophes such as warfare, missile bombardments, explosions, or severe earthquakes, supersonic blast shockwaves shatter windows into thousands of high-velocity glass shrapnel blades. This protocol provides a 3-tier barrier system to block 95% of glass fragmentation and establishes a structural 'Triangle of Life' safe zone along interior load-bearing walls. If commercial blast mitigation film or plywood shutters are available, deploy them first; otherwise, transform your home into an improvised bunker using duct tape, wet newsprint, blackout curtains, and a mattress.",
+  "timeRequired": "Setup: 10-15 min // Drill Evacuation: 3 min",
+  "successRate": "95%",
+  "difficulty": "EASY // Immediate Home Implementation",
+  "outputPerHour": "Shrapnel Containment Rate > 95%",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Heavy-duty duct tape (or 5cm wide packaging tape) 2-3 rolls",
+      "desc": "High-tack fiber-reinforced tape to bind the entire glass surface in a tight grid and anchor frame perimeter silicone joints",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "Newspaper sheets 10-15 pages (or heavy trash bags 3-4 pcs) + 500mL water spray",
+      "desc": "Water-adhered pulp layer that clings to glass via surface tension to trap micro-fine glass powder and flying slivers",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Heavy blackout curtains or winter wool blankets/quilts 1-2 pcs",
+      "desc": "Secondary containment barrier covering the entire window with 4 edges taped securely to catch falling glass blocks",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "Solid wooden desk/table and a thick firm mattress 1 set",
+      "desc": "Protective furniture angled at 45 degrees against a load-bearing wall to create an uncrushable survival pocket",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Apply a 5cm grid tape pattern across the glass pane and reinforce the outer frame silicone perimeter",
+      "description": "1. **Surface Prep**: Wipe away dust and moisture from the interior glass using a dry towel to maximize adhesive grip.\n2. **Perimeter Sealing**: Apply duct tape directly along the perimeter where glass meets the window frame silicone to anchor the pane.\n3. **5cm Grid Lacing**: Pull duct tape taut horizontally and vertically at 5cm (three-finger) intervals to create a dense crisscross checkerboard grid.",
+      "actionNote": "Never apply a simple 'X' or asterisk pattern across the center; this causes the glass to break into massive lethal guillotine slabs. A dense grid is essential to distribute shockwave vibrations.",
+      "svgFileName": "pr31-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Window Pane 5cm Grid Taping and Perimeter Frame Anchoring",
+        "Wipe surface clean and apply perimeter tape along frame silicone joints",
+        "Interlock horizontal and vertical tape strips at 5cm (3-finger) intervals",
+        "Avoid simple X-tape: center pane breaks into lethal guillotine slabs",
+        "[CORE] Distribute blast shockwave vibrations to bind glass as one sheet"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // BLAST DUCT TAPE GRID",
+        "title": "Shockwave Absorption and Shear Stress Distribution Mechanics",
+        "text": "When an explosion shockwave hits a window, intense bending and shear stresses radiate outward from the center. Ordinary annealed glass has low tensile strength and fractures within milliseconds. A taut 5cm grid of fiber-reinforced tape absorbs energy through its interwoven strands and transfers it into the structural window frame. Even when shattered, the glass fragments remain bonded to the adhesive grid rather than projecting inward as projectile blades.",
+        "fieldSpecs": [
+          {
+            "name": "Grid-Reinforced Blast Window",
+            "scientificName": "Blast Mitigation Grid Taped Window",
+            "categoryTag": "Wartime Indoor Defense",
+            "imageFileName": "id-blast-taped-window.jpg",
+            "hudCode": "BLAST-TAPE-01",
+            "hudStatus": "GRID REINFORCED",
+            "traits": [
+              {
+                "label": "Grid Spacing",
+                "value": "5cm (approx. 3 fingers)"
+              },
+              {
+                "label": "Joint Reinforcement",
+                "value": "Frame silicone perimeter seal"
+              },
+              {
+                "label": "Defense Rate",
+                "value": "80% fragment cohesion"
+              }
+            ],
+            "fieldUse": "Deploy dense checkerboard taping within 5 minutes of an air raid siren to prevent glass projectiles"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Press wet newspaper or heavy plastic sheeting against the glass to trap micro-fine glass dust",
+      "description": "1. **Moisture Spray**: Liberally mist the taped glass surface using a water spray bottle or damp towel.\n2. **Pulp Sheet Adhesion**: Smooth 2-3 layers of newspaper (or heavy plastic sheeting) from top to bottom, expelling air pockets.\n3. **Surface Tension Lock**: Ensure the wet paper clings uniformly to the glass; re-wet edges with water if peeling occurs.",
+      "actionNote": "Dry newspaper loses surface adhesion. Keep the sheets moist by misting every 2-3 hours as long as explosive threats persist.",
+      "svgFileName": "pr31-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Wet Newspaper & Plastic Sheeting Surface Adhesion",
+        "Spray water generously and press newspaper sheets flat without air bubbles",
+        "Surface tension creates a continuous capillary seal to capture glass slivers",
+        "Prevent drying: re-mist edges every 2-3 hours to preserve adhesive bond",
+        "[PRINCIPLE] Even if shattered, fine glass dust clings to wet cellulose pulp"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WET NEWSPAPER SURFACE TENSION",
+        "title": "Capillary Cohesion and Micro-Shrapnel Pulp Containment",
+        "text": "The greatest hidden hazard during structural blast damage is airborne micro-glass dust that causes corneal lacerations and respiratory trauma. Water molecules create powerful capillary cohesion between glass and paper pulp. When glass shatters into fine powder under overpressure, the damp cellulose fibers trap the micro-shrapnel like sticky glue, preventing toxic glass dust from aerosolizing throughout the living quarters.",
+        "fieldSpecs": [
+          {
+            "name": "Wet Pulp Capillary Barrier",
+            "scientificName": "Wet Pulp Surface Tension Glass Seal",
+            "categoryTag": "Shrapnel Containment",
+            "imageFileName": "id-wet-newspaper-glass-seal.jpg",
+            "hudCode": "PULP-SEAL-02",
+            "hudStatus": "MOISTURE ADHESION",
+            "traits": [
+              {
+                "label": "Material",
+                "value": "3-layer newspaper or heavy poly bag"
+              },
+              {
+                "label": "Bond Mechanism",
+                "value": "Water capillary surface tension"
+              },
+              {
+                "label": "Maintenance",
+                "value": "Re-mist every 2-3 hours"
+              }
+            ],
+            "fieldUse": "Apply damp paper over taped window to capture microscopic razor-sharp glass particles"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Deploy heavy blackout curtains or quilts and hermetically seal all four perimeter edges with duct tape",
+      "description": "1. **Heavy Fabric Coverage**: Drape thick blackout curtains or winter quilts extending at least 20cm past all window edges.\n2. **4-Side Perimeter Seal**: Securely tape the curtain top rail, side wall interfaces, and floor hem with heavy-duty duct tape.\n3. **Catchment Pocket**: Allow a 10cm slack pocket at the bottom so dislodged window glass settles into the base rather than bursting into the room.",
+      "actionNote": "Never leave curtain bottoms untaped; upward shockwaves will violently billow the fabric, spraying trapped glass across the room.",
+      "svgFileName": "pr31-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Heavy Blackout Curtain 4-Edge Perimeter Tape Enclosure",
+        "Deploy thick curtains extending 20cm beyond all window frame edges",
+        "Hermetically tape top rail, left/right walls, and floor hem with duct tape",
+        "Avoid loose drapes: unsealed bottoms flutter in shockwaves, releasing glass",
+        "[TIER 2] Heavy textile absorbs kinetic energy and drops falling glass to floor"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 4-EDGE SEALED BLAST CURTAIN",
+        "title": "Textile Kinetic Energy Deceleration and Shrapnel Catchment",
+        "text": "In close-range explosions, excessive blast overpressure can rip the entire window frame inward. A 4-edge hermetically taped heavy curtain operates as an emergency blast catcher net. As high-speed glass chunks and aluminum frames slam into the heavy fabric, tensile elasticity decelerates the flying debris, dropping it harmlessly to the floor inside the containment pocket.",
+        "fieldSpecs": [
+          {
+            "name": "Sealed Blast Catchment Curtain",
+            "scientificName": "Hermetically Sealed Shrapnel Catchment Curtain",
+            "categoryTag": "Secondary Containment",
+            "imageFileName": "id-blast-curtain-containment.jpg",
+            "hudCode": "CURTAIN-WALL-03",
+            "hudStatus": "4-EDGE SEALED",
+            "traits": [
+              {
+                "label": "Seal Method",
+                "value": "4-edge full perimeter duct tape"
+              },
+              {
+                "label": "Recommended Fabric",
+                "value": "Blackout curtain or winter quilt"
+              },
+              {
+                "label": "Kinetic Reduction",
+                "value": "Decelerates high-velocity projectiles"
+              }
+            ],
+            "fieldUse": "Erect a secondary textile blast catchment wall to halt frame failure and inward glass spray"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Retreat to an interior load-bearing wall corner and erect a mattress 'Triangle of Life' safe zone",
+      "description": "1. **Identify Safe Zone**: Immediately evacuate windowed rooms and retreat to an interior concrete hallway, bathroom, or central load-bearing corner.\n2. **Construct Survival Triangle**: Place a sturdy wooden desk against the corner and prop a firm mattress beside it at a 45-degree angle to create an uncrushable pocket.\n3. **Blast Survival Posture**: Crouch inside the pocket, tuck knees to chest, clasp hands behind neck, close eyes, and keep mouth slightly open to equalize blast pressure.",
+      "actionNote": "Never crawl entirely underneath a desk; heavy ceiling collapses will crush furniture legs. Always crouch beside the desk within the triangular void formed next to it.",
+      "svgFileName": "pr31-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Interior Load-Bearing Wall Mattress 'Triangle of Life' Safe Zone",
+        "Move 3m away from exterior windows to interior load-bearing concrete walls",
+        "Prop a thick mattress at 45 degrees beside sturdy furniture for a void pocket",
+        "Tuck chin to chest, cup neck and ears, and keep mouth ajar for pressure balance",
+        "[SURVIVAL] Deflect falling structural debris to prevent crush asphyxiation"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRIANGLE OF LIFE DEFENSIVE ZONE",
+        "title": "Structural Pancake Collapse Dynamics and Blast Overpressure Equalization",
+        "text": "When buildings suffer missile hits or seismic collapses, ceiling slabs rarely compact completely flat. Instead, they impact rigid objects (sturdy desks, washing machines, corner pillars) and form survival void spaces called the 'Triangle of Life'. Propping a mattress at 45 degrees creates a deflection ramp that sheds concrete chunks. Keeping your mouth open and ears covered equalizes middle ear and pulmonary pressures with the external pressure spike, preventing lung barotrauma and eardrum rupture.",
+        "fieldSpecs": [
+          {
+            "name": "Load-Bearing Wall Triangle Shelter",
+            "scientificName": "Load-Bearing Wall Triangle of Life Shelter",
+            "categoryTag": "Wartime Shelter",
+            "imageFileName": "id-interior-safe-zone-triangle.jpg",
+            "hudCode": "SAFE-ZONE-04",
+            "hudStatus": "TRIANGLE ARMORED",
+            "traits": [
+              {
+                "label": "Location",
+                "value": "Central load-bearing wall, 3m from windows"
+              },
+              {
+                "label": "Geometry",
+                "value": "45-degree mattress against heavy desk"
+              },
+              {
+                "label": "Body Posture",
+                "value": "Mouth open, ears covered (blast balance)"
+              }
+            ],
+            "fieldUse": "Crouch in the reinforced triangle pocket immediately upon sirens to survive flying shrapnel and roof collapse"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Applying a single 'X' tape across the glass and remaining in bed near windows",
+    "description": "Placing a lone 'X' of tape leaves large unreinforced quadrants that break into lethal guillotine-sized glass slabs during blast waves. Remaining near perimeter windows places your body directly in the primary trajectory of flying debris.",
+    "consequence": "Fatal carotid artery laceration and catastrophic traumatic shrapnel injury"
+  },
+  "faqs": [
+    {
+      "question": "Can cling wrap or shipping cardboard replace duct tape on windows?",
+      "causeDiagnostic": "People often leave windows completely bare when they run out of conventional duct tape.",
+      "resolution": "Yes. Wrapping multiple tight layers of plastic cling wrap around the sash, or cutting thick cardboard boxes (as used in [cardboard survival capsules](/protocol-22)) and taping them flush against the frame provides an excellent secondary debris barrier."
+    },
+    {
+      "question": "Should windows be cracked open during air raids to relieve blast pressure?",
+      "causeDiagnostic": "A persistent urban myth suggests opening windows prevents overpressure blowout.",
+      "resolution": "Never open windows. An open window allows supersonic shockwaves, lethal debris, firestorms, and toxic smoke to channel directly inside. Keep windows fully latched, fortified with 3-tier barriers, and shelter behind interior walls."
+    },
+    {
+      "question": "How do you identify true structural load-bearing walls inside an apartment?",
+      "causeDiagnostic": "Mistaking hollow drywall partitions for solid reinforced columns leads to fatal collapse risks.",
+      "resolution": "Tap the wall firmly with your knuckles. A hollow, echoing 'thump' indicates a drywall partition. A dense, solid, vibration-free sound indicates a reinforced concrete load-bearing pillar. Central bathroom walls with plumbing chases are typically the most fortified."
+    }
+  ],
+  "outcome": {
+    "title": "Completed 3-Tier Window Blast Barrier and Interior Load-Bearing Triangle Safe Zone",
+    "description": "The window is reinforced with a 5cm crisscross duct tape grid, covered with water-adhered pulp to trap fine dust, and sealed behind a 4-edge taped blackout curtain to arrest failing glass. Located 3m away from exterior walls, the interior load-bearing safe zone combines a solid desk and a 45-degree mattress to guarantee a protective survival pocket against falling debris.",
+    "svgFileName": "pr31-outcome.svg",
+    "svgLabels": [
+      "PR-31 완성체 // 전시 폭격·충격파 창문 3중 방호 및 실내 내력벽 삼각 안전구역(Safe Zone)",
+      "STAGE 01: 창문 전면 격자망 테이핑",
+      "손가락 3마디 간격 격자로 충격파 분산",
+      "STAGE 02: 젖은 신문지/비닐 표면 압착",
+      "수분 표면장력으로 미세 유리분진 결속",
+      "STAGE 03: 암막 커튼 4면 테이프 밀폐",
+      "두꺼운 암막포 4면 밀봉으로 파편 포집",
+      "STAGE 04: 내력벽 삼각 안전구역 구축",
+      "외벽 3m 이격 내력벽 모서리 매트리스 대피",
+      "[방호 원리] 3중 파편 차단막으로 유리 파편 95% 결속 및 내력벽 삼각 구역으로 충격파 회피"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Taping a single 'X' on windows during wartime bombings will kill you! Here is the real survival taping method.",
+    "body": "When a bomb explodes, the shockwave turns ordinary window glass into hundreds of supersonic razor blades! A simple X-pattern tape breaks glass into huge guillotine chunks! Step 1: lace duct tape into a dense 5cm grid across the entire pane to scatter vibrations. Step 2: mist water and press wet newspaper over it to trap micro-fine glass powder. Step 3: drape heavy blackout curtains and tape all four edges to the wall. Finally, retreat 3 meters away to an interior load-bearing wall, prop a mattress beside a sturdy desk at 45 degrees, and take cover in the Triangle of Life!"
+  },
+  "createdAt": "2026-11-13T00:05:48.223Z",
+  "contentHash": "bef5418b5df5f8ba"
+}

@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-31",
+  "category": "SHELTER",
+  "title": "Encintado Anti-Explosiones de Ventanas y Zona Segura Triangular Interior para Bombardeos y Sismos",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "CRÍTICO // DEFENSA INMEDIATA ANTE BOMBARDEOS Y SISMOS",
+  "summary": "Durante catástrofes bélicas, bombardeos con misiles, explosiones urbanas o terremotos severos, la onda expansiva rompe los cristales en miles de proyectiles afilados a gran velocidad. Este protocolo establece una barrera de 3 capas para retener más del 95% de la fragmentación de vidrio y construye una zona segura estructural del 'Triángulo de la Vida' junto a muros de carga interiores. Si dispone de film anti-esquirlas comercial o contraventanas de madera, colóquelos primero; de lo contrario, transforme su hogar en un búnker improvisado con cinta adhesiva reforzada, periódico húmedo, cortinas opacas y un colchón.",
+  "timeRequired": "Instalación: 10-15 min // Evacuación de alarma: 3 min",
+  "successRate": "95%",
+  "difficulty": "EASY // Implementación inmediata en el hogar",
+  "outputPerHour": "Tasa de retención de metralla > 95%",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Cinta americana reforzada (o cinta de embalar de 5 cm) 2-3 rollos",
+      "desc": "Cinta adhesiva textil de alta resistencia para entrelazar el vidrio en cuadrícula densa y anclar las juntas de silicona del marco",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "Hojas de periódico 10-15 páginas (o bolsas de basura gruesas) + 500 mL de agua pulverizada",
+      "desc": "Capa de pulpa adherida por tensión superficial del agua que atrapa el polvo fino de vidrio y esquirlas cortantes",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Cortinas opacas gruesas o mantas térmicas de lana/edredones 1-2 uds",
+      "desc": "Barrera de contención secundaria que cubre toda la ventana con sus 4 bordes sellados con cinta para frenar bloques de vidrio",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "Escritorio/mesa de madera maciza y un colchón firme y grueso 1 juego",
+      "desc": "Mobiliario protector colocado a 45 grados contra un muro de carga interior para formar un bolsillo de supervivencia indeformable",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Aplicar un encintado en cuadrícula de 5 cm en todo el cristal y reforzar el perímetro de silicona del marco",
+      "description": "1. **Limpieza previa**: Limpie el polvo y la humedad del cristal interior con un paño seco para asegurar la máxima adherencia de la cinta.\n2. **Sellado perimetral**: Pegue cinta americana directamente a lo largo de la unión de silicona entre el cristal y el marco para evitar que se desplace.\n3. **Malla en cuadrícula de 5 cm**: Tense tiras de cinta horizontal y verticalmente cada tres dedos (aprox. 5 cm), cruzándolas en un patrón denso de tablero de ajedrez.",
+      "actionNote": "Nunca coloque solo una 'X' simple en el centro: esto provoca que el cristal se fracture en enormes láminas cortantes guillotina. La cuadrícula densa es imprescindible para disipar las vibraciones de la onda expansiva.",
+      "svgFileName": "pr31-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Encintado de Ventana en Cuadrícula de 5 cm y Anclaje al Marco",
+        "Limpiar la superficie y encintar el perímetro de silicona junto al marco",
+        "Entrecruzar tiras de cinta a intervalos de 5 cm (3 dedos) en cuadrícula",
+        "Evitar la X simple: el cristal central se desprende en guillotinas letales",
+        "[NÚCLEO] Disipar la onda expansiva para cohesionar el vidrio como una sola pieza"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // BLAST DUCT TAPE GRID",
+        "title": "Absorción de Ondas Expansivas y Mecánica de Esfuerzo Cortante",
+        "text": "Cuando una detonación impacta una ventana, se generan tensiones de flexión y cizallamiento extremas desde el centro hacia afuera. El vidrio convencional tiene baja resistencia a la tracción y se astilla en milisegundos. Una cuadrícula tensa de cinta textil absorbe la energía y la transfiere hacia el marco exterior. Incluso si el cristal colapsa, los fragmentos permanecen adheridos a la malla de cinta en lugar de salir proyectados al interior.",
+        "fieldSpecs": [
+          {
+            "name": "Ventana Reforzada con Cuadrícula Anti-Explosión",
+            "scientificName": "Blast Mitigation Grid Taped Window",
+            "categoryTag": "Defensa Interior Bélica",
+            "imageFileName": "id-blast-taped-window.jpg",
+            "hudCode": "BLAST-TAPE-01",
+            "hudStatus": "GRID REINFORCED",
+            "traits": [
+              {
+                "label": "Espaciado",
+                "value": "5 cm (aprox. 3 dedos)"
+              },
+              {
+                "label": "Anclaje",
+                "value": "Perímetro de silicona del marco"
+              },
+              {
+                "label": "Rendimiento",
+                "value": "80% de cohesión de metralla"
+              }
+            ],
+            "fieldUse": "Instalar encintado denso en menos de 5 minutos tras sonar la sirena de bombardeo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Presionar periódico húmedo o plástico grueso sobre el cristal para atrapar el polvo fino de vidrio",
+      "description": "1. **Rociado de agua**: Pulverice agua abundante sobre el cristal previamente encintado usando un pulverizador o paño húmedo.\n2. **Adhesión de hojas**: Alise 2-3 capas de periódico (o plástico grueso) de arriba hacia abajo con las palmas, eliminando bolsas de aire.\n3. **Cierre por tensión superficial**: Asegúrese de que el papel se adhiera uniformemente al cristal; humedezca de nuevo los bordes si se despegan.",
+      "actionNote": "El papel seco pierde adherencia. Mantenga las hojas humedecidas pulverizando agua cada 2-3 horas mientras persista la amenaza de explosiones.",
+      "svgFileName": "pr31-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Adhesión Superficial de Periódico Húmedo y Lámina Plástica",
+        "Rociar agua generosamente y presionar el papel sin dejar burbujas de aire",
+        "La tensión superficial crea un sello capilar continuo que atrapa esquirlas",
+        "Evitar resequedad: rociar agua cada 2-3 horas para mantener la adherencia",
+        "[PRINCIPIO] Aunque el vidrio se rompa, el polvo fino queda pegado a la pulpa"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WET NEWSPAPER SURFACE TENSION",
+        "title": "Cohesión Capilar y Retención de Micro-Metralla en Pulpa Húmeda",
+        "text": "El peligro invisible más grave tras una explosión es el polvo microscópico de vidrio en suspensión, que causa laceraciones corneales y daños pulmonares. El agua genera una potente cohesión capilar entre el vidrio y la celulosa del papel. Al romperse el cristal, las fibras húmedas actúan como adhesivo natural, sellando el polvo tóxico dentro de la capa húmeda.",
+        "fieldSpecs": [
+          {
+            "name": "Barrera Capilar de Pulpa Húmeda",
+            "scientificName": "Wet Pulp Surface Tension Glass Seal",
+            "categoryTag": "Contención de Metralla",
+            "imageFileName": "id-wet-newspaper-glass-seal.jpg",
+            "hudCode": "PULP-SEAL-02",
+            "hudStatus": "MOISTURE ADHESION",
+            "traits": [
+              {
+                "label": "Material",
+                "value": "Periódico triple o plástico grueso"
+              },
+              {
+                "label": "Mecanismo",
+                "value": "Tensión superficial y capilaridad"
+              },
+              {
+                "label": "Mantenimiento",
+                "value": "Rociado cada 2-3 horas"
+              }
+            ],
+            "fieldUse": "Aplicar papel húmedo sobre el cristal encintado para retener partículas microscópicas de vidrio"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Desplegar cortinas opacas gruesas o mantas y sellar herméticamente los 4 bordes perimetrales con cinta",
+      "description": "1. **Cobertura con tejido pesado**: Cuelgue cortinas opacas o edredones gruesos que sobrepasen al menos 20 cm el marco de la ventana.\n2. **Sellado hermético de 4 lados**: Fije con cinta adhesiva reforzada la barra superior, las paredes laterales y el dobladillo inferior al suelo.\n3. **Bolsillo de contención**: Deje una holgura de unos 10 cm en la base para que los cristales caídos se acumulen dentro del tejido sin salir despedidos.",
+      "actionNote": "Nunca deje el bajo de la cortina sin fijar: la onda expansiva levantará la tela hacia la habitación, arrojando cristales con fuerza.",
+      "svgFileName": "pr31-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Sellado Perimetral de Cortina Opaca con Cinta en 4 Lados",
+        "Desplegar cortinas gruesas que sobrepasen 20 cm el marco de la ventana",
+        "Sellar con cinta americana el riel superior, paredes laterales y dobladillo",
+        "Evitar cortinas sueltas: la onda de choque las levanta esparciendo cristales",
+        "[BARRERA 2] El tejido absorbe energía cinética y hace caer el vidrio al suelo"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 4-EDGE SEALED BLAST CURTAIN",
+        "title": "Deceleración Cinética Textil y Red de Retención de Fragmentos",
+        "text": "En detonaciones cercanas de gran calibre, la sobrepresión puede arrancar el marco completo hacia adentro. Una cortina gruesa sellada herméticamente en sus cuatro lados actúa como un airbag balístico. Al impactar los bloques de vidrio contra el tejido pesado, la elasticidad textil absorbe la energía cinética y frena los proyectiles, depositándolos de forma segura en el fondo del faldón.",
+        "fieldSpecs": [
+          {
+            "name": "Cortina Sellada Colectora de Metralla",
+            "scientificName": "Hermetically Sealed Shrapnel Catchment Curtain",
+            "categoryTag": "Contención Secundaria",
+            "imageFileName": "id-blast-curtain-containment.jpg",
+            "hudCode": "CURTAIN-WALL-03",
+            "hudStatus": "4-EDGE SEALED",
+            "traits": [
+              {
+                "label": "Fijación",
+                "value": "Sellado perimetral con cinta en 4 lados"
+              },
+              {
+                "label": "Tejido recomendado",
+                "value": "Cortina blackout o manta de lana"
+              },
+              {
+                "label": "Absorción",
+                "value": "Frena proyectiles a gran velocidad"
+              }
+            ],
+            "fieldUse": "Crear un muro secundario textil para atrapar el marco y evitar la proyección de vidrio al interior"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Refugiarse en la esquina de un muro de carga interior y montar la zona segura del 'Triángulo de la Vida'",
+      "description": "1. **Identificar la zona segura**: Abandone inmediatamente las habitaciones con ventanas exteriores y diríjase a pasillos interiores, baños o esquinas de muros de carga.\n2. **Construir el triángulo de supervivencia**: Coloque un escritorio de madera maciza junto a la esquina e incline un colchón firme a 45 grados a su lado, creando un espacio vacío indeformable.\n3. **Postura de protección**: Acurrúquese dentro del triángulo, junte las rodillas al pecho, cubra nuca y orejas con ambas manos, mantenga los ojos cerrados y la boca entreabierta para compensar la presión.",
+      "actionNote": "Nunca se meta 'debajo' del escritorio: el colapso del techo aplastará las patas del mueble. Refúgiese siempre 'al lado' del escritorio, dentro del vacío triangular que se forma junto a él.",
+      "svgFileName": "pr31-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Zona Segura Triangular en Esquina de Muro de Carga Interior",
+        "Alejarse 3 m de ventanas hacia muros de carga interiores de hormigón",
+        "Inclinar un colchón a 45 grados junto a muebles macizos para crear un vacío",
+        "Proteger cabeza, nuca y oídos con la boca entreabierta para equilibrar presión",
+        "[SUPERVIVENCIA] Desviar escombros estructurales para evitar aplastamientos"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRIANGLE OF LIFE DEFENSIVE ZONE",
+        "title": "Dinámica del Colapso en Sándwich y Compensación de Presión de Choque",
+        "text": "Cuando una estructura se derrumba por impacto de proyectiles o sismos, las losas de hormigón impactan contra objetos rígidos (escritorios macizos, lavadoras, pilares) y forman huecos triangulares protectores conocidos como el 'Triángulo de la Vida'. El colchón a 45 grados sirve de rampa deflectora contra cascotes. Mantener la boca entreabierta y los oídos tapados iguala la presión en tímpanos y pulmones con la sobrepresión exterior, previniendo barotraumas y roturas de tímpano.",
+        "fieldSpecs": [
+          {
+            "name": "Refugio Triangular en Muro de Carga",
+            "scientificName": "Load-Bearing Wall Triangle of Life Shelter",
+            "categoryTag": "Refugio Interior Bélico",
+            "imageFileName": "id-interior-safe-zone-triangle.jpg",
+            "hudCode": "SAFE-ZONE-04",
+            "hudStatus": "TRIANGLE ARMORED",
+            "traits": [
+              {
+                "label": "Ubicación",
+                "value": "Muro de carga central a 3 m de ventanas"
+              },
+              {
+                "label": "Geometría",
+                "value": "Colchón a 45 grados junto a escritorio"
+              },
+              {
+                "label": "Postura",
+                "value": "Boca abierta y oídos tapados"
+              }
+            ],
+            "fieldUse": "Refugiarse en el bolsillo triangular inmediatamente tras la alarma para evitar proyectiles y colapsos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Pegar una sola cinta en 'X' en el cristal y permanecer en la cama junto a la ventana",
+    "description": "Una sola 'X' deja grandes áreas sin soporte que se quiebran en enormes láminas cortantes durante la onda expansiva. Permanecer cerca de la ventana expone directamente el cuerpo a la trayectoria de metralla balística.",
+    "consequence": "Corte fatal de arteria carótida y traumatismos graves por impacto de metralla"
+  },
+  "faqs": [
+    {
+      "question": "¿Puede el film transparente de cocina o cartón sustituir la cinta americana en las ventanas?",
+      "causeDiagnostic": "Se tiende a dejar las ventanas descubiertas cuando se agota la cinta americana convencional.",
+      "resolution": "Sí. Envolver varias capas apretadas de film transparente o recortar planchas de cartón grueso (como las usadas en [cápsulas térmicas de cartón](/protocol-22)) y fijarlas al marco crea una excelente pantalla de retención de esquirlas."
+    },
+    {
+      "question": "¿Es recomendable dejar las ventanas abiertas durante bombardeos para aliviar la presión?",
+      "causeDiagnostic": "Existe el mito de que abrir las ventanas evita que revienten por la onda expansiva.",
+      "resolution": "Nunca abra las ventanas. Una ventana abierta permite la entrada directa de ondas de choque supersónicas, metralla, bolas de fuego y gases tóxicos. Mantenga las ventanas cerradas, reforzadas con la triple barrera, y busque refugio tras muros de carga."
+    },
+    {
+      "question": "¿Cómo identificar un verdadero muro de carga de hormigón en un piso?",
+      "causeDiagnostic": "Confundir tabiques huecos de pladur con columnas maestras expone a graves riesgos de derrumbe.",
+      "resolution": "Golpee la pared con los nudillos: un sonido hueco y resonante indica tabiquería ligera de pladur. Un sonido duro, sordo y sin vibración indica un pilar o muro de carga de hormigón armado. Los baños centrales con bajantes suelen ser las zonas más reforzadas."
+    }
+  ],
+  "outcome": {
+    "title": "Barrera Triple de Ventanas Anti-Explosión y Zona Segura Triangular Interior",
+    "description": "La ventana queda asegurada con una cuadrícula de cinta a 5 cm, recubierta con pulpa húmeda para retener el polvo y sellada tras una cortina opaca fijada en sus 4 lados. A 3 metros de las fachadas, la zona segura interior combina un escritorio macizo y un colchón inclinado a 45 grados para garantizar un bolsillo de supervivencia contra el derrumbe del techo.",
+    "svgFileName": "pr31-outcome.svg",
+    "svgLabels": [
+      "PR-31 완성체 // 전시 폭격·충격파 창문 3중 방호 및 실내 내력벽 삼각 안전구역(Safe Zone)",
+      "STAGE 01: 창문 전면 격자망 테이핑",
+      "손가락 3마디 간격 격자로 충격파 분산",
+      "STAGE 02: 젖은 신문지/비닐 표면 압착",
+      "수분 표면장력으로 미세 유리분진 결속",
+      "STAGE 03: 암막 커튼 4면 테이프 밀폐",
+      "두꺼운 암막포 4면 밀봉으로 파편 포집",
+      "STAGE 04: 내력벽 삼각 안전구역 구축",
+      "외벽 3m 이격 내력벽 모서리 매트리스 대피",
+      "[방호 원리] 3중 파편 차단막으로 유리 파편 95% 결속 및 내력벽 삼각 구역으로 충격파 회피"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¡Colocar una sola 'X' de cinta en la ventana durante bombardeos puede ser fatal! Aquí te enseñamos el encintado real.",
+    "body": "¡Al explotar una bomba, la onda de choque convierte el cristal en cientos de cuchillas supersónicas! La cinta en X rompe el vidrio en enormes guillotinas. Paso 1: cruza cinta en una cuadrícula densa de 5 cm por todo el cristal para disipar vibraciones. Paso 2: pulveriza agua y pega periódico húmedo para retener el polvo fino de vidrio. Paso 3: cuelga una cortina opaca gruesa y sella los cuatro lados a la pared. Finalmente, aléjate 3 metros hacia un muro de carga interior, inclina un colchón a 45 grados junto a un escritorio firme y ¡protégete en el Triángulo de la Vida!"
+  },
+  "createdAt": "2026-11-13T00:05:48.223Z",
+  "contentHash": "bef5418b5df5f8ba"
+}

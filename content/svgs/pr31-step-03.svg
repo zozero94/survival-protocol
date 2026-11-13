@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg31s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="curtain31s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <pattern id="grid31s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow31s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg31s3)"/>
+  <rect width="400" height="400" fill="url(#grid31s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 03 // 두꺼운 암막 커튼·모포 창틀 4면 강력 테이프 밀폐 결속</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="64" fill="#fde68a" font-family="monospace" font-size="9.5">창문 크기보다 20cm 큰 두꺼운 암막 커튼 또는 겨울용 모포 전면 전개</text>
+
+  <!-- Main Illustration: Curtain covering window with 4-edge taped perimeter -->
+  <g filter="url(#shadow31s3)">
+    <!-- Wall background -->
+    <rect x="40" y="86" width="320" height="205" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+    <!-- Window outline underneath curtain (dashed) -->
+    <rect x="75" y="105" width="250" height="165" fill="#090d16" stroke="#475569" stroke-width="2" stroke-dasharray="4 2"/>
+
+    <!-- Heavy Draped Fabric Covering Entire Opening -->
+    <path d="M55,95 L345,95 L345,280 L55,280 Z" fill="url(#curtain31s3)"/>
+    <!-- Vertical pleats / drape lines -->
+    <path d="M90,95 Q100,185 95,280" stroke="#334155" stroke-width="3" fill="none"/>
+    <path d="M140,95 Q150,185 145,280" stroke="#334155" stroke-width="3" fill="none"/>
+    <path d="M200,95 Q190,185 195,280" stroke="#334155" stroke-width="3" fill="none"/>
+    <path d="M255,95 Q265,185 260,280" stroke="#334155" stroke-width="3" fill="none"/>
+    <path d="M305,95 Q315,185 310,280" stroke="#334155" stroke-width="3" fill="none"/>
+
+    <!-- 4-Side Perimeter Sealing Tape (Vibrant Amber/Gold) -->
+    <!-- Top Tape Strip -->
+    <rect x="45" y="90" width="310" height="12" fill="#f59e0b" stroke="#d97706" stroke-width="1.2"/>
+    <!-- Bottom Tape Strip -->
+    <rect x="45" y="275" width="310" height="12" fill="#f59e0b" stroke="#d97706" stroke-width="1.2"/>
+    <!-- Left Tape Strip -->
+    <rect x="45" y="90" width="12" height="197" fill="#f59e0b" stroke="#d97706" stroke-width="1.2"/>
+    <!-- Right Tape Strip -->
+    <rect x="343" y="90" width="12" height="197" fill="#f59e0b" stroke="#d97706" stroke-width="1.2"/>
+
+    <!-- Blast wave arrow hitting from behind (interior protection) -->
+    <path d="M20,185 L40,185" stroke="#ef4444" stroke-width="3"/>
+    <polygon points="40,180 50,185 40,190" fill="#ef4444"/>
+  </g>
+
+  <!-- Label 3: Perimeter Sealing Detail -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#94a3b8" font-family="monospace" font-size="9">상단 레일과 좌우 벽면, 바닥 하단부를 청테이프로 빈틈없이 압착 밀봉</text>
+
+  <!-- Label 4: Warning Box -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2d0607" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">단순 드리우기 금지: 하단이 열려 있으면 폭풍 충격파에 커튼이 들려 파편 유입</text>
+
+  <!-- Label 5: Core Principle Footer -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#f59e0b" font-family="monospace" font-size="9.5" font-weight="bold">[2차 방벽] 창틀 파손 및 유리 탈락 시 무거운 섬유가 파편을 포집해 바닥 낙하</text>
+</svg>

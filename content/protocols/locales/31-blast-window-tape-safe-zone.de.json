@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-31",
+  "category": "SHELTER",
+  "title": "Fenster-Splitterschutz durch Gitter-Klebung und Dreieck-Schutzzone bei Luftangriffen und Erdbeben",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "KRITISCH // SOFORTIGE SCHUTZMASSNAHME BEI KRIEG & ERDBEBEN",
+  "summary": "Bei militärischen Bombardierungen, Raketenangriffen, Großexplosionen oder schweren Erdbeben zersplittern Fensterscheiben durch Überschall-Druckwellen in tausende rasiermesserscharfe Geschosse. Dieses Protokoll errichtet ein 3-stufiges Schutzbarrierensystem, das über 95% der Glassplitter auffängt, und richtet an innenliegenden tragenden Wänden eine unzerstörbare 'Dreieck des Lebens'-Schutzzone ein. Falls Splitterschutzfolien oder Fensterläden vorhanden sind, nutzen Sie diese vorrangig; andernfalls verwandeln Sie Ihre Wohnung mit Gewebeband, nassem Zeitungspapier, Verdunkelungsvorhängen und einer Matratze in einen behelfsmäßigen Schutzbunker.",
+  "timeRequired": "Montage: 10-15 Min // Alarm-Evakuierung: 3 Min",
+  "successRate": "95%",
+  "difficulty": "EASY // Sofortige Umsetzung im Haushalt",
+  "outputPerHour": "Splitterrückhalterate > 95%",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Panzertape (Gewebeband oder 5 cm breites Paketband) 2-3 Rollen",
+      "desc": "Hochfestes fadenverstärktes Klebeband zur Gitterverstärkung der Glasfläche und Fixierung der Fensterrahmen-Silikonfugen",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "Zeitungspapier 10-15 Seiten (oder dicke Müllsäcke) + 500 mL Sprühwasser",
+      "desc": "Durch Oberflächenspannung haftende Zellstoffschicht zur Bindung feinster Glasstäube und Schnittsplitter",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Schwere Verdunkelungsvorhänge oder Winter-Wolldecken/Steppbetten 1-2 Stk.",
+      "desc": "Sekundäre Auffangbarriere, die das Fenster vollständig abdeckt und 4-seitig abgeklebt wird, um herabstürzende Glasschollen aufzufangen",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "Massiver Holzschreibtisch/Tisch und eine dicke feste Matratze 1 Set",
+      "desc": "Schützende Möbelstücke, die im 45-Grad-Winkel an eine tragende Wand gelehnt werden, um einen druckfesten Hohlraum zu bilden",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "5-cm-Gitterklebung über die gesamte Scheibe anbringen und den Fensterrahmen-Silikonrand verstärken",
+      "description": "1. **Oberflächenreinigung**: Staub und Feuchtigkeit auf der Innenseite der Glasscheibe mit einem trockenen Tuch gründlich entfernen.\n2. **Randabdichtung**: Panzerband direkt entlang der Silikonfuge zwischen Glas und Rahmen aufkleben, um die Scheibe im Rahmen zu sichern.\n3. **5-cm-Schachbrettgitter**: Das Klebeband horizontal und vertikal im Abstand von drei Fingerbreiten (ca. 5 cm) straff kreuzweise anbringen.",
+      "actionNote": "Niemals nur ein einfaches 'X' in die Mitte kleben: Dadurch bricht das Glas bei Druckwellen in riesige Guillotine-Schollen. Ein dichtes Gitter ist zwingend nötig, um die Stoßenergie zu verteilen.",
+      "svgFileName": "pr31-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 5-cm-Gitterklebung auf Glasscheibe und Rahmenverankerung",
+        "Glasfläche säubern und Rahmenränder entlang der Silikonfugen abkleben",
+        "Horizontale und vertikale Bänder im 5-cm-Abstand (3 Finger) kreuzen",
+        "Kein einfaches X-Muster: Mittiges Glas bricht in tödliche Schollen",
+        "[KERN] Druckwellenenergie verteilen und Glas als Verbundkörper sichern"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // BLAST DUCT TAPE GRID",
+        "title": "Stoßwellen-Absorption und Scherspannungs-Verteilungsmechanik",
+        "text": "Wenn eine Explosionsdruckwelle auf ein Fenster trifft, entstehen extreme Biege- und Scherspannungen von der Mitte nach außen. Normales Flachglas besitzt eine geringe Zugfestigkeit und birst in Millisekunden. Ein dichtes Gitter aus Gewebeband absorbiert die kinetische Energie über die Fasern und leitet sie in den Rahmen ab. Selbst wenn das Glas zerspringt, bleiben die Bruchstücke am Klebeband haften, statt in den Raum geschleudert zu werden.",
+        "fieldSpecs": [
+          {
+            "name": "Gitterverstärktes Splitterschutzfenster",
+            "scientificName": "Blast Mitigation Grid Taped Window",
+            "categoryTag": "Kriegs-Raumschutz",
+            "imageFileName": "id-blast-taped-window.jpg",
+            "hudCode": "BLAST-TAPE-01",
+            "hudStatus": "GRID REINFORCED",
+            "traits": [
+              {
+                "label": "Gitterabstand",
+                "value": "5 cm (ca. 3 Fingerbreiten)"
+              },
+              {
+                "label": "Randankerung",
+                "value": "Rahmen-Silikonfuge versiegelt"
+              },
+              {
+                "label": "Schutzleistung",
+                "value": "80% Splitterzusammenhalt"
+              }
+            ],
+            "fieldUse": "Innerhalb von 5 Minuten nach Luftschutzalarm Scheiben gitterförmig abkleben"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Nasses Zeitungspapier oder dicke Folie aufpressen, um feine Glassplitter und Glasstaub zu binden",
+      "description": "1. **Wasser aufsprühen**: Die abgeklebte Glasfläche mit einer Sprühflasche oder einem feuchten Tuch großzügig befeuchten.\n2. **Papier anpressen**: 2-3 Lagen Zeitungspapier (oder dicke Folie) von oben nach unten blasenfrei mit den Handflächen glattstreichen.\n3. **Haftung prüfen**: Das Papier muss durch Kapillarkräfte vollflächig am Glas haften; trockene Kanten sofort nachbefeuchten.",
+      "actionNote": "Trockenes Papier verliert die Haftung. Halten Sie die Lagen während anhaltender Gefahrenlagen alle 2-3 Stunden durch leichtes Nachsprühen feucht.",
+      "svgFileName": "pr31-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Feuchtes Zeitungspapier & Folien-Oberflächenhaftung",
+        "Wasser aufsprühen und Papierbahnen ohne Luftblasen vollflächig anpressen",
+        "Oberflächenspannung bildet kontinuierliche Kapillarbarriere gegen Splitter",
+        "Austrocknung verhindern: Kanten alle 2-3 Stunden mit Sprühwasser befeuchten",
+        "[PRINZIP] Feine Zellstofffasern binden mikroskopischen Glasstaub zuverlässig"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WET NEWSPAPER SURFACE TENSION",
+        "title": "Kapillarkohäsion und Zellstoffbindung mikroskopischer Splitter",
+        "text": "Die am meisten unterschätzte Gefahr bei Detonationen ist lungengängiger und hornhautschädigender Feinst-Glasstaub. Wasser erzeugt eine hohe Kapillarkraft zwischen Glas und Zellstoff. Zerbricht das Glas zu feinem Pulver, wirken die nassen Papierfasern wie ein Schutzfilm, der den toxischen Glasstaub einschließt und das Aufwirbeln im Wohnraum verhindert.",
+        "fieldSpecs": [
+          {
+            "name": "Nass-Zellstoff-Splitterbarriere",
+            "scientificName": "Wet Pulp Surface Tension Glass Seal",
+            "categoryTag": "Splitterbindung",
+            "imageFileName": "id-wet-newspaper-glass-seal.jpg",
+            "hudCode": "PULP-SEAL-02",
+            "hudStatus": "MOISTURE ADHESION",
+            "traits": [
+              {
+                "label": "Material",
+                "value": "Dreilagiges Zeitungspapier / Folie"
+              },
+              {
+                "label": "Haftmechanismus",
+                "value": "Wasser-Oberflächenspannung"
+              },
+              {
+                "label": "Wartung",
+                "value": "Nachsprühen alle 2-3 Stunden"
+              }
+            ],
+            "fieldUse": "Feuchtes Papier über das geklebte Glas legen, um mikroskopische Schnittpartikel zu binden"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schwere Verdunkelungsvorhänge anbringen und an allen vier Seiten mit Gewebeband hermetisch versiegeln",
+      "description": "1. **Schwere Textilfläche**: Vorhänge oder dicke Decken aufhängen, die den Fensterrahmen um mindestens 20 cm überragen.\n2. **4-seitiges Abkleben**: Vorhangstange, Seitenwände und den unteren Saum am Boden lückenlos mit Panzerband festkleben.\n3. **Fangtasche bilden**: Am Boden ca. 10 cm Spiel lassen, sodass herabstürzende Glasscherben in der Stofftasche aufgefangen werden.",
+      "actionNote": "Vorhänge niemals lose hängen lassen: Die Druckwelle bläht den Stoff unversiegelt auf und schleudert Glassplitter ungebremst in den Raum.",
+      "svgFileName": "pr31-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 4-seitig versiegelter Verdunkelungsvorhang mit Panzertape",
+        "Schwere Vorhänge montieren, die den Fensterrahmen um 20 cm überragen",
+        "Vorhangstange, Seitenwände und Bodensaum mit Panzerband luftdicht sichern",
+        "Keine losen Vorhänge: Druckwellen wirbeln unversiegelten Stoff auf",
+        "[STUFE 2] Schweres Textil dämpft kinetische Energie und fängt Trümmer am Boden ab"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 4-EDGE SEALED BLAST CURTAIN",
+        "title": "Kinetische Dämpfung durch Textilien und sekundärer Trümmerfang",
+        "text": "Bei nahen Großexplosionen kann der Überdruck den gesamten Fensterrahmen nach innen reißen. Ein ringsum dicht verklebter schwerer Vorhang fungiert als ballistisches Auffangnetz. Treffen schwere Trümmer und Rahmen auf den dicken Stoff, bremst die Elastizität des Gewebes die Fluggeschwindigkeit ab und leitet die Bruchstücke kontrolliert zu Boden.",
+        "fieldSpecs": [
+          {
+            "name": "Versiegelter Splitterschutzvorhang",
+            "scientificName": "Hermetically Sealed Shrapnel Catchment Curtain",
+            "categoryTag": "Sekundär-Auffangnetz",
+            "imageFileName": "id-blast-curtain-containment.jpg",
+            "hudCode": "CURTAIN-WALL-03",
+            "hudStatus": "4-EDGE SEALED",
+            "traits": [
+              {
+                "label": "Versiegelung",
+                "value": "4-seitige Rundum-Verklebung"
+              },
+              {
+                "label": "Stoffempfehlung",
+                "value": "Verdunkelungsstoff oder Wolldecke"
+              },
+              {
+                "label": "Dämpfung",
+                "value": "Bremst Hochgeschwindigkeits-Geschosse"
+              }
+            ],
+            "fieldUse": "Sekundäre Textil-Schutzwand errichten, um bei Rahmenversagen Splitterdurchschläge zu stoppen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "An eine innenliegende tragende Wand zurückziehen und mit Matratze eine Dreiecks-Schutzzone errichten",
+      "description": "1. **Schutzzone aufsuchen**: Räume mit Außenfenstern sofort verlassen und innenliegende Flure, Bäder oder tragende Beton-Ecken aufsuchen.\n2. **Dreieck des Lebens errichten**: Einen massiven Schreibtisch an die Ecke stellen und eine Matratze im 45-Grad-Winkel daneben anlehnen, um einen druckfesten Hohlraum zu schaffen.\n3. **Schutzhaltung einnehmen**: Im Dreiecks-Hohlraum hocken, Knie an die Brust ziehen, Hände über Nacken und Ohren legen, Mund leicht öffnen und Augen schließen.",
+      "actionNote": "Kriechen Sie niemals 'unter' den Schreibtisch: Herabstürzende Betondecken zertrümmern die Tischbeine. Suchen Sie Schutz stets 'neben' dem Tisch im dreieckigen Hohlraum.",
+      "svgFileName": "pr31-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 'Dreieck des Lebens'-Schutzzone an tragender Innenwand",
+        "3 m von Außenfenstern entfernt an innenliegende tragende Betonwände fliehen",
+        "Matratze im 45-Grad-Winkel an schwere Möbel lehnen für einen Schutzraum",
+        "Nacken und Ohren schützen, Mund leicht öffnen zum Druckausgleich",
+        "[ÜBERLEBEN] Herabstürzende Trümmer ablenken, um Quetschungen zu verhindern"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // TRIANGLE OF LIFE DEFENSIVE ZONE",
+        "title": "Struktureller Einsturz und Druckwellenausgleichs-Haltung",
+        "text": "Wenn Gebäude einstürzen, schlagen Deckenteile auf massive Gegenstände (robuste Schreibtische, Waschmaschinen) auf und bilden daneben dreieckige Überlebensräume ('Triangle of Life'). Die schräg gestellte Matratze dient als Abprall-Rampe für herabfallende Trümmer. Der leicht geöffnete Mund und zugehaltene Ohren gleichen den Innendruck von Lunge und Mittelohr mit dem äußeren Spitzen-Überdruck ab und verhindern Trommelfellrupturen und Lungenbarotraumata.",
+        "fieldSpecs": [
+          {
+            "name": "Tragwand-Dreiecksschutzraum",
+            "scientificName": "Load-Bearing Wall Triangle of Life Shelter",
+            "categoryTag": "Kriegs-Schutzraum",
+            "imageFileName": "id-interior-safe-zone-triangle.jpg",
+            "hudCode": "SAFE-ZONE-04",
+            "hudStatus": "TRIANGLE ARMORED",
+            "traits": [
+              {
+                "label": "Standort",
+                "value": "Tragende Innenwand, 3 m von Fenstern"
+              },
+              {
+                "label": "Geometrie",
+                "value": "45-Grad-Matratze an schwerem Tisch"
+              },
+              {
+                "label": "Körperhaltung",
+                "value": "Mund geöffnet, Ohren bedeckt"
+              }
+            ],
+            "fieldUse": "Bei Sirenenalarm sofort in den dreieckigen Hohlraum kauern, um Splitter und Einsturz zu überleben"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Nur ein einzelnes 'X' auf die Scheibe kleben und im Bett am Fenster verharren",
+    "description": "Ein simples 'X' lässt große Flächen ungesichert, die bei Druckwellen in riesige, guillotineartige Schollen brechen. In Fensternähe zu verweilen setzt den Körper der direkten Flugbahn rasiermesserscharfer Trümmer aus.",
+    "consequence": "Tödliche Halsschlagader-Schnittverletzungen und schwere Bombensplittertraumata"
+  },
+  "faqs": [
+    {
+      "question": "Kann Frischhaltefolie oder Karton das Panzerband an Fenstern ersetzen?",
+      "causeDiagnostic": "Häufig werden Fenster ungesichert gelassen, wenn handelsübliches Panzerband aufgebraucht ist.",
+      "resolution": "Ja. Mehrmaliges straffes Umwickeln des Fensters mit Frischhaltefolie oder das Zuschneiden und flächige Befestigen von dicken Kartonagen (wie in [Papp-Isolations-Kapseln](/protocol-22)) bildet eine wirksame Not-Splitterschutzschicht."
+    },
+    {
+      "question": "Sollte man bei Bombenalarm die Fenster öffnen, um den Druck abzubauen?",
+      "causeDiagnostic": "Der Mythos hält sich hartnäckig, geöffnete Fenster würden das Bersten durch Druckausgleich verhindern.",
+      "resolution": "Niemals öffnen! Geöffnete Fenster leiten Überschall-Druckwellen, Splittergeschosse, Feuerbälle und Brandgase direkt ins Zimmer. Fenster fest verriegeln, 3-fach sichern und hinter tragende Innenwände flüchten."
+    },
+    {
+      "question": "Wie erkennt man tragende Betonwände in einer Mietwohnung?",
+      "causeDiagnostic": "Gipskartonwände werden mit tragenden Wänden verwechselt, was bei Einstürzen lebensgefährlich ist.",
+      "resolution": "Klopfen Sie mit den Knöcheln: Ein hohler, trommelnder Ton deutet auf Trockenbauwände hin. Ein dumpfer, massiver Klang ohne spürbare Schwingung kennzeichnet tragende Stahlbetonwände. Innenliegende Bäder mit Steigleitungen sind oft am stärksten bewehrt."
+    }
+  ],
+  "outcome": {
+    "title": "Vollendete 3-fach-Splitterschutzwand und Innenraum-Dreiecks-Schutzzone",
+    "description": "Das Fenster wird durch ein 5-cm-Gitterband stabilisiert, mit feuchtem Zellstoff gegen Feinstaub versiegelt und hinter einem 4-seitig verklebten Vorhang gesichert. 3 Meter von Außenwänden entfernt bildet die Schutzzone aus Tisch und schräger Matratze einen sicheren Überlebenshohlraum gegen Trümmerabstürze.",
+    "svgFileName": "pr31-outcome.svg",
+    "svgLabels": [
+      "PR-31 완성체 // 전시 폭격·충격파 창문 3중 방호 및 실내 내력벽 삼각 안전구역(Safe Zone)",
+      "STAGE 01: 창문 전면 격자망 테이핑",
+      "손가락 3마디 간격 격자로 충격파 분산",
+      "STAGE 02: 젖은 신문지/비닐 표면 압착",
+      "수분 표면장력으로 미세 유리분진 결속",
+      "STAGE 03: 암막 커튼 4면 테이프 밀폐",
+      "두꺼운 암막포 4면 밀봉으로 파편 포집",
+      "STAGE 04: 내력벽 삼각 안전구역 구축",
+      "외벽 3m 이격 내력벽 모서리 매트리스 대피",
+      "[방호 원리] 3중 파편 차단막으로 유리 파편 95% 결속 및 내력벽 삼각 구역으로 충격파 회피"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Ein einzelnes 'X' auf Fenstern bei Bombenangriffen ist tödlich! Hier ist die echte Überlebens-Klebemethode.",
+    "body": "Explodiert eine Bombe, verwandelt die Druckwelle Glasscheiben in hunderte Überschall-Rasierklingen! Ein simples X-Muster lässt Glas in riesige Guillotinen brechen! Schritt 1: Klebeband im dichten 5-cm-Schachbrettmuster anbringen, um Vibrationen zu streuen. Schritt 2: Wasser sprühen und feuchte Zeitungen aufpressen, um feinsten Glasstaub zu binden. Schritt 3: Schwere Verdunkelungsvorhänge an allen vier Seiten mit Panzertape an der Wand versiegeln. Zuletzt: 3 Meter weit weg an eine tragende Innenwand gehen, Matratze im 45-Grad-Winkel an einen Tisch stellen und im Dreieck des Lebens Deckung suchen!"
+  },
+  "createdAt": "2026-11-13T00:05:48.223Z",
+  "contentHash": "bef5418b5df5f8ba"
+}

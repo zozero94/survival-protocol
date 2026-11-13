@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg31out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="curtain31out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <pattern id="grid31out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow31out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Frame -->
+  <rect width="800" height="450" fill="url(#bg31out)"/>
+  <rect width="800" height="450" fill="url(#grid31out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="12" font-weight="bold">PR-31 완성체 // 전시 폭격·충격파 창문 3중 방호 및 실내 내력벽 삼각 안전구역(Safe Zone)</text>
+
+  <!-- 4-Stage Horizontal Cards -->
+  <g filter="url(#shadow31out)">
+    <!-- STAGE 01 Card -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="34" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 창문 전면 격자망 테이핑</text>
+
+    <!-- Visual 1: Window frame with 5cm grid tape -->
+    <rect x="42" y="125" width="134" height="150" fill="#1e293b" stroke="#64748b" stroke-width="4"/>
+    <rect x="46" y="129" width="60" height="142" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="112" y="129" width="60" height="142" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <!-- Grid Tape Lines -->
+    <line x1="46" y1="155" x2="172" y2="155" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="46" y1="185" x2="172" y2="185" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="46" y1="215" x2="172" y2="215" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="46" y1="245" x2="172" y2="245" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="66" y1="129" x2="66" y2="271" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="86" y1="129" x2="86" y2="271" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="132" y1="129" x2="132" y2="271" stroke="#38bdf8" stroke-width="2.5"/>
+    <line x1="152" y1="129" x2="152" y2="271" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="42" y="125" width="134" height="150" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="32" y="341" fill="#94a3b8" font-family="monospace" font-size="8">손가락 3마디 간격 격자로 충격파 분산</text>
+
+    <!-- STAGE 02 Card -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="228" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 젖은 신문지/비닐 표면 압착</text>
+
+    <!-- Visual 2: Wet newspaper layer -->
+    <rect x="236" y="125" width="134" height="150" fill="#1e293b" stroke="#64748b" stroke-width="4"/>
+    <rect x="240" y="129" width="126" height="142" fill="#334155"/>
+    <path d="M242,132 L364,132 L364,268 L242,268 Z" fill="#64748b" opacity="0.85"/>
+    <line x1="248" y1="145" x2="358" y2="145" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 1"/>
+    <line x1="248" y1="155" x2="358" y2="155" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 1"/>
+    <line x1="248" y1="165" x2="358" y2="165" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 1"/>
+    <circle cx="260" cy="190" r="3" fill="#38bdf8"/>
+    <circle cx="290" cy="210" r="2.5" fill="#38bdf8"/>
+    <circle cx="330" cy="180" r="3.5" fill="#38bdf8"/>
+    <circle cx="310" cy="235" r="2.8" fill="#38bdf8"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="226" y="341" fill="#94a3b8" font-family="monospace" font-size="8">수분 표면장력으로 미세 유리분진 결속</text>
+
+    <!-- STAGE 03 Card -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="422" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 암막 커튼 4면 테이프 밀폐</text>
+
+    <!-- Visual 3: Curtain -->
+    <rect x="430" y="125" width="134" height="150" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <path d="M432,125 C445,135 450,265 445,275 C470,260 480,130 500,125 C520,135 530,265 525,275 C545,260 555,130 562,125 Z" fill="url(#curtain31out)"/>
+    <rect x="425" y="120" width="144" height="8" fill="#f59e0b" opacity="0.9"/>
+    <rect x="425" y="272" width="144" height="8" fill="#f59e0b" opacity="0.9"/>
+    <rect x="425" y="120" width="8" height="160" fill="#f59e0b" opacity="0.9"/>
+    <rect x="561" y="120" width="8" height="160" fill="#f59e0b" opacity="0.9"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="420" y="341" fill="#94a3b8" font-family="monospace" font-size="8">두꺼운 암막포 4면 밀봉으로 파편 포집</text>
+
+    <!-- STAGE 04 Card -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#ec4899" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#be185d" stroke-width="1"/>
+    <text x="616" y="102" fill="#ec4899" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 내력벽 삼각 안전구역 구축</text>
+
+    <!-- Visual 4: Triangle of life -->
+    <path d="M620,130 L650,130 L650,270 L620,270 Z" fill="#3f3f46"/>
+    <path d="M650,130 L760,130 L760,145 L650,145 Z" fill="#27272a"/>
+    <rect x="680" y="195" width="70" height="10" rx="1" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <line x1="685" y1="205" x2="685" y2="265" stroke="#451a03" stroke-width="4"/>
+    <line x1="745" y1="205" x2="745" y2="265" stroke="#451a03" stroke-width="4"/>
+    <line x1="660" y1="265" x2="725" y2="195" stroke="#ec4899" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="665,263 720,200 720,263" fill="#ec4899" fill-opacity="0.25" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <ellipse cx="690" cy="245" rx="8" ry="7" fill="#f43f5e"/>
+    <path d="M685,252 C680,260 695,265 700,262" fill="none" stroke="#f43f5e" stroke-width="3"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="614" y="341" fill="#94a3b8" font-family="monospace" font-size="8">외벽 3m 이격 내력벽 모서리 매트리스 대피</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[방호 원리] 3중 파편 차단막으로 유리 파편 95% 결속 및 내력벽 삼각 구역으로 충격파 회피</text>
+</svg>

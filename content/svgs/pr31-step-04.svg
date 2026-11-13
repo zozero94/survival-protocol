@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg31s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <pattern id="grid31s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow31s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg31s4)"/>
+  <rect width="400" height="400" fill="url(#grid31s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#ec4899" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10" font-weight="bold">FIG. 04 // 외벽 창문 3m 이격 내력벽 모서리 매트리스 삼각 안전구역 구축</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#500724" stroke="#db2777" stroke-width="1"/>
+  <text x="24" y="64" fill="#fbcfe8" font-family="monospace" font-size="9">창문 파편 사선(Blast Trajectory)에서 완전히 벗어난 실내 중심 내력벽 이동</text>
+
+  <!-- Main Illustration: Load-bearing wall, sturdy desk, slanted mattress forming Triangle of Life -->
+  <g filter="url(#shadow31s4)">
+    <!-- Corner load-bearing wall (heavy reinforced concrete) -->
+    <path d="M45,95 L95,95 L95,280 L45,280 Z" fill="#3f3f46" stroke="#52525b" stroke-width="2"/>
+    <path d="M95,95 L345,95 L345,125 L95,125 Z" fill="#27272a" stroke="#52525b" stroke-width="2"/>
+    <!-- Concrete texture dots -->
+    <circle cx="70" cy="130" r="1.5" fill="#71717a"/>
+    <circle cx="65" cy="180" r="1.5" fill="#71717a"/>
+    <circle cx="75" cy="230" r="1.5" fill="#71717a"/>
+
+    <!-- Floor Line -->
+    <line x1="45" y1="280" x2="355" y2="280" stroke="#71717a" stroke-width="3"/>
+
+    <!-- Sturdy Wooden Desk / Table -->
+    <rect x="195" y="170" width="135" height="15" rx="2" fill="#78350f" stroke="#451a03" stroke-width="1.5"/>
+    <line x1="205" y1="185" x2="205" y2="280" stroke="#451a03" stroke-width="6"/>
+    <line x1="320" y1="185" x2="320" y2="280" stroke="#451a03" stroke-width="6"/>
+
+    <!-- Heavy Mattress slanted at 45-degrees leaning against desk -->
+    <line x1="125" y1="280" x2="235" y2="170" stroke="#ec4899" stroke-width="14" stroke-linecap="round"/>
+    <line x1="125" y1="280" x2="235" y2="170" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Triangle of Life Highlight Zone -->
+    <polygon points="135,275 225,185 225,275" fill="#ec4899" fill-opacity="0.3" stroke="#ec4899" stroke-width="2" stroke-dasharray="4 2"/>
+
+    <!-- Crouched Person in the Triangular Pocket -->
+    <ellipse cx="178" cy="245" rx="12" ry="10" fill="#f43f5e"/>
+    <path d="M168,255 C160,268 185,275 195,270" fill="none" stroke="#f43f5e" stroke-width="4"/>
+    <!-- Hands protecting head -->
+    <path d="M172,240 C170,235 185,235 186,240" fill="none" stroke="#fecdd3" stroke-width="2.5"/>
+
+    <!-- Falling debris deflection arrow -->
+    <path d="M210,130 L170,170" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="170,165 162,175 174,175" fill="#f59e0b"/>
+  </g>
+
+  <!-- Label 3: Triangle Structure Description -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#94a3b8" font-family="monospace" font-size="9">단단한 가구 옆에 매트리스를 45도로 기대어 '삼각 생존 공간' 형성</text>
+
+  <!-- Label 4: Defensive Posture Note -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#312e81" stroke="#4f46e5" stroke-width="1"/>
+  <text x="24" y="344" fill="#c7d2fe" font-family="monospace" font-size="9">경보 시 머리를 무릎 사이에 넣고 양손으로 목과 귀를 감싸는 방호 자세 유지</text>
+
+  <!-- Label 5: Core Principle Footer -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#ec4899" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#ec4899" font-family="monospace" font-size="9.5" font-weight="bold">[생존 원리] 천장 붕괴 및 잔해물 낙하 충격을 분산하여 찌그러짐 방지</text>
+</svg>
