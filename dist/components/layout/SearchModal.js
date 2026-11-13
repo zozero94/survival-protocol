@@ -1,13 +1,35 @@
                                                              
 import { UI_STRINGS } from '../../i18n/ui-strings.js';
+import { FEED_CATEGORY_KEYS } from '../../types/protocol.types.js';
 
 /**
  * [Presentational Component]
  * Stitch 다크 택티컬 인메모리 검색 모달 대화창 (Search Modal Dialog)
- * Cmd+K / Ctrl+K / '/' 단축키 및 방향키 탐색, 초성 검색, 100% 오프라인 지원
+ * Cmd+K / Ctrl+K / '/' 단축키, 카테고리 지정 검색 필터 레일, 방향키/Tab 탐색, 초성 검색, 100% 오프라인 지원
  */
 export function renderSearchModal(locale                  = 'ko')         {
   const ui = UI_STRINGS[locale] || UI_STRINGS.ko;
+
+  const categoryFilterButtons = FEED_CATEGORY_KEYS.map((key, idx) => {
+    const defaultLabel = (ui                                     )[`cat_${key}`] || `[${key}]`;
+    const isActive = idx === 0;
+    return `
+      <button
+        type="button"
+        role="tab"
+        aria-selected="${isActive ? 'true' : 'false'}"
+        data-action="search-category"
+        data-search-category="${key}"
+        class="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider shrink-0 border transition-colors cursor-pointer ${
+          isActive
+            ? 'bg-white text-black font-bold border-white'
+            : 'bg-[#171717] text-neutral-400 hover:text-white border-neutral-800 hover:border-neutral-600'
+        }">
+        <span data-i18n="cat_${key}">${defaultLabel}</span>
+        <span data-search-cat-count="${key}" class="text-[10px] ${isActive ? 'text-neutral-700 font-bold' : 'text-neutral-500'}"></span>
+      </button>
+    `.trim();
+  }).join('\n      ');
 
   return `
 <!-- SEARCH MODAL (Stitch Dark Tactical Instant Search) -->
@@ -21,6 +43,9 @@ export function renderSearchModal(locale                  = 'ko')         {
     }
     #search-modal-results {
       overscroll-behavior: contain;
+    }
+    #search-category-filter::-webkit-scrollbar {
+      display: none;
     }
   </style>
   <div class="bg-[#0e0e0e] border border-neutral-700/80 w-full max-w-2xl shadow-[0_0_50px_rgba(0,0,0,0.9)] flex flex-col max-h-[82vh] overflow-hidden text-neutral-200 font-mono">
@@ -60,15 +85,21 @@ export function renderSearchModal(locale                  = 'ko')         {
       </div>
     </div>
 
+    <!-- 카테고리 지정 검색 필터 칩 레일 -->
+    <div id="search-category-filter" class="flex items-center gap-1.5 px-3.5 py-2 bg-[#101010] border-b border-neutral-800 overflow-x-auto" style="scrollbar-width:none;" role="tablist" aria-label="Category Filter">
+      ${categoryFilterButtons}
+    </div>
+
     <!-- 상태 및 인디케이터 바 -->
-    <div class="flex items-center justify-between px-3.5 py-1.5 bg-[#0a0a0a] border-b border-neutral-800/80 text-[10px] text-neutral-400">
-      <div class="flex items-center gap-1.5">
-        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-        <span data-i18n="searchBadge" class="uppercase tracking-wider font-bold text-neutral-300">
+    <div class="flex items-center justify-between gap-2 px-3.5 py-1.5 bg-[#0a0a0a] border-b border-neutral-800/80 text-[10px] text-neutral-400">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+        <span data-i18n="searchBadge" class="uppercase tracking-wider font-bold text-neutral-300 truncate">
           ${ui.searchBadge}
         </span>
+        <span id="search-active-cat-badge" class="hidden px-1.5 py-0.5 bg-[#1c1a12] border border-[#4a3b1a] text-[#fde68a] font-bold uppercase shrink-0"></span>
       </div>
-      <div id="search-counter-badge" class="hidden text-neutral-400">
+      <div id="search-counter-badge" class="hidden text-neutral-400 shrink-0">
         <span id="search-count-num" class="text-amber-400 font-bold">0</span> <span data-i18n="searchResultsCount">${ui.searchResultsCount}</span>
       </div>
     </div>

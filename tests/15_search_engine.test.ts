@@ -2,10 +2,13 @@ import { describe, test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import vm from 'node:vm';
 import { extractChosung, isPureChosung, cleanSearchText } from '../src/utils/hangul.util.ts';
 import { SearchService, type SearchDocument } from '../src/services/search.service.ts';
-import type { Protocol } from '../src/types/protocol.types.ts';
+import { FEED_CATEGORY_KEYS, type Protocol } from '../src/types/protocol.types.ts';
 import { UI_STRINGS } from '../src/i18n/ui-strings.ts';
+import { renderSearchModal } from '../src/components/layout/SearchModal.ts';
+import { getSearchRuntimeScript } from '../src/state/search.state.ts';
 
 describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js 퍼지 검색, 초성 분해, 하이라이팅 및 PWA 오프라인 캐시 전수 검증', () => {
   const protocolsDir = path.resolve(process.cwd(), 'content/protocols');
@@ -217,15 +220,19 @@ describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js �
     const searchIndexContent = fs.readFileSync(searchIndexPath, 'utf-8');
     assert.ok(searchIndexContent.includes('window.__SEARCH_DOCS__'), 'search-index.js에 window.__SEARCH_DOCS__가 정의되어야 함');
 
-    // 3) index.html 및 protocol-01.html 내 검색 모달 마크업 및 스크립트 검증
+    // 3) index.html 및 protocol-01.html 내 검색 모달 마크업, 카테고리 필터 칩 및 스크립트 검증
     const indexHtml = fs.readFileSync(path.join(publicDir, 'index.html'), 'utf-8');
     assert.ok(indexHtml.includes('id="search-modal"'), 'index.html에 search-modal이 포함되어야 함');
+    assert.ok(indexHtml.includes('id="search-category-filter"'), 'index.html에 search-category-filter가 포함되어야 함');
+    assert.ok(indexHtml.includes('data-search-category="SHELTER"'), 'index.html에 SHELTER 카테고리 필터 버튼이 포함되어야 함');
     assert.ok(indexHtml.includes('data-action="open-search"'), 'index.html에 open-search 트리거가 포함되어야 함');
     assert.ok(indexHtml.includes('/assets/fuse.basic.min.js'), 'index.html에 fuse 스크립트 태그가 포함되어야 함');
     assert.ok(indexHtml.includes('/assets/search-index.js'), 'index.html에 search-index.js 스크립트 태그가 포함되어야 함');
 
     const protoHtml = fs.readFileSync(path.join(publicDir, 'protocol-01.html'), 'utf-8');
     assert.ok(protoHtml.includes('id="search-modal"'), '상세 페이지에 search-modal이 포함되어야 함');
+    assert.ok(protoHtml.includes('id="search-category-filter"'), '상세 페이지에 search-category-filter가 포함되어야 함');
+    assert.ok(protoHtml.includes('data-search-category="MEDICINE"'), '상세 페이지에 MEDICINE 카테고리 필터 버튼이 포함되어야 함');
     assert.ok(protoHtml.includes('data-action="open-search"'), '상세 페이지에 open-search 트리거가 포함되어야 함');
     assert.ok(protoHtml.includes('/assets/search-index.js'), '상세 페이지에 search-index.js 스크립트 태그가 포함되어야 함');
 
@@ -233,5 +240,249 @@ describe('🔍 [Suite 15: 클라이언트 인메모리 검색 엔진] Fuse.js �
     const swJs = fs.readFileSync(path.join(publicDir, 'sw.js'), 'utf-8');
     assert.ok(swJs.includes('/assets/fuse.basic.min.js'), 'sw.js PRECACHE_URLS에 fuse.basic.min.js가 등록되어야 함');
     assert.ok(swJs.includes('/assets/search-index.js'), 'sw.js PRECACHE_URLS에 search-index.js가 등록되어야 함');
+  });
+
+  // =========================================================================
+  // 9. 카테고리 지정 검색, 빈 검색어 탐색, 카테고리별 건수 집계 및 UI/런타임 검증
+  // =========================================================================
+  test('SearchService.search는 특정 카테고리를 지정하면 해당 카테고리 프로토콜만 필터링해야 한다', () => {
+    const slimDocs = SearchService.buildSlimIndex(masterProtocols, 'ko');
+
+    const allHits = SearchService.search(slimDocs, '불', 50, 'ALL');
+    assert.ok(allHits.length > 0, '전체 카테고리 검색 결과가 존재해야 함');
+
+    const shelterHits = SearchService.search(slimDocs, '불', 50, 'SHELTER');
+    assert.ok(shelterHits.length > 0, 'SHELTER 카테고리 내 "불" 검색 결과가 존재해야 함');
+    for (const hit of shelterHits) {
+      assert.equal(hit.category, 'SHELTER', `결과 [${hit.id}]는 SHELTER 카테고리여야 함`);
+    }
+
+    const medicineHits = SearchService.search(slimDocs, '의약', 20, 'ALL');
+    assert.ok(medicineHits.some((r) => r.category === 'MEDICINE'), 'categoryName("의약") 키워드로 MEDICINE 프로토콜 탐색이 가능해야 함');
+  });
+
+  test('SearchService.search는 검색어가 비어 있어도 특정 카테고리가 선택되면 해당 카테고리 전체 목록을 반환해야 한다', () => {
+    const slimDocs = SearchService.buildSlimIndex(masterProtocols, 'ko');
+    const expectedFood = slimDocs.filter((d) => d.category === 'FOOD');
+
+    const allEmpty = SearchService.search(slimDocs, '', 50, 'ALL');
+    assert.equal(allEmpty.length, 0, 'ALL 상태에서 빈 검색어는 안내 화면 유지를 위해 0건을 반환해야 함');
+
+    const foodBrowse = SearchService.search(slimDocs, '', 50, 'FOOD');
+    assert.equal(foodBrowse.length, expectedFood.length, 'FOOD 카테고리 선택 시 빈 검색어도 해당 카테고리 전체를 반환해야 함');
+    for (const item of foodBrowse) {
+      assert.equal(item.category, 'FOOD');
+    }
+  });
+
+  test('SearchService.countByCategory는 전체 및 검색어 입력 시 카테고리별 합계가 정확히 일치해야 한다', () => {
+    const slimDocs = SearchService.buildSlimIndex(masterProtocols, 'ko');
+
+    const totalCounts = SearchService.countByCategory(slimDocs, '');
+    assert.equal(totalCounts.ALL, slimDocs.length);
+    const subTotal =
+      totalCounts.FOOD +
+      totalCounts.SHELTER +
+      totalCounts.TOOLS +
+      totalCounts.MATERIALS +
+      totalCounts.MEDICINE;
+    assert.equal(subTotal, totalCounts.ALL, '5대 카테고리 건수의 합은 ALL 총건수와 일치해야 함');
+
+    const queryCounts = SearchService.countByCategory(slimDocs, '물');
+    assert.ok(queryCounts.ALL > 0, '검색어 "물"에 대한 총 건수가 0보다 커야 함');
+    const querySubTotal =
+      queryCounts.FOOD +
+      queryCounts.SHELTER +
+      queryCounts.TOOLS +
+      queryCounts.MATERIALS +
+      queryCounts.MEDICINE;
+    assert.equal(querySubTotal, queryCounts.ALL, '검색 결과에서도 5대 카테고리 합은 ALL과 일치해야 함');
+  });
+
+  test('renderSearchModal은 6개 카테고리 칩과 i18n 리프 스팬 구조를 올바르게 렌더링해야 한다', () => {
+    const html = renderSearchModal('ko');
+    assert.ok(html.includes('id="search-category-filter"'), '카테고리 필터 컨테이너가 렌더링되어야 함');
+    assert.ok(html.includes('id="search-active-cat-badge"'), '활성 카테고리 뱃지가 렌더링되어야 함');
+
+    for (const key of FEED_CATEGORY_KEYS) {
+      assert.ok(html.includes(`data-search-category="${key}"`), `${key} 칩 버튼이 포함되어야 함`);
+      assert.ok(html.includes(`data-i18n="cat_${key}"`), `${key} i18n 리프 스팬이 포함되어야 함`);
+      assert.ok(html.includes(`data-search-cat-count="${key}"`), `${key} 건수 배지 스팬이 포함되어야 함`);
+    }
+  });
+
+  test('클라이언트 런타임(search.state.ts)은 모달 오픈, 카테고리 클릭 필터링 및 Tab 키 순환을 정상 수행해야 한다', () => {
+    const slimDocs = SearchService.buildSlimIndex(masterProtocols, 'ko');
+    const fuseScript = SearchService.getBrowserFuseScript();
+    const runtimeScript = getSearchRuntimeScript({ ko: slimDocs });
+
+    const makeClassList = (initial: string[] = []) => {
+      const set = new Set(initial);
+      return {
+        add: (...cls: string[]) => cls.forEach((c) => set.add(c)),
+        remove: (...cls: string[]) => cls.forEach((c) => set.delete(c)),
+        contains: (c: string) => set.has(c),
+        toArray: () => Array.from(set),
+      };
+    };
+
+    const makeEl = (id: string, extra: Record<string, any> = {}) => {
+      const attrs: Record<string, string> = {};
+      const el: any = {
+        id,
+        classList: makeClassList(extra.classes || []),
+        style: {},
+        attrs,
+        children: [] as any[],
+        value: '',
+        placeholder: '',
+        textContent: '',
+        innerHTML: '',
+        className: '',
+        focus: () => {},
+        select: () => {},
+        scrollIntoView: () => {},
+        appendChild: (node: any) => {
+          el.children.push(node);
+          return node;
+        },
+        setAttribute: (k: string, v: string) => {
+          attrs[k] = String(v);
+        },
+        getAttribute: (k: string) => (k in attrs ? attrs[k] : null),
+        addEventListener: () => {},
+        querySelector: () => null,
+        querySelectorAll: () => [],
+        ...extra,
+      };
+      return el;
+    };
+
+    const chipButtons: Record<string, any> = {};
+    const countEls: Record<string, any> = {};
+    for (const key of FEED_CATEGORY_KEYS) {
+      const countEl = makeEl(`count-${key}`);
+      countEl.attrs['data-search-cat-count'] = key;
+      countEls[key] = countEl;
+
+      const btn = makeEl(`chip-${key}`, {
+        classes: key === 'ALL' ? ['bg-white', 'text-black', 'font-bold', 'border-white'] : ['bg-[#171717]'],
+      });
+      btn.attrs['data-action'] = 'search-category';
+      btn.attrs['data-search-category'] = key;
+      btn.querySelector = (sel: string) => (sel === '[data-search-cat-count]' ? countEl : null);
+      chipButtons[key] = btn;
+    }
+
+    const listeners: Record<string, Function[]> = {};
+    const searchModal = makeEl('search-modal', { classes: ['hidden'] });
+    const searchInput = makeEl('search-modal-input');
+    const searchClearBtn = makeEl('search-clear-btn', { classes: ['hidden'] });
+    const resultsList = makeEl('search-results-list');
+    resultsList.querySelectorAll = () => resultsList.children;
+    const promptBox = makeEl('search-modal-prompt');
+    const emptyBox = makeEl('search-modal-empty', { classes: ['hidden'] });
+    const counterBadge = makeEl('search-counter-badge', { classes: ['hidden'] });
+    const countNum = makeEl('search-count-num');
+    const activeCatBadge = makeEl('search-active-cat-badge', { classes: ['hidden'] });
+    const categoryFilterBox = makeEl('search-category-filter');
+    categoryFilterBox.querySelectorAll = (sel: string) =>
+      sel === '[data-search-category]' ? Object.values(chipButtons) : [];
+    categoryFilterBox.querySelector = (sel: string) => {
+      const m = sel.match(/data-search-category="([^"]+)"/);
+      return m ? chipButtons[m[1]] || null : null;
+    };
+
+    const byId: Record<string, any> = {
+      'search-modal': searchModal,
+      'search-modal-input': searchInput,
+      'search-clear-btn': searchClearBtn,
+      'search-results-list': resultsList,
+      'search-modal-prompt': promptBox,
+      'search-modal-empty': emptyBox,
+      'search-counter-badge': counterBadge,
+      'search-count-num': countNum,
+      'search-category-filter': categoryFilterBox,
+      'search-active-cat-badge': activeCatBadge,
+    };
+
+    const openBtn = makeEl('open-search-btn');
+    openBtn.closest = (sel: string) => (sel === '[data-action="open-search"]' ? openBtn : null);
+    for (const key of FEED_CATEGORY_KEYS) {
+      const btn = chipButtons[key];
+      btn.closest = (sel: string) => (sel === '[data-action="search-category"]' ? btn : null);
+    }
+
+    const sandbox: any = {
+      window: {
+        __UI_STRINGS__: UI_STRINGS,
+        location: { href: '' },
+      },
+      document: {
+        documentElement: { lang: 'ko' },
+        body: { style: {} },
+        activeElement: null,
+        getElementById: (id: string) => byId[id] || null,
+        createElement: (tag: string) => makeEl(tag),
+        createDocumentFragment: () => ({
+          children: [] as any[],
+          appendChild(node: any) {
+            this.children.push(node);
+            return node;
+          },
+        }),
+        addEventListener: (ev: string, fn: Function) => {
+          listeners[ev] = listeners[ev] || [];
+          listeners[ev].push(fn);
+        },
+      },
+      setTimeout: (fn: Function) => {
+        fn();
+        return 1;
+      },
+      clearTimeout: () => {},
+    };
+    sandbox.window.document = sandbox.document;
+    // Append fragment appends children into resultsList
+    resultsList.appendChild = (node: any) => {
+      if (node && Array.isArray(node.children)) {
+        resultsList.children.push(...node.children);
+      } else {
+        resultsList.children.push(node);
+      }
+      return node;
+    };
+
+    const ctx = vm.createContext(sandbox);
+    vm.runInContext(fuseScript, ctx);
+    vm.runInContext(runtimeScript, ctx);
+
+    // 1) 검색 모달 열기 -> 전체/카테고리 건수 자동 집계 검증
+    for (const fn of listeners.click || []) {
+      fn({ target: openBtn, preventDefault: () => {} });
+    }
+    assert.equal(searchModal.classList.contains('hidden'), false, '모달이 열려야 함');
+    assert.equal(countEls.ALL.textContent, String(slimDocs.length), 'ALL 건수가 전체 프로토콜 수와 일치해야 함');
+
+    // 2) SHELTER 칩 클릭 -> 빈 검색어 상태에서도 SHELTER 전수 브라우징 검증
+    for (const fn of listeners.click || []) {
+      fn({ target: chipButtons.SHELTER, preventDefault: () => {} });
+    }
+    const expectedShelterCount = slimDocs.filter((d) => d.category === 'SHELTER').length;
+    assert.equal(chipButtons.SHELTER.getAttribute('aria-selected'), 'true');
+    assert.equal(chipButtons.ALL.getAttribute('aria-selected'), 'false');
+    assert.equal(activeCatBadge.classList.contains('hidden'), false, '선택된 카테고리 뱃지가 표시되어야 함');
+    assert.equal(resultsList.children.length, expectedShelterCount, 'SHELTER 칩 클릭 시 해당 카테고리 전체 목록이 표시되어야 함');
+
+    // 3) Tab / Shift+Tab 키로 카테고리 순환 검증
+    for (const fn of listeners.keydown || []) {
+      fn({ key: 'Tab', shiftKey: false, preventDefault: () => {} });
+    }
+    assert.equal(chipButtons.TOOLS.getAttribute('aria-selected'), 'true', 'SHELTER 다음 Tab은 TOOLS여야 함');
+
+    for (const fn of listeners.keydown || []) {
+      fn({ key: 'Tab', shiftKey: true, preventDefault: () => {} });
+    }
+    assert.equal(chipButtons.SHELTER.getAttribute('aria-selected'), 'true', 'Shift+Tab으로 SHELTER로 복귀해야 함');
   });
 });

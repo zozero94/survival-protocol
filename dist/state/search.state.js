@@ -128,7 +128,11 @@ export function getSearchRuntimeScript(
     var emptyBox = document.getElementById('search-modal-empty');
     var counterBadge = document.getElementById('search-counter-badge');
     var countNum = document.getElementById('search-count-num');
+    var categoryFilterBox = document.getElementById('search-category-filter');
+    var activeCatBadge = document.getElementById('search-active-cat-badge');
 
+    var CATEGORY_KEYS = ['ALL', 'FOOD', 'SHELTER', 'TOOLS', 'MATERIALS', 'MEDICINE'];
+    var activeSearchCategory = 'ALL';
     var selectedIndex = -1;
     var currentResults = [];
     var searchDebounceTimer = null;
@@ -169,10 +173,11 @@ export function getSearchRuntimeScript(
           keys: [
             { name: 'title', weight: 0.35 },
             { name: 'titleChosung', weight: 0.15 },
-            { name: 'summary', weight: 0.20 },
+            { name: 'summary', weight: 0.17 },
             { name: 'materials', weight: 0.15 },
-            { name: 'steps', weight: 0.10 },
-            { name: 'deepDives', weight: 0.05 }
+            { name: 'steps', weight: 0.08 },
+            { name: 'deepDives', weight: 0.05 },
+            { name: 'categoryName', weight: 0.05 }
           ]
         };
       }
@@ -191,18 +196,101 @@ export function getSearchRuntimeScript(
       return all[lang] || all['ko'] || [];
     }
 
+    function countDocsByCategory(docList) {
+      var counts = {};
+      for (var i = 0; i < CATEGORY_KEYS.length; i++) {
+        counts[CATEGORY_KEYS[i]] = 0;
+      }
+      counts.ALL = docList.length;
+      for (var j = 0; j < docList.length; j++) {
+        var cat = docList[j].category;
+        if (counts[cat] !== undefined) {
+          counts[cat]++;
+        }
+      }
+      return counts;
+    }
+
+    function updateCategoryFilterUI(counts) {
+      if (categoryFilterBox) {
+        var buttons = categoryFilterBox.querySelectorAll('[data-search-category]');
+        buttons.forEach(function (btn) {
+          var cat = btn.getAttribute('data-search-category');
+          var isActive = cat === activeSearchCategory;
+          btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+
+          if (isActive) {
+            btn.classList.add('bg-white', 'text-black', 'font-bold', 'border-white');
+            btn.classList.remove('bg-[#171717]', 'text-neutral-400', 'hover:text-white', 'border-neutral-800', 'hover:border-neutral-600');
+          } else {
+            btn.classList.remove('bg-white', 'text-black', 'font-bold', 'border-white');
+            btn.classList.add('bg-[#171717]', 'text-neutral-400', 'hover:text-white', 'border-neutral-800', 'hover:border-neutral-600');
+          }
+
+          var countEl = btn.querySelector('[data-search-cat-count]');
+          if (countEl) {
+            countEl.className = 'text-[10px] ' + (isActive ? 'text-neutral-700 font-bold' : 'text-neutral-500');
+            if (counts && counts[cat] !== undefined) {
+              countEl.textContent = String(counts[cat]);
+            }
+          }
+        });
+      }
+
+      if (activeCatBadge) {
+        if (activeSearchCategory === 'ALL') {
+          activeCatBadge.classList.add('hidden');
+          activeCatBadge.textContent = '';
+        } else {
+          var lang = document.documentElement.lang || 'ko';
+          var ui = (window.__UI_STRINGS__ && (window.__UI_STRINGS__[lang] || window.__UI_STRINGS__['ko'])) || {};
+          var label = ui['cat_' + activeSearchCategory] || ('[' + activeSearchCategory + ']');
+          activeCatBadge.textContent = label;
+          activeCatBadge.classList.remove('hidden');
+        }
+      }
+    }
+
+    function setSearchCategory(catKey) {
+      if (CATEGORY_KEYS.indexOf(catKey) === -1) {
+        catKey = 'ALL';
+      }
+      activeSearchCategory = catKey;
+
+      if (categoryFilterBox) {
+        var activeBtn = categoryFilterBox.querySelector('[data-search-category="' + catKey + '"]');
+        if (activeBtn && typeof activeBtn.scrollIntoView === 'function') {
+          try { activeBtn.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch (e) {}
+        }
+      }
+
+      executeSearch(searchInput ? searchInput.value : '');
+      if (searchInput) {
+        searchInput.focus();
+      }
+    }
+
+    function cycleSearchCategory(dir) {
+      var idx = CATEGORY_KEYS.indexOf(activeSearchCategory);
+      if (idx === -1) idx = 0;
+      var nextIdx = (idx + dir + CATEGORY_KEYS.length) % CATEGORY_KEYS.length;
+      setSearchCategory(CATEGORY_KEYS[nextIdx]);
+    }
+
     function openSearchModal() {
       if (!searchModal) return;
       previousActiveElement = document.activeElement;
       searchModal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
 
-      // 언어별 placeholder 및 안내문구 동기화
+      // 언어별 placeholder 및 카테고리 카운트 동기화
       var lang = document.documentElement.lang || 'ko';
       var ui = (window.__UI_STRINGS__ && window.__UI_STRINGS__[lang]) || (window.__UI_STRINGS__ && window.__UI_STRINGS__['ko']) || {};
       if (searchInput && ui.searchPlaceholder) {
         searchInput.placeholder = ui.searchPlaceholder;
       }
+
+      executeSearch(searchInput ? searchInput.value : '');
 
       setTimeout(function () {
         if (searchInput) {
@@ -271,121 +359,163 @@ export function getSearchRuntimeScript(
       resultsList.appendChild(fragment);
     }
 
-    function executeSearch(query) {
-      var trimmed = (query || '').trim();
+    function mapFuseHitToResult(hit, isChosung, trimmed) {
+      var doc = hit.item;
+      var matches = hit.matches || [];
 
-      if (!trimmed) {
-        if (resultsList) resultsList.innerHTML = '';
-        if (promptBox) promptBox.classList.remove('hidden');
-        if (emptyBox) emptyBox.classList.add('hidden');
-        if (counterBadge) counterBadge.classList.add('hidden');
-        if (searchClearBtn) searchClearBtn.classList.add('hidden');
-        currentResults = [];
-        selectedIndex = -1;
-        return;
+      var titleHighlighted = '';
+      var titleMatch = matches.find(function (m) {
+        return m.key === 'title' || (isChosung && m.key === 'titleChosung');
+      });
+
+      if (titleMatch && titleMatch.indices && titleMatch.indices.length > 0) {
+        titleHighlighted = highlightTextClient(doc.title, titleMatch.indices);
+      } else {
+        // 원본 텍스트 매칭 인덱스 기반 개별 이스케이프로 HTML 엔티티 파괴 방지
+        var lowerTitle = doc.title.toLowerCase();
+        var lowerTrimmed = trimmed.toLowerCase();
+        var fallbackIndices = [];
+        var pos = 0;
+        while ((pos = lowerTitle.indexOf(lowerTrimmed, pos)) !== -1) {
+          fallbackIndices.push([pos, pos + trimmed.length - 1]);
+          pos += trimmed.length;
+        }
+        if (fallbackIndices.length > 0) {
+          titleHighlighted = highlightTextClient(doc.title, fallbackIndices);
+        } else {
+          titleHighlighted = escapeHtmlClient(doc.title);
+        }
       }
 
-      if (searchClearBtn) searchClearBtn.classList.remove('hidden');
+      var snippet = '';
+      var summaryMatch = matches.find(function (m) {
+        return m.key === 'summary' || (isChosung && m.key === 'summaryChosung');
+      });
+      var materialsMatch = matches.find(function (m) {
+        return m.key === 'materials' || (isChosung && m.key === 'materialsChosung');
+      });
+      var stepsMatch = matches.find(function (m) { return m.key === 'steps'; });
+      var deepDivesMatch = matches.find(function (m) { return m.key === 'deepDives'; });
 
+      if (summaryMatch && summaryMatch.indices && summaryMatch.indices.length > 0) {
+        snippet = extractSnippetClient(doc.summary, summaryMatch.indices);
+      } else if (materialsMatch && materialsMatch.indices && materialsMatch.indices.length > 0) {
+        snippet = '[#] ' + extractSnippetClient(doc.materials, materialsMatch.indices);
+      } else if (stepsMatch && stepsMatch.indices && stepsMatch.indices.length > 0) {
+        snippet = '[STEP] ' + extractSnippetClient(doc.steps, stepsMatch.indices);
+      } else if (deepDivesMatch && deepDivesMatch.indices && deepDivesMatch.indices.length > 0) {
+        snippet = '[NOTE] ' + extractSnippetClient(doc.deepDives, deepDivesMatch.indices);
+      } else {
+        snippet = doc.summary.length > 80 ? (escapeHtmlClient(doc.summary.slice(0, 80)) + '...') : escapeHtmlClient(doc.summary);
+      }
+
+      return {
+        id: doc.id,
+        url: doc.url,
+        category: doc.category,
+        categoryName: doc.categoryName,
+        title: doc.title,
+        titleHighlighted: titleHighlighted,
+        snippet: snippet,
+        score: hit.score || 1.0
+      };
+    }
+
+    function executeSearch(query) {
+      var trimmed = (query || '').trim();
       var docs = getActiveDocs();
-      var isChosung = isPureChosungClient(trimmed);
-      var lang = document.documentElement.lang || 'ko';
 
-      var fuse = getOrCreateFuse(docs, isChosung, lang);
-      if (fuse) {
-        var searchHits = [];
-        try {
-          searchHits = fuse.search(trimmed, { limit: 12 });
-        } catch (e) {
-          searchHits = [];
+      if (!trimmed) {
+        if (searchClearBtn) searchClearBtn.classList.add('hidden');
+        updateCategoryFilterUI(countDocsByCategory(docs));
+
+        if (activeSearchCategory === 'ALL') {
+          if (resultsList) resultsList.innerHTML = '';
+          if (promptBox) promptBox.classList.remove('hidden');
+          if (emptyBox) emptyBox.classList.add('hidden');
+          if (counterBadge) counterBadge.classList.add('hidden');
+          currentResults = [];
+          selectedIndex = -1;
+          return;
         }
 
-        var mapped = searchHits.map(function (hit) {
-          var doc = hit.item;
-          var matches = hit.matches || [];
-
-          var titleHighlighted = '';
-          var titleMatch = matches.find(function (m) {
-            return m.key === 'title' || (isChosung && m.key === 'titleChosung');
-          });
-
-          if (titleMatch && titleMatch.indices && titleMatch.indices.length > 0) {
-            titleHighlighted = highlightTextClient(doc.title, titleMatch.indices);
-          } else {
-            // 원본 텍스트 매칭 인덱스 기반 개별 이스케이프로 HTML 엔티티 파괴 방지
-            var lowerTitle = doc.title.toLowerCase();
-            var lowerTrimmed = trimmed.toLowerCase();
-            var fallbackIndices = [];
-            var pos = 0;
-            while ((pos = lowerTitle.indexOf(lowerTrimmed, pos)) !== -1) {
-              fallbackIndices.push([pos, pos + trimmed.length - 1]);
-              pos += trimmed.length;
-            }
-            if (fallbackIndices.length > 0) {
-              titleHighlighted = highlightTextClient(doc.title, fallbackIndices);
-            } else {
-              titleHighlighted = escapeHtmlClient(doc.title);
-            }
-          }
-
-          var snippet = '';
-          var summaryMatch = matches.find(function (m) {
-            return m.key === 'summary' || (isChosung && m.key === 'summaryChosung');
-          });
-          var materialsMatch = matches.find(function (m) {
-            return m.key === 'materials' || (isChosung && m.key === 'materialsChosung');
-          });
-          var stepsMatch = matches.find(function (m) { return m.key === 'steps'; });
-          var deepDivesMatch = matches.find(function (m) { return m.key === 'deepDives'; });
-
-          if (summaryMatch && summaryMatch.indices && summaryMatch.indices.length > 0) {
-            snippet = extractSnippetClient(doc.summary, summaryMatch.indices);
-          } else if (materialsMatch && materialsMatch.indices && materialsMatch.indices.length > 0) {
-            snippet = '[#] ' + extractSnippetClient(doc.materials, materialsMatch.indices);
-          } else if (stepsMatch && stepsMatch.indices && stepsMatch.indices.length > 0) {
-            snippet = '[STEP] ' + extractSnippetClient(doc.steps, stepsMatch.indices);
-          } else if (deepDivesMatch && deepDivesMatch.indices && deepDivesMatch.indices.length > 0) {
-            snippet = '[NOTE] ' + extractSnippetClient(doc.deepDives, deepDivesMatch.indices);
-          } else {
-            snippet = doc.summary.length > 80 ? (escapeHtmlClient(doc.summary.slice(0, 80)) + '...') : escapeHtmlClient(doc.summary);
-          }
-
-          return {
-            id: doc.id,
-            url: doc.url,
-            category: doc.category,
-            categoryName: doc.categoryName,
-            title: doc.title,
-            titleHighlighted: titleHighlighted,
-            snippet: snippet,
-            score: hit.score || 1.0
-          };
-        });
-
-        renderResults(mapped);
-      } else {
-        // Fallback: Fuse 로드 전 단순 부분 문자열 매칭
-        var lowerQuery = trimmed.toLowerCase();
-        var simpleHits = [];
-        docs.forEach(function (doc) {
-          var titleMatch = doc.title.toLowerCase().indexOf(lowerQuery) !== -1;
-          var chosungMatch = doc.titleChosung && doc.titleChosung.indexOf(trimmed) !== -1;
-          var summaryMatch = doc.summary.toLowerCase().indexOf(lowerQuery) !== -1;
-
-          if (titleMatch || chosungMatch || summaryMatch) {
-            simpleHits.push({
+        var browseItems = [];
+        for (var i = 0; i < docs.length; i++) {
+          var doc = docs[i];
+          if (doc.category === activeSearchCategory) {
+            browseItems.push({
               id: doc.id,
               url: doc.url,
               category: doc.category,
               categoryName: doc.categoryName,
               title: doc.title,
               titleHighlighted: escapeHtmlClient(doc.title),
-              snippet: escapeHtmlClient(doc.summary.slice(0, 80)) + '...',
+              snippet: doc.summary.length > 80 ? (escapeHtmlClient(doc.summary.slice(0, 80)) + '...') : escapeHtmlClient(doc.summary),
+              score: 0
+            });
+          }
+        }
+        renderResults(browseItems);
+        return;
+      }
+
+      if (searchClearBtn) searchClearBtn.classList.remove('hidden');
+
+      var isChosung = isPureChosungClient(trimmed);
+      var lang = document.documentElement.lang || 'ko';
+
+      var fuse = getOrCreateFuse(docs, isChosung, lang);
+      if (fuse) {
+        var allHits = [];
+        try {
+          allHits = fuse.search(trimmed, { limit: docs.length || 100 });
+        } catch (e) {
+          allHits = [];
+        }
+
+        var matchedDocs = allHits.map(function (h) { return h.item; });
+        updateCategoryFilterUI(countDocsByCategory(matchedDocs));
+
+        var filteredHits = activeSearchCategory === 'ALL'
+          ? allHits.slice(0, 12)
+          : allHits.filter(function (h) { return h.item.category === activeSearchCategory; }).slice(0, 30);
+
+        var mapped = filteredHits.map(function (hit) {
+          return mapFuseHitToResult(hit, isChosung, trimmed);
+        });
+
+        renderResults(mapped);
+      } else {
+        // Fallback: Fuse 로드 전 단순 부분 문자열 매칭
+        var lowerQuery = trimmed.toLowerCase();
+        var allSimpleHits = [];
+        docs.forEach(function (doc) {
+          var titleMatch = doc.title.toLowerCase().indexOf(lowerQuery) !== -1;
+          var chosungMatch = doc.titleChosung && doc.titleChosung.indexOf(trimmed) !== -1;
+          var summaryMatch = doc.summary.toLowerCase().indexOf(lowerQuery) !== -1;
+          var catMatch = doc.categoryName && doc.categoryName.toLowerCase().indexOf(lowerQuery) !== -1;
+
+          if (titleMatch || chosungMatch || summaryMatch || catMatch) {
+            allSimpleHits.push({
+              id: doc.id,
+              url: doc.url,
+              category: doc.category,
+              categoryName: doc.categoryName,
+              title: doc.title,
+              titleHighlighted: escapeHtmlClient(doc.title),
+              snippet: doc.summary.length > 80 ? (escapeHtmlClient(doc.summary.slice(0, 80)) + '...') : escapeHtmlClient(doc.summary),
               score: 0.1
             });
           }
         });
-        renderResults(simpleHits);
+
+        updateCategoryFilterUI(countDocsByCategory(allSimpleHits));
+
+        var scopedSimpleHits = activeSearchCategory === 'ALL'
+          ? allSimpleHits.slice(0, 12)
+          : allSimpleHits.filter(function (item) { return item.category === activeSearchCategory; }).slice(0, 30);
+
+        renderResults(scopedSimpleHits);
       }
     }
 
@@ -425,7 +555,7 @@ export function getSearchRuntimeScript(
       });
     }
 
-    // 2. 키보드 단축키 (Cmd+K / Ctrl+K / / / ESC / Arrows / Enter)
+    // 2. 키보드 단축키 (Cmd+K / Ctrl+K / / / ESC / Tab / 방향키 / Enter)
     document.addEventListener('keydown', function (e) {
       var isK = e.key === 'k' || e.key === 'K';
       var isSlash = e.key === '/';
@@ -449,6 +579,12 @@ export function getSearchRuntimeScript(
       if (e.key === 'Escape') {
         e.preventDefault();
         closeSearchModal();
+        return;
+      }
+
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        cycleSearchCategory(e.shiftKey ? -1 : 1);
         return;
       }
 
@@ -494,7 +630,7 @@ export function getSearchRuntimeScript(
       }
     });
 
-    // 3. 모달 외부 클릭 시 닫기 & 트리거 버튼 클릭 시 열기 / 모바일 닫기 버튼
+    // 3. 모달 외부 클릭 시 닫기, 카테고리 칩 클릭 전환 & 트리거 버튼 클릭 시 열기
     document.addEventListener('click', function (e) {
       var openTrigger = e.target.closest('[data-action="open-search"]');
       if (openTrigger) {
@@ -507,6 +643,14 @@ export function getSearchRuntimeScript(
       if (closeTrigger) {
         e.preventDefault();
         closeSearchModal();
+        return;
+      }
+
+      var catTrigger = e.target.closest('[data-action="search-category"]');
+      if (catTrigger) {
+        e.preventDefault();
+        var catKey = catTrigger.getAttribute('data-search-category') || 'ALL';
+        setSearchCategory(catKey);
         return;
       }
 

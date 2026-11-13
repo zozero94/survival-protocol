@@ -1,7 +1,7 @@
 import Fuse, { type IFuseOptions } from 'fuse.js';
 import fs from 'node:fs';
 import path from 'node:path';
-import type { Protocol, ProtocolCategory } from '../types/protocol.types.ts';
+import { FEED_CATEGORY_KEYS, type FeedCategoryKey, type Protocol, type ProtocolCategory } from '../types/protocol.types.ts';
 import type { SupportedLocale } from '../i18n/locales.ts';
 import { extractChosung, isPureChosung, cleanSearchText } from '../utils/hangul.util.ts';
 import { UI_STRINGS } from '../i18n/ui-strings.ts';
@@ -51,10 +51,11 @@ export const REGULAR_FUSE_OPTIONS: IFuseOptions<SearchDocument> = {
   keys: [
     { name: 'title', weight: 0.35 },
     { name: 'titleChosung', weight: 0.15 },
-    { name: 'summary', weight: 0.20 },
+    { name: 'summary', weight: 0.17 },
     { name: 'materials', weight: 0.15 },
-    { name: 'steps', weight: 0.10 },
+    { name: 'steps', weight: 0.08 },
     { name: 'deepDives', weight: 0.05 },
+    { name: 'categoryName', weight: 0.05 },
   ],
 };
 
@@ -174,18 +175,64 @@ export class SearchService {
   }
 
   /**
-   * 검색어에 따라 일반 검색 또는 초성 검색을 분기 실행하여 결과를 가공·반환한다.
+   * 카테고리별 전체 또는 검색 결과 건수를 집계한다.
+   */
+  public static countByCategory(
+    docs: SearchDocument[],
+    rawQuery: string = ''
+  ): Record<FeedCategoryKey, number> {
+    const counts = {} as Record<FeedCategoryKey, number>;
+    for (const key of FEED_CATEGORY_KEYS) {
+      counts[key] = 0;
+    }
+
+    const query = rawQuery.trim();
+    const targetDocs = query
+      ? this.createFuseInstance(docs, isPureChosung(query))
+          .search(query, { limit: docs.length })
+          .map((r) => r.item)
+      : docs;
+
+    counts.ALL = targetDocs.length;
+    for (const doc of targetDocs) {
+      if (doc.category in counts) {
+        counts[doc.category]++;
+      }
+    }
+    return counts;
+  }
+
+  /**
+   * 검색어에 따라 일반 검색 또는 초성 검색을 분기 실행하고, 선택된 카테고리로 필터링하여 반환한다.
    */
   public static search(
     docs: SearchDocument[],
     rawQuery: string,
-    limit: number = 10
+    limit: number = 10,
+    categoryFilter: FeedCategoryKey = 'ALL'
   ): SearchResultItem[] {
     const query = rawQuery.trim();
-    if (!query) return [];
+    const scopedDocs =
+      categoryFilter && categoryFilter !== 'ALL'
+        ? docs.filter((d) => d.category === categoryFilter)
+        : docs;
+
+    if (!query) {
+      if (!categoryFilter || categoryFilter === 'ALL') return [];
+      return scopedDocs.slice(0, limit).map((doc) => ({
+        id: doc.id,
+        url: doc.url,
+        category: doc.category,
+        categoryName: doc.categoryName,
+        title: doc.title,
+        titleHighlighted: this.escapeHtml(doc.title),
+        snippet: doc.summary.length > 80 ? `${this.escapeHtml(doc.summary.slice(0, 80))}...` : this.escapeHtml(doc.summary),
+        score: 0,
+      }));
+    }
 
     const isChosung = isPureChosung(query);
-    const fuse = this.createFuseInstance(docs, isChosung);
+    const fuse = this.createFuseInstance(scopedDocs, isChosung);
     const fuseResults = fuse.search(query, { limit });
 
     return fuseResults.map((result) => {
