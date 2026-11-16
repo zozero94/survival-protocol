@@ -11,6 +11,7 @@ import {
   renderStepCards,
   renderFatalWarning,
   renderFaqSection,
+  renderCommentSection,
   renderSearchModal,
   renderCrosslinkPopover,
   renderFooter,
@@ -27,6 +28,7 @@ import {
   getSearchRuntimeScript,
   getCrosslinkRuntimeScript,
   getFirebaseRuntimeScript,
+  getCommentRuntimeScript,
 } from './state/index.ts';
 
 /**
@@ -97,6 +99,7 @@ export function renderCanonicalProtocolPage(
   const fatalHtml = renderFatalWarning(master.fatalMistake);
   const faqs = master.faqs || PROTOCOL_FAQS[master.protocolId] || [];
   const faqHtml = renderFaqSection(faqs);
+  const commentSectionHtml = renderCommentSection(defaultLocale);
   const faqJsonLd = SeoService.generateFaqJsonLd(faqs);
   const actionHtml = renderStickyActionBar(nextProtocolTitle || master.nextProtocolTitle, nextProtocolHref);
 
@@ -107,6 +110,7 @@ export function renderCanonicalProtocolPage(
   const searchScript = getSearchRuntimeScript();
   const crosslinkScript = getCrosslinkRuntimeScript();
   const firebaseScript = getFirebaseRuntimeScript();
+  const commentScript = getCommentRuntimeScript();
 
   return `<!DOCTYPE html>
 <html class="dark" lang="${defaultLocale}">
@@ -227,6 +231,7 @@ ${faqJsonLd}
     ${stepCardsHtml}
     ${fatalHtml}
     ${faqHtml}
+    ${commentSectionHtml}
   </main>
 
   ${renderFooter('protocol')}
@@ -248,6 +253,7 @@ ${faqJsonLd}
     ${searchScript}
     ${crosslinkScript}
     ${firebaseScript}
+    ${commentScript}
 
     // 3. 선언적 이벤트 위임 (Event Delegation)
     document.addEventListener('click', function(e) {

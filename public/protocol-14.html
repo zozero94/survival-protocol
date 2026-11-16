@@ -1771,6 +1771,131 @@
     </details>
   </div>
 </section>
+    <section id="comment-section" aria-labelledby="comment-section-heading" class="no-print pt-4 pb-8 select-none">
+  <style>
+    #comment-section .rounded-2xl { border-radius: 1rem !important; }
+    #comment-section .rounded-xl { border-radius: 0.75rem !important; }
+    #comment-section .rounded-lg { border-radius: 0.5rem !important; }
+    #comment-section .rounded-md { border-radius: 0.375rem !important; }
+    #comment-section .rounded-full { border-radius: 9999px !important; }
+    #comment-section .rounded-bl-xl { border-bottom-left-radius: 0.75rem !important; }
+    @keyframes commentFadeSlide {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    #comment-section .comment-animate-in {
+      animation: commentFadeSlide 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+
+  <!-- 상단 섹션 헤더 -->
+  <div class="flex flex-wrap items-center justify-between gap-2 mb-4 px-1">
+    <div class="flex items-center gap-2.5">
+      <h2 id="comment-section-heading" data-i18n="commentSectionTitle" class="text-[15px] font-semibold tracking-tight text-zinc-100">
+        생존자 피드백
+      </h2>
+      <span id="comment-total-count" class="px-2 py-0.5 text-xs font-mono font-medium rounded-full bg-white/[0.06] text-zinc-300 border border-white/[0.08] tabular-nums">0</span>
+    </div>
+    <div class="flex items-center gap-2 text-xs text-zinc-400">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/[0.03] border border-white/[0.07]">
+        <span id="comment-status-dot" class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        <span data-i18n="commentFeedBadge">7개국어 통합 피드 · 자동 번역</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- 일체형 싱글 서피스 입력창 (Unified Single-Surface Composer) -->
+  <div id="comment-composer-card" class="rounded-2xl bg-[#121215] border border-white/[0.08] focus-within:border-white/[0.22] focus-within:ring-4 focus-within:ring-white/[0.03] transition-all duration-200 shadow-2xl overflow-hidden mb-6">
+    <!-- Honeypot Anti-Bot Trap -->
+    <div class="hidden" aria-hidden="true">
+      <input id="comment-hp-field" type="text" name="website_url_hp" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <!-- 상단 본문 입력 영역 -->
+    <div class="px-4 pt-3.5 pb-2 bg-[#16161a]/60">
+      <textarea
+        id="comment-input"
+        rows="3"
+        maxlength="300"
+        data-i18n-placeholder="commentPlaceholder"
+        placeholder="현장 적용 팁, 대체 자재 후기, 또는 질문을 남겨주세요... (광고·외부 링크는 자동 차단됩니다)"
+        class="w-full bg-transparent text-[14px] text-zinc-100 placeholder-zinc-500 focus:outline-none resize-none leading-relaxed select-text"
+      ></textarea>
+    </div>
+
+    <!-- 하단 캡슐 툴바 (닉네임 캡슐 + 4자리 PIN 캡슐 + 글자수 + 등록 필 버튼) -->
+    <div class="px-3.5 py-2.5 bg-[#101013] border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 flex-wrap">
+        <!-- 닉네임 캡슐 -->
+        <label class="group flex items-center gap-2 pl-1.5 pr-3 py-1 rounded-full bg-white/[0.04] hover:bg-white/[0.07] focus-within:bg-white/[0.08] border border-white/[0.08] focus-within:border-white/[0.22] transition-all cursor-text">
+          <span class="w-5 h-5 rounded-full bg-gradient-to-tr from-zinc-700 to-zinc-500 flex items-center justify-center text-[10px] font-bold text-white shadow-inner shrink-0" aria-hidden="true">
+            <svg class="w-3 h-3 text-zinc-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </span>
+          <input
+            id="comment-nickname"
+            type="text"
+            maxlength="16"
+            aria-label="닉네임"
+            class="bg-transparent text-xs font-medium text-zinc-200 focus:outline-none w-24 sm:w-28 select-text"
+          />
+        </label>
+
+        <!-- 4자리 PIN 캡슐 -->
+        <label class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] hover:bg-white/[0.07] focus-within:bg-white/[0.08] border border-white/[0.08] focus-within:border-white/[0.22] transition-all cursor-text">
+          <svg class="w-3.5 h-3.5 text-zinc-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <input
+            id="comment-pin"
+            type="password"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            maxlength="4"
+            placeholder="••••"
+            aria-label="수정·삭제용 4자리 비밀번호"
+            class="bg-transparent text-xs font-mono text-zinc-200 placeholder-zinc-600 focus:outline-none w-11 tracking-widest text-center select-text"
+          />
+        </label>
+      </div>
+
+      <!-- 우측 글자수 카운터 & 화이트 필 등록 버튼 -->
+      <div class="flex items-center gap-3 ml-auto">
+        <span id="comment-char-count" class="text-[11px] font-mono text-zinc-500 tabular-nums">0/300</span>
+        <button
+          id="btn-submit-comment"
+          type="button"
+          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 active:scale-[0.98] disabled:opacity-40 text-xs font-semibold transition-all shadow-sm cursor-pointer"
+        >
+          <span data-i18n="commentSubmitBtn">등록</span>
+          <span class="text-zinc-500 font-normal" aria-hidden="true">↵</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 인라인 경고 / 보안 알림 배너 -->
+  <div id="comment-alert-box" role="alert" class="hidden mb-5 px-4 py-3 rounded-xl bg-rose-500/10 border border-rose-500/25 text-xs text-rose-200 flex items-center justify-between gap-2 comment-animate-in">
+    <div class="flex items-center gap-2">
+      <svg class="w-4 h-4 text-rose-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <span id="comment-alert-text"></span>
+    </div>
+    <button id="btn-close-comment-alert" type="button" class="text-rose-400 hover:text-rose-200 text-xs px-1 cursor-pointer" aria-label="Close">✕</button>
+  </div>
+
+  <!-- 스레드 리스트 컨테이너 -->
+  <div id="comment-thread-list" class="space-y-6">
+    <div id="comment-empty-state" class="py-10 text-center rounded-2xl bg-[#121215]/50 border border-white/[0.05]">
+      <p data-i18n="commentEmptyState" class="text-xs text-zinc-500">첫 번째 현장 피드백이나 대체 자재 팁을 남겨보세요.</p>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer class="border-t border-neutral-800 bg-[#0a0a0a] text-neutral-400 font-mono text-xs w-full mt-auto">
@@ -1975,7 +2100,7 @@
       }
     }
     window.__SUPPORTED_LOCALES__ = ["ko","en","ja","es","de","pt","zh-TW"];
-    window.__UI_STRINGS__ = {"ko":{"brandArchive":"생존 기술 가이드","brandShort":"[생존 교범]","offlineDb":"오프라인 저장소","offlineBanner":"⚡ [인터넷 연결 끊김] 저장된 오프라인 화면으로 보는 중입니다","backToIndex":"← 전체 목록","allProtocols":"전체 목록","readingTime":"실전 현장 가이드","timeRequired":"걸리는 시간","successRate":"성공 확률","difficulty":"난이도","outputPerHour":"결과물","outcomeTitle":"최종 완성 형태","outcomeBadge":"실전 완성 미리보기","outcomeStandard":"완성 검수 기준","checklistTitle":"준비할 재료 체크리스트","checklistDesc":"주변 자연물이나 버려진 도시 잔해에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.","itemsSecured":"준비 완료","fieldTested":"[실전 검증 완료]","procedureTitle":"// 순서대로 따라 하기","stepsFlow":"단계 순서","fatalTitle":"주의 // 절대 하면 안 되는 실수","mustReadBeforeDrink":"시작 전 필독","nonNegotiableRule":"","saveOffline":"오프라인 저장 (A4/PDF)","share":"공유","nextProtocol":"다음:","figurePrefix":"그림","toastCopied":"링크가 복사되었습니다.","toastOfflineSaved":"문서를 인쇄/저장합니다 (A4/PDF).","toastThemeSwitched":"테마가 변경되었습니다.","feedHeaderTitle":"[생존 교범 // SURVIVAL PROTOCOL]","feedCacheActive":"오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)","feedHeroHeadline":"재난에서 살아남기","feedHeroSubtext":"문명이 멈추고 전기와 수도가 끊긴 극한의 재난·전쟁·도시 마비 위기에서 살아남는 실전 행동 수칙입니다. 주변의 버려진 생활용품(깡통·페트병·비닐·호일)과 자연물만으로 물, 불, 난방, 조리, 방호 문제를 해결하는 기술을 기록합니다. (포스트 아포칼립스 생존 아카이브 / 1회 방문 시 오프라인 영구 보존)","cat_ALL":"[전체]","cat_WATER":"[물·식량·보존]","cat_FIRE":"[불·거처·보온]","cat_SHELTER":"[불·거처·보온]","cat_FOOD":"[물·식량·보존]","cat_TOOLS":"[도구·의복·공작]","cat_MATERIALS":"[소재·천연화학]","cat_MEDICINE":"[의약·위생·방호]","footerCat1":"[01 FOOD] 물 · 식량 · 보존","footerCat2":"[02 SHELTER] 불 · 거처 · 보온","footerCat3":"[03 TOOLS] 도구 · 의복 · 공작","footerCat4":"[04 MATERIALS] 소재 · 천연화학","footerCat5":"[05 MEDICINE] 의약 · 위생 · 방호","threat_CRITICAL":"[필수 생존]","threat_HIGH":"[중요]","threat_MODERATE":"[기초]","threat_LOW":"[기초]","readProtocolBtn":"[자세히 보기 →]","paginationRecordPrefix":"글","paginationTotalPrefix":"/ 총","paginationTotalSuffix":"개","brandLong":"[생존 교범 // SURVIVAL PROTOCOL]","footerTrait1":"● 현대 공산품 의존도: 0.00%","footerTrait2":"● 오프라인 단독 작동 보장 (PWA)","footerTrait3":"● 100% 무상 공공 도메인 개방","footerCol2Title":"신뢰성 & 규정","footerLinkAbout":"프로젝트 철학 & 검증 체계 (About)","footerLinkPrivacy":"개인정보처리방침 (Privacy Policy)","footerLinkTerms":"이용약관 및 면책고지 (Terms)","footerLinkContact":"비상 통신 & 기술 제보 (Contact)","footerCol3Title":"생존 분과 색인","footerCol4Title":"기술 사양 & 라이선스","footerPersistence":"단 1회 방문 시 전 페이지 HTML, SVG 도면, 검색 인덱스가 브라우저 로컬 저장소에 영구 보존됩니다.","footerSitemapLink":"[XML SITEMAP // 검색엔진 색인]","footerManifestLink":"[PWA MANIFEST // 앱 설치 규격]","footerTitle":"누구나 위급할 때 바로 따라 할 수 있는 실전 생존 가이드.","footerDesc":"한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.","footerLegalNotice":"[안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.","sort_latest":"최신순","sort_oldest":"오래된순","uploadDate":"등록일","createdPrefix":"등록","updatedPrefix":"최종 수정","searchBtn":"[검색]","searchPlaceholder":"생존 기술, 재료, 단계 검색... (초성 검색 가능: ㅅㅅ, ㅂㅇ)","searchNoResults":"일치하는 생존 프로토콜이 없습니다","searchShortcutHint":"ESC 닫기 | ↑↓ 탐색 | Tab 카테고리 | Enter 이동","searchBadge":"100% 오프라인 인메모리 검색","searchResultsCount":"개 발견","searchPrompt":"상단 카테고리를 선택하거나, 필요한 생존 기술·재료·자음 초성(ㅅㅅ, ㅂㅇ)을 입력하세요.","crosslinkMaterialsPrefix":"준비물: ","crosslinkCta":"교범 보기 ↗","viewsPrefix":"열람","confirmSurvival":"생존 확인","toastLiked":"생존 기술 유용성을 확인했습니다.","toastUnliked":"생존 확인이 취소되었습니다.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[조치 방안 완비]","faqHeadline":"야전 돌발 변수 대처 및 실패 방지 실전 질의응답","faqSubtext":"비가 오거나 바람이 강할 때, 여과수가 뿌옇거나 부품이 헐거워질 때 즉각 시도할 수 있는 야전 긴급 대응 요령입니다.","faqExpandText":"[ + 펼치기 ]","faqCollapseText":"[ - 접기 ]","faqCauseLabel":"[원인 진단]:","faqResolutionLabel":"TACTICAL RESOLUTION // 야전 즉각 조치"},"en":{"brandArchive":"TACTICAL SURVIVAL ARCHIVE","brandShort":"[SURVIVAL PROTOCOL]","offlineDb":"OFFLINE DB","offlineBanner":"⚡ [NETWORK DISCONNECTED] Operating on Local Offline Tactical Cache","backToIndex":"← All Protocols","allProtocols":"Protocol Index","readingTime":"Read Time: 30 sec","timeRequired":"Time Required","successRate":"Survival Rate","difficulty":"Skill Level","outputPerHour":"Output / Hour","outcomeTitle":"Target Outcome","outcomeBadge":"Field Result Preview","outcomeStandard":"Field Inspection Standard","checklistTitle":"Essential Materials Checklist (Gather Immediately)","checklistDesc":"Field-foraged natural resources or urban salvage. Tap each item to record your collection status.","itemsSecured":"Secured","fieldTested":"[FIELD VERIFIED]","procedureTitle":"// EXECUTION PROCEDURE (FIELD MANUAL)","stepsFlow":"Steps Flow","fatalTitle":"HAZARD // FATAL MISTAKE WARNING","mustReadBeforeDrink":"MUST READ BEFORE EXECUTION","nonNegotiableRule":"[NON-NEGOTIABLE SURVIVAL RULE]","saveOffline":"Save Offline (A4/PDF)","share":"Share","nextProtocol":"Next:","figurePrefix":"FIG","toastCopied":"Protocol link copied to clipboard.","toastOfflineSaved":"Downloading offline manual (A4/PDF).","toastThemeSwitched":"Theme toggled successfully.","feedHeaderTitle":"[SURVIVAL PROTOCOL // TACTICAL ARCHIVE]","feedCacheActive":"Local Offline Cache Active (100% Operable Without Internet)","feedHeroHeadline":"SURVIVING DISASTERS","feedHeroSubtext":"A field-verified survival manual for surviving blackouts, grid collapse, war, and extreme disasters. Learn to secure water, fire, tools, and shelter using raw natural resources and abandoned everyday salvage (tin cans, plastic bottles, scrap wire). (Post-Apocalypse Tactical Archive / 100% Offline)","cat_ALL":"[ALL]","cat_WATER":"[WATER · FOOD · PRESERVE]","cat_FIRE":"[FIRE · SHELTER · HEAT]","cat_SHELTER":"[FIRE · SHELTER · HEAT]","cat_FOOD":"[WATER · FOOD · PRESERVE]","cat_TOOLS":"[TOOLS · GEAR · CRAFT]","cat_MATERIALS":"[MATERIALS · BIO-CHEM]","cat_MEDICINE":"[MEDICINE · HYGIENE · NBC]","footerCat1":"[01 FOOD] Water · Food · Preserve","footerCat2":"[02 SHELTER] Fire · Shelter · Heat","footerCat3":"[03 TOOLS] Tools · Gear · Craft","footerCat4":"[04 MATERIALS] Materials · Bio-Chem","footerCat5":"[05 MEDICINE] Medicine · Hygiene · NBC","threat_CRITICAL":"[CRITICAL]","threat_HIGH":"[ESSENTIAL]","threat_MODERATE":"[BASIC SKILL]","threat_LOW":"[BASIC SKILL]","readProtocolBtn":"[OPEN MANUAL →]","paginationRecordPrefix":"RECORDS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","brandLong":"[SURVIVAL PROTOCOL // FIELD MANUAL]","footerTrait1":"● Industrial Goods Reliance: 0.00%","footerTrait2":"● 100% Offline Standalone Operation (PWA)","footerTrait3":"● 100% Free Public Domain Access","footerCol2Title":"Trust & Compliance","footerLinkAbout":"Philosophy & Verification (About)","footerLinkPrivacy":"Privacy Policy","footerLinkTerms":"Terms of Service & Disclaimer","footerLinkContact":"Emergency Contact & Tech Intel","footerCol3Title":"Survival Field Index","footerCol4Title":"Tech Specs & Licensing","footerPersistence":"A single visit permanently caches all HTML pages, SVG blueprints, and search indices into browser storage.","footerSitemapLink":"[XML SITEMAP // Search Engine Index]","footerManifestLink":"[PWA MANIFEST // App Install Spec]","footerTitle":"FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.","footerDesc":"Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.","footerLegalNotice":"[Safety Disclaimer & Privacy Notice] This archive is provided for emergency preparedness and educational purposes. Observe fire, toxicity, and local legal safety regulations during practice. Only anonymized telemetry (GA4/Firebase) and local storage are used without collecting personal data.","sort_latest":"Latest","sort_oldest":"Oldest","uploadDate":"Date","createdPrefix":"Created","updatedPrefix":"Updated","searchBtn":"[SEARCH]","searchPlaceholder":"Search protocols, materials, steps... (e.g. water, fire, trap)","searchNoResults":"No matching survival protocols found","searchShortcutHint":"ESC Close | ↑↓ Navigate | Tab Category | Enter Open","searchBadge":"100% OFFLINE IN-MEMORY SEARCH","searchResultsCount":"found","searchPrompt":"Select a category chip above or enter survival skills, materials, or keywords...","crosslinkMaterialsPrefix":"Materials: ","crosslinkCta":"OPEN ↗","viewsPrefix":"VIEWS","confirmSurvival":"SURVIVAL CONFIRMED","toastLiked":"Survival protocol validated.","toastUnliked":"Validation withdrawn.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[RESOLUTIONS READY]","faqHeadline":"Field Troubleshooting & Contingency Q&A","faqSubtext":"Immediate tactical countermeasures for unexpected rain, wind, turbidity, or mechanical looseness.","faqExpandText":"[ + EXPAND ]","faqCollapseText":"[ - COLLAPSE ]","faqCauseLabel":"[CAUSE DIAGNOSTIC]:","faqResolutionLabel":"TACTICAL RESOLUTION // IMMEDIATE ACTION"},"ja":{"brandArchive":"生存戦術教本アーカイブ","brandShort":"[生存教本]","offlineDb":"オフラインDB","offlineBanner":"⚡ [通信途絶検知] 外部ネットワーク切断 // ローカルオフラインキャッシュ教本で稼働中","backToIndex":"← 全教本リスト","allProtocols":"教本インデックス","readingTime":"閲覧所要時間: 30秒","timeRequired":"所要時間","successRate":"生存率/成功率","difficulty":"技術難易度","outputPerHour":"時間あたり生産量","outcomeTitle":"最終完成形","outcomeBadge":"実践完成プレビュー","outcomeStandard":"完成検収基準","checklistTitle":"必須確保物資チェックリスト (直ちに収集せよ)","checklistDesc":"野戦で確保可能な天然代替資材です。準備できた項目をタップして収集状況を記録してください。","itemsSecured":"確保完了","fieldTested":"[実戦検証完了]","procedureTitle":"// 実行手順標準 (PROCEDURE)","stepsFlow":"ステップ進行","fatalTitle":"危険 // 致命的な過誤警告","mustReadBeforeDrink":"実行前必読","nonNegotiableRule":"[妥協不可の絶対規則]","saveOffline":"オフライン保存 (A4/PDF)","share":"共有","nextProtocol":"次:","figurePrefix":"図","toastCopied":"プロトコルリンクがクリップボードにコピーされました。","toastOfflineSaved":"オフライン教本がダウンロードされます (A4/PDF)。","toastThemeSwitched":"テーマが切り替わりました。","feedHeaderTitle":"[生存教本 // SURVIVAL PROTOCOL]","feedCacheActive":"ローカルキャッシュ有効 (通信途絶時もオフライン閲覧可能)","feedHeroHeadline":"災害から生き残る","feedHeroSubtext":"文明が停止し、電気や水道が途絶えた極限の災害・戦時・都市麻痺を生き延びる実践マニュアル。身近な廃棄生活用品（空き缶、ペットボトル、廃電線）と自然物だけで水、火、暖房、調理、防護を確保する技術を記録。（ポスト・アポカリプス生存記録 / 100% オフライン完全動作）","cat_ALL":"[すべて]","cat_WATER":"[水・食料・保存]","cat_FIRE":"[火・シェルター・保温]","cat_SHELTER":"[火・シェルター・保温]","cat_FOOD":"[水・食料・保存]","cat_TOOLS":"[道具・衣服・工作]","cat_MATERIALS":"[素材・天然化学]","cat_MEDICINE":"[医薬・衛生・防護]","footerCat1":"[01 FOOD] 水・食料・保存","footerCat2":"[02 SHELTER] 火・シェルター・保温","footerCat3":"[03 TOOLS] 道具・衣服・工作","footerCat4":"[04 MATERIALS] 素材・天然化学","footerCat5":"[05 MEDICINE] 医薬・衛生・防護","threat_CRITICAL":"[致命的]","threat_HIGH":"[必須]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[教本を閲覧 →]","paginationRecordPrefix":"記録","paginationTotalPrefix":"/ 全","paginationTotalSuffix":"件","brandLong":"[生存教範 // SURVIVAL PROTOCOL]","footerTrait1":"● 現代工業製品への依存度: 0.00%","footerTrait2":"● 完全オフライン単独動作保証 (PWA)","footerTrait3":"● 100% 無料パブリックドメイン開放","footerCol2Title":"信頼性・規約","footerLinkAbout":"プロジェクト理念と検証体系 (About)","footerLinkPrivacy":"プライバシーポリシー (Privacy)","footerLinkTerms":"利用規約および免責事項 (Terms)","footerLinkContact":"非常通信・技術情報提供 (Contact)","footerCol3Title":"生存分科インデックス","footerCol4Title":"技術仕様・ライセンス","footerPersistence":"一度のアクセスで全ページHTML、SVG図面、検索インデックスがブラウザのローカルストレージに永久保存されます。","footerSitemapLink":"[XML SITEMAP // 検索エンジン索引]","footerManifestLink":"[PWA MANIFEST // アプリインストール規格]","footerTitle":"人類文明再建のための無料オープンソース生存記録書。","footerDesc":"このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。","footerLegalNotice":"[安全免責およびプライバシー通知] 本教本は緊急災害対策および教育目的で作成されており、平時の実習では火災・中毒・怪我の安全規則および現地法令を遵守してください。個人を特定しない匿名統計(GA4/Firebase)とローカルストレージのみを使用します。","sort_latest":"最新順","sort_oldest":"古い順","uploadDate":"登録日","createdPrefix":"登録","updatedPrefix":"最終更新","searchBtn":"[検索]","searchPlaceholder":"生存技術、資材、手順を検索... (例: ろ過, 火起こし, 罠)","searchNoResults":"一致する生存教本が見つかりません","searchShortcutHint":"ESC 閉じる | ↑↓ 移動 | Tab カテゴリー | Enter 開く","searchBadge":"100% オフラインインメモリ検索","searchResultsCount":"件発見","searchPrompt":"上のカテゴリーを選択するか、生存技術・資材・キーワードを入力してください。","crosslinkMaterialsPrefix":"準備物: ","crosslinkCta":"詳細 ↗","viewsPrefix":"閲覧","confirmSurvival":"生存確認","toastLiked":"生存技術の有用性を確認しました。","toastUnliked":"生存確認を取り消しました。","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[対策配備完了]","faqHeadline":"野戦トラブルシューティング＆失敗防止Q&A","faqSubtext":"予期せぬ風雨、ろ過水の濁り、部材の緩みなど突発的な問題への即応マニュアルです。","faqExpandText":"[ + 展開 ]","faqCollapseText":"[ - 折りたたむ ]","faqCauseLabel":"[原因診断]:","faqResolutionLabel":"TACTICAL RESOLUTION // 野戦即応措置"},"es":{"brandArchive":"ARCHIVO DE SUPERVIVENCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD DESCONECTADA","offlineBanner":"⚡ [RED DESCONECTADA] Operando con Caché Táctico Local Sin Conexión","backToIndex":"← Todos los Protocolos","allProtocols":"Índice General","readingTime":"Lectura: 30 seg","timeRequired":"Tiempo Requerido","successRate":"Tasa de Éxito","difficulty":"Dificultad","outputPerHour":"Producción / Hora","outcomeTitle":"Resultado Final del Objetivo","outcomeBadge":"Vista Previa del Resultado","outcomeStandard":"Criterio de Inspección","checklistTitle":"Lista de Materiales Esenciales (Recoger de Inmediato)","checklistDesc":"Materiales naturales o chatarra urbana recolectables en campo. Toque cada elemento para registrar su estado.","itemsSecured":"Asegurados","fieldTested":"[PROBADO EN CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EJECUCIÓN (PROCEDURE)","stepsFlow":"Flujo de Pasos","fatalTitle":"PELIGRO // ADVERTENCIA DE ERROR FATAL","mustReadBeforeDrink":"LEER ANTES DE EJECUTAR","nonNegotiableRule":"[REGLA DE SUPERVIVENCIA NO NEGOCIABLE]","saveOffline":"Guardar Offline (PDF)","share":"Compartir","nextProtocol":"Siguiente:","figurePrefix":"FIG","toastCopied":"Enlace copiado al portapapeles.","toastOfflineSaved":"Descargando manual offline (PDF).","toastThemeSwitched":"Tema cambiado.","feedHeaderTitle":"[PROTOCOLO DE SUPERVIVENCIA // ARCHIVO TÁCTICO]","feedCacheActive":"Caché Local Activo (100% Operativo Sin Conexión a Internet)","feedHeroHeadline":"SOBREVIVIR AL DESASTRE","feedHeroSubtext":"Manual táctico de supervivencia en emergencias, guerra y colapso de infraestructuras urbanas. Asegure agua, fuego, calor y refugio con recursos naturales y objetos cotidianos desechados (latas, botellas, alambre). (Archivo Táctico Postapocalipsis / 100% Offline)","cat_ALL":"[TODOS]","cat_WATER":"[AGUA · ALIMENTO · CONSERVA]","cat_FIRE":"[FUEGO · REFUGIO · CALOR]","cat_SHELTER":"[FUEGO · REFUGIO · CALOR]","cat_FOOD":"[AGUA · ALIMENTO · CONSERVA]","cat_TOOLS":"[HERRAMIENTAS · EQUIPO]","cat_MATERIALS":"[MATERIALES · BIOQUÍMICA]","cat_MEDICINE":"[MEDICINA · HIGIENE]","footerCat1":"[01 FOOD] Agua · Alimento · Conserva","footerCat2":"[02 SHELTER] Fuego · Refugio · Calor","footerCat3":"[03 TOOLS] Herramientas · Equipo","footerCat4":"[04 MATERIALS] Materiales · Bioquímica","footerCat5":"[05 MEDICINE] Medicina · Higiene","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","brandLong":"[PROTOCOLO DE SUPERVIVENCIA // MANUAL DE CAMPO]","footerTrait1":"● Dependencia de Productos Industriales: 0.00%","footerTrait2":"● Operación Totalmente Desconectada (PWA)","footerTrait3":"● Acceso 100% Libre y de Dominio Público","footerCol2Title":"Confianza y Normas","footerLinkAbout":"Filosofía y Verificación (About)","footerLinkPrivacy":"Política de Privacidad","footerLinkTerms":"Términos de Uso y Descargo","footerLinkContact":"Contacto de Emergencia e Informes","footerCol3Title":"Índice de Ramas de Supervivencia","footerCol4Title":"Especificaciones y Licencia","footerPersistence":"Una sola visita guarda permanentemente todas las páginas HTML, diagramas SVG e índices en el almacenamiento local.","footerSitemapLink":"[XML SITEMAP // Índice de Motores]","footerManifestLink":"[PWA MANIFEST // Especificación de Instalación]","footerTitle":"ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.","footerDesc":"Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.","footerLegalNotice":"[Aviso Legal y de Privacidad] Este archivo tiene fines educativos y de preparación ante emergencias. Respete las normas de seguridad y leyes locales. Solo se utilizan estadísticas anónimas (GA4/Firebase) y almacenamiento local sin recopilar datos personales.","sort_latest":"Más recientes","sort_oldest":"Más antiguos","uploadDate":"Fecha","createdPrefix":"Publicado","updatedPrefix":"Actualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Buscar protocolos, materiales, pasos... (ej. agua, fuego)","searchNoResults":"No se encontraron protocolos de supervivencia coincidentes","searchShortcutHint":"ESC Cerrar | ↑↓ Navegar | Tab Categoría | Enter Abrir","searchBadge":"BÚSQUEDA 100% OFFLINE EN MEMORIA","searchResultsCount":"encontrados","searchPrompt":"Seleccione una categoría arriba o busque técnicas, materiales o palabras clave...","crosslinkMaterialsPrefix":"Materiales: ","crosslinkCta":"ABRIR ↗","viewsPrefix":"VISTAS","confirmSurvival":"CONFIRMAR SUPERVIVENCIA","toastLiked":"Protocolo de supervivencia validado.","toastUnliked":"Validación retirada.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[RESOLUCIONES LISTAS]","faqHeadline":"Resolución de Problemas en el Campo y Preguntas Frecuentes","faqSubtext":"Medidas tácticas inmediatas para lluvia imprevista, viento, turbidez o fallos mecánicos.","faqExpandText":"[ + DESPLEGAR ]","faqCollapseText":"[ - PLEGAR ]","faqCauseLabel":"[DIAGNÓSTICO]:","faqResolutionLabel":"RESOLUCIÓN TÁCTICA // ACCIÓN INMEDIATA"},"de":{"brandArchive":"TAKTIK-ÜBERLEBENSARCHIV","brandShort":"[PROTOKOLL]","offlineDb":"OFFLINE-DB","offlineBanner":"⚡ [NETZWERK GETRENNT] Betrieb über lokalen Offline-Notfall-Cache","backToIndex":"← Alle Protokolle","allProtocols":"Protokoll-Index","readingTime":"Lesezeit: 30 Sek","timeRequired":"Dauer","successRate":"Überlebensrate","difficulty":"Schwierigkeitsgrad","outputPerHour":"Leistung / Stunde","outcomeTitle":"Endergebnis & Zielaufbau","outcomeBadge":"Vorschau des Endergebnisses","outcomeStandard":"Prüf- und Abnahmekriterien","checklistTitle":"Material-Checkliste (Sofort sammeln)","checklistDesc":"Im Feld verfügbare Naturmaterialien oder verwertbare Reststoffe. Tippen Sie auf jedes Element.","itemsSecured":"Gesichert","fieldTested":"[FELDERPROBT]","procedureTitle":"// AUSFÜHRUNGSVERFAHREN (PROCEDURE)","stepsFlow":"Schritte","fatalTitle":"GEFAHR // TÖDLICHE FEHLERWARNUNG","mustReadBeforeDrink":"VOR AUSFÜHRUNG LESEN","nonNegotiableRule":"[UNVERHANDELBARE REGEL]","saveOffline":"Offline speichern (PDF)","share":"Teilen","nextProtocol":"Weiter:","figurePrefix":"ABB","toastCopied":"Link in die Zwischenablage kopiert.","toastOfflineSaved":"Offline-Handbuch wird heruntergeladen (PDF).","toastThemeSwitched":"Design umgeschaltet.","feedHeaderTitle":"[ÜBERLEBENSPROTOKOLL // SURVIVAL PROTOCOL]","feedCacheActive":"Lokaler Offline-Cache Aktiv (100% Funktionsfähig Ohne Internet)","feedHeroHeadline":"KATASTROPHEN ÜBERLEBEN","feedHeroSubtext":"Praxisnahes Überlebenshandbuch für den Ernstfall, Krieg, Stromausfälle und Infrastrukturkollaps. Techniken zur Gewinnung von Wasser, Feuer, Wärme und Schutz unter Nutzung von Naturressourcen und Zivilisationsschrott (Dosen, PET-Flaschen, Draht). (Postapokalyptisches Überlebensarchiv / 100% Offline)","cat_ALL":"[ALLE]","cat_WATER":"[WASSER · NAHRUNG · LAGER]","cat_FIRE":"[FEUER · SCHUTZ · WÄRME]","cat_SHELTER":"[FEUER · SCHUTZ · WÄRME]","cat_FOOD":"[WASSER · NAHRUNG · LAGER]","cat_TOOLS":"[WERKZEUG · KLEIDUNG]","cat_MATERIALS":"[ROHSTOFFE · NATURCHEMIE]","cat_MEDICINE":"[MEDIZIN · HYGIENE · SCHUTZ]","footerCat1":"[01 FOOD] Wasser · Nahrung · Lager","footerCat2":"[02 SHELTER] Feuer · Schutz · Wärme","footerCat3":"[03 TOOLS] Werkzeug · Kleidung","footerCat4":"[04 MATERIALS] Rohstoffe · Naturchemie","footerCat5":"[05 MEDICINE] Medizin · Hygiene · Schutz","threat_CRITICAL":"[KRITISCH]","threat_HIGH":"[ESSENZIELL]","threat_MODERATE":"[BASIS]","threat_LOW":"[BASIS]","readProtocolBtn":"[HANDBUCH ÖFFNEN →]","paginationRecordPrefix":"EINTRÄGE","paginationTotalPrefix":"/ GESAMT","paginationTotalSuffix":"","brandLong":"[ÜBERLEBENSPROTOKOLL // FELDMANDAT]","footerTrait1":"● Abhängigkeit von Industrieprodukten: 0.00%","footerTrait2":"● 100% Offline-Betrieb garantiert (PWA)","footerTrait3":"● 100% Freier Gemeinfreier Zugang","footerCol2Title":"Vertrauen & Richtlinien","footerLinkAbout":"Philosophie & Verifizierung (About)","footerLinkPrivacy":"Datenschutzerklärung (Privacy)","footerLinkTerms":"Nutzungsbedingungen & Haftung","footerLinkContact":"Notfallkontakt & Fehlerberichte","footerCol3Title":"Überlebenssparten-Index","footerCol4Title":"Technische Daten & Lizenz","footerPersistence":"Ein einziger Besuch sichert alle HTML-Seiten, SVG-Baupläne und den Suchindex dauerhaft im lokalen Speicher.","footerSitemapLink":"[XML SITEMAP // Suchmaschinenindex]","footerManifestLink":"[PWA MANIFEST // App-Installationsspezifikation]","footerTitle":"KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.","footerDesc":"Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.","footerLegalNotice":"[Sicherheitshinweis & Datenschutz] Dieses Archiv dient der Katastrophenvorsorge und Bildungszwecken. Beachten Sie Sicherheitsvorschriften und lokale Gesetze. Es werden nur anonyme Statistiken (GA4/Firebase) und lokaler Speicher ohne personenbezogene Daten verwendet.","sort_latest":"Neueste","sort_oldest":"Älteste","uploadDate":"Datum","createdPrefix":"Erstellt","updatedPrefix":"Aktualisiert","searchBtn":"[SUCHE]","searchPlaceholder":"Protokolle, Materialien, Schritte suchen... (z.B. Wasser, Feuer)","searchNoResults":"Keine passenden Überlebensprotokolle gefunden","searchShortcutHint":"ESC Schließen | ↑↓ Navigieren | Tab Kategorie | Enter Öffnen","searchBadge":"100% OFFLINE-SPEICHERSUCHE","searchResultsCount":"gefunden","searchPrompt":"Kategorie oben wählen oder Überlebensfähigkeiten, Materialien oder Stichwörter eingeben...","crosslinkMaterialsPrefix":"Material: ","crosslinkCta":"ÖFFNEN ↗","viewsPrefix":"AUFRUFE","confirmSurvival":"ÜBERLEBEN BESTÄTIGT","toastLiked":"Überlebensprotokoll bestätigt.","toastUnliked":"Bestätigung zurückgezogen.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[LÖSUNGEN BEREIT]","faqHeadline":"Feld-Fehlerbehebung & Notfall-FAQ","faqSubtext":"Sofortige taktische Gegenmaßnahmen bei plötzlichem Regen, Wind, Trübung oder lockeren Teilen.","faqExpandText":"[ + AUSKLAPPEN ]","faqCollapseText":"[ - EINKLAPPEN ]","faqCauseLabel":"[URSACHENDIAGNOSE]:","faqResolutionLabel":"TAKTIK-LÖSUNG // SOFORTMASSNAHME"},"pt":{"brandArchive":"ARQUIVO DE SOBREVIVÊNCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD OFFLINE","offlineBanner":"⚡ [REDE DESCONECTADA] Operando via Cache Tático Local Offline","backToIndex":"← Todos os Protocolos","allProtocols":"Índice Geral","readingTime":"Leitura: 30 seg","timeRequired":"Tempo Necessário","successRate":"Taxa de Sobrevivência","difficulty":"Dificuldade","outputPerHour":"Produção / Hora","outcomeTitle":"Resultado Final do Objetivo","outcomeBadge":"Prévia do Resultado em Campo","outcomeStandard":"Critério de Inspeção","checklistTitle":"Checklist de Materiais Esenciais (Coletar Imediatamente)","checklistDesc":"Materiais naturais ou sucata urbana disponíveis em campo. Toque em cada item para registrar.","itemsSecured":"Garantidos","fieldTested":"[TESTADO EM CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EXECUÇÃO (PROCEDURE)","stepsFlow":"Etapas","fatalTitle":"PERIGO // ALERTA DE ERRO FATAL","mustReadBeforeDrink":"LEIA ANTES DE EXECUTAR","nonNegotiableRule":"[REGRA INEGOCIÁVEL]","saveOffline":"Salvar Offline (PDF)","share":"Compartilhar","nextProtocol":"Próximo:","figurePrefix":"FIG","toastCopied":"Link copiado.","toastOfflineSaved":"Baixando manual offline (PDF).","toastThemeSwitched":"Tema alterado.","feedHeaderTitle":"[PROTOCOLO DE SOBREVIVÊNCIA // ARQUIVO TÁTICO]","feedCacheActive":"Cache Local Ativo (100% Operacional Sem Internet)","feedHeroHeadline":"SOBREVIVENDO A DESASTRES","feedHeroSubtext":"Manual tático de sobrevivência para situações de desastre, guerra e colapso de serviços essenciais. Garanta água, fogo, abrigo e ferramentas com recursos naturais e sucata cotidiana abandonada (latas, garrafas PET, arames). (Arquivo de Sobrevivência Pós-Apocalipse / 100% Offline)","cat_ALL":"[TODOS]","cat_WATER":"[ÁGUA · ALIMENTO · CONSERVA]","cat_FIRE":"[FOGO · ABRIGO · CALOR]","cat_SHELTER":"[FOGO · ABRIGO · CALOR]","cat_FOOD":"[ÁGUA · ALIMENTO · CONSERVA]","cat_TOOLS":"[FERRAMENTAS · EQUIPAMENTO]","cat_MATERIALS":"[MATERIAIS · BIOQUÍMICA]","cat_MEDICINE":"[MEDICINA · HIGIENE]","footerCat1":"[01 FOOD] Água · Alimento · Conserva","footerCat2":"[02 SHELTER] Fogo · Abrigo · Calor","footerCat3":"[03 TOOLS] Ferramentas · Equipamento","footerCat4":"[04 MATERIALS] Materiais · Bioquímica","footerCat5":"[05 MEDICINE] Medicina · Higiene","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESSENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","brandLong":"[PROTOCOLO DE SOBREVIVÊNCIA // MANUAL DE CAMPO]","footerTrait1":"● Dependência de Produtos Industriais: 0.00%","footerTrait2":"● Operação 100% Offline Garantida (PWA)","footerTrait3":"● Acesso 100% Livre e de Domínio Público","footerCol2Title":"Confiabilidade e Normas","footerLinkAbout":"Filosofia e Verificação (About)","footerLinkPrivacy":"Política de Privacidade","footerLinkTerms":"Termos de Uso e Isenção","footerLinkContact":"Contato de Emergência e Relatos","footerCol3Title":"Índice de Ramos de Sobrevivência","footerCol4Title":"Especificações e Licença","footerPersistence":"Uma única visita armazena permanentemente todas as páginas HTML, diagramas SVG e índices no navegador.","footerSitemapLink":"[XML SITEMAP // Índice de Busca]","footerManifestLink":"[PWA MANIFEST // Especificação de Instalação]","footerTitle":"ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.","footerDesc":"Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.","footerLegalNotice":"[Aviso de Segurança e Privacidade] Este arquivo destina-se à preparação para emergências e fins educativos. Respeite as normas de segurança e leis locais. Apenas estatísticas anônimas (GA4/Firebase) e armazenamento local são usados sem coleta de dados pessoais.","sort_latest":"Mais recentes","sort_oldest":"Mais antigos","uploadDate":"Data","createdPrefix":"Criado","updatedPrefix":"Atualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Pesquisar protocolos, materiais, etapas... (ex: água, fogo)","searchNoResults":"Nenhum protocolo de sobrevivência encontrado","searchShortcutHint":"ESC Fechar | ↑↓ Navegar | Tab Categoria | Enter Abrir","searchBadge":"BUSCA 100% OFFLINE EM MEMÓRIA","searchResultsCount":"encontrados","searchPrompt":"Selecione uma categoria acima ou pesquise técnicas, materiais ou palavras-chave...","crosslinkMaterialsPrefix":"Materiais: ","crosslinkCta":"ABRIR ↗","viewsPrefix":"VISUALIZAÇÕES","confirmSurvival":"CONFIRMAR SOBREVIVÊNCIA","toastLiked":"Protocolo de sobrevivência validado.","toastUnliked":"Validação retirada.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[RESOLUÇÕES PRONTAS]","faqHeadline":"Resolução de Problemas de Campo e Perguntas Frecuentes","faqSubtext":"Contramedidas táticas imediatas para chuva inesperada, vento, turbidez ou afrouxamento estrutural.","faqExpandText":"[ + EXPANDIR ]","faqCollapseText":"[ - RECOLHER ]","faqCauseLabel":"[DIAGNÓSTICO]:","faqResolutionLabel":"RESOLUÇÃO TÁCTICA // AÇÃO IMEDIATA"},"zh-TW":{"brandArchive":"生存戰術手冊檔案庫","brandShort":"[生存手冊]","offlineDb":"離線數據庫","offlineBanner":"⚡ [偵測到通訊中斷] 外部網路斷線 // 目前以本地離線快取手冊運作中","backToIndex":"← 所有手冊目錄","allProtocols":"手冊總目錄","readingTime":"閱讀時間：30秒","timeRequired":"所需時間","successRate":"生存率/成功率","difficulty":"技術難度","outputPerHour":"每小時產量","outcomeTitle":"最終完成成果","outcomeBadge":"實戰完成預覽","outcomeStandard":"實戰驗收標準","checklistTitle":"必備物資清單（立即收集）","checklistDesc":"野戰環境中可取得的天然物資或廢棄都市材料。請點擊已備妥的項目以記錄收集狀態。","itemsSecured":"已確保","fieldTested":"[實戰檢驗完成]","procedureTitle":"// 執行程序標準 (PROCEDURE)","stepsFlow":"步驟進行","fatalTitle":"危險 // 致命錯誤警告","mustReadBeforeDrink":"執行前必讀","nonNegotiableRule":"[不可妥協的絕對法則]","saveOffline":"離線保存 (A4/PDF)","share":"分享","nextProtocol":"下一篇：","figurePrefix":"圖","toastCopied":"協議連結已複製至剪貼簿。","toastOfflineSaved":"離線手冊下載中 (A4/PDF)。","toastThemeSwitched":"主題已切換。","feedHeaderTitle":"[生存手冊 // SURVIVAL PROTOCOL]","feedCacheActive":"本地離線快取已啟用（網路中斷時仍可100%離線調閱）","feedHeroHeadline":"在災難中生存","feedHeroSubtext":"面對電網癱瘓、斷水斷電、戰爭與城市崩潰的實戰應急求生手冊。利用廢棄生活物資（空罐、寶特瓶、塑膠袋）與自然材料解決飲水、生火、取暖、應急烹飪與防護需求。（後末日戰術求生檔案 / 100% 離線可用）","cat_ALL":"[全部]","cat_WATER":"[飲水·糧食·保存]","cat_FIRE":"[生火·庇護·保溫]","cat_SHELTER":"[生火·庇護·保溫]","cat_FOOD":"[飲水·糧食·保存]","cat_TOOLS":"[工具·衣物·工藝]","cat_MATERIALS":"[素材·天然化學]","cat_MEDICINE":"[醫藥·衛生·防護]","footerCat1":"[01 FOOD] 飲水·糧食·保存","footerCat2":"[02 SHELTER] 生火·庇護·保溫","footerCat3":"[03 TOOLS] 工具·衣物·工藝","footerCat4":"[04 MATERIALS] 素材·天然化學","footerCat5":"[05 MEDICINE] 醫藥·衛生·防護","threat_CRITICAL":"[致命級]","threat_HIGH":"[必備級]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[調閱手冊 →]","paginationRecordPrefix":"紀錄","paginationTotalPrefix":"/ 共","paginationTotalSuffix":"篇","brandLong":"[生存教範 // SURVIVAL PROTOCOL]","footerTrait1":"● 現代工業品依賴度：0.00%","footerTrait2":"● 離線單機運作保證 (PWA)","footerTrait3":"● 100% 免費公共領域開放","footerCol2Title":"信任與規範","footerLinkAbout":"專案理念與驗證體系 (About)","footerLinkPrivacy":"隱私權政策 (Privacy Policy)","footerLinkTerms":"使用條款與免責聲明 (Terms)","footerLinkContact":"緊急通訊與技術通報 (Contact)","footerCol3Title":"生存分科索引","footerCol4Title":"技術規格與授權","footerPersistence":"造訪一次即可將所有 HTML 頁面、SVG 圖面與搜尋索引永久保存於瀏覽器本地空間。","footerSitemapLink":"[XML SITEMAP // 搜尋引擎索引]","footerManifestLink":"[PWA MANIFEST // 應用程式安裝規格]","footerTitle":"為重建人類文明而設的免費開源生存檔案庫。","footerDesc":"本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。","footerLegalNotice":"[安全免責與隱私聲明] 本手冊僅供災難應變與教育目的使用，平時演練請遵守用火、防毒、安全規範與當地法規。本網站僅使用去識別化匿名統計(GA4/Firebase)與本地儲存空間，不收集任何個人資料。","sort_latest":"最新發布","sort_oldest":"最早發布","uploadDate":"發布日期","createdPrefix":"發布","updatedPrefix":"最後更新","searchBtn":"[搜尋]","searchPlaceholder":"搜尋生存手冊、物資、步驟... (如: 飲水, 生火, 陷阱)","searchNoResults":"查無相符的生存手冊","searchShortcutHint":"ESC 關閉 | ↑↓ 移動 | Tab 分類 | Enter 開啟","searchBadge":"100% 離線內存即時搜尋","searchResultsCount":"篇查獲","searchPrompt":"請點選上方分類標籤，或輸入生存技能、工具、材料與關鍵字進行搜尋...","crosslinkMaterialsPrefix":"準備材料: ","crosslinkCta":"查看 ↗","viewsPrefix":"瀏覽","confirmSurvival":"確認生存","toastLiked":"已確認生存技術實用性。","toastUnliked":"已取消確認。","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[處置方案已就緒]","faqHeadline":"野戰故障排除與應急問答","faqSubtext":"針對突降暴雨、強風、過濾水混濁或結構鬆脫時的即時應對處置方案。","faqExpandText":"[ + 展開 ]","faqCollapseText":"[ - 摺疊 ]","faqCauseLabel":"[原因診斷]:","faqResolutionLabel":"戰術應對 // 現場即時處置"}};
+    window.__UI_STRINGS__ = {"ko":{"brandArchive":"생존 기술 가이드","brandShort":"[생존 교범]","offlineDb":"오프라인 저장소","offlineBanner":"⚡ [인터넷 연결 끊김] 저장된 오프라인 화면으로 보는 중입니다","backToIndex":"← 전체 목록","allProtocols":"전체 목록","readingTime":"실전 현장 가이드","timeRequired":"걸리는 시간","successRate":"성공 확률","difficulty":"난이도","outputPerHour":"결과물","outcomeTitle":"최종 완성 형태","outcomeBadge":"실전 완성 미리보기","outcomeStandard":"완성 검수 기준","checklistTitle":"준비할 재료 체크리스트","checklistDesc":"주변 자연물이나 버려진 도시 잔해에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.","itemsSecured":"준비 완료","fieldTested":"[실전 검증 완료]","procedureTitle":"// 순서대로 따라 하기","stepsFlow":"단계 순서","fatalTitle":"주의 // 절대 하면 안 되는 실수","mustReadBeforeDrink":"시작 전 필독","nonNegotiableRule":"","saveOffline":"오프라인 저장 (A4/PDF)","share":"공유","nextProtocol":"다음:","figurePrefix":"그림","toastCopied":"링크가 복사되었습니다.","toastOfflineSaved":"문서를 인쇄/저장합니다 (A4/PDF).","toastThemeSwitched":"테마가 변경되었습니다.","feedHeaderTitle":"[생존 교범 // SURVIVAL PROTOCOL]","feedCacheActive":"오프라인 자동 저장 켜짐 (인터넷이 끊겨도 언제든 볼 수 있습니다)","feedHeroHeadline":"재난에서 살아남기","feedHeroSubtext":"문명이 멈추고 전기와 수도가 끊긴 극한의 재난·전쟁·도시 마비 위기에서 살아남는 실전 행동 수칙입니다. 주변의 버려진 생활용품(깡통·페트병·비닐·호일)과 자연물만으로 물, 불, 난방, 조리, 방호 문제를 해결하는 기술을 기록합니다. (포스트 아포칼립스 생존 아카이브 / 1회 방문 시 오프라인 영구 보존)","cat_ALL":"[전체]","cat_WATER":"[물·식량·보존]","cat_FIRE":"[불·거처·보온]","cat_SHELTER":"[불·거처·보온]","cat_FOOD":"[물·식량·보존]","cat_TOOLS":"[도구·의복·공작]","cat_MATERIALS":"[소재·천연화학]","cat_MEDICINE":"[의약·위생·방호]","footerCat1":"[01 FOOD] 물 · 식량 · 보존","footerCat2":"[02 SHELTER] 불 · 거처 · 보온","footerCat3":"[03 TOOLS] 도구 · 의복 · 공작","footerCat4":"[04 MATERIALS] 소재 · 천연화학","footerCat5":"[05 MEDICINE] 의약 · 위생 · 방호","threat_CRITICAL":"[필수 생존]","threat_HIGH":"[중요]","threat_MODERATE":"[기초]","threat_LOW":"[기초]","readProtocolBtn":"[자세히 보기 →]","paginationRecordPrefix":"글","paginationTotalPrefix":"/ 총","paginationTotalSuffix":"개","brandLong":"[생존 교범 // SURVIVAL PROTOCOL]","footerTrait1":"● 현대 공산품 의존도: 0.00%","footerTrait2":"● 오프라인 단독 작동 보장 (PWA)","footerTrait3":"● 100% 무상 공공 도메인 개방","footerCol2Title":"신뢰성 & 규정","footerLinkAbout":"프로젝트 철학 & 검증 체계 (About)","footerLinkPrivacy":"개인정보처리방침 (Privacy Policy)","footerLinkTerms":"이용약관 및 면책고지 (Terms)","footerLinkContact":"비상 통신 & 기술 제보 (Contact)","footerCol3Title":"생존 분과 색인","footerCol4Title":"기술 사양 & 라이선스","footerPersistence":"단 1회 방문 시 전 페이지 HTML, SVG 도면, 검색 인덱스가 브라우저 로컬 저장소에 영구 보존됩니다.","footerSitemapLink":"[XML SITEMAP // 검색엔진 색인]","footerManifestLink":"[PWA MANIFEST // 앱 설치 규격]","footerTitle":"누구나 위급할 때 바로 따라 할 수 있는 실전 생존 가이드.","footerDesc":"한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.","footerLegalNotice":"[안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.","sort_latest":"최신순","sort_oldest":"오래된순","uploadDate":"등록일","createdPrefix":"등록","updatedPrefix":"최종 수정","searchBtn":"[검색]","searchPlaceholder":"생존 기술, 재료, 단계 검색... (초성 검색 가능: ㅅㅅ, ㅂㅇ)","searchNoResults":"일치하는 생존 프로토콜이 없습니다","searchShortcutHint":"ESC 닫기 | ↑↓ 탐색 | Tab 카테고리 | Enter 이동","searchBadge":"100% 오프라인 인메모리 검색","searchResultsCount":"개 발견","searchPrompt":"상단 카테고리를 선택하거나, 필요한 생존 기술·재료·자음 초성(ㅅㅅ, ㅂㅇ)을 입력하세요.","crosslinkMaterialsPrefix":"준비물: ","crosslinkCta":"교범 보기 ↗","viewsPrefix":"열람","confirmSurvival":"생존 확인","toastLiked":"생존 기술 유용성을 확인했습니다.","toastUnliked":"생존 확인이 취소되었습니다.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[조치 방안 완비]","faqHeadline":"야전 돌발 변수 대처 및 실패 방지 실전 질의응답","faqSubtext":"비가 오거나 바람이 강할 때, 여과수가 뿌옇거나 부품이 헐거워질 때 즉각 시도할 수 있는 야전 긴급 대응 요령입니다.","faqExpandText":"[ + 펼치기 ]","faqCollapseText":"[ - 접기 ]","faqCauseLabel":"[원인 진단]:","faqResolutionLabel":"TACTICAL RESOLUTION // 야전 즉각 조치","commentSectionTitle":"생존자 피드백","commentFeedBadge":"7개국어 통합 피드 · 자동 번역","commentPlaceholder":"현장 적용 팁, 대체 자재 후기, 또는 질문을 남겨주세요... (광고·외부 링크는 자동 차단됩니다)","commentDefaultNickname":"생존자","commentNicknameAria":"닉네임","commentPinAria":"수정·삭제용 4자리 비밀번호","commentSubmitBtn":"등록","commentReplyBtn":"답글","commentTranslateBtn":"번역 보기","commentTranslateHideBtn":"번역 접기","commentTranslating":"번역 중...","commentTranslatedBadge":"번역됨","commentEditBtn":"수정","commentDeleteBtn":"삭제","commentReportBtn":"신고","commentCancelBtn":"취소","commentConfirmBtn":"확인","commentSaveBtn":"저장","commentEmptyState":"첫 번째 현장 피드백이나 대체 자재 팁을 남겨보세요.","commentOfflineNotice":"오프라인 상태: 캐시된 피드백만 표시됩니다.","commentJustNow":"방금 전","commentMinutesAgo":"분 전","commentHoursAgo":"시간 전","commentDaysAgo":"일 전","commentEditedTag":"(수정됨)","commentBlindedMsg":"다수의 커뮤니티 신고로 블라인드 처리된 댓글입니다.","commentErrLength":"댓글 내용을 2자 이상 300자 이하로 입력해주세요.","commentErrPin":"비밀번호는 숫자 4자리로 입력해주세요.","commentErrSpam":"보안 정책상 외부 링크(URL) 및 광고·스팸 키워드는 등록할 수 없습니다.","commentErrCooldown":"도배 방지를 위해 잠시 후 다시 작성해주세요.","commentErrWrongPin":"비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.","commentToastPosted":"피드백이 등록되었습니다.","commentToastUpdated":"피드백이 수정되었습니다.","commentToastDeleted":"피드백이 삭제되었습니다.","commentToastReported":"신고가 접수되었습니다."},"en":{"brandArchive":"TACTICAL SURVIVAL ARCHIVE","brandShort":"[SURVIVAL PROTOCOL]","offlineDb":"OFFLINE DB","offlineBanner":"⚡ [NETWORK DISCONNECTED] Operating on Local Offline Tactical Cache","backToIndex":"← All Protocols","allProtocols":"Protocol Index","readingTime":"Read Time: 30 sec","timeRequired":"Time Required","successRate":"Survival Rate","difficulty":"Skill Level","outputPerHour":"Output / Hour","outcomeTitle":"Target Outcome","outcomeBadge":"Field Result Preview","outcomeStandard":"Field Inspection Standard","checklistTitle":"Essential Materials Checklist (Gather Immediately)","checklistDesc":"Field-foraged natural resources or urban salvage. Tap each item to record your collection status.","itemsSecured":"Secured","fieldTested":"[FIELD VERIFIED]","procedureTitle":"// EXECUTION PROCEDURE (FIELD MANUAL)","stepsFlow":"Steps Flow","fatalTitle":"HAZARD // FATAL MISTAKE WARNING","mustReadBeforeDrink":"MUST READ BEFORE EXECUTION","nonNegotiableRule":"[NON-NEGOTIABLE SURVIVAL RULE]","saveOffline":"Save Offline (A4/PDF)","share":"Share","nextProtocol":"Next:","figurePrefix":"FIG","toastCopied":"Protocol link copied to clipboard.","toastOfflineSaved":"Downloading offline manual (A4/PDF).","toastThemeSwitched":"Theme toggled successfully.","feedHeaderTitle":"[SURVIVAL PROTOCOL // TACTICAL ARCHIVE]","feedCacheActive":"Local Offline Cache Active (100% Operable Without Internet)","feedHeroHeadline":"SURVIVING DISASTERS","feedHeroSubtext":"A field-verified survival manual for surviving blackouts, grid collapse, war, and extreme disasters. Learn to secure water, fire, tools, and shelter using raw natural resources and abandoned everyday salvage (tin cans, plastic bottles, scrap wire). (Post-Apocalypse Tactical Archive / 100% Offline)","cat_ALL":"[ALL]","cat_WATER":"[WATER · FOOD · PRESERVE]","cat_FIRE":"[FIRE · SHELTER · HEAT]","cat_SHELTER":"[FIRE · SHELTER · HEAT]","cat_FOOD":"[WATER · FOOD · PRESERVE]","cat_TOOLS":"[TOOLS · GEAR · CRAFT]","cat_MATERIALS":"[MATERIALS · BIO-CHEM]","cat_MEDICINE":"[MEDICINE · HYGIENE · NBC]","footerCat1":"[01 FOOD] Water · Food · Preserve","footerCat2":"[02 SHELTER] Fire · Shelter · Heat","footerCat3":"[03 TOOLS] Tools · Gear · Craft","footerCat4":"[04 MATERIALS] Materials · Bio-Chem","footerCat5":"[05 MEDICINE] Medicine · Hygiene · NBC","threat_CRITICAL":"[CRITICAL]","threat_HIGH":"[ESSENTIAL]","threat_MODERATE":"[BASIC SKILL]","threat_LOW":"[BASIC SKILL]","readProtocolBtn":"[OPEN MANUAL →]","paginationRecordPrefix":"RECORDS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","brandLong":"[SURVIVAL PROTOCOL // FIELD MANUAL]","footerTrait1":"● Industrial Goods Reliance: 0.00%","footerTrait2":"● 100% Offline Standalone Operation (PWA)","footerTrait3":"● 100% Free Public Domain Access","footerCol2Title":"Trust & Compliance","footerLinkAbout":"Philosophy & Verification (About)","footerLinkPrivacy":"Privacy Policy","footerLinkTerms":"Terms of Service & Disclaimer","footerLinkContact":"Emergency Contact & Tech Intel","footerCol3Title":"Survival Field Index","footerCol4Title":"Tech Specs & Licensing","footerPersistence":"A single visit permanently caches all HTML pages, SVG blueprints, and search indices into browser storage.","footerSitemapLink":"[XML SITEMAP // Search Engine Index]","footerManifestLink":"[PWA MANIFEST // App Install Spec]","footerTitle":"FREE OPEN-SOURCE SURVIVAL ARCHIVE FOR REBUILDING HUMAN CIVILIZATION.","footerDesc":"Once visited, this web archive is permanently preserved in local browser storage and operates 100% in airplane mode or total global grid blackout.","footerLegalNotice":"[Safety Disclaimer & Privacy Notice] This archive is provided for emergency preparedness and educational purposes. Observe fire, toxicity, and local legal safety regulations during practice. Only anonymized telemetry (GA4/Firebase) and local storage are used without collecting personal data.","sort_latest":"Latest","sort_oldest":"Oldest","uploadDate":"Date","createdPrefix":"Created","updatedPrefix":"Updated","searchBtn":"[SEARCH]","searchPlaceholder":"Search protocols, materials, steps... (e.g. water, fire, trap)","searchNoResults":"No matching survival protocols found","searchShortcutHint":"ESC Close | ↑↓ Navigate | Tab Category | Enter Open","searchBadge":"100% OFFLINE IN-MEMORY SEARCH","searchResultsCount":"found","searchPrompt":"Select a category chip above or enter survival skills, materials, or keywords...","crosslinkMaterialsPrefix":"Materials: ","crosslinkCta":"OPEN ↗","viewsPrefix":"VIEWS","confirmSurvival":"SURVIVAL CONFIRMED","toastLiked":"Survival protocol validated.","toastUnliked":"Validation withdrawn.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[RESOLUTIONS READY]","faqHeadline":"Field Troubleshooting & Contingency Q&A","faqSubtext":"Immediate tactical countermeasures for unexpected rain, wind, turbidity, or mechanical looseness.","faqExpandText":"[ + EXPAND ]","faqCollapseText":"[ - COLLAPSE ]","faqCauseLabel":"[CAUSE DIAGNOSTIC]:","faqResolutionLabel":"TACTICAL RESOLUTION // IMMEDIATE ACTION","commentSectionTitle":"Survivor Feedback","commentFeedBadge":"Global 7-Lang Feed · Auto-Translate","commentPlaceholder":"Share field tips, material alternatives, or questions... (URLs & ads are blocked automatically)","commentDefaultNickname":"Survivor","commentNicknameAria":"Nickname","commentPinAria":"4-digit PIN for edit/delete","commentSubmitBtn":"Post","commentReplyBtn":"Reply","commentTranslateBtn":"Translate","commentTranslateHideBtn":"Hide translation","commentTranslating":"Translating...","commentTranslatedBadge":"Translated","commentEditBtn":"Edit","commentDeleteBtn":"Delete","commentReportBtn":"Report","commentCancelBtn":"Cancel","commentConfirmBtn":"Confirm","commentSaveBtn":"Save","commentEmptyState":"Be the first to share a field tip or material alternative.","commentOfflineNotice":"Offline mode: Displaying cached feedback only.","commentJustNow":"Just now","commentMinutesAgo":"m ago","commentHoursAgo":"h ago","commentDaysAgo":"d ago","commentEditedTag":"(edited)","commentBlindedMsg":"This comment has been hidden due to multiple community reports.","commentErrLength":"Please enter between 2 and 300 characters.","commentErrPin":"Please enter a 4-digit numeric PIN.","commentErrSpam":"External links (URLs) and spam keywords are blocked by security policy.","commentErrCooldown":"Please wait a moment before posting again.","commentErrWrongPin":"Incorrect PIN or different authoring device.","commentToastPosted":"Feedback posted.","commentToastUpdated":"Feedback updated.","commentToastDeleted":"Feedback deleted.","commentToastReported":"Report submitted."},"ja":{"brandArchive":"生存戦術教本アーカイブ","brandShort":"[生存教本]","offlineDb":"オフラインDB","offlineBanner":"⚡ [通信途絶検知] 外部ネットワーク切断 // ローカルオフラインキャッシュ教本で稼働中","backToIndex":"← 全教本リスト","allProtocols":"教本インデックス","readingTime":"閲覧所要時間: 30秒","timeRequired":"所要時間","successRate":"生存率/成功率","difficulty":"技術難易度","outputPerHour":"時間あたり生産量","outcomeTitle":"最終完成形","outcomeBadge":"実践完成プレビュー","outcomeStandard":"完成検収基準","checklistTitle":"必須確保物資チェックリスト (直ちに収集せよ)","checklistDesc":"野戦で確保可能な天然代替資材です。準備できた項目をタップして収集状況を記録してください。","itemsSecured":"確保完了","fieldTested":"[実戦検証完了]","procedureTitle":"// 実行手順標準 (PROCEDURE)","stepsFlow":"ステップ進行","fatalTitle":"危険 // 致命的な過誤警告","mustReadBeforeDrink":"実行前必読","nonNegotiableRule":"[妥協不可の絶対規則]","saveOffline":"オフライン保存 (A4/PDF)","share":"共有","nextProtocol":"次:","figurePrefix":"図","toastCopied":"プロトコルリンクがクリップボードにコピーされました。","toastOfflineSaved":"オフライン教本がダウンロードされます (A4/PDF)。","toastThemeSwitched":"テーマが切り替わりました。","feedHeaderTitle":"[生存教本 // SURVIVAL PROTOCOL]","feedCacheActive":"ローカルキャッシュ有効 (通信途絶時もオフライン閲覧可能)","feedHeroHeadline":"災害から生き残る","feedHeroSubtext":"文明が停止し、電気や水道が途絶えた極限の災害・戦時・都市麻痺を生き延びる実践マニュアル。身近な廃棄生活用品（空き缶、ペットボトル、廃電線）と自然物だけで水、火、暖房、調理、防護を確保する技術を記録。（ポスト・アポカリプス生存記録 / 100% オフライン完全動作）","cat_ALL":"[すべて]","cat_WATER":"[水・食料・保存]","cat_FIRE":"[火・シェルター・保温]","cat_SHELTER":"[火・シェルター・保温]","cat_FOOD":"[水・食料・保存]","cat_TOOLS":"[道具・衣服・工作]","cat_MATERIALS":"[素材・天然化学]","cat_MEDICINE":"[医薬・衛生・防護]","footerCat1":"[01 FOOD] 水・食料・保存","footerCat2":"[02 SHELTER] 火・シェルター・保温","footerCat3":"[03 TOOLS] 道具・衣服・工作","footerCat4":"[04 MATERIALS] 素材・天然化学","footerCat5":"[05 MEDICINE] 医薬・衛生・防護","threat_CRITICAL":"[致命的]","threat_HIGH":"[必須]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[教本を閲覧 →]","paginationRecordPrefix":"記録","paginationTotalPrefix":"/ 全","paginationTotalSuffix":"件","brandLong":"[生存教範 // SURVIVAL PROTOCOL]","footerTrait1":"● 現代工業製品への依存度: 0.00%","footerTrait2":"● 完全オフライン単独動作保証 (PWA)","footerTrait3":"● 100% 無料パブリックドメイン開放","footerCol2Title":"信頼性・規約","footerLinkAbout":"プロジェクト理念と検証体系 (About)","footerLinkPrivacy":"プライバシーポリシー (Privacy)","footerLinkTerms":"利用規約および免責事項 (Terms)","footerLinkContact":"非常通信・技術情報提供 (Contact)","footerCol3Title":"生存分科インデックス","footerCol4Title":"技術仕様・ライセンス","footerPersistence":"一度のアクセスで全ページHTML、SVG図面、検索インデックスがブラウザのローカルストレージに永久保存されます。","footerSitemapLink":"[XML SITEMAP // 検索エンジン索引]","footerManifestLink":"[PWA MANIFEST // アプリインストール規格]","footerTitle":"人類文明再建のための無料オープンソース生存記録書。","footerDesc":"このページは一度訪問するとブラウザのローカルストレージに永久保存され、機内モードや通信途絶状況でも100%動作します。","footerLegalNotice":"[安全免責およびプライバシー通知] 本教本は緊急災害対策および教育目的で作成されており、平時の実習では火災・中毒・怪我の安全規則および現地法令を遵守してください。個人を特定しない匿名統計(GA4/Firebase)とローカルストレージのみを使用します。","sort_latest":"最新順","sort_oldest":"古い順","uploadDate":"登録日","createdPrefix":"登録","updatedPrefix":"最終更新","searchBtn":"[検索]","searchPlaceholder":"生存技術、資材、手順を検索... (例: ろ過, 火起こし, 罠)","searchNoResults":"一致する生存教本が見つかりません","searchShortcutHint":"ESC 閉じる | ↑↓ 移動 | Tab カテゴリー | Enter 開く","searchBadge":"100% オフラインインメモリ検索","searchResultsCount":"件発見","searchPrompt":"上のカテゴリーを選択するか、生存技術・資材・キーワードを入力してください。","crosslinkMaterialsPrefix":"準備物: ","crosslinkCta":"詳細 ↗","viewsPrefix":"閲覧","confirmSurvival":"生存確認","toastLiked":"生存技術の有用性を確認しました。","toastUnliked":"生存確認を取り消しました。","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[対策配備完了]","faqHeadline":"野戦トラブルシューティング＆失敗防止Q&A","faqSubtext":"予期せぬ風雨、ろ過水の濁り、部材の緩みなど突発的な問題への即応マニュアルです。","faqExpandText":"[ + 展開 ]","faqCollapseText":"[ - 折りたたむ ]","faqCauseLabel":"[原因診断]:","faqResolutionLabel":"TACTICAL RESOLUTION // 野戦即応措置","commentSectionTitle":"生存者フィードバック","commentFeedBadge":"7言語統合フィード・自動翻訳","commentPlaceholder":"現場での活用ヒント、代替資材のレビュー、質問を残してください... (URL・広告は自動ブロックされます)","commentDefaultNickname":"生存者","commentNicknameAria":"ニックネーム","commentPinAria":"編集・削除用4桁PIN","commentSubmitBtn":"投稿","commentReplyBtn":"返信","commentTranslateBtn":"翻訳を見る","commentTranslateHideBtn":"翻訳を閉じる","commentTranslating":"翻訳中...","commentTranslatedBadge":"翻訳済み","commentEditBtn":"編集","commentDeleteBtn":"削除","commentReportBtn":"通報","commentCancelBtn":"キャンセル","commentConfirmBtn":"確認","commentSaveBtn":"保存","commentEmptyState":"最初の現場フィードバックや代替資材のヒントを共有しましょう。","commentOfflineNotice":"オフライン状態: キャッシュされたフィードバックのみ表示されます。","commentJustNow":"たった今","commentMinutesAgo":"分前","commentHoursAgo":"時間前","commentDaysAgo":"日前","commentEditedTag":"(編集済み)","commentBlindedMsg":"複数のコミュニティ通報により非表示になったコメントです。","commentErrLength":"コメントは2文字以上300文字以内で入力してください。","commentErrPin":"暗証番号は数字4桁で入力してください。","commentErrSpam":"セキュリティポリシーにより外部リンク(URL)や広告キーワードは投稿できません。","commentErrCooldown":"連投防止のため、少し待ってから再度投稿してください。","commentErrWrongPin":"PINが一致しないか、投稿した端末が異なります。","commentToastPosted":"フィードバックを投稿しました。","commentToastUpdated":"フィードバックを更新しました。","commentToastDeleted":"フィードバックを削除しました。","commentToastReported":"通報を受け付けました。"},"es":{"brandArchive":"ARCHIVO DE SUPERVIVENCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD DESCONECTADA","offlineBanner":"⚡ [RED DESCONECTADA] Operando con Caché Táctico Local Sin Conexión","backToIndex":"← Todos los Protocolos","allProtocols":"Índice General","readingTime":"Lectura: 30 seg","timeRequired":"Tiempo Requerido","successRate":"Tasa de Éxito","difficulty":"Dificultad","outputPerHour":"Producción / Hora","outcomeTitle":"Resultado Final del Objetivo","outcomeBadge":"Vista Previa del Resultado","outcomeStandard":"Criterio de Inspección","checklistTitle":"Lista de Materiales Esenciales (Recoger de Inmediato)","checklistDesc":"Materiales naturales o chatarra urbana recolectables en campo. Toque cada elemento para registrar su estado.","itemsSecured":"Asegurados","fieldTested":"[PROBADO EN CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EJECUCIÓN (PROCEDURE)","stepsFlow":"Flujo de Pasos","fatalTitle":"PELIGRO // ADVERTENCIA DE ERROR FATAL","mustReadBeforeDrink":"LEER ANTES DE EJECUTAR","nonNegotiableRule":"[REGLA DE SUPERVIVENCIA NO NEGOCIABLE]","saveOffline":"Guardar Offline (PDF)","share":"Compartir","nextProtocol":"Siguiente:","figurePrefix":"FIG","toastCopied":"Enlace copiado al portapapeles.","toastOfflineSaved":"Descargando manual offline (PDF).","toastThemeSwitched":"Tema cambiado.","feedHeaderTitle":"[PROTOCOLO DE SUPERVIVENCIA // ARCHIVO TÁCTICO]","feedCacheActive":"Caché Local Activo (100% Operativo Sin Conexión a Internet)","feedHeroHeadline":"SOBREVIVIR AL DESASTRE","feedHeroSubtext":"Manual táctico de supervivencia en emergencias, guerra y colapso de infraestructuras urbanas. Asegure agua, fuego, calor y refugio con recursos naturales y objetos cotidianos desechados (latas, botellas, alambre). (Archivo Táctico Postapocalipsis / 100% Offline)","cat_ALL":"[TODOS]","cat_WATER":"[AGUA · ALIMENTO · CONSERVA]","cat_FIRE":"[FUEGO · REFUGIO · CALOR]","cat_SHELTER":"[FUEGO · REFUGIO · CALOR]","cat_FOOD":"[AGUA · ALIMENTO · CONSERVA]","cat_TOOLS":"[HERRAMIENTAS · EQUIPO]","cat_MATERIALS":"[MATERIALES · BIOQUÍMICA]","cat_MEDICINE":"[MEDICINA · HIGIENE]","footerCat1":"[01 FOOD] Agua · Alimento · Conserva","footerCat2":"[02 SHELTER] Fuego · Refugio · Calor","footerCat3":"[03 TOOLS] Herramientas · Equipo","footerCat4":"[04 MATERIALS] Materiales · Bioquímica","footerCat5":"[05 MEDICINE] Medicina · Higiene","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","brandLong":"[PROTOCOLO DE SUPERVIVENCIA // MANUAL DE CAMPO]","footerTrait1":"● Dependencia de Productos Industriales: 0.00%","footerTrait2":"● Operación Totalmente Desconectada (PWA)","footerTrait3":"● Acceso 100% Libre y de Dominio Público","footerCol2Title":"Confianza y Normas","footerLinkAbout":"Filosofía y Verificación (About)","footerLinkPrivacy":"Política de Privacidad","footerLinkTerms":"Términos de Uso y Descargo","footerLinkContact":"Contacto de Emergencia e Informes","footerCol3Title":"Índice de Ramas de Supervivencia","footerCol4Title":"Especificaciones y Licencia","footerPersistence":"Una sola visita guarda permanentemente todas las páginas HTML, diagramas SVG e índices en el almacenamiento local.","footerSitemapLink":"[XML SITEMAP // Índice de Motores]","footerManifestLink":"[PWA MANIFEST // Especificación de Instalación]","footerTitle":"ARCHIVO DE SUPERVIVENCIA DE CÓDIGO ABIERTO PARA LA RECONSTRUCCIÓN HUMANA.","footerDesc":"Una vez visitada, esta página se conserva permanentemente en el almacenamiento local del navegador y funciona al 100% en modo avión o apagón global.","footerLegalNotice":"[Aviso Legal y de Privacidad] Este archivo tiene fines educativos y de preparación ante emergencias. Respete las normas de seguridad y leyes locales. Solo se utilizan estadísticas anónimas (GA4/Firebase) y almacenamiento local sin recopilar datos personales.","sort_latest":"Más recientes","sort_oldest":"Más antiguos","uploadDate":"Fecha","createdPrefix":"Publicado","updatedPrefix":"Actualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Buscar protocolos, materiales, pasos... (ej. agua, fuego)","searchNoResults":"No se encontraron protocolos de supervivencia coincidentes","searchShortcutHint":"ESC Cerrar | ↑↓ Navegar | Tab Categoría | Enter Abrir","searchBadge":"BÚSQUEDA 100% OFFLINE EN MEMORIA","searchResultsCount":"encontrados","searchPrompt":"Seleccione una categoría arriba o busque técnicas, materiales o palabras clave...","crosslinkMaterialsPrefix":"Materiales: ","crosslinkCta":"ABRIR ↗","viewsPrefix":"VISTAS","confirmSurvival":"CONFIRMAR SUPERVIVENCIA","toastLiked":"Protocolo de supervivencia validado.","toastUnliked":"Validación retirada.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[RESOLUCIONES LISTAS]","faqHeadline":"Resolución de Problemas en el Campo y Preguntas Frecuentes","faqSubtext":"Medidas tácticas inmediatas para lluvia imprevista, viento, turbidez o fallos mecánicos.","faqExpandText":"[ + DESPLEGAR ]","faqCollapseText":"[ - PLEGAR ]","faqCauseLabel":"[DIAGNÓSTICO]:","faqResolutionLabel":"RESOLUCIÓN TÁCTICA // ACCIÓN INMEDIATA","commentSectionTitle":"Comentarios de Supervivientes","commentFeedBadge":"Feed Global 7 Idiomas · Auto-Traducción","commentPlaceholder":"Comparte consejos de campo, materiales alternativos o preguntas... (URLs y anuncios bloqueados)","commentDefaultNickname":"Superviviente","commentNicknameAria":"Apodo","commentPinAria":"PIN de 4 dígitos para editar/eliminar","commentSubmitBtn":"Publicar","commentReplyBtn":"Responder","commentTranslateBtn":"Traducir","commentTranslateHideBtn":"Ocultar traducción","commentTranslating":"Traduciendo...","commentTranslatedBadge":"Traducido","commentEditBtn":"Editar","commentDeleteBtn":"Eliminar","commentReportBtn":"Reportar","commentCancelBtn":"Cancelar","commentConfirmBtn":"Confirmar","commentSaveBtn":"Guardar","commentEmptyState":"Sé el primero en compartir un consejo de campo o material alternativo.","commentOfflineNotice":"Modo sin conexión: Mostrando comentarios guardados.","commentJustNow":"Ahora mismo","commentMinutesAgo":"min","commentHoursAgo":"h","commentDaysAgo":"d","commentEditedTag":"(editado)","commentBlindedMsg":"Este comentario ha sido ocultado por múltiples reportes de la comunidad.","commentErrLength":"Ingrese entre 2 y 300 caracteres.","commentErrPin":"Ingrese un PIN numérico de 4 dígitos.","commentErrSpam":"Los enlaces externos (URLs) y palabras de spam están bloqueados.","commentErrCooldown":"Espere un momento antes de publicar de nuevo.","commentErrWrongPin":"PIN incorrecto o dispositivo de creación diferente.","commentToastPosted":"Comentario publicado.","commentToastUpdated":"Comentario actualizado.","commentToastDeleted":"Comentario eliminado.","commentToastReported":"Reporte enviado."},"de":{"brandArchive":"TAKTIK-ÜBERLEBENSARCHIV","brandShort":"[PROTOKOLL]","offlineDb":"OFFLINE-DB","offlineBanner":"⚡ [NETZWERK GETRENNT] Betrieb über lokalen Offline-Notfall-Cache","backToIndex":"← Alle Protokolle","allProtocols":"Protokoll-Index","readingTime":"Lesezeit: 30 Sek","timeRequired":"Dauer","successRate":"Überlebensrate","difficulty":"Schwierigkeitsgrad","outputPerHour":"Leistung / Stunde","outcomeTitle":"Endergebnis & Zielaufbau","outcomeBadge":"Vorschau des Endergebnisses","outcomeStandard":"Prüf- und Abnahmekriterien","checklistTitle":"Material-Checkliste (Sofort sammeln)","checklistDesc":"Im Feld verfügbare Naturmaterialien oder verwertbare Reststoffe. Tippen Sie auf jedes Element.","itemsSecured":"Gesichert","fieldTested":"[FELDERPROBT]","procedureTitle":"// AUSFÜHRUNGSVERFAHREN (PROCEDURE)","stepsFlow":"Schritte","fatalTitle":"GEFAHR // TÖDLICHE FEHLERWARNUNG","mustReadBeforeDrink":"VOR AUSFÜHRUNG LESEN","nonNegotiableRule":"[UNVERHANDELBARE REGEL]","saveOffline":"Offline speichern (PDF)","share":"Teilen","nextProtocol":"Weiter:","figurePrefix":"ABB","toastCopied":"Link in die Zwischenablage kopiert.","toastOfflineSaved":"Offline-Handbuch wird heruntergeladen (PDF).","toastThemeSwitched":"Design umgeschaltet.","feedHeaderTitle":"[ÜBERLEBENSPROTOKOLL // SURVIVAL PROTOCOL]","feedCacheActive":"Lokaler Offline-Cache Aktiv (100% Funktionsfähig Ohne Internet)","feedHeroHeadline":"KATASTROPHEN ÜBERLEBEN","feedHeroSubtext":"Praxisnahes Überlebenshandbuch für den Ernstfall, Krieg, Stromausfälle und Infrastrukturkollaps. Techniken zur Gewinnung von Wasser, Feuer, Wärme und Schutz unter Nutzung von Naturressourcen und Zivilisationsschrott (Dosen, PET-Flaschen, Draht). (Postapokalyptisches Überlebensarchiv / 100% Offline)","cat_ALL":"[ALLE]","cat_WATER":"[WASSER · NAHRUNG · LAGER]","cat_FIRE":"[FEUER · SCHUTZ · WÄRME]","cat_SHELTER":"[FEUER · SCHUTZ · WÄRME]","cat_FOOD":"[WASSER · NAHRUNG · LAGER]","cat_TOOLS":"[WERKZEUG · KLEIDUNG]","cat_MATERIALS":"[ROHSTOFFE · NATURCHEMIE]","cat_MEDICINE":"[MEDIZIN · HYGIENE · SCHUTZ]","footerCat1":"[01 FOOD] Wasser · Nahrung · Lager","footerCat2":"[02 SHELTER] Feuer · Schutz · Wärme","footerCat3":"[03 TOOLS] Werkzeug · Kleidung","footerCat4":"[04 MATERIALS] Rohstoffe · Naturchemie","footerCat5":"[05 MEDICINE] Medizin · Hygiene · Schutz","threat_CRITICAL":"[KRITISCH]","threat_HIGH":"[ESSENZIELL]","threat_MODERATE":"[BASIS]","threat_LOW":"[BASIS]","readProtocolBtn":"[HANDBUCH ÖFFNEN →]","paginationRecordPrefix":"EINTRÄGE","paginationTotalPrefix":"/ GESAMT","paginationTotalSuffix":"","brandLong":"[ÜBERLEBENSPROTOKOLL // FELDMANDAT]","footerTrait1":"● Abhängigkeit von Industrieprodukten: 0.00%","footerTrait2":"● 100% Offline-Betrieb garantiert (PWA)","footerTrait3":"● 100% Freier Gemeinfreier Zugang","footerCol2Title":"Vertrauen & Richtlinien","footerLinkAbout":"Philosophie & Verifizierung (About)","footerLinkPrivacy":"Datenschutzerklärung (Privacy)","footerLinkTerms":"Nutzungsbedingungen & Haftung","footerLinkContact":"Notfallkontakt & Fehlerberichte","footerCol3Title":"Überlebenssparten-Index","footerCol4Title":"Technische Daten & Lizenz","footerPersistence":"Ein einziger Besuch sichert alle HTML-Seiten, SVG-Baupläne und den Suchindex dauerhaft im lokalen Speicher.","footerSitemapLink":"[XML SITEMAP // Suchmaschinenindex]","footerManifestLink":"[PWA MANIFEST // App-Installationsspezifikation]","footerTitle":"KOSTENLOSES OPEN-SOURCE-ÜBERLEBENSARCHIV FÜR DEN WIEDERAUFBAU DER ZIVILISATION.","footerDesc":"Nach dem ersten Aufruf wird diese Seite dauerhaft im lokalen Browser-Speicher gesichert und funktioniert im Flugmodus oder bei Netzausfall zu 100%.","footerLegalNotice":"[Sicherheitshinweis & Datenschutz] Dieses Archiv dient der Katastrophenvorsorge und Bildungszwecken. Beachten Sie Sicherheitsvorschriften und lokale Gesetze. Es werden nur anonyme Statistiken (GA4/Firebase) und lokaler Speicher ohne personenbezogene Daten verwendet.","sort_latest":"Neueste","sort_oldest":"Älteste","uploadDate":"Datum","createdPrefix":"Erstellt","updatedPrefix":"Aktualisiert","searchBtn":"[SUCHE]","searchPlaceholder":"Protokolle, Materialien, Schritte suchen... (z.B. Wasser, Feuer)","searchNoResults":"Keine passenden Überlebensprotokolle gefunden","searchShortcutHint":"ESC Schließen | ↑↓ Navigieren | Tab Kategorie | Enter Öffnen","searchBadge":"100% OFFLINE-SPEICHERSUCHE","searchResultsCount":"gefunden","searchPrompt":"Kategorie oben wählen oder Überlebensfähigkeiten, Materialien oder Stichwörter eingeben...","crosslinkMaterialsPrefix":"Material: ","crosslinkCta":"ÖFFNEN ↗","viewsPrefix":"AUFRUFE","confirmSurvival":"ÜBERLEBEN BESTÄTIGT","toastLiked":"Überlebensprotokoll bestätigt.","toastUnliked":"Bestätigung zurückgezogen.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[LÖSUNGEN BEREIT]","faqHeadline":"Feld-Fehlerbehebung & Notfall-FAQ","faqSubtext":"Sofortige taktische Gegenmaßnahmen bei plötzlichem Regen, Wind, Trübung oder lockeren Teilen.","faqExpandText":"[ + AUSKLAPPEN ]","faqCollapseText":"[ - EINKLAPPEN ]","faqCauseLabel":"[URSACHENDIAGNOSE]:","faqResolutionLabel":"TAKTIK-LÖSUNG // SOFORTMASSNAHME","commentSectionTitle":"Überlebenden-Feedback","commentFeedBadge":"Globaler 7-Sprachen-Feed · Auto-Übersetzung","commentPlaceholder":"Teilen Sie Praxistipps, Materialalternativen oder Fragen... (URLs & Werbung werden blockiert)","commentDefaultNickname":"Überlebender","commentNicknameAria":"Spitzname","commentPinAria":"4-stellige PIN zum Bearbeiten/Löschen","commentSubmitBtn":"Senden","commentReplyBtn":"Antworten","commentTranslateBtn":"Übersetzen","commentTranslateHideBtn":"Übersetzung ausblenden","commentTranslating":"Übersetze...","commentTranslatedBadge":"Übersetzt","commentEditBtn":"Bearbeiten","commentDeleteBtn":"Löschen","commentReportBtn":"Melden","commentCancelBtn":"Abbrechen","commentConfirmBtn":"Bestätigen","commentSaveBtn":"Speichern","commentEmptyState":"Teilen Sie als Erster einen Praxistipp oder eine Materialalternative.","commentOfflineNotice":"Offline-Modus: Gespeichertes Feedback wird angezeigt.","commentJustNow":"Gerade eben","commentMinutesAgo":"Min.","commentHoursAgo":"Std.","commentDaysAgo":"T.","commentEditedTag":"(bearbeitet)","commentBlindedMsg":"Dieser Kommentar wurde aufgrund mehrerer Community-Meldungen ausgeblendet.","commentErrLength":"Bitte zwischen 2 und 300 Zeichen eingeben.","commentErrPin":"Bitte eine 4-stellige Zahlen-PIN eingeben.","commentErrSpam":"Externe Links (URLs) und Spam-Begriffe sind sicherheitshalber blockiert.","commentErrCooldown":"Bitte warten Sie einen Moment vor dem nächsten Beitrag.","commentErrWrongPin":"Falsche PIN oder anderes Erstellungsgerät.","commentToastPosted":"Feedback veröffentlicht.","commentToastUpdated":"Feedback aktualisiert.","commentToastDeleted":"Feedback gelöscht.","commentToastReported":"Meldung gesendet."},"pt":{"brandArchive":"ARQUIVO DE SOBREVIVÊNCIA TÁCTICA","brandShort":"[PROTOCOLO]","offlineDb":"BD OFFLINE","offlineBanner":"⚡ [REDE DESCONECTADA] Operando via Cache Tático Local Offline","backToIndex":"← Todos os Protocolos","allProtocols":"Índice Geral","readingTime":"Leitura: 30 seg","timeRequired":"Tempo Necessário","successRate":"Taxa de Sobrevivência","difficulty":"Dificuldade","outputPerHour":"Produção / Hora","outcomeTitle":"Resultado Final do Objetivo","outcomeBadge":"Prévia do Resultado em Campo","outcomeStandard":"Critério de Inspeção","checklistTitle":"Checklist de Materiais Esenciais (Coletar Imediatamente)","checklistDesc":"Materiais naturais ou sucata urbana disponíveis em campo. Toque em cada item para registrar.","itemsSecured":"Garantidos","fieldTested":"[TESTADO EM CAMPO]","procedureTitle":"// PROCEDIMIENTO DE EXECUÇÃO (PROCEDURE)","stepsFlow":"Etapas","fatalTitle":"PERIGO // ALERTA DE ERRO FATAL","mustReadBeforeDrink":"LEIA ANTES DE EXECUTAR","nonNegotiableRule":"[REGRA INEGOCIÁVEL]","saveOffline":"Salvar Offline (PDF)","share":"Compartilhar","nextProtocol":"Próximo:","figurePrefix":"FIG","toastCopied":"Link copiado.","toastOfflineSaved":"Baixando manual offline (PDF).","toastThemeSwitched":"Tema alterado.","feedHeaderTitle":"[PROTOCOLO DE SOBREVIVÊNCIA // ARQUIVO TÁTICO]","feedCacheActive":"Cache Local Ativo (100% Operacional Sem Internet)","feedHeroHeadline":"SOBREVIVENDO A DESASTRES","feedHeroSubtext":"Manual tático de sobrevivência para situações de desastre, guerra e colapso de serviços essenciais. Garanta água, fogo, abrigo e ferramentas com recursos naturais e sucata cotidiana abandonada (latas, garrafas PET, arames). (Arquivo de Sobrevivência Pós-Apocalipse / 100% Offline)","cat_ALL":"[TODOS]","cat_WATER":"[ÁGUA · ALIMENTO · CONSERVA]","cat_FIRE":"[FOGO · ABRIGO · CALOR]","cat_SHELTER":"[FOGO · ABRIGO · CALOR]","cat_FOOD":"[ÁGUA · ALIMENTO · CONSERVA]","cat_TOOLS":"[FERRAMENTAS · EQUIPAMENTO]","cat_MATERIALS":"[MATERIAIS · BIOQUÍMICA]","cat_MEDICINE":"[MEDICINA · HIGIENE]","footerCat1":"[01 FOOD] Água · Alimento · Conserva","footerCat2":"[02 SHELTER] Fogo · Abrigo · Calor","footerCat3":"[03 TOOLS] Ferramentas · Equipamento","footerCat4":"[04 MATERIALS] Materiais · Bioquímica","footerCat5":"[05 MEDICINE] Medicina · Higiene","threat_CRITICAL":"[CRÍTICO]","threat_HIGH":"[ESSENCIAL]","threat_MODERATE":"[BÁSICO]","threat_LOW":"[BÁSICO]","readProtocolBtn":"[ABRIR MANUAL →]","paginationRecordPrefix":"REGISTROS","paginationTotalPrefix":"/ TOTAL","paginationTotalSuffix":"","brandLong":"[PROTOCOLO DE SOBREVIVÊNCIA // MANUAL DE CAMPO]","footerTrait1":"● Dependência de Produtos Industriais: 0.00%","footerTrait2":"● Operação 100% Offline Garantida (PWA)","footerTrait3":"● Acesso 100% Livre e de Domínio Público","footerCol2Title":"Confiabilidade e Normas","footerLinkAbout":"Filosofia e Verificação (About)","footerLinkPrivacy":"Política de Privacidade","footerLinkTerms":"Termos de Uso e Isenção","footerLinkContact":"Contato de Emergência e Relatos","footerCol3Title":"Índice de Ramos de Sobrevivência","footerCol4Title":"Especificações e Licença","footerPersistence":"Uma única visita armazena permanentemente todas as páginas HTML, diagramas SVG e índices no navegador.","footerSitemapLink":"[XML SITEMAP // Índice de Busca]","footerManifestLink":"[PWA MANIFEST // Especificação de Instalação]","footerTitle":"ARQUIVO DE SOBREVIVÊNCIA OPEN-SOURCE PARA A RECONSTRUÇÃO DA CIVILIZAÇÃO.","footerDesc":"Uma vez visitada, esta página é preservada permanentemente no armazenamento local do navegador e funciona 100% em modo avião ou apagão global.","footerLegalNotice":"[Aviso de Segurança e Privacidade] Este arquivo destina-se à preparação para emergências e fins educativos. Respeite as normas de segurança e leis locais. Apenas estatísticas anônimas (GA4/Firebase) e armazenamento local são usados sem coleta de dados pessoais.","sort_latest":"Mais recentes","sort_oldest":"Mais antigos","uploadDate":"Data","createdPrefix":"Criado","updatedPrefix":"Atualizado","searchBtn":"[BUSCAR]","searchPlaceholder":"Pesquisar protocolos, materiais, etapas... (ex: água, fogo)","searchNoResults":"Nenhum protocolo de sobrevivência encontrado","searchShortcutHint":"ESC Fechar | ↑↓ Navegar | Tab Categoria | Enter Abrir","searchBadge":"BUSCA 100% OFFLINE EM MEMÓRIA","searchResultsCount":"encontrados","searchPrompt":"Selecione uma categoria acima ou pesquise técnicas, materiais ou palavras-chave...","crosslinkMaterialsPrefix":"Materiais: ","crosslinkCta":"ABRIR ↗","viewsPrefix":"VISUALIZAÇÕES","confirmSurvival":"CONFIRMAR SOBREVIVÊNCIA","toastLiked":"Protocolo de sobrevivência validado.","toastUnliked":"Validação retirada.","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[RESOLUÇÕES PRONTAS]","faqHeadline":"Resolução de Problemas de Campo e Perguntas Frecuentes","faqSubtext":"Contramedidas táticas imediatas para chuva inesperada, vento, turbidez ou afrouxamento estrutural.","faqExpandText":"[ + EXPANDIR ]","faqCollapseText":"[ - RECOLHER ]","faqCauseLabel":"[DIAGNÓSTICO]:","faqResolutionLabel":"RESOLUÇÃO TÁCTICA // AÇÃO IMEDIATA","commentSectionTitle":"Feedback de Sobreviventes","commentFeedBadge":"Feed Global 7 Idiomas · Tradução Auto","commentPlaceholder":"Compartilhe dicas de campo, materiais alternativos ou dúvidas... (URLs e anúncios bloqueados)","commentDefaultNickname":"Sobrevivente","commentNicknameAria":"Apelido","commentPinAria":"PIN de 4 dígitos para editar/excluir","commentSubmitBtn":"Publicar","commentReplyBtn":"Responder","commentTranslateBtn":"Traduzir","commentTranslateHideBtn":"Ocultar tradução","commentTranslating":"Traduzindo...","commentTranslatedBadge":"Traduzido","commentEditBtn":"Editar","commentDeleteBtn":"Excluir","commentReportBtn":"Denunciar","commentCancelBtn":"Cancelar","commentConfirmBtn":"Confirmar","commentSaveBtn":"Salvar","commentEmptyState":"Seja o primeiro a compartilhar uma dica de campo ou material alternativo.","commentOfflineNotice":"Modo offline: Exibindo comentários salvos.","commentJustNow":"Agora mesmo","commentMinutesAgo":"min","commentHoursAgo":"h","commentDaysAgo":"d","commentEditedTag":"(editado)","commentBlindedMsg":"Este comentário foi ocultado devido a várias denúncias da comunidade.","commentErrLength":"Digite entre 2 e 300 caracteres.","commentErrPin":"Digite um PIN numérico de 4 dígitos.","commentErrSpam":"Links externos (URLs) e palavras de spam são bloqueados.","commentErrCooldown":"Aguarde um momento antes de publicar novamente.","commentErrWrongPin":"PIN incorreto ou dispositivo de criação diferente.","commentToastPosted":"Comentário publicado.","commentToastUpdated":"Comentário atualizado.","commentToastDeleted":"Comentário excluído.","commentToastReported":"Denúncia enviada."},"zh-TW":{"brandArchive":"生存戰術手冊檔案庫","brandShort":"[生存手冊]","offlineDb":"離線數據庫","offlineBanner":"⚡ [偵測到通訊中斷] 外部網路斷線 // 目前以本地離線快取手冊運作中","backToIndex":"← 所有手冊目錄","allProtocols":"手冊總目錄","readingTime":"閱讀時間：30秒","timeRequired":"所需時間","successRate":"生存率/成功率","difficulty":"技術難度","outputPerHour":"每小時產量","outcomeTitle":"最終完成成果","outcomeBadge":"實戰完成預覽","outcomeStandard":"實戰驗收標準","checklistTitle":"必備物資清單（立即收集）","checklistDesc":"野戰環境中可取得的天然物資或廢棄都市材料。請點擊已備妥的項目以記錄收集狀態。","itemsSecured":"已確保","fieldTested":"[實戰檢驗完成]","procedureTitle":"// 執行程序標準 (PROCEDURE)","stepsFlow":"步驟進行","fatalTitle":"危險 // 致命錯誤警告","mustReadBeforeDrink":"執行前必讀","nonNegotiableRule":"[不可妥協的絕對法則]","saveOffline":"離線保存 (A4/PDF)","share":"分享","nextProtocol":"下一篇：","figurePrefix":"圖","toastCopied":"協議連結已複製至剪貼簿。","toastOfflineSaved":"離線手冊下載中 (A4/PDF)。","toastThemeSwitched":"主題已切換。","feedHeaderTitle":"[生存手冊 // SURVIVAL PROTOCOL]","feedCacheActive":"本地離線快取已啟用（網路中斷時仍可100%離線調閱）","feedHeroHeadline":"在災難中生存","feedHeroSubtext":"面對電網癱瘓、斷水斷電、戰爭與城市崩潰的實戰應急求生手冊。利用廢棄生活物資（空罐、寶特瓶、塑膠袋）與自然材料解決飲水、生火、取暖、應急烹飪與防護需求。（後末日戰術求生檔案 / 100% 離線可用）","cat_ALL":"[全部]","cat_WATER":"[飲水·糧食·保存]","cat_FIRE":"[生火·庇護·保溫]","cat_SHELTER":"[生火·庇護·保溫]","cat_FOOD":"[飲水·糧食·保存]","cat_TOOLS":"[工具·衣物·工藝]","cat_MATERIALS":"[素材·天然化學]","cat_MEDICINE":"[醫藥·衛生·防護]","footerCat1":"[01 FOOD] 飲水·糧食·保存","footerCat2":"[02 SHELTER] 生火·庇護·保溫","footerCat3":"[03 TOOLS] 工具·衣物·工藝","footerCat4":"[04 MATERIALS] 素材·天然化學","footerCat5":"[05 MEDICINE] 醫藥·衛生·防護","threat_CRITICAL":"[致命級]","threat_HIGH":"[必備級]","threat_MODERATE":"[基礎技術]","threat_LOW":"[基礎技術]","readProtocolBtn":"[調閱手冊 →]","paginationRecordPrefix":"紀錄","paginationTotalPrefix":"/ 共","paginationTotalSuffix":"篇","brandLong":"[生存教範 // SURVIVAL PROTOCOL]","footerTrait1":"● 現代工業品依賴度：0.00%","footerTrait2":"● 離線單機運作保證 (PWA)","footerTrait3":"● 100% 免費公共領域開放","footerCol2Title":"信任與規範","footerLinkAbout":"專案理念與驗證體系 (About)","footerLinkPrivacy":"隱私權政策 (Privacy Policy)","footerLinkTerms":"使用條款與免責聲明 (Terms)","footerLinkContact":"緊急通訊與技術通報 (Contact)","footerCol3Title":"生存分科索引","footerCol4Title":"技術規格與授權","footerPersistence":"造訪一次即可將所有 HTML 頁面、SVG 圖面與搜尋索引永久保存於瀏覽器本地空間。","footerSitemapLink":"[XML SITEMAP // 搜尋引擎索引]","footerManifestLink":"[PWA MANIFEST // 應用程式安裝規格]","footerTitle":"為重建人類文明而設的免費開源生存檔案庫。","footerDesc":"本網頁一旦造訪即永久保存於瀏覽器本地儲存空間，即使處於飛航模式或全球通訊網路中斷狀態下仍可100%運作。","footerLegalNotice":"[安全免責與隱私聲明] 本手冊僅供災難應變與教育目的使用，平時演練請遵守用火、防毒、安全規範與當地法規。本網站僅使用去識別化匿名統計(GA4/Firebase)與本地儲存空間，不收集任何個人資料。","sort_latest":"最新發布","sort_oldest":"最早發布","uploadDate":"發布日期","createdPrefix":"發布","updatedPrefix":"最後更新","searchBtn":"[搜尋]","searchPlaceholder":"搜尋生存手冊、物資、步驟... (如: 飲水, 生火, 陷阱)","searchNoResults":"查無相符的生存手冊","searchShortcutHint":"ESC 關閉 | ↑↓ 移動 | Tab 分類 | Enter 開啟","searchBadge":"100% 離線內存即時搜尋","searchResultsCount":"篇查獲","searchPrompt":"請點選上方分類標籤，或輸入生存技能、工具、材料與關鍵字進行搜尋...","crosslinkMaterialsPrefix":"準備材料: ","crosslinkCta":"查看 ↗","viewsPrefix":"瀏覽","confirmSurvival":"確認生存","toastLiked":"已確認生存技術實用性。","toastUnliked":"已取消確認。","faqSectionTitle":"// 05 FIELD TROUBLESHOOTING & FAQ","faqBadgeSchema":"[SCHEMA.ORG FAQPAGE]","faqBadgeStatus":"[處置方案已就緒]","faqHeadline":"野戰故障排除與應急問答","faqSubtext":"針對突降暴雨、強風、過濾水混濁或結構鬆脫時的即時應對處置方案。","faqExpandText":"[ + 展開 ]","faqCollapseText":"[ - 摺疊 ]","faqCauseLabel":"[原因診斷]:","faqResolutionLabel":"戰術應對 // 現場即時處置","commentSectionTitle":"倖存者回饋","commentFeedBadge":"7語整合動態 · 自動翻譯","commentPlaceholder":"分享現場應用技巧、替代材料心得或提問... (外部連結與廣告將自動封鎖)","commentDefaultNickname":"倖存者","commentNicknameAria":"暱稱","commentPinAria":"編輯與刪除用 4 位數 PIN 碼","commentSubmitBtn":"發佈","commentReplyBtn":"回覆","commentTranslateBtn":"查看翻譯","commentTranslateHideBtn":"隱藏翻譯","commentTranslating":"翻譯中...","commentTranslatedBadge":"已翻譯","commentEditBtn":"編輯","commentDeleteBtn":"刪除","commentReportBtn":"檢舉","commentCancelBtn":"取消","commentConfirmBtn":"確認","commentSaveBtn":"儲存","commentEmptyState":"成為第一個分享現場技巧或替代材料心得的人。","commentOfflineNotice":"離線模式：僅顯示快取的回饋內容。","commentJustNow":"剛剛","commentMinutesAgo":"分鐘前","commentHoursAgo":"小時前","commentDaysAgo":"天前","commentEditedTag":"(已編輯)","commentBlindedMsg":"此留言因多次社群檢舉已被自動隱藏。","commentErrLength":"請輸入 2 至 300 個字元的留言內容。","commentErrPin":"請輸入 4 位數字 PIN 碼。","commentErrSpam":"根據安全政策，禁止包含外部連結 (URL) 與廣告關鍵字。","commentErrCooldown":"為防止洗版，請稍後再試。","commentErrWrongPin":"PIN 碼不符或非原發文裝置。","commentToastPosted":"回饋已發佈。","commentToastUpdated":"回饋已更新。","commentToastDeleted":"回饋已刪除。","commentToastReported":"已收到檢舉。"}};
 
     /**
      * W3C 표준 브라우저 헤더 및 환경 감지 (URL -> localStorage -> navigator.language -> 기본값)
@@ -2309,8 +2434,10 @@
             : 'px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white';
         });
 
-        // 7. 체크리스트 카운터 실시간 재연산
+        // 7. 체크리스트 카운터 및 댓글 다국어 피드 실시간 재연산
         if (typeof updateChecklist === 'function') updateChecklist();
+        if (typeof window.__refreshCommentLocale__ === 'function') window.__refreshCommentLocale__(targetLocale);
+
 
         // 8. 내부 네비게이션 링크(메인 복귀, 다음 프로토콜) 언어 파라미터 동기화
         document.querySelectorAll('a[href^="/"]').forEach(function(link) {
@@ -3554,6 +3681,963 @@
           })(protocolId);
         }
       }
+    })();
+    (function () {
+      if (typeof window === 'undefined') return;
+
+      var config = {"apiKey":"AIzaSyBcRHzAgxRGSoZ_8yxgNRnKrJwUzgHjmxs","authDomain":"zozero94-462fc.firebaseapp.com","databaseURL":"https://zozero94-462fc-default-rtdb.firebaseio.com","projectId":"zozero94-462fc","storageBucket":"zozero94-462fc.firebasestorage.app","messagingSenderId":"813038880669","appId":"1:813038880669:web:c62941cc79cae32be7d174","measurementId":"G-FJLCKRXCT1","disabled":false};
+      var VALID_PID_RE = /^PR-[0-9]{2,4}$/;
+      var rawPid = window.__PROTOCOL_ID__;
+      var pid = (typeof rawPid === 'string' && VALID_PID_RE.test(rawPid)) ? rawPid : null;
+      if (!pid) return;
+
+      var sectionEl = document.getElementById('comment-section');
+      if (!sectionEl) return;
+
+      // ─── 0. Safe Storage & Session Cache Helpers ───
+      var safeStorage = {
+        getItem: function (k) {
+          try { return localStorage.getItem(k); } catch (e) { return null; }
+        },
+        setItem: function (k, v) {
+          try { localStorage.setItem(k, v); return true; } catch (e) { return false; }
+        },
+        removeItem: function (k) {
+          try { localStorage.removeItem(k); return true; } catch (e) { return false; }
+        }
+      };
+
+      var safeSession = {
+        getItem: function (k) {
+          try { return sessionStorage.getItem(k); } catch (e) { return null; }
+        },
+        setItem: function (k, v) {
+          try { sessionStorage.setItem(k, v); return true; } catch (e) { return false; }
+        }
+      };
+
+      function getActiveLang() {
+        return document.documentElement.getAttribute('lang') || 'ko';
+      }
+
+      function getUi() {
+        var lang = getActiveLang();
+        return (window.__UI_STRINGS__ && window.__UI_STRINGS__[lang]) ||
+               (window.__UI_STRINGS__ && window.__UI_STRINGS__['ko']) || {};
+      }
+
+      function escapeHtmlClient(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      // ─── 1. FIPS 180-4 Pure-JS SHA-256 (동기 64자 Hex 해시 / Web Crypto 비지원 환경 100% 호환) ───
+      function utf8ToBytes(str) {
+        var utf8 = unescape(encodeURIComponent(String(str)));
+        var arr = [];
+        for (var i = 0; i < utf8.length; i++) {
+          arr.push(utf8.charCodeAt(i));
+        }
+        return arr;
+      }
+
+      function sha256Hex(message) {
+        var K = [
+          0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
+          0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3, 0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
+          0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+          0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
+          0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13, 0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
+          0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+          0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
+          0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2
+        ];
+        var H = [
+          0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
+          0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19
+        ];
+        var bytes = utf8ToBytes(message);
+        var bitLen = bytes.length * 8;
+        bytes.push(0x80);
+        while ((bytes.length % 64) !== 56) bytes.push(0);
+        var hi = Math.floor(bitLen / 0x100000000);
+        var lo = bitLen >>> 0;
+        for (var b = 3; b >= 0; b--) bytes.push((hi >>> (b * 8)) & 0xff);
+        for (var b2 = 3; b2 >= 0; b2--) bytes.push((lo >>> (b2 * 8)) & 0xff);
+
+        var W = new Array(64);
+        function rotr(n, x) { return (x >>> n) | (x << (32 - n)); }
+
+        for (var i = 0; i < bytes.length; i += 64) {
+          for (var t = 0; t < 16; t++) {
+            var idx = i + t * 4;
+            W[t] = ((bytes[idx] << 24) | (bytes[idx + 1] << 16) | (bytes[idx + 2] << 8) | bytes[idx + 3]) >>> 0;
+          }
+          for (var t2 = 16; t2 < 64; t2++) {
+            var s0 = (rotr(7, W[t2 - 15]) ^ rotr(18, W[t2 - 15]) ^ (W[t2 - 15] >>> 3)) >>> 0;
+            var s1 = (rotr(17, W[t2 - 2]) ^ rotr(19, W[t2 - 2]) ^ (W[t2 - 2] >>> 10)) >>> 0;
+            W[t2] = (W[t2 - 16] + s0 + W[t2 - 7] + s1) >>> 0;
+          }
+          var a = H[0], bVar = H[1], c = H[2], d = H[3], e = H[4], f = H[5], g = H[6], h = H[7];
+          for (var t3 = 0; t3 < 64; t3++) {
+            var S1 = (rotr(6, e) ^ rotr(11, e) ^ rotr(25, e)) >>> 0;
+            var ch = ((e & f) ^ (~e & g)) >>> 0;
+            var temp1 = (h + S1 + ch + K[t3] + W[t3]) >>> 0;
+            var S0 = (rotr(2, a) ^ rotr(13, a) ^ rotr(22, a)) >>> 0;
+            var maj = ((a & bVar) ^ (a & c) ^ (bVar & c)) >>> 0;
+            var temp2 = (S0 + maj) >>> 0;
+            h = g; g = f; f = e; e = (d + temp1) >>> 0;
+            d = c; c = bVar; bVar = a; a = (temp1 + temp2) >>> 0;
+          }
+          H[0] = (H[0] + a) >>> 0;
+          H[1] = (H[1] + bVar) >>> 0;
+          H[2] = (H[2] + c) >>> 0;
+          H[3] = (H[3] + d) >>> 0;
+          H[4] = (H[4] + e) >>> 0;
+          H[5] = (H[5] + f) >>> 0;
+          H[6] = (H[6] + g) >>> 0;
+          H[7] = (H[7] + h) >>> 0;
+        }
+        var hex = '';
+        for (var hIdx = 0; hIdx < 8; hIdx++) {
+          var part = H[hIdx].toString(16);
+          while (part.length < 8) part = '0' + part;
+          hex += part;
+        }
+        return hex;
+      }
+
+      // ─── 2. Device Secret Token (256-bit) & 2-Factor PIN Hash ───
+      var DEVICE_TOKEN_KEY = 'ps_comment_device_token';
+      function getOrCreateDeviceToken() {
+        var existing = safeStorage.getItem(DEVICE_TOKEN_KEY);
+        if (existing && /^[a-f0-9]{64}$/.test(existing)) return existing;
+        var token = '';
+        if (window.crypto && typeof window.crypto.getRandomValues === 'function') {
+          var buf = new Uint8Array(32);
+          window.crypto.getRandomValues(buf);
+          for (var i = 0; i < buf.length; i++) {
+            var hx = buf[i].toString(16);
+            token += (hx.length < 2 ? '0' + hx : hx);
+          }
+        } else {
+          token = sha256Hex(String(Date.now()) + ':' + String(Math.random()) + ':' + navigator.userAgent);
+        }
+        safeStorage.setItem(DEVICE_TOKEN_KEY, token);
+        return token;
+      }
+
+      function computePinHash(commentId, pin) {
+        var deviceToken = getOrCreateDeviceToken();
+        return sha256Hex(pid + ':' + commentId + ':' + deviceToken + ':' + String(pin).trim());
+      }
+
+      // ─── 3. Anti-Spam & URL / Casino / Ad Filter ───
+      var SPAM_RAW_RE = /(https?:\/\/|www\.|[a-z0-9-]+\.(com|net|org|kr|io|me|gg|xyz|ly|gl|co|shop|site|club|vip|top|bet)\b|t\.me\/|bit\.ly\/|010-\d{3,4}-\d{4}|카지노|바카라|토토|슬롯|성인용품|조건만남|출장마사지|대출|작업대출|텔레그램|오픈카톡|유튜브\s*구독|무료\s*수익|코인가격|카톡\s*문의)/i;
+      var SPAM_COMPACT_RE = /(https?:\/\/|www\.|카지노|바카라|사설토토|성인용품|조건만남|출장마사지|작업대출|텔레그램|오픈카톡|무료수익)/i;
+
+      function containsSpamOrUrl(text) {
+        if (!text) return false;
+        var cleaned = String(text).replace(/[\u200B-\u200D\uFEFF]/g, '');
+        if (SPAM_RAW_RE.test(cleaned)) return true;
+        var compact = cleaned.replace(/[\s\._\-]+/g, '');
+        if (SPAM_COMPACT_RE.test(compact)) return true;
+        return false;
+      }
+
+      // ─── 4. State & Local Cache Management ───
+      var CACHE_KEY = 'ps_comments_cache_' + pid;
+      var NICK_KEY = 'ps_comment_nick';
+      var LAST_POST_KEY = 'ps_comment_last_post_ts';
+      var POST_COOLDOWN_MS = 15000;
+      var BLIND_REPORT_THRESHOLD = 3;
+
+      var state = {
+        commentsMap: {},
+        localSecrets: {},
+        translations: {},
+        openReplyId: null,
+        openPinTarget: null, // { id: string, mode: 'edit' | 'delete' }
+        editingId: null,
+        remoteApi: null
+      };
+
+      function loadCachedComments() {
+        var raw = safeStorage.getItem(CACHE_KEY);
+        if (!raw) return;
+        try {
+          var parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === 'object') {
+            state.commentsMap = parsed;
+          }
+        } catch (e) {}
+      }
+
+      function saveCachedComments() {
+        safeStorage.setItem(CACHE_KEY, JSON.stringify(state.commentsMap));
+      }
+
+      function formatRelativeTime(ts) {
+        var ui = getUi();
+        var diffSec = Math.max(0, Math.floor((Date.now() - Number(ts || 0)) / 1000));
+        if (diffSec < 60) return ui.commentJustNow || '방금 전';
+        var diffMin = Math.floor(diffSec / 60);
+        if (diffMin < 60) return diffMin + (ui.commentMinutesAgo || '분 전');
+        var diffHr = Math.floor(diffMin / 60);
+        if (diffHr < 24) return diffHr + (ui.commentHoursAgo || '시간 전');
+        var diffDay = Math.floor(diffHr / 24);
+        return diffDay + (ui.commentDaysAgo || '일 전');
+      }
+
+      function getAvatarSvg(nickname, isReply) {
+        var str = String(nickname || 'S');
+        var sum = 0;
+        for (var i = 0; i < str.length; i++) sum += str.charCodeAt(i);
+        var variant = sum % 4;
+        var sizeCls = isReply ? 'w-3.5 h-3.5' : 'w-4 h-4';
+        if (variant === 0) {
+          return '<svg class="' + sizeCls + ' text-zinc-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 21 7 21 17 12 22 3 17 3 7 12 2"></polygon><line x1="12" y1="22" x2="12" y2="12"></line><polyline points="21 7 12 12 3 7"></polyline></svg>';
+        } else if (variant === 1) {
+          return '<svg class="' + sizeCls + ' text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>';
+        } else if (variant === 2) {
+          return '<svg class="' + sizeCls + ' text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><polygon points="12 7 16 15 8 15 12 7"></polygon></svg>';
+        }
+        return '<svg class="' + sizeCls + ' text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="12" cy="12" r="4"></circle></svg>';
+      }
+
+      function showAlert(msg) {
+        var box = document.getElementById('comment-alert-box');
+        var txt = document.getElementById('comment-alert-text');
+        if (!box || !txt) return;
+        txt.textContent = msg;
+        box.classList.remove('hidden');
+      }
+
+      function hideAlert() {
+        var box = document.getElementById('comment-alert-box');
+        if (box) box.classList.add('hidden');
+      }
+
+      function notifyToast(msg) {
+        if (typeof window.showToast === 'function') {
+          window.showToast(msg);
+        } else {
+          var toastEl = document.getElementById('toast');
+          if (!toastEl) return;
+          toastEl.textContent = msg;
+          toastEl.classList.remove('hidden');
+          if (window.__toastTimer__) clearTimeout(window.__toastTimer__);
+          window.__toastTimer__ = setTimeout(function () {
+            toastEl.classList.add('hidden');
+          }, 2500);
+        }
+      }
+
+      // ─── 5. 1-Click Free Inline Translation Engine (Google GTX + MyMemory Fallback + Session Cache) ───
+      function translateCommentText(commentId, rawText, sourceLang, targetLang, onDone) {
+        var cacheKey = 'ps_trans_' + commentId + '_' + targetLang;
+        var cached = safeSession.getItem(cacheKey);
+        if (cached) {
+          onDone(cached);
+          return;
+        }
+        var gtxTarget = targetLang === 'zh-TW' ? 'zh-TW' : targetLang;
+        var gtxUrl = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' +
+          encodeURIComponent(gtxTarget) + '&dt=t&q=' + encodeURIComponent(rawText);
+
+        fetch(gtxUrl)
+          .then(function (res) {
+            if (!res.ok) throw new Error('GTX HTTP ' + res.status);
+            return res.json();
+          })
+          .then(function (data) {
+            var translated = '';
+            if (Array.isArray(data) && Array.isArray(data[0])) {
+              for (var i = 0; i < data[0].length; i++) {
+                if (data[0][i] && data[0][i][0]) translated += data[0][i][0];
+              }
+            }
+            if (!translated) throw new Error('Empty GTX response');
+            safeSession.setItem(cacheKey, translated);
+            onDone(translated);
+          })
+          .catch(function () {
+            // Fallback: MyMemory Free Translation API
+            var sl = (sourceLang && sourceLang !== targetLang) ? sourceLang : 'en';
+            var mmUrl = 'https://api.mymemory.translated.net/get?q=' +
+              encodeURIComponent(rawText) + '&langpair=' + encodeURIComponent(sl + '|' + gtxTarget);
+            fetch(mmUrl)
+              .then(function (r) { return r.json(); })
+              .then(function (d) {
+                var txt = (d && d.responseData && d.responseData.translatedText) ? d.responseData.translatedText : rawText;
+                safeSession.setItem(cacheKey, txt);
+                onDone(txt);
+              })
+              .catch(function () {
+                onDone(rawText);
+              });
+          });
+      }
+
+      // ─── 6. Render Comment Feed (Sleek Linear / Vercel Dark Style) ───
+      function renderCommentItemHtml(item, replies, ui) {
+        var isReply = Boolean(item.parentId);
+        var isBlinded = Number(item.reports || 0) >= BLIND_REPORT_THRESHOLD;
+        var langBadge = String(item.lang || 'ko').toUpperCase();
+        var timeLabel = formatRelativeTime(item.createdAt);
+        var isEdited = Number(item.updatedAt || 0) > Number(item.createdAt || 0) + 1000;
+        var transState = state.translations[item.id];
+        var isPinOpen = state.openPinTarget && state.openPinTarget.id === item.id;
+        var isEditing = state.editingId === item.id;
+        var isReplyOpen = !isReply && state.openReplyId === item.id;
+
+        var bodyHtml = '';
+        if (isBlinded) {
+          bodyHtml = '<p class="mt-1.5 text-xs italic text-zinc-500 select-none">' + escapeHtmlClient(ui.commentBlindedMsg || '다수의 커뮤니티 신고로 블라인드 처리된 댓글입니다.') + '</p>';
+        } else if (isEditing) {
+          bodyHtml =
+            '<div class="mt-2 rounded-xl bg-[#121215] border border-white/[0.14] p-2.5 comment-animate-in">' +
+              '<textarea id="edit-textarea-' + escapeHtmlClient(item.id) + '" rows="2" maxlength="300" class="w-full bg-transparent text-[13.5px] text-zinc-100 focus:outline-none resize-none select-text">' + escapeHtmlClient(item.content) + '</textarea>' +
+              '<div class="flex items-center justify-end gap-2 pt-2 border-t border-white/[0.06] mt-1">' +
+                '<button type="button" data-comment-action="cancel-edit" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-2.5 py-1 rounded-full text-xs text-zinc-400 hover:text-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentCancelBtn || '취소') + '</button>' +
+                '<button type="button" data-comment-action="save-edit" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-3 py-1 rounded-full bg-white text-zinc-950 text-xs font-semibold hover:bg-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentSaveBtn || '저장') + '</button>' +
+              '</div>' +
+            '</div>';
+        } else {
+          bodyHtml = '<p class="mt-1.5 text-[14px] text-zinc-200 leading-relaxed whitespace-pre-wrap break-words select-text">' + escapeHtmlClient(item.content) + '</p>';
+        }
+
+        // Inline Translation Card
+        var transHtml = '';
+        if (!isBlinded && transState && transState.visible) {
+          var activeLangUpper = getActiveLang().toUpperCase();
+          transHtml =
+            '<div class="mt-2.5 p-3.5 rounded-xl bg-white/[0.03] border border-white/[0.08] comment-animate-in">' +
+              '<div class="flex items-center justify-between mb-1">' +
+                '<div class="flex items-center gap-1.5 text-[11px] font-medium text-amber-300/90">' +
+                  '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg>' +
+                  '<span>' + escapeHtmlClient(ui.commentTranslatedBadge || '번역됨') + '</span>' +
+                '</div>' +
+                '<span class="text-[10px] font-mono text-zinc-500">GTX · ' + escapeHtmlClient(langBadge) + ' → ' + escapeHtmlClient(activeLangUpper) + '</span>' +
+              '</div>' +
+              '<p class="text-[13px] text-zinc-200 leading-relaxed whitespace-pre-wrap break-words select-text">' +
+                escapeHtmlClient(transState.loading ? (ui.commentTranslating || '번역 중...') : transState.text) +
+              '</p>' +
+            '</div>';
+        }
+
+        // Action Bar
+        var translateBtnLabel = (transState && transState.visible)
+          ? (ui.commentTranslateHideBtn || '번역 접기')
+          : (ui.commentTranslateBtn || '번역 보기');
+        var replyCount = Array.isArray(replies) ? replies.length : 0;
+        var replyBtnLabel = (ui.commentReplyBtn || '답글') + (replyCount > 0 ? ' ' + replyCount : '');
+
+        var actionsHtml = '';
+        if (!isBlinded) {
+          actionsHtml =
+            '<div class="mt-2.5 flex flex-wrap items-center gap-4 text-xs text-zinc-400">' +
+              (!isReply
+                ? '<button type="button" data-comment-action="toggle-reply" data-comment-id="' + escapeHtmlClient(item.id) + '" class="inline-flex items-center gap-1.5 hover:text-zinc-100 transition cursor-pointer">' +
+                    '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>' +
+                    '<span>' + escapeHtmlClient(replyBtnLabel) + '</span>' +
+                  '</button>'
+                : '') +
+              '<button type="button" data-comment-action="translate" data-comment-id="' + escapeHtmlClient(item.id) + '" class="inline-flex items-center gap-1.5 ' + ((transState && transState.visible) ? 'text-zinc-200' : '') + ' hover:text-zinc-100 transition cursor-pointer">' +
+                '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>' +
+                '<span>' + escapeHtmlClient(translateBtnLabel) + '</span>' +
+              '</button>' +
+              '<button type="button" data-comment-action="open-pin" data-pin-mode="edit" data-comment-id="' + escapeHtmlClient(item.id) + '" class="inline-flex items-center gap-1 hover:text-zinc-100 transition cursor-pointer">' +
+                '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>' +
+                '<span>' + escapeHtmlClient(ui.commentEditBtn || '수정') + '</span>' +
+              '</button>' +
+              '<button type="button" data-comment-action="open-pin" data-pin-mode="delete" data-comment-id="' + escapeHtmlClient(item.id) + '" class="inline-flex items-center gap-1 hover:text-rose-400 transition cursor-pointer">' +
+                '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>' +
+                '<span>' + escapeHtmlClient(ui.commentDeleteBtn || '삭제') + '</span>' +
+              '</button>' +
+            '</div>';
+        }
+
+        // Sleek Capsule PIN Popover
+        var pinPopoverHtml = '';
+        if (isPinOpen) {
+          var modeLabel = state.openPinTarget.mode === 'delete'
+            ? (ui.commentDeleteBtn || '삭제')
+            : (ui.commentEditBtn || '수정');
+          pinPopoverHtml =
+            '<div class="mt-2.5 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#16161a] border border-white/[0.14] shadow-lg comment-animate-in">' +
+              '<svg class="w-3.5 h-3.5 text-zinc-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' +
+              '<span class="text-xs text-zinc-300">' + escapeHtmlClient(modeLabel) + ' PIN</span>' +
+              '<input id="pin-verify-input-' + escapeHtmlClient(item.id) + '" type="password" inputmode="numeric" maxlength="4" placeholder="••••" class="w-12 bg-white/[0.06] rounded-full px-2 py-0.5 text-xs font-mono text-center text-white focus:outline-none border border-white/[0.12] select-text" />' +
+              '<button type="button" data-comment-action="confirm-pin" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-2.5 py-0.5 rounded-full bg-white text-zinc-950 text-xs font-semibold hover:bg-zinc-200 transition cursor-pointer">' + escapeHtmlClient(ui.commentConfirmBtn || '확인') + '</button>' +
+              '<button type="button" data-comment-action="close-pin" data-comment-id="' + escapeHtmlClient(item.id) + '" class="text-xs text-zinc-500 hover:text-zinc-300 px-1 cursor-pointer">✕</button>' +
+            '</div>';
+        }
+
+        // Inline 1-Level Reply Composer
+        var replyFormHtml = '';
+        if (isReplyOpen) {
+          var currentNick = (document.getElementById('comment-nickname') && document.getElementById('comment-nickname').value) || (ui.commentDefaultNickname || '생존자');
+          replyFormHtml =
+            '<div class="mt-3 rounded-xl bg-[#121215] border border-white/[0.12] p-2.5 comment-animate-in">' +
+              '<textarea id="reply-textarea-' + escapeHtmlClient(item.id) + '" rows="2" maxlength="300" placeholder="@' + escapeHtmlClient(item.nickname) + '..." class="w-full bg-transparent text-xs text-zinc-100 placeholder-zinc-500 focus:outline-none resize-none px-1 select-text"></textarea>' +
+              '<div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-white/[0.06] mt-1">' +
+                '<div class="flex items-center gap-1.5">' +
+                  '<input id="reply-nick-' + escapeHtmlClient(item.id) + '" type="text" maxlength="16" value="' + escapeHtmlClient(currentNick) + '" class="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] text-zinc-200 w-24 focus:outline-none select-text" />' +
+                  '<input id="reply-pin-' + escapeHtmlClient(item.id) + '" type="password" inputmode="numeric" maxlength="4" placeholder="••••" class="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] font-mono text-zinc-200 w-14 text-center focus:outline-none select-text" />' +
+                '</div>' +
+                '<div class="flex items-center gap-1.5 ml-auto">' +
+                  '<button type="button" data-comment-action="toggle-reply" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-2.5 py-1 rounded-full text-xs text-zinc-400 hover:text-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentCancelBtn || '취소') + '</button>' +
+                  '<button type="button" data-comment-action="submit-reply" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-3 py-1 rounded-full bg-white text-zinc-950 text-xs font-semibold hover:bg-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentSubmitBtn || '등록') + ' ↵</button>' +
+                '</div>' +
+              '</div>' +
+            '</div>';
+        }
+
+        // Nested Replies HTML
+        var nestedRepliesHtml = '';
+        if (!isReply && Array.isArray(replies) && replies.length > 0) {
+          var rItems = [];
+          for (var rIdx = 0; rIdx < replies.length; rIdx++) {
+            rItems.push(renderCommentItemHtml(replies[rIdx], [], ui));
+          }
+          nestedRepliesHtml = '<div class="mt-4 space-y-4">' + rItems.join('') + '</div>';
+        }
+
+        if (isReply) {
+          return (
+            '<div class="relative flex gap-3 comment-animate-in" data-comment-node="' + escapeHtmlClient(item.id) + '">' +
+              '<div class="w-4 h-4 border-l-[1.5px] border-b-[1.5px] border-white/[0.08] rounded-bl-xl -ml-[23px] mt-0 shrink-0" aria-hidden="true"></div>' +
+              '<div class="w-7 h-7 rounded-full bg-zinc-900 border border-white/[0.12] flex items-center justify-center shrink-0">' +
+                getAvatarSvg(item.nickname, true) +
+              '</div>' +
+              '<div class="flex-1 min-w-0">' +
+                '<div class="flex items-center justify-between gap-2">' +
+                  '<div class="flex items-center gap-2 flex-wrap">' +
+                    '<span class="text-[13px] font-semibold text-zinc-100">' + escapeHtmlClient(item.nickname) + '</span>' +
+                    '<span class="px-1.5 py-0.5 text-[10px] font-mono font-medium rounded-md bg-white/[0.06] text-zinc-400 border border-white/[0.05]">' + escapeHtmlClient(langBadge) + '</span>' +
+                    '<span class="text-xs text-zinc-500">· ' + escapeHtmlClient(timeLabel) + '</span>' +
+                    (isEdited ? '<span class="text-[11px] text-zinc-500">' + escapeHtmlClient(ui.commentEditedTag || '(수정됨)') + '</span>' : '') +
+                  '</div>' +
+                  '<button type="button" data-comment-action="report" data-comment-id="' + escapeHtmlClient(item.id) + '" class="opacity-60 hover:opacity-100 text-zinc-500 hover:text-zinc-300 p-1 rounded-lg hover:bg-white/[0.05] transition cursor-pointer" title="' + escapeHtmlClient(ui.commentReportBtn || '신고') + '">' +
+                    '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>' +
+                  '</button>' +
+                '</div>' +
+                bodyHtml +
+                transHtml +
+                actionsHtml +
+                pinPopoverHtml +
+              '</div>' +
+            '</div>'
+          );
+        }
+
+        var hasThreadLine = (Array.isArray(replies) && replies.length > 0);
+        return (
+          '<div class="relative group comment-animate-in" data-comment-node="' + escapeHtmlClient(item.id) + '">' +
+            (hasThreadLine ? '<div class="absolute left-[15px] top-9 bottom-5 w-[1.5px] bg-white/[0.08]" aria-hidden="true"></div>' : '') +
+            '<div class="flex gap-3.5">' +
+              '<div class="w-8 h-8 rounded-full bg-zinc-900 border border-white/[0.12] flex items-center justify-center shrink-0 shadow-sm z-10">' +
+                getAvatarSvg(item.nickname, false) +
+              '</div>' +
+              '<div class="flex-1 min-w-0">' +
+                '<div class="flex items-center justify-between gap-2">' +
+                  '<div class="flex items-center gap-2 flex-wrap">' +
+                    '<span class="text-[13px] font-semibold text-zinc-100">' + escapeHtmlClient(item.nickname) + '</span>' +
+                    '<span class="px-1.5 py-0.5 text-[10px] font-mono font-medium rounded-md bg-white/[0.06] text-zinc-400 border border-white/[0.05]">' + escapeHtmlClient(langBadge) + '</span>' +
+                    '<span class="text-xs text-zinc-500">· ' + escapeHtmlClient(timeLabel) + '</span>' +
+                    (isEdited ? '<span class="text-[11px] text-zinc-500">' + escapeHtmlClient(ui.commentEditedTag || '(수정됨)') + '</span>' : '') +
+                  '</div>' +
+                  '<button type="button" data-comment-action="report" data-comment-id="' + escapeHtmlClient(item.id) + '" class="opacity-60 hover:opacity-100 text-zinc-500 hover:text-zinc-300 p-1 rounded-lg hover:bg-white/[0.05] transition cursor-pointer" title="' + escapeHtmlClient(ui.commentReportBtn || '신고') + '">' +
+                    '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>' +
+                  '</button>' +
+                '</div>' +
+                bodyHtml +
+                transHtml +
+                actionsHtml +
+                pinPopoverHtml +
+                replyFormHtml +
+                nestedRepliesHtml +
+              '</div>' +
+            '</div>' +
+          '</div>'
+        );
+      }
+
+      function renderFeed() {
+        var listEl = document.getElementById('comment-thread-list');
+        var countEl = document.getElementById('comment-total-count');
+        if (!listEl) return;
+
+        var ui = getUi();
+        var allItems = [];
+        var keys = Object.keys(state.commentsMap || {});
+        for (var i = 0; i < keys.length; i++) {
+          var c = state.commentsMap[keys[i]];
+          if (c && c.id && typeof c.content === 'string') {
+            allItems.push(c);
+          }
+        }
+
+        if (countEl) {
+          countEl.textContent = String(allItems.length);
+        }
+
+        if (allItems.length === 0) {
+          listEl.innerHTML =
+            '<div id="comment-empty-state" class="py-10 text-center rounded-2xl bg-[#121215]/50 border border-white/[0.05]">' +
+              '<p data-i18n="commentEmptyState" class="text-xs text-zinc-500">' + escapeHtmlClient(ui.commentEmptyState || '첫 번째 현장 피드백이나 대체 자재 팁을 남겨보세요.') + '</p>' +
+            '</div>';
+          return;
+        }
+
+        var parents = [];
+        var repliesByParent = {};
+        for (var j = 0; j < allItems.length; j++) {
+          var item = allItems[j];
+          if (!item.parentId) {
+            parents.push(item);
+          } else {
+            if (!repliesByParent[item.parentId]) repliesByParent[item.parentId] = [];
+            repliesByParent[item.parentId].push(item);
+          }
+        }
+
+        // 최신 부모 댓글이 위로 오도록 정렬, 대댓글은 시간순 정렬
+        parents.sort(function (a, b) { return Number(b.createdAt || 0) - Number(a.createdAt || 0); });
+        var parentIds = Object.keys(repliesByParent);
+        for (var k = 0; k < parentIds.length; k++) {
+          repliesByParent[parentIds[k]].sort(function (a, b) { return Number(a.createdAt || 0) - Number(b.createdAt || 0); });
+        }
+
+        var htmlParts = [];
+        for (var pIdx = 0; pIdx < parents.length; pIdx++) {
+          var pItem = parents[pIdx];
+          var rList = repliesByParent[pItem.id] || [];
+          if (pIdx > 0) {
+            htmlParts.push('<div class="h-px bg-white/[0.06]"></div>');
+          }
+          htmlParts.push(renderCommentItemHtml(pItem, rList, ui));
+        }
+
+        listEl.innerHTML = htmlParts.join('');
+      }
+
+      // 다국어 전환 시(switchLocale) 0.01초 즉시 리렌더링 훅 노출
+      window.__refreshCommentLocale__ = function () {
+        renderFeed();
+      };
+
+      // ─── 7. Create / Edit / Delete / Report Actions ───
+      function generateCommentId() {
+        var rand = Math.random().toString(36).substring(2, 8);
+        while (rand.length < 6) rand += '0';
+        return 'c_' + Date.now() + '_' + rand;
+      }
+
+      function handleCreateComment(parentId, rawNickname, rawPin, rawContent) {
+        hideAlert();
+        var ui = getUi();
+
+        // 1. Honeypot check
+        var hpEl = document.getElementById('comment-hp-field');
+        if (hpEl && hpEl.value) return false;
+
+        // 2. Cooldown check
+        var now = Date.now();
+        var lastPost = parseInt(safeStorage.getItem(LAST_POST_KEY) || '0', 10) || 0;
+        if (now - lastPost < POST_COOLDOWN_MS) {
+          showAlert(ui.commentErrCooldown || '도배 방지를 위해 잠시 후 다시 작성해주세요.');
+          return false;
+        }
+
+        var nickname = String(rawNickname || '').trim().slice(0, 16) || ((ui.commentDefaultNickname || '생존자') + '-' + String(now).slice(-4));
+        var pin = String(rawPin || '').trim();
+        var content = String(rawContent || '').trim();
+
+        if (content.length < 2 || content.length > 300) {
+          showAlert(ui.commentErrLength || '댓글 내용을 2자 이상 300자 이하로 입력해주세요.');
+          return false;
+        }
+        if (!/^[0-9]{4}$/.test(pin)) {
+          showAlert(ui.commentErrPin || '비밀번호는 숫자 4자리로 입력해주세요.');
+          return false;
+        }
+        if (containsSpamOrUrl(nickname) || containsSpamOrUrl(content)) {
+          showAlert(ui.commentErrSpam || '보안 정책상 외부 링크(URL) 및 광고·스팸 키워드는 등록할 수 없습니다.');
+          return false;
+        }
+
+        var commentId = generateCommentId();
+        var pinHash = computePinHash(commentId, pin);
+        var newComment = {
+          id: commentId,
+          parentId: parentId ? String(parentId) : '',
+          nickname: nickname,
+          content: content,
+          lang: getActiveLang(),
+          createdAt: now,
+          updatedAt: now,
+          reports: 0
+        };
+
+        // 낙관적 로컬 상태 반영
+        state.commentsMap[commentId] = newComment;
+        state.localSecrets[commentId] = pinHash;
+        safeStorage.setItem('ps_csec_' + commentId, pinHash);
+        safeStorage.setItem(NICK_KEY, nickname);
+        safeStorage.setItem(LAST_POST_KEY, String(now));
+        state.openReplyId = null;
+        saveCachedComments();
+        renderFeed();
+        notifyToast(ui.commentToastPosted || '피드백이 등록되었습니다.');
+
+        if (state.remoteApi && typeof state.remoteApi.createComment === 'function') {
+          state.remoteApi.createComment(newComment, pinHash);
+        }
+        return true;
+      }
+
+      function handleVerifyPin(commentId, inputPin) {
+        var ui = getUi();
+        if (!/^[0-9]{4}$/.test(String(inputPin || '').trim())) {
+          showAlert(ui.commentErrPin || '비밀번호는 숫자 4자리로 입력해주세요.');
+          return;
+        }
+        var target = state.openPinTarget;
+        if (!target || target.id !== commentId) return;
+
+        var computedHash = computePinHash(commentId, inputPin);
+        var storedLocalHash = state.localSecrets[commentId] || safeStorage.getItem('ps_csec_' + commentId);
+
+        if (storedLocalHash && storedLocalHash !== computedHash) {
+          showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+          return;
+        }
+
+        if (target.mode === 'delete') {
+          // 원격 권한 검증 후 삭제 또는 로컬 즉시 삭제
+          if (state.remoteApi && typeof state.remoteApi.deleteComment === 'function') {
+            state.remoteApi.deleteComment(commentId, computedHash, function (ok) {
+              if (!ok) {
+                showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+                return;
+              }
+              delete state.commentsMap[commentId];
+              state.openPinTarget = null;
+              saveCachedComments();
+              renderFeed();
+              notifyToast(ui.commentToastDeleted || '피드백이 삭제되었습니다.');
+            });
+          } else {
+            if (!storedLocalHash) {
+              showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+              return;
+            }
+            delete state.commentsMap[commentId];
+            state.openPinTarget = null;
+            saveCachedComments();
+            renderFeed();
+            notifyToast(ui.commentToastDeleted || '피드백이 삭제되었습니다.');
+          }
+        } else if (target.mode === 'edit') {
+          state.localSecrets[commentId] = computedHash;
+          state.openPinTarget = null;
+          state.editingId = commentId;
+          renderFeed();
+        }
+      }
+
+      function handleSaveEdit(commentId, newContentRaw) {
+        hideAlert();
+        var ui = getUi();
+        var item = state.commentsMap[commentId];
+        if (!item) return;
+
+        var content = String(newContentRaw || '').trim();
+        if (content.length < 2 || content.length > 300) {
+          showAlert(ui.commentErrLength || '댓글 내용을 2자 이상 300자 이하로 입력해주세요.');
+          return;
+        }
+        if (containsSpamOrUrl(content)) {
+          showAlert(ui.commentErrSpam || '보안 정책상 외부 링크(URL) 및 광고·스팸 키워드는 등록할 수 없습니다.');
+          return;
+        }
+
+        var proofHash = state.localSecrets[commentId] || safeStorage.getItem('ps_csec_' + commentId);
+        if (!proofHash) {
+          showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+          return;
+        }
+
+        var prevContent = item.content;
+        var prevUpdated = item.updatedAt;
+        item.content = content;
+        item.updatedAt = Date.now();
+        state.editingId = null;
+        delete state.translations[commentId];
+        saveCachedComments();
+        renderFeed();
+
+        if (state.remoteApi && typeof state.remoteApi.updateComment === 'function') {
+          state.remoteApi.updateComment(item, proofHash, function (ok) {
+            if (!ok) {
+              item.content = prevContent;
+              item.updatedAt = prevUpdated;
+              saveCachedComments();
+              renderFeed();
+              showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+              return;
+            }
+            notifyToast(ui.commentToastUpdated || '피드백이 수정되었습니다.');
+          });
+        } else {
+          notifyToast(ui.commentToastUpdated || '피드백이 수정되었습니다.');
+        }
+      }
+
+      function handleReportComment(commentId) {
+        var ui = getUi();
+        var reportKey = 'ps_creport_' + commentId;
+        if (safeStorage.getItem(reportKey) === '1') {
+          notifyToast(ui.commentToastReported || '신고가 접수되었습니다.');
+          return;
+        }
+        var item = state.commentsMap[commentId];
+        if (!item) return;
+
+        safeStorage.setItem(reportKey, '1');
+        item.reports = Number(item.reports || 0) + 1;
+        saveCachedComments();
+        renderFeed();
+        notifyToast(ui.commentToastReported || '신고가 접수되었습니다.');
+
+        if (state.remoteApi && typeof state.remoteApi.reportComment === 'function') {
+          state.remoteApi.reportComment(item);
+        }
+      }
+
+      // ─── 8. Phase 1 Initialization (Zero-Dependency Local Setup) ───
+      function initPhase1() {
+        loadCachedComments();
+
+        var nickInput = document.getElementById('comment-nickname');
+        var savedNick = safeStorage.getItem(NICK_KEY);
+        if (nickInput) {
+          if (savedNick) {
+            nickInput.value = savedNick;
+          } else {
+            var ui = getUi();
+            var suffix = String(Math.floor(1000 + Math.random() * 9000));
+            var generated = (ui.commentDefaultNickname || '생존자') + '-' + suffix;
+            nickInput.value = generated;
+            safeStorage.setItem(NICK_KEY, generated);
+          }
+        }
+
+        var mainInput = document.getElementById('comment-input');
+        var charCountEl = document.getElementById('comment-char-count');
+        var submitBtn = document.getElementById('btn-submit-comment');
+        var pinInput = document.getElementById('comment-pin');
+        var closeAlertBtn = document.getElementById('btn-close-comment-alert');
+
+        if (closeAlertBtn) {
+          closeAlertBtn.addEventListener('click', hideAlert);
+        }
+
+        if (mainInput && charCountEl) {
+          mainInput.addEventListener('input', function () {
+            charCountEl.textContent = mainInput.value.length + '/300';
+          });
+          mainInput.addEventListener('keydown', function (e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+              e.preventDefault();
+              if (submitBtn) submitBtn.click();
+            }
+          });
+        }
+
+        if (submitBtn) {
+          submitBtn.addEventListener('click', function () {
+            var nVal = nickInput ? nickInput.value : '';
+            var pVal = pinInput ? pinInput.value : '';
+            var cVal = mainInput ? mainInput.value : '';
+            var ok = handleCreateComment('', nVal, pVal, cVal);
+            if (ok && mainInput && charCountEl) {
+              mainInput.value = '';
+              charCountEl.textContent = '0/300';
+            }
+          });
+        }
+
+        var threadListEl = document.getElementById('comment-thread-list');
+        if (threadListEl) {
+          threadListEl.addEventListener('click', function (e) {
+            var btn = e.target.closest('[data-comment-action]');
+            if (!btn) return;
+            var action = btn.getAttribute('data-comment-action');
+            var cId = btn.getAttribute('data-comment-id');
+            if (!cId) return;
+
+            if (action === 'toggle-reply') {
+              state.openReplyId = (state.openReplyId === cId) ? null : cId;
+              state.openPinTarget = null;
+              renderFeed();
+            } else if (action === 'submit-reply') {
+              var rTextEl = document.getElementById('reply-textarea-' + cId);
+              var rNickEl = document.getElementById('reply-nick-' + cId);
+              var rPinEl = document.getElementById('reply-pin-' + cId);
+              handleCreateComment(
+                cId,
+                rNickEl ? rNickEl.value : '',
+                rPinEl ? rPinEl.value : (pinInput ? pinInput.value : ''),
+                rTextEl ? rTextEl.value : ''
+              );
+            } else if (action === 'translate') {
+              var item = state.commentsMap[cId];
+              if (!item) return;
+              var cur = state.translations[cId];
+              if (cur && cur.visible) {
+                cur.visible = false;
+                renderFeed();
+                return;
+              }
+              state.translations[cId] = { visible: true, loading: true, text: '' };
+              renderFeed();
+              translateCommentText(cId, item.content, item.lang, getActiveLang(), function (translatedText) {
+                state.translations[cId] = { visible: true, loading: false, text: translatedText };
+                renderFeed();
+              });
+            } else if (action === 'open-pin') {
+              var mode = btn.getAttribute('data-pin-mode') || 'edit';
+              if (state.openPinTarget && state.openPinTarget.id === cId && state.openPinTarget.mode === mode) {
+                state.openPinTarget = null;
+              } else {
+                state.openPinTarget = { id: cId, mode: mode };
+              }
+              state.editingId = null;
+              renderFeed();
+            } else if (action === 'close-pin') {
+              state.openPinTarget = null;
+              renderFeed();
+            } else if (action === 'confirm-pin') {
+              var vInput = document.getElementById('pin-verify-input-' + cId);
+              handleVerifyPin(cId, vInput ? vInput.value : '');
+            } else if (action === 'cancel-edit') {
+              state.editingId = null;
+              renderFeed();
+            } else if (action === 'save-edit') {
+              var eArea = document.getElementById('edit-textarea-' + cId);
+              handleSaveEdit(cId, eArea ? eArea.value : '');
+            } else if (action === 'report') {
+              handleReportComment(cId);
+            }
+          });
+        }
+
+        renderFeed();
+      }
+
+      initPhase1();
+
+      // ─── 9. Phase 2 Background Remote Firebase Sync ───
+      if (!config || !config.apiKey || config.disabled || config.apiKey.indexOf('your_') === 0) return;
+
+      var scheduleRemote = window.requestIdleCallback || function (cb) { setTimeout(cb, 450); };
+      scheduleRemote(function () {
+        Promise.all([
+          import('https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js'),
+          import('https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js')
+        ]).then(function (modules) {
+          var appMod = modules[0];
+          var dbMod = modules[1];
+          var app = (appMod.getApps && appMod.getApps().length > 0)
+            ? appMod.getApps()[0]
+            : appMod.initializeApp(config);
+          var db = dbMod.getDatabase(app);
+          var ref = dbMod.ref;
+          var onValue = dbMod.onValue;
+          var update = dbMod.update;
+          var serverTimestamp = dbMod.serverTimestamp;
+
+          var commentsRef = ref(db, 'protocol_comments/' + pid);
+          onValue(commentsRef, function (snap) {
+            if (snap && snap.exists()) {
+              var val = snap.val();
+              if (val && typeof val === 'object') {
+                state.commentsMap = val;
+                saveCachedComments();
+                renderFeed();
+              }
+            }
+          }, { onlyOnce: true });
+
+          state.remoteApi = {
+            createComment: function (commentObj, pinHash) {
+              var ts = serverTimestamp();
+              var updates = {};
+              updates['protocol_comments/' + pid + '/' + commentObj.id] = {
+                id: commentObj.id,
+                parentId: commentObj.parentId,
+                nickname: commentObj.nickname,
+                content: commentObj.content,
+                lang: commentObj.lang,
+                createdAt: commentObj.createdAt,
+                updatedAt: commentObj.updatedAt,
+                reports: 0
+              };
+              updates['comment_secrets/' + pid + '/' + commentObj.id] = {
+                pinHash: pinHash,
+                proofHash: pinHash,
+                proofTs: ts
+              };
+              updates['comment_ratelimit/' + pid + '/lastWriteAt'] = ts;
+              update(ref(db), updates).catch(function () {});
+            },
+            updateComment: function (commentObj, proofHash, cb) {
+              var ts = serverTimestamp();
+              var updates = {};
+              updates['comment_secrets/' + pid + '/' + commentObj.id + '/proofHash'] = proofHash;
+              updates['comment_secrets/' + pid + '/' + commentObj.id + '/proofTs'] = ts;
+              updates['protocol_comments/' + pid + '/' + commentObj.id] = {
+                id: commentObj.id,
+                parentId: commentObj.parentId,
+                nickname: commentObj.nickname,
+                content: commentObj.content,
+                lang: commentObj.lang,
+                createdAt: commentObj.createdAt,
+                updatedAt: commentObj.updatedAt,
+                reports: Number(commentObj.reports || 0)
+              };
+              update(ref(db), updates)
+                .then(function () { if (cb) cb(true); })
+                .catch(function () { if (cb) cb(false); });
+            },
+            deleteComment: function (commentId, proofHash, cb) {
+              var ts = serverTimestamp();
+              var updates = {};
+              updates['comment_secrets/' + pid + '/' + commentId + '/proofHash'] = proofHash;
+              updates['comment_secrets/' + pid + '/' + commentId + '/proofTs'] = ts;
+              updates['protocol_comments/' + pid + '/' + commentId] = null;
+              update(ref(db), updates)
+                .then(function () { if (cb) cb(true); })
+                .catch(function () { if (cb) cb(false); });
+            },
+            reportComment: function (commentObj) {
+              var updates = {};
+              updates['protocol_comments/' + pid + '/' + commentObj.id + '/reports'] = Number(commentObj.reports || 1);
+              update(ref(db), updates).catch(function () {});
+            }
+          };
+        }).catch(function () {
+          // 오프라인 / 방화벽 차단 시 로컬 캐시 모드로 무결성 유지
+        });
+      });
     })();
 
     // 3. 선언적 이벤트 위임 (Event Delegation)

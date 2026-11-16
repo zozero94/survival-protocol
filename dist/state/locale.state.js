@@ -329,8 +329,10 @@ export function getLocaleRuntimeScript()         {
             : 'px-1.5 py-0.5 text-[11px] font-mono font-bold transition-all text-neutral-400 hover:text-white';
         });
 
-        // 7. 체크리스트 카운터 실시간 재연산
+        // 7. 체크리스트 카운터 및 댓글 다국어 피드 실시간 재연산
         if (typeof updateChecklist === 'function') updateChecklist();
+        if (typeof window.__refreshCommentLocale__ === 'function') window.__refreshCommentLocale__(targetLocale);
+
 
         // 8. 내부 네비게이션 링크(메인 복귀, 다음 프로토콜) 언어 파라미터 동기화
         document.querySelectorAll('a[href^="/"]').forEach(function(link) {

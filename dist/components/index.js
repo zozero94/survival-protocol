@@ -9,7 +9,9 @@ export * from './protocol/Checklist.js';
 export * from './protocol/StepCard.js';
 export * from './protocol/FatalWarning.js';
 export * from './protocol/FaqSection.js';
+export * from './protocol/CommentSection.js';
 export * from './feed/FeedHeader.js';
 export * from './feed/ProtocolCard.js';
 export * from './feed/Pagination.js';
+
 

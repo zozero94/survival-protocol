@@ -6,3 +6,5 @@ export * from './feed.state.ts';
 export * from './search.state.ts';
 export * from './crosslink.state.ts';
 export * from './firebase.state.ts';
+export * from './comment.state.ts';
+

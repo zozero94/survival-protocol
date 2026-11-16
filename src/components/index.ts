@@ -9,7 +9,9 @@ export * from './protocol/Checklist.ts';
 export * from './protocol/StepCard.ts';
 export * from './protocol/FatalWarning.ts';
 export * from './protocol/FaqSection.ts';
+export * from './protocol/CommentSection.ts';
 export * from './feed/FeedHeader.ts';
 export * from './feed/ProtocolCard.ts';
 export * from './feed/Pagination.ts';
+
 
