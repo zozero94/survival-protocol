@@ -576,7 +576,7 @@
 <div class="text-outline font-label-sm text-label-sm">// 클라이언트 IP, 쿠키, 하드웨어 UUID 등 메타데이터 일체 누락 전송</div>
 </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant">
-          이 데이터베이스 트랜잭션에는 캔버스 해시나 하드웨어 지문(Fingerprinting) 메타데이터가 일체 첨부되지 않으며, 익명 피드백의 수정·삭제 권한 검증 역시 난수 토큰과 4자리 PIN을 결합한 단방향 SHA-256 해시(읽기 비공개 노드)로만 처리됩니다.
+          이 데이터베이스 트랜잭션에는 캔버스 해시나 하드웨어 지문(Fingerprinting) 메타데이터가 일체 첨부되지 않으며, 익명 피드백의 수정·삭제 권한 검증 역시 난수 토큰과 4자리 PIN을 결합한 단방향 SHA-256 해시(읽기 비공개 노드) 및 1회용 검증 토큰으로만 처리됩니다. 또한 사용자가 댓글의 [번역 보기] 버튼을 직접 클릭한 경우에 한하여, 해당 댓글 문자열만 외부 번역 API(<code>translate.googleapis.com</code> 및 폴백 <code>api.mymemory.translated.net</code>)로 전송되어 즉시 번역 후 브라우저 세션에만 임시 캐시됩니다.
         </p>
 </div>
 </article>
@@ -600,7 +600,7 @@
 <div class="border border-outline-variant bg-surface-container p-4">
 <div class="font-label-md text-label-md text-primary font-bold uppercase mb-1">LOCALSTORAGE</div>
 <div class="font-label-sm text-label-sm text-emerald-400 mb-2">[AIR-GAPPED SCOPE]</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">체크리스트 체크 여부, 사용자 화면 밝기 설정(HUD Night Mode), 계산기 임시 입력값.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">체크리스트 체크 여부, 다국어·테마 설정, 익명 댓글 소유권 난수 토큰(<code>ps_comment_device_token</code>) 및 로컬 캐시(<code>ps_comments_cache_*</code>).</p>
 </div>
 <div class="border border-outline-variant bg-surface-container p-4">
 <div class="font-label-md text-label-md text-primary font-bold uppercase mb-1">SERVICE WORKER</div>
@@ -644,7 +644,7 @@
                 클라이언트 로컬 캐시 및 브라우저 세션 영구 파기 (HARD PURGE TRIGGER)
               </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant">
-                클릭 시 본 브라우저에 적재된 LocalStorage, SessionStorage 및 서비스 워커 Cache Registry를 즉각 포맷합니다.
+                클릭 시 본 브라우저에 적재된 LocalStorage, SessionStorage 및 서비스 워커 Cache Registry를 즉각 포맷합니다. (주의: 초기화 시 익명 댓글 소유권 난수 토큰도 함께 파기되므로, 이전에 작성한 댓글의 수정·삭제가 필요한 경우 초기화 전에 먼저 삭제하십시오.)
               </p>
 </div>
 <button class="border border-rose-600 bg-surface text-rose-400 hover:bg-rose-600 hover:text-black font-label-md text-label-md font-bold px-5 py-3 uppercase tracking-wider transition-none flex items-center justify-center gap-2 shrink-0" id="purgeBtn" onclick="executeHardPurge()">

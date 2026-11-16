@@ -106,12 +106,18 @@ test('Comment Suite 22-3: getCommentRuntimeScript 구문 유효성, 더보기(�
   assert.match(script, /api\.mymemory\.translated\.net/, 'MyMemory 번역 폴백 엔드포인트가 포함되어야 합니다.');
   assert.match(script, /ps_trans_/, '세션 스토리지 번역 캐시 프리픽스가 존재해야 합니다.');
 
-  // 5. 다국어 즉시 핫스왑 훅 연동 검증
+  // 5. 1회용 검증 토큰(verifiedHash) 즉시 소각 및 프로토타입 오염 방어(Object.create(null)) 검증
+  assert.match(script, /Object\.create\(null\)/, '프로토타입 오염 방어를 위해 Object.create(null) 맵을 사용해야 합니다.');
+  assert.match(script, /verifiedHash'\] = null/, '수정·삭제 트랜잭션 시 1회용 verifiedHash 토큰을 원자적으로 소각해야 합니다.');
+  assert.match(script, /verifyPin: function/, '원격 PIN 검증 헬퍼가 존재해야 합니다.');
+  assert.match(script, /if \(c\.parentId && !state\.commentsMap\[c\.parentId\]\) continue;/, '부모가 삭제된 고아 답글은 카운트 및 렌더링에서 제외해야 합니다.');
+
+  // 6. 다국어 즉시 핫스왑 훅 연동 검증
   const localeScript = getLocaleRuntimeScript();
   assert.match(localeScript, /__refreshCommentLocale__/, '언어 전환 시 댓글 피드도 즉시 핫스왑되도록 훅이 연결되어야 합니다.');
 });
 
-test('Comment Suite 22-4: database.rules.json 댓글 보안 규칙(PIN 해시 비공개, 1단계 대댓글, 스팸 정규식) 검증', () => {
+test('Comment Suite 22-4: database.rules.json 댓글 보안 규칙(PIN 해시 비공개, 1회용 검증 토큰 소각, ID 정규식, 스팸 차단) 검증', () => {
   const rootDir = path.resolve(import.meta.dirname, '..');
   const rulesPath = path.join(rootDir, 'database.rules.json');
   const rules = JSON.parse(fs.readFileSync(rulesPath, 'utf-8'));
@@ -124,6 +130,12 @@ test('Comment Suite 22-4: database.rules.json 댓글 보안 규칙(PIN 해시 �
     '브루트포스 방어를 위해 comment_secrets는 반드시 .read: false여야 합니다.'
   );
 
+  const verifiedHashWrite: string = rules.rules.comment_secrets.$protocolId.$commentId.verifiedHash['.write'];
+  assert.ok(
+    verifiedHashWrite.includes('!newData.exists()'),
+    '1회용 검증 토큰(verifiedHash)을 원자적으로 소각(null)할 수 있도록 !newData.exists()가 허용되어야 합니다.'
+  );
+
   const commentNode = rules.rules.protocol_comments.$protocolId.$commentId;
   assert.equal(
     commentNode.$other,
@@ -133,5 +145,6 @@ test('Comment Suite 22-4: database.rules.json 댓글 보안 규칙(PIN 해시 �
 
   const commentValidate: string = commentNode['.validate'];
   assert.ok(commentValidate.includes('https?:\\/\\/|www\\.'), '서버 규칙에서 외부 URL(http/https/www)을 원천 차단해야 합니다.');
+  assert.ok(commentValidate.includes('c_[0-9]{10,15}_[a-z0-9]{4,10}'), '프로토타입 오염 방지를 위해 댓글 ID 정규식 검증이 포함되어야 합니다.');
   assert.ok(commentValidate.includes('parentId'), '1단계 대댓글 깊이 제한 검증이 포함되어야 합니다.');
 });

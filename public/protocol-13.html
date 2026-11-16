@@ -1838,7 +1838,7 @@
     #comment-section .rounded-bl-xl { border-bottom-left-radius: 0.75rem !important; }
     @keyframes commentFadeSlide {
       from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; transform: none; }
     }
     #comment-section .comment-animate-in {
       animation: commentFadeSlide 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -3894,7 +3894,7 @@
       }
 
       // ─── 3. Anti-Spam & URL / Casino / Ad Filter ───
-      var SPAM_RAW_RE = /(https?:\/\/|www\.|[a-z0-9-]+\.(com|net|org|kr|io|me|gg|xyz|ly|gl|co|shop|site|club|vip|top|bet)\b|t\.me\/|bit\.ly\/|010-\d{3,4}-\d{4}|카지노|바카라|토토|슬롯|성인용품|조건만남|출장마사지|대출|작업대출|텔레그램|오픈카톡|유튜브\s*구독|무료\s*수익|코인가격|카톡\s*문의)/i;
+      var SPAM_RAW_RE = /(https?:\/\/|www\.|[a-z0-9-]+\.(com|net|org|kr|io|me|gg|xyz|ly|gl|co|shop|site|club|vip|top|bet)\b|t\.me\/|bit\.ly\/|010-\d{3,4}-\d{4}|카지노|바카라|토토|슬롯|성인용품|조건만남|출장마사지|대출|작업대출|텔레그램|오픈카톡|유튜브\s*구독|무료\s*수익|코인가격|카톡\s*문의|casino|baccarat|viagra|telegram|whatsapp)/i;
       var SPAM_COMPACT_RE = /(https?:\/\/|www\.|카지노|바카라|사설토토|성인용품|조건만남|출장마사지|작업대출|텔레그램|오픈카톡|무료수익)/i;
 
       function containsSpamOrUrl(text) {
@@ -3914,9 +3914,9 @@
       var BLIND_REPORT_THRESHOLD = 3;
 
       var state = {
-        commentsMap: {},
-        localSecrets: {},
-        translations: {},
+        commentsMap: Object.create(null),
+        localSecrets: Object.create(null),
+        translations: Object.create(null),
         openReplyId: null,
         openMoreMenuId: null,
         openPinTarget: null, // { id: string, mode: 'edit' | 'delete' }
@@ -3925,13 +3925,31 @@
         remoteApi: null
       };
 
+      function setConnectionIndicator(isOnline) {
+        var dot = document.getElementById('comment-status-dot');
+        if (!dot) return;
+        if (isOnline) {
+          dot.classList.remove('bg-amber-400');
+          dot.classList.add('bg-emerald-400');
+        } else {
+          dot.classList.remove('bg-emerald-400');
+          dot.classList.add('bg-amber-400');
+        }
+      }
+
       function loadCachedComments() {
         var raw = safeStorage.getItem(CACHE_KEY);
         if (!raw) return;
         try {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
-            state.commentsMap = parsed;
+            var safeMap = Object.create(null);
+            for (var k in parsed) {
+              if (Object.prototype.hasOwnProperty.call(parsed, k) && safeStorage.getItem('ps_cdel_' + k) !== '1') {
+                safeMap[k] = parsed[k];
+              }
+            }
+            state.commentsMap = safeMap;
           }
         } catch (e) {}
       }
@@ -3997,8 +4015,8 @@
       }
 
       // ─── 5. 1-Click Free Inline Translation Engine (Google GTX + MyMemory Fallback + Session Cache) ───
-      function translateCommentText(commentId, rawText, sourceLang, targetLang, onDone) {
-        var cacheKey = 'ps_trans_' + commentId + '_' + targetLang;
+      function translateCommentText(commentId, rawText, sourceLang, targetLang, updatedAt, onDone) {
+        var cacheKey = 'ps_trans_' + commentId + '_' + Number(updatedAt || 0) + '_' + targetLang;
         var cached = safeSession.getItem(cacheKey);
         if (cached) {
           onDone(cached);
@@ -4031,8 +4049,11 @@
             fetch(mmUrl)
               .then(function (r) { return r.json(); })
               .then(function (d) {
-                var txt = (d && d.responseData && d.responseData.translatedText) ? d.responseData.translatedText : rawText;
-                safeSession.setItem(cacheKey, txt);
+                var isOk = d && Number(d.responseStatus) === 200 && !d.quotaFinished && d.responseData && d.responseData.translatedText;
+                var txt = isOk ? d.responseData.translatedText : rawText;
+                if (isOk) {
+                  safeSession.setItem(cacheKey, txt);
+                }
                 onDone(txt);
               })
               .catch(function () {
@@ -4045,17 +4066,17 @@
       function renderMoreMenuHtml(commentId, ui) {
         if (state.openMoreMenuId !== commentId) return '';
         return (
-          '<div class="absolute right-0 top-7 z-30 min-w-[128px] py-1 rounded-xl bg-[#18181c] border border-white/[0.12] shadow-2xl comment-animate-in">' +
-            '<button type="button" data-comment-action="open-pin" data-pin-mode="edit" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-zinc-200 hover:bg-white/[0.06] flex items-center gap-2 transition cursor-pointer">' +
+          '<div role="menu" class="absolute right-0 top-7 z-30 min-w-[128px] py-1 rounded-xl bg-[#18181c] border border-white/[0.12] shadow-2xl comment-animate-in">' +
+            '<button type="button" role="menuitem" data-comment-action="open-pin" data-pin-mode="edit" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-zinc-200 hover:bg-white/[0.06] flex items-center gap-2 transition cursor-pointer">' +
               '<svg class="w-3.5 h-3.5 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>' +
               '<span>' + escapeHtmlClient(ui.commentEditBtn || '수정') + '</span>' +
             '</button>' +
-            '<button type="button" data-comment-action="open-pin" data-pin-mode="delete" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-zinc-200 hover:bg-white/[0.06] flex items-center gap-2 transition cursor-pointer">' +
+            '<button type="button" role="menuitem" data-comment-action="open-pin" data-pin-mode="delete" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-zinc-200 hover:bg-white/[0.06] flex items-center gap-2 transition cursor-pointer">' +
               '<svg class="w-3.5 h-3.5 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>' +
               '<span>' + escapeHtmlClient(ui.commentDeleteBtn || '삭제') + '</span>' +
             '</button>' +
             '<div class="h-px bg-white/[0.08] my-1"></div>' +
-            '<button type="button" data-comment-action="report" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-rose-400 hover:bg-rose-500/10 flex items-center gap-2 transition cursor-pointer">' +
+            '<button type="button" role="menuitem" data-comment-action="report" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-rose-400 hover:bg-rose-500/10 flex items-center gap-2 transition cursor-pointer">' +
               '<svg class="w-3.5 h-3.5 text-rose-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>' +
               '<span>' + escapeHtmlClient(ui.commentReportBtn || '신고') + '</span>' +
             '</button>' +
@@ -4080,7 +4101,7 @@
         } else if (isEditing) {
           bodyHtml =
             '<div class="mt-2 rounded-xl bg-[#121215] border border-white/[0.14] p-2.5 comment-animate-in">' +
-              '<textarea id="edit-textarea-' + escapeHtmlClient(item.id) + '" rows="2" maxlength="300" class="w-full bg-transparent text-[13.5px] text-zinc-100 focus:outline-none resize-none select-text">' + escapeHtmlClient(item.content) + '</textarea>' +
+              '<textarea id="edit-textarea-' + escapeHtmlClient(item.id) + '" aria-label="' + escapeHtmlClient(ui.commentEditBtn || '수정') + '" rows="2" maxlength="300" class="w-full bg-transparent text-[13.5px] text-zinc-100 focus:outline-none resize-none select-text">' + escapeHtmlClient(item.content) + '</textarea>' +
               '<div class="flex items-center justify-end gap-2 pt-2 border-t border-white/[0.06] mt-1">' +
                 '<button type="button" data-comment-action="cancel-edit" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-2.5 py-1 rounded-full text-xs text-zinc-400 hover:text-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentCancelBtn || '취소') + '</button>' +
                 '<button type="button" data-comment-action="save-edit" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-3 py-1 rounded-full bg-white text-zinc-950 text-xs font-semibold hover:bg-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentSaveBtn || '저장') + '</button>' +
@@ -4148,12 +4169,12 @@
             ? (ui.commentDeleteBtn || '삭제')
             : (ui.commentEditBtn || '수정');
           pinPopoverHtml =
-            '<div class="mt-2.5 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#16161a] border border-white/[0.14] shadow-lg comment-animate-in">' +
+            '<div data-pin-popover="' + escapeHtmlClient(item.id) + '" class="mt-2.5 inline-flex flex-wrap items-center gap-2 max-w-full px-3 py-1.5 rounded-2xl sm:rounded-full bg-[#16161a] border border-white/[0.14] shadow-lg comment-animate-in">' +
               '<svg class="w-3.5 h-3.5 text-zinc-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' +
               '<span class="text-xs text-zinc-300">' + escapeHtmlClient(modeLabel) + ' PIN</span>' +
-              '<input id="pin-verify-input-' + escapeHtmlClient(item.id) + '" type="password" inputmode="numeric" maxlength="4" placeholder="••••" class="w-12 bg-white/[0.06] rounded-full px-2 py-0.5 text-xs font-mono text-center text-white focus:outline-none border border-white/[0.12] select-text" />' +
+              '<input id="pin-verify-input-' + escapeHtmlClient(item.id) + '" aria-label="PIN" type="password" inputmode="numeric" maxlength="4" placeholder="••••" class="w-12 bg-white/[0.06] rounded-full px-2 py-0.5 text-xs font-mono text-center text-white focus:outline-none border border-white/[0.12] select-text" />' +
               '<button type="button" data-comment-action="confirm-pin" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-2.5 py-0.5 rounded-full bg-white text-zinc-950 text-xs font-semibold hover:bg-zinc-200 transition cursor-pointer">' + escapeHtmlClient(ui.commentConfirmBtn || '확인') + '</button>' +
-              '<button type="button" data-comment-action="close-pin" data-comment-id="' + escapeHtmlClient(item.id) + '" class="text-xs text-zinc-500 hover:text-zinc-300 px-1 cursor-pointer">✕</button>' +
+              '<button type="button" data-comment-action="close-pin" data-comment-id="' + escapeHtmlClient(item.id) + '" aria-label="' + escapeHtmlClient(ui.commentCancelBtn || '취소') + '" class="text-xs text-zinc-500 hover:text-zinc-300 px-1 cursor-pointer">✕</button>' +
             '</div>';
         }
 
@@ -4163,11 +4184,11 @@
           var currentNick = (document.getElementById('comment-nickname') && document.getElementById('comment-nickname').value) || (ui.commentDefaultNickname || '생존자');
           replyFormHtml =
             '<div class="mt-3 rounded-xl bg-[#121215] border border-white/[0.12] p-2.5 comment-animate-in">' +
-              '<textarea id="reply-textarea-' + escapeHtmlClient(item.id) + '" rows="2" maxlength="300" placeholder="@' + escapeHtmlClient(item.nickname) + '..." class="w-full bg-transparent text-xs text-zinc-100 placeholder-zinc-500 focus:outline-none resize-none px-1 select-text"></textarea>' +
+              '<textarea id="reply-textarea-' + escapeHtmlClient(item.id) + '" aria-label="' + escapeHtmlClient(ui.commentReplyBtn || '답글') + '" rows="2" maxlength="300" placeholder="@' + escapeHtmlClient(item.nickname) + '..." class="w-full bg-transparent text-xs text-zinc-100 placeholder-zinc-500 focus:outline-none resize-none px-1 select-text"></textarea>' +
               '<div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-white/[0.06] mt-1">' +
                 '<div class="flex items-center gap-1.5">' +
-                  '<input id="reply-nick-' + escapeHtmlClient(item.id) + '" type="text" maxlength="16" value="' + escapeHtmlClient(currentNick) + '" class="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] text-zinc-200 w-24 focus:outline-none select-text" />' +
-                  '<input id="reply-pin-' + escapeHtmlClient(item.id) + '" type="password" inputmode="numeric" maxlength="4" placeholder="••••" class="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] font-mono text-zinc-200 w-14 text-center focus:outline-none select-text" />' +
+                  '<input id="reply-nick-' + escapeHtmlClient(item.id) + '" aria-label="' + escapeHtmlClient(ui.commentNicknameLabel || '닉네임') + '" type="text" maxlength="16" value="' + escapeHtmlClient(currentNick) + '" class="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] text-zinc-200 w-24 focus:outline-none select-text" />' +
+                  '<input id="reply-pin-' + escapeHtmlClient(item.id) + '" aria-label="PIN" type="password" inputmode="numeric" maxlength="4" placeholder="••••" class="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] font-mono text-zinc-200 w-14 text-center focus:outline-none select-text" />' +
                 '</div>' +
                 '<div class="flex items-center gap-1.5 ml-auto">' +
                   '<button type="button" data-comment-action="toggle-reply" data-comment-id="' + escapeHtmlClient(item.id) + '" class="px-2.5 py-1 rounded-full text-xs text-zinc-400 hover:text-zinc-200 cursor-pointer">' + escapeHtmlClient(ui.commentCancelBtn || '취소') + '</button>' +
@@ -4189,7 +4210,7 @@
 
         var moreMenuBtnHtml =
           '<div class="relative">' +
-            '<button type="button" data-comment-action="toggle-more" data-comment-id="' + escapeHtmlClient(item.id) + '" aria-expanded="' + (state.openMoreMenuId === item.id ? 'true' : 'false') + '" class="opacity-70 hover:opacity-100 text-zinc-400 hover:text-zinc-200 p-1 rounded-lg hover:bg-white/[0.06] transition cursor-pointer">' +
+            '<button type="button" data-comment-action="toggle-more" data-comment-id="' + escapeHtmlClient(item.id) + '" aria-label="더보기" aria-haspopup="menu" aria-expanded="' + (state.openMoreMenuId === item.id ? 'true' : 'false') + '" class="opacity-70 hover:opacity-100 text-zinc-400 hover:text-zinc-200 p-1 rounded-lg hover:bg-white/[0.06] transition cursor-pointer">' +
               '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>' +
             '</button>' +
             renderMoreMenuHtml(item.id, ui) +
@@ -4256,12 +4277,23 @@
         var countEl = document.getElementById('comment-total-count');
         if (!listEl) return;
 
+        // 리렌더링 전 활성 입력창 초안 및 포커스 보존
+        var draftValues = Object.create(null);
+        var activeElId = (document.activeElement && document.activeElement.id) ? document.activeElement.id : '';
+        var inputs = listEl.querySelectorAll('textarea[id], input[id]');
+        for (var dIdx = 0; dIdx < inputs.length; dIdx++) {
+          var inp = inputs[dIdx];
+          if (inp && inp.id) draftValues[inp.id] = inp.value;
+        }
+
         var ui = getUi();
         var allItems = [];
         var keys = Object.keys(state.commentsMap || {});
         for (var i = 0; i < keys.length; i++) {
           var c = state.commentsMap[keys[i]];
           if (c && c.id && typeof c.content === 'string') {
+            // 부모 댓글이 삭제된 고아 답글(Orphan Reply)은 카운트 및 렌더링에서 제외
+            if (c.parentId && !state.commentsMap[c.parentId]) continue;
             allItems.push(c);
           }
         }
@@ -4279,13 +4311,13 @@
         }
 
         var parents = [];
-        var repliesByParent = {};
+        var repliesByParent = Object.create(null);
         for (var j = 0; j < allItems.length; j++) {
           var item = allItems[j];
           if (!item.parentId) {
             parents.push(item);
           } else {
-            if (!repliesByParent[item.parentId]) repliesByParent[item.parentId] = [];
+            if (!Array.isArray(repliesByParent[item.parentId])) repliesByParent[item.parentId] = [];
             repliesByParent[item.parentId].push(item);
           }
         }
@@ -4307,10 +4339,41 @@
         }
 
         listEl.innerHTML = htmlParts.join('');
+
+        // 보존된 입력 초안 및 포커스 복원
+        for (var savedId in draftValues) {
+          var restoredEl = document.getElementById(savedId);
+          if (restoredEl && typeof draftValues[savedId] === 'string') {
+            restoredEl.value = draftValues[savedId];
+          }
+        }
+        if (activeElId) {
+          var focusEl = document.getElementById(activeElId);
+          if (focusEl && typeof focusEl.focus === 'function') {
+            try { focusEl.focus(); } catch (e) {}
+          }
+        }
       }
 
       // 다국어 전환 시(switchLocale) 0.01초 즉시 리렌더링 훅 노출
       window.__refreshCommentLocale__ = function () {
+        var ui = getUi();
+        state.translations = Object.create(null);
+        var nickInput = document.getElementById('comment-nickname');
+        var pinInput = document.getElementById('comment-pin');
+        if (nickInput) {
+          nickInput.setAttribute('aria-label', ui.commentNicknameLabel || '닉네임');
+          if (!safeStorage.getItem(NICK_KEY)) {
+            var parts = String(nickInput.value || '').split('-');
+            var suffix = (parts.length > 1 && /^[0-9]{4}$/.test(parts[parts.length - 1]))
+              ? parts[parts.length - 1]
+              : String(Math.floor(1000 + Math.random() * 9000));
+            nickInput.value = (ui.commentDefaultNickname || '생존자') + '-' + suffix;
+          }
+        }
+        if (pinInput) {
+          pinInput.setAttribute('aria-label', ui.commentPinLabel || '비밀번호 (4자리)');
+        }
         renderFeed();
       };
 
@@ -4364,7 +4427,8 @@
           lang: getActiveLang(),
           createdAt: now,
           updatedAt: now,
-          reports: 0
+          reports: 0,
+          unsynced: true
         };
 
         // 낙관적 로컬 상태 반영
@@ -4398,16 +4462,30 @@
             }
           }
         }
+        if (Array.isArray(state.pendingCreates) && state.pendingCreates.length > 0) {
+          var nextPending = [];
+          for (var pIdx = 0; pIdx < state.pendingCreates.length; pIdx++) {
+            var pItem = state.pendingCreates[pIdx];
+            if (pItem && pItem.comment && pItem.comment.id !== commentId && pItem.comment.parentId !== commentId) {
+              nextPending.push(pItem);
+            }
+          }
+          state.pendingCreates = nextPending;
+        }
         delete state.localSecrets[commentId];
+        delete state.translations[commentId];
         safeStorage.removeItem('ps_csec_' + commentId);
         safeStorage.setItem('ps_cdel_' + commentId, '1');
         state.openPinTarget = null;
+        if (state.editingId === commentId) state.editingId = null;
+        if (state.openReplyId === commentId) state.openReplyId = null;
         saveCachedComments();
         renderFeed();
         notifyToast(ui.commentToastDeleted || '피드백이 삭제되었습니다.');
       }
 
       function handleVerifyPin(commentId, inputPin) {
+        hideAlert();
         var ui = getUi();
         if (!/^[0-9]{4}$/.test(String(inputPin || '').trim())) {
           showAlert(ui.commentErrPin || '비밀번호는 숫자 4자리로 입력해주세요.');
@@ -4444,10 +4522,28 @@
             showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
           }
         } else if (target.mode === 'edit') {
-          state.localSecrets[commentId] = computedHash;
-          state.openPinTarget = null;
-          state.editingId = commentId;
-          renderFeed();
+          if (storedLocalHash && storedLocalHash === computedHash) {
+            state.localSecrets[commentId] = computedHash;
+            state.openPinTarget = null;
+            state.editingId = commentId;
+            renderFeed();
+            return;
+          }
+          if (state.remoteApi && typeof state.remoteApi.verifyPin === 'function') {
+            state.remoteApi.verifyPin(commentId, computedHash, function (ok) {
+              if (!ok) {
+                showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+                return;
+              }
+              state.localSecrets[commentId] = computedHash;
+              safeStorage.setItem('ps_csec_' + commentId, computedHash);
+              state.openPinTarget = null;
+              state.editingId = commentId;
+              renderFeed();
+            });
+          } else {
+            showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
+          }
         }
       }
 
@@ -4545,7 +4641,6 @@
             var suffix = String(Math.floor(1000 + Math.random() * 9000));
             var generated = (ui.commentDefaultNickname || '생존자') + '-' + suffix;
             nickInput.value = generated;
-            safeStorage.setItem(NICK_KEY, generated);
           }
         }
 
@@ -4584,18 +4679,56 @@
           });
         }
 
-        // 외부 영역 클릭 시 더보기(⋯) 메뉴 자동 닫기
+        // 외부 영역 클릭 시 더보기(⋯) 메뉴 및 PIN 팝오버 자동 닫기
         document.addEventListener('click', function (e) {
-          if (!state.openMoreMenuId) return;
-          var clickedAction = e.target && e.target.closest ? e.target.closest('[data-comment-action]') : null;
-          if (!clickedAction) {
+          if (!state.openMoreMenuId && !state.openPinTarget) return;
+          var targetEl = e.target && e.target.closest ? e.target : null;
+          var clickedAction = targetEl ? targetEl.closest('[data-comment-action]') : null;
+          var clickedPopover = targetEl ? targetEl.closest('[data-pin-popover]') : null;
+          if (!clickedAction && !clickedPopover) {
             state.openMoreMenuId = null;
+            state.openPinTarget = null;
             renderFeed();
           }
         });
 
         var threadListEl = document.getElementById('comment-thread-list');
         if (threadListEl) {
+          threadListEl.addEventListener('keydown', function (e) {
+            var t = e.target;
+            if (!t || !t.id) return;
+            if (e.key === 'Escape') {
+              if (state.openMoreMenuId || state.openPinTarget || state.openReplyId || state.editingId) {
+                state.openMoreMenuId = null;
+                state.openPinTarget = null;
+                state.openReplyId = null;
+                state.editingId = null;
+                renderFeed();
+              }
+              return;
+            }
+            if (t.id.indexOf('pin-verify-input-') === 0 && e.key === 'Enter') {
+              e.preventDefault();
+              var pinCid = t.id.replace('pin-verify-input-', '');
+              handleVerifyPin(pinCid, t.value || '');
+            } else if (t.id.indexOf('reply-textarea-') === 0 && (e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+              e.preventDefault();
+              var repCid = t.id.replace('reply-textarea-', '');
+              var rNickEl = document.getElementById('reply-nick-' + repCid);
+              var rPinEl = document.getElementById('reply-pin-' + repCid);
+              handleCreateComment(
+                repCid,
+                rNickEl ? rNickEl.value : '',
+                rPinEl ? rPinEl.value : (pinInput ? pinInput.value : ''),
+                t.value || ''
+              );
+            } else if (t.id.indexOf('edit-textarea-') === 0 && (e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+              e.preventDefault();
+              var editCid = t.id.replace('edit-textarea-', '');
+              handleSaveEdit(editCid, t.value || '');
+            }
+          });
+
           threadListEl.addEventListener('click', function (e) {
             var btn = e.target.closest('[data-comment-action]');
             if (!btn) return;
@@ -4627,6 +4760,7 @@
               if (!item) return;
               state.openMoreMenuId = null;
               var cur = state.translations[cId];
+              if (cur && cur.loading) return;
               if (cur && cur.visible) {
                 cur.visible = false;
                 renderFeed();
@@ -4634,7 +4768,7 @@
               }
               state.translations[cId] = { visible: true, loading: true, text: '' };
               renderFeed();
-              translateCommentText(cId, item.content, item.lang, getActiveLang(), function (translatedText) {
+              translateCommentText(cId, item.content, item.lang, getActiveLang(), item.updatedAt, function (translatedText) {
                 state.translations[cId] = { visible: true, loading: false, text: translatedText };
                 renderFeed();
               });
@@ -4672,7 +4806,10 @@
       initPhase1();
 
       // ─── 9. Phase 2 Remote Firebase Realtime Database Sync ───
-      if (!config || !config.apiKey || config.disabled || config.apiKey.indexOf('your_') === 0) return;
+      if (!config || !config.apiKey || config.disabled || config.apiKey.indexOf('your_') === 0) {
+        setConnectionIndicator(false);
+        return;
+      }
 
       Promise.all([
         import('https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js'),
@@ -4702,10 +4839,23 @@
               reports: 0
             };
             updates['comment_secrets/' + pid + '/' + commentObj.id + '/pinHash'] = pinHash;
-            updates['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = pinHash;
-            update(ref(db), updates).catch(function (err) {
-              console.warn('[SurvivalProtocol Comments] Firebase RTDB write failed (ensure database.rules.json is published in Firebase Console):', err);
-            });
+            update(ref(db), updates)
+              .then(function () {
+                if (state.commentsMap[commentObj.id]) {
+                  delete state.commentsMap[commentObj.id].unsynced;
+                  saveCachedComments();
+                }
+              })
+              .catch(function (err) {
+                console.warn('[SurvivalProtocol Comments] Firebase RTDB write failed (ensure database.rules.json is published in Firebase Console):', err);
+              });
+          },
+          verifyPin: function (commentId, proofHash, cb) {
+            var secretUpdate = {};
+            secretUpdate['comment_secrets/' + pid + '/' + commentId + '/verifiedHash'] = proofHash;
+            update(ref(db), secretUpdate)
+              .then(function () { if (cb) cb(true); })
+              .catch(function () { if (cb) cb(false); });
           },
           updateComment: function (commentObj, proofHash, cb) {
             var secretUpdate = {};
@@ -4721,6 +4871,7 @@
               updatedAt: commentObj.updatedAt,
               reports: Number(commentObj.reports || 0)
             };
+            commentUpdate['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = null;
             update(ref(db), secretUpdate)
               .then(function () {
                 return update(ref(db), commentUpdate);
@@ -4730,7 +4881,6 @@
                 // 로컬에만 존재하던 댓글(규칙 게시 전 작성분)인 경우 원격 생성으로 폴백 동기화
                 var fallbackUpdates = {};
                 fallbackUpdates['comment_secrets/' + pid + '/' + commentObj.id + '/pinHash'] = proofHash;
-                fallbackUpdates['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = proofHash;
                 fallbackUpdates['protocol_comments/' + pid + '/' + commentObj.id] = commentUpdate['protocol_comments/' + pid + '/' + commentObj.id];
                 update(ref(db), fallbackUpdates)
                   .then(function () { if (cb) cb(true); })
@@ -4745,6 +4895,7 @@
             secretUpdate['comment_secrets/' + pid + '/' + commentId + '/verifiedHash'] = proofHash;
             var deleteUpdate = {};
             deleteUpdate['protocol_comments/' + pid + '/' + commentId] = null;
+            deleteUpdate['comment_secrets/' + pid + '/' + commentId + '/verifiedHash'] = null;
             update(ref(db), secretUpdate)
               .then(function () {
                 return update(ref(db), deleteUpdate);
@@ -4773,32 +4924,36 @@
 
         var commentsRef = ref(db, 'protocol_comments/' + pid);
         onValue(commentsRef, function (snap) {
+          setConnectionIndicator(true);
           var remoteMap = (snap && snap.exists() && snap.val() && typeof snap.val() === 'object') ? snap.val() : {};
-          var filteredRemote = {};
+          var nextMap = Object.create(null);
           for (var rk in remoteMap) {
             if (Object.prototype.hasOwnProperty.call(remoteMap, rk)) {
               if (safeStorage.getItem('ps_cdel_' + rk) !== '1') {
-                filteredRemote[rk] = remoteMap[rk];
+                nextMap[rk] = remoteMap[rk];
               }
             }
           }
-          // 로컬에만 남아있던 미동기화 본인 작성 댓글을 자동으로 원격 DB에 백업 동기화
+          // 로컬에만 남아있던 미동기화(unsynced) 본인 작성 댓글만 원격 DB에 백업 동기화 및 유지
           for (var lk in state.commentsMap) {
             if (Object.prototype.hasOwnProperty.call(state.commentsMap, lk)) {
               var localItem = state.commentsMap[lk];
               var localSec = safeStorage.getItem('ps_csec_' + lk);
-              if (localItem && localSec && !filteredRemote[lk] && safeStorage.getItem('ps_cdel_' + lk) !== '1') {
+              if (localItem && localItem.unsynced && localSec && !nextMap[lk] && safeStorage.getItem('ps_cdel_' + lk) !== '1') {
+                nextMap[lk] = localItem;
                 state.remoteApi.createComment(localItem, localSec);
               }
             }
           }
-          var merged = Object.assign({}, state.commentsMap, filteredRemote);
-          state.commentsMap = merged;
+          state.commentsMap = nextMap;
           saveCachedComments();
           renderFeed();
+        }, function () {
+          setConnectionIndicator(false);
         }, { onlyOnce: true });
       }).catch(function () {
         // 오프라인 / 방화벽 차단 시 로컬 캐시 모드로 무결성 유지
+        setConnectionIndicator(false);
       });
     })();
 

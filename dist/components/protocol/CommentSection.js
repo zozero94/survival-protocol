@@ -24,7 +24,7 @@ export function renderCommentSection(defaultLocale                  = 'ko')     
     #comment-section .rounded-bl-xl { border-bottom-left-radius: 0.75rem !important; }
     @keyframes commentFadeSlide {
       from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; transform: none; }
     }
     #comment-section .comment-animate-in {
       animation: commentFadeSlide 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
