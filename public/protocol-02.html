@@ -3481,8 +3481,10 @@
         localSecrets: {},
         translations: {},
         openReplyId: null,
+        openMoreMenuId: null,
         openPinTarget: null, // { id: string, mode: 'edit' | 'delete' }
         editingId: null,
+        pendingCreates: [], // [{ comment: obj, pinHash: string }]
         remoteApi: null
       };
 
@@ -3586,7 +3588,6 @@
             onDone(translated);
           })
           .catch(function () {
-            // Fallback: MyMemory Free Translation API
             var sl = (sourceLang && sourceLang !== targetLang) ? sourceLang : 'en';
             var mmUrl = 'https://api.mymemory.translated.net/get?q=' +
               encodeURIComponent(rawText) + '&langpair=' + encodeURIComponent(sl + '|' + gtxTarget);
@@ -3604,6 +3605,27 @@
       }
 
       // ─── 6. Render Comment Feed (Sleek Linear / Vercel Dark Style) ───
+      function renderMoreMenuHtml(commentId, ui) {
+        if (state.openMoreMenuId !== commentId) return '';
+        return (
+          '<div class="absolute right-0 top-7 z-30 min-w-[128px] py-1 rounded-xl bg-[#18181c] border border-white/[0.12] shadow-2xl comment-animate-in">' +
+            '<button type="button" data-comment-action="open-pin" data-pin-mode="edit" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-zinc-200 hover:bg-white/[0.06] flex items-center gap-2 transition cursor-pointer">' +
+              '<svg class="w-3.5 h-3.5 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>' +
+              '<span>' + escapeHtmlClient(ui.commentEditBtn || '수정') + '</span>' +
+            '</button>' +
+            '<button type="button" data-comment-action="open-pin" data-pin-mode="delete" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-zinc-200 hover:bg-white/[0.06] flex items-center gap-2 transition cursor-pointer">' +
+              '<svg class="w-3.5 h-3.5 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>' +
+              '<span>' + escapeHtmlClient(ui.commentDeleteBtn || '삭제') + '</span>' +
+            '</button>' +
+            '<div class="h-px bg-white/[0.08] my-1"></div>' +
+            '<button type="button" data-comment-action="report" data-comment-id="' + escapeHtmlClient(commentId) + '" class="w-full px-3 py-1.5 text-left text-xs text-rose-400 hover:bg-rose-500/10 flex items-center gap-2 transition cursor-pointer">' +
+              '<svg class="w-3.5 h-3.5 text-rose-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>' +
+              '<span>' + escapeHtmlClient(ui.commentReportBtn || '신고') + '</span>' +
+            '</button>' +
+          '</div>'
+        );
+      }
+
       function renderCommentItemHtml(item, replies, ui) {
         var isReply = Boolean(item.parentId);
         var isBlinded = Number(item.reports || 0) >= BLIND_REPORT_THRESHOLD;
@@ -3728,6 +3750,14 @@
           nestedRepliesHtml = '<div class="mt-4 space-y-4">' + rItems.join('') + '</div>';
         }
 
+        var moreMenuBtnHtml =
+          '<div class="relative">' +
+            '<button type="button" data-comment-action="toggle-more" data-comment-id="' + escapeHtmlClient(item.id) + '" aria-expanded="' + (state.openMoreMenuId === item.id ? 'true' : 'false') + '" class="opacity-70 hover:opacity-100 text-zinc-400 hover:text-zinc-200 p-1 rounded-lg hover:bg-white/[0.06] transition cursor-pointer">' +
+              '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>' +
+            '</button>' +
+            renderMoreMenuHtml(item.id, ui) +
+          '</div>';
+
         if (isReply) {
           return (
             '<div class="relative flex gap-3 comment-animate-in" data-comment-node="' + escapeHtmlClient(item.id) + '">' +
@@ -3743,9 +3773,7 @@
                     '<span class="text-xs text-zinc-500">· ' + escapeHtmlClient(timeLabel) + '</span>' +
                     (isEdited ? '<span class="text-[11px] text-zinc-500">' + escapeHtmlClient(ui.commentEditedTag || '(수정됨)') + '</span>' : '') +
                   '</div>' +
-                  '<button type="button" data-comment-action="report" data-comment-id="' + escapeHtmlClient(item.id) + '" class="opacity-60 hover:opacity-100 text-zinc-500 hover:text-zinc-300 p-1 rounded-lg hover:bg-white/[0.05] transition cursor-pointer" title="' + escapeHtmlClient(ui.commentReportBtn || '신고') + '">' +
-                    '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>' +
-                  '</button>' +
+                  moreMenuBtnHtml +
                 '</div>' +
                 bodyHtml +
                 transHtml +
@@ -3772,9 +3800,7 @@
                     '<span class="text-xs text-zinc-500">· ' + escapeHtmlClient(timeLabel) + '</span>' +
                     (isEdited ? '<span class="text-[11px] text-zinc-500">' + escapeHtmlClient(ui.commentEditedTag || '(수정됨)') + '</span>' : '') +
                   '</div>' +
-                  '<button type="button" data-comment-action="report" data-comment-id="' + escapeHtmlClient(item.id) + '" class="opacity-60 hover:opacity-100 text-zinc-500 hover:text-zinc-300 p-1 rounded-lg hover:bg-white/[0.05] transition cursor-pointer" title="' + escapeHtmlClient(ui.commentReportBtn || '신고') + '">' +
-                    '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>' +
-                  '</button>' +
+                  moreMenuBtnHtml +
                 '</div>' +
                 bodyHtml +
                 transHtml +
@@ -3827,7 +3853,6 @@
           }
         }
 
-        // 최신 부모 댓글이 위로 오도록 정렬, 대댓글은 시간순 정렬
         parents.sort(function (a, b) { return Number(b.createdAt || 0) - Number(a.createdAt || 0); });
         var parentIds = Object.keys(repliesByParent);
         for (var k = 0; k < parentIds.length; k++) {
@@ -3912,12 +3937,15 @@
         safeStorage.setItem(NICK_KEY, nickname);
         safeStorage.setItem(LAST_POST_KEY, String(now));
         state.openReplyId = null;
+        state.openMoreMenuId = null;
         saveCachedComments();
         renderFeed();
         notifyToast(ui.commentToastPosted || '피드백이 등록되었습니다.');
 
         if (state.remoteApi && typeof state.remoteApi.createComment === 'function') {
           state.remoteApi.createComment(newComment, pinHash);
+        } else {
+          state.pendingCreates.push({ comment: newComment, pinHash: pinHash });
         }
         return true;
       }
@@ -3940,7 +3968,6 @@
         }
 
         if (target.mode === 'delete') {
-          // 원격 권한 검증 후 삭제 또는 로컬 즉시 삭제
           if (state.remoteApi && typeof state.remoteApi.deleteComment === 'function') {
             state.remoteApi.deleteComment(commentId, computedHash, function (ok) {
               if (!ok) {
@@ -4022,8 +4049,10 @@
 
       function handleReportComment(commentId) {
         var ui = getUi();
+        state.openMoreMenuId = null;
         var reportKey = 'ps_creport_' + commentId;
         if (safeStorage.getItem(reportKey) === '1') {
+          renderFeed();
           notifyToast(ui.commentToastReported || '신고가 접수되었습니다.');
           return;
         }
@@ -4094,6 +4123,16 @@
           });
         }
 
+        // 외부 영역 클릭 시 더보기(⋯) 메뉴 자동 닫기
+        document.addEventListener('click', function (e) {
+          if (!state.openMoreMenuId) return;
+          var clickedAction = e.target && e.target.closest ? e.target.closest('[data-comment-action]') : null;
+          if (!clickedAction) {
+            state.openMoreMenuId = null;
+            renderFeed();
+          }
+        });
+
         var threadListEl = document.getElementById('comment-thread-list');
         if (threadListEl) {
           threadListEl.addEventListener('click', function (e) {
@@ -4103,8 +4142,13 @@
             var cId = btn.getAttribute('data-comment-id');
             if (!cId) return;
 
-            if (action === 'toggle-reply') {
+            if (action === 'toggle-more') {
+              e.stopPropagation();
+              state.openMoreMenuId = (state.openMoreMenuId === cId) ? null : cId;
+              renderFeed();
+            } else if (action === 'toggle-reply') {
               state.openReplyId = (state.openReplyId === cId) ? null : cId;
+              state.openMoreMenuId = null;
               state.openPinTarget = null;
               renderFeed();
             } else if (action === 'submit-reply') {
@@ -4120,6 +4164,7 @@
             } else if (action === 'translate') {
               var item = state.commentsMap[cId];
               if (!item) return;
+              state.openMoreMenuId = null;
               var cur = state.translations[cId];
               if (cur && cur.visible) {
                 cur.visible = false;
@@ -4134,6 +4179,7 @@
               });
             } else if (action === 'open-pin') {
               var mode = btn.getAttribute('data-pin-mode') || 'edit';
+              state.openMoreMenuId = null;
               if (state.openPinTarget && state.openPinTarget.id === cId && state.openPinTarget.mode === mode) {
                 state.openPinTarget = null;
               } else {
@@ -4164,98 +4210,103 @@
 
       initPhase1();
 
-      // ─── 9. Phase 2 Background Remote Firebase Sync ───
+      // ─── 9. Phase 2 Remote Firebase Realtime Database Sync ───
       if (!config || !config.apiKey || config.disabled || config.apiKey.indexOf('your_') === 0) return;
 
-      var scheduleRemote = window.requestIdleCallback || function (cb) { setTimeout(cb, 450); };
-      scheduleRemote(function () {
-        Promise.all([
-          import('https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js'),
-          import('https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js')
-        ]).then(function (modules) {
-          var appMod = modules[0];
-          var dbMod = modules[1];
-          var app = (appMod.getApps && appMod.getApps().length > 0)
-            ? appMod.getApps()[0]
-            : appMod.initializeApp(config);
-          var db = dbMod.getDatabase(app);
-          var ref = dbMod.ref;
-          var onValue = dbMod.onValue;
-          var update = dbMod.update;
-          var serverTimestamp = dbMod.serverTimestamp;
+      Promise.all([
+        import('https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js'),
+        import('https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js')
+      ]).then(function (modules) {
+        var appMod = modules[0];
+        var dbMod = modules[1];
+        var app = (appMod.getApps && appMod.getApps().length > 0)
+          ? appMod.getApps()[0]
+          : appMod.initializeApp(config);
+        var db = dbMod.getDatabase(app);
+        var ref = dbMod.ref;
+        var onValue = dbMod.onValue;
+        var update = dbMod.update;
 
-          var commentsRef = ref(db, 'protocol_comments/' + pid);
-          onValue(commentsRef, function (snap) {
-            if (snap && snap.exists()) {
-              var val = snap.val();
-              if (val && typeof val === 'object') {
-                state.commentsMap = val;
-                saveCachedComments();
-                renderFeed();
-              }
-            }
-          }, { onlyOnce: true });
+        state.remoteApi = {
+          createComment: function (commentObj, pinHash) {
+            var updates = {};
+            updates['protocol_comments/' + pid + '/' + commentObj.id] = {
+              id: commentObj.id,
+              parentId: commentObj.parentId,
+              nickname: commentObj.nickname,
+              content: commentObj.content,
+              lang: commentObj.lang,
+              createdAt: commentObj.createdAt,
+              updatedAt: commentObj.updatedAt,
+              reports: 0
+            };
+            updates['comment_secrets/' + pid + '/' + commentObj.id + '/pinHash'] = pinHash;
+            updates['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = pinHash;
+            update(ref(db), updates).catch(function (err) {
+              console.warn('[SurvivalProtocol Comments] Firebase RTDB write failed (ensure database.rules.json is published in Firebase Console):', err);
+            });
+          },
+          updateComment: function (commentObj, proofHash, cb) {
+            var updates = {};
+            updates['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = proofHash;
+            updates['protocol_comments/' + pid + '/' + commentObj.id] = {
+              id: commentObj.id,
+              parentId: commentObj.parentId,
+              nickname: commentObj.nickname,
+              content: commentObj.content,
+              lang: commentObj.lang,
+              createdAt: commentObj.createdAt,
+              updatedAt: commentObj.updatedAt,
+              reports: Number(commentObj.reports || 0)
+            };
+            update(ref(db), updates)
+              .then(function () { if (cb) cb(true); })
+              .catch(function (err) {
+                console.warn('[SurvivalProtocol Comments] Firebase RTDB update failed:', err);
+                if (cb) cb(false);
+              });
+          },
+          deleteComment: function (commentId, proofHash, cb) {
+            var updates = {};
+            updates['comment_secrets/' + pid + '/' + commentId + '/verifiedHash'] = proofHash;
+            updates['protocol_comments/' + pid + '/' + commentId] = null;
+            update(ref(db), updates)
+              .then(function () { if (cb) cb(true); })
+              .catch(function (err) {
+                console.warn('[SurvivalProtocol Comments] Firebase RTDB delete failed:', err);
+                if (cb) cb(false);
+              });
+          },
+          reportComment: function (commentObj) {
+            var updates = {};
+            updates['protocol_comments/' + pid + '/' + commentObj.id + '/reports'] = Number(commentObj.reports || 1);
+            update(ref(db), updates).catch(function () {});
+          }
+        };
 
-          state.remoteApi = {
-            createComment: function (commentObj, pinHash) {
-              var ts = serverTimestamp();
-              var updates = {};
-              updates['protocol_comments/' + pid + '/' + commentObj.id] = {
-                id: commentObj.id,
-                parentId: commentObj.parentId,
-                nickname: commentObj.nickname,
-                content: commentObj.content,
-                lang: commentObj.lang,
-                createdAt: commentObj.createdAt,
-                updatedAt: commentObj.updatedAt,
-                reports: 0
-              };
-              updates['comment_secrets/' + pid + '/' + commentObj.id] = {
-                pinHash: pinHash,
-                proofHash: pinHash,
-                proofTs: ts
-              };
-              updates['comment_ratelimit/' + pid + '/lastWriteAt'] = ts;
-              update(ref(db), updates).catch(function () {});
-            },
-            updateComment: function (commentObj, proofHash, cb) {
-              var ts = serverTimestamp();
-              var updates = {};
-              updates['comment_secrets/' + pid + '/' + commentObj.id + '/proofHash'] = proofHash;
-              updates['comment_secrets/' + pid + '/' + commentObj.id + '/proofTs'] = ts;
-              updates['protocol_comments/' + pid + '/' + commentObj.id] = {
-                id: commentObj.id,
-                parentId: commentObj.parentId,
-                nickname: commentObj.nickname,
-                content: commentObj.content,
-                lang: commentObj.lang,
-                createdAt: commentObj.createdAt,
-                updatedAt: commentObj.updatedAt,
-                reports: Number(commentObj.reports || 0)
-              };
-              update(ref(db), updates)
-                .then(function () { if (cb) cb(true); })
-                .catch(function () { if (cb) cb(false); });
-            },
-            deleteComment: function (commentId, proofHash, cb) {
-              var ts = serverTimestamp();
-              var updates = {};
-              updates['comment_secrets/' + pid + '/' + commentId + '/proofHash'] = proofHash;
-              updates['comment_secrets/' + pid + '/' + commentId + '/proofTs'] = ts;
-              updates['protocol_comments/' + pid + '/' + commentId] = null;
-              update(ref(db), updates)
-                .then(function () { if (cb) cb(true); })
-                .catch(function () { if (cb) cb(false); });
-            },
-            reportComment: function (commentObj) {
-              var updates = {};
-              updates['protocol_comments/' + pid + '/' + commentObj.id + '/reports'] = Number(commentObj.reports || 1);
-              update(ref(db), updates).catch(function () {});
+        // 대기열에 있던 로컬 작성 건 즉시 원격 DB로 플러시
+        if (state.pendingCreates.length > 0) {
+          for (var p = 0; p < state.pendingCreates.length; p++) {
+            var item = state.pendingCreates[p];
+            state.remoteApi.createComment(item.comment, item.pinHash);
+          }
+          state.pendingCreates = [];
+        }
+
+        var commentsRef = ref(db, 'protocol_comments/' + pid);
+        onValue(commentsRef, function (snap) {
+          if (snap && snap.exists()) {
+            var val = snap.val();
+            if (val && typeof val === 'object') {
+              var merged = Object.assign({}, state.commentsMap, val);
+              state.commentsMap = merged;
+              saveCachedComments();
+              renderFeed();
             }
-          };
-        }).catch(function () {
-          // 오프라인 / 방화벽 차단 시 로컬 캐시 모드로 무결성 유지
-        });
+          }
+        }, { onlyOnce: true });
+      }).catch(function () {
+        // 오프라인 / 방화벽 차단 시 로컬 캐시 모드로 무결성 유지
       });
     })();
 

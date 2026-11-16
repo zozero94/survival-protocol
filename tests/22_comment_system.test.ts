@@ -77,7 +77,7 @@ test('Comment Suite 22-2: renderCommentSection 모던 다크 UI 마크업 및 A1
   assert.match(html, /id="comment-thread-list"/, '댓글 스레드 리스트 컨테이너가 존재해야 합니다.');
 });
 
-test('Comment Suite 22-3: getCommentRuntimeScript 구문 유효성, 2-Factor SHA-256, 스팸 차단, 번역 엔진 검증', () => {
+test('Comment Suite 22-3: getCommentRuntimeScript 구문 유효성, 더보기(⋯) 메뉴, 2-Factor SHA-256, 스팸 차단, 번역 엔진 검증', () => {
   const script = getCommentRuntimeScript();
 
   assert.doesNotThrow(() => {
@@ -89,17 +89,22 @@ test('Comment Suite 22-3: getCommentRuntimeScript 구문 유효성, 2-Factor SHA
   assert.match(script, /ps_comment_device_token/, '256-bit 기기 고유 시크릿 토큰 키가 포함되어야 합니다.');
   assert.match(script, /computePinHash/, '기기 토큰과 4자리 PIN을 결합하는 2-Factor 해시 함수가 있어야 합니다.');
 
-  // 2. 스팸·URL·광고 필터 및 쿨다운·자동 블라인드 검증
+  // 2. 더보기(⋯) 드롭다운 메뉴 및 대기열(pendingCreates) 검증
+  assert.match(script, /toggle-more/, '⋯ 버튼 클릭 시 즉시 신고가 아니라 더보기 드롭다운 메뉴가 열려야 합니다.');
+  assert.match(script, /renderMoreMenuHtml/, '더보기 드롭다운(수정·삭제·신고) 렌더러가 존재해야 합니다.');
+  assert.match(script, /pendingCreates/, 'Firebase SDK 로드 전 작성된 댓글을 동기화하는 대기열이 있어야 합니다.');
+
+  // 3. 스팸·URL·광고 필터 및 쿨다운·자동 블라인드 검증
   assert.match(script, /containsSpamOrUrl/, '클라이언트 URL/스팸 정규화 필터 함수가 존재해야 합니다.');
   assert.match(script, /POST_COOLDOWN_MS = 15000/, '도배 방지를 위한 작성 쿨다운이 설정되어야 합니다.');
   assert.match(script, /BLIND_REPORT_THRESHOLD = 3/, '3회 신고 누적 시 자동 블라인드 임계값이 설정되어야 합니다.');
 
-  // 3. 무과금 1-Click 번역 엔진 (Google GTX + MyMemory 폴백 + 세션 캐시)
+  // 4. 무과금 1-Click 번역 엔진 (Google GTX + MyMemory 폴백 + 세션 캐시)
   assert.match(script, /translate\.googleapis\.com\/translate_a\/single/, 'Google GTX 무료 번역 엔드포인트가 포함되어야 합니다.');
   assert.match(script, /api\.mymemory\.translated\.net/, 'MyMemory 번역 폴백 엔드포인트가 포함되어야 합니다.');
   assert.match(script, /ps_trans_/, '세션 스토리지 번역 캐시 프리픽스가 존재해야 합니다.');
 
-  // 4. 다국어 즉시 핫스왑 훅 연동 검증
+  // 5. 다국어 즉시 핫스왑 훅 연동 검증
   const localeScript = getLocaleRuntimeScript();
   assert.match(localeScript, /__refreshCommentLocale__/, '언어 전환 시 댓글 피드도 즉시 핫스왑되도록 훅이 연결되어야 합니다.');
 });
@@ -115,12 +120,6 @@ test('Comment Suite 22-4: database.rules.json 댓글 보안 규칙(PIN 해시 �
     rules.rules.comment_secrets['.read'],
     false,
     '브루트포스 방어를 위해 comment_secrets는 반드시 .read: false여야 합니다.'
-  );
-  assert.ok(rules.rules.comment_ratelimit, 'comment_ratelimit 노드 규칙이 정의되어 있어야 합니다.');
-  assert.equal(
-    rules.rules.comment_ratelimit['.read'],
-    false,
-    'comment_ratelimit 노드는 .read: false여야 합니다.'
   );
 
   const commentValidate: string = rules.rules.protocol_comments.$protocolId.$commentId['.validate'];

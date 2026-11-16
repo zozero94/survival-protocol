@@ -15,10 +15,11 @@
       }
     },
     "protocol_comments": {
+      ".read": true,
       "$protocolId": {
-        ".read": "$protocolId.matches(/^PR-[0-9]{2,4}$/)",
+        ".read": true,
         "$commentId": {
-          ".write": "$protocolId.matches(/^PR-[0-9]{2,4}$/) && ((!data.exists() && newData.exists() && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('pinHash').isString() && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('pinHash').val().length === 64 && newData.parent().parent().parent().child('comment_ratelimit').child($protocolId).child('lastWriteAt').val() === now) || (data.exists() && newData.exists() && newData.child('reports').val() === data.child('reports').val() && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('proofTs').val() === now && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('proofHash').val() === data.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('pinHash').val() && newData.child('id').val() === data.child('id').val() && newData.child('parentId').val() === data.child('parentId').val() && newData.child('nickname').val() === data.child('nickname').val() && newData.child('lang').val() === data.child('lang').val() && newData.child('createdAt').val() === data.child('createdAt').val()) || (data.exists() && !newData.exists() && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('proofTs').val() === now && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('proofHash').val() === data.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('pinHash').val()) || (data.exists() && newData.exists() && newData.child('reports').val() === data.child('reports').val() + 1 && newData.child('id').val() === data.child('id').val() && newData.child('parentId').val() === data.child('parentId').val() && newData.child('nickname').val() === data.child('nickname').val() && newData.child('content').val() === data.child('content').val() && newData.child('lang').val() === data.child('lang').val() && newData.child('createdAt').val() === data.child('createdAt').val() && newData.child('updatedAt').val() === data.child('updatedAt').val()))",
+          ".write": "(!data.exists() && newData.exists()) || (data.exists() && newData.exists() && newData.child('reports').val() === data.child('reports').val() && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('verifiedHash').val() === root.child('comment_secrets').child($protocolId).child($commentId).child('pinHash').val() && newData.child('id').val() === data.child('id').val() && newData.child('parentId').val() === data.child('parentId').val() && newData.child('nickname').val() === data.child('nickname').val() && newData.child('lang').val() === data.child('lang').val() && newData.child('createdAt').val() === data.child('createdAt').val()) || (data.exists() && !newData.exists() && newData.parent().parent().parent().child('comment_secrets').child($protocolId).child($commentId).child('verifiedHash').val() === root.child('comment_secrets').child($protocolId).child($commentId).child('pinHash').val()) || (data.exists() && newData.exists() && newData.child('reports').val() === data.child('reports').val() + 1 && newData.child('id').val() === data.child('id').val() && newData.child('parentId').val() === data.child('parentId').val() && newData.child('nickname').val() === data.child('nickname').val() && newData.child('content').val() === data.child('content').val() && newData.child('lang').val() === data.child('lang').val() && newData.child('createdAt').val() === data.child('createdAt').val() && newData.child('updatedAt').val() === data.child('updatedAt').val())",
           ".validate": "newData.hasChildren(['id', 'parentId', 'nickname', 'content', 'lang', 'createdAt', 'updatedAt', 'reports']) && newData.child('id').isString() && newData.child('id').val() === $commentId && $commentId.matches(/^c_[0-9]{10,15}_[a-z0-9]{4,10}$/) && newData.child('parentId').isString() && (newData.child('parentId').val() === '' || (newData.child('parentId').val().matches(/^c_[0-9]{10,15}_[a-z0-9]{4,10}$/) && root.child('protocol_comments').child($protocolId).child(newData.child('parentId').val()).exists() && root.child('protocol_comments').child($protocolId).child(newData.child('parentId').val()).child('parentId').val() === '')) && newData.child('nickname').isString() && newData.child('nickname').val().length >= 1 && newData.child('nickname').val().length <= 16 && !newData.child('nickname').val().matches(/(https?:\\/\\/|www\\.|\\.(com|net|org|kr|io|me|gg|xyz|ly|gl|co)|카지노|바카라|토토|슬롯|성인|조건만남|텔레그램|t\\.me)/i) && newData.child('content').isString() && newData.child('content').val().length >= 2 && newData.child('content').val().length <= 300 && !newData.child('content').val().matches(/(https?:\\/\\/|www\\.|[a-z0-9-]+\\.(com|net|org|kr|io|me|gg|xyz|ly|gl|co|shop|site|club|vip|top|bet)\\b|t\\.me\\/|bit\\.ly\\/|카지노|바카라|토토|슬롯|성인용품|조건만남|출장마사지|대출|작업대출|텔레그램|오픈카톡|유튜브\\s*구독|무료\\s*수익|코인가격|카톡\\s*문의)/i) && newData.child('lang').isString() && newData.child('lang').val().matches(/^(ko|en|ja|es|de|pt|zh-TW)$/) && newData.child('createdAt').isNumber() && newData.child('updatedAt').isNumber() && newData.child('reports').isNumber() && newData.child('reports').val() >= 0 && newData.child('reports').val() <= 50",
           "$other": {
             ".validate": false
@@ -30,21 +31,15 @@
       ".read": false,
       "$protocolId": {
         "$commentId": {
-          ".write": "$protocolId.matches(/^PR-[0-9]{2,4}$/) && ((!data.exists() && newData.exists() && newData.hasChildren(['pinHash', 'proofHash', 'proofTs']) && newData.child('pinHash').isString() && newData.child('pinHash').val().length === 64 && newData.child('proofHash').val() === newData.child('pinHash').val() && newData.child('proofTs').val() === now) || (data.exists() && newData.exists() && newData.child('pinHash').val() === data.child('pinHash').val() && newData.child('proofHash').val() === data.child('pinHash').val() && newData.child('proofTs').val() === now))",
+          "pinHash": {
+            ".write": "!data.exists() && newData.isString() && newData.val().length === 64"
+          },
+          "verifiedHash": {
+            ".write": "newData.isString() && newData.val().length === 64 && ((!data.parent().child('pinHash').exists() && newData.parent().child('pinHash').val() === newData.val()) || (data.parent().child('pinHash').exists() && data.parent().child('pinHash').val() === newData.val()))"
+          },
           "$other": {
             ".validate": false
           }
-        }
-      }
-    },
-    "comment_ratelimit": {
-      ".read": false,
-      "$protocolId": {
-        "lastWriteAt": {
-          ".write": "$protocolId.matches(/^PR-[0-9]{2,4}$/) && newData.isNumber() && newData.val() === now && (!data.exists() || now - data.val() >= 5000)"
-        },
-        "$other": {
-          ".validate": false
         }
       }
     }
