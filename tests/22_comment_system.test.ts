@@ -89,9 +89,11 @@ test('Comment Suite 22-3: getCommentRuntimeScript 구문 유효성, 더보기(�
   assert.match(script, /ps_comment_device_token/, '256-bit 기기 고유 시크릿 토큰 키가 포함되어야 합니다.');
   assert.match(script, /computePinHash/, '기기 토큰과 4자리 PIN을 결합하는 2-Factor 해시 함수가 있어야 합니다.');
 
-  // 2. 더보기(⋯) 드롭다운 메뉴 및 대기열(pendingCreates) 검증
+  // 2. 더보기(⋯) 드롭다운 메뉴, 즉시 삭제(executeLocalDelete) 및 대기열(pendingCreates) 검증
   assert.match(script, /toggle-more/, '⋯ 버튼 클릭 시 즉시 신고가 아니라 더보기 드롭다운 메뉴가 열려야 합니다.');
   assert.match(script, /renderMoreMenuHtml/, '더보기 드롭다운(수정·삭제·신고) 렌더러가 존재해야 합니다.');
+  assert.match(script, /executeLocalDelete/, '로컬 PIN 검증 통과 시 즉시 삭제 및 원격 동기화를 수행하는 함수가 있어야 합니다.');
+  assert.match(script, /ps_cdel_/, '삭제된 댓글이 재등장하지 않도록 툼스톤 키가 관리되어야 합니다.');
   assert.match(script, /pendingCreates/, 'Firebase SDK 로드 전 작성된 댓글을 동기화하는 대기열이 있어야 합니다.');
 
   // 3. 스팸·URL·광고 필터 및 쿨다운·자동 블라인드 검증
@@ -122,7 +124,14 @@ test('Comment Suite 22-4: database.rules.json 댓글 보안 규칙(PIN 해시 �
     '브루트포스 방어를 위해 comment_secrets는 반드시 .read: false여야 합니다.'
   );
 
-  const commentValidate: string = rules.rules.protocol_comments.$protocolId.$commentId['.validate'];
+  const commentNode = rules.rules.protocol_comments.$protocolId.$commentId;
+  assert.equal(
+    commentNode.$other,
+    undefined,
+    '$commentId 하위에 명시적 필드 규칙 없이 $other: { .validate: false }를 두면 모든 자식 키가 거부되므로 없어야 합니다.'
+  );
+
+  const commentValidate: string = commentNode['.validate'];
   assert.ok(commentValidate.includes('https?:\\/\\/|www\\.'), '서버 규칙에서 외부 URL(http/https/www)을 원천 차단해야 합니다.');
   assert.ok(commentValidate.includes('parentId'), '1단계 대댓글 깊이 제한 검증이 포함되어야 합니다.');
 });
