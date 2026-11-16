@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-32",
+  "category": "MEDICINE",
+  "title": "Torniquete de Varilla Giratoria para Hemorragia Arterial y Sello Torácico de 3 Lados (Trauma de Guerra)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "CRÍTICO // Rescate en 3 Minutos ante Hemorragia Arterial y Neumotórax",
+  "summary": "Protocolos de trauma de emergencia para detener el shock hipovolémico mortal en 3 minutos cuando metralla de bombardeos o cristales rotos seccionan arterias principales provocando chorros de sangre roja brillante mediante un torniquete de varilla giratoria (Windlass), y para evitar el colapso pulmonar por heridas penetrantes en el pecho mediante un apósito plástico de válvula de 3 lados. Utilice siempre primero torniquetes militares comerciales (CAT/SOFTT) y parches torácicos (Chest Seal) si dispone de ellos; en aislamiento sin botiquín, emplee un cinturón de cuero o tela doblada de 4cm de ancho, una cuchara metálica o rama de roble, plástico limpio de bolsa de aperitivos y cinta americana. Incluye pautas contra infección secundaria, tétanos y necrosis por compresión prolongada.",
+  "timeRequired": "Torniquete < 1 min // Sello torácico < 2 min",
+  "successRate": "92%",
+  "difficulty": "MEDIUM // Requiere fuerza de torsión y ubicación anatómica exacta",
+  "outputPerHour": "100% Oclusión Arterial y Válvula Torácica Unidireccional",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Cinturón de cuero resistente o toalla de algodón/tela de cáñamo doblada de al menos 4cm (dos dedos) de ancho",
+      "desc": "Banda ancha de compresión circunferencial que envuelve el muslo o brazo por encima de la herida sin desgarrar la piel",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "1 mango sólido de cuchara metálica o rama seca de roble de unos 15cm (un palmo) de largo",
+      "desc": "Varilla de torsión (Windlass) insertada en el nudo y girada 360 grados para cerrar mecánicamente las arterias profundas",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Cordón secundario de bloqueo (cordón de zapato/trabilla) y marcador permanente (o trozo de carbón)",
+      "desc": "Asegura ambos extremos de la varilla para que no se desenrolle y registra la hora exacta (T HH:MM) para evitar necrosis",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "1 lámina cuadrada de plástico limpio (interior de bolsa de snacks sin abrir o Ziploc) y 1 rollo de cinta americana",
+      "desc": "Cubre la herida penetrante del pecho y sella solo 3 lados (superior, izquierdo, derecho) para evacuar aire/sangre y bloquear aire externo",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Envolver Firme un Cinturón de Cuero o Tela Doblada de 4cm de Ancho 5-7cm Arriba de la Herida",
+      "description": "1. **Identificar Sangrado Arterial**: Verifique si brota sangre roja brillante a chorros al ritmo del pulso y descubra de inmediato la zona justo encima de la herida.\n2. **Elegir Punto 5-7cm Sobre la Articulación**: Nunca coloque el torniquete sobre la rodilla o el codo donde el hueso impide comprimir el vaso; suba tres dedos (5-7cm) hacia el corazón sobre músculo grueso.\n3. **Atar Banda Ancha Ajustada**: Envuelva un [cinturón de cuero impermeable](/protocol-17) o tela doblada de al menos dos dedos (4cm) de ancho alrededor de la extremidad sin holgura y haga un primer nudo firme.",
+      "actionNote": "Jamás use cables eléctricos, alambre ni cordones finos de menos de 2cm de ancho; las cuerdas finas cortan la piel y los nervios como una cuchilla sin cerrar la arteria profunda, causando parálisis y necrosis.",
+      "svgFileName": "pr32-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Atar Cinturón Ancho (>=4cm) 5-7cm Sobre la Herida Hacia el Corazón",
+        "Evitar articulaciones; dar 2 vueltas firmes en músculo 3 dedos sobre la herida",
+        "Asegurar ancho mínimo de 4cm (2 dedos) para evitar daño en piel y nervios",
+        "PROHIBIDO usar alambre o cordón fino: corta nervios y vasos sin frenar la arteria",
+        "[CLAVE] Fijar banda ancha sin holgura 5-7cm arriba de la herida hacia el corazón"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WIDE TOURNIQUET BAND",
+        "title": "Distribución de Presión Tisular con Bandas Anchas (>=4cm) y Oclusión Arterial Profunda",
+        "text": "La arteria femoral en el muslo y la arteria braquial en el brazo discurren profundas junto al hueso bajo gruesas capas musculares. Cerrar estos vasos exige una fuerte presión circunferencial que aplaste el músculo contra el hueso. Una banda de al menos dos dedos (4cm) de ancho reparte la fuerza uniformemente para colapsar la arteria profunda, mientras que un cordón angosto solo se clava en la piel superficial dejando la arteria abierta.",
+        "fieldSpecs": [
+          {
+            "name": "Banda Ancha de Cinturón de Cuero y Tela",
+            "scientificName": "Wide Circumferential Arterial Compression Band",
+            "categoryTag": "Control Hemorrágico de Guerra",
+            "imageFileName": "id-leather-belt-tourniquet-band.jpg",
+            "hudCode": "TQ-BAND-01",
+            "hudStatus": "WIDTH >= 4CM VERIFIED",
+            "traits": [
+              {
+                "label": "Ubicación",
+                "value": "5-7cm sobre la herida (hacia corazón)"
+              },
+              {
+                "label": "Ancho Mín.",
+                "value": "4cm o más (ancho de 2 dedos)"
+              },
+              {
+                "label": "Prohibido",
+                "value": "Jamás usar alambre, cable o hilo fino"
+              }
+            ],
+            "fieldUse": "Fijación circunferencial primaria 5-7cm por encima de heridas arteriales lejos de articulaciones"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Insertar una Varilla Firme (Cuchara o Rama de Roble) en el Nudo y Girar 360 Grados Hasta Frenar el Sangrado",
+      "description": "1. **Insertar Varilla (Windlass)**: Coloque un mango sólido de cuchara de acero inoxidable o una rama gruesa de roble de unos 15cm (un palmo) sobre el primer nudo y ate otro nudo fuerte encima para sujetarla.\n2. **Giro de Palanca de 360 Grados**: Sujete ambos extremos de la varilla y gírela de 2 a 3 vueltas completas en la misma dirección como una hélice hasta que la banda comprima el músculo contra el hueso.\n3. **Confirmar Cese de Sangrado y Pulso**: Siga girando hasta que el chorro de sangre roja brillante se detenga por completo y al tocar la muñeca o el tobillo con las yemas de los dedos no se sienta ningún pulso distal.",
+      "actionNote": "No deje de apretar a medias aunque el herido grite de dolor. Una presión débil solo cierra las venas superficiales dejando abierta la arteria profunda, lo que provoca congestión venosa y multiplica la hemorragia.",
+      "svgFileName": "pr32-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Insertar Varilla (Cuchara/Rama) en Nudo y Girar 360 Grados",
+        "Colocar cuchara metálica o rama de roble de 15cm (1 palmo) en el nudo y girar",
+        "Girar 2-3 vueltas hasta detener la sangre roja y desaparecer el pulso distal",
+        "Prohibido apretar a medias: cerrar solo venas con arteria abierta agrava sangrado",
+        "[PALANCA] El torque de giro cierra físicamente al 100% la arteria profunda"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WINDLASS TORQUE LEVER",
+        "title": "Torque de Palanca del Molinete (Windlass) y Prevención de Congestión Venosa",
+        "text": "La fuerza manual al tirar de un cinturón no basta para vencer la elevada presión arterial sistólica (más de 120mmHg) de la arteria femoral de un adulto. Al intercalar una varilla rígida de 15cm en el nudo y girarla 360 grados, la varilla actúa como un cabrestante mecánico que multiplica varias veces la tensión circunferencial de la banda. Los bolígrafos de plástico frágil o ramas podridas se rompen al girar, por lo que debe usarse metal o madera dura.",
+        "fieldSpecs": [
+          {
+            "name": "Varilla de Torsión y Compresión Windlass",
+            "scientificName": "High-Torque Windlass Torsion Rod",
+            "categoryTag": "Pinza Arterial por Palanca",
+            "imageFileName": "id-windlass-rod-twist.jpg",
+            "hudCode": "TQ-ROD-02",
+            "hudStatus": "PULSE OCCLUDED",
+            "traits": [
+              {
+                "label": "Material Ideal",
+                "value": "Mango de cuchara metálica o roble"
+              },
+              {
+                "label": "Longitud",
+                "value": "Aprox. 15cm (1 palmo adulto)"
+              },
+              {
+                "label": "Verificación",
+                "value": "Cese de sangrado y ausencia de pulso"
+              }
+            ],
+            "fieldUse": "Girada 2-3 vueltas dentro del nudo para generar presión de oclusión arterial total"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Bloquear Ambos Extremos de la Varilla con un Cordón y Anotar la Hora Exacta (T HH:MM) en la Frente",
+      "description": "1. **Bloqueo Antirretorno de la Varilla**: Al soltar la varilla, la fuerte tensión hará que se desenrolle sola; envuelva el extremo sobrante del cinturón o un cordón auxiliar alrededor de los extremos de la varilla y átelo firme a la extremidad.\n2. **Registro de Hora (T)**: Con un marcador permanente, lápiz labial o un trozo de [carbón de roble](/protocol-09), escriba en grande la letra 'T' y la hora exacta de colocación (ej. `T 14:30`) sobre cinta blanca en la banda y en la frente del herido.\n3. **Mantener el Torniquete Visible**: Aunque cubra al herido con mantas para abrigarlo, nunca oculte el torniquete ni la marca de hora bajo la ropa para que el equipo médico lo identifique al instante.",
+      "actionNote": "Jamás afloje ni retire un torniquete en el terreno una vez colocado. Aflojarlo tras más de 2 horas libera toxinas necróticas y potasio hacia el corazón, provocando paro cardíaco fulminante o shock por resangrado.",
+      "svgFileName": "pr32-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Bloquear Extremos de la Varilla y Anotar Hora de Inicio (T)",
+        "Atar los extremos de la varilla con cordón y escribir hora (T) en banda y frente",
+        "No cubrir el torniquete con ropa o mantas; dejar siempre visible al personal médico",
+        "PROHIBIDO aflojar en el campo: riesgo de paro cardíaco por toxinas y resangrado",
+        "[TIEMPO DE ORO] Registro exacto obligatorio para cirugía antes de 2 horas"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // ISCHEMIC TIME LOGGING",
+        "title": "Gestión del Límite de Isquemia (2 Horas) y Prevención de Lesión por Reperfusión",
+        "text": "El cierre arterial total corta el oxígeno a los tejidos distales de la extremidad. Si la hemostasia quirúrgica y la restauración del flujo sanguíneo se realizan dentro de las 2 horas posteriores a la colocación, se puede salvar el miembro sin daño nervioso permanente ni necrosis. Anotar la hora exacta (T HH:MM) y dejar visible el dispositivo permite a los cirujanos priorizar la intervención inmediata.",
+        "fieldSpecs": [
+          {
+            "name": "Bloqueo de Varilla y Etiqueta de Hora (T)",
+            "scientificName": "Windlass Keeper Lock & Tourniquet Time Stamp",
+            "categoryTag": "Control de Tiempo de Isquemia",
+            "imageFileName": "id-tourniquet-time-mark.jpg",
+            "hudCode": "TQ-TIME-03",
+            "hudStatus": "TIME LOGGED (<=2H)",
+            "traits": [
+              {
+                "label": "Formato",
+                "value": "T + hora 24h (ej. T 14:30)"
+              },
+              {
+                "label": "Ubicación",
+                "value": "Sobre la banda y frente del herido"
+              },
+              {
+                "label": "Límite Seguro",
+                "value": "Entrega quirúrgica prioritaria <= 2h"
+              }
+            ],
+            "fieldUse": "Asegura la varilla contra el desenrollado y documenta la hora exacta para prevenir necrosis"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Cubrir Herida Penetrante del Pecho con Plástico Limpio y Pegar Solo 3 Lados para Crear Válvula de Escape",
+      "description": "1. **Confirmar Herida Torácica Succionante**: Escuche si sale un silbido o sonido de succión de aire ('shhh') y sangre espumosa rosada por el orificio del pecho o espalda cada vez que el herido respira.\n2. **Colocar Plástico al Exhalar**: Limpie la sangre y el sudor alrededor de la herida con un paño limpio y, cuando el herido exhale todo el aire, cubra el agujero con un cuadrado de plástico limpio (interior de bolsa de snacks o Ziploc) que sobresalga tres dedos (5cm) por cada lado.\n3. **Sellar 3 Lados y Dejar Abierto el Inferior**: Usando cinta americana del [encintado de ventanas antiexplosión](/protocol-31), selle herméticamente los bordes superior, izquierdo y derecho a la piel, dejando el borde inferior sin cinta para drenar aire y sangre por gravedad.",
+      "actionNote": "Nunca selle los 4 lados por completo si el pulmón perforado fuga aire; encerrar el aire dentro del tórax comprime el corazón y el pulmón sano (neumotórax a tensión), causando asfixia mortal en minutos.",
+      "svgFileName": "pr32-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Cubrir Herida Torácica con Plástico y Sellar 3 Lados en Válvula",
+        "Hacer exhalar al herido, cubrir con plástico y sellar lados SUPERIOR, IZQ. y DER.",
+        "Al exhalar salen aire y sangre por debajo; al inhalar el plástico se pega y cierra",
+        "CUIDADO con sellar 4 lados: el aire atrapado colapsa el pulmón y causa asfixia",
+        "[VÁLVULA 1-VÍA] Dejar el borde inferior abierto previene el neumotórax a tensión"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 3-SIDED FLUTTER VALVE",
+        "title": "Restauración de Presión Negativa Torácica y Mecánica de Válvula Flutter de 3 Lados",
+        "text": "La cavidad torácica normal mantiene una presión negativa respecto al exterior para que los pulmones se expandan al inspirar. Cuando una esquirla perfora la pared del pecho, el aire externo entra por el agujero en vez de por la tráquea y colapsa el pulmón. Pegar un plástico por 3 lados crea una válvula unidireccional: al inhalar, la succión pega el plástico contra la piel bloqueando el aire externo; al exhalar, la presión positiva expulsa el aire acumulado y la sangre por el borde inferior abierto.",
+        "fieldSpecs": [
+          {
+            "name": "Válvula Torácica de Plástico Sellada en 3 Lados",
+            "scientificName": "Three-Sided Occlusive Flutter Valve Dressing",
+            "categoryTag": "Auxilio de Neumotórax",
+            "imageFileName": "id-three-sided-chest-seal.jpg",
+            "hudCode": "CHEST-SEAL-04",
+            "hudStatus": "1-WAY VALVE ACTIVE",
+            "traits": [
+              {
+                "label": "Tamaño Hoja",
+                "value": "5cm más grande que la herida por lado"
+              },
+              {
+                "label": "Bordes Fijos",
+                "value": "Superior, izquierdo y derecho sellados"
+              },
+              {
+                "label": "Canal Escape",
+                "value": "Borde inferior abierto (aire y sangre)"
+              }
+            ],
+            "fieldUse": "Bloquea la entrada de aire externo y evacúa el aire y sangre pleural para evitar asfixia"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Atar Extremidades con Alambre/Cordón Fino, Aflojar el Torniquete Periódicamente o Sellar los 4 Lados del Pecho",
+    "description": "Atar con cables o cuerdas de menos de 2cm corta nervios y piel sin cerrar la arteria, causando parálisis y necrosis. Aflojar el torniquete cada 30 minutos para 'dar riego' provoca muerte por shock hemorrágico. Sellar los 4 lados de una herida penetrante de pecho o taponarla con toallas atrapa el aire fugado del pulmón y detiene el corazón por neumotórax a tensión.",
+    "consequence": "Muerte por shock hipovolémico tras resangrado arterial, amputación permanente o asfixia aguda por neumotórax a tensión"
+  },
+  "faqs": [
+    {
+      "question": "¿Qué hago si la sangre roja sigue saliendo después de apretar al máximo el primer torniquete?",
+      "causeDiagnostic": "En muslos muy gruesos, un solo torniquete improvisado puede no ejercer suficiente anchura de presión para aplastar por completo la arteria femoral profunda.",
+      "resolution": "Nunca retire ni afloje el primer torniquete. Coloque de inmediato un segundo torniquete ancho justo por encima (más cerca del corazón) del primero y apriételo firme, mientras rellena la herida con gasa hervida del [entablillado y vendaje compresivo](/protocol-18) aplicando presión directa con ambas manos."
+    },
+    {
+      "question": "¿Cómo prevengo en el campo la infección bacteriana secundaria y el tétanos en heridas por metralla?",
+      "causeDiagnostic": "Los escombros de explosiones, fragmentos metálicos oxidados y tierra introducen bacterias letales y esporas de tétanos en los tejidos profundos.",
+      "resolution": "Tras controlar la hemorragia grave, lave las heridas menos profundas con un chorro fuerte de [solución salina isotónica al 0.9% sin azúcar](/protocol-24) para arrastrar la tierra, cubra con [ungüento antiséptico de resina de pino](/protocol-10) o tela hervida seca, y reciba profilaxis antitetánica en el puesto médico."
+    },
+    {
+      "question": "¿Qué hago si tras poner el plástico de 3 lados el herido se ahoga más y se le hinchan las venas del cuello?",
+      "causeDiagnostic": "La sangre coagulada puede pegar el borde inferior abierto a la piel, obstruyendo la salida de aire y provocando un neumotórax a tensión progresivo.",
+      "resolution": "Levante al instante una esquina del plástico durante 2-3 segundos para dejar escapar el aire atrapado con un silbido ('burping'), limpie los coágulos del canal inferior, vuelva a fijar la válvula de 3 lados y siente al herido consciente semiincorporado o inclinado sobre el lado herido."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Completo de Torniquete de Varilla (Windlass) y Sello Torácico de Válvula de 3 Lados",
+    "description": "Frena hemorragias arteriales mortales en extremidades en menos de 3 minutos envolviendo un cinturón de cuero de 4cm de ancho 5-7cm sobre la herida, girando 360 grados una cuchara metálica o vara de roble de 15cm, bloqueando sus extremos y anotando la hora exacta (T HH:MM). Al mismo tiempo, protege heridas penetrantes de pecho con plástico limpio sellado en 3 lados (superior, izquierdo, derecho) y abierto abajo para evacuar aire y sangre.",
+    "svgFileName": "pr32-outcome.svg",
+    "svgLabels": [
+      "PR-32 COMPLETO // Torniquete Windlass y Sello Torácico de Válvula de 3 Lados",
+      "STAGE 01: Cinturón Ancho 5cm Sobre Herida",
+      "Atar cinturón >=4cm 3 dedos sobre la herida",
+      "STAGE 02: Giro de Varilla 360° Oclusión",
+      "Girar varilla firme para frenar arteria 100%",
+      "STAGE 03: Bloqueo y Registro de Hora (T)",
+      "Fijar varilla y anotar hora exacta (T 14:30)",
+      "STAGE 04: Sello Torácico Válvula 3 Lados",
+      "Sellar arriba/izq/der; evacuar aire por abajo",
+      "[PRINCIPIO] El torque de varilla cierra arterias y la válvula de 3 lados evita el neumotórax"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¡Una arteria cortada por metralla mata en 3 minutos! ¡Cómo salvar una vida con un cinturón y una cuchara!",
+    "body": "Cuando la sangre roja brota a chorros de un brazo o pierna, presionar con una toalla no basta. Primero, ate un cinturón de cuero o tela doblada de al menos 4 centímetros de ancho tres dedos por encima de la herida hacia el corazón. Segundo, meta el mango de una cuchara metálica o rama de roble en el nudo y gírelo dos o tres vueltas completas hasta detener la sangre por completo. Tercero, ate los extremos de la varilla para que no se suelte y escriba T con la hora en la frente. ¡Y si hay un agujero en el pecho que silba, cúbralo con plástico limpio pegando solo tres lados para que el aire escape por abajo!"
+  },
+  "createdAt": "2026-11-16T03:34:15.333Z",
+  "contentHash": "265802761804cc88"
+}

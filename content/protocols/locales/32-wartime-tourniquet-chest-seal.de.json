@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-32",
+  "category": "MEDICINE",
+  "title": "Knebel-Tourniquet bei arterieller Blutung und 3-Seiten-Brustwandpflaster (Kriegs-Traumahilfe)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "KRITISCH // 3-Minuten-Rettung bei Arterienblutung & Pneumothorax",
+  "summary": "Notfall-Traumaprotokolle, um innerhalb von 3 Minuten einen tödlichen Blutungsschock zu stoppen, wenn Bombensplitter oder Glasscherben große Gliedmaßenarterien durchtrennen und hellrotes Blut herausspritzt (mittels Knebel-Tourniquet / Windlass), sowie um einen Lungenkollaps bei offenen Brustkorbwunden durch ein 3-seitig verklebtes Folienventil zu verhindern. Verwenden Sie vorrangig militärische Fertig-Tourniquets (CAT/SOFTT) und Chest Seals, falls vorhanden; nutzen Sie im Ernstfall ohne Sanitätsmaterial einen mindestens 4cm breiten Ledergürtel oder gefaltetes Tuch, einen stabilen Metalllöffel oder Eichenast, saubere Plastikfolie und Panzertape. Enthält Schutzregeln gegen Wundinfektion, Tetanus und Gewebenekrose.",
+  "timeRequired": "Tourniquet < 1 Min. // Brustsiegel < 2 Min.",
+  "successRate": "92%",
+  "difficulty": "MEDIUM // Erfordert starke Drehkraft und exakte Positionierung",
+  "outputPerHour": "100% Arterienverschluss & Einweg-Brustkorbentlüftung",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Reißfester Ledergürtel oder gefaltetes Baumwolltuch/Leinentuch mit mindestens 4cm (zwei Finger) Breite",
+      "desc": "Breites Druckband, das Oberschenkel oder Oberarm oberhalb der Wunde umschließt, ohne die Haut einzuschneiden",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "1 stabiler Metalllöffelstiel oder trockener Eichenast von ca. 15cm (eine Handspanne) Länge",
+      "desc": "Knebelstab (Windlass), der in den Knoten geschoben und um 360 Grad gedreht wird, um tiefe Arterien per Hebelkraft abzuklemmen",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Sicherungsschnur (Schnürsenkel/Gürtelschlaufe) und wasserfester Stift (oder Stück Holzkohle)",
+      "desc": "Sichert beide Enden des gedrehten Stabs gegen Zurückdrehen und dokumentiert die genaue Anlagezeit (T HH:MM) gegen Nekrose",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "1 saubere quadratische Plastikfolie (Innenseite einer ungeöffneten Snacktüte/Gefrierbeutel) & 1 Rolle Panzertape",
+      "desc": "Bedeckt die offene Brustwunde und wird an 3 Seiten (oben, links, rechts) verklebt, damit Luft/Blut entweicht und Außenluft blockiert wird",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Mindestens 4cm Breiten Ledergürtel oder Gefaltetes Tuch 5-7cm Oberhalb der Wunde Straff Umbinden",
+      "description": "1. **Arterielle Blutung Erkennen**: Prüfen Sie, ob hellrotes Blut im Takt des Herzschlags aus der Wunde spritzt, und legen Sie den Bereich direkt über der Wunde frei.\n2. **Stelle 5-7cm Über dem Gelenk Wählen**: Legen Sie ein Tourniquet niemals direkt auf Knie oder Ellbogen an, wo Knochen den Druck blockieren; gehen Sie drei Fingerbreit (5-7cm) herzwärts über dicke Muskulatur.\n3. **Breites Band Spaltfrei Knoten**: Wickeln Sie einen [wasserfesten Ledergürtel](/protocol-17) oder ein mindestens zwei Fingerbreit (4cm) gefaltetes Tuch straff um die Gliedmaße und machen Sie einen festen ersten Knoten.",
+      "actionNote": "Verwenden Sie niemals Stromkabel, Draht oder dünne Schnüre unter 2cm Breite; dünne Seile schneiden wie ein Messer durch Haut und Nerven, ohne die tiefe Arterie zu schließen, und führen zu Lähmung und Nekrose.",
+      "svgFileName": "pr32-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Breiten Gürtel (>=4cm) 5-7cm Über der Wunde Herzwärts Binden",
+        "Gelenke meiden; 3 Fingerbreit (5-7cm) über der Wunde 2-mal straff um Muskel wickeln",
+        "Mindestens 4cm (2 Finger) Bandbreite sichern, um Haut- und Nervenschäden zu verhindern",
+        "VERBOT von Draht oder dünner Schnur: durchtrennt Nerven und Gefäße ohne Blutstillung",
+        "[KERN] Breites Band lückenlos 5-7cm herzwärts oberhalb der Wunde befestigen"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WIDE TOURNIQUET BAND",
+        "title": "Gewebedruckverteilung Breiter Bänder (>=4cm) und Tiefer Arterienverschluss",
+        "text": "Die Oberschenkelarterie (Arteria femoralis) und die Oberarmarterie (Arteria brachialis) verlaufen tief unter dicken Muskelschichten direkt neben dem Knochen. Um diese Gefäße abzuklemmen, muss starker zirkulärer Druck den Muskel gegen den Knochen pressen. Ein mindestens zwei Finger (4cm) breites Band verteilt den Druck gleichmäßig in die Tiefe, während eine dünne Schnur nur in die Haut einschneidet und die Arterie offen lässt.",
+        "fieldSpecs": [
+          {
+            "name": "Breites Ledergürtel- & Tuch-Tourniquetband",
+            "scientificName": "Wide Circumferential Arterial Compression Band",
+            "categoryTag": "Kriegs-Blutstillung",
+            "imageFileName": "id-leather-belt-tourniquet-band.jpg",
+            "hudCode": "TQ-BAND-01",
+            "hudStatus": "WIDTH >= 4CM VERIFIED",
+            "traits": [
+              {
+                "label": "Position",
+                "value": "5-7cm über Wunde (herzwärts am Muskel)"
+              },
+              {
+                "label": "Mindestbreite",
+                "value": "Ab 4cm (2 Fingerbreit)"
+              },
+              {
+                "label": "Verboten",
+                "value": "Kein Draht, Kabel oder dünne Schnur"
+              }
+            ],
+            "fieldUse": "Primäre straffe Umschlingung 5-7cm oberhalb schwerer Gliedmaßenverletzungen abseits von Gelenken"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Stabilen Stab (Löffelstiel oder Eichenast) in den Knoten Schieben und um 360 Grad Drehen bis die Blutung Stoppt",
+      "description": "1. **Knebelstab (Windlass) Einsetzen**: Legen Sie einen ca. 15cm (eine Handspanne) langen stabilen Edelstahllöffelstiel oder dicken Eichenast auf den ersten Knoten und binden Sie darüber einen zweiten festen Knoten.\n2. **360-Grad-Hebeldrehung**: Greifen Sie beide Stabenden und drehen Sie den Stab wie einen Propeller 2 bis 3 volle Umdrehungen kräftig in eine Richtung, bis das Band den Muskel fest gegen den Knochen presst.\n3. **Blutstillung und Pulsverlust Prüfen**: Drehen Sie weiter, bis kein hellrotes Blut mehr austritt und beim Tasten mit den Fingerspitzen am Handgelenk oder Knöchel kein Puls mehr spürbar ist.",
+      "actionNote": "Hören Sie nicht vorzeitig auf zu drehen, auch wenn der Verletzte vor Schmerz schreit. Zu schwacher Druck verschließt nur oberflächliche Venen bei offener Arterie, was durch Blutstau die Blutung noch verstärkt.",
+      "svgFileName": "pr32-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Stab (Löffel/Ast) in Knoten Schieben & 360 Grad Drehen",
+        "15cm (1 Handspanne) langen Metalllöffel oder Eichenast in Knoten legen & drehen",
+        "2-3 Umdrehungen festziehen, bis hellrote Blutung stoppt und Puls verschwindet",
+        "Halbherziges Anziehen verboten: Venenstau bei offener Arterie verstärkt Blutung",
+        "[HEBELPRINZIP] Drehmoment des Stabs klemmt tiefe Hauptarterien zu 100% physisch ab"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WINDLASS TORQUE LEVER",
+        "title": "Knebel-Drehmomentverstärkung (Windlass) und Vermeidung von Venenstau",
+        "text": "Allein durch Ziehen mit bloßen Händen lässt sich der hohe systolische Blutdruck (über 120mmHg) einer Oberschenkelarterie nicht überwinden. Wird ein handspannenlanger starrer Stab in den Knoten gesteckt und um 360 Grad gedreht, wirkt er als Hebelwinde und vervielfacht die Zugspannung des Bandes. Zerbrechliche Plastikstifte oder morsche Zweige brechen unter Last, weshalb Metallbesteck oder Hartholz zwingend nötig sind.",
+        "fieldSpecs": [
+          {
+            "name": "Windlass-Drehknebelstab",
+            "scientificName": "High-Torque Windlass Torsion Rod",
+            "categoryTag": "Hebel-Arterienklemme",
+            "imageFileName": "id-windlass-rod-twist.jpg",
+            "hudCode": "TQ-ROD-02",
+            "hudStatus": "PULSE OCCLUDED",
+            "traits": [
+              {
+                "label": "Material",
+                "value": "Metalllöffelstiel oder hartes Eichenholz"
+              },
+              {
+                "label": "Stablänge",
+                "value": "Ca. 15cm (1 Handspanne)"
+              },
+              {
+                "label": "Erfolgscheck",
+                "value": "Blutung steht & distaler Puls fehlt"
+              }
+            ],
+            "fieldUse": "Wird 2-3 Umdrehungen im Bandknoten gedreht, um vollen arteriellen Verschlussdruck aufzubauen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Beide Stabenden mit Schnur Gegen Zurückdrehen Sichern und Uhrzeit (T HH:MM) Groß auf der Stirn Notieren",
+      "description": "1. **Knebelstab Gegen Lösen Sichern**: Da sich der Stab beim Loslassen durch die hohe Spannung sofort zurückdreht, wickeln Sie das übrige Gürtelende oder eine Hilfsschnur fest um die Stabenden und knoten Sie diese an der Gliedmaße fest.\n2. **Anlagezeit (T) Vermerken**: Schreiben Sie mit Permanentmarker, Lippenstift oder einem Stück [Eichenholzkohle](/protocol-09) den Buchstaben 'T' und die genaue Uhrzeit (z. B. `T 14:30`) groß auf weißes Klebeband am Band sowie auf die Stirn des Verletzten.\n3. **Tourniquet Sichtbar Lassen**: Auch wenn Sie den Verletzten mit Decken wärmen, dürfen Tourniquet und Zeitangabe niemals unter Kleidung versteckt werden, damit Sanitäter sie sofort erkennen.",
+      "actionNote": "Lockern oder öffnen Sie ein angelegtes Tourniquet niemals eigenmächtig vor Erreichen des Operationssaals. Ein Lösen nach über 2 Stunden schwemmt Leichengifte und Kalium ins Herz und führt zu sofortigem Herzstillstand.",
+      "svgFileName": "pr32-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Stabenden Gegen Lösen Sichern & Anlagezeit (T HH:MM) Notieren",
+        "Stabenden mit Gürtelende oder Schnur festbinden & Uhrzeit (T) auf Stirn schreiben",
+        "Tourniquet niemals mit Kleidung oder Decken verdecken; für Ärzte sichtbar lassen",
+        "NIEMALS im Feld lockern: Gefahr von Herzstillstand durch Toxine & Nachblutung",
+        "[GOLDENE ZEIT] Exakte Zeitangabe ist Pflicht für chirurgische Übergabe <= 2 Std."
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // ISCHEMIC TIME LOGGING",
+        "title": "Management des 2-Stunden-Ischämiefensters und Schutz vor Reperfusionsschock",
+        "text": "Ein kompletter Arterienverschluss unterbindet die Sauerstoffversorgung im unteren Gliedmaßenabschnitt. Erfolgt innerhalb von 2 Stunden eine chirurgische Gefäßversorgung, kann das Bein oder der Arm meist ohne bleibende Nervenschäden oder Nekrose gerettet werden. Die gut sichtbare Zeitmarkierung (T HH:MM) sichert dem Patienten höchste OP-Priorität.",
+        "fieldSpecs": [
+          {
+            "name": "Stabsicherung & Zeitstempel-Markierung",
+            "scientificName": "Windlass Keeper Lock & Tourniquet Time Stamp",
+            "categoryTag": "Nekroseschutz-Zeitlog",
+            "imageFileName": "id-tourniquet-time-mark.jpg",
+            "hudCode": "TQ-TIME-03",
+            "hudStatus": "TIME LOGGED (<=2H)",
+            "traits": [
+              {
+                "label": "Format",
+                "value": "T + 24h-Uhrzeit (z. B. T 14:30)"
+              },
+              {
+                "label": "Markierort",
+                "value": "Auf Tourniquetband & Stirn"
+              },
+              {
+                "label": "Zeitlimit",
+                "value": "Prioritäre OP-Übergabe <= 2 Stunden"
+              }
+            ],
+            "fieldUse": "Verriegelt den Knebelstab gegen Aufdrehen und dokumentiert die Zeit gegen Gliedmaßenverlust"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Offene Brustkorbwunde mit Sauberer Plastikfolie Abdecken und Nur 3 Seiten als Einwegventil Festkleben",
+      "description": "1. **Saugende Brustwunde Erkennen**: Achten Sie auf ein zischendes Ansauggeräusch bei jedem Atemzug und hellrot schäumendes Blut an einer Brust- oder Rückenwunde.\n2. **Folie beim Ausatmen Auflegen**: Wischen Sie Blut und Schweiß rund um das Loch ab, lassen Sie den Verletzten vollständig ausatmen und legen Sie ein sauberes Quadrat aus Plastikfolie (Innenseite einer Snacktüte oder Gefrierbeutel) auf, das allseitig mindestens drei Fingerbreit (5cm) übersteht.\n3. **3 Seiten Verkleben & Unten Offen Lassen**: Kleben Sie mit starkem Panzertape aus der [Splitterschutz-Fensterverklebung](/protocol-31) nur die obere, linke und rechte Kante luftdicht auf die Haut und lassen Sie die untere Kante als Ventil offen.",
+      "actionNote": "Kleben Sie niemals alle 4 Seiten komplett zu! Sonst staut sich Luft aus der verletzten Lunge im Brustkorb, drückt Herz und gesunde Lunge ab (Spannungspneumothorax) und führt binnen Minuten zum Ersticken.",
+      "svgFileName": "pr32-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Offene Brustwunde mit Folie Bedecken & 3 Seiten als Ventil Kleben",
+        "Ausatmen lassen, handgroße Folie auflegen und OBEN, LINKS, RECHTS dicht verkleben",
+        "Beim Ausatmen entweichen Luft & Blut unten; beim Einatmen saugt sich Folie dicht",
+        "WARNUNG vor 4-Seiten-Verschluss: gestaute Luft drückt Lunge ab und erstickt",
+        "[EINWEGVENTIL] Offene Unterkante verhindert tödlichen Spannungspneumothorax"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 3-SIDED FLUTTER VALVE",
+        "title": "Wiederherstellung des Unterdrucks im Brustkorb und 3-Seiten-Flatterventil-Mechanik",
+        "text": "Normalerweise herrscht im Brustfellraum ein Unterdruck, damit sich die Lunge beim Einatmen entfaltet. Durchschlägt ein Splitter die Brustwand, strömt Außenluft durch das Loch in den Brustkorb und lässt die Lunge zusammenfallen. Eine an 3 Seiten festgeklebte Plastikfolie wirkt als Rückschlagventil: Beim Einatmen saugt der Unterdruck die Folie fest an die Haut und sperrt Außenluft aus; beim Ausatmen entweichen überschüssige Luft und Blut durch den offenen unteren Spalt.",
+        "fieldSpecs": [
+          {
+            "name": "3-Seitig Verklebtes Folien-Brustventil",
+            "scientificName": "Three-Sided Occlusive Flutter Valve Dressing",
+            "categoryTag": "Thorax-Traumahilfe",
+            "imageFileName": "id-three-sided-chest-seal.jpg",
+            "hudCode": "CHEST-SEAL-04",
+            "hudStatus": "1-WAY VALVE ACTIVE",
+            "traits": [
+              {
+                "label": "Foliengröße",
+                "value": "Allseitig 5cm größer als die Wunde"
+              },
+              {
+                "label": "Klebekanten",
+                "value": "Oben, links und rechts luftdicht"
+              },
+              {
+                "label": "Ablasskanal",
+                "value": "Untere Kante offen (Luft & Blut)"
+              }
+            ],
+            "fieldUse": "Blockiert das Eindringen von Außenluft und leitet Luft sowie Blut aus dem Brustraum ab"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Abbinden mit Dünnem Draht/Schnur, Periodisches Lockern des Tourniquets oder 4-Seitiges Zukleben der Brustwunde",
+    "description": "Draht oder Schnüre unter 2cm Breite zerschneiden Nerven und Haut ohne die tiefe Arterie zu schließen. Wer das Tourniquet alle 30 Minuten lockert, löst einen tödlichen Nachblutungsschock aus. Wer eine durchschlagene Brustwunde an allen 4 Seiten zuklebt oder mit Tüchern verstopft, verursacht einen tödlichen Spannungspneumothorax mit Herzstillstand.",
+    "consequence": "Tod durch Blutungsschock, dauerhafte Amputation oder akutes Ersticken durch Spannungspneumothorax"
+  },
+  "faqs": [
+    {
+      "question": "Was tun, wenn trotz fest angezogenem Tourniquet weiterhin hellrotes Blut aus der Wunde fließt?",
+      "causeDiagnostic": "An einem kräftigen Oberschenkel reicht ein einzelnes improvisiertes Tourniquet oft nicht aus, um die tiefe Oberschenkelarterie vollständig flachzudrücken.",
+      "resolution": "Lösen Sie niemals das erste Tourniquet! Legen Sie sofort ein zweites breites Tourniquet direkt oberhalb (herzwärts) neben das erste an und drehen Sie es fest, während Sie ausgekochte Gaze aus dem [Notfall-Schienen- und Druckverband](/protocol-18) tief in die Wunde drücken."
+    },
+    {
+      "question": "Wie beuge ich im Feld einer bakteriellen Wundinfektion und Wundstarrkrampf (Tetanus) durch Splitter vor?",
+      "causeDiagnostic": "Trümmerstaub, rostiges Metall und Erde bringen gefährliche Bakterien und Tetanussporen tief in das Gewebe ein.",
+      "resolution": "Sobald lebensbedrohliche Blutungen gestoppt sind, spülen Sie kleinere Wunden kräftig mit [zuckerfreier 0,9%iger Kochsalzlösung](/protocol-24) aus, tragen Sie [Kiefernharz-Wundsalbe](/protocol-10) auf oder decken Sie sie mit ausgekochtem Tuch ab und lassen Sie im Sanitätsposten eine Tetanusimpfung verabreichen."
+    },
+    {
+      "question": "Was tun, wenn der Verletzte trotz 3-Seiten-Brustverband immer schwerer atmet und die Halsvenen anschwellen?",
+      "causeDiagnostic": "Geronnenes Blut kann die offene Unterkante der Folie an der Haut verkleben, sodass Luft im Brustkorb eingeschlossen wird und ein Spannungspneumothorax entsteht.",
+      "resolution": "Heben Sie sofort eine Ecke der Folie für 2-3 Sekunden leicht an ('Burping'), damit die gestaute Luft zischend entweicht, wischen Sie Blutgerinnsel am unteren Kanal ab, befestigen Sie das 3-Seiten-Ventil neu und lagern Sie den Verletzten mit erhöhtem Oberkörper."
+    }
+  ],
+  "outcome": {
+    "title": "Komplettsystem aus Knebel-Tourniquet (Windlass) & 3-Seiten-Ventil-Brustverband",
+    "description": "Stoppt tödliche arterielle Gliedmaßenblutungen in unter 3 Minuten durch ein 4cm breites Gürtelband 5-7cm über der Wunde, 360-Grad-Drehung eines 15cm langen Metalllöffels oder Eichenstabs, Endenverriegelung und Zeitmarkierung (T HH:MM). Schützt zugleich offene Brustkorbwunden durch eine an 3 Seiten (oben, links, rechts) verklebte und unten offene Plastikfolie als Einwegventil.",
+    "svgFileName": "pr32-outcome.svg",
+    "svgLabels": [
+      "PR-32 KOMPLETT // Knebel-Tourniquet (Windlass) & 3-Seiten-Brustventilverband",
+      "STAGE 01: Breiter Gürtel 5cm Über Wunde",
+      "Mind. 4cm breites Band 3 Finger über Wunde",
+      "STAGE 02: 360°-Stabdrehung Arterienklemme",
+      "Stabilen Stab drehen bis Blutung 100% stoppt",
+      "STAGE 03: Stabsicherung & Zeit (T) Notiz",
+      "Stab sichern und Uhrzeit (T 14:30) vermerken",
+      "STAGE 04: 3-Seiten-Brustventil-Dichtung",
+      "Oben/links/rechts kleben; Luft unten ablassen",
+      "[RETTUNGSPRINZIP] Hebeldrehmoment klemmt Arterien ab und 3-Seiten-Ventil verhindert Pneumothorax"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Eine durch Bombensplitter durchtrennte Arterie tötet in 3 Minuten! Wie Gürtel und Löffel Leben retten!",
+    "body": "Wenn hellrotes Blut aus Arm oder Bein spritzt, reicht einfaches Drücken mit einem Tuch nicht aus. Erstens: Binden Sie einen mindestens 4 Zentimeter breiten Ledergürtel oder ein gefaltetes Tuch drei Fingerbreit oberhalb der Wunde Richtung Herz fest um. Zweitens: Stecken Sie einen stabilen Metalllöffelstiel oder Eichenast in den Knoten und drehen Sie ihn zwei- bis dreimal kräftig herum, bis die Blutung komplett stoppt. Drittens: Sichern Sie den Stab gegen Aufdrehen und schreiben Sie T mit der Uhrzeit auf die Stirn. Bei einem pfeifenden Loch in der Brust legen Sie saubere Plastikfolie auf und kleben nur drei Seiten fest, damit Luft nach unten entweicht!"
+  },
+  "createdAt": "2026-11-16T03:34:15.333Z",
+  "contentHash": "265802761804cc88"
+}

@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-32",
+  "category": "MEDICINE",
+  "title": "Torniquete de Haste Giratória para Hemorragia Arterial e Selo Torácico de 3 Lados (Trauma de Guerra)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "CRÍTICO // Resgate em 3 Minutos para Hemorragia Arterial e Pneumotórax",
+  "summary": "Protocolos de trauma de emergência para impedir o choque hipovolêmico fatal em 3 minutos quando estilhaços de bombas ou vidros quebrados rompem artérias dos membros jorrando sangue vermelho-vivo através de um torniquete de haste giratória (Windlass), e para evitar o colapso pulmonar em ferimentos perfurantes no peito com um curativo plástico de válvula de 3 lados. Use sempre primeiro torniquetes militares comerciais (CAT/SOFTT) e selos de tórax (Chest Seal) se disponíveis; sem kit médico, utilize um cinto de couro ou pano dobrado de 4cm de largura, cabo de colher metálica ou galho de carvalho, plástico limpo de pacote de biscoito e fita silver tape. Inclui prevenção contra infecção secundária, tétano e necrose por compressão prolongada.",
+  "timeRequired": "Torniquete < 1 min // Selo torácico < 2 min",
+  "successRate": "92%",
+  "difficulty": "MEDIUM // Exige força de torção e posicionamento anatômico exato",
+  "outputPerHour": "100% Oclusão Arterial e Válvula Torácica Unidirecional",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Cinto de couro resistente ou toalha de algodão/pano de cânhamo dobrado com pelo menos 4cm (dois dedos) de largura",
+      "desc": "Faixa larga de compressão circunferencial que envolve a coxa ou braço acima da ferida sem rasgar a pele",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "1 cabo sólido de colher de metal ou galho seco de carvalho com cerca de 15cm (um palmo) de comprimento",
+      "desc": "Haste de torção (Windlass) inserida no nó e girada 360 graus para fechar mecanicamente as artérias profundas por alavanca",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Cordão secundário de trava (cadarço/passador) e marcador permanente (ou pedaço de carvão)",
+      "desc": "Prende ambas as pontas da haste para não desenrolar e registra a hora exata (T HH:MM) para evitar necrose do membro",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "1 folha quadrada de plástico limpo (interior de pacote de salgadinho fechado ou Ziploc) e 1 rolo de fita silver tape",
+      "desc": "Cobre o ferimento perfurante no tórax e veda apenas 3 lados (topo, esquerda, direita) para expulsar ar/sangue e bloquear o ar externo",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Enrolar Firme um Cinto de Couro ou Pano Dobrado de 4cm de Largura 5-7cm Acima do Ferimento",
+      "description": "1. **Identificar Sangramento Arterial**: Verifique se há sangue vermelho-vivo jorrando no ritmo da pulsação e exponha imediatamente a área logo acima do ferimento.\n2. **Escolher Ponto 5-7cm Acima da Articulação**: Nunca aplique o torniquete sobre o joelho ou cotovelo onde o osso impede a compressão; suba três dedos (5-7cm) na direção do coração sobre músculo espesso.\n3. **Amarrar Faixa Larga Sem Folga**: Enrole um [cinto de couro impermeável](/protocol-17) ou pano dobrado com pelo menos dois dedos (4cm) de largura bem apertado ao redor do membro e dê o primeiro nó firme.",
+      "actionNote": "Jamais use fios elétricos, arame ou cordas finas com menos de 2cm de largura; fios finos cortam a pele e os nervos como lâmina sem fechar a artéria profunda, causando paralisia permanente e necrose.",
+      "svgFileName": "pr32-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Amarrar Cinto Largo (>=4cm) 5-7cm Acima da Ferida Rumo ao Coração",
+        "Evitar articulações; dar 2 voltas firmes no músculo 3 dedos acima da ferida",
+        "Garantir largura mínima de 4cm (2 dedos) para evitar lesão na pele e nervos",
+        "PROIBIDO usar arame ou cordão fino: corta nervos e vasos sem estancar a artéria",
+        "[ESSENCIAL] Fixar faixa larga sem folga 5-7cm acima da ferida na direção do coração"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WIDE TOURNIQUET BAND",
+        "title": "Distribuição de Pressão Tecidual em Faixas Largas (>=4cm) e Oclusão Arterial Profunda",
+        "text": "A artéria femoral na coxa e a artéria braquial no braço passam fundo sob grossas camadas musculares junto ao osso. Fechar esses vasos exige forte pressão circunferencial para esmagar o músculo contra o osso. Uma faixa de pelo menos dois dedos (4cm) de largura distribui a força de modo uniforme até colapsar a artéria profunda, enquanto um cordão fino apenas rasga a pele superficial deixando a artéria aberta.",
+        "fieldSpecs": [
+          {
+            "name": "Faixa Larga de Cinto de Couro e Tecido",
+            "scientificName": "Wide Circumferential Arterial Compression Band",
+            "categoryTag": "Controle de Hemorragia de Guerra",
+            "imageFileName": "id-leather-belt-tourniquet-band.jpg",
+            "hudCode": "TQ-BAND-01",
+            "hudStatus": "WIDTH >= 4CM VERIFIED",
+            "traits": [
+              {
+                "label": "Posição",
+                "value": "5-7cm acima da ferida (rumo ao coração)"
+              },
+              {
+                "label": "Largura Mín.",
+                "value": "4cm ou mais (largura de 2 dedos)"
+              },
+              {
+                "label": "Proibido",
+                "value": "Nunca usar arame, fio elétrico ou barbante"
+              }
+            ],
+            "fieldUse": "Amarração circunferencial primária 5-7cm acima de lesões arteriais longe das articulações"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Inserir Haste Rígida (Colher ou Galho de Carvalho) no Nó e Girar 360 Graus Até Estancar o Sangue",
+      "description": "1. **Inserir Haste (Windlass)**: Coloque um cabo sólido de colher de aço inox ou galho grosso de carvalho de cerca de 15cm (um palmo) sobre o primeiro nó e dê outro nó forte por cima para prendê-lo.\n2. **Giro de Alavanca de 360 Graus**: Segure as duas pontas da haste e gire-a de 2 a 3 voltas completas na mesma direção como uma hélice até que a faixa aperte o músculo contra o osso.\n3. **Confirmar Parada do Sangue e Pulso**: Continue girando até que o jorro de sangue vermelho-vivo pare totalmente e, ao tocar o pulso ou tornozelo com a ponta dos dedos, não se sinta nenhuma pulsação.",
+      "actionNote": "Não pare de apertar na metade mesmo que o ferido grite de dor. Um aperto fraco fecha apenas as veias superficiais e mantém a artéria profunda aberta, gerando congestão venosa que piora o sangramento.",
+      "svgFileName": "pr32-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Inserir Haste (Colher/Galho) no Nó e Girar 360 Graus",
+        "Colocar colher metálica ou galho de carvalho de 15cm (1 palmo) no nó e girar",
+        "Girar 2-3 voltas até estancar o sangue vermelho e sumir o pulso distal",
+        "Proibido apertar fraco: fechar só veias com artéria aberta agrava a hemorragia",
+        "[ALAVANCA] O torque de rotação fecha fisicamente 100% da artéria profunda"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WINDLASS TORQUE LEVER",
+        "title": "Torque de Alavanca do Molinete (Windlass) e Prevenção de Congestão Venosa",
+        "text": "Apenas puxar um cinto com as mãos não vence a alta pressão arterial sistólica (acima de 120mmHg) da artéria femoral de um adulto. Ao prender uma haste rígida de 15cm no nó e girá-la 360 graus, a haste funciona como um torno mecânico que multiplica várias vezes a tensão circunferencial da faixa. Canetas plásticas frágeis ou galhos podres quebram durante o giro, por isso use sempre metal ou madeira de lei.",
+        "fieldSpecs": [
+          {
+            "name": "Haste de Torção e Compressão Windlass",
+            "scientificName": "High-Torque Windlass Torsion Rod",
+            "categoryTag": "Pinça Arterial por Alavanca",
+            "imageFileName": "id-windlass-rod-twist.jpg",
+            "hudCode": "TQ-ROD-02",
+            "hudStatus": "PULSE OCCLUDED",
+            "traits": [
+              {
+                "label": "Material Ideal",
+                "value": "Cabo de colher metálica ou carvalho"
+              },
+              {
+                "label": "Comprimento",
+                "value": "Aprox. 15cm (1 palmo adulto)"
+              },
+              {
+                "label": "Verificação",
+                "value": "Sangue estancado e pulso ausente"
+              }
+            ],
+            "fieldUse": "Girada 2-3 voltas dentro do nó para gerar pressão de fechamento arterial completo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Travar Ambas as Pontas da Haste com um Cordão e Anotar a Hora Exata (T HH:MM) na Testa",
+      "description": "1. **Trava Antirretorno da Haste**: Ao soltar a haste, a forte tensão fará com que ela desenrole sozinha; enrole a ponta restante do cinto ou um cordão auxiliar nas extremidades da haste e amarre firme no membro.\n2. **Registro da Hora (T)**: Com caneta permanente, batom ou um pedaço de [carvão de carvalho](/protocol-09), escreva grande a letra 'T' e a hora exata da aplicação (ex.: `T 14:30`) sobre fita branca na faixa e na testa do ferido.\n3. **Manter o Torniquete Visível**: Mesmo ao cobrir o ferido com cobertores para aquecê-lo, nunca esconda o torniquete nem a marcação de hora sob a roupa para que a equipe médica os veja imediatamente.",
+      "actionNote": "Jamais afrouxe ou retire um torniquete em campo após aplicado. Soltá-lo após mais de 2 horas lança toxinas necróticas e potássio direto no coração, causando parada cardíaca fulminante ou choque por ressangramento.",
+      "svgFileName": "pr32-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Travar Pontas da Haste e Anotar Hora de Início (T HH:MM)",
+        "Amarrar as pontas da haste com cordão e escrever hora (T) na faixa e na testa",
+        "Não cobrir o torniquete com roupas ou mantas; deixar visível para os médicos",
+        "PROIBIDO afrouxar em campo: risco de parada cardíaca por toxinas e hemorragia",
+        "[TEMPO DE OURO] Registro exato obrigatório para cirurgia em até 2 horas"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // ISCHEMIC TIME LOGGING",
+        "title": "Gestão da Janela de Isquemia (2 Horas) e Prevenção de Choque de Reperfusão",
+        "text": "O bloqueio arterial total interrompe o oxigênio nos tecidos distais do membro. Se a cirurgia vascular e a restauração do fluxo ocorrerem dentro de 2 horas após a aplicação, o membro pode ser salvo sem lesão nervosa permanente ou necrose. Anotar a hora exata (T HH:MM) e manter o torniquete exposto garante prioridade cirúrgica imediata.",
+        "fieldSpecs": [
+          {
+            "name": "Trava da Haste e Etiqueta de Hora (T)",
+            "scientificName": "Windlass Keeper Lock & Tourniquet Time Stamp",
+            "categoryTag": "Controle de Tempo de Isquemia",
+            "imageFileName": "id-tourniquet-time-mark.jpg",
+            "hudCode": "TQ-TIME-03",
+            "hudStatus": "TIME LOGGED (<=2H)",
+            "traits": [
+              {
+                "label": "Formato",
+                "value": "T + hora 24h (ex.: T 14:30)"
+              },
+              {
+                "label": "Localização",
+                "value": "Sobre a faixa e na testa do ferido"
+              },
+              {
+                "label": "Limite Seguro",
+                "value": "Entrega cirúrgica prioritária <= 2h"
+              }
+            ],
+            "fieldUse": "Impede que a haste desenrole e documenta o horário exato para evitar necrose do membro"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Cobrir Ferimento Perfurante no Peito com Plástico Limpo e Colar Apenas 3 Lados Criando Válvula de Escape",
+      "description": "1. **Confirmar Ferida Torácica Aspirativa**: Ouça se há som de assobio ou sucção de ar ('shhh') e sangue espumoso rosado saindo pelo furo no peito ou costas a cada respiração.\n2. **Aplicar Plástico na Expiração**: Limpe o sangue e o suor ao redor do furo com pano limpo e, quando o ferido soltar todo o ar, cubra a ferida com um quadrado de plástico limpo (interior de pacote de salgadinho ou Ziploc) três dedos (5cm) maior que o furo em todos os lados.\n3. **Vedar 3 Lados e Deixar o Inferior Aberto**: Usando fita silver tape da [vedação de janelas contra explosão](/protocol-31), cole bem as bordas superior, esquerda e direita na pele, deixando a borda inferior aberta sem fita para drenar ar e sangue.",
+      "actionNote": "Nunca vede todos os 4 lados se o pulmão perfurado estiver vazando ar; prender o ar dentro do tórax esmaga o coração e o pulmão sadio (pneumotórax hipertensivo), matando por asfixia em poucos minutos.",
+      "svgFileName": "pr32-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Cobrir Ferida Torácica com Plástico e Colar 3 Lados em Válvula",
+        "Fazer expirar, cobrir com plástico e vedar apenas TOPO, ESQUERDA e DIREITA",
+        "Na expiração saem ar e sangue por baixo; na inspiração o plástico cola e fecha",
+        "CUIDADO ao vedar 4 lados: o ar preso colapsa o pulmão e causa asfixia fatal",
+        "[VÁLVULA 1-VIA] Deixar a borda inferior aberta evita o pneumotórax hipertensivo"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 3-SIDED FLUTTER VALVE",
+        "title": "Restauração da Pressão Negativa Torácica e Mecânica da Válvula Flutter de 3 Lados",
+        "text": "A cavidade torácica normal mantém pressão negativa em relação ao ambiente para que os pulmões inflem na inspiração. Quando um estilhaço perfura a parede do peito, o ar externo entra pelo buraco em vez da traqueia e colapsa o pulmão. Colar um plástico em 3 lados cria uma válvula unidirecional: ao inspirar, a sucção puxa o plástico contra a pele bloqueando o ar externo; ao expirar, a pressão positiva expulsa o ar acumulado e o sangue pela borda inferior aberta.",
+        "fieldSpecs": [
+          {
+            "name": "Válvula Torácica de Plástico Vedada em 3 Lados",
+            "scientificName": "Three-Sided Occlusive Flutter Valve Dressing",
+            "categoryTag": "Socorro de Pneumotórax",
+            "imageFileName": "id-three-sided-chest-seal.jpg",
+            "hudCode": "CHEST-SEAL-04",
+            "hudStatus": "1-WAY VALVE ACTIVE",
+            "traits": [
+              {
+                "label": "Tamanho Folha",
+                "value": "5cm maior que a ferida em cada lado"
+              },
+              {
+                "label": "Bordas Fixas",
+                "value": "Superior, esquerda e direita vedadas"
+              },
+              {
+                "label": "Canal Escape",
+                "value": "Borda inferior aberta (ar e sangue)"
+              }
+            ],
+            "fieldUse": "Bloqueia a entrada de ar externo e drena o ar e sangue pleural para prevenir asfixia"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Amarrar Membros com Arame/Cordão Fino, Afrouxar o Torniquete Periodicamente ou Vedar os 4 Lados do Peito",
+    "description": "Amarrar com fios ou cordas menores que 2cm corta nervos e pele sem fechar a artéria, causando paralisia e necrose. Afrouxar o torniquete a cada 30 minutos para 'circular sangue' provoca morte por choque hemorrágico. Vedar os 4 lados de um furo no peito ou tapá-lo com toalhas prende o ar vazado do pulmão e para o coração por pneumotórax hipertensivo.",
+    "consequence": "Morte por choque hipovolêmico após ressangramento arterial, amputação permanente ou asfixia aguda por pneumotórax hipertensivo"
+  },
+  "faqs": [
+    {
+      "question": "O que fazer se o sangue vermelho continuar saindo mesmo após apertar ao máximo o primeiro torniquete?",
+      "causeDiagnostic": "Em coxas muito musculosas, um único torniquete improvisado pode não gerar largura de pressão suficiente para colapsar totalmente a artéria femoral profunda.",
+      "resolution": "Nunca retire nem afrouxe o primeiro torniquete. Aplique imediatamente um segundo torniquete largo logo acima (mais perto do coração) do primeiro e aperte-o firme, enquanto preenche a ferida com gaze fervida da [tala e bandagem compressiva](/protocol-18) fazendo pressão direta com as duas mãos."
+    },
+    {
+      "question": "Como prevenir em campo a infecção bacteriana secundária e o tétano em feridas por estilhaços?",
+      "causeDiagnostic": "Escombros de explosões, fragmentos metálicos enferrujados e terra introduzem bactérias letais e esporos de tétano nos tecidos profundos.",
+      "resolution": "Após conter a hemorragia grave, lave ferimentos menos profundos com jato forte de [solução salina isotônica 0,9% sem açúcar](/protocol-24) para remover a sujeira, cubra com [pomada antisséptica de resina de pinheiro](/protocol-10) ou pano fervido seco, e receba profilaxia antitetânica no posto médico."
+    },
+    {
+      "question": "O que fazer se após colocar o plástico de 3 lados o ferido tiver mais falta de ar e as veias do pescoço incharem?",
+      "causeDiagnostic": "O sangue coagulado pode colar a borda inferior aberta na pele, bloqueando a saída de ar e causando um pneumotórax hipertensivo progressivo.",
+      "resolution": "Levante imediatamente um canto do plástico por 2-3 segundos para deixar o ar preso escapar com um assobio ('burping'), limpe os coágulos do canal inferior, recoloque a válvula de 3 lados e sente o ferido consciente semi-inclinado ou apoiado sobre o lado ferido."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Completo de Torniquete de Haste (Windlass) e Selo Torácico de Válvula de 3 Lados",
+    "description": "Estanca hemorragias arteriais fatais nos membros em menos de 3 minutos enrolando um cinto de couro de 4cm de largura 5-7cm acima da ferida, girando 360 graus uma colher metálica ou haste de carvalho de 15cm, travando suas pontas e anotando a hora exata (T HH:MM). Ao mesmo tempo, protege feridas perfurantes no peito com plástico limpo vedado em 3 lados (topo, esquerda, direita) e aberto embaixo para drenar ar e sangue.",
+    "svgFileName": "pr32-outcome.svg",
+    "svgLabels": [
+      "PR-32 COMPLETO // Torniquete Windlass e Selo Torácico de Válvula de 3 Lados",
+      "STAGE 01: Cinto Largo 5cm Acima da Ferida",
+      "Amarrar cinto >=4cm 3 dedos acima da ferida",
+      "STAGE 02: Giro de Haste 360° Oclusão",
+      "Girar haste firme para estancar artéria 100%",
+      "STAGE 03: Trava e Registro de Hora (T)",
+      "Fixar haste e anotar hora exata (T 14:30)",
+      "STAGE 04: Selo Torácico Válvula 3 Lados",
+      "Colar topo/esq/dir; drenar ar por baixo",
+      "[PRINCÍPIO] O torque da haste fecha artérias e a válvula de 3 lados evita o pneumotórax"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Uma artéria cortada por estilhaço mata em 3 minutos! Como salvar uma vida com um cinto e uma colher!",
+    "body": "Quando o sangue vermelho jorra de um braço ou perna, apertar com uma toalha não resolve. Primeiro, amarre um cinto de couro ou pano dobrado de pelo menos 4 centímetros de largura três dedos acima da ferida na direção do coração. Segundo, encaixe o cabo de uma colher de metal ou galho de carvalho no nó e gire duas ou três voltas completas até parar totalmente o sangue. Terceiro, amarre as pontas da haste para não soltar e escreva T com a hora na testa. E se houver um furo no peito fazendo barulho de ar, cubra com plástico limpo colando só três lados para o ar sair por baixo!"
+  },
+  "createdAt": "2026-11-16T03:34:15.333Z",
+  "contentHash": "265802761804cc88"
+}

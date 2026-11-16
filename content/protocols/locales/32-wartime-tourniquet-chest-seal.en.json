@@ -1,0 +1,261 @@
+{
+  "protocolId": "PR-32",
+  "category": "MEDICINE",
+  "title": "Wartime Arterial Bleeding Windlass Tourniquet & 3-Sided Chest Seal Valve (Field Trauma First Aid)",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "CRITICAL // 3-Minute Golden Time Arterial Bleed & Pneumothorax Rescue",
+  "summary": "Emergency trauma protocols to stop fatal hypovolemic shock within 3 minutes when wartime bombing shrapnel or shattered glass severs major limb arteries causing bright red spurting blood using a Windlass Tourniquet, and to prevent lung collapse from sucking chest wounds using a 3-Sided Plastic Flutter Valve Dressing. Always apply commercial military tourniquets (CAT/SOFTT) and vented chest seals first if available; when cut off from medical supplies, use a 4cm-wide leather belt or folded cloth, a solid metal spoon or oak stick, a clean snack bag plastic sheet, and duct tape. Includes vital precautions against secondary wound infection, tetanus, and limb necrosis from prolonged compression.",
+  "timeRequired": "Tourniquet < 1 min // Chest Seal < 2 mins",
+  "successRate": "92%",
+  "difficulty": "MEDIUM // Requires strong torque and accurate placement",
+  "outputPerHour": "100% Arterial Occlusion & One-Way Thoracic Air Venting",
+  "materials": [
+    {
+      "id": "m1",
+      "name": "Sturdy leather belt or folded cotton towel/hemp cloth at least 4cm (two fingers) wide",
+      "desc": "Wide circumferential compression band that wraps around the thigh or upper arm above the wound without cutting into skin",
+      "isGathered": false
+    },
+    {
+      "id": "m2",
+      "name": "1 solid metal spoon handle or dry oak branch about 15cm (one handspan) long",
+      "desc": "Windlass torsion rod inserted into the band knot and twisted 360 degrees to mechanically clamp deep arteries",
+      "isGathered": false
+    },
+    {
+      "id": "m3",
+      "name": "Secondary locking cord (shoelace/belt loop) and permanent marker (or charcoal piece)",
+      "desc": "Secures both ends of the twisted rod from unwinding and logs the exact application time (T HH:MM) to prevent limb necrosis",
+      "isGathered": false
+    },
+    {
+      "id": "m4",
+      "name": "1 clean square plastic sheet (inner surface of unopened snack bag or Ziploc) & 1 roll of duct tape",
+      "desc": "Covers a penetrating chest wound and seals 3 sides (top, left, right) to let internal air and blood escape while blocking outside air",
+      "isGathered": false
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Wrap a Leather Belt or Folded Cloth at Least 4cm Wide Tightly 5-7cm Above the Bleeding Wound",
+      "description": "1. **Identify Arterial Bleeding**: Check for bright red blood spurting in rhythm with the heartbeat and expose the limb area immediately above the wound.\n2. **Select Site 5-7cm Above Joint**: Never place a tourniquet directly over a knee or elbow joint where bone blocks compression; move three finger-widths (5-7cm) closer to the heart over thick muscle.\n3. **Bind Wide Band Snugly**: Wrap a [waterproof leather belt](/protocol-17) or cotton cloth folded to at least two finger-widths (4cm) tightly around the limb and tie a firm first half-knot.",
+      "actionNote": "Never use electrical wire, thin cord, or shoelaces narrower than 2cm as the primary band; narrow cords slice through skin and nerves without closing deep arteries, causing permanent paralysis and necrosis.",
+      "svgFileName": "pr32-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // Bind Wide Belt (>=4cm) 5-7cm Above Wound Toward Heart",
+        "Avoid joints; wrap tightly twice around muscle 3 fingers (5-7cm) above wound",
+        "Maintain minimum 4cm (2 fingers) band width to prevent tissue and nerve tearing",
+        "NEVER use wire or thin cord: slices skin and nerves without stopping arterial flow",
+        "[CORE] Anchor a wide band snugly 5-7cm proximal to the wound toward the heart"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WIDE TOURNIQUET BAND",
+        "title": "Tissue Pressure Distribution of Wide (>=4cm) Bands and Deep Arterial Occlusion",
+        "text": "The femoral artery in the thigh and the brachial artery in the upper arm run deep beneath thick muscle layers beside heavy bone. Closing these vessels requires powerful circumferential pressure to press the surrounding muscle flat against the bone. A band at least two fingers (4cm) wide distributes compression evenly across the muscle belly to flatten the deep artery, whereas a narrow string cuts into surface skin while leaving the deep artery open.",
+        "fieldSpecs": [
+          {
+            "name": "Wide Leather Belt & Cloth Tourniquet Band",
+            "scientificName": "Wide Circumferential Arterial Compression Band",
+            "categoryTag": "Wartime Hemorrhage Control",
+            "imageFileName": "id-leather-belt-tourniquet-band.jpg",
+            "hudCode": "TQ-BAND-01",
+            "hudStatus": "WIDTH >= 4CM VERIFIED",
+            "traits": [
+              {
+                "label": "Placement",
+                "value": "5-7cm above wound (toward heart)"
+              },
+              {
+                "label": "Min Width",
+                "value": "At least 4cm (2 finger-widths)"
+              },
+              {
+                "label": "Banned Items",
+                "value": "Never use wire, cable, or thin string"
+              }
+            ],
+            "fieldUse": "First-stage snug circumferential binding 5-7cm above limb shrapnel wounds away from joints"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Insert a Sturdy Rod (Spoon Handle or Oak Stick) into the Knot and Twist 360 Degrees Until Bleeding Stops",
+      "description": "1. **Insert Windlass Rod**: Place a solid 15cm (one handspan) stainless steel spoon handle or thick oak stick on top of the first knot and tie a full square knot over it.\n2. **Twist 360 Degrees for Leverage**: Grip both ends of the rod and twist it 2 to 3 full turns in the same direction like a propeller until the band cinches the muscle tightly against the bone.\n3. **Verify Bleeding Stop & Pulse Loss**: Continue twisting until bright red bleeding from the wound stops completely and the distal pulse at the wrist or ankle cannot be felt when touched with your fingertips.",
+      "actionNote": "Do not stop twisting early even if the casualty cries out in pain. Partial tightening closes only shallow veins while leaving the deep artery open, causing severe venous congestion that accelerates bleeding.",
+      "svgFileName": "pr32-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // Insert Rod (Spoon/Branch) in Knot & Twist 360 Degrees",
+        "Insert a 15cm (1 handspan) metal spoon handle or oak stick and rotate",
+        "Twist 2-3 turns until bright red bleeding stops and distal pulse disappears",
+        "Avoid weak tightening: blocking only veins while artery stays open worsens bleeding",
+        "[LEVER PRINCIPLE] Rotational rod torque physically clamps deep arteries 100%"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // WINDLASS TORQUE LEVER",
+        "title": "Windlass Torsional Leverage and Prevention of Venous Congestion",
+        "text": "Pulling a belt by hand alone cannot overcome the high systolic blood pressure (over 120mmHg) inside an adult femoral artery. Inserting a handspan-long rigid rod into the knot and twisting it 360 degrees turns the rod into a mechanical capstan lever, multiplying rotational force into circumferential band tension several times over. Brittle plastic pens or rotten twigs will snap under load, so always use a metal utensil handle or seasoned hardwood stick.",
+        "fieldSpecs": [
+          {
+            "name": "Windlass Torsion Compression Rod",
+            "scientificName": "High-Torque Windlass Torsion Rod",
+            "categoryTag": "Mechanical Arterial Clamp",
+            "imageFileName": "id-windlass-rod-twist.jpg",
+            "hudCode": "TQ-ROD-02",
+            "hudStatus": "PULSE OCCLUDED",
+            "traits": [
+              {
+                "label": "Best Material",
+                "value": "Metal spoon handle or solid oak stick"
+              },
+              {
+                "label": "Rod Length",
+                "value": "Approx. 15cm (1 adult handspan)"
+              },
+              {
+                "label": "Success Check",
+                "value": "Bleeding stops & distal pulse absent"
+              }
+            ],
+            "fieldUse": "Twisted 2-3 revolutions inside the band knot to generate full arterial occlusion pressure"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Lock Both Ends of the Rod with a Secondary Cord and Write the Exact Time (T HH:MM) on the Forehead",
+      "description": "1. **Lock the Windlass Rod**: Because high tension will cause the rod to unwind as soon as you let go, wrap the remaining belt tail or a secondary cord tightly around one or both ends of the rod and tie it to the limb.\n2. **Mark Application Time (T)**: Using a permanent marker, lipstick, or a piece of [charred oak charcoal](/protocol-09), write the letter 'T' and the exact time (e.g., `T 14:30`) in large characters on white tape over the band and on the casualty's forehead.\n3. **Keep Tourniquet Exposed**: Even when covering the casualty with blankets for warmth, leave the tourniquet and time marking clearly visible so evacuating medics spot it immediately.",
+      "actionNote": "Never loosen or remove a tourniquet in the field once applied. Releasing a tourniquet after prolonged ischemia flushes potassium and necrotic toxins into the heart, causing fatal cardiac arrest or recurrent shock.",
+      "svgFileName": "pr32-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // Lock Windlass Rod Ends & Log Application Time (T HH:MM)",
+        "Tie down rod ends with strap tail or cord and mark time (T) on band & forehead",
+        "Never cover the tourniquet under clothing; keep clearly exposed for medics",
+        "NEVER loosen periodically in field: risks fatal re-bleeding shock & toxin rush",
+        "[GOLDEN TIME] Accurate timestamp is mandatory for surgical handoff within 2 hours"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // ISCHEMIC TIME LOGGING",
+        "title": "2-Hour Ischemic Window Management and Prevention of Reperfusion Shock",
+        "text": "Complete arterial occlusion deprives distal limb tissues of oxygen. When surgical hemostasis and blood flow restoration occur within 2 hours of application, the limb can typically be saved without permanent nerve damage or necrosis. Recording the exact timestamp (T HH:MM) and keeping the device exposed allows triage teams to prioritize immediate vascular surgery.",
+        "fieldSpecs": [
+          {
+            "name": "Windlass Keeper Lock & Timestamp Label",
+            "scientificName": "Windlass Keeper Lock & Tourniquet Time Stamp",
+            "categoryTag": "Necrosis Prevention Log",
+            "imageFileName": "id-tourniquet-time-mark.jpg",
+            "hudCode": "TQ-TIME-03",
+            "hudStatus": "TIME LOGGED (<=2H)",
+            "traits": [
+              {
+                "label": "Format",
+                "value": "T + 24-hour time (e.g., T 14:30)"
+              },
+              {
+                "label": "Location",
+                "value": "On tourniquet strap & forehead"
+              },
+              {
+                "label": "Safe Window",
+                "value": "Priority surgical handoff <= 2 hours"
+              }
+            ],
+            "fieldUse": "Locks the torsion rod against unwinding and logs application time to prevent limb necrosis"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Cover a Sucking Chest Wound with Clean Square Plastic and Tape Only 3 Sides to Form a One-Way Valve",
+      "description": "1. **Identify Sucking Chest Wound**: Listen for a 'hissing' or sucking air sound and watch for pink frothy bubbles at a chest or back wound each time the casualty breathes.\n2. **Apply Plastic Sheet on Exhalation**: Wipe blood and sweat from the skin around the hole, ask the casualty to exhale fully, and place a clean square plastic sheet (inner side of an unopened snack bag or Ziploc) extending at least three finger-widths (5cm) beyond the wound edges.\n3. **Tape 3 Sides & Leave Bottom Open**: Using heavy duct tape from [blast window taping](/protocol-31), seal the top, left, and right edges tightly to the skin while leaving the bottom edge completely untaped as a gravity drain and air vent.",
+      "actionNote": "Never tape all 4 sides shut if air is leaking from a torn lung; trapping air inside the chest cavity builds pressure that crushes the heart and opposite lung (tension pneumothorax), causing rapid suffocation.",
+      "svgFileName": "pr32-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // Cover Penetrating Chest Wound & Tape 3 Sides for 1-Way Valve",
+        "Apply palm-sized plastic at full exhalation and seal TOP, LEFT, RIGHT edges",
+        "Exhalation vents trapped chest air & blood downward; inhalation sucks plastic shut",
+        "CAUTION against 4-side seal: trapped internal air collapses lung and suffocates",
+        "[1-WAY VALVE] Leaving the bottom edge open prevents tension pneumothorax"
+      ],
+      "deepDive": {
+        "badge": "FIELD SPEC // 3-SIDED FLUTTER VALVE",
+        "title": "Thoracic Negative Pressure Restoration and 3-Sided Flutter Valve Mechanics",
+        "text": "The normal pleural space maintains negative pressure relative to outside air so the lungs expand when the chest wall rises. When shrapnel punctures the chest wall, outside air rushes in through the hole instead of the trachea, collapsing the lung. Taping a plastic sheet on 3 sides creates a passive flutter valve: during inhalation, negative pressure pulls the plastic flat against the wet skin to block outside air; during exhalation, positive intrathoracic pressure pushes excess air and blood out through the open bottom channel.",
+        "fieldSpecs": [
+          {
+            "name": "3-Sided Taped Plastic Chest Valve",
+            "scientificName": "Three-Sided Occlusive Flutter Valve Dressing",
+            "categoryTag": "Thoracic Trauma First Aid",
+            "imageFileName": "id-three-sided-chest-seal.jpg",
+            "hudCode": "CHEST-SEAL-04",
+            "hudStatus": "1-WAY VALVE ACTIVE",
+            "traits": [
+              {
+                "label": "Sheet Size",
+                "value": "5cm wider than wound on all sides"
+              },
+              {
+                "label": "Taped Edges",
+                "value": "Top, Left, and Right sealed tight"
+              },
+              {
+                "label": "Vent Channel",
+                "value": "Bottom 1 edge left open for drainage"
+              }
+            ],
+            "fieldUse": "Blocks outside air entry while venting internal air and blood to prevent tension pneumothorax"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "Binding Limbs with Thin Wire/String, Loosening a Tourniquet Periodically, or Sealing All 4 Sides of a Chest Wound",
+    "description": "Tying narrow wire or cord (<2cm) slices nerves and skin without closing deep arteries, causing paralysis and necrosis. Loosening a tourniquet every 30 minutes 'to save the limb' triggers fatal hypovolemic shock from renewed bleeding. Sealing all 4 sides of a sucking chest wound with tape or wet towels traps leaking lung air inside the chest, leading to cardiac arrest from tension pneumothorax.",
+    "consequence": "Death from recurrent arterial hemorrhage shock, permanent limb amputation, or acute suffocation from tension pneumothorax"
+  },
+  "faqs": [
+    {
+      "question": "What should I do if bright red bleeding continues even after twisting the first tourniquet tight?",
+      "causeDiagnostic": "On a muscular thigh, a single improvised tourniquet may not generate enough surface area compression to fully flatten the deep femoral artery.",
+      "resolution": "Never remove or loosen the first tourniquet. Immediately apply a second wide windlass tourniquet directly above (closer to the heart than) the first one and twist it tight, while packing boiled sterile gauze from [field splint and pressure bandage](/protocol-18) into the wound with firm two-handed direct pressure."
+    },
+    {
+      "question": "How do I prevent secondary bacterial infection and tetanus in shrapnel wounds in the field?",
+      "causeDiagnostic": "Blast debris, rusty metal fragments, and soil introduce lethal anaerobic bacteria and tetanus spores deep into damaged tissue.",
+      "resolution": "Once life-threatening arterial bleeding is controlled, flush non-arterial wounds vigorously with [sugar-free 0.9% isotonic saline](/protocol-24) to wash out dirt, dress with [pine resin antiseptic ointment](/protocol-10) or boiled dry cloth, and seek tetanus toxoid prophylaxis at the earliest medical post."
+    },
+    {
+      "question": "What if the casualty still struggles to breathe and neck veins swell after applying the 3-sided chest seal?",
+      "causeDiagnostic": "Clotted blood can stick the open bottom edge of the plastic to the skin, blocking air escape and allowing tension pneumothorax to build up.",
+      "resolution": "Immediately lift one corner of the plastic dressing for 2-3 seconds ('burping' the seal) so trapped air escapes with a 'hiss', wipe away blood clots under the open channel, reseal the 3 edges, and position the conscious casualty sitting upright or leaning toward the injured side."
+    }
+  ],
+  "outcome": {
+    "title": "Complete Wartime Windlass Tourniquet & 3-Sided Flutter Valve Chest Seal System",
+    "description": "Stops fatal limb arterial hemorrhage within 3 minutes by wrapping a 4cm-wide leather belt 5-7cm above the wound, twisting a 15cm rigid metal spoon or oak rod 360 degrees to occlude the artery, locking the rod ends, and logging the exact time (T HH:MM). Simultaneously protects penetrating chest wounds with a clean plastic sheet taped on 3 sides (top, left, right) and left open at the bottom to vent internal air and blood while blocking outside air.",
+    "svgFileName": "pr32-outcome.svg",
+    "svgLabels": [
+      "PR-32 COMPLETE // Wartime Windlass Tourniquet & 3-Sided Chest Valve Dressing",
+      "STAGE 01: Wide Belt 5cm Above Wound",
+      "Bind >=4cm wide belt 3 fingers above wound",
+      "STAGE 02: 360-Degree Rod Arterial Clamp",
+      "Twist rigid rod to stop arterial bleeding 100%",
+      "STAGE 03: Rod Lock & Time (T) Log",
+      "Lock rod ends and write timestamp (T 14:30)",
+      "STAGE 04: 3-Sided Chest Valve Seal",
+      "Tape top/left/right; vent air out bottom edge",
+      "[RESCUE PRINCIPLE] Windlass torque clamps limb arteries while 3-sided valve prevents pneumothorax"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Severed artery from wartime shrapnel kills in 3 minutes! How a belt and spoon save a life!",
+    "body": "When bright red blood spurts from an arm or leg, simple cloth pressure won't stop it. First, wrap a leather belt or folded cloth at least 4 centimeters wide three finger-widths above the wound toward the heart. Second, slip a solid metal spoon handle or oak stick into the knot and twist it two or three full turns until bleeding stops completely. Third, tie the rod ends so it cannot unwind and write T with the exact time on the forehead. For a sucking chest wound, cover the hole with clean plastic and tape only three sides so trapped air escapes out the bottom!"
+  },
+  "createdAt": "2026-11-16T03:34:15.333Z",
+  "contentHash": "265802761804cc88"
+}

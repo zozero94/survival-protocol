@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg32out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="leather32out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <pattern id="grid32out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow32out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Tactical Frame -->
+  <rect width="800" height="450" fill="url(#bg32out)"/>
+  <rect width="800" height="450" fill="url(#grid32out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="11.5" font-weight="bold">PR-32 완성체 // 전시 대량 출혈 막대 회전 지혈대(Windlass) 및 흉부 3면 밸브 밀폐 드레싱</text>
+
+  <!-- 4-Stage Horizontal Cards -->
+  <g filter="url(#shadow32out)">
+    <!-- STAGE 01 Card -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="34" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 상처 위 5cm 광폭 벨트 결속</text>
+
+    <!-- Visual 1: Limb with 4cm wide strap 5-7cm above wound -->
+    <rect x="74" y="125" width="70" height="150" rx="18" fill="#27272a" stroke="#52525b" stroke-width="2.5"/>
+    <!-- Arterial vessel line -->
+    <line x1="109" y1="128" x2="109" y2="270" stroke="#ef4444" stroke-width="3" stroke-dasharray="5 3"/>
+    <!-- Wound below -->
+    <ellipse cx="109" cy="242" rx="16" ry="7" fill="#991b1b" stroke="#ef4444" stroke-width="1.5"/>
+    <!-- 4cm wide belt strap 5-7cm above wound -->
+    <rect x="68" y="162" width="82" height="28" rx="3" fill="url(#leather32out)" stroke="#f59e0b" stroke-width="2"/>
+    <!-- 5-7cm dimension arrow -->
+    <line x1="56" y1="190" x2="56" y2="242" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="51" y1="190" x2="61" y2="190" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="51" y1="242" x2="61" y2="242" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="32" y="341" fill="#94a3b8" font-family="monospace" font-size="8">손가락 3마디 위 폭 4cm 이상 벨트 밀착</text>
+
+    <!-- STAGE 02 Card -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#dc2626" stroke-width="1"/>
+    <text x="228" y="102" fill="#ef4444" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 막대 360도 회전 동맥 압착</text>
+
+    <!-- Visual 2: Windlass stick twisting & arterial occlusion -->
+    <rect x="268" y="125" width="70" height="150" rx="18" fill="#27272a" stroke="#52525b" stroke-width="2.5"/>
+    <rect x="262" y="162" width="82" height="28" rx="3" fill="url(#leather32out)" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Windlass rod across strap -->
+    <rect x="242" y="171" width="122" height="10" rx="4" fill="#d4d4d8" stroke="#f4f4f5" stroke-width="1.5" transform="rotate(-18 303 176)"/>
+    <!-- 360 rotation arrows -->
+    <path d="M 275 145 A 28 28 0 0 1 332 145" fill="none" stroke="#fde68a" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="332,145 325,140 327,149" fill="#fde68a"/>
+    <!-- Occluded pulse X below -->
+    <line x1="297" y1="225" x2="309" y2="237" stroke="#4ade80" stroke-width="2.5"/>
+    <line x1="309" y1="225" x2="297" y2="237" stroke="#4ade80" stroke-width="2.5"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="226" y="341" fill="#94a3b8" font-family="monospace" font-size="8">단단한 막대를 비틀어 동맥 출혈 완전 차단</text>
+
+    <!-- STAGE 03 Card -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="422" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 막대 잠금 및 시간(T) 기록</text>
+
+    <!-- Visual 3: Locked rod & T HH:MM tag -->
+    <rect x="462" y="125" width="70" height="150" rx="18" fill="#27272a" stroke="#52525b" stroke-width="2.5"/>
+    <rect x="456" y="162" width="82" height="28" rx="3" fill="url(#leather32out)" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="442" y="171" width="110" height="10" rx="4" fill="#d4d4d8" stroke="#f4f4f5" stroke-width="1.5"/>
+    <!-- Keeper loop locking rod ends -->
+    <rect x="446" y="158" width="14" height="36" rx="2" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="534" y="158" width="14" height="36" rx="2" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <!-- Time Stamp Tag -->
+    <rect x="454" y="212" width="86" height="32" rx="2" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+    <line x1="464" y1="228" x2="530" y2="228" stroke="#dc2626" stroke-width="3"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="420" y="341" fill="#94a3b8" font-family="monospace" font-size="8">풀림 방지 결속 후 지혈 시각(T 14:30) 표기</text>
+
+    <!-- STAGE 04 Card -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f0f11" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="616" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 흉부 관통상 3면 밸브 밀봉</text>
+
+    <!-- Visual 4: 3-sided chest seal on thorax -->
+    <rect x="636" y="132" width="110" height="136" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <!-- Chest wound -->
+    <circle cx="691" cy="195" r="8" fill="#dc2626"/>
+    <!-- Clear plastic square -->
+    <rect x="656" y="160" width="70" height="70" fill="#38bdf8" fill-opacity="0.22" stroke="#7dd3fc" stroke-width="1.2"/>
+    <!-- 3 Taped edges (Top, Left, Right) -->
+    <rect x="650" y="154" width="82" height="10" fill="#f59e0b"/>
+    <rect x="650" y="154" width="10" height="76" fill="#f59e0b"/>
+    <rect x="722" y="154" width="10" height="76" fill="#f59e0b"/>
+    <!-- Open bottom edge with venting air/blood arrow -->
+    <line x1="660" y1="230" x2="722" y2="230" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3"/>
+    <line x1="691" y1="226" x2="691" y2="256" stroke="#10b981" stroke-width="2.5"/>
+    <polygon points="691,260 686,251 696,251" fill="#10b981"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="614" y="341" fill="#94a3b8" font-family="monospace" font-size="8">상·좌·우 3면 테이프 밀봉 및 하단 공기 배출</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[구호 원리] 막대 지렛대 비틀림으로 사지 동맥을 압착 차단하고 3면 비닐 밸브로 긴장성 기흉을 예방</text>
+</svg>

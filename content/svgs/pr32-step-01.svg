@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg32s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="belt32s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <pattern id="grid32s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow32s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg32s1)"/>
+  <rect width="400" height="400" fill="url(#grid32s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 01 // 출혈 상처 위 5~7cm(심장 쪽) 폭 4cm 이상 광폭 벨트 결속</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9.5">관절 부위를 피해 상처 위 손가락 세 마디(5~7cm) 근육에 두 바퀴 밀착</text>
+
+  <!-- Main Illustration: Thigh / Arm with 4cm wide strap -->
+  <g filter="url(#shadow32s1)">
+    <!-- Limb cylinder -->
+    <rect x="135" y="84" width="130" height="206" rx="28" fill="#27272a" stroke="#52525b" stroke-width="3"/>
+    <!-- Femoral / Brachial Artery line -->
+    <line x1="200" y1="88" x2="200" y2="286" stroke="#ef4444" stroke-width="5" stroke-dasharray="6 3"/>
+
+    <!-- Wide 4cm+ Leather Belt / Folded Cloth Band -->
+    <rect x="125" y="122" width="150" height="42" rx="4" fill="url(#belt32s1)" stroke="#f59e0b" stroke-width="2.5"/>
+    <!-- First half-knot on top of band -->
+    <rect x="182" y="116" width="36" height="54" rx="4" fill="#78350f" stroke="#fde68a" stroke-width="2"/>
+
+    <!-- Band Width Indicator (>= 4cm / 2 fingers) -->
+    <line x1="292" y1="122" x2="292" y2="164" stroke="#fde68a" stroke-width="2"/>
+    <line x1="285" y1="122" x2="299" y2="122" stroke="#fde68a" stroke-width="2"/>
+    <line x1="285" y1="164" x2="299" y2="164" stroke="#fde68a" stroke-width="2"/>
+
+    <!-- Distance from wound indicator (5~7cm / 3 fingers) -->
+    <line x1="108" y1="164" x2="108" y2="226" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="101" y1="164" x2="115" y2="164" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="101" y1="226" x2="115" y2="226" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Arterial Bleed Wound below -->
+    <ellipse cx="200" cy="232" rx="28" ry="12" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
+    <path d="M185,232 Q200,218 215,232" fill="none" stroke="#fca5a5" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3: Dimension Spec -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#94a3b8" font-family="monospace" font-size="9">밴드 폭 최소 4cm(손가락 두 마디) 이상 확보하여 피부·근육 손상 방지</text>
+
+  <!-- Label 4: Warning Box -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2d0607" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">전선·얇은 노끈 사용 절대 금지: 피부를 파고들어 신경과 혈관을 절단함</text>
+
+  <!-- Label 5: Core Principle Footer -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 심장 쪽 상처 위 5~7cm 지점에 광폭 밴드를 빈틈없이 밀착 결속</text>
+</svg>

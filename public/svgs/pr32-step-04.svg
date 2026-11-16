@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg32s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <pattern id="grid32s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#27272a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow32s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background & Grid -->
+  <rect width="400" height="400" fill="url(#bg32s4)"/>
+  <rect width="400" height="400" fill="url(#grid32s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Header Banner (Label 1) -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 04 // 흉부 관통상 사각 비닐 덮기 및 3면 테이프 일방향 밸브 밀봉</text>
+
+  <!-- Label 2 Callout Box -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="24" y="64" fill="#34d399" font-family="monospace" font-size="9.5">숨을 내쉬게 한 뒤 손바닥 크기 비닐을 덮고 상·좌·우 3면만 테이프 밀봉</text>
+
+  <!-- Main Illustration: 3-Sided Occlusive Chest Dressing -->
+  <g filter="url(#shadow32s4)">
+    <!-- Thorax / Chest surface -->
+    <rect x="75" y="84" width="250" height="204" rx="16" fill="#1e293b" stroke="#475569" stroke-width="3"/>
+
+    <!-- Sucking Chest Wound center -->
+    <circle cx="200" cy="176" r="14" fill="#991b1b" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="200" cy="176" r="6" fill="#ef4444"/>
+
+    <!-- Clear Square Plastic Sheet (Snack bag / Ziploc) -->
+    <rect x="130" y="112" width="140" height="128" fill="#38bdf8" fill-opacity="0.2" stroke="#7dd3fc" stroke-width="1.5"/>
+
+    <!-- 3 Sealed Duct Tape Edges: TOP, LEFT, RIGHT -->
+    <rect x="118" y="100" width="164" height="20" rx="2" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+    <rect x="118" y="100" width="20" height="142" rx="2" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+    <rect x="262" y="100" width="20" height="142" rx="2" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+
+    <!-- Bottom 4th Edge LEFT OPEN (One-way flutter valve) -->
+    <line x1="138" y1="240" x2="262" y2="240" stroke="#10b981" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+    <!-- Outflow arrows (Exhale: air & blood escape downward) -->
+    <line x1="185" y1="226" x2="185" y2="274" stroke="#10b981" stroke-width="3"/>
+    <polygon points="185,278 179,268 191,268" fill="#10b981"/>
+    <line x1="215" y1="226" x2="215" y2="274" stroke="#ef4444" stroke-width="3"/>
+    <polygon points="215,278 209,268 221,268" fill="#ef4444"/>
+  </g>
+
+  <!-- Label 3: Valve Mechanism -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#94a3b8" font-family="monospace" font-size="9">날숨 시 흉강 공기와 피가 하단 틈으로 배출되고 들숨 시 비닐이 밀착 차단</text>
+
+  <!-- Label 4: Warning Box -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2d0607" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">4면 전체 밀봉 주의: 내부 공기가 빠져나가지 못하면 폐가 찌그러져 질식함</text>
+
+  <!-- Label 5: Core Principle Footer -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#34d399" font-family="monospace" font-size="9.5" font-weight="bold">[일방향 밸브] 하단 1면을 열어두어 긴장성 기흉을 막고 폐 호흡을 유지</text>
+</svg>
