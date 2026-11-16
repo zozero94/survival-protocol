@@ -37,7 +37,7 @@ export function renderChecklist(materials: Material[]): string {
     </span>
   </div>
   <p id="ui-checklist-desc" data-i18n="checklistDesc" class="text-[11px] text-[#888] mb-3 leading-normal font-sans">
-    주변 자연에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.
+    주변 자연물이나 버려진 도시 잔해에서 구할 수 있는 재료입니다. 준비된 항목을 눌러 체크하세요.
   </p>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 font-mono text-xs">
     ${itemsHtml}

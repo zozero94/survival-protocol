@@ -214,7 +214,7 @@ export function renderPolicyShell(options: PolicyPageOptions): string {
 export function renderAboutPage(): string {
   return renderPolicyShell({
     title: '프로젝트 철학 및 검증 체계 (About Us)',
-    description: '인류 문명 재건을 위한 무도구 실전 생존 기록서. 4대 엄격 실증 체계(E-E-A-T), 수석 편찬 및 현장 검증 위원회, CC0 오픈소스 배포 헌장.',
+    description: '재난·전쟁·포스트 아포칼립스를 위한 실전 생존 기록서. 시판 완제품 우선 안내 및 생활 폐자재·자연물 업사이클링, 4대 엄격 실증 체계(E-E-A-T), CC0 오픈소스 배포 헌장.',
     canonicalPath: '/about',
     categoryLabel: 'E-E-A-T DOCTRINE',
     shortTitle: 'ABOUT // PROJECT MANIFESTO',

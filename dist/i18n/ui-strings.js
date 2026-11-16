@@ -60,7 +60,6 @@
                     
                        
                        
-                       
                           
                           
                             
@@ -198,7 +197,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ 총',
     paginationTotalSuffix: '개',
     brandLong: '[생존 교범 // SURVIVAL PROTOCOL]',
-    footerTrait1: '● 현대 공산품 의존도: 0.00%',
     footerTrait2: '● 오프라인 단독 작동 보장 (PWA)',
     footerTrait3: '● 100% 무상 공공 도메인 개방',
     footerCol2Title: '신뢰성 & 규정',
@@ -338,7 +336,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ TOTAL',
     paginationTotalSuffix: '',
     brandLong: '[SURVIVAL PROTOCOL // FIELD MANUAL]',
-    footerTrait1: '● Industrial Goods Reliance: 0.00%',
     footerTrait2: '● 100% Offline Standalone Operation (PWA)',
     footerTrait3: '● 100% Free Public Domain Access',
     footerCol2Title: 'Trust & Compliance',
@@ -478,7 +475,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ 全',
     paginationTotalSuffix: '件',
     brandLong: '[生存教範 // SURVIVAL PROTOCOL]',
-    footerTrait1: '● 現代工業製品への依存度: 0.00%',
     footerTrait2: '● 完全オフライン単独動作保証 (PWA)',
     footerTrait3: '● 100% 無料パブリックドメイン開放',
     footerCol2Title: '信頼性・規約',
@@ -618,7 +614,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ TOTAL',
     paginationTotalSuffix: '',
     brandLong: '[PROTOCOLO DE SUPERVIVENCIA // MANUAL DE CAMPO]',
-    footerTrait1: '● Dependencia de Productos Industriales: 0.00%',
     footerTrait2: '● Operación Totalmente Desconectada (PWA)',
     footerTrait3: '● Acceso 100% Libre y de Dominio Público',
     footerCol2Title: 'Confianza y Normas',
@@ -758,7 +753,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ GESAMT',
     paginationTotalSuffix: '',
     brandLong: '[ÜBERLEBENSPROTOKOLL // FELDMANDAT]',
-    footerTrait1: '● Abhängigkeit von Industrieprodukten: 0.00%',
     footerTrait2: '● 100% Offline-Betrieb garantiert (PWA)',
     footerTrait3: '● 100% Freier Gemeinfreier Zugang',
     footerCol2Title: 'Vertrauen & Richtlinien',
@@ -898,7 +892,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ TOTAL',
     paginationTotalSuffix: '',
     brandLong: '[PROTOCOLO DE SOBREVIVÊNCIA // MANUAL DE CAMPO]',
-    footerTrait1: '● Dependência de Produtos Industriais: 0.00%',
     footerTrait2: '● Operação 100% Offline Garantida (PWA)',
     footerTrait3: '● Acesso 100% Livre e de Domínio Público',
     footerCol2Title: 'Confiabilidade e Normas',
@@ -1038,7 +1031,6 @@ export const UI_STRINGS                                     = {
     paginationTotalPrefix: '/ 共',
     paginationTotalSuffix: '篇',
     brandLong: '[生存教範 // SURVIVAL PROTOCOL]',
-    footerTrait1: '● 現代工業品依賴度：0.00%',
     footerTrait2: '● 離線單機運作保證 (PWA)',
     footerTrait3: '● 100% 免費公共領域開放',
     footerCol2Title: '信任與規範',

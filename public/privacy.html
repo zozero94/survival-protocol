@@ -393,7 +393,7 @@
 <div class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">INDEX 02 // ARCHITECTURE</div>
 <div class="font-headline-md text-headline-md text-primary font-bold mb-2">[LOCAL FIRST]</div>
 <div class="font-label-md text-label-md text-primary font-semibold mb-1">로컬 샌드박스 격리</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">체크리스트, 매듭법 완료 여부 등 모든 데이터는 브라우저 내부 IndexedDB/Cache에만 격리.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">체크리스트, 언어·테마 설정 등 모든 개인 설정 데이터는 브라우저 내부 IndexedDB/Cache에만 격리.</p>
 </div>
 <div class="mt-4 pt-2 border-t border-outline-variant font-label-sm text-label-sm text-outline">
             STORAGE: AIR-GAPPED
@@ -564,7 +564,7 @@
 </header>
 <div class="p-6 md:p-8 space-y-4">
 <p class="font-body-md text-body-md text-on-surface leading-relaxed">
-          본 플랫폼의 문서별 [생존 확인 완료] 버튼 및 실시간 열람 카운터는 Google Cloud Firebase Realtime Database의 단방향 원자적 증분(Atomic Numeric Increment) 트랜잭션으로 작동합니다.
+          본 플랫폼의 문서별 [생존 확인 완료] 버튼, 실시간 열람 카운터 및 익명 생존자 피드백(댓글)은 Google Cloud Firebase Realtime Database를 통해 개인 식별 정보(PII) 없이 작동합니다.
         </p>
 <div class="border border-outline-variant bg-surface-container p-4 font-mono text-body-sm space-y-2 text-on-surface">
 <div class="text-outline font-label-sm text-label-sm">// FIREBASE TELEMETRY PAYLOAD SCHEMA</div>
@@ -576,7 +576,7 @@
 <div class="text-outline font-label-sm text-label-sm">// 클라이언트 IP, 쿠키, 하드웨어 UUID 등 메타데이터 일체 누락 전송</div>
 </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant">
-          이 데이터베이스 트랜잭션에는 클라이언트 캔버스 해시, 브라우저 글꼴 스택, 그래픽 카드 WebGL 벤더 등의 기기 고유 핑거프린팅 메타데이터가 일체 첨부되지 않으며, 서버 측에 어떠한 로그도 적재되지 않습니다.
+          이 데이터베이스 트랜잭션에는 캔버스 해시나 하드웨어 지문(Fingerprinting) 메타데이터가 일체 첨부되지 않으며, 익명 피드백의 수정·삭제 권한 검증 역시 난수 토큰과 4자리 PIN을 결합한 단방향 SHA-256 해시(읽기 비공개 노드)로만 처리됩니다.
         </p>
 </div>
 </article>
@@ -594,7 +594,7 @@
 <div class="p-6 md:p-8 space-y-6">
 <p class="font-body-md text-body-md text-on-surface leading-relaxed">
           SURVIVAL PROTOCOL은 전자기 펄스(EMP) 또는 통신망 물리 단절 상태를 대비하여 Progressive Web App (PWA) 기술로 구동됩니다. 
-          따라서 모든 필수 교범, 매듭법 벡터 청사진, 체크리스트 진행률, 비상 의약품 계산 결과는 사용자의 단말기 내부 저장소(LocalStorage 및 Cache Storage API)에만 물리적으로 저장됩니다.
+          따라서 모든 필수 교범, 단계별 3D 벡터 청사진, 체크리스트 진행률, 비상 의약품 계산 결과는 사용자의 단말기 내부 저장소(LocalStorage 및 Cache Storage API)에만 물리적으로 저장됩니다.
         </p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
 <div class="border border-outline-variant bg-surface-container p-4">
@@ -735,7 +735,6 @@
         한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.
       </p>
       <div class="pt-2 text-[10px] text-neutral-500 flex flex-col gap-1">
-        <span data-i18n="footerTrait1">● 현대 공산품 의존도: 0.00%</span>
         <span data-i18n="footerTrait2">● 오프라인 단독 작동 보장 (PWA)</span>
         <span data-i18n="footerTrait3">● 100% 무상 공공 도메인 개방</span>
       </div>
@@ -782,11 +781,11 @@
         <span class="text-[9px] text-neutral-500">ARCHIVE TIERS</span>
       </div>
       <ul class="space-y-1.5 text-[11px]">
-        <li><a href="/?cat=FOOD" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat1">[01 FOOD] 물·식량·보존</span><span class="text-neutral-600">08 DOCS</span></a></li>
-        <li><a href="/?cat=SHELTER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat2">[02 SHELTER] 불·거처·보온</span><span class="text-neutral-600">06 DOCS</span></a></li>
-        <li><a href="/?cat=TOOLS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat3">[03 TOOLS] 도구·의복·공작</span><span class="text-neutral-600">03 DOCS</span></a></li>
+        <li><a href="/?cat=FOOD" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat1">[01 FOOD] 물·식량·보존</span><span class="text-neutral-600">09 DOCS</span></a></li>
+        <li><a href="/?cat=SHELTER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat2">[02 SHELTER] 불·거처·보온</span><span class="text-neutral-600">09 DOCS</span></a></li>
+        <li><a href="/?cat=TOOLS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat3">[03 TOOLS] 도구·의복·공작</span><span class="text-neutral-600">04 DOCS</span></a></li>
         <li><a href="/?cat=MATERIALS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat4">[04 MATERIALS] 소재·천연화학</span><span class="text-neutral-600">03 DOCS</span></a></li>
-        <li><a href="/?cat=MEDICINE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat5">[05 MEDICINE] 의약·위생·방호</span><span class="text-neutral-600">05 DOCS</span></a></li>
+        <li><a href="/?cat=MEDICINE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat5">[05 MEDICINE] 의약·위생·방호</span><span class="text-neutral-600">06 DOCS</span></a></li>
       </ul>
     </div>
 

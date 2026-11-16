@@ -82,11 +82,11 @@ export function renderHeroSection(protocol: Protocol): string {
   <!-- Minimal 4-column Spec Strip -->
   <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-3 border-t border-[#2e2e2e] font-mono text-center text-xs">
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="timeRequired" class="block text-[10px] text-[#777] uppercase tracking-tighter">소요 시간</span>
+      <span data-i18n="timeRequired" class="block text-[10px] text-[#777] uppercase tracking-tighter">걸리는 시간</span>
       <span id="proto-time" data-proto="timeRequired" class="text-white font-bold text-xs sm:text-sm">${protocol.timeRequired}</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="successRate" class="block text-[10px] text-[#777] uppercase tracking-tighter">생존율</span>
+      <span data-i18n="successRate" class="block text-[10px] text-[#777] uppercase tracking-tighter">성공 확률</span>
       <span id="proto-success" data-proto="successRate" class="text-white font-bold text-xs sm:text-sm">${protocol.successRate}</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
@@ -94,7 +94,7 @@ export function renderHeroSection(protocol: Protocol): string {
       <span id="proto-difficulty" data-proto="difficulty" class="text-white font-bold text-xs sm:text-sm">${protocol.difficulty}</span>
     </div>
     <div class="bg-[#141414] p-2 border border-[#2a2a2a]">
-      <span data-i18n="outputPerHour" class="block text-[10px] text-[#777] uppercase tracking-tighter">시간당 산출</span>
+      <span data-i18n="outputPerHour" class="block text-[10px] text-[#777] uppercase tracking-tighter">결과물</span>
       <span id="proto-output" data-proto="outputPerHour" class="text-white font-bold text-xs sm:text-sm">${protocol.outputPerHour || '1.5L / h'}</span>
     </div>
   </div>

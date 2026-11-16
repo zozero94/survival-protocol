@@ -46,7 +46,6 @@ export function renderFooter(activePage: FooterActivePage = 'index'): string {
         한 번 방문한 페이지는 브라우저에 자동 저장되어 비행기 모드나 통신이 끊긴 상황에서도 언제든 열람할 수 있습니다.
       </p>
       <div class="pt-2 text-[10px] text-neutral-500 flex flex-col gap-1">
-        <span data-i18n="footerTrait1">● 현대 공산품 의존도: 0.00%</span>
         <span data-i18n="footerTrait2">● 오프라인 단독 작동 보장 (PWA)</span>
         <span data-i18n="footerTrait3">● 100% 무상 공공 도메인 개방</span>
       </div>
@@ -101,11 +100,11 @@ export function renderFooter(activePage: FooterActivePage = 'index'): string {
         <span class="text-[9px] text-neutral-500">ARCHIVE TIERS</span>
       </div>
       <ul class="space-y-1.5 text-[11px]">
-        <li><a href="/?cat=FOOD" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat1">[01 FOOD] 물·식량·보존</span><span class="text-neutral-600">08 DOCS</span></a></li>
-        <li><a href="/?cat=SHELTER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat2">[02 SHELTER] 불·거처·보온</span><span class="text-neutral-600">06 DOCS</span></a></li>
-        <li><a href="/?cat=TOOLS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat3">[03 TOOLS] 도구·의복·공작</span><span class="text-neutral-600">03 DOCS</span></a></li>
+        <li><a href="/?cat=FOOD" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat1">[01 FOOD] 물·식량·보존</span><span class="text-neutral-600">09 DOCS</span></a></li>
+        <li><a href="/?cat=SHELTER" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat2">[02 SHELTER] 불·거처·보온</span><span class="text-neutral-600">09 DOCS</span></a></li>
+        <li><a href="/?cat=TOOLS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat3">[03 TOOLS] 도구·의복·공작</span><span class="text-neutral-600">04 DOCS</span></a></li>
         <li><a href="/?cat=MATERIALS" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat4">[04 MATERIALS] 소재·천연화학</span><span class="text-neutral-600">03 DOCS</span></a></li>
-        <li><a href="/?cat=MEDICINE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat5">[05 MEDICINE] 의약·위생·방호</span><span class="text-neutral-600">05 DOCS</span></a></li>
+        <li><a href="/?cat=MEDICINE" class="text-neutral-400 hover:text-white flex justify-between"><span data-i18n="footerCat5">[05 MEDICINE] 의약·위생·방호</span><span class="text-neutral-600">06 DOCS</span></a></li>
       </ul>
     </div>
 
