@@ -4511,6 +4511,26 @@
         return true;
       }
 
+      function executeLocalDelete(commentId) {
+        var ui = getUi();
+        delete state.commentsMap[commentId];
+        for (var k in state.commentsMap) {
+          if (Object.prototype.hasOwnProperty.call(state.commentsMap, k)) {
+            if (state.commentsMap[k] && state.commentsMap[k].parentId === commentId) {
+              delete state.commentsMap[k];
+              safeStorage.setItem('ps_cdel_' + k, '1');
+            }
+          }
+        }
+        delete state.localSecrets[commentId];
+        safeStorage.removeItem('ps_csec_' + commentId);
+        safeStorage.setItem('ps_cdel_' + commentId, '1');
+        state.openPinTarget = null;
+        saveCachedComments();
+        renderFeed();
+        notifyToast(ui.commentToastDeleted || '피드백이 삭제되었습니다.');
+      }
+
       function handleVerifyPin(commentId, inputPin) {
         var ui = getUi();
         if (!/^[0-9]{4}$/.test(String(inputPin || '').trim())) {
@@ -4529,28 +4549,23 @@
         }
 
         if (target.mode === 'delete') {
+          if (storedLocalHash && storedLocalHash === computedHash) {
+            executeLocalDelete(commentId);
+            if (state.remoteApi && typeof state.remoteApi.deleteComment === 'function') {
+              state.remoteApi.deleteComment(commentId, computedHash);
+            }
+            return;
+          }
           if (state.remoteApi && typeof state.remoteApi.deleteComment === 'function') {
             state.remoteApi.deleteComment(commentId, computedHash, function (ok) {
               if (!ok) {
                 showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
                 return;
               }
-              delete state.commentsMap[commentId];
-              state.openPinTarget = null;
-              saveCachedComments();
-              renderFeed();
-              notifyToast(ui.commentToastDeleted || '피드백이 삭제되었습니다.');
+              executeLocalDelete(commentId);
             });
           } else {
-            if (!storedLocalHash) {
-              showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
-              return;
-            }
-            delete state.commentsMap[commentId];
-            state.openPinTarget = null;
-            saveCachedComments();
-            renderFeed();
-            notifyToast(ui.commentToastDeleted || '피드백이 삭제되었습니다.');
+            showAlert(ui.commentErrWrongPin || '비밀번호(PIN)가 일치하지 않거나 작성한 기기가 다릅니다.');
           }
         } else if (target.mode === 'edit') {
           state.localSecrets[commentId] = computedHash;
@@ -4582,6 +4597,7 @@
           return;
         }
 
+        var hasLocalOwnership = Boolean(safeStorage.getItem('ps_csec_' + commentId) === proofHash);
         var prevContent = item.content;
         var prevUpdated = item.updatedAt;
         item.content = content;
@@ -4590,6 +4606,14 @@
         delete state.translations[commentId];
         saveCachedComments();
         renderFeed();
+
+        if (hasLocalOwnership) {
+          notifyToast(ui.commentToastUpdated || '피드백이 수정되었습니다.');
+          if (state.remoteApi && typeof state.remoteApi.updateComment === 'function') {
+            state.remoteApi.updateComment(item, proofHash);
+          }
+          return;
+        }
 
         if (state.remoteApi && typeof state.remoteApi.updateComment === 'function') {
           state.remoteApi.updateComment(item, proofHash, function (ok) {
@@ -4808,9 +4832,10 @@
             });
           },
           updateComment: function (commentObj, proofHash, cb) {
-            var updates = {};
-            updates['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = proofHash;
-            updates['protocol_comments/' + pid + '/' + commentObj.id] = {
+            var secretUpdate = {};
+            secretUpdate['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = proofHash;
+            var commentUpdate = {};
+            commentUpdate['protocol_comments/' + pid + '/' + commentObj.id] = {
               id: commentObj.id,
               parentId: commentObj.parentId,
               nickname: commentObj.nickname,
@@ -4820,18 +4845,34 @@
               updatedAt: commentObj.updatedAt,
               reports: Number(commentObj.reports || 0)
             };
-            update(ref(db), updates)
+            update(ref(db), secretUpdate)
+              .then(function () {
+                return update(ref(db), commentUpdate);
+              })
               .then(function () { if (cb) cb(true); })
               .catch(function (err) {
-                console.warn('[SurvivalProtocol Comments] Firebase RTDB update failed:', err);
-                if (cb) cb(false);
+                // 로컬에만 존재하던 댓글(규칙 게시 전 작성분)인 경우 원격 생성으로 폴백 동기화
+                var fallbackUpdates = {};
+                fallbackUpdates['comment_secrets/' + pid + '/' + commentObj.id + '/pinHash'] = proofHash;
+                fallbackUpdates['comment_secrets/' + pid + '/' + commentObj.id + '/verifiedHash'] = proofHash;
+                fallbackUpdates['protocol_comments/' + pid + '/' + commentObj.id] = commentUpdate['protocol_comments/' + pid + '/' + commentObj.id];
+                update(ref(db), fallbackUpdates)
+                  .then(function () { if (cb) cb(true); })
+                  .catch(function () {
+                    console.warn('[SurvivalProtocol Comments] Firebase RTDB update failed:', err);
+                    if (cb) cb(false);
+                  });
               });
           },
           deleteComment: function (commentId, proofHash, cb) {
-            var updates = {};
-            updates['comment_secrets/' + pid + '/' + commentId + '/verifiedHash'] = proofHash;
-            updates['protocol_comments/' + pid + '/' + commentId] = null;
-            update(ref(db), updates)
+            var secretUpdate = {};
+            secretUpdate['comment_secrets/' + pid + '/' + commentId + '/verifiedHash'] = proofHash;
+            var deleteUpdate = {};
+            deleteUpdate['protocol_comments/' + pid + '/' + commentId] = null;
+            update(ref(db), secretUpdate)
+              .then(function () {
+                return update(ref(db), deleteUpdate);
+              })
               .then(function () { if (cb) cb(true); })
               .catch(function (err) {
                 console.warn('[SurvivalProtocol Comments] Firebase RTDB delete failed:', err);
@@ -4856,15 +4897,29 @@
 
         var commentsRef = ref(db, 'protocol_comments/' + pid);
         onValue(commentsRef, function (snap) {
-          if (snap && snap.exists()) {
-            var val = snap.val();
-            if (val && typeof val === 'object') {
-              var merged = Object.assign({}, state.commentsMap, val);
-              state.commentsMap = merged;
-              saveCachedComments();
-              renderFeed();
+          var remoteMap = (snap && snap.exists() && snap.val() && typeof snap.val() === 'object') ? snap.val() : {};
+          var filteredRemote = {};
+          for (var rk in remoteMap) {
+            if (Object.prototype.hasOwnProperty.call(remoteMap, rk)) {
+              if (safeStorage.getItem('ps_cdel_' + rk) !== '1') {
+                filteredRemote[rk] = remoteMap[rk];
+              }
             }
           }
+          // 로컬에만 남아있던 미동기화 본인 작성 댓글을 자동으로 원격 DB에 백업 동기화
+          for (var lk in state.commentsMap) {
+            if (Object.prototype.hasOwnProperty.call(state.commentsMap, lk)) {
+              var localItem = state.commentsMap[lk];
+              var localSec = safeStorage.getItem('ps_csec_' + lk);
+              if (localItem && localSec && !filteredRemote[lk] && safeStorage.getItem('ps_cdel_' + lk) !== '1') {
+                state.remoteApi.createComment(localItem, localSec);
+              }
+            }
+          }
+          var merged = Object.assign({}, state.commentsMap, filteredRemote);
+          state.commentsMap = merged;
+          saveCachedComments();
+          renderFeed();
         }, { onlyOnce: true });
       }).catch(function () {
         // 오프라인 / 방화벽 차단 시 로컬 캐시 모드로 무결성 유지
