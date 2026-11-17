@@ -24,7 +24,11 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 172개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 193개 단위 테스트 무결성 100% 통과)
+- **커뮤니티 & Firebase RTDB 댓글 시스템 (`CommentSection.ts`, `comment.state.ts`, `database.rules.json`)**:
+  - 2FA SHA-256 PIN + 기기 시크릿 토큰(`ps_comment_device_token`) 기반 익명 댓글 작성/수정/삭제 및 1회용 `verifiedHash` 원자적 소각
+  - 1단계 대댓글 트리, 더보기(`⋯`) 드롭다운 메뉴, 3회 신고 자동 블라인드, 오프라인 대기열(`pendingCreates`) 동기화
+  - 클라이언트 및 `database.rules.json` 서버 2중 스팸/URL/광고 차단, 정규식 ID 검증(`c_[0-9]+_[a-z0-9]+`), 7개국어 1-클릭 인라인 번역(Google GTX + MyMemory 폴백)
 - **주제 검증 및 문체 감수 철학**:
   - 듀얼 트랙 생존 고증 + 완제품 대체 호환(Ready-Made Alternative) 원칙 (Track A: 순수 자연물 원시 공학 / Track B: 도시 생활 폐자재 업사이클링 공학 + 가정 내 완제품 장비 우선 활용 안내 및 고갈 시 DIY 대체 제작)
   - 초등학생(11~13세) 눈높이 직관성 & 가독성 100% 보장 (`plain-korean-editor` 에이전트 & `PlainKoreanEditorService` 파이프라인 탑재)
@@ -49,8 +53,8 @@ flowchart TD
         D --> E[Stitch MCP edit_screens<br/>UI 변경 시 화면 1:1 양방향 동기화]
     end
 
-    subgraph Tier2["2. 컴파일 & 검색 인덱싱 (AI Studio Free Flash + Fuse.js)"]
-        D --> F[AI Studio gemini-3.8-flash<br/>6개국 통역 에이전트 무과금 병렬 번역]
+    subgraph Tier2["2. 컴파일 & 검색 인덱싱 (Gemini Model Resolver + Fuse.js)"]
+        D --> F[GeminiModelResolverService<br/>최신 Flash 무과금 6개국 병렬 번역]
         F --> G[7대 다국어 데이터셋<br/>content/protocols/locales/]
         G --> H[renderCanonicalProtocolPage & renderIndexPage<br/>정적 웹진 컴파일]
         G --> I[ShortsService<br/>45초 글로벌 쇼츠 대본]
@@ -72,32 +76,34 @@ flowchart TD
 ```text
 primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
-│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-27, 총 26편)
+│   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-32, 총 31편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 64종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (154개 SVG 도면, 활성 감사 130종: 스텝 104 + 결과 26, 보존 24종)
+│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.{jpg,png}, id-*.jpg 총 85종)
+│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (179개 SVG 도면, 활성 감사 155종: 스텝 124 + 결과 31, 보존 24종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
-│   ├── site.config.ts           # 사이트 메타데이터, AdSense, PWA 경로 설정
+│   ├── site.config.ts           # 사이트 메타데이터, AdSense, PWA, Firebase 경로 설정
 │   ├── i18n/                    # [i18n Layer] 7대 언어 사전 및 무상태 판별 엔진
 │   ├── components/              # [Presentational Layer] 순수 UI 컴포넌트
 │   │   ├── layout/              # Header, StickyActionBar, SearchModal, CrosslinkPopover, Footer
 │   │   ├── feed/                # FeedHeader, ProtocolCard, Pagination
-│   │   └── protocol/            # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning, FaqSection
+│   │   └── protocol/            # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning, FaqSection, CommentSection
 │   ├── state/                   # [State Layer] SSOT 런타임 스크립트 직렬화 (0.01초 핫스왑)
-│   │   ├── search.state.ts      # Fuse.js 인스턴스 싱글톤 캐시, IME 방어, 키보드 단축키 런타임
+│   │   ├── search.state.ts      # Fuse.js 인스턴스 싱글톤 캐시, 카테고리 필터 칩, IME 방어, 키보드 단축키 런타임
 │   │   ├── feed.state.ts        # 동적 피드 페이징 및 정렬 상태 관리
-│   │   ├── locale.state.ts      # 7개국어 0.01초 무새로고침 핫스왑 엔진 (FAQ 크로스링크 실시간 파싱)
+│   │   ├── locale.state.ts      # 7개국어 0.01초 무새로고침 핫스왑 엔진 (FAQ·댓글 실시간 연동)
 │   │   ├── crosslink.state.ts   # a[data-proto="crosslink"] 호버 프리뷰 싱글톤 HUD 팝오버 런타임
+│   │   ├── comment.state.ts     # Firebase RTDB 2FA 댓글·1단 대댓글·스팸 차단·1-클릭 번역 런타임
 │   │   ├── theme.state.ts       # 다크/라이트 테마 토글 및 로컬 스토리지 동기화
 │   │   ├── checklist.state.ts   # 체크리스트 카운터 및 진행률 실시간 연산
 │   │   ├── pwa.state.ts         # Service Worker 등록 및 오프라인 배너 런타임
 │   │   └── firebase.state.ts    # Firebase Realtime Database 조회수/확인 텔레메트리 점진적 향상 스크립트
 │   ├── services/                # [Service Layer] 
 │   │   ├── search.service.ts    # 슬림 인덱스 빌드, Fuse 퍼지 검색, 택티컬 하이라이팅
-│   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
+│   │   ├── posting-review.service.ts # 5대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화, 법무/정책)
 │   │   ├── content-enrichment.service.ts # 문맥 하이퍼텍스트 크로스링커 & 콘텐츠/벡터/실사 보강 감수 엔진
+│   │   ├── gemini-model-resolver.service.ts # Gemini 최신 텍스트·이미지·TTS 모델 동적 리졸버 (Single-Flight + 12h 캐시)
 │   │   ├── pwa.service.ts       # 결정론적 Service Worker 캐시 해시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 바운딩박스/텍스트 충돌 감사기
@@ -105,12 +111,15 @@ primitive-survival/
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
 │   │   ├── protocol-generator.service.ts # 3-Wave 병렬 발행, 고증 검증 및 눈높이 감수 연동
 │   │   ├── plain-korean-editor.service.ts # 초등학생 눈높이 문체 감수 및 난해어 자동 교정기
+│   │   ├── shorts.service.ts    # 45초 글로벌 유튜브 쇼츠 대본 및 SRT 생성기
+│   │   ├── tts.service.ts       # 쇼츠용 다국어 TTS 음성 합성 및 캐시 서비스
 │   │   ├── telegram-bot.service.ts # 텔레그램 봇 인가 제어 및 커맨드 라우터
 │   │   ├── deploy.service.ts    # Git 커밋 & 푸시 자동화
 │   │   ├── seo.service.ts       # 사이트맵, robots.txt, Schema.org 구조화 데이터
 │   │   └── topic-curator.service.ts # 차기 유망 주제 큐레이터
 │   ├── utils/
 │   │   ├── hangul.util.ts       # 유니코드 초성 분해(0.0001ms), NFD 호환 정규화 유틸
+│   │   ├── sanitize.util.ts     # HTML XSS 이스케이프 및 문자열 정제 유틸
 │   │   ├── svg-renderer.ts      # 고해상도 SVG-to-PNG 렌더링 유틸
 │   │   └── protocol-timestamp.ts # Git 커밋 및 실질 콘텐츠 SHA-256 해시 기반 타임스탬프 동기화 유틸
 │   ├── policy-content.ts        # Stitch 1:1 규격 4대 정책 페이지 원시 본문 마크업
@@ -119,17 +128,18 @@ primitive-survival/
 │   ├── render.ts                # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts          # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts              # 전체 빌드 파이프라인
+├── database.rules.json          # Firebase RTDB 보안 규칙 (조회수/좋아요, 댓글 2FA PIN·검증 토큰 소각, 스팸 차단)
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 15개 테스트 스위트 (160/160 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 16개 테스트 스위트 (193/193 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
 1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 149종, 활성 정적 감사 125종: 스텝 100종 + 결과 25종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
+   - 전 발행 도면(총 179종, 활성 정적 감사 155종: 스텝 124종 + 결과 31종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
    - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
    - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:

@@ -65,18 +65,19 @@ primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
 │   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-32, 총 31편)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.jpg, id-*.jpg 총 81종)
-│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 174종: 활성 150종[스텝 120 + 결과 30], 보존 24종)
+│   ├── images/            # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.{jpg,png}, id-*.jpg 총 85종)
+│   ├── svgs/              # 1:1 공용 벡터 기술 도면 (총 179종: 활성 155종[스텝 124 + 결과 31], 보존 24종)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
 │   ├── types/             # [Type Layer] TypeScript 엄격 규격 (단일 진실 공급원)
-│   ├── site.config.ts     # 사이트 메타데이터, PWA 경로, AdSense 설정
+│   ├── site.config.ts     # 사이트 메타데이터, PWA 경로, AdSense, Firebase 설정
 │   ├── i18n/              # [i18n Layer] 7대 언어 사전 및 무상태 판별 엔진
-│   ├── state/             # [State Layer] 페이징, 카테고리 필터, 검색 런타임, 테마, 선언적 바인딩 스크립트
-│   │   ├── search.state.ts # 인메모리 검색, 초성 탐색 및 키보드 단축키(Cmd+K, /, ESC, 방향키) 런타임
+│   ├── state/             # [State Layer] 페이징, 카테고리 필터, 검색 런타임, 테마, 댓글, 선언적 바인딩 스크립트
+│   │   ├── search.state.ts # 인메모리 검색, 초성 탐색, 카테고리 필터 칩 및 키보드 단축키(Cmd+K, /, ESC, Tab, 방향키) 런타임
 │   │   ├── feed.state.ts   # 동적 피드 페이징 및 정렬 상태 관리
-│   │   ├── locale.state.ts # 7개국어 0.01초 무새로고침 핫스왑 엔진 (FAQ 크로스링크 실시간 파싱)
+│   │   ├── locale.state.ts # 7개국어 0.01초 무새로고침 핫스왑 엔진 (FAQ·댓글 실시간 연동)
 │   │   ├── crosslink.state.ts # a[data-proto="crosslink"] 호버 프리뷰 싱글톤 HUD 팝오버 런타임
+│   │   ├── comment.state.ts # Firebase RTDB 댓글·1단 대댓글, 2FA SHA-256 PIN 수정/삭제, 스팸 차단 및 1-클릭 번역
 │   │   ├── theme.state.ts  # 다크/라이트 테마 토글 및 로컬 스토리지 동기화
 │   │   ├── checklist.state.ts # 체크리스트 카운터 및 진행률 실시간 연산
 │   │   ├── pwa.state.ts    # Service Worker 등록 및 오프라인 배너 런타임
@@ -84,11 +85,12 @@ primitive-survival/
 │   ├── components/        # [Presentational Layer] 순수 UI 컴포넌트 (DOM 무의존)
 │   │   ├── feed/          # FeedHeader, ProtocolCard, Pagination
 │   │   ├── layout/        # Header, StickyActionBar, SearchModal, CrosslinkPopover, Footer
-│   │   └── protocol/      # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning, FaqSection
+│   │   └── protocol/      # HeroSection, OutcomePreview, Checklist, StepCard, FatalWarning, FaqSection, CommentSection
 │   ├── services/          # [Service Layer]
 │   │   ├── search.service.ts # Fuse.js 퍼지 검색, 슬림 인덱스 구축, 택티컬 하이라이팅 및 스니펫
 │   │   ├── posting-review.service.ts # 4대 심층 포스팅 품질 감수 엔진 (안전, 무도구 재현성, SEO, 글로벌 현지화)
 │   │   ├── content-enrichment.service.ts # 문맥 하이퍼텍스트 크로스링커 & 콘텐츠/벡터/실사 보강 감수 엔진
+│   │   ├── gemini-model-resolver.service.ts # Gemini 텍스트·이미지·TTS 최신 모델 동적 자동 리졸버
 │   │   ├── pwa.service.ts # 결정론적 Service Worker 캐시 생성
 │   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 도면 기하학 충돌 감사기
@@ -96,23 +98,27 @@ primitive-survival/
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
 │   │   ├── protocol-generator.service.ts # AI 자동 발행 & 고증 검증기
 │   │   ├── plain-korean-editor.service.ts # 초등학생 눈높이 문체 감수 & 난해어 자동 교정기
+│   │   ├── shorts.service.ts # 45초 글로벌 유튜브 쇼츠 대본 및 SRT 생성기
+│   │   ├── tts.service.ts # 쇼츠용 다국어 TTS 음성 합성 및 캐시 서비스
 │   │   ├── telegram-bot.service.ts # 텔레그램 원격 제어 봇
 │   │   ├── deploy.service.ts # Git 커밋 & 푸시 자동화
 │   │   ├── seo.service.ts # sitemap.xml, robots.txt, Schema.org
 │   │   └── topic-curator.service.ts # 지식 트리 연계 차기 주제 큐레이터
 │   ├── utils/
 │   │   ├── hangul.util.ts # 유니코드 초성 분해(0.0001ms) 및 한글 자음 검색 판별 유틸
+│   │   ├── sanitize.util.ts # HTML XSS 이스케이프 및 문자열 정제 유틸
 │   │   ├── svg-renderer.ts # 고해상도 SVG-to-PNG 렌더링 유틸
 │   │   └── protocol-timestamp.ts # Git 커밋 및 콘텐츠 해시 기반 타임스탬프 동기화 유틸
 │   ├── gdrive-sync.ts     # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts    # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts        # 엔드투엔드 정적 사이트 컴파일 파이프라인
+├── database.rules.json    # Firebase RTDB 보안 규칙 (조회수/좋아요, 댓글 2FA PIN 검증 & 1회용 토큰 소각, 스팸 차단)
 ├── scripts/               # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 16대 테스트 스위트 (181/181 PASS)
+└── tests/                 # [Quality Audit] 16대 테스트 스위트 (193/193 PASS)
 ```
 
 ---
@@ -141,7 +147,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(182개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 & 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성)*
+*(193개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 & FOUC 차단, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 · 카테고리 필터 칩 · 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성, 22) Firebase RTDB 2FA 댓글·1단 대댓글·무과금 1-클릭 번역·스팸 차단 및 보안 규칙 무결성)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash
