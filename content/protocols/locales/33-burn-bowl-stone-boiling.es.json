@@ -1,0 +1,253 @@
+{
+  "protocolId": "PR-33",
+  "category": "TOOLS",
+  "title": "Cómo Tallar una Olla de Madera con Brasas y Hervir Agua a 100°C Usando Piedras Calientes sin Recipiente Metálico",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[FABRICACIÓN DE OLLA DE MADERA EN CAMPO Y ESTERILIZACIÓN POR EBULLICIÓN CON PIEDRAS A 100°C]",
+  "summary": "Si cuentas con una olla metálica, marmita o taza térmica en tu hogar o mochila de emergencia, utilízala siempre como primera opción sobre el fuego directo para hervir agua de forma rápida y segura. Sin embargo, cuando huyes de un desastre o quedas aislado en la naturaleza sin recipientes resistentes al calor, beber agua sin hervir provoca diarrea y deshidratación fatal en tres días. Colocar un cuenco de madera sobre llamas directas quemará el fondo. En cambio, si rodeas el borde superior de un tronco seco con barro húmedo protector, quemas solo el centro con brasas de roble del [Horno de Carbón Primitivo](/protocol-09) y raspas la capa carbonizada tres o cuatro veces con una lasca del [Hacha de Piedra](/protocol-04), lograrás tallar una sólida olla de madera de 5 litros. Luego, calentando rocas secas de granito de colina en las brasas por 30 minutos y sumergiéndolas con tenazas de rama verde, podrás hervir el agua a 100°C en 3 minutos sin quemar la madera.",
+  "timeRequired": "2–3 horas para ahuecar la olla de madera (10–15 minutos por cada ciclo de ebullición posterior)",
+  "successRate": "95% (manteniendo paredes de 3–4 cm y eligiendo únicamente granito seco de ladera)",
+  "difficulty": "Principiante-Intermedio (Cero herramientas metálicas; usa tronco seco, barro húmedo, brasas, lasca de piedra, rocas secas y tenaza de madera verde)",
+  "outputPerHour": "Una olla de madera de 25 cm × 15 cm de profundidad hierve a 100°C de 2 a 3 litros de agua potable por tanda",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Un Tronco Seco y Sólido de Dos Palmos (35–40 cm de Largo y >30 cm de Ancho: Pino, Roble o Arce)",
+      "desc": "Forma el cuerpo de la olla de madera. Evita maderas podridas o con grietas verticales que goteen; elige un tronco firme con corteza adherida y aplana la base para que asiente estable en el suelo."
+    },
+    {
+      "id": "mat-02",
+      "name": "Dos Puñados de Barro Húmedo + Brasas de Carbón de Roble + Un Tubo Hueco de Caña o Bambú para Soplar",
+      "desc": "El barro húmedo aplicado en el borde superior actúa como cortafuegos refrigerado por evaporación. Las brasas y el tubo de soplado dirigen el calor verticalmente hacia el centro del tronco."
+    },
+    {
+      "id": "mat-03",
+      "name": "Una Lasca de Piedra Plana y Afilada del Tamaño de la Palma + Un Puñado de Arena Gruesa y Hierba Seca",
+      "desc": "Funciona como raspador para arrancar la capa de carbón y permitir que el fuego siga profundizando. La arena gruesa con hierba limpia el hollín interior antes del primer uso."
+    },
+    {
+      "id": "mat-04",
+      "name": "5–6 Piedras de Granito o Basalto Secas de Colina (Lejos del Agua, Tamaño Puño) + Tenaza en Y de Rama Verde",
+      "desc": "Piedras para transferir calor al agua. Jamás uses piedras sacadas de ríos o suelo húmedo: el agua atrapada en su interior hierve, se expande y explota como metralla. Elige siempre rocas secas de colina alta."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Rodear el Borde del Tronco con un Dique de Barro Húmedo y Quemar Solo el Centro con Brasas y Tubo Soplador",
+      "description": "1. **Fijar el Tronco Estable en Tierra**: Entierra ligeramente la base plana del tronco o cálzalo con piedras a ambos lados para que las brasas no vuelquen.\n2. **Colocar Dique Cortafuegos de Barro Húmedo**: Moldea un anillo de barro arcilloso húmedo de **dos dedos de espesor (3–4 cm)** por todo el borde superior exterior para proteger las futuras paredes de la olla.\n3. **Apilar Brasas de Roble y Soplar por Caña**: Coloca un puño de brasas de [Carbón de Roble](/protocol-09) encendidas con [Fuego por Fricción](/protocol-02) en el centro y sopla suavemente por un tubo hueco de caña o bambú para quemar verticalmente hacia abajo.",
+      "actionNote": "> Por qué debes proteger el borde con barro húmedo: Al soplar las brasas, el calor irradia hacia afuera y quemaría el labio del cuenco. El agua del barro absorbe calor al evaporarse y preserva paredes resistentes de 3–4 cm.",
+      "svgFileName": "pr33-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // DIQUE DE BARRO HÚMEDO + QUEMA CENTRAL CON TUBO",
+        "Cubrir borde con 3-4cm de barro húmedo contra el fuego",
+        "Soplar por caña hueca para quemar verticalmente al centro",
+        "Fijar base del tronco en tierra y piedras sin volcar",
+        "[CLAVE] El barro enfriado protege paredes y ahueca centro"
+      ],
+      "deepDive": {
+        "badge": "CHARCOAL ABLATION CONTROL",
+        "title": "Enfriamiento Evaporativo del Dique de Arcilla y Ablación Controlada de Madera",
+        "text": "Tallar madera seca dura solo con lascas de piedra tomaría días. El **barro húmedo** bloquea el fuego en el borde mediante calor latente a 100°C, mientras las **brasas avivadas con tubo** elevan el centro a 700–800°C convirtiendo la fibra en carbón fácil de raspar.",
+        "fieldSpecs": [
+          {
+            "name": "Tronco Seco Protegido por Dique de Barro Húmedo Durante la Quema Central",
+            "scientificName": "Wet Clay Thermal Barrier & Directed Ember Ablation Log",
+            "categoryTag": "Cortafuegos de Arcilla / Quema Central",
+            "imageFileName": "id-log-clay-dam-ember-burn.jpg",
+            "hudCode": "FIG. TOOLS-33A // MACRO OPTIC",
+            "hudStatus": "RIM PROTECTION: CLAY DAM",
+            "traits": [
+              {
+                "label": "Barro/Borde",
+                "value": "Aplica **dos dedos (3–4 cm) de barro húmedo** alrededor del perímetro superior."
+              },
+              {
+                "label": "Tubo/Soplo",
+                "value": "**Apunta una caña hueca** al centro de las brasas para perforar hacia abajo."
+              },
+              {
+                "label": "Base/Firme",
+                "value": "**Asienta el tronco en tierra con piedras** para evitar derrames de brasas."
+              }
+            ],
+            "fieldUse": "Ahuecado inicial con combustión dirigida sustituyendo gubias y formones metálicos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Raspar el Carbón con una Lasca de Piedra y Repetir 3–4 Veces Hasta Lograr un Cuenco de Un Palmo de Hondo",
+      "description": "1. **Retirar Brasas y Raspar Capa Negra**: Cuando la cavidad alcance un nudillo de profundidad (1,5–2 cm), aparta las brasas y usa una piedra plana afilada de [Hacha de Piedra](/protocol-04) para **raspar todo el carbón negro hasta exponer madera clara**.\n2. **Repetir 3–4 Ciclos de Quema y Raspado**: Repite la quema y el raspado 3 a 4 veces hasta lograr **un palmo adulto completo (15 cm)** de profundidad.\n3. **Verificar Pared de 3–4 cm y Pulir con Arena**: Comprueba que fondo y paredes mantengan **dos dedos de grosor (3–4 cm)** para resistir sin agrietarse. Restriega el interior con arena gruesa, agua y hierba seca para limpiar el hollín.",
+      "actionNote": "> Por qué debes raspar toda la capa negra antes de volver a quemar: El carbón vegetal sobre la superficie actúa como un aislante térmico con menos de un tercio de la conductividad de la madera cruda, frenando por completo la quema si no lo retiras.",
+      "svgFileName": "pr33-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CICLOS DE RASPADO CON PIEDRA HASTA 15CM DE FONDO",
+        "Raspar capa negra aislante hasta exponer madera clara",
+        "Lograr 15cm de profundidad + paredes y base de 3-4cm",
+        "Pulir interior con arena + agua para quitar sabor a humo",
+        "[CLAVE] 3-4 ciclos crean una olla de madera impermeable"
+      ],
+      "deepDive": {
+        "badge": "BURN-AND-SCRAPE ITERATION",
+        "title": "Eliminación de Capa Aislante de Carbón y Conservación Estructural de 3–4 cm",
+        "text": "Una capa gruesa de **carbón** autoaísla la madera subyacente. Rasparla con **lasca de piedra** reactiva la pirólisis en cada ciclo, mientras conservar **3–4 cm de pared** evita fisuras por choque térmico durante la ebullición a 100°C.",
+        "fieldSpecs": [
+          {
+            "name": "Olla de Madera de 15 cm Ahuecada y Raspada con Lasca Afilada de Cuarcita",
+            "scientificName": "Repeated Burn-and-Scrape Hardwood Cooking Vessel Cavity",
+            "categoryTag": "Eliminación de Carbón / Cavidad de 15 cm",
+            "imageFileName": "id-charred-wood-stone-scraper-hollow.jpg",
+            "hudCode": "FIG. TOOLS-33B // MACRO OPTIC",
+            "hudStatus": "WALL THICKNESS: 3-4CM SAFE",
+            "traits": [
+              {
+                "label": "Raspar/Madera",
+                "value": "**Raspa todo el carbón negro** con piedra hasta ver madera clara."
+              },
+              {
+                "label": "Medida/Pared",
+                "value": "Alcanza **un palmo (15 cm) hondo** dejando **3–4 cm de espesor** en base y lados."
+              },
+              {
+                "label": "Pulido/Arena",
+                "value": "**Frota el interior con arena y hierba** para dejarlo limpio sin tizne."
+              }
+            ],
+            "fieldUse": "Vasija primitiva impermeable de 5 litros resistente al calor de agua hirviendo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Evitar Piedras de Río y Calentar 5–6 Rocas Secas de Granito de Colina en Brasas por Más de 30 Minutos",
+      "description": "1. **Descartar Toda Piedra Húmeda o de Río**: Nunca recojas rocas sumergidas en ríos, barro o musgo húmedo; contienen agua atrapada en poros que estalla violentamente en el fuego.\n2. **Elegir 5–6 Granitos o Basaltos Secos de Colina**: Recoge en **laderas altas y soleadas 5 o 6 rocas densas del tamaño de un puño**, golpeándolas suavemente para asegurar que sean duras y compactas.\n3. **Enterrar en Brasas Rojas por 30+ Minutos**: Entiérralas dentro de las brasas vivas de un [Fogón de Barro](/protocol-06) o fogata durante **al menos 30 minutos** hasta que brillen rojo oscuro cubiertas de ceniza blanca.",
+      "actionNote": "> Por qué estallan como granadas las rocas de río en el fuego: La humedad microscópica atrapada dentro supera los 100°C y se expande 1.600 veces de golpe como vapor, lanzando esquirlas afiladas hacia tu rostro y ojos.",
+      "svgFileName": "pr33-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // GRANITO SECO DE COLINA + PRECALENTAMIENTO DE 30MIN",
+        "Prohibido usar piedra de río (explosión de vapor x1.600)",
+        "Elegir 5-6 granitos o basaltos secos tamaño puño",
+        "Enterrar 30+ min en brasas rojas hasta acumular calor",
+        "[CLAVE] Elegir roca seca de ladera evita estallidos mortales"
+      ],
+      "deepDive": {
+        "badge": "THERMAL SHOCK & STEAM FRACTURE SAFETY",
+        "title": "Mecanismo de Estallido por Vapor x1.600 frente al Alto Calor Específico del Granito Seco",
+        "text": "La arenisca porosa y las piedras de río retienen agua capilar que revienta al calentarse. El **granito y basalto secos de colina** soportan **400–600°C** de forma estable tras un precalentamiento uniforme de 30 minutos.",
+        "fieldSpecs": [
+          {
+            "name": "Guijarros Secos de Granito Precalentados al Rojo en Brasas de Fogata",
+            "scientificName": "Dry Hillside Granite Cobbles Preheated in Hardwood Campfire Embers",
+            "categoryTag": "Prevención de Explosión / Acumulación Térmica",
+            "imageFileName": "id-dry-land-granite-hearth-heating.jpg",
+            "hudCode": "FIG. TOOLS-33C // MACRO OPTIC",
+            "hudStatus": "THERMAL LOAD: DRY GRANITE",
+            "traits": [
+              {
+                "label": "Prohibido/Río",
+                "value": "**Piedras húmedas de río o musgo** explotan en esquirlas y están prohibidas."
+              },
+              {
+                "label": "Usar/Granito",
+                "value": "Selecciona **5–6 granitos o basaltos secos de colina alta** tamaño puño."
+              },
+              {
+                "label": "Calor/30Min",
+                "value": "**Mantenlas 30+ minutos en brasas** hasta que tomen tono rojo oscuro."
+              }
+            ],
+            "fieldUse": "Rocas térmicas seguras para hervir 2–3 litros de agua sin riesgo de estallido"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Sacudir la Ceniza con Tenazas de Rama Verde y Alternar Piedras Calientes en el Agua Hasta Hervir a 100°C",
+      "description": "1. **Llenar el Cuenco al 70% y Hacer Tenazas Verdes**: Llena la olla de madera con agua filtrada de un [Filtro de Carbón y Arena](/protocol-01) hasta el **70% de su capacidad (dos dedos bajo el borde)**. Dobla a la mitad una rama verde fuerte en forma de tenaza en V/Y.\n2. **Enjuagar Ceniza <1s y Sumergir Suavemente**: Sujeta una roca al rojo con la tenaza, **rózala menos de 1 segundo en un charco aparte o hierba mojada** para limpiar solo la ceniza blanca, y bájala suavemente hasta el fondo.\n3. **Alternar Piedras Hasta Hervor Fuerte a 100°C**: Cuando deje de burbujear, devuélvela al fuego y mete otra roca caliente (2–3 en total) para mantener un **hervor vigoroso a 100°C más de 1 minuto** y eliminar microbios que causan diarrea.",
+      "actionNote": "> Por qué nunca debes soltar piedras calientes desde lo alto: Arrojar la roca salpica agua a 100°C causando quemaduras graves y puede partir el fondo de madera por el impacto. Bájala suavemente hasta el fondo con la tenaza.",
+      "svgFileName": "pr33-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TENAZAS VERDES QUITA-CENIZA + EBULLICIÓN A 100C",
+        "Llenar solo al 70% para evitar desbordes y salpicaduras",
+        "Rozar hierba húmeda <1s para lavar ceniza superficial",
+        "Sumergir suave con tenaza verde y rotar para lograr 100C",
+        "[CLAVE] Esteriliza agua potable a 100C sin quemar la madera"
+      ],
+      "deepDive": {
+        "badge": "STONE BOILING THERMODYNAMICS",
+        "title": "Convección Térmica por Inmersión Directa hasta Ebullición Esterilizante de 100°C",
+        "text": "Una piedra de **granito a 500°C (400–500 g)** libera más de 150 kJ por litro al instante mediante ebullición nucleada. Alternando 2–3 rocas el agua alcanza **100°C** matando bacterias y virus, sirviendo también para preparar caldo con [Cecina Ahumada en Roble](/protocol-19).",
+        "fieldSpecs": [
+          {
+            "name": "Tenazas de Rama Verde Sumergiendo Granito Caliente en Olla de Madera Hirviendo a 100°C",
+            "scientificName": "Green Wood Tongs & Submerged Heated Granite Stone Boiling",
+            "categoryTag": "Lavado de Ceniza / Esterilización a 100°C",
+            "imageFileName": "id-stone-boiling-wood-tongs-pot.jpg",
+            "hudCode": "FIG. TOOLS-33D // MACRO OPTIC",
+            "hudStatus": "BOIL TEMP: 100°C REACHED",
+            "traits": [
+              {
+                "label": "Nivel/70%",
+                "value": "Llena solo al **70% de altura** previendo el desplazamiento de las piedras."
+              },
+              {
+                "label": "Enjuague/1s",
+                "value": "**Sumerge <1 segundo en hierba húmeda o agua aparte** para evitar agua con ceniza."
+              },
+              {
+                "label": "Rotación/100C",
+                "value": "**Alterna 2–3 piedras al rojo** para sostener un hervor completo a 100°C."
+              }
+            ],
+            "fieldUse": "Esterilización de 2–3 litros de agua potable a 100°C y cocción sin ollas metálicas"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Calentar Piedras Húmedas de Río (Explosión de Metralla) o Dejar Paredes Demasiado Delgadas que Se Parten",
+    "description": "Las piedras sumergidas en ríos o enterradas en lodo húmedo guardan agua interna que al calentarse se expande 1.600 veces como vapor explosivo, lanzando fragmentos hacia tus ojos y rostro. Asimismo, tallar el fondo o paredes de la olla de madera a menos de un dedo de grosor hace que se raje verticalmente por el choque térmico derramando toda el agua limpia. Si ocurre diarrea o vómitos por agua sin hervir, hidrátate de inmediato con [Solución de Rehidratación Oral (ORS)](/protocol-24).",
+    "consequence": "Ceguera o heridas graves por esquirlas de piedra explosiva y pérdida total del suministro de agua segura."
+  },
+  "faqs": [
+    {
+      "question": "¿Las piedras calientes no vuelven el agua gris alcalina (lejía) o con sabor fuerte a quemado?",
+      "causeDiagnostic": "La ceniza adherida a la roca disuelve álcali y el hollín suelto dentro del cuenco tiñe el agua.",
+      "resolution": "Frota bien el interior del cuenco con arena gruesa y agua al terminar el Paso 2 y siempre **roza cada roca caliente durante menos de 1 segundo en un charco aparte o hierba mojada** justo antes de meterla en la olla: el vapor instantáneo despega toda la ceniza manteniendo el núcleo caliente para obtener agua hirviendo limpia."
+    },
+    {
+      "question": "¿Puedo hervir agua con piedras calientes en un hoyo forrado con cuero o lona si no tengo 2–3 horas para tallar el tronco?",
+      "causeDiagnostic": "En desplazamientos rápidos sin tiempo ni energía para quemar y raspar un tronco, una depresión forrada funciona rápido.",
+      "resolution": "¡Sí! Excava un hoyo poco profundo en tierra firme, cúbrelo tenso con [Cuero Curtido con Corteza de Roble](/protocol-17) o lona impermeable limpia sujeta con piedras alrededor, llena al 70% con agua y aplica los Pasos 3–4 de granito seco en 10 minutos."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Completo de Olla de Madera Tallada con Dique de Barro (5L) y Ebullición a 100°C con Granito Seco",
+    "badge": "TARGET OUTCOME // SISTEMA OLLA DE MADERA Y HERVOR CON PIEDRAS 100°C",
+    "description": "Sistema de cocción sin metal que protege el borde del tronco con barro húmedo mientras brasas sopladas por caña queman el centro y lascas de piedra raspan 3–4 ciclos para lograr paredes de 3–4 cm y 15 cm de hondo; luego alterna granitos secos de colina calentados 30 minutos usando tenazas verdes para alcanzar 100°C en 3 minutos.",
+    "svgFileName": "pr33-outcome.svg",
+    "svgLabels": [
+      "PR-33 COMPLETO // OLLA DE MADERA QUEMADA Y HERVOR A 100C",
+      "ETAPA 01: DIQUE BARRO Y QUEMA",
+      "Borde 3-4cm barro + brasas tubo",
+      "ETAPA 02: CICLOS CON LASCA",
+      "Raspar 3-4x hasta 15cm de fondo",
+      "ETAPA 03: GRANITO SECO 30MIN",
+      "Sin piedra de río! Rocas colina",
+      "ETAPA 04: HERVOR 100C TENAZA",
+      "Lavar ceniza 1s + rotar piedras",
+      "[PRINCIPIO] Dique de arcilla forma olla estanca y granito seco logra ebullición segura a 100C"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Sin olla ni lata metálica y necesitas hervir agua sucia a 100°C para sobrevivir? ¡Talla una olla de madera con fuego y hierve con piedras al rojo!",
+    "body": "Si pones un plato de madera directo al fuego se perfora. Primero, rodea el borde superior de un tronco seco con barro húmedo protector, pon brasas de roble en el centro y sopla por una caña hueca. Segundo, raspa el carbón negro con una piedra afilada y repite tres o cuatro veces hasta lograr una olla profunda. Tercero, ¡jamás calientes piedras de río porque explotan como granadas! Elige granito seco de colina alta y caliéntalo 30 minutos en brasas. Cuarto, sujétalo con tenazas de rama verde, sacude la ceniza en hierba mojada y altérnalas en el agua hasta hervir a 100°C en 3 minutos!"
+  },
+  "createdAt": "2026-11-17T05:55:43.049Z",
+  "contentHash": "deeb9b7d12b5c10f"
+}

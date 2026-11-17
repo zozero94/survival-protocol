@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg33s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="woodWall33s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b4834e"/>
+      <stop offset="100%" stop-color="#785028"/>
+    </linearGradient>
+    <linearGradient id="stone33s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ca3af"/>
+      <stop offset="100%" stop-color="#4b5563"/>
+    </linearGradient>
+    <pattern id="grid33s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow33s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg33s2)"/>
+  <rect width="400" height="400" fill="url(#grid33s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1: Header -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 02 // 깬 돌날 긁어내기 반복으로 한 뼘(15cm) 깊이 그릇 성형</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9.5">까만 숯 층(단열막)을 납작한 돌날로 긁어 생나무 노출</text>
+
+  <!-- Main Cross-Section Diagram of Burn Bowl (3-4cm Wall & Bottom, 15cm Cavity, Stone Scraper) -->
+  <g filter="url(#shadow33s2)">
+    <!-- Outer Bark Profile Cross-Section -->
+    <rect x="84" y="130" width="232" height="145" rx="16" fill="#3f2718" stroke="#6b4423" stroke-width="2.5"/>
+    <!-- Solid Wood Wall & Floor (3-4cm thick) -->
+    <rect x="94" y="130" width="212" height="136" rx="10" fill="url(#woodWall33s2)" stroke="#a16207" stroke-width="1.5"/>
+
+    <!-- Carved 15cm Deep Cavity -->
+    <path d="M 124 130 L 128 214 Q 130 232 200 232 Q 270 232 272 214 L 276 130 Z" fill="#171717" stroke="#f59e0b" stroke-width="1.8"/>
+    <!-- Partially scraped fresh tan wood vs black char bottom -->
+    <path d="M 129 195 Q 200 218 271 195 L 270 215 Q 268 230 200 230 Q 132 230 130 215 Z" fill="#09090b"/>
+    <path d="M 140 212 Q 170 222 200 220" stroke="#c29563" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Chipped Quartzite Stone Scraper Blade inside bowl -->
+    <polygon points="184,196 226,162 246,184 206,216 188,214" fill="url(#stone33s2)" stroke="#e5e7eb" stroke-width="1.8"/>
+    <!-- Stone blade bevel facets -->
+    <line x1="184" y1="196" x2="210" y2="205" stroke="#d1d5db" stroke-width="1.2"/>
+    <line x1="226" y1="162" x2="210" y2="205" stroke="#374151" stroke-width="1.2"/>
+    <!-- Scrape sweep arrow -->
+    <path d="M 176 208 Q 200 222 224 208" fill="none" stroke="#fde68a" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="172,205 180,203 178,212" fill="#fde68a"/>
+
+    <!-- Dimension Lines: Left Wall Thickness 3-4cm -->
+    <line x1="94" y1="176" x2="126" y2="176" stroke="#4ade80" stroke-width="2"/>
+    <line x1="94" y1="170" x2="94" y2="182" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="126" y1="170" x2="126" y2="182" stroke="#4ade80" stroke-width="1.5"/>
+
+    <!-- Dimension Lines: Bottom Thickness 3-4cm -->
+    <line x1="200" y1="232" x2="200" y2="266" stroke="#4ade80" stroke-width="2"/>
+    <line x1="194" y1="232" x2="206" y2="232" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="194" y1="266" x2="206" y2="266" stroke="#4ade80" stroke-width="1.5"/>
+
+    <!-- Dimension Lines: 15cm Cavity Depth -->
+    <line x1="286" y1="130" x2="286" y2="232" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="280" y1="130" x2="292" y2="130" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="280" y1="232" x2="292" y2="232" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Scraped Charcoal Dust Pile outside -->
+    <ellipse cx="60" cy="268" rx="18" ry="7" fill="#18181b" stroke="#52525b" stroke-width="1"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">그릇 깊이 한 뼘(15cm) + 바닥·벽 두께 3~4cm 확보 필수</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="344" fill="#bae6fd" font-family="monospace" font-size="9">모래·물로 안쪽 탄 찌꺼기 연마 세척 후 식수 담기 준비</text>
+
+  <!-- Label 5: Core -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 태우기-긁기 3~4회 교대 작업으로 방수 목재 냄비 완성</text>
+</svg>

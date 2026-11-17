@@ -1,0 +1,253 @@
+{
+  "protocolId": "PR-33",
+  "category": "TOOLS",
+  "title": "How to Carve a Wooden Burn Bowl with Charcoal Embers and Boil Water to 100°C Using Heated Stones Without a Pot",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[METAL-FREE FIELD COOKWARE & 100°C STONE BOILING STERILIZATION]",
+  "summary": "If you have a metal cooking pot, mess kit, or canteen cup in your home or emergency kit, always use that commercial cookware over a direct flame first for the fastest and safest boiling. However, when fleeing a disaster or isolated in the wilderness without any heat-proof container, drinking untreated stream water causes fatal diarrhea and dehydration within three days. Putting a carved wooden bowl directly over flames will burn straight through the bottom. Instead, by ringing a dry two-handspan hardwood log top with wet clay mud, burning out only the center using oak charcoal embers from a [Primitive Charcoal Kiln](/protocol-09), and scraping away the charred layer three to four times with a sharp flake from a [Stone Axe](/protocol-04), you can craft a sturdy 5-liter wooden cooking pot. Then, by heating dense dry hillside granite stones in campfire coals for 30+ minutes and lowering them into the water with green wooden tongs, you can bring water to a full 100°C rolling boil in 3 minutes without scorching the bowl.",
+  "timeRequired": "2–3 hours to hollow the wooden bowl (10–15 minutes per stone-boiling session afterward)",
+  "successRate": "95% (when keeping 3–4cm solid wood walls and selecting strictly moisture-free hillside granite)",
+  "difficulty": "Beginner-Intermediate (Zero metal tools required; uses only a dry log, wet clay, coals, stone blade, dry hillside rocks, and green wood tongs)",
+  "outputPerHour": "One 25cm wide × 15cm deep wooden pot boils 2–3 liters of purified drinking water at 100°C per batch",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "One Solid, Dry Hardwood Log Section (Two Handspans / 35–40cm Long, Over 30cm Wide — Pine, Oak, or Maple)",
+      "desc": "Forms the body of the wooden pot. Avoid rotting logs or wood with deep vertical cracks that will leak water; choose tight-barked, solid dry wood and flatten the base so it sits steadily on soil."
+    },
+    {
+      "id": "mat-02",
+      "name": "Two Fists of Wet Clay Mud + A Scoop of Oak Charcoal Embers + One Hollow Reed or Bamboo Blowpipe",
+      "desc": "Wet clay smeared two fingers thick around the top rim creates a steam-cooled firebreak that prevents the bowl walls from burning away. Glowing coals and the blowpipe direct intense heat vertically downward into the center."
+    },
+    {
+      "id": "mat-03",
+      "name": "One Palm-Sized Flat Sharp Chipped Stone Blade + A Handful of Coarse Sand and Dry Grass",
+      "desc": "Acts as a stone scraper to gouge out blackened charcoal layers so heat can penetrate deeper on the next burn cycle. Coarse sand and dry grass scrub away soot before first water use."
+    },
+    {
+      "id": "mat-04",
+      "name": "5–6 Fist-Sized Dry-Hillside Granite or Basalt Cobbles (Far From Water) + One Forked Green Wood Branch Tongs",
+      "desc": "Thermal-transfer stones heated in campfire coals. Never pick stones from inside a river or damp mud—trapped water flashes to steam and explodes like shrapnel. Always choose heavy, dry hillside rocks."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Ring the Log Rim with a Wet Clay Firebreak and Burn Only the Center Using Coals and a Blowpipe",
+      "description": "1. **Stabilize the Log Base**: Sink the flat bottom of the log two fingers deep into level earth or wedge rocks on both sides so hot embers cannot tip over.\n2. **Build a Wet Clay Firebreak Ring**: Pack wet sticky clay mud **two fingers wide (3–4cm) around the outer top perimeter** of the area you plan to hollow, shielding the future pot rim from scorching.\n3. **Pile Oak Embers & Blow Through Hollow Reed**: Place a fistful of glowing [Oak Charcoal](/protocol-09) coals lit via [Bow-Drill Friction Fire](/protocol-02) dead-center inside the clay ring. Blow gently and steadily through a hollow bamboo or reed tube onto the center coals so fire eats downward vertically.",
+      "actionNote": "> Why you must never skip the wet clay rim dam: Blowing on embers spreads radiant heat outward across the top face. Evaporating moisture in the wet clay locks the rim temperature down, protecting a sturdy 3–4cm bowl wall thickness.",
+      "svgFileName": "pr33-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WET CLAY RIM DAM + CENTER EMBER ABLATION",
+        "Ring rim with 3-4cm wet clay mud to stop edge burning",
+        "Blow through hollow reed/bamboo to burn straight down",
+        "Anchor log base in soil/stones so hot coals stay level",
+        "[CORE] Evaporating clay dam saves rim walls + hollows core"
+      ],
+      "deepDive": {
+        "badge": "CHARCOAL ABLATION CONTROL",
+        "title": "Evaporative Cooling of Clay Firebreaks and Localized Burn-and-Scrape Wood Ablation",
+        "text": "Seasoned hardwood is far too dense to hollow rapidly with stone knives alone. **Wet clay** absorbs latent heat at 100°C to keep the rim cool, while **concentrated blowpipe embers** push center temperatures to 700–800°C, turning solid wood fibers into brittle char that scrapes clean.",
+        "fieldSpecs": [
+          {
+            "name": "Dry Hardwood Log Protected by Wet Clay Rim Dam During Center Charcoal Ablation",
+            "scientificName": "Wet Clay Thermal Barrier & Directed Ember Ablation Log",
+            "categoryTag": "Clay Rim Firebreak / Directed Center Burn",
+            "imageFileName": "id-log-clay-dam-ember-burn.jpg",
+            "hudCode": "FIG. TOOLS-33A // MACRO OPTIC",
+            "hudStatus": "RIM PROTECTION: CLAY DAM",
+            "traits": [
+              {
+                "label": "Clay/Rim",
+                "value": "Pack **two fingers (3–4cm) of wet clay** tightly around the top perimeter."
+              },
+              {
+                "label": "Reed/Blow",
+                "value": "**Aim a hollow reed or bamboo pipe** straight at center coals to burn downward."
+              },
+              {
+                "label": "Anchor/Base",
+                "value": "**Wedge the log base in soil and stones** so glowing embers never spill."
+              }
+            ],
+            "fieldUse": "Initial wood hollowing process replacing metal gouges with directed charcoal combustion"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Scrape Away Charred Wood with a Stone Blade and Repeat 3–4 Cycles to Form a Handspan-Deep Pot",
+      "description": "1. **Set Coals Aside & Scrape Black Char**: Once wood burns one finger-joint deep (1.5–2cm) and cracks black, scoop the coals aside. Use a sharp flat stone blade from [Stone Axe Making](/protocol-04) to **scrape every trace of black charcoal away until pale raw wood shows**.\n2. **Repeat Burn-and-Scrape 3–4 Cycles**: Place embers back into the cavity, blow to deepen, and scrape again 3–4 times until depth reaches **one full adult handspan (15cm)**.\n3. **Verify 3–4cm Wall Thickness & Sand Polish**: Knock along the sides and floor to keep **solid wood thickness of two fingers (3–4cm)** everywhere so it never cracks. Scrub the inside with coarse sand, a splash of water, and dry grass to clear loose soot.",
+      "actionNote": "> Why scraping out every bit of black char between burns is essential: Carbonized charcoal acts as a heat insulator with less than a third of raw wood's thermal conductivity. Unless you expose fresh pale wood, the embers cannot burn any deeper.",
+      "svgFileName": "pr33-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // STONE BLADE SCRAPE CYCLE TO 15CM BOWL DEPTH",
+        "Scrape black char insulator down to pale raw wood",
+        "Achieve 15cm cavity depth + 3-4cm solid walls & base",
+        "Scrub interior with sand + water to clear burnt taste",
+        "[CORE] 3-4 burn-scrape cycles yield a leakproof wooden pot"
+      ],
+      "deepDive": {
+        "badge": "BURN-AND-SCRAPE ITERATION",
+        "title": "Char Layer Thermal Insulation Removal and Structural 3–4cm Wall Preservation",
+        "text": "Wood self-insulates once a thick **char layer** forms over raw fibers. Removing that barrier with a chipped **stone scraper** restores rapid pyrolysis on each cycle, while preserving **3–4cm walls and base thickness** prevents thermal-expansion splitting during boiling.",
+        "fieldSpecs": [
+          {
+            "name": "Deeply Hollowed Wooden Cooking Vessel Scraped Clean with a Chipped Stone Blade",
+            "scientificName": "Repeated Burn-and-Scrape Hardwood Cooking Vessel Cavity",
+            "categoryTag": "Char Layer Removal / 15cm Cavity Depth",
+            "imageFileName": "id-charred-wood-stone-scraper-hollow.jpg",
+            "hudCode": "FIG. TOOLS-33B // MACRO OPTIC",
+            "hudStatus": "WALL THICKNESS: 3-4CM SAFE",
+            "traits": [
+              {
+                "label": "Scrape/Raw",
+                "value": "**Scrape blackened char completely off** with a stone blade until tan wood shows."
+              },
+              {
+                "label": "Depth/Walls",
+                "value": "Carve **one handspan (15cm) deep** while preserving **3–4cm walls and base**."
+              },
+              {
+                "label": "Polish/Sand",
+                "value": "**Scrub with coarse sand and grass** before use to remove smoky soot taste."
+              }
+            ],
+            "fieldUse": "Durable, crack-resistant 5-liter primitive wooden vessel capable of holding boiling water"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Avoid River Rocks and Preheat 5–6 Dense Dry-Hillside Granite Stones in Campfire Coals for 30+ Minutes",
+      "description": "1. **Reject All Submerged or Mossy River Rocks**: Never collect rocks lying inside streams, wet mud, or shaded moss—microscopic water trapped inside turns to explosive steam when heated.\n2. **Select 5–6 Fist-Sized Dry-Hillside Granite or Basalt Cobbles**: Gather **5–6 heavy, dense fist-sized granite or basalt stones from high, sun-baked dry ground**, striking them lightly together to verify they do not crumble.\n3. **Bury Deep in Red Coals for 30+ Minutes**: Set them inside the red-hot coals of a [Clay Hearth](/protocol-06) or campfire for **at least 30 minutes** until heated evenly to the core with white ash dusting the surface and a dull red glow.",
+      "actionNote": "> Why wet river stones explode like grenades in a fire: Water trapped in microscopic pores flashes into steam above 100°C and expands over 1,600 times in volume instantaneously, blasting razor-sharp rock shrapnel toward your face and eyes.",
+      "svgFileName": "pr33-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DRY HILLSIDE GRANITE SELECTION + 30MIN PREHEAT",
+        "Ban wet river rocks (1,600x steam expansion blast hazard)",
+        "Pick 5-6 dense fist-sized dry hillside granite/basalt",
+        "Bury in red campfire coals 30+ mins for full core heat",
+        "[CORE] Zero-moisture upland stone selection prevents blasts"
+      ],
+      "deepDive": {
+        "badge": "THERMAL SHOCK & STEAM FRACTURE SAFETY",
+        "title": "1,600x Pore-Water Steam Spalling Mechanism vs Dense Dry Granite Thermal Capacity",
+        "text": "Porous sandstone and submerged river rocks retain pore water that violently spalls under heat. Dense, dry **upland granite and basalt** carry high specific heat and safely withstand **400–600°C embers** without shattering when warmed evenly over 30 minutes.",
+        "fieldSpecs": [
+          {
+            "name": "Dry Hillside Granite Cobbles Preheating to a Red Glow Inside Campfire Embers",
+            "scientificName": "Dry Hillside Granite Cobbles Preheated in Hardwood Campfire Embers",
+            "categoryTag": "Steam Blast Prevention / High-Heat Storage",
+            "imageFileName": "id-dry-land-granite-hearth-heating.jpg",
+            "hudCode": "FIG. TOOLS-33C // MACRO OPTIC",
+            "hudStatus": "THERMAL LOAD: DRY GRANITE",
+            "traits": [
+              {
+                "label": "Ban/River",
+                "value": "**Wet river or mossy rocks** shatter explosively in embers and must never be used."
+              },
+              {
+                "label": "Pick/Granite",
+                "value": "Select **5–6 dense, heavy dry hillside granite or basalt cobbles** (fist size)."
+              },
+              {
+                "label": "Heat/30Min",
+                "value": "**Bury in glowing coals for 30+ minutes** until evenly superheated to the core."
+              }
+            ],
+            "fieldUse": "Safe thermal mass stones ready to boil 2–3 liters of water without shattering hazards"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Rinse Ash Off Hot Stones with Green Wood Tongs and Alternate Them in Water to Reach a Full 100°C Boil",
+      "description": "1. **Fill Wooden Pot 70% Full & Cut Forked Green Wood Tongs**: Pour filtered water from a [Charcoal-Sand Water Filter](/protocol-01) into your wooden bowl up to **70% height (two fingers below the rim)**. Snap and bend a stout green hardwood branch in half to form springy Y-shaped tongs.\n2. **Flick Ash Off & Lower Gently**: Grip one superheated stone firmly in the tongs, blow lightly or **dip it for under 1 second into spare puddle water or wet grass** to rinse off white wood ash, then lower it gently to the bowl bottom while standing to the side.\n3. **Alternate Hot Stones to Sustain a 100°C Boil**: As the first stone cools and stops bubbling, lift it back onto the coals and lower a fresh glowing stone (2–3 stones total). Maintain a **vigorous 100°C rolling boil for over 1 minute** to eliminate diarrhea-causing microbes cleanly.",
+      "actionNote": "> Why dropping heated stones from above is dangerous: Tossing stones splashes scalding 100°C water droplets onto your arms and face and can crack the wood bottom on impact. Always hold the tongs until the stone rests gently on the bowl floor.",
+      "svgFileName": "pr33-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WOOD TONGS ASH RINSE + 100C STONE BOILING CYCLE",
+        "Fill bowl 70% max to leave room for stone + boil splash",
+        "Brush wet grass/spare water <1s to wash off surface ash",
+        "Lower gently with green wood tongs + swap for 100C boil",
+        "[CORE] Boils & sterilizes drinking water without burning wood"
+      ],
+      "deepDive": {
+        "badge": "STONE BOILING THERMODYNAMICS",
+        "title": "Submerged Direct-Contact Convection Boiling to 100°C Water Sterilization",
+        "text": "Dropping a **500°C granite cobble (400–500g)** into water triggers intense film and nucleate boiling, transferring over 150kJ of thermal energy per liter immediately. Rotating 2–3 stones pushes water to **100°C**, destroying harmful bacteria and viruses, and can also cook soup with [Smoked Oak Jerky](/protocol-19).",
+        "fieldSpecs": [
+          {
+            "name": "Green Wood Branch Tongs Lowering a Red-Hot Granite Stone into a Boiling Wooden Pot",
+            "scientificName": "Green Wood Tongs & Submerged Heated Granite Stone Boiling",
+            "categoryTag": "Ash-Rinse Dip / 100°C Boiling Sterilization",
+            "imageFileName": "id-stone-boiling-wood-tongs-pot.jpg",
+            "hudCode": "FIG. TOOLS-33D // MACRO OPTIC",
+            "hudStatus": "BOIL TEMP: 100°C REACHED",
+            "traits": [
+              {
+                "label": "Fill/70Pct",
+                "value": "Keep water at **70% bowl height** to prevent hot overflow when adding stones."
+              },
+              {
+                "label": "Rinse/1Sec",
+                "value": "**Swish briefly (<1s) in spare water or wet grass** to keep ash out of clean water."
+              },
+              {
+                "label": "Swap/100C",
+                "value": "**Alternate 2–3 glowing stones** in the pot to reach and hold a 100°C rolling boil."
+              }
+            ],
+            "fieldUse": "Sterilizing 2–3 liters of stream water to 100°C and simmering broth without a metal pot"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Heating Wet River Stones (Explosive Rock Shrapnel) and Carving Bowl Walls Too Thin Under Boiling Water",
+    "description": "Stones taken from rivers, streams, or damp earth hold trapped pore water; heating them in campfire coals flashes that moisture into 1,600x expanding steam, blasting razor-sharp rock shrapnel toward your eyes and face. Similarly, carving the wooden bowl floor or walls thinner than one finger-joint causes sudden vertical splitting from thermal shock, spilling your entire clean water supply. If anyone suffers vomiting or diarrhea from contaminated water before boiling, rehydrate immediately with [Oral Rehydration Solution (ORS)](/protocol-24).",
+    "consequence": "Permanent blindness or severe shrapnel wounds from exploding wet stones, and total loss of safe drinking water."
+  },
+  "faqs": [
+    {
+      "question": "Won't dropping hot campfire rocks into water turn it into black alkaline lye water or taste strongly burnt?",
+      "causeDiagnostic": "Wood ash clinging to hot rocks dissolves as alkaline potassium hydroxide, while loose soot in the wood fibers tints the water.",
+      "resolution": "Scrub the hollowed bowl interior thoroughly with coarse sand and water at the end of Step 2, and always flick or dip each glowing rock for under 1 second in spare puddle water or wet grass right before lowering it into the pot—surface steam cleans off every speck of white ash while keeping the rock's core red-hot for clean 100°C water."
+    },
+    {
+      "question": "Can I boil water with heated stones in a dirt pit lined with hide or waterproof cloth if I lack hours to carve a log?",
+      "causeDiagnostic": "When forced to relocate quickly without 2–3 hours to burn-and-scrape a thick log, a lined ground depression works rapidly.",
+      "resolution": "Yes! Dig a shallow basin in firm earth, line it tautly with [Oak-Bark Tanned Leather](/protocol-17) or a clean waterproof sheet anchored by perimeter stones, fill 70% with water, and apply the exact same dry-granite stone boiling method from Steps 3–4 within 10 minutes."
+    }
+  ],
+  "outcome": {
+    "title": "Clay-Dam Burn Bowl (5L Wooden Pot) & Dry Hillside Granite 100°C Stone-Boiling Water Sterilization System",
+    "badge": "TARGET OUTCOME // 100°C STONE-BOILING WOODEN POT SYSTEM",
+    "description": "A metal-free field boiling system combining wet clay firebreak protection and blowpipe charcoal ablation with 3–4 stone-scraper cycles to form a sturdy 3–4cm walled, 15cm deep wooden vessel, then alternating 30-minute preheated dry hillside granite stones via green wood tongs to reach a 100°C rolling boil in 3 minutes.",
+    "svgFileName": "pr33-outcome.svg",
+    "svgLabels": [
+      "PR-33 COMPLETE // CHARCOAL BURN BOWL & 100C STONE BOILING POT",
+      "STAGE 01: CLAY DAM & CORE BURN",
+      "3-4cm wet clay rim + center coals",
+      "STAGE 02: STONE SCRAPE CYCLES",
+      "Scrape char 3-4x to 15cm depth",
+      "STAGE 03: DRY GRANITE PREHEAT",
+      "No river rocks! 30m dry hillside heat",
+      "STAGE 04: 100C TONGS BOILING",
+      "1s ash rinse + swap stones for boil",
+      "[PRINCIPLE] Clay dam shapes leakproof wood pot + zero-moisture granite delivers safe 100C boil"
+    ]
+  },
+  "shortsScript": {
+    "hook": "No metal pot or tin can, yet you must boil dirty water to 100°C to survive? Carve a wooden pot with fire and boil water using red-hot stones!",
+    "body": "Put a wooden bowl directly on flames and it burns right through. First, ring the top edge of a two-handspan dry log with wet clay mud so the rim stays protected, pile hot oak coals in the center, and blow down through a hollow reed. Second, scrape out the black char with a sharp stone blade and repeat three to four times until you have a sturdy handspan-deep pot. Third, never heat wet river rocks—they explode like grenades in fire! Pick dry hillside granite stones and bake them in red coals for 30 minutes. Fourth, grip a stone with green wood tongs, flick off ash on wet grass, and gently alternate stones in water to reach a full 100°C boil in 3 minutes!"
+  },
+  "createdAt": "2026-11-17T05:55:43.049Z",
+  "contentHash": "deeb9b7d12b5c10f"
+}

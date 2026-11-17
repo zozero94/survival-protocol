@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg33s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="bark33s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b2618"/>
+      <stop offset="50%" stop-color="#5c3d28"/>
+      <stop offset="100%" stop-color="#2c1b10"/>
+    </linearGradient>
+    <linearGradient id="woodTop33s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c29563"/>
+      <stop offset="100%" stop-color="#8c6239"/>
+    </linearGradient>
+    <linearGradient id="clay33s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <radialGradient id="ember33s1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </radialGradient>
+    <pattern id="grid33s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow33s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg33s1)"/>
+  <rect width="400" height="400" fill="url(#grid33s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1: Header -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 01 // 진흙 방화 둑 두르기 + 숯불·바람 대롱 중심부 태우기</text>
+
+  <!-- Label 2: Clay Dam Spec -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9.5">가장자리에 3~4cm 젖은 진흙 둑을 발라 테두리 연소 차단</text>
+
+  <!-- Main 3D Hardwood Log + Wet Clay Rim + Charcoal Embers + Reed Blowpipe -->
+  <g filter="url(#shadow33s1)">
+    <!-- Ground / Anchor stones -->
+    <ellipse cx="200" cy="272" rx="135" ry="18" fill="#1c1917" stroke="#292524" stroke-width="1.5"/>
+    <ellipse cx="95" cy="264" rx="22" ry="12" fill="#44403c" stroke="#78716c" stroke-width="1.5"/>
+    <ellipse cx="305" cy="264" rx="22" ry="12" fill="#44403c" stroke="#78716c" stroke-width="1.5"/>
+
+    <!-- Log Cylinder Body -->
+    <path d="M 100 176 L 100 264 A 100 24 0 0 0 300 264 L 300 176 Z" fill="url(#bark33s1)" stroke="#44403c" stroke-width="2"/>
+    <!-- Vertical Bark Grain Lines -->
+    <path d="M 122 188 L 120 268 M 152 195 L 154 275 M 248 195 L 246 275 M 278 188 L 280 268" stroke="#291a10" stroke-width="1.5" opacity="0.7"/>
+
+    <!-- Log Top Flat Wood Face -->
+    <ellipse cx="200" cy="176" rx="100" ry="30" fill="url(#woodTop33s1)" stroke="#a16207" stroke-width="2"/>
+
+    <!-- Thick Wet Clay Firebreak Ring (3-4cm rim dam) -->
+    <ellipse cx="200" cy="174" rx="88" ry="25" fill="none" stroke="url(#clay33s1)" stroke-width="14"/>
+    <ellipse cx="200" cy="170" rx="88" ry="25" fill="none" stroke="#d97706" stroke-width="2" opacity="0.6"/>
+
+    <!-- Center Burn Hollow with Glowing Embers -->
+    <ellipse cx="200" cy="176" rx="54" ry="16" fill="#1c1917" stroke="#09090b" stroke-width="1.5"/>
+    <ellipse cx="200" cy="175" rx="44" ry="12" fill="url(#ember33s1)"/>
+    <!-- Charcoal chunks -->
+    <polygon points="182,175 192,167 204,173 195,181" fill="#27272a" stroke="#f97316" stroke-width="1.2"/>
+    <polygon points="205,172 218,168 224,177 210,180" fill="#18181b" stroke="#fb923c" stroke-width="1.2"/>
+    <polygon points="172,179 180,173 188,181 176,184" fill="#27272a" stroke="#ef4444" stroke-width="1"/>
+
+    <!-- Hollow Reed/Bamboo Blowpipe directing air stream to center -->
+    <line x1="224" y1="158" x2="334" y2="96" stroke="#a3a3a3" stroke-width="8" stroke-linecap="round"/>
+    <line x1="224" y1="158" x2="334" y2="96" stroke="#d97706" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="334" cy="96" rx="3" ry="2" fill="#18181b"/>
+    <!-- Airflow vector dashed lines & smoke wisps -->
+    <line x1="220" y1="160" x2="202" y2="170" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+    <path d="M 190 158 Q 182 140 194 125 Q 204 112 192 98" fill="none" stroke="#9ca3af" stroke-width="1.8" stroke-dasharray="4 3" opacity="0.75"/>
+    <path d="M 208 156 Q 216 138 206 122" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">빈 대나무·갈대 대롱으로 바람을 불어 중심부만 수직 탄화</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">통나무 바닥을 땅에 얕게 고정해 숯불이 쏟아지지 않게 유지</text>
+
+  <!-- Label 5: Core -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 수분 진흙 둑이 그릇 벽 두께를 지키고 가운데만 태움</text>
+</svg>

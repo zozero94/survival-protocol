@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg33s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <radialGradient id="hotStone33s3" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="55%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </radialGradient>
+    <radialGradient id="hearthGlow33s3" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.7"/>
+      <stop offset="65%" stop-color="#991b1b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#18181b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid33s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow33s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg33s3)"/>
+  <rect width="400" height="400" fill="url(#grid33s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1: Header -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 03 // 마른 육지 화강암 5~6개 선별 및 모닥불 30분 이상 가열</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#2d0607" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="64" fill="#fca5a5" font-family="monospace" font-size="9.5">물가·강물 속 젖은 돌 금지(수증기 1,600배 팽창 폭발 위험)</text>
+
+  <!-- Split Visual: Top Left Wet River Stone X (Danger) vs Center/Right Dry Hillside Granite Heating (OK) -->
+  <g filter="url(#shadow33s3)">
+    <!-- Left Hazard Card: Wet River Stone with X Symbol -->
+    <rect x="18" y="84" width="112" height="196" rx="4" fill="#180a0a" stroke="#dc2626" stroke-width="1.5"/>
+    <!-- River wave line below wet stone -->
+    <path d="M 30 184 Q 45 176 60 184 T 90 184 T 118 184" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 30 194 Q 45 186 60 194 T 90 194 T 118 194" fill="none" stroke="#0284c7" stroke-width="1.5"/>
+    <!-- Cracked exploding river stone -->
+    <ellipse cx="74" cy="154" rx="26" ry="20" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <path d="M 62 142 L 74 156 L 88 144 M 74 156 L 70 170" stroke="#ef4444" stroke-width="2.2"/>
+    <!-- Big Red X Badge -->
+    <circle cx="74" cy="236" r="18" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <line x1="65" y1="227" x2="83" y2="245" stroke="#fca5a5" stroke-width="3"/>
+    <line x1="83" y1="227" x2="65" y2="245" stroke="#fca5a5" stroke-width="3"/>
+
+    <!-- Right Safe Heating Hearth: Dry Granite Cobbles in Campfire Embers + Checkmark -->
+    <rect x="142" y="84" width="240" height="196" rx="4" fill="#111317" stroke="#22c55e" stroke-width="1.5"/>
+    <ellipse cx="262" cy="212" rx="95" ry="44" fill="url(#hearthGlow33s3)"/>
+
+    <!-- Campfire charred firewood ring & glowing ash bed -->
+    <ellipse cx="262" cy="222" rx="86" ry="28" fill="#1c1917" stroke="#44403c" stroke-width="1.8"/>
+    <rect x="180" y="218" width="44" height="10" rx="3" fill="#27272a" stroke="#78350f" transform="rotate(-14 202 223)"/>
+    <rect x="296" y="218" width="44" height="10" rx="3" fill="#27272a" stroke="#78350f" transform="rotate(14 318 223)"/>
+
+    <!-- 5 Fist-sized Dry Granite Stones Glowing Red-Hot -->
+    <ellipse cx="222" cy="214" rx="22" ry="15" fill="url(#hotStone33s3)" stroke="#fdba74" stroke-width="1.2"/>
+    <ellipse cx="262" cy="218" rx="24" ry="16" fill="url(#hotStone33s3)" stroke="#fde68a" stroke-width="1.5"/>
+    <ellipse cx="302" cy="214" rx="21" ry="14" fill="url(#hotStone33s3)" stroke="#fdba74" stroke-width="1.2"/>
+    <ellipse cx="242" cy="196" rx="20" ry="13" fill="url(#hotStone33s3)" stroke="#fca5a5" stroke-width="1.2"/>
+    <ellipse cx="284" cy="196" rx="20" ry="13" fill="url(#hotStone33s3)" stroke="#fca5a5" stroke-width="1.2"/>
+
+    <!-- Radiant Heat Rising Lines -->
+    <path d="M 232 174 Q 226 156 234 140" fill="none" stroke="#fb923c" stroke-width="2" stroke-dasharray="4 3"/>
+    <path d="M 262 172 Q 268 152 260 134" fill="none" stroke="#fde047" stroke-width="2" stroke-dasharray="4 3"/>
+    <path d="M 292 174 Q 286 156 294 140" fill="none" stroke="#fb923c" stroke-width="2" stroke-dasharray="4 3"/>
+
+    <!-- Green Checkmark Badge -->
+    <circle cx="352" cy="112" r="16" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <polyline points="344,112 350,118 361,106" fill="none" stroke="#86efac" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">마른 언덕의 무겁고 단단한 주먹 크기 화강암·현무암 선별</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#f97316" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">붉은 숯불 속에 30분 이상 파묻어 돌 중심까지 고열 축적</text>
+
+  <!-- Label 5: Core -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 수분 제로 육지 암석 선별이 파편 폭발 사고를 원천 차단</text>
+</svg>

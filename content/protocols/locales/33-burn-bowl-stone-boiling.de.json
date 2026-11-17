@@ -1,0 +1,253 @@
+{
+  "protocolId": "PR-33",
+  "category": "TOOLS",
+  "title": "Wie man ohne Topf einen Holztopf durch Ausbrennen mit Glut fertigt und Wasser mit heißen Steinen auf 100 °C kocht",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[METALLFREIER FELD-KOCHTOPF & 100-°C-KOCHSTEINTECHNIK ZUR TRINKWASSER-ENTKEIMUNG]",
+  "summary": "Wenn im Haushalt oder Notgepäck ein Metalltopf, Kochgeschirr oder ein Edelstahlbecher vorhanden ist, nutzen Sie dieses fertige Kochgerät am offenen Feuer immer zuerst für schnelles und sicheres Abkochen. Fehlt auf der Flucht oder in der Wildnis jedoch jeder hitzebeständige Behälter, führt das Trinken von verunreinigtem Bachwasser innerhalb von drei Tagen zu schwerem Durchfall und Lebensgefahr. Eine Holzschale direkt über Flammen brennt sofort durch. Umringt man hingegen einen trockenen Stammabschnitt oben mit feuchtem Lehm als Brandschutzwall, brennt nur die Mitte mit Eichenholzglut aus dem [Primitiven Kohlemeiler](/protocol-09) aus und schabt die schwarze Kohleschicht drei- bis viermal mit einer Steinklinge der [Steinaxt](/protocol-04) weg, entsteht ein robuster 5-Liter-Holztopf. Werden dann trockene Granitsteine vom sonnigen Hang 30 Minuten in Glut erhitzt und mit grünen Holzzangen ins Wasser gesenkt, kocht das Wasser in 3 Minuten bei 100 °C, ohne das Holz zu verbrennen.",
+  "timeRequired": "2–3 Stunden zum Ausbrennen des Holztopfs (anschließend je 10–15 Minuten pro Kochgang)",
+  "successRate": "95% (bei Erhalt einer Wandstärke von 3–4 cm und Wahl rein trockener Hang-Granitsteine)",
+  "difficulty": "Anfänger-Mittelstufe (Kein Metallwerkzeug; nur trockener Stamm, feuchter Lehm, Glut, Steinklinge, trockene Steine, Holzzange)",
+  "outputPerHour": "Ein Holztopf (25 cm Ø × 15 cm tief) kocht pro Durchgang 2–3 Liter Wasser sicher bei 100 °C ab",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Ein fester, trockener Stammabschnitt (zwei Handspannen / 35–40 cm lang, >30 cm dick: Kiefer, Eiche oder Ahorn)",
+      "desc": "Bildet den Körper des Holztopfs. Morsche Stämme oder tiefe Längsrisse meiden, da sie undicht sind; fest berindetes Holz mit flacher Unterseite wählen und sicher im Boden verankern."
+    },
+    {
+      "id": "mat-02",
+      "name": "Zwei Hände voll feuchter Lehm + eine Schaufel Eichenglut + ein hohles Schilf- oder Bambus-Blasrohr",
+      "desc": "Feuchter Lehm am oberen Rand bildet durch Verdunstungskühlung einen feuerfesten Wall. Glut und Blasrohr lenken die Hitze senkrecht nach unten in den Holzkern."
+    },
+    {
+      "id": "mat-03",
+      "name": "Eine handtellergroße flache, scharfe Steinklinge + eine Handvoll grober Sand und trockenes Gras",
+      "desc": "Schabt verkohlte Holzschichten sauber heraus, damit der nächste Brenngang tiefer dringt. Grober Sand mit Gras entfernt am Ende Ruß- und Brandgeschmack."
+    },
+    {
+      "id": "mat-04",
+      "name": "5–6 faustgroße trockene Granit- oder Basaltsteine vom Hang (fern vom Wasser) + grüne Y-Astzange",
+      "desc": "Wärmespeichersteine zum Erhitzen des Wassers. Niemals Steine aus Flüssen oder nassem Schlamm verwenden – eingeschlossenes Wasser sprengt sie im Feuer wie Schrapnell!"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Den Stammrand mit feuchtem Lehmwall schützen und nur die Mitte mit Glut und Blasrohr tief einbrennen",
+      "description": "1. **Stamm sicher im Boden fixieren**: Graben Sie die flache Unterseite zwei Finger tief ein oder keilen Sie den Stamm seitlich mit Steinen fest, damit keine Glut herunterrollt.\n2. **Feuchten Lehm-Brandschutzwall anlegen**: Formen Sie aus zähem, feuchtem Lehm einen **zwei Finger breiten (3–4 cm) Ringwall** rund um den oberen Rand der geplanten Öffnung.\n3. **Eichenglut auflegen & senkrecht anblasen**: Legen Sie eine Faust voll [Eichenglut](/protocol-09) aus dem [Feuerbohrer-Feuer](/protocol-02) genau in die Mitte und blasen Sie ruhig durch ein hohles Bambus- oder Schilfrohr direkt auf das Zentrum.",
+      "actionNote": "> Warum der feuchte Lehmwall am Rand unverzichtbar ist: Beim Anblasen breitet sich Strahlungshitze seitlich aus und würde den Schüsselrand verbrennen. Das verdunstende Wasser im Lehm hält die Randtemperatur niedrig und bewahrt 3–4 cm Wandstärke.",
+      "svgFileName": "pr33-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FEUCHTER LEHMWALL + ZENTRALER GLUTABBRAND MIT ROHR",
+        "Rand mit 3-4cm feuchtem Lehm gegen Verbrennen schützen",
+        "Durch hohles Rohr senkrecht in die Mitte blasen",
+        "Stamm fest in Erde/Steinen verkeilen gegen Kippen",
+        "[KERN] Lehmkühlung schützt Wandstärke + höhlt Kern"
+      ],
+      "deepDive": {
+        "badge": "CHARCOAL ABLATION CONTROL",
+        "title": "Verdunstungskühlung der Lehmbarriere und kontrollierte Holzverkohlung (Burn-and-Scrape)",
+        "text": "Hartes Holz allein mit Steinwerkzeugen auszuhöhlen dauert Tage. **Feuchter Lehm** bindet die Hitze am Rand bei 100 °C Verdampfung, während **angeblasene Glut** im Zentrum 700–800 °C erreicht und das Holz in leicht abschabbare Kohle verwandelt.",
+        "fieldSpecs": [
+          {
+            "name": "Trockener Stamm mit schützendem Lehmwall beim zentralen Glutausbrand",
+            "scientificName": "Wet Clay Thermal Barrier & Directed Ember Ablation Log",
+            "categoryTag": "Lehm-Brandschutzwall / Gerichteter Abbrand",
+            "imageFileName": "id-log-clay-dam-ember-burn.jpg",
+            "hudCode": "FIG. TOOLS-33A // MACRO OPTIC",
+            "hudStatus": "RIM PROTECTION: CLAY DAM",
+            "traits": [
+              {
+                "label": "Lehm/Rand",
+                "value": "Oben rundherum **zwei Finger (3–4 cm) feuchten Lehm** dicht auftragen."
+              },
+              {
+                "label": "Rohr/Blasen",
+                "value": "Mit **hohlem Schilfrohr gezielt mittig** in die Glut nach unten brennen."
+              },
+              {
+                "label": "Stand/Sicher",
+                "value": "**Stamm in Erde und Steinen verkeilen**, damit nichts kippt."
+              }
+            ],
+            "fieldUse": "Erster Ausbrandvorgang, der Metallbeitel durch gerichtete Glut ersetzt"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Kohleschicht mit einer Steinklinge ausschaben und 3–4 Mal wiederholen bis zur handspantiefen Schüssel",
+      "description": "1. **Glut beiseiteräumen & schwarze Kohle schaben**: Sobald das Holz ein Fingerglied tief (1,5–2 cm) verkohlt ist, Glut kurz zur Seite legen und mit einer scharfen Steinklinge aus [Steinaxt-Fertigung](/protocol-04) **alle schwarze Kohle bis aufs helle rohe Holz abschaben**.\n2. **3–4 Brennen-und-Schaben-Zyklen**: Glut wieder einfüllen, anblasen und ausschaben 3–4 Mal wiederholen, bis eine Tiefe von **einer vollen Handspanne (15 cm)** erreicht ist.\n3. **3–4 cm Wandstärke prüfen & mit Sand scheuern**: Achten Sie überall auf **zwei Finger (3–4 cm) Holzstärke** in Boden und Wand. Innen mit grobem Sand, Wasser und Gras ausscheuern.",
+      "actionNote": "> Warum jede schwarze Kohleschicht sofort abgekratzt werden muss: Holzkohle leitet Wärme dreimal schlechter als rohes Holz und wirkt wie eine Isolierschicht. Ohne Abkratzen bis zum hellen Holz brennt die Glut nicht tiefer.",
+      "svgFileName": "pr33-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // STEINSCHABER-ZYKLEN BIS 15CM TOPFTIEFE",
+        "Schwarze Isolier-Kohleschicht bis aufs helle Holz schaben",
+        "15cm Tiefe + durchgehend 3-4cm feste Wand & Boden",
+        "Innen mit Sand + Wasser scheuern gegen Brandgeschmack",
+        "[KERN] 3-4 Zyklen ergeben dichten, festen Holzkochtopf"
+      ],
+      "deepDive": {
+        "badge": "BURN-AND-SCRAPE ITERATION",
+        "title": "Entfernung der isolierenden Kohleschicht und Erhalt von 3–4 cm Wanddicke",
+        "text": "Eine dicke **Kohleschicht** isoliert das darunterliegende Holz selbsthemmend. Das Abschaben mit der **Steinklinge** stellt den Hitzefluss wieder her, während **3–4 cm Wandstärke** Risse bei 100 °C Kochen verhindern.",
+        "fieldSpecs": [
+          {
+            "name": "Mit scharfer Quarzit-Steinklinge 15 cm tief ausgeschabter Holztopf",
+            "scientificName": "Repeated Burn-and-Scrape Hardwood Cooking Vessel Cavity",
+            "categoryTag": "Kohleentfernung / 15 cm Topftiefe",
+            "imageFileName": "id-charred-wood-stone-scraper-hollow.jpg",
+            "hudCode": "FIG. TOOLS-33B // MACRO OPTIC",
+            "hudStatus": "WALL THICKNESS: 3-4CM SAFE",
+            "traits": [
+              {
+                "label": "Schaben/Roh",
+                "value": "**Schwarze Kohle komplett abkratzen**, bis wieder helles Holz erscheint."
+              },
+              {
+                "label": "Tiefe/Wand",
+                "value": "**Eine Handspanne (15 cm) tief** bei **3–4 cm Boden- und Wandstärke**."
+              },
+              {
+                "label": "Schliff/Sand",
+                "value": "Innen mit **groben Sand und Gras ausscheuern**, um Ruß zu entfernen."
+              }
+            ],
+            "fieldUse": "Rissfester, wasserdichter 5-Liter-Holztopf für kochendes Wasser"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Keine Flusssteine nehmen! 5–6 trockene Granitsteine vom Hang über 30 Minuten in Glut durchglühen",
+      "description": "1. **Alle Fluss- und Moossteine ausschließen**: Sammeln Sie niemals Steine aus Bächen, feuchtem Schlamm oder bemoostem Boden – innere Porenfeuchte lässt sie im Feuer explodieren.\n2. **5–6 dichte trockene Hang-Granite wählen**: Suchen Sie an einem **sonnigen, trockenen Hang fern vom Wasser 5–6 faustgroße, schwere Granit- oder Basaltsteine** und klopfen Sie sie gegeneinander auf Festigkeit.\n3. **Mindestens 30 Minuten in Glut vorheizen**: Betten Sie die Steine tief in die rote Glut einer [Lehm-Feuerstelle](/protocol-06) oder eines Lagerfeuers für **mindestens 30 Minuten**, bis sie dunkelrot glühen.",
+      "actionNote": "> Warum feuchte Flusssteine im Feuer wie Granaten explodieren: Eingeschlossenes Porenwasser verdampft über 100 °C schlagartig und dehnt sich um das 1.600-Fache aus – rasiermesserscharfe Steinsplitter können Gesicht und Augen zerstören.",
+      "svgFileName": "pr33-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // TROCKENER HANG-GRANIT + 30 MIN DURCHGLÜHEN",
+        "Flusssteine verboten (1.600x Dampfexpansions-Explosion!)",
+        "5-6 dichte trockene Hang-Granite oder Basalte wählen",
+        "30+ Min in roter Glut bis in den Kern durcherhitzen",
+        "[KERN] Rein trockener Hangstein verhindert Splitterexplosion"
+      ],
+      "deepDive": {
+        "badge": "THERMAL SHOCK & STEAM FRACTURE SAFETY",
+        "title": "1.600-fache Porendampf-Sprengung vs. hohe Wärmekapazität trockenen Granits",
+        "text": "Poröser Sandstein und Flussgeröll sprengen durch Dampfdruck (Spalling). Dichter, trockener **Hang-Granit und Basalt** speichern enorm viel Wärme und bleiben bei **400–600 °C Glut** stabil.",
+        "fieldSpecs": [
+          {
+            "name": "Trockene Hang-Granitsteine beim Durchglühen in heißer Lagerfeuerglut",
+            "scientificName": "Dry Hillside Granite Cobbles Preheated in Hardwood Campfire Embers",
+            "categoryTag": "Explosionsschutz / Hochtemperatur-Speicher",
+            "imageFileName": "id-dry-land-granite-hearth-heating.jpg",
+            "hudCode": "FIG. TOOLS-33C // MACRO OPTIC",
+            "hudStatus": "THERMAL LOAD: DRY GRANITE",
+            "traits": [
+              {
+                "label": "Verbot/Fluss",
+                "value": "**Nasse Fluss- oder Moossteine** platzen gefährlich und sind tabu."
+              },
+              {
+                "label": "Wahl/Granit",
+                "value": "**5–6 schwere, trockene Granit- oder Basaltsteine** vom Hang wählen."
+              },
+              {
+                "label": "Glühen/30m",
+                "value": "**30+ Minuten in Glut einbetten**, bis der Kern dunkelrot glüht."
+              }
+            ],
+            "fieldUse": "Sichere Heizsteine zum Abkochen von 2–3 Litern Trinkwasser ohne Bruchgefahr"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Mit grüner Holzzange Asche kurz abspülen und heiße Steine im Wasser wechseln bis 100 °C Sprudel-Kochen",
+      "description": "1. **Topf zu 70 % füllen & Y-Astzange biegen**: Füllen Sie durch den [Kohle-Sand-Wasserfilter](/protocol-01) geklärtes Wasser bis zu **70 % Höhe (zwei Finger unter dem Rand)** ein. Knicken Sie einen frischen, zähen Ast zur Holzzange.\n2. **Asche <1 Sek. abstreifen & sanft eintauchen**: Greifen Sie einen glühenden Stein, streifen Sie ihn **unter 1 Sekunde an nassem Gras oder Restwasser** ab, um nur weiße Asche zu lösen, und senken Sie ihn seitlich stehend sanft bis auf den Topfboden ab.\n3. **Steine wechseln für volles 100-°C-Kochen**: Lässt das Sprudeln nach, kalten Stein zurück in die Glut legen und nächsten heißen Stein (2–3 Stück) eintauchen, bis alles **über 1 Minute bei 100 °C sprudelnd kocht** und Durchfallerreger sicher abgetötet sind.",
+      "actionNote": "> Warum man heiße Steine niemals ins Wasser fallen lassen darf: Hineinwerfen spritzt 100 °C heißes Wasser auf Haut und Augen und kann den Holzboden sprengen. Zange erst lösen, wenn der Stein sanft auf dem Boden ruht.",
+      "svgFileName": "pr33-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // GRÜNE HOLZZANGE + ASCHESPÜLEN + 100C KOCHEN",
+        "Nur zu 70% füllen für Steinvolumen und Kochsprudel",
+        "<1s an nassem Gras/Restwasser abwischen gegen Asche",
+        "Sanft mit Holzzange absenken + wechseln für 100C",
+        "[KERN] Entkeimt Trinkwasser bei 100C ohne Topfbrand"
+      ],
+      "deepDive": {
+        "badge": "STONE BOILING THERMODYNAMICS",
+        "title": "Direkte Konvektion durch Tauchsteine bis zur 100-°C-Abkochentkeimung",
+        "text": "Ein **500-°C-Granitstein (400–500 g)** überträgt per Film- und Blasensieden sofort über 150 kJ pro Liter. Mit 2–3 Steinen im Wechsel erreicht das Wasser **100 °C** – Keime sterben ab und es gelingt sogar Brühe mit [Geräuchertem Eichen-Trockenfleisch](/protocol-19).",
+        "fieldSpecs": [
+          {
+            "name": "Grüne Astzange senkt glühenden Granitstein in den kochenden 100-°C-Holztopf",
+            "scientificName": "Green Wood Tongs & Submerged Heated Granite Stone Boiling",
+            "categoryTag": "Asche-Kurzwäsche / 100-°C-Abkochen",
+            "imageFileName": "id-stone-boiling-wood-tongs-pot.jpg",
+            "hudCode": "FIG. TOOLS-33D // MACRO OPTIC",
+            "hudStatus": "BOIL TEMP: 100°C REACHED",
+            "traits": [
+              {
+                "label": "Füllung/70%",
+                "value": "Nur bis **70 % Höhe füllen**, damit das Wasser beim Einsetzen nicht überläuft."
+              },
+              {
+                "label": "Abspülen/1s",
+                "value": "**Unter 1 Sekunde in Gras/Nebenwasser tauchen**, um Lauge/Asche zu vermeiden."
+              },
+              {
+                "label": "Wechsel/100C",
+                "value": "**2–3 glühende Steine nacheinander einsetzen** für echtes 100-°C-Sprudeln."
+              }
+            ],
+            "fieldUse": "Sicheres Abkochen von 2–3 Litern Wasser auf 100 °C und Suppenkochen ohne Metalltopf"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Nasse Flusssteine im Feuer (Splitterexplosion!) und zu dünn geschnittene Holzwände, die unter Hitze reißen",
+    "description": "Steine aus Flüssen oder feuchter Erde bergen Porenwasser, das in der Glut schlagartig zu 1.600-fachem Dampf explodiert und scharfe Splitter in Augen und Gesicht schleudert. Zu dünn (<1 Finger) ausgeschabte Holztopfwände spalten durch den Temperaturschock vertikal auf und kosten den gesamten Wasservorrat. Bei Durchfall durch verunreinigtes Wasser sofort mit [Oraler Rehydratationslösung (ORS)](/protocol-24) ausgleichen.",
+    "consequence": "Erblindung oder schwere Splitterverletzungen sowie Totalverlust des keimfreien Trinkwassers."
+  },
+  "faqs": [
+    {
+      "question": "Wird das Wasser durch heiße Lagerfeuersteine nicht graue Aschenlauge oder schmeckt extrem verbrannt?",
+      "causeDiagnostic": "Anhaftende weiße Holzasche bildet Lauge und loser Ruß im Topf färbt das Wasser dunkel.",
+      "resolution": "Scheuern Sie den Topf am Ende von Schritt 2 gründlich mit grobem Sand und Wasser aus und **streifen Sie jeden heißen Stein vor dem Einsetzen unter 1 Sekunde in einer Nebenpfütze oder nassem Gras ab**: Der Blitzdampf spült jede Asche weg, während der Kern für klares 100-°C-Wasser glühend heiß bleibt."
+    },
+    {
+      "question": "Kann man Kochsteine bei Zeitmangel auf der Flucht auch in einer ausgelegten Erdgrube nutzen?",
+      "causeDiagnostic": "Fehlen 2–3 Stunden Zeit zum Ausbrennen eines Stammes, hilft eine ausgekleidete Grube.",
+      "resolution": "Ja! Graben Sie eine flache Mulde in festen Boden, legen Sie [Mit Eichenrinde gegerbtes Leder](/protocol-17) oder eine saubere wasserdichte Plane straff hinein (Ränder mit Steinen beschweren), zu 70 % füllen und mit den trockenen Granitsteinen aus Schritt 3–4 in 10 Minuten abkochen."
+    }
+  ],
+  "outcome": {
+    "title": "Ausgebrannter 5L-Holztopf mit Lehm-Brandschutzwall & 100-°C-Kochsteinsystem aus trockenem Hang-Granit",
+    "badge": "TARGET OUTCOME // 100-°C-KOCHSTEIN-HOLZTOPFSYSTEM",
+    "description": "Ein metallfreies Feldkonzept: Feuchter Lehm schützt den Stammrand beim zentralen Ausblasen der Eichenglut, 3–4 Steinschabe-Zyklen schaffen 3–4 cm starke Wände (15 cm tief), und 30 Minuten vorgeglühter trockener Hang-Granit kocht Wasser mit grüner Holzzange in 3 Minuten ohne Topfschaden bei 100 °C ab.",
+    "svgFileName": "pr33-outcome.svg",
+    "svgLabels": [
+      "PR-33 COMPLETE // HOLZ-GLUTTOPF & 100C KOCHSTEINE",
+      "STUFE 01: LEHMWALL & GLUT",
+      "3-4cm feuchter Lehm + Blasrohr",
+      "STUFE 02: STEINSCHABER-ZYKLEN",
+      "3-4x Kohle schaben bis 15cm tief",
+      "STUFE 03: HANG-GRANIT 30MIN",
+      "Kein Flussstein! Trockener Hang",
+      "STUFE 04: 100C ZANGEN-KOCHEN",
+      "1s Asche ab + Steine wechseln",
+      "[PRINZIP] Lehmwall formt dichten Holztopf + trockener Granit liefert sicheres 100C Kochen"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Kein Topf und keine Dose, aber schmutziges Wasser muss auf 100 °C kochen? Brenne dir einen Holztopf aus und koche mit glühenden Steinen!",
+    "body": "Stellst du Holz direkt aufs Feuer, brennt der Boden durch. Erstens: Lege einen feuchten Lehmwall um den Rand eines trockenen Stammes, gib Glut in die Mitte und blase durch ein hohles Schilfrohr senkrecht nach unten. Zweitens: Kratze die schwarze Kohle mit einer Steinklinge aus und wiederhole das drei- bis viermal bis ein tiefer Holztopf entsteht. Drittens: Nimm niemals nasse Flusssteine – sie explodieren im Feuer wie Granaten! Wähle trockenen Hang-Granit und glühe ihn 30 Minuten in Glut. Viertens: Greife ihn mit einer Astzange, streife kurz Asche ab und wechsle die Steine im Wasser bis 100 °C in 3 Minuten!"
+  },
+  "createdAt": "2026-11-17T05:55:43.049Z",
+  "contentHash": "deeb9b7d12b5c10f"
+}

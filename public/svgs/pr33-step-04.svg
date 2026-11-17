@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg33s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="woodWall33s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b4834e"/>
+      <stop offset="100%" stop-color="#785028"/>
+    </linearGradient>
+    <linearGradient id="water33s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.88"/>
+    </linearGradient>
+    <radialGradient id="subStone33s4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="55%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </radialGradient>
+    <pattern id="grid33s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow33s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg33s4)"/>
+  <rect width="400" height="400" fill="url(#grid33s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1: Header -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 04 // 생나무 집게로 재 털기 및 달군 돌 교대 투입 100℃ 끓이기</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9.5">그릇 용량의 70%만 물을 채워 끓어 넘침·화상 공간 확보</text>
+
+  <!-- Main Illustration: Wood Burn Bowl filled 70% with Boiling Water + Green Wood Fork Tongs Lowering Hot Stone -->
+  <g filter="url(#shadow33s4)">
+    <!-- Wood Bowl Outer Bark & Solid Wood Cross-Section -->
+    <rect x="82" y="168" width="236" height="114" rx="14" fill="#3f2718" stroke="#6b4423" stroke-width="2.5"/>
+    <rect x="92" y="168" width="216" height="106" rx="9" fill="url(#woodWall33s4)" stroke="#a16207" stroke-width="1.5"/>
+
+    <!-- Bowl Cavity (Top rim at y=168, bottom at y=250) -->
+    <path d="M 122 168 L 126 238 Q 128 252 200 252 Q 272 252 274 238 L 278 168 Z" fill="#141416"/>
+
+    <!-- Water Filled to ~70% Height (y=194 to y=252) -->
+    <path d="M 124 194 L 126 238 Q 128 252 200 252 Q 272 252 274 238 L 276 194 Z" fill="url(#water33s4)"/>
+    <!-- Boiling Water Surface Bubbles -->
+    <circle cx="152" cy="196" r="4" fill="#bae6fd" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="176" cy="212" r="5" fill="#e0f2fe" opacity="0.8"/>
+    <circle cx="222" cy="206" r="4.5" fill="#e0f2fe" opacity="0.8"/>
+    <circle cx="246" cy="196" r="4" fill="#bae6fd" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="198" cy="216" r="3" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Submerged Heated Granite Stone inside bowl -->
+    <ellipse cx="200" cy="228" rx="22" ry="14" fill="url(#subStone33s4)" stroke="#fde68a" stroke-width="1.5"/>
+
+    <!-- Green Forked Branch Tongs Holding Second Red-Hot Granite Stone Being Lowered Gently -->
+    <path d="M 208 168 L 288 86 L 218 176" fill="none" stroke="#65a30d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 184 166 L 288 86" fill="none" stroke="#84cc16" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Lowering stone gripped by tongs just above water -->
+    <ellipse cx="198" cy="168" rx="16" ry="11" fill="url(#subStone33s4)" stroke="#fef08a" stroke-width="1.5"/>
+
+    <!-- Downward gentle placement vector arrow -->
+    <line x1="168" y1="138" x2="168" y2="178" stroke="#4ade80" stroke-width="2"/>
+    <polygon points="168,182 163,174 173,174" fill="#4ade80"/>
+
+    <!-- Rising White Steam Plumes -->
+    <path d="M 148 162 Q 140 140 152 118 Q 162 100 150 84" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="4 3" opacity="0.85"/>
+    <path d="M 196 142 Q 204 120 192 98" fill="none" stroke="#f8fafc" stroke-width="2.2" stroke-dasharray="4 3" opacity="0.9"/>
+    <path d="M 244 160 Q 252 138 242 116" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 3" opacity="0.8"/>
+
+    <!-- 70% Fill Indicator Tick on Left -->
+    <line x1="70" y1="168" x2="70" y2="194" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="64" y1="194" x2="86" y2="194" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="3 2"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">젖은 풀·물에 1초 스쳐 돌 표면의 하얀 나무재만 살짝 제거</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e293b" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="344" fill="#bae6fd" font-family="monospace" font-size="9">생나무 집게로 천천히 투입 후 식은 돌과 교대해 100℃ 달성</text>
+
+  <!-- Label 5: Core -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 그릇 바닥을 태우지 않고 3분 내 100℃ 식수 살균·조리 완수</text>
+</svg>

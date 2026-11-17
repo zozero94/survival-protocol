@@ -1,0 +1,253 @@
+{
+  "protocolId": "PR-33",
+  "category": "TOOLS",
+  "title": "Como Fazer uma Panela de Madeira Cavada com Brasas e Ferver Água a 100°C Usando Pedras Quentes sem Recipiente Metálico",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[FABRICAÇÃO DE PANELA DE MADEIRA EM CAMPO E ESTERILIZAÇÃO POR FERVURA COM PEDRAS A 100°C]",
+  "summary": "Se você tiver uma panela de metal, marmita ou caneca térmica em casa ou no kit de emergência, use sempre esses utensílios comerciais diretamente no fogo primeiro para ferver água de forma mais rápida e segura. Porém, em fugas ou isolamento na natureza sem nenhum recipiente resistente ao calor, beber água contaminada causa diarreia e desidratação fatal em três dias. Colocar uma tigela de madeira direto nas chamas queima o fundo. Mas se você cercar a borda superior de um tronco seco com barreira de barro úmido, queimar só o centro com brasas da [Carvoaria Primitiva](/protocol-09) e raspar o carvão três ou quatro vezes com uma lâmina do [Machado de Pedra](/protocol-04), você esculpe uma panela de madeira de 5 litros. Depois, aquecendo pedras secas de granito de morro nas brasas por 30 minutos e mergulhando-as na água com pinça de galho verde, a água ferve a 100°C em 3 minutos sem queimar a madeira.",
+  "timeRequired": "2–3 horas para cavar a panela de madeira (10–15 minutos por sessão de fervura depois)",
+  "successRate": "95% (mantendo paredes de 3–4 cm e escolhendo apenas granito seco de morro)",
+  "difficulty": "Iniciante-Intermediário (Zero ferramentas de metal; usa tronco seco, barro úmido, brasas, lâmina de pedra, pedras secas e pinça de galho verde)",
+  "outputPerHour": "Uma panela de madeira de 25 cm × 15 cm de fundo ferve 2–3 litros de água potável a 100°C por vez",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Um Tronco Seco e Maciço de Dois Palmos (35–40 cm de Comprimento e >30 cm de Largura: Pinheiro, Carvalho ou Bordo)",
+      "desc": "Forma o corpo da panela de madeira. Evite troncos podres ou com rachaduras verticais que vazem; escolha madeira firme com casca íntegra e nivele a base para ficar estável no chão."
+    },
+    {
+      "id": "mat-02",
+      "name": "Dois Punhados de Barro Úmido + Uma Pá de Brasas de Carvalho + Um Tubo Oco de Taboa ou Bambu para Soprar",
+      "desc": "O barro úmido moldado na borda age como corta-fogo resfriado por evaporação. As brasas e o tubo direcionam o calor verticalmente para o miolo do tronco."
+    },
+    {
+      "id": "mat-03",
+      "name": "Uma Lasca de Pedra Plana e Afiada do Tamanho da Palma + Um Punhado de Areia Grossa e Capim Seco",
+      "desc": "Serve como raspador para remover a camada carbonizada para o fogo continuar cavando fundo. A areia grossa com capim limpa a fuligem antes do primeiro uso."
+    },
+    {
+      "id": "mat-04",
+      "name": "5–6 Pedras de Granito ou Basalto Secas de Morro (Longe da Água, Tamanho Punho) + Pinça em Y de Galho Verde",
+      "desc": "Pedras que levam calor até a água. Nunca pegue pedras de dentro de rios ou lama úmida — a água presa nos poros vira vapor e explode como estilhaços. Escolha só rochas secas de lugar alto."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Cercar a Borda do Tronco com Dique de Barro Úmido e Queimar Só o Centro com Brasas e Tubo Soprador",
+      "description": "1. **Firmar o Tronco no Chão**: Enterre levemente o fundo chato do tronco na terra ou calce com pedras dos dois lados para as brasas não tombarem.\n2. **Fazer Barreira de Barro Úmido**: Molde um anel de barro úmido com **dois dedos de largura (3–4 cm)** em toda a borda superior externa, protegendo a parede da futura panela.\n3. **Colocar Brasas de Carvalho e Soprar**: Ponha um punhado de brasas de [Carvão de Carvalho](/protocol-09) acesas com [Fogo por Fricção](/protocol-02) bem no centro e sopre suave e continuamente por um tubo de bambu ou taboa para queimar reto para baixo.",
+      "actionNote": "> Por que o dique de barro úmido na borda é obrigatório: Ao soprar as brasas, o calor se espalha para os lados e queimaria a borda da tigela. A umidade evaporando do barro mantém a borda fria e preserva paredes firmes de 3–4 cm.",
+      "svgFileName": "pr33-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // DIQUE DE BARRO ÚMIDO + QUEIMA CENTRAL COM TUBO",
+        "Cobrir borda com 3-4cm de barro úmido contra queima",
+        "Soprar por tubo oco para queimar reto no centro",
+        "Firmar tronco na terra e pedras sem tombar brasas",
+        "[NÚCLEO] Barro úmido salva paredes e escava o miolo"
+      ],
+      "deepDive": {
+        "badge": "CHARCOAL ABLATION CONTROL",
+        "title": "Resfriamento Evaporativo do Dique de Argila e Ablação Direcionada de Madeira",
+        "text": "Escavar madeira seca dura só com lascas de pedra levaria dias. O **barro úmido** limita a temperatura da borda a 100°C pela evaporação, enquanto **brasas sopradas** levam o centro a 700–800°C transformando a fibra em carvão fácil de raspar.",
+        "fieldSpecs": [
+          {
+            "name": "Tronco Seco Protegido por Dique de Barro Úmido Durante a Queima Central com Brasas",
+            "scientificName": "Wet Clay Thermal Barrier & Directed Ember Ablation Log",
+            "categoryTag": "Barreira de Barro / Queima Central",
+            "imageFileName": "id-log-clay-dam-ember-burn.jpg",
+            "hudCode": "FIG. TOOLS-33A // MACRO OPTIC",
+            "hudStatus": "RIM PROTECTION: CLAY DAM",
+            "traits": [
+              {
+                "label": "Barro/Borda",
+                "value": "Aplique **dois dedos (3–4 cm) de barro úmido** em toda a borda superior."
+              },
+              {
+                "label": "Tubo/Sopro",
+                "value": "**Aponte um tubo de bambu oco** no centro das brasas para furar fundo."
+              },
+              {
+                "label": "Base/Firme",
+                "value": "**Calce o tronco na terra com pedras** para evitar queda de brasas."
+              }
+            ],
+            "fieldUse": "Escavação inicial por fogo controlado substituindo formões e goivas de metal"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Raspar o Carvão com Lâmina de Pedra e Repetir 3–4 Vezes Até Formar uma Panela de Um Palmo de Fundo",
+      "description": "1. **Afastar Brasas e Raspar o Carvão Preto**: Quando queimar um nó de dedo de fundo (1,5–2 cm), afaste as brasas e use uma lasca afiada do [Machado de Pedra](/protocol-04) para **raspar todo o carvão preto até aparecer madeira clara**.\n2. **Repetir 3–4 Ciclos de Queima e Raspagem**: Repita queimar e raspar 3 a 4 vezes até atingir **um palmo adulto (15 cm)** de profundidade.\n3. **Conferir Parede de 3–4 cm e Polir com Areia**: Mantenha **dois dedos (3–4 cm) de madeira maciça** nas paredes e fundo para não rachar. Esfregue o interior com areia grossa, água e capim seco.",
+      "actionNote": "> Por que raspar todo o carvão preto a cada etapa é essencial: A camada de carvão conduz menos de um terço do calor da madeira crua, bloqueando a queima se você não expuser a madeira clara abaixo.",
+      "svgFileName": "pr33-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // CICLOS DE RASPAGEM A PEDRA ATÉ 15CM DE FUNDO",
+        "Raspar carvão isolante até expor madeira clara crua",
+        "Obter 15cm de profundidade + paredes e fundo de 3-4cm",
+        "Esfregar com areia + água para tirar gosto queimado",
+        "[NÚCLEO] 3-4 ciclos formam panela de madeira sem vazamento"
+      ],
+      "deepDive": {
+        "badge": "BURN-AND-SCRAPE ITERATION",
+        "title": "Remoção da Camada Isolante de Carvão e Preservação de Paredes de 3–4 cm",
+        "text": "Uma crosta espessa de **carvão** isola a madeira abaixo dela. Raspar com a **lâmina de pedra** reativa a pirólise a cada ciclo, e manter **3–4 cm de espessura** evita rachaduras térmicas na fervura a 100°C.",
+        "fieldSpecs": [
+          {
+            "name": "Panela de Madeira de 15 cm Cavada e Raspada com Lâmina Afiada de Quartzito",
+            "scientificName": "Repeated Burn-and-Scrape Hardwood Cooking Vessel Cavity",
+            "categoryTag": "Remoção de Carvão / Cavidade de 15 cm",
+            "imageFileName": "id-charred-wood-stone-scraper-hollow.jpg",
+            "hudCode": "FIG. TOOLS-33B // MACRO OPTIC",
+            "hudStatus": "WALL THICKNESS: 3-4CM SAFE",
+            "traits": [
+              {
+                "label": "Raspar/Crua",
+                "value": "**Raspe todo o carvão preto** com a pedra até surgir a madeira clara."
+              },
+              {
+                "label": "Fundo/Parede",
+                "value": "Deixe **um palmo (15 cm) fundo** com **3–4 cm de madeira** em volta."
+              },
+              {
+                "label": "Limpeza/Areia",
+                "value": "**Esfregue com areia grossa e capim** para eliminar cheiro de fuligem."
+              }
+            ],
+            "fieldUse": "Vasilha primitiva de 5 litros estanque e resistente ao calor de água fervente"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Evitar Pedras de Rio e Aquecer 5–6 Granitos Secos de Morro na Brasa por Mais de 30 Minutos",
+      "description": "1. **Rejeitar Pedras Molhadas ou de Rio**: Jamais use pedras de dentro de rios, lama ou com musgo — a umidade presa nos poros vira vapor explosivo no fogo.\n2. **Escolher 5–6 Granitos ou Basaltos Secos de Morro**: Pegue em **encostas altas e secas 5 ou 6 pedras densas tamanho punho**, batendo de leve uma na outra para ver se não esfarelam.\n3. **Enterrar em Brasas Vivas por 30+ Minutos**: Enterre-as nas brasas de um [Fogão de Barro](/protocol-06) ou fogueira por **no mínimo 30 minutos** até ficarem vermelho-escuras cobertas de cinza branca.",
+      "actionNote": "> Por que pedras de rio explodem como granadas na fogueira: A água microscópica interna ferve e se expande 1.600 vezes instantaneamente como vapor, arremessando estilhaços cortantes no rosto e nos olhos.",
+      "svgFileName": "pr33-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // GRANITO SECO DE MORRO + AQUECIMENTO 30MIN",
+        "Proibido pedra de rio (explosão por vapor 1.600x!)",
+        "Pegar 5-6 granitos ou basaltos secos tamanho punho",
+        "Enterrar 30+ min nas brasas para aquecer até o núcleo",
+        "[NÚCLEO] Pedra seca de morro elimina risco de explosão"
+      ],
+      "deepDive": {
+        "badge": "THERMAL SHOCK & STEAM FRACTURE SAFETY",
+        "title": "Explosão de Vapor em Poros 1.600x vs Alta Capacidade Térmica do Granito Seco",
+        "text": "Arenito poroso e seixos de rio retêm água que estoura ao aquecer. **Granito e basalto secos de morro** suportam **400–600°C** de forma estável após 30 minutos de aquecimento gradual.",
+        "fieldSpecs": [
+          {
+            "name": "Seixos Secos de Granito Pré-Aquecidos ao Rubro Dentro das Brasas da Fogueira",
+            "scientificName": "Dry Hillside Granite Cobbles Preheated in Hardwood Campfire Embers",
+            "categoryTag": "Prevenção de Estilhaços / Carga Térmica",
+            "imageFileName": "id-dry-land-granite-hearth-heating.jpg",
+            "hudCode": "FIG. TOOLS-33C // MACRO OPTIC",
+            "hudStatus": "THERMAL LOAD: DRY GRANITE",
+            "traits": [
+              {
+                "label": "Proibido/Rio",
+                "value": "**Pedras molhadas de rio ou musgo** estouram no fogo e são proibidas."
+              },
+              {
+                "label": "Usar/Granito",
+                "value": "Pegue **5–6 pedras pesadas de granito ou basalto secos** de morro alto."
+              },
+              {
+                "label": "Fogo/30Min",
+                "value": "**Deixe 30+ minutos na brasa** até o miolo atingir calor intenso."
+              }
+            ],
+            "fieldUse": "Massa térmica segura para ferver 2–3 litros de água sem perigo de estilhaços"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Tirar a Cinza com Pinça de Galho Verde e Alternar Pedras na Água Até Ferver a 100°C",
+      "description": "1. **Encher 70% da Panela e Fazer Pinça Verde**: Encha a panela de madeira com água do [Filtro de Carvão e Areia](/protocol-01) até **70% da altura (dois dedos abaixo da borda)**. Dobre ao meio um galho verde resistente formando uma pinça em Y.\n2. **Lavar Cinza em <1s e Descer Devagar**: Pegue uma pedra quente na pinça, **encoste por menos de 1 segundo em poça aparte ou capim molhado** para tirar só a cinza branca, e desça devagar até o fundo.\n3. **Revezar Pedras Até Fervura Forte a 100°C**: Quando parar de borbulhar, volte a pedra para a brasa e coloque outra quente (2–3 no total) mantendo **fervura a 100°C por mais de 1 minuto** para eliminar micróbios de diarreia.",
+      "actionNote": "> Por que nunca jogar a pedra quente de cima na água: Largar de alto espirra água a 100°C queimando pele e olhos e pode rachar o fundo da madeira. Segure a pinça até a pedra encostar suave no fundo.",
+      "svgFileName": "pr33-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // PINÇA VERDE LIMPA-CINZA + FERVURA A 100C",
+        "Encher só até 70% evitando transbordar e respingos",
+        "Passar em capim úmido <1s para lavar cinza superficial",
+        "Descer suave com pinça verde e revezar até 100C",
+        "[NÚCLEO] Ferve água a 100C sem queimar a madeira"
+      ],
+      "deepDive": {
+        "badge": "STONE BOILING THERMODYNAMICS",
+        "title": "Convecção Térmica por Imersão Direta até Esterilização a 100°C",
+        "text": "Uma pedra de **granito a 500°C (400–500 g)** transfere mais de 150 kJ por litro na água instantaneamente. Alternando 2–3 pedras a água chega a **100°C**, matando bactérias e permitindo até cozinhar caldo com [Carne Defumada em Carvalho](/protocol-19).",
+        "fieldSpecs": [
+          {
+            "name": "Pinça de Galho Verde Mergulhando Granito Quente em Panela de Madeira Fervendo a 100°C",
+            "scientificName": "Green Wood Tongs & Submerged Heated Granite Stone Boiling",
+            "categoryTag": "Lavagem de Cinza / Esterilização a 100°C",
+            "imageFileName": "id-stone-boiling-wood-tongs-pot.jpg",
+            "hudCode": "FIG. TOOLS-33D // MACRO OPTIC",
+            "hudStatus": "BOIL TEMP: 100°C REACHED",
+            "traits": [
+              {
+                "label": "Encher/70%",
+                "value": "Mantenha em **70% da altura** dando folga para o volume das pedras."
+              },
+              {
+                "label": "Lavagem/1s",
+                "value": "**Encoste <1 segundo em água aparte ou capim úmido** evitando água com cinza."
+              },
+              {
+                "label": "Troca/100C",
+                "value": "**Alterne 2–3 pedras quentes** na água até manter fervura total a 100°C."
+              }
+            ],
+            "fieldUse": "Esterilizar 2–3 litros de água a 100°C e cozinhar caldos sem panelas de metal"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Aquecer Pedras Molhadas de Rio (Explosão de Estilhaços) e Deixar Paredes Finas Demais que Racham",
+    "description": "Pedras de rio ou solo úmido guardam água nos poros que na brasa expande 1.600 vezes em vapor explosivo, lançando estilhaços nos olhos e rosto. Já raspar a madeira a menos de um dedo de espessura causa rachadura súbita pelo choque térmico, perdendo toda a água. Em caso de diarreia ou vômito por água suja, hidrate imediatamente com [Solução de Reidratação Oral (ORS)](/protocol-24).",
+    "consequence": "Cegueira ou ferimentos graves por estilhaços de pedra e perda total da água potável segura."
+  },
+  "faqs": [
+    {
+      "question": "As pedras quentes não deixam a água cinza alcalina (decoada) ou com gosto forte de queimado?",
+      "causeDiagnostic": "Cinza presa na rocha dissolve álcali e fuligem solta dentro da tigela escurece a água.",
+      "resolution": "Esfregue bem o interior da tigela com areia grossa e água ao fim do Passo 2 e sempre **passe cada pedra quente por menos de 1 segundo em poça aparte ou capim molhado** antes de pôr na panela: o vapor limpa toda a cinza mantendo o miolo quente para ferver água limpa a 100°C."
+    },
+    {
+      "question": "Posso ferver água com pedras quentes num buraco no chão forrado com couro se não tiver 2–3 horas para cavar o tronco?",
+      "causeDiagnostic": "Em deslocamentos rápidos sem tempo para queimar e raspar um tronco, uma cova forrada resolve rápido.",
+      "resolution": "Sim! Cave uma bacia rasa em terra firme, forre esticado com [Couro Curtido em Casca de Carvalho](/protocol-17) ou lona limpa presa por pedras na borda, encha 70% com água e faça os Passos 3–4 com granito seco em 10 minutos."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Completo de Panela de Madeira com Barreira de Barro (5L) e Fervura a 100°C com Granito Seco",
+    "badge": "TARGET OUTCOME // SISTEMA PANELA DE MADEIRA E FERVURA A 100°C",
+    "description": "Sistema sem metal que protege a borda do tronco com barro úmido enquanto brasas sopradas por tubo escavam o centro e lascas raspam 3–4 ciclos gerando paredes de 3–4 cm e 15 cm de fundo; depois alterna granitos secos pré-aquecidos 30 min com pinça verde alcançando 100°C em 3 minutos.",
+    "svgFileName": "pr33-outcome.svg",
+    "svgLabels": [
+      "PR-33 COMPLETO // PANELA DE MADEIRA E FERVURA A 100C",
+      "ETAPA 01: BARREIRA BARRO",
+      "Borda 3-4cm barro + brasas tubo",
+      "ETAPA 02: CICLOS COM LASCA",
+      "Raspar 3-4x até 15cm de fundo",
+      "ETAPA 03: GRANITO SECO 30MIN",
+      "Sem pedra de rio! Rocha morro",
+      "ETAPA 04: FERVURA 100C PINÇA",
+      "Lavar cinza 1s + alternar pedras",
+      "[PRINCÍPIO] Barreira de argila molda panela estanque e granito seco ferve seguro a 100C"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Sem panela nem lata de metal, mas precisa ferver água suja a 100°C para sobreviver? Cave uma panela na madeira com fogo e ferva usando pedras em brasa!",
+    "body": "Colocar madeira direto no fogo fura o fundo. Primeiro, faça um anel de barro úmido na borda de um tronco seco para proteger, ponha brasas no centro e sopre por um bambu oco. Segundo, raspe o carvão preto com uma pedra afiada e repita três a quatro vezes até abrir uma panela funda. Terceiro, nunca aqueça pedras de rio — elas explodem na fogueira! Escolha granito seco de morro alto e asse na brasa por 30 minutos. Quarto, pegue com pinça de galho verde, passe rápido na erva úmida e alterne na água até ferver a 100°C em 3 minutos!"
+  },
+  "createdAt": "2026-11-17T05:55:43.049Z",
+  "contentHash": "deeb9b7d12b5c10f"
+}
