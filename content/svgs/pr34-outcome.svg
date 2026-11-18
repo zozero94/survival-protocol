@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg34out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="water34out" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.88"/>
+    </linearGradient>
+    <radialGradient id="glow34out" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid34out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow34out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg34out)"/>
+  <rect width="800" height="450" fill="url(#grid34out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Label 1 -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="11.5" font-weight="bold">PR-34 완성체 // 투명 1.5L 물 프리즘 55W 무전력 태양광 채광등</text>
+
+  <!-- 4 Horizontal Stage Cards -->
+  <g filter="url(#shadow34out)">
+    <!-- STAGE 01 -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="34" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 상표 제거 &amp; 1/3 연마</text>
+
+    <rect x="97" y="130" width="24" height="10" rx="2" fill="#0284c7" stroke="#bae6fd"/>
+    <path d="M 99 140 L 99 148 Q 78 158 76 176 L 76 266 Q 76 276 86 276 L 132 276 Q 142 276 142 266 L 142 176 Q 140 158 119 148 L 119 140 Z" fill="#38bdf8" fill-opacity="0.25" stroke="#bae6fd" stroke-width="1.8"/>
+    <rect x="76" y="168" width="66" height="18" fill="#cbd5e1" fill-opacity="0.45" stroke="#f59e0b" stroke-dasharray="3 2"/>
+    <polygon points="146,164 170,158 176,178 154,186" fill="#57534e" stroke="#a8a29e"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="34" y="341" fill="#94a3b8" font-family="monospace" font-size="8">투명 몸체 보호 + 고정 띠만 거칠게</text>
+
+    <!-- STAGE 02 -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#0284c7" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="228" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 맑은 물 &amp; 표백제 3방울</text>
+
+    <path d="M 293 152 L 293 160 Q 272 170 270 188 L 270 266 Q 270 276 280 276 L 326 276 Q 336 276 336 266 L 336 188 Q 334 170 313 160 L 313 152 Z" fill="url(#water34out)" stroke="#bae6fd" stroke-width="1.8"/>
+    <circle cx="303" cy="134" r="3" fill="#fef08a"/>
+    <circle cx="303" cy="144" r="3" fill="#fef08a"/>
+    <circle cx="303" cy="154" r="3" fill="#fef08a"/>
+    <line x1="280" y1="188" x2="280" y2="266" stroke="#ffffff" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="228" y="341" fill="#94a3b8" font-family="monospace" font-size="8">목 끝까지 만수 + 녹조 영구 억제</text>
+
+    <!-- STAGE 03 -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="422" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 판자 1:2 수직 끼움</text>
+
+    <rect x="426" y="176" width="44" height="10" fill="#785028" stroke="#b4834e"/>
+    <rect x="524" y="176" width="44" height="10" fill="#785028" stroke="#b4834e"/>
+    <rect x="487" y="138" width="20" height="8" rx="2" fill="#0284c7" stroke="#bae6fd"/>
+    <path d="M 489 146 L 489 154 Q 470 162 468 178 L 468 264 Q 468 274 478 274 L 516 274 Q 526 274 526 264 L 526 178 Q 524 162 505 154 L 505 146 Z" fill="url(#water34out)" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="454" y1="146" x2="454" y2="176" stroke="#fde047" stroke-width="2"/>
+    <line x1="454" y1="186" x2="454" y2="274" stroke="#38bdf8" stroke-width="2"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="422" y="341" fill="#94a3b8" font-family="monospace" font-size="8">바깥 1/3 집광 + 실내 2/3 360도 발광</text>
+
+    <!-- STAGE 04 -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="616" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 방수 밀봉 &amp; 은박 증폭</text>
+
+    <circle cx="691" cy="222" r="56" fill="url(#glow34out)"/>
+    <rect x="620" y="176" width="44" height="10" fill="#785028" stroke="#b4834e"/>
+    <rect x="718" y="176" width="44" height="10" fill="#785028" stroke="#b4834e"/>
+    <polygon points="652,176 664,176 664,166" fill="#b45309" stroke="#f59e0b"/>
+    <polygon points="730,176 718,176 718,166" fill="#b45309" stroke="#f59e0b"/>
+    <path d="M 681 146 L 681 154 Q 664 162 662 178 L 662 246 Q 662 256 672 256 L 710 256 Q 720 256 720 246 L 720 178 Q 718 162 701 154 L 701 146 Z" fill="#fef9c3" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="664" y1="226" x2="626" y2="262" stroke="#fde047" stroke-width="2"/>
+    <line x1="691" y1="256" x2="691" y2="278" stroke="#fde047" stroke-width="2"/>
+    <line x1="718" y1="226" x2="756" y2="262" stroke="#fde047" stroke-width="2"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="616" y="341" fill="#94a3b8" font-family="monospace" font-size="8">틈새 빗물 차단 + 하향 55W 자연광</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[공학 원리] 물 프리즘의 전방향 굴절로 전기·불꽃 없이 낮 시간 55W급 실내 조명 지속 공급</text>
+</svg>

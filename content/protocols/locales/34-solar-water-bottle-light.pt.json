@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-34",
+  "category": "SHELTER",
+  "title": "Como Fazer uma Claraboia Solar de 55W com Garrafa PET de 1,5L, Água e 3 Gotas de Água Sanitária sem Eletricidade",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ILUMINAÇÃO DIURNA POR PRISMA SOLAR DE ÁGUA SEM ENERGIA EQUIVALENTE A 55W]",
+  "summary": "Se sua casa ou mochila de emergência tiver lanternas LED recarregáveis, luminárias solares ou faróis a bateria, use esses itens prontos primeiro. Porém, quando um apagão prolongado esgota baterias e a [Proteção de Janelas contra Estilhaços](/protocol-31) ou tábuas deixam o cômodo escuro mesmo de dia, queimar velas ou um [Aquecedor de Lata com Óleo](/protocol-21) durante o dia desperdiça combustível da noite e aumenta o risco de incêndio e monóxido de carbono. Enchendo uma garrafa PET incolor de 1,5L com água limpa e 3 gotas de água sanitária sem perfume (ou meia colher de sal grosso) contra algas, e vedando-a na vertical numa placa de janela ou telhado, a refração espalha a luz solar em 360° iluminando como uma lâmpada de 55W por mais de 5 anos sem eletricidade.",
+  "timeRequired": "30 min para preparo e vedação (opera sem energia por 5+ anos sob luz solar)",
+  "successRate": "97% (usando garrafa incolor sem riscos, colarinho vedado contra chuva e antialgas)",
+  "difficulty": "Iniciante (Sem ferramentas elétricas; só garrafa transparente, pedra/lixa, água, água sanitária ou sal e placa)",
+  "outputPerHour": "Uma garrafa de 1,5L fornece luz diurna equivalente a ~55W em 360 graus sem calor ou fumaça",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Uma Garrafa PET Incolor Transparente de 1,5L Sem Arranhões + Lixa ou Pedra Áspera",
+      "desc": "Funciona como prisma óptico para captar e espalhar a luz solar no interior. Garrafas verdes ou marrons barram a luz; remova totalmente rótulo e cola."
+    },
+    {
+      "id": "mat-02",
+      "name": "1,5L de Água Limpa Filtrada + 3 Gotas de Água Sanitária Sem Perfume (ou Meia Colher de Sal Grosso)",
+      "desc": "A água refrata o sol vertical para todas as direções. Colocar 3 gotas de água sanitária ou sal impede algas verdes de turvar a água."
+    },
+    {
+      "id": "mat-03",
+      "name": "Placa Grossa para Janela/Teto (Madeira ou Papelão Triplo) + Resina de Pinheiro, Fita Impermeável e Papel Alumínio",
+      "desc": "Prende a garrafa verticalmente num recorte circular (1/3 fora ao sol e 2/3 dentro do cômodo escuro) vedando 100% contra chuva usando [Resina de Pinheiro](/protocol-10)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Retirar Todo Rótulo da Garrafa Transparente de 1,5L e Lixar Só a Faixa do Terço Superior",
+      "description": "1. **Escolher Garrafa Incolor e Limpar Rótulo**: Remova rótulo e restos de cola exatamente como para a [Desinfecção Solar (SODIS)](/protocol-23).\n2. **Raspar Leve Só o Anel do Terço Superior**: Com lixa ou pedra áspera, fosqueie uma **faixa de dois dedos de largura no terço superior**, onde encaixará na placa.\n3. **Proteger os Dois Terços Inferiores**: Mantenha a parte baixa totalmente lisa e limpa para irradiar luz com máxima força.",
+      "actionNote": "> Por que só arranhar a faixa de encaixe e poupar a base: Resina e vedantes escorregam no plástico liso sob chuva. Fosquear só a cinta de 2–3 cm garante aderência firme preservando 100% da transparência embaixo.",
+      "svgFileName": "pr34-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TIRAR RÓTULO + LIXAR SÓ FAIXA SUPERIOR 1/3",
+        "Remover rótulos opacos e toda cola aderida",
+        "Lixar leve só faixa de 1/3 superior com pedra áspera",
+        "Manter os 2/3 inferiores sem riscos e cristalinos",
+        "[NÚCLEO] Óptica limpa abaixo + anel áspero de vedação"
+      ],
+      "deepDive": {
+        "badge": "OPTICAL APERTURE & SEAL PREP",
+        "title": "Máxima Abertura Óptica e Rugosidade Controlada na Faixa de Vedação",
+        "text": "Riscos no topo ou no corpo inferior dispersam luz antes da hora. Riscar sutilmente apenas a **cinta de 2–3 cm** trava a resina ou vedante mecanicamente impedindo goteiras.",
+        "fieldSpecs": [
+          {
+            "name": "Garrafa Transparente de 1,5L Sem Rótulo com Cinta do Terço Superior Lixada",
+            "scientificName": "Clear 1.5L Water Vessel with Lightly Scuffed Upper-Third Collar Band",
+            "categoryTag": "Clareza Óptica / Preparo de Vedação",
+            "imageFileName": "id-clean-pet-bottle-scuffed-collar.jpg",
+            "hudCode": "FIG. SHELTER-34A // MACRO OPTIC",
+            "hudStatus": "OPTICAL BODY: 100% CLEAR",
+            "traits": [
+              {
+                "label": "Incolor/Clara",
+                "value": "**Use frasco totalmente incolor** para maior ganho luminoso."
+              },
+              {
+                "label": "Faixa/Lixada",
+                "value": "**Lixe só o aro superior 1/3** para segurar firme a vedação."
+              },
+              {
+                "label": "Base/Protegida",
+                "value": "**Evite arranhões nos 2/3 de baixo** para brilho 360° limpo."
+              }
+            ],
+            "fieldUse": "Preparo óptico e mecânico de frasco transparente antes da fixação"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Encher Até o Gargalo com Água Filtrada e Pingar 3 Gotas de Água Sanitária (ou Sal) Contra Algas",
+      "description": "1. **Completar com Água Cristalina**: Encha até o pescoço com água limpa do [Filtro de Carvão e Areia](/protocol-01) ou [Sifão de Toalha](/protocol-23).\n2. **Adicionar 3 Gotas de Água Sanitária ou Sal Grosso**: Pingue **3 gotas exatas de água sanitária sem perfume** (ou **meia colher de sopa de sal grosso**) evitando algas verdes no sol.\n3. **Tirar Ar e Vedar Tampa Forte**: Aperte leve para reduzir ar no topo, feche forte a tampa e vede a borda contra evaporação.",
+      "actionNote": "> Por que água pura falha em semanas: Sol direto em água parada gera algas verdes em 2–3 semanas fechando a passagem de luz. Traços de cloro ou sal mantêm cristalina por mais de 5 anos.",
+      "svgFileName": "pr34-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // ÁGUA LIMPA CHEIA + 3 GOTAS CONTRA ALGAS VERDES",
+        "Encher água filtrada até o gargalo com mínimo ar",
+        "Pingar 3 gotas de água sanitária ou sal contra algas",
+        "Fechar tampa firme e selar contra evaporação",
+        "[NÚCLEO] Inibe algas mantendo clareza por muitos anos"
+      ],
+      "deepDive": {
+        "badge": "ALGAE INHIBITION & REFRACTIVE INDEX",
+        "title": "Refração Omnidirecional da Água (n=1,33) e Inibição de Algas por Cloro Traço",
+        "text": "A água cilíndrica (índice **1,33**) dobra a luz solar em 360 graus dentro do abrigo como **prisma líquido**. Traços de hipoclorito ou sal bloqueiam algas garantindo luz constante.",
+        "fieldSpecs": [
+          {
+            "name": "Prisma Claro de 1,5L Recebendo Água Limpa e 3 Gotas Antialgas",
+            "scientificName": "Crystal-Clear Water Prism with Trace Bleach or Salt Algae Inhibitor",
+            "categoryTag": "Meio Refrativo n=1,33 / Bloqueio de Algas",
+            "imageFileName": "id-bleach-drops-clear-water-bottle.jpg",
+            "hudCode": "FIG. SHELTER-34B // MACRO OPTIC",
+            "hudStatus": "ALGAE RISK: 0% SUPPRESSED",
+            "traits": [
+              {
+                "label": "Cheia/Topo",
+                "value": "**Encha até o gargalo** garantindo dispersão uniforme."
+              },
+              {
+                "label": "Gotas/Três",
+                "value": "**3 gotas de água sanitária ou sal** bloqueiam limo verde."
+              },
+              {
+                "label": "NãoBeber",
+                "value": "**Trave e sele a tampa** para ninguém confundir com água potável."
+              }
+            ],
+            "fieldUse": "Meio óptico durável entregando claridade contínua de 55W sem turvar"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Cortar Furo Justo na Placa de Janela e Encaixar na Vertical em Proporção 1/3 Fora : 2/3 Dentro",
+      "description": "1. **Furar Menor que o Diâmetro**: Risque o fundo na madeira ou [Painel Térmico de Papelão Triplo](/protocol-22) e corte **meio dedo (0,5 cm) por dentro da marca** para ajuste firme.\n2. **Adicionar Anel com Abas Protetoras**: Recorte um colarinho com abas radiais abraçando a cintura contra ventos.\n3. **Posicionar 1/3 Fora e 2/3 Dentro**: Encaixe na vertical deixando o **1/3 superior exposto ao sol** e os **2/3 inferiores pendendo dentro** do quarto escuro.",
+      "actionNote": "> Por que usar 1/3 fora e 2/3 dentro e não meio a meio: Pouca ponta fora capta pouco sol; ponta longa demais desperdiça luz fora. A proporção 1:2 otimiza captação externa e brilho 360° interno.",
+      "svgFileName": "pr34-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // FURO NA PLACA + ENCAIXE VERTICAL 1/3 : 2/3",
+        "Cortar furo ligeiramente menor para encaixe justo",
+        "1/3 superior voltado ao sol externo capta claridade",
+        "2/3 inferiores no interior irradiam luz em 360 graus",
+        "[NÚCLEO] Relação 1:2 maximiza iluminação interna"
+      ],
+      "deepDive": {
+        "badge": "1:2 PRISM MOUNTING GEOMETRY",
+        "title": "Captação Solar Externa vs. Difusão Interna 360° em Montagem 1:2",
+        "text": "O domo externo (**1/3**) capta sol direto e luz do céu, enquanto o cilindro suspenso (**2/3**) reflete e espalha raios pelos cantos escuros do abrigo.",
+        "fieldSpecs": [
+          {
+            "name": "Garrafa de Água Fixada 1:2 na Vertical em Placa Escura com Colarinho Protetor",
+            "scientificName": "Circular Cutout Blackout Panel & Protective Flashing Collar Mount",
+            "categoryTag": "Proporção 1:2 / Encaixe Firme Antideslizante",
+            "imageFileName": "id-window-board-bottle-collar-fit.jpg",
+            "hudCode": "FIG. SHELTER-34C // MACRO OPTIC",
+            "hudStatus": "MOUNT RATIO: 1/3 OUT : 2/3 IN",
+            "traits": [
+              {
+                "label": "Furo/Justo",
+                "value": "**Corte menor que a garrafa** para o peso da água não escorregar."
+              },
+              {
+                "label": "Anel/Apoio",
+                "value": "**Coloque colarinho com abas** evitando balanço com vento."
+              },
+              {
+                "label": "Divisão/1a2",
+                "value": "**1/3 ao sol fora e 2/3 dentro** traz maior claridade ao cômodo."
+              }
+            ],
+            "fieldUse": "Fixação mecânica segura sustentando 1,5 kg em tampões de janela ou telhados"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Vedar a Junta Externa com Resina ou Barro Impermeável e Pôr Aba de Alumínio por Dentro",
+      "description": "1. **Vedação Dupla Externa**: Cubra a cinta lixada no encontro com a placa usando [Cola de Resina de Pinheiro](/protocol-10), barro oleado ou fita impermeável inclinada para fora impedindo **qualquer goteira na chuva**.\n2. **Colar Aba de Alumínio Interna**: Cole um palmo de papel alumínio em volta do furo pelo lado interno rebatendo luz perdida para a mesa e chão, elevando o brilho em 1,5x.\n3. **Prender no Batente da Janela**: Fixe com [Fita Reforçada](/protocol-31) obtendo luz diurna limpa sem chama.",
+      "actionNote": "> Por que vedar o lado externo perfeitamente é essencial: Água de chuva escorrendo para dentro encharca cobertores e comida gerando hipotermia e mofo. Modele sempre queda voltada para fora.",
+      "svgFileName": "pr34-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // JUNTA IMPERMEÁVEL + LUZ INTERNA DE 55W 360",
+        "Vedar encontro garrafa-placa com resina ou barro oleado",
+        "Aba interna de alumínio multiplica luz sobre o chão",
+        "Ilumina a 55W em 360 graus durante o dia sem fogo",
+        "[NÚCLEO] Luz diurna segura com 0% risco de incêndio/CO"
+      ],
+      "deepDive": {
+        "badge": "OMNIDIRECTIONAL SOLAR DAYLIGHTING",
+        "title": "Vedação Pluvial do Colarinho e Refletor Interno de Alumínio sem Calor",
+        "text": "Chamas queimam oxigênio interno; o **prisma de água** entrega **400–600 lúmens (~55W)** sem calor nem CO. Uma aba de **alumínio** interna direciona raios para mesas de trabalho.",
+        "fieldSpecs": [
+          {
+            "name": "Abrigo Escuro Iluminado em 360 Graus a Equivalência 55W por Claraboia Solar Vedada",
+            "scientificName": "Waterproof Sealed Solar Water Bottle Prism Delivering 55W Equivalent Indoor Light",
+            "categoryTag": "Vedação Total / Luz Diurna Sem Calor",
+            "imageFileName": "id-solar-bottle-360-indoor-glow.jpg",
+            "hudCode": "FIG. SHELTER-34D // MACRO OPTIC",
+            "hudStatus": "OUTPUT: ~55W DAYLIGHT EQUIV",
+            "traits": [
+              {
+                "label": "Vedação/Chuva",
+                "value": "**Incline resina ou barro fora** escorrendo chuva sem goteiras."
+              },
+              {
+                "label": "Alumínio/Foco",
+                "value": "**Cole aba de alumínio interna** ampliando a claridade na mesa."
+              },
+              {
+                "label": "ZeroCO/Seguro",
+                "value": "Visibilidade de dia com **0% de fogo ou gás carbônico**."
+              }
+            ],
+            "fieldUse": "Iluminar abrigos fechados o dia todo sem gastar pilhas nem combustível"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Beber por Engano a Água com Água Sanitária da Claraboia ou Deixar Vazamento de Chuva no Abrigo",
+    "description": "A água dentro da garrafa tem água sanitária ou sal concentrado contra algas e NUNCA serve para consumo; sele a tampa para sempre com [Resina de Pinheiro](/protocol-10) evitando confusão. Além disso, falha na vedação externa deixa entrar chuva molhando mantas dentro da sua [Cápsula Térmica de Papelão](/protocol-22). Se alguém beber água imprópria tendo vômito ou diarreia, hidrate logo com [Soro Caseiro (ORS)](/protocol-24).",
+    "consequence": "Lesão gástrica e desidratação por ingestão errada, ou hipotermia por abrigo molhado."
+  },
+  "faqs": [
+    {
+      "question": "Como instalar em apartamento sem furar o teto e como tampar a luz durante a noite?",
+      "causeDiagnostic": "Apartamentos de concreto não permitem furar lajes, mas janelas aceitam painéis encaixáveis.",
+      "resolution": "Corte um painel de papelão triplo ou madeira no tamanho da janela e monte a garrafa no alto **inclinada 30–45° para o céu** captando claridade lateral. À noite cubra apenas os 2/3 internos com pano escuro ou [capa de papelão](/protocol-22)."
+    },
+    {
+      "question": "Ainda ilumina o suficiente em dias nublados ou no inverno sem sol forte direto?",
+      "causeDiagnostic": "A refração na água reúne não só sol direto, mas também a claridade difusa das nuvens.",
+      "resolution": "Sob sol pleno entrega ~55W, e em dias nublados ou chuvosos mantém **15–25W internos** suficientes para ler e circular com segurança. Pôr bandeja de papel alumínio sob a ponta externa reforça dias cinzentos."
+    }
+  ],
+  "outcome": {
+    "title": "Claraboia Solar Vertical 1:2 com Prisma de Água e Vedação Total (55W sem Eletricidade)",
+    "badge": "TARGET OUTCOME // CLARABOIA SOLAR DE ÁGUA 55W SEM ENERGIA",
+    "description": "Sistema sem energia usando garrafa transparente de 1,5L com água e 3 gotas de água sanitária (ou sal), fixada 1/3 fora e 2/3 dentro de placa vedada com resina e refletor interno de alumínio para gerar luz 360° equivalente a 55W sem fogo ou CO.",
+    "svgFileName": "pr34-outcome.svg",
+    "svgLabels": [
+      "PR-34 COMPLETO // PRISMA SOLAR DE ÁGUA 1.5L 55W",
+      "ETAPA 01: LIMPAR & 1/3 LIXA",
+      "Corpo claro + faixa áspera",
+      "ETAPA 02: ÁGUA & 3 GOTAS",
+      "Cheia ao topo + sem algas",
+      "ETAPA 03: MONTAGEM 1:2 PLACA",
+      "1/3 sol fora + 2/3 dentro",
+      "ETAPA 04: VEDAR & ALUMÍNIO",
+      "Sem chuva + brilho de 55W",
+      "[PRINCÍPIO] Refração na água gera luz diurna de 55W com segurança e zero eletricidade"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Sem energia por dias e o quarto com janela fechada está escuro até ao meio-dia? Ilumine o cômodo a 55W usando só uma garrafa de 1,5L com água!",
+    "body": "Velas de dia gastam estoque e causam incêndio. Primeiro, tire rótulos de uma garrafa transparente de 1,5L e lixe leve só uma faixa no terço superior. Segundo, encha até a boca com água limpa e 3 gotas de água sanitária ou meia colher de sal contra algas, fechando forte. Terceiro, faça um furo justo no painel da janela deixando 1/3 para o sol fora e 2/3 dentro. Quarto, vede a junta contra chuva com resina ou fita impermeável e tenha luz de 55 watts grátis o dia inteiro!"
+  },
+  "createdAt": "2026-11-18T05:23:28.224Z",
+  "contentHash": "e2d10bf877747894"
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg34s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="bottle34s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.35"/>
+      <stop offset="35%" stop-color="#e0f2fe" stop-opacity="0.65"/>
+      <stop offset="65%" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.45"/>
+    </linearGradient>
+    <pattern id="grid34s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow34s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg34s1)"/>
+  <rect width="400" height="400" fill="url(#grid34s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 01 // 투명 1.5L 물병 라벨 제거 + 상단 1/3 고정 띠 연마</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9.5">빛을 가리는 상표 띠와 끈적한 자국을 깨끗이 제거</text>
+
+  <!-- Main Illustration: Vertical Clear 1.5L Bottle with Upper 1/3 Scuffed Collar Band & Abrasive Stone -->
+  <g filter="url(#shadow34s1)">
+    <!-- Bottle Cap & Neck -->
+    <rect x="184" y="88" width="32" height="14" rx="3" fill="#0284c7" stroke="#7dd3fc" stroke-width="1.5"/>
+    <path d="M 186 102 L 186 116 Q 160 132 158 156 L 158 274 Q 158 286 172 286 L 228 286 Q 242 286 242 274 L 242 156 Q 240 132 214 116 L 214 102 Z" fill="url(#bottle34s1)" stroke="#bae6fd" stroke-width="2"/>
+    <!-- Highlight streak on glass-clear lower 2/3 body -->
+    <line x1="170" y1="184" x2="170" y2="274" stroke="#ffffff" stroke-width="2.5" opacity="0.55" stroke-linecap="round"/>
+
+    <!-- Upper 1/3 Scuffed Grip Collar Band (y=142 to 170) -->
+    <rect x="158" y="142" width="84" height="28" fill="#cbd5e1" fill-opacity="0.45" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="4 2"/>
+    <path d="M 164 148 L 236 148 M 164 156 L 236 156 M 164 164 L 236 164" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <!-- Abrasive Rough Stone Polishing the 1/3 Collar Band -->
+    <polygon points="246,144 282,134 294,158 272,172 246,162" fill="#57534e" stroke="#a8a29e" stroke-width="1.5"/>
+    <path d="M 244 136 Q 260 124 276 132" fill="none" stroke="#fde047" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="240,138 247,131 248,140" fill="#fde047"/>
+
+    <!-- Dimension Lines: Top 1/3 vs Lower 2/3 -->
+    <line x1="138" y1="116" x2="138" y2="170" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="132" y1="116" x2="144" y2="116" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="132" y1="170" x2="144" y2="170" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <line x1="138" y1="174" x2="138" y2="286" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="132" y1="174" x2="144" y2="174" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="132" y1="286" x2="144" y2="286" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Removed Peeled Label Ribbon & Trash X Icon on Left -->
+    <path d="M 62 214 Q 82 198 102 214 Q 112 224 94 242 Q 74 248 62 232 Z" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <line x1="74" y1="214" x2="92" y2="232" stroke="#ef4444" stroke-width="2.5"/>
+    <line x1="92" y1="214" x2="74" y2="232" stroke="#ef4444" stroke-width="2.5"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">판자에 꽂힐 위쪽 1/3 띠만 거친 돌로 살짝 문지름</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#0c192c" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="344" fill="#bae6fd" font-family="monospace" font-size="9">실내 조명용 아래쪽 2/3 몸통은 흠집 없이 투명 유지</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 매끈한 광학 창 유지 + 꽂힘 부위 방수 밀착력 확보</text>
+</svg>

@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-34",
+  "category": "SHELTER",
+  "title": "Cómo Hacer una Claraboya Solar con Botella de Agua de 1,5L y 3 Gotas de Lejía para Iluminar Sin Electricidad (55W)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ILUMINACIÓN DIURNA POR PRISMA DE AGUA SOLAR SIN ENERGÍA Y EQUIVALENCIA A 55W]",
+  "summary": "Si cuentas con linternas LED recargables, faroles solares o focos con batería en tu kit de emergencia, utiliza siempre esos equipos comerciales primero. Sin embargo, cuando un apagón prolongado agota las baterías y el [Refuerzo de Ventanas contra Explosiones](/protocol-31) o los tablones dejan tu refugio a oscuras incluso de día, encender velas o una [Estufa de Lata con Aceite](/protocol-21) durante el día desperdicia combustible nocturno y aumenta el riesgo de incendio y monóxido de carbono. Llenando una botella transparente de 1,5L con agua limpia y 3 gotas de lejía sin aroma (o media cucharada de sal gruesa) contra las algas, y sellándola verticalmente en un panel de ventana o techo, la refracción dispersa la luz solar en 360° iluminando el interior como una bombilla de 55W durante más de 5 años sin electricidad.",
+  "timeRequired": "30 minutos de armado e instalación (funciona sin energía durante más de 5 años bajo el sol)",
+  "successRate": "97% (con botella incolora sin rayas, collarín impermeable sellado e inhibidor de algas)",
+  "difficulty": "Principiante (Sin herramientas eléctricas; solo botella transparente, piedra/lija, agua, lejía o sal y panel)",
+  "outputPerHour": "Una botella transparente de 1,5L genera luz diurna omnidireccional equivalente a ~55W sin emitir calor ni humo",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Una Botella Transparente Incolora de 1,5L Sin Rayones + Lija o Piedra Áspera",
+      "desc": "Actúa como prisma óptico para captar y dispersar el sol hacia el interior. Evita botellas verdes o marrones; retira por completo etiquetas y pegamento."
+    },
+    {
+      "id": "mat-02",
+      "name": "1,5L de Agua Limpia Filtrada + 3 Gotas de Lejía Líquida Sin Aroma (o Media Cucharada de Sal Gruesa)",
+      "desc": "El agua refracta la luz solar vertical en 360 grados. Añadir 3 gotas de lejía o sal gruesa impide que crezcan algas verdes y enturbien la luz."
+    },
+    {
+      "id": "mat-03",
+      "name": "Panel Grueso para Ventana/Techo (Madera o Cartón Triple) + Resina de Pino, Cinta Impermeable y Papel Aluminio",
+      "desc": "Fija la botella verticalmente en un corte circular (1/3 afuera al sol y 2/3 adentro del cuarto oscuro) bloqueando lluvia con [Resina de Pino](/protocol-10) o cinta impermeable."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Quitar Etiquetas de la Botella Transparente de 1,5L y Lijar Solo la Banda Superior del Tercio",
+      "description": "1. **Elegir Botella Incolora y Quitar Etiqueta**: Retira toda etiqueta y resto de goma igual que para la [Desinfección Solar (SODIS)](/protocol-23).\n2. **Raspar Suavemente la Banda del Tercio Superior**: Frota con piedra áspera o lija solo una **franja circular de dos dedos de ancho en el tercio superior**, donde encajará en el panel.\n3. **Proteger los Dos Tercios Inferiores**: Mantén intacta y reluciente la parte inferior que irradiará la luz dentro de la habitación.",
+      "actionNote": "> Por qué solo se raspa la banda de agarre y no la base: Los selladores y resinas resbalan sobre plástico liso cuando llueve. Lijar solo la cinta de 2–3 cm da agarre hermético sin restar transparencia abajo.",
+      "svgFileName": "pr34-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // QUITAR ETIQUETA + LIJADO DEL TERCIO SUPERIOR",
+        "Retirar etiquetas opacas y restos de pegamento",
+        "Raspar solo la franja superior 1/3 con piedra áspera",
+        "Proteger los 2/3 inferiores libres de rayaduras",
+        "[CLAVE] Óptica inferior limpia + franja de agarre firme"
+      ],
+      "deepDive": {
+        "badge": "OPTICAL APERTURE & SEAL PREP",
+        "title": "Máxima Transparencia Óptica y Rugosidad Controlada en la Zona de Sellado",
+        "text": "Los rayones en el domo superior o cuerpo emisor dispersan fotones dentro de la pared. Micro-raspar únicamente la **cinta de unión de 2–3 cm** permite que resina o masilla impermeabilizante se anclen sin dejar pasar lluvia.",
+        "fieldSpecs": [
+          {
+            "name": "Botella Clara de 1,5L Sin Etiquetas con Banda del Tercio Superior Ligeramente Lijada",
+            "scientificName": "Clear 1.5L Water Vessel with Lightly Scuffed Upper-Third Collar Band",
+            "categoryTag": "Claridad Óptica / Preparación Impermeable",
+            "imageFileName": "id-clean-pet-bottle-scuffed-collar.jpg",
+            "hudCode": "FIG. SHELTER-34A // MACRO OPTIC",
+            "hudStatus": "OPTICAL BODY: 100% CLEAR",
+            "traits": [
+              {
+                "label": "SinColor/Clara",
+                "value": "**Usa envase totalmente incoloro** para no perder brillo."
+              },
+              {
+                "label": "Banda/Lijada",
+                "value": "**Raspa solo el aro superior 1/3** para anclar el sellador contra lluvia."
+              },
+              {
+                "label": "Base/Intacta",
+                "value": "**Cuida los 2/3 inferiores sin arañazos** para emitir luz nítida."
+              }
+            ],
+            "fieldUse": "Preparación óptica y mecánica de envase transparente antes del montaje"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Llenar al Borde con Agua Filtrada y Añadir 3 Gotas de Lejía (o Sal) para Evitar Algas Verdes",
+      "description": "1. **Llenar con Agua Pura Hasta el Cuello**: Vierte agua cristalina del [Filtro de Carbón y Arena](/protocol-01) o [Sifón de Toalla](/protocol-23) casi hasta desbordar.\n2. **Agregar 3 Gotas de Lejía o Sal Gruesa**: Añade **exactamente 3 gotas de lejía líquida sin aroma** (o **media cucharada de sal gruesa**) para impedir que el sol cree algas verdes.\n3. **Sacar Aire y Sellar Tapa Fuerte**: Presiona leve para reducir aire arriba, enrosca la tapa con fuerza y sella su borde para evitar evaporación.",
+      "actionNote": "> Por qué falla en semanas el agua sola sin lejía ni sal: El sol continuo hace proliferar algas verdes en 2–3 semanas convirtiendo tu foco solar en un tapón oscuro. Tres gotas de cloro o sal la mantienen cristalina más de 5 años.",
+      "svgFileName": "pr34-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // AGUA LIMPIA LLENA + 3 GOTAS DE LEJÍA ANTI-ALGAS",
+        "Llenar agua filtrada hasta el cuello con mínimo aire",
+        "Añadir 3 gotas de lejía o sal contra algas verdes",
+        "Cerrar tapa y sellar borde contra evaporación",
+        "[CLAVE] Inhibe algas manteniendo claridad por años"
+      ],
+      "deepDive": {
+        "badge": "ALGAE INHIBITION & REFRACTIVE INDEX",
+        "title": "Refracción Omnidireccional del Agua (n=1,33) e Inhibición de Algas por Cloro Traza",
+        "text": "El agua cilíndrica (índice **1,33**) desvía rayos solares en todas direcciones dentro del cuarto oscuro como **prisma líquido**. Trazas de hipoclorito o sal bloquean algas fotosintéticas conservando el paso de luz por años.",
+        "fieldSpecs": [
+          {
+            "name": "Botella Prisma Clara Recibiendo Agua Pura y 3 Gotas de Lejía Anti-Algas",
+            "scientificName": "Crystal-Clear Water Prism with Trace Bleach or Salt Algae Inhibitor",
+            "categoryTag": "Medio Refractivo n=1,33 / Inhibición de Algas",
+            "imageFileName": "id-bleach-drops-clear-water-bottle.jpg",
+            "hudCode": "FIG. SHELTER-34B // MACRO OPTIC",
+            "hudStatus": "ALGAE RISK: 0% SUPPRESSED",
+            "traits": [
+              {
+                "label": "Llenado/Tope",
+                "value": "**Llena agua limpia al cuello** para refracción continua sin sombra."
+              },
+              {
+                "label": "Gotas/Tres",
+                "value": "**Usa 3 gotas de lejía o sal gruesa** para frenar algas verdes."
+              },
+              {
+                "label": "NoBeber/Sello",
+                "value": "**Sella la tapa fija** para evitar confusión con agua potable."
+              }
+            ],
+            "fieldUse": "Prisma líquido duradero capaz de irradiar equivalencia a 55W sin enturbiarse"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Cortar Agujero Justo en el Panel Oscurecedor y Montar en Proporción 1/3 Afuera y 2/3 Adentro",
+      "description": "1. **Recortar Orificio Ajustado**: Marca el diámetro en madera o [Panel Térmico de Cartón Triple](/protocol-22) y corta **medio dedo (0,5 cm) por dentro del trazo** para encaje a presión.\n2. **Colocar Aro de Soporte con Pestañas**: Añade un anillo con cortes radiales abrazando la cintura para resistir viento.\n3. **Montar 1/3 Exterior y 2/3 Interior**: Encaja la botella dejando el **tercio superior expuesto al sol exterior** y los **dos tercios inferiores colgando dentro** del cuarto oscuro.",
+      "actionNote": "> Por qué usar proporción 1/3 exterior y 2/3 interior y no mitad y mitad: Sacar poco afuera reduce captación solar; sacar demasiado deja escapar luz afuera. El 1:2 maximiza captación arriba y dispersión 360° adentro.",
+      "svgFileName": "pr34-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // CORTE EN PANEL + MONTAJE VERTICAL 1/3 : 2/3",
+        "Recortar agujero menor al diámetro para ajuste firme",
+        "1/3 superior al sol exterior capta luz del cielo",
+        "2/3 inferiores adentro iluminan en 360 grados",
+        "[CLAVE] Relación vertical 1:2 maximiza brillo interior"
+      ],
+      "deepDive": {
+        "badge": "1:2 PRISM MOUNTING GEOMETRY",
+        "title": "Apertura de Captación Solar vs. Difusión Interior de 360° en Montaje 1:2",
+        "text": "El domo externo (**1/3**) capta luz directa y difusa del cielo mientras el cilindro suspendido (**2/3**) distribuye rayos refractados lateralmente y hacia abajo iluminando todo el refugio.",
+        "fieldSpecs": [
+          {
+            "name": "Botella de Agua Montada Verticalmente 1:2 en Panel Oscurecedor con Aro Protector",
+            "scientificName": "Circular Cutout Blackout Panel & Protective Flashing Collar Mount",
+            "categoryTag": "Proporción 1:2 / Encaje Ajustado sin Caída",
+            "imageFileName": "id-window-board-bottle-collar-fit.jpg",
+            "hudCode": "FIG. SHELTER-34C // MACRO OPTIC",
+            "hudStatus": "MOUNT RATIO: 1/3 OUT : 2/3 IN",
+            "traits": [
+              {
+                "label": "Corte/Ajuste",
+                "value": "**Corta algo menor al diámetro** para que el peso no la deslice abajo."
+              },
+              {
+                "label": "Aro/Soporte",
+                "value": "**Coloca collarín con pestañas** contra vibración de viento fuerte."
+              },
+              {
+                "label": "Regla/1a2",
+                "value": "**1/3 afuera al sol y 2/3 adentro** optimiza el alcance de luz."
+              }
+            ],
+            "fieldUse": "Soporte estable para sostener 1,5 kg de agua óptica en paneles o techos de emergencia"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Impermeabilizar la Junta Externa con Resina o Masilla y Sumar Faldón Reflector de Aluminio Adentro",
+      "description": "1. **Sellar Doble la Junta Exterior**: Cubre la franja lijada donde toca el panel usando [Pegamento de Resina de Pino](/protocol-10), arcilla aceitada o cinta impermeable inclinada hacia afuera para que **no entre ni una gota de lluvia**.\n2. **Colocar Faldón de Aluminio Interior**: Rodea el borde interior del agujero con un palmo de papel aluminio para rebotar hacia el piso rayos que subían, multiplicando el brillo en mesa 1,5x.\n3. **Fijar en Marco de Ventana**: Asegura el panel con [Cinta de Refuerzo](/protocol-31) logrando visibilidad diurna segura sin fuego.",
+      "actionNote": "> Por qué es vital impermeabilizar bien por fuera: Si la lluvia se filtra por el collarín, mojará colchones y comida provocando hipotermia y moho. Forma siempre pendiente hacia afuera alrededor del sello.",
+      "svgFileName": "pr34-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SELLO IMPERMEABLE + LUZ SOLAR DE 55W EN 360",
+        "Sellar junta externa con resina o arcilla aceitada",
+        "Faldón reflector interno de aluminio amplifica el suelo",
+        "Luz diurna de 55W en 360 grados sin fuego ni energía",
+        "[CLAVE] Iluminación interior segura 0% incendio ni CO"
+      ],
+      "deepDive": {
+        "badge": "OMNIDIRECTIONAL SOLAR DAYLIGHTING",
+        "title": "Sellado Pluvial del Collarín y Amplificación con Faldón Reflector de Aluminio",
+        "text": "Las llamas consumen oxígeno interior; la **claraboya prismática de agua** entrega **400–600 lúmenes (~55W)** sin calor ni CO. El faldón metálico inferior redirige luz hacia superficies de trabajo.",
+        "fieldSpecs": [
+          {
+            "name": "Refugio Oscuro Iluminado en 360 Grados con Brillo Equivalente a 55W por Claraboya Solar Sellada",
+            "scientificName": "Waterproof Sealed Solar Water Bottle Prism Delivering 55W Equivalent Indoor Light",
+            "categoryTag": "Junta Impermeable / Luz Natural Sin Calor",
+            "imageFileName": "id-solar-bottle-360-indoor-glow.jpg",
+            "hudCode": "FIG. SHELTER-34D // MACRO OPTIC",
+            "hudStatus": "OUTPUT: ~55W DAYLIGHT EQUIV",
+            "traits": [
+              {
+                "label": "Sello/Lluvia",
+                "value": "**Inclina resina o arcilla afuera** evitando goteras bajo tormenta."
+              },
+              {
+                "label": "Aluminio/Luz",
+                "value": "**Añade faldón brillante interno** para concentrar rayos hacia abajo."
+              },
+              {
+                "label": "CeroCO/Fuego",
+                "value": "**0% peligro de incendio o gas** mientras lees o cocinas de día."
+              }
+            ],
+            "fieldUse": "Iluminar cuartos sellados por apagones todo el día sin gastar baterías ni combustible"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Confundir el Agua con Lejía de la Claraboya con Agua Potable o Dejar Filtraciones de Lluvia Adentro",
+    "description": "El agua sellada adentro contiene lejía o sal concentrada contra algas y JAMÁS debe beberse; sella la tapa permanentemente con [Resina de Pino](/protocol-10) para evitar errores en escasez de agua. Además, un mal sellado exterior deja escurrir lluvia empapando mantas y tu [Cápsula Térmica de Cartón](/protocol-22). Si alguien ingiere agua tratada sufriendo vómitos o diarrea, hidrata ya con [Solución de Rehidratación Oral (ORS)](/protocol-24).",
+    "consequence": "Lesión gástrica y deshidratación por ingestión accidental, o hipotermia por refugio mojado bajo lluvia."
+  },
+  "faqs": [
+    {
+      "question": "¿Cómo instalarla en un departamento sin poder perforar el techo y cómo taparla de noche?",
+      "causeDiagnostic": "En edificios de concreto no se perforan losas, pero los marcos de ventana aceptan paneles removibles.",
+      "resolution": "Corta un panel de cartón triple o madera al tamaño de la ventana y perfora en lo alto inclinando la botella **30–45° hacia el cielo** para captar luz difusa lateralmente. De noche basta cubrir los 2/3 interiores con tela oscura o [tapa de cartón](/protocol-22)."
+    },
+    {
+      "question": "¿Sigue iluminando lo suficiente en días nublados o en pleno invierno sin sol directo?",
+      "causeDiagnostic": "La refracción en agua reúne tanto sol directo como claridad ambiental difusa de las nubes.",
+      "resolution": "Bajo sol pleno alcanza brillo cercano a **55W**, y en días nublados o lluviosos continúa entregando **15–25W útiles adentro** para leer y desplazarte seguro. Colocar una bandeja reflectante de aluminio bajo la punta externa mejora aún más días grises."
+    }
+  ],
+  "outcome": {
+    "title": "Claraboya Solar Vertical 1:2 con Prisma de Agua e Impermeabilización Total (55W Sin Electricidad)",
+    "badge": "TARGET OUTCOME // CLARABOYA SOLAR DE AGUA 55W SIN ENERGÍA",
+    "description": "Sistema de iluminación diurna con botella de 1,5L llena de agua y 3 gotas de lejía (o sal), montada 1/3 afuera y 2/3 adentro de panel oscurecedor con sellado de resina y reflector interno de aluminio, logrando luz 360° de 55W sin riesgo de fuego ni CO.",
+    "svgFileName": "pr34-outcome.svg",
+    "svgLabels": [
+      "PR-34 COMPLETO // PRISMA SOLAR DE AGUA 1.5L EQUIVALENTE 55W",
+      "ETAPA 01: LIMPIAR & 1/3 LIJA",
+      "Cuerpo claro + banda rugosa",
+      "ETAPA 02: AGUA & 3 GOTAS LEJÍA",
+      "Lleno al cuello + cero algas",
+      "ETAPA 03: MONTAJE 1:2 EN PANEL",
+      "1/3 exterior sol + 2/3 interior",
+      "ETAPA 04: SELLO & ALUMINIO",
+      "Cero lluvia + difusión de 55W",
+      "[PRINCIPIO] Refracción en agua entrega 55W de luz diurna interior segura sin electricidad"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Sin luz varios días y tu habitación tapada está a oscuras incluso de día? ¡Ilumina todo el cuarto a potencia de 55W con una botella de agua de 1,5L y cero electricidad!",
+    "body": "Gastar velas de día desperdicia combustible y causa incendios. Primero, quita etiquetas a una botella transparente de 1,5L y lija solo una franja en el tercio superior. Segundo, llénala hasta arriba con agua limpia y añade 3 gotas de lejía o media cucharada de sal para evitar algas verdes, cerrando bien la tapa. Tercero, abre un agujero en el tablón de ventana e inserta 1/3 hacia afuera al sol y 2/3 adentro. Cuarto, sella la unión contra lluvia con resina o cinta impermeable: ¡tendrás luz de 55 vatios gratis todo el día!"
+  },
+  "createdAt": "2026-11-18T05:23:28.224Z",
+  "contentHash": "e2d10bf877747894"
+}

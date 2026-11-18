@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-34",
+  "category": "SHELTER",
+  "title": "How to Build a Zero-Power 55W Solar Water Bottle Skylight (Liter of Light) Using a Clear 1.5L Bottle and Bleach Drops",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ZERO-POWER SOLAR WATER PRISM DAYLIGHTING & 55W INDOOR ROOM ILLUMINATION]",
+  "summary": "If your home or emergency kit includes rechargeable LED lanterns, solar flashlights, or battery work lights, always use those commercial lighting tools first for the safest and easiest illumination. However, when a major disaster causes a multi-day blackout and daytime [Blast Window Taping](/protocol-31) or blackout boards leave indoor rooms or basements pitch dark, burning candles or a [Tuna Can Oil Wick Heater](/protocol-21) during the day wastes precious night fuel and increases fire and carbon monoxide risks. By filling a salvaged clear 1.5L PET bottle with clean water and 3 drops of unscented household bleach (or half a spoon of coarse salt) to prevent green algae, then sealing it vertically into a hole in a window panel or roof board, water's natural light refraction scatters sunlight 360 degrees—delivering up to 55W bulb brightness indoors for 5+ years with zero electricity.",
+  "timeRequired": "30 mins setup and sealing (operates zero-power for 5+ years once installed in daylight)",
+  "successRate": "97% (when using a spotless colorless clear bottle, airtight collar sealing, and algae inhibitor)",
+  "difficulty": "Beginner (No power tools required; uses only a clear bottle, rough stone/sandpaper, water, bleach or salt, and board)",
+  "outputPerHour": "One 1.5L clear water bottle outputs ~55W incandescent equivalent of cool, fire-free 360-degree indoor daylight",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "One Scratch-Free, Colorless Clear 1.5L Water Bottle + One Piece of Sandpaper or Rough Stone",
+      "desc": "Serves as the optical prism housing that gathers and scatters daylight indoors. Green or brown tinted bottles block light, so choose only crystal-clear unbranded vessels with all labels stripped cleanly."
+    },
+    {
+      "id": "mat-02",
+      "name": "1.5L Filtered Clear Water + 3 Drops Unscented Household Liquid Bleach (or Half Spoon Coarse Salt)",
+      "desc": "Water refracts downward sunlight evenly in all directions. Adding 3 drops of bleach or coarse salt stops green algae from clouding the water under long-term sun exposure."
+    },
+    {
+      "id": "mat-03",
+      "name": "Thick Window/Roof Board (Plywood or 3-Layer Cardboard) + Pine Resin, Waterproof Tape & 1 Span Aluminum Foil",
+      "desc": "Seals the bottle vertically in a circular cutout with the top 1/3 exposed to outdoor sunlight and bottom 2/3 inside the dark shelter, blocking every drop of rainwater with [Pine Resin](/protocol-10) or waterproof backing."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Strip All Labels Off a Clear 1.5L Bottle and Lightly Scuff Only the Upper-Third Mounting Band",
+      "description": "1. **Pick a Colorless Clear Bottle & Remove Labels**: Peel away every paper label and glue trace, selecting a crystal-clear vessel just like those used in [Solar Water Disinfection (SODIS)](/protocol-23).\n2. **Lightly Scuff the Upper-Third Collar Band**: Using sandpaper or a rough stone, lightly frost only the **upper 1/3 waist ring (a two-finger-wide grip band)** where the bottle will lock into the board.\n3. **Protect the Lower Two-Thirds Body**: Keep the lower 2/3 cylindrical bulb area completely scratch-free and wiped clean so indoor light radiates brightly.",
+      "actionNote": "> Why you keep the lower body spotless and scuff only the mounting ring: Sealant and resin slip off glossy smooth surfaces under rain. Scuffing just the 2–3cm collar ring maximizes waterproof grip while keeping optical transmission at 100%.",
+      "svgFileName": "pr34-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CLEAR 1.5L BOTTLE LABEL STRIP + UPPER 1/3 SCUFF",
+        "Peel off all opaque labels and sticky glue residue",
+        "Lightly scuff only upper 1/3 band with rough stone",
+        "Keep lower 2/3 optical body spotless + scratch-free",
+        "[CORE] Clear light window + rough collar grip for seal"
+      ],
+      "deepDive": {
+        "badge": "OPTICAL APERTURE & SEAL PREP",
+        "title": "Maximizing Optical Aperture Clarity While Roughening the Collar Bond Surface",
+        "text": "Scratches across the top dome or lower radiating chamber scatter light prematurely inside the bottle wall. Micro-etching solely the **2–3cm mounting collar band** lets pine resin or waterproof sealants anchor mechanically so zero rainwater leaks inside.",
+        "fieldSpecs": [
+          {
+            "name": "Crystal-Clear 1.5L Vessel with Label Removed and Scuffed Upper-Third Mounting Collar",
+            "scientificName": "Clear 1.5L Water Vessel with Lightly Scuffed Upper-Third Collar Band",
+            "categoryTag": "Optical Clarity / Waterproof Bond Prep",
+            "imageFileName": "id-clean-pet-bottle-scuffed-collar.jpg",
+            "hudCode": "FIG. SHELTER-34A // MACRO OPTIC",
+            "hudStatus": "OPTICAL BODY: 100% CLEAR",
+            "traits": [
+              {
+                "label": "Clear/NoTint",
+                "value": "**Choose spotless colorless clear vessels** for maximum daylight output."
+              },
+              {
+                "label": "Scuff/Band",
+                "value": "**Scuff only the upper 1/3 grip band** so waterproof sealant locks tightly."
+              },
+              {
+                "label": "Guard/Lower",
+                "value": "**Protect the lower 2/3 body** from scratches for bright 360-degree glow."
+              }
+            ],
+            "fieldUse": "Preparing salvaged clear water bottles for maximum light transmission and leakproof mounting"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Fill to the Brim with Filtered Water and Add 3 Drops of Bleach (or Salt) to Stop Algae",
+      "description": "1. **Fill to the Neck with Clean Water**: Pour clear sediment-free water purified with a [Charcoal-Sand Filter](/protocol-01) or [Cotton Towel Siphon](/protocol-23) all the way up to the bottle neck.\n2. **Add 3 Drops of Bleach or Half Spoon Salt**: Drop in **exactly 3 drops of unscented liquid household bleach** (or **half a tablespoon of coarse salt** if bleach is unavailable) so sunlight cannot turn the water cloudy green.\n3. **Squeeze Out Air & Seal Tightly**: Gently press to minimize the top air bubble, screw the cap down hard, and seal around the cap rim to stop evaporation.",
+      "actionNote": "> Why plain water fails within weeks without bleach or salt: Direct sun shining into untreated standing water breeds green algae inside 2–3 weeks, turning your bright skylight into a dim dark-green block. Trace chlorine or salt keeps it crystal-clear for 5+ years.",
+      "svgFileName": "pr34-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // FULL CLEAN WATER + 3 BLEACH DROPS ALGAE BLOCK",
+        "Fill crystal-clear water to neck leaving minimal air",
+        "Add 3 bleach drops or half spoon salt to stop algae",
+        "Tighten cap and seal rim to prevent 5-yr evaporation",
+        "[CORE] Inhibits green algae keeping water glass-clear"
+      ],
+      "deepDive": {
+        "badge": "ALGAE INHIBITION & REFRACTIVE INDEX",
+        "title": "Omnidirectional Refraction of Water (n=1.33) and Trace Hypochlorite Algae Control",
+        "text": "Water inside a cylinder (refractive index **1.33**) bends vertical sunlight into every direction indoors as a **liquid optical prism**. Trace sodium hypochlorite or high salinity halts photosynthetic algae growth so light brightness stays steady for years.",
+        "fieldSpecs": [
+          {
+            "name": "Clear 1.5L Prism Vessel Receiving Filtered Water and 3 Bleach Drops for Algae Prevention",
+            "scientificName": "Crystal-Clear Water Prism with Trace Bleach or Salt Algae Inhibitor",
+            "categoryTag": "n=1.33 Refraction Medium / Algae Inhibition",
+            "imageFileName": "id-bleach-drops-clear-water-bottle.jpg",
+            "hudCode": "FIG. SHELTER-34B // MACRO OPTIC",
+            "hudStatus": "ALGAE RISK: 0% SUPPRESSED",
+            "traits": [
+              {
+                "label": "Brim/Full",
+                "value": "**Fill clean filtered water to the neck** for uniform light scattering."
+              },
+              {
+                "label": "Drops/Three",
+                "value": "**Add 3 bleach drops or coarse salt** so algae never clouds the light."
+              },
+              {
+                "label": "NoDrink/Seal",
+                "value": "**Seal cap permanently** so no one confuses skylight water with drinking water."
+              }
+            ],
+            "fieldUse": "Long-life optical prism medium delivering steady 55W indoor brightness without clouding"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Cut a Snug Circular Hole in the Window Blackout Panel and Mount Vertically at a 1:2 Ratio",
+      "description": "1. **Cut a Snug Hole Slightly Smaller Than Diameter**: Trace the bottle base on plywood or a [3-Layer Cardboard Thermal Panel](/protocol-22), then trim **half a finger-width (0.5cm) inside the circle** for a tight friction fit.\n2. **Add a Notched Collar Flange Ring**: Cut a palm-sized support flange around the seam with radial tabs folded tight around the bottle waist to resist wind.\n3. **Mount 1/3 Outside and 2/3 Inside**: Press the bottle vertically so the **upper 1/3 sits outside facing sunlight** and the **lower 2/3 hangs deep inside the dim room**.",
+      "actionNote": "> Why the 1/3 exterior to 2/3 interior ratio matters: Pushing too little outside starves sunlight capture; pushing too much outside lets light escape outdoors. The 1:2 split maximizes both solar collection above and 360-degree bulb spread below.",
+      "svgFileName": "pr34-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BOARD CUTOUT MOUNT + 1/3 OUT : 2/3 IN RATIO",
+        "Cut hole slightly narrower than body for tight grip",
+        "Top 1/3 exposed outside collects wide solar daylight",
+        "Bottom 2/3 hanging indoors radiates 360-deg room light",
+        "[CORE] Vertical 1:2 ratio maximizes indoor spread"
+      ],
+      "deepDive": {
+        "badge": "1:2 PRISM MOUNTING GEOMETRY",
+        "title": "Solar Collection Aperture vs 360-Degree Interior Diffusion via 1:2 Mounting Ratio",
+        "text": "The outer **1/3 dome** acts as an omnidirectional sky collector while the suspended **2/3 cylinder** scatters refracted rays horizontally and downward via internal wall reflection, brightening even window-blocked disaster rooms evenly.",
+        "fieldSpecs": [
+          {
+            "name": "Water-Filled Prism Bottle Mounted Vertically 1:2 in a Cutout Window Blackout Panel",
+            "scientificName": "Circular Cutout Blackout Panel & Protective Flashing Collar Mount",
+            "categoryTag": "1:2 Projection Ratio / Tight Collar Fit",
+            "imageFileName": "id-window-board-bottle-collar-fit.jpg",
+            "hudCode": "FIG. SHELTER-34C // MACRO OPTIC",
+            "hudStatus": "MOUNT RATIO: 1/3 OUT : 2/3 IN",
+            "traits": [
+              {
+                "label": "Cutout/Snug",
+                "value": "**Cut hole slightly smaller than bottle diameter** so heavy water stays put."
+              },
+              {
+                "label": "Collar/Flange",
+                "value": "**Fit a notched support ring** around the waist to stop wind rattle."
+              },
+              {
+                "label": "Split/1to2",
+                "value": "**Position 1/3 outside and 2/3 inside** for brightest 360-degree diffusion."
+              }
+            ],
+            "fieldUse": "Stable mechanical mount holding a 1.5kg water skylight cleanly in blackout panels or roofs"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Seal the Outer Seam with Resin or Waterproof Backing and Add an Indoor Foil Reflector Skirt",
+      "description": "1. **Double-Seal the Exterior Seam**: Coat the scuffed 1/3 ring junction thoroughly with [Pine Resin Waterproof Glue](/protocol-10), oiled clay, or heavy waterproof backing sloped outward so **zero rainwater leaks indoors**.\n2. **Attach an Indoor Foil Reflector Ring**: Tape or pin a handspan of shiny kitchen foil around the underside hole edge to bounce stray upward rays back down toward tables and floors, boosting downward brightness 1.5x.\n3. **Seat Panel into Window Frame**: Fit the completed panel securely into the window frame with [Blast Window Taping](/protocol-31) for cool, flame-free daytime visibility.",
+      "actionNote": "> Why meticulous exterior seam sealing is critical: Rainwater creeping along an unsealed collar drips onto indoor bedding and food supplies, risking hypothermia and mold. Always bevel the outer seal downward so rain sheds away.",
+      "svgFileName": "pr34-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WATERPROOF COLLAR SEAL + 360-DEG 55W ROOM GLOW",
+        "Seal bottle-board seam with resin or oiled clay",
+        "Add indoor underside foil skirt to boost floor light",
+        "Supplies 55W-level 360-deg daylight with zero fire",
+        "[CORE] Zero-fire, zero-CO safe indoor daylight achieved"
+      ],
+      "deepDive": {
+        "badge": "OMNIDIRECTIONAL SOLAR DAYLIGHTING",
+        "title": "Weatherproof Collar Flashing and Interior Foil Reflector Amplification",
+        "text": "Open flames burn oxygen indoors, whereas a **water prism skylight** delivers **400–600 lumens (~55W bulb equivalent)** without heat, smoke, or carbon monoxide. Adding a simple underside **foil collar** redirects upward scatter onto work surfaces below.",
+        "fieldSpecs": [
+          {
+            "name": "Dark Blacked-Out Shelter Room Brightened 360 Degrees by a Sealed 55W Solar Water Skylight",
+            "scientificName": "Waterproof Sealed Solar Water Bottle Prism Delivering 55W Equivalent Indoor Light",
+            "categoryTag": "Weatherproof Seal / 360-Deg Heat-Free Daylight",
+            "imageFileName": "id-solar-bottle-360-indoor-glow.jpg",
+            "hudCode": "FIG. SHELTER-34D // MACRO OPTIC",
+            "hudStatus": "OUTPUT: ~55W DAYLIGHT EQUIV",
+            "traits": [
+              {
+                "label": "Seal/Rain",
+                "value": "**Slope resin or oiled clay outward** around the collar to shed heavy rain."
+              },
+              {
+                "label": "Foil/Boost",
+                "value": "**Line underside border with foil** to redirect scattered rays downward."
+              },
+              {
+                "label": "ZeroCO/Safe",
+                "value": "Provides **bright daytime visibility with 0% fire or CO risk** indoors."
+              }
+            ],
+            "fieldUse": "Illuminating shuttered disaster rooms or basements all day without draining fuel or batteries"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Confusing Bleach/Salt Skylight Water for Drinking Water and Failing to Waterproof the Outer Seam",
+    "description": "Water sealed inside a solar bottle contains bleach or heavy salt to suppress algae and must NEVER be drunk; lock and seal the bottle cap permanently with [Pine Resin](/protocol-10) so no one drinks it by mistake during a water crisis. Additionally, poor exterior seam sealing lets rain soak indoor bedding inside your [Cardboard Thermal Capsule](/protocol-22), triggering hypothermia. If contaminated water is accidentally ingested causing vomiting or diarrhea, rehydrate immediately with [Oral Rehydration Solution (ORS)](/protocol-24).",
+    "consequence": "Gastric irritation and dehydration from drinking treated skylight water, or rain-soaked shelter hypothermia."
+  },
+  "faqs": [
+    {
+      "question": "How can apartment dwellers install this without cutting a roof, and how do I block light during blackouts?",
+      "causeDiagnostic": "Concrete apartments forbid roof holes, but window frames accept removable blackout panels cleanly.",
+      "resolution": "Cut a 3-layer cardboard or plywood panel to fit your window frame, angle the 1.5L bottle hole **30–45 degrees upward toward the sky**, and mount the bottle near the top of the panel to capture indirect sky light horizontally. At night or for blackout privacy, simply slip a dark cloth or [cardboard hood](/protocol-22) over the indoor bottom 2/3."
+    },
+    {
+      "question": "Does a water bottle skylight still work on cloudy winter days without direct sunbeams?",
+      "causeDiagnostic": "Water refraction collects diffuse ambient sky brightness across overcast clouds, not just direct sunbeams.",
+      "resolution": "Direct midday sunlight delivers full ~55W bulb output, while overcast or rainy daytime skies still supply **15–25W ambient daylight indoors**—plenty for reading, sorting supplies, and preventing accidents. Placing a crumpled foil reflector tray beneath the outer bottle nose boosts cloudy-day light even further."
+    }
+  ],
+  "outcome": {
+    "title": "1:2 Vertical Solar Water Prism Skylight with Weatherproof Seal & 55W Indoor Daylighting (Liter of Light)",
+    "badge": "TARGET OUTCOME // 55W ZERO-POWER SOLAR WATER PRISM LIGHT",
+    "description": "A zero-power disaster lighting system using a clear 1.5L bottle filled with clean water and 3 drops of bleach (or coarse salt), mounted 1/3 outside to 2/3 inside a cutout blackout panel with waterproof collar sealing and underside foil reflection to illuminate dark rooms at 55W bulb brightness with zero fire or CO hazard.",
+    "svgFileName": "pr34-outcome.svg",
+    "svgLabels": [
+      "PR-34 COMPLETE // 1.5L SOLAR WATER PRISM 55W DAYLIGHT",
+      "STAGE 01: STRIP & 1/3 SCUFF",
+      "Clear body + rough grip band",
+      "STAGE 02: WATER & 3 BLEACH DROPS",
+      "Fill to neck + stop green algae",
+      "STAGE 03: 1:2 VERTICAL MOUNT",
+      "1/3 outside sun + 2/3 indoors",
+      "STAGE 04: SEAL & FOIL BOOST",
+      "Waterproof seam + 55W spread",
+      "[PRINCIPLE] Water refraction scatters 55W equivalent indoor daylight safely with zero power"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Trapped in a dark boarded-up room during a multi-day blackout? Light up an entire dark room to 55W brightness using a single 1.5L water bottle—zero electricity or fire!",
+    "body": "Burning candles during the day wastes night fuel and risks indoor fires. First, peel all labels off a crystal-clear 1.5L water bottle and lightly scuff just the upper-third grip band with sandpaper or stone. Second, fill it to the brim with clean water plus 3 drops of bleach or half a spoon of salt so green algae never grows, and seal the cap tight. Third, cut a snug hole in a cardboard or plywood window cover and insert the bottle 1/3 outside and 2/3 inside. Fourth, seal the seam watertight with pine resin or waterproof backing—instantly flooding your dark shelter with safe 55W daylight!"
+  },
+  "createdAt": "2026-11-18T05:23:28.224Z",
+  "contentHash": "e2d10bf877747894"
+}

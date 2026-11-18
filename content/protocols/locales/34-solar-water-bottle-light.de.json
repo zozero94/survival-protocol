@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-34",
+  "category": "SHELTER",
+  "title": "Wie man bei Stromausfall mit einer klaren 1,5-Liter-Flasche, Wasser und 3 Tropfen Bleiche ein 55W-Solar-Tageslicht baut",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[STROMLOSE WASSERPRISMA-TAGESLICHTTECHNIK FÜR 55W RAUMHELLIGKEIT]",
+  "summary": "Wenn wiederaufladbare LED-Campinglaternen oder Solar-Taschenlampen vorhanden sind, nutzen Sie diese Fertiggeräte zuerst. Sind bei einem langen Stromausfall jedoch Akkus leer und abgedichtete Zimmer durch [Splitterschutz-Fensterklebung](/protocol-31) und Holzblenden selbst mittags stockdunkel, verbrauchen Kerzen oder ein [Thunfischdosen-Ölheizgerät](/protocol-21) am Tag wertvollen Brennstoff und erhöhen Brand- sowie CO-Vergiftungsgefahr. Füllt man eine klare 1,5-L-PET-Flasche mit reinem Wasser und 3 Tropfen unparfümierter Haushaltsbleiche (oder einem halben Löffel grobem Salz) gegen grüne Algen und dichtet sie senkrecht in der Fensterblende ein, bricht das Wasser Sonnenlicht in alle 360° – für 5+ Jahre Helligkeit wie eine 55W-Glühbirne völlig ohne Strom.",
+  "timeRequired": "30 Min. Bau und Einbau (danach 5+ Jahre stromlos bei Tageslicht nutzbar)",
+  "successRate": "97% (bei klarer farbloser Flasche, wasserdichter Fugenabdichtung und Algenschutz)",
+  "difficulty": "Anfänger (Keine Elektrowerkzeuge nötig; nur klare Flasche, rauer Stein/Schleifpapier, Wasser, Bleiche oder Salz, Platte)",
+  "outputPerHour": "Eine 1,5-L-Flasche liefert innen rund 55W Glühlampen-Äquivalent ohne Hitze oder Rauch",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Eine kratzerfreie, farblose klare 1,5-L-Wasserflasche + Schleifpapier oder rauer Stein",
+      "desc": "Optischer Lichtprismenkörper, der Tageslicht einfängt und rundum in den Raum streut. Grüne oder braune Flaschen blockieren Licht – Etikett und Kleber vollständig entfernen."
+    },
+    {
+      "id": "mat-02",
+      "name": "1,5 L gefiltertes klares Wasser + 3 Tropfen unparfümierte Flüssigbleiche (oder 1/2 Löffel grobes Salz)",
+      "desc": "Das Wasser bricht einfallendes Sonnenlicht in alle Richtungen. 3 Tropfen Bleiche oder grobes Salz verhindern grüne Algenbildung in der Sonne."
+    },
+    {
+      "id": "mat-03",
+      "name": "Dicke Fenster-/Dachblende (Sperrholz oder 3-lagige Wellpappe) + Kiefernharz, Dichtband & Alufolie",
+      "desc": "Hält die Flasche senkrecht im Kreisausschnitt (oberes 1/3 draußen in der Sonne, untere 2/3 im dunklen Raum) und dichtet mit [Kiefernharz](/protocol-10) regensicher ab."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Etiketten von der klaren 1,5-L-Flasche entfernen und nur den oberen Drittel-Haltebund anrauen",
+      "description": "1. **Farblose Flasche wählen & Etikett abziehen**: Entfernen Sie alle Papieretiketten und Klebereste – genau wie bei der [Solar-Wasserdesinfektion (SODIS)](/protocol-23).\n2. **Oberen 1/3-Ring leicht anrauen**: Schleifen Sie mit Stein oder Schleifpapier ausschließlich einen **zwei Finger breiten Ring im oberen Drittel**, wo die Flasche in der Platte klemmt.\n3. **Untere 2/3 kratzerfrei schützen**: Der untere Lichtkörper bleibt spiegelglatt und sauber für volle Leuchtkraft.",
+      "actionNote": "> Warum nur der Klemmring angeraut wird: Auf glatten Wänden rutschen Harz oder Dichtmittel bei Regen ab. Anrauen nur am 2–3 cm Bund sichert die Dichtung, während unten 100 % Licht durchdringt.",
+      "svgFileName": "pr34-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // ETIKETT AB + OBEREN 1/3 HALTEBUND ANRAUEN",
+        "Undurchsichtige Etiketten und Kleber restlos ablösen",
+        "Nur oberen 1/3 Klemmring leicht mit Stein aufrauen",
+        "Untere 2/3 Leuchtzone kratzerfrei glasklar belassen",
+        "[KERN] Klare Optik unten + rauer Dichtring oben"
+      ],
+      "deepDive": {
+        "badge": "OPTICAL APERTURE & SEAL PREP",
+        "title": "Maximale Lichtdurchlässigkeit bei kontrollierter Haft-Rauheit am Dichtkragen",
+        "text": "Kratzer auf Kuppel oder Unterkörper streuen Licht verfrüht ab. Leichtes Aufrauen nur des **2–3 cm Kragens** gibt Kiefernharz oder Dichtband festen mechanischen Halt gegen Regen.",
+        "fieldSpecs": [
+          {
+            "name": "Etikettenfreie klare 1,5-L-Flasche mit leicht aufgerautem oberen Drittel-Klemmband",
+            "scientificName": "Clear 1.5L Water Vessel with Lightly Scuffed Upper-Third Collar Band",
+            "categoryTag": "Optische Klarheit / Dichtungs-Haftung",
+            "imageFileName": "id-clean-pet-bottle-scuffed-collar.jpg",
+            "hudCode": "FIG. SHELTER-34A // MACRO OPTIC",
+            "hudStatus": "OPTICAL BODY: 100% CLEAR",
+            "traits": [
+              {
+                "label": "Klar/OhneFarbe",
+                "value": "**Nur farblose glasklare Flaschen** sichern maximale Lichtausbeute."
+              },
+              {
+                "label": "Ring/Rau",
+                "value": "**Nur das obere 1/3 Band anrauen**, damit Dichtmasse bombig hält."
+              },
+              {
+                "label": "Unten/Schutz",
+                "value": "**Untere 2/3 vor Kratzern schützen** für saubere 360°-Ausleuchtung."
+              }
+            ],
+            "fieldUse": "Vorbereitung klarer Flaschen für hohe Lichttransmission und regensicheren Sitz"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Randvoll mit klarem Wasser füllen und 3 Tropfen Bleiche (oder Salz) gegen Algen zugeben",
+      "description": "1. **Mit sauberem Wasser bis zum Hals füllen**: Gießen Sie klares Wasser aus dem [Holzkohle-Sand-Filter](/protocol-01) oder [Baumwollsiphon](/protocol-23) fast randvoll ein.\n2. **3 Tropfen Bleiche oder grobes Salz zugeben**: Geben Sie **genau 3 Tropfen unparfümierte Bleiche** (oder **einen halben Esslöffel grobes Salz**) hinzu, damit sich in der Sonne keine grünen Algen bilden.\n3. **Luft herausdrücken & fest verschließen**: Flasche leicht drücken, Deckel kraftvoll zudrehen und gegen Verdunstung abdichten.",
+      "actionNote": "> Warum reines Wasser ohne Zusatz in Wochen versagt: Sonnenlicht lässt unbehandeltes Wasser in 2–3 Wochen veralgen und trüb-grün werden. Wenige Tropfen Bleiche oder Salz halten es über 5 Jahre kristallklar.",
+      "svgFileName": "pr34-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // RANDVOLL WASSER + 3 TROPFEN BLEICHE GEGEN ALGEN",
+        "Gefiltertes Wasser bis zum Hals für minimalen Luftraum",
+        "3 Tropfen Bleiche oder Salz stoppen grüne Algenbildung",
+        "Deckel fest schließen gegen 5-Jahres-Verdunstung",
+        "[KERN] Hält das Wasser dauerhaft glasklar für volles Licht"
+      ],
+      "deepDive": {
+        "badge": "ALGAE INHIBITION & REFRACTIVE INDEX",
+        "title": "Rundum-Lichtbrechung von Wasser (n=1,33) und Algenhemmung durch Chlor-Spuren",
+        "text": "Wasser im Zylinder (Brechungsindex **1,33**) streut einfallendes Sonnenlicht rundum als **Flüssigprisma**. Geringste Mengen Hypochlorit oder Salz unterbinden Photosynthese-Algen über Jahre.",
+        "fieldSpecs": [
+          {
+            "name": "Klares 1,5-L-Prisma bei Zugabe von reinem Wasser und 3 Tropfen Algen-Stopper",
+            "scientificName": "Crystal-Clear Water Prism with Trace Bleach or Salt Algae Inhibitor",
+            "categoryTag": "Brechungsmedium n=1,33 / Algenschutz",
+            "imageFileName": "id-bleach-drops-clear-water-bottle.jpg",
+            "hudCode": "FIG. SHELTER-34B // MACRO OPTIC",
+            "hudStatus": "ALGAE RISK: 0% SUPPRESSED",
+            "traits": [
+              {
+                "label": "Voll/Hals",
+                "value": "**Wasser bis zum Hals füllen** für gleichmäßige Rundum-Streuung."
+              },
+              {
+                "label": "Tropfen/Drei",
+                "value": "**3 Tropfen Bleiche oder grobes Salz** verhindern grüne Trübung."
+              },
+              {
+                "label": "KeinTrink",
+                "value": "**Deckel dauerhaft versiegeln**, Verwechslung mit Trinkwasser ausschließen."
+              }
+            ],
+            "fieldUse": "Langlebiges Flüssigprisma mit dauerhafter 55W-Raumhelligkeit"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Passgenaues Loch in die Fensterblende schneiden und vertikal im Verhältnis 1/3 außen : 2/3 innen montieren",
+      "description": "1. **Straffes Loch knapp unter Flaschendurchmesser sägen**: Flaschenboden auf Holz oder [3-Lagen-Wellpappplatte](/protocol-22) anzeichnen und **einen halben Finger (0,5 cm) kleiner** ausschneiden für Presssitz.\n2. **Geschlitzten Stützkragen anbringen**: Mit radial eingeschnittenem Haltering gegen Windwackeln sichern.\n3. **1/3 draußen und 2/3 drinnen einstecken**: Flasche so einsetzen, dass das **obere 1/3 außen in der Sonne** steht und **untere 2/3 tief im dunklen Raum** hängen.",
+      "actionNote": "> Warum 1/3 außen und 2/3 innen statt halbe-halbe: Zu wenig außen sammelt kaum Licht; zu viel außen lässt Licht draußen entweichen. Das 1:2-Verhältnis optimiert Einfall und 360°-Abstrahlung.",
+      "svgFileName": "pr34-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BLENDEN-AUSSCHNITT + 1/3 AUSSEN : 2/3 INNEN SITZ",
+        "Loch minimal enger als Durchmesser für festen Halt sägen",
+        "Oberes 1/3 draußen fängt breites Himmels-Sonnenlicht ein",
+        "Untere 2/3 im Raum strahlen 360 Grad Tageslicht ab",
+        "[KERN] Vertikales 1:2 Verhältnis maximiert Raumhelligkeit"
+      ],
+      "deepDive": {
+        "badge": "1:2 PRISM MOUNTING GEOMETRY",
+        "title": "Solarsammlung vs. 360°-Innenraumstreuung durch vertikale 1:2-Montage",
+        "text": "Die äußere **1/3-Kuppel** fängt Direkt- und Himmelslicht ein, während der innere **2/3-Zylinder** es per Wandreflexion seitlich und abwärts verteilt.",
+        "fieldSpecs": [
+          {
+            "name": "Wasserprisma im Verhältnis 1:2 senkrecht in ausgeschnittener Fensterblende mit Kragen",
+            "scientificName": "Circular Cutout Blackout Panel & Protective Flashing Collar Mount",
+            "categoryTag": "1:2 Einbauverhältnis / Rutschfester Kragen",
+            "imageFileName": "id-window-board-bottle-collar-fit.jpg",
+            "hudCode": "FIG. SHELTER-34C // MACRO OPTIC",
+            "hudStatus": "MOUNT RATIO: 1/3 OUT : 2/3 IN",
+            "traits": [
+              {
+                "label": "Schnitt/Eng",
+                "value": "**Loch knapp enger ausschneiden**, damit das Wassergewicht sicher hält."
+              },
+              {
+                "label": "Kragen/Halt",
+                "value": "**Geschlitzter Flanschring** stabilisiert die Flasche auch bei Sturm."
+              },
+              {
+                "label": "Teilung/1zu2",
+                "value": "**1/3 außen zur Sonne : 2/3 innen** für beste Rundum-Ausleuchtung."
+              }
+            ],
+            "fieldUse": "Stabile Halterung für 1,5 kg schwere Solarleuchten in abgedunkelten Notunterkünften"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Außenfuge mit Harz wasserdicht abschließen und innen Alufolien-Reflektor anbringen",
+      "description": "1. **Außennaht doppelt abdichten**: Den angerauten 1/3-Übergang außen dick mit [Kiefernharz-Kleber](/protocol-10), geöltem Lehm oder Dichtband mit Gefälle nach außen versiegeln, damit **kein Regentropfen eintritt**.\n2. **Innen-Alufolienschirm anbringen**: Innen rund um das Loch eine Handspanne Alufolie ankleben – wirft Streulicht nach unten auf den Tisch und erhöht die Helligkeit um das 1,5-Fache.\n3. **Blende im Fensterrahmen fixieren**: Mit [Splitterschutzband](/protocol-31) einsetzen für feuerfreies Tageslicht.",
+      "actionNote": "> Warum akkurate Außenabdichtung überlebenswichtig ist: Eindringender Regen durchnässt Betten und Vorräte und löst Unterkühlung sowie Schimmel aus. Fuge stets nach außen abgeschrägt dichten.",
+      "svgFileName": "pr34-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WASSERDICHTE FUGE + 360-GRAD 55W RAUMHELLIGKEIT",
+        "Naht zwischen Flasche und Platte mit Harz/Lehm dichten",
+        "Innen-Alufolienkragen lenkt Streulicht hell nach unten",
+        "Liefert tagsüber 55W-Licht völlig ohne Feuer oder Strom",
+        "[KERN] 0% Brand- & CO-Gefahr – sicheres Tageslicht drinnen"
+      ],
+      "deepDive": {
+        "badge": "OMNIDIRECTIONAL SOLAR DAYLIGHTING",
+        "title": "Wetterfester Kragenverschluss und Lichtlenkung per Alufolien-Reflektor",
+        "text": "Offene Flammen zehren Sauerstoff; das **Wasserprisma** liefert **400–600 Lumen (~55W)** ohne Hitze, Rauch oder CO. Ein einfacher **Alufolienkragen** innen verstärkt das Nutzlicht auf Arbeitsflächen deutlich.",
+        "fieldSpecs": [
+          {
+            "name": "Dunkler Schutzraum rundum mit 55W Tageslicht durch abgedichtetes Wasserprisma erhellt",
+            "scientificName": "Waterproof Sealed Solar Water Bottle Prism Delivering 55W Equivalent Indoor Light",
+            "categoryTag": "Regendicht / Hitzefreies 360°-Tageslicht",
+            "imageFileName": "id-solar-bottle-360-indoor-glow.jpg",
+            "hudCode": "FIG. SHELTER-34D // MACRO OPTIC",
+            "hudStatus": "OUTPUT: ~55W DAYLIGHT EQUIV",
+            "traits": [
+              {
+                "label": "Dicht/Regen",
+                "value": "**Harz oder Öllehm nach außen abfallend** auftragen gegen Starkregen."
+              },
+              {
+                "label": "Folie/Boost",
+                "value": "**Alufolienrand innen** lenkt sonst verlorenes Licht auf den Boden."
+              },
+              {
+                "label": "NullCO/Sicher",
+                "value": "Taghell lesen und kochen mit **0 % Brand- oder CO-Risiko**."
+              }
+            ],
+            "fieldUse": "Taghelle Ausleuchtung abgedunkelter Noträume ohne Akku- oder Brennstoffverbrauch"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Bleichmittel-Wasser der Flasche versehentlich trinken oder Außenfuge undicht lassen",
+    "description": "Das versiegelte Wasser enthält Bleiche oder starkes Salz gegen Algen und ist KEIN Trinkwasser! Kleben Sie den Deckel fest mit [Kiefernharz](/protocol-10) zu, um Verwechslung auszuschließen. Undichte Fugen durchnässen im Regen Ihre [Karton-Wärmekapsel](/protocol-22) und lösen Unterkühlung aus. Bei versehentlichem Trinken und Durchfall sofort mit [Oraler Rehydratationslösung (ORS)](/protocol-24) ausgleichen.",
+    "consequence": "Magenreizung und Dehydrierung durch Verwechslung oder Unterkühlung durch Regeneinbruch."
+  },
+  "faqs": [
+    {
+      "question": "Wie baue ich das in einer Wohnung ohne Dachbohrung ans Fenster und dunkle nachts ab?",
+      "causeDiagnostic": "Betondecken lassen keine Dachlöcher zu, aber Fensterrahmen nehmen herausnehmbare Blenden auf.",
+      "resolution": "Schneiden Sie ein passendes 3-Lagen-Karton- oder Holzbrett für den Fensterrahmen und setzen die 1,5-L-Flasche oben **um 30–45° schräg zum Himmel** zeigend ein. Nachts stülpen Sie einfach ein dunkles Tuch oder eine [Kartonhaube](/protocol-22) über die inneren 2/3."
+    },
+    {
+      "question": "Leuchtet die Flasche auch bei bewölktem Winterwetter ohne direkte Sonne hell genug?",
+      "causeDiagnostic": "Wasserbrechung sammelt nicht nur direkte Sonne, sondern auch das diffuse Licht geschlossener Wolkendecken.",
+      "resolution": "Bei voller Mittagssonne leuchtet sie wie eine **55W-Birne**, bei Regen oder grauen Wolken bleiben drinnen nutzbare **15–25W** – genug zum Lesen und Orientieren. Ein zerknitterter Alufolien-Spiegel draußen unter dem Flaschenhals steigert Bewölkungslicht deutlich."
+    }
+  ],
+  "outcome": {
+    "title": "1:2 Solar-Wasserprisma mit Regendichtung & Alufolien-Verstärker für 55W Raumlicht (Liter of Light)",
+    "badge": "TARGET OUTCOME // STROMLOSE 55W-SOLAR-WASSERPRISMA-LEUCHTE",
+    "description": "Stromlose Notbeleuchtung aus klarer 1,5-L-Flasche mit Wasser und 3 Tropfen Bleiche (oder Salz), im Verhältnis 1/3 außen zu 2/3 innen in Fensterblende montiert, harzgedichtet und innen alukaschiert für sichere 55W Raumhelligkeit ohne Feuer oder CO.",
+    "svgFileName": "pr34-outcome.svg",
+    "svgLabels": [
+      "PR-34 COMPLETE // 1.5L WASSERPRISMA 55W SOLARLICHT",
+      "STUFE 01: ETIKETT AB & ANRAUEN",
+      "Klarer Körper + rauer Klemmring",
+      "STUFE 02: WASSER & 3 TROPFEN",
+      "Voll bis Hals + stoppt Algen",
+      "STUFE 03: 1:2 EINBAU IM PANEL",
+      "1/3 draußen Sonne + 2/3 drinnen",
+      "STUFE 04: DICHTUNG & FOLIE",
+      "Regendicht + 55W Rundum-Licht",
+      "[PRINZIP] Wasserbrechung liefert tagsüber sicher 55W Raumlicht ohne Strom oder Feuer"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Tagelanger Stromausfall und vernagelte Fenster machen das Zimmer selbst mittags stockdunkel? Erhelle den ganzen Raum mit 55W Leuchtkraft aus einer einzigen 1,5L-Wasserflasche!",
+    "body": "Kerzen am Tag verschwenden Nacht-Brennstoff. Erstens: Etikett von einer klaren 1,5L-Flasche abziehen und nur das obere Drittel als Klemmring leicht anrauen. Zweitens: Randvoll mit klarem Wasser plus 3 Tropfen Bleiche oder Salz füllen, damit keine Algen wachsen, und fest verschließen. Drittens: Passendes Loch in die Fensterblende schneiden – 1/3 nach draußen zur Sonne, 2/3 nach innen. Viertens: Fuge außen mit Kiefernharz oder Dichtband versiegeln – schon flutet sicheres 55W-Tageslicht deinen Schutzraum!"
+  },
+  "createdAt": "2026-11-18T05:23:28.224Z",
+  "contentHash": "e2d10bf877747894"
+}
