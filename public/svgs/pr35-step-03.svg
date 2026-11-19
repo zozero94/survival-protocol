@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg35s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="brick35s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.95"/>
+    </linearGradient>
+    <pattern id="grid35s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow35s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg35s3)"/>
+  <rect width="400" height="400" fill="url(#grid35s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 03 // 2겹 대형 봉투 50~60% 충전 납작 물주머니 벽돌 성형</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9.5">터짐 방지를 위해 반드시 50~70L 봉투 2겹 포개기</text>
+
+  <!-- Split Comparison: Top Overfilled Round Balls Leaking Beneath (X) vs Bottom Flat 50-60% Bricks Flush with Floor (Check) -->
+  <g filter="url(#shadow35s3)">
+    <!-- Left Card: Overfilled Round Bags Leaving Triangular Bottom Leak Gaps (X) -->
+    <rect x="18" y="84" width="142" height="196" rx="4" fill="#180a0a" stroke="#dc2626" stroke-width="1.5"/>
+    <ellipse cx="62" cy="176" rx="34" ry="34" fill="#1e3a8a" stroke="#ef4444" stroke-width="1.5"/>
+    <ellipse cx="122" cy="176" rx="34" ry="34" fill="#1e3a8a" stroke="#ef4444" stroke-width="1.5"/>
+    <line x1="26" y1="210" x2="152" y2="210" stroke="#78716c" stroke-width="2"/>
+    <!-- Muddy leak arrow slipping through triangular gap under round bags -->
+    <line x1="92" y1="204" x2="92" y2="226" stroke="#ef4444" stroke-width="2.5"/>
+    <polygon points="92,232 87,223 97,223" fill="#ef4444"/>
+    <!-- Red X -->
+    <circle cx="89" cy="252" r="15" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <line x1="81" y1="244" x2="97" y2="260" stroke="#fca5a5" stroke-width="2.5"/>
+    <line x1="97" y1="244" x2="81" y2="260" stroke="#fca5a5" stroke-width="2.5"/>
+
+    <!-- Right Card: Flat 50-60% Double-Layer Water Bricks Hugging Floor With Zero Gaps (Check) -->
+    <rect x="172" y="84" width="210" height="196" rx="4" fill="#0d131a" stroke="#22c55e" stroke-width="1.5"/>
+    <!-- Flat Brick 1 (Double-layered outline + loose top knot) -->
+    <rect x="188" y="168" width="84" height="40" rx="10" fill="url(#brick35s3)" stroke="#bae6fd" stroke-width="2"/>
+    <rect x="186" y="166" width="88" height="44" rx="11" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <circle cx="230" cy="156" r="7" fill="#0284c7" stroke="#fde047" stroke-width="1.5"/>
+
+    <!-- Flat Brick 2 Pressed Flush Next to Brick 1 -->
+    <rect x="276" y="168" width="88" height="40" rx="10" fill="url(#brick35s3)" stroke="#bae6fd" stroke-width="2"/>
+    <rect x="274" y="166" width="92" height="44" rx="11" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <circle cx="320" cy="156" r="7" fill="#0284c7" stroke="#fde047" stroke-width="1.5"/>
+
+    <!-- Continuous Contact Floor Line (Zero Gaps) -->
+    <line x1="180" y1="210" x2="374" y2="210" stroke="#4ade80" stroke-width="2.5"/>
+
+    <!-- Air Squeeze Out Vectors Top -->
+    <line x1="208" y1="146" x2="208" y2="118" stroke="#fde047" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="208,112 203,121 213,121" fill="#fde047"/>
+    <line x1="342" y1="146" x2="342" y2="118" stroke="#fde047" stroke-width="2" stroke-dasharray="3 2"/>
+    <polygon points="342,112 337,121 347,121" fill="#fde047"/>
+
+    <!-- Green Check -->
+    <circle cx="277" cy="252" r="15" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <polyline points="270,252 275,257 285,246" fill="none" stroke="#86efac" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">물 50~60%(절반)만 채우고 공기 빼서 윗부분 매듭</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#0f291e" stroke="#22c55e" stroke-width="1"/>
+  <text x="24" y="344" fill="#86efac" font-family="monospace" font-size="9">둥근 빵빵형(X) 금지: 납작 벽돌형(V)이라야 틈새 0%</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 반충전 유연성이 바닥 굴곡·서로 맞닿은 면을 빈틈없이 메움</text>
+</svg>

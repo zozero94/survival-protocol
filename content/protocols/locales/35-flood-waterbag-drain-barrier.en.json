@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-35",
+  "category": "MATERIALS",
+  "title": "How to Build a Zero-Power Floodwater Bag Dam and Block Sewer Drain Backflow Using Trash Bags, Rubber Gloves, and Water or Sand",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[URBAN FLOOD DEFENSE & SEWER DRAIN BACKFLOW BARRIER ENGINEERING]",
+  "summary": "If your home or building entrance already has commercial flood barriers, water-activated swelling flood sacks, or mechanical sewer backflow valves installed, close and deploy those factory flood systems first as the fastest, safest defense. However, during severe typhoons, flash floods, earthquakes, or burst water mains in low-lying ground-floor or semi-basement homes without sandbags or flood gates, sewage and muddy runoff surge backward up through the lowest bathroom floor drains, toilet traps, and front doorways—flooding rooms and creating severe electrocution and bacterial hazards within minutes. By sealing floor drains under three layers of waterproof bags and rubber gloves weighted with 10kg+ water jugs, plugging shut-off toilets into an [Emergency Dry Toilet](/protocol-25), and stacking double-layered half-filled 'water bricks' in a two-row staggered U-wrapped dam, you can block 30cm floods and sewage backflow in 15 minutes with zero power.",
+  "timeRequired": "15 mins emergency setup (5 mins drain & toilet seal + 10 mins doorway dam)",
+  "successRate": "96% (with double-layered bags, 50-60% water fill for flat conformity, and 2-row staggered stacking)",
+  "difficulty": "Beginner (No tools needed; uses only heavy trash bags, rubber gloves, waterproof sheets, and tap water)",
+  "outputPerHour": "100% seal on floor drains and toilet backflow plus an adult shin-high (30cm) doorway flood barrier",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Heavy-Duty Large Trash Bags (50-70L, 1 Pack of 16-20) & 2 Large Waterproof Sheets",
+      "desc": "Forms the continuous U-shaped doorway liner rising to shin height (30cm) and the double-layered bags filled halfway with water to mold flat flood bricks. Tape sheet edges onto door jambs with wide waterproof backing from [Blast Window Taping](/protocol-31) or seal gaps with [Pine Resin Adhesive](/protocol-10)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1-2 Pairs Thick Kitchen Rubber Gloves (or Rubber Pad) & 2-3 Heavy Water Jugs (10kg+ Each)",
+      "desc": "Lays flat over bathroom and laundry floor drain grates to form an airtight rubber diaphragm seal, then presses straight down with 10kg+ water jugs or packed bottle bundles to overpower upward sewage pressure."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 Medium Bags for Toilet Trap Plug & Valve Shut-Off Access (or Wet Sand / Potting Soil)",
+      "desc": "After closing the wall water supply valve, wedges a soft half-filled double bag plug into the toilet trap to stop sewage eruption and convert to an [Emergency Dry Toilet](/protocol-25). If tap water fails, fill bags halfway with yard sand or soil instead."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Cover Bathroom and Laundry Floor Drains with 3-Layer Bags and Rubber Gloves Weighted by 10kg+ Jugs",
+      "description": "1. **Seal the Lowest Floor Drains First**: When storm sewers surcharging reaches building pipes, foul water erupts first from the lowest bathroom and utility floor drains—always block these before the front door.\n2. **Spread 3 Flat Rubber & Waterproof Layers**: Leave the metal drain strainer closed; center **2 thick waterproof bags topped with a flattened rubber glove** extending one full hand-span beyond the drain edges on all sides.\n3. **Press Down with 10kg+ Water Jugs**: Set a **10L+ full water jug or 6-pack bundle of 2L bottles (12kg)** squarely over the center of the glove so downward gravity crushes upward pipe surge.",
+      "actionNote": "> Why you must never pry open the drain grate to stuff rags inside: Opening a pressurized drain cap immediately vents sewer gas and surging wastewater onto your hands and floor. Pressing a wide 3-layer rubber diaphragm over the closed grate under 10kg+ weight locks tightly into tile grout lines.",
+      "svgFileName": "pr35-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FLOOR DRAIN 3-LAYER RUBBER SEAL + 10KG+ WEIGHT",
+        "Keep drain cap closed; cover wide with 3 waterproof layers",
+        "Place thick rubber glove + bags under 10kg+ water jug",
+        "Counterweight gravity overpowers upward sewer surge",
+        "[CORE] Seal lowest floor drains first with 3 layers + load"
+      ],
+      "deepDive": {
+        "badge": "FLOOR DRAIN BACKFLOW SEAL",
+        "title": "Hydrostatic Counterweight Equilibrium Over Elastomeric Rubber Diaphragm",
+        "text": "A 30-50cm head surcharge in municipal storm drains exerts roughly **3-5kg of upward force** on a 10cm floor drain opening. Compliant **rubber gloves layered over double waterproof sheets** fill microscopic tile joints, while a **10kg+ water jug load** delivers more than double the downward counter-force needed to lock out sewage.",
+        "fieldSpecs": [
+          {
+            "name": "Floor Drain Sealed Under 3-Layer Waterproof Bag, Rubber Glove, and 10kg+ Water Jug",
+            "scientificName": "Multi-Layer Rubber Glove & Sheet Diaphragm Under 10kg+ Hydrostatic Counterweight",
+            "categoryTag": "Floor Drain Seal / 10kg+ Counterweight",
+            "imageFileName": "id-floor-drain-rubber-glove-weight-seal.jpg",
+            "hudCode": "FIG. MAT-35A // MACRO OPTIC",
+            "hudStatus": "BACKFLOW SEAL: 10KG+ PRESSED",
+            "traits": [
+              {
+                "label": "Cap/Closed",
+                "value": "**Keep the metal drain grate closed** and seal cleanly from above."
+              },
+              {
+                "label": "Rubber/3x",
+                "value": "**Layer 2 waterproof bags + 1 rubber glove** flat across tile grout."
+              },
+              {
+                "label": "Weight/10kg",
+                "value": "**Center a 10kg+ water container** directly above to hold surge pressure."
+              }
+            ],
+            "fieldUse": "Blocking sewage backflow at the lowest bathroom and utility floor drains within 5 minutes"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Shut the Toilet Supply Valve and Wedge a Half-Filled Double Bag Plug Into the Drain Throat",
+      "description": "1. **Close the Wall Supply Valve**: Turn the water shut-off valve behind the toilet clockwise until completely closed so accidental flushing never overflows the bowl.\n2. **Build a Double-Bag Soft Water Plug**: Nest two medium bags together, fill **only halfway (50%) with tap water**, squeeze out trapped air, and twist-tie the neck near the top.\n3. **Seat Firmly Into the Bowl Throat**: Wearing rubber gloves, press the floppy half-filled water plug firmly into the bottom throat opening of the porcelain bowl until it conforms tightly all around, then use the [Emergency Dry Toilet](/protocol-25) method.",
+      "actionNote": "> Why rigid sticks or dry towels alone fail inside toilet traps: Cloth wicks dirty sewer water straight through fibers, and stiff objects leave crescent gaps against curved porcelain walls. A half-filled double water bag deforms under rising back-pressure to wedge tighter against the ceramic bend.",
+      "svgFileName": "pr35-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TOILET VALVE SHUTOFF + DOUBLE WATER-BAG PLUG",
+        "Shut rear wall valve tight; ban flushing during flood",
+        "Half-fill (50%) nested 2-ply bag with air squeezed out",
+        "Press soft water plug deep into porcelain S-trap throat",
+        "[CORE] Compliant water plug molds 100% flush to bowl curve"
+      ],
+      "deepDive": {
+        "badge": "TOILET TRAP COMPRESSION PLUG",
+        "title": "Self-Sealing Conformability of Airless Half-Filled Water Plugs in Curved Traps",
+        "text": "Porcelain toilet traps curve sharply through an 8-10cm throat. An air-purged **half-filled double-bag water plug** matches fluid density and flexes outward as upward sewer head pushes against its underside, acting as a self-tightening gasket that prevents sewage fountain surges.",
+        "fieldSpecs": [
+          {
+            "name": "Closed-Valve Toilet Bowl Throat Sealed Tightly with Half-Filled Double Water Bag Plug",
+            "scientificName": "Half-Filled Double-Bag Conformable Water Plug Wedged in Toilet Trap",
+            "categoryTag": "Supply Shutoff / S-Trap Backflow Plug",
+            "imageFileName": "id-toilet-trap-half-waterbag-plug.jpg",
+            "hudCode": "FIG. MAT-35B // MACRO OPTIC",
+            "hudStatus": "TOILET TRAP: PLUGGED & LOCKED",
+            "traits": [
+              {
+                "label": "Valve/Shut",
+                "value": "**Close the rear supply valve** first to stop accidental tank flushes."
+              },
+              {
+                "label": "Fill/50%",
+                "value": "**Half-fill nested 2-ply bags** so the plug flexes into the curved throat."
+              },
+              {
+                "label": "Mode/Dry",
+                "value": "Switch to **Emergency Dry Toilet bags** until flood sewers drain."
+              }
+            ],
+            "fieldUse": "Immediately stopping catastrophic sewage eruption from ground-floor and basement toilets"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Half-Fill Double 50-70L Trash Bags (50-60%), Purge Air, and Tie 8-12 Flat 'Water Bricks'",
+      "description": "1. **Double-Layer Every Bag**: Always nest **two 50-70L heavy-duty trash bags together** so rough concrete thresholds or pebble grit never puncture a single thin wall.\n2. **Fill Only Halfway (50-60%)**: Inside a bathtub or deep basin, fill with tap water to only **50-60% capacity (10-15kg per bag—heavy but flattened)**.\n3. **Purge Air and Knot High**: Flatten the neck to push out every air pocket and knot high up near the rim so each bag spreads into a **wide, squat rectangular brick**; make 8-12 bricks (use damp soil or sand if water pressure is lost).",
+      "actionNote": "> Why overfilling bags tight like balloons ruins a flood wall: Tight round bags touch only at narrow side points, leaving wide triangular tunnels along the concrete floor where muddy floodwater jets straight inside. Half-filled airless bags slump flat under their own weight for 100% ground contact.",
+      "svgFileName": "pr35-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 2-PLY 50-60% WATER FILL FLAT WATER BRICKS",
+        "Always nest two 50-70L bags to prevent threshold tear",
+        "Fill only 50-60% water, squeeze air out, knot high rim",
+        "No tight round balls (X): flat floppy bricks (V) seal gaps",
+        "[CORE] Slumping half-fill conforms flat with zero floor gap"
+      ],
+      "deepDive": {
+        "badge": "MALLEABLE WATER BRICK GEOMETRY",
+        "title": "Maximizing Basal Contact Area via 50-60% Air-Purged Malleable Water Bricks",
+        "text": "Sandbags seal doorways because loose sand flows horizontally to fill floor cracks. **Double-layered 50-60% water bricks** behave identically: internal slack lets water slump into a **12-15cm high rectangular slab** with broad flat faces against both floor concrete and neighboring bricks.",
+        "fieldSpecs": [
+          {
+            "name": "Double-Layered Large Bags Filled 50-60% and Tied Airless Into Flat Flood Bricks",
+            "scientificName": "Double-Layered Half-Filled Malleable Water Brick Barriers",
+            "categoryTag": "50-60% Half-Fill / Double-Wall Tear Guard",
+            "imageFileName": "id-double-layered-half-filled-water-bricks.jpg",
+            "hudCode": "FIG. MAT-35C // MACRO OPTIC",
+            "hudStatus": "FILL RATIO: 50-60% CONFORMABLE",
+            "traits": [
+              {
+                "label": "Double/2-Ply",
+                "value": "**Nest at least 2 bags** on every brick to prevent grit punctures."
+              },
+              {
+                "label": "Flat/50-60%",
+                "value": "**Fill half full without air** so bags spread into squat bricks."
+              },
+              {
+                "label": "Count/8-12",
+                "value": "**Prepare 8-12 water bricks** to span and stack a standard 1m doorway."
+              }
+            ],
+            "fieldUse": "Manufacturing heavy flood barrier bricks indoors from tap water when sandbags are absent"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: U-Wrap the Doorway Floor to 30cm High in a Sheet and Stack 2 Staggered Rows of Water Bricks",
+      "description": "1. **Lay a 30cm U-Shaped Waterproof Liner**: Center a large slit open waterproof sheet or tarpaulin across the doorway floor so its sides fold **at least shin-high (30cm) up both door jambs**.\n2. **Stack Two Staggered Brick Rows (Running Bond)**: Lay the outer row of water bricks snugly across the sheet, then lay the second inner row **offset by half a brick width** to cover every first-row seam; stack a second tier if needed for 25-30cm height.\n3. **Fold the Front Flap Over and Tape Jambs**: Pull the front outer sheet flap backward over the top of the bricks and anchor side wings to the wall with wide waterproof tape from [Blast Window Taping](/protocol-31) so rising water presses the liner tighter against the dam.",
+      "actionNote": "> Why stacking water bags bare on bare tile still leaks without a U-wrapped sheet: Even tightly pressed bags leave hairline seepage channels against rough threshold concrete. Wrapping the front apron up and over the brick stack uses external floodwater pressure to squeeze the sheet tight like a check valve.",
+      "svgFileName": "pr35-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // U-WRAPPED SHEET + 2-ROW STAGGERED 30CM DAM",
+        "Line floor and jamb walls 30cm high with continuous sheet",
+        "Offset 2nd row seams half-brick in staggered running bond",
+        "Fold front sheet apron over crown so floodwater seals tight",
+        "[CORE] U-sheet + staggered 2-row stack stops 30cm floods"
+      ],
+      "deepDive": {
+        "badge": "STAGGERED WATER-BARRIER MECHANICS",
+        "title": "Hydrostatic Sheet Pre-Compression and Running-Bond Seam Interruption",
+        "text": "When external muddy water rises against the folded **U-shaped outer apron**, hydrostatic force clamps the continuous plastic membrane tightly into the staggered **water-brick wall**. Offsetting row seams in a **running bond** eliminates straight seepage channels across the dam.",
+        "fieldSpecs": [
+          {
+            "name": "Doorway Flood Dam Built with U-Wrapped Waterproof Sheet and Two Staggered Water Brick Rows",
+            "scientificName": "Tarp-Wrapped Two-Row Staggered Water-Brick Doorway Flood Barrier (30cm)",
+            "categoryTag": "U-Sheet Wrap / Staggered 2-Row Dam",
+            "imageFileName": "id-staggered-doorway-waterbag-flood-dam.jpg",
+            "hudCode": "FIG. MAT-35D // MACRO OPTIC",
+            "hudStatus": "FLOOD DAM: 30CM STAGGERED SEAL",
+            "traits": [
+              {
+                "label": "Sheet/U-Wrap",
+                "value": "**Continuous sheet from outer floor over crown** stops hairline leaks."
+              },
+              {
+                "label": "Bond/Offset",
+                "value": "**Stagger every brick seam** between front and back rows tightly."
+              },
+              {
+                "label": "Height/30cm",
+                "value": "**Two-tier stacking holds up to 30cm** shin-depth muddy floodwater."
+              }
+            ],
+            "fieldUse": "Final zero-power doorway flood barrier protecting ground floors and semi-basements"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Building Flood Dams in Standing Water Without Tripping the Breaker or Overfilling Single Thin Bags",
+    "description": "If floodwater has already pooled around doorways or basement outlets, shut off the main home electrical breaker FIRST and wear dry rubber boots and gloves before touching water—submerged outlets cause lethal electrocution. Never fill a single thin trash bag 90% full; it bursts mid-carry and leaves round floor gaps. If flood sewage scratches skin, scrub thoroughly with [Wood Ash Lye Soap](/protocol-13) and flush cuts with [Sugar-Free Wound Saline](/protocol-24), and always treat any emergency floodwater through [Cotton Towel Filtering & SODIS](/protocol-23).",
+    "consequence": "Lethal electric shock in flooded hallways, sudden dam blowout flooding indoors, and severe bacterial wound infection."
+  },
+  "faqs": [
+    {
+      "question": "What if I only have small grocery bags or 1.5L-2L PET bottles instead of large 50L trash bags?",
+      "causeDiagnostic": "Small bags and cylindrical bottles leave gaps on their own, but an outer waterproof sheet and towel packing bridge them cleanly.",
+      "resolution": "Lay small half-filled bags or full 2L water bottles sideways in two staggered rows, pack old towels tight into bottom gaps, and **wrap the entire stack from front apron over the top inside one large raincoat, tarp, or sheet weighted with heavy water buckets** to stop floods up to 20cm."
+    },
+    {
+      "question": "What should I do if outside floodwater exceeds 30cm or buoyant pressure threatens to float my water bags?",
+      "causeDiagnostic": "Water-filled bags share the same density as floodwater (~1.0), so deeper external floods try to lift and shift the wall.",
+      "resolution": "Once outside floodwater tops 25cm, set **sand-filled bags, heavy dumbbells, rocks, or pots full of water/soil directly on top of the dam crown** to defeat buoyancy. If water surges toward thigh height, abandon lower floors immediately and evacuate upward onto furniture or upper building levels."
+    }
+  ],
+  "outcome": {
+    "title": "Integrated 3-Layer Weighted Drain Backflow Seal & U-Wrapped 2-Row Staggered 30cm Doorway Water-Bag Dam",
+    "badge": "TARGET OUTCOME // SEWER BACKFLOW SEAL & 30CM FLOOD DAM",
+    "description": "An emergency flood defense system that presses down lowest floor drains under 3-layer rubber diaphragms and 10kg+ water weights, plugs closed-valve toilet traps into an Emergency Dry Toilet, and wraps 50-60% half-filled double water bricks inside a U-shaped doorway sheet in two staggered rows to block 30cm floods and sewage surges.",
+    "svgFileName": "pr35-outcome.svg",
+    "svgLabels": [
+      "PR-35 COMPLETE // DRAIN BACKFLOW SEAL & 30CM FLOOD DAM",
+      "STAGE 01: FLOOR DRAIN WEIGHT SEAL",
+      "3-layer rubber cover + 10kg+ load",
+      "STAGE 02: TOILET SHUTOFF & PLUG",
+      "Close valve + 50% bag in throat",
+      "STAGE 03: FLAT WATER BRICKS",
+      "2-ply 50% fill airless knotted flat",
+      "STAGE 04: U-SHEET + 2-ROW DAM",
+      "Staggered bricks hold 30cm surge",
+      "[PRINCIPLE] Counterweight crushes drain surge while U-wrapped staggered water bricks block 30cm floods"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Flash flood outside and zero sandbags at home? Stop muddy doorway floods and nasty bathroom sewer backflow in 15 minutes using trash bags and tap water!",
+    "body": "First, cut the main breaker if water is already near outlets, then NEVER open your lowest bathroom floor drain cap—cover it wide with two waterproof bags plus a rubber glove and press it down with a 10kg+ water jug. Second, shut the valve behind your toilet and wedge a half-filled double water bag snugly down the porcelain throat to lock out sewage. Third, double up 50L trash bags, fill ONLY halfway, squeeze out air, and tie high so they flop into flat water bricks—not tight round balls. Fourth, line your doorway 30cm high with a waterproof sheet, stack two staggered rows of water bricks, and fold the sheet back over the top!"
+  },
+  "createdAt": "2026-11-19T04:34:21.301Z",
+  "contentHash": "313800a5da7dda87"
+}

@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-35",
+  "category": "MATERIALS",
+  "title": "Como Fazer Barreira de Sacos de Água Sem Energia e Bloquear Refluxo de Ralos e Vaso Sanitário na Enchente",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFESA CONTRA ENCHENTE URBANA E VEDAÇÃO DE REFLUXO DE ESGOTO]",
+  "summary": "Se sua casa ou entrada já possui comportas comerciais antienchente, sacos expansivos com gel ou válvulas de retenção na rede, feche e acione esses equipamentos de fábrica primeiro por serem os mais rápidos e seguros. Porém, em temporais severos, enchentes ou rompimento de adutoras em térreos e porões sem sacos de areia, água barrenta e esgoto retornam pelos ralos mais baixos do banheiro, vaso sanitário e fresta da porta em minutos, gerando risco grave de choque elétrico e infecção. Cobrindo os ralos com três camadas de sacos impermeáveis e luvas de borracha sob galões de 10 kg+, travando o vaso com tampão de saco de água como [Banheiro Seco de Emergência](/protocol-25) e empilhando tijolos de água duplos pela metade em duas fileiras alternadas dentro de lona em U, você barra cheias de até 30 cm em 15 minutos sem energia.",
+  "timeRequired": "15 min montagem rápida (5 min ralo e vaso + 10 min barreira na porta)",
+  "successRate": "96% (com saco duplo, enchimento 50-60% sem ar e amarração em duas fileiras alternadas)",
+  "difficulty": "Iniciante (sem ferramentas; apenas sacos fortes, luvas de borracha, lona e água)",
+  "outputPerHour": "Bloqueio total de refluxo em ralos e vaso mais dique de entrada para até 30 cm de água",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Sacos de Lixo Grandes Reforçados (50-70 L, 16-20 uds) e 2 Lonas Impermeáveis Largas",
+      "desc": "Forma o berço contínuo em U de 30 cm no batente e os tijolos flexíveis em saco duplo enchidos pela metade. Prenda as abas nos batentes com fita larga de [Reforço de Vidros](/protocol-31) ou vede frestas com [Resina de Pinheiro](/protocol-10)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1-2 Pares de Luvas de Borracha Grossas (ou Folha de Borracha) e 2-3 Galões de 10 kg+",
+      "desc": "Cobre plano as grelhas do banheiro e lavanderia formando selo elástico de borracha, pressionado de cima para baixo por galões cheios ou fardos de garrafas (10 kg+) para vencer a pressão do esgoto."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 Sacos Médios para Tampão do Vaso e Registro Fechado (ou Areia Úmida / Terra)",
+      "desc": "Após fechar o registro da parede, encaixa um saco duplo meio cheio na saída do vaso para impedir refluxo e converter no [Banheiro Seco de Emergência](/protocol-25). Se faltar água, encha os sacos com areia ou terra úmida."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Cubra Ralos de Piso Baixos com 3 Camadas Impermeáveis, Luva de Borracha e Peso de 10 kg+",
+      "description": "1. **Vede Primeiro o Ralo Mais Baixo**: Quando a galeria enche, o esgoto sobe primeiro pelo ralo mais baixo do banheiro ou área antes de entrar pela porta — bloqueie os ralos antes de tudo.\n2. **Estenda 3 Camadas Planas de Borracha e Plástico**: Jamais retire a grelha metálica; cubra por cima passando um palmo além das bordas com **2 sacos grossos e 1 luva de borracha aberta bem esticada**.\n3. **Pressione com Galão de 10 kg+ no Centro**: Apoie um **galão cheio de 10 L+ ou fardo de 6 garrafas de 2 L (12 kg)** exatamente no meio para vencer o empuxo de baixo.",
+      "actionNote": "> Por que nunca abrir a tampa do ralo nem enfiar panos dentro? Ao soltar a grelha sob pressão, gás fétido e esgoto jorram direto para fora. Prensar 3 camadas de borracha por cima com 10 kg+ sela cada rejunte do piso com firmeza.",
+      "svgFileName": "pr35-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // RALO 3 CAMADAS BORRACHA + PESO DE 10KG+",
+        "Manter grelha fechada; cobrir largo com 3 camadas",
+        "Luva de borracha + sacos sob galão de água 10kg+",
+        "Contrapeso vertical vence pressão do refluxo",
+        "[CHAVE] Vedar ralo mais baixo primeiro com carga"
+      ],
+      "deepDive": {
+        "badge": "FLOOR DRAIN BACKFLOW SEAL",
+        "title": "Equilíbrio Hidrostático com Contrapeso Sobre Diafragma de Borracha",
+        "text": "Uma coluna externa de 30-50 cm gera cerca de **3-5 kg de pressão para cima** num ralo de 10 cm. **Luva de borracha e saco duplo** preenchem o micro-relevo do piso enquanto um **peso líquido de 10 kg+** dobra a força de retenção.",
+        "fieldSpecs": [
+          {
+            "name": "Ralo de Piso Vedado por 3 Camadas Impermeáveis, Luva de Borracha e Galão de 10 kg+",
+            "scientificName": "Multi-Layer Rubber Glove & Sheet Diaphragm Under 10kg+ Hydrostatic Counterweight",
+            "categoryTag": "Selo de Ralo / Contrapeso 10 kg+",
+            "imageFileName": "id-floor-drain-rubber-glove-weight-seal.jpg",
+            "hudCode": "FIG. MAT-35A // MACRO OPTIC",
+            "hudStatus": "BACKFLOW SEAL: 10KG+ PRESSED",
+            "traits": [
+              {
+                "label": "Grelha/Fixa",
+                "value": "**Mantenha a grelha fechada** e faça a vedação larga por cima."
+              },
+              {
+                "label": "Borracha/3x",
+                "value": "**Dois sacos fortes mais luva** vedam os rejuntes do azulejo."
+              },
+              {
+                "label": "Carga/10kg+",
+                "value": "**Centralize galão de 10 kg+** sobre a luva para travar o refluxo."
+              }
+            ],
+            "fieldUse": "Bloqueio imediato em 5 minutos contra refluxo nos ralos baixos da casa"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Feche o Registro do Vaso e Encaixe Tampão de Saco Duplo Meio Cheio na Garganta",
+      "description": "1. **Feche o Registro da Parede**: Gire até o fim o registro atrás do vaso sanitário para impedir descargas acidentais enquanto bloqueado.\n2. **Monte o Tampão Flexível Duplo**: Coloque um saco médio dentro do outro, encha **só até a metade (50%)**, retire todo o ar e dê nó bem na ponta superior.\n3. **Encaixe Firme na Curva do Sifão**: De luvas, pressione o saco mole na boca inferior de saída da louça até moldar sem folgas e passe a usar o [Banheiro Seco de Emergência](/protocol-25).",
+      "actionNote": "> Por que panos ou cabos duros falham na saída do vaso? Tecido encharca e vaza por capilaridade e madeira rígida deixa frestas nas curvas da louça. O saco duplo meio cheio deforma com o empuje de baixo e veda o sifão sozinho.",
+      "svgFileName": "pr35-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // REGISTRO FECHADO + TAMPÃO DUPLO 50%",
+        "Fechar registro traseiro e proibir dar descarga",
+        "Saco duplo só 50% com água, zero ar e nó alto",
+        "Encaixar tampão flexível fundo na garganta curva",
+        "[CHAVE] Tampão moldável veda 100% a curva da louça"
+      ],
+      "deepDive": {
+        "badge": "TOILET TRAP COMPRESSION PLUG",
+        "title": "Auto-Vedação por Moldagem de Tampão Líquido Sem Ar em Sifões Curvos",
+        "text": "O sifão do vaso tem 8-10 cm de diâmetro curvo. Um **tampão duplo meio cheio sem ar** se achata contra as paredes internas quanto maior for a pressão vinda da tubulação, funcionando como junta hidráulica sem quebrar a louça.",
+        "fieldSpecs": [
+          {
+            "name": "Saída de Vaso Sanitário Travada com Tampão de Saco Duplo Meio Cheio",
+            "scientificName": "Half-Filled Double-Bag Conformable Water Plug Wedged in Toilet Trap",
+            "categoryTag": "Registro Fechado / Tampão de Sifão",
+            "imageFileName": "id-toilet-trap-half-waterbag-plug.jpg",
+            "hudCode": "FIG. MAT-35B // MACRO OPTIC",
+            "hudStatus": "TOILET TRAP: PLUGGED & LOCKED",
+            "traits": [
+              {
+                "label": "Registro/Off",
+                "value": "**Feche o registro da parede** antes para evitar transbordo interno."
+              },
+              {
+                "label": "Cheio/50%",
+                "value": "**Meia carga em saco duplo** molda firme na curva do sifão."
+              },
+              {
+                "label": "Uso/Seco",
+                "value": "Adote o **Banheiro Seco de Emergência** durante toda a cheia."
+              }
+            ],
+            "fieldUse": "Interrupção instantânea de jatos de esgoto em vasos de térreo e subsolo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Use Sacos Duplos de 50-70 L a 50-60%, Tire o Ar e Amarre 8-12 'Tijolos de Água' Planos",
+      "description": "1. **Sempre Dobre Dois Sacos Juntos**: Coloque **dois sacos de 50-70 L um dentro do outro** para não furarem com areia ou concreto áspero.\n2. **Encha Apenas 50-60%**: Dentro da banheira ou balde fundo, coloque água só até **pouco acima da metade (10-15 kg por unidade)**.\n3. **Expulse Todo o Ar e Amarre na Ponta**: Aperte saindo cada bolha de ar e dê nó no topo para assentar como um **tijolo largo e achatado**; prepare 8 a 12 peças (use areia ou terra úmida se faltar água).",
+      "actionNote": "> Por que encher sacos estufados igual balão arruína a barreira? Sacos redondos encostam só num ponto e abrem túneis triangulares no chão por onde a enxurrada passa direto. Meio cheios sem ar, eles achatam pelo próprio peso zerando frestas.",
+      "svgFileName": "pr35-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SACO DUPLO 50-60% TIJOLO DE ÁGUA PLANO",
+        "Sempre usar 2 sacos 50-70L contra furos no piso",
+        "Encher só 50-60%, tirar ar e dar nó na ponta",
+        "Saco redondo (X) proibido: tijolo plano (V) veda",
+        "[CHAVE] Meia carga mole assenta plana sem frestas"
+      ],
+      "deepDive": {
+        "badge": "MALLEABLE WATER BRICK GEOMETRY",
+        "title": "Ampliação da Área de Contato Basal com Tijolos Flexíveis a 50-60%",
+        "text": "Sacos de areia funcionam porque o miolo cede e preenche imperfeições do piso. **Sacos duplos com 50-60% de água** fazem o mesmo: achatam para **12-15 cm de altura** com base larga grudada no concreto.",
+        "fieldSpecs": [
+          {
+            "name": "Sacos Duplos Grandes Cheios 50-60% Sem Ar Formando Tijolos de Água Planos",
+            "scientificName": "Double-Layered Half-Filled Malleable Water Brick Barriers",
+            "categoryTag": "Carga 50-60% / Parede Dupla",
+            "imageFileName": "id-double-layered-half-filled-water-bricks.jpg",
+            "hudCode": "FIG. MAT-35C // MACRO OPTIC",
+            "hudStatus": "FILL RATIO: 50-60% CONFORMABLE",
+            "traits": [
+              {
+                "label": "Duplo/2x",
+                "value": "**Encape 2 sacos juntos** para evitar rasgos no chão áspero."
+              },
+              {
+                "label": "Plano/50-60%",
+                "value": "**Meio cheio sem ar** espalha largo como bloco achatado."
+              },
+              {
+                "label": "Qtd/8-12",
+                "value": "**Monte 8 a 12 blocos** para vedar bem uma porta de 1 metro."
+              }
+            ],
+            "fieldUse": "Produção rápida de blocos antienchente com água encanada sem sacos de areia"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Forre o Batente em U Até 30 cm com Lona e Empilhe 2 Fileiras Alternadas de Tijolos",
+      "description": "1. **Forre o Chão e Laterais a 30 cm em U**: Estenda uma lona plástica larga diante da soleira subindo **no mínimo 30 cm (altura da canela) nos dois batentes**.\n2. **Monte 2 Fileiras Desencontradas (Amarração)**: Alinhe a fileira externa junta, depois a segunda fila interna **deslocada meio tijolo** cobrindo todas as emendas da primeira; suba 2 camadas para alcançar 25-30 cm.\n3. **Dobre a Aba Frontal Por Cima e Cole**: Puxe a sobra dianteira da lona cobrindo o topo dos blocos e prenda nas laterais com fita larga de [Reforço de Vidros](/protocol-31) para a própria água prensar a lona contra o muro.",
+      "actionNote": "> Por que empilhar sacos soltos direto no piso ainda deixa passar água? Mesmo apertados, ficam microfrestas de 1 mm no cimento. Dobrando a lona da frente para cima, a pressão da enxurrada prensa o plástico como válvula de vedação.",
+      "svgFileName": "pr35-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // LONA EM U + 2 FILAS ALTERNADAS 30CM",
+        "Forrar piso e batentes 30cm com lona contínua",
+        "Desencontrar 2a fila em meio tijolo sem emenda reta",
+        "Dobrar aba frontal no topo; cheia prensa a vedação",
+        "[CHAVE] Lona em U + 2 filas alternadas barra 30cm"
+      ],
+      "deepDive": {
+        "badge": "STAGGERED WATER-BARRIER MECHANICS",
+        "title": "Pré-Compressão Hidrostática de Lona Contínua e Quebra de Juntas",
+        "text": "Quando a água lamacenta sobe sobre a **aba dobrada em U**, sua pressão empurra a membrana plástica diretamente contra o núcleo de **tijolos em amarração alternada**, cortando qualquer caminho reto de vazamento.",
+        "fieldSpecs": [
+          {
+            "name": "Barreira de Porta com Lona em U e Duas Fileiras Alternadas de 30 cm",
+            "scientificName": "Tarp-Wrapped Two-Row Staggered Water-Brick Doorway Flood Barrier (30cm)",
+            "categoryTag": "Lona em U / Dique 2 Filas Alternadas",
+            "imageFileName": "id-staggered-doorway-waterbag-flood-dam.jpg",
+            "hudCode": "FIG. MAT-35D // MACRO OPTIC",
+            "hudStatus": "FLOOD DAM: 30CM STAGGERED SEAL",
+            "traits": [
+              {
+                "label": "Lona/Em U",
+                "value": "**Lona inteiriça do piso externo ao topo** elimina goteiras."
+              },
+              {
+                "label": "Junta/Alterna",
+                "value": "**Desencontrar meio bloco** quebra frestas entre fileiras."
+              },
+              {
+                "label": "Altura/30cm",
+                "value": "**Duas camadas firmes** seguram enxurrada até altura da canela."
+              }
+            ],
+            "fieldUse": "Barreira definitiva sem energia protegendo portas térreas contra entrada de lama"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Montar Contenção na Água Sem Desligar o Disjuntor Geral ou Estourar Saco Único Cheio Demais",
+    "description": "Se já há água acumulando na entrada ou perto de tomadas baixas, desligue o disjuntor geral no quadro de luz ANTES de tudo e use botas e luvas secas de borracha contra choque letal. Nunca encha 90% num saco fino só: ele rompe no transporte e abre brechas. Se ferir a pele na enchente, lave com [Sabão de Cinza](/protocol-13), limpe com [Soro Sem Açúcar](/protocol-24) e só beba água tratada com [Filtro de Pano e Luz Solar](/protocol-23).",
+    "consequence": "Choque elétrico letal no corredor alagado, colapso súbito da barreira e infecção bacteriana severa."
+  },
+  "faqs": [
+    {
+      "question": "E se eu só tiver sacolas pequenas de mercado ou garrafas PET de 1,5-2 L em vez de sacos grandes?",
+      "causeDiagnostic": "Embalagens pequenas deixam espaços entre si, mas preencher juntas e envolver numa lona única resolve.",
+      "resolution": "Alinhe garrafas cheias deitadas ou sacolas pequenas meio cheias em duas filas desencontradas, cale frestas baixas com toalhas velhas e **embrulhe tudo da frente ao topo numa capa de chuva ou lona pesada com baldes cheios** para conter até 20 cm de água."
+    },
+    {
+      "question": "O que fazer se a água externa passar de 30 cm e a flutuação começar a empurrar os sacos de água?",
+      "causeDiagnostic": "Sacos cheios de água têm densidade ~1,0 igual à enchente e tendem a boiar quando o nível externo os cobre.",
+      "resolution": "Ao passar de 25 cm fora, coloque **sacos com areia/terra, halteres, pedras ou panelas cheias por cima do topo da barreira** para vencer a flutuação. Se a água continuar subindo rápido para os joelhos, abandone o térreo e suba imediatamente para móveis altos ou andares superiores."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Integrado de Vedação Pesada de Ralos + Tampão no Vaso e Barreira Alternada de 30 cm na Porta",
+    "badge": "TARGET OUTCOME // SELO DE ESGOTO E DIQUE DE 30 CM",
+    "description": "Engenharia hidráulica de emergência sem energia que trava ralos baixos sob 3 camadas de borracha e 10 kg+, veda o sifão do vaso convertido em banheiro seco e envolve tijolos duplos de água 50-60% em lona em U com duas fileiras alternadas contra cheias de 30 cm.",
+    "svgFileName": "pr35-outcome.svg",
+    "svgLabels": [
+      "PR-35 COMPLETO // SELO DE RALO E DIQUE DE 30CM",
+      "ETAPA 01: PESO NO RALO",
+      "3 camadas borracha + galão 10kg+",
+      "ETAPA 02: TRAVA DO VASO",
+      "Fecha registro + saco 50% fundo",
+      "ETAPA 03: TIJOLOS DE ÁGUA",
+      "Saco duplo 50% plano e sem ar",
+      "ETAPA 04: LONA U + 2 FILAS",
+      "Amarração alterna segura 30cm",
+      "[PRINCÍPIO] Contrapeso trava o ralo e lona em U com blocos alternados segura 30cm"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Temporal lá fora e zero sacos de areia? Pare enchente na porta e refluxo de esgoto no banheiro em 15 minutos só com sacos de lixo e água!",
+    "body": "Primeiro desligue o disjuntor se já há água perto das tomadas e nunca abra a grelha do ralo: cubra largo com dois sacos grossos e luvas de borracha apertados por um galão de 10 quilos. Segundo, feche o registro atrás do vaso e encaixe um saco duplo meio cheio bem fundo no ralo da louça. Terceiro, junte dois sacos grandes de 50 litros, encha só metade, tire o ar e amarre alto formando tijolos chatos e não bolas duras. Quarto, forre o batente em U até 30 cm, empilhe duas filas alternadas e dobre a lona por cima!"
+  },
+  "createdAt": "2026-11-19T04:34:21.301Z",
+  "contentHash": "313800a5da7dda87"
+}

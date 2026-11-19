@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-35",
+  "category": "MATERIALS",
+  "title": "Cómo Construir una Presa de Bolsas de Agua sin Electricidad y Sellar Desagües con Guantes de Goma ante Inundaciones",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[DEFENSA URBANA CONTRA INUNDACIONES Y BLOQUEO DE REFLUJO DE ALCANTARILLA]",
+  "summary": "Si su hogar o entrada ya cuenta con compuertas comerciales anti-inundación, sacos absorbentes expansivos o válvulas antirretorno en tuberías, cierre y despliegue primero esos sistemas de fábrica por ser los más rápidos y seguros. Sin embargo, durante lluvias torrenciales, huracanes, terremotos o roturas de cañerías sin sacos de arena disponibles en plantas bajas o semisótanos, las aguas residuales y el lodo brotan primero por los desagües de baño más bajos, inodoros y marcos de puerta, provocando electrocución y riesgo infeccioso en minutos. Cubriendo los desagües bajos con tres capas de bolsas y guantes de goma presionados con bidones de 10 kg+, cerrando el inodoro con un tapón de bolsa de agua para pasar a [Inodoro Seco de Emergencia](/protocol-25), y apilando ladrillos de agua dobles a media carga en dos hileras alternas envueltas en lámina impermeable, detendrá inundaciones de hasta 30 cm en 15 minutos sin electricidad.",
+  "timeRequired": "15 min montaje rápido (5 min sello de desagüe e inodoro + 10 min presa de entrada)",
+  "successRate": "96% (con doble bolsa, llenado al 50-60% sin aire y trabado en dos hileras)",
+  "difficulty": "Principiante (sin herramientas; solo bolsas grandes, guantes, lámina impermeable y agua)",
+  "outputPerHour": "Bloqueo total de reflujo cloacal en piso e inodoro más dique de entrada resistente a 30 cm de agua",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Bolsas de Basura Grandes Gruesas (50-70 L, 16-20 uds) y 2 Láminas Impermeables Anchas",
+      "desc": "Forma la cubierta continua en U de 30 cm de altura en el umbral y los ladrillos flexibles de doble bolsa llenos a la mitad. Selle los bordes de la lámina al marco con cinta ancha de [Refuerzo de Ventanas](/protocol-31) o [Resina de Pino](/protocol-10)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1-2 Pares de Guantes de Goma Gruesos (o Goma Plana) y 2-3 Bidones de Agua de 10 kg+",
+      "desc": "Se coloca plano sobre rejillas de baño o lavadero creando un sello elástico de goma, y se presiona desde arriba con bidones llenos de agua o paquetes de botellas (10 kg+) para vencer la presión ascendente."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 Bolsas Medianas para Tapón de Inodoro y Llave de Paso Cerrada (o Arena Húmeda)",
+      "desc": "Tras cerrar la llave de agua del muro, encaja una bolsa doble a medio llenar en el cuello del inodoro para frenar aguas negras y pasar al [Inodoro Seco de Emergencia](/protocol-25). Sin agua corriente, rellene con arena o tierra húmeda."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Cubra los Desagües de Piso Bajos con 3 Capas Impermeables y Guantes Bajo Carga de 10 kg+",
+      "description": "1. **Priorice el Desagüe Más Bajo**: Cuando la red pluvial se satura, las aguas sucias suben primero por el desagüe más bajo del baño o patio antes que por la puerta principal.\n2. **Extienda 3 Capas Planas de Goma y Plástico**: Deje la rejilla metálica puesta; cubra con **2 bolsas gruesas y un guante de goma abierto encima** sobresaliendo un palmo más allá de los bordes del desagüe.\n3. **Comprima Desde Arriba con 10 kg+**: Coloque un **bidón lleno de 10 L+ o paquete de 6 botellas de 2 L (12 kg)** justo en el centro para aplastar el empuje ascendente.",
+      "actionNote": "> ¿Por qué jamás abrir la rejilla ni meter trapos adentro? Al quitar la tapa bajo presión brotan gases tóxicos y aguas negras al instante. Sellar por encima sobre la rejilla cerrada con 3 capas de goma y 10 kg+ presiona cada junta de losa sin fugas.",
+      "svgFileName": "pr35-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // DESAGÜE 3 CAPAS GOMA + PESO DE 10KG+",
+        "No abrir rejilla; cubrir ancho con 3 capas planas",
+        "Guante de goma + bolsas bajo bidón de agua 10kg+",
+        "El contrapeso vence la presión cloacal ascendente",
+        "[CLAVE] Sellar primero el desagüe más bajo con carga"
+      ],
+      "deepDive": {
+        "badge": "FLOOR DRAIN BACKFLOW SEAL",
+        "title": "Contrapeso Hidrostático Sobre Diafragma Elástico de Goma y Lámina",
+        "text": "Una columna externa de 30-50 cm ejerce entre **3 y 5 kg de empuje** bajo una rejilla de 10 cm. Las capas de **guante de goma y bolsa doble** sellan el microrelieve de la loseta mientras el **bidón de 10 kg+** duplica el peso necesario para bloquear el reflujo.",
+        "fieldSpecs": [
+          {
+            "name": "Desagüe Sellado con 3 Capas Impermeables, Guante de Goma y Bidón de 10 kg+",
+            "scientificName": "Multi-Layer Rubber Glove & Sheet Diaphragm Under 10kg+ Hydrostatic Counterweight",
+            "categoryTag": "Sello de Desagüe / Contrapeso 10 kg+",
+            "imageFileName": "id-floor-drain-rubber-glove-weight-seal.jpg",
+            "hudCode": "FIG. MAT-35A // MACRO OPTIC",
+            "hudStatus": "BACKFLOW SEAL: 10KG+ PRESSED",
+            "traits": [
+              {
+                "label": "Rejilla/Fija",
+                "value": "**Mantenga la tapa cerrada** y selle completamente desde arriba."
+              },
+              {
+                "label": "Goma/3 Capas",
+                "value": "**Dos bolsas gruesas más guante de goma** sellan juntas de cerámica."
+              },
+              {
+                "label": "Peso/10kg+",
+                "value": "**Centre un bidón de 10 kg+** encima para frenar la presión del tubo."
+              }
+            ],
+            "fieldUse": "Bloqueo inmediato en 5 minutos de los desagües más bajos propensos a rebalsar"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Cierre la Llave del Inodoro y Encaje un Tapón de Bolsa Doble a Medio Llenar en la Garganta",
+      "description": "1. **Cierre la Llave de Paso Trasera**: Gire la válvula de la pared hasta el tope para evitar descargas accidentales con el inodoro bloqueado.\n2. **Fabrique un Tapón Blando Doble**: Meta una bolsa mediana dentro de otra, llene **solo a la mitad (50%) con agua**, expulse el aire y anude en lo alto del cuello.\n3. **Encaje Firme en el Fondo Curvo**: Con guantes puestos, presione la bolsa blanda dentro del sifón inferior de porcelana hasta que adapte y trabe por completo; pase luego al [Inodoro Seco de Emergencia](/protocol-25).",
+      "actionNote": "> ¿Por qué no bastan palos rígidos ni toallas solas? La tela absorbe agua sucia por capilaridad y los objetos duros dejan huecos curvos junto a la porcelana. Una bolsa doble medio llena se deforma con la contrapresión y sella el codo herméticamente.",
+      "svgFileName": "pr35-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // LLAVE CERRADA + TAPÓN BOLSA DOBLE AL 50%",
+        "Cerrar válvula trasera y prohibir usar palanca",
+        "Bolsa doble al 50% de agua sin nada de aire",
+        "Encajar bolsa blanda en garganta curva del sifón",
+        "[CLAVE] El tapón flexible sella 100% la curva cerámica"
+      ],
+      "deepDive": {
+        "badge": "TOILET TRAP COMPRESSION PLUG",
+        "title": "Auto-Sellado por Deformación de Tapón Líquido Sin Aire en Sifones Curvos",
+        "text": "El sifón del inodoro mide unos 8-10 cm de diámetro curvo. Un **tapón doble a medio llenar sin aire** se expande lateralmente al recibir empuje ascendente desde el drenaje, cerrando fugas sin dañar la porcelana.",
+        "fieldSpecs": [
+          {
+            "name": "Garganta de Inodoro Cerrada Herméticamente con Tapón de Bolsa Doble al 50%",
+            "scientificName": "Half-Filled Double-Bag Conformable Water Plug Wedged in Toilet Trap",
+            "categoryTag": "Cierre de Paso / Tapón de Sifón",
+            "imageFileName": "id-toilet-trap-half-waterbag-plug.jpg",
+            "hudCode": "FIG. MAT-35B // MACRO OPTIC",
+            "hudStatus": "TOILET TRAP: PLUGGED & LOCKED",
+            "traits": [
+              {
+                "label": "Llave/Cierre",
+                "value": "**Cierre la llave del muro** antes de bloquear para evitar desbordes."
+              },
+              {
+                "label": "Llenado/50%",
+                "value": "**Llene solo la mitad en 2 capas** para amoldar la garganta curva."
+              },
+              {
+                "label": "Uso/Seco",
+                "value": "Opere como **Inodoro Seco de Emergencia** durante la crecida."
+              }
+            ],
+            "fieldUse": "Detención inmediata de reflujos cloacales en inodoros de planta baja y sótano"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Llene al 50-60% Bolsas Dobles de 50-70 L Sin Aire y Ate 8-12 'Ladrillos de Agua' Planos",
+      "description": "1. **Use Siempre Doble Bolsa**: Inserte **dos bolsas grandes (50-70 L) una dentro de otra** para resistir roces del suelo y presión lateral sin rasgarse.\n2. **Llene Solo al 50-60%**: Dentro de una bañera o cubo grande, cargue agua hasta **la mitad o algo más (10-15 kg cada una)**.\n3. **Saque Todo el Aire y Ate Arriba**: Aplaste la boca sacando cada burbuja y anude alto en el borde para que al posarla quede como un **ladrillo ancho y chato**; prepare 8 a 12 unidades (o use tierra húmeda si falta agua).",
+      "actionNote": "> ¿Por qué falla llenar las bolsas bien tensas como globos? Las bolsas redondas solo se tocan en un punto y dejan túneles triangulares en el piso donde entra el lodo a chorros. A media carga sin aire, se aplastan contra el suelo sin dejar rendijas.",
+      "svgFileName": "pr35-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BOLSA DOBLE AL 50-60% LADRILLO PLANO",
+        "Siempre bolsa doble 50-70L para evitar rotura",
+        "Cargar solo 50-60% de agua, sacar aire y atar alto",
+        "Bola tensa (X) prohibida: ladrillo plano (V) sella",
+        "[CLAVE] Carga media se aplana sin rendijas en el piso"
+      ],
+      "deepDive": {
+        "badge": "MALLEABLE WATER BRICK GEOMETRY",
+        "title": "Ampliación del Área Basal Mediante Ladrillos Flexibles al 50-60% Sin Aire",
+        "text": "Un saco de arena contiene fugas porque los granos se acomodan planos al piso. Los **ladrillos dobles de agua al 50-60%** logran el mismo efecto hidráulico: su holgura interior los aplana a **12-15 cm de alto** con amplia superficie de contacto.",
+        "fieldSpecs": [
+          {
+            "name": "Bolsas Dobles Grandes Llenadas al 50-60% Sin Aire como Ladrillos de Agua Planos",
+            "scientificName": "Double-Layered Half-Filled Malleable Water Brick Barriers",
+            "categoryTag": "Carga Media 50-60% / Doble Capa",
+            "imageFileName": "id-double-layered-half-filled-water-bricks.jpg",
+            "hudCode": "FIG. MAT-35C // MACRO OPTIC",
+            "hudStatus": "FILL RATIO: 50-60% CONFORMABLE",
+            "traits": [
+              {
+                "label": "Doble/Capa",
+                "value": "**Anide mínimo 2 bolsas** por ladrillo contra punzados del piso."
+              },
+              {
+                "label": "Plano/50-60%",
+                "value": "**Medio lleno sin aire** asegura apoyo ancho y junta firme."
+              },
+              {
+                "label": "Stock/8-12",
+                "value": "**Prepare 8 a 12 ladrillos** para cubrir una puerta de 1 metro."
+              }
+            ],
+            "fieldUse": "Creación rápida de ladrillos anti-inundación con agua del grifo sin sacos de arena"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Cubra el Umbral en U Hasta 30 cm con Lámina Impermeable y Trabe 2 Hileras Alternas",
+      "description": "1. **Extienda Lámina en U a 30 cm**: Tienda una gran lámina plástica frente al umbral subiendo **al menos 30 cm (altura de espinilla) por ambos marcos de puerta**.\n2. **Apile 2 Hileras Trabadas (Aparejo Alterno)**: Coloque una fila exterior bien junta y la segunda fila interior **desfasada medio ladrillo** cubriendo cada unión; añada un segundo nivel si hace falta alcanzar 25-30 cm.\n3. **Doble la Solapa Exterior Encima y Fije**: Envuelva la parte delantera de la lámina por encima del muro de ladrillos y pegue los costados al marco con cinta de [Refuerzo de Ventanas](/protocol-31) para que el agua exterior empuje y cierre la presa.",
+      "actionNote": "> ¿Por qué colocar bolsas sueltas sin sábana impermeable sigue filtrando? Por muy juntas que estén, quedan canales de 1 mm bajo el cemento rugoso. Al envolver desde adelante hacia arriba, la propia presión de la riada sella la lámina contra las bolsas.",
+      "svgFileName": "pr35-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // LÁMINA EN U + PRESA ALTERNA 2 HILERAS 30CM",
+        "Cubrir suelo y marcos 30cm alto con lámina continua",
+        "Trabar 2a hilera medio ladrillo evitando juntas rectas",
+        "Plegar faldón frontal arriba; la crecida sella la presa",
+        "[CLAVE] Lámina en U + doble fila alterna frena 30cm"
+      ],
+      "deepDive": {
+        "badge": "STAGGERED WATER-BARRIER MECHANICS",
+        "title": "Pre-Compresión Hidrostática de Membrana Continua y Juntas Trabadas",
+        "text": "Cuando el lodo asciende sobre el **faldón frontal plegado en U**, la presión exterior prensa toda la membrana plástica contra el núcleo de **ladrillos en aparejo alterno**, eliminando rutas rectas de filtración.",
+        "fieldSpecs": [
+          {
+            "name": "Presa de Entrada con Lámina Impermeable en U y Dos Hileras Alternas de 30 cm",
+            "scientificName": "Tarp-Wrapped Two-Row Staggered Water-Brick Doorway Flood Barrier (30cm)",
+            "categoryTag": "Lámina en U / Dique 2 Hileras Alternas",
+            "imageFileName": "id-staggered-doorway-waterbag-flood-dam.jpg",
+            "hudCode": "FIG. MAT-35D // MACRO OPTIC",
+            "hudStatus": "FLOOD DAM: 30CM STAGGERED SEAL",
+            "traits": [
+              {
+                "label": "Lámina/En U",
+                "value": "**Plástico continuo del exterior a la cima** sella microfugas."
+              },
+              {
+                "label": "Junta/Alterna",
+                "value": "**Desfase medio ladrillo** entre fila frontal y trasera."
+              },
+              {
+                "label": "Alto/30cm",
+                "value": "**Apilado doble estable** resiste crecidas de 25 a 30 cm."
+              }
+            ],
+            "fieldUse": "Barrera final en accesos bajos para frenar la entrada de lodo sin electricidad"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Trabajar en Piso Inundado Sin Cortar el Interruptor General o Sobrellenar Bolsas Simples",
+    "description": "Si el agua ya cubre el umbral o toca enchufes bajos, corte PRIMERO el interruptor principal en el cuadro eléctrico y use botas y guantes secos de goma para evitar electrocución mortal. Jamás llene al 90% una bolsa simple: revienta y deja brechas. Si se raspa en agua sucia, lave con [Jabón de Ceniza](/protocol-13), irrigue con [Suero Salino Sin Azúcar](/protocol-24) y potabilice agua solo con [Filtro de Algodón y Desinfección Solar](/protocol-23).",
+    "consequence": "Electrocución mortal en zonas anegadas, colapso súbito de la presa e infecciones bacterianas graves."
+  },
+  "faqs": [
+    {
+      "question": "¿Qué hago si solo tengo bolsas pequeñas de compra o botellas de 1.5-2 L en vez de bolsas grandes?",
+      "causeDiagnostic": "Los envases chicos dejan huecos entre sí, pero envolver el conjunto y calzar tela corrige las rendijas.",
+      "resolution": "Acomode botellas llenas acostadas o bolsas chicas en dos filas alternas, rellene huecos inferiores con toallas viejas y **envuelva todo desde el frente hacia arriba bajo un chubasquero o lona sujeta con cubos pesados** para contener hasta 20 cm de agua."
+    },
+    {
+      "question": "¿Cómo actuar si el nivel exterior supera los 30 cm y la flotación amenaza con mover las bolsas?",
+      "causeDiagnostic": "Las bolsas llenas de agua tienen densidad ~1.0 similar a la riada y tienden a flotar si el nivel las rebasa.",
+      "resolution": "Si el agua rebasa los 25 cm, ponga **sacos de arena, mancuernas, piedras o ollas pesadas sobre la cima de la presa** para anclar su flotabilidad. Si sigue subiendo rápido hacia los muslos, evacúe inmediatamente a muebles altos o pisos superiores."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Integrado de Sello de Desagües con Peso + Tapón de Inodoro y Presa de Ladrillos de Agua de 30 cm",
+    "badge": "TARGET OUTCOME // SELLO CLOACAL Y DIQUE DE 30 CM",
+    "description": "Defensa hidráulica de emergencia sin energía que presiona desagües bajos con 3 capas de goma y cargas de 10 kg+, bloquea el sifón del inodoro como inodoro seco y traba ladrillos dobles de agua al 50-60% dentro de una lámina en U en dos hileras alternas contra inundaciones de 30 cm.",
+    "svgFileName": "pr35-outcome.svg",
+    "svgLabels": [
+      "PR-35 COMPLETO // SELLO CLOACAL Y PRESA DE 30CM",
+      "FASE 01: SELLO DE DESAGÜE",
+      "3 capas goma + bidón 10kg+",
+      "FASE 02: TAPÓN DE INODORO",
+      "Cerrar llave + bolsa 50%",
+      "FASE 03: LADRILLO DE AGUA",
+      "Doble bolsa 50% plano sin aire",
+      "FASE 04: LÁMINA U + 2 FILAS",
+      "Trabado alterno frena 30cm",
+      "[PRINCIPIO] El contrapeso vence desagües y la lámina en U con filas alternas frena 30cm"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Lluvia torrencial sin sacos de arena? Frena inundaciones en tu puerta y el reflujo del desagüe en 15 minutos usando solo bolsas de basura y agua.",
+    "body": "Primero corta la luz si hay agua cerca de enchufes y nunca quites la rejilla del baño: tápala ancho con dos bolsas y guantes de goma presionados con un bidón de 10 kilos. Segundo, cierra la llave del inodoro y encaja en el fondo una bolsa doble medio llena para sellar el sifón. Tercero, mete bolsas grandes de dos en dos, llénalas solo al 50%, saca el aire y ata alto para hacer ladrillos planos, no bolas tensas. Cuarto, forra el marco en U hasta 30 centímetros, apila dos filas alternas y dobla la lámina encima!"
+  },
+  "createdAt": "2026-11-19T04:34:21.301Z",
+  "contentHash": "313800a5da7dda87"
+}

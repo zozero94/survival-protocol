@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-35",
+  "category": "MATERIALS",
+  "title": "Hochwasser-Wassersack-Damm ohne Strom: Abfluss-Rückstau und Wohnungstür mit Müllsäcken und Gummihandschuhen abdichten",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[STARKREGEN-HAUSSCHUTZ & KANALRÜCKSTAU-SPERRE OHNE STROM]",
+  "summary": "Wenn an Haus oder Wohnung bereits professionelle Hochwasser-Schotts, quellende Wasserschutzsäcke oder mechanische Rückstauklappen verbaut sind, schließen Sie zuerst diese geprüften Systeme als schnellsten Schutz. Bei Unwettern, Sturzfluten oder Rohrbrüchen ohne Sandsäcke drückt Schmutz- und Abwasser in Erdgeschossen und Souterrains jedoch binnen Minuten aus den tiefsten Bodenabläufen, Toiletten und Türspalten hoch. Indem Sie Bodenabläufe mit drei Lagen wasserfester Folie, Gummihandschuhen und über 10 kg schweren Wasserkanistern beschweren, abgesperrte Toiletten mit einem weichen Wasserbeutel als [Not-Trockentoilette](/protocol-25) abdichten und doppellagige halb gefüllte Wasserziegel im zweireihigen Versatz in einer U-Plane vor der Tür stapeln, stoppen Sie bis zu 30 cm Flutwasser in 15 Minuten.",
+  "timeRequired": "15 Min. Notaufbau (5 Min. Abfluss- & WC-Sperre + 10 Min. Türdamm)",
+  "successRate": "96% (bei Doppelsäcken, 50-60% Füllung ohne Luft und 2-reihigem Versatz)",
+  "difficulty": "Anfänger (werkzeuglos; nur stabile Müllsäcke, Gummihandschuhe, Plane und Wasser)",
+  "outputPerHour": "100% Rückstausperre an Bodenabfluss und WC sowie Türbarriere bis 30 cm Wasserstand",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Starke Groß-Müllsäcke (50-70 L, 16-20 Stück) & 2 breite wasserdichte Planen",
+      "desc": "Bildet die 30 cm hohe U-Wanne am Türrahmen sowie die doppellagig halb gefüllten Wasserziegel. Kleben Sie Seitenflügel mit breitem Klebeband wie beim [Fensterschutz-Taping](/protocol-31) oder dichten Sie Spalten mit [Kiefernharz](/protocol-10) ab."
+    },
+    {
+      "id": "mat-02",
+      "name": "1-2 Paar dicke Gummihandschuhe (oder Gummiplatte) & 2-3 Wasserkanister über 10 kg",
+      "desc": "Deckt Bodenabläufe in Bad und Waschküche luftdicht ab; volle 10-kg-Kanister oder Sechserträger drücken das Gummi fest in den Fliesenbelag gegen aufsteigenden Kanaldruck."
+    },
+    {
+      "id": "mat-03",
+      "name": "2 mittlere Beutel für WC-Pfropfen & geschlossenes Eckventil (oder nasser Sand / Erde)",
+      "desc": "Nach Zudrehen des Wandventils dichtet ein halb gefüllter Doppelsack den WC-Siphon für den Umbau zur [Not-Trockentoilette](/protocol-25) ab. Bei Wasserausfall stattdessen halb mit Sand oder Gartenerde füllen."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Tiefste Bodenabläufe in Bad und Waschküche mit 3-Lagen-Folie, Gummihandschuh und 10 kg+ beschweren",
+      "description": "1. **Tiefsten Bodenablauf zuerst sichern**: Steigt die Kanalisation an, schießt Schmutzwasser zuerst aus dem tiefsten Bad- oder Kellerablauf — immer vor der Haustür abdichten.\n2. **3 flache Gummi- und Schutzlagen auflegen**: Metallgitter niemals abschrauben; decken Sie den geschlossenen Ablauf handbreit überstehend mit **2 dicken Schutzsäcken und einem flach ausgebreiteten Gummihandschuh** ab.\n3. **Mit über 10 kg Wassergewicht festdrücken**: Stellen Sie einen **10-Liter-Wasserkanister oder einen 6er-Pack 2-Liter-Flaschen (12 kg)** mittig auf den Handschuh, damit das Eigengewicht jeden Auftrieb niederhält.",
+      "actionNote": "> Warum niemals das Ablaufgitter öffnen und Lappen hineinstopfen? Beim Öffnen unter Gegendruck schießen Faulgase und Abwasser direkt heraus. Drei breite Lagen über dem geschlossenen Rost drücken unter 10 kg+ Last jede Fuge dicht.",
+      "svgFileName": "pr35-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // BODENABLAUF 3-LAGEN-GUMMI + 10KG+ LAST",
+        "Rost zu lassen; 3 Lagen weit über Fliesen decken",
+        "Gummihandschuh + Beutel unter 10kg+ Wasserkanister",
+        "Auflast überwiegt Kanaldruck nach oben komplett",
+        "[KERN] Tiefsten Bodenablauf zuerst dicht beschweren"
+      ],
+      "deepDive": {
+        "badge": "FLOOR DRAIN BACKFLOW SEAL",
+        "title": "Hydrostatisches Gegengewicht über elastischer Gummimembran",
+        "text": "Bei 30-50 cm Rückstau wirken etwa **3-5 kg Hubkraft** auf einen 10-cm-Bodenablauf. **Gummihandschuh plus Doppelbeutel** schließen feine Fliesenfugen, während ein **10-kg+-Kanister** mehr als die doppelte Gegenkraft aufbringt.",
+        "fieldSpecs": [
+          {
+            "name": "Bodenablauf mit 3 Schutzlagen, Gummihandschuh und 10 kg+ Wasserkanister gesichert",
+            "scientificName": "Multi-Layer Rubber Glove & Sheet Diaphragm Under 10kg+ Hydrostatic Counterweight",
+            "categoryTag": "Ablauf-Sperre / 10 kg+ Gegengewicht",
+            "imageFileName": "id-floor-drain-rubber-glove-weight-seal.jpg",
+            "hudCode": "FIG. MAT-35A // MACRO OPTIC",
+            "hudStatus": "BACKFLOW SEAL: 10KG+ PRESSED",
+            "traits": [
+              {
+                "label": "Rost/Zu",
+                "value": "**Metallrost geschlossen lassen** und flächig von oben sperren."
+              },
+              {
+                "label": "Gummi/3x",
+                "value": "**2 Schutzfolien plus Gummihandschuh** passen sich den Fugen an."
+              },
+              {
+                "label": "Last/10kg",
+                "value": "**10 kg+ Wassergewicht mittig** hält jeden Rückstaudruck nieder."
+              }
+            ],
+            "fieldUse": "Sofortschutz innerhalb 5 Minuten für tief liegende Bad- und Kellerabläufe"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: WC-Eckventil zudrehen und halb gefüllten Doppelbeutel tief in den Siphon drücken",
+      "description": "1. **Wand-Eckventil abdrehen**: Drehen Sie das Zulaufventil hinter der Toilette im Uhrzeigersinn fest zu, um versehentliches Spülen auszuschließen.\n2. **Weichen Doppel-Wasserpfropfen bauen**: Stecken Sie zwei mittlere Beutel ineinander, füllen Sie **nur die Hälfte (50%) Wasser** ein, streichen Sie die Luft aus und verknoten Sie weit oben.\n3. **Dicht in den Siphon-Hals drücken**: Drücken Sie den formbaren Beutel mit Handschuhen tief in die untere Öffnung der Keramikschüssel, bis er rundum anliegt, und nutzen Sie danach die [Not-Trockentoilette](/protocol-25).",
+      "actionNote": "> Warum versagen Stöcke oder trockene Handtücher allein im WC? Stoff saugt Schmutzwasser kapillar hoch und harte Stäbe lassen Spalten an der gebogenen Keramik. Ein halb voller Doppel-Wasserbeutel presst sich bei Rückstau selbst noch fester an die Siphonwand.",
+      "svgFileName": "pr35-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // WC-VENTIL ZU + DOPPELBEUTEL-PFROPFEN 50%",
+        "Eckventil zudrehen und Spültaste streng sperren",
+        "2-Lagen-Beutel nur 50% füllen, luftfrei verknoten",
+        "Weichen Pfropfen tief in den Siphon-Hals drücken",
+        "[KERN] Formbarer Wasserbeutel dichtet Keramik 100%"
+      ],
+      "deepDive": {
+        "badge": "TOILET TRAP COMPRESSION PLUG",
+        "title": "Selbstdichtende Anpassung luftfreier Wasserpfropfen im Siphonbogen",
+        "text": "Der 8-10 cm starke Siphonbogen des WCs ist stark gekrümmt. Ein **luftfreier 50%-Doppelwasserbeutel** wölbt sich unter steigendem Gegendruck rundum gegen die Keramikwand und stoppt Fäkalien-Fontänen ohne Schaden.",
+        "fieldSpecs": [
+          {
+            "name": "Abgedrehtes WC mit dicht eingepasstem halb gefülltem Doppelwasser-Pfropfen",
+            "scientificName": "Half-Filled Double-Bag Conformable Water Plug Wedged in Toilet Trap",
+            "categoryTag": "Ventil-Sperre / Siphon-Rückstauschutz",
+            "imageFileName": "id-toilet-trap-half-waterbag-plug.jpg",
+            "hudCode": "FIG. MAT-35B // MACRO OPTIC",
+            "hudStatus": "TOILET TRAP: PLUGGED & LOCKED",
+            "traits": [
+              {
+                "label": "Ventil/Zu",
+                "value": "**Zulaufventil zuerst schließen** verhindert Überlaufen beim Spülen."
+              },
+              {
+                "label": "Füllung/50%",
+                "value": "**Doppelbeutel halb füllen**, damit er eng im Keramikbogen liegt."
+              },
+              {
+                "label": "Not/Trocken",
+                "value": "Während der Flut **Not-Trockentoilette** mit Wechselbeutel nutzen."
+              }
+            ],
+            "fieldUse": "Schutz vor verheerendem Abwasseraustritt aus Erdgeschoss- und Keller-WCs"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Große Säcke doppelt nehmen, 50-60% füllen, entlüften und 8-12 flache Wasserziegel knoten",
+      "description": "1. **Jeden Sack doppellagig nutzen**: Stecken Sie stets **zwei 50-70-L-Säcke ineinander**, damit rauer Estrich oder Steinchen den Sack nicht aufreißen.\n2. **Nur halb bis 60% befüllen**: In Wanne oder Bottich auf **50-60% füllen (ca. 10-15 kg pro Ziegel)**.\n3. **Luft herauspressen und oben knoten**: Drücken Sie jede Luftblase heraus und knoten Sie ganz oben, damit am Boden ein **breiter, flacher Rechteckziegel** entsteht; stellen Sie 8-12 Ziegel her (bei Wasserstopp Sand/Erde nehmen).",
+      "actionNote": "> Warum zerstören prall gefüllte Ballon-Säcke jede Sperre? Straffe runde Säcke berühren sich nur punktuell und lassen unten dreieckige Kanäle offen, durch die Schlammwasser strömt. Halb gefüllte luftfreie Säcke sacken breit zusammen und schließen lückenlos.",
+      "svgFileName": "pr35-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // DOPPELSACK 50-60% FLACHER WASSERZIEGEL",
+        "Stets zwei 50-70L-Säcke gegen Risse ineinander",
+        "Nur 50-60% füllen, Luft raus, weit oben knoten",
+        "Keine runden Bälle (X): flache Ziegel (V) dichten",
+        "[KERN] Weicher Ziegel schließt Bodenspalten spaltfrei"
+      ],
+      "deepDive": {
+        "badge": "MALLEABLE WATER BRICK GEOMETRY",
+        "title": "Maximale Bodenauflage durch luftfreie 50-60%-Wasserziegel",
+        "text": "Sandsäcke dichten, weil lockerer Sand am Boden breitfließt. **Doppellagige 50-60%-Wasserziegel** verhalten sich genauso: Sie sacken zu **12-15 cm flachen Quaderkörpern** ab und schließen bündig an Estrich und Nachbarziegel an.",
+        "fieldSpecs": [
+          {
+            "name": "Luftfrei 50-60% gefüllte Doppelsäcke als flache rechteckige Wasserziegel",
+            "scientificName": "Double-Layered Half-Filled Malleable Water Brick Barriers",
+            "categoryTag": "50-60% Füllung / Reißfeste 2-Lage",
+            "imageFileName": "id-double-layered-half-filled-water-bricks.jpg",
+            "hudCode": "FIG. MAT-35C // MACRO OPTIC",
+            "hudStatus": "FILL RATIO: 50-60% CONFORMABLE",
+            "traits": [
+              {
+                "label": "Doppelt/2x",
+                "value": "**Immer 2 Säcke schachteln** verhindert Risse auf rauem Beton."
+              },
+              {
+                "label": "Flach/50-60%",
+                "value": "**Halbvoll ohne Luft** legt den Ziegel breit und flach auf."
+              },
+              {
+                "label": "Menge/8-12",
+                "value": "**8-12 Wasserziegel** sichern eine normale 1-Meter-Eingangstür."
+              }
+            ],
+            "fieldUse": "Bau schwerer Hochwasser-Bausteine aus Leitungswasser ohne Sandsäcke"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Türschwelle U-förmig 30 cm mit Folie auskleiden und 2 Reihen Wasserziegel versetzt stapeln",
+      "description": "1. **30 cm hohe U-Folie am Türrahmen auslegen**: Legen Sie eine große aufgeschnittene Plane vor die Tür und ziehen Sie die Ränder an beiden Türpfosten **mindestens schienbeinhoch (30 cm)** hoch.\n2. **Zweireihig im Läuferverband stapeln**: Legen Sie die vordere Ziegelreihe dicht an dicht, setzen Sie die zweite innere Reihe **um eine halbe Länge versetzt** über jede Fuge; falls nötig zweilagig auf 25-30 cm stapeln.\n3. **Vorderlasche umschlagen und festkleben**: Klappen Sie die vordere Überlänge der Plane über die Dammkrone zurück und kleben Sie Flügel mit breitem Klebeband aus [Fensterschutz-Taping](/protocol-31) fest — steigendes Flutwasser drückt die Plane dann selbst dicht.",
+      "actionNote": "> Warum sickert es ohne U-Plane unter losen Säcken durch? Selbst gepresste Beutel lassen auf rauem Beton 1-mm-Ritzen. Schlägt man die Plane von außen über den Damm, presst der Flutdruck die Folie wie ein Rückschlagventil fest an die Ziegel.",
+      "svgFileName": "pr35-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // U-PLANE + 2-REIHIGER VERSETZTER 30CM-DAMM",
+        "Boden und Pfosten durchgehend 30cm mit Plane auslegen",
+        "2. Reihe um halbe Breite im Verband versetzt setzen",
+        "Vordere Plane oben umschlagen; Flut dichtet selbst an",
+        "[KERN] U-Plane + 2-Reihen-Versatz hält 30cm Flut stand"
+      ],
+      "deepDive": {
+        "badge": "STAGGERED WATER-BARRIER MECHANICS",
+        "title": "Hydrostatische Folienanpressung und Unterbrechung gerader Sickerwege",
+        "text": "Steigt schlammiges Wasser an der **U-förmig umgeschlagenen Außenlasche** hoch, drückt der Wasserdruck die durchgehende Folie fest gegen die versetzten **Wasserziegel**. Der **Halbsteinversatz** blockiert jeden direkten Durchflusskanal.",
+        "fieldSpecs": [
+          {
+            "name": "Türhochwasserdamm mit U-Plane und zwei versetzten Reihen Wasserziegel (30 cm)",
+            "scientificName": "Tarp-Wrapped Two-Row Staggered Water-Brick Doorway Flood Barrier (30cm)",
+            "categoryTag": "U-Plane / Versetzter 2-Reihen-Damm",
+            "imageFileName": "id-staggered-doorway-waterbag-flood-dam.jpg",
+            "hudCode": "FIG. MAT-35D // MACRO OPTIC",
+            "hudStatus": "FLOOD DAM: 30CM STAGGERED SEAL",
+            "traits": [
+              {
+                "label": "Plane/U-Form",
+                "value": "**Durchgehende Plane bis über Krone** sperrt Haarrisse komplett."
+              },
+              {
+                "label": "Fuge/Versatz",
+                "value": "**Halbsteinversatz in Reihe 2** bricht gerade Wasserpfade auf."
+              },
+              {
+                "label": "Höhe/30cm",
+                "value": "**Zweistöckiger Verbund** trotzt Wasser bis Schienbeinhöhe (30 cm)."
+              }
+            ],
+            "fieldUse": "Stromlose Türbarriere gegen Sturzflut-Eintritt in Erdgeschoss und Keller"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Ohne Hauptsicherung im Wasser arbeiten oder dünne Einzelbeutel prall füllen und aufreißen",
+    "description": "Steht bereits Wasser an Tür oder Steckdosen, schalten Sie ZUERST die Hauptsicherung (FI-Schalter) ab und tragen Sie trockene Gummistiefel und -handschuhe, sonst droht tödlicher Stromschlag. Füllen Sie nie einen einzelnen Sack zu 90%, sonst platzt er beim Tragen. Bei Hautkratzern im Schmutzwasser gründlich mit [Holzasche-Seife](/protocol-13) waschen, mit [Zuckerfreier Wundsalzlösung](/protocol-24) spülen und Trinkwasser stets über [Tuchfilter und Sonnenentkeimung](/protocol-23) reinigen.",
+    "consequence": "Tödlicher Stromschlag im Flur, plötzlicher Dammbruch mit Vollflutung und schwere Wundinfektion durch Abwasser."
+  },
+  "faqs": [
+    {
+      "question": "Was tun, wenn ich statt 50-L-Säcken nur kleine Einkaufstüten oder 1,5-2-L-PET-Flaschen habe?",
+      "causeDiagnostic": "Kleine Tüten und runde Flaschen bilden Zwischenräume, doch Handtuch-Fugung plus Überplane schließen diese.",
+      "resolution": "Legen Sie halb volle Kleinbeutel oder volle 2-L-Flaschen liegend in zwei versetzten Reihen, stopfen Sie alte Handtücher fest in untere Spalten und **wickeln Sie das Ganze vorn herum unter einer Regenschutzplane ein, beschwert mit vollen Wassereimern** gegen bis zu 20 cm Stau."
+    },
+    {
+      "question": "Was tun, wenn außen mehr als 30 cm Wasser stehen und der Auftrieb die Wasserziegel anhebt?",
+      "causeDiagnostic": "Wasserziegel haben die Dichte ~1,0 wie Flutwasser und beginnen aufzuschwimmen, sobald außen die gleiche Höhe überschritten wird.",
+      "resolution": "Ab 25 cm Außenpegel legen Sie **Säcke mit Sand/Erde, Hanteln, Steine oder volle Kochtöpfe oben auf die Dammkrone**, um den Auftrieb niederzuhalten. Steigt das Wasser weiter rasch bis Knie/Oberschenkel, verlassen Sie tiefe Räume sofort nach oben auf Möbel oder in Obergeschosse."
+    }
+  ],
+  "outcome": {
+    "title": "Kombiniertes 3-Lagen-Abflusssiegel mit Auflast + WC-Sperre & U-Folien-Wasserziegel-Damm bis 30 cm",
+    "badge": "TARGET OUTCOME // RÜCKSTAU-SPERRE & 30-CM-TÜR-DAMM",
+    "description": "Stromloses Hochwassersystem, das Bodenabläufe mit 3-Lagen-Gummidichtung und 10 kg+ beschwert, das WC per Siphon-Wasserpfropfen zur Trockentoilette umstellt und doppellagige 50-60%-Wasserziegel in einer U-Plane zweireihig versetzt bis 30 cm Wasserstand stapelt.",
+    "svgFileName": "pr35-outcome.svg",
+    "svgLabels": [
+      "PR-35 FERTIG // RÜCKSTAUSPERRE & 30CM FLUTDAMM",
+      "STUFE 01: BODENABLAUF-LAST",
+      "3-Lagen-Gummi + 10kg+ Kanister",
+      "STUFE 02: WC-VENTIL & PFROPF",
+      "Ventil zu + 50% Beutel im Hals",
+      "STUFE 03: FLACHE WASSERZIEGEL",
+      "Doppelsack 50% luftfrei flach",
+      "STUFE 04: U-PLANE + 2 REIHEN",
+      "Versetzt gestapelt bis 30cm",
+      "[PRINZIP] Auflast sperrt Kanaldruck; U-Plane mit Versatzziegeln stoppt 30cm Flut"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Starkregen ohne Sandsäcke? So stoppst du Tür-Überflutung und fiesen Kanal-Rückstau in 15 Minuten nur mit Müllsäcken und Leitungswasser!",
+    "body": "Zuerst Hauptsicherung raus falls Wasser naht — und niemals das Bad-Abflussgitter öffnen! Decke es weit mit zwei Schutzsäcken plus Gummihandschuh ab und stell einen 10-kg-Wasserkanister drauf. Zweitens: WC-Ventil zudrehen und einen halb vollen Doppelbeutel tief in den Abfluss als Pfropfen drücken. Drittens: 50-L-Säcke doppelt nehmen, nur zu 50% füllen, Luft rausdrücken und hoch verknoten für flache Ziegel statt runder Bälle. Viertens: Türschwelle 30 cm mit Plane auslegen, zwei versetzte Ziegelreihen stapeln und Plane drüberschlagen!"
+  },
+  "createdAt": "2026-11-19T04:34:21.301Z",
+  "contentHash": "313800a5da7dda87"
+}
