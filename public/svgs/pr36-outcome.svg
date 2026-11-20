@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg36out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="wood36out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c3a21"/>
+      <stop offset="50%" stop-color="#8c5a32"/>
+      <stop offset="100%" stop-color="#4a2e19"/>
+    </linearGradient>
+    <linearGradient id="stream36out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.45"/>
+    </linearGradient>
+    <pattern id="grid36out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow36out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg36out)"/>
+  <rect width="800" height="450" fill="url(#grid36out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="11.5" font-weight="bold">PR-36 완성체 // 도토리 찬물 떫은물 제거 전분 &amp; 묵 시스템</text>
+
+  <!-- 4 Stage Cards -->
+  <g filter="url(#shadow36out)">
+    <!-- STAGE 01 -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="34" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 물 선별 &amp; 껍질 까기</text>
+
+    <path d="M 48 168 L 58 242 Q 62 256 109 256 Q 156 256 160 242 L 170 168 Z" fill="url(#wood36out)" stroke="#9a6b42" stroke-width="2"/>
+    <path d="M 56 180 L 64 236 Q 68 246 109 246 Q 150 246 154 236 L 162 180 Z" fill="#0284c7" fill-opacity="0.5"/>
+    <ellipse cx="86" cy="180" rx="8" ry="5" fill="#78716c" stroke="#ef4444" stroke-width="1.5"/>
+    <ellipse cx="94" cy="238" rx="8" ry="6" fill="#92400e" stroke="#22c55e" stroke-width="1.5"/>
+    <ellipse cx="122" cy="238" rx="8" ry="6" fill="#92400e" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="136" cy="150" r="10" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <polyline points="131,150 135,154 141,146" fill="none" stroke="#86efac" stroke-width="2"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="34" y="341" fill="#94a3b8" font-family="monospace" font-size="8">가라앉은 알맹이 채택 + 속껍질 제거</text>
+
+    <!-- STAGE 02 -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="228" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 돌판 곱게 빻기</text>
+
+    <polygon points="242,232 268,200 356,200 364,232" fill="#475569" stroke="#94a3b8" stroke-width="1.5"/>
+    <ellipse cx="304" cy="218" rx="34" ry="10" fill="#fef3c7" stroke="#d97706"/>
+    <ellipse cx="304" cy="190" rx="22" ry="16" fill="#64748b" stroke="#cbd5e1" stroke-width="1.8"/>
+    <path d="M 304 152 L 304 170" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="299,166 304,174 309,166" fill="#f59e0b"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="228" y="341" fill="#94a3b8" font-family="monospace" font-size="8">화강암 돌판 모래알 이하 분쇄</text>
+
+    <!-- STAGE 03 -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#dc2626" stroke-width="1"/>
+    <text x="422" y="102" fill="#ef4444" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 찬물 2~4일 해독</text>
+
+    <rect x="428" y="168" width="138" height="72" rx="6" fill="url(#stream36out)" stroke="#38bdf8" stroke-width="1.2"/>
+    <ellipse cx="497" cy="208" rx="28" ry="18" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.5"/>
+    <ellipse cx="497" cy="204" rx="10" ry="7" fill="#475569"/>
+    <path d="M 434 204 L 464 204" stroke="#7dd3fc" stroke-width="2.5"/>
+    <path d="M 530 204 L 560 204" stroke="#d97706" stroke-width="2.5" stroke-dasharray="3 2"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="422" y="341" fill="#94a3b8" font-family="monospace" font-size="8">면 천 싸서 뜨거운 물 없이 우려냄</text>
+
+    <!-- STAGE 04 -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="616" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 앙금 건조 &amp; 묵 쑤기</text>
+
+    <path d="M 632 162 L 640 218 Q 644 228 691 228 Q 738 228 742 218 L 750 162 Z" fill="url(#wood36out)" stroke="#9a6b42" stroke-width="1.8"/>
+    <path d="M 640 198 L 644 216 Q 648 222 691 222 Q 734 222 738 216 L 742 198 Z" fill="#fefce8"/>
+    <ellipse cx="691" cy="258" rx="44" ry="10" fill="#15803d" stroke="#22c55e" stroke-width="1"/>
+    <polygon points="668,252 706,252 716,240 678,240" fill="#92400e" stroke="#f59e0b" stroke-width="1"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="616" y="341" fill="#94a3b8" font-family="monospace" font-size="8">3~4시간 침전 건조 + 1:5~6 끓임</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[공학 원리] 찬물 선택 용해로 수용성 떫은 독만 빼고 불용성 전분 열량을 1년+ 보존</text>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg36s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="wood36s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c3a21"/>
+      <stop offset="50%" stop-color="#8c5a32"/>
+      <stop offset="100%" stop-color="#4a2e19"/>
+    </linearGradient>
+    <linearGradient id="water36s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="acornGood36s1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </radialGradient>
+    <radialGradient id="acornBad36s1" cx="40%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#78716c"/>
+      <stop offset="100%" stop-color="#292524"/>
+    </radialGradient>
+    <pattern id="grid36s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow36s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg36s1)"/>
+  <rect width="400" height="400" fill="url(#grid36s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.5" font-weight="bold">FIG. 01 // 물에 띄워 벌레 먹은 도토리 선별 + 껍질 까기</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#2a0f14" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="64" fill="#fca5a5" font-family="monospace" font-size="9">물 위 뜬 알맹이(X): 속 빈 벌레 열매 즉시 버리기</text>
+
+  <!-- Main Visual: Carved Wooden Bowl Float Sorting + River Cobble Dehulling -->
+  <g filter="url(#shadow36s1)">
+    <!-- Wooden Bowl -->
+    <path d="M 46 136 L 62 246 Q 68 270 156 270 Q 244 270 250 246 L 266 136 Z" fill="url(#wood36s1)" stroke="#9a6b42" stroke-width="2.5"/>
+    <path d="M 60 154 L 74 240 Q 80 256 156 256 Q 232 256 238 240 L 252 154 Z" fill="url(#water36s1)" stroke="#38bdf8" stroke-width="1"/>
+    <!-- Water Surface Line -->
+    <ellipse cx="156" cy="154" rx="96" ry="12" fill="#0284c7" fill-opacity="0.35" stroke="#7dd3fc" stroke-width="1.5"/>
+
+    <!-- Floating Wormy Acorns on Top (Bad) -->
+    <g>
+      <ellipse cx="110" cy="152" rx="11" ry="8" fill="url(#acornBad36s1)" stroke="#ef4444" stroke-width="1.5"/>
+      <circle cx="113" cy="150" r="2" fill="#09090b"/>
+      <ellipse cx="192" cy="150" rx="11" ry="8" fill="url(#acornBad36s1)" stroke="#ef4444" stroke-width="1.5"/>
+      <circle cx="195" cy="149" r="2" fill="#09090b"/>
+      <!-- Red X badge on floating line -->
+      <circle cx="152" cy="126" r="12" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+      <line x1="147" y1="121" x2="157" y2="131" stroke="#fecaca" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="157" y1="121" x2="147" y2="131" stroke="#fecaca" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Heavy Sound Sunken Acorns at Bottom (Good) -->
+    <g>
+      <ellipse cx="106" cy="240" rx="12" ry="9" fill="url(#acornGood36s1)" stroke="#22c55e" stroke-width="1.5"/>
+      <ellipse cx="136" cy="244" rx="12" ry="9" fill="url(#acornGood36s1)" stroke="#22c55e" stroke-width="1.5"/>
+      <ellipse cx="168" cy="243" rx="12" ry="9" fill="url(#acornGood36s1)" stroke="#22c55e" stroke-width="1.5"/>
+      <ellipse cx="198" cy="239" rx="12" ry="9" fill="url(#acornGood36s1)" stroke="#22c55e" stroke-width="1.5"/>
+      <!-- Green Check badge at bottom -->
+      <circle cx="222" cy="212" r="12" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+      <polyline points="216,212 220,216 228,207" fill="none" stroke="#86efac" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Side: Granite Stone Base + River Cobble + Peeled Kernel -->
+    <polygon points="274,254 374,254 382,274 266,274" fill="#475569" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Fist-sized River Stone cracking -->
+    <ellipse cx="326" cy="184" rx="28" ry="20" fill="#64748b" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M 326 208 L 326 232" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="3 2"/>
+    <polygon points="321,226 326,236 331,226" fill="#f59e0b"/>
+    <!-- Cracked Acorn Shell & Exposed Cream Kernel -->
+    <ellipse cx="322" cy="246" rx="11" ry="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <path d="M 342 248 Q 354 240 360 250 Q 348 254 342 248 Z" fill="#78350f" stroke="#b45309" stroke-width="1.2"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+  <text x="24" y="315" fill="#86efac" font-family="monospace" font-size="9">바닥 가라앉은 열매(V): 단단한 묵직한 알맹이 채택</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="344" fill="#cbd5e1" font-family="monospace" font-size="9">주먹 크기 강돌로 껍질 깨고 붉은 속껍질 벗기기</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 가라앉은 튼튼한 속살만 골라 곰팡이·쓴맛 차단</text>
+</svg>

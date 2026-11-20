@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-36",
+  "category": "FOOD",
+  "title": "Cómo Desamargar Bellotas con Agua Fría y Piedras para Hacer Harina Conservable 1 Año y Gelatina de Bellota",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[COSECHA CALÓRICA SILVESTRE Y DESINTOXICACIÓN DE BELLOTAS EN AGUA FRÍA]",
+  "summary": "Si su hogar o refugio aún cuenta con latas, raciones secas o harinas comerciales, consuma primero esos alimentos preparados por ser la opción más rápida y segura. Sin embargo, ante aislamiento prolongado en bosques de otoño o invierno sin provisiones, las bellotas caídas ofrecen una reserva vital de carbohidratos. Dado que las bellotas crudas poseen taninos amargos tóxicos que irritan el estómago, provocan vómitos y dañan los riñones, debe procesarlas en cuatro pasos —selección por flotación y pelado, molido en granito, lavado en agua fría de 2 a 4 días en tela de algodón y decantado de 3 a 4 horas para secar harina al sol o hervir con [Fuego por Fricción](/protocol-02) y [Cuenco de Madera](/protocol-33)— obteniendo alimento seguro para más de un año.",
+  "timeRequired": "1 h descascarado y molido + 2-4 días de lavado en frío (el almidón seco dura 1+ año)",
+  "successRate": "98% (lavando exclusivamente con agua fría hasta salir cristalina sin amargor)",
+  "difficulty": "Principiante (sin herramientas; usa piedras lisas, losa de granito, cuencos de madera, algodón y agua fría)",
+  "outputPerHour": "Harina blanca de bellota 100% libre de toxinas y gelatina nutritiva densa de supervivencia",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Cubos de Bellotas Maduras Marrones + Losa Ancha de Granito y 2 Guijarros Lisos",
+      "desc": "Reúna bellotas sanas brillantes; luego use la losa de granito de dos palmos y un canto rodado de río del tamaño del puño para partir cáscaras y moler el grano más fino que la arena."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Cuencos Hondos de Madera y Agua Fría Limpia de Arroyo (o Filtrada Fría)",
+      "desc": "Sirven para separar bellotas picadas por flotación y dejar reposar el almidón 3-4 horas. Sin arroyo, use agua fría filtrada con [Filtro de Carbón y Arena](/protocol-01) cambiada 2-3 veces al día y cueza con [Cuenco de Madera y Piedras Calientes](/protocol-33)."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 Tela Limpia de Algodón Tupido y Piedra Plana o Estera Seca para Secado Solar",
+      "desc": "Envuelve la harina molida dejando salir el agua roja amarga mientras retiene la pulpa. Seque el almidón asentado en capa fina o prepárelo en [Fogón de Barro](/protocol-06) guardándolo en [Nevera de Barro Evaporativa](/protocol-16)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Seleccione Bellotas Sanas por Flotación en Agua Fría y Retire Cáscara y Piel Roja",
+      "description": "1. **Deseche las Bellotas que Flotan**: Vierta las bellotas en un cuenco de madera con agua fría y remueva —retire y tire **todas las que floten arriba (huecas, agusanadas o podridas)** y conserve solo las densas que caen al fondo.\n2. **Parta la Cáscara con Piedra de Río**: Apoye cada bellota escurrida sobre piedra plana y dé un golpe suave con un **guijarro del tamaño del puño** para rajar la cáscara dura sin aplastar el grano.\n3. **Frote la Piel Roja Interna Amarga**: Deje orear un instante o frote entre las palmas para desprender la fina piel rojiza, dejando solo **grano crema claro limpio** que desamarga el doble de rápido.",
+      "actionNote": "> ¿Por qué tirar toda bellota flotante sin pelarla? Aunque parezcan sanas por fuera, larvas de gorgojo o moho interno crean bolsas de aire que las hacen flotar; mezclarlas arruina toda la harina con olor rancio y malestar estomacal.",
+      "svgFileName": "pr36-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SELECCIÓN POR FLOTACIÓN Y PELADO CON PIEDRA",
+        "Nuez que flota (X): hueca o con gusano, tirar ya",
+        "Nuez en el fondo (V): grano sano denso comestible",
+        "Partir cáscara con canto rodado y frotar piel roja",
+        "[CLAVE] Solo nueces pesadas evitan moho y amargor"
+      ],
+      "deepDive": {
+        "badge": "FLOAT SORTING & HULLING",
+        "title": "Selección Hidrostática por Densidad y Retiro Previo del Tegumento Rojo",
+        "text": "Las bellotas cargadas de almidón superan la densidad del agua y **se hunden al instante al fondo**, mientras las dañadas atrapan aire y flotan. Retirar la fina **piel rojiza interna** elimina la mayor concentración superficial de taninos antes del lavado.",
+        "fieldSpecs": [
+          {
+            "name": "Bellotas Sanas Hundidas en Cuenco de Madera Junto a Cáscaras Partidas y Grano Pelado",
+            "scientificName": "Oak Acorn Hydrostatic Float-Test Sorting & River-Stone Dehulling",
+            "categoryTag": "Flotación por Densidad / Pelado",
+            "imageFileName": "id-acorn-selection-float-test-sorting.jpg",
+            "hudCode": "FIG. FOOD-36A // MACRO OPTIC",
+            "hudStatus": "DENSITY SORT: SUNKEN KERNELS ONLY",
+            "traits": [
+              {
+                "label": "Orden/Fondo",
+                "value": "**Deseche las que flotan** y guarde únicamente las bellotas del fondo."
+              },
+              {
+                "label": "Golpe/Piedra",
+                "value": "**Parta con guijarro de puño** suavemente para extraer granos enteros."
+              },
+              {
+                "label": "Piel/Roja",
+                "value": "**Frote la telilla roja** para acortar días de lavado en agua fría."
+              }
+            ],
+            "fieldUse": "Descarte rápido de frutos podridos o agusanados antes de moler"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Muela los Granos Más Finos que la Arena Sobre Losa Ancha de Granito",
+      "description": "1. **Prepare Losa de Granito y Majadero Limpios**: Elija una **losa plana de granito duro de dos palmos** y un **canto rodado liso**, enjuagando tierra y musgo.\n2. **Triture y Muela en Círculos**: Machaque puñados de bellota limpia y cargue su peso frotando **en círculos como metate hasta quedar más fino que granos de arena** (unas gotas de agua fría evitan que vuele polvo).\n3. **Prueba Táctil Sin Grumos Duros**: Frote entre pulgar e índice hasta no notar **ningún trocito duro tipo sémola gruesa**, logrando pasta o harina uniforme.",
+      "actionNote": "> ¿Por qué no partirlas solo en cuartos antes de remojar? Los trozos grandes lavan solo el milímetro exterior y retienen taninos tóxicos en el centro durante semanas. Moler fino permite que el agua fría lave cada gránulo en días.",
+      "svgFileName": "pr36-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // MOLIDO FINO EN LOSA DE GRANITO Y GUJARRO",
+        "Colocar granos pelados sobre granito duro de 2 palmos",
+        "Moler en círculo presionando con guijarro de mano",
+        "Sin grumos gruesos (X): harina fina como arena (V)",
+        "[CLAVE] Grano fino expone el 100% al lavado en frío"
+      ],
+      "deepDive": {
+        "badge": "GRANITE MILLING & SURFACE AREA",
+        "title": "Fricción en Granito Duro para Maximizar Superficie de Contacto Hídrico",
+        "text": "Los taninos hidrosolubles viven encerrados en paredes celulares rígidas. Moler sobre **granito compacto** evita arena suelta de roca blanda y multiplica decenas de veces la superficie expuesta al **agua fría desintoxicante**.",
+        "fieldSpecs": [
+          {
+            "name": "Granos de Bellota Molidos en Losa de Granito con Canto Rodado Hasta Harina Fina",
+            "scientificName": "Granite Slab & River-Cobble Pestle Micro-Milling of Acorn Kernels",
+            "categoryTag": "Molido en Granito / Grano Microfino",
+            "imageFileName": "id-granite-stone-crushing-acorn-paste.jpg",
+            "hudCode": "FIG. FOOD-36B // MACRO OPTIC",
+            "hudStatus": "GRIND TEXTURE: FINE SANDY MEAL",
+            "traits": [
+              {
+                "label": "Roca/Dura",
+                "value": "**Escoja granito duro** que no suelte polvo mineral arenoso."
+              },
+              {
+                "label": "Grano/Fino",
+                "value": "**Muela más fino que arena** hasta desaparecer grumos al tacto."
+              },
+              {
+                "label": "Gotas/Agua",
+                "value": "**Añada gotas mínimas de agua** para facilitar pasta suave sin polvareda."
+              }
+            ],
+            "fieldUse": "Acelerar la extracción segura de taninos sin molino mecánico"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Envuelva en Tela de Algodón y Lave en Agua Fría 2-4 Días Hasta Que Salga Cristalina",
+      "description": "1. **Ate la Masa en Algodón Tupido**: Coloque la pasta molida en el centro de una **tela limpia de algodón tupido** y ate firme las esquinas para dejar pasar agua teñida reteniendo el bagazo.\n2. **Sumerja Solo en Agua Fría 2-4 Días**: Fije el atado con piedras en un **arroyo frío de corriente suave** (rápida lava el almidón), o amase dentro de un cuenco con agua fría renovada **2-3 veces diarias al teñirse de rojo oscuro**.\n3. **Compruebe por Color y Sabor Directo**: Al cabo de 2-4 días cuando el agua exprimida salga **transparente sin tinte marrón**, pruebe una pizca con la punta de la lengua — debe saber **suave a nuez sin ningún amargor áspero**.",
+      "actionNote": "> ¿Por qué arruina todo hervir o usar agua caliente para apurar el proceso? Al superar 60 C el almidón se cuece y gelatiniza instantáneamente atrapando los taninos amargos dentro de cada partícula sin vuelta atrás. Solo el agua fría limpia la toxina conservando el almidón.",
+      "svgFileName": "pr36-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ATADO EN ALGODÓN Y LAVADO EN FRÍO 2-4 DÍAS",
+        "Envolver masa fina en algodón tupido sin perder pulpa",
+        "Agua caliente (X) sella toxinas: usar fría (V) 2-4d",
+        "Amasar y enjuagar hasta que salga agua transparente",
+        "[CLAVE] El agua fría extrae toxina y salva el almidón"
+      ],
+      "deepDive": {
+        "badge": "COLD-WATER TANNIN LEACHING",
+        "title": "Solubilidad Selectiva en Frío: Extracción de Taninos Sin Cocer Almidón",
+        "text": "Los **taninos tóxicos son solubles en agua fría**, tiñéndola de ámbar oscuro al salir, mientras el **almidón nutritivo permanece insoluble** en estado sólido frío. El agua caliente sella el grano impidiendo su limpieza.",
+        "fieldSpecs": [
+          {
+            "name": "Atado de Algodón con Harina de Bellota Sujeto con Piedras en Arroyo Frío",
+            "scientificName": "Cotton Cloth Cold-Stream Tannin Leaching Weighted with River Cobbles",
+            "categoryTag": "Solo Agua Fría / Control Transparente",
+            "imageFileName": "id-cold-stream-leaching-tannin-removal.jpg",
+            "hudCode": "FIG. FOOD-36C // MACRO OPTIC",
+            "hudStatus": "LEACH FLUID: CLEAR COLD WATER ONLY",
+            "traits": [
+              {
+                "label": "Temp/Fría",
+                "value": "**Use agua exclusivamente fría** para no cocinar ni encerrar el amargor."
+              },
+              {
+                "label": "Corriente/Leve",
+                "value": "**Busque corriente suave** para evitar lavado del polvo fino blanco."
+              },
+              {
+                "label": "Prueba/Lengua",
+                "value": "**Enjuague 2-4 días** hasta agua transparente y sabor cero áspero."
+              }
+            ],
+            "fieldUse": "Desintoxicar bellotas silvestres amargas con gasto cero de combustible"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Decante Almidón 3-4 Horas para Secar Harina (1+ Año) o Hierva 1:5-6 en Gelatina",
+      "description": "1. **Deje Reposar 3-4 Horas el Almidón Blanco**: Exprima y enjuague la bolsa dentro de un cuenco con agua fría limpia para sacar todo el jugo lechoso, déjelo **quieto 3-4 horas** hasta formar pasta blanca densa al fondo y escurra despacio el agua clara superior.\n2. **Secado Solar Fino Para Almacenar 1+ Año**: Extienda el almidón húmedo en capa menor a un dedo sobre piedra limpia o estera al sol directo hasta que **quede seco y quebradizo en polvo** — dura más de un año sin moho.\n3. **Hierva 1 Parte de Almidón por 5-6 de Agua**: Para comer ya, mezcle **1 porción de almidón en 5-6 de agua limpia** removiendo sin parar con paleta de madera sobre [Fuego por Fricción](/protocol-02) y [Fogón de Barro](/protocol-06) o con [Cuenco de Madera y Piedras](/protocol-33) hasta que burbujee brillante y espeso, y enfríe en bloque firme (conserve fresco en [Nevera Evaporativa](/protocol-16)).",
+      "actionNote": "> ¿Por qué respetar la proporción 1:5-6 y revolver sin descanso desde el fondo? Poca agua produce bloques duros y demasiada no cuaja. Si deja de mover la paleta al hervir, el almidón se quema pegado al fondo al instante; bata hasta brillo oscuro.",
+      "svgFileName": "pr36-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // DECANTAR 3-4H, SECAR HARINA Y GEL 1:5-6",
+        "Reposar jugo lechoso 3-4h y volcar el agua clara",
+        "Secar sedimento al sol brinda harina estable 1+ año",
+        "Hervir 1 harina : 5-6 agua batiendo a brillo oscuro",
+        "[CLAVE] Seca dura 1+ año; cocida cuaja en gelatina"
+      ],
+      "deepDive": {
+        "badge": "STARCH SEDIMENTATION & GELATINIZATION",
+        "title": "Sedimentación Gravitatoria (3-4 h) y Red Hidrotérmica de Gelatina 1:5.5",
+        "text": "Los gránulos pesados de almidón decantan al **fondo del cuenco en 3-4 horas** separando impurezas ligeras con el agua superior. Deshidratada por sol dura **1+ año sin fermentar**, mientras hervir **1 parte en 5-6 de agua** gelifica una masa firme energética.",
+        "fieldSpecs": [
+          {
+            "name": "Tortas de Almidón Blanco Secadas al Sol Junto a Gelatina Oscura Brillante de Bellota",
+            "scientificName": "Sun-Dried Settled Acorn Starch Powder & Gelatinized 1:5.5 Wild Acorn Jelly",
+            "categoryTag": "Harina 1+ Año / Gelatina 1:5-6",
+            "imageFileName": "id-settled-acorn-starch-cake-drying.jpg",
+            "hudCode": "FIG. FOOD-36D // MACRO OPTIC",
+            "hudStatus": "STARCH YIELD: LEACHED & EDIBLE",
+            "traits": [
+              {
+                "label": "Reposo/3-4h",
+                "value": "**Deje quieto 3-4 horas** antes de verter despacio el agua clara superior."
+              },
+              {
+                "label": "Secado/1+Año",
+                "value": "**Seque bien fino al sol** para almacenar todo el año sin hongos."
+              },
+              {
+                "label": "Mezcla/1:5-6",
+                "value": "**Disuelva 1 almidón en 5-6 agua** y remueva hasta brillo espeso."
+              }
+            ],
+            "fieldUse": "Transformar cosechas otoñales perecederas en reserva anual de carbohidratos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Saltar el Lavado Frío de 2-4 Días y Comer Bellotas Crudas, Tostadas o Aún Amargas",
+    "description": "Ninguna urgencia justifica comer bellotas crudas, tostadas sin desamargar o harinas cuyo enjuague siga tiñendo marrón: sus taninos concentrados queman la mucosa gástrica, provocan vómitos intensos, obstrucción intestinal severa y fallo renal. Jamás lave alimento en charcas estancadas sucias sin pasar el agua por [Filtro de Carbón y Arena](/protocol-01) o [Filtro de Algodón y Desinfección Solar](/protocol-23), y rehidrate vómitos enseguida con [Suero Casero ORS](/protocol-24).",
+    "consequence": "Intoxicación aguda por taninos con úlcera gástrica, vómitos, obstrucción intestinal, daño renal e infección hídrica."
+  },
+  "faqs": [
+    {
+      "question": "¿Cómo quito el amargor si no tengo ningún arroyo corriente cerca sino solo agua quieta en cuencos?",
+      "causeDiagnostic": "Los taninos se disuelven igualmente en agua fría estancada; basta renovar el agua limpia con constancia.",
+      "resolution": "Meta la harina en tela o déjela suelta en un cuenco hondo de agua fría filtrada, remueva y al sedimentar bote el agua marrón **cambiándola por agua fría limpia 2-3 veces al día durante 3-4 días** hasta quedar transparente y sin aspereza en la lengua."
+    },
+    {
+      "question": "¿Por qué no puedo ahorrar días hirviendo los trozos de bellota en agua caliente y tirando el caldo oscuro?",
+      "causeDiagnostic": "El almidón de bellota gelifica cerca de 60 C y sella al instante las células internas apenas toca agua caliente.",
+      "resolution": "Cocer en caliente convierte la superficie en engrudo **atrapando la toxina amarga adentro para siempre**, desperdicia leña, impide decantar harina seca guardable y arruina el cuajado de la gelatina. Solo el agua fría desamarga limpiamente."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Completo de Selección, Molido en Granito, Lavado Frío 2-4 Días y Harina/Gelatina de Bellota 1:5-6",
+    "badge": "TARGET OUTCOME // HARINA 1+ AÑO Y GELATINA SIN TOXINAS",
+    "description": "Ingeniería alimentaria sin herramientas que selecciona bellotas sanas por flotación, las muele en granito más finas que arena, extrae taninos con agua fría 2-4 días en algodón y decanta 3-4 horas para secar harina duradera o cocinar gelatina 1:5-6.",
+    "svgFileName": "pr36-outcome.svg",
+    "svgLabels": [
+      "PR-36 COMPLETO // HARINA Y GELATINA DE BELLOTA EN FRÍO",
+      "FASE 01: FLOTAR Y PELAR",
+      "Usar solo hundidas sin piel roja",
+      "FASE 02: MOLER EN GRANITO",
+      "Harina más fina que la arena",
+      "FASE 03: LAVAR EN FRÍO 2-4D",
+      "Tela de algodón sin nada de calor",
+      "FASE 04: DECANTAR Y CUAJAR",
+      "Secar 3-4h o hervir gel 1:5-6",
+      "[PRINCIPIO] El agua fría disuelve toxinas solubles manteniendo intacto el almidón"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Perdido en el bosque sin comida y solo hay bellotas? Nunca las comas crudas—¡así se quita el veneno amargo con piedras y agua fría para guardarlas 1 año!",
+    "body": "Primero échalas en agua fría: tira todas las que floten porque tienen gusanos y parte con una piedra solo las pesadas del fondo, quitando la piel roja. Segundo, muélelas sobre una losa de granito más finas que arena para que entre el agua. Tercero, ¡clave vital!: envuelve en tela de algodón y lávalas 2 a 4 días SOLO en agua fría —nunca caliente o se sella el amargor— hasta que salga cristalina y nada áspera. Cuarto, deja reposar 3-4 horas, bota el agua clara, seca el almidón blanco al sol para 1 año o hiérvelo 1 a 5 con agua para hacer gelatina firme!"
+  },
+  "createdAt": "2026-11-20T00:58:30.265Z",
+  "contentHash": "2ce15dc3445950e6"
+}

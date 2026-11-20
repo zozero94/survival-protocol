@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-36",
+  "category": "FOOD",
+  "title": "How to Cold-Leach Bitter Toxins Out of Wild Acorns to Make Long-Term Storable Acorn Flour and Acorn Jelly",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[WILDERNESS CALORIE HARVEST & COLD-WATER ACORN DETOXIFICATION ENGINEERING]",
+  "summary": "If your shelter or emergency kit already contains canned foods, freeze-dried rations, or store-bought starch flour, eat those ready-made food supplies first as the fastest, safest source of nutrition. However, when stranded long-term in autumn or winter forests with zero rations remaining, fallen wild acorns offer a vital life-saving store of carbohydrates. Because raw acorns contain harsh bitter tannins that damage stomach linings, cause vomiting, and injure kidneys if eaten untreated, you must process them through four steps—float sorting and shelling, granite stone grinding, 2 to 4 days of cold-water leaching in woven cotton cloth, and 3 to 4 hours of starch settling before sun-drying or boiling over a [Bow-Drill Fire](/protocol-02) in a [Burned Wood Bowl](/protocol-33)—to yield safe 1-year storable acorn flour or firm jelly.",
+  "timeRequired": "1 hr hulling & grinding + 2-4 days cold-water leaching (dry starch keeps 1+ year)",
+  "successRate": "98% (when leached exclusively in cold water until squeezing clear with zero bitter taste)",
+  "difficulty": "Beginner (No tools needed; uses river stones, granite slab, wood bowls, cotton cloth, and cold water)",
+  "outputPerHour": "100% toxin-free white acorn starch flour and dense survival acorn jelly from wild nuts",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Buckets Ripe Brown Oak Acorns + Wide Granite Slab & 2 Smooth Fist-Sized River Stones",
+      "desc": "Collect firm glossy brown acorns, then use a two-hand-span flat granite slab and rounded river cobble to crack outer shells and grind peeled kernels finer than sand grains."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Deep Wooden Bowls (or Tubs) & Clear Cold Stream Water (or Filtered Cold Water)",
+      "desc": "Used to float-sort damaged nuts and settle starch for 3-4 hours. Without a clear creek, soak in cold water purified through a [Charcoal-Sand Water Filter](/protocol-01) changed 2-3 times daily, and cook using [Burn-Bowl Stone Boiling](/protocol-33)."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 Tight-Woven Clean Cotton Cloth or Towel & Flat Drying Stone or Dry Reed Mat",
+      "desc": "Wraps crushed meal so red bitter water squeezes out while keeping coarse grit inside. Sun-dry settled starch thin on a reed mat, or cook jelly over a [Clay Hearth](/protocol-06) and store cool inside a [Clay Zeer Cooler](/protocol-16)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Float-Sort Sound Acorns in Cold Water and Crack Both Shells and Red Skins Off",
+      "description": "1. **Discard Floating Damaged Nuts**: Pour harvested acorns into a wooden bowl of cold water and stir—immediately scoop out and discard **every floating nut (hollow, weevil-bored, or rotten)**, keeping only heavy acorns that sink cleanly to the bottom.\n2. **Crack Outer Shells with a River Stone**: Rest drained nuts sideways on a flat rock and tap gently with a **fist-sized river cobble** just hard enough to split the tough brown shell without smashing the pale kernel.\n3. **Rub Off Bitter Red Inner Skins**: Briefly sun-dry or rub the kernels between your palms so the thin reddish-brown inner skin peels away—leaving **clean pale cream nutmeat** that leaches twice as fast.",
+      "actionNote": "> Why inspect and discard every floating acorn instead of shelling them all? Even intact-looking shells can hide grub tunnels and black mold inside air pockets that float them. One moldy batch ruins the entire flour yield with foul bitterness and stomach illness.",
+      "svgFileName": "pr36-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // FLOAT-TEST ACORN SORTING & STONE SHELLING",
+        "Floating nuts (X): hollow or grub-eaten, discard immediately",
+        "Sunken nuts (V): heavy sound kernels kept for food",
+        "Crack shells with fist stone and rub off bitter red skin",
+        "[CORE] Sunken sound kernels prevent mold & bitter taint"
+      ],
+      "deepDive": {
+        "badge": "FLOAT SORTING & HULLING",
+        "title": "Hydrostatic Specific-Gravity Sorting and Red Testa Tannin Reduction",
+        "text": "Starch-dense sound acorns exceed water density and **sink rapidly to the bowl floor**, whereas insect-damaged or dried rotten kernels trap internal air and float. Removing the thin **red inner seed coat (testa)** strips the highest surface concentration of bitter tannins before leaching even begins.",
+        "fieldSpecs": [
+          {
+            "name": "Sound Oak Acorns Sunken in Wooden Bowl Next to Cracked Shells and Peeled Kernels",
+            "scientificName": "Oak Acorn Hydrostatic Float-Test Sorting & River-Stone Dehulling",
+            "categoryTag": "Float Sorting / Inner Skin Removal",
+            "imageFileName": "id-acorn-selection-float-test-sorting.jpg",
+            "hudCode": "FIG. FOOD-36A // MACRO OPTIC",
+            "hudStatus": "DENSITY SORT: SUNKEN KERNELS ONLY",
+            "traits": [
+              {
+                "label": "Sort/Sink",
+                "value": "**Discard floating nuts** and keep only heavy acorns on the bottom."
+              },
+              {
+                "label": "Crack/Tap",
+                "value": "**Tap shells with a fist-sized stone** cleanly without crushing meat."
+              },
+              {
+                "label": "Peel/Skin",
+                "value": "**Rub off reddish inner skin** to speed up cold-water detoxification."
+              }
+            ],
+            "fieldUse": "Filtering out rotten or insect-bored acorns cleanly before stone milling"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Grind Acorn Kernels Finer Than Sand Grains on a Wide Granite Slab",
+      "description": "1. **Wash a Hard Granite Slab and Pestle**: Choose a **broad two-hand-span flat granite rock** and a **smooth fist-sized cobble pestle**, rinsing off all moss or loose grit.\n2. **Crush and Grind in Circular Motions**: Smash handfuls of clean kernels into coarse bits, then lean your weight onto the stone pestle and **grind in steady circles until finer than sand grains** (a few drops of cold water keep dry flour from scattering).\n3. **Pinch Test for Zero Coarse Lumps**: Rub a pinch between thumb and forefinger—keep grinding until **zero hard pebble-like chunks remain** and every grain feels uniform and soft.",
+      "actionNote": "> Why not simply halve or quarter acorns before soaking? Large chunks only rinse clear on the outer millimeter while locking bitter toxins deep at the core for weeks. Finely milled sandy meal exposes every starch granule so cold water flushes bitterness out in days.",
+      "svgFileName": "pr36-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // GRANITE SLAB & COBBLE FINE MILLING",
+        "Spread peeled kernels on 2-span hard granite slab",
+        "Grind in circles using smooth fist-sized river stone",
+        "No coarse lumps (X): grind finer than sand grains (V)",
+        "[CORE] Finer meal exposes full area for total toxin wash"
+      ],
+      "deepDive": {
+        "badge": "GRANITE MILLING & SURFACE AREA",
+        "title": "Hard Granite Attrition Milling for Maximum Water-Contact Surface Area",
+        "text": "Water-soluble tannins sit locked inside dense cellular walls. Grinding kernels on **non-crumbling granite** instead of soft sandstone prevents stone grit contamination while multiplying surface area dozens of times so **cold water dissolves bitterness rapidly**.",
+        "fieldSpecs": [
+          {
+            "name": "Granite Stone Slab and River Pestle Grinding Acorn Kernels Into Fine Meal",
+            "scientificName": "Granite Slab & River-Cobble Pestle Micro-Milling of Acorn Kernels",
+            "categoryTag": "Granite Grinding / Fine Particle Prep",
+            "imageFileName": "id-granite-stone-crushing-acorn-paste.jpg",
+            "hudCode": "FIG. FOOD-36B // MACRO OPTIC",
+            "hudStatus": "GRIND TEXTURE: FINE SANDY MEAL",
+            "traits": [
+              {
+                "label": "Stone/Hard",
+                "value": "**Pick hard granite** that does not shed chalky stone grit."
+              },
+              {
+                "label": "Grain/Sand",
+                "value": "**Grind finer than sand** so cold water penetrates every particle."
+              },
+              {
+                "label": "Drop/Water",
+                "value": "**Add tiny water drops** while grinding to form smooth damp meal."
+              }
+            ],
+            "fieldUse": "Maximizing leaching efficiency and starch extraction using only river rocks"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Wrap Meal in Cotton Cloth and Cold-Leach for 2-4 Days Until Squeezed Water Runs Clear",
+      "description": "1. **Bundle Meal Inside Tight Cotton Cloth**: Mound ground meal into the center of a clean **tight-woven cotton cloth**, gather all four corners, and twist/tie shut so brown water escapes while pulp stays trapped.\n2. **Submerge Only in Cold Water for 2-4 Days**: Anchor the pouch under smooth stones in a **gentle cold stream riffle** (too fast washes white starch away), or knead inside a wooden bowl of cold water changed **2-3 times daily as amber water deepens**.\n3. **Verify Zero Bitterness by Sight and Taste**: After 2-4 days when squeezed liquid turns **crystal clear with zero brown tint**, pinch a tiny crumb onto your tongue—it must taste **mild and nutty with zero chalky astringency**.",
+      "actionNote": "> Why is boiling or pouring hot water to rush leaching a ruinous mistake? Hot water cooks starch granules instantly into sticky paste that traps bitter toxins permanently inside the meal. Cold water alone removes tannins cleanly while keeping starch whole.",
+      "svgFileName": "pr36-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // COTTON POUCH 2-4 DAY COLD-WATER LEACHING",
+        "Tie fine meal inside tight cotton cloth to hold pulp",
+        "Hot water (X) traps toxins: use cold water (V) 2-4d",
+        "Knead and rinse until brown runoff runs crystal clear",
+        "[CORE] Cold water dissolves toxins while saving starch"
+      ],
+      "deepDive": {
+        "badge": "COLD-WATER TANNIN LEACHING",
+        "title": "Selective Cold Solubility: Extracting Soluble Tannins Without Cooking Starch",
+        "text": "Wild acorn tannins dissolve cleanly in **cold water** and flush out as tea-colored amber liquid, whereas life-saving **acorn starch stays insoluble** in cold water. Heating before leaching triggers irreversible starch gelatinization above 60C that locks bitter compounds inside.",
+        "fieldSpecs": [
+          {
+            "name": "Cotton Cloth Pouch of Acorn Meal Weighted in Cold Flowing Mountain Stream Water",
+            "scientificName": "Cotton Cloth Cold-Stream Tannin Leaching Weighted with River Cobbles",
+            "categoryTag": "Cold Water Only / 2-4 Day Clear Check",
+            "imageFileName": "id-cold-stream-leaching-tannin-removal.jpg",
+            "hudCode": "FIG. FOOD-36C // MACRO OPTIC",
+            "hudStatus": "LEACH FLUID: CLEAR COLD WATER ONLY",
+            "traits": [
+              {
+                "label": "Temp/Cold",
+                "value": "**Strictly use cold water** so white starch does not cook or lock toxins."
+              },
+              {
+                "label": "Flow/Gentle",
+                "value": "**Use gentle stream riffles** so cloth retains heavy starch grains."
+              },
+              {
+                "label": "Check/Taste",
+                "value": "**Rinse 2-4 days** until water runs clear and taste has zero pucker."
+              }
+            ],
+            "fieldUse": "Turning toxic bitter oak nuts into clean survival starch with zero fuel"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Settle Starch 3-4 Hours to Sun-Dry for 1+ Year Storage or Boil 1:5-6 into Firm Jelly",
+      "description": "1. **Settle White Starch Undisturbed 3-4 Hours**: Knead and twist the leached cloth in clean cold water inside a wooden bowl, discard woody fibers in the cloth, and let the milky liquid sit **still for 3-4 hours** until dense white starch packs onto the bottom before carefully pouring off the clear top water.\n2. **Sun-Dry Thin for 1+ Year Flour Storage**: Spread damp starch cake less than a finger-joint thick across a flat clean rock or dry reed mat in direct sunlight until **crisp and dry enough to crumble into powder**—storable dry for 1+ year.\n3. **Cook 1:5-6 Starch-to-Water Over Fire Into Jelly**: To eat immediately, stir **1 scoop leached starch with 5-6 scoops clean water** continuously with a wooden paddle over a [Bow-Drill Fire](/protocol-02) and [Clay Hearth](/protocol-06) or using [Burn-Bowl Stone Boiling](/protocol-33) until glossy dark-brown bubbles thicken, then cool into firm slices (store in [Clay Zeer Cooler](/protocol-16)).",
+      "actionNote": "> Why measure 1 part starch to 5-6 parts water and keep stirring constantly? Too little water sets hard as rock while too much never gels. Once simmering begins, stopping your wooden paddle even briefly scorches starch onto the bottom; stir steadily until deep glossy brown.",
+      "svgFileName": "pr36-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 3-4HR SETTLE, SUN-DRY FLOUR & 1:5-6 JELLY",
+        "Rest milky starch 3-4 hrs and pour off clear water",
+        "Sun-dry white sediment crisp for 1+ year flour storage",
+        "Simmer 1 starch : 5-6 water stirring to glossy brown",
+        "[CORE] Dried flour stores 1+ yr; cooked batch sets firm"
+      ],
+      "deepDive": {
+        "badge": "STARCH SEDIMENTATION & GELATINIZATION",
+        "title": "Gravity Starch Settling (3-4h) and 1:5.5 Hydrothermal Gel Network",
+        "text": "Pure starch grains sink through calm water over **3-4 hours**, letting chaff float away with the decanted top layer. Complete sun-drying cuts moisture below microbial limits for **year-round emergency storage**, while boiling **1 part flour in 5-6 parts water** unfolds starch chains into an elastic cooled gel.",
+        "fieldSpecs": [
+          {
+            "name": "Sun-Dried Creamy Acorn Starch Cakes Crumbled Into Powder Beside Glossy Brown Jelly",
+            "scientificName": "Sun-Dried Settled Acorn Starch Powder & Gelatinized 1:5.5 Wild Acorn Jelly",
+            "categoryTag": "1+ Yr Storable Flour / 1:5-6 Acorn Jelly",
+            "imageFileName": "id-settled-acorn-starch-cake-drying.jpg",
+            "hudCode": "FIG. FOOD-36D // MACRO OPTIC",
+            "hudStatus": "STARCH YIELD: LEACHED & EDIBLE",
+            "traits": [
+              {
+                "label": "Settle/3-4h",
+                "value": "**Wait 3-4 hours untouched** before pouring off clear top water slowly."
+              },
+              {
+                "label": "Dry/1+ Yr",
+                "value": "**Sun-dry thin and bone dry** so flour keeps 1+ year mold-free."
+              },
+              {
+                "label": "Ratio/1:5-6",
+                "value": "**Mix 1 starch : 5-6 water** and stir constantly to glossy dark gel."
+              }
+            ],
+            "fieldUse": "Converting seasonal wild forest harvests into shelf-stable year-round survival food"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Skipping the 2-4 Day Cold Leach and Eating Raw, Roasted, or Half-Leached Bitter Acorns",
+    "description": "Hunger never justifies eating raw acorns, roasted unleached kernels, or half-leached meal that still yields amber water: dense wild tannins sear stomach linings, trigger violent vomiting and severe bowel blockage, and damage kidneys. Never leach food inside polluted stagnant pond water without running it through a [Charcoal-Sand Water Filter](/protocol-01) or [Towel Filter & Solar Disinfection](/protocol-23), and treat accidental vomiting immediately with [Oral Rehydration Solution (ORS)](/protocol-24).",
+    "consequence": "Acute tannin poisoning causing stomach ulceration, vomiting, severe constipation/impaction, kidney injury, and waterborne illness."
+  },
+  "faqs": [
+    {
+      "question": "How do I leach acorns if there is no clear running mountain stream nearby, only still bowl water?",
+      "causeDiagnostic": "Tannins diffuse out into calm cold water as well, requiring only steady water swaps rather than current.",
+      "resolution": "Either wrap the ground meal in cloth or stir it loosely in a deep wooden bowl of cold filtered water, letting meal settle briefly before pouring off the dark brown water and refilling with **fresh cold water 2-3 times daily for 3-4 full days** until clear and zero-pucker on the tongue."
+    },
+    {
+      "question": "Why can I not save days by boiling raw acorn chunks in hot water and dumping the dark water?",
+      "causeDiagnostic": "Acorn starch gelatinizes around 60C, sealing microscopic pores inside each grain the instant hot water hits.",
+      "resolution": "Hot boiling turns raw acorn starch into sticky glue that **locks harsh tannins inside permanently**, wastes massive amounts of firewood, prevents starch from settling as dry white storage powder, and ruins jelly elasticity. Cold water soaking is the only reliable detoxification path."
+    }
+  ],
+  "outcome": {
+    "title": "Float-Sorted, Granite-Milled, 2-4 Day Cold-Leached Storable Acorn Flour & 1:5-6 Survival Jelly System",
+    "badge": "TARGET OUTCOME // TOXIN-FREE STORABLE ACORN STARCH & JELLY",
+    "description": "A zero-tool wilderness food process sorting sound oak acorns by float density, grinding kernels finer than sand on hard granite, leaching toxins exclusively with cold water in cotton cloth for 2-4 days, and settling starch for 3-4 hours into 1-year storable dry flour or cooked 1:5-6 survival jelly.",
+    "svgFileName": "pr36-outcome.svg",
+    "svgLabels": [
+      "PR-36 COMPLETE // ACORN COLD-LEACH FLOUR & JELLY",
+      "STAGE 01: FLOAT SORT & HULL",
+      "Keep sunken sound nuts + peel skin",
+      "STAGE 02: GRANITE FINE GRIND",
+      "Mill finer than sand on granite slab",
+      "STAGE 03: COLD LEACH 2-4 DAYS",
+      "Cloth pouch in cold water, zero heat",
+      "STAGE 04: SETTLE DRY & JELLY",
+      "3-4h settle dry + 1:5-6 boil gel",
+      "[PRINCIPLE] Cold water removes soluble toxins cleanly while preserving insoluble starch calories"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Stranded in the woods with nothing left to eat but fallen acorns? Never eat them raw—here is how stones and cold water turn toxic acorns into 1-year survival food!",
+    "body": "First, dump acorns in cold water—toss every floater full of grub holes and crack only heavy sunken nuts with a smooth river stone, rubbing off the bitter red skin. Second, grind kernels finer than sand grains on a wide granite rock so cold water reaches every speck. Third, the golden rule: wrap meal in tight cotton cloth and soak 2 to 4 days ONLY in cold stream or changed bowl water—never hot water—until runoff turns clear with zero pucker. Fourth, rest 3 to 4 hours, pour off clear top water, sun-dry the white starch for a year, or boil 1 part starch to 5 parts water for firm acorn jelly!"
+  },
+  "createdAt": "2026-11-20T00:58:30.265Z",
+  "contentHash": "2ce15dc3445950e6"
+}

@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-36",
+  "category": "FOOD",
+  "title": "Wilde Eicheln mit Kaltwasser entbittern: Mit Steinen mahlen und zu jahrelang haltbarem Eichelmehl und Gelee verarbeiten",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[WILDNIS-KALORIENGEWINNUNG & KALTWASSER-EICHELENTGIFTUNG]",
+  "summary": "Falls in Vorratskammer oder Notlager noch Konserven, Trockenrationen oder fertiges Mehl vorhanden sind, verzehren Sie diese Fertignahrung immer zuerst als schnellsten und sichersten Weg. Sind bei längerer Herbst- oder Winterisolation jedoch alle Vorräte erschöpft, liefern reichlich gefallene Eicheln lebensrettende Kohlenhydrate. Da rohe Eicheln giftige Bitterstoffe (Tannine) enthalten, die Magenschleimhaut, Darm und Nieren schwer schädigen, entgiften Sie sie in vier Schritten — Schwimmprobe und Schälen, Feinmahlen auf Granit, 2-4 Tage Kaltwasser-Auswaschen im Baumwolltuch sowie 3-4 Stunden Stärkeabsetzen zum Sonnentrocknen oder Einkochen mit [Bogenbohrfeuer](/protocol-02) und [Ausgebrannter Holzschüssel](/protocol-33).",
+  "timeRequired": "1 Std. Schälen & Mahlen + 2-4 Tage Kaltwasser-Entbitterung (getrocknetes Mehl 1+ Jahr haltbar)",
+  "successRate": "98% (ausschließlich kalt gewaschen, bis das Presswasser völlig klar und null bitter ist)",
+  "difficulty": "Anfänger (werkzeuglos; nur Flusssteine, Granitplatte, Holzschüsseln, Baumwolltuch und Kaltwasser)",
+  "outputPerHour": "100% entgiftetes weißes Eichel-Stärkemehl und festes Überlebensgelee aus Wildfrüchten",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Eimer reife braune Eicheln + breite Granitplatte & 2 glatte faustgroße Flusssteine",
+      "desc": "Sammeln Sie harte glänzende Eicheln und nutzen Sie eine zweihandbreite Granitplatte samt rundem Flussstein zum Knacken der Schalen und Feinmahlen unter Sandkorngröße."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 tiefe Holzschüsseln & klares kaltes Bachwasser (oder kalt gefiltertes Wasser)",
+      "desc": "Zum Aussortieren wurmstichiger Früchte und 3-4 Stunden Stärke-Absetzen. Ohne klaren Bach 2-3x täglich kaltes Wasser aus dem [Holzkohle-Sand-Filter](/protocol-01) wechseln; Kochen erfolgt im [Ausgebrannten Holztopf](/protocol-33)."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 dicht gewebtes sauberes Baumwolltuch & flacher Trockenstein oder trockene Grasmatte",
+      "desc": "Umschließt das Mehl, sodass rotes Bitterwasser abläuft und grober Trester bleibt. Abgesetzte Stärke dünn trocknen oder über dem [Lehmherd](/protocol-06) aufkochen und im [Ton-Verdunstungskühler](/protocol-16) kühlen."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Schadhafte Eicheln per Kaltwasser-Schwimmprobe aussortieren und Schale plus rote Haut abreiben",
+      "description": "1. **Schwimmende Früchte sofort verwerfen**: Geben Sie die Eicheln in eine Holzschüssel mit kaltem Wasser, rühren Sie um und schöpfen Sie **alle oben schwimmenden Nüsse (hohl, madig oder faul)** sofort weg — behalten Sie nur schwere, auf den Boden sinkende Kerne.\n2. **Harte Schale mit Flussstein sprengen**: Legen Sie abgetropfte Eicheln seitlich auf einen flachen Stein und klopfen Sie sacht mit einem **faustgroßen Flusskiesel**, bis die braune Schale platzt, ohne das Innere zu zermatschen.\n3. **Bittere rote Innenhaut abrubbeln**: Lassen Sie die Kerne kurz antrocknen oder reiben Sie die dünne rötliche Samenhaut zwischen den Handflächen ab, sodass **sauberes hellcremefarbenes Kernfleisch** doppelt so schnell entbittert.",
+      "actionNote": "> Warum jede schwimmende Eichel aussortiert werden muss? Selbst äußerlich makellose Nüsse verbergen Käfergänge oder Schwarzschimmel mit Luftkammern. Schon wenige faule Kerne verderben die gesamte Stärke mit Modergeruch und Bauchkrämpfen.",
+      "svgFileName": "pr36-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SCHWIMMPROBE-SORTIERUNG & SCHÄLEN PER STEIN",
+        "Oben treibend (X): hohl oder madig sofort fortwerfen",
+        "Am Boden sinkend (V): schwere gesunde Kerne nutzen",
+        "Schale mit Flussstein knacken, rote Haut abreiben",
+        "[KERN] Nur schwere Bodenkerne verhindern Schimmel"
+      ],
+      "deepDive": {
+        "badge": "FLOAT SORTING & HULLING",
+        "title": "Hydrostatische Dichtetrennung und Entfernung der gerbstoffreichen Samenhaut",
+        "text": "Stärkereiche gesunde Eicheln sind dichter als Wasser und **sinken sofort auf den Schüsselboden**, während angefressene Kerne Luft einschließen und treiben. Das Abreiben der **roten Innenhaut** entfernt vorab den konzentriertesten Gerbstoffanteil.",
+        "fieldSpecs": [
+          {
+            "name": "Im Holzgefäß abgesunkene gesunde Eicheln neben geknackten Schalen und geschälten Kernen",
+            "scientificName": "Oak Acorn Hydrostatic Float-Test Sorting & River-Stone Dehulling",
+            "categoryTag": "Dichte-Sortierung / Hautentfernung",
+            "imageFileName": "id-acorn-selection-float-test-sorting.jpg",
+            "hudCode": "FIG. FOOD-36A // MACRO OPTIC",
+            "hudStatus": "DENSITY SORT: SUNKEN KERNELS ONLY",
+            "traits": [
+              {
+                "label": "Probe/Sink",
+                "value": "**Treibende Eicheln ausmustern** und nur dichte Bodenkerne behalten."
+              },
+              {
+                "label": "Bruch/Kiesel",
+                "value": "**Sanft mit Flussstein aufschlagen**, damit der Kern sauber heraustritt."
+              },
+              {
+                "label": "Haut/Weg",
+                "value": "**Rote Samenhaut abreiben** verkürzt das Auswaschen erheblich."
+              }
+            ],
+            "fieldUse": "Schnelles Aussortieren madiger oder fauler Waldfrüchte vor dem Mahlen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Geschälte Kerne auf harter Granitplatte feiner als Sandkörner zermahlen",
+      "description": "1. **Harte Granitplatte und Reibstein abspülen**: Wählen Sie eine **zwei Handspannen breite harte Granitplatte** samt **glattem faustgroßem Flussstein-Reiber**, frei von Moos und Sand.\n2. **Zerstoßen und kreisend feinreiben**: Zerdrücken Sie eine Handvoll Kerne und drücken Sie mit Körpergewicht **in ruhigen Kreisen wie am Mahlstein**, bis das Gut feiner als feiner Sand ist (einige Tropfen kaltes Wasser verhindern Stäuben).\n3. **Fingerprobe auf völlige Klumpenfreiheit**: Verreiben Sie eine Prise zwischen Daumen und Zeigefinger, bis **keinerlei harte Bröckchen mehr tastbar sind**.",
+      "actionNote": "> Warum reicht bloßes Vierteln oder grobes Hacken nicht aus? Grobe Stücke entbittern nur am äußersten Millimeter und schließen im Kern über Wochen Gift ein. Sandfeines Mahlgut lässt kaltes Wasser binnen Tagen jedes Stärkekorn durchspülen.",
+      "svgFileName": "pr36-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // GRANITPLATTE & REIBSTEIN FEINMAHLEN",
+        "Kerne auf zwei Spannen harter Granitplatte ausbreiten",
+        "Mit glattem Flussstein kreisend kräftig zermahlen",
+        "Keine Klumpen (X): feiner als Sandkorn mahlen (V)",
+        "[KERN] Feines Korn gibt volle Fläche fürs Entgiften"
+      ],
+      "deepDive": {
+        "badge": "GRANITE MILLING & SURFACE AREA",
+        "title": "Hartgesteins-Reibvermahlung für maximale Wasserkontaktfläche",
+        "text": "Wasserlösliche Tannine sitzen fest in Zellwänden. Auf **abriebfestem Granit** statt bröseligem Sandstein gelangt kein Steingrus ins Essen, während die vervielfachte Oberfläche **schnelles Kaltwasser-Auslösen** ermöglicht.",
+        "fieldSpecs": [
+          {
+            "name": "Granitplatte mit glattem Reibstein beim Feinmahlen von Eichelkernen zu Paste",
+            "scientificName": "Granite Slab & River-Cobble Pestle Micro-Milling of Acorn Kernels",
+            "categoryTag": "Granit-Mahlen / Mikrofeinkorn",
+            "imageFileName": "id-granite-stone-crushing-acorn-paste.jpg",
+            "hudCode": "FIG. FOOD-36B // MACRO OPTIC",
+            "hudStatus": "GRIND TEXTURE: FINE SANDY MEAL",
+            "traits": [
+              {
+                "label": "Stein/Hart",
+                "value": "**Harten Granit wählen**, der beim Reiben keinen Sand abreibt."
+              },
+              {
+                "label": "Korn/Sand",
+                "value": "**Feiner als Sand mahlen**, damit Kaltwasser jeden Rest durchdringt."
+              },
+              {
+                "label": "Wasser/Tropf",
+                "value": "**Wenige Tropfen Wasser** binden Staub direkt zu geschmeidiger Paste."
+              }
+            ],
+            "fieldUse": "Maximale Auslaug-Effizienz ganz ohne mechanische Mühle"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Mahlgut in Baumwolltuch binden und 2-4 Tage rein kalt auswaschen bis Wasser klar abläuft",
+      "description": "1. **Masse in dichtes Baumwolltuch einschlagen**: Legen Sie den Eichelbrei mittig in ein **dicht gewebtes sauberes Baumwolltuch** und verknoten Sie alle Ecken fest, damit braunes Wasser austritt und Faserreste bleiben.\n2. **2-4 Tage ausschließlich kalt auslaugen**: Beschweren Sie das Bündel im **ruhigen kalten Bachstrom** mit Flusssteinen (Wildwasser schwemmt Stärke weg) oder kneten Sie es in kalter Schüssel mit **2-3 täglichen Wasserwechseln**.\n3. **Sicht- und Zungenprobe auf null Adstringenz**: Nach 2-4 Tagen muss das Presswasser **völlig klar ohne Braunton** laufen; ein Krümel auf der Zunge darf **nur mild-nussig schmecken, ganz ohne pelziges Zusammenziehen**.",
+      "actionNote": "> Warum ruiniert kochendes Wasser zur Beschleunigung den gesamten Vorrat? Ab ~60 C verkleistert Stärke sofort zu klebrigem Kleister und sperrt bittere Giftstoffe für immer im Korn ein. Ausschließlich kaltes Wasser spült Tannine sauber heraus.",
+      "svgFileName": "pr36-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BAUMWOLLBEUTEL 2-4 TAGE KALTWASSER-LAUGEN",
+        "Feines Gut sicher in dichtem Baumwolltuch binden",
+        "Heißwasser (X) sperrt Gift ein: rein kalt (V) 2-4d",
+        "Kneten bis braunes Ablaufwasser völlig klar bleibt",
+        "[KERN] Kaltwasser löst Gift und bewahrt Stärkekorn"
+      ],
+      "deepDive": {
+        "badge": "COLD-WATER TANNIN LEACHING",
+        "title": "Selektive Kaltlöslichkeit: Gerbstoff-Extraktion ohne Stärkeverkleisterung",
+        "text": "Eicheltannine lösen sich leicht in **kaltem Wasser** als bernsteinbraune Flüssigkeit, während **nährstoffreiche Stärke kalt unlöslich bleibt**. Hitzewasser verkleistert die Stärkekörner irreversibel und fesselt das Gift im Inneren.",
+        "fieldSpecs": [
+          {
+            "name": "Mit Flusssteinen im klaren kalten Gebirgsbach beschwertes Baumwollbündel",
+            "scientificName": "Cotton Cloth Cold-Stream Tannin Leaching Weighted with River Cobbles",
+            "categoryTag": "Nur Kaltwasser / Klare Endprobe",
+            "imageFileName": "id-cold-stream-leaching-tannin-removal.jpg",
+            "hudCode": "FIG. FOOD-36C // MACRO OPTIC",
+            "hudStatus": "LEACH FLUID: CLEAR COLD WATER ONLY",
+            "traits": [
+              {
+                "label": "Temp/Kalt",
+                "value": "**Ausschließlich Kaltwasser nutzen**, sonst verkleistert das Stärkemehl."
+              },
+              {
+                "label": "Strom/Sanft",
+                "value": "**Sanfte Bachströmung wählen**, damit feine Stärke nicht wegtreibt."
+              },
+              {
+                "label": "Test/Klar",
+                "value": "**2-4 Tage spülen**, bis Presswasser klar und null pelzig schmeckt."
+              }
+            ],
+            "fieldUse": "Ungenießbare Bitterfrüchte ganz ohne Feuerholz in reines Stärkemehl wandeln"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Stärke 3-4 Stunden absetzen lassen, sonnentrocknen (1+ Jahr) oder 1:5-6 zu Gelee kochen",
+      "description": "1. **Weiße Stärke 3-4 Stunden ruhig absetzen lassen**: Kneten und wringen Sie den gewaschenen Beutel in einer Holzschüssel mit kaltem klaren Wasser kräftig aus, verwerfen Sie holzigen Rückstand, lassen die Milchflüssigkeit **3-4 Stunden still stehen** und gießen klares Überwasser behutsam ab.\n2. **Dünn sonnentrocknen für 1+ Jahr Vorrat**: Streichen Sie nassen Stärkebrei fingerdick oder dünner auf Steinplatte bzw. Grasmatte in volle Sonne, bis er **knusprig trocken zu weißem Pulver zerfällt** — über 1 Jahr schimmelfrei lagerbar.\n3. **1 Teil Stärke zu 5-6 Wasser zu Gelee kochen**: Für Sofortverzehr **1 Maß Stärke mit 5-6 Maß klarem Wasser** über [Bogenbohrfeuer](/protocol-02) und [Lehmherd](/protocol-06) oder im [Holztopf mit Kochsteinen](/protocol-33) mit Holzspatel ständig rühren, bis dunkle glänzende Masse blubbert, dann abkühlen und schnittfest im [Ton-Verdunstungskühler](/protocol-16) lagern.",
+      "actionNote": "> Warum genau 1:5-6 mischen und ununterbrochen am Boden rühren? Zu wenig Wasser wird steinhart, zu viel bleibt wässrig. Sobald es wallt, brennt Stärke beim kleinsten Stopp am Schüsselboden an — rühren bis satter dunkelbrauner Glanz steht.",
+      "svgFileName": "pr36-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // 3-4H ABSETZEN, TROCKNEN & 1:5-6 GELEE KOCHEN",
+        "Stärkemilch 3-4 Std. ruhen, klares Wasser abgießen",
+        "Weißes Sediment sonnentrocknen ergibt 1+ Jahr Mehl",
+        "1 Mehl : 5-6 Wasser stetig zu braunem Glanz rühren",
+        "[KERN] Trocken 1+ Jahr haltbar; gekocht schnittfest"
+      ],
+      "deepDive": {
+        "badge": "STARCH SEDIMENTATION & GELATINIZATION",
+        "title": "Schwerkraft-Sedimentation (3-4 h) und 1:5,5-Stärkegel-Netzwerk",
+        "text": "Schwere Stärkekörner sinken binnen **3-4 Stunden Ruhezeit** kompakt zu Boden und trennen sich sauber von Trübstoffen. Sonnentrocknung senkt die Restfeuchte unter Schimmelgrenzen für **über 1 Jahr Haltbarkeit**, während **1:5-6 Kochen** beim Auskühlen schnittfestes Gelee formt.",
+        "fieldSpecs": [
+          {
+            "name": "Sonnengetrocknete helle Eichelstärke-Stücke zu Pulver zerrieben neben dunklem Gelee",
+            "scientificName": "Sun-Dried Settled Acorn Starch Powder & Gelatinized 1:5.5 Wild Acorn Jelly",
+            "categoryTag": "1+ Jahr Mehl / 1:5-6 Eichel-Gelee",
+            "imageFileName": "id-settled-acorn-starch-cake-drying.jpg",
+            "hudCode": "FIG. FOOD-36D // MACRO OPTIC",
+            "hudStatus": "STARCH YIELD: LEACHED & EDIBLE",
+            "traits": [
+              {
+                "label": "Ruhe/3-4h",
+                "value": "**3-4 Stunden erschütterungsfrei stehen** lassen vor dem Abgießen."
+              },
+              {
+                "label": "Trocken/1+J",
+                "value": "**Dünn knochentrocken dörren** schützt Vorräte über ein ganzes Jahr."
+              },
+              {
+                "label": "Mix/1:5-6",
+                "value": "**1 Teil Stärke auf 5-6 Wasser** unter Dauerrühren dunkelglänzend sieden."
+              }
+            ],
+            "fieldUse": "Saisonale Herbstfrüchte als ganzjährig abrufbare Überlebenskalorien konservieren"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // 2-4 Tage Kaltwasser-Entbitterung überspringen und rohe oder halb bittere Eicheln verzehren",
+    "description": "Selbst bei starkem Hunger niemals rohe, nur geröstete oder unfertig ausgelaugte Eicheln essen, deren Presswasser noch bräunlich färbt: Hochdosierte Tannine verätzen die Magenwand, lösen schweres Erbrechen, Darmverschluss und Nierenschäden aus. Verwenden Sie nie verunreinigtes Tümpelwasser ohne [Holzkohle-Sand-Filter](/protocol-01) oder [Tuchfilter mit Sonnenentkeimung](/protocol-23) und ersetzen Sie Flüssigkeitsverlust sofort mit [Elektrolyt-Lösung ORS](/protocol-24).",
+    "consequence": "Akute Gerbstoff-Vergiftung mit Magenschleimhautschaden, Erbrechen, Darmverschluss, Nierenschaden und Infekt."
+  },
+  "faqs": [
+    {
+      "question": "Wie entbittere ich Eicheln ohne fließenden Bach nur mit stehendem Wasser im Holzgefäß?",
+      "causeDiagnostic": "Tannine diffundieren auch in ruhiges Kaltwasser hinaus; regelmäßiger Wasserwechsel ersetzt die Strömung.",
+      "resolution": "Mehl im Tuch oder lose in einer tiefen Holzschüssel kaltem Filterwasser anrühren, absetzen lassen und das braune Wasser **2-3 Mal täglich über 3-4 Tage gegen frisches Kaltwasser tauschen**, bis Presswasser glasklar und die Zungenprobe völlig mild ausfällt."
+    },
+    {
+      "question": "Warum darf man nicht zur Zeitersparnis rohe Eichelstücke heiß abkochen und den dunklen Sud abgießen?",
+      "causeDiagnostic": "Eichelstärke verkleistert bereits um 60 C und versiegelt sofort jede Zellpore nach außen.",
+      "resolution": "Kochen lässt die Außenstärke zu zähem Kleister gerinnen, **sperrt das bittere Gift dauerhaft im Kern ein**, vergeudet massig Feuerholz, verhindert Absetzen trockenen Weißmehls und zerstört die Gelee-Bindung. Ausschließlich Kaltwasser entgiftet sauber."
+    }
+  ],
+  "outcome": {
+    "title": "Schwimmsortiertes, granitgemahlenes, 2-4 Tage kalt entbittertes 1-Jahres-Eichelmehl & 1:5-6 Überlebensgelee",
+    "badge": "TARGET OUTCOME // ENTGIFTETES EICHELMEHL & 1:5-6 GELEE",
+    "description": "Werkzeugloses Wildnis-Verfahren: Schwimmprobe zur Kerntrennung, Granitmahlung feiner als Sand, 2-4 Tage reine Kaltwasser-Auswaschung im Baumwolltuch sowie 3-4h Sedimentation zu jahrelang lagerfähigem Trockenmehl oder schnittfestem 1:5-6 Überlebensgelee.",
+    "svgFileName": "pr36-outcome.svg",
+    "svgLabels": [
+      "PR-36 FERTIG // KALTWASSER-EICHELMEHL & GELEE-SYSTEM",
+      "STUFE 01: SCHWIMM-SORTIERUNG",
+      "Schwere Bodenkerne + ohne Haut",
+      "STUFE 02: GRANIT-FEINMAHLEN",
+      "Feiner als Sand auf Stein mahlen",
+      "STUFE 03: KALTWASSER 2-4 TAGE",
+      "Baumwolltuch rein kalt, null Hitze",
+      "STUFE 04: ABSETZEN & GELEE",
+      "3-4h trocken oder 1:5-6 sieden",
+      "[PRINZIP] Kaltwasser löst bittere Gifte und erhält unlösliche Stärkekalorien 1+ Jahr"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Im Wald gestrandet und nur Eicheln weit und breit? Roh sind sie giftig — so verwandelst du sie nur mit Steinen und kaltem Wasser in 1-Jahres-Proviant!",
+    "body": "Erstens: Eicheln ins kalte Wasser werfen — alles was schwimmt hat Würmer und fliegt raus! Nur schwere Bodenkerne mit einem Flussstein knacken und die rote Haut abreiben. Zweitens: Auf breitem Granit feiner als Sand mahlen. Drittens, die wichtigste Regel: In Baumwolltuch wickeln und 2 bis 4 Tage NUR in kaltem Bach- oder Wechselwasser spülen — niemals heiß, sonst schließt das Gift ein — bis das Wasser klar schmeckt. Viertens: 3 bis 4 Stunden absetzen lassen, klares Wasser abgießen, weißes Mehl für 1 Jahr sonnentrocknen oder 1 zu 5 mit Wasser zu festem Gelee rühren!"
+  },
+  "createdAt": "2026-11-20T00:58:30.265Z",
+  "contentHash": "2ce15dc3445950e6"
+}

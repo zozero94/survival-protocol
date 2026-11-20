@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-36",
+  "category": "FOOD",
+  "title": "Como Tirar o Amargo Tóxico das Bolotas com Água Fria e Pedras para Fazer Farinha Durável e Gelatina de Bolota",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[COLETA CALÓRICA SILVESTRE E DESINTOXICAÇÃO DE BOLOTAS EM ÁGUA FRIA]",
+  "summary": "Se sua casa ou abrigo já possui alimentos enlatados, rações secas ou farinhas prontas, consuma esses alimentos industrializados primeiro por serem mais rápidos e seguros. Contudo, em isolamento prolongado no outono ou inverno sem estoque algum, bolotas caídas de carvalho oferecem reserva vital de carboidratos. Como a bolota crua concentra taninos amargos tóxicos que ferem o estômago, provocam vômitos e lesionam os rins, processe em quatro etapas — seleção por flutuação e descascamento, moagem em granito, lavagem em água fria por 2 a 4 dias em pano de algodão e decantação de 3 a 4 horas para secar ao sol ou ferver com [Fogo por Fricção](/protocol-02) e [Tigela de Madeira](/protocol-33) — garantindo farinha por mais de 1 ano.",
+  "timeRequired": "1 h descascar e moer + 2-4 dias de lavagem fria (amido seco dura 1+ ano)",
+  "successRate": "98% (lavando apenas com água fria até sair cristalina e sem nenhum travo amargo)",
+  "difficulty": "Iniciante (sem ferramentas; só pedras lisas, laje de granito, tigelas de madeira, pano e água fria)",
+  "outputPerHour": "Farinha branca de bolota 100% livre de toxinas e gelatina nutritiva densa de sobrevivência",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Baldes de Bolotas Marrons Maduras + Laje Larga de Granito e 2 Pedras Lisas de Rio",
+      "desc": "Recolha frutos firmes e brilhantes; use laje de granito de dois palmos e seixo redondo do tamanho do punho para quebrar cascas e moer os grãos mais finos que grãos de areia."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Tigelas Fundas de Madeira e Água Fria Limpa de Riacho (ou Filtrada Fria)",
+      "desc": "Separam bolotas bichadas por flutuação e decantam o amido por 3-4 horas. Sem riacho limpo, troque água fria de [Filtro de Carvão e Areia](/protocol-01) 2-3 vezes ao dia e cozinhe com [Tigela de Madeira e Pedras Quentes](/protocol-33)."
+    },
+    {
+      "id": "mat-03",
+      "name": "1 Pano Limpo de Algodão Fechado e Pedra Plana ou Esteira de Capim para Secagem Solar",
+      "desc": "Embrulha a massa moída deixando sair água vermelha amarga enquanto retém o bagaço. Seque o amido ao sol em camada fina ou cozinhe no [Fogão de Barro](/protocol-06) conservando na [Geladeira Evaporativa de Barro](/protocol-16)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Selecione Bolotas Boas por Flutuação em Água Fria e Tire Casca e Pele Vermelha",
+      "description": "1. **Descarte Todas que Boiarem**: Despeje as bolotas numa tigela de madeira com água fria e mexa — retire e jogue fora **toda noz que boiar (oca, furada por larva ou podre)**, ficando só com as pesadas no fundo.\n2. **Quebre a Casca com Pedra de Rio**: Apoie cada fruto escorrido em pedra plana e bata leve com um **seixo do tamanho do punho** apenas para rachar a casca dura sem esmagar o miolo.\n3. **Esfregue e Tire a Película Vermelha Interna**: Seque um instante ou esfregue entre as palmas até soltar a pele fina avermelhada, deixando **miolo bege claro limpo** que perde o amargo duas vezes mais rápido.",
+      "actionNote": "> Por que descartar toda bolota que boia em vez de aproveitar tudo? Mesmo cascas bonitas escondem larvas ou mofo criando bolhas internas que fazem boiar; misturar frutos podres estraga toda a farinha com gosto azedo e dor de barriga.",
+      "svgFileName": "pr36-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SELEÇÃO NA ÁGUA FRIA E DESCASQUE NA PEDRA",
+        "Noz que boia (X): oca ou bichada, descartar já",
+        "Noz no fundo (V): grão pesado sadio aproveitável",
+        "Rachar casca com pedra de rio e tirar pele roxa",
+        "[CHAVE] Só grãos pesados do fundo evitam bolor"
+      ],
+      "deepDive": {
+        "badge": "FLOAT SORTING & HULLING",
+        "title": "Separação Hidrostática por Densidade e Remoção do Tegumento Rico em Taninos",
+        "text": "Bolotas cheias de amido são mais densas que a água e **afundam rápido no fundo da tigela**, enquanto frutos ocos boiam. Esfregar a **película avermelhada interna** elimina a porção superficial mais concentrada em amargor antes da lavagem.",
+        "fieldSpecs": [
+          {
+            "name": "Bolotas Sãs Submersas em Tigela de Madeira ao Lado de Cascas Quebradas e Grãos Limpos",
+            "scientificName": "Oak Acorn Hydrostatic Float-Test Sorting & River-Stone Dehulling",
+            "categoryTag": "Teste de Flutuação / Remoção de Pele",
+            "imageFileName": "id-acorn-selection-float-test-sorting.jpg",
+            "hudCode": "FIG. FOOD-36A // MACRO OPTIC",
+            "hudStatus": "DENSITY SORT: SUNKEN KERNELS ONLY",
+            "traits": [
+              {
+                "label": "Triagem/Fundo",
+                "value": "**Descarte as que boiam** e fique só com os grãos pesados no fundo."
+              },
+              {
+                "label": "Quebra/Pedra",
+                "value": "**Bata leve com seixo de punho** abrindo a casca sem moer o centro."
+              },
+              {
+                "label": "Pele/Limpa",
+                "value": "**Esfregue a película avermelhada** para acelerar a limpeza na água fria."
+              }
+            ],
+            "fieldUse": "Separar frutos podres ou bichados antes da moagem silvestre"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Moa os Grãos Mais Finos que Areia Sobre Laje Larga de Granito Duro",
+      "description": "1. **Lave Laje de Granito e Pedra Pilão**: Separe uma **laje plana de granito duro de dois palmos** e um **seixo liso de mão**, lavando todo musgo ou terra.\n2. **Esmague e Moa em Círculos**: Amasse punhados de grão limpo e pressione o peso do corpo **em círculos como mó até virar pó mais fino que areia** (poucas gotas de água fria evitam poeira).\n3. **Teste Entre os Dedos Sem Caroços**: Esfregue uma pitada entre polegar e indicador até não restar **nenhum pedacinho duro**, formando massa fina uniforme.",
+      "actionNote": "> Por que não cortar só em pedaços antes de deixar de molho? Pedaços grandes lavam só a casca externa e prendem toxinas no centro por semanas. Moer fino faz a água fria penetrar cada grão em poucos dias.",
+      "svgFileName": "pr36-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // MOAGEM FINA NA LAJE DE GRANITO E PILÃO",
+        "Pôr grãos descascados sobre granito de 2 palmos",
+        "Moer em círculos firmes com pedra lisa de mão",
+        "Sem caroços (X): pó mais fino que areia limpa (V)",
+        "[CHAVE] Grão microfino expõe 100% à água fria"
+      ],
+      "deepDive": {
+        "badge": "GRANITE MILLING & SURFACE AREA",
+        "title": "Atrito em Granito Duro para Maximizar a Área de Contato na Água Fria",
+        "text": "Os taninos solúveis ficam presos em paredes celulares rígidas. Moer em **granito resistente** evita soltar areia de rocha mole e multiplica dezenas de vezes o contato da **água fria desintoxicante**.",
+        "fieldSpecs": [
+          {
+            "name": "Laje de Granito e Pedra de Rio Moendo Grãos de Bolota em Pasta Fina Arenosa",
+            "scientificName": "Granite Slab & River-Cobble Pestle Micro-Milling of Acorn Kernels",
+            "categoryTag": "Moagem em Granito / Granulometria Fina",
+            "imageFileName": "id-granite-stone-crushing-acorn-paste.jpg",
+            "hudCode": "FIG. FOOD-36B // MACRO OPTIC",
+            "hudStatus": "GRIND TEXTURE: FINE SANDY MEAL",
+            "traits": [
+              {
+                "label": "Rocha/Dura",
+                "value": "**Escolha granito rígido** que não solte farelo arenoso na comida."
+              },
+              {
+                "label": "Grão/Fino",
+                "value": "**Moa mais fino que areia** até sumir todo grumo duro no tato."
+              },
+              {
+                "label": "Gotas/Água",
+                "value": "**Junte mínimas gotas frias** formando pasta úmida sem espalhar pó."
+              }
+            ],
+            "fieldUse": "Garantir limpeza rápida dos taninos sem moinhos modernos"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Embrulhe no Pano de Algodão e Lave em Água Fria por 2-4 Dias Até Sair Transparente",
+      "description": "1. **Amarre a Pasta no Algodão Fechado**: Coloque a farinha no centro de um **pano limpo de algodão bem fechado**, junte as quatro pontas e amarre firme deixando vazar água escura sem soltar massa.\n2. **Submerja Só em Água Fria por 2-4 Dias**: Prenda o embrulho sob pedras num **riacho frio de correnteza leve** (forte carrega o amido branco) ou amasse em tigela com água fria trocada **2-3 vezes ao dia ao escurecer**.\n3. **Confirme Pela Cor Clara e Ponta da Língua**: Após 2-4 dias, quando a água espremida sair **cristalina sem cor marrom**, prove uma migalha na língua — deve estar **suave com gosto leve de castanha e zero adstringência**.",
+      "actionNote": "> Por que usar água quente ou ferver para acelerar estraga tudo? Acima de 60 C o amido cozinha na hora, vira goma e lacra os taninos amargos dentro das partículas para sempre. Só água fria limpa a toxina preservando o amido.",
+      "svgFileName": "pr36-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // TROUXA DE ALGODÃO EM ÁGUA FRIA 2-4 DIAS",
+        "Amarrar massa fina em algodão fechado sem perdas",
+        "Água quente (X) prende toxina: usar fria (V) 2-4d",
+        "Amassar e lavar até o líquido sair transparente",
+        "[CHAVE] Água fria dissolve o amargo e salva amido"
+      ],
+      "deepDive": {
+        "badge": "COLD-WATER TANNIN LEACHING",
+        "title": "Solubilidade Seletiva a Frio: Remoção de Taninos Sem Cozinhar o Amido",
+        "text": "Os **taninos tóxicos dissolvem bem em água fria**, saindo como caldo âmbar, enquanto o **amido energético fica insolúvel** intacto no frio. Água quente gelatiniza o amido aprisionando o amargo.",
+        "fieldSpecs": [
+          {
+            "name": "Trouxa de Pano de Algodão com Massa de Bolota Presa por Pedras em Riacho Frio",
+            "scientificName": "Cotton Cloth Cold-Stream Tannin Leaching Weighted with River Cobbles",
+            "categoryTag": "Só Água Fria / Teste Límpido",
+            "imageFileName": "id-cold-stream-leaching-tannin-removal.jpg",
+            "hudCode": "FIG. FOOD-36C // MACRO OPTIC",
+            "hudStatus": "LEACH FLUID: CLEAR COLD WATER ONLY",
+            "traits": [
+              {
+                "label": "Temp/Fria",
+                "value": "**Use água estritamente fria** para nunca cozinhar nem travar o amido."
+              },
+              {
+                "label": "Fluxo/Leve",
+                "value": "**Prefira água calma ou rasa** evitando fuga dos grãos finos brancos."
+              },
+              {
+                "label": "Teste/Zero",
+                "value": "**Enxágue 2-4 dias** até escorrer límpida e sem nenhum travo."
+              }
+            ],
+            "fieldUse": "Transformar bolotas amargas tóxicas em alimento limpo sem gastar lenha"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Decante o Amido 3-4 Horas, Seque ao Sol para 1+ Ano ou Cozinhe 1:5-6 em Gelatina",
+      "description": "1. **Deixe Decantar Quieto 3-4 Horas**: Amasse e torça bem a trouxa dentro de tigela com água fria limpa, jogue fora a fibra grossa, deixe o líquido branco **descansar 3-4 horas sem mexer** e despeje devagar a água clara de cima ficando só a pasta branca no fundo.\n2. **Seque Fino ao Sol para Guardar 1+ Ano**: Espalhe o amido úmido em camada fina menor que um dedo sobre pedra limpa ou esteira ao sol forte até **esfarelar seco em pó crocante**, durando mais de um ano sem estragar.\n3. **Cozinhe 1 Parte de Amido em 5-6 de Água**: Para comer logo, misture **1 medida de amido em 5-6 de água limpa**, mexendo sem parar com pá de madeira sobre [Fogo por Fricção](/protocol-02) e [Fogão de Barro](/protocol-06) ou com [Tigela de Madeira e Pedras Quentes](/protocol-33) até borbulhar marrom brilhante; esfrie firme (guarde na [Geladeira de Barro](/protocol-16)).",
+      "actionNote": "> Por que seguir 1:5-6 e mexer direto raspando o fundo? Pouca água vira bloco duro e água demais não firma gelatina. Parando de mexer na fervura o amido gruda e queima no fundo na hora — mexa constante até dar brilho marrom escuro.",
+      "svgFileName": "pr36-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // DECANTAR 3-4H, SECAR FARINHA E GEL 1:5-6",
+        "Repousar leite branco 3-4h e escorrer água clara",
+        "Secar amido branco ao sol dá estoque de 1+ ano",
+        "Ferver 1 pó : 5-6 água mexendo até brilho escuro",
+        "[CHAVE] Seco dura 1+ ano; cozido esfria bem firme"
+      ],
+      "deepDive": {
+        "badge": "STARCH SEDIMENTATION & GELATINIZATION",
+        "title": "Sedimentação Gravitacional (3-4 h) e Gelificação Hidrotérmica 1:5,5",
+        "text": "Partículas puras de amido afundam em **3-4 horas de repouso** separando sujeiras leves no topo. Secagem solar plena elimina umidade contra fungos garantindo **mais de 1 ano de reserva**, enquanto cozinhar **1:5-6** forma gel firme cortável ao esfriar.",
+        "fieldSpecs": [
+          {
+            "name": "Blocos de Amido Claro Secados ao Sol Esfarelando ao Lado de Gelatina Marrom Brilhante",
+            "scientificName": "Sun-Dried Settled Acorn Starch Powder & Gelatinized 1:5.5 Wild Acorn Jelly",
+            "categoryTag": "Farinha 1+ Ano / Gelatina 1:5-6",
+            "imageFileName": "id-settled-acorn-starch-cake-drying.jpg",
+            "hudCode": "FIG. FOOD-36D // MACRO OPTIC",
+            "hudStatus": "STARCH YIELD: LEACHED & EDIBLE",
+            "traits": [
+              {
+                "label": "Pausa/3-4h",
+                "value": "**Espere 3-4 horas sem sacudir** antes de despejar a água clara acima."
+              },
+              {
+                "label": "Sol/1+Ano",
+                "value": "**Seque fino até estalar seco** conservando longe de mofo 1+ ano."
+              },
+              {
+                "label": "Dose/1:5-6",
+                "value": "**Dissolva 1 pó em 5-6 água** mexendo constante até brilho escuro."
+              }
+            ],
+            "fieldUse": "Converter colheita sazonal da floresta em alimento durável todo o ano"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Pular os 2-4 Dias em Água Fria e Comer Bolotas Cruas, Assadas ou Ainda Amargas",
+    "description": "Mesmo em fome extrema jamais coma bolotas cruas, assadas sem lavar ou farinha cuja água ainda saia marrom: taninos concentrados ferem o estômago, causam vômitos fortes, prisão de ventre grave (obstrução) e lesão renal. Nunca lave em poças paradas imundas sem passar antes pelo [Filtro de Carvão e Areia](/protocol-01) ou [Filtro de Pano e Luz Solar](/protocol-23), e trate vômitos rápido com [Soro Caseiro ORS](/protocol-24).",
+    "consequence": "Intoxicação aguda por taninos com lesão gástrica, vômito, obstrução intestinal, dano renal e infecção."
+  },
+  "faqs": [
+    {
+      "question": "Como tirar o amargo se não houver nenhum riacho corrente por perto, só água parada em tigelas?",
+      "causeDiagnostic": "Taninos também saem por difusão em água fria parada desde que a água limpa seja trocada com frequência.",
+      "resolution": "Deixe o pó no pano ou solto dentro de tigela funda com água fria filtrada, mexa, deixe assentar e despeje a água escura **trocando por água fria limpa 2-3 vezes por dia durante 3-4 dias** até escorrer cristalina e nada adstringente na língua."
+    },
+    {
+      "question": "Por que não posso adiantar o processo fervendo os pedaços de bolota em água quente e jogando o caldo escuro?",
+      "causeDiagnostic": "O amido da bolota cozinha perto de 60 C e fecha imediatamente os poros celulares ao tocar calor.",
+      "resolution": "Ferver antes transforma a superfície em goma **lacrando o veneno amargo lá dentro para sempre**, gasta lenha à toa, impede a decantação em farinha seca branca e estraga a firmeza da gelatina. Só água fria limpa de verdade."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Silvestre Completo de Triagem, Moagem em Granito, Lavagem Fria 2-4 Dias e Farinha/Gelatina 1:5-6",
+    "badge": "TARGET OUTCOME // FARINHA 1+ ANO E GELATINA SEM TOXINA",
+    "description": "Processo sem ferramentas que separa bolotas boas por flutuação, mói no granito mais fino que areia, lava em água fria no algodão por 2-4 dias e decanta 3-4 horas rendendo farinha seca por 1+ ano ou gelatina firme 1:5-6.",
+    "svgFileName": "pr36-outcome.svg",
+    "svgLabels": [
+      "PR-36 COMPLETO // FARINHA E GELATINA DE BOLOTA A FRIO",
+      "ETAPA 01: FLUTUAR E PELAR",
+      "Só nozes pesadas sem pele roxa",
+      "ETAPA 02: MOER EM GRANITO",
+      "Mais fino que areia na laje dura",
+      "ETAPA 03: ÁGUA FRIA 2-4D",
+      "Pano algodão sem nada de calor",
+      "ETAPA 04: SECAR E FERVER",
+      "Decantar 3-4h e gel 1:5-6 firme",
+      "[PRINCÍPIO] Água fria remove toxinas solúveis preservando intacto o amido calórico"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Perdido na mata só com bolotas caídas? Cruas elas são veneno — veja como pedras e água fria viram comida durável por 1 ano!",
+    "body": "Primeiro jogue tudo na água fria: descarte as que boiam porque têm bichos e quebre com pedra só as pesadas do fundo, tirando a casquinha roxa. Segundo, moa numa laje de granito mais fino que areia. Terceiro, regra de ouro: embrulhe em pano de algodão e lave 2 a 4 dias SÓ em água fria — jamais quente senão tranca o amargo — até sair transparente e sem travo. Quarto, descanse 3-4 horas, escorra a água limpa de cima, seque o amido branco ao sol por 1 ano ou ferva 1 por 5 de água para virar gelatina firme!"
+  },
+  "createdAt": "2026-11-20T00:58:30.265Z",
+  "contentHash": "2ce15dc3445950e6"
+}
