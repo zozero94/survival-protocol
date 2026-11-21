@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg37s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="slab37s4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="wood37s4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <pattern id="grid37s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow37s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg37s4)"/>
+  <rect width="400" height="400" fill="url(#grid37s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 04 // 양쪽 우물정 괴임 단독 지지 + 부상자 안전 구조</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">지렛대 치우고도 좌우 우물정 괴임이 흔들림 없이 지지</text>
+
+  <!-- Main Visual: Dual Symmetrical Box-Crib Towers Bearing Concrete Slab With Safe Clear Void -->
+  <g filter="url(#shadow37s4)">
+    <!-- Solid Floor -->
+    <rect x="20" y="266" width="360" height="18" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+
+    <!-- Concrete Slab Held Flat Level Overhead -->
+    <rect x="34" y="106" width="332" height="40" rx="2" fill="url(#slab37s4)" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="120" y1="106" x2="144" y2="146" stroke="#1e293b" stroke-width="2"/>
+    <line x1="256" y1="106" x2="274" y2="146" stroke="#1e293b" stroke-width="2"/>
+
+    <!-- Left Box-Crib Column Stack + Opposing Wedges -->
+    <polygon points="48,158 118,158 118,146" fill="#fde047" stroke="#92400e"/>
+    <polygon points="48,146 118,146 48,158" fill="#d97706"/>
+    <rect x="44" y="158" width="78" height="18" fill="url(#wood37s4)" stroke="#451a03"/>
+    <rect x="54" y="176" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="94" y="176" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="44" y="194" width="78" height="18" fill="url(#wood37s4)" stroke="#451a03"/>
+    <rect x="54" y="212" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="94" y="212" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="44" y="230" width="78" height="18" fill="url(#wood37s4)" stroke="#451a03"/>
+    <rect x="54" y="248" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="94" y="248" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+
+    <!-- Right Box-Crib Column Stack + Opposing Wedges -->
+    <polygon points="282,158 352,158 352,146" fill="#fde047" stroke="#92400e"/>
+    <polygon points="282,146 352,146 282,158" fill="#d97706"/>
+    <rect x="278" y="158" width="78" height="18" fill="url(#wood37s4)" stroke="#451a03"/>
+    <rect x="288" y="176" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="328" y="176" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="278" y="194" width="78" height="18" fill="url(#wood37s4)" stroke="#451a03"/>
+    <rect x="288" y="212" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="328" y="212" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="278" y="230" width="78" height="18" fill="url(#wood37s4)" stroke="#451a03"/>
+    <rect x="288" y="248" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+    <rect x="328" y="248" width="18" height="18" fill="#f59e0b" stroke="#451a03"/>
+
+    <!-- Downward Vertical Load Vectors Directly Into Ground -->
+    <line x1="83" y1="112" x2="83" y2="142" stroke="#22c55e" stroke-width="3"/>
+    <polygon points="78,138 83,146 88,138" fill="#22c55e"/>
+    <line x1="317" y1="112" x2="317" y2="142" stroke="#22c55e" stroke-width="3"/>
+    <polygon points="312,138 317,146 322,138" fill="#22c55e"/>
+
+    <!-- Open Safe Extraction Corridor in Center -->
+    <rect x="136" y="162" width="128" height="96" rx="4" fill="#052e16" fill-opacity="0.35" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <circle cx="200" cy="196" r="14" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <polyline points="193,196 198,201 207,191" fill="none" stroke="#86efac" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Outward Straight Extraction Arrow -->
+    <line x1="168" y1="234" x2="232" y2="234" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="226,228 238,234 226,240" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">쐐기 마주 잠금으로 틈새 밀착 및 미끄러짐 완전 차단</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">구조 공간 확보 후 출혈 지혈·부목 고정 먼저 적용</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 지렛대 제거 후 괴임만으로 하중 버틸 때 안전 탈출</text>
+</svg>

@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-37",
+  "category": "TOOLS",
+  "title": "Betontrümmer nach Erdbeben ohne Strom sicher anheben: Kantholz-Hebel und 2x2-Holz-Unterbau",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[TRÜMMERRETTUNG OHNE STROM MIT HEBELGESETZ & KREUZSTAPEL-UNTERBAU]",
+  "summary": "Wenn Feuerwehr oder Rettungsdienste erreichbar sind und hydraulische Spreizer, Hebekissen oder Wagenheber bereitstehen, setzen Sie stets diese geprüften Profi-Geräte zuerst als schnellsten Schutz ein. Ist nach schweren Erdbeben oder Einstürzen jede Kommunikation ausgefallen und jemand außerhalb der [Sicheren Innenraum-Zone](/protocol-31) verschüttet, müssen Helfer zu zweit einen mannslangen Holzbalken als Hebel mit einem 2x2-Kreuzstapel aus Kanthölzern nach der Regel '2-3 cm heben, sofort unterbauen' kombinieren. Solange Hände strikt aus dem Gefahrenbereich bleiben bis Holz alles trägt, versorgen Sie Wunden mit [Knebel-Tourniquet](/protocol-32) und [Behelfsschiene](/protocol-18), rufen Hilfe per [120-dB-Pfeife & Spiegel](/protocol-27) und bergen sicher.",
+  "timeRequired": "15-25 Min. kontrollierte Rettung (5 Min. Check & Hebelpunkt + 10-20 Min. 2-3-cm-Unterbau)",
+  "successRate": "95% (auf gekehrtem festen Untergrund, 2x2-Kantholz-Kreuzstapel und Hände stets draußen)",
+  "difficulty": "Mittel (mind. 2 Helfer empfohlen; langer Balkenhebel, Stützklotz, 12-16 Kanthölzer & Holzkeile)",
+  "outputPerHour": "Hebt und sichert schwere Betonplatten stromlos ohne Hydraulik für einen sicheren Rettungsspalt",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 starker astfreier Holzbalken-Hebel (1,5-2 m) & 1 fester quadratischer Holz-Drehklotz",
+      "desc": "Wirkt als 4:1- bis 5:1-Kraftverstärker zum millimeterweisen Anheben von Trümmerkanten. Wählen Sie trockenes Massivholz stärker als ein Unterarm nahe der [Sicheren Innenraum-Zone](/protocol-31)."
+    },
+    {
+      "id": "mat-02",
+      "name": "12-16 flache handgelenkdicke Vierkant-Kanthölzer (40-50 cm lang) für 2x2-Kreuzstapel",
+      "desc": "Leitet tonnenschwere Betonlasten sicher über 90-Grad-Holztürme in den festen Boden. Rundhölzer und Hohlblocksteine sind strikt tabu — nur vierseitig flache Kanthölzer sammeln."
+    },
+    {
+      "id": "mat-03",
+      "name": "4-6 spitz zulaufende Holzkeile, dicke Arbeitshandschuhe & 1 langer Schiebestock",
+      "desc": "Schließt feine Spalte sicher von außen, ohne Finger unter Beton zu stecken. Halten Sie Material für [Knebel-Tourniquet](/protocol-32) und [Behelfsschiene](/protocol-18) griffbereit."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Überkopfgefahr & Gasgeruch prüfen, Boden fegen und 4:1-Drehpunkt nah ansetzen",
+      "description": "1. **Zuerst Deckenlasten und Gasgeruch checken**: Schützen Sie Retter durch Blick auf lose Stützen und Nachbeben-Gefahr; bei Gasgeruch sofort lüften und Funken verhindern.\n2. **Drehklotz auf gekehrten harten Boden stellen**: Fegen Sie Sand und Schutt neben der Betonecke weg, damit der Drehpunkt nicht einsackt, und legen Sie einen flachen Vollholzklotz direkt auf Beton.\n3. **Hebelspitze nur zwei Finger breit (3-5 cm) einschieben**: Klotz ganz nah an die Betonplatte rücken und Hebelspitze 3-5 cm unterfassen — der lange Griff hinten ergibt **4:1- bis 5:1-Hebelkraft**.",
+      "actionNote": "> Warum muss der Holz-Drehklotz direkt an die Betonkante statt mittig unter den Hebel? Jeder Zentimeter Abstand halbiert die Hubkraft drastisch. Direkt an der Kante bewegt bereits normales Körpergewicht massive Betonträger kontrolliert.",
+      "svgFileName": "pr37-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // GEFAHRENCHECK + NAHER DREHKLOTZ & HEBEL",
+        "Schutt fegen; festen Klotz dicht vor Kante setzen",
+        "Hebelspitze nur 2 Fingerbreit (3-5cm) einschieben",
+        "Langer 4:1-Hebelarm vervielfacht Körpergewicht",
+        "[KERN] Naher fester Drehpunkt hebt Last sicher an"
+      ],
+      "deepDive": {
+        "badge": "FULCRUM POSITION & 4:1 LEVERAGE",
+        "title": "Maximale 4:1-Hebelwirkung auf sauber gekehrtem Tragboden",
+        "text": "Rückt der **Drehklotz dicht an die Betonkante**, steigt die Übersetzung auf das **4- bis 5-Fache**. Sauberes Freifegen des Bodens verhindert plötzliches Einsinken und seitliches Abrutschen der Platte.",
+        "fieldSpecs": [
+          {
+            "name": "Stabiler Vierkantholz-Hebel über nahem Drehklotz neben eingestürzter Betonplatte",
+            "scientificName": "Firm-Base Square Timber Fulcrum & 4:1 Long Lever Arm Setup",
+            "categoryTag": "Naher Drehpunkt / 4:1-Hebel",
+            "imageFileName": "id-collapsed-concrete-crib-site-prep.jpg",
+            "hudCode": "FIG. TOOL-37A // MACRO OPTIC",
+            "hudStatus": "LEVER SETUP: 4:1 FIRM FULCRUM",
+            "traits": [
+              {
+                "label": "Check/Gas",
+                "value": "**Immer erst Hänge-Trümmer und Gasgeruch prüfen** vor Arbeitsbeginn."
+              },
+              {
+                "label": "Boden/Hart",
+                "value": "**Staub wegbürsten**, damit der Drehklotz fest auf Vollbeton ruht."
+              },
+              {
+                "label": "Kraft/4:1",
+                "value": "**Drehklotz dicht an Kante** — normales Gewicht hebt schwerste Balken."
+              }
+            ],
+            "fieldUse": "Rutschfeste Hebelgeometrie vor Beginn des stufenweisen Unterbaus"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Beidseits 2x2-Kreuzstapel aus flachen Kanthölzern im 90-Grad-Winkel aufbauen",
+      "description": "1. **Zwei Kanthölzer parallel neben Trümmer legen**: Stellen Sie vor dem Hebeln auf festem gekehrten Boden zwei 40-50-cm-Kanthölzer mit halber Schulterbreite Abstand parallel auf.\n2. **Jede Schicht um 90 Grad kreuzen (Gitterturm)**: Legen Sie das nächste Paar quer dazu auf, wobei **die Enden zwei Finger überstehen**, damit nichts bei Schräglage abgleitet.\n3. **Stapelhöhe unter dreifacher Basisbreite halten**: Zur Kippvermeidung darf die **Höhe maximal das 3-Fache der Fußbreite** betragen; bis knapp unter die Unterkante vorbauen.",
+      "actionNote": "> Warum sind Rundhölzer und Hohlblocksteine verboten obwohl sie oft schneller greifbar sind? Rundholz rollt bei kleinster Verschiebung weg und Hohlsteine zerplatzen lautlos. Vollholz-Kanthölzer knacken und knarren vernehmlich vor Überlastung.",
+      "svgFileName": "pr37-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 90-GRAD-KREUZSTAPEL AUS VIERKANT-KANTHOLZ",
+        "Kantholzpaare jede Lage im 90-Grad-Winkel kreuzen",
+        "Enden 2 Finger überstehen + Höhe <= 3x Basisbreite",
+        "Rundholz & Hohlstein (X) tabu: nur Kantholz (V)",
+        "[KERN] Vier flache Kreuzpunkte verteilen Last gleich"
+      ],
+      "deepDive": {
+        "badge": "2X2 BOX CRIBBING GEOMETRY",
+        "title": "Vierpunkt-Lastverteilung und akustische Holzwarnung des Kreuzstapels",
+        "text": "Das abwechselnde Kreuzen von **2x2-Kanthölzern** bildet pro Lage **vier breite plane Auflagerpunkte** gegen Kippen. Überstehende Enden verhindern Herausgleiten unter schräger Last.",
+        "fieldSpecs": [
+          {
+            "name": "Sauber verschränkter 2x2-Holzkreuzstapel direkt neben schwerem Betonträger",
+            "scientificName": "Four-Point Overlapping 2x2 Timber Box Cribbing Foundation",
+            "categoryTag": "2x2-Kreuzstapel / 4 Druckpunkte",
+            "imageFileName": "id-box-cribbing-well-stack-prep.jpg",
+            "hudCode": "FIG. TOOL-37B // MACRO OPTIC",
+            "hudStatus": "BOX CRIB: 2X2 SQUARE INTERLOCK",
+            "traits": [
+              {
+                "label": "Form/Plan",
+                "value": "**Nur vierseitig flaches Vollholz** nutzen — nie Rundholz oder Stein."
+              },
+              {
+                "label": "Überstand",
+                "value": "**Zwei Finger Endüberstand** sichert jede 90-Grad-Kreuzung gegen Zug."
+              },
+              {
+                "label": "Höhe/Max3x",
+                "value": "**Nie höher als 3x Fußbreite** für kippsichere Standsicherheit bauen."
+              }
+            ],
+            "fieldUse": "Hochtragfähige Holzpfeiler seitlich verschütteter Personen errichten"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: '2-3 cm heben, sofort unterbauen' wiederholen & Keile gegeneinander einschieben",
+      "description": "1. **Helfer 1 hebt nur zwei Finger breit (2-3 cm)**: Hebel ruhig niederdrücken bis der Spalt **höchstens 2-3 cm** wächst, damit schräge Platten nicht seitlich wegschlittern.\n2. **Helfer 2 schiebt Holz & Keile von außen ein**: Niemals Hände unter Beton stecken — fassen Sie nur **äußerste Enden oder einen langen Stock**, um eine Lage oder gegenläufige Keile einzudrücken.\n3. **Hebel langsam lösen & Holzauflage prüfen**: Gewicht sacht ablassen, auf **Knirschen oder Wackelfreiheit** achten und den nächsten 2-3-cm-Hub starten.",
+      "actionNote": "> Warum nicht gleich 15 cm am Stück hochwuchten? Hohes Anheben in einem Zug lässt schrägen Beton vom Hebel abrutschen. Ständiges 2-3-cm-Unterbauen begrenzt die Fallhöhe jederzeit unter 2 cm — selbst bei Hebelbruch.",
+      "svgFileName": "pr37-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // '2-3CM HEBEN, SOFORT UNTERBAUEN' + KEILE",
+        "Helfer 1: Kante immer nur 2 Finger (2-3cm) heben",
+        "Helfer 2: Holz & Keile per Stock von außen drücken",
+        "Hände darunter (X) strikt tabu: Lastübergabe testen",
+        "[KERN] 2-3cm-Nachführung schließt tiefe Stürze aus"
+      ],
+      "deepDive": {
+        "badge": "LIFT AN INCH CRIB AN INCH",
+        "title": "2-3-cm-Folgesicherung und gegenläufige Doppelkeil-Klemmung",
+        "text": "Nach dem Standard **Lift an Inch, Crib an Inch** übersteigt der freie Fallweg niemals 3 cm. **Zwei entgegengesetzt zugespitzte Holzkeile** füllen krumme Zwischenräume planparallel mit hoher Holzreibung aus.",
+        "fieldSpecs": [
+          {
+            "name": "Handschuhe schieben Holzkeile sicher ganz von außen auf 2x2-Stapel unter Platte",
+            "scientificName": "Incremental 2-3cm Lever Lift & Opposing Wooden Wedge Insertion",
+            "categoryTag": "2-3-cm-Takt / Außenschub",
+            "imageFileName": "id-lever-one-inch-lift-crib-chase.jpg",
+            "hudCode": "FIG. TOOL-37C // MACRO OPTIC",
+            "hudStatus": "LIFT LOCK: 2-3CM INCREMENTAL CRIB",
+            "traits": [
+              {
+                "label": "Hub/2-3cm",
+                "value": "**Maximal zwei Finger pro Gang** verhindern seitliches Abrutschen."
+              },
+              {
+                "label": "Tabu/Hand",
+                "value": "**Kein Finger oder Arm unter die Betonkante** während der Arbeit."
+              },
+              {
+                "label": "Keil/Paar",
+                "value": "**Zwei Keile gegengleich einschieben**, bis Spalt völlig flach klemmt."
+              }
+            ],
+            "fieldUse": "Schwerste Trümmer sicher Zentimeter um Zentimeter hochkeilen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Ohne Hebel sicheren Doppelstand prüfen, erstversorgen und schonend bergen",
+      "description": "1. **Hebel raus — Doppel-Stapel ohne Wackeln testen**: Sobald Schulterhöhe frei ist, Hebel komplett herausziehen und **beide seitliche 2x2-Türme wackelfrei allein prüfen**.\n2. **Erst Blutungen stillen & Brüche schienen**: Vor dem Ziehen starke Blutungen mit [Knebel-Tourniquet](/protocol-32) stoppen und Frakturen mit [Behelfsschiene](/protocol-18) gegen Transportschäden fixieren.\n3. **Gerade herausziehen & Retter rufen**: Verletzten ruhig ohne Berühren der Holztürme ziehen, per [120-dB-Pfeife & Spiegel](/protocol-27) rufen und bei Durst/Schock [ORS-Lösung](/protocol-24) beachten.",
+      "actionNote": "> Warum vor dem Hineingreifen sogar den langen Hebelbalken weglegen? Ein herausragender Hebel wirkt wie ein Stolperhebel, der die Platte sofort aus dem Gleichgewicht reißt. Nur wenn zwei Holztürme allein alles ruhig tragen, ist der Spalt sicher.",
+      "svgFileName": "pr37-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ALLEINIGER DOPPELSTAND + SICHERE BERGUNG",
+        "Ohne Hebel prüfen: Beide Holztürme stehen ruhig",
+        "Doppelkeile klemmen Spalt und blockieren Verrutschen",
+        "Vor Ziehen erst Blutung stillen & Glieder schienen",
+        "[KERN] Erst eintreten wenn Holzstapel alles tragen"
+      ],
+      "deepDive": {
+        "badge": "STATIC CRIB TRANSFER & EXTRACTION",
+        "title": "Lastübergabe ohne Hebel und Überwachung auf Crush-Syndrom nach >2 Stunden",
+        "text": "Zwei symmetrische **2x2-Kreuzstapel** tragen nach Wegnahme des Hebels ohne Rückschlaggefahr. War jemand **über 2 Stunden schwer eingeklemmt**, sofort nach Entlastung Kreislauf und Atmung engmaschig wegen Crush-Schock überwachen.",
+        "fieldSpecs": [
+          {
+            "name": "Betonplatte sicher auf symmetrischen 2x2-Holztürmen ohne Hebel mit freier Rettungszone",
+            "scientificName": "Symmetrical Dual Timber Box Cribs Bearing Full Load Clear for Extraction",
+            "categoryTag": "Autarker Halt / Freier Tunnel",
+            "imageFileName": "id-safe-cribbed-extraction-void.jpg",
+            "hudCode": "FIG. TOOL-37D // MACRO OPTIC",
+            "hudStatus": "EXTRACTION VOID: CRIB LOCKED",
+            "traits": [
+              {
+                "label": "Frei/Hebel",
+                "value": "**Hebelbalken ganz entfernen**, damit niemand daran stößt."
+              },
+              {
+                "label": "Hilfe/Sofort",
+                "value": "**Tourniquet und Schienen anlegen**, ehe der Verletzte bewegt wird."
+              },
+              {
+                "label": "Schock/2h+",
+                "value": "**Nach >2 Std. Einklemmung** Schockzustand sofort medizinisch prüfen."
+              }
+            ],
+            "fieldUse": "Rettung ohne Sekundärsturzgefahr mit voller medizinischer Vorbereitung"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Ohne Holz-Unterbau nur dem Hebel vertrauen oder Rundhölzer und Hohlsteine stapeln",
+    "description": "Greifen Sie nie unter eine Last, die bloß von einem Hebelbalken gehalten wird: Ein einziger Abrutscher lässt hunderte Kilo in 0,1 Sekunden herabstürzen. Rundhölzer rollen sofort fort und Hohlblocksteine zerspringen ohne Warngeräusch. Glasscherben nach [Sichere Zone](/protocol-31) abdecken und Erschöpfung/Wunden mit [ORS-Lösung & Kochsalz](/protocol-24) behandeln.",
+    "consequence": "Tödlicher Zweiteinsturz durch abgleitenden Hebel oder zerbrechenden Notunterbau."
+  },
+  "faqs": [
+    {
+      "question": "Was tun, wenn ich nach dem Beben ganz allein bin und niemand von außen Keile nachschieben kann?",
+      "causeDiagnostic": "Einhändig hebeln und zugleich unter die Last beugen führt fast immer zum Abrutschen des Hebels.",
+      "resolution": "Rufen Sie zuerst Hilfe per [120-dB-Pfeife & Spiegel](/protocol-27). Nur wenn niemand da ist und ein kleinerer Balken allein kontrollierbar bleibt, stellen Sie Unterbauklötze vorher dicht außen bereit und schieben Keile nur mit Schuhspitze oder Stock bei geradem Rücken nach — niemals unter Last kriechen."
+    },
+    {
+      "question": "Dürfen Hohlblock-Ziegel oder Metallrohre verwendet werden, falls zu wenig Kanthölzer herumliegen?",
+      "causeDiagnostic": "Runde Rohre rollen unter schräger Kraft weg und hohle Betonsteine brechen schlagartig ohne Vorwarnung.",
+      "resolution": "Vermeiden Sie Hohlsteine und Rundrohre vollständig — erstere kollabieren geräuschlos zu Staub, Rohre schnellen seitlich heraus. Sammeln Sie stattdessen massive Türrahmenstücke, Balkenreste, Treppenstufen oder quadratische Möbelbeine."
+    }
+  ],
+  "outcome": {
+    "title": "Stromloses 4:1-Kantholzhebel- & 2x2-Kreuzstapel-System ('2-3 cm heben, sofort unterbauen')",
+    "badge": "TARGET OUTCOME // 2-3-CM-UNTERBAU BEI TRÜMMERRETTUNG",
+    "description": "Kombiniert Decken-/Gasprüfung, gekehrten 4:1-Drehpunkt, 90-Grad-Kantholz-Kreuzstapel und strikten '2-3 cm heben, sofort von außen keilen'-Takt bis zur wackelfreien Doppelstütze ohne Hebel.",
+    "svgFileName": "pr37-outcome.svg",
+    "svgLabels": [
+      "PR-37 FERTIG // HEBEL & 2X2-KREUZSTAPEL RETTUNG",
+      "STUFE 01: KRAFT-DREHPUNKT",
+      "Fester Boden + naher 4:1-Hebel",
+      "STUFE 02: 2X2-KREUZSTAPEL",
+      "Kantholz 90 Grad fest gekreuzt",
+      "STUFE 03: 2-3CM UNTERBAUEN",
+      "Keile mit Stock von außen ein",
+      "STUFE 04: AUTARKER STAND",
+      "Ohne Hebel stützen & bergen",
+      "[PRINZIP] 2-3cm-Nachführen auf 2x2-Kantholz verhindert tödliche Zweitstürze"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Nach Erdbeben jemand unter Betontrümmern und kein Rettungsgerät da? Vertraue NIE nur dem Hebel — so schützt der 2x2-Holzunterbau Leben!",
+    "body": "Erstens: Decke und Gasgeruch prüfen, Boden sauber fegen, flachen Drehklotz dicht an die Kante legen und langen Balken 3-5 cm einschieben. Zweitens: Seitlich zwei flache Kantholz-Türme im 90-Grad-Kreuzstapel aufbauen — niemals Rundholz oder Hohlsteine! Drittens die goldene Regel: Hebel immer nur 2-3 cm drücken, OHNE eine Hand unter den Beton zu stecken Klötze und Keile von außen mit einem Stock nachschieben und langsam absetzen. Viertens: Hebel ganz entfernen — erst wenn beide Holztürme allein felsenfest stehen, Wunden verbinden und Verletzte sicher herausziehen!"
+  },
+  "createdAt": "2026-11-21T02:46:35.405Z",
+  "contentHash": "80dbc76c9f37795f"
+}

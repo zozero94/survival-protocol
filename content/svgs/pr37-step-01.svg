@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg37s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="slab37s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="wood37s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <pattern id="grid37s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow37s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg37s1)"/>
+  <rect width="400" height="400" fill="url(#grid37s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 01 // 2차 붕괴 점검 + 단단한 받침점·각목 지렛대</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">맨바닥 부스러기 치우고 평평한 받침점 가까이 배치</text>
+
+  <!-- Main Visual: Concrete Slab + Cleared Firm Ground + Close Square Fulcrum + 4:1 Timber Lever -->
+  <g filter="url(#shadow37s1)">
+    <!-- Solid Cleared Concrete Ground Floor -->
+    <rect x="20" y="256" width="360" height="26" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <line x1="20" y1="256" x2="380" y2="256" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Heavy Collapsed Gray Concrete Slab (Left) -->
+    <polygon points="28,158 158,158 164,234 28,234" fill="url(#slab37s1)" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="50" y1="184" x2="136" y2="210" stroke="#1e293b" stroke-width="2"/>
+    <line x1="94" y1="164" x2="112" y2="228" stroke="#0f172a" stroke-width="1.5"/>
+
+    <!-- Small Rubble Support Underneath Left Side -->
+    <polygon points="34,256 76,234 114,256" fill="#475569" stroke="#64748b" stroke-width="1.2"/>
+
+    <!-- Solid Square Wooden Fulcrum Block Close to Slab Edge on Firm Ground -->
+    <rect x="176" y="220" width="38" height="36" rx="2" fill="url(#wood37s1)" stroke="#fde047" stroke-width="1.8"/>
+    <line x1="176" y1="238" x2="214" y2="238" stroke="#451a03" stroke-width="1.2"/>
+
+    <!-- Long Solid Square Timber Lever (4:1 Ratio) Pivoting Over Fulcrum -->
+    <polygon points="132,232 364,174 368,188 136,246" fill="url(#wood37s1)" stroke="#fef08a" stroke-width="1.8"/>
+
+    <!-- Downward Force Arrow at Far Right Lever Handle -->
+    <line x1="344" y1="126" x2="344" y2="168" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="336,162 344,175 352,162" fill="#f59e0b"/>
+
+    <!-- Upward Lift Vector at Slab Tip -->
+    <line x1="142" y1="148" x2="142" y2="114" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="135,120 142,107 149,120" fill="#22c55e"/>
+
+    <!-- Leverage Ratio Bracket 4 : 1 -->
+    <line x1="138" y1="274" x2="195" y2="274" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="195" y1="274" x2="356" y2="274" stroke="#fde047" stroke-width="2"/>
+    <circle cx="195" cy="274" r="3" fill="#f59e0b"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">지렛대 앞끝 잔해 아래 손가락 두 마디(3~5cm) 삽입</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">4:1 이상 긴 지렛대 팔이 내 몸무게로 하중 증폭</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 받침점을 잔해 가까이에 두어야 작은 힘으로 안전 상승</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg37s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="slab37s3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="wood37s3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <pattern id="grid37s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow37s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg37s3)"/>
+  <rect width="400" height="400" fill="url(#grid37s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 03 // '2~3cm 들고 즉시 괴기' 교대 반복 + 쐐기 밀기</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">1번: 한 번에 손가락 두 마디(2~3cm)만 살짝 들기</text>
+
+  <!-- Main Visual: Concrete Slab Slightly Lifted 2-3cm + Crib Stack + Opposing Wedges + No-Hand-Under-Slab Sign -->
+  <g filter="url(#shadow37s3)">
+    <!-- Solid Floor -->
+    <rect x="20" y="264" width="360" height="18" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+
+    <!-- Heavy Concrete Slab Lifted Slightly (2-3cm gap open above cribbing) -->
+    <polygon points="28,118 228,128 226,174 28,166" fill="url(#slab37s3)" stroke="#cbd5e1" stroke-width="2"/>
+    <!-- 2-3cm Incremental Lift Arrow -->
+    <line x1="128" y1="112" x2="128" y2="84" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="122,90 128,78 134,90" fill="#22c55e"/>
+
+    <!-- Crib Stack Below Slab -->
+    <rect x="96" y="242" width="118" height="22" fill="url(#wood37s3)" stroke="#451a03" stroke-width="1.5"/>
+    <rect x="112" y="220" width="24" height="22" fill="#f59e0b" stroke="#451a03" stroke-width="1.5"/>
+    <rect x="174" y="220" width="24" height="22" fill="#f59e0b" stroke="#451a03" stroke-width="1.5"/>
+    <rect x="96" y="198" width="118" height="22" fill="url(#wood37s3)" stroke="#451a03" stroke-width="1.5"/>
+
+    <!-- Opposing Tapered Wedges Sliding Tight Under Gap (2-3cm) -->
+    <polygon points="104,196 196,196 196,184" fill="#fde047" stroke="#92400e" stroke-width="1.5"/>
+    <polygon points="104,174 196,174 104,186" fill="#d97706" stroke="#fef08a" stroke-width="1.5"/>
+
+    <!-- Push Rod / Stick From Outside Pushing Wedge Safely (NO HANDS UNDER SLAB) -->
+    <rect x="234" y="182" width="122" height="10" rx="3" fill="#a16207" stroke="#fde68a" stroke-width="1.5"/>
+    <line x1="340" y1="168" x2="250" y2="168" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="256,162 244,168 256,174" fill="#38bdf8"/>
+
+    <!-- Explicit Safe Outer Boundary Dashed Vertical Line -->
+    <line x1="230" y1="90" x2="230" y2="270" stroke="#ef4444" stroke-width="2" stroke-dasharray="5 4"/>
+
+    <!-- Forbidden No-Hands-Under-Concrete Warning Icon (Right Upper Inset) -->
+    <circle cx="312" cy="122" r="22" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <!-- Standard 5-finger hand pictogram crossed out -->
+    <rect x="303" y="120" width="18" height="12" rx="3" fill="#fecaca"/>
+    <line x1="305" y1="120" x2="305" y2="108" stroke="#fecaca" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="310" y1="120" x2="310" y2="106" stroke="#fecaca" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="315" y1="120" x2="315" y2="107" stroke="#fecaca" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="320" y1="120" x2="320" y2="111" stroke="#fecaca" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="296" y1="106" x2="328" y2="138" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">2번: 손 안 넣고 긴 막대·바깥 끝으로 각목·쐐기 밀기</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2a0f14" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">잔해 아래 손 넣기(X) 절대 금지: 괴임 얹힘 매회 확인</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 2~3cm씩 따라가며 괴어야 지렛대가 꺾여도 안전</text>
+</svg>

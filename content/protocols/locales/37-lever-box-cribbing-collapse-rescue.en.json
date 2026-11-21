@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-37",
+  "category": "TOOLS",
+  "title": "How to Safely Lift Heavy Collapse Concrete Using a Timber Lever and 2x2 Box Cribbing (Zero Power)",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[EARTHQUAKE COLLAPSE RESCUE LEVERAGE & 2X2 BOX CRIBBING ENGINEERING]",
+  "summary": "If rescue services can be reached and hydraulic spreaders, pneumatic lifting airbags, or factory hydraulic car jacks are on site, deploy professional firefighters and rated lifting equipment first as the safest, fastest option. However, when severe earthquakes or structural collapses sever communications and trap survivors outside an [Indoor Safe Zone](/protocol-31) without power tools, pairs of rescuers must combine an adult-height timber beam lever with stacked flat square wood cribbing blocks using the 'Lift an Inch, Crib an Inch' method. By keeping hands completely out from beneath the slab until solid cribbing bears the entire load, you can extract victims safely, treat wounds with a [Windlass Tourniquet](/protocol-32) and [Field Splint](/protocol-18), and signal crews with a [120dB Whistle & Mirror](/protocol-27).",
+  "timeRequired": "15-25 mins controlled extraction (5 mins safety & fulcrum prep + 10-20 mins 2-3cm incremental cribbing)",
+  "successRate": "95% (when founded on swept solid concrete, 2x2 flat timber cribbing, and zero hands beneath loads)",
+  "difficulty": "Intermediate (Minimum 2 rescuers recommended; requires long timber lever, fulcrum block, 12-16 flat crib blocks & wedges)",
+  "outputPerHour": "Safely elevates and stabilizes heavy collapsed concrete beams with zero power or hydraulics to open a rescue corridor",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Sturdy Knot-Free Timber Beam Lever (Adult Height 1.5-2m) & 1 Solid Square Wooden Fulcrum Block",
+      "desc": "Acts as a 4:1 to 5:1 force multiplier to pry heavy concrete slabs upward two finger-joints at a time. Select sound dry lumber thicker than a forearm clear of secondary collapse debris near your [Indoor Safe Zone](/protocol-31)."
+    },
+    {
+      "id": "mat-02",
+      "name": "12-16 Flat Wrist-Thick Square Timber Cribbing Blocks (40-50cm Long) for 2x2 Grid Stacking",
+      "desc": "Transfers massive downward slab weight stably into solid floor concrete via crossed wooden columns. Strictly avoid round logs or hollow masonry cinder blocks; collect only flat-sided solid timber."
+    },
+    {
+      "id": "mat-03",
+      "name": "4-6 Tapered Opposing Wooden Wedges, Thick Work Gloves & 1 Long Push Stick",
+      "desc": "Locks narrow gaps tightly from outside without risking fingers beneath concrete. Keep supplies nearby to apply a [Windlass Tourniquet](/protocol-32) and [Field Splint](/protocol-18) upon extraction."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Inspect Overhead Hazards & Gas Leaks, Clear Firm Floor, and Set a 4:1 Fulcrum",
+      "description": "1. **Scan Overhead Hazards & Gas Smell First**: Protect rescuers by checking dangling columns above for aftershock drop risks and sniffing for natural gas—shut off valves and vent immediately before sparks trigger fires.\n2. **Place a Flat Fulcrum Block on Swept Solid Ground**: Brush away loose dust and pebbles near the concrete corner so the fulcrum never sinks, then seat a solid flat timber block directly on bare concrete.\n3. **Tuck Lever Tip Only Two Finger-Joints (3-5cm) Under Edge**: Slide the beam end 3-5cm under the slab right over the close fulcrum, keeping the back handle long for **4:1 to 5:1 lifting leverage**.",
+      "actionNote": "> Why place the wooden fulcrum tightly against the concrete edge instead of pulling back halfway along the beam? Every centimeter the fulcrum sits away cuts mechanical advantage sharply. Seating the fulcrum right next to the slab lets ordinary body weight move massive concrete smoothly.",
+      "svgFileName": "pr37-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // HAZARD CHECK + CLOSE FULCRUM & TIMBER LEVER",
+        "Sweep floor grit; seat flat fulcrum block tight near edge",
+        "Insert beam tip only 2 finger-joints (3-5cm) under slab",
+        "4:1 long lever arm multiplies body weight cleanly",
+        "[CORE] Close firm fulcrum lifts heavy concrete safely"
+      ],
+      "deepDive": {
+        "badge": "FULCRUM POSITION & 4:1 LEVERAGE",
+        "title": "Maximizing 4:1 Mechanical Advantage on Swept Bare Structural Floors",
+        "text": "Seating the **fulcrum directly beside the slab edge** yields **4x to 5x downward-to-upward lift force**. Clearing loose rubble beneath the fulcrum prevents sudden ground settlement from pitching heavy slabs sideways onto rescuers.",
+        "fieldSpecs": [
+          {
+            "name": "Sturdy Square Timber Lever Seated on Close Wooden Fulcrum Beside Collapsed Concrete Slab",
+            "scientificName": "Firm-Base Square Timber Fulcrum & 4:1 Long Lever Arm Setup",
+            "categoryTag": "Close Fulcrum / 4:1 Leverage Ratio",
+            "imageFileName": "id-collapsed-concrete-crib-site-prep.jpg",
+            "hudCode": "FIG. TOOL-37A // MACRO OPTIC",
+            "hudStatus": "LEVER SETUP: 4:1 FIRM FULCRUM",
+            "traits": [
+              {
+                "label": "Scan/Hazard",
+                "value": "**Check overhead debris and gas odor** before any lifting begins."
+              },
+              {
+                "label": "Floor/Bare",
+                "value": "**Sweep loose grit away** so the fulcrum sits flat on solid ground."
+              },
+              {
+                "label": "Ratio/4:1",
+                "value": "**Keep fulcrum tight to slab** so normal weight lifts heavy beams."
+              }
+            ],
+            "fieldUse": "Establishing non-slipping leverage geometry on bare collapse floors"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Build 90-Degree Crossed 2x2 Square Timber Box Cribs Beside the Load",
+      "description": "1. **Lay Two Parallel Flat Blocks Beside Slab**: Before pushing the lever, place two flat 40-50cm square blocks parallel about half a shoulder-width apart on firm swept floor right beside the slab.\n2. **Cross Alternating Layers at Right Angles (90 Deg)**: Lay the next two blocks crosswise at 90 degrees with **corners overhanging by two finger-widths** so interlocking ends never slip loose under tilt.\n3. **Cap Stack Height at Maximum 3x Base Width**: Keep height **under 3 times base width** to prevent toppling, stacking snugly almost to the concrete underside before lifting begins.",
+      "actionNote": "> Why forbid round logs and hollow cinder blocks when square timber builds slower? Round logs roll sideways the instant load shifts, and hollow concrete blocks explode without warning. Solid flat lumber creaks loudly and compresses gradually first—warning rescuers in time.",
+      "svgFileName": "pr37-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 90-DEGREE CROSSED 2X2 SQUARE TIMBER CRIB",
+        "Stack pairs of flat square blocks at 90 deg right angles",
+        "Overhang ends 2 fingers + keep height <= 3x base width",
+        "No round logs/hollow bricks (X): square wood grid (V)",
+        "[CORE] Four flat corner intersections spread load evenly"
+      ],
+      "deepDive": {
+        "badge": "2X2 BOX CRIBBING GEOMETRY",
+        "title": "Four-Point Load Distribution and Failure Warning of Crossed Square Lumber",
+        "text": "Alternating **2x2 square timber layers** generates **four wide flat compression joints** at each tier that resist sideways tipping. Corner overhangs prevent slipped ends even under slight tilt.",
+        "fieldSpecs": [
+          {
+            "name": "Interlocked 2x2 Square Wooden Box-Cribbing Tower Beside Heavy Concrete Beam",
+            "scientificName": "Four-Point Overlapping 2x2 Timber Box Cribbing Foundation",
+            "categoryTag": "2x2 Box Crib / 4-Point Load",
+            "imageFileName": "id-box-cribbing-well-stack-prep.jpg",
+            "hudCode": "FIG. TOOL-37B // MACRO OPTIC",
+            "hudStatus": "BOX CRIB: 2X2 SQUARE INTERLOCK",
+            "traits": [
+              {
+                "label": "Shape/Flat",
+                "value": "**Use strictly flat-sided solid wood**—never round poles or bricks."
+              },
+              {
+                "label": "Overlap/Ends",
+                "value": "**Leave two-finger overhangs** at every crossed corner joint."
+              },
+              {
+                "label": "Height/3x",
+                "value": "**Never exceed 3x base width in height** for tip-proof stability."
+              }
+            ],
+            "fieldUse": "Constructing stable high-capacity wooden support columns next to trapped survivors"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Repeat 'Lift 2-3cm, Crib 2-3cm' Alternately and Lock Gaps With Opposing Wedges",
+      "description": "1. **Rescuer 1 Lifts Only Two Fingers (2-3cm)**: Press down steadily until the concrete rises **just two finger-widths (2-3cm)**—never higher at once so asymmetric rubble never slides off.\n2. **Rescuer 2 Pushes Crib Block or Wedges From Outside**: Hold ONLY the far outer tips or use a **long stick to push a timber layer or paired opposing wedges** into the 2-3cm gap—ZERO fingers under concrete.\n3. **Ease Lever Slowly & Confirm Wood Bearing**: Lower weight gently onto the new crib, listen for **wood creaks or zero rock**, then advance the next 2-3cm step.",
+      "actionNote": "> Why limit every single lift to 2-3cm instead of hoisting 15cm cleanly in one heave? Big single lifts tilt uneven concrete sideways off the lever tip. Chasing every 2-3cm with wood locks free-fall drop height under 2cm—saving lives if a lever snaps mid-lift.",
+      "svgFileName": "pr37-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 'LIFT 2-3CM, CRIB 2-3CM' & WEDGE LOCK",
+        "Liftr 1: Raise edge just 2 finger-widths (2-3cm)",
+        "Helper 2: Push wood & wedges from outside via rod",
+        "Hands under slab (X) forbidden: confirm weight transfer",
+        "[CORE] Incremental 2-3cm chase prevents fatal drop"
+      ],
+      "deepDive": {
+        "badge": "LIFT AN INCH CRIB AN INCH",
+        "title": "Incremental 2-3cm Chase Method and Dual Opposing Wedge Friction Lock",
+        "text": "The rescue mantra **Lift an Inch, Crib an Inch** bounds accidental drop height to 2-3cm at every instant. **Two opposing tapered wooden wedges** pushed tight face-to-face fill partial gaps flat while gripping via wood-on-wood friction.",
+        "fieldSpecs": [
+          {
+            "name": "Gloved Hands Pushing Opposing Wooden Wedges From Far Outer Ends Beneath Raised Concrete",
+            "scientificName": "Incremental 2-3cm Lever Lift & Opposing Wooden Wedge Insertion",
+            "categoryTag": "2-3cm Lift-Crib / Outer-End Push",
+            "imageFileName": "id-lever-one-inch-lift-crib-chase.jpg",
+            "hudCode": "FIG. TOOL-37C // MACRO OPTIC",
+            "hudStatus": "LIFT LOCK: 2-3CM INCREMENTAL CRIB",
+            "traits": [
+              {
+                "label": "Step/2-3cm",
+                "value": "**Lift only two fingers each cycle** to keep concrete centered."
+              },
+              {
+                "label": "Ban/Hands",
+                "value": "**Never cross body or fingers beneath slab edges** while cribbing."
+              },
+              {
+                "label": "Wedge/Pair",
+                "value": "**Drive opposing wedges point-to-point** to keep surfaces flush."
+              }
+            ],
+            "fieldUse": "Stepping heavy debris safely upward without risking sudden collapse"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Confirm Independent Box-Crib Support, Treat Injuries, and Extract Victim Safely",
+      "description": "1. **Verify Full Load on Dual Cribs With Lever Removed**: Once shoulder clearance opens, remove the lever and confirm **two symmetric box-crib stacks hold steady with zero wobble**.\n2. **Stabilize Bleeding and Fractures First**: Before pulling the survivor, lock severe limb bleeding using a [Windlass Tourniquet](/protocol-32) and immobilize fractures with a [Field Splint](/protocol-18).\n3. **Slide Out Smoothly Clear of Timber Stacks**: Pull evenly along one line without bumping the cribbing towers, signal crews via [120dB Whistle & Mirror](/protocol-27), and watch shock/dehydration closely using [Oral Rehydration Solution (ORS)](/protocol-24).",
+      "actionNote": "> Why pull the lever completely free and test dual box cribs before reaching inside? An unattended lever protrudes like a tripwire that can pry the slab off-balance if bumped. Only when dual cribs support 100% of the concrete undisturbed is extraction safe.",
+      "svgFileName": "pr37-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // DUAL INDEPENDENT CRIBS + SAFE EXTRACTION",
+        "Remove lever; verify dual cribs hold with zero wobble",
+        "Lock opposing wedges tight to block all slab slip",
+        "Stop bleeding & splint limbs before gentle extraction",
+        "[CORE] Enter void only after dual cribs hold full load"
+      ],
+      "deepDive": {
+        "badge": "STATIC CRIB TRANSFER & EXTRACTION",
+        "title": "Static Load Transfer Clear of Levers and Prolonged Crush Shock Vigilance",
+        "text": "Twin **2x2 box cribs** transfer 100% slab weight vertically into floor concrete once the lever is gone. If limbs or torso were pinned **over 2 hours**, watch closely for sudden Crush Syndrome shock immediately after load release and prioritize urgent medical evacuation.",
+        "fieldSpecs": [
+          {
+            "name": "Heavy Concrete Slab Supported High on Symmetrical Dual Wooden Box Cribs Ready for Rescue",
+            "scientificName": "Symmetrical Dual Timber Box Cribs Bearing Full Load Clear for Extraction",
+            "categoryTag": "Static Dual Support / Rescue Corridor",
+            "imageFileName": "id-safe-cribbed-extraction-void.jpg",
+            "hudCode": "FIG. TOOL-37D // MACRO OPTIC",
+            "hudStatus": "EXTRACTION VOID: CRIB LOCKED",
+            "traits": [
+              {
+                "label": "Clear/Lever",
+                "value": "**Remove timber lever completely** so nothing bumps the propped slab."
+              },
+              {
+                "label": "FirstAid/Fix",
+                "value": "**Tie tourniquet or splints first** before sliding victim over rubble."
+              },
+              {
+                "label": "Watch/Crush",
+                "value": "**Monitor shock urgently** if pinned over 2 hours once pressure lifts."
+              }
+            ],
+            "fieldUse": "Creating a clean stable extraction gap ready for survivor trauma care"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Reaching Under Concrete Held Only by a Lever or Stacking Round Logs and Hollow Bricks",
+    "description": "Never trust a hand-held lever without timber cribbing while putting fingers or bodies beneath heavy rubble: one subtle slip drops hundreds of kilograms in 0.1 seconds, crushing both victim and rescuer. Never build cribs out of round logs or hollow cinder blocks that roll sideways or shatter abruptly. Watch broken glass hazards per [Blast Safe Zone](/protocol-31) and treat dehydration or cuts cleanly with [Oral Rehydration Solution & Saline](/protocol-24).",
+    "consequence": "Catastrophic lever slip causing lethal secondary crush injury to victim and rescuer alike."
+  },
+  "faqs": [
+    {
+      "question": "What if I am completely alone after a quake with no helper to slide wooden cribbing underneath?",
+      "causeDiagnostic": "Pressing a lever while leaning under a raised slab solo invites hand release and fatal drop.",
+      "resolution": "First summon nearby help using a [120dB Whistle & Solar Mirror](/protocol-27). Only if truly solo on a lighter manageable beam, stage blocks right outside the edge beforehand and nudge wedges inward purely with your boot tip or a long stick while keeping 100% weight on the lever—never crawl beneath uncribbed loads."
+    },
+    {
+      "question": "Can I stack hollow gray cement blocks or metal pipes instead of flat square lumber if timber is scarce?",
+      "causeDiagnostic": "Hollow concrete masonry crushes explosively under tilted loads and round metal pipes roll sideways effortlessly.",
+      "resolution": "Avoid hollow bricks and round steel pipes whenever possible—bricks explode with zero creaking warning and pipes roll off angled concrete instantly. Salvage solid flat wood from broken stair treads, sturdy furniture frames, door jambs, or thick joists instead."
+    }
+  ],
+  "outcome": {
+    "title": "4:1 Firm-Fulcrum Timber Lever & 90-Degree 2x2 Box Cribbing 'Lift 2-3cm, Crib 2-3cm' Rescue System",
+    "badge": "TARGET OUTCOME // 2-3CM INCREMENTAL CRIB COLLAPSE RESCUE",
+    "description": "Zero-power collapse rescue system combining overhead/gas hazard checks, close bare-floor 4:1 leverage, 90-degree crossed 2x2 flat timber cribs, and strict 'Lift 2-3cm, Crib 2-3cm' incremental wedging until static cribs hold independently clear for extraction.",
+    "svgFileName": "pr37-outcome.svg",
+    "svgLabels": [
+      "PR-37 COMPLETE // LEVER & 2X2 BOX-CRIB COLLAPSE RESCUE",
+      "STAGE 01: FULCRUM & LEVER",
+      "Bare concrete + close 4:1 lift",
+      "STAGE 02: 2X2 BOX-CRIB BASE",
+      "90 deg crossed flat wood grid",
+      "STAGE 03: LIFT & CRIB 2-3CM",
+      "Push blocks outside via rod",
+      "STAGE 04: STATIC SUPPORT",
+      "Lever free, splint & extract",
+      "[PRINCIPLE] 2-3cm incremental cribbing over 4-point box stacks stops fatal secondary drops"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Someone trapped under heavy earthquake rubble and zero rescue gear around? NEVER reach under a lever alone—learn this lifesaving wooden box-cribbing trick!",
+    "body": "First, scan overhead hazards and gas smells, sweep debris clean, seat a solid square wood block close to the slab edge, and tuck a tall timber lever 3 to 5cm beneath. Second, beside the slab build two-by-two flat square wooden towers crossed 90 degrees like a hashtag—never round logs or hollow bricks! Third, the life-or-death rule: Lift an inch, crib an inch! Raise just two finger-widths, push wooden blocks and wedges from the OUTSIDE without a single finger under concrete, and ease down onto the wood. Fourth, pull the lever out completely—only when dual wood stacks hold rock solid do you splint bleeding wounds and slide your survivor free!"
+  },
+  "createdAt": "2026-11-21T02:46:35.405Z",
+  "contentHash": "80dbc76c9f37795f"
+}

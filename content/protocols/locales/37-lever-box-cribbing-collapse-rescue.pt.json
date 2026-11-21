@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-37",
+  "category": "TOOLS",
+  "title": "Como Levantar Escombros de Concreto Sem Energia com Alavanca e Escoramento Fogueira 2x2 no Desabamento",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[RESGATE URBANO EM DESABAMENTO COM ALAVANCA E ESCORAMENTO DE MADEIRA SEM ENERGIA]",
+  "summary": "Se houver contato com bombeiros e acesso a expansores hidráulicos, almofadas pneumáticas ou macacos hidráulicos prontos, acione primeiro as equipes e ferramentas certificadas por serem mais rápidas e seguras. Contudo, após terremotos ou desabamentos sem sinal nem energia fora da [Zona Segura Interna](/protocol-31), duas pessoas podem erguer lajes combinando uma alavanca alta de madeira com pilhas quadradas 2x2 em jogo-da-velha ('Ergue 2-3 cm, calça 2-3 cm'). Mantendo as mãos fora debaixo do concreto até a madeira sustentar tudo, você aplica [Torniquete de Molinete](/protocol-32) e [Tala de Madeira](/protocol-18), pede socorro com [Apito 120 dB e Espelho](/protocol-27) e retira a vítima em segurança.",
+  "timeRequired": "15-25 min resgate gradual (5 min checagem e fulcro + 10-20 min calço a cada 2-3 cm)",
+  "successRate": "95% (em piso varrido firme, madeira quadrada 2x2 e zero mãos sob a carga)",
+  "difficulty": "Intermediário (mín. 2 pessoas recomendado; viga alavanca, apoio sólido, 12-16 caibros quadrados e cunhas)",
+  "outputPerHour": "Ergue e trava vigas pesadas de concreto sem energia ou hidráulica abrindo corredor seguro",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Viga Alavanca Firme Sem Nós (1,5-2 m) e 1 Bloco Quadrado Sólido de Madeira (Apoio)",
+      "desc": "Multiplica o peso corporal 4 a 5 vezes erguendo lajes poucos centímetros por vez. Escolha madeira seca mais grossa que um antebraço longe de risco de queda perto da [Zona Segura Interna](/protocol-31)."
+    },
+    {
+      "id": "mat-02",
+      "name": "12-16 Caibros Quadrados Planos (40-50 cm) para Torres Escoramento 2x2",
+      "desc": "Transfere o peso do concreto direto ao piso firme em torres cruzadas a 90 graus. Jamais use toras redondas nem blocos vazados; junte apenas madeira maciça de faces planas."
+    },
+    {
+      "id": "mat-03",
+      "name": "4-6 Cunhas Opostas de Madeira, Luvas Grossas de Trabalho e 1 Vara Longa Empurradora",
+      "desc": "Trava folgas pequenas pelo lado de fora sem enfiar dedos sob a laje. Deixe à mão material para [Torniquete de Molinete](/protocol-32) e [Tala com Galhos](/protocol-18) após liberar a vítima."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Cheque Teto e Cheiro de Gás, Limpe o Piso e Apoie o Fulcro Perto da Laje 4:1",
+      "description": "1. **Verifique Risco Acima e Cheiro de Gás**: Proteja a equipe conferindo vigas soltas contra réplicas e cheiro de gás; ventile e afaste faíscas antes de agir.\n2. **Assente o Bloco de Apoio no Piso Limpo**: Varra pó e pedriscos junto à borda do concreto evitando afundar, apoiando o bloco quadrado direto no piso duro.\n3. **Encaixe a Ponta Só 3-5 cm Sob a Laje**: Enfíe dois dedos (3-5 cm) da ponta sob a peça e encoste o fulcro junto à borda para obter **vantagem mecânica de 4:1 a 5:1**.",
+      "actionNote": "> Por que colar o apoio bem na quina do concreto em vez de puxar no meio? Cada centímetro que afasta o fulcro corta pela metade a força de alavanca. Com o fulcro colado na borda, o peso normal move lajes pesadas com controle.",
+      "svgFileName": "pr37-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CHECAGEM + FULCRO FIRME E ALAVANCA 4:1",
+        "Varrer piso; apoiar bloco plano junto à quina",
+        "Meter ponta só 2 dedos (3-5cm) sob o concreto",
+        "Braço longo 4:1 multiplica o peso sem esforço",
+        "[CHAVE] Fulcro próximo ergue laje com total firmeza"
+      ],
+      "deepDive": {
+        "badge": "FULCRUM POSITION & 4:1 LEVERAGE",
+        "title": "Maximização de Vantagem 4:1 em Piso Estrutural Varrido Sem Pedriscos",
+        "text": "Encostar o **bloco de fulcro na aresta da laje** gera **4x a 5x força de levantamento**. Limpar brita solta sob o apoio impede recalques repentinos que façam a viga escorregar de lado.",
+        "fieldSpecs": [
+          {
+            "name": "Viga de Madeira Firme Sobre Bloco Quadrado Perto de Laje de Concreto Desabada",
+            "scientificName": "Firm-Base Square Timber Fulcrum & 4:1 Long Lever Arm Setup",
+            "categoryTag": "Fulcro Próximo / Alavanca 4:1",
+            "imageFileName": "id-collapsed-concrete-crib-site-prep.jpg",
+            "hudCode": "FIG. TOOL-37A // MACRO OPTIC",
+            "hudStatus": "LEVER SETUP: 4:1 FIRM FULCRUM",
+            "traits": [
+              {
+                "label": "Risco/Gás",
+                "value": "**Inspecione vigas acima e gás** antes de iniciar qualquer força."
+              },
+              {
+                "label": "Chão/Duro",
+                "value": "**Limpe areia e pó** assentando o fulcro direto no concreto firme."
+              },
+              {
+                "label": "Razão/4:1",
+                "value": "**Encoste fulcro na borda** erguendo peso imenso só com o corpo."
+              }
+            ],
+            "fieldUse": "Garantir apoio antiderrapante antes de erguer etapa por etapa"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Monte Pilhas 2x2 de Caibros Quadrados Cruzados a 90 Graus nos Dois Lados",
+      "description": "1. **Alinhe Dois Caibros Paralelos Junto à Laje**: Antes de forçar a alavanca, disponha dois caibros de 40-50 cm separados meio ombro sobre o piso limpo ao lado.\n2. **Cruze Camadas a 90 Graus (Grade #)**: Apoie o par seguinte em ângulo reto deixando **duas pontas sobrando dois dedos nas quinas** para nunca escaparem com inclinação.\n3. **Limite a Altura a 3x a Largura da Base**: Evite tombamento mantendo **altura <= 3 vezes a base**, pré-empilhando até quase encostar sob a laje antes de erguer.",
+      "actionNote": "> Por que proibir toras redondas e tijolos furados no lugar de caibros quadrados? Madeira redonda rola na hora ao menor desvio e bloco furado explode sem ruído prévio. Madeira maciça range e estala avisando antes de ceder.",
+      "svgFileName": "pr37-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TORRE 2X2 CRUZADA A 90 GRAUS EM FOGUEIRA",
+        "Empilhar pares planos a 90 graus por andar firme",
+        "Sobrar 2 dedos nas pontas e altura <= 3x a base",
+        "Tora & tijolo furado (X) proibidos: caibro plano (V)",
+        "[CHAVE] Quatro cruzamentos planos dividem o peso"
+      ],
+      "deepDive": {
+        "badge": "2X2 BOX CRIBBING GEOMETRY",
+        "title": "Distribuição em 4 Apoios Planos e Alerta Sonoro de Madeira Maciça",
+        "text": "Alternar **pares planos a 90 graus** forma **quatro contatos amplos** por andar barrando balanço lateral. Sobra nas pontas evita escape caso a peça incline levemente.",
+        "fieldSpecs": [
+          {
+            "name": "Torre Quadrada 2x2 de Caibros Cruzados em 90 Graus ao Lado de Viga Caída",
+            "scientificName": "Four-Point Overlapping 2x2 Timber Box Cribbing Foundation",
+            "categoryTag": "Torre 2x2 90° / 4 Pontos",
+            "imageFileName": "id-box-cribbing-well-stack-prep.jpg",
+            "hudCode": "FIG. TOOL-37B // MACRO OPTIC",
+            "hudStatus": "BOX CRIB: 2X2 SQUARE INTERLOCK",
+            "traits": [
+              {
+                "label": "Formato/Plano",
+                "value": "**Só use caibros quadrados maciços**, nunca rolos nem blocos ocos."
+              },
+              {
+                "label": "Ponta/Sobra",
+                "value": "**Deixe sobra de dois dedos** travando cada quina cruzada a 90°."
+              },
+              {
+                "label": "Altura/3x",
+                "value": "**Não passe de 3x a largura da base** mantendo torre firme."
+              }
+            ],
+            "fieldUse": "Construir colunas de apoio estáveis ao lado do local de resgate"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Repita 'Ergue 2-3 cm, Calça 2-3 cm' Sem Mãos Sob Carga e Trave Cunhas Opostas",
+      "description": "1. **Soccrrista 1 Ergue Só Dois Dedos (2-3 cm)**: Pressione firme até subir **no máximo 2-3 cm por vez**, impedindo escorregamento lateral da laje.\n2. **Socorrista 2 Empurra Madeira ou Cunhas Pelo Exterior**: Para prevenir esmagamento, empurre **só pelas pontas externas ou com vara longa** um caibro ou par de cunhas opostas — zero dedos dentro.\n3. **Solte Lento e Confira Assento na Madeira**: Transfira o peso devagar, verifique **ausência de balanço e estalos**, e repita mais 2-3 cm.",
+      "actionNote": "> Por que erguer só 2-3 cm por ciclo em vez de 15 cm de uma vez? Subir alto de golpe inclina o concreto derrubando-o de lado da ponta. Calçar cada 2-3 cm limita qualquer queda a menos de 2 cm se a alavanca partir.",
+      "svgFileName": "pr37-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 'ERGUE 2-3CM, CALÇA 2-3CM' COM CUNHAS",
+        "Pessoa 1: Subir só dois dedos (2-3cm) por etapa",
+        "Pessoa 2: Empurrar madeira e cunhas só por fora",
+        "Mão sob laje (X) proibida: checar apoio em cada vez",
+        "[CHAVE] Calço a cada 2-3cm zera risco de queda fatal"
+      ],
+      "deepDive": {
+        "badge": "LIFT AN INCH CRIB AN INCH",
+        "title": "Elevação Incremental de 2-3 cm e Trava por Fricção com Cunhas Opostas",
+        "text": "O padrão **Lift an Inch, Crib an Inch** limita a queda eventual a no máximo 3 cm a cada instante. **Duas cunhas opostas ponta a ponta** preenchem frestas mantendo apoio plano paralelo.",
+        "fieldSpecs": [
+          {
+            "name": "Mãos Enluvadas Empurrando Cunhas Só Pelas Pontas Externas em Torre 2x2 Sob Laje",
+            "scientificName": "Incremental 2-3cm Lever Lift & Opposing Wooden Wedge Insertion",
+            "categoryTag": "Ciclo 2-3 cm / Empurro Externo",
+            "imageFileName": "id-lever-one-inch-lift-crib-chase.jpg",
+            "hudCode": "FIG. TOOL-37C // MACRO OPTIC",
+            "hudStatus": "LIFT LOCK: 2-3CM INCREMENTAL CRIB",
+            "traits": [
+              {
+                "label": "Passo/2-3cm",
+                "value": "**Suba só dois dedos por ciclo** mantendo equilíbrio do bloco."
+              },
+              {
+                "label": "Veto/Mãos",
+                "value": "**Nunca entre com dedos ou punhos** sob a sombra do concreto."
+              },
+              {
+                "label": "Cunha/Par",
+                "value": "**Encaixe duas cunhas opostas** mantendo contato plano paralelo."
+              }
+            ],
+            "fieldUse": "Subir escombros pesados centímetro a centímetro sem colapso"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Tire a Alavanca, Valide Apoio Bilateral Firme, Socorra Feridas e Retire a Vítima",
+      "description": "1. **Confira Estabilidade Total Sem a Alavanca**: Ao abrir vão livre para os ombros, remova a alavanca e confirme que **ambas as torres 2x2 seguram imóveis sem jogo**.\n2. **Contenha Sangue e Fraturas Antes de Puxar**: Aplique [Torniquete de Molinete](/protocol-32) em hemorragia grave e imobilize ossos com [Tala de Madeira](/protocol-18) evitando agravo na saída.\n3. **Deslize Reto Sem Bater Nas Pilhas e Sinalize**: Retire suave em linha reta, chame ajuda com [Apito 120 dB e Espelho](/protocol-27) e acompanhe sede/choque com [Soro Caseiro ORS](/protocol-24).",
+      "actionNote": "> Por que tirar completamente a viga alavanca antes de entrar no vão? Um cabo saliente funciona como tropeço capaz de deslocar toda a laje se alguém bater nele. Só com duas pilhas sozinhas firmes é seguro entrar.",
+      "svgFileName": "pr37-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // APOIO DUPLO AUTÔNOMO + RETIRADA SEGURA",
+        "Tirar alavanca; checar 2 torres firmes sem jogo",
+        "Cunhas opostas travadas bloqueiam todo escorregão",
+        "Estancar sangue e entalar antes de deslizar fora",
+        "[CHAVE] Só entrar após a madeira sozinha sustentar"
+      ],
+      "deepDive": {
+        "badge": "STATIC CRIB TRANSFER & EXTRACTION",
+        "title": "Estabilidade Estática Sem Alavanca e Alerta de Síndrome de Esmagamento",
+        "text": "Duas **torres simétricas 2x2** transferem 100% do peso para o chão com a alavanca fora de cena. Caso pernas ou tronco fiquem presos **acima de 2 horas**, vigie choque circulatório agudo assim que aliviar a pressão e transporte rápido.",
+        "fieldSpecs": [
+          {
+            "name": "Laje Pesada Elevada Com Firmeza em Duas Pilhas Simétricas 2x2 Sem Alavanca no Vão",
+            "scientificName": "Symmetrical Dual Timber Box Cribs Bearing Full Load Clear for Extraction",
+            "categoryTag": "Apoio Autônomo / Corredor Seguro",
+            "imageFileName": "id-safe-cribbed-extraction-void.jpg",
+            "hudCode": "FIG. TOOL-37D // MACRO OPTIC",
+            "hudStatus": "EXTRACTION VOID: CRIB LOCKED",
+            "traits": [
+              {
+                "label": "Livre/Barra",
+                "value": "**Retire a viga alavanca inteira** evitando esbarrões acidentais."
+              },
+              {
+                "label": "Socorro/Pré",
+                "value": "**Estanque sangue e imobilize fraturas** antes de deslizar vítima."
+              },
+              {
+                "label": "Alerta/2h+",
+                "value": "**Monitore choque se preso >2 h** logo após liberar o peso."
+              }
+            ],
+            "fieldUse": "Abrir corredor seguro livre de rebote para atendimento e resgate"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Entrar Sob Laje Segurada Só Pela Alavanca ou Usar Toras Redondas e Tijolos Ocos",
+    "description": "Jamais confie numa alavanca segurada na mão enquanto coloca braços ou corpo sob o concreto: qualquer escorregão derruba centenas de quilos em 0,1 segundo matando vítima e socorrista. Nunca empilhe toras nem tijolos furados porque rolam ou estouram sem aviso. Cubra vidros segundo [Zona Segura](/protocol-31) e hidrate/limpe ferimentos com [Soro ORS e Salino](/protocol-24).",
+    "consequence": "Queda brusca da laje por falha da alavanca ou calço causando esmagamento fatal duplo."
+  },
+  "faqs": [
+    {
+      "question": "E se eu estiver totalmente sozinho após o tremor sem ninguém para enfiar os blocos?",
+      "causeDiagnostic": "Forçar a alavanca enquanto tenta agachar sob a laje sozinho faz o cabo escapar e cair sobre você.",
+      "resolution": "Chame primeiro por socorro com [Apito 120 dB e Espelho Solar](/protocol-27). Se estiver realmente só em viga menor controlável, deixe os blocos preparados ao lado e empurre cunhas apenas com a ponta do sapato ou vara longa sem nunca colocar o corpo sob a carga."
+    },
+    {
+      "question": "Posso usar blocos de cimento vazados ou canos de ferro se faltarem caibros quadrados de madeira?",
+      "causeDiagnostic": "Canos metálicos rolam de lado facilmente e blocos furados esfarelam de golpe sob carga inclinada.",
+      "resolution": "Evite blocos ocos e canos redondos: o tijolo estoura sem rangido prévio e o cano escapa espirrado. Procure madeira maciça plana tirada de degraus, pernas quadradas de móveis, batentes ou vigotas grossas."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Sem Energia de Alavanca 4:1 e Torres 2x2 'Ergue 2-3 cm, Calça 2-3 cm'",
+    "badge": "TARGET OUTCOME // RESGATE GRADUAL 2-3 CM EM TORRE 2X2",
+    "description": "Sistema de resgate em colapsos sem eletricidade: inspeção aérea e gás, fulcro firme 4:1, torres quadradas cruzadas a 90 graus e calçamento gradual de 2-3 cm sem mãos sob carga até apoio estável autônomo.",
+    "svgFileName": "pr37-outcome.svg",
+    "svgLabels": [
+      "PR-37 COMPLETO // ALAVANCA E TORRE 2X2 EM DESABAMENTO",
+      "ETAPA 01: FULCRO E BARRA",
+      "Chão limpo + alavanca 4:1 perto",
+      "ETAPA 02: TORRE BASE 2X2",
+      "Caibros planos cruzados a 90 deg",
+      "ETAPA 03: ERGUE E CALÇA",
+      "Empurrar cunhas 2-3cm por fora",
+      "ETAPA 04: APOIO PRÓPRIO",
+      "Sem alavanca: socorrer e sair",
+      "[PRINCÍPIO] Calço gradual 2-3cm em grade 2x2 bloqueia quedas se a alavanca falhar"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Alguém preso sob concreto num terremoto e zero macaco hidráulico? NUNCA enfie a mão só com alavanca—veja a técnica 2x2 que salva vidas!",
+    "body": "Primeiro cheque o teto e cheiro de gás, varra o chão, apoie um bloco quadrado rente à borda e enfie a alavanca só 3 a 5 cm. Segundo, dos lados monte torres 2x2 cruzando caibros planos a 90 graus—jamais toras ou blocos furados! Terceiro, regra de ouro: erga apenas 2-3 cm, SEM meter dedos dentro empurre caibros e cunhas por fora com uma vara e solte devagar. Quarto, tire a alavanca inteira: só quando as duas torres firmes segurarem sozinhas aplique torniquete ou tala e puxe reto!"
+  },
+  "createdAt": "2026-11-21T02:46:35.405Z",
+  "contentHash": "80dbc76c9f37795f"
+}

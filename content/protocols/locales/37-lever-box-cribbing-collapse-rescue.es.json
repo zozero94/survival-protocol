@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-37",
+  "category": "TOOLS",
+  "title": "Cómo Levantar Escombros de Hormigón Sin Electricidad con Palanca de Madera y Apuntalamiento en Caja 2x2",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[RESCATE URBANO EN DERRUMBES CON PALANCA Y APUNTALAMIENTO EN CAJA SIN ENERGÍA]",
+  "summary": "Si hay contacto con bomberos o rescatistas y se dispone de separadores hidráulicos, cojines neumáticos o gatos hidráulicos comerciales, utilice primero ese equipo certificado por ser el medio más seguro y veloz. Sin embargo, tras terremotos graves o colapsos sin electricidad ni señal fuera de la [Zona Segura Interior](/protocol-31), dos rescatistas pueden elevar losas pesadas combinando una viga palanca alta con bloques cuadrados de madera apilados en jaula 2x2 ('Levantar 2-3 cm, calzar 2-3 cm'). Manteniendo siempre las manos fuera de la carga hasta que la madera soporte todo el peso, podrá atender hemorragias con un [Torniquete de Molinete](/protocol-32) y [Entablillado de Campo](/protocol-18), pedir ayuda con un [Silbato 120 dB y Espejo](/protocol-27) y extraer al herido sin riesgo.",
+  "timeRequired": "15-25 min rescate controlado (5 min chequeo y fulcro + 10-20 min calce gradual 2-3 cm)",
+  "successRate": "95% (sobre suelo limpio firme, madera cuadrada en caja 2x2 y cero manos bajo carga)",
+  "difficulty": "Intermedio (mínimo 2 personas recomendado; usa viga palanca, fulcro, 12-16 tacos cuadrados y cuñas)",
+  "outputPerHour": "Eleva y estabiliza vigas pesadas de hormigón sin energía ni hidráulica abriendo un túnel seguro de rescate",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "1 Viga Palanca Fuerte Sin Nudos (1.5-2 m) y 1 Bloque Cuadrado Sólido de Madera como Fulcro",
+      "desc": "Multiplica su peso 4 a 5 veces para alzar losas de pocos centímetros en pocos centímetros. Busque madera seca más gruesa que un antebrazo lejos de riesgo de caída cerca de su [Zona Segura Interior](/protocol-31)."
+    },
+    {
+      "id": "mat-02",
+      "name": "12-16 Tacos Cuadrados Planos de Madera (40-50 cm) para Apuntalamiento en Caja 2x2",
+      "desc": "Transfiere el peso del hormigón directo al piso firme mediante columnas cruzadas a 90 grados. Evite terminantemente troncos redondos o bloques huecos; use solo madera maciza de caras planas."
+    },
+    {
+      "id": "mat-03",
+      "name": "4-6 Cuñas de Madera Opuestas, Guantes Gruesos de Trabajo y 1 Palo Largo Empujador",
+      "desc": "Ajusta holguras pequeñas desde afuera sin arriesgar los dedos bajo la losa. Tenga listo equipo para [Torniquete de Molinete](/protocol-32) y [Entablillado con Ramas](/protocol-18) al liberar al atrapado."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Revise Peligros Aéreos y Gas, Limpie el Piso y Coloque Fulcro Cerca de la Losa",
+      "description": "1. **Verifique Techo Inestable y Olor a Gas**: Proteja al equipo revisando vigas colgantes ante réplicas y oliendo fugas de gas; ventile y evacúe antes que cualquier chispa cause explosión.\n2. **Asiente el Fulcro en Piso Barrido Firme**: Retire polvo y gravilla junto al borde de hormigón para evitar hundimientos y apoye un bloque cuadrado plano directo sobre firme sólido.\n3. **Meta la Punta Solo 3-5 cm Bajo el Borde**: Inserte apenas dos nudillos bajo la losa pegando el fulcro casi al hormigón, dejando largo brazo trasero para lograr **palanca 4:1 a 5:1**.",
+      "actionNote": "> ¿Por qué pegar el fulcro pegado al borde en lugar de alejarlo hacia atrás? Cada centímetro que aleja el apoyo reduce brutalmente la fuerza útil. Pegando el fulcro al hormigón, el peso normal de una persona levanta bloques pesadísimos.",
+      "svgFileName": "pr37-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // CHEQUEO + FULCRO FIRME Y PALANCA 4:1",
+        "Barrer polvo; apoyar bloque plano junto al borde",
+        "Meter punta solo 2 nudillos (3-5cm) bajo la losa",
+        "Brazo largo 4:1 multiplica su peso con control",
+        "[CLAVE] Fulcro próximo alza hormigón con seguridad"
+      ],
+      "deepDive": {
+        "badge": "FULCRUM POSITION & 4:1 LEVERAGE",
+        "title": "Maximización de Ventaja Mecánica 4:1 Sobre Suelo Sólido Limpio",
+        "text": "Colocar el **fulcro pegado a la arista del hormigón** multiplica **4 a 5 veces la fuerza de izado**. Despejar arena o escombros sueltos bajo el apoyo impide asentamientos bruscos que desplacen la losa lateralmente.",
+        "fieldSpecs": [
+          {
+            "name": "Palanca de Madera Fuerte Apoyada en Bloque Cuadrado Junto a Losa de Hormigón",
+            "scientificName": "Firm-Base Square Timber Fulcrum & 4:1 Long Lever Arm Setup",
+            "categoryTag": "Fulcro Cercano / Ventaja 4:1",
+            "imageFileName": "id-collapsed-concrete-crib-site-prep.jpg",
+            "hudCode": "FIG. TOOL-37A // MACRO OPTIC",
+            "hudStatus": "LEVER SETUP: 4:1 FIRM FULCRUM",
+            "traits": [
+              {
+                "label": "Riesgo/Gas",
+                "value": "**Inspeccione techo y olor a gas** antes de tocar la palanca."
+              },
+              {
+                "label": "Piso/Firme",
+                "value": "**Barra escombro suelto** para que el fulcro pise concreto duro."
+              },
+              {
+                "label": "Brazo/4:1",
+                "value": "**Pegue el fulcro al borde** logrando empuje enorme sin esfuerzo."
+              }
+            ],
+            "fieldUse": "Establecer apalancamiento antideslizante antes del izado paso a paso"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Arme Torres en Caja 2x2 de Madera Cuadrada Cruzada a 90 Grados a Ambos Lados",
+      "description": "1. **Alinee Dos Tacos Planos Paralelos**: Antes de bajar la palanca, coloque dos bloques cuadrados de 40-50 cm separados medio ancho de hombro en piso firme a cada costado.\n2. **Cruce Capas Alternas a 90 Grados (Rejilla #)**: Coloque el siguiente par perpendicular dejando **sobresalir dos dedos en cada esquina** para impedir que resbalen ante inclinaciones.\n3. **Limite la Altura a Máximo 3 Veces la Base**: Evite vuelcos manteniendo **altura <= 3 veces el ancho basal**, subiendo la torre hasta casi tocar la losa antes de levantar.",
+      "actionNote": "> ¿Por qué prohibir troncos redondos y ladrillos huecos en vez de madera cuadrada? Los rollizos ruedan de lado al instante y los bloques huecos explotan sin previo aviso; la madera maciza cruje audiblemente antes de ceder.",
+      "svgFileName": "pr37-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // TORRE EN CAJA 2X2 CRUZADA A 90 GRADOS",
+        "Apilar pares planos cruzando a 90 grados cada capa",
+        "Sobresalir 2 dedos en esquina y altura <= 3x base",
+        "Rollizos y huecos (X) prohibidos: taco plano (V)",
+        "[CLAVE] Cuatro cruces planos reparten el peso igual"
+      ],
+      "deepDive": {
+        "badge": "2X2 BOX CRIBBING GEOMETRY",
+        "title": "Distribución en 4 Puntos de Contacto y Aviso Acústico de Madera Sólida",
+        "text": "Alternar **pares planos a 90 grados** crea **cuatro apoyos rectangulares estables** por nivel que anulan balanceos laterales. Los vuelos en las esquinas aseguran agarre completo bajo ligera pendiente.",
+        "fieldSpecs": [
+          {
+            "name": "Torre en Caja 2x2 de Tacos Cuadrados de Madera Cruzados Junto a Viga Colapsada",
+            "scientificName": "Four-Point Overlapping 2x2 Timber Box Cribbing Foundation",
+            "categoryTag": "Caja 2x2 90° / 4 Apoyos Planos",
+            "imageFileName": "id-box-cribbing-well-stack-prep.jpg",
+            "hudCode": "FIG. TOOL-37B // MACRO OPTIC",
+            "hudStatus": "BOX CRIB: 2X2 SQUARE INTERLOCK",
+            "traits": [
+              {
+                "label": "Forma/Plana",
+                "value": "**Use solo tacos cuadrados macizos** jamás troncos ni bloques huecos."
+              },
+              {
+                "label": "Borde/Vuelo",
+                "value": "**Deje sobresalir dos dedos** en cada extremo del cruce 90 grados."
+              },
+              {
+                "label": "Alto/Máx3x",
+                "value": "**No supere 3 veces el ancho** manteniendo base ancha inamovible."
+              }
+            ],
+            "fieldUse": "Construir columnas de apoyo seguras junto a víctimas atrapadas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Repita 'Alzar 2-3 cm, Calzar 2-3 cm' sin Meter Manos y Trabe Con Cuñas Opuestas",
+      "description": "1. **Rescatista 1 Alza Solo Dos Dedos (2-3 cm)**: Presione suave hasta elevar el borde **apenas 2-3 cm cada vez**, evitando giros laterales peligrosos.\n2. **Rescatista 2 Empuja Madera o Cuñas Desde Afuera**: Sin meter jamás mano ni muñeca bajo la losa, empuje **por el extremo exterior o con un palo largo** un taco nuevo o par de cuñas enfrentadas.\n3. **Suelte Despacio y Verifique Apoyo Real**: Descargue peso poco a poco comprobando **cero bamboleo ni crujidos anormales** antes del siguiente alce de 2-3 cm.",
+      "actionNote": "> ¿Por qué avanzar de 2 a 3 cm por vez en lugar de alzar 15 cm de un tirón? Subir mucho de golpe ladea la losa haciéndola patinar fuera del fulcro. Calzar cada 2-3 cm limita cualquier caída accidental a menos de 2 cm salvando vidas si parte la palanca.",
+      "svgFileName": "pr37-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 'ALZAR 2-3CM, CALZAR 2-3CM' CON CUÑAS",
+        "Rescatista 1: Elevar solo dos dedos (2-3cm) por vez",
+        "Auxiliar 2: Empujar taco y cuñas desde fuera",
+        "Mano bajo losa (X) prohibida: probar asiento real",
+        "[CLAVE] Calce cada 2-3cm frena caídas si rompe viga"
+      ],
+      "deepDive": {
+        "badge": "LIFT AN INCH CRIB AN INCH",
+        "title": "Seguimiento Incremental de 2-3 cm y Bloqueo por Fricción con Doble Cuña",
+        "text": "La regla internacional **Lift an Inch, Crib an Inch** limita la caída potencial a 2-3 cm en todo momento. Dos **cuñas opuestas punta contra punta** rellenan huecos finos mantendo contacto plano paralelo sin deslizarse.",
+        "fieldSpecs": [
+          {
+            "name": "Manos con Guantes Empujando Cuñas Desde Afuera en Torre 2x2 Bajo Losa Levantada",
+            "scientificName": "Incremental 2-3cm Lever Lift & Opposing Wooden Wedge Insertion",
+            "categoryTag": "Ciclo 2-3 cm / Empuje Exterior",
+            "imageFileName": "id-lever-one-inch-lift-crib-chase.jpg",
+            "hudCode": "FIG. TOOL-37C // MACRO OPTIC",
+            "hudStatus": "LIFT LOCK: 2-3CM INCREMENTAL CRIB",
+            "traits": [
+              {
+                "label": "Paso/2-3cm",
+                "value": "**Suba solo dos dedos cada ciclo** evitando inclinaciones bruscas."
+              },
+              {
+                "label": "Veto/Manos",
+                "value": "**Jamás meta dedos ni brazos** dentro de la sombra del hormigón."
+              },
+              {
+                "label": "Cuñas/Par",
+                "value": "**Enfrente dos cuñas de punta a punta** manteniendo carga plana."
+              }
+            ],
+            "fieldUse": "Ganar altura de escape paso a paso con riesgo de desplome casi nulo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Retire la Palanca, Confirme Apoyo Firme Bilateral, Estabilice Heridas y Extraiga",
+      "description": "1. **Verifique Estabilidad Sin Palanca Puesta**: Al lograr paso libre de hombros, saque la viga palanca y confirme que **ambas torres 2x2 sostienen firmes con cero vaivén**.\n2. **Controle Hemorragia y Fracturas Antes de Mover**: Coloque un [Torniquete de Molinete](/protocol-32) si hay sangrado grave y fije huesos rotos con [Entablillado de Campo](/protocol-18) para evitar daño al arrastrar.\n3. **Deslice Recto Sin Golpear Columnas y Señalice**: Extraiga suave en línea recta, avise al exterior con [Silbato 120 dB y Espejo](/protocol-27) y vigile shock rehidratando con [Suero ORS](/protocol-24) si procede.",
+      "actionNote": "> ¿Por qué retirar por completo la viga palanca antes de rescatar al herido? Un mango saliente funciona como palanca accidental si alguien tropieza con él en el túnel. Solo cuando las dos columnas solas aguantan estáticas el bloque es seguro entrar.",
+      "svgFileName": "pr37-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SOPORTE BILATERAL SOLO + EXTRACCIÓN SEGURA",
+        "Sacar palanca; validar 2 torres firmes sin vaivén",
+        "Cuñas opuestas trabadas anulan deslizamientos",
+        "Detener sangrado y entablillar antes de deslizar",
+        "[CLAVE] Entrar solo cuando madera sola soporta todo"
+      ],
+      "deepDive": {
+        "badge": "STATIC CRIB TRANSFER & EXTRACTION",
+        "title": "Transferencia Estática Independiente y Vigilancia de Síndrome de Aplastamiento",
+        "text": "Con **dos torres 2x2 simétricas** cargando todo el hormigón y la palanca apartada, desaparece el peligro de rebote. Si las extremidades estuvieron atrapadas **más de 2 horas**, vigile shock inmediato al descomprimir y evacúe urgente a hospital.",
+        "fieldSpecs": [
+          {
+            "name": "Losa Pesada Elevada Con Seguridad Sobre Dos Columnas de Madera Lista Para Rescate",
+            "scientificName": "Symmetrical Dual Timber Box Cribs Bearing Full Load Clear for Extraction",
+            "categoryTag": "Soporte Autónomo / Túnel Libre",
+            "imageFileName": "id-safe-cribbed-extraction-void.jpg",
+            "hudCode": "FIG. TOOL-37D // MACRO OPTIC",
+            "hudStatus": "EXTRACTION VOID: CRIB LOCKED",
+            "traits": [
+              {
+                "label": "Viga/Fuera",
+                "value": "**Retire por completo la palanca** antes de acercar al herido."
+              },
+              {
+                "label": "Auxilio/Ya",
+                "value": "**Aplique torniquete y tablillas antes** de deslizar fuera al atrapado."
+              },
+              {
+                "label": "Alerta/2h+",
+                "value": "**Vigile shock tras >2 h atrapado** apenas se libere presión."
+              }
+            ],
+            "fieldUse": "Garantizar corredor de rescate estático libre de rebotes o deslizamientos"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Meter Manos Bajo Losa Sujeta Solo con Palanca o Apilar Troncos Redondos y Ladrillos Huecos",
+    "description": "Nunca sostenga hormigón únicamente con una palanca manual mientras mete manos o cuerpo debajo: un fallo mínimo o quiebre deja caer cientos de kilos en décimas matando a víctima y rescatista. Jamás use rollizos ni bloques huecos porque ruedan o estallan sin aviso. Cubra vidrios según [Zona Segura](/protocol-31) y atienda cortes o deshidratación con [Suero ORS](/protocol-24).",
+    "consequence": "Colapso repentino por fallo de palanca o bloque con aplastamiento mortal doble."
+  },
+  "faqs": [
+    {
+      "question": "¿Qué hago si estoy completamente solo tras el sismo y no hay ayudante que empuje la madera?",
+      "causeDiagnostic": "Sujetar la palanca y agacharse a meter tacos debajo solo suele soltar el mango y provocar aplastamiento.",
+      "resolution": "Primero pida auxilio con un [Silbato 120 dB y Espejo Solar](/protocol-27). Si de verdad no hay nadie y la carga es manejable, pre-ubique los bloques pegados fuera y empuje cuñas solo con la punta del zapato o un palo largo manteniendo control total sin acercar el cuerpo jamás."
+    },
+    {
+      "question": "¿Sirven bloques grises huecos de cemento o tubos metálicos si faltan tacos cuadrados de madera?",
+      "causeDiagnostic": "Los tubos ruedan de costado y el hormigón hueco pierde toda resistencia bajo presión angular estallando súbitamente.",
+      "resolution": "Evite bloques huecos y tubos redondos: los ladrillos colapsan sin crujido previo y los tubos salen disparados. Busque madera maciza plana rescatando peldaños, patas cuadradas de muebles, vigas de puerta o tablones gruesos."
+    }
+  ],
+  "outcome": {
+    "title": "Sistema Sin Energía de Palanca 4:1 + Torres en Caja 2x2 'Alzar 2-3 cm, Calzar 2-3 cm'",
+    "badge": "TARGET OUTCOME // RESCATE GRADUAL 2-3 CM EN CAJA 2X2",
+    "description": "Método de rescate en derrumbes sin electricidad ni gatos: revisión aérea y de gas, apoyo firme 4:1, torres cuadradas 2x2 a 90 grados y seguimiento estricto de 2-3 cm sin meter manos hasta lograr soporte autónomo limpio.",
+    "svgFileName": "pr37-outcome.svg",
+    "svgLabels": [
+      "PR-37 COMPLETO // PALANCA Y CAJA 2X2 EN DERRUMBES",
+      "FASE 01: FULCRO Y PALANCA",
+      "Piso limpio + brazo 4:1 cercano",
+      "FASE 02: BASE CAJA 2X2",
+      "Tacos planos cruzados a 90 deg",
+      "FASE 03: ALZAR Y CALZAR",
+      "Empujar cuñas 2-3cm desde fuera",
+      "FASE 04: SOPORTE PROPIO",
+      "Sin palanca: auxiliar y extraer",
+      "[PRINCIPIO] Calce gradual 2-3cm en caja 2x2 frena toda caída ante fallo de palanca"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Atrapado alguien bajo escombros tras un terremoto y sin gatos hidráulicos? NUNCA sujetes con palanca sola—¡aprende el apuntalamiento 2x2 que salva vidas!",
+    "body": "Primero revisa techo y olor a gas, barre el piso, pon un taco firme pegado a la losa y mete la palanca solo 3 a 5 cm. Segundo, a los lados arma torres cuadradas 2x2 cruzando madera plana a 90 grados—¡nunca troncos ni bloques huecos! Tercero, la regla vital: levanta solo 2-3 cm, SIN meter manos debajo empuja tacos y cuñas por fuera con un palo y suelta lento. Cuarto, retira la palanca por completo: solo cuando ambas torres aguantan solas aplicas torniquete o tablilla y sacas recto al herido!"
+  },
+  "createdAt": "2026-11-21T02:46:35.405Z",
+  "contentHash": "80dbc76c9f37795f"
+}
