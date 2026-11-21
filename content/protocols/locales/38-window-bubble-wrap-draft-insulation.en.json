@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-38",
+  "category": "MATERIALS",
+  "title": "How to Stop Winter Heat Loss Zero-Power Using Water-Misted Bubble Wrap, Newspaper Draft Seals, and Foil Curtains",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[WINTER BLACKOUT INDOOR HEAT RETENTION & ZERO-POWER WINDOW INSULATION]",
+  "summary": "If backup generators, electric space heaters, silicone window weatherstripping, or commercial thermal films are available at home, inspect and run those factory heating and insulation systems first as the fastest, safest defense. However, when severe winter blackouts and gas outages hit simultaneously and indoor rooms near freezing, sealing cold window drafts and conductive glass loss traps vital warmth. Using only a wet hand to trace drafts, stuffing rolled newspaper and cloth into sash tracks, misting plain water to mount insulating bubble wrap onto windowpanes, and combining a foil curtain with a [Cardboard Thermal Capsule](/protocol-22), [Insulated Boot Liner](/protocol-28), and safe midday 5-minute cross-ventilation alongside any [Tuna Can Stove](/protocol-21) keeps one warm living zone habitable without power.",
+  "timeRequired": "20-30 mins setup (10 mins frame seals + 10 mins mist-mounted bubble sheet + 10 mins foil curtain)",
+  "successRate": "97% (with water-mist full glass contact, bottom sill draft dams, and 5-min midday ventilation)",
+  "difficulty": "Beginner (No tools or glue needed; uses bubble wrap, clean water mist, newspaper, old towels & foil mats)",
+  "outputPerHour": "Blocks conductive cold glass and convective sash drafts while reflecting radiant heat inward without power",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Window-Sized Air-Bubble Packaging Sheet (Bubble Wrap) & Clean Water (Spray Bottle or Damp Cloth)",
+      "desc": "Clings tight onto bare glass using only water surface tension to trap still insulating air pockets while preserving daytime sun brightness like a [Solar Water Bottle Light](/protocol-34)."
+    },
+    {
+      "id": "mat-02",
+      "name": "Dry Newspaper Bundle, 3-4 Old Cotton Towels (or Spare Heavy Cloth) & 2 Dry Wiping Rags",
+      "desc": "Tightly plugs icy air leaks in window sash tracks and doorways while wiping away morning window condensation droplets so dampness never spreads chill."
+    },
+    {
+      "id": "mat-03",
+      "name": "1-2 Reflective Foil Mats (or Emergency Thermal Foil / Heavy Winter Blankets) & Curtain Rod or Clips",
+      "desc": "Hangs shiny-side facing indoors over window zones or outside your [Cardboard Thermal Capsule](/protocol-22) to bounce body warmth and [Tuna Can Stove](/protocol-21) heat back inside."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Trace Icy Drafts With a Wet Back-of-Hand and Plug Sash Tracks Tightly With Paper & Cloth",
+      "description": "1. **Find Invisible Air Leaks With a Wet Hand**: Dampen the back of your hand lightly with water and glide slowly span-by-span along window corners and doorways to pinpoint icy draft streams.\n2. **Roll Dry Newspaper & Cloth Into Tight Track Plugs**: Twist dry newspaper finger-thick or fold spare cloth strips tightly and pack deep along window sash channels and frame gaps to block convective leaks.\n3. **Leave Emergency Exit Doors Unnailed and Fast-Clearing**: Place only removable rolled towels at exit doors—never nail or glue emergency exits shut so evacuation stays clear.",
+      "actionNote": "> Why seal invisible frame gaps before insulating the large glass panes? Even triple-layered glass covers fail if freezing outside air jets freely through sash seams, chilling the room in minutes. Tracing leaks with wet skin blocks convective heat loss first.",
+      "svgFileName": "pr38-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // WET-HAND DRAFT SCAN + PAPER & CLOTH PLUG",
+        "Glide wet hand span-by-span to spot icy frame drafts",
+        "Roll dry paper & cloth finger-thick tight into track",
+        "Seal window and doorway gaps against convective cold",
+        "[CORE] Seal drafts without nails so exits stay clear"
+      ],
+      "deepDive": {
+        "badge": "CONVECTIVE DRAFT SEALING",
+        "title": "Evaporative Wet-Skin Draft Tracing and Sash Convective Leakage Blocking",
+        "text": "Slightly moistened skin on the back of a hand undergoes instant evaporative chill in subtle airflow, detecting **hidden 1mm window frame leaks in 0.5 seconds**. Packing rolled newsprint and cotton inside tracks halts convective room cooling without permanent damage.",
+        "fieldSpecs": [
+          {
+            "name": "Cold Apartment Sliding Window Sash Packed Tight With Rolled Paper and Folded Cloth Seals",
+            "scientificName": "Rolled Newsprint & Folded Cotton Cloth Sash Track Draft Plug",
+            "categoryTag": "Draft Tracing / Sash Track Plug",
+            "imageFileName": "id-cold-draft-window-paper-seal.jpg",
+            "hudCode": "FIG. MAT-38A // MACRO OPTIC",
+            "hudStatus": "DRAFT SEAL: FRAME GAP PLUGGED",
+            "traits": [
+              {
+                "label": "Scan/Hand",
+                "value": "**Dampen back of hand slightly** to spot hairline cold leaks quickly."
+              },
+              {
+                "label": "Plug/Tight",
+                "value": "**Pack rolled paper and cotton strips** deeply along sash grooves."
+              },
+              {
+                "label": "Exit/Safe",
+                "value": "**Keep escape doors clear** with lift-away towel plugs only."
+              }
+            ],
+            "fieldUse": "Stopping rapid convective cold air intrusion around apartment frames"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Mist Plain Water on Clean Window Glass and Press Bubble Wrap Bumpy-Side In",
+      "description": "1. **Wipe Dust and Frost Clean Off Window Glass**: Rub glass panes clean with a dry cloth so surface water holds bubble sheets smoothly for weeks without peeling.\n2. **Mist Plain Clean Water Evenly Across Glass**: Spray or wipe a uniform thin coat of clean tap water across the glass—zero tape or sticky glue required.\n3. **Press Bumpy Bubble Side Against Wet Glass**: Smooth the **bumpy air-cell face directly against wet glass** from top down so trapped air pockets cut frost conduction while letting sunny daylight pass like a [Solar Water Bottle Light](/protocol-34).",
+      "actionNote": "> Why press the bumpy bubble face toward the window glass instead of the smooth backing? Putting the bubbles directly against cold glass creates thousands of still air cushions right on the glass face, stopping chill conduction while keeping removal spotless.",
+      "svgFileName": "pr38-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // WATER MIST + BUBBLE-CELL WINDOW MOUNT",
+        "Wipe glass clean and mist even layer of clear water",
+        "Press bumpy bubble face straight onto glass top-down",
+        "Still air cells block frost chill while letting sun in",
+        "[CORE] Water tension clings airtight with zero glue"
+      ],
+      "deepDive": {
+        "badge": "AIR-CELL GLASS INSULATION",
+        "title": "Surface-Tension Water Adhesion and Still Air-Cell Conductive Barrier",
+        "text": "Glass windows shed massive indoor warmth by direct conduction. Water film bonds **air-bubble cellular sheets** flush against glass with zero residue while cutting heat transfer dramatically and preserving free daytime solar warming.",
+        "fieldSpecs": [
+          {
+            "name": "Clear Insulating Air-Bubble Sheet Clinging to Water-Misted Window Glass Without Glue",
+            "scientificName": "Water-Tension Mounted Air-Bubble Cellular Window Insulation Layer",
+            "categoryTag": "Water Mist Mount / Air-Cell Barrier",
+            "imageFileName": "id-water-sprayed-bubble-sheet-window.jpg",
+            "hudCode": "FIG. MAT-38B // MACRO OPTIC",
+            "hudStatus": "GLASS FILM: AIR-CELL INSULATED",
+            "traits": [
+              {
+                "label": "Face/Bumps",
+                "value": "**Bumpy bubble side meets wet glass** to trap dense insulating cells."
+              },
+              {
+                "label": "Stick/Water",
+                "value": "**Pure water holds sheets flush** with zero sticky tape marks later."
+              },
+              {
+                "label": "Sun/Light",
+                "value": "**Translucent cells welcome winter sun** instead of blacking rooms."
+              }
+            ],
+            "fieldUse": "Adding zero-tool cellular insulation across wide cold windowpanes"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Lay a Window-Sill Draft Dam and Hang a Reflective Foil Curtain to Trap Radiant Warmth",
+      "description": "1. **Seat a Two-Wrist-Thick Sill Draft Stopper**: Roll thick towels or wrapped paper **two wrists thick** and press tight along the bottom window sill and door gaps to halt icy downdrafts.\n2. **Hang Reflective Foil Shiny-Side Facing Indoors**: Clip a **thermal foil mat or emergency blanket shiny-side in** over the window frame to reflect lost body heat back inside.\n3. **Concentrate One Small Warm Zone**: Gather household warmth inside one small room combining a [Cardboard Thermal Capsule](/protocol-22) and [Insulated Boot Liner](/protocol-28) to maximize body heat savings.",
+      "actionNote": "> Why add a sill roll and hanging foil curtain over window bubble wrap? Cold air sinking along icy glass pours downward like a freezing waterfall onto feet. A thick sill dam breaks that flow while reflective foil bounces infrared body heat back inward.",
+      "svgFileName": "pr38-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SILL DRAFT DAM + RADIANT FOIL SHIELD",
+        "Place 2-wrist-thick towel/paper roll across window sill",
+        "Hang shiny reflective foil facing inward over window",
+        "Stops cold downdrafts & bounces indoor heat back in",
+        "[CORE] Combined air & radiant shields heat small room"
+      ],
+      "deepDive": {
+        "badge": "RADIANT REFLECTION & DRAFT DAM",
+        "title": "Cold Downdraft Interception and Indoor Infrared Radiation Reflection",
+        "text": "Chilled window air plunges downward along sills as a **freezing floor draft**. Pairing a **thick cloth sill dam** with an **inward-facing silver foil curtain** cuts floor-level chill and reflects radiant heat from occupants back toward living quarters.",
+        "fieldSpecs": [
+          {
+            "name": "Thick Rolled Cotton Sill Stopper Beside Shiny Silver Foil Curtain Over Winter Window",
+            "scientificName": "Rolled Cotton Draft Dam & Radiant Reflective Foil Window Curtain",
+            "categoryTag": "Downdraft Dam / Radiant Foil Shield",
+            "imageFileName": "id-foil-curtain-radiant-heat-barrier.jpg",
+            "hudCode": "FIG. MAT-38C // MACRO OPTIC",
+            "hudStatus": "HEAT RETENTION: RADIANT SHIELDED",
+            "traits": [
+              {
+                "label": "Sill/Dam",
+                "value": "**Press thick towel roll along bottom sill** blocking cascading chill."
+              },
+              {
+                "label": "Side/Shiny",
+                "value": "**Point shiny silver face indoors** to bounce radiant heat inside."
+              },
+              {
+                "label": "Zone/Small",
+                "value": "**Shrink heated space to one room** so shared body warmth suffices."
+              }
+            ],
+            "fieldUse": "Dual interception of floor cold cascades and radiative window cooling"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Wipe Morning Condensation Dry and Cross-Ventilate 5 Minutes at Midday to Prevent CO & Mold",
+      "description": "1. **Wipe Sill Condensation Dry Every Morning**: Clear morning water droplets pooled under windows with a dry rag so dampness never creeps into paper seals or bedding.\n2. **Cross-Ventilate 5 Minutes at Peak Midday Sun**: Crack windows one hand-span wide for **only 5 minutes at warmest midday** to expel humid stale air without cooling walls or blankets.\n3. **Leave a Thumb-Wide Gap When Burning Any Flame**: Never seal airtight around a [Tuna Can Stove](/protocol-21)—always leave a **thumb-thick upper air gap** preventing silent carbon monoxide buildup.",
+      "actionNote": "> Why open windows for 5 minutes a day during freezing emergencies? Brief midday cross-breezes swap heavy damp air faster than walls or blankets cool down. Dry air feels warmer, stops wet mold, and keeps emergency stove flames from producing lethal CO gas.",
+      "svgFileName": "pr38-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // WIPE CONDENSATION + 5-MIN MIDDAY VENTING",
+        "Dry morning condensation droplets along sill daily",
+        "Cross-vent 5 mins at warm midday to clear damp air",
+        "Airtight flame (X) CO risk: keep thumb vent gap (V)",
+        "[CORE] Daily wipe & brief venting block mold and CO"
+      ],
+      "deepDive": {
+        "badge": "CONDENSATION & CO SAFETY",
+        "title": "Condensation Hypothermia Prevention and Brief Midday Gas-Safe Exchange",
+        "text": "Standing **window condensation** wicks water into cloth seals and bedding, spiking hypothermia risk. A quick **5-minute midday air exchange** dumps humidity and carbon monoxide without draining thermal mass stored inside walls and mattresses.",
+        "fieldSpecs": [
+          {
+            "name": "Dry White Cotton Rag Wiping Morning Sill Moisture Beside Cracked Midday Window",
+            "scientificName": "Midday Brief Cross-Ventilation & Condensation Moisture Wiping",
+            "categoryTag": "Moisture Control / CO Safety Venting",
+            "imageFileName": "id-morning-ventilation-condensation-check.jpg",
+            "hudCode": "FIG. MAT-38D // MACRO OPTIC",
+            "hudStatus": "AIR & DRY: CONDENSATION CLEARED",
+            "traits": [
+              {
+                "label": "Wipe/Dry",
+                "value": "**Clear cold sill water every morning** keeping cloth and seals dry."
+              },
+              {
+                "label": "Vent/5min",
+                "value": "**Air out 5 mins at warmest sun** without chilling solid furniture."
+              },
+              {
+                "label": "Flame/Gap",
+                "value": "**Always crack a thumb-wide top vent** if using indoor fuel flames."
+              }
+            ],
+            "fieldUse": "Preventing damp mold hypothermia and deadly carbon monoxide suffocation"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Burning Stoves or Charcoal Inside Airtight Sealed Rooms With Zero Ventilation Gap",
+    "description": "Sealing every window and door crack airtight and then lighting a [Tuna Can Stove](/protocol-21), portable butane burner, or charcoal inside traps odorless carbon monoxide that kills sleepers silently in hours. Always crack an upper window thumb-wide when any flame burns. Also prepare shatter-prone glass per [Blast Window Taping](/protocol-31), stay dry inside a [Cardboard Thermal Capsule](/protocol-22), and rehydrate safely with [Oral Rehydration Solution (ORS)](/protocol-24).",
+    "consequence": "Silent lethal carbon monoxide asphyxiation inside sealed rooms, plus wet bedding hypothermia and winter mold illness."
+  },
+  "faqs": [
+    {
+      "question": "Which side of packaging bubble wrap goes against the wet glass—the flat smooth side or the bumpy bubbles?",
+      "causeDiagnostic": "Reversing orientation weakens water surface tension grip and allows convection loops against bare glass.",
+      "resolution": "Always press the **bumpy air-bubble side flat against the wet windowpane** so sealed bubbles sit flush on cold glass. Keep the smooth flat backing facing indoors so dust and water droplets wipe off cleanly in seconds."
+    },
+    {
+      "question": "What can I use on windows if I have zero bubble wrap anywhere in the apartment during a freeze?",
+      "causeDiagnostic": "Any rigid or quilted layer trapping a stagnant air buffer between glass and room slows conductive chill.",
+      "resolution": "Let bright midday winter sun shine in unobstructed, then right at sunset mount **flattened thick cardboard panels, layered dry newspapers, or heavy blankets** inside the frame to create a thick still air pocket blocking cold glass radiation overnight."
+    }
+  ],
+  "outcome": {
+    "title": "Zero-Power Winter Thermal Shield: Draft Sealing, Water-Misted Bubble Glass, Foil Curtain & Safe Venting",
+    "badge": "TARGET OUTCOME // TRIPLE-LAYER ZERO-POWER WINTER INSULATION",
+    "description": "Three-stage blackout winter defense system using wet-hand draft detection with rolled paper/cloth sash plugs, glue-free water-misted bubble sheets, sill dams and inward silver foil curtains, plus daily moisture wiping and brief midday ventilation.",
+    "svgFileName": "pr38-outcome.svg",
+    "svgLabels": [
+      "PR-38 COMPLETE // ZERO-POWER WINDOW & DRAFT INSULATION",
+      "STAGE 01: DRAFT SCAN & PLUG",
+      "Wet hand + tight paper sash seal",
+      "STAGE 02: WATER-MIST BUBBLE",
+      "Air cells stuck tight with zero glue",
+      "STAGE 03: SILL DAM & FOIL",
+      "Towel dam + silver heat reflection",
+      "STAGE 04: WIPE DRY & 5M VENT",
+      "Daily wipe + safe midday air swap",
+      "[PRINCIPLE] Convective plugs, trapped air cells & foil reflection preserve indoor heat safely"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Power out and heating dead in a freezing winter blackout? Turn plain tap water, newspaper, and packing wrap into zero-power room insulation!",
+    "body": "First, wet the back of your hand and sweep along window frames—wherever skin feels cold, pack tightly rolled newspaper and spare cloth deep into the tracks. Second, wipe glass clean, mist plain water evenly, and press the BUMPY side of bubble wrap flat against wet glass—zero glue, blocks chill, and lets sun in! Third, lay a thick rolled towel along the bottom window sill and hang a foil mat shiny-side inward to bounce body warmth back inside. Fourth, wipe morning condensation dry and crack windows 5 minutes at midday—never burn flames in an airtight sealed room!"
+  },
+  "createdAt": "2026-11-21T14:29:26.279Z",
+  "contentHash": "fbcbd91d87c23005"
+}

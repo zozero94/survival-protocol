@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-38",
+  "category": "MATERIALS",
+  "title": "Como Evitar Perda de Calor no Frio Sem Energia Usando Água, Plástico-Bolha, Jornal e Cortina Prateada",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[ISOLAMENTO TÉRMICO RESIDENCIAL E BLOQUEIO DE FRESTAS SEM ENERGIA]",
+  "summary": "Se sua residência possui gerador, aquecedores elétricos, veda-portas de silicone ou películas térmicas comerciais, use e confira primeiro esses equipamentos de fábrica por serem mais rápidos e seguros. Porém, quando apagão e corte de gás no inverno fazem a sala quase congelar, barrar frestas e vidro gelado retém calor corporal vital. Rastreando correntes com as costas da mão molhada, vedando trilhos com jornal e pano, aplicando plástico-bolha só com água pulverizada e somando cortina prateada à [Cápsula Térmica de Papelão](/protocol-22), [Palmilha Isolante](/protocol-28) e ventilação breve ao meio-dia usando [Fogareiro de Lata](/protocol-21), você mantém um quarto seguro sem energia.",
+  "timeRequired": "20-30 min instalação (10 min frestas + 10 min plástico-bolha com água + 10 min cortina térmica)",
+  "successRate": "97% (com bolhas firmes na água, rolo no peitoril e ventilação de 5 min ao meio-dia)",
+  "difficulty": "Iniciante (sem ferramentas nem cola; só plástico-bolha, água limpa, jornal, toalhas e manta prateada)",
+  "outputPerHour": "Bloqueia frio do vidro e vento das frestas refletindo o calor interno sem gastar energia",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Plástico-Bolha (Embalagem) Tamanho da Janela e Água Limpa (Borrifador ou Pano Úmido)",
+      "desc": "Cola direto no vidro apenas pela tensão da água prendendo bolsões de ar isolantes sem cola, mantendo claridade solar como na [Claraboia Solar](/protocol-34)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Maço de Jornal Seco, 3-4 Toalhas ou Panos Grossos Velhos e 2 Panos Secos de Limpeza",
+      "desc": "Entope frestas geladas de trilhos de janela e batentes de porta além de secar o suor da condensação matinal evitando umidade fria."
+    },
+    {
+      "id": "mat-03",
+      "name": "1-2 Mantas Térmicas Prateadas (ou Colchonete Laminado / Cobertor Grosso) e Pregadores",
+      "desc": "Pendurada com lado brilhante voltado para dentro ante janelas ou fora da [Cápsula Térmica de Papelão](/protocol-22), devolvendo calor do corpo e do [Fogareiro de Lata](/protocol-21)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Passo 1: Ache Correntes Geladas Com a Mão Molhada e Entopa Trilhos Com Jornal e Pano",
+      "description": "1. **Localize Vazamentos Invisíveis Com a Mão Úmida**: Para não perder calor por furos ocultos, molhe leve as costas da mão e passe devagar palmo a palmo pelos cantos sentindo vento frio.\n2. **Enrole Jornal Seco e Pano Firme Nos Trilhos**: Para travar convecção fria, torça jornal grosso como um dedo ou dobre tiras de pano enfiando bem fundo nas canaletas.\n3. **Nunca Pregue Nem Cole Portas de Fuga**: Visando saída livre em emergência, ponha só rolos removíveis de toalha nas portas sem jamais pregar ou colar.",
+      "actionNote": "> Por que vedar primeiro pequenas frestas do caixilho antes de cobrir os vidros? Mesmo vidros muito isolados não retêm calor se vento gelado vaza livre pelos trilhos esfriando tudo em minutos. A mão molhada detecta essas fugas na hora.",
+      "svgFileName": "pr38-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // MÃO MOLHADA + VEDAÇÃO COM JORNAL E PANO",
+        "Passar mão molhada palmo a palmo achando vento frio",
+        "Enrolar jornal e pano grosso socando no trilho",
+        "Bloquear ar frio entrando em janela e batente",
+        "[CHAVE] Veda sem pregos mantendo saída livre"
+      ],
+      "deepDive": {
+        "badge": "CONVECTIVE DRAFT SEALING",
+        "title": "Detecção por Resfriamento Evaporativo na Pele e Vedação de Trilhos",
+        "text": "As costas da mão úmidas resfriam instantaneamente ante correntes sutis achando **frestas de 1 mm em 0,5 segundo**. Preencher trilhos com **jornal enrolado e algodão** corta fugas sem estragar a janela.",
+        "fieldSpecs": [
+          {
+            "name": "Canaleta de Janela de Inverno Entupida Com Rolos Firmes de Jornal e Pano",
+            "scientificName": "Rolled Newsprint & Folded Cotton Cloth Sash Track Draft Plug",
+            "categoryTag": "Busca de Vento / Sello de Canaleta",
+            "imageFileName": "id-cold-draft-window-paper-seal.jpg",
+            "hudCode": "FIG. MAT-38A // MACRO OPTIC",
+            "hudStatus": "DRAFT SEAL: FRAME GAP PLUGGED",
+            "traits": [
+              {
+                "label": "Busca/Mão",
+                "value": "**Molhe leve as costas da mão** achando fugas finas nos cantos."
+              },
+              {
+                "label": "Rolo/Firme",
+                "value": "**Socar jornal enrolado e tiras de pano** fundo em todo o trilho."
+              },
+              {
+                "label": "Saída/Livre",
+                "value": "**Portas de escape fáceis de abrir** usando apenas rolos soltos."
+              }
+            ],
+            "fieldUse": "Frenar perda imediata de ar quente pelas frestas da casa"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Passo 2: Borrife Só Água Limpa no Vidro e Pressione as Bolhas Contra a Janela",
+      "description": "1. **Limpe Poeira e Gelo Secando o Vidro**: Para fixação duradoura sem manchar, passe pano seco limpando pó e umidade da janela.\n2. **Pulverize Água Limpa Por Todo o Vidro**: Espalhe névoa fina e uniforme de água comum sobre toda a lâmina sem usar nenhuma fita nem cola.\n3. **Cole o Lado das Bolhas Virado Para o Vidro**: Para prender bolsões de ar parado, alise o **lado saltado das bolhas contra o vidro úmido** de cima a baixo deixando sol entrar como na [Claraboia Solar](/protocol-34).",
+      "actionNote": "> Por que colar o relevo das bolhas encostado no vidro em vez da face lisa? Encostar as bolhas no vidro cria milhares de microcâmaras paradas barrando frio ali mesmo, enquanto a face lisa interna facilita enxugar gotas.",
+      "svgFileName": "pr38-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // NÉVOA DE ÁGUA + BOLHAS ISOLANTES NO VIDRO",
+        "Limpar vidro e borrifar camada uniforme de água",
+        "Pressionar lado das bolhas contra o vidro de cima",
+        "Ar preso trava o frio deixando luz solar passar",
+        "[CHAVE] Gruda sem cola usando tensão da água"
+      ],
+      "deepDive": {
+        "badge": "AIR-CELL GLASS INSULATION",
+        "title": "Adesão por Tensão Superficial da Água e Barreira Celular de Ar Parado",
+        "text": "Janelas simples dissipam calor rápido por condução direta. Prender **filme de bolhas com água pura** isola o vidro sem deixar resíduos e aproveita gratuitamente o calor do sol diurno.",
+        "fieldSpecs": [
+          {
+            "name": "Película Transparente de Bolhas Presa Com Névoa de Água Sobre Vidro Frio Sem Cola",
+            "scientificName": "Water-Tension Mounted Air-Bubble Cellular Window Insulation Layer",
+            "categoryTag": "Fixação com Água / Barreira de Ar",
+            "imageFileName": "id-water-sprayed-bubble-sheet-window.jpg",
+            "hudCode": "FIG. MAT-38B // MACRO OPTIC",
+            "hudStatus": "GLASS FILM: AIR-CELL INSULATED",
+            "traits": [
+              {
+                "label": "Face/Bolha",
+                "value": "**Lado das bolhas encosta no vidro** prendendo ar isolante."
+              },
+              {
+                "label": "Cola/Zero",
+                "value": "**Só água limpa fixa o filme** saindo sem marcas depois."
+              },
+              {
+                "label": "Luz/Sol",
+                "value": "**Mantém entrada de sol de dia** aquecendo e clareando a sala."
+              }
+            ],
+            "fieldUse": "Isolar grandes painéis de vidro contra frio externo sem ferramentas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Passo 3: Ponha Rolo Grosso no Peitoril e Pendure Cortina Prateada Virada Para Dentro",
+      "description": "1. **Assente Rolo Grosso de Dois Pulsos no Peitoril**: Para frear o ar gelado pesado que desce escorregando pelo vidro, apoie toalha ou jornal grosso no rodapé da janela.\n2. **Pendure Lado Prateado Brilhante Voltado Para Dentro**: Para devolver o calor da sala, prenda **manta prateada com a face espelhada olhando para dentro** diante da janela.\n3. **Concentre Todos Num Único Quarto Pequeno**: Evite espalhar calor reunindo-se num cômodo menor com [Cápsula de Papelão](/protocol-22) e [Palmilha Isolante](/protocol-28).",
+      "actionNote": "> Por que adicionar rolo no peitoril e cortina brilhante sobre as bolhas? O ar esfriado no vidro cai feito cachoeira congelante até seus pés; o rolo barra esse jato e a face prateada rebate o calor corporal para dentro.",
+      "svgFileName": "pr38-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // BARREIRA DE PEITORIL + CORTINA PRATEADA",
+        "Pôr rolo grosso dois pulsos no peitoril da janela",
+        "Pendurar face prateada brilhante virada à sala",
+        "Trava ar descendente e rebate calor ao interior",
+        "[CHAVE] Escudo duplo concentra calor num quarto"
+      ],
+      "deepDive": {
+        "badge": "RADIANT REFLECTION & DRAFT DAM",
+        "title": "Contenção de Cascata Fria Descendente e Reflexão Térmica Interna",
+        "text": "Janelas frias geram corrente de **ar gelado caindo ao piso**. O **rolo grosso no peitoril** intercepta essa corrente baixa enquanto a **cortina prateada interna** devolve radiação infravermelha humana ao ambiente.",
+        "fieldSpecs": [
+          {
+            "name": "Rolo Grosso de Algodão no Peitoril Diante de Cortina Térmica Prateada Refletora",
+            "scientificName": "Rolled Cotton Draft Dam & Radiant Reflective Foil Window Curtain",
+            "categoryTag": "Trava de Frio / Escudo Prateado",
+            "imageFileName": "id-foil-curtain-radiant-heat-barrier.jpg",
+            "hudCode": "FIG. MAT-38C // MACRO OPTIC",
+            "hudStatus": "HEAT RETENTION: RADIANT SHIELDED",
+            "traits": [
+              {
+                "label": "Peitoril",
+                "value": "**Toalha enrolada no fundo** interrompe corrente gelada no chão."
+              },
+              {
+                "label": "Prata/Dentr",
+                "value": "**Brilho espelhado para a sala** reflete o calor aos ocupantes."
+              },
+              {
+                "label": "Quarto/Só",
+                "value": "**Escolha o menor cômodo** para reter calor humano facilmente."
+              }
+            ],
+            "fieldUse": "Interceptação conjunta de corrente fria baixa e fuga radiante"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Passo 4: Enxugue Gotas Todo Dia de Manhã e Ventile 5 Minutos ao Meio-Dia Contra Mofo e CO",
+      "description": "1. **Seque Toda Manhã a Umidade do Peitoril**: Para impedir cobertas molhadas e hipotermia úmida, passe pano seco recolhendo gotas formadas abaixo do vidro.\n2. **Abra 5 Minutos Cruzados no Sol do Meio-Dia**: Para renovar ar sem esfriar paredes nem colchões, entreabra um palmo **só 5 minutos na hora mais quente do dia**.\n3. **Deixe Fresta de Um Polegar Ao Queimar Chama**: Se usar [Fogareiro de Lata](/protocol-21), conserve **abertura superior largura polegar** evitando morte silenciosa por monóxido.",
+      "actionNote": "> Abrir a janela 5 minutos no frio não congela o quarto de novo? Troca rápida ao sol expulsa ar úmido antes de paredes ou cobertores esfriarem; ar mais seco retém sensação térmica maior e evita mofo e intoxicação.",
+      "svgFileName": "pr38-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SECAR GOTAS + VENTILAR 5 MIN NO SOL",
+        "Enxugar todo dia gotas acumuladas no peitoril",
+        "Ventilar cruzado 5 min ao meio-dia tirando vapor",
+        "Chama fechada (X) mata CO: fresta polegar (V)",
+        "[CHAVE] Secar e ventilar breve bloqueia mofo e CO"
+      ],
+      "deepDive": {
+        "badge": "CONDENSATION & CO SAFETY",
+        "title": "Prevenção de Hipotermia Úmida e Renovação Aérea Sem Perda de Massa Térmica",
+        "text": "Gotículas de **condensação no marco** encharcam papel e panos gerando frio úmido perigoso. Uma **ventilação breve de 5 min ao meio-dia** renova oxigênio e expulsa umidade mantendo o calor das paredes.",
+        "fieldSpecs": [
+          {
+            "name": "Pano Seco Limpando Gotas da Manhã Abaixo de Janela Entreaberta ao Sol do Meio-Dia",
+            "scientificName": "Midday Brief Cross-Ventilation & Condensation Moisture Wiping",
+            "categoryTag": "Controle Umidade / Alerta CO",
+            "imageFileName": "id-morning-ventilation-condensation-check.jpg",
+            "hudCode": "FIG. MAT-38D // MACRO OPTIC",
+            "hudStatus": "AIR & DRY: CONDENSATION CLEARED",
+            "traits": [
+              {
+                "label": "Seco/Diário",
+                "value": "**Enxugue gotas todo amanhecer** evitando mofo e frio úmido."
+              },
+              {
+                "label": "Ar/5min",
+                "value": "**Renove 5 minutos sob o sol** sem esfriar móveis nem camas."
+              },
+              {
+                "label": "Chama/Frest",
+                "value": "**Sempre deixe fresta de polegar acima** com qualquer fogo."
+              }
+            ],
+            "fieldUse": "Impedir mofo gelado e asfixia silenciosa por monóxido de carbono"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Lacrar Janelas Hermeticamente Sem Ventilação e Acender Fogareiro ou Carvão Dentro",
+    "description": "Vedar 100% das frestas sem entrada de ar e acender dentro [Fogareiro de Lata](/protocol-21), gás butano ou braseiro acumula monóxido de carbono inodoro letal matando quem dorme. Deixe fresta superior largura polegar sempre que queimar fogo. Proteja vidros conforme [Fita Antivento](/protocol-31), mantenha-se seco na [Cápsula de Papelão](/protocol-22) e hidrate-se com [Soro ORS](/protocol-24).",
+    "consequence": "Asfixia silenciosa mortal por monóxido de carbono, hipotermia por roupa úmida e doença respiratória."
+  },
+  "faqs": [
+    {
+      "question": "Qual face do plástico-bolha encosta no vidro molhado: o lado liso ou o das bolhas saltadas?",
+      "causeDiagnostic": "Ao contrário, diminui o contato da água, cai fácil da janela e reduz o isolamento das câmaras.",
+      "resolution": "Sempre cole o **lado das bolhas saltadas diretamente contra o vidro molhado**, selando o ar junto ao vidro frio. A face lisa fica voltada à sala facilitando limpeza de poeira e gotas."
+    },
+    {
+      "question": "Como isolar os vidros se não houver nada de plástico-bolha em casa durante o frio intenso?",
+      "causeDiagnostic": "Qualquer chapa firme de papelão ou tecido grosso com ar parado entre vidro e quarto contém perdas.",
+      "resolution": "Receba luz solar do meio-dia no vidro limpo e logo ao anoitecer encaixe **papelão grosso aberto plano, várias folhas de jornal ou cobertores grossos** no vão bloqueando a perda noturna."
+    }
+  ],
+  "outcome": {
+    "title": "Escudo Térmico Sem Energia: Mão Molhada nas Frestas, Bolhas na Água, Cortina Prateada e Ar Seguro",
+    "badge": "TARGET OUTCOME // ISOLAMENTO TRIPLO DE INVERNO SEM ENERGIA",
+    "description": "Sistema caseiro triplo para apagar o frio no blecaute: detecção manual de correntes com jornal nos trilhos, bolhas aplicadas só com névoa d'água, rolo bloqueador e cortina prateada refletora mais limpeza diária.",
+    "svgFileName": "pr38-outcome.svg",
+    "svgLabels": [
+      "PR-38 COMPLETO // VEDAÇÃO E ISOLAMENTO TÉRMICO SEM LUZ",
+      "ETAPA 01: ACHAR E VEDAR",
+      "Mão úmida + jornal nos trilhos",
+      "ETAPA 02: BOLHAS NA ÁGUA",
+      "Face bolha gruda só com névoa",
+      "ETAPA 03: ROLO E PRATEADO",
+      "Toalha na base + brilho interno",
+      "ETAPA 04: SECAR E VENTILAR",
+      "Enxugar gotas + 5 min meio-dia",
+      "[PRINCÍPIO] Vedar correntes, reter ar parado e refletir calor conserva abrigo quente"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Apagão no frio intenso sem aquecedor? Use água limpa, jornal e plástico-bolha para segurar o calor do quarto sem gastar energia!",
+    "body": "Primeiro molhe leve as costas da mão e passe na janela—onde sentir vento frio, soque jornal bem enrolado e panos velhos no trilho. Segundo limpe o vidro, borrife só água e cole a face DAS BOLHAS contra o vidro úmido—gruda sem cola e entra luz! Terceiro coloque rolo grosso de toalha no peitoril e pendure manta prateada brilhando para dentro para rebater calor. Quarto enxugue gotas de manhã e abra 5 minutos ao meio-dia—jamais acenda fogo num quarto lacrado!"
+  },
+  "createdAt": "2026-11-21T14:29:26.279Z",
+  "contentHash": "fbcbd91d87c23005"
+}

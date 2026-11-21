@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-38",
+  "category": "MATERIALS",
+  "title": "Wärmeverlust im Winter ohne Strom stoppen: Luftpolsterfolie mit Wasser, Zeitungspapier & Rettungsdecke",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[KÄLTE-BLACKOUT-WÄRMESCHUTZ & STROMLOSE FENSTERISOLIERUNG]",
+  "summary": "Wenn Notstromaggregat, Elektroheizer, Silikondichtungen oder fertige Thermo-Folien zu Hause bereitstehen, nutzen und prüfen Sie zuerst diese werkseitigen Geräte als schnellsten Schutz. Fallen bei Frost jedoch Strom und Gas gleichzeitig aus, hält allein das Abdichten kalter Fensterflächen und Ritzen lebenswichtige Raumwärme. Tasten Sie Zugluft per feuchtem Handrücken, stopfen Sie Fugen mit Zeitung und Stoff aus, kleben Sie Luftpolsterfolie nur mit Wassernebel auf die Scheibe und kombinieren Sie einen Folienvorhang mit [Karton-Wärmekapsel](/protocol-22), [Isolier-Stiefelfutter](/protocol-28) und kurzer Mittagslüftung bei Betrieb des [Thunfischdosen-Ofens](/protocol-21).",
+  "timeRequired": "20-30 Min. Aufbau (10 Min. Fugendichtung + 10 Min. Wasser-Folie + 10 Min. Folienvorhang)",
+  "successRate": "97% (bei luftloser Wassermontage, Fensterbank-Zugluftrolle und 5-Min.-Mittagslüftung)",
+  "difficulty": "Anfänger (kein Werkzeug nötig; nur Luftpolsterfolie, Sprühwasser, Zeitung, Handtücher & Alumatte)",
+  "outputPerHour": "Stoppt eiskalte Fensterscheiben-Ableitung sowie Zugluft und reflektiert Körperwärme zurück ins Zimmer",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Fenstergroße Luftpolsterfolie (Packfolie) & klares Leitungswasser (Sprüher oder feuchtes Tuch)",
+      "desc": "Haftet allein durch Wasseroberflächenspannung spaltfrei am Glas und lässt Tageslicht herein wie die [Solar-Wasserflaschenlampe](/protocol-34)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Stapel trockenes Zeitungspapier, 3-4 alte Baumwollhandtücher & 2 trockene Wischlappen",
+      "desc": "Dichtet eiskalte Ritzen in Fensterlaufschienen und Türspalten fest ab und trocknet morgendliches Kondenswasser am Fensterbrett vor Kälteausbreitung."
+    },
+    {
+      "id": "mat-03",
+      "name": "1-2 Silber-Isoliermatten (oder Notfall-Rettungsdecken / dicke Winterdecken) & Wäscheklammern",
+      "desc": "Mit der glänzenden Silberseite zum Zimmer vor dem Fenster oder an der [Karton-Wärmekapsel](/protocol-22) aufgehängt, reflektiert Körperwärme und Glut des [Thunfischdosen-Ofens](/protocol-21) zurück."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Schritt 1: Zugluft mit feuchtem Handrücken ertasten und Rahmenspalten mit Papier & Tuch stopfen",
+      "description": "1. **Unsichtbare Lecks mit feuchter Haut finden**: Befeuchten Sie den Handrücken leicht mit Wasser und fahren Sie langsam spanneweise an Fensterecken und Türfugen entlang, bis kalte Luftströme sofort spürbar sind.\n2. **Papier und Stoff fest eingerollt in Schienen pressen**: Drehen Sie trockene Zeitung fingerdick ein oder falten alte Lappen schmal und drücken sie fest in Führungsschienen gegen Kaltluftzug.\n3. **Fluchttüren niemals zunageln oder verkleben**: Legen Sie an Ausgangstüren nur wegziehbare Handtuchrollen an, damit jeder Notausgang sofort frei bleibt.",
+      "actionNote": "> Warum zuerst schmale Rahmenfugen stopfen bevor die große Scheibe isoliert wird? Selbst dick verklebte Scheiben kühlen ein Zimmer in Minuten aus, wenn Frostluft ungehindert durch Rahmenspalten pfeift. Der feuchte Handrücken findet jedes Leck zuerst.",
+      "svgFileName": "pr38-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // ZUGLUFTTEST HANDRÜCKEN + PAPIER-DICHTUNG",
+        "Feuchten Handrücken spanneweise an Ritzen führen",
+        "Papier & Tuch fingerdick fest in Schiene stopfen",
+        "Konvektiven Frostzug an Fenster & Tür abschotten",
+        "[KERN] Dichtet ohne Nägel für freien Fluchtweg"
+      ],
+      "deepDive": {
+        "badge": "CONVECTIVE DRAFT SEALING",
+        "title": "Verdunstungskälte-Detektion am Handrücken und Spaltdichtung",
+        "text": "Leicht feuchte Handrücken-Haut kühlt im feinsten Luftzug sofort ab und erkennt **1-mm-Spalte binnen 0,5 Sekunden**. Dicht eingerollte Zeitung und Baumwolle schließen Konvektionslecks rückstandsfrei.",
+        "fieldSpecs": [
+          {
+            "name": "Mit eingerolltem Papier und gefaltetem Baumwolltuch abgedichtete Winter-Fensterschiene",
+            "scientificName": "Rolled Newsprint & Folded Cotton Cloth Sash Track Draft Plug",
+            "categoryTag": "Zugluftsuche / Schienendichtung",
+            "imageFileName": "id-cold-draft-window-paper-seal.jpg",
+            "hudCode": "FIG. MAT-38A // MACRO OPTIC",
+            "hudStatus": "DRAFT SEAL: FRAME GAP PLUGGED",
+            "traits": [
+              {
+                "label": "Test/Hand",
+                "value": "**Handrücken leicht anfeuchten**, um feine Frostströme zu erspüren."
+              },
+              {
+                "label": "Stopf/Fest",
+                "value": "**Feste Papier- und Stoffrollen** tief in Schienenrinnen drücken."
+              },
+              {
+                "label": "Flucht/Frei",
+                "value": "**Ausgangstüren nie blockieren**, nur lose Zugluftrollen vorlegen."
+              }
+            ],
+            "fieldUse": "Schnellstes Abschneiden konvektiver Wärmeverluste an kalten Rahmen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Schritt 2: Klares Wasser auf saubere Scheibe sprühen und Noppenseite zum Glas andrücken",
+      "description": "1. **Staub und Reif von der Glasscheibe trocken wischen**: Reiben Sie die Scheibe mit einem trockenen Tuch sauber, damit der Wasserfilm Wochen ohne Ablösen hält.\n2. **Klares Wasser gleichmäßig dünn aufsprühen**: Benetzen Sie die gesamte Glasfläche per Sprühflasche oder feuchtem Tuch ganz ohne Klebeband.\n3. **Noppenseite der Folie von oben glatt aufs nasse Glas drücken**: Drücken Sie die **Luftpolsternoppen direkt gegen die Glasscheibe**, sodass stehende Luftzellen Kälte abblocken und Tageslicht wie bei der [Solar-Wasserflasche](/protocol-34) einströmt.",
+      "actionNote": "> Warum gehört die genoppte Seite zur kalten Glasscheibe statt die glatte Fläche? Direkt am Glas schließen Noppen tausende ruhende Luftkammern ein, während die glatte Innenseite mühelos von Kondenswasser abgewischt werden kann.",
+      "svgFileName": "pr38-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // WASSERNEBEL + LUFTZELLEN AM FENSTERGLAS",
+        "Glas abwischen und gleichmäßig mit Wasser besprühen",
+        "Noppenseite von oben nach unten fest aufs Glas",
+        "Ruhende Luftpolster sperren Frost bei Tageslicht",
+        "[KERN] Wasserhaftung hält fest ganz ohne Kleber"
+      ],
+      "deepDive": {
+        "badge": "AIR-CELL GLASS INSULATION",
+        "title": "Wasserfilm-Adhäsion und stehende Zell-Luftschicht auf Fensterglas",
+        "text": "Unisolierte Scheiben leiten Wärme extrem rasch nach außen. Ein Wasserfilm saugt **Luftpolster-Dämmfolie** rückstandsfrei an, halbiert Glas-Kälteabgabe spürbar und lässt wärmende Wintersonne ins Zimmer.",
+        "fieldSpecs": [
+          {
+            "name": "Transparente Luftpolster-Dämmfolie klebstofffrei mit Wassernebel am Glas haftend",
+            "scientificName": "Water-Tension Mounted Air-Bubble Cellular Window Insulation Layer",
+            "categoryTag": "Wassermontage / Luftpolsterdämmung",
+            "imageFileName": "id-water-sprayed-bubble-sheet-window.jpg",
+            "hudCode": "FIG. MAT-38B // MACRO OPTIC",
+            "hudStatus": "GLASS FILM: AIR-CELL INSULATED",
+            "traits": [
+              {
+                "label": "Lage/Noppen",
+                "value": "**Noppenseite direkt aufs nasse Glas** schließt Luftzellen ein."
+              },
+              {
+                "label": "Haft/Wasser",
+                "value": "**Reines Wasser hält dicht** ohne spätere Kleberückstände."
+              },
+              {
+                "label": "Licht/Tag",
+                "value": "**Wintersonne dringt ungestört ein** statt Räume abzudunkeln."
+              }
+            ],
+            "fieldUse": "Großflächige Glaswärmeverluste ohne Werkzeug sofort halbieren"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Schritt 3: Zugluftrolle aufs Fensterbrett legen und Silberfolie glänzend nach innen aufhängen",
+      "description": "1. **Zwei-Handgelenke-dicke Stoffrolle auf das Fensterbrett legen**: Stoppen Sie herabsinkende Kaltluftkaskaden durch ein dick eingerolltes Handtuch fest auf dem unteren Sims.\n2. **Silbermatte glänzend Richtung Zimmer vor das Fenster hängen**: Klemmen Sie eine **Rettungsdecke oder Thermomatte mit der silbernen Seite nach innen**, um Strahlungswärme zurückzuwerfen.\n3. **Alle Personen in kleinstem Zimmer bündeln**: Nutzen Sie [Karton-Wärmekapsel](/protocol-22) und [Isolier-Stiefelfutter](/protocol-28) gebündelt im kleinsten Raum für maximale Eigenwärme.",
+      "actionNote": "> Warum zusätzlich zur Scheibenfolie eine Zugluftrolle und ein Silbervorhang? Abgekühlte Luft fällt an der Fensterwand wie ein kalter Wasserfall auf den Boden; die Rolle stoppt ihn und das Silber reflektiert Körperwärme zurück.",
+      "svgFileName": "pr38-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // SIMS-ZUGLUFTDAMM + SILBER-STRAHLUNGSSCHUTZ",
+        "2-Handgelenke-dicke Handtuchrolle aufs Fensterbrett",
+        "Glänzende Silberseite zum Zimmer vor Fenster hängen",
+        "Bricht Kaltluftfall & wirft Körperwärme zurück",
+        "[KERN] Doppelte Barriere wärmt einen kleinen Raum"
+      ],
+      "deepDive": {
+        "badge": "RADIANT REFLECTION & DRAFT DAM",
+        "title": "Abfangen kalter Fallwinde am Fensterbrett und Infrarot-Innenreflexion",
+        "text": "Am kalten Fenster sinkt abgekühlte Luft als **Kaltluft-Sturzstrom** zum Boden. Eine **dicke Tuchrolle** am Sims blockiert den Bodenstrom, während **silberne Innenfolie** Wärme zurück zum Körper spiegelt.",
+        "fieldSpecs": [
+          {
+            "name": "Dicke Baumwoll-Zugluftrolle am Sims vor glänzendem Silber-Thermovorhang",
+            "scientificName": "Rolled Cotton Draft Dam & Radiant Reflective Foil Window Curtain",
+            "categoryTag": "Kaltluftdamm / Infrarotreflexion",
+            "imageFileName": "id-foil-curtain-radiant-heat-barrier.jpg",
+            "hudCode": "FIG. MAT-38C // MACRO OPTIC",
+            "hudStatus": "HEAT RETENTION: RADIANT SHIELDED",
+            "traits": [
+              {
+                "label": "Sims/Rolle",
+                "value": "**Dicke Handtuchrolle unten auflegen** fängt Bodenkälte ab."
+              },
+              {
+                "label": "Silber/Innen",
+                "value": "**Spiegelnde Seite zeigt ins Zimmer** für hohe Wärmerückgabe."
+              },
+              {
+                "label": "Raum/Klein",
+                "value": "**Kleinsten Wohnraum abtrennen**, so reicht geteilte Körperwärme."
+              }
+            ],
+            "fieldUse": "Kombinierter Schutz vor Bodenkälte und Abstrahlung ins Kalte"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Schritt 4: Morgens Kondenswasser abwischen und mittags 5 Minuten gegen Schimmel & CO stoßlüften",
+      "description": "1. **Fensterbrett-Tropfen jeden Morgen trocken reiben**: Verhindern Sie klamme Decken und nasses Papier, indem Sie morgendliches Schwitzwasser sofort mit einem trockenen Tuch entfernen.\n2. **In wärmster Mittagssonne exakt 5 Minuten querlüften**: Öffnen Sie zum schnellen Feuchteaustausch eine Handspanne weit **nur 5 Minuten am wärmsten Mittag**, ohne Wände auszukühlen.\n3. **Bei jeder offenen Flamme daumenbreiten Lüftungsspalt lassen**: Läuft ein [Thunfischdosen-Ofen](/protocol-21), muss **oben stets ein daumenbreiter Luftspalt** gegen Kohlenmonoxid offen bleiben.",
+      "actionNote": "> Kühlt 5 Minuten tägliches Stoßlüften bei Frost nicht das ganze Zimmer aus? Kurzer Mittagsluftzug tauscht feuchte verbrauchte Luft schneller aus, als Möbel oder Betten ihre Speicherwärme abgeben. Trockene Luft fühlt sich spürbar wärmer an.",
+      "svgFileName": "pr38-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // TAU TROCKNEN + 5 MIN. MITTAGSLÜFTUNG",
+        "Kondenswasser am Sims jeden Morgen trocken reiben",
+        "Mittags in Sonne 5 Min. stoßlüften gegen Feuchte",
+        "Flamme ohne Luftspalt (X) CO-Tod: Daumenspalt (V)",
+        "[KERN] Trockenhalten & Kurzlueften schützt vor CO"
+      ],
+      "deepDive": {
+        "badge": "CONDENSATION & CO SAFETY",
+        "title": "Vermeidung feuchter Auskühlung und sicheres Stoßlüften ohne Wärmespeicherverlust",
+        "text": "Stehendes **Schwitzwasser am Fenster** durchfeuchtet Papierstopfen und Bettzeug mit Erfrierungsrisiko. Ein zügiger **5-Minuten-Mittagstausch** entfernt Dampf und Kohlenmonoxid bei vollem Wärmeerhalt in Wänden und Matratzen.",
+        "fieldSpecs": [
+          {
+            "name": "Trockenes Baumwolltuch wischt morgendliches Kondenswasser unter leicht geöffnetem Fenster",
+            "scientificName": "Midday Brief Cross-Ventilation & Condensation Moisture Wiping",
+            "categoryTag": "Feuchteschutz / CO-Sicherheit",
+            "imageFileName": "id-morning-ventilation-condensation-check.jpg",
+            "hudCode": "FIG. MAT-38D // MACRO OPTIC",
+            "hudStatus": "AIR & DRY: CONDENSATION CLEARED",
+            "traits": [
+              {
+                "label": "Wisch/Trocken",
+                "value": "**Sims jeden Morgen abtrocknen** stoppt Schimmel und Nässekälte."
+              },
+              {
+                "label": "Luft/5Min",
+                "value": "**5 Min. mittags querlüften** tauscht Feuchte bei minimalem Verlust."
+              },
+              {
+                "label": "Spalt/Flamme",
+                "value": "**Oben Daumenspalt belassen** sobald innen offenes Feuer brennt."
+              }
+            ],
+            "fieldUse": "Schutz vor Schimmel-Kältebrücke und lautloser Kohlenmonoxidvergiftung"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Fenster luftdicht zukleben und ohne Lüftungsspalt drinnen Ofen oder Holzkohle verbrennen",
+    "description": "Wer alle Ritzen zu 100% abdichtet und dann drinnen einen [Thunfischdosen-Ofen](/protocol-21), Gaskocher oder Holzkohle betreibt, füllt den Raum rasch mit geruchlosem Kohlenmonoxid, das Schlafende unbemerkt erstickt. Lassen Sie bei Flammen oben stets daumenbreit offen. Sichern Sie Glas gegen Sturm laut [Fensterschutz-Taping](/protocol-31), schlafen trocken in der [Karton-Wärmekapsel](/protocol-22) und hydrieren mit [ORS-Lösung](/protocol-24).",
+    "consequence": "Lautloser Tod durch Kohlenmonoxidvergiftung, feuchte Unterkühlung durch nasse Decken sowie Schimmel-Atemnot."
+  },
+  "faqs": [
+    {
+      "question": "Welche Seite der Luftpolsterfolie gehört aufs nasse Glas — die glatte oder die Noppenseite?",
+      "causeDiagnostic": "Falsch herum aufgeklebt greift Wasser schlechter, Folie fällt ab und Luft zirkuliert ungünstig.",
+      "resolution": "Drücken Sie stets die **hervorstehenden Noppen direkt auf die feuchte Scheibe**, sodass abgedichtete Luftkammern am kalten Glas anliegen. Die glatte Fläche weist ins Zimmer und lässt sich leicht abwischen."
+    },
+    {
+      "question": "Was tun bei Kälteeinbruch, wenn überhaupt keine Luftpolsterfolie im Haus vorhanden ist?",
+      "causeDiagnostic": "Jede feste Papier- oder Wollschicht mit ruhendem Luftspalt zwischen Glas und Zimmer bremst den Kälteverlust.",
+      "resolution": "Nutzen Sie mittags volle Sonne durch freie Scheiben und stellen Sie sofort nach Sonnenuntergang **flach ausgebreitete Kartons, dicke Zeitungslagen oder schwere Wolldecken** direkt in den Fensterrahmen."
+    }
+  ],
+  "outcome": {
+    "title": "Stromloser Winter-Wärmeschild: Zugluftsuche, Wasser-Luftpolsterglas, Silberfolie & Stoßlüftung",
+    "badge": "TARGET OUTCOME // DREIFACHE STROMLOSE WINTERDÄMMUNG",
+    "description": "Dreistufiger Kälteschutz für Wohnräume: Zugluftsuche per Handrücken mit Papier-Dichtung, klebstofffreie Luftpolsterfolie auf Wassernebel, Zugluftdamm mit reflektierender Silberfolie und tägliches Trockenwischen.",
+    "svgFileName": "pr38-outcome.svg",
+    "svgLabels": [
+      "PR-38 FERTIG // FENSTERDÄMMUNG & ZUGLUFTSCHUTZ OHNE STROM",
+      "STUFE 01: ZUGLUFT DICHTEN",
+      "Feuchte Hand + Papier im Rahmen",
+      "STUFE 02: WASSER-NOPPENGLAS",
+      "Luftzellen haften nur mit Wasser",
+      "STUFE 03: DAMM & SILBERFOLIE",
+      "Handtuchrolle + Wärmereflexion",
+      "STUFE 04: WISCHEN & LÜFTEN",
+      "Tau trocknen + 5 Min. mittags",
+      "[PRINZIP] Fugendichte Rahmen, Luftzellen & Silberreflexion halten Zimmer warm"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Strom und Heizung bei Frost ausgefallen? So hältst du dein Zimmer ganz ohne Strom mit Wasser, Zeitung und Luftpolsterfolie warm!",
+    "body": "Erstens Handrücken kurz anfeuchten und Fensterfugen abtasten — wo es kalt zieht, fest gerollte Zeitung und alte Tücher in die Rille stopfen. Zweitens Scheibe sauber wischen, nur klares Wasser aufsprühen und Luftpolsterfolie mit der NOPPENSEITE fest aufs nasse Glas streichen — klebt ohne Leim und lässt Sonne rein! Drittens dicke Handtuchrolle aufs untere Fensterbrett legen und Silberfolie glänzend nach innen aufhängen. Viertens morgens Tau abwischen und mittags 5 Minuten stoßlüften — niemals Flammen im luftdichten Raum zünden!"
+  },
+  "createdAt": "2026-11-21T14:29:26.279Z",
+  "contentHash": "fbcbd91d87c23005"
+}

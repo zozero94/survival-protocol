@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg38s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="frame38s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="paper38s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e7e5e4"/>
+      <stop offset="50%" stop-color="#d6d3d1"/>
+      <stop offset="100%" stop-color="#a8a29e"/>
+    </linearGradient>
+    <pattern id="grid38s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow38s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg38s1)"/>
+  <rect width="400" height="400" fill="url(#grid38s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 01 // 젖은 손등 외풍 탐색 + 신문지·헌 천 틈새 막기</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">젖은 손등을 한 뼘씩 스쳐 서늘한 창틈 바람 탐지</text>
+
+  <!-- Main Visual: Window Sash Track Cross-Section + Wet Hand Draft Detection + Tight Rolled Paper & Cloth Plug -->
+  <g filter="url(#shadow38s1)">
+    <!-- Outdoor Frost Pane Left -->
+    <rect x="34" y="96" width="126" height="176" fill="#0c192c" stroke="#1e3a5f" stroke-width="1.5"/>
+    <!-- Window Frame Profile with Gap -->
+    <rect x="150" y="96" width="32" height="148" fill="url(#frame38s1)" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="144" y="244" width="190" height="32" fill="url(#frame38s1)" stroke="#94a3b8" stroke-width="1.5"/>
+
+    <!-- Cold Blue Airflow Vectors Stopped Outside Track -->
+    <path d="M 46 218 L 128 218" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="122,212 134,218 122,224" fill="#38bdf8"/>
+    <path d="M 52 246 L 128 246" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="122,241 133,246 122,251" fill="#7dd3fc"/>
+
+    <!-- Rolled Newspaper + Folded Cotton Plug Wedged Tight Inside Crevice -->
+    <ellipse cx="166" cy="232" rx="24" ry="14" fill="url(#paper38s1)" stroke="#fde047" stroke-width="1.8"/>
+    <path d="M 152 232 Q 166 224 180 232" fill="none" stroke="#78716c" stroke-width="1.5"/>
+    <ellipse cx="204" cy="232" rx="18" ry="12" fill="#475569" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Blocked Draft Indicator Check Mark Over Plug -->
+    <circle cx="184" cy="194" r="14" fill="#052e16" stroke="#22c55e" stroke-width="1.8"/>
+    <polyline points="177,194 182,199 191,189" fill="none" stroke="#86efac" stroke-width="2.4" stroke-linecap="round"/>
+
+    <!-- 5-Finger Hand Pictogram Inspecting Gap on Indoor Side -->
+    <g>
+      <rect x="256" y="160" width="34" height="28" rx="6" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
+      <line x1="260" y1="160" x2="258" y2="136" stroke="#fed7aa" stroke-width="6" stroke-linecap="round"/>
+      <line x1="268" y1="160" x2="268" y2="132" stroke="#fed7aa" stroke-width="6" stroke-linecap="round"/>
+      <line x1="277" y1="160" x2="278" y2="134" stroke="#fed7aa" stroke-width="6" stroke-linecap="round"/>
+      <line x1="286" y1="160" x2="288" y2="140" stroke="#fed7aa" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="256" y1="176" x2="242" y2="162" stroke="#fed7aa" stroke-width="5.5" stroke-linecap="round"/>
+      <!-- Water droplets on back of hand -->
+      <circle cx="268" cy="170" r="2.5" fill="#38bdf8"/>
+      <circle cx="278" cy="174" r="2" fill="#7dd3fc"/>
+      <!-- Detection scan arc -->
+      <path d="M 224 148 Q 214 166 224 184" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+    </g>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">마른 신문지·헌 천을 손가락 굵기로 말아 홈 밀착</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">창문·현관문 틈새 대류 냉기 유입 완벽 차단</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 못·접착 없이 신문지·천 마개로 탈출구와 단열 동시 유지</text>
+</svg>

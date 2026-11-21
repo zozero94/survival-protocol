@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg38s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <pattern id="grid38s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow38s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg38s4)"/>
+  <rect width="400" height="400" fill="url(#grid38s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 04 // 아침 결로 물기 제거 + 한낮 5분 환기 안전 관리</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">창틀 바닥에 고인 결로 물기를 마른 천으로 매일 닦기</text>
+
+  <!-- Main Visual: Left Condensation Wiping + Right Cracked Window 5-Min Midday Airflow + Sealed Room CO Warning -->
+  <g filter="url(#shadow38s4)">
+    <!-- Midday Sun Top -->
+    <circle cx="96" cy="108" r="14" fill="#f59e0b" stroke="#fef08a" stroke-width="1.8"/>
+    <path d="M 96 86 L 96 90 M 96 126 L 96 130 M 74 108 L 78 108 M 114 108 L 118 108" stroke="#fde047" stroke-width="2"/>
+
+    <!-- Window Sill & Pooled Water Droplets Being Wiped by Dry Cloth -->
+    <rect x="34" y="148" width="16" height="96" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="34" y="244" width="166" height="20" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <circle cx="62" cy="240" r="4" fill="#38bdf8"/>
+    <circle cx="78" cy="241" r="3" fill="#7dd3fc"/>
+    <rect x="92" y="226" width="54" height="16" rx="4" fill="#f5f5f4" stroke="#cbd5e1" stroke-width="1.5"/>
+    <path d="M 152 234 L 182 234" stroke="#22c55e" stroke-width="2.5"/>
+    <polygon points="178,230 186,234 178,238" fill="#22c55e"/>
+
+    <!-- Right Window Cracked Slightly Open for 5-Min Cross-Ventilation -->
+    <rect x="220" y="128" width="142" height="136" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+    <rect x="226" y="134" width="96" height="124" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Fresh Air Gap Arrows -->
+    <path d="M 354 172 Q 326 164 294 178" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="298,172 288,180 301,182" fill="#22c55e"/>
+    <path d="M 294 218 Q 326 228 354 212" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="350,208 360,210 353,218" fill="#38bdf8"/>
+
+    <!-- Top Right Check V vs Sealed Fire X Comparison Badges -->
+    <circle cx="250" cy="108" r="12" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <polyline points="244,108 248,112 256,103" fill="none" stroke="#86efac" stroke-width="2.2" stroke-linecap="round"/>
+
+    <rect x="282" y="92" width="76" height="32" rx="4" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+    <path d="M 304 116 Q 310 104 304 98 Q 298 104 304 116 Z" fill="#f97316"/>
+    <circle cx="338" cy="108" r="10" fill="#2a0f14" stroke="#ef4444" stroke-width="1.5"/>
+    <line x1="333" y1="103" x2="343" y2="113" stroke="#fecaca" stroke-width="2"/>
+    <line x1="343" y1="103" x2="333" y2="113" stroke="#fecaca" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">햇볕 따뜻한 한낮 5분 맞바람 환기로 습기·곰팡이 제거</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2a0f14" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">완전 밀폐 난방(X) 질식 위험: 작은 불엔 틈새 유지(V)</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 습기 제거 + 짧은 한낮 환기로 결로 냉해·일산화탄소 예방</text>
+</svg>

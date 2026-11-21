@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg38out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="foil38out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <pattern id="grid38out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow38out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg38out)"/>
+  <rect width="800" height="450" fill="url(#grid38out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="11.5" font-weight="bold">PR-38 완성체 // 창틈 외풍 차단 · 물 분무 단열 · 은박 방한</text>
+
+  <!-- 4 Stage Cards -->
+  <g filter="url(#shadow38out)">
+    <!-- STAGE 01 -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="34" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 외풍 탐지 · 막기</text>
+
+    <rect x="44" y="160" width="22" height="90" fill="#475569" stroke="#94a3b8"/>
+    <rect x="44" y="250" width="126" height="16" fill="#334155" stroke="#64748b"/>
+    <ellipse cx="82" cy="240" rx="16" ry="10" fill="#e7e5e4" stroke="#fde047"/>
+    <path d="M 32 238 L 62 238" stroke="#38bdf8" stroke-width="3"/>
+    <circle cx="144" cy="184" r="10" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <polyline points="139,184 143,188 149,180" fill="none" stroke="#86efac" stroke-width="2"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="34" y="341" fill="#94a3b8" font-family="monospace" font-size="8">젖은 손등 탐색 + 신문지 틈새</text>
+
+    <!-- STAGE 02 -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="228" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 물 분무 유리 단열</text>
+
+    <rect x="288" y="148" width="16" height="112" fill="#38bdf8" fill-opacity="0.4" stroke="#7dd3fc"/>
+    <line x1="308" y1="150" x2="308" y2="258" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="4 3"/>
+    <path d="M 326 154 Q 310 162 326 170 Q 310 178 326 186 Q 310 194 326 202 Q 310 210 326 218 Q 310 226 326 234 Q 310 242 326 250" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <line x1="326" y1="150" x2="326" y2="258" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M 236 202 L 282 202" stroke="#38bdf8" stroke-width="3"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="228" y="341" fill="#94a3b8" font-family="monospace" font-size="8">접착 없이 방울 면 물 표면 밀착</text>
+
+    <!-- STAGE 03 -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#dc2626" stroke-width="1"/>
+    <text x="422" y="102" fill="#ef4444" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 외풍 댐 · 은박 막</text>
+
+    <ellipse cx="456" cy="244" rx="16" ry="12" fill="#475569" stroke="#fde047"/>
+    <rect x="480" y="152" width="14" height="104" fill="url(#foil38out)" stroke="#e2e8f0"/>
+    <path d="M 556 182 L 498 182" stroke="#f97316" stroke-width="2.5" stroke-dasharray="3 2"/>
+    <path d="M 498 188 L 556 206" stroke="#fbbf24" stroke-width="3"/>
+    <polygon points="550,200 562,207 549,211" fill="#fbbf24"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="422" y="341" fill="#94a3b8" font-family="monospace" font-size="8">바닥 수건 댐 + 은박 온기 반사</text>
+
+    <!-- STAGE 04 -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="616" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 결로 닦기 · 5분 환기</text>
+
+    <circle cx="652" cy="158" r="12" fill="#f59e0b" stroke="#fef08a"/>
+    <rect x="646" y="232" width="44" height="14" rx="3" fill="#f5f5f4"/>
+    <rect x="698" y="170" width="58" height="74" fill="#1e293b" stroke="#38bdf8"/>
+    <path d="M 764 196 Q 736 188 712 204" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <polygon points="716,198 706,206 719,208" fill="#22c55e"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="616" y="341" fill="#94a3b8" font-family="monospace" font-size="8">물기 건조 + 한낮 짧게 가스 예방</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[공학 원리] 대류 틈새 봉쇄와 정지 공기층·은박 복사 반사 3중 조합으로 무전력 실내 보온</text>
+</svg>

@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-38",
+  "category": "MATERIALS",
+  "title": "Cómo Evitar la Pérdida de Calor en Casa Sin Electricidad con Burbujas con Agua, Papel de Diario y Cortina Térmica",
+  "threatLevel": "HIGH",
+  "threatLevelText": "[AISLAMIENTO TÉRMICO DE VENTANAS Y SELLADO DE CORRIENTES SIN ELECTRICIDAD]",
+  "summary": "Si su hogar dispone de generador de respaldo, calefactores eléctricos, burletes de silicona o láminas aislantes comerciales, utilice y revise primero esos sistemas de fábrica por ser los más rápidos y seguros. Sin embargo, cuando cortes eléctricos y de gas en pleno invierno dejan las habitaciones cerca del congelamiento, frenar el aire frío por ventanas y marcos retiene el calor corporal vital. Rastreando fugas con la mano húmeda, sellando rieles con papel enrollado y tela, fijando plástico de burbujas solo con rocío de agua, y combinando cortina reflectante junto a [Cápsula Térmica de Cartón](/protocol-22), [Botín Aislante](/protocol-28) y ventilación breve de mediodía al usar [Estufa en Lata](/protocol-21), conservará un refugio cálido y seguro sin energía.",
+  "timeRequired": "20-30 min instalación (10 min burlete marco + 10 min burbujas con agua + 10 min cortina térmica)",
+  "successRate": "97% (fijando burbujas al ras con agua, tope bajo ventana y ventilando 5 min al mediodía)",
+  "difficulty": "Principiante (sin herramientas ni pegamento; solo burbujas de embalaje, agua, diario, toallas viejas y manta plateada)",
+  "outputPerHour": "Bloquea frío conductivo del vidrio y corrientes por rendijas reflejando el calor corporal hacia adentro",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "Plástico de Burbujas (Embalaje) Tamaño Ventana y Agua Limpia (Pulverizador o Paño Húmedo)",
+      "desc": "Se adhiere al vidrio solo por tensión superficial del agua encerrando aire aislante sin pegamento, mientras deja entrar sol diurno igual que la [Lámpara Solar de Agua](/protocol-34)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Pila de Papel de Diario Seco, 3-4 Toallas o Telas Gruesas Viejas y 2 Trapos Secos",
+      "desc": "Sella a presión rendijas heladas en rieles de ventanas y marcos de puerta, además de secar gotas de condensación matinal evitando frío húmedo."
+    },
+    {
+      "id": "mat-03",
+      "name": "1-2 Mantas Térmicas Plateadas (o Colchoneta Reflectante / Mantas Gruesas) y Pinzas",
+      "desc": "Se cuelga con el lado plateado hacia adentro ante ventanas o junto a la [Cápsula Térmica de Cartón](/protocol-22) devolviendo calor del cuerpo y de la [Estufa en Lata](/protocol-21)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Paso 1: Detecte Corrientes Heladas Con el Dorso Húmedo de la Mano y Selle Marcos Con Papel",
+      "description": "1. **Localice Fugas Invisibles Con Mano Húmeda**: Para no dejar filtraciones ocultas, humedezca leve el dorso de la mano y pásela lento palmo a palmo por esquinas de ventana y puerta sintiendo aire helado.\n2. **Rellene Rieles Con Rollo Firme de Papel y Tela**: Para bloquear corrientes, enrolle papel seco grueso como un dedo o doble tela vieja encajándolo denso dentro de canales y rendijas.\n3. **No Clave ni Pegue Puertas de Escape**: Para proteger salida de emergencia, coloque solo toallas removibles bajo la puerta sin clavar jamás salidas.",
+      "actionNote": "> ¿Por qué tapar rendijas del marco antes de aislar el cristal entero? Aunque cubra todo el vidrio, un hilo de aire helado colándose por el riel enfría la estancia en minutos. Detectar corrientes con piel húmeda corta la pérdida convectiva primero.",
+      "svgFileName": "pr38-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // MANO HÚMEDA + SELLO CON PAPEL Y TELA",
+        "Pasar mano húmeda palmo a palmo buscando aire frío",
+        "Enrollar papel y tela gruesa encajando en el riel",
+        "Bloquear entradas de aire helado en ventana y puerta",
+        "[CLAVE] Aísla sin clavos dejando libre salida"
+      ],
+      "deepDive": {
+        "badge": "CONVECTIVE DRAFT SEALING",
+        "title": "Detección por Enfriamiento Evaporativo y Sellado Convectivo de Marcos",
+        "text": "La piel húmeda del dorso detecta al instante corrientes casi imperceptibles por enfriamiento evaporativo, ubicando **rendijas de 1 mm en 0.5 segundos**. Rellenarlas con **papel enrollado y algodón** detiene fugas sin dañar marcos.",
+        "fieldSpecs": [
+          {
+            "name": "Rieles de Ventana Invernal Sellados Con Rollos Apretados de Papel y Tela",
+            "scientificName": "Rolled Newsprint & Folded Cotton Cloth Sash Track Draft Plug",
+            "categoryTag": "Detección Fugas / Sello Rieles",
+            "imageFileName": "id-cold-draft-window-paper-seal.jpg",
+            "hudCode": "FIG. MAT-38A // MACRO OPTIC",
+            "hudStatus": "DRAFT SEAL: FRAME GAP PLUGGED",
+            "traits": [
+              {
+                "label": "Rastreo/Piel",
+                "value": "**Humedezca leve el dorso de la mano** sintiendo cualquier chorro helado."
+              },
+              {
+                "label": "Relleno/Denso",
+                "value": "**Ajuste rollos duros de papel y tela** a lo largo de todo el riel."
+              },
+              {
+                "label": "Salida/Libre",
+                "value": "**Deje puertas despejables al instante** usando solo topes sueltos."
+              }
+            ],
+            "fieldUse": "Cortar pérdida rápida de calor por grietas en ventanas y puertas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Paso 2: Rocíe Solo Agua Limpia en el Vidrio y Presione Burbujas Hacia el Cristal",
+      "description": "1. **Limpie Polvo y Escarcha Con Trapo Seco**: Para asegurar agarre duradero sin manchas, limpie polvo y humedad helada del vidrio antes de cubrir.\n2. **Pulverice Agua Limpia Pareja en el Cristal**: Rocíe o humedezca pareja toda la ventana con agua simple permitiendo adherencia natural sin cintas ni pegamentos.\n3. **Pegue la Cara Con Burbujas Contra el Vidrio**: Para formar cámara de aire quieta, presione las **burbujas abultadas mirando al cristal** de arriba hacia abajo dejando entrar luz solar como en la [Lámpara Solar](/protocol-34).",
+      "actionNote": "> ¿Por qué pegar las burbujas abultadas hacia el vidrio y no la cara lisa? Poner el relieve frente al cristal atrapa miles de bolsas de aire quieto justo en la superficie fría mientras el reverso liso facilita limpiar polvo adentro.",
+      "svgFileName": "pr38-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // ROCÍO DE AGUA + CÁMARA DE AIRE EN VIDRIO",
+        "Limpiar cristal y rociar película pareja de agua pura",
+        "Presionar lado con burbujas al vidrio de arriba abajo",
+        "Aire encerrado frena frío exterior dejando pasar sol",
+        "[CLAVE] Se adhiere sin pegamento por tensión del agua"
+      ],
+      "deepDive": {
+        "badge": "AIR-CELL GLASS INSULATION",
+        "title": "Adhesión por Tensión Superficial Hídrica y Celda de Aire Quieto",
+        "text": "El vidrio pierde calor rápido por conducción directa. La lámina **fijada con película de agua** sella miles de celdas de aire sin residuos químicos mientras mantiene luz y calor solar durante el día.",
+        "fieldSpecs": [
+          {
+            "name": "Lámina Transparente de Burbujas Pegada Con Agua Sobre Cristal Frío Sin Pegamento",
+            "scientificName": "Water-Tension Mounted Air-Bubble Cellular Window Insulation Layer",
+            "categoryTag": "Montaje con Agua / Aislamiento Aire",
+            "imageFileName": "id-water-sprayed-bubble-sheet-window.jpg",
+            "hudCode": "FIG. MAT-38B // MACRO OPTIC",
+            "hudStatus": "GLASS FILM: AIR-CELL INSULATED",
+            "traits": [
+              {
+                "label": "Cara/Burbujas",
+                "value": "**Lado abultado tocando el cristal** atrapa aire inmóvil eficaz."
+              },
+              {
+                "label": "Fijación/Agua",
+                "value": "**Solo agua limpia fija la hoja** sin dejar marcas al retirar."
+              },
+              {
+                "label": "Luz/Solar",
+                "value": "**Conserva entrada de sol invernal** sin oscurecer el cuarto."
+              }
+            ],
+            "fieldUse": "Reducir pérdidas por conducción en ventanas grandes sin herramientas"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Paso 3: Coloque Tope Grueso en Alféizar y Cuelgue Cortina Plateada Hacia Adentro",
+      "description": "1. **Ponga Rollo Grueso Como Dos Muñecas en Alféizar**: Para cortar aire frío pesado que baja resbalando por el vidrio, tienda una toalla o diario enrollado en el borde inferior.\n2. **Cuelgue Lámina Plateada Mirando Hacia el Cuarto**: Para reflejar calor interno perdido, cuelgue **manta o lámina reflectante con la cara brillante hacia adentro** delante del marco.\n3. **Agrupe en Una Sola Habitación Con Cápsula Térmica**: Para evitar dispersar calor, reúnanse en un cuarto pequeño con [Cápsula de Cartón](/protocol-22) y [Botín Aislante](/protocol-28).",
+      "actionNote": "> ¿Por qué sumar tope inferior y cortina reflectante sobre el plástico del cristal? El aire enfriado en la ventana cae como cascada hacia sus pies; el tope corta el flujo y la lámina brillante rebota su propio calor corporal adentro.",
+      "svgFileName": "pr38-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // TOPE DE ALFÉIZAR + CORTINA REFLECTANTE",
+        "Colocar rollo de toalla gruesa en borde de ventana",
+        "Colgar cara plateada brillante mirando hacia el cuarto",
+        "Frena cascada de aire frío y rebota calor adentro",
+        "[CLAVE] Doble escudo conserva calor en cuarto pequeño"
+      ],
+      "deepDive": {
+        "badge": "RADIANT REFLECTION & DRAFT DAM",
+        "title": "Corte de Cascada Fría Descendente y Reflexión Infrarroja Interna",
+        "text": "En ventanas frías el aire denso se desploma hacia el piso. Un **tope de tela en alféizar** bloquea esa corriente rastrera y la **cortina brillante hacia adentro** devuelve radiación térmica corporal al refugio.",
+        "fieldSpecs": [
+          {
+            "name": "Tope Grueso de Toalla en Alféizar Junto a Cortina Plateada Reflectante Ante Ventana",
+            "scientificName": "Rolled Cotton Draft Dam & Radiant Reflective Foil Window Curtain",
+            "categoryTag": "Corte Corriente Fría / Escudo Radiante",
+            "imageFileName": "id-foil-curtain-radiant-heat-barrier.jpg",
+            "hudCode": "FIG. MAT-38C // MACRO OPTIC",
+            "hudStatus": "HEAT RETENTION: RADIANT SHIELDED",
+            "traits": [
+              {
+                "label": "Base/Tope",
+                "value": "**Asiente rollo grueso en el borde** frenando aire helado al piso."
+              },
+              {
+                "label": "Cara/Brillo",
+                "value": "**Lado plateado hacia el cuarto** refleja calor hacia ocupantes."
+              },
+              {
+                "label": "Zona/Única",
+                "value": "**Aísle un cuarto chico compacto** donde el calor humano rinda."
+              }
+            ],
+            "fieldUse": "Frenar caída de aire helado y escape radiante en dormitorios"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Paso 4: Seque Condensación Cada Mañana y Ventile 5 Minutos al Mediodía Contra Moho y CO",
+      "description": "1. **Seque Gotas del Alféizar Todas las Mañanas**: Para evitar humedad helada en papel o cobijas, pase un trapo seco sobre gotas formadas en el borde inferior.\n2. **Ventile Cruzado Solo 5 Minutos al Mediodía Tibio**: Para sacar humedad sin enfriar muebles, abra un palmo **solo 5 minutos bajo sol del mediodía** renovando aire viciado.\n3. **Mantenga Rendija de un Pulgar Si Enciende Llama**: Al usar [Estufa en Lata](/protocol-21) deje **abertura superior ancho pulgar** evitando intoxicación mortal por monóxido.",
+      "actionNote": "> ¿Por qué abrir ventanas 5 minutos diarios en ola de frío? Cinco minutos al sol sacan vapor húmedo antes que paredes o mantas pierdan su calor almacenado; aire más seco retiene mejor calidez y evita moho o asfixia.",
+      "svgFileName": "pr38-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // SECAR CONDENSACIÓN + VENTILAR 5M AL SOL",
+        "Secar cada mañana gotas de agua acumuladas en marco",
+        "Abrir 5 minutos al mediodía tibio sacando aire húmedo",
+        "Llama en cierre total (X) CO letal: dejar rendija (V)",
+        "[CLAVE] Secar y ventilar breve previene moho y gases"
+      ],
+      "deepDive": {
+        "badge": "CONDENSATION & CO SAFETY",
+        "title": "Prevención de Hipotermia Húmeda y Ventilación Segura Sin Pérdida de Masa Térmica",
+        "text": "La **condensación acumulada** moja aislamientos de papel y mantas disparando pérdida térmica. Un intercambio rápido de **5 minutos al mediodía** limpia humedad y CO conservando intacto el calor de muros y colchones.",
+        "fieldSpecs": [
+          {
+            "name": "Paño Seco Limpiando Gotas Matinales Junto a Ventana Entreabierta al Mediodía",
+            "scientificName": "Midday Brief Cross-Ventilation & Condensation Moisture Wiping",
+            "categoryTag": "Control Humedad / Ventilación Segura CO",
+            "imageFileName": "id-morning-ventilation-condensation-check.jpg",
+            "hudCode": "FIG. MAT-38D // MACRO OPTIC",
+            "hudStatus": "AIR & DRY: CONDENSATION CLEARED",
+            "traits": [
+              {
+                "label": "Seco/Diario",
+                "value": "**Limpie gotas del marco cada mañana** impidiendo frío húmedo."
+              },
+              {
+                "label": "Aire/5min",
+                "value": "**Ventile breve al sol del mediodía** sin enfriar paredes ni ropa."
+              },
+              {
+                "label": "Gas/Alerta",
+                "value": "**Mantenga rendija de un pulgar arriba** si arde llama interior."
+              }
+            ],
+            "fieldUse": "Evitar moho húmedo peligroso y asfixia silenciosa por monóxido"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Sellar Herméticamente Todas las Ventanas y Encender Estufas o Carbón Sin Ventilación",
+    "description": "Tapar el 100% de rendijas dejando ventilación cero y luego encender [Estufa en Lata](/protocol-21), hornillo de butano o carbón acumula monóxido de carbono inodoro letal mientras todos duermen. Mantenga siempre rendija superior ancho pulgar con cualquier llama. Proteja vidrios ante vientos según [Encintado Antiviento](/protocol-31), manténgase seco en [Cápsula de Cartón](/protocol-22) y rehidrate con [Suero ORS](/protocol-24).",
+    "consequence": "Asfixia silenciosa mortal por monóxido de carbono, hipotermia por ropa mojada y enfermedad respiratoria por moho."
+  },
+  "faqs": [
+    {
+      "question": "¿Qué cara de la lámina de burbujas va pegada al vidrio mojado: el lado liso o el de las burbujas?",
+      "causeDiagnostic": "Colocarla al revés reduce la tensión superficial del agua, hace que se despegue y enfría por convección.",
+      "resolution": "Presione siempre la **cara abultada de las burbujas directamente contra el cristal mojado** para encerrar aire sobre el vidrio. El reverso plano queda hacia adentro permitiendo limpiar polvo y gotitas fácilmente."
+    },
+    {
+      "question": "¿Con qué cubro las ventanas si no tengo nada de plástico de burbujas en casa durante la helada?",
+      "causeDiagnostic": "Cualquier capa gruesa de papel o tela que atrape aire quieto junto al vidrio frena gran parte del frío.",
+      "resolution": "Aproveche el sol directo de mediodía sin tapar el vidrio y apenas caiga la tarde cuelgue **planchas planas de cartón grueso, varias capas de diario seco o mantas pesadas** dentro del marco para encerrar aire nocturno."
+    }
+  ],
+  "outcome": {
+    "title": "Escudo Invernal Sin Energía: Sellado Con Mano Húmeda, Burbujas Con Agua, Cortina Plateada y Ventilación",
+    "badge": "TARGET OUTCOME // AISLAMIENTO TRIPLE INVERNAL SIN ENERGÍA",
+    "description": "Sistema doméstico triple contra heladas: rastreo manual de fugas y relleno en marcos, burbujas adheridas solo con rocío de agua, tope inferior más cortina plateada reflectante y secado diario con ventilación segura.",
+    "svgFileName": "pr38-outcome.svg",
+    "svgLabels": [
+      "PR-38 COMPLETO // SELLADO Y AISLAMIENTO INVERNAL SIN LUZ",
+      "FASE 01: RASTREO Y SELLO",
+      "Mano húmeda + papel en riel",
+      "FASE 02: BURBUJAS AL AGUA",
+      "Cara burbuja adherida sin cola",
+      "FASE 03: TOPE Y PLATEADO",
+      "Rollo toalla + reflejo calor",
+      "FASE 04: SECAR Y VENTILAR",
+      "Secado diario + 5 min mediodía",
+      "[PRINCIPIO] Sellar corrientes, atrapar aire y reflejar calor conserva temperatura segura"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Sin luz ni calefacción en plena ola polar? Usa agua, papel de diario y plástico de burbujas para mantener tu cuarto caliente sin electricidad!",
+    "body": "Primero moja leve el dorso de tu mano y recórrelo por el marco—donde sientas aire frío mete rollos duros de diario y trapos viejos. Segundo limpia el vidrio, rocía solo agua limpia y pega la cara CON BURBUJAS contra el cristal húmedo—cero pegamento y deja entrar el sol! Tercero pon una toalla gruesa enrollada abajo y cuelga lámina plateada brillante mirando adentro para rebotar el calor. Cuarto seca gotas cada mañana y ventila 5 minutos al sol del mediodía—¡jamás enciendas llamas en cuartos herméticos!"
+  },
+  "createdAt": "2026-11-21T14:29:26.279Z",
+  "contentHash": "fbcbd91d87c23005"
+}

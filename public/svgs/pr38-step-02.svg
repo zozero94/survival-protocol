@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg38s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="glass38s2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.5"/>
+    </linearGradient>
+    <pattern id="grid38s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow38s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg38s2)"/>
+  <rect width="400" height="400" fill="url(#grid38s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 02 // 물 분무 밀착 + 공기 방울 단열 막 유리 부착</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">유리 먼지 닦고 맑은 물을 고르게 분무해 밀착 준비</text>
+
+  <!-- Main Cross-Section: Outdoor Cold Arrows -> Window Glass -> Thin Water Mist Film -> Bumpy Bubble Cells -> Indoor Sun Light -->
+  <g filter="url(#shadow38s2)">
+    <!-- Outdoor Zone (Cold Blue) -->
+    <rect x="26" y="96" width="110" height="176" fill="#0c192c" stroke="#1e3a5f" stroke-width="1.5"/>
+    <!-- Cold Arrows Repelled at Glass Barrier -->
+    <path d="M 42 150 L 122 150" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="116,144 128,150 116,156" fill="#38bdf8"/>
+    <path d="M 42 214 L 122 214" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="116,208 128,214 116,220" fill="#38bdf8"/>
+
+    <!-- Vertical Glass Pane -->
+    <rect x="136" y="96" width="22" height="176" fill="url(#glass38s2)" stroke="#7dd3fc" stroke-width="1.8"/>
+
+    <!-- Thin Blue Water-Mist Adhesion Layer -->
+    <line x1="162" y1="100" x2="162" y2="268" stroke="#0ea5e9" stroke-width="5" stroke-dasharray="6 4"/>
+
+    <!-- Air-Bubble Cells Facing Glass (Side Profile Domes) -->
+    <g fill="#f1f5f9" fill-opacity="0.22" stroke="#e2e8f0" stroke-width="1.8">
+      <path d="M 192 104 Q 166 116 192 128"/>
+      <path d="M 192 132 Q 166 144 192 156"/>
+      <path d="M 192 160 Q 166 172 192 184"/>
+      <path d="M 192 188 Q 166 200 192 212"/>
+      <path d="M 192 216 Q 166 228 192 240"/>
+      <path d="M 192 244 Q 166 256 192 268"/>
+      <!-- Flat Inner Smooth Backing Layer -->
+      <line x1="192" y1="98" x2="192" y2="270" stroke="#cbd5e1" stroke-width="2.5"/>
+    </g>
+
+    <!-- Water Droplets Zoom & Warm Indoor Sun Rays Passing Straight In -->
+    <path d="M 46 118 L 320 118" stroke="#fde047" stroke-width="2.5" stroke-dasharray="5 3"/>
+    <polygon points="314,113 326,118 314,123" fill="#fde047"/>
+
+    <!-- Palm Press Direction Arrow From Indoor Side -->
+    <path d="M 282 186 L 204 186" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="210,180 198,186 210,192" fill="#22c55e"/>
+
+    <!-- Loupe Showing Bubble Side Facing Glass (CHECK V) -->
+    <circle cx="316" cy="204" r="38" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="292" y="182" width="10" height="44" fill="#38bdf8" fill-opacity="0.5"/>
+    <path d="M 320 184 Q 302 194 320 204 Q 302 214 320 224" fill="none" stroke="#e2e8f0" stroke-width="2.5"/>
+    <circle cx="340" cy="180" r="11" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <polyline points="335,180 339,184 345,176" fill="none" stroke="#86efac" stroke-width="2"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">올록볼록 방울 면을 유리 쪽으로 대고 위부터 압착</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">정지 공기층이 바깥 영하 냉기 전도를 차단 &amp; 채광</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 접착제 없이 물 표면 장력만으로 틈 없는 2중 공기 단열</text>
+</svg>

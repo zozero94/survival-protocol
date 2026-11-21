@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg38s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="foil38s3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <pattern id="grid38s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow38s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg38s3)"/>
+  <rect width="400" height="400" fill="url(#grid38s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 03 // 창틀 외풍 댐 + 은박 복사열 가림막 2차 차폐</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">창틀 바닥에 손목 두 굵기 수건·신문지 댐 배치</text>
+
+  <!-- Main Visual: Cold Falling Downdraft Blocked by Bottom Sill Towel Dam + Reflective Silver Foil Curtain Bouncing Radiant Warmth -->
+  <g filter="url(#shadow38s3)">
+    <!-- Window Frame & Glass Left -->
+    <rect x="34" y="96" width="16" height="156" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="34" y="252" width="110" height="18" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+
+    <!-- Cold Descending Downdraft Arrow Stopped by Sill Roll -->
+    <path d="M 66 112 L 66 218 Q 66 232 82 232" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="78,226 88,232 78,238" fill="#38bdf8"/>
+
+    <!-- Rolled Thick Towel / Paper Sill Draft Dam (Two Wrists Thick) -->
+    <ellipse cx="108" cy="236" rx="22" ry="16" fill="#475569" stroke="#fde047" stroke-width="1.8"/>
+    <path d="M 96 236 Q 108 228 120 236" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Radiant Shiny Foil Curtain Hanging Inside Behind Frame -->
+    <line x1="158" y1="90" x2="158" y2="254" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="150" y="96" width="16" height="156" rx="2" fill="url(#foil38s3)" stroke="#e2e8f0" stroke-width="1.5"/>
+    <!-- Hanging Clip Top -->
+    <rect x="148" y="88" width="20" height="10" rx="2" fill="#f59e0b"/>
+
+    <!-- Warm Living Room Floor Right -->
+    <rect x="166" y="252" width="198" height="18" fill="#292524" stroke="#78716c" stroke-width="1.5"/>
+
+    <!-- Warm Radiant Heat Arrows Bouncing Off Shiny Foil Back Into Room -->
+    <path d="M 288 142 L 174 142" stroke="#f97316" stroke-width="3" stroke-dasharray="4 3"/>
+    <path d="M 174 148 L 284 166" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="278,160 290,167 276,172" fill="#fbbf24"/>
+
+    <path d="M 294 206 L 174 206" stroke="#f97316" stroke-width="3" stroke-dasharray="4 3"/>
+    <path d="M 174 212 L 284 226" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="278,220 290,227 276,232" fill="#fbbf24"/>
+
+    <!-- Compact Warm Living Capsule Zone Right -->
+    <rect x="296" y="176" width="60" height="76" rx="4" fill="#451a03" stroke="#f59e0b" stroke-width="1.8"/>
+    <circle cx="326" cy="214" r="14" fill="#f97316" fill-opacity="0.7" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">반짝이는 은박 면을 실내로 향해 창 앞 가림막 고정</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">창가 낙하 냉기 차단 + 몸과 난로 복사열 내부 반사</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 2중 공기·복사 방어막으로 작은 방 하나의 온기 집중 보존</text>
+</svg>
