@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-39",
+  "category": "MEDICINE",
+  "title": "Resfriamento de Emergência contra Insolação sem Energia: Panos Úmidos em Artérias e Leito na Sombra",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[RESFRIAMENTO ARTERIAL POR EVAPORAÇÃO E LEITO DE SOLO FRIO NA SOMBRA PARA INSOLAÇÃO]",
+  "summary": "Se houver acesso ao resgate médico, carro com ar-condicionado, bolsas de gelo ou banheira de água fria por perto, ligue para a emergência imediatamente e resfrie a vítima nesses locais primeiro. Porém, sob calor extremo ao ar livre sem energia nem gelo, quando o suor para, a pele arde vermelha e surgem fala arrastada ou confusão, a febre interna mata em minutos. Raspe imediatamente um palmo de poeira quente sob sombra densa de árvores até expor solo úmido e frio, aplique panos de algodão molhados em água fria do [Filtro Natural de Carvão](/protocol-01) ou [Resfriador de Barro Zeer](/protocol-16) sobre laterais do pescoço, axilas e virilha sob abano contínuo, ofereça meios goles de [Soro Oral (ORS)](/protocol-24) SOMENTE após lucidez total e peça socorro com [Apito 120dB e Espelho](/protocol-27).",
+  "timeRequired": "Ação imediata de emergência (3 min para leito e panos + 20 a 40 min de resfriamento contínuo)",
+  "successRate": "94% (com mudança rápida para sombra, troca dos panos a cada 3–5 min nas 3 artérias, abano contínuo e zero líquido sem lucidez)",
+  "difficulty": "Iniciante (sem energia ou gelo; usa sombra densa, solo escavado, 3–4 panos de algodão, água fria limpa e galho folhudo)",
+  "outputPerHour": "Reduz rapidamente temperatura corporal letal sem energia usando corrente de evaporação e contato direto com solo frio",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3 a 4 panos limpos de algodão (ou camisa rasgada) e água limpa bem fria em tigela de madeira",
+      "desc": "Lave primeiro poeira de arranhões com água limpa para evitar infecção e mantenha panos bem encharcados no pescoço, axilas e virilha usando água fria do [Filtro Natural de Carvão](/protocol-01) ou [Resfriador de Barro Zeer](/protocol-16)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 galho largo com folhas (ou casaco esticado) para abanar e graveto ou pedra achatada para cavar",
+      "desc": "O abano sem pausas multiplica por mais de 3 vezes a perda de calor por evaporação, enquanto raspar um palmo de terra seca revela solo frio e úmido por baixo."
+    },
+    {
+      "id": "mat-03",
+      "name": "1L de água potável em copo de madeira (só após despertar bem) + pitada de sal e açúcar ou suco",
+      "desc": "Prepara [Soro Oral (ORS)](/protocol-24) seguro estritamente após retorno claro da consciência; trate água duvidosa antes com [Filtragem por Pano e Sol (SODIS)](/protocol-23)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Levar para sombra densa de árvores, raspar 1 palmo de poeira quente e folgar toda a roupa",
+      "description": "1. **Afastar do sol e de pedras quentes rumo à sombra espessa**: Proteja contra radiação direta levando a vítima para baixo de copa fechada longe de pedras aquecidas.\n2. **Raspar 1 palmo (15–20 cm) de terra superficial quente**: Evite calor acumulado no solo usando pedra chata ou graveto para expor **subsolo escuro, fresco e úmido** sob as costas.\n3. **Abrir golas, cintos e retirar botas e meias**: Facilite a saída imediata do calor desabotoando camadas pesadas e elevando os pés na altura de um punho.",
+      "actionNote": "> Por que cavar um palmo antes de deitar a pessoa na sombra? Mesmo debaixo de árvores, folhas secas e o pó da superfície guardam o calor da tarde como um colchão morno. Bastam 15–20 cm para alcançar terra fresca que puxa o calor do tronco para baixo.",
+      "svgFileName": "pr39-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // SOMBRA DENSA & LEITO DE TERRA FRIA",
+        "Fugir do sol e ir para sombra densa de árvores",
+        "Raspar 1 palmo de poeira até solo úmido e frio",
+        "Soltar golas, cintos e botas para liberar calor",
+        "[BASE] Solo frio na sombra puxa o calor do corpo"
+      ],
+      "deepDive": {
+        "badge": "SHADE & SUBSOIL CONDUCTION",
+        "title": "Condução Térmica Direta das Costas para o Subsolo Frio (15–20 cm)",
+        "text": "O pó superficial aquecido pelo ar de verão bloqueia o resfriamento passivo. Retirar **um palmo de terra quente** expõe **umidade fria sombreada** que drena o excesso de calor por toda a extensão do tronco sem usar eletricidade.",
+        "fieldSpecs": [
+          {
+            "name": "Sombra fechada de floresta com vala rasa de 1 palmo expondo subsolo úmido e frio",
+            "scientificName": "Deep Forest Shade 1-Span Scraped Cool Damp Subsoil Cooling Bed",
+            "categoryTag": "Abrigo na Sombra / Leito de Solo Frio",
+            "imageFileName": "id-heatstroke-shade-ground-trench.jpg",
+            "hudCode": "FIG. MED-39A // MACRO OPTIC",
+            "hudStatus": "GROUND BED: COOL SUBSOIL EXPOSED",
+            "traits": [
+              {
+                "label": "Sombra/Copa",
+                "value": "**Fugir de pedras quentes e sol** para abrigo ventilado de mata fechada."
+              },
+              {
+                "label": "Cavar/1-Palmo",
+                "value": "**Remover 15–20 cm de pó quente** até sentir o solo frio e úmido nas mãos."
+              },
+              {
+                "label": "Soltar/Roupa",
+                "value": "**Abrir colarinho, cinto e botas** liberando o calor preso no tronco."
+              }
+            ],
+            "fieldUse": "Cria de imediato um leito condutor frio sem precisar de gelo"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Pôr panos úmidos frios no pescoço, axilas e virilha e abanar sem parar",
+      "description": "1. **Lavar poeira da pele e cobrir 3 artérias com panos úmidos**: Previna infecção em escoriações lavando o pó com água limpa do [Filtro Natural de Carvão](/protocol-01) e aplique panos frios em **laterais do pescoço, axilas e virilha**.\n2. **Abanar continuamente com galho largo folhudo**: Acelere fortemente a perda por evaporação mantendo vento constante sobre os panos molhados e a pele úmida.\n3. **Borrifar gotas frias nos braços e pernas**: Aproveite pouca água umedecendo levemente braços, peito e pernas para evaporar calor pelo corpo todo.",
+      "actionNote": "> Por que concentrar os panos no pescoço, axilas e virilha em vez da testa ou das mãos? Nesses três cruzamentos passam grandes artérias bem perto da pele. Resfriar o sangue nesses pontos leva sangue mais frio rapidamente ao cérebro e aos órgãos.",
+      "svgFileName": "pr39-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // PANOS ÚMIDOS EM 3 ARTÉRIAS & ABANO",
+        "Pôr panos frios no pescoço, axilas e virilha",
+        "Abanar sem parar com galho largo de folhas",
+        "Lavar poeira evita infecção e acelera resfrio",
+        "[BASE] Resfriar 3 artérias baixa febre interna"
+      ],
+      "deepDive": {
+        "badge": "ARTERIAL EVAPORATIVE COOLING",
+        "title": "Resfriamento Focal de Carótida, Axila e Femoral com Ventilação Forçada",
+        "text": "Na falta de gelo, água evaporando retira enorme calor latente. Cobrir **pescoço, axilas e virilha** com panos de algodão úmidos sob **abano sem pausas** resfria a circulação de 3 a 5 vezes mais rápido que o ar parado na sombra.",
+        "fieldSpecs": [
+          {
+            "name": "Panos de algodão úmidos dobrados ao lado de tigela de madeira com água fria e galho folha",
+            "scientificName": "Clean Cold-Water Soaked Cotton Cloths Over Carotid, Axillary & Femoral Hubs",
+            "categoryTag": "3 Artérias Principais / Abano Evaporativo",
+            "imageFileName": "id-wet-cloth-evaporative-artery-wrap.jpg",
+            "hudCode": "FIG. MED-39B // MACRO OPTIC",
+            "hudStatus": "COOLING HUBS: 3 ARTERIAL ZONES",
+            "traits": [
+              {
+                "label": "Pontos/3-Zonas",
+                "value": "**Fixar compressas em pescoço, axilas e virilha** sobre vasos calibrosos."
+              },
+              {
+                "label": "Limpeza/Pele",
+                "value": "**Enxaguar terra com cuidado** evitando infecção bacteriana em arranhões."
+              },
+              {
+                "label": "Vento/Abano",
+                "value": "**Manter vento firme sem parar** para renovar o ar úmido junto à pele."
+              }
+            ],
+            "fieldUse": "Redução rápida da febre central resfriando direto grandes vasos superficiais"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Mergulhar panos em água fria a cada 3–5 minutos até acalmar rubor e parar tronco se tremer",
+      "description": "1. **Reumedecer panos mornos a cada 3–5 minutos**: Mantenha a troca térmica mergulhando o tecido aquecido na tigela fria a cada **3 a 5 minutos** antes que funcione como compressa quente.\n2. **Observar se o rosto vermelho e a respiração forte acalmam**: Confirme a melhora vendo a **vermelhidão intensa diminuir e o fôlego ofegante desacelerar**.\n3. **Retirar panos do tronco se começar a tremer**: Impeça rebote de calor muscular removendo os panos úmidos de peito e barriga no instante em que surgir **tremor involuntário**, mantendo apenas abano leve.",
+      "actionNote": "> Por que mergulhar os panos novamente a cada 3 a 5 minutos mesmo ainda molhados? A febre extrema aquece o algodão úmido à temperatura do corpo em poucos minutos; sem troca por água fria, o pano passa a segurar o calor em vez de tirá-lo.",
+      "svgFileName": "pr39-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // REUMEDECER A CADA 3-5 MIN & TREMO",
+        "Molhar pano morno na água fria a cada 3-5 min",
+        "Vigiar rosto vermelho e respiração ofegante",
+        "Se houver tremor (X), tirar panos do tronco",
+        "[BASE] Troca constante evita efeito de estufa"
+      ],
+      "deepDive": {
+        "badge": "CYCLIC VAPOR RE-SOAKING",
+        "title": "Bloqueio do Equilíbrio Térmico (Ciclo 3–5 Min) e Rebote por Calafrio",
+        "text": "Quando o pano atinge a temperatura da pele, o resfriamento para. Renovar o tecido na água fria a cada **3 a 5 minutos** garante saída contínua de calor, enquanto retirar do peito ao **primeiro tremor** impede geração interna de calor.",
+        "fieldSpecs": [
+          {
+            "name": "Tecido leve de algodão úmido liberando vapor frio sob brisa de folha verde na sombra",
+            "scientificName": "3-to-5-Minute Cyclic Cold Re-Soaking Under Continuous Leaf Fanning",
+            "categoryTag": "Ciclo 3–5 Min / Parar se Tremer",
+            "imageFileName": "id-evaporative-wet-sheet-breeze-cooling.jpg",
+            "hudCode": "FIG. MED-39C // MACRO OPTIC",
+            "hudStatus": "CYCLE: 3-5 MIN RE-SOAK LOOP",
+            "traits": [
+              {
+                "label": "Ciclo/3–5m",
+                "value": "**Trocar e molhar a cada 3–5 minutos** mantendo o tecido bem mais frio que a pele."
+              },
+              {
+                "label": "Sinais/Cor",
+                "value": "**Acompanhar queda do rubor facial** e suavização da respiração ofegante."
+              },
+              {
+                "label": "Alerta/Tremor",
+                "value": "**Retirar panos do tronco na hora** se o corpo começar a tremer de frio."
+              }
+            ],
+            "fieldUse": "Ciclo contínuo seguro de queda térmica evitando hipertermia ou hipotermia de rebote"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Só dar meios goles de Soro Oral (ORS) após olhar firme e fala clara e pedir socorro",
+      "description": "1. **Confirmar contato visual e resposta nítida antes de beber**: Evite afogamento mortal nas vias aéreas dando líquidos **SOMENTE quando a pessoa olhar nos olhos, responder com clareza e segurar o copo sozinha**.\n2. **Beber meios goles de Soro Oral a cada 5 minutos**: Previne vômitos oferecendo [Soro Oral (ORS)](/protocol-24) limpo devagar em **meios goles a cada 5 minutos** sem virar de vez.\n3. **Descansar na sombra e acionar resgate**: Evite recaída mantendo repouso na sombra e sinalizando socorro com [Apito 120dB e Espelho](/protocol-27).",
+      "actionNote": "> Por que jamais despejar água na boca de alguém confuso ou sonolento? A insolação desliga o reflexo de engolir; líquido jogado na garganta escorre direto para os pulmões, causando asfixia silenciosa ou infecção grave.",
+      "svgFileName": "pr39-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CHECAR LUCIDEZ ANTES DE DAR SORO",
+        "Só dar água com olhar firme e fala bem clara",
+        "Nunca despejar em confusão (X): risco de afogar",
+        "Dar soro de sal e açúcar em meio gole a cada 5m",
+        "[BASE] Só hidratar lúcido e pedir socorro"
+      ],
+      "deepDive": {
+        "badge": "AIRWAY-SAFE ORS REHYDRATION",
+        "title": "Verificação do Reflexo de Deglutição e Hidratação Isotônica em Meios Goles",
+        "text": "Febre extrema compromete a proteção das vias aéreas. Só depois que o resfriamento devolve **olhar firme e fala coerente**, pequenos goles de [Soro Oral (ORS)](/protocol-24) repõem água e sais sem provocar aspiração nem vômito.",
+        "fieldSpecs": [
+          {
+            "name": "Copo de madeira com água limpa ao lado de sal grosso em folha verde sobre pedra sombreada",
+            "scientificName": "Conscious Airway-Safe Small-Sip Oral Rehydration Salt & Clean Water Recovery",
+            "categoryTag": "Teste de Lucidez / Soro em Meios Goles",
+            "imageFileName": "id-conscious-ors-small-sip-recovery.jpg",
+            "hudCode": "FIG. MED-39D // MACRO OPTIC",
+            "hudStatus": "RECOVERY: CONSCIOUS SMALL SIPS ONLY",
+            "traits": [
+              {
+                "label": "Teste/Lucidez",
+                "value": "**Confirmar resposta vocal clara** e firmeza nas mãos antes de hidratar."
+              },
+              {
+                "label": "Proibido/Tonto",
+                "value": "**Zero gotas em boca sonolenta** — risco imediato de sufocamento pulmonar."
+              },
+              {
+                "label": "Dose/5-Min",
+                "value": "**Meios goles a cada 5 minutos** para o estômago absorver sem náusea."
+              }
+            ],
+            "fieldUse": "Reposição segura de sais e líquidos apenas com proteção aérea ativa"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Despejar água em vítima delirando ou cobri-la com cobertor seco ao sol",
+    "description": "Forçar água na boca de quem está confuso, tonto ou desmaiado por insolação joga líquido direto nos pulmões e mata por asfixia. Nunca cubra vítima superaquecida com cobertores secos sob o sol pensando em 'fazer suar' — isso prende o calor letal, causando lesão cerebral e necrose de órgãos. Limpe qualquer arranhão com água purificada do [Filtro Natural de Carvão](/protocol-01) ou [Filtro de Pano & SODIS](/protocol-23) para impedir infecção grave.",
+    "consequence": "Asfixia por aspiração ao forçar líquido sem consciência, necrose de órgãos por calor preso e infecção por água suja."
+  },
+  "faqs": [
+    {
+      "question": "Por que abanar sem parar se já colocamos panos molhados e frios sobre o corpo?",
+      "causeDiagnostic": "Ar parado cria rapidamente uma película quente e úmida sobre o tecido, interrompendo a evaporação.",
+      "resolution": "Mesmo que a água do riacho ou do [Resfriador de Barro Zeer](/protocol-16) não esteja gelada, **o vento forte e contínuo com galho largo** expulsa o vapor úmido e extrai calor do corpo de 3 a 5 vezes mais depressa."
+    },
+    {
+      "question": "O que fazer se a pessoa começar a tremer de frio enquanto estamos resfriando o corpo?",
+      "causeDiagnostic": "O tremor contrai os músculos involuntariamente e gera calor novo de volta dentro do corpo.",
+      "resolution": "**Tremores repentinos avisam que a pele esfriou além do limite ou o centro já cedeu.** Tire logo os panos úmidos do tórax, mantenha apenas vento leve na sombra e observe fala e respiração com atenção."
+    }
+  ],
+  "outcome": {
+    "title": "Protocolo Zero Energia para Insolação: Sombra em Solo Frio, Abano em 3 Artérias e Soro Lúcido",
+    "badge": "TARGET OUTCOME // RESFRIAMENTO ARTERIAL EVAPORATIVO E RECUPERAÇÃO SEGURA",
+    "description": "Socorro de campo completo contra insolação sem gelo nem energia: raspar um palmo até solo úmido frio na sombra, abanar panos úmidos no pescoço, axilas e virilha reumedecidos a cada 3–5 minutos e oferecer meios goles de soro somente após lucidez plena.",
+    "svgFileName": "pr39-outcome.svg",
+    "svgLabels": [
+      "PR-39 FINAL // RESFRIAMENTO EM 3 ARTÉRIAS",
+      "FASE 01: LEITO NA SOMBRA",
+      "Raspar 1 palmo até solo frio",
+      "FASE 02: 3 ARTÉRIAS + AR",
+      "Pano frio + abano em pescoço",
+      "FASE 03: TROCA 3-5 MIN",
+      "Molhar de novo e ver tremores",
+      "FASE 04: SORO SÓ LÚCIDO",
+      "Meio gole SÓ se bem acordado",
+      "[PRINCÍPIO] Evaporação nas 3 artérias com solo frio baixa o calor rápido"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Calor extremo fora de casa: alguém parou de suar, ficou vermelho vivo e começou a delirar? Corte a insolação sem gelo em 3 minutos!",
+    "body": "Primeiro, tire do sol para a sombra fechada das árvores, raspe um palmo de terra quente até o solo frio e solte golas e cintos! Segundo, molhe panos de algodão e coloque SOMENTE onde passam as maiores artérias: laterais do pescoço, axilas e virilha, abanando sem parar com um galho cheio de folhas! Terceiro, molhe o pano de novo a cada 3 a 5 minutos e tire do peito se começar a tremer! Quarto, NUNCA jogue água em quem está zonzo — espere falar claro e dê meios goles de água com sal e açúcar!"
+  },
+  "createdAt": "2026-11-21T23:49:25.707Z",
+  "contentHash": "91ac3a06c8b794e1"
+}

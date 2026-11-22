@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg39out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="wood39out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c3a21"/>
+      <stop offset="50%" stop-color="#8c5a32"/>
+      <stop offset="100%" stop-color="#4a2e19"/>
+    </linearGradient>
+    <pattern id="grid39out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow39out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg39out)"/>
+  <rect width="800" height="450" fill="url(#grid39out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="11.5" font-weight="bold">PR-39 완성체 // 열사병 3대 동맥 증발 냉각 &amp; 그늘 응급 처치</text>
+
+  <!-- 4 Stage Cards -->
+  <g filter="url(#shadow39out)">
+    <!-- STAGE 01 -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="34" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 그늘 · 속흙 침상</text>
+
+    <ellipse cx="109" cy="156" rx="68" ry="18" fill="#15803d" stroke="#22c55e"/>
+    <rect x="34" y="230" width="150" height="28" fill="#0e7490" stroke="#38bdf8"/>
+    <path d="M 64 218 L 68 232 L 150 232 L 154 218 Z" fill="#0c192c" stroke="#38bdf8"/>
+    <rect x="82" y="216" width="54" height="12" rx="4" fill="#94a3b8"/>
+    <line x1="109" y1="234" x2="109" y2="254" stroke="#38bdf8" stroke-width="2.5"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="34" y="341" fill="#94a3b8" font-family="monospace" font-size="8">겉흙 1뼘 긁어 차가운 땅에 눕힘</text>
+
+    <!-- STAGE 02 -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="228" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 3대 동맥 · 부채질</text>
+
+    <circle cx="288" cy="148" r="12" fill="#334155" stroke="#94a3b8"/>
+    <rect x="268" y="166" width="40" height="58" rx="6" fill="#334155" stroke="#94a3b8"/>
+    <rect x="278" y="158" width="20" height="8" rx="2" fill="#38bdf8"/>
+    <circle cx="268" cy="176" r="7" fill="#38bdf8"/>
+    <circle cx="308" cy="176" r="7" fill="#38bdf8"/>
+    <ellipse cx="288" cy="220" rx="14" ry="7" fill="#38bdf8"/>
+    <ellipse cx="352" cy="178" rx="14" ry="26" fill="#15803d" stroke="#4ade80"/>
+    <path d="M 338 182 L 314 182" stroke="#38bdf8" stroke-width="2.5"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="228" y="341" fill="#94a3b8" font-family="monospace" font-size="8">목·겨드랑이·사타구니 젖은 천 바람</text>
+
+    <!-- STAGE 03 -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#dc2626" stroke-width="1"/>
+    <text x="422" y="102" fill="#ef4444" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 3~5분 재적심 관찰</text>
+
+    <rect x="456" y="152" width="64" height="20" rx="4" fill="#fed7aa" stroke="#f97316"/>
+    <path d="M 442 204 L 452 246 Q 456 256 497 256 Q 538 256 542 246 L 552 204 Z" fill="url(#wood39out)" stroke="#9a6b42"/>
+    <ellipse cx="497" cy="208" rx="48" ry="8" fill="#0284c7" fill-opacity="0.7" stroke="#7dd3fc"/>
+    <path d="M 526 162 Q 546 174 542 198" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M 452 198 Q 438 178 450 162" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="422" y="341" fill="#94a3b8" font-family="monospace" font-size="8">미지근해지면 찬물 교체·떨림 주시</text>
+
+    <!-- STAGE 04 -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="616" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 의식 확인 후 급수</text>
+
+    <circle cx="662" cy="184" r="18" fill="#334155" stroke="#86efac"/>
+    <circle cx="668" cy="180" r="3" fill="#fef08a"/>
+    <path d="M 692 202 L 696 238 Q 698 244 716 244 Q 734 244 736 238 L 740 202 Z" fill="url(#wood39out)" stroke="#fde047"/>
+    <ellipse cx="716" cy="206" rx="20" ry="5" fill="#38bdf8"/>
+    <circle cx="748" cy="154" r="12" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <polyline points="742,154 746,158 754,149" fill="none" stroke="#86efac" stroke-width="2.2"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="616" y="341" fill="#94a3b8" font-family="monospace" font-size="8">눈맞춤 대답 시만 소량 수액 반 모금</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[공학 원리] 3대 표층 동맥 증발 잠열 냉각과 찬 속흙 전도 조합으로 무전력 고열 급속 차단</text>
+</svg>

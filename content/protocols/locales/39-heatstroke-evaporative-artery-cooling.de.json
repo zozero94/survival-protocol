@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-39",
+  "category": "MEDICINE",
+  "title": "Hitzschlag-Notfall ohne Strom: Arterienkühlung mit nassen Tüchern und kühlem Schattenboden",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[HITZSCHLAG-NOTFALL IM FREIEN: ARTERIEN-VERDUNSTUNGSKÜHLUNG & SCHATTENBODEN]",
+  "summary": "Wenn der Notruf 112 erreichbar ist und ein klimatisiertes Fahrzeug, Kühlakkus oder kaltes Badewasser in der Nähe sind, rufen Sie sofort professionelle Hilfe und kühlen Sie den Betroffenen dort zuerst. Versagt bei Sommerhitze ohne Strom und Eis jedoch plötzlich das Schwitzen, wird die Haut glühend heiß und rot und treten Verwirrung oder Lallen auf, droht binnen Minuten Lebensgefahr. Kratzen Sie sofort im tiefen Baumschatten eine Handspanne heißen Oberflächenstaub bis auf kühlen feuchten Unterboden ab, legen Sie saubere Baumwolltücher mit kaltem Wasser aus einem [Natur-Wasserfilter](/protocol-01) oder [Ton-Verdunstungskühler](/protocol-16) auf Halsseiten, Achseln und Leiste unter pausenlosem Fächeln, geben Sie kleine Schlucke [Trinklösung (ORS)](/protocol-24) NUR bei wachem klarem Blick und fordern Sie Hilfe per [120-dB-Pfeife & Spiegel](/protocol-27) an.",
+  "timeRequired": "Sofortiger Notfalleinsatz (3 Min. Schattenbett & Tuchanlage + 20–40 Min. intensives Kühlen)",
+  "successRate": "94% (bei raschem Schattenwechsel, 3-Adern-Nachnetzen alle 3–5 Min., Dauerfächeln & Trinkverbot bei Bewusstlosigkeit)",
+  "difficulty": "Anfänger (ohne Strom oder Eis; benötigt nur dichten Schatten, 3–4 Baumwolltücher, kühles sauberes Wasser & Laubast)",
+  "outputPerHour": "Senkt lebensbedrohliche Körperhitze schnell ohne Strom oder Eis durch Verdunstungswind und kühlen Bodenkontakt",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3–4 saubere Baumwolltücher oder zerrissenes Baumwollhemd & klares kaltes Wasser in Holzschale",
+      "desc": "Schmutz auf geschürfter Haut zuerst sanft mit sauberem Wasser abspülen, um Infektionen vorzubeugen, dann nasse Tücher auf Hals, Achseln und Leiste legen — ideal mit kühlem Wasser aus einem [Natur-Wasserfilter](/protocol-01) oder [Ton-Verdunstungskühler](/protocol-16)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 breiter grüner Laubast (oder straff gespanntes Kleidungsstück) zum Fächeln & flacher Stein oder Stock",
+      "desc": "Stetiges Fächeln steigert die Verdunstungskühlung über nasser Haut auf über das Dreifache, während das Abkratzen einer Handspanne heißen Staubs kühlen Boden darunter freilegt."
+    },
+    {
+      "id": "mat-03",
+      "name": "1L sauberes Trinkwasser im Holzbecher (nur nach Erholung) + 1 Prise Salz & Zucker oder Fruchtsaft",
+      "desc": "Dient zur Herstellung von sicherer [Trinklösung (ORS)](/protocol-24) ausschließlich nach voller Rückkehr des Bewusstseins; unklares Wasser vorher über [Tuchfilterung & Sonnenlicht (SODIS)](/protocol-23) reinigen."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: In tiefen Baumschatten bringen, 1 Handspanne heißen Staub abheben & Kleidung weit öffnen",
+      "description": "1. **Weg von Sonne und heißen Steinen in dichten Schatten**: Schützen Sie die betroffene Person vor weiterer Wärmestrahlung, indem Sie sie sofort unter dichtes Laubdach fern von sonnenheißen Felsen tragen.\n2. **Eine Handspanne (15–20 cm) heißen Oberboden abkratzen**: Vermeiden Sie warmen Staub unter dem Rücken, indem Sie mit Stein oder Stock bis auf **kühlen, leicht feuchten Unterboden** ausschaben.\n3. **Enge Kragen, Gürtel und Schuhe lockern**: Erleichtern Sie sofort den Wärmeabzug, indem Sie Hemdknöpfe, Gürtel und Stiefel weit öffnen und die Beine eine Fausthöhe leicht anheben.",
+      "actionNote": "> Warum eine Handspanne Erde abkratzen, statt den Menschen einfach im Schatten auf den Boden zu legen? Selbst im Schatten speichern trockenes Laub und obere Staubschichten noch Nachmittagswärme und wirken am Rücken wie eine warme Matte. Erst 15–20 cm tiefer liegt kühle feuchte Erde, die Hitze direkt nach unten abzieht.",
+      "svgFileName": "pr39-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // TIEFER SCHATTEN & KÜHLE ERDMULDE",
+        "Hitzefläche meiden, tiefen Baumschatten aufsuchen",
+        "1 Handspanne heißen Staub zu kühlem Boden abheben",
+        "Kragen, Gürtel und Schuhe für Wärmeabgabe öffnen",
+        "[KERN] Kühler Schattenboden leitet Rumpfhitze ab"
+      ],
+      "deepDive": {
+        "badge": "SHADE & SUBSOIL CONDUCTION",
+        "title": "Direkte Rückenwärme-Ableitung in kühlen Schatten-Unterboden (15–20 cm Tiefe)",
+        "text": "Durch warme Luft aufgeheizte Oberflächenerde blockiert die passive Rückenabkühlung. Das Abheben von **einer Handspanne trockenem Staub** legt **kühle Schattenfeuchte** direkt unter dem Rumpf frei und leitet tiefe Körperhitze stromlos ins Erdreich ab.",
+        "fieldSpecs": [
+          {
+            "name": "Dichter Waldschatten mit flach abgeschabtem Erdbett auf kühlem feuchtem Unterboden",
+            "scientificName": "Deep Forest Shade 1-Span Scraped Cool Damp Subsoil Cooling Bed",
+            "categoryTag": "Schattenschutz / Erdbett-Ableitung",
+            "imageFileName": "id-heatstroke-shade-ground-trench.jpg",
+            "hudCode": "FIG. MED-39A // MACRO OPTIC",
+            "hudStatus": "GROUND BED: COOL SUBSOIL EXPOSED",
+            "traits": [
+              {
+                "label": "Schatten/Ort",
+                "value": "**Besonnte Felsen und Böden meiden** und zügig in luftigen Schatten tragen."
+              },
+              {
+                "label": "Graben/Spanne",
+                "value": "**15–20 cm warmen Staub abtragen**, bis die Erde sich kühl und feucht anfühlt."
+              },
+              {
+                "label": "Lösen/Kleid",
+                "value": "**Kragen, Gürtel und Schuhe öffnen**, damit gestaute Rumpfhitze entweicht."
+              }
+            ],
+            "fieldUse": "Schafft ohne Eis sofort eine wärmeziehende Liegefläche in der Wildnis"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Nasse Baumwolltücher auf Hals, Achseln & Leiste legen und pausenlos Luft zufächeln",
+      "description": "1. **Staub abwaschen & 3 Hauptadern mit nassen Tüchern belegen**: Verhindern Sie Wundinfektionen auf Schürfwunden durch Abspülen mit Wasser aus dem [Natur-Wasserfilter](/protocol-01) und legen Sie nasse Baumwolltücher auf **Halsseiten, Achseln und Leiste**, um zirkulierendes Blut zu kühlen.\n2. **Mit breitem Laubast ohne Pause stark fächeln**: Steigern Sie die Verdunstungsleistung erheblich, indem Sie dauerhaft frische Luft über feuchte Tücher und nasse Haut wedeln.\n3. **Arme und Beine zusätzlich leicht mit Wasser benetzen**: Nutzen Sie knappes kühles Wasser optimal, indem Sie Tropfen auf Arme und Beine spritzen und weiterfächeln.",
+      "actionNote": "> Warum gezielt Hals, Achseln und Leiste statt nur Stirn oder Hände belegen? An diesen drei Punkten verlaufen große Schlagadern dicht unter der Hautoberfläche. Wird dort Blut gekühlt, fließt es rasch zu Gehirn und inneren Organen und drückt das Fieber deutlich schneller.",
+      "svgFileName": "pr39-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 3 HAUPTADERN KÜHLEN & DAUERFÄCHELN",
+        "Nasse Tücher auf Hals, Achseln & Leisten legen",
+        "Mit breitem Laubast pausenlos Luft zufächeln",
+        "Staub abspülen schützt vor Infektion & kühlt",
+        "[KERN] Kaltes Blut an 3 Adern senkt Kerntemp."
+      ],
+      "deepDive": {
+        "badge": "ARTERIAL EVAPORATIVE COOLING",
+        "title": "Gezielte Kühlung der drei Hauptschlagadern mittels Verdunstungszug",
+        "text": "Ohne Eis entzieht verdunstendes Wasser auf der Haut enorme Wärmemengen. Liegen kühle nasse Tücher auf **Hals, Achseln und Leiste** bei **ununterbrochenem Fächeln**, sinkt die Bluttemperatur drei- bis fünfmal schneller als in stehender Schattenluft.",
+        "fieldSpecs": [
+          {
+            "name": "Saubere gefaltete nasse Baumwolltücher neben Holzschale mit Kaltwasser und Laubast",
+            "scientificName": "Clean Cold-Water Soaked Cotton Cloths Over Carotid, Axillary & Femoral Hubs",
+            "categoryTag": "3 Arterienpunkte / Fächel-Verdunstung",
+            "imageFileName": "id-wet-cloth-evaporative-artery-wrap.jpg",
+            "hudCode": "FIG. MED-39B // MACRO OPTIC",
+            "hudStatus": "COOLING HUBS: 3 ARTERIAL ZONES",
+            "traits": [
+              {
+                "label": "Zonen/3-Punkt",
+                "value": "**Nasse Tücher auf Hals, Achseln und Leiste** als Hauptwärmetauscher legen."
+              },
+              {
+                "label": "Hygiene/Haut",
+                "value": "**Schmutz erst sanft abwaschen**, um Infektionen offener Kratzer zu vermeiden."
+              },
+              {
+                "label": "Wind/Fächer",
+                "value": "**Ohne Pause kräftig fächeln**, damit feuchte Luftschicht sofort abzieht."
+              }
+            ],
+            "fieldUse": "Beschleunigt zentrale Blutkühlung direkt an großen oberflächennahen Gefäßen"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Tücher alle 3–5 Min. im kalten Wasser erneuern und bei einsetzendem Zittern sofort reduzieren",
+      "description": "1. **Laubwarm gewordene Tücher alle 3–5 Min. neu tauchen**: Halten Sie die Kühlung aktiv, indem Sie körperwarme Tücher spätestens alle **3 bis 5 Minuten** in die kalte Holzschale tauchen, bevor sie Wärme stauen.\n2. **Nachlassen von hochrotem Gesicht und Hecheln prüfen**: Kontrollieren Sie den Erfolg, indem Sie achten, ob das **dunkelrote Gesicht blasser wird und schnelles Hecheln sich beruhigt**.\n3. **Bei plötzlichem Muskelzittern Rumpftücher sofort abnehmen**: Verhindern Sie neue Eigenwärme durch Kältezittern, indem Sie feuchte Brusttücher bei **erstem Frieren sofort abheben** und nur noch leicht fächeln.",
+      "actionNote": "> Warum alle 3 bis 5 Minuten neu ins kalte Wasser tauchen, noch ehe das Tuch trocken ist? Durch die hohe Fieberhitze wärmt sich feuchte Baumwolle binnen wenigen Minuten auf Hauttemperatur auf und blockiert als warmer Wickel die weitere Abkühlung.",
+      "svgFileName": "pr39-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // ALLE 3-5 MIN NACHNETZEN & ZITTERN",
+        "Warme Tücher alle 3-5 Min im Kaltwasser kühlen",
+        "Rote Haut & starkes Hecheln stetig beobachten",
+        "Bei Zittern (X) Rumpftücher sofort abnehmen",
+        "[KERN] Wechsel verhindert Hitzestau & Kälteschub"
+      ],
+      "deepDive": {
+        "badge": "CYCLIC VAPOR RE-SOAKING",
+        "title": "Vermeidung von Wärmestau (3–5-Min.-Takt) & Abbruch bei Kältezittern",
+        "text": "Sobald Tuch und Haut gleich warm sind, endet der Wärmeentzug. Regelmäßiges Nachnetzen alle **3 bis 5 Minuten** hält den Abstrom konstant, während das Abnehmen bei **einsetzendem Zittern** gegenläufige Muskelwärme unterbindet.",
+        "fieldSpecs": [
+          {
+            "name": "Luftiges feuchtes Baumwolltuch mit Verdunstungstropfen unter grünem Laubfächer im Schatten",
+            "scientificName": "3-to-5-Minute Cyclic Cold Re-Soaking Under Continuous Leaf Fanning",
+            "categoryTag": "3–5 Min. Wechsel / Zitter-Stopp",
+            "imageFileName": "id-evaporative-wet-sheet-breeze-cooling.jpg",
+            "hudCode": "FIG. MED-39C // MACRO OPTIC",
+            "hudStatus": "CYCLE: 3-5 MIN RE-SOAK LOOP",
+            "traits": [
+              {
+                "label": "Takt/3–5 Min.",
+                "value": "**Alle 3–5 Minuten frisch benetzen**, damit Tücher kühler als die Haut bleiben."
+              },
+              {
+                "label": "Zeichen/Atem",
+                "value": "**Auf abklingende Gesichtsröte** und ruhigere Atemzüge laufend achten."
+              },
+              {
+                "label": "Stopp/Zittern",
+                "value": "**Rumpftücher sofort wegnehmen**, sobald sichtbares Frösteln oder Zittern startet."
+              }
+            ],
+            "fieldUse": "Sicherer Kreislauf aus aktiver Verdunstungskühlung ohne Überkühlung"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Erst nach klarem Blick und deutlicher Antwort schluckweise Salzwasser geben & Hilfe rufen",
+      "description": "1. **Klaren Blickkontakt & wache Antwort vor jedem Schluck prüfen**: Vermeiden Sie tödliches Ersticken, indem Flüssigkeit **AUSSCHLIESSLICH gegeben wird, wenn die Person klar blickt, sinnvoll antwortet und den Becher selbst hält**.\n2. **Alle 5 Minuten einen halben Schluck ORS trinken lassen**: Verhindern Sie Erbrechen, indem sichere [Trinklösung (ORS)](/protocol-24) aus sauberem Wasser langsam in **halben Schlucken alle 5 Minuten** getrunken wird.\n3. **Im tiefen Schatten ruhen & Rettungssignal geben**: Beugen Sie Rückfällen vor durch ruhige Schattenlage und Alarmierung mittels [120-dB-Pfeife & Spiegel](/protocol-27).",
+      "actionNote": "> Warum darf man Verwirrten oder Benommenen keinesfalls Wasser in den Mund gießen? Beim Hitzschlag sind Schluck- und Hustenreflexe stark geschwächt; eingegossenes Wasser läuft lautlos in die Luftröhre und führt zum Ersticken oder schwerer Lungenentzündung.",
+      "svgFileName": "pr39-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // KLARES BEWUSSTSEIN VOR ORS-SCHLUCKEN",
+        "Trinken NUR bei klarem Blick und wacher Antwort",
+        "Bei Benommenheit (X) nie trinken: Erstickung!",
+        "Salz-Zucker-Wasser alle 5 Min halbschluckweise",
+        "[KERN] Erst wachen Blick prüfen, dann ORS & Ruf"
+      ],
+      "deepDive": {
+        "badge": "AIRWAY-SAFE ORS REHYDRATION",
+        "title": "Schluckreflex-Prüfung vor kontrollierter isotoner Flüssigkeitsgabe",
+        "text": "Schwere Überhitzung beeinträchtigt die Atemwegssicherung beim Schlucken. Erst wenn Kühlung **klaren Blick und flüssiges Sprechen** zurückbringt, gleicht schluckweises [Trinklösung (ORS)](/protocol-24) Verlust von Wasser und Salzen ohne Erstickungsgefahr aus.",
+        "fieldSpecs": [
+          {
+            "name": "Holzbecher mit klarem Trinkwasser neben grobem Salz auf grünem Blatt im Schatten",
+            "scientificName": "Conscious Airway-Safe Small-Sip Oral Rehydration Salt & Clean Water Recovery",
+            "categoryTag": "Wachheitscheck / Kleine ORS-Schlucke",
+            "imageFileName": "id-conscious-ors-small-sip-recovery.jpg",
+            "hudCode": "FIG. MED-39D // MACRO OPTIC",
+            "hudStatus": "RECOVERY: CONSCIOUS SMALL SIPS ONLY",
+            "traits": [
+              {
+                "label": "Test/Wachheit",
+                "value": "**Klare Antworten und festen Bechergriff** zwingend vorher prüfen."
+              },
+              {
+                "label": "Verbot/Dösig",
+                "value": "**Keinen Tropfen bei Benommenheit** einflößen — akute Erstickungsgefahr."
+              },
+              {
+                "label": "Menge/Schluck",
+                "value": "**Alle 5 Minuten einen halben Schluck** gegen Magenkrämpfe und Erbrechen."
+              }
+            ],
+            "fieldUse": "Sichere Kreislauf-Stabilisierung nach Abklingen der akuten Gehirnüberhitzung"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Bewusstlosen Wasser einflößen oder Überhitzte unter Decken in der Sonne einwickeln",
+    "description": "Wird einem benommenen oder lallenden Hitzschlagopfer Wasser in den Mund gegossen, fließt es ungehindert in die Lunge und führt zu tödlichem Ersticken. Ebenso gefährlich ist es, Betroffene auf heißem Fels mit trockenen Decken zuzudecken — eingesperrte Hitze löst bleibende Hirnschäden und schwere Organ-Nekrose aus. Schürfwunden nur mit Wasser aus dem [Natur-Wasserfilter](/protocol-01) oder [Tuchfilter & SODIS](/protocol-23) sauber abspülen, um gefährliche Wund-Infektionen zu verhindern.",
+    "consequence": "Atemwegs-Erstickung durch Eingießen im Dämmerzustand, Organ-Nekrose durch Wärmestau und bakterielle Wundinfektion."
+  },
+  "faqs": [
+    {
+      "question": "Warum müssen wir ständig fächeln, wenn bereits kühle nasse Tücher auf dem Körper liegen?",
+      "causeDiagnostic": "Ohne Luftzug bildet sich über dem nassen Stoff sofort ein feuchtwarmes Luftpolster, das weitere Verdunstung stoppt.",
+      "resolution": "Selbst wenn Bachwasser oder Wasser aus dem [Ton-Verdunstungskühler](/protocol-16) nicht eiskalt ist, bläst **kräftiges Dauerfächeln mit breitem Laub** feuchte Luft weg, sodass verdunstendes Wasser dem Körper drei- bis fünfmal schneller Hitze entzieht."
+    },
+    {
+      "question": "Was tun, wenn der Patient während der Abkühlung plötzlich am ganzen Körper zu zittern beginnt?",
+      "causeDiagnostic": "Zittern löst starke Muskelarbeit aus und erzeugt im Körperinneren sofort neue unerwünschte Wärme.",
+      "resolution": "**Plötzliches Zittern zeigt Überkühlung der Haut an.** Nehmen Sie nasse Brusttücher sofort herunter, fächeln Sie nur sanft im Schatten weiter und prüfen Sie wachsam Atmung und klares Bewusstsein."
+    }
+  ],
+  "outcome": {
+    "title": "Stromlose Hitzschlag-Ersthilfe: Schatten-Erdmulde, 3-Arterien-Fächeln & waches ORS-Trinken",
+    "badge": "TARGET OUTCOME // VERDUNSTUNGS-ARTERIENKÜHLUNG & SICHERE ERHOLUNG",
+    "description": "Vollständige Feld-Ersthilfe bei Hitzschlag ohne Eis oder Strom: Abtragen einer Handspanne heißen Staubs zu kühlem Schattenboden, gezieltes Fächeln feuchter Tücher an Hals, Achseln und Leiste im 3–5-Minuten-Wechsel und kontrollierte ORS-Schlucke erst bei voller Wachheit.",
+    "svgFileName": "pr39-outcome.svg",
+    "svgLabels": [
+      "PR-39 FERTIG // 3-ADERN-VERDUNSTUNGSKÜHLUNG",
+      "STUFE 01: SCHATTENBETT",
+      "1 Spanne zu kühler Erde graben",
+      "STUFE 02: 3 ADERN + WIND",
+      "Hals, Achsel, Leiste fächeln",
+      "STUFE 03: 3-5M NACHNETZEN",
+      "Tuch kühlen & Zittern prüfen",
+      "STUFE 04: WACHES TRINKEN",
+      "Halbschlucke NUR bei Wachheit",
+      "[PRINZIP] Verdunstung an 3 Adern plus kühle Erde entzieht Hitze schnell"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Hochsommer draußen: Jemand hört auf zu schwitzen, glüht rot und redet wirr? So bremst du Hitzschlag ohne Eis in 3 Minuten!",
+    "body": "Erstens: Sofort in tiefen Baumschatten bringen, eine Handspanne heißen Staub zu feucht-kühler Erde abkratzen und Kragen sowie Gürtel weit öffnen! Zweitens: Saubere nasse Baumwolltücher gezielt an Halsseiten, Achseln und Leiste legen — genau über den großen Schlagadern — und mit einem großen Laubast ununterbrochen fächeln! Drittens: Tücher alle 3 bis 5 Minuten neu ins kalte Wasser tauchen und bei erstem Zittern vom Rumpf nehmen! Viertens: Verwirrten niemals Wasser einflößen — erst bei klarem Blick halbe Schlucke Salzwasser geben!"
+  },
+  "createdAt": "2026-11-21T23:49:25.707Z",
+  "contentHash": "91ac3a06c8b794e1"
+}

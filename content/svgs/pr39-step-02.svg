@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg39s2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <radialGradient id="cool39s2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </radialGradient>
+    <pattern id="grid39s2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow39s2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg39s2)"/>
+  <rect width="400" height="400" fill="url(#grid39s2)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 02 // 목·겨드랑이·사타구니 3대 동맥 냉각 + 부채질</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">목 양옆·겨드랑이·사타구니 굵은 핏줄에 젖은 천</text>
+
+  <!-- Main Visual: Clean Anatomical Silhouette Highlighting 3 Arterial Cooling Zones + Leafy Fan Breeze -->
+  <g filter="url(#shadow39s2)">
+    <!-- Anatomical Body Outline Center -->
+    <circle cx="152" cy="112" r="18" fill="#334155" stroke="#94a3b8" stroke-width="1.8"/>
+    <!-- Torso -->
+    <rect x="122" y="138" width="60" height="84" rx="10" fill="#334155" stroke="#94a3b8" stroke-width="1.8"/>
+    <!-- Left & Right Arms -->
+    <line x1="120" y1="148" x2="94" y2="210" stroke="#64748b" stroke-width="14" stroke-linecap="round"/>
+    <line x1="184" y1="148" x2="210" y2="210" stroke="#64748b" stroke-width="14" stroke-linecap="round"/>
+    <!-- Left & Right Legs -->
+    <line x1="138" y1="222" x2="128" y2="276" stroke="#64748b" stroke-width="16" stroke-linecap="round"/>
+    <line x1="166" y1="222" x2="176" y2="276" stroke="#64748b" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Major Red Arterial Trunk Pathways Shown Inside Silhouette -->
+    <line x1="152" y1="126" x2="152" y2="216" stroke="#ef4444" stroke-width="3" opacity="0.8"/>
+    <line x1="124" y1="150" x2="180" y2="150" stroke="#ef4444" stroke-width="2.5" opacity="0.8"/>
+    <line x1="152" y1="216" x2="138" y2="254" stroke="#ef4444" stroke-width="2.5" opacity="0.8"/>
+    <line x1="152" y1="216" x2="166" y2="254" stroke="#ef4444" stroke-width="2.5" opacity="0.8"/>
+
+    <!-- 3 Glowing Cyan Wet Cloth Packs: 1) Neck Sides, 2) Armpits, 3) Groin -->
+    <rect x="136" y="128" width="32" height="12" rx="4" fill="url(#cool39s2)" stroke="#f0f9ff" stroke-width="1.5"/>
+    <circle cx="122" cy="154" r="11" fill="url(#cool39s2)" stroke="#f0f9ff" stroke-width="1.5"/>
+    <circle cx="182" cy="154" r="11" fill="url(#cool39s2)" stroke="#f0f9ff" stroke-width="1.5"/>
+    <ellipse cx="152" cy="218" rx="22" ry="10" fill="url(#cool39s2)" stroke="#f0f9ff" stroke-width="1.5"/>
+
+    <!-- Broad Green Leafy Branch Fan Right + Strong Evaporative Airflow Waves -->
+    <line x1="348" y1="252" x2="292" y2="186" stroke="#92400e" stroke-width="4.5" stroke-linecap="round"/>
+    <ellipse cx="294" cy="144" rx="22" ry="38" transform="rotate(-24 294 144)" fill="#15803d" stroke="#4ade80" stroke-width="1.8"/>
+    <ellipse cx="328" cy="166" rx="18" ry="32" transform="rotate(14 328 166)" fill="#166534" stroke="#4ade80" stroke-width="1.5"/>
+
+    <!-- Directional Evaporative Breeze Vectors From Leaf Fan Over Body -->
+    <path d="M 272 146 Q 238 140 202 148" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="208,142 196,149 209,154" fill="#38bdf8"/>
+    <path d="M 278 182 Q 244 176 208 184" fill="none" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="214,178 202,185 215,190" fill="#7dd3fc"/>
+    <path d="M 284 218 Q 248 212 206 218" fill="none" stroke="#38bdf8" stroke-width="2.8" stroke-linecap="round"/>
+    <polygon points="212,213 200,219 213,224" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">넓은 나뭇잎 가지로 쉴 새 없이 강한 부채질 바람</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">피부 먼지 가볍게 씻어 2차 감염 예방 &amp; 냉각 가속</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 3대 동맥 혈류 냉각 + 바람 증발로 중심 체온 급강하</text>
+</svg>

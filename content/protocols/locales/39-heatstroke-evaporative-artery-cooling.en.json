@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-39",
+  "category": "MEDICINE",
+  "title": "How to Rapidly Lower Heatstroke Fever Zero-Power Using Shade Trenches and Wet Cloth Arterial Cooling",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[WILDERNESS HEATSTROKE ARTERIAL EVAPORATIVE COOLING & SHADE TRENCH MEDICINE]",
+  "summary": "If emergency medical services can be reached and an air-conditioned vehicle, commercial ice packs, or cold immersion tub is nearby, call 119 or local EMS immediately and move the patient into cold water or air-conditioning first. However, in scorching summer heat without power or ice when sweating stops, skin turns dry and red-hot, and slurred confusion sets in, core fever turns lethal within minutes. Immediately scrape aside one hand-span of hot dry surface dirt under deep tree shade to expose cool subsoil, drape clean cotton cloths soaked in water from a [Charcoal-Sand Filter](/protocol-01) or [Clay Zeer Cooler](/protocol-16) across neck sides, armpits, and groin arteries under constant leafy fanning, give small half-sips of [Oral Rehydration Solution (ORS)](/protocol-24) ONLY once fully alert, and signal rescuers with a [120dB Whistle & Mirror](/protocol-27).",
+  "timeRequired": "Immediate emergency action (3 mins shade bed & wrap + 20-40 mins continuous cooling until flush clears)",
+  "successRate": "94% (with rapid shade move, 3-artery 3-5 min cloth re-soaking, steady fanning & no unconscious drinking)",
+  "difficulty": "Beginner (No power or ice needed; uses deep shade earth, 3-4 cotton cloths, clean cool water & leafy branch fan)",
+  "outputPerHour": "Drops life-threatening core heat rapidly without ice or electricity via evaporative airflow and cool subsoil contact",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "3-4 Clean Cotton Cloths or Torn Cotton Shirt Pieces & Clear Cold Creek Water (in Wooden Bowl)",
+      "desc": "Wash loose dirt gently off scratched skin first to prevent secondary infection, then keep cloths dripping wet over neck, armpits, and groin using cool water from a [Charcoal-Sand Filter](/protocol-01) or [Clay Zeer Cooler](/protocol-16)."
+    },
+    {
+      "id": "mat-02",
+      "name": "1 Broad Leafy Green Branch (or Stretched Coat) for Fanning & Flat Stick or Stone to Scrape Soil",
+      "desc": "Continuous fanning multiplies evaporative heat loss across wet skin more than 3x while scraping one hand-span of hot top dust reveals cool damp ground underneath."
+    },
+    {
+      "id": "mat-03",
+      "name": "1L Clean Drinking Water in Wooden Cup (Post-Recovery Only) + Pinch of Salt & Sugar or Fruit Juice",
+      "desc": "Prepares safe [Oral Rehydration Solution (ORS)](/protocol-24) strictly after full consciousness returns; purify doubtful water via [Cotton Towel Filtering & SODIS](/protocol-23) first."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Move Under Deep Tree Shade, Scrape 1 Span of Hot Top Dirt Down to Cool Subsoil & Loosen Gear",
+      "description": "1. **Move Away From Sun & Hot Rocks Into Dense Shade**: Protect the patient from radiant baking by carrying them directly beneath thick leafy canopy shade away from asphalt or sun-heated stones.\n2. **Scrape Aside 1 Hand-Span (15-20cm) of Warm Surface Dirt**: Avoid warm ground heat by using a stick or flat stone to scoop away top dust until **cool moist darker subsoil** cools the back directly.\n3. **Loosen Tight Collars, Belts & Boots**: Aid heat release immediately by unbuttoning heavy layers, removing packs and shoes, and raising feet a fist-height off the earth.",
+      "actionNote": "> Why dig down one hand-span in the dirt instead of laying the patient straight onto shaded ground? Even inside shade, surface leaves and dry top dust hold afternoon heat and insulate the back like a warm mat. Scraping 15-20cm down exposes cool damp earth that pulls core heat straight downward.",
+      "svgFileName": "pr39-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // DENSE SHADE + 1-SPAN TRENCH & LOOSENED CLOTH",
+        "Escape hot sun and rocks into thick tree canopy shade",
+        "Scrape 1 span hot surface dirt exposing cool subsoil",
+        "Loosen collars, belts & shoes opening heat exit paths",
+        "[CORE] Cool shaded subsoil conducts back heat downward"
+      ],
+      "deepDive": {
+        "badge": "SHADE & SUBSOIL CONDUCTION",
+        "title": "Direct Back Thermal Conduction Into Cool Subsoil (15-20cm Below Sun Dust)",
+        "text": "Topsoil warmed by ambient summer heat blocks passive back cooling. Removing **one hand-span of dry dust** reveals **cool shaded moisture** just beneath the surface that drains body heat across the full torso without power.",
+        "fieldSpecs": [
+          {
+            "name": "Deep Forest Canopy Shade Over 1-Span Scraped Shallow Trench Exposing Cool Damp Subsoil",
+            "scientificName": "Deep Forest Shade 1-Span Scraped Cool Damp Subsoil Cooling Bed",
+            "categoryTag": "Shade Escape / Subsoil Cooling Bed",
+            "imageFileName": "id-heatstroke-shade-ground-trench.jpg",
+            "hudCode": "FIG. MED-39A // MACRO OPTIC",
+            "hudStatus": "GROUND BED: COOL SUBSOIL EXPOSED",
+            "traits": [
+              {
+                "label": "Shade/Canopy",
+                "value": "**Escape sunlit rock and ground** to deep breezy tree cover fast."
+              },
+              {
+                "label": "Scrape/1-Span",
+                "value": "**Clear 15-20cm hot dust** until soil feels cool and damp to touch."
+              },
+              {
+                "label": "Unbind/Loosen",
+                "value": "**Open collars, belts & boots** letting trapped torso heat escape."
+              }
+            ],
+            "fieldUse": "Building an instant conductive cooling bed without ice or chillers"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Pack Wet Cotton Cloths Onto Neck, Armpits & Groin Arteries and Fan Continuously",
+      "description": "1. **Rinse Dirt Clean & Pack Wet Cloths on 3 Main Hubs**: Prevent skin infection on scrapes by rinsing dirt with clean cold water first, then lay wet cotton cloths onto **both sides of the neck, armpits, and groin** to cool circulating arterial blood.\n2. **Wave Broad Leafy Branch Non-Stop Across Wet Cloths**: Boost evaporative cooling dramatically by fanning crisp airflow straight across damp wraps and exposed skin without pausing.\n3. **Splash Fine Cool Droplets Across Arms & Legs**: Stretch limited clean water further by lightly dabbing arms, chest, and legs so fanning evaporates heat across the full body surface.",
+      "actionNote": "> Why prioritize neck sides, armpits, and groin instead of just dabbing hands or stomach? Major carotid, axillary, and femoral blood vessels run closest to the skin in those three hubs. Chilling blood right at those junctions cools the brain and core organs far faster.",
+      "svgFileName": "pr39-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 3 MAJOR ARTERIAL WET WRAPS + LEAF FANNING",
+        "Pack wet cotton on neck sides, armpits & groin hubs",
+        "Fan continuously with broad leafy branch for breeze",
+        "Rinse skin dust clean preventing infection & speeding chill",
+        "[CORE] Chilling 3 blood hubs + airflow drops core fever"
+      ],
+      "deepDive": {
+        "badge": "ARTERIAL EVAPORATIVE COOLING",
+        "title": "Targeted Carotid, Axillary & Femoral Cooling With Forced Evaporative Breeze",
+        "text": "When ice is unavailable, water evaporating across skin removes massive latent heat. Placing wet clean cloths directly over **neck, armpit, and groin blood hubs** while **fanning non-stop** cools circulating blood 3 to 5 times faster than still shaded air.",
+        "fieldSpecs": [
+          {
+            "name": "Clean Folded Wet Cotton Cloths Beside Wooden Bowl of Cold Water and Leafy Fan Branch",
+            "scientificName": "Clean Cold-Water Soaked Cotton Cloths Over Carotid, Axillary & Femoral Hubs",
+            "categoryTag": "3 Artery Hubs / Fan Evaporation",
+            "imageFileName": "id-wet-cloth-evaporative-artery-wrap.jpg",
+            "hudCode": "FIG. MED-39B // MACRO OPTIC",
+            "hudStatus": "COOLING HUBS: 3 ARTERIAL ZONES",
+            "traits": [
+              {
+                "label": "Hubs/3-Zones",
+                "value": "**Focus wet packs on neck, armpits & groin** shallow main vessels."
+              },
+              {
+                "label": "Wash/Clean",
+                "value": "**Rinse dirt gently off skin** preventing scratch wound infections."
+              },
+              {
+                "label": "Breeze/Fan",
+                "value": "**Keep fanning non-stop** so warm humidity clears off the wet cloth."
+              }
+            ],
+            "fieldUse": "Targeting high-flow surface arteries for rapid core temperature drop"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Re-Soak Cloths Every 3-5 Minutes Until Flush Clears, Stopping Chest Wraps If Shivering Starts",
+      "description": "1. **Re-Soak Lukewarm Cloths Every 3-5 Minutes**: Keep cooling fast by dipping body-warmed cloths back into cold wooden-bowl water every **3 to 5 minutes** before they trap heat like warm poultices.\n2. **Track Calming Skin Flush and Breathing**: Verify cooling works by watching whether **bright crimson flush softens and rapid shallow panting slows down** toward steady breathing.\n3. **Lift Torso Wet Wraps Immediately If Shivering Starts**: Prevent rebound heat generation by peeling damp cloths off chest/abdomen the moment **uncontrolled shivering starts**, shifting to calm shade fanning.",
+      "actionNote": "> Why swap cloths back into cool water every 3-5 minutes before they dry out? Intense heatstroke fever warms damp cotton to body temperature in just minutes, turning it into a heat-trapping pad unless refreshed steadily with cool water.",
+      "svgFileName": "pr39-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 3-5 MIN RE-SOAK LOOP & SHIVER-STOP RULE",
+        "Dip warmed cloth back in cool water bowl every 3-5m",
+        "Monitor red face flush & heavy panting calming down",
+        "Stop heavy wraps (X) immediately if shivering starts",
+        "[CORE] Cyclic re-soaking avoids warm-compress trap"
+      ],
+      "deepDive": {
+        "badge": "CYCLIC VAPOR RE-SOAKING",
+        "title": "Preventing Thermal Equilibrium (3-5 Min Loop) & Shivering Heat Rebound",
+        "text": "Once wet fabric matches skin temperature, cooling stops. Rotating cloths every **3 to 5 minutes** sustains continuous heat outflow—stopping torso wet cloths at **first shiver onset** avoids muscle-generated heat rebound.",
+        "fieldSpecs": [
+          {
+            "name": "Lightweight Soaked Cotton Cloth Releasing Cool Vapor Beneath Green Branch Breeze in Shade",
+            "scientificName": "3-to-5-Minute Cyclic Cold Re-Soaking Under Continuous Leaf Fanning",
+            "categoryTag": "3-5 Min Re-Soak / Shiver Stop",
+            "imageFileName": "id-evaporative-wet-sheet-breeze-cooling.jpg",
+            "hudCode": "FIG. MED-39C // MACRO OPTIC",
+            "hudStatus": "CYCLE: 3-5 MIN RE-SOAK LOOP",
+            "traits": [
+              {
+                "label": "Loop/3-5m",
+                "value": "**Refresh cloths every 3-5 minutes** so water stays cooler than skin."
+              },
+              {
+                "label": "Signs/Pulse",
+                "value": "**Watch red face flush fading** and harsh panting slowing steadily."
+              },
+              {
+                "label": "Stop/Shiver",
+                "value": "**Remove chest wraps at once** if shivering spasms begin suddenly."
+              }
+            ],
+            "fieldUse": "Maintaining active evaporative cooling safely without rebound chilling"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Only After Clear Eye-Contact & Speech Return, Give Small Half-Sips of ORS & Signal Help",
+      "description": "1. **Confirm Eye-Contact & Clear Speech Before Any Drink**: Prevent fatal airway drowning by giving liquids **ONLY when the person makes steady eye contact, answers clearly, and holds a wooden cup safely**.\n2. **Sip Salt-Sugar ORS Half-Mouthfuls Every 5 Minutes**: Avoid nausea vomiting by feeding clean [Oral Rehydration Solution (ORS)](/protocol-24) slowly in **half-sip portions every 5 minutes** instead of gulping.\n3. **Rest in Deep Shade & Signal Rescuers**: Protect against relapse by resting motionless in shade while summoning external evacuation via [120dB Whistle & Mirror](/protocol-27).",
+      "actionNote": "> Why must you never pour water into a confused or half-conscious victim's mouth? Heatstroke dulls swallowing reflexes cleanly; liquid poured past numb throat muscles spills directly into the lungs, choking the patient silently or causing aspiration pneumonia.",
+      "svgFileName": "pr39-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // ALERT SPEECH CHECK BEFORE SMALL ORS SIPS",
+        "Allow drink ONLY after clear eye contact and speech",
+        "Confused or supine pouring (X) risks fatal choking",
+        "Sip salted ORS half-mouthfuls every 5m in wooden cup",
+        "[CORE] Verify full alertness first, then sip ORS & signal"
+      ],
+      "deepDive": {
+        "badge": "AIRWAY-SAFE ORS REHYDRATION",
+        "title": "Conscious Swallow Reflex Verification & Controlled Salt-Sugar Small Sips",
+        "text": "Intense fever impairs airway swallow reflexes. Waiting until cooling restores **clear eye contact and speech** before offering clean [Oral Rehydration Solution (ORS)](/protocol-24) prevents pulmonary aspiration and stomach rejection.",
+        "fieldSpecs": [
+          {
+            "name": "Wooden Cup of Clear Recovery Water Beside Coarse Salt Pinch on Green Leaf in Forest Shade",
+            "scientificName": "Conscious Airway-Safe Small-Sip Oral Rehydration Salt & Clean Water Recovery",
+            "categoryTag": "Alert Check / Small-Sip ORS",
+            "imageFileName": "id-conscious-ors-small-sip-recovery.jpg",
+            "hudCode": "FIG. MED-39D // MACRO OPTIC",
+            "hudStatus": "RECOVERY: CONSCIOUS SMALL SIPS ONLY",
+            "traits": [
+              {
+                "label": "Check/Awake",
+                "value": "**Confirm clear verbal answers** and steady cup grip before drinking."
+              },
+              {
+                "label": "Ban/Drowsy",
+                "value": "**Pour zero drops into slurred mouths**—risks silent lung drowning."
+              },
+              {
+                "label": "Dose/HalfSip",
+                "value": "**Give half-sips every 5 minutes** so stomach absorbs fluids smoothly."
+              }
+            ],
+            "fieldUse": "Safely restoring lost water and electrolytes only after brain alertness returns"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Pouring Water Into a Delirious Patient's Mouth or Wrapping Them Dry Under Direct Sun",
+    "description": "Forcing water into someone who is confused, slurring, or passed out from heatstroke pours fluid straight into the lungs causing fatal suffocation. Never cover a heatstroke victim in dry blankets under sun thinking it 'sweats fever out'—that locks lethal heat inside causing brain injury and organ necrosis. Rinse scraped skin clean using purified water from a [Charcoal-Sand Filter](/protocol-01) or [Towel Filter & SODIS](/protocol-23) to prevent serious bacterial wound infection.",
+    "consequence": "Airway aspiration drowning from unconscious pouring, lethal organ necrosis from trapped heat, and dirty-water infection."
+  },
+  "faqs": [
+    {
+      "question": "Why keep waving a leafy branch continuously if cold wet cloths are already sitting on the skin?",
+      "causeDiagnostic": "Still humid air blankets wet cloth quickly, halting evaporation and trapping warm heat against the body.",
+      "resolution": "Even if creek water or [Clay Zeer](/protocol-16) water is only cool rather than ice-cold, **continuous strong fanning blows humid air away**, turning water into vapor that pulls huge heat from skin 3 to 5 times faster."
+    },
+    {
+      "question": "What should I do if the victim suddenly begins shivering violently while we are wetting them down?",
+      "causeDiagnostic": "Shivering triggers involuntary muscle contractions that pump fresh metabolic heat back into the core.",
+      "resolution": "Sudden **shivering warns that skin chilled past the reflex threshold or core temperature is near safe range**. Immediately peel wet cloths off the torso, move gently to breezy shade air only, and watch speech and pulse steadily."
+    }
+  ],
+  "outcome": {
+    "title": "Zero-Power Heatstroke Emergency Cooling: Shade Subsoil Bed, 3-Artery Wet Fanning & Conscious ORS",
+    "badge": "TARGET OUTCOME // EVAPORATIVE ARTERY COOLING & SAFE RECOVERY",
+    "description": "Wilderness heatstroke rescue without ice or power: scraping one hand-span into cool damp shaded subsoil, fanning wet cotton cloths over neck, armpits, and groin re-soaked every 3-5 minutes, and feeding half-sips of ORS only after clear eye contact returns.",
+    "svgFileName": "pr39-outcome.svg",
+    "svgLabels": [
+      "PR-39 COMPLETE // HEATSTROKE 3-ARTERY EVAPORATIVE COOLING",
+      "STAGE 01: SHADE TRENCH BED",
+      "Scrape 1 span to cool damp soil",
+      "STAGE 02: 3 ARTERIES + FAN",
+      "Neck, armpits, groin wet breeze",
+      "STAGE 03: 3-5M RE-SOAK",
+      "Refresh cloth + watch for shivers",
+      "STAGE 04: ALERT ORS SIPS",
+      "Half-sips ONLY when fully awake",
+      "[PRINCIPLE] Latent vapor chill over 3 main arteries plus cool soil drains core heat fast"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Hiking in extreme summer heat and someone stops sweating, flushes red, and talks nonsense? No ice needed—stop lethal heatstroke fast!",
+    "body": "First, haul them out of sun onto shaded earth scraped one hand-span deep onto cool damp soil, and unbutton tight collars and belts. Second, soak cotton cloths in cool water and pack them ONLY where huge arteries run shallow—neck sides, armpits, and groin—then fan non-stop with a wide leafy branch to drive rapid evaporation! Third, dip warmed cloths back in cold water every 3 to 5 minutes, and lift chest wraps off immediately if shivering starts. Fourth, NEVER pour water into a dizzy mouth—wait for clear eyes and speech, then give slow half-sips of salt-sugar water!"
+  },
+  "createdAt": "2026-11-21T23:49:25.707Z",
+  "contentHash": "91ac3a06c8b794e1"
+}

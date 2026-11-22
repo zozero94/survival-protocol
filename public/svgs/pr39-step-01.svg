@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg39s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="topsoil39s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="subsoil39s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <pattern id="grid39s1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow39s1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg39s1)"/>
+  <rect width="400" height="400" fill="url(#grid39s1)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 01 // 짙은 나무 그늘 + 겉흙 1뼘 파기 &amp; 옷깃 풀기</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">달궈진 바위·햇볕 피해 짙은 나무 그늘 아래 이동</text>
+
+  <!-- Main Visual: Harsh Sun Rejected Above Dense Tree Canopy -> Shade Zone -> Scraped Hot Topsoil -> Cool Subsoil Trench -->
+  <g filter="url(#shadow39s1)">
+    <!-- Hot Sun Outside Canopy Left -->
+    <circle cx="56" cy="108" r="14" fill="#f59e0b" stroke="#fef08a" stroke-width="1.5"/>
+    <line x1="72" y1="114" x2="108" y2="128" stroke="#f97316" stroke-width="2.5" stroke-dasharray="4 3"/>
+
+    <!-- Thick Green Forest Tree Trunk & Broad Canopy Shade -->
+    <rect x="330" y="120" width="24" height="114" fill="#78350f" stroke="#451a03" stroke-width="1.5"/>
+    <ellipse cx="220" cy="118" rx="140" ry="30" fill="#15803d" stroke="#22c55e" stroke-width="1.8"/>
+    <ellipse cx="164" cy="114" rx="74" ry="20" fill="#166534"/>
+
+    <!-- Hot Sun-Baked Surface Soil Outside & Scraped Back Into Mounds -->
+    <rect x="24" y="218" width="84" height="16" fill="url(#topsoil39s1)" stroke="#f97316" stroke-width="1.2"/>
+    <rect x="274" y="218" width="102" height="16" fill="url(#topsoil39s1)" stroke="#f97316" stroke-width="1.2"/>
+    <!-- Scraped Warm Soil Piles -->
+    <path d="M 96 218 L 112 204 L 128 218 Z" fill="#b45309" stroke="#f97316"/>
+    <path d="M 260 218 L 274 204 L 290 218 Z" fill="#b45309" stroke="#f97316"/>
+
+    <!-- Cool Damp Subsoil Layer Beneath Scraped 1-Span Depression -->
+    <rect x="24" y="234" width="352" height="44" fill="url(#subsoil39s1)" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M 118 218 L 124 238 L 264 238 L 270 218 Z" fill="#0c192c" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Reclining Loosened-Clothing Silhouette Over Cool Subsoil Conducting Heat Down -->
+    <circle cx="152" cy="222" r="10" fill="#cbd5e1" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="164" y="216" width="54" height="16" rx="6" fill="#94a3b8" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="218" y1="224" x2="254" y2="216" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Downward Heat Dissipation Arrows Into Cool Damp Subsoil -->
+    <path d="M 176 238 L 176 264" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="171,258 176,268 181,258" fill="#38bdf8"/>
+    <path d="M 206 238 L 206 264" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="201,258 206,268 211,258" fill="#38bdf8"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">뜨거운 겉흙 손바닥 한 뼘 긁어 찬 속흙 노출</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">겉옷·허리띠 느슨히 풀어 체열 발산 경로 확보</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 그늘 밑 차가운 속흙 전도로 등 쪽 열기 흡수</text>
+</svg>

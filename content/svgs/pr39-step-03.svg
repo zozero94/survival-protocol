@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg39s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="wood39s3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c3a21"/>
+      <stop offset="50%" stop-color="#8c5a32"/>
+      <stop offset="100%" stop-color="#4a2e19"/>
+    </linearGradient>
+    <pattern id="grid39s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow39s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg39s3)"/>
+  <rect width="400" height="400" fill="url(#grid39s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 03 // 3~5분마다 찬물 재적심 + 떨림 시 중지 관찰</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">체열로 미지근해진 천을 3~5분마다 찬물에 재헹굼</text>
+
+  <!-- Main Visual: Left Cyclic Re-Soak Into Wooden Bowl + Vapor Cooling -> Right Stop-When-Shivering Indicator -->
+  <g filter="url(#shadow39s3)">
+    <!-- Warmed Cloth Top Left -> Dipped Down Into Wooden Bowl of Cold Water -->
+    <rect x="44" y="114" width="84" height="28" rx="6" fill="#fed7aa" stroke="#f97316" stroke-width="1.8"/>
+    <!-- Curved Loop Arrows Showing 3-5 Min Refresh -->
+    <path d="M 136 128 Q 178 134 176 190" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="170,184 176,196 182,184" fill="#f59e0b"/>
+
+    <!-- Hand-Carved Wooden Bowl Full of Cold Clear Water -->
+    <path d="M 48 198 L 62 256 Q 66 270 120 270 Q 174 270 178 256 L 192 198 Z" fill="url(#wood39s3)" stroke="#9a6b42" stroke-width="2"/>
+    <ellipse cx="120" cy="204" rx="66" ry="12" fill="#0284c7" fill-opacity="0.65" stroke="#7dd3fc" stroke-width="1.8"/>
+    <!-- Fresh Cooled Cloth Re-Applied Upward -->
+    <path d="M 52 192 Q 28 164 44 134" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="39,140 46,128 50,141" fill="#38bdf8"/>
+
+    <!-- Evaporative Vapor Waves Rising From Cool Cloth -->
+    <path d="M 76 176 Q 70 162 78 150 M 102 174 Q 108 160 100 148" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Center-Right Cooling Status Panel: Green Normal Calm Face (V) vs Shivering Stop Badge (X) -->
+    <rect x="228" y="102" width="140" height="72" rx="4" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="266" cy="138" r="18" fill="#1e293b" stroke="#86efac" stroke-width="1.8"/>
+    <circle cx="260" cy="134" r="2.2" fill="#86efac"/>
+    <circle cx="272" cy="134" r="2.2" fill="#86efac"/>
+    <path d="M 260 144 Q 266 148 272 144" fill="none" stroke="#86efac" stroke-width="2"/>
+    <polyline points="312,138 320,146 336,128" fill="none" stroke="#4ade80" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Shivering Warning -> Stop Heavy Wet Wraps (Bottom Right) -->
+    <rect x="228" y="190" width="140" height="76" rx="4" fill="#2a0f14" stroke="#ef4444" stroke-width="1.5"/>
+    <!-- Zigzag Shivering Vibration Lines Around Limb Shape -->
+    <path d="M 252 212 L 260 220 L 252 228 L 260 236 L 252 244" fill="none" stroke="#fca5a5" stroke-width="2.2"/>
+    <path d="M 284 212 L 276 220 L 284 228 L 276 236 L 284 244" fill="none" stroke="#fca5a5" stroke-width="2.2"/>
+    <circle cx="326" cy="228" r="14" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <line x1="319" y1="221" x2="333" y2="235" stroke="#fecaca" stroke-width="2.8" stroke-linecap="round"/>
+    <line x1="333" y1="221" x2="319" y2="235" stroke="#fecaca" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">붉은 얼굴·거친 헐떡임 진정 여부 오감 관찰 유지</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2a0f14" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">몸 떨림 발생(X) 시 저체온 막기 위해 젖은 천 철수</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 찜질화 막는 반복 적심과 떨림 경고 시 즉시 감속</text>
+</svg>
