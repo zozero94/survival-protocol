@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-17",
   "category": "MATERIALS",
-  "title": "Cómo Convertir Piel Cruda en Cuero Impermeable con Agua Hervida de Corteza de Roble y Ceniza (Fabricación de Cuero Natural en Campo)",
+  "title": "Cómo convertir piel cruda en cuero resistente e impermeable",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA PUTREFACCIÓN DE PIEL CRUDA Y AUTOSUFICIENCIA DE CUERO IMPERMEABLE]",
   "summary": "En aislamiento prolongado, las pieles crudas obtenidas mediante [trampas y caza](/protocol-08) crían gusanos y se pudren en un solo día por los restos de carne y humedad, o se secan al sol como tablas rígidas inútiles para ropa o zapatos. En la naturaleza sin químicos, primero debe remojar la piel cruda en 'agua jabonosa de ceniza blanca' usada en el [jabón natural de ceniza](/protocol-13) para empujar el pelo suavemente, y luego sumergirla durante una semana en 'agua astringente hervida de corteza de roble' hecha con la corteza interna rojiza de los robles alrededor de un [horno de carbón de foso](/protocol-09). Igual que morder una bellota o un caqui verde tensa la boca, la 'savia astringente conservante' de la corteza de roble penetra hasta el centro de la piel evitando que las bacterias la pudran, mientras el humo de madera recubre el exterior para coser abrigos y botas con [agujas de hueso e hilo de tendón](/protocol-14).",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-26T13:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "1edc87e6714dfcae"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "f14d49f8448b03ae"
 }

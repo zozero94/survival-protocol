@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-13",
   "category": "MEDICINE",
-  "title": "Natural Wood Ash Lye & Oil Soap Making to Prevent Wound Infection (Field Hygiene)",
+  "title": "How to Make Natural Antiseptic Lye Soap to Prevent Infection",
   "threatLevel": "HIGH",
   "threatLevelText": "[FIELD SANITATION & WOUND DISINFECTION & SEPSIS PREVENTION]",
   "summary": "In off-grid wilderness survival or post-collapse scenarios without plumbing or medicine, a minor scrape or eating with dirty hands can rapidly cause lethal dysentery, tetanus, or systemic sepsis. By collecting pure white oak ashes from a campfire or [twin-can gasifier stove](/protocol-12), packing them in a leacher can with a gravel and grass filter, and pouring hot water through, you extract potassium carbonate lye. Simmering this lye 1:1 with rendered animal tallow or salvaged cooking oil while stirring with a wooden paddle initiates saponification, creating a potent antibacterial soap that ruptures pathogen cell membranes.",
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "6c6c26a55586fcca",
-  "updatedAt": "2026-10-28T17:33:13+09:00"
+  "contentHash": "f5ad9047708d3493",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

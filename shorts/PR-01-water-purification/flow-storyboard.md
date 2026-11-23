@@ -1,4 +1,4 @@
-# 🎬 [Google Flow / Veo] 45초 쇼츠 스토리보드: 흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)
+# 🎬 [Google Flow / Veo] 45초 쇼츠 스토리보드: 흙탕물 걸러 먹는 자연 정수기 만드는 법
 - **프로토콜 ID**: `PR-01`
 - **화면 비율**: `9:16 세로 (Shorts / Reels / TikTok)`
 - **총 러닝타임**: `45초`
@@ -13,7 +13,7 @@
 * **Google Flow 투입 이미지**: `pr01-outcome.png` (원천 벡터: `pr01-outcome.svg`)
 * **구글 플로우 프롬프트**:
 ```text
-Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand). Character says: "Survival emergency hook warning." (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone.
+Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of How to Build a Natural Filter to Purify Muddy Water. Character says: "Survival emergency hook warning." (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone.
 ```
 
 ---
@@ -67,7 +67,7 @@ Vertical 9:16 high-contrast warning shot, sudden subtle camera shake and slow dr
 * **Google Flow 투입 이미지**: `pr01-outcome.png` (원천 벡터: `pr01-outcome.svg`)
 * **구글 플로우 프롬프트**:
 ```text
-Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand) in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord.
+Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished How to Build a Natural Filter to Purify Muddy Water in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord.
 ```
 
 

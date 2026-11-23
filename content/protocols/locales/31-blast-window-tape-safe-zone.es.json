@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-31",
   "category": "SHELTER",
-  "title": "Encintado Anti-Explosiones de Ventanas y Zona Segura Triangular Interior para Bombardeos y Sismos",
+  "title": "Cómo frenar astillas de ventana y crear zona segura interior",
   "threatLevel": "CRITICAL",
   "threatLevelText": "CRÍTICO // DEFENSA INMEDIATA ANTE BOMBARDEOS Y SISMOS",
   "summary": "Durante catástrofes bélicas, bombardeos con misiles, explosiones urbanas o terremotos severos, la onda expansiva rompe los cristales en miles de proyectiles afilados a gran velocidad. Este protocolo establece una barrera de 3 capas para retener más del 95% de la fragmentación de vidrio y construye una zona segura estructural del 'Triángulo de la Vida' junto a muros de carga interiores. Si dispone de film anti-esquirlas comercial o contraventanas de madera, colóquelos primero; de lo contrario, transforme su hogar en un búnker improvisado con cinta adhesiva reforzada, periódico húmedo, cortinas opacas y un colchón.",
@@ -257,5 +257,6 @@
     "body": "¡Al explotar una bomba, la onda de choque convierte el cristal en cientos de cuchillas supersónicas! La cinta en X rompe el vidrio en enormes guillotinas. Paso 1: cruza cinta en una cuadrícula densa de 5 cm por todo el cristal para disipar vibraciones. Paso 2: pulveriza agua y pega periódico húmedo para retener el polvo fino de vidrio. Paso 3: cuelga una cortina opaca gruesa y sella los cuatro lados a la pared. Finalmente, aléjate 3 metros hacia un muro de carga interior, inclina un colchón a 45 grados junto a un escritorio firme y ¡protégete en el Triángulo de la Vida!"
   },
   "createdAt": "2026-11-13T00:05:48.223Z",
-  "contentHash": "bef5418b5df5f8ba"
+  "contentHash": "aa1a2353796b0acf",
+  "updatedAt": "2026-11-13T00:13:03Z"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-23",
   "category": "FOOD",
-  "title": "How to Purify Drinking Water During Blackouts & Water Outages Using Cotton Towel Capillary Siphon & Solar UV (SODIS)",
+  "title": "How to Filter and Disinfect Dirty Water When Water Stops",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[URBAN WATER OUTAGE & ZERO-FUEL CAPILLARY FILTRATION + SOLAR UV DISINFECTION]",
   "summary": "If your household already has bottled water reserves, a commercial camping filter straw (such as a LifeStraw), chlorine dioxide water purification tablets, or a gravity hollow-fiber filter, always use those ready-made supplies first for the fastest and safest protection. However, when earthquakes, war, or grid-down water outages exhaust bottled water and tablets, and you are trapped in an urban apartment without charcoal, river sand, or fuel to boil water (if you are in the wilderness with wood ash and sand, use the [Wilderness Charcoal & Sand Filter](/protocol-01)), drinking raw rainwater or rusty pipe water causes severe diarrhea and fatal dehydration within 3 days. By recovering clean reserve water from your toilet ceramic cistern or rain catchment, filtering out silt and rust via a twisted 100% cotton towel capillary siphon bridge, and exposing clear PET bottles on a foil reflector to 6 hours of direct sunlight (WHO-approved SODIS method), you can secure sterile drinking water with zero fuel.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T11:56:30+09:00",
-  "contentHash": "1e9b8d304fe76a93"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "80133e7e7bde48b3"
 }

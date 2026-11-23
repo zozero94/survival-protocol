@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-39",
   "category": "MEDICINE",
-  "title": "Resfriamento de Emergência contra Insolação sem Energia: Panos Úmidos em Artérias e Leito na Sombra",
+  "title": "Como baixar rápido a temperatura na insolação sem gelo ou luz",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[RESFRIAMENTO ARTERIAL POR EVAPORAÇÃO E LEITO DE SOLO FRIO NA SOMBRA PARA INSOLAÇÃO]",
   "summary": "Se houver acesso ao resgate médico, carro com ar-condicionado, bolsas de gelo ou banheira de água fria por perto, ligue para a emergência imediatamente e resfrie a vítima nesses locais primeiro. Porém, sob calor extremo ao ar livre sem energia nem gelo, quando o suor para, a pele arde vermelha e surgem fala arrastada ou confusão, a febre interna mata em minutos. Raspe imediatamente um palmo de poeira quente sob sombra densa de árvores até expor solo úmido e frio, aplique panos de algodão molhados em água fria do [Filtro Natural de Carvão](/protocol-01) ou [Resfriador de Barro Zeer](/protocol-16) sobre laterais do pescoço, axilas e virilha sob abano contínuo, ofereça meios goles de [Soro Oral (ORS)](/protocol-24) SOMENTE após lucidez total e peça socorro com [Apito 120dB e Espelho](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "Primeiro, tire do sol para a sombra fechada das árvores, raspe um palmo de terra quente até o solo frio e solte golas e cintos! Segundo, molhe panos de algodão e coloque SOMENTE onde passam as maiores artérias: laterais do pescoço, axilas e virilha, abanando sem parar com um galho cheio de folhas! Terceiro, molhe o pano de novo a cada 3 a 5 minutos e tire do peito se começar a tremer! Quarto, NUNCA jogue água em quem está zonzo — espere falar claro e dê meios goles de água com sal e açúcar!"
   },
   "createdAt": "2026-11-21T23:49:25.707Z",
-  "contentHash": "91ac3a06c8b794e1"
+  "contentHash": "d331c8acf0209e57",
+  "updatedAt": "2026-11-22T09:00:44+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-34",
   "category": "SHELTER",
-  "title": "Como Fazer uma Claraboia Solar de 55W com Garrafa PET de 1,5L, Água e 3 Gotas de Água Sanitária sem Eletricidade",
+  "title": "Como iluminar quarto escuro com sol e garrafa d’água no apagão",
   "threatLevel": "HIGH",
   "threatLevelText": "[ILUMINAÇÃO DIURNA POR PRISMA SOLAR DE ÁGUA SEM ENERGIA EQUIVALENTE A 55W]",
   "summary": "Se sua casa ou mochila de emergência tiver lanternas LED recarregáveis, luminárias solares ou faróis a bateria, use esses itens prontos primeiro. Porém, quando um apagão prolongado esgota baterias e a [Proteção de Janelas contra Estilhaços](/protocol-31) ou tábuas deixam o cômodo escuro mesmo de dia, queimar velas ou um [Aquecedor de Lata com Óleo](/protocol-21) durante o dia desperdiça combustível da noite e aumenta o risco de incêndio e monóxido de carbono. Enchendo uma garrafa PET incolor de 1,5L com água limpa e 3 gotas de água sanitária sem perfume (ou meia colher de sal grosso) contra algas, e vedando-a na vertical numa placa de janela ou telhado, a refração espalha a luz solar em 360° iluminando como uma lâmpada de 55W por mais de 5 anos sem eletricidade.",
@@ -244,5 +244,6 @@
     "body": "Velas de dia gastam estoque e causam incêndio. Primeiro, tire rótulos de uma garrafa transparente de 1,5L e lixe leve só uma faixa no terço superior. Segundo, encha até a boca com água limpa e 3 gotas de água sanitária ou meia colher de sal contra algas, fechando forte. Terceiro, faça um furo justo no painel da janela deixando 1/3 para o sol fora e 2/3 dentro. Quarto, vede a junta contra chuva com resina ou fita impermeável e tenha luz de 55 watts grátis o dia inteiro!"
   },
   "createdAt": "2026-11-18T05:23:28.224Z",
-  "contentHash": "e2d10bf877747894"
+  "contentHash": "3642408f6fa2a32d",
+  "updatedAt": "2026-11-18T14:30:37+09:00"
 }

@@ -195,11 +195,17 @@ export class PostingReviewService {
     const warnings           = [];
     let score = 100;
 
-    if (protocol.title && protocol.title.trim().length >= 10 && protocol.title.trim().length <= 65) {
-      checks.push(`검색 최적화 제목 길이 적정 (${protocol.title.trim().length}자)`);
+    const trimmedTitle = protocol.title ? protocol.title.trim() : '';
+    if (trimmedTitle.length >= 10 && trimmedTitle.length <= 35) {
+      checks.push(`검색 최적화 제목 길이 적정 (${trimmedTitle.length}자)`);
     } else {
       score -= 15;
-      warnings.push(`제목 길이가 너무 짧거나 깁니다 (${protocol.title?.length || 0}자, 권장 10~65자).`);
+      warnings.push(`제목 길이가 너무 짧거나 깁니다 (${protocol.title?.length || 0}자, 권장 10~35자).`);
+    }
+
+    if (/[()（）]/.test(trimmedTitle)) {
+      score -= 10;
+      warnings.push('제목에 괄호 부제 표기를 제거하고 [문제 → 해결] 형태로 간결하게 작성하세요.');
     }
 
     // 5대 핵심 카테고리(FOOD, SHELTER, TOOLS, MATERIALS, MEDICINE) SSOT 일관성 검증 (UI 탭 필터링 누락 원천 방지)

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-19",
   "category": "FOOD",
-  "title": "How to Smoke-Dry Meat and Fish to Last Over a Month Using a Wooden Tripod Rack and Green Oak Smoke (Field Jerky & Smoked Fish)",
+  "title": "How to Dry and Preserve Meat and Fish Without a Fridge",
   "threatLevel": "HIGH",
   "threatLevelText": "[LONG-TERM FOOD PRESERVATION] Prevent Meat & Fish Spoilage Without Refrigeration or Salt and Secure Portable Emergency Rations",
   "summary": "In the field, fresh meat and fish caught with a [Figure-4 Deadfall Trap](/protocol-08) or a [Willow Funnel Fish Trap](/protocol-11) hold so much moisture that flies lay eggs and bacteria spoil them within a single day. Even a [Zeer Pot Evaporative Cooler](/protocol-16) cannot be carried on a long march. When you are isolated without salt, this guide shows how to trim away every bit of easily spoiled white fat with a [Sharp Stone Blade](/protocol-04), slice the lean meat as thin as half a pinky joint (5mm), hang the strips at chest height on a tripod rack tied with [Wild Kudzu Vine Cordage](/protocol-05), and smolder [Oak Charcoal](/protocol-09) covered with green hardwood leaves underneath to produce flameless white smoke that drives out moisture and coats the meat so it stays edible for over a month.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T14:00:23+09:00",
-  "contentHash": "2feab12730b3a242"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0fe1ff91d80ccbd3"
 }

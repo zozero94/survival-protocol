@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-37",
   "category": "TOOLS",
-  "title": "Como Levantar Escombros de Concreto Sem Energia com Alavanca e Escoramento Fogueira 2x2 no Desabamento",
+  "title": "Como erguer escombros pesados com segurança após desabamentos",
   "threatLevel": "HIGH",
   "threatLevelText": "[RESGATE URBANO EM DESABAMENTO COM ALAVANCA E ESCORAMENTO DE MADEIRA SEM ENERGIA]",
   "summary": "Se houver contato com bombeiros e acesso a expansores hidráulicos, almofadas pneumáticas ou macacos hidráulicos prontos, acione primeiro as equipes e ferramentas certificadas por serem mais rápidas e seguras. Contudo, após terremotos ou desabamentos sem sinal nem energia fora da [Zona Segura Interna](/protocol-31), duas pessoas podem erguer lajes combinando uma alavanca alta de madeira com pilhas quadradas 2x2 em jogo-da-velha ('Ergue 2-3 cm, calça 2-3 cm'). Mantendo as mãos fora debaixo do concreto até a madeira sustentar tudo, você aplica [Torniquete de Molinete](/protocol-32) e [Tala de Madeira](/protocol-18), pede socorro com [Apito 120 dB e Espelho](/protocol-27) e retira a vítima em segurança.",
@@ -244,5 +244,6 @@
     "body": "Primeiro cheque o teto e cheiro de gás, varra o chão, apoie um bloco quadrado rente à borda e enfie a alavanca só 3 a 5 cm. Segundo, dos lados monte torres 2x2 cruzando caibros planos a 90 graus—jamais toras ou blocos furados! Terceiro, regra de ouro: erga apenas 2-3 cm, SEM meter dedos dentro empurre caibros e cunhas por fora com uma vara e solte devagar. Quarto, tire a alavanca inteira: só quando as duas torres firmes segurarem sozinhas aplique torniquete ou tala e puxe reto!"
   },
   "createdAt": "2026-11-21T02:46:35.405Z",
-  "contentHash": "80dbc76c9f37795f"
+  "contentHash": "8218fbb5e2e98f21",
+  "updatedAt": "2026-11-21T11:52:47+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-21",
   "category": "SHELTER",
-  "title": "72-Stunden-Notheizung & Kocher aus Thunfischdose, Speiseöl und Toilettenpapier bei Strom- & Gasausfall",
+  "title": "Ohne Strom und Gas einen Behelfs-Zimmerofen bauen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[BLACKOUT-INNENHEIZUNG & 72-STUNDEN-WÄRMEQUELLE]",
   "summary": "Wenn Sie zu Hause fertige Notfallausrüstung wie einen Gaskocher, Campingheizer, Paraffinkerzen oder Trockenbrennstoff haben, nutzen Sie diese immer zuerst als sicherste und schnellste Lösung. Dauert ein Winter-Blackout oder Gasausfall jedoch länger an und sind Gaskartuschen sowie Batterien aufgebraucht, droht beim Verbrennen von Holz in Innenräumen tödlicher Rauch und Kohlenmonoxid (nutzen Sie den [Doppeldosen-Holzgas-Kocher](/protocol-12) nur im Freien). Indem Sie den Boden einer leeren Stahl-Thunfischdose mit einer Kiesschicht dämmen, 3 fest gedrehte Toilettenpapier-Dochte in einer gefalteten Folienbrücke aufstellen und Pflanzenöl einfüllen, entsteht ein rauchfreier Innenheizer, der den Raum wärmt und Trinkwasser 8 bis 12 Stunden pro Füllung (über 72 Stunden pro Ölflasche) erhitzt.",
@@ -240,7 +240,7 @@
       "PRAXISGEPRÜFT // RAUCHFREIE INNENHEIZUNG & WARMWASSER"
     ]
   },
-  "contentHash": "75c437ca60b0bfba",
+  "contentHash": "18c78a934ff9172d",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T16:17:08+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

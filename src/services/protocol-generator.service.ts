@@ -257,7 +257,7 @@ ${category ? `[카테고리 강제]: ${category}` : ''}
 {
   "protocolId": "${nextId}",
   "category": "FIRE",
-  "title": "[번호(#01, PR-01 등) 표기 없이 누구나 한눈에 이해할 수 있는 쉬운 기술 제목]",
+  "title": "[번호·괄호 부제·재료 나열 없이 '문제/상황 + 해결 ~법' 15~28자(최대 35자) 직관 제목]",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[중요도: 필수 생존]",
   "summary": "2~3문장의 쉽고 명확한 상황 설명 및 해결 방법 요약",

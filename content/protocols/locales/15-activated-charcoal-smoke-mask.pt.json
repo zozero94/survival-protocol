@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-15",
   "category": "MEDICINE",
-  "title": "Máscara improvisada de pano com carvão ativado e areia para escape de fumaça e gases tóxicos",
+  "title": "Como fazer máscara improvisada contra fumaça e gás tóxico",
   "threatLevel": "HIGH",
   "threatLevelText": "[ESCUDO CONTRA GASES TÓXICOS E FUMAÇA ASFIXIANTE / DEFESA CONTRA QUEIMADURAS DAS VIAS AÉREAS]",
   "summary": "Em incêndios florestais repentinos, queimadas em abrigos subterrâneos ou conflagrações estruturais pós-colapso, inalar fumaça densa e vapores superaquecidos mais de 3 vezes destrói as vias respiratórias e causa asfixia fatal em menos de 2 minutos. Na ausência total de máscaras antigás industriais no campo, é preciso fabricar imediatamente uma máscara de carvão ativado e areia, estratificando carvão de carvalho de alta temperatura de um [forno de trincheira](/protocol-09) e areia de rio lavada de um [filtro de água primitivo](/protocol-01) em pano úmido. A areia úmida resfria na hora o calor escaldante e retém cinzas voadoras, enquanto milhões de microporos de carvão adsorvem gases venenosos. Amarrada com [cordas de fibra de kudzu](/protocol-05) e vedada com [pomada de resina de pinheiro](/protocol-10), essa máscara garante uma janela crucial de 15 minutos para evacuar zonas de desastre tóxico.",
@@ -174,6 +174,6 @@
     ]
   },
   "createdAt": "2026-10-23T06:15:00.000Z",
-  "updatedAt": "2026-10-23T15:31:14+09:00",
-  "contentHash": "9e1a3cafbc077cd0"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "a652097c118b08b8"
 }

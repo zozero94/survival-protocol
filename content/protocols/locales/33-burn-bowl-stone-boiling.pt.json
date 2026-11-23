@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-33",
   "category": "TOOLS",
-  "title": "Como Fazer uma Panela de Madeira Cavada com Brasas e Ferver Água a 100°C Usando Pedras Quentes sem Recipiente Metálico",
+  "title": "Como esculpir tigela de madeira e ferver água sem panela",
   "threatLevel": "HIGH",
   "threatLevelText": "[FABRICAÇÃO DE PANELA DE MADEIRA EM CAMPO E ESTERILIZAÇÃO POR FERVURA COM PEDRAS A 100°C]",
   "summary": "Se você tiver uma panela de metal, marmita ou caneca térmica em casa ou no kit de emergência, use sempre esses utensílios comerciais diretamente no fogo primeiro para ferver água de forma mais rápida e segura. Porém, em fugas ou isolamento na natureza sem nenhum recipiente resistente ao calor, beber água contaminada causa diarreia e desidratação fatal em três dias. Colocar uma tigela de madeira direto nas chamas queima o fundo. Mas se você cercar a borda superior de um tronco seco com barreira de barro úmido, queimar só o centro com brasas da [Carvoaria Primitiva](/protocol-09) e raspar o carvão três ou quatro vezes com uma lâmina do [Machado de Pedra](/protocol-04), você esculpe uma panela de madeira de 5 litros. Depois, aquecendo pedras secas de granito de morro nas brasas por 30 minutos e mergulhando-as na água com pinça de galho verde, a água ferve a 100°C em 3 minutos sem queimar a madeira.",
@@ -249,5 +249,6 @@
     "body": "Colocar madeira direto no fogo fura o fundo. Primeiro, faça um anel de barro úmido na borda de um tronco seco para proteger, ponha brasas no centro e sopre por um bambu oco. Segundo, raspe o carvão preto com uma pedra afiada e repita três a quatro vezes até abrir uma panela funda. Terceiro, nunca aqueça pedras de rio — elas explodem na fogueira! Escolha granito seco de morro alto e asse na brasa por 30 minutos. Quarto, pegue com pinça de galho verde, passe rápido na erva úmida e alterne na água até ferver a 100°C em 3 minutos!"
   },
   "createdAt": "2026-11-17T05:55:43.049Z",
-  "contentHash": "deeb9b7d12b5c10f"
+  "contentHash": "8f0775ee775d23d0",
+  "updatedAt": "2026-11-17T15:03:29+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-31",
   "category": "SHELTER",
-  "title": "Window Blast Taping and Interior Triangle Safe Zone for Air Raids and Earthquakes",
+  "title": "How to Stop Window Shards and Make an Indoor Safe Zone",
   "threatLevel": "CRITICAL",
   "threatLevelText": "CRITICAL // IMMEDIATE WARTIME & QUAKE DEFENSE",
   "summary": "During major urban catastrophes such as warfare, missile bombardments, explosions, or severe earthquakes, supersonic blast shockwaves shatter windows into thousands of high-velocity glass shrapnel blades. This protocol provides a 3-tier barrier system to block 95% of glass fragmentation and establishes a structural 'Triangle of Life' safe zone along interior load-bearing walls. If commercial blast mitigation film or plywood shutters are available, deploy them first; otherwise, transform your home into an improvised bunker using duct tape, wet newsprint, blackout curtains, and a mattress.",
@@ -257,5 +257,6 @@
     "body": "When a bomb explodes, the shockwave turns ordinary window glass into hundreds of supersonic razor blades! A simple X-pattern tape breaks glass into huge guillotine chunks! Step 1: lace duct tape into a dense 5cm grid across the entire pane to scatter vibrations. Step 2: mist water and press wet newspaper over it to trap micro-fine glass powder. Step 3: drape heavy blackout curtains and tape all four edges to the wall. Finally, retreat 3 meters away to an interior load-bearing wall, prop a mattress beside a sturdy desk at 45 degrees, and take cover in the Triangle of Life!"
   },
   "createdAt": "2026-11-13T00:05:48.223Z",
-  "contentHash": "bef5418b5df5f8ba"
+  "contentHash": "aa1a2353796b0acf",
+  "updatedAt": "2026-11-13T00:13:03Z"
 }

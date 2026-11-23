@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-27",
   "category": "TOOLS",
-  "title": "Como fazer um apito de emergência de 120dB e heliógrafo solar de 10km com lata vazia e espelho",
+  "title": "Como pedir resgate com apito e espelho ao ficar preso",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Engenharia de ressonância acústica de 3.000Hz e sinalização de resgate por reflexão solar de 10km]",
   "summary": "Se você já tiver um apito de resgate comercial sem esfera (Pealess), espelho de sinalização aeronáutico, buzina a gás ou baliza localizadora pessoal (PLB) na mochila de emergência ou colete salva-vidas, use sempre esse equipamento pronto primeiro para obter o resgate mais rápido e seguro. Contudo, ao ficar preso sob escombros após um terremoto ou isolado em enchentes e montanhas sem equipamento, gritar com toda a força atinge apenas 80–85dB e lesiona as cordas vocais esgotando suas forças em 15 minutos. Já um apito de ressonância dobrado a partir de uma lata de bebida vazia (ou tampa de conserva) produz um som agudo de 3.000Hz e 115–120dB com pouquíssimo sopro, atravessando o barulho de tempestades e concreto até 1,5–2km. Durante o dia, usar um espelho de mão, a tela apagada do celular ou folha metálica que sobrou de uma [Cápsula Térmica de Papelão sem Energia](/protocol-22) com uma mira em V dos dedos permite enviar lampejos SOS solares a helicópteros de busca a 10–15km.",
@@ -244,6 +244,6 @@
     ]
   },
   "createdAt": "2026-11-10T04:10:00.000Z",
-  "updatedAt": "2026-11-10T04:10:07.597Z",
-  "contentHash": "1b9f5a00b3ae1b42"
+  "updatedAt": "2026-11-10T04:29:37Z",
+  "contentHash": "8430ebb444645461"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-36",
   "category": "FOOD",
-  "title": "How to Cold-Leach Bitter Toxins Out of Wild Acorns to Make Long-Term Storable Acorn Flour and Acorn Jelly",
+  "title": "How to Leach Acorns Into Safe Edible Flour and Jelly",
   "threatLevel": "HIGH",
   "threatLevelText": "[WILDERNESS CALORIE HARVEST & COLD-WATER ACORN DETOXIFICATION ENGINEERING]",
   "summary": "If your shelter or emergency kit already contains canned foods, freeze-dried rations, or store-bought starch flour, eat those ready-made food supplies first as the fastest, safest source of nutrition. However, when stranded long-term in autumn or winter forests with zero rations remaining, fallen wild acorns offer a vital life-saving store of carbohydrates. Because raw acorns contain harsh bitter tannins that damage stomach linings, cause vomiting, and injure kidneys if eaten untreated, you must process them through four steps—float sorting and shelling, granite stone grinding, 2 to 4 days of cold-water leaching in woven cotton cloth, and 3 to 4 hours of starch settling before sun-drying or boiling over a [Bow-Drill Fire](/protocol-02) in a [Burned Wood Bowl](/protocol-33)—to yield safe 1-year storable acorn flour or firm jelly.",
@@ -244,5 +244,6 @@
     "body": "First, dump acorns in cold water—toss every floater full of grub holes and crack only heavy sunken nuts with a smooth river stone, rubbing off the bitter red skin. Second, grind kernels finer than sand grains on a wide granite rock so cold water reaches every speck. Third, the golden rule: wrap meal in tight cotton cloth and soak 2 to 4 days ONLY in cold stream or changed bowl water—never hot water—until runoff turns clear with zero pucker. Fourth, rest 3 to 4 hours, pour off clear top water, sun-dry the white starch for a year, or boil 1 part starch to 5 parts water for firm acorn jelly!"
   },
   "createdAt": "2026-11-20T00:58:30.265Z",
-  "contentHash": "2ce15dc3445950e6"
+  "contentHash": "85683e273d79b305",
+  "updatedAt": "2026-11-20T10:05:05+09:00"
 }

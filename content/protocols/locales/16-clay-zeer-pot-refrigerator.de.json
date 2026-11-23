@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-16",
   "category": "FOOD",
-  "title": "Stromloser Verdunstungs-Kühlschrank aus Doppel-Tonkrügen und Nassem Sand (Feld-Zeer-Pot)",
+  "title": "Einen stromlosen Naturkühler zur Lebensmittellagerung bauen",
   "threatLevel": "HIGH",
   "threatLevelText": "[SOMMER-FLEISCHVERDERB- & LEBENSMITTELVERGIFTUNGSSCHUTZ & STROMLOSE KÜHLUNG]",
   "summary": "In der Sommerhitze oder in einem Katastrophengebiet ohne Stromnetz züchten durch [Tierfallen und Jagd](/protocol-08) oder [primitive Fischreusen](/protocol-11) mühsam gewonnene Fleisch- und Fischvorräte bei Raumtemperatur binnen eines halben Tages Fliegenlarven und Fäulnisbakterien, was zu tödlicher Lebensmittelvergiftung führt. Ohne Strom und Eis müssen Sie sofort einen stromlosen 'Feld-Zeer-Pot'-Verdunstungskühlschrank bauen, indem Sie zwei unterschiedlich große 'unglasierte poröse Tonkrüge' nach dem Prinzip des [Lehmofens](/protocol-06) ineinanderstellen, den Zwischenraum mit Flusssand vom [natürlichen Wasserfilter](/protocol-01) füllen und kaltes Wasser eingießen, sodass die Verdunstungswärme der Umgebung Hitze entzieht. Da Wasser ständig durch die Mikroporen der Außenwand verdunstet, bleibt das Innere 8 bis 12°C kühler als die Außenluft; in der mit [natürlicher Laugenseife](/protocol-13) desinfizierten Innenkammer bleiben Vorräte ganz ohne Strom über eine Woche lang frisch.",
@@ -193,6 +193,6 @@
     }
   ],
   "createdAt": "2026-10-26T00:05:00.000Z",
-  "updatedAt": "2026-10-26T10:53:22+09:00",
-  "contentHash": "61cf2d9d25082a99"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2ddeb5dcbaaa0864"
 }

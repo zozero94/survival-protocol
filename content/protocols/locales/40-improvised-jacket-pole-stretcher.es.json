@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-40",
   "category": "TOOLS",
-  "title": "Camilla de Emergencia Sin Energía con 2 Varas Largas y 2 Chaquetas Gruesas en Desastres",
+  "title": "Cómo hacer una camilla improvisada para evacuar heridos",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[EVACUACIÓN DE DESASTRES: CAMILLA IMPROVISADA CON 2 CHAQUETAS CON MANGAS INVERTIDAS Y 2 VARAS]",
   "summary": "Si el servicio 119 o emergencias locales pueden llegar pronto con una camilla profesional, tabla espinal rígida y paramédicos, llame de inmediato y espere asistencia especializada como primera opción. Además, toda persona con sospecha de lesión de cuello, espalda o columna tras una caída o derrumbe NO debe moverse salvo amenaza mortal inmediata como incendio, colapso secundario o inundación creciente. Sin embargo, cuando las ambulancias están bloqueadas por escombros, cortes o inundaciones y evacuar es vital, dos varas resistentes más largas que un adulto y dos chaquetas gruesas crean una camilla firme en dos minutos. Primero controle sangrados y fracturas con [Torniquete y Sello Torácico](/protocol-32) y [Férula de Ramas](/protocol-18), pase dos varas por mangas volteadas hacia adentro con cremalleras abajo, haga prueba previa de carga, levante en nivel entre cuatro personas y pida auxilio con [Silbato 120dB y Espejo](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "Primero regla de oro: ¡si sospechas golpe en cuello o espalda, NO lo muevas salvo fuego o derrumbe inminente! Si debes evacuar, busca dos varas más largas que un adulto, sube al tope la cremallera de dos chaquetas gruesas y voltea todas las mangas hacia adentro. Segundo, solapa sus bajos un palmo, pasa ambas varas por los túneles y dale la vuelta con los cierres hacia el piso. Tercero, presiona fuerte el centro por 10 segundos antes de subirlo. ¡Luego levanten en 4 a la cuenta de tres caminando pies adelante!"
   },
   "createdAt": "2026-11-23T01:07:17.085Z",
-  "contentHash": "a43aecfb46b37d81"
+  "contentHash": "9afe9a4af0f00714",
+  "updatedAt": "2026-11-23T10:14:45+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-18",
   "category": "MEDICINE",
-  "title": "Cómo inmovilizar fracturas y frenar hemorragias con ramas rectas, musgo y tela hervida",
+  "title": "Cómo inmovilizar fracturas de extremidades y frenar sangrados",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[PRIMEROS AUXILIOS] Prevención de corte arterial/nervioso, shock hemorrágico y necrosis",
   "summary": "Cuando se rompe un hueso del brazo o la pierna por una caída en la montaña o entre escombros, dejar la extremidad suelta permite que los bordes afilados del hueso corten arterias y nervios cercanos, causando hemorragias graves o parálisis permanente. En el campo sin hospital, lave alrededor de la herida con [Jabón Natural de Ceniza](/protocol-13) y [Agua Filtrada Hervida](/protocol-01) tibia para prevenir el tétanos y las infecciones, presione una almohadilla de arpillera hervida durante 10 minutos sobre el sangrado e inmovilice tanto la articulación superior como la inferior con dos ramas rectas acolchadas con musgo y [Cuero Natural Suave](/protocol-17), atadas en 4 puntos con [Cuerda de Liana Silvestre](/protocol-05).",
@@ -251,6 +251,6 @@
     }
   ],
   "createdAt": "2026-10-28T09:00:00+09:00",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "f016404b5e722ceb"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "05b5c6ffbeef07d6"
 }

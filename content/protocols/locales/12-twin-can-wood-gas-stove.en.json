@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-12",
   "category": "SHELTER",
-  "title": "Twin-Can Double-Wall Wood Gas Stove Using Salvaged Cans, Scrap Wire & Dry Twigs",
+  "title": "How to Build a Smokeless Camp Stove to Boil Water",
   "threatLevel": "HIGH",
   "threatLevelText": "[SMOKELESS HIGH-HEAT BOILING & 80% FUEL SAVING]",
   "summary": "In a post-collapse city or barren wasteland, thick firewood is scarce, and an open campfire sends up black smoke that gives away your position while losing heat to the wind. By nesting two salvaged steel cans of different sizes to form a double-wall chamber and locking them with bare copper or steel core wire stripped from scrap electrical cable, you create a smokeless gasifier stove that burns the rising wood smoke itself. Just two handfuls of finger-thick dry twigs boil 1 liter of water in 8 minutes with zero visible smoke.",
@@ -173,6 +173,6 @@
     "description": "Built from two salvaged steel cans and stripped scrap wire, featuring a 1.5–2cm double-wall air preheat channel, lower cold-air intakes, upper secondary oxygen nozzles, a cross-wire pot trivet, and smokeless 850°C wood-gas combustion."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "61644332f814ecf5",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "3dd1c210e811ac3e",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

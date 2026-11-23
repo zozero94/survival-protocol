@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-23",
   "category": "FOOD",
-  "title": "Cómo Purificar Agua Potable en Apagones y Cortes de Agua con Sifón Capilar de Toalla de Algodón y Luz Solar (SODIS)",
+  "title": "Cómo filtrar y desinfectar agua sucia ante cortes de agua",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[CORTE DE AGUA URBANO Y FILTRACIÓN CAPILAR SIN COMBUSTIBLE + DESINFECCIÓN SOLAR UV]",
   "summary": "Si en casa ya dispone de agua embotellada, una pajita filtrante portátil (como LifeStraw), pastillas potabilizadoras de dióxido de cloro o un filtro doméstico de fibra hueca, utilice siempre esos productos comerciales primero por rapidez y seguridad. Sin embargo, cuando un terremoto, guerra o apagón masivo agota el agua embotellada y las pastillas, y usted queda atrapado en un apartamento urbano sin carbón, arena de río ni gas o electricidad para hervir agua (si está en el bosque con carbón y arena, use el [Filtro Natural de Carbón y Arena](/protocol-01)), beber agua de lluvia turbia o agua con óxido de las tuberías provoca diarrea grave y deshidratación mortal en 3 días. Al recuperar agua limpia del tanque cerámico del inodoro o agua de lluvia, filtrar el barro y el óxido mediante un puente sifón capilar de toalla 100% algodón retorcida, y exponer botellas PET transparentes sobre un reflector de aluminio a 6 horas de sol directo (método SODIS avalado por la OMS), obtendrá agua potable segura sin gastar combustible.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T11:56:30+09:00",
-  "contentHash": "1e9b8d304fe76a93"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "80133e7e7bde48b3"
 }

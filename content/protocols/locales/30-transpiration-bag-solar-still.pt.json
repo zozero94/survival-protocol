@@ -1,5 +1,5 @@
 {
-  "title": "Como Coletar Água Potável com Saco Plástico, Transpiração Foliar e Destilador Solar de Terra",
+  "title": "Como coletar água potável de folhas e solo na falta de água",
   "summary": "Em situações de isolamento ou desastre sem rios nem chuva e com a água esgotada, esta tecnologia de hidratação combina a transpiração natural de folhas de árvores não tóxicas com a evaporação e condensação solar da umidade subterrânea para obter até 1 litro diário de água destilada pura sem ferver. Se houver filtros portáteis ou água engarrafada, priorize-os; em escassez total, confie 100% num saco plástico e pedras.",
   "threatLevelText": "CRÍTICO // AÇÃO IMEDIATA NECESSÁRIA",
   "timeRequired": "30 min montagem // 6–12 h coleta",
@@ -263,7 +263,8 @@
     ]
   },
   "createdAt": "2026-11-12T01:50:38.970Z",
-  "contentHash": "2e0b5744254a5aa6",
+  "contentHash": "7ed2232aa20aa55d",
   "protocolId": "PR-30",
-  "category": "FOOD"
+  "category": "FOOD",
+  "updatedAt": "2026-11-12T02:01:22Z"
 }

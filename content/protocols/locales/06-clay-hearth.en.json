@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-06",
   "category": "SHELTER",
-  "title": "How to Build a Primitive Clay & Stone Hearth to Block Wind and Trap Heat",
+  "title": "How to Build a Clay Hearth Oven to Block Wind and Hold Heat",
   "threatLevel": "HIGH",
   "threatLevelText": "[ESSENTIAL SHELTER & WARMTH]",
   "summary": "Building an open campfire on the ground loses over 80% of heat to the wind and burns firewood three times faster, while windborne sparks pose a severe fire hazard. By building a cob dome hearth with clay, sand, dry grass, and dry stones, you create a weatherproof cooking and heating shelter that traps heat and stays warm all night long.",
@@ -167,6 +167,6 @@
     "description": "A stone-core cob dome hearth with smooth clay plaster, top cooking ring, and rear exhaust chimney designed to trap 650°C heat efficiently."
   },
   "createdAt": "2026-10-14T10:15:00.000Z",
-  "updatedAt": "2026-10-17T19:16:11+09:00",
-  "contentHash": "df1dd8d025a9dc62"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "d6bb087f3ca35ee2"
 }

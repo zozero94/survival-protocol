@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-24",
   "category": "MEDICINE",
-  "title": "WHO-Trinklösung (ORS) gegen Dehydrationsschock und 0,9% Wund-Kochsalzlösung aus abgekochtem Wasser, Salz und Zucker herstellen",
+  "title": "Trinklösung gegen Austrocknung und Wund-Kochsalzlösung mischen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[LEBENSRETTENDE ORS-ELEKTROLYTLÖSUNG & 0,9% ISOTONISCHE WUNDSPÜLLÖSUNG]",
   "summary": "Wenn Ihr Haushalt oder Erste-Hilfe-Kasten bereits fertige Elektrolytpulver aus der Apotheke, isotonische Sportgetränke oder sterile medizinische Kochsalzlösung enthält, verwenden Sie diese Vorräte nach dem Öffnen immer zuerst. Wenn jedoch Krankenhäuser und Apotheken bei Katastrophen, Stromausfall oder Wassermangel ausfallen und fertige Medikamente aufgebraucht sind, führen starker Durchfall, Erbrechen oder hohes Fieber binnen 3 Tagen zu einem lebensbedrohlichen Dehydrationsschock. Reines Leitungswasser allein wird vom geschwächten Darm kaum aufgenommen, und das Übergießen offener Wunden mit reinem Wasser lässt Zellen durch osmotischen Schock platzen, was Schmerzen, Sekundärinfektionen und Gewebenekrosen verschlimmert. Indem Sie Haushaltssalz und Zucker im exakten Finger-Prisen- und Löffelverhältnis in 1 Liter gefiltertes, 3 Minuten abgekochtes Wasser aus einem [Kohle-Sand-Wasserfilter](/protocol-01) oder [Baumwolltuch-Siphon & SODIS-Entkeimer](/protocol-23) einrühren, stellen Sie sofort die WHO-Standard-Trinklösung (ORS) mit dreifacher Darmaufnahme sowie eine zuckerfreie 0,9% isotonische Kochsalzlösung zur schmerzfreien Wundspülung her.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-05T01:35:36.454Z",
-  "updatedAt": "2026-11-05T10:59:54+09:00",
-  "contentHash": "9319a7fd060a4220"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "a55c704f612d632e"
 }

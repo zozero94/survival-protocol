@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-10",
   "category": "MATERIALS",
-  "title": "Purificação de resina de pinheiro em pomada antisséptica e cola impermeável",
+  "title": "Como fazer pomada e cola à prova d’água com resina de pinho",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFESA CONTRA INFECÇÕES E FIXAÇÃO IMPERMEÁVEL]",
   "summary": "Na selva, um corte não tratado causado por lascas de pedra ou galhos pode infeccionar rapidamente, provocando septicemia e risco de morte. Além disso, machados de pedra e recipientes rachados necessitam de um aglutinante impermeável resistente para o uso rústico. Ao derreter suavemente a resina de pinheiro sobre o calor indireto das brasas e remover os resíduos de casca, obtém-se uma pomada antimicrobiana pura. Misturando a resina restante com pó fino de carvão na proporção de **1:1**, produz-se um bastão de cola de piche (Pitch Glue) duro como pedra.",
@@ -173,6 +173,6 @@
     "description": "Especificações completas da pomada antimicrobiana em concha marinha, bastão de cola de piche em madeira dura e corte transversal da vedação impermeável no machado."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "553e3079c1feebb8",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "54b5676ba59cb40c",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

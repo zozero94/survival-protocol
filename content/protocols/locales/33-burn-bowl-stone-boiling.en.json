@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-33",
   "category": "TOOLS",
-  "title": "How to Carve a Wooden Burn Bowl with Charcoal Embers and Boil Water to 100°C Using Heated Stones Without a Pot",
+  "title": "How to Carve a Wooden Bowl and Boil Water Without a Pot",
   "threatLevel": "HIGH",
   "threatLevelText": "[METAL-FREE FIELD COOKWARE & 100°C STONE BOILING STERILIZATION]",
   "summary": "If you have a metal cooking pot, mess kit, or canteen cup in your home or emergency kit, always use that commercial cookware over a direct flame first for the fastest and safest boiling. However, when fleeing a disaster or isolated in the wilderness without any heat-proof container, drinking untreated stream water causes fatal diarrhea and dehydration within three days. Putting a carved wooden bowl directly over flames will burn straight through the bottom. Instead, by ringing a dry two-handspan hardwood log top with wet clay mud, burning out only the center using oak charcoal embers from a [Primitive Charcoal Kiln](/protocol-09), and scraping away the charred layer three to four times with a sharp flake from a [Stone Axe](/protocol-04), you can craft a sturdy 5-liter wooden cooking pot. Then, by heating dense dry hillside granite stones in campfire coals for 30+ minutes and lowering them into the water with green wooden tongs, you can bring water to a full 100°C rolling boil in 3 minutes without scorching the bowl.",
@@ -249,5 +249,6 @@
     "body": "Put a wooden bowl directly on flames and it burns right through. First, ring the top edge of a two-handspan dry log with wet clay mud so the rim stays protected, pile hot oak coals in the center, and blow down through a hollow reed. Second, scrape out the black char with a sharp stone blade and repeat three to four times until you have a sturdy handspan-deep pot. Third, never heat wet river rocks—they explode like grenades in fire! Pick dry hillside granite stones and bake them in red coals for 30 minutes. Fourth, grip a stone with green wood tongs, flick off ash on wet grass, and gently alternate stones in water to reach a full 100°C boil in 3 minutes!"
   },
   "createdAt": "2026-11-17T05:55:43.049Z",
-  "contentHash": "deeb9b7d12b5c10f"
+  "contentHash": "8f0775ee775d23d0",
+  "updatedAt": "2026-11-17T15:03:29+09:00"
 }

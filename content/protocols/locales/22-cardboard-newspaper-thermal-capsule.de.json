@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-22",
   "category": "SHELTER",
-  "title": "Stromlose Wärmekapsel & Schlafsack (+7°C) aus Versandkartons, Zeitungspapier und alter Kleidung bei Winter-Blackout",
+  "title": "Bei Heizungsausfall ein wärmespeicherndes Zimmerzelt bauen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WINTER-BLACKOUT HYPOTHERMIE-SCHUTZ & STROMLOSE WÄRMEKAPSUL]",
   "summary": "Wenn Sie zu Hause bereits fertige Winterausrüstung wie einen Winterschlafsack, ein Indoor-Wärmezelt, eine Rettungsdecke, Taschenwärmer oder Wärmflaschen besitzen, nutzen Sie diese immer zuerst als schnellste und wärmste Lösung. Dauert ein Winter-Blackout oder Heizungsausfall jedoch länger an, sind Wärmepacks aufgebraucht und fehlt ein Wärmezelt, entzieht der kalte Betonboden beim Schlafen unter normalen Decken 70% Ihrer Körperwärme und führt nachts zu Unterkühlung (im Freien im Wald stattdessen eine [Laubhütte Debris Hut](/protocol-03) bauen). Indem Sie flachgelegte Versandkartons 3-lagig auf den Boden schichten, eine mit Küchen-Metallfolie ausgekleidete Kartonhaube über den Oberkörper stellen und faustgroß geknüllte Zeitungskugeln in einen Bettbezug füllen, erwärmt Ihre eigene Körperwärme (ca. 100W) das Kapselinnere ganz ohne Brennstoff um 6 bis 8°C über die Raumtemperatur.",
@@ -240,7 +240,7 @@
       "PRAXISGEPRÜFT // 0% BRENNSTOFF WINTER-BLACKOUT KÄLTESCHUTZ"
     ]
   },
-  "contentHash": "fa7cb634f6645209",
+  "contentHash": "25f2827531c6b5c8",
   "createdAt": "2026-11-03T01:00:00.000Z",
-  "updatedAt": "2026-11-03T10:37:53+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

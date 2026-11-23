@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "FOOD",
-  "title": "How to Turn Muddy Water into Clean Drinking Water (Natural Filter with Charcoal & Sand)",
+  "title": "How to Build a Natural Filter to Purify Muddy Water",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[MUST-HAVE SURVIVAL]",
   "summary": "Drinking untreated muddy water in the wild leads to severe cramps, diarrhea, and dangerous dehydration. By setting up a three-branch tripod, tying three horizontal cross-sticks around the middle to form a triangular support cradle, seating a birch-bark cone inside with a moss plug, and layering charcoal, sand, and pebbles in order, turbid water is filtered clear. Boiling this filtered water vigorously for 3+ minutes destroys microscopic bacteria, making it safe to drink.",
@@ -226,6 +226,6 @@
     ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "b95e8a8abc03a175"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2bd2fa730f6c29f4"
 }

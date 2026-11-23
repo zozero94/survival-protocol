@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-05",
   "category": "TOOLS",
-  "title": "Cómo trenzar cuerda salvaje irrompible con corteza y lianas",
+  "title": "Cómo trenzar una cuerda resistente en la naturaleza",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SUPERVIVENCIA CRÍTICA]",
   "summary": "Una cuerda resistente es indispensable para atar refugios, fijar hachas de piedra y encender fuego con arco. Atar lianas verdes enteras falla porque encogen y se quiebran al secarse; en cambio, extraer la fibra blanca interna y trenzar dos cabos en sentido inverso crea una soga autobloqueante capaz de soportar el peso de un adulto.",
@@ -134,6 +134,6 @@
     "description": "Una bobina de cuerda uniforme de 8 mm trenzada en sentido inverso con fibras de corteza, capaz de resistir más de 90 kgf de carga de tracción."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-16T13:50:13+09:00",
-  "contentHash": "39b850a3c2f6f731"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "8a19f8ab4e6502a7"
 }

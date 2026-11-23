@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-14",
   "category": "TOOLS",
-  "title": "Agulha de Osso Primitiva e Costura com Tendão Seco para Couro e Calçados",
+  "title": "Como costurar roupas e calçados rasgados na natureza",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFESA CONTRA PERDA TÉRMICA & PREVENÇÃO DE HIPOTERMIA E CONGELAMENTO]",
   "summary": "Em climas de frio extremo ou em cenários pós-colapso sem acesso a suprimentos manufaturados, o rompimento de trajes de couro ou solas de botas provoca uma perda térmica drástica, levando à hipotermia letal ou congelamento de membros em menos de 2 horas. Sem agulhas de aço ou linha sintética, é vital confeccionar um kit de costura rústico: quebre ossos longos de perna de cervos ou javalis com um [machado de pedra](/protocol-04), lixe sobre quartzito molhado e fure o olho com uma sovela de sílex. Combinadas com tendões secos desfiados em fibras de colágeno de altíssima tensão, as linhas amolecidas com saliva encolhem de 3 a 5% ao secar, comprimindo os orifícios antes de serem impermeabilizadas com [breu de pinho aquecido](/protocol-10).",
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:35:09+09:00",
-  "contentHash": "911b5ab190a2616e"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "11a7cd597316040b"
 }

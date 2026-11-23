@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-12",
   "category": "SHELTER",
-  "title": "Fogareiro a Gás de Lenha de Dupla Combustão com 2 Latas Vazias, Fio Desencapado e Gravetos",
+  "title": "Como fazer um fogareiro sem fumaça para ferver água",
   "threatLevel": "HIGH",
   "threatLevelText": "[COZIMENTO SEM FUMAÇA DE ALTA TEMPERATURA E 80% ECONOMIA DE LENHA]",
   "summary": "Em uma cidade colapsada ou terreno ermo é difícil achar lenha grossa, e uma fogueira comum levanta fumaça preta que entrega sua posição enquanto o vento espalha o calor. Ao encaixar duas latas de aço vazias de tamanhos diferentes para formar uma parede dupla e prendê-las com o arame de cobre ou ferro de um fio elétrico desencapado, você cria um fogareiro sem fumaça que queima o próprio gás da madeira. Com apenas dois punhados de gravetos secos você ferve 1 litro de água em 8 minutos sem emitir fumaça.",
@@ -173,6 +173,6 @@
     "description": "Construído com duas latas de aço descartadas e arame desencapado, com canal de pré-aquecimento de 1,5–2cm, entradas inferiores de ar frio, bicos superiores de oxigênio secundário e suporte cruzado de arame para combustão limpa a 850°C."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "61644332f814ecf5",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "3dd1c210e811ac3e",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-40",
   "category": "TOOLS",
-  "title": "How to Build a Zero-Power Emergency Stretcher With 2 Long Poles and 2 Heavy Zipped Jackets",
+  "title": "How to Make an Emergency Stretcher to Move Injured People",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DISASTER TRIAGE EXTRACTION: INSIDE-OUT DUAL JACKET & TWIN POLE EMERGENCY STRETCHER]",
   "summary": "If 119 or local EMS can reach the scene quickly with a commercial folding stretcher, rigid spine board, and trained paramedics, always call emergency services and wait for professional extraction first. Moreover, anyone suspected of a neck, back, or spinal injury after a fall or building collapse must NEVER be moved without immediate life-threatening hazards like fire, secondary collapse, or rising floodwater. However, when ambulances are blocked by disaster rubble, flooding, or power failure and urgent evacuation is unavoidable, two strong poles longer than an adult and two heavy zipped jackets build a full-body stretcher in two minutes. First secure bleeding or breaks via [Windlass Tourniquet & Chest Seal](/protocol-32) and [Branch Splint Stabilization](/protocol-18), pass two poles through inside-out jacket sleeves flipped zipper-side down, pass a center load check, lift level with four carriers, and signal help with a [120dB Whistle & Mirror](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "Rule zero first: never move anyone with a suspected neck or back fracture unless fire or collapse threatens life right now! Otherwise, pick two sturdy poles taller than an adult, zip two thick jackets completely up, and pull all four sleeves inside-out into the torso. Next, overlap the two hems by one palm width, slide both poles cleanly through the sleeve tunnels, and flip the bed zipper-side down so smooth backs face up. Press hard on the center seam for 10 seconds to load-test before lifting, then rise level on a four-person count moving feet-first!"
   },
   "createdAt": "2026-11-23T01:07:17.085Z",
-  "contentHash": "a43aecfb46b37d81"
+  "contentHash": "9afe9a4af0f00714",
+  "updatedAt": "2026-11-23T10:14:45+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-34",
   "category": "SHELTER",
-  "title": "How to Build a Zero-Power 55W Solar Water Bottle Skylight (Liter of Light) Using a Clear 1.5L Bottle and Bleach Drops",
+  "title": "How to Light a Dark Room Using Sunlight and a Water Bottle",
   "threatLevel": "HIGH",
   "threatLevelText": "[ZERO-POWER SOLAR WATER PRISM DAYLIGHTING & 55W INDOOR ROOM ILLUMINATION]",
   "summary": "If your home or emergency kit includes rechargeable LED lanterns, solar flashlights, or battery work lights, always use those commercial lighting tools first for the safest and easiest illumination. However, when a major disaster causes a multi-day blackout and daytime [Blast Window Taping](/protocol-31) or blackout boards leave indoor rooms or basements pitch dark, burning candles or a [Tuna Can Oil Wick Heater](/protocol-21) during the day wastes precious night fuel and increases fire and carbon monoxide risks. By filling a salvaged clear 1.5L PET bottle with clean water and 3 drops of unscented household bleach (or half a spoon of coarse salt) to prevent green algae, then sealing it vertically into a hole in a window panel or roof board, water's natural light refraction scatters sunlight 360 degrees—delivering up to 55W bulb brightness indoors for 5+ years with zero electricity.",
@@ -244,5 +244,6 @@
     "body": "Burning candles during the day wastes night fuel and risks indoor fires. First, peel all labels off a crystal-clear 1.5L water bottle and lightly scuff just the upper-third grip band with sandpaper or stone. Second, fill it to the brim with clean water plus 3 drops of bleach or half a spoon of salt so green algae never grows, and seal the cap tight. Third, cut a snug hole in a cardboard or plywood window cover and insert the bottle 1/3 outside and 2/3 inside. Fourth, seal the seam watertight with pine resin or waterproof backing—instantly flooding your dark shelter with safe 55W daylight!"
   },
   "createdAt": "2026-11-18T05:23:28.224Z",
-  "contentHash": "e2d10bf877747894"
+  "contentHash": "3642408f6fa2a32d",
+  "updatedAt": "2026-11-18T14:30:37+09:00"
 }

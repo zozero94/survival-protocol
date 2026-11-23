@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-38",
   "category": "MATERIALS",
-  "title": "Como Evitar Perda de Calor no Frio Sem Energia Usando Água, Plástico-Bolha, Jornal e Cortina Prateada",
+  "title": "Como vedar vento em janelas e perda de calor sem aquecedor",
   "threatLevel": "HIGH",
   "threatLevelText": "[ISOLAMENTO TÉRMICO RESIDENCIAL E BLOQUEIO DE FRESTAS SEM ENERGIA]",
   "summary": "Se sua residência possui gerador, aquecedores elétricos, veda-portas de silicone ou películas térmicas comerciais, use e confira primeiro esses equipamentos de fábrica por serem mais rápidos e seguros. Porém, quando apagão e corte de gás no inverno fazem a sala quase congelar, barrar frestas e vidro gelado retém calor corporal vital. Rastreando correntes com as costas da mão molhada, vedando trilhos com jornal e pano, aplicando plástico-bolha só com água pulverizada e somando cortina prateada à [Cápsula Térmica de Papelão](/protocol-22), [Palmilha Isolante](/protocol-28) e ventilação breve ao meio-dia usando [Fogareiro de Lata](/protocol-21), você mantém um quarto seguro sem energia.",
@@ -244,5 +244,6 @@
     "body": "Primeiro molhe leve as costas da mão e passe na janela—onde sentir vento frio, soque jornal bem enrolado e panos velhos no trilho. Segundo limpe o vidro, borrife só água e cole a face DAS BOLHAS contra o vidro úmido—gruda sem cola e entra luz! Terceiro coloque rolo grosso de toalha no peitoril e pendure manta prateada brilhando para dentro para rebater calor. Quarto enxugue gotas de manhã e abra 5 minutos ao meio-dia—jamais acenda fogo num quarto lacrado!"
   },
   "createdAt": "2026-11-21T14:29:26.279Z",
-  "contentHash": "fbcbd91d87c23005"
+  "contentHash": "d3cf8e1f381a3b92",
+  "updatedAt": "2026-11-21T23:36:11+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "A-Frame Debris Hut Thermal Shelter (Emergency Primitive Bivouac)",
+  "title": "How to Build a Leaf Debris Shelter to Keep Body Heat Without Fire",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[THREAT LEVEL: CRITICAL]",
   "summary": "Surviving sub-zero wilderness without fire requires trapping your metabolic body heat like a heavy down sleeping bag. By interlocking an A-frame ridgepole spine and banking a 1-meter mound of dry forest leaves, this debris hut maintains internal warmth even in freezing rains and howling gales.",
@@ -100,6 +100,6 @@
     "description": "A 2.5m heavy ridgepole and 45° rib frame blanketed by 1 meter of compressed dry leaves and thatch branches, trapping body heat down to sub-zero temperatures without fire."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "5c83ac034006645f"
+  "updatedAt": "2026-11-09T10:08:31Z",
+  "contentHash": "fb417a686fed1bca"
 }

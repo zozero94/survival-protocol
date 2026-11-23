@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-20",
   "category": "FOOD",
-  "title": "Como Destilar Água do Mar e Água Barrenta em Água Potável Pura com Panela de Barro e Bambu",
+  "title": "Como transformar água do mar fervida em água doce potável",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFESA CONTRA DESIDRATAÇÃO] Água Doce 100% Sem Sal em Costas e Zonas Isoladas",
   "summary": "Quando isolado numa costa, ilha ou perto de poças salobras onde só existe água do mar ou água contaminada, um [Filtro Natural de Carvão e Areia](/protocol-01) apenas retém lama e odores, mas não remove o sal dissolvido (3,5% de salinidade). Beber água do mar retira líquido das células e causa desidratação fatal em dois dias. Fervendo a água salgada numa [Panela de Barro](/protocol-16) sobre uma [Fornalha de Barro](/protocol-06), conectando um tubo de bambu sem nós à tampa vedada e envolvendo-o com [Musgo Esfagno e Juta](/protocol-18) molhados em água fria, o sal pesado fica no fundo como cristais brancos enquanto o vapor puro condensa em 2 a 3 litros diários de água doce e sal marinho natural.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T11:24:26+09:00",
-  "contentHash": "3662cb12c2284d2c"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0df04a5b241032ea"
 }

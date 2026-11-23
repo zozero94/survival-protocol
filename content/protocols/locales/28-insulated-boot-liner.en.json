@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-28",
   "category": "SHELTER",
-  "title": "How to Make No-Power Waterproof Insulated Boot Liners with Plastic Bags, Cardboard & Newspaper to Prevent Frostbite and Trench Foot",
+  "title": "How to Make Waterproof Boot Liners to Prevent Frostbite",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Emergency Thermal Vapor-Barrier & Multi-Layer Dead-Air Boot Insulation Engineering Against Frostbite & Trench Foot]",
   "summary": "If you already have commercial waterproof hiking boots (GORE-TEX), thick merino wool socks, disposable adhesive foot warmers, or neoprene booties in your shelter or bug-out pack, always wear that ready-made gear first. However, during sub-zero blackouts or icy flood evacuations, once boots and socks become soaked, water conducts heat away roughly 25 times faster than still air. Your foot temperature plummets, causing frostbite or tissue-macerating trench foot within 2–3 hours. In a disaster, foot injuries mean you cannot walk or evacuate. By layering corrugated cardboard boxes, newspapers, plastic bags, and kitchen foil (or dried reed grass and birch bark), you can build an insulated boot liner that reflects ground cold, traps dead-air warmth, and separates sweat from exterior floodwater.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "02d7f29c042a9c1b",
+  "contentHash": "7e0f2fe6f23910d2",
   "shortsScript": {
     "hook": "When winter blackouts or floods soak your boots, frostbite and trench foot can cripple you in two hours! Build a zero-power waterproof thermal boot liner using plastic bags, newspaper, and cardboard!",
     "body": "First, trace your foot slightly larger onto two layers of corrugated cardboard, wrap them in aluminum foil, and place them in your boot to block 90% of ground cold. Put dry cotton socks on bare feet, then wrap four sheets of crumpled-and-flattened newspaper around your toes and soles to trap warm air. Slip an intact plastic bag over the newspaper, tie the ankle loosely with a one-finger gap, and step into your boot! Never put plastic directly on bare skin—swap damp newspaper every 3 hours!"
@@ -256,5 +256,5 @@
       "[CORE PRINCIPLE] Ground Cold Shield + Sweat-Wicking Air Layer + Outer Waterproof Barrier"
     ]
   },
-  "updatedAt": "2026-11-10T05:34:16+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

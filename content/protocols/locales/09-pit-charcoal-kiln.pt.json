@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-09",
   "category": "MATERIALS",
-  "title": "Como fazer carvão vegetal denso em trincheira de terra sem oxigênio",
+  "title": "Como produzir carvão duro em forno de cova na terra",
   "threatLevel": "HIGH",
   "threatLevelText": "[COMBUSTÍVEL SEM FUMAÇA E FILTRO DE CARBONO]",
   "summary": "Queimar lenha em fogueira aberta consome a madeira por completo, deixando apenas cinzas brancas inúteis. Ao cavar uma vala cônica de 50 cm, empilhar toras de carvalho verticalmente e vedar tudo com barro e placas de grama para cortar 95% do oxigênio, a madeira passa por pirólise em vez de combustão. Isso produz carvão vegetal maciço de som metálico, que queima a 500 °C sem fumaça e filtra água barrenta.",
@@ -127,6 +127,6 @@
     "description": "Vista técnica do forno subterrâneo cônico com 95% de restrição de oxigênio, produzindo carvão vegetal poroso de carvalho para calor sem fumaça e filtragem de emergência."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "322dc0eab95e53a9",
-  "updatedAt": "2026-10-15T16:31:51+09:00"
+  "contentHash": "38e35885b34ecf14",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

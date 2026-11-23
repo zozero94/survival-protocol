@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Como Construir um Abrigo de Folhas Secas para Reter Calor sem Fogo (Debris Hut)",
+  "title": "Como fazer um abrigo de folhas para manter calor sem fogo",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
   "summary": "Passar a noite ao relento sob chuva e vento frio reduz a temperatura corporal em menos de 3 horas, gerando hipotermia grave. Quando não for possível acender fogo, empilhar galhos e uma grossa camada de folhas secas retém o calor corporal como um saco de dormir espesso para sobreviver à noite.",
@@ -100,6 +100,6 @@
     "description": "Uma viga pesada de 2.5m e armação de costelas a 45° cobertas por 1 metro de folhas secas compactadas e galhos, retendo o calor corporal em temperaturas negativas sem necessidade de fogo."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "5c83ac034006645f"
+  "updatedAt": "2026-11-09T10:08:31Z",
+  "contentHash": "fb417a686fed1bca"
 }

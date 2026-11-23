@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-28",
   "category": "SHELTER",
-  "title": "Como Fazer um Forro Isolante e Impermeável para Botas com Sacos Plásticos, Papelão e Jornal contra Congelamento e Pé de Trincheira",
+  "title": "Como fazer palmilhas isolantes contra congelamento nos pés",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Engenharia de Barreira de Vapor Térmica e Isolamento Multicamada de Ar Estagnado contra Congelamento e Pé de Trincheira]",
   "summary": "Se você já possui em seu abrigo ou mochila de emergência botas impermeáveis de trilha (GORE-TEX), meias grossas de lã merino, aquecedores químicos adesivos para os pés ou sapatilhas de neoprene, use sempre esses equipamentos prontos em primeiro lugar. Porém, em frio extremo ou evacuações por enchentes geladas, assim que sapatos e meias se molham, a água dissipa o calor cerca de 25 vezes mais rápido do que o ar estagnado. A temperatura dos pés despenca, provocando congelamento (Frostbite) ou necrose por maceração tecidual (Pé de Trincheira / Trench Foot) em apenas 2 a 3 horas. Em desastres, perder a mobilidade dos pés impede a fuga e o resgate. Combinando caixas de papelão ondulado descartadas, jornais velhos, sacos plásticos e papel-alumínio de cozinha (ou casca de bétula e capim seco), é possível montar imediatamente um forro térmico que barra o frio do chão, retém o calor e isola o suor da água externa.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "02d7f29c042a9c1b",
+  "contentHash": "7e0f2fe6f23910d2",
   "shortsScript": {
     "hook": "Se suas botas molharem num apagão de inverno ou enchente, o congelamento e o pé de trincheira podem impedir você de andar em 2 horas! Faça um forro térmico impermeável com sacos plásticos, jornal e papelão!",
     "body": "Primeiro corte duas camadas de papelão um pouco maiores que o pé, envolva em papel-alumínio e coloque no fundo da bota para bloquear 90% do frio do chão. Calce meias secas, envolva os dedos e a sola com 4 folhas de jornal amassadas e abertas para criar um colchão de ar quente. Cubra tudo com um saco plástico sem furos, amarre no tornozelo deixando um dedo de folga e calce a bota. Troque o jornal úmido a cada 3 horas!"
@@ -256,5 +256,5 @@
       "[PRINCÍPIO CHAVE] Escudo Basal + Ar Absorvente + Barreira Impermeável Tripla"
     ]
   },
-  "updatedAt": "2026-11-10T05:34:16+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

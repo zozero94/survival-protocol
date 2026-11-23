@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-10",
   "category": "MATERIALS",
-  "title": "Purifying Pine Resin into Antiseptic Ointment & Waterproof Pitch Glue",
+  "title": "How to Make Wound Salve and Waterproof Glue From Pine Resin",
   "threatLevel": "HIGH",
   "threatLevelText": "[INFECTION DEFENSE & WATERPROOF TOOL LASHING]",
   "summary": "In the wilderness, an untreated cut from a stone edge or jagged branch can quickly turn septic, risking systemic poisoning. Furthermore, stone axe heads, bone needles, and split containers require a rock-hard waterproof binder to withstand heavy outdoor use. By gently melting natural pine resin over indirect ember heat and skimming out tree bark debris, you isolate a pure antimicrobial salve that prevents infection. Blending the remaining hot resin with pulverized charcoal in a **1:1** ratio yields a rock-hard, shock-absorbing waterproof pitch glue stick.",
@@ -173,6 +173,6 @@
     "description": "Full specifications of clarified golden antimicrobial salve in an oyster shell, rock-hard obsidian pitch glue stick wrapped on hardwood, and axe joint waterproof barrier cross-section."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "553e3079c1feebb8",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "54b5676ba59cb40c",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

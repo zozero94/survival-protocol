@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-29",
   "category": "SHELTER",
-  "title": "Cómo Encender Fuego sin Cerillas Usando una Botella de Agua como Lente y el Fondo de una Lata Pulida como Espejo Cóncavo",
+  "title": "Cómo hacer fuego concentrando luz solar sin encendedor",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Ingeniería de Ignición Solar a 400°C sin Combustible mediante Refracción Convexa y Reflexión Parabólica Cóncava]",
   "summary": "Si ya dispone de un encendedor turbo a prueba de viento, cerillas impermeables, una barra de ferrocerio (pedernal) o una lupa de cristal en su refugio o mochila de emergencia, utilice siempre ese equipo comercial en primer lugar por ser el método más rápido y seguro. Sin embargo, cuando el aislamiento prolongado o las inundaciones agotan el gas del encendedor y mojan las cerillas, o cuando el agotamiento físico impide usar el [Taladro de Arco por Fricción](/protocol-02), puede concentrar la luz del sol en un día despejado para crear una brasa sin esfuerzo. Puliendo el fondo cóncavo de una lata de aluminio con pasta de dientes o ceniza fina hasta convertirlo en un espejo parabólico, o llenando una botella transparente lisa (o bolsa plástica) con agua limpia sin burbujas para formar una lente convexa, basta con enfocar un punto de luz del tamaño de un grano de arroz (1–2 mm) sobre yesca ennegrecida durante 30 segundos para obtener una brasa a más de 400 °C sin gastar una sola gota de combustible.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "258785c63f3ebd22",
+  "contentHash": "304c38ee66c0965b",
   "shortsScript": {
     "hook": "¿Te quedaste sin gas en el encendedor durante un apagón invernal o aislamiento? ¡Enciende fuego a 400 grados en 30 segundos con una lata vacía y una botella de agua!",
     "body": "Primero, pon una gota de pasta dental o ceniza fina en el fondo cóncavo de una lata de aluminio y frota 5 minutos hasta crear un espejo parabólico. Segundo, llena una botella transparente con agua limpia sin burbujas para que su hombro redondo actúe como lupa. Tercero, frota carbón negro en pelusa seca para evitar reflejos y mantén un punto focal del tamaño de un grano de arroz durante 30 segundos. ¡Cuando brille la brasa, envuélvela en un nido de pino seco y sopla suave hasta encender la llama! ¡Guarda siempre la botella a la sombra!"
@@ -256,5 +256,5 @@
       "[PRINCIPIO CLAVE] Reflexión Cóncava y Lente de Agua Concentran 400°C en 30s"
     ]
   },
-  "updatedAt": "2026-11-11T04:02:02+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-11",
   "category": "FOOD",
-  "title": "Como Trançar um Covo de Salgueiro com Funil Unidirecional para Pesca Passiva",
+  "title": "Como trançar um covo para pegar peixes sem vara",
   "threatLevel": "HIGH",
   "threatLevelText": "[PROTEÍNA PASSIVA E ECONOMIA DE ENERGIA]",
   "summary": "Perseguir peixes rápidos com as mãos ou lança de madeira esgota suas calorias vitais e falha em mais de 90% das tentativas. Ao trançar ramos flexíveis de salgueiro ribeirinho em um cesto cônico com funil invertido unidirecional, os peixes entram seguindo o cheiro da isca e ficam bloqueados pelas pontas elásticas ao tentar voltar. Ancorado na correnteza do rio, captura peixes sozinho enquanto você dorme ou constrói seu abrigo.",
@@ -178,5 +178,6 @@
     "description": "Corte longitudinal mostrando os 4 aros graduais, corpo cônico de varas de salgueiro a 1cm, funil antirretorno de 5cm, 2 pedras de lastro, trouxa de isca de caramujo e 4 estacas de fixação no leito do rio."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "69dbedcc472bdbdb"
+  "contentHash": "9924bec425027f83",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

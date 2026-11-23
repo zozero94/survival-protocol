@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-11",
   "category": "FOOD",
-  "title": "Flechten einer Einweg-Weidenreuse (Fischreuse) für passiven Fischfang im Fluss",
+  "title": "Ohne Angel eine Fischreuse flechten und Fische fangen",
   "threatLevel": "HIGH",
   "threatLevelText": "[PASSIVE PROTEINQUELLE & KRAFTERHALT]",
   "summary": "Schnelle Fische mit bloßen Händen oder einem Holzspeer zu jagen, verbrennt wertvolle Kalorien und scheitert in über 90% der Fälle. Wenn Sie biegsame Weidenruten am Flussufer zu einem konischen Korb mit einem nach innen verengten Rückschlag-Trichter flechten, schwimmen Fische der Duftspur nach hinein und werden beim Umkehrversuch von den elastischen Rutenspitzen blockiert. In einer Flussstromschnelle verankert, fängt die Reuse im Schlaf zuverlässig Fische.",
@@ -178,5 +178,6 @@
     "description": "Längsschnitt durch die 4 abgestuften Ringe, das 1cm-Weidengitter, den 5cm-Rückschlagtrichter, 2 Ballaststeine, Schneckenköderbeutel und 4 Bodenpflöcke mit gefangenem Fisch."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "69dbedcc472bdbdb"
+  "contentHash": "9924bec425027f83",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

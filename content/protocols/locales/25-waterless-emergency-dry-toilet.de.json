@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-25",
   "category": "MEDICINE",
-  "title": "Wie man bei Wasserausfall mit Müllsäcken, zerrissenem Zeitungspapier und Eichenholzkohle eine wasserlose Notfall-Trockentoilette baut",
+  "title": "Eine geruchsfreie Nottoilette ohne fließendes Wasser einrichten",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WASSERAUSFALL & ABWASSERRÜCKSTAU-SPERRE & WASSERLOSE BIOHAZARD-HYGIENE]",
   "summary": "Wenn Sie zu Hause oder im Notfallrucksack bereits fertige Notfall-Toiletten-Gerinnungsmittel (Superabsorber-Pulver), eine tragbare Campingtoilette oder geruchsdichte Fäkalienbeutel besitzen, verwenden Sie diese Fertigprodukte immer zuerst. Wenn jedoch Erdbeben, Bombardierungen, Stromausfälle oder starker Frost das Leitungswasser kappen und Abwasserrohre in Wohnblocks brechen – und keine Fertigpulver mehr da sind –, führt das Nachspülen mit Wassereimern dazu, dass Fäkalien in untere Stockwerke und Ihr eigenes Bad zurückstauen. Offene Fäkalien züchten binnen 24 Stunden Fliegen, E. coli, Ruhr und Noroviren. Indem Sie den Spülhebel festbinden, zwei dicke Müllsäcke übereinander über die Toilettenschüssel (oder einen 20-L-Eimer) spannen, ein 10 cm hohes Saugbett aus zerrissenem Zeitungspapier und Karton auslegen und Fäkalien sofort mit zerstoßener [Eichenholzkohle](/protocol-09) und weißer Holzasche abdecken, bevor Sie den Beutel per Schwanenhals-Doppelknoten versiegeln, stoppen Sie Gerüche und Seuchen komplett ohne Wasser.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-06T01:27:20.308Z",
-  "updatedAt": "2026-11-06T12:57:25+09:00",
-  "contentHash": "dd5397d801ea0704"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "bb84e814d86da74f"
 }

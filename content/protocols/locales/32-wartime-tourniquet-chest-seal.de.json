@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-32",
   "category": "MEDICINE",
-  "title": "Knebel-Tourniquet bei arterieller Blutung und 3-Seiten-Brustwandpflaster (Kriegs-Traumahilfe)",
+  "title": "Bei starker Blutung abbinden und Brustwunden abdichten",
   "threatLevel": "CRITICAL",
   "threatLevelText": "KRITISCH // 3-Minuten-Rettung bei Arterienblutung & Pneumothorax",
   "summary": "Notfall-Traumaprotokolle, um innerhalb von 3 Minuten einen tödlichen Blutungsschock zu stoppen, wenn Bombensplitter oder Glasscherben große Gliedmaßenarterien durchtrennen und hellrotes Blut herausspritzt (mittels Knebel-Tourniquet / Windlass), sowie um einen Lungenkollaps bei offenen Brustkorbwunden durch ein 3-seitig verklebtes Folienventil zu verhindern. Verwenden Sie vorrangig militärische Fertig-Tourniquets (CAT/SOFTT) und Chest Seals, falls vorhanden; nutzen Sie im Ernstfall ohne Sanitätsmaterial einen mindestens 4cm breiten Ledergürtel oder gefaltetes Tuch, einen stabilen Metalllöffel oder Eichenast, saubere Plastikfolie und Panzertape. Enthält Schutzregeln gegen Wundinfektion, Tetanus und Gewebenekrose.",
@@ -257,5 +257,6 @@
     "body": "Wenn hellrotes Blut aus Arm oder Bein spritzt, reicht einfaches Drücken mit einem Tuch nicht aus. Erstens: Binden Sie einen mindestens 4 Zentimeter breiten Ledergürtel oder ein gefaltetes Tuch drei Fingerbreit oberhalb der Wunde Richtung Herz fest um. Zweitens: Stecken Sie einen stabilen Metalllöffelstiel oder Eichenast in den Knoten und drehen Sie ihn zwei- bis dreimal kräftig herum, bis die Blutung komplett stoppt. Drittens: Sichern Sie den Stab gegen Aufdrehen und schreiben Sie T mit der Uhrzeit auf die Stirn. Bei einem pfeifenden Loch in der Brust legen Sie saubere Plastikfolie auf und kleben nur drei Seiten fest, damit Luft nach unten entweicht!"
   },
   "createdAt": "2026-11-16T03:34:15.333Z",
-  "contentHash": "265802761804cc88"
+  "contentHash": "e2ef3abd1e690bd0",
+  "updatedAt": "2026-11-16T03:44:06Z"
 }

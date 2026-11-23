@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-17",
   "category": "MATERIALS",
-  "title": "Wie man leicht verderbliche Rohhaut mit Eichenrindensud und Aschelauge zu festem, wasserfestem Leder macht (Natürliche Lederherstellung im Feld)",
+  "title": "Rohe Tierhaut zu haltbarem, wasserfestem Leder verarbeiten",
   "threatLevel": "HIGH",
   "threatLevelText": "[SCHUTZ VOR ROHHAUTFÄULNIS & DAUERHAFTE WASSERFESTE WINTERLEDER-SELBSTVERSORGUNG]",
   "summary": "Bei langfristiger Isolation verfaulen durch [Tierfallen und Jagd](/protocol-08) gewonnene 'Rohhäute' wegen Fleischresten und Feuchtigkeit binnen eines Tages oder trocknen in der Sonne hart wie ein Holzbrett, sodass sie für Kleidung oder Schuhe unbrauchbar sind. In der Wildnis ohne Chemikalien weichen Sie die Rohhaut zuerst in glitschigem 'weißem Holzaschewasser' wie bei der [natürlichen Ascheseife](/protocol-13) ein, um die Haare sanft abzuschieben, und legen sie danach eine Woche lang in dunkelroten 'herben Eichenrindensud' aus zerstoßener roter Eicheninnenrinde rund um einen [Erdgruben-Kohlemeiler](/protocol-09). Genau wie das Kauen einer Eichel oder unreifen Kaki den Mund zusammenzieht, dringt der 'herbe Schutzsaft' der Eichenrinde tief in die Haut ein und schützt sie vor Fäulnisbakterien, während Holzrauch die Oberfläche versiegelt – für warme Wintermäntel und Lederschuhe mit [Knochennadeln und Sehnengarn](/protocol-14).",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-26T13:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "1edc87e6714dfcae"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "f14d49f8448b03ae"
 }

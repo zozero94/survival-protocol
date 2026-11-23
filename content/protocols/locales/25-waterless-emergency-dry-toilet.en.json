@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-25",
   "category": "MEDICINE",
-  "title": "How to Build a Waterless Emergency Dry Toilet Using Trash Bags, Shredded Newspaper, and Oak Charcoal to Stop Odors and Disease",
+  "title": "How to Build an Emergency Dry Toilet Without Running Water",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WATER OUTAGE & BROKEN SEWER PIPE BACKFLOW LOCK & WATERLESS BIOHAZARD SANITATION]",
   "summary": "If your home or disaster kit already includes commercial emergency toilet coagulant packets (super-absorbent polymer gel), a portable camping toilet, or odor-sealing waste bags, always use those commercial supplies first. However, when an earthquake, bombing, blackout, or severe freeze cuts off tap water and ruptures apartment drainpipes—and commercial coagulants run out—pouring bucket water to force a flush causes raw sewage to backflow into lower-floor living rooms and your own bathroom. Leaving human waste unsealed breeds flies, E. coli, dysentery, and norovirus within 24 hours, turning your shelter into an epidemic zone. By locking the flush lever, fitting a double-layer heavy-duty trash bag over your toilet bowl (or 20L bucket), laying a 10cm moisture-absorbing bed of shredded newspaper and cardboard, and covering waste immediately with crushed [Oak Charcoal Powder](/protocol-09) and white wood ash before gooseneck double-knotting, you can eliminate odors and pathogen spread with zero water.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-06T01:27:20.308Z",
-  "updatedAt": "2026-11-06T12:57:25+09:00",
-  "contentHash": "dd5397d801ea0704"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "bb84e814d86da74f"
 }

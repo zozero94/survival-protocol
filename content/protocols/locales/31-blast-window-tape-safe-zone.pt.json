@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-31",
   "category": "SHELTER",
-  "title": "Fita em Grade Anti-Estilhaços em Janelas e Zona Segura Triangular Interior para Bombardeios e Terremotos",
+  "title": "Como conter estilhaços de janela e criar abrigo interno seguro",
   "threatLevel": "CRITICAL",
   "threatLevelText": "CRÍTICO // DEFESA IMEDIATA CONTRA BOMBARDEIOS E SISMOS",
   "summary": "Durante conflitos armados, ataques com mísseis, explosões urbanas ou terremotos severos, a onda de choque estilhaça vidraças em milhares de lâminas pontiagudas em alta velocidade. Este protocolo cria uma barreira tripla para reter mais de 95% dos estilhaços e estabelece uma zona de refúgio estrutural do 'Triângulo da Vida' junto a paredes mestras interiores. Se possuir película de segurança ou persianas externas reforçadas, use-as prioritariamente; caso contrário, converta seu cômodo em um abrigo improvisado com fita reforçada, jornal úmido, cortinas blecaute e um colchão.",
@@ -257,5 +257,6 @@
     "body": "Quando uma bomba cai, a onda de choque transforma o vidro em centenas de lâminas supersônicas! A fita em X quebra o vidro em guilhotinas gigantes! Passo 1: trace fita em grade densa de 5 cm por todo o vidro para espalhar a vibração. Passo 2: borrife água e pressione jornal úmido para prender o pó fino de vidro. Passo 3: feche cortinas blecaute grossas e vede os 4 cantos na parede com fita. Por fim, vá para uma parede mestra a 3 metros de distância, incline um colchão a 45 graus junto a uma mesa firme e proteja-se no Triângulo da Vida!"
   },
   "createdAt": "2026-11-13T00:05:48.223Z",
-  "contentHash": "bef5418b5df5f8ba"
+  "contentHash": "aa1a2353796b0acf",
+  "updatedAt": "2026-11-13T00:13:03Z"
 }

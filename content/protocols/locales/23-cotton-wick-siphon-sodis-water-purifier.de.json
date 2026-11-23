@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-23",
   "category": "FOOD",
-  "title": "Trinkwasser bei Wasser- und Stromausfall mit Baumwolltuch-Kapillarsiphon & Sonnenlicht (SODIS) aufbereiten",
+  "title": "Schmutzwasser bei Wasserausfall filtern und entkeimen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[STÄDTISCHER WASSERAUSFALL & BRENNSTOFFFREIE KAPILLARFILTRATION + UV-SONNENDESINFEKTION]",
   "summary": "Wenn Sie zu Hause bereits abgefülltes Flaschenwasser, einen tragbaren Outdoor-Trinkhalmfilter (wie LifeStraw), Chlordioxid-Wasserentkeimungstabletten oder einen Hohlfaser-Schwerkraftfilter besitzen, nutzen Sie diese Fertigprodukte immer zuerst – das ist am schnellsten und sichersten. Wenn jedoch Erdbeben, Krieg oder ein flächendeckender Blackout Flaschenwasser und Tabletten erschöpfen und Sie in einer Stadtwohnung weder Holzkohle noch Flusssand oder Gas/Strom zum Abkochen haben (in der Natur mit Kohle und Sand nutzen Sie den [Wildnis-Holzkohle-Sand-Filter](/protocol-01)), führt das Trinken von trübem Regen- oder rostigem Leitungswasser binnen 3 Tagen zu schwerem Durchfall und lebensbedrohlicher Dehydrierung. Indem Sie sauberes Reservewasser aus dem Keramik-Spülkasten der Toilette oder Regenwasser gewinnen, Schwebstoffe und Rost über eine gedrehte 100%-Baumwolltuch-Kapillarbrücke abfiltern und das klare Wasser in farblosen PET-Flaschen auf einem Alufolien-Reflektor 6 Stunden praller Sonne aussetzen (WHO-anerkannte SODIS-Methode), gewinnen Sie keimfreies Trinkwasser völlig ohne Brennstoff.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-04T02:22:36.760Z",
-  "updatedAt": "2026-11-04T11:56:30+09:00",
-  "contentHash": "1e9b8d304fe76a93"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "80133e7e7bde48b3"
 }

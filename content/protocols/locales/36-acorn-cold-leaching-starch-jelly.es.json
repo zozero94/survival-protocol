@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-36",
   "category": "FOOD",
-  "title": "Cómo Desamargar Bellotas con Agua Fría y Piedras para Hacer Harina Conservable 1 Año y Gelatina de Bellota",
+  "title": "Cómo quitar toxinas a las bellotas para hacer harina segura",
   "threatLevel": "HIGH",
   "threatLevelText": "[COSECHA CALÓRICA SILVESTRE Y DESINTOXICACIÓN DE BELLOTAS EN AGUA FRÍA]",
   "summary": "Si su hogar o refugio aún cuenta con latas, raciones secas o harinas comerciales, consuma primero esos alimentos preparados por ser la opción más rápida y segura. Sin embargo, ante aislamiento prolongado en bosques de otoño o invierno sin provisiones, las bellotas caídas ofrecen una reserva vital de carbohidratos. Dado que las bellotas crudas poseen taninos amargos tóxicos que irritan el estómago, provocan vómitos y dañan los riñones, debe procesarlas en cuatro pasos —selección por flotación y pelado, molido en granito, lavado en agua fría de 2 a 4 días en tela de algodón y decantado de 3 a 4 horas para secar harina al sol o hervir con [Fuego por Fricción](/protocol-02) y [Cuenco de Madera](/protocol-33)— obteniendo alimento seguro para más de un año.",
@@ -244,5 +244,6 @@
     "body": "Primero échalas en agua fría: tira todas las que floten porque tienen gusanos y parte con una piedra solo las pesadas del fondo, quitando la piel roja. Segundo, muélelas sobre una losa de granito más finas que arena para que entre el agua. Tercero, ¡clave vital!: envuelve en tela de algodón y lávalas 2 a 4 días SOLO en agua fría —nunca caliente o se sella el amargor— hasta que salga cristalina y nada áspera. Cuarto, deja reposar 3-4 horas, bota el agua clara, seca el almidón blanco al sol para 1 año o hiérvelo 1 a 5 con agua para hacer gelatina firme!"
   },
   "createdAt": "2026-11-20T00:58:30.265Z",
-  "contentHash": "2ce15dc3445950e6"
+  "contentHash": "85683e273d79b305",
+  "updatedAt": "2026-11-20T10:05:05+09:00"
 }

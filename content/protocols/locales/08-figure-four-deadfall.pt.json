@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "Como capturar animais com 3 gravetos e uma pedra (Armadilha em 4)",
+  "title": "Como caçar com armadilha de pedra em isolamento selvagem",
   "threatLevel": "HIGH",
   "threatLevelText": "[CRÍTICO: PROTEÍNA E ALIMENTO]",
   "summary": "Perseguir animais selvagens com as mãos vazias esgota rapidamente a sua energia. Entalhando encaixes em três gravetos da grossura de um dedo e montando-os em formato de 'número 4', eles sustentam uma pedra de 15kg sem nenhuma corda. Quando a presa toca a isca, a estrutura desmonta em 0,1 segundo, esmagando a presa.",
@@ -121,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "51e4bec4273ad957"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "8d419146ec6db329"
 }

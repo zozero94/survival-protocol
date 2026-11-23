@@ -310,6 +310,32 @@ test('Suite 16: PostingReviewService, CrossLinkerService & ContentEnrichmentServ
       }
     }
   });
+
+  await t.test('16-13: SEO_SEARCH_INTENT가 35자를 초과하는 장황한 제목과 괄호 부제 표기를 즉시 반려해야 한다', () => {
+    const sample = allMasterProtocols[0]!;
+
+    const verboseProto: Protocol = {
+      ...sample,
+      title: '재난 시 빈 음료 캔과 은박지·나무 막대를 여러 개 엮어서 36자 넘는 아주 긴 제목 테스트하기',
+    };
+    const verboseRes = PostingReviewService.auditSeoSearchIntent(verboseProto);
+    assert.strictEqual(verboseRes.passed, false, '35자 초과 제목은 통과해서는 안 됨');
+    assert.ok(
+      verboseRes.warnings.some((w) => w.includes('권장 10~35자')),
+      '10~35자 초과 경고가 발생해야 함'
+    );
+
+    const parenProto: Protocol = {
+      ...sample,
+      title: '흙탕물 정수기 만드는 법 (야전 정수)',
+    };
+    const parenRes = PostingReviewService.auditSeoSearchIntent(parenProto);
+    assert.strictEqual(parenRes.passed, false, '괄호 부제 포함 제목은 통과해서는 안 됨');
+    assert.ok(
+      parenRes.warnings.some((w) => w.includes('괄호 부제 표기를 제거')),
+      '괄호 부제 제거 경고가 발생해야 함'
+    );
+  });
 });
 
 

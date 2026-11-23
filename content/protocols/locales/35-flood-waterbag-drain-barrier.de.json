@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-35",
   "category": "MATERIALS",
-  "title": "Hochwasser-Wassersack-Damm ohne Strom: Abfluss-Rückstau und Wohnungstür mit Müllsäcken und Gummihandschuhen abdichten",
+  "title": "Bei Starkregen Rückstau aus Abflüssen und Haustür-Flut stoppen",
   "threatLevel": "HIGH",
   "threatLevelText": "[STARKREGEN-HAUSSCHUTZ & KANALRÜCKSTAU-SPERRE OHNE STROM]",
   "summary": "Wenn an Haus oder Wohnung bereits professionelle Hochwasser-Schotts, quellende Wasserschutzsäcke oder mechanische Rückstauklappen verbaut sind, schließen Sie zuerst diese geprüften Systeme als schnellsten Schutz. Bei Unwettern, Sturzfluten oder Rohrbrüchen ohne Sandsäcke drückt Schmutz- und Abwasser in Erdgeschossen und Souterrains jedoch binnen Minuten aus den tiefsten Bodenabläufen, Toiletten und Türspalten hoch. Indem Sie Bodenabläufe mit drei Lagen wasserfester Folie, Gummihandschuhen und über 10 kg schweren Wasserkanistern beschweren, abgesperrte Toiletten mit einem weichen Wasserbeutel als [Not-Trockentoilette](/protocol-25) abdichten und doppellagige halb gefüllte Wasserziegel im zweireihigen Versatz in einer U-Plane vor der Tür stapeln, stoppen Sie bis zu 30 cm Flutwasser in 15 Minuten.",
@@ -244,5 +244,6 @@
     "body": "Zuerst Hauptsicherung raus falls Wasser naht — und niemals das Bad-Abflussgitter öffnen! Decke es weit mit zwei Schutzsäcken plus Gummihandschuh ab und stell einen 10-kg-Wasserkanister drauf. Zweitens: WC-Ventil zudrehen und einen halb vollen Doppelbeutel tief in den Abfluss als Pfropfen drücken. Drittens: 50-L-Säcke doppelt nehmen, nur zu 50% füllen, Luft rausdrücken und hoch verknoten für flache Ziegel statt runder Bälle. Viertens: Türschwelle 30 cm mit Plane auslegen, zwei versetzte Ziegelreihen stapeln und Plane drüberschlagen!"
   },
   "createdAt": "2026-11-19T04:34:21.301Z",
-  "contentHash": "313800a5da7dda87"
+  "contentHash": "2158ee9a7123cd30",
+  "updatedAt": "2026-11-19T13:42:04+09:00"
 }

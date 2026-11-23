@@ -185,7 +185,7 @@ describe('🤖 [Suite 7: 텔레그램 원격 제어 고도화] 커맨드 파싱,
       mockClient.sentMessages.some(
         (m) =>
           m.text.includes('생존 가이드 전술 제원표') &&
-          (m.text.includes('나뭇가지 마찰') || m.text.includes('활비비'))
+          (m.text.includes('나무 마찰') || m.text.includes('불 피우는 법'))
       )
     );
 

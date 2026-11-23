@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-35",
   "category": "MATERIALS",
-  "title": "How to Build a Zero-Power Floodwater Bag Dam and Block Sewer Drain Backflow Using Trash Bags, Rubber Gloves, and Water or Sand",
+  "title": "How to Block Drain Backflow and Floodwater at Doors",
   "threatLevel": "HIGH",
   "threatLevelText": "[URBAN FLOOD DEFENSE & SEWER DRAIN BACKFLOW BARRIER ENGINEERING]",
   "summary": "If your home or building entrance already has commercial flood barriers, water-activated swelling flood sacks, or mechanical sewer backflow valves installed, close and deploy those factory flood systems first as the fastest, safest defense. However, during severe typhoons, flash floods, earthquakes, or burst water mains in low-lying ground-floor or semi-basement homes without sandbags or flood gates, sewage and muddy runoff surge backward up through the lowest bathroom floor drains, toilet traps, and front doorways—flooding rooms and creating severe electrocution and bacterial hazards within minutes. By sealing floor drains under three layers of waterproof bags and rubber gloves weighted with 10kg+ water jugs, plugging shut-off toilets into an [Emergency Dry Toilet](/protocol-25), and stacking double-layered half-filled 'water bricks' in a two-row staggered U-wrapped dam, you can block 30cm floods and sewage backflow in 15 minutes with zero power.",
@@ -244,5 +244,6 @@
     "body": "First, cut the main breaker if water is already near outlets, then NEVER open your lowest bathroom floor drain cap—cover it wide with two waterproof bags plus a rubber glove and press it down with a 10kg+ water jug. Second, shut the valve behind your toilet and wedge a half-filled double water bag snugly down the porcelain throat to lock out sewage. Third, double up 50L trash bags, fill ONLY halfway, squeeze out air, and tie high so they flop into flat water bricks—not tight round balls. Fourth, line your doorway 30cm high with a waterproof sheet, stack two staggered rows of water bricks, and fold the sheet back over the top!"
   },
   "createdAt": "2026-11-19T04:34:21.301Z",
-  "contentHash": "313800a5da7dda87"
+  "contentHash": "2158ee9a7123cd30",
+  "updatedAt": "2026-11-19T13:42:04+09:00"
 }

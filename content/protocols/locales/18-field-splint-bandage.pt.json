@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-18",
   "category": "MEDICINE",
-  "title": "Como imobilizar fraturas e estancar sangramentos com galhos retos, musgo e pano fervido",
+  "title": "Como fazer tala em fraturas e conter sangramento de emergência",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[PRIMEIROS SOCORROS] Prevenção de corte arterial/nervoso, choque hemorrágico e necrose",
   "summary": "Quando um osso do braço ou da perna se quebra em uma queda na mata ou em escombros, deixar o membro solto faz com que as pontas afiadas do osso cortem artérias e nervos próximos, causando hemorragia grave ou paralisia permanente. No campo sem hospital, lave ao redor da ferida com [Sabão Natural de Cinzas](/protocol-13) e [Água Filtrada Fervida](/protocol-01) morna para evitar tétano e infecções, pressione uma compressa de estopa fervida por 10 minutos sobre o sangramento e imobilize tanto a articulação de cima quanto a de baixo com dois galhos retos forrados com musgo e [Couro Natural Macio](/protocol-17), amarrados em 4 pontos com [Corda de Cipó Silvestre](/protocol-05).",
@@ -251,6 +251,6 @@
     }
   ],
   "createdAt": "2026-10-28T09:00:00+09:00",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "f016404b5e722ceb"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "05b5c6ffbeef07d6"
 }

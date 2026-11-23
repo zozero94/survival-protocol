@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-15",
   "category": "MEDICINE",
-  "title": "Improvised Activated Charcoal & Sand Cloth Smoke and Toxic Gas Escape Mask",
+  "title": "How to Make an Improvised Smoke Mask for Fire and Toxic Fumes",
   "threatLevel": "HIGH",
   "threatLevelText": "[TOXIC GAS & CHOKING SMOKE SHIELD / RESPIRATORY BURN DEFENSE]",
   "summary": "In escalating wildfires, subterranean shelter blazes, or post-collapse structural conflagrations, inhaling dense soot and superheated toxic fumes more than 3 times causes fatal airway burns and asphyxiation within 2 minutes. When industrial gas masks or N95 respirators are nonexistent in the field, you must immediately craft an improvised activated charcoal mask by layering high-temperature oak charcoal from a [pit charcoal kiln](/protocol-09) and clean river sand from a [primitive water filter](/protocol-01) inside wet cloth. The moist sand instantly cools searing gas and traps coarse airborne ash, while millions of activated carbon micro-pores adsorb lethal organic vapors. Secured tightly with [wild kudzu cordage](/protocol-05) and edge-sealed with [pine pitch ointment](/protocol-10), this field mask guarantees a life-saving 15-minute golden window to evacuate toxic disaster zones.",
@@ -174,6 +174,6 @@
     ]
   },
   "createdAt": "2026-10-23T06:15:00.000Z",
-  "updatedAt": "2026-10-23T15:31:14+09:00",
-  "contentHash": "9e1a3cafbc077cd0"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "a652097c118b08b8"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-27",
   "category": "TOOLS",
-  "title": "How to Make a 120dB Emergency Whistle & 10km Solar Signal Mirror from an Empty Beverage Can and Mirror",
+  "title": "How to Signal Rescuers With a Whistle and Mirror When Trapped",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[3,000Hz Acoustic Resonance & 10km Specular Solar Reflection Rescue Signaling Engineering]",
   "summary": "If you already have a commercial pealess rescue whistle, aviation signal mirror, portable air horn, or Personal Locator Beacon (PLB) in your emergency pack or life vest, always use that ready-made gear first for the fastest rescue. However, when trapped under collapsed building rubble or stranded in floods or mountains without gear, shouting at the top of your lungs only reaches 80–85dB and ruins your vocal cords and stamina within 15 minutes. By folding a discarded beverage can (or tin lid), you can craft a resonance whistle that produces a piercing 3,000Hz, 115–120dB blast using minimal breath, cutting through storm and rubble noise up to 1.5–2km away. During daylight, pairing a small mirror, switched-off smartphone screen, or kitchen foil left over from a [No-Power Cardboard Thermal Capsule](/protocol-22) with a V-finger sight lets you aim SOS sun flashes at search helicopters 10–15km away.",
@@ -244,6 +244,6 @@
     ]
   },
   "createdAt": "2026-11-10T04:10:00.000Z",
-  "updatedAt": "2026-11-10T04:10:07.597Z",
-  "contentHash": "1b9f5a00b3ae1b42"
+  "updatedAt": "2026-11-10T04:29:37Z",
+  "contentHash": "8430ebb444645461"
 }

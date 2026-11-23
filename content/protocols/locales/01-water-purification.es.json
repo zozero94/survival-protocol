@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "FOOD",
-  "title": "Cómo convertir agua turbia en agua limpia para beber (Filtro natural con carbón y arena)",
+  "title": "Cómo hacer un filtro natural para purificar agua turbia",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SUPERVIVENCIA VITAL]",
   "summary": "Beber agua turbia no tratada en la naturaleza provoca cólicos severos, diarrea y deshidratación peligrosa. Al montar un trípode de ramas, atar un marco triangular horizontal a media altura para encajar el cono de corteza con un tapón de musgo y colocar carbón, arena y grava en secuencia, el agua turbia se filtra transparente. Hervir esta agua durante 3+ minutos elimina las bacterias microscópicas.",
@@ -226,6 +226,6 @@
     ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "b95e8a8abc03a175"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2bd2fa730f6c29f4"
 }

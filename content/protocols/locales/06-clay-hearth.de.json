@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-06",
   "category": "SHELTER",
-  "title": "Wie man eine primitive Lehmofenfeuerstelle baut, um Wind abzuhalten und Hitze zu speichern",
+  "title": "Einen Lehmofen gegen Wind und Regen bauen, der Hitze speichert",
   "threatLevel": "HIGH",
   "threatLevelText": "[LEBENSWICHTIGE WÄRME & UNTERKUNFT]",
   "summary": "Ein offenes Bodenfeuer verliert über 80% seiner Wärme an den Wind und verbraucht dreimal mehr Brennholz, während umherfliegende Funken eine schwere Brandgefahr darstellen. Durch den Bau eines Kuppelofens aus Lehm, Sand, trockenem Gras und trockenen Steinen entsteht eine wetterfeste Koch- und Wärmestelle, die Hitze speichert und die ganze Nacht über warm hält.",
@@ -167,6 +167,6 @@
     "description": "Ein robuster Steinkern-Cob-Kuppelofen mit glattem Lehmverputz, oberer Kochplatte und hinterem Rauchabzug, ausgelegt auf die Speicherung von 650°C Betriebshitze."
   },
   "createdAt": "2026-10-14T10:15:00.000Z",
-  "updatedAt": "2026-10-17T19:16:11+09:00",
-  "contentHash": "df1dd8d025a9dc62"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "d6bb087f3ca35ee2"
 }

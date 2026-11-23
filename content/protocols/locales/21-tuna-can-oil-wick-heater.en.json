@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-21",
   "category": "SHELTER",
-  "title": "How to Build a 72-Hour Indoor Emergency Heater & Cooker with a Tuna Can, Cooking Oil & Tissue",
+  "title": "How to Make an Indoor Emergency Heater Without Gas or Power",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[BLACKOUT INDOOR HEATING & 72-HOUR THERMAL SOURCE]",
   "summary": "If your home already has ready-made gear such as a portable butane stove, camp heater, paraffin candles, or solid fuel tablets, always use those first as the safest and fastest option. However, when a winter blackout or city gas outage drags on and all butane canisters and batteries are depleted, burning wood indoors risks fatal smoke and carbon monoxide suffocation (use the [Twin-Can Wood Gas Stove](/protocol-12) for high-heat outdoor cooking). By lining an empty steel tuna can with a pebble thermal buffer, standing 3 tightly twisted tissue wicks in a folded foil bridge clip, and filling it with vegetable cooking oil, you create a smokeless indoor heater that warms a room and heats drinking water for 8 to 12 hours per fill (over 72 hours per bottle of oil).",
@@ -240,7 +240,7 @@
       "FIELD VERIFIED // ZERO-SMOKE INDOOR HEAT & HOT WATER SYSTEM"
     ]
   },
-  "contentHash": "75c437ca60b0bfba",
+  "contentHash": "18c78a934ff9172d",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T16:17:08+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

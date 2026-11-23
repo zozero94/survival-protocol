@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "SHELTER",
-  "title": "Feuer machen durch Holzreibung (Bogenbohrer-Methode)",
+  "title": "Ohne Feuerzeug durch Holzreibung sicher Feuer entzünden",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
   "summary": "Eine grundlegende Überlebenstechnik, um mit trockenen Ästen und einer Schnur ohne Streichhölzer oder Feuerzeug Feuer zu machen. Durch das Vor- und Zurückbewegen des Bogens dreht sich die Spindel rasend schnell und erzeugt durch Reibung 400°C heißen glimmenden Kohlestaub. Wird diese Glut in ein trockenes Grasnest gebettet und sanft angeblasen, entflammt ein 600°C heißes offenes Feuer.",
@@ -112,6 +112,6 @@
     "description": "Eine 400°C heiße Holzkohleglut aus der 45°-V-Kerbe, die sicher in das trockene Zundernest überführt und zu einer offenen Flamme entfacht wurde."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:52:40+09:00",
-  "contentHash": "6cbccf0cd402bece"
+  "updatedAt": "2026-10-26T11:47:13+09:00",
+  "contentHash": "e48cabac6f47ab6b"
 }

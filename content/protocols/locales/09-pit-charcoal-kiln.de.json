@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-09",
   "category": "MATERIALS",
-  "title": "Herstellung von Hartholzkohle im anaeroben Erdgrubenmeiler",
+  "title": "In einer Erdgruben-Meilerstätte feste Holzkohle brennen",
   "threatLevel": "HIGH",
   "threatLevelText": "[RAUCHFREIER BRENNSTOFF & KOHLEFILTER]",
   "summary": "Wer Holz im offenen Lagerfeuer verbrennt, verschwendet wertvollen Brennstoff, da es mit Sauerstoff vollständig zu weißer Asche zerfällt. Durch das Ausheben einer 50cm tiefen konischen Erdgrube, dichtes vertikales Schichten von Eichenknüppeln und luftdichtes Versiegeln mit Lehm und Rasensoden wird die Sauerstoffzufuhr um 95% gedrosselt. Das Holz wird pyrolysiert statt verbrannt. Es entsteht dichte, metallisch klingende stückige Holzkohle, die rauchfrei bei 500°C brennt und Trinkwasser filtert.",
@@ -127,6 +127,6 @@
     "description": "Technische Schnittdarstellung des anaeroben 50cm Erdmeilers mit 95% Luftdrosselung zur Gewinnung poröser Eichenholzkohle für rauchfreie Hitze und Trinkwasserfilterung."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "322dc0eab95e53a9",
-  "updatedAt": "2026-10-15T16:31:51+09:00"
+  "contentHash": "38e35885b34ecf14",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

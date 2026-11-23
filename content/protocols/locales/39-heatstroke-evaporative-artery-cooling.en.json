@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-39",
   "category": "MEDICINE",
-  "title": "How to Rapidly Lower Heatstroke Fever Zero-Power Using Shade Trenches and Wet Cloth Arterial Cooling",
+  "title": "How to Quickly Lower Heatstroke Fever Without Ice or Power",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WILDERNESS HEATSTROKE ARTERIAL EVAPORATIVE COOLING & SHADE TRENCH MEDICINE]",
   "summary": "If emergency medical services can be reached and an air-conditioned vehicle, commercial ice packs, or cold immersion tub is nearby, call 119 or local EMS immediately and move the patient into cold water or air-conditioning first. However, in scorching summer heat without power or ice when sweating stops, skin turns dry and red-hot, and slurred confusion sets in, core fever turns lethal within minutes. Immediately scrape aside one hand-span of hot dry surface dirt under deep tree shade to expose cool subsoil, drape clean cotton cloths soaked in water from a [Charcoal-Sand Filter](/protocol-01) or [Clay Zeer Cooler](/protocol-16) across neck sides, armpits, and groin arteries under constant leafy fanning, give small half-sips of [Oral Rehydration Solution (ORS)](/protocol-24) ONLY once fully alert, and signal rescuers with a [120dB Whistle & Mirror](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "First, haul them out of sun onto shaded earth scraped one hand-span deep onto cool damp soil, and unbutton tight collars and belts. Second, soak cotton cloths in cool water and pack them ONLY where huge arteries run shallow—neck sides, armpits, and groin—then fan non-stop with a wide leafy branch to drive rapid evaporation! Third, dip warmed cloths back in cold water every 3 to 5 minutes, and lift chest wraps off immediately if shivering starts. Fourth, NEVER pour water into a dizzy mouth—wait for clear eyes and speech, then give slow half-sips of salt-sugar water!"
   },
   "createdAt": "2026-11-21T23:49:25.707Z",
-  "contentHash": "91ac3a06c8b794e1"
+  "contentHash": "d331c8acf0209e57",
+  "updatedAt": "2026-11-22T09:00:44+09:00"
 }

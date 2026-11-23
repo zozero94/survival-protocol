@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-36",
   "category": "FOOD",
-  "title": "Wilde Eicheln mit Kaltwasser entbittern: Mit Steinen mahlen und zu jahrelang haltbarem Eichelmehl und Gelee verarbeiten",
+  "title": "Eicheln sicher entbittern und zu haltbarem Mehl verarbeiten",
   "threatLevel": "HIGH",
   "threatLevelText": "[WILDNIS-KALORIENGEWINNUNG & KALTWASSER-EICHELENTGIFTUNG]",
   "summary": "Falls in Vorratskammer oder Notlager noch Konserven, Trockenrationen oder fertiges Mehl vorhanden sind, verzehren Sie diese Fertignahrung immer zuerst als schnellsten und sichersten Weg. Sind bei längerer Herbst- oder Winterisolation jedoch alle Vorräte erschöpft, liefern reichlich gefallene Eicheln lebensrettende Kohlenhydrate. Da rohe Eicheln giftige Bitterstoffe (Tannine) enthalten, die Magenschleimhaut, Darm und Nieren schwer schädigen, entgiften Sie sie in vier Schritten — Schwimmprobe und Schälen, Feinmahlen auf Granit, 2-4 Tage Kaltwasser-Auswaschen im Baumwolltuch sowie 3-4 Stunden Stärkeabsetzen zum Sonnentrocknen oder Einkochen mit [Bogenbohrfeuer](/protocol-02) und [Ausgebrannter Holzschüssel](/protocol-33).",
@@ -244,5 +244,6 @@
     "body": "Erstens: Eicheln ins kalte Wasser werfen — alles was schwimmt hat Würmer und fliegt raus! Nur schwere Bodenkerne mit einem Flussstein knacken und die rote Haut abreiben. Zweitens: Auf breitem Granit feiner als Sand mahlen. Drittens, die wichtigste Regel: In Baumwolltuch wickeln und 2 bis 4 Tage NUR in kaltem Bach- oder Wechselwasser spülen — niemals heiß, sonst schließt das Gift ein — bis das Wasser klar schmeckt. Viertens: 3 bis 4 Stunden absetzen lassen, klares Wasser abgießen, weißes Mehl für 1 Jahr sonnentrocknen oder 1 zu 5 mit Wasser zu festem Gelee rühren!"
   },
   "createdAt": "2026-11-20T00:58:30.265Z",
-  "contentHash": "2ce15dc3445950e6"
+  "contentHash": "85683e273d79b305",
+  "updatedAt": "2026-11-20T10:05:05+09:00"
 }

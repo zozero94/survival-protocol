@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-34",
   "category": "SHELTER",
-  "title": "Cómo Hacer una Claraboya Solar con Botella de Agua de 1,5L y 3 Gotas de Lejía para Iluminar Sin Electricidad (55W)",
+  "title": "Cómo iluminar un cuarto oscuro con luz solar y una botella",
   "threatLevel": "HIGH",
   "threatLevelText": "[ILUMINACIÓN DIURNA POR PRISMA DE AGUA SOLAR SIN ENERGÍA Y EQUIVALENCIA A 55W]",
   "summary": "Si cuentas con linternas LED recargables, faroles solares o focos con batería en tu kit de emergencia, utiliza siempre esos equipos comerciales primero. Sin embargo, cuando un apagón prolongado agota las baterías y el [Refuerzo de Ventanas contra Explosiones](/protocol-31) o los tablones dejan tu refugio a oscuras incluso de día, encender velas o una [Estufa de Lata con Aceite](/protocol-21) durante el día desperdicia combustible nocturno y aumenta el riesgo de incendio y monóxido de carbono. Llenando una botella transparente de 1,5L con agua limpia y 3 gotas de lejía sin aroma (o media cucharada de sal gruesa) contra las algas, y sellándola verticalmente en un panel de ventana o techo, la refracción dispersa la luz solar en 360° iluminando el interior como una bombilla de 55W durante más de 5 años sin electricidad.",
@@ -244,5 +244,6 @@
     "body": "Gastar velas de día desperdicia combustible y causa incendios. Primero, quita etiquetas a una botella transparente de 1,5L y lija solo una franja en el tercio superior. Segundo, llénala hasta arriba con agua limpia y añade 3 gotas de lejía o media cucharada de sal para evitar algas verdes, cerrando bien la tapa. Tercero, abre un agujero en el tablón de ventana e inserta 1/3 hacia afuera al sol y 2/3 adentro. Cuarto, sella la unión contra lluvia con resina o cinta impermeable: ¡tendrás luz de 55 vatios gratis todo el día!"
   },
   "createdAt": "2026-11-18T05:23:28.224Z",
-  "contentHash": "e2d10bf877747894"
+  "contentHash": "3642408f6fa2a32d",
+  "updatedAt": "2026-11-18T14:30:37+09:00"
 }

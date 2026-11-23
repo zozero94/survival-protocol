@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-22",
   "category": "SHELTER",
-  "title": "Cómo Hacer una Cápsula Térmica y Saco de Dormir Sin Electricidad (+7°C) con Cajas de Cartón, Periódico y Ropa Vieja",
+  "title": "Cómo armar una tienda térmica interior en cortes de calefacción",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFENSA CONTRA HIPOTERMIA EN APAGÓN INVERNAL & CÁPSULA TÉRMICA SIN ENERGÍA]",
   "summary": "Si en casa ya dispone de equipamiento térmico listo para usar, como un saco de dormir de invierno, tienda térmica interior, manta térmica de emergencia, parches térmicos o bolsas de agua caliente, úselos siempre primero como la opción más rápida y cálida. Sin embargo, cuando un apagón invernal o corte de gas y calefacción se prolonga, los parches térmicos se agotan y no hay tienda térmica, dormir en el suelo frío de hormigón solo con mantas drena el 70% de su calor corporal hacia el piso y provoca hipotermia nocturna (en aislamiento forestal al aire libre, construya un [Refugio de Hojarasca Debris Hut](/protocol-03)). Apilando 3 capas de cajas de cartón en el suelo, colocando una capucha de cartón forrada con lámina metálica de cocina y rellenando una funda nórdica con bolas de periódico arrugado, sus propios 100W de calor corporal elevan la temperatura interior de 6 a 8°C sobre la habitación sin gastar combustible.",
@@ -240,7 +240,7 @@
       "VERIFICADO // 0% COMBUSTIBLE DEFENSA HIPOTERMIA EN APAGÓN"
     ]
   },
-  "contentHash": "fa7cb634f6645209",
+  "contentHash": "25f2827531c6b5c8",
   "createdAt": "2026-11-03T01:00:00.000Z",
-  "updatedAt": "2026-11-03T10:37:53+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

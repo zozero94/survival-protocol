@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-33",
   "category": "TOOLS",
-  "title": "Cómo Tallar una Olla de Madera con Brasas y Hervir Agua a 100°C Usando Piedras Calientes sin Recipiente Metálico",
+  "title": "Cómo hacer un cuenco de madera y hervir agua sin olla",
   "threatLevel": "HIGH",
   "threatLevelText": "[FABRICACIÓN DE OLLA DE MADERA EN CAMPO Y ESTERILIZACIÓN POR EBULLICIÓN CON PIEDRAS A 100°C]",
   "summary": "Si cuentas con una olla metálica, marmita o taza térmica en tu hogar o mochila de emergencia, utilízala siempre como primera opción sobre el fuego directo para hervir agua de forma rápida y segura. Sin embargo, cuando huyes de un desastre o quedas aislado en la naturaleza sin recipientes resistentes al calor, beber agua sin hervir provoca diarrea y deshidratación fatal en tres días. Colocar un cuenco de madera sobre llamas directas quemará el fondo. En cambio, si rodeas el borde superior de un tronco seco con barro húmedo protector, quemas solo el centro con brasas de roble del [Horno de Carbón Primitivo](/protocol-09) y raspas la capa carbonizada tres o cuatro veces con una lasca del [Hacha de Piedra](/protocol-04), lograrás tallar una sólida olla de madera de 5 litros. Luego, calentando rocas secas de granito de colina en las brasas por 30 minutos y sumergiéndolas con tenazas de rama verde, podrás hervir el agua a 100°C en 3 minutos sin quemar la madera.",
@@ -249,5 +249,6 @@
     "body": "Si pones un plato de madera directo al fuego se perfora. Primero, rodea el borde superior de un tronco seco con barro húmedo protector, pon brasas de roble en el centro y sopla por una caña hueca. Segundo, raspa el carbón negro con una piedra afilada y repite tres o cuatro veces hasta lograr una olla profunda. Tercero, ¡jamás calientes piedras de río porque explotan como granadas! Elige granito seco de colina alta y caliéntalo 30 minutos en brasas. Cuarto, sujétalo con tenazas de rama verde, sacude la ceniza en hierba mojada y altérnalas en el agua hasta hervir a 100°C en 3 minutos!"
   },
   "createdAt": "2026-11-17T05:55:43.049Z",
-  "contentHash": "deeb9b7d12b5c10f"
+  "contentHash": "8f0775ee775d23d0",
+  "updatedAt": "2026-11-17T15:03:29+09:00"
 }

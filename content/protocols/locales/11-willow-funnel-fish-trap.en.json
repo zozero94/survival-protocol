@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-11",
   "category": "FOOD",
-  "title": "Weaving a One-Way Willow Funnel Fish Trap for Passive Stream Fishing",
+  "title": "How to Weave a Fish Trap to Catch Fish Without a Rod",
   "threatLevel": "HIGH",
   "threatLevelText": "[PASSIVE PROTEIN HARVEST & CALORIE CONSERVATION]",
   "summary": "Chasing swift fish by hand or with a wooden spear drains vital calories and fails over 90% of the time. By weaving flexible riverside willow shoots into a conical basket fitted with an inward-narrowing check-valve funnel, fish follow the scent trail inside and are blocked from backing out by converging twig tips. Anchored in a stream riffle, it passively harvests fish while you sleep or build shelter.",
@@ -178,5 +178,6 @@
     "description": "Longitudinal cutaway showing the 4 graduated hoops, 1cm-spaced willow rib cone, inward-converging 5cm check-valve funnel tips, 2 internal ballast cobbles, crushed snail bait pouch, and 4 riverbed anchor stakes holding captured fish."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "69dbedcc472bdbdb"
+  "contentHash": "9924bec425027f83",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

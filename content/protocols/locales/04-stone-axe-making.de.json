@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-04",
   "category": "TOOLS",
-  "title": "Steinaxt aus Flusssteinen und Ranken bauen",
+  "title": "Eine Steinaxt herstellen, um Holz in der Wildnis zu schlagen",
   "threatLevel": "HIGH",
   "threatLevelText": "[WICHTIGKEIT: KERNWERKZEUG]",
   "summary": "Mit bloßen Händen lassen sich keine dicken Äste für Unterschlupf oder Feuerholz fällen. So schlagen Sie zwei harte Flusssteine im 45-Grad-Winkel gegeneinander, um eine scharfe Steinklinge abzuspalten, und befestigen sie mit Kiefernharz und nasser Rankenrinde fest an einem Holzstiel.",
@@ -97,6 +97,6 @@
     "description": "Eine beidseitig geschlagene Feuersteinklinge, tief im gespaltenen Eichenstiel verankert, mit X-Kreuz-Lianenbindung verschnürt und mit Kiefernharz versiegelt."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-16T13:34:53+09:00",
-  "contentHash": "e5d622d174a529b8"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "5814a0aec477d2e6"
 }

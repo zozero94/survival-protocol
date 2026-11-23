@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-22",
   "category": "SHELTER",
-  "title": "Como Fazer uma Cápsula Térmica e Saco de Dormir Sem Energia (+7°C) com Caixas de Papelão, Jornal e Roupas Velhas",
+  "title": "Como montar tenda térmica interna em queda de energia",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFESA CONTRA HIPOTERMIA EM APAGÃO DE INVERNO & CÁPSULA TÉRMICA SEM ENERGIA]",
   "summary": "Se você já tiver equipamentos de inverno prontos em casa, como saco de dormir térmico, barraca térmica interna, manta aluminizada de emergência, aquecedores químicos ou bolsa de água quente, use-os sempre primeiro como a solução mais rápida e quente. Porém, quando um apagão de inverno ou corte de aquecimento se prolonga, os aquecedores acabam e não há barraca térmica, dormir no chão frio de concreto apenas com cobertores drena 70% do calor do corpo para o piso e causa hipotermia durante o sono (em isolamento na mata, construa um [Abrigo de Folhas Secas Debris Hut](/protocol-03)). Empilhando caixas de papelão desmontadas em 3 camadas no chão, montando um capuz de papelão forrado com folha metálica culinária e enchendo uma capa de edredom com bolas de jornal amassado, seus próprios 100W de calor corporal aquecem o interior da cápsula de 6 a 8°C acima da temperatura do quarto sem gastar combustível.",
@@ -240,7 +240,7 @@
       "VERIFICADO // 0% COMBUSTÍVEL DEFESA HIPOTERMIA EM APAGÃO"
     ]
   },
-  "contentHash": "fa7cb634f6645209",
+  "contentHash": "25f2827531c6b5c8",
   "createdAt": "2026-11-03T01:00:00.000Z",
-  "updatedAt": "2026-11-03T10:37:53+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

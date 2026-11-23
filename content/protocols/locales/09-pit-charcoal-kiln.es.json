@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-09",
   "category": "MATERIALS",
-  "title": "Cómo hacer carbón vegetal en un horno de pozo subterráneo sin oxígeno",
+  "title": "Cómo hacer carbón duro en un horno de pozo en tierra",
   "threatLevel": "HIGH",
   "threatLevelText": "[COMBUSTIBLE SIN HUMO Y FILTRO DE CARBONO]",
   "summary": "Quemar leña en una fogata abierta la convierte por completo en ceniza blanca inútil debido al exceso de oxígeno. Al cavar un pozo cónico de 50 cm, apilar troncos de roble apretados verticalmente y sellarlo con barro y tepes de hierba para bloquear el 95% del aire, la madera se piroliza en lugar de arder. Esto genera carbón duro y denso que suena a metal, arde a 500 °C sin humo, purifica agua y conserva ascuas durante días.",
@@ -127,6 +127,6 @@
     "description": "Vista técnica del horno subterráneo cónico operando con restricción de oxígeno al 95%, produciendo carbón vegetal poroso de roble ideal para calor sin humo y purificación de agua."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "322dc0eab95e53a9",
-  "updatedAt": "2026-10-15T16:31:51+09:00"
+  "contentHash": "38e35885b34ecf14",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

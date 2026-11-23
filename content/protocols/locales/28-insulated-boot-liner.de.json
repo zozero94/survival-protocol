@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-28",
   "category": "SHELTER",
-  "title": "Notfall-Isolierstiefel-Futter aus Plastiktüten, Wellpappe & Zeitung gegen Erfrierungen und Grabenfuß selber bauen",
+  "title": "Wasserdichte Stiefel-Einlagen gegen Erfrierungen basteln",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Thermische Dampfsperre & Mehrschicht-Totluft-Stiefelisolation gegen Erfrierungen und Grabenfuß]",
   "summary": "Wenn Sie in Ihrer Notunterkunft oder Ihrem Fluchtgepäck bereits wasserdichte Wanderschuhe (GORE-TEX), dicke Merinowollsocken, Einweg-Fußwärmer oder Neopren-Überzieher haben, sollten Sie diese Fertigprodukte immer zuerst anziehen. Doch bei extremen Minusgraden oder Schmelzwasser-Überflutungen leitet Wasser Wärme etwa 25-mal schneller ab als ruhende Luft, sobald Schuhe und Socken durchnässt sind. Die Fußtemperatur fällt rapide ab, was innerhalb von 2 bis 3 Stunden zu Erfrierungen (Frostbite) oder gewebezerstörendem Grabenfuß (Trench Foot) führt. Wer bei einer Katastrophe nicht mehr laufen kann, verliert die Fluchtfähigkeit. Durch schichtweises Kombinieren von Versandkartons, Zeitungspapier, Plastiktüten und Alufolie (oder getrocknetem Schilfgras und Birkenrinde) lässt sich sofort ein isolierendes Notfall-Futter bauen, das Bodenkälte abwehrt, Totluft-Wärme speichert und Fußschweiß von eindringendem Außenwasser trennt.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "02d7f29c042a9c1b",
+  "contentHash": "7e0f2fe6f23910d2",
   "shortsScript": {
     "hook": "Wenn Stiefel bei Winterstromausfall oder Hochwasser durchnässen, drohen in 2 Stunden Erfrierungen und Grabenfuß! Bauen Sie aus Plastiktüten, Zeitung und Karton ein wasserfestes Thermofutter bis minus 20 Grad!",
     "body": "Schneiden Sie zuerst zwei Lagen Wellpappe etwas größer als Ihren Fuß zu, wickeln Sie Alufolie darum und legen Sie sie in den Schuh – das stoppt 90% der Bodenkälte. Ziehen Sie trockene Baumwollsocken an, umwickeln Sie Zehen und Sohle dick mit 4 zerknüllten und geglätteten Zeitungsblättern als Warmluftpolster. Stülpen Sie einen intakten Plastikbeutel darüber, binden Sie ihn am Knöchel mit einer Fingerbreite Spielraum locker zu und schlüpfen Sie in den Stiefel. Zeitung alle 3 Stunden wechseln!"
@@ -256,5 +256,5 @@
       "[KERNPRINZIP] Bodenkälteschild + Schweißsaugende Luftschicht + Nässesperre"
     ]
   },
-  "updatedAt": "2026-11-10T05:34:16+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

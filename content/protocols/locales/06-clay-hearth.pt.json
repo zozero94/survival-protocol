@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-06",
   "category": "SHELTER",
-  "title": "Como Construir um Fogão Primitivo de Barro e Pedras para Bloquear o Vento e Reter Calor",
+  "title": "Como fazer um fogão de barro contra vento para guardar calor",
   "threatLevel": "HIGH",
   "threatLevelText": "[CALOR E ABRIGO ESSENCIAIS]",
   "summary": "Fazer uma fogueira aberta no chão perde mais de 80% do calor com o vento e consome três vezes mais lenha, enquanto fagulhas representam risco crítico de incêndio. Construindo um fogão em cúpula com barro, areia, capim seco e pedras secas, você cria um ponto de cozimento à prova de tempestades que retém calor a noite toda.",
@@ -167,6 +167,6 @@
     "description": "Um fogão em cúpula de barro com núcleo de pedras, reboco liso, bocal superior de cocção e chaminé traseira projetado para reter 650°C de calor."
   },
   "createdAt": "2026-10-14T10:15:00.000Z",
-  "updatedAt": "2026-10-17T19:16:11+09:00",
-  "contentHash": "df1dd8d025a9dc62"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "d6bb087f3ca35ee2"
 }

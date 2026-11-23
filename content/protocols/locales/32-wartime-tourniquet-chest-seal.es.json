@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-32",
   "category": "MEDICINE",
-  "title": "Torniquete de Varilla Giratoria para Hemorragia Arterial y Sello Torácico de 3 Lados (Trauma de Guerra)",
+  "title": "Cómo aplicar torniquete y sello torácico en heridas graves",
   "threatLevel": "CRITICAL",
   "threatLevelText": "CRÍTICO // Rescate en 3 Minutos ante Hemorragia Arterial y Neumotórax",
   "summary": "Protocolos de trauma de emergencia para detener el shock hipovolémico mortal en 3 minutos cuando metralla de bombardeos o cristales rotos seccionan arterias principales provocando chorros de sangre roja brillante mediante un torniquete de varilla giratoria (Windlass), y para evitar el colapso pulmonar por heridas penetrantes en el pecho mediante un apósito plástico de válvula de 3 lados. Utilice siempre primero torniquetes militares comerciales (CAT/SOFTT) y parches torácicos (Chest Seal) si dispone de ellos; en aislamiento sin botiquín, emplee un cinturón de cuero o tela doblada de 4cm de ancho, una cuchara metálica o rama de roble, plástico limpio de bolsa de aperitivos y cinta americana. Incluye pautas contra infección secundaria, tétanos y necrosis por compresión prolongada.",
@@ -257,5 +257,6 @@
     "body": "Cuando la sangre roja brota a chorros de un brazo o pierna, presionar con una toalla no basta. Primero, ate un cinturón de cuero o tela doblada de al menos 4 centímetros de ancho tres dedos por encima de la herida hacia el corazón. Segundo, meta el mango de una cuchara metálica o rama de roble en el nudo y gírelo dos o tres vueltas completas hasta detener la sangre por completo. Tercero, ate los extremos de la varilla para que no se suelte y escriba T con la hora en la frente. ¡Y si hay un agujero en el pecho que silba, cúbralo con plástico limpio pegando solo tres lados para que el aire escape por abajo!"
   },
   "createdAt": "2026-11-16T03:34:15.333Z",
-  "contentHash": "265802761804cc88"
+  "contentHash": "e2ef3abd1e690bd0",
+  "updatedAt": "2026-11-16T03:44:06Z"
 }

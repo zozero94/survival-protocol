@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-22",
   "category": "SHELTER",
-  "title": "How to Build a Zero-Power Indoor Thermal Capsule & Sleeping Bag (+7°C) with Cardboard Boxes, Newspaper & Old Clothes",
+  "title": "How to Build an Indoor Thermal Tent During Winter Power Outages",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WINTER BLACKOUT HYPOTHERMIA DEFENSE & ZERO-POWER THERMAL CAPSULE]",
   "summary": "If your home already has ready-made winter gear such as a cold-weather sleeping bag, indoor thermal tent, mylar survival blanket, chemical hand warmers, or hot water bottles, always use those first as the fastest and warmest solution. However, when a winter blackout or heating failure drags on, hand warmers are depleted, and no ready-made thermal tent is available, sleeping directly on a cold concrete floor under ordinary blankets drains 70% of your body heat into the floor and causes overnight hypothermia (in outdoor wilderness isolation, build a [Debris Hut Shelter](/protocol-03)). By stacking flattened shipping cardboard boxes 3 layers thick on the floor, standing a kitchen foil-lined cardboard hood over your upper body, and stuffing fist-sized crumpled newspaper balls inside a duvet cover, your own 100W metabolic body heat warms the capsule interior 6 to 8°C above the room temperature with zero fuel.",
@@ -240,7 +240,7 @@
       "FIELD VERIFIED // 0% FUEL WINTER BLACKOUT HYPOTHERMIA DEFENSE"
     ]
   },
-  "contentHash": "fa7cb634f6645209",
+  "contentHash": "25f2827531c6b5c8",
   "createdAt": "2026-11-03T01:00:00.000Z",
-  "updatedAt": "2026-11-03T10:37:53+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

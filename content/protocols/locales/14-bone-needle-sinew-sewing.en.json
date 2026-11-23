@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-14",
   "category": "TOOLS",
-  "title": "Primitive Bone Needle & Dried Sinew Sewing Kit for Leather & Footwear Repair",
+  "title": "How to Sew Torn Clothes and Shoes in the Wild",
   "threatLevel": "HIGH",
   "threatLevelText": "[WINTER HEAT-LOSS DEFENSE & FROSTBITE / HYPOTHERMIA PREVENTION]",
   "summary": "In sub-zero wilderness conditions or post-collapse disaster environments, torn winter leather garments or boot soles lead to catastrophic body heat loss, inducing fatal hypothermia or crippling frostbite within 2 hours. When modern needles and nylon thread are unavailable, you must craft an emergency sewing kit using high-density cortical shin bones from deer or boar split with a [stone axe](/protocol-04) and ground on wet quartzite into a sharp bone needle with a dual-drilled eye, paired with natural high-tensile sinew cord harvested from dried leg tendons. As saliva-coated sinew thread dries inside stitched leather, it shrinks 3–5%, mechanically locking needle holes airtight before sealing with [melted pine pitch ointment](/protocol-10) to create a stormproof, waterproof barrier.",
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:35:09+09:00",
-  "contentHash": "911b5ab190a2616e"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "11a7cd597316040b"
 }

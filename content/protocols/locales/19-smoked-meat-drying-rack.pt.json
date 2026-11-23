@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-19",
   "category": "FOOD",
-  "title": "Como Secar e Defumar Carne e Peixe com Tripé de Galhos e Fumaça de Carvalho Verde para Durar Mais de um Mês (Charque de Campo)",
+  "title": "Como secar e conservar carne e peixe sem geladeira",
   "threatLevel": "HIGH",
   "threatLevelText": "[CONSERVAÇÃO DE ALIMENTOS] Evitar o Apodrecimento de Carne e Peixe sem Geladeira ou Sal e Garantir Rações Portáteis",
   "summary": "No campo, a carne e o peixe frescos capturados com uma [Armadilha de Pedra Figura-4](/protocol-08) ou um [Covo de Salgueiro em Funil](/protocol-11) têm tanta umidade que moscas botam ovos e bactérias os apodrecem em um único dia. Nem mesmo um [Resfriador Evaporativo de Pote de Barro](/protocol-16) pode ser carregado em longas caminhadas. Em isolamento sem sal, este guia mostra como remover toda a gordura branca com uma [Lâmina de Pedra Afiada](/protocol-04), fatiar a carne magra em tiras de 5mm, pendurá-las na altura do peito em um tripé amarrado com [Corda de Cipó Silvestre](/protocol-05) e queimar [Carvão de Carvalho](/protocol-09) coberto com folhas verdes por baixo para produzir fumaça branca sem chamas que seca a umidade e conserva o alimento por mais de um mês.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T14:00:23+09:00",
-  "contentHash": "2feab12730b3a242"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0fe1ff91d80ccbd3"
 }

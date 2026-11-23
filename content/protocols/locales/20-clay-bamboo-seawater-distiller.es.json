@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-20",
   "category": "FOOD",
-  "title": "Cómo Destilar Agua de Mar y Lodo en Agua Potable Pura con Olla de Barro y Tubo de Bambú",
+  "title": "Cómo destilar agua de mar en agua dulce potable",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEFENSA CONTRA DESHIDRATACIÓN] Agua Dulce 100% Sin Sal en Costas y Zonas Aisladas",
   "summary": "Cuando quedas aislado en una costa, isla o junto a charcos salobres donde solo hay agua de mar o agua contaminada, un [Filtro Natural de Carbón y Arena](/protocol-01) solo retiene tierra y olores, pero no puede eliminar la sal disuelta (3.5% de salinidad). Beber agua de mar extrae el líquido de tus células y causa deshidratación mortal en dos días. Hirviendo el agua salada en una [Olla de Barro](/protocol-16) sobre un [Fogón de Arcilla](/protocol-06), conectando un tubo de bambú sin nudos a la tapa sellada y envolviéndolo con [Musgo Esfagno y Arpillera](/protocol-18) mojados en agua fría, la sal pesada queda en el fondo como cristales blancos mientras el vapor puro se condensa en 2 a 3 litros diarios de agua dulce y sal marina natural.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T11:24:26+09:00",
-  "contentHash": "3662cb12c2284d2c"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0df04a5b241032ea"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-29",
   "category": "SHELTER",
-  "title": "How to Start a Fire Without Matches Using a Clear Water Bottle Lens and Polished Can Bottom Mirror (Solar Optical Ignition)",
+  "title": "How to Start a Fire With Sunlight Without a Lighter",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Zero-Fuel Optical Convex Refraction & Parabolic Concave Reflection 400°C Solar Ignition Engineering]",
   "summary": "If you already have a windproof turbo lighter, waterproof matches, a ferrocerium firesteel rod, or a glass magnifying lens in your home or emergency pack, always use that ready-made ignition gear first—it is the safest and fastest way to make fire. However, when long-term isolation or floods leave your lighter out of fuel and your matches soaked, or when physical exhaustion makes the [Bow Drill Friction Fire](/protocol-02) impossible, you can harness bright sunlight to ignite an ember effortlessly. By polishing the concave bottom of an aluminum beverage can into a parabolic mirror using toothpaste or fine wood ash, or by filling a smooth clear plastic bottle (or plastic bag) with clear water to form a spherical convex lens, focusing a rice-grain-sized (1–2mm) solar hotspot onto blackened tinder for 30 seconds produces a glowing 400°C+ ember without a single drop of fuel.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "258785c63f3ebd22",
+  "contentHash": "304c38ee66c0965b",
   "shortsScript": {
     "hook": "Out of lighter gas during a winter blackout or wilderness stranding? Ignite a 400-degree fire in 30 seconds using an empty soda can and a clear water bottle!",
     "body": "First, dab a pea-sized bit of toothpaste or fine wood ash onto the concave bottom of an aluminum can and buff for 5 minutes until it shines like a parabolic mirror. Second, fill a clear plastic bottle to the brim with bubble-free water so its rounded shoulder becomes a convex water lens. Third, rub black charcoal dust onto dry mugwort fluff to stop light reflection, then hold a rice-grain-sized solar focal point steady for 30 seconds! Once a red ember glows, wrap it in a dry pine-needle nest and blow gently into flame! Always store water bottles in the shade afterward!"
@@ -256,5 +256,5 @@
       "[CORE PRINCIPLE] Parabolic Can Reflection & Water Lens Refraction Ignite 400°C Ember in 30s"
     ]
   },
-  "updatedAt": "2026-11-11T04:02:02+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

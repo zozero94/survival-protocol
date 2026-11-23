@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-27",
   "category": "TOOLS",
-  "title": "Cómo hacer un silbato de emergencia de 120dB y un heliógrafo solar de 10km con una lata vacía y un espejo",
+  "title": "Cómo pedir rescate con silbato y espejo si quedas atrapado",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Ingeniería de resonancia acústica de 3,000Hz y señalización de rescate por reflexión solar de 10km]",
   "summary": "Si ya cuenta con un silbato de rescate comercial sin bolilla (Pealess), un espejo de señales aeronáutico, una bocina de aire o una radiobaliza de localización (PLB) en su mochila de emergencia o chaleco salvavidas, utilice siempre ese equipo comercial primero para lograr el rescate más rápido y seguro. Sin embargo, al quedar atrapado bajo escombros tras un terremoto o aislado en inundaciones o montañas sin equipo, gritar con todas sus fuerzas apenas alcanza 80–85dB y daña las cuerdas vocales agotando su energía en solo 15 minutos. En cambio, un silbato de resonancia doblado a partir de una lata de bebida vacía (o tapa de conserva) genera un agudo tono de 3,000Hz y 115–120dB con un mínimo soplo, atravesando el ruido de tormentas y hormigón hasta 1.5–2km. De día, usar un espejo de mano, la pantalla apagada de un teléfono o papel metálico sobrante de una [Cápsula Térmica de Cartón sin Energía](/protocol-22) con una mira en V de los dedos permite dirigir destellos SOS solares a helicópteros de búsqueda a 10–15km.",
@@ -244,6 +244,6 @@
     ]
   },
   "createdAt": "2026-11-10T04:10:00.000Z",
-  "updatedAt": "2026-11-10T04:10:07.597Z",
-  "contentHash": "1b9f5a00b3ae1b42"
+  "updatedAt": "2026-11-10T04:29:37Z",
+  "contentHash": "8430ebb444645461"
 }

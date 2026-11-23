@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-40",
   "category": "TOOLS",
-  "title": "Stromlose Nottrage aus 2 langen Stangen und 2 dicken Jacken für Katastrophen-Rettung",
+  "title": "Ohne Rettungswagen eine Nottrage bauen und Verletzte tragen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[KATASTROPHEN-RETTUNG: ZWEI STANGEN & ZWEI JACKEN MIT INNENLIEGENDEN ÄRMELN ALS NOTTRAGE]",
   "summary": "Wenn der Notruf 112 oder Rettungsdienst rasch durchkommt und echte Klapptragen, Spineboard und Sanitäter bereitstehen, rufen Sie sofort professionelle Hilfe und warten Sie nach Möglichkeit auf geschulte Evakuierung. Bei Verdacht auf Nacken-, Rücken- oder Wirbelsäulenverletzungen nach Sturz oder Einsturz darf ein Mensch zudem NIEMALS ohne akute Lebensgefahr (Feuer, Nachbeben, steigendes Wasser) bewegt werden. Sind Rettungswege durch Trümmer oder Stromausfall blockiert und droht sofortige Gefahr, fertigen zwei stabile Stangen über Körperlänge und zwei dicke Reißverschluss-Jacken in zwei Minuten eine belastbare Trage. Erst Blutungen und Brüche mit [Tourniquet & Brustsiegel](/protocol-32) sowie [Astschiene](/protocol-18) sichern, Stangen durch nach innen gezogene Ärmel führen, Reißverschlüsse nach unten drehen, 10-Sekunden-Lasttest machen, zu viert waagerecht tragen und per [120-dB-Pfeife & Spiegel](/protocol-27) Hilfe rufen.",
@@ -244,5 +244,6 @@
     "body": "Wichtig zuerst: Bei Verdacht auf Nacken- oder Rückenbruch NIE bewegen, solange kein Feuer oder Einsturz droht! Sonst zwei feste Stangen länger als ein Erwachsener wählen, zwei dicke Jacken bis ganz oben zippen und alle Ärmel nach innen in den Rumpf ziehen! Säume handbreit überlappen, Stangen durchschieben und Reißverschlüsse nach unten drehen! Vor dem Heben 10 Sekunden fest die Mitte auf Reißfestigkeit testen, dann zu viert auf Kommando Füße voraus!"
   },
   "createdAt": "2026-11-23T01:07:17.085Z",
-  "contentHash": "a43aecfb46b37d81"
+  "contentHash": "9afe9a4af0f00714",
+  "updatedAt": "2026-11-23T10:14:45+09:00"
 }

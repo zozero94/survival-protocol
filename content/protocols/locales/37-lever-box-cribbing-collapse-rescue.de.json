@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-37",
   "category": "TOOLS",
-  "title": "Betontrümmer nach Erdbeben ohne Strom sicher anheben: Kantholz-Hebel und 2x2-Holz-Unterbau",
+  "title": "Nach Einsturz schwere Trümmer sicher schrittweise anheben",
   "threatLevel": "HIGH",
   "threatLevelText": "[TRÜMMERRETTUNG OHNE STROM MIT HEBELGESETZ & KREUZSTAPEL-UNTERBAU]",
   "summary": "Wenn Feuerwehr oder Rettungsdienste erreichbar sind und hydraulische Spreizer, Hebekissen oder Wagenheber bereitstehen, setzen Sie stets diese geprüften Profi-Geräte zuerst als schnellsten Schutz ein. Ist nach schweren Erdbeben oder Einstürzen jede Kommunikation ausgefallen und jemand außerhalb der [Sicheren Innenraum-Zone](/protocol-31) verschüttet, müssen Helfer zu zweit einen mannslangen Holzbalken als Hebel mit einem 2x2-Kreuzstapel aus Kanthölzern nach der Regel '2-3 cm heben, sofort unterbauen' kombinieren. Solange Hände strikt aus dem Gefahrenbereich bleiben bis Holz alles trägt, versorgen Sie Wunden mit [Knebel-Tourniquet](/protocol-32) und [Behelfsschiene](/protocol-18), rufen Hilfe per [120-dB-Pfeife & Spiegel](/protocol-27) und bergen sicher.",
@@ -244,5 +244,6 @@
     "body": "Erstens: Decke und Gasgeruch prüfen, Boden sauber fegen, flachen Drehklotz dicht an die Kante legen und langen Balken 3-5 cm einschieben. Zweitens: Seitlich zwei flache Kantholz-Türme im 90-Grad-Kreuzstapel aufbauen — niemals Rundholz oder Hohlsteine! Drittens die goldene Regel: Hebel immer nur 2-3 cm drücken, OHNE eine Hand unter den Beton zu stecken Klötze und Keile von außen mit einem Stock nachschieben und langsam absetzen. Viertens: Hebel ganz entfernen — erst wenn beide Holztürme allein felsenfest stehen, Wunden verbinden und Verletzte sicher herausziehen!"
   },
   "createdAt": "2026-11-21T02:46:35.405Z",
-  "contentHash": "80dbc76c9f37795f"
+  "contentHash": "8218fbb5e2e98f21",
+  "updatedAt": "2026-11-21T11:52:47+09:00"
 }

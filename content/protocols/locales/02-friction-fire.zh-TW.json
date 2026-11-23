@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "SHELTER",
-  "title": "利用樹枝摩擦生火的方法 (弓鑽鑽木取火法)",
+  "title": "無打火機用木頭摩擦生火的方法",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[威脅等級：致命 (CRITICAL)]",
   "summary": "在沒有打火機或火柴時，利用乾燥樹枝和繩子取火的必備生存技術。前後拉動弓桿使中心鑽軸高速旋轉，利用摩擦熱產生400℃的高溫炭化火種粉末。將此火種放入乾燥乾草巢中溫和吹氣，即可引燃600℃的旺盛明火。",
@@ -112,6 +112,6 @@
     "description": "火板45度V型槽內藉由摩擦熱生成的400°C黑炭灰餘燼劇烈冒烟，安全轉移至乾燥引火鳥巢並吹拂出明火的實戰生火完成狀態。"
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:52:40+09:00",
-  "contentHash": "6cbccf0cd402bece"
+  "updatedAt": "2026-10-26T11:47:13+09:00",
+  "contentHash": "e48cabac6f47ab6b"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-32",
   "category": "MEDICINE",
-  "title": "Torniquete de Haste Giratória para Hemorragia Arterial e Selo Torácico de 3 Lados (Trauma de Guerra)",
+  "title": "Como usar torniquete e selo torácico em ferimentos graves",
   "threatLevel": "CRITICAL",
   "threatLevelText": "CRÍTICO // Resgate em 3 Minutos para Hemorragia Arterial e Pneumotórax",
   "summary": "Protocolos de trauma de emergência para impedir o choque hipovolêmico fatal em 3 minutos quando estilhaços de bombas ou vidros quebrados rompem artérias dos membros jorrando sangue vermelho-vivo através de um torniquete de haste giratória (Windlass), e para evitar o colapso pulmonar em ferimentos perfurantes no peito com um curativo plástico de válvula de 3 lados. Use sempre primeiro torniquetes militares comerciais (CAT/SOFTT) e selos de tórax (Chest Seal) se disponíveis; sem kit médico, utilize um cinto de couro ou pano dobrado de 4cm de largura, cabo de colher metálica ou galho de carvalho, plástico limpo de pacote de biscoito e fita silver tape. Inclui prevenção contra infecção secundária, tétano e necrose por compressão prolongada.",
@@ -257,5 +257,6 @@
     "body": "Quando o sangue vermelho jorra de um braço ou perna, apertar com uma toalha não resolve. Primeiro, amarre um cinto de couro ou pano dobrado de pelo menos 4 centímetros de largura três dedos acima da ferida na direção do coração. Segundo, encaixe o cabo de uma colher de metal ou galho de carvalho no nó e gire duas ou três voltas completas até parar totalmente o sangue. Terceiro, amarre as pontas da haste para não soltar e escreva T com a hora na testa. E se houver um furo no peito fazendo barulho de ar, cubra com plástico limpo colando só três lados para o ar sair por baixo!"
   },
   "createdAt": "2026-11-16T03:34:15.333Z",
-  "contentHash": "265802761804cc88"
+  "contentHash": "e2ef3abd1e690bd0",
+  "updatedAt": "2026-11-16T03:44:06Z"
 }

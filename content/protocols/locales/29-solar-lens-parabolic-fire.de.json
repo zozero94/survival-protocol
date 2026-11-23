@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-29",
   "category": "SHELTER",
-  "title": "Feuer machen ohne Streichhölzer mit einer Wasserflaschen-Linse und poliertem Dosenboden-Hohlspiegel (Solare Lichtbündelung)",
+  "title": "Ohne Feuerzeug mit gebündeltem Sonnenlicht Feuer machen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Brennstofffreie Optische Konvex-Brechung & Parabolische Konkav-Reflexion zur 400°C Solar-Zündung]",
   "summary": "Wenn Sie bereits ein sturmsicheres Turbo-Feuerzeug, wasserfeste Streichhölzer, einen Feuerstahl (Ferrocerium) oder eine Glaslupe im Notgepäck haben, nutzen Sie immer zuerst diese Fertigausrüstung – das ist der sicherste und schnellste Weg zum Feuer. Wenn jedoch bei langer Isolation oder Hochwasser das Feuerzeuggas leer ist, Streichhölzer durchnässt sind oder körperliche Erschöpfung das [Feuerbohren mit dem Bogen](/protocol-02) unmöglich macht, können Sie an klaren Tagen die Sonnenenergie bündeln. Indem Sie den gewölbten Boden einer Getränkedose mit Zahnpasta oder feiner Holzasche zu einem Parabolspiegel polieren oder eine glatte, klare Plastikflasche (oder Plastiktüte) blasenfrei mit klarem Wasser zu einer Sammellinse füllen, erzeugt ein reiskorngroßer (1–2 mm) Brennpunkt auf geschwärztem Zunder binnen 30 Sekunden eine über 400 °C heiße Glut ohne einen einzigen Tropfen Brennstoff.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "258785c63f3ebd22",
+  "contentHash": "304c38ee66c0965b",
   "shortsScript": {
     "hook": "Kein Feuerzeuggas mehr bei Winterstromausfall oder in der Wildnis? Entfachen Sie mit einer leeren Getränkedose und einer klaren Wasserflasche in 30 Sekunden eine 400-Grad-Glut!",
     "body": "Erstens: Geben Sie etwas Zahnpasta oder feine Holzasche auf den gewölbten Boden einer Aludose und polieren Sie ihn 5 Minuten lang zum Parabolspiegel. Zweitens: Füllen Sie eine klare Plastikflasche blasenfrei mit Wasser, sodass die runde Flaschenschulter zur Wasserlupe wird. Drittens: Schwärzen Sie trockenen Pflanzenflaum mit Kohlenstaub gegen Lichtreflexion und halten Sie einen reiskorngroßen Sonnenbrennpunkt 30 Sekunden ruhig! Sobald die Glut glimmt, ab ins trockene Kiefernnadelnest und sanft zur Flamme pusten! Wasserflaschen danach immer in den Schatten legen!"
@@ -256,5 +256,5 @@
       "[KERNPRINZIP] Dosen-Hohlspiegel & Wasserlinse bündeln Sonne in 30s auf 400°C"
     ]
   },
-  "updatedAt": "2026-11-11T04:02:02+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

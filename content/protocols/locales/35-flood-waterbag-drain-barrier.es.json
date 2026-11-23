@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-35",
   "category": "MATERIALS",
-  "title": "Cómo Construir una Presa de Bolsas de Agua sin Electricidad y Sellar Desagües con Guantes de Goma ante Inundaciones",
+  "title": "Cómo bloquear desagües y frenar inundación en puertas",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA URBANA CONTRA INUNDACIONES Y BLOQUEO DE REFLUJO DE ALCANTARILLA]",
   "summary": "Si su hogar o entrada ya cuenta con compuertas comerciales anti-inundación, sacos absorbentes expansivos o válvulas antirretorno en tuberías, cierre y despliegue primero esos sistemas de fábrica por ser los más rápidos y seguros. Sin embargo, durante lluvias torrenciales, huracanes, terremotos o roturas de cañerías sin sacos de arena disponibles en plantas bajas o semisótanos, las aguas residuales y el lodo brotan primero por los desagües de baño más bajos, inodoros y marcos de puerta, provocando electrocución y riesgo infeccioso en minutos. Cubriendo los desagües bajos con tres capas de bolsas y guantes de goma presionados con bidones de 10 kg+, cerrando el inodoro con un tapón de bolsa de agua para pasar a [Inodoro Seco de Emergencia](/protocol-25), y apilando ladrillos de agua dobles a media carga en dos hileras alternas envueltas en lámina impermeable, detendrá inundaciones de hasta 30 cm en 15 minutos sin electricidad.",
@@ -244,5 +244,6 @@
     "body": "Primero corta la luz si hay agua cerca de enchufes y nunca quites la rejilla del baño: tápala ancho con dos bolsas y guantes de goma presionados con un bidón de 10 kilos. Segundo, cierra la llave del inodoro y encaja en el fondo una bolsa doble medio llena para sellar el sifón. Tercero, mete bolsas grandes de dos en dos, llénalas solo al 50%, saca el aire y ata alto para hacer ladrillos planos, no bolas tensas. Cuarto, forra el marco en U hasta 30 centímetros, apila dos filas alternas y dobla la lámina encima!"
   },
   "createdAt": "2026-11-19T04:34:21.301Z",
-  "contentHash": "313800a5da7dda87"
+  "contentHash": "2158ee9a7123cd30",
+  "updatedAt": "2026-11-19T13:42:04+09:00"
 }

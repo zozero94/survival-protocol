@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-21",
   "category": "SHELTER",
-  "title": "Como Fazer um Aquecedor e Fogareiro Interno de 72 Horas com Lata de Atum, Óleo de Cozinha e Papel Higiênico",
+  "title": "Como fazer aquecedor interno improvisado sem gás ou luz",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[AQUECIMENTO INTERNO EM APAGÃO & FONTE TÉRMICA 72H]",
   "summary": "Se você tiver equipamentos prontos em casa, como fogareiro a gás butano, aquecedor portátil, velas de parafina ou álcool sólido, use-os sempre primeiro como a opção mais segura e rápida. Porém, quando um apagão de inverno ou corte de gás se prolonga e todos os cartuchos de gás e pilhas acabam, queimar madeira dentro de casa causa fumaça e asfixia fatal por monóxido de carbono (use o [Fogareiro de Gás de Madeira de Lata Dupla](/protocol-12) apenas ao ar livre). Forrando o fundo de uma lata de atum de aço com pedrinhas, fixando 3 pavios de papel higiênico bem torcidos em uma ponte de folha metálica e enchendo com óleo vegetal de cozinha, você cria um aquecedor interno sem fumaça que aquece o quarto e esquenta água por 8 a 12 horas por recarga (mais de 72 horas por garrafa de óleo).",
@@ -240,7 +240,7 @@
       "VERIFICADO // CALOR INTERNO SEM FUMAÇA E ÁGUA QUENTE"
     ]
   },
-  "contentHash": "75c437ca60b0bfba",
+  "contentHash": "18c78a934ff9172d",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T16:17:08+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

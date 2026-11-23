@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-18",
   "category": "MEDICINE",
-  "title": "Knochenbrüche und Blutungen mit geraden Ästen, Moospolstern und ausgekochtem Leinen schienen",
+  "title": "Gebrochene Gliedmaßen im Notfall schienen und Blutungen stillen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NOTFALL-TRAUMA] Schutz vor Arterien-/Nervendurchtrennung, Blutverlust & Gewebenekrose",
   "summary": "Wenn bei einem Sturz im Gelände oder in Trümmern ein Arm- oder Beinknochen bricht und ungeschient wackelt, schneiden scharfe Knochenkanten umliegende Arterien und Nerven durch und verursachen schwere Blutungen oder dauerhafte Lähmungen. Im Feld ohne Krankenhaus waschen Sie die Wundumgebung mit [Natürlicher Holzasche-Seife](/protocol-13) und abgekühltem [Abgekochtem Filterwasser](/protocol-01) gegen Tetanus und Infektionen, drücken ein ausgekochtes Leinenpolster 10 Minuten lang fest auf die Blutung und stellen sowohl das obere als auch das untere Gelenk mit zwei geraden, innen mit Torfmoos und [Weichem Naturleder](/protocol-17) gepolsterten Ästen ruhig, die an 4 Punkten mit [Wilder Lianenschnur](/protocol-05) gebunden werden.",
@@ -251,6 +251,6 @@
     }
   ],
   "createdAt": "2026-10-28T09:00:00+09:00",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "f016404b5e722ceb"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "05b5c6ffbeef07d6"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-16",
   "category": "FOOD",
-  "title": "Refrigerador Natural Sin Electricidad con Vasijas de Arcilla y Arena Húmeda (Zeer Pot de Campo)",
+  "title": "Cómo hacer una nevera natural sin electricidad para alimentos",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA PUTREFACCIÓN DE CARNE Y CONSERVACIÓN FRÍA SIN ELECTRICIDAD]",
   "summary": "En el calor del verano o en una zona de desastre sin red eléctrica, la carne y el pescado obtenidos mediante [trampas y caza](/protocol-08) o [nasas primitivas para peces](/protocol-11) crían larvas de mosca y bacterias putrefactas en medio día a temperatura ambiente, causando intoxicación alimentaria mortal y enteritis. En el campo sin electricidad ni hielo, debes construir de inmediato un refrigerador evaporativo 'Zeer Pot de Campo' anidando dos 'vasijas de arcilla porosa sin esmaltar' de distinto tamaño cocidas bajo el principio de un [horno de barro](/protocol-06), rellenando el espacio entre ellas con arena de río de un [filtro de agua natural](/protocol-01) y vertiendo agua fría para que la evaporación robe el calor circundante. A medida que el agua se evapora por los microporos de la vasija exterior, mantiene el interior entre 8 y 12°C más frío que el exterior; guardar alimentos dentro de la cámara desinfectada con [jabón natural de lejía](/protocol-13) conserva las raciones frescas por más de una semana sin electricidad.",
@@ -193,6 +193,6 @@
     }
   ],
   "createdAt": "2026-10-26T00:05:00.000Z",
-  "updatedAt": "2026-10-26T10:53:22+09:00",
-  "contentHash": "61cf2d9d25082a99"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2ddeb5dcbaaa0864"
 }

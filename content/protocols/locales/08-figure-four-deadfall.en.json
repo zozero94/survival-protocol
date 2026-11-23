@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "How to Catch Animals with 3 Sticks and a Boulder (Figure-4 Trap)",
+  "title": "How to Trap Wild Game With a Deadfall Rock Trap When Stranded",
   "threatLevel": "HIGH",
   "threatLevelText": "[PROTEIN & FOOD CRITICAL]",
   "summary": "Chasing wild animals with bare hands will quickly exhaust you to death. By carving notches into three finger-thick sticks and interlocking them into a 'number 4' shape, they can support a heavy 15kg boulder without any rope. When a rodent or small animal touches the bait, the sticks instantly slip apart in 0.1 seconds, dropping the boulder for an instant, reliable kill.",
@@ -121,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "51e4bec4273ad957"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "8d419146ec6db329"
 }

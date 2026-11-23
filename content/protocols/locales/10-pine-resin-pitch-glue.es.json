@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-10",
   "category": "MATERIALS",
-  "title": "Purificación de resina de pino en ungüento antiséptico y pegamento impermeable",
+  "title": "Cómo hacer pomada para heridas y pegamento con resina de pino",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA INFECCIONES Y FIJACIÓN IMPERMEABLE]",
   "summary": "En la naturaleza, un corte sin tratar con una piedra afilada o rama puede infectarse rápidamente, provocando septicemia y poniendo en riesgo la vida. Asimismo, las cabezas de hachas de piedra y recipientes agrietados requieren un aglutinante impermeable resistente para el uso rudo. Al derretir suavemente la resina de pino con el calor indirecto de las brasas y retirar los restos de corteza, se obtiene un ungüento antimicrobiano puro. Mezclando la resina restante con polvo fino de carbón en proporción **1:1**, se produce una barra de pegamento de brea (Pitch Glue) tan dura como la piedra.",
@@ -173,6 +173,6 @@
     "description": "Especificaciones del ungüento antimicrobiano en concha marina, barra de pegamento de brea sobre madera dura y sección transversal del sellado impermeable en unión de hacha."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "553e3079c1feebb8",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "54b5676ba59cb40c",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-14",
   "category": "TOOLS",
-  "title": "Primitive Knochennadel & Sehnenfaden zur Reparatur von Leder und Stiefeln",
+  "title": "Zerrissene Kleidung und Schuhe in der Wildnis stabil nähen",
   "threatLevel": "HIGH",
   "threatLevelText": "[WINTERLICHE WÄRMEVERLUSTABWEHR & ERFRIERUNGS- / HYPOTHERMIESCHUTZ]",
   "summary": "In subpolarer Wildnis oder bei zusammengebrochener zivilisatorischer Versorgung führt ein Riss im Winterleder oder an den Stiefelsohlen binnen 2 Stunden zu tödlicher Unterkühlung oder schweren Erfrierungen. Wenn moderne Stahl Nadeln und Kunstfaserfäden fehlen, muss aus [erbeuteten Jagdtieren](/protocol-08) wie Hirsch oder Wildschwein ein Nähbesteck improvisiert werden: Das dichte Schienbeinkompakta wird mit einer [Steinaxt](/protocol-04) gespalten, auf nassem Quarzit geschliffen und mit einer Feuersteinahle beidseitig durchbohrt. Kombiniert mit faserig geklopften Tiersehnen entsteht hochfester Nähfaden, der beim Trocknen um 3–5% schrumpft, die Nahtlöcher hermetisch verpresst und nach Versiegelung mit [flüssigem Kiefernharz](/protocol-10) vollkommen wind- und wasserdicht schützt.",
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:35:09+09:00",
-  "contentHash": "911b5ab190a2616e"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "11a7cd597316040b"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Cómo construir un refugio de hojarasca para retener calor sin fuego (Debris Hut)",
+  "title": "Cómo construir un refugio de hojas para conservar calor sin fuego",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
   "summary": "Pasar la noche a la intemperie con viento y lluvia reduce la temperatura corporal en menos de 3 horas provocando hipotermia. Cuando no es posible encender fuego, apilar ramas y una gruesa capa de hojas secas retiene el calor corporal como un saco de dormir grueso para pasar la noche a salvo.",
@@ -100,6 +100,6 @@
     "description": "Una viga pesada de 2.5m y un armazón de costillas a 45° cubiertos por 1 metro de hojas secas comprimidas y ramas, reteniendo el calor corporal a temperaturas bajo cero sin necesidad de fuego."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "5c83ac034006645f"
+  "updatedAt": "2026-11-09T10:08:31Z",
+  "contentHash": "fb417a686fed1bca"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-33",
   "category": "TOOLS",
-  "title": "Wie man ohne Topf einen Holztopf durch Ausbrennen mit Glut fertigt und Wasser mit heißen Steinen auf 100 °C kocht",
+  "title": "Ohne Topf eine Holzschale fertigen und Wasser zum Kochen bringen",
   "threatLevel": "HIGH",
   "threatLevelText": "[METALLFREIER FELD-KOCHTOPF & 100-°C-KOCHSTEINTECHNIK ZUR TRINKWASSER-ENTKEIMUNG]",
   "summary": "Wenn im Haushalt oder Notgepäck ein Metalltopf, Kochgeschirr oder ein Edelstahlbecher vorhanden ist, nutzen Sie dieses fertige Kochgerät am offenen Feuer immer zuerst für schnelles und sicheres Abkochen. Fehlt auf der Flucht oder in der Wildnis jedoch jeder hitzebeständige Behälter, führt das Trinken von verunreinigtem Bachwasser innerhalb von drei Tagen zu schwerem Durchfall und Lebensgefahr. Eine Holzschale direkt über Flammen brennt sofort durch. Umringt man hingegen einen trockenen Stammabschnitt oben mit feuchtem Lehm als Brandschutzwall, brennt nur die Mitte mit Eichenholzglut aus dem [Primitiven Kohlemeiler](/protocol-09) aus und schabt die schwarze Kohleschicht drei- bis viermal mit einer Steinklinge der [Steinaxt](/protocol-04) weg, entsteht ein robuster 5-Liter-Holztopf. Werden dann trockene Granitsteine vom sonnigen Hang 30 Minuten in Glut erhitzt und mit grünen Holzzangen ins Wasser gesenkt, kocht das Wasser in 3 Minuten bei 100 °C, ohne das Holz zu verbrennen.",
@@ -249,5 +249,6 @@
     "body": "Stellst du Holz direkt aufs Feuer, brennt der Boden durch. Erstens: Lege einen feuchten Lehmwall um den Rand eines trockenen Stammes, gib Glut in die Mitte und blase durch ein hohles Schilfrohr senkrecht nach unten. Zweitens: Kratze die schwarze Kohle mit einer Steinklinge aus und wiederhole das drei- bis viermal bis ein tiefer Holztopf entsteht. Drittens: Nimm niemals nasse Flusssteine – sie explodieren im Feuer wie Granaten! Wähle trockenen Hang-Granit und glühe ihn 30 Minuten in Glut. Viertens: Greife ihn mit einer Astzange, streife kurz Asche ab und wechsle die Steine im Wasser bis 100 °C in 3 Minuten!"
   },
   "createdAt": "2026-11-17T05:55:43.049Z",
-  "contentHash": "deeb9b7d12b5c10f"
+  "contentHash": "8f0775ee775d23d0",
+  "updatedAt": "2026-11-17T15:03:29+09:00"
 }

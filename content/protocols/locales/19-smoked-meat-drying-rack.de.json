@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-19",
   "category": "FOOD",
-  "title": "Fleisch und Fisch mit einem Holz-Dreibein und grünem Eichenrauch über einen Monat haltbar räuchern (Feld-Dörrfleisch & Räucherfisch)",
+  "title": "Fleisch und Fisch ohne Kühlschrank haltbar trocknen",
   "threatLevel": "HIGH",
   "threatLevelText": "[LANGZEIT-KONSERVIERUNG] Fleisch- und Fischverderb ohne Kühlung oder Salz stoppen und tragbare Notrationen sichern",
   "summary": "Im Feld enthalten frisches Fleisch und Fisch aus einer [Stein-Schlagfalle in Viererform](/protocol-08) oder einer [Weiden-Trichterreuse](/protocol-11) so viel Wasser, dass Fliegen Eier ablegen und Bakterien sie binnen eines Tages verderben lassen. Selbst ein [Verdunstungskühler aus Tonkrügen](/protocol-16) lässt sich auf Märschen nicht mittragen. Ohne Salz zeigt diese Anleitung, wie man mit einer [Scharfen Steinklinge](/protocol-04) alles leicht verderbliche weiße Fett wegschneidet, mageres Fleisch in 5mm dünne Streifen schneidet, auf Brusthöhe an ein mit [Wilder Kudzu-Rankenschnur](/protocol-05) gebundenes Dreibein hängt und darunter [Eichenholzkohle](/protocol-09) mit grünen Laubblättern ohne Flammen glimmen lässt, um über einen Monat haltbares Dörrfleisch herzustellen.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T14:00:23+09:00",
-  "contentHash": "2feab12730b3a242"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0fe1ff91d80ccbd3"
 }

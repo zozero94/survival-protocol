@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-04",
   "category": "TOOLS",
-  "title": "Como fazer um machado de pedra com pedras de rio e cipó",
+  "title": "Como fazer um machado de pedra para cortar madeira na mata",
   "threatLevel": "HIGH",
   "threatLevelText": "[IMPORTÂNCIA: FERRAMENTA ESSENCIAL]",
   "summary": "Com as mãos vazias não é possível cortar galhos grossos para abrigo ou lenha. Veja como bater duas pedras duras de rio em um ângulo de 45 graus para tirar uma lâmina afiada e prendê-la em um cabo de madeira com resina de pinheiro e cipó úmido.",
@@ -97,6 +97,6 @@
     "description": "Uma lâmina de sílex lascada bifacialmente encaixada em cabo de carvalho fendido, amarrada firmemente em X com cipós e selada com resina de pinho."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-16T13:34:53+09:00",
-  "contentHash": "e5d622d174a529b8"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "5814a0aec477d2e6"
 }

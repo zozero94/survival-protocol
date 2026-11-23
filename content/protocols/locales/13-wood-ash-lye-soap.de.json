@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-13",
   "category": "MEDICINE",
-  "title": "Herstellung von natürlicher Eichenaschelauge- & Fettseife zur Infektionsabwehr (Feldhygiene-Desinfektionsseife)",
+  "title": "Natürliche Aschenseife herstellen, um Infektionen vorzubeugen",
   "threatLevel": "HIGH",
   "threatLevelText": "[FELDHYGIENE & WUNDDESINFEKTION & SEPSIS-PRÄVENTION]",
   "summary": "Im autarken Wildnisüberleben oder bei einem Zusammenbruch der Infrastruktur ohne fließendes Wasser und Medikamente können schon kleine Schürfwunden oder verunreinigte Hände beim Essen tödliche Ruhr, Wundstarrkrampf (Tetanus) oder systemische Blutvergiftung (Sepsis) auslösen. Sammelt man schneeweiße Eichenasche aus einer Feuerstelle oder dem [Doppeldosen-Holzvergaserofen](/protocol-12), verdichtet sie in einem Dosenfilter mit Schilfgras- und Kiesschicht und übergießt sie mit heißem Wasser, entsteht alkalische Kaliumkarbonatlauge. Kocht man diese Lauge im Verhältnis 1:1 mit ausgelassenem Tiertalg oder gefiltertem Altspeiseöl unter ständigem Rühren mit einem Holzspatel ein, setzt die Verseifung ein und erzeugt eine hochwirksame Desinfektionsseife, die bakterielle Zellmembranen auflöst.",
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "6c6c26a55586fcca",
-  "updatedAt": "2026-10-28T17:33:13+09:00"
+  "contentHash": "f5ad9047708d3493",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

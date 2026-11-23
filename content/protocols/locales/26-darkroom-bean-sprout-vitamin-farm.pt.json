@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-26",
   "category": "FOOD",
-  "title": "Como Cultivar Brotos de Feijão e Soja sem Terra no Escuro Usando um Pote Vazio, Pano de Algodão e Grãos Secos para Prevenir o Escorbuto",
+  "title": "Como cultivar brotos nutritivos em casa sem usar terra",
   "threatLevel": "HIGH",
   "threatLevelText": "[AUTOSSUFICIÊNCIA DE VITAMINA C EM ISOLAMENTO PROLONGADO & CULTIVO HIDROPÔNICO DE BROTOS NO ESCURO SEM TERRA]",
   "summary": "Se a sua casa ou mochila de emergência já possui comprimidos multivitamínicos comerciais (vitamina C), pastilhas efervescentes, blocos de vegetais liofilizados ou uma bandeja germinadora própria, utilize sempre esses produtos prontos primeiro para garantir uma nutrição rápida e segura. Porém, quando guerras, grandes desastres ou isolamentos prolongados interrompem o abastecimento e as vitaminas acabam, sobreviver por 3 a 4 semanas apenas com enlatados, biscoitos secos, arroz branco e grãos esgota a vitamina C do corpo, causando escorbuto — sangramento nas gengivas, feridas que não cicatrizam e queda da imunidade. Grãos secos de soja amarela e feijão-mungo quase não têm vitamina C quando dormentes, mas água limpa e escuridão ativam enzimas que multiplicam a vitamina C e os aminoácidos de 10 a 30 vezes em 5 dias. Usando apenas um pote vazio, pano fino de algodão, um pedaço de [Carvão de Carvalho](/protocol-09) e uma caixa escura feita com sobras da [Cápsula Térmica de Papelão](/protocol-22), você colhe vegetais frescos ricos em vitaminas em 5 dias sem um punhado de terra.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-09T01:46:25.453Z",
-  "updatedAt": "2026-11-09T11:05:02+09:00",
-  "contentHash": "4eff6d104b249b53"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "dfa85e65ab8ba4ac"
 }

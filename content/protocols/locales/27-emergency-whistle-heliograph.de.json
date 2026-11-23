@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-27",
   "category": "TOOLS",
-  "title": "Wie man aus einer leeren Getränkedose und einem Spiegel eine 120dB Notpfeife & einen 10km Sonnenreflektor baut",
+  "title": "Bei Verschüttung mit Signalpfeife und Spiegel Hilfe rufen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[3.000Hz Akustikresonanz & 10km Spiegel-Sonnenreflexion für Rettungssignale bei Verschüttung]",
   "summary": "Wenn Sie bereits eine handelsübliche kugellose Rettungspfeife (Pealess), einen Signalspiegel, ein Drucklufthorn oder einen Notfunkbaken (PLB) im Notfallrucksack oder an der Rettungsweste haben, nutzen Sie diese fertige Ausrüstung immer zuerst für die schnellste Rettung. Wer jedoch nach einem Erdbeben unter Trümmern eingeschlossen oder bei Hochwasser und im Gebirge ohne Ausrüstung isoliert ist, erreicht durch bloßes Schreien nur 80–85dB und verliert nach 15 Minuten Stimme und Kraft. Eine aus einer leeren Getränkedose (oder einem Konservendeckel) gefaltete Resonanzpfeife erzeugt dagegen schon mit wenig Atemluft einen durchdringenden 3.000Hz-Ton mit 115–120dB, der Sturm- und Trümmerlärm bis zu 1,5–2km weit durchdringt. Tagsüber können Sie mit einem Handspiegel, einem ausgeschalteten Smartphone-Display oder Küchenfolie aus einer [stromlosen Karton-Wärmekapsel](/protocol-22) über eine V-Finger-Kimme gezielte SOS-Sonnenblitze an 10–15km entfernte Suchhubschrauber senden.",
@@ -244,6 +244,6 @@
     ]
   },
   "createdAt": "2026-11-10T04:10:00.000Z",
-  "updatedAt": "2026-11-10T04:10:07.597Z",
-  "contentHash": "1b9f5a00b3ae1b42"
+  "updatedAt": "2026-11-10T04:29:37Z",
+  "contentHash": "8430ebb444645461"
 }

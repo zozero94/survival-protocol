@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-09",
   "category": "MATERIALS",
-  "title": "How to Make Hardwood Charcoal in an Underground Pit Kiln",
+  "title": "How to Make Hard Charcoal Using an Earthen Pit Kiln",
   "threatLevel": "HIGH",
   "threatLevelText": "[SMOKELESS FUEL & CARBON FILTER]",
   "summary": "Burning wood in an open campfire wastes fuel by turning it completely into useless white ash. By digging a 50cm cone-shaped pit, packing hardwood tightly, and sealing it with earth and turf sod to block 95% of incoming oxygen, the timber is pyrolyzed rather than combusted. This produces dense, metallic-ringing lump charcoal that burns smokeless at 500°C, purifies contaminated water, and preserves embers for days.",
@@ -127,6 +127,6 @@
     "description": "Cross-sectional engineering view of the 50cm underground cone kiln operating at 95% oxygen restriction, yielding dense porous hardwood charcoal ideal for smokeless high heat and emergency water filtration."
   },
   "createdAt": "2026-10-15T05:30:00.000Z",
-  "contentHash": "322dc0eab95e53a9",
-  "updatedAt": "2026-10-15T16:31:51+09:00"
+  "contentHash": "38e35885b34ecf14",
+  "updatedAt": "2026-10-26T11:47:13+09:00"
 }

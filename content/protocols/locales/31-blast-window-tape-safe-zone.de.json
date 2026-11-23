@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-31",
   "category": "SHELTER",
-  "title": "Fenster-Splitterschutz durch Gitter-Klebung und Dreieck-Schutzzone bei Luftangriffen und Erdbeben",
+  "title": "Fenstersplitter bei Beben stoppen und eine Schutzzone bauen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "KRITISCH // SOFORTIGE SCHUTZMASSNAHME BEI KRIEG & ERDBEBEN",
   "summary": "Bei militärischen Bombardierungen, Raketenangriffen, Großexplosionen oder schweren Erdbeben zersplittern Fensterscheiben durch Überschall-Druckwellen in tausende rasiermesserscharfe Geschosse. Dieses Protokoll errichtet ein 3-stufiges Schutzbarrierensystem, das über 95% der Glassplitter auffängt, und richtet an innenliegenden tragenden Wänden eine unzerstörbare 'Dreieck des Lebens'-Schutzzone ein. Falls Splitterschutzfolien oder Fensterläden vorhanden sind, nutzen Sie diese vorrangig; andernfalls verwandeln Sie Ihre Wohnung mit Gewebeband, nassem Zeitungspapier, Verdunkelungsvorhängen und einer Matratze in einen behelfsmäßigen Schutzbunker.",
@@ -257,5 +257,6 @@
     "body": "Explodiert eine Bombe, verwandelt die Druckwelle Glasscheiben in hunderte Überschall-Rasierklingen! Ein simples X-Muster lässt Glas in riesige Guillotinen brechen! Schritt 1: Klebeband im dichten 5-cm-Schachbrettmuster anbringen, um Vibrationen zu streuen. Schritt 2: Wasser sprühen und feuchte Zeitungen aufpressen, um feinsten Glasstaub zu binden. Schritt 3: Schwere Verdunkelungsvorhänge an allen vier Seiten mit Panzertape an der Wand versiegeln. Zuletzt: 3 Meter weit weg an eine tragende Innenwand gehen, Matratze im 45-Grad-Winkel an einen Tisch stellen und im Dreieck des Lebens Deckung suchen!"
   },
   "createdAt": "2026-11-13T00:05:48.223Z",
-  "contentHash": "bef5418b5df5f8ba"
+  "contentHash": "aa1a2353796b0acf",
+  "updatedAt": "2026-11-13T00:13:03Z"
 }

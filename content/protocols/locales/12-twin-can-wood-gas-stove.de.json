@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-12",
   "category": "SHELTER",
-  "title": "Doppelwandiger Holzvergaser-Kocher aus 2 leeren Konservendosen, Schrottdraht und Zweigen",
+  "title": "Einen rauchfreien Notkocher zum Wasserkochen bauen",
   "threatLevel": "HIGH",
   "threatLevelText": "[RAUCHFREIES HOCHTEMPERATUR-KOCHEN & 80% HOLZERSPARNIS]",
   "summary": "In einer verlassenen Stadt oder im Ödland ist dickes Brennholz knapp, und ein offenes Feuer verrät durch schwarzen Rauch sofort den Standort, während der Wind die Hitze verweht. Steckt man zwei unterschiedlich große Stahlblechdosen ineinander und fixiert sie mit dem blanken Kupfer- oder Stahlkern eines alten Elektrokabels, entsteht ein rauchfreier Holzvergaser-Kocher, der den aufsteigenden Rauch selbst verbrennt. Zwei Handvoll trockener Zweige bringen 1 Liter Wasser in 8 Minuten völlig rauchfrei zum Kochen.",
@@ -173,6 +173,6 @@
     "description": "Gebaut aus zwei geborgenen Stahldosen und blankem Draht mit 1,5–2cm Doppelwand-Luftspalt, unteren Kaltlufteinlässen, oberen Sekundärluftdüsen, Draht-Topfkreuz und rauchfreier 850°C-Holzgasverbrennung."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "61644332f814ecf5",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "3dd1c210e811ac3e",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

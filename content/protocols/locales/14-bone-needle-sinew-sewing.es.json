@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-14",
   "category": "TOOLS",
-  "title": "Aguja de Hueso Primitiva y Costura con Tendón Seco para Cuero y Calzado",
+  "title": "Cómo coser ropa y zapatos rotos en la naturaleza",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFENSA CONTRA PÉRDIDA TÉRMICA Y PREVENCIÓN DE HIPOTERMIA / CONGELACIÓN]",
   "summary": "En climas gélidos extremos o tras el colapso de la infraestructura moderna, si las prendas térmicas de cuero o las suelas de las botas se desgarran, el calor corporal escapa rápidamente, provocando hipotermia mortal o congelación de extremidades en menos de 2 horas. Ante la ausencia de agujas de acero e hilo sintético, es indispensable fabricar un juego de costura de emergencia utilizando fragmentos de hueso cortical de ciervo o jabalí hendidos con un [hacha de piedra](/protocol-04), afilados sobre cuarcita húmeda y perforados con una lezna de sílex, combinados con cordones de tendón animal secado al aire. Al humedecerse con saliva y coserse, el hilo de tendón se encoge de un 3 a un 5% al secarse, sellando los agujeros por compresión radial antes de impermeabilizarse con [brea caliente de pino](/protocol-10).",
@@ -176,6 +176,6 @@
     ]
   },
   "createdAt": "2026-10-22T08:09:29.733Z",
-  "updatedAt": "2026-10-22T17:35:09+09:00",
-  "contentHash": "911b5ab190a2616e"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "11a7cd597316040b"
 }

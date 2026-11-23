@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-36",
   "category": "FOOD",
-  "title": "Como Tirar o Amargo Tóxico das Bolotas com Água Fria e Pedras para Fazer Farinha Durável e Gelatina de Bolota",
+  "title": "Como tirar o amargor da bolota e fazer farinha comestível",
   "threatLevel": "HIGH",
   "threatLevelText": "[COLETA CALÓRICA SILVESTRE E DESINTOXICAÇÃO DE BOLOTAS EM ÁGUA FRIA]",
   "summary": "Se sua casa ou abrigo já possui alimentos enlatados, rações secas ou farinhas prontas, consuma esses alimentos industrializados primeiro por serem mais rápidos e seguros. Contudo, em isolamento prolongado no outono ou inverno sem estoque algum, bolotas caídas de carvalho oferecem reserva vital de carboidratos. Como a bolota crua concentra taninos amargos tóxicos que ferem o estômago, provocam vômitos e lesionam os rins, processe em quatro etapas — seleção por flutuação e descascamento, moagem em granito, lavagem em água fria por 2 a 4 dias em pano de algodão e decantação de 3 a 4 horas para secar ao sol ou ferver com [Fogo por Fricção](/protocol-02) e [Tigela de Madeira](/protocol-33) — garantindo farinha por mais de 1 ano.",
@@ -244,5 +244,6 @@
     "body": "Primeiro jogue tudo na água fria: descarte as que boiam porque têm bichos e quebre com pedra só as pesadas do fundo, tirando a casquinha roxa. Segundo, moa numa laje de granito mais fino que areia. Terceiro, regra de ouro: embrulhe em pano de algodão e lave 2 a 4 dias SÓ em água fria — jamais quente senão tranca o amargo — até sair transparente e sem travo. Quarto, descanse 3-4 horas, escorra a água limpa de cima, seque o amido branco ao sol por 1 ano ou ferva 1 por 5 de água para virar gelatina firme!"
   },
   "createdAt": "2026-11-20T00:58:30.265Z",
-  "contentHash": "2ce15dc3445950e6"
+  "contentHash": "85683e273d79b305",
+  "updatedAt": "2026-11-20T10:05:05+09:00"
 }

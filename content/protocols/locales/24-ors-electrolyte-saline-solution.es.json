@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-24",
   "category": "MEDICINE",
-  "title": "Cómo Hacer Suero Oral (SRO) de la OMS y Solución Salina al 0.9% para Heridas con Agua Hervida, Sal y Azúcar",
+  "title": "Cómo preparar suero oral contra deshidratación y solución salina",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SUERO ORAL SALVAVIDAS CONTRA CHOQUE POR DESHIDRATACIÓN Y SOLUCIÓN SALINA ISOTÓNICA AL 0.9%]",
   "summary": "Si su hogar o botiquín ya cuenta con sobres comerciales de sales de rehidratación oral, bebidas isotónicas deportivas o suero fisiológico estéril de farmacia, utilice siempre esos productos primero inmediatamente después de abrirlos. Sin embargo, cuando los hospitales y farmacias colapsan durante un desastre, apagón o corte de agua y se agotan los suministros, la diarrea aguda, los vómitos o la fiebre alta drenan rápidamente el agua y las sales del cuerpo, provocando un choque por deshidratación mortal en 3 días. Beber solo agua simple no logra absorberse en el intestino, y verter agua simple sobre una herida abierta rompe las células por choque osmótico, empeorando el dolor, la infección secundaria y la necrosis. Al mezclar sal y azúcar de cocina en 1 litro de agua purificada mediante un [Filtro Natural de Carbón y Arena](/protocol-01) o un [Sifón de Toalla de Algodón y Esterilizador Solar SODIS](/protocol-23) y hervida durante 3 minutos, puede preparar de inmediato el Suero de Rehidratación Oral (SRO) estándar de la OMS que triplica la absorción intestinal, además de una solución salina al 0.9% sin azúcar para lavar heridas sin dolor.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-05T01:35:36.454Z",
-  "updatedAt": "2026-11-05T10:59:54+09:00",
-  "contentHash": "9319a7fd060a4220"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "a55c704f612d632e"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "Tiere fangen mit 3 Stöcken und einem Felsbrocken (Vierer-Schlagfalle)",
+  "title": "In der Wildnis eine Stein-Schlagfalle für Kleintiere bauen",
   "threatLevel": "HIGH",
   "threatLevelText": "[PROTEIN & NAHRUNG KRITISCH]",
   "summary": "Tiere mit bloßen Händen zu jagen führt schnell zu lebensgefährlicher Erschöpfung. Wenn man drei fingerdicke Äste mit Kerben versieht und zu einer 'Ziffer 4' zusammensteckt, tragen sie ohne jedes Seil einen 15kg schweren Stein. Berührt ein Beutetier den Köder, löst sich das Gestell in 0,1 Sekunden auf und der Fels fällt herab.",
@@ -121,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "51e4bec4273ad957"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "8d419146ec6db329"
 }

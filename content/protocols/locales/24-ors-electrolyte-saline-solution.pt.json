@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-24",
   "category": "MEDICINE",
-  "title": "Como Fazer Soro Caseiro (SRO da OMS) contra Choque de Desidratação e Soro Fisiológico 0,9% para Feridas com Água Fervida, Sal e Açúcar",
+  "title": "Como fazer soro caseiro contra desidratação e soro de limpeza",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SORO DE REIDRATAÇÃO ORAL SALVA-VIDAS & SORO FISIOLÓGICO ISOTÔNICO 0,9% PARA FERIDAS]",
   "summary": "Se sua casa ou kit de primeiros socorros já possui envelopes de sais de reidratação oral de farmácia, bebidas isotônicas esportivas ou soro fisiológico estéril comercial, utilize sempre esses produtos primeiro logo após abri-los. Contudo, quando hospitais e farmácias fecham durante desastres, apagões ou falta de água e os suprimentos acabam, diarreia aguda, vômitos ou febre alta drenam rapidamente a água e o sal do corpo, causando choque de desidratação fatal em 3 dias. Beber apenas água pura não é absorvido pelo intestino, e jogar água pura em uma ferida aberta rompe as células por choque osmótico, agravando a dor, a infecção secundária e a necrose. Ao misturar sal e açúcar de cozinha em 1 litro de água purificada por um [Filtro Natural de Carvão e Areia](/protocol-01) ou [Sifão de Toalha de Algodão e Esterilizador Solar SODIS](/protocol-23) e fervida por 3 minutos, você prepara imediatamente o Soro de Reidratação Oral (SRO) padrão da OMS que triplica a absorção intestinal, além de um soro fisiológico 0,9% sem açúcar para lavar feridas sem dor.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-05T01:35:36.454Z",
-  "updatedAt": "2026-11-05T10:59:54+09:00",
-  "contentHash": "9319a7fd060a4220"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "a55c704f612d632e"
 }

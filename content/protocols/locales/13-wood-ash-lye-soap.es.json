@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-13",
   "category": "MEDICINE",
-  "title": "Fabricación de Jabón Desinfectante Natural con Lejía de Ceniza de Roble y Grasa para Prevenir Infecciones",
+  "title": "Cómo hacer jabón natural de ceniza para evitar infecciones",
   "threatLevel": "HIGH",
   "threatLevelText": "[HIGIENE DE CAMPO & DESINFECCIÓN DE HERIDAS & PREVENCIÓN DE SEPSIS]",
   "summary": "En escenarios de supervivencia agreste o colapso de infraestructuras sin agua corriente ni medicinas, un simple raspón o comer con manos contaminadas puede provocar disentería mortal, tétanos o sepsis sistémica fulminante. Al recolectar ceniza blanca pura de roble de una hoguera o de la [estufa de gasificación de leña de doble lata](/protocol-12), compactarla en una lata filtrante con lecho de grava y hierba seca, y verter agua caliente, se extrae lejía alcalina de carbonato de potasio. Al hervir suavemente esta lejía en proporción 1:1 con sebo animal clarificado o aceite vegetal rescatado mientras se bate continuamente con una espátula de madera, se desencadena la saponificación, produciendo un potente jabón antiséptico que destruye las membranas de los patógenos.",
@@ -185,6 +185,6 @@
     ]
   },
   "createdAt": "2026-10-21T05:30:00.000Z",
-  "contentHash": "6c6c26a55586fcca",
-  "updatedAt": "2026-10-28T17:33:13+09:00"
+  "contentHash": "f5ad9047708d3493",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

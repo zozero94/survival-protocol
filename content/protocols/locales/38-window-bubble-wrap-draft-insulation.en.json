@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-38",
   "category": "MATERIALS",
-  "title": "How to Stop Winter Heat Loss Zero-Power Using Water-Misted Bubble Wrap, Newspaper Draft Seals, and Foil Curtains",
+  "title": "How to Stop Window Drafts and Indoor Heat Loss Without Heating",
   "threatLevel": "HIGH",
   "threatLevelText": "[WINTER BLACKOUT INDOOR HEAT RETENTION & ZERO-POWER WINDOW INSULATION]",
   "summary": "If backup generators, electric space heaters, silicone window weatherstripping, or commercial thermal films are available at home, inspect and run those factory heating and insulation systems first as the fastest, safest defense. However, when severe winter blackouts and gas outages hit simultaneously and indoor rooms near freezing, sealing cold window drafts and conductive glass loss traps vital warmth. Using only a wet hand to trace drafts, stuffing rolled newspaper and cloth into sash tracks, misting plain water to mount insulating bubble wrap onto windowpanes, and combining a foil curtain with a [Cardboard Thermal Capsule](/protocol-22), [Insulated Boot Liner](/protocol-28), and safe midday 5-minute cross-ventilation alongside any [Tuna Can Stove](/protocol-21) keeps one warm living zone habitable without power.",
@@ -244,5 +244,6 @@
     "body": "First, wet the back of your hand and sweep along window frames—wherever skin feels cold, pack tightly rolled newspaper and spare cloth deep into the tracks. Second, wipe glass clean, mist plain water evenly, and press the BUMPY side of bubble wrap flat against wet glass—zero glue, blocks chill, and lets sun in! Third, lay a thick rolled towel along the bottom window sill and hang a foil mat shiny-side inward to bounce body warmth back inside. Fourth, wipe morning condensation dry and crack windows 5 minutes at midday—never burn flames in an airtight sealed room!"
   },
   "createdAt": "2026-11-21T14:29:26.279Z",
-  "contentHash": "fbcbd91d87c23005"
+  "contentHash": "d3cf8e1f381a3b92",
+  "updatedAt": "2026-11-21T23:36:11+09:00"
 }

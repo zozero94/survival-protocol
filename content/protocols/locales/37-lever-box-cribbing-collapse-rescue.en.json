@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-37",
   "category": "TOOLS",
-  "title": "How to Safely Lift Heavy Collapse Concrete Using a Timber Lever and 2x2 Box Cribbing (Zero Power)",
+  "title": "How to Safely Lift Heavy Collapse Rubble During Earthquakes",
   "threatLevel": "HIGH",
   "threatLevelText": "[EARTHQUAKE COLLAPSE RESCUE LEVERAGE & 2X2 BOX CRIBBING ENGINEERING]",
   "summary": "If rescue services can be reached and hydraulic spreaders, pneumatic lifting airbags, or factory hydraulic car jacks are on site, deploy professional firefighters and rated lifting equipment first as the safest, fastest option. However, when severe earthquakes or structural collapses sever communications and trap survivors outside an [Indoor Safe Zone](/protocol-31) without power tools, pairs of rescuers must combine an adult-height timber beam lever with stacked flat square wood cribbing blocks using the 'Lift an Inch, Crib an Inch' method. By keeping hands completely out from beneath the slab until solid cribbing bears the entire load, you can extract victims safely, treat wounds with a [Windlass Tourniquet](/protocol-32) and [Field Splint](/protocol-18), and signal crews with a [120dB Whistle & Mirror](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "First, scan overhead hazards and gas smells, sweep debris clean, seat a solid square wood block close to the slab edge, and tuck a tall timber lever 3 to 5cm beneath. Second, beside the slab build two-by-two flat square wooden towers crossed 90 degrees like a hashtag—never round logs or hollow bricks! Third, the life-or-death rule: Lift an inch, crib an inch! Raise just two finger-widths, push wooden blocks and wedges from the OUTSIDE without a single finger under concrete, and ease down onto the wood. Fourth, pull the lever out completely—only when dual wood stacks hold rock solid do you splint bleeding wounds and slide your survivor free!"
   },
   "createdAt": "2026-11-21T02:46:35.405Z",
-  "contentHash": "80dbc76c9f37795f"
+  "contentHash": "8218fbb5e2e98f21",
+  "updatedAt": "2026-11-21T11:52:47+09:00"
 }

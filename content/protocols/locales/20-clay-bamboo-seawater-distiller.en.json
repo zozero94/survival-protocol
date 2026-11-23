@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-20",
   "category": "FOOD",
-  "title": "How to Distill Seawater & Muddy Water into Pure Drinking Water with a Clay Pot & Bamboo Pipe",
+  "title": "How to Boil Seawater Into Clean Drinking Water",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[DEHYDRATION DEFENSE] 100% Salt-Free Freshwater Recovery on Coasts & Contaminated Zones",
   "summary": "When stranded on a coast, island, or near brackish pools where only seawater or chemically tainted water exists, a [Charcoal & Sand Filter](/protocol-01) only removes dirt and odors—it cannot remove dissolved salt (3.5% salinity). Drinking seawater draws water out of your cells and causes fatal dehydration within two days. By boiling seawater in an [Earthen Clay Pot](/protocol-16) over a [Clay Hearth](/protocol-06), attaching a node-hollowed bamboo pipe to the sealed lid, and wrapping the pipe with cold-water-soaked [Sphagnum Moss and Burlap](/protocol-18), heavy salt stays at the bottom as white crystals while pure steam condenses inside the cool tube into 2–3 liters of pure drinking water and natural sea salt per day.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-11-02T01:10:00.000Z",
-  "updatedAt": "2026-11-02T11:24:26+09:00",
-  "contentHash": "3662cb12c2284d2c"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0df04a5b241032ea"
 }

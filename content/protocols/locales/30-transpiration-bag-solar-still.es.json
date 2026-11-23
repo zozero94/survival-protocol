@@ -1,5 +1,5 @@
 {
-  "title": "Cómo Recolectar Agua Potable con Bolsa Plástica, Transpiración Foliar y Destilador Solar de Tierra",
+  "title": "Cómo recolectar agua potable de hojas y tierra cuando falta agua",
   "summary": "En situaciones de aislamiento o desastre sin arroyos ni lluvia y con el agua agotada, esta tecnología de hidratación combina la transpiración natural de hojas de árboles no tóxicos con la evaporación y condensación solar de la humedad subterránea para cosechar hasta 1 litro diario de agua destilada pura sin hervir. Si dispone de filtros comerciales o agua embotellada, priorícelos; en caso de carencia total, recurra al 100% a una bolsa plástica y piedras.",
   "threatLevelText": "CRÍTICO // ACCIÓN INMEDIATA REQUERIDA",
   "timeRequired": "30 min instalación // 6–12 h recolección",
@@ -263,7 +263,8 @@
     ]
   },
   "createdAt": "2026-11-12T01:50:38.970Z",
-  "contentHash": "2e0b5744254a5aa6",
+  "contentHash": "7ed2232aa20aa55d",
   "protocolId": "PR-30",
-  "category": "FOOD"
+  "category": "FOOD",
+  "updatedAt": "2026-11-12T02:01:22Z"
 }

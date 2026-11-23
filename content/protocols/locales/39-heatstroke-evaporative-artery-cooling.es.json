@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-39",
   "category": "MEDICINE",
-  "title": "Cómo Bajar Fiebre por Golpe de Calor Sin Electricidad con Fosa en Sombra y Paños Húmedos Arteriales",
+  "title": "Cómo bajar rápido la fiebre por insolación sin hielo ni luz",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[ENFRIAMIENTO EVAPORATIVO ARTERIAL Y FOSA FRESCA PARA GOLPE DE CALOR]",
   "summary": "Si puede contactar emergencias y hay vehículo con aire acondicionado, hielo comercial o tina de agua fría cerca, llame al 119 o emergencias al instante y traslade al paciente al frío como prioridad absoluta. Sin embargo, cuando en pleno verano sin luz ni hielo cesa el sudor, la piel arde roja y surge confusión, la hipertermia mata en minutos. Excave un palmo bajo sombra arbórea densa exponiendo subsuelo fresco, coloque paños empapados de un [Filtro de Carbón y Arena](/protocol-01) o [Nevera Evaporativa](/protocol-16) en cuello, axilas e ingles abanicando sin descanso, administre medios sorbos de [Suero ORS](/protocol-24) SOLO al recuperar plena lucidez y pida ayuda con [Silbato 120 dB y Espejo](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "Primero llévalo a sombra densa, raspa un palmo de polvo caliente hasta tocar tierra húmeda fresca bajo su espalda y afloja cuello y cinturón. Segundo empapa telas limpias en agua fresca y ponlas SOLO donde pasan arterias grandes—cuello, axilas e ingles—¡y abanica sin parar con una rama verde para disparar la evaporación! Tercero remoja los paños cada 3-5 minutos y retíralos del torso si tiembla. Cuarto NUNCA viertas agua en bocas confusas—espera lucidez clara y da medios sorbos lentos de agua con sal y azúcar!"
   },
   "createdAt": "2026-11-21T23:49:25.707Z",
-  "contentHash": "91ac3a06c8b794e1"
+  "contentHash": "d331c8acf0209e57",
+  "updatedAt": "2026-11-22T09:00:44+09:00"
 }

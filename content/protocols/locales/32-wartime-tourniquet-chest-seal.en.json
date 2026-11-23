@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-32",
   "category": "MEDICINE",
-  "title": "Wartime Arterial Bleeding Windlass Tourniquet & 3-Sided Chest Seal Valve (Field Trauma First Aid)",
+  "title": "How to Apply a Tourniquet and Chest Seal for Severe Wounds",
   "threatLevel": "CRITICAL",
   "threatLevelText": "CRITICAL // 3-Minute Golden Time Arterial Bleed & Pneumothorax Rescue",
   "summary": "Emergency trauma protocols to stop fatal hypovolemic shock within 3 minutes when wartime bombing shrapnel or shattered glass severs major limb arteries causing bright red spurting blood using a Windlass Tourniquet, and to prevent lung collapse from sucking chest wounds using a 3-Sided Plastic Flutter Valve Dressing. Always apply commercial military tourniquets (CAT/SOFTT) and vented chest seals first if available; when cut off from medical supplies, use a 4cm-wide leather belt or folded cloth, a solid metal spoon or oak stick, a clean snack bag plastic sheet, and duct tape. Includes vital precautions against secondary wound infection, tetanus, and limb necrosis from prolonged compression.",
@@ -257,5 +257,6 @@
     "body": "When bright red blood spurts from an arm or leg, simple cloth pressure won't stop it. First, wrap a leather belt or folded cloth at least 4 centimeters wide three finger-widths above the wound toward the heart. Second, slip a solid metal spoon handle or oak stick into the knot and twist it two or three full turns until bleeding stops completely. Third, tie the rod ends so it cannot unwind and write T with the exact time on the forehead. For a sucking chest wound, cover the hole with clean plastic and tape only three sides so trapped air escapes out the bottom!"
   },
   "createdAt": "2026-11-16T03:34:15.333Z",
-  "contentHash": "265802761804cc88"
+  "contentHash": "e2ef3abd1e690bd0",
+  "updatedAt": "2026-11-16T03:44:06Z"
 }

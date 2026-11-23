@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-16",
   "category": "FOOD",
-  "title": "Zero-Power Evaporative Clay Pot Refrigerator (Field Zeer Pot) for Preserving Meat and Food",
+  "title": "How to Build a Powerless Natural Cooler to Preserve Food",
   "threatLevel": "HIGH",
   "threatLevelText": "[SUMMER MEAT SPOILAGE & FOOD POISONING DEFENSE & ZERO-POWER COLD PRESERVATION]",
   "summary": "In midsummer heat or a post-grid disaster zone, meat and fish hard-won through [animal traps and hunting](/protocol-08) or [primitive fish traps](/protocol-11) breed fly larvae and putrefactive bacteria within half a day at ambient temperatures, causing fatal food poisoning and enteritis. In the field without electricity or ice, you must immediately build an evaporative cooling 'Field Zeer Pot' refrigerator by nesting two differently sized 'unglazed porous clay pots' fired on the same principle as an [earthen kiln](/protocol-06), packing [natural water filter](/protocol-01) river sand into the gap between them, and pouring cold water so evaporation continuously draws heat away. As water evaporates through the microscopic pores of the outer pot wall, it maintains the interior 8 to 12°C cooler than the outside air; storing food inside the chamber disinfected with [natural lye soap](/protocol-13) preserves rations fresh for over a week with zero electricity.",
@@ -193,6 +193,6 @@
     }
   ],
   "createdAt": "2026-10-26T00:05:00.000Z",
-  "updatedAt": "2026-10-26T10:53:22+09:00",
-  "contentHash": "61cf2d9d25082a99"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2ddeb5dcbaaa0864"
 }

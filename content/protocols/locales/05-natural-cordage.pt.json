@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-05",
   "category": "TOOLS",
-  "title": "Como trançar corda selvagem inquebrável com casca de árvore e cipó",
+  "title": "Como trançar uma corda selvagem que não arrebenta",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SOBREVIVÊNCIA CRÍTICA]",
   "summary": "Uma corda forte é indispensável para amarrar abrigos, fixar machados de pedra e fazer fogo com arco. Cipós verdes inteiros encolhem e quebram ao secar; porém, extrair a fibra branca interna e torcer dois cabos em sentidos opostos cria uma corda autotravante capaz de suportar o peso de um adulto.",
@@ -134,6 +134,6 @@
     "description": "Uma bobina de corda uniforme de 8 mm trançada com fibras de casca interna em torção reversa, suportando mais de 90 kgf de tração sem deslizar."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-16T13:50:13+09:00",
-  "contentHash": "39b850a3c2f6f731"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "8a19f8ab4e6502a7"
 }

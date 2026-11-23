@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-24",
   "category": "MEDICINE",
-  "title": "How to Make Life-Saving WHO Oral Rehydration Solution (ORS) and 0.9% Wound Saline from Boiled Water, Salt, and Sugar",
+  "title": "How to Make Oral Rehydration Solution and Wound Saline",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[EMERGENCY DEHYDRATION SHOCK ORS FLUID & 0.9% ISOTONIC WOUND IRRIGATION SALINE]",
   "summary": "If your home or first-aid kit already stocks pharmacy oral rehydration salt packets, sports electrolyte drinks, or sterile medical normal saline, always use those commercial supplies first immediately after opening. However, when hospitals and pharmacies shut down during a disaster, blackout, or water outage and medical supplies run out, severe diarrhea, vomiting, or high fever from contaminated water can drain body fluids and electrolytes, causing fatal dehydration shock within 3 days. Drinking plain water alone fails to absorb in the intestine, while pouring plain water onto an open wound ruptures cells by osmotic shock, worsening pain, secondary infection, and tissue necrosis. By mixing household salt and sugar into 1 liter of boiled purified water from a [Wilderness Charcoal-Sand Filter](/protocol-01) or [Cotton Towel Siphon & SODIS Sterilizer](/protocol-23) using exact finger-pinch and spoon ratios, you can immediately prepare World Health Organization (WHO) standard Oral Rehydration Solution (ORS) that triples intestinal water absorption, plus a sugar-free 0.9% isotonic saline solution for painless wound washing.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-05T01:35:36.454Z",
-  "updatedAt": "2026-11-05T10:59:54+09:00",
-  "contentHash": "9319a7fd060a4220"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "a55c704f612d632e"
 }

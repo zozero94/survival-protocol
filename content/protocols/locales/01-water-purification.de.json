@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "FOOD",
-  "title": "Wie man schlammiges Wasser in sauberes Trinkwasser verwandelt (Naturfilter aus Kohle und Sand)",
+  "title": "Einen Naturfilter bauen, um Schlammwasser trinkbar zu machen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[WICHTIGES ÜBERLEBEN]",
   "summary": "Unbehandeltes schlammiges Wasser in der Wildnis zu trinken führt zu schweren Magenkrämpfen, Durchfall und lebensgefährlicher Dehydrierung. Durch ein Ast-Dreibein mit einem waagerechten Dreiecks-Halterahmen, einem eingeklemmten Rindentrichter und schichtweisem Aufbau aus Kohle, Sand und Kies wird trübes Wasser glasklar gefiltert. Durch anschließendes sprudelndes Kochen für 3+ Minuten werden mikroskopische Keime vollständig zerstört und das Wasser sicher trinkbar.",
@@ -226,6 +226,6 @@
     ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "b95e8a8abc03a175"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2bd2fa730f6c29f4"
 }

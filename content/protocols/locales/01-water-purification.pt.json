@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-01",
   "category": "FOOD",
-  "title": "Como transformar água barrenta em água limpa para beber (Filtro natural com carvão e areia)",
+  "title": "Como fazer um filtro natural para limpar água barrenta",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[SOBREVIVÊNCIA VITAL]",
   "summary": "Beber água barrenta não tratada na natureza provoca fortes cólicas, diarreia e desidratação perigosa. Ao montar um tripé de galhos com um quadro triangular horizontal de suporte, encaixar um cone de casca e dispor carvão, areia e pedregulhos em sequência, a água turva é filtrada até ficar transparente. Ferver essa água vigorosamente por 3+ minutos destrói bactérias microscópicas, tornando-a segura para beber.",
@@ -226,6 +226,6 @@
     ]
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "b95e8a8abc03a175"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "2bd2fa730f6c29f4"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-25",
   "category": "MEDICINE",
-  "title": "Como Construir um Banheiro Seco de Emergência Sem Água Usando Sacos de Lixo, Jornal Rasgado e Carvão de Carvalho para Evitar Mau Cheiro e Epidemias",
+  "title": "Como fazer banheiro seco de emergência quando falta água",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[CORTE DE ÁGUA & TRAVA CONTRA REFLUXO DE ESGOTO & SANEAMENTO SECO DE RISCO BIOLÓGICO]",
   "summary": "Se a sua casa ou mochila de emergência já possui pacotes comerciais de coagulante para banheiro portátil (polímero superabsorvente), um vaso sanitário de camping ou sacos vedadores de odor, utilize sempre esses produtos prontos primeiro. Contudo, quando um terremoto, bombardeio, apagão ou congelamento severo corta a água encanada e rompe as tubulações de esgoto do prédio — e o coagulante comercial acaba —, jogar baldes de água para forçar a descarga faz o esgoto bruto refluir pelos ralos dos andares inferiores e do seu próprio banheiro. Deixar dejetos expostos prolifera moscas, E. coli, disenteria e norovírus em 24 horas. Ao amarrar e travar a alavanca de descarga, vestir dois sacos de lixo grossos sobre o vaso sanitário (ou balde de 20L), forrar o fundo com um colchão absorvente de 10cm de jornal e papelão rasgados e cobrir os dejetos imediatamente com [Pó de Carvão de Carvalho](/protocol-09) triturado e cinza branca de madeira antes de dar um nó duplo pescoço de ganso, você elimina odores e contaminações sem gastar uma gota de água.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-06T01:27:20.308Z",
-  "updatedAt": "2026-11-06T12:57:25+09:00",
-  "contentHash": "dd5397d801ea0704"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "bb84e814d86da74f"
 }

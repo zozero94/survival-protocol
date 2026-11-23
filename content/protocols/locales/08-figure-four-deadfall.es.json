@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-08",
   "category": "FOOD",
-  "title": "Cómo atrapar animales con 3 ramas y una roca (Trampa en Figura de 4)",
+  "title": "Cómo cazar animales con trampa de roca al quedar varado",
   "threatLevel": "HIGH",
   "threatLevelText": "[CRÍTICO: PROTEÍNA Y ALIMENTO]",
   "summary": "Perseguir presas con las manos vacías en la naturaleza causará un agotamiento fatal. Al tallar ranuras en tres ramas del grosor de un dedo y encajarlas en forma de 'número 4', pueden sostener una roca pesada de 15kg sin usar ninguna cuerda. Cuando un animal toca el cebo, la estructura se desarma en 0.1 segundos dejando caer la roca.",
@@ -121,6 +121,6 @@
     "imageFileName": "pr08-outcome.png"
   },
   "createdAt": "2026-10-14T15:35:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "51e4bec4273ad957"
+  "updatedAt": "2026-10-15T16:31:51+09:00",
+  "contentHash": "8d419146ec6db329"
 }

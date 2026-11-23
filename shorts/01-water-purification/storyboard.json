@@ -1,6 +1,6 @@
 {
   "protocolId": "PR-01",
-  "title": "[쇼츠 45초] 흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+  "title": "[쇼츠 45초] 흙탕물 걸러 먹는 자연 정수기 만드는 법",
   "totalDurationSeconds": 45,
   "aspectRatio": "9:16",
   "scenes": [
@@ -10,10 +10,10 @@
       "endSecond": 5,
       "screenType": "HOOK",
       "visualAsset": "pr01-outcome.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
-      "motionDirection": "Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of 흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기). Character says: \"Survival emergency hook warning.\" (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone.",
-      "flowPrompt": "Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of 흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기). Character says: \"Survival emergency hook warning.\" (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone."
+      "motionDirection": "Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of 흙탕물 걸러 먹는 자연 정수기 만드는 법. Character says: \"Survival emergency hook warning.\" (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone.",
+      "flowPrompt": "Vertical 9:16 macro low-angle shot, slow cinematic zoom in. Gritty tactical survival manual documentary style, muted natural tones, razor-sharp focus. Harsh dramatic natural sunlight filtering through dark forest canopy. Weathered survivalist hands confronting life-or-death crisis of 흙탕물 걸러 먹는 자연 정수기 만드는 법. Character says: \"Survival emergency hook warning.\" (no subtitles). Audio: environmental wilderness wind, tension | Background music: low-frequency suspenseful drone."
     },
     {
       "sceneNumber": 2,
@@ -21,7 +21,7 @@
       "endSecond": 10,
       "screenType": "CHECKLIST",
       "visualAsset": "pr01-step-01.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
       "motionDirection": "Vertical 9:16 eye-level knolling layout shot, smooth camera slide from left to right. Crisp survival field manual aesthetic. Neutral overcast soft daylight. Natural raw materials neatly arranged on dark slate stone: 참나무 숯, 세척한 고운 강모래, 작은 둥근 자갈. Hands selecting and inspecting the first item. (no subtitles). Audio: gentle rustling of wood and stone handling | Background music: steady building tactical rhythm.",
       "flowPrompt": "Vertical 9:16 eye-level knolling layout shot, smooth camera slide from left to right. Crisp survival field manual aesthetic. Neutral overcast soft daylight. Natural raw materials neatly arranged on dark slate stone: 참나무 숯, 세척한 고운 강모래, 작은 둥근 자갈. Hands selecting and inspecting the first item. (no subtitles). Audio: gentle rustling of wood and stone handling | Background music: steady building tactical rhythm."
@@ -32,7 +32,7 @@
       "endSecond": 18,
       "screenType": "STEP_1",
       "visualAsset": "pr01-step-01.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
       "motionDirection": "Vertical 9:16 medium close-up shot, slow downward tilt following hands. Gritty authentic survival documentary style. Directional morning side-lighting. Hands carefully executing step 1: 1단계: 나뭇가지 삼발이 중간에 삼각 가로 받침틀을 묶어 고깔을 거치하고 이끼 마개 끼우기. (no subtitles). Audio: tactile craft foley, wood clicking, cordage binding | Background music: focused rhythmic pacing.",
       "flowPrompt": "Vertical 9:16 medium close-up shot, slow downward tilt following hands. Gritty authentic survival documentary style. Directional morning side-lighting. Hands carefully executing step 1: 1단계: 나뭇가지 삼발이 중간에 삼각 가로 받침틀을 묶어 고깔을 거치하고 이끼 마개 끼우기. (no subtitles). Audio: tactile craft foley, wood clicking, cordage binding | Background music: focused rhythmic pacing."
@@ -43,7 +43,7 @@
       "endSecond": 26,
       "screenType": "STEP_2",
       "visualAsset": "pr01-step-02.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
       "motionDirection": "Vertical 9:16 dynamic 45-degree angle shot, subtle upward pedestal camera movement. Hyper-realistic tactile manual aesthetic. Warm directional sunlight. Hands assembling step 2: 2단계: 숯을 콩알 크기로 깨서 맨 아래에 8cm 채우기. (no subtitles). Audio: friction scraping, crisp material layering sound | Background music: confident problem-solving melody.",
       "flowPrompt": "Vertical 9:16 dynamic 45-degree angle shot, subtle upward pedestal camera movement. Hyper-realistic tactile manual aesthetic. Warm directional sunlight. Hands assembling step 2: 2단계: 숯을 콩알 크기로 깨서 맨 아래에 8cm 채우기. (no subtitles). Audio: friction scraping, crisp material layering sound | Background music: confident problem-solving melody."
@@ -54,7 +54,7 @@
       "endSecond": 34,
       "screenType": "STEP_3",
       "visualAsset": "pr01-step-03.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
       "motionDirection": "Vertical 9:16 close-up tracking shot, steady camera tracking physical transformation. Tactical documentary visual. Golden hour warm glow. Key mechanical operation in progress: 3단계: 씻은 고운 모래를 숯 위에 6cm 두께로 덮기. Clear visible functional result emerging. (no subtitles). Audio: satisfying mechanical lock, flow of air or liquid | Background music: triumphant tactical swell.",
       "flowPrompt": "Vertical 9:16 close-up tracking shot, steady camera tracking physical transformation. Tactical documentary visual. Golden hour warm glow. Key mechanical operation in progress: 3단계: 씻은 고운 모래를 숯 위에 6cm 두께로 덮기. Clear visible functional result emerging. (no subtitles). Audio: satisfying mechanical lock, flow of air or liquid | Background music: triumphant tactical swell."
@@ -65,7 +65,7 @@
       "endSecond": 42,
       "screenType": "FATAL_WARNING",
       "visualAsset": "pr01-outcome.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
       "motionDirection": "Vertical 9:16 high-contrast warning shot, sudden subtle camera shake and slow dramatic push-in. High-tension survival aesthetic with deep shadows. Flickering red firelight and stark cold shadows. Hands hesitating before common fatal error: 치명적 실수: 걸러낸 투명한 물을 끓이지 않고 그대로 마시는 행위. (no subtitles). Audio: sharp warning heartbeat thud, crackling tension | Background music: urgent low pulse with sharp cut.",
       "flowPrompt": "Vertical 9:16 high-contrast warning shot, sudden subtle camera shake and slow dramatic push-in. High-tension survival aesthetic with deep shadows. Flickering red firelight and stark cold shadows. Hands hesitating before common fatal error: 치명적 실수: 걸러낸 투명한 물을 끓이지 않고 그대로 마시는 행위. (no subtitles). Audio: sharp warning heartbeat thud, crackling tension | Background music: urgent low pulse with sharp cut."
@@ -76,10 +76,10 @@
       "endSecond": 45,
       "screenType": "OUTRO",
       "visualAsset": "pr01-outcome.svg",
-      "caption": "흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기)",
+      "caption": "흙탕물 걸러 먹는 자연 정수기 만드는 법",
       "voiceoverScript": "야생에서 흙탕물 그냥 마시면 배탈 나서 사흘 안에 쓰러집니다! 자연물 정수기 만드는 법!",
-      "motionDirection": "Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished 흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기) in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord.",
-      "flowPrompt": "Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished 흙탕물을 깨끗한 마실 물로 바꾸는 법 (숯과 모래로 만드는 자연 정수기) in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord."
+      "motionDirection": "Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished 흙탕물 걸러 먹는 자연 정수기 만드는 법 in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord.",
+      "flowPrompt": "Vertical 9:16 wide establishing hero shot, slow pull-back revealing complete finished 흙탕물 걸러 먹는 자연 정수기 만드는 법 in dark wilderness. Dark utilitarian brutalist tone. Moody dusk lighting. Final functional outcome operating autonomously. (no subtitles). Audio: calm evening forest breeze | Background music: resolute fading outro chord."
     }
   ]
 }

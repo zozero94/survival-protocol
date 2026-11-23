@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-04",
   "category": "TOOLS",
-  "title": "How to Make a Stone Axe with River Stones and Vines",
+  "title": "How to Craft a Wild Stone Axe for Cutting Wood",
   "threatLevel": "HIGH",
   "threatLevelText": "[PRIORITY: CORE TOOL]",
   "summary": "You cannot chop thick branches for shelter posts or firewood with your bare hands. Here is how to strike two hard river stones together at a 45-degree angle to split off a sharp stone blade, then lock it into a split wooden handle using pine resin and wet vine bark.",
@@ -97,6 +97,6 @@
     "description": "A bifacially flaked flint blade seated deeply into a split oak haft, bound firmly with criss-cross vine lashing and sealed with pine pitch resin composite."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-10-16T13:34:53+09:00",
-  "contentHash": "e5d622d174a529b8"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "5814a0aec477d2e6"
 }

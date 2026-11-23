@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-25",
   "category": "MEDICINE",
-  "title": "Cómo Hacer un Inodoro Seco de Emergencia sin Agua con Bolsas, Periódico y Carbón de Roble para Evitar Olores y Epidemias",
+  "title": "Cómo hacer un baño seco de emergencia sin agua corriente",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[BLOQUEO DE REFLUJO DE ALCANTARILLADO E INODORO SECO SIN AGUA CONTRA EPIDEMIAS]",
   "summary": "Si su hogar o mochila de emergencia ya cuenta con bolsas coagulantes comerciales para inodoro (polvo de polímero superabsorbente), un inodoro portátil de campamento o bolsas herméticas antiolor, utilice siempre esos suministros primero. Sin embargo, cuando un terremoto, apagón o helada corta el agua potable y rompe las tuberías de desagüe del edificio —y se agotan los coagulantes—, echar cubetas de agua para forzar la descarga provoca que las aguas negras refluyan hacia los pisos inferiores y su propio baño. Dejar los desechos sin sellar cría moscas, E. coli, disentería y norovirus en 24 horas. Al atar la palanca del inodoro, colocar doble bolsa resistente sobre la taza (o cubeta de 20L), poner una cama absorbente de 10cm de periódico y cartón rasgado, y cubrir de inmediato con [Polvo de Carbón de Roble](/protocol-09) y ceniza blanca antes de hacer doble nudo cuello de ganso, eliminará los olores y el contagio sin usar una sola gota de agua.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-06T01:27:20.308Z",
-  "updatedAt": "2026-11-06T12:57:25+09:00",
-  "contentHash": "dd5397d801ea0704"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "bb84e814d86da74f"
 }

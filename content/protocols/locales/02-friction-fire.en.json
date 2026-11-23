@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "SHELTER",
-  "title": "How to Make Fire with Friction (Bow Drill Method)",
+  "title": "How to Start a Fire Without a Lighter Using Wood Friction",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[THREAT LEVEL: CRITICAL]",
   "summary": "A vital primitive survival technique to create fire using dry branches and cordage without matches or lighters. Sawing the bow back and forth rapidly spins the center spindle, generating 400°C glowing coal dust through friction. Transferring this coal into a dry tinder nest and blowing gently ignites an open 600°C flame.",
@@ -112,6 +112,6 @@
     "description": "A glowing 400°C charcoal ember generated in the 45° V-notch smoking heavily, transferred safely into a dry tinder nest and fanned into an open flame."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:52:40+09:00",
-  "contentHash": "6cbccf0cd402bece"
+  "updatedAt": "2026-10-26T11:47:13+09:00",
+  "contentHash": "e48cabac6f47ab6b"
 }

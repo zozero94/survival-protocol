@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-19",
   "category": "FOOD",
-  "title": "Cómo Secar y Ahumar Carne y Pescado con un Trípode de Ramas y Humo de Roble Verde para que Duren Más de un Mes (Charqui de Campo)",
+  "title": "Cómo secar y conservar carne y pescado sin refrigerador",
   "threatLevel": "HIGH",
   "threatLevelText": "[CONSERVACIÓN DE ALIMENTOS] Evitar la Putrefacción de Carne y Pescado sin Refrigeración ni Sal y Asegurar Raciones Portátiles",
   "summary": "En el campo, la carne y el pescado frescos capturados con una [Trampa de Piedra en Figura 4](/protocol-08) o una [Nasa de Sauce en Embudo](/protocol-11) contienen tanta humedad que las moscas ponen huevos y las bacterias los pudren en un solo día. Ni siquiera un [Refrigerador Evaporativo de Vasija](/protocol-16) puede transportarse en una marcha larga. En aislamiento sin sal, esta guía muestra cómo recortar toda la grasa blanca con un [Cuchillo de Piedra Afilado](/protocol-04), cortar la carne magra en tiras de 5mm, colgarlas a la altura del pecho en un trípode atado con [Cuerda de Liana Silvestre](/protocol-05) y quemar [Carbón de Roble](/protocol-09) cubierto con hojas verdes debajo para producir humo blanco sin llamas que extrae la humedad y conserva el alimento por más de un mes.",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-29T02:06:29.298Z",
-  "updatedAt": "2026-10-29T14:00:23+09:00",
-  "contentHash": "2feab12730b3a242"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "0fe1ff91d80ccbd3"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-29",
   "category": "SHELTER",
-  "title": "Como Fazer Fogo sem Fósforos Usando uma Lente de Garrafa de Água e Espelho Côncavo de Fundo de Lata (Ignição Solar Óptica)",
+  "title": "Como acender fogo concentrando luz solar sem isqueiro",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Engenharia de Ignição Solar a 400°C sem Combustível via Refração Convexa e Reflexão Parabólica Côncava]",
   "summary": "Se você já possui um isqueiro maçarico à prova de vento, fósforos impermeáveis, uma pederneira de ferrocério ou uma lupa de vidro em seu abrigo ou mochila de emergência, utilize sempre esse equipamento pronto em primeiro lugar por ser o método mais seguro e rápido. Contudo, quando o isolamento prolongado ou enchentes esgotam o gás do isqueiro e molham os fósforos, ou quando a exaustão física impede o uso do [Arco de Pua por Fricção](/protocol-02), você pode concentrar a energia do sol em um dia limpo para criar uma brasa sem esforço. Polindo o fundo côncavo de uma lata de alumínio com pasta de dente ou cinza fina até transformá-lo em um espelho parabólico, ou enchendo uma garrafa plástica transparente lisa (ou saco plástico) com água limpa sem bolhas para formar uma lente convexa, basta focar um ponto de luz do tamanho de um grão de arroz (1–2 mm) sobre uma isca escurecida por 30 segundos para obter uma brasa a mais de 400 °C sem gastar uma única gota de combustível.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-11T03:46:46.687Z",
-  "contentHash": "258785c63f3ebd22",
+  "contentHash": "304c38ee66c0965b",
   "shortsScript": {
     "hook": "Acabou o gás do isqueiro num apagão de inverno ou isolamento na mata? Acenda fogo a 400 graus em 30 segundos usando uma lata vazia e uma garrafa PET com água!",
     "body": "Primeiro, passe uma gota de pasta de dente ou cinza fina no fundo côncavo de uma lata de alumínio e esfregue por 5 minutos até virar um espelho parabólico. Segundo, encha uma garrafa PET transparente com água limpa sem bolhas para que o ombro arredondado vire uma lupa de água. Terceiro, passe carvão preto na penugem seca para evitar reflexo e segure o foco do tamanho de um grão de arroz por 30 segundos! Quando a brasa acender, coloque num ninho de pinheiro seco e sopre suave até virar chama! Guarde sempre a garrafa na sombra!"
@@ -256,5 +256,5 @@
       "[PRINCÍPIO CHAVE] Reflexão Côncava e Lente de Água Concentram 400°C em 30s"
     ]
   },
-  "updatedAt": "2026-11-11T04:02:02+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

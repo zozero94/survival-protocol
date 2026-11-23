@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-28",
   "category": "SHELTER",
-  "title": "Cómo hacer forros térmicos e impermeables para botas con bolsas de plástico, cartón y periódico contra la congelación y el pie de trinchera",
+  "title": "Cómo hacer plantillas térmicas impermeables contra congelación",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[Ingeniería térmica de calzado con barrera de vapor y aislamiento multicapa contra congelación y necrosis por pie de trinchera]",
   "summary": "Si ya dispone de botas impermeables de senderismo (GORE-TEX), calcetines gruesos de lana merino, parches térmicos desechables o escarpines de neopreno en su refugio o mochila de emergencia, use siempre ese equipo comercial en primer lugar. Sin embargo, durante apagones bajo cero o evacuaciones en inundaciones heladas, una vez que las botas y calcetines se mojan, el agua conduce el calor corporal aproximadamente 25 veces más rápido que el aire estático. La temperatura de los pies se desploma, causando congelación (Frostbite) o pie de trinchera (Trench Foot) en 2 o 3 horas. En un desastre, perder la movilidad del pie impide la evacuación. Combinando cajas de cartón corrugado, periódicos arrugados, bolsas de plástico y papel de aluminio (o corteza de abedul y hierba seca), se construye un forro aislante que bloquea el frío del suelo, atrapa calor en bolsas de aire y aísla el sudor del agua exterior.",
@@ -233,7 +233,7 @@
     }
   ],
   "createdAt": "2026-11-10T05:23:59.349Z",
-  "contentHash": "02d7f29c042a9c1b",
+  "contentHash": "7e0f2fe6f23910d2",
   "shortsScript": {
     "hook": "¡Si tus botas se mojan durante un apagón invernal o inundación, la congelación y el pie de trinchera te impedirán caminar en 2 horas! ¡Haz un forro térmico impermeable con bolsas plásticas, periódico y cartón!",
     "body": "Primero corta dos capas de cartón un poco más grandes que tu pie, envuélvelas en papel de aluminio y ponlas en la bota para bloquear el 90% del frío del suelo. Ponte calcetines secos, envuelve los dedos y la planta con 4 hojas de periódico arrugadas y estiradas para crear un colchón de aire caliente. Cubre todo con una bolsa plástica sin agujeros, átala al tobillo dejando un dedo de holgura y cálzate la bota. ¡Cambia el periódico húmedo cada 3 horas!"
@@ -256,5 +256,5 @@
       "[PRINCIPIO CLAVE] Escudo Basal + Aire Absorbente + Barrera Impermeable Triple"
     ]
   },
-  "updatedAt": "2026-11-10T05:34:16+00:00"
+  "updatedAt": "2026-11-11T05:45:25Z"
 }

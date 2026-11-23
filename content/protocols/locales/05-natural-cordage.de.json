@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-05",
   "category": "TOOLS",
-  "title": "Reißfestes Wildnisseil aus Baumrinde und Ranken drehen",
+  "title": "Ein reißfestes Wildnisseil sicher selbst drehen",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[ÜBERLEBENSWICHTIG]",
   "summary": "Eine stabile Schnur ist unverzichtbar für Unterstände, Steinäxte und Feuerbohrer. Ganze grüne Ranken schrumpfen und brechen beim Trocknen; wenn man jedoch die weiße Innenrinde (Bastfaser) abzieht und zwei Stränge gegenläufig zusammendreht, entsteht ein selbstsicherndes Seil, das das Gewicht eines Erwachsenen trägt.",
@@ -134,6 +134,6 @@
     "description": "Ein gleichmäßiger 8-mm-Seilbund aus im Uhrzeigersinn gedrehten und gegenläufig verzwirnten Bastfasern, der über 90 kgf Zuglast ohne Aufdröseln standhält."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-10-16T13:50:13+09:00",
-  "contentHash": "39b850a3c2f6f731"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "8a19f8ab4e6502a7"
 }

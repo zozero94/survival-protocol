@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-17",
   "category": "MATERIALS",
-  "title": "Como Transformar Couro Cru em Couro Impermeável com Água Fervida de Casca de Carvalho e Cinza (Fazer Couro Natural no Campo)",
+  "title": "Como transformar couro cru em couro firme à prova d’água",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFESA CONTRA APODRECIMENTO DE COURO CRU E AUTOSSUFICIÊNCIA EM COURO IMPERMEÁVEL]",
   "summary": "Em isolamento prolongado, peles cruas obtidas através de [armadilhas e caça](/protocol-08) criam larvas e apodrecem em um único dia por causa da carne e umidade, ou secam ao sol virando uma tábua dura inútil para roupas ou sapatos. Na natureza sem produtos químicos, primeiro deixe a pele crua de molho na 'água escorregadia de cinza branca' usada no [sabão natural de cinza](/protocol-13) para soltar os pelos suavemente, e depois mergulhe a pele por uma semana na 'água adstringente fervida de casca de carvalho' feita com a entrecasca vermelha dos carvalhos ao redor de um [forno de carvão de fosso](/protocol-09). Assim como morder uma bolota ou um caqui verde amarra a boca, a 'seiva adstringente conservante' da casca de carvalho penetra fundo no couro impedindo que bactérias o apodreçam, enquanto a fumaça de madeira impermeabiliza o exterior para costurar casacos e botas com [agulhas de osso e fio de tendão](/protocol-14).",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-26T13:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "1edc87e6714dfcae"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "f14d49f8448b03ae"
 }

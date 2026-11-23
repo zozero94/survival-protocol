@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "SHELTER",
-  "title": "Como Fazer Fogo por Fricção com Galhos (Método do Arco)",
+  "title": "Como fazer fogo sem isqueiro usando fricção de madeira",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NÍVEL DE AMEAÇA: CRÍTICO]",
   "summary": "Uma técnica essencial de sobrevivência para fazer fogo usando galhos secos e uma corda sem fósforos ou isqueiro. Ao puxar e empurrar o arco para frente e para trás, o fuso gira em alta velocidade gerando pó de carvão em brasa a 400°C por atrito. Colocando essa brasa em um ninho de palha seca e soprando suavemente, surge uma chama viva a 600°C.",
@@ -112,6 +112,6 @@
     "description": "Uma brasa incandescente a 400°C gerada na ranhura em V, transferida com sucesso para o ninho de mecha seca e soprada até formar chamas vivas."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:52:40+09:00",
-  "contentHash": "6cbccf0cd402bece"
+  "updatedAt": "2026-10-26T11:47:13+09:00",
+  "contentHash": "e48cabac6f47ab6b"
 }

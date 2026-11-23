@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-18",
   "category": "MEDICINE",
-  "title": "How to Splint Broken Limbs & Stop Bleeding with Straight Branches, Moss Pads & Boiled Burlap",
+  "title": "How to Splint Limb Fractures and Stop Bleeding in Emergencies",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[TRAUMA FIRST AID] Preventing Artery/Nerve Severing, Hemorrhagic Shock & Tissue Necrosis",
   "summary": "When an arm or leg bone breaks from a fall in rough terrain or collapsed rubble, leaving the broken limb unsupported allows sharp bone ends to slice surrounding arteries and nerves, causing severe bleeding or permanent paralysis. In the field without a hospital or orthopedic splint, wash the area around the wound with [Natural Wood-Ash Soap](/protocol-13) and cooled [Boiled Filtered Water](/protocol-01) to prevent tetanus and bacterial infection, press a boiled burlap pad directly over the bleeding spot for 10 minutes, and immobilize both the upper and lower joints using two straight hardwood sticks lined with sphagnum moss and [Soft Smoked Leather](/protocol-17) pads tied at 4 points with [Wild Kudzu Vine Rope](/protocol-05).",
@@ -251,6 +251,6 @@
     }
   ],
   "createdAt": "2026-10-28T09:00:00+09:00",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "f016404b5e722ceb"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "05b5c6ffbeef07d6"
 }

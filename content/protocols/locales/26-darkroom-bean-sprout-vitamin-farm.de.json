@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-26",
   "category": "FOOD",
-  "title": "Wie man bei Langzeit-Isolation mit einem leeren Gefäß, Baumwolltuch und trockenen Bohnen erdfreie Dunkelkammer-Sprossen gegen Skorbut zieht",
+  "title": "Bei Isolation vitaminreiche Keimsprossen ohne Erde ziehen",
   "threatLevel": "HIGH",
   "threatLevelText": "[VITAMIN-C-SELBSTVERSORGUNG BEI LANGZEIT-ISOLATION & ERDFREIE DUNKELKAMMER-KEIMSPROSSENZUCHT]",
   "summary": "Wenn Sie zu Hause oder in Ihrem Notfallgepäck bereits fertige Multivitamintabletten (Vitamin-C-Präparate), Brausetabletten, gefriergetrocknete Gemüseblöcke oder ein spezielles Keimsprossen-Set besitzen, nutzen Sie diese Fertigprodukte immer zuerst für die schnellste und sicherste Nährstoffversorgung. Wenn jedoch Krieg, Großkatastrophen oder lange Isolation die Lieferketten unterbrechen und Vitaminpräparate aufgebraucht sind, führt eine 3–4-wöchige Ernährung nur aus Dosenfutter, Hartkeksen, weißem Reis und Trockengetreide zu schwerem Vitamin-C-Mangel und Skorbut – mit Zahnfleischbluten, nicht heilenden Wunden und Immunschwäche. Trockene Sojabohnen und Mungbohnen enthalten im Ruhezustand fast kein Vitamin C, doch sauberes Wasser und Dunkelheit aktivieren Enzyme im Keimling, die Vitamin C und Aminosäuren binnen 5 Tagen um das 10- bis 30-Fache vervielfachen. Mit einem leeren Gefäß, dünnem Baumwolltuch, einem Stück [Eichenholzkohle](/protocol-09) und einer Lichtschutzhaube aus [Wärmedämmkapsel-Wellpappe](/protocol-22) ernten Sie in 5 Tagen ohne eine Handvoll Erde frisches Vitamingemüse.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-09T01:46:25.453Z",
-  "updatedAt": "2026-11-09T11:05:02+09:00",
-  "contentHash": "4eff6d104b249b53"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "dfa85e65ab8ba4ac"
 }

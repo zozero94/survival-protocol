@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-02",
   "category": "SHELTER",
-  "title": "Cómo hacer fuego por fricción con ramas (Método del taladro de arco)",
+  "title": "Cómo hacer fuego sin encendedor mediante fricción de madera",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[NIVEL DE AMENAZA: CRÍTICO]",
   "summary": "Una técnica esencial de supervivencia para encender fuego con ramas secas y cuerda sin fósforos ni encendedor. Al mover el arco hacia adelante y atrás, el huso gira a gran velocidad generando polvo de carbón incandescente a 400°C por fricción. Al colocar esta brasa en un nido de hierba seca y soplar suavemente, brota una gran llama a 600°C.",
@@ -112,6 +112,6 @@
     "description": "Una brasa incandescente a 400°C generada en la ranura en V, transferida con éxito al nido de yesca seca y avivada hasta producir una llama viva."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-15T15:52:40+09:00",
-  "contentHash": "6cbccf0cd402bece"
+  "updatedAt": "2026-10-26T11:47:13+09:00",
+  "contentHash": "e48cabac6f47ab6b"
 }

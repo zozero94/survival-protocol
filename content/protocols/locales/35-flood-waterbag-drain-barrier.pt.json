@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-35",
   "category": "MATERIALS",
-  "title": "Como Fazer Barreira de Sacos de Água Sem Energia e Bloquear Refluxo de Ralos e Vaso Sanitário na Enchente",
+  "title": "Como barrar retorno de esgoto e enchente na porta em temporais",
   "threatLevel": "HIGH",
   "threatLevelText": "[DEFESA CONTRA ENCHENTE URBANA E VEDAÇÃO DE REFLUXO DE ESGOTO]",
   "summary": "Se sua casa ou entrada já possui comportas comerciais antienchente, sacos expansivos com gel ou válvulas de retenção na rede, feche e acione esses equipamentos de fábrica primeiro por serem os mais rápidos e seguros. Porém, em temporais severos, enchentes ou rompimento de adutoras em térreos e porões sem sacos de areia, água barrenta e esgoto retornam pelos ralos mais baixos do banheiro, vaso sanitário e fresta da porta em minutos, gerando risco grave de choque elétrico e infecção. Cobrindo os ralos com três camadas de sacos impermeáveis e luvas de borracha sob galões de 10 kg+, travando o vaso com tampão de saco de água como [Banheiro Seco de Emergência](/protocol-25) e empilhando tijolos de água duplos pela metade em duas fileiras alternadas dentro de lona em U, você barra cheias de até 30 cm em 15 minutos sem energia.",
@@ -244,5 +244,6 @@
     "body": "Primeiro desligue o disjuntor se já há água perto das tomadas e nunca abra a grelha do ralo: cubra largo com dois sacos grossos e luvas de borracha apertados por um galão de 10 quilos. Segundo, feche o registro atrás do vaso e encaixe um saco duplo meio cheio bem fundo no ralo da louça. Terceiro, junte dois sacos grandes de 50 litros, encha só metade, tire o ar e amarre alto formando tijolos chatos e não bolas duras. Quarto, forre o batente em U até 30 cm, empilhe duas filas alternadas e dobre a lona por cima!"
   },
   "createdAt": "2026-11-19T04:34:21.301Z",
-  "contentHash": "313800a5da7dda87"
+  "contentHash": "2158ee9a7123cd30",
+  "updatedAt": "2026-11-19T13:42:04+09:00"
 }

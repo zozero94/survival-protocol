@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-34",
   "category": "SHELTER",
-  "title": "Wie man bei Stromausfall mit einer klaren 1,5-Liter-Flasche, Wasser und 3 Tropfen Bleiche ein 55W-Solar-Tageslicht baut",
+  "title": "Bei Stromausfall dunkle Räume mit Sonnenlicht und Flasche erhellen",
   "threatLevel": "HIGH",
   "threatLevelText": "[STROMLOSE WASSERPRISMA-TAGESLICHTTECHNIK FÜR 55W RAUMHELLIGKEIT]",
   "summary": "Wenn wiederaufladbare LED-Campinglaternen oder Solar-Taschenlampen vorhanden sind, nutzen Sie diese Fertiggeräte zuerst. Sind bei einem langen Stromausfall jedoch Akkus leer und abgedichtete Zimmer durch [Splitterschutz-Fensterklebung](/protocol-31) und Holzblenden selbst mittags stockdunkel, verbrauchen Kerzen oder ein [Thunfischdosen-Ölheizgerät](/protocol-21) am Tag wertvollen Brennstoff und erhöhen Brand- sowie CO-Vergiftungsgefahr. Füllt man eine klare 1,5-L-PET-Flasche mit reinem Wasser und 3 Tropfen unparfümierter Haushaltsbleiche (oder einem halben Löffel grobem Salz) gegen grüne Algen und dichtet sie senkrecht in der Fensterblende ein, bricht das Wasser Sonnenlicht in alle 360° – für 5+ Jahre Helligkeit wie eine 55W-Glühbirne völlig ohne Strom.",
@@ -244,5 +244,6 @@
     "body": "Kerzen am Tag verschwenden Nacht-Brennstoff. Erstens: Etikett von einer klaren 1,5L-Flasche abziehen und nur das obere Drittel als Klemmring leicht anrauen. Zweitens: Randvoll mit klarem Wasser plus 3 Tropfen Bleiche oder Salz füllen, damit keine Algen wachsen, und fest verschließen. Drittens: Passendes Loch in die Fensterblende schneiden – 1/3 nach draußen zur Sonne, 2/3 nach innen. Viertens: Fuge außen mit Kiefernharz oder Dichtband versiegeln – schon flutet sicheres 55W-Tageslicht deinen Schutzraum!"
   },
   "createdAt": "2026-11-18T05:23:28.224Z",
-  "contentHash": "e2d10bf877747894"
+  "contentHash": "3642408f6fa2a32d",
+  "updatedAt": "2026-11-18T14:30:37+09:00"
 }

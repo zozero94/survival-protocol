@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-26",
   "category": "FOOD",
-  "title": "Cómo Cultivar Brotes de Soja sin Tierra en Oscuridad con un Frasco, Tela de Algodón y Legumbres Secas para Prevenir el Escorbuto",
+  "title": "Cómo cultivar brotes con vitaminas en casa sin usar tierra",
   "threatLevel": "HIGH",
   "threatLevelText": "[AUTOSUFICIENCIA DE VITAMINA C EN AISLAMIENTO & CULTIVO HIDROPÓNICO DE BROTES EN OSCURIDAD]",
   "summary": "Si su hogar o mochila de emergencia ya cuenta con pastillas comerciales de multivitaminas (tabletas de vitamina C), vitaminas efervescentes, bloques de verduras liofilizadas o un germinador comercial, consuma y utilice siempre esos productos terminados primero. Sin embargo, cuando una guerra, desastre mayor o aislamiento prolongado corta el suministro de alimentos frescos y las vitaminas comerciales se agotan, sobrevivir más de 3 a 4 semanas solo con comida enlatada, galletas secas, arroz blanco y granos secos agota la vitamina C corporal, provocando escorbuto —sangrado de encías, heridas que no cicatrizan y colapso inmunológico—. La soja amarilla seca y el frijol mungo casi no contienen vitamina C en estado seco, pero al suministrarles agua limpia y oscuridad para germinar, sus enzimas internas multiplican la vitamina C y los aminoácidos esenciales de 10 a 30 veces en 5 días. Con solo un envase vacío, tela fina de algodón, un trozo de [Carbón de Roble](/protocol-09) y una caja oscura hecha con sobras de una [Cápsula Térmica de Cartón](/protocol-22), cosechará verduras frescas en 5 días sin un solo puñado de tierra.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-09T01:46:25.453Z",
-  "updatedAt": "2026-11-09T11:05:02+09:00",
-  "contentHash": "4eff6d104b249b53"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "dfa85e65ab8ba4ac"
 }

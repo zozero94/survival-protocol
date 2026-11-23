@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-17",
   "category": "MATERIALS",
-  "title": "Turning Raw Animal Hide into Durable Waterproof Leather with Brewed Oak Bark Water and Wood Ash Lye (Field Natural Leather Making)",
+  "title": "How to Turn Raw Hide Into Tough Waterproof Leather",
   "threatLevel": "HIGH",
   "threatLevelText": "[RAWHIDE SPOILAGE DEFENSE & PERMANENT WATERPROOF WINTER LEATHER SELF-SUFFICIENCY]",
   "summary": "During long-term isolation, raw animal hides obtained through [animal traps and hunting](/protocol-08) breed maggots and rot within a single day due to leftover flesh and moisture, or dry under the sun into stiff board-like rawhide unusable for clothing or shoes. In the wild without chemicals, you first soak the rawhide in slippery 'white wood-ash water' used in [natural lye soap](/protocol-13) to loosen and push off the hair cleanly, then steep the hide for a week in dark reddish-brown 'brewed oak bark water' made from crushed inner oak bark found around a [sealed pit charcoal kiln](/protocol-09). Just like biting into an acorn or unripe persimmon puckers your mouth, the natural 'astringent preservative sap' inside oak inner bark soaks deep into the hide to stop bacteria from rotting it, while wood smoke adds a waterproof outer coat so you can stitch warm winter coats and boots with [bone needles and sinew thread](/protocol-14).",
@@ -246,6 +246,6 @@
     }
   ],
   "createdAt": "2026-10-26T13:00:00.000Z",
-  "updatedAt": "2026-10-28T17:33:13+09:00",
-  "contentHash": "1edc87e6714dfcae"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "f14d49f8448b03ae"
 }

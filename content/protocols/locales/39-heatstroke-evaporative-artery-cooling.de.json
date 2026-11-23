@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-39",
   "category": "MEDICINE",
-  "title": "Hitzschlag-Notfall ohne Strom: Arterienkühlung mit nassen Tüchern und kühlem Schattenboden",
+  "title": "Bei Hitzschlag im Freien das Fieber schnell ohne Strom senken",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[HITZSCHLAG-NOTFALL IM FREIEN: ARTERIEN-VERDUNSTUNGSKÜHLUNG & SCHATTENBODEN]",
   "summary": "Wenn der Notruf 112 erreichbar ist und ein klimatisiertes Fahrzeug, Kühlakkus oder kaltes Badewasser in der Nähe sind, rufen Sie sofort professionelle Hilfe und kühlen Sie den Betroffenen dort zuerst. Versagt bei Sommerhitze ohne Strom und Eis jedoch plötzlich das Schwitzen, wird die Haut glühend heiß und rot und treten Verwirrung oder Lallen auf, droht binnen Minuten Lebensgefahr. Kratzen Sie sofort im tiefen Baumschatten eine Handspanne heißen Oberflächenstaub bis auf kühlen feuchten Unterboden ab, legen Sie saubere Baumwolltücher mit kaltem Wasser aus einem [Natur-Wasserfilter](/protocol-01) oder [Ton-Verdunstungskühler](/protocol-16) auf Halsseiten, Achseln und Leiste unter pausenlosem Fächeln, geben Sie kleine Schlucke [Trinklösung (ORS)](/protocol-24) NUR bei wachem klarem Blick und fordern Sie Hilfe per [120-dB-Pfeife & Spiegel](/protocol-27) an.",
@@ -244,5 +244,6 @@
     "body": "Erstens: Sofort in tiefen Baumschatten bringen, eine Handspanne heißen Staub zu feucht-kühler Erde abkratzen und Kragen sowie Gürtel weit öffnen! Zweitens: Saubere nasse Baumwolltücher gezielt an Halsseiten, Achseln und Leiste legen — genau über den großen Schlagadern — und mit einem großen Laubast ununterbrochen fächeln! Drittens: Tücher alle 3 bis 5 Minuten neu ins kalte Wasser tauchen und bei erstem Zittern vom Rumpf nehmen! Viertens: Verwirrten niemals Wasser einflößen — erst bei klarem Blick halbe Schlucke Salzwasser geben!"
   },
   "createdAt": "2026-11-21T23:49:25.707Z",
-  "contentHash": "91ac3a06c8b794e1"
+  "contentHash": "d331c8acf0209e57",
+  "updatedAt": "2026-11-22T09:00:44+09:00"
 }

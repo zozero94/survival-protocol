@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-03",
   "category": "SHELTER",
-  "title": "Laubhütten-Isolierunterstand ohne Feuer bauen (Debris Hut)",
+  "title": "Eine Laubhütte bauen, um ohne Feuer Körperwärme zu halten",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[GEFAHRENSTUFE: KRITISCH]",
   "summary": "Wer in der Wildnis bei Regen und Kälte ungeschützt die Nacht verbringt, riskiert binnen 3 Stunden eine lebensgefährliche Unterkühlung. Wenn kein Feuer möglich ist, hält eine dicke Schicht aus Ästen und trockenem Laub wie ein Daunenschlafsack die eigene Körperwärme fest und sichert das Überleben.",
@@ -100,6 +100,6 @@
     "description": "Ein 2.5m schwerer Firstbalken und ein 45°-Rippenrahmen, bedeckt von 1 Meter komprimiertem trockenem Laub und Schutzästen, die Körperwärme bei Minustemperaturen ohne Feuer halten."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-10-15T16:00:00+09:00",
-  "contentHash": "5c83ac034006645f"
+  "updatedAt": "2026-11-09T10:08:31Z",
+  "contentHash": "fb417a686fed1bca"
 }

@@ -1,5 +1,5 @@
 {
-  "title": "Trinkwassergewinnung durch Plastikbeutel-Blatt-Transpiration und Erd-Sonnendestille",
+  "title": "Aus Blättern und feuchtem Boden sauberes Trinkwasser gewinnen",
   "summary": "Wenn bei einer Notlage oder Isolation Trinkwasser völlig fehlt und weder Bäche noch Regen vorhanden sind, gewinnt diese stromlose Überlebenstechnik durch die natürliche Transpiration ungiftiger Laubbaumblätter und die solare Verdampfung der Bodenfeuchte bis zu 1 Liter reines destilliertes Trinkwasser pro Tag ohne Abkochen. Bevorzugen Sie stets kommerzielle Wasserfilter oder Vorräte; im Ernstfall genügen ein einfacher transparenter Beutel und Kieselsteine.",
   "threatLevelText": "KRITISCH // SOFORTIGES HANDELN ERFORDERLICH",
   "timeRequired": "30 Min. Aufbau // 6–12 Std. Ernte",
@@ -263,7 +263,8 @@
     ]
   },
   "createdAt": "2026-11-12T01:50:38.970Z",
-  "contentHash": "2e0b5744254a5aa6",
+  "contentHash": "7ed2232aa20aa55d",
   "protocolId": "PR-30",
-  "category": "FOOD"
+  "category": "FOOD",
+  "updatedAt": "2026-11-12T02:01:22Z"
 }

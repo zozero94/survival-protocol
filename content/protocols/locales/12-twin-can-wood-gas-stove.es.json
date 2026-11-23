@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-12",
   "category": "SHELTER",
-  "title": "Estufa de Gas de Leña de Doble Combustión con 2 Latas Vacías, Cable Pelado y Ramitas",
+  "title": "Cómo hacer una estufa improvisada sin humo para hervir agua",
   "threatLevel": "HIGH",
   "threatLevelText": "[COCCIÓN SIN HUMO A ALTA TEMPERATURA Y 80% AHORRO DE LEÑA]",
   "summary": "En una ciudad colapsada o en terreno baldío es difícil hallar leña gruesa, y encender una fogata común levanta humo negro que delata tu posición además de perder calor con el viento. Al encajar dos latas de acero vacías de distinto tamaño para formar una cámara de doble pared y sujetarlas con el núcleo de cobre o hierro de un cable eléctrico pelado, obtienes un hornillo sin humo que quema el propio gas de la madera. Con solo dos puñados de ramitas secas hierves 1 litro de agua en 8 minutos sin emitir humo.",
@@ -173,6 +173,6 @@
     "description": "Construida con dos latas de acero recuperadas y alambre pelado, con canal de precalentamiento de 1.5–2cm, tomas inferiores de aire frío, toberas superiores de oxígeno secundario y soporte cruzado de alambre para combustión limpia a 850°C."
   },
   "createdAt": "2026-10-17T10:12:00.000Z",
-  "contentHash": "61644332f814ecf5",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "3dd1c210e811ac3e",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

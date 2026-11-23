@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-10",
   "category": "MATERIALS",
-  "title": "Kiefernharz zu antiseptischer Salbe und wasserfestem Pechkleber veredeln",
+  "title": "Aus Baumharz Wundsalbe und wasserfesten Kleber herstellen",
   "threatLevel": "HIGH",
   "threatLevelText": "[INFEKTIONSABWEHR & WASSERFESTE WERKZEUGBINDUNG]",
   "summary": "In der Wildnis kann sich eine unbehandelte Schnittwunde durch Steinsplitter oder Äste rasch infizieren und zu lebensbedrohlicher Sepsis führen. Zudem erfordern Steinbeile und rissige Gefäße ein felsenhartes, wasserfestes Bindemittel für härteste Feldbedingungen. Durch schonendes Schmelzen von Kiefernharz über indirekter Glutwärme und das Abschöpfen von Rindenteilen gewinnt man eine reine antimikrobielle Wundsalbe. Das Einrühren von feinem Holzkohlepulver im Verhältnis **1:1** ergibt einen obsidianharten, wasserdichten Pechklebestift (Pitch Glue).",
@@ -173,6 +173,6 @@
     "description": "Vollständige Spezifikationen der geklärten Wundsalbe in der Muschelschale, des obsidianharten Pechklebestifts am Hartholzast und des wasserdichten Beilbindungs-Schnitts."
   },
   "createdAt": "2026-10-16T11:40:00.000Z",
-  "contentHash": "553e3079c1feebb8",
-  "updatedAt": "2026-10-26T11:47:13+09:00"
+  "contentHash": "54b5676ba59cb40c",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

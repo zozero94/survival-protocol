@@ -1,5 +1,5 @@
 {
-  "title": "How to Collect Drinking Water Using a Plastic Bag, Leaf Transpiration, and a Solar Earth Still",
+  "title": "How to Collect Drinking Water From Leaves and Soil",
   "summary": "When all drinking water is exhausted with no streams or rain during wilderness or disaster isolation, this zero-power survival hydration technology combines the natural transpiration of living non-toxic broadleaf foliage with the solar thermal evaporation and condensation of ground moisture to harvest up to 1 liter of pure drinkable distilled water daily without boiling. If commercial water filters or bottled water are available, prioritize them; in absolute emergencies, rely 100% on a simple transparent bag and pebbles.",
   "threatLevelText": "CRITICAL // IMMEDIATE ACTION REQUIRED",
   "timeRequired": "30 min setup // 6–12 hr harvest",
@@ -263,7 +263,8 @@
     ]
   },
   "createdAt": "2026-11-12T01:50:38.970Z",
-  "contentHash": "2e0b5744254a5aa6",
+  "contentHash": "7ed2232aa20aa55d",
   "protocolId": "PR-30",
-  "category": "FOOD"
+  "category": "FOOD",
+  "updatedAt": "2026-11-12T02:01:22Z"
 }

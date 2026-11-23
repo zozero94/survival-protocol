@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-38",
   "category": "MATERIALS",
-  "title": "Cómo Evitar la Pérdida de Calor en Casa Sin Electricidad con Burbujas con Agua, Papel de Diario y Cortina Térmica",
+  "title": "Cómo frenar corrientes de ventanas y pérdida de calor sin luz",
   "threatLevel": "HIGH",
   "threatLevelText": "[AISLAMIENTO TÉRMICO DE VENTANAS Y SELLADO DE CORRIENTES SIN ELECTRICIDAD]",
   "summary": "Si su hogar dispone de generador de respaldo, calefactores eléctricos, burletes de silicona o láminas aislantes comerciales, utilice y revise primero esos sistemas de fábrica por ser los más rápidos y seguros. Sin embargo, cuando cortes eléctricos y de gas en pleno invierno dejan las habitaciones cerca del congelamiento, frenar el aire frío por ventanas y marcos retiene el calor corporal vital. Rastreando fugas con la mano húmeda, sellando rieles con papel enrollado y tela, fijando plástico de burbujas solo con rocío de agua, y combinando cortina reflectante junto a [Cápsula Térmica de Cartón](/protocol-22), [Botín Aislante](/protocol-28) y ventilación breve de mediodía al usar [Estufa en Lata](/protocol-21), conservará un refugio cálido y seguro sin energía.",
@@ -244,5 +244,6 @@
     "body": "Primero moja leve el dorso de tu mano y recórrelo por el marco—donde sientas aire frío mete rollos duros de diario y trapos viejos. Segundo limpia el vidrio, rocía solo agua limpia y pega la cara CON BURBUJAS contra el cristal húmedo—cero pegamento y deja entrar el sol! Tercero pon una toalla gruesa enrollada abajo y cuelga lámina plateada brillante mirando adentro para rebotar el calor. Cuarto seca gotas cada mañana y ventila 5 minutos al sol del mediodía—¡jamás enciendas llamas en cuartos herméticos!"
   },
   "createdAt": "2026-11-21T14:29:26.279Z",
-  "contentHash": "fbcbd91d87c23005"
+  "contentHash": "d3cf8e1f381a3b92",
+  "updatedAt": "2026-11-21T23:36:11+09:00"
 }

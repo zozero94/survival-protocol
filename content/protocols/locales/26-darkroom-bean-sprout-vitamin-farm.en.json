@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-26",
   "category": "FOOD",
-  "title": "How to Grow Soil-Free Darkroom Bean Sprouts Using an Empty Jar, Cotton Cloth, and Dry Beans to Prevent Scurvy During Isolation",
+  "title": "How to Grow Vitamin Sprouts Indoors Without Soil",
   "threatLevel": "HIGH",
   "threatLevelText": "[LONG-TERM ISOLATION VITAMIN C SELF-SUFFICIENCY & SOIL-FREE DARKROOM HYDROPONIC SPROUTING]",
   "summary": "If your home or disaster kit already includes commercial multivitamin tablets (vitamin C pills), effervescent vitamin tablets, freeze-dried vegetable blocks, or a dedicated sprouting tray set, always use those commercial supplies first for the fastest and safest nutrition. However, when war, major disaster, or prolonged isolation cuts off grocery supply chains and vitamin pills run out, surviving for 3–4+ weeks solely on canned food, hardtack, white rice, and dry grains depletes body vitamin C, triggering scurvy—bleeding gums, non-healing wounds, and immune collapse. Dry yellow soybeans and mung beans contain almost zero vitamin C while dormant, but supplying clean water and darkness awakens internal enzymes that multiply vitamin C and essential amino acids 10 to 30 times within 5 days. Using only an empty container, thin cotton cloth, a piece of [Oak Charcoal](/protocol-09), and a light-blocking box made from leftover [Cardboard Thermal Capsule](/protocol-22) scraps, you can harvest fresh vitamin-rich vegetables in 5 days without a single handful of soil.",
@@ -241,6 +241,6 @@
     ]
   },
   "createdAt": "2026-11-09T01:46:25.453Z",
-  "updatedAt": "2026-11-09T11:05:02+09:00",
-  "contentHash": "4eff6d104b249b53"
+  "updatedAt": "2026-11-09T08:43:31Z",
+  "contentHash": "dfa85e65ab8ba4ac"
 }

@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-40",
   "category": "TOOLS",
-  "title": "Maca de Emergência Sem Energia com 2 Varas Longas e 2 Jaquetas Grossas em Desastres",
+  "title": "Como improvisar uma maca de emergência para mover feridos",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[RESGATE EM DESASTRES: MACA COM 2 JAQUETAS DE MANGAS INVERTIDAS E 2 VARAS LONGAS]",
   "summary": "Se o resgate 192/193 ou socorristas puderem chegar logo ao local com maca dobrável profissional e prancha rígida de coluna, chame a emergência imediatamente e aguarde a equipe equipada primeiro. Além disso, quem sofreu queda alta ou desabamento com suspeita de lesão no pescoço ou coluna NUNCA deve ser movido sem perigo imediato de vida como fogo, novo desabamento ou enchente. Porém, quando ambulâncias não passam por escombros ou falta de luz e evacuar é urgente, 2 varas mais longas que um adulto e 2 jaquetas grossas formam uma maca firme em 2 minutos. Primeiro contenha sangramentos e fraturas com [Torniquete e Selo Torácico](/protocol-32) e [Tala de Galhos](/protocol-18), passe 2 varas nas mangas viradas para dentro com zíper para baixo, faça teste de peso de 10 segundos, erga plano em 4 pessoas e chame ajuda com [Apito 120dB e Espelho](/protocol-27).",
@@ -244,5 +244,6 @@
     "body": "Regra zero primeiro: se houver suspeita de pancada no pescoço ou coluna, NUNCA mova sem fogo ou desabamento perto! Para evacuar, pegue duas varas maiores que um adulto, feche até o topo dois casacos grossos e vire as quatro mangas para dentro. Depois sobreponha as barras um palmo, enfie as varas nos túneis e vire com os zíperes voltados ao chão! Aperte firme o centro por 10 segundos testando antes de deitar alguém, e levantem em quatro pessoas juntos andando pelos pés!"
   },
   "createdAt": "2026-11-23T01:07:17.085Z",
-  "contentHash": "a43aecfb46b37d81"
+  "contentHash": "9afe9a4af0f00714",
+  "updatedAt": "2026-11-23T10:14:45+09:00"
 }

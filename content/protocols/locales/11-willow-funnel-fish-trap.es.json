@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-11",
   "category": "FOOD",
-  "title": "Cómo Tejer una Nasa de Sauce con Embudo Unidireccional para Capturar Peces",
+  "title": "Cómo tejer una nasa para atrapar peces sin caña de pescar",
   "threatLevel": "HIGH",
   "threatLevelText": "[PROTEÍNA PASIVA Y AHORRO DE ENERGÍA]",
   "summary": "Perseguir peces veloces a mano o con lanza agota tus calorías vitales y falla más del 90% de las veces. Al tejer ramas flexibles de sauce ribereño en una cesta cónica con un embudo invertido unidireccional, los peces siguen el rastro de olor hacia adentro y quedan bloqueados por las puntas elásticas al intentar retroceder. Anclada en la corriente del río, captura peces sola mientras duermes o construyes tu refugio.",
@@ -178,5 +178,6 @@
     "description": "Sección longitudinal mostrando los 4 aros graduales, cuerpo cónico de varas de sauce a 1cm, embudo antirretorno de 5cm, 2 piedras de lastre, bolsa de cebo de caracol y 4 estacas de fijación en el lecho del río."
   },
   "createdAt": "2026-10-16T13:38:00.000Z",
-  "contentHash": "69dbedcc472bdbdb"
+  "contentHash": "9924bec425027f83",
+  "updatedAt": "2026-11-09T08:43:31Z"
 }

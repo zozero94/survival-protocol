@@ -1,7 +1,7 @@
 {
   "protocolId": "PR-21",
   "category": "SHELTER",
-  "title": "Cómo Hacer una Estufa Interior de 72 Horas con Lata de Atún, Aceite de Cocina y Papel Higiénico",
+  "title": "Cómo hacer una estufa interior sin gas ni electricidad",
   "threatLevel": "CRITICAL",
   "threatLevelText": "[CALEFACCIÓN EN APAGÓN & FUENTE TÉRMICA DE 72H]",
   "summary": "Si en casa ya dispone de equipos comerciales como hornillos de gas butano, estufas portátiles, velas de parafina o pastillas de combustible sólido, utilícelos siempre primero por ser la opción más segura y rápida. Sin embargo, cuando un apagón invernal o corte de gas se prolonga y se agotan todas las bombonas y baterías, quemar leña en interiores provoca asfixia mortal por humo y monóxido de carbono (para cocción exterior de alta potencia use la [Estufa de Gas de Madera de Doble Lata](/protocol-12)). Al colocar una capa aislante de gravilla en una lata vacía de atún, sostener 3 mechas de papel higiénico retorcido con un puente de papel metálico y llenarla con aceite vegetal de cocina, obtendrá un calefactor interior sin hollín que mantiene el calor y calienta agua durante 8 a 12 horas por carga (más de 72 horas con una botella de aceite).",
@@ -240,7 +240,7 @@
       "FIELD VERIFIED // ZERO-SMOKE INDOOR HEAT & HOT WATER SYSTEM"
     ]
   },
-  "contentHash": "75c437ca60b0bfba",
+  "contentHash": "18c78a934ff9172d",
   "createdAt": "2026-11-02T06:35:00.000Z",
-  "updatedAt": "2026-11-02T16:17:08+09:00"
+  "updatedAt": "2026-11-09T08:43:31Z"
 }
