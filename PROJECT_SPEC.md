@@ -24,7 +24,7 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 203개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 196개 단위 테스트 무결성 100% 통과)
 - **커뮤니티 & Firebase RTDB 댓글 시스템 (`CommentSection.ts`, `comment.state.ts`, `database.rules.json`)**:
   - 2FA SHA-256 PIN + 기기 시크릿 토큰(`ps_comment_device_token`) 기반 익명 댓글 작성/수정/삭제 및 1회용 `verifiedHash` 원자적 소각
   - 1단계 대댓글 트리, 더보기(`⋯`) 드롭다운 메뉴, 3회 신고 자동 블라인드, 오프라인 대기열(`pendingCreates`) 동기화
@@ -106,7 +106,6 @@ primitive-survival/
 │   │   ├── content-enrichment.service.ts # 문맥 하이퍼텍스트 크로스링커 & 콘텐츠/벡터/실사 보강 감수 엔진
 │   │   ├── gemini-model-resolver.service.ts # Gemini 최신 텍스트·이미지·TTS 모델 동적 리졸버 (Single-Flight + 12h 캐시)
 │   │   ├── pwa.service.ts       # 결정론적 Service Worker 캐시 해시 생성
-│   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 바운딩박스/텍스트 충돌 감사기
 │   │   ├── svg-design-auditor.service.ts # 기계공학 유클리드 좌표 공차 & 멀티모달 비전 감수기
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
@@ -125,7 +124,6 @@ primitive-survival/
 │   │   └── protocol-timestamp.ts # Git 커밋 및 실질 콘텐츠 SHA-256 해시 기반 타임스탬프 동기화 유틸
 │   ├── policy-content.ts        # Stitch 1:1 규격 4대 정책 페이지 원시 본문 마크업
 │   ├── render-policy.ts         # Google AdSense 4대 규정 페이지(About, Privacy, Terms, Contact) 정적 컴파일러
-│   ├── gdrive-sync.ts           # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts                # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts          # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts              # 전체 빌드 파이프라인
@@ -133,7 +131,7 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 16개 테스트 스위트 (203/203 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 15개 테스트 스위트 (196/196 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
@@ -166,9 +164,9 @@ primitive-survival/
 
 ## 5. 전담 자동화 스킬 (Antigravity Skills)
 1. **`publish-protocol` (방안 A+ 넘버링 도면 기반 신규 포스팅 자율 발행 통합 스킬)**:
-   - 기획 ➔ 원시/폐자재 고증 ➔ 초등학생 눈높이 3~6단계 본문 작성 ➔ 방안 A+ 다크 테크니컬 넘버링 `.webp` 도면(`image-generator` + `read_file` 시각 QA + `cwebp`) 및 3D 실물 식별 에셋 ➔ 7개국어 원형 HTML 범례(`data-svg-legend-*`) & 6대 글로벌 언어 현지화 ➔ 5대 품질 심사 ➔ 정적 빌드/PWA 캐시 & 203+ 테스트 검증 ➔ **마지막 `sync` 스킬 연계**까지 원스톱 완결 (레거시 SVG 폴백 하위 호환).
+   - 기획 ➔ 원시/폐자재 고증 ➔ 초등학생 눈높이 3~6단계 본문 작성 ➔ 방안 A+ 다크 테크니컬 넘버링 `.webp` 도면(`image-generator` + `read_file` 시각 QA + `cwebp`) 및 3D 실물 식별 에셋 ➔ 7개국어 원형 HTML 범례(`diagramLegend` · `data-svg-legend-*`) & 6대 글로벌 언어 현지화 ➔ 5대 품질 심사 ➔ 정적 빌드/PWA 캐시 & 196+ 테스트 검증 ➔ **마지막 `sync` 스킬 연계**까지 원스톱 완결 (레거시 SVG 폴백 하위 호환).
 2. **`survival-multilingual-translator` (6대 글로벌 언어 병렬 현지화 스킬)**:
-   - `en`, `ja`, `es`, `de`, `pt`, `zh-TW` 전문 통역 에이전트 병렬 가동, 단일 언어 중립 `imageFileName` 유지 및 `svgLabels` 1:1 넘버링 인덱스 동기화, 유튜브 쇼츠 45초 대본 현지화.
-3. **`sync` (프로젝트 문서 및 클라우드 동기화 스킬)**:
-   - 실제 코드베이스(Option A+ 도면 전환율, 테스트 수치 포함)와 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`, `implementation_plan.md`) 간 괴리 전수 감사 및 구글 드라이브(`1PMHkwQJsR_MSDjf8cYmJcnGp5wpzVnxW`) 자동 동기화.
+   - `en`, `ja`, `es`, `de`, `pt`, `zh-TW` 전문 통역 에이전트 병렬 가동, 단일 언어 중립 `imageFileName` 유지 및 `diagramLegend` 1:1 넘버링 인덱스 동기화, 유튜브 쇼츠 45초 대본 현지화.
+3. **`sync` (프로젝트 문서 정합성 동기화 스킬)**:
+   - 실제 코드베이스(Option A+ 도면 전환율, 테스트 수치 포함)와 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`) 간 괴리 전수 감사 및 Git 단일 진실 공급원 정합성 유지.
 

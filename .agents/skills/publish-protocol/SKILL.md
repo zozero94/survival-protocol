@@ -1,6 +1,6 @@
 ---
 name: publish-protocol
-description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기획서(NEXT_TOPIC_PROMPT.md)로부터 방안 A+ 다크 테크니컬 넘버링 WebP 도면(16:9 결과도 및 3~6단계 1:1 스텝도), 7개국어 원형 HTML 범례, 초등학생 눈높이 본문, 6개국어 번역, 타임스탬프 동기화, 203+ 전수 테스트 및 PWA 빌드까지 원스톱으로 자율 발행하는 공식 스킬.
+description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기획서(NEXT_TOPIC_PROMPT.md)로부터 방안 A+ 다크 테크니컬 넘버링 WebP 도면(16:9 결과도 및 3~6단계 1:1 스텝도), 7개국어 원형 HTML 범례, 초등학생 눈높이 본문, 6개국어 번역, 타임스탬프 동기화, 196+ 전수 테스트 및 PWA 빌드까지 원스톱으로 자율 발행하는 공식 스킬.
 ---
 
 # ⚔️ [SURVIVAL PROTOCOL // 신규 생존 교범 자율 발행 파이프라인]
@@ -103,17 +103,16 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
    ```bash
    npm test
    ```
-   (**16개 스위트 / 203+ 전수 테스트 100% PASS, fail 0 확인**)
+   (**15개 스위트 / 196+ 전수 테스트 100% PASS, fail 0 확인**)
 
 ---
 
 ### [Phase 7] 문서 동기화(`sync`) & 사용자 승인 후 원격 배포
 1. `README.md`, `PROJECT_SPEC.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md` (차기 `PR-{XX+1}` 기획으로 갱신) 동기화.
 2. 로컬 프리뷰 서버(`npm run serve`) 링크(`http://localhost:3000/protocol-XX`) 제공.
-3. ⚠️ **원격 `git push origin main` 및 `npm run gdrive:sync`는 사용자가 로컬 결과를 확인하고 명시적으로 승인(또는 `/goal` 배치에 명시)한 뒤 실행한다**:
+3. ⚠️ **원격 `git push origin main`은 사용자가 로컬 결과를 확인하고 명시적으로 승인(또는 `/goal` · Automation 배치에 명시)한 뒤 실행한다**:
    ```bash
-   npm run gdrive:sync
    git add -A
-   git commit -m "feat: publish PR-XX (<주제 영문/한글 요약>) and sync documentation"
+   git commit -m "기능: PR-XX (<주제 요약>) 발행 및 문서 동기화"
    git push origin main
    ```

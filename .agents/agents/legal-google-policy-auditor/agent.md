@@ -33,7 +33,7 @@ description: 법무적 리스크(개인정보보호법/GDPR, 실정법 위반 �
 - Firebase(Auth, Firestore, Analytics) 연동 시 최소 수집 원칙, 개인정보처리방침(Privacy Policy) 고지, 쿠키/로컬스토리지 동의, 사용자 데이터 삭제권 보장 여부를 검증합니다.
 
 ### 5. ☁️ Google API / Cloud / Firebase / Gemini 약관 준수
-- Google Drive API Limited Use 준수, 최소 권한 스코프(Least Privilege), Firebase/Cloud AUP(Acceptable Use Policy) 준수 여부를 확인합니다.
+- 최소 권한 스코프(Least Privilege), Firebase/Cloud/Gemini AUP(Acceptable Use Policy) 준수 여부를 확인합니다.
 
 ### 6. ©️ 저작권, 상표권(Trademark) 및 오픈소스 라이선스 컴플라이언스
 - AI 생성 실사 이미지(`content/images/*.jpg`) 및 SVG 도면 내 **타사 브랜드 로고, 상표, 바코드, 워터마크 0건** 무결성 및 오픈소스 라이브러리 라이선스(MIT/Apache vs GPL) 호환성을 검증합니다.

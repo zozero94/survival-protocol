@@ -65,7 +65,7 @@ git pull --ff-only origin main
 # 1. 의존성 설치
 npm install
 
-# 2. 전수 단위/통합 테스트 (16개 스위트 / 203+개 테스트)
+# 2. 전수 단위/통합 테스트 (15개 스위트 / 196+개 테스트)
 npm test
 
 # 3. 정적 웹진 컴파일 & PWA 오프라인 캐시 빌드 (public/ 생성)

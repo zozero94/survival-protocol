@@ -100,7 +100,6 @@ primitive-survival/
 │   │   ├── content-enrichment.service.ts # 문맥 하이퍼텍스트 크로스링커 & 콘텐츠/벡터/실사 보강 감수 엔진
 │   │   ├── gemini-model-resolver.service.ts # Gemini 텍스트·이미지·TTS 최신 모델 동적 자동 리졸버
 │   │   ├── pwa.service.ts # 결정론적 Service Worker 캐시 생성
-│   │   ├── google-drive.service.ts # 구글 드라이브 OAuth2 연동 및 문서 동기화
 │   │   ├── svg-audit.service.ts # 5중 루프 가드 & 도면 기하학 충돌 감사기
 │   │   ├── svg-design-auditor.service.ts # 기계공학 유클리드 좌표 공차 & 멀티모달 비전 감수기
 │   │   ├── svg-generator.service.ts # Gemini SVG 합성 및 폴백 생성기
@@ -117,7 +116,6 @@ primitive-survival/
 │   │   ├── sanitize.util.ts # HTML XSS 이스케이프 및 문자열 정제 유틸
 │   │   ├── svg-renderer.ts # 고해상도 SVG-to-PNG 렌더링 유틸
 │   │   └── protocol-timestamp.ts # Git 커밋 및 콘텐츠 해시 기반 타임스탬프 동기화 유틸
-│   ├── gdrive-sync.ts     # 구글 드라이브 문서 동기화 CLI 엔트리
 │   ├── render.ts          # 상세 교범 정규 웹 페이지 컴파일러
 │   ├── render-index.ts    # 5개 페이징 메인 피드 인덱스 컴파일러
 │   └── pipeline.ts        # 엔드투엔드 정적 사이트 컴파일 파이프라인
@@ -126,7 +124,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 16대 테스트 스위트 (203/203 PASS)
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (196/196 PASS)
 ```
 
 ---
@@ -155,7 +153,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(203개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 · FOUC 차단 · PR-01 Option A+ 도면/범례 검증, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 11) 구글 드라이브 문서 동기화 엔진, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 · 카테고리 필터 칩 · 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성, 22) Firebase RTDB 2FA 댓글·1단 대댓글·무과금 1-클릭 번역·스팸 차단 및 보안 규칙 무결성)*
+*(196개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 · FOUC 차단 · PR-01 Option A+ 도면/범례 검증, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 · 카테고리 필터 칩 · 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성, 22) Firebase RTDB 2FA 댓글·1단 대댓글·무과금 1-클릭 번역·스팸 차단 및 보안 규칙 무결성)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash
@@ -163,19 +161,13 @@ npm run sync:timestamps
 ```
 *(Git 커밋 이력, 실질 콘텐츠 해시(SHA-256), 파일시스템 변경을 종합하여 마스터 JSON 및 6개국어 번역 파일에 `updatedAt` 및 `contentHash`를 물리적으로 동기화 영속화)*
 
-### 6. 구글 드라이브 클라우드 문서 동기화
-```bash
-npm run gdrive:sync
-```
-*(프로젝트 스펙, README, 차기 주제 프롬프트, implementation_plan 전체를 구글 드라이브 공유 폴더에 원클릭 자동 갱신)*
-
 ---
 
 ## 🤖 전담 자동화 스킬 (Antigravity Skills)
 
 - **`publish-protocol`**: 신규 생존 가이드 기획부터 초등학생 눈높이 3~6단계 본문 작성, **방안 A+ 넘버링 WebP 도면(`image-generator` + `read_file` 시각 QA + `cwebp`) 및 3D 실물 에셋**, 7개국어 원형 HTML 범례(`data-svg-legend-*`) & 6대 글로벌 언어 현지화, 5대 품질 심사, 정적 빌드, 그리고 **마지막 `sync` 스킬 자동 호출**까지 원스톱으로 완결하는 통합 발행 스킬.
-- **`survival-multilingual-translator`**: `en`, `ja`, `es`, `de`, `pt`, `zh-TW` 전문 통역 에이전트 병렬 가동 및 도면 범례 `svgLabels` 1:1 인덱스·쇼츠 대본 현지화 스킬.
-- **`sync`**: 코드베이스 변경 사항과 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`, `implementation_plan.md`) 간의 불일치를 전수 검사하고 구글 드라이브 클라우드로 즉시 동기화하는 감사 스킬.
+- **`survival-multilingual-translator`**: `en`, `ja`, `es`, `de`, `pt`, `zh-TW` 전문 통역 에이전트 병렬 가동 및 도면 범례 `diagramLegend` 1:1 인덱스·쇼츠 대본 현지화 스킬.
+- **`sync`**: 코드베이스 변경 사항과 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`) 간의 불일치를 전수 검사하고 최신 상태로 동기화하는 감사 스킬.
 
 
 ---
