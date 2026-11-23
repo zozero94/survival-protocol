@@ -33,6 +33,14 @@
       "description": "1. **Cruzar forquilhas em Y**: Apoie dois galhos em forquilha para formar um bipé com **altura de 0.8~1.0m**.\n2. **Assentar viga mestra**: Coloque uma ponta do tronco de **3.0~3.5m** na forquilha e ancore a outra extremidade firmemente no solo contra o vento.\n3. **Ajustar espaço ao corpo**: Mantenha a largura interna estreita, deixando apenas **um punho de folga (cerca de 10cm)** ao lado dos ombros.",
       "actionNote": "> Regra do volume mínimo: Se o interior for espaçoso, o calor corporal não consegue aquecer o ar. Mantenha o abrigo justo como um caixão para reter o calor.",
       "svgFileName": "pr03-step-01.svg",
+      "imageFileName": "pr03-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // DEBRIS HUT STEP 1: BIPÉ EM Y TRAVADO E VIGA MESTRA",
+        "Encaixar dois troncos resistentes em Y no topo formando entrada de 80cm–1m de altura",
+        "Apoiar a viga central de 3,0–3,5m na forquilha e firmar a ponta traseira no chão contra o vento",
+        "Manter o espaço interno justo ao corpo com apenas um punho (~10cm) de folga em cada ombro",
+        "[PASSO 1] Volume estreito como saco de dormir permite aquecer o ar só com calor corporal (~100W)"
+      ],
       "svgLabels": [
         "CRITICAL VOLUME RULE [VOLUME INTERNO]:",
         "Padrão caixão: máx. +10cm (1 punho) de folga corporal",
@@ -54,6 +62,14 @@
       "description": "1. **Dispor costelas a 45 graus**: Apoie 40~50 galhos em ambos os lados da viga em **ângulo de 45°~60°** bem próximos.\n2. **Adicionar colchão de folhas de 40cm**: Forre o solo interior com folhas secas até a altura do joelho (**espessura mínima de 40cm**).\n3. **Verificar espessura comprimida**: Deite-se sobre o leito; confirme que, sob o peso do corpo, restam pelo menos **20cm de colchão isolante** sobre a terra.",
       "actionNote": "> Escudo contra condução: A terra fria rouba calor 20 vezes mais rápido que o ar. O colchão de folhas no chão é mais importante que o teto.",
       "svgFileName": "pr03-step-02.svg",
+      "imageFileName": "pr03-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // DEBRIS HUT STEP 2: COSTELAS A 45° E COLCHÃO GROSSO DE FOLHAS",
+        "Corte transversal da viga mestra central sustentando o ápice da estrutura",
+        "Apoiar 40–50 galhos retos bem juntos dos dois lados em inclinação íngreme de 45–60°",
+        "Forrar o chão com 40cm+ de folhas bem secas para manter 20cm+ mesmo após compactadas",
+        "[PASSO 2] O solo frio rouba calor 20x mais rápido que o ar — isolar o chão é vital"
+      ],
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [ISOLAMENTO DO PISO]:",
         "Bloquear condução do solo: manter ≥15~20cm comprimido",
@@ -74,6 +90,15 @@
       "description": "1. **Entrelaçar base de gravetos**: Coloque gravetos finos sobre as costelas para evitar que as folhas caiam no interior.\n2. **Empilhar 60~90cm de folhas secas**: Acumule folhas secas de baixo até a cumeeira na **espessura de um braço inteiro (60~90cm)**.\n3. **Prender com galhos de contrapeso**: Disponha galhos pesados em grade por cima para evitar que o vento espalhe as folhas.\n4. **Vedar entrada com folhas**: Entre no abrigo e feche a entrada com um fardo denso de folhas secas para bloquear todo vento frio externo.",
       "actionNote": "> Apenas folhas bem secas: Usar folhas úmidas rouba calor por evaporação e gela o corpo. Use exclusivamente folhagem completamente seca.",
       "svgFileName": "pr03-step-03.svg",
+      "imageFileName": "pr03-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // DEBRIS HUT STEP 3: CAMADA DE FOLHAS, GALHOS PESADOS E TAMPÃO",
+        "Entrelaçar gravetos finos sobre as costelas para impedir que as folhas caiam para dentro",
+        "Empilhar folhas totalmente secas com espessura de um braço (60–90cm) em declive que escoa chuva",
+        "Cobrir o exterior com galhos pesados em grade para impedir que ventos fortes levem as folhas",
+        "Entrar e vedar a pequena abertura com um feixe compacto de folhas secas como tampão",
+        "[PASSO 3] Folhas molhadas roubam calor ao evaporar — use somente folhas bem secas"
+      ],
       "svgLabels": [
         "INSULATION & SEALING [PAREDE TÉRMICA]:",
         "60~90cm de folhas secas + tampão de entrada vedado",
@@ -96,10 +121,20 @@
   },
   "outcome": {
     "svgFileName": "pr03-outcome.svg",
+    "imageFileName": "pr03-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-03 OUTCOME // A-FRAME DEBRIS HUT THERMAL INSULATION SHELTER",
+      "Passo 1 Estrutura: Bipé em Y travado sustentando viga mestra de 3,0–3,5m fixada ao solo",
+      "Passo 2 Paredes: 40–50 galhos laterais a 45–60° cobertos com trama fina de gravetos",
+      "Isolamento do piso: Colchão de 40cm+ (20cm comprimido) de folhas secas bloqueando frio do chão",
+      "Cobertura térmica: Camada íngreme de 60–90cm de folhas secas repelindo chuva e retendo calor",
+      "Vedação final: Grade externa de galhos pesados contra vento mais tampão seco na entrada",
+      "[VERIFICAÇÃO FINAL] Zero folha úmida · Folga de 1 punho · Piso 20cm+ e teto 60cm+ de espessura"
+    ],
     "title": "Abrigo Térmico Debris Hut em A Concluído",
     "description": "Uma viga pesada de 2.5m e armação de costelas a 45° cobertas por 1 metro de folhas secas compactadas e galhos, retendo o calor corporal em temperaturas negativas sem necessidade de fogo."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-11-09T10:08:31Z",
-  "contentHash": "fb417a686fed1bca"
+  "updatedAt": "2026-11-23T23:22:30.423Z",
+  "contentHash": "f2d89a9b5dfa7b37"
 }

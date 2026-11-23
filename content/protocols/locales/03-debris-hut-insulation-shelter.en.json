@@ -33,6 +33,14 @@
       "description": "1. **Interlock Y-Bipod Posts**: Stand two sturdy Y-forked branches facing each other to create a stable tripod apex **0.8–1.0m above ground**.\n2. **Anchor Ridgepole Spine**: Seat one end of the **3.0–3.5m hardwood ridgepole** securely into the bipod fork and ground the tail end firmly into the windward soil.\n3. **Verify Coffin Sizing**: Ensure the interior width leaves only **one fist of clearance (about 10cm)** around your shoulders when lying down.",
       "actionNote": "> Volume Minimization Rule: An oversized interior cannot be heated by human body warmth. Keep the interior strictly form-fitting to trap thermal air pockets.",
       "svgFileName": "pr03-step-01.svg",
+      "imageFileName": "pr03-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // DEBRIS HUT STEP 1: INTERLOCKING Y-FORK BIPOD & RIDGEPOLE",
+        "Interlock two stout Y-forked wooden posts at the top to form an 80cm–1m entrance bipod",
+        "Seat a 3.0–3.5m center ridgepole in the Y-cradle and anchor its tail into the windward ground",
+        "Keep interior width body-tight with only one fist (~10cm) of clearance on each shoulder side",
+        "[STEP 1] A tight sleeping-bag volume lets human body heat (~100W) warm the trapped air"
+      ],
       "svgLabels": [
         "CRITICAL VOLUME RULE [INTERIOR SPEC]:",
         "Strict Coffin Spec: max +10cm (1 fist) body clearance",
@@ -54,6 +62,14 @@
       "description": "1. **Lay 45-Degree Rib Lattice**: Lean 40–50 rib sticks against both sides of the spine at a steep **45°–60° angle** like closely spaced ribs.\n2. **Pack 40cm Dry Leaf Mattress**: Pile bone-dry leaves, pine needles, and dry grass over the bare ground to **at least 40cm depth**.\n3. **Verify Compressed Thickness**: Lie down to compress the bed; verify that **at least 20cm of dead-air insulation** remains between your back and the soil.",
       "actionNote": "> Conductive Heat Shield: Bare frozen soil conducts body heat away 20 times faster than air. A thick dry mattress is even more vital than the roof.",
       "svgFileName": "pr03-step-02.svg",
+      "imageFileName": "pr03-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // DEBRIS HUT STEP 2: 45° RIB POLES & THICK DRY LEAF BED",
+        "Center ridgepole log cross-section anchoring the apex of the shelter frame",
+        "Lean 40–50 straight rib branches tightly along both sides at a steep 45–60° angle",
+        "Pack knee-deep (40cm+) bone-dry leaves on the floor so compressed bedding stays 20cm+ thick",
+        "[STEP 2] Cold ground drains body heat 20x faster than air — thick floor bedding is critical"
+      ],
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [FLOOR INSULATION]:",
         "Block ground conduction: keep ≥15~20cm compressed bed",
@@ -74,6 +90,15 @@
       "description": "1. **Weave Twig Underlay**: Cover rib poles with fine dry twigs to prevent leaves from falling through into the sleeping space.\n2. **Bank 60–90cm Debris Wall**: Mound dry leaves from the ground up to the ridgepole to a **depth of 60–90cm (full arm's length)**.\n3. **Weight Down with Armor Branches**: Lay heavy dead branches across the mound in a crosshatch pattern to pin down leaves against storm gusts.\n4. **Seal Entrance with Leaf Plug**: Crawl inside feet first and pull a dense bundle of dry leaves into the doorway to block all outside drafts.",
       "actionNote": "> Bone-Dry Rule: Mixing wet leaves ruins insulation and causes severe evaporative chilling. Use exclusively crisp, dry forest floor debris.",
       "svgFileName": "pr03-step-03.svg",
+      "imageFileName": "pr03-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // DEBRIS HUT STEP 3: LEAF MOUNDING, WINDBREAK BRANCHES & PLUG",
+        "Weave fine dry twigs across the rib poles to retain leaves and stop sifting inside",
+        "Mound bone-dry leaves arm-length thick (60–90cm) up the steep 45°+ slope to shed rain",
+        "Lay heavy outer branches in a criss-cross lattice to hold leaves down in strong winds",
+        "Crawl inside and seal the low narrow entrance tightly with a dense dry-leaf plug bundle",
+        "[STEP 3] Wet leaves steal body heat through evaporation — use strictly bone-dry debris only"
+      ],
       "svgLabels": [
         "INSULATION & SEALING [WALL SPEC]:",
         "60~90cm dry leaf mound + full entrance plug seal",
@@ -96,10 +121,20 @@
   },
   "outcome": {
     "svgFileName": "pr03-outcome.svg",
+    "imageFileName": "pr03-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-03 OUTCOME // A-FRAME DEBRIS HUT THERMAL INSULATION SHELTER",
+      "Step 1 Frame: Interlocked Y-fork bipod supporting a 3.0–3.5m windward-anchored ridgepole",
+      "Step 2 Ribs: 40–50 closely spaced 45–60° side rib poles topped with fine retainer twigs",
+      "Floor Bed: 40cm+ fluffed (20cm+ compressed) dry leaf mattress blocking ground cold conduction",
+      "Roof Mound: Steeply pitched 60–90cm bone-dry leaf insulation shedding rain naturally",
+      "Wind Seal: Heavy outer lattice branches anchoring debris plus dry-leaf entrance door plug",
+      "[FINAL CHECK] Zero wet leaves · Fist-wide shoulder fit · 20cm+ floor bed & 60cm+ roof depth"
+    ],
     "title": "Completed A-Frame Debris Hut Thermal Shelter",
     "description": "A 2.5m heavy ridgepole and 45° rib frame blanketed by 1 meter of compressed dry leaves and thatch branches, trapping body heat down to sub-zero temperatures without fire."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-11-09T10:08:31Z",
-  "contentHash": "fb417a686fed1bca"
+  "updatedAt": "2026-11-23T23:22:30.423Z",
+  "contentHash": "f2d89a9b5dfa7b37"
 }

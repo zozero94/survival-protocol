@@ -33,6 +33,14 @@
       "description": "1. **Cruzar postes en Y**: Enfrente dos ramas en horquilla para formar un bípode a una **altura de 0.8~1.0m**.\n2. **Apoyar viga cumbrera**: Apoye un extremo del tronco de **3.0~3.5m** en la horquilla y ancle el otro extremo firmemente al suelo contra el viento.\n3. **Ajustar tamaño al cuerpo**: Deje solo **un puño de espacio libre (unos 10cm)** a los lados de los hombros para que el refugio sea estrecho.",
       "actionNote": "> Regla de espacio mínimo: Si el interior es amplio, el calor corporal no alcanza para calentar el aire. Mantenerlo ajustado como un ataúd retiene el calor.",
       "svgFileName": "pr03-step-01.svg",
+      "imageFileName": "pr03-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // DEBRIS HUT STEP 1: BÍPODE EN Y ENCAJADO Y VIGA CUMBRERA",
+        "Encajar dos postes robustos con horquilla en Y arriba formando una entrada de 80cm–1m",
+        "Apoyar la viga cumbrera de 3.0–3.5m en la horquilla y anclar la cola al suelo de barlovento",
+        "Mantener el ancho interior ajustado al cuerpo con solo un puño (~10cm) libre por hombro",
+        "[PASO 1] Un volumen estrecho tipo saco permite calentar el aire solo con calor corporal (~100W)"
+      ],
       "svgLabels": [
         "CRITICAL VOLUME RULE [VOLUMEN INTERIOR]:",
         "Espacio tipo ataúd: máx. +10cm (1 puño) de holgura",
@@ -54,6 +62,14 @@
       "description": "1. **Disponer costillas a 45 grados**: Apoye 40~50 ramas a ambos lados de la viga en un **ángulo de 45°~60°** bien juntas.\n2. **Colocar colchón aislante de 40cm**: Llene el suelo interior con hojas secas hasta la altura de la rodilla (**espesor mínimo de 40cm**).\n3. **Comprobar espesor comprimido**: Acuéstese encima; verifique que al comprimirse con el peso queden al menos **20cm de colchón aislante** sobre la tierra.",
       "actionNote": "> Escudo contra la conducción: La tierra fría roba calor 20 veces más rápido que el aire. El colchón del suelo es más importante que el propio techo.",
       "svgFileName": "pr03-step-02.svg",
+      "imageFileName": "pr03-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // DEBRIS HUT STEP 2: COSTILLAS A 45° Y COLCHÓN GRUESO DE HOJAS",
+        "Sección transversal de la viga cumbrera central sosteniendo el vértice del marco",
+        "Apoyar 40–50 ramas rectas apretadas a ambos lados en pendiente empinada de 45–60°",
+        "Colocar 40cm+ de hojas secas en el suelo para conservar al menos 20cm tras comprimirse",
+        "[PASO 2] El suelo frío roba calor 20 veces más rápido que el aire: el colchón es vital"
+      ],
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [AISLAMIENTO BASAL]:",
         "Bloquear conducción: mantener ≥15~20cm comprimido",
@@ -74,6 +90,15 @@
       "description": "1. **Tejer base de ramitas**: Coloque ramas finas sobre las costillas para evitar que las hojas caigan al interior.\n2. **Montículo de 60~90cm de hojas**: Apile hojas secas de abajo hacia arriba hasta alcanzar **60~90cm de grosor (la longitud del brazo)**.\n3. **Fijar con ramas pesadas**: Disponga ramas pesadas enrejadas por encima para evitar que el viento vuele las hojas.\n4. **Taponar la entrada con hojas**: Métase dentro y cierre la entrada con un fardo espeso de hojas secas para bloquear todo viento frío exterior.",
       "actionNote": "> Solo hojas bien secas: Usar hojas húmedas roba calor por evaporación y enfría el cuerpo. Asegúrese de que las hojas estén completamente secas.",
       "svgFileName": "pr03-step-03.svg",
+      "imageFileName": "pr03-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // DEBRIS HUT STEP 3: MURO DE HOJAS, RAMAS CORTAVIENTO Y TAPÓN",
+        "Entrelazar ramitas finas secas sobre las costillas para retener las hojas sin que caigan",
+        "Apilar hojas totalmente secas con grosor de un brazo (60–90cm) en pendiente que evacua lluvia",
+        "Colocar ramas pesadas en rejilla exterior para evitar que el viento fuerte vuele las hojas",
+        "Entrar y sellar la abertura estrecha con un gran tapón compacto de hojas secas",
+        "[PASO 3] Las hojas húmedas enfrían por evaporación: usar estrictamente hojas bien secas"
+      ],
       "svgLabels": [
         "INSULATION & SEALING [ESPEC. DE MURO]:",
         "Muro de hojas de 60~90cm + tapón de entrada sellado",
@@ -96,10 +121,20 @@
   },
   "outcome": {
     "svgFileName": "pr03-outcome.svg",
+    "imageFileName": "pr03-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-03 OUTCOME // A-FRAME DEBRIS HUT THERMAL INSULATION SHELTER",
+      "Paso 1 Marco: Bípode en Y encajado con viga cumbrera de 3.0–3.5m anclada contra el viento",
+      "Paso 2 Costillas: 40–50 ramas laterales a 45–60° cubiertas con malla fina de ramitas",
+      "Base térmica: Colchón de 40cm+ (20cm comprimido) de hojas secas bloqueando frío del suelo",
+      "Techo aislante: Capa empinada de 60–90cm de hojas secas que repele lluvia y guarda calor",
+      "Cierre final: Rejilla exterior de ramas pesadas contra ráfagas más tapón seco en la entrada",
+      "[CONTROL FINAL] Cero hojas húmedas · Espacio de 1 puño por lado · Base 20cm+ y techo 60cm+"
+    ],
     "title": "Refugio Térmico Debris Hut en A Completado",
     "description": "Una viga pesada de 2.5m y un armazón de costillas a 45° cubiertos por 1 metro de hojas secas comprimidas y ramas, reteniendo el calor corporal a temperaturas bajo cero sin necesidad de fuego."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-11-09T10:08:31Z",
-  "contentHash": "fb417a686fed1bca"
+  "updatedAt": "2026-11-23T23:22:30.423Z",
+  "contentHash": "f2d89a9b5dfa7b37"
 }

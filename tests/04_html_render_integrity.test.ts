@@ -108,5 +108,52 @@ describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫�
       });
     }
   });
+
+  const assertOptionAProtocolIntegrity = (
+    protocolCode: string,
+    htmlFileName: string,
+    slug: string,
+    prefix: string,
+    stepCount: number,
+    expectedOutcomeLegendLen: number
+  ) => {
+    const html = fs.readFileSync(path.resolve(publicDir, htmlFileName), 'utf-8');
+    const outcomeWebp = `${prefix}-outcome-diagram.webp`;
+    assert.ok(html.includes(`/images/${outcomeWebp}`), `${protocolCode}에 Option A+ Outcome WebP 경로가 포함되어야 함`);
+    assert.ok(html.includes('TECHNICAL DIAGRAM'), `${protocolCode} 스텝 배지가 TECHNICAL DIAGRAM이어야 함`);
+    assert.ok(html.includes('data-svg-legend-outcome-idx="0"'), `${protocolCode} Outcome 하단에 HTML 다국어 범례 컨테이너가 렌더링되어야 함`);
+    assert.ok(html.includes(`${protocolCode} OUTCOME //`), `${protocolCode} Outcome 범례 헤더가 렌더링되어야 함`);
+    assert.ok(fs.existsSync(path.resolve(publicDir, `images/${outcomeWebp}`)), `public/images/${outcomeWebp} 파일이 복사되어야 함`);
+    for (let i = 0; i < stepCount; i++) {
+      const file = `${prefix}-step-0${i + 1}-diagram.webp`;
+      assert.ok(html.includes(`/images/${file}`), `${protocolCode} Step 0${i + 1} Option A+ WebP 경로가 포함되어야 함`);
+      assert.ok(html.includes(`data-svg-legend-step="${i}"`), `${protocolCode} Step 0${i + 1} HTML 다국어 범례 컨테이너가 렌더링되어야 함`);
+      assert.ok(fs.existsSync(path.resolve(publicDir, `images/${file}`)), `public/images/${file} 파일이 복사되어야 함`);
+    }
+
+    const protocolsDir = path.resolve(__dirname, '../content/protocols');
+    const koProto = JSON.parse(fs.readFileSync(path.join(protocolsDir, `${slug}.json`), 'utf-8')) as Protocol;
+    assert.strictEqual(koProto.outcome?.diagramLegend?.length, expectedOutcomeLegendLen, `${protocolCode} ko outcome.diagramLegend 길이는 ${expectedOutcomeLegendLen}이어야 함`);
+    for (const lang of ['en', 'ja', 'es', 'de', 'pt', 'zh-TW']) {
+      const locProto = JSON.parse(fs.readFileSync(path.join(protocolsDir, 'locales', `${slug}.${lang}.json`), 'utf-8')) as Protocol;
+      assert.strictEqual(locProto.outcome?.imageFileName, outcomeWebp, `${protocolCode} ${lang} outcome.imageFileName 불일치`);
+      assert.strictEqual(locProto.outcome?.diagramLegend?.length, expectedOutcomeLegendLen, `${protocolCode} ${lang} outcome.diagramLegend 길이 불일치`);
+      assert.equal(/[가-힣]/.test((locProto.outcome?.diagramLegend || []).join(' ')), false, `${protocolCode} ${lang} outcome.diagramLegend에 미번역 한글 잔존`);
+      koProto.steps.forEach((step, idx) => {
+        const locStep = locProto.steps[idx];
+        assert.strictEqual(locStep.imageFileName, step.imageFileName, `${protocolCode} ${lang} Step ${idx + 1} imageFileName 불일치`);
+        assert.strictEqual(locStep.diagramLegend?.length, step.diagramLegend?.length, `${protocolCode} ${lang} Step ${idx + 1} diagramLegend 길이 불일치`);
+        assert.equal(/[가-힣]/.test((locStep.diagramLegend || []).join(' ')), false, `${protocolCode} ${lang} Step ${idx + 1} diagramLegend에 미번역 한글 잔존`);
+      });
+    }
+  };
+
+  test('Option A+ 넘버링 도면(PR-03 전체 4종: Step 01~03 + Outcome)의 WebP 도면, 7개국어 범례 동기화 및 HTML 렌더링이 무결해야 한다', () => {
+    assertOptionAProtocolIntegrity('PR-03', 'protocol-03.html', '03-debris-hut-insulation-shelter', 'pr03', 3, 7);
+  });
+
+  test('Option A+ 넘버링 도면(PR-04 전체 4종: Step 01~03 + Outcome)의 WebP 도면, 7개국어 범례 동기화 및 HTML 렌더링이 무결해야 한다', () => {
+    assertOptionAProtocolIntegrity('PR-04', 'protocol-04.html', '04-stone-axe-making', 'pr04', 3, 7);
+  });
 });
 

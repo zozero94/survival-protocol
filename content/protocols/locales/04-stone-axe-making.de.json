@@ -33,6 +33,14 @@
       "description": "1. **Amboss-Stein stabilisieren**: Platzieren Sie einen Flussstein von **Breite 15–20cm** wackelfrei flach auf dem Boden.\n2. **Schlagpunkt anvisieren**: Zielen Sie exakt auf **1–2cm einwärts** vom äußeren Rand der Kante.\n3. **45-Grad-Winkelschlag**: Schlagen Sie mit dem runden Schlagstein kraftvoll in einem präzisen **45-Grad-Winkel** auf die Kante.\n4. **Klingenabschlag auslösen**: Spalten Sie eine handflächengroße Steinklinge mit rasiermesserscharfer Schneide und **1–2cm Dicke** ab.",
       "actionNote": "> Schlagwinkel-Regel: Ein frontaler 90-Grad-Schlag in die Mitte zertrümmert den Stein zu nutzlosem Kies. Schlagen Sie stets die Kante im 45-Grad-Winkel für eine messerscharfe Schneide an.",
       "svgFileName": "pr04-step-01.svg",
+      "imageFileName": "pr04-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // STONE AXE STEP 1: 45°-SCHRÄGSCHLAG & SCHARFER KLINGENABSCHLAG",
+        "Einen runden, schweren Schlagstein im steilen 45-Grad-Winkel kräftig nach unten führen",
+        "Ein Fingerglied (1–2cm) innerhalb der Kante des fest aufliegenden 15–20cm Flusssteins treffen",
+        "Handgroße, 1–2cm dicke Steinklinge mit muschelförmigem (konchoidalem) Rasierklingen-Rand abspalten",
+        "[SCHRITT 1] Ein 90°-Schlag in die Mitte zerschmettert den Stein — immer die Kante bei 45° treffen"
+      ],
       "svgLabels": [
         "1. Runder Schlagstein",
         "2. Kante mit 45° treffen",
@@ -52,6 +60,15 @@
       "description": "1. **Riss-Stopp-Manschette binden**: Binden Sie **10cm unter** dem Stielende zuerst eine feste Schnur, um unkontrolliertes Aufspalten zu stoppen.\n2. **Längsspalt einschneiden**: Spalten Sie die Spitze des Hartholzstiels mit einem scharfen Stein auf eine **Tiefe von 5–7cm** senkrecht ein.\n3. **Klingenrücken tief einpassen**: Schieben Sie den dicken Rücken der Steinklinge vollständig und fest in den vorbereiteten Spalt.\n4. **Harz-Kohle-Matrix einfüllen**: Mischen Sie geschmolzenes Kiefernharz mit feinem **Holzkohlepulver im Verhältnis 1:1** und verpressen Sie die Masse in alle Hohlräume.",
       "actionNote": "> Komposit-Mischungsregel: Reines Kiefernharz wird nach dem Abkühlen glashart und spröde. Der Zusatz von Kohlepulver wirkt elastifizierend und erzeugt ein unzerbrechliches Natur-Epoxid. ([Kiefernharz-Kleber (PR-10)](/protocol-10) / [Holzkohlenmeiler (PR-09)](/protocol-09))",
       "svgFileName": "pr04-step-02.svg",
+      "imageFileName": "pr04-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // STONE AXE STEP 2: SPALTSTOPP, KLINGENSITZ & HARZ-KOHLE-KITT",
+        "Den Stiel 10cm unterhalb der Spitze mit Naturseil straff abbinden gegen Weiterreißen",
+        "Das obere Ende des harten Holzstiels (Eiche/Esche) senkrecht 5–7cm tief aufspalten",
+        "Den dicken Rücken der Steinklinge bis zum Anschlag einpressen, Schneide nach außen",
+        "Geschmolzenes Kiefernharz 1:1 mit feinem Holzkohlepulver in alle Spalthohlräume füllen",
+        "[SCHRITT 2] Reines Harz splittert beim Schlag — Kohlepulver macht es zum stoßfesten Verbundkitt"
+      ],
       "svgLabels": [
         "1. Klinge von oben einsetzen",
         "Scharfe Schneide",
@@ -72,6 +89,14 @@
       "description": "1. **Bastfaser-Wässerung**: Weichen Sie elastische Ranken-Innenrinde gründlich in Wasser ein, um maximale Faserdehnung zu erzielen.\n2. **Diagonale X-Kreuzwicklung**: Wickeln Sie die nasse Rinde diagonal im X-Muster über Klinge und Stiel für **mindestens 10 straffe Touren**.\n3. **Halsmanschetten-Arretierung**: Wickeln Sie das Faserende horizontal um den Halsansatz und sichern Sie es mit einem Zugknoten.\n4. **Belüftete Schattentrocknung**: Lassen Sie die Axt an einem schattigen, windigen Ort vollständig aushärten, um maximale Schrumpfspannung zu erzielen.",
       "actionNote": "> Schattentrocknungs-Prinzip: Niemals direkt am Lagerfeuer erhitzen, da Flammenhitze die Fasern versprödet. Bei langsamer Schattentrocknung schrumpft die Ranke um 30% und klemmt die Klinge wie Stahldraht ein. ([Wildseil (PR-05)](/protocol-05))",
       "svgFileName": "pr04-step-03.svg",
+      "imageFileName": "pr04-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // STONE AXE STEP 3: NASSE RANKENRINDEN-X-BINDUNG & SCHATTENTROCKNUNG",
+        "Eingeweichte Bastfasern mindestens 10-mal straff diagonal im X-Muster um Klinge und Kopf wickeln",
+        "Restliche Faser dicht waagerecht unterhalb des Kopfes um den Stielhals zur Sicherung binden",
+        "Im luftigen Schatten trocknen lassen, sodass die Fasern 30% schrumpfen und alles starr verspannen",
+        "[SCHRITT 3] Trocknen am Feuer macht Fasern brüchig — nur Schattentrocknung bringt volle Spannkraft"
+      ],
       "svgLabels": [
         "1. Nasse Ranke X-Wicklung",
         "2. Freie Schneidkante",
@@ -93,10 +118,20 @@
   },
   "outcome": {
     "svgFileName": "pr04-outcome.svg",
+    "imageFileName": "pr04-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-04 OUTCOME // PRIMITIVE CHIPPED STONE AXE WITH RESIN & VINE LASHING",
+      "Schritt 1 Schneide: Durch 45°-Kantenschlag abgespaltene, 1–2cm dicke scharfe Steinklinge",
+      "Schritt 2 Spalt & Harz: Klingenrücken im 5–7cm Holzspalt mit 1:1 Harz-Kohle-Kitt fixiert",
+      "Schritt 3 Kopf-X-Bindung: 10+ nasse Bast-Diagonalwicklungen verklammern Klinge und Holzbacken",
+      "Halsbindung & Trocknung: Straffe Querwicklungen am Hals im Schatten um 30% festgeschrumpft",
+      "Hartholzstiel: Unterarmlanger (40–50cm, Ø3,5–4cm) robuster Eichen- oder Eschenstiel",
+      "[ENDKONTROLLE] 45°-Abschlag · 1:1 Harz-Kohle-Puffer · Schattengehärtete X-Bindung mit null Spiel"
+    ],
     "title": "Vollendete primitive Steinaxt mit Ast- und Harzbindung",
     "description": "Eine beidseitig geschlagene Feuersteinklinge, tief im gespaltenen Eichenstiel verankert, mit X-Kreuz-Lianenbindung verschnürt und mit Kiefernharz versiegelt."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "5814a0aec477d2e6"
+  "updatedAt": "2026-11-23T23:24:45.755Z",
+  "contentHash": "f7c32039f1fe4ddc"
 }

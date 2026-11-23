@@ -33,6 +33,14 @@
       "description": "1. **Base Anvil Stabilization**: Brace a large river stone of **width 15–20cm** firmly flat on the ground so it cannot wobble.\n2. **Target Impact Calibration**: Aim your strike point precisely at **1–2cm inside** the outer rim edge.\n3. **45-Degree Bevel Strike**: Swing your round hammerstone forcefully down at an exact **45-degree angle** against the outer margin.\n4. **Sharp Flake Selection**: Detach a palm-sized stone blade with a razor-sharp cutting edge and a thickness of **1–2cm**.",
       "actionNote": "> Striking Angle Rule: Hitting flat in the center at 90 degrees shatters the entire stone into useless pebbles. You must strike the edge at 45 degrees to flake off a razor-sharp blade.",
       "svgFileName": "pr04-step-01.svg",
+      "imageFileName": "pr04-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // STONE AXE STEP 1: 45° OBLIQUE STRIKE & SHARP BLADE FLAKING",
+        "Swing a smooth heavy rounded hammerstone downward along a sharp 45-degree oblique arc",
+        "Strike one finger-joint (1–2cm) inside the edge of a firmly seated 15–20cm river cobble",
+        "Shear off a palm-sized 1–2cm thick stone blade with a razor-sharp conchoidal fracture edge",
+        "[STEP 1] A 90° center blow shatters the core — always strike the outer edge at 45°"
+      ],
       "svgLabels": [
         "1. Round Hammerstone",
         "2. Strike Edge at 45°",
@@ -52,6 +60,15 @@
       "description": "1. **Anti-Split Collar Binding**: Tie cord tightly **10cm below** the handle top first to prevent uncontrolled splitting down the shaft.\n2. **Longitudinal Notch Carving**: Split the top of the dense hardwood handle vertically to create a notch of **depth 5–7cm**.\n3. **Deep Blade Seating**: Push the thick butt of the stone blade firmly and fully into the carved central slot.\n4. **Charcoal-Resin Matrix Packing**: Melt pine sap and mix with powdered **charcoal in a 1:1 ratio**, packing the molten adhesive into every gap.",
       "actionNote": "> Composite Mixing Rule: Pure pine resin cools brittle as glass and shatters on impact. Blending fine charcoal powder creates an impact-absorbing natural epoxy that never cracks. ([Pine Pitch Glue (PR-10)](/protocol-10) / [Oak Charcoal Kiln (PR-09)](/protocol-09))",
       "svgFileName": "pr04-step-02.svg",
+      "imageFileName": "pr04-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // STONE AXE STEP 2: STOP-WRAP, BLADE HAFTING & RESIN COMPOSITE",
+        "Bind the shaft tightly 10cm below the top with wild cordage to stop vertical splitting",
+        "Split the upper end of the sturdy hardwood handle (oak/ash) vertically 5–7cm deep",
+        "Wedge the thick butt of the chipped stone blade deeply into the cleft with cutting edge out",
+        "Pack molten pine resin mixed 1:1 with crushed oak charcoal powder into all socket gaps",
+        "[STEP 2] Pure resin shatters on impact — charcoal powder turns it into shock-absorbing epoxy"
+      ],
       "svgLabels": [
         "1. Push Blade Down In",
         "Sharp Cutting Edge",
@@ -72,6 +89,14 @@
       "description": "1. **Bast Fiber Hydration**: Soak flexible inner vine bark in water to maximize cellular elasticity.\n2. **Diagonal X-Lashing**: Criss-cross the wet bark diagonally around both stone blade and wooden haft for **at least 10 firm wraps**.\n3. **Lower Shaft Collar Lock**: Wrap the remaining fiber horizontally around the lower neck and cinch tight with a secure knot.\n4. **Ventilated Shade Cure**: Dry thoroughly in a breezy, shaded location away from direct sun to achieve maximum clamping force.",
       "actionNote": "> Shade Drying Principle: Never force-dry over campfire flames as heat burns and snaps the delicate plant fibers. Natural air-drying in the shade causes the vine to shrink by 30%, locking the blade like steel wire. ([Wild Cordage (PR-05)](/protocol-05))",
       "svgFileName": "pr04-step-03.svg",
+      "imageFileName": "pr04-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // STONE AXE STEP 3: WET VINE-BARK X-LASHING & SHADE SHRINK-DRY",
+        "Crisscross water-soaked kudzu inner bark in 10+ tight diagonal X-wraps over blade and head",
+        "Coil the remaining cord horizontally and tightly around the shaft neck beneath the head",
+        "Air-dry in breezy shade so the plant fibers shrink 30% and lock stone and wood into one unit",
+        "[STEP 3] Fire-drying makes fibers brittle and snap — slow shade curing maximizes lock tension"
+      ],
       "svgLabels": [
         "1. Wet Vine X-Lashing",
         "2. Exposed Sharp Edge",
@@ -93,10 +118,20 @@
   },
   "outcome": {
     "svgFileName": "pr04-outcome.svg",
+    "imageFileName": "pr04-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-04 OUTCOME // PRIMITIVE CHIPPED STONE AXE WITH RESIN & VINE LASHING",
+      "Step 1 Blade: Razor-sharp 1–2cm thick stone edge flaked cleanly at a 45° margin strike",
+      "Step 2 Socket & Resin: Stone heel wedged inside 5–7cm split cleft filled 1:1 with resin-charcoal",
+      "Step 3 Head X-Lashing: 10+ diagonal wet kudzu vine wraps locking blade and split wood cheeks",
+      "Neck Lock & Cure: Tight horizontal shaft coils dried in shade for 30% fiber-shrink grip",
+      "Hardwood Shaft: Forearm-length (40–50cm, Ø3.5–4cm) stout oak or ash handle built for chopping",
+      "[FINAL CHECK] 45° flaked blade · 1:1 resin-charcoal buffer · Shade-shrunk X-lashing with zero play"
+    ],
     "title": "Completed Primitive Chipped Stone Axe",
     "description": "A bifacially flaked flint blade seated deeply into a split oak haft, bound firmly with criss-cross vine lashing and sealed with pine pitch resin composite."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "5814a0aec477d2e6"
+  "updatedAt": "2026-11-23T23:24:45.755Z",
+  "contentHash": "f7c32039f1fe4ddc"
 }

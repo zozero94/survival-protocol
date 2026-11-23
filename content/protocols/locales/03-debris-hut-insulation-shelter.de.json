@@ -33,6 +33,14 @@
       "description": "1. **Y-Stützen verzahnen**: Stellen Sie zwei stabile Y-Gabelhölzer gegenüber auf, um ein Dreibein in **0.8~1.0m Höhe** zu bilden.\n2. **Firstbalken auflegen**: Legen Sie ein Ende des **3.0~3.5m langen Stammes** in die Gabel und verankern Sie das andere Ende fest im Boden gegen den Wind.\n3. **Körpernahes Sargmaß prüfen**: Halten Sie den Innenraum so eng, dass neben den Schultern nur **eine Faustbreite (ca. 10cm Spielraum)** frei bleibt.",
       "actionNote": "> Volumen-Minimierung: Ist der Raum zu groß, reicht die Körperwärme nicht aus, um die Luft zu erwärmen. Nur ein eng anliegender Raum hält warm wie ein Schlafsack.",
       "svgFileName": "pr03-step-01.svg",
+      "imageFileName": "pr03-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // DEBRIS HUT STEP 1: Y-GABELSTÜTZEN & FIRSTBALKEN-AUFLAGE",
+        "Zwei kräftige Y-Astgabeln oben verzahnen, um einen 80cm–1m hohen Eingang zu bilden",
+        "Den 3,0–3,5m langen Firstbalken in die Gabel legen und das Ende windseitig im Boden verankern",
+        "Innenbreite eng am Körper halten mit nur einer Faust (~10cm) Spielraum je Schulterseite",
+        "[SCHRITT 1] Nur enges Schlafsack-Volumen lässt sich allein durch Körperwärme (~100W) heizen"
+      ],
       "svgLabels": [
         "CRITICAL VOLUME RULE [INNENVOLUMEN]:",
         "Striktes Sargmaß: max. +10cm (1 Faust) Körperabstand",
@@ -54,6 +62,14 @@
       "description": "1. **Rippen im 45-Grad-Winkel aufstellen**: Lehnen Sie 40~50 Äste beidseitig im **Winkel von 45°~60°** lückenlos dicht an den Firstbalken.\n2. **40cm Bodenisolierung einbringen**: Füllen Sie den Boden kniehoch mit trockenem Laub (**mindestens 40cm Dicke**).\n3. **Komprimierte Stärke prüfen**: Legen Sie sich hinein; stellen Sie sicher, dass unter Körpergewicht noch **mindestens 20cm komprimierte Isolierschicht** verbleiben.",
       "actionNote": "> Kälteschutz von unten: Der gefrorene Erdboden leitet Wärme 20-mal schneller ab als Luft. Die Bodenmatte ist wichtiger als das Dach.",
       "svgFileName": "pr03-step-02.svg",
+      "imageFileName": "pr03-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // DEBRIS HUT STEP 2: 45°-RIPPENÄSTE & DICKE TROCKENLAUB-MATTE",
+        "Querschnitt des zentralen Firstbalkens als tragende Achse am Dachscheitel",
+        "40–50 gerade Rippenäste dicht an dicht im steilen 45–60°-Winkel beidseitig anlehnen",
+        "Knietiefe (40cm+) knochentrockene Laubschicht am Boden einfüllen, verdichtet noch 20cm+ dick",
+        "[SCHRITT 2] Kalter Boden entzieht 20x schneller Wärme als Luft — Bodenisolation rettet Leben"
+      ],
       "svgLabels": [
         "THERMAL CONDUCTION SHIELD [BODENISOLIERUNG]:",
         "Bodenkälte blockieren: ≥15~20cm komprimierte Matte",
@@ -74,6 +90,15 @@
       "description": "1. **Reisig-Unterlage flechten**: Flechten Sie feine Zweige über die Rippen, damit kein Laub in den Schlafraum rieselt.\n2. **60~90cm dicke Laubwand aufhäufen**: Schichten Sie trockenes Laub von unten bis zum First in **armlanger Dicke (60~90cm)** auf.\n3. **Mit schweren Ästen beschweren**: Legen Sie schwere Äste gitterförmig darüber, damit der Wind das Laub nicht verweht.\n4. **Eingang mit Laubpfropfen dichten**: Kriechen Sie hinein und verschließen Sie den Eingang mit einem dichten Laubballen gegen Kaltluft.",
       "actionNote": "> Nur trockenes Laub verwenden: Nasses Laub verdunstet Feuchtigkeit und entzieht dem Körper rasch Wärme. Verwenden Sie ausschließlich rascheltrockenes Laub.",
       "svgFileName": "pr03-step-03.svg",
+      "imageFileName": "pr03-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // DEBRIS HUT STEP 3: LAUBWAND, WINDSCHUTZÄSTE & EINGANGSPFROPFEN",
+        "Feines trockenes Reisig über die Rippenäste flechten, damit kein Laub nach innen rieselt",
+        "Knochentrockenes Laub armlang dick (60–90cm) steil aufschichten, damit Regen abfließt",
+        "Schwere Äste gitterförmig außen auflegen, um das Laub gegen starken Wind zu sichern",
+        "Nach dem Hineinkriechen den schmalen Eingang dicht mit einem Trockenlaub-Bündel verschließen",
+        "[SCHRITT 3] Nasses Laub entzieht durch Verdunstung Wärme — nur völlig trockenes Laub nutzen"
+      ],
       "svgLabels": [
         "INSULATION & SEALING [WANDAUFBAU]:",
         "60~90cm trockene Laubschicht + Eingangspfropfen",
@@ -96,10 +121,20 @@
   },
   "outcome": {
     "svgFileName": "pr03-outcome.svg",
+    "imageFileName": "pr03-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-03 OUTCOME // A-FRAME DEBRIS HUT THERMAL INSULATION SHELTER",
+      "Schritt 1 Gerüst: Verzahnte Y-Gabelstützen mit 3,0–3,5m Firstbalken windseitig am Boden verankert",
+      "Schritt 2 Wände: 40–50 dichte 45–60°-Rippenäste mit feiner Reisig-Rückhalteschicht",
+      "Bodenisolation: 40cm+ lockeres (20cm+ verdichtetes) Trockenlaub gegen Bodenkälte",
+      "Dachdämmung: Steil aufgeschichtete 60–90cm Trockenlaub-Schicht für Regenschutz und Wärme",
+      "Abschluss: Äußeres Schwerast-Gitter gegen Windabtrag plus dichter Laubpfropfen am Eingang",
+      "[ENDKONTROLLE] Null nasses Laub · 1 Faust Schulterspiel · Boden 20cm+ & Dach 60cm+ Schichtdicke"
+    ],
     "title": "Vollendeter A-Rahmen-Laubhütten-Isolierunterstand",
     "description": "Ein 2.5m schwerer Firstbalken und ein 45°-Rippenrahmen, bedeckt von 1 Meter komprimiertem trockenem Laub und Schutzästen, die Körperwärme bei Minustemperaturen ohne Feuer halten."
   },
   "createdAt": "2026-10-09T16:08:00.000Z",
-  "updatedAt": "2026-11-09T10:08:31Z",
-  "contentHash": "fb417a686fed1bca"
+  "updatedAt": "2026-11-23T23:22:30.423Z",
+  "contentHash": "f2d89a9b5dfa7b37"
 }

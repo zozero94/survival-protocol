@@ -33,6 +33,14 @@
       "description": "1. **Estabilização da bigorna de pedra**: Apoie firmemente no chão uma pedra de rio de **largura 15–20cm** de forma plana e sem folgas.\n2. **Calibração do ponto de impacto**: Mire com precisão a **1–2cm para dentro** da borda da margem externa.\n3. **Impacto chanfrado a 45 graus**: Desça a pedra redonda com vigor em um ângulo exato de **45 graus** contra a quina.\n4. **Seleção da lasca afiada**: Destaque uma lâmina de pedra do tamanho da palma com fio de navalha e **espessura de 1–2cm**.",
       "actionNote": "> Regra do ângulo de impacto: Bater a 90 graus no centro plano esmigalha a rocha em cascalho inútil. Bata obrigatoriamente na borda a 45 graus para obter uma lâmina afiadíssima.",
       "svgFileName": "pr04-step-01.svg",
+      "imageFileName": "pr04-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // STONE AXE STEP 1: GOLPE OBLÍQUO A 45° E LASCAMENTO DA LÂMINA",
+        "Descer uma pedra-martelo redonda e pesada em trajetória oblíqua firme de 45 graus",
+        "Acertar uma falange (1–2cm) para dentro da borda da pedra base de 15–20cm bem apoiada no chão",
+        "Destacar uma lâmina do tamanho da palma (1–2cm de espessura) com gume afiado de fratura concoidal",
+        "[PASSO 1] Bater no centro a 90° esfarela a pedra — golpeie sempre a borda a 45°"
+      ],
       "svgLabels": [
         "1. Pedra redonda (martelo)",
         "2. Bater na borda a 45°",
@@ -52,6 +60,15 @@
       "description": "1. **Amarração de contenção antirrachadura**: Amarre firmemente um cordão **10cm abaixo** da ponta do cabo para bloquear rachaduras descontroladas.\n2. **Corte da fenda longitudinal**: Com uma pedra afiada, abra uma ranhura vertical de **profundidade 5–7cm** no topo do galho.\n3. **Assentamento profundo da lâmina**: Empurre a parte traseira grossa da pedra até o fundo da fenda central.\n4. **Preenchimento com epóxi de resina**: Misture resina de pinheiro derretida com **carvão moído na proporção 1:1** e compacte a mistura em todas as folgas.",
       "actionNote": "> Regra da mistura composta: A resina pura fica quebradiça como vidro ao esfriar. O pó de carvão vegetal absorve impactos e forma um epóxi natural inquebrável. ([Cola de Resina (PR-10)](/protocol-10) / [Forno de Carvão (PR-09)](/protocol-09))",
       "svgFileName": "pr04-step-02.svg",
+      "imageFileName": "pr04-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // STONE AXE STEP 2: TRAVA DE CORDA, ENCAIXE DA LÂMINA E RESINA",
+        "Amarrar firme o cabo 10cm abaixo da ponta com corda natural para impedir que rache até embaixo",
+        "Rachar verticalmente 5–7cm no topo do cabo de madeira dura (carvalho ou freixo)",
+        "Encaixar a parte traseira grossa da lâmina até o fundo da fenda com o gume voltado para fora",
+        "Preencher toda folga da fenda com resina de pinheiro derretida misturada 1:1 com carvão em pó",
+        "[PASSO 2] Resina pura estilhaça no impacto — o pó de carvão cria um compósito resistente a choques"
+      ],
       "svgLabels": [
         "1. Encaixar lâmina por cima",
         "Fio de corte frontal",
@@ -72,6 +89,14 @@
       "description": "1. **Hidratação da fibra do líber**: Mergulhe em água a casca interna flexível de cipó para maximizar a elasticidade das fibras.\n2. **Amarração diagonal em X**: Cruze a fibra molhada em X sobre a lâmina e o cabo por **pelo menos 10 voltas bem tensas**.\n3. **Bloqueio do colar inferior**: Enrole o restante da fibra horizontalmente abaixo da junção e aperte com um nó de tração firme.\n4. **Secagem e cura à sombra**: Deixe secar totalmente em local ventilado e à sombra, longe do sol direto, para obter aperto máximo.",
       "actionNote": "> Princípio de secagem na sombra: Nunca seque perto das chamas da fogueira, pois o calor queima e rompe as fibras. A secagem natural na sombra encolhe o cipó em 30%, travando a lâmina como aço. ([Corda Selvagem (PR-05)](/protocol-05))",
       "svgFileName": "pr04-step-03.svg",
+      "imageFileName": "pr04-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // STONE AXE STEP 3: AMARRAÇÃO EM X COM CIPÓ ÚMIDO E SECAGEM À SOMBRA",
+        "Cruzar a entrecasca úmida do cipó em X por 10+ voltas bem tensionadas sobre lâmina e cabeça",
+        "Enrolar o restante em voltas horizontais apertadas no pescoço do cabo abaixo da lâmina",
+        "Secar à sombra ventilada para a fibra encolher 30% e fundir pedra e madeira numa peça só",
+        "[PASSO 3] Secar no fogo resseca e parte a fibra — somente a sombra gera tensão máxima"
+      ],
       "svgLabels": [
         "1. Amarração em X com cipó",
         "2. Fio afiado exposto",
@@ -93,10 +118,20 @@
   },
   "outcome": {
     "svgFileName": "pr04-outcome.svg",
+    "imageFileName": "pr04-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-04 OUTCOME // PRIMITIVE CHIPPED STONE AXE WITH RESIN & VINE LASHING",
+      "Passo 1 Lâmina: Gume afiado de pedra com 1–2cm de espessura lascado por golpe a 45°",
+      "Passo 2 Fenda e Resina: Base da lâmina na fenda de 5–7cm com pasta 1:1 de resina e carvão",
+      "Passo 3 Amarração em X: 10+ voltas diagonais de cipó úmido travando lâmina e cabeça",
+      "Pescoço e Secagem: Voltas horizontais no pescoço secas à sombra com contração de 30%",
+      "Cabo Firme: Madeira dura de 40–50cm (Ø3,5–4cm) de carvalho ou freixo pronta para cortar lenha",
+      "[VERIFICAÇÃO FINAL] Lâmina a 45° · Resina com carvão 1:1 · Amarração em X seca à sombra sem folga"
+    ],
     "title": "Machado Primitivo de Pedra e Cipó Concluído",
     "description": "Uma lâmina de sílex lascada bifacialmente encaixada em cabo de carvalho fendido, amarrada firmemente em X com cipós e selada com resina de pinho."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "5814a0aec477d2e6"
+  "updatedAt": "2026-11-23T23:24:45.755Z",
+  "contentHash": "f7c32039f1fe4ddc"
 }

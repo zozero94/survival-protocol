@@ -33,6 +33,14 @@
       "description": "1. **Fijación de piedra yunque**: Apoya en el suelo una piedra de río de **ancho 15–20cm** de forma plana para que no se mueva.\n2. **Calibración del punto de impacto**: Apunta con precisión a **1–2cm hacia adentro** del borde exterior de la roca.\n3. **Impacto en bisel a 45 grados**: Descarga la piedra martillo redonda con fuerza en un ángulo exacto de **45 grados** contra el borde.\n4. **Selección de lasca afilada**: Separa una hoja de piedra del tamaño de la palma con filo de navaja y un **grosor de 1–2cm**.",
       "actionNote": "> Regla de ángulo de impacto: Golpear el centro plano a 90 grados destroza la roca en grava inútil. Golpea obligatoriamente el borde a 45 grados para desprender una hoja ultra afilada.",
       "svgFileName": "pr04-step-01.svg",
+      "imageFileName": "pr04-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // STONE AXE STEP 1: GOLPE OBLICUO A 45° Y LASCADO DE FILO",
+        "Descargar una piedra martillo redonda y pesada siguiendo una trayectoria oblicua de 45 grados",
+        "Golpear a una falange (1–2cm) dentro del borde de la piedra base de 15–20cm bien apoyada",
+        "Desprender una lasca de palma de mano (1–2cm de grosor) con filo agudo de fractura concoidea",
+        "[PASO 1] Golpear el centro a 90° destroza la piedra: impactar siempre el borde a 45°"
+      ],
       "svgLabels": [
         "1. Piedra martillo redonda",
         "2. Golpear borde a 45°",
@@ -52,6 +60,15 @@
       "description": "1. **Ligadura de contención inferior**: Ata firmemente con cuerda a **10cm por debajo** de la punta del mango para evitar grietas incontroladas.\n2. **Corte de hendidura longitudinal**: Con una piedra afilada, abre una ranura vertical de **profundidad 5–7cm** en el extremo del mango.\n3. **Inserción profunda de la hoja**: Introduce la base gruesa de la lasca hasta el fondo de la ranura central.\n4. **Relleno con compuesto de resina**: Funde resina de pino mezclada con **polvo de carbón en proporción 1:1**, rellenando cada hueco interno.",
       "actionNote": "> Regla de mezcla compuesta: La resina pura se vuelve quebradiza como el vidrio al enfriarse. Mezclar polvo fino de carbón vegetal absorbe impactos y crea un epoxi natural irrompible. ([Pegamento de Resina (PR-10)](/protocol-10) / [Horno de Carbón (PR-09)](/protocol-09))",
       "svgFileName": "pr04-step-02.svg",
+      "imageFileName": "pr04-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // STONE AXE STEP 2: TOPE DE CUERDA, ENMANGADO Y RESINA COMPUESTA",
+        "Atar firme el mango 10cm bajo la punta con cuerda natural para frenar la rajadura vertical",
+        "Rajar verticalmente 5–7cm el extremo superior del mango de madera dura (roble o fresno)",
+        "Encajar a fondo la parte gruesa trasera de la hoja de piedra dejando el filo hacia afuera",
+        "Rellenar todos los huecos con resina de pino fundida mezclada 1:1 con carbón pulverizado",
+        "[PASO 2] La resina pura se quiebra al golpear; el carbón le da tenacidad amortiguadora"
+      ],
       "svgLabels": [
         "1. Encajar hoja hacia abajo",
         "Filo delantero",
@@ -72,6 +89,14 @@
       "description": "1. **Hidratación de fibra floemática**: Remoja en agua la corteza interna de liana para maximizar su flexibilidad y elasticidad.\n2. **Ligadura diagonal en X**: Cruza la fibra húmeda en diagonal sobre la piedra y el mango durante **al menos 10 vueltas tensas**.\n3. **Bloqueo horizontal del cuello**: Enrolla la fibra sobrante en horizontal bajo la base y remata con un nudo de máxima tracción.\n4. **Curado en sombra ventilada**: Deja secar por completo en un lugar sombreado y aireado lejos del sol directo para maximizar la presión.",
       "actionNote": "> Principio de secado en sombra: Jamás seques junto a las llamas del fuego, ya que el calor quema y revienta las fibras. El secado natural a la sombra contrae la liana un 30%, aprisionando la hoja como alambre de acero. ([Cuerda Salvaje (PR-05)](/protocol-05))",
       "svgFileName": "pr04-step-03.svg",
+      "imageFileName": "pr04-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // STONE AXE STEP 3: ATADO EN X CON LIANA HÚMEDA Y SECADO A LA SOMBRA",
+        "Cruzar corteza interior húmeda de liana en X al menos 10 vueltas tensas sobre hoja y cabeza",
+        "Enrollar el tramo sobrante en vueltas horizontales apretadas bajo el cabezal del mango",
+        "Secar a la sombra ventilada para que la fibra se contraiga un 30% y fije piedra y madera",
+        "[PASO 3] Secar al fuego vuelve quebradiza la fibra: solo el secado a la sombra logra máxima tensión"
+      ],
       "svgLabels": [
         "1. Amarre en X con liana",
         "2. Filo cortante expuesto",
@@ -93,10 +118,20 @@
   },
   "outcome": {
     "svgFileName": "pr04-outcome.svg",
+    "imageFileName": "pr04-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-04 OUTCOME // PRIMITIVE CHIPPED STONE AXE WITH RESIN & VINE LASHING",
+      "Paso 1 Filo: Hoja cortante de piedra de 1–2cm desprendida limpiamente con golpe a 45°",
+      "Paso 2 Ranura y Resina: Base encajada en hendidura de 5–7cm con pasta 1:1 resina-carbón",
+      "Paso 3 Amarre en X: 10+ vueltas diagonales de liana húmeda uniendo hoja y cabezal",
+      "Cuello y Secado: Vueltas horizontales en el cuello secadas a la sombra con 30% de encogimiento",
+      "Mango Resistente: Madera dura de roble o fresno de 40–50cm (Ø3,5–4cm) lista para talar",
+      "[CONTROL FINAL] Filo a 45° · Compuesto resina-carbón 1:1 · Amarre en X seco a sombra sin juego"
+    ],
     "title": "Hacha Primitiva de Piedra y Liana Completada",
     "description": "Una hoja de pedernal tallada bifacialmente incrustada en un mango de roble hendido, atada firmemente en X con lianas y sellada con resina de pino."
   },
   "createdAt": "2026-10-09T16:10:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "5814a0aec477d2e6"
+  "updatedAt": "2026-11-23T23:24:45.755Z",
+  "contentHash": "f7c32039f1fe4ddc"
 }
