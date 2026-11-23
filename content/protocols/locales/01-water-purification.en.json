@@ -107,7 +107,8 @@
             "fieldUse": "Natural bottom plug that holds up the charcoal and sand beds while letting clear water droplets pass"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-01-diagram.webp"
     },
     {
       "stepNumber": "02",
@@ -151,7 +152,8 @@
             "fieldUse": "Vertical gravity-fed filter column purifying muddy water through pebbles, fine sand, charcoal, and moss"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-02-diagram.webp"
     },
     {
       "stepNumber": "03",
@@ -165,7 +167,8 @@
         "Tightly packed sand grains block fine suspended mud",
         "Spread flat to three finger-widths (6cm) over charcoal",
         "[STEP 3] Layer 6cm of washed river sand with a flat top"
-      ]
+      ],
+      "imageFileName": "pr01-step-03-diagram.webp"
     },
     {
       "stepNumber": "04",
@@ -179,7 +182,8 @@
         "Discard the first 1-2 cups containing black charcoal dust",
         "Collect only crystal-clear water drops in a clean vessel",
         "[STEP 4] Protect sand with pebbles & discard first 1-2 cups"
-      ]
+      ],
+      "imageFileName": "pr01-step-04-diagram.webp"
     },
     {
       "stepNumber": "05",
@@ -198,7 +202,8 @@
         "badge": "FIELD SCIENCE",
         "title": "Why Visually Clear Water Must Be Boiled",
         "text": "Charcoal and sand remove suspended sediment and organic odors, but microscopic cysts (Giardia, Cryptosporidium) pass through primitive pore spaces. Sustained 100°C boiling denatures pathogen proteins, inactivating 99.9% of microbes."
-      }
+      },
+      "imageFileName": "pr01-step-05-diagram.webp"
     }
   ],
   "fatalMistake": {
@@ -223,9 +228,10 @@
       "Step 5: Boil clear filtered water at rolling boil for 3+ min",
       "Output: Odor-free, crystal-clear & 99.9% sterile safe water",
       "[FINAL CHECK] Secure tripod cradle · Discard flush · Boil 3+ min"
-    ]
+    ],
+    "imageFileName": "pr01-outcome-diagram.webp"
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "2bd2fa730f6c29f4"
+  "updatedAt": "2026-11-23T06:17:35.236Z",
+  "contentHash": "4e51cc459108f65b"
 }

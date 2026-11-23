@@ -107,7 +107,8 @@
             "fieldUse": "支撐木炭與細沙濾層不崩塌、僅讓清澈水滴通過的天然底部濾塞"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-01-diagram.webp"
     },
     {
       "stepNumber": "02",
@@ -151,7 +152,8 @@
             "fieldUse": "垂直固定於三腳架中的四階段重力過濾柱，將渾濁泥水轉化為透亮清水"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-02-diagram.webp"
     },
     {
       "stepNumber": "03",
@@ -165,7 +167,8 @@
         "水平拍平交界線",
         "碎木炭吸附層 (8CM)",
         "[步驟3] 於木炭層上方水平鋪設6CM細河沙"
-      ]
+      ],
+      "imageFileName": "pr01-step-03-diagram.webp"
     },
     {
       "stepNumber": "04",
@@ -179,7 +182,8 @@
         "緩緩注入濁泥水",
         "倒掉前1-2杯炭粉水",
         "[步驟4] 倒掉混有炭粉的初水後承接清澈水滴"
-      ]
+      ],
+      "imageFileName": "pr01-step-04-diagram.webp"
     },
     {
       "stepNumber": "05",
@@ -198,7 +202,8 @@
         "badge": "FIELD SCIENCE",
         "title": "清澈水為何仍必須高溫滾煮的科學依據",
         "text": "木炭與細沙只能去除泥沙顆粒與異味，微小的寄生蟲囊胞（賈第蟲、隱孢子蟲）與病毒仍會穿透孔隙。在100℃下持續加熱3分鐘可使病原體蛋白質變性，令99.9%的微生物徹底失去活性。"
-      }
+      },
+      "imageFileName": "pr01-step-05-diagram.webp"
     }
   ],
   "fatalMistake": {
@@ -223,9 +228,10 @@
       "承接清澈過濾水",
       "100°C 大火滾煮3分鐘+",
       "[最終完成] 四層物理過濾 + 3分鐘滾煮殺菌 = 99.9% 安全飲用水"
-    ]
+    ],
+    "imageFileName": "pr01-outcome-diagram.webp"
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "2bd2fa730f6c29f4"
+  "updatedAt": "2026-11-23T06:17:35.236Z",
+  "contentHash": "4e51cc459108f65b"
 }

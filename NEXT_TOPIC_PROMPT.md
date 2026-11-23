@@ -17,18 +17,22 @@
 
 ---
 
-## 🔬 4단계 공정 설계 (초등학생 수준 직관 명칭 & 무도구 도시·재난 공정)
+## 🔬 4단계 공정 설계 (Option A+ 넘버링 도면 & 7개국어 원형 HTML 범례 표준)
 
-1. **Step 1 (`pr41-step-01.svg` + `id-burst-pipe-shutoff-rust-clean.jpg`)**:
+1. **Step 1 (`pr41-step-01-diagram.webp` + `id-burst-pipe-shutoff-rust-clean.jpg`)**:
    - **메인 수도 밸브부터 잠그고 터진 관 겉면 물기·녹 찌꺼기 깨끗이 닦아 내기**: 뿜어 나오는 물 압력에 패치가 밀려나지 않고 밀착되게 하려면 먼저 계량기 잠금 밸브를 시계 방향으로 끝까지 잠그고, 마른 걸레와 거친 솔·수세미로 터진 틈 주변 물기와 들뜬 녹 가루를 뽀드득 소리가 날 만큼 닦아 냅니다.
-2. **Step 2 (`pr41-step-02.svg` + `id-thick-rubber-patch-crack-cover.jpg`)**:
+   - *(도면 핀 `1·2·3`)*: `1` 계량기 차단 밸브 시계 방향 잠금 / `2` 터진 배관 균열 부위 물기·녹 닦아내기 / `3` 젖은 손목·배관 대비 마른 걸레 건조 표면 (`data-svg-legend-step="0"`)
+2. **Step 2 (`pr41-step-02-diagram.webp` + `id-thick-rubber-patch-crack-cover.jpg`)**:
    - **두꺼운 고무장갑이나 자전거 튜브를 찢어진 틈보다 사방 두 마디 넓게 잘라 2겹 덮기**: 고무가 틈을 빈틈없이 막아 물방울이 옆으로 새는 것을 막기 위해 고무 패치를 균열 양끝보다 손가락 두 마디 이상 넓게 자른 뒤 두 겹으로 포개어 갈라진 틈 한가운데에 꼭 대어 줍니다.
-3. **Step 3 (`pr41-step-03.svg` + `id-wood-splint-pressure-wrap-seal.jpg`)**:
-   - **고무 위에 납작한 나무 덧대기를 올리고 튼튼한 끈·철사로 빈틈없이 꽉 감아 누르기**: 수압이 한 점만 뚫고 밀고 나오지 못하게 분산 압착하기 위해 고무 패치 바로 위에 딱딱하고 납작한 나무 막대(또는 두꺼운 플라스틱/금속 판 조각)를 대고, 양끝에서 가운데를 향해 질긴 끈이나 고무 밴드를 포개어 틈 없이 당겨 묶습니다.
-4. **Step 4 (`pr41-step-04.svg` + `id-quarter-valve-leak-check-basin.jpg`)**:
+   - *(도면 핀 `1·2·3`)*: `1` 균열 양끝보다 사방 두 마디 넓은 2겹 고무 패치 재단 / `2` 찢어진 틈 중앙 밀착 피복 / `3` 틈새 수압 누출 차단 단면 (`data-svg-legend-step="1"`)
+3. **Step 3 (`pr41-step-03-diagram.webp` + `id-wood-splint-pressure-wrap-seal.jpg`)**:
+   - **고무 위에 납작한 나무 덧대기를 올리고 튼튼한 끈·철사로 빈틈없이 꽉 감아 누르기**: 수압이 한 점만 뚫고 밀고 나오지 못하게 분산 압착하기 위해 고무 패치 바로 위에 딱딱하고 납작한 나무 막대를 대고, 양끝에서 가운데를 향해 질긴 끈·철사·고무 밴드를 포개어 틈 없이 당겨 묶습니다.
+   - *(도면 핀 `1·2·3`)*: `1` 2겹 고무 패치 위 납작한 나무 덧대기 안착 / `2` 양끝에서 중앙으로 겹쳐 감는 고압 결속 / `3` 나무판 하중 분산 압착 단면 (`data-svg-legend-step="2"`)
+4. **Step 4 (`pr41-step-04-diagram.webp` + `id-quarter-valve-leak-check-basin.jpg`)**:
    - **밸브를 4분의 1만 천천히 열어 누수·배수 점검하고 아래 물받이 통 비치하기**: 한꺼번에 수도 밸브를 다 열면 강한 수압에 임시 마개가 터질 수 있으므로 밸브를 조금(1/4 바퀴)만 열어 꼭 필요한 만큼 감압해 물방울이 맺히는지 손끝으로 확인하고, 혹시 모를 미세 누수에 대비해 아래 대야를 받쳐 두며 전기 콘센트 침수를 막습니다.
-5. **Outcome (`pr41-outcome.svg`)**:
-   - 4단계 통합 흐름도 (메인 밸브 차단 & 녹·물기 제거 ➔ 2겹 고무 패치 광폭 부착 ➔ 나무 덧대기 분산 + 고압 결속 ➔ 1/4 감압 개방 & 물받이 안전 모니터링).
+   - *(도면 핀 `1·2·3`)*: `1` 차단 밸브 1/4 바퀴 감압 개방 / `2` 손끝 미세 누수 확인 및 하부 물받이 대야 배치 / `3` 인접 전기 콘센트 침수 격리 (`data-svg-legend-step="3"`)
+5. **Outcome (`pr41-outcome-diagram.webp`, 16:9 Option A+ Master Cutaway)**:
+   - 4단계 통합 흐름도 (번호 핀 `1~4`: 메인 밸브 차단 & 표면 청소 ➔ 2겹 고무 패치 광폭 부착 ➔ 나무 덧대기 분산 + 고압 결속 ➔ 1/4 감압 개방 & 물받이 안전 모니터링).
 
 ---
 
@@ -37,6 +41,6 @@
 1. **직관적 `[문제/상황] + [해결 행동] ~법` 제목**: **10~35자(15~28자 권장)** 이내, 재료 나열·괄호 부제 금지 (`18자`), **`PlainKoreanEditorService` 금지어 미포함** (`응집력`, `탄성 한계 계수`, `유압 서지` 대신 `물 압력`, `꽉 누르는 힘`, `사방 두 마디 넓게` 등 직관 일상어 사용).
 2. `ContentEnrichmentService`: 전 스텝 인과 설명 단어(`위해`, `막기`, `방지`, `유지`, `예방`) 및 단일 번호 줄 **240자 이하** 준수.
 3. `materials[].name` 내부 마크다운 링크 금지 (`Checklist.ts` raw 규칙). 관련 링크(`/protocol-35`, `/protocol-38`, `/protocol-23`, `/protocol-25`, `/protocol-05` — `.html` 제외)는 설명 본문만 사용.
-4. **SVG 금지어 0건 확인**: SVG `<text>` 및 7개국어 `svgLabels`에 `플라스틱`, `비닐`, `알루미늄`, `페트병`, `nylon`, `plastic`, `aluminum` 등 `FORBIDDEN_TERMS`가 들어가지 않도록 `나무 덧대기`, `고무 패치`, `고무 밴드`, `hardwood splint`, `rubber patch`만 사용.
+4. **Option A+ 도면 Zero-Words & 고증 0결함 확인**: `pr41-step-01~04-diagram.webp` · `pr41-outcome-diagram.webp` 이미지 내부에 텍스트/단어/단위를 일체 넣지 말고 청록 원형 넘버링(`1..N`)만 배치한 뒤 `read_file` 시각 QA 후 `cwebp` 압축 (`cwebp -q 84 -resize 800 0` / `1024 0`). 7개국어 `svgLabels`에 `플라스틱`, `비닐`, `알루미늄`, `페트병`, `nylon`, `plastic`, `aluminum` 등 `FORBIDDEN_TERMS`가 들어가지 않도록 `나무 덧대기`, `고무 패치`, `고무 밴드`, `hardwood splint`, `rubber patch`만 사용.
 5. Fatal Mistake 필수 경고: **메인 수도 밸브를 잠그지 않고 뿜어 나오는 수압 위에서 그대로 본드나 테이프를 붙이려다 실패하고 감전·침수되는 실수** 및 **온수 보일러 관이나 가스 배관 파열에 자가 수리하다 화상·폭발 위험에 노출되는 실수(가스 배관 누출 시 즉각 대피 및 신고)**.
-6. 발행 후 `tests/10_svg_audit_loop.test.ts`, `Footer.ts`, `knowledge-tree.json`, `README.md`, `PROJECT_SPEC.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`(-> **PR-42 원시·야전 회차**) 동기화 ➔ `npm run sync:timestamps && npm run build && npm run typecheck && npm test && npm run gdrive:sync` ➔ `git push origin main` 직행.
+6. 발행 후 `knowledge-tree.json`, `README.md`, `PROJECT_SPEC.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`(-> **PR-42 원시·야전 회차**) 동기화 ➔ `npm run sync:timestamps && npm run build && npm run typecheck && npm test` 통과 후 로컬 프리뷰(`http://localhost:3000/protocol-41`)를 보고하고, **사용자 확인·승인 후 `npm run gdrive:sync` 및 `git push origin main` 실행**.

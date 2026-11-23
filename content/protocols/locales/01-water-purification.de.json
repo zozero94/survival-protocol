@@ -107,7 +107,8 @@
             "fieldUse": "Natürlicher Bodenstopfen, der Kohle und Sand stützt und nur klares Wasser durchlässt"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-01-diagram.webp"
     },
     {
       "stepNumber": "02",
@@ -151,7 +152,8 @@
             "fieldUse": "Senkrecht im Dreibein gelagerte 4-Schicht-Filtersäule zur Umwandlung von Schlammwasser in klares Rohwasser"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-02-diagram.webp"
     },
     {
       "stepNumber": "03",
@@ -165,7 +167,8 @@
         "WAAGERECHTE GRENZLINIE",
         "KOHLEBETT (8CM)",
         "[SCHRITT 3] 6CM SAND GLATT ÜBER KOHLE LEGEN"
-      ]
+      ],
+      "imageFileName": "pr01-step-03-diagram.webp"
     },
     {
       "stepNumber": "04",
@@ -179,7 +182,8 @@
         "SCHLAMMWASSER EINGIESSEN",
         "ERSTE 1-2 TASSEN WEG",
         "[SCHRITT 4] SPÜLWASSER WEG & KLARWASSER FANGEN"
-      ]
+      ],
+      "imageFileName": "pr01-step-04-diagram.webp"
     },
     {
       "stepNumber": "05",
@@ -198,7 +202,8 @@
         "badge": "FIELD SCIENCE",
         "title": "Warum selbst klares Wasser abgekocht werden muss",
         "text": "Kohle- und Sandfilter entfernen sichtbare Schlammpartikel und Gerüche, aber mikroskopische Zysten (Giardien, Kryptosporidien) passieren einfache Poren. Dauerhaftes Kochen bei 100°C denaturiert die Proteine der Krankheitserreger und inaktiviert 99.9% aller Keime."
-      }
+      },
+      "imageFileName": "pr01-step-05-diagram.webp"
     }
   ],
   "fatalMistake": {
@@ -223,9 +228,10 @@
       "KLARWASSER-AUFFANG",
       "100°C KOCHEN (3+ MIN.)",
       "[ENDERGEBNIS] 4-SCHICHT-FILTRATION + 3 MIN. KOCHEN = 99.9% TRINKWASSER"
-    ]
+    ],
+    "imageFileName": "pr01-outcome-diagram.webp"
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "2bd2fa730f6c29f4"
+  "updatedAt": "2026-11-23T06:17:35.236Z",
+  "contentHash": "4e51cc459108f65b"
 }

@@ -61,7 +61,11 @@ describe('⏱️ [Suite 13: 타임스탬프 자동 감지 & 동기화 엔진] Gi
 
     assert.ok(gitTime !== null, 'Git 커밋 타임스탬프가 조회되어야 함');
     assert.ok(!isNaN(new Date(gitTime!).getTime()), '유효한 날짜여야 함');
-    assert.ok(gitTime!.includes('2026-10-15'), '2026-10-15 일자의 커밋이어야 함');
+    assert.match(gitTime!, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/, 'ISO 8601 형식의 타임스탬프여야 함');
+    assert.ok(
+      new Date(gitTime!).getTime() >= new Date('2026-10-15T10:00:00+09:00').getTime(),
+      '2026-10-15 이후의 최신 커밋 타임스탬프여야 함'
+    );
   });
 
   it('resolveProtocolTimestamps는 PR-08의 최종 수정 일시를 최신 커밋 일시로 자동 산출해야 한다', () => {

@@ -561,8 +561,9 @@
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:24px_24px] opacity-40 pointer-events-none"></div>
 
     <div class="relative z-10 w-full max-w-2xl flex items-center justify-center">
-      <img src="/images/pr08-outcome.png" alt="완성된 숫자 4자 돌 덫 전체 모습" class="max-w-2xl w-full h-auto rounded border border-[#333] shadow-lg object-cover select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
-      <div style="display:none;" class="w-full"><svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+      <div class="w-full flex flex-col items-center gap-3">
+        <img src="/images/pr08-outcome.png" alt="완성된 숫자 4자 돌 덫 전체 모습" class="max-w-2xl w-full h-auto border border-[#333] bg-[#0b0d10] shadow-lg object-contain select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
+        <div style="display:none;" class="w-full [&>svg]:w-full [&>svg]:h-auto"><svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgOut" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -743,6 +744,8 @@
   <text data-svg="outcome" data-svg-outcome-label="8" x="445" y="381" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="8.5">・안쪽 미끼를 건드리는 즉시 뼈대가 풀려 바위가 단번에 덮칩니다.</text>
 </svg>
 </div>
+        
+      </div>
     </div>
   </div>
 
@@ -2481,6 +2484,29 @@
         });
         document.querySelectorAll('text[data-svg-outcome-label]').forEach(function(el) {
           var lIdx = parseInt(el.getAttribute('data-svg-outcome-label'), 10);
+          if (
+            proto.outcome &&
+            Array.isArray(proto.outcome.svgLabels) &&
+            proto.outcome.svgLabels[lIdx] !== undefined
+          ) {
+            el.textContent = proto.outcome.svgLabels[lIdx];
+          }
+        });
+        // 5-1. [선언적 엔진] 비트맵 도면(WebP) 하단 HTML 다국어 범례 핫스왑 (data-svg-legend-step, data-svg-legend-idx, data-svg-legend-outcome-idx)
+        document.querySelectorAll('[data-svg-legend-step]').forEach(function(el) {
+          var sIdx = parseInt(el.getAttribute('data-svg-legend-step'), 10);
+          var lIdx = parseInt(el.getAttribute('data-svg-legend-idx'), 10);
+          if (
+            proto.steps &&
+            proto.steps[sIdx] &&
+            Array.isArray(proto.steps[sIdx].svgLabels) &&
+            proto.steps[sIdx].svgLabels[lIdx] !== undefined
+          ) {
+            el.textContent = proto.steps[sIdx].svgLabels[lIdx];
+          }
+        });
+        document.querySelectorAll('[data-svg-legend-outcome-idx]').forEach(function(el) {
+          var lIdx = parseInt(el.getAttribute('data-svg-legend-outcome-idx'), 10);
           if (
             proto.outcome &&
             Array.isArray(proto.outcome.svgLabels) &&

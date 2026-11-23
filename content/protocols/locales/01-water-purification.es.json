@@ -107,7 +107,8 @@
             "fieldUse": "Tapón natural que sostiene el lecho filtrante mientras deja pasar gotas transparentes"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-01-diagram.webp"
     },
     {
       "stepNumber": "02",
@@ -151,7 +152,8 @@
             "fieldUse": "Columna vertical por gravedad que purifica el agua turbia pasando por grava, arena, carbón y musgo"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-02-diagram.webp"
     },
     {
       "stepNumber": "03",
@@ -165,7 +167,8 @@
         "Los granos finos compactos bloquean las partículas de barro",
         "Extender tres dedos de altura (6 cm) planos sobre el carbón",
         "[PASO 3] Cubrir el carbón con 6 cm de arena bien nivelada"
-      ]
+      ],
+      "imageFileName": "pr01-step-03-diagram.webp"
     },
     {
       "stepNumber": "04",
@@ -179,7 +182,8 @@
         "Desechar las primeras 1-2 tazas con polvo negro de carbón",
         "Recoger solo el agua cristalina en un recipiente limpio",
         "[PASO 4] Proteger la arena con grava y tirar las 2 primeras tazas"
-      ]
+      ],
+      "imageFileName": "pr01-step-04-diagram.webp"
     },
     {
       "stepNumber": "05",
@@ -198,7 +202,8 @@
         "badge": "FIELD SCIENCE",
         "title": "Por qué el agua transparente debe hervirse",
         "text": "Los filtros de carbón y arena eliminan sedimentos y olores, pero los quistes microscópicos (Giardia, Cryptosporidium) y virus atraviesan los poros. La ebullición continua a 100°C desnaturaliza las proteínas de los patógenos, inactivando el 99.9% de los microorganismos."
-      }
+      },
+      "imageFileName": "pr01-step-05-diagram.webp"
     }
   ],
   "fatalMistake": {
@@ -223,9 +228,10 @@
       "Paso 5: Hervir el agua clara con burbujas grandes por 3+ min",
       "Resultado: Agua cristalina, sin olor y 99.9% libre de microbios",
       "[CONTROL FINAL] Fijar soporte · Desechar purga · Hervir 3+ min"
-    ]
+    ],
+    "imageFileName": "pr01-outcome-diagram.webp"
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "2bd2fa730f6c29f4"
+  "updatedAt": "2026-11-23T06:17:35.236Z",
+  "contentHash": "4e51cc459108f65b"
 }

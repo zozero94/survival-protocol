@@ -1,4 +1,5 @@
                                                                      
+import { renderDiagramLegendHtml } from './StepCard.js';
 
 /**
  * [Presentational Component]
@@ -22,9 +23,17 @@ export function renderOutcomePreview(
 
   let visualContent = '';
   if (outcome.imageFileName) {
+    const legendHtml = renderDiagramLegendHtml(
+      outcome.svgLabels,
+      (lIdx) => `data-svg-legend-outcome-idx="${lIdx}"`,
+      'max-w-2xl'
+    );
     visualContent = `
-      <img src="/images/${outcome.imageFileName}" alt="${outcome.title}" class="max-w-2xl w-full h-auto rounded border border-[#333] shadow-lg object-cover select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
-      ${processedSvg ? `<div style="display:none;" class="w-full">${processedSvg}</div>` : ''}
+      <div class="w-full flex flex-col items-center gap-3">
+        <img src="/images/${outcome.imageFileName}" alt="${String(outcome.title || '').replace(/"/g, '&quot;')}" class="max-w-2xl w-full h-auto border border-[#333] bg-[#0b0d10] shadow-lg object-contain select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
+        ${processedSvg ? `<div style="display:none;" class="w-full [&>svg]:w-full [&>svg]:h-auto">${processedSvg}</div>` : ''}
+        ${legendHtml}
+      </div>
     `.trim();
   } else {
     visualContent = processedSvg;

@@ -170,6 +170,34 @@ export function renderFieldSpecsHtml(fieldSpecs                           )     
  * 단계별 도면(1:1 SVG Blueprint) 및 실행 지침 카드 컴포넌트 (Stitch Technical Blueprint Card)
  * 선언적 data-proto-item 및 data-i18n 속성 100% 탑재
  */
+/**
+ * Option A 도면 하단 7개국어 HTML 범례 컨테이너 생성 공용 헬퍼
+ * 인덱스 0(헤더), 중간(원형 넘버링 1..N 호출 배지), 마지막(핵심 요약 앰버 배지)을 일관되게 렌더링
+ */
+export function renderDiagramLegendHtml(
+  labels                      ,
+  attrBuilder                          ,
+  maxWidthClass        
+)         {
+  const safeLabels = Array.isArray(labels) ? labels : [];
+  if (safeLabels.length === 0) return '';
+  return `<div class="${maxWidthClass} w-full space-y-1.5 font-mono text-left">${safeLabels
+    .map((lbl, lIdx) => {
+      const escaped = String(lbl)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      if (lIdx === 0) {
+        return `<div class="px-2.5 py-1.5 bg-[#18181b] border border-[#3f3f46] text-[#f4f4f5] text-[11px] font-bold" ${attrBuilder(0)}>${escaped}</div>`;
+      }
+      if (safeLabels.length > 1 && lIdx === safeLabels.length - 1) {
+        return `<div class="px-2.5 py-1.5 bg-[#1b160a] border border-[#f59e0b]/45 text-[#fde68a] text-[11px] font-bold" ${attrBuilder(lIdx)}>${escaped}</div>`;
+      }
+      return `<div class="px-2.5 py-1.5 bg-[#141414] border border-[#2a2a2a] flex items-start gap-2 text-[11px] text-[#cbd5e1] leading-snug"><span class="inline-flex items-center justify-center w-4 h-4 rounded-full border border-[#22d3ee]/80 bg-[#22d3ee]/15 text-[#22d3ee] text-[10px] font-bold shrink-0 mt-0.5">${lIdx}</span><span ${attrBuilder(lIdx)}>${escaped}</span></div>`;
+    })
+    .join('')}</div>`;
+}
+
 export function renderStepCards(steps                , svgsMap                         = {})         {
   const cardsHtml = steps
     .map((step, idx) => {
@@ -185,9 +213,17 @@ export function renderStepCards(steps                , svgsMap                  
 
       let visualContent = '';
       if (step.imageFileName) {
+        const legendHtml = renderDiagramLegendHtml(
+          step.svgLabels,
+          (lIdx) => `data-svg-legend-step="${idx}" data-svg-legend-idx="${lIdx}"`,
+          'max-w-[460px]'
+        );
         visualContent = `
-          <img src="/images/${step.imageFileName}" alt="STEP ${step.stepNumber}: ${step.title}" class="max-w-[420px] w-full h-auto rounded border border-[#333] shadow-md object-cover select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
-          ${processedSvg ? `<div style="display:none;" class="w-full flex items-center justify-center">${processedSvg}</div>` : ''}
+          <div class="w-full flex flex-col items-center gap-3">
+            <img src="/images/${step.imageFileName}" alt="STEP ${step.stepNumber}: ${String(step.title || '').replace(/"/g, '&quot;')}" class="max-w-[460px] w-full aspect-square border border-[#333] bg-[#0b0d10] shadow-md object-contain select-none" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='block';}" />
+            ${processedSvg ? `<div style="display:none;" class="w-full flex items-center justify-center [&>svg]:max-w-[420px] [&>svg]:w-full [&>svg]:h-auto">${processedSvg}</div>` : ''}
+            ${legendHtml}
+          </div>
         `.trim();
       } else {
         visualContent = processedSvg;
@@ -234,7 +270,7 @@ export function renderStepCards(steps                , svgsMap                  
       <div class="bg-[#111111] border-b border-[#2d2d2d] p-4 text-white">
         <div class="flex items-center justify-between font-mono text-[10px] text-[#888] mb-2">
           <span class="border border-[#444] px-1.5 py-0.5 text-white bg-black">
-            <span data-i18n="figurePrefix">FIG</span>. ${step.stepNumber} // ${step.imageFileName ? 'FIELD VISUAL' : 'BLUEPRINT SCHEMATIC'}
+            <span data-i18n="figurePrefix">FIG</span>. ${step.stepNumber} // ${step.imageFileName ? 'TECHNICAL DIAGRAM' : 'BLUEPRINT SCHEMATIC'}
           </span>
           <span class="tracking-wider text-[10px] text-[#777]">SCALE 1:1 FIELD GUIDE</span>
         </div>

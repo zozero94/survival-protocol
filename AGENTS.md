@@ -43,13 +43,12 @@ content/
 │       ├── {XX}-{slug}.de.json           # 독일어 번역본
 │       ├── {XX}-{slug}.pt.json           # 포르투갈어 번역본
 │       └── {XX}-{slug}.zh-TW.json        # 중국어 번체 번역본
-├── svgs/
-│   ├── pr{XX}-outcome.svg                # 16:9 와이드 결과물 프리뷰 도면 (800×450)
-│   ├── pr{XX}-step-01.svg                # 1단계 인라인 기술 도면
-│   ├── pr{XX}-step-02.svg                # 2단계 인라인 기술 도면
-│   ├── pr{XX}-step-03.svg                # 3단계 인라인 기술 도면
-│   └── pr{XX}-step-04.svg                # 4단계 인라인 기술 도면
-└── images/
+├── svgs/                    # 1:1 공용 벡터 기술 도면 (레거시/폴백 219개 SVG 도면)
+│   ├── pr{XX}-outcome.svg                # (폴백) 16:9 결과물 프리뷰 SVG 도면
+│   └── pr{XX}-step-01~04.svg             # (폴백) 스텝별 SVG 기술 도면
+└── images/                  # 방안 A+ 넘버링 WebP 도면 & 3D 실물/식생 식별 에셋
+    ├── pr{XX}-outcome-diagram.webp       # 16:9 Option A+ 넘버링 마스터 도면 (1024px WebP)
+    ├── pr{XX}-step-01~0{N}-diagram.webp  # 1:1 Option A+ 넘버링 스텝 도면 (800px WebP)
     └── id-{asset-slug}.jpg               # 3D 포토리얼 실물/식생 식별 에셋
 ```
 
@@ -66,7 +65,7 @@ git pull --ff-only origin main
 # 1. 의존성 설치
 npm install
 
-# 2. 전수 단위/통합 테스트 (16개 스위트 / 202개 테스트)
+# 2. 전수 단위/통합 테스트 (16개 스위트 / 203+개 테스트)
 npm test
 
 # 3. 정적 웹진 컴파일 & PWA 오프라인 캐시 빌드 (public/ 생성)
@@ -75,7 +74,7 @@ npm run build
 # 4. 콘텐츠 SHA-256 해시 및 타임스탬프 영속화 동기화
 npm run sync:timestamps
 
-# 5. SVG 기하학 공차 및 다국어 텍스트 정적 감사
+# 5. SVG 기하학 공차 및 다국어 텍스트 정적 감사 (레거시 SVG 변경 시)
 npm run audit:svg-design
 
 # 6. TypeScript 컴파일 무결성 검사
@@ -91,7 +90,7 @@ npm run typecheck
 2. **내부 링크 클린 URL 준수 (No `.html` in Markdown Links)**:
    - 본문 크로스링크는 반드시 `[텍스트](/protocol-XX)` 형식이어야 합니다. `.html` 확장자를 붙이지 마십시오 (Vercel 308 리디렉션 방지).
 3. **매듭(Knot) 주제 영구 제외**:
-   - 2D/3D 정적 도면만으로 시공간 조작 전달이 불가능한 매듭법은 다루지 않습니다 (PR-07은 아카이브 격리됨).
+   - 정적 도면만으로 시공간 조작 전달이 불가능한 매듭법은 다루지 않습니다 (PR-07은 아카이브 격리됨).
 4. **5대 SSOT 카테고리 강타입 준수**:
    - `FOOD`, `SHELTER`, `TOOLS`, `MATERIALS`, `MEDICINE` 외의 임의 카테고리는 허용되지 않습니다.
 5. **초등학생(11~13세) 눈높이 문체·직관적 제목 & 무도구 원칙**:
@@ -100,6 +99,8 @@ npm run typecheck
    - 자·저울·타이머 등 현대 계측기 의존을 금지하고, 뼘·손가락 마디·콩알 크기 등 신체 감각 비유를 병기하십시오.
 6. **완제품 우선 & 비상 대체 호환 (Ready-Made Alternative)**:
    - 시판 완제품 장비가 있을 때의 활용법을 먼저 안내하고, 없을 때의 DIY 대체법을 제시하십시오.
+7. **방안 A+ 넘버링 도면 & 7개국어 HTML 범례 표준 (`data-svg-legend-*`)**:
+   - 신규 도면 및 전환 도면(`.webp`) 내부에는 텍스트/단어를 0자로 유지하고 청록 이중 링 숫자 핀(`1..N`)만 배치하며, 설명은 `StepCard.ts` / `OutcomePreview.ts`의 `renderDiagramLegendHtml()`과 `svgLabels`(7개 언어 `data-svg-legend-*` 1:1 매칭)로 렌더링하십시오. 모든 생성 이미지는 반드시 `read_file`로 시각 검수를 통과해야 합니다.
 
 ---
 

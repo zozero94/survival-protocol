@@ -107,7 +107,8 @@
             "fieldUse": "Tampão natural de fundo que segura o carvão e a areia deixando passar apenas água limpa"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-01-diagram.webp"
     },
     {
       "stepNumber": "02",
@@ -151,7 +152,8 @@
             "fieldUse": "Coluna de filtragem vertical em 4 estágios montada no tripé para clarificar água barrenta"
           }
         ]
-      }
+      },
+      "imageFileName": "pr01-step-02-diagram.webp"
     },
     {
       "stepNumber": "03",
@@ -165,7 +167,8 @@
         "DIVISÃO HORIZONTAL",
         "LEITO DE CARVÃO (8CM)",
         "[PASSO 3] NIVELAR 6CM DE AREIA FINA SOBRE O CARVÃO"
-      ]
+      ],
+      "imageFileName": "pr01-step-03-diagram.webp"
     },
     {
       "stepNumber": "04",
@@ -179,7 +182,8 @@
         "ENTRADA DE ÁGUA TURVA",
         "DESCARTAR 1-2 COPOS",
         "[PASSO 4] DESCARTAR ÁGUA INICIAL E RECOLHER ÁGUA LIMPA"
-      ]
+      ],
+      "imageFileName": "pr01-step-04-diagram.webp"
     },
     {
       "stepNumber": "05",
@@ -198,7 +202,8 @@
         "badge": "FIELD SCIENCE",
         "title": "Por que água transparente deve ser fervida",
         "text": "Filtros de carvão e areia retêm sedimentos e odores, mas cistos microscópicos (Giardia, Cryptosporidium) e vírus passam pelos poros. A fervura constante a 100°C desnatura as proteínas dos patógenos, inativando 99.9% dos micróbios."
-      }
+      },
+      "imageFileName": "pr01-step-05-diagram.webp"
     }
   ],
   "fatalMistake": {
@@ -223,9 +228,10 @@
       "COLETA DE ÁGUA LIMPA",
       "FERVURA A 100°C (3+ MIN)",
       "[FINAL] FILTRAGEM EM 4 CAMADAS + 3 MIN DE FERVURA = 99.9% POTÁVEL"
-    ]
+    ],
+    "imageFileName": "pr01-outcome-diagram.webp"
   },
   "createdAt": "2026-10-09T16:00:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "2bd2fa730f6c29f4"
+  "updatedAt": "2026-11-23T06:17:35.236Z",
+  "contentHash": "4e51cc459108f65b"
 }

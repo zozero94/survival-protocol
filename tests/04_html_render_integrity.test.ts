@@ -61,5 +61,21 @@ describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫�
       renderCanonicalProtocolPage({});
     }, /프로토콜 데이터셋이 비어 있습니다/);
   });
+
+  test('Option A+ 넘버링 도면(PR-01 전체 6종: Step 01~05 + Outcome)의 WebP 도면 및 다국어 HTML 원형 배지 범례가 정상 렌더링되어야 한다', () => {
+    const html01 = fs.readFileSync(compiledHtmlPath, 'utf-8');
+    assert.ok(html01.includes('/images/pr01-outcome-diagram.webp'), 'PR-01에 Option A+ Outcome WebP 경로가 포함되어야 함');
+    assert.ok(html01.includes('TECHNICAL DIAGRAM'), 'PR-01 스텝 배지가 TECHNICAL DIAGRAM이어야 함');
+    assert.ok(html01.includes('data-svg-legend-outcome-idx="0"'), 'PR-01 Outcome 하단에 HTML 다국어 범례 컨테이너가 렌더링되어야 함');
+    assert.ok(fs.existsSync(compiledHtmlPath.replace(/[^/\\]+$/, 'images/pr01-outcome-diagram.webp')), 'public/images/pr01-outcome-diagram.webp 파일이 복사되어야 함');
+    for (let i = 0; i < 5; i++) {
+      const file = `pr01-step-0${i + 1}-diagram.webp`;
+      assert.ok(html01.includes(`/images/${file}`), `PR-01 Step 0${i + 1} Option A+ WebP 경로가 포함되어야 함`);
+      assert.ok(html01.includes(`data-svg-legend-step="${i}"`), `PR-01 Step 0${i + 1} HTML 다국어 범례 컨테이너가 렌더링되어야 함`);
+      assert.ok(fs.existsSync(compiledHtmlPath.replace(/[^/\\]+$/, `images/${file}`)), `public/images/${file} 파일이 복사되어야 함`);
+    }
+    assert.ok(html01.includes("querySelectorAll('[data-svg-legend-step]')"), '로케일 런타임에 스텝 범례 핫스왑 로직이 탑재되어야 함');
+    assert.ok(html01.includes("querySelectorAll('[data-svg-legend-outcome-idx]')"), '로케일 런타임에 결과물 범례 핫스왑 로직이 탑재되어야 함');
+  });
 });
 

@@ -2401,6 +2401,29 @@
             el.textContent = proto.outcome.svgLabels[lIdx];
           }
         });
+        // 5-1. [선언적 엔진] 비트맵 도면(WebP) 하단 HTML 다국어 범례 핫스왑 (data-svg-legend-step, data-svg-legend-idx, data-svg-legend-outcome-idx)
+        document.querySelectorAll('[data-svg-legend-step]').forEach(function(el) {
+          var sIdx = parseInt(el.getAttribute('data-svg-legend-step'), 10);
+          var lIdx = parseInt(el.getAttribute('data-svg-legend-idx'), 10);
+          if (
+            proto.steps &&
+            proto.steps[sIdx] &&
+            Array.isArray(proto.steps[sIdx].svgLabels) &&
+            proto.steps[sIdx].svgLabels[lIdx] !== undefined
+          ) {
+            el.textContent = proto.steps[sIdx].svgLabels[lIdx];
+          }
+        });
+        document.querySelectorAll('[data-svg-legend-outcome-idx]').forEach(function(el) {
+          var lIdx = parseInt(el.getAttribute('data-svg-legend-outcome-idx'), 10);
+          if (
+            proto.outcome &&
+            Array.isArray(proto.outcome.svgLabels) &&
+            proto.outcome.svgLabels[lIdx] !== undefined
+          ) {
+            el.textContent = proto.outcome.svgLabels[lIdx];
+          }
+        });
 
         // 6. 언어 스위처 UI 버튼 액티브 스타일 동기화
         document.querySelectorAll('[data-locale-btn]').forEach(function(btn) {

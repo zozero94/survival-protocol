@@ -24,7 +24,7 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 202개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (16개 스위트 / 203개 단위 테스트 무결성 100% 통과)
 - **커뮤니티 & Firebase RTDB 댓글 시스템 (`CommentSection.ts`, `comment.state.ts`, `database.rules.json`)**:
   - 2FA SHA-256 PIN + 기기 시크릿 토큰(`ps_comment_device_token`) 기반 익명 댓글 작성/수정/삭제 및 1회용 `verifiedHash` 원자적 소각
   - 1단계 대댓글 트리, 더보기(`⋯`) 드롭다운 메뉴, 3회 신고 자동 블라인드, 오프라인 대기열(`pendingCreates`) 동기화
@@ -37,20 +37,20 @@
     - 숫자에 신체 감각 비유 병기(콩알 크기, 손가락 두~네 마디 높이 등) 및 직관적 이유 즉시 제시
   - **5대 심층 포스팅 품질 리뷰 (`PostingReviewService` & `posting-quality-auditor`)**:
     - ① 야전 안전 & 오남용 Red-Team 심사, ② 자·저울·타이머 없는 무도구 신체·오감 재현성 검증, ③ 구글 검색엔진 E-E-A-T · SSOT 5대 카테고리(`PROTOCOL_CATEGORIES`) · HowTo 구조화 데이터 정합성, ④ 6대 언어 생태계 대응 현지화 검수, ⑤ 법무 및 Google Publisher/AdSense 유해물·유독가스 경고 정책 감사
-  - 매듭(Knot) 주제 영구 배제 (2D/3D 정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
+  - 매듭(Knot) 주제 영구 배제 (정적 도면의 야전 혼선 방지 및 직관적 물리 공학 중심 편성)
   - 가변 3~6단계 세부 공학 체계 및 16:9 와이드 완성 결과도(Outcome) 기본 탑재
-  - 3D 포토리얼리스틱 실물 이미지 에셋(Image Generator)과 벡터 SVG의 하이브리드 지원
+  - **방안 A+ 넘버링 테크니컬 WebP 도면 + 7개국어 HTML 원형 범례 표준** (`StepCard.ts` / `OutcomePreview.ts` `renderDiagramLegendHtml`, `locale.state.ts` `data-svg-legend-*`, 이미지 내 텍스트 0자 원칙) + 3D 실물 식별 에셋(`id-*.jpg`) + 레거시 SVG 폴백 하위 호환
   - 실질 콘텐츠 SHA-256 지문 기반 타임스탬프 영속화 엔진 (`npm run sync:timestamps`)
 
 ## 2. 연동 아키텍처 & 데이터 흐름
 ```mermaid
 flowchart TD
-    subgraph Tier1["1. 두뇌 & 기획 (AGY Argon + Stitch MCP + Image Generator + Plain Korean Editor)"]
-        A[Antigravity 메인 에이전트<br/>Argon 심층 추론 고증 기획] --> B[Stitch MCP Server<br/>generate_screen_from_text]
-        A --> IMG[Image Generator 서브에이전트<br/>3D 포토리얼리스틱 실물 이미지]
-        A --> EDT[plain-korean-editor & posting-quality-auditor<br/>테크니컬 라이팅 + 4대 포스팅 품질 심사]
-        B --> C[인라인 벡터 SVG 도면 추출<br/>3~8단계 스텝 + 16:9 Outcome 도면]
-        C & IMG & EDT --> D[Content Layer 저장<br/>JSON + Images + SVGs + 지식 트리]
+    subgraph Tier1["1. 두뇌 & 기획 (AGY Argon + Image Generator Option A+ + Plain Korean Editor)"]
+        A[Antigravity 메인 에이전트<br/>Argon 심층 추론 고증 기획] --> IMG[Image Generator + cwebp<br/>Option A+ 넘버링 .webp 도면 & 3D 실물 에셋]
+        A --> EDT[plain-korean-editor & posting-quality-auditor<br/>테크니컬 라이팅 + 5대 포스팅 품질 심사]
+        A -. 레거시 폴백 .-> B[Stitch MCP / SVG 도면<br/>하위 호환 fallback]
+        IMG --> QA[read_file 전수 시각 QA<br/>Zero-Words · 번호 핀 1:1 · 고증 검수]
+        QA & B & EDT --> D[Content Layer 저장<br/>JSON + WebP/Images + SVGs + 지식 트리]
         D --> E[Stitch MCP edit_screens<br/>UI 변경 시 화면 1:1 양방향 동기화]
     end
 
@@ -79,8 +79,8 @@ primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
 │   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-40, 총 39편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # 3D 포토리얼리스틱 실물 및 야전 식생·폐자재 식별 에셋 (pr08-*.{jpg,png}, id-*.jpg 총 117종)
-│   ├── svgs/                    # 1:1 공용 벡터 기술 도면 (219개 SVG 도면, 활성 감사 195종: 스텝 156 + 결과 39, 보존 24종)
+│   ├── images/                  # Option A+ 넘버링 .webp 도면(pr01-*-diagram.webp 6종 등 PR-01 1/39 전환) & 3D 실물/식생 식별 에셋(총 123종)
+│   ├── svgs/                    # 레거시/폴백 공용 벡터 기술 도면 (219개 SVG 도면, 활성 감사 195종: 스텝 156 + 결과 39, 보존 24종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
 │   ├── types/                   # [Type Layer] TypeScript 엄격 규격 단일 SSOT
@@ -133,16 +133,16 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 16개 테스트 스위트 (202/202 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 16개 테스트 스위트 (203/203 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
 
 ## 4. 품질 및 검수 규격
-1. **정적 도면 및 에셋 검수 (SvgAuditService)**:
-   - 전 발행 도면(총 219종, 활성 정적 감사 195종: 스텝 156종 + 결과 39종, 보존 24종)에 대해 경계 이탈(`BOUNDARY_CLIP`), 텍스트 겹침(`TEXT_OVERLAP`), 문구 깨짐(`TEXT_CORRUPTION`) 100점 만점 통과 필수.
-   - 7개국어 전체 SVG `<text>` 노드 개수 및 번역 라벨 바운딩박스 무결성 1:1 일치.
-   - 고화질 실물 이미지(`content/images/`)와 벡터 도면의 상호보완 렌더링 검증.
+1. **Option A+ 도면 시각 QA 및 레거시 정적 에셋 검수 (`read_file` · `SvgAuditService` · `06_feed_pagination.test.ts`)**:
+   - **Option A+ 시각 QA (신규/전환 표준)**: 생성된 모든 `.jpg`/`.webp` 도면에 대해 `read_file` 직접 시각 검수 필수 (이미지 내 텍스트·단위 0자, 청록 원형 숫자 핀 `1..N` ↔ 하단 `svgLabels` 1:1 매칭, Track A/B 고증 위반 0건, `cwebp` 800px/1024px 압축).
+   - **7개국어 HTML 범례 핫스왑 바인딩**: `StepCard.ts` · `OutcomePreview.ts` (`renderDiagramLegendHtml`)와 `locale.state.ts` 간 `data-svg-legend-*` 1:1 일치 및 `tests/06_feed_pagination.test.ts` 미바인딩 한글 0건 검증.
+   - **레거시 SVG 하위 호환 검수**: 보존/폴백 SVG 도면(219종, 활성 감사 195종)에 대해 `BOUNDARY_CLIP`/`TEXT_OVERLAP`/`TEXT_CORRUPTION` 100점 통과 및 7개국어 `<text>` 개수 일치 유지.
 2. **수석 기계공학 벡터 축 및 비전 감수 (SvgDesignAuditorService & `svg-design-auditor`)**:
    - 기계공학 유클리드 기하학 공차 검증: 상단 힌지 결합 이격 거리 $\le 2.0\text{px}$, 하단 걸림턱 결합 이격 거리 $\le 2.0\text{px}$, 빗장대 지지각 $45^\circ \pm 5^\circ$.
    - 고해상도(1000px) SVG-to-PNG 렌더링 기반 제미나이 멀티모달 비전 정밀 감수 및 자가 치유(Self-Healing) 좌표 교정.
@@ -165,10 +165,10 @@ primitive-survival/
    - AGY 스튜디오(Argon) + Stitch MCP + Google AI Studio 무료 티어로 월 추가 API 과금 0원 유지.
 
 ## 5. 전담 자동화 스킬 (Antigravity Skills)
-1. **`publish-protocol` (벡터 도면 기반 신규 포스팅 자율 발행 스킬)**:
-   - 기획 ➔ 원시 고증 ➔ 초등학생 눈높이 3~6단계 본문 작성 ➔ 3D 벡터 SVG 합성 ➔ 5대 루브릭 QA ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ **마지막 `sync` 스킬 자동 연계 호출**까지 원스톱 완결.
-2. **`publish-protocol-image` (고화질 실물 이미지 기반 신규 포스팅 자율 발행 스킬)**:
-   - 제미나이 고화질 실물 이미지(`image-generator` 서브에이전트) 기반 신규 생존 프로토콜 발행 파이프라인(주제 기획 ➔ 원시 고증 & 초등학생 눈높이 쉬운 본문 ➔ 3D 포토리얼리스틱 이미지 생성 ➔ 6대 글로벌 언어 번역 ➔ 정적 빌드/PWA 캐시 ➔ `sync` 스킬 자동 연계 호출) 원스톱 완결.
+1. **`publish-protocol` (방안 A+ 넘버링 도면 기반 신규 포스팅 자율 발행 통합 스킬)**:
+   - 기획 ➔ 원시/폐자재 고증 ➔ 초등학생 눈높이 3~6단계 본문 작성 ➔ 방안 A+ 다크 테크니컬 넘버링 `.webp` 도면(`image-generator` + `read_file` 시각 QA + `cwebp`) 및 3D 실물 식별 에셋 ➔ 7개국어 원형 HTML 범례(`data-svg-legend-*`) & 6대 글로벌 언어 현지화 ➔ 5대 품질 심사 ➔ 정적 빌드/PWA 캐시 & 203+ 테스트 검증 ➔ **마지막 `sync` 스킬 연계**까지 원스톱 완결 (레거시 SVG 폴백 하위 호환).
+2. **`survival-multilingual-translator` (6대 글로벌 언어 병렬 현지화 스킬)**:
+   - `en`, `ja`, `es`, `de`, `pt`, `zh-TW` 전문 통역 에이전트 병렬 가동, 단일 언어 중립 `imageFileName` 유지 및 `svgLabels` 1:1 넘버링 인덱스 동기화, 유튜브 쇼츠 45초 대본 현지화.
 3. **`sync` (프로젝트 문서 및 클라우드 동기화 스킬)**:
-   - 실제 코드베이스와 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `NEXT_TOPIC_PROMPT.md`, `implementation_plan.md`) 간 괴리 전수 감사 및 구글 드라이브(`1PMHkwQJsR_MSDjf8cYmJcnGp5wpzVnxW`) 원클릭 자동 동기화.
+   - 실제 코드베이스(Option A+ 도면 전환율, 테스트 수치 포함)와 프로젝트 문서(`PROJECT_SPEC.md`, `README.md`, `AGENTS.md`, `NEXT_TOPIC_PROMPT.md`, `implementation_plan.md`) 간 괴리 전수 감사 및 구글 드라이브(`1PMHkwQJsR_MSDjf8cYmJcnGp5wpzVnxW`) 자동 동기화.
 
