@@ -19,14 +19,14 @@
 
 ---
 
-## 🧱 5대 핵심 생존 공학 분과 및 발행 현황 (총 39편 배포 완료 · Option A+ 전환 2/39)
+## 🧱 5대 핵심 생존 공학 분과 및 발행 현황 (총 39편 배포 완료 · Option A+ 전환 4/39)
 
 | 카테고리 | 가이드 명칭 | 결과물 도면/이미지 | 세부 스텝 비주얼 | 다국어 지원 | 배포 상태 |
 |:---:|:---|:---:|:---:|:---:|:---:|
 | **FOOD** | [흙탕물 걸러 먹는 자연 정수기 만드는 법](public/protocol-01.html) | `pr01-outcome-diagram.webp` | 5단계 (Option A+ 넘버링 도면 5종 + HTML 원형 범례 + 삼각대·이끼·4층 단면 실사 3종) | 7개국어 완비 | ✅ 라이브 |
 | **SHELTER** | [라이터 없이 나무 마찰로 불 피우는 법](public/protocol-02.html) | `pr02-outcome-diagram.webp` | 3단계 (Option A+ 넘버링 도면 3종 + HTML 원형 범례) | 7개국어 완비 | ✅ 라이브 |
-| **SHELTER** | [불 없이 체온 지키는 낙엽 움막 만드는 법](public/protocol-03.html) | `pr03-outcome.svg` | 3단계 (FIG 01~03) | 7개국어 완비 | ✅ 라이브 |
-| **TOOLS** | [야생에서 나무 베는 돌도끼 만드는 법](public/protocol-04.html) | `pr04-outcome.svg` | 3단계 (FIG 01~03) | 7개국어 완비 | ✅ 라이브 |
+| **SHELTER** | [불 없이 체온 지키는 낙엽 움막 만드는 법](public/protocol-03.html) | `pr03-outcome-diagram.webp` | 3단계 (Option A+ 넘버링 도면 3종 + HTML 원형 범례) | 7개국어 완비 | ✅ 라이브 |
+| **TOOLS** | [야생에서 나무 베는 돌도끼 만드는 법](public/protocol-04.html) | `pr04-outcome-diagram.webp` | 3단계 (Option A+ 넘버링 도면 3종 + HTML 원형 범례) | 7개국어 완비 | ✅ 라이브 |
 | **TOOLS** | [끊어지지 않는 야생 밧줄 꼬아 만드는 법](public/protocol-05.html) | `pr05-outcome.svg` | 5단계 (FIG 01~05) | 7개국어 완비 | ✅ 라이브 |
 | **SHELTER** | [비바람 막고 열기 가두는 진흙 화덕 만드는 법](public/protocol-06.html) | `pr06-outcome.svg` | 5단계 (FIG 01~05) | 7개국어 완비 | ✅ 라이브 |
 | **FOOD** | [야생 고립 시 바위 덫으로 짐승 잡는 법](public/protocol-08.html) | `pr08-outcome.jpg` / `.svg` | 4단계 (실물 3D 이미지 4종) | 7개국어 완비 | ✅ 라이브 |
@@ -73,7 +73,7 @@ primitive-survival/
 ├── content/               # [Content Layer] Git 기반 순수 JSON 프로토콜 & 지식 트리
 │   ├── protocols/         # 개별 생존 교범 마스터 데이터 (PR-01 ~ PR-40, 총 39편)
 │   │   └── locales/       # 6개 타겟 언어 번역본 (en, ja, es, de, pt, zh-TW)
-│   ├── images/            # Option A+ 넘버링 .webp 도면(pr01~02-*-diagram.webp 10종 등 PR-01~02 전환, 2/39) & 3D 실물/식생 식별 에셋(총 127종)
+│   ├── images/            # Option A+ 넘버링 .webp 도면(pr01~04-*-diagram.webp 18종 등 PR-01~04 전환, 4/39) & 3D 실물/식생 식별 에셋(총 135종)
 │   ├── svgs/              # 레거시/폴백 공용 벡터 기술 도면 (총 219종: 활성 195종[스텝 156 + 결과 39], 보존 24종)
 │   └── knowledge-tree.json# 문명 복원 지식 그래프 (도메인/티어/분과)
 ├── src/
@@ -124,7 +124,7 @@ primitive-survival/
 ├── api/                   # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js        # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                # [Build Artifacts] 최종 정적 HTML, sw.js, assets/fuse.basic.min.js, assets/search-index.js, manifest, sitemap
-└── tests/                 # [Quality Audit] 15대 테스트 스위트 (197/197 PASS)
+└── tests/                 # [Quality Audit] 15대 테스트 스위트 (199/199 PASS)
 ```
 
 ---
@@ -153,7 +153,7 @@ node --experimental-strip-types src/pipeline.ts
 ```bash
 npm test
 ```
-*(197개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 · FOUC 차단 · PR-01~02 Option A+ 도면/범례 검증, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 · 카테고리 필터 칩 · 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성, 22) Firebase RTDB 2FA 댓글·1단 대댓글·무과금 1-클릭 번역·스팸 차단 및 보안 규칙 무결성)*
+*(199개 전수 테스트: 1) 원시 고증 방어, 2) 스키마 규격, 3) LLM 회복력, 4) HTML 무결성 · FOUC 차단 · PR-01~04 Option A+ 도면/범례 검증, 5) 5개 페이징 & 피드, 6) PWA 오프라인 캐시, 7) 텔레그램 봇 인가 제어, 8) 자동 생성 파이프라인, 9) SEO & AdSense 규격, 10) 벡터 도면 기하학 감사 & 무한루프 차단, 12) 기계공학 축 & 유클리드 좌표 정밀 감사, 13) Git/콘텐츠 해시 기반 타임스탬프 동기화 엔진, 14) 테크니컬 라이팅 & 유아어 배제 감수 엔진, 15) 클라이언트 인메모리 검색 엔진 · 카테고리 필터 칩 · 초성 탐색 무결성, 16) 5대 포스팅 품질 심사 · SSOT 카테고리 강타입 검증 · 문맥 인라인 하이퍼링킹(`protocol-cross-linker`) · 미변환 마크다운 링크 0건 무결성 · 콘텐츠 보강 감수(`content-enrichment-auditor`) 엔진, 17) Firebase 텔레메트리 런타임 & 보안 규격, 18) 쇼츠 OSMU 패키지, 19) Google AdSense E-E-A-T 4대 정책 페이지, 20) 7개국어 UI_STRINGS 커버리지, 21) 제미나이 최신 모델 & 이미지 생성 동적 자동 리졸버 무결성, 22) Firebase RTDB 2FA 댓글·1단 대댓글·무과금 1-클릭 번역·스팸 차단 및 보안 규칙 무결성)*
 
 ### 5. 타임스탬프 & 콘텐츠 해시 물리 동기화
 ```bash

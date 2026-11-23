@@ -24,7 +24,7 @@
   - 다차원 싱글톤 인스턴스 캐싱(`fuseCache[lang + '_' + mode]`) 및 한글 IME 조합 중 Enter 방어
   - 외장 번들(`public/assets/search-index.js`) 분리로 페이지당 HTML 275KB 감축 및 PWA SW 영구 프리캐시
   - 택티컬 옐로우(`#fde68a`) 하이라이팅, 35자 스니펫 및 키보드 단축키(`Cmd+K`, `/`, `ESC`, `ArrowUp/Down`) 완비
-- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 197개 단위 테스트 무결성 100% 통과)
+- **아키텍처**: Content-Driven Layered Component Architecture (15개 스위트 / 199개 단위 테스트 무결성 100% 통과)
 - **커뮤니티 & Firebase RTDB 댓글 시스템 (`CommentSection.ts`, `comment.state.ts`, `database.rules.json`)**:
   - 2FA SHA-256 PIN + 기기 시크릿 토큰(`ps_comment_device_token`) 기반 익명 댓글 작성/수정/삭제 및 1회용 `verifiedHash` 원자적 소각
   - 1단계 대댓글 트리, 더보기(`⋯`) 드롭다운 메뉴, 3회 신고 자동 블라인드, 오프라인 대기열(`pendingCreates`) 동기화
@@ -79,7 +79,7 @@ primitive-survival/
 ├── content/                     # [Content Layer] 순수 데이터
 │   ├── protocols/               # 개별 생존 교범 마스터 JSON (PR-01 ~ PR-40, 총 39편)
 │   │   └── locales/             # 6대 타겟 언어 번역 JSON (en, ja, es, de, pt, zh-TW)
-│   ├── images/                  # Option A+ 넘버링 .webp 도면(pr01~02-*-diagram.webp 10종 등 PR-01~02 2/39 전환) & 3D 실물/식생 식별 에셋(총 127종)
+│   ├── images/                  # Option A+ 넘버링 .webp 도면(pr01~04-*-diagram.webp 18종 등 PR-01~04 4/39 전환) & 3D 실물/식생 식별 에셋(총 135종)
 │   ├── svgs/                    # 레거시/폴백 공용 벡터 기술 도면 (219개 SVG 도면, 활성 감사 195종: 스텝 156 + 결과 39, 보존 24종)
 │   └── knowledge-tree.json      # 문명 복원 지식 그래프 (6대 핵심 분과/도메인/티어)
 ├── src/
@@ -131,7 +131,7 @@ primitive-survival/
 ├── api/                         # [Serverless Layer] Vercel 서버리스 웹훅 엔드포인트
 │   └── telegram.js              # 텔레그램 웹훅 핸들러 (AES-256-GCM 보안 컨텍스트)
 ├── public/                      # [Build Artifacts] 최종 배포 번들 (HTML, {about,privacy,terms,contact}.html, assets/search-index.js, sw.js)
-├── tests/                       # [Quality Audit] 15개 테스트 스위트 (197/197 단위 테스트 100% PASS)
+├── tests/                       # [Quality Audit] 15개 테스트 스위트 (199/199 단위 테스트 100% PASS)
 ├── scripts/                     # [CLI Scripts] sync-timestamps.ts, audit-svg-design.ts, serve.ts 등
 └── shorts/                      # 생성된 45초 쇼츠 대본
 ```
