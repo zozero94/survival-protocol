@@ -33,6 +33,14 @@
       "description": "1. **Marcar hueco inicial**: Presione y gire la punta del huso a **1~1.5cm del borde** de la tabla hasta crear una pequeña concavidad.\n2. **Tallar muesca en V de 45 grados**: Con un cuchillo de piedra, talle una ranura en V de **45 grados** en forma de trozo de pizza desde el borde hasta el centro del hueco.\n3. **Colocar hoja recolectora**: Coloque una hoja ancha y seca justo debajo de la muesca para recoger todo el polvo de carbón caliente sin que caiga al suelo.",
       "actionNote": "> Precisión del corte: La punta de la V debe coincidir exactamente con el centro del hueco. Si se desvía, el polvo caliente no podrá salir, se atascará y no formará brasa.",
       "svgFileName": "02-step-01.svg",
+      "imageFileName": "pr02-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // FRICTION FIRE STEP 1: MUESCA EN V DE 45° Y HOJA RECOLECTORA",
+        "Tallar una muesca en V de 45 grados desde el borde hasta el centro del hueco",
+        "Alinear el huso afilado de madera verticalmente sobre el centro del hoyo inicial",
+        "Colocar una hoja ancha y seca bajo la ranura en V para recoger el polvo de carbón",
+        "[PASO 1] El vértice de la V debe tocar el centro exacto del hueco para acumular brasa"
+      ],
       "svgLabels": [
         "HOJA RECOLECTORA [BASE DE BRASA]",
         "MUESCA EN V 45° (Vértice en Centro)",
@@ -56,6 +64,14 @@
       "description": "1. **Enrollar cuerda 1 vuelta**: Enrolle la cuerda del arco **1 vuelta completa** alrededor del huso para lograr un agarre firme y sin deslizamiento.\n2. **Presión vertical de 12~15kg**: Pise la tabla firmemente con el pie izquierdo y presione la parte superior del huso con un apoyo usando **12~15kg de peso corporal** vertical.\n3. **Movimiento de sierra completo**: Mantenga el arco horizontal y desplácelo de extremo a extremo a lo largo de toda su longitud con ritmo constante.\n4. **Aceleración final al ver humo**: Cuando empiece a brotar humo blanco espeso, aumente la velocidad al máximo durante los **últimos 5 segundos con más de 15 carreras rápidas**.",
       "actionNote": "> Cruce del umbral térmico: No se detenga solo porque salga un poco de humo. Es indispensable dar 10~15 pasadas potentes adicionales tras la densa humareda para alcanzar los 400°C de ignición.",
       "svgFileName": "02-step-02.svg",
+      "imageFileName": "pr02-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // FRICTION FIRE STEP 2: PRESIÓN VERTICAL Y CARRERA COMPLETA DEL ARCO",
+        "Presionar hacia abajo con el bloque de apoyo manual sobre la punta superior del huso",
+        "Dar 1 vuelta con la cuerda al huso y mover el arco de extremo a extremo en horizontal",
+        "Pisar firme la tabla base y acelerar al máximo al surgir denso humo blanco",
+        "[PASO 2] Dar 10~15 pasadas largas extra tras el humo espeso para alcanzar ignición"
+      ],
       "svgLabels": [
         "BLOQUE DE APOYO (SOCKET MANUAL)",
         "F_DOWN: 12~15 kg (Carga Vertical)",
@@ -81,6 +97,14 @@
       "description": "1. **Esperar unión de la brasa**: Detenga el arco y deje reposar el montón de polvo negro sobre la hoja sin tocarlo durante **30 segundos** hasta que se compacte en un carbón ardiente.\n2. **Traslado al nido de yesca**: Forme un nido en forma de taza con hierba seca y vierta cuidadosamente la brasa en el centro.\n3. **Elevación a 45 grados**: Sostenga el nido a un ángulo de **45 grados** ligeramente por encima de los ojos y sople de forma **larga y suave** directamente a la brasa.\n4. **Brote de llama viva**: El oxígeno aviva el brillo y en **15~20 segundos** surge una potente **llama a 600°C**; trasládela de inmediato a su fogata preparada.",
       "actionNote": "> Regla del ángulo de elevación: Sostener el nido a 45° por encima de los ojos evita que el humo irrite la vista y permite que el calor ascendente precaliente las fibras de yesca, duplicando el éxito de ignición.",
       "svgFileName": "02-step-03.svg",
+      "imageFileName": "pr02-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // FRICTION FIRE STEP 3: UNIÓN DE BRASA Y SOPLADO ELEVADO A 45°",
+        "Dejar el polvo negro sobre la hoja 30s sin tocar hasta compactarse en brasa roja",
+        "Depositar la brasa en nido de hierba seca y pelusa inclinado 45° sobre los ojos",
+        "Evitar el humo y soplar aire largo y suave para avivar la llama abierta a 600°C",
+        "[PASO 3] Prohibido soplar fuerte al inicio — aire suave enciende la llama en 15~20s"
+      ],
       "svgLabels": [
         "NÚCLEO BRASA (450°C)",
         "SOPLO SUAVE Y CONTINUO (Flujo Lento)",
@@ -108,10 +132,20 @@
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
+    "imageFileName": "pr02-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-02 OUTCOME // BOW DRILL FRICTION FIRE & EMBER IGNITION",
+      "Paso 1: Tallar muesca en V de 45° en tabla base sobre hoja seca recolectora",
+      "Paso 2: Envolver el huso una vuelta con la cuerda del arco y serrar a todo largo",
+      "Presión y humo: Aplicar carga vertical con piedra de apoyo hasta emitir humo denso",
+      "Paso 3: Pasar la brasa consolidada de 30s al nido de yesca seca elevado a 45°",
+      "Llama viva: Soplar suave hasta llama abierta de 600°C y pasar a leña menuda",
+      "[CONTROL FINAL] Madera muy seca · Vértice V centrado · No soplar fuerte polvo crudo"
+    ],
     "title": "Ignición de Brasa por Fricción con Arco Completada",
     "description": "Una brasa incandescente a 400°C generada en la ranura en V, transferida con éxito al nido de yesca seca y avivada hasta producir una llama viva."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-26T11:47:13+09:00",
-  "contentHash": "e48cabac6f47ab6b"
+  "updatedAt": "2026-11-23T11:27:36.475Z",
+  "contentHash": "a332920902d2dd02"
 }

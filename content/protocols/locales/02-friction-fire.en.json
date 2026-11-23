@@ -33,6 +33,14 @@
       "description": "1. **Spindle Socket Seating**: Press and spin the drill tip **1-1.5cm inward** from the hearth board edge to burn in a small circular depression.\n2. **45-Degree V-Notch Carving**: Use a stone knife to slice a pizza-wedge-shaped **45-degree V-notch** from the board edge directly to the socket center.\n3. **Base Collector Placement**: Tuck a flat, dry wide leaf directly beneath the notch to catch all falling hot carbon dust.",
       "actionNote": "> Notch Alignment: The apex of the V-notch must touch the exact center of the drill hole. If misaligned, hot wood dust cannot exit and gets trapped around the spindle, preventing ember formation.",
       "svgFileName": "02-step-01.svg",
+      "imageFileName": "pr02-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // FRICTION FIRE STEP 1: HEARTH BOARD 45° V-NOTCH & CATCH LEAF",
+        "Carve a pizza-wedge 45-degree V-notch from the board edge straight to the socket center",
+        "Align the thumb-thick tapered wooden spindle vertically over the starter socket center",
+        "Place a broad dry fallen leaf directly under the V-notch opening to catch char dust",
+        "[STEP 1] Notch tip must meet the exact socket center so hot dust funnels cleanly"
+      ],
       "svgLabels": [
         "EMBER CATCHER LEAF [DRY BARK/LEAF]",
         "45° V-NOTCH (Apex Meets Axis Center)",
@@ -56,6 +64,14 @@
       "description": "1. **Single Cord Wrap**: Wrap the bowstring **once completely around** the spindle to maintain tight, non-slip friction.\n2. **12-15kg Downward Pressure**: Step firmly on the hearth board with your left foot and press down on the spindle top with a bearing block using **12-15kg of vertical body weight**.\n3. **Full-Stroke Sawing**: Keep the bow horizontal and saw back and forth using the full length of the stick. Start smooth and steady.\n4. **Smoke Acceleration Burst**: When thick white smoke billows out, accelerate to maximum effort for the **final 5 seconds with 15+ rapid strokes**.",
       "actionNote": "> Thermal Threshold: Never stop at the first trace of smoke. You must maintain 10-15 powerful acceleration strokes after dense smoke appears to cross the 400°C ignition threshold.",
       "svgFileName": "02-step-02.svg",
+      "imageFileName": "pr02-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // FRICTION FIRE STEP 2: VERTICAL LOAD & FULL-STROKE BOW SAWING",
+        "Press downward vertically onto the spindle top using a stone or wood bearing block",
+        "Wrap bowstring once around the spindle and saw the curved bow full length horizontally",
+        "Pin the hearth board firmly underfoot and sprint fast once dense white smoke pours",
+        "[STEP 2] Push 10-15 extra full strokes after thick smoke to cross ignition temperature"
+      ],
       "svgLabels": [
         "BEARING BLOCK (HAND SOCKET)",
         "F_DOWN: 12~15 kg (Vertical Load)",
@@ -81,6 +97,14 @@
       "description": "1. **Ember Coalescence Delay**: Stop sawing and let the smoking black dust rest untouched on the base leaf for **30 seconds** until it fuses into a solid glowing coal.\n2. **Tinder Nest Deposition**: Form dry grass into a cup-shaped bird's nest and gently dump the ember block into the core.\n3. **45-Degree Elevation**: Hold the nest at a **45-degree angle** slightly above eye level and blow **long, gentle breaths** directly into the coal.\n4. **Flame Flashover**: Oxygen fans the glow until an open **600°C flame** bursts within **15-20 seconds**; immediately transfer to your prepared campfire kindling.",
       "actionNote": "> Updraft Angle Rule: Holding the tinder nest at a 45-degree elevation prevents smoke from stinging your eyes while convective updrafts preheat surrounding fibers, doubling ignition reliability.",
       "svgFileName": "02-step-03.svg",
+      "imageFileName": "pr02-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // FRICTION FIRE STEP 3: EMBER CONSOLIDATION & 45° TINDER IGNITION",
+        "Leave char dust untouched on the dry leaf for 30s to fuse into a solid red ember coal",
+        "Cup the ember inside a dry grass & reed-down nest tilted 45° above eye level",
+        "Avoid rising smoke and blow long gentle breaths to fan open 600°C flames",
+        "[STEP 3] Never blow hard at first — soft steady airflow ignites flames within 15-20s"
+      ],
       "svgLabels": [
         "EMBER CORE (450°C)",
         "GENTLE CONTINUOUS BREATH (Steady Low Airflow)",
@@ -108,10 +132,20 @@
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
+    "imageFileName": "pr02-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-02 OUTCOME // BOW DRILL FRICTION FIRE & EMBER IGNITION",
+      "Step 1: Carve a 45° V-notch in the hearth board over a dry catch leaf",
+      "Step 2: Wrap bowstring once around the spindle and saw horizontally full length",
+      "Pressure & Smoke: Apply downward load via bearing block until thick white smoke billows",
+      "Step 3: Transfer the 30s consolidated coal into a 45°-tilted dry grass tinder nest",
+      "Open Flame: Fan gently into a 600°C flame and place immediately into twig kindling",
+      "[FINAL CHECK] Bone-dry wood · Centered V-notch tip · Never blow hard on raw dust"
+    ],
     "title": "Completed Bow Drill Friction Fire & Ember Ignition",
     "description": "A glowing 400°C charcoal ember generated in the 45° V-notch smoking heavily, transferred safely into a dry tinder nest and fanned into an open flame."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-26T11:47:13+09:00",
-  "contentHash": "e48cabac6f47ab6b"
+  "updatedAt": "2026-11-23T11:27:36.475Z",
+  "contentHash": "a332920902d2dd02"
 }

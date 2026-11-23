@@ -33,6 +33,14 @@
       "description": "1. **Ansatzloch eindrehen**: Drücken und drehen Sie die Spindelspitze **1~1.5cm vom Brettrand** entfernt ein, um eine flache Mulde einzubrennen.\n2. **45-Grad-V-Kerbe einschneiden**: Schneiden Sie mit einem Steinmesser eine pizzastückförmige **45-Grad-V-Kerbe** vom Rand bis exakt zur Mitte der Mulde.\n3. **Auffangblatt unterlegen**: Legen Sie ein breites, trockenes Blatt direkt unter die Kerbe, um den herabfallenden heißen Kohlestaub sauber aufzufangen.",
       "actionNote": "> Kerbengenauigkeit: Die Spitze der V-Kerbe muss exakt die Mitte der Mulde treffen. Weicht sie ab, kann das heiße Pulver nicht austreten, staut sich um den Stab und bildet keine Glut.",
       "svgFileName": "02-step-01.svg",
+      "imageFileName": "pr02-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // FRICTION FIRE STEP 1: 45°-V-KERBE IM FEUERBRETT & AUFFANGBLATT",
+        "Keilförmige 45-Grad-V-Kerbe vom Brettrand exakt bis zur Mitte der Mulde einschneiden",
+        "Daumendicke zugespitzte Holzspindel senkrecht über der Muldenmitte ausrichten",
+        "Breites trockenes Laubblatt direkt unter die V-Kerbe legen, um Kohlestaub zu sammeln",
+        "[SCHRITT 1] Kerbenspitze muss exakt das Lochzentrum treffen, damit Staub zu Glut wird"
+      ],
       "svgLabels": [
         "GLUTAUFFANGBLATT [RINDENBASIS]",
         "45° V-KERBE (Spitze am Achszentrum)",
@@ -56,6 +64,14 @@
       "description": "1. **Sehne 1-mal umwickeln**: Wickeln Sie die Bogensehne **1 volle Umdrehung** fest um die Spindel, damit sie nicht rutscht.\n2. **12~15kg Vertikaldruck**: Treten Sie mit dem linken Fuß fest auf das Brett und drücken Sie die Spindelspitze mit dem Handstück mit **12~15kg Körpergewicht** senkrecht nach unten.\n3. **Volle Hublänge sägen**: Halten Sie den Bogen waagerecht und ziehen und schieben Sie ihn über die gesamte Länge gleichmäßig hin und her.\n4. **Endspurt bei dichter Rauchentwicklung**: Sobald dicker weißer Rauch quillt, beschleunigen Sie in den **letzten 5 Sekunden mit 15+ kraftvollen Zügen** auf Höchstgeschwindigkeit.",
       "actionNote": "> Hitzeschwelle durchbrechen: Hören Sie nicht auf, nur weil etwas Rauch aufsteigt. Erst wenn 10~15 kraftvolle Züge nach dichtem Rauchaustritt durchgezogen werden, erreicht der Staub die 400°C Zündtemperatur.",
       "svgFileName": "02-step-02.svg",
+      "imageFileName": "pr02-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // FRICTION FIRE STEP 2: VERTIKALDRUCK & VOLLHUB-BOGENBOHREN",
+        "Mit Stein- oder Hartholzdrucklager kräftig senkrecht auf die Spindelspitze drücken",
+        "Bogensehne 1-mal um Spindel schlingen und Bogen waagerecht über volle Länge ziehen",
+        "Feuerbrett mit dem Fuß festklemmen und bei dichtem weißem Rauch voll beschleunigen",
+        "[SCHRITT 2] Nach dickem Rauch noch 10~15 volle Züge durchziehen bis zur Glutbildung"
+      ],
       "svgLabels": [
         "DRUCKLAGER (HANDSTÜCK)",
         "F_DOWN: 12~15 kg (Vertikallast)",
@@ -81,6 +97,14 @@
       "description": "1. **Glutkern ruhen lassen**: Halten Sie an und lassen Sie den rauchenden Kohlestaub auf dem Blatt für **30 Sekunden unberührt** ruhen, bis er zu einem festen Glutklumpen zusammenbackt.\n2. **Ins Zundernest betten**: Formen Sie aus trockenem Gras ein schalenförmiges Vogelnest und schütten Sie den Glutkern vorsichtig in die Mitte.\n3. **45-Grad-Neigung**: Halten Sie das Nest im **45-Grad-Winkel** leicht über Augenhöhe und blasen Sie **lang und sanft** direkt in die Glut.\n4. **Flammenausbruch**: Der Sauerstoff facht das Glühen an, bis innerhalb von **15~20 Sekunden eine 600°C heiße Flamme** emporlodert; setzen Sie diese sofort in das vorbereitete Reisigfeuer.",
       "actionNote": "> Steigungswinkel-Regel: Das Nest um 45 Grad über Augenhöhe zu halten verhindert, dass Rauch in die Augen sticht. Zudem heizt die aufsteigende Konvektionswärme die umgebenden Fasern vor und verdoppelt die Zündwahrscheinlichkeit.",
       "svgFileName": "02-step-03.svg",
+      "imageFileName": "pr02-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // FRICTION FIRE STEP 3: GLUTREIFUNG & ANFACHEN IM 45°-WINKEL",
+        "Kohlestaub auf dem Blatt 30 Sek. unberührt lassen, bis er zur festen roten Glut reift",
+        "Glut ins Gras- und Schilfwollenest betten und 45° leicht über Augenhöhe anheben",
+        "Rauch meiden und lang sowie sanft blasen, bis eine offene 600°C-Flamme hochschlägt",
+        "[SCHRITT 3] Anfangs nie stark blasen — sanfter Luftzug entzündet Flamme in 15~20 Sek."
+      ],
       "svgLabels": [
         "GLUTKERN (450°C)",
         "SANFTER KONTINUIERLICHER LUFTSTROM",
@@ -108,10 +132,20 @@
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
+    "imageFileName": "pr02-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-02 OUTCOME // BOW DRILL FRICTION FIRE & EMBER IGNITION",
+      "Schritt 1: 45°-V-Kerbe ins Feuerbrett schneiden und trockenes Auffangblatt unterlegen",
+      "Schritt 2: Sehne 1-mal um Spindel wickeln und Bogen über gesamte Länge hin- und herführen",
+      "Druck & Rauch: Über oberes Handstück senkrecht andrücken bis dichter weißer Rauch aufsteigt",
+      "Schritt 3: Nach 30 Sek. gereifte Glut ins um 45° geneigte Gras-Zundernest umbetten",
+      "Offene Flamme: Sanft zur 600°C-Flamme anblasen und sofort in Reisigfeuer übertragen",
+      "[ENDKONTROLLE] Knochentrockenes Holz · Kerbenspitze exakt mittig · Rohen Staub nie stark anblasen"
+    ],
     "title": "Vollendete Bogenbohrer-Reibungszündung mit Glut",
     "description": "Eine 400°C heiße Holzkohleglut aus der 45°-V-Kerbe, die sicher in das trockene Zundernest überführt und zu einer offenen Flamme entfacht wurde."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-26T11:47:13+09:00",
-  "contentHash": "e48cabac6f47ab6b"
+  "updatedAt": "2026-11-23T11:27:36.475Z",
+  "contentHash": "a332920902d2dd02"
 }

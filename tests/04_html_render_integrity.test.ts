@@ -77,5 +77,36 @@ describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫�
     assert.ok(html01.includes("querySelectorAll('[data-svg-legend-step]')"), '로케일 런타임에 스텝 범례 핫스왑 로직이 탑재되어야 함');
     assert.ok(html01.includes("querySelectorAll('[data-svg-legend-outcome-idx]')"), '로케일 런타임에 결과물 범례 핫스왑 로직이 탑재되어야 함');
   });
+
+  test('Option A+ 넘버링 도면(PR-02 전체 4종: Step 01~03 + Outcome)의 WebP 도면, 7개국어 범례 동기화 및 HTML 렌더링이 무결해야 한다', () => {
+    const html02 = fs.readFileSync(path.resolve(publicDir, 'protocol-02.html'), 'utf-8');
+    assert.ok(html02.includes('/images/pr02-outcome-diagram.webp'), 'PR-02에 Option A+ Outcome WebP 경로가 포함되어야 함');
+    assert.ok(html02.includes('TECHNICAL DIAGRAM'), 'PR-02 스텝 배지가 TECHNICAL DIAGRAM이어야 함');
+    assert.ok(html02.includes('data-svg-legend-outcome-idx="0"'), 'PR-02 Outcome 하단에 HTML 다국어 범례 컨테이너가 렌더링되어야 함');
+    assert.ok(html02.includes('PR-02 OUTCOME //'), 'PR-02 Outcome 범례 헤더가 렌더링되어야 함');
+    assert.ok(fs.existsSync(path.resolve(publicDir, 'images/pr02-outcome-diagram.webp')), 'public/images/pr02-outcome-diagram.webp 파일이 복사되어야 함');
+    for (let i = 0; i < 3; i++) {
+      const file = `pr02-step-0${i + 1}-diagram.webp`;
+      assert.ok(html02.includes(`/images/${file}`), `PR-02 Step 0${i + 1} Option A+ WebP 경로가 포함되어야 함`);
+      assert.ok(html02.includes(`data-svg-legend-step="${i}"`), `PR-02 Step 0${i + 1} HTML 다국어 범례 컨테이너가 렌더링되어야 함`);
+      assert.ok(fs.existsSync(path.resolve(publicDir, `images/${file}`)), `public/images/${file} 파일이 복사되어야 함`);
+    }
+
+    const protocolsDir = path.resolve(__dirname, '../content/protocols');
+    const ko02 = JSON.parse(fs.readFileSync(path.join(protocolsDir, '02-friction-fire.json'), 'utf-8')) as Protocol;
+    assert.strictEqual(ko02.outcome?.diagramLegend?.length, 7, 'PR-02 ko outcome.diagramLegend 길이는 7이어야 함');
+    for (const lang of ['en', 'ja', 'es', 'de', 'pt', 'zh-TW']) {
+      const loc02 = JSON.parse(fs.readFileSync(path.join(protocolsDir, 'locales', `02-friction-fire.${lang}.json`), 'utf-8')) as Protocol;
+      assert.strictEqual(loc02.outcome?.imageFileName, 'pr02-outcome-diagram.webp', `PR-02 ${lang} outcome.imageFileName 불일치`);
+      assert.strictEqual(loc02.outcome?.diagramLegend?.length, 7, `PR-02 ${lang} outcome.diagramLegend 길이 불일치`);
+      assert.equal(/[가-힣]/.test((loc02.outcome?.diagramLegend || []).join(' ')), false, `PR-02 ${lang} outcome.diagramLegend에 미번역 한글 잔존`);
+      ko02.steps.forEach((step, idx) => {
+        const locStep = loc02.steps[idx];
+        assert.strictEqual(locStep.imageFileName, step.imageFileName, `PR-02 ${lang} Step ${idx + 1} imageFileName 불일치`);
+        assert.strictEqual(locStep.diagramLegend?.length, step.diagramLegend?.length, `PR-02 ${lang} Step ${idx + 1} diagramLegend 길이 불일치`);
+        assert.equal(/[가-힣]/.test((locStep.diagramLegend || []).join(' ')), false, `PR-02 ${lang} Step ${idx + 1} diagramLegend에 미번역 한글 잔존`);
+      });
+    }
+  });
 });
 

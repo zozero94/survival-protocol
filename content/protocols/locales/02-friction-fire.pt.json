@@ -33,6 +33,14 @@
       "description": "1. **Fazer depressão inicial**: Pressione e gire a ponta do fuso a **1~1.5cm da borda** da prancha para queimar uma pequena cavidade.\n2. **Cortar entalhe em V de 45 graus**: Com uma faca de pedra, abra um entalhe em V de **45 graus** em formato de fatia de pizza, da borda até o centro da cavidade.\n3. **Posicionar folha coletora**: Coloque uma folha larga e seca logo abaixo do entalhe para recolher todo o pó de carvão quente sem derramar.",
       "actionNote": "> Alinhamento do entalhe: A ponta do entalhe em V deve tocar exatamente o centro da cavidade. Se desviar, o pó quente não sai, fica preso ao redor do fuso e não forma brasa.",
       "svgFileName": "02-step-01.svg",
+      "imageFileName": "pr02-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // FRICTION FIRE STEP 1: ENTALHE EM V DE 45° E FOLHA COLETORA",
+        "Cortar um entalhe em V de 45 graus da borda da prancha até o centro do furo",
+        "Alinhar verticalmente o fuso afilado de madeira sobre o centro da cavidade inicial",
+        "Posicionar uma folha seca larga logo abaixo do entalhe em V para coletar o pó preto",
+        "[PASSO 1] A ponta do V deve tocar exatamente o centro do furo para unir a brasa"
+      ],
       "svgLabels": [
         "FOLHA COLETORA [BASE DE BRASA]",
         "ENTALHE EM V 45° (Vértice no Centro)",
@@ -56,6 +64,14 @@
       "description": "1. **Dar 1 volta com a corda**: Enrole a corda do arco **1 volta completa** em torno do fuso para obter tração firme sem derrapar.\n2. **Pressão vertical de 12~15kg**: Pise firme na prancha com o pé esquerdo e empurre o topo do fuso com o bloco de apoio usando **12~15kg de peso corporal** vertical.\n3. **Serrar em curso total**: Mantenha o arco na horizontal e empurre-puxe de ponta a ponta com ritmo uniforme em todo o comprimento.\n4. **Arrancada final com fumaça**: Quando fumaça branca densa brotar, acelere ao máximo nos **últimos 5 segundos com mais de 15 passadas rápidas**.",
       "actionNote": "> Ultrapassagem do limite térmico: Não pare assim que a fumaça surgir. É essencial manter 10~15 passadas vigorosas adicionais após a fumaça densa para atingir o limiar de ignição de 400°C.",
       "svgFileName": "02-step-02.svg",
+      "imageFileName": "pr02-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // FRICTION FIRE STEP 2: PRESSÃO VERTICAL E ARCO EM CURSO TOTAL",
+        "Pressionar verticalmente com o bloco de apoio sobre a ponta superior do fuso",
+        "Enrolar a corda 1 vez no fuso e serrar o arco na horizontal de ponta a ponta",
+        "Firmar a prancha sob o pé e acelerar ao máximo quando surgir fumaça branca densa",
+        "[PASSO 2] Executar mais 10~15 passadas fortes após a fumaça densa para atingir ignição"
+      ],
       "svgLabels": [
         "BLOCO DE APOIO (SOQUETE MANUAL)",
         "F_DOWN: 12~15 kg (Carga Vertical)",
@@ -81,6 +97,14 @@
       "description": "1. **Aguardar união da brasa**: Pare o arco e deixe o monte de pó preto descansar sobre a folha por **30 segundos** sem tocar, até se aglutinar em uma brasa sólida.\n2. **Acomodar no ninho de isca**: Molde o capim seco em formato de ninho de pássaro e despeje cuidadosamente a brasa no centro.\n3. **Inclinar a 45 graus**: Levante o ninho a um ângulo de **45 graus** um pouco acima dos olhos e sopre de forma **longa e suave** diretamente na brasa.\n4. **Ignição em chama aberta**: O oxigênio aviva a brasa e em **15~20 segundos** irrompe uma forte **chama a 600°C**; transfira imediatamente para a fogueira preparada.",
       "actionNote": "> Regra de ângulo de elevação: Erguer o ninho a 45° acima dos olhos evita que a fumaça irrite a visão e permite que a corrente de calor ascendente pré-aqueça as fibras da isca, dobrando o sucesso do fogo.",
       "svgFileName": "02-step-03.svg",
+      "imageFileName": "pr02-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // FRICTION FIRE STEP 3: CONSOLIDAÇÃO DA BRASA E SOPRO A 45°",
+        "Deixar o pó preto na folha sem tocar por 30s até fundir em brasa vermelha firme",
+        "Colocar a brasa no ninho de capim seco e plumas inclinado a 45° acima dos olhos",
+        "Evitar a fumaça e soprar longo e suave para transformar em chama aberta a 600°C",
+        "[PASSO 3] Nunca sopre forte no início — fluxo suave acende a chama em 15~20s"
+      ],
       "svgLabels": [
         "NÚCLEO BRASA (450°C)",
         "SOPRO SUAVE E CONTÍNUO (Fluxo Lento)",
@@ -108,10 +132,20 @@
   },
   "outcome": {
     "svgFileName": "pr02-outcome.svg",
+    "imageFileName": "pr02-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-02 OUTCOME // BOW DRILL FRICTION FIRE & EMBER IGNITION",
+      "Passo 1: Cortar entalhe em V de 45° na prancha base sobre folha seca coletora",
+      "Passo 2: Enrolar a corda 1 vez no fuso e serrar o arco em curso horizontal completo",
+      "Pressão e fumaça: Aplicar carga vertical no bloco de pedra até sair fumaça densa",
+      "Passo 3: Transferir a brasa firme de 30s para o ninho de isca inclinado a 45°",
+      "Chama aberta: Soprar suave até chama de 600°C e passar imediatamente à fogueira",
+      "[VERIFICAÇÃO FINAL] Madeira seca · Ponta do V centrada · Sem sopro forte no pó inicial"
+    ],
     "title": "Ignição por Fricção com Arco e Brasa Concluída",
     "description": "Uma brasa incandescente a 400°C gerada na ranhura em V, transferida com sucesso para o ninho de mecha seca e soprada até formar chamas vivas."
   },
   "createdAt": "2026-10-09T16:05:00.000Z",
-  "updatedAt": "2026-10-26T11:47:13+09:00",
-  "contentHash": "e48cabac6f47ab6b"
+  "updatedAt": "2026-11-23T11:27:36.475Z",
+  "contentHash": "a332920902d2dd02"
 }
