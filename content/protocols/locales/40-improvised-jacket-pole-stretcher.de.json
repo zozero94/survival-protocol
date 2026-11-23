@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-40",
+  "category": "TOOLS",
+  "title": "Stromlose Nottrage aus 2 langen Stangen und 2 dicken Jacken für Katastrophen-Rettung",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[KATASTROPHEN-RETTUNG: ZWEI STANGEN & ZWEI JACKEN MIT INNENLIEGENDEN ÄRMELN ALS NOTTRAGE]",
+  "summary": "Wenn der Notruf 112 oder Rettungsdienst rasch durchkommt und echte Klapptragen, Spineboard und Sanitäter bereitstehen, rufen Sie sofort professionelle Hilfe und warten Sie nach Möglichkeit auf geschulte Evakuierung. Bei Verdacht auf Nacken-, Rücken- oder Wirbelsäulenverletzungen nach Sturz oder Einsturz darf ein Mensch zudem NIEMALS ohne akute Lebensgefahr (Feuer, Nachbeben, steigendes Wasser) bewegt werden. Sind Rettungswege durch Trümmer oder Stromausfall blockiert und droht sofortige Gefahr, fertigen zwei stabile Stangen über Körperlänge und zwei dicke Reißverschluss-Jacken in zwei Minuten eine belastbare Trage. Erst Blutungen und Brüche mit [Tourniquet & Brustsiegel](/protocol-32) sowie [Astschiene](/protocol-18) sichern, Stangen durch nach innen gezogene Ärmel führen, Reißverschlüsse nach unten drehen, 10-Sekunden-Lasttest machen, zu viert waagerecht tragen und per [120-dB-Pfeife & Spiegel](/protocol-27) Hilfe rufen.",
+  "timeRequired": "2–3 Minuten Aufbau und Lasttest (zzgl. vorheriger Blutstillung und Schienung)",
+  "successRate": "93% (mit stabilen 2m+ Stangen, voll geschlossenem Reißverschluss, innenliegenden Ärmeln, Verschluss unten & Vortest)",
+  "difficulty": "Anfänger (ohne Werkzeug oder Strom; benötigt nur 2 lange Stangen & 2 robuste Reißverschluss-Jacken)",
+  "outputPerHour": "Schafft eine erwachsenentaugliche Notfall-Trage durch Nutzung von Reißverschluss und Stoffspannung ohne Nähen",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 stabile, rissfreie Holzstangen, Besenstiele oder feste Metallrohre länger als Körpergröße (~2 m+)",
+      "desc": "Mindestens eine Unterarmlänge Überstand an Kopf- und Fußende als Griffe planen; halbhandgelenkdicke Stangen wählen, die unter Gewicht nicht knacken."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 dicke Winterjacken oder stabile Segeltuch-Arbeitsjacken mit kräftigem Reißverschluss & festen Nähten",
+      "desc": "Dünne Windbreaker oder morsche Stoffe reißen unter Belastung; zwei feste Jacken wählen, deren Front-Reißverschluss sicher bis zum Kragen hochschließt."
+    },
+    {
+      "id": "mat-03",
+      "name": "1–2 gerollte Handtücher oder gefaltete Kleidung zur Kopfstützung & griffige Arbeitshandschuhe",
+      "desc": "Seitliche Polster verhindern Kopfwackeln, sodass auch stabilisierte Patienten nach [Hitzschlag-Kühlung](/protocol-39) oder [Feldschienung](/protocol-18) ruhig bewegt werden."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: 2 lange Stangen prüfen, Jacken bis zum Kragen zippen und alle 4 Ärmel nach innen ziehen",
+      "description": "1. **2 lange Stangen ohne Risse oder Fäulnis belasten**: Vermeiden Sie Stangenbruch im Hub durch eigenes Draufdrücken auf zwei Stangen über Körperlänge ohne **Knackgeräusche oder starkes Durchbiegen**.\n2. **Front-Reißverschlüsse beider dicken Jacken voll bis oben ziehen**: Verhindern Sie Aufreißen in der Mitte, indem beide Zipper **bis zum obersten Kragenanschlag fest einrasten** und Knopfleisten schließen.\n3. **Alle 4 Ärmel gerade nach innen in den Jackenrumpf umstülpen**: Führen Sie Hände von innen in jeden Ärmel, greifen Sie die Bündchen und **ziehen Sie die Ärmel sauber ins Jackeninnere**, sodass gerade Tunnel entstehen.",
+      "actionNote": "> Warum die Ärmel in die Jacke hineinziehen statt die Stangen außen durchzustecken? Hängen die Ärmel außen, zerrt das volle Gewicht nur an einer Schulternaht, bis sie reißt. Nach innen gezogen und voll gezippt, tragen Rücken- und Vorderstoff gemeinsam als geschlossene Röhre.",
+      "svgFileName": "pr40-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 2 LANGE STANGEN + ÄRMEL NACH INNEN",
+        "2 stabile Stangen über Körperlänge genau prüfen",
+        "Reißverschluss beider dicken Jacken voll schließen",
+        "Beide Ärmel sauber nach innen in Jacken ziehen",
+        "[KERN] Innenärmel verteilen Last auf ganzen Stoff"
+      ],
+      "deepDive": {
+        "badge": "INSIDE-OUT SLEEVE TUNNEL",
+        "title": "Vollverschluss & Lastverteilung durch innenliegende Ärmeltunnel",
+        "text": "Das Umstülpen der Ärmel in den geschlossenen Jackenkörper verwandelt Armöffnungen in zweilagige durchgehende Lastkanäle statt punktueller Armlochnähte. Fahren Sie die gesamte Zahnreihe mit dem Finger ab, um Fehleinrastungen auszuschließen.",
+        "fieldSpecs": [
+          {
+            "name": "Zwei robuste geschlossene Arbeitsjacken mit innenliegenden Ärmeln neben zwei langen Holzstangen",
+            "scientificName": "Two Heavy Zipped Canvas Jackets With Inside-Out Sleeves Beside Long Poles",
+            "categoryTag": "Innenärmel / Vollreißverschluss",
+            "imageFileName": "id-jacket-sleeves-inside-out-poles.jpg",
+            "hudCode": "FIG. TLS-40A // MACRO OPTIC",
+            "hudStatus": "SLEEVE TUNNEL: INSIDE-OUT LOCK",
+            "traits": [
+              {
+                "label": "Stangen/Maß",
+                "value": "**2 starre rissfreie Stangen** weit über Kopf und Füße hinausragen lassen."
+              },
+              {
+                "label": "Zipper/Zu",
+                "value": "**Reißverschluss bis ganz nach oben** ziehen und feste Verzahnung prüfen."
+              },
+              {
+                "label": "Ärmel/Innen",
+                "value": "**Alle 4 Ärmel gerade nach innen** zu parallelen Führungstunneln einziehen."
+              }
+            ],
+            "fieldUse": "Schafft hochbelastbare Stangenkanäle ganz ohne Seile oder Nähzeug"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Jackensäume überlappen, Stangen ganz durchstecken & Reißverschluss nach unten drehen",
+      "description": "1. **Jackensäume in der Mitte eine Handspanne überlappen**: Verhindern Sie Einsinken am Gesäß, indem zwei Jacken Saum gegen Saum mit **handbreiter Überlappung** den ganzen Körper von Schulter bis Bein abdecken.\n2. **Beide Stangen komplett durch die Ärmeltunnel schieben**: Stecken Sie zwei parallele Stangen hindurch, sodass an allen vier Ecken mindestens **eine Unterarmlänge als Griff** frei bleibt.\n3. **Trage umdrehen, sodass harte Zipper nach unten zeigen**: Schützen Sie Rücken und Haut vor Druckstellen, indem die **glatte Rückenfläche oben liegt** und Metallzipper abwärts zeigen.",
+      "actionNote": "> Warum beide Säume überlappen und Reißverschlüsse unbedingt nach unten legen? Jeder Spalt lässt Hüfte oder Rücken durchsackend einknicken; oben liegende Metallzipper scheuern schmerzhaft auf Wunden und begünstigen ein Aufdrücken des Schiebers.",
+      "svgFileName": "pr40-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // 2 JACKEN REIHE + REISSVERSCHLUSS UNTEN",
+        "Jackensäume handbreit überlappen für Körperlänge",
+        "2 Stangen ganz durchschieben mit Grifflänge vorn",
+        "Reißverschluss nach unten, glatte Rückseite oben",
+        "[KERN] Kein Durchhängen & Schutz vor Reißverschluss"
+      ],
+      "deepDive": {
+        "badge": "DUAL-JACKET BED GEOMETRY",
+        "title": "Doppeljacken-Überlappungsbett & Zipper-Unten-Ausrichtung",
+        "text": "Das handbreite Überlappen beider Jackensäume im schwersten Beckenbereich verhindert Durchhänger. Mit abwärts gewandten Reißverschlüssen liegt der verletzte Rücken weich auf dem glatten Rückenteil und entlastet die Zahnnaht.",
+        "fieldSpecs": [
+          {
+            "name": "Zwei überlappte geschlossene Segeltuchjacken auf parallelen Holzstangen mit Reißverschluss unten",
+            "scientificName": "Zipper-Down Dual Jacket Stretcher Bed With Parallel Protruding Handle Poles",
+            "categoryTag": "Doppelbett / Zipper Unten",
+            "imageFileName": "id-zipped-dual-jacket-stretcher-bed.jpg",
+            "hudCode": "FIG. TLS-40B // MACRO OPTIC",
+            "hudStatus": "DUAL BED: ZIPPER SIDE DOWN",
+            "traits": [
+              {
+                "label": "Überlapp/Spanne",
+                "value": "**Untere Säume 1 Handspanne kreuzen** gegen jedes Einsacken der Hüfte."
+              },
+              {
+                "label": "Griffe/Überstand",
+                "value": "**Vier gleich lange Griffe** (eine Unterarmlänge) an beiden Enden lassen."
+              },
+              {
+                "label": "Lage/Rückseite",
+                "value": "**Reißverschlüsse abwärts legen** für glatte Liegefläche nach oben."
+              }
+            ],
+            "fieldUse": "Formt eine durchgehend weiche Liegefläche bereit für den Belastungscheck"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Tragenmitte 10 Sekunden fest mit Gewicht prüfen, bevor ein Verletzter aufgelegt wird",
+      "description": "1. **Mitte des leeren Betts 10 Sekunden stark mit Körpergewicht drücken**: Verhindern Sie Stürze in der Luft, indem eine gesunde Person kraftvoll mit Händen oder Knien auf die **überlappte Mitte** drückt.\n2. **Mit Testgewicht anheben & Stangenbiegung sowie Zähne prüfen**: Kurz mit Gepäck heben, um sicherzugehen, dass **kein Holz knarrt und keine Zipperzähne auseinanderklaffen**.\n3. **Jacken bei leisestem Nahtknacken sofort austauschen**: Schon kleinstes Reißen platzt unter voller Transportlast auf — bei Verdacht sofort eine festere Jacke neu auffädeln.",
+      "actionNote": "> Warum in größter Eile 10 Sekunden auf eine leere Trage drücken? Lange gelagerte Jacken haben oft morsche Fäden oder spröde Zipper; versagt eine Naht im Schweben, stürzt der Patient hart auf Steinboden zurück.",
+      "svgFileName": "pr40-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // LASTTEST IN DER MITTE VOR PATIENTENHUB",
+        "Mitte 10 Sekunden fest mit Körpergewicht drücken",
+        "Stangenbiegung, Knacken & Reißverschluss prüfen",
+        "Bei Nahtriss (X) sofort robustere Jacke einsetzen",
+        "[KERN] Auflegen NUR nach bestandenem Belastungstest"
+      ],
+      "deepDive": {
+        "badge": "PRE-LIFT LOAD VERIFICATION",
+        "title": "Verpflichtender 10-Sekunden-Statiktest & Nahtermüdungs-Früherkennung",
+        "text": "Keine Behelfstrage darf ohne vorherigen **Belastungstest** unter echte Patienten gelegt werden. Kräftiger Druck in die Jackenüberlappung deckt morsche Nähte, Zahnfehler und übermäßiges Stangendurchbiegen sofort gefahrlos auf.",
+        "fieldSpecs": [
+          {
+            "name": "Behandschuhte Helferhände drücken kräftig auf Stange und straffe Mittelnaht der Jacken-Nottrage",
+            "scientificName": "Gloved Rescue Hands Pressing Dual-Jacket Stretcher Seam & Pole For Load Check",
+            "categoryTag": "Vortest / 10-Sek.-Lastcheck",
+            "imageFileName": "id-stretcher-load-test-grip-check.jpg",
+            "hudCode": "FIG. TLS-40C // MACRO OPTIC",
+            "hudStatus": "LOAD TEST: PRE-LIFT VERIFIED",
+            "traits": [
+              {
+                "label": "Test/Druck",
+                "value": "**Mittelzone voll belasten** vor dem Umbetten der verletzten Person."
+              },
+              {
+                "label": "Check/Geräusch",
+                "value": "**Auf Knacken oder Fadenrisse achten** und schwache Teile gleich tauschen."
+              },
+              {
+                "label": "Halt/Handschuh",
+                "value": "**Griffige Handschuhe tragen** oder feuchte Stangen mit Tuch umwickeln."
+              }
+            ],
+            "fieldUse": "Schließt tödliche Zweitstürze durch Zipper- oder Stangenbruch während Rettung aus"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Blutungen stillen, Kopf seitlich polstern & zu viert auf Kommando waagerecht heben",
+      "description": "1. **Blutstillung, Schienung und Kopfrollen-Handtücher beenden**: Verhindern Sie Schockverschlimmerung durch vorheriges [Tourniquet](/protocol-32) bzw. [Astschienen](/protocol-18) und seitliche Handtuchrollen neben dem Kopf.\n2. **4 Helfer beugen Knie & heben waagerecht auf ein Zählkommando**: Vermeiden Sie Rückenschäden und Schräglage durch kräftigen Griff und gemeinsames Heben aus **den Knien bei „Eins, zwei, drei“**.\n3. **Füße voraus tragen & nach Rettung Warnsignal geben**: Langsam mit den Füßen voran gehen (nur steil bergauf Kopf vorn), um Hindernisse und Atmung zu sehen, dann mit [120-dB-Pfeife](/protocol-27) alarmieren.",
+      "actionNote": "> Warum müssen alle vier Helfer exakt auf ein Wort heben und mit den Füßen zuerst gehen? Unkoordinierte Bewegungen kippen die Trage seitlich ab; Gehen mit Füßen voraus hält das Gesicht im Blickfeld des hinteren Trägers für ständige Atemkontrolle.",
+      "svgFileName": "pr40-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // KOPFPOLSTER + 4-MANN-GLEICHTAKT-HUB",
+        "Vor Hub blutstillen & Kopf seitlich mit Tuch polstern",
+        "4 Helfer heben aus Knien auf Kommando waagerecht",
+        "Füße voraus gehen (bergauf Kopf vorn) & Pfeife",
+        "[KERN] Waagerechter Gleichschritt schützt vor Sturz"
+      ],
+      "deepDive": {
+        "badge": "4-CARRIER LEVEL EXTRACTION",
+        "title": "Erstversorgung vor Hub, kniegestützter Synchronhub & Füße-voraus-Marsch",
+        "text": "Blutstillung, Schienung und Kopfstabilisierung gehen jedem Transport vor. Vier Träger, die auf klares Kommando über gebeugte Knie gleichmäßig heben und Füße voraus schreiten, verhindern Kippen auf Trümmerwegen.",
+        "fieldSpecs": [
+          {
+            "name": "Fertige Nottrage im Schutzgang mit gerollten Kopfhandtüchern und geraden Holzschienen seitlich",
+            "scientificName": "Completed Dual-Jacket Stretcher With Rolled Head Bolsters & Wooden Splints",
+            "categoryTag": "4-Helfer-Hub / Kopfpolster",
+            "imageFileName": "id-four-carrier-level-patient-lift.jpg",
+            "hudCode": "FIG. TLS-40D // MACRO OPTIC",
+            "hudStatus": "CARRY: 4-PERSON LEVEL LIFT",
+            "traits": [
+              {
+                "label": "Erst/Sichern",
+                "value": "**Wunden stillen & Kopf seitlich stützen**, bevor jemand die Stangen anhebt."
+              },
+              {
+                "label": "Hub/Waage",
+                "value": "**Auf klares Kommando kniegestützt** exakt gleichzeitig und eben heben."
+              },
+              {
+                "label": "Weg/Füße",
+                "value": "**Auf ebener Strecke und abwärts Füße voraus**, nur bergauf Kopf voraus."
+              }
+            ],
+            "fieldUse": "Erschütterungsfreier sicherer Patiententransport durch enge Flure und Geröll"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Offene Reißverschlüsse oder Einzeljacken-Absturz & unützes Ziehen bei Wirbelsäulen-Verdacht",
+    "description": "Das Heben eines Erwachsenen mit unvollständigem Reißverschluss oder nur einer Jacke sprengt den Stoff im Hub und stürzt Kopf oder Hüfte hart auf Beton. Genauso lebensgefährlich ist es, Personen mit vermuteter Nacken- oder Rückenverletzung nach Gebäudeeinsturz ([4:1-Hebel & Kreuzholz-Rettung](/protocol-37)) OHNE Feuer-, Einsturz- oder Wassergefahr auf Tragen zu zerren — lassen Sie sie mit gerollten Handtüchern am Kopf ruhig liegen bis das 112-Spineboard eintrifft.",
+    "consequence": "Zweitverletzung durch Aufplatzen in der Luft oder bleibende Querschnittslähmung durch unnötigen Wirbelsäulen-Transport."
+  },
+  "faqs": [
+    {
+      "question": "Was tun, wenn wir nur eine Reißverschluss-Jacke und sonst nur geknöpfte Arbeitshemden oder Decken haben?",
+      "causeDiagnostic": "Eine Jacke deckt nur den halben Oberkörper ab; Becken und Beine kippen ungestützt ab.",
+      "resolution": "Knöpfen Sie **zwei bis drei robuste langärmelige Arbeitshemden übereinander komplett zu**, ziehen deren Ärmel nach innen und schieben beide Stangen hindurch. Fehlen Ärmelkleider, schlagen Sie eine starke Plane oder dicke Wolldecke mindestens zweimal fest um jede Stange und pressen Sie die Enden beim Heben nach innen."
+    },
+    {
+      "question": "Können zur Not nur zwei Helfer statt vier Personen diese Jacken-Trage sicher tragen?",
+      "causeDiagnostic": "Nur zwei Träger an den Enden erzeugen stärkere Durchbiegung und seitliche Kippgefahr über Hindernissen.",
+      "resolution": "Tragen Sie zu **zweit nur leichte Personen über sehr kurze ebene Strecken**, prüfen Sie vorher die Stangen doppelt hart, drehen Sie die Griffe leicht einwärts zur Stoffspannung und gehen Sie mit gebeugten Knien sowie halber Schrittlänge."
+    }
+  ],
+  "outcome": {
+    "title": "Stromlose Nottrage aus 2 gekrempelten Jacken & 2 langen Stangen mit 10s-Lasttest & 4-Helfer-Hub",
+    "badge": "TARGET OUTCOME // INNENÄRMEL-NOTTRAGE & SICHERE 4-MANN-EVAKUIERUNG",
+    "description": "Katastrophen-Nottrage ohne Nähen oder Strom: zwei feste lange Stangen durch zwei voll gezippte, überlappte Jacken mit innenliegenden Ärmeln (Zipper unten), geprüft durch 10-Sekunden-Mittellasttest und waagerecht getragen von vier Helfern.",
+    "svgFileName": "pr40-outcome.svg",
+    "svgLabels": [
+      "PR-40 FERTIG // 2-JACKEN-STANGEN-NOTTRAGE",
+      "STUFE 01: ÄRMEL INNEN",
+      "Stangen prüfen & voll zippen",
+      "STUFE 02: DOPPELBETT",
+      "1 Spanne überlappen & Zip unten",
+      "STUFE 03: LASTTEST 10S",
+      "Mitte drücken & Nähte prüfen",
+      "STUFE 04: 4-MANN-HUB",
+      "Kopf stützen & waagerecht gehn",
+      "[PRINZIP] Innenärmel leiten Last ohne Nähen sicher über den ganzen Jackenstoff"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Katastrophe ohne Rettungswagen und ein Verletzter muss sofort weg? In 2 Minuten baust du aus 2 Stangen und 2 Jacken eine stabile Nottrage!",
+    "body": "Wichtig zuerst: Bei Verdacht auf Nacken- oder Rückenbruch NIE bewegen, solange kein Feuer oder Einsturz droht! Sonst zwei feste Stangen länger als ein Erwachsener wählen, zwei dicke Jacken bis ganz oben zippen und alle Ärmel nach innen in den Rumpf ziehen! Säume handbreit überlappen, Stangen durchschieben und Reißverschlüsse nach unten drehen! Vor dem Heben 10 Sekunden fest die Mitte auf Reißfestigkeit testen, dann zu viert auf Kommando Füße voraus!"
+  },
+  "createdAt": "2026-11-23T01:07:17.085Z",
+  "contentHash": "a43aecfb46b37d81"
+}

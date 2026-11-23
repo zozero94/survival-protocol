@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-40",
+  "category": "TOOLS",
+  "title": "Maca de Emergência Sem Energia com 2 Varas Longas e 2 Jaquetas Grossas em Desastres",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[RESGATE EM DESASTRES: MACA COM 2 JAQUETAS DE MANGAS INVERTIDAS E 2 VARAS LONGAS]",
+  "summary": "Se o resgate 192/193 ou socorristas puderem chegar logo ao local com maca dobrável profissional e prancha rígida de coluna, chame a emergência imediatamente e aguarde a equipe equipada primeiro. Além disso, quem sofreu queda alta ou desabamento com suspeita de lesão no pescoço ou coluna NUNCA deve ser movido sem perigo imediato de vida como fogo, novo desabamento ou enchente. Porém, quando ambulâncias não passam por escombros ou falta de luz e evacuar é urgente, 2 varas mais longas que um adulto e 2 jaquetas grossas formam uma maca firme em 2 minutos. Primeiro contenha sangramentos e fraturas com [Torniquete e Selo Torácico](/protocol-32) e [Tala de Galhos](/protocol-18), passe 2 varas nas mangas viradas para dentro com zíper para baixo, faça teste de peso de 10 segundos, erga plano em 4 pessoas e chame ajuda com [Apito 120dB e Espelho](/protocol-27).",
+  "timeRequired": "2 a 3 minutos para montar e testar carga (fora controle prévio de sangramento e talas)",
+  "successRate": "93% (com varas firmes de 2m+, zíper até o topo, mangas para dentro, zíper para baixo e teste de carga)",
+  "difficulty": "Iniciante (sem ferramentas ou energia; só 2 varas longas e 2 casacos grossos com zíper)",
+  "outputPerHour": "Cria maca resistente para peso adulto aproveitando costuras e zíper originais sem dar nós nem costurar",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Varas de Madeira Firme, Cabos de Vassoura Grossos ou Tubos Rígidos Maiores que a Vítima (~2m+)",
+      "desc": "Deixe pelo menos o comprimento de um antebraço livre na cabeça e pés como alças; escolha espessura de meio punho sem rachaduras nem nós fracos."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Jaquetas Grossas de Inverno ou Casacos de Lona Pesada com Zíper Forte e Costuras Reforçadas",
+      "desc": "Evite corta-ventos finos ou panos gastos que rasgam fácil; escolha dois casacos resistentes cujo zíper frontal feche firme até o colarinho."
+    },
+    {
+      "id": "mat-03",
+      "name": "1–2 Toalhas Enroladas ou Roupas para Apoiar Cabeça e Pescoço + Luvas de Trabalho Antiderrapantes",
+      "desc": "Os rolos laterais firmam a cabeça ao remover vítimas estabilizadas de [Resfriamento por Insolação](/protocol-39) ou [Imobilização com Tala](/protocol-18) com segurança."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Escolher 2 Varas Longas Firmes, Fechar Zíperes até o Pescoço e Virar Mangas para Dentro",
+      "description": "1. **Testar 2 varas longas sem trincas ou podridão**: Previna quebra no ar pressionando o próprio peso sobre duas varas maiores que o paciente até confirmar zero **estalos ou envergadura excessiva**.\n2. **Subir zíperes frontais das 2 jaquetas até a trava superior**: Impeça abertura no meio fechando ambos os zíperes **até o travamento completo no pescoço** junto com botões.\n3. **Enfiar mãos e virar as 4 mangas retas para dentro do tronco**: Evite que as varas escapem puxando os punhos pelo avesso **para dentro do forro do corpo da jaqueta**, formando túneis fechados.",
+      "actionNote": "> Por que virar as mangas para dentro em vez de enfiar as varas pelas mangas do lado de fora? Pelo lado de fora, o peso puxa só a costura do ombro e arrebenta o fio. Virando por dentro com o zíper travado, frente e costas envolvem juntos a vara e dividem toda a carga.",
+      "svgFileName": "pr40-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 2 VARAS LONGAS + MANGAS PARA DENTRO",
+        "Escolher 2 varas maiores que a vítima sem trincas",
+        "Fechar zíper de 2 jaquetas grossas até o pescoço",
+        "Virar todas as mangas para dentro reto no tronco",
+        "[BASE] Mangas por dentro dividem peso no tecido"
+      ],
+      "deepDive": {
+        "badge": "INSIDE-OUT SLEEVE TUNNEL",
+        "title": "Fechamento Total de Zíper e Distribuição de Peso em Mangas Invertidas",
+        "text": "Puxar as mangas para dentro do corpo fechado transforma os braços em túneis duplos ancorados em duas camadas de tecido pesado em vez de depender só da costura da cava. Passe os dedos no zíper conferindo cada dente.",
+        "fieldSpecs": [
+          {
+            "name": "Duas jaquetas grossas com zíper fechado e mangas puxadas para dentro ao lado de duas varas",
+            "scientificName": "Two Heavy Zipped Canvas Jackets With Inside-Out Sleeves Beside Long Poles",
+            "categoryTag": "Mangas Para Dentro / Zíper Fechado",
+            "imageFileName": "id-jacket-sleeves-inside-out-poles.jpg",
+            "hudCode": "FIG. TLS-40A // MACRO OPTIC",
+            "hudStatus": "SLEEVE TUNNEL: INSIDE-OUT LOCK",
+            "traits": [
+              {
+                "label": "Varas/Comprimento",
+                "value": "**Escolher 2 varas firmes sem rachadura** bem maiores que o ferido."
+              },
+              {
+                "label": "Zíper/Trava",
+                "value": "**Subir zíperes até o colarinho** sem deixar dentes abertos."
+              },
+              {
+                "label": "Mangas/Avesso",
+                "value": "**Puxar 4 mangas retas para dentro** formando túneis paralelos contínuos."
+              }
+            ],
+            "fieldUse": "Formação rápida de canais paralelos para varas sem nós nem agulha"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Sobrepor Barras das Jaquetas, Passar 2 Varas e Virar o Lado do Zíper para Baixo",
+      "description": "1. **Sobrepor as barras inferiores das 2 jaquetas em 1 palmo**: Evite vão livre no quadril encostando os dois casacos barra com barra com **um palmo de sobreposição central** cobrindo tronco e pernas.\n2. **Passar as 2 varas por todo o túnel deixando alças livres**: Deslize os dois cabos da ponta da cabeça aos pés garantindo ao menos **um antebraço de pegada** nos quatro cantos.\n3. **Virar a maca para que zíperes e botões apontem para o chão**: Proteja costas e pele de arranhões deixando as **costas lisas voltadas para cima** e ferragens para baixo.",
+      "actionNote": "> Por que sobrepor um palmo e deixar o zíper virado para o chão? Qualquer fresta entre casacos deixa o quadril afundar; além disso, zíper de metal voltado para cima fere a pele sob pressão e força a trava a abrir.",
+      "svgFileName": "pr40-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // LEITO 2 JAQUETAS + ZÍPER PARA BAIXO",
+        "Sobrepor barras 1 palmo para cobrir corpo todo",
+        "Passar 2 varas pelas mangas deixando alças longas",
+        "Virar zíper para baixo com costas lisas pra cima",
+        "[BASE] Evita queda do quadril e atrito de zíper"
+      ],
+      "deepDive": {
+        "badge": "DUAL-JACKET BED GEOMETRY",
+        "title": "Sobreposição de Barras e Orientação Zíper-para-Baixo para Proteção Dorsal",
+        "text": "Sobrepor as barras um palmo exatamente sob a região do quadril elimina falhas centrais. Deixar os zíperes voltados ao chão poupa a coluna do atrito com metais duros e reduz tensão de abertura no cursor.",
+        "fieldSpecs": [
+          {
+            "name": "Leito de duas jaquetas sobrepostas em varas paralelas com lado dos zíperes virado para baixo",
+            "scientificName": "Zipper-Down Dual Jacket Stretcher Bed With Parallel Protruding Handle Poles",
+            "categoryTag": "Leito Duplo / Zíper Para Baixo",
+            "imageFileName": "id-zipped-dual-jacket-stretcher-bed.jpg",
+            "hudCode": "FIG. TLS-40B // MACRO OPTIC",
+            "hudStatus": "DUAL BED: ZIPPER SIDE DOWN",
+            "traits": [
+              {
+                "label": "Sobrepôr/Palmo",
+                "value": "**Cruzar barras por 1 palmo** fechando o vão na altura da cintura."
+              },
+              {
+                "label": "Alças/Equilíbrio",
+                "value": "**Deixar 4 pontas de varas iguais** com tamanho de um antebraço firme."
+              },
+              {
+                "label": "Costas/Cima",
+                "value": "**Deixar o zíper voltado ao piso** e o dorso liso acolchoado por cima."
+              }
+            ],
+            "fieldUse": "Construção de leito contínuo sem relevos prontinho para teste de peso"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Fazer Teste Prévio de 10 Segundos Pressionando o Centro Antes de Colocar o Ferido",
+      "description": "1. **Pressionar forte o centro com peso adulto por 10 segundos**: Evite quedas trágicas no ar fazendo um socorrista empurrar com força mãos ou joelhos sobre a **emenda central sobreposta**.\n2. **Erguer com peso de teste checando flexão e zíperes**: Levante a maca com mochilas para conferir que **não há estalos de madeira nem dentes se separando**.\n3. **Trocar já qualquer casaco com som de costura rasgando**: Até um estalo leve arrebenta sob peso real — substitua na hora por outro agasalho mais grosso antes de embarcar a vítima.",
+      "actionNote": "> Por que perder 10 segundos empurrando a maca vazia numa emergência? Casacos velhos escondem linhas podres ou dentes quebradiços; descobrir uma ruptura já no ar derruba a vítima ferida de cabeça no concreto.",
+      "svgFileName": "pr40-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // TESTE DE CARGA DE 10S ANTES DE ERGUER",
+        "Pressionar centro com peso adulto por 10 segundos",
+        "Checar dobra das varas, estalos e dentes do zíper",
+        "Se costura abrir (X), trocar por casaco mais forte",
+        "[BASE] Só colocar a vítima após passar no teste"
+      ],
+      "deepDive": {
+        "badge": "PRE-LIFT LOAD VERIFICATION",
+        "title": "Teste Obrigatório de Compressão de 10s e Detecção de Fadiga nas Costuras",
+        "text": "Todo protocolo de resgate exige testar macas improvisadas antes do embarque do paciente. Aplicar força total no centro sobreposto detecta costuras gastas, dentes pulados ou varas flexíveis antes da elevação real.",
+        "fieldSpecs": [
+          {
+            "name": "Mãos com luvas apertando forte a costura central da maca e a vara lateral no teste de carga",
+            "scientificName": "Gloved Rescue Hands Pressing Dual-Jacket Stretcher Seam & Pole For Load Check",
+            "categoryTag": "Teste Prévio / Pressão 10s",
+            "imageFileName": "id-stretcher-load-test-grip-check.jpg",
+            "hudCode": "FIG. TLS-40C // MACRO OPTIC",
+            "hudStatus": "LOAD TEST: PRE-LIFT VERIFIED",
+            "traits": [
+              {
+                "label": "Pressão/Centro",
+                "value": "**Descarregar peso na junção central** antes de colocar a vítima."
+              },
+              {
+                "label": "Som/Inspeção",
+                "value": "**Trocar ao mínimo estalo de costura** ou abertura nos dentes do zíper."
+              },
+              {
+                "label": "Pegada/Luvas",
+                "value": "**Usar luvas secas de trabalho** ou enrolar pano se as varas escorregarem."
+              }
+            ],
+            "fieldUse": "Bloqueio total de quedas secundárias graves por ruptura em trânsito"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Conter Sangramento e Apoiar Cabeça Antes, Depois Erguer Plano em 4 numa Só Voz",
+      "description": "1. **Finalizar controle de sangue e rolos laterais de toalha**: Previna choque aplicando [Torniquete](/protocol-32) e [Tala de Galhos](/protocol-18) primeiro, firmando as laterais da cabeça com rolos de pano.\n2. **4 socorristas dobram joelhos e erguem plano numa voz**: Evite dor lombar e inclinação subindo juntos ao comando **\"Um, dois, três\" usando a força das pernas**.\n3. **Seguir com pés à frente e apitar socorro fora do perigo**: Caminhe devagar pés à frente no plano/descida vigiando obstáculos e respiração, e acione [Apito 120dB e Espelho](/protocol-27).",
+      "actionNote": "> Por que levantar juntos na contagem de três e caminhar com os pés para frente? Erguer fora de tempo inclina e derruba o paciente; ir com os pés adiante deixa a vítima ver o caminho e permite ao socorrista de trás vigiar sua respiração.",
+      "svgFileName": "pr40-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // FIXAR CABEÇA + ELEVAÇÃO PLANA EM 4",
+        "Conter sangramento e apoiar cabeça com toalhas",
+        "4 pessoas dobram joelhos e erguem juntas no já",
+        "Andar pés à frente (subida cabeça) e apitar ajuda",
+        "[BASE] Ritmo único plano impede tombos no trajeto"
+      ],
+      "deepDive": {
+        "badge": "4-CARRIER LEVEL EXTRACTION",
+        "title": "Estabilização Pré-Remoção, Elevação Sincronizada pelos Joelhos e Marcha Pés à Frente",
+        "text": "Controlar grandes hemorragias, ossos quebrados e balanço cervical vem antes de erguer. Quatro socorristas subindo juntos pelos joelhos ao mesmo comando mantêm o leito nivelado em pisos irregulares.",
+        "fieldSpecs": [
+          {
+            "name": "Maca montada no corredor de abrigo com rolos de toalha na cabeça e talas de madeira ao lado",
+            "scientificName": "Completed Dual-Jacket Stretcher With Rolled Head Bolsters & Wooden Splints",
+            "categoryTag": "Transporte em 4 / Apoio Craniano",
+            "imageFileName": "id-four-carrier-level-patient-lift.jpg",
+            "hudCode": "FIG. TLS-40D // MACRO OPTIC",
+            "hudStatus": "CARRY: 4-PERSON LEVEL LIFT",
+            "traits": [
+              {
+                "label": "Antes/Firmar",
+                "value": "**Tratar cortes, ossos e calçar cabeça** antes de tirar do chão."
+              },
+              {
+                "label": "Subida/Plana",
+                "value": "**Subir pelos joelhos juntos no comando** sem inclinar um lado antes do outro."
+              },
+              {
+                "label": "Sentido/Pés",
+                "value": "**Pés à frente no plano ou descida** (cabeça na frente só subindo rampa)."
+              }
+            ],
+            "fieldUse": "Evacuação suave sem tombos através de corredores estreitos e escombros"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Zíper Aberto, Maca de 1 Só Casaco ou Arrastar Suspeito de Coluna Sem Risco Imediato",
+    "description": "Erguer um adulto com zíper aberto no pescoço ou usando só 1 jaqueta explode o fecho no ar e derruba cabeça ou bacia no piso duro. Igualmente fatal: mover sem risco iminente de fogo, desabamento ou enchente alguém com suspeita de lesão no pescoço ou coluna após queda ([Alavanca e Esquadro 4:1](/protocol-37)); apoie a cabeça com toalhas e aguarde prancha rígida do resgate para evitar paralisia permanente.",
+    "consequence": "Queda violenta no concreto por abertura aérea do zíper, ou paralisia definitiva ao mover coluna fraturada sem urgência."
+  },
+  "faqs": [
+    {
+      "question": "E se tivermos só 1 jaqueta com zíper e o resto forem camisas de botões ou cobertores?",
+      "causeDiagnostic": "Um único casaco só cobre metade do corpo e deixa pernas e quadris despencarem.",
+      "resolution": "Abotoe completamente **duas ou três camisas grossas ou jalecos de manga longa sobrepostos**, vire suas mangas para dentro e passe as varas atrás da jaqueta principal. Sem mangas extras, enrole duas voltas bem apertadas de lona forte ou cobertor em cada vara e aperte para dentro ao erguer."
+    },
+    {
+      "question": "É seguro só 2 pessoas carregarem essa maca de jaquetas se não encontrarmos 4 ajudantes?",
+      "causeDiagnostic": "Com apenas 2 pessoas nas pontas as varas envergam mais e a maca tende a tombar de lado.",
+      "resolution": "Use **2 carregadores só com vítima leve em distância curtíssima e plana**, testando a firmeza das varas em dobro antes, aproximando um pouco as duas varas com as mãos para o tecido não afrouxar e andando baixo em passinhos curtos."
+    }
+  ],
+  "outcome": {
+    "title": "Maca de Emergência Sem Energia: 2 Jaquetas com Mangas Invertidas, 2 Varas e Resgate em 4 Pessoas",
+    "badge": "TARGET OUTCOME // MACA DE MANGAS INVERTIDAS E TRANSPORTE EM 4",
+    "description": "Sistema de remoção em desastres sem agulha ou energia: duas varas sólidas transpassadas por mangas invertidas de duas jaquetas grossas sobrepostas zíper para baixo, validadas com pressão de 10 segundos e erguidas niveladas por 4 pessoas.",
+    "svgFileName": "pr40-outcome.svg",
+    "svgLabels": [
+      "PR-40 FINAL // MACA DE 2 JAQUETAS E VARAS",
+      "FASE 01: MANGAS DENTRO",
+      "Checar varas e fechar zíper",
+      "FASE 02: LEITO DUPLO",
+      "Sobrepor 1 palmo e zíper baixo",
+      "FASE 03: TESTE PRÉVIO",
+      "Pressionar centro 10s firme",
+      "FASE 04: LEVAR EM 4",
+      "Fixar cabeça e andar bem plano",
+      "[PRINCÍPIO] Túneis de manga invertida dividem peso por todo o tecido sem costura"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Desastre sem ambulância e precisa tirar um ferido do perigo? Monte uma maca firme em 2 minutos usando só 2 varas e 2 jaquetas!",
+    "body": "Regra zero primeiro: se houver suspeita de pancada no pescoço ou coluna, NUNCA mova sem fogo ou desabamento perto! Para evacuar, pegue duas varas maiores que um adulto, feche até o topo dois casacos grossos e vire as quatro mangas para dentro. Depois sobreponha as barras um palmo, enfie as varas nos túneis e vire com os zíperes voltados ao chão! Aperte firme o centro por 10 segundos testando antes de deitar alguém, e levantem em quatro pessoas juntos andando pelos pés!"
+  },
+  "createdAt": "2026-11-23T01:07:17.085Z",
+  "contentHash": "a43aecfb46b37d81"
+}

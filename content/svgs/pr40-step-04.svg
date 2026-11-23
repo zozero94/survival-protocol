@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg40s4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="pole40s4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <pattern id="grid40s4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow40s4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg40s4)"/>
+  <rect width="400" height="400" fill="url(#grid40s4)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 04 // 지혈·머리 고정 후 4인 구호 수평 동시 이송</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">이송 전 지혈대·부목 완료 및 수건으로 머리 양옆 고정</text>
+
+  <!-- Main Visual: 4-Grip Horizontal Level Stretcher + Head Towels + Forward Feet-First Arrow -->
+  <g filter="url(#shadow40s4)">
+    <!-- Level Reference Dashed Horizon Line -->
+    <line x1="20" y1="184" x2="380" y2="184" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="5 3"/>
+
+    <!-- Dual Parallel Stretcher Poles (Level Horizontal) -->
+    <rect x="52" y="142" width="296" height="10" rx="4" fill="url(#pole40s4)" stroke="#fde047" stroke-width="1.2"/>
+    <rect x="52" y="220" width="296" height="10" rx="4" fill="url(#pole40s4)" stroke="#fde047" stroke-width="1.2"/>
+
+    <!-- Stretcher Cloth Bed Between Poles -->
+    <rect x="92" y="150" width="216" height="72" rx="4" fill="#1e293b" stroke="#94a3b8" stroke-width="1.6"/>
+
+    <!-- Rolled Towels Stabilizing Head/Neck Side-to-Side (Left End) -->
+    <ellipse cx="116" cy="166" rx="14" ry="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.2"/>
+    <ellipse cx="116" cy="206" rx="14" ry="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.2"/>
+
+    <!-- Stylized Level Patient Silhouette (Head Left, Feet Right) -->
+    <circle cx="118" cy="186" r="11" fill="#475569" stroke="#cbd5e1" stroke-width="1.4"/>
+    <rect x="134" y="172" width="76" height="28" rx="6" fill="#475569" stroke="#cbd5e1" stroke-width="1.4"/>
+    <rect x="214" y="174" width="66" height="10" rx="3" fill="#475569" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="214" y="188" width="66" height="10" rx="3" fill="#475569" stroke="#cbd5e1" stroke-width="1.2"/>
+
+    <!-- 4 Carrier Grip Positions (Front Left/Right & Rear Left/Right) -->
+    <circle cx="72" cy="147" r="10" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="72" cy="225" r="10" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="328" cy="147" r="10" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="328" cy="225" r="10" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+
+    <!-- Synchronized Vertical Lift Arrows at All 4 Corners -->
+    <line x1="72" y1="128" x2="72" y2="104" stroke="#38bdf8" stroke-width="2.5"/>
+    <polygon points="68,110 72,100 76,110" fill="#38bdf8"/>
+    <line x1="328" y1="128" x2="328" y2="104" stroke="#38bdf8" stroke-width="2.5"/>
+    <polygon points="324,110 328,100 332,110" fill="#38bdf8"/>
+
+    <!-- Feet-First Travel Direction Arrow (Bottom Center -> Right) -->
+    <line x1="140" y1="262" x2="264" y2="262" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="258,256 272,262 258,268" fill="#f59e0b"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">4명이 무릎 굽혀 하나둘셋 구호 맞춰 수평 동시 들기</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#1e1b18" stroke="#d97706" stroke-width="1"/>
+  <text x="24" y="344" fill="#fed7aa" font-family="monospace" font-size="9">발끝 방향 전진(오르막만 머리 앞) &amp; 대피 후 호루라기</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 바닥과 수평 유지·동시 호흡으로 2차 충격 예방</text>
+</svg>

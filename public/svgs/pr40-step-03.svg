@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg40s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="bed40s3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="pole40s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <pattern id="grid40s3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow40s3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg40s3)"/>
+  <rect width="400" height="400" fill="url(#grid40s3)"/>
+  <rect x="6" y="6" width="388" height="388" fill="none" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Label 1 -->
+  <rect x="14" y="14" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="32" fill="#f4f4f5" font-family="monospace" font-size="10.2" font-weight="bold">FIG. 03 // 부상자 탑승 전 중앙 하중·막대 휨 사전 시험</text>
+
+  <!-- Label 2 -->
+  <rect x="16" y="48" width="368" height="24" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="24" y="64" fill="#38bdf8" font-family="monospace" font-size="9">빈 들것 중앙을 성인 체중 실어 10초간 꾹 눌러 시험</text>
+
+  <!-- Main Visual: Side Profile of Stretcher Suspended + Heavy Press Force + Pass vs Fail Check -->
+  <g filter="url(#shadow40s3)">
+    <!-- Concrete Floor Baseline -->
+    <line x1="20" y1="274" x2="380" y2="274" stroke="#475569" stroke-width="2"/>
+
+    <!-- Suspended Dual-Jacket Stretcher Side Elevation -->
+    <rect x="34" y="182" width="332" height="12" rx="4" fill="url(#pole40s3)" stroke="#fde047" stroke-width="1.5"/>
+    <!-- Suspended Dual-Jacket Fabric Hammock Curve -->
+    <path d="M 80 190 Q 200 226 320 190 L 320 182 L 80 182 Z" fill="url(#bed40s3)" stroke="#94a3b8" stroke-width="1.8"/>
+
+    <!-- End Support Blocks Representing 2 Holders Testing -->
+    <rect x="44" y="194" width="16" height="80" rx="2" fill="#475569" stroke="#94a3b8"/>
+    <rect x="340" y="194" width="16" height="80" rx="2" fill="#475569" stroke="#94a3b8"/>
+
+    <!-- Heavy Downward Press Test Arrows (Center Seam) -->
+    <line x1="200" y1="98" x2="200" y2="172" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="190,164 200,180 210,164" fill="#38bdf8"/>
+    <circle cx="200" cy="188" r="14" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 2"/>
+
+    <!-- Pass Check (Left Side - Tight Seam OK) -->
+    <circle cx="116" cy="128" r="16" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+    <polyline points="108,128 114,134 125,122" fill="none" stroke="#86efac" stroke-width="2.8" stroke-linecap="round"/>
+
+    <!-- Reject Cross (Right Side - Ripped Seam/Snap Reject) -->
+    <circle cx="284" cy="128" r="16" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <line x1="276" y1="120" x2="292" y2="136" stroke="#fca5a5" stroke-width="2.8" stroke-linecap="round"/>
+    <line x1="292" y1="120" x2="276" y2="136" stroke="#fca5a5" stroke-width="2.8" stroke-linecap="round"/>
+
+    <!-- Ground Clearance Check Double Arrow -->
+    <line x1="200" y1="214" x2="200" y2="266" stroke="#22c55e" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <polygon points="196,220 200,212 204,220" fill="#22c55e"/>
+    <polygon points="196,260 200,268 204,260" fill="#22c55e"/>
+  </g>
+
+  <!-- Label 3 -->
+  <rect x="16" y="300" width="368" height="22" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="315" fill="#cbd5e1" font-family="monospace" font-size="9">막대 휨·우지직 소리·지퍼 틈 벌어짐 손끝 육안 검사</text>
+
+  <!-- Label 4 -->
+  <rect x="16" y="328" width="368" height="24" rx="2" fill="#2b0f13" stroke="#ef4444" stroke-width="1"/>
+  <text x="24" y="344" fill="#fca5a5" font-family="monospace" font-size="9">솔기 뜯김(X) 발견 시 즉시 튼튼한 점퍼로 교체 재조립</text>
+
+  <!-- Label 5 -->
+  <rect x="14" y="358" width="372" height="28" rx="2" fill="#18181b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="24" y="376" fill="#fde68a" font-family="monospace" font-size="9.5" font-weight="bold">[핵심] 사전 하중 시험 통과 후에만 부상자 탑승 허용</text>
+</svg>

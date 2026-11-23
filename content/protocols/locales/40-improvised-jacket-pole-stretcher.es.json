@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-40",
+  "category": "TOOLS",
+  "title": "Camilla de Emergencia Sin Energía con 2 Varas Largas y 2 Chaquetas Gruesas en Desastres",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[EVACUACIÓN DE DESASTRES: CAMILLA IMPROVISADA CON 2 CHAQUETAS CON MANGAS INVERTIDAS Y 2 VARAS]",
+  "summary": "Si el servicio 119 o emergencias locales pueden llegar pronto con una camilla profesional, tabla espinal rígida y paramédicos, llame de inmediato y espere asistencia especializada como primera opción. Además, toda persona con sospecha de lesión de cuello, espalda o columna tras una caída o derrumbe NO debe moverse salvo amenaza mortal inmediata como incendio, colapso secundario o inundación creciente. Sin embargo, cuando las ambulancias están bloqueadas por escombros, cortes o inundaciones y evacuar es vital, dos varas resistentes más largas que un adulto y dos chaquetas gruesas crean una camilla firme en dos minutos. Primero controle sangrados y fracturas con [Torniquete y Sello Torácico](/protocol-32) y [Férula de Ramas](/protocol-18), pase dos varas por mangas volteadas hacia adentro con cremalleras abajo, haga prueba previa de carga, levante en nivel entre cuatro personas y pida auxilio con [Silbato 120dB y Espejo](/protocol-27).",
+  "timeRequired": "2 a 3 minutos de armado y prueba de carga (sin contar control previo de hemorragias o férulas)",
+  "successRate": "93% (usando varas firmes de 2m+, cremallera subida al tope, mangas invertidas, cierres hacia abajo y prueba de carga)",
+  "difficulty": "Principiante (sin herramientas ni energía; solo 2 varas largas y 2 abrigos gruesos con cremallera)",
+  "outputPerHour": "Crea una camilla apta para el peso adulto usando las costuras y tela de chaquetas sin nudos ni costura",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Varas de Madera Sólida, Palos de Escoba Gruesos o Tubos Rígidos Más Largos que la Altura Adulta (~2m+)",
+      "desc": "Deje al menos el largo de un antebrazo libre en cabeza y pies como asas firmes; elija grosor de media muñeca sin grietas ni nudos para no quebrarse bajo peso."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Chaquetas Gruesas de Invierno o Abrigos de Trabajo de Lona con Cremallera Fuerte y Costuras Firmes",
+      "desc": "Evite cortavientos finos o prendas gastadas que se desgarran; use dos chaquetas robustas cuya cremallera cierre por completo hasta el cuello."
+    },
+    {
+      "id": "mat-03",
+      "name": "1-2 Toallas Enrolladas o Ropa Doblada para Sostener Cabeza y Cuello + Guantes Antideslizantes",
+      "desc": "Los rollos laterales evitan balanceo de cabeza al trasladar heridos tras [Enfriamiento por Insolación](/protocol-39) o [Férula de Campo](/protocol-18) de manera segura."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Elegir 2 Varas Largas y Firmes, Cerrar Cremalleras al Tope y Voltear Mangas Hacia Adentro",
+      "description": "1. **Probar 2 varas largas sin grietas ni podredumbre**: Evite roturas en el aire apoyando peso corporal sobre dos palos más largos que el herido para verificar cero **crujidos ni flexión excesiva**.\n2. **Subir la cremallera de ambas chaquetas hasta el tope del cuello**: Impida aperturas en el medio cerrando ambos cierres **hasta el seguro superior con un clic firme** y abrochando botones.\n3. **Meter los brazos y voltear las 4 mangas rectas hacia adentro**: Evite que las varas se salgan sujetando los puños desde adentro para **invertir las mangas hacia el forro interior del torso**.",
+      "actionNote": "> ¿Por qué invertir las mangas dentro del torso en lugar de meter los palos por afuera? Si quedan afuera, todo el peso tira solo de la costura de la sisa y la rompe. Al invertirlas dentro del torso cerrado, la espalda y frente de la tela abrazan las varas repartiendo el peso.",
+      "svgFileName": "pr40-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 2 VARAS LARGAS + CREMALLERA Y MANGAS",
+        "Elegir 2 palos largos firmes sin grietas ni nudos",
+        "Subir cremalleras de 2 chaquetas hasta el cuello",
+        "Voltear mangas hacia adentro del torso recto",
+        "[BASE] Mangas invertidas reparten peso en el torso"
+      ],
+      "deepDive": {
+        "badge": "INSIDE-OUT SLEEVE TUNNEL",
+        "title": "Bloqueo Total de Cremallera y Distribución de Carga en Mangas Invertidas",
+        "text": "Invertir las mangas hacia el interior crea túneles dobles reforzados por dos capas completas de tela gruesa en vez de cargar sobre costuras aisladas. Pase los dedos por todo el cierre para confirmar dientes bien trabados.",
+        "fieldSpecs": [
+          {
+            "name": "Dos chaquetas gruesas cerradas con mangas invertidas hacia adentro junto a dos varas de madera",
+            "scientificName": "Two Heavy Zipped Canvas Jackets With Inside-Out Sleeves Beside Long Poles",
+            "categoryTag": "Mangas Invertidas / Cierre Total",
+            "imageFileName": "id-jacket-sleeves-inside-out-poles.jpg",
+            "hudCode": "FIG. TLS-40A // MACRO OPTIC",
+            "hudStatus": "SLEEVE TUNNEL: INSIDE-OUT LOCK",
+            "traits": [
+              {
+                "label": "Varas/Largo",
+                "value": "**Escoger 2 palos rígidos sin grietas** que sobresalgan por ambos lados."
+              },
+              {
+                "label": "Cierre/Tope",
+                "value": "**Subir cremalleras hasta el cuello** sin dejar dientes sueltos."
+              },
+              {
+                "label": "Manga/Dentro",
+                "value": "**Voltear 4 mangas rectas adentro** formando túneles paralelos firmes."
+              }
+            ],
+            "fieldUse": "Creación rápida de canales paralelos resistentes sin cuerdas ni costura"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Solapar Bajos de Chaquetas, Pasar 2 Varas por Mangas y Girar Cremalleras Hacia Abajo",
+      "description": "1. **Solapar los bajos inferiores de ambas chaquetas 1 palmo**: Evite huecos en la cadera colocando dos chaquetas borde con borde con **un palmo de traslape al centro** para cubrir de hombros a piernas.\n2. **Pasar ambas varas por los túneles de mangas dejando asas**: Empuje los palos de punta a punta dejando al menos **un antebrazo libre como agarre** en las cuatro esquinas.\n3. **Voltear la camilla con cremalleras y botones mirando al suelo**: Proteja espalda y piel de rozaduras dejando la **tela lisa de la espalda hacia arriba** y cierres duros abajo.",
+      "actionNote": "> ¿Por qué traslapar las dos chaquetas y girar los cierres hacia abajo? Si queda hueco entre prendas la cadera se hunde y cae, y si las cremalleras apuntan arriba lastiman la espalda y soportan más fuerza que abre el cierre.",
+      "svgFileName": "pr40-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // BASE 2 CHAQUETAS + CREMALLERA ABAJO",
+        "Solapar bajos 1 palmo para cubrir cuerpo entero",
+        "Pasar 2 palos por mangas con asas largas libres",
+        "Girar cierres hacia abajo y espalda lisa arriba",
+        "[BASE] Evita huecos y roces metálicos en espalda"
+      ],
+      "deepDive": {
+        "badge": "DUAL-JACKET BED GEOMETRY",
+        "title": "Solapamiento Doble de Prendas y Orientación con Cremalleras Abajo",
+        "text": "Unir los dobladillos con un palmo de superposición bajo la cadera evita puntos débiles centrales. Voltear los cierres metálicos hacia el suelo protege lesiones dorsales y reduce tensión sobre el deslizador.",
+        "fieldSpecs": [
+          {
+            "name": "Dos chaquetas solapadas atravesadas por varas paralelas con cremalleras mirando al suelo",
+            "scientificName": "Zipper-Down Dual Jacket Stretcher Bed With Parallel Protruding Handle Poles",
+            "categoryTag": "Base Doble / Cierres Abajo",
+            "imageFileName": "id-zipped-dual-jacket-stretcher-bed.jpg",
+            "hudCode": "FIG. TLS-40B // MACRO OPTIC",
+            "hudStatus": "DUAL BED: ZIPPER SIDE DOWN",
+            "traits": [
+              {
+                "label": "Traslape/1-Palmo",
+                "value": "**Superponer bajos 1 palmo entero** bloqueando hundimientos en cintura."
+              },
+              {
+                "label": "Asas/Agarre",
+                "value": "**Dejar 4 extremos de igual largo** (un antebrazo) para manos firmes."
+              },
+              {
+                "label": "Cara/Lisa",
+                "value": "**Orientar cierres hacia el piso** dejando espalda acoginada hacia arriba."
+              }
+            ],
+            "fieldUse": "Superficie continua y lisa lista para prueba de peso adulto"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Hacer Prueba Previa de 10 Segundos Presionando el Centro Antes de Subir al Herido",
+      "description": "1. **Presionar el centro solapado con peso adulto por 10 segundos**: Evite caídas trágicas en el aire haciendo que un adulto empuje fuerte con manos o rodillas sobre la **zona central unida**.\n2. **Levantar con peso de prueba vigilando flexión y costuras**: Alce la camilla con mochilas o sacos para comprobar que las **varas no crujen ni los dientes del cierre ceden**.\n3. **Cambiar al instante toda chaqueta que suene o ceda**: Ante cualquier ruido de hilo roto, reemplace la prenda defectuosa por otro abrigo grueso antes de cargar a nadie.",
+      "actionNote": "> ¿Por qué dedicar 10 segundos a probar una camilla vacía en plena emergencia? Las prendas guardadas suelen tener hilos vencidos o cierres quebradizos; si estallan en el aire, el herido golpea de lleno contra el suelo de concreto.",
+      "svgFileName": "pr40-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // PRUEBA PREVIA DE CARGA Y COSTURAS 10S",
+        "Presionar centro con peso adulto por 10 segundos",
+        "Revisar pandeo de varas, crujidos y dientes cierre",
+        "Cambiar costura rota (X) por chaqueta más firme",
+        "[BASE] Subir al herido SOLO tras aprobar la prueba"
+      ],
+      "deepDive": {
+        "badge": "PRE-LIFT LOAD VERIFICATION",
+        "title": "Prueba Estática Obligatoria de 10 Segundos y Detección de Fatiga",
+        "text": "Todo protocolo de rescate exige probar cualquier camilla improvisada antes del embarque real. La compresión fuerte en el traslape central delata costuras podridas, dientes saltados o madera débil en segundos.",
+        "fieldSpecs": [
+          {
+            "name": "Manos con guantes presionando fuerte la costura central de lona y vara de madera en prueba",
+            "scientificName": "Gloved Rescue Hands Pressing Dual-Jacket Stretcher Seam & Pole For Load Check",
+            "categoryTag": "Chequeo Previo / Prueba 10s",
+            "imageFileName": "id-stretcher-load-test-grip-check.jpg",
+            "hudCode": "FIG. TLS-40C // MACRO OPTIC",
+            "hudStatus": "LOAD TEST: PRE-LIFT VERIFIED",
+            "traits": [
+              {
+                "label": "Presión/Centro",
+                "value": "**Cargar peso corporal en medio** antes de colocar a la persona herida."
+              },
+              {
+                "label": "Oído/Vista",
+                "value": "**Parar al mínimo crujido o descosido** y sustituir la prenda o palo."
+              },
+              {
+                "label": "Agarre/Seco",
+                "value": "**Usar guantes de trabajo** o envolver tela si las varas están húmedas."
+              }
+            ],
+            "fieldUse": "Bloqueo total de accidentes secundarios por fallo de cierre o vara"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Contener Sangrado y Fijar Cabeza, Luego Alzar Nivelados Entre 4 a Una Sola Voz",
+      "description": "1. **Completar control de sangrado y rollos de toalla en cabeza**: Prevenga choque grave aplicando [Torniquete](/protocol-32) y [Férula de Ramas](/protocol-18) antes de alzar y colocando toallas a ambos lados del cuello.\n2. **4 porteadores doblan rodillas y alzan nivelados a una voz**: Evite lesiones lumbares e inclinaciones alzando juntos al grito de **\"Uno, dos, tres\" con fuerza de piernas**.\n3. **Avanzar pies por delante y pedir auxilio al salir del peligro**: Camine lento con pies primero en terreno plano o bajada para ver obstáculos y observar respiración, luego use [Silbato 120dB y Espejo](/protocol-27).",
+      "actionNote": "> ¿Por qué alzarse juntos a la cuenta de tres y caminar con los pies por delante? Levantar sin sincronía ladea la camilla y tira al herido; ir pies por delante orienta su vista al camino y deja al porteador trasero vigilar su respiración todo el tiempo.",
+      "svgFileName": "pr40-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // CABEZA FIJA + ALZADO NIVELADO EN 4",
+        "Controlar sangrado y fijar cabeza con toallas",
+        "4 porteadores doblan rodillas y alzan a la voz",
+        "Avanzar pies delante (cuesta arriba cabeza) y pitar",
+        "[BASE] Alzado plano sincronizado evita golpes"
+      ],
+      "deepDive": {
+        "badge": "4-CARRIER LEVEL EXTRACTION",
+        "title": "Estabilización Previa, Alzado Sincronizado con Rodillas y Marcha Pies Adelante",
+        "text": "Fijar sangrados, fracturas y cabeza antecede cualquier movimiento. Cuatro porteadores subiendo por fuerza de piernas a una orden mantienen la camilla paralela al piso sin torsiones peligrosas en escombros.",
+        "fieldSpecs": [
+          {
+            "name": "Camilla terminada con toallas enrolladas sosteniendo la cabeza y férulas de madera listas",
+            "scientificName": "Completed Dual-Jacket Stretcher With Rolled Head Bolsters & Wooden Splints",
+            "categoryTag": "Traslado de 4 / Apoyo Craneal",
+            "imageFileName": "id-four-carrier-level-patient-lift.jpg",
+            "hudCode": "FIG. TLS-40D // MACRO OPTIC",
+            "hudStatus": "CARRY: 4-PERSON LEVEL LIFT",
+            "traits": [
+              {
+                "label": "Pre-Vuelo/Fijar",
+                "value": "**Tratar hemorragia/huesos y calzar cabeza** antes de elevar un centímetro."
+              },
+              {
+                "label": "Alzado/Plano",
+                "value": "**Doblar rodillas y subir nivelados** al unísono con voz de mando clara."
+              },
+              {
+                "label": "Rumbo/Pies",
+                "value": "**Pies delante en plano o bajada** (cabeza delante solo subiendo cuesta)."
+              }
+            ],
+            "fieldUse": "Evacuación segura sin sacudidas a través de pasillos y ruinas estrechas"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Usar 1 Sola Chaqueta o Cierre Abierto y Arrastrar Heridos de Columna Sin Riesgo Mortal",
+    "description": "Alzar a un adulto con la cremallera sin cerrar arriba o usando una sola chaqueta revienta el cierre en el aire y arroja cabeza o pelvis contra el concreto. Igualmente fatal: mover por capricho a víctimas con posible golpe en cuello o columna tras un derrumbe ([Palanca y Apuntalamiento 4:1](/protocol-37)) si NO existe fuego, derrumbe inminente o inundación; manténgalo inmóvil con toallas junto al cuello esperando la tabla espinal del 119 para prevenir parálisis permanente.",
+    "consequence": "Desplome sobre el piso por fallo de cierre en el aire, o parálisis permanente por mover sin urgencia una columna lesionada."
+  },
+  "faqs": [
+    {
+      "question": "¿Qué hago si solo hay 1 chaqueta con cremallera y el resto son camisas de botones o mantas?",
+      "causeDiagnostic": "Una sola prenda solo cubre medio tronco y deja piernas y caderas colgando hacia abajo.",
+      "resolution": "Abotone **dos o tres camisas gruesas de manga larga superpuestas**, invierta sus mangas y pase las varas detrás de la chaqueta principal. Si no hay más camisas con manga, enrolle los bordes de una lona o manta gruesa dos veces sobre cada vara y apriételos firmemente hacia adentro mientras levantan."
+    },
+    {
+      "question": "¿Es seguro cargar la camilla entre solo dos rescatistas si no encontramos cuatro personas?",
+      "causeDiagnostic": "Con solo dos personas en los extremos aumenta la flexión de los palos y la camilla se inclina fácil hacia los lados.",
+      "resolution": "Hágalo entre **dos solo para pacientes livianos en distancias muy cortas y planas**, probando dos veces las varas antes, acercando ligeramente ambas manos hacia el centro para tensar la tela, doblando rodillas bajo y reduciendo el paso a la mitad."
+    }
+  ],
+  "outcome": {
+    "title": "Camilla de Emergencia Sin Energía con 2 Chaquetas Invertidas, 2 Varas Largas y Traslado de 4 Porteadores",
+    "badge": "TARGET OUTCOME // CAMILLA DE MANGAS INVERTIDAS Y TRASLADO SEGURO",
+    "description": "Sistema de evacuación de desastres sin costura ni energía: dos varas sólidas pasadas por mangas invertidas de dos chaquetas gruesas traslapadas cremallera abajo, verificadas con prueba de presión de 10 segundos y alzadas a nivel entre cuatro personas.",
+    "svgFileName": "pr40-outcome.svg",
+    "svgLabels": [
+      "PR-40 COMPLETO // CAMILLA DE 2 CHAQUETAS Y VARAS",
+      "FASE 01: MANGAS DENTRO",
+      "Revisar varas y cerrar zip",
+      "FASE 02: CAMA DOBLE",
+      "Solapar 1 palmo y cierre abajo",
+      "FASE 03: TEST PREVIO",
+      "Presionar 10s centro y costuras",
+      "FASE 04: TRASLADO EN 4",
+      "Fijar cabeza y llevar nivelado",
+      "[PRINCIPIO] Mangas invertidas reparten el peso en toda la tela sin costuras extra"
+    ]
+  },
+  "shortsScript": {
+    "hook": "¿Desastre sin ambulancias y urge sacar a un herido? ¡Arma una camilla ultrarresistente en 2 minutos con 2 varas y 2 chaquetas!",
+    "body": "Primero regla de oro: ¡si sospechas golpe en cuello o espalda, NO lo muevas salvo fuego o derrumbe inminente! Si debes evacuar, busca dos varas más largas que un adulto, sube al tope la cremallera de dos chaquetas gruesas y voltea todas las mangas hacia adentro. Segundo, solapa sus bajos un palmo, pasa ambas varas por los túneles y dale la vuelta con los cierres hacia el piso. Tercero, presiona fuerte el centro por 10 segundos antes de subirlo. ¡Luego levanten en 4 a la cuenta de tres caminando pies adelante!"
+  },
+  "createdAt": "2026-11-23T01:07:17.085Z",
+  "contentHash": "a43aecfb46b37d81"
+}

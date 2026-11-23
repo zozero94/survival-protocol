@@ -1,0 +1,248 @@
+{
+  "protocolId": "PR-40",
+  "category": "TOOLS",
+  "title": "How to Build a Zero-Power Emergency Stretcher With 2 Long Poles and 2 Heavy Zipped Jackets",
+  "threatLevel": "CRITICAL",
+  "threatLevelText": "[DISASTER TRIAGE EXTRACTION: INSIDE-OUT DUAL JACKET & TWIN POLE EMERGENCY STRETCHER]",
+  "summary": "If 119 or local EMS can reach the scene quickly with a commercial folding stretcher, rigid spine board, and trained paramedics, always call emergency services and wait for professional extraction first. Moreover, anyone suspected of a neck, back, or spinal injury after a fall or building collapse must NEVER be moved without immediate life-threatening hazards like fire, secondary collapse, or rising floodwater. However, when ambulances are blocked by disaster rubble, flooding, or power failure and urgent evacuation is unavoidable, two strong poles longer than an adult and two heavy zipped jackets build a full-body stretcher in two minutes. First secure bleeding or breaks via [Windlass Tourniquet & Chest Seal](/protocol-32) and [Branch Splint Stabilization](/protocol-18), pass two poles through inside-out jacket sleeves flipped zipper-side down, pass a center load check, lift level with four carriers, and signal help with a [120dB Whistle & Mirror](/protocol-27).",
+  "timeRequired": "2-3 minutes to assemble & load-test (excluding prior wound bleeding control & splinting)",
+  "successRate": "93% (with solid 2m+ poles, full zipper lock, inside-out sleeves, zipper-down flip & pre-lift load check)",
+  "difficulty": "Beginner (Zero power or sewing needed; only 2 poles longer than a person & 2 thick zipped coats)",
+  "outputPerHour": "Creates an adult weight-bearing emergency evacuation litter using jacket fabric tensile strength without knots",
+  "materials": [
+    {
+      "id": "mat-01",
+      "name": "2 Strong Uncracked Wooden Poles, Broom Handles, or Rigid Metal Pipes Longer Than Patient Height (~2m+)",
+      "desc": "Leave at least one forearm span extending beyond both head and foot ends as sturdy handles; check wrist-half thickness so poles do not snap or bend excessively under load."
+    },
+    {
+      "id": "mat-02",
+      "name": "2 Heavy-Duty Winter Jackets or Canvas Work Coats With Strong Zippers and Reinforced Shoulder Seams",
+      "desc": "Avoid thin windbreakers or worn fabrics that tear easily; choose two sturdy coats whose front zippers close smoothly right up to the collar lock."
+    },
+    {
+      "id": "mat-03",
+      "name": "1-2 Rolled Cotton Towels or Folded Coats for Head Support & Non-Slip Work Gloves for Carriers",
+      "desc": "Rolled bolsters steady the head sideways while moving stabilized patients from [Heatstroke Shade Cooling](/protocol-39) or [Field Splint Care](/protocol-18) safely."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Step 1: Select 2 Strong Long Poles, Zip Both Heavy Jackets Completely Up & Pull Sleeves Inside-Out",
+      "description": "1. **Test 2 Long Poles Free of Cracks or Rot**: Prevent mid-carry pole snapping by pressing full body weight across two straight poles longer than the patient to confirm zero **creaking sounds or deep flex**.\n2. **Close Front Zippers Fully Up to the Collar Stop**: Avoid middle-bed split falls by zipping both heavy jackets **all the way to the top click stop** and snapping storm flaps shut.\n3. **Pull All 4 Sleeves Straight Inside-Out Into Jacket Bodies**: Keep poles anchored inside the torso by reaching up each sleeve to grasp the cuff and **turning sleeves cleanly inward into the lining**.",
+      "actionNote": "> Why pull the sleeves inside-out into the jacket torso instead of sliding poles straight through outer sleeves? Outer sleeves tear right along the armhole stitching under adult body weight. Pulling sleeves inside-out and locking the zipper makes the entire back and front fabric wrap the poles together cleanly.",
+      "svgFileName": "pr40-step-01.svg",
+      "svgLabels": [
+        "FIG. 01 // 2 LONG POLES + ZIP & INVERT SLEEVES",
+        "Pick 2 strong crack-free poles longer than patient",
+        "Zip both heavy jackets tightly up to neck stop",
+        "Pull all 4 sleeves cleanly inside-out into body",
+        "[CORE] Inverted sleeves spread load across jacket"
+      ],
+      "deepDive": {
+        "badge": "INSIDE-OUT SLEEVE TUNNEL",
+        "title": "Full-Length Zipper Lock & Inside-Out Sleeve Tensile Load Distribution",
+        "text": "Inverting both sleeves inside the zipped torso creates dual high-strength cloth channels anchored across two layers of heavy fabric rather than exposed shoulder seams. Run fingertips along every zipper track to confirm no teeth are unmeshed.",
+        "fieldSpecs": [
+          {
+            "name": "Two Heavy Zipped Canvas Jackets With Sleeves Pulled Inside-Out Beside Long Wooden Poles",
+            "scientificName": "Two Heavy Zipped Canvas Jackets With Inside-Out Sleeves Beside Long Poles",
+            "categoryTag": "Inverted Sleeves / Zipper Lock",
+            "imageFileName": "id-jacket-sleeves-inside-out-poles.jpg",
+            "hudCode": "FIG. TLS-40A // MACRO OPTIC",
+            "hudStatus": "SLEEVE TUNNEL: INSIDE-OUT LOCK",
+            "traits": [
+              {
+                "label": "Poles/Span",
+                "value": "**Choose 2 rigid crack-free poles** extending well past head and feet."
+              },
+              {
+                "label": "Zip/Lock",
+                "value": "**Pull zippers to the top collar lock** leaving zero unmeshed teeth."
+              },
+              {
+                "label": "Sleeve/Flip",
+                "value": "**Invert all 4 sleeves cleanly inside** creating straight internal tunnels."
+              }
+            ],
+            "fieldUse": "Forming high-strength parallel pole channels without cordage knots or sewing"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "02",
+      "title": "Step 2: Overlap Jacket Hems End-to-End, Thread Both Poles Through & Flip Bed Zipper-Side Down",
+      "description": "1. **Overlap Both Jacket Hems by One Hand-Span**: Prevent hip sagging gaps by placing both coats hem-to-hem with a **palm-wide overlap across the middle** matching adult torso and thigh span.\n2. **Thread Both Poles Completely Through Left & Right Sleeve Tunnels**: Slide poles straight head-to-foot through matching sleeve channels, leaving at least **one forearm length of grip handle** at all four ends.\n3. **Flip Stretcher Bed Over So Hard Zippers Face the Floor**: Protect the patient's back and spine from bruising by laying the **smooth quilted back fabric facing upward** and metal zippers downward.",
+      "actionNote": "> Why overlap the two jacket hems and turn the zippers downward? Any gap between coats drops the patient's hips through mid-carry, while upturned metal zippers press hard into bruised skin and invite zipper slider pop-open.",
+      "svgFileName": "pr40-step-02.svg",
+      "svgLabels": [
+        "FIG. 02 // DUAL JACKET BED + ZIPPERS FACING DOWN",
+        "Overlap jacket hems 1 span for full body length",
+        "Slide 2 poles through sleeves leaving long grips",
+        "Flip bed zipper-side down so smooth backs face up",
+        "[CORE] Overlap avoids hip sag; back-up protects skin"
+      ],
+      "deepDive": {
+        "badge": "DUAL-JACKET BED GEOMETRY",
+        "title": "Overlapped Hem Bed Coverage & Zipper-Down Spine Comfort Orientation",
+        "text": "Overlapping both lower hems at the heaviest hip center closes mid-span gaps. Orienting the smooth outer back panels upward shields bruised skin from zipper teeth while minimizing outward pull on the slider.",
+        "fieldSpecs": [
+          {
+            "name": "Dual Overlapped Zipped Canvas Jackets Threaded Onto Twin Wooden Poles Zipper-Side Down",
+            "scientificName": "Zipper-Down Dual Jacket Stretcher Bed With Parallel Protruding Handle Poles",
+            "categoryTag": "Dual Overlap / Zipper-Down Bed",
+            "imageFileName": "id-zipped-dual-jacket-stretcher-bed.jpg",
+            "hudCode": "FIG. TLS-40B // MACRO OPTIC",
+            "hudStatus": "DUAL BED: ZIPPER SIDE DOWN",
+            "traits": [
+              {
+                "label": "Bed/Overlap",
+                "value": "**Overlap jacket hems 1 hand-span** eliminating any center hip gap."
+              },
+              {
+                "label": "Grip/Handles",
+                "value": "**Balance 4 protruding handle ends** at one forearm length each side."
+              },
+              {
+                "label": "Face/Smooth",
+                "value": "**Place hard zippers facing downward** leaving soft smooth backs on top."
+              }
+            ],
+            "fieldUse": "Building a continuous smooth full-body carrier bed ready for load check"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "03",
+      "title": "Step 3: Press Adult Weight Across the Center Seam for 10 Seconds Before Lifting Any Victim",
+      "description": "1. **Press Center Overlap Down Hard With Full Adult Weight**: Prevent tragic mid-air cloth tearing by having a healthy person lean palms or knees hard onto the **middle overlapped seam** for 10 seconds.\n2. **Test Lift Empty Bed Checking Pole Flex & Zipper Teeth**: Raise handles off ground together with sandbags or gear to verify poles stay firm with zero **wood snapping sounds or tooth separation**.\n3. **Swap Any Coat Showing Seam Strain Immediately**: Replace even minor tearing thread noises right away with a stronger outer coat before anyone injured touches the bed.",
+      "actionNote": "> Why spend 10 critical seconds pressing down on an empty stretcher during an emergency? Old stored jackets often hide weakened thread or brittle zippers; discovering a blowout three feet off concrete drops an injured person back onto hard rubble.",
+      "svgFileName": "pr40-step-03.svg",
+      "svgLabels": [
+        "FIG. 03 // 10S CENTER LOAD & SEAM CHECK BEFORE LIFT",
+        "Press adult weight onto center bed for 10 seconds",
+        "Check pole bend, creaking wood, and zipper teeth",
+        "Swap ripped seams (X) with sturdier coat at once",
+        "[CORE] Patient boards ONLY after load test passes"
+      ],
+      "deepDive": {
+        "badge": "PRE-LIFT LOAD VERIFICATION",
+        "title": "Mandatory Pre-Boarding 10-Second Static Compression & Seam Audit",
+        "text": "Disaster triage requires testing every improvised stretcher before patient loading. Full downward hand pressure across the overlapped center quickly reveals weakened shoulder seams, hidden zipper gaps, or excessive pole flex.",
+        "fieldSpecs": [
+          {
+            "name": "Gloved Rescue Hands Pressing Center Taut Canvas Seam & Wooden Side Pole During Load Check",
+            "scientificName": "Gloved Rescue Hands Pressing Dual-Jacket Stretcher Seam & Pole For Load Check",
+            "categoryTag": "Pre-Lift Check / 10s Load Test",
+            "imageFileName": "id-stretcher-load-test-grip-check.jpg",
+            "hudCode": "FIG. TLS-40C // MACRO OPTIC",
+            "hudStatus": "LOAD TEST: PRE-LIFT VERIFIED",
+            "traits": [
+              {
+                "label": "Press/Check",
+                "value": "**Lean body weight across middle seam** before putting victim on top."
+              },
+              {
+                "label": "Sound/Watch",
+                "value": "**Listen for wood cracks or ripping seams**; swap failing gear instantly."
+              },
+              {
+                "label": "Grip/Friction",
+                "value": "**Wear dry work gloves** or wrap cloth strips if wet poles feel slick."
+              }
+            ],
+            "fieldUse": "Eliminating catastrophic in-transit zipper blowout or pole failure drops"
+          }
+        ]
+      }
+    },
+    {
+      "stepNumber": "04",
+      "title": "Step 4: Finish Bleeding & Head Support First, Then 4 Carriers Lift Level Together on a Single Count",
+      "description": "1. **Complete Bleeding Control & Side-Head Towel Bolsters**: Prevent shock escalation by securing [Windlass Tourniquet](/protocol-32) and [Branch Splint](/protocol-18) first, tucking rolled towels beside both ears.\n2. **4 Carriers Bend Knees & Lift Level on One Loud Count**: Avoid carrier back strain and stretcher tilting by gripping handles firmly and rising simultaneously on **'One, two, three' using leg muscles**.\n3. **Carry Feet-First & Signal Rescuers Upon Clearing Danger**: Move slowly feet-first on flat or downhill ground so carriers see obstacles and breathing stays monitored, then sound [120dB Whistle & Mirror](/protocol-27).",
+      "actionNote": "> Why must four carriers lift together on one spoken count and travel feet-first? Desynchronized lifting twists the bed and tips the patient sideways; walking feet-first keeps the patient oriented forward and lets rear carriers watch face color and breathing continuously.",
+      "svgFileName": "pr40-step-04.svg",
+      "svgLabels": [
+        "FIG. 04 // HEAD PAD + 4-CARRIER SYNC LEVEL LIFT",
+        "Stop bleeding/splint first; bolster head w/ towels",
+        "4 carriers bend knees lifting level on 1-2-3 count",
+        "Walk feet-first ahead (head uphill) & whistle help",
+        "[CORE] Synced level lift prevents tilt & drop shock"
+      ],
+      "deepDive": {
+        "badge": "4-CARRIER LEVEL EXTRACTION",
+        "title": "Pre-Move Trauma Stabilization, Knee-Powered Sync Lift & Feet-First Transit",
+        "text": "Stabilizing major bleeds, fractures, and lateral head sway precedes any movement. Four carriers lifting cleanly through bent knees on one vocal count prevent lateral tip-overs and spine twists through uneven rubble.",
+        "fieldSpecs": [
+          {
+            "name": "Completed Dual-Jacket Stretcher With Symmetrical Head-Support Towels & Wooden Splints Ready",
+            "scientificName": "Completed Dual-Jacket Stretcher With Rolled Head Bolsters & Wooden Splints",
+            "categoryTag": "4-Carrier Lift / Head Support",
+            "imageFileName": "id-four-carrier-level-patient-lift.jpg",
+            "hudCode": "FIG. TLS-40D // MACRO OPTIC",
+            "hudStatus": "CARRY: 4-PERSON LEVEL LIFT",
+            "traits": [
+              {
+                "label": "Prep/Bolster",
+                "value": "**Finish bleeds/splints and pad head sides** before lifting off floor."
+              },
+              {
+                "label": "Lift/Sync",
+                "value": "**Bend knees and rise level together** on one clear voice count."
+              },
+              {
+                "label": "Route/Feet",
+                "value": "**Walk feet-first on level or downward steps** (head-first uphill only)."
+              }
+            ],
+            "fieldUse": "Executing safe shock-free disaster evacuation across uneven debris paths"
+          }
+        ]
+      }
+    }
+  ],
+  "fatalMistake": {
+    "title": "FATAL // Unfastened Zippers or Single-Jacket Drops & Pulling Spine-Injured Victims Unnecessarily",
+    "description": "Lifting an adult with an unzipped coat or a single short jacket bursts teeth open mid-air and drops head or pelvis onto concrete causing severe trauma. Equally deadly: moving someone with suspected neck or spine injuries after collapse ([4:1 Lever & Crib Rescue](/protocol-37)) when there is NO immediate fire, collapse, or flood hazard—always wait in place with rolled towel head support until 119 spinal boards arrive to prevent permanent paralysis.",
+    "consequence": "Mid-air zipper blowout causing secondary concrete drop injuries, or permanent paralysis from unnecessary spinal movement."
+  },
+  "faqs": [
+    {
+      "question": "What if we only have one zipped jacket and button-up work shirts or heavy blankets?",
+      "causeDiagnostic": "One jacket leaves the lower body unsupported, bending the waist downward until the bed fails.",
+      "resolution": "Button **two or three thick work shirts or coats completely**, turn their sleeves inside-out, and thread both poles identically through them behind the single jacket. Without extra sleeved shirts, wrap a sturdy canvas sack or blanket edge twice around each pole and have side carriers grip rolled edges tightly inward."
+    },
+    {
+      "question": "Can just two rescuers safely carry this jacket stretcher if four people are not around?",
+      "causeDiagnostic": "Two-carrier end lifting increases pole flex and creates sideways roll instability over debris.",
+      "resolution": "Carry with **two people strictly for lightweight patients over very short level distances**, double-checking pole stiffness first, squeezing poles slightly inward by hand so fabric stays cradled, bending knees low, and cutting walking stride length in half."
+    }
+  ],
+  "outcome": {
+    "title": "Zero-Power Inside-Out Dual Jacket & Twin Pole Emergency Stretcher Fabrication and 4-Carrier Extraction",
+    "badge": "TARGET OUTCOME // DUAL-JACKET STRETCHER & SAFE 4-PERSON EXTRACTION",
+    "description": "Disaster triage evacuation system built without sewing or power: sturdy twin poles threaded through two completely zipped, inside-out canvas jackets overlapped hem-to-hem zipper-side down, verified by a 10-second center load press and carried level feet-first by four synchronized carriers.",
+    "svgFileName": "pr40-outcome.svg",
+    "svgLabels": [
+      "PR-40 COMPLETE // DUAL-JACKET & POLE EMERGENCY STRETCHER",
+      "STAGE 01: INVERT SLEEVES",
+      "Check poles + zip to collar",
+      "STAGE 02: DUAL THREAD BED",
+      "1 span lap + zippers face down",
+      "STAGE 03: 10S LOAD CHECK",
+      "Press seam before lift attempt",
+      "STAGE 04: 4-CARRIER LIFT",
+      "Fix head/wounds + carry level",
+      "[PRINCIPLE] Inverted sleeve tunnels transfer weight across whole fabric without knots"
+    ]
+  },
+  "shortsScript": {
+    "hook": "Disaster strikes, ambulances can't get through, and someone needs urgent evacuation? Build a rock-solid stretcher in 2 minutes using 2 poles and 2 jackets!",
+    "body": "Rule zero first: never move anyone with a suspected neck or back fracture unless fire or collapse threatens life right now! Otherwise, pick two sturdy poles taller than an adult, zip two thick jackets completely up, and pull all four sleeves inside-out into the torso. Next, overlap the two hems by one palm width, slide both poles cleanly through the sleeve tunnels, and flip the bed zipper-side down so smooth backs face up. Press hard on the center seam for 10 seconds to load-test before lifting, then rise level on a four-person count moving feet-first!"
+  },
+  "createdAt": "2026-11-23T01:07:17.085Z",
+  "contentHash": "a43aecfb46b37d81"
+}

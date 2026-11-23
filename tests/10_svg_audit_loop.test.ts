@@ -176,7 +176,11 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr39-step-02.svg',
       'pr39-step-03.svg',
       'pr39-step-04.svg',
-      // 최종 완성 결과물 초고화질 벡터 도면 34종
+      'pr40-step-01.svg',
+      'pr40-step-02.svg',
+      'pr40-step-03.svg',
+      'pr40-step-04.svg',
+      // 최종 완성 결과물 초고화질 벡터 도면 35종
       'pr01-outcome.svg',
       'pr02-outcome.svg',
       'pr03-outcome.svg',
@@ -211,6 +215,7 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       'pr37-outcome.svg',
       'pr38-outcome.svg',
       'pr39-outcome.svg',
+      'pr40-outcome.svg',
     ];
 
     for (const fileName of activeSvgs) {
@@ -417,6 +422,7 @@ describe('🔬 [Suite 10: 벡터 도면 검수 에이전트 & 무한루프 방�
       '37-lever-box-cribbing-collapse-rescue',
       '38-window-bubble-wrap-draft-insulation',
       '39-heatstroke-evaporative-artery-cooling',
+      '40-improvised-jacket-pole-stretcher',
     ];
     const protocolsDir = path.resolve(__dirname, '../content/protocols');
     const localesDir = path.resolve(__dirname, '../content/protocols/locales');

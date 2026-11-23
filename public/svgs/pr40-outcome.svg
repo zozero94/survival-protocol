@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg40out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="100%" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="pole40out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <pattern id="grid40out" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#22252a" stroke-width="0.6"/>
+    </pattern>
+    <filter id="shadow40out" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg40out)"/>
+  <rect width="800" height="450" fill="url(#grid40out)"/>
+  <rect x="10" y="10" width="780" height="430" fill="none" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Header Banner (Label 1) -->
+  <rect x="20" y="20" width="760" height="38" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="44" fill="#f4f4f5" font-family="monospace" font-size="11.5" font-weight="bold">PR-40 완성체 // 점퍼 2벌·막대 2개 소매 뒤집기 응급 들것</text>
+
+  <!-- 4 Stage Cards -->
+  <g filter="url(#shadow40out)">
+    <!-- STAGE 01 -->
+    <rect x="20" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="28" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#d97706" stroke-width="1"/>
+    <text x="34" y="102" fill="#f59e0b" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 01: 소매 안쪽 뒤집기</text>
+
+    <rect x="44" y="138" width="130" height="8" rx="3" fill="url(#pole40out)" stroke="#fde047"/>
+    <rect x="64" y="160" width="90" height="82" rx="4" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="109" y1="162" x2="109" y2="240" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 2"/>
+    <line x1="40" y1="192" x2="78" y2="192" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="74,188 82,192 74,196" fill="#38bdf8"/>
+    <line x1="178" y1="192" x2="140" y2="192" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="144,188 136,192 144,196" fill="#38bdf8"/>
+    <rect x="44" y="256" width="130" height="8" rx="3" fill="url(#pole40out)" stroke="#fde047"/>
+
+    <rect x="28" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="34" y="341" fill="#94a3b8" font-family="monospace" font-size="8">막대 점검 + 지퍼 끝 잠금</text>
+
+    <!-- STAGE 02 -->
+    <rect x="214" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="222" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#0284c7" stroke-width="1"/>
+    <text x="228" y="102" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 02: 2벌 관통·등판 위</text>
+
+    <rect x="246" y="156" width="58" height="82" rx="4" fill="#334155" stroke="#cbd5e1" stroke-width="1.4"/>
+    <rect x="296" y="156" width="60" height="82" rx="4" fill="#334155" stroke="#cbd5e1" stroke-width="1.4"/>
+    <rect x="230" y="168" width="146" height="8" rx="3" fill="url(#pole40out)" stroke="#fde047"/>
+    <rect x="230" y="218" width="146" height="8" rx="3" fill="url(#pole40out)" stroke="#fde047"/>
+    <line x1="252" y1="197" x2="352" y2="197" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <rect x="222" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="228" y="341" fill="#94a3b8" font-family="monospace" font-size="8">밑단 1뼘 겹침·지퍼 바닥 배치</text>
+
+    <!-- STAGE 03 -->
+    <rect x="408" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="416" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#dc2626" stroke-width="1"/>
+    <text x="422" y="102" fill="#ef4444" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 03: 탑승 전 하중 시험</text>
+
+    <rect x="424" y="206" width="146" height="8" rx="3" fill="url(#pole40out)" stroke="#fde047"/>
+    <path d="M 440 212 Q 497 236 554 212" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="497" y1="154" x2="497" y2="196" stroke="#38bdf8" stroke-width="3"/>
+    <polygon points="491,190 497,200 503,190" fill="#38bdf8"/>
+    <circle cx="454" cy="158" r="10" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <polyline points="449,158 453,162 459,154" fill="none" stroke="#86efac" stroke-width="2"/>
+    <circle cx="540" cy="158" r="10" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+    <line x1="535" y1="153" x2="545" y2="163" stroke="#fca5a5" stroke-width="2"/>
+    <line x1="545" y1="153" x2="535" y2="163" stroke="#fca5a5" stroke-width="2"/>
+
+    <rect x="416" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="422" y="341" fill="#94a3b8" font-family="monospace" font-size="8">중앙 10초 꾹 눌러 솔기 점검</text>
+
+    <!-- STAGE 04 -->
+    <rect x="602" y="74" width="178" height="296" rx="4" fill="#0f1014" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="610" y="84" width="162" height="28" rx="2" fill="#18181b" stroke="#059669" stroke-width="1"/>
+    <text x="616" y="102" fill="#10b981" font-family="monospace" font-size="8.5" font-weight="bold">STAGE 04: 4인 수평 안전 이송</text>
+
+    <rect x="630" y="168" width="122" height="6" rx="2" fill="url(#pole40out)" stroke="#fde047"/>
+    <rect x="630" y="218" width="122" height="6" rx="2" fill="url(#pole40out)" stroke="#fde047"/>
+    <rect x="646" y="172" width="90" height="48" rx="3" fill="#1e293b" stroke="#94a3b8" stroke-width="1.4"/>
+    <circle cx="662" cy="196" r="6" fill="#475569" stroke="#cbd5e1"/>
+    <rect x="672" y="188" width="48" height="16" rx="3" fill="#475569" stroke="#cbd5e1"/>
+    <circle cx="634" cy="171" r="5" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="634" cy="221" r="5" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="748" cy="171" r="5" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="748" cy="221" r="5" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="654" y1="248" x2="722" y2="248" stroke="#f59e0b" stroke-width="2.5"/>
+    <polygon points="718,244 728,248 718,252" fill="#f59e0b"/>
+
+    <rect x="610" y="316" width="162" height="42" rx="2" fill="#18181b" stroke="#334155" stroke-width="1"/>
+    <text x="616" y="341" fill="#94a3b8" font-family="monospace" font-size="8">지혈·부목 후 발끝부터 이동</text>
+  </g>
+
+  <!-- Bottom Core Principle Banner (Label 10) -->
+  <rect x="20" y="388" width="760" height="42" rx="3" fill="#18181b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="36" y="413" fill="#fef08a" font-family="monospace" font-size="10.5" font-weight="bold">[공학 원리] 소매 내반 터널이 몸통 천 전체로 체중 분산해 바느질 없이 성인 하중 지지</text>
+</svg>
