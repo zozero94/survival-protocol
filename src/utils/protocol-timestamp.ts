@@ -115,6 +115,9 @@ export function computeProtocolContentHash(
       if (Array.isArray(s.svgLabels)) {
         hash.update(`labels:${s.svgLabels.join('|')}`);
       }
+      if (Array.isArray(s.diagramLegend)) {
+        hash.update(`diagram_legend:${s.diagramLegend.join('|')}`);
+      }
       if (s.svgFileName) {
         hash.update(`svg:${s.svgFileName}`);
         const svgPath = path.resolve(rootDir, 'content/svgs', s.svgFileName);
@@ -145,6 +148,9 @@ export function computeProtocolContentHash(
     hash.update(`outcome:${(protocol.outcome.title || '').trim()}:${(protocol.outcome.description || '').trim()}`);
     if (Array.isArray(protocol.outcome.svgLabels)) {
       hash.update(`outcome_labels:${protocol.outcome.svgLabels.join('|')}`);
+    }
+    if (Array.isArray(protocol.outcome.diagramLegend)) {
+      hash.update(`outcome_diagram_legend:${protocol.outcome.diagramLegend.join('|')}`);
     }
     if (protocol.outcome.svgFileName) {
       hash.update(`outcome_svg:${protocol.outcome.svgFileName}`);

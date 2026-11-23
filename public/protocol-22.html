@@ -2494,23 +2494,17 @@
         document.querySelectorAll('[data-svg-legend-step]').forEach(function(el) {
           var sIdx = parseInt(el.getAttribute('data-svg-legend-step'), 10);
           var lIdx = parseInt(el.getAttribute('data-svg-legend-idx'), 10);
-          if (
-            proto.steps &&
-            proto.steps[sIdx] &&
-            Array.isArray(proto.steps[sIdx].svgLabels) &&
-            proto.steps[sIdx].svgLabels[lIdx] !== undefined
-          ) {
-            el.textContent = proto.steps[sIdx].svgLabels[lIdx];
+          var stepObj = proto.steps && proto.steps[sIdx];
+          var sLegend = stepObj ? (stepObj.diagramLegend || stepObj.svgLabels) : null;
+          if (Array.isArray(sLegend) && sLegend[lIdx] !== undefined) {
+            el.textContent = sLegend[lIdx];
           }
         });
         document.querySelectorAll('[data-svg-legend-outcome-idx]').forEach(function(el) {
           var lIdx = parseInt(el.getAttribute('data-svg-legend-outcome-idx'), 10);
-          if (
-            proto.outcome &&
-            Array.isArray(proto.outcome.svgLabels) &&
-            proto.outcome.svgLabels[lIdx] !== undefined
-          ) {
-            el.textContent = proto.outcome.svgLabels[lIdx];
+          var oLegend = proto.outcome ? (proto.outcome.diagramLegend || proto.outcome.svgLabels) : null;
+          if (Array.isArray(oLegend) && oLegend[lIdx] !== undefined) {
+            el.textContent = oLegend[lIdx];
           }
         });
 

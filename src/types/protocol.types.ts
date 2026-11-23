@@ -38,6 +38,7 @@ export interface ProtocolStep {
   svgFileName?: string;
   svgCode?: string;
   svgLabels?: string[];
+  diagramLegend?: string[];
   imageFileName?: string;
   deepDive?: StepDeepDive;
 }
@@ -48,6 +49,7 @@ export interface ProtocolOutcome {
   svgFileName?: string;
   svgCode?: string;
   svgLabels?: string[];
+  diagramLegend?: string[];
   imageFileName?: string;
 }
 

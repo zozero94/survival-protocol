@@ -214,7 +214,7 @@ export function renderStepCards(steps: ProtocolStep[], svgsMap: Record<string, s
       let visualContent = '';
       if (step.imageFileName) {
         const legendHtml = renderDiagramLegendHtml(
-          step.svgLabels,
+          step.diagramLegend || step.svgLabels,
           (lIdx) => `data-svg-legend-step="${idx}" data-svg-legend-idx="${lIdx}"`,
           'max-w-[460px]'
         );

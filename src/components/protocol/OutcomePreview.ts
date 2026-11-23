@@ -24,7 +24,7 @@ export function renderOutcomePreview(
   let visualContent = '';
   if (outcome.imageFileName) {
     const legendHtml = renderDiagramLegendHtml(
-      outcome.svgLabels,
+      outcome.diagramLegend || outcome.svgLabels,
       (lIdx) => `data-svg-legend-outcome-idx="${lIdx}"`,
       'max-w-2xl'
     );
