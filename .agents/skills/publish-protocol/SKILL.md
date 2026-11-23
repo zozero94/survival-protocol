@@ -23,15 +23,19 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
 ---
 
 ### [Phase 1] 방안 A+ 넘버링 테크니컬 도면 생성 · 시각 QA · WebP 압축 (`content/images/`)
-1. **생성 엔진 & 할당량 기준**:
-   - 기본 생성은 **Antigravity 내장 `image-generator` 서브에이전트**를 사용한다 (5시간 롤링 윈도우당 ~12~14장 ≈ ~2편 사이클; 5편 이상 배치 전환은 유료 `GEMINI_API_KEY` 활용 가능).
+1. **생성 엔진 & 할당량 기준 (Single-Shot Subagent + 웨이브 제어)**:
+   - 기본 생성은 **Antigravity 내장 `image-generator` 서브에이전트**를 사용한다 (5시간 롤링 윈도우당 ~14장 ≈ ~2편 사이클; 5편 이상 배치 전환은 유료 `GEMINI_API_KEY` 활용 가능).
+   - **Single-Shot 고정 원칙 (`generate_image` 1회 호출 강제)**: 모든 `image-generator` 호출 프롬프트 최상단에 아래 지침을 반드시 포함한다:
+     > *"반드시 `generate_image`를 정확히 1회만 호출하고 즉시 저장된 파일 경로를 반환하라. 서브에이전트 내부 자체 재시도/다중 보정 루프 금지 — 검수 및 선별 재생성 여부는 메인 에이전트가 판단한다."*
+   - **프로토콜 단위 Wave 실행**: 다편 배치 시 프로토콜 1편씩 순차 Wave로 생성·검수하여 부분 생성 상태로 한도가 소진되지 않도록 통제한다.
 2. **도면 규격 & 스타일**:
    - **1:1 스텝 도면**: `pr{XX}-step-01-diagram.webp` ~ `pr{XX}-step-0{N}-diagram.webp` (`cwebp -q 84 -resize 800 0`, ~45~60KB)
    - **16:9 와이드 완성 결과물 도면**: `pr{XX}-outcome-diagram.webp` (`cwebp -q 84 -resize 1024 0`, ~60~90KB)
    - 다크 차콜 `#0b0d10` 캔버스 + `#161b22` 블루프린트 그리드 위에서 핸드잉크 입체 단면도와 자연스러운 재질 음영·확대경(Zoom Inset)을 표현한다.
    - **Strict Zero-Words Rule**: 이미지 내부에 글자/단어/단위(`8cm`, `3min`, `100°C` 등)를 일체 굽지 않고, 오직 **청록(`#22d3ee`) 이중 링 원형 배지(`1`, `2`, `3` / Outcome `1~5`) + 직선 지시선 + 끝점 도트**만 작도한다.
-3. **필수 시각 QA (`read_file`)**:
-   - 생성된 모든 이미지를 `read_file`로 직접 확인하여 ① 텍스트/오탈자 0건, ② 숫자 배지·지시선과 실제 부품·범례 1:1 매칭, ③ Track A/B 소재 고증(현대 금지물 0건)을 검증한다. (불합격 컷만 최대 1~2회 재생성)
+3. **메인 에이전트 일괄 시각 QA & 선별 보정 (`read_file`)**:
+   - 메인 에이전트(최상위 추론 모델)가 Wave 내 모든 원본 이미지를 `read_file`로 직접 일괄 검수한다: ① 텍스트/오탈자/단위 0건, ② 숫자 배지 중복·누락 0건 및 지시선 끝점과 `diagramLegend` 1:1 매칭, ③ Track A/B 소재 고증(현대 금지물·물리 오류 0건).
+   - 사소한 선/구도 차이는 통과시키고 **치명적 결함(텍스트 혼입·배지 중복/누락·물리 고증 오류·지시선 오타깃)이 있는 컷만** 기존 서브에이전트에 `send_message`로 핀포인트 수정을 지시한다 (컷당 최대 1회 보정 권장).
 4. *(레거시 폴백 호환)*: 기존 `svgFileName`(`content/svgs/*.svg`)이 남아 있는 경우 폴백으로 유지 가능하며, 신규 SVG를 추가할 때만 `SvgAuditService` & `tests/10_svg_audit_loop.test.ts`를 함께 갱신한다.
 
 ---
@@ -50,13 +54,13 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
    - `title`: `[문제/상황] + [해결 행동] ~법` 형식의 쉬운 일상 한국어 직관 대제목 (**15~28자 권장, 10~35자 엄수, 재료 나열·괄호 부제 금지**)
    - `summary`: 재난 상황 정의 및 핵심 작동 원리 요약 (완제품 우선 활용법 및 비상 DIY 호환 안내 포함)
    - `materials`: 재료 목록 (`id`, `name`, `desc`, `isGathered` — `materials[].name` 내부 마크다운 링크 금지)
-   - `steps`: 3~6단계 가변 스텝 (`stepNumber`, `title`, `description`, `actionNote`, **`imageFileName`**: `"pr{XX}-step-0{N}-diagram.webp"`, **`svgLabels`**: `[0]` 헤더 · `[1..N-2]` 도면 내 숫자 `1..N` 1:1 대응 설명 · `[N-1]` 앰버 핵심 요약, 필요 시 `svgFileName` 폴백 및 `deepDive.fieldSpecs`)
+   - `steps`: 3~6단계 가변 스텝 (`stepNumber`, `title`, `description`, `actionNote`, **`imageFileName`**: `"pr{XX}-step-0{N}-diagram.webp"`, **`diagramLegend`**: `[0]` 헤더 · `[1..N-2]` 도면 내 숫자 `1..N` 1:1 대응 설명 · `[N-1]` 앰버 핵심 요약, 필요 시 레거시 `svgFileName`/`svgLabels` 폴백 보존 및 `deepDive.fieldSpecs`)
      - `description`: `1. **행동 키워드**: 구체적 행동 지침` 번호형 액션 체크리스트 규격 준수 (단일 번호 줄 240자 이하)
      - 내부 크로스링크: **반드시 클린 URL `[라벨](/protocol-YY)` 형식 (절대 `.html` 금지)**
    - `fatalMistake`: 치명적 실수 및 야전 안전 주의사항 (`title`, `description`, `consequence`)
    - `faqs`: 현장 돌발 상황 대응 Q&A 2~3종 (**반드시 `{ "question": "...", "causeDiagnostic": "...", "resolution": "..." }` 3개 키 구조 사용, 절대 `answer` 단일 키 사용 금지**)
    - `shortsScript`: `{ "hook": "...", "body": "...", "outro": "..." }`
-   - `outcome`: 완성 결과물 프리뷰 (`title`, `description`, **`imageFileName`**: `"pr{XX}-outcome-diagram.webp"`, **`svgLabels`**: `[0]` 헤더 · `[1..N-2]` 번호 `1..5` 1:1 대응 설명 · `[N-1]` 최종 검수 핵심 요약, 필요 시 `svgFileName` 폴백)
+   - `outcome`: 완성 결과물 프리뷰 (`title`, `description`, **`imageFileName`**: `"pr{XX}-outcome-diagram.webp"`, **`diagramLegend`**: `[0]` 헤더 · `[1..N-2]` 번호 `1..5` 1:1 대응 설명 · `[N-1]` 최종 검수 핵심 요약, 필요 시 레거시 `svgFileName`/`svgLabels` 폴백 보존)
 
 ---
 
@@ -66,7 +70,7 @@ description: 생존 프로토콜(재난에서 살아남기) 신규 주제를 기
 3. 모든 필드(`title`, `summary`, `materials`, `steps`, `fatalMistake`, `faqs`, `shortsScript`, `outcome`)를 누락 없이 1:1 완벽 번역한다.
 4. **도면 이미지 & 원형 HTML 범례 1:1 정합성**:
    - 7개 언어 JSON 모두 동일한 `imageFileName`(`pr{XX}-step-0{N}-diagram.webp`, `pr{XX}-outcome-diagram.webp`)을 공유한다.
-   - 각 스텝 및 `outcome`의 `svgLabels` 배열 요소 개수·인덱스 매핑(`1..N` 호출 배지 순서)은 한국어 원본과 정확히 일치해야 하며 `data-svg-legend-*` 핫스왑 및 `tests/06_feed_pagination.test.ts`를 100% 통과해야 한다.
+   - 각 스텝 및 `outcome`의 `diagramLegend` 배열 요소 개수·인덱스 매핑(`1..N` 호출 배지 순서)은 한국어 원본과 정확히 일치해야 하며(`diagramLegend || svgLabels`, 기존 레거시 `svgLabels`가 있는 경우 보존) `data-svg-legend-*` 핫스왑 및 `tests/06_feed_pagination.test.ts`를 100% 통과해야 한다.
 
 ---
 

@@ -99,8 +99,9 @@ npm run typecheck
    - 자·저울·타이머 등 현대 계측기 의존을 금지하고, 뼘·손가락 마디·콩알 크기 등 신체 감각 비유를 병기하십시오.
 6. **완제품 우선 & 비상 대체 호환 (Ready-Made Alternative)**:
    - 시판 완제품 장비가 있을 때의 활용법을 먼저 안내하고, 없을 때의 DIY 대체법을 제시하십시오.
-7. **방안 A+ 넘버링 도면 & 7개국어 HTML 범례 표준 (`data-svg-legend-*`)**:
-   - 신규 도면 및 전환 도면(`.webp`) 내부에는 텍스트/단어를 0자로 유지하고 청록 이중 링 숫자 핀(`1..N`)만 배치하며, 설명은 `StepCard.ts` / `OutcomePreview.ts`의 `renderDiagramLegendHtml()`과 `svgLabels`(7개 언어 `data-svg-legend-*` 1:1 매칭)로 렌더링하십시오. 모든 생성 이미지는 반드시 `read_file`로 시각 검수를 통과해야 합니다.
+7. **방안 A+ 넘버링 도면 & 7개국어 HTML 범례 표준 (`diagramLegend` · `data-svg-legend-*`) & Single-Shot QA 통제**:
+   - 신규 도면 및 전환 도면(`.webp`) 내부에는 텍스트/단어를 0자로 유지하고 청록 이중 링 숫자 핀(`1..N`)만 배치하며, 설명은 `steps[].diagramLegend` / `outcome.diagramLegend` 전용 필드(7개 언어 1:1 매칭)에 저장해 `StepCard.ts` / `OutcomePreview.ts`의 `renderDiagramLegendHtml()`과 `locale.state.ts`가 `diagramLegend || svgLabels`로 렌더링/핫스왑하도록 하십시오. (기존 레거시 `svgFileName`/`svgLabels`는 `tests/10_svg_audit_loop.test.ts` 및 SVG 폴백 호환을 위해 보존)
+   - `image-generator` 서브에이전트 호출 시 반드시 **`generate_image`를 정확히 1회만 호출하고 즉시 경로를 반환(자체 재시도 루프 금지)**하도록 지시하고, 메인 에이전트가 프로토콜 단위 Wave 결과를 `read_file`로 일괄 시각 검수한 뒤 치명적 결함이 있는 컷만 `send_message`로 선별 보정하십시오.
 
 ---
 
