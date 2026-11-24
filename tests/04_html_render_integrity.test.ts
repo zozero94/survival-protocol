@@ -155,5 +155,9 @@ describe('🌐 [Suite 4: 출력 무결성] 컴파일된 HTML 및 다국어 핫�
   test('Option A+ 넘버링 도면(PR-04 전체 4종: Step 01~03 + Outcome)의 WebP 도면, 7개국어 범례 동기화 및 HTML 렌더링이 무결해야 한다', () => {
     assertOptionAProtocolIntegrity('PR-04', 'protocol-04.html', '04-stone-axe-making', 'pr04', 3, 7);
   });
+
+  test('Option A+ 넘버링 도면(PR-05 전체 6종: Step 01~05 + Outcome)의 WebP 도면, 7개국어 범례 동기화 및 HTML 렌더링이 무결해야 한다', () => {
+    assertOptionAProtocolIntegrity('PR-05', 'protocol-05.html', '05-natural-cordage', 'pr05', 5, 7);
+  });
 });
 

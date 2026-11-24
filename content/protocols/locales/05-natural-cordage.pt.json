@@ -38,6 +38,15 @@
       "description": "1. **Teste de flexibilidade da haste**: Curve a haste lentamente em **mais de 90 graus** para garantir elasticidade sem fraturas.\n2. **Raspagem da casca externa**: Apoie a quina de uma pedra em ângulo para raspar somente a **casca marrom quebradiça**.\n3. **Exposição do líber interno**: Inspecione visualmente o surgimento das **fibras brancas resistentes e úmidas** sob a superfície raspada.\n4. **Separação do miolo lenhoso**: Destaque a ponta com a unha e puxe no sentido do caule para **desprender o miolo duro** e extrair as fitas de fibra.",
       "actionNote": "> Princípio de colheita: Galhos secos e mortos no chão contêm fibras podres que se rompem sob tração. Colete a casca interna sempre de ramos vivos ou recém-cortados.",
       "svgFileName": "pr05-step-01.svg",
+      "imageFileName": "pr05-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // CORDAGE STEP 1: SELEÇÃO DE CAULE VIVO, RASPAGEM E EXTRAÇÃO DO LÍBER",
+        "Selecionar caule vivo flexível (kudzu ou salgueiro) que dobre mais de 90° sem quebrar",
+        "Usar lasca de pedra afiada em ângulo para raspar apenas a casca externa marrom quebradiça",
+        "Descascar em fita longa a camada fibrosa interna branca úmida (líber) sob a casca",
+        "Separar e descartar o miolo lenhoso rígido central, guardando apenas a fibra resistente",
+        "[PASSO 1] Galhos secos no chão se esfarelam — extraia fibras somente de caules vivos flexíveis"
+      ],
       "svgLabels": [
         "① Raspar casca externa com quina de pedra",
         "② Casca marrom quebradiça (raspar e descartar)",
@@ -57,6 +66,15 @@
       "description": "1. **Demolha e lixiviação de pectina**: Mergulhe as fitas de casca em água por **20 a 30 minutos** para dissolver resinas e seiva endurecida.\n2. **Assentamento na bigorna de pedra**: Estenda as tiras amolecidas sobre uma **pedra de rio plana e firme**.\n3. **Amaciamento por percussão**: Bata e role suavemente uma pedra redonda ao longo do comprimento para desfibrar em **filamentos finos e macios**.\n4. **Separação em dois feixes simétricos**: Divida o feixe em **2 pernas iguais** com espessura e densidade idênticas.",
       "actionNote": "> Força de batida: Golpear com violência corta as fibras longitudinais. Pressione e role suavemente para preservar fios longos e íntegros.",
       "svgFileName": "pr05-step-02.svg",
+      "imageFileName": "pr05-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // CORDAGE STEP 2: IMERSÃO NO RIACHO E MACERAÇÃO SUAVE COM PEDRA",
+        "Mergulhar as fitas de líber no riacho por 20–30 min para soltar a seiva rígida e amaciar",
+        "Bater e esfregar suavemente ao longo da fibra com pedra redonda lisa do tamanho de um punho",
+        "Estender as tiras úmidas sobre uma pedra plana firme (bigorna) apoiada no solo",
+        "Dividir o feixe macio de fibras finas em duas mechas iguais com espessura uniforme",
+        "[PASSO 2] Pancadas fortes cortam as fibras — macere com leveza para preservar o comprimento contínuo"
+      ],
       "svgLabels": [
         "① Casca interna de molho 20+ min no riacho",
         "② Bater suave com pedra redonda para abrir fibras",
@@ -71,6 +89,15 @@
       "description": "1. **Pinça na dobra central**: Dobre o feixe ao meio prendendo o laço entre polegar e indicador esquerdos para criar **perna superior e inferior**.\n2. **Torção horária individual**: Com a mão direita, torça a perna de cima para fora (↑) em **rotação horária** até tensionar.\n3. **Cruzamento anti-horário de conjunto**: Passe a perna superior torcida por cima da inferior em direção a você (↓) em **movimento anti-horário**.\n4. **Travamento progressivo contínuo**: Desloque o polegar esquerdo segurando o cruzamento e repita a sequência de **torcer para fora e cruzar para dentro**.",
       "actionNote": "> Lei do autotravamento: Girar as duas pernas na mesma direção desenrola a corda na hora. Torcer cada perna para fora e trançar para dentro equilibra o torque e trava a corda de forma permanente.",
       "svgFileName": "pr05-step-03.svg",
+      "imageFileName": "pr05-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // CORDAGE STEP 3: TORÇÃO REVERSA (REVERSE-WRAP) AUTOTRAVANTE",
+        "Alça inicial dobrada seguindo em corda de 2 pernas firmemente travadas em hélice (detalhe)",
+        "Pinçar firme a bifurcação ativa com polegar e indicador esquerdos para manter a tensão",
+        "Torcer firmemente a perna superior para fora (rotação horária individual até ficar tensa)",
+        "Cruzar a perna superior torcida por cima da inferior para o seu lado (trava no sentido oposto)",
+        "[PASSO 3] Torcer no mesmo sentido desmancha ao soltar — torça para fora e cruze para dentro"
+      ],
       "svgLabels": [
         "① Cabo superior: torcer firme para fora (↑)",
         "② Padrão de corda travado em escama",
@@ -90,6 +117,15 @@
       "description": "1. **Identificação da zona de emenda**: Localize quando qualquer das pernas afinar até restar uma **ponta de cerca de 10cm**.\n2. **Sobreposição longitudinal**: Posicione a ponta de um feixe novo ao lado do cabo curto em **10cm de contato paralelo**.\n3. **Trançado unificado**: Segure as duas pontas juntas como se fossem uma só e torça por **3 a 4 ciclos consecutivos**.\n4. **Espaçamento defasado de emendas**: Mantenha as emendas da perna superior e inferior separadas por uma **distância mínima de 15cm**.",
       "actionNote": "> Regra do espaçamento: Fazer as duas emendas no mesmo ponto gera um caroço que se rompe sob tensão. Alterne as emendas com pelo menos 15cm de distância.",
       "svgFileName": "pr05-step-04.svg",
+      "imageFileName": "pr05-step-04-diagram.webp",
+      "diagramLegend": [
+        "FIG. 04 // CORDAGE STEP 4: EMENDA SOBREPOSTA DE 10CM COM DEFASAGEM DE 15CM",
+        "Identificar a ponta fina da perna ativa quando restarem cerca de 10cm (largura da palma)",
+        "Apoiar feixe novo de fibras paralelas sobrepondo 10cm ao lado da ponta que está acabando",
+        "Torcer as duas pontas juntas como uma única perna sem caroços nem engrossamentos (detalhe)",
+        "Desencontrar emendas da perna superior e inferior em pelo menos um palmo (15cm)",
+        "[PASSO 4] Emendas no mesmo ponto rompem sob carga — sempre alterne as junções com 15cm+ de distância"
+      ],
       "svgLabels": [
         "① Cabo antigo afinando com 10cm restantes",
         "② Encostar fibra nova ao lado (10cm sobrepostos)",
@@ -109,6 +145,15 @@
       "description": "1. **Nó terminal de retenção**: Ao alcançar o comprimento final (5m+), forme um laço a **3cm da ponta** e aperte um nó simples de retenção.\n2. **Aparagem com lasca de pedra**: Raspe suavemente uma lasca de pedra na corda para aparar fiapos até obter **seção uniforme de 5mm**.\n3. **Ancoragem em tronco firme**: Passe a corda duas vezes ao redor de um tronco verde e grosso mais espesso que o antebraço.\n4. **Verificação com carga de 50kg**: Segure a corda com as duas mãos e projete **mais de 50kg de peso corporal** para checar a solidez das emendas.",
       "actionNote": "> Critério de carga: Se escutar estalos ou notar deslizamento na emenda, enrole uma camada fina de fibra adicional sobre a região afetada.",
       "svgFileName": "pr05-step-05.svg",
+      "imageFileName": "pr05-step-05-diagram.webp",
+      "diagramLegend": [
+        "FIG. 05 // CORDAGE STEP 5: NÓ DE ARREMATE, ACABAMENTO EM PEDRA E TESTE DE CARGA",
+        "Dar nó simples firme a 3cm da ponta final para impedir que a corda desfie (detalhe superior)",
+        "Raspar fiapos soltos com lasca de pedra afiada até obter perfil redondo liso de 5mm (inferior)",
+        "Dar ao menos duas voltas bem firmes em um tronco vivo grosso da largura do antebraço",
+        "Puxar com todo o peso corporal (50kg+) comprovando zero deslizamento nas emendas",
+        "[PASSO 5] Se a emenda ceder, reforce com fibra fina — aprovada para abrigo, machado e arco de fogo"
+      ],
       "svgLabels": [
         "① Nó de trava a 3cm da ponta final",
         "② Aparar fiapos soltos com lasca de pedra",
@@ -130,10 +175,20 @@
   },
   "outcome": {
     "svgFileName": "pr05-outcome.svg",
+    "imageFileName": "pr05-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-05 OUTCOME // 2-PLY REVERSE-WRAP NATURAL BAST FIBER CORDAGE",
+      "Matéria-Prima: Fitas de líber interno descascadas, demolhadas e amaciadas com pedra",
+      "Trava Reversa: Hélice de 2 pernas com torques opostos em equilíbrio autotravante (detalhe)",
+      "Emendas Defasadas: Sobreposições de 10cm alternadas a 15cm+ mantendo espessura uniforme de 5mm",
+      "Rolo Polido em Pedra: Bobina compacta de 5m lisa e sem fiapos, resistente à abrasão",
+      "Nó Terminal Seguro: Nó de tope a 3cm em corda natural capaz de resistir a mais de 90kg",
+      "[VERIFICAÇÃO FINAL] Líber vivo · Trava reversa · Emendas a 15cm · Teste de tração 50kg+ no tronco aprovado"
+    ],
     "title": "Rolo de Corda Natural de 2 Pernas com Torção Reversa Concluído",
     "description": "Uma bobina de corda uniforme de 8 mm trançada com fibras de casca interna em torção reversa, suportando mais de 90 kgf de tração sem deslizar."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "8a19f8ab4e6502a7"
+  "updatedAt": "2026-11-24T09:01:00.945Z",
+  "contentHash": "66c2eb5a255460c8"
 }

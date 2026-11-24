@@ -38,6 +38,15 @@
       "description": "1. **Live Stalk Elasticity Verification**: Slowly flex the stalk in half to ensure it bends smoothly past **90 degrees** without breaking.\n2. **Outer Bark Stripping**: Angle a sharp stone edge against the stem to carefully scrape away only the brittle **brown outer bark**.\n3. **Bast Layer Inspection**: Visually verify the moist, gleaming **white inner bast fibers** emerging beneath the scraped surface.\n4. **Woody Core Separation**: Lift the bottom edge with your fingernail and pull upward firmly to **strip the tough ribbon fibers** clean off the rigid woody core.",
       "actionNote": "> Harvesting Principle: Dead, dry stalks on the ground have rotted fibers that crumble under tension. Always harvest inner bark from live or freshly cut green stalks.",
       "svgFileName": "pr05-step-01.svg",
+      "imageFileName": "pr05-step-01-diagram.webp",
+      "diagramLegend": [
+        "FIG. 01 // CORDAGE STEP 1: LIVE STALK SELECTION, OUTER BARK SCRAPING & INNER BAST PEELING",
+        "Select a live flexible vine or willow stalk that bends smoothly past 90° without snapping",
+        "Angle a sharp raw stone flake to gently scrape away only the brittle brown outer bark curls",
+        "Peel off the moist creamy-white fibrous inner bast layer in a long continuous ribbon",
+        "Strip away and discard the rigid pale woody inner core, keeping pure bast fiber only",
+        "[STEP 1] Dead dry branches crumble immediately — always harvest inner bast from live flexible stalks"
+      ],
       "svgLabels": [
         "① Scrape off rough outer bark with stone edge",
         "② Brittle brown outer bark (scrape & discard)",
@@ -57,6 +66,15 @@
       "description": "1. **Hydration and Pectin Leaching**: Submerge peeled bast ribbons completely in water for **20–30 minutes** to dissolve stiffening tree sap.\n2. **Flat Anvil Placement**: Spread the softened ribbons flat across a wide, stable **river anvil stone**.\n3. **Gentle Hammerstone Milling**: Tap and roll a round stone gently along the length to break down stiff grain into **pliable hair-like filaments**.\n4. **Equal Dual Splitting**: Divide the resulting continuous fiber bundle into **2 equal strands** of identical thickness.",
       "actionNote": "> Pounding Control: Striking too hard severs the continuous filaments. Roll and press gently with a smooth stone to preserve maximum tensile length.",
       "svgFileName": "pr05-step-02.svg",
+      "imageFileName": "pr05-step-02-diagram.webp",
+      "diagramLegend": [
+        "FIG. 02 // CORDAGE STEP 2: STREAM SOAKING & RIVER-STONE FIBER MILLING",
+        "Submerge peeled bast ribbons in stream water for 20–30 min to leach stiff sap and soften fibers",
+        "Gently tap and rub downward with a smooth fist-sized river cobble to separate fiber grain",
+        "Spread wet inner-bark strips across a wide, stable flat river anvil stone seated on earth",
+        "Divide the soft, hair-like teased fiber bundle into two equal finger-thick strands",
+        "[STEP 2] Heavy blows sever long filaments — press and rub gently with a smooth stone to preserve length"
+      ],
       "svgLabels": [
         "① Inner bark soaked 20+ min in stream water",
         "② Gently tap with round stone to split fibers",
@@ -71,6 +89,15 @@
       "description": "1. **Bight Pinch Initiation**: Fold the continuous fiber bundle in half, pinching the center loop tightly between your left thumb and forefinger to form **upper and lower plies**.\n2. **Individual Clockwise Twist**: Grip the upper ply with your right hand and twist tightly away from your body (↑) in a **clockwise rotation**.\n3. **Collective Counter-Cross**: Bring the twisted upper ply down over the lower ply toward your body (↓) in a **counter-clockwise crossing movement**.\n4. **Progressive Pinch Advance**: Walk your left thumb forward to pinch the new junction, repeating the **twist-away and wrap-inward cycle** continuously.",
       "actionNote": "> Reverse-Wrap Locking Law: Twisting both strands in the same direction causes the rope to unravel instantly. Counter-twisting individual plies against the collective braid balances torque and creates a permanent mechanical lock.",
       "svgFileName": "pr05-step-03.svg",
+      "imageFileName": "pr05-step-03-diagram.webp",
+      "diagramLegend": [
+        "FIG. 03 // CORDAGE STEP 3: REVERSE-WRAP TWIST-AWAY & CROSS-INWARD SELF-LOCKING",
+        "Folded starting loop leading into tightly interlocked chevron 2-ply cordage (zoom inset)",
+        "Pinch the active Y-fork junction firmly with left thumb and index finger to hold constant tension",
+        "Twist the upper strand tightly outward away from your body (clockwise individual spin)",
+        "Cross the twisted upper strand downward over the lower strand toward your body (opposite lock)",
+        "[STEP 3] Same-direction twists unravel immediately — twist plies outward and wrap inward to balance torque"
+      ],
       "svgLabels": [
         "① Top strand: twist tightly away from body (↑)",
         "② Interlocked chevron rope pattern",
@@ -90,6 +117,15 @@
       "description": "1. **Splice Window Detection**: Identify when either working strand thins down to its final **10cm tail**.\n2. **Overlap Layering**: Lay the tapered end of a fresh fiber bundle parallel alongside the depleting tail across a **10cm overlap zone**.\n3. **Integrated Dual Ply Wrap**: Pinch both bundles together as a single strand and twist tightly across **3–4 consecutive braid cycles**.\n4. **Staggered Splice Offset**: Offset the splices between upper and lower plies by a **minimum distance of 15cm**.",
       "actionNote": "> Staggered Splice Rule: Splicing both strands at the same spot creates a swollen lump that shears under heavy tension. Always stagger splices by at least 15cm to preserve continuous tensile strength.",
       "svgFileName": "pr05-step-04.svg",
+      "imageFileName": "pr05-step-04-diagram.webp",
+      "diagramLegend": [
+        "FIG. 04 // CORDAGE STEP 4: 10CM OVERLAP SPLICING & 15CM STAGGERED OFFSET",
+        "Spot the thinning tail of the active older strand when about one palm-width (10cm) remains",
+        "Lay a fresh pale fiber bundle flush side-by-side overlapping the tapering tail by 10cm",
+        "Twist both overlapped tails together as one strand for a smooth lump-free profile (zoom inset)",
+        "Stagger upper and lower strand splices at least one hand-span (15cm) apart to prevent weak points",
+        "[STEP 4] Coincident splices bulge and snap under load — always stagger upper and lower joints by 15cm+"
+      ],
       "svgLabels": [
         "① Existing strand thinning with 10cm left",
         "② Lay new fiber bundle alongside (10cm overlap)",
@@ -109,6 +145,15 @@
       "description": "1. **Terminal Stopper Knot**: Upon reaching the target length (5m+), cinch the final **3cm end segment** into a tight overhand stopper knot.\n2. **Lithic Shear Trimming**: Lightly scrape a sharp stone flake along the rope body to trim stray fuzz and maintain a **uniform 5mm diameter**.\n3. **Arboreal Anchor Lashing**: Wrap the finished cordage at least twice around a solid tree trunk thicker than your forearm.\n4. **50kg Tensile Proof-Load**: Grasp the rope firmly with both hands and suspend your **full body weight of 50kg+** to prove splice integrity.",
       "actionNote": "> Tensile Proof Standard: If you hear fiber snapping sounds or observe splice slippage under load, wrap a thin reinforcing fiber sheath directly over the affected zone.",
       "svgFileName": "pr05-step-05.svg",
+      "imageFileName": "pr05-step-05-diagram.webp",
+      "diagramLegend": [
+        "FIG. 05 // CORDAGE STEP 5: STOPPER KNOT, STONE FUZZ TRIMMING & BODY-WEIGHT LOAD TEST",
+        "Tie a tight overhand stopper knot 3cm from the bitter tip to stop unraveling (upper inset)",
+        "Scrape away stray fuzz with a sharp raw stone flake to leave a smooth 5mm round profile (lower inset)",
+        "Wrap the finished rope at least twice securely around a stout forearm-thick living tree trunk",
+        "Pull hard with full body weight (50kg+) along the taut span to confirm zero splice slippage",
+        "[STEP 5] Reinforce any slipping splice with thin bast — cleared rope is ready for shelter, axe & bow-drill use"
+      ],
       "svgLabels": [
         "① Overhand stopper knot 3cm from the end",
         "② Trim loose fuzz cleanly with stone flake",
@@ -130,10 +175,20 @@
   },
   "outcome": {
     "svgFileName": "pr05-outcome.svg",
+    "imageFileName": "pr05-outcome-diagram.webp",
+    "diagramLegend": [
+      "PR-05 OUTCOME // 2-PLY REVERSE-WRAP NATURAL BAST FIBER CORDAGE",
+      "Raw Bast Source: Peeled, water-soaked, and stone-milled pale inner-bark fiber ribbons",
+      "Self-Locking Reverse-Wrap: Opposing ply twist and wrap torques locking permanently (zoom inset)",
+      "Staggered Seamless Splices: 10cm overlaps offset 15cm+ apart keeping uniform 5mm thickness",
+      "Trimmed Heavy-Duty Coil: Stone-smoothed fuzz-free cylindrical 5m survival cordage hank",
+      "Locked Stopper End: Tight 3cm overhand end knot preventing fray on 90kg+ tensile-rated rope",
+      "[FINAL CHECK] Live bast fibers · Reverse-wrap lock · 15cm staggered splices · 50kg+ tree-anchor pull verified"
+    ],
     "title": "Completed 2-Ply Reverse-Wrapped Natural Cordage Coil",
     "description": "A uniform 8mm braided rope coil made by twisting bast fibers clockwise and counter-wrapping plies, sustaining over 90 kgf tensile load without slipping."
   },
   "createdAt": "2026-10-13T13:20:00.000Z",
-  "updatedAt": "2026-11-09T08:43:31Z",
-  "contentHash": "8a19f8ab4e6502a7"
+  "updatedAt": "2026-11-24T09:01:00.945Z",
+  "contentHash": "66c2eb5a255460c8"
 }
