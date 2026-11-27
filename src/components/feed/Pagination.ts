@@ -30,7 +30,7 @@ export function renderPagination(currentPage: number, totalPages: number, totalI
   const endIdx = Math.min(currentPage * 5, totalItems);
 
   return `
-<section id="pagination-nav" class="pt-6 pb-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-neutral-800 font-mono text-xs">
+<section id="pagination-nav" class="no-print pt-6 pb-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-neutral-800 font-mono text-xs">
   <div class="flex items-center gap-1" id="pagination-buttons-bar">
     <!-- 이전 버튼 -->
     <button type="button"

@@ -70,13 +70,13 @@ export function renderIndexPage(
   const feedScript = getFeedRuntimeScript();
   const searchScript = getSearchRuntimeScript();
   const crosslinkScript = getCrosslinkRuntimeScript();
-  const firebaseScript = getFirebaseRuntimeScript();
+  const firebaseScript = getFirebaseRuntimeScript('feed');
 
   return `<!DOCTYPE html>
 <html class="dark" lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
   <title data-i18n="feedHeaderTitle">${SITE_META.name} // [생존 교범 // SURVIVAL PROTOCOL]</title>
   <meta name="description" content="${SITE_META.description}">
   <meta name="keywords" content="재난에서 살아남기, 포스트 아포칼립스, 전쟁 생존, 비상사태 생존법, 도시 재난, 단수 대처, 정전 난방, 생존 교범, 서바이벌 프로토콜, survival protocol, post-apocalypse, emergency preparedness">
@@ -112,6 +112,10 @@ export function renderIndexPage(
     html[data-network="offline"] #offline-banner { display: block !important; }
     ::-webkit-scrollbar { display: none; }
     * { border-radius: 0px !important; -webkit-tap-highlight-color: transparent; }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+    }
   </style>
   <script>
     (function() {

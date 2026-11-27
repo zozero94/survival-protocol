@@ -72,23 +72,36 @@ export function renderProtocolCard(protocol: Protocol): string {
   const detailLink = `/protocol-${num}`;
   const dateStr = formatDate(protocol.createdAt);
   const dateHtml = dateStr
-    ? `<span class="text-neutral-600">/</span><span data-card-date="${protocol.protocolId}" class="text-neutral-500 font-mono text-[11px]">${dateStr}</span>`
+    ? `<span aria-hidden="true" class="text-neutral-600">/</span><span data-card-date="${protocol.protocolId}" class="text-neutral-500 font-mono text-[11px]">${dateStr}</span>`
     : '';
 
   return `
-<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="${protocol.protocolId}" data-protocol-href="${detailLink}" data-category="${protocol.category}" data-created-at="${protocol.createdAt || ''}">
+<article class="bg-[#1c1b1b] border border-neutral-800 hover:border-neutral-500 p-4 sm:p-5 flex flex-col gap-3 transition-colors group cursor-pointer" data-protocol-card="${protocol.protocolId}" data-protocol-href="${detailLink}" data-category="${protocol.category}" data-created-at="${protocol.createdAt || ''}" data-views="0" data-likes="0" data-comments="0">
   <!-- 상단 헤더 레일 -->
-  <div class="flex items-center justify-between font-mono text-xs pb-1 border-b border-neutral-800/80">
-    <div class="flex items-center gap-2">
+  <div class="flex items-center justify-between gap-2 flex-wrap font-mono text-xs pb-1.5 border-b border-neutral-800/80">
+    <div class="flex items-center gap-2 flex-wrap">
       <span data-i18n="cat_${protocol.category}" class="text-neutral-400 font-bold">${categoryLabel}</span>
       ${dateHtml}
-      <span class="text-neutral-600 hidden sm:inline">/</span>
-      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
-        <span>V:</span><span data-feed-views="${protocol.protocolId}" class="tabular-nums min-w-[14px] inline-block text-right">-</span>
-      </span>
-      <span class="text-neutral-500 font-mono text-[11px] flex items-center gap-1">
-        <span>L:</span><span data-feed-likes="${protocol.protocolId}" class="tabular-nums min-w-[14px] inline-block text-right">0</span>
-      </span>
+      <span aria-hidden="true" class="text-neutral-600 hidden sm:inline">/</span>
+      <div class="flex items-center gap-2 font-mono text-[11px] text-neutral-400 group-hover:text-neutral-300 transition-colors">
+        <span class="flex items-center gap-1" title="Views">
+          <svg class="w-3 h-3 text-neutral-500 group-hover:text-neutral-300 transition-colors shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span class="sr-only" data-i18n="metricViews">조회수</span>
+          <span data-feed-views="${protocol.protocolId}" class="tabular-nums">-</span>
+        </span>
+        <span aria-hidden="true" class="text-neutral-700 text-[10px]">|</span>
+        <span class="flex items-center gap-1" title="Likes">
+          <svg class="w-3 h-3 text-neutral-500 group-hover:text-neutral-300 transition-colors shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+          <span class="sr-only" data-i18n="metricLikes">좋아요</span>
+          <span data-feed-likes="${protocol.protocolId}" class="tabular-nums">0</span>
+        </span>
+        <span aria-hidden="true" class="text-neutral-700 text-[10px]">|</span>
+        <span class="flex items-center gap-1" title="Comments">
+          <svg class="w-3 h-3 text-neutral-500 group-hover:text-neutral-300 transition-colors shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span class="sr-only" data-i18n="metricComments">댓글</span>
+          <span data-feed-comments="${protocol.protocolId}" class="tabular-nums">0</span>
+        </span>
+      </div>
     </div>
     ${threatBadge}
   </div>

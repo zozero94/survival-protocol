@@ -81,6 +81,15 @@ export type ProtocolCategory = (typeof PROTOCOL_CATEGORIES)[number];
 export const FEED_CATEGORY_KEYS = ['ALL', ...PROTOCOL_CATEGORIES] as const;
 export type FeedCategoryKey = (typeof FEED_CATEGORY_KEYS)[number];
 
+export const FEED_SORT_OPTIONS = [
+  { id: 'latest', i18nKey: 'sort_latest', badge: 'NEW', isMetric: false },
+  { id: 'oldest', i18nKey: 'sort_oldest', badge: 'OLD', isMetric: false },
+  { id: 'views', i18nKey: 'sort_views', badge: 'VIEW', isMetric: true },
+  { id: 'likes', i18nKey: 'sort_likes', badge: 'LIKE', isMetric: true },
+  { id: 'comments', i18nKey: 'sort_comments', badge: 'COMM', isMetric: true },
+] as const;
+export type FeedSortMode = (typeof FEED_SORT_OPTIONS)[number]['id'];
+
 export function isProtocolCategory(value: unknown): value is ProtocolCategory {
   return typeof value === 'string' && (PROTOCOL_CATEGORIES as readonly string[]).includes(value);
 }

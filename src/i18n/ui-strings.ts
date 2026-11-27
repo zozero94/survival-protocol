@@ -75,6 +75,12 @@ export interface UiStrings {
   footerLegalNotice: string;
   sort_latest: string;
   sort_oldest: string;
+  sort_views: string;
+  sort_likes: string;
+  sort_comments: string;
+  metricViews: string;
+  metricLikes: string;
+  metricComments: string;
   uploadDate: string;
   createdPrefix: string;
   updatedPrefix: string;
@@ -217,6 +223,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[안전 면책 및 개인정보 고지] 본 교범은 극한 조난·재난 대비 교육 목적으로 작성되었으며 평시 실습 시 화재·중독·부상 안전 수칙과 현지 법령을 준수해야 합니다. 서비스 품질 개선을 위해 개인 식별 정보가 제외된 익명 열람 통계(GA4/Firebase) 및 로컬 스토리지만을 사용합니다.',
     sort_latest: '최신순',
     sort_oldest: '오래된순',
+    sort_views: '조회수순',
+    sort_likes: '좋아요순',
+    sort_comments: '댓글순',
+    metricViews: '조회수',
+    metricLikes: '좋아요',
+    metricComments: '댓글',
     uploadDate: '등록일',
     createdPrefix: '등록',
     updatedPrefix: '최종 수정',
@@ -356,6 +368,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[Safety Disclaimer & Privacy Notice] This archive is provided for emergency preparedness and educational purposes. Observe fire, toxicity, and local legal safety regulations during practice. Only anonymized telemetry (GA4/Firebase) and local storage are used without collecting personal data.',
     sort_latest: 'Latest',
     sort_oldest: 'Oldest',
+    sort_views: 'Most Viewed',
+    sort_likes: 'Most Liked',
+    sort_comments: 'Most Commented',
+    metricViews: 'Views',
+    metricLikes: 'Likes',
+    metricComments: 'Comments',
     uploadDate: 'Date',
     createdPrefix: 'Created',
     updatedPrefix: 'Updated',
@@ -495,6 +513,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[安全免責およびプライバシー通知] 本教本は緊急災害対策および教育目的で作成されており、平時の実習では火災・中毒・怪我の安全規則および現地法令を遵守してください。個人を特定しない匿名統計(GA4/Firebase)とローカルストレージのみを使用します。',
     sort_latest: '最新順',
     sort_oldest: '古い順',
+    sort_views: '閲覧数順',
+    sort_likes: 'いいね順',
+    sort_comments: 'コメント数順',
+    metricViews: '閲覧数',
+    metricLikes: 'いいね',
+    metricComments: 'コメント',
     uploadDate: '登録日',
     createdPrefix: '登録',
     updatedPrefix: '最終更新',
@@ -634,6 +658,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[Aviso Legal y de Privacidad] Este archivo tiene fines educativos y de preparación ante emergencias. Respete las normas de seguridad y leyes locales. Solo se utilizan estadísticas anónimas (GA4/Firebase) y almacenamiento local sin recopilar datos personales.',
     sort_latest: 'Más recientes',
     sort_oldest: 'Más antiguos',
+    sort_views: 'Más vistos',
+    sort_likes: 'Más valorados',
+    sort_comments: 'Más comentados',
+    metricViews: 'Vistas',
+    metricLikes: 'Me gusta',
+    metricComments: 'Comentarios',
     uploadDate: 'Fecha',
     createdPrefix: 'Publicado',
     updatedPrefix: 'Actualizado',
@@ -773,6 +803,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[Sicherheitshinweis & Datenschutz] Dieses Archiv dient der Katastrophenvorsorge und Bildungszwecken. Beachten Sie Sicherheitsvorschriften und lokale Gesetze. Es werden nur anonyme Statistiken (GA4/Firebase) und lokaler Speicher ohne personenbezogene Daten verwendet.',
     sort_latest: 'Neueste',
     sort_oldest: 'Älteste',
+    sort_views: 'Meiste Aufrufe',
+    sort_likes: 'Meiste Likes',
+    sort_comments: 'Meiste Kommentare',
+    metricViews: 'Aufrufe',
+    metricLikes: 'Likes',
+    metricComments: 'Kommentare',
     uploadDate: 'Datum',
     createdPrefix: 'Erstellt',
     updatedPrefix: 'Aktualisiert',
@@ -912,6 +948,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[Aviso de Segurança e Privacidade] Este arquivo destina-se à preparação para emergências e fins educativos. Respeite as normas de segurança e leis locais. Apenas estatísticas anônimas (GA4/Firebase) e armazenamento local são usados sem coleta de dados pessoais.',
     sort_latest: 'Mais recentes',
     sort_oldest: 'Mais antigos',
+    sort_views: 'Mais vistos',
+    sort_likes: 'Mais curtidos',
+    sort_comments: 'Mais comentados',
+    metricViews: 'Visualizações',
+    metricLikes: 'Curtidas',
+    metricComments: 'Comentários',
     uploadDate: 'Data',
     createdPrefix: 'Criado',
     updatedPrefix: 'Atualizado',
@@ -1051,6 +1093,12 @@ export const UI_STRINGS: Record<SupportedLocale, UiStrings> = {
       '[安全免責與隱私聲明] 本手冊僅供災難應變與教育目的使用，平時演練請遵守用火、防毒、安全規範與當地法規。本網站僅使用去識別化匿名統計(GA4/Firebase)與本地儲存空間，不收集任何個人資料。',
     sort_latest: '最新發布',
     sort_oldest: '最早發布',
+    sort_views: '瀏覽最多',
+    sort_likes: '按讚最多',
+    sort_comments: '留言最多',
+    metricViews: '瀏覽數',
+    metricLikes: '按讚數',
+    metricComments: '留言數',
     uploadDate: '發布日期',
     createdPrefix: '發布',
     updatedPrefix: '最後更新',
