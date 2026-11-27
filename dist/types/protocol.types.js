@@ -81,6 +81,15 @@ export const PROTOCOL_CATEGORIES = [
 export const FEED_CATEGORY_KEYS = ['ALL', ...PROTOCOL_CATEGORIES]         ;
                                                                   
 
+export const FEED_SORT_OPTIONS = [
+  { id: 'latest', i18nKey: 'sort_latest', badge: 'NEW', isMetric: false },
+  { id: 'oldest', i18nKey: 'sort_oldest', badge: 'OLD', isMetric: false },
+  { id: 'views', i18nKey: 'sort_views', badge: 'VIEW', isMetric: true },
+  { id: 'likes', i18nKey: 'sort_likes', badge: 'LIKE', isMetric: true },
+  { id: 'comments', i18nKey: 'sort_comments', badge: 'COMM', isMetric: true },
+]         ;
+                                                                    
+
 export function isProtocolCategory(value         )                            {
   return typeof value === 'string' && (PROTOCOL_CATEGORIES                     ).includes(value);
 }

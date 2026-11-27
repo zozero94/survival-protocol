@@ -109,7 +109,7 @@ export function renderCanonicalProtocolPage(
   const pwaScript = getPwaRuntimeScript();
   const searchScript = getSearchRuntimeScript();
   const crosslinkScript = getCrosslinkRuntimeScript();
-  const firebaseScript = getFirebaseRuntimeScript();
+  const firebaseScript = getFirebaseRuntimeScript('protocol');
   const commentScript = getCommentRuntimeScript();
 
   return `<!DOCTYPE html>

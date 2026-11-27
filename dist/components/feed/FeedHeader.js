@@ -1,9 +1,30 @@
 import {
   FEED_CATEGORY_KEYS,
-                       
+  FEED_SORT_OPTIONS,
 } from '../../types/protocol.types.js';
 import { UI_STRINGS } from '../../i18n/ui-strings.js';
 import { renderSearchTriggerButton } from '../layout/SearchModal.js';
+
+function renderSortOptionButtons()         {
+  return FEED_SORT_OPTIONS.map((opt, idx) => {
+    const isDefault = idx === 0;
+    const defaultLabel = UI_STRINGS.ko[opt.i18nKey];
+    const stateClass = isDefault
+      ? 'bg-[#2a2a2a] text-white font-bold border-[#303030]'
+      : 'text-neutral-400 hover:bg-[#1f1f1f] hover:text-white border-[#252525]';
+    const checkClass = isDefault ? '' : 'invisible';
+    const badgeColor = isDefault ? 'text-neutral-300' : 'text-neutral-400';
+
+    return `
+        <button type="button" role="option" data-action="select-sort" data-sort-value="${opt.id}" aria-selected="${isDefault ? 'true' : 'false'}" class="flex items-center justify-between gap-3 whitespace-nowrap px-3 py-3 sm:py-2 min-h-[44px] sm:min-h-0 ${stateClass} border-b last:border-b-0 cursor-pointer text-left transition-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
+          <span class="flex items-center gap-1.5">
+            <span data-sort-check="${opt.id}" aria-hidden="true" class="inline-block w-3 text-[#fde68a] font-bold ${checkClass}">✓</span>
+            <span data-i18n="${opt.i18nKey}">${defaultLabel}</span>
+          </span>
+          <span data-sort-badge="${opt.id}" aria-hidden="true" class="text-[10px] ${badgeColor}">${opt.badge}</span>
+        </button>`;
+  }).join('');
+}
 
 /**
  * [Presentational Component]
@@ -67,22 +88,27 @@ export function renderFeedHeader(totalCount        )         {
   </div>
 </section>
 
-<!-- 7대 퀵 카테고리 필터 칩 레일 + 최신순/오래된순 정렬 토글 -->
-<section class="max-w-5xl mx-auto w-full px-4 sm:px-8 py-3">
+<!-- 카테고리 필터 칩 레일 + 5종 전술 정렬 드롭다운 -->
+<section class="no-print max-w-5xl mx-auto w-full px-4 sm:px-8 py-3">
   <div class="flex items-center justify-between gap-3 flex-wrap">
-    <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none flex-1 min-w-0" id="category-filter">
+    <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none basis-full sm:basis-0 sm:flex-1 min-w-0" id="category-filter">
       ${categoryTabs}
     </div>
-    <div class="flex items-center shrink-0 pb-1">
+    <div id="sort-control-wrapper" class="relative flex items-center shrink-0 pb-1 ml-auto">
       <button type="button"
         id="sort-toggle-btn"
         data-action="toggle-sort"
         data-sort="latest"
-        class="flex items-center gap-1.5 px-3 py-1.5 font-mono text-xs uppercase tracking-wider bg-neutral-900 text-neutral-300 hover:text-white border border-neutral-700 hover:border-neutral-500 cursor-pointer transition-colors">
+        aria-haspopup="listbox"
+        aria-expanded="false"
+        aria-controls="sort-dropdown-menu"
+        class="flex items-center gap-1.5 px-3 py-1.5 min-h-[40px] sm:min-h-0 font-mono text-xs uppercase tracking-wider bg-neutral-900 text-neutral-300 hover:text-white border border-neutral-700 hover:border-neutral-500 cursor-pointer transition-colors focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#fde68a]">
         <span class="text-neutral-500 text-[10px]">SORT:</span>
         <span id="sort-toggle-label" data-i18n="sort_latest">최신순</span>
-        <span id="sort-toggle-arrow" class="text-[10px] text-neutral-400">▼</span>
+        <span id="sort-toggle-arrow" aria-hidden="true" class="text-[10px] text-neutral-400">▼</span>
       </button>
+      <div id="sort-dropdown-menu" role="listbox" aria-labelledby="sort-toggle-btn" class="hidden absolute right-0 top-full mt-1 min-w-[13.5rem] w-max max-w-[calc(100vw-2rem)] bg-[#121212] border border-[#404040] shadow-2xl z-30 flex flex-col font-mono text-xs">${renderSortOptionButtons()}
+      </div>
     </div>
   </div>
 </section>
