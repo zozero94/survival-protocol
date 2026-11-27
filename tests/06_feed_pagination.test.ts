@@ -2,14 +2,36 @@ import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'fs';
 import path from 'path';
+import vm from 'node:vm';
 import { fileURLToPath } from 'url';
 import { UI_STRINGS } from '../src/i18n/ui-strings.ts';
+import { SUPPORTED_LOCALES, type SupportedLocale } from '../src/i18n/locales.ts';
+import { FEED_SORT_OPTIONS } from '../src/types/protocol.types.ts';
+import { renderFeedHeader } from '../src/components/feed/FeedHeader.ts';
+import { getFeedRuntimeScript } from '../src/state/feed.state.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const publicDir = path.resolve(__dirname, '../public');
 const indexPath = path.join(publicDir, 'index.html');
 const swPath = path.join(publicDir, 'sw.js');
+
+function createMockCard(opts: { pid: string; category: string; createdAt: string; views: string; likes: string; comments: string }) {
+  const attrs: Record<string, string> = {
+    'data-protocol-card': opts.pid,
+    'data-category': opts.category,
+    'data-created-at': opts.createdAt,
+    'data-views': opts.views,
+    'data-likes': opts.likes,
+    'data-comments': opts.comments,
+    'data-protocol-href': `/protocol-${opts.pid.replace(/[^0-9]/g, '')}`,
+  };
+  return {
+    style: { display: '' },
+    getAttribute(k: string) { return k in attrs ? attrs[k] : null; },
+    setAttribute(k: string, v: string) { attrs[k] = String(v); },
+  };
+}
 
 describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 오프라인 캐시 무결성 검증', () => {
   test('public/index.html 파일이 존재하고 정상 크기여야 한다', () => {
@@ -48,12 +70,30 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     assert.ok(sw.includes('"/protocol-01.html"'), 'protocol-01.html이 precache에 포함되어야 합니다.');
   });
 
-  test('index.html 내에 최신순 정렬 토글 버튼과 날짜 배지가 탑재되고, 카드가 최신순으로 렌더링되어야 한다', () => {
+  test('renderFeedHeader 5종 정렬 옵션이 7개국어 UI_STRINGS와 1:1 매핑되고 index.html에 반영되어야 한다', () => {
+    const headerHtml = renderFeedHeader(10);
+    for (const opt of FEED_SORT_OPTIONS) {
+      assert.ok(headerHtml.includes(`data-sort-value="${opt.id}"`), `헤더에 정렬 옵션 '${opt.id}'가 있어야 합니다.`);
+      assert.ok(headerHtml.includes(`data-i18n="${opt.i18nKey}"`), `헤더에 'data-i18n="${opt.i18nKey}"'가 있어야 합니다.`);
+      for (const locale of Object.keys(SUPPORTED_LOCALES) as SupportedLocale[]) {
+        const val = UI_STRINGS[locale][opt.i18nKey];
+        assert.ok(typeof val === 'string' && val.trim().length > 0, `[${locale}] ${opt.i18nKey} 값이 비어 있지 않아야 합니다.`);
+      }
+    }
+    assert.equal(UI_STRINGS.es.sort_likes, 'Más valorados', '스페인어 sort_likes는 자연스러운 표현이어야 합니다.');
+    assert.equal(UI_STRINGS.ja.sort_comments, 'コメント数順', '일본어 sort_comments는 수량 표현이 일관되어야 합니다.');
+
     const html = fs.readFileSync(indexPath, 'utf-8');
-    assert.ok(html.includes('data-action="toggle-sort"'), '정렬 토글 버튼이 존재해야 합니다.');
+    assert.ok(html.includes('data-action="toggle-sort"'), '정렬 드롭다운 트리거 버튼이 존재해야 합니다.');
+    assert.ok(html.includes('id="sort-dropdown-menu"'), '5종 정렬 드롭다운 메뉴 컨테이너가 존재해야 합니다.');
+    assert.ok(html.includes('aria-labelledby="sort-toggle-btn"'), '정렬 드롭다운에 접근성 라벨 연결이 있어야 합니다.');
     assert.ok(html.includes('id="sort-toggle-label"'), '정렬 토글 라벨 요소가 존재해야 합니다.');
-    assert.ok(html.includes('data-i18n="sort_latest"'), '기본 정렬 라벨에 data-i18n="sort_latest"가 있어야 합니다.');
     assert.ok(html.includes('data-card-date='), '피드 카드에 날짜 배지가 존재해야 합니다.');
+    assert.ok(html.includes('data-feed-comments='), '피드 카드에 댓글 수 배지(data-feed-comments)가 존재해야 합니다.');
+    assert.ok(html.includes('data-views="0"') && html.includes('data-likes="0"') && html.includes('data-comments="0"'), '피드 카드에 정렬용 초기 텔레메트리 속성이 존재해야 합니다.');
+    assert.ok(html.includes('window.__refreshFeedSort__'), '원격 텔레메트리 수신 후 자동 재정렬 훅이 탑재되어야 합니다.');
+    assert.equal(html.includes('user-scalable=no'), false, '모바일 접근성(WCAG 1.4.4)을 위해 핀치 줌을 차단해서는 안 됩니다.');
+    assert.equal(html.includes('.replace(/D/g'), false, '정규식 이스케이프 손상(/D/g)이 빌드 결과물에 존재해서는 안 됩니다.');
 
     // 카드 순서 검증: PR-08(최신)이 PR-01(초기)보다 먼저 렌더링되어야 함
     const p08Idx = html.indexOf('data-protocol-card="PR-08"');
@@ -64,6 +104,94 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     // 상세 페이지에 createdAt 날짜 배지가 탑재되어야 함
     const p08Html = fs.readFileSync(path.join(publicDir, 'protocol-08.html'), 'utf-8');
     assert.ok(p08Html.includes('data-proto="createdAt"'), '상세 히어로에 data-proto="createdAt" 배지가 존재해야 합니다.');
+  });
+
+  test('getFeedRuntimeScript vm.Script 구문 검증 및 5종 정렬·타이브레이커·__refreshFeedSort__ 실제 런타임 실행 검증', () => {
+    const script = getFeedRuntimeScript();
+    assert.doesNotThrow(() => {
+      new vm.Script(script, { filename: 'feed.runtime.js' });
+    }, '피드 런타임 스크립트는 Top-level Program 구문 오류가 없어야 합니다.');
+    assert.equal(script.includes('.replace(/D/g'), false, '이스케이프가 깨진 /D/g 패턴이 포함되지 않아야 합니다.');
+
+    function runFeedInVm(searchQuery: string, afterMetricUpdate?: (cards: ReturnType<typeof createMockCard>[], win: Record<string, any>) => void) {
+      const cards = [
+        createMockCard({ pid: 'PR-02', category: 'SHELTER', createdAt: '2026-10-10T00:00:00.000Z', views: '10', likes: '50', comments: '1' }),
+        createMockCard({ pid: 'PR-10', category: 'FOOD', createdAt: '2026-10-10T00:00:00.000Z', views: '10', likes: '20', comments: '9' }),
+        createMockCard({ pid: 'PR-05', category: 'FOOD', createdAt: 'invalid-date', views: '300', likes: '5', comments: '3' }),
+      ];
+      const appendedOrder: string[] = [];
+      const feedContainer = {
+        appendChild(el: { getAttribute: (k: string) => string | null }) {
+          appendedOrder.push(el.getAttribute('data-protocol-card') || '');
+        },
+      };
+      const sortBtn = { attributes: {} as Record<string, string>, setAttribute(k: string, v: string) { this.attributes[k] = v; }, focus() {} };
+      const sortLabel = { textContent: '', setAttribute() {} };
+      const mockWindow: Record<string, any> = {
+        location: { search: searchQuery, pathname: '/', hash: '' },
+        history: { replaceState() {} },
+        navigator: { language: 'ko', languages: ['ko'] },
+        addEventListener() {},
+        getSelection() { return { toString: () => '' }; },
+      };
+      const mockDocument = {
+        documentElement: { lang: 'ko', setAttribute() {}, removeAttribute() {} },
+        activeElement: null,
+        title: '',
+        addEventListener() {},
+        createElement() { return { type: '', setAttribute() {}, className: '', textContent: '' }; },
+        getElementById(id: string) {
+          if (id === 'protocol-feed-container') return feedContainer;
+          if (id === 'sort-toggle-btn') return sortBtn;
+          if (id === 'sort-toggle-label') return sortLabel;
+          return null;
+        },
+        querySelectorAll(sel: string) {
+          if (sel === '[data-protocol-card]') return cards;
+          return [];
+        },
+      };
+      const context = {
+        window: mockWindow,
+        document: mockDocument,
+        navigator: mockWindow.navigator,
+        URLSearchParams,
+        setTimeout: () => 0,
+        clearTimeout: () => {},
+        console,
+      };
+      mockWindow.window = mockWindow;
+      mockWindow.document = mockDocument;
+      vm.runInNewContext(script, context);
+      const initialOrder = appendedOrder.slice();
+      appendedOrder.length = 0;
+      if (afterMetricUpdate) {
+        afterMetricUpdate(cards, mockWindow);
+      }
+      return { initialOrder, refreshedOrder: appendedOrder.slice(), sortLabel: sortLabel.textContent };
+    }
+
+    // 1. 동일 날짜 동률 시 PR-10이 PR-02보다 먼저 정렬되어야 함 (/[^0-9]/g 타이브레이커 + invalid-date -> 0)
+    const latestRes = runFeedInVm('?sort=latest');
+    assert.deepEqual(latestRes.initialOrder, ['PR-10', 'PR-02', 'PR-05'], '동일 날짜 동률 시 숫자 큰 PR-10이 먼저 오고 invalid-date(0)가 뒤로 가야 합니다.');
+
+    // 2. oldest 정렬: invalid-date(0)가 가장 먼저, 동일 날짜는 PR-02가 PR-10보다 먼저
+    const oldestRes = runFeedInVm('?sort=oldest');
+    assert.deepEqual(oldestRes.initialOrder, ['PR-05', 'PR-02', 'PR-10'], 'oldest 정렬 시 PR-05(0) -> PR-02 -> PR-10 순이어야 합니다.');
+
+    // 3. views / likes / comments 정렬 + 동률 타이브레이커 검증
+    assert.deepEqual(runFeedInVm('?sort=views').initialOrder, ['PR-05', 'PR-10', 'PR-02']);
+    assert.deepEqual(runFeedInVm('?sort=likes').initialOrder, ['PR-02', 'PR-10', 'PR-05']);
+    assert.deepEqual(runFeedInVm('?sort=comments').initialOrder, ['PR-10', 'PR-05', 'PR-02']);
+
+    // 4. __refreshFeedSort__는 일치하는 메트릭 변경 시에만 재정렬 수행
+    const refreshRes = runFeedInVm('?sort=comments', (cards, win) => {
+      cards[0].setAttribute('data-comments', '999'); // PR-02를 최상위로
+      win.__refreshFeedSort__(['views', 'likes']); // comments 미포함 -> 스킵되어야 함
+      assert.equal(win.__refreshFeedSort__.length >= 0, true);
+      win.__refreshFeedSort__(['comments']); // comments 포함 -> 재정렬되어야 함
+    });
+    assert.deepEqual(refreshRes.refreshedOrder, ['PR-02', 'PR-10', 'PR-05']);
   });
 
   test('메인 index.html과 상세 페이지 상단/하단 제목 영역이 7개국어(ko, en, ja, es, de, pt, zh-TW) 핫스왑 바인딩을 완비해야 한다', () => {
@@ -102,18 +230,16 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
           attrs.includes('data-svg');
         assert.ok(isBound, `[${fileName}] 다국어 바인딩 누락 한글 발견: <${match[1]}${attrs}>${text}</${match[1]}>`);
 
-        // data-i18n 속성이 있는 경우 실제 UI_STRINGS 사전에 유효한 키로 등록되어 있는지 엄격 검증
+        // data-i18n 속성이 있는 경우 7개국어 UI_STRINGS 사전에 유효한 키로 등록되어 있는지 엄격 검증
         const i18nMatch = attrs.match(/data-i18n="([^"]+)"/);
         if (i18nMatch) {
           const key = i18nMatch[1];
-          assert.ok(
-            (UI_STRINGS.ko as Record<string, string>)[key] !== undefined,
-            `[${fileName}] data-i18n="${key}" 속성이 존재하나 UI_STRINGS.ko에 키가 누락되었습니다!`
-          );
-          assert.ok(
-            (UI_STRINGS.en as Record<string, string>)[key] !== undefined,
-            `[${fileName}] data-i18n="${key}" 속성이 존재하나 UI_STRINGS.en에 키가 누락되었습니다!`
-          );
+          for (const locale of Object.keys(SUPPORTED_LOCALES) as SupportedLocale[]) {
+            assert.ok(
+              (UI_STRINGS[locale] as Record<string, string>)[key] !== undefined,
+              `[${fileName}] data-i18n="${key}" 속성이 존재하나 UI_STRINGS.${locale}에 키가 누락되었습니다!`
+            );
+          }
         }
       }
     }
@@ -128,4 +254,3 @@ describe('📑 [Suite 5: 메인 인덱스 & 페이징] 5개 카드 피드 및 �
     assert.ok(html.includes('data-proto="crosslink"'), '카드 요약 내 크로스링크(data-proto="crosslink") 태그가 정상 렌더링되어야 함');
   });
 });
-
