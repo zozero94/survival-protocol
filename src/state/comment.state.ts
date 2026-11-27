@@ -586,6 +586,18 @@ export function getCommentRuntimeScript(): string {
           countEl.textContent = String(allItems.length);
         }
 
+        // 메인 피드 오프라인/BFCache 캐시(ps_feed_metrics_v1)의 댓글 수 즉시 동기화
+        try {
+          var rawMetrics = safeStorage.getItem('ps_feed_metrics_v1');
+          var parsedMetrics = rawMetrics ? JSON.parse(rawMetrics) : null;
+          var nextMetrics = (parsedMetrics && typeof parsedMetrics === 'object' && !Array.isArray(parsedMetrics)) ? parsedMetrics : {};
+          if (!nextMetrics[pid] || typeof nextMetrics[pid] !== 'object' || Array.isArray(nextMetrics[pid])) {
+            nextMetrics[pid] = {};
+          }
+          nextMetrics[pid].c = allItems.length;
+          safeStorage.setItem('ps_feed_metrics_v1', JSON.stringify(nextMetrics));
+        } catch (e) {}
+
         if (allItems.length === 0) {
           listEl.innerHTML =
             '<div id="comment-empty-state" class="py-10 text-center rounded-2xl bg-[#121215]/50 border border-white/[0.05]">' +
